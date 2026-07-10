@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive Entity Editor</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101114; --panel:#181a20; --line:#30343d; --text:#f2efe7; --muted:#a9adba; --accent:#f68900; --ok:#3fb950; --bad:#f85149; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    header { padding:18px 22px; border-bottom:1px solid var(--line); background:#14161b; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    h1 { margin:0; font-size:22px; }
+    main { display:grid; grid-template-columns:320px 1fr; min-height:calc(100vh - 68px); }
+    aside { border-right:1px solid var(--line); padding:16px; overflow:auto; }
+    section { padding:16px; min-width:0; }
+    button, select { background:#222631; color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:inherit; cursor:pointer; }
+    button:hover { border-color:var(--accent); }
+    .event { display:block; width:100%; text-align:left; margin:4px 0; }
+    .event.active { border-color:var(--accent); color:var(--accent); }
+    .toolbar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; align-items:center; }
+    textarea { width:100%; min-height:68vh; resize:vertical; background:#0d0e11; color:#f2efe7; border:1px solid var(--line); border-radius:12px; padding:14px; font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; tab-size:2; }
+    .status { color:var(--muted); margin-left:auto; }
+    .status.ok { color:var(--ok); } .status.bad { color:var(--bad); }
+    pre { background:#0d0e11; border:1px solid var(--line); border-radius:12px; padding:12px; overflow:auto; max-height:240px; }
+    .muted { color:var(--muted); }
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Archive Entity Editor</h1>
+    <div class="muted">Edit archive JSON files. Use validation before generation.</div>
+  </div>
+  <button id="validateBtn">Run validation</button>
+</header>
+<main>
+  <aside>
+    <div class="toolbar"><button id="refreshBtn">Refresh</button></div>
+    <div id="eventList"></div>
+  </aside>
+  <section>
+    <div class="toolbar">
+      <strong id="currentEvent">No event selected</strong>
+      <select id="fileSelect"></select>
+      <button id="loadBtn">Load</button>
+      <button id="saveBtn">Save</button>
+      <span id="status" class="status"></span>
+    </div>
+    <textarea id="editor" spellcheck="false" placeholder="Select an archive event and file..."></textarea>
+    <h3>Validation output</h3>
+    <pre id="validationOutput">Not run yet.</pre>
+  </section>
+</main>
+<script>
+const state = { events: [], eventId: '', file: '' };
+const eventList = document.getElementById('eventList');
+const fileSelect = document.getElementById('fileSelect');
+const editor = document.getElementById('editor');
+const statusEl = document.getElementById('status');
+const currentEvent = document.getElementById('currentEvent');
+const validationOutput = document.getElementById('validationOutput');
+function setStatus(text, cls='') { statusEl.textContent = text; statusEl.className = 'status ' + cls; }
+async function api(url, options) {
+  const res = await fetch(url, options);
+  const data = await res.json();
+  if (!res.ok || data.error) throw new Error(data.error || res.statusText);
+  return data;
+}
+async function refresh() {
+  state.events = await api('/api/archive/events');
+  eventList.innerHTML = state.events.map(ev => `<button class="event${ev.id===state.eventId?' active':''}" data-id="${ev.id}">${ev.id}<br><span class="muted">${ev.files.length} files · ${ev.variants.length} variants</span></button>`).join('');
+}
+function selectEvent(id) {
+  state.eventId = id;
+  const ev = state.events.find(item => item.id === id);
+  currentEvent.textContent = id;
+  const files = ev ? ev.files : [];
+  fileSelect.innerHTML = files.map(file => `<option value="${file}">${file}</option>`).join('');
+  state.file = files[0] || '';
+  fileSelect.value = state.file;
+  refresh();
+}
+async function loadFile() {
+  if (!state.eventId || !fileSelect.value) return;
+  state.file = fileSelect.value;
+  const data = await api(`/api/archive/file?eventId=${encodeURIComponent(state.eventId)}&file=${encodeURIComponent(state.file)}`);
+  editor.value = JSON.stringify(data.data, null, 2);
+  setStatus(`Loaded ${state.file}`, 'ok');
+}
+async function saveFile() {
+  if (!state.eventId || !state.file) return;
+  let parsed;
+  try { parsed = JSON.parse(editor.value); }
+  catch (error) { setStatus('Invalid JSON: ' + error.message, 'bad'); return; }
+  await api('/api/archive/file', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ eventId: state.eventId, file: state.file, data: parsed }) });
+  setStatus(`Saved ${state.file}`, 'ok');
+}
+async function validate() {
+  validationOutput.textContent = 'Running...';
+  const data = await api('/api/archive/validate', { method:'POST' });
+  validationOutput.textContent = [data.stdout, data.stderr].filter(Boolean).join('\n') || `exitCode=${data.exitCode}`;
+  setStatus(data.ok ? 'Validation passed' : 'Validation failed', data.ok ? 'ok' : 'bad');
+}
+eventList.addEventListener('click', event => { const btn = event.target.closest('button[data-id]'); if (btn) { selectEvent(btn.dataset.id); loadFile().catch(err => setStatus(err.message, 'bad')); } });
+fileSelect.addEventListener('change', () => { state.file = fileSelect.value; });
+document.getElementById('refreshBtn').addEventListener('click', () => refresh().catch(err => setStatus(err.message, 'bad')));
+document.getElementById('loadBtn').addEventListener('click', () => loadFile().catch(err => setStatus(err.message, 'bad')));
+document.getElementById('saveBtn').addEventListener('click', () => saveFile().catch(err => setStatus(err.message, 'bad')));
+document.getElementById('validateBtn').addEventListener('click', () => validate().catch(err => setStatus(err.message, 'bad')));
+refresh().catch(err => setStatus(err.message, 'bad'));
+</script>
+</body>
+</html>

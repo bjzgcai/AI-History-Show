@@ -1851,12 +1851,26 @@
     </div>
 
     <script>
+        function _archivePreviewEnabled() {
+            try {
+                return new URLSearchParams(window.location.search).get('archivePreview') === '1';
+            } catch (error) {
+                return false;
+            }
+        }
+
+        function _milestonesDataPath(defaultPath) {
+            return _archivePreviewEnabled() ? 'milestones-data-archive-preview.js?v=archive-preview' : defaultPath;
+        }
+
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260604-ai100-three-images"><\/script>');
+            document.write('<script src="' + _milestonesDataPath('milestones-data-default.js?v=20260604-ai100-three-images') + '"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
-    <script src="milestones-data.js?v=20260604-ai100-three-images" onerror="_loadDefaultMilestones()"></script>
+    <script>
+        document.write('<script src="' + _milestonesDataPath('milestones-data.js?v=20260604-ai100-three-images') + '" onerror="_loadDefaultMilestones()"><\/script>');
+    </script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>

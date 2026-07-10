@@ -21,6 +21,7 @@ const QUIZ_CATALOG_PATH = path.join(__dirname, 'quizzes.js');
 const QUIZ_STORYLINE_ID = 'bench-council-ai100';
 const QUIZ_STORYLINE_IDS = new Set([QUIZ_STORYLINE_ID, 'gaming-ai']);
 const { applyEventFusion } = require('./event-fusions.js');
+const { applyArchiveOverlays } = require('../scripts/archive-compiler.js');
 const {
     MILESTONE_ID_PREFIX,
     SUPPORTED_LOCALES,
@@ -788,6 +789,33 @@ function validateAvatarAssets(items) {
     return missing;
 }
 
+const archiveOverlayResult = applyArchiveOverlays(milestones, { root: ROOT });
+const archiveReviewSnapshotPath = path.join(ROOT, 'reports', 'archive-review-snapshot.json');
+fs.mkdirSync(path.dirname(archiveReviewSnapshotPath), { recursive: true });
+fs.writeFileSync(
+    archiveReviewSnapshotPath,
+    JSON.stringify(
+        {
+            generatedAt: new Date().toISOString(),
+            applied: archiveOverlayResult.applied,
+            skipped: archiveOverlayResult.skipped,
+            errors: archiveOverlayResult.errors,
+            rows: archiveOverlayResult.reviewRows
+        },
+        null,
+        2
+    ) + '\n',
+    'utf8'
+);
+for (const item of archiveOverlayResult.errors) {
+    console.warn(`[警告] archive overlay 构建失败：${item.storylineId} ${JSON.stringify(item.ref)} — ${item.message}`);
+}
+for (const item of archiveOverlayResult.skipped) {
+    console.warn(
+        `[警告] archive overlay 跳过：${item.id || item.archiveEventId}/${item.archiveVariantId} — ${item.reason}`
+    );
+}
+
 const missingAvatarAssets = validateAvatarAssets(milestones);
 const now = new Date().toISOString().replace('T', ' ').slice(0, 16);
 const content = buildOutputContent(now);
@@ -805,6 +833,9 @@ for (const file of OUTPUTS) {
     console.log(`✓ ${writeResults.get(file) ? '生成完成' : '内容未变化'}：${file}`);
 }
 console.log(`  共 ${categories.length} 个分类，${branches.length} 个分支，${milestones.length} 个事件`);
+console.log(
+    `  Archive overlay：应用 ${archiveOverlayResult.applied.length} 个，跳过 ${archiveOverlayResult.skipped.length} 个，错误 ${archiveOverlayResult.errors.length} 个`
+);
 if (missingAvatarAssets.length > 0) {
     console.log(`  头像资源缺失：${missingAvatarAssets.length}`);
 }

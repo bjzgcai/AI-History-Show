@@ -643,9 +643,94 @@ function ensureVideoCatalogEntry(jsonPath, eventKey, ev, matchFn, newEntry) {
   return true;
 }
 
+function archiveEventFileList(eventId) {
+  const eventDir = path.join(ROOT, 'archive', 'events', eventId);
+  if (!fs.existsSync(eventDir) || !fs.statSync(eventDir).isDirectory()) return [];
+  const files = [];
+  for (const name of ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json']) {
+    if (fs.existsSync(path.join(eventDir, name))) files.push(name);
+  }
+  const variantsDir = path.join(eventDir, 'variants');
+  if (fs.existsSync(variantsDir)) {
+    for (const file of fs.readdirSync(variantsDir).filter((item) => item.endsWith('.json')).sort()) {
+      files.push(`variants/${file}`);
+    }
+  }
+  return files;
+}
+
+function safeArchiveEventId(eventId) {
+  if (!eventId || !/^[a-z0-9][a-z0-9._-]*$/.test(eventId)) throw new Error('Invalid archive eventId');
+  return eventId;
+}
+
+function safeArchiveFileName(file) {
+  if (!file || !/^(event|claims|sources|assets|quizzes)\.json$|^variants\/[a-z0-9][a-z0-9._-]*\.json$/.test(file)) {
+    throw new Error('Invalid archive file');
+  }
+  return file;
+}
+
+function archiveFilePath(eventId, file) {
+  const safeEventId = safeArchiveEventId(eventId);
+  const safeFile = safeArchiveFileName(file);
+  const fullPath = path.join(ROOT, 'archive', 'events', safeEventId, safeFile);
+  const baseDir = path.join(ROOT, 'archive', 'events', safeEventId);
+  if (!fullPath.startsWith(baseDir)) throw new Error('Archive path traversal rejected');
+  return fullPath;
+}
 // ─── 路由处理 ─────────────────────────────────────────────────────────────────
 
 const routes = {
+
+  'GET /archive-admin': (req, res) => {
+    const file = path.join(MANAGE, 'archive-admin.html');
+    if (!fs.existsSync(file)) { res.writeHead(404); res.end('archive-admin.html not found'); return; }
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(fs.readFileSync(file));
+  },
+
+  'GET /api/archive/events': (req, res) => {
+    try {
+      const eventsDir = path.join(ROOT, 'archive', 'events');
+      if (!fs.existsSync(eventsDir)) { json(res, []); return; }
+      const events = fs.readdirSync(eventsDir, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory())
+        .map((entry) => ({
+          id: entry.name,
+          files: archiveEventFileList(entry.name),
+          variants: archiveEventFileList(entry.name).filter((file) => file.startsWith('variants/')).map((file) => file.replace(/^variants\//, '').replace(/\.json$/, '')),
+        }))
+        .sort((a, b) => a.id.localeCompare(b.id));
+      json(res, events);
+    } catch (e) { err(res, e.message); }
+  },
+
+  'GET /api/archive/file': (req, res) => {
+    try {
+      const q = parseQuery(req.url);
+      const filePath = archiveFilePath(q.eventId, q.file);
+      if (!fs.existsSync(filePath)) { err(res, 'Archive file not found', 404); return; }
+      json(res, { eventId: q.eventId, file: q.file, data: JSON.parse(fs.readFileSync(filePath, 'utf8')) });
+    } catch (e) { err(res, e.message); }
+  },
+
+  'POST /api/archive/file': async (req, res) => {
+    try {
+      const body = await readBody(req);
+      const filePath = archiveFilePath(body.eventId, body.file);
+      mkdirp(path.dirname(filePath));
+      atomicWrite(filePath, JSON.stringify(body.data, null, 2) + '\n');
+      json(res, { ok: true, eventId: body.eventId, file: body.file });
+    } catch (e) { err(res, e.message); }
+  },
+
+  'POST /api/archive/validate': (req, res) => {
+    const script = path.join(ROOT, 'scripts', 'validate-archive.js');
+    execFile(process.execPath, [script], { cwd: ROOT }, (error, stdout, stderr) => {
+      json(res, { ok: !error, stdout: stdout || '', stderr: stderr || '', exitCode: error ? error.code : 0 });
+    });
+  },
 
   'GET /admin': (req, res) => {
     const file = path.join(MANAGE, 'admin.html');

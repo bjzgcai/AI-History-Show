@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-08 03:44
+// 生成时间: 2026-07-10 08:44
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -205,6 +205,158 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1956-dartmouth-historical-02",
+        "asset-1956-dartmouth-historical-01",
+        "asset-1956-dartmouth-historical-04",
+        "asset-1956-dartmouth-school"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/1956-dartmouth/event.json",
+      "variantFile": "archive/events/1956-dartmouth/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1956-dartmouth",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "达特茅斯会议提议封面",
+          "en": "Cover of the Dartmouth Conference Proposal"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "达特茅斯会议发起人",
+          "en": "Organizer of the Dartmouth Conference"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "达特茅斯会议 - AI正式诞生！",
+          "en": "Dartmouth Workshop - AI Is Born!"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png": {
+        "caption": {
+          "zh": "达特茅斯学院（现代）",
+          "en": "Dartmouth College（Current）"
+        },
+        "subcaption": {
+          "zh": "达特茅斯会议 - AI正式诞生！",
+          "en": "Dartmouth Workshop - AI Is Born!"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 1956-dartmouth",
+            "en": "Legacy event record for 1956-dartmouth"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "达特茅斯会议 - AI正式诞生！ 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Dartmouth Workshop - AI Is Born! is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（约翰·麦卡锡）、马文·明斯基（马文·明斯基）、克劳德·香农（克劳德·香农）、纳撒尼尔·罗切斯特（纳撒尼尔·罗切斯特） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"人工智能\" 这个名称",
+            "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -441,6 +593,15 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1958-rosenblatt-perceptron-frank-rosenblatt",
+        "asset-1958-rosenblatt-perceptron-threshold",
+        "asset-1958-rosenblatt-perceptron-sensor-grid",
+        "asset-1957-perceptron-people-01",
+        "asset-1957-perceptron-papers-01",
+        "asset-1957-perceptron-historical-01",
+        "asset-1957-perceptron-historical-01-2"
       ]
     },
     "fusionCanonical": "1957-perceptron",
@@ -594,7 +755,243 @@ const milestones = [
           },
           "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "感知机：大脑中信息存储与组织的概率模型",
+            "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+          },
+          "url": "https://doi.org/10.1037/h0042519",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cornell-chronicle-perceptron-retrospective",
+          "type": {
+            "zh": "历史资料",
+            "en": "History"
+          },
+          "label": {
+            "zh": "康奈尔大学 Chronicle perceptron retrospective",
+            "en": "Cornell Chronicle perceptron retrospective"
+          },
+          "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-smithsonian-mark-i-perceptron-object-record",
+          "type": {
+            "zh": "博物馆",
+            "en": "Museum"
+          },
+          "label": {
+            "zh": "Smithsonian Mark I Perceptron object record",
+            "en": "Smithsonian Mark I Perceptron object record"
+          },
+          "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "source-cornell-chronicle-perceptron-retrospective",
+        "source-smithsonian-mark-i-perceptron-object-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "感知机与连接主义 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "The Perceptron and Connectionism is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+            "source-cornell-chronicle-perceptron-retrospective"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
+            "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+          },
+          "sourceIds": [
+            "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+            "source-cornell-chronicle-perceptron-retrospective"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/1957-perceptron/event.json",
+      "variantFile": "archive/events/1957-perceptron/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1957-perceptron",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg": {
+        "caption": {
+          "zh": "弗兰克·罗森布拉特 与感知机硬件",
+          "en": "Frank Rosenblatt with perceptron hardware"
+        },
+        "subcaption": {
+          "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。",
+          "en": "Historical Cornell image of Rosenblatt and the perceptron lineage."
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL.",
+            "en": "Cornell historical image; reuse rights not stated on extracted image URL."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg": {
+        "caption": {
+          "zh": "阈值学习边界",
+          "en": "Threshold learning line"
+        },
+        "subcaption": {
+          "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg": {
+        "caption": {
+          "zh": "传感器网格到神经元",
+          "en": "Sensor grid to neuron"
+        },
+        "subcaption": {
+          "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《感知机：大脑中信息存储与组织的概率模型》",
+          "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "感知机与连接主义",
+          "en": "The Perceptron and Connectionism"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "感知机与连接主义",
+          "en": "The Perceptron and Connectionism"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      }
     }
   },
   {
@@ -749,6 +1146,137 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1969-ai-winter-papers-01",
+        "asset-1969-ai-winter-papers-02",
+        "asset-1969-ai-winter-papers-01-2"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/1969-ai-winter/event.json",
+      "variantFile": "archive/events/1969-ai-winter/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1969-ai-winter",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《感知机：计算几何学导论》",
+          "en": "Perceptrons: An Introduction to Computational Geometry"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《感知机：计算几何学导论》",
+          "en": "Perceptrons: An Introduction to Computational Geometry"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 1969-ai-winter",
+            "en": "Legacy event record for 1969-ai-winter"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "第一次寒冬的到来 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "The First AI Winter Arrives is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
+            "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -952,6 +1480,179 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1986-backpropagation-architecture01",
+        "asset-1986-backpropagation-paper-01",
+        "asset-1986-backpropagation-paper-02",
+        "asset-1986-backpropagation-paper-03",
+        "asset-1986-backpropagation-papers-01"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/1986-backpropagation/event.json",
+      "variantFile": "archive/events/1986-backpropagation/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1986-backpropagation",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "反向传播算法 架构图",
+          "en": "Backpropagation Algorithm Architecture Diagram"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《通过反向传播误差来学习表征》",
+          "en": "Learning representations by back-propagating errors"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 1986-backpropagation",
+            "en": "Legacy event record for 1986-backpropagation"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "反向传播算法 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Backpropagation is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。",
+            "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -1109,6 +1810,116 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1986-rnn-architecture-01",
+        "asset-1986-rnn-people-01"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/1986-rnn/event.json",
+      "variantFile": "archive/events/1986-rnn/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1986-rnn",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "循环神经网络 架构图",
+          "en": "Recurrent Neural Networks"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 1986-rnn",
+            "en": "Legacy event record for 1986-rnn"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "循环神经网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Recurrent Neural Networks is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
+            "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -1320,6 +2131,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1989-cnn-yann-lecun-external",
+        "asset-1989-lenet-zip-code-cnn",
+        "asset-1989-cnn-people-01",
+        "asset-1989-cnn-people-02",
+        "asset-1989-cnn-architecture-01"
       ]
     },
     "fusionCanonical": "1989-cnn",
@@ -1500,7 +2318,219 @@ const milestones = [
             "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《反向传播应用于手写邮编识别》",
+            "en": "Backpropagation Applied to Handwritten Zip Code Recognition"
+          },
+          "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-lenet-5-demos-and-documentation",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "LeNet-5 演示与文档",
+            "en": "LeNet-5 demos and documentation"
+          },
+          "url": "https://yann.lecun.com/exdb/lenet/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-gradient-based-learning-applied-to-document-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《基于梯度的文档识别学习》",
+            "en": "Gradient-Based Learning Applied to Document Recognition"
+          },
+          "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-yann-lecun-s-home-page",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "扬·勒昆主页",
+            "en": "Yann LeCun's home page"
+          },
+          "url": "https://yann.lecun.com/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "source-lenet-5-demos-and-documentation",
+        "source-gradient-based-learning-applied-to-document-recognition",
+        "source-yann-lecun-s-home-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "卷积神经网络与 LeNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Convolutional Networks and LeNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+            "source-lenet-5-demos-and-documentation"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
+            "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+          },
+          "sourceIds": [
+            "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+            "source-lenet-5-demos-and-documentation"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/1989-cnn/event.json",
+      "variantFile": "archive/events/1989-cnn/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1989-cnn",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
+        "caption": {
+          "zh": "扬·勒昆外部参考图",
+          "en": "Yann LeCun external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-yann-lecun-s-home-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg": {
+        "caption": {
+          "zh": "邮编 CNN 流程",
+          "en": "ZIP-code CNN pipeline"
+        },
+        "subcaption": {
+          "zh": "关于 LeNet 式识别的本地原创解释图。",
+          "en": "Original local explainer of LeNet-style recognition."
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "卷积神经网络 架构图",
+          "en": "Convolutional Neural Networks"
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
     }
   },
   {
@@ -1724,6 +2754,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-sepp-hochreiter",
+        "asset-1997-lstm-gated-memory",
+        "asset-1997-lstm-people-01",
+        "asset-1997-lstm-architecture-01",
+        "asset-1997-lstm-architecture-02"
       ]
     },
     "fusionCanonical": "1997-lstm",
@@ -1908,7 +2945,218 @@ const milestones = [
             "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-long-short-term-memory",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《长短期记忆》",
+            "en": "Long Short-Term Memory"
+          },
+          "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-author-hosted-lstm-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "作者托管的 LSTM 论文 PDF",
+            "en": "Author-hosted LSTM paper PDF"
+          },
+          "url": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-lstm-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "LSTM 概览",
+            "en": "LSTM overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-sepp-hochreiter-profile",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "塞普·霍赫赖特个人资料",
+            "en": "Sepp Hochreiter profile"
+          },
+          "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-long-short-term-memory",
+        "source-author-hosted-lstm-paper-pdf",
+        "source-lstm-overview",
+        "source-sepp-hochreiter-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "LSTM 与门控记忆 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "LSTM and Gated Memory is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-long-short-term-memory",
+            "source-author-hosted-lstm-paper-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>",
+            "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant.</p>"
+          },
+          "sourceIds": [
+            "source-long-short-term-memory",
+            "source-author-hosted-lstm-paper-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/1997-lstm/event.json",
+      "variantFile": "archive/events/1997-lstm/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1997-lstm",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/sepp-hochreiter.jpg": {
+        "caption": {
+          "zh": "塞普·霍赫赖特肖像",
+          "en": "Sepp Hochreiter portrait"
+        },
+        "subcaption": {
+          "zh": "LSTM 共同作者",
+          "en": "LSTM co-author"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg": {
+        "caption": {
+          "zh": "LSTM 门控记忆单元",
+          "en": "LSTM gated memory cell"
+        },
+        "subcaption": {
+          "zh": "关于门控序列记忆的本地原创解释图。",
+          "en": "Original local explainer of gated sequence memory."
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "LSTM与门控机制 架构图",
+          "en": "LSTM and Gating Mechanisms"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "LSTM与门控机制 架构图",
+          "en": "LSTM and Gating Mechanisms"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
     }
   },
   {
@@ -2134,6 +3382,12 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-alexnet-portrait",
+        "asset-alexnet-architecture",
+        "asset-alexnet-deep-portrait",
+        "asset-alexnet-architecture-detail"
       ]
     },
     "fusionCanonical": "2012-alexnet",
@@ -2314,7 +3568,198 @@ const milestones = [
             "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-alexnet-neurips-paper",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "en": "ImageNet Classification with Deep Convolutional Neural Networks"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-imagenet-challenge",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "en": "ImageNet Large Scale Visual Recognition Challenge"
+          },
+          "url": "https://www.image-net.org/challenges/LSVRC/index.php",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-alexnet-neurips-pdf",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "NeurIPS full paper PDF for AlexNet",
+            "en": "NeurIPS full paper PDF for AlexNet"
+          },
+          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-alexnet-overview",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "AlexNet overview",
+            "en": "AlexNet overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/AlexNet",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-alexnet-neurips-paper",
+        "source-imagenet-challenge",
+        "source-alexnet-neurips-pdf",
+        "source-alexnet-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-imagenet-breakthrough",
+          "importance": "core",
+          "text": {
+            "zh": "AlexNet 在 ImageNet 2012 中以深度卷积网络显著提升图像分类结果。",
+            "en": "AlexNet substantially improved image classification results with a deep convolutional network in ImageNet 2012."
+          },
+          "sourceIds": [
+            "source-alexnet-neurips-paper",
+            "source-imagenet-challenge"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-scale-recipe",
+          "importance": "core",
+          "text": {
+            "zh": "AlexNet 的突破结合了 GPU 训练、ReLU、数据增强和 dropout 等规模化训练要素。",
+            "en": "AlexNet combined scaled training ingredients including GPUs, ReLU, data augmentation, and dropout."
+          },
+          "sourceIds": [
+            "source-alexnet-neurips-paper"
+          ],
+          "status": "verified"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-imagenet-breakthrough",
+        "claim-scale-recipe"
+      ],
+      "archiveEmphasis": [
+        "deep-learning-breakthrough",
+        "computer-vision",
+        "scaled-training"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2012-alexnet/event.json",
+      "variantFile": "archive/events/2012-alexnet/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2012-alexnet",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/alex-krizhevsky.jpg": {
+        "caption": {
+          "zh": "亚历克斯·克里热夫斯基肖像",
+          "en": "Alex Krizhevsky portrait"
+        },
+        "subcaption": {
+          "zh": "AlexNet 主要作者",
+          "en": "AlexNet lead author"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史人物资料图，保留来源说明。",
+            "en": "Historical figure reference image; keep attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
+        "caption": {
+          "zh": "AlexNet 架构示意",
+          "en": "AlexNet architecture explainer"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
+        "caption": {
+          "zh": "AlexNet 相关人物资料图",
+          "en": "AlexNet related figure image"
+        },
+        "subcaption": {
+          "zh": "portrait",
+          "en": "portrait"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
+        "caption": {
+          "zh": "AlexNet 架构细节图",
+          "en": "AlexNet architecture detail"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
     }
   },
   {
@@ -2471,6 +3916,116 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2014-highway-network-architecture-01",
+        "asset-2014-highway-network-people-01"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2014-highway-network/event.json",
+      "variantFile": "archive/events/2014-highway-network/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-highway-network",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "高速网络 架构图",
+          "en": "Highway Networks diagram"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 2014-highway-network",
+            "en": "Legacy event record for 2014-highway-network"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "高速网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Highway Networks is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
+            "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -2673,6 +4228,11 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-ian-goodfellow",
+        "asset-2014-gan-adversarial-loop",
+        "asset-2014-gan-architecture-01"
       ]
     },
     "fusionCanonical": "2014-gan",
@@ -2857,7 +4417,178 @@ const milestones = [
             "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-generative-adversarial-nets",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《生成对抗网络》",
+            "en": "Generative Adversarial Nets"
+          },
+          "url": "https://arxiv.org/abs/1406.2661",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-neurips-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
+          },
+          "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-goodfellow-gan-tutorial",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "古德费洛 GAN 教程",
+            "en": "Goodfellow GAN tutorial"
+          },
+          "url": "https://arxiv.org/abs/1701.00160",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-ian-goodfellow-profile",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "伊恩·古德费洛个人网站",
+            "en": "Ian Goodfellow profile"
+          },
+          "url": "https://www.iangoodfellow.com/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-generative-adversarial-nets",
+        "source-neurips-paper-page",
+        "source-goodfellow-gan-tutorial",
+        "source-ian-goodfellow-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "生成对抗网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Generative Adversarial Networks is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-generative-adversarial-nets",
+            "source-neurips-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
+            "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+          },
+          "sourceIds": [
+            "source-generative-adversarial-nets",
+            "source-neurips-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2014-gan/event.json",
+      "variantFile": "archive/events/2014-gan/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-gan",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/ian-goodfellow.jpg": {
+        "caption": {
+          "zh": "伊恩·古德费洛肖像",
+          "en": "Ian Goodfellow portrait"
+        },
+        "subcaption": {
+          "zh": "GAN 主要作者",
+          "en": "GAN lead author"
+        },
+        "sourceId": "source-generative-adversarial-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg": {
+        "caption": {
+          "zh": "GAN 对抗循环",
+          "en": "GAN adversarial loop"
+        },
+        "subcaption": {
+          "zh": "关于生成器-判别器训练的本地原创解释图。",
+          "en": "Original local explainer of generator-discriminator training."
+        },
+        "sourceId": "source-generative-adversarial-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "GAN（生成对抗网路） 架构图",
+          "en": "GANs: Generative Adversarial Networks"
+        },
+        "sourceId": "source-generative-adversarial-nets",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
     }
   },
   {
@@ -3083,6 +4814,12 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-geoffrey-hinton",
+        "asset-2014-attention-alignment",
+        "asset-2014-attention-architecture-01",
+        "asset-2014-attention-people-01"
       ]
     },
     "fusionCanonical": "2014-attention",
@@ -3263,7 +5000,198 @@ const milestones = [
             "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《通过联合学习对齐与翻译实现神经机器翻译》",
+            "en": "Neural Machine Translation by Jointly Learning to Align and Translate"
+          },
+          "url": "https://arxiv.org/abs/1409.0473",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-2015-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR 2015 论文页面",
+            "en": "ICLR 2015 paper page"
+          },
+          "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-attention-mechanism-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "注意力机制概览",
+            "en": "Attention mechanism overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-yoshua-bengio-lab-profile",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "约书亚·本吉奥 Mila 资料",
+            "en": "Yoshua Bengio lab profile"
+          },
+          "url": "https://mila.quebec/en/person/yoshua-bengio/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "source-iclr-2015-paper-page",
+        "source-attention-mechanism-overview",
+        "source-yoshua-bengio-lab-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "带注意力机制的神经机器翻译 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Neural Machine Translation with Attention is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+            "source-iclr-2015-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
+            "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+          },
+          "sourceIds": [
+            "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+            "source-iclr-2015-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2014-attention/event.json",
+      "variantFile": "archive/events/2014-attention/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-attention",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/geoffrey-hinton.jpg": {
+        "caption": {
+          "zh": "蒙特利尔深度学习研究背景图",
+          "en": "Montreal deep learning research context"
+        },
+        "subcaption": {
+          "zh": "神经注意力研究的机构背景",
+          "en": "Institutional context for neural attention research"
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
+        "caption": {
+          "zh": "注意力对齐图",
+          "en": "Attention alignment map"
+        },
+        "subcaption": {
+          "zh": "关于源令牌注意力的本地原创解释图。",
+          "en": "Original local explainer of source-token attention."
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "自回归模型和注意力机制 架构图",
+          "en": "Autoregressive Models and Attention diagram"
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2014-attention/people/2014-attention_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
     }
   },
   {
@@ -3535,6 +5463,15 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-kaiming-he",
+        "asset-2015-resnet-architecture-01",
+        "asset-2015-resnet-people-04",
+        "asset-2015-resnet-people-03",
+        "asset-2015-resnet-people-02",
+        "asset-2015-resnet-people-01",
+        "asset-2015-resnet-architecture-02"
       ]
     },
     "fusionCanonical": "2015-resnet",
@@ -3715,7 +5652,258 @@ const milestones = [
             "zh": "捷径路径把输入加回学习得到的残差变换。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-deep-residual-learning-for-image-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《用于图像识别的深度残差学习》",
+            "en": "Deep Residual Learning for Image Recognition"
+          },
+          "url": "https://arxiv.org/abs/1512.03385",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvf-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "CVF 开放论文页面",
+            "en": "CVF Open Access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvpr-full-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "CVPR 完整论文 PDF",
+            "en": "CVPR full paper PDF"
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-kaiming-he-profile-at-mit-csail",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "MIT CSAIL 的何恺明资料",
+            "en": "Kaiming He profile at MIT CSAIL"
+          },
+          "url": "https://people.csail.mit.edu/kaiming/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-deep-residual-learning-for-image-recognition",
+        "source-cvf-open-access-paper-page",
+        "source-cvpr-full-paper-pdf",
+        "source-kaiming-he-profile-at-mit-csail"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "ResNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "ResNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-deep-residual-learning-for-image-recognition",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。</p>",
+            "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning at Microsoft Research Asia. ResNet used shortcut connections so very deep networks could learn residual refinements instead of full transformations, solving a practical training bottleneck and becoming a standard visual backbone. The fused version combines the deep-learning storyline's emphasis on engineering simplicity and trainability with the AI100 paper sources and residual-block explanation.</p>"
+          },
+          "sourceIds": [
+            "source-deep-residual-learning-for-image-recognition",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2015-resnet/event.json",
+      "variantFile": "archive/events/2015-resnet/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2015-resnet",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/kaiming-he.jpg": {
+        "caption": {
+          "zh": "何恺明肖像",
+          "en": "Kaiming He portrait"
+        },
+        "subcaption": {
+          "zh": "ResNet 主要作者。",
+          "en": "Lead author of ResNet."
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
+        "caption": {
+          "zh": "残差模块",
+          "en": "Residual block"
+        },
+        "subcaption": {
+          "zh": "项目使用的架构图。",
+          "en": "Architecture visual used by the project."
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
+        "caption": {
+          "zh": "何恺明",
+          "en": "Kaiming He"
+        },
+        "subcaption": {
+          "zh": "ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授",
+          "en": "ResNet first author; Associate Professor at MIT EECS"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
+        "caption": {
+          "zh": "张祥雨",
+          "en": "Xiangyu Zhang"
+        },
+        "subcaption": {
+          "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰",
+          "en": "ResNet co-author; later at Megvii, now at StepFun"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
+        "caption": {
+          "zh": "任少卿",
+          "en": "Shaoqing Ren"
+        },
+        "subcaption": {
+          "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁",
+          "en": "ResNet co-author; now VP of R&D at NIO"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
+        "caption": {
+          "zh": "孙剑",
+          "en": "Jian Sun"
+        },
+        "subcaption": {
+          "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）",
+          "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "ResNet 架构图",
+          "en": "ResNet diagram"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
     }
   },
   {
@@ -3917,6 +6105,11 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2016-densenet-people-01",
+        "asset-2016-densenet-architecture-01",
+        "asset-2016-densenet-people-02"
       ]
     },
     "fusionCanonical": "2016-densenet",
@@ -4101,7 +6294,178 @@ const milestones = [
             "zh": "每一层都会接收同一块中所有早期层的特征图。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-densely-connected-convolutional-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《密集连接卷积网络》",
+            "en": "Densely Connected Convolutional Networks"
+          },
+          "url": "https://arxiv.org/abs/1608.06993",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvf-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "CVF 开放论文页面",
+            "en": "CVF Open Access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-original-densenet-code-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "DenseNet 原始代码仓库",
+            "en": "Original DenseNet code repository"
+          },
+          "url": "https://github.com/liuzhuang13/DenseNet",
+          "reliability": "secondary",
+          "sourceType": "code"
+        },
+        {
+          "id": "source-meta-ai-publication-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Meta AI 出版页面",
+            "en": "Meta AI publication page"
+          },
+          "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-densely-connected-convolutional-networks",
+        "source-cvf-open-access-paper-page",
+        "source-original-densenet-code-repository",
+        "source-meta-ai-publication-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "DenseNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "DenseNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-densely-connected-convolutional-networks",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
+            "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+          },
+          "sourceIds": [
+            "source-densely-connected-convolutional-networks",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2016-densenet/event.json",
+      "variantFile": "archive/events/2016-densenet/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2016-densenet",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
+        "caption": {
+          "zh": "DenseNet 作者团队",
+          "en": "DenseNet author group"
+        },
+        "subcaption": {
+          "zh": "DenseNet 背后的研究者。",
+          "en": "Researchers behind DenseNet."
+        },
+        "sourceId": "source-densely-connected-convolutional-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
+        "caption": {
+          "zh": "密集连接",
+          "en": "Dense connectivity"
+        },
+        "subcaption": {
+          "zh": "项目使用的架构图。",
+          "en": "Architecture visual used by the project."
+        },
+        "sourceId": "source-densely-connected-convolutional-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-densely-connected-convolutional-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
     }
   },
   {
@@ -4325,6 +6689,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-transformer-portrait",
+        "asset-transformer-attention",
+        "asset-transformer-architecture",
+        "asset-transformer-architecture-detail",
+        "asset-transformer-paper-page"
       ]
     },
     "fusionCanonical": "2017-transformer",
@@ -4509,7 +6880,219 @@ const milestones = [
             "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-transformer-arxiv",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "Attention Is All You Need",
+            "en": "Attention Is All You Need"
+          },
+          "url": "https://arxiv.org/abs/1706.03762",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-transformer-neurips",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "NeurIPS paper page for Attention Is All You Need",
+            "en": "NeurIPS paper page for Attention Is All You Need"
+          },
+          "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-research-publication",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "Google Research publication page for Attention Is All You Need",
+            "en": "Google Research publication page for Attention Is All You Need"
+          },
+          "url": "https://research.google/pubs/attention-is-all-you-need/",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-google-transformer-blog",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
+            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+          },
+          "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-transformer-arxiv",
+        "source-transformer-neurips",
+        "source-google-research-publication",
+        "source-google-transformer-blog"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-attention-only-architecture",
+          "importance": "core",
+          "text": {
+            "zh": "Transformer 提出了一种完全基于注意力机制、去除循环和卷积的序列建模架构。",
+            "en": "The Transformer proposed a sequence modeling architecture based solely on attention mechanisms, dispensing with recurrence and convolutions."
+          },
+          "sourceIds": [
+            "source-transformer-arxiv",
+            "source-transformer-neurips"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-foundation-model-legacy",
+          "importance": "context",
+          "text": {
+            "zh": "Transformer 架构成为 BERT、GPT 式语言模型和许多现代基础模型的重要基础。",
+            "en": "The Transformer architecture became a key foundation for BERT, GPT-style language models, and many modern foundation models."
+          },
+          "sourceIds": [
+            "source-google-transformer-blog",
+            "source-google-research-publication"
+          ],
+          "status": "verified"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-attention-only-architecture",
+        "claim-foundation-model-legacy"
+      ],
+      "archiveEmphasis": [
+        "attention",
+        "sequence-modeling",
+        "foundation-models"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2017-transformer/event.json",
+      "variantFile": "archive/events/2017-transformer/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2017-transformer",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/ashish-vaswani.jpg": {
+        "caption": {
+          "zh": "阿希什·瓦斯瓦尼肖像",
+          "en": "Ashish Vaswani portrait"
+        },
+        "subcaption": {
+          "zh": "Transformer 论文共同作者",
+          "en": "Transformer paper co-author"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史人物资料图，保留来源说明。",
+            "en": "Historical figure reference image; keep attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
+        "caption": {
+          "zh": "Transformer 自注意力机制示意",
+          "en": "Transformer self-attention explainer"
+        },
+        "subcaption": {
+          "zh": "algorithm-explainer",
+          "en": "algorithm-explainer"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
+        "caption": {
+          "zh": "Transformer 架构示意",
+          "en": "Transformer architecture explainer"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
+        "caption": {
+          "zh": "Transformer 架构细节图",
+          "en": "Transformer architecture detail"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
+            "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
+        "caption": {
+          "zh": "Transformer 论文页面资料",
+          "en": "Transformer paper page material"
+        },
+        "subcaption": {
+          "zh": "paper-page",
+          "en": "paper-page"
+        },
+        "sourceId": "source-transformer-neurips",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "论文页面资料引用，需保留来源说明。",
+            "en": "Paper page reference; keep source attribution."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      }
     }
   },
   {
@@ -4720,6 +7303,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-jacob-devlin",
+        "asset-2018-bert-masked-lm",
+        "asset-2018-bert-people-03",
+        "asset-2018-bert-architecture-01",
+        "asset-2018-bert-architecture-02"
       ]
     },
     "fusionCanonical": "2018-bert",
@@ -4900,7 +7490,218 @@ const milestones = [
             "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-bert",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《BERT》",
+            "en": "BERT"
+          },
+          "url": "https://arxiv.org/abs/1810.04805",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-acl-anthology-bert-paper",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ACL Anthology BERT 论文",
+            "en": "ACL Anthology BERT paper"
+          },
+          "url": "https://aclanthology.org/N19-1423/",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-research-bert-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "Google Research BERT 代码仓库",
+            "en": "Google Research BERT repository"
+          },
+          "url": "https://github.com/google-research/bert",
+          "reliability": "secondary",
+          "sourceType": "code"
+        },
+        {
+          "id": "source-google-ai-bert-blog-post",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Google AI BERT 博客",
+            "en": "Google AI BERT blog post"
+          },
+          "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-bert",
+        "source-acl-anthology-bert-paper",
+        "source-google-research-bert-repository",
+        "source-google-ai-bert-blog-post"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "BERT 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "BERT is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-bert",
+            "source-acl-anthology-bert-paper"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>",
+            "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line.</p>"
+          },
+          "sourceIds": [
+            "source-bert",
+            "source-acl-anthology-bert-paper"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2018-bert/event.json",
+      "variantFile": "archive/events/2018-bert/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2018-bert",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/jacob-devlin.jpg": {
+        "caption": {
+          "zh": "雅各布·德夫林肖像",
+          "en": "Jacob Devlin portrait"
+        },
+        "subcaption": {
+          "zh": "BERT 主要作者",
+          "en": "BERT lead author"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg": {
+        "caption": {
+          "zh": "BERT 掩码语言建模",
+          "en": "BERT masked language modeling"
+        },
+        "subcaption": {
+          "zh": "关于双向预训练的本地原创解释图。",
+          "en": "Original local explainer of bidirectional pre-training."
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "BERT 架构图",
+          "en": "BERT diagram"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2018-bert/architecture/2018-bert_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "BERT 架构图",
+          "en": "BERT diagram"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
     }
   },
   {
@@ -5122,6 +7923,14 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-alec-radford",
+        "asset-2018-gpt-next-token",
+        "asset-2018-gpt-architecture-01",
+        "asset-2018-gpt-architecture-02",
+        "asset-2018-gpt-historical-01",
+        "asset-2018-gpt-people-02"
       ]
     },
     "fusionCanonical": "2018-gpt",
@@ -5302,7 +8111,238 @@ const milestones = [
             "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-improving-language-understanding-by-generative-pre-training",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "《通过生成式预训练改进语言理解》",
+            "en": "Improving Language Understanding by Generative Pre-Training"
+          },
+          "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-openai-language-unsupervised-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "OpenAI 无监督语言页面",
+            "en": "OpenAI language unsupervised page"
+          },
+          "url": "https://openai.com/index/language-unsupervised/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-gpt-model-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "GPT 模型概览",
+            "en": "GPT model overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-alec-radford-research-context",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "亚历克·拉德福德研究背景",
+            "en": "Alec Radford research context"
+          },
+          "url": "https://openai.com/research/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-improving-language-understanding-by-generative-pre-training",
+        "source-openai-language-unsupervised-page",
+        "source-gpt-model-overview",
+        "source-alec-radford-research-context"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "GPT 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "GPT is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-improving-language-understanding-by-generative-pre-training",
+            "source-openai-language-unsupervised-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>",
+            "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models.</p>"
+          },
+          "sourceIds": [
+            "source-improving-language-understanding-by-generative-pre-training",
+            "source-openai-language-unsupervised-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2018-gpt/event.json",
+      "variantFile": "archive/events/2018-gpt/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2018-gpt",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/alec-radford.png": {
+        "caption": {
+          "zh": "亚历克·拉德福德肖像",
+          "en": "Alec Radford portrait"
+        },
+        "subcaption": {
+          "zh": "GPT 主要作者",
+          "en": "GPT lead author"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg": {
+        "caption": {
+          "zh": "GPT 下一个令牌预训练",
+          "en": "GPT next-token pre-training"
+        },
+        "subcaption": {
+          "zh": "关于解码器式生成预训练的本地原创解释图。",
+          "en": "Original local explainer of decoder-only generative pre-training."
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "GPT 架构图",
+          "en": "GPT diagram"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "GPT 架构图",
+          "en": "GPT diagram"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2018-gpt/historical/2018-gpt_historical_01.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "GPT",
+          "en": "GPT"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
     }
   },
   {
@@ -5468,6 +8508,158 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2019-ai-feynman-people-01",
+        "asset-2019-ai-feynman-historical-01",
+        "asset-2019-ai-feynman-papers-01",
+        "asset-2019-ai-feynman-papers-02"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2019-ai-feynman/event.json",
+      "variantFile": "archive/events/2019-ai-feynman/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2019-ai-feynman",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "AI Feynman：自主科学规律发现 架构图",
+          "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《AI 费曼：受物理启发的符号回归方法》",
+          "en": "AI Feynman: a physics-inspired method for symbolic regression"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《AI 费曼：受物理启发的符号回归方法》",
+          "en": "AI Feynman: a physics-inspired method for symbolic regression"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 2019-ai-feynman",
+            "en": "Legacy event record for 2019-ai-feynman"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "AI Feynman：自主科学规律发现 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "AI Feynman: Autonomous Discovery of Scientific Laws is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
+            "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -5736,6 +8928,17 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2020-alphafold-john-jumper-external",
+        "asset-2020-alphafold2-structure-pipeline",
+        "asset-2020-alphafold-architecture-01",
+        "asset-2020-alphafold-historical-01",
+        "asset-2020-alphafold-architecture-02",
+        "asset-2020-alphafold-historical-02",
+        "asset-2020-alphafold-papers-01",
+        "asset-2020-alphafold-people-01",
+        "asset-2020-alphafold-people-02"
       ]
     },
     "fusionCanonical": "2020-alphafold",
@@ -5916,7 +9119,299 @@ const milestones = [
             "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
+            "en": "Highly accurate protein structure prediction with AlphaFold"
+          },
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-deepmind-alphafold-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "DeepMind AlphaFold 页面",
+            "en": "DeepMind AlphaFold page"
+          },
+          "url": "https://deepmind.google/technologies/alphafold/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-alphafold-protein-structure-database",
+          "type": {
+            "zh": "数据集",
+            "en": "Dataset"
+          },
+          "label": {
+            "zh": "AlphaFold 蛋白质结构数据库",
+            "en": "AlphaFold Protein Structure Database"
+          },
+          "url": "https://alphafold.ebi.ac.uk/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-alphafold-github-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "AlphaFold GitHub 代码仓库",
+            "en": "AlphaFold GitHub repository"
+          },
+          "url": "https://github.com/google-deepmind/alphafold",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "source-deepmind-alphafold-page",
+        "source-alphafold-protein-structure-database",
+        "source-alphafold-github-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaFold2 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "AlphaFold2 is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-highly-accurate-protein-structure-prediction-with-alphafold",
+            "source-deepmind-alphafold-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
+            "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+          },
+          "sourceIds": [
+            "source-highly-accurate-protein-structure-prediction-with-alphafold",
+            "source-deepmind-alphafold-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2020-alphafold/event.json",
+      "variantFile": "archive/events/2020-alphafold/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2020-alphafold",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg": {
+        "caption": {
+          "zh": "John Jumper 外部参考图",
+          "en": "John Jumper external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-deepmind-alphafold-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg": {
+        "caption": {
+          "zh": "AlphaFold2 结构预测流程",
+          "en": "AlphaFold2 structure pipeline"
+        },
+        "subcaption": {
+          "zh": "关于从序列到结构预测的本地原创解释图。",
+          "en": "Original local explainer of sequence-to-structure prediction."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测 架构图",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测 架构图",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
+          "en": "Highly accurate protein structure prediction with AlphaFold"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
     }
   },
   {
@@ -6097,6 +9592,137 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2023-agents-historical-02",
+        "asset-2023-agents-historical-03",
+        "asset-2023-agents-historical-04"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2023-agents/event.json",
+      "variantFile": "archive/events/2023-agents/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2023-agents",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "智能体：LLM驱动的自主系统",
+          "en": "Agents: LLM-Driven Autonomous Systems"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "智能体：LLM驱动的自主系统",
+          "en": "Agents: LLM-Driven Autonomous Systems"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "智能体：LLM驱动的自主系统",
+          "en": "Agents: LLM-Driven Autonomous Systems"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 2023-agents",
+            "en": "Legacy event record for 2023-agents"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "智能体：LLM驱动的自主系统 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Agents: LLM-Driven Autonomous Systems is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
+            "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -6293,6 +9919,179 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2024-ai-scientist-architecture-01",
+        "asset-2024-ai-scientist-architecture-02",
+        "asset-2024-ai-scientist-papers-01",
+        "asset-2024-ai-scientist-people-01",
+        "asset-2024-ai-scientist-people-02"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2024-ai-scientist/event.json",
+      "variantFile": "archive/events/2024-ai-scientist/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2024-ai-scientist",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "AI科学家与自主实验室 架构图",
+          "en": "AI Scientists and Autonomous Laboratories"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "AI科学家与自主实验室 架构图",
+          "en": "AI Scientists and Autonomous Laboratories"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《AI 科学家》",
+          "en": "The AI Scientist"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 2024-ai-scientist",
+            "en": "Legacy event record for 2024-ai-scientist"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "AI科学家与自主实验室 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "AI Scientists and Autonomous Laboratories is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
+            "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -6473,6 +10272,158 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2025-llm-competition-historical-01",
+        "asset-2025-llm-competition-architecture-01",
+        "asset-2025-llm-competition-historical-02",
+        "asset-2025-llm-competition-historical-03"
+      ]
+    },
+    "archive": {
+      "eventFile": "archive/events/2025-llm-competition/event.json",
+      "variantFile": "archive/events/2025-llm-competition/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2025-llm-competition",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "大语言模型百花齐放",
+          "en": "A Flourishing Competition Among Large Language Models"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "大语言模型百花齐放 架构图",
+          "en": "A Flourishing Competition Among Large Language Models"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "大语言模型百花齐放",
+          "en": "A Flourishing Competition Among Large Language Models"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "大语言模型百花齐放",
+          "en": "A Flourishing Competition Among Large Language Models"
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "archiveSources": [
+        {
+          "id": "source-legacy-event-record",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "Legacy event record for 2025-llm-competition",
+            "en": "Legacy event record for 2025-llm-competition"
+          },
+          "url": "https://www.benchcouncil.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-legacy-event-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "大语言模型百花齐放 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "A Flourishing Competition Among Large Language Models is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
+            "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+          },
+          "sourceIds": [
+            "source-legacy-event-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     }
   },
@@ -6630,7 +10581,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1950-turing-test-alan-turing",
+        "asset-1950-turing-test-diagram"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -6789,6 +10744,106 @@ const milestones = [
           },
           "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-computing-machinery-and-intelligence",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "计算机器与智能",
+            "en": "Computing Machinery and Intelligence"
+          },
+          "url": "https://academic.oup.com/mind/article/LIX/236/433/986238",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-turing-digital-archive",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "图灵数字档案",
+            "en": "Turing Digital Archive"
+          },
+          "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-internet-archive-digital-preview",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "互联网档案馆 数字化预览",
+            "en": "Internet Archive digital preview"
+          },
+          "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-stanford-encyclopedia-of-philosophy",
+          "type": {
+            "zh": "背景",
+            "en": "Context"
+          },
+          "label": {
+            "zh": "斯坦福哲学百科全书",
+            "en": "Stanford Encyclopedia of Philosophy"
+          },
+          "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/",
+          "reliability": "reference-only",
+          "sourceType": "context"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-computing-machinery-and-intelligence",
+        "source-turing-digital-archive",
+        "source-internet-archive-digital-preview",
+        "source-stanford-encyclopedia-of-philosophy"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "图灵测试 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "Turing Test is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-computing-machinery-and-intelligence",
+            "source-turing-digital-archive"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "图灵测试 的技术线索包括「行为评估」，代表性产物是「模仿游戏协议」。",
+            "en": "Turing Test is described through the method \"Behavioral evaluation\" and the artifact \"Imitation game protocol\"."
+          },
+          "sourceIds": [
+            "source-computing-machinery-and-intelligence",
+            "source-turing-digital-archive"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -6872,7 +10927,58 @@ const milestones = [
           "behavior"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1950-turing-test/event.json",
+      "variantFile": "archive/events/1950-turing-test/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1950-turing-test",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg": {
+        "caption": {
+          "zh": "艾伦·图灵 肖像",
+          "en": "Alan Turing portrait"
+        },
+        "subcaption": {
+          "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日",
+          "en": "Photograph portrait of Alan Turing, 29 March 1951"
+        },
+        "sourceId": "source-computing-machinery-and-intelligence",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Public domain",
+            "en": "Public domain"
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png": {
+        "caption": {
+          "zh": "图灵测试结构图",
+          "en": "Turing test diagram"
+        },
+        "subcaption": {
+          "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。",
+          "en": "Observer C judges hidden human and machine replies through text only."
+        },
+        "sourceId": "source-computing-machinery-and-intelligence",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+            "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-1958-lisp",
@@ -7028,7 +11134,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1958-lisp-john-mccarthy",
+        "asset-1958-lisp-eval-flow"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -7154,6 +11264,91 @@ const milestones = [
           },
           "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-recursive-functions-of-symbolic-expressions",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "符号表达式的递归函数",
+            "en": "Recursive Functions of Symbolic Expressions"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/recursive.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-lisp-i-programmer-s-manual",
+          "type": {
+            "zh": "手册",
+            "en": "Manual"
+          },
+          "label": {
+            "zh": "LISP I 程序员手册",
+            "en": "LISP I Programmer's Manual"
+          },
+          "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view",
+          "reliability": "reference-only",
+          "sourceType": "manual"
+        },
+        {
+          "id": "source-history-of-lisp",
+          "type": {
+            "zh": "历史",
+            "en": "History"
+          },
+          "label": {
+            "zh": "Lisp 史",
+            "en": "History of Lisp"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html",
+          "reliability": "reference-only",
+          "sourceType": "history"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-recursive-functions-of-symbolic-expressions",
+        "source-lisp-i-programmer-s-manual",
+        "source-history-of-lisp"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "LISP 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "LISP is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-recursive-functions-of-symbolic-expressions",
+            "source-lisp-i-programmer-s-manual"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "LISP 的技术线索包括「符号递归」，代表性产物是「S 表达式求值器」。",
+            "en": "LISP is described through the method \"Symbolic recursion\" and the artifact \"S-expression evaluator\"."
+          },
+          "sourceIds": [
+            "source-recursive-functions-of-symbolic-expressions",
+            "source-lisp-i-programmer-s-manual"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -7237,7 +11432,58 @@ const milestones = [
           "symbolic"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1958-lisp/event.json",
+      "variantFile": "archive/events/1958-lisp/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1958-lisp",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg": {
+        "caption": {
+          "zh": "约翰·麦卡锡 肖像",
+          "en": "John McCarthy portrait"
+        },
+        "subcaption": {
+          "zh": "约翰·麦卡锡 于 斯坦福大学，2006 年",
+          "en": "John McCarthy at Stanford, 2006"
+        },
+        "sourceId": "source-recursive-functions-of-symbolic-expressions",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "CC BY-SA 2.0",
+            "en": "CC BY-SA 2.0"
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg": {
+        "caption": {
+          "zh": "S 表达式求值流程",
+          "en": "S-expression evaluator"
+        },
+        "subcaption": {
+          "zh": "根据 麦卡锡 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。",
+          "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives."
+        },
+        "sourceId": "source-recursive-functions-of-symbolic-expressions",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local explainer; source text reuse rights not stated.",
+            "en": "Original local explainer; source text reuse rights not stated."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2016-alphago",
@@ -7419,7 +11665,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-alphago-lee-sedol",
+        "asset-alphago-policy-value-search"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -7545,6 +11795,104 @@ const milestones = [
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-alphago-nature-paper",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "Mastering the game of Go with deep neural networks and tree search",
+            "en": "Mastering the game of Go with deep neural networks and tree search"
+          },
+          "url": "https://www.nature.com/articles/nature16961",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-deepmind-alphago-page",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "Google DeepMind AlphaGo",
+            "en": "Google DeepMind AlphaGo"
+          },
+          "url": "https://deepmind.google/research/alphago/",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-katago-analysis-engine",
+          "type": {
+            "zh": "code",
+            "en": "code"
+          },
+          "label": {
+            "zh": "KataGo Analysis Engine",
+            "en": "KataGo Analysis Engine"
+          },
+          "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+          "reliability": "reference-only",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-alphago-nature-paper",
+        "source-deepmind-alphago-page",
+        "source-katago-analysis-engine"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-hybrid-policy-value-search",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaGo 结合了策略网络、价值网络和蒙特卡洛树搜索。",
+            "en": "AlphaGo combined policy networks, value networks, and Monte Carlo tree search."
+          },
+          "sourceIds": [
+            "source-alphago-nature-paper"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-lee-sedol-match",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaGo 在 2016 年与李世石的五番棋中获胜。",
+            "en": "AlphaGo won the five-game match against Lee Sedol in 2016."
+          },
+          "sourceIds": [
+            "source-deepmind-alphago-page"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-self-play-legacy",
+          "importance": "context",
+          "text": {
+            "zh": "AlphaGo 的神经搜索和自我对弈路线影响了后续 AlphaGo Zero、AlphaZero 和 MuZero 等系统。",
+            "en": "AlphaGo’s neural search and self-play pattern influenced later systems such as AlphaGo Zero, AlphaZero, and MuZero."
+          },
+          "sourceIds": [
+            "source-deepmind-alphago-page",
+            "source-alphago-nature-paper"
+          ],
+          "status": "verified"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-hybrid-policy-value-search",
+        "claim-lee-sedol-match",
+        "claim-self-play-legacy"
+      ],
+      "archiveEmphasis": [
+        "research-breakthrough",
+        "policy-value-network",
+        "mcts"
       ]
     },
     "quiz": {
@@ -7628,7 +11976,58 @@ const milestones = [
           "search"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2016-alphago/event.json",
+      "variantFile": "archive/events/2016-alphago/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2016-alphago",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
+        "caption": {
+          "zh": "AlphaGo 与李世石比赛资料图",
+          "en": "AlphaGo and Lee Sedol match reference image"
+        },
+        "subcaption": {
+          "zh": "team-photo",
+          "en": "team-photo"
+        },
+        "sourceId": "source-deepmind-alphago-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep source attribution."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
+        "caption": {
+          "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
+          "en": "AlphaGo policy, value, and search workflow explainer"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-alphago-nature-paper",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1971-complexity-theory",
@@ -7798,7 +12197,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1971-complexity-theory-stephen-cook",
+        "asset-1971-complexity-theory-reduction-map"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -7942,6 +12345,91 @@ const milestones = [
           },
           "url": "https://www.claymath.org/millennium/p-vs-np/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-the-complexity-of-theorem-proving-procedures",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "定理证明过程的复杂性",
+            "en": "The Complexity of Theorem-Proving Procedures"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/800157.805047",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-stephen-a-cook-acm-a-m-turing-award",
+          "type": {
+            "zh": "奖项",
+            "en": "Award"
+          },
+          "label": {
+            "zh": "斯蒂芬·A·库克 ACM A.M. 图灵 Award",
+            "en": "Stephen A. Cook ACM A.M. Turing Award"
+          },
+          "url": "https://awards.acm.org/award_winners/cook_N991950",
+          "reliability": "reference-only",
+          "sourceType": "award"
+        },
+        {
+          "id": "source-clay-mathematics-institute-p-vs-np",
+          "type": {
+            "zh": "难题",
+            "en": "Problem"
+          },
+          "label": {
+            "zh": "克雷数学研究所 P 与 NP 问题",
+            "en": "Clay Mathematics Institute P vs NP"
+          },
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "reliability": "reference-only",
+          "sourceType": "problem"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-the-complexity-of-theorem-proving-procedures",
+        "source-stephen-a-cook-acm-a-m-turing-award",
+        "source-clay-mathematics-institute-p-vs-np"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "NP 完全性 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "NP-Completeness is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-the-complexity-of-theorem-proving-procedures",
+            "source-stephen-a-cook-acm-a-m-turing-award"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "NP 完全性 的技术线索包括「多项式时间归约」，代表性产物是「NP 完全性框架」。",
+            "en": "NP-Completeness is described through the method \"Polynomial-time reductions\" and the artifact \"NP-completeness framework\"."
+          },
+          "sourceIds": [
+            "source-the-complexity-of-theorem-proving-procedures",
+            "source-stephen-a-cook-acm-a-m-turing-award"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -8025,7 +12513,58 @@ const milestones = [
           "reductions"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1971-complexity-theory/event.json",
+      "variantFile": "archive/events/1971-complexity-theory/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1971-complexity-theory",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg": {
+        "caption": {
+          "zh": "斯蒂芬·A·库克 肖像",
+          "en": "Stephen A. Cook portrait"
+        },
+        "subcaption": {
+          "zh": "斯蒂芬·A·库克 摄于 2012 年图灵百年纪念活动。",
+          "en": "Stephen A. Cook photographed during the Turing Centenary Celebration in 2012."
+        },
+        "sourceId": "source-the-complexity-of-theorem-proving-procedures",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+            "en": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg": {
+        "caption": {
+          "zh": "NP 完全性归约地图",
+          "en": "NP-completeness reduction map"
+        },
+        "subcaption": {
+          "zh": "根据 库克 1971 年论文与 Clay P 与 NP 难题说明制作的原创解释图。",
+          "en": "Original explainer derived from Cook's 1971 paper and the Clay P versus NP problem description."
+        },
+        "sourceId": "source-the-complexity-of-theorem-proving-procedures",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local explainer; source article reuse rights not used.",
+            "en": "Original local explainer; source article reuse rights not used."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1971-vc-theory",
@@ -8198,7 +12737,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1971-vc-theory-vladimir-vapnik",
+        "asset-1971-vc-theory-generalization"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -8339,6 +12882,91 @@ const milestones = [
           },
           "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-on-the-uniform-convergence-of-relative-frequencies",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "相对频率的一致收敛",
+            "en": "On the Uniform Convergence of Relative Frequencies"
+          },
+          "url": "https://epubs.siam.org/doi/10.1137/1116025",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-the-nature-of-statistical-learning-theory",
+          "type": {
+            "zh": "图书",
+            "en": "Book"
+          },
+          "label": {
+            "zh": "统计学习理论的本质",
+            "en": "The Nature of Statistical Learning Theory"
+          },
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-2440-0",
+          "reliability": "reference-only",
+          "sourceType": "book"
+        },
+        {
+          "id": "source-an-overview-of-statistical-learning-theory",
+          "type": {
+            "zh": "综述",
+            "en": "Overview"
+          },
+          "label": {
+            "zh": "统计学习理论概览",
+            "en": "An Overview of Statistical Learning Theory"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/",
+          "reliability": "reference-only",
+          "sourceType": "overview"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-on-the-uniform-convergence-of-relative-frequencies",
+        "source-the-nature-of-statistical-learning-theory",
+        "source-an-overview-of-statistical-learning-theory"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "VC 理论 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "VC Theory is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-on-the-uniform-convergence-of-relative-frequencies",
+            "source-the-nature-of-statistical-learning-theory"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "VC 理论 的技术线索包括「统计学习」，代表性产物是「VC 维」。",
+            "en": "VC Theory is described through the method \"Statistical learning\" and the artifact \"VC dimension\"."
+          },
+          "sourceIds": [
+            "source-on-the-uniform-convergence-of-relative-frequencies",
+            "source-the-nature-of-statistical-learning-theory"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -8422,7 +13050,58 @@ const milestones = [
           "capacity"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1971-vc-theory/event.json",
+      "variantFile": "archive/events/1971-vc-theory/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1971-vc-theory",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png": {
+        "caption": {
+          "zh": "弗拉基米尔·瓦普尼克 肖像",
+          "en": "Vladimir Vapnik portrait"
+        },
+        "subcaption": {
+          "zh": "西蒙斯基金会 人物页中的 弗拉基米尔·瓦普尼克 肖像。",
+          "en": "Vladimir Vapnik profile portrait from the Simons Foundation."
+        },
+        "sourceId": "source-on-the-uniform-convergence-of-relative-frequencies",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "西蒙斯基金会 profile image; page does not state an open reuse license.",
+            "en": "Simons Foundation profile image; page does not state an open reuse license."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg": {
+        "caption": {
+          "zh": "VC 理论泛化示意图",
+          "en": "VC theory generalization diagram"
+        },
+        "subcaption": {
+          "zh": "根据 瓦普尼克 与 切尔沃年基斯 的学习理论资料制作的原创解释图。",
+          "en": "Original explainer derived from Vapnik and Chervonenkis's learning theory sources."
+        },
+        "sourceId": "source-on-the-uniform-convergence-of-relative-frequencies",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local explainer; source article and book figure reuse rights not used.",
+            "en": "Original local explainer; source article and book figure reuse rights not used."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1956-logic-theorist",
@@ -8605,7 +13284,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1956-logic-theorist-herbert-simon",
+        "asset-1956-logic-theorist-proof-search"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -8749,6 +13432,91 @@ const milestones = [
           },
           "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-the-logic-theory-machine",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "逻辑理论机",
+            "en": "The Logic Theory Machine"
+          },
+          "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-carnegie-mellon-university-archives",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Carnegie Mellon University Archives",
+            "en": "Carnegie Mellon University Archives"
+          },
+          "url": "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-allen-newell-acm-a-m-turing-award",
+          "type": {
+            "zh": "奖项",
+            "en": "Award"
+          },
+          "label": {
+            "zh": "艾伦·纽厄尔 ACM A.M. 图灵 Award",
+            "en": "Allen Newell ACM A.M. Turing Award"
+          },
+          "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm",
+          "reliability": "reference-only",
+          "sourceType": "award"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-the-logic-theory-machine",
+        "source-carnegie-mellon-university-archives",
+        "source-allen-newell-acm-a-m-turing-award"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "逻辑理论家 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "Logic Theorist is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-the-logic-theory-machine",
+            "source-carnegie-mellon-university-archives"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "逻辑理论家 的技术线索包括「启发式证明搜索」，代表性产物是「逻辑理论机器」。",
+            "en": "Logic Theorist is described through the method \"Heuristic proof search\" and the artifact \"Logic Theory Machine\"."
+          },
+          "sourceIds": [
+            "source-the-logic-theory-machine",
+            "source-carnegie-mellon-university-archives"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -8832,7 +13600,58 @@ const milestones = [
           "theorem-proving"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1956-logic-theorist/event.json",
+      "variantFile": "archive/events/1956-logic-theorist/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1956-logic-theorist",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg": {
+        "caption": {
+          "zh": "赫伯特·A·西蒙 肖像",
+          "en": "Herbert A. Simon portrait"
+        },
+        "subcaption": {
+          "zh": "维基共享资源 收录的 赫伯特·A·西蒙 肖像，他是 Logic Theorist 共同创建者之一。",
+          "en": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators."
+        },
+        "sourceId": "source-the-logic-theory-machine",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+            "en": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg": {
+        "caption": {
+          "zh": "Logic Theorist 证明搜索",
+          "en": "Logic Theorist proof search"
+        },
+        "subcaption": {
+          "zh": "原创解释图，展示目标定理、启发式搜索、符号变换和证明链。",
+          "en": "Original explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain."
+        },
+        "sourceId": "source-the-logic-theory-machine",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local explainer; source text and figure reuse rights not used.",
+            "en": "Original local explainer; source text and figure reuse rights not used."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1958-wangs-algorithm",
@@ -8989,7 +13808,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1958-wangs-algorithm-hao-wang",
+        "asset-1958-wangs-algorithm-pattern-proof"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -9133,6 +13956,91 @@ const milestones = [
           },
           "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-proving-theorems-by-pattern-recognition-i",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "通过模式识别证明定理 I",
+            "en": "Proving theorems by pattern recognition I"
+          },
+          "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-proving-theorems-by-pattern-recognition-ii",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "通过模式识别证明定理（二）",
+            "en": "Proving Theorems by Pattern Recognition - II"
+          },
+          "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-rockefeller-university-digital-commons-wang-hao",
+          "type": {
+            "zh": "照片",
+            "en": "Photo"
+          },
+          "label": {
+            "zh": "Rockefeller University Digital Commons: 王浩, Hao",
+            "en": "Rockefeller University Digital Commons: Wang, Hao"
+          },
+          "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+          "reliability": "reference-only",
+          "sourceType": "photo"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-proving-theorems-by-pattern-recognition-i",
+        "source-proving-theorems-by-pattern-recognition-ii",
+        "source-rockefeller-university-digital-commons-wang-hao"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "王氏算法 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "Wang's Algorithm is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-proving-theorems-by-pattern-recognition-i",
+            "source-proving-theorems-by-pattern-recognition-ii"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "王氏算法 的技术线索包括「模式引导证明过程」，代表性产物是「王氏定理证明过程」。",
+            "en": "Wang's Algorithm is described through the method \"Pattern-guided proof procedure\" and the artifact \"Wang theorem-proving procedure\"."
+          },
+          "sourceIds": [
+            "source-proving-theorems-by-pattern-recognition-i",
+            "source-proving-theorems-by-pattern-recognition-ii"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -9216,7 +14124,58 @@ const milestones = [
           "pattern-recognition"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1958-wangs-algorithm/event.json",
+      "variantFile": "archive/events/1958-wangs-algorithm/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1958-wangs-algorithm",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg": {
+        "caption": {
+          "zh": "王浩肖像",
+          "en": "Hao Wang portrait"
+        },
+        "subcaption": {
+          "zh": "王浩约 1980 年代肖像，来自 Rockefeller University 历史照片收藏。",
+          "en": "Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection."
+        },
+        "sourceId": "source-proving-theorems-by-pattern-recognition-i",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+            "en": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg": {
+        "caption": {
+          "zh": "王氏算法模式证明",
+          "en": "Wang algorithm pattern proof"
+        },
+        "subcaption": {
+          "zh": "原创解释图，展示公式规范化、规则匹配、证明归约与分支闭合。",
+          "en": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure."
+        },
+        "sourceId": "source-proving-theorems-by-pattern-recognition-i",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local explainer; source article images not reused.",
+            "en": "Original local explainer; source article images not reused."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1960-davis-putnam-dpll",
@@ -9412,7 +14371,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1960-davis-putnam-dpll-hilary-putnam",
+        "asset-1960-davis-putnam-dpll-sat-search"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -9556,6 +14519,91 @@ const milestones = [
           },
           "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-computing-procedure-for-quantification-theory",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "量词理论的计算过程",
+            "en": "A Computing Procedure for Quantification Theory"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/321033.321034",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-a-machine-program-for-theorem-proving",
+          "type": {
+            "zh": "程序",
+            "en": "Program"
+          },
+          "label": {
+            "zh": "用于定理证明的机器程序",
+            "en": "A machine program for theorem-proving"
+          },
+          "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+          "reliability": "reference-only",
+          "sourceType": "program"
+        },
+        {
+          "id": "source-wikimedia-commons-hilary-putnam",
+          "type": {
+            "zh": "照片",
+            "en": "Photo"
+          },
+          "label": {
+            "zh": "维基共享资源: 希拉里·普特南",
+            "en": "Wikimedia Commons: Hilary Putnam"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "reliability": "reference-only",
+          "sourceType": "photo"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-computing-procedure-for-quantification-theory",
+        "source-a-machine-program-for-theorem-proving",
+        "source-wikimedia-commons-hilary-putnam"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "DP/DPLL 算法 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "Davis-Putnam & DPLL is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-a-computing-procedure-for-quantification-theory",
+            "source-a-machine-program-for-theorem-proving"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "DP/DPLL 算法 的技术线索包括「带传播的 SAT 搜索」，代表性产物是「Davis-Putnam / DPLL 过程」。",
+            "en": "Davis-Putnam & DPLL is described through the method \"SAT search with propagation\" and the artifact \"Davis-Putnam / DPLL procedure\"."
+          },
+          "sourceIds": [
+            "source-a-computing-procedure-for-quantification-theory",
+            "source-a-machine-program-for-theorem-proving"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -9641,7 +14689,58 @@ const milestones = [
           "theorem-proving"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1960-davis-putnam-dpll/event.json",
+      "variantFile": "archive/events/1960-davis-putnam-dpll/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1960-davis-putnam-dpll",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
+        "caption": {
+          "zh": "希拉里·普特南 肖像",
+          "en": "Hilary Putnam portrait"
+        },
+        "subcaption": {
+          "zh": "维基共享资源 收录的 希拉里·普特南 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。",
+          "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure."
+        },
+        "sourceId": "source-a-computing-procedure-for-quantification-theory",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+            "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg": {
+        "caption": {
+          "zh": "Davis-Putnam 与 DPLL SAT 搜索",
+          "en": "Davis-Putnam and DPLL SAT search"
+        },
+        "subcaption": {
+          "zh": "原创解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。",
+          "en": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance."
+        },
+        "sourceId": "source-a-computing-procedure-for-quantification-theory",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local explainer; source article images not reused.",
+            "en": "Original local explainer; source article images not reused."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2014-adam",
@@ -9850,7 +14949,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2014-adam-diederik-kingma",
+        "asset-2014-adam-moment-traces",
+        "asset-2014-adam-loss-trajectory"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -10013,6 +15117,91 @@ const milestones = [
           "en": "Bias-corrected update",
           "zh": "偏差校正更新"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-adam-a-method-for-stochastic-optimization",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Adam：一种随机优化方法",
+            "en": "Adam: A Method for Stochastic Optimization"
+          },
+          "url": "https://arxiv.org/abs/1412.6980",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-pytorch-torch-optim-adam",
+          "type": {
+            "zh": "Implementation",
+            "en": "Implementation"
+          },
+          "label": {
+            "zh": "PyTorch torch.optim.Adam",
+            "en": "PyTorch torch.optim.Adam"
+          },
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+          "reliability": "reference-only",
+          "sourceType": "implementation"
+        },
+        {
+          "id": "source-tensorflow-keras-adam-optimizer",
+          "type": {
+            "zh": "Framework docs",
+            "en": "Framework docs"
+          },
+          "label": {
+            "zh": "TensorFlow Keras Adam optimizer",
+            "en": "TensorFlow Keras Adam optimizer"
+          },
+          "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam",
+          "reliability": "reference-only",
+          "sourceType": "framework-docs"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-adam-a-method-for-stochastic-optimization",
+        "source-pytorch-torch-optim-adam",
+        "source-tensorflow-keras-adam-optimizer"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "Adam 优化器 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "Adam Optimizer is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-adam-a-method-for-stochastic-optimization",
+            "source-pytorch-torch-optim-adam"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "Adam 优化器 的技术线索包括「一阶与二阶矩自适应更新」，代表性产物是「Adam 随机优化器」。",
+            "en": "Adam Optimizer is described through the method \"Adaptive first- and second-moment updates\" and the artifact \"Adam stochastic optimizer\"."
+          },
+          "sourceIds": [
+            "source-adam-a-method-for-stochastic-optimization",
+            "source-pytorch-torch-optim-adam"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -10096,7 +15285,78 @@ const milestones = [
           "deep-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2014-adam/event.json",
+      "variantFile": "archive/events/2014-adam/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-adam",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg": {
+        "caption": {
+          "zh": "迪德里克·P·金马 肖像",
+          "en": "Diederik P. Kingma portrait"
+        },
+        "subcaption": {
+          "zh": "来自 金马 个人网站的人物照片。",
+          "en": "Portrait from Kingma's personal website."
+        },
+        "sourceId": "source-adam-a-method-for-stochastic-optimization",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Personal website photo; rights not stated.",
+            "en": "Personal website photo; rights not stated."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg": {
+        "caption": {
+          "zh": "Adam 一阶/二阶矩曲线",
+          "en": "Adam moment traces"
+        },
+        "subcaption": {
+          "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Adam Optimizer, based on the related source material."
+        },
+        "sourceId": "source-adam-a-method-for-stochastic-optimization",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg": {
+        "caption": {
+          "zh": "损失地形轨迹",
+          "en": "Loss landscape trajectory"
+        },
+        "subcaption": {
+          "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Adam Optimizer, based on the related source material."
+        },
+        "sourceId": "source-adam-a-method-for-stochastic-optimization",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2014-vgg",
@@ -10302,7 +15562,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2014-vgg-andrew-zisserman",
+        "asset-2014-vgg-depth-configurations",
+        "asset-2014-vgg-receptive-field"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -10461,6 +15726,91 @@ const milestones = [
           "en": "Released models",
           "zh": "公开模型"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "用于大规模图像识别的超深卷积网络",
+            "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
+          },
+          "url": "https://arxiv.org/abs/1409.1556",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-oxford-vgg-very-deep-convnets",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "Oxford VGG Very Deep ConvNets",
+            "en": "Oxford VGG Very Deep ConvNets"
+          },
+          "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-torchvision-vgg-model-family",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model docs"
+          },
+          "label": {
+            "zh": "TorchVision VGG model family",
+            "en": "TorchVision VGG model family"
+          },
+          "url": "https://pytorch.org/vision/stable/models/vgg.html",
+          "reliability": "reference-only",
+          "sourceType": "model-docs"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+        "source-oxford-vgg-very-deep-convnets",
+        "source-torchvision-vgg-model-family"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "VGG 网络 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "VGG Networks is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+            "source-oxford-vgg-very-deep-convnets"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "VGG 网络 的技术线索包括「由 3x3 卷积堆叠出的很深网络」，代表性产物是「VGG-16 与 VGG-19 架构」。",
+            "en": "VGG Networks is described through the method \"Very deep stacks of 3x3 convolutions\" and the artifact \"VGG-16 and VGG-19 architectures\"."
+          },
+          "sourceIds": [
+            "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+            "source-oxford-vgg-very-deep-convnets"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -10544,7 +15894,78 @@ const milestones = [
           "cnn"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2014-vgg/event.json",
+      "variantFile": "archive/events/2014-vgg/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-vgg",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg": {
+        "caption": {
+          "zh": "安德鲁·齐瑟曼 肖像",
+          "en": "Andrew Zisserman portrait"
+        },
+        "subcaption": {
+          "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。",
+          "en": "Profile photo from the ELLIS Oxford / University of Oxford page."
+        },
+        "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Institution profile photo; rights not stated.",
+            "en": "Institution profile photo; rights not stated."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg": {
+        "caption": {
+          "zh": "VGG 深度配置对比",
+          "en": "VGG depth comparison"
+        },
+        "subcaption": {
+          "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for VGG Networks, based on the related source material."
+        },
+        "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg": {
+        "caption": {
+          "zh": "3x3 感受野累积",
+          "en": "3x3 receptive-field build-up"
+        },
+        "subcaption": {
+          "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for VGG Networks, based on the related source material."
+        },
+        "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1975-genetic-algorithm",
@@ -10746,7 +16167,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1975-genetic-algorithm-john-henry-holland",
+        "asset-1975-genetic-algorithm-population-cycle",
+        "asset-1975-genetic-algorithm-chromosome-crossover"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -10908,6 +16334,91 @@ const milestones = [
           "en": "Fitness feedback",
           "zh": "适应度反馈"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-adaptation-in-natural-and-artificial-systems",
+          "type": {
+            "zh": "图书",
+            "en": "Book"
+          },
+          "label": {
+            "zh": "自然系统与人工系统中的适应",
+            "en": "Adaptation in Natural and Artificial Systems"
+          },
+          "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+          "reliability": "reference-only",
+          "sourceType": "book"
+        },
+        {
+          "id": "source-deap-evolutionary-computation-framework",
+          "type": {
+            "zh": "工具包",
+            "en": "Toolkit"
+          },
+          "label": {
+            "zh": "DEAP evolutionary computation framework",
+            "en": "DEAP evolutionary computation framework"
+          },
+          "url": "https://deap.readthedocs.io/en/master/",
+          "reliability": "reference-only",
+          "sourceType": "toolkit"
+        },
+        {
+          "id": "source-ecj-evolutionary-computation-system",
+          "type": {
+            "zh": "工具包",
+            "en": "Toolkit"
+          },
+          "label": {
+            "zh": "ECJ evolutionary computation system",
+            "en": "ECJ evolutionary computation system"
+          },
+          "url": "https://cs.gmu.edu/~eclab/projects/ecj/",
+          "reliability": "reference-only",
+          "sourceType": "toolkit"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-adaptation-in-natural-and-artificial-systems",
+        "source-deap-evolutionary-computation-framework",
+        "source-ecj-evolutionary-computation-system"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "遗传算法 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "Genetic Algorithms is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-adaptation-in-natural-and-artificial-systems",
+            "source-deap-evolutionary-computation-framework"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "遗传算法 的技术线索包括「基于种群的进化搜索」，代表性产物是「遗传算法框架」。",
+            "en": "Genetic Algorithms is described through the method \"Population-based evolutionary search\" and the artifact \"Genetic algorithm framework\"."
+          },
+          "sourceIds": [
+            "source-adaptation-in-natural-and-artificial-systems",
+            "source-deap-evolutionary-computation-framework"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "archiveEmphasis": [
+        "ai100-batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -10991,7 +16502,78 @@ const milestones = [
           "optimization"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1975-genetic-algorithm/event.json",
+      "variantFile": "archive/events/1975-genetic-algorithm/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1975-genetic-algorithm",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg": {
+        "caption": {
+          "zh": "John Henry 霍兰德 肖像",
+          "en": "John Henry Holland portrait"
+        },
+        "subcaption": {
+          "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。",
+          "en": "Physics Today history article photo, credited there to Santa Fe Institute."
+        },
+        "sourceId": "source-adaptation-in-natural-and-artificial-systems",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Physics Today article photo; photo credit: Santa Fe Institute.",
+            "en": "Physics Today article photo; photo credit: Santa Fe Institute."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg": {
+        "caption": {
+          "zh": "种群适应循环",
+          "en": "Population adaptation loop"
+        },
+        "subcaption": {
+          "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Genetic Algorithms, based on the related source material."
+        },
+        "sourceId": "source-adaptation-in-natural-and-artificial-systems",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg": {
+        "caption": {
+          "zh": "染色体交叉",
+          "en": "Chromosome crossover"
+        },
+        "subcaption": {
+          "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Genetic Algorithms, based on the related source material."
+        },
+        "sourceId": "source-adaptation-in-natural-and-artificial-systems",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2015-u-net",
@@ -11222,7 +16804,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2015-u-net-olaf-ronneberger",
+        "asset-2015-u-net-u-shape-architecture",
+        "asset-2015-u-net-segmentation-mask"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -11384,6 +16971,91 @@ const milestones = [
           "en": "Pixel mask output",
           "zh": "像素掩码输出"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "U-Net：用于生物医学图像分割的卷积网络",
+            "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation"
+          },
+          "url": "https://arxiv.org/abs/1505.04597",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-freiburg-u-net-release-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "弗赖堡 U-Net 项目发布页",
+            "en": "Freiburg U-Net release page"
+          },
+          "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-nnu-net-implementation-project",
+          "type": {
+            "zh": "工具包",
+            "en": "Toolkit"
+          },
+          "label": {
+            "zh": "nnU-Net 实现项目",
+            "en": "nnU-Net implementation project"
+          },
+          "url": "https://github.com/MIC-DKFZ/nnUNet",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+        "source-freiburg-u-net-release-page",
+        "source-nnu-net-implementation-project"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "U-Net 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "U-Net is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+            "source-freiburg-u-net-release-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>U-Net 最初面向生物医学图像分割，在这类任务中标注数据稀缺且边界细节重要。收缩路径汇聚上下文，扩张路径恢复分辨率，跳跃连接则把精细信息跨过 U 形结构传递过去。这个设计后来走出原始领域，成为分割、图像复原、扩散模型和密集预测的通用模板。</p>",
+            "en": "<p>U-Net was designed for biomedical image segmentation, where labeled data can be scarce and boundary detail matters. Its contracting path gathers context while the expanding path restores resolution, with skip connections carrying fine details across the U shape. The design escaped its original niche and became a general template for segmentation, restoration, diffusion models, and dense prediction.</p>"
+          },
+          "sourceIds": [
+            "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+            "source-freiburg-u-net-release-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -11467,7 +17139,78 @@ const milestones = [
           "segmentation"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2015-u-net/event.json",
+      "variantFile": "archive/events/2015-u-net/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2015-u-net",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg": {
+        "caption": {
+          "zh": "奥拉夫·龙讷贝格 肖像",
+          "en": "Olaf Ronneberger portrait"
+        },
+        "subcaption": {
+          "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。",
+          "en": "Researcher profile photo from the Freiburg LMB page."
+        },
+        "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Institution profile photo; rights not stated.",
+            "en": "Institution profile photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg": {
+        "caption": {
+          "zh": "U 形编码器-解码器",
+          "en": "U-shaped encoder-decoder"
+        },
+        "subcaption": {
+          "zh": "U-Net 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for U-Net, based on the related source material."
+        },
+        "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg": {
+        "caption": {
+          "zh": "生物医学分割掩码",
+          "en": "Biomedical mask output"
+        },
+        "subcaption": {
+          "zh": "U-Net 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for U-Net, based on the related source material."
+        },
+        "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2015-faster-r-cnn",
@@ -11705,7 +17448,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2015-faster-r-cnn-kaiming-he",
+        "asset-2015-faster-r-cnn-rpn-pipeline",
+        "asset-2015-faster-r-cnn-detection-output"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -11868,6 +17616,91 @@ const milestones = [
           "en": "Class + box heads",
           "zh": "分类与框回归头"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测",
+            "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
+          },
+          "url": "https://arxiv.org/abs/1506.01497",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-shaoqingren-faster-rcnn",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "任少卿/faster_rcnn",
+            "en": "ShaoqingRen/faster_rcnn"
+          },
+          "url": "https://github.com/ShaoqingRen/faster_rcnn",
+          "reliability": "secondary",
+          "sourceType": "code"
+        },
+        {
+          "id": "source-torchvision-faster-r-cnn-model",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model docs"
+          },
+          "label": {
+            "zh": "TorchVision Faster R-CNN 模型",
+            "en": "TorchVision Faster R-CNN model"
+          },
+          "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "source-shaoqingren-faster-rcnn",
+        "source-torchvision-faster-r-cnn-model"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Faster R-CNN 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Faster R-CNN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+            "source-shaoqingren-faster-rcnn"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>",
+            "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>"
+          },
+          "sourceIds": [
+            "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+            "source-shaoqingren-faster-rcnn"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -11951,7 +17784,78 @@ const milestones = [
           "detection"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2015-faster-r-cnn/event.json",
+      "variantFile": "archive/events/2015-faster-r-cnn/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2015-faster-r-cnn",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
+        "caption": {
+          "zh": "何恺明肖像",
+          "en": "Kaiming He portrait"
+        },
+        "subcaption": {
+          "zh": "Faster R-CNN 共同作者",
+          "en": "Portrait from Kaiming He's MIT-hosted personal page."
+        },
+        "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "个人网站照片；未说明复用权利。",
+            "en": "Personal website photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg": {
+        "caption": {
+          "zh": "区域建议网络",
+          "en": "Region proposal network"
+        },
+        "subcaption": {
+          "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
+        },
+        "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg": {
+        "caption": {
+          "zh": "检测输出框",
+          "en": "Detection output boxes"
+        },
+        "subcaption": {
+          "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
+        },
+        "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1992-svm",
@@ -12173,7 +18077,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1992-svm-isabelle-guyon",
+        "asset-1992-svm-max-margin",
+        "asset-1992-svm-kernel-lift"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -12332,6 +18241,91 @@ const milestones = [
           "en": "Kernel boundary",
           "zh": "核边界"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-training-algorithm-for-optimal-margin-classifiers",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "最优间隔分类器的训练算法",
+            "en": "A Training Algorithm for Optimal Margin Classifiers"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-libsvm-project-page",
+          "type": {
+            "zh": "工具包",
+            "en": "Toolkit"
+          },
+          "label": {
+            "zh": "LIBSVM project page",
+            "en": "LIBSVM project page"
+          },
+          "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-scikit-learn-svc",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model docs"
+          },
+          "label": {
+            "zh": "scikit-learn SVC",
+            "en": "scikit-learn SVC"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-training-algorithm-for-optimal-margin-classifiers",
+        "source-libsvm-project-page",
+        "source-scikit-learn-svc"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "支持向量机 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Support Vector Machines is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-training-algorithm-for-optimal-margin-classifiers",
+            "source-libsvm-project-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>",
+            "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>"
+          },
+          "sourceIds": [
+            "source-a-training-algorithm-for-optimal-margin-classifiers",
+            "source-libsvm-project-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -12415,7 +18409,78 @@ const milestones = [
           "classification"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1992-svm/event.json",
+      "variantFile": "archive/events/1992-svm/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1992-svm",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
+        "caption": {
+          "zh": "伊莎贝尔·居永 肖像",
+          "en": "Isabelle Guyon portrait"
+        },
+        "subcaption": {
+          "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。",
+          "en": "University Paris-Saclay article image about Guyon and support vector machines."
+        },
+        "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "University news image; rights not stated.",
+            "en": "University news image; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg": {
+        "caption": {
+          "zh": "最大间隔分类器",
+          "en": "Maximum-margin classifier"
+        },
+        "subcaption": {
+          "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Support Vector Machines, based on the related source material."
+        },
+        "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg": {
+        "caption": {
+          "zh": "核函数特征提升",
+          "en": "Kernel feature lift"
+        },
+        "subcaption": {
+          "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Support Vector Machines, based on the related source material."
+        },
+        "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1984-cart",
@@ -12650,7 +18715,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1984-cart-leo-breiman",
+        "asset-1984-cart-split-regions",
+        "asset-1984-cart-pruning-curve"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -12809,6 +18879,91 @@ const milestones = [
           "en": "Prune to size",
           "zh": "剪枝到合适规模"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-classification-and-regression-trees",
+          "type": {
+            "zh": "图书",
+            "en": "Book"
+          },
+          "label": {
+            "zh": "分类与回归树",
+            "en": "Classification and Regression Trees"
+          },
+          "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+          "reliability": "reference-only",
+          "sourceType": "book"
+        },
+        {
+          "id": "source-scikit-learn-decisiontreeclassifier",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model docs"
+          },
+          "label": {
+            "zh": "scikit-learn DecisionTreeClassifier",
+            "en": "scikit-learn DecisionTreeClassifier"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-r-rpart-package",
+          "type": {
+            "zh": "软件包",
+            "en": "Package"
+          },
+          "label": {
+            "zh": "R rpart package",
+            "en": "R rpart package"
+          },
+          "url": "https://cran.r-project.org/web/packages/rpart/index.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-classification-and-regression-trees",
+        "source-scikit-learn-decisiontreeclassifier",
+        "source-r-rpart-package"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "CART 决策树 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "CART is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-classification-and-regression-trees",
+            "source-scikit-learn-decisiontreeclassifier"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>",
+            "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>"
+          },
+          "sourceIds": [
+            "source-classification-and-regression-trees",
+            "source-scikit-learn-decisiontreeclassifier"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -12892,7 +19047,78 @@ const milestones = [
           "machine-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1984-cart/event.json",
+      "variantFile": "archive/events/1984-cart/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1984-cart",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+        "caption": {
+          "zh": "利奥·布雷曼 肖像",
+          "en": "Leo Breiman portrait"
+        },
+        "subcaption": {
+          "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。",
+          "en": "Portrait from the University of York Portraits of Statisticians archive."
+        },
+        "sourceId": "source-classification-and-regression-trees",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Archive portrait; rights not stated.",
+            "en": "Archive portrait; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "gif"
+      },
+      "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg": {
+        "caption": {
+          "zh": "特征空间划分",
+          "en": "Feature-space splits"
+        },
+        "subcaption": {
+          "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for CART, based on the related source material."
+        },
+        "sourceId": "source-classification-and-regression-trees",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg": {
+        "caption": {
+          "zh": "代价复杂度剪枝曲线",
+          "en": "Cost-complexity pruning curve"
+        },
+        "subcaption": {
+          "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for CART, based on the related source material."
+        },
+        "sourceId": "source-classification-and-regression-trees",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1983-simulated-annealing",
@@ -13120,7 +19346,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1983-simulated-annealing-scott-kirkpatrick",
+        "asset-1983-simulated-annealing-energy-landscape",
+        "asset-1983-simulated-annealing-temperature-schedule"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -13282,6 +19513,91 @@ const milestones = [
           "en": "Cooling schedule",
           "zh": "降温计划"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-optimization-by-simulated-annealing",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "模拟退火优化",
+            "en": "Optimization by Simulated Annealing"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-scipy-dual-annealing",
+          "type": {
+            "zh": "优化器文档",
+            "en": "Optimizer docs"
+          },
+          "label": {
+            "zh": "SciPy dual_annealing",
+            "en": "SciPy dual_annealing"
+          },
+          "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-hedibert-course-pdf-mirror",
+          "type": {
+            "zh": "笔记本",
+            "en": "Notebook"
+          },
+          "label": {
+            "zh": "Hedibert course PDF mirror",
+            "en": "Hedibert course PDF mirror"
+          },
+          "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
+          "reliability": "reference-only",
+          "sourceType": "book"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-optimization-by-simulated-annealing",
+        "source-scipy-dual-annealing",
+        "source-hedibert-course-pdf-mirror"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "模拟退火 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Simulated Annealing is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-optimization-by-simulated-annealing",
+            "source-scipy-dual-annealing"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>",
+            "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>"
+          },
+          "sourceIds": [
+            "source-optimization-by-simulated-annealing",
+            "source-scipy-dual-annealing"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -13365,7 +19681,78 @@ const milestones = [
           "search"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1983-simulated-annealing/event.json",
+      "variantFile": "archive/events/1983-simulated-annealing/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1983-simulated-annealing",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif": {
+        "caption": {
+          "zh": "斯科特·柯克帕特里克 肖像",
+          "en": "Scott Kirkpatrick portrait"
+        },
+        "subcaption": {
+          "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。",
+          "en": "Workshop participant page photo for Scott Kirkpatrick."
+        },
+        "sourceId": "source-optimization-by-simulated-annealing",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Workshop profile photo; rights not stated.",
+            "en": "Workshop profile photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "gif"
+      },
+      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg": {
+        "caption": {
+          "zh": "能量地形搜索",
+          "en": "Energy landscape search"
+        },
+        "subcaption": {
+          "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+        },
+        "sourceId": "source-optimization-by-simulated-annealing",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg": {
+        "caption": {
+          "zh": "温度计划",
+          "en": "Temperature schedule"
+        },
+        "subcaption": {
+          "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+        },
+        "sourceId": "source-optimization-by-simulated-annealing",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1996-lasso",
@@ -13561,7 +19948,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1996-lasso-robert-tibshirani",
+        "asset-1996-lasso-l1-constraint",
+        "asset-1996-lasso-coefficient-path"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -13724,6 +20116,91 @@ const milestones = [
           "en": "Set some to zero",
           "zh": "部分系数归零"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-regression-shrinkage-and-selection-via-the-lasso",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "通过 Lasso 进行回归收缩与选择",
+            "en": "Regression Shrinkage and Selection via the Lasso"
+          },
+          "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-scikit-learn-lasso",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model docs"
+          },
+          "label": {
+            "zh": "scikit-learn Lasso",
+            "en": "scikit-learn Lasso"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-glmnet-project",
+          "type": {
+            "zh": "工具包",
+            "en": "Toolkit"
+          },
+          "label": {
+            "zh": "glmnet project",
+            "en": "glmnet project"
+          },
+          "url": "https://glmnet.stanford.edu/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-regression-shrinkage-and-selection-via-the-lasso",
+        "source-scikit-learn-lasso",
+        "source-glmnet-project"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Lasso 回归 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Lasso is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-regression-shrinkage-and-selection-via-the-lasso",
+            "source-scikit-learn-lasso"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Lasso 为统计学家和机器学习实践者提供了一种构建稀疏线性模型的清晰方法。通过惩罚系数绝对值，它既正则化预测，又完成变量选择。其思想后来出现在稀疏建模、高维统计、压缩感知、生物信息学和可解释机器学习中。</p>",
+            "en": "<p>The lasso gave statisticians and machine-learning practitioners a clean way to build sparse linear models. By penalizing the absolute size of coefficients, it both regularizes predictions and performs variable selection. Its ideas now appear in sparse modeling, high-dimensional statistics, compressed sensing, bioinformatics, and interpretable ML.</p>"
+          },
+          "sourceIds": [
+            "source-regression-shrinkage-and-selection-via-the-lasso",
+            "source-scikit-learn-lasso"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -13807,7 +20284,78 @@ const milestones = [
           "regularization"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1996-lasso/event.json",
+      "variantFile": "archive/events/1996-lasso/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1996-lasso",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg": {
+        "caption": {
+          "zh": "罗伯特·蒂布希拉尼 肖像",
+          "en": "Robert Tibshirani portrait"
+        },
+        "subcaption": {
+          "zh": "来自 斯坦福个人资料库 的人物照片。",
+          "en": "Profile photo from Stanford Profiles."
+        },
+        "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Institution profile photo; rights not stated.",
+            "en": "Institution profile photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg": {
+        "caption": {
+          "zh": "L1 约束几何",
+          "en": "L1 constraint geometry"
+        },
+        "subcaption": {
+          "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Lasso, based on the related source material."
+        },
+        "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg": {
+        "caption": {
+          "zh": "系数路径",
+          "en": "Coefficient path"
+        },
+        "subcaption": {
+          "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for Lasso, based on the related source material."
+        },
+        "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2015-googlenet-inception",
@@ -14013,7 +20561,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2015-googlenet-inception-christian-szegedy",
+        "asset-2015-googlenet-inception-parallel-branches",
+        "asset-2015-googlenet-inception-bottleneck"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -14175,6 +20728,91 @@ const milestones = [
           "en": "Concatenate channels",
           "zh": "拼接通道"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-going-deeper-with-convolutions",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "用卷积走得更深",
+            "en": "Going Deeper with Convolutions"
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-torchvision-googlenet",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model docs"
+          },
+          "label": {
+            "zh": "TorchVision GoogLeNet",
+            "en": "TorchVision GoogLeNet"
+          },
+          "url": "https://pytorch.org/vision/stable/models/googlenet.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-tensorflow-keras-inceptionv3",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model docs"
+          },
+          "label": {
+            "zh": "TensorFlow Keras InceptionV3",
+            "en": "TensorFlow Keras InceptionV3"
+          },
+          "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-going-deeper-with-convolutions",
+        "source-torchvision-googlenet",
+        "source-tensorflow-keras-inceptionv3"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "GoogLeNet / Inception 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "GoogLeNet / Inception is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-going-deeper-with-convolutions",
+            "source-torchvision-googlenet"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>",
+            "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>"
+          },
+          "sourceIds": [
+            "source-going-deeper-with-convolutions",
+            "source-torchvision-googlenet"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -14258,7 +20896,78 @@ const milestones = [
           "cnn"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2015-googlenet-inception/event.json",
+      "variantFile": "archive/events/2015-googlenet-inception/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2015-googlenet-inception",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
+        "caption": {
+          "zh": "克里斯蒂安·塞格迪 节目人物图",
+          "en": "Christian Szegedy episode portrait"
+        },
+        "subcaption": {
+          "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。",
+          "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper."
+        },
+        "sourceId": "source-going-deeper-with-convolutions",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Podcast episode artwork; rights not stated.",
+            "en": "Podcast episode artwork; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg": {
+        "caption": {
+          "zh": "多分支 Inception 模块",
+          "en": "Multi-branch Inception module"
+        },
+        "subcaption": {
+          "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
+        },
+        "sourceId": "source-going-deeper-with-convolutions",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg": {
+        "caption": {
+          "zh": "1x1 瓶颈降维",
+          "en": "1x1 bottleneck reduction"
+        },
+        "subcaption": {
+          "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
+        },
+        "sourceId": "source-going-deeper-with-convolutions",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1965-resolution-method",
@@ -14441,7 +21150,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1965-resolution-method-john-alan-robinson",
+        "asset-1965-resolution-method-clause-refutation",
+        "asset-1965-resolution-method-unification-map"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -14607,6 +21321,91 @@ const milestones = [
           "en": "Empty Clause",
           "zh": "空子句"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "基于归结原理的机器导向逻辑",
+            "en": "A Machine-Oriented Logic Based on the Resolution Principle"
+          },
+          "url": "https://doi.org/10.1145/321250.321253",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-journal-of-symbolic-logic-review-record",
+          "type": {
+            "zh": "评述",
+            "en": "Review"
+          },
+          "label": {
+            "zh": "Journal of Symbolic Logic review record",
+            "en": "Journal of Symbolic Logic review record"
+          },
+          "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-stanford-encyclopedia-automated-reasoning",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "斯坦福大学 Encyclopedia: Automated Reasoning",
+            "en": "Stanford Encyclopedia: Automated Reasoning"
+          },
+          "url": "https://plato.stanford.edu/entries/reasoning-automated/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+        "source-journal-of-symbolic-logic-review-record",
+        "source-stanford-encyclopedia-automated-reasoning"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "归结方法 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Resolution Method is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+            "source-journal-of-symbolic-logic-review-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>归结方法把一阶定理证明变成统一的反驳过程：把命题转为子句，否定目标，再推出矛盾。Robinson 将归结与合一结合起来，让自动证明器获得一种可系统实现的紧凑规则。它后来成为逻辑程序设计、SAT/SMT 谱系以及许多推理系统的基础。</p>",
+            "en": "<p>Resolution turned first-order theorem proving into a uniform refutation procedure: translate statements into clauses, negate the target, and derive a contradiction. Robinson combined resolution with unification, giving automated provers a compact rule that could be implemented systematically. It became a foundation for logic programming, SAT/SMT lineage, and many later reasoning systems.</p>"
+          },
+          "sourceIds": [
+            "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+            "source-journal-of-symbolic-logic-review-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -14690,7 +21489,78 @@ const milestones = [
           "reasoning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1965-resolution-method/event.json",
+      "variantFile": "archive/events/1965-resolution-method/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1965-resolution-method",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg": {
+        "caption": {
+          "zh": "约翰·艾伦·罗宾逊 肖像",
+          "en": "John Alan Robinson portrait"
+        },
+        "subcaption": {
+          "zh": "2012 年的 Robinson；维基共享资源 人物照片。",
+          "en": "Robinson in 2012; Wikimedia Commons portrait."
+        },
+        "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Creative Commons license stated on Commons file page.",
+            "en": "Creative Commons license stated on Commons file page."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg": {
+        "caption": {
+          "zh": "子句反驳阶梯",
+          "en": "Clause refutation ladder"
+        },
+        "subcaption": {
+          "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Resolution Method, based on the listed source material."
+        },
+        "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg": {
+        "caption": {
+          "zh": "合一映射图",
+          "en": "Unification map"
+        },
+        "subcaption": {
+          "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Resolution Method, based on the listed source material."
+        },
+        "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1973-prolog",
@@ -14886,7 +21756,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1973-prolog-alain-colmerauer",
+        "asset-1973-prolog-query-tree",
+        "asset-1973-prolog-unification-trace"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -15052,6 +21927,91 @@ const milestones = [
           "en": "Backtracking",
           "zh": "回溯"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-the-birth-of-prolog",
+          "type": {
+            "zh": "历史",
+            "en": "History"
+          },
+          "label": {
+            "zh": "Prolog 的诞生",
+            "en": "The Birth of Prolog"
+          },
+          "url": "https://doi.org/10.1145/155360.155362",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-prolog-heritage",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "Prolog Heritage",
+            "en": "Prolog Heritage"
+          },
+          "url": "https://www.prolog-heritage.org/en/Prolog_50.html",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-swi-prolog-documentation",
+          "type": {
+            "zh": "语言文档",
+            "en": "Language docs"
+          },
+          "label": {
+            "zh": "SWI-Prolog documentation",
+            "en": "SWI-Prolog documentation"
+          },
+          "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-the-birth-of-prolog",
+        "source-prolog-heritage",
+        "source-swi-prolog-documentation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "PROLOG 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "PROLOG is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-the-birth-of-prolog",
+            "source-prolog-heritage"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>PROLOG 让逻辑变得可执行。程序员不再只写一步步过程，而是写事实与规则，再提出查询，由系统通过合一和回溯求解。它把定理证明、自然语言处理和知识表示连接成一种实用的符号 AI 工具。</p>",
+            "en": "<p>PROLOG made logic executable. Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking. The language joined theorem proving, natural-language work, and knowledge representation into a practical symbolic AI tool.</p>"
+          },
+          "sourceIds": [
+            "source-the-birth-of-prolog",
+            "source-prolog-heritage"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -15135,7 +22095,78 @@ const milestones = [
           "logic"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1973-prolog/event.json",
+      "variantFile": "archive/events/1973-prolog/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1973-prolog",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg": {
+        "caption": {
+          "zh": "阿兰·科尔梅罗尔 肖像",
+          "en": "Alain Colmerauer portrait"
+        },
+        "subcaption": {
+          "zh": "来自 维基共享资源 的 阿兰·科尔梅罗尔 相关人物图。",
+          "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category."
+        },
+        "sourceId": "source-the-birth-of-prolog",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "License stated on Commons file page.",
+            "en": "License stated on Commons file page."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg": {
+        "caption": {
+          "zh": "查询证明树",
+          "en": "Query proof tree"
+        },
+        "subcaption": {
+          "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for PROLOG, based on the listed source material."
+        },
+        "sourceId": "source-the-birth-of-prolog",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg": {
+        "caption": {
+          "zh": "合一轨迹",
+          "en": "Unification trace"
+        },
+        "subcaption": {
+          "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for PROLOG, based on the listed source material."
+        },
+        "sourceId": "source-the-birth-of-prolog",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1966-eliza",
@@ -15321,7 +22352,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1966-eliza-joseph-weizenbaum",
+        "asset-1966-eliza-doctor-script",
+        "asset-1966-eliza-terminal-dialog"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -15487,6 +22523,91 @@ const milestones = [
           "en": "ELIZA Effect",
           "zh": "ELIZA 效应"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-eliza-cacm-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "ELIZA CACM paper",
+            "en": "ELIZA CACM paper"
+          },
+          "url": "https://doi.org/10.1145/365153.365168",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-mit-news-obituary-for-joseph-weizenbaum",
+          "type": {
+            "zh": "机构",
+            "en": "Institution"
+          },
+          "label": {
+            "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆",
+            "en": "MIT News obituary for Joseph Weizenbaum"
+          },
+          "url": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-eliza-source-reconstruction-project",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "ELIZA source reconstruction project",
+            "en": "ELIZA source reconstruction project"
+          },
+          "url": "https://sites.google.com/view/elizagen-org/",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-eliza-cacm-paper",
+        "source-mit-news-obituary-for-joseph-weizenbaum",
+        "source-eliza-source-reconstruction-project"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "ELIZA 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "ELIZA is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-eliza-cacm-paper",
+            "source-mit-news-obituary-for-joseph-weizenbaum"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>ELIZA 展示了简单语言模式匹配在制造“对话感”方面能走多远。它的 DOCTOR 脚本会把用户短语改写成问题反射回来，机制很浅，却让互动令人印象深刻。它成为聊天机器人史和“机器拟人化”争论中的标志性案例。</p>",
+            "en": "<p>ELIZA showed how far simple language pattern matching could go in producing the feeling of conversation. Its DOCTOR script reflected user phrases back as questions, making the interaction memorable precisely because the mechanism was shallow. The program became a landmark in chatbot history and in debates about anthropomorphizing machines.</p>"
+          },
+          "sourceIds": [
+            "source-eliza-cacm-paper",
+            "source-mit-news-obituary-for-joseph-weizenbaum"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -15570,7 +22691,78 @@ const milestones = [
           "nlp"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1966-eliza/event.json",
+      "variantFile": "archive/events/1966-eliza/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1966-eliza",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg": {
+        "caption": {
+          "zh": "约瑟夫·魏岑鲍姆 肖像",
+          "en": "Joseph Weizenbaum portrait"
+        },
+        "subcaption": {
+          "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。",
+          "en": "MIT News portrait used in Weizenbaum’s obituary."
+        },
+        "sourceId": "source-eliza-cacm-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "麻省理工学院 新闻 image; rights not stated.",
+            "en": "MIT News image; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg": {
+        "caption": {
+          "zh": "DOCTOR 脚本改写",
+          "en": "DOCTOR script rewrite"
+        },
+        "subcaption": {
+          "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for ELIZA, based on the listed source material."
+        },
+        "sourceId": "source-eliza-cacm-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg": {
+        "caption": {
+          "zh": "终端对话",
+          "en": "Terminal dialog"
+        },
+        "subcaption": {
+          "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for ELIZA, based on the listed source material."
+        },
+        "sourceId": "source-eliza-cacm-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1982-hopfield-network",
@@ -15744,7 +22936,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1982-hopfield-network-john-hopfield",
+        "asset-1982-hopfield-network-energy-basin",
+        "asset-1982-hopfield-network-memory-grid"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -15907,6 +23104,91 @@ const milestones = [
           "en": "Associative Memory",
           "zh": "联想记忆"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-neural-networks-and-physical-systems",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "神经网络与物理系统",
+            "en": "Neural Networks and Physical Systems"
+          },
+          "url": "https://doi.org/10.1073/pnas.79.8.2554",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-nobel-prize-john-j-hopfield-facts",
+          "type": {
+            "zh": "人物",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "Nobel Prize: 约翰·J·霍普菲尔德 facts",
+            "en": "Nobel Prize: John J. Hopfield facts"
+          },
+          "url": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-princeton-neuroscience-institute-profile",
+          "type": {
+            "zh": "机构",
+            "en": "Institution"
+          },
+          "label": {
+            "zh": "Princeton Neuroscience Institute profile",
+            "en": "Princeton Neuroscience Institute profile"
+          },
+          "url": "https://pni.princeton.edu/people/john-j-hopfield",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-neural-networks-and-physical-systems",
+        "source-nobel-prize-john-j-hopfield-facts",
+        "source-princeton-neuroscience-institute-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Hopfield 网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Hopfield Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neural-networks-and-physical-systems",
+            "source-nobel-prize-john-j-hopfield-facts"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>",
+            "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>"
+          },
+          "sourceIds": [
+            "source-neural-networks-and-physical-systems",
+            "source-nobel-prize-john-j-hopfield-facts"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -15990,7 +23272,78 @@ const milestones = [
           "memory"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1982-hopfield-network/event.json",
+      "variantFile": "archive/events/1982-hopfield-network/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1982-hopfield-network",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg": {
+        "caption": {
+          "zh": "约翰·J·霍普菲尔德 肖像",
+          "en": "John J. Hopfield portrait"
+        },
+        "subcaption": {
+          "zh": "诺贝尔奖官网的 Hopfield 人物图。",
+          "en": "Nobel Prize profile portrait for Hopfield."
+        },
+        "sourceId": "source-neural-networks-and-physical-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Nobel Prize image; rights not stated.",
+            "en": "Nobel Prize image; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg": {
+        "caption": {
+          "zh": "能量盆地",
+          "en": "Energy basin"
+        },
+        "subcaption": {
+          "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Hopfield Network, based on the listed source material."
+        },
+        "sourceId": "source-neural-networks-and-physical-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg": {
+        "caption": {
+          "zh": "联想记忆网格",
+          "en": "Associative memory grid"
+        },
+        "subcaption": {
+          "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Hopfield Network, based on the listed source material."
+        },
+        "sourceId": "source-neural-networks-and-physical-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2014-dropout",
@@ -16183,7 +23536,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2014-dropout-nitish-srivastava",
+        "asset-2014-dropout-random-mask",
+        "asset-2014-dropout-ensemble-average"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -16349,6 +23707,91 @@ const milestones = [
           "en": "Approximate Ensemble",
           "zh": "近似集成"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Dropout：防止神经网络过拟合的简单方法",
+            "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+          },
+          "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-improving-neural-networks-by-preventing-co-adaptation",
+          "type": {
+            "zh": "预印本",
+            "en": "Preprint"
+          },
+          "label": {
+            "zh": "Improving neural networks by preventing co-adaptation",
+            "en": "Improving neural networks by preventing co-adaptation"
+          },
+          "url": "https://arxiv.org/abs/1207.0580",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-pytorch-torch-nn-dropout",
+          "type": {
+            "zh": "框架文档",
+            "en": "Framework docs"
+          },
+          "label": {
+            "zh": "PyTorch torch.nn.Dropout",
+            "en": "PyTorch torch.nn.Dropout"
+          },
+          "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+        "source-improving-neural-networks-by-preventing-co-adaptation",
+        "source-pytorch-torch-nn-dropout"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Dropout 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Dropout is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+            "source-improving-neural-networks-by-preventing-co-adaptation"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。</p>",
+            "en": "<p>Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.</p>"
+          },
+          "sourceIds": [
+            "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+            "source-improving-neural-networks-by-preventing-co-adaptation"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -16432,7 +23875,78 @@ const milestones = [
           "deep-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2014-dropout/event.json",
+      "variantFile": "archive/events/2014-dropout/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-dropout",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg": {
+        "caption": {
+          "zh": "尼蒂什·斯里瓦斯塔瓦 肖像",
+          "en": "Nitish Srivastava portrait"
+        },
+        "subcaption": {
+          "zh": "来自 Srivastava 多伦多大学个人页的人物图。",
+          "en": "Portrait from Srivastava’s University of Toronto page."
+        },
+        "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website photo; rights not stated.",
+            "en": "Personal website photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg": {
+        "caption": {
+          "zh": "随机单元掩码",
+          "en": "Random unit mask"
+        },
+        "subcaption": {
+          "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Dropout, based on the listed source material."
+        },
+        "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg": {
+        "caption": {
+          "zh": "近似集成",
+          "en": "Approximate ensemble"
+        },
+        "subcaption": {
+          "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Dropout, based on the listed source material."
+        },
+        "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2016-yolo",
@@ -16625,7 +24139,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2016-yolo-joseph-redmon",
+        "asset-2016-yolo-grid-detector",
+        "asset-2016-yolo-single-pass"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -16791,6 +24310,91 @@ const milestones = [
           "en": "Real Time",
           "zh": "实时性"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-you-only-look-once-unified-real-time-object-detection",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "你只看一次：统一的实时目标检测",
+            "en": "You Only Look Once: Unified, Real-Time Object Detection"
+          },
+          "url": "https://arxiv.org/abs/1506.02640",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvpr-open-access-paper-page",
+          "type": {
+            "zh": "开放论文",
+            "en": "Open access"
+          },
+          "label": {
+            "zh": "计算机视觉与模式识别会议 open-access paper page",
+            "en": "CVPR open-access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-darknet-yolo-project-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "Darknet YOLO project page",
+            "en": "Darknet YOLO project page"
+          },
+          "url": "https://pjreddie.com/darknet/yolo/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-you-only-look-once-unified-real-time-object-detection",
+        "source-cvpr-open-access-paper-page",
+        "source-darknet-yolo-project-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "YOLO 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "YOLO is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-you-only-look-once-unified-real-time-object-detection",
+            "source-cvpr-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。</p>",
+            "en": "<p>YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.</p>"
+          },
+          "sourceIds": [
+            "source-you-only-look-once-unified-real-time-object-detection",
+            "source-cvpr-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -16874,7 +24478,78 @@ const milestones = [
           "object-detection"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2016-yolo/event.json",
+      "variantFile": "archive/events/2016-yolo/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2016-yolo",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg": {
+        "caption": {
+          "zh": "约瑟夫·雷德蒙 肖像",
+          "en": "Joseph Redmon portrait"
+        },
+        "subcaption": {
+          "zh": "Allen School 关于 Redmon 获 谷歌 Ph.D. Fellowship 的新闻照片。",
+          "en": "Allen School news photo for Redmon’s Google Ph.D. Fellowship."
+        },
+        "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Institution news image; rights not stated.",
+            "en": "Institution news image; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg": {
+        "caption": {
+          "zh": "网格检测器",
+          "en": "Grid detector"
+        },
+        "subcaption": {
+          "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for YOLO, based on the listed source material."
+        },
+        "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg": {
+        "caption": {
+          "zh": "单次前向管线",
+          "en": "Single-pass pipeline"
+        },
+        "subcaption": {
+          "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for YOLO, based on the listed source material."
+        },
+        "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2013-word2vec",
@@ -17054,7 +24729,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2013-word2vec-tomas-mikolov",
+        "asset-2013-word2vec-skipgram-window",
+        "asset-2013-word2vec-vector-analogy"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -17220,6 +24900,91 @@ const milestones = [
           "en": "Vector Analogy",
           "zh": "向量类比"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-efficient-estimation-of-word-representations-in-vector-space",
+          "type": {
+            "zh": "预印本",
+            "en": "Preprint"
+          },
+          "label": {
+            "zh": "向量空间中词表示的高效估计",
+            "en": "Efficient Estimation of Word Representations in Vector Space"
+          },
+          "url": "https://arxiv.org/abs/1301.3781",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "词与短语的分布式表示及其组合性",
+            "en": "Distributed Representations of Words and Phrases and their Compositionality"
+          },
+          "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-code-archive-word2vec",
+          "type": {
+            "zh": "代码档案",
+            "en": "Code archive"
+          },
+          "label": {
+            "zh": "谷歌 代码 archive: word2vec",
+            "en": "Google Code archive: word2vec"
+          },
+          "url": "https://code.google.com/archive/p/word2vec/",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-efficient-estimation-of-word-representations-in-vector-space",
+        "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
+        "source-google-code-archive-word2vec"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Word2Vec 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Word2Vec is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-efficient-estimation-of-word-representations-in-vector-space",
+            "source-distributed-representations-of-words-and-phrases-and-their-compositionality"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。</p>",
+            "en": "<p>Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.</p>"
+          },
+          "sourceIds": [
+            "source-efficient-estimation-of-word-representations-in-vector-space",
+            "source-distributed-representations-of-words-and-phrases-and-their-compositionality"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -17303,7 +25068,78 @@ const milestones = [
           "embeddings"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2013-word2vec/event.json",
+      "variantFile": "archive/events/2013-word2vec/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2013-word2vec",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg": {
+        "caption": {
+          "zh": "托马斯·米科洛夫 肖像",
+          "en": "Tomas Mikolov portrait"
+        },
+        "subcaption": {
+          "zh": "IEEE Signal Processing Society 访谈页面中的 Mikolov 人物图。",
+          "en": "IEEE Signal Processing Society newsletter image for Mikolov."
+        },
+        "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "IEEE SPS newsletter image; rights not stated.",
+            "en": "IEEE SPS newsletter image; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg": {
+        "caption": {
+          "zh": "Skip-gram 上下文窗口",
+          "en": "Skip-gram context window"
+        },
+        "subcaption": {
+          "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Word2Vec, based on the listed source material."
+        },
+        "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg": {
+        "caption": {
+          "zh": "向量类比",
+          "en": "Vector analogy"
+        },
+        "subcaption": {
+          "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Word2Vec, based on the listed source material."
+        },
+        "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2009-imagenet",
@@ -17499,7 +25335,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2009-imagenet-fei-fei-li",
+        "asset-2009-imagenet-hierarchy",
+        "asset-2009-imagenet-benchmark"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -17665,6 +25506,91 @@ const milestones = [
           "en": "Benchmark",
           "zh": "基准"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-imagenet-a-large-scale-hierarchical-image-database",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "ImageNet：大规模层级图像数据库",
+            "en": "ImageNet: A Large-Scale Hierarchical Image Database"
+          },
+          "url": "https://ieeexplore.ieee.org/document/5206848",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-imagenet-project-website",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "ImageNet project website",
+            "en": "ImageNet project website"
+          },
+          "url": "https://www.image-net.org/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-stanford-profile-fei-fei-li",
+          "type": {
+            "zh": "人物",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "斯坦福大学 Profile: Fei-Fei Li",
+            "en": "Stanford Profile: Fei-Fei Li"
+          },
+          "url": "https://profiles.stanford.edu/fei-fei-li",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-imagenet-a-large-scale-hierarchical-image-database",
+        "source-imagenet-project-website",
+        "source-stanford-profile-fei-fei-li"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "ImageNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "ImageNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-imagenet-a-large-scale-hierarchical-image-database",
+            "source-imagenet-project-website"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。</p>",
+            "en": "<p>ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.</p>"
+          },
+          "sourceIds": [
+            "source-imagenet-a-large-scale-hierarchical-image-database",
+            "source-imagenet-project-website"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -17748,7 +25674,78 @@ const milestones = [
           "vision"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2009-imagenet/event.json",
+      "variantFile": "archive/events/2009-imagenet/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2009-imagenet",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg": {
+        "caption": {
+          "zh": "李飞飞肖像",
+          "en": "Fei-Fei Li portrait"
+        },
+        "subcaption": {
+          "zh": "斯坦福个人资料库 中的李飞飞人物图。",
+          "en": "Stanford Profiles portrait for Fei-Fei Li."
+        },
+        "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Institution profile photo; rights not stated.",
+            "en": "Institution profile photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg": {
+        "caption": {
+          "zh": "WordNet 层级",
+          "en": "WordNet hierarchy"
+        },
+        "subcaption": {
+          "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for ImageNet, based on the listed source material."
+        },
+        "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg": {
+        "caption": {
+          "zh": "ILSVRC 基准",
+          "en": "ILSVRC benchmark"
+        },
+        "subcaption": {
+          "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for ImageNet, based on the listed source material."
+        },
+        "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2013-dqn",
@@ -17941,7 +25938,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2013-dqn-volodymyr-mnih",
+        "asset-2013-dqn-replay-buffer",
+        "asset-2013-dqn-q-control"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -18107,6 +26109,91 @@ const milestones = [
           "en": "Q-value",
           "zh": "Q 值"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-playing-atari-with-deep-reinforcement-learning",
+          "type": {
+            "zh": "预印本",
+            "en": "Preprint"
+          },
+          "label": {
+            "zh": "用深度强化学习玩 Atari",
+            "en": "Playing Atari with Deep Reinforcement Learning"
+          },
+          "url": "https://arxiv.org/abs/1312.5602",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-human-level-control-through-deep-reinforcement-learning",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Human-level control through deep reinforcement learning",
+            "en": "Human-level control through deep reinforcement learning"
+          },
+          "url": "https://www.nature.com/articles/nature14236",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-deepmind-deep-reinforcement-learning",
+          "type": {
+            "zh": "项目说明",
+            "en": "Project note"
+          },
+          "label": {
+            "zh": "谷歌 DeepMind: Deep Reinforcement Learning",
+            "en": "Google DeepMind: Deep Reinforcement Learning"
+          },
+          "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-playing-atari-with-deep-reinforcement-learning",
+        "source-human-level-control-through-deep-reinforcement-learning",
+        "source-google-deepmind-deep-reinforcement-learning"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "深度 Q 网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Deep Q Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-playing-atari-with-deep-reinforcement-learning",
+            "source-human-level-control-through-deep-reinforcement-learning"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
+            "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+          },
+          "sourceIds": [
+            "source-playing-atari-with-deep-reinforcement-learning",
+            "source-human-level-control-through-deep-reinforcement-learning"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -18190,7 +26277,78 @@ const milestones = [
           "deep-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2013-dqn/event.json",
+      "variantFile": "archive/events/2013-dqn/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2013-dqn",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
+        "caption": {
+          "zh": "沃洛迪米尔·姆尼赫 肖像",
+          "en": "Volodymyr Mnih portrait"
+        },
+        "subcaption": {
+          "zh": "来自 Mnih 多伦多大学托管个人页的人物图。",
+          "en": "Portrait from Mnih’s University of Toronto-hosted personal page."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website photo; rights not stated.",
+            "en": "Personal website photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
+        "caption": {
+          "zh": "经验回放池",
+          "en": "Replay buffer"
+        },
+        "subcaption": {
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
+        "caption": {
+          "zh": "Q 值控制循环",
+          "en": "Q-value control loop"
+        },
+        "subcaption": {
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2003-lda",
@@ -18383,7 +26541,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2003-lda-david-blei",
+        "asset-2003-lda-topic-simplex",
+        "asset-2003-lda-plate-model"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -18549,6 +26712,91 @@ const milestones = [
           "en": "Variational Inference",
           "zh": "变分推断"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-latent-dirichlet-allocation",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "潜在狄利克雷分配",
+            "en": "Latent Dirichlet Allocation"
+          },
+          "url": "https://jmlr.org/papers/v3/blei03a.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-david-m-blei-homepage",
+          "type": {
+            "zh": "作者",
+            "en": "Author"
+          },
+          "label": {
+            "zh": "戴维·M·布莱 homepage",
+            "en": "David M. Blei homepage"
+          },
+          "url": "https://www.cs.columbia.edu/~blei/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-learn-latentdirichletallocation",
+          "type": {
+            "zh": "实现",
+            "en": "Implementation"
+          },
+          "label": {
+            "zh": "scikit-learn LatentDirichletAllocation",
+            "en": "scikit-learn LatentDirichletAllocation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-latent-dirichlet-allocation",
+        "source-david-m-blei-homepage",
+        "source-scikit-learn-latentdirichletallocation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "潜在狄利克雷分配 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Latent Dirichlet Allocation is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-latent-dirichlet-allocation",
+            "source-david-m-blei-homepage"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>",
+            "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>"
+          },
+          "sourceIds": [
+            "source-latent-dirichlet-allocation",
+            "source-david-m-blei-homepage"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -18632,7 +26880,78 @@ const milestones = [
           "topic-modeling"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2003-lda/event.json",
+      "variantFile": "archive/events/2003-lda/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2003-lda",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg": {
+        "caption": {
+          "zh": "戴维·M·布莱 肖像",
+          "en": "David M. Blei portrait"
+        },
+        "subcaption": {
+          "zh": "来自 Blei 哥伦比亚大学个人主页的人物图。",
+          "en": "Portrait from Blei’s Columbia University homepage."
+        },
+        "sourceId": "source-latent-dirichlet-allocation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website photo; rights not stated.",
+            "en": "Personal website photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg": {
+        "caption": {
+          "zh": "主题混合单纯形",
+          "en": "Topic mixture simplex"
+        },
+        "subcaption": {
+          "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material."
+        },
+        "sourceId": "source-latent-dirichlet-allocation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg": {
+        "caption": {
+          "zh": "Plate 模型草图",
+          "en": "Plate model sketch"
+        },
+        "subcaption": {
+          "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material."
+        },
+        "sourceId": "source-latent-dirichlet-allocation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1970-shrdlu",
@@ -18818,7 +27137,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1970-shrdlu-terry-winograd",
+        "asset-1970-shrdlu-blocks-world",
+        "asset-1970-shrdlu-parser-plan"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -18980,6 +27304,91 @@ const milestones = [
           },
           "url": "https://hdl.handle.net/11299/107717"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+          "type": {
+            "zh": "论文",
+            "en": "Thesis"
+          },
+          "label": {
+            "zh": "在理解自然语言的计算机程序中把过程作为数据表示",
+            "en": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/7095",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-terry-winograd-stanford-computer-science",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "特里·维诺格拉德, 斯坦福大学 Computer 《科学》",
+            "en": "Terry Winograd, Stanford Computer Science"
+          },
+          "url": "https://www.cs.stanford.edu/people/terry-winograd",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-terry-winograd-oral-history-cbi",
+          "type": {
+            "zh": "口述史",
+            "en": "Oral history"
+          },
+          "label": {
+            "zh": "特里·维诺格拉德 oral history, CBI",
+            "en": "Terry Winograd oral history, CBI"
+          },
+          "url": "https://hdl.handle.net/11299/107717",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+        "source-terry-winograd-stanford-computer-science",
+        "source-terry-winograd-oral-history-cbi"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "SHRDLU 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "SHRDLU is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+            "source-terry-winograd-stanford-computer-science"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>SHRDLU 展示了计算机可以围绕一个受限但丰富的积木世界进行对话。Winograd 把句法分析、规划、过程语义和小型世界模型结合起来，让自然语言命令转化为类似机器人操作的动作。它的力量来自紧密集成：语言之所以有效，是因为世界被限制并被明确表示。</p>",
+            "en": "<p>SHRDLU showed that a computer could carry on a constrained but surprisingly rich dialogue about a toy blocks world. Winograd combined parsing, planning, procedural semantics, and a small world model so natural-language commands could become robot-like actions. Its power came from tight integration: language worked because the world was limited and explicitly represented.</p>"
+          },
+          "sourceIds": [
+            "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+            "source-terry-winograd-stanford-computer-science"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -19063,7 +27472,78 @@ const milestones = [
           "microworld"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1970-shrdlu/event.json",
+      "variantFile": "archive/events/1970-shrdlu/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1970-shrdlu",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg": {
+        "caption": {
+          "zh": "特里·维诺格拉德 肖像",
+          "en": "Terry Winograd portrait"
+        },
+        "subcaption": {
+          "zh": "来自 斯坦福大学 Computer 《科学》 个人资料页的人物图。",
+          "en": "Portrait from Stanford Computer Science profile."
+        },
+        "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "斯坦福大学 profile image; reuse rights not stated.",
+            "en": "Stanford profile image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg": {
+        "caption": {
+          "zh": "积木世界命令落地",
+          "en": "Blocks-world command grounding"
+        },
+        "subcaption": {
+          "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for SHRDLU, based on the listed source material."
+        },
+        "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg": {
+        "caption": {
+          "zh": "解析器到规划器路径",
+          "en": "Parser to planner path"
+        },
+        "subcaption": {
+          "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for SHRDLU, based on the listed source material."
+        },
+        "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1997-deep-blue",
@@ -19249,7 +27729,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1997-deep-blue-murray-campbell",
+        "asset-1997-deep-blue-search-tree",
+        "asset-1997-deep-blue-chip-board"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -19411,6 +27896,91 @@ const milestones = [
           },
           "url": "https://www.ibm.com/history/deep-blue"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-murray-campbell-ibm-research",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "默里·坎贝尔, IBM 研究院",
+            "en": "Murray Campbell, IBM Research"
+          },
+          "url": "https://research.ibm.com/people/murray-campbell",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-mastering-the-game-computer-history-museum",
+          "type": {
+            "zh": "博物馆",
+            "en": "Museum"
+          },
+          "label": {
+            "zh": "Mastering the Game, Computer History Museum",
+            "en": "Mastering the Game, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-ibm100-deep-blue",
+          "type": {
+            "zh": "官方历史资料",
+            "en": "Official history"
+          },
+          "label": {
+            "zh": "IBM100: 深蓝",
+            "en": "IBM100: Deep Blue"
+          },
+          "url": "https://www.ibm.com/history/deep-blue",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-murray-campbell-ibm-research",
+        "source-mastering-the-game-computer-history-museum",
+        "source-ibm100-deep-blue"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "深蓝 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Deep Blue is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-murray-campbell-ibm-research",
+            "source-mastering-the-game-computer-history-museum"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
+            "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+          },
+          "sourceIds": [
+            "source-murray-campbell-ibm-research",
+            "source-mastering-the-game-computer-history-museum"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -19494,7 +28064,78 @@ const milestones = [
           "search"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1997-deep-blue/event.json",
+      "variantFile": "archive/events/1997-deep-blue/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1997-deep-blue",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+        "caption": {
+          "zh": "默里·坎贝尔 肖像",
+          "en": "Murray Campbell portrait"
+        },
+        "subcaption": {
+          "zh": "来自 IBM 研究院 人物资料页的人物图。",
+          "en": "Portrait from IBM Research profile."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "IBM 研究院 profile image; reuse rights not stated.",
+            "en": "IBM Research profile image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
+        "caption": {
+          "zh": "国际象棋搜索树",
+          "en": "Chess search tree"
+        },
+        "subcaption": {
+          "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Blue, based on the listed source material."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
+        "caption": {
+          "zh": "硬件辅助棋盘评估",
+          "en": "Hardware-assisted board evaluation"
+        },
+        "subcaption": {
+          "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Blue, based on the listed source material."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1974-frame",
@@ -19680,7 +28321,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1974-frame-marvin-minsky",
+        "asset-1974-frame-slot-card",
+        "asset-1974-frame-inheritance"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -19842,6 +28488,91 @@ const milestones = [
           },
           "url": "https://dspace.mit.edu/handle/1721.1/6089"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-framework-for-representing-knowledge",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "表示知识的一种框架",
+            "en": "A Framework for Representing Knowledge"
+          },
+          "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-marvin-minsky-obituary-mit-news",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "马文·明斯基讣告，麻省理工学院新闻",
+            "en": "Marvin Minsky obituary, MIT News"
+          },
+          "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-frame-mit-ai-memo-bibliographic-record",
+          "type": {
+            "zh": "参考资料",
+            "en": "Reference"
+          },
+          "label": {
+            "zh": "框架论文：麻省理工学院 AI 备忘录书目记录",
+            "en": "Frame, MIT AI memo bibliographic record"
+          },
+          "url": "https://dspace.mit.edu/handle/1721.1/6089",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-framework-for-representing-knowledge",
+        "source-marvin-minsky-obituary-mit-news",
+        "source-frame-mit-ai-memo-bibliographic-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "框架 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Frame is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-framework-for-representing-knowledge",
+            "source-marvin-minsky-obituary-mit-news"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>",
+            "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>"
+          },
+          "sourceIds": [
+            "source-a-framework-for-representing-knowledge",
+            "source-marvin-minsky-obituary-mit-news"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -19923,7 +28654,78 @@ const milestones = [
           "knowledge-representation"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1974-frame/event.json",
+      "variantFile": "archive/events/1974-frame/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1974-frame",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg": {
+        "caption": {
+          "zh": "马文·明斯基 肖像",
+          "en": "Marvin Minsky portrait"
+        },
+        "subcaption": {
+          "zh": "来自 麻省理工学院 新闻 讣闻的人物图。",
+          "en": "Portrait from MIT News obituary."
+        },
+        "sourceId": "source-a-framework-for-representing-knowledge",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "麻省理工学院 新闻 image; terms stated on 麻省理工学院 新闻 media page.",
+            "en": "MIT News image; terms stated on MIT News media page."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg": {
+        "caption": {
+          "zh": "槽与默认值框架卡",
+          "en": "Slot-default frame card"
+        },
+        "subcaption": {
+          "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Frame, based on the listed source material."
+        },
+        "sourceId": "source-a-framework-for-representing-knowledge",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg": {
+        "caption": {
+          "zh": "框架继承草图",
+          "en": "Frame inheritance sketch"
+        },
+        "subcaption": {
+          "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Frame, based on the listed source material."
+        },
+        "sourceId": "source-a-framework-for-representing-knowledge",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1965-dendral",
@@ -20100,7 +28902,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1965-dendral-edward-feigenbaum",
+        "asset-1965-dendral-mass-spectrum",
+        "asset-1965-dendral-rule-filter"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -20259,6 +29066,91 @@ const milestones = [
           },
           "url": "http://ksl-web.stanford.edu/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-applications-of-artificial-intelligence-for-chemical-inference",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "人工智能在化学推断中的应用",
+            "en": "Applications of Artificial Intelligence for Chemical Inference"
+          },
+          "url": "https://doi.org/10.1021/ci60034a002",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-acm-turing-award-profile-for-edward-feigenbaum",
+          "type": {
+            "zh": "奖项资料",
+            "en": "Award"
+          },
+          "label": {
+            "zh": "ACM 图灵 Award profile for 爱德华·费根鲍姆",
+            "en": "ACM Turing Award profile for Edward Feigenbaum"
+          },
+          "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-stanford-knowledge-systems-laboratory-history",
+          "type": {
+            "zh": "历史资料",
+            "en": "History"
+          },
+          "label": {
+            "zh": "斯坦福大学 Knowledge Systems Laboratory history",
+            "en": "Stanford Knowledge Systems Laboratory history"
+          },
+          "url": "http://ksl-web.stanford.edu/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-applications-of-artificial-intelligence-for-chemical-inference",
+        "source-acm-turing-award-profile-for-edward-feigenbaum",
+        "source-stanford-knowledge-systems-laboratory-history"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "DENDRAL 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "DENDRAL is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-applications-of-artificial-intelligence-for-chemical-inference",
+            "source-acm-turing-award-profile-for-edward-feigenbaum"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>",
+            "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>"
+          },
+          "sourceIds": [
+            "source-applications-of-artificial-intelligence-for-chemical-inference",
+            "source-acm-turing-award-profile-for-edward-feigenbaum"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -20342,7 +29234,78 @@ const milestones = [
           "science"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1965-dendral/event.json",
+      "variantFile": "archive/events/1965-dendral/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1965-dendral",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg": {
+        "caption": {
+          "zh": "爱德华·费根鲍姆 肖像",
+          "en": "Edward Feigenbaum portrait"
+        },
+        "subcaption": {
+          "zh": "来自 维基共享资源 的图灵奖得主照片。",
+          "en": "Turing laureate photo from Wikimedia Commons."
+        },
+        "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Creative Commons license stated on Commons file page.",
+            "en": "Creative Commons license stated on Commons file page."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg": {
+        "caption": {
+          "zh": "质谱到片段",
+          "en": "Mass spectrum to fragments"
+        },
+        "subcaption": {
+          "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for DENDRAL, based on the listed source material."
+        },
+        "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg": {
+        "caption": {
+          "zh": "规则筛选分子搜索",
+          "en": "Rule-filtered molecule search"
+        },
+        "subcaption": {
+          "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for DENDRAL, based on the listed source material."
+        },
+        "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1999-sift",
@@ -20516,7 +29479,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1999-sift-david-lowe",
+        "asset-1999-sift-scale-space",
+        "asset-1999-sift-descriptor"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -20675,6 +29643,91 @@ const milestones = [
           },
           "url": "https://www.cs.ubc.ca/people/david-lowe"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-object-recognition-from-local-scale-invariant-features",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Object Recognition from Local Scale-Invariant Features",
+            "en": "Object Recognition from Local Scale-Invariant Features"
+          },
+          "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-distinctive-image-features-from-scale-invariant-keypoints",
+          "type": {
+            "zh": "期刊论文",
+            "en": "Journal article"
+          },
+          "label": {
+            "zh": "来自尺度不变关键点的区分性图像特征",
+            "en": "Distinctive Image Features from Scale-Invariant Keypoints"
+          },
+          "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-david-lowe-ubc-computer-science",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "戴维·洛, UBC Computer 《科学》",
+            "en": "David Lowe, UBC Computer Science"
+          },
+          "url": "https://www.cs.ubc.ca/people/david-lowe",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-object-recognition-from-local-scale-invariant-features",
+        "source-distinctive-image-features-from-scale-invariant-keypoints",
+        "source-david-lowe-ubc-computer-science"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "SIFT 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "SIFT is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-object-recognition-from-local-scale-invariant-features",
+            "source-distinctive-image-features-from-scale-invariant-keypoints"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>",
+            "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>"
+          },
+          "sourceIds": [
+            "source-object-recognition-from-local-scale-invariant-features",
+            "source-distinctive-image-features-from-scale-invariant-keypoints"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -20758,7 +29811,78 @@ const milestones = [
           "features"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1999-sift/event.json",
+      "variantFile": "archive/events/1999-sift/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1999-sift",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg": {
+        "caption": {
+          "zh": "戴维·洛 肖像",
+          "en": "David Lowe portrait"
+        },
+        "subcaption": {
+          "zh": "来自 UBC Computer 《科学》 个人资料页的人物图。",
+          "en": "Portrait from UBC Computer Science profile."
+        },
+        "sourceId": "source-object-recognition-from-local-scale-invariant-features",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "UBC profile image; reuse rights not stated.",
+            "en": "UBC profile image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg": {
+        "caption": {
+          "zh": "尺度空间关键点",
+          "en": "Scale-space keypoints"
+        },
+        "subcaption": {
+          "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for SIFT, based on the listed source material."
+        },
+        "sourceId": "source-object-recognition-from-local-scale-invariant-features",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg": {
+        "caption": {
+          "zh": "梯度描述子直方图",
+          "en": "Gradient descriptor histogram"
+        },
+        "subcaption": {
+          "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for SIFT, based on the listed source material."
+        },
+        "sourceId": "source-object-recognition-from-local-scale-invariant-features",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2008-tsne",
@@ -20941,7 +30065,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2008-tsne-laurens-van-der-maaten",
+        "asset-2008-tsne-neighbor-probabilities",
+        "asset-2008-tsne-cluster-map"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -21103,6 +30232,91 @@ const milestones = [
           },
           "url": "https://distill.pub/2016/misread-tsne/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-visualizing-data-using-t-sne",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "使用 t-SNE 可视化数据",
+            "en": "Visualizing Data using t-SNE"
+          },
+          "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-laurens-van-der-maaten-homepage",
+          "type": {
+            "zh": "作者页面",
+            "en": "Author page"
+          },
+          "label": {
+            "zh": "劳伦斯·范德马滕 homepage",
+            "en": "Laurens van der Maaten homepage"
+          },
+          "url": "https://lvdmaaten.github.io/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-how-to-use-t-sne-effectively-distill",
+          "type": {
+            "zh": "指南",
+            "en": "Guide"
+          },
+          "label": {
+            "zh": "How to Use t-SNE Effectively, Distill",
+            "en": "How to Use t-SNE Effectively, Distill"
+          },
+          "url": "https://distill.pub/2016/misread-tsne/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-visualizing-data-using-t-sne",
+        "source-laurens-van-der-maaten-homepage",
+        "source-how-to-use-t-sne-effectively-distill"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "t-SNE 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "t-SNE is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-visualizing-data-using-t-sne",
+            "source-laurens-van-der-maaten-homepage"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>",
+            "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>"
+          },
+          "sourceIds": [
+            "source-visualizing-data-using-t-sne",
+            "source-laurens-van-der-maaten-homepage"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -21186,7 +30400,78 @@ const milestones = [
           "dimensionality-reduction"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2008-tsne/event.json",
+      "variantFile": "archive/events/2008-tsne/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2008-tsne",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png": {
+        "caption": {
+          "zh": "劳伦斯·范德马滕 肖像",
+          "en": "Laurens van der Maaten portrait"
+        },
+        "subcaption": {
+          "zh": "来自 van der Maaten 个人主页的人物图。",
+          "en": "Portrait from van der Maaten homepage."
+        },
+        "sourceId": "source-visualizing-data-using-t-sne",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website image; reuse rights not stated.",
+            "en": "Personal website image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg": {
+        "caption": {
+          "zh": "邻域概率匹配",
+          "en": "Neighbor probability matching"
+        },
+        "subcaption": {
+          "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for t-SNE, based on the listed source material."
+        },
+        "sourceId": "source-visualizing-data-using-t-sne",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg": {
+        "caption": {
+          "zh": "二维簇图",
+          "en": "2D cluster map"
+        },
+        "subcaption": {
+          "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for t-SNE, based on the listed source material."
+        },
+        "sourceId": "source-visualizing-data-using-t-sne",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1958-rosenblatt-perceptron",
@@ -21421,6 +30706,15 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1958-rosenblatt-perceptron-frank-rosenblatt",
+        "asset-1958-rosenblatt-perceptron-threshold",
+        "asset-1958-rosenblatt-perceptron-sensor-grid",
+        "asset-1957-perceptron-people-01",
+        "asset-1957-perceptron-papers-01",
+        "asset-1957-perceptron-historical-01",
+        "asset-1957-perceptron-historical-01-2"
       ]
     },
     "fusionCanonical": "1957-perceptron",
@@ -21581,6 +30875,91 @@ const milestones = [
           },
           "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "感知机：大脑中信息存储与组织的概率模型",
+            "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+          },
+          "url": "https://doi.org/10.1037/h0042519",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cornell-chronicle-perceptron-retrospective",
+          "type": {
+            "zh": "历史资料",
+            "en": "History"
+          },
+          "label": {
+            "zh": "康奈尔大学 Chronicle perceptron retrospective",
+            "en": "Cornell Chronicle perceptron retrospective"
+          },
+          "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-smithsonian-mark-i-perceptron-object-record",
+          "type": {
+            "zh": "博物馆",
+            "en": "Museum"
+          },
+          "label": {
+            "zh": "Smithsonian Mark I Perceptron object record",
+            "en": "Smithsonian Mark I Perceptron object record"
+          },
+          "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "source-cornell-chronicle-perceptron-retrospective",
+        "source-smithsonian-mark-i-perceptron-object-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "感知机与连接主义 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "The Perceptron and Connectionism is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+            "source-cornell-chronicle-perceptron-retrospective"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
+            "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+          },
+          "sourceIds": [
+            "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+            "source-cornell-chronicle-perceptron-retrospective"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -21664,7 +31043,158 @@ const milestones = [
           "classification"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1957-perceptron/event.json",
+      "variantFile": "archive/events/1957-perceptron/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1957-perceptron",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg": {
+        "caption": {
+          "zh": "弗兰克·罗森布拉特 与感知机硬件",
+          "en": "Frank Rosenblatt with perceptron hardware"
+        },
+        "subcaption": {
+          "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。",
+          "en": "Historical Cornell image of Rosenblatt and the perceptron lineage."
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL.",
+            "en": "Cornell historical image; reuse rights not stated on extracted image URL."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg": {
+        "caption": {
+          "zh": "阈值学习边界",
+          "en": "Threshold learning line"
+        },
+        "subcaption": {
+          "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg": {
+        "caption": {
+          "zh": "传感器网格到神经元",
+          "en": "Sensor grid to neuron"
+        },
+        "subcaption": {
+          "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《感知机：大脑中信息存储与组织的概率模型》",
+          "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "感知机与连接主义",
+          "en": "The Perceptron and Connectionism"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "感知机与连接主义",
+          "en": "The Perceptron and Connectionism"
+        },
+        "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-2006-dbn",
@@ -21838,7 +31368,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2006-dbn-geoffrey-hinton",
+        "asset-2006-dbn-stacked-rbms",
+        "asset-2006-dbn-wake-finetune"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -21997,6 +31532,91 @@ const milestones = [
           },
           "url": "https://www.cs.toronto.edu/~hinton/pages/photos.html"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "A Fast Learning Algorithm for Deep Belief Nets",
+            "en": "A Fast Learning Algorithm for Deep Belief Nets"
+          },
+          "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-reducing-the-dimensionality-of-data-with-neural-networks",
+          "type": {
+            "zh": "《科学》 文章",
+            "en": "Science article"
+          },
+          "label": {
+            "zh": "Reducing the Dimensionality of Data with Neural Networks",
+            "en": "Reducing the Dimensionality of Data with Neural Networks"
+          },
+          "url": "https://doi.org/10.1126/science.1127647",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-geoffrey-hinton-photo-page",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "杰弗里·辛顿 photo page",
+            "en": "Geoffrey Hinton photo page"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "source-reducing-the-dimensionality-of-data-with-neural-networks",
+        "source-geoffrey-hinton-photo-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "深度置信网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Deep Belief Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-fast-learning-algorithm-for-deep-belief-nets",
+            "source-reducing-the-dimensionality-of-data-with-neural-networks"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。辛顿 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>",
+            "en": "<p>Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.</p>"
+          },
+          "sourceIds": [
+            "source-a-fast-learning-algorithm-for-deep-belief-nets",
+            "source-reducing-the-dimensionality-of-data-with-neural-networks"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -22080,7 +31700,78 @@ const milestones = [
           "pretraining"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2006-dbn/event.json",
+      "variantFile": "archive/events/2006-dbn/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2006-dbn",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg": {
+        "caption": {
+          "zh": "杰弗里·辛顿 肖像",
+          "en": "Geoffrey Hinton portrait"
+        },
+        "subcaption": {
+          "zh": "来自 辛顿 多伦多大学页面的人物图。",
+          "en": "Photo from Hinton's University of Toronto page."
+        },
+        "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "University personal photo page; reuse rights not stated.",
+            "en": "University personal photo page; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg": {
+        "caption": {
+          "zh": "堆叠 RBM 预训练",
+          "en": "Stacked RBM pretraining"
+        },
+        "subcaption": {
+          "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Belief Network, based on the listed source material."
+        },
+        "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg": {
+        "caption": {
+          "zh": "预训练后微调",
+          "en": "Pretrain then fine-tune"
+        },
+        "subcaption": {
+          "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Belief Network, based on the listed source material."
+        },
+        "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1988-td-update",
@@ -22257,7 +31948,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1988-td-update-richard-sutton",
+        "asset-1988-td-update-value-timeline",
+        "asset-1988-td-update-error-meter"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -22416,6 +32112,91 @@ const milestones = [
           },
           "url": "https://awards.acm.org/about/2024-turing"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Learning to Predict by the Methods of Temporal Differences",
+            "en": "Learning to Predict by the Methods of Temporal Differences"
+          },
+          "url": "https://doi.org/10.1007/BF00115009",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-richard-sutton-homepage",
+          "type": {
+            "zh": "个人主页",
+            "en": "Homepage"
+          },
+          "label": {
+            "zh": "理查德·萨顿 homepage",
+            "en": "Richard Sutton homepage"
+          },
+          "url": "http://incompleteideas.net/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-acm-2024-turing-award-announcement",
+          "type": {
+            "zh": "奖项资料",
+            "en": "Award"
+          },
+          "label": {
+            "zh": "ACM 2024 图灵 Award announcement",
+            "en": "ACM 2024 Turing Award announcement"
+          },
+          "url": "https://awards.acm.org/about/2024-turing",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "source-richard-sutton-homepage",
+        "source-acm-2024-turing-award-announcement"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "时序差分更新 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Temporal-Difference Update is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-learning-to-predict-by-the-methods-of-temporal-differences",
+            "source-richard-sutton-homepage"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
+            "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+          },
+          "sourceIds": [
+            "source-learning-to-predict-by-the-methods-of-temporal-differences",
+            "source-richard-sutton-homepage"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -22499,7 +32280,78 @@ const milestones = [
           "value"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1988-td-update/event.json",
+      "variantFile": "archive/events/1988-td-update/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1988-td-update",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
+        "caption": {
+          "zh": "理查德·萨顿 肖像",
+          "en": "Richard Sutton portrait"
+        },
+        "subcaption": {
+          "zh": "来自 Sutton 个人主页的人物图。",
+          "en": "Portrait from Sutton's personal homepage."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website image; reuse rights not stated.",
+            "en": "Personal website image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
+        "caption": {
+          "zh": "价值时间线更新",
+          "en": "Value timeline update"
+        },
+        "subcaption": {
+          "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg": {
+        "caption": {
+          "zh": "TD 误差仪表",
+          "en": "TD error meter"
+        },
+        "subcaption": {
+          "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1985-bayesian-network",
@@ -22682,7 +32534,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1985-bayesian-network-judea-pearl",
+        "asset-1985-bayesian-network-dag",
+        "asset-1985-bayesian-network-message-pass"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -22844,6 +32701,91 @@ const milestones = [
           },
           "url": "https://samueli.ucla.edu/judea-pearl/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-bayesian-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "贝叶斯网络",
+            "en": "Bayesian Networks"
+          },
+          "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-judea-pearl-homepage",
+          "type": {
+            "zh": "个人主页",
+            "en": "Homepage"
+          },
+          "label": {
+            "zh": "朱迪亚·珀尔 homepage",
+            "en": "Judea Pearl homepage"
+          },
+          "url": "https://bayes.cs.ucla.edu/home.htm",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-judea-pearl-ucla-samueli",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "朱迪亚·珀尔, 加州大学洛杉矶分校 Samueli",
+            "en": "Judea Pearl, UCLA Samueli"
+          },
+          "url": "https://samueli.ucla.edu/judea-pearl/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-bayesian-networks",
+        "source-judea-pearl-homepage",
+        "source-judea-pearl-ucla-samueli"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "贝叶斯网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Bayesian Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-bayesian-networks",
+            "source-judea-pearl-homepage"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。</p>",
+            "en": "<p>Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.</p>"
+          },
+          "sourceIds": [
+            "source-bayesian-networks",
+            "source-judea-pearl-homepage"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -22927,7 +32869,78 @@ const milestones = [
           "knowledge-representation"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1985-bayesian-network/event.json",
+      "variantFile": "archive/events/1985-bayesian-network/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1985-bayesian-network",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg": {
+        "caption": {
+          "zh": "朱迪亚·珀尔 肖像",
+          "en": "Judea Pearl portrait"
+        },
+        "subcaption": {
+          "zh": "来自 维基共享资源 NIPS 2013 图片的人物图。",
+          "en": "Portrait from Wikimedia Commons NIPS 2013 image."
+        },
+        "sourceId": "source-bayesian-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Creative Commons license stated on Commons file page.",
+            "en": "Creative Commons license stated on Commons file page."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg": {
+        "caption": {
+          "zh": "贝叶斯网络 DAG",
+          "en": "Bayesian network DAG"
+        },
+        "subcaption": {
+          "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Bayesian Network, based on the listed source material."
+        },
+        "sourceId": "source-bayesian-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg": {
+        "caption": {
+          "zh": "证据消息传递",
+          "en": "Evidence message passing"
+        },
+        "subcaption": {
+          "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Bayesian Network, based on the listed source material."
+        },
+        "sourceId": "source-bayesian-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1990-otter",
@@ -23133,7 +33146,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1990-otter-input-clauses",
+        "asset-1990-otter-proof-trace",
+        "asset-1990-otter-given-clause",
+        "asset-1990-otter-clause-index"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -23289,7 +33308,92 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-otter-3-3-reference-manual",
+          "type": {
+            "zh": "参考文献",
+            "en": "Reference"
+          },
+          "label": {
+            "zh": "OTTER 3.3 参考手册",
+            "en": "OTTER 3.3 Reference Manual"
+          },
+          "url": "https://arxiv.org/abs/cs/0310056",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-a-spectrum-of-applications-of-automated-reasoning",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "自动推理应用谱系",
+            "en": "A Spectrum of Applications of Automated Reasoning"
+          },
+          "url": "https://arxiv.org/abs/cs/0205078",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-checking-clinical-guidelines-using-automated-reasoning-tools",
+          "type": {
+            "zh": "应用论文",
+            "en": "Application paper"
+          },
+          "label": {
+            "zh": "使用自动推理工具检查临床指南",
+            "en": "Checking Clinical Guidelines using Automated Reasoning Tools"
+          },
+          "url": "https://arxiv.org/abs/0806.0250",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-otter-3-3-reference-manual",
+        "source-a-spectrum-of-applications-of-automated-reasoning",
+        "source-checking-clinical-guidelines-using-automated-reasoning-tools"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Otter 自动定理证明器 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Otter is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-otter-3-3-reference-manual",
+            "source-a-spectrum-of-applications-of-automated-reasoning"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Otter 让高性能一阶定理证明成为 AI 与数理逻辑研究者可实际使用的工具。McCune 的系统结合归结、参数调解、项索引、权重控制和实用的 given-clause 搜索循环，成为探索大规模符号证明空间的主力工具。</p>",
+            "en": "<p>Otter made high-performance first-order theorem proving widely usable for AI and mathematical logic researchers. McCune's system combined resolution, paramodulation, term indexing, weighting, and a practical given-clause search loop, becoming a workhorse for exploring large symbolic proof spaces.</p>"
+          },
+          "sourceIds": [
+            "source-otter-3-3-reference-manual",
+            "source-a-spectrum-of-applications-of-automated-reasoning"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1990-otter-quiz-1",
@@ -23372,7 +33476,98 @@ const milestones = [
           "symbolic-ai"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1990-otter/event.json",
+      "variantFile": "archive/events/1990-otter/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1990-otter",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg": {
+        "caption": {
+          "zh": "Otter 输入子句",
+          "en": "Otter input clauses"
+        },
+        "subcaption": {
+          "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。",
+          "en": "Original local explainer for turning assumptions and goals into Otter clause lists."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg": {
+        "caption": {
+          "zh": "Otter 证明轨迹",
+          "en": "Otter proof trace"
+        },
+        "subcaption": {
+          "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。",
+          "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg": {
+        "caption": {
+          "zh": "given-clause 证明循环",
+          "en": "Given-clause proof loop"
+        },
+        "subcaption": {
+          "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
+          "en": "Original local explainer based on OTTER 3.3 Reference Manual."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg": {
+        "caption": {
+          "zh": "子句索引地图",
+          "en": "Clause indexing map"
+        },
+        "subcaption": {
+          "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
+          "en": "Original local explainer based on OTTER 3.3 Reference Manual."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2011-ibm-watson",
@@ -23591,7 +33786,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2011-ibm-watson-david-ferrucci",
+        "asset-2011-ibm-watson-ibmwatson",
+        "asset-2011-ibm-watson-deepqa",
+        "asset-2011-ibm-watson-evidence-ranking"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -23758,7 +33959,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-watson-beyond-jeopardy",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "沃森：超越《危险边缘！》",
+            "en": "Watson: Beyond Jeopardy!"
+          },
+          "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-building-watson-an-overview-of-the-deepqa-project",
+          "type": {
+            "zh": "综述",
+            "en": "Overview"
+          },
+          "label": {
+            "zh": "构建沃森：DeepQA 项目概览",
+            "en": "Building Watson: An Overview of the DeepQA Project"
+          },
+          "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-ibm-watson-system-photo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "IBM Watson 系统照片",
+            "en": "IBM Watson system photo"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-david-ferrucci-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "戴维·费鲁奇 人物照片",
+            "en": "David Ferrucci portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-watson-beyond-jeopardy",
+        "source-building-watson-an-overview-of-the-deepqa-project",
+        "source-ibm-watson-system-photo",
+        "source-david-ferrucci-portrait"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "IBM Watson 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "IBM Watson is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-watson-beyond-jeopardy",
+            "source-building-watson-an-overview-of-the-deepqa-project"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>",
+            "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>"
+          },
+          "sourceIds": [
+            "source-watson-beyond-jeopardy",
+            "source-building-watson-an-overview-of-the-deepqa-project"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "2011-ibm-watson-quiz-1",
@@ -23841,7 +34142,100 @@ const milestones = [
           "nlp"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2011-ibm-watson/event.json",
+      "variantFile": "archive/events/2011-ibm-watson/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2011-ibm-watson",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg": {
+        "caption": {
+          "zh": "戴维·费鲁奇 人物照片",
+          "en": "David Ferrucci portrait"
+        },
+        "subcaption": {
+          "zh": "IBM Watson / DeepQA 团队负责人。",
+          "en": "Principal investigator of the IBM Watson / DeepQA team."
+        },
+        "sourceId": "source-watson-beyond-jeopardy",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "CC BY 2.0",
+            "en": "CC BY 2.0"
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg": {
+        "caption": {
+          "zh": "IBM Watson 外部参考图",
+          "en": "IBM Watson external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-watson-beyond-jeopardy",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg": {
+        "caption": {
+          "zh": "IBM Watson 外部参考图",
+          "en": "IBM Watson external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-diagram",
+          "en": "external-reference-diagram"
+        },
+        "sourceId": "source-watson-beyond-jeopardy",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg"
+        },
+        "role": "external-reference-diagram",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg": {
+        "caption": {
+          "zh": "证据排序栈",
+          "en": "Evidence ranking stack"
+        },
+        "subcaption": {
+          "zh": "依据 沃森：超越《危险边缘！》 制作的本地解释图。",
+          "en": "Original local explainer based on Watson: Beyond Jeopardy!."
+        },
+        "sourceId": "source-watson-beyond-jeopardy",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1951-strachey-draughts",
@@ -24047,7 +34441,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1951-strachey-draughts-program-external",
+        "asset-1951-strachey-draughts-checkers-board-external",
+        "asset-1951-strachey-draughts-board-search",
+        "asset-1951-strachey-draughts-program-flow"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -24214,7 +34614,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-logical-or-non-mathematical-programmes",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "逻辑或非数学程序",
+            "en": "Logical or non-mathematical programmes"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-computer-pioneers-christopher-strachey",
+          "type": {
+            "zh": "人物资料",
+            "en": "Biography"
+          },
+          "label": {
+            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+            "en": "Computer Pioneers - Christopher Strachey"
+          },
+          "url": "https://history.computer.org/pioneers/strachey.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-strachey-draughts-program-screenshot",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "斯特雷奇 跳棋程序截图",
+            "en": "Strachey draughts program screenshot"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-checkers-board-photo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "跳棋棋盘照片",
+            "en": "Checkers board photo"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-logical-or-non-mathematical-programmes",
+        "source-computer-pioneers-christopher-strachey",
+        "source-strachey-draughts-program-screenshot",
+        "source-checkers-board-photo"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "克里斯托弗·斯特雷奇 的跳棋程序 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Christopher Strachey's Draughts is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-logical-or-non-mathematical-programmes",
+            "source-computer-pioneers-christopher-strachey"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
+            "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+          },
+          "sourceIds": [
+            "source-logical-or-non-mathematical-programmes",
+            "source-computer-pioneers-christopher-strachey"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1951-strachey-draughts-quiz-1",
@@ -24297,7 +34797,100 @@ const milestones = [
           "early-computing"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1951-strachey-draughts/event.json",
+      "variantFile": "archive/events/1951-strachey-draughts/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1951-strachey-draughts",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
+        "caption": {
+          "zh": "斯特雷奇跳棋程序外部参考图",
+          "en": "Strachey draughts program external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-strachey-draughts-program-screenshot",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+        "caption": {
+          "zh": "跳棋棋盘外部参考图",
+          "en": "Checkers board external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-checkers-board-photo",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
+        "caption": {
+          "zh": "跳棋棋盘搜索",
+          "en": "Draughts board search"
+        },
+        "subcaption": {
+          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+          "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "sourceId": "source-logical-or-non-mathematical-programmes",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg": {
+        "caption": {
+          "zh": "早期游戏程序流程",
+          "en": "Early game-program flow"
+        },
+        "subcaption": {
+          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+          "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "sourceId": "source-logical-or-non-mathematical-programmes",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1994-chinook",
@@ -24500,7 +35093,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1994-chinook-jonathan-schaeffer-external",
+        "asset-1994-chinook-homepage",
+        "asset-1994-chinook-endgame-database",
+        "asset-1994-chinook-perfect-play"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -24667,7 +35266,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-chinook-project-home",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "Chinook 项目主页",
+            "en": "Chinook project home"
+          },
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "reliability": "primary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-checkers-is-solved",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "跳棋已被求解",
+            "en": "Checkers Is Solved"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.1144079",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-chinook-publications",
+          "type": {
+            "zh": "论文列表",
+            "en": "Publications"
+          },
+          "label": {
+            "zh": "Chinook 论文列表",
+            "en": "Chinook publications"
+          },
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-jonathan-schaeffer-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "乔纳森·谢弗 人物照片",
+            "en": "Jonathan Schaeffer portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-chinook-project-home",
+        "source-checkers-is-solved",
+        "source-chinook-publications",
+        "source-jonathan-schaeffer-portrait"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Chinook 跳棋程序 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Chinook is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-chinook-project-home",
+            "source-checkers-is-solved"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
+            "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+          },
+          "sourceIds": [
+            "source-chinook-project-home",
+            "source-checkers-is-solved"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1994-chinook-quiz-1",
@@ -24750,7 +35449,99 @@ const milestones = [
           "search"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1994-chinook/event.json",
+      "variantFile": "archive/events/1994-chinook/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1994-chinook",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
+        "caption": {
+          "zh": "乔纳森·谢弗外部参考图",
+          "en": "Jonathan Schaeffer external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-jonathan-schaeffer-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
+        "caption": {
+          "zh": "Chinook 官方项目页面",
+          "en": "Chinook official project page"
+        },
+        "subcaption": {
+          "zh": "引用来源页面截图：Chinook project home。",
+          "en": "Screenshot of the cited source page: Chinook project home."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+            "en": "Source page screenshot for citation preview; rights remain with the source site."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
+        "caption": {
+          "zh": "残局数据库表",
+          "en": "Endgame database table"
+        },
+        "subcaption": {
+          "zh": "依据 跳棋已被求解 制作的本地解释图。",
+          "en": "Original local explainer based on Checkers Is Solved."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg": {
+        "caption": {
+          "zh": "完美对弈证明路径",
+          "en": "Perfect-play proof path"
+        },
+        "subcaption": {
+          "zh": "依据 跳棋已被求解 制作的本地解释图。",
+          "en": "Original local explainer based on Checkers Is Solved."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1959-pandemonium",
@@ -24956,7 +35747,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1959-pandemonium-oliver-selfridge",
+        "asset-1959-pandemonium-original-pande2",
+        "asset-1959-pandemonium-feature-votes",
+        "asset-1959-pandemonium-layered-recognition"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -25123,7 +35920,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-pandemonium-a-paradigm-for-learning",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "群魔殿：一种学习范式",
+            "en": "Pandemonium: A Paradigm for Learning"
+          },
+          "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-pandemonium-architecture-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Pandemonium 架构图片",
+            "en": "Pandemonium architecture image"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-oliver-selfridge-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "奥利弗·塞尔弗里奇 人物照片",
+            "en": "Oliver Selfridge portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-oliver-selfridge-obituary-the-guardian",
+          "type": {
+            "zh": "人物资料",
+            "en": "Obituary"
+          },
+          "label": {
+            "zh": "奥利弗·塞尔弗里奇 讣告，卫报",
+            "en": "Oliver Selfridge obituary, The Guardian"
+          },
+          "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-pandemonium-a-paradigm-for-learning",
+        "source-pandemonium-architecture-image",
+        "source-oliver-selfridge-portrait",
+        "source-oliver-selfridge-obituary-the-guardian"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Pandemonium 感知架构 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Pandemonium is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-pandemonium-a-paradigm-for-learning",
+            "source-pandemonium-architecture-image"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>",
+            "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>"
+          },
+          "sourceIds": [
+            "source-pandemonium-a-paradigm-for-learning",
+            "source-pandemonium-architecture-image"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1959-pandemonium-quiz-1",
@@ -25206,7 +36103,99 @@ const milestones = [
           "pattern-recognition"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1959-pandemonium/event.json",
+      "variantFile": "archive/events/1959-pandemonium/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1959-pandemonium",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg": {
+        "caption": {
+          "zh": "奥利弗·塞尔弗里奇 人物照片",
+          "en": "Oliver Selfridge portrait"
+        },
+        "subcaption": {
+          "zh": "Pandemonium 架构提出者。",
+          "en": "Author of the Pandemonium architecture."
+        },
+        "sourceId": "source-pandemonium-a-paradigm-for-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "CC0",
+            "en": "CC0"
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg": {
+        "caption": {
+          "zh": "Pandemonium 感知架构 外部参考图",
+          "en": "Pandemonium external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-pandemonium-a-paradigm-for-learning",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg": {
+        "caption": {
+          "zh": "特征投票级联",
+          "en": "Feature-vote cascade"
+        },
+        "subcaption": {
+          "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。",
+          "en": "Original local explainer based on Pandemonium: A Paradigm for Learning."
+        },
+        "sourceId": "source-pandemonium-a-paradigm-for-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg": {
+        "caption": {
+          "zh": "分层识别小程序",
+          "en": "Layered recognition demons"
+        },
+        "subcaption": {
+          "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。",
+          "en": "Original local explainer based on Pandemonium: A Paradigm for Learning."
+        },
+        "sourceId": "source-pandemonium-a-paradigm-for-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1984-cyc",
@@ -25425,7 +36414,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1984-cyc-douglas-lenat",
+        "asset-1984-cyc-cyc-projects-logos",
+        "asset-1984-cyc-microtheories",
+        "asset-1984-cyc-common-sense-rule"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -25592,7 +36587,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-building-large-knowledge-based-systems",
+          "type": {
+            "zh": "专著",
+            "en": "Book"
+          },
+          "label": {
+            "zh": "构建大型知识系统",
+            "en": "Building Large Knowledge-Based Systems"
+          },
+          "url": "https://dl.acm.org/doi/book/10.5555/70571",
+          "reliability": "reference-only",
+          "sourceType": "book"
+        },
+        {
+          "id": "source-the-evolution-of-cycl",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "CycL 的演化",
+            "en": "The Evolution of CycL"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/122296.122308",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cyc",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "Cyc",
+            "en": "Cyc"
+          },
+          "url": "https://cyc.com/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-cyc-projects-logo-image",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Cyc 项目标识图片",
+            "en": "Cyc projects logo image"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-building-large-knowledge-based-systems",
+        "source-the-evolution-of-cycl",
+        "source-cyc",
+        "source-cyc-projects-logo-image"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Cyc 常识知识库 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Cyc is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-building-large-knowledge-based-systems",
+            "source-the-evolution-of-cycl"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>",
+            "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>"
+          },
+          "sourceIds": [
+            "source-building-large-knowledge-based-systems",
+            "source-the-evolution-of-cycl"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1984-cyc-quiz-1",
@@ -25675,7 +36770,99 @@ const milestones = [
           "common-sense"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1984-cyc/event.json",
+      "variantFile": "archive/events/1984-cyc/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1984-cyc",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg": {
+        "caption": {
+          "zh": "道格拉斯·莱纳特 人物照片",
+          "en": "Douglas Lenat portrait"
+        },
+        "subcaption": {
+          "zh": "Cyc 项目创始人。",
+          "en": "Founder of the Cyc project."
+        },
+        "sourceId": "source-building-large-knowledge-based-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "CC BY-SA 4.0",
+            "en": "CC BY-SA 4.0"
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png": {
+        "caption": {
+          "zh": "Cyc 常识知识库 外部参考图",
+          "en": "Cyc external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-building-large-knowledge-based-systems",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg": {
+        "caption": {
+          "zh": "Cyc 微理论",
+          "en": "Cyc microtheories"
+        },
+        "subcaption": {
+          "zh": "依据 构建大型知识系统 制作的本地解释图。",
+          "en": "Original local explainer based on Building Large Knowledge-Based Systems."
+        },
+        "sourceId": "source-building-large-knowledge-based-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg": {
+        "caption": {
+          "zh": "常识规则框架",
+          "en": "Common-sense rule frame"
+        },
+        "subcaption": {
+          "zh": "依据 CycL 的演化 制作的本地解释图。",
+          "en": "Original local explainer based on The Evolution of CycL."
+        },
+        "sourceId": "source-building-large-knowledge-based-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1980-xcon-r1",
@@ -25881,7 +37068,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
+        "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
+        "asset-1980-xcon-r1-rule-configurator",
+        "asset-1980-xcon-r1-order-flow"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -26048,7 +37241,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-r1-an-expert-in-the-computer-systems-domain",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "R1：计算机系统领域的专家",
+            "en": "R1: An Expert in the Computer Systems Domain"
+          },
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-r1-revisited-four-years-in-the-trenches",
+          "type": {
+            "zh": "回顾",
+            "en": "Retrospective"
+          },
+          "label": {
+            "zh": "重访 R1：一线四年",
+            "en": "R1 Revisited: Four Years in the Trenches"
+          },
+          "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-xcon-overview",
+          "type": {
+            "zh": "概览",
+            "en": "Overview"
+          },
+          "label": {
+            "zh": "XCON 概览",
+            "en": "XCON overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Xcon",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-dec-vax-11-780-photo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "DEC VAX-11/780 照片",
+            "en": "DEC VAX-11/780 photo"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-r1-an-expert-in-the-computer-systems-domain",
+        "source-r1-revisited-four-years-in-the-trenches",
+        "source-xcon-overview",
+        "source-dec-vax-11-780-photo"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "XCON / R1 专家系统 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "XCON-R1 is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-r1-an-expert-in-the-computer-systems-domain",
+            "source-r1-revisited-four-years-in-the-trenches"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>",
+            "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>"
+          },
+          "sourceIds": [
+            "source-r1-an-expert-in-the-computer-systems-domain",
+            "source-r1-revisited-four-years-in-the-trenches"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1980-xcon-r1-quiz-1",
@@ -26131,7 +37424,100 @@ const milestones = [
           "production-rules"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1980-xcon-r1/event.json",
+      "variantFile": "archive/events/1980-xcon-r1/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1980-xcon-r1",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg": {
+        "caption": {
+          "zh": "XCON / R1 专家系统 外部参考图",
+          "en": "XCON-R1 external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg": {
+        "caption": {
+          "zh": "XCON / R1 专家系统 外部参考图",
+          "en": "XCON-R1 external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg": {
+        "caption": {
+          "zh": "规则式配置器",
+          "en": "Rule-based configurator"
+        },
+        "subcaption": {
+          "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。",
+          "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain."
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg": {
+        "caption": {
+          "zh": "计算机订单流程",
+          "en": "Computer-order flow"
+        },
+        "subcaption": {
+          "zh": "依据 重访 R1：一线四年 制作的本地解释图。",
+          "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches."
+        },
+        "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1957-kmeans",
@@ -26334,7 +37720,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1957-kmeans-bell-labs-holmdel",
+        "asset-1957-kmeans-iris-flowers-clustering-kmeans",
+        "asset-1957-kmeans-centroid-loop",
+        "asset-1957-kmeans-cluster-update"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -26501,7 +37893,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-least-squares-quantization-in-pcm",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "PCM 中的最小二乘量化",
+            "en": "Least squares quantization in PCM"
+          },
+          "url": "https://doi.org/10.1109/TIT.1982.1056489",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-bell-labs-k-means-history-note",
+          "type": {
+            "zh": "历史资料",
+            "en": "History note"
+          },
+          "label": {
+            "zh": "贝尔实验室 k-means 历史资料",
+            "en": "Bell Labs k-means history note"
+          },
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-learn-kmeans-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn KMeans 文档",
+            "en": "scikit-learn KMeans documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-iris-flowers-k-means-clustering-graphic",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "鸢尾花 k-means 聚类图",
+            "en": "Iris Flowers k-means clustering graphic"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-least-squares-quantization-in-pcm",
+        "source-bell-labs-k-means-history-note",
+        "source-scikit-learn-kmeans-documentation",
+        "source-iris-flowers-k-means-clustering-graphic"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "K-means 聚类 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "K-means is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-least-squares-quantization-in-pcm",
+            "source-bell-labs-k-means-history-note"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
+            "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+          },
+          "sourceIds": [
+            "source-least-squares-quantization-in-pcm",
+            "source-bell-labs-k-means-history-note"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1957-kmeans-quiz-1",
@@ -26584,7 +38076,100 @@ const milestones = [
           "unsupervised-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1957-kmeans/event.json",
+      "variantFile": "archive/events/1957-kmeans/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1957-kmeans",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg": {
+        "caption": {
+          "zh": "K-means 聚类 外部参考图",
+          "en": "K-means external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-least-squares-quantization-in-pcm",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg": {
+        "caption": {
+          "zh": "K-means 聚类 外部参考图",
+          "en": "K-means external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-diagram",
+          "en": "external-reference-diagram"
+        },
+        "sourceId": "source-least-squares-quantization-in-pcm",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg"
+        },
+        "role": "external-reference-diagram",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg": {
+        "caption": {
+          "zh": "质心分配循环",
+          "en": "Centroid assignment loop"
+        },
+        "subcaption": {
+          "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。",
+          "en": "Original local explainer based on Least squares quantization in PCM."
+        },
+        "sourceId": "source-least-squares-quantization-in-pcm",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg": {
+        "caption": {
+          "zh": "簇更新步骤",
+          "en": "Cluster update step"
+        },
+        "subcaption": {
+          "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。",
+          "en": "Original local explainer based on scikit-learn KMeans documentation."
+        },
+        "sourceId": "source-least-squares-quantization-in-pcm",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-1996-dbscan",
@@ -26803,7 +38388,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1996-dbscan-sfu-professor-martin-ester-2019",
+        "asset-1996-dbscan-dbscan-density-data",
+        "asset-1996-dbscan-density-reachability",
+        "asset-1996-dbscan-noise-core-border"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -26970,7 +38561,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-a-density-based-algorithm-for-discovering-clusters",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "一种发现簇的基于密度的算法",
+            "en": "A density-based algorithm for discovering clusters"
+          },
+          "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-dbscan-revisited-revisited",
+          "type": {
+            "zh": "回顾",
+            "en": "Retrospective"
+          },
+          "label": {
+            "zh": "再访 DBSCAN，再访",
+            "en": "DBSCAN Revisited, Revisited"
+          },
+          "url": "https://doi.org/10.1145/3068335",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-learn-dbscan-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn DBSCAN 文档",
+            "en": "scikit-learn DBSCAN documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/clustering.html#dbscan",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-martin-ester-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "马丁·埃斯特 人物照片",
+            "en": "Martin Ester portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-density-based-algorithm-for-discovering-clusters",
+        "source-dbscan-revisited-revisited",
+        "source-scikit-learn-dbscan-documentation",
+        "source-martin-ester-portrait"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "DBSCAN 密度聚类 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "DBSCAN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-density-based-algorithm-for-discovering-clusters",
+            "source-dbscan-revisited-revisited"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>",
+            "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>"
+          },
+          "sourceIds": [
+            "source-a-density-based-algorithm-for-discovering-clusters",
+            "source-dbscan-revisited-revisited"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1996-dbscan-quiz-1",
@@ -27053,7 +38744,100 @@ const milestones = [
           "density"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1996-dbscan/event.json",
+      "variantFile": "archive/events/1996-dbscan/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1996-dbscan",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg": {
+        "caption": {
+          "zh": "DBSCAN 密度聚类 外部参考图",
+          "en": "DBSCAN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg": {
+        "caption": {
+          "zh": "DBSCAN 密度聚类 外部参考图",
+          "en": "DBSCAN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-diagram",
+          "en": "external-reference-diagram"
+        },
+        "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
+        },
+        "role": "external-reference-diagram",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg": {
+        "caption": {
+          "zh": "密度可达性",
+          "en": "Density reachability"
+        },
+        "subcaption": {
+          "zh": "依据 一种发现簇的基于密度的算法 制作的本地解释图。",
+          "en": "Original local explainer based on A density-based algorithm for discovering clusters."
+        },
+        "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg": {
+        "caption": {
+          "zh": "核心点、边界点与噪声点",
+          "en": "Core, border, noise points"
+        },
+        "subcaption": {
+          "zh": "依据 再访 DBSCAN，再访 制作的本地解释图。",
+          "en": "Original local explainer based on DBSCAN Revisited, Revisited."
+        },
+        "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-2000-spectral-clustering",
@@ -27272,7 +39056,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017",
+        "asset-2000-spectral-clustering-6n-graf",
+        "asset-2000-spectral-clustering-graph-cut",
+        "asset-2000-spectral-clustering-eigen-map"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -27439,7 +39229,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-normalized-cuts-and-image-segmentation",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "归一化切分与图像分割",
+            "en": "Normalized Cuts and Image Segmentation"
+          },
+          "url": "https://doi.org/10.1109/34.868688",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-on-spectral-clustering-analysis-and-an-algorithm",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "论谱聚类：分析与算法",
+            "en": "On Spectral Clustering: Analysis and an algorithm"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-scikit-learn-spectral-clustering-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn 谱聚类文档",
+            "en": "scikit-learn spectral clustering documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/clustering.html#spectral-clustering",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-spectral-graph-illustration",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "谱聚类图示",
+            "en": "Spectral graph illustration"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-normalized-cuts-and-image-segmentation",
+        "source-on-spectral-clustering-analysis-and-an-algorithm",
+        "source-scikit-learn-spectral-clustering-documentation",
+        "source-spectral-graph-illustration"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "谱聚类 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Spectral Clustering is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-normalized-cuts-and-image-segmentation",
+            "source-on-spectral-clustering-analysis-and-an-algorithm"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>",
+            "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>"
+          },
+          "sourceIds": [
+            "source-normalized-cuts-and-image-segmentation",
+            "source-on-spectral-clustering-analysis-and-an-algorithm"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "2000-spectral-clustering-quiz-1",
@@ -27522,7 +39412,100 @@ const milestones = [
           "graphs"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2000-spectral-clustering/event.json",
+      "variantFile": "archive/events/2000-spectral-clustering/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2000-spectral-clustering",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg": {
+        "caption": {
+          "zh": "谱聚类 外部参考图",
+          "en": "Spectral Clustering external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-normalized-cuts-and-image-segmentation",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg": {
+        "caption": {
+          "zh": "谱聚类 外部参考图",
+          "en": "Spectral Clustering external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-diagram",
+          "en": "external-reference-diagram"
+        },
+        "sourceId": "source-normalized-cuts-and-image-segmentation",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
+        },
+        "role": "external-reference-diagram",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg": {
+        "caption": {
+          "zh": "归一化图切分",
+          "en": "Normalized graph cut"
+        },
+        "subcaption": {
+          "zh": "依据 归一化切分与图像分割 制作的本地解释图。",
+          "en": "Original local explainer based on Normalized Cuts and Image Segmentation."
+        },
+        "sourceId": "source-normalized-cuts-and-image-segmentation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg": {
+        "caption": {
+          "zh": "特征向量嵌入",
+          "en": "Eigenvector embedding"
+        },
+        "subcaption": {
+          "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。",
+          "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm."
+        },
+        "sourceId": "source-normalized-cuts-and-image-segmentation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1967-knn",
@@ -27701,7 +39684,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1967-knn-2012-04-12-obit-cover",
+        "asset-1967-knn-neighbor-vote"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -27887,6 +39874,106 @@ const milestones = [
             "zh": "查询点获得附近训练样本中最常见的标签。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-nearest-neighbor-pattern-classification",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《最近邻模式分类》",
+            "en": "Nearest Neighbor Pattern Classification"
+          },
+          "url": "https://doi.org/10.1109/TIT.1967.1053964",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-stanford-hosted-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "斯坦福托管论文 PDF",
+            "en": "Stanford-hosted paper PDF"
+          },
+          "url": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-k-nearest-neighbors-algorithm-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "k 近邻算法概览",
+            "en": "k-nearest neighbors algorithm overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-learn-nearest-neighbors-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn 最近邻文档",
+            "en": "scikit-learn nearest neighbors documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-nearest-neighbor-pattern-classification",
+        "source-stanford-hosted-paper-pdf",
+        "source-k-nearest-neighbors-algorithm-overview",
+        "source-scikit-learn-nearest-neighbors-documentation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "KNN 最近邻 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "KNN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-nearest-neighbor-pattern-classification",
+            "source-stanford-hosted-paper-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>",
+            "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>"
+          },
+          "sourceIds": [
+            "source-nearest-neighbor-pattern-classification",
+            "source-stanford-hosted-paper-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -27970,7 +40057,59 @@ const milestones = [
           "classification"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1967-knn/event.json",
+      "variantFile": "archive/events/ai100-1967-knn/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1967-knn",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg": {
+        "caption": {
+          "zh": "KNN 最近邻 外部参考图",
+          "en": "KNN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-nearest-neighbor-pattern-classification",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg": {
+        "caption": {
+          "zh": "最近邻投票",
+          "en": "Nearest-neighbor vote"
+        },
+        "subcaption": {
+          "zh": "关于最近邻投票的本地原创解释图。",
+          "en": "Original local explainer of nearest-neighbor voting."
+        },
+        "sourceId": "source-nearest-neighbor-pattern-classification",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1970-ridge",
@@ -28149,7 +40288,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1970-ridge-ai-ridge-regression-main",
+        "asset-1970-ridge-shrinkage"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -28335,6 +40478,106 @@ const milestones = [
             "zh": "惩罚项会收缩系数，使相关预测变量不再主导拟合。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《岭回归：非正交问题中的有偏估计》",
+            "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems"
+          },
+          "url": "https://doi.org/10.1080/00401706.1970.10488634",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-open-pdf-copy-of-the-technometrics-paper",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "Technometrics 论文开放 PDF",
+            "en": "Open PDF copy of the Technometrics paper"
+          },
+          "url": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-ridge-regression-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "岭回归概览",
+            "en": "Ridge regression overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Ridge_regression",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-learn-ridge-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn 岭回归文档",
+            "en": "scikit-learn Ridge documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+        "source-open-pdf-copy-of-the-technometrics-paper",
+        "source-ridge-regression-overview",
+        "source-scikit-learn-ridge-documentation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "岭回归 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Ridge is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+            "source-open-pdf-copy-of-the-technometrics-paper"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>",
+            "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>"
+          },
+          "sourceIds": [
+            "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+            "source-open-pdf-copy-of-the-technometrics-paper"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -28418,7 +40661,59 @@ const milestones = [
           "regularization"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1970-ridge/event.json",
+      "variantFile": "archive/events/ai100-1970-ridge/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1970-ridge",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg": {
+        "caption": {
+          "zh": "岭回归 外部参考图",
+          "en": "Ridge external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg": {
+        "caption": {
+          "zh": "岭回归收缩路径",
+          "en": "Ridge shrinkage path"
+        },
+        "subcaption": {
+          "zh": "关于 L2 系数收缩的本地原创解释图。",
+          "en": "Original local explainer of L2 coefficient shrinkage."
+        },
+        "sourceId": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2005-hog",
@@ -28597,7 +40892,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde",
+        "asset-2005-hog-descriptor-grid"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -28783,6 +41082,106 @@ const milestones = [
             "zh": "图像窗口被划分为单元，每个单元投票边缘方向，归一化块再输入分类器。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-histograms-of-oriented-gradients-for-human-detection",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "《用于人体检测的方向梯度直方图》",
+            "en": "Histograms of Oriented Gradients for Human Detection"
+          },
+          "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-ieee-cvpr-paper-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "IEEE CVPR 论文记录",
+            "en": "IEEE CVPR paper record"
+          },
+          "url": "https://doi.org/10.1109/CVPR.2005.177",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-histogram-of-oriented-gradients-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "方向梯度直方图概览",
+            "en": "Histogram of oriented gradients overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-image-hog-example",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-image HOG 示例",
+            "en": "scikit-image HOG example"
+          },
+          "url": "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-histograms-of-oriented-gradients-for-human-detection",
+        "source-ieee-cvpr-paper-record",
+        "source-histogram-of-oriented-gradients-overview",
+        "source-scikit-image-hog-example"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "HOG 方向梯度直方图 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "HOG is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-histograms-of-oriented-gradients-for-human-detection",
+            "source-ieee-cvpr-paper-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>",
+            "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>"
+          },
+          "sourceIds": [
+            "source-histograms-of-oriented-gradients-for-human-detection",
+            "source-ieee-cvpr-paper-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -28866,7 +41265,59 @@ const milestones = [
           "vision"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2005-hog/event.json",
+      "variantFile": "archive/events/ai100-2005-hog/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2005-hog",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280": {
+        "caption": {
+          "zh": "HOG 方向梯度直方图 外部参考图",
+          "en": "HOG external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-histograms-of-oriented-gradients-for-human-detection",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg": {
+        "caption": {
+          "zh": "HOG 描述子网格",
+          "en": "HOG descriptor grid"
+        },
+        "subcaption": {
+          "zh": "关于梯度方向直方图的本地原创解释图。",
+          "en": "Original local explainer of gradient-orientation histograms."
+        },
+        "sourceId": "source-histograms-of-oriented-gradients-for-human-detection",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2006-surf",
@@ -29045,7 +41496,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2006-surf-herbert-bay-gm",
+        "asset-2006-surf-interest-points"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -29231,6 +41686,106 @@ const milestones = [
             "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-surf-speeded-up-robust-features",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "《SURF：加速稳健特征》",
+            "en": "SURF: Speeded Up Robust Features"
+          },
+          "url": "https://doi.org/10.1007/11744023_32",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-eth-surf-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "ETH SURF 论文 PDF",
+            "en": "ETH SURF paper PDF"
+          },
+          "url": "https://people.ee.ethz.ch/~surf/eccv06.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-original-surf-project-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "SURF 原始项目页",
+            "en": "Original SURF project page"
+          },
+          "url": "https://people.ee.ethz.ch/~surf/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-surf-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "SURF 概览",
+            "en": "SURF overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-surf-speeded-up-robust-features",
+        "source-eth-surf-paper-pdf",
+        "source-original-surf-project-page",
+        "source-surf-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "SURF 加速稳健特征 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "SURF is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-surf-speeded-up-robust-features",
+            "source-eth-surf-paper-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>",
+            "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>"
+          },
+          "sourceIds": [
+            "source-surf-speeded-up-robust-features",
+            "source-eth-surf-paper-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -29314,7 +41869,59 @@ const milestones = [
           "feature-detection"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2006-surf/event.json",
+      "variantFile": "archive/events/ai100-2006-surf/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2006-surf",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png": {
+        "caption": {
+          "zh": "SURF 加速稳健特征 外部参考图",
+          "en": "SURF external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-surf-speeded-up-robust-features",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg": {
+        "caption": {
+          "zh": "SURF 兴趣点",
+          "en": "SURF interest points"
+        },
+        "subcaption": {
+          "zh": "关于 SURF 式兴趣点检测的本地原创解释图。",
+          "en": "Original local explainer of SURF-style interest point detection."
+        },
+        "sourceId": "source-surf-speeded-up-robust-features",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1997-kernel-pca",
@@ -29493,7 +42100,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1997-kernel-pca-bernhard-sch-lkopf",
+        "asset-1997-kernel-pca-eigenmap"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -29679,6 +42290,106 @@ const milestones = [
             "zh": "核矩阵替代显式坐标，使 PCA 能找到非线性主成分。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《作为核特征值问题的非线性成分分析》",
+            "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem"
+          },
+          "url": "https://doi.org/10.1162/089976698300017467",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-max-planck-publication-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "马克斯·普朗克出版页面",
+            "en": "Max Planck publication page"
+          },
+          "url": "https://is.mpg.de/ei/publications/730",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-open-kernel-pca-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "Kernel PCA 开放 PDF",
+            "en": "Open Kernel PCA PDF"
+          },
+          "url": "https://www.mlpack.org/papers/kpca.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-scikit-learn-kernelpca-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn KernelPCA 文档",
+            "en": "scikit-learn KernelPCA documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+        "source-max-planck-publication-page",
+        "source-open-kernel-pca-pdf",
+        "source-scikit-learn-kernelpca-documentation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Kernel PCA 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Kernel PCA is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+            "source-max-planck-publication-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>",
+            "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>"
+          },
+          "sourceIds": [
+            "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+            "source-max-planck-publication-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -29762,7 +42473,59 @@ const milestones = [
           "kernel-methods"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1997-kernel-pca/event.json",
+      "variantFile": "archive/events/ai100-1997-kernel-pca/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1997-kernel-pca",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png": {
+        "caption": {
+          "zh": "Kernel PCA 外部参考图",
+          "en": "Kernel PCA external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg": {
+        "caption": {
+          "zh": "核特征映射",
+          "en": "Kernel eigenmap"
+        },
+        "subcaption": {
+          "zh": "关于 Kernel PCA 嵌入的本地原创解释图。",
+          "en": "Original local explainer of kernel PCA embedding."
+        },
+        "sourceId": "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1999-nmf",
@@ -29941,7 +42704,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1999-nmf-sebastian",
+        "asset-1999-nmf-parts-factorization"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -30127,6 +42894,106 @@ const milestones = [
             "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《通过非负矩阵分解学习物体部件》",
+            "en": "Learning the parts of objects by non-negative matrix factorization"
+          },
+          "url": "https://doi.org/10.1038/44565",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-nature-article-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Nature 文章页面",
+            "en": "Nature article page"
+          },
+          "url": "https://www.nature.com/articles/44565",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-pubmed-record-for-the-nature-paper",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "Nature 论文 PubMed 记录",
+            "en": "PubMed record for the Nature paper"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10548103/",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-scikit-learn-nmf-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn NMF 文档",
+            "en": "scikit-learn NMF documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/decomposition.html#nmf",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+        "source-nature-article-page",
+        "source-pubmed-record-for-the-nature-paper",
+        "source-scikit-learn-nmf-documentation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "非负矩阵分解 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "NMF is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+            "source-nature-article-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>",
+            "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>"
+          },
+          "sourceIds": [
+            "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+            "source-nature-article-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -30210,7 +43077,59 @@ const milestones = [
           "factorization"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1999-nmf/event.json",
+      "variantFile": "archive/events/ai100-1999-nmf/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1999-nmf",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj": {
+        "caption": {
+          "zh": "非负矩阵分解 外部参考图",
+          "en": "NMF external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg": {
+        "caption": {
+          "zh": "基于部件的分解",
+          "en": "Parts-based factorization"
+        },
+        "subcaption": {
+          "zh": "关于非负部件分解的本地原创解释图。",
+          "en": "Original local explainer of nonnegative parts-based factorization."
+        },
+        "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2000-isomap",
@@ -30389,7 +43308,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2000-isomap-tenenbaum-2019-profile-240",
+        "asset-2000-isomap-geodesic-map"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -30575,6 +43498,106 @@ const milestones = [
             "zh": "局部邻居边近似测地距离，然后全局嵌入展开流形。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《非线性降维的全局几何框架》",
+            "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction"
+          },
+          "url": "https://doi.org/10.1126/science.290.5500.2319",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-science-article-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Science 文章页面",
+            "en": "Science article page"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.290.5500.2319",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-pubmed-record-for-isomap",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "Isomap 的 PubMed 记录",
+            "en": "PubMed record for Isomap"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11125149/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-learn-isomap-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn Isomap 文档",
+            "en": "scikit-learn Isomap documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/manifold.html#isomap",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+        "source-science-article-page",
+        "source-pubmed-record-for-isomap",
+        "source-scikit-learn-isomap-documentation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Isomap 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Isomap is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+            "source-science-article-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。</p>",
+            "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.</p>"
+          },
+          "sourceIds": [
+            "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+            "source-science-article-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -30658,7 +43681,59 @@ const milestones = [
           "manifold-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2000-isomap/event.json",
+      "variantFile": "archive/events/ai100-2000-isomap/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2000-isomap",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY": {
+        "caption": {
+          "zh": "Isomap 外部参考图",
+          "en": "Isomap external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg": {
+        "caption": {
+          "zh": "测地流形映射",
+          "en": "Geodesic manifold map"
+        },
+        "subcaption": {
+          "zh": "关于 Isomap 测地嵌入的本地原创解释图。",
+          "en": "Original local explainer of Isomap geodesic embedding."
+        },
+        "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2000-lle",
@@ -30837,7 +43912,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb",
+        "asset-2000-lle-neighbor-reconstruction"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -31023,6 +44102,106 @@ const milestones = [
             "zh": "每个点由邻居重建，低维映射保持这些权重。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《通过局部线性嵌入进行非线性降维》",
+            "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding"
+          },
+          "url": "https://doi.org/10.1126/science.290.5500.2323",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-science-article-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Science 文章页面",
+            "en": "Science article page"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.290.5500.2323",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-pubmed-record-for-lle",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "LLE 的 PubMed 记录",
+            "en": "PubMed record for LLE"
+          },
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11125150/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-scikit-learn-lle-documentation",
+          "type": {
+            "zh": "文档",
+            "en": "Documentation"
+          },
+          "label": {
+            "zh": "scikit-learn LLE 文档",
+            "en": "scikit-learn LLE documentation"
+          },
+          "url": "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+        "source-science-article-page",
+        "source-pubmed-record-for-lle",
+        "source-scikit-learn-lle-documentation"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "局部线性嵌入 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Locally Linear Embedding is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+            "source-science-article-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>",
+            "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>"
+          },
+          "sourceIds": [
+            "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+            "source-science-article-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -31106,7 +44285,59 @@ const milestones = [
           "manifold-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2000-lle/event.json",
+      "variantFile": "archive/events/ai100-2000-lle/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2000-lle",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg": {
+        "caption": {
+          "zh": "局部线性嵌入 外部参考图",
+          "en": "Locally Linear Embedding external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg": {
+        "caption": {
+          "zh": "局部线性嵌入",
+          "en": "Locally linear embedding"
+        },
+        "subcaption": {
+          "zh": "关于 LLE 邻域重建的本地原创解释图。",
+          "en": "Original local explainer of LLE neighborhood reconstruction."
+        },
+        "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1943-mcculloch-pitts-neuron",
@@ -31285,7 +44516,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1943-mcculloch-pitts-neuron-330px-1954-walter-pitts-and-a-blackboard",
+        "asset-1943-mcculloch-pitts-neuron-threshold-logic"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -31471,6 +44706,106 @@ const milestones = [
             "zh": "输入经过加权阈值，产生逻辑输出状态。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《神经活动中内在观念的逻辑演算》",
+            "en": "A Logical Calculus of Ideas Immanent in Nervous Activity"
+          },
+          "url": "https://doi.org/10.1007/BF02478259",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-mcculloch-pitts-neuron-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "麦卡洛克-皮茨神经元概览",
+            "en": "McCulloch-Pitts neuron overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-history-of-information-entry",
+          "type": {
+            "zh": "背景",
+            "en": "Context"
+          },
+          "label": {
+            "zh": "History of Information 历史条目",
+            "en": "History of Information entry"
+          },
+          "url": "https://www.historyofinformation.com/detail.php?id=634",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-walter-pitts-blackboard-photo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "沃尔特·皮茨黑板照片",
+            "en": "Walter Pitts blackboard photo"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+        "source-mcculloch-pitts-neuron-overview",
+        "source-history-of-information-entry",
+        "source-walter-pitts-blackboard-photo"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "麦卡洛克-皮茨神经元 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "McCulloch-Pitts Neuron is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+            "source-mcculloch-pitts-neuron-overview"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>",
+            "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>"
+          },
+          "sourceIds": [
+            "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+            "source-mcculloch-pitts-neuron-overview"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -31554,7 +44889,59 @@ const milestones = [
           "threshold"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1943-mcculloch-pitts-neuron/event.json",
+      "variantFile": "archive/events/ai100-1943-mcculloch-pitts-neuron/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1943-mcculloch-pitts-neuron",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg": {
+        "caption": {
+          "zh": "麦卡洛克-皮茨神经元 外部参考图",
+          "en": "McCulloch-Pitts Neuron external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg": {
+        "caption": {
+          "zh": "阈值逻辑神经元",
+          "en": "Threshold logic neuron"
+        },
+        "subcaption": {
+          "zh": "关于二值输入、阈值和输出的本地原创解释图。",
+          "en": "Original local explainer of binary input, threshold, and output."
+        },
+        "sourceId": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1951-snarc",
@@ -31733,7 +45120,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-marvin-minsky",
+        "asset-1951-snarc-maze-reinforcement"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -31919,6 +45310,106 @@ const milestones = [
             "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-snarc-history-overview",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "SNARC 历史概览",
+            "en": "SNARC history overview"
+          },
+          "url": "https://history-computer.com/snarc/",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-history-of-ai-snarc-article",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "History of AI 的 SNARC 文章",
+            "en": "History of AI SNARC article"
+          },
+          "url": "https://historyof.ai/snarc/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-stochastic-neural-analog-reinforcement-calculator-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Context"
+          },
+          "label": {
+            "zh": "随机神经模拟强化计算机概览",
+            "en": "Stochastic Neural Analog Reinforcement Calculator overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-history-of-information-snarc-entry",
+          "type": {
+            "zh": "回顾",
+            "en": "Retrospective"
+          },
+          "label": {
+            "zh": "History of Information 的 SNARC 条目",
+            "en": "History of Information SNARC entry"
+          },
+          "url": "https://www.historyofinformation.com/detail.php?id=3884",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-snarc-history-overview",
+        "source-history-of-ai-snarc-article",
+        "source-stochastic-neural-analog-reinforcement-calculator-overview",
+        "source-history-of-information-snarc-entry"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "SNARC 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "SNARC is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-snarc-history-overview",
+            "source-history-of-ai-snarc-article"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>",
+            "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>"
+          },
+          "sourceIds": [
+            "source-snarc-history-overview",
+            "source-history-of-ai-snarc-article"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -32002,7 +45493,58 @@ const milestones = [
           "reinforcement"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1951-snarc/event.json",
+      "variantFile": "archive/events/ai100-1951-snarc/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1951-snarc",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/marvin-minsky.jpg": {
+        "caption": {
+          "zh": "马文·明斯基肖像",
+          "en": "Marvin Minsky portrait"
+        },
+        "subcaption": {
+          "zh": "SNARC 共同建造者。",
+          "en": "Co-builder of SNARC."
+        },
+        "sourceId": "source-snarc-history-overview",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg": {
+        "caption": {
+          "zh": "迷宫强化循环",
+          "en": "Maze reinforcement loop"
+        },
+        "subcaption": {
+          "zh": "关于 SNARC 式奖励学习的本地原创解释图。",
+          "en": "Original local explainer of SNARC-style reward learning."
+        },
+        "sourceId": "source-snarc-history-overview",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1982-som",
@@ -32168,7 +45710,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1982-som-teuvo-kohonen",
+        "asset-1982-som-topology-map"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -32354,6 +45900,106 @@ const milestones = [
             "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-self-organized-formation-of-topologically-correct-feature-maps",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《拓扑正确特征映射的自组织形成》",
+            "en": "Self-organized formation of topologically correct feature maps"
+          },
+          "url": "https://doi.org/10.1007/BF00337288",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-open-som-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "SOM 论文开放 PDF",
+            "en": "Open SOM paper PDF"
+          },
+          "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-self-organizing-map-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "自组织映射概览",
+            "en": "Self-organizing map overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-essentials-of-the-self-organizing-map",
+          "type": {
+            "zh": "回顾",
+            "en": "Retrospective"
+          },
+          "label": {
+            "zh": "自组织映射要点回顾",
+            "en": "Essentials of the self-organizing map"
+          },
+          "url": "https://doi.org/10.1016/j.neunet.2012.09.018",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-self-organized-formation-of-topologically-correct-feature-maps",
+        "source-open-som-paper-pdf",
+        "source-self-organizing-map-overview",
+        "source-essentials-of-the-self-organizing-map"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "自组织映射 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Self-organizing Map is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-self-organized-formation-of-topologically-correct-feature-maps",
+            "source-open-som-paper-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>",
+            "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>"
+          },
+          "sourceIds": [
+            "source-self-organized-formation-of-topologically-correct-feature-maps",
+            "source-open-som-paper-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -32437,7 +46083,59 @@ const milestones = [
           "unsupervised-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1982-som/event.json",
+      "variantFile": "archive/events/ai100-1982-som/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1982-som",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg": {
+        "caption": {
+          "zh": "自组织映射 外部参考图",
+          "en": "Self-organizing Map external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg": {
+        "caption": {
+          "zh": "科霍宁映射调整",
+          "en": "Kohonen map adaptation"
+        },
+        "subcaption": {
+          "zh": "关于自组织映射调整的本地原创解释图。",
+          "en": "Original local explainer of self-organizing map adaptation."
+        },
+        "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1967-back-propagation",
@@ -32616,7 +46314,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-david-rumelhart",
+        "asset-1967-back-propagation-error-flow"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -32806,6 +46508,106 @@ const milestones = [
             "zh": "输出误差沿网络反向求导，使每个权重获得更新量。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-learning-representations-by-back-propagating-errors",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《通过反向传播误差学习表示》",
+            "en": "Learning representations by back-propagating errors"
+          },
+          "url": "https://doi.org/10.1038/323533a0",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-a-theory-of-adaptive-pattern-classifiers",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《自适应模式分类器理论》",
+            "en": "A Theory of Adaptive Pattern Classifiers"
+          },
+          "url": "https://doi.org/10.1109/PGEC.1967.264666",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-hinton-hosted-nature-back-propagation-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "辛顿托管 Nature 论文 PDF",
+            "en": "Hinton-hosted Nature back-propagation PDF"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-backpropagation-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "反向传播概览",
+            "en": "Backpropagation overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Backpropagation",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-learning-representations-by-back-propagating-errors",
+        "source-a-theory-of-adaptive-pattern-classifiers",
+        "source-hinton-hosted-nature-back-propagation-pdf",
+        "source-backpropagation-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "反向传播 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Back-propagation is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-learning-representations-by-back-propagating-errors",
+            "source-a-theory-of-adaptive-pattern-classifiers"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>",
+            "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>"
+          },
+          "sourceIds": [
+            "source-learning-representations-by-back-propagating-errors",
+            "source-a-theory-of-adaptive-pattern-classifiers"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -32889,7 +46691,58 @@ const milestones = [
           "neural-networks"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1967-back-propagation/event.json",
+      "variantFile": "archive/events/ai100-1967-back-propagation/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1967-back-propagation",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/david-rumelhart.jpg": {
+        "caption": {
+          "zh": "大卫·鲁梅尔哈特肖像",
+          "en": "David Rumelhart portrait"
+        },
+        "subcaption": {
+          "zh": "1986 年反向传播论文共同作者",
+          "en": "Co-author of the 1986 back-propagation paper"
+        },
+        "sourceId": "source-learning-representations-by-back-propagating-errors",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg": {
+        "caption": {
+          "zh": "误差信号流",
+          "en": "Error signal flow"
+        },
+        "subcaption": {
+          "zh": "关于反向传播误差流的本地原创解释图。",
+          "en": "Original local explainer of back-propagation error flow."
+        },
+        "sourceId": "source-learning-representations-by-back-propagating-errors",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1969-relu",
@@ -33068,7 +46921,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
+        "asset-1969-relu-activation"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -33258,6 +47115,106 @@ const milestones = [
             "zh": "负响应被截断为零，正响应则线性通过。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-deep-sparse-rectifier-neural-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《深度稀疏整流神经网络》",
+            "en": "Deep Sparse Rectifier Neural Networks"
+          },
+          "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-rectified-linear-units-improve-restricted-boltzmann-machines",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《整流线性单元改进受限玻尔兹曼机》",
+            "en": "Rectified Linear Units Improve Restricted Boltzmann Machines"
+          },
+          "url": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-rectifier-activation-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "整流激活函数概览",
+            "en": "Rectifier activation overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-yoshua-bengio-profile-at-mila",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "Mila 的约书亚·本吉奥资料",
+            "en": "Yoshua Bengio profile at Mila"
+          },
+          "url": "https://mila.quebec/en/directory/yoshua-bengio",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-deep-sparse-rectifier-neural-networks",
+        "source-rectified-linear-units-improve-restricted-boltzmann-machines",
+        "source-rectifier-activation-overview",
+        "source-yoshua-bengio-profile-at-mila"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "ReLU 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "ReLU is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-deep-sparse-rectifier-neural-networks",
+            "source-rectified-linear-units-improve-restricted-boltzmann-machines"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>",
+            "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>"
+          },
+          "sourceIds": [
+            "source-deep-sparse-rectifier-neural-networks",
+            "source-rectified-linear-units-improve-restricted-boltzmann-machines"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -33341,7 +47298,59 @@ const milestones = [
           "deep-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1969-relu/event.json",
+      "variantFile": "archive/events/ai100-1969-relu/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1969-relu",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
+        "caption": {
+          "zh": "ReLU 外部参考图",
+          "en": "ReLU external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-deep-sparse-rectifier-neural-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg": {
+        "caption": {
+          "zh": "整流激活",
+          "en": "Rectified activation"
+        },
+        "subcaption": {
+          "zh": "关于 max(0, x) 激活函数的本地原创解释图。",
+          "en": "Original local explainer of the max(0, x) activation."
+        },
+        "sourceId": "source-deep-sparse-rectifier-neural-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1980-neocognitron",
@@ -33507,7 +47516,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
+        "asset-1980-neocognitron-hierarchy"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -33693,6 +47706,106 @@ const milestones = [
             "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-neocognitron",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Neocognitron》",
+            "en": "Neocognitron"
+          },
+          "url": "https://doi.org/10.1007/BF00344251",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-open-neocognitron-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "Neocognitron 开放 PDF",
+            "en": "Open Neocognitron PDF"
+          },
+          "url": "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-scholarpedia-neocognitron-article",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "Scholarpedia 的 Neocognitron 文章",
+            "en": "Scholarpedia Neocognitron article"
+          },
+          "url": "https://www.scholarpedia.org/article/Neocognitron",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-semantic-scholar-paper-record",
+          "type": {
+            "zh": "背景",
+            "en": "Context"
+          },
+          "label": {
+            "zh": "Semantic Scholar 论文记录",
+            "en": "Semantic Scholar paper record"
+          },
+          "url": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-neocognitron",
+        "source-open-neocognitron-pdf",
+        "source-scholarpedia-neocognitron-article",
+        "source-semantic-scholar-paper-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "新认知机 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Neocognitron is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neocognitron",
+            "source-open-neocognitron-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>",
+            "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>"
+          },
+          "sourceIds": [
+            "source-neocognitron",
+            "source-open-neocognitron-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -33776,7 +47889,59 @@ const milestones = [
           "cnn"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1980-neocognitron/event.json",
+      "variantFile": "archive/events/ai100-1980-neocognitron/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1980-neocognitron",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg": {
+        "caption": {
+          "zh": "新认知机 外部参考图",
+          "en": "Neocognitron external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-neocognitron",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg": {
+        "caption": {
+          "zh": "层级视觉网络",
+          "en": "Hierarchical visual layers"
+        },
+        "subcaption": {
+          "zh": "关于 Neocognitron 层级结构的本地原创解释图。",
+          "en": "Original local explainer of neocognitron hierarchy."
+        },
+        "sourceId": "source-neocognitron",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1989-lenet",
@@ -33986,6 +48151,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-1989-cnn-yann-lecun-external",
+        "asset-1989-lenet-zip-code-cnn",
+        "asset-1989-cnn-people-01",
+        "asset-1989-cnn-people-02",
+        "asset-1989-cnn-architecture-01"
       ]
     },
     "fusionCanonical": "1989-cnn",
@@ -34173,6 +48345,106 @@ const milestones = [
             "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《反向传播应用于手写邮编识别》",
+            "en": "Backpropagation Applied to Handwritten Zip Code Recognition"
+          },
+          "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-lenet-5-demos-and-documentation",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "LeNet-5 演示与文档",
+            "en": "LeNet-5 demos and documentation"
+          },
+          "url": "https://yann.lecun.com/exdb/lenet/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-gradient-based-learning-applied-to-document-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《基于梯度的文档识别学习》",
+            "en": "Gradient-Based Learning Applied to Document Recognition"
+          },
+          "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-yann-lecun-s-home-page",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "扬·勒昆主页",
+            "en": "Yann LeCun's home page"
+          },
+          "url": "https://yann.lecun.com/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "source-lenet-5-demos-and-documentation",
+        "source-gradient-based-learning-applied-to-document-recognition",
+        "source-yann-lecun-s-home-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "卷积神经网络与 LeNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Convolutional Networks and LeNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+            "source-lenet-5-demos-and-documentation"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
+            "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+          },
+          "sourceIds": [
+            "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+            "source-lenet-5-demos-and-documentation"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -34256,7 +48528,119 @@ const milestones = [
           "handwriting"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1989-cnn/event.json",
+      "variantFile": "archive/events/1989-cnn/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1989-cnn",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
+        "caption": {
+          "zh": "扬·勒昆外部参考图",
+          "en": "Yann LeCun external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-yann-lecun-s-home-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg": {
+        "caption": {
+          "zh": "邮编 CNN 流程",
+          "en": "ZIP-code CNN pipeline"
+        },
+        "subcaption": {
+          "zh": "关于 LeNet 式识别的本地原创解释图。",
+          "en": "Original local explainer of LeNet-style recognition."
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "卷积神经网络 架构图",
+          "en": "Convolutional Neural Networks"
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2000-neural-language-model",
@@ -34422,7 +48806,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02",
+        "asset-2000-neural-language-model-context-prediction"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -34608,6 +48996,106 @@ const milestones = [
             "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-neural-probabilistic-language-model",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《神经概率语言模型》",
+            "en": "A Neural Probabilistic Language Model"
+          },
+          "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-jmlr-full-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "JMLR 完整论文 PDF",
+            "en": "JMLR full paper PDF"
+          },
+          "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-dblp-record",
+          "type": {
+            "zh": "论文索引",
+            "en": "Publication index"
+          },
+          "label": {
+            "zh": "DBLP 论文记录",
+            "en": "DBLP record"
+          },
+          "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-yoshua-bengio-profile-at-mila",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "Mila 的约书亚·本吉奥资料",
+            "en": "Yoshua Bengio profile at Mila"
+          },
+          "url": "https://mila.quebec/en/directory/yoshua-bengio",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-neural-probabilistic-language-model",
+        "source-jmlr-full-paper-pdf",
+        "source-dblp-record",
+        "source-yoshua-bengio-profile-at-mila"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "神经语言模型 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Neural Language Model is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-neural-probabilistic-language-model",
+            "source-jmlr-full-paper-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>",
+            "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>"
+          },
+          "sourceIds": [
+            "source-a-neural-probabilistic-language-model",
+            "source-jmlr-full-paper-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -34691,7 +49179,59 @@ const milestones = [
           "embeddings"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2000-neural-language-model/event.json",
+      "variantFile": "archive/events/ai100-2000-neural-language-model/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2000-neural-language-model",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
+        "caption": {
+          "zh": "神经语言模型 外部参考图",
+          "en": "Neural Language Model external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-a-neural-probabilistic-language-model",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg": {
+        "caption": {
+          "zh": "上下文预测",
+          "en": "Context prediction"
+        },
+        "subcaption": {
+          "zh": "关于神经语言建模的本地原创解释图。",
+          "en": "Original local explainer of neural language modeling."
+        },
+        "sourceId": "source-a-neural-probabilistic-language-model",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2012-alexnet",
@@ -34916,6 +49456,12 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-alexnet-portrait",
+        "asset-alexnet-architecture",
+        "asset-alexnet-deep-portrait",
+        "asset-alexnet-architecture-detail"
       ]
     },
     "fusionCanonical": "2012-alexnet",
@@ -35103,6 +49649,106 @@ const milestones = [
             "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-alexnet-neurips-paper",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "en": "ImageNet Classification with Deep Convolutional Neural Networks"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-alexnet-neurips-pdf",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "NeurIPS full paper PDF for AlexNet",
+            "en": "NeurIPS full paper PDF for AlexNet"
+          },
+          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-imagenet-challenge",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "en": "ImageNet Large Scale Visual Recognition Challenge"
+          },
+          "url": "https://www.image-net.org/challenges/LSVRC/index.php",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-alexnet-overview",
+          "type": {
+            "zh": "reference-only",
+            "en": "reference-only"
+          },
+          "label": {
+            "zh": "AlexNet overview",
+            "en": "AlexNet overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/AlexNet",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-alexnet-neurips-paper",
+        "source-alexnet-neurips-pdf",
+        "source-imagenet-challenge",
+        "source-alexnet-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-imagenet-breakthrough",
+          "importance": "core",
+          "text": {
+            "zh": "AlexNet 在 ImageNet 2012 中以深度卷积网络显著提升图像分类结果。",
+            "en": "AlexNet substantially improved image classification results with a deep convolutional network in ImageNet 2012."
+          },
+          "sourceIds": [
+            "source-alexnet-neurips-paper",
+            "source-imagenet-challenge"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-scale-recipe",
+          "importance": "core",
+          "text": {
+            "zh": "AlexNet 的突破结合了 GPU 训练、ReLU、数据增强和 dropout 等规模化训练要素。",
+            "en": "AlexNet combined scaled training ingredients including GPUs, ReLU, data augmentation, and dropout."
+          },
+          "sourceIds": [
+            "source-alexnet-neurips-paper"
+          ],
+          "status": "verified"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-imagenet-breakthrough",
+        "claim-scale-recipe"
+      ],
+      "archiveEmphasis": [
+        "research-breakthrough",
+        "paper-source",
+        "computer-vision"
       ]
     },
     "quiz": {
@@ -35186,7 +49832,98 @@ const milestones = [
           "deep-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2012-alexnet/event.json",
+      "variantFile": "archive/events/2012-alexnet/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2012-alexnet",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/alex-krizhevsky.jpg": {
+        "caption": {
+          "zh": "亚历克斯·克里热夫斯基肖像",
+          "en": "Alex Krizhevsky portrait"
+        },
+        "subcaption": {
+          "zh": "AlexNet 主要作者",
+          "en": "AlexNet lead author"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史人物资料图，保留来源说明。",
+            "en": "Historical figure reference image; keep attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
+        "caption": {
+          "zh": "AlexNet 架构示意",
+          "en": "AlexNet architecture explainer"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
+        "caption": {
+          "zh": "AlexNet 相关人物资料图",
+          "en": "AlexNet related figure image"
+        },
+        "subcaption": {
+          "zh": "portrait",
+          "en": "portrait"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
+        "caption": {
+          "zh": "AlexNet 架构细节图",
+          "en": "AlexNet architecture detail"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2015-resnet",
@@ -35457,6 +50194,15 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-kaiming-he",
+        "asset-2015-resnet-architecture-01",
+        "asset-2015-resnet-people-04",
+        "asset-2015-resnet-people-03",
+        "asset-2015-resnet-people-02",
+        "asset-2015-resnet-people-01",
+        "asset-2015-resnet-architecture-02"
       ]
     },
     "fusionCanonical": "2015-resnet",
@@ -35644,6 +50390,106 @@ const milestones = [
             "zh": "捷径路径把输入加回学习得到的残差变换。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-deep-residual-learning-for-image-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《用于图像识别的深度残差学习》",
+            "en": "Deep Residual Learning for Image Recognition"
+          },
+          "url": "https://arxiv.org/abs/1512.03385",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvf-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "CVF 开放论文页面",
+            "en": "CVF Open Access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvpr-full-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "CVPR 完整论文 PDF",
+            "en": "CVPR full paper PDF"
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-kaiming-he-profile-at-mit-csail",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "MIT CSAIL 的何恺明资料",
+            "en": "Kaiming He profile at MIT CSAIL"
+          },
+          "url": "https://people.csail.mit.edu/kaiming/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-deep-residual-learning-for-image-recognition",
+        "source-cvf-open-access-paper-page",
+        "source-cvpr-full-paper-pdf",
+        "source-kaiming-he-profile-at-mit-csail"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "ResNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "ResNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-deep-residual-learning-for-image-recognition",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。</p>",
+            "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning at Microsoft Research Asia. ResNet used shortcut connections so very deep networks could learn residual refinements instead of full transformations, solving a practical training bottleneck and becoming a standard visual backbone. The fused version combines the deep-learning storyline's emphasis on engineering simplicity and trainability with the AI100 paper sources and residual-block explanation.</p>"
+          },
+          "sourceIds": [
+            "source-deep-residual-learning-for-image-recognition",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -35727,7 +50573,158 @@ const milestones = [
           "architecture"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2015-resnet/event.json",
+      "variantFile": "archive/events/2015-resnet/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2015-resnet",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/kaiming-he.jpg": {
+        "caption": {
+          "zh": "何恺明肖像",
+          "en": "Kaiming He portrait"
+        },
+        "subcaption": {
+          "zh": "ResNet 主要作者。",
+          "en": "Lead author of ResNet."
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png": {
+        "caption": {
+          "zh": "残差模块",
+          "en": "Residual block"
+        },
+        "subcaption": {
+          "zh": "项目使用的架构图。",
+          "en": "Architecture visual used by the project."
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_04.png": {
+        "caption": {
+          "zh": "何恺明",
+          "en": "Kaiming He"
+        },
+        "subcaption": {
+          "zh": "ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授",
+          "en": "ResNet first author; Associate Professor at MIT EECS"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_03.png": {
+        "caption": {
+          "zh": "张祥雨",
+          "en": "Xiangyu Zhang"
+        },
+        "subcaption": {
+          "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰",
+          "en": "ResNet co-author; later at Megvii, now at StepFun"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_02.png": {
+        "caption": {
+          "zh": "任少卿",
+          "en": "Shaoqing Ren"
+        },
+        "subcaption": {
+          "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁",
+          "en": "ResNet co-author; now VP of R&D at NIO"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/people/2015-resnet_people_01.png": {
+        "caption": {
+          "zh": "孙剑",
+          "en": "Jian Sun"
+        },
+        "subcaption": {
+          "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）",
+          "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "ResNet 架构图",
+          "en": "ResNet diagram"
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2015-batch-normalization",
@@ -35906,7 +50903,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2015-googlenet-inception-christian-szegedy",
+        "asset-2015-batch-normalization-activation-scale"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -36092,6 +51093,106 @@ const milestones = [
             "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-batch-normalization",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《批归一化》",
+            "en": "Batch Normalization"
+          },
+          "url": "https://proceedings.mlr.press/v37/ioffe15.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-batch-normalization-on-arxiv",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "arXiv 上的批归一化论文",
+            "en": "Batch Normalization on arXiv"
+          },
+          "url": "https://arxiv.org/abs/1502.03167",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-research-publication-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
+          },
+          "url": "https://research.google/pubs/batch-normalization-accelerating-deep-network-training-by-reducing-internal-covariate-shift/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-google-research-archived-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "Google Research 归档 PDF",
+            "en": "Google Research archived PDF"
+          },
+          "url": "https://research.google.com/pubs/archive/43442.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-batch-normalization",
+        "source-batch-normalization-on-arxiv",
+        "source-google-research-publication-page",
+        "source-google-research-archived-pdf"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "批归一化 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Batch Normalization is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-batch-normalization",
+            "source-batch-normalization-on-arxiv"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>",
+            "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>"
+          },
+          "sourceIds": [
+            "source-batch-normalization",
+            "source-batch-normalization-on-arxiv"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -36175,7 +51276,58 @@ const milestones = [
           "training"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2015-batch-normalization/event.json",
+      "variantFile": "archive/events/ai100-2015-batch-normalization/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2015-batch-normalization",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
+        "caption": {
+          "zh": "克里斯蒂安·塞格迪肖像",
+          "en": "Christian Szegedy portrait"
+        },
+        "subcaption": {
+          "zh": "批归一化共同作者。",
+          "en": "Co-author of Batch Normalization."
+        },
+        "sourceId": "source-batch-normalization",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg": {
+        "caption": {
+          "zh": "激活归一化",
+          "en": "Activation normalization"
+        },
+        "subcaption": {
+          "zh": "关于批统计量与可学习缩放的本地原创解释图。",
+          "en": "Original local explainer of batch statistics and learned scale."
+        },
+        "sourceId": "source-batch-normalization",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2017-densenet",
@@ -36376,6 +51528,11 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2016-densenet-people-01",
+        "asset-2016-densenet-architecture-01",
+        "asset-2016-densenet-people-02"
       ]
     },
     "fusionCanonical": "2016-densenet",
@@ -36567,6 +51724,106 @@ const milestones = [
             "zh": "每一层都会接收同一块中所有早期层的特征图。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-densely-connected-convolutional-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《密集连接卷积网络》",
+            "en": "Densely Connected Convolutional Networks"
+          },
+          "url": "https://arxiv.org/abs/1608.06993",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvf-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "CVF 开放论文页面",
+            "en": "CVF Open Access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-original-densenet-code-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "DenseNet 原始代码仓库",
+            "en": "Original DenseNet code repository"
+          },
+          "url": "https://github.com/liuzhuang13/DenseNet",
+          "reliability": "secondary",
+          "sourceType": "code"
+        },
+        {
+          "id": "source-meta-ai-publication-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Meta AI 出版页面",
+            "en": "Meta AI publication page"
+          },
+          "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-densely-connected-convolutional-networks",
+        "source-cvf-open-access-paper-page",
+        "source-original-densenet-code-repository",
+        "source-meta-ai-publication-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "DenseNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "DenseNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-densely-connected-convolutional-networks",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
+            "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+          },
+          "sourceIds": [
+            "source-densely-connected-convolutional-networks",
+            "source-cvf-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -36650,7 +51907,78 @@ const milestones = [
           "feature-reuse"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2016-densenet/event.json",
+      "variantFile": "archive/events/2016-densenet/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2016-densenet",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
+        "caption": {
+          "zh": "DenseNet 作者团队",
+          "en": "DenseNet author group"
+        },
+        "subcaption": {
+          "zh": "DenseNet 背后的研究者。",
+          "en": "Researchers behind DenseNet."
+        },
+        "sourceId": "source-densely-connected-convolutional-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
+        "caption": {
+          "zh": "密集连接",
+          "en": "Dense connectivity"
+        },
+        "subcaption": {
+          "zh": "项目使用的架构图。",
+          "en": "Architecture visual used by the project."
+        },
+        "sourceId": "source-densely-connected-convolutional-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-densely-connected-convolutional-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2017-transformer",
@@ -36873,6 +52201,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-transformer-portrait",
+        "asset-transformer-attention",
+        "asset-transformer-architecture",
+        "asset-transformer-architecture-detail",
+        "asset-transformer-paper-page"
       ]
     },
     "fusionCanonical": "2017-transformer",
@@ -37064,6 +52399,107 @@ const milestones = [
             "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-transformer-arxiv",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "Attention Is All You Need",
+            "en": "Attention Is All You Need"
+          },
+          "url": "https://arxiv.org/abs/1706.03762",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-transformer-neurips",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "NeurIPS paper page for Attention Is All You Need",
+            "en": "NeurIPS paper page for Attention Is All You Need"
+          },
+          "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-research-publication",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "Google Research publication page for Attention Is All You Need",
+            "en": "Google Research publication page for Attention Is All You Need"
+          },
+          "url": "https://research.google/pubs/attention-is-all-you-need/",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-google-transformer-blog",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
+            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+          },
+          "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-transformer-arxiv",
+        "source-transformer-neurips",
+        "source-google-research-publication",
+        "source-google-transformer-blog"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-attention-only-architecture",
+          "importance": "core",
+          "text": {
+            "zh": "Transformer 提出了一种完全基于注意力机制、去除循环和卷积的序列建模架构。",
+            "en": "The Transformer proposed a sequence modeling architecture based solely on attention mechanisms, dispensing with recurrence and convolutions."
+          },
+          "sourceIds": [
+            "source-transformer-arxiv",
+            "source-transformer-neurips"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-foundation-model-legacy",
+          "importance": "context",
+          "text": {
+            "zh": "Transformer 架构成为 BERT、GPT 式语言模型和许多现代基础模型的重要基础。",
+            "en": "The Transformer architecture became a key foundation for BERT, GPT-style language models, and many modern foundation models."
+          },
+          "sourceIds": [
+            "source-google-transformer-blog",
+            "source-google-research-publication"
+          ],
+          "status": "verified"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-attention-only-architecture",
+        "claim-foundation-model-legacy"
+      ],
+      "archiveEmphasis": [
+        "research-breakthrough",
+        "paper-source",
+        "self-attention"
       ]
     },
     "quiz": {
@@ -37147,7 +52583,118 @@ const milestones = [
           "attention"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2017-transformer/event.json",
+      "variantFile": "archive/events/2017-transformer/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2017-transformer",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/ashish-vaswani.jpg": {
+        "caption": {
+          "zh": "阿希什·瓦斯瓦尼肖像",
+          "en": "Ashish Vaswani portrait"
+        },
+        "subcaption": {
+          "zh": "Transformer 论文共同作者",
+          "en": "Transformer paper co-author"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史人物资料图，保留来源说明。",
+            "en": "Historical figure reference image; keep attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
+        "caption": {
+          "zh": "Transformer 自注意力机制示意",
+          "en": "Transformer self-attention explainer"
+        },
+        "subcaption": {
+          "zh": "algorithm-explainer",
+          "en": "algorithm-explainer"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
+        "caption": {
+          "zh": "Transformer 架构示意",
+          "en": "Transformer architecture explainer"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
+        "caption": {
+          "zh": "Transformer 架构细节图",
+          "en": "Transformer architecture detail"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
+            "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
+        "caption": {
+          "zh": "Transformer 论文页面资料",
+          "en": "Transformer paper page material"
+        },
+        "subcaption": {
+          "zh": "paper-page",
+          "en": "paper-page"
+        },
+        "sourceId": "source-transformer-neurips",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "论文页面资料引用，需保留来源说明。",
+            "en": "Paper page reference; keep source attribution."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2020-vit",
@@ -37326,7 +52873,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2020-vit-alexey-dosovitskiy",
+        "asset-2020-vit-patch-tokens"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -37512,6 +53063,106 @@ const milestones = [
             "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-an-image-is-worth-16x16-words",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《一张图像价值 16x16 个词》",
+            "en": "An Image is Worth 16x16 Words"
+          },
+          "url": "https://arxiv.org/abs/2010.11929",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-openreview-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR OpenReview 页面",
+            "en": "ICLR OpenReview page"
+          },
+          "url": "https://openreview.net/forum?id=YicbFdNTTy",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-openreview-full-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "OpenReview 完整论文 PDF",
+            "en": "OpenReview full paper PDF"
+          },
+          "url": "https://openreview.net/pdf?id=YicbFdNTTy",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-research-publication-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
+          },
+          "url": "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-an-image-is-worth-16x16-words",
+        "source-iclr-openreview-page",
+        "source-openreview-full-paper-pdf",
+        "source-google-research-publication-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "视觉 Transformer 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Vision Transformer is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-an-image-is-worth-16x16-words",
+            "source-iclr-openreview-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>",
+            "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>"
+          },
+          "sourceIds": [
+            "source-an-image-is-worth-16x16-words",
+            "source-iclr-openreview-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -37595,7 +53246,59 @@ const milestones = [
           "attention"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2020-vit/event.json",
+      "variantFile": "archive/events/ai100-2020-vit/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2020-vit",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://www.eml-munich.de/team/alexey-dosovitskiy.png": {
+        "caption": {
+          "zh": "视觉 Transformer 外部参考图",
+          "en": "Vision Transformer external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-an-image-is-worth-16x16-words",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg": {
+        "caption": {
+          "zh": "图像块令牌到 Transformer",
+          "en": "Patch tokens to transformer"
+        },
+        "subcaption": {
+          "zh": "关于 ViT 图像块令牌化的本地原创解释图。",
+          "en": "Original local explainer of ViT patch tokenization."
+        },
+        "sourceId": "source-an-image-is-worth-16x16-words",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1997-lstm",
@@ -37818,6 +53521,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-sepp-hochreiter",
+        "asset-1997-lstm-gated-memory",
+        "asset-1997-lstm-people-01",
+        "asset-1997-lstm-architecture-01",
+        "asset-1997-lstm-architecture-02"
       ]
     },
     "fusionCanonical": "1997-lstm",
@@ -38009,6 +53719,106 @@ const milestones = [
             "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-long-short-term-memory",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《长短期记忆》",
+            "en": "Long Short-Term Memory"
+          },
+          "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-author-hosted-lstm-paper-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "作者托管的 LSTM 论文 PDF",
+            "en": "Author-hosted LSTM paper PDF"
+          },
+          "url": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-lstm-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "LSTM 概览",
+            "en": "LSTM overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-sepp-hochreiter-profile",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "塞普·霍赫赖特个人资料",
+            "en": "Sepp Hochreiter profile"
+          },
+          "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-long-short-term-memory",
+        "source-author-hosted-lstm-paper-pdf",
+        "source-lstm-overview",
+        "source-sepp-hochreiter-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "LSTM 与门控记忆 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "LSTM and Gated Memory is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-long-short-term-memory",
+            "source-author-hosted-lstm-paper-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>",
+            "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant.</p>"
+          },
+          "sourceIds": [
+            "source-long-short-term-memory",
+            "source-author-hosted-lstm-paper-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -38092,7 +53902,118 @@ const milestones = [
           "sequence-modeling"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1997-lstm/event.json",
+      "variantFile": "archive/events/1997-lstm/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1997-lstm",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/sepp-hochreiter.jpg": {
+        "caption": {
+          "zh": "塞普·霍赫赖特肖像",
+          "en": "Sepp Hochreiter portrait"
+        },
+        "subcaption": {
+          "zh": "LSTM 共同作者",
+          "en": "LSTM co-author"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg": {
+        "caption": {
+          "zh": "LSTM 门控记忆单元",
+          "en": "LSTM gated memory cell"
+        },
+        "subcaption": {
+          "zh": "关于门控序列记忆的本地原创解释图。",
+          "en": "Original local explainer of gated sequence memory."
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "LSTM与门控机制 架构图",
+          "en": "LSTM and Gating Mechanisms"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "LSTM与门控机制 架构图",
+          "en": "LSTM and Gating Mechanisms"
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2014-gan",
@@ -38293,6 +54214,11 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-ian-goodfellow",
+        "asset-2014-gan-adversarial-loop",
+        "asset-2014-gan-architecture-01"
       ]
     },
     "fusionCanonical": "2014-gan",
@@ -38484,6 +54410,106 @@ const milestones = [
             "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-generative-adversarial-nets",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《生成对抗网络》",
+            "en": "Generative Adversarial Nets"
+          },
+          "url": "https://arxiv.org/abs/1406.2661",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-neurips-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
+          },
+          "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-goodfellow-gan-tutorial",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "古德费洛 GAN 教程",
+            "en": "Goodfellow GAN tutorial"
+          },
+          "url": "https://arxiv.org/abs/1701.00160",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-ian-goodfellow-profile",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "伊恩·古德费洛个人网站",
+            "en": "Ian Goodfellow profile"
+          },
+          "url": "https://www.iangoodfellow.com/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-generative-adversarial-nets",
+        "source-neurips-paper-page",
+        "source-goodfellow-gan-tutorial",
+        "source-ian-goodfellow-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "生成对抗网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Generative Adversarial Networks is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-generative-adversarial-nets",
+            "source-neurips-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
+            "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+          },
+          "sourceIds": [
+            "source-generative-adversarial-nets",
+            "source-neurips-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -38567,7 +54593,78 @@ const milestones = [
           "generative-ai"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2014-gan/event.json",
+      "variantFile": "archive/events/2014-gan/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-gan",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/ian-goodfellow.jpg": {
+        "caption": {
+          "zh": "伊恩·古德费洛肖像",
+          "en": "Ian Goodfellow portrait"
+        },
+        "subcaption": {
+          "zh": "GAN 主要作者",
+          "en": "GAN lead author"
+        },
+        "sourceId": "source-generative-adversarial-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg": {
+        "caption": {
+          "zh": "GAN 对抗循环",
+          "en": "GAN adversarial loop"
+        },
+        "subcaption": {
+          "zh": "关于生成器-判别器训练的本地原创解释图。",
+          "en": "Original local explainer of generator-discriminator training."
+        },
+        "sourceId": "source-generative-adversarial-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "GAN（生成对抗网路） 架构图",
+          "en": "GANs: Generative Adversarial Networks"
+        },
+        "sourceId": "source-generative-adversarial-nets",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2014-neural-machine-translation-attention",
@@ -38792,6 +54889,12 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-geoffrey-hinton",
+        "asset-2014-attention-alignment",
+        "asset-2014-attention-architecture-01",
+        "asset-2014-attention-people-01"
       ]
     },
     "fusionCanonical": "2014-attention",
@@ -38979,6 +55082,106 @@ const milestones = [
             "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《通过联合学习对齐与翻译实现神经机器翻译》",
+            "en": "Neural Machine Translation by Jointly Learning to Align and Translate"
+          },
+          "url": "https://arxiv.org/abs/1409.0473",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-2015-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR 2015 论文页面",
+            "en": "ICLR 2015 paper page"
+          },
+          "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-attention-mechanism-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "注意力机制概览",
+            "en": "Attention mechanism overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-yoshua-bengio-lab-profile",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "约书亚·本吉奥 Mila 资料",
+            "en": "Yoshua Bengio lab profile"
+          },
+          "url": "https://mila.quebec/en/person/yoshua-bengio/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "source-iclr-2015-paper-page",
+        "source-attention-mechanism-overview",
+        "source-yoshua-bengio-lab-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "带注意力机制的神经机器翻译 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Neural Machine Translation with Attention is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+            "source-iclr-2015-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
+            "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+          },
+          "sourceIds": [
+            "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+            "source-iclr-2015-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -39062,7 +55265,98 @@ const milestones = [
           "translation"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2014-attention/event.json",
+      "variantFile": "archive/events/2014-attention/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2014-attention",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/geoffrey-hinton.jpg": {
+        "caption": {
+          "zh": "蒙特利尔深度学习研究背景图",
+          "en": "Montreal deep learning research context"
+        },
+        "subcaption": {
+          "zh": "神经注意力研究的机构背景",
+          "en": "Institutional context for neural attention research"
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
+        "caption": {
+          "zh": "注意力对齐图",
+          "en": "Attention alignment map"
+        },
+        "subcaption": {
+          "zh": "关于源令牌注意力的本地原创解释图。",
+          "en": "Original local explainer of source-token attention."
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "自回归模型和注意力机制 架构图",
+          "en": "Autoregressive Models and Attention diagram"
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2014-attention/people/2014-attention_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2018-bert",
@@ -39272,6 +55566,13 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-jacob-devlin",
+        "asset-2018-bert-masked-lm",
+        "asset-2018-bert-people-03",
+        "asset-2018-bert-architecture-01",
+        "asset-2018-bert-architecture-02"
       ]
     },
     "fusionCanonical": "2018-bert",
@@ -39459,6 +55760,106 @@ const milestones = [
             "zh": "模型用左右两侧上下文预测被遮盖的词，然后把预训练模型微调用于下游任务。这让一个编码器可以复用于分类、问答、检索和信息抽取。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-bert",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《BERT》",
+            "en": "BERT"
+          },
+          "url": "https://arxiv.org/abs/1810.04805",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-acl-anthology-bert-paper",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ACL Anthology BERT 论文",
+            "en": "ACL Anthology BERT paper"
+          },
+          "url": "https://aclanthology.org/N19-1423/",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-research-bert-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "Google Research BERT 代码仓库",
+            "en": "Google Research BERT repository"
+          },
+          "url": "https://github.com/google-research/bert",
+          "reliability": "secondary",
+          "sourceType": "code"
+        },
+        {
+          "id": "source-google-ai-bert-blog-post",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "Google AI BERT 博客",
+            "en": "Google AI BERT blog post"
+          },
+          "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-bert",
+        "source-acl-anthology-bert-paper",
+        "source-google-research-bert-repository",
+        "source-google-ai-bert-blog-post"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "BERT 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "BERT is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-bert",
+            "source-acl-anthology-bert-paper"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>",
+            "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line.</p>"
+          },
+          "sourceIds": [
+            "source-bert",
+            "source-acl-anthology-bert-paper"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -39542,7 +55943,118 @@ const milestones = [
           "language-models"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2018-bert/event.json",
+      "variantFile": "archive/events/2018-bert/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2018-bert",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/jacob-devlin.jpg": {
+        "caption": {
+          "zh": "雅各布·德夫林肖像",
+          "en": "Jacob Devlin portrait"
+        },
+        "subcaption": {
+          "zh": "BERT 主要作者",
+          "en": "BERT lead author"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg": {
+        "caption": {
+          "zh": "BERT 掩码语言建模",
+          "en": "BERT masked language modeling"
+        },
+        "subcaption": {
+          "zh": "关于双向预训练的本地原创解释图。",
+          "en": "Original local explainer of bidirectional pre-training."
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "BERT 架构图",
+          "en": "BERT diagram"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2018-bert/architecture/2018-bert_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "BERT 架构图",
+          "en": "BERT diagram"
+        },
+        "sourceId": "source-bert",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2018-gpt",
@@ -39763,6 +56275,14 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-alec-radford",
+        "asset-2018-gpt-next-token",
+        "asset-2018-gpt-architecture-01",
+        "asset-2018-gpt-architecture-02",
+        "asset-2018-gpt-historical-01",
+        "asset-2018-gpt-people-02"
       ]
     },
     "fusionCanonical": "2018-gpt",
@@ -39950,6 +56470,106 @@ const milestones = [
             "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-improving-language-understanding-by-generative-pre-training",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "《通过生成式预训练改进语言理解》",
+            "en": "Improving Language Understanding by Generative Pre-Training"
+          },
+          "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-openai-language-unsupervised-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "OpenAI 无监督语言页面",
+            "en": "OpenAI language unsupervised page"
+          },
+          "url": "https://openai.com/index/language-unsupervised/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-gpt-model-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "GPT 模型概览",
+            "en": "GPT model overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-alec-radford-research-context",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "亚历克·拉德福德研究背景",
+            "en": "Alec Radford research context"
+          },
+          "url": "https://openai.com/research/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-improving-language-understanding-by-generative-pre-training",
+        "source-openai-language-unsupervised-page",
+        "source-gpt-model-overview",
+        "source-alec-radford-research-context"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "GPT 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "GPT is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-improving-language-understanding-by-generative-pre-training",
+            "source-openai-language-unsupervised-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>",
+            "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models.</p>"
+          },
+          "sourceIds": [
+            "source-improving-language-understanding-by-generative-pre-training",
+            "source-openai-language-unsupervised-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -40033,7 +56653,138 @@ const milestones = [
           "language-models"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2018-gpt/event.json",
+      "variantFile": "archive/events/2018-gpt/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2018-gpt",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/alec-radford.png": {
+        "caption": {
+          "zh": "亚历克·拉德福德肖像",
+          "en": "Alec Radford portrait"
+        },
+        "subcaption": {
+          "zh": "GPT 主要作者",
+          "en": "GPT lead author"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg": {
+        "caption": {
+          "zh": "GPT 下一个令牌预训练",
+          "en": "GPT next-token pre-training"
+        },
+        "subcaption": {
+          "zh": "关于解码器式生成预训练的本地原创解释图。",
+          "en": "Original local explainer of decoder-only generative pre-training."
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "GPT 架构图",
+          "en": "GPT diagram"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "GPT 架构图",
+          "en": "GPT diagram"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2018-gpt/historical/2018-gpt_historical_01.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "GPT",
+          "en": "GPT"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2020-alphafold2",
@@ -40300,6 +57051,17 @@ const milestones = [
           "thumbnail": "",
           "source": "Web"
         }
+      ],
+      "archiveAssetIds": [
+        "asset-2020-alphafold-john-jumper-external",
+        "asset-2020-alphafold2-structure-pipeline",
+        "asset-2020-alphafold-architecture-01",
+        "asset-2020-alphafold-historical-01",
+        "asset-2020-alphafold-architecture-02",
+        "asset-2020-alphafold-historical-02",
+        "asset-2020-alphafold-papers-01",
+        "asset-2020-alphafold-people-01",
+        "asset-2020-alphafold-people-02"
       ]
     },
     "fusionCanonical": "2020-alphafold",
@@ -40487,6 +57249,106 @@ const milestones = [
             "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
+            "en": "Highly accurate protein structure prediction with AlphaFold"
+          },
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-deepmind-alphafold-page",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "DeepMind AlphaFold 页面",
+            "en": "DeepMind AlphaFold page"
+          },
+          "url": "https://deepmind.google/technologies/alphafold/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-alphafold-protein-structure-database",
+          "type": {
+            "zh": "数据集",
+            "en": "Dataset"
+          },
+          "label": {
+            "zh": "AlphaFold 蛋白质结构数据库",
+            "en": "AlphaFold Protein Structure Database"
+          },
+          "url": "https://alphafold.ebi.ac.uk/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-alphafold-github-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "AlphaFold GitHub 代码仓库",
+            "en": "AlphaFold GitHub repository"
+          },
+          "url": "https://github.com/google-deepmind/alphafold",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "source-deepmind-alphafold-page",
+        "source-alphafold-protein-structure-database",
+        "source-alphafold-github-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaFold2 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "AlphaFold2 is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-highly-accurate-protein-structure-prediction-with-alphafold",
+            "source-deepmind-alphafold-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
+            "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+          },
+          "sourceIds": [
+            "source-highly-accurate-protein-structure-prediction-with-alphafold",
+            "source-deepmind-alphafold-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -40570,7 +57432,199 @@ const milestones = [
           "ai-for-science"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2020-alphafold/event.json",
+      "variantFile": "archive/events/2020-alphafold/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2020-alphafold",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg": {
+        "caption": {
+          "zh": "John Jumper 外部参考图",
+          "en": "John Jumper external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-deepmind-alphafold-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg": {
+        "caption": {
+          "zh": "AlphaFold2 结构预测流程",
+          "en": "AlphaFold2 structure pipeline"
+        },
+        "subcaption": {
+          "zh": "关于从序列到结构预测的本地原创解释图。",
+          "en": "Original local explainer of sequence-to-structure prediction."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测 架构图",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
+        "caption": {
+          "zh": "结构示意",
+          "en": "Architecture"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测 架构图",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
+        "caption": {
+          "zh": "历史照片",
+          "en": "Historical photo"
+        },
+        "subcaption": {
+          "zh": "AlphaFold: 蛋白质结构预测",
+          "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
+        "caption": {
+          "zh": "论文页面",
+          "en": "Paper page"
+        },
+        "subcaption": {
+          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
+          "en": "Highly accurate protein structure prediction with AlphaFold"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
+        "caption": {
+          "zh": "人物肖像",
+          "en": "Portrait"
+        },
+        "subcaption": {
+          "zh": "相关研究者照片",
+          "en": "Relevant researcher photo"
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2021-clip",
@@ -40736,7 +57790,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-alec-radford",
+        "asset-2021-clip-contrastive-pairs"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -40922,6 +57980,106 @@ const milestones = [
             "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-learning-transferable-visual-models-from-natural-language-supervision",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《从自然语言监督中学习可迁移视觉模型》",
+            "en": "Learning Transferable Visual Models From Natural Language Supervision"
+          },
+          "url": "https://arxiv.org/abs/2103.00020",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-icml-clip-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICML CLIP 论文页面",
+            "en": "ICML CLIP paper page"
+          },
+          "url": "https://proceedings.mlr.press/v139/radford21a.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-openai-clip-blog-post",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "OpenAI CLIP 博客",
+            "en": "OpenAI CLIP blog post"
+          },
+          "url": "https://openai.com/index/clip/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-openai-clip-github-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "OpenAI CLIP 代码仓库",
+            "en": "OpenAI CLIP GitHub repository"
+          },
+          "url": "https://github.com/openai/CLIP",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-learning-transferable-visual-models-from-natural-language-supervision",
+        "source-icml-clip-paper-page",
+        "source-openai-clip-blog-post",
+        "source-openai-clip-github-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "CLIP 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "CLIP is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-learning-transferable-visual-models-from-natural-language-supervision",
+            "source-icml-clip-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。</p>",
+            "en": "<p>OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.</p>"
+          },
+          "sourceIds": [
+            "source-learning-transferable-visual-models-from-natural-language-supervision",
+            "source-icml-clip-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -41005,7 +58163,58 @@ const milestones = [
           "multimodal"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2021-clip/event.json",
+      "variantFile": "archive/events/ai100-2021-clip/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2021-clip",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/alec-radford.png": {
+        "caption": {
+          "zh": "亚历克·拉德福德肖像",
+          "en": "Alec Radford portrait"
+        },
+        "subcaption": {
+          "zh": "CLIP 主要作者",
+          "en": "CLIP lead author"
+        },
+        "sourceId": "source-learning-transferable-visual-models-from-natural-language-supervision",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "参考图片",
+            "en": "Reference image"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg": {
+        "caption": {
+          "zh": "CLIP 对比图文对",
+          "en": "CLIP contrastive pairs"
+        },
+        "subcaption": {
+          "zh": "关于图文对比学习的本地原创解释图。",
+          "en": "Original local explainer of image-text contrastive learning."
+        },
+        "sourceId": "source-learning-transferable-visual-models-from-natural-language-supervision",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2021-dalle",
@@ -41171,7 +58380,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2021-dalle-b0fdc3694e0d34821c1a35fbe494cb9c",
+        "asset-2021-dalle-text-to-image"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -41357,6 +58570,106 @@ const milestones = [
             "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-zero-shot-text-to-image-generation",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《零样本文本到图像生成》",
+            "en": "Zero-Shot Text-to-Image Generation"
+          },
+          "url": "https://arxiv.org/abs/2102.12092",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-icml-dall-e-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICML DALL-E 论文页面",
+            "en": "ICML DALL-E paper page"
+          },
+          "url": "https://proceedings.mlr.press/v139/ramesh21a.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-openai-dall-e-blog-post",
+          "type": {
+            "zh": "出版页",
+            "en": "Publication"
+          },
+          "label": {
+            "zh": "OpenAI DALL-E 博客",
+            "en": "OpenAI DALL-E blog post"
+          },
+          "url": "https://openai.com/index/dall-e/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-dall-e-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "DALL-E 概览",
+            "en": "DALL-E overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/DALL-E",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-zero-shot-text-to-image-generation",
+        "source-icml-dall-e-paper-page",
+        "source-openai-dall-e-blog-post",
+        "source-dall-e-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "DALL-E 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "DALL-E is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-zero-shot-text-to-image-generation",
+            "source-icml-dall-e-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>",
+            "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>"
+          },
+          "sourceIds": [
+            "source-zero-shot-text-to-image-generation",
+            "source-icml-dall-e-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -41440,7 +58753,59 @@ const milestones = [
           "text-to-image"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2021-dalle/event.json",
+      "variantFile": "archive/events/ai100-2021-dalle/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2021-dalle",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png": {
+        "caption": {
+          "zh": "DALL-E 外部参考图",
+          "en": "DALL-E external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-zero-shot-text-to-image-generation",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg": {
+        "caption": {
+          "zh": "DALL-E 文生图流程",
+          "en": "DALL-E text-to-image flow"
+        },
+        "subcaption": {
+          "zh": "关于提示词条件图像生成的本地原创解释图。",
+          "en": "Original local explainer of prompt-conditioned image generation."
+        },
+        "sourceId": "source-zero-shot-text-to-image-generation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2022-stable-diffusion",
@@ -41606,7 +58971,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2022-stable-diffusion-robin-update-5",
+        "asset-2022-stable-diffusion-latent-denoise"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -41796,6 +59165,106 @@ const milestones = [
             "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用潜扩散模型进行高分辨率图像合成》",
+            "en": "High-Resolution Image Synthesis with Latent Diffusion Models"
+          },
+          "url": "https://arxiv.org/abs/2112.10752",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvpr-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "CVPR 论文页面",
+            "en": "CVPR paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-compvis-latent-diffusion-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "CompVis 潜扩散代码仓库",
+            "en": "CompVis latent diffusion repository"
+          },
+          "url": "https://github.com/CompVis/latent-diffusion",
+          "reliability": "secondary",
+          "sourceType": "code"
+        },
+        {
+          "id": "source-stability-ai-stable-diffusion-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "Stability AI Stable Diffusion 页面",
+            "en": "Stability AI Stable Diffusion page"
+          },
+          "url": "https://stability.ai/stable-image",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+        "source-cvpr-paper-page",
+        "source-compvis-latent-diffusion-repository",
+        "source-stability-ai-stable-diffusion-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Stable Diffusion 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Stable Diffusion is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+            "source-cvpr-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。</p>",
+            "en": "<p>Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.</p>"
+          },
+          "sourceIds": [
+            "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+            "source-cvpr-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -41879,7 +59348,59 @@ const milestones = [
           "text-to-image"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2022-stable-diffusion/event.json",
+      "variantFile": "archive/events/ai100-2022-stable-diffusion/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2022-stable-diffusion",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg": {
+        "caption": {
+          "zh": "Stable Diffusion 外部参考图",
+          "en": "Stable Diffusion external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg": {
+        "caption": {
+          "zh": "潜扩散去噪",
+          "en": "Latent diffusion denoising"
+        },
+        "subcaption": {
+          "zh": "关于文本引导潜空间去噪的本地原创解释图。",
+          "en": "Original local explainer of text-guided latent denoising."
+        },
+        "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2023-segment-anything",
@@ -42045,7 +59566,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2023-segment-anything-alexander-kirillov",
+        "asset-2023-segment-anything-prompt-mask"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -42231,6 +59756,106 @@ const milestones = [
             "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-segment-anything",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Segment Anything》",
+            "en": "Segment Anything"
+          },
+          "url": "https://arxiv.org/abs/2304.02643",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iccv-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICCV 论文页面",
+            "en": "ICCV paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-segment-anything-project-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "Segment Anything 项目页面",
+            "en": "Segment Anything project page"
+          },
+          "url": "https://segment-anything.com/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-segment-anything-github-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "Segment Anything GitHub 代码仓库",
+            "en": "Segment Anything GitHub repository"
+          },
+          "url": "https://github.com/facebookresearch/segment-anything",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-segment-anything",
+        "source-iccv-paper-page",
+        "source-segment-anything-project-page",
+        "source-segment-anything-github-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Segment Anything 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Segment Anything is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-segment-anything",
+            "source-iccv-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。</p>",
+            "en": "<p>Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts.</p>"
+          },
+          "sourceIds": [
+            "source-segment-anything",
+            "source-iccv-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -42314,7 +59939,59 @@ const milestones = [
           "vision"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2023-segment-anything/event.json",
+      "variantFile": "archive/events/ai100-2023-segment-anything/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2023-segment-anything",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg": {
+        "caption": {
+          "zh": "Segment Anything 外部参考图",
+          "en": "Segment Anything external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-segment-anything",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg": {
+        "caption": {
+          "zh": "可提示分割流程",
+          "en": "Promptable segmentation flow"
+        },
+        "subcaption": {
+          "zh": "关于从提示到掩码分割的本地原创解释图。",
+          "en": "Original local explainer of prompt-to-mask segmentation."
+        },
+        "sourceId": "source-segment-anything",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2021-swin-transformer",
@@ -42480,7 +60157,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2021-swin-transformer-zeliu",
+        "asset-2021-swin-transformer-shifted-windows"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -42697,6 +60378,91 @@ const milestones = [
             "zh": "图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》",
+            "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows"
+          },
+          "url": "https://arxiv.org/abs/2103.14030",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iccv-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICCV 开放论文页面",
+            "en": "ICCV open-access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-microsoft-swin-transformer-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "Microsoft Swin Transformer 代码仓库",
+            "en": "Microsoft Swin Transformer repository"
+          },
+          "url": "https://github.com/microsoft/Swin-Transformer",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+        "source-iccv-open-access-paper-page",
+        "source-microsoft-swin-transformer-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Swin Transformer 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Swin Transformer is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+            "source-iccv-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>",
+            "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>"
+          },
+          "sourceIds": [
+            "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+            "source-iccv-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -42780,7 +60546,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2021-swin-transformer/event.json",
+      "variantFile": "archive/events/ai100-2021-swin-transformer/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2021-swin-transformer",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://zeliu98.github.io/images/zeliu.jpg": {
+        "caption": {
+          "zh": "Swin Transformer 外部参考图",
+          "en": "Swin Transformer external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://zeliu98.github.io/images/zeliu.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg": {
+        "caption": {
+          "zh": "Swin Transformer 解释图",
+          "en": "Swin Transformer explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2014-glove",
@@ -42946,7 +60764,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2014-glove-photo",
+        "asset-2014-glove-cooccurrence"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -43163,6 +60985,91 @@ const milestones = [
             "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-glove-global-vectors-for-word-representation",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《GloVe：用于词表示的全局向量》",
+            "en": "GloVe: Global Vectors for Word Representation"
+          },
+          "url": "https://aclanthology.org/D14-1162/",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-stanford-glove-project-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "斯坦福 GloVe 项目页面",
+            "en": "Stanford GloVe project page"
+          },
+          "url": "https://nlp.stanford.edu/projects/glove/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-acl-anthology-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "ACL Anthology 论文 PDF",
+            "en": "ACL Anthology PDF"
+          },
+          "url": "https://aclanthology.org/D14-1162.pdf",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-glove-global-vectors-for-word-representation",
+        "source-stanford-glove-project-page",
+        "source-acl-anthology-pdf"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "GloVe 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "GloVe is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-glove-global-vectors-for-word-representation",
+            "source-stanford-glove-project-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>",
+            "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>"
+          },
+          "sourceIds": [
+            "source-glove-global-vectors-for-word-representation",
+            "source-stanford-glove-project-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -43246,7 +61153,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2014-glove/event.json",
+      "variantFile": "archive/events/ai100-2014-glove/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2014-glove",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://nlp.stanford.edu/~jpennin/images/photo.jpeg": {
+        "caption": {
+          "zh": "GloVe 外部参考图",
+          "en": "GloVe external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-glove-global-vectors-for-word-representation",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg": {
+        "caption": {
+          "zh": "GloVe 解释图",
+          "en": "GloVe explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-glove-global-vectors-for-word-representation",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2014-conditional-gan",
@@ -43412,7 +61371,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2014-conditional-gan-flickportrait1",
+        "asset-2014-conditional-gan-conditioned-generator"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -43629,6 +61592,91 @@ const milestones = [
             "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-conditional-generative-adversarial-nets",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《条件生成对抗网络》",
+            "en": "Conditional Generative Adversarial Nets"
+          },
+          "url": "https://arxiv.org/abs/1411.1784",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-generative-adversarial-network-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "生成对抗网络概览",
+            "en": "Generative adversarial network overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-generative-adversarial-nets",
+          "type": {
+            "zh": "相关论文",
+            "en": "Related paper"
+          },
+          "label": {
+            "zh": "《生成对抗网络》",
+            "en": "Generative Adversarial Nets"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-conditional-generative-adversarial-nets",
+        "source-generative-adversarial-network-overview",
+        "source-generative-adversarial-nets"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Conditional GAN 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Conditional GAN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-conditional-generative-adversarial-nets",
+            "source-generative-adversarial-network-overview"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>",
+            "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>"
+          },
+          "sourceIds": [
+            "source-conditional-generative-adversarial-nets",
+            "source-generative-adversarial-network-overview"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -43712,7 +61760,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2014-conditional-gan/event.json",
+      "variantFile": "archive/events/ai100-2014-conditional-gan/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2014-conditional-gan",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg": {
+        "caption": {
+          "zh": "Conditional GAN 外部参考图",
+          "en": "Conditional GAN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-conditional-generative-adversarial-nets",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg": {
+        "caption": {
+          "zh": "Conditional GAN 解释图",
+          "en": "Conditional GAN explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-conditional-generative-adversarial-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2015-dcgan",
@@ -43878,7 +61978,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-alec-radford",
+        "asset-2015-dcgan-conv-generator"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -44095,6 +62199,91 @@ const milestones = [
             "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用深度卷积 GAN 进行无监督表示学习》",
+            "en": "Unsupervised Representation Learning with Deep Convolutional GANs"
+          },
+          "url": "https://arxiv.org/abs/1511.06434",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-pytorch-dcgan-tutorial",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "PyTorch DCGAN 教程",
+            "en": "PyTorch DCGAN tutorial"
+          },
+          "url": "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html",
+          "reliability": "secondary",
+          "sourceType": "code"
+        },
+        {
+          "id": "source-dcgan-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "DCGAN 概览",
+            "en": "DCGAN overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+        "source-pytorch-dcgan-tutorial",
+        "source-dcgan-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "DCGAN 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "DCGAN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+            "source-pytorch-dcgan-tutorial"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。</p>",
+            "en": "<p>DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.</p>"
+          },
+          "sourceIds": [
+            "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+            "source-pytorch-dcgan-tutorial"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -44178,7 +62367,58 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2015-dcgan/event.json",
+      "variantFile": "archive/events/ai100-2015-dcgan/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2015-dcgan",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/alec-radford.png": {
+        "caption": {
+          "zh": "亚历克·拉德福德肖像",
+          "en": "Alec Radford portrait"
+        },
+        "subcaption": {
+          "zh": "DCGAN 主要作者",
+          "en": "DCGAN lead author"
+        },
+        "sourceId": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地项目图片；复用权利沿用现有项目素材元数据。",
+            "en": "Local project image; reuse rights inherited from existing project asset metadata."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg": {
+        "caption": {
+          "zh": "DCGAN 解释图",
+          "en": "DCGAN explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2017-wasserstein-gan",
@@ -44344,7 +62584,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2017-wasserstein-gan-bottou-75",
+        "asset-2017-wasserstein-gan-critic-distance"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -44561,6 +62805,91 @@ const milestones = [
             "zh": "critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-wasserstein-generative-adversarial-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Wasserstein 生成对抗网络》",
+            "en": "Wasserstein Generative Adversarial Networks"
+          },
+          "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-improved-training-of-wasserstein-gans",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Wasserstein GAN 的改进训练》",
+            "en": "Improved Training of Wasserstein GANs"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-wasserstein-gan-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "Wasserstein GAN 概览",
+            "en": "Wasserstein GAN overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-wasserstein-generative-adversarial-networks",
+        "source-improved-training-of-wasserstein-gans",
+        "source-wasserstein-gan-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Wasserstein GAN 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Wasserstein GAN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-wasserstein-generative-adversarial-networks",
+            "source-improved-training-of-wasserstein-gans"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。</p>",
+            "en": "<p>Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.</p>"
+          },
+          "sourceIds": [
+            "source-wasserstein-generative-adversarial-networks",
+            "source-improved-training-of-wasserstein-gans"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -44644,7 +62973,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2017-wasserstein-gan/event.json",
+      "variantFile": "archive/events/ai100-2017-wasserstein-gan/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2017-wasserstein-gan",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://leon.bottou.org/_media/bottou_75.jpg": {
+        "caption": {
+          "zh": "Wasserstein GAN 外部参考图",
+          "en": "Wasserstein GAN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-wasserstein-generative-adversarial-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://leon.bottou.org/_media/bottou_75.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg": {
+        "caption": {
+          "zh": "Wasserstein GAN 解释图",
+          "en": "Wasserstein GAN explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-wasserstein-generative-adversarial-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2017-cyclegan",
@@ -44810,7 +63191,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2017-cyclegan-portrait3-lr",
+        "asset-2017-cyclegan-cycle-consistency"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -45027,6 +63412,91 @@ const milestones = [
             "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》",
+            "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"
+          },
+          "url": "https://arxiv.org/abs/1703.10593",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iccv-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICCV 开放论文页面",
+            "en": "ICCV open-access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cyclegan-project-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "CycleGAN 项目页面",
+            "en": "CycleGAN project page"
+          },
+          "url": "https://junyanz.github.io/CycleGAN/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+        "source-iccv-open-access-paper-page",
+        "source-cyclegan-project-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "CycleGAN 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "CycleGAN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+            "source-iccv-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>",
+            "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>"
+          },
+          "sourceIds": [
+            "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+            "source-iccv-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -45110,7 +63580,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2017-cyclegan/event.json",
+      "variantFile": "archive/events/ai100-2017-cyclegan/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2017-cyclegan",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg": {
+        "caption": {
+          "zh": "CycleGAN 外部参考图",
+          "en": "CycleGAN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg": {
+        "caption": {
+          "zh": "CycleGAN 解释图",
+          "en": "CycleGAN explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2017-pix2pix",
@@ -45276,7 +63798,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2017-pix2pix-photo-of-me-korea",
+        "asset-2017-pix2pix-paired-translation"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -45493,6 +64019,91 @@ const milestones = [
             "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-image-to-image-translation-with-conditional-adversarial-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用条件对抗网络进行图像到图像转换》",
+            "en": "Image-to-Image Translation with Conditional Adversarial Networks"
+          },
+          "url": "https://arxiv.org/abs/1611.07004",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvpr-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "CVPR 开放论文页面",
+            "en": "CVPR open-access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-pix2pix-project-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "Pix2Pix 项目页面",
+            "en": "Pix2Pix project page"
+          },
+          "url": "https://phillipi.github.io/pix2pix/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-image-to-image-translation-with-conditional-adversarial-networks",
+        "source-cvpr-open-access-paper-page",
+        "source-pix2pix-project-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Pix2Pix 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Pix2Pix is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-image-to-image-translation-with-conditional-adversarial-networks",
+            "source-cvpr-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>",
+            "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>"
+          },
+          "sourceIds": [
+            "source-image-to-image-translation-with-conditional-adversarial-networks",
+            "source-cvpr-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -45576,7 +64187,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2017-pix2pix/event.json",
+      "variantFile": "archive/events/ai100-2017-pix2pix/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2017-pix2pix",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg": {
+        "caption": {
+          "zh": "Pix2Pix 外部参考图",
+          "en": "Pix2Pix external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg": {
+        "caption": {
+          "zh": "Pix2Pix 解释图",
+          "en": "Pix2Pix explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2019-stylegan",
@@ -45742,7 +64405,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2019-stylegan-tero-karras",
+        "asset-2019-stylegan-style-modulation"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -45959,6 +64626,91 @@ const milestones = [
             "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-a-style-based-generator-architecture-for-gans",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《面向 GAN 的基于风格的生成器架构》",
+            "en": "A Style-Based Generator Architecture for GANs"
+          },
+          "url": "https://arxiv.org/abs/1812.04948",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cvpr-open-access-paper-page",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "CVPR 开放论文页面",
+            "en": "CVPR open-access paper page"
+          },
+          "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-nvidia-stylegan-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "NVIDIA StyleGAN 代码仓库",
+            "en": "NVIDIA StyleGAN repository"
+          },
+          "url": "https://github.com/NVlabs/stylegan",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-a-style-based-generator-architecture-for-gans",
+        "source-cvpr-open-access-paper-page",
+        "source-nvidia-stylegan-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "StyleGAN 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "StyleGAN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-style-based-generator-architecture-for-gans",
+            "source-cvpr-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>",
+            "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>"
+          },
+          "sourceIds": [
+            "source-a-style-based-generator-architecture-for-gans",
+            "source-cvpr-open-access-paper-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -46042,7 +64794,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2019-stylegan/event.json",
+      "variantFile": "archive/events/ai100-2019-stylegan/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2019-stylegan",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://research.nvidia.com/sites/default/files/person/tero-karras.png": {
+        "caption": {
+          "zh": "StyleGAN 外部参考图",
+          "en": "StyleGAN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-a-style-based-generator-architecture-for-gans",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg": {
+        "caption": {
+          "zh": "StyleGAN 解释图",
+          "en": "StyleGAN explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-a-style-based-generator-architecture-for-gans",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2013-variational-autoencoder",
@@ -46208,7 +65012,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2013-variational-autoencoder-portrait",
+        "asset-2013-vae-latent-sampling"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -46425,6 +65233,91 @@ const milestones = [
             "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-auto-encoding-variational-bayes",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《自动编码变分贝叶斯》",
+            "en": "Auto-Encoding Variational Bayes"
+          },
+          "url": "https://arxiv.org/abs/1312.6114",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-paper-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR 论文记录",
+            "en": "ICLR paper record"
+          },
+          "url": "https://openreview.net/forum?id=33X9fd2-9FyZd",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-variational-autoencoder-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "变分自编码器概览",
+            "en": "Variational autoencoder overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Variational_autoencoder",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-auto-encoding-variational-bayes",
+        "source-iclr-paper-record",
+        "source-variational-autoencoder-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "变分自编码器 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Variational Autoencoder is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-auto-encoding-variational-bayes",
+            "source-iclr-paper-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。</p>",
+            "en": "<p>The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.</p>"
+          },
+          "sourceIds": [
+            "source-auto-encoding-variational-bayes",
+            "source-iclr-paper-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -46508,7 +65401,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2013-variational-autoencoder/event.json",
+      "variantFile": "archive/events/ai100-2013-variational-autoencoder/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2013-variational-autoencoder",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://dpkingma.com/files/portrait.jpg": {
+        "caption": {
+          "zh": "变分自编码器 外部参考图",
+          "en": "Variational Autoencoder external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-auto-encoding-variational-bayes",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://dpkingma.com/files/portrait.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg": {
+        "caption": {
+          "zh": "变分自编码器 解释图",
+          "en": "Variational Autoencoder explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-auto-encoding-variational-bayes",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2015-diffusion-model",
@@ -46674,7 +65619,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2015-diffusion-model-jascha-profile",
+        "asset-2015-diffusion-forward-reverse"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -46891,6 +65840,91 @@ const milestones = [
             "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用非平衡热力学进行深度无监督学习》",
+            "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics"
+          },
+          "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-denoising-diffusion-probabilistic-models",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《去噪扩散概率模型》",
+            "en": "Denoising Diffusion Probabilistic Models"
+          },
+          "url": "https://arxiv.org/abs/2006.11239",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-diffusion-model-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "扩散模型概览",
+            "en": "Diffusion model overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Diffusion_model",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+        "source-denoising-diffusion-probabilistic-models",
+        "source-diffusion-model-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "扩散模型 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Diffusion Model is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+            "source-denoising-diffusion-probabilistic-models"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>",
+            "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>"
+          },
+          "sourceIds": [
+            "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+            "source-denoising-diffusion-probabilistic-models"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -46974,7 +66008,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2015-diffusion-model/event.json",
+      "variantFile": "archive/events/ai100-2015-diffusion-model/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2015-diffusion-model",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png": {
+        "caption": {
+          "zh": "扩散模型 外部参考图",
+          "en": "Diffusion Model external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg": {
+        "caption": {
+          "zh": "扩散模型 解释图",
+          "en": "Diffusion Model explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2005-gnn",
@@ -47140,7 +66226,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2005-gnn-citations",
+        "asset-2005-gnn-message-passing"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -47357,6 +66447,91 @@ const milestones = [
             "zh": "每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-the-graph-neural-network-model",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《图神经网络模型》",
+            "en": "The Graph Neural Network Model"
+          },
+          "url": "https://doi.org/10.1109/TNN.2008.2005605",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-a-new-model-for-learning-in-graph-domains",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《一种用于图领域学习的新模型》",
+            "en": "A new model for learning in graph domains"
+          },
+          "url": "https://ieeexplore.ieee.org/document/4700287",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-graph-neural-network-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "图神经网络概览",
+            "en": "Graph neural network overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Graph_neural_network",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-the-graph-neural-network-model",
+        "source-a-new-model-for-learning-in-graph-domains",
+        "source-graph-neural-network-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "图神经网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Graph Neural Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-the-graph-neural-network-model",
+            "source-a-new-model-for-learning-in-graph-domains"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>图神经网络把神经计算推广到包含节点、边和关系的数据。通过在图上反复传递消息，它们学习节点、边或整个结构的表示。</p>",
+            "en": "<p>Graph neural networks generalized neural computation to data with nodes, edges, and relations. By repeatedly passing messages over a graph, they learned representations for nodes, edges, or whole structures.</p>"
+          },
+          "sourceIds": [
+            "source-the-graph-neural-network-model",
+            "source-a-new-model-for-learning-in-graph-domains"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -47440,7 +66615,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2005-gnn/event.json",
+      "variantFile": "archive/events/ai100-2005-gnn/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2005-gnn",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2": {
+        "caption": {
+          "zh": "图神经网络 外部参考图",
+          "en": "Graph Neural Network external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-the-graph-neural-network-model",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg": {
+        "caption": {
+          "zh": "图神经网络 解释图",
+          "en": "Graph Neural Network explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-the-graph-neural-network-model",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2016-gcn",
@@ -47606,7 +66833,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2016-gcn-photo",
+        "asset-2016-gcn-spectral-convolution"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -47823,6 +67054,91 @@ const milestones = [
             "zh": "节点特征通过归一化图邻域进行聚合，并转换为类别预测。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-semi-supervised-classification-with-graph-convolutional-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用图卷积网络进行半监督分类》",
+            "en": "Semi-Supervised Classification with Graph Convolutional Networks"
+          },
+          "url": "https://arxiv.org/abs/1609.02907",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-openreview-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR OpenReview 记录",
+            "en": "ICLR OpenReview record"
+          },
+          "url": "https://openreview.net/forum?id=SJU4ayYgl",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-kipf-gcn-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "Kipf GCN 代码仓库",
+            "en": "Kipf GCN repository"
+          },
+          "url": "https://github.com/tkipf/gcn",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-semi-supervised-classification-with-graph-convolutional-networks",
+        "source-iclr-openreview-record",
+        "source-kipf-gcn-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "GCN 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "GCN is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-semi-supervised-classification-with-graph-convolutional-networks",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。</p>",
+            "en": "<p>GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.</p>"
+          },
+          "sourceIds": [
+            "source-semi-supervised-classification-with-graph-convolutional-networks",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -47906,7 +67222,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2016-gcn/event.json",
+      "variantFile": "archive/events/ai100-2016-gcn/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2016-gcn",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://tkipf.github.io/images/photo.jpg": {
+        "caption": {
+          "zh": "GCN 外部参考图",
+          "en": "GCN external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg": {
+        "caption": {
+          "zh": "GCN 解释图",
+          "en": "GCN explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2017-gat",
@@ -48072,7 +67440,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2017-gat-citations",
+        "asset-2017-gat-attention-neighbors"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -48299,6 +67671,91 @@ const milestones = [
             "zh": "节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-graph-attention-networks",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《图注意力网络》",
+            "en": "Graph Attention Networks"
+          },
+          "url": "https://arxiv.org/abs/1710.10903",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-openreview-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR OpenReview 记录",
+            "en": "ICLR OpenReview record"
+          },
+          "url": "https://openreview.net/forum?id=rJXMpikCZ",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-original-gat-repository",
+          "type": {
+            "zh": "代码",
+            "en": "Code"
+          },
+          "label": {
+            "zh": "原始 GAT 代码仓库",
+            "en": "Original GAT repository"
+          },
+          "url": "https://github.com/PetarV-/GAT",
+          "reliability": "secondary",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-graph-attention-networks",
+        "source-iclr-openreview-record",
+        "source-original-gat-repository"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "GAT 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "GAT is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-graph-attention-networks",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。</p>",
+            "en": "<p>GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.</p>"
+          },
+          "sourceIds": [
+            "source-graph-attention-networks",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -48382,7 +67839,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2017-gat/event.json",
+      "variantFile": "archive/events/ai100-2017-gat/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2017-gat",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1": {
+        "caption": {
+          "zh": "GAT 外部参考图",
+          "en": "GAT external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-graph-attention-networks",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg": {
+        "caption": {
+          "zh": "GAT 解释图",
+          "en": "GAT explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-graph-attention-networks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2016-nas",
@@ -48548,7 +68057,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2016-nas-headshot",
+        "asset-2016-nas-controller-search"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -48765,6 +68278,91 @@ const milestones = [
             "zh": "控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-neural-architecture-search-with-reinforcement-learning",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《基于强化学习的神经架构搜索》",
+            "en": "Neural Architecture Search with Reinforcement Learning"
+          },
+          "url": "https://arxiv.org/abs/1611.01578",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-openreview-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR OpenReview 记录",
+            "en": "ICLR OpenReview record"
+          },
+          "url": "https://openreview.net/forum?id=r1Ue8Hcxg",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-ai-automl-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "Google AI AutoML 概览",
+            "en": "Google AI AutoML overview"
+          },
+          "url": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-neural-architecture-search-with-reinforcement-learning",
+        "source-iclr-openreview-record",
+        "source-google-ai-automl-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "神经架构搜索 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Neural Architecture Search is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neural-architecture-search-with-reinforcement-learning",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。</p>",
+            "en": "<p>Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.</p>"
+          },
+          "sourceIds": [
+            "source-neural-architecture-search-with-reinforcement-learning",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -48848,7 +68446,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2016-nas/event.json",
+      "variantFile": "archive/events/ai100-2016-nas/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2016-nas",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://barretzoph.github.io/images/headshot.jpg": {
+        "caption": {
+          "zh": "神经架构搜索 外部参考图",
+          "en": "Neural Architecture Search external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-neural-architecture-search-with-reinforcement-learning",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg": {
+        "caption": {
+          "zh": "神经架构搜索 解释图",
+          "en": "Neural Architecture Search explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-neural-architecture-search-with-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2015-deep-compression",
@@ -49014,7 +68664,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan",
+        "asset-2015-deep-compression-prune-quantize-code"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -49241,6 +68895,91 @@ const milestones = [
             "zh": "训练好的网络被剪枝，再用共享量化权重重新训练，并编码到更小的内存和部署预算中。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-deep-compression",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《深度压缩》",
+            "en": "Deep Compression"
+          },
+          "url": "https://arxiv.org/abs/1510.00149",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-openreview-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR OpenReview 记录",
+            "en": "ICLR OpenReview record"
+          },
+          "url": "https://openreview.net/forum?id=n4Bp24yb5L",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-song-han-efficient-ai-research-page",
+          "type": {
+            "zh": "项目",
+            "en": "Project"
+          },
+          "label": {
+            "zh": "韩松实验室深度压缩项目页面",
+            "en": "Song Han efficient AI research page"
+          },
+          "url": "https://hanlab.mit.edu/projects/deep-compression",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-deep-compression",
+        "source-iclr-openreview-record",
+        "source-song-han-efficient-ai-research-page"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "深度压缩 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Deep Compression is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-deep-compression",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>",
+            "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>"
+          },
+          "sourceIds": [
+            "source-deep-compression",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -49324,7 +69063,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2015-deep-compression/event.json",
+      "variantFile": "archive/events/ai100-2015-deep-compression/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2015-deep-compression",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg": {
+        "caption": {
+          "zh": "深度压缩 外部参考图",
+          "en": "Deep Compression external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-deep-compression",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg": {
+        "caption": {
+          "zh": "深度压缩 解释图",
+          "en": "Deep Compression explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-deep-compression",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2015-knowledge-distillation",
@@ -49490,7 +69281,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-geoffrey-hinton",
+        "asset-2015-knowledge-distillation-teacher-student"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -49707,6 +69502,91 @@ const milestones = [
             "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-distilling-the-knowledge-in-a-neural-network",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《蒸馏神经网络中的知识》",
+            "en": "Distilling the Knowledge in a Neural Network"
+          },
+          "url": "https://arxiv.org/abs/1503.02531",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-knowledge-distillation-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "知识蒸馏概览",
+            "en": "Knowledge distillation overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-geoffrey-hinton-profile",
+          "type": {
+            "zh": "人物",
+            "en": "People"
+          },
+          "label": {
+            "zh": "杰弗里·辛顿资料",
+            "en": "Geoffrey Hinton profile"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-distilling-the-knowledge-in-a-neural-network",
+        "source-knowledge-distillation-overview",
+        "source-geoffrey-hinton-profile"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "知识蒸馏 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Knowledge Distillation is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-distilling-the-knowledge-in-a-neural-network",
+            "source-knowledge-distillation-overview"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>",
+            "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>"
+          },
+          "sourceIds": [
+            "source-distilling-the-knowledge-in-a-neural-network",
+            "source-knowledge-distillation-overview"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -49790,7 +69670,58 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2015-knowledge-distillation/event.json",
+      "variantFile": "archive/events/ai100-2015-knowledge-distillation/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2015-knowledge-distillation",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/figures/geoffrey-hinton.jpg": {
+        "caption": {
+          "zh": "杰弗里·辛顿肖像",
+          "en": "Geoffrey Hinton portrait"
+        },
+        "subcaption": {
+          "zh": "知识蒸馏共同作者",
+          "en": "Knowledge distillation co-author"
+        },
+        "sourceId": "source-distilling-the-knowledge-in-a-neural-network",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地项目图片；复用权利沿用现有项目素材元数据。",
+            "en": "Local project image; reuse rights inherited from existing project asset metadata."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg": {
+        "caption": {
+          "zh": "知识蒸馏 解释图",
+          "en": "Knowledge Distillation explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-distilling-the-knowledge-in-a-neural-network",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2014-ms-coco",
@@ -49956,7 +69887,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2014-ms-coco-tsungyi",
+        "asset-2014-ms-coco-context-dataset"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -50173,6 +70108,91 @@ const milestones = [
             "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-microsoft-coco-common-objects-in-context",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Microsoft COCO：上下文中的常见物体》",
+            "en": "Microsoft COCO: Common Objects in Context"
+          },
+          "url": "https://arxiv.org/abs/1405.0312",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-coco-dataset-website",
+          "type": {
+            "zh": "数据集",
+            "en": "Dataset"
+          },
+          "label": {
+            "zh": "COCO 数据集网站",
+            "en": "COCO dataset website"
+          },
+          "url": "https://cocodataset.org/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-eccv-springer-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ECCV Springer 记录",
+            "en": "ECCV Springer record"
+          },
+          "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-microsoft-coco-common-objects-in-context",
+        "source-coco-dataset-website",
+        "source-eccv-springer-record"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "MS COCO 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "MS COCO is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-microsoft-coco-common-objects-in-context",
+            "source-coco-dataset-website"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>",
+            "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>"
+          },
+          "sourceIds": [
+            "source-microsoft-coco-common-objects-in-context",
+            "source-coco-dataset-website"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -50256,7 +70276,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2014-ms-coco/event.json",
+      "variantFile": "archive/events/ai100-2014-ms-coco/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2014-ms-coco",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://tsungyilin.info/images/tsungyi.jpeg": {
+        "caption": {
+          "zh": "MS COCO 外部参考图",
+          "en": "MS COCO external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-microsoft-coco-common-objects-in-context",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://tsungyilin.info/images/tsungyi.jpeg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg": {
+        "caption": {
+          "zh": "MS COCO 解释图",
+          "en": "MS COCO explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-microsoft-coco-common-objects-in-context",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1989-q-learning",
@@ -50422,7 +70494,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1989-q-learning-citations",
+        "asset-1989-q-learning-bellman-update"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -50639,6 +70715,91 @@ const milestones = [
             "zh": "智能体观察奖励和下一个状态，然后把当前状态-动作价值朝 Bellman 目标更新。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-learning-from-delayed-rewards",
+          "type": {
+            "zh": "博士论文",
+            "en": "Thesis"
+          },
+          "label": {
+            "zh": "《从延迟奖励中学习》",
+            "en": "Learning from Delayed Rewards"
+          },
+          "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-q-learning",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Q-learning》",
+            "en": "Q-learning"
+          },
+          "url": "https://link.springer.com/article/10.1007/BF00992698",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-q-learning-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "Q-learning 概览",
+            "en": "Q-learning overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Q-learning",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-learning-from-delayed-rewards",
+        "source-q-learning",
+        "source-q-learning-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Q-Learning 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Q-Learning is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-learning-from-delayed-rewards",
+            "source-q-learning"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>",
+            "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>"
+          },
+          "sourceIds": [
+            "source-learning-from-delayed-rewards",
+            "source-q-learning"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -50722,7 +70883,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1989-q-learning/event.json",
+      "variantFile": "archive/events/ai100-1989-q-learning/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1989-q-learning",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1": {
+        "caption": {
+          "zh": "Q-Learning 外部参考图",
+          "en": "Q-Learning external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-learning-from-delayed-rewards",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg": {
+        "caption": {
+          "zh": "Q-Learning 解释图",
+          "en": "Q-Learning explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-learning-from-delayed-rewards",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-2015-ddpg",
@@ -50888,7 +71101,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-2015-ddpg-timothy-lillicrap-1",
+        "asset-2015-ddpg-actor-critic"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -51105,6 +71322,91 @@ const milestones = [
             "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-continuous-control-with-deep-reinforcement-learning",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用深度强化学习进行连续控制》",
+            "en": "Continuous Control with Deep Reinforcement Learning"
+          },
+          "url": "https://arxiv.org/abs/1509.02971",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-iclr-openreview-record",
+          "type": {
+            "zh": "会议论文",
+            "en": "Conference paper"
+          },
+          "label": {
+            "zh": "ICLR OpenReview 记录",
+            "en": "ICLR OpenReview record"
+          },
+          "url": "https://openreview.net/forum?id=Rx4nmj8j6G",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-deep-deterministic-policy-gradient-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "深度确定性策略梯度概览",
+            "en": "Deep deterministic policy gradient overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-continuous-control-with-deep-reinforcement-learning",
+        "source-iclr-openreview-record",
+        "source-deep-deterministic-policy-gradient-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "DDPG 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "DDPG is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-continuous-control-with-deep-reinforcement-learning",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
+            "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+          },
+          "sourceIds": [
+            "source-continuous-control-with-deep-reinforcement-learning",
+            "source-iclr-openreview-record"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -51188,7 +71490,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2015-ddpg/event.json",
+      "variantFile": "archive/events/ai100-2015-ddpg/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-2015-ddpg",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png": {
+        "caption": {
+          "zh": "DDPG 外部参考图",
+          "en": "DDPG external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg": {
+        "caption": {
+          "zh": "DDPG 解释图",
+          "en": "DDPG explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-ai100-1983-actor-critic",
@@ -51354,7 +71708,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-ai100-1983-actor-critic-barto-andrew-square",
+        "asset-1983-actor-critic-two-paths"
+      ]
     },
     "storyline": {
       "id": "bench-council-ai100",
@@ -51571,6 +71929,91 @@ const milestones = [
             "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。"
           }
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《能够解决困难学习控制问题的类神经自适应元件》",
+            "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems"
+          },
+          "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-reinforcement-learning-an-introduction",
+          "type": {
+            "zh": "书籍",
+            "en": "Book"
+          },
+          "label": {
+            "zh": "《强化学习导论》",
+            "en": "Reinforcement Learning: An Introduction"
+          },
+          "url": "http://incompleteideas.net/book/the-book-2nd.html",
+          "reliability": "reference-only",
+          "sourceType": "book"
+        },
+        {
+          "id": "source-actor-critic-model-overview",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "Actor-Critic 模型概览",
+            "en": "Actor-critic model overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Actor-critic_model",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+        "source-reinforcement-learning-an-introduction",
+        "source-actor-critic-model-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Actor-Critic 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Actor-Critic is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+            "source-reinforcement-learning-an-introduction"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>",
+            "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>"
+          },
+          "sourceIds": [
+            "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+            "source-reinforcement-learning-an-introduction"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -51654,7 +72097,59 @@ const milestones = [
           "ai100"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1983-actor-critic/event.json",
+      "variantFile": "archive/events/ai100-1983-actor-critic/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "ai100-1983-actor-critic",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM": {
+        "caption": {
+          "zh": "Actor-Critic 外部参考图",
+          "en": "Actor-Critic external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg": {
+        "caption": {
+          "zh": "Actor-Critic 解释图",
+          "en": "Actor-Critic explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "sourceId": "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-1951-strachey-draughts",
@@ -51860,7 +72355,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1951-strachey-draughts-program-external",
+        "asset-1951-strachey-draughts-checkers-board-external",
+        "asset-1951-strachey-draughts-board-search",
+        "asset-1951-strachey-draughts-program-flow"
+      ]
     },
     "storyline": {
       "id": "gaming-ai",
@@ -52071,7 +72572,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-logical-or-non-mathematical-programmes",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "逻辑或非数学程序",
+            "en": "Logical or non-mathematical programmes"
+          },
+          "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-computer-pioneers-christopher-strachey",
+          "type": {
+            "zh": "人物资料",
+            "en": "Biography"
+          },
+          "label": {
+            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
+            "en": "Computer Pioneers - Christopher Strachey"
+          },
+          "url": "https://history.computer.org/pioneers/strachey.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-strachey-draughts-program-screenshot",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "斯特雷奇 跳棋程序截图",
+            "en": "Strachey draughts program screenshot"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-checkers-board-photo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "跳棋棋盘照片",
+            "en": "Checkers board photo"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-logical-or-non-mathematical-programmes",
+        "source-computer-pioneers-christopher-strachey",
+        "source-strachey-draughts-program-screenshot",
+        "source-checkers-board-photo"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "克里斯托弗·斯特雷奇 的跳棋程序 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Christopher Strachey's Draughts is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-logical-or-non-mathematical-programmes",
+            "source-computer-pioneers-christopher-strachey"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
+            "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+          },
+          "sourceIds": [
+            "source-logical-or-non-mathematical-programmes",
+            "source-computer-pioneers-christopher-strachey"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1951-strachey-draughts-quiz-1",
@@ -52154,7 +72755,100 @@ const milestones = [
           "early-computing"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1951-strachey-draughts/event.json",
+      "variantFile": "archive/events/1951-strachey-draughts/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1951-strachey-draughts",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
+        "caption": {
+          "zh": "斯特雷奇跳棋程序外部参考图",
+          "en": "Strachey draughts program external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-strachey-draughts-program-screenshot",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+        "caption": {
+          "zh": "跳棋棋盘外部参考图",
+          "en": "Checkers board external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-checkers-board-photo",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
+        "caption": {
+          "zh": "跳棋棋盘搜索",
+          "en": "Draughts board search"
+        },
+        "subcaption": {
+          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+          "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "sourceId": "source-logical-or-non-mathematical-programmes",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg": {
+        "caption": {
+          "zh": "早期游戏程序流程",
+          "en": "Early game-program flow"
+        },
+        "subcaption": {
+          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+          "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "sourceId": "source-logical-or-non-mathematical-programmes",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-1988-td-update",
@@ -52331,7 +73025,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1988-td-update-richard-sutton",
+        "asset-1988-td-update-value-timeline",
+        "asset-1988-td-update-error-meter"
+      ]
     },
     "storyline": {
       "id": "gaming-ai",
@@ -52534,6 +73233,91 @@ const milestones = [
           },
           "url": "https://awards.acm.org/about/2024-turing"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Learning to Predict by the Methods of Temporal Differences",
+            "en": "Learning to Predict by the Methods of Temporal Differences"
+          },
+          "url": "https://doi.org/10.1007/BF00115009",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-richard-sutton-homepage",
+          "type": {
+            "zh": "个人主页",
+            "en": "Homepage"
+          },
+          "label": {
+            "zh": "理查德·萨顿 homepage",
+            "en": "Richard Sutton homepage"
+          },
+          "url": "http://incompleteideas.net/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-acm-2024-turing-award-announcement",
+          "type": {
+            "zh": "奖项资料",
+            "en": "Award"
+          },
+          "label": {
+            "zh": "ACM 2024 图灵 Award announcement",
+            "en": "ACM 2024 Turing Award announcement"
+          },
+          "url": "https://awards.acm.org/about/2024-turing",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "source-richard-sutton-homepage",
+        "source-acm-2024-turing-award-announcement"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "时序差分更新 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Temporal-Difference Update is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-learning-to-predict-by-the-methods-of-temporal-differences",
+            "source-richard-sutton-homepage"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
+            "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+          },
+          "sourceIds": [
+            "source-learning-to-predict-by-the-methods-of-temporal-differences",
+            "source-richard-sutton-homepage"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -52617,7 +73401,78 @@ const milestones = [
           "value"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1988-td-update/event.json",
+      "variantFile": "archive/events/1988-td-update/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1988-td-update",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
+        "caption": {
+          "zh": "理查德·萨顿 肖像",
+          "en": "Richard Sutton portrait"
+        },
+        "subcaption": {
+          "zh": "来自 Sutton 个人主页的人物图。",
+          "en": "Portrait from Sutton's personal homepage."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website image; reuse rights not stated.",
+            "en": "Personal website image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
+        "caption": {
+          "zh": "价值时间线更新",
+          "en": "Value timeline update"
+        },
+        "subcaption": {
+          "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg": {
+        "caption": {
+          "zh": "TD 误差仪表",
+          "en": "TD error meter"
+        },
+        "subcaption": {
+          "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-1994-chinook",
@@ -52820,7 +73675,13 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1994-chinook-jonathan-schaeffer-external",
+        "asset-1994-chinook-homepage",
+        "asset-1994-chinook-endgame-database",
+        "asset-1994-chinook-perfect-play"
+      ]
     },
     "storyline": {
       "id": "gaming-ai",
@@ -53031,7 +73892,107 @@ const milestones = [
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-      "demoPanel": "sources"
+      "demoPanel": "sources",
+      "archiveSources": [
+        {
+          "id": "source-chinook-project-home",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "Chinook 项目主页",
+            "en": "Chinook project home"
+          },
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "reliability": "primary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-checkers-is-solved",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "跳棋已被求解",
+            "en": "Checkers Is Solved"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.1144079",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-chinook-publications",
+          "type": {
+            "zh": "论文列表",
+            "en": "Publications"
+          },
+          "label": {
+            "zh": "Chinook 论文列表",
+            "en": "Chinook publications"
+          },
+          "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-jonathan-schaeffer-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "乔纳森·谢弗 人物照片",
+            "en": "Jonathan Schaeffer portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-chinook-project-home",
+        "source-checkers-is-solved",
+        "source-chinook-publications",
+        "source-jonathan-schaeffer-portrait"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Chinook 跳棋程序 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Chinook is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-chinook-project-home",
+            "source-checkers-is-solved"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
+            "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+          },
+          "sourceIds": [
+            "source-chinook-project-home",
+            "source-checkers-is-solved"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
     },
     "quiz": {
       "id": "1994-chinook-quiz-1",
@@ -53114,7 +74075,99 @@ const milestones = [
           "search"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1994-chinook/event.json",
+      "variantFile": "archive/events/1994-chinook/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1994-chinook",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
+        "caption": {
+          "zh": "乔纳森·谢弗外部参考图",
+          "en": "Jonathan Schaeffer external reference image"
+        },
+        "subcaption": {
+          "zh": "external-reference-image",
+          "en": "external-reference-image"
+        },
+        "sourceId": "source-jonathan-schaeffer-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
+        },
+        "role": "external-reference-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
+        "caption": {
+          "zh": "Chinook 官方项目页面",
+          "en": "Chinook official project page"
+        },
+        "subcaption": {
+          "zh": "引用来源页面截图：Chinook project home。",
+          "en": "Screenshot of the cited source page: Chinook project home."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+            "en": "Source page screenshot for citation preview; rights remain with the source site."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
+        "caption": {
+          "zh": "残局数据库表",
+          "en": "Endgame database table"
+        },
+        "subcaption": {
+          "zh": "依据 跳棋已被求解 制作的本地解释图。",
+          "en": "Original local explainer based on Checkers Is Solved."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg": {
+        "caption": {
+          "zh": "完美对弈证明路径",
+          "en": "Perfect-play proof path"
+        },
+        "subcaption": {
+          "zh": "依据 跳棋已被求解 制作的本地解释图。",
+          "en": "Original local explainer based on Checkers Is Solved."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-1997-logistello",
@@ -53267,7 +74320,10 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1997-logistello-pattern-eval"
+      ]
     },
     "quoteLabel": {
       "en": "Match record",
@@ -53527,6 +74583,106 @@ const milestones = [
           },
           "url": "https://skatgame.net/mburo/publications.html"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-logistello-homepage",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "Logistello 主页",
+            "en": "Logistello homepage"
+          },
+          "url": "https://skatgame.net/mburo/log.html",
+          "reliability": "primary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-murakami-vs-logistello",
+          "type": {
+            "zh": "对局报告",
+            "en": "Match report"
+          },
+          "label": {
+            "zh": "村上健对 Logistello",
+            "en": "Murakami vs. Logistello"
+          },
+          "url": "https://skatgame.net/mburo/event.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-statistical-feature-combination",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "统计特征组合论文",
+            "en": "Statistical Feature Combination"
+          },
+          "url": "https://arxiv.org/abs/cs/9512106",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-michael-buro-publications",
+          "type": {
+            "zh": "论文列表",
+            "en": "Publication list"
+          },
+          "label": {
+            "zh": "迈克尔·布罗论文列表",
+            "en": "Michael Buro publications"
+          },
+          "url": "https://skatgame.net/mburo/publications.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-logistello-homepage",
+        "source-murakami-vs-logistello",
+        "source-statistical-feature-combination",
+        "source-michael-buro-publications"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Logistello：黑白棋评估函数学习 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Logistello: Learning Evaluation for Othello is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-logistello-homepage",
+            "source-murakami-vs-logistello"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Logistello 在 1997 年黑白棋对局中以 6 比 0 击败世界冠军村上健。Michael Buro 将选择性博弈树搜索、基于棋盘模式的评估、统计特征学习、开局库学习和强残局求解结合起来，说明学习得到的评估函数可以在紧凑棋盘游戏中超过手工启发式规则。</p>",
+            "en": "<p>Logistello defeated world champion Takeshi Murakami 6-0 in a 1997 Othello match. Michael Buro combined selective game-tree search, pattern-based evaluation, statistical feature learning, opening-book learning, and strong endgame solving, showing that learned evaluation could outperform hand-crafted heuristics in a compact board game.</p>"
+          },
+          "sourceIds": [
+            "source-logistello-homepage",
+            "source-murakami-vs-logistello"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -53610,7 +74766,38 @@ const milestones = [
           "1997-logistello"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1997-logistello/event.json",
+      "variantFile": "archive/events/1997-logistello/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1997-logistello",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
+        "caption": {
+          "zh": "Logistello 模式评估",
+          "en": "Logistello pattern evaluation"
+        },
+        "subcaption": {
+          "zh": "学习型黑白棋评估的原创解释图。",
+          "en": "Original explainer for learned Othello evaluation."
+        },
+        "sourceId": "source-logistello-homepage",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-1997-deep-blue",
@@ -53796,7 +74983,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-1997-deep-blue-murray-campbell",
+        "asset-1997-deep-blue-search-tree",
+        "asset-1997-deep-blue-chip-board"
+      ]
     },
     "storyline": {
       "id": "gaming-ai",
@@ -54002,6 +75194,91 @@ const milestones = [
           },
           "url": "https://www.ibm.com/history/deep-blue"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-murray-campbell-ibm-research",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "默里·坎贝尔, IBM 研究院",
+            "en": "Murray Campbell, IBM Research"
+          },
+          "url": "https://research.ibm.com/people/murray-campbell",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-mastering-the-game-computer-history-museum",
+          "type": {
+            "zh": "博物馆",
+            "en": "Museum"
+          },
+          "label": {
+            "zh": "Mastering the Game, Computer History Museum",
+            "en": "Mastering the Game, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-ibm100-deep-blue",
+          "type": {
+            "zh": "官方历史资料",
+            "en": "Official history"
+          },
+          "label": {
+            "zh": "IBM100: 深蓝",
+            "en": "IBM100: Deep Blue"
+          },
+          "url": "https://www.ibm.com/history/deep-blue",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-murray-campbell-ibm-research",
+        "source-mastering-the-game-computer-history-museum",
+        "source-ibm100-deep-blue"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "深蓝 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Deep Blue is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-murray-campbell-ibm-research",
+            "source-mastering-the-game-computer-history-museum"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
+            "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+          },
+          "sourceIds": [
+            "source-murray-campbell-ibm-research",
+            "source-mastering-the-game-computer-history-museum"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -54085,7 +75362,78 @@ const milestones = [
           "search"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/1997-deep-blue/event.json",
+      "variantFile": "archive/events/1997-deep-blue/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "1997-deep-blue",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+        "caption": {
+          "zh": "默里·坎贝尔 肖像",
+          "en": "Murray Campbell portrait"
+        },
+        "subcaption": {
+          "zh": "来自 IBM 研究院 人物资料页的人物图。",
+          "en": "Portrait from IBM Research profile."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "IBM 研究院 profile image; reuse rights not stated.",
+            "en": "IBM Research profile image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
+        "caption": {
+          "zh": "国际象棋搜索树",
+          "en": "Chess search tree"
+        },
+        "subcaption": {
+          "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Blue, based on the listed source material."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
+        "caption": {
+          "zh": "硬件辅助棋盘评估",
+          "en": "Hardware-assisted board evaluation"
+        },
+        "subcaption": {
+          "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Blue, based on the listed source material."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2000s-alphacat",
@@ -54238,7 +75586,10 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2000s-alphacat-xiangqi-search"
+      ]
     },
     "quoteLabel": {
       "en": "Tournament archive",
@@ -54471,6 +75822,91 @@ const milestones = [
           },
           "url": "https://en.wikipedia.org/wiki/Xiangqi"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-icga-chinese-chess-page",
+          "type": {
+            "zh": "赛事档案",
+            "en": "Tournament archive"
+          },
+          "label": {
+            "zh": "ICGA 中国象棋页面",
+            "en": "ICGA Chinese Chess page"
+          },
+          "url": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+          "reliability": "reference-only",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-comparison-training-for-computer-chinese-chess",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "面向计算机中国象棋的比较训练",
+            "en": "Comparison Training for Computer Chinese Chess"
+          },
+          "url": "https://arxiv.org/abs/1801.07411",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-xiangqi-overview",
+          "type": {
+            "zh": "规则与背景",
+            "en": "Game rules / background"
+          },
+          "label": {
+            "zh": "中国象棋概览",
+            "en": "Xiangqi overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Xiangqi",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-icga-chinese-chess-page",
+        "source-comparison-training-for-computer-chinese-chess",
+        "source-xiangqi-overview"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "中国象棋引擎与 AlphaCat 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Chinese Chess Engines and AlphaCat is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-icga-chinese-chess-page",
+            "source-comparison-training-for-computer-chinese-chess"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
+            "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+          },
+          "sourceIds": [
+            "source-icga-chinese-chess-page",
+            "source-comparison-training-for-computer-chinese-chess"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -54554,7 +75990,38 @@ const milestones = [
           "2000s-alphacat"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2000s-alphacat/event.json",
+      "variantFile": "archive/events/2000s-alphacat/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2000s-alphacat",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg": {
+        "caption": {
+          "zh": "中国象棋搜索几何",
+          "en": "Chinese chess search geometry"
+        },
+        "subcaption": {
+          "zh": "中国象棋引擎约束的原创解释图。",
+          "en": "Original explainer for xiangqi engine constraints."
+        },
+        "sourceId": "source-icga-chinese-chess-page",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2013-dqn",
@@ -54747,7 +76214,12 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2013-dqn-volodymyr-mnih",
+        "asset-2013-dqn-replay-buffer",
+        "asset-2013-dqn-q-control"
+      ]
     },
     "storyline": {
       "id": "gaming-ai",
@@ -54957,6 +76429,91 @@ const milestones = [
           "en": "Q-value",
           "zh": "Q 值"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-playing-atari-with-deep-reinforcement-learning",
+          "type": {
+            "zh": "预印本",
+            "en": "Preprint"
+          },
+          "label": {
+            "zh": "用深度强化学习玩 Atari",
+            "en": "Playing Atari with Deep Reinforcement Learning"
+          },
+          "url": "https://arxiv.org/abs/1312.5602",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-human-level-control-through-deep-reinforcement-learning",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Human-level control through deep reinforcement learning",
+            "en": "Human-level control through deep reinforcement learning"
+          },
+          "url": "https://www.nature.com/articles/nature14236",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-google-deepmind-deep-reinforcement-learning",
+          "type": {
+            "zh": "项目说明",
+            "en": "Project note"
+          },
+          "label": {
+            "zh": "谷歌 DeepMind: Deep Reinforcement Learning",
+            "en": "Google DeepMind: Deep Reinforcement Learning"
+          },
+          "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-playing-atari-with-deep-reinforcement-learning",
+        "source-human-level-control-through-deep-reinforcement-learning",
+        "source-google-deepmind-deep-reinforcement-learning"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "深度 Q 网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Deep Q Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-playing-atari-with-deep-reinforcement-learning",
+            "source-human-level-control-through-deep-reinforcement-learning"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
+            "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+          },
+          "sourceIds": [
+            "source-playing-atari-with-deep-reinforcement-learning",
+            "source-human-level-control-through-deep-reinforcement-learning"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -55040,7 +76597,78 @@ const milestones = [
           "deep-learning"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2013-dqn/event.json",
+      "variantFile": "archive/events/2013-dqn/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2013-dqn",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
+        "caption": {
+          "zh": "沃洛迪米尔·姆尼赫 肖像",
+          "en": "Volodymyr Mnih portrait"
+        },
+        "subcaption": {
+          "zh": "来自 Mnih 多伦多大学托管个人页的人物图。",
+          "en": "Portrait from Mnih’s University of Toronto-hosted personal page."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website photo; rights not stated.",
+            "en": "Personal website photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
+        "caption": {
+          "zh": "经验回放池",
+          "en": "Replay buffer"
+        },
+        "subcaption": {
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
+        "caption": {
+          "zh": "Q 值控制循环",
+          "en": "Q-value control loop"
+        },
+        "subcaption": {
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2016-alphago",
@@ -55222,7 +76850,11 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-alphago-lee-sedol",
+        "asset-alphago-policy-value-search"
+      ]
     },
     "storyline": {
       "id": "gaming-ai",
@@ -55392,6 +77024,105 @@ const milestones = [
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-alphago-nature-paper",
+          "type": {
+            "zh": "paper",
+            "en": "paper"
+          },
+          "label": {
+            "zh": "Mastering the game of Go with deep neural networks and tree search",
+            "en": "Mastering the game of Go with deep neural networks and tree search"
+          },
+          "url": "https://www.nature.com/articles/nature16961",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-deepmind-alphago-page",
+          "type": {
+            "zh": "official-page",
+            "en": "official-page"
+          },
+          "label": {
+            "zh": "Google DeepMind AlphaGo",
+            "en": "Google DeepMind AlphaGo"
+          },
+          "url": "https://deepmind.google/research/alphago/",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-katago-analysis-engine",
+          "type": {
+            "zh": "code",
+            "en": "code"
+          },
+          "label": {
+            "zh": "KataGo Analysis Engine",
+            "en": "KataGo Analysis Engine"
+          },
+          "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+          "reliability": "reference-only",
+          "sourceType": "code"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-alphago-nature-paper",
+        "source-deepmind-alphago-page",
+        "source-katago-analysis-engine"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-hybrid-policy-value-search",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaGo 结合了策略网络、价值网络和蒙特卡洛树搜索。",
+            "en": "AlphaGo combined policy networks, value networks, and Monte Carlo tree search."
+          },
+          "sourceIds": [
+            "source-alphago-nature-paper"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-lee-sedol-match",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaGo 在 2016 年与李世石的五番棋中获胜。",
+            "en": "AlphaGo won the five-game match against Lee Sedol in 2016."
+          },
+          "sourceIds": [
+            "source-deepmind-alphago-page"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-self-play-legacy",
+          "importance": "context",
+          "text": {
+            "zh": "AlphaGo 的神经搜索和自我对弈路线影响了后续 AlphaGo Zero、AlphaZero 和 MuZero 等系统。",
+            "en": "AlphaGo’s neural search and self-play pattern influenced later systems such as AlphaGo Zero, AlphaZero, and MuZero."
+          },
+          "sourceIds": [
+            "source-deepmind-alphago-page",
+            "source-alphago-nature-paper"
+          ],
+          "status": "verified"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-hybrid-policy-value-search",
+        "claim-lee-sedol-match",
+        "claim-self-play-legacy"
+      ],
+      "archiveEmphasis": [
+        "game-ai-lineage",
+        "search",
+        "self-play",
+        "game-record-evolution"
       ]
     },
     "quiz": {
@@ -55475,7 +77206,58 @@ const milestones = [
           "search"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2016-alphago/event.json",
+      "variantFile": "archive/events/2016-alphago/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2016-alphago",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
+        "caption": {
+          "zh": "AlphaGo 与李世石比赛资料图",
+          "en": "AlphaGo and Lee Sedol match reference image"
+        },
+        "subcaption": {
+          "zh": "team-photo",
+          "en": "team-photo"
+        },
+        "sourceId": "source-deepmind-alphago-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep source attribution."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
+      "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
+        "caption": {
+          "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
+          "en": "AlphaGo policy, value, and search workflow explainer"
+        },
+        "subcaption": {
+          "zh": "architecture-explainer",
+          "en": "architecture-explainer"
+        },
+        "sourceId": "source-alphago-nature-paper",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2017-alphazero",
@@ -55628,7 +77410,10 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2017-alphazero-self-play-loop"
+      ]
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -55910,6 +77695,91 @@ const milestones = [
           },
           "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-science-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Science 论文",
+            "en": "Science paper"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.aar6404",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-arxiv-preprint",
+          "type": {
+            "zh": "预印本",
+            "en": "Preprint"
+          },
+          "label": {
+            "zh": "arXiv 预印本",
+            "en": "arXiv preprint"
+          },
+          "url": "https://arxiv.org/abs/1712.01815",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-deepmind-alphazero-blog",
+          "type": {
+            "zh": "博客",
+            "en": "Blog"
+          },
+          "label": {
+            "zh": "DeepMind AlphaZero 博客",
+            "en": "DeepMind AlphaZero blog"
+          },
+          "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-science-paper",
+        "source-arxiv-preprint",
+        "source-deepmind-alphazero-blog"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaZero 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "AlphaZero is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-science-paper",
+            "source-arxiv-preprint"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>",
+            "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>"
+          },
+          "sourceIds": [
+            "source-science-paper",
+            "source-arxiv-preprint"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -55993,7 +77863,38 @@ const milestones = [
           "2017-alphazero"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2017-alphazero/event.json",
+      "variantFile": "archive/events/2017-alphazero/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2017-alphazero",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
+        "caption": {
+          "zh": "AlphaZero 自我博弈循环",
+          "en": "AlphaZero self-play loop"
+        },
+        "subcaption": {
+          "zh": "策略-价值自我博弈的原创解释图。",
+          "en": "Original explainer for policy-value self-play."
+        },
+        "sourceId": "source-science-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2017-libratus",
@@ -56146,7 +78047,10 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2017-libratus-cfr-solving"
+      ]
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -56408,6 +78312,91 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1705.02955"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-science-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Science 论文",
+            "en": "Science paper"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.aao1733",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-cmu-libratus-release",
+          "type": {
+            "zh": "新闻报道",
+            "en": "News report"
+          },
+          "label": {
+            "zh": "CMU Libratus 新闻稿",
+            "en": "CMU Libratus release"
+          },
+          "url": "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-safe-and-nested-subgame-solving",
+          "type": {
+            "zh": "预印本",
+            "en": "Preprint"
+          },
+          "label": {
+            "zh": "安全嵌套子局求解论文",
+            "en": "Safe and Nested Subgame Solving"
+          },
+          "url": "https://arxiv.org/abs/1705.02955",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-science-paper",
+        "source-cmu-libratus-release",
+        "source-safe-and-nested-subgame-solving"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Libratus 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Libratus is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-science-paper",
+            "source-cmu-libratus-release"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>",
+            "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day of play, proving that game AI could move beyond perfect-information boards.</p>"
+          },
+          "sourceIds": [
+            "source-science-paper",
+            "source-cmu-libratus-release"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -56491,7 +78480,38 @@ const milestones = [
           "2017-libratus"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2017-libratus/event.json",
+      "variantFile": "archive/events/2017-libratus/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2017-libratus",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg": {
+        "caption": {
+          "zh": "Libratus 子局求解",
+          "en": "Libratus subgame solving"
+        },
+        "subcaption": {
+          "zh": "不完全信息扑克搜索的原创解释图。",
+          "en": "Original explainer for imperfect-information poker search."
+        },
+        "sourceId": "source-science-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2019-pluribus",
@@ -56644,7 +78664,10 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2019-pluribus-blueprint-search"
+      ]
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -56906,6 +78929,91 @@ const milestones = [
           },
           "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-science-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Science 论文",
+            "en": "Science paper"
+          },
+          "url": "https://www.science.org/doi/10.1126/science.aay2400",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-meta-ai-pluribus-report",
+          "type": {
+            "zh": "新闻报道",
+            "en": "News report"
+          },
+          "label": {
+            "zh": "Meta AI Pluribus 报道",
+            "en": "Meta AI Pluribus report"
+          },
+          "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-cmu-pluribus-release",
+          "type": {
+            "zh": "新闻报道",
+            "en": "News report"
+          },
+          "label": {
+            "zh": "CMU Pluribus 新闻稿",
+            "en": "CMU Pluribus release"
+          },
+          "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-science-paper",
+        "source-meta-ai-pluribus-report",
+        "source-cmu-pluribus-release"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Pluribus 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Pluribus is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-science-paper",
+            "source-meta-ai-pluribus-report"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它使用紧凑蓝图策略与有限前瞻搜索，同时处理多个对手，把游戏 AI 推向无法只靠单一对手模型的多人场景。</p>",
+            "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used a compact blueprint strategy plus limited-lookahead search to handle several opponents at once, moving game AI toward multiplayer settings where no single opponent model is enough.</p>"
+          },
+          "sourceIds": [
+            "source-science-paper",
+            "source-meta-ai-pluribus-report"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -56989,7 +79097,38 @@ const milestones = [
           "2019-pluribus"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2019-pluribus/event.json",
+      "variantFile": "archive/events/2019-pluribus/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2019-pluribus",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg": {
+        "caption": {
+          "zh": "Pluribus 蓝图搜索",
+          "en": "Pluribus blueprint search"
+        },
+        "subcaption": {
+          "zh": "多人扑克推理的原创解释图。",
+          "en": "Original explainer for multiplayer poker reasoning."
+        },
+        "sourceId": "source-science-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2019-suphx",
@@ -57155,7 +79294,10 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2019-suphx-mahjong-policy"
+      ]
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -57388,6 +79530,91 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1906.02146"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-suphx-arxiv-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Suphx arXiv 论文",
+            "en": "Suphx arXiv paper"
+          },
+          "url": "https://arxiv.org/abs/2003.13590",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-arxiv-doi-page",
+          "type": {
+            "zh": "DOI",
+            "en": "DOI"
+          },
+          "label": {
+            "zh": "arXiv DOI 页面",
+            "en": "arXiv DOI page"
+          },
+          "url": "https://doi.org/10.48550/arXiv.2003.13590",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-building-a-computer-mahjong-player-via-deep-cnns",
+          "type": {
+            "zh": "背景论文",
+            "en": "Background paper"
+          },
+          "label": {
+            "zh": "用深度卷积网络构建麻将程序",
+            "en": "Building a Computer Mahjong Player via Deep CNNs"
+          },
+          "url": "https://arxiv.org/abs/1906.02146",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-suphx-arxiv-paper",
+        "source-arxiv-doi-page",
+        "source-building-a-computer-mahjong-player-via-deep-cnns"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Suphx：深度强化学习麻将 AI 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Suphx: Mahjong with Deep Reinforcement Learning is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-suphx-arxiv-paper",
+            "source-arxiv-doi-page"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Suphx 将深度强化学习带入日本麻将，这是一种四人不完全信息游戏，包含隐藏牌、随机摸牌、复杂计分和长期风险权衡。它使用监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配，在天凤平台达到超过绝大多数注册段位玩家的水平。</p>",
+            "en": "<p>Suphx brought deep reinforcement learning to Japanese mahjong, a four-player imperfect-information game with hidden tiles, stochastic draws, complex scoring, and long-horizon risk tradeoffs. It used supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation to reach a level above most ranked Tenhou players.</p>"
+          },
+          "sourceIds": [
+            "source-suphx-arxiv-paper",
+            "source-arxiv-doi-page"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -57471,7 +79698,38 @@ const milestones = [
           "2019-suphx"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2019-suphx/event.json",
+      "variantFile": "archive/events/2019-suphx/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2019-suphx",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg": {
+        "caption": {
+          "zh": "Suphx 麻将策略循环",
+          "en": "Suphx mahjong policy loop"
+        },
+        "subcaption": {
+          "zh": "隐藏信息麻将 AI 的原创解释图。",
+          "en": "Original explainer for hidden-information mahjong AI."
+        },
+        "sourceId": "source-suphx-arxiv-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   },
   {
     "id": "milestone-gaming-ai-2019-muzero",
@@ -57624,7 +79882,10 @@ const milestones = [
           }
         }
       },
-      "videos": []
+      "videos": [],
+      "archiveAssetIds": [
+        "asset-2019-muzero-learned-model"
+      ]
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -57906,6 +80167,91 @@ const milestones = [
           },
           "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
         }
+      ],
+      "archiveSources": [
+        {
+          "id": "source-nature-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "Nature 论文",
+            "en": "Nature paper"
+          },
+          "url": "https://www.nature.com/articles/s41586-020-03051-4",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-arxiv-preprint",
+          "type": {
+            "zh": "预印本",
+            "en": "Preprint"
+          },
+          "label": {
+            "zh": "arXiv 预印本",
+            "en": "arXiv preprint"
+          },
+          "url": "https://arxiv.org/abs/1911.08265",
+          "reliability": "reference-only",
+          "sourceType": "reference-only"
+        },
+        {
+          "id": "source-deepmind-muzero-blog",
+          "type": {
+            "zh": "博客",
+            "en": "Blog"
+          },
+          "label": {
+            "zh": "DeepMind MuZero 博客",
+            "en": "DeepMind MuZero blog"
+          },
+          "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        }
+      ],
+      "archiveSourceIds": [
+        "source-nature-paper",
+        "source-arxiv-preprint",
+        "source-deepmind-muzero-blog"
+      ],
+      "archiveClaims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "MuZero 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "MuZero is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-nature-paper",
+            "source-arxiv-preprint"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>",
+            "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>"
+          },
+          "sourceIds": [
+            "source-nature-paper",
+            "source-arxiv-preprint"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "archiveClaimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "archiveEmphasis": [
+        "batch-migration",
+        "source-review-needed"
       ]
     },
     "quiz": {
@@ -57989,7 +80335,38 @@ const milestones = [
           "2019-muzero"
         ]
       }
-    ]
+    ],
+    "archive": {
+      "eventFile": "archive/events/2019-muzero/event.json",
+      "variantFile": "archive/events/2019-muzero/variants/gaming-ai.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "archiveEventId": "2019-muzero",
+    "archiveVariantId": "gaming-ai",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive+legacy",
+    "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
+        "caption": {
+          "zh": "MuZero 学习模型",
+          "en": "MuZero learned model"
+        },
+        "subcaption": {
+          "zh": "潜在模型规划的原创解释图。",
+          "en": "Original explainer for latent-model planning."
+        },
+        "sourceId": "source-nature-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    }
   }
 ];
 
