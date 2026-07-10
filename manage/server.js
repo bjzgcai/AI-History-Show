@@ -34,6 +34,11 @@ const {
 } = require('../shared/utils.js');
 const localizedText = getLocalizedText;
 const BACKUP_DIR = path.join(MANAGE, '.backups');
+const ARCHIVE_DIR = path.join(ROOT, 'archive');
+const ARCHIVE_EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
+const ARCHIVE_STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
+const ARCHIVE_SCHEMA_DIR = path.join(ARCHIVE_DIR, 'schemas');
+const ARCHIVE_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 
 // ─── MIME 类型 ────────────────────────────────────────────────────────────────
 
@@ -578,6 +583,113 @@ function atomicWrite(filePath, content) {
   fs.renameSync(tmp, filePath);
 }
 
+function readJsonFile(filePath, fallback = null) {
+  if (!fs.existsSync(filePath)) return fallback;
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function writeJsonFile(filePath, value) {
+  mkdirp(path.dirname(filePath));
+  if (fs.existsSync(filePath)) backupFile(filePath);
+  atomicWrite(filePath, `${JSON.stringify(value, null, 2)}\n`);
+}
+
+function safeArchiveEventId(eventId) {
+  const value = String(eventId || '').trim();
+  if (!value || /[^A-Za-z0-9_.-]/.test(value) || value.includes('..')) {
+    throw new Error('非法 archive eventId');
+  }
+  return value;
+}
+
+function listArchiveEventIds() {
+  if (!fs.existsSync(ARCHIVE_EVENTS_DIR)) return [];
+  return fs
+    .readdirSync(ARCHIVE_EVENTS_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort();
+}
+
+function archiveStorylineEventSet(storylineId) {
+  const file = path.join(ARCHIVE_STORYLINES_DIR, `${storylineId}.json`);
+  const data = readJsonFile(file, { events: [] });
+  return new Set((data.events || []).map((item) => (typeof item === 'string' ? item : item.eventId)).filter(Boolean));
+}
+
+function loadArchiveEventBundle(eventId) {
+  const id = safeArchiveEventId(eventId);
+  const eventDir = path.join(ARCHIVE_EVENTS_DIR, id);
+  if (!fs.existsSync(eventDir)) throw new Error(`archive event 不存在：${id}`);
+  const variantsDir = path.join(eventDir, 'variants');
+  const variantFiles = fs.existsSync(variantsDir)
+    ? fs.readdirSync(variantsDir).filter((file) => file.endsWith('.json')).sort()
+    : [];
+  return {
+    eventId: id,
+    files: Object.fromEntries(ARCHIVE_EVENT_FILES.map((file) => [file, readJsonFile(path.join(eventDir, file), file.endsWith('event.json') ? {} : [])])),
+    variants: Object.fromEntries(variantFiles.map((file) => [file, readJsonFile(path.join(variantsDir, file), {})])),
+  };
+}
+
+function archiveEventSummary(eventId, ai100Events) {
+  const bundle = loadArchiveEventBundle(eventId);
+  const event = bundle.files['event.json'] || {};
+  const sources = bundle.files['sources.json'] || [];
+  const claims = bundle.files['claims.json'] || [];
+  const assets = bundle.files['assets.json'] || [];
+  const quizzes = bundle.files['quizzes.json'] || [];
+  return {
+    eventId,
+    year: event.year || '',
+    title: event.title || eventId,
+    isAi100: ai100Events.has(eventId),
+    sourceCount: Array.isArray(sources) ? sources.length : 0,
+    claimCount: Array.isArray(claims) ? claims.length : 0,
+    assetCount: Array.isArray(assets) ? assets.length : 0,
+    quizCount: Array.isArray(quizzes) ? quizzes.length : 0,
+    variantCount: Object.keys(bundle.variants || {}).length,
+  };
+}
+
+function saveArchiveEventBundle(body) {
+  const eventId = safeArchiveEventId(body && body.eventId);
+  const eventDir = path.join(ARCHIVE_EVENTS_DIR, eventId);
+  const files = (body && body.files) || {};
+  const variants = (body && body.variants) || {};
+
+  for (const file of ARCHIVE_EVENT_FILES) {
+    if (Object.prototype.hasOwnProperty.call(files, file)) {
+      writeJsonFile(path.join(eventDir, file), files[file]);
+    }
+  }
+
+  for (const [file, value] of Object.entries(variants)) {
+    if (!/^[A-Za-z0-9_.-]+\.json$/.test(file) || file.includes('..')) {
+      throw new Error(`非法 variant 文件名：${file}`);
+    }
+    writeJsonFile(path.join(eventDir, 'variants', file), value);
+  }
+}
+
+function archiveSummary() {
+  const eventIds = listArchiveEventIds();
+  const ai100Events = archiveStorylineEventSet('bench-council-ai100');
+  const schemaCount = fs.existsSync(ARCHIVE_SCHEMA_DIR)
+    ? fs.readdirSync(ARCHIVE_SCHEMA_DIR).filter((file) => file.endsWith('.json')).length
+    : 0;
+  const storylines = fs.existsSync(ARCHIVE_STORYLINES_DIR)
+    ? fs.readdirSync(ARCHIVE_STORYLINES_DIR).filter((file) => file.endsWith('.json')).sort()
+    : [];
+  return {
+    eventCount: eventIds.length,
+    ai100Count: eventIds.filter((eventId) => ai100Events.has(eventId)).length,
+    schemaCount,
+    storylines,
+    events: eventIds.map((eventId) => archiveEventSummary(eventId, ai100Events)),
+  };
+}
+
 // ─── 写回函数 ─────────────────────────────────────────────────────────────────
 
 function writeCatalog(data) {
@@ -676,6 +788,33 @@ const routes = {
       }));
     }
     catch (e) { err(res, e.message); }
+  },
+
+  'GET /api/archive/summary': (req, res) => {
+    try {
+      json(res, archiveSummary());
+    } catch (e) { err(res, e.message); }
+  },
+
+  'GET /api/archive/event': (req, res) => {
+    try {
+      const q = parseQuery(req.url);
+      json(res, loadArchiveEventBundle(q.eventId));
+    } catch (e) { err(res, e.message); }
+  },
+
+  'POST /api/archive/event': async (req, res) => {
+    try {
+      saveArchiveEventBundle(await readBody(req));
+      json(res, { ok: true });
+    } catch (e) { err(res, e.message); }
+  },
+
+  'POST /api/archive/validate': (req, res) => {
+    const script = path.join(ROOT, 'scripts', 'validate-archive.js');
+    execFile(process.execPath, [script], { cwd: ROOT }, (error, stdout, stderr) => {
+      json(res, { ok: !error, stdout: stdout || '', stderr: stderr || '', exitCode: error ? error.code : 0 });
+    });
   },
 
   'POST /api/events': async (req, res) => {

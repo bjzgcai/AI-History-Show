@@ -348,6 +348,70 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
   border-radius: var(--radius); padding: 8px 14px;
   font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px;
 }
+.archive-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.archive-stat {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+}
+.archive-stat strong {
+  display: block;
+  font-size: 20px;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+.archive-editor-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.archive-event-list {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-height: 68vh;
+  overflow: auto;
+}
+.archive-event-row {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.archive-event-row:hover,
+.archive-event-row.active {
+  background: var(--bg3);
+}
+.archive-event-row.active {
+  color: var(--accent);
+}
+.archive-event-row small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+}
+.archive-json-editor {
+  width: 100%;
+  min-height: 170px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.archive-file-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
 </style>
 </head>
 <body>
@@ -384,6 +448,10 @@ header h1 { font-size: 16px; font-weight: 600; color: var(--accent); }
       <div class="sidebar-title">分类目录</div>
       <div class="sidebar-item active" data-view="catalog" id="navCatalog">
         📂 分类管理
+      </div>
+      <div class="sidebar-item" data-view="archive" id="navArchive">
+        🗃 档案库
+        <span class="badge" id="archiveBadge">0</span>
       </div>
     </div>
     <div class="sidebar-section">
@@ -424,8 +492,11 @@ let catalog = null;   // { categories: [...] }
 let events  = null;   // { key: {...} }
 let videos  = null;   // { key: [candidateVideo,...] }
 let images  = null;   // { key: { sub: [path,...] } }
+let archiveSummaryData = null;
+let archiveBundle = null;
 let currentView = 'catalog';
 let currentEventKey = null;
+let currentArchiveEventId = null;
 let unsavedEvents = false;
 
 // ─── API helpers ──────────────────────────────────────────────────────────────
@@ -459,16 +530,18 @@ function toast(msg, type = 'success') {
 
 // ─── Load all data ────────────────────────────────────────────────────────────
 async function loadAll() {
-  const [c, e, v, i] = await Promise.all([
+  const [c, e, v, i, a] = await Promise.all([
     api('GET', '/api/catalog'),
     api('GET', '/api/events'),
     api('GET', '/api/videos'),
     api('GET', '/api/images'),
+    api('GET', '/api/archive/summary'),
   ]);
   catalog = c;
   events  = e;
   videos  = v;
   images  = i;
+  archiveSummaryData = a;
   renderSidebar();
   renderView();
 }
@@ -492,12 +565,26 @@ function renderSidebar() {
   document.querySelectorAll('.sidebar-item[data-view="catalog"]').forEach(el => {
     el.classList.toggle('active', currentView === 'catalog');
   });
+  document.querySelectorAll('.sidebar-item[data-view="archive"]').forEach(el => {
+    el.classList.toggle('active', currentView === 'archive');
+  });
+  const archiveBadge = document.getElementById('archiveBadge');
+  if (archiveBadge) archiveBadge.textContent = archiveSummaryData ? archiveSummaryData.eventCount : '0';
 }
 
 document.getElementById('eventSearch').addEventListener('input', renderSidebar);
 document.getElementById('navCatalog').addEventListener('click', () => {
   currentView = 'catalog';
   currentEventKey = null;
+  renderSidebar();
+  renderView();
+});
+document.getElementById('navArchive').addEventListener('click', () => {
+  currentView = 'archive';
+  currentEventKey = null;
+  if (!currentArchiveEventId && archiveSummaryData && archiveSummaryData.events.length) {
+    currentArchiveEventId = archiveSummaryData.events[0].eventId;
+  }
   renderSidebar();
   renderView();
 });
@@ -513,6 +600,7 @@ function selectEvent(key) {
 function renderView() {
   if (currentView === 'catalog') renderCatalog();
   else if (currentView === 'event') renderEventEditor(currentEventKey);
+  else if (currentView === 'archive') renderArchive();
 }
 
 // ─── 应用数据（先展示差异，确认后生成）────────────────────────────────────────
@@ -857,6 +945,197 @@ async function restoreBackup(name, file) {
     }
     await loadBackupList();
   } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// ARCHIVE VIEW
+// ═══════════════════════════════════════════════════════════════════════════════
+async function refreshArchiveSummary() {
+  archiveSummaryData = await api('GET', '/api/archive/summary');
+  renderSidebar();
+}
+
+async function loadArchiveBundle(eventId) {
+  currentArchiveEventId = eventId;
+  archiveBundle = await api('GET', `/api/archive/event?eventId=${encodeURIComponent(eventId)}`);
+}
+
+function archiveEventLabel(item) {
+  return `${item.year ? `${item.year} · ` : ''}${mlText(item.title) || mlText(item.title, 'en') || item.eventId}`;
+}
+
+async function renderArchive() {
+  const main = document.getElementById('main');
+  if (!archiveSummaryData) await refreshArchiveSummary();
+  if (!currentArchiveEventId && archiveSummaryData.events.length) {
+    currentArchiveEventId = archiveSummaryData.events[0].eventId;
+  }
+  if (currentArchiveEventId && (!archiveBundle || archiveBundle.eventId !== currentArchiveEventId)) {
+    await loadArchiveBundle(currentArchiveEventId);
+  }
+
+  const selected = currentArchiveEventId || '';
+  const rows = (archiveSummaryData.events || [])
+    .map((item) => {
+      const active = item.eventId === selected ? ' active' : '';
+      const badges = [
+        item.isAi100 ? 'AI100' : '',
+        `${item.sourceCount} sources`,
+        `${item.claimCount} claims`,
+        `${item.assetCount} assets`,
+        `${item.quizCount} quizzes`
+      ].filter(Boolean).join(' · ');
+      return `<div class="archive-event-row${active}" onclick="selectArchiveEvent('${esc(item.eventId)}')">
+        <strong>${esc(archiveEventLabel(item))}</strong>
+        <small>${esc(item.eventId)} · ${esc(badges)}</small>
+      </div>`;
+    })
+    .join('');
+
+  main.innerHTML = `
+    <div class="section-header">
+      <h2>档案库实体管理</h2>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-secondary" onclick="validateArchiveFromAdmin()">校验 archive</button>
+        <button class="btn btn-secondary" onclick="reloadArchiveView()">重新加载</button>
+        <button class="btn btn-primary" onclick="saveArchiveEvent()">保存档案实体</button>
+      </div>
+    </div>
+    <div class="archive-stats">
+      <div class="archive-stat"><strong>${archiveSummaryData.eventCount}</strong><span>archived events</span></div>
+      <div class="archive-stat"><strong>${archiveSummaryData.ai100Count}</strong><span>AI100 events</span></div>
+      <div class="archive-stat"><strong>${archiveSummaryData.storylines.length}</strong><span>storylines</span></div>
+      <div class="archive-stat"><strong>${archiveSummaryData.schemaCount}</strong><span>schemas</span></div>
+    </div>
+    <div class="archive-editor-grid">
+      <section>
+        <input class="event-search" id="archiveSearch" placeholder="搜索 archive event…" type="text" oninput="filterArchiveRows()">
+        <div class="archive-event-list" id="archiveEventRows">${rows}</div>
+      </section>
+      <section id="archiveEditor">${archiveBundle ? buildArchiveEditor(archiveBundle) : '<div class="empty">请选择档案事件</div>'}</section>
+    </div>
+  `;
+}
+
+function buildArchiveEditor(bundle) {
+  const fileBlocks = [];
+  for (const [file, value] of Object.entries(bundle.files || {})) {
+    fileBlocks.push(buildArchiveJsonBlock(`files.${file}`, file, value));
+  }
+  for (const [file, value] of Object.entries(bundle.variants || {})) {
+    fileBlocks.push(buildArchiveJsonBlock(`variants.${file}`, `variants/${file}`, value));
+  }
+  return `
+    <div class="card">
+      <div class="card-header">
+        <strong>${esc(bundle.eventId)}</strong>
+        <span style="color:var(--muted);font-size:12px">archive/events/${esc(bundle.eventId)}</span>
+      </div>
+      <div class="card-body">
+        ${fileBlocks.join('')}
+      </div>
+    </div>
+  `;
+}
+
+function buildArchiveJsonBlock(editorId, label, value) {
+  return `
+    <div class="field">
+      <div class="archive-file-title">
+        <span>${esc(label)}</span>
+        <button class="btn btn-secondary btn-sm" onclick="formatArchiveEditor('${esc(editorId)}')">格式化</button>
+      </div>
+      <textarea class="archive-json-editor" data-archive-editor="${esc(editorId)}" spellcheck="false">${esc(JSON.stringify(value, null, 2))}</textarea>
+    </div>
+  `;
+}
+
+async function selectArchiveEvent(eventId) {
+  try {
+    await loadArchiveBundle(eventId);
+    renderArchive();
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+function filterArchiveRows() {
+  const q = (document.getElementById('archiveSearch').value || '').toLowerCase();
+  const rows = document.querySelectorAll('.archive-event-row');
+  rows.forEach((row) => {
+    row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+}
+
+function parseArchiveEditors() {
+  const next = { eventId: currentArchiveEventId, files: {}, variants: {} };
+  for (const editor of document.querySelectorAll('[data-archive-editor]')) {
+    const id = editor.getAttribute('data-archive-editor');
+    let value;
+    try {
+      value = JSON.parse(editor.value);
+    } catch (e) {
+      throw new Error(`${id} JSON 格式错误：${e.message}`);
+    }
+    if (id.startsWith('files.')) next.files[id.slice('files.'.length)] = value;
+    if (id.startsWith('variants.')) next.variants[id.slice('variants.'.length)] = value;
+  }
+  return next;
+}
+
+function formatArchiveEditor(editorId) {
+  const editor = document.querySelector(`[data-archive-editor="${editorId}"]`);
+  if (!editor) return;
+  try {
+    editor.value = JSON.stringify(JSON.parse(editor.value), null, 2);
+  } catch (e) {
+    toast(`${editorId} JSON 格式错误：${e.message}`, 'error');
+  }
+}
+
+async function saveArchiveEvent() {
+  try {
+    const payload = parseArchiveEditors();
+    await api('POST', '/api/archive/event', payload);
+    await refreshArchiveSummary();
+    archiveBundle = null;
+    await renderArchive();
+    toast(`已保存 ${payload.eventId}`, 'success');
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+async function reloadArchiveView() {
+  try {
+    archiveBundle = null;
+    await refreshArchiveSummary();
+    await renderArchive();
+    toast('档案库已重新加载', 'success');
+  } catch (e) {
+    toast(e.message, 'error');
+  }
+}
+
+async function validateArchiveFromAdmin() {
+  const out = document.getElementById('generateOutput');
+  out.textContent = 'archive 校验中…';
+  out.className = '';
+  try {
+    const result = await api('POST', '/api/archive/validate');
+    if (result.ok) {
+      out.textContent = (result.stdout || '').trim().split('\n').pop() || 'archive 校验通过';
+      toast('archive 校验通过', 'success');
+    } else {
+      out.className = 'error';
+      out.textContent = result.stderr || result.stdout || 'archive 校验失败';
+      toast('archive 校验失败', 'error');
+    }
+  } catch (e) {
+    out.className = 'error';
+    out.textContent = e.message;
     toast(e.message, 'error');
   }
 }
