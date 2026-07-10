@@ -1,0 +1,131 @@
+{
+  "generatedAt": "2026-07-09T06:37:57.460Z",
+  "rows": [
+    {
+      "canonical": "1957-perceptron",
+      "deep": "1957-perceptron",
+      "ai100": "1958-rosenblatt-perceptron",
+      "archiveCanonical": "1957-perceptron",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "1989-cnn",
+      "deep": "1989-cnn",
+      "ai100": "ai100-1989-lenet",
+      "archiveCanonical": "1989-cnn",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "1997-lstm",
+      "deep": "1997-lstm",
+      "ai100": "ai100-1997-lstm",
+      "archiveCanonical": "1997-lstm",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "2012-alexnet",
+      "deep": "2012-alexnet",
+      "ai100": "ai100-2012-alexnet",
+      "archiveCanonical": "2012-alexnet",
+      "archiveExists": true,
+      "variants": [
+        "bench-council-ai100",
+        "deep-learning"
+      ],
+      "status": "archive-event-present",
+      "recommendation": "Move shared facts into the archive event and express deep-learning / AI100 differences as variants."
+    },
+    {
+      "canonical": "2014-gan",
+      "deep": "2014-gan",
+      "ai100": "ai100-2014-gan",
+      "archiveCanonical": "2014-gan",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "2014-attention",
+      "deep": "2014-attention",
+      "ai100": "ai100-2014-neural-machine-translation-attention",
+      "archiveCanonical": "2014-attention",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "2015-resnet",
+      "deep": "2015-resnet",
+      "ai100": "ai100-2015-resnet",
+      "archiveCanonical": "2015-resnet",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "2016-densenet",
+      "deep": "2016-densenet",
+      "ai100": "ai100-2017-densenet",
+      "archiveCanonical": "2016-densenet",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "2017-transformer",
+      "deep": "2017-transformer",
+      "ai100": "ai100-2017-transformer",
+      "archiveCanonical": "2017-transformer",
+      "archiveExists": true,
+      "variants": [
+        "bench-council-ai100",
+        "deep-learning"
+      ],
+      "status": "archive-event-present",
+      "recommendation": "Move shared facts into the archive event and express deep-learning / AI100 differences as variants."
+    },
+    {
+      "canonical": "2018-bert",
+      "deep": "2018-bert",
+      "ai100": "ai100-2018-bert",
+      "archiveCanonical": "2018-bert",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "2018-gpt",
+      "deep": "2018-gpt",
+      "ai100": "ai100-2018-gpt",
+      "archiveCanonical": "2018-gpt",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    },
+    {
+      "canonical": "2020-alphafold",
+      "deep": "2020-alphafold",
+      "ai100": "ai100-2020-alphafold2",
+      "archiveCanonical": "2020-alphafold",
+      "archiveExists": false,
+      "variants": [],
+      "status": "pending-archive-migration",
+      "recommendation": "Create canonical archive event, then migrate deep-learning and AI100 presentations into variants."
+    }
+  ]
+}
