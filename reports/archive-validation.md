@@ -1,0 +1,479 @@
+# Archive Validation Report
+
+Generated: 2026-07-10T08:44:29.419Z
+
+## Summary
+
+- Events: 116
+- Storylines: 3
+- Variants: 135
+- Claims: 253
+- Sources: 373
+- Assets: 327
+- Quizzes: 117
+- Errors: 0
+- Warnings: 0
+
+## Events
+
+- `1950-turing-test` — variants: `bench-council-ai100`
+- `1951-strachey-draughts` — variants: `bench-council-ai100`, `gaming-ai`
+- `1956-dartmouth` — variants: `deep-learning`
+- `1956-logic-theorist` — variants: `bench-council-ai100`
+- `1957-kmeans` — variants: `bench-council-ai100`
+- `1957-perceptron` — variants: `bench-council-ai100`, `deep-learning`
+- `1958-lisp` — variants: `bench-council-ai100`
+- `1958-wangs-algorithm` — variants: `bench-council-ai100`
+- `1959-pandemonium` — variants: `bench-council-ai100`
+- `1960-davis-putnam-dpll` — variants: `bench-council-ai100`
+- `1965-dendral` — variants: `bench-council-ai100`
+- `1965-resolution-method` — variants: `bench-council-ai100`
+- `1966-eliza` — variants: `bench-council-ai100`
+- `1969-ai-winter` — variants: `deep-learning`
+- `1970-shrdlu` — variants: `bench-council-ai100`
+- `1971-complexity-theory` — variants: `bench-council-ai100`
+- `1971-vc-theory` — variants: `bench-council-ai100`
+- `1973-prolog` — variants: `bench-council-ai100`
+- `1974-frame` — variants: `bench-council-ai100`
+- `1975-genetic-algorithm` — variants: `bench-council-ai100`
+- `1980-xcon-r1` — variants: `bench-council-ai100`
+- `1982-hopfield-network` — variants: `bench-council-ai100`
+- `1983-simulated-annealing` — variants: `bench-council-ai100`
+- `1984-cart` — variants: `bench-council-ai100`
+- `1984-cyc` — variants: `bench-council-ai100`
+- `1985-bayesian-network` — variants: `bench-council-ai100`
+- `1986-backpropagation` — variants: `deep-learning`
+- `1986-rnn` — variants: `deep-learning`
+- `1988-td-update` — variants: `bench-council-ai100`, `gaming-ai`
+- `1989-cnn` — variants: `bench-council-ai100`, `deep-learning`
+- `1990-otter` — variants: `bench-council-ai100`
+- `1992-svm` — variants: `bench-council-ai100`
+- `1994-chinook` — variants: `bench-council-ai100`, `gaming-ai`
+- `1996-dbscan` — variants: `bench-council-ai100`
+- `1996-lasso` — variants: `bench-council-ai100`
+- `1997-deep-blue` — variants: `bench-council-ai100`, `gaming-ai`
+- `1997-logistello` — variants: `gaming-ai`
+- `1997-lstm` — variants: `bench-council-ai100`, `deep-learning`
+- `1999-sift` — variants: `bench-council-ai100`
+- `2000-spectral-clustering` — variants: `bench-council-ai100`
+- `2000s-alphacat` — variants: `gaming-ai`
+- `2003-lda` — variants: `bench-council-ai100`
+- `2006-dbn` — variants: `bench-council-ai100`
+- `2008-tsne` — variants: `bench-council-ai100`
+- `2009-imagenet` — variants: `bench-council-ai100`
+- `2011-ibm-watson` — variants: `bench-council-ai100`
+- `2012-alexnet` — variants: `bench-council-ai100`, `deep-learning`
+- `2013-dqn` — variants: `bench-council-ai100`, `gaming-ai`
+- `2013-word2vec` — variants: `bench-council-ai100`
+- `2014-adam` — variants: `bench-council-ai100`
+- `2014-attention` — variants: `bench-council-ai100`, `deep-learning`
+- `2014-dropout` — variants: `bench-council-ai100`
+- `2014-gan` — variants: `bench-council-ai100`, `deep-learning`
+- `2014-highway-network` — variants: `deep-learning`
+- `2014-vgg` — variants: `bench-council-ai100`
+- `2015-faster-r-cnn` — variants: `bench-council-ai100`
+- `2015-googlenet-inception` — variants: `bench-council-ai100`
+- `2015-resnet` — variants: `bench-council-ai100`, `deep-learning`
+- `2015-u-net` — variants: `bench-council-ai100`
+- `2016-alphago` — variants: `bench-council-ai100`, `deep-learning`, `gaming-ai`
+- `2016-densenet` — variants: `bench-council-ai100`, `deep-learning`
+- `2016-yolo` — variants: `bench-council-ai100`
+- `2017-alphazero` — variants: `gaming-ai`
+- `2017-libratus` — variants: `gaming-ai`
+- `2017-transformer` — variants: `bench-council-ai100`, `deep-learning`
+- `2018-bert` — variants: `bench-council-ai100`, `deep-learning`
+- `2018-gpt` — variants: `bench-council-ai100`, `deep-learning`
+- `2019-ai-feynman` — variants: `deep-learning`
+- `2019-muzero` — variants: `gaming-ai`
+- `2019-pluribus` — variants: `gaming-ai`
+- `2019-suphx` — variants: `gaming-ai`
+- `2020-alphafold` — variants: `bench-council-ai100`, `deep-learning`
+- `2023-agents` — variants: `deep-learning`
+- `2024-ai-scientist` — variants: `deep-learning`
+- `2025-llm-competition` — variants: `deep-learning`
+- `ai100-1943-mcculloch-pitts-neuron` — variants: `bench-council-ai100`
+- `ai100-1951-snarc` — variants: `bench-council-ai100`
+- `ai100-1967-back-propagation` — variants: `bench-council-ai100`
+- `ai100-1967-knn` — variants: `bench-council-ai100`
+- `ai100-1969-relu` — variants: `bench-council-ai100`
+- `ai100-1970-ridge` — variants: `bench-council-ai100`
+- `ai100-1980-neocognitron` — variants: `bench-council-ai100`
+- `ai100-1982-som` — variants: `bench-council-ai100`
+- `ai100-1983-actor-critic` — variants: `bench-council-ai100`
+- `ai100-1989-q-learning` — variants: `bench-council-ai100`
+- `ai100-1997-kernel-pca` — variants: `bench-council-ai100`
+- `ai100-1999-nmf` — variants: `bench-council-ai100`
+- `ai100-2000-isomap` — variants: `bench-council-ai100`
+- `ai100-2000-lle` — variants: `bench-council-ai100`
+- `ai100-2000-neural-language-model` — variants: `bench-council-ai100`
+- `ai100-2005-gnn` — variants: `bench-council-ai100`
+- `ai100-2005-hog` — variants: `bench-council-ai100`
+- `ai100-2006-surf` — variants: `bench-council-ai100`
+- `ai100-2013-variational-autoencoder` — variants: `bench-council-ai100`
+- `ai100-2014-conditional-gan` — variants: `bench-council-ai100`
+- `ai100-2014-glove` — variants: `bench-council-ai100`
+- `ai100-2014-ms-coco` — variants: `bench-council-ai100`
+- `ai100-2015-batch-normalization` — variants: `bench-council-ai100`
+- `ai100-2015-dcgan` — variants: `bench-council-ai100`
+- `ai100-2015-ddpg` — variants: `bench-council-ai100`
+- `ai100-2015-deep-compression` — variants: `bench-council-ai100`
+- `ai100-2015-diffusion-model` — variants: `bench-council-ai100`
+- `ai100-2015-knowledge-distillation` — variants: `bench-council-ai100`
+- `ai100-2016-gcn` — variants: `bench-council-ai100`
+- `ai100-2016-nas` — variants: `bench-council-ai100`
+- `ai100-2017-cyclegan` — variants: `bench-council-ai100`
+- `ai100-2017-gat` — variants: `bench-council-ai100`
+- `ai100-2017-pix2pix` — variants: `bench-council-ai100`
+- `ai100-2017-wasserstein-gan` — variants: `bench-council-ai100`
+- `ai100-2019-stylegan` — variants: `bench-council-ai100`
+- `ai100-2020-vit` — variants: `bench-council-ai100`
+- `ai100-2021-clip` — variants: `bench-council-ai100`
+- `ai100-2021-dalle` — variants: `bench-council-ai100`
+- `ai100-2021-swin-transformer` — variants: `bench-council-ai100`
+- `ai100-2022-stable-diffusion` — variants: `bench-council-ai100`
+- `ai100-2023-segment-anything` — variants: `bench-council-ai100`
+
+## Storylines
+
+- `bench-council-ai100` — event refs: 100
+- `deep-learning` — event refs: 22
+- `gaming-ai` — event refs: 13
+
+## Errors
+
+None.
+
+## Warnings
+
+None.
+
+## Asset references
+
+- `https://alexander-kirillov.github.io/images/alexander_kirillov.jpg` — ai100-2023-segment-anything/asset-ai100-2023-segment-anything-alexander-kirillov
+- `https://barretzoph.github.io/images/headshot.jpg` — ai100-2016-nas/asset-ai100-2016-nas-headshot
+- `https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg` — ai100-2015-deep-compression/asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan
+- `https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg` — ai100-2000-lle/asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb
+- `https://dpkingma.com/files/portrait.jpg` — ai100-2013-variational-autoencoder/asset-ai100-2013-variational-autoencoder-portrait
+- `https://herbertbay.com/assets/img/Herbert%20Bay-GM.png` — ai100-2006-surf/asset-ai100-2006-surf-herbert-bay-gm
+- `https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png` — ai100-2015-diffusion-model/asset-ai100-2015-diffusion-model-jascha-profile
+- `https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg` — ai100-2014-conditional-gan/asset-ai100-2014-conditional-gan-flickportrait1
+- `https://leon.bottou.org/_media/bottou_75.jpg` — ai100-2017-wasserstein-gan/asset-ai100-2017-wasserstein-gan-bottou-75
+- `https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280` — ai100-2005-hog/asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde
+- `https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png` — ai100-2015-ddpg/asset-ai100-2015-ddpg-timothy-lillicrap-1
+- `https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg` — ai100-1967-knn/asset-ai100-1967-knn-2012-04-12-obit-cover
+- `https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg` — 2020-alphafold/asset-2020-alphafold-john-jumper-external
+- `https://nlp.stanford.edu/~jpennin/images/photo.jpeg` — ai100-2014-glove/asset-ai100-2014-glove-photo
+- `https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj` — ai100-1999-nmf/asset-ai100-1999-nmf-sebastian
+- `https://research.nvidia.com/sites/default/files/person/tero-karras.png` — ai100-2019-stylegan/asset-ai100-2019-stylegan-tero-karras
+- `https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1` — ai100-2017-gat/asset-ai100-2017-gat-citations
+- `https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2` — ai100-2005-gnn/asset-ai100-2005-gnn-citations
+- `https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1` — ai100-1989-q-learning/asset-ai100-1989-q-learning-citations
+- `https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png` — ai100-2021-dalle/asset-ai100-2021-dalle-b0fdc3694e0d34821c1a35fbe494cb9c
+- `https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY` — ai100-2000-isomap/asset-ai100-2000-isomap-tenenbaum-2019-profile-240
+- `https://tkipf.github.io/images/photo.jpg` — ai100-2016-gcn/asset-ai100-2016-gcn-photo
+- `https://tsungyilin.info/images/tsungyi.jpeg` — ai100-2014-ms-coco/asset-ai100-2014-ms-coco-tsungyi
+- `https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg` — 1996-dbscan/asset-1996-dbscan-dbscan-density-data
+- `https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg` — 1994-chinook/asset-1994-chinook-jonathan-schaeffer-external
+- `https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg` — 1957-kmeans/asset-1957-kmeans-iris-flowers-clustering-kmeans
+- `https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png` — ai100-1997-kernel-pca/asset-ai100-1997-kernel-pca-bernhard-sch-lkopf
+- `https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg` — 2000-spectral-clustering/asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017
+- `https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg` — 2011-ibm-watson/asset-2011-ibm-watson-ibmwatson
+- `https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png` — 1984-cyc/asset-1984-cyc-cyc-projects-logos
+- `https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg` — 2011-ibm-watson/asset-2011-ibm-watson-deepqa
+- `https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg` — 1996-dbscan/asset-1996-dbscan-sfu-professor-martin-ester-2019
+- `https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg` — 2000-spectral-clustering/asset-2000-spectral-clustering-6n-graf
+- `https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg` — 1980-xcon-r1/asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01
+- `https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg` — 1980-xcon-r1/asset-1980-xcon-r1-vax-11-780-cpu-backplane
+- `https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg` — ai100-1982-som/asset-ai100-1982-som-teuvo-kohonen
+- `https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg` — 1959-pandemonium/asset-1959-pandemonium-original-pande2
+- `https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg` — 1957-kmeans/asset-1957-kmeans-bell-labs-holmdel
+- `https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png` — 1951-strachey-draughts/asset-1951-strachey-draughts-program-external
+- `https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg` — 1951-strachey-draughts/asset-1951-strachey-draughts-checkers-board-external
+- `https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg` — ai100-1969-relu/asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02
+- `https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg` — ai100-2000-neural-language-model/asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02
+- `https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg` — 1989-cnn/asset-1989-cnn-yann-lecun-external
+- `https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg` — ai100-1943-mcculloch-pitts-neuron/asset-ai100-1943-mcculloch-pitts-neuron-330px-1954-walter-pitts-and-a-blackboard
+- `https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg` — ai100-2017-pix2pix/asset-ai100-2017-pix2pix-photo-of-me-korea
+- `https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg` — ai100-1980-neocognitron/asset-ai100-1980-neocognitron-dr-kunihikofukushima
+- `https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg` — ai100-2017-cyclegan/asset-ai100-2017-cyclegan-portrait3-lr
+- `https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM` — ai100-1983-actor-critic/asset-ai100-1983-actor-critic-barto-andrew-square
+- `https://www.eml-munich.de/team/alexey-dosovitskiy.png` — ai100-2020-vit/asset-ai100-2020-vit-alexey-dosovitskiy
+- `https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg` — ai100-2022-stable-diffusion/asset-ai100-2022-stable-diffusion-robin-update-5
+- `https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg` — ai100-1970-ridge/asset-ai100-1970-ridge-ai-ridge-regression-main
+- `https://zeliu98.github.io/images/zeliu.jpg` — ai100-2021-swin-transformer/asset-ai100-2021-swin-transformer-zeliu
+- `research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg` — 1950-turing-test/asset-1950-turing-test-alan-turing
+- `research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png` — 1950-turing-test/asset-1950-turing-test-diagram
+- `research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg` — 1971-complexity-theory/asset-1971-complexity-theory-reduction-map
+- `research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg` — 1971-complexity-theory/asset-1971-complexity-theory-stephen-cook
+- `research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg` — 1971-vc-theory/asset-1971-vc-theory-generalization
+- `research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png` — 1971-vc-theory/asset-1971-vc-theory-vladimir-vapnik
+- `research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg` — 1956-logic-theorist/asset-1956-logic-theorist-herbert-simon
+- `research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg` — 1956-logic-theorist/asset-1956-logic-theorist-proof-search
+- `research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg` — 1958-wangs-algorithm/asset-1958-wangs-algorithm-hao-wang
+- `research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg` — 1958-wangs-algorithm/asset-1958-wangs-algorithm-pattern-proof
+- `research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg` — 1960-davis-putnam-dpll/asset-1960-davis-putnam-dpll-hilary-putnam
+- `research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg` — 1960-davis-putnam-dpll/asset-1960-davis-putnam-dpll-sat-search
+- `research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg` — 1958-lisp/asset-1958-lisp-eval-flow
+- `research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg` — 1958-lisp/asset-1958-lisp-john-mccarthy
+- `research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg` — 2016-alphago/asset-alphago-lee-sedol
+- `research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg` — 2016-alphago/asset-alphago-policy-value-search
+- `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-01
+- `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-02
+- `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-04
+- `resources/images/1956-dartmouth/historical/1956-dartmouth_school.png` — 1956-dartmouth/asset-1956-dartmouth-school
+- `resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg` — 1957-perceptron/asset-1957-perceptron-historical-01
+- `resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png` — 1957-perceptron/asset-1957-perceptron-historical-01-2
+- `resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png` — 1957-perceptron/asset-1957-perceptron-papers-01
+- `resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg` — 1957-perceptron/asset-1957-perceptron-people-01
+- `resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png` — 1969-ai-winter/asset-1969-ai-winter-papers-01-2
+- `resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg` — 1969-ai-winter/asset-1969-ai-winter-papers-02
+- `resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png` — 1969-ai-winter/asset-1969-ai-winter-papers-01
+- `resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png` — 1986-backpropagation/asset-1986-backpropagation-architecture01
+- `resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png` — 1986-backpropagation/asset-1986-backpropagation-papers-01
+- `resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png` — 1986-backpropagation/asset-1986-backpropagation-paper-01
+- `resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png` — 1986-backpropagation/asset-1986-backpropagation-paper-02
+- `resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png` — 1986-backpropagation/asset-1986-backpropagation-paper-03
+- `resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png` — 1986-rnn/asset-1986-rnn-architecture-01
+- `resources/images/1986-rnn/people/1986-rnn_people_01.png` — 1986-rnn/asset-1986-rnn-people-01
+- `resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg` — 1989-cnn/asset-1989-cnn-architecture-01
+- `resources/images/1989-cnn/people/1989-cnn_people_01.jpg` — 1989-cnn/asset-1989-cnn-people-01
+- `resources/images/1989-cnn/people/1989-cnn_people_02.jpg` — 1989-cnn/asset-1989-cnn-people-02
+- `resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg` — 1997-lstm/asset-1997-lstm-architecture-01
+- `resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png` — 1997-lstm/asset-1997-lstm-architecture-02
+- `resources/images/1997-lstm/people/1997-lstm_people_01.png` — 1997-lstm/asset-1997-lstm-people-01
+- `resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png` — 2012-alexnet/asset-alexnet-architecture
+- `resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png` — 2012-alexnet/asset-alexnet-architecture-detail
+- `resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg` — 2012-alexnet/asset-alexnet-deep-portrait
+- `resources/images/2014-attention/architecture/2014-attention_architecture_01.png` — 2014-attention/asset-2014-attention-architecture-01
+- `resources/images/2014-attention/people/2014-attention_people_01.png` — 2014-attention/asset-2014-attention-people-01
+- `resources/images/2014-gan/architecture/2014-gan_architecture_01.png` — 2014-gan/asset-2014-gan-architecture-01
+- `resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png` — 2014-highway-network/asset-2014-highway-network-architecture-01
+- `resources/images/2014-highway-network/people/2014-highway-network_people_01.png` — 2014-highway-network/asset-2014-highway-network-people-01
+- `resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png` — 2015-resnet/asset-2015-resnet-architecture-01
+- `resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png` — 2015-resnet/asset-2015-resnet-architecture-02
+- `resources/images/2015-resnet/people/2015-resnet_people_01.png` — 2015-resnet/asset-2015-resnet-people-01
+- `resources/images/2015-resnet/people/2015-resnet_people_02.png` — 2015-resnet/asset-2015-resnet-people-02
+- `resources/images/2015-resnet/people/2015-resnet_people_03.png` — 2015-resnet/asset-2015-resnet-people-03
+- `resources/images/2015-resnet/people/2015-resnet_people_04.png` — 2015-resnet/asset-2015-resnet-people-04
+- `resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png` — 2016-densenet/asset-2016-densenet-architecture-01
+- `resources/images/2016-densenet/people/2016-densenet_people_01.png` — 2016-densenet/asset-2016-densenet-people-01
+- `resources/images/2016-densenet/people/2016-densenet_people_02.png` — 2016-densenet/asset-2016-densenet-people-02
+- `resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png` — 2017-transformer/asset-transformer-architecture
+- `resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png` — 2017-transformer/asset-transformer-architecture-detail
+- `resources/images/2017-transformer/papers/2017-transformer_papers_01.png` — 2017-transformer/asset-transformer-paper-page
+- `resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg` — 2018-bert/asset-2018-bert-architecture-01
+- `resources/images/2018-bert/architecture/2018-bert_architecture_02.png` — 2018-bert/asset-2018-bert-architecture-02
+- `resources/images/2018-bert/people/2018-bert_people_03.jpg` — 2018-bert/asset-2018-bert-people-03
+- `resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg` — 2018-gpt/asset-2018-gpt-architecture-01
+- `resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png` — 2018-gpt/asset-2018-gpt-architecture-02
+- `resources/images/2018-gpt/historical/2018-gpt_historical_01.png` — 2018-gpt/asset-2018-gpt-historical-01
+- `resources/images/2018-gpt/people/2018-gpt_people_02.png` — 2018-gpt/asset-2018-gpt-people-02
+- `resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png` — 2019-ai-feynman/asset-2019-ai-feynman-historical-01
+- `resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png` — 2019-ai-feynman/asset-2019-ai-feynman-papers-01
+- `resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png` — 2019-ai-feynman/asset-2019-ai-feynman-papers-02
+- `resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png` — 2019-ai-feynman/asset-2019-ai-feynman-people-01
+- `resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png` — 2020-alphafold/asset-2020-alphafold-architecture-01
+- `resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png` — 2020-alphafold/asset-2020-alphafold-architecture-02
+- `resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg` — 2020-alphafold/asset-2020-alphafold-historical-01
+- `resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png` — 2020-alphafold/asset-2020-alphafold-historical-02
+- `resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png` — 2020-alphafold/asset-2020-alphafold-papers-01
+- `resources/images/2020-alphafold/people/2020-alphafold_people_01.png` — 2020-alphafold/asset-2020-alphafold-people-01
+- `resources/images/2020-alphafold/people/2020-alphafold_people_02.png` — 2020-alphafold/asset-2020-alphafold-people-02
+- `resources/images/2023-agents/historical/2023-agents_historical_02.png` — 2023-agents/asset-2023-agents-historical-02
+- `resources/images/2023-agents/historical/2023-agents_historical_03.png` — 2023-agents/asset-2023-agents-historical-03
+- `resources/images/2023-agents/historical/2023-agents_historical_04.png` — 2023-agents/asset-2023-agents-historical-04
+- `resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png` — 2024-ai-scientist/asset-2024-ai-scientist-architecture-01
+- `resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png` — 2024-ai-scientist/asset-2024-ai-scientist-architecture-02
+- `resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png` — 2024-ai-scientist/asset-2024-ai-scientist-papers-01
+- `resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png` — 2024-ai-scientist/asset-2024-ai-scientist-people-01
+- `resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png` — 2024-ai-scientist/asset-2024-ai-scientist-people-02
+- `resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png` — 2025-llm-competition/asset-2025-llm-competition-architecture-01
+- `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png` — 2025-llm-competition/asset-2025-llm-competition-historical-01
+- `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png` — 2025-llm-competition/asset-2025-llm-competition-historical-02
+- `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png` — 2025-llm-competition/asset-2025-llm-competition-historical-03
+- `resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg` — ai100-1943-mcculloch-pitts-neuron/asset-1943-mcculloch-pitts-neuron-threshold-logic
+- `resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg` — ai100-1951-snarc/asset-1951-snarc-maze-reinforcement
+- `resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg` — 1951-strachey-draughts/asset-1951-strachey-draughts-board-search
+- `resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg` — 1951-strachey-draughts/asset-1951-strachey-draughts-program-flow
+- `resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg` — 1957-kmeans/asset-1957-kmeans-centroid-loop
+- `resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg` — 1957-kmeans/asset-1957-kmeans-cluster-update
+- `resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg` — 1957-perceptron/asset-1958-rosenblatt-perceptron-sensor-grid
+- `resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg` — 1957-perceptron/asset-1958-rosenblatt-perceptron-threshold
+- `resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg` — 1959-pandemonium/asset-1959-pandemonium-feature-votes
+- `resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg` — 1959-pandemonium/asset-1959-pandemonium-layered-recognition
+- `resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg` — 1965-dendral/asset-1965-dendral-mass-spectrum
+- `resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg` — 1965-dendral/asset-1965-dendral-rule-filter
+- `resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg` — 1965-resolution-method/asset-1965-resolution-method-clause-refutation
+- `resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg` — 1965-resolution-method/asset-1965-resolution-method-unification-map
+- `resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg` — 1966-eliza/asset-1966-eliza-doctor-script
+- `resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg` — 1966-eliza/asset-1966-eliza-terminal-dialog
+- `resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg` — ai100-1967-back-propagation/asset-1967-back-propagation-error-flow
+- `resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg` — ai100-1967-knn/asset-1967-knn-neighbor-vote
+- `resources/images/bench-council-ai100/explainers/1969-relu_activation.svg` — ai100-1969-relu/asset-1969-relu-activation
+- `resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg` — ai100-1970-ridge/asset-1970-ridge-shrinkage
+- `resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg` — 1970-shrdlu/asset-1970-shrdlu-blocks-world
+- `resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg` — 1970-shrdlu/asset-1970-shrdlu-parser-plan
+- `resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg` — 1973-prolog/asset-1973-prolog-query-tree
+- `resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg` — 1973-prolog/asset-1973-prolog-unification-trace
+- `resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg` — 1974-frame/asset-1974-frame-inheritance
+- `resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg` — 1974-frame/asset-1974-frame-slot-card
+- `resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg` — 1975-genetic-algorithm/asset-1975-genetic-algorithm-chromosome-crossover
+- `resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg` — 1975-genetic-algorithm/asset-1975-genetic-algorithm-population-cycle
+- `resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg` — ai100-1980-neocognitron/asset-1980-neocognitron-hierarchy
+- `resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg` — 1980-xcon-r1/asset-1980-xcon-r1-order-flow
+- `resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg` — 1980-xcon-r1/asset-1980-xcon-r1-rule-configurator
+- `resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg` — 1982-hopfield-network/asset-1982-hopfield-network-energy-basin
+- `resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg` — 1982-hopfield-network/asset-1982-hopfield-network-memory-grid
+- `resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg` — ai100-1982-som/asset-1982-som-topology-map
+- `resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg` — ai100-1983-actor-critic/asset-1983-actor-critic-two-paths
+- `resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg` — 1983-simulated-annealing/asset-1983-simulated-annealing-energy-landscape
+- `resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg` — 1983-simulated-annealing/asset-1983-simulated-annealing-temperature-schedule
+- `resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg` — 1984-cart/asset-1984-cart-pruning-curve
+- `resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg` — 1984-cart/asset-1984-cart-split-regions
+- `resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg` — 1984-cyc/asset-1984-cyc-common-sense-rule
+- `resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg` — 1984-cyc/asset-1984-cyc-microtheories
+- `resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg` — 1985-bayesian-network/asset-1985-bayesian-network-dag
+- `resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg` — 1985-bayesian-network/asset-1985-bayesian-network-message-pass
+- `resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg` — 1988-td-update/asset-1988-td-update-error-meter
+- `resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg` — 1988-td-update/asset-1988-td-update-value-timeline
+- `resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg` — 1989-cnn/asset-1989-lenet-zip-code-cnn
+- `resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg` — ai100-1989-q-learning/asset-1989-q-learning-bellman-update
+- `resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg` — 1990-otter/asset-1990-otter-clause-index
+- `resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg` — 1990-otter/asset-1990-otter-given-clause
+- `resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg` — 1990-otter/asset-1990-otter-input-clauses
+- `resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg` — 1990-otter/asset-1990-otter-proof-trace
+- `resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg` — 1992-svm/asset-1992-svm-kernel-lift
+- `resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg` — 1992-svm/asset-1992-svm-max-margin
+- `resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg` — 1994-chinook/asset-1994-chinook-endgame-database
+- `resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg` — 1994-chinook/asset-1994-chinook-perfect-play
+- `resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg` — 1996-dbscan/asset-1996-dbscan-density-reachability
+- `resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg` — 1996-dbscan/asset-1996-dbscan-noise-core-border
+- `resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg` — 1996-lasso/asset-1996-lasso-coefficient-path
+- `resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg` — 1996-lasso/asset-1996-lasso-l1-constraint
+- `resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg` — 1997-deep-blue/asset-1997-deep-blue-chip-board
+- `resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg` — 1997-deep-blue/asset-1997-deep-blue-search-tree
+- `resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg` — ai100-1997-kernel-pca/asset-1997-kernel-pca-eigenmap
+- `resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg` — 1997-logistello/asset-1997-logistello-pattern-eval
+- `resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg` — 1997-lstm/asset-1997-lstm-gated-memory
+- `resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg` — ai100-1999-nmf/asset-1999-nmf-parts-factorization
+- `resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg` — 1999-sift/asset-1999-sift-descriptor
+- `resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg` — 1999-sift/asset-1999-sift-scale-space
+- `resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg` — ai100-2000-isomap/asset-2000-isomap-geodesic-map
+- `resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg` — ai100-2000-lle/asset-2000-lle-neighbor-reconstruction
+- `resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg` — ai100-2000-neural-language-model/asset-2000-neural-language-model-context-prediction
+- `resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg` — 2000-spectral-clustering/asset-2000-spectral-clustering-eigen-map
+- `resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg` — 2000-spectral-clustering/asset-2000-spectral-clustering-graph-cut
+- `resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg` — 2000s-alphacat/asset-2000s-alphacat-xiangqi-search
+- `resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg` — 2003-lda/asset-2003-lda-plate-model
+- `resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg` — 2003-lda/asset-2003-lda-topic-simplex
+- `resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg` — ai100-2005-gnn/asset-2005-gnn-message-passing
+- `resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg` — ai100-2005-hog/asset-2005-hog-descriptor-grid
+- `resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg` — 2006-dbn/asset-2006-dbn-stacked-rbms
+- `resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg` — 2006-dbn/asset-2006-dbn-wake-finetune
+- `resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg` — ai100-2006-surf/asset-2006-surf-interest-points
+- `resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg` — 2008-tsne/asset-2008-tsne-cluster-map
+- `resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg` — 2008-tsne/asset-2008-tsne-neighbor-probabilities
+- `resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg` — 2009-imagenet/asset-2009-imagenet-benchmark
+- `resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg` — 2009-imagenet/asset-2009-imagenet-hierarchy
+- `resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg` — 2011-ibm-watson/asset-2011-ibm-watson-evidence-ranking
+- `resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg` — 2013-dqn/asset-2013-dqn-q-control
+- `resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg` — 2013-dqn/asset-2013-dqn-replay-buffer
+- `resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg` — ai100-2013-variational-autoencoder/asset-2013-vae-latent-sampling
+- `resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg` — 2013-word2vec/asset-2013-word2vec-skipgram-window
+- `resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg` — 2013-word2vec/asset-2013-word2vec-vector-analogy
+- `resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg` — 2014-adam/asset-2014-adam-loss-trajectory
+- `resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg` — 2014-adam/asset-2014-adam-moment-traces
+- `resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg` — 2014-attention/asset-2014-attention-alignment
+- `resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg` — ai100-2014-conditional-gan/asset-2014-conditional-gan-conditioned-generator
+- `resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg` — 2014-dropout/asset-2014-dropout-ensemble-average
+- `resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg` — 2014-dropout/asset-2014-dropout-random-mask
+- `resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg` — 2014-gan/asset-2014-gan-adversarial-loop
+- `resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg` — ai100-2014-glove/asset-2014-glove-cooccurrence
+- `resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg` — ai100-2014-ms-coco/asset-2014-ms-coco-context-dataset
+- `resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg` — 2014-vgg/asset-2014-vgg-depth-configurations
+- `resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg` — 2014-vgg/asset-2014-vgg-receptive-field
+- `resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg` — ai100-2015-batch-normalization/asset-2015-batch-normalization-activation-scale
+- `resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg` — ai100-2015-dcgan/asset-2015-dcgan-conv-generator
+- `resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg` — ai100-2015-ddpg/asset-2015-ddpg-actor-critic
+- `resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg` — ai100-2015-deep-compression/asset-2015-deep-compression-prune-quantize-code
+- `resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg` — ai100-2015-diffusion-model/asset-2015-diffusion-forward-reverse
+- `resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg` — 2015-faster-r-cnn/asset-2015-faster-r-cnn-detection-output
+- `resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg` — 2015-faster-r-cnn/asset-2015-faster-r-cnn-rpn-pipeline
+- `resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg` — 2015-googlenet-inception/asset-2015-googlenet-inception-bottleneck
+- `resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg` — 2015-googlenet-inception/asset-2015-googlenet-inception-parallel-branches
+- `resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg` — ai100-2015-knowledge-distillation/asset-2015-knowledge-distillation-teacher-student
+- `resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg` — 2015-u-net/asset-2015-u-net-segmentation-mask
+- `resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg` — 2015-u-net/asset-2015-u-net-u-shape-architecture
+- `resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg` — ai100-2016-gcn/asset-2016-gcn-spectral-convolution
+- `resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg` — ai100-2016-nas/asset-2016-nas-controller-search
+- `resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg` — 2016-yolo/asset-2016-yolo-grid-detector
+- `resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg` — 2016-yolo/asset-2016-yolo-single-pass
+- `resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg` — 2017-alphazero/asset-2017-alphazero-self-play-loop
+- `resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg` — ai100-2017-cyclegan/asset-2017-cyclegan-cycle-consistency
+- `resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg` — ai100-2017-gat/asset-2017-gat-attention-neighbors
+- `resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg` — 2017-libratus/asset-2017-libratus-cfr-solving
+- `resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg` — ai100-2017-pix2pix/asset-2017-pix2pix-paired-translation
+- `resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg` — 2017-transformer/asset-transformer-attention
+- `resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg` — ai100-2017-wasserstein-gan/asset-2017-wasserstein-gan-critic-distance
+- `resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg` — 2018-bert/asset-2018-bert-masked-lm
+- `resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg` — 2018-gpt/asset-2018-gpt-next-token
+- `resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg` — 2019-muzero/asset-2019-muzero-learned-model
+- `resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg` — 2019-pluribus/asset-2019-pluribus-blueprint-search
+- `resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg` — ai100-2019-stylegan/asset-2019-stylegan-style-modulation
+- `resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg` — 2019-suphx/asset-2019-suphx-mahjong-policy
+- `resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg` — 2020-alphafold/asset-2020-alphafold2-structure-pipeline
+- `resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg` — ai100-2020-vit/asset-2020-vit-patch-tokens
+- `resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg` — ai100-2021-clip/asset-2021-clip-contrastive-pairs
+- `resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg` — ai100-2021-dalle/asset-2021-dalle-text-to-image
+- `resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg` — ai100-2021-swin-transformer/asset-2021-swin-transformer-shifted-windows
+- `resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg` — ai100-2022-stable-diffusion/asset-2022-stable-diffusion-latent-denoise
+- `resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg` — ai100-2023-segment-anything/asset-2023-segment-anything-prompt-mask
+- `resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg` — 1957-perceptron/asset-1958-rosenblatt-perceptron-frank-rosenblatt
+- `resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg` — 1959-pandemonium/asset-1959-pandemonium-oliver-selfridge
+- `resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg` — 1965-dendral/asset-1965-dendral-edward-feigenbaum
+- `resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg` — 1965-resolution-method/asset-1965-resolution-method-john-alan-robinson
+- `resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg` — 1966-eliza/asset-1966-eliza-joseph-weizenbaum
+- `resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg` — 1970-shrdlu/asset-1970-shrdlu-terry-winograd
+- `resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg` — 1973-prolog/asset-1973-prolog-alain-colmerauer
+- `resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg` — 1974-frame/asset-1974-frame-marvin-minsky
+- `resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg` — 1975-genetic-algorithm/asset-1975-genetic-algorithm-john-henry-holland
+- `resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg` — 1982-hopfield-network/asset-1982-hopfield-network-john-hopfield
+- `resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif` — 1983-simulated-annealing/asset-1983-simulated-annealing-scott-kirkpatrick
+- `resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif` — 1984-cart/asset-1984-cart-leo-breiman
+- `resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg` — 1984-cyc/asset-1984-cyc-douglas-lenat
+- `resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg` — 1985-bayesian-network/asset-1985-bayesian-network-judea-pearl
+- `resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg` — 1988-td-update/asset-1988-td-update-richard-sutton
+- `resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg` — 1992-svm/asset-1992-svm-isabelle-guyon
+- `resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg` — 1996-lasso/asset-1996-lasso-robert-tibshirani
+- `resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg` — 1997-deep-blue/asset-1997-deep-blue-murray-campbell
+- `resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg` — 1999-sift/asset-1999-sift-david-lowe
+- `resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg` — 2003-lda/asset-2003-lda-david-blei
+- `resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg` — 2006-dbn/asset-2006-dbn-geoffrey-hinton
+- `resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png` — 2008-tsne/asset-2008-tsne-laurens-van-der-maaten
+- `resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg` — 2009-imagenet/asset-2009-imagenet-fei-fei-li
+- `resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg` — 2011-ibm-watson/asset-2011-ibm-watson-david-ferrucci
+- `resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg` — 2013-dqn/asset-2013-dqn-volodymyr-mnih
+- `resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg` — 2013-word2vec/asset-2013-word2vec-tomas-mikolov
+- `resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg` — 2014-adam/asset-2014-adam-diederik-kingma
+- `resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg` — 2014-dropout/asset-2014-dropout-nitish-srivastava
+- `resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg` — 2014-vgg/asset-2014-vgg-andrew-zisserman
+- `resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg` — 2015-faster-r-cnn/asset-2015-faster-r-cnn-kaiming-he
+- `resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg` — 2015-googlenet-inception/asset-2015-googlenet-inception-christian-szegedy
+- `resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg` — ai100-2015-batch-normalization/asset-2015-googlenet-inception-christian-szegedy
+- `resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg` — 2015-u-net/asset-2015-u-net-olaf-ronneberger
+- `resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg` — 2016-yolo/asset-2016-yolo-joseph-redmon
+- `resources/images/bench-council-ai100/source/1994-chinook_homepage.png` — 1994-chinook/asset-1994-chinook-homepage
+- `resources/images/figures/alec-radford.png` — 2018-gpt/asset-alec-radford
+- `resources/images/figures/alec-radford.png` — ai100-2015-dcgan/asset-alec-radford
+- `resources/images/figures/alec-radford.png` — ai100-2021-clip/asset-alec-radford
+- `resources/images/figures/alex-krizhevsky.jpg` — 2012-alexnet/asset-alexnet-portrait
+- `resources/images/figures/ashish-vaswani.jpg` — 2017-transformer/asset-transformer-portrait
+- `resources/images/figures/david-rumelhart.jpg` — ai100-1967-back-propagation/asset-david-rumelhart
+- `resources/images/figures/geoffrey-hinton.jpg` — 2014-attention/asset-geoffrey-hinton
+- `resources/images/figures/geoffrey-hinton.jpg` — ai100-2015-knowledge-distillation/asset-geoffrey-hinton
+- `resources/images/figures/ian-goodfellow.jpg` — 2014-gan/asset-ian-goodfellow
+- `resources/images/figures/jacob-devlin.jpg` — 2018-bert/asset-jacob-devlin
+- `resources/images/figures/kaiming-he.jpg` — 2015-resnet/asset-kaiming-he
+- `resources/images/figures/marvin-minsky.jpg` — ai100-1951-snarc/asset-marvin-minsky
+- `resources/images/figures/sepp-hochreiter.jpg` — 1997-lstm/asset-sepp-hochreiter
+

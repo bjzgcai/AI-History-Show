@@ -1,0 +1,5686 @@
+{
+  "normalCount": 134,
+  "previewCount": 134,
+  "changedCount": 134,
+  "fieldCounts": {
+    "sources": 134,
+    "commentary": 131,
+    "quizzes": 112
+  },
+  "imageDecreaseCount": 0,
+  "sourceDecreaseCount": 0,
+  "commentaryDecreaseCount": 0,
+  "quizDecreaseCount": 0,
+  "rows": [
+    {
+      "id": "milestone-1956-dartmouth",
+      "archiveEventId": "1956-dartmouth",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "达特茅斯会议 - AI正式诞生！",
+        "en": "Dartmouth Workshop - AI Is Born!"
+      },
+      "previewTitle": {
+        "zh": "达特茅斯会议 - AI正式诞生！",
+        "en": "Dartmouth Workshop - AI Is Born!"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1957-perceptron",
+      "archiveEventId": "1957-perceptron",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "感知机与连接主义",
+        "en": "The Perceptron and Connectionism"
+      },
+      "previewTitle": {
+        "zh": "感知机与连接主义",
+        "en": "The Perceptron and Connectionism"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1037/h0042519",
+            "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+            "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
+          ],
+          "preview": [
+            "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+            "source-cornell-chronicle-perceptron-retrospective",
+            "source-smithsonian-mark-i-perceptron-object-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1969-ai-winter",
+      "archiveEventId": "1969-ai-winter",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "第一次寒冬的到来",
+        "en": "The First AI Winter Arrives"
+      },
+      "previewTitle": {
+        "zh": "第一次寒冬的到来",
+        "en": "The First AI Winter Arrives"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1986-backpropagation",
+      "archiveEventId": "1986-backpropagation",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "反向传播算法",
+        "en": "Backpropagation"
+      },
+      "previewTitle": {
+        "zh": "反向传播算法",
+        "en": "Backpropagation"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1986-rnn",
+      "archiveEventId": "1986-rnn",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "循环神经网络",
+        "en": "Recurrent Neural Networks"
+      },
+      "previewTitle": {
+        "zh": "循环神经网络",
+        "en": "Recurrent Neural Networks"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1989-cnn",
+      "archiveEventId": "1989-cnn",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "卷积神经网络与 LeNet",
+        "en": "Convolutional Networks and LeNet"
+      },
+      "previewTitle": {
+        "zh": "卷积神经网络与 LeNet",
+        "en": "Convolutional Networks and LeNet"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1162/neco.1989.1.4.541",
+            "https://yann.lecun.com/exdb/lenet/",
+            "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+            "https://yann.lecun.com/"
+          ],
+          "preview": [
+            "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+            "source-lenet-5-demos-and-documentation",
+            "source-gradient-based-learning-applied-to-document-recognition",
+            "source-yann-lecun-s-home-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1997-lstm",
+      "archiveEventId": "1997-lstm",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "LSTM 与门控记忆",
+        "en": "LSTM and Gated Memory"
+      },
+      "previewTitle": {
+        "zh": "LSTM 与门控记忆",
+        "en": "LSTM and Gated Memory"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1162/neco.1997.9.8.1735",
+            "https://www.bioinf.jku.at/publications/older/2604.pdf",
+            "https://en.wikipedia.org/wiki/Long_short-term_memory",
+            "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/"
+          ],
+          "preview": [
+            "source-long-short-term-memory",
+            "source-author-hosted-lstm-paper-pdf",
+            "source-lstm-overview",
+            "source-sepp-hochreiter-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2012-alexnet",
+      "archiveEventId": "2012-alexnet",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "AlexNet 与 ImageNet 突破",
+        "en": "AlexNet and the ImageNet Breakthrough"
+      },
+      "previewTitle": {
+        "zh": "AlexNet 与 ImageNet 突破",
+        "en": "AlexNet and the ImageNet Breakthrough"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+            "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+            "https://www.image-net.org/challenges/LSVRC/index.php",
+            "https://en.wikipedia.org/wiki/AlexNet"
+          ],
+          "preview": [
+            "source-alexnet-neurips-paper",
+            "source-imagenet-challenge",
+            "source-alexnet-neurips-pdf",
+            "source-alexnet-overview"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "milestone-2014-highway-network",
+      "archiveEventId": "2014-highway-network",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "高速网络",
+        "en": "Highway Networks"
+      },
+      "previewTitle": {
+        "zh": "高速网络",
+        "en": "Highway Networks"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2014-gan",
+      "archiveEventId": "2014-gan",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "生成对抗网络",
+        "en": "Generative Adversarial Networks"
+      },
+      "previewTitle": {
+        "zh": "生成对抗网络",
+        "en": "Generative Adversarial Networks"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1406.2661",
+            "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+            "https://arxiv.org/abs/1701.00160",
+            "https://www.iangoodfellow.com/"
+          ],
+          "preview": [
+            "source-generative-adversarial-nets",
+            "source-neurips-paper-page",
+            "source-goodfellow-gan-tutorial",
+            "source-ian-goodfellow-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2014-attention",
+      "archiveEventId": "2014-attention",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "带注意力机制的神经机器翻译",
+        "en": "Neural Machine Translation with Attention"
+      },
+      "previewTitle": {
+        "zh": "带注意力机制的神经机器翻译",
+        "en": "Neural Machine Translation with Attention"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1409.0473",
+            "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
+            "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+            "https://mila.quebec/en/person/yoshua-bengio/"
+          ],
+          "preview": [
+            "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+            "source-iclr-2015-paper-page",
+            "source-attention-mechanism-overview",
+            "source-yoshua-bengio-lab-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2015-resnet",
+      "archiveEventId": "2015-resnet",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "ResNet",
+        "en": "ResNet"
+      },
+      "previewTitle": {
+        "zh": "ResNet",
+        "en": "ResNet"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1512.03385",
+            "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+            "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+            "https://people.csail.mit.edu/kaiming/"
+          ],
+          "preview": [
+            "source-deep-residual-learning-for-image-recognition",
+            "source-cvf-open-access-paper-page",
+            "source-cvpr-full-paper-pdf",
+            "source-kaiming-he-profile-at-mit-csail"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2016-densenet",
+      "archiveEventId": "2016-densenet",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "DenseNet",
+        "en": "DenseNet"
+      },
+      "previewTitle": {
+        "zh": "DenseNet",
+        "en": "DenseNet"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1608.06993",
+            "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+            "https://github.com/liuzhuang13/DenseNet",
+            "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/"
+          ],
+          "preview": [
+            "source-densely-connected-convolutional-networks",
+            "source-cvf-open-access-paper-page",
+            "source-original-densenet-code-repository",
+            "source-meta-ai-publication-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2017-transformer",
+      "archiveEventId": "2017-transformer",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "Transformer",
+        "en": "Transformer"
+      },
+      "previewTitle": {
+        "zh": "Transformer",
+        "en": "Transformer"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1706.03762",
+            "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+            "https://research.google/pubs/attention-is-all-you-need/",
+            "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/"
+          ],
+          "preview": [
+            "source-transformer-arxiv",
+            "source-transformer-neurips",
+            "source-google-research-publication",
+            "source-google-transformer-blog"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "milestone-2018-bert",
+      "archiveEventId": "2018-bert",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "BERT",
+        "en": "BERT"
+      },
+      "previewTitle": {
+        "zh": "BERT",
+        "en": "BERT"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1810.04805",
+            "https://aclanthology.org/N19-1423/",
+            "https://github.com/google-research/bert",
+            "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/"
+          ],
+          "preview": [
+            "source-bert",
+            "source-acl-anthology-bert-paper",
+            "source-google-research-bert-repository",
+            "source-google-ai-bert-blog-post"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2018-gpt",
+      "archiveEventId": "2018-gpt",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "GPT",
+        "en": "GPT"
+      },
+      "previewTitle": {
+        "zh": "GPT",
+        "en": "GPT"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+            "https://openai.com/index/language-unsupervised/",
+            "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+            "https://openai.com/research/"
+          ],
+          "preview": [
+            "source-improving-language-understanding-by-generative-pre-training",
+            "source-openai-language-unsupervised-page",
+            "source-gpt-model-overview",
+            "source-alec-radford-research-context"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2019-ai-feynman",
+      "archiveEventId": "2019-ai-feynman",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "AI Feynman：自主科学规律发现",
+        "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+      },
+      "previewTitle": {
+        "zh": "AI Feynman：自主科学规律发现",
+        "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2020-alphafold",
+      "archiveEventId": "2020-alphafold",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "AlphaFold2",
+        "en": "AlphaFold2"
+      },
+      "previewTitle": {
+        "zh": "AlphaFold2",
+        "en": "AlphaFold2"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1038/s41586-021-03819-2",
+            "https://deepmind.google/technologies/alphafold/",
+            "https://alphafold.ebi.ac.uk/",
+            "https://github.com/google-deepmind/alphafold"
+          ],
+          "preview": [
+            "source-highly-accurate-protein-structure-prediction-with-alphafold",
+            "source-deepmind-alphafold-page",
+            "source-alphafold-protein-structure-database",
+            "source-alphafold-github-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2023-agents",
+      "archiveEventId": "2023-agents",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "智能体：LLM驱动的自主系统",
+        "en": "Agents: LLM-Driven Autonomous Systems"
+      },
+      "previewTitle": {
+        "zh": "智能体：LLM驱动的自主系统",
+        "en": "Agents: LLM-Driven Autonomous Systems"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2024-ai-scientist",
+      "archiveEventId": "2024-ai-scientist",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "AI科学家与自主实验室",
+        "en": "AI Scientists and Autonomous Laboratories"
+      },
+      "previewTitle": {
+        "zh": "AI科学家与自主实验室",
+        "en": "AI Scientists and Autonomous Laboratories"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2025-llm-competition",
+      "archiveEventId": "2025-llm-competition",
+      "archiveVariantId": "deep-learning",
+      "title": {
+        "zh": "大语言模型百花齐放",
+        "en": "A Flourishing Competition Among Large Language Models"
+      },
+      "previewTitle": {
+        "zh": "大语言模型百花齐放",
+        "en": "A Flourishing Competition Among Large Language Models"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 0,
+          "previewCount": 1,
+          "decreased": false,
+          "normal": [],
+          "preview": [
+            "source-legacy-event-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 2,
+          "previewCount": 2,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1950-turing-test",
+      "archiveEventId": "1950-turing-test",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "图灵测试",
+        "en": "Turing Test"
+      },
+      "previewTitle": {
+        "zh": "图灵测试",
+        "en": "Turing Test"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://academic.oup.com/mind/article/LIX/236/433/986238",
+            "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence",
+            "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+            "https://plato.stanford.edu/archives/spr2020/entries/turing-test/"
+          ],
+          "preview": [
+            "source-computing-machinery-and-intelligence",
+            "source-turing-digital-archive",
+            "source-internet-archive-digital-preview",
+            "source-stanford-encyclopedia-of-philosophy"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1958-lisp",
+      "archiveEventId": "1958-lisp",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "LISP",
+        "en": "LISP"
+      },
+      "previewTitle": {
+        "zh": "LISP",
+        "en": "LISP"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www-formal.stanford.edu/jmc/recursive.html",
+            "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view",
+            "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html"
+          ],
+          "preview": [
+            "source-recursive-functions-of-symbolic-expressions",
+            "source-lisp-i-programmer-s-manual",
+            "source-history-of-lisp"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2016-alphago",
+      "archiveEventId": "2016-alphago",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "AlphaGo",
+        "en": "AlphaGo"
+      },
+      "previewTitle": {
+        "zh": "AlphaGo",
+        "en": "AlphaGo"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.nature.com/articles/nature16961",
+            "https://deepmind.google/research/alphago/",
+            "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
+          ],
+          "preview": [
+            "source-alphago-nature-paper",
+            "source-deepmind-alphago-page",
+            "source-katago-analysis-engine"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1971-complexity-theory",
+      "archiveEventId": "1971-complexity-theory",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "NP 完全性",
+        "en": "NP-Completeness"
+      },
+      "previewTitle": {
+        "zh": "NP 完全性",
+        "en": "NP-Completeness"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://dl.acm.org/doi/10.1145/800157.805047",
+            "https://awards.acm.org/award_winners/cook_N991950",
+            "https://www.claymath.org/millennium/p-vs-np/"
+          ],
+          "preview": [
+            "source-the-complexity-of-theorem-proving-procedures",
+            "source-stephen-a-cook-acm-a-m-turing-award",
+            "source-clay-mathematics-institute-p-vs-np"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1971-vc-theory",
+      "archiveEventId": "1971-vc-theory",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "VC 理论",
+        "en": "VC Theory"
+      },
+      "previewTitle": {
+        "zh": "VC 理论",
+        "en": "VC Theory"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://epubs.siam.org/doi/10.1137/1116025",
+            "https://link.springer.com/book/10.1007/978-1-4757-2440-0",
+            "https://pubmed.ncbi.nlm.nih.gov/18252602/"
+          ],
+          "preview": [
+            "source-on-the-uniform-convergence-of-relative-frequencies",
+            "source-the-nature-of-statistical-learning-theory",
+            "source-an-overview-of-statistical-learning-theory"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1956-logic-theorist",
+      "archiveEventId": "1956-logic-theorist",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "逻辑理论家",
+        "en": "Logic Theorist"
+      },
+      "previewTitle": {
+        "zh": "逻辑理论家",
+        "en": "Logic Theorist"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+            "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555",
+            "https://amturing.acm.org/award_winners/newell_3167755.cfm"
+          ],
+          "preview": [
+            "source-the-logic-theory-machine",
+            "source-carnegie-mellon-university-archives",
+            "source-allen-newell-acm-a-m-turing-award"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1958-wangs-algorithm",
+      "archiveEventId": "1958-wangs-algorithm",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "王氏算法",
+        "en": "Wang's Algorithm"
+      },
+      "previewTitle": {
+        "zh": "王氏算法",
+        "en": "Wang's Algorithm"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+            "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/",
+            "https://digitalcommons.rockefeller.edu/faculty-members/109/"
+          ],
+          "preview": [
+            "source-proving-theorems-by-pattern-recognition-i",
+            "source-proving-theorems-by-pattern-recognition-ii",
+            "source-rockefeller-university-digital-commons-wang-hao"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1960-davis-putnam-dpll",
+      "archiveEventId": "1960-davis-putnam-dpll",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "DP/DPLL 算法",
+        "en": "Davis-Putnam & DPLL"
+      },
+      "previewTitle": {
+        "zh": "DP/DPLL 算法",
+        "en": "Davis-Putnam & DPLL"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://dl.acm.org/doi/10.1145/321033.321034",
+            "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+            "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg"
+          ],
+          "preview": [
+            "source-a-computing-procedure-for-quantification-theory",
+            "source-a-machine-program-for-theorem-proving",
+            "source-wikimedia-commons-hilary-putnam"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2014-adam",
+      "archiveEventId": "2014-adam",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Adam 优化器",
+        "en": "Adam Optimizer"
+      },
+      "previewTitle": {
+        "zh": "Adam 优化器",
+        "en": "Adam Optimizer"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1412.6980",
+            "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+            "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam"
+          ],
+          "preview": [
+            "source-adam-a-method-for-stochastic-optimization",
+            "source-pytorch-torch-optim-adam",
+            "source-tensorflow-keras-adam-optimizer"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2014-vgg",
+      "archiveEventId": "2014-vgg",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "VGG 网络",
+        "en": "VGG Networks"
+      },
+      "previewTitle": {
+        "zh": "VGG 网络",
+        "en": "VGG Networks"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1409.1556",
+            "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+            "https://pytorch.org/vision/stable/models/vgg.html"
+          ],
+          "preview": [
+            "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+            "source-oxford-vgg-very-deep-convnets",
+            "source-torchvision-vgg-model-family"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1975-genetic-algorithm",
+      "archiveEventId": "1975-genetic-algorithm",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "遗传算法",
+        "en": "Genetic Algorithms"
+      },
+      "previewTitle": {
+        "zh": "遗传算法",
+        "en": "Genetic Algorithms"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+            "https://deap.readthedocs.io/en/master/",
+            "https://cs.gmu.edu/~eclab/projects/ecj/"
+          ],
+          "preview": [
+            "source-adaptation-in-natural-and-artificial-systems",
+            "source-deap-evolutionary-computation-framework",
+            "source-ecj-evolutionary-computation-system"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2015-u-net",
+      "archiveEventId": "2015-u-net",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "U-Net",
+        "en": "U-Net"
+      },
+      "previewTitle": {
+        "zh": "U-Net",
+        "en": "U-Net"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1505.04597",
+            "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+            "https://github.com/MIC-DKFZ/nnUNet"
+          ],
+          "preview": [
+            "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+            "source-freiburg-u-net-release-page",
+            "source-nnu-net-implementation-project"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2015-faster-r-cnn",
+      "archiveEventId": "2015-faster-r-cnn",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Faster R-CNN",
+        "en": "Faster R-CNN"
+      },
+      "previewTitle": {
+        "zh": "Faster R-CNN",
+        "en": "Faster R-CNN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1506.01497",
+            "https://github.com/ShaoqingRen/faster_rcnn",
+            "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html"
+          ],
+          "preview": [
+            "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+            "source-shaoqingren-faster-rcnn",
+            "source-torchvision-faster-r-cnn-model"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1992-svm",
+      "archiveEventId": "1992-svm",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "支持向量机",
+        "en": "Support Vector Machines"
+      },
+      "previewTitle": {
+        "zh": "支持向量机",
+        "en": "Support Vector Machines"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://dl.acm.org/doi/10.1145/130385.130401",
+            "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+            "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html"
+          ],
+          "preview": [
+            "source-a-training-algorithm-for-optimal-margin-classifiers",
+            "source-libsvm-project-page",
+            "source-scikit-learn-svc"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1984-cart",
+      "archiveEventId": "1984-cart",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "CART 决策树",
+        "en": "CART"
+      },
+      "previewTitle": {
+        "zh": "CART 决策树",
+        "en": "CART"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+            "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+            "https://cran.r-project.org/web/packages/rpart/index.html"
+          ],
+          "preview": [
+            "source-classification-and-regression-trees",
+            "source-scikit-learn-decisiontreeclassifier",
+            "source-r-rpart-package"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1983-simulated-annealing",
+      "archiveEventId": "1983-simulated-annealing",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "模拟退火",
+        "en": "Simulated Annealing"
+      },
+      "previewTitle": {
+        "zh": "模拟退火",
+        "en": "Simulated Annealing"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.science.org/doi/10.1126/science.220.4598.671",
+            "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+            "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf"
+          ],
+          "preview": [
+            "source-optimization-by-simulated-annealing",
+            "source-scipy-dual-annealing",
+            "source-hedibert-course-pdf-mirror"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1996-lasso",
+      "archiveEventId": "1996-lasso",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Lasso 回归",
+        "en": "Lasso"
+      },
+      "previewTitle": {
+        "zh": "Lasso 回归",
+        "en": "Lasso"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+            "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
+            "https://glmnet.stanford.edu/"
+          ],
+          "preview": [
+            "source-regression-shrinkage-and-selection-via-the-lasso",
+            "source-scikit-learn-lasso",
+            "source-glmnet-project"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2015-googlenet-inception",
+      "archiveEventId": "2015-googlenet-inception",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "GoogLeNet / Inception",
+        "en": "GoogLeNet / Inception"
+      },
+      "previewTitle": {
+        "zh": "GoogLeNet / Inception",
+        "en": "GoogLeNet / Inception"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+            "https://pytorch.org/vision/stable/models/googlenet.html",
+            "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3"
+          ],
+          "preview": [
+            "source-going-deeper-with-convolutions",
+            "source-torchvision-googlenet",
+            "source-tensorflow-keras-inceptionv3"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1965-resolution-method",
+      "archiveEventId": "1965-resolution-method",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "归结方法",
+        "en": "Resolution Method"
+      },
+      "previewTitle": {
+        "zh": "归结方法",
+        "en": "Resolution Method"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1145/321250.321253",
+            "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+            "https://plato.stanford.edu/entries/reasoning-automated/"
+          ],
+          "preview": [
+            "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+            "source-journal-of-symbolic-logic-review-record",
+            "source-stanford-encyclopedia-automated-reasoning"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1973-prolog",
+      "archiveEventId": "1973-prolog",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "PROLOG",
+        "en": "PROLOG"
+      },
+      "previewTitle": {
+        "zh": "PROLOG",
+        "en": "PROLOG"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1145/155360.155362",
+            "https://www.prolog-heritage.org/en/Prolog_50.html",
+            "https://www.swi-prolog.org/pldoc/doc_for?object=manual"
+          ],
+          "preview": [
+            "source-the-birth-of-prolog",
+            "source-prolog-heritage",
+            "source-swi-prolog-documentation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1966-eliza",
+      "archiveEventId": "1966-eliza",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "ELIZA",
+        "en": "ELIZA"
+      },
+      "previewTitle": {
+        "zh": "ELIZA",
+        "en": "ELIZA"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1145/365153.365168",
+            "https://news.mit.edu/2008/obit-weizenbaum-0310",
+            "https://sites.google.com/view/elizagen-org/"
+          ],
+          "preview": [
+            "source-eliza-cacm-paper",
+            "source-mit-news-obituary-for-joseph-weizenbaum",
+            "source-eliza-source-reconstruction-project"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1982-hopfield-network",
+      "archiveEventId": "1982-hopfield-network",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Hopfield 网络",
+        "en": "Hopfield Network"
+      },
+      "previewTitle": {
+        "zh": "Hopfield 网络",
+        "en": "Hopfield Network"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1073/pnas.79.8.2554",
+            "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+            "https://pni.princeton.edu/people/john-j-hopfield"
+          ],
+          "preview": [
+            "source-neural-networks-and-physical-systems",
+            "source-nobel-prize-john-j-hopfield-facts",
+            "source-princeton-neuroscience-institute-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2014-dropout",
+      "archiveEventId": "2014-dropout",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Dropout",
+        "en": "Dropout"
+      },
+      "previewTitle": {
+        "zh": "Dropout",
+        "en": "Dropout"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://jmlr.org/papers/v15/srivastava14a.html",
+            "https://arxiv.org/abs/1207.0580",
+            "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html"
+          ],
+          "preview": [
+            "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+            "source-improving-neural-networks-by-preventing-co-adaptation",
+            "source-pytorch-torch-nn-dropout"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2016-yolo",
+      "archiveEventId": "2016-yolo",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "YOLO",
+        "en": "YOLO"
+      },
+      "previewTitle": {
+        "zh": "YOLO",
+        "en": "YOLO"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1506.02640",
+            "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+            "https://pjreddie.com/darknet/yolo/"
+          ],
+          "preview": [
+            "source-you-only-look-once-unified-real-time-object-detection",
+            "source-cvpr-open-access-paper-page",
+            "source-darknet-yolo-project-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2013-word2vec",
+      "archiveEventId": "2013-word2vec",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Word2Vec",
+        "en": "Word2Vec"
+      },
+      "previewTitle": {
+        "zh": "Word2Vec",
+        "en": "Word2Vec"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1301.3781",
+            "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
+            "https://code.google.com/archive/p/word2vec/"
+          ],
+          "preview": [
+            "source-efficient-estimation-of-word-representations-in-vector-space",
+            "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
+            "source-google-code-archive-word2vec"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2009-imagenet",
+      "archiveEventId": "2009-imagenet",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "ImageNet",
+        "en": "ImageNet"
+      },
+      "previewTitle": {
+        "zh": "ImageNet",
+        "en": "ImageNet"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://ieeexplore.ieee.org/document/5206848",
+            "https://www.image-net.org/",
+            "https://profiles.stanford.edu/fei-fei-li"
+          ],
+          "preview": [
+            "source-imagenet-a-large-scale-hierarchical-image-database",
+            "source-imagenet-project-website",
+            "source-stanford-profile-fei-fei-li"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2013-dqn",
+      "archiveEventId": "2013-dqn",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "深度 Q 网络",
+        "en": "Deep Q Network"
+      },
+      "previewTitle": {
+        "zh": "深度 Q 网络",
+        "en": "Deep Q Network"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1312.5602",
+            "https://www.nature.com/articles/nature14236",
+            "https://deepmind.google/discover/blog/deep-reinforcement-learning/"
+          ],
+          "preview": [
+            "source-playing-atari-with-deep-reinforcement-learning",
+            "source-human-level-control-through-deep-reinforcement-learning",
+            "source-google-deepmind-deep-reinforcement-learning"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2003-lda",
+      "archiveEventId": "2003-lda",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "潜在狄利克雷分配",
+        "en": "Latent Dirichlet Allocation"
+      },
+      "previewTitle": {
+        "zh": "潜在狄利克雷分配",
+        "en": "Latent Dirichlet Allocation"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://jmlr.org/papers/v3/blei03a.html",
+            "https://www.cs.columbia.edu/~blei/",
+            "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html"
+          ],
+          "preview": [
+            "source-latent-dirichlet-allocation",
+            "source-david-m-blei-homepage",
+            "source-scikit-learn-latentdirichletallocation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1970-shrdlu",
+      "archiveEventId": "1970-shrdlu",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "SHRDLU",
+        "en": "SHRDLU"
+      },
+      "previewTitle": {
+        "zh": "SHRDLU",
+        "en": "SHRDLU"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://dspace.mit.edu/handle/1721.1/7095",
+            "https://www.cs.stanford.edu/people/terry-winograd",
+            "https://hdl.handle.net/11299/107717"
+          ],
+          "preview": [
+            "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+            "source-terry-winograd-stanford-computer-science",
+            "source-terry-winograd-oral-history-cbi"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1997-deep-blue",
+      "archiveEventId": "1997-deep-blue",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "深蓝",
+        "en": "Deep Blue"
+      },
+      "previewTitle": {
+        "zh": "深蓝",
+        "en": "Deep Blue"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://research.ibm.com/people/murray-campbell",
+            "https://www.computerhistory.org/chess/",
+            "https://www.ibm.com/history/deep-blue"
+          ],
+          "preview": [
+            "source-murray-campbell-ibm-research",
+            "source-mastering-the-game-computer-history-museum",
+            "source-ibm100-deep-blue"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1974-frame",
+      "archiveEventId": "1974-frame",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "框架",
+        "en": "Frame"
+      },
+      "previewTitle": {
+        "zh": "框架",
+        "en": "Frame"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+            "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+            "https://dspace.mit.edu/handle/1721.1/6089"
+          ],
+          "preview": [
+            "source-a-framework-for-representing-knowledge",
+            "source-marvin-minsky-obituary-mit-news",
+            "source-frame-mit-ai-memo-bibliographic-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1965-dendral",
+      "archiveEventId": "1965-dendral",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "DENDRAL",
+        "en": "DENDRAL"
+      },
+      "previewTitle": {
+        "zh": "DENDRAL",
+        "en": "DENDRAL"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1021/ci60034a002",
+            "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+            "http://ksl-web.stanford.edu/"
+          ],
+          "preview": [
+            "source-applications-of-artificial-intelligence-for-chemical-inference",
+            "source-acm-turing-award-profile-for-edward-feigenbaum",
+            "source-stanford-knowledge-systems-laboratory-history"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1999-sift",
+      "archiveEventId": "1999-sift",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "SIFT",
+        "en": "SIFT"
+      },
+      "previewTitle": {
+        "zh": "SIFT",
+        "en": "SIFT"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+            "https://doi.org/10.1023/B:VISI.0000029664.99615.94",
+            "https://www.cs.ubc.ca/people/david-lowe"
+          ],
+          "preview": [
+            "source-object-recognition-from-local-scale-invariant-features",
+            "source-distinctive-image-features-from-scale-invariant-keypoints",
+            "source-david-lowe-ubc-computer-science"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2008-tsne",
+      "archiveEventId": "2008-tsne",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "t-SNE",
+        "en": "t-SNE"
+      },
+      "previewTitle": {
+        "zh": "t-SNE",
+        "en": "t-SNE"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://jmlr.org/papers/v9/vandermaaten08a.html",
+            "https://lvdmaaten.github.io/",
+            "https://distill.pub/2016/misread-tsne/"
+          ],
+          "preview": [
+            "source-visualizing-data-using-t-sne",
+            "source-laurens-van-der-maaten-homepage",
+            "source-how-to-use-t-sne-effectively-distill"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1958-rosenblatt-perceptron",
+      "archiveEventId": "1957-perceptron",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "感知机与连接主义",
+        "en": "The Perceptron and Connectionism"
+      },
+      "previewTitle": {
+        "zh": "感知机与连接主义",
+        "en": "The Perceptron and Connectionism"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1037/h0042519",
+            "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+            "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
+          ],
+          "preview": [
+            "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+            "source-cornell-chronicle-perceptron-retrospective",
+            "source-smithsonian-mark-i-perceptron-object-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2006-dbn",
+      "archiveEventId": "2006-dbn",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "深度置信网络",
+        "en": "Deep Belief Network"
+      },
+      "previewTitle": {
+        "zh": "深度置信网络",
+        "en": "Deep Belief Network"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1162/neco.2006.18.7.1527",
+            "https://doi.org/10.1126/science.1127647",
+            "https://www.cs.toronto.edu/~hinton/pages/photos.html"
+          ],
+          "preview": [
+            "source-a-fast-learning-algorithm-for-deep-belief-nets",
+            "source-reducing-the-dimensionality-of-data-with-neural-networks",
+            "source-geoffrey-hinton-photo-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1988-td-update",
+      "archiveEventId": "1988-td-update",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "时序差分更新",
+        "en": "Temporal-Difference Update"
+      },
+      "previewTitle": {
+        "zh": "时序差分更新",
+        "en": "Temporal-Difference Update"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1007/BF00115009",
+            "http://incompleteideas.net/",
+            "https://awards.acm.org/about/2024-turing"
+          ],
+          "preview": [
+            "source-learning-to-predict-by-the-methods-of-temporal-differences",
+            "source-richard-sutton-homepage",
+            "source-acm-2024-turing-award-announcement"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1985-bayesian-network",
+      "archiveEventId": "1985-bayesian-network",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "贝叶斯网络",
+        "en": "Bayesian Network"
+      },
+      "previewTitle": {
+        "zh": "贝叶斯网络",
+        "en": "Bayesian Network"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+            "https://bayes.cs.ucla.edu/home.htm",
+            "https://samueli.ucla.edu/judea-pearl/"
+          ],
+          "preview": [
+            "source-bayesian-networks",
+            "source-judea-pearl-homepage",
+            "source-judea-pearl-ucla-samueli"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1990-otter",
+      "archiveEventId": "1990-otter",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Otter 自动定理证明器",
+        "en": "Otter"
+      },
+      "previewTitle": {
+        "zh": "Otter 自动定理证明器",
+        "en": "Otter"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/cs/0310056",
+            "https://arxiv.org/abs/cs/0205078",
+            "https://arxiv.org/abs/0806.0250"
+          ],
+          "preview": [
+            "source-otter-3-3-reference-manual",
+            "source-a-spectrum-of-applications-of-automated-reasoning",
+            "source-checking-clinical-guidelines-using-automated-reasoning-tools"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2011-ibm-watson",
+      "archiveEventId": "2011-ibm-watson",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "IBM Watson",
+        "en": "IBM Watson"
+      },
+      "previewTitle": {
+        "zh": "IBM Watson",
+        "en": "IBM Watson"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1016/j.artint.2012.06.009",
+            "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
+            "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+            "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg"
+          ],
+          "preview": [
+            "source-watson-beyond-jeopardy",
+            "source-building-watson-an-overview-of-the-deepqa-project",
+            "source-ibm-watson-system-photo",
+            "source-david-ferrucci-portrait"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1951-strachey-draughts",
+      "archiveEventId": "1951-strachey-draughts",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "克里斯托弗·斯特雷奇 的跳棋程序",
+        "en": "Christopher Strachey's Draughts"
+      },
+      "previewTitle": {
+        "zh": "克里斯托弗·斯特雷奇 的跳棋程序",
+        "en": "Christopher Strachey's Draughts"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://dl.acm.org/doi/10.1145/1455270.1455277",
+            "https://history.computer.org/pioneers/strachey.html",
+            "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+            "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
+          ],
+          "preview": [
+            "source-logical-or-non-mathematical-programmes",
+            "source-computer-pioneers-christopher-strachey",
+            "source-strachey-draughts-program-screenshot",
+            "source-checkers-board-photo"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1994-chinook",
+      "archiveEventId": "1994-chinook",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Chinook 跳棋程序",
+        "en": "Chinook"
+      },
+      "previewTitle": {
+        "zh": "Chinook 跳棋程序",
+        "en": "Chinook"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+            "https://www.science.org/doi/10.1126/science.1144079",
+            "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+            "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg"
+          ],
+          "preview": [
+            "source-chinook-project-home",
+            "source-checkers-is-solved",
+            "source-chinook-publications",
+            "source-jonathan-schaeffer-portrait"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1959-pandemonium",
+      "archiveEventId": "1959-pandemonium",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Pandemonium 感知架构",
+        "en": "Pandemonium"
+      },
+      "previewTitle": {
+        "zh": "Pandemonium 感知架构",
+        "en": "Pandemonium"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1007/978-1-4899-1221-6_4",
+            "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+            "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+            "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary"
+          ],
+          "preview": [
+            "source-pandemonium-a-paradigm-for-learning",
+            "source-pandemonium-architecture-image",
+            "source-oliver-selfridge-portrait",
+            "source-oliver-selfridge-obituary-the-guardian"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1984-cyc",
+      "archiveEventId": "1984-cyc",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Cyc 常识知识库",
+        "en": "Cyc"
+      },
+      "previewTitle": {
+        "zh": "Cyc 常识知识库",
+        "en": "Cyc"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://dl.acm.org/doi/book/10.5555/70571",
+            "https://dl.acm.org/doi/10.1145/122296.122308",
+            "https://cyc.com/",
+            "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png"
+          ],
+          "preview": [
+            "source-building-large-knowledge-based-systems",
+            "source-the-evolution-of-cycl",
+            "source-cyc",
+            "source-cyc-projects-logo-image"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1980-xcon-r1",
+      "archiveEventId": "1980-xcon-r1",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "XCON / R1 专家系统",
+        "en": "XCON-R1"
+      },
+      "previewTitle": {
+        "zh": "XCON / R1 专家系统",
+        "en": "XCON-R1"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+            "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+            "https://en.wikipedia.org/wiki/Xcon",
+            "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg"
+          ],
+          "preview": [
+            "source-r1-an-expert-in-the-computer-systems-domain",
+            "source-r1-revisited-four-years-in-the-trenches",
+            "source-xcon-overview",
+            "source-dec-vax-11-780-photo"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1957-kmeans",
+      "archiveEventId": "1957-kmeans",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "K-means 聚类",
+        "en": "K-means"
+      },
+      "previewTitle": {
+        "zh": "K-means 聚类",
+        "en": "K-means"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1109/TIT.1982.1056489",
+            "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+            "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+            "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg"
+          ],
+          "preview": [
+            "source-least-squares-quantization-in-pcm",
+            "source-bell-labs-k-means-history-note",
+            "source-scikit-learn-kmeans-documentation",
+            "source-iris-flowers-k-means-clustering-graphic"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-1996-dbscan",
+      "archiveEventId": "1996-dbscan",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "DBSCAN 密度聚类",
+        "en": "DBSCAN"
+      },
+      "previewTitle": {
+        "zh": "DBSCAN 密度聚类",
+        "en": "DBSCAN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://dl.acm.org/doi/10.5555/3001460.3001507",
+            "https://doi.org/10.1145/3068335",
+            "https://scikit-learn.org/stable/modules/clustering.html#dbscan",
+            "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg"
+          ],
+          "preview": [
+            "source-a-density-based-algorithm-for-discovering-clusters",
+            "source-dbscan-revisited-revisited",
+            "source-scikit-learn-dbscan-documentation",
+            "source-martin-ester-portrait"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-2000-spectral-clustering",
+      "archiveEventId": "2000-spectral-clustering",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "谱聚类",
+        "en": "Spectral Clustering"
+      },
+      "previewTitle": {
+        "zh": "谱聚类",
+        "en": "Spectral Clustering"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1109/34.868688",
+            "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+            "https://scikit-learn.org/stable/modules/clustering.html#spectral-clustering",
+            "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
+          ],
+          "preview": [
+            "source-normalized-cuts-and-image-segmentation",
+            "source-on-spectral-clustering-analysis-and-an-algorithm",
+            "source-scikit-learn-spectral-clustering-documentation",
+            "source-spectral-graph-illustration"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1967-knn",
+      "archiveEventId": "ai100-1967-knn",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "KNN 最近邻",
+        "en": "KNN"
+      },
+      "previewTitle": {
+        "zh": "KNN 最近邻",
+        "en": "KNN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1109/TIT.1967.1053964",
+            "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+            "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+            "https://scikit-learn.org/stable/modules/neighbors.html"
+          ],
+          "preview": [
+            "source-nearest-neighbor-pattern-classification",
+            "source-stanford-hosted-paper-pdf",
+            "source-k-nearest-neighbors-algorithm-overview",
+            "source-scikit-learn-nearest-neighbors-documentation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1970-ridge",
+      "archiveEventId": "ai100-1970-ridge",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "岭回归",
+        "en": "Ridge"
+      },
+      "previewTitle": {
+        "zh": "岭回归",
+        "en": "Ridge"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1080/00401706.1970.10488634",
+            "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+            "https://en.wikipedia.org/wiki/Ridge_regression",
+            "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification"
+          ],
+          "preview": [
+            "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+            "source-open-pdf-copy-of-the-technometrics-paper",
+            "source-ridge-regression-overview",
+            "source-scikit-learn-ridge-documentation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2005-hog",
+      "archiveEventId": "ai100-2005-hog",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "HOG 方向梯度直方图",
+        "en": "HOG"
+      },
+      "previewTitle": {
+        "zh": "HOG 方向梯度直方图",
+        "en": "HOG"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+            "https://doi.org/10.1109/CVPR.2005.177",
+            "https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients",
+            "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html"
+          ],
+          "preview": [
+            "source-histograms-of-oriented-gradients-for-human-detection",
+            "source-ieee-cvpr-paper-record",
+            "source-histogram-of-oriented-gradients-overview",
+            "source-scikit-image-hog-example"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2006-surf",
+      "archiveEventId": "ai100-2006-surf",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "SURF 加速稳健特征",
+        "en": "SURF"
+      },
+      "previewTitle": {
+        "zh": "SURF 加速稳健特征",
+        "en": "SURF"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1007/11744023_32",
+            "https://people.ee.ethz.ch/~surf/eccv06.pdf",
+            "https://people.ee.ethz.ch/~surf/",
+            "https://en.wikipedia.org/wiki/Speeded_up_robust_features"
+          ],
+          "preview": [
+            "source-surf-speeded-up-robust-features",
+            "source-eth-surf-paper-pdf",
+            "source-original-surf-project-page",
+            "source-surf-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1997-kernel-pca",
+      "archiveEventId": "ai100-1997-kernel-pca",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Kernel PCA",
+        "en": "Kernel PCA"
+      },
+      "previewTitle": {
+        "zh": "Kernel PCA",
+        "en": "Kernel PCA"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1162/089976698300017467",
+            "https://is.mpg.de/ei/publications/730",
+            "https://www.mlpack.org/papers/kpca.pdf",
+            "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html"
+          ],
+          "preview": [
+            "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+            "source-max-planck-publication-page",
+            "source-open-kernel-pca-pdf",
+            "source-scikit-learn-kernelpca-documentation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1999-nmf",
+      "archiveEventId": "ai100-1999-nmf",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "非负矩阵分解",
+        "en": "NMF"
+      },
+      "previewTitle": {
+        "zh": "非负矩阵分解",
+        "en": "NMF"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1038/44565",
+            "https://www.nature.com/articles/44565",
+            "https://pubmed.ncbi.nlm.nih.gov/10548103/",
+            "https://scikit-learn.org/stable/modules/decomposition.html#nmf"
+          ],
+          "preview": [
+            "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+            "source-nature-article-page",
+            "source-pubmed-record-for-the-nature-paper",
+            "source-scikit-learn-nmf-documentation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2000-isomap",
+      "archiveEventId": "ai100-2000-isomap",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Isomap",
+        "en": "Isomap"
+      },
+      "previewTitle": {
+        "zh": "Isomap",
+        "en": "Isomap"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1126/science.290.5500.2319",
+            "https://www.science.org/doi/10.1126/science.290.5500.2319",
+            "https://pubmed.ncbi.nlm.nih.gov/11125149/",
+            "https://scikit-learn.org/stable/modules/manifold.html#isomap"
+          ],
+          "preview": [
+            "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+            "source-science-article-page",
+            "source-pubmed-record-for-isomap",
+            "source-scikit-learn-isomap-documentation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2000-lle",
+      "archiveEventId": "ai100-2000-lle",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "局部线性嵌入",
+        "en": "Locally Linear Embedding"
+      },
+      "previewTitle": {
+        "zh": "局部线性嵌入",
+        "en": "Locally Linear Embedding"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1126/science.290.5500.2323",
+            "https://www.science.org/doi/10.1126/science.290.5500.2323",
+            "https://pubmed.ncbi.nlm.nih.gov/11125150/",
+            "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding"
+          ],
+          "preview": [
+            "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+            "source-science-article-page",
+            "source-pubmed-record-for-lle",
+            "source-scikit-learn-lle-documentation"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1943-mcculloch-pitts-neuron",
+      "archiveEventId": "ai100-1943-mcculloch-pitts-neuron",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "麦卡洛克-皮茨神经元",
+        "en": "McCulloch-Pitts Neuron"
+      },
+      "previewTitle": {
+        "zh": "麦卡洛克-皮茨神经元",
+        "en": "McCulloch-Pitts Neuron"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1007/BF02478259",
+            "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
+            "https://www.historyofinformation.com/detail.php?id=634",
+            "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg"
+          ],
+          "preview": [
+            "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+            "source-mcculloch-pitts-neuron-overview",
+            "source-history-of-information-entry",
+            "source-walter-pitts-blackboard-photo"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1951-snarc",
+      "archiveEventId": "ai100-1951-snarc",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "SNARC",
+        "en": "SNARC"
+      },
+      "previewTitle": {
+        "zh": "SNARC",
+        "en": "SNARC"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://history-computer.com/snarc/",
+            "https://historyof.ai/snarc/",
+            "https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator",
+            "https://www.historyofinformation.com/detail.php?id=3884"
+          ],
+          "preview": [
+            "source-snarc-history-overview",
+            "source-history-of-ai-snarc-article",
+            "source-stochastic-neural-analog-reinforcement-calculator-overview",
+            "source-history-of-information-snarc-entry"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1982-som",
+      "archiveEventId": "ai100-1982-som",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "自组织映射",
+        "en": "Self-organizing Map"
+      },
+      "previewTitle": {
+        "zh": "自组织映射",
+        "en": "Self-organizing Map"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1007/BF00337288",
+            "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+            "https://en.wikipedia.org/wiki/Self-organizing_map",
+            "https://doi.org/10.1016/j.neunet.2012.09.018"
+          ],
+          "preview": [
+            "source-self-organized-formation-of-topologically-correct-feature-maps",
+            "source-open-som-paper-pdf",
+            "source-self-organizing-map-overview",
+            "source-essentials-of-the-self-organizing-map"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1967-back-propagation",
+      "archiveEventId": "ai100-1967-back-propagation",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "反向传播",
+        "en": "Back-propagation"
+      },
+      "previewTitle": {
+        "zh": "反向传播",
+        "en": "Back-propagation"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1038/323533a0",
+            "https://doi.org/10.1109/PGEC.1967.264666",
+            "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+            "https://en.wikipedia.org/wiki/Backpropagation"
+          ],
+          "preview": [
+            "source-learning-representations-by-back-propagating-errors",
+            "source-a-theory-of-adaptive-pattern-classifiers",
+            "source-hinton-hosted-nature-back-propagation-pdf",
+            "source-backpropagation-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1969-relu",
+      "archiveEventId": "ai100-1969-relu",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "ReLU",
+        "en": "ReLU"
+      },
+      "previewTitle": {
+        "zh": "ReLU",
+        "en": "ReLU"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://proceedings.mlr.press/v15/glorot11a.html",
+            "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf",
+            "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)",
+            "https://mila.quebec/en/directory/yoshua-bengio"
+          ],
+          "preview": [
+            "source-deep-sparse-rectifier-neural-networks",
+            "source-rectified-linear-units-improve-restricted-boltzmann-machines",
+            "source-rectifier-activation-overview",
+            "source-yoshua-bengio-profile-at-mila"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1980-neocognitron",
+      "archiveEventId": "ai100-1980-neocognitron",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "新认知机",
+        "en": "Neocognitron"
+      },
+      "previewTitle": {
+        "zh": "新认知机",
+        "en": "Neocognitron"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1007/BF00344251",
+            "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
+            "https://www.scholarpedia.org/article/Neocognitron",
+            "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b"
+          ],
+          "preview": [
+            "source-neocognitron",
+            "source-open-neocognitron-pdf",
+            "source-scholarpedia-neocognitron-article",
+            "source-semantic-scholar-paper-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1989-lenet",
+      "archiveEventId": "1989-cnn",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "卷积神经网络与 LeNet",
+        "en": "Convolutional Networks and LeNet"
+      },
+      "previewTitle": {
+        "zh": "卷积神经网络与 LeNet",
+        "en": "Convolutional Networks and LeNet"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1162/neco.1989.1.4.541",
+            "https://yann.lecun.com/exdb/lenet/",
+            "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+            "https://yann.lecun.com/"
+          ],
+          "preview": [
+            "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+            "source-lenet-5-demos-and-documentation",
+            "source-gradient-based-learning-applied-to-document-recognition",
+            "source-yann-lecun-s-home-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2000-neural-language-model",
+      "archiveEventId": "ai100-2000-neural-language-model",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "神经语言模型",
+        "en": "Neural Language Model"
+      },
+      "previewTitle": {
+        "zh": "神经语言模型",
+        "en": "Neural Language Model"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://www.jmlr.org/papers/v3/bengio03a.html",
+            "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+            "https://dblp.org/rec/journals/jmlr/BengioDVJ03",
+            "https://mila.quebec/en/directory/yoshua-bengio"
+          ],
+          "preview": [
+            "source-a-neural-probabilistic-language-model",
+            "source-jmlr-full-paper-pdf",
+            "source-dblp-record",
+            "source-yoshua-bengio-profile-at-mila"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2012-alexnet",
+      "archiveEventId": "2012-alexnet",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "AlexNet 与 ImageNet 突破",
+        "en": "AlexNet and the ImageNet Breakthrough"
+      },
+      "previewTitle": {
+        "zh": "AlexNet 与 ImageNet 突破",
+        "en": "AlexNet and the ImageNet Breakthrough"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+            "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+            "https://www.image-net.org/challenges/LSVRC/index.php",
+            "https://en.wikipedia.org/wiki/AlexNet"
+          ],
+          "preview": [
+            "source-alexnet-neurips-paper",
+            "source-alexnet-neurips-pdf",
+            "source-imagenet-challenge",
+            "source-alexnet-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2015-resnet",
+      "archiveEventId": "2015-resnet",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "ResNet",
+        "en": "ResNet"
+      },
+      "previewTitle": {
+        "zh": "ResNet",
+        "en": "ResNet"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1512.03385",
+            "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+            "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+            "https://people.csail.mit.edu/kaiming/"
+          ],
+          "preview": [
+            "source-deep-residual-learning-for-image-recognition",
+            "source-cvf-open-access-paper-page",
+            "source-cvpr-full-paper-pdf",
+            "source-kaiming-he-profile-at-mit-csail"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2015-batch-normalization",
+      "archiveEventId": "ai100-2015-batch-normalization",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "批归一化",
+        "en": "Batch Normalization"
+      },
+      "previewTitle": {
+        "zh": "批归一化",
+        "en": "Batch Normalization"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://proceedings.mlr.press/v37/ioffe15.html",
+            "https://arxiv.org/abs/1502.03167",
+            "https://research.google/pubs/batch-normalization-accelerating-deep-network-training-by-reducing-internal-covariate-shift/",
+            "https://research.google.com/pubs/archive/43442.pdf"
+          ],
+          "preview": [
+            "source-batch-normalization",
+            "source-batch-normalization-on-arxiv",
+            "source-google-research-publication-page",
+            "source-google-research-archived-pdf"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2017-densenet",
+      "archiveEventId": "2016-densenet",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "DenseNet",
+        "en": "DenseNet"
+      },
+      "previewTitle": {
+        "zh": "DenseNet",
+        "en": "DenseNet"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1608.06993",
+            "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+            "https://github.com/liuzhuang13/DenseNet",
+            "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/"
+          ],
+          "preview": [
+            "source-densely-connected-convolutional-networks",
+            "source-cvf-open-access-paper-page",
+            "source-original-densenet-code-repository",
+            "source-meta-ai-publication-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2017-transformer",
+      "archiveEventId": "2017-transformer",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Transformer",
+        "en": "Transformer"
+      },
+      "previewTitle": {
+        "zh": "Transformer",
+        "en": "Transformer"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1706.03762",
+            "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+            "https://research.google/pubs/attention-is-all-you-need/",
+            "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/"
+          ],
+          "preview": [
+            "source-transformer-arxiv",
+            "source-transformer-neurips",
+            "source-google-research-publication",
+            "source-google-transformer-blog"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2020-vit",
+      "archiveEventId": "ai100-2020-vit",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "视觉 Transformer",
+        "en": "Vision Transformer"
+      },
+      "previewTitle": {
+        "zh": "视觉 Transformer",
+        "en": "Vision Transformer"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/2010.11929",
+            "https://openreview.net/forum?id=YicbFdNTTy",
+            "https://openreview.net/pdf?id=YicbFdNTTy",
+            "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/"
+          ],
+          "preview": [
+            "source-an-image-is-worth-16x16-words",
+            "source-iclr-openreview-page",
+            "source-openreview-full-paper-pdf",
+            "source-google-research-publication-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1997-lstm",
+      "archiveEventId": "1997-lstm",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "LSTM 与门控记忆",
+        "en": "LSTM and Gated Memory"
+      },
+      "previewTitle": {
+        "zh": "LSTM 与门控记忆",
+        "en": "LSTM and Gated Memory"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1162/neco.1997.9.8.1735",
+            "https://www.bioinf.jku.at/publications/older/2604.pdf",
+            "https://en.wikipedia.org/wiki/Long_short-term_memory",
+            "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/"
+          ],
+          "preview": [
+            "source-long-short-term-memory",
+            "source-author-hosted-lstm-paper-pdf",
+            "source-lstm-overview",
+            "source-sepp-hochreiter-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2014-gan",
+      "archiveEventId": "2014-gan",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "生成对抗网络",
+        "en": "Generative Adversarial Networks"
+      },
+      "previewTitle": {
+        "zh": "生成对抗网络",
+        "en": "Generative Adversarial Networks"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1406.2661",
+            "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+            "https://arxiv.org/abs/1701.00160",
+            "https://www.iangoodfellow.com/"
+          ],
+          "preview": [
+            "source-generative-adversarial-nets",
+            "source-neurips-paper-page",
+            "source-goodfellow-gan-tutorial",
+            "source-ian-goodfellow-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2014-neural-machine-translation-attention",
+      "archiveEventId": "2014-attention",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "带注意力机制的神经机器翻译",
+        "en": "Neural Machine Translation with Attention"
+      },
+      "previewTitle": {
+        "zh": "带注意力机制的神经机器翻译",
+        "en": "Neural Machine Translation with Attention"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1409.0473",
+            "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
+            "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+            "https://mila.quebec/en/person/yoshua-bengio/"
+          ],
+          "preview": [
+            "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+            "source-iclr-2015-paper-page",
+            "source-attention-mechanism-overview",
+            "source-yoshua-bengio-lab-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2018-bert",
+      "archiveEventId": "2018-bert",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "BERT",
+        "en": "BERT"
+      },
+      "previewTitle": {
+        "zh": "BERT",
+        "en": "BERT"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1810.04805",
+            "https://aclanthology.org/N19-1423/",
+            "https://github.com/google-research/bert",
+            "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/"
+          ],
+          "preview": [
+            "source-bert",
+            "source-acl-anthology-bert-paper",
+            "source-google-research-bert-repository",
+            "source-google-ai-bert-blog-post"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2018-gpt",
+      "archiveEventId": "2018-gpt",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "GPT",
+        "en": "GPT"
+      },
+      "previewTitle": {
+        "zh": "GPT",
+        "en": "GPT"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+            "https://openai.com/index/language-unsupervised/",
+            "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+            "https://openai.com/research/"
+          ],
+          "preview": [
+            "source-improving-language-understanding-by-generative-pre-training",
+            "source-openai-language-unsupervised-page",
+            "source-gpt-model-overview",
+            "source-alec-radford-research-context"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2020-alphafold2",
+      "archiveEventId": "2020-alphafold",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "AlphaFold2",
+        "en": "AlphaFold2"
+      },
+      "previewTitle": {
+        "zh": "AlphaFold2",
+        "en": "AlphaFold2"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1038/s41586-021-03819-2",
+            "https://deepmind.google/technologies/alphafold/",
+            "https://alphafold.ebi.ac.uk/",
+            "https://github.com/google-deepmind/alphafold"
+          ],
+          "preview": [
+            "source-highly-accurate-protein-structure-prediction-with-alphafold",
+            "source-deepmind-alphafold-page",
+            "source-alphafold-protein-structure-database",
+            "source-alphafold-github-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2021-clip",
+      "archiveEventId": "ai100-2021-clip",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "CLIP",
+        "en": "CLIP"
+      },
+      "previewTitle": {
+        "zh": "CLIP",
+        "en": "CLIP"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/2103.00020",
+            "https://proceedings.mlr.press/v139/radford21a.html",
+            "https://openai.com/index/clip/",
+            "https://github.com/openai/CLIP"
+          ],
+          "preview": [
+            "source-learning-transferable-visual-models-from-natural-language-supervision",
+            "source-icml-clip-paper-page",
+            "source-openai-clip-blog-post",
+            "source-openai-clip-github-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2021-dalle",
+      "archiveEventId": "ai100-2021-dalle",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "DALL-E",
+        "en": "DALL-E"
+      },
+      "previewTitle": {
+        "zh": "DALL-E",
+        "en": "DALL-E"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/2102.12092",
+            "https://proceedings.mlr.press/v139/ramesh21a.html",
+            "https://openai.com/index/dall-e/",
+            "https://en.wikipedia.org/wiki/DALL-E"
+          ],
+          "preview": [
+            "source-zero-shot-text-to-image-generation",
+            "source-icml-dall-e-paper-page",
+            "source-openai-dall-e-blog-post",
+            "source-dall-e-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2022-stable-diffusion",
+      "archiveEventId": "ai100-2022-stable-diffusion",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Stable Diffusion",
+        "en": "Stable Diffusion"
+      },
+      "previewTitle": {
+        "zh": "Stable Diffusion",
+        "en": "Stable Diffusion"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/2112.10752",
+            "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+            "https://github.com/CompVis/latent-diffusion",
+            "https://stability.ai/stable-image"
+          ],
+          "preview": [
+            "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+            "source-cvpr-paper-page",
+            "source-compvis-latent-diffusion-repository",
+            "source-stability-ai-stable-diffusion-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2023-segment-anything",
+      "archiveEventId": "ai100-2023-segment-anything",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Segment Anything",
+        "en": "Segment Anything"
+      },
+      "previewTitle": {
+        "zh": "Segment Anything",
+        "en": "Segment Anything"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/2304.02643",
+            "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+            "https://segment-anything.com/",
+            "https://github.com/facebookresearch/segment-anything"
+          ],
+          "preview": [
+            "source-segment-anything",
+            "source-iccv-paper-page",
+            "source-segment-anything-project-page",
+            "source-segment-anything-github-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2021-swin-transformer",
+      "archiveEventId": "ai100-2021-swin-transformer",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Swin Transformer",
+        "en": "Swin Transformer"
+      },
+      "previewTitle": {
+        "zh": "Swin Transformer",
+        "en": "Swin Transformer"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/2103.14030",
+            "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+            "https://github.com/microsoft/Swin-Transformer"
+          ],
+          "preview": [
+            "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+            "source-iccv-open-access-paper-page",
+            "source-microsoft-swin-transformer-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2014-glove",
+      "archiveEventId": "ai100-2014-glove",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "GloVe",
+        "en": "GloVe"
+      },
+      "previewTitle": {
+        "zh": "GloVe",
+        "en": "GloVe"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://aclanthology.org/D14-1162/",
+            "https://nlp.stanford.edu/projects/glove/",
+            "https://aclanthology.org/D14-1162.pdf"
+          ],
+          "preview": [
+            "source-glove-global-vectors-for-word-representation",
+            "source-stanford-glove-project-page",
+            "source-acl-anthology-pdf"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2014-conditional-gan",
+      "archiveEventId": "ai100-2014-conditional-gan",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Conditional GAN",
+        "en": "Conditional GAN"
+      },
+      "previewTitle": {
+        "zh": "Conditional GAN",
+        "en": "Conditional GAN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1411.1784",
+            "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+            "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html"
+          ],
+          "preview": [
+            "source-conditional-generative-adversarial-nets",
+            "source-generative-adversarial-network-overview",
+            "source-generative-adversarial-nets"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2015-dcgan",
+      "archiveEventId": "ai100-2015-dcgan",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "DCGAN",
+        "en": "DCGAN"
+      },
+      "previewTitle": {
+        "zh": "DCGAN",
+        "en": "DCGAN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1511.06434",
+            "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html",
+            "https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network"
+          ],
+          "preview": [
+            "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+            "source-pytorch-dcgan-tutorial",
+            "source-dcgan-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2017-wasserstein-gan",
+      "archiveEventId": "ai100-2017-wasserstein-gan",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Wasserstein GAN",
+        "en": "Wasserstein GAN"
+      },
+      "previewTitle": {
+        "zh": "Wasserstein GAN",
+        "en": "Wasserstein GAN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://proceedings.mlr.press/v70/arjovsky17a.html",
+            "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+            "https://en.wikipedia.org/wiki/Wasserstein_GAN"
+          ],
+          "preview": [
+            "source-wasserstein-generative-adversarial-networks",
+            "source-improved-training-of-wasserstein-gans",
+            "source-wasserstein-gan-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2017-cyclegan",
+      "archiveEventId": "ai100-2017-cyclegan",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "CycleGAN",
+        "en": "CycleGAN"
+      },
+      "previewTitle": {
+        "zh": "CycleGAN",
+        "en": "CycleGAN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1703.10593",
+            "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
+            "https://junyanz.github.io/CycleGAN/"
+          ],
+          "preview": [
+            "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
+            "source-iccv-open-access-paper-page",
+            "source-cyclegan-project-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2017-pix2pix",
+      "archiveEventId": "ai100-2017-pix2pix",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Pix2Pix",
+        "en": "Pix2Pix"
+      },
+      "previewTitle": {
+        "zh": "Pix2Pix",
+        "en": "Pix2Pix"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1611.07004",
+            "https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html",
+            "https://phillipi.github.io/pix2pix/"
+          ],
+          "preview": [
+            "source-image-to-image-translation-with-conditional-adversarial-networks",
+            "source-cvpr-open-access-paper-page",
+            "source-pix2pix-project-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2019-stylegan",
+      "archiveEventId": "ai100-2019-stylegan",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "StyleGAN",
+        "en": "StyleGAN"
+      },
+      "previewTitle": {
+        "zh": "StyleGAN",
+        "en": "StyleGAN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1812.04948",
+            "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html",
+            "https://github.com/NVlabs/stylegan"
+          ],
+          "preview": [
+            "source-a-style-based-generator-architecture-for-gans",
+            "source-cvpr-open-access-paper-page",
+            "source-nvidia-stylegan-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2013-variational-autoencoder",
+      "archiveEventId": "ai100-2013-variational-autoencoder",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "变分自编码器",
+        "en": "Variational Autoencoder"
+      },
+      "previewTitle": {
+        "zh": "变分自编码器",
+        "en": "Variational Autoencoder"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1312.6114",
+            "https://openreview.net/forum?id=33X9fd2-9FyZd",
+            "https://en.wikipedia.org/wiki/Variational_autoencoder"
+          ],
+          "preview": [
+            "source-auto-encoding-variational-bayes",
+            "source-iclr-paper-record",
+            "source-variational-autoencoder-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2015-diffusion-model",
+      "archiveEventId": "ai100-2015-diffusion-model",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "扩散模型",
+        "en": "Diffusion Model"
+      },
+      "previewTitle": {
+        "zh": "扩散模型",
+        "en": "Diffusion Model"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+            "https://arxiv.org/abs/2006.11239",
+            "https://en.wikipedia.org/wiki/Diffusion_model"
+          ],
+          "preview": [
+            "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+            "source-denoising-diffusion-probabilistic-models",
+            "source-diffusion-model-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2005-gnn",
+      "archiveEventId": "ai100-2005-gnn",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "图神经网络",
+        "en": "Graph Neural Network"
+      },
+      "previewTitle": {
+        "zh": "图神经网络",
+        "en": "Graph Neural Network"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1109/TNN.2008.2005605",
+            "https://ieeexplore.ieee.org/document/4700287",
+            "https://en.wikipedia.org/wiki/Graph_neural_network"
+          ],
+          "preview": [
+            "source-the-graph-neural-network-model",
+            "source-a-new-model-for-learning-in-graph-domains",
+            "source-graph-neural-network-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2016-gcn",
+      "archiveEventId": "ai100-2016-gcn",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "GCN",
+        "en": "GCN"
+      },
+      "previewTitle": {
+        "zh": "GCN",
+        "en": "GCN"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1609.02907",
+            "https://openreview.net/forum?id=SJU4ayYgl",
+            "https://github.com/tkipf/gcn"
+          ],
+          "preview": [
+            "source-semi-supervised-classification-with-graph-convolutional-networks",
+            "source-iclr-openreview-record",
+            "source-kipf-gcn-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2017-gat",
+      "archiveEventId": "ai100-2017-gat",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "GAT",
+        "en": "GAT"
+      },
+      "previewTitle": {
+        "zh": "GAT",
+        "en": "GAT"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1710.10903",
+            "https://openreview.net/forum?id=rJXMpikCZ",
+            "https://github.com/PetarV-/GAT"
+          ],
+          "preview": [
+            "source-graph-attention-networks",
+            "source-iclr-openreview-record",
+            "source-original-gat-repository"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2016-nas",
+      "archiveEventId": "ai100-2016-nas",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "神经架构搜索",
+        "en": "Neural Architecture Search"
+      },
+      "previewTitle": {
+        "zh": "神经架构搜索",
+        "en": "Neural Architecture Search"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1611.01578",
+            "https://openreview.net/forum?id=r1Ue8Hcxg",
+            "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html"
+          ],
+          "preview": [
+            "source-neural-architecture-search-with-reinforcement-learning",
+            "source-iclr-openreview-record",
+            "source-google-ai-automl-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2015-deep-compression",
+      "archiveEventId": "ai100-2015-deep-compression",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "深度压缩",
+        "en": "Deep Compression"
+      },
+      "previewTitle": {
+        "zh": "深度压缩",
+        "en": "Deep Compression"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1510.00149",
+            "https://openreview.net/forum?id=n4Bp24yb5L",
+            "https://hanlab.mit.edu/projects/deep-compression"
+          ],
+          "preview": [
+            "source-deep-compression",
+            "source-iclr-openreview-record",
+            "source-song-han-efficient-ai-research-page"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2015-knowledge-distillation",
+      "archiveEventId": "ai100-2015-knowledge-distillation",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "知识蒸馏",
+        "en": "Knowledge Distillation"
+      },
+      "previewTitle": {
+        "zh": "知识蒸馏",
+        "en": "Knowledge Distillation"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1503.02531",
+            "https://en.wikipedia.org/wiki/Knowledge_distillation",
+            "https://www.cs.toronto.edu/~hinton/"
+          ],
+          "preview": [
+            "source-distilling-the-knowledge-in-a-neural-network",
+            "source-knowledge-distillation-overview",
+            "source-geoffrey-hinton-profile"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2014-ms-coco",
+      "archiveEventId": "ai100-2014-ms-coco",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "MS COCO",
+        "en": "MS COCO"
+      },
+      "previewTitle": {
+        "zh": "MS COCO",
+        "en": "MS COCO"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1405.0312",
+            "https://cocodataset.org/",
+            "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48"
+          ],
+          "preview": [
+            "source-microsoft-coco-common-objects-in-context",
+            "source-coco-dataset-website",
+            "source-eccv-springer-record"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1989-q-learning",
+      "archiveEventId": "ai100-1989-q-learning",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Q-Learning",
+        "en": "Q-Learning"
+      },
+      "previewTitle": {
+        "zh": "Q-Learning",
+        "en": "Q-Learning"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+            "https://link.springer.com/article/10.1007/BF00992698",
+            "https://en.wikipedia.org/wiki/Q-learning"
+          ],
+          "preview": [
+            "source-learning-from-delayed-rewards",
+            "source-q-learning",
+            "source-q-learning-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-2015-ddpg",
+      "archiveEventId": "ai100-2015-ddpg",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "DDPG",
+        "en": "DDPG"
+      },
+      "previewTitle": {
+        "zh": "DDPG",
+        "en": "DDPG"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1509.02971",
+            "https://openreview.net/forum?id=Rx4nmj8j6G",
+            "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient"
+          ],
+          "preview": [
+            "source-continuous-control-with-deep-reinforcement-learning",
+            "source-iclr-openreview-record",
+            "source-deep-deterministic-policy-gradient-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-ai100-1983-actor-critic",
+      "archiveEventId": "ai100-1983-actor-critic",
+      "archiveVariantId": "bench-council-ai100",
+      "title": {
+        "zh": "Actor-Critic",
+        "en": "Actor-Critic"
+      },
+      "previewTitle": {
+        "zh": "Actor-Critic",
+        "en": "Actor-Critic"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1109/TSMC.1983.6313077",
+            "http://incompleteideas.net/book/the-book-2nd.html",
+            "https://en.wikipedia.org/wiki/Actor-critic_model"
+          ],
+          "preview": [
+            "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+            "source-reinforcement-learning-an-introduction",
+            "source-actor-critic-model-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-1951-strachey-draughts",
+      "archiveEventId": "1951-strachey-draughts",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "克里斯托弗·斯特雷奇 的跳棋程序",
+        "en": "Christopher Strachey's Draughts"
+      },
+      "previewTitle": {
+        "zh": "克里斯托弗·斯特雷奇 的跳棋程序",
+        "en": "Christopher Strachey's Draughts"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://dl.acm.org/doi/10.1145/1455270.1455277",
+            "https://history.computer.org/pioneers/strachey.html",
+            "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+            "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
+          ],
+          "preview": [
+            "source-logical-or-non-mathematical-programmes",
+            "source-computer-pioneers-christopher-strachey",
+            "source-strachey-draughts-program-screenshot",
+            "source-checkers-board-photo"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-1988-td-update",
+      "archiveEventId": "1988-td-update",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "时序差分更新",
+        "en": "Temporal-Difference Update"
+      },
+      "previewTitle": {
+        "zh": "时序差分更新",
+        "en": "Temporal-Difference Update"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://doi.org/10.1007/BF00115009",
+            "http://incompleteideas.net/",
+            "https://awards.acm.org/about/2024-turing"
+          ],
+          "preview": [
+            "source-learning-to-predict-by-the-methods-of-temporal-differences",
+            "source-richard-sutton-homepage",
+            "source-acm-2024-turing-award-announcement"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-1994-chinook",
+      "archiveEventId": "1994-chinook",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "Chinook 跳棋程序",
+        "en": "Chinook"
+      },
+      "previewTitle": {
+        "zh": "Chinook 跳棋程序",
+        "en": "Chinook"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+            "https://www.science.org/doi/10.1126/science.1144079",
+            "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+            "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg"
+          ],
+          "preview": [
+            "source-chinook-project-home",
+            "source-checkers-is-solved",
+            "source-chinook-publications",
+            "source-jonathan-schaeffer-portrait"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-1997-logistello",
+      "archiveEventId": "1997-logistello",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "Logistello：黑白棋评估函数学习",
+        "en": "Logistello: Learning Evaluation for Othello"
+      },
+      "previewTitle": {
+        "zh": "Logistello：黑白棋评估函数学习",
+        "en": "Logistello: Learning Evaluation for Othello"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 4,
+          "previewCount": 4,
+          "decreased": false,
+          "normal": [
+            "https://skatgame.net/mburo/log.html",
+            "https://skatgame.net/mburo/event.html",
+            "https://arxiv.org/abs/cs/9512106",
+            "https://skatgame.net/mburo/publications.html"
+          ],
+          "preview": [
+            "source-logistello-homepage",
+            "source-murakami-vs-logistello",
+            "source-statistical-feature-combination",
+            "source-michael-buro-publications"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-1997-deep-blue",
+      "archiveEventId": "1997-deep-blue",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "深蓝",
+        "en": "Deep Blue"
+      },
+      "previewTitle": {
+        "zh": "深蓝",
+        "en": "Deep Blue"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://research.ibm.com/people/murray-campbell",
+            "https://www.computerhistory.org/chess/",
+            "https://www.ibm.com/history/deep-blue"
+          ],
+          "preview": [
+            "source-murray-campbell-ibm-research",
+            "source-mastering-the-game-computer-history-museum",
+            "source-ibm100-deep-blue"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2000s-alphacat",
+      "archiveEventId": "2000s-alphacat",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "中国象棋引擎与 AlphaCat",
+        "en": "Chinese Chess Engines and AlphaCat"
+      },
+      "previewTitle": {
+        "zh": "中国象棋引擎与 AlphaCat",
+        "en": "Chinese Chess Engines and AlphaCat"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+            "https://arxiv.org/abs/1801.07411",
+            "https://en.wikipedia.org/wiki/Xiangqi"
+          ],
+          "preview": [
+            "source-icga-chinese-chess-page",
+            "source-comparison-training-for-computer-chinese-chess",
+            "source-xiangqi-overview"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2013-dqn",
+      "archiveEventId": "2013-dqn",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "深度 Q 网络",
+        "en": "Deep Q Network"
+      },
+      "previewTitle": {
+        "zh": "深度 Q 网络",
+        "en": "Deep Q Network"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/1312.5602",
+            "https://www.nature.com/articles/nature14236",
+            "https://deepmind.google/discover/blog/deep-reinforcement-learning/"
+          ],
+          "preview": [
+            "source-playing-atari-with-deep-reinforcement-learning",
+            "source-human-level-control-through-deep-reinforcement-learning",
+            "source-google-deepmind-deep-reinforcement-learning"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2016-alphago",
+      "archiveEventId": "2016-alphago",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "AlphaGo",
+        "en": "AlphaGo"
+      },
+      "previewTitle": {
+        "zh": "AlphaGo",
+        "en": "AlphaGo"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.nature.com/articles/nature16961",
+            "https://deepmind.google/research/alphago/",
+            "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
+          ],
+          "preview": [
+            "source-alphago-nature-paper",
+            "source-deepmind-alphago-page",
+            "source-katago-analysis-engine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2017-alphazero",
+      "archiveEventId": "2017-alphazero",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "AlphaZero",
+        "en": "AlphaZero"
+      },
+      "previewTitle": {
+        "zh": "AlphaZero",
+        "en": "AlphaZero"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.science.org/doi/10.1126/science.aar6404",
+            "https://arxiv.org/abs/1712.01815",
+            "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/"
+          ],
+          "preview": [
+            "source-science-paper",
+            "source-arxiv-preprint",
+            "source-deepmind-alphazero-blog"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2017-libratus",
+      "archiveEventId": "2017-libratus",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "Libratus",
+        "en": "Libratus"
+      },
+      "previewTitle": {
+        "zh": "Libratus",
+        "en": "Libratus"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.science.org/doi/10.1126/science.aao1733",
+            "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html",
+            "https://arxiv.org/abs/1705.02955"
+          ],
+          "preview": [
+            "source-science-paper",
+            "source-cmu-libratus-release",
+            "source-safe-and-nested-subgame-solving"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2019-pluribus",
+      "archiveEventId": "2019-pluribus",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "Pluribus",
+        "en": "Pluribus"
+      },
+      "previewTitle": {
+        "zh": "Pluribus",
+        "en": "Pluribus"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.science.org/doi/10.1126/science.aay2400",
+            "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
+            "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html"
+          ],
+          "preview": [
+            "source-science-paper",
+            "source-meta-ai-pluribus-report",
+            "source-cmu-pluribus-release"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2019-suphx",
+      "archiveEventId": "2019-suphx",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "Suphx：深度强化学习麻将 AI",
+        "en": "Suphx: Mahjong with Deep Reinforcement Learning"
+      },
+      "previewTitle": {
+        "zh": "Suphx：深度强化学习麻将 AI",
+        "en": "Suphx: Mahjong with Deep Reinforcement Learning"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://arxiv.org/abs/2003.13590",
+            "https://doi.org/10.48550/arXiv.2003.13590",
+            "https://arxiv.org/abs/1906.02146"
+          ],
+          "preview": [
+            "source-suphx-arxiv-paper",
+            "source-arxiv-doi-page",
+            "source-building-a-computer-mahjong-player-via-deep-cnns"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    },
+    {
+      "id": "milestone-gaming-ai-2019-muzero",
+      "archiveEventId": "2019-muzero",
+      "archiveVariantId": "gaming-ai",
+      "title": {
+        "zh": "MuZero",
+        "en": "MuZero"
+      },
+      "previewTitle": {
+        "zh": "MuZero",
+        "en": "MuZero"
+      },
+      "diffs": [
+        {
+          "field": "sources",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "normal": [
+            "https://www.nature.com/articles/s41586-020-03051-4",
+            "https://arxiv.org/abs/1911.08265",
+            "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
+          ],
+          "preview": [
+            "source-nature-paper",
+            "source-arxiv-preprint",
+            "source-deepmind-muzero-blog"
+          ]
+        },
+        {
+          "field": "commentary",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false
+        },
+        {
+          "field": "quizzes",
+          "normalCount": 1,
+          "previewCount": 1,
+          "decreased": false
+        }
+      ]
+    }
+  ]
+}
