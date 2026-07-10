@@ -9,6 +9,7 @@ const REPORTS_DIR = path.join(ROOT, 'reports');
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
+const STORYLINE_VARIANTS_DIR = path.join(ARCHIVE_DIR, 'storyline-variants');
 const AI100_STORYLINE_ID = 'bench-council-ai100';
 const reportJsonPath = path.join(REPORTS_DIR, 'archive-validation-report.json');
 const reportMdPath = path.join(REPORTS_DIR, 'archive-validation-report.md');
@@ -57,6 +58,14 @@ function eventIds() {
         .filter((entry) => entry.isDirectory())
         .map((entry) => entry.name)
         .sort();
+}
+
+function loadLegacyEventIds() {
+    try {
+        return new Set(Object.keys(require('../manage/events.js')));
+    } catch (_error) {
+        return new Set();
+    }
 }
 
 function validateRequiredFile(eventDir, filename, issues) {
@@ -329,6 +338,89 @@ function validateStorylines(knownEventIds, issues) {
     }
 }
 
+function validateStorylineVariantFusions(knownEventIds, issues) {
+    const fusionFile = path.join(STORYLINE_VARIANTS_DIR, 'event-fusions.json');
+    const assetsFile = path.join(STORYLINE_VARIANTS_DIR, 'fusion-assets.json');
+    if (!fs.existsSync(fusionFile)) return;
+
+    const archive = readJson(fusionFile, issues);
+    const assetArchive = fs.existsSync(assetsFile) ? readJson(assetsFile, issues) : { assets: {} };
+    if (!archive) return;
+
+    const legacyEventIds = loadLegacyEventIds();
+    const allKnownEventIds = new Set([...knownEventIds, ...legacyEventIds]);
+    const assetConfigs = (assetArchive && assetArchive.assets) || {};
+    const seenCanonical = new Set();
+
+    for (const [index, fusion] of (archive.fusions || []).entries()) {
+        const label = fusion.canonicalEventId || `fusion #${index + 1}`;
+        if (!fusion.canonicalEventId) {
+            issues.push(
+                issue('error', 'fusion.canonicalMissing', fusionFile, `Fusion #${index + 1} lacks canonicalEventId`)
+            );
+            continue;
+        }
+        if (seenCanonical.has(fusion.canonicalEventId)) {
+            issues.push(
+                issue(
+                    'error',
+                    'fusion.canonicalDuplicate',
+                    fusionFile,
+                    `Duplicate canonical fusion ${fusion.canonicalEventId}`
+                )
+            );
+        }
+        seenCanonical.add(fusion.canonicalEventId);
+
+        if (
+            !fusion.display ||
+            !localizedComplete(fusion.display.title) ||
+            !localizedComplete(fusion.display.description)
+        ) {
+            issues.push(
+                issue(
+                    'error',
+                    'fusion.displayMissing',
+                    fusionFile,
+                    `${label} lacks bilingual display title/description`
+                )
+            );
+        }
+
+        const variants = fusion.variants || {};
+        for (const storylineId of ['deep-learning', AI100_STORYLINE_ID]) {
+            const eventId = variants[storylineId] && variants[storylineId].eventId;
+            if (!eventId) {
+                issues.push(
+                    issue('error', 'fusion.variantMissing', fusionFile, `${label} lacks ${storylineId} variant eventId`)
+                );
+            } else if (!allKnownEventIds.has(eventId)) {
+                issues.push(
+                    issue(
+                        'error',
+                        'fusion.variantUnknownEvent',
+                        fusionFile,
+                        `${label} references unknown event ${eventId}`
+                    )
+                );
+            }
+        }
+
+        const assetConfig = assetConfigs[fusion.canonicalEventId];
+        if (!assetConfig) {
+            issues.push(issue('error', 'fusion.assetConfigMissing', assetsFile, `${label} lacks fusion asset config`));
+            continue;
+        }
+        for (const imagePath of assetConfig.images || []) {
+            if (!existingPath(imagePath)) {
+                issues.push(
+                    issue('error', 'fusion.assetMissing', assetsFile, `${label} references missing image ${imagePath}`)
+                );
+            }
+        }
+    }
+}
+
 function writeReport(issues, ids) {
     fs.mkdirSync(REPORTS_DIR, { recursive: true });
     const summary = {
@@ -366,7 +458,9 @@ if (!fs.existsSync(ARCHIVE_DIR)) {
 for (const eventId of ids) {
     validateEvent(eventId, issues);
 }
-validateStorylines(new Set(ids), issues);
+const knownEventIds = new Set(ids);
+validateStorylines(knownEventIds, issues);
+validateStorylineVariantFusions(knownEventIds, issues);
 writeReport(issues, ids);
 
 if (issues.length > 0) {

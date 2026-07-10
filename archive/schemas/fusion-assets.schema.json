@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ai-history-show.local/archive/schemas/fusion-assets.schema.json",
+    "title": "Fusion Asset Selection",
+    "type": "object",
+    "required": ["schemaVersion", "assets"],
+    "properties": {
+        "schemaVersion": { "type": "integer" },
+        "description": { "type": "string" },
+        "assets": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object",
+                "required": ["images", "excludeImages", "excludeImagePatterns"],
+                "properties": {
+                    "images": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "excludeImages": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "excludeImagePatterns": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                { "type": "string" },
+                                {
+                                    "type": "object",
+                                    "required": ["regex"],
+                                    "properties": {
+                                        "regex": { "type": "string" },
+                                        "flags": { "type": "string" }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

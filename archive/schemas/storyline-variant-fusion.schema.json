@@ -1,0 +1,60 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ai-history-show.local/archive/schemas/storyline-variant-fusion.schema.json",
+    "title": "Storyline Variant Fusion",
+    "type": "object",
+    "required": ["schemaVersion", "fusions"],
+    "properties": {
+        "schemaVersion": { "type": "integer" },
+        "description": { "type": "string" },
+        "fusions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["canonicalEventId", "variants", "display", "mergePolicy"],
+                "properties": {
+                    "canonicalEventId": { "type": "string" },
+                    "variants": {
+                        "type": "object",
+                        "required": ["deep-learning", "bench-council-ai100"],
+                        "properties": {
+                            "deep-learning": { "$ref": "#/$defs/storylineVariant" },
+                            "bench-council-ai100": { "$ref": "#/$defs/storylineVariant" }
+                        }
+                    },
+                    "display": {
+                        "type": "object",
+                        "required": ["year", "title", "description", "figures"],
+                        "properties": {
+                            "year": {},
+                            "title": { "$ref": "event.schema.json#/$defs/localizedText" },
+                            "description": { "$ref": "event.schema.json#/$defs/localizedText" },
+                            "figures": { "type": "array" },
+                            "location": { "type": "object" }
+                        }
+                    },
+                    "mergePolicy": {
+                        "type": "object",
+                        "required": ["baseStoryline", "videoStoryline", "quoteStoryline", "achievementStoryline"],
+                        "properties": {
+                            "baseStoryline": { "type": "string" },
+                            "videoStoryline": { "type": "string" },
+                            "quoteStoryline": { "type": "string" },
+                            "achievementStoryline": { "type": "string" }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "$defs": {
+        "storylineVariant": {
+            "type": "object",
+            "required": ["eventId"],
+            "properties": {
+                "eventId": { "type": "string" },
+                "variantId": { "type": "string" }
+            }
+        }
+    }
+}
