@@ -1,0 +1,63 @@
+{
+  "id": "2014-adam",
+  "year": "2014",
+  "title": {
+    "en": "Adam Optimizer",
+    "zh": "Adam 优化器"
+  },
+  "location": {
+    "name": {
+      "en": "University of Amsterdam / University of Toronto",
+      "zh": "阿姆斯特丹大学 / 多伦多大学"
+    },
+    "country": {
+      "en": "Amsterdam, Netherlands and Toronto, Canada",
+      "zh": "荷兰阿姆斯特丹与加拿大多伦多"
+    },
+    "coordinates": [
+      52.3558,
+      4.9558
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Diederik P. Kingma",
+        "zh": "迪德里克·P·金马"
+      },
+      "role": {
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Jimmy Ba",
+        "zh": "吉米·巴"
+      },
+      "role": {
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "straightforward to implement, computationally efficient",
+    "zh": "易于实现且计算高效"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Adam: A Method for Stochastic Optimization",
+      "zh": "Adam：一种随机优化方法"
+    },
+    "workAuthors": {
+      "en": "Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+      "zh": "迪德里克·P·金马、吉米·巴, 国际学习表征会议, 2015"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1412.6980"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Optimization / Adam",
+    "zh": "BenchCouncil AI100：优化算法 / Adam 优化器"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "continuous-control-with-deep-reinforcement-learning",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Continuous Control with Deep Reinforcement Learning",
+      "zh": "《使用深度强化学习进行连续控制》"
+    },
+    "url": "https://arxiv.org/abs/1509.02971"
+  },
+  {
+    "id": "iclr-openreview-record",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR OpenReview record",
+      "zh": "ICLR OpenReview 记录"
+    },
+    "url": "https://openreview.net/forum?id=Rx4nmj8j6G"
+  },
+  {
+    "id": "deep-deterministic-policy-gradient-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Deep deterministic policy gradient overview",
+      "zh": "深度确定性策略梯度概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient"
+  },
+  {
+    "id": "stanford-wu-tsai-neurosciences-institute-event-page",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Stanford Wu Tsai Neurosciences Institute event page",
+      "zh": "斯坦福吴蔡神经科学研究所活动页面"
+    },
+    "url": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy"
+  }
+]

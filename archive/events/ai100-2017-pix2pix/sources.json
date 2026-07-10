@@ -1,0 +1,50 @@
+[
+  {
+    "id": "image-to-image-translation-with-conditional-adversarial-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+      "zh": "《使用条件对抗网络进行图像到图像转换》"
+    },
+    "url": "https://arxiv.org/abs/1611.07004"
+  },
+  {
+    "id": "cvpr-open-access-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "CVPR open-access paper page",
+      "zh": "CVPR 开放论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html"
+  },
+  {
+    "id": "pix2pix-project-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Pix2Pix project page",
+      "zh": "Pix2Pix 项目页面"
+    },
+    "url": "https://phillipi.github.io/pix2pix/"
+  },
+  {
+    "id": "phillip-isola-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Phillip Isola homepage",
+      "zh": "菲利普·伊索拉个人主页"
+    },
+    "url": "https://web.mit.edu/phillipi/"
+  }
+]

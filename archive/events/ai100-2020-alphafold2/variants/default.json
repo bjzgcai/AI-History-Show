@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. It showed how deep learning could transform a long-standing scientific problem.</p>",
+    "zh": "<p>DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. It showed how deep learning could transform a long-standing scientific problem.",
+        "zh": "DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat AlphaFold2 as a landmark in scientific machine learning because it changed what biologists could routinely look up and test. Its long-term legacy is the expectation that AI systems can act as infrastructure for discovery, not only as benchmark models.",
+        "zh": "专家通常把 AlphaFold2 视为科学机器学习的标志性成果，因为它改变了生物学家能够常规查询和检验的内容。它的长期影响在于让人们期待 AI 系统不仅是基准模型，也能成为发现基础设施。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "AI for Science",
+      "zh": "AI for Science"
+    },
+    "method": {
+      "en": "Attention-based protein structure prediction",
+      "zh": "基于注意力的蛋白质结构预测"
+    },
+    "artifact": {
+      "en": "AlphaFold2 system",
+      "zh": "AlphaFold2 系统"
+    },
+    "material": {
+      "en": "Nature paper and AlphaFold Protein Structure Database",
+      "zh": "《Nature》论文与 AlphaFold 蛋白质结构数据库"
+    },
+    "demo": {
+      "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
+      "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+    },
+    "visual": "alphafold",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Evolutionary Signal",
+          "zh": "进化信号"
+        },
+        "text": {
+          "en": "Related sequences provide constraints on residue pairs.",
+          "zh": "相关序列为残基对提供约束。"
+        }
+      },
+      {
+        "label": {
+          "en": "Structure Module",
+          "zh": "结构模块"
+        },
+        "text": {
+          "en": "The network refines coordinates into a 3D model.",
+          "zh": "网络把坐标优化成三维模型。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "AI for Science",
+        "zh": "AI for Science"
+      },
+      {
+        "en": "Protein structure prediction",
+        "zh": "蛋白质结构预测"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Amino-acid sequence",
+        "zh": "Amino-acid sequence"
+      },
+      {
+        "en": "Pair representation",
+        "zh": "Pair representation"
+      },
+      {
+        "en": "3D structure",
+        "zh": "3D structure"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Nature",
+          "zh": "《Nature》"
+        },
+        "title": {
+          "en": "Highly accurate protein structure prediction with AlphaFold",
+          "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+        },
+        "description": {
+          "en": "Primary Nature paper for AlphaFold2.",
+          "zh": "AlphaFold2 的 Nature 主论文。"
+        },
+        "url": "https://doi.org/10.1038/s41586-021-03819-2",
+        "source": "https://doi.org/10.1038/s41586-021-03819-2",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI page",
+          "zh": "打开 DOI 页面"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Highly accurate protein structure prediction with AlphaFold",
+          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》"
+        },
+        "url": "https://doi.org/10.1038/s41586-021-03819-2"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "DeepMind AlphaFold page",
+          "zh": "DeepMind AlphaFold 页面"
+        },
+        "url": "https://deepmind.google/technologies/alphafold/"
+      },
+      {
+        "type": {
+          "en": "Dataset",
+          "zh": "数据集"
+        },
+        "label": {
+          "en": "AlphaFold Protein Structure Database",
+          "zh": "AlphaFold 蛋白质结构数据库"
+        },
+        "url": "https://alphafold.ebi.ac.uk/"
+      },
+      {
+        "type": {
+          "en": "Code",
+          "zh": "代码"
+        },
+        "label": {
+          "en": "AlphaFold GitHub repository",
+          "zh": "AlphaFold GitHub 代码仓库"
+        },
+        "url": "https://github.com/google-deepmind/alphafold"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Nature paper and AlphaFold Protein Structure Database",
+          "zh": "《Nature》论文与 AlphaFold 蛋白质结构数据库"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
+          "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+        }
+      }
+    ]
+  }
+}

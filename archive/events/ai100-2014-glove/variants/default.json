@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>",
+    "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.",
+        "zh": "GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat GloVe as an influential bridge between distributional statistics and embedding models. Its long-term legacy is the global co-occurrence view that remained useful even after contextual language models became dominant.",
+        "zh": "专家通常把 GloVe 视为连接分布统计和嵌入模型的重要桥梁。它的长期影响在于全局共现视角即使在上下文语言模型占主导后仍然有用。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Global word-vector factorization",
+      "zh": "全局词向量分解"
+    },
+    "artifact": {
+      "en": "GloVe word embeddings",
+      "zh": "GloVe 词嵌入"
+    },
+    "material": {
+      "en": "EMNLP paper and Stanford project page",
+      "zh": "EMNLP 论文与斯坦福项目页面"
+    },
+    "demo": {
+      "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions.",
+      "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Co-occurrence",
+          "zh": "共现"
+        },
+        "text": {
+          "en": "Word counts preserve corpus-level association.",
+          "zh": "词共现计数保留语料级关联。"
+        }
+      },
+      {
+        "label": {
+          "en": "Vector Analogy",
+          "zh": "向量类比"
+        },
+        "text": {
+          "en": "Linear directions capture useful relations.",
+          "zh": "线性方向捕获有用关系。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Word2vec",
+          "zh": "Word2vec"
+        },
+        "zh": {
+          "en": "Word2vec",
+          "zh": "Word2vec"
+        }
+      },
+      {
+        "en": {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        },
+        "zh": {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        }
+      },
+      {
+        "en": {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        "zh": {
+          "en": "BERT",
+          "zh": "BERT"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Count pairs",
+          "zh": "统计词对"
+        },
+        "zh": {
+          "en": "Count pairs",
+          "zh": "统计词对"
+        }
+      },
+      {
+        "en": {
+          "en": "Fit vectors",
+          "zh": "拟合向量"
+        },
+        "zh": {
+          "en": "Fit vectors",
+          "zh": "拟合向量"
+        }
+      },
+      {
+        "en": {
+          "en": "Compare meanings",
+          "zh": "比较语义"
+        },
+        "zh": {
+          "en": "Compare meanings",
+          "zh": "比较语义"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "ACL Anthology",
+          "zh": "ACL Anthology"
+        },
+        "title": {
+          "en": "GloVe: Global Vectors for Word Representation",
+          "zh": "GloVe：用于词表示的全局向量"
+        },
+        "description": {
+          "en": "ACL Anthology source card for GloVe.",
+          "zh": "ACL Anthology 的GloVe资料卡片。"
+        },
+        "url": "https://aclanthology.org/D14-1162/",
+        "source": "https://aclanthology.org/D14-1162/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "GloVe: Global Vectors for Word Representation",
+          "zh": "《GloVe：用于词表示的全局向量》"
+        },
+        "url": "https://aclanthology.org/D14-1162/"
+      },
+      {
+        "type": {
+          "en": "Project",
+          "zh": "项目"
+        },
+        "label": {
+          "en": "Stanford GloVe project page",
+          "zh": "斯坦福 GloVe 项目页面"
+        },
+        "url": "https://nlp.stanford.edu/projects/glove/"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "ACL Anthology PDF",
+          "zh": "ACL Anthology 论文 PDF"
+        },
+        "url": "https://aclanthology.org/D14-1162.pdf"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "EMNLP paper and Stanford project page",
+          "zh": "EMNLP 论文与斯坦福项目页面"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions.",
+          "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。"
+        }
+      }
+    ]
+  }
+}

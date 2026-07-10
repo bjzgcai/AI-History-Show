@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1999-nmf-summary",
+    "text": {
+      "en": "Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.",
+      "zh": "丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。"
+    },
+    "sourceIds": [
+      "learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+      "nature-article-page"
+    ]
+  },
+  {
+    "id": "ai100-1999-nmf-quote",
+    "text": {
+      "en": "Learning the parts of objects by non-negative matrix factorization",
+      "zh": "通过非负矩阵分解学习物体部件"
+    },
+    "sourceIds": [
+      "learning-the-parts-of-objects-by-non-negative-matrix-factorization"
+    ]
+  }
+]

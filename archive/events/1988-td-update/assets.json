@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1988-td-update-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+    "caption": {
+      "en": "Richard Sutton portrait",
+      "zh": "理查德·萨顿 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Sutton's personal homepage.",
+      "zh": "来自 Sutton 个人主页的人物图。"
+    },
+    "sourceId": "richard-sutton-homepage",
+    "sourceName": {
+      "en": "Richard Sutton homepage",
+      "zh": "理查德·萨顿 homepage"
+    },
+    "sourceUrl": "http://incompleteideas.net/",
+    "originalImageUrl": "http://incompleteideas.net/sutton-head12.jpg",
+    "rights": "Personal website image; reuse rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1988-td-update-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
+    "caption": {
+      "en": "Value timeline update",
+      "zh": "价值时间线更新"
+    },
+    "subcaption": {
+      "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+      "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "learning-to-predict-by-the-methods-of-temporal-differences",
+    "sourceName": "Machine Learning",
+    "sourceUrl": "https://doi.org/10.1007/BF00115009",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1988-td-update-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
+    "caption": {
+      "en": "TD error meter",
+      "zh": "TD 误差仪表"
+    },
+    "subcaption": {
+      "en": "Local redraw for Temporal-Difference Update, based on the listed source material.",
+      "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "learning-to-predict-by-the-methods-of-temporal-differences",
+    "sourceName": "Machine Learning",
+    "sourceUrl": "https://doi.org/10.1007/BF00115009",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

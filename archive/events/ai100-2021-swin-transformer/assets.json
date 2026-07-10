@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2021-swin-transformer-image-1",
+    "kind": "image",
+    "path": "https://zeliu98.github.io/images/zeliu.jpg",
+    "caption": {
+      "en": "Ze Liu portrait",
+      "zh": "刘泽肖像"
+    },
+    "subcaption": {
+      "en": "Swin Transformer lead author",
+      "zh": "Swin Transformer 主要作者"
+    },
+    "sourceId": "ze-liu-homepage",
+    "sourceName": {
+      "en": "Ze Liu homepage",
+      "zh": "刘泽个人主页"
+    },
+    "sourceUrl": "https://zeliu98.github.io/",
+    "originalImageUrl": "https://zeliu98.github.io/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2021-swin-transformer-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg",
+    "caption": {
+      "en": "Swin Transformer explainer",
+      "zh": "Swin Transformer 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+    "sourceName": {
+      "en": "CVF Open Access",
+      "zh": "CVF 开放论文库"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2103.14030",
+    "originalImageUrl": "https://arxiv.org/abs/2103.14030",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

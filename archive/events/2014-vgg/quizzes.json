@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What architectural habit is VGG best remembered for?",
+      "zh": "VGG 最著名的架构习惯是什么？"
+    },
+    "options": [
+      {
+        "en": "Stacking many small 3x3 convolutional layers",
+        "zh": "堆叠大量小型 3x3 卷积层"
+      },
+      {
+        "en": "Using no convolution at all",
+        "zh": "完全不使用卷积"
+      },
+      {
+        "en": "Replacing images with text tokens only",
+        "zh": "只把图像换成文本 token"
+      },
+      {
+        "en": "Training a single decision stump",
+        "zh": "训练单个决策树桩"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "VGG made a very regular stack of small convolutions a strong and reusable computer-vision architecture.",
+      "zh": "VGG 把小卷积核的规则堆叠做成了强大且可复用的视觉架构。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "vision",
+      "cnn"
+    ]
+  }
+]

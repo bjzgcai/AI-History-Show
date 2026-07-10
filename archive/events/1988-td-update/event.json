@@ -1,0 +1,53 @@
+{
+  "id": "1988-td-update",
+  "year": "1988",
+  "title": {
+    "en": "Temporal-Difference Update",
+    "zh": "时序差分更新"
+  },
+  "location": {
+    "name": {
+      "en": "GTE Laboratories / University of Massachusetts lineage",
+      "zh": "GTE 实验室 / 麻省大学学术谱系"
+    },
+    "country": {
+      "en": "United States and Canada",
+      "zh": "美国与加拿大"
+    },
+    "coordinates": [
+      42.3732,
+      -72.5199
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Richard Sutton",
+        "zh": "理查德·萨顿"
+      },
+      "role": {
+        "en": "Author of temporal-difference learning",
+        "zh": "时序差分学习提出者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Bootstrapped value prediction",
+    "zh": "自举式价值预测"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Learning to predict by temporal differences",
+      "zh": "通过时序差分学习预测"
+    },
+    "workAuthors": {
+      "en": "Richard Sutton",
+      "zh": "理查德·萨顿"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00115009"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Reinforcement learning / Temporal-Difference Update",
+    "zh": "BenchCouncil AI100：强化学习 / 时序差分更新"
+  }
+}

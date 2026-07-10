@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1999-sift-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
+    "caption": {
+      "en": "David Lowe portrait",
+      "zh": "戴维·洛 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from UBC Computer Science profile.",
+      "zh": "来自 UBC Computer 《科学》 个人资料页的人物图。"
+    },
+    "sourceId": "david-lowe-ubc-computer-science",
+    "sourceName": "University of British Columbia",
+    "sourceUrl": "https://www.cs.ubc.ca/people/david-lowe",
+    "originalImageUrl": "https://www.cs.ubc.ca/sites/default/files/styles/profile_page/public/people/lowe.jpg",
+    "rights": "UBC profile image; reuse rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1999-sift-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
+    "caption": {
+      "en": "Scale-space keypoints",
+      "zh": "尺度空间关键点"
+    },
+    "subcaption": {
+      "en": "Local redraw for SIFT, based on the listed source material.",
+      "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "object-recognition-from-local-scale-invariant-features",
+    "sourceName": "UBC Laboratory for Computational Intelligence",
+    "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1999-sift-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg",
+    "caption": {
+      "en": "Gradient descriptor histogram",
+      "zh": "梯度描述子直方图"
+    },
+    "subcaption": {
+      "en": "Local redraw for SIFT, based on the listed source material.",
+      "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "object-recognition-from-local-scale-invariant-features",
+    "sourceName": "UBC Laboratory for Computational Intelligence",
+    "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

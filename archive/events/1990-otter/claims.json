@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1990-otter-summary",
+    "text": {
+      "en": "Otter made high-performance first-order theorem proving widely usable for AI and mathematical logic researchers. McCune's system combined resolution, paramodulation, term indexing, weighting, and a practical given-clause search loop, becoming a workhorse for exploring large symbolic proof spaces.",
+      "zh": "Otter 让高性能一阶定理证明成为 AI 与数理逻辑研究者可实际使用的工具。McCune 的系统结合归结、参数调解、项索引、权重控制和实用的 given-clause 搜索循环，成为探索大规模符号证明空间的主力工具。"
+    },
+    "sourceIds": [
+      "otter-3-3-reference-manual",
+      "a-spectrum-of-applications-of-automated-reasoning"
+    ]
+  },
+  {
+    "id": "1990-otter-quote",
+    "text": {
+      "en": "Resolution-style proof search made practical",
+      "zh": "让归结式证明搜索变得实用"
+    },
+    "sourceIds": [
+      "otter-3-3-reference-manual"
+    ]
+  }
+]

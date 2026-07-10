@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2014-conditional-gan",
+  "year": 2014,
+  "title": {
+    "en": "Conditional GAN",
+    "zh": "Conditional GAN"
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Mehdi Mirza",
+        "zh": "迈赫迪·米尔扎"
+      },
+      "role": {
+        "en": "Conditional GAN lead author",
+        "zh": "Conditional GAN 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Conditional generative adversarial nets",
+    "zh": "条件生成对抗网络"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Conditional Generative Adversarial Nets",
+      "zh": "条件生成对抗网络"
+    },
+    "workAuthors": {
+      "en": "Mehdi Mirza and Simon Osindero, 2014",
+      "zh": "迈赫迪·米尔扎、西蒙·奥辛德罗，2014"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1411.1784"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

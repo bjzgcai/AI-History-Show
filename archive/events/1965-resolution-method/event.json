@@ -1,0 +1,53 @@
+{
+  "id": "1965-resolution-method",
+  "year": "1965",
+  "title": {
+    "en": "Resolution Method",
+    "zh": "归结方法"
+  },
+  "location": {
+    "name": {
+      "en": "Argonne National Laboratory / Syracuse University",
+      "zh": "阿贡国家实验室 / 雪城大学"
+    },
+    "country": {
+      "en": "Illinois and New York, United States",
+      "zh": "美国伊利诺伊州与纽约州"
+    },
+    "coordinates": [
+      41.7181,
+      -87.9798
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John Alan Robinson",
+        "zh": "约翰·艾伦·罗宾逊"
+      },
+      "role": {
+        "en": "Inventor of the resolution principle",
+        "zh": "归结原理提出者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "the resolution principle",
+    "zh": "归结原理"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A Machine-Oriented Logic Based on the Resolution Principle",
+      "zh": "基于归结原理的机器导向逻辑"
+    },
+    "workAuthors": {
+      "en": "John Alan Robinson, Journal of the ACM, 1965",
+      "zh": "约翰·艾伦·罗宾逊, 《ACM 杂志》, 1965"
+    },
+    "sourceUrl": "https://doi.org/10.1145/321250.321253"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Resolution method",
+    "zh": "BenchCouncil AI100：自动定理证明 / 归结方法"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2015-knowledge-distillation-summary",
+    "text": {
+      "en": "Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.",
+      "zh": "知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。"
+    },
+    "sourceIds": [
+      "distilling-the-knowledge-in-a-neural-network",
+      "knowledge-distillation-overview"
+    ]
+  },
+  {
+    "id": "ai100-2015-knowledge-distillation-quote",
+    "text": {
+      "en": "Distilling the knowledge in a neural network",
+      "zh": "蒸馏神经网络中的知识"
+    },
+    "sourceIds": [
+      "distilling-the-knowledge-in-a-neural-network"
+    ]
+  }
+]

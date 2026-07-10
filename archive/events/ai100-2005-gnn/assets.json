@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2005-gnn-image-1",
+    "kind": "image",
+    "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2",
+    "caption": {
+      "en": "Franco Scarselli portrait",
+      "zh": "弗朗科·斯卡尔塞利肖像"
+    },
+    "subcaption": {
+      "en": "Graph neural network co-author",
+      "zh": "图神经网络共同作者"
+    },
+    "sourceId": "google-scholar-profile",
+    "sourceName": {
+      "en": "Google Scholar profile",
+      "zh": "Google Scholar 个人资料"
+    },
+    "sourceUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+    "originalImageUrl": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2005-gnn-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg",
+    "caption": {
+      "en": "Graph Neural Network explainer",
+      "zh": "图神经网络 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "the-graph-neural-network-model",
+    "sourceName": {
+      "en": "IEEE Xplore",
+      "zh": "IEEE Xplore"
+    },
+    "sourceUrl": "https://doi.org/10.1109/TNN.2008.2005605",
+    "originalImageUrl": "https://doi.org/10.1109/TNN.2008.2005605",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

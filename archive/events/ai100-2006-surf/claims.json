@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2006-surf-summary",
+    "text": {
+      "en": "Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.",
+      "zh": "赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。"
+    },
+    "sourceIds": [
+      "surf-speeded-up-robust-features",
+      "eth-surf-paper-pdf"
+    ]
+  },
+  {
+    "id": "ai100-2006-surf-quote",
+    "text": {
+      "en": "SURF: Speeded Up Robust Features",
+      "zh": "SURF：加速稳健特征"
+    },
+    "sourceIds": [
+      "surf-speeded-up-robust-features"
+    ]
+  }
+]

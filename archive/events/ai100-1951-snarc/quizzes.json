@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What was SNARC built to demonstrate?",
+      "zh": "SNARC 主要用来展示什么？"
+    },
+    "options": [
+      {
+        "en": "Reward-driven learning in early neural-style hardware",
+        "zh": "早期神经式硬件中的奖励驱动学习"
+      },
+      {
+        "en": "A modern image search engine",
+        "zh": "现代图像搜索引擎"
+      },
+      {
+        "en": "A language model writing poems",
+        "zh": "会写诗的语言模型"
+      },
+      {
+        "en": "A fixed paper bibliography",
+        "zh": "固定论文目录"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "SNARC modeled maze learning with reward signals and analog neural-style machinery.",
+      "zh": "SNARC 用奖励信号和模拟神经式机器来建模迷宫学习。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "hardware",
+      "reinforcement"
+    ]
+  }
+]

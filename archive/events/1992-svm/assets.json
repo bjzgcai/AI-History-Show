@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1992-svm-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+    "caption": {
+      "en": "Isabelle Guyon portrait",
+      "zh": "伊莎贝尔·居永 肖像"
+    },
+    "subcaption": {
+      "en": "University Paris-Saclay article image about Guyon and support vector machines.",
+      "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。"
+    },
+    "sourceId": "universit-paris-saclay",
+    "sourceName": {
+      "en": "Université Paris-Saclay",
+      "zh": "巴黎-萨克雷大学"
+    },
+    "sourceUrl": "https://www.universite-paris-saclay.fr/actualites/des-algorithmes-qui-apprennent-et-classent-le-travail-disabelle-guyon-recompense",
+    "originalImageUrl": "https://www.universite-paris-saclay.fr/sites/default/files/2020-05/IsabelleGuyon.jpg",
+    "rights": "University news image; rights not stated.",
+    "usage": {
+      "en": "Historical figure / SVM co-inventor portrait",
+      "zh": "历史人物 / SVM 共同发明者肖像"
+    }
+  },
+  {
+    "id": "1992-svm-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+    "caption": {
+      "en": "Maximum-margin classifier",
+      "zh": "最大间隔分类器"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+      "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "a-training-algorithm-for-optimal-margin-classifiers",
+    "sourceName": "ACM COLT",
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "1992-svm-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg",
+    "caption": {
+      "en": "Kernel feature lift",
+      "zh": "核函数特征提升"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Support Vector Machines, based on the related source material.",
+      "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "a-training-algorithm-for-optimal-margin-classifiers",
+    "sourceName": "ACM COLT",
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

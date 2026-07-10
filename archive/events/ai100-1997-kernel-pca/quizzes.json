@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What lets Kernel PCA find nonlinear components?",
+      "zh": "Kernel PCA 靠什么找到非线性成分？"
+    },
+    "options": [
+      {
+        "en": "A kernel similarity matrix",
+        "zh": "核相似性矩阵"
+      },
+      {
+        "en": "A random chess opening",
+        "zh": "随机棋类开局"
+      },
+      {
+        "en": "A handwritten rule book only",
+        "zh": "只有手写规则书"
+      },
+      {
+        "en": "A video playlist",
+        "zh": "视频播放列表"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Kernel PCA applies PCA through kernel similarities rather than explicit original coordinates.",
+      "zh": "Kernel PCA 通过核相似性而不是原始显式坐标来执行 PCA。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "kernel-pca",
+      "kernel-methods"
+    ]
+  }
+]

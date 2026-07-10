@@ -1,0 +1,53 @@
+{
+  "id": "1982-hopfield-network",
+  "year": "1982",
+  "title": {
+    "en": "Hopfield Network",
+    "zh": "Hopfield 网络"
+  },
+  "location": {
+    "name": {
+      "en": "California Institute of Technology",
+      "zh": "加州理工学院"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      34.1377,
+      -118.1253
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John J. Hopfield",
+        "zh": "约翰·J·霍普菲尔德"
+      },
+      "role": {
+        "en": "Inventor of Hopfield networks",
+        "zh": "Hopfield 网络提出者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "neural networks and physical systems",
+    "zh": "神经网络与物理系统"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+      "zh": "具有涌现集体计算能力的神经网络与物理系统"
+    },
+    "workAuthors": {
+      "en": "John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "zh": "约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+    },
+    "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Hopfield network",
+    "zh": "BenchCouncil AI100：神经网络 / Hopfield 网络"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2018-bert",
+  "year": 2018,
+  "title": {
+    "en": "BERT",
+    "zh": "BERT"
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jacob Devlin",
+        "zh": "雅各布·德夫林"
+      },
+      "role": {
+        "en": "Lead author of BERT",
+        "zh": "BERT 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Pre-training of deep bidirectional transformers for language understanding",
+    "zh": "用于语言理解的深度双向 Transformer 预训练"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
+    },
+    "workAuthors": {
+      "en": "Jacob Devlin et al., NAACL, 2019",
+      "zh": "雅各布·德夫林等，NAACL，2019"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1810.04805"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

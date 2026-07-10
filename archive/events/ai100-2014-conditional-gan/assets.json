@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2014-conditional-gan-image-1",
+    "kind": "image",
+    "path": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
+    "caption": {
+      "en": "Simon Osindero portrait",
+      "zh": "西蒙·奥辛德罗肖像"
+    },
+    "subcaption": {
+      "en": "Conditional GAN co-author",
+      "zh": "Conditional GAN 共同作者"
+    },
+    "sourceId": "kaptur-interview",
+    "sourceName": {
+      "en": "Kaptur interview",
+      "zh": "Kaptur 访谈"
+    },
+    "sourceUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+    "originalImageUrl": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/",
+    "rights": {
+      "en": "Article image; reuse rights not stated.",
+      "zh": "文章配图；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2014-conditional-gan-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+    "caption": {
+      "en": "Conditional GAN explainer",
+      "zh": "Conditional GAN 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "conditional-generative-adversarial-nets",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1411.1784",
+    "originalImageUrl": "https://arxiv.org/abs/1411.1784",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

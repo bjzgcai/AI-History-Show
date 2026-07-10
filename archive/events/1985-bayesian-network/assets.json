@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1985-bayesian-network-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+    "caption": {
+      "en": "Judea Pearl portrait",
+      "zh": "朱迪亚·珀尔 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Wikimedia Commons NIPS 2013 image.",
+      "zh": "来自 维基共享资源 NIPS 2013 图片的人物图。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Judea%20Pearl%20at%20NIPS%202013%20%28117881981594%29%20%28cropped%29.jpg",
+    "rights": "Creative Commons license stated on Commons file page.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1985-bayesian-network-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
+    "caption": {
+      "en": "Bayesian network DAG",
+      "zh": "贝叶斯网络 DAG"
+    },
+    "subcaption": {
+      "en": "Local redraw for Bayesian Network, based on the listed source material.",
+      "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "bayesian-networks",
+    "sourceName": {
+      "en": "UCLA Computer Science",
+      "zh": "加州大学洛杉矶分校 Computer 《科学》"
+    },
+    "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1985-bayesian-network-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg",
+    "caption": {
+      "en": "Evidence message passing",
+      "zh": "证据消息传递"
+    },
+    "subcaption": {
+      "en": "Local redraw for Bayesian Network, based on the listed source material.",
+      "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "bayesian-networks",
+    "sourceName": {
+      "en": "UCLA Computer Science",
+      "zh": "加州大学洛杉矶分校 Computer 《科学》"
+    },
+    "sourceUrl": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

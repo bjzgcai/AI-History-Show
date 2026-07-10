@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>",
+    "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Many AI and engineering problems had enormous search spaces where greedy improvement got stuck. Simulated annealing offered a principled way to make controlled uphill moves.",
+        "zh": "许多 AI 与工程问题都有巨大搜索空间，贪心改进很容易卡住。模拟退火提供了一种有原则地进行受控“上坡”移动的方法。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "At high temperature, the algorithm explores boldly. As the system cools, it increasingly commits to lower-cost states, imitating the settling of physical materials.",
+        "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat simulated annealing as a classic metaheuristic for escaping local optima, not as a guarantee of easy global optimization. Its long-term legacy is the cooling metaphor for scheduling, routing, placement, and other hard combinatorial searches.",
+        "zh": "专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法，而不是轻松获得全局最优的保证。它的长期影响在于降温隐喻被用于调度、路径规划、布局和其他困难组合搜索。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Optimization",
+      "zh": "优化算法"
+    },
+    "method": {
+      "en": "Probabilistic search with a cooling schedule",
+      "zh": "带降温计划的概率搜索"
+    },
+    "artifact": {
+      "en": "Simulated annealing algorithm",
+      "zh": "模拟退火算法"
+    },
+    "material": {
+      "en": "Science paper on optimization by annealing",
+      "zh": "《科学》 模拟退火优化论文"
+    },
+    "demo": {
+      "en": "Accept some worse moves early, cool over time",
+      "zh": "早期接受部分坏移动，逐步降温"
+    },
+    "visual": "annealing",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Temperature",
+          "zh": "温度"
+        },
+        "text": {
+          "en": "A temperature parameter controls how willing the algorithm is to accept worse moves.",
+          "zh": "温度参数控制算法接受较差移动的意愿。"
+        }
+      },
+      {
+        "label": {
+          "en": "Cooling Schedule",
+          "zh": "降温计划"
+        },
+        "text": {
+          "en": "The schedule gradually lowers temperature so the search shifts from exploration to refinement.",
+          "zh": "降温计划逐渐降低温度，使搜索从探索转向精修。"
+        }
+      },
+      {
+        "label": {
+          "en": "Local Optima",
+          "zh": "局部最优"
+        },
+        "text": {
+          "en": "Accepting occasional worse moves helps the search escape solutions that are good nearby but not globally best.",
+          "zh": "偶尔接受较差移动可以帮助搜索逃离局部看起来不错但全局并非最优的解。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Genetic algorithms",
+        "zh": "遗传算法"
+      },
+      {
+        "en": "Monte Carlo methods",
+        "zh": "蒙特卡洛方法"
+      },
+      {
+        "en": "Search algorithms",
+        "zh": "搜索算法"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Science",
+          "zh": "《科学》"
+        },
+        "title": {
+          "en": "Optimization by Simulated Annealing",
+          "zh": "模拟退火优化"
+        },
+        "description": {
+          "en": "Original Science record for the physical annealing analogy applied to optimization.",
+          "zh": "《科学》原始记录：将物理退火类比用于优化问题。"
+        },
+        "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open Science record",
+          "zh": "打开 《科学》 记录"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Optimization by Simulated Annealing",
+          "zh": "模拟退火优化"
+        },
+        "url": "https://www.science.org/doi/10.1126/science.220.4598.671"
+      },
+      {
+        "type": {
+          "en": "Optimizer docs",
+          "zh": "优化器文档"
+        },
+        "label": {
+          "en": "SciPy dual_annealing",
+          "zh": "SciPy dual_annealing"
+        },
+        "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html"
+      },
+      {
+        "type": {
+          "en": "Notebook",
+          "zh": "笔记本"
+        },
+        "label": {
+          "en": "Hedibert course PDF mirror",
+          "zh": "Hedibert course PDF mirror"
+        },
+        "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "High temperature",
+        "zh": "高温探索"
+      },
+      {
+        "en": "Occasional uphill move",
+        "zh": "偶尔上坡移动"
+      },
+      {
+        "en": "Cooling schedule",
+        "zh": "降温计划"
+      }
+    ]
+  }
+}

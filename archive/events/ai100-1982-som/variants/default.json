@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>",
+    "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.",
+        "zh": "泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat self-organizing maps as a classic unsupervised neural model for visualization and topology preservation. Its long-term legacy is the competitive-learning map, still used to explain clustering, vector quantization, and interpretable low-dimensional organization.",
+        "zh": "专家通常把自组织映射视为用于可视化和拓扑保持的经典无监督神经模型。它的长期影响在于竞争学习地图仍被用于解释聚类、向量量化和可解释低维组织。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Unsupervised competitive learning",
+      "zh": "无监督竞争学习"
+    },
+    "artifact": {
+      "en": "Kohonen self-organizing map",
+      "zh": "科霍宁自组织映射"
+    },
+    "material": {
+      "en": "Biological Cybernetics paper",
+      "zh": "《Biological Cybernetics》论文"
+    },
+    "demo": {
+      "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map.",
+      "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。"
+    },
+    "visual": "som",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Best-Matching Unit",
+          "zh": "最佳匹配单元"
+        },
+        "text": {
+          "en": "One grid unit wins for each input.",
+          "zh": "每个输入对应一个获胜网格单元。"
+        }
+      },
+      {
+        "label": {
+          "en": "Neighborhood Adaptation",
+          "zh": "邻域调整"
+        },
+        "text": {
+          "en": "Nearby units adapt together.",
+          "zh": "相邻单元一起调整。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      },
+      {
+        "en": "K-means",
+        "zh": "K-means"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Finland",
+        "zh": "芬兰"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Input vector",
+        "zh": "输入向量"
+      },
+      {
+        "en": "Winning unit",
+        "zh": "获胜单元"
+      },
+      {
+        "en": "Topology map",
+        "zh": "拓扑地图"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Springer",
+          "zh": "Springer"
+        },
+        "title": {
+          "en": "Self-organized formation of topologically correct feature maps",
+          "zh": "拓扑正确特征映射的自组织形成"
+        },
+        "description": {
+          "en": "Primary paper record for self-organizing maps.",
+          "zh": "自组织映射的主论文记录。"
+        },
+        "url": "https://doi.org/10.1007/BF00337288",
+        "source": "https://doi.org/10.1007/BF00337288",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Self-organized formation of topologically correct feature maps",
+          "zh": "《拓扑正确特征映射的自组织形成》"
+        },
+        "url": "https://doi.org/10.1007/BF00337288"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "Open SOM paper PDF",
+          "zh": "SOM 论文开放 PDF"
+        },
+        "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Self-organizing map overview",
+          "zh": "自组织映射概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Self-organizing_map"
+      },
+      {
+        "type": {
+          "en": "Retrospective",
+          "zh": "回顾"
+        },
+        "label": {
+          "en": "Essentials of the self-organizing map",
+          "zh": "自组织映射要点回顾"
+        },
+        "url": "https://doi.org/10.1016/j.neunet.2012.09.018"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Biological Cybernetics paper",
+          "zh": "《Biological Cybernetics》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The best-matching unit and its neighbors move toward an input, gradually shaping a topology-preserving map.",
+          "zh": "最佳匹配单元及其邻居向输入移动，逐渐形成保持拓扑的映射。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2021-clip-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/alec-radford.png",
+    "caption": {
+      "en": "Alec Radford portrait",
+      "zh": "亚历克·拉德福德肖像"
+    },
+    "subcaption": {
+      "en": "CLIP lead author",
+      "zh": "CLIP 主要作者"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/alec-radford.png",
+    "originalImageUrl": "resources/images/figures/alec-radford.png",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2021-clip-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg",
+    "caption": {
+      "en": "CLIP contrastive pairs",
+      "zh": "CLIP 对比图文对"
+    },
+    "subcaption": {
+      "en": "Original local explainer of image-text contrastive learning.",
+      "zh": "关于图文对比学习的本地原创解释图。"
+    },
+    "sourceId": "icml-clip-paper-page",
+    "sourceName": {
+      "en": "ICML",
+      "zh": "ICML"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+    "originalImageUrl": "https://proceedings.mlr.press/v139/radford21a.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

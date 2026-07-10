@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2017-pix2pix-summary",
+    "text": {
+      "en": "Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.",
+      "zh": "Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。"
+    },
+    "sourceIds": [
+      "image-to-image-translation-with-conditional-adversarial-networks",
+      "cvpr-open-access-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2017-pix2pix-quote",
+    "text": {
+      "en": "Image-to-image translation with conditional adversarial networks",
+      "zh": "使用条件对抗网络进行图像到图像转换"
+    },
+    "sourceIds": [
+      "image-to-image-translation-with-conditional-adversarial-networks"
+    ]
+  }
+]

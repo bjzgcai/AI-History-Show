@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2016-nas",
+  "year": 2016,
+  "title": {
+    "en": "Neural Architecture Search",
+    "zh": "神经架构搜索"
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "Google Brain"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.3861,
+      -122.0839
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Barret Zoph",
+        "zh": "巴雷特·佐夫"
+      },
+      "role": {
+        "en": "Neural architecture search lead author",
+        "zh": "神经架构搜索主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Neural architecture search with reinforcement learning",
+    "zh": "基于强化学习的神经架构搜索"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Neural Architecture Search with Reinforcement Learning",
+      "zh": "基于强化学习的神经架构搜索"
+    },
+    "workAuthors": {
+      "en": "Barret Zoph and Quoc V. Le, ICLR, 2017",
+      "zh": "巴雷特·佐夫、黎国威，ICLR，2017"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1611.01578"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

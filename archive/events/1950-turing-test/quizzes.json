@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Turing's test avoids opening the machine. What does it judge instead?",
+      "zh": "图灵测试不打开机器看内部，它改为判断什么？"
+    },
+    "options": [
+      {
+        "en": "Conversational behavior under a blind protocol",
+        "zh": "盲测协议下的对话行为"
+      },
+      {
+        "en": "The color of the computer case",
+        "zh": "电脑外壳颜色"
+      },
+      {
+        "en": "How loudly the machine runs",
+        "zh": "机器运行声音大小"
+      },
+      {
+        "en": "Whether it owns a chessboard",
+        "zh": "它是否拥有棋盘"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The imitation game focuses on observable interaction rather than inspecting internal mechanisms.",
+      "zh": "模仿游戏关注可观察互动，而不是检查内部机制。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "evaluation",
+      "behavior"
+    ]
+  }
+]

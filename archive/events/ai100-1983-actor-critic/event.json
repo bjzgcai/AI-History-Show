@@ -1,0 +1,53 @@
+{
+  "id": "ai100-1983-actor-critic",
+  "year": 1983,
+  "title": {
+    "en": "Actor-Critic",
+    "zh": "Actor-Critic"
+  },
+  "location": {
+    "name": {
+      "en": "University of Massachusetts Amherst",
+      "zh": "University of Massachusetts Amherst"
+    },
+    "country": {
+      "en": "Amherst, United States",
+      "zh": "Amherst, United States"
+    },
+    "coordinates": [
+      42.3868,
+      -72.5301
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Andrew Barto",
+        "zh": "安德鲁·巴托"
+      },
+      "role": {
+        "en": "Actor-Critic co-author",
+        "zh": "Actor-Critic 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Neuronlike adaptive elements that can solve difficult learning control problems",
+    "zh": "能够解决困难学习控制问题的类神经自适应元件"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+      "zh": "能够解决困难学习控制问题的类神经自适应元件"
+    },
+    "workAuthors": {
+      "en": "Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
+      "zh": "安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983"
+    },
+    "sourceUrl": "https://doi.org/10.1109/TSMC.1983.6313077"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

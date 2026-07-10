@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2017-wasserstein-gan-summary",
+    "text": {
+      "en": "Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.",
+      "zh": "Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。"
+    },
+    "sourceIds": [
+      "wasserstein-generative-adversarial-networks",
+      "improved-training-of-wasserstein-gans"
+    ]
+  },
+  {
+    "id": "ai100-2017-wasserstein-gan-quote",
+    "text": {
+      "en": "Wasserstein generative adversarial networks",
+      "zh": "Wasserstein 生成对抗网络"
+    },
+    "sourceIds": [
+      "wasserstein-generative-adversarial-networks"
+    ]
+  }
+]

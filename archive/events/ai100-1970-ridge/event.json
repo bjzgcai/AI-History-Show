@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1970-ridge",
+  "year": 1970,
+  "title": {
+    "en": "Ridge",
+    "zh": "岭回归"
+  },
+  "location": {
+    "name": {
+      "en": "University of Delaware",
+      "zh": "特拉华大学"
+    },
+    "country": {
+      "en": "Newark, United States",
+      "zh": "美国纽瓦克"
+    },
+    "coordinates": [
+      39.6779,
+      -75.7506
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Arthur Hoerl",
+        "zh": "阿瑟·霍尔"
+      },
+      "role": {
+        "en": "Co-author of ridge regression",
+        "zh": "岭回归共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Robert Kennard",
+        "zh": "罗伯特·肯纳德"
+      },
+      "role": {
+        "en": "Co-author of ridge regression",
+        "zh": "岭回归共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+    "zh": "岭回归：非正交问题中的有偏估计"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "zh": "岭回归：非正交问题中的有偏估计"
+    },
+    "workAuthors": {
+      "en": "Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970",
+      "zh": "阿瑟·E·霍尔、罗伯特·W·肯纳德，《Technometrics》，1970"
+    },
+    "sourceUrl": "https://doi.org/10.1080/00401706.1970.10488634"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

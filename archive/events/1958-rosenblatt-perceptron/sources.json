@@ -1,0 +1,38 @@
+[
+  {
+    "id": "the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+      "zh": "感知机：大脑中信息存储与组织的概率模型"
+    },
+    "url": "https://doi.org/10.1037/h0042519"
+  },
+  {
+    "id": "cornell-chronicle-perceptron-retrospective",
+    "type": {
+      "en": "History",
+      "zh": "历史资料"
+    },
+    "label": {
+      "en": "Cornell Chronicle perceptron retrospective",
+      "zh": "康奈尔大学 Chronicle perceptron retrospective"
+    },
+    "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
+  },
+  {
+    "id": "smithsonian-mark-i-perceptron-object-record",
+    "type": {
+      "en": "Museum",
+      "zh": "博物馆"
+    },
+    "label": {
+      "en": "Smithsonian Mark I Perceptron object record",
+      "zh": "Smithsonian Mark I Perceptron object record"
+    },
+    "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
+  }
+]

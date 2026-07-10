@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2015-diffusion-model",
+  "year": 2015,
+  "title": {
+    "en": "Diffusion Model",
+    "zh": "扩散模型"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jascha Sohl-Dickstein",
+        "zh": "雅沙·索尔-迪克斯坦"
+      },
+      "role": {
+        "en": "Diffusion model lead author",
+        "zh": "扩散模型主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Deep unsupervised learning using nonequilibrium thermodynamics",
+    "zh": "使用非平衡热力学进行深度无监督学习"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+      "zh": "使用非平衡热力学进行深度无监督学习"
+    },
+    "workAuthors": {
+      "en": "Jascha Sohl-Dickstein et al., ICML, 2015",
+      "zh": "雅沙·索尔-迪克斯坦等，ICML，2015"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

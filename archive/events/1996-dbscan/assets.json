@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1996-dbscan-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+    "caption": {
+      "en": "Martin Ester portrait",
+      "zh": "马丁·埃斯特 人物照片"
+    },
+    "subcaption": {
+      "en": "Co-author of DBSCAN.",
+      "zh": "DBSCAN 共同作者。"
+    },
+    "sourceId": "martin-ester-portrait",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+    "rights": "CC BY 2.0",
+    "usage": {
+      "en": "Historical figure photo",
+      "zh": "历史人物照片"
+    }
+  },
+  {
+    "id": "1996-dbscan-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+    "caption": {
+      "en": "DBSCAN density data",
+      "zh": "DBSCAN 密度数据图"
+    },
+    "subcaption": {
+      "en": "Public DBSCAN density illustration.",
+      "zh": "公开 DBSCAN 密度示意图。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DBSCAN-density-data.svg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+    "rights": "CC BY-SA 3.0",
+    "usage": {
+      "en": "Density diagram",
+      "zh": "密度图"
+    }
+  },
+  {
+    "id": "1996-dbscan-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg",
+    "caption": {
+      "en": "Density reachability",
+      "zh": "密度可达性"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on A density-based algorithm for discovering clusters.",
+      "zh": "依据 一种发现簇的基于密度的算法 制作的本地解释图。"
+    },
+    "sourceId": "a-density-based-algorithm-for-discovering-clusters",
+    "sourceName": {
+      "en": "A density-based algorithm for discovering clusters",
+      "zh": "一种发现簇的基于密度的算法"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Reachability diagram",
+      "zh": "可达性图"
+    }
+  },
+  {
+    "id": "1996-dbscan-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+    "caption": {
+      "en": "Core, border, noise points",
+      "zh": "核心点、边界点与噪声点"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on DBSCAN Revisited, Revisited.",
+      "zh": "依据 再访 DBSCAN，再访 制作的本地解释图。"
+    },
+    "sourceId": "dbscan-revisited-revisited",
+    "sourceName": {
+      "en": "DBSCAN Revisited, Revisited",
+      "zh": "再访 DBSCAN，再访"
+    },
+    "sourceUrl": "https://doi.org/10.1145/3068335",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Point-type diagram",
+      "zh": "点类型图"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1982-hopfield-network-summary",
+    "text": {
+      "en": "Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.",
+      "zh": "Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。"
+    },
+    "sourceIds": [
+      "neural-networks-and-physical-systems",
+      "nobel-prize-john-j-hopfield-facts"
+    ]
+  },
+  {
+    "id": "1982-hopfield-network-quote",
+    "text": {
+      "en": "neural networks and physical systems",
+      "zh": "神经网络与物理系统"
+    },
+    "sourceIds": [
+      "neural-networks-and-physical-systems"
+    ]
+  }
+]

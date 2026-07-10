@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does spectral clustering build before using eigenvectors?",
+      "zh": "谱聚类在使用特征向量前先构建什么？"
+    },
+    "options": [
+      {
+        "en": "A graph whose edges encode similarities between points",
+        "zh": "一个用边编码样本相似度的图"
+      },
+      {
+        "en": "A Jeopardy! answer database only",
+        "zh": "只有 Jeopardy! 答案数据库"
+      },
+      {
+        "en": "A VAX parts order form only",
+        "zh": "只有 VAX 零件订单表"
+      },
+      {
+        "en": "A theorem prover's proof certificate only",
+        "zh": "只有定理证明器的证明证书"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Spectral clustering represents data as an affinity graph, then uses graph-matrix eigenvectors to expose separable structure.",
+      "zh": "谱聚类把数据表示为亲和图，再用图矩阵特征向量显露可分结构。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "clustering",
+      "graphs"
+    ]
+  }
+]

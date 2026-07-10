@@ -1,0 +1,74 @@
+[
+  {
+    "id": "imagenet-classification-with-deep-convolutional-neural-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "《用深度卷积神经网络进行 ImageNet 分类》"
+    },
+    "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+  },
+  {
+    "id": "neurips-full-paper-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "NeurIPS full paper PDF",
+      "zh": "NeurIPS 完整论文 PDF"
+    },
+    "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+  },
+  {
+    "id": "imagenet-large-scale-visual-recognition-challenge",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "ImageNet Large Scale Visual Recognition Challenge",
+      "zh": "ImageNet 大规模视觉识别挑战赛"
+    },
+    "url": "https://www.image-net.org/challenges/LSVRC/index.php"
+  },
+  {
+    "id": "alexnet-overview",
+    "type": {
+      "en": "Context",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "AlexNet overview",
+      "zh": "AlexNet 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/AlexNet"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/alex-krizhevsky.jpg"
+  },
+  {
+    "id": "local-project-asset-2",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png"
+  }
+]

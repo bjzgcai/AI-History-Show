@@ -1,0 +1,53 @@
+{
+  "id": "1997-deep-blue",
+  "year": "1997",
+  "title": {
+    "en": "Deep Blue",
+    "zh": "深蓝"
+  },
+  "location": {
+    "name": {
+      "en": "IBM Research",
+      "zh": "IBM 研究院"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      41.2108,
+      -73.8035
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Murray Campbell",
+        "zh": "默里·坎贝尔"
+      },
+      "role": {
+        "en": "Deep Blue team member",
+        "zh": "深蓝 团队成员"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Specialized chess search hardware",
+    "zh": "专用国际象棋搜索硬件"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Deep Blue journal article",
+      "zh": "深蓝期刊论文"
+    },
+    "workAuthors": {
+      "en": "Murray Campbell",
+      "zh": "默里·坎贝尔"
+    },
+    "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game AI / Deep Blue",
+    "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
+  }
+}

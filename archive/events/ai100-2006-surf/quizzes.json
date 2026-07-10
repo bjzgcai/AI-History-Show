@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Why was SURF valued in local feature matching?",
+      "zh": "SURF 在局部特征匹配中为什么有价值？"
+    },
+    "options": [
+      {
+        "en": "It made robust feature detection faster",
+        "zh": "它让稳健特征检测更快"
+      },
+      {
+        "en": "It removed all images",
+        "zh": "它删除所有图像"
+      },
+      {
+        "en": "It solved chess endgames",
+        "zh": "它求解棋类残局"
+      },
+      {
+        "en": "It only stored text prompts",
+        "zh": "它只存储文本提示"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "SURF uses ideas such as integral images to speed up robust local feature detection and description.",
+      "zh": "SURF 使用积分图等思想，加速稳健局部特征检测与描述。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "surf",
+      "feature-detection"
+    ]
+  }
+]

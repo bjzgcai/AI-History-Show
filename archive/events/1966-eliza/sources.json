@@ -1,0 +1,38 @@
+[
+  {
+    "id": "eliza-cacm-paper",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "ELIZA CACM paper",
+      "zh": "ELIZA CACM paper"
+    },
+    "url": "https://doi.org/10.1145/365153.365168"
+  },
+  {
+    "id": "mit-news-obituary-for-joseph-weizenbaum",
+    "type": {
+      "en": "Institution",
+      "zh": "机构"
+    },
+    "label": {
+      "en": "MIT News obituary for Joseph Weizenbaum",
+      "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆"
+    },
+    "url": "https://news.mit.edu/2008/obit-weizenbaum-0310"
+  },
+  {
+    "id": "eliza-source-reconstruction-project",
+    "type": {
+      "en": "Archive",
+      "zh": "档案"
+    },
+    "label": {
+      "en": "ELIZA source reconstruction project",
+      "zh": "ELIZA source reconstruction project"
+    },
+    "url": "https://sites.google.com/view/elizagen-org/"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does batch normalization help stabilize?",
+      "zh": "批归一化主要帮助稳定什么？"
+    },
+    "options": [
+      {
+        "en": "Deep-network training",
+        "zh": "深度网络训练"
+      },
+      {
+        "en": "The color of a monitor",
+        "zh": "显示器颜色"
+      },
+      {
+        "en": "A chess opening book",
+        "zh": "棋类开局库"
+      },
+      {
+        "en": "A paper citation format only",
+        "zh": "只有论文引用格式"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Batch normalization normalizes intermediate activations, which can make training faster and more stable.",
+      "zh": "批归一化会归一化中间激活值，使训练更快、更稳定。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "normalization",
+      "training"
+    ]
+  }
+]

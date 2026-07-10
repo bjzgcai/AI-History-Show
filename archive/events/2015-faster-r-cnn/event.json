@@ -1,0 +1,83 @@
+{
+  "id": "2015-faster-r-cnn",
+  "year": "2015",
+  "title": {
+    "en": "Faster R-CNN",
+    "zh": "Faster R-CNN"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Shaoqing Ren",
+        "zh": "任少卿"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Ross Girshick",
+        "zh": "罗斯·格希克"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "towards real-time object detection",
+    "zh": "迈向实时目标检测"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测"
+    },
+    "workAuthors": {
+      "en": "Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+      "zh": "任少卿、何恺明、罗斯·格希克、孙剑, 神经信息处理系统大会, 2015"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1506.01497"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Object Detection / Faster r-cnn",
+    "zh": "BenchCouncil AI100：目标检测 / Faster R-CNN"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2020-vit",
+  "year": 2020,
+  "title": {
+    "en": "Vision Transformer",
+    "zh": "视觉 Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Google Research",
+      "zh": "Google 研究院"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alexey Dosovitskiy",
+        "zh": "阿列克谢·多索维茨基"
+      },
+      "role": {
+        "en": "Lead author of Vision Transformer",
+        "zh": "视觉 Transformer 主要作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Google Research",
+        "zh": "Google 研究院"
+      },
+      "role": {
+        "en": "Research organization",
+        "zh": "研究机构"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "An Image is Worth 16x16 Words",
+    "zh": "一张图像价值 16x16 个词"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "zh": "一张图像价值 16x16 个词：用于大规模图像识别的 Transformer"
+    },
+    "workAuthors": {
+      "en": "Alexey Dosovitskiy et al., ICLR, 2021",
+      "zh": "阿列克谢·多索维茨基等，ICLR，2021"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2010.11929"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

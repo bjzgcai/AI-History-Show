@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1989-lenet-summary",
+    "text": {
+      "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception.",
+      "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。"
+    },
+    "sourceIds": [
+      "backpropagation-applied-to-handwritten-zip-code-recognition",
+      "lenet-5-demos-and-documentation"
+    ]
+  },
+  {
+    "id": "ai100-1989-lenet-quote",
+    "text": {
+      "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "zh": "反向传播应用于手写邮编识别"
+    },
+    "sourceIds": [
+      "backpropagation-applied-to-handwritten-zip-code-recognition"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "LISP made early AI feel programmable because code and data could both be written as...",
+      "zh": "LISP 让早期 AI 更可编程，因为代码和数据都可以写成什么？"
+    },
+    "options": [
+      {
+        "en": "S-expressions",
+        "zh": "S 表达式"
+      },
+      {
+        "en": "Photographs",
+        "zh": "照片"
+      },
+      {
+        "en": "Go stones",
+        "zh": "围棋棋子"
+      },
+      {
+        "en": "Audio tapes only",
+        "zh": "只有录音磁带"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "S-expressions made symbolic programs and symbolic data share a compact representation.",
+      "zh": "S 表达式让符号程序和符号数据共享一种紧凑表示。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "language",
+      "symbolic"
+    ]
+  }
+]

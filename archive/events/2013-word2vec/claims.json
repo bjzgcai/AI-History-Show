@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2013-word2vec-summary",
+    "text": {
+      "en": "Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.",
+      "zh": "Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。"
+    },
+    "sourceIds": [
+      "efficient-estimation-of-word-representations-in-vector-space",
+      "distributed-representations-of-words-and-phrases-and-their-compositionality"
+    ]
+  },
+  {
+    "id": "2013-word2vec-quote",
+    "text": {
+      "en": "distributed representations of words",
+      "zh": "词的分布式表示"
+    },
+    "sourceIds": [
+      "efficient-estimation-of-word-representations-in-vector-space"
+    ]
+  }
+]

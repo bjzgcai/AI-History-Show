@@ -1,0 +1,62 @@
+[
+  {
+    "id": "learning-transferable-visual-models-from-natural-language-supervision",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Learning Transferable Visual Models From Natural Language Supervision",
+      "zh": "《从自然语言监督中学习可迁移视觉模型》"
+    },
+    "url": "https://arxiv.org/abs/2103.00020"
+  },
+  {
+    "id": "icml-clip-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICML CLIP paper page",
+      "zh": "ICML CLIP 论文页面"
+    },
+    "url": "https://proceedings.mlr.press/v139/radford21a.html"
+  },
+  {
+    "id": "openai-clip-blog-post",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "OpenAI CLIP blog post",
+      "zh": "OpenAI CLIP 博客"
+    },
+    "url": "https://openai.com/index/clip/"
+  },
+  {
+    "id": "openai-clip-github-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "OpenAI CLIP GitHub repository",
+      "zh": "OpenAI CLIP 代码仓库"
+    },
+    "url": "https://github.com/openai/CLIP"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/alec-radford.png"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Why does CycleGAN use a cycle-consistency loss?",
+      "zh": "CycleGAN 为什么使用循环一致性损失？"
+    },
+    "options": [
+      {
+        "en": "To preserve content when translating there and back",
+        "zh": "为了在来回转换时保留内容"
+      },
+      {
+        "en": "To sort words alphabetically",
+        "zh": "为了按字母排序单词"
+      },
+      {
+        "en": "To choose a chess move",
+        "zh": "为了选择棋步"
+      },
+      {
+        "en": "To delete the input image",
+        "zh": "为了删除输入图像"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Cycle consistency checks that translating from one domain and back reconstructs the original structure.",
+      "zh": "循环一致性检查从一个域转换到另一个域再转回时能否重建原始结构。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "cyclegan",
+      "ai100"
+    ]
+  }
+]

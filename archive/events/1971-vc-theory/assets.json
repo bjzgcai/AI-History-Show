@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1971-vc-theory-image-1",
+    "kind": "image",
+    "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+    "caption": {
+      "en": "Vladimir Vapnik portrait",
+      "zh": "弗拉基米尔·瓦普尼克 肖像"
+    },
+    "subcaption": {
+      "en": "Vladimir Vapnik profile portrait from the Simons Foundation.",
+      "zh": "西蒙斯基金会 人物页中的 弗拉基米尔·瓦普尼克 肖像。"
+    },
+    "sourceId": "simons-foundation",
+    "sourceName": {
+      "en": "Simons Foundation",
+      "zh": "西蒙斯基金会"
+    },
+    "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+    "originalImageUrl": "https://simonsfoundation.imgix.net/wp-content/uploads/2017/08/15112731/vald1.png",
+    "rights": {
+      "en": "Simons Foundation profile image; page does not state an open reuse license.",
+      "zh": "西蒙斯基金会 profile image; page does not state an open reuse license."
+    },
+    "usage": {
+      "en": "Portrait",
+      "zh": "人物肖像"
+    }
+  },
+  {
+    "id": "1971-vc-theory-image-2",
+    "kind": "image",
+    "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg",
+    "caption": {
+      "en": "VC theory generalization diagram",
+      "zh": "VC 理论泛化示意图"
+    },
+    "subcaption": {
+      "en": "Original explainer derived from Vapnik and Chervonenkis's learning theory sources.",
+      "zh": "根据 瓦普尼克 与 切尔沃年基斯 的学习理论资料制作的原创解释图。"
+    },
+    "sourceId": "on-the-uniform-convergence-of-relative-frequencies",
+    "sourceName": "SIAM / Springer / IEEE",
+    "sourceUrl": "https://epubs.siam.org/doi/10.1137/1116025",
+    "originalImageUrl": "Local original explainer",
+    "rights": "Original local explainer; source article and book figure reuse rights not used.",
+    "usage": {
+      "en": "Supporting image / Explainer graphic",
+      "zh": "辅助说明图 / 解释性图形"
+    }
+  }
+]

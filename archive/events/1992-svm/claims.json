@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1992-svm-summary",
+    "text": {
+      "en": "SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.",
+      "zh": "支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。"
+    },
+    "sourceIds": [
+      "a-training-algorithm-for-optimal-margin-classifiers",
+      "libsvm-project-page"
+    ]
+  },
+  {
+    "id": "1992-svm-quote",
+    "text": {
+      "en": "optimal margin classifiers",
+      "zh": "最优间隔分类器"
+    },
+    "sourceIds": [
+      "a-training-algorithm-for-optimal-margin-classifiers"
+    ]
+  }
+]

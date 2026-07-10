@@ -1,0 +1,50 @@
+[
+  {
+    "id": "graph-attention-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Graph Attention Networks",
+      "zh": "《图注意力网络》"
+    },
+    "url": "https://arxiv.org/abs/1710.10903"
+  },
+  {
+    "id": "iclr-openreview-record",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR OpenReview record",
+      "zh": "ICLR OpenReview 记录"
+    },
+    "url": "https://openreview.net/forum?id=rJXMpikCZ"
+  },
+  {
+    "id": "original-gat-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "Original GAT repository",
+      "zh": "原始 GAT 代码仓库"
+    },
+    "url": "https://github.com/PetarV-/GAT"
+  },
+  {
+    "id": "google-scholar-profile",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Google Scholar profile",
+      "zh": "Google Scholar 个人资料"
+    },
+    "url": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Why are skip connections central to U-Net?",
+      "zh": "为什么跳跃连接是 U-Net 的核心？"
+    },
+    "options": [
+      {
+        "en": "They carry fine localization detail from encoder to decoder",
+        "zh": "它们把精细定位信息从编码器传给解码器"
+      },
+      {
+        "en": "They delete the decoder entirely",
+        "zh": "它们完全删除了解码器"
+      },
+      {
+        "en": "They make every pixel the same class",
+        "zh": "它们让每个像素都是同一类"
+      },
+      {
+        "en": "They replace images with audio",
+        "zh": "它们用音频替代图像"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "U-Net’s skip connections combine high-level context with early-layer spatial detail, which is crucial for segmentation boundaries.",
+      "zh": "U-Net 的跳跃连接把高级上下文与早期空间细节结合起来，这对分割边界很关键。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "vision",
+      "segmentation"
+    ]
+  }
+]

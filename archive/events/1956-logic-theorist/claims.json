@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1956-logic-theorist-summary",
+    "text": {
+      "en": "In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.",
+      "zh": "1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J·C·肖 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。"
+    },
+    "sourceIds": [
+      "the-logic-theory-machine",
+      "carnegie-mellon-university-archives"
+    ]
+  },
+  {
+    "id": "1956-logic-theorist-quote",
+    "text": {
+      "en": "capable of discovering proofs for theorems in symbolic logic",
+      "zh": "能够发现符号逻辑中定理的证明"
+    },
+    "sourceIds": [
+      "the-logic-theory-machine"
+    ]
+  }
+]

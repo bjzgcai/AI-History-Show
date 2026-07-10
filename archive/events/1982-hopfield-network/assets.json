@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1982-hopfield-network-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
+    "caption": {
+      "en": "John J. Hopfield portrait",
+      "zh": "约翰·J·霍普菲尔德 肖像"
+    },
+    "subcaption": {
+      "en": "Nobel Prize profile portrait for Hopfield.",
+      "zh": "诺贝尔奖官网的 Hopfield 人物图。"
+    },
+    "sourceId": "nobel-prize-john-j-hopfield-facts",
+    "sourceName": "Nobel Prize",
+    "sourceUrl": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+    "originalImageUrl": "https://www.nobelprize.org/images/165779-portrait-medium.jpg",
+    "rights": "Nobel Prize image; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1982-hopfield-network-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
+    "caption": {
+      "en": "Energy basin",
+      "zh": "能量盆地"
+    },
+    "subcaption": {
+      "en": "Local redraw for Hopfield Network, based on the listed source material.",
+      "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "neural-networks-and-physical-systems",
+    "sourceName": "PNAS",
+    "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1982-hopfield-network-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg",
+    "caption": {
+      "en": "Associative memory grid",
+      "zh": "联想记忆网格"
+    },
+    "subcaption": {
+      "en": "Local redraw for Hopfield Network, based on the listed source material.",
+      "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "neural-networks-and-physical-systems",
+    "sourceName": "PNAS",
+    "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

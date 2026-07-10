@@ -1,0 +1,176 @@
+{
+  "description": {
+    "en": "<p>Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.</p>",
+    "zh": "<p>计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Published Paper",
+        "zh": "论文材料"
+      },
+      "html": {
+        "en": "Cook's 1971 STOC paper made Boolean satisfiability a canonical problem for comparing computational hardness. It showed that many different-looking problems can be connected by efficient reductions.",
+        "zh": "库克 1971 年 STOC 论文把布尔可满足性问题变成比较计算困难性的经典对象。它说明许多看起来不同的问题可以通过高效归约联系起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Reduction Logic",
+        "zh": "归约逻辑"
+      },
+      "html": {
+        "en": "The exhibit should emphasize the move from isolated hard problems to a shared map of hardness. If one NP-complete problem is solved efficiently, every problem in NP can be solved efficiently.",
+        "zh": "这个展项应突出从“单个难题”到“困难性地图”的转变。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Cook's NP-completeness result as a founding event of theoretical computer science. Its long-term legacy is a durable framework for comparing computational hardness across algorithms, optimization, cryptography, and AI search.",
+        "zh": "专家通常把库克的 NP 完全性结果视为理论计算机科学的奠基事件。它的长期影响在于建立了一套持久框架，用来比较算法、优化、密码学和 AI 搜索中的计算困难性。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Theory",
+      "zh": "理论"
+    },
+    "method": {
+      "en": "Polynomial-time reductions",
+      "zh": "多项式时间归约"
+    },
+    "artifact": {
+      "en": "NP-completeness framework",
+      "zh": "NP 完全性框架"
+    },
+    "material": {
+      "en": "STOC paper + Clay problem",
+      "zh": "STOC 论文 + Clay 难题"
+    },
+    "demo": {
+      "en": "Reduction map",
+      "zh": "归约地图"
+    },
+    "visual": "transcript",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "P versus NP",
+          "zh": "P 与 NP"
+        },
+        "text": {
+          "en": "P contains problems that can be solved quickly, while NP contains problems whose proposed answers can be checked quickly. The open question is whether quick checking always implies quick solving.",
+          "zh": "P 包含可以快速求解的问题，NP 包含给出答案后可以快速验证的问题。核心未解问题是：快速验证是否总意味着也能快速求解。"
+        }
+      },
+      {
+        "label": {
+          "en": "NP-Completeness",
+          "zh": "NP 完全性"
+        },
+        "text": {
+          "en": "An NP-complete problem is among the hardest problems in NP. If one NP-complete problem can be solved efficiently, then every problem in NP can be solved efficiently.",
+          "zh": "NP 完全问题属于 NP 中最困难的一类。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。"
+        }
+      },
+      {
+        "label": {
+          "en": "Polynomial-Time Reduction",
+          "zh": "多项式时间归约"
+        },
+        "text": {
+          "en": "A reduction translates one problem into another efficiently. It lets researchers compare difficulty across very different-looking problems without solving them directly.",
+          "zh": "归约把一个问题高效转换成另一个问题。它让研究者无需直接求解，也能比较外表差异很大的问题之间的困难性。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Turing machines",
+        "zh": "图灵机"
+      },
+      {
+        "en": "SAT solving",
+        "zh": "SAT 求解"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "ACM Digital Library",
+          "zh": "ACM 数字图书馆"
+        },
+        "title": {
+          "en": "The Complexity of Theorem-Proving Procedures",
+          "zh": "《定理证明过程的复杂性》"
+        },
+        "description": {
+          "en": "Official ACM page for Cook's 1971 STOC paper introducing NP-completeness.",
+          "zh": "ACM 官方论文页，收录 库克 1971 年提出 NP 完全性的 STOC 论文。"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/800157.805047",
+        "source": "https://dl.acm.org/doi/10.1145/800157.805047",
+        "license": {
+          "en": "ACM article page; reuse rights are controlled by ACM.",
+          "zh": "ACM 文章页面；复用权利由 ACM 条款控制。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open ACM paper",
+          "zh": "打开 ACM 论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "The Complexity of Theorem-Proving Procedures",
+          "zh": "定理证明过程的复杂性"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/800157.805047"
+      },
+      {
+        "type": {
+          "en": "Award",
+          "zh": "奖项"
+        },
+        "label": {
+          "en": "Stephen A. Cook ACM A.M. Turing Award",
+          "zh": "斯蒂芬·A·库克 ACM A.M. 图灵 Award"
+        },
+        "url": "https://awards.acm.org/award_winners/cook_N991950"
+      },
+      {
+        "type": {
+          "en": "Problem",
+          "zh": "难题"
+        },
+        "label": {
+          "en": "Clay Mathematics Institute P vs NP",
+          "zh": "克雷数学研究所 P 与 NP 问题"
+        },
+        "url": "https://www.claymath.org/millennium/p-vs-np/"
+      }
+    ]
+  }
+}

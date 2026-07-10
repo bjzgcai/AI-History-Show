@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2013-dqn-summary",
+    "text": {
+      "en": "DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.",
+      "zh": "DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。"
+    },
+    "sourceIds": [
+      "playing-atari-with-deep-reinforcement-learning",
+      "human-level-control-through-deep-reinforcement-learning"
+    ]
+  },
+  {
+    "id": "2013-dqn-quote",
+    "text": {
+      "en": "playing Atari with deep reinforcement learning",
+      "zh": "用深度强化学习玩 Atari"
+    },
+    "sourceIds": [
+      "playing-atari-with-deep-reinforcement-learning"
+    ]
+  }
+]

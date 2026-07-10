@@ -1,0 +1,198 @@
+{
+  "description": {
+    "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>",
+    "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Classic reinforcement learning had strong theory, but scaling from raw pixels to control remained difficult. DQN made that scaling visible.",
+        "zh": "经典强化学习有坚实理论，但从原始像素扩展到控制任务仍然困难。DQN 让这种扩展变得可见。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
+        "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat DQN as the breakthrough that made deep reinforcement learning visible and concrete. Its long-term legacy is the neural loop connecting perception, action, reward, replay, and value learning, despite ongoing sample-efficiency and stability challenges.",
+        "zh": "专家通常把 DQN 视为让深度强化学习变得可见且具体的突破。它的长期影响在于把感知、行动、奖励、经验回放和价值学习接成神经循环，尽管样本效率和稳定性问题仍存在。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Reinforce learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Q-learning with convolutional networks, replay, and target networks",
+      "zh": "结合卷积网络、经验回放与目标网络的 Q 学习"
+    },
+    "artifact": {
+      "en": "Atari-playing Deep Q Network",
+      "zh": "能玩 Atari 的深度 Q 网络"
+    },
+    "material": {
+      "en": "arXiv paper, Nature paper, and DeepMind blog",
+      "zh": "arXiv 论文、《自然》 论文与 DeepMind 博客"
+    },
+    "demo": {
+      "en": "Pixels enter replay; Q-values choose actions",
+      "zh": "像素进入回放；Q 值选择动作"
+    },
+    "visual": "dqn",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Experience Replay",
+          "zh": "经验回放"
+        },
+        "text": {
+          "en": "Past transitions are sampled again to make learning more stable and data-efficient.",
+          "zh": "过去转移会被再次采样，使学习更稳定也更省数据。"
+        }
+      },
+      {
+        "label": {
+          "en": "Target Network",
+          "zh": "目标网络"
+        },
+        "text": {
+          "en": "A delayed copy of the value network reduces moving-target instability.",
+          "zh": "价值网络的延迟副本减少移动目标的不稳定。"
+        }
+      },
+      {
+        "label": {
+          "en": "Q-value",
+          "zh": "Q 值"
+        },
+        "text": {
+          "en": "The network estimates future return for each action.",
+          "zh": "网络估计每个动作的未来回报。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Q Learning",
+        "zh": "Q 学习"
+      },
+      {
+        "en": "AlphaGo",
+        "zh": "AlphaGo"
+      },
+      {
+        "en": "A3C",
+        "zh": "A3C"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv / Nature",
+          "zh": "arXiv / 《自然》"
+        },
+        "title": {
+          "en": "DQN paper",
+          "zh": "DQN 论文"
+        },
+        "description": {
+          "en": "Primary DeepMind DQN source; local images redraw replay memory and Q-value control.",
+          "zh": "DeepMind DQN 原始来源；本地图重画回放记忆和 Q 值控制。"
+        },
+        "url": "https://arxiv.org/abs/1312.5602",
+        "source": "https://arxiv.org/abs/1312.5602",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open preprint",
+          "zh": "打开预印本"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Preprint",
+          "zh": "预印本"
+        },
+        "label": {
+          "en": "Playing Atari with Deep Reinforcement Learning",
+          "zh": "用深度强化学习玩 Atari"
+        },
+        "url": "https://arxiv.org/abs/1312.5602"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Human-level control through deep reinforcement learning",
+          "zh": "Human-level control through deep reinforcement learning"
+        },
+        "url": "https://www.nature.com/articles/nature14236"
+      },
+      {
+        "type": {
+          "en": "Project note",
+          "zh": "项目说明"
+        },
+        "label": {
+          "en": "Google DeepMind: Deep Reinforcement Learning",
+          "zh": "谷歌 DeepMind: Deep Reinforcement Learning"
+        },
+        "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Experience Replay",
+        "zh": "经验回放"
+      },
+      {
+        "en": "Target Network",
+        "zh": "目标网络"
+      },
+      {
+        "en": "Q-value",
+        "zh": "Q 值"
+      }
+    ]
+  }
+}

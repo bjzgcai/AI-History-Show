@@ -1,0 +1,50 @@
+[
+  {
+    "id": "logical-or-non-mathematical-programmes",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Logical or non-mathematical programmes",
+      "zh": "逻辑或非数学程序"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/1455270.1455277"
+  },
+  {
+    "id": "computer-pioneers-christopher-strachey",
+    "type": {
+      "en": "Biography",
+      "zh": "人物资料"
+    },
+    "label": {
+      "en": "Computer Pioneers - Christopher Strachey",
+      "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇"
+    },
+    "url": "https://history.computer.org/pioneers/strachey.html"
+  },
+  {
+    "id": "strachey-draughts-program-screenshot",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Strachey draughts program screenshot",
+      "zh": "斯特雷奇 跳棋程序截图"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png"
+  },
+  {
+    "id": "checkers-board-photo",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Checkers board photo",
+      "zh": "跳棋棋盘照片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "densely-connected-convolutional-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Densely Connected Convolutional Networks",
+      "zh": "《密集连接卷积网络》"
+    },
+    "url": "https://arxiv.org/abs/1608.06993"
+  },
+  {
+    "id": "cvf-open-access-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "CVF Open Access paper page",
+      "zh": "CVF 开放论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
+  },
+  {
+    "id": "original-densenet-code-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "Original DenseNet code repository",
+      "zh": "DenseNet 原始代码仓库"
+    },
+    "url": "https://github.com/liuzhuang13/DenseNet"
+  },
+  {
+    "id": "meta-ai-publication-page",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "Meta AI publication page",
+      "zh": "Meta AI 出版页面"
+    },
+    "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/2016-densenet/people/2016-densenet_people_01.png"
+  },
+  {
+    "id": "local-project-asset-2",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png"
+  }
+]

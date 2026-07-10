@@ -1,0 +1,62 @@
+[
+  {
+    "id": "bert",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "BERT",
+      "zh": "《BERT》"
+    },
+    "url": "https://arxiv.org/abs/1810.04805"
+  },
+  {
+    "id": "acl-anthology-bert-paper",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ACL Anthology BERT paper",
+      "zh": "ACL Anthology BERT 论文"
+    },
+    "url": "https://aclanthology.org/N19-1423/"
+  },
+  {
+    "id": "google-research-bert-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "Google Research BERT repository",
+      "zh": "Google Research BERT 代码仓库"
+    },
+    "url": "https://github.com/google-research/bert"
+  },
+  {
+    "id": "google-ai-bert-blog-post",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "Google AI BERT blog post",
+      "zh": "Google AI BERT 博客"
+    },
+    "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/jacob-devlin.jpg"
+  }
+]

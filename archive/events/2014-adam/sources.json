@@ -1,0 +1,50 @@
+[
+  {
+    "id": "adam-a-method-for-stochastic-optimization",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Adam: A Method for Stochastic Optimization",
+      "zh": "Adam：一种随机优化方法"
+    },
+    "url": "https://arxiv.org/abs/1412.6980"
+  },
+  {
+    "id": "pytorch-torch-optim-adam",
+    "type": {
+      "en": "Implementation",
+      "zh": "Implementation"
+    },
+    "label": {
+      "en": "PyTorch torch.optim.Adam",
+      "zh": "PyTorch torch.optim.Adam"
+    },
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html"
+  },
+  {
+    "id": "tensorflow-keras-adam-optimizer",
+    "type": {
+      "en": "Framework docs",
+      "zh": "Framework docs"
+    },
+    "label": {
+      "en": "TensorFlow Keras Adam optimizer",
+      "zh": "TensorFlow Keras Adam optimizer"
+    },
+    "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam"
+  },
+  {
+    "id": "diederik-p-kingma-personal-website",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Diederik P. Kingma personal website",
+      "zh": "迪德里克·P·金马 personal website"
+    },
+    "url": "https://dpkingma.com/"
+  }
+]

@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>VGG made convolutional networks feel like a disciplined architecture language: small filters, repeated blocks, occasional pooling, and great depth. The 2014 Oxford work was not the fastest or smallest model, but it became a canonical feature extractor and teaching example. Its clarity helped later researchers reason about depth before residual and dense connections became standard.</p>",
+    "zh": "<p>VGG 让卷积网络看起来像一种有纪律的架构语言：小卷积核、重复模块、阶段性池化，以及很深的层数。牛津团队 2014 年的工作并不是最快或最小的模型，却成为经典特征提取器和教学范例。它的清晰结构帮助研究者在残差连接和密集连接成为标准之前理解“深度”的价值。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "After AlexNet, the field knew that large CNNs could win ImageNet, but the design space was still messy. VGG asked how far a simple homogeneous design could go if depth was increased carefully.",
+        "zh": "AlexNet 之后，研究者知道大型 CNN 能赢得 ImageNet，但架构设计空间仍然混乱。VGG 追问：如果谨慎增加深度，一个简单同质化设计能走多远？"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Instead of mixing many filter sizes, VGG stacks small convolutions in a regular pattern. The network becomes deeper without turning the architecture into a collection of special cases.",
+        "zh": "VGG 不混用大量卷积核尺寸，而是按规则堆叠小卷积。网络因此变深，同时架构仍保持统一。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its long-term legacy is clarity: it still teaches depth, pretrained visual features, and baseline comparison even though newer models are more efficient.",
+        "zh": "专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。它的长期影响在于清晰性：即使新模型更高效，它仍适合讲解网络深度、预训练视觉特征和基线比较。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Computer Vision",
+      "zh": "计算机视觉"
+    },
+    "method": {
+      "en": "Very deep stacks of 3x3 convolutions",
+      "zh": "由 3x3 卷积堆叠出的很深网络"
+    },
+    "artifact": {
+      "en": "VGG-16 and VGG-19 architectures",
+      "zh": "VGG-16 与 VGG-19 架构"
+    },
+    "material": {
+      "en": "ImageNet recognition model",
+      "zh": "ImageNet 识别模型"
+    },
+    "demo": {
+      "en": "Depth through small filters",
+      "zh": "用小卷积核堆叠深度"
+    },
+    "visual": "vgg",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "3x3 Filters",
+          "zh": "3x3 卷积核"
+        },
+        "text": {
+          "en": "VGG repeatedly uses small filters, letting several layers build a larger effective receptive field while adding nonlinearities.",
+          "zh": "VGG 反复使用小卷积核，让多层组合出更大的有效感受野，同时插入更多非线性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Network Depth",
+          "zh": "网络深度"
+        },
+        "text": {
+          "en": "The paper systematically increased depth and showed that deeper convolutional stacks improved large-scale recognition.",
+          "zh": "论文系统增加网络深度，并展示更深卷积堆叠能提升大规模识别。"
+        }
+      },
+      {
+        "label": {
+          "en": "Transfer Features",
+          "zh": "迁移特征"
+        },
+        "text": {
+          "en": "Pretrained VGG features became a common starting point for detection, segmentation, style transfer, and visualization.",
+          "zh": "预训练 VGG 特征后来成为检测、分割、风格迁移和可视化的常用起点。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "GoogLeNet / Inception",
+        "zh": "GoogLeNet / Inception"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Oxford VGG",
+          "zh": "参考来源"
+        },
+        "title": {
+          "en": "Very Deep ConvNets project",
+          "zh": "超深卷积网络项目"
+        },
+        "description": {
+          "en": "Official VGG project page with model release notes and source material.",
+          "zh": "VGG 官方项目页，包含模型发布说明和相关资料。"
+        },
+        "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+          "zh": "用于大规模图像识别的超深卷积网络"
+        },
+        "url": "https://arxiv.org/abs/1409.1556"
+      },
+      {
+        "type": {
+          "en": "Project",
+          "zh": "项目"
+        },
+        "label": {
+          "en": "Oxford VGG Very Deep ConvNets",
+          "zh": "Oxford VGG Very Deep ConvNets"
+        },
+        "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/"
+      },
+      {
+        "type": {
+          "en": "Model docs",
+          "zh": "模型文档"
+        },
+        "label": {
+          "en": "TorchVision VGG model family",
+          "zh": "TorchVision VGG model family"
+        },
+        "url": "https://pytorch.org/vision/stable/models/vgg.html"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "3x3 filters",
+        "zh": "3x3 卷积核"
+      },
+      {
+        "en": "16-19 weight layers",
+        "zh": "16-19 个权重层"
+      },
+      {
+        "en": "Released models",
+        "zh": "公开模型"
+      }
+    ]
+  }
+}

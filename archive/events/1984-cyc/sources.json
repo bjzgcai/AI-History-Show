@@ -1,0 +1,62 @@
+[
+  {
+    "id": "building-large-knowledge-based-systems",
+    "type": {
+      "en": "Book",
+      "zh": "专著"
+    },
+    "label": {
+      "en": "Building Large Knowledge-Based Systems",
+      "zh": "构建大型知识系统"
+    },
+    "url": "https://dl.acm.org/doi/book/10.5555/70571"
+  },
+  {
+    "id": "the-evolution-of-cycl",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "The Evolution of CycL",
+      "zh": "CycL 的演化"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/122296.122308"
+  },
+  {
+    "id": "cyc",
+    "type": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "label": {
+      "en": "Cyc",
+      "zh": "Cyc"
+    },
+    "url": "https://cyc.com/"
+  },
+  {
+    "id": "cyc-projects-logo-image",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Cyc projects logo image",
+      "zh": "Cyc 项目标识图片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg"
+  }
+]

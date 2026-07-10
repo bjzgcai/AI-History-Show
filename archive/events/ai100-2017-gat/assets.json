@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2017-gat-image-1",
+    "kind": "image",
+    "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1",
+    "caption": {
+      "en": "Petar Velickovic portrait",
+      "zh": "彼得·维利奇科维奇肖像"
+    },
+    "subcaption": {
+      "en": "Graph Attention Networks lead author",
+      "zh": "图注意力网络主要作者"
+    },
+    "sourceId": "google-scholar-profile",
+    "sourceName": {
+      "en": "Google Scholar profile",
+      "zh": "Google Scholar 个人资料"
+    },
+    "sourceUrl": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ",
+    "originalImageUrl": "https://scholar.google.com/citations?user=kcTK_FAAAAAJ",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2017-gat-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg",
+    "caption": {
+      "en": "GAT explainer",
+      "zh": "GAT 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "graph-attention-networks",
+    "sourceName": {
+      "en": "OpenReview",
+      "zh": "OpenReview"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1710.10903",
+    "originalImageUrl": "https://arxiv.org/abs/1710.10903",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

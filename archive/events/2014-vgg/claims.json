@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2014-vgg-summary",
+    "text": {
+      "en": "VGG made convolutional networks feel like a disciplined architecture language: small filters, repeated blocks, occasional pooling, and great depth. The 2014 Oxford work was not the fastest or smallest model, but it became a canonical feature extractor and teaching example. Its clarity helped later researchers reason about depth before residual and dense connections became standard.",
+      "zh": "VGG 让卷积网络看起来像一种有纪律的架构语言：小卷积核、重复模块、阶段性池化，以及很深的层数。牛津团队 2014 年的工作并不是最快或最小的模型，却成为经典特征提取器和教学范例。它的清晰结构帮助研究者在残差连接和密集连接成为标准之前理解“深度”的价值。"
+    },
+    "sourceIds": [
+      "very-deep-convolutional-networks-for-large-scale-image-recognition",
+      "oxford-vgg-very-deep-convnets"
+    ]
+  },
+  {
+    "id": "2014-vgg-quote",
+    "text": {
+      "en": "very deep convolutional networks",
+      "zh": "非常深的卷积网络"
+    },
+    "sourceIds": [
+      "very-deep-convolutional-networks-for-large-scale-image-recognition"
+    ]
+  }
+]

@@ -1,0 +1,259 @@
+{
+  "description": {
+    "en": "<p>GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.</p>",
+    "zh": "<p>GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.",
+        "zh": "GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat GAT as a defining attention-based graph model. Its long-term legacy is the idea that graph neighborhoods can be weighted dynamically instead of only by graph degree or fixed normalization.",
+        "zh": "专家通常把 GAT 视为注意力式图模型的代表。它的长期影响在于图邻域可以动态加权，而不只依赖节点度或固定归一化。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Graph learning",
+      "zh": "图学习"
+    },
+    "method": {
+      "en": "Attention-weighted graph aggregation",
+      "zh": "注意力加权图聚合"
+    },
+    "artifact": {
+      "en": "Graph Attention Network",
+      "zh": "图注意力网络"
+    },
+    "material": {
+      "en": "ICLR paper and implementation",
+      "zh": "ICLR 论文与实现"
+    },
+    "demo": {
+      "en": "A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state.",
+      "zh": "节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Neighbor Attention",
+          "zh": "邻居注意力"
+        },
+        "text": {
+          "en": "Important neighbors receive larger weights.",
+          "zh": "重要邻居获得更大权重。"
+        }
+      },
+      {
+        "label": {
+          "en": "Multi-head Attention",
+          "zh": "多头注意力"
+        },
+        "text": {
+          "en": "Several attention heads stabilize learning.",
+          "zh": "多个注意力头稳定学习。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GCN",
+          "zh": "GCN"
+        },
+        "zh": {
+          "en": "GCN",
+          "zh": "GCN"
+        }
+      },
+      {
+        "en": {
+          "en": "Graph Neural Network",
+          "zh": "图神经网络"
+        },
+        "zh": {
+          "en": "Graph Neural Network",
+          "zh": "图神经网络"
+        }
+      },
+      {
+        "en": {
+          "en": "Transformer",
+          "zh": "Transformer"
+        },
+        "zh": {
+          "en": "Transformer",
+          "zh": "Transformer"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United Kingdom",
+          "zh": "英国"
+        },
+        "zh": {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      },
+      {
+        "en": {
+          "en": "Canada",
+          "zh": "加拿大"
+        },
+        "zh": {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Score neighbors",
+          "zh": "邻居打分"
+        },
+        "zh": {
+          "en": "Score neighbors",
+          "zh": "邻居打分"
+        }
+      },
+      {
+        "en": {
+          "en": "Normalize weights",
+          "zh": "归一化权重"
+        },
+        "zh": {
+          "en": "Normalize weights",
+          "zh": "归一化权重"
+        }
+      },
+      {
+        "en": {
+          "en": "Update node",
+          "zh": "更新节点"
+        },
+        "zh": {
+          "en": "Update node",
+          "zh": "更新节点"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenReview",
+          "zh": "OpenReview"
+        },
+        "title": {
+          "en": "Graph Attention Networks",
+          "zh": "图注意力网络"
+        },
+        "description": {
+          "en": "OpenReview source card for GAT.",
+          "zh": "OpenReview 的GAT资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1710.10903",
+        "source": "https://arxiv.org/abs/1710.10903",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Graph Attention Networks",
+          "zh": "《图注意力网络》"
+        },
+        "url": "https://arxiv.org/abs/1710.10903"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "ICLR OpenReview record",
+          "zh": "ICLR OpenReview 记录"
+        },
+        "url": "https://openreview.net/forum?id=rJXMpikCZ"
+      },
+      {
+        "type": {
+          "en": "Code",
+          "zh": "代码"
+        },
+        "label": {
+          "en": "Original GAT repository",
+          "zh": "原始 GAT 代码仓库"
+        },
+        "url": "https://github.com/PetarV-/GAT"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper and implementation",
+          "zh": "ICLR 论文与实现"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A node scores its neighbors, normalizes attention weights, and combines their features into an updated node state.",
+          "zh": "节点为邻居打分，归一化注意力权重，并把邻居特征合成为更新后的节点状态。"
+        }
+      }
+    ]
+  }
+}

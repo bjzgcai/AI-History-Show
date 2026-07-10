@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1970-shrdlu-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
+    "caption": {
+      "en": "Terry Winograd portrait",
+      "zh": "特里·维诺格拉德 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Stanford Computer Science profile.",
+      "zh": "来自 斯坦福大学 Computer 《科学》 个人资料页的人物图。"
+    },
+    "sourceId": "terry-winograd-stanford-computer-science",
+    "sourceName": {
+      "en": "Stanford Computer Science",
+      "zh": "斯坦福大学 Computer 《科学》"
+    },
+    "sourceUrl": "https://www.cs.stanford.edu/people/terry-winograd",
+    "originalImageUrl": "https://www.cs.stanford.edu/sites/g/files/sbiybj28076/files/styles/large_square/public/media/person/terry-winograd1509560558940.jpg",
+    "rights": {
+      "en": "Stanford profile image; reuse rights not stated.",
+      "zh": "斯坦福大学 profile image; reuse rights not stated."
+    },
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1970-shrdlu-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+    "caption": {
+      "en": "Blocks-world command grounding",
+      "zh": "积木世界命令落地"
+    },
+    "subcaption": {
+      "en": "Local redraw for SHRDLU, based on the listed source material.",
+      "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+    "sourceName": {
+      "en": "MIT DSpace",
+      "zh": "麻省理工学院 DSpace"
+    },
+    "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1970-shrdlu-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg",
+    "caption": {
+      "en": "Parser to planner path",
+      "zh": "解析器到规划器路径"
+    },
+    "subcaption": {
+      "en": "Local redraw for SHRDLU, based on the listed source material.",
+      "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+    "sourceName": {
+      "en": "MIT DSpace",
+      "zh": "麻省理工学院 DSpace"
+    },
+    "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1990-otter-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
+    "caption": {
+      "en": "Otter input clauses",
+      "zh": "Otter 输入子句"
+    },
+    "subcaption": {
+      "en": "Original local explainer for turning assumptions and goals into Otter clause lists.",
+      "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。"
+    },
+    "sourceId": "otter-3-3-reference-manual",
+    "sourceName": {
+      "en": "OTTER 3.3 Reference Manual",
+      "zh": "OTTER 3.3 参考手册"
+    },
+    "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Input-format diagram",
+      "zh": "输入格式图"
+    }
+  },
+  {
+    "id": "1990-otter-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
+    "caption": {
+      "en": "Otter proof trace",
+      "zh": "Otter 证明轨迹"
+    },
+    "subcaption": {
+      "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction.",
+      "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。"
+    },
+    "sourceId": "otter-3-3-reference-manual",
+    "sourceName": {
+      "en": "OTTER 3.3 Reference Manual",
+      "zh": "OTTER 3.3 参考手册"
+    },
+    "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Proof-trace diagram",
+      "zh": "证明轨迹图"
+    }
+  },
+  {
+    "id": "1990-otter-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
+    "caption": {
+      "en": "Given-clause proof loop",
+      "zh": "given-clause 证明循环"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+      "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
+    },
+    "sourceId": "otter-3-3-reference-manual",
+    "sourceName": {
+      "en": "OTTER 3.3 Reference Manual",
+      "zh": "OTTER 3.3 参考手册"
+    },
+    "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Proof-search diagram",
+      "zh": "证明搜索图"
+    }
+  },
+  {
+    "id": "1990-otter-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
+    "caption": {
+      "en": "Clause indexing map",
+      "zh": "子句索引地图"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on OTTER 3.3 Reference Manual.",
+      "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。"
+    },
+    "sourceId": "otter-3-3-reference-manual",
+    "sourceName": {
+      "en": "OTTER 3.3 Reference Manual",
+      "zh": "OTTER 3.3 参考手册"
+    },
+    "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Indexing diagram",
+      "zh": "索引图"
+    }
+  }
+]

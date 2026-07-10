@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2000-isomap-summary",
+    "text": {
+      "en": "Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.",
+      "zh": "约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。"
+    },
+    "sourceIds": [
+      "a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+      "science-article-page"
+    ]
+  },
+  {
+    "id": "ai100-2000-isomap-quote",
+    "text": {
+      "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+      "zh": "非线性降维的全局几何框架"
+    },
+    "sourceIds": [
+      "a-global-geometric-framework-for-nonlinear-dimensionality-reduction"
+    ]
+  }
+]

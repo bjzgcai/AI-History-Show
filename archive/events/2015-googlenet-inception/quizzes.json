@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What is the key idea of an Inception module?",
+      "zh": "Inception 模块的关键思想是什么？"
+    },
+    "options": [
+      {
+        "en": "Run multiple filter paths in parallel and combine them",
+        "zh": "并行运行多个滤波路径并合并输出"
+      },
+      {
+        "en": "Use only a single pixel as input",
+        "zh": "只使用一个像素作为输入"
+      },
+      {
+        "en": "Ban convolution from the model",
+        "zh": "禁止模型使用卷积"
+      },
+      {
+        "en": "Make every layer a decision tree",
+        "zh": "把每一层都变成决策树"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Inception modules combine parallel convolution and pooling paths, often with 1x1 bottlenecks for efficiency.",
+      "zh": "Inception 模块结合并行卷积和池化路径，并常用 1x1 瓶颈层提高效率。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "vision",
+      "cnn"
+    ]
+  }
+]

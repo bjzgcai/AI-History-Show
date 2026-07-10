@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1989-lenet-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+    "caption": {
+      "en": "Yann LeCun portrait",
+      "zh": "扬·勒昆肖像"
+    },
+    "subcaption": {
+      "en": "LeNet lead researcher",
+      "zh": "LeNet 主要研究者"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1989-lenet-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+    "caption": {
+      "en": "ZIP-code CNN pipeline",
+      "zh": "邮编 CNN 流程"
+    },
+    "subcaption": {
+      "en": "Original local explainer of LeNet-style recognition.",
+      "zh": "关于 LeNet 式识别的本地原创解释图。"
+    },
+    "sourceId": "backpropagation-applied-to-handwritten-zip-code-recognition",
+    "sourceName": {
+      "en": "Neural Computation",
+      "zh": "Neural Computation"
+    },
+    "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+    "originalImageUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "id": "1959-pandemonium",
+  "year": "1959",
+  "title": {
+    "en": "Pandemonium",
+    "zh": "Pandemonium 感知架构"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Lincoln Laboratory",
+      "zh": "麻省理工学院 林肯实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.4595,
+      -71.2677
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Oliver Selfridge",
+        "zh": "奥利弗·塞尔弗里奇"
+      },
+      "role": {
+        "en": "Author of the Pandemonium architecture",
+        "zh": "Pandemonium 架构提出者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Layered feature voters build perception",
+    "zh": "分层特征投票构成感知"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Pandemonium: A Paradigm for Learning",
+      "zh": "群魔殿：一种学习范式"
+    },
+    "workAuthors": {
+      "en": "Oliver G. Selfridge",
+      "zh": "奥利弗·G·塞尔弗里奇"
+    },
+    "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Perception / Pandemonium",
+    "zh": "BenchCouncil AI100：感知 / Pandemonium 感知架构"
+  }
+}

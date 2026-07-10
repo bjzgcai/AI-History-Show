@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>",
+    "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "After Deep Blue, IBM looked for a language-heavy challenge where ambiguity, clues, timing, and confidence estimation mattered.",
+        "zh": "深蓝 之后，IBM 寻找一个语言负担更重的挑战，其中歧义、线索、时机和置信度估计都很关键。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Watson did not rely on a single parser or database. It generated hypotheses, searched sources, scored evidence, and merged rankings into a final answer with confidence.",
+        "zh": "Watson 不依赖单一解析器或数据库。它生成假设、检索来源、评分证据，并把多路排序合并为带置信度的最终答案。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat IBM Watson as a landmark in engineered question answering rather than a general understanding system. Its long-term legacy is both the evidence-ranking architecture for language-heavy AI and the lesson that showcase demos are hard to turn into robust domain products.",
+        "zh": "专家通常把 IBM Watson 视为工程化问答的标志性系统，而不是通用理解系统。它的长期影响既包括面向语言密集型 AI 的证据排序架构，也包括展示型系统难以转化为稳健领域产品的教训。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Question answering",
+      "zh": "开放域问答"
+    },
+    "method": {
+      "en": "DeepQA evidence-ranking pipeline",
+      "zh": "DeepQA 证据排序流水线"
+    },
+    "artifact": {
+      "en": "Watson Jeopardy! system",
+      "zh": "Watson Jeopardy! 系统"
+    },
+    "material": {
+      "en": "IBM papers, AI Magazine overview, and Jeopardy! system reports",
+      "zh": "IBM 论文、AI Magazine 综述与 Jeopardy! 系统报告"
+    },
+    "demo": {
+      "en": "Rank competing answers from many evidence signals",
+      "zh": "根据多路证据信号排序候选答案"
+    },
+    "visual": "watson",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Hypothesis Generation",
+          "zh": "假设生成"
+        },
+        "text": {
+          "en": "Candidate answers are generated from many interpretations of the clue.",
+          "zh": "从线索的多种解释中生成候选答案。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evidence Scoring",
+          "zh": "证据评分"
+        },
+        "text": {
+          "en": "Independent scorers measure support from passages, entities, dates, and relations.",
+          "zh": "独立评分器从段落、实体、日期和关系中衡量支持度。"
+        }
+      },
+      {
+        "label": {
+          "en": "Confidence Ranking",
+          "zh": "置信度排序"
+        },
+        "text": {
+          "en": "Watson decides whether to answer based on merged confidence.",
+          "zh": "Watson 根据合并置信度决定是否作答。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "ELIZA",
+        "zh": "ELIZA"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Parse clue",
+        "zh": "解析线索"
+      },
+      {
+        "en": "Score evidence",
+        "zh": "评分证据"
+      },
+      {
+        "en": "Buzz with confidence",
+        "zh": "带置信度抢答"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Watson: Beyond Jeopardy!",
+          "zh": "沃森：超越《危险边缘！》"
+        },
+        "description": {
+          "en": "Original Artificial Intelligence paper on the post-Jeopardy Watson system and its technical arc.",
+          "zh": "《人工智能》期刊原文：介绍 Jeopardy! 之后的沃森系统及其技术脉络。"
+        },
+        "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+        "source": "https://doi.org/10.1016/j.artint.2012.06.009",
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Watson: Beyond Jeopardy!",
+          "zh": "沃森：超越《危险边缘！》"
+        },
+        "url": "https://doi.org/10.1016/j.artint.2012.06.009"
+      },
+      {
+        "type": {
+          "en": "Overview",
+          "zh": "综述"
+        },
+        "label": {
+          "en": "Building Watson: An Overview of the DeepQA Project",
+          "zh": "构建沃森：DeepQA 项目概览"
+        },
+        "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "IBM Watson system photo",
+          "zh": "IBM Watson 系统照片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "David Ferrucci portrait",
+          "zh": "戴维·费鲁奇 人物照片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+    "demoPanel": "sources"
+  }
+}

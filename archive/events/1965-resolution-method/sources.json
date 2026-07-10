@@ -1,0 +1,50 @@
+[
+  {
+    "id": "a-machine-oriented-logic-based-on-the-resolution-principle",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A Machine-Oriented Logic Based on the Resolution Principle",
+      "zh": "基于归结原理的机器导向逻辑"
+    },
+    "url": "https://doi.org/10.1145/321250.321253"
+  },
+  {
+    "id": "journal-of-symbolic-logic-review-record",
+    "type": {
+      "en": "Review",
+      "zh": "评述"
+    },
+    "label": {
+      "en": "Journal of Symbolic Logic review record",
+      "zh": "Journal of Symbolic Logic review record"
+    },
+    "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1"
+  },
+  {
+    "id": "stanford-encyclopedia-automated-reasoning",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Stanford Encyclopedia: Automated Reasoning",
+      "zh": "斯坦福大学 Encyclopedia: Automated Reasoning"
+    },
+    "url": "https://plato.stanford.edu/entries/reasoning-automated/"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:John_Alan_Robinson_IMG_0493.jpg"
+  }
+]

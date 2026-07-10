@@ -1,0 +1,62 @@
+[
+  {
+    "id": "backpropagation-applied-to-handwritten-zip-code-recognition",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "zh": "《反向传播应用于手写邮编识别》"
+    },
+    "url": "https://doi.org/10.1162/neco.1989.1.4.541"
+  },
+  {
+    "id": "lenet-5-demos-and-documentation",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "LeNet-5 demos and documentation",
+      "zh": "LeNet-5 演示与文档"
+    },
+    "url": "https://yann.lecun.com/exdb/lenet/"
+  },
+  {
+    "id": "gradient-based-learning-applied-to-document-recognition",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Gradient-Based Learning Applied to Document Recognition",
+      "zh": "《基于梯度的文档识别学习》"
+    },
+    "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf"
+  },
+  {
+    "id": "yann-lecun-s-home-page",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Yann LeCun's home page",
+      "zh": "扬·勒昆主页"
+    },
+    "url": "https://yann.lecun.com/"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Laura_Chaubard_%26_Yann_Le_Cun_-_2024_(53814052697)_(cropped).jpg"
+  }
+]

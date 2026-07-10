@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2017-gat-summary",
+    "text": {
+      "en": "GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.",
+      "zh": "GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。"
+    },
+    "sourceIds": [
+      "graph-attention-networks",
+      "iclr-openreview-record"
+    ]
+  },
+  {
+    "id": "ai100-2017-gat-quote",
+    "text": {
+      "en": "Graph attention networks",
+      "zh": "图注意力网络"
+    },
+    "sourceIds": [
+      "graph-attention-networks"
+    ]
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "1994-chinook-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+    "caption": {
+      "en": "Jonathan Schaeffer portrait",
+      "zh": "乔纳森·谢弗 人物照片"
+    },
+    "subcaption": {
+      "en": "Leader of the Chinook checkers project.",
+      "zh": "Chinook 跳棋项目负责人。"
+    },
+    "sourceId": "jonathan-schaeffer-portrait",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+    "rights": "CC BY 2.0",
+    "usage": {
+      "en": "Historical figure photo",
+      "zh": "历史人物照片"
+    }
+  },
+  {
+    "id": "1994-chinook-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
+    "caption": {
+      "en": "Chinook official project page",
+      "zh": "Chinook 官方项目页面"
+    },
+    "subcaption": {
+      "en": "Screenshot of the cited source page: Chinook project home.",
+      "zh": "引用来源页面截图：Chinook project home。"
+    },
+    "sourceId": "chinook-project-home",
+    "sourceName": "Chinook project home",
+    "sourceUrl": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+    "originalImageUrl": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+    "rights": "Source page screenshot for citation preview; rights remain with the source site.",
+    "usage": {
+      "en": "Source page screenshot",
+      "zh": "来源页面截图"
+    }
+  },
+  {
+    "id": "1994-chinook-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
+    "caption": {
+      "en": "Endgame database table",
+      "zh": "残局数据库表"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Checkers Is Solved.",
+      "zh": "依据 跳棋已被求解 制作的本地解释图。"
+    },
+    "sourceId": "checkers-is-solved",
+    "sourceName": {
+      "en": "Checkers Is Solved",
+      "zh": "跳棋已被求解"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Endgame database diagram",
+      "zh": "残局数据库图"
+    }
+  },
+  {
+    "id": "1994-chinook-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+    "caption": {
+      "en": "Perfect-play proof path",
+      "zh": "完美对弈证明路径"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Checkers Is Solved.",
+      "zh": "依据 跳棋已被求解 制作的本地解释图。"
+    },
+    "sourceId": "checkers-is-solved",
+    "sourceName": {
+      "en": "Checkers Is Solved",
+      "zh": "跳棋已被求解"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Proof diagram",
+      "zh": "证明图"
+    }
+  }
+]

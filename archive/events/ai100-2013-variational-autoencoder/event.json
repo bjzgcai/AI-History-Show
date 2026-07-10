@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2013-variational-autoencoder",
+  "year": 2013,
+  "title": {
+    "en": "Variational Autoencoder",
+    "zh": "变分自编码器"
+  },
+  "location": {
+    "name": {
+      "en": "University of Amsterdam",
+      "zh": "University of Amsterdam"
+    },
+    "country": {
+      "en": "Amsterdam, Netherlands",
+      "zh": "Amsterdam, Netherlands"
+    },
+    "coordinates": [
+      52.3676,
+      4.9041
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Diederik Kingma",
+        "zh": "迪德里克·金马"
+      },
+      "role": {
+        "en": "Variational autoencoder co-author",
+        "zh": "变分自编码器共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Auto-encoding variational Bayes",
+    "zh": "自动编码变分贝叶斯"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Auto-Encoding Variational Bayes",
+      "zh": "自动编码变分贝叶斯"
+    },
+    "workAuthors": {
+      "en": "Diederik Kingma and Max Welling, ICLR, 2014",
+      "zh": "迪德里克·金马、马克斯·韦林，ICLR，2014"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1312.6114"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

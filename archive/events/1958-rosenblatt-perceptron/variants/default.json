@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>Rosenblatt's perceptron made neural learning tangible by pairing a simple threshold unit with an update rule. It promised machines that could learn from examples rather than being programmed only by explicit rules. The perceptron later became both a symbol of early neural optimism and a baseline for understanding linear classification.</p>",
+    "zh": "<p>罗森布拉特 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。它承诺机器可以从样本中学习，而不仅靠显式规则编程。感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception.",
+        "zh": "20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates.",
+        "zh": "感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Rosenblatt's perceptron as a foundational neural-learning model and a symbol of early connectionist optimism. Its long-term legacy is the debate over linear separability and the path from single threshold units to multilayer representation learning.",
+        "zh": "专家通常把罗森布拉特感知机视为基础性的神经学习模型，也是早期连接主义乐观精神的象征。它的长期影响在于引发关于线性可分性的讨论，并铺垫了从单个阈值单元到多层表示学习的道路。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural networks",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Linear threshold learning machine",
+      "zh": "线性阈值学习机"
+    },
+    "artifact": {
+      "en": "Mark I Perceptron lineage",
+      "zh": "Mark I 感知机谱系"
+    },
+    "material": {
+      "en": "Cornell historical record and original paper",
+      "zh": "康奈尔大学 史料与原始论文"
+    },
+    "demo": {
+      "en": "Adjust weights until a threshold separates classes",
+      "zh": "调整权重直到阈值分开类别"
+    },
+    "visual": "perceptron",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Threshold Unit",
+          "zh": "阈值单元"
+        },
+        "text": {
+          "en": "A neuron-like unit outputs one class when a weighted sum crosses a boundary.",
+          "zh": "类似神经元的单元在加权和越过边界时输出一个类别。"
+        }
+      },
+      {
+        "label": {
+          "en": "Weight Update",
+          "zh": "权重更新"
+        },
+        "text": {
+          "en": "Errors change the weights so future predictions improve.",
+          "zh": "错误会改变权重，使未来预测更好。"
+        }
+      },
+      {
+        "label": {
+          "en": "Linear Separability",
+          "zh": "线性可分"
+        },
+        "text": {
+          "en": "A single perceptron succeeds only when a straight boundary can separate classes.",
+          "zh": "单个感知机只有在直线边界可分时才成功。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "McCulloch-Pitts neuron",
+        "zh": "McCulloch-Pitts 神经元"
+      },
+      {
+        "en": "Back-propagation",
+        "zh": "反向传播"
+      },
+      {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Read sensors",
+        "zh": "读取传感器"
+      },
+      {
+        "en": "Sum weights",
+        "zh": "求加权和"
+      },
+      {
+        "en": "Move boundary",
+        "zh": "移动边界"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Psychological Review",
+          "zh": "参考来源"
+        },
+        "title": {
+          "en": "The perceptron paper record",
+          "zh": "感知机论文记录"
+        },
+        "description": {
+          "en": "Canonical paper record for Rosenblatt's probabilistic model.",
+          "zh": "罗森布拉特 概率模型经典论文记录。"
+        },
+        "url": "https://doi.org/10.1037/h0042519",
+        "source": "https://doi.org/10.1037/h0042519",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open DOI record",
+          "zh": "打开 DOI 记录"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+          "zh": "感知机：大脑中信息存储与组织的概率模型"
+        },
+        "url": "https://doi.org/10.1037/h0042519"
+      },
+      {
+        "type": {
+          "en": "History",
+          "zh": "历史资料"
+        },
+        "label": {
+          "en": "Cornell Chronicle perceptron retrospective",
+          "zh": "康奈尔大学 Chronicle perceptron retrospective"
+        },
+        "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
+      },
+      {
+        "type": {
+          "en": "Museum",
+          "zh": "博物馆"
+        },
+        "label": {
+          "en": "Smithsonian Mark I Perceptron object record",
+          "zh": "Smithsonian Mark I Perceptron object record"
+        },
+        "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414"
+      }
+    ]
+  }
+}

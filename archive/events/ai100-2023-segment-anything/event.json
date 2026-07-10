@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2023-segment-anything",
+  "year": 2023,
+  "title": {
+    "en": "Segment Anything",
+    "zh": "Segment Anything"
+  },
+  "location": {
+    "name": {
+      "en": "Meta AI",
+      "zh": "Meta AI"
+    },
+    "country": {
+      "en": "Menlo Park, United States",
+      "zh": "美国门洛帕克"
+    },
+    "coordinates": [
+      37.4848,
+      -122.1484
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alexander Kirillov",
+        "zh": "亚历山大·基里洛夫"
+      },
+      "role": {
+        "en": "Lead author of Segment Anything",
+        "zh": "Segment Anything 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Segment anything",
+    "zh": "分割一切"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Segment Anything",
+      "zh": "Segment Anything"
+    },
+    "workAuthors": {
+      "en": "Alexander Kirillov et al., ICCV, 2023",
+      "zh": "亚历山大·基里洛夫等，ICCV，2023"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2304.02643"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

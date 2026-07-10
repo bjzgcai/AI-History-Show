@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2015-ddpg-image-1",
+    "kind": "image",
+    "path": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+    "caption": {
+      "en": "Timothy Lillicrap portrait",
+      "zh": "蒂莫西·利利克拉普肖像"
+    },
+    "subcaption": {
+      "en": "DDPG lead author",
+      "zh": "DDPG 主要作者"
+    },
+    "sourceId": "stanford-wu-tsai-neurosciences-institute-event-page",
+    "sourceName": {
+      "en": "Stanford Wu Tsai Neurosciences Institute event page",
+      "zh": "斯坦福吴蔡神经科学研究所活动页面"
+    },
+    "sourceUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+    "originalImageUrl": "https://neuroscience.stanford.edu/mbct/events/new-models-and-algorithms-addressing-limitations-deep-reinforcement-learning-timothy",
+    "rights": {
+      "en": "Event profile image; reuse rights not stated.",
+      "zh": "活动资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2015-ddpg-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
+    "caption": {
+      "en": "DDPG explainer",
+      "zh": "DDPG 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "continuous-control-with-deep-reinforcement-learning",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1509.02971",
+    "originalImageUrl": "https://arxiv.org/abs/1509.02971",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

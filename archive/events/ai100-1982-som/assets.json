@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1982-som-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
+    "caption": {
+      "en": "Teuvo Kohonen portrait",
+      "zh": "泰沃·科霍宁肖像"
+    },
+    "subcaption": {
+      "en": "Creator of self-organizing maps",
+      "zh": "自组织映射提出者"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg",
+    "rights": {
+      "en": "Creative Commons Attribution, per Wikimedia Commons.",
+      "zh": "据维基共享资源标注为 Creative Commons Attribution。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1982-som-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg",
+    "caption": {
+      "en": "Kohonen map adaptation",
+      "zh": "科霍宁映射调整"
+    },
+    "subcaption": {
+      "en": "Original local explainer of self-organizing map adaptation.",
+      "zh": "关于自组织映射调整的本地原创解释图。"
+    },
+    "sourceId": "self-organized-formation-of-topologically-correct-feature-maps",
+    "sourceName": {
+      "en": "Biological Cybernetics",
+      "zh": "Biological Cybernetics"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00337288",
+    "originalImageUrl": "https://doi.org/10.1007/BF00337288",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

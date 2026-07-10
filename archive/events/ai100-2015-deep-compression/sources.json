@@ -1,0 +1,50 @@
+[
+  {
+    "id": "deep-compression",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Deep Compression",
+      "zh": "《深度压缩》"
+    },
+    "url": "https://arxiv.org/abs/1510.00149"
+  },
+  {
+    "id": "iclr-openreview-record",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR OpenReview record",
+      "zh": "ICLR OpenReview 记录"
+    },
+    "url": "https://openreview.net/forum?id=n4Bp24yb5L"
+  },
+  {
+    "id": "song-han-efficient-ai-research-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Song Han efficient AI research page",
+      "zh": "韩松实验室深度压缩项目页面"
+    },
+    "url": "https://hanlab.mit.edu/projects/deep-compression"
+  },
+  {
+    "id": "han-lab-profile",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Han Lab profile",
+      "zh": "韩松实验室个人资料"
+    },
+    "url": "https://hanlab.mit.edu/songhan"
+  }
+]

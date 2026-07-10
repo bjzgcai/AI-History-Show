@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1997-kernel-pca-summary",
+    "text": {
+      "en": "Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.",
+      "zh": "伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。"
+    },
+    "sourceIds": [
+      "nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
+      "max-planck-publication-page"
+    ]
+  },
+  {
+    "id": "ai100-1997-kernel-pca-quote",
+    "text": {
+      "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem",
+      "zh": "作为核特征值问题的非线性成分分析"
+    },
+    "sourceIds": [
+      "nonlinear-component-analysis-as-a-kernel-eigenvalue-problem"
+    ]
+  }
+]

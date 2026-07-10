@@ -1,0 +1,62 @@
+[
+  {
+    "id": "nearest-neighbor-pattern-classification",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Nearest Neighbor Pattern Classification",
+      "zh": "《最近邻模式分类》"
+    },
+    "url": "https://doi.org/10.1109/TIT.1967.1053964"
+  },
+  {
+    "id": "stanford-hosted-paper-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "Stanford-hosted paper PDF",
+      "zh": "斯坦福托管论文 PDF"
+    },
+    "url": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf"
+  },
+  {
+    "id": "k-nearest-neighbors-algorithm-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "k-nearest neighbors algorithm overview",
+      "zh": "k 近邻算法概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"
+  },
+  {
+    "id": "scikit-learn-nearest-neighbors-documentation",
+    "type": {
+      "en": "Documentation",
+      "zh": "文档"
+    },
+    "label": {
+      "en": "scikit-learn nearest neighbors documentation",
+      "zh": "scikit-learn 最近邻文档"
+    },
+    "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+  },
+  {
+    "id": "stanford-report",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Stanford Report",
+      "zh": "Stanford Report"
+    },
+    "url": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73"
+  }
+]

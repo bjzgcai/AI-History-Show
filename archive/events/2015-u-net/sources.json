@@ -1,0 +1,50 @@
+[
+  {
+    "id": "u-net-convolutional-networks-for-biomedical-image-segmentation",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "zh": "U-Net：用于生物医学图像分割的卷积网络"
+    },
+    "url": "https://arxiv.org/abs/1505.04597"
+  },
+  {
+    "id": "freiburg-u-net-release-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Freiburg U-Net release page",
+      "zh": "弗赖堡 U-Net 项目发布页"
+    },
+    "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/"
+  },
+  {
+    "id": "nnu-net-implementation-project",
+    "type": {
+      "en": "Toolkit",
+      "zh": "工具包"
+    },
+    "label": {
+      "en": "nnU-Net implementation project",
+      "zh": "nnU-Net 实现项目"
+    },
+    "url": "https://github.com/MIC-DKFZ/nnUNet"
+  },
+  {
+    "id": "university-of-freiburg-lmb",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "University of Freiburg LMB",
+      "zh": "University of 弗赖堡 LMB"
+    },
+    "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2015-batch-normalization-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+    "caption": {
+      "en": "Christian Szegedy portrait",
+      "zh": "克里斯蒂安·塞格迪肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of Batch Normalization.",
+      "zh": "批归一化共同作者。"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+    "originalImageUrl": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2015-batch-normalization-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg",
+    "caption": {
+      "en": "Activation normalization",
+      "zh": "激活归一化"
+    },
+    "subcaption": {
+      "en": "Original local explainer of batch statistics and learned scale.",
+      "zh": "关于批统计量与可学习缩放的本地原创解释图。"
+    },
+    "sourceId": "batch-normalization",
+    "sourceName": {
+      "en": "PMLR",
+      "zh": "PMLR"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html",
+    "originalImageUrl": "https://proceedings.mlr.press/v37/ioffe15.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

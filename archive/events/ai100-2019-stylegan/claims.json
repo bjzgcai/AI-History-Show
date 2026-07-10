@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2019-stylegan-summary",
+    "text": {
+      "en": "StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.",
+      "zh": "StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。"
+    },
+    "sourceIds": [
+      "a-style-based-generator-architecture-for-gans",
+      "cvpr-open-access-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2019-stylegan-quote",
+    "text": {
+      "en": "A style-based generator architecture for generative adversarial networks",
+      "zh": "面向生成对抗网络的基于风格的生成器架构"
+    },
+    "sourceIds": [
+      "a-style-based-generator-architecture-for-gans"
+    ]
+  }
+]

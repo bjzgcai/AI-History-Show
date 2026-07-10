@@ -1,0 +1,53 @@
+{
+  "id": "1950-turing-test",
+  "year": 1950,
+  "title": {
+    "en": "Turing Test",
+    "zh": "图灵测试"
+  },
+  "location": {
+    "name": {
+      "en": "University of Manchester",
+      "zh": "曼彻斯特大学"
+    },
+    "country": {
+      "en": "Manchester, United Kingdom",
+      "zh": "英国，曼彻斯特"
+    },
+    "coordinates": [
+      53.4668,
+      -2.2339
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alan Turing",
+        "zh": "艾伦·图灵"
+      },
+      "role": {
+        "en": "Proposed the imitation game",
+        "zh": "提出模仿游戏"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "I propose to consider the question, 'Can machines think?'",
+    "zh": "我建议考虑这样一个问题：机器能思考吗？"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Computing Machinery and Intelligence",
+      "zh": "计算机器与智能"
+    },
+    "workAuthors": {
+      "en": "Alan M. Turing, Mind, 1950",
+      "zh": "艾伦·M·图灵, 《心灵》, 1950"
+    },
+    "sourceUrl": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Theory / Turing test",
+    "zh": "BenchCouncil AI100：理论 / 图灵测试"
+  }
+}

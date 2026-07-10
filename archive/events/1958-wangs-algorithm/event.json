@@ -1,0 +1,53 @@
+{
+  "id": "1958-wangs-algorithm",
+  "year": "1958-1961",
+  "title": {
+    "en": "Wang's Algorithm",
+    "zh": "王氏算法"
+  },
+  "location": {
+    "name": {
+      "en": "Bell Telephone Laboratories",
+      "zh": "贝尔电话实验室"
+    },
+    "country": {
+      "en": "Murray Hill, United States",
+      "zh": "美国，新泽西州默里山"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4018
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Hao Wang",
+        "zh": "王浩"
+      },
+      "role": {
+        "en": "Developed pattern-recognition theorem-proving procedures",
+        "zh": "提出基于模式识别的定理证明过程"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "A proof procedure for the predicate calculus is given",
+    "zh": "给出了一个谓词演算的证明过程"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Proving Theorems by Pattern Recognition - II",
+      "zh": "通过模式识别证明定理（二）"
+    },
+    "workAuthors": {
+      "en": "Hao Wang, Bell System Technical Journal, 1961",
+      "zh": "王浩, 《贝尔系统技术期刊》, 1961"
+    },
+    "sourceUrl": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Wang's algorithm",
+    "zh": "BenchCouncil AI100：自动定理证明 / 王氏算法"
+  }
+}

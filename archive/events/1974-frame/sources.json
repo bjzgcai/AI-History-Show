@@ -1,0 +1,38 @@
+[
+  {
+    "id": "a-framework-for-representing-knowledge",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A Framework for Representing Knowledge",
+      "zh": "表示知识的一种框架"
+    },
+    "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+  },
+  {
+    "id": "marvin-minsky-obituary-mit-news",
+    "type": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "label": {
+      "en": "Marvin Minsky obituary, MIT News",
+      "zh": "马文·明斯基讣告，麻省理工学院新闻"
+    },
+    "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125"
+  },
+  {
+    "id": "frame-mit-ai-memo-bibliographic-record",
+    "type": {
+      "en": "Reference",
+      "zh": "参考资料"
+    },
+    "label": {
+      "en": "Frame, MIT AI memo bibliographic record",
+      "zh": "框架论文：麻省理工学院 AI 备忘录书目记录"
+    },
+    "url": "https://dspace.mit.edu/handle/1721.1/6089"
+  }
+]

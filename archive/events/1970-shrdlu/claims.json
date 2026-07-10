@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1970-shrdlu-summary",
+    "text": {
+      "en": "SHRDLU showed that a computer could carry on a constrained but surprisingly rich dialogue about a toy blocks world. Winograd combined parsing, planning, procedural semantics, and a small world model so natural-language commands could become robot-like actions. Its power came from tight integration: language worked because the world was limited and explicitly represented.",
+      "zh": "SHRDLU 展示了计算机可以围绕一个受限但丰富的积木世界进行对话。Winograd 把句法分析、规划、过程语义和小型世界模型结合起来，让自然语言命令转化为类似机器人操作的动作。它的力量来自紧密集成：语言之所以有效，是因为世界被限制并被明确表示。"
+    },
+    "sourceIds": [
+      "procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+      "terry-winograd-stanford-computer-science"
+    ]
+  },
+  {
+    "id": "1970-shrdlu-quote",
+    "text": {
+      "en": "Blocks-world language understanding",
+      "zh": "积木世界语言理解"
+    },
+    "sourceIds": [
+      "procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2020-alphafold2-summary",
+    "text": {
+      "en": "DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. It showed how deep learning could transform a long-standing scientific problem.",
+      "zh": "DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。它展示了深度学习如何改变长期存在的科学难题。"
+    },
+    "sourceIds": [
+      "highly-accurate-protein-structure-prediction-with-alphafold",
+      "deepmind-alphafold-page"
+    ]
+  },
+  {
+    "id": "ai100-2020-alphafold2-quote",
+    "text": {
+      "en": "Highly accurate protein structure prediction with AlphaFold",
+      "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+    },
+    "sourceIds": [
+      "highly-accurate-protein-structure-prediction-with-alphafold"
+    ]
+  }
+]

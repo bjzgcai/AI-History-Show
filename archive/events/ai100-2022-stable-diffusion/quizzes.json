@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Where does Stable Diffusion perform most of its denoising?",
+      "zh": "Stable Diffusion 主要在哪里执行去噪？"
+    },
+    "options": [
+      {
+        "en": "In a compressed latent space",
+        "zh": "在压缩潜空间中"
+      },
+      {
+        "en": "Only on a chess board",
+        "zh": "只在棋盘上"
+      },
+      {
+        "en": "Inside a theorem database",
+        "zh": "在定理数据库中"
+      },
+      {
+        "en": "Only in a spreadsheet row",
+        "zh": "只在电子表格行中"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Latent diffusion denoises compact image representations under text guidance.",
+      "zh": "潜扩散在文本引导下对压缩图像表示进行去噪。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "diffusion",
+      "text-to-image"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What did Wang's theorem-proving procedure use to avoid blind truth-table enumeration?",
+      "zh": "王氏定理证明过程用什么避免盲目真值表枚举？"
+    },
+    "options": [
+      {
+        "en": "Pattern-guided logical transformations",
+        "zh": "由模式引导的逻辑变换"
+      },
+      {
+        "en": "Random screen colors",
+        "zh": "随机屏幕颜色"
+      },
+      {
+        "en": "Only handwritten notes",
+        "zh": "只靠手写笔记"
+      },
+      {
+        "en": "A fixed chess opening",
+        "zh": "固定国际象棋开局"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Wang framed proof search as recognizing and reducing logical patterns, not simply enumerating all truth assignments.",
+      "zh": "Wang把证明搜索表述为识别并归约逻辑模式，而不是简单枚举所有真值赋值。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "theorem-proving",
+      "pattern-recognition"
+    ]
+  }
+]

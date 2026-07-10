@@ -1,0 +1,63 @@
+{
+  "id": "1971-vc-theory",
+  "year": 1971,
+  "title": {
+    "en": "VC Theory",
+    "zh": "VC 理论"
+  },
+  "location": {
+    "name": {
+      "en": "Institute of Control Sciences, Moscow",
+      "zh": "莫斯科控制科学研究所"
+    },
+    "country": {
+      "en": "Moscow, Russia",
+      "zh": "俄罗斯，莫斯科"
+    },
+    "coordinates": [
+      55.7558,
+      37.6173
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Vladimir N. Vapnik",
+        "zh": "弗拉基米尔·N·瓦普尼克"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      }
+    },
+    {
+      "name": {
+        "en": "Alexey Ya. Chervonenkis",
+        "zh": "阿列克谢·雅·切尔沃年基斯"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Statistical learning theory was introduced in the late 1960's.",
+    "zh": "统计学习理论是在 20 世纪 60 年代末提出的。"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "An Overview of Statistical Learning Theory",
+      "zh": "统计学习理论概览"
+    },
+    "workAuthors": {
+      "en": "Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "zh": "弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
+    },
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Theory / VC theory",
+    "zh": "BenchCouncil AI100：理论 / VC 理论"
+  }
+}

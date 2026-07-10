@@ -1,0 +1,73 @@
+{
+  "id": "1992-svm",
+  "year": "1992",
+  "title": {
+    "en": "Support Vector Machines",
+    "zh": "支持向量机"
+  },
+  "location": {
+    "name": {
+      "en": "Bell Laboratories",
+      "zh": "贝尔实验室"
+    },
+    "country": {
+      "en": "Murray Hill, United States",
+      "zh": "美国默里山"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4018
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Vladimir Vapnik",
+        "zh": "弗拉基米尔·瓦普尼克"
+      },
+      "role": {
+        "en": "Co-developed optimal-margin classifiers and statistical learning theory",
+        "zh": "共同发展最优间隔分类器与统计学习理论"
+      }
+    },
+    {
+      "name": {
+        "en": "Bernhard Boser",
+        "zh": "伯恩哈德·博泽尔"
+      },
+      "role": {
+        "en": "Co-author of the 1992 optimal-margin classifier paper",
+        "zh": "1992 年最优间隔分类器论文共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Isabelle Guyon",
+        "zh": "伊莎贝尔·居永"
+      },
+      "role": {
+        "en": "Co-author of the 1992 optimal-margin classifier paper",
+        "zh": "1992 年最优间隔分类器论文共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "optimal margin classifiers",
+    "zh": "最优间隔分类器"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A Training Algorithm for Optimal Margin Classifiers",
+      "zh": "最优间隔分类器的训练算法"
+    },
+    "workAuthors": {
+      "en": "Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+      "zh": "伯恩哈德·E·博瑟、伊莎贝尔·M·居永、弗拉基米尔·N·瓦普尼克, 第五届计算学习理论年度研讨会, 1992"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Statistical Learning / SVM",
+    "zh": "BenchCouncil AI100：统计学习 / 支持向量机"
+  }
+}

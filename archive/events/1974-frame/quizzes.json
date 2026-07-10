@@ -1,0 +1,40 @@
+[
+  {
+    "question": {
+      "en": "What is a frame mainly used for?",
+      "zh": "框架主要用来做什么？"
+    },
+    "options": [
+      {
+        "en": "Represent a stereotyped situation with slots and defaults",
+        "zh": "用槽和默认值表示典型情境"
+      },
+      {
+        "en": "Normalize neural activations by minibatch",
+        "zh": "按小批量归一化神经激活"
+      },
+      {
+        "en": "Search chess moves on custom chips",
+        "zh": "在定制芯片上搜索棋步"
+      },
+      {
+        "en": "Draw t-SNE scatter plots only",
+        "zh": "只绘制 t-SNE 散点图"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Frames organize contextual knowledge into slots, default assumptions, and inherited structure.",
+      "zh": "框架把上下文知识组织成槽、默认假设和继承结构。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "knowledge-representation"
+    ]
+  }
+]

@@ -29,10 +29,13 @@
     },
     "source": {
       "label": {
-        "en": "Nature 2016 AlphaGo paper",
-        "zh": "《自然》2016 AlphaGo 论文"
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
       }
     },
-    "tags": ["reinforcement-learning", "games"]
+    "tags": [
+      "games",
+      "search"
+    ]
   }
 ]

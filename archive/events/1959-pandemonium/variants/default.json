@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>",
+    "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Early AI needed models for pattern recognition that were less brittle than hand-coded one-shot templates.",
+        "zh": "早期 AI 需要比一次性手写模板更不脆弱的模式识别模型。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Multiple small recognizers respond to features; stronger responses propagate upward until a winning interpretation emerges.",
+        "zh": "多个小型识别器响应特征；较强响应向上传播，直到形成获胜解释。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Pandemonium as an influential early model of distributed pattern recognition. Its long-term legacy is the idea of perception as evidence accumulation across layered detectors, which echoes in ensemble methods and hierarchical recognition systems.",
+        "zh": "专家通常把 Pandemonium 视为有影响力的早期分布式模式识别模型。它的长期影响在于把感知理解为分层检测器之间的证据累积，这一思想在集成方法和分层识别系统中仍有回响。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Perception",
+      "zh": "感知"
+    },
+    "method": {
+      "en": "Layered feature detection and voting",
+      "zh": "分层特征检测与投票"
+    },
+    "artifact": {
+      "en": "Pandemonium architecture",
+      "zh": "Pandemonium 架构"
+    },
+    "material": {
+      "en": "1959 Mechanisation of Thought Processes paper",
+      "zh": "1959 年 Mechanisation of Thought Processes 论文"
+    },
+    "demo": {
+      "en": "Aggregate feature votes into a pattern decision",
+      "zh": "把特征投票聚合成模式决策"
+    },
+    "visual": "pandemonium",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Feature Detectors",
+          "zh": "特征检测器"
+        },
+        "text": {
+          "en": "Small recognizers fire for local evidence.",
+          "zh": "小型识别器针对局部证据激活。"
+        }
+      },
+      {
+        "label": {
+          "en": "Layered Competition",
+          "zh": "分层竞争"
+        },
+        "text": {
+          "en": "Higher-level hypotheses compete using lower-level signals.",
+          "zh": "高层假设利用低层信号竞争。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evidence Accumulation",
+          "zh": "证据累积"
+        },
+        "text": {
+          "en": "Recognition emerges from many partial votes.",
+          "zh": "识别来自许多局部投票的汇聚。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Perceptron",
+        "zh": "感知机"
+      },
+      {
+        "en": "SIFT",
+        "zh": "SIFT"
+      },
+      {
+        "en": "CNN",
+        "zh": "CNN"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Detect features",
+        "zh": "检测特征"
+      },
+      {
+        "en": "Vote upward",
+        "zh": "向上投票"
+      },
+      {
+        "en": "Choose pattern",
+        "zh": "选择模式"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Pandemonium: A Paradigm for Learning",
+          "zh": "群魔殿：一种学习范式"
+        },
+        "description": {
+          "en": "Primary paper for Selfridge's layered demon architecture and feature-vote recognition metaphor.",
+          "zh": "主要论文： 塞尔弗里奇的分层“魔鬼”架构与特征投票识别隐喻。"
+        },
+        "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+        "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Pandemonium: A Paradigm for Learning",
+          "zh": "群魔殿：一种学习范式"
+        },
+        "url": "https://doi.org/10.1007/978-1-4899-1221-6_4"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Pandemonium architecture image",
+          "zh": "Pandemonium 架构图片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Oliver Selfridge portrait",
+          "zh": "奥利弗·塞尔弗里奇 人物照片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg"
+      },
+      {
+        "type": {
+          "en": "Obituary",
+          "zh": "人物资料"
+        },
+        "label": {
+          "en": "Oliver Selfridge obituary, The Guardian",
+          "zh": "奥利弗·塞尔弗里奇 讣告，卫报"
+        },
+        "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
+    "demoPanel": "sources"
+  }
+}

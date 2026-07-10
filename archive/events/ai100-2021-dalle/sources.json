@@ -1,0 +1,62 @@
+[
+  {
+    "id": "zero-shot-text-to-image-generation",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Zero-Shot Text-to-Image Generation",
+      "zh": "《零样本文本到图像生成》"
+    },
+    "url": "https://arxiv.org/abs/2102.12092"
+  },
+  {
+    "id": "icml-dall-e-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICML DALL-E paper page",
+      "zh": "ICML DALL-E 论文页面"
+    },
+    "url": "https://proceedings.mlr.press/v139/ramesh21a.html"
+  },
+  {
+    "id": "openai-dall-e-blog-post",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "OpenAI DALL-E blog post",
+      "zh": "OpenAI DALL-E 博客"
+    },
+    "url": "https://openai.com/index/dall-e/"
+  },
+  {
+    "id": "dall-e-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "DALL-E overview",
+      "zh": "DALL-E 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/DALL-E"
+  },
+  {
+    "id": "venturebeat-openai-via-baai-hub",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "VentureBeat / OpenAI via BAAI Hub",
+      "zh": "VentureBeat / OpenAI，经智源社区转载"
+    },
+    "url": "https://hub.baai.ac.cn/view/23577"
+  }
+]

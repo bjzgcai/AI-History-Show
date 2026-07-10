@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What relationship does LLE preserve?",
+      "zh": "LLE 保持什么关系？"
+    },
+    "options": [
+      {
+        "en": "Local reconstruction from nearest neighbors",
+        "zh": "由最近邻进行局部重建"
+      },
+      {
+        "en": "Only chronological order",
+        "zh": "只有时间顺序"
+      },
+      {
+        "en": "A game score table",
+        "zh": "游戏分数表"
+      },
+      {
+        "en": "A random password",
+        "zh": "随机密码"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "LLE keeps the weights that reconstruct each point from its nearby neighbors.",
+      "zh": "LLE 保持每个点由附近邻居重建时的权重。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "lle",
+      "manifold-learning"
+    ]
+  }
+]

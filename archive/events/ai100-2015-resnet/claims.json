@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2015-resnet-summary",
+    "text": {
+      "en": "ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. It made hundreds of layers trainable and became a backbone for vision systems.",
+      "zh": "ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。"
+    },
+    "sourceIds": [
+      "deep-residual-learning-for-image-recognition",
+      "cvf-open-access-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2015-resnet-quote",
+    "text": {
+      "en": "Deep Residual Learning for Image Recognition",
+      "zh": "用于图像识别的深度残差学习"
+    },
+    "sourceIds": [
+      "deep-residual-learning-for-image-recognition"
+    ]
+  }
+]

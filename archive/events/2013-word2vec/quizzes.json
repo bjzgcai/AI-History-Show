@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does Word2Vec learn for each word?",
+      "zh": "Word2Vec 为每个词学习什么？"
+    },
+    "options": [
+      {
+        "en": "A dense vector that captures distributional relationships",
+        "zh": "捕捉分布关系的密集向量"
+      },
+      {
+        "en": "A theorem proof certificate only",
+        "zh": "只有定理证明证书"
+      },
+      {
+        "en": "A fixed object bounding box",
+        "zh": "固定目标检测框"
+      },
+      {
+        "en": "A protein structure template",
+        "zh": "蛋白质结构模板"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Word2Vec learns embeddings whose geometry reflects word-context statistics and useful semantic relations.",
+      "zh": "Word2Vec 学习词嵌入，其几何结构反映词-上下文统计和有用语义关系。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "nlp",
+      "embeddings"
+    ]
+  }
+]

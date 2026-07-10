@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1943-mcculloch-pitts-neuron-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg",
+    "caption": {
+      "en": "Walter Pitts at a blackboard",
+      "zh": "黑板前的沃尔特·皮茨"
+    },
+    "subcaption": {
+      "en": "Co-author of the McCulloch-Pitts neuron.",
+      "zh": "麦卡洛克-皮茨神经元共同作者。"
+    },
+    "sourceId": "walter-pitts-blackboard-photo",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1943-mcculloch-pitts-neuron-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg",
+    "caption": {
+      "en": "Threshold logic neuron",
+      "zh": "阈值逻辑神经元"
+    },
+    "subcaption": {
+      "en": "Original local explainer of binary input, threshold, and output.",
+      "zh": "关于二值输入、阈值和输出的本地原创解释图。"
+    },
+    "sourceId": "a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+    "sourceName": {
+      "en": "Bulletin of Mathematical Biophysics",
+      "zh": "Bulletin of Mathematical Biophysics"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF02478259",
+    "originalImageUrl": "https://doi.org/10.1007/BF02478259",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

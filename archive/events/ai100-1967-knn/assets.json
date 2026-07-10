@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1967-knn-image-1",
+    "kind": "image",
+    "path": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+    "caption": {
+      "en": "Thomas Cover portrait",
+      "zh": "托马斯·科弗肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of nearest-neighbor classification",
+      "zh": "最近邻分类共同作者"
+    },
+    "sourceId": "stanford-report",
+    "sourceName": {
+      "en": "Stanford Report",
+      "zh": "Stanford Report"
+    },
+    "sourceUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+    "originalImageUrl": "https://news.stanford.edu/stories/2012/04/thomas-cover-acclaimed-information-theorist-electrical-engineer-dies-73",
+    "rights": {
+      "en": "Stanford Report image; reuse rights not stated.",
+      "zh": "Stanford Report 图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1967-knn-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+    "caption": {
+      "en": "Nearest-neighbor vote",
+      "zh": "最近邻投票"
+    },
+    "subcaption": {
+      "en": "Original local explainer of nearest-neighbor voting.",
+      "zh": "关于最近邻投票的本地原创解释图。"
+    },
+    "sourceId": "nearest-neighbor-pattern-classification",
+    "sourceName": {
+      "en": "IEEE Transactions on Information Theory",
+      "zh": "IEEE Transactions on Information Theory"
+    },
+    "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+    "originalImageUrl": "https://doi.org/10.1109/TIT.1967.1053964",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

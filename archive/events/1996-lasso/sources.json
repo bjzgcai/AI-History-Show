@@ -1,0 +1,50 @@
+[
+  {
+    "id": "regression-shrinkage-and-selection-via-the-lasso",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Regression Shrinkage and Selection via the Lasso",
+      "zh": "通过 Lasso 进行回归收缩与选择"
+    },
+    "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x"
+  },
+  {
+    "id": "scikit-learn-lasso",
+    "type": {
+      "en": "Model docs",
+      "zh": "模型文档"
+    },
+    "label": {
+      "en": "scikit-learn Lasso",
+      "zh": "scikit-learn Lasso"
+    },
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html"
+  },
+  {
+    "id": "glmnet-project",
+    "type": {
+      "en": "Toolkit",
+      "zh": "工具包"
+    },
+    "label": {
+      "en": "glmnet project",
+      "zh": "glmnet project"
+    },
+    "url": "https://glmnet.stanford.edu/"
+  },
+  {
+    "id": "stanford-profiles",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Stanford Profiles",
+      "zh": "斯坦福个人资料库"
+    },
+    "url": "https://profiles.stanford.edu/robert-tibshirani"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "id": "2011-ibm-watson",
+  "year": "2006-2011",
+  "title": {
+    "en": "IBM Watson",
+    "zh": "IBM Watson"
+  },
+  "location": {
+    "name": {
+      "en": "IBM Thomas J. Watson Research Center",
+      "zh": "IBM 托马斯·J·沃森 研究中心"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      41.2101,
+      -73.8037
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Ferrucci",
+        "zh": "戴维·费鲁奇"
+      },
+      "role": {
+        "en": "Principal investigator of the Watson / DeepQA team",
+        "zh": "Watson / DeepQA 团队负责人"
+      }
+    },
+    {
+      "name": {
+        "en": "IBM DeepQA team",
+        "zh": "IBM DeepQA 团队"
+      },
+      "role": {
+        "en": "Built the question-answering system",
+        "zh": "构建问答系统"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Generate hypotheses, score evidence, rank answers",
+    "zh": "生成假设、评分证据、排序答案"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Watson: Beyond Jeopardy!",
+      "zh": "沃森：超越《危险边缘！》"
+    },
+    "workAuthors": {
+      "en": "David Ferrucci et al.",
+      "zh": "戴维·费鲁奇等"
+    },
+    "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Question answering / IBM Watson",
+    "zh": "BenchCouncil AI100：开放域问答 / IBM Watson"
+  }
+}

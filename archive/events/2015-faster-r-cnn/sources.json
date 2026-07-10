@@ -1,0 +1,50 @@
+[
+  {
+    "id": "faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测"
+    },
+    "url": "https://arxiv.org/abs/1506.01497"
+  },
+  {
+    "id": "shaoqingren-faster-rcnn",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "ShaoqingRen/faster_rcnn",
+      "zh": "任少卿/faster_rcnn"
+    },
+    "url": "https://github.com/ShaoqingRen/faster_rcnn"
+  },
+  {
+    "id": "torchvision-faster-r-cnn-model",
+    "type": {
+      "en": "Model docs",
+      "zh": "模型文档"
+    },
+    "label": {
+      "en": "TorchVision Faster R-CNN model",
+      "zh": "TorchVision Faster R-CNN 模型"
+    },
+    "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html"
+  },
+  {
+    "id": "kaiming-he-personal-page",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Kaiming He personal page",
+      "zh": "何恺明个人主页"
+    },
+    "url": "https://people.csail.mit.edu/kaiming/"
+  }
+]

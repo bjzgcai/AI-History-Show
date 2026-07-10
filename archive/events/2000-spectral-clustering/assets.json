@@ -1,0 +1,102 @@
+[
+  {
+    "id": "2000-spectral-clustering-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "caption": {
+      "en": "Andrew Ng portrait",
+      "zh": "吴恩达 人物照片"
+    },
+    "subcaption": {
+      "en": "Co-author of influential spectral clustering analysis.",
+      "zh": "谱聚类分析论文共同作者。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "rights": "CC BY 2.0",
+    "usage": {
+      "en": "Historical figure photo",
+      "zh": "历史人物照片"
+    }
+  },
+  {
+    "id": "2000-spectral-clustering-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+    "caption": {
+      "en": "Spectral graph illustration",
+      "zh": "谱聚类图示"
+    },
+    "subcaption": {
+      "en": "Public graph illustration used on the spectral clustering article.",
+      "zh": "谱聚类条目使用的公开图示。"
+    },
+    "sourceId": "spectral-graph-illustration",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+    "rights": "Public domain",
+    "usage": {
+      "en": "Graph diagram",
+      "zh": "图结构图"
+    }
+  },
+  {
+    "id": "2000-spectral-clustering-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
+    "caption": {
+      "en": "Normalized graph cut",
+      "zh": "归一化图切分"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Normalized Cuts and Image Segmentation.",
+      "zh": "依据 归一化切分与图像分割 制作的本地解释图。"
+    },
+    "sourceId": "normalized-cuts-and-image-segmentation",
+    "sourceName": {
+      "en": "Normalized Cuts and Image Segmentation",
+      "zh": "归一化切分与图像分割"
+    },
+    "sourceUrl": "https://doi.org/10.1109/34.868688",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Graph-cut diagram",
+      "zh": "图切分图"
+    }
+  },
+  {
+    "id": "2000-spectral-clustering-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+    "caption": {
+      "en": "Eigenvector embedding",
+      "zh": "特征向量嵌入"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm.",
+      "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。"
+    },
+    "sourceId": "on-spectral-clustering-analysis-and-an-algorithm",
+    "sourceName": {
+      "en": "On Spectral Clustering: Analysis and an algorithm",
+      "zh": "论谱聚类：分析与算法"
+    },
+    "sourceUrl": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Embedding diagram",
+      "zh": "嵌入图"
+    }
+  }
+]

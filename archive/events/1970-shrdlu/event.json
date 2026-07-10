@@ -1,0 +1,53 @@
+{
+  "id": "1970-shrdlu",
+  "year": "1970",
+  "title": {
+    "en": "SHRDLU",
+    "zh": "SHRDLU"
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Terry Winograd",
+        "zh": "特里·维诺格拉德"
+      },
+      "role": {
+        "en": "Creator of SHRDLU",
+        "zh": "SHRDLU 创建者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Blocks-world language understanding",
+    "zh": "积木世界语言理解"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "SHRDLU dissertation record",
+      "zh": "SHRDLU 博士论文记录"
+    },
+    "workAuthors": {
+      "en": "Terry Winograd",
+      "zh": "特里·维诺格拉德"
+    },
+    "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Natural language understanding / SHRDLU",
+    "zh": "BenchCouncil AI100：自然语言理解 / SHRDLU"
+  }
+}

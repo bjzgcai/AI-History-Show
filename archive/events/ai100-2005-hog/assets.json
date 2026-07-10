@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2005-hog-image-1",
+    "kind": "image",
+    "path": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
+    "caption": {
+      "en": "Navneet Dalal portrait",
+      "zh": "纳夫尼特·达拉尔肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of HOG",
+      "zh": "HOG 共同作者"
+    },
+    "sourceId": "navneet-dalal-personal-site",
+    "sourceName": {
+      "en": "Navneet Dalal personal site",
+      "zh": "纳夫尼特·达拉尔个人网站"
+    },
+    "sourceUrl": "https://sites.google.com/view/navneetdalal/home",
+    "originalImageUrl": "https://sites.google.com/view/navneetdalal/home",
+    "rights": {
+      "en": "Personal site image; reuse rights not stated.",
+      "zh": "个人网站图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2005-hog-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg",
+    "caption": {
+      "en": "HOG descriptor grid",
+      "zh": "HOG 描述子网格"
+    },
+    "subcaption": {
+      "en": "Original local explainer of gradient-orientation histograms.",
+      "zh": "关于梯度方向直方图的本地原创解释图。"
+    },
+    "sourceId": "histograms-of-oriented-gradients-for-human-detection",
+    "sourceName": {
+      "en": "CVPR",
+      "zh": "CVPR"
+    },
+    "sourceUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+    "originalImageUrl": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

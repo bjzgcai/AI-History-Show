@@ -1,0 +1,63 @@
+{
+  "id": "2015-googlenet-inception",
+  "year": "2014-2015",
+  "title": {
+    "en": "GoogLeNet / Inception",
+    "zh": "GoogLeNet / Inception"
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "谷歌"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
+      "role": {
+        "en": "Lead author of the GoogLeNet paper",
+        "zh": "GoogLeNet 论文第一作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Google research team",
+        "zh": "谷歌 研究团队"
+      },
+      "role": {
+        "en": "Developed the Inception architecture",
+        "zh": "开发 Inception 架构"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "going deeper with convolutions",
+    "zh": "用卷积走得更深"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Going Deeper with Convolutions",
+      "zh": "用卷积走得更深"
+    },
+    "workAuthors": {
+      "en": "Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "zh": "克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
+    },
+    "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Computer Vision / GoogLeNet",
+    "zh": "BenchCouncil AI100：计算机视觉 / GoogLeNet / Inception"
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1966-eliza-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg",
+    "caption": {
+      "en": "Joseph Weizenbaum portrait",
+      "zh": "约瑟夫·魏岑鲍姆 肖像"
+    },
+    "subcaption": {
+      "en": "MIT News portrait used in Weizenbaum’s obituary.",
+      "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。"
+    },
+    "sourceId": "mit-news-obituary-for-joseph-weizenbaum",
+    "sourceName": {
+      "en": "MIT News",
+      "zh": "麻省理工学院 新闻"
+    },
+    "sourceUrl": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+    "originalImageUrl": "https://news.mit.edu/sites/default/files/images/200803/200908311113135495.jpg",
+    "rights": {
+      "en": "MIT News image; rights not stated.",
+      "zh": "麻省理工学院 新闻 image; rights not stated."
+    },
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1966-eliza-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg",
+    "caption": {
+      "en": "DOCTOR script rewrite",
+      "zh": "DOCTOR 脚本改写"
+    },
+    "subcaption": {
+      "en": "Local redraw for ELIZA, based on the listed source material.",
+      "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "eliza-cacm-paper",
+    "sourceName": {
+      "en": "Communications of the ACM",
+      "zh": "《ACM 通讯》"
+    },
+    "sourceUrl": "https://doi.org/10.1145/365153.365168",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1966-eliza-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg",
+    "caption": {
+      "en": "Terminal dialog",
+      "zh": "终端对话"
+    },
+    "subcaption": {
+      "en": "Local redraw for ELIZA, based on the listed source material.",
+      "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "eliza-cacm-paper",
+    "sourceName": {
+      "en": "Communications of the ACM",
+      "zh": "《ACM 通讯》"
+    },
+    "sourceUrl": "https://doi.org/10.1145/365153.365168",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

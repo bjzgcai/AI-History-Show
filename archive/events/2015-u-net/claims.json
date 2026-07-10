@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2015-u-net-summary",
+    "text": {
+      "en": "U-Net was designed for biomedical image segmentation, where labeled data can be scarce and boundary detail matters. Its contracting path gathers context while the expanding path restores resolution, with skip connections carrying fine details across the U shape. The design escaped its original niche and became a general template for segmentation, restoration, diffusion models, and dense prediction.",
+      "zh": "U-Net 最初面向生物医学图像分割，在这类任务中标注数据稀缺且边界细节重要。收缩路径汇聚上下文，扩张路径恢复分辨率，跳跃连接则把精细信息跨过 U 形结构传递过去。这个设计后来走出原始领域，成为分割、图像复原、扩散模型和密集预测的通用模板。"
+    },
+    "sourceIds": [
+      "u-net-convolutional-networks-for-biomedical-image-segmentation",
+      "freiburg-u-net-release-page"
+    ]
+  },
+  {
+    "id": "2015-u-net-quote",
+    "text": {
+      "en": "convolutional networks for biomedical image segmentation",
+      "zh": "用于生物医学图像分割的卷积网络"
+    },
+    "sourceIds": [
+      "u-net-convolutional-networks-for-biomedical-image-segmentation"
+    ]
+  }
+]

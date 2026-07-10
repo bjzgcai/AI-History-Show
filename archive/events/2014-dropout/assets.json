@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2014-dropout-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
+    "caption": {
+      "en": "Nitish Srivastava portrait",
+      "zh": "尼蒂什·斯里瓦斯塔瓦 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Srivastava’s University of Toronto page.",
+      "zh": "来自 Srivastava 多伦多大学个人页的人物图。"
+    },
+    "sourceId": "university-of-toronto-personal-page",
+    "sourceName": "University of Toronto personal page",
+    "sourceUrl": "https://www.cs.utoronto.ca/~nitish/",
+    "originalImageUrl": "https://www.cs.utoronto.ca/~nitish/pic.JPG",
+    "rights": "Personal website photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2014-dropout-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg",
+    "caption": {
+      "en": "Random unit mask",
+      "zh": "随机单元掩码"
+    },
+    "subcaption": {
+      "en": "Local redraw for Dropout, based on the listed source material.",
+      "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+    "sourceName": {
+      "en": "JMLR",
+      "zh": "《机器学习研究杂志》"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2014-dropout-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg",
+    "caption": {
+      "en": "Approximate ensemble",
+      "zh": "近似集成"
+    },
+    "subcaption": {
+      "en": "Local redraw for Dropout, based on the listed source material.",
+      "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+    "sourceName": {
+      "en": "JMLR",
+      "zh": "《机器学习研究杂志》"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

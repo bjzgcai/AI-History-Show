@@ -1,0 +1,176 @@
+{
+  "description": {
+    "en": "<p>The Davis-Putnam procedure and its DPLL refinement made logical satisfiability a practical search problem for automated reasoning. Davis and Putnam's 1960 JACM paper connected quantification theory to feasible proof procedures, while Davis, Logemann, and Loveland's 1962 program refined SAT search with propagation and backtracking. The lineage still runs through modern SAT, SMT, planning, verification, and constraint-solving systems.</p>",
+    "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 《ACM 杂志》 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Published Papers",
+        "zh": "论文材料"
+      },
+      "html": {
+        "en": "Davis and Putnam's 1960 JACM paper introduced a proof procedure for quantification theory. The 1962 Communications of the ACM article by Davis, Logemann, and Loveland reported a machine program for theorem proving, creating the DPLL lineage.",
+        "zh": "Davis 和 Putnam 1960 年 《ACM 杂志》 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 《ACM 通讯》 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。"
+      }
+    },
+    {
+      "label": {
+        "en": "SAT Search",
+        "zh": "SAT 搜索"
+      },
+      "html": {
+        "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible.",
+        "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Davis-Putnam and DPLL as foundational work behind practical SAT solving. Their long-term legacy is the search-and-propagate structure that still underlies modern solvers, even after learning, restarts, watched literals, and heuristics were added.",
+        "zh": "专家通常把 Davis-Putnam 和 DPLL 视为实用 SAT 求解背后的基础工作。它们的长期影响在于搜索与传播结构至今仍支撑现代求解器，即使后来加入了学习、重启、watched literals 和启发式策略。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Automated Theorem Proving",
+      "zh": "自动定理证明"
+    },
+    "method": {
+      "en": "SAT search with propagation",
+      "zh": "带传播的 SAT 搜索"
+    },
+    "artifact": {
+      "en": "Davis-Putnam / DPLL procedure",
+      "zh": "Davis-Putnam / DPLL 过程"
+    },
+    "material": {
+      "en": "JACM paper + CACM program",
+      "zh": "《ACM 杂志》 论文 + CACM 程序"
+    },
+    "demo": {
+      "en": "Branch, propagate, backtrack",
+      "zh": "分支、传播、回溯"
+    },
+    "visual": "transcript",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Davis-Putnam Procedure",
+          "zh": "Davis-Putnam 过程"
+        },
+        "text": {
+          "en": "The 1960 procedure used logical transformations to attack quantification theory and propositional satisfiability. It made proof search more systematic than earlier brute-force attempts.",
+          "zh": "1960 年过程用逻辑变换处理量词理论和命题可满足性。它让证明搜索比早期暴力尝试更系统。"
+        }
+      },
+      {
+        "label": {
+          "en": "DPLL Search",
+          "zh": "DPLL 搜索"
+        },
+        "text": {
+          "en": "DPLL refines SAT solving into recursive branching plus simplification. Each choice either builds a model or reveals a contradiction that prunes the branch.",
+          "zh": "DPLL 把 SAT 求解改进为递归分支加简化。每次选择要么构造模型，要么暴露矛盾并剪去分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Unit Propagation",
+          "zh": "单子句传播"
+        },
+        "text": {
+          "en": "When a clause has only one possible literal left, the solver must assign it. This forced move can trigger a cascade of simplifications.",
+          "zh": "当一个子句只剩一个可能文字时，求解器必须赋值。这个被迫动作可能触发一连串简化。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Wang's algorithm",
+        "zh": "王氏算法"
+      },
+      {
+        "en": "Resolution method",
+        "zh": "归结方法"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Communications of the ACM",
+          "zh": "《ACM 通讯》"
+        },
+        "title": {
+          "en": "A machine program for theorem-proving",
+          "zh": "《用于定理证明的机器程序》"
+        },
+        "description": {
+          "en": "CACM article page for the 1962 Davis, Logemann, and Loveland theorem-proving program.",
+          "zh": "CACM 文章页，收录 Davis、Logemann 与 Loveland 1962 年的定理证明程序论文。"
+        },
+        "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+        "source": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+        "license": {
+          "en": "CACM article page; reuse rights are controlled by ACM.",
+          "zh": "《ACM 通讯》文章页面；复用权利由 ACM 条款控制。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open CACM record",
+          "zh": "打开 CACM 记录"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "A Computing Procedure for Quantification Theory",
+          "zh": "量词理论的计算过程"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/321033.321034"
+      },
+      {
+        "type": {
+          "en": "Program",
+          "zh": "程序"
+        },
+        "label": {
+          "en": "A machine program for theorem-proving",
+          "zh": "用于定理证明的机器程序"
+        },
+        "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/"
+      },
+      {
+        "type": {
+          "en": "Photo",
+          "zh": "照片"
+        },
+        "label": {
+          "en": "Wikimedia Commons: Hilary Putnam",
+          "zh": "维基共享资源: 希拉里·普特南"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg"
+      }
+    ]
+  }
+}

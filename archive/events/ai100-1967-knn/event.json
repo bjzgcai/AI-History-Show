@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1967-knn",
+  "year": 1967,
+  "title": {
+    "en": "KNN",
+    "zh": "KNN 最近邻"
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Thomas Cover",
+        "zh": "托马斯·科弗"
+      },
+      "role": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Peter Hart",
+        "zh": "彼得·哈特"
+      },
+      "role": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Nearest neighbor pattern classification",
+    "zh": "最近邻模式分类"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Nearest Neighbor Pattern Classification",
+      "zh": "最近邻模式分类"
+    },
+    "workAuthors": {
+      "en": "Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
+      "zh": "托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967"
+    },
+    "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

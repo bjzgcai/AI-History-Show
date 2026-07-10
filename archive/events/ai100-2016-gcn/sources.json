@@ -1,0 +1,50 @@
+[
+  {
+    "id": "semi-supervised-classification-with-graph-convolutional-networks",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "zh": "《使用图卷积网络进行半监督分类》"
+    },
+    "url": "https://arxiv.org/abs/1609.02907"
+  },
+  {
+    "id": "iclr-openreview-record",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR OpenReview record",
+      "zh": "ICLR OpenReview 记录"
+    },
+    "url": "https://openreview.net/forum?id=SJU4ayYgl"
+  },
+  {
+    "id": "kipf-gcn-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "Kipf GCN repository",
+      "zh": "Kipf GCN 代码仓库"
+    },
+    "url": "https://github.com/tkipf/gcn"
+  },
+  {
+    "id": "thomas-kipf-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Thomas Kipf homepage",
+      "zh": "托马斯·基普夫个人主页"
+    },
+    "url": "https://tkipf.github.io/"
+  }
+]

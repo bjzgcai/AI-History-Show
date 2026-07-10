@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>",
+    "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.",
+        "zh": "神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Words are mapped into vectors, combined as context, and used to predict the next word. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "词被映射为向量，与上下文组合后用于预测下一个词。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat neural probabilistic language modeling as an important bridge from sparse n-gram methods to learned distributed representations. Its long-term legacy is the idea that language prediction can learn reusable word vectors and context-sensitive representations.",
+        "zh": "专家通常把神经概率语言模型视为从稀疏 n-gram 方法走向学习型分布式表示的重要桥梁。它的长期影响在于证明语言预测可以学习可复用的词向量和上下文表示。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Distributed word embeddings for language prediction",
+      "zh": "用于语言预测的分布式词嵌入"
+    },
+    "artifact": {
+      "en": "Neural probabilistic language model",
+      "zh": "神经概率语言模型"
+    },
+    "material": {
+      "en": "JMLR paper",
+      "zh": "JMLR 论文"
+    },
+    "demo": {
+      "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
+      "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+    },
+    "visual": "neuralLm",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Distributed Representation",
+          "zh": "分布式表示"
+        },
+        "text": {
+          "en": "Words become dense vectors rather than isolated IDs.",
+          "zh": "词不再是孤立 ID，而是稠密向量。"
+        }
+      },
+      {
+        "label": {
+          "en": "Next-word Prediction",
+          "zh": "下一个词预测"
+        },
+        "text": {
+          "en": "The model learns language statistics by predicting continuation.",
+          "zh": "模型通过预测后续内容来学习语言统计规律。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Word2vec",
+        "zh": "Word2vec"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      },
+      {
+        "en": "GPT",
+        "zh": "GPT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Word vectors",
+        "zh": "词向量"
+      },
+      {
+        "en": "Context window",
+        "zh": "上下文窗口"
+      },
+      {
+        "en": "Next word",
+        "zh": "下一个词"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "JMLR",
+          "zh": "JMLR"
+        },
+        "title": {
+          "en": "A Neural Probabilistic Language Model",
+          "zh": "神经概率语言模型"
+        },
+        "description": {
+          "en": "Open paper record for the neural probabilistic language model.",
+          "zh": "神经概率语言模型的开放论文记录。"
+        },
+        "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+        "source": "https://www.jmlr.org/papers/v3/bengio03a.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "A Neural Probabilistic Language Model",
+          "zh": "《神经概率语言模型》"
+        },
+        "url": "https://www.jmlr.org/papers/v3/bengio03a.html"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "JMLR full paper PDF",
+          "zh": "JMLR 完整论文 PDF"
+        },
+        "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf"
+      },
+      {
+        "type": {
+          "en": "Publication index",
+          "zh": "论文索引"
+        },
+        "label": {
+          "en": "DBLP record",
+          "zh": "DBLP 论文记录"
+        },
+        "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Yoshua Bengio profile at Mila",
+          "zh": "Mila 的约书亚·本吉奥资料"
+        },
+        "url": "https://mila.quebec/en/directory/yoshua-bengio"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "JMLR paper",
+          "zh": "JMLR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
+          "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+        }
+      }
+    ]
+  }
+}

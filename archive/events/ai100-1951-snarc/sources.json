@@ -1,0 +1,62 @@
+[
+  {
+    "id": "snarc-history-overview",
+    "type": {
+      "en": "Archive",
+      "zh": "档案"
+    },
+    "label": {
+      "en": "SNARC history overview",
+      "zh": "SNARC 历史概览"
+    },
+    "url": "https://history-computer.com/snarc/"
+  },
+  {
+    "id": "history-of-ai-snarc-article",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "History of AI SNARC article",
+      "zh": "History of AI 的 SNARC 文章"
+    },
+    "url": "https://historyof.ai/snarc/"
+  },
+  {
+    "id": "stochastic-neural-analog-reinforcement-calculator-overview",
+    "type": {
+      "en": "Context",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Stochastic Neural Analog Reinforcement Calculator overview",
+      "zh": "随机神经模拟强化计算机概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator"
+  },
+  {
+    "id": "history-of-information-snarc-entry",
+    "type": {
+      "en": "Retrospective",
+      "zh": "回顾"
+    },
+    "label": {
+      "en": "History of Information SNARC entry",
+      "zh": "History of Information 的 SNARC 条目"
+    },
+    "url": "https://www.historyofinformation.com/detail.php?id=3884"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/marvin-minsky.jpg"
+  }
+]

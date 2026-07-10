@@ -1,0 +1,62 @@
+[
+  {
+    "id": "r1-an-expert-in-the-computer-systems-domain",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "R1: An Expert in the Computer Systems Domain",
+      "zh": "R1：计算机系统领域的专家"
+    },
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
+  },
+  {
+    "id": "r1-revisited-four-years-in-the-trenches",
+    "type": {
+      "en": "Retrospective",
+      "zh": "回顾"
+    },
+    "label": {
+      "en": "R1 Revisited: Four Years in the Trenches",
+      "zh": "重访 R1：一线四年"
+    },
+    "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445"
+  },
+  {
+    "id": "xcon-overview",
+    "type": {
+      "en": "Overview",
+      "zh": "概览"
+    },
+    "label": {
+      "en": "XCON overview",
+      "zh": "XCON 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Xcon"
+  },
+  {
+    "id": "dec-vax-11-780-photo",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "DEC VAX-11/780 photo",
+      "zh": "DEC VAX-11/780 照片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:VAX_11_780_CPU_Backplane.jpg"
+  }
+]

@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>",
+    "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.",
+        "zh": "Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat conditional GANs as a foundational control mechanism for generative models. Its long-term legacy is the conditioning pattern reused by image translation, text-to-image, and controllable synthesis systems.",
+        "zh": "专家通常把 Conditional GAN 视为生成模型控制机制的基础。它的长期影响在于条件化模式被图像转换、文生图和可控合成系统反复使用。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Conditioned adversarial training",
+      "zh": "条件化对抗训练"
+    },
+    "artifact": {
+      "en": "Conditional GAN formulation",
+      "zh": "Conditional GAN 公式化方法"
+    },
+    "material": {
+      "en": "arXiv paper introducing conditional adversarial nets",
+      "zh": "提出条件化对抗网络的 arXiv 论文"
+    },
+    "demo": {
+      "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute.",
+      "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Condition Signal",
+          "zh": "条件信号"
+        },
+        "text": {
+          "en": "Labels steer generated samples.",
+          "zh": "标签引导生成样本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Adversarial Loss",
+          "zh": "对抗损失"
+        },
+        "text": {
+          "en": "The discriminator checks both realism and condition match.",
+          "zh": "判别器同时检查真实感和条件匹配。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Pix2Pix",
+          "zh": "Pix2Pix"
+        },
+        "zh": {
+          "en": "Pix2Pix",
+          "zh": "Pix2Pix"
+        }
+      },
+      {
+        "en": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        },
+        "zh": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "Canada",
+          "zh": "加拿大"
+        },
+        "zh": {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Noise + label",
+          "zh": "噪声 + 标签"
+        },
+        "zh": {
+          "en": "Noise + label",
+          "zh": "噪声 + 标签"
+        }
+      },
+      {
+        "en": {
+          "en": "Generator",
+          "zh": "生成器"
+        },
+        "zh": {
+          "en": "Generator",
+          "zh": "生成器"
+        }
+      },
+      {
+        "en": {
+          "en": "Conditioned sample",
+          "zh": "条件样本"
+        },
+        "zh": {
+          "en": "Conditioned sample",
+          "zh": "条件样本"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Conditional Generative Adversarial Nets",
+          "zh": "条件生成对抗网络"
+        },
+        "description": {
+          "en": "arXiv source card for Conditional GAN.",
+          "zh": "arXiv 的Conditional GAN资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1411.1784",
+        "source": "https://arxiv.org/abs/1411.1784",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Conditional Generative Adversarial Nets",
+          "zh": "《条件生成对抗网络》"
+        },
+        "url": "https://arxiv.org/abs/1411.1784"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Generative adversarial network overview",
+          "zh": "生成对抗网络概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+      },
+      {
+        "type": {
+          "en": "Related paper",
+          "zh": "相关论文"
+        },
+        "label": {
+          "en": "Generative Adversarial Nets",
+          "zh": "《生成对抗网络》"
+        },
+        "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "arXiv paper introducing conditional adversarial nets",
+          "zh": "提出条件化对抗网络的 arXiv 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute.",
+          "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。"
+        }
+      }
+    ]
+  }
+}

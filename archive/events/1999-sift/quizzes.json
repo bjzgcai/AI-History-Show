@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does SIFT try to make stable?",
+      "zh": "SIFT 试图让什么保持稳定？"
+    },
+    "options": [
+      {
+        "en": "Local image keypoints and descriptors across scale and rotation",
+        "zh": "跨尺度和旋转的局部图像关键点与描述子"
+      },
+      {
+        "en": "A chess opening book",
+        "zh": "国际象棋开局库"
+      },
+      {
+        "en": "A Bayesian network prior",
+        "zh": "贝叶斯网络先验"
+      },
+      {
+        "en": "A natural-language chatbot script",
+        "zh": "自然语言聊天脚本"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "SIFT detects local features designed to remain matchable despite common image transformations.",
+      "zh": "SIFT 检测设计为在常见图像变换下仍可匹配的局部特征。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "vision",
+      "features"
+    ]
+  }
+]

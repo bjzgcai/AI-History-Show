@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>",
+    "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.",
+        "zh": "CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat CycleGAN as a landmark in unpaired translation and controllable visual synthesis. Its long-term legacy is the cycle-consistency idea used whenever paired supervision is expensive or unavailable.",
+        "zh": "专家通常把 CycleGAN 视为非配对转换和可控视觉合成的里程碑。它的长期影响在于循环一致性思想被用于配对监督昂贵或缺失的场景。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Cycle-consistent image translation",
+      "zh": "循环一致图像转换"
+    },
+    "artifact": {
+      "en": "Unpaired image-to-image translation system",
+      "zh": "非配对图像到图像转换系统"
+    },
+    "material": {
+      "en": "ICCV paper, project page, and code",
+      "zh": "ICCV 论文、项目页面与代码"
+    },
+    "demo": {
+      "en": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered.",
+      "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Unpaired Domains",
+          "zh": "非配对领域"
+        },
+        "text": {
+          "en": "Training uses two image collections without matched pairs.",
+          "zh": "训练使用两组没有逐一匹配的图像。"
+        }
+      },
+      {
+        "label": {
+          "en": "Cycle Loss",
+          "zh": "循环损失"
+        },
+        "text": {
+          "en": "Returning to the source domain should reconstruct the input.",
+          "zh": "返回源域时应重建输入。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Pix2Pix",
+          "zh": "Pix2Pix"
+        },
+        "zh": {
+          "en": "Pix2Pix",
+          "zh": "Pix2Pix"
+        }
+      },
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        },
+        "zh": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Domain A",
+          "zh": "领域 A"
+        },
+        "zh": {
+          "en": "Domain A",
+          "zh": "领域 A"
+        }
+      },
+      {
+        "en": {
+          "en": "Translate",
+          "zh": "转换"
+        },
+        "zh": {
+          "en": "Translate",
+          "zh": "转换"
+        }
+      },
+      {
+        "en": {
+          "en": "Cycle back",
+          "zh": "循环返回"
+        },
+        "zh": {
+          "en": "Cycle back",
+          "zh": "循环返回"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Project page",
+          "zh": "项目页面"
+        },
+        "title": {
+          "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+          "zh": "使用循环一致对抗网络进行非配对图像到图像转换"
+        },
+        "description": {
+          "en": "Project page source card for CycleGAN.",
+          "zh": "项目页面 的CycleGAN资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1703.10593",
+        "source": "https://arxiv.org/abs/1703.10593",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+          "zh": "《使用循环一致对抗网络进行非配对图像到图像转换》"
+        },
+        "url": "https://arxiv.org/abs/1703.10593"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "ICCV open-access paper page",
+          "zh": "ICCV 开放论文页面"
+        },
+        "url": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html"
+      },
+      {
+        "type": {
+          "en": "Project",
+          "zh": "项目"
+        },
+        "label": {
+          "en": "CycleGAN project page",
+          "zh": "CycleGAN 项目页面"
+        },
+        "url": "https://junyanz.github.io/CycleGAN/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICCV paper, project page, and code",
+          "zh": "ICCV 论文、项目页面与代码"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "An image moves from domain A to domain B and back to A, with the cycle loss checking whether the original structure is recovered.",
+          "zh": "图像从域 A 转到域 B，再转回域 A，循环损失检查原始结构是否被恢复。"
+        }
+      }
+    ]
+  }
+}

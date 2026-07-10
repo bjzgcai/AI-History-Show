@@ -1,0 +1,62 @@
+[
+  {
+    "id": "a-neural-probabilistic-language-model",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A Neural Probabilistic Language Model",
+      "zh": "《神经概率语言模型》"
+    },
+    "url": "https://www.jmlr.org/papers/v3/bengio03a.html"
+  },
+  {
+    "id": "jmlr-full-paper-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "JMLR full paper PDF",
+      "zh": "JMLR 完整论文 PDF"
+    },
+    "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf"
+  },
+  {
+    "id": "dblp-record",
+    "type": {
+      "en": "Publication index",
+      "zh": "论文索引"
+    },
+    "label": {
+      "en": "DBLP record",
+      "zh": "DBLP 论文记录"
+    },
+    "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03"
+  },
+  {
+    "id": "yoshua-bengio-profile-at-mila",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Yoshua Bengio profile at Mila",
+      "zh": "Mila 的约书亚·本吉奥资料"
+    },
+    "url": "https://mila.quebec/en/directory/yoshua-bengio"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg"
+  }
+]

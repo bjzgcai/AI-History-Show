@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1951-strachey-draughts-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+    "caption": {
+      "en": "Christopher Strachey's draughts program",
+      "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
+    },
+    "subcaption": {
+      "en": "Screenshot of the early draughts program attributed to Strachey.",
+      "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
+    },
+    "sourceId": "strachey-draughts-program-screenshot",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+    "rights": "Public domain",
+    "usage": {
+      "en": "Program screenshot",
+      "zh": "程序截图"
+    }
+  },
+  {
+    "id": "1951-strachey-draughts-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+    "caption": {
+      "en": "Checkers board",
+      "zh": "跳棋棋盘照片"
+    },
+    "subcaption": {
+      "en": "Physical checkers board used as visual context for game-playing AI.",
+      "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
+    },
+    "sourceId": "checkers-board-photo",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+    "rights": "CC BY 3.0",
+    "usage": {
+      "en": "Game-board photo",
+      "zh": "棋盘照片"
+    }
+  },
+  {
+    "id": "1951-strachey-draughts-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+    "caption": {
+      "en": "Draughts board search",
+      "zh": "跳棋棋盘搜索"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Logical or non-mathematical programmes.",
+      "zh": "依据 逻辑或非数学程序 制作的本地解释图。"
+    },
+    "sourceId": "logical-or-non-mathematical-programmes",
+    "sourceName": {
+      "en": "Logical or non-mathematical programmes",
+      "zh": "逻辑或非数学程序"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Search diagram",
+      "zh": "搜索图"
+    }
+  },
+  {
+    "id": "1951-strachey-draughts-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+    "caption": {
+      "en": "Early game-program flow",
+      "zh": "早期游戏程序流程"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Logical or non-mathematical programmes.",
+      "zh": "依据 逻辑或非数学程序 制作的本地解释图。"
+    },
+    "sourceId": "logical-or-non-mathematical-programmes",
+    "sourceName": {
+      "en": "Logical or non-mathematical programmes",
+      "zh": "逻辑或非数学程序"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Program-flow diagram",
+      "zh": "程序流程图"
+    }
+  }
+]

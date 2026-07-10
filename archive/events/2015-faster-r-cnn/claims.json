@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2015-faster-r-cnn-summary",
+    "text": {
+      "en": "Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.",
+      "zh": "早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。"
+    },
+    "sourceIds": [
+      "faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+      "shaoqingren-faster-rcnn"
+    ]
+  },
+  {
+    "id": "2015-faster-r-cnn-quote",
+    "text": {
+      "en": "towards real-time object detection",
+      "zh": "迈向实时目标检测"
+    },
+    "sourceIds": [
+      "faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks"
+    ]
+  }
+]

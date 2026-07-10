@@ -1,0 +1,63 @@
+{
+  "id": "2000-spectral-clustering",
+  "year": "2000",
+  "title": {
+    "en": "Spectral Clustering",
+    "zh": "谱聚类"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, Berkeley",
+      "zh": "加州大学伯克利分校"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      37.8719,
+      -122.2585
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jianbo Shi",
+        "zh": "史建波"
+      },
+      "role": {
+        "en": "Co-author of normalized cuts",
+        "zh": "Normalized Cuts 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Jitendra Malik, Andrew Ng, Yair Weiss",
+        "zh": "吉滕德拉·马利克、吴恩达、亚伊尔·魏斯"
+      },
+      "role": {
+        "en": "Key contributors to spectral clustering formulations",
+        "zh": "谱聚类形式化的重要贡献者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Cut the graph through its spectrum",
+    "zh": "通过图的谱来切分图"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Normalized Cuts and Image Segmentation",
+      "zh": "归一化切分与图像分割"
+    },
+    "workAuthors": {
+      "en": "Jianbo Shi and Jitendra Malik",
+      "zh": "史建波、吉滕德拉·马利克"
+    },
+    "sourceUrl": "https://doi.org/10.1109/34.868688"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Cluster, Classification, Regression / Spectral Clustering",
+    "zh": "BenchCouncil AI100：聚类、分类与回归 / 谱聚类"
+  }
+}

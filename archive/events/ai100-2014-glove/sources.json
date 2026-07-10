@@ -1,0 +1,50 @@
+[
+  {
+    "id": "glove-global-vectors-for-word-representation",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "GloVe: Global Vectors for Word Representation",
+      "zh": "《GloVe：用于词表示的全局向量》"
+    },
+    "url": "https://aclanthology.org/D14-1162/"
+  },
+  {
+    "id": "stanford-glove-project-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Stanford GloVe project page",
+      "zh": "斯坦福 GloVe 项目页面"
+    },
+    "url": "https://nlp.stanford.edu/projects/glove/"
+  },
+  {
+    "id": "acl-anthology-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "ACL Anthology PDF",
+      "zh": "ACL Anthology 论文 PDF"
+    },
+    "url": "https://aclanthology.org/D14-1162.pdf"
+  },
+  {
+    "id": "stanford-nlp-profile",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Stanford NLP profile",
+      "zh": "斯坦福 NLP 个人页面"
+    },
+    "url": "https://nlp.stanford.edu/~jpennin/"
+  }
+]

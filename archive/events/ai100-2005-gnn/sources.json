@@ -1,0 +1,50 @@
+[
+  {
+    "id": "the-graph-neural-network-model",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "The Graph Neural Network Model",
+      "zh": "《图神经网络模型》"
+    },
+    "url": "https://doi.org/10.1109/TNN.2008.2005605"
+  },
+  {
+    "id": "a-new-model-for-learning-in-graph-domains",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "A new model for learning in graph domains",
+      "zh": "《一种用于图领域学习的新模型》"
+    },
+    "url": "https://ieeexplore.ieee.org/document/4700287"
+  },
+  {
+    "id": "graph-neural-network-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Graph neural network overview",
+      "zh": "图神经网络概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Graph_neural_network"
+  },
+  {
+    "id": "google-scholar-profile",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Google Scholar profile",
+      "zh": "Google Scholar 个人资料"
+    },
+    "url": "https://scholar.google.com/citations?user=MdCY3T8AAAAJ"
+  }
+]

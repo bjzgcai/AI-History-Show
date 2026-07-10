@@ -1,0 +1,50 @@
+[
+  {
+    "id": "conditional-generative-adversarial-nets",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Conditional Generative Adversarial Nets",
+      "zh": "《条件生成对抗网络》"
+    },
+    "url": "https://arxiv.org/abs/1411.1784"
+  },
+  {
+    "id": "generative-adversarial-network-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Generative adversarial network overview",
+      "zh": "生成对抗网络概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+  },
+  {
+    "id": "generative-adversarial-nets",
+    "type": {
+      "en": "Related paper",
+      "zh": "相关论文"
+    },
+    "label": {
+      "en": "Generative Adversarial Nets",
+      "zh": "《生成对抗网络》"
+    },
+    "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html"
+  },
+  {
+    "id": "kaptur-interview",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Kaptur interview",
+      "zh": "Kaptur 访谈"
+    },
+    "url": "https://kaptur.co/10-questions-to-an-artificial-intelligence-architect-flickr/flickportrait-2/"
+  }
+]

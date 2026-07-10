@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does VC theory mainly help explain in machine learning?",
+      "zh": "VC 理论主要帮助解释机器学习中的什么问题？"
+    },
+    "options": [
+      {
+        "en": "Why training performance may or may not generalize to unseen data",
+        "zh": "为什么训练表现可能泛化或不能泛化到未见数据"
+      },
+      {
+        "en": "How to make a monitor larger",
+        "zh": "如何把显示器做得更大"
+      },
+      {
+        "en": "Why all datasets have the same labels",
+        "zh": "为什么所有数据集都有相同标签"
+      },
+      {
+        "en": "How to remove probability from learning",
+        "zh": "如何从学习中去掉概率"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "VC dimension and uniform convergence connect sample size, model capacity, training error and expected test behavior.",
+      "zh": "VC 维和一致收敛把样本量、模型容量、训练误差与预期测试表现联系起来。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "generalization",
+      "capacity"
+    ]
+  }
+]

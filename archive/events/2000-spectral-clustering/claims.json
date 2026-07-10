@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2000-spectral-clustering-summary",
+    "text": {
+      "en": "Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.",
+      "zh": "谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。"
+    },
+    "sourceIds": [
+      "normalized-cuts-and-image-segmentation",
+      "on-spectral-clustering-analysis-and-an-algorithm"
+    ]
+  },
+  {
+    "id": "2000-spectral-clustering-quote",
+    "text": {
+      "en": "Cut the graph through its spectrum",
+      "zh": "通过图的谱来切分图"
+    },
+    "sourceIds": [
+      "normalized-cuts-and-image-segmentation"
+    ]
+  }
+]

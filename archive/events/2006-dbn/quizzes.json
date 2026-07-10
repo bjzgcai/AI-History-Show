@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What training idea made early deep belief networks practical?",
+      "zh": "什么训练思想让早期深度置信网络变得实用？"
+    },
+    "options": [
+      {
+        "en": "Greedy layer-wise pretraining",
+        "zh": "贪心逐层预训练"
+      },
+      {
+        "en": "One-shot chess hardware search",
+        "zh": "一次性国际象棋硬件搜索"
+      },
+      {
+        "en": "Frame slot inheritance only",
+        "zh": "仅框架槽继承"
+      },
+      {
+        "en": "Mass-spectrum molecule filtering",
+        "zh": "质谱分子过滤"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "DBNs trained layers one at a time to obtain useful representations before task-specific fine-tuning.",
+      "zh": "DBN 逐层训练以获得有用表示，然后再针对任务微调。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "deep-learning",
+      "pretraining"
+    ]
+  }
+]

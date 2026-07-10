@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.</p>",
+    "zh": "<p>DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.",
+        "zh": "DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat DCGAN as the architecture recipe that made GAN images easier to reproduce and study. Its long-term legacy is the convolutional generator-discriminator pattern used in many later image synthesis systems.",
+        "zh": "专家通常把 DCGAN 视为让 GAN 图像生成更容易复现和研究的架构配方。它的长期影响在于卷积生成器-判别器模式被许多后续图像合成系统采用。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Convolutional adversarial architecture",
+      "zh": "卷积式对抗架构"
+    },
+    "artifact": {
+      "en": "Deep convolutional GAN design",
+      "zh": "深度卷积 GAN 设计"
+    },
+    "material": {
+      "en": "ICLR paper and code examples",
+      "zh": "ICLR 论文与代码示例"
+    },
+    "demo": {
+      "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.",
+      "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Transposed Convolution",
+          "zh": "转置卷积"
+        },
+        "text": {
+          "en": "Latent vectors become image grids.",
+          "zh": "潜向量变成图像网格。"
+        }
+      },
+      {
+        "label": {
+          "en": "Representation Learning",
+          "zh": "表示学习"
+        },
+        "text": {
+          "en": "The discriminator learns reusable visual features.",
+          "zh": "判别器学习可复用视觉特征。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        },
+        "zh": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "StyleGAN",
+          "zh": "StyleGAN"
+        },
+        "zh": {
+          "en": "StyleGAN",
+          "zh": "StyleGAN"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        },
+        "zh": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        }
+      },
+      {
+        "en": {
+          "en": "Upsample",
+          "zh": "上采样"
+        },
+        "zh": {
+          "en": "Upsample",
+          "zh": "上采样"
+        }
+      },
+      {
+        "en": {
+          "en": "Synthetic image",
+          "zh": "合成图像"
+        },
+        "zh": {
+          "en": "Synthetic image",
+          "zh": "合成图像"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+          "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+        },
+        "description": {
+          "en": "arXiv source card for DCGAN.",
+          "zh": "arXiv 的DCGAN资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1511.06434",
+        "source": "https://arxiv.org/abs/1511.06434",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Unsupervised Representation Learning with Deep Convolutional GANs",
+          "zh": "《使用深度卷积 GAN 进行无监督表示学习》"
+        },
+        "url": "https://arxiv.org/abs/1511.06434"
+      },
+      {
+        "type": {
+          "en": "Code",
+          "zh": "代码"
+        },
+        "label": {
+          "en": "PyTorch DCGAN tutorial",
+          "zh": "PyTorch DCGAN 教程"
+        },
+        "url": "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "DCGAN overview",
+          "zh": "DCGAN 概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper and code examples",
+          "zh": "ICLR 论文与代码示例"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.",
+          "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。"
+        }
+      }
+    ]
+  }
+}

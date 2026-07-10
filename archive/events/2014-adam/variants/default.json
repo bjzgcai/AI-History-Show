@@ -1,0 +1,198 @@
+{
+  "description": {
+    "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>",
+    "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "By 2014, deep networks were becoming larger and noisier to train. Researchers needed optimizers that reduced hand-tuning while still working with minibatches, sparse gradients, and nonstationary objectives.",
+        "zh": "到 2014 年，深度网络越来越大，训练噪声也越来越明显。研究者需要一种减少手工调参、同时能处理小批量、稀疏梯度和非平稳目标的优化器。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly.",
+        "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Adam as a practical default optimizer rather than a universal optimum. Its long-term legacy is fast and stable neural-network training, plus a family of descendants such as AdamW and schedule-aware training recipes.",
+        "zh": "专家通常把 Adam 视为实用默认优化器，而不是万能最优解。它的长期影响在于推动了快速、稳定的神经网络训练，并催生了 AdamW 和结合学习率计划的训练配方。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Optimization",
+      "zh": "优化算法"
+    },
+    "method": {
+      "en": "Adaptive first- and second-moment updates",
+      "zh": "一阶与二阶矩自适应更新"
+    },
+    "artifact": {
+      "en": "Adam stochastic optimizer",
+      "zh": "Adam 随机优化器"
+    },
+    "material": {
+      "en": "arXiv paper and optimizer implementations",
+      "zh": "arXiv 论文与优化器实现"
+    },
+    "demo": {
+      "en": "Momentum plus per-parameter scaling",
+      "zh": "动量加逐参数缩放"
+    },
+    "visual": "adam",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "First Moment",
+          "zh": "一阶矩"
+        },
+        "text": {
+          "en": "A running average of gradients behaves like momentum, keeping updates aligned with persistent descent directions.",
+          "zh": "梯度的滑动平均类似动量，让更新方向跟随持续出现的下降方向。"
+        }
+      },
+      {
+        "label": {
+          "en": "Second Moment",
+          "zh": "二阶矩"
+        },
+        "text": {
+          "en": "A running average of squared gradients rescales each parameter so frequent large gradients do not dominate every step.",
+          "zh": "梯度平方的滑动平均会缩放每个参数，使频繁出现的大梯度不至于支配所有更新。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bias Correction",
+          "zh": "偏差校正"
+        },
+        "text": {
+          "en": "Adam corrects early moving averages that start near zero, making the first optimization steps less distorted.",
+          "zh": "Adam 会校正初期接近零的滑动平均，让训练开始阶段的步伐不被过度扭曲。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Backpropagation",
+        "zh": "反向传播"
+      },
+      {
+        "en": "RMSProp",
+        "zh": "RMSProp"
+      },
+      {
+        "en": "Transformer training",
+        "zh": "Transformer 训练"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Netherlands",
+        "zh": "荷兰"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv / ICLR",
+          "zh": "参考来源"
+        },
+        "title": {
+          "en": "Adam paper and Algorithm 1",
+          "zh": "Adam 论文与算法 1"
+        },
+        "description": {
+          "en": "Primary paper record for Adam; local images are redrawn from equations and pseudocode.",
+          "zh": "Adam 的主要论文记录；本地图片依据公式和伪代码重绘。"
+        },
+        "url": "https://arxiv.org/abs/1412.6980",
+        "source": "https://arxiv.org/abs/1412.6980",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Adam: A Method for Stochastic Optimization",
+          "zh": "Adam：一种随机优化方法"
+        },
+        "url": "https://arxiv.org/abs/1412.6980"
+      },
+      {
+        "type": {
+          "en": "Implementation",
+          "zh": "Implementation"
+        },
+        "label": {
+          "en": "PyTorch torch.optim.Adam",
+          "zh": "PyTorch torch.optim.Adam"
+        },
+        "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html"
+      },
+      {
+        "type": {
+          "en": "Framework docs",
+          "zh": "Framework docs"
+        },
+        "label": {
+          "en": "TensorFlow Keras Adam optimizer",
+          "zh": "TensorFlow Keras Adam optimizer"
+        },
+        "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Gradient sample",
+        "zh": "梯度样本"
+      },
+      {
+        "en": "Moment estimates",
+        "zh": "矩估计"
+      },
+      {
+        "en": "Bias-corrected update",
+        "zh": "偏差校正更新"
+      }
+    ]
+  }
+}

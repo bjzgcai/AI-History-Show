@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>",
+    "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.",
+        "zh": "Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Pix2Pix as a practical template for supervised image translation. Its long-term legacy is the conditional image-to-image framing that influenced creative tools and later diffusion-based editing workflows.",
+        "zh": "专家通常把 Pix2Pix 视为监督式图像转换的实用模板。它的长期影响在于条件图像到图像框架影响了创意工具和后来的扩散式编辑工作流。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Paired conditional image translation",
+      "zh": "配对条件图像转换"
+    },
+    "artifact": {
+      "en": "Pix2Pix image-to-image translation framework",
+      "zh": "Pix2Pix 图像到图像转换框架"
+    },
+    "material": {
+      "en": "CVPR paper, project page, and code",
+      "zh": "CVPR 论文、项目页面与代码"
+    },
+    "demo": {
+      "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses.",
+      "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Paired Supervision",
+          "zh": "配对监督"
+        },
+        "text": {
+          "en": "Examples show the desired input-output mapping.",
+          "zh": "样本展示期望的输入输出映射。"
+        }
+      },
+      {
+        "label": {
+          "en": "Conditional Discriminator",
+          "zh": "条件判别器"
+        },
+        "text": {
+          "en": "Realism is judged relative to the input.",
+          "zh": "真实感相对于输入进行判断。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        },
+        "zh": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "CycleGAN",
+          "zh": "CycleGAN"
+        },
+        "zh": {
+          "en": "CycleGAN",
+          "zh": "CycleGAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        },
+        "zh": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Input image",
+          "zh": "输入图像"
+        },
+        "zh": {
+          "en": "Input image",
+          "zh": "输入图像"
+        }
+      },
+      {
+        "en": {
+          "en": "cGAN translator",
+          "zh": "cGAN 转换器"
+        },
+        "zh": {
+          "en": "cGAN translator",
+          "zh": "cGAN 转换器"
+        }
+      },
+      {
+        "en": {
+          "en": "Output image",
+          "zh": "输出图像"
+        },
+        "zh": {
+          "en": "Output image",
+          "zh": "输出图像"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Project page",
+          "zh": "项目页面"
+        },
+        "title": {
+          "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+          "zh": "使用条件对抗网络进行图像到图像转换"
+        },
+        "description": {
+          "en": "Project page source card for Pix2Pix.",
+          "zh": "项目页面 的Pix2Pix资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1611.07004",
+        "source": "https://arxiv.org/abs/1611.07004",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+          "zh": "《使用条件对抗网络进行图像到图像转换》"
+        },
+        "url": "https://arxiv.org/abs/1611.07004"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "CVPR open-access paper page",
+          "zh": "CVPR 开放论文页面"
+        },
+        "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html"
+      },
+      {
+        "type": {
+          "en": "Project",
+          "zh": "项目"
+        },
+        "label": {
+          "en": "Pix2Pix project page",
+          "zh": "Pix2Pix 项目页面"
+        },
+        "url": "https://phillipi.github.io/pix2pix/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper, project page, and code",
+          "zh": "CVPR 论文、项目页面与代码"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses.",
+          "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。"
+        }
+      }
+    ]
+  }
+}

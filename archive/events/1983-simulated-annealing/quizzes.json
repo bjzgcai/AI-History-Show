@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "Why can simulated annealing accept a worse move?",
+      "zh": "模拟退火为什么会接受较差移动？"
+    },
+    "options": [
+      {
+        "en": "To escape local optima while temperature is still high",
+        "zh": "在温度较高时逃离局部最优"
+      },
+      {
+        "en": "Because it never evaluates solutions",
+        "zh": "因为它从不评估解"
+      },
+      {
+        "en": "To force every answer to be wrong",
+        "zh": "为了强制所有答案错误"
+      },
+      {
+        "en": "Because it only sorts text",
+        "zh": "因为它只排序文本"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Early exploration allows uphill moves with some probability; cooling gradually makes the search more selective.",
+      "zh": "早期探索允许以一定概率进行上坡移动；降温会逐渐让搜索更挑剔。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "optimization",
+      "search"
+    ]
+  }
+]

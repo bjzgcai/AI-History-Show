@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2000-neural-language-model-image-1",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "caption": {
+      "en": "Yoshua Bengio portrait",
+      "zh": "约书亚·本吉奥肖像"
+    },
+    "subcaption": {
+      "en": "Lead author of the neural probabilistic language model.",
+      "zh": "神经概率语言模型主要作者。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "originalImageUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2000-neural-language-model-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+    "caption": {
+      "en": "Context prediction",
+      "zh": "上下文预测"
+    },
+    "subcaption": {
+      "en": "Original local explainer of neural language modeling.",
+      "zh": "关于神经语言建模的本地原创解释图。"
+    },
+    "sourceId": "a-neural-probabilistic-language-model",
+    "sourceName": {
+      "en": "JMLR",
+      "zh": "JMLR"
+    },
+    "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html",
+    "originalImageUrl": "https://www.jmlr.org/papers/v3/bengio03a.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

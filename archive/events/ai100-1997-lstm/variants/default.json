@@ -1,0 +1,222 @@
+{
+  "description": {
+    "en": "<p>Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. Its gated memory cell allowed sequence models to preserve information over much longer spans than many earlier recurrent designs.</p>",
+    "zh": "<p>塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。它的门控记忆单元让序列模型能比许多早期循环结构保留更长跨度的信息。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. Its gated memory cell allowed sequence models to preserve information over much longer spans than many earlier recurrent designs.",
+        "zh": "塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。它的门控记忆单元让序列模型能比许多早期循环结构保留更长跨度的信息。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat LSTM as the recurrent architecture that made long-range sequence learning practical before attention became dominant. Its long-term legacy is the gated-memory pattern that shaped speech, handwriting, translation, and early neural language systems.",
+        "zh": "专家通常把 LSTM 视为注意力机制占据主导前，使长程序列学习变得实用的循环架构。它的长期影响在于门控记忆模式塑造了语音、手写识别、翻译和早期神经语言系统。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Gated recurrent memory",
+      "zh": "门控循环记忆"
+    },
+    "artifact": {
+      "en": "LSTM cell",
+      "zh": "LSTM 单元"
+    },
+    "material": {
+      "en": "Neural Computation paper",
+      "zh": "《Neural Computation》论文"
+    },
+    "demo": {
+      "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
+      "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+    },
+    "visual": "lstm",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Memory Cell",
+          "zh": "记忆单元"
+        },
+        "text": {
+          "en": "A persistent state carries sequence information.",
+          "zh": "持久状态携带序列信息。"
+        }
+      },
+      {
+        "label": {
+          "en": "Gates",
+          "zh": "门控机制"
+        },
+        "text": {
+          "en": "Learned gates decide what to write, keep, or expose.",
+          "zh": "学习到的门决定写入、保留或输出哪些信息。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "RNN",
+        "zh": "RNN"
+      },
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "Neural Language Model",
+        "zh": "神经语言模型"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Germany",
+        "zh": "德国"
+      },
+      {
+        "en": "Switzerland",
+        "zh": "瑞士"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Sequence input",
+        "zh": "Sequence input"
+      },
+      {
+        "en": "Gated memory cell",
+        "zh": "Gated memory cell"
+      },
+      {
+        "en": "Long-range state",
+        "zh": "Long-range state"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Press",
+          "zh": "麻省理工学院出版社"
+        },
+        "title": {
+          "en": "Long Short-Term Memory",
+          "zh": "长短期记忆"
+        },
+        "description": {
+          "en": "Primary paper record for the LSTM architecture.",
+          "zh": "LSTM 架构的主论文记录。"
+        },
+        "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+        "source": "https://doi.org/10.1162/neco.1997.9.8.1735",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI page",
+          "zh": "打开 DOI 页面"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Long Short-Term Memory",
+          "zh": "《长短期记忆》"
+        },
+        "url": "https://doi.org/10.1162/neco.1997.9.8.1735"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "Author-hosted LSTM paper PDF",
+          "zh": "作者托管的 LSTM 论文 PDF"
+        },
+        "url": "https://www.bioinf.jku.at/publications/older/2604.pdf"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "LSTM overview",
+          "zh": "LSTM 概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Sepp Hochreiter profile",
+          "zh": "塞普·霍赫赖特个人资料"
+        },
+        "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Neural Computation paper",
+          "zh": "《Neural Computation》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
+          "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+        }
+      }
+    ]
+  }
+}

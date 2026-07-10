@@ -1,0 +1,50 @@
+[
+  {
+    "id": "unsupervised-representation-learning-with-deep-convolutional-gans",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Unsupervised Representation Learning with Deep Convolutional GANs",
+      "zh": "《使用深度卷积 GAN 进行无监督表示学习》"
+    },
+    "url": "https://arxiv.org/abs/1511.06434"
+  },
+  {
+    "id": "pytorch-dcgan-tutorial",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "PyTorch DCGAN tutorial",
+      "zh": "PyTorch DCGAN 教程"
+    },
+    "url": "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html"
+  },
+  {
+    "id": "dcgan-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "DCGAN overview",
+      "zh": "DCGAN 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/alec-radford.png"
+  }
+]

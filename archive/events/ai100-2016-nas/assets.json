@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2016-nas-image-1",
+    "kind": "image",
+    "path": "https://barretzoph.github.io/images/headshot.jpg",
+    "caption": {
+      "en": "Barret Zoph portrait",
+      "zh": "巴雷特·佐夫肖像"
+    },
+    "subcaption": {
+      "en": "Neural architecture search lead author",
+      "zh": "神经架构搜索主要作者"
+    },
+    "sourceId": "barret-zoph-homepage",
+    "sourceName": {
+      "en": "Barret Zoph homepage",
+      "zh": "巴雷特·佐夫个人主页"
+    },
+    "sourceUrl": "https://barretzoph.github.io/",
+    "originalImageUrl": "https://barretzoph.github.io/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2016-nas-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg",
+    "caption": {
+      "en": "Neural Architecture Search explainer",
+      "zh": "神经架构搜索 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "neural-architecture-search-with-reinforcement-learning",
+    "sourceName": {
+      "en": "OpenReview",
+      "zh": "OpenReview"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1611.01578",
+    "originalImageUrl": "https://arxiv.org/abs/1611.01578",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

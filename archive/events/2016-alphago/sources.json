@@ -1,33 +1,33 @@
 [
   {
-    "id": "alphago-nature-paper",
+    "id": "nature-2016-alphago-paper",
     "type": {
       "en": "Paper",
       "zh": "论文"
     },
     "label": {
       "en": "Nature 2016 AlphaGo paper",
-      "zh": "《自然》2016 AlphaGo 论文"
+      "zh": "《自然》 2016 AlphaGo 论文"
     },
     "url": "https://www.nature.com/articles/nature16961"
   },
   {
-    "id": "deepmind-alphago-page",
+    "id": "google-deepmind-alphago",
     "type": {
-      "en": "Project",
-      "zh": "项目"
+      "en": "Blog",
+      "zh": "博客"
     },
     "label": {
       "en": "Google DeepMind AlphaGo",
       "zh": "谷歌 DeepMind AlphaGo"
     },
-    "url": "https://deepmind.google/research/breakthroughs/alphago/"
+    "url": "https://deepmind.google/research/alphago/"
   },
   {
     "id": "katago-analysis-engine",
     "type": {
-      "en": "Code / API",
-      "zh": "代码 / API"
+      "en": "API",
+      "zh": "API"
     },
     "label": {
       "en": "KataGo Analysis Engine",
@@ -36,14 +36,14 @@
     "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md"
   },
   {
-    "id": "lee-sedol-photo",
+    "id": "wikimedia-commons",
     "type": {
       "en": "Image source",
       "zh": "图片来源"
     },
     "label": {
-      "en": "Wikimedia Commons: Lee Se-Dol",
-      "zh": "维基共享资源：李世石"
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
     },
     "url": "https://commons.wikimedia.org/wiki/File:Lee_Se-Dol.jpg"
   }

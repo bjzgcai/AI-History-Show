@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1969-relu",
+  "year": 1969,
+  "title": {
+    "en": "ReLU",
+    "zh": "ReLU"
+  },
+  "location": {
+    "name": {
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "NHK 广播科学研究实验室"
+    },
+    "country": {
+      "en": "Tokyo, Japan",
+      "zh": "日本东京"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
+      "role": {
+        "en": "Early neural vision researcher",
+        "zh": "早期神经视觉研究者"
+      }
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Co-author of later deep rectifier analysis",
+        "zh": "后续深度整流函数分析共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "rectified linear units",
+    "zh": "整流线性单元"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Deep Sparse Rectifier Neural Networks",
+      "zh": "深度稀疏整流神经网络"
+    },
+    "workAuthors": {
+      "en": "Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+      "zh": "泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

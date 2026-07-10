@@ -1,0 +1,63 @@
+{
+  "id": "2013-dqn",
+  "year": "2013",
+  "title": {
+    "en": "Deep Q Network",
+    "zh": "深度 Q 网络"
+  },
+  "location": {
+    "name": {
+      "en": "DeepMind",
+      "zh": "DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国伦敦"
+    },
+    "coordinates": [
+      51.523,
+      -0.128
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Volodymyr Mnih",
+        "zh": "沃洛迪米尔·姆尼赫"
+      },
+      "role": {
+        "en": "First author of DQN work",
+        "zh": "DQN 工作第一作者"
+      }
+    },
+    {
+      "name": {
+        "en": "David Silver",
+        "zh": "戴维·席尔瓦"
+      },
+      "role": {
+        "en": "DeepMind reinforcement learning researcher",
+        "zh": "DeepMind 强化学习研究者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "playing Atari with deep reinforcement learning",
+    "zh": "用深度强化学习玩 Atari"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Playing Atari with Deep Reinforcement Learning",
+      "zh": "用深度强化学习玩 Atari"
+    },
+    "workAuthors": {
+      "en": "Volodymyr Mnih et al., DeepMind, 2013",
+      "zh": "沃洛迪米尔·姆尼赫等, DeepMind，2013"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1312.5602"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Reinforcement learning / Deep Q Network",
+    "zh": "BenchCouncil AI100：强化学习 / 深度 Q 网络"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "1994-chinook",
+  "year": "1989-2007",
+  "title": {
+    "en": "Chinook",
+    "zh": "Chinook 跳棋程序"
+  },
+  "location": {
+    "name": {
+      "en": "University of Alberta",
+      "zh": "阿尔伯塔大学"
+    },
+    "country": {
+      "en": "Alberta, Canada",
+      "zh": "加拿大阿尔伯塔省"
+    },
+    "coordinates": [
+      53.5232,
+      -113.5263
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jonathan Schaeffer",
+        "zh": "乔纳森·谢弗"
+      },
+      "role": {
+        "en": "Leader of the Chinook team",
+        "zh": "Chinook 团队负责人"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Perfect play in checkers is a draw",
+    "zh": "跳棋完美对弈结果为和棋"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Checkers Is Solved",
+      "zh": "跳棋已被求解"
+    },
+    "workAuthors": {
+      "en": "Jonathan Schaeffer et al.",
+      "zh": "乔纳森·谢弗等"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game / Chinook",
+    "zh": "BenchCouncil AI100：游戏 / Chinook 跳棋程序"
+  }
+}

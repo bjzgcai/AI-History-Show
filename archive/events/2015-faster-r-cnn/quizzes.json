@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What bottleneck did Faster R-CNN address?",
+      "zh": "Faster R-CNN 主要解决了什么瓶颈？"
+    },
+    "options": [
+      {
+        "en": "External region proposal generation",
+        "zh": "外部候选区域生成"
+      },
+      {
+        "en": "The need for all images to be grayscale",
+        "zh": "所有图像都必须是灰度图"
+      },
+      {
+        "en": "The absence of any neural network",
+        "zh": "完全没有神经网络"
+      },
+      {
+        "en": "Sorting labels alphabetically",
+        "zh": "按字母顺序排序标签"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The Region Proposal Network learns proposals from shared convolutional features, removing a major external bottleneck.",
+      "zh": "区域建议网络从共享卷积特征中学习候选框，移除了一个主要外部瓶颈。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "vision",
+      "detection"
+    ]
+  }
+]

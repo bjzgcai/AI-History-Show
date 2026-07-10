@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2022-stable-diffusion-image-1",
+    "kind": "image",
+    "path": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+    "caption": {
+      "en": "Robin Rombach portrait",
+      "zh": "罗宾·罗姆巴赫肖像"
+    },
+    "subcaption": {
+      "en": "Lead author of latent diffusion models",
+      "zh": "潜扩散模型主要作者"
+    },
+    "sourceId": "latent-labs",
+    "sourceName": {
+      "en": "Latent Labs",
+      "zh": "Latent Labs"
+    },
+    "sourceUrl": "https://www.latentlabs.com/our-dna/",
+    "originalImageUrl": "https://www.latentlabs.com/our-dna/",
+    "rights": {
+      "en": "Latent Labs profile image; reuse rights not stated.",
+      "zh": "Latent Labs 个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2022-stable-diffusion-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg",
+    "caption": {
+      "en": "Latent diffusion denoising",
+      "zh": "潜扩散去噪"
+    },
+    "subcaption": {
+      "en": "Original local explainer of text-guided latent denoising.",
+      "zh": "关于文本引导潜空间去噪的本地原创解释图。"
+    },
+    "sourceId": "cvpr-paper-page",
+    "sourceName": {
+      "en": "CVPR",
+      "zh": "CVPR"
+    },
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+    "originalImageUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

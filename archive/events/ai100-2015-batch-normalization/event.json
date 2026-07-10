@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2015-batch-normalization",
+  "year": 2015,
+  "title": {
+    "en": "Batch Normalization",
+    "zh": "批归一化"
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Sergey Ioffe",
+        "zh": "谢尔盖·约费"
+      },
+      "role": {
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
+      "role": {
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+    "zh": "批归一化：通过减少内部协变量偏移加速深度网络训练"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "zh": "批归一化：通过减少内部协变量偏移加速深度网络训练"
+    },
+    "workAuthors": {
+      "en": "Sergey Ioffe and Christian Szegedy, ICML, 2015",
+      "zh": "谢尔盖·约费、克里斯蒂安·塞格迪，ICML，2015"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

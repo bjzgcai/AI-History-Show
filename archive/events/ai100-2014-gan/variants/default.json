@@ -1,0 +1,222 @@
+{
+  "description": {
+    "en": "<p>Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI.</p>",
+    "zh": "<p>伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI.",
+        "zh": "伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat GANs as a defining breakthrough in neural generative modeling, even though diffusion models later became preferred for many deployments. Their long-term legacy is adversarial training as a reusable idea for synthesis, domain transfer, and representation learning.",
+        "zh": "专家通常把 GAN 视为神经生成式建模的标志性突破，尽管扩散模型后来在许多部署中更受青睐。它的长期影响在于对抗训练成为合成、领域迁移和表示学习中可复用的思想。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Adversarial generator-discriminator training",
+      "zh": "生成器-判别器对抗训练"
+    },
+    "artifact": {
+      "en": "GAN framework",
+      "zh": "GAN 框架"
+    },
+    "material": {
+      "en": "NeurIPS paper",
+      "zh": "NeurIPS 论文"
+    },
+    "demo": {
+      "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
+      "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+    },
+    "visual": "gan",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Generator",
+          "zh": "生成器"
+        },
+        "text": {
+          "en": "A model maps noise to candidate samples.",
+          "zh": "模型把噪声映射为候选样本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Discriminator",
+          "zh": "判别器"
+        },
+        "text": {
+          "en": "A classifier provides adversarial feedback.",
+          "zh": "分类器提供对抗反馈。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "Diffusion models",
+        "zh": "扩散模型"
+      },
+      {
+        "en": "DALL-E",
+        "zh": "DALL-E"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      },
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Noise vector",
+        "zh": "Noise vector"
+      },
+      {
+        "en": "Generator",
+        "zh": "Generator"
+      },
+      {
+        "en": "Discriminator feedback",
+        "zh": "Discriminator feedback"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Generative Adversarial Nets",
+          "zh": "生成对抗网络"
+        },
+        "description": {
+          "en": "Open paper for the original GAN framework.",
+          "zh": "原始 GAN 框架的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1406.2661",
+        "source": "https://arxiv.org/abs/1406.2661",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Generative Adversarial Nets",
+          "zh": "《生成对抗网络》"
+        },
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "NeurIPS paper page",
+          "zh": "NeurIPS 论文页面"
+        },
+        "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Goodfellow GAN tutorial",
+          "zh": "古德费洛 GAN 教程"
+        },
+        "url": "https://arxiv.org/abs/1701.00160"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Ian Goodfellow profile",
+          "zh": "伊恩·古德费洛个人网站"
+        },
+        "url": "https://www.iangoodfellow.com/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NeurIPS paper",
+          "zh": "NeurIPS 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
+          "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+        }
+      }
+    ]
+  }
+}

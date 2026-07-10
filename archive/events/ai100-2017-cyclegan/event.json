@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2017-cyclegan",
+  "year": 2017,
+  "title": {
+    "en": "CycleGAN",
+    "zh": "CycleGAN"
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley",
+      "zh": "UC Berkeley"
+    },
+    "country": {
+      "en": "Berkeley, United States",
+      "zh": "Berkeley, United States"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jun-Yan Zhu",
+        "zh": "朱俊彦"
+      },
+      "role": {
+        "en": "CycleGAN lead author",
+        "zh": "CycleGAN 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Unpaired image-to-image translation using cycle-consistent adversarial networks",
+    "zh": "使用循环一致对抗网络进行非配对图像到图像转换"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+      "zh": "使用循环一致对抗网络进行非配对图像到图像转换"
+    },
+    "workAuthors": {
+      "en": "Jun-Yan Zhu et al., ICCV, 2017",
+      "zh": "朱俊彦等，ICCV，2017"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1703.10593"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

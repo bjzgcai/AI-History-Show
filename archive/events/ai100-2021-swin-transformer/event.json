@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2021-swin-transformer",
+  "year": 2021,
+  "title": {
+    "en": "Swin Transformer",
+    "zh": "Swin Transformer"
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ze Liu",
+        "zh": "刘泽"
+      },
+      "role": {
+        "en": "Swin Transformer lead author",
+        "zh": "Swin Transformer 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Hierarchical vision Transformer using shifted windows",
+    "zh": "使用移位窗口的层级视觉 Transformer"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "zh": "Swin Transformer：使用移位窗口的层级视觉 Transformer"
+    },
+    "workAuthors": {
+      "en": "Ze Liu et al., ICCV, 2021",
+      "zh": "刘泽等，ICCV，2021"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2103.14030"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

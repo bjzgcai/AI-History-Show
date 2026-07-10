@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-1980-neocognitron-summary",
+    "text": {
+      "en": "Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.",
+      "zh": "福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。"
+    },
+    "sourceIds": [
+      "neocognitron",
+      "open-neocognitron-pdf"
+    ]
+  },
+  {
+    "id": "ai100-1980-neocognitron-quote",
+    "text": {
+      "en": "A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
+      "zh": "一种不受位置平移影响的模式识别机制自组织神经网络模型"
+    },
+    "sourceIds": [
+      "neocognitron"
+    ]
+  }
+]

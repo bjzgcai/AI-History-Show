@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2018-bert-summary",
+    "text": {
+      "en": "Jacob Devlin and collaborators introduced BERT as a bidirectional transformer language model pre-trained with masked language modeling and next-sentence prediction. It made pre-training then fine-tuning a dominant recipe for natural language understanding.",
+      "zh": "雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。它让“先预训练、再微调”成为自然语言理解的主流配方。"
+    },
+    "sourceIds": [
+      "bert",
+      "acl-anthology-bert-paper"
+    ]
+  },
+  {
+    "id": "ai100-2018-bert-quote",
+    "text": {
+      "en": "Pre-training of deep bidirectional transformers for language understanding",
+      "zh": "用于语言理解的深度双向 Transformer 预训练"
+    },
+    "sourceIds": [
+      "bert"
+    ]
+  }
+]

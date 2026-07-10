@@ -1,0 +1,63 @@
+{
+  "id": "2009-imagenet",
+  "year": "2009",
+  "title": {
+    "en": "ImageNet",
+    "zh": "ImageNet"
+  },
+  "location": {
+    "name": {
+      "en": "Princeton University / Stanford University",
+      "zh": "普林斯顿大学 / 斯坦福大学"
+    },
+    "country": {
+      "en": "New Jersey and California, United States",
+      "zh": "美国新泽西州与加利福尼亚州"
+    },
+    "coordinates": [
+      40.3431,
+      -74.6551
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Fei-Fei Li",
+        "zh": "李飞飞"
+      },
+      "role": {
+        "en": "ImageNet project leader",
+        "zh": "ImageNet 项目主要推动者"
+      }
+    },
+    {
+      "name": {
+        "en": "Jia Deng",
+        "zh": "邓嘉"
+      },
+      "role": {
+        "en": "First author of ImageNet paper",
+        "zh": "ImageNet 论文第一作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "large-scale hierarchical image database",
+    "zh": "大规模层级图像数据库"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "zh": "ImageNet：大规模层级图像数据库"
+    },
+    "workAuthors": {
+      "en": "Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "zh": "邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
+    },
+    "sourceUrl": "https://ieeexplore.ieee.org/document/5206848"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / ImageNet",
+    "zh": "BenchCouncil AI100：神经网络 / ImageNet"
+  }
+}

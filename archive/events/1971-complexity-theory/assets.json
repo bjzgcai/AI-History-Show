@@ -1,0 +1,49 @@
+[
+  {
+    "id": "1971-complexity-theory-image-1",
+    "kind": "image",
+    "path": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
+    "caption": {
+      "en": "Stephen A. Cook portrait",
+      "zh": "斯蒂芬·A·库克 肖像"
+    },
+    "subcaption": {
+      "en": "Stephen A. Cook photographed during the Turing Centenary Celebration in 2012.",
+      "zh": "斯蒂芬·A·库克 摄于 2012 年图灵百年纪念活动。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-06-15_Stephen_A._Cook.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/2012-06-15_Stephen_A._Cook.jpg",
+    "rights": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+    "usage": {
+      "en": "Portrait",
+      "zh": "人物肖像"
+    }
+  },
+  {
+    "id": "1971-complexity-theory-image-2",
+    "kind": "image",
+    "path": "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg",
+    "caption": {
+      "en": "NP-completeness reduction map",
+      "zh": "NP 完全性归约地图"
+    },
+    "subcaption": {
+      "en": "Original explainer derived from Cook's 1971 paper and the Clay P versus NP problem description.",
+      "zh": "根据 库克 1971 年论文与 Clay P 与 NP 难题说明制作的原创解释图。"
+    },
+    "sourceId": "the-complexity-of-theorem-proving-procedures",
+    "sourceName": "ACM / Clay Mathematics Institute",
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/800157.805047",
+    "originalImageUrl": "Local original explainer",
+    "rights": "Original local explainer; source article reuse rights not used.",
+    "usage": {
+      "en": "Supporting image / Explainer graphic",
+      "zh": "辅助说明图 / 解释性图形"
+    }
+  }
+]

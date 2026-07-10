@@ -1,0 +1,50 @@
+[
+  {
+    "id": "chinook-project-home",
+    "type": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "label": {
+      "en": "Chinook project home",
+      "zh": "Chinook 项目主页"
+    },
+    "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php"
+  },
+  {
+    "id": "checkers-is-solved",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Checkers Is Solved",
+      "zh": "跳棋已被求解"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.1144079"
+  },
+  {
+    "id": "chinook-publications",
+    "type": {
+      "en": "Publications",
+      "zh": "论文列表"
+    },
+    "label": {
+      "en": "Chinook publications",
+      "zh": "Chinook 论文列表"
+    },
+    "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/"
+  },
+  {
+    "id": "jonathan-schaeffer-portrait",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Jonathan Schaeffer portrait",
+      "zh": "乔纳森·谢弗 人物照片"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg"
+  }
+]

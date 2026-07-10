@@ -1,0 +1,62 @@
+[
+  {
+    "id": "segment-anything",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Segment Anything",
+      "zh": "《Segment Anything》"
+    },
+    "url": "https://arxiv.org/abs/2304.02643"
+  },
+  {
+    "id": "iccv-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICCV paper page",
+      "zh": "ICCV 论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html"
+  },
+  {
+    "id": "segment-anything-project-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Segment Anything project page",
+      "zh": "Segment Anything 项目页面"
+    },
+    "url": "https://segment-anything.com/"
+  },
+  {
+    "id": "segment-anything-github-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "Segment Anything GitHub repository",
+      "zh": "Segment Anything GitHub 代码仓库"
+    },
+    "url": "https://github.com/facebookresearch/segment-anything"
+  },
+  {
+    "id": "alexander-kirillov-personal-site",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Alexander Kirillov personal site",
+      "zh": "亚历山大·基里洛夫个人网站"
+    },
+    "url": "https://alexander-kirillov.github.io/"
+  }
+]

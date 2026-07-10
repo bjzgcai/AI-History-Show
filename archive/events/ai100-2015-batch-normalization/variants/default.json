@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>",
+    "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.",
+        "zh": "批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Activations are centered, scaled, then shifted by learned parameters inside the network. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat batch normalization as a practical training stabilizer, while noting that later architectures sometimes replace it with other normalization methods. Its long-term legacy is making activation statistics an explicit part of deep-network optimization.",
+        "zh": "专家通常把批归一化视为实用的训练稳定器，同时也指出后来的架构有时会用其他归一化方法替代它。它的长期影响在于把激活统计量明确纳入深度网络优化过程。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Mini-batch activation normalization",
+      "zh": "小批量激活归一化"
+    },
+    "artifact": {
+      "en": "Batch normalization layer",
+      "zh": "批归一化层"
+    },
+    "material": {
+      "en": "ICML paper",
+      "zh": "ICML 论文"
+    },
+    "demo": {
+      "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
+      "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+    },
+    "visual": "batchnorm",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Normalize Activations",
+          "zh": "归一化激活"
+        },
+        "text": {
+          "en": "Layer inputs are standardized over each mini-batch.",
+          "zh": "层输入在每个小批量上被标准化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Learned Scale and Shift",
+          "zh": "可学习缩放和平移"
+        },
+        "text": {
+          "en": "The model can recover useful activation ranges after normalization.",
+          "zh": "模型可以在归一化后恢复有用的激活范围。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Inception",
+        "zh": "Inception"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Batch statistics",
+        "zh": "批统计量"
+      },
+      {
+        "en": "Normalize",
+        "zh": "归一化"
+      },
+      {
+        "en": "Scale + shift",
+        "zh": "缩放 + 平移"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Batch Normalization",
+          "zh": "批归一化"
+        },
+        "description": {
+          "en": "Open ICML paper page for batch normalization.",
+          "zh": "批归一化的 ICML 开放论文页面。"
+        },
+        "url": "https://proceedings.mlr.press/v37/ioffe15.html",
+        "source": "https://proceedings.mlr.press/v37/ioffe15.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Batch Normalization",
+          "zh": "《批归一化》"
+        },
+        "url": "https://proceedings.mlr.press/v37/ioffe15.html"
+      },
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Batch Normalization on arXiv",
+          "zh": "arXiv 上的批归一化论文"
+        },
+        "url": "https://arxiv.org/abs/1502.03167"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "Google Research publication page",
+          "zh": "Google Research 出版页面"
+        },
+        "url": "https://research.google/pubs/batch-normalization-accelerating-deep-network-training-by-reducing-internal-covariate-shift/"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "Google Research archived PDF",
+          "zh": "Google Research 归档 PDF"
+        },
+        "url": "https://research.google.com/pubs/archive/43442.pdf"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICML paper",
+          "zh": "ICML 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
+          "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+        }
+      }
+    ]
+  }
+}

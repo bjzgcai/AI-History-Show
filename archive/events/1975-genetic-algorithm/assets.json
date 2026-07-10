@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1975-genetic-algorithm-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
+    "caption": {
+      "en": "John Henry Holland portrait",
+      "zh": "John Henry 霍兰德 肖像"
+    },
+    "subcaption": {
+      "en": "Physics Today history article photo, credited there to Santa Fe Institute.",
+      "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。"
+    },
+    "sourceId": "physics-today",
+    "sourceName": "Physics Today",
+    "sourceUrl": "https://physicstoday.aip.org/news/john-henry-holland",
+    "originalImageUrl": "https://aip.brightspotcdn.com/dims4/default/811cb1a/2147483647/strip/true/crop/600x396+0+0/resize/600x396!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2F9290%2Fpt-5-031409.jpg",
+    "rights": "Physics Today article photo; photo credit: Santa Fe Institute.",
+    "usage": {
+      "en": "Historical figure / Genetic algorithms pioneer",
+      "zh": "历史人物 / 遗传算法先驱"
+    }
+  },
+  {
+    "id": "1975-genetic-algorithm-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg",
+    "caption": {
+      "en": "Population adaptation loop",
+      "zh": "种群适应循环"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+      "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "adaptation-in-natural-and-artificial-systems",
+    "sourceName": {
+      "en": "MIT Press",
+      "zh": "麻省理工学院 Press"
+    },
+    "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "1975-genetic-algorithm-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg",
+    "caption": {
+      "en": "Chromosome crossover",
+      "zh": "染色体交叉"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Genetic Algorithms, based on the related source material.",
+      "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "adaptation-in-natural-and-artificial-systems",
+    "sourceName": {
+      "en": "MIT Press",
+      "zh": "麻省理工学院 Press"
+    },
+    "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

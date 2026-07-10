@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2015-deep-compression-image-1",
+    "kind": "image",
+    "path": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+    "caption": {
+      "en": "Song Han portrait",
+      "zh": "韩松肖像"
+    },
+    "subcaption": {
+      "en": "Deep Compression lead author",
+      "zh": "深度压缩主要作者"
+    },
+    "sourceId": "han-lab-profile",
+    "sourceName": {
+      "en": "Han Lab profile",
+      "zh": "韩松实验室个人资料"
+    },
+    "sourceUrl": "https://hanlab.mit.edu/songhan",
+    "originalImageUrl": "https://hanlab.mit.edu/songhan",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2015-deep-compression-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg",
+    "caption": {
+      "en": "Deep Compression explainer",
+      "zh": "深度压缩 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "deep-compression",
+    "sourceName": {
+      "en": "Project page",
+      "zh": "项目页面"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1510.00149",
+    "originalImageUrl": "https://arxiv.org/abs/1510.00149",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

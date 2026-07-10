@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>",
+    "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "After AlexNet and VGG, CNNs were becoming deeper and more compute-hungry. Google’s team explored how to increase representational power without simply scaling every layer.",
+        "zh": "AlexNet 和 VGG 之后，CNN 变得更深也更耗算力。谷歌 团队探索如何提升表示能力，而不是简单放大每一层。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "An Inception module asks the network to choose among several receptive-field sizes at once. 1x1 bottlenecks keep this multi-branch design affordable.",
+        "zh": "Inception 模块让网络同时使用多种感受野尺寸。1x1 瓶颈层让这种多分支设计在计算上可承受。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Inception as a milestone in efficient modular CNN design. Its long-term legacy is the emphasis on parallel branches, bottlenecks, and explicit compute tradeoffs that influenced later block design and architecture search.",
+        "zh": "专家通常把 Inception 视为高效模块化 CNN 设计的里程碑。它的长期影响在于强调并行分支、瓶颈层和明确计算权衡，并影响了后来的模块设计与架构搜索。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Computer Vision",
+      "zh": "计算机视觉"
+    },
+    "method": {
+      "en": "Multi-scale Inception modules",
+      "zh": "多尺度 Inception 模块"
+    },
+    "artifact": {
+      "en": "GoogLeNet architecture",
+      "zh": "GoogLeNet 架构"
+    },
+    "material": {
+      "en": "CVPR paper and ImageNet-winning model",
+      "zh": "计算机视觉与模式识别会议 论文与 ImageNet 冠军模型"
+    },
+    "demo": {
+      "en": "Parallel filters, efficient depth",
+      "zh": "并行滤波器与高效深度"
+    },
+    "visual": "inception",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Inception Module",
+          "zh": "Inception 模块"
+        },
+        "text": {
+          "en": "Several convolution and pooling paths run in parallel, letting the network capture patterns at multiple scales.",
+          "zh": "多个卷积与池化路径并行运行，让网络捕捉多尺度模式。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bottleneck Layers",
+          "zh": "瓶颈层"
+        },
+        "text": {
+          "en": "1x1 convolutions reduce channel counts before expensive operations, improving computational efficiency.",
+          "zh": "1x1 卷积在昂贵操作前减少通道数，提高计算效率。"
+        }
+      },
+      {
+        "label": {
+          "en": "Parameter Efficiency",
+          "zh": "参数效率"
+        },
+        "text": {
+          "en": "The architecture increases depth and width while controlling memory and compute cost.",
+          "zh": "该架构在增加深度与宽度的同时控制内存和计算成本。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "VGG",
+        "zh": "VGG"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVF Open Access",
+          "zh": "CVF 开放访问"
+        },
+        "title": {
+          "en": "Going Deeper with Convolutions",
+          "zh": "用卷积走得更深"
+        },
+        "description": {
+          "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
+          "zh": "CVPR 开放访问页面，介绍 GoogLeNet 与 Inception 模块。"
+        },
+        "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open CVF paper",
+          "zh": "打开 CVF 论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Going Deeper with Convolutions",
+          "zh": "用卷积走得更深"
+        },
+        "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
+      },
+      {
+        "type": {
+          "en": "Model docs",
+          "zh": "模型文档"
+        },
+        "label": {
+          "en": "TorchVision GoogLeNet",
+          "zh": "TorchVision GoogLeNet"
+        },
+        "url": "https://pytorch.org/vision/stable/models/googlenet.html"
+      },
+      {
+        "type": {
+          "en": "Model docs",
+          "zh": "模型文档"
+        },
+        "label": {
+          "en": "TensorFlow Keras InceptionV3",
+          "zh": "TensorFlow Keras InceptionV3"
+        },
+        "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "1x1 bottleneck",
+        "zh": "1x1 瓶颈"
+      },
+      {
+        "en": "Parallel filters",
+        "zh": "并行滤波器"
+      },
+      {
+        "en": "Concatenate channels",
+        "zh": "拼接通道"
+      }
+    ]
+  }
+}

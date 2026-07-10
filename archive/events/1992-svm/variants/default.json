@@ -1,0 +1,194 @@
+{
+  "description": {
+    "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>",
+    "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "In the early 1990s, machine learning needed methods that could generalize from limited data with clear mathematical guarantees. SVMs translated VC-style capacity control into a practical classifier.",
+        "zh": "20 世纪 90 年代初，机器学习需要能在有限数据上泛化并具有清晰数学保证的方法。SVM 将 VC 式容量控制转化为实用分类器。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "SVMs prefer a boundary that is not merely correct on training data, but comfortably separated from the closest examples. Kernels make nonlinear boundaries possible while preserving a convex optimization problem.",
+        "zh": "SVM 偏好不只是训练集正确、而且离最近样本足够远的边界。核函数让非线性边界成为可能，同时保留凸优化问题。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat SVMs as mature classical methods whose conceptual importance exceeds their role in most modern deep-learning pipelines. Their long-term legacy is the margin-and-kernel view of generalization, robust boundaries, and nonlinear classification.",
+        "zh": "专家通常把 SVM 视为成熟的经典方法，其概念重要性超过了它在多数现代深度学习流水线中的实际角色。它的长期影响在于用间隔和核方法理解泛化、稳健边界和非线性分类。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Statistical Learning",
+      "zh": "统计学习"
+    },
+    "method": {
+      "en": "Maximum-margin classification with kernels",
+      "zh": "带核函数的最大间隔分类"
+    },
+    "artifact": {
+      "en": "Support vector machine",
+      "zh": "支持向量机"
+    },
+    "material": {
+      "en": "COLT paper and statistical learning theory",
+      "zh": "COLT 论文与统计学习理论"
+    },
+    "demo": {
+      "en": "Find the widest separating margin",
+      "zh": "寻找最宽分类间隔"
+    },
+    "visual": "svm",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Maximum Margin",
+          "zh": "最大间隔"
+        },
+        "text": {
+          "en": "The classifier chooses the separating boundary with the widest gap to the nearest training examples.",
+          "zh": "分类器选择与最近训练样本之间间隔最宽的分隔边界。"
+        }
+      },
+      {
+        "label": {
+          "en": "Support Vectors",
+          "zh": "支持向量"
+        },
+        "text": {
+          "en": "Only the closest examples define the boundary, making the model depend on critical cases rather than all points equally.",
+          "zh": "只有最接近边界的样本定义分类面，使模型依赖关键样本，而不是同等依赖所有点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Kernel Trick",
+          "zh": "核技巧"
+        },
+        "text": {
+          "en": "Kernels compute similarity as if data had been mapped into a richer space, without explicitly constructing that space.",
+          "zh": "核函数像是在更丰富空间中计算相似度，却不需要显式构造那个空间。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "VC theory",
+        "zh": "VC 理论"
+      },
+      {
+        "en": "Kernel methods",
+        "zh": "核方法"
+      },
+      {
+        "en": "Lasso",
+        "zh": "Lasso"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "ACM COLT",
+          "zh": "参考来源"
+        },
+        "title": {
+          "en": "Optimal margin classifiers",
+          "zh": "最优间隔分类器"
+        },
+        "description": {
+          "en": "Original ACM record for the 1992 optimal-margin classifier paper.",
+          "zh": "ACM 原始记录：1992 年最优间隔分类器论文。"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open ACM record",
+          "zh": "打开 ACM 记录"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "A Training Algorithm for Optimal Margin Classifiers",
+          "zh": "最优间隔分类器的训练算法"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401"
+      },
+      {
+        "type": {
+          "en": "Toolkit",
+          "zh": "工具包"
+        },
+        "label": {
+          "en": "LIBSVM project page",
+          "zh": "LIBSVM project page"
+        },
+        "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/"
+      },
+      {
+        "type": {
+          "en": "Model docs",
+          "zh": "模型文档"
+        },
+        "label": {
+          "en": "scikit-learn SVC",
+          "zh": "scikit-learn SVC"
+        },
+        "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Support vectors",
+        "zh": "支持向量"
+      },
+      {
+        "en": "Widest margin",
+        "zh": "最宽间隔"
+      },
+      {
+        "en": "Kernel boundary",
+        "zh": "核边界"
+      }
+    ]
+  }
+}

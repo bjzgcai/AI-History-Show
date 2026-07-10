@@ -1,0 +1,50 @@
+[
+  {
+    "id": "swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》"
+    },
+    "url": "https://arxiv.org/abs/2103.14030"
+  },
+  {
+    "id": "iccv-open-access-paper-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICCV open-access paper page",
+      "zh": "ICCV 开放论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html"
+  },
+  {
+    "id": "microsoft-swin-transformer-repository",
+    "type": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "label": {
+      "en": "Microsoft Swin Transformer repository",
+      "zh": "Microsoft Swin Transformer 代码仓库"
+    },
+    "url": "https://github.com/microsoft/Swin-Transformer"
+  },
+  {
+    "id": "ze-liu-homepage",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Ze Liu homepage",
+      "zh": "刘泽个人主页"
+    },
+    "url": "https://zeliu98.github.io/"
+  }
+]

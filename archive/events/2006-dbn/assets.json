@@ -1,0 +1,68 @@
+[
+  {
+    "id": "2006-dbn-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+    "caption": {
+      "en": "Geoffrey Hinton portrait",
+      "zh": "杰弗里·辛顿 肖像"
+    },
+    "subcaption": {
+      "en": "Photo from Hinton's University of Toronto page.",
+      "zh": "来自 辛顿 多伦多大学页面的人物图。"
+    },
+    "sourceId": "geoffrey-hinton-photo-page",
+    "sourceName": "University of Toronto",
+    "sourceUrl": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+    "originalImageUrl": "https://www.cs.toronto.edu/~hinton/geoff1.jpg",
+    "rights": "University personal photo page; reuse rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2006-dbn-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+    "caption": {
+      "en": "Stacked RBM pretraining",
+      "zh": "堆叠 RBM 预训练"
+    },
+    "subcaption": {
+      "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+      "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "a-fast-learning-algorithm-for-deep-belief-nets",
+    "sourceName": "Neural Computation",
+    "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2006-dbn-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg",
+    "caption": {
+      "en": "Pretrain then fine-tune",
+      "zh": "预训练后微调"
+    },
+    "subcaption": {
+      "en": "Local redraw for Deep Belief Network, based on the listed source material.",
+      "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "a-fast-learning-algorithm-for-deep-belief-nets",
+    "sourceName": "Neural Computation",
+    "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

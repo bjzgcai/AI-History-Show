@@ -1,0 +1,63 @@
+{
+  "id": "2003-lda",
+  "year": "2003",
+  "title": {
+    "en": "Latent Dirichlet Allocation",
+    "zh": "潜在狄利克雷分配"
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley / Stanford University",
+      "zh": "加州大学伯克利分校 / 斯坦福大学"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Blei",
+        "zh": "戴维·布莱"
+      },
+      "role": {
+        "en": "First author of LDA",
+        "zh": "LDA 第一作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Michael Jordan",
+        "zh": "迈克尔·乔丹"
+      },
+      "role": {
+        "en": "Co-author and probabilistic ML researcher",
+        "zh": "共同作者，概率机器学习研究者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "latent Dirichlet allocation",
+    "zh": "潜在狄利克雷分配"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Latent Dirichlet Allocation",
+      "zh": "潜在狄利克雷分配"
+    },
+    "workAuthors": {
+      "en": "David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+      "zh": "戴维·M·布莱, 吴恩达、迈克尔·I·乔丹, 《机器学习研究杂志》, 2003"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Probabilistic graphical model / LDA",
+    "zh": "BenchCouncil AI100：概率图模型 / LDA"
+  }
+}

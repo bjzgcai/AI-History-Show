@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2016-yolo-summary",
+    "text": {
+      "en": "YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.",
+      "zh": "YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。"
+    },
+    "sourceIds": [
+      "you-only-look-once-unified-real-time-object-detection",
+      "cvpr-open-access-paper-page"
+    ]
+  },
+  {
+    "id": "2016-yolo-quote",
+    "text": {
+      "en": "You Only Look Once",
+      "zh": "只看一次"
+    },
+    "sourceIds": [
+      "you-only-look-once-unified-real-time-object-detection"
+    ]
+  }
+]

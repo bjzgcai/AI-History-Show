@@ -1,0 +1,62 @@
+[
+  {
+    "id": "an-image-is-worth-16x16-words",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "An Image is Worth 16x16 Words",
+      "zh": "《一张图像价值 16x16 个词》"
+    },
+    "url": "https://arxiv.org/abs/2010.11929"
+  },
+  {
+    "id": "iclr-openreview-page",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "ICLR OpenReview page",
+      "zh": "ICLR OpenReview 页面"
+    },
+    "url": "https://openreview.net/forum?id=YicbFdNTTy"
+  },
+  {
+    "id": "openreview-full-paper-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "OpenReview full paper PDF",
+      "zh": "OpenReview 完整论文 PDF"
+    },
+    "url": "https://openreview.net/pdf?id=YicbFdNTTy"
+  },
+  {
+    "id": "google-research-publication-page",
+    "type": {
+      "en": "Publication",
+      "zh": "出版页"
+    },
+    "label": {
+      "en": "Google Research publication page",
+      "zh": "Google Research 出版页面"
+    },
+    "url": "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/"
+  },
+  {
+    "id": "eml-munich",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "EML Munich",
+      "zh": "EML Munich"
+    },
+    "url": "https://www.eml-munich.de/people/alexey-dosovitskiy"
+  }
+]

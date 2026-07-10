@@ -1,0 +1,68 @@
+[
+  {
+    "id": "2015-googlenet-inception-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+    "caption": {
+      "en": "Christian Szegedy episode portrait",
+      "zh": "克里斯蒂安·塞格迪 节目人物图"
+    },
+    "subcaption": {
+      "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper.",
+      "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。"
+    },
+    "sourceId": "the-twiml-ai-podcast",
+    "sourceName": "The TWIML AI Podcast",
+    "sourceUrl": "https://twimlai.com/podcast/twimlai/autoformalization-and-verifiable-superintelligence/",
+    "originalImageUrl": "https://twimlai.com/images/at/shows/twiml-christian-szegedy-autoformalization-verifiable-superintelligence-fhd.jpg",
+    "rights": "Podcast episode artwork; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Inception author portrait",
+      "zh": "历史人物 / Inception 作者人物图"
+    }
+  },
+  {
+    "id": "2015-googlenet-inception-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
+    "caption": {
+      "en": "Multi-branch Inception module",
+      "zh": "多分支 Inception 模块"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+      "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "going-deeper-with-convolutions",
+    "sourceName": "CVF Open Access",
+    "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "2015-googlenet-inception-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg",
+    "caption": {
+      "en": "1x1 bottleneck reduction",
+      "zh": "1x1 瓶颈降维"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material.",
+      "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "going-deeper-with-convolutions",
+    "sourceName": "CVF Open Access",
+    "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

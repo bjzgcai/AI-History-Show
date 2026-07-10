@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1999-nmf",
+  "year": 1999,
+  "title": {
+    "en": "NMF",
+    "zh": "非负矩阵分解"
+  },
+  "location": {
+    "name": {
+      "en": "Bell Labs and MIT",
+      "zh": "贝尔实验室与 MIT"
+    },
+    "country": {
+      "en": "New Jersey and Cambridge, United States",
+      "zh": "美国新泽西州与剑桥"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4015
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Daniel Lee",
+        "zh": "丹尼尔·李"
+      },
+      "role": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      }
+    },
+    {
+      "name": {
+        "en": "H. Sebastian Seung",
+        "zh": "H. 塞巴斯蒂安·承"
+      },
+      "role": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Learning the parts of objects by non-negative matrix factorization",
+    "zh": "通过非负矩阵分解学习物体部件"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Learning the parts of objects by non-negative matrix factorization",
+      "zh": "通过非负矩阵分解学习物体部件"
+    },
+    "workAuthors": {
+      "en": "Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
+      "zh": "丹尼尔·D·李、H. 塞巴斯蒂安·承，《Nature》，1999"
+    },
+    "sourceUrl": "https://doi.org/10.1038/44565"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

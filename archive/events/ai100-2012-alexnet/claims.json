@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2012-alexnet-summary",
+    "text": {
+      "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.",
+      "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。"
+    },
+    "sourceIds": [
+      "imagenet-classification-with-deep-convolutional-neural-networks",
+      "neurips-full-paper-pdf"
+    ]
+  },
+  {
+    "id": "ai100-2012-alexnet-quote",
+    "text": {
+      "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+    },
+    "sourceIds": [
+      "imagenet-classification-with-deep-convolutional-neural-networks"
+    ]
+  }
+]

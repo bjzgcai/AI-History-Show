@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2014-adam-summary",
+    "text": {
+      "en": "Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.",
+      "zh": "Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。"
+    },
+    "sourceIds": [
+      "adam-a-method-for-stochastic-optimization",
+      "pytorch-torch-optim-adam"
+    ]
+  },
+  {
+    "id": "2014-adam-quote",
+    "text": {
+      "en": "straightforward to implement, computationally efficient",
+      "zh": "易于实现且计算高效"
+    },
+    "sourceIds": [
+      "adam-a-method-for-stochastic-optimization"
+    ]
+  }
+]

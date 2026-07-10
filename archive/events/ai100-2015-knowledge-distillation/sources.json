@@ -1,0 +1,50 @@
+[
+  {
+    "id": "distilling-the-knowledge-in-a-neural-network",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Distilling the Knowledge in a Neural Network",
+      "zh": "《蒸馏神经网络中的知识》"
+    },
+    "url": "https://arxiv.org/abs/1503.02531"
+  },
+  {
+    "id": "knowledge-distillation-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Knowledge distillation overview",
+      "zh": "知识蒸馏概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Knowledge_distillation"
+  },
+  {
+    "id": "geoffrey-hinton-profile",
+    "type": {
+      "en": "People",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Geoffrey Hinton profile",
+      "zh": "杰弗里·辛顿资料"
+    },
+    "url": "https://www.cs.toronto.edu/~hinton/"
+  },
+  {
+    "id": "local-project-asset",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "url": "resources/images/figures/geoffrey-hinton.jpg"
+  }
+]

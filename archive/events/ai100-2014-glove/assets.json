@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2014-glove-image-1",
+    "kind": "image",
+    "path": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+    "caption": {
+      "en": "Jeffrey Pennington portrait",
+      "zh": "杰弗里·彭宁顿肖像"
+    },
+    "subcaption": {
+      "en": "GloVe lead author",
+      "zh": "GloVe 主要作者"
+    },
+    "sourceId": "stanford-nlp-profile",
+    "sourceName": {
+      "en": "Stanford NLP profile",
+      "zh": "斯坦福 NLP 个人页面"
+    },
+    "sourceUrl": "https://nlp.stanford.edu/~jpennin/",
+    "originalImageUrl": "https://nlp.stanford.edu/~jpennin/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2014-glove-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+    "caption": {
+      "en": "GloVe explainer",
+      "zh": "GloVe 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "glove-global-vectors-for-word-representation",
+    "sourceName": {
+      "en": "ACL Anthology",
+      "zh": "ACL Anthology"
+    },
+    "sourceUrl": "https://aclanthology.org/D14-1162/",
+    "originalImageUrl": "https://aclanthology.org/D14-1162/",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

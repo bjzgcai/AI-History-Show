@@ -1,0 +1,62 @@
+[
+  {
+    "id": "least-squares-quantization-in-pcm",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Least squares quantization in PCM",
+      "zh": "PCM 中的最小二乘量化"
+    },
+    "url": "https://doi.org/10.1109/TIT.1982.1056489"
+  },
+  {
+    "id": "bell-labs-k-means-history-note",
+    "type": {
+      "en": "History note",
+      "zh": "历史资料"
+    },
+    "label": {
+      "en": "Bell Labs k-means history note",
+      "zh": "贝尔实验室 k-means 历史资料"
+    },
+    "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/"
+  },
+  {
+    "id": "scikit-learn-kmeans-documentation",
+    "type": {
+      "en": "Documentation",
+      "zh": "文档"
+    },
+    "label": {
+      "en": "scikit-learn KMeans documentation",
+      "zh": "scikit-learn KMeans 文档"
+    },
+    "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means"
+  },
+  {
+    "id": "iris-flowers-k-means-clustering-graphic",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Iris Flowers k-means clustering graphic",
+      "zh": "鸢尾花 k-means 聚类图"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Bell_Labs_Holmdel.jpg"
+  }
+]

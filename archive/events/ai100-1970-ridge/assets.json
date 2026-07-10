@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-1970-ridge-image-1",
+    "kind": "image",
+    "path": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+    "caption": {
+      "en": "Arthur Hoerl family context",
+      "zh": "阿瑟·霍尔家庭背景图"
+    },
+    "subcaption": {
+      "en": "Co-author of ridge regression",
+      "zh": "岭回归共同作者"
+    },
+    "sourceId": "university-of-delaware",
+    "sourceName": {
+      "en": "University of Delaware",
+      "zh": "特拉华大学"
+    },
+    "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+    "originalImageUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/",
+    "rights": {
+      "en": "University of Delaware image; reuse rights not stated.",
+      "zh": "特拉华大学图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-1970-ridge-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg",
+    "caption": {
+      "en": "Ridge shrinkage path",
+      "zh": "岭回归收缩路径"
+    },
+    "subcaption": {
+      "en": "Original local explainer of L2 coefficient shrinkage.",
+      "zh": "关于 L2 系数收缩的本地原创解释图。"
+    },
+    "sourceId": "ridge-regression-biased-estimation-for-nonorthogonal-problems",
+    "sourceName": {
+      "en": "Technometrics",
+      "zh": "Technometrics"
+    },
+    "sourceUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+    "originalImageUrl": "https://doi.org/10.1080/00401706.1970.10488634",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

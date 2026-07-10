@@ -1,0 +1,50 @@
+[
+  {
+    "id": "neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+      "zh": "《能够解决困难学习控制问题的类神经自适应元件》"
+    },
+    "url": "https://doi.org/10.1109/TSMC.1983.6313077"
+  },
+  {
+    "id": "reinforcement-learning-an-introduction",
+    "type": {
+      "en": "Book",
+      "zh": "书籍"
+    },
+    "label": {
+      "en": "Reinforcement Learning: An Introduction",
+      "zh": "《强化学习导论》"
+    },
+    "url": "http://incompleteideas.net/book/the-book-2nd.html"
+  },
+  {
+    "id": "actor-critic-model-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Actor-critic model overview",
+      "zh": "Actor-Critic 模型概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Actor-critic_model"
+  },
+  {
+    "id": "umass-amherst-profile",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "UMass Amherst profile",
+      "zh": "马萨诸塞大学阿默斯特分校个人资料"
+    },
+    "url": "https://www.cs.umass.edu/about/directory/andrew-g-barto"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What is being searched in neural architecture search?",
+      "zh": "神经架构搜索在搜索什么？"
+    },
+    "options": [
+      {
+        "en": "Model designs or architectures",
+        "zh": "模型设计或架构"
+      },
+      {
+        "en": "A list of email addresses",
+        "zh": "邮箱地址列表"
+      },
+      {
+        "en": "Only theorem names",
+        "zh": "只有定理名称"
+      },
+      {
+        "en": "The color of a robot",
+        "zh": "机器人的颜色"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "NAS evaluates candidate neural network designs and uses scores to guide the next proposals.",
+      "zh": "NAS 评估候选神经网络设计，并用评分引导下一批提案。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "nas",
+      "ai100"
+    ]
+  }
+]

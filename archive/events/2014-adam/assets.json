@@ -1,0 +1,71 @@
+[
+  {
+    "id": "2014-adam-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+    "caption": {
+      "en": "Diederik P. Kingma portrait",
+      "zh": "迪德里克·P·金马 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Kingma's personal website.",
+      "zh": "来自 金马 个人网站的人物照片。"
+    },
+    "sourceId": "diederik-p-kingma-personal-website",
+    "sourceName": {
+      "en": "Diederik P. Kingma personal website",
+      "zh": "迪德里克·P·金马 personal website"
+    },
+    "sourceUrl": "https://dpkingma.com/",
+    "originalImageUrl": "https://dpkingma.com/files/portrait.jpg",
+    "rights": "Personal website photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Co-author portrait",
+      "zh": "历史人物 / 共同作者肖像"
+    }
+  },
+  {
+    "id": "2014-adam-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg",
+    "caption": {
+      "en": "Adam moment traces",
+      "zh": "Adam 一阶/二阶矩曲线"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+      "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "adam-a-method-for-stochastic-optimization",
+    "sourceName": "arXiv / ICLR",
+    "sourceUrl": "https://arxiv.org/abs/1412.6980",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "2014-adam-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg",
+    "caption": {
+      "en": "Loss landscape trajectory",
+      "zh": "损失地形轨迹"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for Adam Optimizer, based on the related source material.",
+      "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "adam-a-method-for-stochastic-optimization",
+    "sourceName": "arXiv / ICLR",
+    "sourceUrl": "https://arxiv.org/abs/1412.6980",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

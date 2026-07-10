@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does CLIP learn to match?",
+      "zh": "CLIP 学习匹配什么？"
+    },
+    "options": [
+      {
+        "en": "Images and natural-language text",
+        "zh": "图像和自然语言文本"
+      },
+      {
+        "en": "Only chess positions",
+        "zh": "只有棋类局面"
+      },
+      {
+        "en": "Only theorem clauses",
+        "zh": "只有定理子句"
+      },
+      {
+        "en": "Only audio waveforms",
+        "zh": "只有音频波形"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "CLIP uses contrastive learning so matching images and captions are close in embedding space.",
+      "zh": "CLIP 通过对比学习让匹配图像和文字说明在嵌入空间中靠近。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "clip",
+      "multimodal"
+    ]
+  }
+]

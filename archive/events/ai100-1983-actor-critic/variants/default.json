@@ -1,0 +1,249 @@
+{
+  "description": {
+    "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>",
+    "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.",
+        "zh": "Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat actor-critic as a core architecture for modern reinforcement learning. Its long-term legacy is the policy-value split that underlies A3C, DDPG, PPO-style training, and many game or robotics agents.",
+        "zh": "专家通常把 Actor-Critic 视为现代强化学习的核心架构。它的长期影响在于策略-价值分离支撑了 A3C、DDPG、PPO 式训练以及许多游戏或机器人智能体。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Reinforcement learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Separate policy and value learning",
+      "zh": "分离的策略与价值学习"
+    },
+    "artifact": {
+      "en": "Actor-critic reinforcement-learning architecture",
+      "zh": "Actor-Critic 强化学习架构"
+    },
+    "material": {
+      "en": "IEEE Systems, Man, and Cybernetics paper",
+      "zh": "IEEE Systems, Man, and Cybernetics 论文"
+    },
+    "demo": {
+      "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly.",
+      "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。"
+    },
+    "visual": "configuredPaper",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Actor",
+          "zh": "Actor"
+        },
+        "text": {
+          "en": "The policy chooses actions.",
+          "zh": "策略选择动作。"
+        }
+      },
+      {
+        "label": {
+          "en": "Critic",
+          "zh": "Critic"
+        },
+        "text": {
+          "en": "The value estimate evaluates the action.",
+          "zh": "价值估计评价动作。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Temporal-difference update",
+          "zh": "时序差分更新"
+        },
+        "zh": {
+          "en": "Temporal-difference update",
+          "zh": "时序差分更新"
+        }
+      },
+      {
+        "en": {
+          "en": "Q-Learning",
+          "zh": "Q-Learning"
+        },
+        "zh": {
+          "en": "Q-Learning",
+          "zh": "Q-Learning"
+        }
+      },
+      {
+        "en": {
+          "en": "DDPG",
+          "zh": "DDPG"
+        },
+        "zh": {
+          "en": "DDPG",
+          "zh": "DDPG"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Act",
+          "zh": "行动"
+        },
+        "zh": {
+          "en": "Act",
+          "zh": "行动"
+        }
+      },
+      {
+        "en": {
+          "en": "Critique",
+          "zh": "评价"
+        },
+        "zh": {
+          "en": "Critique",
+          "zh": "评价"
+        }
+      },
+      {
+        "en": {
+          "en": "Improve policy",
+          "zh": "改进策略"
+        },
+        "zh": {
+          "en": "Improve policy",
+          "zh": "改进策略"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "IEEE Xplore",
+          "zh": "IEEE Xplore"
+        },
+        "title": {
+          "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+          "zh": "能够解决困难学习控制问题的类神经自适应元件"
+        },
+        "description": {
+          "en": "IEEE Xplore source card for Actor-Critic.",
+          "zh": "IEEE Xplore 的Actor-Critic资料卡片。"
+        },
+        "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+        "source": "https://doi.org/10.1109/TSMC.1983.6313077",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI page",
+          "zh": "打开 DOI 页面"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+          "zh": "《能够解决困难学习控制问题的类神经自适应元件》"
+        },
+        "url": "https://doi.org/10.1109/TSMC.1983.6313077"
+      },
+      {
+        "type": {
+          "en": "Book",
+          "zh": "书籍"
+        },
+        "label": {
+          "en": "Reinforcement Learning: An Introduction",
+          "zh": "《强化学习导论》"
+        },
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Actor-critic model overview",
+          "zh": "Actor-Critic 模型概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Actor-critic_model"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "IEEE Systems, Man, and Cybernetics paper",
+          "zh": "IEEE Systems, Man, and Cybernetics 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly.",
+          "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。"
+        }
+      }
+    ]
+  }
+}

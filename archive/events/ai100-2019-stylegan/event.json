@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2019-stylegan",
+  "year": 2019,
+  "title": {
+    "en": "StyleGAN",
+    "zh": "StyleGAN"
+  },
+  "location": {
+    "name": {
+      "en": "NVIDIA",
+      "zh": "NVIDIA"
+    },
+    "country": {
+      "en": "Santa Clara, United States",
+      "zh": "Santa Clara, United States"
+    },
+    "coordinates": [
+      37.3541,
+      -121.9552
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Tero Karras",
+        "zh": "特罗·卡拉斯"
+      },
+      "role": {
+        "en": "StyleGAN lead author",
+        "zh": "StyleGAN 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "A style-based generator architecture for generative adversarial networks",
+    "zh": "面向生成对抗网络的基于风格的生成器架构"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "zh": "面向生成对抗网络的基于风格的生成器架构"
+    },
+    "workAuthors": {
+      "en": "Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
+      "zh": "特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1812.04948"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

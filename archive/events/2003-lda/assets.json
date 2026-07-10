@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2003-lda-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
+    "caption": {
+      "en": "David M. Blei portrait",
+      "zh": "戴维·M·布莱 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from Blei’s Columbia University homepage.",
+      "zh": "来自 Blei 哥伦比亚大学个人主页的人物图。"
+    },
+    "sourceId": "david-m-blei-homepage",
+    "sourceName": "Columbia University personal page",
+    "sourceUrl": "https://www.cs.columbia.edu/~blei/",
+    "originalImageUrl": "https://www.cs.columbia.edu/~blei/static/blei-hi-res.jpg",
+    "rights": "Personal website photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2003-lda-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg",
+    "caption": {
+      "en": "Topic mixture simplex",
+      "zh": "主题混合单纯形"
+    },
+    "subcaption": {
+      "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
+      "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "latent-dirichlet-allocation",
+    "sourceName": {
+      "en": "JMLR",
+      "zh": "《机器学习研究杂志》"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2003-lda-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg",
+    "caption": {
+      "en": "Plate model sketch",
+      "zh": "Plate 模型草图"
+    },
+    "subcaption": {
+      "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material.",
+      "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "latent-dirichlet-allocation",
+    "sourceName": {
+      "en": "JMLR",
+      "zh": "《机器学习研究杂志》"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

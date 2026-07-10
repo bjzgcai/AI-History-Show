@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.</p>",
+    "zh": "<p>亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.",
+        "zh": "亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models. Its long-term legacy is the generative pre-training recipe that turned next-token prediction into a broad interface for language tasks.",
+        "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响在于生成式预训练配方把下一个令牌预测变成语言任务的通用接口。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Large language models",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Decoder-only generative pre-training",
+      "zh": "解码器式生成预训练"
+    },
+    "artifact": {
+      "en": "Generative Pre-trained Transformer",
+      "zh": "生成式预训练 Transformer"
+    },
+    "material": {
+      "en": "OpenAI technical paper",
+      "zh": "OpenAI 技术论文"
+    },
+    "demo": {
+      "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks.",
+      "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
+    },
+    "visual": "gpt",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Next-token Prediction",
+          "zh": "下一个令牌预测"
+        },
+        "text": {
+          "en": "The model learns by predicting continuation.",
+          "zh": "模型通过预测后续内容来学习。"
+        }
+      },
+      {
+        "label": {
+          "en": "Transfer",
+          "zh": "迁移"
+        },
+        "text": {
+          "en": "Task behavior emerges from pre-trained representations and examples.",
+          "zh": "任务行为来自预训练表示和样例。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      },
+      {
+        "en": "Neural Language Model",
+        "zh": "神经语言模型"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Text corpus",
+        "zh": "Text corpus"
+      },
+      {
+        "en": "Decoder transformer",
+        "zh": "Decoder transformer"
+      },
+      {
+        "en": "Task prompt",
+        "zh": "Task prompt"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenAI",
+          "zh": "OpenAI"
+        },
+        "title": {
+          "en": "Improving Language Understanding by Generative Pre-Training",
+          "zh": "通过生成式预训练改进语言理解"
+        },
+        "description": {
+          "en": "OpenAI technical paper describing the first GPT model.",
+          "zh": "描述第一代 GPT 模型的 OpenAI 技术论文。"
+        },
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "source": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open PDF",
+          "zh": "打开 PDF"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "Improving Language Understanding by Generative Pre-Training",
+          "zh": "《通过生成式预训练改进语言理解》"
+        },
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+      },
+      {
+        "type": {
+          "en": "Publication",
+          "zh": "出版页"
+        },
+        "label": {
+          "en": "OpenAI language unsupervised page",
+          "zh": "OpenAI 无监督语言页面"
+        },
+        "url": "https://openai.com/index/language-unsupervised/"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "GPT model overview",
+          "zh": "GPT 模型概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer"
+      },
+      {
+        "type": {
+          "en": "People",
+          "zh": "人物"
+        },
+        "label": {
+          "en": "Alec Radford research context",
+          "zh": "亚历克·拉德福德研究背景"
+        },
+        "url": "https://openai.com/research/"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "OpenAI technical paper",
+          "zh": "OpenAI 技术论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A transformer decoder predicts the next token over large text corpora, then task examples are formatted as sequences for adaptation. The same generative objective becomes a flexible interface for many language tasks.",
+          "zh": "Transformer 解码器在大规模文本语料上预测下一个令牌，然后把任务样例格式化为序列进行适配。同一个生成目标由此成为许多语言任务的灵活接口。"
+        }
+      }
+    ]
+  }
+}

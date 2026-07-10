@@ -1,0 +1,53 @@
+{
+  "id": "1990-otter",
+  "year": "1990s",
+  "title": {
+    "en": "Otter",
+    "zh": "Otter 自动定理证明器"
+  },
+  "location": {
+    "name": {
+      "en": "Argonne National Laboratory",
+      "zh": "阿贡国家实验室"
+    },
+    "country": {
+      "en": "Illinois, United States",
+      "zh": "美国伊利诺伊州"
+    },
+    "coordinates": [
+      41.7106,
+      -87.9789
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "William McCune",
+        "zh": "威廉·麦丘恩"
+      },
+      "role": {
+        "en": "Creator of Otter",
+        "zh": "Otter 创建者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Resolution-style proof search made practical",
+    "zh": "让归结式证明搜索变得实用"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "OTTER 3.3 Reference Manual",
+      "zh": "OTTER 3.3 参考手册"
+    },
+    "workAuthors": {
+      "en": "William McCune",
+      "zh": "威廉·麦丘恩"
+    },
+    "sourceUrl": "https://arxiv.org/abs/cs/0310056"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Otter",
+    "zh": "BenchCouncil AI100：自动定理证明 / Otter 自动定理证明器"
+  }
+}

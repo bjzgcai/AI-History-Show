@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "How does GAT choose which neighbors matter?",
+      "zh": "GAT 如何选择哪些邻居更重要？"
+    },
+    "options": [
+      {
+        "en": "It learns attention weights over neighbors",
+        "zh": "它学习邻居上的注意力权重"
+      },
+      {
+        "en": "It ignores all edges",
+        "zh": "它忽略所有边"
+      },
+      {
+        "en": "It uses only image brightness",
+        "zh": "它只使用图像亮度"
+      },
+      {
+        "en": "It picks the oldest node",
+        "zh": "它选择最老节点"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "GAT dynamically weights neighboring nodes before combining their features.",
+      "zh": "GAT 在合并邻居特征前动态为邻居加权。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "gat",
+      "ai100"
+    ]
+  }
+]

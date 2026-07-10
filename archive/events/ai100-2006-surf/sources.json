@@ -1,0 +1,62 @@
+[
+  {
+    "id": "surf-speeded-up-robust-features",
+    "type": {
+      "en": "Conference paper",
+      "zh": "会议论文"
+    },
+    "label": {
+      "en": "SURF: Speeded Up Robust Features",
+      "zh": "《SURF：加速稳健特征》"
+    },
+    "url": "https://doi.org/10.1007/11744023_32"
+  },
+  {
+    "id": "eth-surf-paper-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "ETH SURF paper PDF",
+      "zh": "ETH SURF 论文 PDF"
+    },
+    "url": "https://people.ee.ethz.ch/~surf/eccv06.pdf"
+  },
+  {
+    "id": "original-surf-project-page",
+    "type": {
+      "en": "Project",
+      "zh": "项目"
+    },
+    "label": {
+      "en": "Original SURF project page",
+      "zh": "SURF 原始项目页"
+    },
+    "url": "https://people.ee.ethz.ch/~surf/"
+  },
+  {
+    "id": "surf-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "SURF overview",
+      "zh": "SURF 概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features"
+  },
+  {
+    "id": "herbert-bay-personal-site",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Herbert Bay personal site",
+      "zh": "赫伯特·贝个人网站"
+    },
+    "url": "https://herbertbay.com/"
+  }
+]

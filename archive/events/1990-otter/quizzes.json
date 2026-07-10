@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What was central to Otter's practical theorem-proving style?",
+      "zh": "Otter 实用定理证明风格的核心是什么？"
+    },
+    "options": [
+      {
+        "en": "A controlled given-clause search with resolution and paramodulation",
+        "zh": "结合归结与参数调解的受控 given-clause 搜索"
+      },
+      {
+        "en": "Only a fixed chess opening book",
+        "zh": "只有固定的棋类开局库"
+      },
+      {
+        "en": "A neural image classifier",
+        "zh": "神经图像分类器"
+      },
+      {
+        "en": "A random text generator",
+        "zh": "随机文本生成器"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Otter searched first-order clause spaces using resolution-style inference, equality reasoning, indexing, and search-control heuristics.",
+      "zh": "Otter 用归结式推理、等式推理、索引和搜索控制启发式来搜索一阶子句空间。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "theorem-proving",
+      "symbolic-ai"
+    ]
+  }
+]

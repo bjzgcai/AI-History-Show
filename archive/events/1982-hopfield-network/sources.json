@@ -1,0 +1,38 @@
+[
+  {
+    "id": "neural-networks-and-physical-systems",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Neural Networks and Physical Systems",
+      "zh": "神经网络与物理系统"
+    },
+    "url": "https://doi.org/10.1073/pnas.79.8.2554"
+  },
+  {
+    "id": "nobel-prize-john-j-hopfield-facts",
+    "type": {
+      "en": "Profile",
+      "zh": "人物"
+    },
+    "label": {
+      "en": "Nobel Prize: John J. Hopfield facts",
+      "zh": "Nobel Prize: 约翰·J·霍普菲尔德 facts"
+    },
+    "url": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/"
+  },
+  {
+    "id": "princeton-neuroscience-institute-profile",
+    "type": {
+      "en": "Institution",
+      "zh": "机构"
+    },
+    "label": {
+      "en": "Princeton Neuroscience Institute profile",
+      "zh": "Princeton Neuroscience Institute profile"
+    },
+    "url": "https://pni.princeton.edu/people/john-j-hopfield"
+  }
+]

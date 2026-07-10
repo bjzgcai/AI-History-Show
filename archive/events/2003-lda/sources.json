@@ -1,0 +1,38 @@
+[
+  {
+    "id": "latent-dirichlet-allocation",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Latent Dirichlet Allocation",
+      "zh": "潜在狄利克雷分配"
+    },
+    "url": "https://jmlr.org/papers/v3/blei03a.html"
+  },
+  {
+    "id": "david-m-blei-homepage",
+    "type": {
+      "en": "Author",
+      "zh": "作者"
+    },
+    "label": {
+      "en": "David M. Blei homepage",
+      "zh": "戴维·M·布莱 homepage"
+    },
+    "url": "https://www.cs.columbia.edu/~blei/"
+  },
+  {
+    "id": "scikit-learn-latentdirichletallocation",
+    "type": {
+      "en": "Implementation",
+      "zh": "实现"
+    },
+    "label": {
+      "en": "scikit-learn LatentDirichletAllocation",
+      "zh": "scikit-learn LatentDirichletAllocation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html"
+  }
+]

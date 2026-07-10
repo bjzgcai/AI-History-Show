@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What kind of task made LeNet famous?",
+      "zh": "LeNet 因什么任务而闻名？"
+    },
+    "options": [
+      {
+        "en": "Reading handwritten digits or ZIP codes",
+        "zh": "识别手写数字或邮编"
+      },
+      {
+        "en": "Solving every math theorem",
+        "zh": "证明所有数学定理"
+      },
+      {
+        "en": "Playing Go with tree search only",
+        "zh": "只用树搜索下围棋"
+      },
+      {
+        "en": "Sorting books by cover color",
+        "zh": "按封面颜色给书排序"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "LeNet showed that convolutional networks trained end-to-end could recognize handwriting.",
+      "zh": "LeNet 展示了端到端训练的卷积网络可以识别手写内容。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "cnn",
+      "handwriting"
+    ]
+  }
+]

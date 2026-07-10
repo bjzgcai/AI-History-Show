@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2014-gan-summary",
+    "text": {
+      "en": "Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI.",
+      "zh": "伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。"
+    },
+    "sourceIds": [
+      "generative-adversarial-nets",
+      "neurips-paper-page"
+    ]
+  },
+  {
+    "id": "ai100-2014-gan-quote",
+    "text": {
+      "en": "Generative adversarial nets",
+      "zh": "生成对抗网络"
+    },
+    "sourceIds": [
+      "generative-adversarial-nets"
+    ]
+  }
+]

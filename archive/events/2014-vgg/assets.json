@@ -1,0 +1,68 @@
+[
+  {
+    "id": "2014-vgg-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+    "caption": {
+      "en": "Andrew Zisserman portrait",
+      "zh": "安德鲁·齐瑟曼 肖像"
+    },
+    "subcaption": {
+      "en": "Profile photo from the ELLIS Oxford / University of Oxford page.",
+      "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。"
+    },
+    "sourceId": "ellis-oxford-university-of-oxford",
+    "sourceName": "ELLIS Oxford / University of Oxford",
+    "sourceUrl": "https://www.ellis.ox.ac.uk/people/andew-zisserman",
+    "originalImageUrl": "https://www.ellis.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/ellis/images/person/andrew_zisserman.jpg?itok=_Y3KBWur",
+    "rights": "Institution profile photo; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Co-author portrait",
+      "zh": "历史人物 / 共同作者肖像"
+    }
+  },
+  {
+    "id": "2014-vgg-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
+    "caption": {
+      "en": "VGG depth comparison",
+      "zh": "VGG 深度配置对比"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+      "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "oxford-vgg-very-deep-convnets",
+    "sourceName": "Oxford VGG",
+    "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  },
+  {
+    "id": "2014-vgg-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg",
+    "caption": {
+      "en": "3x3 receptive-field build-up",
+      "zh": "3x3 感受野累积"
+    },
+    "subcaption": {
+      "en": "Distinct local redraw for VGG Networks, based on the related source material.",
+      "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。"
+    },
+    "sourceId": "oxford-vgg-very-deep-convnets",
+    "sourceName": "Oxford VGG",
+    "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct visual card",
+      "zh": "辅助图片 / 独立视觉卡片"
+    }
+  }
+]

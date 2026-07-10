@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What makes Swin Transformer efficient for dense vision tasks?",
+      "zh": "Swin Transformer 为什么适合密集视觉任务？"
+    },
+    "options": [
+      {
+        "en": "Shifted local attention windows",
+        "zh": "移位局部注意力窗口"
+      },
+      {
+        "en": "A fixed chess opening",
+        "zh": "固定棋类开局"
+      },
+      {
+        "en": "Only handwritten digit labels",
+        "zh": "只有手写数字标签"
+      },
+      {
+        "en": "A chemical rule table",
+        "zh": "化学规则表"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Shifted windows let local attention exchange information across neighboring image regions.",
+      "zh": "移位窗口让局部注意力在相邻图像区域之间交换信息。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "swin-transformer",
+      "ai100"
+    ]
+  }
+]

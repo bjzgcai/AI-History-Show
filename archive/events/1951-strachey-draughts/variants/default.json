@@ -1,0 +1,207 @@
+{
+  "description": {
+    "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>",
+    "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
+        "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
+        "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Strachey's draughts program as an early proof that stored-program computers could attempt non-numerical play and choice. Its long-term legacy is helping establish board games as controlled environments for search, evaluation, and machine-intelligence demonstrations.",
+        "zh": "专家通常把斯特雷奇的跳棋程序视为早期证据，说明存储程序计算机可以尝试非数值对弈和选择。它的长期影响在于帮助把棋类游戏确立为研究搜索、评估和机器智能演示的受控环境。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Game",
+      "zh": "游戏"
+    },
+    "method": {
+      "en": "Board-state search and evaluation",
+      "zh": "棋盘状态搜索与评估"
+    },
+    "artifact": {
+      "en": "Pilot ACE / Ferranti Mark 1 draughts program",
+      "zh": "Pilot ACE / Ferranti Mark 1 跳棋程序"
+    },
+    "material": {
+      "en": "Historical accounts and Strachey's 1952 program report",
+      "zh": "历史记录与 斯特雷奇 1952 年程序报告"
+    },
+    "demo": {
+      "en": "Evaluate legal draughts moves on a tiny memory budget",
+      "zh": "在极小内存预算下评估合法跳棋走法"
+    },
+    "visual": "draughts",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Board Representation",
+          "zh": "棋盘表示"
+        },
+        "text": {
+          "en": "A game state becomes data the computer can inspect.",
+          "zh": "棋局状态变成计算机可检查的数据。"
+        }
+      },
+      {
+        "label": {
+          "en": "Move Generation",
+          "zh": "走法生成"
+        },
+        "text": {
+          "en": "The program enumerates legal moves instead of following a fixed script.",
+          "zh": "程序枚举合法走法，而不是沿用固定脚本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation",
+          "zh": "局面评估"
+        },
+        "text": {
+          "en": "Candidate positions are scored so the machine can choose.",
+          "zh": "候选局面被评分，机器据此选择。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Turing Test",
+        "zh": "图灵测试"
+      },
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "Chinook",
+        "zh": "Chinook"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Teddington, United Kingdom",
+        "zh": "英国特丁顿"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Represent board",
+        "zh": "表示棋盘"
+      },
+      {
+        "en": "Generate moves",
+        "zh": "生成走法"
+      },
+      {
+        "en": "Choose move",
+        "zh": "选择走法"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Logical or non-mathematical programmes",
+          "zh": "逻辑或非数学程序"
+        },
+        "description": {
+          "en": "ACM record for Strachey's early game-playing program and non-numerical computing argument.",
+          "zh": "ACM 记录：斯特雷奇早期博弈程序与非数值计算论述。"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "action": {
+          "en": "Open ACM record",
+          "zh": "打开 ACM 记录"
+        },
+        "license": {
+          "en": "Reference link only; verify source rights before reuse.",
+          "zh": "仅作为参考链接；复用前需核验来源权利。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Logical or non-mathematical programmes",
+          "zh": "逻辑或非数学程序"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/1455270.1455277"
+      },
+      {
+        "type": {
+          "en": "Biography",
+          "zh": "人物资料"
+        },
+        "label": {
+          "en": "Computer Pioneers - Christopher Strachey",
+          "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇"
+        },
+        "url": "https://history.computer.org/pioneers/strachey.html"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Strachey draughts program screenshot",
+          "zh": "斯特雷奇 跳棋程序截图"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png"
+      },
+      {
+        "type": {
+          "en": "Image source",
+          "zh": "图片来源"
+        },
+        "label": {
+          "en": "Checkers board photo",
+          "zh": "跳棋棋盘照片"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+    "demoPanel": "sources"
+  }
+}

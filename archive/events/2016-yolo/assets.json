@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2016-yolo-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
+    "caption": {
+      "en": "Joseph Redmon portrait",
+      "zh": "约瑟夫·雷德蒙 肖像"
+    },
+    "subcaption": {
+      "en": "Allen School news photo for Redmon’s Google Ph.D. Fellowship.",
+      "zh": "Allen School 关于 Redmon 获 谷歌 Ph.D. Fellowship 的新闻照片。"
+    },
+    "sourceId": "university-of-washington-allen-school",
+    "sourceName": "University of Washington Allen School",
+    "sourceUrl": "https://news.cs.washington.edu/2018/04/05/allen-schools-joseph-redmon-wins-google-ph-d-fellowship/",
+    "originalImageUrl": "https://news.cs.washington.edu/wp-content/uploads/2018/04/joseph-redmon-allen-school.jpg",
+    "rights": "Institution news image; rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2016-yolo-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg",
+    "caption": {
+      "en": "Grid detector",
+      "zh": "网格检测器"
+    },
+    "subcaption": {
+      "en": "Local redraw for YOLO, based on the listed source material.",
+      "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "you-only-look-once-unified-real-time-object-detection",
+    "sourceName": {
+      "en": "CVPR / arXiv",
+      "zh": "计算机视觉与模式识别会议 / arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1506.02640",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2016-yolo-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg",
+    "caption": {
+      "en": "Single-pass pipeline",
+      "zh": "单次前向管线"
+    },
+    "subcaption": {
+      "en": "Local redraw for YOLO, based on the listed source material.",
+      "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "you-only-look-once-unified-real-time-object-detection",
+    "sourceName": {
+      "en": "CVPR / arXiv",
+      "zh": "计算机视觉与模式识别会议 / arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1506.02640",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

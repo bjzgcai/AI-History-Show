@@ -1,0 +1,49 @@
+[
+  {
+    "id": "1956-logic-theorist-image-1",
+    "kind": "image",
+    "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+    "caption": {
+      "en": "Herbert A. Simon portrait",
+      "zh": "赫伯特·A·西蒙 肖像"
+    },
+    "subcaption": {
+      "en": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators.",
+      "zh": "维基共享资源 收录的 赫伯特·A·西蒙 肖像，他是 Logic Theorist 共同创建者之一。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Herbert_simon_red_complete.jpg",
+    "rights": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+    "usage": {
+      "en": "Portrait",
+      "zh": "人物肖像"
+    }
+  },
+  {
+    "id": "1956-logic-theorist-image-2",
+    "kind": "image",
+    "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg",
+    "caption": {
+      "en": "Logic Theorist proof search",
+      "zh": "Logic Theorist 证明搜索"
+    },
+    "subcaption": {
+      "en": "Original explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain.",
+      "zh": "原创解释图，展示目标定理、启发式搜索、符号变换和证明链。"
+    },
+    "sourceId": "the-logic-theory-machine",
+    "sourceName": "Local explainer based on Newell and Simon 1956",
+    "sourceUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+    "originalImageUrl": "Local original explainer",
+    "rights": "Original local explainer; source text and figure reuse rights not used.",
+    "usage": {
+      "en": "Supporting image / Explainer graphic",
+      "zh": "辅助说明图 / 解释性图形"
+    }
+  }
+]

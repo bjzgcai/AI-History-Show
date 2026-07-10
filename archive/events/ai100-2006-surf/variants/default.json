@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>",
+    "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.",
+        "zh": "赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat SURF as an important engineering advance in pre-deep-learning local features. Its long-term legacy is the emphasis on robust matching that is fast enough for practical image retrieval, stitching, and robotics pipelines.",
+        "zh": "专家通常把 SURF 视为深度学习前局部特征工程的重要进展。它的长期影响在于强调足够快速的稳健匹配，支撑图像检索、拼接和机器人视觉流程。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Dimension reduction, Feature extraction",
+      "zh": "降维与特征提取"
+    },
+    "method": {
+      "en": "Fast local feature descriptor",
+      "zh": "快速局部特征描述子"
+    },
+    "artifact": {
+      "en": "SURF detector and descriptor",
+      "zh": "SURF 检测器与描述子"
+    },
+    "material": {
+      "en": "ECCV paper",
+      "zh": "ECCV 论文"
+    },
+    "demo": {
+      "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
+      "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+    },
+    "visual": "surf",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Integral Images",
+          "zh": "积分图"
+        },
+        "text": {
+          "en": "Rectangle responses can be computed quickly.",
+          "zh": "矩形响应可以快速计算。"
+        }
+      },
+      {
+        "label": {
+          "en": "Scale Invariance",
+          "zh": "尺度不变性"
+        },
+        "text": {
+          "en": "Interest points are compared across scales.",
+          "zh": "兴趣点跨尺度比较。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "SIFT",
+        "zh": "SIFT"
+      },
+      {
+        "en": "HOG",
+        "zh": "HOG"
+      },
+      {
+        "en": "ImageNet",
+        "zh": "ImageNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Switzerland",
+        "zh": "瑞士"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Integral image",
+        "zh": "积分图"
+      },
+      {
+        "en": "Hessian response",
+        "zh": "Hessian 响应"
+      },
+      {
+        "en": "Descriptor match",
+        "zh": "描述子匹配"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Springer",
+          "zh": "Springer"
+        },
+        "title": {
+          "en": "SURF: Speeded Up Robust Features",
+          "zh": "SURF：加速稳健特征"
+        },
+        "description": {
+          "en": "Primary ECCV paper record for SURF.",
+          "zh": "SURF 的 ECCV 主论文记录。"
+        },
+        "url": "https://doi.org/10.1007/11744023_32",
+        "source": "https://doi.org/10.1007/11744023_32",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Conference paper",
+          "zh": "会议论文"
+        },
+        "label": {
+          "en": "SURF: Speeded Up Robust Features",
+          "zh": "《SURF：加速稳健特征》"
+        },
+        "url": "https://doi.org/10.1007/11744023_32"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "ETH SURF paper PDF",
+          "zh": "ETH SURF 论文 PDF"
+        },
+        "url": "https://people.ee.ethz.ch/~surf/eccv06.pdf"
+      },
+      {
+        "type": {
+          "en": "Project",
+          "zh": "项目"
+        },
+        "label": {
+          "en": "Original SURF project page",
+          "zh": "SURF 原始项目页"
+        },
+        "url": "https://people.ee.ethz.ch/~surf/"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "SURF overview",
+          "zh": "SURF 概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ECCV paper",
+          "zh": "ECCV 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Integral images speed up box-filter responses, then stable interest points receive compact descriptors.",
+          "zh": "积分图加速盒式滤波响应，然后为稳定兴趣点生成紧凑描述子。"
+        }
+      }
+    ]
+  }
+}

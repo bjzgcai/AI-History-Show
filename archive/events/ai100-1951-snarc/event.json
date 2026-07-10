@@ -1,0 +1,63 @@
+{
+  "id": "ai100-1951-snarc",
+  "year": 1951,
+  "title": {
+    "en": "SNARC",
+    "zh": "SNARC"
+  },
+  "location": {
+    "name": {
+      "en": "Princeton University",
+      "zh": "普林斯顿大学"
+    },
+    "country": {
+      "en": "Princeton, United States",
+      "zh": "美国普林斯顿"
+    },
+    "coordinates": [
+      40.3431,
+      -74.6551
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
+      }
+    },
+    {
+      "name": {
+        "en": "Dean Edmonds",
+        "zh": "迪恩·埃德蒙兹"
+      },
+      "role": {
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "stochastic neural analog reinforcement calculator",
+    "zh": "随机神经模拟强化计算器"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "SNARC historical records",
+      "zh": "SNARC 历史记录"
+    },
+    "workAuthors": {
+      "en": "Marvin Minsky and Dean Edmonds, 1951",
+      "zh": "马文·明斯基、迪恩·埃德蒙兹，1951"
+    },
+    "sourceUrl": "https://history-computer.com/snarc/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What is the Transformer built around?",
+      "zh": "Transformer 主要围绕什么构建？"
+    },
+    "options": [
+      {
+        "en": "Self-attention over tokens",
+        "zh": "令牌之间的自注意力"
+      },
+      {
+        "en": "Only nearest-neighbor voting",
+        "zh": "只有最近邻投票"
+      },
+      {
+        "en": "A chemical expert rule",
+        "zh": "化学专家规则"
+      },
+      {
+        "en": "A fixed decision tree",
+        "zh": "固定决策树"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "The Transformer uses self-attention blocks instead of recurrent sequence processing.",
+      "zh": "Transformer 使用自注意力模块，而不是循环式序列处理。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "transformer",
+      "attention"
+    ]
+  }
+]

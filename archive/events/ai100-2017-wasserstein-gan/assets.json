@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2017-wasserstein-gan-image-1",
+    "kind": "image",
+    "path": "https://leon.bottou.org/_media/bottou_75.jpg",
+    "caption": {
+      "en": "Leon Bottou portrait",
+      "zh": "莱昂·博图肖像"
+    },
+    "subcaption": {
+      "en": "Wasserstein GAN co-author",
+      "zh": "Wasserstein GAN 共同作者"
+    },
+    "sourceId": "leon-bottou-homepage",
+    "sourceName": {
+      "en": "Leon Bottou homepage",
+      "zh": "莱昂·博图个人主页"
+    },
+    "sourceUrl": "https://leon.bottou.org/",
+    "originalImageUrl": "https://leon.bottou.org/",
+    "rights": {
+      "en": "Profile image; reuse rights not stated.",
+      "zh": "个人资料图片；未说明复用权利。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2017-wasserstein-gan-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
+    "caption": {
+      "en": "Wasserstein GAN explainer",
+      "zh": "Wasserstein GAN 解释图"
+    },
+    "subcaption": {
+      "en": "Original local explainer for the achievement flow.",
+      "zh": "关于该成就流程的本地原创解释图。"
+    },
+    "sourceId": "wasserstein-generative-adversarial-networks",
+    "sourceName": {
+      "en": "PMLR",
+      "zh": "PMLR"
+    },
+    "sourceUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+    "originalImageUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

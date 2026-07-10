@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does DenseNet encourage inside a network?",
+      "zh": "DenseNet 在网络内部鼓励什么？"
+    },
+    "options": [
+      {
+        "en": "Feature reuse through dense connections",
+        "zh": "通过密集连接复用特征"
+      },
+      {
+        "en": "Forgetting all earlier layers",
+        "zh": "忘记所有早期层"
+      },
+      {
+        "en": "Only using handwritten rules",
+        "zh": "只使用手写规则"
+      },
+      {
+        "en": "Replacing images with chess boards",
+        "zh": "用棋盘替换图像"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "DenseNet connects layers so later layers can directly use earlier feature maps.",
+      "zh": "DenseNet 连接各层，使后续层可以直接使用早期特征图。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "cnn",
+      "feature-reuse"
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "zh": "Dropout：防止神经网络过拟合的简单方法"
+    },
+    "url": "https://jmlr.org/papers/v15/srivastava14a.html"
+  },
+  {
+    "id": "improving-neural-networks-by-preventing-co-adaptation",
+    "type": {
+      "en": "Preprint",
+      "zh": "预印本"
+    },
+    "label": {
+      "en": "Improving neural networks by preventing co-adaptation",
+      "zh": "Improving neural networks by preventing co-adaptation"
+    },
+    "url": "https://arxiv.org/abs/1207.0580"
+  },
+  {
+    "id": "pytorch-torch-nn-dropout",
+    "type": {
+      "en": "Framework docs",
+      "zh": "框架文档"
+    },
+    "label": {
+      "en": "PyTorch torch.nn.Dropout",
+      "zh": "PyTorch torch.nn.Dropout"
+    },
+    "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html"
+  },
+  {
+    "id": "university-of-toronto-personal-page",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": "University of Toronto personal page",
+    "url": "https://www.cs.utoronto.ca/~nitish/"
+  }
+]

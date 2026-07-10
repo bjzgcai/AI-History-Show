@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ai100-2017-transformer-image-1",
+    "kind": "image",
+    "path": "resources/images/figures/ashish-vaswani.jpg",
+    "caption": {
+      "en": "Ashish Vaswani portrait",
+      "zh": "阿希什·瓦斯瓦尼肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of the Transformer paper",
+      "zh": "Transformer 论文共同作者"
+    },
+    "sourceId": "local-project-asset",
+    "sourceName": {
+      "en": "Local project asset",
+      "zh": "本地项目素材"
+    },
+    "sourceUrl": "resources/images/figures/ashish-vaswani.jpg",
+    "originalImageUrl": "resources/images/figures/ashish-vaswani.jpg",
+    "rights": {
+      "en": "Reference image",
+      "zh": "参考图片"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "ai100-2017-transformer-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+    "caption": {
+      "en": "Self-attention stack",
+      "zh": "自注意力堆栈"
+    },
+    "subcaption": {
+      "en": "Original local explainer of transformer self-attention.",
+      "zh": "关于 Transformer 自注意力的本地原创解释图。"
+    },
+    "sourceId": "neurips-paper-page",
+    "sourceName": {
+      "en": "NeurIPS",
+      "zh": "NeurIPS"
+    },
+    "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+    "originalImageUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+    "rights": {
+      "en": "Original local SVG redraw; source figures are not copied.",
+      "zh": "本地原创 SVG 重绘；未复制来源图形。"
+    },
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  }
+]

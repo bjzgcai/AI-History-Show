@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1958-rosenblatt-perceptron-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
+    "caption": {
+      "en": "Frank Rosenblatt with perceptron hardware",
+      "zh": "弗兰克·罗森布拉特 与感知机硬件"
+    },
+    "subcaption": {
+      "en": "Historical Cornell image of Rosenblatt and the perceptron lineage.",
+      "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。"
+    },
+    "sourceId": "cornell-chronicle-perceptron-retrospective",
+    "sourceName": {
+      "en": "Cornell Chronicle",
+      "zh": "康奈尔大学 Chronicle"
+    },
+    "sourceUrl": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+    "originalImageUrl": "https://news.cornell.edu/sites/default/files/styles/story_thumbnail_xlarge/public/2019-09/0925_rosenblatt_main.jpg",
+    "rights": {
+      "en": "Cornell historical image; reuse rights not stated on extracted image URL.",
+      "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL."
+    },
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "1958-rosenblatt-perceptron-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+    "caption": {
+      "en": "Threshold learning line",
+      "zh": "阈值学习边界"
+    },
+    "subcaption": {
+      "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+      "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "sourceName": "Psychological Review",
+    "sourceUrl": "https://doi.org/10.1037/h0042519",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "1958-rosenblatt-perceptron-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg",
+    "caption": {
+      "en": "Sensor grid to neuron",
+      "zh": "传感器网格到神经元"
+    },
+    "subcaption": {
+      "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material.",
+      "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "sourceName": "Psychological Review",
+    "sourceUrl": "https://doi.org/10.1037/h0042519",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

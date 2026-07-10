@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1985-bayesian-network-summary",
+    "text": {
+      "en": "Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.",
+      "zh": "贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。"
+    },
+    "sourceIds": [
+      "bayesian-networks",
+      "judea-pearl-homepage"
+    ]
+  },
+  {
+    "id": "1985-bayesian-network-quote",
+    "text": {
+      "en": "Directed acyclic graph plus conditional probabilities",
+      "zh": "有向无环图加条件概率"
+    },
+    "sourceIds": [
+      "bayesian-networks"
+    ]
+  }
+]

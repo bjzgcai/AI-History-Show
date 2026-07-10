@@ -1,0 +1,176 @@
+{
+  "description": {
+    "en": "<p>Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.</p>",
+    "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 《贝尔系统技术期刊》 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Published Papers",
+        "zh": "论文材料"
+      },
+      "html": {
+        "en": "The first paper appeared in Communications of the ACM in April 1960, with DOI 10.1145/367177.367224. Bell Labs' archive preserves the 1961 continuation, where Wang describes proof procedures for predicate calculus and related decision-problem cases.",
+        "zh": "第一篇论文发表于 1960 年 4 月 《ACM 通讯》，DOI 为 10.1145/367177.367224。贝尔实验室 档案保存了 1961 年续篇，其中 王浩 讨论了谓词演算证明过程及相关判定问题情形。"
+      }
+    },
+    {
+      "label": {
+        "en": "Pattern Logic",
+        "zh": "模式逻辑"
+      },
+      "html": {
+        "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears.",
+        "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat Wang's algorithm as an early milestone in automated theorem proving. Its long-term legacy is that it narrowed the gap between formal logic and machine execution, influencing later proof procedures and SAT-style reasoning.",
+        "zh": "专家通常把王氏算法视为自动定理证明的早期里程碑。它的长期影响在于缩小了形式逻辑与机器执行之间的距离，并影响了后来的证明过程和 SAT 式推理。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Automated Theorem Proving",
+      "zh": "自动定理证明"
+    },
+    "method": {
+      "en": "Pattern-guided proof procedure",
+      "zh": "模式引导证明过程"
+    },
+    "artifact": {
+      "en": "Wang theorem-proving procedure",
+      "zh": "王氏定理证明过程"
+    },
+    "material": {
+      "en": "CACM paper + Bell Labs article",
+      "zh": "CACM 论文 + 贝尔实验室 文章"
+    },
+    "demo": {
+      "en": "Pattern proof loop",
+      "zh": "模式证明循环"
+    },
+    "visual": "transcript",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Pattern Recognition",
+          "zh": "模式识别"
+        },
+        "text": {
+          "en": "The procedure looks for logical forms that match known rule patterns. Matching turns theorem proving into a sequence of recognizable transformations.",
+          "zh": "该过程寻找能够匹配已知规则模式的逻辑形式。匹配让定理证明变成一串可识别的变换。"
+        }
+      },
+      {
+        "label": {
+          "en": "Proof Reduction",
+          "zh": "证明归约"
+        },
+        "text": {
+          "en": "A complex formula is reduced into smaller subgoals until branches close or require further search. This helped avoid pure truth-table enumeration.",
+          "zh": "复杂公式被归约成更小的子目标，直到分支闭合或继续搜索。这有助于避免纯真值表枚举。"
+        }
+      },
+      {
+        "label": {
+          "en": "Mechanical Mathematics",
+          "zh": "机械数学"
+        },
+        "text": {
+          "en": "Wang's work framed mathematical proof as something machines could perform using symbolic rules and carefully designed procedures.",
+          "zh": "王浩的工作把数学证明表述为机器可以通过符号规则和精心设计的过程来执行的任务。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Logic Theorist",
+        "zh": "Logic Theorist"
+      },
+      {
+        "en": "Davis-Putnam algorithm and DPLL",
+        "zh": "Davis-Putnam 算法与 DPLL"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Communications of the ACM",
+          "zh": "《ACM 通讯》"
+        },
+        "title": {
+          "en": "Proving theorems by pattern recognition I",
+          "zh": "《通过模式识别证明定理 I》"
+        },
+        "description": {
+          "en": "Official CACM page for Wang's 1960 article, including DOI, issue, and page information.",
+          "zh": "CACM 官方页面，列出 王浩 1960 年论文的 DOI、期号与页码信息。"
+        },
+        "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+        "source": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+        "license": {
+          "en": "CACM article page; reuse rights are controlled by ACM.",
+          "zh": "《ACM 通讯》文章页面；复用权利由 ACM 条款控制。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open CACM record",
+          "zh": "打开 CACM 记录"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "Proving theorems by pattern recognition I",
+          "zh": "通过模式识别证明定理 I"
+        },
+        "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/"
+      },
+      {
+        "type": {
+          "en": "Archive",
+          "zh": "档案"
+        },
+        "label": {
+          "en": "Proving Theorems by Pattern Recognition - II",
+          "zh": "通过模式识别证明定理（二）"
+        },
+        "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/"
+      },
+      {
+        "type": {
+          "en": "Photo",
+          "zh": "照片"
+        },
+        "label": {
+          "en": "Rockefeller University Digital Commons: Wang, Hao",
+          "zh": "Rockefeller University Digital Commons: 王浩, Hao"
+        },
+        "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/"
+      }
+    ]
+  }
+}

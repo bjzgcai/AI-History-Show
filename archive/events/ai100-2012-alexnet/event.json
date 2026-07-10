@@ -1,0 +1,63 @@
+{
+  "id": "ai100-2012-alexnet",
+  "year": 2012,
+  "title": {
+    "en": "AlexNet",
+    "zh": "AlexNet"
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alex Krizhevsky",
+        "zh": "亚历克斯·克里泽夫斯基"
+      },
+      "role": {
+        "en": "AlexNet lead author",
+        "zh": "AlexNet 主要作者"
+      }
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author and advisor",
+        "zh": "共同作者与导师"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+    },
+    "workAuthors": {
+      "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
+      "zh": "亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+    },
+    "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

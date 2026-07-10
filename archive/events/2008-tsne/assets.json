@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2008-tsne-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+    "caption": {
+      "en": "Laurens van der Maaten portrait",
+      "zh": "劳伦斯·范德马滕 肖像"
+    },
+    "subcaption": {
+      "en": "Portrait from van der Maaten homepage.",
+      "zh": "来自 van der Maaten 个人主页的人物图。"
+    },
+    "sourceId": "laurens-van-der-maaten-homepage",
+    "sourceName": {
+      "en": "Laurens van der Maaten homepage",
+      "zh": "劳伦斯·范德马滕 homepage"
+    },
+    "sourceUrl": "https://lvdmaaten.github.io/",
+    "originalImageUrl": "https://lvdmaaten.github.io/images/laurens.png",
+    "rights": "Personal website image; reuse rights not stated.",
+    "usage": {
+      "en": "Historical figure / Key contributor portrait",
+      "zh": "历史人物 / 关键贡献者肖像"
+    }
+  },
+  {
+    "id": "2008-tsne-image-2",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+    "caption": {
+      "en": "Neighbor probability matching",
+      "zh": "邻域概率匹配"
+    },
+    "subcaption": {
+      "en": "Local redraw for t-SNE, based on the listed source material.",
+      "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "visualizing-data-using-t-sne",
+    "sourceName": {
+      "en": "Journal of Machine Learning Research",
+      "zh": "《机器学习研究杂志》"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  },
+  {
+    "id": "2008-tsne-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg",
+    "caption": {
+      "en": "2D cluster map",
+      "zh": "二维簇图"
+    },
+    "subcaption": {
+      "en": "Local redraw for t-SNE, based on the listed source material.",
+      "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。"
+    },
+    "sourceId": "visualizing-data-using-t-sne",
+    "sourceName": {
+      "en": "Journal of Machine Learning Research",
+      "zh": "《机器学习研究杂志》"
+    },
+    "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Supporting image / Distinct explainer graphic",
+      "zh": "辅助图片 / 独立解释图"
+    }
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2000-neural-language-model",
+  "year": 2000,
+  "title": {
+    "en": "Neural Language Model",
+    "zh": "神经语言模型"
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Lead author of the neural probabilistic language model",
+        "zh": "神经概率语言模型主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "A Neural Probabilistic Language Model",
+    "zh": "神经概率语言模型"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "A Neural Probabilistic Language Model",
+      "zh": "神经概率语言模型"
+    },
+    "workAuthors": {
+      "en": "Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
+      "zh": "约书亚·本吉奥、雷让·迪沙姆、帕斯卡尔·文森特、克里斯蒂安·让万，JMLR，2003"
+    },
+    "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

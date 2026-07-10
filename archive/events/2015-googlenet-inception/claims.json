@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2015-googlenet-inception-summary",
+    "text": {
+      "en": "GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.",
+      "zh": "GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。"
+    },
+    "sourceIds": [
+      "going-deeper-with-convolutions",
+      "torchvision-googlenet"
+    ]
+  },
+  {
+    "id": "2015-googlenet-inception-quote",
+    "text": {
+      "en": "going deeper with convolutions",
+      "zh": "用卷积走得更深"
+    },
+    "sourceIds": [
+      "going-deeper-with-convolutions"
+    ]
+  }
+]

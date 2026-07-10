@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2014-ms-coco-summary",
+    "text": {
+      "en": "MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.",
+      "zh": "MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。"
+    },
+    "sourceIds": [
+      "microsoft-coco-common-objects-in-context",
+      "coco-dataset-website"
+    ]
+  },
+  {
+    "id": "ai100-2014-ms-coco-quote",
+    "text": {
+      "en": "Common objects in context",
+      "zh": "上下文中的常见物体"
+    },
+    "sourceIds": [
+      "microsoft-coco-common-objects-in-context"
+    ]
+  }
+]

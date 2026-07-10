@@ -1,0 +1,53 @@
+{
+  "id": "ai100-2015-ddpg",
+  "year": 2015,
+  "title": {
+    "en": "DDPG",
+    "zh": "DDPG"
+  },
+  "location": {
+    "name": {
+      "en": "DeepMind",
+      "zh": "DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国伦敦"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Timothy Lillicrap",
+        "zh": "蒂莫西·利利克拉普"
+      },
+      "role": {
+        "en": "DDPG lead author",
+        "zh": "DDPG 主要作者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "Continuous control with deep reinforcement learning",
+    "zh": "使用深度强化学习进行连续控制"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "Continuous Control with Deep Reinforcement Learning",
+      "zh": "使用深度强化学习进行连续控制"
+    },
+    "workAuthors": {
+      "en": "Timothy Lillicrap et al., ICLR, 2016",
+      "zh": "蒂莫西·利利克拉普等，ICLR，2016"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1509.02971"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does NMF encourage in learned representations?",
+      "zh": "NMF 鼓励学到什么样的表示？"
+    },
+    "options": [
+      {
+        "en": "Additive nonnegative parts",
+        "zh": "可相加的非负部件"
+      },
+      {
+        "en": "Negative-only labels",
+        "zh": "只有负数标签"
+      },
+      {
+        "en": "Tree-search pruning",
+        "zh": "树搜索剪枝"
+      },
+      {
+        "en": "Token self-attention",
+        "zh": "令牌自注意力"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "NMF represents data as nonnegative basis parts combined with nonnegative activations.",
+      "zh": "NMF 将数据表示为非负基部件与非负激活的组合。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "nmf",
+      "factorization"
+    ]
+  }
+]

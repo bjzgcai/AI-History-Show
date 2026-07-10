@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2018-gpt-summary",
+    "text": {
+      "en": "Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models.",
+      "zh": "亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。"
+    },
+    "sourceIds": [
+      "improving-language-understanding-by-generative-pre-training",
+      "openai-language-unsupervised-page"
+    ]
+  },
+  {
+    "id": "ai100-2018-gpt-quote",
+    "text": {
+      "en": "Improving language understanding by generative pre-training",
+      "zh": "通过生成式预训练改进语言理解"
+    },
+    "sourceIds": [
+      "improving-language-understanding-by-generative-pre-training"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What does back-propagation send backward through a network?",
+      "zh": "反向传播把什么沿网络向后传递？"
+    },
+    "options": [
+      {
+        "en": "Error gradients for weight updates",
+        "zh": "用于权重更新的误差梯度"
+      },
+      {
+        "en": "Raw video frames only",
+        "zh": "只有原始视频帧"
+      },
+      {
+        "en": "A list of database columns",
+        "zh": "数据库列列表"
+      },
+      {
+        "en": "The final answer without training",
+        "zh": "不训练直接给最终答案"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Back-propagation uses gradients to assign credit or blame to earlier weights.",
+      "zh": "反向传播用梯度把贡献或责任分配给更早的权重。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "backpropagation",
+      "neural-networks"
+    ]
+  }
+]

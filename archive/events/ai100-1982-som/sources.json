@@ -1,0 +1,62 @@
+[
+  {
+    "id": "self-organized-formation-of-topologically-correct-feature-maps",
+    "type": {
+      "en": "Paper",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Self-organized formation of topologically correct feature maps",
+      "zh": "《拓扑正确特征映射的自组织形成》"
+    },
+    "url": "https://doi.org/10.1007/BF00337288"
+  },
+  {
+    "id": "open-som-paper-pdf",
+    "type": {
+      "en": "Paper PDF",
+      "zh": "论文 PDF"
+    },
+    "label": {
+      "en": "Open SOM paper PDF",
+      "zh": "SOM 论文开放 PDF"
+    },
+    "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf"
+  },
+  {
+    "id": "self-organizing-map-overview",
+    "type": {
+      "en": "Background",
+      "zh": "背景"
+    },
+    "label": {
+      "en": "Self-organizing map overview",
+      "zh": "自组织映射概览"
+    },
+    "url": "https://en.wikipedia.org/wiki/Self-organizing_map"
+  },
+  {
+    "id": "essentials-of-the-self-organizing-map",
+    "type": {
+      "en": "Retrospective",
+      "zh": "回顾"
+    },
+    "label": {
+      "en": "Essentials of the self-organizing map",
+      "zh": "自组织映射要点回顾"
+    },
+    "url": "https://doi.org/10.1016/j.neunet.2012.09.018"
+  },
+  {
+    "id": "wikimedia-commons",
+    "type": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "label": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Teuvo-Kohonen.jpg"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1958-lisp-image-1",
+    "kind": "image",
+    "path": "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg",
+    "caption": {
+      "en": "John McCarthy portrait",
+      "zh": "约翰·麦卡锡 肖像"
+    },
+    "subcaption": {
+      "en": "John McCarthy at Stanford, 2006",
+      "zh": "约翰·麦卡锡 于 斯坦福大学，2006 年"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg",
+    "originalImageUrl": "Not available",
+    "rights": "CC BY-SA 2.0",
+    "usage": {
+      "en": "Achievement visual material",
+      "zh": "成就视觉材料"
+    }
+  },
+  {
+    "id": "1958-lisp-image-2",
+    "kind": "image",
+    "path": "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg",
+    "caption": {
+      "en": "S-expression evaluator",
+      "zh": "S 表达式求值流程"
+    },
+    "subcaption": {
+      "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives.",
+      "zh": "根据 麦卡锡 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。"
+    },
+    "sourceId": "stanford-john-mccarthy",
+    "sourceName": {
+      "en": "Stanford / John McCarthy",
+      "zh": "斯坦福大学 / 约翰·麦卡锡"
+    },
+    "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+    "originalImageUrl": "Local original explainer",
+    "rights": "Original local explainer; source text reuse rights not stated.",
+    "usage": {
+      "en": "Supporting image / Explainer graphic",
+      "zh": "辅助说明图 / 解释性图形"
+    }
+  }
+]

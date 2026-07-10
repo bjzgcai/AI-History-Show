@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1973-prolog-summary",
+    "text": {
+      "en": "PROLOG made logic executable. Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking. The language joined theorem proving, natural-language work, and knowledge representation into a practical symbolic AI tool.",
+      "zh": "PROLOG 让逻辑变得可执行。程序员不再只写一步步过程，而是写事实与规则，再提出查询，由系统通过合一和回溯求解。它把定理证明、自然语言处理和知识表示连接成一种实用的符号 AI 工具。"
+    },
+    "sourceIds": [
+      "the-birth-of-prolog",
+      "prolog-heritage"
+    ]
+  },
+  {
+    "id": "1973-prolog-quote",
+    "text": {
+      "en": "logic programming",
+      "zh": "逻辑程序设计"
+    },
+    "sourceIds": [
+      "the-birth-of-prolog"
+    ]
+  }
+]

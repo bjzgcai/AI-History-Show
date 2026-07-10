@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1984-cyc-image-1",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
+    "caption": {
+      "en": "Douglas Lenat portrait",
+      "zh": "道格拉斯·莱纳特 人物照片"
+    },
+    "subcaption": {
+      "en": "Founder of the Cyc project.",
+      "zh": "Cyc 项目创始人。"
+    },
+    "sourceId": "wikimedia-commons",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dbl4.jpg",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Dbl4.jpg",
+    "rights": "CC BY-SA 4.0",
+    "usage": {
+      "en": "Historical figure photo",
+      "zh": "历史人物照片"
+    }
+  },
+  {
+    "id": "1984-cyc-image-2",
+    "kind": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+    "caption": {
+      "en": "Cyc projects logos",
+      "zh": "Cyc 项目标识"
+    },
+    "subcaption": {
+      "en": "Public image of Cyc project logos.",
+      "zh": "Cyc 项目标识公开图片。"
+    },
+    "sourceId": "cyc-projects-logo-image",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+    "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+    "rights": "CC BY-SA 4.0",
+    "usage": {
+      "en": "Project image",
+      "zh": "项目图片"
+    }
+  },
+  {
+    "id": "1984-cyc-image-3",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg",
+    "caption": {
+      "en": "Cyc microtheories",
+      "zh": "Cyc 微理论"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on Building Large Knowledge-Based Systems.",
+      "zh": "依据 构建大型知识系统 制作的本地解释图。"
+    },
+    "sourceId": "building-large-knowledge-based-systems",
+    "sourceName": {
+      "en": "Building Large Knowledge-Based Systems",
+      "zh": "构建大型知识系统"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/book/10.5555/70571",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Knowledge-base diagram",
+      "zh": "知识库图"
+    }
+  },
+  {
+    "id": "1984-cyc-image-4",
+    "kind": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
+    "caption": {
+      "en": "Common-sense rule frame",
+      "zh": "常识规则框架"
+    },
+    "subcaption": {
+      "en": "Original local explainer based on The Evolution of CycL.",
+      "zh": "依据 CycL 的演化 制作的本地解释图。"
+    },
+    "sourceId": "the-evolution-of-cycl",
+    "sourceName": {
+      "en": "The Evolution of CycL",
+      "zh": "CycL 的演化"
+    },
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/122296.122308",
+    "originalImageUrl": "Local original redraw",
+    "rights": "Original local SVG redraw; source figures are not copied.",
+    "usage": {
+      "en": "Rule diagram",
+      "zh": "规则图"
+    }
+  }
+]

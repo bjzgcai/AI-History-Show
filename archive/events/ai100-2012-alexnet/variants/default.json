@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.</p>",
+    "zh": "<p>AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.",
+        "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A deep CNN transforms pixels through learned convolutional layers into object classes. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research.",
+        "zh": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "GPU-trained deep convolutional network",
+      "zh": "GPU 训练的深度卷积网络"
+    },
+    "artifact": {
+      "en": "ImageNet-winning CNN",
+      "zh": "赢得 ImageNet 的卷积网络"
+    },
+    "material": {
+      "en": "NeurIPS paper",
+      "zh": "NeurIPS 论文"
+    },
+    "demo": {
+      "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
+      "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+    },
+    "visual": "alexnet",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "GPU Scale",
+          "zh": "GPU 规模化"
+        },
+        "text": {
+          "en": "Parallel GPU training made larger CNNs practical.",
+          "zh": "并行 GPU 训练让更大的 CNN 变得可行。"
+        }
+      },
+      {
+        "label": {
+          "en": "ImageNet Breakthrough",
+          "zh": "ImageNet 突破"
+        },
+        "text": {
+          "en": "The model sharply reduced classification error on ILSVRC.",
+          "zh": "该模型大幅降低了 ILSVRC 分类错误率。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "ImageNet",
+        "zh": "ImageNet"
+      },
+      {
+        "en": "VGG",
+        "zh": "VGG"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Images",
+        "zh": "图像"
+      },
+      {
+        "en": "Deep CNN",
+        "zh": "深度 CNN"
+      },
+      {
+        "en": "Classes",
+        "zh": "类别"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "NeurIPS",
+          "zh": "NeurIPS"
+        },
+        "title": {
+          "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+        },
+        "description": {
+          "en": "Paper record for the AlexNet breakthrough.",
+          "zh": "AlexNet 突破性工作的论文记录。"
+        },
+        "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+        "source": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "label": {
+          "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "zh": "《用深度卷积神经网络进行 ImageNet 分类》"
+        },
+        "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+      },
+      {
+        "type": {
+          "en": "Paper PDF",
+          "zh": "论文 PDF"
+        },
+        "label": {
+          "en": "NeurIPS full paper PDF",
+          "zh": "NeurIPS 完整论文 PDF"
+        },
+        "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "ImageNet Large Scale Visual Recognition Challenge",
+          "zh": "ImageNet 大规模视觉识别挑战赛"
+        },
+        "url": "https://www.image-net.org/challenges/LSVRC/index.php"
+      },
+      {
+        "type": {
+          "en": "Context",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "AlexNet overview",
+          "zh": "AlexNet 概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/AlexNet"
+      }
+    ],
+    "demoImage": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NeurIPS paper",
+          "zh": "NeurIPS 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
+          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+        }
+      }
+    ]
+  }
+}

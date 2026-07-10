@@ -1,0 +1,63 @@
+{
+  "id": "1973-prolog",
+  "year": "1973",
+  "title": {
+    "en": "PROLOG",
+    "zh": "PROLOG"
+  },
+  "location": {
+    "name": {
+      "en": "Aix-Marseille University and University of Edinburgh",
+      "zh": "艾克斯-马赛大学与爱丁堡大学"
+    },
+    "country": {
+      "en": "Marseille, France and Edinburgh, United Kingdom",
+      "zh": "法国马赛与英国爱丁堡"
+    },
+    "coordinates": [
+      43.3047,
+      5.3771
+    ]
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alain Colmerauer",
+        "zh": "阿兰·科尔梅罗尔"
+      },
+      "role": {
+        "en": "Creator of the first Prolog implementation",
+        "zh": "早期 Prolog 实现创建者"
+      }
+    },
+    {
+      "name": {
+        "en": "Robert Kowalski",
+        "zh": "罗伯特·科瓦尔斯基"
+      },
+      "role": {
+        "en": "Logic programming theorist",
+        "zh": "逻辑程序设计理论贡献者"
+      }
+    }
+  ],
+  "quoteText": {
+    "en": "logic programming",
+    "zh": "逻辑程序设计"
+  },
+  "quoteMeta": {
+    "workTitle": {
+      "en": "The Birth of Prolog",
+      "zh": "Prolog 的诞生"
+    },
+    "workAuthors": {
+      "en": "Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+      "zh": "阿兰·科尔梅罗尔、菲利普·鲁塞尔, 《ACM SIGPLAN 通讯》, 1993"
+    },
+    "sourceUrl": "https://doi.org/10.1145/155360.155362"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Language / PROLOG",
+    "zh": "BenchCouncil AI100：语言 / PROLOG"
+  }
+}

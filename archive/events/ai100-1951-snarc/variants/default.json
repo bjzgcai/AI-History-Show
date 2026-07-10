@@ -1,0 +1,218 @@
+{
+  "description": {
+    "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>",
+    "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>"
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.",
+        "zh": "SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A simulated rat receives reinforcement and changes path preferences through a maze. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat SNARC as historically important early neural hardware, even though it was not a scalable general AI system. Its long-term legacy is the early demonstration that learning, reward, and neural-style machinery could be combined in a physical device.",
+        "zh": "专家通常把 SNARC 视为具有历史意义的早期神经硬件，尽管它并不是可扩展的通用 AI 系统。它的长期影响在于很早就展示了学习、奖励和神经式机器可以结合到一个物理装置中。"
+      }
+    }
+  ],
+  "videos": [],
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Analog reinforcement machine",
+      "zh": "模拟强化学习机器"
+    },
+    "artifact": {
+      "en": "Early neural learning hardware",
+      "zh": "早期神经学习硬件"
+    },
+    "material": {
+      "en": "SNARC historical documentation",
+      "zh": "SNARC 历史资料"
+    },
+    "demo": {
+      "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
+      "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+    },
+    "visual": "snarc",
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Analog Neurons",
+          "zh": "模拟神经元"
+        },
+        "text": {
+          "en": "Hardware circuits approximated neural behavior before digital deep learning.",
+          "zh": "在数字深度学习之前，硬件电路用来近似神经行为。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reinforcement",
+          "zh": "强化"
+        },
+        "text": {
+          "en": "Reward feedback adjusted the machine behavior over trials.",
+          "zh": "奖励反馈在多次试验中调整机器行为。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      {
+        "en": "Perceptron",
+        "zh": "感知机"
+      },
+      {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Maze state",
+        "zh": "迷宫状态"
+      },
+      {
+        "en": "Reward signal",
+        "zh": "奖励信号"
+      },
+      {
+        "en": "Adjusted path",
+        "zh": "调整后的路径"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "History Computer",
+          "zh": "History Computer"
+        },
+        "title": {
+          "en": "SNARC",
+          "zh": "SNARC"
+        },
+        "description": {
+          "en": "Historical article on the stochastic neural analog reinforcement calculator.",
+          "zh": "关于随机神经模拟强化计算机的历史文章。"
+        },
+        "url": "https://history-computer.com/snarc/",
+        "source": "https://history-computer.com/snarc/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "type": {
+          "en": "Archive",
+          "zh": "档案"
+        },
+        "label": {
+          "en": "SNARC history overview",
+          "zh": "SNARC 历史概览"
+        },
+        "url": "https://history-computer.com/snarc/"
+      },
+      {
+        "type": {
+          "en": "Background",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "History of AI SNARC article",
+          "zh": "History of AI 的 SNARC 文章"
+        },
+        "url": "https://historyof.ai/snarc/"
+      },
+      {
+        "type": {
+          "en": "Context",
+          "zh": "背景"
+        },
+        "label": {
+          "en": "Stochastic Neural Analog Reinforcement Calculator overview",
+          "zh": "随机神经模拟强化计算机概览"
+        },
+        "url": "https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator"
+      },
+      {
+        "type": {
+          "en": "Retrospective",
+          "zh": "回顾"
+        },
+        "label": {
+          "en": "History of Information SNARC entry",
+          "zh": "History of Information 的 SNARC 条目"
+        },
+        "url": "https://www.historyofinformation.com/detail.php?id=3884"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "SNARC historical documentation",
+          "zh": "SNARC 历史资料"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
+          "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ai100-2015-dcgan-summary",
+    "text": {
+      "en": "DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.",
+      "zh": "DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。"
+    },
+    "sourceIds": [
+      "unsupervised-representation-learning-with-deep-convolutional-gans",
+      "pytorch-dcgan-tutorial"
+    ]
+  },
+  {
+    "id": "ai100-2015-dcgan-quote",
+    "text": {
+      "en": "Unsupervised representation learning with deep convolutional generative adversarial networks",
+      "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+    },
+    "sourceIds": [
+      "unsupervised-representation-learning-with-deep-convolutional-gans"
+    ]
+  }
+]

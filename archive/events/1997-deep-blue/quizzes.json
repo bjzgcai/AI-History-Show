@@ -1,0 +1,41 @@
+[
+  {
+    "question": {
+      "en": "What was Deep Blue especially built to do?",
+      "zh": "Deep Blue 尤其被构建来做什么？"
+    },
+    "options": [
+      {
+        "en": "Search and evaluate chess positions at massive scale",
+        "zh": "大规模搜索并评估国际象棋局面"
+      },
+      {
+        "en": "Generate word embeddings",
+        "zh": "生成词嵌入"
+      },
+      {
+        "en": "Cluster image pixels with t-SNE",
+        "zh": "用 t-SNE 聚类图像像素"
+      },
+      {
+        "en": "Infer Bayesian network structure from text only",
+        "zh": "只从文本推断贝叶斯网络结构"
+      }
+    ],
+    "answerIndex": 0,
+    "explanation": {
+      "en": "Deep Blue combined alpha-beta search, handcrafted chess evaluation, and specialized hardware.",
+      "zh": "Deep Blue 结合了 alpha-beta 搜索、手工棋局评估和专用硬件。"
+    },
+    "source": {
+      "label": {
+        "en": "BenchCouncil AI100 achievement notes",
+        "zh": "BenchCouncil AI100 成就内容"
+      }
+    },
+    "tags": [
+      "game-ai",
+      "search"
+    ]
+  }
+]

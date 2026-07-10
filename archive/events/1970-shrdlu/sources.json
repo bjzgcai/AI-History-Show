@@ -1,0 +1,38 @@
+[
+  {
+    "id": "procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+    "type": {
+      "en": "Thesis",
+      "zh": "论文"
+    },
+    "label": {
+      "en": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language",
+      "zh": "在理解自然语言的计算机程序中把过程作为数据表示"
+    },
+    "url": "https://dspace.mit.edu/handle/1721.1/7095"
+  },
+  {
+    "id": "terry-winograd-stanford-computer-science",
+    "type": {
+      "en": "Profile",
+      "zh": "人物资料"
+    },
+    "label": {
+      "en": "Terry Winograd, Stanford Computer Science",
+      "zh": "特里·维诺格拉德, 斯坦福大学 Computer 《科学》"
+    },
+    "url": "https://www.cs.stanford.edu/people/terry-winograd"
+  },
+  {
+    "id": "terry-winograd-oral-history-cbi",
+    "type": {
+      "en": "Oral history",
+      "zh": "口述史"
+    },
+    "label": {
+      "en": "Terry Winograd oral history, CBI",
+      "zh": "特里·维诺格拉德 oral history, CBI"
+    },
+    "url": "https://hdl.handle.net/11299/107717"
+  }
+]

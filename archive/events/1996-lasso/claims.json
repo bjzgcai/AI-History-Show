@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1996-lasso-summary",
+    "text": {
+      "en": "The lasso gave statisticians and machine-learning practitioners a clean way to build sparse linear models. By penalizing the absolute size of coefficients, it both regularizes predictions and performs variable selection. Its ideas now appear in sparse modeling, high-dimensional statistics, compressed sensing, bioinformatics, and interpretable ML.",
+      "zh": "Lasso 为统计学家和机器学习实践者提供了一种构建稀疏线性模型的清晰方法。通过惩罚系数绝对值，它既正则化预测，又完成变量选择。其思想后来出现在稀疏建模、高维统计、压缩感知、生物信息学和可解释机器学习中。"
+    },
+    "sourceIds": [
+      "regression-shrinkage-and-selection-via-the-lasso",
+      "scikit-learn-lasso"
+    ]
+  },
+  {
+    "id": "1996-lasso-quote",
+    "text": {
+      "en": "regression shrinkage and selection",
+      "zh": "回归收缩与选择"
+    },
+    "sourceIds": [
+      "regression-shrinkage-and-selection-via-the-lasso"
+    ]
+  }
+]
