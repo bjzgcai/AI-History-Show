@@ -2,7 +2,7 @@
   {
     "id": "asset-1960-davis-putnam-dpll-hilary-putnam",
     "type": "image",
-    "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+    "path": "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
     "role": "source-card",
     "caption": {
       "zh": "希拉里·普特南 肖像",
@@ -28,7 +28,7 @@
   {
     "id": "asset-1960-davis-putnam-dpll-sat-search",
     "type": "svg",
-    "path": "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg",
+    "path": "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg",
     "role": "architecture-explainer",
     "caption": {
       "zh": "Davis-Putnam 与 DPLL SAT 搜索",

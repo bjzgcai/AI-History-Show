@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive presentation preview（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-10 08:44
+// 生成时间: 2026-07-13 06:44
 // 数据来源: milestones-data.js + archive/events/* forced presentation overlay
 // 用途: 本地预览 archive 数据直接驱动主展陈页；正常展示仍使用 milestones-data.js。
 // Archive overlay: applied 134, skipped 0, errors 0
@@ -11125,11 +11125,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg",
-        "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png"
+        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
+        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png"
       ],
       "imageMeta": {
-        "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg": {
+        "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
           "caption": {
             "en": "Alan Turing portrait",
             "zh": "艾伦·图灵 肖像"
@@ -11147,7 +11147,7 @@ const milestones = [
           "originalImageUrl": "Not available",
           "license": "Public domain"
         },
-        "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png": {
+        "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
           "caption": {
             "en": "Turing test diagram",
             "zh": "图灵测试结构图"
@@ -11543,7 +11543,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg": {
+      "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg": {
         "caption": {
           "zh": "艾伦·图灵 肖像",
           "en": "Alan Turing portrait"
@@ -11563,7 +11563,7 @@ const milestones = [
         "role": "source-card",
         "type": "image"
       },
-      "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png": {
+      "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png": {
         "caption": {
           "zh": "图灵测试结构图",
           "en": "Turing test diagram"
@@ -11706,11 +11706,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg",
-        "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg"
+        "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
+        "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg": {
+        "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg": {
           "caption": {
             "en": "John McCarthy portrait",
             "zh": "约翰·麦卡锡 肖像"
@@ -11728,7 +11728,7 @@ const milestones = [
           "originalImageUrl": "Not available",
           "license": "CC BY-SA 2.0"
         },
-        "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg": {
+        "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
           "caption": {
             "en": "S-expression evaluator",
             "zh": "S 表达式求值流程"
@@ -12072,7 +12072,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg": {
+      "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg": {
         "caption": {
           "zh": "约翰·麦卡锡 肖像",
           "en": "John McCarthy portrait"
@@ -12092,7 +12092,7 @@ const milestones = [
         "role": "source-card",
         "type": "image"
       },
-      "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg": {
+      "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg": {
         "caption": {
           "zh": "S 表达式求值流程",
           "en": "S-expression evaluator"
@@ -12262,11 +12262,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
-        "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg"
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
           "caption": {
             "en": "Lee Sedol portrait",
             "zh": "李世石肖像"
@@ -12284,7 +12284,7 @@ const milestones = [
           "originalImageUrl": "Not available",
           "license": "CC BY 2.0"
         },
-        "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
           "caption": {
             "en": "Policy-value-search explainer",
             "zh": "策略-价值-搜索解释图"
@@ -12641,7 +12641,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
           "zh": "AlphaGo 与李世石比赛资料图",
           "en": "AlphaGo and Lee Sedol match reference image"
@@ -12661,7 +12661,7 @@ const milestones = [
         "role": "team-photo",
         "type": "image"
       },
-      "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
+      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
           "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
           "en": "AlphaGo policy, value, and search workflow explainer"
@@ -12817,11 +12817,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg",
-        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg"
+        "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg",
+        "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg": {
+        "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg": {
           "caption": {
             "en": "Stephen A. Cook portrait",
             "zh": "斯蒂芬·A·库克 肖像"
@@ -12843,7 +12843,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg": {
+        "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg": {
           "caption": {
             "en": "NP-completeness reduction map",
             "zh": "NP 完全性归约地图"
@@ -13202,7 +13202,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg": {
+      "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg": {
         "caption": {
           "zh": "斯蒂芬·A·库克 肖像",
           "en": "Stephen A. Cook portrait"
@@ -13222,7 +13222,7 @@ const milestones = [
         "role": "source-card",
         "type": "image"
       },
-      "research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg": {
+      "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg": {
         "caption": {
           "zh": "NP 完全性归约地图",
           "en": "NP-completeness reduction map"
@@ -13378,11 +13378,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
-        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg"
+        "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
+        "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png": {
+        "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png": {
           "caption": {
             "en": "Vladimir Vapnik portrait",
             "zh": "弗拉基米尔·瓦普尼克 肖像"
@@ -13407,7 +13407,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg": {
+        "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg": {
           "caption": {
             "en": "VC theory generalization diagram",
             "zh": "VC 理论泛化示意图"
@@ -13763,7 +13763,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png": {
+      "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png": {
         "caption": {
           "zh": "弗拉基米尔·瓦普尼克 肖像",
           "en": "Vladimir Vapnik portrait"
@@ -13783,7 +13783,7 @@ const milestones = [
         "role": "source-card",
         "type": "image"
       },
-      "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg": {
+      "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg": {
         "caption": {
           "zh": "VC 理论泛化示意图",
           "en": "VC theory generalization diagram"
@@ -13952,11 +13952,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
-        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg"
+        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
+        "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg": {
+        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg": {
           "caption": {
             "en": "Herbert A. Simon portrait",
             "zh": "赫伯特·A·西蒙 肖像"
@@ -13978,7 +13978,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg": {
+        "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg": {
           "caption": {
             "en": "Logic Theorist proof search",
             "zh": "Logic Theorist 证明搜索"
@@ -14337,7 +14337,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg": {
+      "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg": {
         "caption": {
           "zh": "赫伯特·A·西蒙 肖像",
           "en": "Herbert A. Simon portrait"
@@ -14357,7 +14357,7 @@ const milestones = [
         "role": "source-card",
         "type": "image"
       },
-      "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg": {
+      "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg": {
         "caption": {
           "zh": "Logic Theorist 证明搜索",
           "en": "Logic Theorist proof search"
@@ -14500,11 +14500,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
-        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg"
+        "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
+        "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg": {
+        "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg": {
           "caption": {
             "en": "Hao Wang portrait",
             "zh": "王浩肖像"
@@ -14523,7 +14523,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg": {
+        "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg": {
           "caption": {
             "en": "Wang algorithm pattern proof",
             "zh": "王氏算法模式证明"
@@ -14885,7 +14885,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg": {
+      "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg": {
         "caption": {
           "zh": "王浩肖像",
           "en": "Hao Wang portrait"
@@ -14905,7 +14905,7 @@ const milestones = [
         "role": "source-card",
         "type": "image"
       },
-      "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg": {
+      "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg": {
         "caption": {
           "zh": "王氏算法模式证明",
           "en": "Wang algorithm pattern proof"
@@ -15087,11 +15087,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
-        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg"
+        "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
+        "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
+        "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
           "caption": {
             "en": "Hilary Putnam portrait",
             "zh": "希拉里·普特南 肖像"
@@ -15113,7 +15113,7 @@ const milestones = [
             "zh": "人物肖像"
           }
         },
-        "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg": {
+        "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg": {
           "caption": {
             "en": "Davis-Putnam and DPLL SAT search",
             "zh": "Davis-Putnam 与 DPLL SAT 搜索"
@@ -15473,7 +15473,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
+      "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg": {
         "caption": {
           "zh": "希拉里·普特南 肖像",
           "en": "Hilary Putnam portrait"
@@ -15493,7 +15493,7 @@ const milestones = [
         "role": "source-card",
         "type": "image"
       },
-      "research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg": {
+      "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg": {
         "caption": {
           "zh": "Davis-Putnam 与 DPLL SAT 搜索",
           "en": "Davis-Putnam and DPLL SAT search"
@@ -80133,11 +80133,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
-        "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg"
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
       ],
       "imageMeta": {
-        "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
           "caption": {
             "en": "Lee Sedol portrait",
             "zh": "李世石肖像"
@@ -80155,7 +80155,7 @@ const milestones = [
           "originalImageUrl": "Not available",
           "license": "CC BY 2.0"
         },
-        "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
           "caption": {
             "en": "Policy-value-search explainer",
             "zh": "策略-价值-搜索解释图"
@@ -80296,7 +80296,7 @@ const milestones = [
           },
           "url": "resources/videos/game-evolution/2016-alphago.mp4",
           "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
           "sourceSgf": "examples/sgf/sample-go-game.sgf",
           "generator": "scripts/sgf_to_video.py",
           "duration": {
@@ -80559,7 +80559,7 @@ const milestones = [
     "archivePresentationMode": "preserve-legacy",
     "sourceKind": "archive+legacy",
     "imageMeta": {
-      "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg": {
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
           "zh": "AlphaGo 与李世石比赛资料图",
           "en": "AlphaGo and Lee Sedol match reference image"
@@ -80579,7 +80579,7 @@ const milestones = [
         "role": "team-photo",
         "type": "image"
       },
-      "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg": {
+      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
           "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
           "en": "AlphaGo policy, value, and search workflow explainer"

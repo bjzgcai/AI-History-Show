@@ -2,7 +2,7 @@
   {
     "id": "asset-alphago-lee-sedol",
     "type": "image",
-    "path": "research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg",
+    "path": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
     "role": "team-photo",
     "caption": {
       "zh": "AlphaGo 与李世石比赛资料图",
@@ -25,7 +25,7 @@
   {
     "id": "asset-alphago-policy-value-search",
     "type": "svg",
-    "path": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
+    "path": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
     "role": "architecture-explainer",
     "caption": {
       "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",

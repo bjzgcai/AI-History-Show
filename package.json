@@ -21,6 +21,7 @@
         "review:archive": "node scripts/generate-archive-review.js",
         "preview:archive-data": "node scripts/generate-archive-preview-data.js",
         "diff:archive-preview": "node scripts/diff-archive-preview-data.js",
+        "audit:legacy-data": "node scripts/audit-legacy-data.js",
         "migrate:ai100-batch": "node scripts/migrate-ai100-batch.js",
         "migrate:archive": "node scripts/migrate-archive-events.js",
         "map:archive-fusions": "node scripts/map-archive-fusions.js",

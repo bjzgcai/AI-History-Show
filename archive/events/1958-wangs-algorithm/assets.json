@@ -2,7 +2,7 @@
   {
     "id": "asset-1958-wangs-algorithm-hao-wang",
     "type": "image",
-    "path": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg",
+    "path": "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
     "role": "source-card",
     "caption": {
       "zh": "王浩肖像",
@@ -28,7 +28,7 @@
   {
     "id": "asset-1958-wangs-algorithm-pattern-proof",
     "type": "svg",
-    "path": "research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg",
+    "path": "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg",
     "role": "architecture-explainer",
     "caption": {
       "zh": "王氏算法模式证明",

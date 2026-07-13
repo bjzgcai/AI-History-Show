@@ -1,6 +1,10 @@
 // Shared content fusions for events that appear in both the deep-learning
 // storyline and the BenchCouncil AI100 storyline.
 //
+// Archive migration note:
+// This is transition logic. The archive model should eventually replace these
+// fusions with one canonical event and multiple storyline variants.
+//
 // The generated milestones should present the same event content regardless of
 // the entry point. Keep sources/key concepts/visual modules from AI100, keep
 // videos from the deep-learning chapter when available, and use these fused

@@ -2,7 +2,7 @@
   {
     "id": "asset-1958-lisp-john-mccarthy",
     "type": "image",
-    "path": "research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg",
+    "path": "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
     "role": "source-card",
     "caption": {
       "zh": "约翰·麦卡锡 肖像",
@@ -28,7 +28,7 @@
   {
     "id": "asset-1958-lisp-eval-flow",
     "type": "svg",
-    "path": "research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg",
+    "path": "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg",
     "role": "architecture-explainer",
     "caption": {
       "zh": "S 表达式求值流程",

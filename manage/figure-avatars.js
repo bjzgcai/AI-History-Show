@@ -1,6 +1,10 @@
 // Canonical avatar registry for figures appearing in chapter data.
 // Fill in `avatar` with a local image path once a reliable portrait is ready.
 // `wikipediaTitle` is a suggested lookup key for future scripted collection.
+//
+// Archive migration note:
+// This remains a display helper registry until archive has a dedicated
+// figure/person registry with asset and rights metadata.
 
 /* eslint-disable */
 module.exports = {

@@ -1,5 +1,9 @@
 // Per-event asset selection for fused events.
 //
+// Archive migration note:
+// This is transition curation for legacy fused events. The long-term target is
+// variant assetIds ordering in archive/events/*/variants/*.json.
+//
 // Keep this file focused on images/media curation. The narrative fusion itself
 // lives in event-fusions.js.
 //
