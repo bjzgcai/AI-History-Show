@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-06 07:46
+// 生成时间: 2026-07-13 08:23
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -48657,6 +48657,666 @@ const milestones = [
         ]
       }
     ]
+  },
+  {
+    "id": "milestone-1920-rur-robots",
+    "year": 1920,
+    "category": {
+      "en": "Humanistic & Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "title": {
+      "en": "R.U.R. and the Birth of the Robot",
+      "zh": "《罗素姆的万能机器人》与“机器人”的诞生"
+    },
+    "subtitle": {
+      "en": "Sci-Fi Prophecy, Hype and AI Winters",
+      "zh": "科幻预言、技术狂热与 AI 寒冬"
+    },
+    "location": {
+      "name": {
+        "en": "Prague publishing and theatre culture",
+        "zh": "布拉格出版与戏剧文化圈"
+      },
+      "country": {
+        "en": "Czechia",
+        "zh": "捷克"
+      },
+      "coordinates": [
+        50.0755,
+        14.4378
+      ]
+    },
+    "description": {
+      "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility.",
+      "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Karel Capek",
+          "zh": "卡雷尔·恰佩克"
+        },
+        "role": {
+          "en": "Playwright of R.U.R.",
+          "zh": "《罗素姆的万能机器人》作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "R.U.R. appeared amid early twentieth-century industrialization, when factories, mass labor and mechanized production were reshaping social imagination. The play matters because it made artificial workers emotionally legible to the public long before technical AI existed.",
+          "zh": "《罗素姆的万能机器人》出现在二十世纪早期工业化语境中，当时工厂、规模化劳动与机械化生产正在重塑社会想象。它的重要性在于，在技术意义上的 AI 尚未出现之前，就让公众能够用情绪化方式理解“人工劳动者”。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The central drama is not a technical malfunction but a social reversal: manufactured laborers become agents with collective force. That makes the work a useful starting point for connecting AI history to labor, power and responsibility.",
+          "zh": "它的核心戏剧冲突不是技术故障，而是社会关系倒转：被制造的劳工变成具有集体力量的行动者。因此它很适合作为 AI 历史与劳动、权力、责任之间联系的起点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts in AI history and science-fiction studies generally treat R.U.R. as a foundational cultural reference for machine autonomy. Its legacy is not that it predicted a specific technology, but that it gave later generations a vocabulary for fearing and debating artificial agents.",
+          "zh": "AI 史与科幻研究者通常把《罗素姆的万能机器人》视为机器自主性想象的基础文化参照。它的遗产并不是预测了某项具体技术，而是给后来的世代提供了恐惧与讨论人工行动者的词汇。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
+          "caption": {
+            "en": "R.U.R. labor-revolt explainer",
+            "zh": "《R.U.R.》劳工反叛解释图"
+          },
+          "subcaption": {
+            "en": "Original exhibition diagram based on archive sources",
+            "zh": "基于档案来源重绘的原创展览图"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "license": {
+            "en": "Original redrawn explainer; reference links only.",
+            "zh": "原创重绘解释图；来源仅作参考链接。"
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    },
+    "sentiment": "dystopia",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Fiction concept",
+          "zh": "科幻想象"
+        },
+        "term": {
+          "en": "Artificial worker rebellion",
+          "zh": "人工劳工反叛"
+        },
+        "modernTerm": {
+          "en": "Automation anxiety and labor displacement",
+          "zh": "自动化焦虑与劳动替代"
+        }
+      }
+    ],
+    "branchSummary": {
+      "en": "Science fiction turned artificial labor into a public anxiety about work, obedience and creator responsibility.",
+      "zh": "科幻把“人工劳工”变成公共焦虑：机器不只是工具，也会改变劳动、服从与责任。"
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "A science-fiction play turned artificial labor into a public cultural symbol before AI existed as a research field.",
+        "zh": "这部科幻剧在 AI 成为研究学科之前，就把人工劳工变成了公共文化符号。"
+      },
+      "how": {
+        "en": "The play frames machines through work, ownership, obedience and revolt rather than through algorithms.",
+        "zh": "它不是用算法解释机器，而是通过劳动、所有权、服从与反叛来组织机器想象。"
+      },
+      "why": {
+        "en": "Later AI fears often reuse this structure: useful systems become social actors once they change labor and power relations.",
+        "zh": "后来的 AI 恐惧常复用这一结构：当有用系统改变劳动与权力关系时，它们就不再只是工具。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Dystopian prophecy",
+        "zh": "反乌托邦预言"
+      },
+      "method": {
+        "en": "Stage fiction as social warning",
+        "zh": "以舞台科幻发出社会预警"
+      },
+      "artifact": {
+        "en": "Play text and archive scans",
+        "zh": "剧本文本与档案扫描"
+      },
+      "material": {
+        "en": "Project Gutenberg text and Internet Archive scan",
+        "zh": "Project Gutenberg 文本与 Internet Archive 扫描件"
+      },
+      "demo": {
+        "en": "Artificial labor becomes an emotional template for later AI anxiety",
+        "zh": "人工劳工成为后来 AI 焦虑的情绪模板"
+      },
+      "visual": "humanistic",
+      "demoImage": "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg",
+      "sources": [
+        {
+          "label": {
+            "en": "Project Gutenberg R.U.R. text",
+            "zh": "Project Gutenberg《R.U.R.》文本"
+          },
+          "type": {
+            "en": "Archive text",
+            "zh": "档案文本"
+          },
+          "url": "https://www.gutenberg.org/ebooks/13083"
+        },
+        {
+          "label": {
+            "en": "1920 Czech edition scan",
+            "zh": "1920 年捷克语版本扫描"
+          },
+          "type": {
+            "en": "Archive scan",
+            "zh": "档案扫描"
+          },
+          "url": "https://archive.org/details/rurrossumsuniver00apekuoft"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-1965-simon-ai-prediction",
+    "year": 1965,
+    "category": {
+      "en": "Humanistic & Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "title": {
+      "en": "Simon's Twenty-Year AI Prediction",
+      "zh": "西蒙的二十年 AI 预言"
+    },
+    "subtitle": {
+      "en": "Sci-Fi Prophecy, Hype and AI Winters",
+      "zh": "科幻预言、技术狂热与 AI 寒冬"
+    },
+    "location": {
+      "name": {
+        "en": "Carnegie Institute of Technology",
+        "zh": "卡内基理工学院"
+      },
+      "country": {
+        "en": "PA, United States",
+        "zh": "美国, 宾夕法尼亚州"
+      },
+      "coordinates": [
+        40.4433,
+        -79.9436
+      ]
+    },
+    "description": {
+      "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations.",
+      "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Herbert A. Simon",
+          "zh": "赫伯特·A·西蒙"
+        },
+        "role": {
+          "en": "AI pioneer and author of The Shape of Automation",
+          "zh": "AI 先驱，《自动化的形状》作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "By the mid-1960s, symbolic AI had produced impressive demonstrations in theorem proving, game playing and problem solving. Simon's prediction is important because it shows how these bounded successes could be translated into public confidence about machines replacing broad human work.",
+          "zh": "到 1960 年代中期，符号主义 AI 已经在定理证明、游戏与问题求解中给出了令人印象深刻的演示。西蒙的预言之所以重要，是因为它展示了这些边界清晰的成功如何被转译成关于机器替代广泛人类工作的公共信心。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The emotional mechanism is extrapolation: if reasoning can be formalized in one domain, perhaps all work will soon be formalized. That leap made early AI feel historically inevitable even when compute, data and real-world robustness were still fragile.",
+          "zh": "这里的情绪机制是外推：如果一个领域里的推理可以被形式化，也许所有工作很快都可以被形式化。这种跳跃让早期 AI 显得像历史必然，尽管算力、数据与真实世界鲁棒性仍然薄弱。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the prediction as a classic example of AI over-optimism rather than as a precise technical claim. Its legacy is a warning that public timelines can become part of the technology itself by shaping funding, media attention and later backlash.",
+          "zh": "专家通常把这一预言视为 AI 过度乐观的经典案例，而不是精确的技术判断。它的长期影响在于提醒我们：公共时间表本身会塑造技术，因为它会影响资金、媒体注意力以及随后的反弹。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
+          "caption": {
+            "en": "Hype curve explainer",
+            "zh": "狂热曲线解释图"
+          },
+          "subcaption": {
+            "en": "Original diagram for early AI over-optimism",
+            "zh": "为早期 AI 过度乐观重绘的原创图"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "license": {
+            "en": "Original redrawn explainer; reference links only.",
+            "zh": "原创重绘解释图；来源仅作参考链接。"
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    },
+    "sentiment": "hype",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Fiction-to-reality pressure",
+          "zh": "想象到现实的压力"
+        },
+        "term": {
+          "en": "Machine can do any human work",
+          "zh": "机器能完成任何人类工作"
+        },
+        "modernTerm": {
+          "en": "AI capability forecasting and benchmark overgeneralization",
+          "zh": "AI 能力预测与基准泛化误读"
+        }
+      }
+    ],
+    "branchSummary": {
+      "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high.",
+      "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。"
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "The prediction marks the moment when laboratory success was projected into a general promise about human work.",
+        "zh": "这个预言标志着实验室成功被投射成关于人类工作的总体承诺。"
+      },
+      "how": {
+        "en": "Symbolic AI made reasoning look programmable, so researchers and funders could imagine fast progress from toy domains to broad competence.",
+        "zh": "符号主义 AI 让推理看起来可以被编程，因此研究者与资助方很容易想象从玩具领域快速扩展到通用能力。"
+      },
+      "why": {
+        "en": "The gap between promise and delivery helped create the emotional conditions for later disappointment and funding retrenchment.",
+        "zh": "承诺与兑现之间的落差，为后来的失望情绪和资助收缩制造了情绪条件。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "Over-optimism",
+        "zh": "过度狂热"
+      },
+      "method": {
+        "en": "Forecasting from early symbolic AI success",
+        "zh": "从早期符号主义成功外推未来"
+      },
+      "artifact": {
+        "en": "Automation book metadata and AI-history references",
+        "zh": "自动化著作元数据与 AI 史参考"
+      },
+      "material": {
+        "en": "Open Library metadata and secondary AI history",
+        "zh": "Open Library 元数据与二手 AI 史资料"
+      },
+      "demo": {
+        "en": "A rising promise curve turns benchmark confidence into public hype",
+        "zh": "上升的承诺曲线把基准信心转化为公众狂热"
+      },
+      "visual": "humanistic",
+      "demoImage": "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg",
+      "sources": [
+        {
+          "label": {
+            "en": "Open Library book metadata",
+            "zh": "Open Library 图书元数据"
+          },
+          "type": {
+            "en": "Book metadata",
+            "zh": "图书元数据"
+          },
+          "url": "https://openlibrary.org/works/OL1205034W"
+        },
+        {
+          "label": {
+            "en": "Progress in artificial intelligence overview",
+            "zh": "人工智能进展概览"
+          },
+          "type": {
+            "en": "Secondary history",
+            "zh": "二手史料"
+          },
+          "url": "https://en.wikipedia.org/wiki/Progress_in_artificial_intelligence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-1973-lighthill-report",
+    "year": 1973,
+    "category": {
+      "en": "Humanistic & Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "title": {
+      "en": "The Lighthill Report and the First AI Winter",
+      "zh": "莱特希尔报告与第一次 AI 寒冬"
+    },
+    "subtitle": {
+      "en": "Sci-Fi Prophecy, Hype and AI Winters",
+      "zh": "科幻预言、技术狂热与 AI 寒冬"
+    },
+    "location": {
+      "name": {
+        "en": "Science Research Council",
+        "zh": "英国科学研究委员会"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "zh": "英国"
+      },
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled.",
+      "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Sir James Lighthill",
+          "zh": "詹姆斯·莱特希尔爵士"
+        },
+        "role": {
+          "en": "Author of Artificial Intelligence: A General Survey",
+          "zh": "《人工智能：总览》报告作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "The report followed a period of ambitious AI promises in the United Kingdom and the United States. Its importance lies in shifting the question from whether AI demonstrations were clever to whether they justified sustained public funding.",
+          "zh": "这份报告出现在英国与美国 AI 研究充满雄心承诺之后。它的重要性在于把问题从“AI 演示是否聪明”转向“这些演示是否足以支撑持续公共资助”。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Lighthill separated limited successes from the harder problem of building systems that work outside constrained domains. This critique exposed the mismatch between public expectations and the field's ability to scale.",
+          "zh": "莱特希尔把有限成功与更困难的系统构建问题区分开来：后者要求 AI 在受限领域之外也能工作。这种批评揭示了公众期待与学科扩展能力之间的不匹配。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the Lighthill Report as a major policy marker of the first AI winter, especially in the UK. Its legacy is the reminder that AI progress is judged not only by prototypes, but also by institutions deciding whether the promise still deserves trust.",
+          "zh": "专家通常把莱特希尔报告视为第一次 AI 寒冬的重要政策标记，尤其是在英国语境中。它的长期影响在于提醒我们：AI 进展不仅由原型系统判断，也由机构是否继续相信其承诺来判断。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
+          "caption": {
+            "en": "Lighthill winter explainer",
+            "zh": "莱特希尔寒冬解释图"
+          },
+          "subcaption": {
+            "en": "Original diagram for expectation collapse",
+            "zh": "为期待崩塌重绘的原创图"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "license": {
+            "en": "Original redrawn explainer; reference links only.",
+            "zh": "原创重绘解释图；来源仅作参考链接。"
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    },
+    "sentiment": "winter",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Policy reality check",
+          "zh": "政策层面的现实检验"
+        },
+        "term": {
+          "en": "Toy problem success",
+          "zh": "玩具问题成功"
+        },
+        "modernTerm": {
+          "en": "Scalability, robustness and deployment gap",
+          "zh": "可扩展性、鲁棒性与落地鸿沟"
+        }
+      }
+    ],
+    "branchSummary": {
+      "en": "A policy review exposed the gap between toy demonstrations and real systems, cooling the field's public confidence.",
+      "zh": "政策评估把玩具演示与真实系统之间的落差摆上台面，AI 信心开始降温。"
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "A government-commissioned review turned technical skepticism into a funding and legitimacy problem for AI.",
+        "zh": "这份政府委托评估把技术怀疑转化成 AI 的资助与合法性问题。"
+      },
+      "how": {
+        "en": "The report focused on the gap between narrow demonstrations and scalable, general-purpose intelligence in real environments.",
+        "zh": "报告聚焦于狭窄演示与真实环境中可扩展、通用智能之间的差距。"
+      },
+      "why": {
+        "en": "It shows the downward swing of the AI emotional cycle: inflated expectations become institutional disappointment.",
+        "zh": "它展示了 AI 情绪周期的下行摆动：被抬高的期待转化为制度性的失望。"
+      }
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Artificial Intelligence: A General Survey",
+          "zh": "《人工智能：总览》"
+        },
+        "authors": {
+          "en": "Sir James Lighthill",
+          "zh": "詹姆斯·莱特希尔爵士"
+        },
+        "journal": {
+          "en": "Science Research Council report",
+          "zh": "英国科学研究委员会报告"
+        },
+        "year": "1973",
+        "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
+      }
+    ],
+    "achievement": {
+      "area": {
+        "en": "Disappointment / AI winter",
+        "zh": "失望与 AI 寒冬"
+      },
+      "method": {
+        "en": "Policy review of scaling failures",
+        "zh": "对扩展失败的政策评估"
+      },
+      "artifact": {
+        "en": "Science Research Council report",
+        "zh": "英国科学研究委员会报告"
+      },
+      "material": {
+        "en": "Archived Lighthill Report text",
+        "zh": "莱特希尔报告档案文本"
+      },
+      "demo": {
+        "en": "Toy domains meet combinatorial explosion and funding chill",
+        "zh": "玩具领域撞上组合爆炸与资助降温"
+      },
+      "visual": "humanistic",
+      "demoImage": "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
+      "sources": [
+        {
+          "label": {
+            "en": "Lighthill Report archive",
+            "zh": "莱特希尔报告档案"
+          },
+          "type": {
+            "en": "Report",
+            "zh": "报告"
+          },
+          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
+        },
+        {
+          "label": {
+            "en": "AI winter overview",
+            "zh": "AI 寒冬概览"
+          },
+          "type": {
+            "en": "Secondary history",
+            "zh": "二手史料"
+          },
+          "url": "https://en.wikipedia.org/wiki/AI_winter"
+        }
+      ]
+    }
   },
   {
     "id": "milestone-1951-strachey-draughts",

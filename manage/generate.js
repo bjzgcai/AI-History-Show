@@ -190,6 +190,9 @@ function appendMilestonesFromGroup(group, groupKind) {
 
         if (ev.quoteLabel) milestone.quoteLabel = ev.quoteLabel;
         if (storyline) milestone.storyline = storyline;
+        if (ev.sentiment) milestone.sentiment = ev.sentiment;
+        if (ev.realityLinks) milestone.realityLinks = ev.realityLinks;
+        if (ev.branchSummary) milestone.branchSummary = ev.branchSummary;
         if (groupKind === 'branch' && group.id) {
             milestone.branch = {
                 id: group.id,
