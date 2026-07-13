@@ -8645,14 +8645,33 @@
             return text.startsWith('《') || /^<em\b[^>]*>/i.test(text);
         }
 
+        function decodeHtmlEntities(value) {
+            let text = String(value || '');
+            for (let index = 0; index < 3; index += 1) {
+                const next = text
+                    .replace(/&quot;/g, '"')
+                    .replace(/&#34;/g, '"')
+                    .replace(/&#x22;/gi, '"')
+                    .replace(/&#39;/g, "'")
+                    .replace(/&#x27;/gi, "'")
+                    .replace(/&apos;/g, "'")
+                    .replace(/&lt;/g, '<')
+                    .replace(/&gt;/g, '>')
+                    .replace(/&amp;/g, '&');
+                if (next === text) break;
+                text = next;
+            }
+            return text;
+        }
+
         function formatInlineTextHtml(value) {
             const emTokens = [];
             const tokenized = String(value || '').replace(/<em\b[^>]*>([\s\S]*?)<\/em>/gi, (_, content) => {
                 const token = `\u0000EM${emTokens.length}\u0000`;
-                emTokens.push(stripHtml(content));
+                emTokens.push(decodeHtmlEntities(stripHtml(content)));
                 return token;
             });
-            return escapeHtml(stripHtml(tokenized))
+            return escapeHtml(decodeHtmlEntities(stripHtml(tokenized)))
                 .replace(/\u0000EM(\d+)\u0000/g, (_, index) => `<em>${escapeHtml(emTokens[Number(index)] || '')}</em>`);
         }
 
@@ -9125,6 +9144,8 @@
                 primaryVideo,
                 videoEmbedUrl: primaryVideo ? primaryVideo.embed_url : '',
                 quoteHtml: quote,
+                quoteAttribution,
+                quoteLabel,
                 quotePage: String(safeMilestone.quotePage || '').trim(),
                 commentaryOverrideSections: Array.isArray(safeMilestone.commentarySections) ? safeMilestone.commentarySections : [],
                 commentarySections,
@@ -15064,12 +15085,18 @@
         }
 
         function getUiQuoteSummarySection(vm) {
-            const quote = stripHtml(vm && vm.quoteHtml ? vm.quoteHtml : '');
-            if (!quote) return null;
-            const attribution = stripHtml(vm && vm.quotePage ? vm.quotePage : '');
+            const quoteHtml = String(vm && vm.quoteHtml ? vm.quoteHtml : '').trim();
+            const quoteText = stripHtml(quoteHtml);
+            if (!quoteText) return null;
+            const attributionHtml = String(vm && vm.quoteAttribution ? vm.quoteAttribution : '').trim();
+            const attributionText = stripHtml(attributionHtml || (vm && vm.quotePage ? vm.quotePage : ''));
+            const quote = formatInlineTextHtml(quoteHtml);
+            const attribution = attributionHtml
+                ? formatInlineTextHtml(attributionHtml)
+                : escapeHtml(attributionText);
             return {
                 label: tx('quoteExcerpt'),
-                text: attribution ? `${quote}\n${tx('source')}：${attribution}` : quote
+                html: attributionText ? `${quote}<br>${escapeHtml(tx('source'))}：${attribution}` : quote
             };
         }
 

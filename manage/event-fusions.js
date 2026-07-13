@@ -419,9 +419,9 @@ function applyEventFusion(key, eventMap) {
     videos: Array.isArray(deep.videos) && deep.videos.length ? clone(deep.videos) : clone(base.videos || []),
     images,
     imageMeta: mergeImageMeta(ai100, deep, images),
-    quoteText: clone(base.quoteText || base.quote || current.quoteText),
-    quoteMeta: clone(base.quoteMeta || current.quoteMeta),
-    quotePage: base.quotePage || current.quotePage || '',
+    quoteText: clone(current.quoteText || base.quoteText || base.quote),
+    quoteMeta: clone(current.quoteMeta || base.quoteMeta),
+    quotePage: current.quotePage || base.quotePage || '',
     commentarySections: clone(base.commentarySections || current.commentarySections || []),
     achievement: {
       ...achievement,
