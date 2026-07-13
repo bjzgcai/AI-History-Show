@@ -1679,6 +1679,252 @@
                 rgba(244, 239, 229, 0.07);
         }
 
+        html.humanistic-cycle-active,
+        html.humanistic-cycle-active body {
+            background: #000;
+            color: #f5efe4;
+        }
+
+        html.humanistic-cycle-active body::before {
+            display: none;
+        }
+
+        .stage-viewport.is-branch-timeline.is-humanistic-cycle {
+            background: #000;
+        }
+
+        .single-stage.is-branch-timeline.is-humanistic-cycle {
+            background: #000;
+            color: #f5efe4;
+        }
+
+        .single-stage.is-branch-timeline.is-humanistic-cycle .storyline-select {
+            border-color: rgba(226, 216, 197, 0.24);
+            background: rgba(14, 13, 12, 0.78);
+            color: rgba(245, 239, 228, 0.86);
+        }
+
+        .single-stage.is-branch-timeline.is-humanistic-cycle .storyline-select option {
+            background: #11100f;
+            color: #f5efe4;
+        }
+
+        .single-stage.is-branch-timeline.is-humanistic-cycle .mode-chip-label {
+            color: rgba(245, 239, 228, 0.62);
+        }
+
+        .single-stage.is-branch-timeline.is-humanistic-cycle .language-toggle.topbar-language-toggle {
+            border-color: rgba(226, 216, 197, 0.28);
+            background: rgba(14, 13, 12, 0.72);
+            color: rgba(245, 239, 228, 0.78);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle {
+            grid-template-rows: 104px minmax(0, 1fr);
+            color: #f5efe4;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-hero {
+            min-height: 0;
+            align-items: end;
+            border-bottom: 1px solid rgba(226, 216, 197, 0.14);
+            padding-bottom: 14px;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-hero-title {
+            max-width: 980px;
+            color: #f5efe4;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-size: clamp(36px, 3.05vw, 54px);
+            font-weight: 760;
+            text-shadow: 0 12px 38px rgba(0, 0, 0, 0.72);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-hero-title .accent {
+            color: #d38a72;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-hero-subtitle {
+            max-width: 900px;
+            color: rgba(245, 239, 228, 0.7);
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-hero > .branch-pixel-scene {
+            display: none;
+            width: 290px;
+            height: 96px;
+            border: 1px solid rgba(226, 216, 197, 0.2);
+            border-radius: 7px;
+            background:
+                linear-gradient(90deg, rgba(139, 58, 58, 0.28), transparent 42%),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.018)),
+                rgba(10, 10, 10, 0.84);
+            image-rendering: auto;
+            box-shadow: 0 18px 46px rgba(0, 0, 0, 0.4);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-pixel-scene::before {
+            left: 24px;
+            top: 25px;
+            width: 240px;
+            height: 46px;
+            border: 0;
+            border-radius: 0;
+            background:
+                linear-gradient(90deg, #9a3f45 0 52px, transparent 52px 94px, #c27a2c 94px 146px, transparent 146px 188px, #3a86a6 188px 240px),
+                linear-gradient(rgba(226, 216, 197, 0.64), rgba(226, 216, 197, 0.64));
+            background-size: auto;
+            box-shadow: none;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-pixel-scene::after {
+            left: 40px;
+            top: 18px;
+            width: 208px;
+            height: 62px;
+            border-top: 2px solid rgba(245, 239, 228, 0.62);
+            border-bottom: 2px solid rgba(245, 239, 228, 0.2);
+            background:
+                radial-gradient(circle at 8% 50%, #9a3f45 0 6px, transparent 7px),
+                radial-gradient(circle at 50% 50%, #c27a2c 0 6px, transparent 7px),
+                radial-gradient(circle at 92% 50%, #3a86a6 0 6px, transparent 7px);
+            clip-path: none;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-timeline {
+            grid-template-columns: repeat(var(--branch-count, 3), minmax(480px, 1fr));
+            gap: 22px;
+            min-height: 0;
+            padding-top: 18px;
+            scrollbar-color: rgba(226, 216, 197, 0.24) transparent;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-timeline::before {
+            display: none;
+            top: 116px;
+            left: 18px;
+            right: 18px;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(154, 63, 69, 0.72), rgba(194, 122, 44, 0.72), rgba(58, 134, 166, 0.72));
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event {
+            --sentiment: #d17376;
+            --sentiment-soft: rgba(209, 115, 118, 0.14);
+            grid-template-rows: 220px minmax(0, 1fr);
+            gap: 12px;
+            min-height: 0;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-hype {
+            --sentiment: #d18a3c;
+            --sentiment-soft: rgba(209, 138, 60, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-winter {
+            --sentiment: #68a9c6;
+            --sentiment-soft: rgba(104, 169, 198, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event-visual {
+            height: 220px;
+            min-height: 220px;
+            max-height: 220px;
+            overflow: hidden;
+            border: 1px solid rgba(226, 216, 197, 0.13);
+            border-radius: 7px;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.018)),
+                rgba(10, 13, 18, 0.9);
+            padding: 8px;
+            box-shadow: 0 20px 52px rgba(0, 0, 0, 0.48);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event-visual img {
+            width: 100% !important;
+            height: 100% !important;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain !important;
+            object-position: center;
+            border-radius: 5px;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event-content {
+            min-height: 0;
+            max-height: 100%;
+            border: 1px solid rgba(226, 216, 197, 0.13);
+            border-top: 5px solid var(--sentiment);
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
+                rgba(8, 8, 9, 0.86);
+            color: #f5efe4;
+            box-shadow: 0 20px 52px rgba(0, 0, 0, 0.52);
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-color: rgba(226, 216, 197, 0.24) transparent;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-meta,
+        .branch-timeline-page.is-humanistic-cycle .branch-event.is-right .branch-meta {
+            color: rgba(245, 239, 228, 0.54);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-chip {
+            border-color: var(--sentiment);
+            background: var(--sentiment-soft);
+            color: var(--sentiment);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event-title {
+            color: #f5efe4;
+            font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+            font-size: clamp(22px, 1.45vw, 26px);
+            font-weight: 760;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event-summary {
+            color: rgba(245, 239, 228, 0.76);
+            font-size: 12.5px;
+            line-height: 1.5;
+            min-height: 38px;
+            -webkit-line-clamp: 2;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-analysis {
+            display: grid;
+            gap: 7px;
+            padding-top: 2px;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-analysis-item {
+            color: rgba(245, 239, 228, 0.72);
+            line-height: 1.36;
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-analysis-item strong,
+        .branch-timeline-page.is-humanistic-cycle .branch-element-label {
+            color: var(--sentiment);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-element-item {
+            border-color: rgba(226, 216, 197, 0.13);
+            background: rgba(255, 255, 255, 0.045);
+            color: rgba(245, 239, 228, 0.9);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-element-item small {
+            color: rgba(245, 239, 228, 0.54);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle a.branch-element-item:hover,
+        .branch-timeline-page.is-humanistic-cycle a.branch-element-item:focus-visible {
+            border-color: var(--sentiment);
+            color: var(--sentiment);
+        }
+
         @media (max-width: 900px) {
             .single-stage.is-branch-timeline .stage-topbar {
                 padding: 22px 20px 0;
@@ -5853,6 +6099,18 @@
                 }
             },
             {
+                id: 'humanistic-cycle',
+                layout: 'branch-timeline',
+                label: {
+                    en: 'Humanistic & Emotional Cycles of AI',
+                    zh: 'AI 的人文与情绪周期'
+                },
+                note: {
+                    en: 'Sci-fi prophecy, hype and AI winters as a cultural counterpoint to technical milestones',
+                    zh: '以科幻预言、技术狂热与 AI 寒冬，对照技术里程碑背后的人类想象'
+                }
+            },
+            {
                 id: 'culture-humanity-ethics',
                 label: {
                     en: 'AI, Culture, Humanity & Ethics',
@@ -6762,10 +7020,23 @@
             const analysis = rawMilestone && rawMilestone.analysis;
             if (!analysis || typeof analysis !== 'object') return [];
 
+            const storylineId = getMilestoneStorylineId(rawMilestone);
+            const labels = storylineId === 'humanistic-cycle'
+                ? {
+                    what: uiText('Cultural moment', '文化时刻'),
+                    how: uiText('Emotional frame', '情绪框架'),
+                    why: uiText('Historical effect', '历史作用')
+                }
+                : {
+                    what: tx('analysisWhat'),
+                    how: tx('analysisHow'),
+                    why: tx('analysisWhy')
+                };
+
             return [
-                ['what', tx('analysisWhat')],
-                ['how', tx('analysisHow')],
-                ['why', tx('analysisWhy')]
+                ['what', labels.what],
+                ['how', labels.how],
+                ['why', labels.why]
             ].map(([key, label]) => {
                 const text = String(lx(analysis[key]) || '').trim();
                 if (!text) return null;
@@ -6775,6 +7046,12 @@
 
         function buildBranchHeroTitle(title) {
             const safeTitle = escapeHtml(title || tx('branchGaming'));
+            if (activeStorylineId === 'humanistic-cycle') {
+                if ((window.I18n && window.I18n.getLocale && window.I18n.getLocale()) === 'zh') {
+                    return safeTitle.replace('情绪周期', '<span class="accent">情绪周期</span>');
+                }
+                return safeTitle.replace('Cycles', '<span class="accent">Cycles</span>');
+            }
             if ((window.I18n && window.I18n.getLocale && window.I18n.getLocale()) === 'zh') {
                 return safeTitle.replace('博弈论', '<span class="accent">博弈论</span>');
             }
@@ -7396,6 +7673,19 @@
                 }))).slice(0, 3);
         }
 
+        function getBranchRealityLinkItems(rawMilestone) {
+            const links = rawMilestone && Array.isArray(rawMilestone.realityLinks) ? rawMilestone.realityLinks : [];
+            return dedupeBranchItems(links.map((link) => {
+                const fictionTerm = String(lx(link && link.term) || '').trim();
+                const label = String(lx(link && link.modernTerm) || '').trim();
+                const detailPrefix = String(lx(link && link.label) || uiText('Mapping', '\u6620\u5c04')).trim();
+                return {
+                    label,
+                    detail: [detailPrefix, fictionTerm].filter(Boolean).join(' · ')
+                };
+            })).slice(0, 2);
+        }
+
         function buildBranchElementGroup(label, items) {
             const safeItems = dedupeBranchItems(items);
             if (!safeItems.length) return '';
@@ -7421,20 +7711,25 @@
 
         function buildBranchMilestoneElements(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
+            const isHumanisticCycle = getMilestoneStorylineId(raw) === 'humanistic-cycle';
             const groups = [
                 {
                     label: uiText('People', '\u4eba\u7269'),
                     items: getBranchPeopleItems(vm)
                 },
+                isHumanisticCycle ? {
+                    label: uiText('Reality mapping', '\u73b0\u5b9e\u6620\u5c04'),
+                    items: getBranchRealityLinkItems(raw)
+                } : null,
                 {
                     label: uiText('Papers', '\u8bba\u6587'),
                     items: getBranchPaperItems(raw)
                 },
                 {
-                    label: uiText('News reports', '\u65b0\u95fb\u62a5\u9053'),
+                    label: isHumanisticCycle ? uiText('Sources', '\u8d44\u6599\u6765\u6e90') : uiText('News reports', '\u65b0\u95fb\u62a5\u9053'),
                     items: getBranchReportItems(raw)
                 }
-            ].map((group) => buildBranchElementGroup(group.label, group.items)).filter(Boolean);
+            ].filter(Boolean).map((group) => buildBranchElementGroup(group.label, group.items)).filter(Boolean);
 
             return groups.length ? `<div class="branch-elements">${groups.join('')}</div>` : '';
         }
@@ -7822,8 +8117,11 @@
             const stackClass = 'is-visual-first';
             const eventKey = getBranchEventKey(vm);
             const eventKeyClass = eventKey ? `branch-event--${eventKey.replace(/[^a-z0-9_-]/gi, '-')}` : '';
+            const sentiment = String(raw.sentiment || '').toLowerCase().replace(/[^a-z0-9_-]/g, '');
+            const sentimentClass = sentiment ? `branch-event--sentiment-${sentiment}` : '';
+            const eventClasses = ['branch-event', sideClass, stackClass, eventKeyClass, sentimentClass].filter(Boolean).join(' ');
             const area = getAchievementField(raw, 'area', vm.category || tx('aiHistory'));
-            const summary = stripHtml(lx(raw.description) || vm.descriptionText || '');
+            const summary = stripHtml(lx(raw.branchSummary) || lx(raw.description) || vm.descriptionText || '');
             const analysisSections = buildAnalysisSections(raw).slice(0, 3);
             const elementsHtml = buildBranchMilestoneElements(vm);
             const analysisHtml = analysisSections.length
@@ -7833,7 +8131,7 @@
                 : '';
 
             return `
-                <article class="branch-event ${sideClass} ${stackClass} ${eventKeyClass}" data-branch-event-key="${escapeHtml(eventKey)}">
+                <article class="${escapeHtml(eventClasses)}" data-branch-event-key="${escapeHtml(eventKey)}">
                     <span class="branch-event-dot" aria-hidden="true"></span>
                     <div class="branch-event-content">
                         <div class="branch-meta">
@@ -7860,6 +8158,7 @@
             const subtitleHtml = note
                 ? `<p class="branch-hero-subtitle">${escapeHtml(note)}</p>`
                 : '';
+            refs.branchTimelinePage.classList.toggle('is-humanistic-cycle', activeStorylineId === 'humanistic-cycle');
 
             refs.branchTimelinePage.innerHTML = `
                 <section class="branch-hero">
@@ -9653,19 +9952,18 @@
 
         function getAchievementSources(rawMilestone) {
             const papers = rawMilestone && Array.isArray(rawMilestone.papers)
-                ? rawMilestone.papers.map((paper) => ({
-                    type: paper.journal
-                        ? {
-                            en: `Paper · ${paper.journal}`,
-                            zh: `论文 · ${paper.journal}`
-                        }
-                        : {
-                            en: 'Paper',
-                            zh: '论文'
-                        },
-                    label: paper.title,
-                    url: paper.url
-                }))
+                ? rawMilestone.papers.map((paper) => {
+                    const rawJournal = paper && paper.journal;
+                    const journalFallback = rawJournal && typeof rawJournal === 'object'
+                        ? rawJournal.en || rawJournal.zh || ''
+                        : rawJournal;
+                    const journal = String(lx(rawJournal) || journalFallback || '').trim();
+                    return {
+                        type: journal ? uiText(`Paper · ${journal}`, `论文 · ${journal}`) : uiText('Paper', '论文'),
+                        label: paper.title,
+                        url: paper.url
+                    };
+                })
                 : [];
             const sources = rawMilestone && rawMilestone.achievement && Array.isArray(rawMilestone.achievement.sources)
                 ? rawMilestone.achievement.sources
@@ -11255,12 +11553,20 @@
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
             const branchTimelineActive = isBranchTimelineActive();
+            const humanisticCycleActive = branchTimelineActive && activeStorylineId === 'humanistic-cycle';
             document.documentElement.classList.toggle('branch-timeline-active', branchTimelineActive);
+            document.documentElement.classList.toggle('humanistic-cycle-active', humanisticCycleActive);
             document.body.classList.toggle('branch-timeline-active', branchTimelineActive);
-            if (refs.viewport) refs.viewport.classList.toggle('is-branch-timeline', branchTimelineActive);
+            document.body.classList.toggle('humanistic-cycle-active', humanisticCycleActive);
+            if (refs.viewport) {
+                refs.viewport.classList.toggle('is-branch-timeline', branchTimelineActive);
+                refs.viewport.classList.toggle('is-humanistic-cycle', humanisticCycleActive);
+            }
             refs.stage.classList.toggle('is-branch-timeline', branchTimelineActive);
+            refs.stage.classList.toggle('is-humanistic-cycle', humanisticCycleActive);
             refs.stage.classList.toggle('is-bench-dossier', isResearchDossierActive());
             if (refs.branchTimelinePage) {
+                refs.branchTimelinePage.classList.toggle('is-humanistic-cycle', humanisticCycleActive);
                 refs.branchTimelinePage.hidden = !branchTimelineActive;
                 if (!branchTimelineActive) {
                     refs.branchTimelinePage.innerHTML = '';
