@@ -2,7 +2,7 @@
   {
     "id": "asset-1950-turing-test-alan-turing",
     "type": "image",
-    "path": "research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg",
+    "path": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
     "role": "source-card",
     "caption": {
       "zh": "艾伦·图灵 肖像",
@@ -28,7 +28,7 @@
   {
     "id": "asset-1950-turing-test-diagram",
     "type": "image",
-    "path": "research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png",
+    "path": "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png",
     "role": "algorithm-explainer",
     "caption": {
       "zh": "图灵测试结构图",

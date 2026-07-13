@@ -2,7 +2,15 @@
   "normalCount": 134,
   "previewCount": 134,
   "changedCount": 134,
+  "displayCriticalChangedCount": 0,
+  "structuredArchiveChangedCount": 134,
   "fieldCounts": {
+    "sources": 134,
+    "commentary": 131,
+    "quizzes": 112
+  },
+  "displayCriticalFieldCounts": {},
+  "structuredArchiveFieldCounts": {
     "sources": 134,
     "commentary": 131,
     "quizzes": 112
@@ -27,6 +35,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -37,6 +46,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -58,6 +68,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -74,6 +85,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -95,6 +107,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -105,6 +118,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -126,6 +140,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -136,6 +151,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -157,6 +173,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -167,6 +184,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -188,6 +206,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -206,6 +225,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -227,6 +247,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -245,6 +266,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -266,6 +288,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -299,6 +322,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -309,6 +333,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -330,6 +355,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -348,6 +374,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -369,6 +396,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -387,6 +415,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -408,6 +437,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -426,6 +456,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -447,6 +478,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -465,6 +497,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -486,6 +519,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -519,6 +553,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -537,6 +572,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -558,6 +594,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -576,6 +613,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -597,6 +635,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -607,6 +646,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -628,6 +668,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -646,6 +687,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
@@ -667,6 +709,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -677,6 +720,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -698,6 +742,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -708,6 +753,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -729,6 +775,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 0,
           "previewCount": 1,
           "decreased": false,
@@ -739,6 +786,7 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
           "decreased": false
@@ -760,6 +808,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -778,12 +827,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -805,6 +856,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -821,12 +873,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -848,6 +902,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -864,12 +919,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -891,6 +948,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -907,12 +965,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -934,6 +994,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -950,12 +1011,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -977,6 +1040,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -993,12 +1057,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1020,6 +1086,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1036,12 +1103,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1063,6 +1132,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1079,12 +1149,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1106,6 +1178,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1122,12 +1195,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1149,6 +1224,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1165,12 +1241,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1192,6 +1270,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1208,12 +1287,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1235,6 +1316,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1251,12 +1333,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1278,6 +1362,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1294,12 +1379,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1321,6 +1408,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1337,12 +1425,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1364,6 +1454,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1380,12 +1471,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1407,6 +1500,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1423,12 +1517,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1450,6 +1546,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1466,12 +1563,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1493,6 +1592,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1509,12 +1609,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1536,6 +1638,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1552,12 +1655,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1579,6 +1684,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1595,12 +1701,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1622,6 +1730,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1638,12 +1747,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1665,6 +1776,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1681,12 +1793,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1708,6 +1822,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1724,12 +1839,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1751,6 +1868,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1767,12 +1885,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1794,6 +1914,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1810,12 +1931,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1837,6 +1960,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1853,12 +1977,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1880,6 +2006,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1896,12 +2023,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1923,6 +2052,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1939,12 +2069,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -1966,6 +2098,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -1982,12 +2115,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2009,6 +2144,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2025,12 +2161,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2052,6 +2190,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2068,12 +2207,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2095,6 +2236,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2111,12 +2253,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2138,6 +2282,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2154,12 +2299,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2181,6 +2328,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2197,12 +2345,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2224,6 +2374,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2240,12 +2391,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2267,6 +2420,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2283,12 +2437,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2310,6 +2466,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2326,12 +2483,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2353,6 +2512,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2369,12 +2529,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2396,6 +2558,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -2412,12 +2575,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2439,6 +2604,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2457,12 +2623,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2484,6 +2652,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2502,12 +2671,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2529,6 +2700,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2547,12 +2719,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2574,6 +2748,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2592,12 +2767,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2619,6 +2796,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2637,12 +2815,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2664,6 +2844,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2682,12 +2863,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2709,6 +2892,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2727,12 +2911,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2754,6 +2940,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2772,12 +2959,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2799,6 +2988,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2817,12 +3007,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2844,6 +3036,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2862,12 +3055,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2889,6 +3084,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2907,12 +3103,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2934,6 +3132,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2952,12 +3151,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -2979,6 +3180,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -2997,12 +3199,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3024,6 +3228,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3042,12 +3247,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3069,6 +3276,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3087,12 +3295,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3114,6 +3324,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3132,12 +3343,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3159,6 +3372,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3177,12 +3391,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3204,6 +3420,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3222,12 +3439,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3249,6 +3468,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3267,12 +3487,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3294,6 +3516,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3312,12 +3535,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3339,6 +3564,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3357,12 +3583,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3384,6 +3612,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3402,12 +3631,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3429,6 +3660,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3447,12 +3679,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3474,6 +3708,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3492,12 +3727,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3519,6 +3756,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3537,12 +3775,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3564,6 +3804,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3582,12 +3823,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3609,6 +3852,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3627,12 +3871,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3654,6 +3900,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3672,12 +3919,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3699,6 +3948,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3717,12 +3967,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3744,6 +3996,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3762,12 +4015,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3789,6 +4044,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3807,12 +4063,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3834,6 +4092,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3852,12 +4111,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3879,6 +4140,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3897,12 +4159,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3924,6 +4188,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3942,12 +4207,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -3969,6 +4236,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -3987,12 +4255,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4014,6 +4284,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -4032,12 +4303,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4059,6 +4332,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -4077,12 +4351,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4104,6 +4380,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -4122,12 +4399,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4149,6 +4428,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -4167,12 +4447,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4194,6 +4476,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -4212,12 +4495,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4239,6 +4524,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -4257,12 +4543,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4284,6 +4572,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4300,12 +4589,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4327,6 +4618,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4343,12 +4635,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4370,6 +4664,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4386,12 +4681,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4413,6 +4710,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4429,12 +4727,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4456,6 +4756,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4472,12 +4773,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4499,6 +4802,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4515,12 +4819,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4542,6 +4848,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4558,12 +4865,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4585,6 +4894,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4601,12 +4911,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4628,6 +4940,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4644,12 +4957,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4671,6 +4986,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4687,12 +5003,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4714,6 +5032,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4730,12 +5049,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4757,6 +5078,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4773,12 +5095,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4800,6 +5124,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4816,12 +5141,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4843,6 +5170,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4859,12 +5187,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4886,6 +5216,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4902,12 +5233,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4929,6 +5262,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4945,12 +5279,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -4972,6 +5308,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -4988,12 +5325,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5015,6 +5354,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5031,12 +5371,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5058,6 +5400,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5074,12 +5417,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5101,6 +5446,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5117,12 +5463,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5144,6 +5492,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -5162,12 +5511,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5189,6 +5540,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5205,12 +5557,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5232,6 +5586,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -5250,12 +5605,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5277,6 +5634,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
@@ -5295,12 +5653,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5322,6 +5682,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5338,12 +5699,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5365,6 +5728,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5381,12 +5745,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5408,6 +5774,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5424,12 +5791,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5451,6 +5820,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5482,6 +5852,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5498,12 +5869,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5525,6 +5898,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5541,12 +5915,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5568,6 +5944,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5584,12 +5961,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5611,6 +5990,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5627,12 +6007,14 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
@@ -5654,6 +6036,7 @@
       "diffs": [
         {
           "field": "sources",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
@@ -5670,17 +6053,156 @@
         },
         {
           "field": "commentary",
+          "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false
         },
         {
           "field": "quizzes",
+          "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
           "decreased": false
         }
       ]
     }
+  ],
+  "displayCriticalRowIds": [],
+  "structuredArchiveRowIds": [
+    "milestone-1956-dartmouth",
+    "milestone-1957-perceptron",
+    "milestone-1969-ai-winter",
+    "milestone-1986-backpropagation",
+    "milestone-1986-rnn",
+    "milestone-1989-cnn",
+    "milestone-1997-lstm",
+    "milestone-2012-alexnet",
+    "milestone-2014-highway-network",
+    "milestone-2014-gan",
+    "milestone-2014-attention",
+    "milestone-2015-resnet",
+    "milestone-2016-densenet",
+    "milestone-2017-transformer",
+    "milestone-2018-bert",
+    "milestone-2018-gpt",
+    "milestone-2019-ai-feynman",
+    "milestone-2020-alphafold",
+    "milestone-2023-agents",
+    "milestone-2024-ai-scientist",
+    "milestone-2025-llm-competition",
+    "milestone-1950-turing-test",
+    "milestone-1958-lisp",
+    "milestone-2016-alphago",
+    "milestone-1971-complexity-theory",
+    "milestone-1971-vc-theory",
+    "milestone-1956-logic-theorist",
+    "milestone-1958-wangs-algorithm",
+    "milestone-1960-davis-putnam-dpll",
+    "milestone-2014-adam",
+    "milestone-2014-vgg",
+    "milestone-1975-genetic-algorithm",
+    "milestone-2015-u-net",
+    "milestone-2015-faster-r-cnn",
+    "milestone-1992-svm",
+    "milestone-1984-cart",
+    "milestone-1983-simulated-annealing",
+    "milestone-1996-lasso",
+    "milestone-2015-googlenet-inception",
+    "milestone-1965-resolution-method",
+    "milestone-1973-prolog",
+    "milestone-1966-eliza",
+    "milestone-1982-hopfield-network",
+    "milestone-2014-dropout",
+    "milestone-2016-yolo",
+    "milestone-2013-word2vec",
+    "milestone-2009-imagenet",
+    "milestone-2013-dqn",
+    "milestone-2003-lda",
+    "milestone-1970-shrdlu",
+    "milestone-1997-deep-blue",
+    "milestone-1974-frame",
+    "milestone-1965-dendral",
+    "milestone-1999-sift",
+    "milestone-2008-tsne",
+    "milestone-1958-rosenblatt-perceptron",
+    "milestone-2006-dbn",
+    "milestone-1988-td-update",
+    "milestone-1985-bayesian-network",
+    "milestone-1990-otter",
+    "milestone-2011-ibm-watson",
+    "milestone-1951-strachey-draughts",
+    "milestone-1994-chinook",
+    "milestone-1959-pandemonium",
+    "milestone-1984-cyc",
+    "milestone-1980-xcon-r1",
+    "milestone-1957-kmeans",
+    "milestone-1996-dbscan",
+    "milestone-2000-spectral-clustering",
+    "milestone-ai100-1967-knn",
+    "milestone-ai100-1970-ridge",
+    "milestone-ai100-2005-hog",
+    "milestone-ai100-2006-surf",
+    "milestone-ai100-1997-kernel-pca",
+    "milestone-ai100-1999-nmf",
+    "milestone-ai100-2000-isomap",
+    "milestone-ai100-2000-lle",
+    "milestone-ai100-1943-mcculloch-pitts-neuron",
+    "milestone-ai100-1951-snarc",
+    "milestone-ai100-1982-som",
+    "milestone-ai100-1967-back-propagation",
+    "milestone-ai100-1969-relu",
+    "milestone-ai100-1980-neocognitron",
+    "milestone-ai100-1989-lenet",
+    "milestone-ai100-2000-neural-language-model",
+    "milestone-ai100-2012-alexnet",
+    "milestone-ai100-2015-resnet",
+    "milestone-ai100-2015-batch-normalization",
+    "milestone-ai100-2017-densenet",
+    "milestone-ai100-2017-transformer",
+    "milestone-ai100-2020-vit",
+    "milestone-ai100-1997-lstm",
+    "milestone-ai100-2014-gan",
+    "milestone-ai100-2014-neural-machine-translation-attention",
+    "milestone-ai100-2018-bert",
+    "milestone-ai100-2018-gpt",
+    "milestone-ai100-2020-alphafold2",
+    "milestone-ai100-2021-clip",
+    "milestone-ai100-2021-dalle",
+    "milestone-ai100-2022-stable-diffusion",
+    "milestone-ai100-2023-segment-anything",
+    "milestone-ai100-2021-swin-transformer",
+    "milestone-ai100-2014-glove",
+    "milestone-ai100-2014-conditional-gan",
+    "milestone-ai100-2015-dcgan",
+    "milestone-ai100-2017-wasserstein-gan",
+    "milestone-ai100-2017-cyclegan",
+    "milestone-ai100-2017-pix2pix",
+    "milestone-ai100-2019-stylegan",
+    "milestone-ai100-2013-variational-autoencoder",
+    "milestone-ai100-2015-diffusion-model",
+    "milestone-ai100-2005-gnn",
+    "milestone-ai100-2016-gcn",
+    "milestone-ai100-2017-gat",
+    "milestone-ai100-2016-nas",
+    "milestone-ai100-2015-deep-compression",
+    "milestone-ai100-2015-knowledge-distillation",
+    "milestone-ai100-2014-ms-coco",
+    "milestone-ai100-1989-q-learning",
+    "milestone-ai100-2015-ddpg",
+    "milestone-ai100-1983-actor-critic",
+    "milestone-gaming-ai-1951-strachey-draughts",
+    "milestone-gaming-ai-1988-td-update",
+    "milestone-gaming-ai-1994-chinook",
+    "milestone-gaming-ai-1997-logistello",
+    "milestone-gaming-ai-1997-deep-blue",
+    "milestone-gaming-ai-2000s-alphacat",
+    "milestone-gaming-ai-2013-dqn",
+    "milestone-gaming-ai-2016-alphago",
+    "milestone-gaming-ai-2017-alphazero",
+    "milestone-gaming-ai-2017-libratus",
+    "milestone-gaming-ai-2019-pluribus",
+    "milestone-gaming-ai-2019-suphx",
+    "milestone-gaming-ai-2019-muzero"
   ]
 }

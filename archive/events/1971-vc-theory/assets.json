@@ -2,7 +2,7 @@
   {
     "id": "asset-1971-vc-theory-vladimir-vapnik",
     "type": "image",
-    "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png",
+    "path": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
     "role": "source-card",
     "caption": {
       "zh": "弗拉基米尔·瓦普尼克 肖像",
@@ -28,7 +28,7 @@
   {
     "id": "asset-1971-vc-theory-generalization",
     "type": "svg",
-    "path": "research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg",
+    "path": "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg",
     "role": "architecture-explainer",
     "caption": {
       "zh": "VC 理论泛化示意图",

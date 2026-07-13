@@ -119,7 +119,7 @@ const GAMING_BRANCH_EVOLUTION_MODULES = {
     '2016-alphago': {
         enName: 'AlphaGo',
         zhName: 'AlphaGo',
-        poster: 'research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg',
+        poster: 'resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg',
         description: {
             en: 'SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.',
             zh: '面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。'

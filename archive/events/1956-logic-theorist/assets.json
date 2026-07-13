@@ -2,7 +2,7 @@
   {
     "id": "asset-1956-logic-theorist-herbert-simon",
     "type": "image",
-    "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg",
+    "path": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
     "role": "source-card",
     "caption": {
       "zh": "赫伯特·A·西蒙 肖像",
@@ -28,7 +28,7 @@
   {
     "id": "asset-1956-logic-theorist-proof-search",
     "type": "svg",
-    "path": "research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg",
+    "path": "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg",
     "role": "architecture-explainer",
     "caption": {
       "zh": "Logic Theorist 证明搜索",

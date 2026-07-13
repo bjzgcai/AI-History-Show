@@ -1,5 +1,10 @@
 'use strict';
 
+// Archive migration note:
+// This is a legacy compatibility bundle for the gaming-ai branch. Preserve it
+// while manage/generate.js still builds normal milestones from legacy events,
+// but migrate durable gaming facts, sources, media, and variants to archive/.
+
 function t(en, zh) {
   return { en, zh };
 }
