@@ -4,6 +4,7 @@
 /* eslint-disable */
 const ai100ExtraEvents = require('./ai100-extra-events.js');
 const gamingExtraEvents = require('./gaming-extra-events.js');
+const humanisticExtraEvents = require('./humanistic-extra-events.js');
 
 function gameEvolutionVideo(key, options = {}) {
   const enName = options.enName || key;
@@ -17762,6 +17763,7 @@ module.exports = {
     },
     "videos": []
   },
+  ...humanisticExtraEvents,
   ...gamingExtraEvents,
   ...ai100ExtraEvents
 };

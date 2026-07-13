@@ -195,6 +195,20 @@ module.exports = {
   ],
   "branches": [
     {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      },
+      "subtitle": {
+        "en": "Humanistic and Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      },
+      "events": [
+        "humanistic-ai-intro"
+      ]
+    },
+    {
       "id": "gaming-ai",
       "name": {
         "en": "AI in Board & Tabletop Games",
