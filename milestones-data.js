@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-08 03:44
+// 生成时间: 2026-07-13 05:30
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -51655,6 +51655,398 @@ const milestones = [
         ]
       }
     ]
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-humanistic-ai-intro",
+    "year": "1920-2023",
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "Humanistic & Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Global cultural and research discourse",
+        "zh": "全球文化与研究讨论"
+      },
+      "country": {
+        "en": "Global",
+        "zh": "全球"
+      },
+      "coordinates": [
+        0,
+        0
+      ]
+    },
+    "description": {
+      "en": "<p>This introduction frames AI history as more than a sequence of technical breakthroughs. It follows how fiction, ethics, optimism, disappointment, existential anxiety, and safety action repeatedly reshaped what societies expected from intelligent machines.</p>",
+      "zh": "<p>这个导言把 AI 历史从单纯的技术突破序列，扩展为一条人文与情绪共同参与的叙事线。它追踪科幻、伦理、乐观、失望、生存焦虑与安全行动如何反复改变社会对智能机器的期待。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Karel Capek",
+          "zh": "卡雷尔·恰佩克"
+        },
+        "role": {
+          "en": "R.U.R. and the modern word robot",
+          "zh": "《罗素姆的万能机器人》与现代 robot 一词"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Isaac Asimov",
+          "zh": "艾萨克·阿西莫夫"
+        },
+        "role": {
+          "en": "Robot ethics and the Three Laws",
+          "zh": "机器人伦理与三定律"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Norbert Wiener",
+          "zh": "诺伯特·维纳"
+        },
+        "role": {
+          "en": "Cybernetics and warnings about automation",
+          "zh": "控制论与自动化预警"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"AI history is also a history of what humans feared, hoped for, overpromised, and tried to govern.\"",
+      "zh": "\"AI 的历史，也是一部人类如何恐惧、期待、过度许诺并试图治理智能机器的历史。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Humanistic and emotional cycles branch introduction",
+      "zh": "AI 人文与情绪周期分支导言"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Long before modern machine learning, writers and scientists were already asking whether artificial servants would liberate people, replace labor, or escape control. Works such as R.U.R., I, Robot, and cybernetic writing gave later AI debates a vocabulary of creation, obedience, feedback, and unintended consequences.",
+          "zh": "早在现代机器学习出现之前，作家和科学家已经在追问：人工仆役究竟会解放人，替代劳动，还是脱离控制。《罗素姆的万能机器人》《我，机器人》和控制论著作，为后来的 AI 讨论提供了创造、服从、反馈与意外后果的词汇。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The branch treats emotions as historical signals rather than side commentary. When expectations rise too high, winters and funding contractions become easier to understand; when fear rises, safety labs, public statements, and governance debates become part of the same timeline.",
+          "zh": "这个分支把情绪视为历史信号，而不是旁支评论。当期待被抬得过高，寒冬和资金收缩就更容易理解；当恐惧上升，安全实验室、公共声明和治理讨论也会进入同一条时间线。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the cultural and safety discourse around AI as a force that shapes research priorities, public legitimacy, and institutional design. This branch makes that force visible, so technical achievements can be read together with the hopes and warnings that surrounded them.",
+          "zh": "专家通常把围绕 AI 的文化与安全讨论视为塑造研究优先级、公众合法性和机构设计的重要力量。这个分支把这种力量可视化，让技术成就能和包围它们的期待与警告一起被理解。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "Humanistic cycle map",
+            "zh": "AI 人文情绪周期图"
+          },
+          "subcaption": {
+            "en": "Original local explainer for the branch introduction.",
+            "zh": "用于分支导言的本地原创解释图。"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉图"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Branch thesis",
+      "zh": "分支导言"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "A thematic branch that places cultural works, public warnings, hype cycles, AI winters, and safety institutions alongside technical milestones.",
+        "zh": "一个把文化作品、公共预警、狂热周期、AI 寒冬与安全机构并置到技术里程碑旁边的专题分支。"
+      },
+      "how": {
+        "en": "The branch uses an emotional cycle map rather than a single invention: prophecy, ethical rule-making, overconfidence, disillusionment, dread, and defensive action.",
+        "zh": "这个分支不是解释单一发明，而是用情绪周期图串联预言、伦理规则、过度自信、幻灭、忧惧与防御性行动。"
+      },
+      "why": {
+        "en": "It helps viewers see that AI progress was shaped by funding moods, fiction, institutional trust, and public risk imagination as much as by algorithms.",
+        "zh": "它帮助观众看到：AI 的进展不仅由算法塑造，也受到资金情绪、科幻想象、机构信任与公众风险想象的影响。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Chronological emotional-cycle mapping",
+        "zh": "按时间展开的情绪周期映射"
+      },
+      "artifact": {
+        "en": "Introductory branch map",
+        "zh": "分支导言图"
+      },
+      "material": {
+        "en": "Primary cultural works, historical reports, safety statements, and institutional announcements",
+        "zh": "文化原作、历史报告、安全声明与机构公告"
+      },
+      "demo": {
+        "en": "Follow the curve from prophecy to governance and connect each mood to a later technical or institutional response.",
+        "zh": "沿着曲线从预言走向治理，把每种情绪与后来的技术或制度回应连接起来。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Dystopian prophecy",
+            "zh": "反乌托邦预言"
+          },
+          "text": {
+            "en": "Machines as labor replacement and creator backlash.",
+            "zh": "机器作为劳动替代与造物反噬。"
+          }
+        },
+        {
+          "label": {
+            "en": "Ethical rule-making",
+            "zh": "伦理规则化"
+          },
+          "text": {
+            "en": "Attempts to encode obedience and safety into intelligent agents.",
+            "zh": "试图把服从与安全编码进智能体。"
+          }
+        },
+        {
+          "label": {
+            "en": "AI winter",
+            "zh": "AI 寒冬"
+          },
+          "text": {
+            "en": "When promises exceed capability, support and trust can contract.",
+            "zh": "当承诺超过能力，支持与信任会收缩。"
+          }
+        },
+        {
+          "label": {
+            "en": "Safety action",
+            "zh": "安全行动"
+          },
+          "text": {
+            "en": "Warnings turn into institutions, statements, and governance work.",
+            "zh": "警告转化为机构、声明与治理工作。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Turing Test",
+          "zh": "图灵测试"
+        },
+        {
+          "en": "Dartmouth Workshop",
+          "zh": "达特茅斯会议"
+        },
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "Large language models",
+          "zh": "大语言模型"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Global",
+          "zh": "全球"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Read the cultural trigger",
+          "zh": "阅读文化触发点"
+        },
+        {
+          "en": "Locate the emotional label",
+          "zh": "定位情绪标签"
+        },
+        {
+          "en": "Connect it to technical history",
+          "zh": "连接到技术史"
+        },
+        {
+          "en": "Compare the governance response",
+          "zh": "比较治理回应"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "narrative cue",
+            "zh": "叙事线索"
+          },
+          "text": {
+            "en": "The curve groups milestones by recurring public moods rather than by algorithm family.",
+            "zh": "这条曲线按反复出现的公共情绪组织里程碑，而不是按算法家族组织。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Use the branch timeline to compare how a fictional image, a scientific warning, and a safety institution answer the same question: what should humans allow AI to become?",
+            "zh": "使用分支时间线比较科幻想象、科学预警与安全机构如何回答同一个问题：人类应允许 AI 成为什么？"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "MIT Press Reader",
+            "zh": "麻省理工学院出版社 Reader"
+          },
+          "title": {
+            "en": "The Czech Play That Gave Us the Word Robot",
+            "zh": "赋予我们 robot 一词的捷克戏剧"
+          },
+          "description": {
+            "en": "Context on R.U.R. and the origin of the robot vocabulary.",
+            "zh": "关于《罗素姆的万能机器人》与 robot 一词来源的背景资料。"
+          },
+          "url": "https://thereader.mitpress.mit.edu/origin-word-robot-rur/",
+          "source": "https://thereader.mitpress.mit.edu/origin-word-robot-rur/",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch introduction",
+            "zh": "AI 文化、人文与伦理分支导言的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Cultural source",
+            "zh": "文化资料"
+          },
+          "label": {
+            "en": "MIT Press Reader on R.U.R.",
+            "zh": "麻省理工学院出版社 Reader：《R.U.R.》"
+          },
+          "url": "https://thereader.mitpress.mit.edu/origin-word-robot-rur/"
+        },
+        {
+          "type": {
+            "en": "Literary source",
+            "zh": "文学资料"
+          },
+          "label": {
+            "en": "MCLC Resource Center: Little Smarty Travels to the Future",
+            "zh": "MCLC 资源中心：《小灵通漫游未来》"
+          },
+          "url": "https://u.osu.edu/mclc/online-series/little-smarty-intro/"
+        },
+        {
+          "type": {
+            "en": "Institutional announcement",
+            "zh": "机构公告"
+          },
+          "label": {
+            "en": "Introducing OpenAI",
+            "zh": "OpenAI 创立公告"
+          },
+          "url": "https://openai.com/index/introducing-openai/"
+        },
+        {
+          "type": {
+            "en": "Safety statement",
+            "zh": "安全声明"
+          },
+          "label": {
+            "en": "Statement on AI Risk",
+            "zh": "AI 风险声明"
+          },
+          "url": "https://aistatement.com/"
+        }
+      ]
+    }
   },
   {
     "id": "milestone-gaming-ai-1951-strachey-draughts",
