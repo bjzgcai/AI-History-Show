@@ -195,6 +195,22 @@ module.exports = {
   ],
   "branches": [
     {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      },
+      "subtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+      },
+      "events": [
+        "1920-rur-robots",
+        "1965-simon-ai-prediction",
+        "1973-lighthill-report"
+      ]
+    },
+    {
       "id": "gaming-ai",
       "name": {
         "en": "AI in Board & Tabletop Games",
