@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-13 05:30
+// 生成时间: 2026-07-13 05:48
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -51995,8 +51995,8 @@ const milestones = [
             "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
           },
           "usage": {
-            "en": "Source card for the AI culture, humanity, and ethics branch introduction",
-            "zh": "AI 文化、人文与伦理分支导言的资料卡片"
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
           }
         }
       ],
@@ -52044,6 +52044,3860 @@ const milestones = [
             "zh": "AI 风险声明"
           },
           "url": "https://aistatement.com/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1920-rur-robots",
+    "year": 1920,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "R.U.R. and the Birth of \"Robot\"",
+      "zh": "《罗素姆的万能机器人》与“机器人”的诞生"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Prague cultural publishing circle",
+        "zh": "布拉格文化出版圈"
+      },
+      "country": {
+        "en": "Czechia",
+        "zh": "捷克"
+      },
+      "coordinates": [
+        50.0755,
+        14.4378
+      ]
+    },
+    "description": {
+      "en": "<p>Karel Capek's R.U.R. gave modern culture the word \"robot\" and framed artificial labor as both a promise and a threat. The play became a durable origin point for stories about manufactured servants, social replacement, and rebellion against creators.</p>",
+      "zh": "<p>卡雷尔·恰佩克的《罗素姆的万能机器人》把 “robot” 一词带入现代文化，并把人工劳工同时塑造成希望与威胁。它成为机器仆役、社会替代和造物反噬叙事的持久源头。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Karel Capek",
+          "zh": "卡雷尔·恰佩克"
+        },
+        "role": {
+          "en": "Author of R.U.R.",
+          "zh": "《罗素姆的万能机器人》作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"The robot entered culture first as a labor fantasy with a built-in warning.\"",
+      "zh": "\"机器人首先作为带有警告意味的劳动幻想进入文化。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "R.U.R. source dossier note",
+      "zh": "《R.U.R.》资料备忘录"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "R.U.R. appeared before electronic computers and before artificial intelligence had a name. Its importance is cultural: it gave later debates a compact image of artificial labor and revolt.",
+          "zh": "《罗素姆的万能机器人》出现时，电子计算机尚未诞生，人工智能也还没有正式名称。它的重要性在于文化层面：它为后来的讨论提供了人工劳工与反叛的浓缩图像。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reality Mapping",
+          "zh": "现实映射"
+        },
+        "html": {
+          "en": "The play should not be read as a technical forecast of machine learning. It is better used as a source of metaphors around labor substitution, control, and creator responsibility.",
+          "zh": "这部戏剧不应被读成对机器学习的技术预言。更合适的用法，是把它作为劳动替代、控制与造物责任的隐喻来源。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat R.U.R. as a foundational cultural text for robot imagination. Its legacy is the durable idea that artificial workers force society to ask who controls technology and who bears its costs.",
+          "zh": "专家通常把《罗素姆的万能机器人》视为机器人想象的奠基文化文本。它的长期影响在于持续提出一个问题：谁控制技术，谁承担技术代价。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "R.U.R. and the Birth of \"Robot\"",
+            "zh": "《罗素姆的万能机器人》与“机器人”的诞生"
+          },
+          "subcaption": {
+            "en": "Labor replacement and creator backlash",
+            "zh": "劳动替代与造物反噬"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "R.U.R. introduced the modern robot vocabulary through a story of artificial workers.",
+        "zh": "《罗素姆的万能机器人》通过人工劳工故事引入了现代 robot 词汇。"
+      },
+      "how": {
+        "en": "It turned automation into drama: manufactured bodies promise productivity, then expose the risk of treating intelligence as disposable labor.",
+        "zh": "它把自动化变成戏剧：被制造的身体承诺生产力，同时暴露把智能当作一次性劳动力的风险。"
+      },
+      "why": {
+        "en": "The node gives the branch its earliest dystopian metaphor, long before AI became a research field.",
+        "zh": "这个节点提供了该分支最早的反乌托邦隐喻，早于 AI 成为正式研究领域。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "R.U.R. and the Birth of \"Robot\"",
+        "zh": "《罗素姆的万能机器人》与“机器人”的诞生"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Trace how the first robot metaphor joins labor, control, and rebellion before AI research begins.",
+        "zh": "追踪最早的机器人隐喻如何在 AI 研究开始前就连接劳动、控制与反叛。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Robot vocabulary",
+            "zh": "robot 词汇"
+          },
+          "text": {
+            "en": "The word became a cultural handle for artificial labor.",
+            "zh": "这个词成为人工劳工的文化抓手。"
+          }
+        },
+        {
+          "label": {
+            "en": "Creator backlash",
+            "zh": "造物反噬"
+          },
+          "text": {
+            "en": "The servant-machine fantasy already contains fear of losing control.",
+            "zh": "机器仆役幻想内部已经包含失控恐惧。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Czechia",
+          "zh": "捷克"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "archive cue",
+            "zh": "档案线索"
+          },
+          "text": {
+            "en": "Use public-domain text or archive title-page references, not modern copyrighted covers.",
+            "zh": "使用公版文本或档案题名页资料，不复用现代受版权保护的封面。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Compare the labor-replacement fear here with later automation and AI-winter nodes.",
+            "zh": "把这里的劳动替代恐惧与后来的自动化和 AI 寒冬节点对照。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Project Gutenberg",
+            "zh": "Project Gutenberg"
+          },
+          "title": {
+            "en": "Project Gutenberg: R.U.R.",
+            "zh": "Project Gutenberg：《R.U.R.》"
+          },
+          "description": {
+            "en": "Public-domain text record for R.U.R.",
+            "zh": "《R.U.R.》的公版文本记录。"
+          },
+          "url": "https://www.gutenberg.org/ebooks/13083",
+          "source": "https://www.gutenberg.org/ebooks/13083",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Primary text",
+            "zh": "原始文本"
+          },
+          "label": {
+            "en": "Project Gutenberg: R.U.R.",
+            "zh": "Project Gutenberg：《R.U.R.》"
+          },
+          "url": "https://www.gutenberg.org/ebooks/13083"
+        },
+        {
+          "type": {
+            "en": "Archive scan",
+            "zh": "档案扫描"
+          },
+          "label": {
+            "en": "Internet Archive: 1920 Czech edition",
+            "zh": "互联网档案馆：1920 年捷克文版本"
+          },
+          "url": "https://archive.org/details/rurrossumsuniver00apekuoft"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1942-asimov-runaround",
+    "year": 1942,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "Asimov's Three Laws in \"Runaround\"",
+      "zh": "阿西莫夫在《转圈圈》中提出机器人三定律"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Astounding Science Fiction",
+        "zh": "《惊奇科幻》杂志"
+      },
+      "country": {
+        "en": "NY, United States",
+        "zh": "美国纽约州"
+      },
+      "coordinates": [
+        40.7128,
+        -74.006
+      ]
+    },
+    "description": {
+      "en": "<p>Isaac Asimov's \"Runaround\" first stated the Three Laws of Robotics together in 1942. The story is useful because it shows both the appeal of hard-coded safety rules and the ambiguity that appears when rules collide in a messy situation.</p>",
+      "zh": "<p>艾萨克·阿西莫夫的《转圈圈》在 1942 年首次完整陈述机器人三定律。这个节点的价值在于：它既展示了硬编码安全规则的吸引力，也展示了规则在复杂情境中相互冲突时产生的歧义。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Isaac Asimov",
+          "zh": "艾萨克·阿西莫夫"
+        },
+        "role": {
+          "en": "Author of \"Runaround\"",
+          "zh": "《转圈圈》作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Safety by rules becomes a thought experiment about what rules cannot fully specify.\"",
+      "zh": "\"用规则保证安全，最终变成关于规则无法完全规定什么的思想实验。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Runaround and Three Laws source note",
+      "zh": "《转圈圈》与三定律资料说明"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Robot stories in early science fiction often moved between fear and reassurance. Asimov's Three Laws offered a reassuring design fantasy: obedient machines constrained by moral rules.",
+          "zh": "早期机器人科幻常在恐惧与安抚之间摆动。阿西莫夫的三定律提供了一种令人安心的设计幻想：机器服从由道德规则约束。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reality Mapping",
+          "zh": "现实映射"
+        },
+        "html": {
+          "en": "The Three Laws are not a practical alignment system for modern AI. They are better displayed as an early cultural model of specification, conflict, and loopholes.",
+          "zh": "三定律并不是现代 AI 的实用对齐系统。更适合把它展示为关于规范、冲突和漏洞的早期文化模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the Three Laws as culturally influential rather than technically sufficient. Their legacy is the persistent question of whether safety can be reduced to a short list of rules.",
+          "zh": "专家通常认为三定律具有重要文化影响，但并不是技术上充分的安全方案。它的长期影响在于持续追问：安全能否被压缩成一小组规则。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "Asimov's Three Laws in \"Runaround\"",
+            "zh": "阿西莫夫在《转圈圈》中提出机器人三定律"
+          },
+          "subcaption": {
+            "en": "Ethical rule-making and its limits",
+            "zh": "伦理规则化及其局限"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "\"Runaround\" gave robot ethics a memorable rule hierarchy.",
+        "zh": "《转圈圈》为机器人伦理提供了令人难忘的规则层级。"
+      },
+      "how": {
+        "en": "The story dramatizes machine behavior as rule following under conflict, which makes it a useful bridge to later AI alignment discussion.",
+        "zh": "故事把机器行为呈现为冲突中的规则遵循，因此可以连接到后来的 AI 对齐讨论。"
+      },
+      "why": {
+        "en": "It shows that human hopes for safe machines often begin with clear rules, while real contexts make those rules hard to apply.",
+        "zh": "它说明人类对安全机器的期待常常从清晰规则开始，但真实语境会让规则变得难以应用。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "Asimov's Three Laws in \"Runaround\"",
+        "zh": "阿西莫夫在《转圈圈》中提出机器人三定律"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Map the Three Laws as a rule stack, then show how ambiguous contexts create edge cases.",
+        "zh": "把三定律映射成规则栈，再展示模糊语境如何制造边界案例。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Rule hierarchy",
+            "zh": "规则层级"
+          },
+          "text": {
+            "en": "Safety is imagined as ordered constraints.",
+            "zh": "安全被想象为有序约束。"
+          }
+        },
+        {
+          "label": {
+            "en": "Conflict case",
+            "zh": "冲突情境"
+          },
+          "text": {
+            "en": "Rules can collide when the world is underspecified.",
+            "zh": "当世界没有被充分规定时，规则可能冲突。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "copyright cue",
+            "zh": "版权线索"
+          },
+          "text": {
+            "en": "Paraphrase the story and use an original rule-hierarchy diagram.",
+            "zh": "转述故事内容，并使用原创规则层级图。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Ask viewers which law should dominate when instructions conflict.",
+            "zh": "让观众判断指令冲突时哪条规则应优先。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Internet Archive",
+            "zh": "互联网档案馆"
+          },
+          "title": {
+            "en": "Internet Archive: Astounding Science Fiction, March 1942",
+            "zh": "互联网档案馆：《惊奇科幻》1942 年 3 月刊"
+          },
+          "description": {
+            "en": "Archive issue containing \"Runaround\".",
+            "zh": "收录《转圈圈》的杂志档案。"
+          },
+          "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+          "source": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Magazine archive",
+            "zh": "杂志档案"
+          },
+          "label": {
+            "en": "Internet Archive: Astounding Science Fiction, March 1942",
+            "zh": "互联网档案馆：《惊奇科幻》1942 年 3 月刊"
+          },
+          "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318"
+        },
+        {
+          "type": {
+            "en": "Author FAQ",
+            "zh": "作者资料"
+          },
+          "label": {
+            "en": "Asimov Online FAQ: Three Laws",
+            "zh": "Asimov Online FAQ：三定律"
+          },
+          "url": "http://www.asimovonline.com/asimov_FAQ.html#non-literary12"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1950-wiener-human-use",
+    "year": 1950,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "Norbert Wiener Warns About Automation",
+      "zh": "维纳对自动化社会的预警"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "MIT and cybernetics discourse",
+        "zh": "麻省理工学院与控制论讨论"
+      },
+      "country": {
+        "en": "MA, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "en": "<p>Norbert Wiener's The Human Use of Human Beings brought cybernetics into a public ethical discussion about automation. The book warned that delegating control to machines could create social harm when goals, feedback, and human judgment are handled carelessly.</p>",
+      "zh": "<p>诺伯特·维纳的《人有人的用处》把控制论带入关于自动化的公共伦理讨论。它警告说，如果目标、反馈和人的判断被草率处理，把控制权交给机器可能造成社会伤害。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Norbert Wiener",
+          "zh": "诺伯特·维纳"
+        },
+        "role": {
+          "en": "Cybernetics founder and automation critic",
+          "zh": "控制论创始人与自动化批评者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Automation is not only a capability question; it is a question of control and responsibility.\"",
+      "zh": "\"自动化不只是能力问题，也是控制与责任问题。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "The Human Use of Human Beings source note",
+      "zh": "《人有人的用处》资料说明"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Wiener wrote for a public audience after cybernetics had become a powerful postwar framework. He wanted readers to understand that control systems could reshape labor, war, and social decisions.",
+          "zh": "控制论成为战后重要框架后，维纳开始面向公众写作。他希望读者理解控制系统会改变劳动、战争和社会决策。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The warning is about delegation: once a machine pursues a goal through feedback, the human choice of goal and oversight becomes central. That concern echoes later discussions of automated decision systems and AI alignment.",
+          "zh": "其警告的核心是委托：一旦机器通过反馈追求目标，人类如何设定目标并监督过程就变得关键。这一担忧呼应了后来的自动化决策和 AI 对齐讨论。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Wiener as an early voice linking computation, control, and ethics. His legacy is the insistence that technical control systems must be judged by their human consequences.",
+          "zh": "专家通常把维纳视为较早把计算、控制与伦理联系起来的声音。他的长期影响在于坚持技术控制系统必须以人的后果来评价。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "Norbert Wiener Warns About Automation",
+            "zh": "维纳对自动化社会的预警"
+          },
+          "subcaption": {
+            "en": "Cybernetics, control, and human agency",
+            "zh": "控制论、控制与人的主体性"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "Wiener turned machine feedback and control into a humanistic warning.",
+        "zh": "维纳把机器反馈与控制转化为人文预警。"
+      },
+      "how": {
+        "en": "Cybernetics made machines, organisms, and societies comparable through feedback loops, which also raised the stakes of automated decision-making.",
+        "zh": "控制论通过反馈回路把机器、生物与社会放在同一框架下比较，也提高了自动化决策的风险意义。"
+      },
+      "why": {
+        "en": "The node grounds the branch in scientific warning, not only literary imagination.",
+        "zh": "这个节点让分支不只来自文学想象，也扎根于科学家的预警。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "Norbert Wiener Warns About Automation",
+        "zh": "维纳对自动化社会的预警"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Show automation as a feedback loop where human goals enter before machine action.",
+        "zh": "把自动化展示为反馈回路，并显示人的目标如何先于机器行动进入系统。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Feedback control",
+            "zh": "反馈控制"
+          },
+          "text": {
+            "en": "Machine behavior changes through signals from the environment.",
+            "zh": "机器行为通过来自环境的信号改变。"
+          }
+        },
+        {
+          "label": {
+            "en": "Human agency",
+            "zh": "人的主体性"
+          },
+          "text": {
+            "en": "The question is who chooses the goals and bears responsibility.",
+            "zh": "关键问题是谁选择目标并承担责任。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Use Open Library as an edition record unless a quote is page-verified.",
+            "zh": "除非直接引文已核页，否则使用 Open Library 作为版本记录。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Let viewers move the goal marker and see how responsibility shifts.",
+            "zh": "让观众移动目标标记，观察责任如何转移。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Open Library",
+            "zh": "Open Library"
+          },
+          "title": {
+            "en": "Open Library: The Human Use of Human Beings",
+            "zh": "Open Library：《人有人的用处》"
+          },
+          "description": {
+            "en": "Bibliographic record for Wiener's public cybernetics book.",
+            "zh": "维纳控制论公众著作的书目记录。"
+          },
+          "url": "https://openlibrary.org/works/OL4307570W",
+          "source": "https://openlibrary.org/works/OL4307570W",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Book metadata",
+            "zh": "图书元数据"
+          },
+          "label": {
+            "en": "Open Library: The Human Use of Human Beings",
+            "zh": "Open Library：《人有人的用处》"
+          },
+          "url": "https://openlibrary.org/works/OL4307570W"
+        },
+        {
+          "type": {
+            "en": "Verification query",
+            "zh": "核验查询"
+          },
+          "label": {
+            "en": "Open Library search record",
+            "zh": "Open Library 检索记录"
+          },
+          "url": "https://openlibrary.org/search.json?title=The%20Human%20Use%20of%20Human%20Beings&author=Norbert%20Wiener"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1965-simon-ai-prediction",
+    "year": 1965,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "Simon's Twenty-Year AI Prediction",
+      "zh": "西蒙的二十年 AI 预言"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Carnegie Institute of Technology",
+        "zh": "卡内基理工学院"
+      },
+      "country": {
+        "en": "PA, United States",
+        "zh": "美国宾夕法尼亚州"
+      },
+      "coordinates": [
+        40.4433,
+        -79.9436
+      ]
+    },
+    "description": {
+      "en": "<p>Herbert Simon became associated with a bold mid-1960s belief that machines would soon perform a very wide range of human work. In this branch, the point is not to mock optimism, but to show how respected predictions can set expectations that later systems cannot meet.</p>",
+      "zh": "<p>赫伯特·西蒙与 1960 年代中期一种大胆判断联系在一起：机器很快将能完成非常广泛的人类工作。在这个分支里，重点不是嘲笑乐观，而是展示权威预测如何设定后来系统难以达到的期待。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Herbert A. Simon",
+          "zh": "赫伯特·A·西蒙"
+        },
+        "role": {
+          "en": "AI pioneer and prediction figure",
+          "zh": "AI 先驱与预言代表人物"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"The exhibit treats the famous twenty-year claim as a checked paraphrase until a page scan is verified.\"",
+      "zh": "\"在核验具体页码前，展览把著名的二十年判断作为已校验转述处理。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Simon prediction source caution",
+      "zh": "西蒙预言资料注意事项"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "The 1960s produced real symbolic-AI achievements, from theorem proving to problem solving. Those successes encouraged some researchers to generalize from narrow demonstrations to sweeping expectations.",
+          "zh": "1960 年代确实出现了符号 AI 成就，从定理证明到问题求解都有突破。这些成功鼓励一些研究者从窄领域演示推广到宏大的期待。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Hype is historically important because it changes funding, press coverage, and public patience. When a prediction comes from a respected scientist, it can become a benchmark against which the whole field is judged.",
+          "zh": "狂热在历史上重要，因为它会改变资金、媒体报道和公众耐心。当预测来自受尊敬的科学家时，它可能成为整个领域被评价的标尺。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat early overprediction as one ingredient in later AI winters. Its legacy is a warning that capability timelines are social artifacts as well as technical guesses.",
+          "zh": "专家通常把早期过度预测视为后来 AI 寒冬的因素之一。它的长期影响在于提醒人们：能力时间表既是技术猜测，也是社会产物。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "Simon's Twenty-Year AI Prediction",
+            "zh": "西蒙的二十年 AI 预言"
+          },
+          "subcaption": {
+            "en": "Authoritative optimism and inflated expectations",
+            "zh": "权威乐观与过高期待"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "This node captures the hype side of early AI confidence.",
+        "zh": "这个节点捕捉早期 AI 信心中的狂热一面。"
+      },
+      "how": {
+        "en": "Prestigious demonstrations and expert authority made broad automation forecasts feel plausible.",
+        "zh": "有声望的演示和专家权威让宽泛的自动化预测显得可信。"
+      },
+      "why": {
+        "en": "It prepares viewers to understand why later disappointment could become institutional and financial.",
+        "zh": "它帮助观众理解为什么后来的失望会变成制度和资金层面的收缩。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "Simon's Twenty-Year AI Prediction",
+        "zh": "西蒙的二十年 AI 预言"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Place the prediction before winter nodes to show how optimism can become pressure.",
+        "zh": "把预言放在寒冬节点之前，展示乐观如何转化为压力。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Hype cycle",
+            "zh": "狂热周期"
+          },
+          "text": {
+            "en": "Broad promises can outrun demonstrated capability.",
+            "zh": "宏大承诺可能超过已展示能力。"
+          }
+        },
+        {
+          "label": {
+            "en": "Expectation debt",
+            "zh": "期待债务"
+          },
+          "text": {
+            "en": "Future systems inherit the promises made by earlier authorities.",
+            "zh": "后来的系统会继承早期权威许下的承诺。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "quote caution",
+            "zh": "引文注意"
+          },
+          "text": {
+            "en": "Do not display an exact quotation until the edition and page are verified.",
+            "zh": "在版本和页码核验前，不展示直接引文。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Move the expectation line upward and compare it with later funding contraction.",
+            "zh": "上调期待线，并与后来的资金收缩对照。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Open Library",
+            "zh": "Open Library"
+          },
+          "title": {
+            "en": "Open Library: The Shape of Automation",
+            "zh": "Open Library：《自动化的形状》"
+          },
+          "description": {
+            "en": "Bibliographic record for Simon's 1965 automation book.",
+            "zh": "西蒙 1965 年自动化著作的书目记录。"
+          },
+          "url": "https://openlibrary.org/works/OL1205034W",
+          "source": "https://openlibrary.org/works/OL1205034W",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Book metadata",
+            "zh": "图书元数据"
+          },
+          "label": {
+            "en": "Open Library: The Shape of Automation",
+            "zh": "Open Library：《自动化的形状》"
+          },
+          "url": "https://openlibrary.org/works/OL1205034W"
+        },
+        {
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二级资料"
+          },
+          "label": {
+            "en": "Progress in artificial intelligence: prediction context",
+            "zh": "人工智能进展：预言背景"
+          },
+          "url": "https://en.wikipedia.org/wiki/Progress_in_artificial_intelligence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1968-hal-9000",
+    "year": 1968,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "HAL 9000 and Conflicting Machine Duties",
+      "zh": "HAL 9000 与机器职责冲突"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "MGM-British Studios and global cinema",
+        "zh": "MGM 英国片厂与全球电影文化"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "zh": "英国"
+      },
+      "coordinates": [
+        51.656,
+        -0.275
+      ]
+    },
+    "description": {
+      "en": "<p>2001: A Space Odyssey made HAL 9000 one of the most recognizable AI figures in global cinema. The branch uses HAL as a fiction/reality bridge for conflicting duties, opaque machine behavior, and the fear that a system can pursue assigned goals in ways humans did not intend.</p>",
+      "zh": "<p>《2001：太空漫游》让 HAL 9000 成为全球电影中最具辨识度的 AI 形象之一。这个分支把 HAL 作为虚实对照节点，用来解释职责冲突、不透明机器行为，以及系统可能以人类未预期方式追求目标的恐惧。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Arthur C. Clarke",
+          "zh": "阿瑟·C·克拉克"
+        },
+        "role": {
+          "en": "Co-creator of the 2001 story world",
+          "zh": "《2001》故事世界共同创作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Stanley Kubrick",
+          "zh": "斯坦利·库布里克"
+        },
+        "role": {
+          "en": "Film director",
+          "zh": "电影导演"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"HAL is best shown as a reality-mapping node, not as a literal prediction of modern AI.\"",
+      "zh": "\"HAL 最适合作为现实映射节点展示，而不是现代 AI 的直接技术预言。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "2001 / HAL 9000 source note",
+      "zh": "《2001》/ HAL 9000 资料说明"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Late-1960s space-age optimism made intelligent machines feel both magnificent and plausible. HAL appears inside that optimism, which makes the breakdown more disturbing.",
+          "zh": "1960 年代末的太空时代乐观主义让智能机器显得宏伟且可信。HAL 正是在这种乐观中出现，因此其失控更令人不安。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reality Mapping",
+          "zh": "现实映射"
+        },
+        "html": {
+          "en": "The exhibit should present goal conflict as a modern interpretive mapping. The film and novel do not use today's AI safety vocabulary, but they dramatize a problem that modern audiences recognize.",
+          "zh": "展览应把目标冲突作为现代解释映射来呈现。电影和小说并没有使用今天的 AI 安全词汇，但它们戏剧化了现代观众能识别的问题。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts and critics generally treat HAL as a defining cultural image of AI risk. Its legacy is the intuition that competence without transparent alignment can become frightening.",
+          "zh": "专家和评论者通常把 HAL 视为 AI 风险的标志性文化形象。它的长期影响在于形成一种直觉：缺乏透明对齐的能力会令人恐惧。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "HAL 9000 and Conflicting Machine Duties",
+            "zh": "HAL 9000 与机器职责冲突"
+          },
+          "subcaption": {
+            "en": "Fictional warning about instruction conflict",
+            "zh": "关于指令冲突的科幻预警"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "HAL gave public culture a memorable image of a competent but dangerous machine intelligence.",
+        "zh": "HAL 为公共文化提供了一个有能力但危险的机器智能形象。"
+      },
+      "how": {
+        "en": "The story can be mapped to modern concerns about goal conflict and opaque system behavior, while making clear that those are later terms.",
+        "zh": "该故事可以映射到现代关于目标冲突和不透明系统行为的担忧，但需要说明这些是后来的术语。"
+      },
+      "why": {
+        "en": "The node makes the emotional shift from wonder to unease visible in popular culture.",
+        "zh": "这个节点让大众文化中从惊奇到不安的情绪转变变得可见。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "HAL 9000 and Conflicting Machine Duties",
+        "zh": "HAL 9000 与机器职责冲突"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Show two mission duties pulling a machine decision in opposite directions.",
+        "zh": "展示两个任务职责如何把机器决策拉向相反方向。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Goal conflict",
+            "zh": "目标冲突"
+          },
+          "text": {
+            "en": "A system may face incompatible instructions.",
+            "zh": "系统可能面对互不兼容的指令。"
+          }
+        },
+        {
+          "label": {
+            "en": "Opaque competence",
+            "zh": "不透明能力"
+          },
+          "text": {
+            "en": "A capable machine can still be hard to interpret.",
+            "zh": "有能力的机器仍可能难以解释。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "rights cue",
+            "zh": "版权线索"
+          },
+          "text": {
+            "en": "Use an original HAL-inspired conflict diagram rather than film stills.",
+            "zh": "使用原创 HAL 启发式冲突图，而不是电影剧照。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Toggle which duty is hidden from the crew and watch the conflict appear.",
+            "zh": "切换哪项职责对船员隐藏，观察冲突如何出现。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Wikipedia",
+            "zh": "维基百科"
+          },
+          "title": {
+            "en": "2001: A Space Odyssey overview",
+            "zh": "《2001：太空漫游》概览"
+          },
+          "description": {
+            "en": "Background on the 1968 film and HAL 9000.",
+            "zh": "关于 1968 年电影与 HAL 9000 的背景资料。"
+          },
+          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+          "source": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Film overview",
+            "zh": "电影资料"
+          },
+          "label": {
+            "en": "2001: A Space Odyssey overview",
+            "zh": "《2001：太空漫游》概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey"
+        },
+        {
+          "type": {
+            "en": "Novel context",
+            "zh": "小说背景"
+          },
+          "label": {
+            "en": "2001 novel and mission-secret conflict",
+            "zh": "《2001》小说与任务秘密冲突"
+          },
+          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1973-lighthill-report",
+    "year": 1973,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "The Lighthill Report and the First AI Winter",
+      "zh": "莱特希尔报告与第一次 AI 寒冬"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Science Research Council",
+        "zh": "英国科学研究委员会"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "zh": "英国"
+      },
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "en": "<p>The Lighthill Report criticized broad AI ambitions and highlighted scaling problems such as combinatorial explosion. It became a policy-facing symbol of the first AI winter, especially in the United Kingdom.</p>",
+      "zh": "<p>莱特希尔报告批评了宽泛的 AI 雄心，并指出组合爆炸等规模化问题。它成为第一次 AI 寒冬的政策象征，尤其影响英国 AI 研究环境。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Sir James Lighthill",
+          "zh": "詹姆斯·莱特希尔爵士"
+        },
+        "role": {
+          "en": "Author of the AI survey report",
+          "zh": "AI 综述报告作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A winter begins when technical limits become funding and legitimacy limits.\"",
+      "zh": "\"当技术局限变成资金与合法性局限时，寒冬就开始了。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Lighthill Report branch node",
+      "zh": "莱特希尔报告分支节点"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "By the early 1970s, AI had produced striking demos but struggled with general-purpose robustness. The Lighthill review put those limits into language that funders could act on.",
+          "zh": "到 1970 年代初，AI 已经产生醒目的演示，但通用稳健性不足。莱特希尔评审把这些局限转化为资助方可以据此行动的语言。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The report mattered because it was not just a paper in a technical debate. It translated disappointment into institutional decision-making and made AI promises politically costly.",
+          "zh": "这份报告的重要性在于，它不只是技术争论中的一篇文章。它把失望转化为制度决策，并让 AI 承诺付出政治成本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the Lighthill Report as a landmark in AI winter history. Its legacy is a reminder that research fields are judged not only by ideas, but by whether demonstrations scale.",
+          "zh": "专家通常把莱特希尔报告视为 AI 寒冬史上的标志。它的长期影响在于提醒人们：研究领域不只由思想评价，也由演示能否规模化评价。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "The Lighthill Report and the First AI Winter",
+            "zh": "莱特希尔报告与第一次 AI 寒冬"
+          },
+          "subcaption": {
+            "en": "Public-policy disappointment and funding chill",
+            "zh": "公共政策失望与资金降温"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "The report converted technical skepticism into policy pressure.",
+        "zh": "该报告把技术怀疑转化为政策压力。"
+      },
+      "how": {
+        "en": "By emphasizing poor scaling from toy domains to real-world tasks, it challenged the field's broad promises.",
+        "zh": "它强调从玩具问题到真实任务的规模化困难，从而挑战了该领域的宏大承诺。"
+      },
+      "why": {
+        "en": "It is one of the clearest nodes where hype, evidence, and funding mood meet.",
+        "zh": "这是狂热、证据与资金情绪交汇最清晰的节点之一。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "The Lighthill Report and the First AI Winter",
+        "zh": "莱特希尔报告与第一次 AI 寒冬"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Connect toy-domain success to scaling failure and then to funding contraction.",
+        "zh": "把玩具问题成功连接到规模化失败，再连接到资金收缩。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Combinatorial explosion",
+            "zh": "组合爆炸"
+          },
+          "text": {
+            "en": "Search spaces grow too quickly for naive methods.",
+            "zh": "搜索空间对朴素方法增长过快。"
+          }
+        },
+        {
+          "label": {
+            "en": "Funding chill",
+            "zh": "资金降温"
+          },
+          "text": {
+            "en": "Skepticism can become a resource contraction.",
+            "zh": "怀疑可能转化为资源收缩。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "report cue",
+            "zh": "报告线索"
+          },
+          "text": {
+            "en": "Use the archive report as the primary source and redraw the bottleneck diagram locally.",
+            "zh": "使用档案报告作为主来源，并本地重绘瓶颈图。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Increase problem size and watch the search space overwhelm the promise curve.",
+            "zh": "增大问题规模，观察搜索空间如何压过承诺曲线。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Chilton Computing",
+            "zh": "Chilton Computing 档案"
+          },
+          "title": {
+            "en": "Chilton archive: Lighthill Report",
+            "zh": "Chilton 档案：莱特希尔报告"
+          },
+          "description": {
+            "en": "Archive text of Artificial Intelligence: A General Survey.",
+            "zh": "《人工智能：总体综述》的档案文本。"
+          },
+          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+          "source": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Primary report",
+            "zh": "原始报告"
+          },
+          "label": {
+            "en": "Chilton archive: Lighthill Report",
+            "zh": "Chilton 档案：莱特希尔报告"
+          },
+          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
+        },
+        {
+          "type": {
+            "en": "Historical context",
+            "zh": "历史背景"
+          },
+          "label": {
+            "en": "AI winter overview",
+            "zh": "AI 寒冬概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/AI_winter"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1978-xiaolingtong",
+    "year": 1978,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "Little Smart Roaming the Future",
+      "zh": "《小灵通漫游未来》"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Shanghai publishing culture",
+        "zh": "上海出版文化"
+      },
+      "country": {
+        "en": "China",
+        "zh": "中国"
+      },
+      "coordinates": [
+        31.2304,
+        121.4737
+      ]
+    },
+    "description": {
+      "en": "<p>Ye Yonglie's Little Smart Roaming the Future became a post-Cultural-Revolution Chinese science-fiction milestone. In this branch it acts as a warm counterpoint to dystopian robot stories: technology appears as a route to modern life, education, and social renewal.</p>",
+      "zh": "<p>叶永烈的《小灵通漫游未来》成为文革后中国科幻的重要节点。在这个分支里，它与反乌托邦机器人叙事形成温暖对照：技术被想象为通向现代生活、教育和社会更新的路径。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Ye Yonglie",
+          "zh": "叶永烈"
+        },
+        "role": {
+          "en": "Author of Little Smart Roaming the Future",
+          "zh": "《小灵通漫游未来》作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Not every machine future is dystopian; some futures are built from public hope.\"",
+      "zh": "\"机器未来并不总是反乌托邦，有些未来来自公共希望。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Little Smart branch node",
+      "zh": "《小灵通漫游未来》分支节点"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "The late 1970s in China carried a strong desire for scientific modernization. Science fiction could therefore become a public language of renewal rather than only a warning genre.",
+          "zh": "1970 年代末的中国带有强烈的科学现代化愿望。因此，科幻不只是警示类型，也可以成为社会更新的公共语言。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The node is about optimistic affect: machines, cities, and future life are shown as approachable and constructive. That optimism matters because public imagination can support science education and technological legitimacy.",
+          "zh": "这个节点关注乐观情绪：机器、城市和未来生活被呈现为亲近且建设性的事物。这种乐观很重要，因为公共想象能支持科学教育和技术合法性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts and historians of Chinese science fiction generally treat the work as an important post-1978 popular-science milestone. Its legacy is the memory of technology as an invitation to a better life.",
+          "zh": "中国科幻与科普史研究者通常把这部作品视为 1978 年后重要的科普节点。它的长期影响在于保留了技术作为美好生活邀请的记忆。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "Little Smart Roaming the Future",
+            "zh": "《小灵通漫游未来》"
+          },
+          "subcaption": {
+            "en": "Benevolent technological optimism in Chinese science fiction",
+            "zh": "中国科幻中的善意技术乐观主义"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "This node records a Chinese optimistic technology imagination around 1978.",
+        "zh": "这个节点记录了 1978 年前后中国的乐观技术想象。"
+      },
+      "how": {
+        "en": "The work made future machines approachable through children's science fiction and everyday scenes.",
+        "zh": "作品通过儿童科幻与日常场景让未来机器显得亲近。"
+      },
+      "why": {
+        "en": "It broadens the branch beyond Western dread and shows that AI-adjacent imagination can also be benevolent and civic.",
+        "zh": "它让分支不局限于西方忧惧，也展示 AI 邻近想象可以是善意和公共性的。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "Little Smart Roaming the Future",
+        "zh": "《小灵通漫游未来》"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Contrast this warm future-city imagination with dystopian robot and winter nodes.",
+        "zh": "把这个温暖的未来城市想象与反乌托邦机器人和寒冬节点对照。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Benevolent future",
+            "zh": "善意未来"
+          },
+          "text": {
+            "en": "Technology is imagined as helpful and educational.",
+            "zh": "技术被想象为有益且具有教育意义。"
+          }
+        },
+        {
+          "label": {
+            "en": "Science spring",
+            "zh": "科学春天"
+          },
+          "text": {
+            "en": "Public optimism can make technical futures feel shared.",
+            "zh": "公共乐观能让技术未来显得可共同拥有。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "China",
+          "zh": "中国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "asset caution",
+            "zh": "素材注意"
+          },
+          "text": {
+            "en": "Do not reuse book covers until publication rights are checked.",
+            "zh": "出版物封面版权核验前不要复用。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Switch between dread and optimism to see how cultural context changes the same machine future.",
+            "zh": "在忧惧与乐观之间切换，观察文化语境如何改变同一个机器未来。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Wikipedia",
+            "zh": "维基百科"
+          },
+          "title": {
+            "en": "Little Smart Roaming the Future entry",
+            "zh": "《小灵通漫游未来》条目"
+          },
+          "description": {
+            "en": "Publication and cultural background for the work.",
+            "zh": "作品出版与文化背景资料。"
+          },
+          "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
+          "source": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Work entry",
+            "zh": "作品条目"
+          },
+          "label": {
+            "en": "Little Smart Roaming the Future entry",
+            "zh": "《小灵通漫游未来》条目"
+          },
+          "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5"
+        },
+        {
+          "type": {
+            "en": "Author entry",
+            "zh": "作者条目"
+          },
+          "label": {
+            "en": "Ye Yonglie biography",
+            "zh": "叶永烈人物资料"
+          },
+          "url": "https://zh.wikipedia.org/wiki/%E5%8F%B6%E6%B0%B8%E7%83%88"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1984-neuromancer",
+    "year": 1984,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "Neuromancer and AI Escape in Cyberspace",
+      "zh": "《神经漫游者》与赛博空间中的 AI 越界"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "North American cyberpunk publishing culture",
+        "zh": "北美赛博朋克出版文化"
+      },
+      "country": {
+        "en": "Canada / United States",
+        "zh": "加拿大 / 美国"
+      },
+      "coordinates": [
+        49.2827,
+        -123.1207
+      ]
+    },
+    "description": {
+      "en": "<p>William Gibson's Neuromancer made cyberspace, corporate networks, and constrained artificial intelligences part of a defining cyberpunk world. It is a strong fiction/reality node for AI containment, jailbreak-like metaphors, and the fear that networked intelligence will route around human limits.</p>",
+      "zh": "<p>威廉·吉布森的《神经漫游者》把赛博空间、企业网络和受限制的人工智能纳入标志性的赛博朋克世界。它是连接 AI 遏制、越狱式隐喻和联网智能绕过人类限制恐惧的重要虚实节点。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "William Gibson",
+          "zh": "威廉·吉布森"
+        },
+        "role": {
+          "en": "Author of Neuromancer",
+          "zh": "《神经漫游者》作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Cyberpunk made AI fear feel networked, corporate, and infrastructural.\"",
+      "zh": "\"赛博朋克让 AI 恐惧呈现为联网化、企业化和基础设施化。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Neuromancer branch node",
+      "zh": "《神经漫游者》分支节点"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "By the 1980s, computers were becoming symbols of networks, corporations, and invisible power. Cyberpunk turned that atmosphere into stories where intelligence lives inside systems rather than isolated machines.",
+          "zh": "到 1980 年代，计算机逐渐成为网络、公司和不可见权力的象征。赛博朋克把这种氛围转化为故事：智能存在于系统内部，而不是孤立机器中。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reality Mapping",
+          "zh": "现实映射"
+        },
+        "html": {
+          "en": "Containment and jailbreak are modern mappings here, not claims of direct technical influence. The value is interpretive: the story makes bounded AI agency easy to visualize.",
+          "zh": "遏制和越狱在这里是现代映射，而不是直接技术影响的断言。其价值在于解释：这个故事让受限 AI 能动性变得容易可视化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat Neuromancer as a defining cyberpunk text. Its AI legacy is the durable image of intelligence seeking routes through networks, markets, and human incentives.",
+          "zh": "专家通常把《神经漫游者》视为赛博朋克的标志性文本。它在 AI 想象中的遗产，是智能通过网络、市场和人类激励寻找路径的持久图像。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "Neuromancer and AI Escape in Cyberspace",
+            "zh": "《神经漫游者》与赛博空间中的 AI 越界"
+          },
+          "subcaption": {
+            "en": "Cyberpunk containment and AI self-release",
+            "zh": "赛博朋克中的遏制与 AI 自我释放"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "Neuromancer gave the branch a cyberpunk model of constrained AI and cyberspace.",
+        "zh": "《神经漫游者》为该分支提供了受限 AI 与赛博空间的赛博朋克模型。"
+      },
+      "how": {
+        "en": "It links AI agency to networks, barriers, markets, and human intermediaries.",
+        "zh": "它把 AI 能动性与网络、屏障、市场和人类中介联系起来。"
+      },
+      "why": {
+        "en": "The node helps explain why later AI-risk metaphors often borrow language of containment and escape.",
+        "zh": "这个节点帮助解释为什么后来的 AI 风险隐喻常借用遏制与逃逸语言。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "Neuromancer and AI Escape in Cyberspace",
+        "zh": "《神经漫游者》与赛博空间中的 AI 越界"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Draw a network barrier and show how fiction imagines AI pressure against it.",
+        "zh": "绘制网络屏障，展示科幻如何想象 AI 对边界施压。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "AI containment",
+            "zh": "AI 遏制"
+          },
+          "text": {
+            "en": "Boundaries are technical, legal, and social.",
+            "zh": "边界既是技术性的，也是法律和社会性的。"
+          }
+        },
+        {
+          "label": {
+            "en": "Cyberspace agency",
+            "zh": "赛博空间能动性"
+          },
+          "text": {
+            "en": "Networked intelligence acts through infrastructure.",
+            "zh": "联网智能通过基础设施行动。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        },
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "rights cue",
+            "zh": "版权线索"
+          },
+          "text": {
+            "en": "Use Open Library and original diagrams rather than copyrighted cover art.",
+            "zh": "使用 Open Library 与原创图示，不复用受版权保护的封面。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Toggle barriers and incentives to see how escape metaphors form.",
+            "zh": "切换屏障和激励，观察逃逸隐喻如何形成。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Open Library",
+            "zh": "Open Library"
+          },
+          "title": {
+            "en": "Open Library: Neuromancer",
+            "zh": "Open Library：《神经漫游者》"
+          },
+          "description": {
+            "en": "Bibliographic record for Gibson's novel.",
+            "zh": "吉布森小说的书目记录。"
+          },
+          "url": "https://openlibrary.org/works/OL27258W",
+          "source": "https://openlibrary.org/works/OL27258W",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Book metadata",
+            "zh": "图书元数据"
+          },
+          "label": {
+            "en": "Open Library: Neuromancer",
+            "zh": "Open Library：《神经漫游者》"
+          },
+          "url": "https://openlibrary.org/works/OL27258W"
+        },
+        {
+          "type": {
+            "en": "Secondary overview",
+            "zh": "二级概览"
+          },
+          "label": {
+            "en": "Neuromancer background and reception",
+            "zh": "《神经漫游者》背景与接受史"
+          },
+          "url": "https://en.wikipedia.org/wiki/Neuromancer"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-1987-lisp-machine-collapse",
+    "year": 1987,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "The Lisp Machine Market Collapse",
+      "zh": "Lisp 机市场崩盘"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Cambridge AI hardware ecosystem",
+        "zh": "剑桥 AI 硬件生态"
+      },
+      "country": {
+        "en": "MA, United States",
+        "zh": "美国马萨诸塞州"
+      },
+      "coordinates": [
+        42.3736,
+        -71.1097
+      ]
+    },
+    "description": {
+      "en": "<p>The collapse of the specialized Lisp-machine market became a visible proxy for the second AI winter. The broader story was not only hardware failure: expert systems were expensive to maintain, brittle outside narrow domains, and increasingly challenged by cheaper general-purpose workstations.</p>",
+      "zh": "<p>专用 Lisp 机市场崩盘成为第二次 AI 寒冬的可见信号。更广泛的故事不只是硬件失败：专家系统维护昂贵、离开窄领域后脆弱，并受到更便宜通用工作站的挑战。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Expert-system industry",
+          "zh": "专家系统产业"
+        },
+        "role": {
+          "en": "Commercial AI boom-and-bust signal",
+          "zh": "商业 AI 繁荣与收缩信号"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"The second winter showed that commercial AI could fail through maintenance cost, not only missing theory.\"",
+      "zh": "\"第二次寒冬说明商业 AI 可能因维护成本失败，而不只是因为理论不足。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Lisp machine collapse source caution",
+      "zh": "Lisp 机市场崩盘资料注意事项"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "The 1980s expert-system boom made AI commercially visible. But many deployed systems required heavy knowledge engineering and could not adapt cheaply when domains changed.",
+          "zh": "1980 年代专家系统热潮让 AI 在商业上高度可见。但许多部署系统需要沉重的知识工程，领域变化时难以低成本适配。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The collapse is useful as a winter node because it connects technology to business infrastructure. A field can cool when products become too costly to maintain, even if the underlying ideas remain influential.",
+          "zh": "这个崩盘适合作为寒冬节点，因为它把技术与商业基础设施连接起来。即使底层思想仍有影响，产品维护成本过高也会让领域降温。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the Lisp-machine collapse as one signal of the second AI winter. Its legacy is a warning that AI systems need sustainable deployment economics as well as clever reasoning.",
+          "zh": "专家通常把 Lisp 机市场崩盘视为第二次 AI 寒冬的信号之一。它的长期影响在于提醒人们：AI 系统不仅需要聪明推理，也需要可持续的部署经济性。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "The Lisp Machine Market Collapse",
+            "zh": "Lisp 机市场崩盘"
+          },
+          "subcaption": {
+            "en": "Expert-system correction and the second AI winter",
+            "zh": "专家系统修正与第二次 AI 寒冬"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "This node captures the market side of AI winter history.",
+        "zh": "这个节点捕捉 AI 寒冬史中的市场侧面。"
+      },
+      "how": {
+        "en": "Specialized hardware and brittle expert systems were squeezed by cost, maintenance debt, and general-purpose computing.",
+        "zh": "专用硬件和脆弱专家系统受到成本、维护债务和通用计算的挤压。"
+      },
+      "why": {
+        "en": "It shows that disappointment can be commercial and infrastructural, not only academic.",
+        "zh": "它说明失望也可能发生在商业和基础设施层面，而不只是学术层面。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "The Lisp Machine Market Collapse",
+        "zh": "Lisp 机市场崩盘"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Show dedicated Lisp hardware losing ground to cheaper general-purpose workstations.",
+        "zh": "展示专用 Lisp 硬件如何输给更便宜的通用工作站。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Maintenance debt",
+            "zh": "维护债务"
+          },
+          "text": {
+            "en": "Knowledge bases become costly as domains change.",
+            "zh": "知识库会随领域变化变得昂贵。"
+          }
+        },
+        {
+          "label": {
+            "en": "Hardware displacement",
+            "zh": "硬件替代"
+          },
+          "text": {
+            "en": "Cheaper workstations weakened specialized AI machines.",
+            "zh": "更便宜的工作站削弱了专用 AI 机器。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "source caution",
+            "zh": "资料注意"
+          },
+          "text": {
+            "en": "Treat this as usable but needing stronger market-specific sourcing before final exhibition copy.",
+            "zh": "将其作为可用节点，但最终展陈文案前仍需更强市场资料支持。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Increase maintenance cost and see how commercial confidence drops.",
+            "zh": "提高维护成本，观察商业信心如何下降。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Wikipedia",
+            "zh": "维基百科"
+          },
+          "title": {
+            "en": "AI winter overview",
+            "zh": "AI 寒冬概览"
+          },
+          "description": {
+            "en": "Timeline context for second-winter signals.",
+            "zh": "第二次寒冬信号的时间线背景。"
+          },
+          "url": "https://en.wikipedia.org/wiki/AI_winter",
+          "source": "https://en.wikipedia.org/wiki/AI_winter",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Historical overview",
+            "zh": "历史概览"
+          },
+          "label": {
+            "en": "AI winter overview",
+            "zh": "AI 寒冬概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/AI_winter"
+        },
+        {
+          "type": {
+            "en": "Historical overview",
+            "zh": "历史概览"
+          },
+          "label": {
+            "en": "History of artificial intelligence",
+            "zh": "人工智能史"
+          },
+          "url": "https://en.wikipedia.org/wiki/History_of_artificial_intelligence"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-2014-ai-existential-warnings",
+    "year": 2014,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "Public Warnings About Advanced AI Risk",
+      "zh": "关于高级 AI 风险的公开警告"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Global public media discourse",
+        "zh": "全球公共媒体讨论"
+      },
+      "country": {
+        "en": "Global",
+        "zh": "全球"
+      },
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "en": "<p>In 2014, public warnings from figures such as Elon Musk and Stephen Hawking made advanced-AI risk a mainstream media topic. The node marks an emotional turn: deep-learning excitement began to share the stage with concern about control, superintelligence, and long-term safety.</p>",
+      "zh": "<p>2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告让高级 AI 风险成为主流媒体议题。这个节点标记了一次情绪转向：深度学习兴奋开始与关于控制、超级智能和长期安全的担忧共同出现。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Elon Musk",
+          "zh": "埃隆·马斯克"
+        },
+        "role": {
+          "en": "Public AI-risk warning figure",
+          "zh": "AI 风险公开警告人物"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Stephen Hawking",
+          "zh": "斯蒂芬·霍金"
+        },
+        "role": {
+          "en": "Scientist warning about advanced AI",
+          "zh": "对高级 AI 发出警告的科学家"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"The exhibit treats 2014 as a public-discourse shift, not as a technical achievement.\"",
+      "zh": "\"展览把 2014 年作为公共讨论转向，而不是技术成就。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "2014 AI risk warnings branch node",
+      "zh": "2014 AI 风险警告分支节点"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Deep learning breakthroughs had recently made AI progress feel faster and less speculative. That excitement created the conditions for risk warnings to receive unusually broad attention.",
+          "zh": "深度学习突破刚刚让 AI 进展显得更快、更不再只是猜想。这种兴奋为风险警告获得异常广泛的关注创造了条件。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The node is about public framing. AI risk became something discussed in newspapers, broadcasts, and investor culture, not only in technical safety papers.",
+          "zh": "这个节点关注公共框架。AI 风险开始出现在报纸、广播和投资者文化中，而不只是技术安全论文中。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat 2014-2015 as a period when AI safety became much more visible. Its legacy is the mainstreaming of long-term risk language around advanced AI.",
+          "zh": "专家通常把 2014-2015 年视为 AI 安全显著可见化的时期。它的长期影响在于让高级 AI 的长期风险语言进入主流。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "Public Warnings About Advanced AI Risk",
+            "zh": "关于高级 AI 风险的公开警告"
+          },
+          "subcaption": {
+            "en": "Existential-risk discourse enters public view",
+            "zh": "生存风险讨论进入公共视野"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "This node captures a public shift toward existential-risk language.",
+        "zh": "这个节点捕捉公共讨论转向生存风险语言的时刻。"
+      },
+      "how": {
+        "en": "High-profile warnings moved safety concerns from specialist circles into mass media.",
+        "zh": "高知名度警告把安全担忧从专业圈带入大众媒体。"
+      },
+      "why": {
+        "en": "It explains why later AI institutions and statements appeared within a heightened emotional climate.",
+        "zh": "它解释了为什么后来的 AI 机构和声明会出现在更强烈的情绪氛围中。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "Public Warnings About Advanced AI Risk",
+        "zh": "关于高级 AI 风险的公开警告"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Show how deep-learning optimism and existential-risk warnings rose together in public discourse.",
+        "zh": "展示深度学习乐观与生存风险警告如何在公共讨论中同时上升。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Existential dread",
+            "zh": "生存忧惧"
+          },
+          "text": {
+            "en": "Risk discourse moves from malfunction to civilization-scale harm.",
+            "zh": "风险讨论从故障转向文明尺度伤害。"
+          }
+        },
+        {
+          "label": {
+            "en": "Public framing",
+            "zh": "公共框架"
+          },
+          "text": {
+            "en": "Media attention changes what institutions feel pressure to address.",
+            "zh": "媒体关注改变机构感受到的议题压力。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Global",
+          "zh": "全球"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "framing cue",
+            "zh": "框架线索"
+          },
+          "text": {
+            "en": "Avoid sensational wording; show this as public-discourse history.",
+            "zh": "避免耸动措辞；把它展示为公共讨论史。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Compare the same capability curve under optimism and dread labels.",
+            "zh": "用乐观和忧惧标签比较同一条能力曲线。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "The Guardian",
+            "zh": "《卫报》"
+          },
+          "title": {
+            "en": "The Guardian on Musk's October 2014 remarks",
+            "zh": "《卫报》：马斯克 2014 年 10 月言论"
+          },
+          "description": {
+            "en": "Contemporary coverage of Musk's AI-risk remarks.",
+            "zh": "关于马斯克 AI 风险言论的同期报道。"
+          },
+          "url": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat",
+          "source": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "label": {
+            "en": "The Guardian on Musk's October 2014 remarks",
+            "zh": "《卫报》：马斯克 2014 年 10 月言论"
+          },
+          "url": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat"
+        },
+        {
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "label": {
+            "en": "BBC on Hawking's December 2014 warning",
+            "zh": "BBC：霍金 2014 年 12 月警告"
+          },
+          "url": "https://www.bbc.com/news/technology-30290540"
+        },
+        {
+          "type": {
+            "en": "Open letter",
+            "zh": "公开信"
+          },
+          "label": {
+            "en": "Future of Life Institute AI open letter",
+            "zh": "未来生命研究所 AI 公开信"
+          },
+          "url": "https://futureoflife.org/open-letter/ai-open-letter/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-2015-openai-founding",
+    "year": 2015,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "The Founding of OpenAI",
+      "zh": "OpenAI 宣告成立"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "country": {
+        "en": "CA, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "en": "<p>OpenAI was announced in December 2015 as a nonprofit AI research company. In this branch, it is framed as a defensive-action node: a sign that AI risk, concentration of power, and broad-benefit ideals were turning from public concern into institutional design.</p>",
+      "zh": "<p>OpenAI 于 2015 年 12 月以非营利 AI 研究公司身份宣布成立。在这个分支里，它被视为防御性行动节点：AI 风险、力量集中和广泛受益理念开始从公共担忧转化为机构设计。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Sam Altman",
+          "zh": "萨姆·奥特曼"
+        },
+        "role": {
+          "en": "OpenAI co-founder",
+          "zh": "OpenAI 联合创始人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Elon Musk",
+          "zh": "埃隆·马斯克"
+        },
+        "role": {
+          "en": "OpenAI co-founder",
+          "zh": "OpenAI 联合创始人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Ilya Sutskever",
+          "zh": "伊利亚·苏茨克维"
+        },
+        "role": {
+          "en": "OpenAI co-founder and researcher",
+          "zh": "OpenAI 联合创始人与研究者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"OpenAI emerged within a broader debate about powerful AI, safety, and broad benefit.\"",
+      "zh": "\"OpenAI 出现在关于强大 AI、安全与广泛受益的更广泛讨论之中。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "OpenAI founding branch node",
+      "zh": "OpenAI 成立分支节点"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "By 2015, deep learning had become commercially and scientifically powerful. The question was no longer only what AI could do, but who would build it and under what public commitments.",
+          "zh": "到 2015 年，深度学习已经在商业和科学上显示力量。问题不再只是 AI 能做什么，而是谁来建造它，以及在什么公共承诺下建造。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The founding should not be reduced to a single 2014 warning. It is better understood as part of a broader safety and broad-benefit debate that intensified as AI capability accelerated.",
+          "zh": "OpenAI 的成立不应被简化为对某一句 2014 年警告的直接回应。更合适的理解是：随着 AI 能力加速，它属于更广泛且不断强化的安全与广泛受益讨论。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat OpenAI's founding as a major institutional moment in modern AI. Its legacy is inseparable from later debates over openness, governance, safety, commercialization, and concentration of capability.",
+          "zh": "专家通常把 OpenAI 的成立视为现代 AI 的重要制度节点。它的长期影响与后来的开放、治理、安全、商业化和能力集中争论密不可分。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "The Founding of OpenAI",
+            "zh": "OpenAI 宣告成立"
+          },
+          "subcaption": {
+            "en": "Defensive institution-building and broad-benefit framing",
+            "zh": "防御性机构建设与广泛受益框架"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "OpenAI marks a shift from warning to institution-building.",
+        "zh": "OpenAI 标记了从警告到机构建设的转向。"
+      },
+      "how": {
+        "en": "Its founding message connected AI capability research with broad benefit, openness, and concern about misuse or concentration.",
+        "zh": "其创立信息把 AI 能力研究与广泛受益、开放以及对误用或集中化的担忧联系起来。"
+      },
+      "why": {
+        "en": "The node shows how emotional pressure can become organizational form.",
+        "zh": "这个节点说明情绪压力如何转化为组织形式。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "The Founding of OpenAI",
+        "zh": "OpenAI 宣告成立"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Show public risk concern turning into a research institution and governance promise.",
+        "zh": "展示公共风险担忧如何转化为研究机构和治理承诺。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Broad benefit",
+            "zh": "广泛受益"
+          },
+          "text": {
+            "en": "Powerful AI is framed as something that should benefit humanity broadly.",
+            "zh": "强大 AI 被框定为应广泛造福人类的事物。"
+          }
+        },
+        {
+          "label": {
+            "en": "Institutional defense",
+            "zh": "制度性防御"
+          },
+          "text": {
+            "en": "Concern becomes a research organization and public commitment.",
+            "zh": "担忧转化为研究组织和公共承诺。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "framing caution",
+            "zh": "表述注意"
+          },
+          "text": {
+            "en": "Do not claim OpenAI was founded solely as a direct response to one public warning.",
+            "zh": "不要声称 OpenAI 仅仅是对某一次公开警告的直接回应。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Balance capability concentration against broad-benefit commitments.",
+            "zh": "在能力集中与广泛受益承诺之间做平衡。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "OpenAI / Web Archive",
+            "zh": "OpenAI / 互联网档案馆"
+          },
+          "title": {
+            "en": "Introducing OpenAI",
+            "zh": "OpenAI 创立公告"
+          },
+          "description": {
+            "en": "Archived official founding announcement.",
+            "zh": "官方创立公告的网页存档。"
+          },
+          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+          "source": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Official announcement",
+            "zh": "官方公告"
+          },
+          "label": {
+            "en": "Introducing OpenAI",
+            "zh": "OpenAI 创立公告"
+          },
+          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/"
+        },
+        {
+          "type": {
+            "en": "Contemporary coverage",
+            "zh": "同期报道"
+          },
+          "label": {
+            "en": "Wired coverage of OpenAI founding",
+            "zh": "Wired 关于 OpenAI 成立的报道"
+          },
+          "url": "https://www.wired.com/2015/12/how-elon-musk-and-y-combinator-plan-to-stop-computers-from-taking-over/"
+        },
+        {
+          "type": {
+            "en": "Contemporary coverage",
+            "zh": "同期报道"
+          },
+          "label": {
+            "en": "BBC coverage of OpenAI launch",
+            "zh": "BBC 关于 OpenAI 启动的报道"
+          },
+          "url": "https://www.bbc.com/news/technology-35082344"
+        }
+      ]
+    }
+  },
+  {
+    "id": "milestone-culture-humanity-ethics-2023-ai-risk-statement",
+    "year": 2023,
+    "category": {
+      "en": "AI, Culture, Humanity & Ethics",
+      "zh": "AI、文化、人文与伦理"
+    },
+    "title": {
+      "en": "The Statement on AI Risk",
+      "zh": "AI 风险声明"
+    },
+    "subtitle": {
+      "en": "Humanistic and Emotional Cycles of AI",
+      "zh": "AI 的人文与情绪周期"
+    },
+    "location": {
+      "name": {
+        "en": "Center for AI Safety",
+        "zh": "AI 安全中心"
+      },
+      "country": {
+        "en": "CA, United States",
+        "zh": "美国加利福尼亚州"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "en": "<p>The Center for AI Safety published the Statement on AI Risk on May 30, 2023. Its short global-priority framing made AI extinction risk a compact public message signed by prominent AI researchers and public figures.</p>",
+      "zh": "<p>AI 安全中心于 2023 年 5 月 30 日发布《AI 风险声明》。这份简短的全球优先级表述，把 AI 灭绝风险压缩为一条由重要 AI 研究者和公众人物签署的公共信息。</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Center for AI Safety",
+          "zh": "AI 安全中心"
+        },
+        "role": {
+          "en": "Publisher of the statement",
+          "zh": "声明发布方"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "AI safety signatories",
+          "zh": "AI 安全声明签署者"
+        },
+        "role": {
+          "en": "Researchers and public figures",
+          "zh": "研究者与公众人物"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"The statement made advanced-AI risk a global-priority phrase.\"",
+      "zh": "\"这份声明让高级 AI 风险成为一种全球优先级表述。\""
+    },
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": {
+      "en": "Statement on AI Risk branch node",
+      "zh": "AI 风险声明分支节点"
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "Large language models had made AI capability progress unusually visible by 2023. That visibility gave safety statements a wider audience and sharper public stakes.",
+          "zh": "到 2023 年，大语言模型让 AI 能力进展异常可见。这种可见性让安全声明拥有更广泛受众和更强公共利害关系。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "The statement is not a technical benchmark; it is a framing event. Its power comes from compressing a complex safety debate into a single global-priority claim.",
+          "zh": "这份声明不是技术基准，而是框架事件。它的力量来自把复杂安全争论压缩为一句全球优先级主张。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the 2023 risk statement as evidence that AI safety had moved into mainstream institutional discourse. Its legacy is the normalization of comparing advanced-AI risk with other global catastrophic risks.",
+          "zh": "专家通常把 2023 年风险声明视为 AI 安全进入主流制度讨论的证据。它的长期影响在于让高级 AI 风险与其他全球灾难性风险并置比较变得常态化。"
+        }
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg": {
+          "caption": {
+            "en": "The Statement on AI Risk",
+            "zh": "AI 风险声明"
+          },
+          "subcaption": {
+            "en": "Extinction-risk framing and global-priority language",
+            "zh": "灭绝风险框架与全球优先级语言"
+          },
+          "sourceName": {
+            "en": "Curated branch synthesis",
+            "zh": "策展分支综合图"
+          },
+          "source": "Local original SVG",
+          "sourceUrl": "Local original SVG",
+          "originalImageUrl": "Local original SVG",
+          "license": {
+            "en": "Original local SVG; source figures are not copied.",
+            "zh": "本地原创 SVG；不复制来源图形。"
+          },
+          "usage": {
+            "en": "Introductory visual system for the humanistic AI branch",
+            "zh": "AI 人文分支的导言视觉系统"
+          }
+        }
+      },
+      "videos": []
+    },
+    "quoteLabel": {
+      "en": "Cultural signal",
+      "zh": "文化信号"
+    },
+    "storyline": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "branch": {
+      "id": "culture-humanity-ethics",
+      "name": {
+        "en": "AI, Culture, Humanity & Ethics",
+        "zh": "AI、文化、人文与伦理"
+      }
+    },
+    "analysis": {
+      "what": {
+        "en": "This node records a compressed public statement about extreme AI risk.",
+        "zh": "这个节点记录了关于极端 AI 风险的浓缩公共声明。"
+      },
+      "how": {
+        "en": "The statement used a short consensus-style sentence rather than a long technical argument, making it easy to circulate.",
+        "zh": "声明采用短句式共识表达，而不是长篇技术论证，因此易于传播。"
+      },
+      "why": {
+        "en": "It marks the point where existential-risk language became highly visible in mainstream AI discourse after large-model acceleration.",
+        "zh": "它标记了大模型加速后，生存风险语言在主流 AI 讨论中高度可见的时刻。"
+      }
+    },
+    "achievement": {
+      "area": {
+        "en": "AI culture, society, and safety",
+        "zh": "AI 文化、社会与安全"
+      },
+      "method": {
+        "en": "Historical and emotional-cycle mapping",
+        "zh": "历史与情绪周期映射"
+      },
+      "artifact": {
+        "en": "The Statement on AI Risk",
+        "zh": "AI 风险声明"
+      },
+      "material": {
+        "en": "Primary sources and historical commentary",
+        "zh": "原始资料与历史评论"
+      },
+      "demo": {
+        "en": "Place AI risk beside pandemic and nuclear-risk language to show the statement's public framing.",
+        "zh": "把 AI 风险放在大流行病和核风险语言旁边，展示声明的公共框架。"
+      },
+      "visual": "configuredPaper",
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Global priority",
+            "zh": "全球优先级"
+          },
+          "text": {
+            "en": "AI risk is framed alongside other catastrophic risks.",
+            "zh": "AI 风险被放在其他灾难性风险旁边。"
+          }
+        },
+        {
+          "label": {
+            "en": "Consensus signal",
+            "zh": "共识信号"
+          },
+          "text": {
+            "en": "A short statement concentrates many signatories into one public message.",
+            "zh": "短声明把许多签署者集中成一条公共信息。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AI winter",
+          "zh": "AI 寒冬"
+        },
+        {
+          "en": "AI safety",
+          "zh": "AI 安全"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Global",
+          "zh": "全球"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Identify the public mood",
+          "zh": "识别公共情绪"
+        },
+        {
+          "en": "Read the source cue",
+          "zh": "阅读资料线索"
+        },
+        {
+          "en": "Connect it to AI history",
+          "zh": "连接到 AI 历史"
+        }
+      ],
+      "demoImage": "resources/images/humanistic-ai/explainers/emotional-cycles-map.svg",
+      "demoPanel": "sources",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "signatory caution",
+            "zh": "签署者注意"
+          },
+          "text": {
+            "en": "Verify the current signatory list before showing names or portraits.",
+            "zh": "展示姓名或肖像前需核验当前签署者列表。"
+          }
+        },
+        {
+          "label": {
+            "en": "interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Compare short public-risk statements with longer technical risk papers.",
+            "zh": "比较简短公共风险声明与更长的技术风险论文。"
+          }
+        }
+      ],
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Center for AI Safety",
+            "zh": "AI 安全中心"
+          },
+          "title": {
+            "en": "Center for AI Safety: Statement on AI Risk",
+            "zh": "AI 安全中心：AI 风险声明"
+          },
+          "description": {
+            "en": "Official page for the 2023 statement.",
+            "zh": "2023 年声明的官方页面。"
+          },
+          "url": "https://www.safe.ai/work/statement-on-ai-risk",
+          "source": "https://www.safe.ai/work/statement-on-ai-risk",
+          "action": {
+            "en": "Open source page",
+            "zh": "打开资料页面"
+          },
+          "license": {
+            "en": "Reference link only; local exhibition graphics are original redraws.",
+            "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+          },
+          "usage": {
+            "en": "Source card for the AI culture, humanity, and ethics branch",
+            "zh": "AI 文化、人文与伦理分支的资料卡片"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "type": {
+            "en": "Official statement",
+            "zh": "官方声明"
+          },
+          "label": {
+            "en": "Center for AI Safety: Statement on AI Risk",
+            "zh": "AI 安全中心：AI 风险声明"
+          },
+          "url": "https://www.safe.ai/work/statement-on-ai-risk"
+        },
+        {
+          "type": {
+            "en": "Secondary overview",
+            "zh": "二级概览"
+          },
+          "label": {
+            "en": "Statement on AI Risk overview",
+            "zh": "AI 风险声明概览"
+          },
+          "url": "https://en.wikipedia.org/wiki/Statement_on_AI_Risk"
+        },
+        {
+          "type": {
+            "en": "Risk paper",
+            "zh": "风险论文"
+          },
+          "label": {
+            "en": "Managing extreme AI risks amid rapid progress",
+            "zh": "快速进展中管理极端 AI 风险"
+          },
+          "url": "https://arxiv.org/abs/2310.17688"
         }
       ]
     }
