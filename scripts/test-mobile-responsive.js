@@ -97,7 +97,8 @@ const mobileRequirements = [
         message: 'phone sources render as compact readable cards'
     },
     {
-        pattern: /\.ui-commentary-card > \.ui-section-kicker[\s\S]*?font-size:\s*22px[\s\S]*?\.ui-commentary-card \.ui-concept-chip[\s\S]*?font-size:\s*17px/,
+        pattern:
+            /\.ui-commentary-card > \.ui-section-kicker[\s\S]*?font-size:\s*22px[\s\S]*?\.ui-commentary-card \.ui-concept-chip[\s\S]*?font-size:\s*17px/,
         message: 'phone commentary heading is larger than subsection labels'
     },
     {
