@@ -75,6 +75,42 @@ const mobileRequirements = [
     {
         pattern: /@media\s*\(max-width:\s*600px\)[\s\S]*?\.ui-detail-image-nav::before[\s\S]*?width:\s*7px/,
         message: 'phone detail image pager uses a small visible dot'
+    },
+    {
+        pattern: /function renderUiDetailFromSelection\(options = \{\}\)[\s\S]*?resetPortraitScrollPosition\(\)/,
+        message: 'entering detail view resets mobile scroll to the top'
+    },
+    {
+        pattern: /single-stage\.is-ui-browser\.is-ui-detail \.ui-side-panel[\s\S]*?overflow-y:\s*visible !important/,
+        message: 'phone detail view avoids nested vertical scroll traps'
+    },
+    {
+        pattern: '-webkit-overflow-scrolling: touch',
+        message: 'phone detail view uses native momentum scrolling'
+    },
+    {
+        pattern: /function shouldSuspendPortraitEdgeNavigation\(\)[\s\S]*?uiBrowserMode === 'detail'/,
+        message: 'phone detail view suspends edge navigation gestures while scrolling'
+    },
+    {
+        pattern: /\.ui-source-card[\s\S]*?border-radius:\s*8px[\s\S]*?\.ui-source-url[\s\S]*?border-radius:\s*999px/,
+        message: 'phone sources render as compact readable cards'
+    },
+    {
+        pattern: /\.ui-commentary-card > \.ui-section-kicker[\s\S]*?font-size:\s*22px[\s\S]*?\.ui-commentary-card \.ui-concept-chip[\s\S]*?font-size:\s*17px/,
+        message: 'phone commentary heading is larger than subsection labels'
+    },
+    {
+        pattern: /function pushUiDetailHistoryEntry\(\)[\s\S]*?window\.history\.pushState/,
+        message: 'opening a phone detail page creates a browser history entry'
+    },
+    {
+        pattern: /function handleUiBrowserHistoryPop\(event\)[\s\S]*?returnFromUiDetail\(\{ updateHistory: false \}\)/,
+        message: 'browser back returns from phone detail page to the map page'
+    },
+    {
+        pattern: /window\.addEventListener\('popstate', handleUiBrowserHistoryPop\)/,
+        message: 'browser history popstate is bound for mobile detail navigation'
     }
 ];
 
