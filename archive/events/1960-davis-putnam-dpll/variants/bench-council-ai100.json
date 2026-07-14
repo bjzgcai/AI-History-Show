@@ -32,8 +32,8 @@
     {
       "id": "published-papers",
       "label": {
-        "zh": "论文材料",
-        "en": "Published Papers"
+        "zh": "历史背景",
+        "en": "Historical Background"
       },
       "html": {
         "zh": "Davis 和 Putnam 1960 年 《ACM 杂志》 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 《ACM 通讯》 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。",
@@ -46,8 +46,8 @@
     {
       "id": "sat-search",
       "label": {
-        "zh": "SAT 搜索",
-        "en": "SAT Search"
+        "zh": "核心思想",
+        "en": "Core Idea"
       },
       "html": {
         "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。",

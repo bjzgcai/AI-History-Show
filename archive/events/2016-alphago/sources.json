@@ -2,7 +2,14 @@
   {
     "id": "source-alphago-nature-paper",
     "type": "paper",
-    "title": "Mastering the game of Go with deep neural networks and tree search",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《自然》 2016 AlphaGo 论文",
+      "en": "Nature 2016 AlphaGo paper"
+    },
     "authors": [
       "David Silver",
       "Aja Huang",
@@ -34,7 +41,14 @@
   {
     "id": "source-deepmind-alphago-page",
     "type": "official-page",
-    "title": "Google DeepMind AlphaGo",
+    "label": {
+      "zh": "博客",
+      "en": "Blog"
+    },
+    "title": {
+      "zh": "谷歌 DeepMind AlphaGo",
+      "en": "Google DeepMind AlphaGo"
+    },
     "url": "https://deepmind.google/research/alphago/",
     "language": "en",
     "reliability": "primary"
@@ -42,7 +56,14 @@
   {
     "id": "source-katago-analysis-engine",
     "type": "code",
-    "title": "KataGo Analysis Engine",
+    "label": {
+      "zh": "API",
+      "en": "API"
+    },
+    "title": {
+      "zh": "KataGo 分析引擎",
+      "en": "KataGo Analysis Engine"
+    },
     "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
     "language": "en",
     "reliability": "reference-only",

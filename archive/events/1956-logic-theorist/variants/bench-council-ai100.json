@@ -32,8 +32,8 @@
     {
       "id": "published-paper",
       "label": {
-        "zh": "论文材料",
-        "en": "Published Paper"
+        "zh": "历史背景",
+        "en": "Historical Background"
       },
       "html": {
         "zh": "纽厄尔和西蒙 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌图书保存了书目信息和摘要，卡内基梅隆大学档案记录了 1956 年修订版。",
@@ -46,8 +46,8 @@
     {
       "id": "reasoning-logic",
       "label": {
-        "zh": "推理逻辑",
-        "en": "Reasoning Logic"
+        "zh": "核心思想",
+        "en": "Core Idea"
       },
       "html": {
         "zh": "展示重点是证明搜索：从目标定理出发，尝试符号变换，并用启发式规则避免盲目穷举。这让推理成为一串可见的选择过程。",

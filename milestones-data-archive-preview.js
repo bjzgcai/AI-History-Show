@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive presentation preview（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-13 06:44
+// 生成时间: 2026-07-13 10:39
 // 数据来源: milestones-data.js + archive/events/* forced presentation overlay
 // 用途: 本地预览 archive 数据直接驱动主展陈页；正常展示仍使用 milestones-data.js。
 // Archive overlay: applied 134, skipped 0, errors 0
@@ -315,25 +315,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1956-dartmouth",
-            "en": "Legacy event record for 1956-dartmouth"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -368,25 +351,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1956-dartmouth",
-            "en": "Legacy event record for 1956-dartmouth"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -1288,25 +1254,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1969-ai-winter",
-            "en": "Legacy event record for 1969-ai-winter"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -1341,25 +1290,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1969-ai-winter",
-            "en": "Legacy event record for 1969-ai-winter"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -1691,25 +1623,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1986-backpropagation",
-            "en": "Legacy event record for 1986-backpropagation"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -1744,25 +1659,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1986-backpropagation",
-            "en": "Legacy event record for 1986-backpropagation"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -1985,25 +1883,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1986-rnn",
-            "en": "Legacy event record for 1986-rnn"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -2038,25 +1919,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1986-rnn",
-            "en": "Legacy event record for 1986-rnn"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -3700,11 +3564,11 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
@@ -3712,13 +3576,27 @@ const milestones = [
           "sourceType": "paper"
         },
         {
-          "id": "source-imagenet-challenge",
+          "id": "source-alexnet-neurips-pdf",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
           },
           "label": {
-            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "zh": "NeurIPS 完整论文 PDF",
+            "en": "NeurIPS full paper PDF"
+          },
+          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-imagenet-challenge",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
@@ -3726,27 +3604,13 @@ const milestones = [
           "sourceType": "official-page"
         },
         {
-          "id": "source-alexnet-neurips-pdf",
-          "type": {
-            "zh": "paper",
-            "en": "paper"
-          },
-          "label": {
-            "zh": "NeurIPS full paper PDF for AlexNet",
-            "en": "NeurIPS full paper PDF for AlexNet"
-          },
-          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
+            "zh": "背景",
+            "en": "Context"
           },
           "label": {
-            "zh": "AlexNet overview",
+            "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
@@ -3781,11 +3645,11 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
@@ -3793,13 +3657,27 @@ const milestones = [
           "sourceType": "paper"
         },
         {
-          "id": "source-imagenet-challenge",
+          "id": "source-alexnet-neurips-pdf",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
           },
           "label": {
-            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "zh": "NeurIPS 完整论文 PDF",
+            "en": "NeurIPS full paper PDF"
+          },
+          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-imagenet-challenge",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
@@ -3807,27 +3685,13 @@ const milestones = [
           "sourceType": "official-page"
         },
         {
-          "id": "source-alexnet-neurips-pdf",
-          "type": {
-            "zh": "paper",
-            "en": "paper"
-          },
-          "label": {
-            "zh": "NeurIPS full paper PDF for AlexNet",
-            "en": "NeurIPS full paper PDF for AlexNet"
-          },
-          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
+            "zh": "背景",
+            "en": "Context"
           },
           "label": {
-            "zh": "AlexNet overview",
+            "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
@@ -3837,8 +3701,8 @@ const milestones = [
       ],
       "archiveSourceIds": [
         "source-alexnet-neurips-paper",
-        "source-imagenet-challenge",
         "source-alexnet-neurips-pdf",
+        "source-imagenet-challenge",
         "source-alexnet-overview"
       ],
       "archiveClaims": [
@@ -3879,8 +3743,8 @@ const milestones = [
       ],
       "sourceIds": [
         "source-alexnet-neurips-paper",
-        "source-imagenet-challenge",
         "source-alexnet-neurips-pdf",
+        "source-imagenet-challenge",
         "source-alexnet-overview"
       ]
     },
@@ -4196,25 +4060,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2014-highway-network",
-            "en": "Legacy event record for 2014-highway-network"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -4249,25 +4096,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2014-highway-network",
-            "en": "Legacy event record for 2014-highway-network"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -7177,11 +7007,11 @@ const milestones = [
         {
           "id": "source-transformer-arxiv",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Attention Is All You Need",
+            "zh": "《Attention Is All You Need》",
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
@@ -7191,12 +7021,12 @@ const milestones = [
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "会议论文",
+            "en": "Conference paper"
           },
           "label": {
-            "zh": "NeurIPS paper page for Attention Is All You Need",
-            "en": "NeurIPS paper page for Attention Is All You Need"
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
           "reliability": "primary",
@@ -7205,12 +7035,12 @@ const milestones = [
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "出版页",
+            "en": "Publication"
           },
           "label": {
-            "zh": "Google Research publication page for Attention Is All You Need",
-            "en": "Google Research publication page for Attention Is All You Need"
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
           "reliability": "primary",
@@ -7219,12 +7049,12 @@ const milestones = [
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "回顾",
+            "en": "Retrospective"
           },
           "label": {
-            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
-            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+            "zh": "Google Research Transformer 博客",
+            "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
           "reliability": "secondary",
@@ -7258,11 +7088,11 @@ const milestones = [
         {
           "id": "source-transformer-arxiv",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Attention Is All You Need",
+            "zh": "《Attention Is All You Need》",
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
@@ -7272,12 +7102,12 @@ const milestones = [
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "会议论文",
+            "en": "Conference paper"
           },
           "label": {
-            "zh": "NeurIPS paper page for Attention Is All You Need",
-            "en": "NeurIPS paper page for Attention Is All You Need"
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
           "reliability": "primary",
@@ -7286,12 +7116,12 @@ const milestones = [
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "出版页",
+            "en": "Publication"
           },
           "label": {
-            "zh": "Google Research publication page for Attention Is All You Need",
-            "en": "Google Research publication page for Attention Is All You Need"
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
           "reliability": "primary",
@@ -7300,12 +7130,12 @@ const milestones = [
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "回顾",
+            "en": "Retrospective"
           },
           "label": {
-            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
-            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+            "zh": "Google Research Transformer 博客",
+            "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
           "reliability": "secondary",
@@ -9055,25 +8885,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2019-ai-feynman",
-            "en": "Legacy event record for 2019-ai-feynman"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -9108,25 +8921,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2019-ai-feynman",
-            "en": "Legacy event record for 2019-ai-feynman"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -10175,25 +9971,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2023-agents",
-            "en": "Legacy event record for 2023-agents"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -10228,25 +10007,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2023-agents",
-            "en": "Legacy event record for 2023-agents"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -10571,25 +10333,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2024-ai-scientist",
-            "en": "Legacy event record for 2024-ai-scientist"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -10624,25 +10369,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2024-ai-scientist",
-            "en": "Legacy event record for 2024-ai-scientist"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -10930,25 +10658,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2025-llm-competition",
-            "en": "Legacy event record for 2025-llm-competition"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -10983,25 +10694,8 @@ const milestones = [
         "batch-migration",
         "source-review-needed"
       ],
-      "sources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2025-llm-competition",
-            "en": "Legacy event record for 2025-llm-competition"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+      "sources": [],
+      "sourceIds": []
     }
   },
   {
@@ -11083,8 +10777,8 @@ const milestones = [
       {
         "id": "published-paper",
         "label": {
-          "zh": "论文材料",
-          "en": "Published Paper"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
           "zh": "图灵 1950 年发表于 Mind 的论文提出“模仿游戏”，把问题从形而上讨论转向可观察行为。图灵数字档案 也保存了这篇原文，适合与现代评测协议并置展示。",
@@ -11097,8 +10791,8 @@ const milestones = [
       {
         "id": "evaluation-logic",
         "label": {
-          "zh": "评估逻辑",
-          "en": "Evaluation Logic"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
           "zh": "图灵测试最值得展示的是评估设计：盲测交互、受限通道、人类判断和明确成功标准。这让它自然连接到红队测试、人类偏好评测和基准治理。",
@@ -11664,8 +11358,8 @@ const milestones = [
       {
         "id": "published-paper",
         "label": {
-          "zh": "论文材料",
-          "en": "Published Paper"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
           "zh": "麦卡锡 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I 程序员手册 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。",
@@ -11678,8 +11372,8 @@ const milestones = [
       {
         "id": "api-like-primitives",
         "label": {
-          "zh": "类 API 原语",
-          "en": "API-Like Primitives"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
           "zh": "最适合展示的是它极小的接口：CONS、CAR、CDR、QUOTE、COND 和 EVAL。这些原语让代码和数据共享同一种符号形态，也解释了为什么 LISP 会成为早期 AI 系统的自然语言。",
@@ -12223,8 +11917,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "围棋长期被视为搜索空间极大、难以依靠蛮力搜索解决的棋类任务。AlphaGo 在 2016 年与李世石的五番棋中获胜，使深度学习、强化学习与搜索结合的能力被全球观众看见。",
-          "en": "Go had long been treated as a board game with a search space too large for brute-force methods. AlphaGo’s 2016 match victory over Lee Sedol made the combination of deep learning, reinforcement learning, and search visible to a global audience."
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data."
         },
         "sourceIds": [
           "source-deepmind-alphago-page"
@@ -12237,8 +11931,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "《自然》论文解释了 AlphaGo 的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
-          "en": "The Nature paper explains AlphaGo’s hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce reliance on expert game data."
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。",
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves."
         },
         "sourceIds": [
           "source-alphago-nature-paper"
@@ -12407,12 +12101,12 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Mastering the game of Go with deep neural networks and tree search",
-            "en": "Mastering the game of Go with deep neural networks and tree search"
+            "zh": "《自然》 2016 AlphaGo 论文",
+            "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "reliability": "primary",
@@ -12421,11 +12115,11 @@ const milestones = [
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "博客",
+            "en": "Blog"
           },
           "label": {
-            "zh": "Google DeepMind AlphaGo",
+            "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
@@ -12435,11 +12129,11 @@ const milestones = [
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "code",
-            "en": "code"
+            "zh": "API",
+            "en": "API"
           },
           "label": {
-            "zh": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
@@ -12451,12 +12145,12 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Mastering the game of Go with deep neural networks and tree search",
-            "en": "Mastering the game of Go with deep neural networks and tree search"
+            "zh": "《自然》 2016 AlphaGo 论文",
+            "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "reliability": "primary",
@@ -12465,11 +12159,11 @@ const milestones = [
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "博客",
+            "en": "Blog"
           },
           "label": {
-            "zh": "Google DeepMind AlphaGo",
+            "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
@@ -12479,11 +12173,11 @@ const milestones = [
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "code",
-            "en": "code"
+            "zh": "API",
+            "en": "API"
           },
           "label": {
-            "zh": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
@@ -12606,7 +12300,7 @@ const milestones = [
           },
           {
             "zh": "裁判的笔迹",
-            "en": "The referee’s handwriting"
+            "en": "The referee's handwriting"
           },
           {
             "zh": "只有棋盘颜色",
@@ -12775,8 +12469,8 @@ const milestones = [
       {
         "id": "published-paper",
         "label": {
-          "zh": "论文材料",
-          "en": "Published Paper"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
           "zh": "库克 1971 年 STOC 论文把布尔可满足性问题变成比较计算困难性的经典对象。它说明许多看起来不同的问题可以通过高效归约联系起来。",
@@ -12789,8 +12483,8 @@ const milestones = [
       {
         "id": "reduction-logic",
         "label": {
-          "zh": "归约逻辑",
-          "en": "Reduction Logic"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
           "zh": "这个展项应突出从“单个难题”到“困难性地图”的转变。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。",
@@ -13336,8 +13030,8 @@ const milestones = [
       {
         "id": "published-paper",
         "label": {
-          "zh": "论文材料",
-          "en": "Published Paper"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
           "zh": "瓦普尼克 和 切尔沃年基斯 1971 年论文把泛化变成了关于一整类事件或假设上一致收敛的数学问题。瓦普尼克 1995 年著作随后系统总结了统计学习理论框架。",
@@ -13350,8 +13044,8 @@ const milestones = [
       {
         "id": "capacity-logic",
         "label": {
-          "zh": "容量逻辑",
-          "en": "Capacity Logic"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
           "zh": "关键展示点是“拟合样本”和“在未见数据上表现”之间的差距。VC 维提供了一种方法，用来理解模型灵活性何时有帮助、何时会带来过拟合风险。",
@@ -13910,8 +13604,8 @@ const milestones = [
       {
         "id": "published-paper",
         "label": {
-          "zh": "论文材料",
-          "en": "Published Paper"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
           "zh": "纽厄尔和西蒙 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌图书保存了书目信息和摘要，卡内基梅隆大学档案记录了 1956 年修订版。",
@@ -13924,8 +13618,8 @@ const milestones = [
       {
         "id": "reasoning-logic",
         "label": {
-          "zh": "推理逻辑",
-          "en": "Reasoning Logic"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
           "zh": "展示重点是证明搜索：从目标定理出发，尝试符号变换，并用启发式规则避免盲目穷举。这让推理成为一串可见的选择过程。",
@@ -14458,8 +14152,8 @@ const milestones = [
       {
         "id": "published-papers",
         "label": {
-          "zh": "论文材料",
-          "en": "Published Papers"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
           "zh": "第一篇论文发表于 1960 年 4 月 《ACM 通讯》，DOI 为 10.1145/367177.367224。贝尔实验室 档案保存了 1961 年续篇，其中 王浩 讨论了谓词演算证明过程及相关判定问题情形。",
@@ -14472,8 +14166,8 @@ const milestones = [
       {
         "id": "pattern-logic",
         "label": {
-          "zh": "模式逻辑",
-          "en": "Pattern Logic"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
           "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。",
@@ -15045,8 +14739,8 @@ const milestones = [
       {
         "id": "published-papers",
         "label": {
-          "zh": "论文材料",
-          "en": "Published Papers"
+          "zh": "历史背景",
+          "en": "Historical Background"
         },
         "html": {
           "zh": "Davis 和 Putnam 1960 年 《ACM 杂志》 论文提出了量词理论证明过程。Davis、Logemann 与 Loveland 1962 年发表于 《ACM 通讯》 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。",
@@ -15059,8 +14753,8 @@ const milestones = [
       {
         "id": "sat-search",
         "label": {
-          "zh": "SAT 搜索",
-          "en": "SAT Search"
+          "zh": "核心思想",
+          "en": "Core Idea"
         },
         "html": {
           "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。",
@@ -51816,11 +51510,11 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
@@ -51830,12 +51524,12 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-pdf",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
           },
           "label": {
-            "zh": "NeurIPS full paper PDF for AlexNet",
-            "en": "NeurIPS full paper PDF for AlexNet"
+            "zh": "NeurIPS 完整论文 PDF",
+            "en": "NeurIPS full paper PDF"
           },
           "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
           "reliability": "primary",
@@ -51844,11 +51538,11 @@ const milestones = [
         {
           "id": "source-imagenet-challenge",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "背景",
+            "en": "Background"
           },
           "label": {
-            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
@@ -51858,11 +51552,11 @@ const milestones = [
         {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
+            "zh": "背景",
+            "en": "Context"
           },
           "label": {
-            "zh": "AlexNet overview",
+            "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
@@ -51897,11 +51591,11 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
@@ -51911,12 +51605,12 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-pdf",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
           },
           "label": {
-            "zh": "NeurIPS full paper PDF for AlexNet",
-            "en": "NeurIPS full paper PDF for AlexNet"
+            "zh": "NeurIPS 完整论文 PDF",
+            "en": "NeurIPS full paper PDF"
           },
           "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
           "reliability": "primary",
@@ -51925,11 +51619,11 @@ const milestones = [
         {
           "id": "source-imagenet-challenge",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "背景",
+            "en": "Background"
           },
           "label": {
-            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
@@ -51939,11 +51633,11 @@ const milestones = [
         {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
+            "zh": "背景",
+            "en": "Context"
           },
           "label": {
-            "zh": "AlexNet overview",
+            "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
@@ -52070,7 +51764,7 @@ const milestones = [
         "answer": 0,
         "explanation": {
           "zh": "AlexNet 结合深度 CNN、GPU、ReLU、数据增强和正则化，大幅提升了 ImageNet 结果。",
-          "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation, and regularization to sharply improve ImageNet results."
+          "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation and regularization to sharply improve ImageNet results."
         },
         "sourceIds": [
           "source-alexnet-neurips-paper"
@@ -54679,11 +54373,11 @@ const milestones = [
         {
           "id": "source-transformer-arxiv",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Attention Is All You Need",
+            "zh": "《Attention Is All You Need》",
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
@@ -54693,12 +54387,12 @@ const milestones = [
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "会议论文",
+            "en": "Conference paper"
           },
           "label": {
-            "zh": "NeurIPS paper page for Attention Is All You Need",
-            "en": "NeurIPS paper page for Attention Is All You Need"
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
           "reliability": "primary",
@@ -54707,12 +54401,12 @@ const milestones = [
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "出版页",
+            "en": "Publication"
           },
           "label": {
-            "zh": "Google Research publication page for Attention Is All You Need",
-            "en": "Google Research publication page for Attention Is All You Need"
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
           "reliability": "primary",
@@ -54721,12 +54415,12 @@ const milestones = [
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "回顾",
+            "en": "Retrospective"
           },
           "label": {
-            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
-            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+            "zh": "Google Research Transformer 博客",
+            "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
           "reliability": "secondary",
@@ -54760,11 +54454,11 @@ const milestones = [
         {
           "id": "source-transformer-arxiv",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Attention Is All You Need",
+            "zh": "《Attention Is All You Need》",
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
@@ -54774,12 +54468,12 @@ const milestones = [
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "会议论文",
+            "en": "Conference paper"
           },
           "label": {
-            "zh": "NeurIPS paper page for Attention Is All You Need",
-            "en": "NeurIPS paper page for Attention Is All You Need"
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
           "reliability": "primary",
@@ -54788,12 +54482,12 @@ const milestones = [
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "出版页",
+            "en": "Publication"
           },
           "label": {
-            "zh": "Google Research publication page for Attention Is All You Need",
-            "en": "Google Research publication page for Attention Is All You Need"
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
           "reliability": "primary",
@@ -54802,12 +54496,12 @@ const milestones = [
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "回顾",
+            "en": "Retrospective"
           },
           "label": {
-            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
-            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+            "zh": "Google Research Transformer 博客",
+            "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
           "reliability": "secondary",
@@ -80322,12 +80016,12 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Mastering the game of Go with deep neural networks and tree search",
-            "en": "Mastering the game of Go with deep neural networks and tree search"
+            "zh": "《自然》 2016 AlphaGo 论文",
+            "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "reliability": "primary",
@@ -80336,11 +80030,11 @@ const milestones = [
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "博客",
+            "en": "Blog"
           },
           "label": {
-            "zh": "Google DeepMind AlphaGo",
+            "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
@@ -80350,11 +80044,11 @@ const milestones = [
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "code",
-            "en": "code"
+            "zh": "API",
+            "en": "API"
           },
           "label": {
-            "zh": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
@@ -80366,12 +80060,12 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Mastering the game of Go with deep neural networks and tree search",
-            "en": "Mastering the game of Go with deep neural networks and tree search"
+            "zh": "《自然》 2016 AlphaGo 论文",
+            "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "reliability": "primary",
@@ -80380,11 +80074,11 @@ const milestones = [
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "博客",
+            "en": "Blog"
           },
           "label": {
-            "zh": "Google DeepMind AlphaGo",
+            "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
@@ -80394,11 +80088,11 @@ const milestones = [
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "code",
-            "en": "code"
+            "zh": "API",
+            "en": "API"
           },
           "label": {
-            "zh": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",

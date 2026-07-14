@@ -27,7 +27,7 @@
     "answer": 0,
     "explanation": {
       "zh": "AlexNet 结合深度 CNN、GPU、ReLU、数据增强和正则化，大幅提升了 ImageNet 结果。",
-      "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation, and regularization to sharply improve ImageNet results."
+      "en": "AlexNet combined deep CNNs, GPUs, ReLU, augmentation and regularization to sharply improve ImageNet results."
     },
     "sourceIds": [
       "source-alexnet-neurips-paper"

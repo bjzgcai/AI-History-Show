@@ -2,7 +2,14 @@
   {
     "id": "source-alexnet-neurips-paper",
     "type": "paper",
-    "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
+      "en": "ImageNet Classification with Deep Convolutional Neural Networks"
+    },
     "authors": [
       "Alex Krizhevsky",
       "Ilya Sutskever",
@@ -20,7 +27,14 @@
   {
     "id": "source-alexnet-neurips-pdf",
     "type": "paper",
-    "title": "NeurIPS full paper PDF for AlexNet",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "NeurIPS 完整论文 PDF",
+      "en": "NeurIPS full paper PDF"
+    },
     "year": 2012,
     "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
     "language": "en",
@@ -33,7 +47,14 @@
   {
     "id": "source-imagenet-challenge",
     "type": "official-page",
-    "title": "ImageNet Large Scale Visual Recognition Challenge",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "ImageNet 大规模视觉识别挑战赛",
+      "en": "ImageNet Large Scale Visual Recognition Challenge"
+    },
     "url": "https://www.image-net.org/challenges/LSVRC/index.php",
     "language": "en",
     "reliability": "primary",
@@ -45,7 +66,14 @@
   {
     "id": "source-alexnet-overview",
     "type": "reference-only",
-    "title": "AlexNet overview",
+    "label": {
+      "zh": "背景",
+      "en": "Context"
+    },
+    "title": {
+      "zh": "AlexNet 概览",
+      "en": "AlexNet overview"
+    },
     "url": "https://en.wikipedia.org/wiki/AlexNet",
     "language": "en",
     "reliability": "reference-only",

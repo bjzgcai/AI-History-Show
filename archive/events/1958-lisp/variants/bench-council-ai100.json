@@ -32,8 +32,8 @@
     {
       "id": "published-paper",
       "label": {
-        "zh": "论文材料",
-        "en": "Published Paper"
+        "zh": "历史背景",
+        "en": "Historical Background"
       },
       "html": {
         "zh": "麦卡锡 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I 程序员手册 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。",
@@ -46,8 +46,8 @@
     {
       "id": "api-like-primitives",
       "label": {
-        "zh": "类 API 原语",
-        "en": "API-Like Primitives"
+        "zh": "核心思想",
+        "en": "Core Idea"
       },
       "html": {
         "zh": "最适合展示的是它极小的接口：CONS、CAR、CDR、QUOTE、COND 和 EVAL。这些原语让代码和数据共享同一种符号形态，也解释了为什么 LISP 会成为早期 AI 系统的自然语言。",
