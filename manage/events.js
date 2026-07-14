@@ -120,12 +120,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.",
-      "zh": "学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。"
+      "en": "The Dartmouth proposal framed artificial intelligence as a research program: learning and other features of intelligence could, in principle, be described precisely enough for machines to simulate them.",
+      "zh": "达特茅斯提案把人工智能定义为一个可研究的科学计划：学习以及智能的其他特征，原则上可以被精确描述，并由机器加以模拟。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
+        "zh": "达特茅斯夏季人工智能研究项目提案"
+      },
+      "workAuthors": {
+        "en": "John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, 1955",
+        "zh": "约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农，1955"
+      },
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html"
     },
     "quotePage": {
-      "en": "From PPT page 1",
-      "zh": "摘自PPT第1页"
+      "en": "Dartmouth Summer Research Project proposal, Stanford/J. McCarthy archive",
+      "zh": "达特茅斯夏季人工智能研究项目提案，斯坦福 / 约翰·麦卡锡档案"
     },
     "images": [
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
@@ -216,12 +227,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "This theory serves as a bridge between biophysics and psychology.",
-      "zh": "这一理论在生物物理学和心理学之间架起了一座桥梁。"
+      "en": "Rosenblatt's perceptron presented a trainable model of information storage and organization, linking ideas from brain science, psychology, and machine learning.",
+      "zh": "罗森布拉特的感知机提出了一种可训练的信息存储与组织模型，把脑科学、心理学和机器学习早期思想连接起来。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "zh": "感知机：大脑中信息存储与组织的概率模型"
+      },
+      "workAuthors": {
+        "en": "Frank Rosenblatt, Psychological Review, 1958",
+        "zh": "弗兰克·罗森布拉特，Psychological Review，1958"
+      },
+      "sourceUrl": "https://doi.org/10.1037/h0042519"
     },
     "quotePage": {
-      "en": "From PPT page 4",
-      "zh": "摘自PPT第4页"
+      "en": "Rosenblatt, Psychological Review, 1958",
+      "zh": "罗森布拉特，Psychological Review，1958 年论文"
     },
     "images": [
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
@@ -323,12 +345,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Their rigorous work and brilliant technique does not make the perceptron look very good.",
-      "zh": "他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。"
+      "en": "Minsky and Papert's Perceptrons became a landmark critique of single-layer perceptrons, sharpening the field's understanding of what simple neural models could and could not represent.",
+      "zh": "明斯基和帕珀特的《感知机》成为对单层感知机的重要批判，促使研究者更清楚地认识简单神经模型能表示什么、不能表示什么。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Perceptrons: An Introduction to Computational Geometry",
+        "zh": "感知机：计算几何学导论"
+      },
+      "workAuthors": {
+        "en": "Marvin Minsky and Seymour Papert, MIT Press",
+        "zh": "马文·明斯基、 Seymour Papert，麻省理工学院出版社"
+      },
+      "sourceUrl": "https://mitpress.mit.edu/9780262631112/perceptrons/"
     },
     "quotePage": {
-      "en": "From PPT page 5",
-      "zh": "摘自PPT第5页"
+      "en": "MIT Press book record: Perceptrons",
+      "zh": "麻省理工学院出版社《感知机》图书页面"
     },
     "images": [
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
@@ -428,12 +461,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.",
-      "zh": "能够创造有用的新特征，使反向传播区别于更早、更简单的方法。"
+      "en": "Rumelhart, Hinton, and Williams showed that back-propagating errors could train internal representations in multilayer neural networks, making feature learning practical again.",
+      "zh": "鲁梅尔哈特、辛顿和威廉姆斯证明，反向传播误差可以训练多层神经网络的内部表示，使特征学习重新变得可行。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Learning representations by back-propagating errors",
+        "zh": "通过反向传播误差学习表示"
+      },
+      "workAuthors": {
+        "en": "David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+        "zh": "戴维·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯，Nature，1986"
+      },
+      "sourceUrl": "https://doi.org/10.1038/323533a0"
     },
     "quotePage": {
-      "en": "From PPT page 9",
-      "zh": "摘自PPT第9页"
+      "en": "Nature paper: Learning representations by back-propagating errors",
+      "zh": "Nature 论文《通过反向传播误差学习表示》"
     },
     "images": [
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
@@ -535,12 +579,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.",
-      "zh": "专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。"
+      "en": "LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.",
+      "zh": "勒昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "zh": "反向传播应用于手写邮政编码识别"
+      },
+      "workAuthors": {
+        "en": "Yann LeCun et al., Neural Computation, 1989",
+        "zh": "扬·勒昆等，Neural Computation，1989"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
     },
     "quotePage": {
-      "en": "From PPT page 14",
-      "zh": "摘自PPT第14页"
+      "en": "LeCun et al., Neural Computation / Bell Labs publication",
+      "zh": "勒昆等，Neural Computation / 贝尔实验室论文"
     },
     "images": [
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
@@ -630,12 +685,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "The current report develops a proposal ... to provide networks with a dynamic memory.",
-      "zh": "本报告提出了一项建议……旨在为网络提供动态内存。"
+      "en": "Recurrent networks introduced explicit state over time, allowing neural models to process sequences by carrying information from earlier inputs into later computations.",
+      "zh": "循环神经网络引入了随时间变化的内部状态，使神经模型能够把早先输入的信息带入后续计算，从而处理序列数据。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Finding Structure in Time",
+        "zh": "在时间中发现结构"
+      },
+      "workAuthors": {
+        "en": "Jeffrey L. Elman, Cognitive Science, 1990",
+        "zh": "杰弗里·埃尔曼，Cognitive Science，1990"
+      },
+      "sourceUrl": "https://doi.org/10.1207/s15516709cog1402_1"
     },
     "quotePage": {
-      "en": "From PPT page 16",
-      "zh": "摘自PPT第16页"
+      "en": "Elman, Cognitive Science, 1990: Finding Structure in Time",
+      "zh": "埃尔曼，Cognitive Science，1990 年《在时间中发现结构》"
     },
     "images": [
       "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
@@ -714,12 +780,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).",
-      "zh": "长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。"
+      "en": "Hochreiter and Schmidhuber introduced LSTM to preserve error signals across long time spans, addressing a central weakness of ordinary recurrent networks.",
+      "zh": "霍赫赖特和施密德胡伯提出 LSTM，用门控结构在长时间跨度中保持误差信号，回应了普通循环网络难以学习长期依赖的核心问题。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Long Short-Term Memory",
+        "zh": "长短期记忆"
+      },
+      "workAuthors": {
+        "en": "Sepp Hochreiter and Jürgen Schmidhuber, Neural Computation, 1997",
+        "zh": "塞普·霍赫赖特、于尔根·施密德胡伯，Neural Computation，1997"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735"
     },
     "quotePage": {
-      "en": "From PPT page 19",
-      "zh": "摘自PPT第19页"
+      "en": "Neural Computation paper: Long Short-Term Memory",
+      "zh": "Neural Computation 论文《长短期记忆》"
     },
     "images": [
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
@@ -809,12 +886,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.",
-      "zh": "我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。"
+      "en": "AlexNet showed that a large deep convolutional network, trained on ImageNet with GPUs and modern regularization, could dramatically improve large-scale visual recognition.",
+      "zh": "AlexNet 证明，利用 GPU、大规模 ImageNet 数据和现代正则化方法训练的大型深度卷积网络，可以显著提升大规模视觉识别效果。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+      },
+      "workAuthors": {
+        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
+        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
     },
     "quotePage": {
-      "en": "From PPT page 23",
-      "zh": "摘自PPT第23页"
+      "en": "NeurIPS 2012 paper: ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "NeurIPS 2012 论文《使用深度卷积神经网络进行 ImageNet 分类》"
     },
     "images": [
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
@@ -904,12 +992,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.",
-      "zh": "这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。"
+      "en": "Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.",
+      "zh": "高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Highway Networks",
+        "zh": "高速网络"
+      },
+      "workAuthors": {
+        "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+        "zh": "Rupesh Kumar Srivastava、Klaus Greff、于尔根·施密德胡伯，arXiv，2015"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1505.00387"
     },
     "quotePage": {
-      "en": "From PPT page 25",
-      "zh": "摘自PPT第25页"
+      "en": "arXiv paper: Highway Networks",
+      "zh": "arXiv 论文《高速网络》"
     },
     "images": [
       "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
@@ -1012,12 +1111,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.",
-      "zh": "我们提出一种残差学习框架，以便训练比以前深得多的网络。"
+      "en": "ResNet reformulated layers as residual functions and used identity shortcuts, making it possible to optimize much deeper visual recognition networks.",
+      "zh": "ResNet 把网络层重新表述为残差函数，并使用恒等捷径连接，使更深的视觉识别网络能够被有效优化。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Deep Residual Learning for Image Recognition",
+        "zh": "用于图像识别的深度残差学习"
+      },
+      "workAuthors": {
+        "en": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+        "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+      },
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
     },
     "quotePage": {
-      "en": "From PPT page 26",
-      "zh": "摘自PPT第26页"
+      "en": "CVPR 2016 paper: Deep Residual Learning for Image Recognition",
+      "zh": "CVPR 2016 论文《用于图像识别的深度残差学习》"
     },
     "images": [
       "resources/images/2015-resnet/people/2015-resnet_people_04.png",
@@ -1130,12 +1240,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.",
-      "zh": "DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。"
+      "en": "DenseNet connected each layer to all later layers, improving feature reuse and gradient flow while encouraging compact convolutional models.",
+      "zh": "DenseNet 将每一层连接到后续所有层，增强了特征复用和梯度流动，也推动了更紧凑的卷积模型设计。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Densely Connected Convolutional Networks",
+        "zh": "密集连接卷积网络"
+      },
+      "workAuthors": {
+        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
+        "zh": "黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
+      },
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
     },
     "quotePage": {
-      "en": "From PPT page 27",
-      "zh": "摘自PPT第27页"
+      "en": "CVPR 2017 paper: Densely Connected Convolutional Networks",
+      "zh": "CVPR 2017 论文《密集连接卷积网络》"
     },
     "images": [
       "resources/images/2016-densenet/people/2016-densenet_people_02.png",
@@ -1225,12 +1346,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We propose a new framework for estimating generative models via adversarial nets.",
-      "zh": "我们提出一种通过对抗过程估计生成模型的新框架。"
+      "en": "GANs framed generative modeling as a competition between a generator and a discriminator, turning adversarial training into a central idea in modern generative AI.",
+      "zh": "GAN 把生成建模表述为生成器与判别器之间的竞争，使对抗训练成为现代生成式 AI 的核心思想之一。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Generative Adversarial Nets",
+        "zh": "生成对抗网络"
+      },
+      "workAuthors": {
+        "en": "Ian Goodfellow et al., NeurIPS, 2014",
+        "zh": "伊恩·古德费洛等，NeurIPS，2014"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets"
     },
     "quotePage": {
-      "en": "From PPT page 30",
-      "zh": "摘自PPT第30页"
+      "en": "NeurIPS 2014 paper: Generative Adversarial Nets",
+      "zh": "NeurIPS 2014 论文《生成对抗网络》"
     },
     "images": [
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png"
@@ -1298,12 +1430,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.",
-      "zh": "我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。"
+      "en": "Bahdanau, Cho, and Bengio introduced attention for neural machine translation, allowing the decoder to focus on relevant source positions instead of relying on one fixed vector.",
+      "zh": "Bahdanau、Cho 和 Bengio 在神经机器翻译中引入注意力，使解码器能够关注相关源语言位置，而不再只依赖一个固定长度向量。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "zh": "通过联合学习对齐与翻译的神经机器翻译"
+      },
+      "workAuthors": {
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
+        "zh": "Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1409.0473"
     },
     "quotePage": {
-      "en": "From PPT page 32",
-      "zh": "摘自PPT第32页"
+      "en": "arXiv paper: Neural Machine Translation by Jointly Learning to Align and Translate",
+      "zh": "arXiv 论文《通过联合学习对齐与翻译的神经机器翻译》"
     },
     "images": [
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
@@ -1372,12 +1515,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-      "zh": "我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。"
+      "en": "The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.",
+      "zh": "Transformer 用自注意力替代循环和卷积，形成了一种可扩展架构，并成为现代语言模型的基础。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Attention Is All You Need",
+        "zh": "注意力就是你所需要的一切"
+      },
+      "workAuthors": {
+        "en": "Ashish Vaswani et al., NeurIPS, 2017",
+        "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
     },
     "quotePage": {
-      "en": "From PPT page 33",
-      "zh": "摘自PPT第33页"
+      "en": "NeurIPS 2017 paper: Attention Is All You Need",
+      "zh": "NeurIPS 2017 论文《注意力就是你所需要的一切》"
     },
     "images": [
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
@@ -1467,12 +1621,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
-      "zh": "BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。"
+      "en": "BERT made bidirectional Transformer pretraining a practical default for language understanding, combining masked language modeling with task-specific fine-tuning.",
+      "zh": "BERT 让双向 Transformer 预训练成为语言理解任务中的实用范式，并将掩码语言模型与任务微调结合起来。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
+      },
+      "workAuthors": {
+        "en": "Jacob Devlin et al., arXiv, 2018",
+        "zh": "雅各布·德夫林等，arXiv，2018"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1810.04805"
     },
     "quotePage": {
-      "en": "From PPT page 37",
-      "zh": "摘自PPT第37页"
+      "en": "BERT paper and Google Research release note",
+      "zh": "BERT 论文与 Google Research 发布说明"
     },
     "images": [
       "resources/images/2018-bert/people/2018-bert_people_03.jpg",
@@ -1562,12 +1727,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.",
-      "zh": "我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。"
+      "en": "OpenAI's GPT showed that generative pretraining on unlabeled text, followed by task adaptation, could transfer strongly across language understanding benchmarks.",
+      "zh": "OpenAI 的 GPT 证明，在无标注文本上进行生成式预训练，再针对任务进行适配，可以在多种语言理解基准上实现有效迁移。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Improving Language Understanding by Generative Pre-Training",
+        "zh": "通过生成式预训练改进语言理解"
+      },
+      "workAuthors": {
+        "en": "Alec Radford et al., OpenAI, 2018",
+        "zh": "亚历克·拉德福德等，OpenAI，2018"
+      },
+      "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
     },
     "quotePage": {
-      "en": "From PPT page 38",
-      "zh": "摘自PPT第38页"
+      "en": "OpenAI official paper: Improving Language Understanding by Generative Pre-Training",
+      "zh": "OpenAI 官方论文《通过生成式预训练改进语言理解》"
     },
     "images": [
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
@@ -1689,12 +1865,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.",
-      "zh": "我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作"
+      "en": "ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.",
+      "zh": "ReAct 及相关系统展示了语言模型如何交错生成推理轨迹与行动，使 LLM 从文本预测器延伸为可调用工具的智能体组件。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "zh": "ReAct：在语言模型中协同推理与行动"
+      },
+      "workAuthors": {
+        "en": "Shunyu Yao et al., arXiv, 2022",
+        "zh": "姚顺雨等，arXiv，2022"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2210.03629"
     },
     "quotePage": {
-      "en": "From PPT page 45-46",
-      "zh": "摘自PPT第45-46页"
+      "en": "ReAct paper: Synergizing Reasoning and Acting in Language Models",
+      "zh": "ReAct 论文《在语言模型中协同推理与行动》"
     },
     "images": [
       "resources/images/2023-agents/historical/2023-agents_historical_02.png",
@@ -1788,12 +1975,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.",
-      "zh": "我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。"
+      "en": "Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.",
+      "zh": "Chatbot Arena 引入了面向语言模型的大规模人类偏好评测，使公开模型比较成为大语言模型生态中可见的一部分。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+        "zh": "Chatbot Arena：基于人类偏好评估大语言模型的开放平台"
+      },
+      "workAuthors": {
+        "en": "LMSYS / LMArena team, arXiv, 2024",
+        "zh": "LMSYS / LMArena 团队，arXiv，2024"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2403.04132"
     },
     "quotePage": {
-      "en": "From PPT page 39",
-      "zh": "摘自PPT第39页"
+      "en": "Chatbot Arena paper and LMArena public leaderboard",
+      "zh": "Chatbot Arena 论文与 LMArena 公开排行榜"
     },
     "images": [
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
@@ -1894,12 +2092,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.",
-      "zh": "在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。"
+      "en": "AlphaFold2 combined deep learning with evolutionary and geometric signals to predict protein structures with a level of accuracy that changed structural biology workflows.",
+      "zh": "AlphaFold2 将深度学习与进化、几何信号结合起来，以足以改变结构生物学工作流程的精度预测蛋白质结构。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Highly accurate protein structure prediction with AlphaFold",
+        "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+      },
+      "workAuthors": {
+        "en": "John Jumper et al., Nature, 2021",
+        "zh": "约翰·江珀等，Nature，2021"
+      },
+      "sourceUrl": "https://www.nature.com/articles/s41586-021-03819-2"
     },
     "quotePage": {
-      "en": "From PPT page 50",
-      "zh": "摘自PPT第50页"
+      "en": "Nature paper and DeepMind AlphaFold announcement",
+      "zh": "Nature 论文与 DeepMind AlphaFold 官方说明"
     },
     "images": [
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
@@ -2023,12 +2232,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.",
-      "zh": "我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。"
+      "en": "AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.",
+      "zh": "AI Feynman 将神经网络拟合与受物理启发的约束结合起来，从数据中恢复符号方程，指向 AI 辅助科学发现的路径。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "AI Feynman: a physics-inspired method for symbolic regression",
+        "zh": "AI Feynman：受物理启发的符号回归方法"
+      },
+      "workAuthors": {
+        "en": "Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
+        "zh": "Silviu-Marian Udrescu、马克斯·泰格马克，Science Advances，2020"
+      },
+      "sourceUrl": "https://www.science.org/doi/10.1126/sciadv.aay2631"
     },
     "quotePage": {
-      "en": "From PPT page 53",
-      "zh": "摘自PPT第53页"
+      "en": "Science Advances paper: AI Feynman",
+      "zh": "Science Advances 论文《AI Feynman》"
     },
     "images": [
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
@@ -2135,12 +2355,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "This paper presents the first comprehensive framework for fully automatic scientific discovery.",
-      "zh": "本文提出了首个用于全自动科学发现的综合性框架。"
+      "en": "The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.",
+      "zh": "AI Scientist 探索了由基础模型生成想法、运行实验、撰写论文并评审结果的端到端研究循环；自主实验室则把类似自动化推进到真实物理实验。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+        "zh": "AI Scientist：迈向全自动开放式科学发现"
+      },
+      "workAuthors": {
+        "en": "Sakana AI team, arXiv, 2024",
+        "zh": "Sakana AI 团队，arXiv，2024"
+      },
+      "sourceUrl": "https://sakana.ai/ai-scientist/"
     },
     "quotePage": {
-      "en": "From PPT page 55",
-      "zh": "摘自PPT第55页"
+      "en": "Sakana AI official project page and arXiv paper: The AI Scientist",
+      "zh": "Sakana AI 官方项目页与 arXiv 论文《AI Scientist》"
     },
     "images": [
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png",
