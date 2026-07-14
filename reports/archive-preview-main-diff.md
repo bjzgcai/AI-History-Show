@@ -5,7 +5,8 @@ Compares normal `milestones-data.js` with forced archive presentation preview `m
 The report separates display-critical differences from structured archive object differences:
 
 - Display-critical: `title`, `subtitle`, `description`, `images`, `visual`, `analysis`.
-- Structured archive objects: `sources`, `commentary`, `quizzes`.
+- Visible structured: rendered `sources`, `commentary` body text, or `quizzes` text/counts.
+- Structured archive objects: archive-only ids/provenance fields and non-rendered labels inside `sources`, `commentary`, `commentaryLabels`, `quizzes`.
 
 ## Summary
 
@@ -13,14 +14,23 @@ The report separates display-critical differences from structured archive object
 - Archive preview milestones: 134
 - Changed milestones: 134
 - Display-critical changed milestones: 0
+- Visible structured changed milestones: 6
+- Active visible structured changed milestones: 0
+- Accepted archive commentary differences: 6
 - Structured archive changed milestones: 134
 - Image decreases: 0
+- Image increases: 0
 - Source decreases: 0
+- Source increases: 0
 - Commentary decreases: 0
+- Commentary increases: 0
 - Quiz decreases: 0
-- Changed fields: sources: 134, commentary: 131, quizzes: 112
+- Quiz increases: 0
+- Changed fields: commentary: 131, sources: 125, quizzes: 112, commentaryDisplay: 6
 - Display-critical fields: none
-- Structured archive fields: sources: 134, commentary: 131, quizzes: 112
+- Visible structured fields: commentaryDisplay: 6
+- Active visible structured fields: none
+- Structured archive fields: commentary: 131, sources: 125, quizzes: 112
 
 ## Display-critical differences
 
@@ -29,9 +39,81 @@ None.
 ## Decreases
 
 - Image decreases: 0
+- Image increases: 0
 - Source decreases: 0
+- Source increases: 0
 - Commentary decreases: 0
+- Commentary increases: 0
 - Quiz decreases: 0
+- Quiz increases: 0
+
+## Visible structured differences
+
+These differences can affect rendered source labels, commentary body text, or quiz text even when counts do not decrease.
+
+## Visible structured changed milestones
+
+### milestone-1958-wangs-algorithm — 1958-wangs-algorithm/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-1960-davis-putnam-dpll — 1960-davis-putnam-dpll/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-1975-genetic-algorithm — 1975-genetic-algorithm/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-2014-adam — 2014-adam/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-ai100-2012-alexnet — 2012-alexnet/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-ai100-2017-transformer — 2017-transformer/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+## Active visible structured differences
+
+None.
+
+## Active visible structured changed milestones
+
+None.
+
+## Accepted archive commentary differences
+
+These commentary body differences are intentionally kept because archive-native historical commentary is preferred over legacy generated template sentences.
+
+## Accepted archive commentary changed milestones
+
+### milestone-1958-wangs-algorithm — 1958-wangs-algorithm/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-1960-davis-putnam-dpll — 1960-davis-putnam-dpll/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-1975-genetic-algorithm — 1975-genetic-algorithm/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-2014-adam — 2014-adam/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-ai100-2012-alexnet — 2012-alexnet/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
+
+### milestone-ai100-2017-transformer — 2017-transformer/bench-council-ai100
+
+- Diffs: commentaryDisplay 3->3
 
 ## Structured archive object differences
 
@@ -39,6 +121,30 @@ These differences indicate archive objects replacing legacy objects while preser
 
 ## Structured archive changed milestones
 
+### milestone-1958-wangs-algorithm — 1958-wangs-algorithm/bench-council-ai100
+
+- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-1960-davis-putnam-dpll — 1960-davis-putnam-dpll/bench-council-ai100
+
+- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-1975-genetic-algorithm — 1975-genetic-algorithm/bench-council-ai100
+
+- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-2014-adam — 2014-adam/bench-council-ai100
+
+- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-ai100-2012-alexnet — 2012-alexnet/bench-council-ai100
+
+- Diffs: sources 4->4; commentary 3->3; quizzes 1->1
+
+### milestone-ai100-2017-transformer — 2017-transformer/bench-council-ai100
+
+- Diffs: sources 4->4; commentary 3->3; quizzes 1->1
+
 ### milestone-1950-turing-test — 1950-turing-test/bench-council-ai100
 
 - Diffs: sources 4->4; commentary 3->3; quizzes 1->1
@@ -63,17 +169,9 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
-### milestone-1958-wangs-algorithm — 1958-wangs-algorithm/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
 ### milestone-1959-pandemonium — 1959-pandemonium/bench-council-ai100
 
 - Diffs: sources 4->4; commentary 3->3; quizzes 1->1
-
-### milestone-1960-davis-putnam-dpll — 1960-davis-putnam-dpll/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
 ### milestone-1965-dendral — 1965-dendral/bench-council-ai100
 
@@ -104,10 +202,6 @@ These differences indicate archive objects replacing legacy objects while preser
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
 ### milestone-1974-frame — 1974-frame/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
-### milestone-1975-genetic-algorithm — 1975-genetic-algorithm/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
@@ -196,10 +290,6 @@ These differences indicate archive objects replacing legacy objects while preser
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
 ### milestone-2013-word2vec — 2013-word2vec/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
-### milestone-2014-adam — 2014-adam/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
@@ -311,10 +401,6 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 4->4; commentary 3->3; quizzes 1->1
 
-### milestone-ai100-2012-alexnet — 2012-alexnet/bench-council-ai100
-
-- Diffs: sources 4->4; commentary 3->3; quizzes 1->1
-
 ### milestone-ai100-2013-variational-autoencoder — ai100-2013-variational-autoencoder/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
@@ -390,10 +476,6 @@ These differences indicate archive objects replacing legacy objects while preser
 ### milestone-ai100-2017-pix2pix — ai100-2017-pix2pix/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
-### milestone-ai100-2017-transformer — 2017-transformer/bench-council-ai100
-
-- Diffs: sources 4->4; commentary 3->3; quizzes 1->1
 
 ### milestone-ai100-2017-wasserstein-gan — ai100-2017-wasserstein-gan/bench-council-ai100
 
@@ -487,25 +569,9 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
-### milestone-1956-dartmouth — 1956-dartmouth/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
 ### milestone-1957-perceptron — 1957-perceptron/deep-learning
 
 - Diffs: sources 3->3; commentary 3->3
-
-### milestone-1969-ai-winter — 1969-ai-winter/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
-### milestone-1986-backpropagation — 1986-backpropagation/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
-### milestone-1986-rnn — 1986-rnn/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
 
 ### milestone-1989-cnn — 1989-cnn/deep-learning
 
@@ -523,10 +589,6 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 4->4; commentary 3->3
 
-### milestone-2014-highway-network — 2014-highway-network/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
 ### milestone-2015-resnet — 2015-resnet/deep-learning
 
 - Diffs: sources 4->4; commentary 3->3
@@ -543,33 +605,53 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 4->4; commentary 3->3
 
-### milestone-2019-ai-feynman — 2019-ai-feynman/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
 ### milestone-2020-alphafold — 2020-alphafold/deep-learning
 
 - Diffs: sources 4->4; commentary 3->3
 
-### milestone-2023-agents — 2023-agents/deep-learning
+### milestone-1956-dartmouth — 1956-dartmouth/deep-learning
 
-- Diffs: sources 0->1; commentary 2->2
+- Diffs: commentary 2->2
 
-### milestone-2024-ai-scientist — 2024-ai-scientist/deep-learning
+### milestone-1969-ai-winter — 1969-ai-winter/deep-learning
 
-- Diffs: sources 0->1; commentary 2->2
+- Diffs: commentary 2->2
 
-### milestone-2025-llm-competition — 2025-llm-competition/deep-learning
+### milestone-1986-backpropagation — 1986-backpropagation/deep-learning
 
-- Diffs: sources 0->1; commentary 2->2
+- Diffs: commentary 2->2
+
+### milestone-1986-rnn — 1986-rnn/deep-learning
+
+- Diffs: commentary 2->2
 
 ### milestone-2012-alexnet — 2012-alexnet/deep-learning
 
 - Diffs: sources 4->4
 
+### milestone-2014-highway-network — 2014-highway-network/deep-learning
+
+- Diffs: commentary 2->2
+
 ### milestone-2017-transformer — 2017-transformer/deep-learning
 
 - Diffs: sources 4->4
+
+### milestone-2019-ai-feynman — 2019-ai-feynman/deep-learning
+
+- Diffs: commentary 2->2
+
+### milestone-2023-agents — 2023-agents/deep-learning
+
+- Diffs: commentary 2->2
+
+### milestone-2024-ai-scientist — 2024-ai-scientist/deep-learning
+
+- Diffs: commentary 2->2
+
+### milestone-2025-llm-competition — 2025-llm-competition/deep-learning
+
+- Diffs: commentary 2->2
 
 ### milestone-gaming-ai-2016-alphago — 2016-alphago/gaming-ai
 
@@ -577,6 +659,30 @@ These differences indicate archive objects replacing legacy objects while preser
 
 ## All changed milestones
 
+### milestone-1958-wangs-algorithm — 1958-wangs-algorithm/bench-council-ai100
+
+- Diffs: sources 3->3; commentaryDisplay 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-1960-davis-putnam-dpll — 1960-davis-putnam-dpll/bench-council-ai100
+
+- Diffs: sources 3->3; commentaryDisplay 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-1975-genetic-algorithm — 1975-genetic-algorithm/bench-council-ai100
+
+- Diffs: sources 3->3; commentaryDisplay 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-2014-adam — 2014-adam/bench-council-ai100
+
+- Diffs: sources 3->3; commentaryDisplay 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-ai100-2012-alexnet — 2012-alexnet/bench-council-ai100
+
+- Diffs: sources 4->4; commentaryDisplay 3->3; commentary 3->3; quizzes 1->1
+
+### milestone-ai100-2017-transformer — 2017-transformer/bench-council-ai100
+
+- Diffs: sources 4->4; commentaryDisplay 3->3; commentary 3->3; quizzes 1->1
+
 ### milestone-1950-turing-test — 1950-turing-test/bench-council-ai100
 
 - Diffs: sources 4->4; commentary 3->3; quizzes 1->1
@@ -601,17 +707,9 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
-### milestone-1958-wangs-algorithm — 1958-wangs-algorithm/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
 ### milestone-1959-pandemonium — 1959-pandemonium/bench-council-ai100
 
 - Diffs: sources 4->4; commentary 3->3; quizzes 1->1
-
-### milestone-1960-davis-putnam-dpll — 1960-davis-putnam-dpll/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
 ### milestone-1965-dendral — 1965-dendral/bench-council-ai100
 
@@ -642,10 +740,6 @@ These differences indicate archive objects replacing legacy objects while preser
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
 ### milestone-1974-frame — 1974-frame/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
-### milestone-1975-genetic-algorithm — 1975-genetic-algorithm/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
@@ -734,10 +828,6 @@ These differences indicate archive objects replacing legacy objects while preser
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
 ### milestone-2013-word2vec — 2013-word2vec/bench-council-ai100
-
-- Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
-### milestone-2014-adam — 2014-adam/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
@@ -849,10 +939,6 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 4->4; commentary 3->3; quizzes 1->1
 
-### milestone-ai100-2012-alexnet — 2012-alexnet/bench-council-ai100
-
-- Diffs: sources 4->4; commentary 3->3; quizzes 1->1
-
 ### milestone-ai100-2013-variational-autoencoder — ai100-2013-variational-autoencoder/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
@@ -928,10 +1014,6 @@ These differences indicate archive objects replacing legacy objects while preser
 ### milestone-ai100-2017-pix2pix — ai100-2017-pix2pix/bench-council-ai100
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
-
-### milestone-ai100-2017-transformer — 2017-transformer/bench-council-ai100
-
-- Diffs: sources 4->4; commentary 3->3; quizzes 1->1
 
 ### milestone-ai100-2017-wasserstein-gan — ai100-2017-wasserstein-gan/bench-council-ai100
 
@@ -1025,25 +1107,9 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 3->3; commentary 3->3; quizzes 1->1
 
-### milestone-1956-dartmouth — 1956-dartmouth/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
 ### milestone-1957-perceptron — 1957-perceptron/deep-learning
 
 - Diffs: sources 3->3; commentary 3->3
-
-### milestone-1969-ai-winter — 1969-ai-winter/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
-### milestone-1986-backpropagation — 1986-backpropagation/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
-### milestone-1986-rnn — 1986-rnn/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
 
 ### milestone-1989-cnn — 1989-cnn/deep-learning
 
@@ -1061,10 +1127,6 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 4->4; commentary 3->3
 
-### milestone-2014-highway-network — 2014-highway-network/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
 ### milestone-2015-resnet — 2015-resnet/deep-learning
 
 - Diffs: sources 4->4; commentary 3->3
@@ -1081,33 +1143,53 @@ These differences indicate archive objects replacing legacy objects while preser
 
 - Diffs: sources 4->4; commentary 3->3
 
-### milestone-2019-ai-feynman — 2019-ai-feynman/deep-learning
-
-- Diffs: sources 0->1; commentary 2->2
-
 ### milestone-2020-alphafold — 2020-alphafold/deep-learning
 
 - Diffs: sources 4->4; commentary 3->3
 
-### milestone-2023-agents — 2023-agents/deep-learning
+### milestone-1956-dartmouth — 1956-dartmouth/deep-learning
 
-- Diffs: sources 0->1; commentary 2->2
+- Diffs: commentary 2->2
 
-### milestone-2024-ai-scientist — 2024-ai-scientist/deep-learning
+### milestone-1969-ai-winter — 1969-ai-winter/deep-learning
 
-- Diffs: sources 0->1; commentary 2->2
+- Diffs: commentary 2->2
 
-### milestone-2025-llm-competition — 2025-llm-competition/deep-learning
+### milestone-1986-backpropagation — 1986-backpropagation/deep-learning
 
-- Diffs: sources 0->1; commentary 2->2
+- Diffs: commentary 2->2
+
+### milestone-1986-rnn — 1986-rnn/deep-learning
+
+- Diffs: commentary 2->2
 
 ### milestone-2012-alexnet — 2012-alexnet/deep-learning
 
 - Diffs: sources 4->4
 
+### milestone-2014-highway-network — 2014-highway-network/deep-learning
+
+- Diffs: commentary 2->2
+
 ### milestone-2017-transformer — 2017-transformer/deep-learning
 
 - Diffs: sources 4->4
+
+### milestone-2019-ai-feynman — 2019-ai-feynman/deep-learning
+
+- Diffs: commentary 2->2
+
+### milestone-2023-agents — 2023-agents/deep-learning
+
+- Diffs: commentary 2->2
+
+### milestone-2024-ai-scientist — 2024-ai-scientist/deep-learning
+
+- Diffs: commentary 2->2
+
+### milestone-2025-llm-competition — 2025-llm-competition/deep-learning
+
+- Diffs: commentary 2->2
 
 ### milestone-gaming-ai-2016-alphago — 2016-alphago/gaming-ai
 

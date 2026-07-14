@@ -46,6 +46,10 @@ function selectByIds(items, ids) {
     return (ids || []).map((id) => map.get(id)).filter(Boolean);
 }
 
+function isDisplaySource(source) {
+    return source && source.id !== 'source-legacy-event-record';
+}
+
 function sourceDisplay(source) {
     return {
         id: source.id,
@@ -141,6 +145,7 @@ function buildMilestonePreview(root, storyline, ref) {
 
     const selectedAssets = selectByIds(bundle.assets, variant.assetIds || []);
     const selectedSources = selectByIds(bundle.sources, variant.sourceIds || []);
+    const displaySources = selectedSources.filter(isDisplaySource);
     const selectedClaims = selectByIds(bundle.claims, variant.claimIds || []);
     const quizMap = byId(bundle.quizzes);
     const selectedQuiz = variant.quizId ? quizMap.get(variant.quizId) : null;
@@ -192,8 +197,8 @@ function buildMilestonePreview(root, storyline, ref) {
         achievement: {
             visual: variant.visual || '',
             visualModules: variant.visualModules || [],
-            sources: selectedSources.map(sourceDisplay),
-            sourceIds: selectedSources.map((source) => source.id),
+            sources: displaySources.map(sourceDisplay),
+            sourceIds: displaySources.map((source) => source.id),
             claimIds: selectedClaims.map((claim) => claim.id),
             claims: selectedClaims.map((claim) => ({
                 id: claim.id,

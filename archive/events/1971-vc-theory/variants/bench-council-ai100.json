@@ -32,8 +32,8 @@
     {
       "id": "published-paper",
       "label": {
-        "zh": "论文材料",
-        "en": "Published Paper"
+        "zh": "历史背景",
+        "en": "Historical Background"
       },
       "html": {
         "zh": "瓦普尼克 和 切尔沃年基斯 1971 年论文把泛化变成了关于一整类事件或假设上一致收敛的数学问题。瓦普尼克 1995 年著作随后系统总结了统计学习理论框架。",
@@ -46,8 +46,8 @@
     {
       "id": "capacity-logic",
       "label": {
-        "zh": "容量逻辑",
-        "en": "Capacity Logic"
+        "zh": "核心思想",
+        "en": "Core Idea"
       },
       "html": {
         "zh": "关键展示点是“拟合样本”和“在未见数据上表现”之间的差距。VC 维提供了一种方法，用来理解模型灵活性何时有帮助、何时会带来过拟合风险。",

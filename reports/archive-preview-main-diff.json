@@ -3,22 +3,33 @@
   "previewCount": 134,
   "changedCount": 134,
   "displayCriticalChangedCount": 0,
+  "activeVisibleStructuredChangedCount": 0,
+  "acceptedArchiveCommentaryChangedCount": 6,
   "structuredArchiveChangedCount": 134,
   "fieldCounts": {
-    "sources": 134,
     "commentary": 131,
-    "quizzes": 112
+    "sources": 125,
+    "quizzes": 112,
+    "commentaryDisplay": 6
   },
   "displayCriticalFieldCounts": {},
+  "visibleStructuredFieldCounts": {
+    "commentaryDisplay": 6
+  },
+  "activeVisibleStructuredFieldCounts": {},
   "structuredArchiveFieldCounts": {
-    "sources": 134,
     "commentary": 131,
+    "sources": 125,
     "quizzes": 112
   },
   "imageDecreaseCount": 0,
+  "imageIncreaseCount": 0,
   "sourceDecreaseCount": 0,
+  "sourceIncreaseCount": 0,
   "commentaryDecreaseCount": 0,
+  "commentaryIncreaseCount": 0,
   "quizDecreaseCount": 0,
+  "quizIncreaseCount": 0,
   "rows": [
     {
       "id": "milestone-1956-dartmouth",
@@ -34,22 +45,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -72,6 +73,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1037/h0042519",
             "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
@@ -88,7 +90,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -106,22 +109,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -139,22 +132,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -172,22 +155,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -210,6 +183,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1162/neco.1989.1.4.541",
             "https://yann.lecun.com/exdb/lenet/",
@@ -228,7 +202,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -251,6 +226,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1162/neco.1997.9.8.1735",
             "https://www.bioinf.jku.at/publications/older/2604.pdf",
@@ -269,7 +245,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -292,6 +269,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
             "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
@@ -300,8 +278,8 @@
           ],
           "preview": [
             "source-alexnet-neurips-paper",
-            "source-imagenet-challenge",
             "source-alexnet-neurips-pdf",
+            "source-imagenet-challenge",
             "source-alexnet-overview"
           ]
         }
@@ -321,22 +299,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -359,6 +327,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1406.2661",
             "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
@@ -377,7 +346,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -400,6 +370,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1409.0473",
             "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
@@ -418,7 +389,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -441,6 +413,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1512.03385",
             "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
@@ -459,7 +432,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -482,6 +456,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1608.06993",
             "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
@@ -500,7 +475,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -523,6 +499,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1706.03762",
             "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
@@ -557,6 +534,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1810.04805",
             "https://aclanthology.org/N19-1423/",
@@ -575,7 +553,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -598,6 +577,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
             "https://openai.com/index/language-unsupervised/",
@@ -616,7 +596,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -634,22 +615,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -672,6 +643,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1038/s41586-021-03819-2",
             "https://deepmind.google/technologies/alphafold/",
@@ -690,7 +662,8 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -708,22 +681,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -741,22 +704,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -774,22 +727,12 @@
       },
       "diffs": [
         {
-          "field": "sources",
-          "group": "structuredArchive",
-          "normalCount": 0,
-          "previewCount": 1,
-          "decreased": false,
-          "normal": [],
-          "preview": [
-            "source-legacy-event-record"
-          ]
-        },
-        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 2,
           "previewCount": 2,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -812,6 +755,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://academic.oup.com/mind/article/LIX/236/433/986238",
             "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence",
@@ -830,14 +774,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -860,6 +806,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www-formal.stanford.edu/jmc/recursive.html",
             "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view",
@@ -876,14 +823,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -906,6 +855,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.nature.com/articles/nature16961",
             "https://deepmind.google/research/alphago/",
@@ -922,14 +872,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -952,6 +904,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dl.acm.org/doi/10.1145/800157.805047",
             "https://awards.acm.org/award_winners/cook_N991950",
@@ -968,14 +921,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -998,6 +953,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://epubs.siam.org/doi/10.1137/1116025",
             "https://link.springer.com/book/10.1007/978-1-4757-2440-0",
@@ -1014,14 +970,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1044,6 +1002,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
             "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555",
@@ -1060,14 +1019,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1090,6 +1051,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
             "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/",
@@ -1102,18 +1064,28 @@
           ]
         },
         {
+          "field": "commentaryDisplay",
+          "group": "visibleStructured",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "increased": false
+        },
+        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1136,6 +1108,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dl.acm.org/doi/10.1145/321033.321034",
             "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
@@ -1148,18 +1121,28 @@
           ]
         },
         {
+          "field": "commentaryDisplay",
+          "group": "visibleStructured",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "increased": false
+        },
+        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1182,6 +1165,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1412.6980",
             "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
@@ -1194,18 +1178,28 @@
           ]
         },
         {
+          "field": "commentaryDisplay",
+          "group": "visibleStructured",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "increased": false
+        },
+        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1228,6 +1222,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1409.1556",
             "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
@@ -1244,14 +1239,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1274,6 +1271,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
             "https://deap.readthedocs.io/en/master/",
@@ -1286,18 +1284,28 @@
           ]
         },
         {
+          "field": "commentaryDisplay",
+          "group": "visibleStructured",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "increased": false
+        },
+        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1320,6 +1328,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1505.04597",
             "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
@@ -1336,14 +1345,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1366,6 +1377,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1506.01497",
             "https://github.com/ShaoqingRen/faster_rcnn",
@@ -1382,14 +1394,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1412,6 +1426,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dl.acm.org/doi/10.1145/130385.130401",
             "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
@@ -1428,14 +1443,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1458,6 +1475,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
             "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
@@ -1474,14 +1492,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1504,6 +1524,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.science.org/doi/10.1126/science.220.4598.671",
             "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
@@ -1520,14 +1541,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1550,6 +1573,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
             "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
@@ -1566,14 +1590,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1596,6 +1622,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
             "https://pytorch.org/vision/stable/models/googlenet.html",
@@ -1612,14 +1639,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1642,6 +1671,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1145/321250.321253",
             "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
@@ -1658,14 +1688,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1688,6 +1720,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1145/155360.155362",
             "https://www.prolog-heritage.org/en/Prolog_50.html",
@@ -1704,14 +1737,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1734,6 +1769,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1145/365153.365168",
             "https://news.mit.edu/2008/obit-weizenbaum-0310",
@@ -1750,14 +1786,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1780,6 +1818,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1073/pnas.79.8.2554",
             "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
@@ -1796,14 +1835,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1826,6 +1867,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://jmlr.org/papers/v15/srivastava14a.html",
             "https://arxiv.org/abs/1207.0580",
@@ -1842,14 +1884,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1872,6 +1916,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1506.02640",
             "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
@@ -1888,14 +1933,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1918,6 +1965,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1301.3781",
             "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
@@ -1934,14 +1982,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -1964,6 +2014,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://ieeexplore.ieee.org/document/5206848",
             "https://www.image-net.org/",
@@ -1980,14 +2031,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2010,6 +2063,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1312.5602",
             "https://www.nature.com/articles/nature14236",
@@ -2026,14 +2080,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2056,6 +2112,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://jmlr.org/papers/v3/blei03a.html",
             "https://www.cs.columbia.edu/~blei/",
@@ -2072,14 +2129,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2102,6 +2161,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dspace.mit.edu/handle/1721.1/7095",
             "https://www.cs.stanford.edu/people/terry-winograd",
@@ -2118,14 +2178,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2148,6 +2210,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://research.ibm.com/people/murray-campbell",
             "https://www.computerhistory.org/chess/",
@@ -2164,14 +2227,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2194,6 +2259,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
             "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
@@ -2210,14 +2276,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2240,6 +2308,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1021/ci60034a002",
             "https://awards.acm.org/award-recipients/feigenbaum_4167235",
@@ -2256,14 +2325,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2286,6 +2357,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
             "https://doi.org/10.1023/B:VISI.0000029664.99615.94",
@@ -2302,14 +2374,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2332,6 +2406,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://jmlr.org/papers/v9/vandermaaten08a.html",
             "https://lvdmaaten.github.io/",
@@ -2348,14 +2423,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2378,6 +2455,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1037/h0042519",
             "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
@@ -2394,14 +2472,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2424,6 +2504,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1162/neco.2006.18.7.1527",
             "https://doi.org/10.1126/science.1127647",
@@ -2440,14 +2521,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2470,6 +2553,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1007/BF00115009",
             "http://incompleteideas.net/",
@@ -2486,14 +2570,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2516,6 +2602,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
             "https://bayes.cs.ucla.edu/home.htm",
@@ -2532,14 +2619,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2562,6 +2651,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/cs/0310056",
             "https://arxiv.org/abs/cs/0205078",
@@ -2578,14 +2668,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2608,6 +2700,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1016/j.artint.2012.06.009",
             "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
@@ -2626,14 +2719,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2656,6 +2751,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dl.acm.org/doi/10.1145/1455270.1455277",
             "https://history.computer.org/pioneers/strachey.html",
@@ -2674,14 +2770,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2704,6 +2802,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://webdocs.cs.ualberta.ca/~chinook/index.php",
             "https://www.science.org/doi/10.1126/science.1144079",
@@ -2722,14 +2821,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2752,6 +2853,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1007/978-1-4899-1221-6_4",
             "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
@@ -2770,14 +2872,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2800,6 +2904,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dl.acm.org/doi/book/10.5555/70571",
             "https://dl.acm.org/doi/10.1145/122296.122308",
@@ -2818,14 +2923,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2848,6 +2955,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
             "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
@@ -2866,14 +2974,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2896,6 +3006,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1109/TIT.1982.1056489",
             "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
@@ -2914,14 +3025,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2944,6 +3057,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dl.acm.org/doi/10.5555/3001460.3001507",
             "https://doi.org/10.1145/3068335",
@@ -2962,14 +3076,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -2992,6 +3108,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1109/34.868688",
             "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
@@ -3010,14 +3127,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3040,6 +3159,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1109/TIT.1967.1053964",
             "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
@@ -3058,14 +3178,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3088,6 +3210,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1080/00401706.1970.10488634",
             "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
@@ -3106,14 +3229,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3136,6 +3261,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
             "https://doi.org/10.1109/CVPR.2005.177",
@@ -3154,14 +3280,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3184,6 +3312,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1007/11744023_32",
             "https://people.ee.ethz.ch/~surf/eccv06.pdf",
@@ -3202,14 +3331,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3232,6 +3363,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1162/089976698300017467",
             "https://is.mpg.de/ei/publications/730",
@@ -3250,14 +3382,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3280,6 +3414,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1038/44565",
             "https://www.nature.com/articles/44565",
@@ -3298,14 +3433,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3328,6 +3465,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1126/science.290.5500.2319",
             "https://www.science.org/doi/10.1126/science.290.5500.2319",
@@ -3346,14 +3484,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3376,6 +3516,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1126/science.290.5500.2323",
             "https://www.science.org/doi/10.1126/science.290.5500.2323",
@@ -3394,14 +3535,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3424,6 +3567,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1007/BF02478259",
             "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
@@ -3442,14 +3586,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3472,6 +3618,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://history-computer.com/snarc/",
             "https://historyof.ai/snarc/",
@@ -3490,14 +3637,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3520,6 +3669,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1007/BF00337288",
             "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
@@ -3538,14 +3688,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3568,6 +3720,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1038/323533a0",
             "https://doi.org/10.1109/PGEC.1967.264666",
@@ -3586,14 +3739,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3616,6 +3771,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://proceedings.mlr.press/v15/glorot11a.html",
             "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf",
@@ -3634,14 +3790,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3664,6 +3822,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1007/BF00344251",
             "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
@@ -3682,14 +3841,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3712,6 +3873,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1162/neco.1989.1.4.541",
             "https://yann.lecun.com/exdb/lenet/",
@@ -3730,14 +3892,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3760,6 +3924,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.jmlr.org/papers/v3/bengio03a.html",
             "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
@@ -3778,14 +3943,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3808,6 +3975,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
             "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
@@ -3822,18 +3990,28 @@
           ]
         },
         {
+          "field": "commentaryDisplay",
+          "group": "visibleStructured",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "increased": false
+        },
+        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3856,6 +4034,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1512.03385",
             "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
@@ -3874,14 +4053,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3904,6 +4085,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://proceedings.mlr.press/v37/ioffe15.html",
             "https://arxiv.org/abs/1502.03167",
@@ -3922,14 +4104,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -3952,6 +4136,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1608.06993",
             "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
@@ -3970,14 +4155,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4000,6 +4187,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1706.03762",
             "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
@@ -4014,18 +4202,28 @@
           ]
         },
         {
+          "field": "commentaryDisplay",
+          "group": "visibleStructured",
+          "normalCount": 3,
+          "previewCount": 3,
+          "decreased": false,
+          "increased": false
+        },
+        {
           "field": "commentary",
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4048,6 +4246,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/2010.11929",
             "https://openreview.net/forum?id=YicbFdNTTy",
@@ -4066,14 +4265,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4096,6 +4297,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1162/neco.1997.9.8.1735",
             "https://www.bioinf.jku.at/publications/older/2604.pdf",
@@ -4114,14 +4316,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4144,6 +4348,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1406.2661",
             "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
@@ -4162,14 +4367,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4192,6 +4399,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1409.0473",
             "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
@@ -4210,14 +4418,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4240,6 +4450,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1810.04805",
             "https://aclanthology.org/N19-1423/",
@@ -4258,14 +4469,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4288,6 +4501,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
             "https://openai.com/index/language-unsupervised/",
@@ -4306,14 +4520,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4336,6 +4552,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1038/s41586-021-03819-2",
             "https://deepmind.google/technologies/alphafold/",
@@ -4354,14 +4571,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4384,6 +4603,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/2103.00020",
             "https://proceedings.mlr.press/v139/radford21a.html",
@@ -4402,14 +4622,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4432,6 +4654,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/2102.12092",
             "https://proceedings.mlr.press/v139/ramesh21a.html",
@@ -4450,14 +4673,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4480,6 +4705,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/2112.10752",
             "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
@@ -4498,14 +4724,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4528,6 +4756,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/2304.02643",
             "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
@@ -4546,14 +4775,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4576,6 +4807,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/2103.14030",
             "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
@@ -4592,14 +4824,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4622,6 +4856,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://aclanthology.org/D14-1162/",
             "https://nlp.stanford.edu/projects/glove/",
@@ -4638,14 +4873,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4668,6 +4905,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1411.1784",
             "https://en.wikipedia.org/wiki/Generative_adversarial_network",
@@ -4684,14 +4922,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4714,6 +4954,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1511.06434",
             "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html",
@@ -4730,14 +4971,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4760,6 +5003,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://proceedings.mlr.press/v70/arjovsky17a.html",
             "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
@@ -4776,14 +5020,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4806,6 +5052,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1703.10593",
             "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
@@ -4822,14 +5069,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4852,6 +5101,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1611.07004",
             "https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html",
@@ -4868,14 +5118,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4898,6 +5150,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1812.04948",
             "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html",
@@ -4914,14 +5167,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4944,6 +5199,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1312.6114",
             "https://openreview.net/forum?id=33X9fd2-9FyZd",
@@ -4960,14 +5216,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -4990,6 +5248,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
             "https://arxiv.org/abs/2006.11239",
@@ -5006,14 +5265,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5036,6 +5297,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1109/TNN.2008.2005605",
             "https://ieeexplore.ieee.org/document/4700287",
@@ -5052,14 +5314,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5082,6 +5346,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1609.02907",
             "https://openreview.net/forum?id=SJU4ayYgl",
@@ -5098,14 +5363,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5128,6 +5395,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1710.10903",
             "https://openreview.net/forum?id=rJXMpikCZ",
@@ -5144,14 +5412,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5174,6 +5444,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1611.01578",
             "https://openreview.net/forum?id=r1Ue8Hcxg",
@@ -5190,14 +5461,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5220,6 +5493,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1510.00149",
             "https://openreview.net/forum?id=n4Bp24yb5L",
@@ -5236,14 +5510,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5266,6 +5542,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1503.02531",
             "https://en.wikipedia.org/wiki/Knowledge_distillation",
@@ -5282,14 +5559,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5312,6 +5591,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1405.0312",
             "https://cocodataset.org/",
@@ -5328,14 +5608,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5358,6 +5640,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
             "https://link.springer.com/article/10.1007/BF00992698",
@@ -5374,14 +5657,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5404,6 +5689,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1509.02971",
             "https://openreview.net/forum?id=Rx4nmj8j6G",
@@ -5420,14 +5706,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5450,6 +5738,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1109/TSMC.1983.6313077",
             "http://incompleteideas.net/book/the-book-2nd.html",
@@ -5466,14 +5755,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5496,6 +5787,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://dl.acm.org/doi/10.1145/1455270.1455277",
             "https://history.computer.org/pioneers/strachey.html",
@@ -5514,14 +5806,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5544,6 +5838,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://doi.org/10.1007/BF00115009",
             "http://incompleteideas.net/",
@@ -5560,14 +5855,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5590,6 +5887,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://webdocs.cs.ualberta.ca/~chinook/index.php",
             "https://www.science.org/doi/10.1126/science.1144079",
@@ -5608,14 +5906,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5638,6 +5938,7 @@
           "normalCount": 4,
           "previewCount": 4,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://skatgame.net/mburo/log.html",
             "https://skatgame.net/mburo/event.html",
@@ -5656,14 +5957,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5686,6 +5989,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://research.ibm.com/people/murray-campbell",
             "https://www.computerhistory.org/chess/",
@@ -5702,14 +6006,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5732,6 +6038,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
             "https://arxiv.org/abs/1801.07411",
@@ -5748,14 +6055,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5778,6 +6087,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/1312.5602",
             "https://www.nature.com/articles/nature14236",
@@ -5794,14 +6104,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5824,6 +6136,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.nature.com/articles/nature16961",
             "https://deepmind.google/research/alphago/",
@@ -5856,6 +6169,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.science.org/doi/10.1126/science.aar6404",
             "https://arxiv.org/abs/1712.01815",
@@ -5872,14 +6186,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5902,6 +6218,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.science.org/doi/10.1126/science.aao1733",
             "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html",
@@ -5918,14 +6235,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5948,6 +6267,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.science.org/doi/10.1126/science.aay2400",
             "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
@@ -5964,14 +6284,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -5994,6 +6316,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://arxiv.org/abs/2003.13590",
             "https://doi.org/10.48550/arXiv.2003.13590",
@@ -6010,14 +6333,16 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     },
@@ -6040,6 +6365,7 @@
           "normalCount": 3,
           "previewCount": 3,
           "decreased": false,
+          "increased": false,
           "normal": [
             "https://www.nature.com/articles/s41586-020-03051-4",
             "https://arxiv.org/abs/1911.08265",
@@ -6056,19 +6382,38 @@
           "group": "structuredArchive",
           "normalCount": 3,
           "previewCount": 3,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         },
         {
           "field": "quizzes",
           "group": "structuredArchive",
           "normalCount": 1,
           "previewCount": 1,
-          "decreased": false
+          "decreased": false,
+          "increased": false
         }
       ]
     }
   ],
   "displayCriticalRowIds": [],
+  "visibleStructuredRowIds": [
+    "milestone-1958-wangs-algorithm",
+    "milestone-1960-davis-putnam-dpll",
+    "milestone-2014-adam",
+    "milestone-1975-genetic-algorithm",
+    "milestone-ai100-2012-alexnet",
+    "milestone-ai100-2017-transformer"
+  ],
+  "activeVisibleStructuredRowIds": [],
+  "acceptedArchiveCommentaryRowIds": [
+    "milestone-1958-wangs-algorithm",
+    "milestone-1960-davis-putnam-dpll",
+    "milestone-2014-adam",
+    "milestone-1975-genetic-algorithm",
+    "milestone-ai100-2012-alexnet",
+    "milestone-ai100-2017-transformer"
+  ],
   "structuredArchiveRowIds": [
     "milestone-1956-dartmouth",
     "milestone-1957-perceptron",

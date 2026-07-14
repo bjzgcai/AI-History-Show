@@ -38,8 +38,8 @@
         "en": "Historical Background"
       },
       "html": {
-        "zh": "围棋长期被视为搜索空间极大、难以依靠蛮力搜索解决的棋类任务。AlphaGo 在 2016 年与李世石的五番棋中获胜，使深度学习、强化学习与搜索结合的能力被全球观众看见。",
-        "en": "Go had long been treated as a board game with a search space too large for brute-force methods. AlphaGo’s 2016 match victory over Lee Sedol made the combination of deep learning, reinforcement learning, and search visible to a global audience."
+        "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
+        "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data."
       },
       "sourceIds": [
         "source-deepmind-alphago-page"
@@ -52,8 +52,8 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "《自然》论文解释了 AlphaGo 的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。",
-        "en": "The Nature paper explains AlphaGo’s hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce reliance on expert game data."
+        "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。",
+        "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves."
       },
       "sourceIds": [
         "source-alphago-nature-paper"

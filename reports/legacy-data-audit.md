@@ -1,6 +1,6 @@
 # Legacy Data Audit
 
-Generated: 2026-07-13T06:44:25.750Z
+Generated: 2026-07-13T10:50:41.845Z
 
 This report checks the legacy history data files against the archive migration boundary.
 It is intentionally read-only and does not regenerate display data.

@@ -32,8 +32,8 @@
     {
       "id": "published-paper",
       "label": {
-        "zh": "论文材料",
-        "en": "Published Paper"
+        "zh": "历史背景",
+        "en": "Historical Background"
       },
       "html": {
         "zh": "库克 1971 年 STOC 论文把布尔可满足性问题变成比较计算困难性的经典对象。它说明许多看起来不同的问题可以通过高效归约联系起来。",
@@ -46,8 +46,8 @@
     {
       "id": "reduction-logic",
       "label": {
-        "zh": "归约逻辑",
-        "en": "Reduction Logic"
+        "zh": "核心思想",
+        "en": "Core Idea"
       },
       "html": {
         "zh": "这个展项应突出从“单个难题”到“困难性地图”的转变。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。",

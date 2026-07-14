@@ -32,8 +32,8 @@
     {
       "id": "published-papers",
       "label": {
-        "zh": "论文材料",
-        "en": "Published Papers"
+        "zh": "历史背景",
+        "en": "Historical Background"
       },
       "html": {
         "zh": "第一篇论文发表于 1960 年 4 月 《ACM 通讯》，DOI 为 10.1145/367177.367224。贝尔实验室 档案保存了 1961 年续篇，其中 王浩 讨论了谓词演算证明过程及相关判定问题情形。",
@@ -46,8 +46,8 @@
     {
       "id": "pattern-logic",
       "label": {
-        "zh": "模式逻辑",
-        "en": "Pattern Logic"
+        "zh": "核心思想",
+        "en": "Core Idea"
       },
       "html": {
         "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。",
