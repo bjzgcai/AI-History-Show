@@ -1,5 +1,5 @@
 // AI 历史里程碑数据（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-13 06:44
+// 生成时间: 2026-07-14 08:41
 // 数据来源: manage/catalog.js  +  manage/events.js  +  manage/quizzes.js  +  resources/videos/
 
 const milestones = [
@@ -93,11 +93,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
     "quote": {
-      "en": "\"Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.\"",
-      "zh": "\"学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。\""
+      "en": "\"The Dartmouth proposal framed artificial intelligence as a research program: learning and other features of intelligence could, in principle, be described precisely enough for machines to simulate them.\"",
+      "zh": "\"达特茅斯提案把人工智能定义为一个可研究的科学计划：学习以及智能的其他特征，原则上可以被精确描述，并由机器加以模拟。\""
     },
     "quoteAttribution": {
-      "en": "<em>A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence</em>, John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
+      "en": "<em>A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence</em>, John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, 1955",
       "zh": "《达特茅斯人工智能夏季研究项目提案》，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农"
     },
     "quoteMeta": {
@@ -107,21 +107,21 @@ const milestones = [
       },
       "workTitle": {
         "en": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
-        "zh": "达特茅斯人工智能夏季研究项目提案"
+        "zh": "达特茅斯夏季人工智能研究项目提案"
       },
       "workAuthors": {
-        "en": "John McCarthy, Marvin L. Minsky, Nathaniel Rochester, Claude E. Shannon",
-        "zh": "约翰·麦卡锡、马文·L·明斯基、纳撒尼尔·罗切斯特、克劳德·E·香农"
+        "en": "John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, 1955",
+        "zh": "约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农，1955"
       },
       "sourceLabel": {
-        "en": "Dartmouth official page quoting the 1955 proposal",
-        "zh": "达特茅斯官方页面引用 1955 年提案"
+        "en": "Stanford/J. McCarthy archive of the 1955 Dartmouth proposal",
+        "zh": "斯坦福 / 约翰·麦卡锡档案保存的 1955 年达特茅斯提案"
       },
-      "sourceUrl": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth"
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html"
     },
     "quotePage": {
-      "en": "From PPT page 1",
-      "zh": "摘自PPT第1页"
+      "en": "Dartmouth Summer Research Project proposal, Stanford/J. McCarthy archive",
+      "zh": "达特茅斯夏季人工智能研究项目提案，斯坦福 / 约翰·麦卡锡档案"
     },
     "commentarySections": [
       {
@@ -305,25 +305,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1956-dartmouth",
-            "en": "Legacy event record for 1956-dartmouth"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -411,29 +394,29 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/1957%E6%84%9F%E7%9F%A5%E6%9C%BA%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%80%E5%88%9D%E7%81%AB%E8%8A%B1.mp4",
     "quote": {
-      "en": "\"Linear threshold learning machine\"",
-      "zh": "\"线性阈值学习机\""
+      "en": "\"Rosenblatt's perceptron presented a trainable model of information storage and organization, linking ideas from brain science, psychology, and machine learning.\"",
+      "zh": "\"罗森布拉特的感知机提出了一种可训练的信息存储与组织模型，把脑科学、心理学和机器学习早期思想连接起来。\""
     },
     "quoteAttribution": {
-      "en": "<em>The perceptron paper record</em>, Frank Rosenblatt",
-      "zh": "《感知机论文记录》, 弗兰克·罗森布拉特"
+      "en": "<em>The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</em>, Frank Rosenblatt, Psychological Review, 1958",
+      "zh": "《感知机：大脑中信息存储与组织的概率模型》, 弗兰克·罗森布拉特，Psychological Review，1958"
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
-        "en": "The perceptron paper record",
-        "zh": "感知机论文记录"
+        "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "zh": "感知机：大脑中信息存储与组织的概率模型"
       },
       "workAuthors": {
-        "en": "Frank Rosenblatt",
-        "zh": "弗兰克·罗森布拉特"
+        "en": "Frank Rosenblatt, Psychological Review, 1958",
+        "zh": "弗兰克·罗森布拉特，Psychological Review，1958"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1037/h0042519"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100: Neural networks / Rosenblatt Perceptron",
-      "zh": "BenchCouncil AI100：神经网络 / 罗森布拉特 感知机"
+      "en": "Rosenblatt, Psychological Review, 1958",
+      "zh": "罗森布拉特，Psychological Review，1958 年论文"
     },
     "commentarySections": [
       {
@@ -1045,11 +1028,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
     "quote": {
-      "en": "\"Their rigorous work and brilliant technique does not make the perceptron look very good.\"",
-      "zh": "\"他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。\""
+      "en": "\"Minsky and Papert's Perceptrons became a landmark critique of single-layer perceptrons, sharpening the field's understanding of what simple neural models could and could not represent.\"",
+      "zh": "\"明斯基和帕珀特的《感知机》成为对单层感知机的重要批判，促使研究者更清楚地认识简单神经模型能表示什么、不能表示什么。\""
     },
     "quoteAttribution": {
-      "en": "<em>Perceptrons: An Introduction to Computational Geometry</em>, Marvin Minsky, Seymour Papert",
+      "en": "<em>Perceptrons: An Introduction to Computational Geometry</em>, Marvin Minsky and Seymour Papert, MIT Press",
       "zh": "《感知机：计算几何导论》，马文·明斯基、西摩·派珀特"
     },
     "quoteMeta": {
@@ -1059,21 +1042,21 @@ const milestones = [
       },
       "workTitle": {
         "en": "Perceptrons: An Introduction to Computational Geometry",
-        "zh": "感知机：计算几何导论"
+        "zh": "感知机：计算几何学导论"
       },
       "workAuthors": {
-        "en": "Marvin Minsky, Seymour Papert",
-        "zh": "马文·明斯基、西摩尔·帕普特"
+        "en": "Marvin Minsky and Seymour Papert, MIT Press",
+        "zh": "马文·明斯基、 Seymour Papert，麻省理工学院出版社"
       },
       "sourceLabel": {
-        "en": "MIT Press foreword excerpt on Perceptrons",
-        "zh": "麻省理工学院出版社《感知机》前言摘录"
+        "en": "MIT Press book record",
+        "zh": "麻省理工学院出版社图书页面"
       },
-      "sourceUrl": "https://mitpress.mit.edu/9780262534772/perceptrons/"
+      "sourceUrl": "https://mitpress.mit.edu/9780262631112/perceptrons/"
     },
     "quotePage": {
-      "en": "From PPT page 5",
-      "zh": "摘自PPT第5页"
+      "en": "MIT Press book record: Perceptrons",
+      "zh": "麻省理工学院出版社《感知机》图书页面"
     },
     "commentarySections": [
       {
@@ -1225,25 +1208,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1969-ai-winter",
-            "en": "Legacy event record for 1969-ai-winter"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -1357,11 +1323,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
     "quote": {
-      "en": "\"The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.\"",
-      "zh": "\"能够创造有用的新特征，使反向传播区别于更早、更简单的方法。\""
+      "en": "\"Rumelhart, Hinton, and Williams showed that back-propagating errors could train internal representations in multilayer neural networks, making feature learning practical again.\"",
+      "zh": "\"鲁梅尔哈特、辛顿和威廉姆斯证明，反向传播误差可以训练多层神经网络的内部表示，使特征学习重新变得可行。\""
     },
     "quoteAttribution": {
-      "en": "<em>Learning representations by back-propagating errors</em>, David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
+      "en": "<em>Learning representations by back-propagating errors</em>, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
       "zh": "《通过误差反向传播学习表示》，大卫·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
     },
     "quoteMeta": {
@@ -1371,21 +1337,21 @@ const milestones = [
       },
       "workTitle": {
         "en": "Learning representations by back-propagating errors",
-        "zh": "通过误差反向传播学习表示"
+        "zh": "通过反向传播误差学习表示"
       },
       "workAuthors": {
-        "en": "David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams",
-        "zh": "戴维·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯"
+        "en": "David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+        "zh": "戴维·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯，Nature，1986"
       },
       "sourceLabel": {
-        "en": "Nature abstract",
-        "zh": "《自然》摘要"
+        "en": "Nature paper DOI",
+        "zh": "Nature 论文 DOI"
       },
-      "sourceUrl": "https://www.nature.com/articles/323533a0"
+      "sourceUrl": "https://doi.org/10.1038/323533a0"
     },
     "quotePage": {
-      "en": "From PPT page 9",
-      "zh": "摘自PPT第9页"
+      "en": "Nature paper: Learning representations by back-propagating errors",
+      "zh": "Nature 论文《通过反向传播误差学习表示》"
     },
     "commentarySections": [
       {
@@ -1601,25 +1567,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1986-backpropagation",
-            "en": "Legacy event record for 1986-backpropagation"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -1720,11 +1669,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": {
-      "en": "\"The current report develops a proposal ... to provide networks with a dynamic memory.\"",
-      "zh": "\"本报告提出了一项建议……旨在为网络提供动态内存。\""
+      "en": "\"Recurrent networks introduced explicit state over time, allowing neural models to process sequences by carrying information from earlier inputs into later computations.\"",
+      "zh": "\"循环神经网络引入了随时间变化的内部状态，使神经模型能够把早先输入的信息带入后续计算，从而处理序列数据。\""
     },
     "quoteAttribution": {
-      "en": "<em>Finding Structure in Time</em>, Jeffrey L. Elman",
+      "en": "<em>Finding Structure in Time</em>, Jeffrey L. Elman, Cognitive Science, 1990",
       "zh": "《在时间中发现结构》，杰弗里·埃尔曼"
     },
     "quoteMeta": {
@@ -1737,18 +1686,18 @@ const milestones = [
         "zh": "在时间中发现结构"
       },
       "workAuthors": {
-        "en": "Jeffrey L. Elman",
-        "zh": "杰弗里·L·埃尔曼"
+        "en": "Jeffrey L. Elman, Cognitive Science, 1990",
+        "zh": "杰弗里·埃尔曼，Cognitive Science，1990"
       },
       "sourceLabel": {
-        "en": "ScienceDirect abstract page",
-        "zh": "ScienceDirect 摘要页面"
+        "en": "Cognitive Science paper DOI",
+        "zh": "Cognitive Science 论文 DOI"
       },
-      "sourceUrl": "https://www.sciencedirect.com/science/article/abs/pii/036402139090002E"
+      "sourceUrl": "https://doi.org/10.1207/s15516709cog1402_1"
     },
     "quotePage": {
-      "en": "From PPT page 16",
-      "zh": "摘自PPT第16页"
+      "en": "Elman, Cognitive Science, 1990: Finding Structure in Time",
+      "zh": "埃尔曼，Cognitive Science，1990 年《在时间中发现结构》"
     },
     "commentarySections": [
       {
@@ -1868,25 +1817,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 1986-rnn",
-            "en": "Legacy event record for 1986-rnn"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -1974,29 +1906,29 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
     "quote": {
-      "en": "\"Backpropagation Applied to Handwritten Zip Code Recognition\"",
-      "zh": "\"反向传播应用于手写邮编识别\""
+      "en": "\"LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.\"",
+      "zh": "\"勒昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。\""
     },
     "quoteAttribution": {
       "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
-      "zh": "《反向传播应用于手写邮编识别》, 扬·勒昆等，《Neural Computation》，1989"
+      "zh": "《反向传播应用于手写邮政编码识别》, 扬·勒昆等，Neural Computation，1989"
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
         "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
-        "zh": "反向传播应用于手写邮编识别"
+        "zh": "反向传播应用于手写邮政编码识别"
       },
       "workAuthors": {
         "en": "Yann LeCun et al., Neural Computation, 1989",
-        "zh": "扬·勒昆等，《Neural Computation》，1989"
+        "zh": "扬·勒昆等，Neural Computation，1989"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "LeCun et al., Neural Computation / Bell Labs publication",
+      "zh": "勒昆等，Neural Computation / 贝尔实验室论文"
     },
     "commentarySections": [
       {
@@ -2597,12 +2529,12 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
     "quote": {
-      "en": "\"Long short-term memory\"",
-      "zh": "\"长短期记忆\""
+      "en": "\"Hochreiter and Schmidhuber introduced LSTM to preserve error signals across long time spans, addressing a central weakness of ordinary recurrent networks.\"",
+      "zh": "\"霍赫赖特和施密德胡伯提出 LSTM，用门控结构在长时间跨度中保持误差信号，回应了普通循环网络难以学习长期依赖的核心问题。\""
     },
     "quoteAttribution": {
-      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
-      "zh": "《长短期记忆》, 塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
+      "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter and Jürgen Schmidhuber, Neural Computation, 1997",
+      "zh": "《长短期记忆》, 塞普·霍赫赖特、于尔根·施密德胡伯，Neural Computation，1997"
     },
     "quoteMeta": {
       "speaker": "",
@@ -2611,15 +2543,15 @@ const milestones = [
         "zh": "长短期记忆"
       },
       "workAuthors": {
-        "en": "Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
-        "zh": "塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
+        "en": "Sepp Hochreiter and Jürgen Schmidhuber, Neural Computation, 1997",
+        "zh": "塞普·霍赫赖特、于尔根·施密德胡伯，Neural Computation，1997"
       },
       "sourceLabel": "",
       "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "Neural Computation paper: Long Short-Term Memory",
+      "zh": "Neural Computation 论文《长短期记忆》"
     },
     "commentarySections": [
       {
@@ -3236,12 +3168,12 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
     "quote": {
-      "en": "\"ImageNet Classification with Deep Convolutional Neural Networks\"",
-      "zh": "\"使用深度卷积神经网络进行 ImageNet 分类\""
+      "en": "\"AlexNet showed that a large deep convolutional network, trained on ImageNet with GPUs and modern regularization, could dramatically improve large-scale visual recognition.\"",
+      "zh": "\"AlexNet 证明，利用 GPU、大规模 ImageNet 数据和现代正则化方法训练的大型深度卷积网络，可以显著提升大规模视觉识别效果。\""
     },
     "quoteAttribution": {
-      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
-      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
     },
     "quoteMeta": {
       "speaker": "",
@@ -3250,15 +3182,15 @@ const milestones = [
         "zh": "使用深度卷积神经网络进行 ImageNet 分类"
       },
       "workAuthors": {
-        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012",
-        "zh": "亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
+        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+      "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "NeurIPS 2012 paper: ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "NeurIPS 2012 论文《使用深度卷积神经网络进行 ImageNet 分类》"
     },
     "commentarySections": [
       {
@@ -3573,11 +3505,11 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
@@ -3585,13 +3517,27 @@ const milestones = [
           "sourceType": "paper"
         },
         {
-          "id": "source-imagenet-challenge",
+          "id": "source-alexnet-neurips-pdf",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
           },
           "label": {
-            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "zh": "NeurIPS 完整论文 PDF",
+            "en": "NeurIPS full paper PDF"
+          },
+          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-imagenet-challenge",
+          "type": {
+            "zh": "背景",
+            "en": "Background"
+          },
+          "label": {
+            "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
@@ -3599,27 +3545,13 @@ const milestones = [
           "sourceType": "official-page"
         },
         {
-          "id": "source-alexnet-neurips-pdf",
-          "type": {
-            "zh": "paper",
-            "en": "paper"
-          },
-          "label": {
-            "zh": "NeurIPS full paper PDF for AlexNet",
-            "en": "NeurIPS full paper PDF for AlexNet"
-          },
-          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
+            "zh": "背景",
+            "en": "Context"
           },
           "label": {
-            "zh": "AlexNet overview",
+            "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
@@ -3629,8 +3561,8 @@ const milestones = [
       ],
       "archiveSourceIds": [
         "source-alexnet-neurips-paper",
-        "source-imagenet-challenge",
         "source-alexnet-neurips-pdf",
+        "source-imagenet-challenge",
         "source-alexnet-overview"
       ],
       "archiveClaims": [
@@ -3826,11 +3758,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
     "quote": {
-      "en": "\"The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.\"",
-      "zh": "\"这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。\""
+      "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
+      "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""
     },
     "quoteAttribution": {
-      "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+      "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
       "zh": "《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯"
     },
     "quoteMeta": {
@@ -3843,18 +3775,18 @@ const milestones = [
         "zh": "高速网络"
       },
       "workAuthors": {
-        "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
-        "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+        "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+        "zh": "Rupesh Kumar Srivastava、Klaus Greff、于尔根·施密德胡伯，arXiv，2015"
       },
       "sourceLabel": {
-        "en": "arXiv abstract",
-        "zh": "arXiv 摘要"
+        "en": "arXiv paper page",
+        "zh": "arXiv 论文页面"
       },
       "sourceUrl": "https://arxiv.org/abs/1505.00387"
     },
     "quotePage": {
-      "en": "From PPT page 25",
-      "zh": "摘自PPT第25页"
+      "en": "arXiv paper: Highway Networks",
+      "zh": "arXiv 论文《高速网络》"
     },
     "commentarySections": [
       {
@@ -3974,25 +3906,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2014-highway-network",
-            "en": "Legacy event record for 2014-highway-network"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -4093,8 +4008,8 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
     "quote": {
-      "en": "\"Generative adversarial nets\"",
-      "zh": "\"生成对抗网络\""
+      "en": "\"GANs framed generative modeling as a competition between a generator and a discriminator, turning adversarial training into a central idea in modern generative AI.\"",
+      "zh": "\"GAN 把生成建模表述为生成器与判别器之间的竞争，使对抗训练成为现代生成式 AI 的核心思想之一。\""
     },
     "quoteAttribution": {
       "en": "<em>Generative Adversarial Nets</em>, Ian Goodfellow et al., NeurIPS, 2014",
@@ -4111,11 +4026,11 @@ const milestones = [
         "zh": "伊恩·古德费洛等，NeurIPS，2014"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://arxiv.org/abs/1406.2661"
+      "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "NeurIPS 2014 paper: Generative Adversarial Nets",
+      "zh": "NeurIPS 2014 论文《生成对抗网络》"
     },
     "commentarySections": [
       {
@@ -4668,29 +4583,29 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
     "quote": {
-      "en": "\"Neural machine translation by jointly learning to align and translate\"",
-      "zh": "\"通过联合学习对齐与翻译实现神经机器翻译\""
+      "en": "\"Bahdanau, Cho, and Bengio introduced attention for neural machine translation, allowing the decoder to focus on relevant source positions instead of relying on one fixed vector.\"",
+      "zh": "\"Bahdanau、Cho 和 Bengio 在神经机器翻译中引入注意力，使解码器能够关注相关源语言位置，而不再只依赖一个固定长度向量。\""
     },
     "quoteAttribution": {
-      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
-      "zh": "《通过联合学习对齐与翻译实现神经机器翻译》, 兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
+      "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
+      "zh": "《通过联合学习对齐与翻译的神经机器翻译》, Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
         "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
-        "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+        "zh": "通过联合学习对齐与翻译的神经机器翻译"
       },
       "workAuthors": {
-        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, ICLR, 2015",
-        "zh": "兹米特里·巴赫达瑙、赵京贤、约书亚·本吉奥，ICLR，2015"
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
+        "zh": "Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1409.0473"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "arXiv paper: Neural Machine Translation by Jointly Learning to Align and Translate",
+      "zh": "arXiv 论文《通过联合学习对齐与翻译的神经机器翻译》"
     },
     "commentarySections": [
       {
@@ -5284,8 +5199,8 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
     "quote": {
-      "en": "\"Deep Residual Learning for Image Recognition\"",
-      "zh": "\"用于图像识别的深度残差学习\""
+      "en": "\"ResNet reformulated layers as residual functions and used identity shortcuts, making it possible to optimize much deeper visual recognition networks.\"",
+      "zh": "\"ResNet 把网络层重新表述为残差函数，并使用恒等捷径连接，使更深的视觉识别网络能够被有效优化。\""
     },
     "quoteAttribution": {
       "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
@@ -5302,11 +5217,11 @@ const milestones = [
         "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://arxiv.org/abs/1512.03385"
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "CVPR 2016 paper: Deep Residual Learning for Image Recognition",
+      "zh": "CVPR 2016 论文《用于图像识别的深度残差学习》"
     },
     "commentarySections": [
       {
@@ -5970,12 +5885,12 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
     "quote": {
-      "en": "\"Densely Connected Convolutional Networks\"",
-      "zh": "\"密集连接卷积网络\""
+      "en": "\"DenseNet connected each layer to all later layers, improving feature reuse and gradient flow while encouraging compact convolutional models.\"",
+      "zh": "\"DenseNet 将每一层连接到后续所有层，增强了特征复用和梯度流动，也推动了更紧凑的卷积模型设计。\""
     },
     "quoteAttribution": {
-      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
-      "zh": "《密集连接卷积网络》, 黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
+      "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
+      "zh": "《密集连接卷积网络》, 黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
     },
     "quoteMeta": {
       "speaker": "",
@@ -5984,15 +5899,15 @@ const milestones = [
         "zh": "密集连接卷积网络"
       },
       "workAuthors": {
-        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017",
-        "zh": "黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017"
+        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
+        "zh": "黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://arxiv.org/abs/1608.06993"
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "CVPR 2017 paper: Densely Connected Convolutional Networks",
+      "zh": "CVPR 2017 论文《密集连接卷积网络》"
     },
     "commentarySections": [
       {
@@ -6532,29 +6447,29 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
     "quote": {
-      "en": "\"Attention Is All You Need\"",
-      "zh": "\"Attention Is All You Need\""
+      "en": "\"The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.\"",
+      "zh": "\"Transformer 用自注意力替代循环和卷积，形成了一种可扩展架构，并成为现代语言模型的基础。\""
     },
     "quoteAttribution": {
       "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al., NeurIPS, 2017",
-      "zh": "《Attention Is All You Need》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
+      "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
     },
     "quoteMeta": {
       "speaker": "",
       "workTitle": {
         "en": "Attention Is All You Need",
-        "zh": "Attention Is All You Need"
+        "zh": "注意力就是你所需要的一切"
       },
       "workAuthors": {
         "en": "Ashish Vaswani et al., NeurIPS, 2017",
         "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://arxiv.org/abs/1706.03762"
+      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "NeurIPS 2017 paper: Attention Is All You Need",
+      "zh": "NeurIPS 2017 论文《注意力就是你所需要的一切》"
     },
     "commentarySections": [
       {
@@ -6885,11 +6800,11 @@ const milestones = [
         {
           "id": "source-transformer-arxiv",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Attention Is All You Need",
+            "zh": "《Attention Is All You Need》",
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
@@ -6899,12 +6814,12 @@ const milestones = [
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "会议论文",
+            "en": "Conference paper"
           },
           "label": {
-            "zh": "NeurIPS paper page for Attention Is All You Need",
-            "en": "NeurIPS paper page for Attention Is All You Need"
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
           "reliability": "primary",
@@ -6913,12 +6828,12 @@ const milestones = [
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "出版页",
+            "en": "Publication"
           },
           "label": {
-            "zh": "Google Research publication page for Attention Is All You Need",
-            "en": "Google Research publication page for Attention Is All You Need"
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
           "reliability": "primary",
@@ -6927,12 +6842,12 @@ const milestones = [
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "回顾",
+            "en": "Retrospective"
           },
           "label": {
-            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
-            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+            "zh": "Google Research Transformer 博客",
+            "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
           "reliability": "secondary",
@@ -7146,12 +7061,12 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4",
     "quote": {
-      "en": "\"Pre-training of deep bidirectional transformers for language understanding\"",
-      "zh": "\"用于语言理解的深度双向 Transformer 预训练\""
+      "en": "\"BERT made bidirectional Transformer pretraining a practical default for language understanding, combining masked language modeling with task-specific fine-tuning.\"",
+      "zh": "\"BERT 让双向 Transformer 预训练成为语言理解任务中的实用范式，并将掩码语言模型与任务微调结合起来。\""
     },
     "quoteAttribution": {
-      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al., NAACL, 2019",
-      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等，NAACL，2019"
+      "en": "<em>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</em>, Jacob Devlin et al., arXiv, 2018",
+      "zh": "《BERT：用于语言理解的深度双向 Transformer 预训练》, 雅各布·德夫林等，arXiv，2018"
     },
     "quoteMeta": {
       "speaker": "",
@@ -7160,15 +7075,15 @@ const milestones = [
         "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
       },
       "workAuthors": {
-        "en": "Jacob Devlin et al., NAACL, 2019",
-        "zh": "雅各布·德夫林等，NAACL，2019"
+        "en": "Jacob Devlin et al., arXiv, 2018",
+        "zh": "雅各布·德夫林等，arXiv，2018"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/1810.04805"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "BERT paper and Google Research release note",
+      "zh": "BERT 论文与 Google Research 发布说明"
     },
     "commentarySections": [
       {
@@ -7755,8 +7670,8 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2018%E5%B9%B4GPT%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%9E%81%E7%AE%80%E7%9A%84%E8%83%9C%E5%88%A9.mp4",
     "quote": {
-      "en": "\"Improving language understanding by generative pre-training\"",
-      "zh": "\"通过生成式预训练改进语言理解\""
+      "en": "\"OpenAI's GPT showed that generative pretraining on unlabeled text, followed by task adaptation, could transfer strongly across language understanding benchmarks.\"",
+      "zh": "\"OpenAI 的 GPT 证明，在无标注文本上进行生成式预训练，再针对任务进行适配，可以在多种语言理解基准上实现有效迁移。\""
     },
     "quoteAttribution": {
       "en": "<em>Improving Language Understanding by Generative Pre-Training</em>, Alec Radford et al., OpenAI, 2018",
@@ -7776,8 +7691,8 @@ const milestones = [
       "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "OpenAI official paper: Improving Language Understanding by Generative Pre-Training",
+      "zh": "OpenAI 官方论文《通过生成式预训练改进语言理解》"
     },
     "commentarySections": [
       {
@@ -8396,11 +8311,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
     "quote": {
-      "en": "\"We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.\"",
-      "zh": "\"我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。\""
+      "en": "\"AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.\"",
+      "zh": "\"AI Feynman 将神经网络拟合与受物理启发的约束结合起来，从数据中恢复符号方程，指向 AI 辅助科学发现的路径。\""
     },
     "quoteAttribution": {
-      "en": "<em>AI Feynman: a physics-inspired method for symbolic regression</em>, Silviu-Marian Udrescu, Max Tegmark",
+      "en": "<em>AI Feynman: a physics-inspired method for symbolic regression</em>, Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
       "zh": "《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
     },
     "quoteMeta": {
@@ -8410,21 +8325,21 @@ const milestones = [
       },
       "workTitle": {
         "en": "AI Feynman: a physics-inspired method for symbolic regression",
-        "zh": "AI 费曼：受物理启发的符号回归方法"
+        "zh": "AI Feynman：受物理启发的符号回归方法"
       },
       "workAuthors": {
-        "en": "Silviu-Marian Udrescu, Max Tegmark",
-        "zh": "西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+        "en": "Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
+        "zh": "Silviu-Marian Udrescu、马克斯·泰格马克，Science Advances，2020"
       },
       "sourceLabel": {
-        "en": "arXiv abstract",
-        "zh": "arXiv 摘要"
+        "en": "Science Advances paper DOI page",
+        "zh": "Science Advances 论文 DOI 页面"
       },
-      "sourceUrl": "https://arxiv.org/abs/1905.11481"
+      "sourceUrl": "https://www.science.org/doi/10.1126/sciadv.aay2631"
     },
     "quotePage": {
-      "en": "From PPT page 53",
-      "zh": "摘自PPT第53页"
+      "en": "Science Advances paper: AI Feynman",
+      "zh": "Science Advances 论文《AI Feynman》"
     },
     "commentarySections": [
       {
@@ -8608,25 +8523,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2019-ai-feynman",
-            "en": "Legacy event record for 2019-ai-feynman"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -8727,12 +8625,12 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
     "quote": {
-      "en": "\"Highly accurate protein structure prediction with AlphaFold\"",
-      "zh": "\"使用 AlphaFold 进行高精度蛋白质结构预测\""
+      "en": "\"AlphaFold2 combined deep learning with evolutionary and geometric signals to predict protein structures with a level of accuracy that changed structural biology workflows.\"",
+      "zh": "\"AlphaFold2 将深度学习与进化、几何信号结合起来，以足以改变结构生物学工作流程的精度预测蛋白质结构。\""
     },
     "quoteAttribution": {
       "en": "<em>Highly accurate protein structure prediction with AlphaFold</em>, John Jumper et al., Nature, 2021",
-      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，《Nature》，2021"
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，Nature，2021"
     },
     "quoteMeta": {
       "speaker": "",
@@ -8742,14 +8640,14 @@ const milestones = [
       },
       "workAuthors": {
         "en": "John Jumper et al., Nature, 2021",
-        "zh": "约翰·江珀等，《Nature》，2021"
+        "zh": "约翰·江珀等，Nature，2021"
       },
       "sourceLabel": "",
-      "sourceUrl": "https://doi.org/10.1038/s41586-021-03819-2"
+      "sourceUrl": "https://www.nature.com/articles/s41586-021-03819-2"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100 achievement entry",
-      "zh": "BenchCouncil AI100 成就条目"
+      "en": "Nature paper and DeepMind AlphaFold announcement",
+      "zh": "Nature 论文与 DeepMind AlphaFold 官方说明"
     },
     "commentarySections": [
       {
@@ -9491,11 +9389,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
     "quote": {
-      "en": "\"We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.\"",
-      "zh": "\"我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作\""
+      "en": "\"ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.\"",
+      "zh": "\"ReAct 及相关系统展示了语言模型如何交错生成推理轨迹与行动，使 LLM 从文本预测器延伸为可调用工具的智能体组件。\""
     },
     "quoteAttribution": {
-      "en": "<em>ReAct: Synergizing Reasoning and Acting in Language Models</em>, Shunyu Yao et al.",
+      "en": "<em>ReAct: Synergizing Reasoning and Acting in Language Models</em>, Shunyu Yao et al., arXiv, 2022",
       "zh": "《ReAct：在语言模型中协同推理与行动》，姚顺雨等"
     },
     "quoteMeta": {
@@ -9508,18 +9406,18 @@ const milestones = [
         "zh": "ReAct：在语言模型中协同推理与行动"
       },
       "workAuthors": {
-        "en": "Shunyu Yao et al.",
-        "zh": "姚顺雨等"
+        "en": "Shunyu Yao et al., arXiv, 2022",
+        "zh": "姚顺雨等，arXiv，2022"
       },
       "sourceLabel": {
-        "en": "ReAct abstract",
-        "zh": "ReAct 摘要"
+        "en": "ReAct arXiv paper page",
+        "zh": "ReAct arXiv 论文页面"
       },
       "sourceUrl": "https://arxiv.org/abs/2210.03629"
     },
     "quotePage": {
-      "en": "From PPT page 45-46",
-      "zh": "摘自PPT第45-46页"
+      "en": "ReAct paper: Synergizing Reasoning and Acting in Language Models",
+      "zh": "ReAct 论文《在语言模型中协同推理与行动》"
     },
     "commentarySections": [
       {
@@ -9671,25 +9569,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2023-agents",
-            "en": "Legacy event record for 2023-agents"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -9796,11 +9677,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
     "quote": {
-      "en": "\"This paper presents the first comprehensive framework for fully automatic scientific discovery.\"",
-      "zh": "\"本文提出了首个用于全自动科学发现的综合性框架。\""
+      "en": "\"The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.\"",
+      "zh": "\"AI Scientist 探索了由基础模型生成想法、运行实验、撰写论文并评审结果的端到端研究循环；自主实验室则把类似自动化推进到真实物理实验。\""
     },
     "quoteAttribution": {
-      "en": "<em>The AI Scientist</em>, Chris Lu et al.",
+      "en": "<em>The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery</em>, Sakana AI team, arXiv, 2024",
       "zh": "《AI 科学家》，克里斯·卢等"
     },
     "quoteMeta": {
@@ -9809,22 +9690,22 @@ const milestones = [
         "zh": "克里斯·卢等"
       },
       "workTitle": {
-        "en": "The AI Scientist",
-        "zh": "AI 科学家"
+        "en": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+        "zh": "AI Scientist：迈向全自动开放式科学发现"
       },
       "workAuthors": {
-        "en": "Chris Lu et al.",
-        "zh": "克里斯·卢等"
+        "en": "Sakana AI team, arXiv, 2024",
+        "zh": "Sakana AI 团队，arXiv，2024"
       },
       "sourceLabel": {
-        "en": "arXiv abstract",
-        "zh": "arXiv 摘要"
+        "en": "Sakana AI official project page",
+        "zh": "Sakana AI 官方项目页面"
       },
-      "sourceUrl": "https://arxiv.org/abs/2408.06292"
+      "sourceUrl": "https://sakana.ai/ai-scientist/"
     },
     "quotePage": {
-      "en": "From PPT page 55",
-      "zh": "摘自PPT第55页"
+      "en": "Sakana AI official project page and arXiv paper: The AI Scientist",
+      "zh": "Sakana AI 官方项目页与 arXiv 论文《AI Scientist》"
     },
     "commentarySections": [
       {
@@ -10040,25 +9921,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2024-ai-scientist",
-            "en": "Legacy event record for 2024-ai-scientist"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -10160,11 +10024,11 @@ const milestones = [
     "photos": [],
     "videoUrl": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
     "quote": {
-      "en": "\"We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.\"",
-      "zh": "\"我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。\""
+      "en": "\"Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.\"",
+      "zh": "\"Chatbot Arena 引入了面向语言模型的大规模人类偏好评测，使公开模型比较成为大语言模型生态中可见的一部分。\""
     },
     "quoteAttribution": {
-      "en": "<em>Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference</em>, Wei-Lin Chiang et al.",
+      "en": "<em>Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference</em>, LMSYS / LMArena team, arXiv, 2024",
       "zh": "《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等"
     },
     "quoteMeta": {
@@ -10174,21 +10038,21 @@ const milestones = [
       },
       "workTitle": {
         "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
-        "zh": "聊天机器人竞技场：基于人类偏好评估大语言模型的开放平台"
+        "zh": "Chatbot Arena：基于人类偏好评估大语言模型的开放平台"
       },
       "workAuthors": {
-        "en": "Wei-Lin Chiang et al.",
-        "zh": "蒋维霖等"
+        "en": "LMSYS / LMArena team, arXiv, 2024",
+        "zh": "LMSYS / LMArena 团队，arXiv，2024"
       },
       "sourceLabel": {
-        "en": "Chatbot Arena abstract",
-        "zh": "聊天机器人竞技场摘要"
+        "en": "Chatbot Arena arXiv paper page",
+        "zh": "Chatbot Arena arXiv 论文页面"
       },
       "sourceUrl": "https://arxiv.org/abs/2403.04132"
     },
     "quotePage": {
-      "en": "From PPT page 39",
-      "zh": "摘自PPT第39页"
+      "en": "Chatbot Arena paper and LMArena public leaderboard",
+      "zh": "Chatbot Arena 论文与 LMArena 公开排行榜"
     },
     "commentarySections": [
       {
@@ -10372,25 +10236,8 @@ const milestones = [
       }
     },
     "achievement": {
-      "archiveSources": [
-        {
-          "id": "source-legacy-event-record",
-          "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
-          },
-          "label": {
-            "zh": "Legacy event record for 2025-llm-competition",
-            "en": "Legacy event record for 2025-llm-competition"
-          },
-          "url": "https://www.benchcouncil.org/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        }
-      ],
-      "archiveSourceIds": [
-        "source-legacy-event-record"
-      ],
+      "archiveSources": [],
+      "archiveSourceIds": [],
       "archiveClaims": [
         {
           "id": "claim-legacy-achievement-summary",
@@ -11800,12 +11647,12 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Mastering the game of Go with deep neural networks and tree search",
-            "en": "Mastering the game of Go with deep neural networks and tree search"
+            "zh": "《自然》 2016 AlphaGo 论文",
+            "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "reliability": "primary",
@@ -11814,11 +11661,11 @@ const milestones = [
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "博客",
+            "en": "Blog"
           },
           "label": {
-            "zh": "Google DeepMind AlphaGo",
+            "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
@@ -11828,11 +11675,11 @@ const milestones = [
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "code",
-            "en": "code"
+            "zh": "API",
+            "en": "API"
           },
           "label": {
-            "zh": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
@@ -49654,11 +49501,11 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
@@ -49668,12 +49515,12 @@ const milestones = [
         {
           "id": "source-alexnet-neurips-pdf",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
           },
           "label": {
-            "zh": "NeurIPS full paper PDF for AlexNet",
-            "en": "NeurIPS full paper PDF for AlexNet"
+            "zh": "NeurIPS 完整论文 PDF",
+            "en": "NeurIPS full paper PDF"
           },
           "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
           "reliability": "primary",
@@ -49682,11 +49529,11 @@ const milestones = [
         {
           "id": "source-imagenet-challenge",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "背景",
+            "en": "Background"
           },
           "label": {
-            "zh": "ImageNet Large Scale Visual Recognition Challenge",
+            "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
@@ -49696,11 +49543,11 @@ const milestones = [
         {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "reference-only",
-            "en": "reference-only"
+            "zh": "背景",
+            "en": "Context"
           },
           "label": {
-            "zh": "AlexNet overview",
+            "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
@@ -52404,11 +52251,11 @@ const milestones = [
         {
           "id": "source-transformer-arxiv",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Attention Is All You Need",
+            "zh": "《Attention Is All You Need》",
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
@@ -52418,12 +52265,12 @@ const milestones = [
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "会议论文",
+            "en": "Conference paper"
           },
           "label": {
-            "zh": "NeurIPS paper page for Attention Is All You Need",
-            "en": "NeurIPS paper page for Attention Is All You Need"
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
           "reliability": "primary",
@@ -52432,12 +52279,12 @@ const milestones = [
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "出版页",
+            "en": "Publication"
           },
           "label": {
-            "zh": "Google Research publication page for Attention Is All You Need",
-            "en": "Google Research publication page for Attention Is All You Need"
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
           "reliability": "primary",
@@ -52446,12 +52293,12 @@ const milestones = [
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "回顾",
+            "en": "Retrospective"
           },
           "label": {
-            "zh": "Transformer: A Novel Neural Network Architecture for Language Understanding",
-            "en": "Transformer: A Novel Neural Network Architecture for Language Understanding"
+            "zh": "Google Research Transformer 博客",
+            "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
           "reliability": "secondary",
@@ -77029,12 +76876,12 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "paper",
-            "en": "paper"
+            "zh": "论文",
+            "en": "Paper"
           },
           "label": {
-            "zh": "Mastering the game of Go with deep neural networks and tree search",
-            "en": "Mastering the game of Go with deep neural networks and tree search"
+            "zh": "《自然》 2016 AlphaGo 论文",
+            "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
           "reliability": "primary",
@@ -77043,11 +76890,11 @@ const milestones = [
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "official-page",
-            "en": "official-page"
+            "zh": "博客",
+            "en": "Blog"
           },
           "label": {
-            "zh": "Google DeepMind AlphaGo",
+            "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
@@ -77057,11 +76904,11 @@ const milestones = [
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "code",
-            "en": "code"
+            "zh": "API",
+            "en": "API"
           },
           "label": {
-            "zh": "KataGo Analysis Engine",
+            "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",

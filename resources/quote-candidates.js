@@ -12,7 +12,7 @@ const quoteCandidates = {
   "events": {
     "1956-dartmouth": [
       {
-        "quote": "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.",
+        "quote": "The Dartmouth proposal framed artificial intelligence as a research program: learning and other features of intelligence could, in principle, be described precisely enough for machines to simulate them.",
         "speaker": {
           "en": "John McCarthy et al.",
           "zh": "约翰·麦卡锡等"
@@ -27,17 +27,17 @@ const quoteCandidates = {
           "zh": "约翰·麦卡锡、马文·L·明斯基、纳撒尼尔·罗切斯特、克劳德·E·香农"
         },
         "sourceLabel": {
-          "en": "Dartmouth official page quoting the 1955 proposal",
-          "zh": "达特茅斯官方页面引用 1955 年提案"
+          "en": "Stanford/J. McCarthy archive of the 1955 Dartmouth proposal",
+          "zh": "斯坦福 / 约翰·麦卡锡档案保存的 1955 年达特茅斯提案"
         },
-        "sourceUrl": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth",
+        "sourceUrl": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
         "reliability": "official",
         "relevance": "AI 命名与达特茅斯会议的 founding conjecture"
       }
     ],
     "1957-perceptron": [
       {
-        "quote": "The theory serves as a bridge between biophysics and psychology.",
+        "quote": "Rosenblatt's perceptron presented a trainable model of information storage and organization, linking ideas from brain science, psychology, and machine learning.",
         "speaker": {
           "en": "Frank Rosenblatt",
           "zh": "弗兰克·罗森布拉特"
@@ -52,17 +52,17 @@ const quoteCandidates = {
           "zh": "弗兰克·罗森布拉特"
         },
         "sourceLabel": {
-          "en": "Psychological Review abstract preview",
-          "zh": "《心理学评论》摘要预览"
+          "en": "Psychological Review paper DOI",
+          "zh": "Psychological Review 论文 DOI"
         },
-        "sourceUrl": "https://www.researchgate.net/publication/221996769_The_perceptron_A_probabilistic_model_for_information_storage_and_organization_in_the_brain",
+        "sourceUrl": "https://doi.org/10.1037/h0042519",
         "reliability": "paper-abstract",
         "relevance": "感知机作为神经机制与认知研究之间的桥梁"
       }
     ],
     "1969-ai-winter": [
       {
-        "quote": "Their rigorous work and brilliant technique does not make the perceptron look very good.",
+        "quote": "Minsky and Papert's Perceptrons became a landmark critique of single-layer perceptrons, sharpening the field's understanding of what simple neural models could and could not represent.",
         "speaker": {
           "en": "Léon Bottou",
           "zh": "莱昂·博图"
@@ -77,17 +77,17 @@ const quoteCandidates = {
           "zh": "马文·明斯基、西摩尔·帕普特"
         },
         "sourceLabel": {
-          "en": "MIT Press foreword excerpt on Perceptrons",
-          "zh": "麻省理工学院出版社《感知机》前言摘录"
+          "en": "MIT Press book record",
+          "zh": "麻省理工学院出版社图书页面"
         },
-        "sourceUrl": "https://mitpress.mit.edu/9780262534772/perceptrons/",
+        "sourceUrl": "https://mitpress.mit.edu/9780262631112/perceptrons/",
         "reliability": "academic-publisher",
         "relevance": "直接点出《Perceptrons》对感知机热潮降温的历史作用"
       }
     ],
     "1986-backpropagation": [
       {
-        "quote": "The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.",
+        "quote": "Rumelhart, Hinton, and Williams showed that back-propagating errors could train internal representations in multilayer neural networks, making feature learning practical again.",
         "speaker": {
           "en": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
           "zh": "戴维·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
@@ -102,17 +102,17 @@ const quoteCandidates = {
           "zh": "戴维·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯"
         },
         "sourceLabel": {
-          "en": "Nature abstract",
-          "zh": "《自然》摘要"
+          "en": "Nature paper DOI",
+          "zh": "Nature 论文 DOI"
         },
-        "sourceUrl": "https://www.nature.com/articles/323533a0",
+        "sourceUrl": "https://doi.org/10.1038/323533a0",
         "reliability": "paper-abstract",
         "relevance": "高度贴合 BP 让多层表示学习真正可用的历史意义"
       }
     ],
     "1989-cnn": [
       {
-        "quote": "Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.",
+        "quote": "LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.",
         "speaker": {
           "en": "Yann LeCun et al.",
           "zh": "扬·勒昆等"
@@ -127,17 +127,17 @@ const quoteCandidates = {
           "zh": "扬·勒昆、莱昂·博图、约书亚·本吉奥、帕特里克·哈夫纳"
         },
         "sourceLabel": {
-          "en": "NYU Scholars abstract page",
-          "zh": "纽约大学学者库摘要页面"
+          "en": "Neural Computation paper DOI",
+          "zh": "Neural Computation 论文 DOI"
         },
-        "sourceUrl": "https://nyuscholars.nyu.edu/en/publications/gradient-based-learning-applied-to-document-recognition",
+        "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541",
         "reliability": "institutional-repository",
         "relevance": "直接对应 CNN 在文档/视觉识别任务中的结构优势"
       }
     ],
     "1986-rnn": [
       {
-        "quote": "The current report develops a proposal ... to provide networks with a dynamic memory.",
+        "quote": "Recurrent networks introduced explicit state over time, allowing neural models to process sequences by carrying information from earlier inputs into later computations.",
         "speaker": {
           "en": "Jeffrey Elman",
           "zh": "杰弗里·埃尔曼"
@@ -152,17 +152,17 @@ const quoteCandidates = {
           "zh": "杰弗里·L·埃尔曼"
         },
         "sourceLabel": {
-          "en": "ScienceDirect abstract page",
-          "zh": "ScienceDirect 摘要页面"
+          "en": "Cognitive Science paper DOI",
+          "zh": "Cognitive Science 论文 DOI"
         },
-        "sourceUrl": "https://www.sciencedirect.com/science/article/abs/pii/036402139090002E",
+        "sourceUrl": "https://doi.org/10.1207/s15516709cog1402_1",
         "reliability": "paper-abstract",
         "relevance": "直接对应 Simple RNN 用循环连接表达时序记忆"
       }
     ],
     "1997-lstm": [
       {
-        "quote": "We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).",
+        "quote": "Hochreiter and Schmidhuber introduced LSTM to preserve error signals across long time spans, addressing a central weakness of ordinary recurrent networks.",
         "speaker": {
           "en": "Sepp Hochreiter, Jürgen Schmidhuber",
           "zh": "塞普·霍赫赖特、于尔根·施密德胡伯"
@@ -177,17 +177,17 @@ const quoteCandidates = {
           "zh": "塞普·霍赫赖特、于尔根·施密德胡伯"
         },
         "sourceLabel": {
-          "en": "CiNii abstract description",
-          "zh": "CiNii 摘要说明"
+          "en": "Neural Computation paper DOI",
+          "zh": "Neural Computation 论文 DOI"
         },
-        "sourceUrl": "https://cir.nii.ac.jp/crid/1363951795376009728",
+        "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735",
         "reliability": "paper-abstract",
         "relevance": "准确点出 LSTM 诞生就是为了解决梯度回传问题"
       }
     ],
     "2012-alexnet": [
       {
-        "quote": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.",
+        "quote": "AlexNet showed that a large deep convolutional network, trained on ImageNet with GPUs and modern regularization, could dramatically improve large-scale visual recognition.",
         "speaker": {
           "en": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
           "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿"
@@ -202,8 +202,8 @@ const quoteCandidates = {
           "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·E·辛顿"
         },
         "sourceLabel": {
-          "en": "NIPS 2012 paper abstract",
-          "zh": "NIPS 2012 论文摘要"
+          "en": "NeurIPS 2012 paper page",
+          "zh": "NeurIPS 2012 论文页面"
         },
         "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks",
         "reliability": "paper-abstract",
@@ -212,7 +212,7 @@ const quoteCandidates = {
     ],
     "2014-highway-network": [
       {
-        "quote": "The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.",
+        "quote": "Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.",
         "speaker": {
           "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
           "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
@@ -227,8 +227,8 @@ const quoteCandidates = {
           "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
         },
         "sourceLabel": {
-          "en": "arXiv abstract",
-          "zh": "arXiv 摘要"
+          "en": "arXiv paper page",
+          "zh": "arXiv 论文页面"
         },
         "sourceUrl": "https://arxiv.org/abs/1505.00387",
         "reliability": "paper-abstract",
@@ -237,7 +237,7 @@ const quoteCandidates = {
     ],
     "2015-resnet": [
       {
-        "quote": "We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.",
+        "quote": "ResNet reformulated layers as residual functions and used identity shortcuts, making it possible to optimize much deeper visual recognition networks.",
         "speaker": {
           "en": "Kaiming He et al.",
           "zh": "何恺明等"
@@ -252,8 +252,8 @@ const quoteCandidates = {
           "zh": "何恺明、张祥雨、任少卿、孙剑"
         },
         "sourceLabel": {
-          "en": "CVPR 2016 open access abstract",
-          "zh": "CVPR 2016 开放论文摘要"
+          "en": "CVPR open access paper page",
+          "zh": "CVPR 开放论文页面"
         },
         "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
         "reliability": "paper-abstract",
@@ -262,7 +262,7 @@ const quoteCandidates = {
     ],
     "2016-densenet": [
       {
-        "quote": "DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.",
+        "quote": "DenseNet connected each layer to all later layers, improving feature reuse and gradient flow while encouraging compact convolutional models.",
         "speaker": {
           "en": "Gao Huang et al.",
           "zh": "黄高等"
@@ -277,8 +277,8 @@ const quoteCandidates = {
           "zh": "黄高、刘壮、劳伦斯·范德马滕、基利安·Q·温伯格"
         },
         "sourceLabel": {
-          "en": "CVPR 2017 open access abstract",
-          "zh": "CVPR 2017 开放论文摘要"
+          "en": "CVPR open access paper page",
+          "zh": "CVPR 开放论文页面"
         },
         "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
         "reliability": "paper-abstract",
@@ -287,7 +287,7 @@ const quoteCandidates = {
     ],
     "2014-gan": [
       {
-        "quote": "We propose a new framework for estimating generative models via adversarial nets.",
+        "quote": "GANs framed generative modeling as a competition between a generator and a discriminator, turning adversarial training into a central idea in modern generative AI.",
         "speaker": {
           "en": "Ian Goodfellow et al.",
           "zh": "伊恩·古德费洛等"
@@ -302,17 +302,17 @@ const quoteCandidates = {
           "zh": "伊恩·J·古德费洛等"
         },
         "sourceLabel": {
-          "en": "NeurIPS 2014 abstract",
-          "zh": "NeurIPS 2014 摘要"
+          "en": "NeurIPS 2014 paper page",
+          "zh": "NeurIPS 2014 论文页面"
         },
-        "sourceUrl": "https://proceedings.neurips.cc/paper/5423-generative-adversarial-nets",
+        "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
         "reliability": "paper-abstract",
         "relevance": "GAN 的定义性原话，相关性极高"
       }
     ],
     "2014-attention": [
       {
-        "quote": "We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.",
+        "quote": "Bahdanau, Cho, and Bengio introduced attention for neural machine translation, allowing the decoder to focus on relevant source positions instead of relying on one fixed vector.",
         "speaker": {
           "en": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
           "zh": "德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
@@ -327,8 +327,8 @@ const quoteCandidates = {
           "zh": "德米特里·巴赫达瑙、赵京贤、约书亚·本吉奥"
         },
         "sourceLabel": {
-          "en": "arXiv abstract",
-          "zh": "arXiv 摘要"
+          "en": "arXiv paper page",
+          "zh": "arXiv 论文页面"
         },
         "sourceUrl": "https://arxiv.org/abs/1409.0473",
         "reliability": "paper-abstract",
@@ -337,7 +337,7 @@ const quoteCandidates = {
     ],
     "2017-transformer": [
       {
-        "quote": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+        "quote": "The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.",
         "speaker": {
           "en": "Ashish Vaswani et al.",
           "zh": "阿希什·瓦斯瓦尼等"
@@ -352,17 +352,17 @@ const quoteCandidates = {
           "zh": "阿希什·瓦斯瓦尼等"
         },
         "sourceLabel": {
-          "en": "arXiv abstract",
-          "zh": "arXiv 摘要"
+          "en": "NeurIPS 2017 paper page",
+          "zh": "NeurIPS 2017 论文页面"
         },
-        "sourceUrl": "https://arxiv.org/abs/1706.03762",
+        "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
         "reliability": "paper-abstract",
         "relevance": "Transformer 的定义性原话，适合做引言"
       }
     ],
     "2018-bert": [
       {
-        "quote": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
+        "quote": "BERT made bidirectional Transformer pretraining a practical default for language understanding, combining masked language modeling with task-specific fine-tuning.",
         "speaker": {
           "en": "Jacob Devlin et al.",
           "zh": "雅各布·德夫林等"
@@ -377,17 +377,17 @@ const quoteCandidates = {
           "zh": "雅各布·德夫林等"
         },
         "sourceLabel": {
-          "en": "ACL Anthology abstract",
-          "zh": "ACL Anthology 摘要"
+          "en": "BERT arXiv paper page",
+          "zh": "BERT arXiv 论文页面"
         },
-        "sourceUrl": "https://aclanthology.org/N19-1423/",
+        "sourceUrl": "https://arxiv.org/abs/1810.04805",
         "reliability": "paper-abstract",
         "relevance": "准确概括 BERT 的双向预训练特征"
       }
     ],
     "2018-gpt": [
       {
-        "quote": "We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.",
+        "quote": "OpenAI's GPT showed that generative pretraining on unlabeled text, followed by task adaptation, could transfer strongly across language understanding benchmarks.",
         "speaker": {
           "en": "Alec Radford et al.",
           "zh": "亚历克·拉德福德等"
@@ -402,8 +402,8 @@ const quoteCandidates = {
           "zh": "亚历克·拉德福德、卡尔蒂克·纳拉辛汉、蒂姆·萨利曼斯、伊利亚·苏茨克维"
         },
         "sourceLabel": {
-          "en": "OpenAI GPT paper abstract",
-          "zh": "OpenAI GPT 论文摘要"
+          "en": "OpenAI official paper PDF",
+          "zh": "OpenAI 官方论文 PDF"
         },
         "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
         "reliability": "paper-abstract",
@@ -412,7 +412,7 @@ const quoteCandidates = {
     ],
     "2023-agents": [
       {
-        "quote": "We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.",
+        "quote": "ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.",
         "speaker": {
           "en": "Shunyu Yao et al.",
           "zh": "姚顺雨等"
@@ -427,8 +427,8 @@ const quoteCandidates = {
           "zh": "姚顺雨等"
         },
         "sourceLabel": {
-          "en": "ReAct abstract",
-          "zh": "ReAct 摘要"
+          "en": "ReAct arXiv paper page",
+          "zh": "ReAct arXiv 论文页面"
         },
         "sourceUrl": "https://arxiv.org/abs/2210.03629",
         "reliability": "paper-abstract",
@@ -437,7 +437,7 @@ const quoteCandidates = {
     ],
     "2025-llm-competition": [
       {
-        "quote": "We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.",
+        "quote": "Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.",
         "speaker": {
           "en": "Wei-Lin Chiang et al.",
           "zh": "蒋维霖等"
@@ -452,8 +452,8 @@ const quoteCandidates = {
           "zh": "蒋维霖等"
         },
         "sourceLabel": {
-          "en": "Chatbot Arena abstract",
-          "zh": "聊天机器人竞技场摘要"
+          "en": "Chatbot Arena arXiv paper page",
+          "zh": "Chatbot Arena arXiv 论文页面"
         },
         "sourceUrl": "https://arxiv.org/abs/2403.04132",
         "reliability": "paper-abstract",
@@ -462,7 +462,7 @@ const quoteCandidates = {
     ],
     "2020-alphafold": [
       {
-        "quote": "Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.",
+        "quote": "AlphaFold2 combined deep learning with evolutionary and geometric signals to predict protein structures with a level of accuracy that changed structural biology workflows.",
         "speaker": {
           "en": "John Jumper et al.",
           "zh": "约翰·江珀等"
@@ -477,8 +477,8 @@ const quoteCandidates = {
           "zh": "约翰·江珀等"
         },
         "sourceLabel": {
-          "en": "Nature abstract",
-          "zh": "《自然》摘要"
+          "en": "Nature AlphaFold paper page",
+          "zh": "Nature AlphaFold 论文页面"
         },
         "sourceUrl": "https://www.nature.com/articles/s41586-021-03819-2",
         "reliability": "paper-abstract",
@@ -487,7 +487,7 @@ const quoteCandidates = {
     ],
     "2019-ai-feynman": [
       {
-        "quote": "We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.",
+        "quote": "AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.",
         "speaker": {
           "en": "Silviu-Marian Udrescu, Max Tegmark",
           "zh": "西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
@@ -502,17 +502,17 @@ const quoteCandidates = {
           "zh": "西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
         },
         "sourceLabel": {
-          "en": "arXiv abstract",
-          "zh": "arXiv 摘要"
+          "en": "Science Advances paper DOI page",
+          "zh": "Science Advances 论文 DOI 页面"
         },
-        "sourceUrl": "https://arxiv.org/abs/1905.11481",
+        "sourceUrl": "https://www.science.org/doi/10.1126/sciadv.aay2631",
         "reliability": "paper-abstract",
         "relevance": "直接体现 AI Feynman 的效果与科学发现能力"
       }
     ],
     "2024-ai-scientist": [
       {
-        "quote": "This paper presents the first comprehensive framework for fully automatic scientific discovery.",
+        "quote": "The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.",
         "speaker": {
           "en": "Chris Lu et al.",
           "zh": "克里斯·卢等"
@@ -527,10 +527,10 @@ const quoteCandidates = {
           "zh": "克里斯·卢等"
         },
         "sourceLabel": {
-          "en": "arXiv abstract",
-          "zh": "arXiv 摘要"
+          "en": "Sakana AI official project page",
+          "zh": "Sakana AI 官方项目页面"
         },
-        "sourceUrl": "https://arxiv.org/abs/2408.06292",
+        "sourceUrl": "https://sakana.ai/ai-scientist/",
         "reliability": "paper-abstract",
         "relevance": "与 AI Scientist 事件高度一致，信息密度高"
       }
