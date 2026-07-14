@@ -8024,9 +8024,55 @@
 
             .ui-source-card {
                 grid-template-columns: minmax(0, 1fr);
-                gap: 4px;
-                padding: 10px 0;
+                gap: 7px;
+                padding: 12px;
                 min-height: var(--touch-target);
+                border: 1px solid rgba(244, 239, 229, 0.15);
+                border-radius: 8px;
+                background:
+                    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012)),
+                    rgba(0, 0, 0, 0.14);
+                box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18);
+            }
+
+            .ui-info-card {
+                gap: 10px;
+            }
+
+            .ui-source-card + .ui-source-card {
+                margin-top: 2px;
+            }
+
+            .ui-source-url {
+                order: -1;
+                justify-self: start;
+                width: fit-content;
+                max-width: 100%;
+                padding: 3px 8px;
+                border: 1px solid rgba(255, 140, 0, 0.42);
+                border-radius: 999px;
+                color: var(--accent);
+                background: rgba(255, 140, 0, 0.08);
+                font-size: 12px;
+                font-weight: 850;
+                line-height: 1.2;
+            }
+
+            .ui-source-label {
+                color: rgba(244, 239, 229, 0.92);
+                font-size: 15px;
+                font-weight: 750;
+                line-height: 1.42;
+            }
+
+            .ui-commentary-card > .ui-section-kicker {
+                font-size: 22px;
+                line-height: 1.22;
+            }
+
+            .ui-commentary-card .ui-concept-chip {
+                font-size: 17px;
+                line-height: 1.25;
             }
 
             .ui-source-label,
@@ -8040,6 +8086,26 @@
                 font-size: 16px;
                 overflow-wrap: anywhere;
                 white-space: normal;
+            }
+
+            .ui-source-url {
+                font-size: 12px;
+                line-height: 1.2;
+                white-space: normal;
+            }
+
+            .ui-source-label {
+                font-size: 15px;
+                line-height: 1.42;
+                white-space: normal;
+            }
+
+            .ui-commentary-card > .ui-section-kicker {
+                font-size: 22px;
+            }
+
+            .ui-commentary-card .ui-concept-chip {
+                font-size: 17px;
             }
 
             .ui-concept-feature-grid {
@@ -9009,6 +9075,36 @@
         }
 
         @media (max-width: 600px) {
+            html,
+            body,
+            .stage-viewport,
+            .single-stage,
+            .single-stage.is-ui-browser,
+            .single-stage.is-ui-browser.is-ui-detail {
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-browser,
+            .single-stage.is-ui-browser.is-ui-detail .ui-browser-main,
+            .single-stage.is-ui-browser.is-ui-detail .ui-detail,
+            .single-stage.is-ui-browser.is-ui-detail .ui-detail-panel,
+            .single-stage.is-ui-browser.is-ui-detail .ui-detail-description,
+            .single-stage.is-ui-browser.is-ui-detail .ui-side-panel {
+                height: auto !important;
+                max-height: none !important;
+                overflow-y: visible !important;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-browser {
+                display: block;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .stage-grid {
+                align-content: start;
+            }
+
             .ui-detail-panel {
                 gap: 14px;
                 padding: 14px;
@@ -9670,6 +9766,7 @@
         let uiSelectedEventId = '';
         let uiDetailImageIndex = 0;
         let uiDetailImageEventId = '';
+        let uiHistoryPopInProgress = false;
 
         let currentIndex = 0;
         const requestedUiMode = getRequestedUiMode();
@@ -10213,6 +10310,54 @@
                     url.searchParams.delete('storyline');
                 }
                 window.history.replaceState(null, '', url);
+            } catch (_) {}
+        }
+
+        function buildUiBrowserUrl(mode, eventId = '') {
+            const url = new URL(window.location.href);
+            if (activeStorylineId && activeStorylineId !== DEFAULT_STORYLINE_ID) {
+                url.searchParams.set('storyline', activeStorylineId);
+            } else {
+                url.searchParams.delete('storyline');
+            }
+            if (mode === 'detail' && eventId) {
+                url.searchParams.set('uiMode', 'detail');
+                url.searchParams.set('event', eventId);
+            } else {
+                url.searchParams.delete('uiMode');
+                url.searchParams.delete('event');
+            }
+            return url;
+        }
+
+        function getUiHistoryState(mode, eventId = '') {
+            return {
+                aiHistoryUi: {
+                    storylineId: activeStorylineId,
+                    mode,
+                    eventId
+                }
+            };
+        }
+
+        function isCurrentUiDetailHistoryEntry() {
+            const state = window.history && window.history.state;
+            return Boolean(state && state.aiHistoryUi && state.aiHistoryUi.mode === 'detail');
+        }
+
+        function pushUiDetailHistoryEntry() {
+            if (!window.history || !window.location || !isUiBrowserActive() || uiBrowserMode !== 'detail' || !uiSelectedEventId) return;
+            try {
+                const url = buildUiBrowserUrl('detail', uiSelectedEventId);
+                window.history.pushState(getUiHistoryState('detail', uiSelectedEventId), '', url);
+            } catch (_) {}
+        }
+
+        function replaceUiLevelHistoryEntry() {
+            if (!window.history || !window.location || !isUiBrowserActive()) return;
+            try {
+                const url = buildUiBrowserUrl(uiBrowserMode);
+                window.history.replaceState(getUiHistoryState(uiBrowserMode), '', url);
             } catch (_) {}
         }
 
@@ -16327,7 +16472,7 @@
                     const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
                     currentIndex = nextIndex >= 0 ? nextIndex : currentIndex;
                     uiSelectedYear = milestoneList[currentIndex] ? getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear : uiSelectedYear;
-                    renderPage(currentIndex);
+                    renderUiDetailFromSelection({ pushHistory: true });
                 });
             });
             refs.uiBrowserMain.querySelectorAll('.ui-event-card, .ui-map-pin').forEach((button) => {
@@ -16343,13 +16488,21 @@
                     const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
                     currentIndex = nextIndex >= 0 ? nextIndex : currentIndex;
                     uiSelectedYear = milestoneList[currentIndex] ? getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear : uiSelectedYear;
-                    renderPage(currentIndex);
+                    renderUiDetailFromSelection({ pushHistory: true });
                 });
             });
             bindUiEventProgress();
             fitUiEventImages();
             requestAnimationFrame(fitUiEventImages);
             requestAnimationFrame(syncUiMapCalloutLines);
+        }
+
+        function renderUiDetailFromSelection(options = {}) {
+            if (options.pushHistory && !uiHistoryPopInProgress) {
+                pushUiDetailHistoryEntry();
+            }
+            renderPage(currentIndex);
+            resetPortraitScrollPosition();
         }
 
         function buildUiAvatarHtml(vm) {
@@ -16401,6 +16554,48 @@
             update();
             window.setTimeout(update, 80);
             window.setTimeout(update, 320);
+        }
+
+        function returnFromUiDetail(options = {}) {
+            if (!isUiBrowserActive() || uiBrowserMode !== 'detail') return false;
+            if (options.preferHistory && !uiHistoryPopInProgress && isCurrentUiDetailHistoryEntry()) {
+                window.history.back();
+                return true;
+            }
+            uiBrowserMode = uiSelectedLocationKey ? 'location' : uiSelectedContinent ? 'region' : 'year';
+            uiSelectedEventId = '';
+            renderPage(currentIndex);
+            resetPortraitScrollPosition();
+            if (options.updateHistory !== false) {
+                replaceUiLevelHistoryEntry();
+            }
+            return true;
+        }
+
+        function handleUiBrowserHistoryPop(event) {
+            if (!isUiBrowserActive()) return;
+            const uiState = event && event.state && event.state.aiHistoryUi ? event.state.aiHistoryUi : null;
+            uiHistoryPopInProgress = true;
+            try {
+                if (uiState && uiState.mode === 'detail' && uiState.eventId) {
+                    const nextIndex = milestoneList.findIndex((item) => item && item.id === uiState.eventId);
+                    if (nextIndex >= 0) {
+                        uiBrowserMode = 'detail';
+                        uiSelectedEventId = uiState.eventId;
+                        currentIndex = nextIndex;
+                        uiSelectedYear = getMilestoneSortYear(milestoneList[nextIndex]) || uiSelectedYear;
+                        uiDetailImageIndex = 0;
+                        renderUiDetailFromSelection();
+                        return;
+                    }
+                }
+
+                if (uiBrowserMode === 'detail') {
+                    returnFromUiDetail({ updateHistory: false });
+                }
+            } finally {
+                uiHistoryPopInProgress = false;
+            }
         }
 
         function buildUiConceptFeatureCardsHtml(sections, options = {}) {
@@ -16915,6 +17110,10 @@
             return Boolean(getPortraitIgnoreElement(target));
         }
 
+        function shouldSuspendPortraitEdgeNavigation() {
+            return isUiBrowserActive() && uiBrowserMode === 'detail' && isPortraitStackLayout();
+        }
+
         function resetPortraitScrollPosition() {
             if (!isPortraitStackLayout()) return;
 
@@ -17034,6 +17233,10 @@
         }
 
         function maybeNavigateAcrossPortraitBoundary(currentY, originalEvent) {
+            if (shouldSuspendPortraitEdgeNavigation()) {
+                releasePortraitEdgeGesture();
+                return false;
+            }
             if (!portraitEdgeGesture || !Number.isFinite(currentY)) return false;
 
             const deltaStep = currentY - portraitEdgeGesture.lastY;
@@ -17087,6 +17290,7 @@
 
         function handlePortraitEdgeTouchStart(event) {
             if (!isPortraitStackLayout()) return;
+            if (shouldSuspendPortraitEdgeNavigation()) return;
             if (!event.isTrusted) return;
             if (shouldIgnorePortraitEdgeTarget(event.target)) return;
             if (portraitEdgeGesture) return;
@@ -17130,6 +17334,7 @@
 
         function handlePortraitEdgePointerDown(event) {
             if (!isPortraitStackLayout()) return;
+            if (shouldSuspendPortraitEdgeNavigation()) return;
             if (shouldIgnorePortraitPointerEvent(event)) return;
             if (shouldIgnorePortraitEdgeTarget(event.target)) return;
             if (portraitEdgeGesture) return;
@@ -17324,11 +17529,7 @@
             refs.prevBtn.addEventListener('click', () => navigate('prev'));
             refs.nextBtn.addEventListener('click', () => navigate('next'));
             if (refs.uiBackButton) {
-                refs.uiBackButton.addEventListener('click', () => {
-                    uiBrowserMode = uiSelectedLocationKey ? 'location' : uiSelectedContinent ? 'region' : 'year';
-                    uiSelectedEventId = '';
-                    renderPage(currentIndex);
-                });
+                refs.uiBackButton.addEventListener('click', () => returnFromUiDetail({ preferHistory: true }));
             }
             if (refs.quizModalClose) refs.quizModalClose.addEventListener('click', completeQuizModal);
             if (refs.quizModalSkip) refs.quizModalSkip.addEventListener('click', completeQuizModal);
@@ -17359,6 +17560,7 @@
                 }, 180);
             }, { passive: true });
             window.addEventListener('beforeunload', clearIdleAdvanceTimer);
+            window.addEventListener('popstate', handleUiBrowserHistoryPop);
             document.addEventListener('pointerdown', registerUserActivity, { passive: true });
             document.addEventListener('pointermove', registerUserActivity, { passive: true });
             document.addEventListener('click', registerUserActivity, { passive: true });
