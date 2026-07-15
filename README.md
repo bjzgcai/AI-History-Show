@@ -104,6 +104,8 @@ npm run validate:deployment
 
 The quality gate runs ESLint, Prettier format checks, and the existing Node.js verification scripts in sequence. Deployment validation regenerates the milestone data, runs tests, starts the presentation/admin services, builds the Docker image, and validates the Compose configuration in CI.
 
+Mobile support scope, viewport checklist, and responsive validation notes are recorded in [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md).
+
 For AI100 content work, also run:
 
 ```bash
