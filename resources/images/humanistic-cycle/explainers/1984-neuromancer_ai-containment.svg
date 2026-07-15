@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 80 960 420" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Neuromancer AI containment explainer</title>
+  <desc id="desc">A cyberpunk network diagram shows an AI pressing against institutional barriers in cyberspace.</desc>
+  <rect width="960" height="600" fill="#090018"/>
+  <rect x="82" y="86" width="796" height="400" rx="26" fill="#101827"/>
+  <text x="132" y="146" fill="#e9d5ff" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">1984</text>
+  <text x="132" y="182" fill="#67e8f9" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">AI containment in cyberspace</text>
+  <g stroke="#22d3ee" stroke-width="4" opacity=".78">
+    <path d="M164 398h632M164 338h632M164 278h632M164 218h632M224 206v204M344 206v204M464 206v204M584 206v204M704 206v204"/>
+  </g>
+  <rect x="346" y="238" width="268" height="128" rx="20" fill="#312e81" stroke="#e9d5ff" stroke-width="6"/>
+  <text x="480" y="292" fill="#f5f3ff" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" text-anchor="middle">contained AI</text>
+  <text x="480" y="324" fill="#a5f3fc" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">barrier / registry / access</text>
+  <path d="M614 302c68-10 112-46 146-96" fill="none" stroke="#f472b6" stroke-width="10" stroke-linecap="round"/>
+  <path d="M740 204l45-12-15 44" fill="none" stroke="#f472b6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="442" fill="#e9d5ff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" text-anchor="middle">the boundary becomes the drama</text>
+</svg>

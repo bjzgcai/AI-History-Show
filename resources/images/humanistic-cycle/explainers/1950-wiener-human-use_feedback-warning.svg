@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 80 960 420" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Cybernetic feedback warning explainer</title>
+  <desc id="desc">A human, machine and institution form a feedback loop, with responsibility shown as the missing control question.</desc>
+  <rect width="960" height="600" fill="#0f172a"/>
+  <rect x="80" y="86" width="800" height="400" rx="26" fill="#f8fafc"/>
+  <text x="132" y="146" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">1950</text>
+  <text x="132" y="182" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">automation becomes a control problem</text>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" font-weight="900">
+    <circle cx="250" cy="286" r="66" fill="#fef3c7" stroke="#111827" stroke-width="6"/>
+    <text x="250" y="293" fill="#111827" font-size="23">human</text>
+    <rect x="400" y="220" width="160" height="132" rx="22" fill="#dbeafe" stroke="#111827" stroke-width="6"/>
+    <text x="480" y="293" fill="#111827" font-size="23">machine</text>
+    <circle cx="710" cy="286" r="66" fill="#dcfce7" stroke="#111827" stroke-width="6"/>
+    <text x="710" y="293" fill="#111827" font-size="23">society</text>
+  </g>
+  <path d="M315 286h82M560 286h84" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+  <path d="M706 358c-102 78-348 78-452 0" fill="none" stroke="#d6b35c" stroke-width="11" stroke-linecap="round"/>
+  <path d="M264 338l-43 16 34 30" fill="none" stroke="#d6b35c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="352" y="392" width="256" height="46" rx="14" fill="#111827"/>
+  <text x="480" y="422" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" text-anchor="middle">who is responsible?</text>
+</svg>

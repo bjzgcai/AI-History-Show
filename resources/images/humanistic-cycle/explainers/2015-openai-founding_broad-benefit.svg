@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 80 960 420" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Broad benefit institution explainer</title>
+  <desc id="desc">AI risk discourse flows into institution building, with broad benefit shown as the mission target.</desc>
+  <rect width="960" height="600" fill="#061520"/>
+  <rect x="82" y="86" width="796" height="400" rx="26" fill="#f8fafc"/>
+  <text x="132" y="146" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">2015</text>
+  <text x="132" y="182" fill="#0369a1" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">safety concern becomes institution building</text>
+  <circle cx="286" cy="298" r="78" fill="#fee2e2" stroke="#111827" stroke-width="6"/>
+  <text x="286" y="292" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="900" text-anchor="middle">AI risk</text>
+  <text x="286" y="322" fill="#7f1d1d" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="900" text-anchor="middle">concern</text>
+  <path d="M372 298h112" stroke="#73b5d6" stroke-width="12" stroke-linecap="round"/>
+  <path d="M464 266l50 32-50 32" fill="none" stroke="#73b5d6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="530" y="222" width="222" height="152" rx="24" fill="#dbeafe" stroke="#111827" stroke-width="6"/>
+  <text x="641" y="282" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" text-anchor="middle">research lab</text>
+  <text x="641" y="318" fill="#0369a1" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" text-anchor="middle">broad benefit</text>
+  <text x="480" y="424" fill="#0369a1" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" text-anchor="middle">dread turns into mission language</text>
+</svg>
