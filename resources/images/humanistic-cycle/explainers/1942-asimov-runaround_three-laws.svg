@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 80 960 420" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Runaround rule hierarchy explainer</title>
+  <desc id="desc">A rule hierarchy routes robot action from harm prevention through orders to self-preservation, with conflict shown as a warning loop.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="#111827"/>
+  <rect x="82" y="86" width="796" height="400" rx="26" fill="url(#paper)"/>
+  <text x="132" y="146" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">1942</text>
+  <text x="132" y="182" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">fiction turns robot fear into rules</text>
+  <g font-family="Inter, Arial, sans-serif" font-weight="900" text-anchor="middle">
+    <rect x="166" y="226" width="180" height="82" rx="18" fill="#d9f99d" stroke="#111827" stroke-width="5"/>
+    <text x="256" y="258" fill="#111827" font-size="20">protect</text>
+    <text x="256" y="286" fill="#111827" font-size="18">humans</text>
+    <rect x="390" y="226" width="180" height="82" rx="18" fill="#bfdbfe" stroke="#111827" stroke-width="5"/>
+    <text x="480" y="258" fill="#111827" font-size="20">follow</text>
+    <text x="480" y="286" fill="#111827" font-size="18">orders</text>
+    <rect x="614" y="226" width="180" height="82" rx="18" fill="#fed7aa" stroke="#111827" stroke-width="5"/>
+    <text x="704" y="258" fill="#111827" font-size="20">preserve</text>
+    <text x="704" y="286" fill="#111827" font-size="18">self</text>
+  </g>
+  <path d="M346 267h44M570 267h44" stroke="#111827" stroke-width="7" stroke-linecap="round"/>
+  <path d="M290 337c92 54 296 54 386 0" fill="none" stroke="#ef4444" stroke-width="10" stroke-linecap="round"/>
+  <path d="M662 318l38 17-32 28" fill="none" stroke="#ef4444" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="405" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" text-anchor="middle">conflicting duties create the hard case</text>
+</svg>
