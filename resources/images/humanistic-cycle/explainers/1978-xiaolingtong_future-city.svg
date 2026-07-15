@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 80 960 420" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Future-city optimism explainer</title>
+  <desc id="desc">A child reporter walks through a bright future city with helpful machines, education and civic technology.</desc>
+  <rect width="960" height="600" fill="#052e2b"/>
+  <rect x="82" y="86" width="796" height="400" rx="26" fill="#ecfeff"/>
+  <text x="132" y="146" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">1978</text>
+  <text x="132" y="182" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">future machines as public hope</text>
+  <path d="M118 398h724v40H118z" fill="#99f6e4"/>
+  <path d="M156 248h110v150H156zM308 208h126v190H308zM482 238h106v160H482zM638 190h146v208H638z" fill="#67e8f9" stroke="#0f172a" stroke-width="5"/>
+  <path d="M180 278h24M226 278h24M332 244h28M384 244h28M510 270h26M690 226h32M742 226h24" stroke="#fef3c7" stroke-width="15"/>
+  <g fill="#fef3c7" stroke="#0f172a" stroke-width="5">
+    <circle cx="248" cy="392" r="28"/>
+    <path d="M214 440c5-44 62-44 68 0z"/>
+  </g>
+  <path d="M318 372c94-70 228-76 360-10" fill="none" stroke="#14b8a6" stroke-width="11" stroke-linecap="round"/>
+  <path d="M652 328l48 28-48 28" fill="none" stroke="#14b8a6" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="690" y="428" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" text-anchor="middle">curiosity tours the future</text>
+</svg>

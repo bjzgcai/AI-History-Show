@@ -23,6 +23,34 @@ Issue link: https://github.com/bjzgcai/AI-History-Show/issues/4
 | 2015 OpenAI founding | Ready | Use archived official OpenAI announcement plus contemporary BBC/Wired coverage. Avoid claiming it was only a direct response to 2014 warnings. |
 | 2023 AI Safety Statement | Ready | Use the official CAIS statement page; if showing named signatories, verify the current signatory list snapshot. |
 
+## Implemented Full Branch Verification
+
+Updated: 2026-07-13
+
+The current branch now implements all twelve recommended events: `1920-rur-robots`, `1942-asimov-runaround`, `1950-wiener-human-use`, `1965-simon-ai-prediction`, `1968-hal-9000`, `1973-lighthill-report`, `1978-xiaolingtong`, `1984-neuromancer`, `1987-lisp-machine-collapse`, `2014-ai-existential-warnings`, `2015-openai-founding`, and `2023-ai-risk-statement`. The exhibit treats them as a full emotional arc: science-fiction anxiety, rule-based ethics, cybernetic warning, technical over-optimism, system-trust breakdown, AI winters, cultural optimism, cyberpunk containment, public existential dread, defensive institution-building, and global risk framing.
+
+Verification notes:
+
+- `1920-rur-robots`: Project Gutenberg confirms the `R.U.R.` text record and public-domain status in the USA; Internet Archive metadata confirms a 1920 Czech edition, publisher `V Praze Vydalo Aventinum`, and the `rurrossumsuniver00apekuoft` identifier. The local SVG is an original explainer, not a copied title page or cover image.
+- `1942-asimov-runaround`: Internet Archive metadata confirms the March 1942 `Astounding Science Fiction` issue identifier; Asimov Online and secondary references support the Three Laws / `Runaround` context. The exhibit paraphrases the rule-hierarchy idea and does not reproduce the copyrighted Three Laws text.
+- `1950-wiener-human-use`: Open Library search metadata confirms `The Human Use of Human Beings`, author Norbert Wiener, first publication year 1950, and work key `/works/OL4307570W`. The event is framed as cybernetics / automation ethics rather than later narrow AI.
+- `1965-simon-ai-prediction`: Open Library search metadata confirms `The shape of automation for men and management`, author `Herbert Alexander Simon`, first publication year 1965, and work key `/works/OL1205034W`. AI-history summaries commonly cite Simon's twenty-year prediction, but the current exhibit avoids presenting it as a page-verified direct quote because no scan/page reference has been verified.
+- `1968-hal-9000`: Public film / novel references support the 1968 `2001: A Space Odyssey` context and HAL 9000's cultural role. The exhibit explicitly treats "goal conflict" as a modern interpretation, not as the film's period technical vocabulary.
+- `1973-lighthill-report`: The Chilton / UKRI-hosted archive page for `Artificial Intelligence: A General Survey` contains the report text and the `JULY 1972` marker; the exhibit uses 1973 because the report was published and debated in the Science Research Council symposium context that year. The same archive text includes the category-B / bridge-activity critique, and the University of Edinburgh AI history page describes the report's loss-of-confidence effect in UK AI.
+- `1978-xiaolingtong`: Chinese reference pages and the Science Fiction Encyclopedia support Ye Yonglie's role and the book's 1978 post-Cultural-Revolution science-fiction significance. Because no rights-cleared first-edition cover was verified, the exhibit uses an original future-city SVG rather than a book image.
+- `1984-neuromancer`: Open Library search metadata confirms `Neuromancer`, author William Gibson, first publication year 1984, and work key `/works/OL27258W`. Science Fiction Encyclopedia and secondary references support the cyberpunk framing; no cover art is reused.
+- `1987-lisp-machine-collapse`: The Lisp-machine and AI-winter histories, plus James Hendler's IEEE article `Avoiding Another AI Winter`, support the late-1980s market-correction framing. The node is written as an industry / expert-system correction rather than a single technical failure.
+- `2014-ai-existential-warnings`: Guardian and BBC contemporary reports verify the public Musk and Hawking warning context; the Future of Life Institute open letter is included as adjacent 2015 movement context. The node is framed as public discourse, not a technical proof.
+- `2015-openai-founding`: The Web Archive copy of OpenAI's December 2015 announcement is the primary source; Wired and BBC contemporary coverage provide secondary context. The exhibit avoids claiming OpenAI was founded only as a direct response to one 2014 warning.
+- `2023-ai-risk-statement`: The Center for AI Safety official statement page verifies the 2023 public statement; the arXiv extreme-risk paper and secondary overview provide context. The exhibit does not reproduce signatory portraits or long statement text.
+
+Implementation notes:
+
+- Each event has an archive/source `visualModules[0]` card for the detail page.
+- Each event has at least four visible `achievement.sources` entries except Simon, which has five because the prediction requires both book metadata and separate institutional context.
+- Each local explainer SVG has `imageMeta.sourceUrl` pointing to the main verification anchor.
+- No copyrighted book cover, film still, magazine page, news photo or scanned page image has been copied into `resources/`; the branch visuals are local original SVG explainers.
+
 ## Recommended Event Keys
 
 | Event key | Year | Sentiment | Recommended title |
