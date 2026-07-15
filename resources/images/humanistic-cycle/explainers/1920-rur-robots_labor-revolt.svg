@@ -42,5 +42,5 @@
   <path d="M758 220l40 18-35 27" fill="none" stroke="#fb7185" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="120" y="126" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800">R.U.R.</text>
   <text x="120" y="162" fill="#fed7aa" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">robot as labor anxiety</text>
-  <text x="668" y="475" fill="#fef3c7" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">fiction becomes a warning</text>
+  <text x="800" y="475" text-anchor="end" fill="#fef3c7" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">fiction becomes a warning</text>
 </svg>

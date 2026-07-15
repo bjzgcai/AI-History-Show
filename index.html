@@ -1720,23 +1720,26 @@
         }
 
         .branch-timeline-page.is-humanistic-cycle {
-            grid-template-rows: 104px minmax(0, 1fr);
+            grid-template-rows: minmax(138px, auto) minmax(0, 1fr);
             color: #f5efe4;
         }
 
         .branch-timeline-page.is-humanistic-cycle .branch-hero {
             min-height: 0;
-            align-items: end;
+            align-items: start;
             border-bottom: 1px solid rgba(226, 216, 197, 0.14);
-            padding-bottom: 14px;
+            padding: 4px 0 14px;
         }
 
         .branch-timeline-page.is-humanistic-cycle .branch-hero-title {
             max-width: 980px;
             color: #f5efe4;
             font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
-            font-size: clamp(36px, 3.05vw, 54px);
+            font-size: clamp(34px, 2.85vw, 48px);
             font-weight: 760;
+            line-height: 1.12;
+            letter-spacing: 0;
+            overflow-wrap: normal;
             text-shadow: 0 12px 38px rgba(0, 0, 0, 0.72);
         }
 
@@ -1823,6 +1826,36 @@
             --sentiment-soft: rgba(209, 138, 60, 0.14);
         }
 
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-ethics {
+            --sentiment: #9ec16f;
+            --sentiment-soft: rgba(158, 193, 111, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-warning {
+            --sentiment: #d6b35c;
+            --sentiment-soft: rgba(214, 179, 92, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-optimism {
+            --sentiment: #70c1a7;
+            --sentiment-soft: rgba(112, 193, 167, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-cyberpunk {
+            --sentiment: #ad8bd6;
+            --sentiment-soft: rgba(173, 139, 214, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-dread {
+            --sentiment: #c56f92;
+            --sentiment-soft: rgba(197, 111, 146, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-defense {
+            --sentiment: #73b5d6;
+            --sentiment-soft: rgba(115, 181, 214, 0.14);
+        }
+
         .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-winter {
             --sentiment: #68a9c6;
             --sentiment-soft: rgba(104, 169, 198, 0.14);
@@ -1864,6 +1897,8 @@
             box-shadow: 0 20px 52px rgba(0, 0, 0, 0.52);
             overflow-y: auto;
             overflow-x: hidden;
+            touch-action: pan-y;
+            overscroll-behavior: contain;
             scrollbar-color: rgba(226, 216, 197, 0.24) transparent;
         }
 
@@ -7734,8 +7769,12 @@
             return groups.length ? `<div class="branch-elements">${groups.join('')}</div>` : '';
         }
 
-        const BRANCH_TIMELINE_DRAG_START_X = 8;
-        const BRANCH_TIMELINE_DRAG_CANCEL_RATIO = 1.2;
+        const BRANCH_TIMELINE_DRAG_START_X = 18;
+        const BRANCH_TIMELINE_TEXT_DRAG_START_X = 34;
+        const BRANCH_TIMELINE_VERTICAL_CANCEL_Y = 10;
+        const BRANCH_TIMELINE_HORIZONTAL_INTENT_RATIO = 1.35;
+        const BRANCH_TIMELINE_TEXT_HORIZONTAL_INTENT_RATIO = 1.8;
+        const BRANCH_TIMELINE_SCROLLABLE_TEXT_SELECTOR = '.branch-event-content';
         let branchTimelineWheelSnapTimer = 0;
         let branchTimelineDragReleaseTimer = 0;
         let branchTimelineDragGesture = null;
@@ -7821,6 +7860,7 @@
 
         function handleBranchTimelineWheel(event) {
             if (event.defaultPrevented || !isBranchTimelineActive()) return;
+            if (shouldLetBranchTimelineTextHandleWheel(event)) return;
 
             const page = refs.branchTimelinePage;
             const timeline = page ? page.querySelector('.branch-timeline') : null;
@@ -7841,6 +7881,66 @@
             timeline.scrollLeft = Math.min(maxScroll, Math.max(0, timeline.scrollLeft + delta));
         }
 
+        function shouldLetBranchTimelineTextHandleWheel(event) {
+            const scroller = getBranchTimelineScrollableTextTarget(event.target);
+            if (!scroller) return false;
+
+            const deltaX = Number.isFinite(event.deltaX) ? event.deltaX : 0;
+            const deltaY = Number.isFinite(event.deltaY) ? event.deltaY : 0;
+            const absX = Math.abs(deltaX);
+            const absY = Math.abs(deltaY);
+            if (!absX && !absY) return false;
+
+            if (absY >= absX) return true;
+            if (absY >= BRANCH_TIMELINE_VERTICAL_CANCEL_Y && absX < absY * BRANCH_TIMELINE_TEXT_HORIZONTAL_INTENT_RATIO) return true;
+            if (deltaY < 0) return scroller.scrollTop > 1;
+            if (deltaY > 0) return scroller.scrollTop < scroller.scrollHeight - scroller.clientHeight - 1;
+
+            return false;
+        }
+
+        function getBranchTimelineScrollableTextTarget(target) {
+            const element = target && target.nodeType === 1 ? target : target && target.parentElement;
+            if (!element || typeof element.closest !== 'function') return null;
+
+            const scroller = element.closest(BRANCH_TIMELINE_SCROLLABLE_TEXT_SELECTOR);
+            if (!scroller) return null;
+
+            return scroller.scrollHeight > scroller.clientHeight + 2 ? scroller : null;
+        }
+
+        function getBranchTimelineHorizontalIntentRatio(gesture) {
+            return gesture && gesture.fromScrollableText
+                ? BRANCH_TIMELINE_TEXT_HORIZONTAL_INTENT_RATIO
+                : BRANCH_TIMELINE_HORIZONTAL_INTENT_RATIO;
+        }
+
+        function getBranchTimelineDragStartX(gesture) {
+            return gesture && gesture.fromScrollableText
+                ? BRANCH_TIMELINE_TEXT_DRAG_START_X
+                : BRANCH_TIMELINE_DRAG_START_X;
+        }
+
+        function hasBranchTimelineHorizontalIntent(gesture, absX, absY) {
+            const startX = getBranchTimelineDragStartX(gesture);
+            const intentRatio = getBranchTimelineHorizontalIntentRatio(gesture);
+            return absX >= startX && (absY < BRANCH_TIMELINE_VERTICAL_CANCEL_Y || absX >= absY * intentRatio);
+        }
+
+        function shouldCancelBranchTimelineDragIntent(gesture, absX, absY) {
+            if (absY < BRANCH_TIMELINE_VERTICAL_CANCEL_Y) return false;
+            return absX < absY * getBranchTimelineHorizontalIntentRatio(gesture);
+        }
+
+        function captureBranchTimelinePointer(gesture) {
+            if (!gesture || gesture.captured || typeof gesture.timeline.setPointerCapture !== 'function') return;
+
+            try {
+                gesture.timeline.setPointerCapture(gesture.pointerId);
+                gesture.captured = true;
+            } catch (_) {}
+        }
+
         function handleBranchTimelinePointerDown(event) {
             if (!isBranchTimelineActive()) return;
             if (event.pointerType === 'mouse' && event.button !== 0) return;
@@ -7858,15 +7958,12 @@
                 startX: event.clientX,
                 startY: event.clientY,
                 startScrollLeft: timeline.scrollLeft,
-                dragging: false
+                fromScrollableText: Boolean(getBranchTimelineScrollableTextTarget(event.target)),
+                dragging: false,
+                captured: false
             };
 
             window.clearTimeout(branchTimelineDragReleaseTimer);
-            if (typeof timeline.setPointerCapture === 'function') {
-                try {
-                    timeline.setPointerCapture(event.pointerId);
-                } catch (_) {}
-            }
         }
 
         function releaseBranchTimelineDrag(shouldSuppressClick = false) {
@@ -7876,7 +7973,7 @@
             const { timeline, pointerId, dragging } = gesture;
             branchTimelineDragGesture = null;
 
-            if (typeof timeline.releasePointerCapture === 'function') {
+            if (gesture.captured && typeof timeline.releasePointerCapture === 'function') {
                 try {
                     timeline.releasePointerCapture(pointerId);
                 } catch (_) {}
@@ -7902,14 +7999,16 @@
             const absY = Math.abs(dy);
 
             if (!gesture.dragging) {
-                if (absX < BRANCH_TIMELINE_DRAG_START_X && absY < BRANCH_TIMELINE_DRAG_START_X) return;
-                if (absY > absX * BRANCH_TIMELINE_DRAG_CANCEL_RATIO) {
+                const startX = getBranchTimelineDragStartX(gesture);
+                if (absX < startX && absY < BRANCH_TIMELINE_VERTICAL_CANCEL_Y) return;
+                if (shouldCancelBranchTimelineDragIntent(gesture, absX, absY)) {
                     releaseBranchTimelineDrag(false);
                     return;
                 }
-                if (absX < BRANCH_TIMELINE_DRAG_START_X) return;
+                if (!hasBranchTimelineHorizontalIntent(gesture, absX, absY)) return;
 
                 gesture.dragging = true;
+                captureBranchTimelinePointer(gesture);
                 gesture.timeline.classList.add('is-drag-scrolling');
             }
 
