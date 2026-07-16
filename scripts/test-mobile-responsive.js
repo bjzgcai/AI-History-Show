@@ -61,11 +61,13 @@ const mobileRequirements = [
         message: 'horizontal rails still allow vertical mobile page scrolling'
     },
     {
-        pattern: /@media\s*\(max-width:\s*600px\)[\s\S]*?\.branch-event \.branch-game-record-trigger[\s\S]*?pointer-events:\s*auto/,
+        pattern:
+            /@media\s*\(max-width:\s*600px\)[\s\S]*?\.branch-event \.branch-game-record-trigger[\s\S]*?pointer-events:\s*auto/,
         message: 'phone chess demos remain visible and touchable'
     },
     {
-        pattern: /const showAllRecords = window\.matchMedia\('\(max-width: 600px\)'\)\.matches;[\s\S]*?showAllRecords \|\| isCentered/,
+        pattern:
+            /const showAllRecords = window\.matchMedia\('\(max-width: 600px\)'\)\.matches;[\s\S]*?showAllRecords \|\| isCentered/,
         message: 'phone chess demos remain keyboard accessible'
     },
     {
