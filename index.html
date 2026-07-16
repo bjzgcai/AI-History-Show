@@ -1255,10 +1255,11 @@
         }
 
         .single-stage.is-branch-timeline .storyline-trigger {
-            border-color: rgba(244, 239, 229, 0.24);
+            border-color: rgba(246, 137, 0, 0.82);
             background: rgba(0, 0, 0, 0.34);
             color: rgba(244, 239, 229, 0.78);
             font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
+            box-shadow: 0 0 0 1px rgba(246, 137, 0, 0.16);
         }
 
         .single-stage.is-branch-timeline .mode-chip-label {
@@ -9356,6 +9357,224 @@
         }
 
         @media (max-width: 600px) {
+            html.branch-timeline-active,
+            html.branch-timeline-active body {
+                height: auto;
+                min-height: 100%;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .stage-viewport.is-branch-timeline,
+            .single-stage.is-branch-timeline {
+                height: auto;
+                min-height: 100vh;
+                min-height: 100dvh;
+                overflow: visible;
+                background: #000;
+            }
+
+            .single-stage.is-branch-timeline .stage-topbar {
+                width: auto;
+                gap: 12px;
+                margin: 0 12px;
+                padding: 12px 0 0;
+                background: #000;
+            }
+
+            .single-stage.is-branch-timeline .brand-lockup {
+                width: min(431px, 100%);
+                max-width: calc(100vw - 24px);
+                padding: 10px 0 0;
+                display: block;
+            }
+
+            .single-stage.is-branch-timeline .brand-image {
+                width: 100%;
+                display: block;
+            }
+
+            .single-stage.is-branch-timeline .topbar-actions {
+                gap: 8px;
+            }
+
+            .branch-timeline-page {
+                height: auto;
+                min-height: 0;
+                padding: 8px 12px 32px;
+                display: block;
+                overflow: visible;
+            }
+
+            .branch-hero {
+                min-height: 0;
+                margin-bottom: 22px;
+            }
+
+            .branch-hero-title {
+                max-width: 340px;
+                font-size: clamp(32px, 9.5vw, 42px);
+                line-height: 1.08;
+                letter-spacing: -0.025em;
+            }
+
+            .branch-timeline {
+                width: 100%;
+                height: auto;
+                min-height: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-auto-flow: row;
+                grid-auto-columns: auto;
+                gap: 18px;
+                overflow: visible;
+                cursor: auto;
+                touch-action: pan-y;
+            }
+
+            .branch-event {
+                width: 100%;
+                height: auto;
+                min-width: 0;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto auto;
+                gap: 12px;
+            }
+
+            .branch-event-visual,
+            .branch-event.is-visual-first .branch-event-visual,
+            .branch-event.is-content-first .branch-event-visual {
+                width: 100%;
+                height: auto;
+                min-height: 0;
+                aspect-ratio: 16 / 9;
+                overflow: hidden;
+                border: 1px solid rgba(244, 239, 229, 0.18);
+                border-radius: 8px;
+                background: #111;
+            }
+
+            .branch-event-visual img {
+                width: 100%;
+                height: 100%;
+                max-height: none;
+                object-fit: contain;
+            }
+
+            .branch-event-visual.has-image,
+            .branch-event.is-visual-first .branch-event-visual.has-image,
+            .branch-event.is-content-first .branch-event-visual.has-image {
+                height: auto;
+                aspect-ratio: auto;
+            }
+
+            .branch-event-visual.has-image img {
+                height: auto;
+                object-fit: initial;
+            }
+
+            .branch-event-visual .branch-illustration {
+                transform: scale(0.49);
+            }
+
+            .branch-event .branch-game-record-trigger {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translateY(-50%) scale(1);
+            }
+
+            .branch-timeline-page.is-humanistic-cycle .branch-timeline {
+                width: 100%;
+                height: auto;
+                min-height: 0;
+                padding: 0;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-auto-flow: row;
+                grid-auto-columns: auto;
+                gap: 18px;
+                overflow: visible;
+            }
+
+            .branch-timeline-page.is-humanistic-cycle .branch-event {
+                width: 100%;
+                height: auto;
+                min-width: 0;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto auto;
+                gap: 12px;
+            }
+
+            .branch-timeline-page.is-humanistic-cycle .branch-event-visual {
+                width: 100%;
+                height: auto;
+                min-height: 0;
+                max-height: none;
+                aspect-ratio: 16 / 9;
+            }
+
+            .branch-timeline-page.is-humanistic-cycle .branch-event-content {
+                width: 100%;
+                height: auto;
+                min-width: 0;
+                max-width: 100%;
+                max-height: none;
+                overflow: visible;
+                touch-action: pan-y;
+                overscroll-behavior: auto;
+            }
+
+            .branch-timeline-page.is-humanistic-cycle .branch-hero-title {
+                font-size: clamp(32px, 9.5vw, 42px);
+                line-height: 1.08;
+            }
+
+            .branch-event-content,
+            .branch-event.is-left .branch-event-content,
+            .branch-event.is-right .branch-event-content {
+                width: 100%;
+                height: auto;
+                min-width: 0;
+                max-width: 100%;
+                max-height: none;
+                padding: 16px;
+                overflow: visible;
+                border-color: rgba(244, 239, 229, 0.18);
+                border-radius: 8px;
+                background: linear-gradient(180deg, #151514 0%, #10100f 100%);
+                box-shadow: none;
+            }
+
+            .branch-meta,
+            .branch-event.is-right .branch-meta {
+                color: rgba(244, 239, 229, 0.58);
+            }
+
+            .branch-chip {
+                border-color: rgba(246, 137, 0, 0.7);
+                background: rgba(246, 137, 0, 0.08);
+                color: var(--accent);
+            }
+
+            .branch-event-title {
+                color: var(--text);
+                font-size: clamp(22px, 6.4vw, 27px);
+                line-height: 1.18;
+                letter-spacing: -0.015em;
+            }
+
+            .branch-event-summary {
+                color: rgba(244, 239, 229, 0.7);
+            }
+
+            .branch-element-item {
+                border-color: rgba(244, 239, 229, 0.14);
+                background: rgba(255, 255, 255, 0.035);
+            }
+
             html,
             body,
             .stage-viewport,
@@ -11983,7 +12202,7 @@
             const meta = buildArchivePhotoMeta(vm, image);
             const photoClass = isPortraitLikePhoto(image) ? ' is-photo' : '';
             return `
-                <figure class="branch-event-visual${photoClass}">
+                <figure class="branch-event-visual has-image${photoClass}">
                     <img src="${escapeHtml(image)}" alt="${escapeHtml(meta.name || vm.title || tx('archiveImage'))}">
                     ${recordTrigger}
                 </figure>
@@ -12177,10 +12396,11 @@
             const centeredEvent = getBranchTimelineCenteredEvent(timeline);
             const centeredKey = centeredEvent ? String(centeredEvent.dataset.branchEventKey || '') : '';
             const extraRecordKeys = new Set(BRANCH_EXTRA_GAME_RECORD_KEYS[centeredKey] || []);
+            const showAllRecords = window.matchMedia('(max-width: 600px)').matches;
             timeline.querySelectorAll('.branch-event').forEach((eventCard) => {
                 const isCentered = eventCard === centeredEvent;
                 const isExtraRecordVisible = extraRecordKeys.has(String(eventCard.dataset.branchEventKey || ''));
-                const isRecordVisible = isCentered || isExtraRecordVisible;
+                const isRecordVisible = showAllRecords || isCentered || isExtraRecordVisible;
                 eventCard.classList.toggle('is-center', isCentered);
                 eventCard.classList.toggle('is-extra-record-visible', isExtraRecordVisible);
                 eventCard.querySelectorAll('.branch-game-record-trigger').forEach((button) => {

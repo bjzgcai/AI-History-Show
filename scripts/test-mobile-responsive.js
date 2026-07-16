@@ -61,6 +61,24 @@ const mobileRequirements = [
         message: 'horizontal rails still allow vertical mobile page scrolling'
     },
     {
+        pattern: /@media\s*\(max-width:\s*600px\)[\s\S]*?\.branch-event \.branch-game-record-trigger[\s\S]*?pointer-events:\s*auto/,
+        message: 'phone chess demos remain visible and touchable'
+    },
+    {
+        pattern: /const showAllRecords = window\.matchMedia\('\(max-width: 600px\)'\)\.matches;[\s\S]*?showAllRecords \|\| isCentered/,
+        message: 'phone chess demos remain keyboard accessible'
+    },
+    {
+        pattern:
+            /@media\s*\(max-width:\s*600px\)[\s\S]*?\.branch-timeline-page\.is-humanistic-cycle \.branch-timeline[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)[\s\S]*?grid-auto-flow:\s*row/,
+        message: 'phone humanistic timeline stacks vertically'
+    },
+    {
+        pattern:
+            /\.branch-timeline-page\.is-humanistic-cycle \.branch-event-content[\s\S]*?max-height:\s*none[\s\S]*?overflow:\s*visible/,
+        message: 'phone humanistic cards avoid nested scroll traps'
+    },
+    {
         pattern: /@media\s*\(max-width:\s*600px\)[\s\S]*?\.ui-detail-year[\s\S]*?font-size:\s*58px/,
         message: 'phone detail pages use compact typography'
     },
