@@ -115,5 +115,201 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Nitish Srivastava",
+        "zh": "尼蒂什·斯里瓦斯塔瓦"
+      },
+      "role": {
+        "en": "First author of the JMLR dropout paper",
+        "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author and deep learning pioneer",
+        "zh": "共同作者，深度学习先驱"
+      },
+      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"prevent neural networks from overfitting\"",
+    "zh": "\"防止神经网络过拟合\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "zh": "Dropout：防止神经网络过拟合的简单方法"
+    },
+    "workAuthors": {
+      "en": "Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+      "zh": "尼蒂什·斯里瓦斯塔瓦, 杰弗里·辛顿, 亚历克斯·克里热夫斯基, 伊利亚·苏茨克维, 鲁斯兰·萨拉胡丁诺夫, 《机器学习研究杂志》, 2014"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://jmlr.org/papers/v15/srivastava14a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Dropout",
+    "zh": "BenchCouncil AI100：神经网络 / Dropout"
+  },
+  "quoteAttribution": {
+    "en": "<em>Dropout: A Simple Way to Prevent Neural Networks from Overfitting</em>, Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov, JMLR, 2014",
+    "zh": "《Dropout：防止神经网络过拟合的简单方法》, 尼蒂什·斯里瓦斯塔瓦, 杰弗里·辛顿, 亚历克斯·克里热夫斯基, 伊利亚·苏茨克维, 鲁斯兰·萨拉胡丁诺夫, 《机器学习研究杂志》, 2014"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Randomly thinned networks for regularization",
+      "zh": "随机变薄网络进行正则化"
+    },
+    "artifact": {
+      "en": "Dropout training and inference rule",
+      "zh": "Dropout 训练与推理规则"
+    },
+    "material": {
+      "en": "JMLR paper and framework documentation",
+      "zh": "《机器学习研究杂志》 论文与框架文档"
+    },
+    "demo": {
+      "en": "Mask units in training, scale predictions at test time",
+      "zh": "训练时遮蔽单元，测试时缩放预测"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Random Mask",
+          "zh": "随机掩码"
+        },
+        "text": {
+          "en": "Each update keeps only a sampled subset of units active.",
+          "zh": "每次更新只保留采样出的部分单元活跃。"
+        }
+      },
+      {
+        "label": {
+          "en": "Co-adaptation",
+          "zh": "共适应"
+        },
+        "text": {
+          "en": "Dropout discourages features from relying on exact partners being present.",
+          "zh": "Dropout 阻止特征过度依赖某些固定伙伴同时存在。"
+        }
+      },
+      {
+        "label": {
+          "en": "Approximate Ensemble",
+          "zh": "近似集成"
+        },
+        "text": {
+          "en": "Test-time scaling approximates averaging many thinned networks.",
+          "zh": "测试时缩放近似于平均许多变薄网络。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "Regularization",
+        "zh": "正则化"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      },
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Random Mask",
+        "zh": "随机掩码"
+      },
+      {
+        "en": "Co-adaptation",
+        "zh": "共适应"
+      },
+      {
+        "en": "Approximate Ensemble",
+        "zh": "近似集成"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "JMLR",
+          "zh": "《机器学习研究杂志》"
+        },
+        "title": {
+          "en": "Dropout paper",
+          "zh": "Dropout 论文"
+        },
+        "description": {
+          "en": "Primary JMLR source; local images redraw masks and model averaging.",
+          "zh": "《机器学习研究杂志》 原始论文；本地图重画掩码和模型平均。"
+        },
+        "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "source": "https://jmlr.org/papers/v15/srivastava14a.html",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open JMLR paper",
+          "zh": "打开 《机器学习研究杂志》 论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
   }
 }

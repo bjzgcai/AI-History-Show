@@ -109,5 +109,191 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Ferrucci",
+        "zh": "戴维·费鲁奇"
+      },
+      "role": {
+        "en": "Principal investigator of the Watson / DeepQA team",
+        "zh": "Watson / DeepQA 团队负责人"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "IBM DeepQA team",
+        "zh": "IBM DeepQA 团队"
+      },
+      "role": {
+        "en": "Built the question-answering system",
+        "zh": "构建问答系统"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Generate hypotheses, score evidence, rank answers\"",
+    "zh": "\"生成假设、评分证据、排序答案\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Watson: Beyond Jeopardy!",
+      "zh": "沃森：超越《危险边缘！》"
+    },
+    "workAuthors": {
+      "en": "David Ferrucci et al.",
+      "zh": "戴维·费鲁奇等"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1016/j.artint.2012.06.009"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Question answering / IBM Watson",
+    "zh": "BenchCouncil AI100：开放域问答 / IBM Watson"
+  },
+  "quoteAttribution": {
+    "en": "<em>Watson: Beyond Jeopardy!</em>, David Ferrucci et al.",
+    "zh": "《沃森：超越《危险边缘！》》, 戴维·费鲁奇等"
+  },
+  "achievement": {
+    "area": {
+      "en": "Question answering",
+      "zh": "开放域问答"
+    },
+    "method": {
+      "en": "DeepQA evidence-ranking pipeline",
+      "zh": "DeepQA 证据排序流水线"
+    },
+    "artifact": {
+      "en": "Watson Jeopardy! system",
+      "zh": "Watson Jeopardy! 系统"
+    },
+    "material": {
+      "en": "IBM papers, AI Magazine overview, and Jeopardy! system reports",
+      "zh": "IBM 论文、AI Magazine 综述与 Jeopardy! 系统报告"
+    },
+    "demo": {
+      "en": "Rank competing answers from many evidence signals",
+      "zh": "根据多路证据信号排序候选答案"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Hypothesis Generation",
+          "zh": "假设生成"
+        },
+        "text": {
+          "en": "Candidate answers are generated from many interpretations of the clue.",
+          "zh": "从线索的多种解释中生成候选答案。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evidence Scoring",
+          "zh": "证据评分"
+        },
+        "text": {
+          "en": "Independent scorers measure support from passages, entities, dates, and relations.",
+          "zh": "独立评分器从段落、实体、日期和关系中衡量支持度。"
+        }
+      },
+      {
+        "label": {
+          "en": "Confidence Ranking",
+          "zh": "置信度排序"
+        },
+        "text": {
+          "en": "Watson decides whether to answer based on merged confidence.",
+          "zh": "Watson 根据合并置信度决定是否作答。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "ELIZA",
+        "zh": "ELIZA"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Parse clue",
+        "zh": "解析线索"
+      },
+      {
+        "en": "Score evidence",
+        "zh": "评分证据"
+      },
+      {
+        "en": "Buzz with confidence",
+        "zh": "带置信度抢答"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Watson: Beyond Jeopardy!",
+          "zh": "沃森：超越《危险边缘！》"
+        },
+        "description": {
+          "en": "Original Artificial Intelligence paper on the post-Jeopardy Watson system and its technical arc.",
+          "zh": "《人工智能》期刊原文：介绍 Jeopardy! 之后的沃森系统及其技术脉络。"
+        },
+        "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+        "source": "https://doi.org/10.1016/j.artint.2012.06.009",
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "IBM Thomas J. Watson Research Center",
+      "zh": "IBM 托马斯·J·沃森 研究中心"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      41.2101,
+      -73.8037
+    ]
   }
 }

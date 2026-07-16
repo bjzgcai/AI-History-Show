@@ -69,5 +69,111 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
+    "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Rumelhart",
+        "zh": "戴维·鲁梅尔哈特"
+      },
+      "role": {
+        "en": "Backpropagation author",
+        "zh": "BP算法作者"
+      },
+      "avatar": "resources/images/figures/david-rumelhart.jpg",
+      "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Pioneer of deep learning",
+        "zh": "深度学习之父"
+      },
+      "avatar": "resources/images/figures/historical/geoffrey-hinton-1986.png",
+      "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Ronald Williams",
+        "zh": "罗纳德·威廉姆斯"
+      },
+      "role": {
+        "en": "Backpropagation co-author",
+        "zh": "BP算法共同作者"
+      },
+      "avatar": "resources/images/figures/ronald-williams.jpg",
+      "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+        "url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
+        "title": "1986：神经网络的复兴与反向传播算法_720p",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Rumelhart, Hinton, and Williams showed that back-propagating errors could train internal representations in multilayer neural networks, making feature learning practical again.\"",
+    "zh": "\"鲁梅尔哈特、辛顿和威廉姆斯证明，反向传播误差可以训练多层神经网络的内部表示，使特征学习重新变得可行。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
+      "zh": "戴维·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
+    },
+    "workTitle": {
+      "en": "Learning representations by back-propagating errors",
+      "zh": "通过反向传播误差学习表示"
+    },
+    "workAuthors": {
+      "en": "David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+      "zh": "戴维·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯，Nature，1986"
+    },
+    "sourceLabel": {
+      "en": "Nature paper DOI",
+      "zh": "Nature 论文 DOI"
+    },
+    "sourceUrl": "https://doi.org/10.1038/323533a0"
+  },
+  "quotePage": {
+    "en": "Nature paper: Learning representations by back-propagating errors",
+    "zh": "Nature 论文《通过反向传播误差学习表示》"
+  },
+  "quoteAttribution": {
+    "en": "<em>Learning representations by back-propagating errors</em>, David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+    "zh": "《通过误差反向传播学习表示》，大卫·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, San Diego",
+      "zh": "加州大学圣地亚哥分校"
+    },
+    "country": {
+      "en": "CA, United States",
+      "zh": "美国, 加利福尼亚州"
+    },
+    "coordinates": [
+      32.8801,
+      -117.234
+    ]
   }
 }

@@ -68,5 +68,124 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Genesis of AI (1950s-1970s)",
+    "zh": "AI创世纪（20世纪50年代至70年代）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John McCarthy",
+        "zh": "约翰·麦卡锡"
+      },
+      "role": {
+        "en": "Coined the term \"AI\"",
+        "zh": "提出\"AI\"术语"
+      },
+      "avatar": "resources/images/figures/historical/john-mccarthy-1956-v2.png",
+      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Cognitive scientist",
+        "zh": "认知科学家"
+      },
+      "avatar": "resources/images/figures/historical/marvin-minsky-1956-v2.png",
+      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 46%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Claude Shannon",
+        "zh": "克劳德·香农"
+      },
+      "role": {
+        "en": "Founder of information theory",
+        "zh": "信息论创始人"
+      },
+      "avatar": "resources/images/figures/historical/claude-shannon-1956-v2.png",
+      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Nathaniel Rochester",
+        "zh": "纳撒尼尔·罗切斯特"
+      },
+      "role": {
+        "en": "IBM architect",
+        "zh": "IBM 架构师"
+      },
+      "avatar": "resources/images/figures/historical/nathaniel-rochester-1956-v2.png",
+      "avatarStyle": "transform: scale(1.06); transform-origin: 50% 45%;",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+        "url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
+        "title": "1956年：人工智能的诞生",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"The Dartmouth proposal framed artificial intelligence as a research program: learning and other features of intelligence could, in principle, be described precisely enough for machines to simulate them.\"",
+    "zh": "\"达特茅斯提案把人工智能定义为一个可研究的科学计划：学习以及智能的其他特征，原则上可以被精确描述，并由机器加以模拟。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "John McCarthy et al.",
+      "zh": "约翰·麦卡锡等"
+    },
+    "workTitle": {
+      "en": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
+      "zh": "达特茅斯夏季人工智能研究项目提案"
+    },
+    "workAuthors": {
+      "en": "John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, 1955",
+      "zh": "约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农，1955"
+    },
+    "sourceLabel": {
+      "en": "Stanford/J. McCarthy archive of the 1955 Dartmouth proposal",
+      "zh": "斯坦福 / 约翰·麦卡锡档案保存的 1955 年达特茅斯提案"
+    },
+    "sourceUrl": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html"
+  },
+  "quotePage": {
+    "en": "Dartmouth Summer Research Project proposal, Stanford/J. McCarthy archive",
+    "zh": "达特茅斯夏季人工智能研究项目提案，斯坦福 / 约翰·麦卡锡档案"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence</em>, John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, 1955",
+    "zh": "《达特茅斯人工智能夏季研究项目提案》，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农"
+  },
+  "location": {
+    "name": {
+      "en": "Dartmouth College",
+      "zh": "达特茅斯学院"
+    },
+    "country": {
+      "en": "NH, United States",
+      "zh": "美国, 新罕布什尔州"
+    },
+    "coordinates": [
+      43.7044,
+      -72.2887
+    ]
   }
 }

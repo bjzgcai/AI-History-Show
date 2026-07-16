@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Phillip Isola",
+        "zh": "菲利普·伊索拉"
+      },
+      "role": {
+        "en": "Pix2Pix lead author",
+        "zh": "Pix2Pix 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Image-to-image translation with conditional adversarial networks\"",
+    "zh": "\"使用条件对抗网络进行图像到图像转换\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+      "zh": "使用条件对抗网络进行图像到图像转换"
+    },
+    "workAuthors": {
+      "en": "Phillip Isola et al., CVPR, 2017",
+      "zh": "菲利普·伊索拉等，CVPR，2017"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1611.07004"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Image-to-Image Translation with Conditional Adversarial Networks</em>, Phillip Isola et al., CVPR, 2017",
+    "zh": "《使用条件对抗网络进行图像到图像转换》, 菲利普·伊索拉等，CVPR，2017"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Paired conditional image translation",
+      "zh": "配对条件图像转换"
+    },
+    "artifact": {
+      "en": "Pix2Pix image-to-image translation framework",
+      "zh": "Pix2Pix 图像到图像转换框架"
+    },
+    "material": {
+      "en": "CVPR paper, project page, and code",
+      "zh": "CVPR 论文、项目页面与代码"
+    },
+    "demo": {
+      "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses.",
+      "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Paired Supervision",
+          "zh": "配对监督"
+        },
+        "text": {
+          "en": "Examples show the desired input-output mapping.",
+          "zh": "样本展示期望的输入输出映射。"
+        }
+      },
+      {
+        "label": {
+          "en": "Conditional Discriminator",
+          "zh": "条件判别器"
+        },
+        "text": {
+          "en": "Realism is judged relative to the input.",
+          "zh": "真实感相对于输入进行判断。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        },
+        "zh": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "CycleGAN",
+          "zh": "CycleGAN"
+        },
+        "zh": {
+          "en": "CycleGAN",
+          "zh": "CycleGAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        },
+        "zh": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Input image",
+          "zh": "输入图像"
+        },
+        "zh": {
+          "en": "Input image",
+          "zh": "输入图像"
+        }
+      },
+      {
+        "en": {
+          "en": "cGAN translator",
+          "zh": "cGAN 转换器"
+        },
+        "zh": {
+          "en": "cGAN translator",
+          "zh": "cGAN 转换器"
+        }
+      },
+      {
+        "en": {
+          "en": "Output image",
+          "zh": "输出图像"
+        },
+        "zh": {
+          "en": "Output image",
+          "zh": "输出图像"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper, project page, and code",
+          "zh": "CVPR 论文、项目页面与代码"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The model receives a source image and learns a paired target image distribution under adversarial and reconstruction losses.",
+          "zh": "模型接收源图像，并在对抗损失和重建损失下学习配对目标图像分布。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Project page",
+          "zh": "项目页面"
+        },
+        "title": {
+          "en": "Image-to-Image Translation with Conditional Adversarial Networks",
+          "zh": "使用条件对抗网络进行图像到图像转换"
+        },
+        "description": {
+          "en": "Project page source card for Pix2Pix.",
+          "zh": "项目页面 的Pix2Pix资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1611.07004",
+        "source": "https://arxiv.org/abs/1611.07004",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley",
+      "zh": "UC Berkeley"
+    },
+    "country": {
+      "en": "Berkeley, United States",
+      "zh": "Berkeley, United States"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
   }
 }

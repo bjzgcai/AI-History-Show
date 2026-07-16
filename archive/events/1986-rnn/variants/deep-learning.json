@@ -66,5 +66,98 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
+    "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jeffrey Elman",
+        "zh": "杰弗里·埃尔曼"
+      },
+      "role": {
+        "en": "The creator of Simple RNN",
+        "zh": "简单循环神经网络提出者"
+      },
+      "avatar": "resources/images/figures/jeffrey-elman.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Michael Jordan",
+        "zh": "迈克尔·乔丹"
+      },
+      "role": {
+        "en": "The creator of Jordan Network",
+        "zh": "乔丹网络提出者"
+      },
+      "avatar": "resources/images/figures/michael-i-jordan.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+        "url": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/1986%E8%BF%BD%E5%AF%BBAI%E7%9A%84%E8%AE%B0%E5%BF%86%EF%BC%9A1986%E5%B9%B4RNN%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+        "title": "1986追寻AI的记忆：1986年RNN的突破",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Recurrent networks introduced explicit state over time, allowing neural models to process sequences by carrying information from earlier inputs into later computations.\"",
+    "zh": "\"循环神经网络引入了随时间变化的内部状态，使神经模型能够把早先输入的信息带入后续计算，从而处理序列数据。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "Jeffrey Elman",
+      "zh": "杰弗里·埃尔曼"
+    },
+    "workTitle": {
+      "en": "Finding Structure in Time",
+      "zh": "在时间中发现结构"
+    },
+    "workAuthors": {
+      "en": "Jeffrey L. Elman, Cognitive Science, 1990",
+      "zh": "杰弗里·埃尔曼，Cognitive Science，1990"
+    },
+    "sourceLabel": {
+      "en": "Cognitive Science paper DOI",
+      "zh": "Cognitive Science 论文 DOI"
+    },
+    "sourceUrl": "https://doi.org/10.1207/s15516709cog1402_1"
+  },
+  "quotePage": {
+    "en": "Elman, Cognitive Science, 1990: Finding Structure in Time",
+    "zh": "埃尔曼，Cognitive Science，1990 年《在时间中发现结构》"
+  },
+  "quoteAttribution": {
+    "en": "<em>Finding Structure in Time</em>, Jeffrey L. Elman, Cognitive Science, 1990",
+    "zh": "《在时间中发现结构》，杰弗里·埃尔曼"
+  },
+  "location": {
+    "name": {
+      "en": "University of California, San Diego",
+      "zh": "加州大学圣地亚哥分校"
+    },
+    "country": {
+      "en": "CA, United States",
+      "zh": "美国, 加利福尼亚州"
+    },
+    "coordinates": [
+      32.8801,
+      -117.234
+    ]
   }
 }

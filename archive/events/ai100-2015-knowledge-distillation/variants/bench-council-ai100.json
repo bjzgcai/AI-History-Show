@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Knowledge distillation co-author",
+        "zh": "知识蒸馏共同作者"
+      },
+      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Distilling the knowledge in a neural network\"",
+    "zh": "\"蒸馏神经网络中的知识\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Distilling the Knowledge in a Neural Network",
+      "zh": "蒸馏神经网络中的知识"
+    },
+    "workAuthors": {
+      "en": "Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
+      "zh": "杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1503.02531"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Distilling the Knowledge in a Neural Network</em>, Geoffrey Hinton, Oriol Vinyals, and Jeff Dean, 2015",
+    "zh": "《蒸馏神经网络中的知识》, 杰弗里·辛顿、奥里奥尔·维尼亚尔斯、杰夫·迪恩，2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Model efficiency",
+      "zh": "模型效率"
+    },
+    "method": {
+      "en": "Teacher-student soft-target training",
+      "zh": "教师-学生软目标训练"
+    },
+    "artifact": {
+      "en": "Distillation training recipe",
+      "zh": "蒸馏训练配方"
+    },
+    "material": {
+      "en": "NIPS workshop paper",
+      "zh": "NIPS 研讨会论文"
+    },
+    "demo": {
+      "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels.",
+      "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Soft Targets",
+          "zh": "软目标"
+        },
+        "text": {
+          "en": "Probabilities reveal similarity between classes.",
+          "zh": "概率揭示类别之间的相似性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Student Model",
+          "zh": "学生模型"
+        },
+        "text": {
+          "en": "A smaller model imitates the teacher behavior.",
+          "zh": "较小模型模仿教师行为。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Deep Compression",
+          "zh": "深度压缩"
+        },
+        "zh": {
+          "en": "Deep Compression",
+          "zh": "深度压缩"
+        }
+      },
+      {
+        "en": {
+          "en": "GPT",
+          "zh": "GPT"
+        },
+        "zh": {
+          "en": "GPT",
+          "zh": "GPT"
+        }
+      },
+      {
+        "en": {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        "zh": {
+          "en": "BERT",
+          "zh": "BERT"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Teacher logits",
+          "zh": "教师 logits"
+        },
+        "zh": {
+          "en": "Teacher logits",
+          "zh": "教师 logits"
+        }
+      },
+      {
+        "en": {
+          "en": "Soft targets",
+          "zh": "软目标"
+        },
+        "zh": {
+          "en": "Soft targets",
+          "zh": "软目标"
+        }
+      },
+      {
+        "en": {
+          "en": "Student update",
+          "zh": "学生更新"
+        },
+        "zh": {
+          "en": "Student update",
+          "zh": "学生更新"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NIPS workshop paper",
+          "zh": "NIPS 研讨会论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A teacher produces softened logits, and the student learns from both those soft targets and the original labels.",
+          "zh": "教师产生软化 logits，学生同时从这些软目标和原始标签中学习。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Distilling the Knowledge in a Neural Network",
+          "zh": "蒸馏神经网络中的知识"
+        },
+        "description": {
+          "en": "arXiv source card for Knowledge Distillation.",
+          "zh": "arXiv 的知识蒸馏资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1503.02531",
+        "source": "https://arxiv.org/abs/1503.02531",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.3861,
+      -122.0839
+    ]
   }
 }

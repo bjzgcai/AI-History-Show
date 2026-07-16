@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Barret Zoph",
+        "zh": "巴雷特·佐夫"
+      },
+      "role": {
+        "en": "Neural architecture search lead author",
+        "zh": "神经架构搜索主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Neural architecture search with reinforcement learning\"",
+    "zh": "\"基于强化学习的神经架构搜索\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Neural Architecture Search with Reinforcement Learning",
+      "zh": "基于强化学习的神经架构搜索"
+    },
+    "workAuthors": {
+      "en": "Barret Zoph and Quoc V. Le, ICLR, 2017",
+      "zh": "巴雷特·佐夫、黎国威，ICLR，2017"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1611.01578"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Neural Architecture Search with Reinforcement Learning</em>, Barret Zoph and Quoc V. Le, ICLR, 2017",
+    "zh": "《基于强化学习的神经架构搜索》, 巴雷特·佐夫、黎国威，ICLR，2017"
+  },
+  "achievement": {
+    "area": {
+      "en": "Automated machine learning",
+      "zh": "自动机器学习"
+    },
+    "method": {
+      "en": "Controller-based architecture search",
+      "zh": "基于控制器的架构搜索"
+    },
+    "artifact": {
+      "en": "Neural architecture search with reinforcement learning",
+      "zh": "基于强化学习的神经架构搜索"
+    },
+    "material": {
+      "en": "ICLR paper and AutoML lineage",
+      "zh": "ICLR 论文与 AutoML 脉络"
+    },
+    "demo": {
+      "en": "A controller samples a network design, validation accuracy becomes a reward, and search gradually favors stronger architectures.",
+      "zh": "控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Search Space",
+          "zh": "搜索空间"
+        },
+        "text": {
+          "en": "Candidate networks are sampled from design choices.",
+          "zh": "候选网络从设计选择中采样。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reward Signal",
+          "zh": "奖励信号"
+        },
+        "text": {
+          "en": "Validation results guide the controller.",
+          "zh": "验证结果引导控制器。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Reinforcement learning",
+          "zh": "强化学习"
+        },
+        "zh": {
+          "en": "Reinforcement learning",
+          "zh": "强化学习"
+        }
+      },
+      {
+        "en": {
+          "en": "MobileNets",
+          "zh": "MobileNets"
+        },
+        "zh": {
+          "en": "MobileNets",
+          "zh": "MobileNets"
+        }
+      },
+      {
+        "en": {
+          "en": "Efficient model design",
+          "zh": "高效模型设计"
+        },
+        "zh": {
+          "en": "Efficient model design",
+          "zh": "高效模型设计"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Sample architecture",
+          "zh": "采样架构"
+        },
+        "zh": {
+          "en": "Sample architecture",
+          "zh": "采样架构"
+        }
+      },
+      {
+        "en": {
+          "en": "Train and score",
+          "zh": "训练并评分"
+        },
+        "zh": {
+          "en": "Train and score",
+          "zh": "训练并评分"
+        }
+      },
+      {
+        "en": {
+          "en": "Update controller",
+          "zh": "更新控制器"
+        },
+        "zh": {
+          "en": "Update controller",
+          "zh": "更新控制器"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper and AutoML lineage",
+          "zh": "ICLR 论文与 AutoML 脉络"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A controller samples a network design, validation accuracy becomes a reward, and search gradually favors stronger architectures.",
+          "zh": "控制器采样网络设计，验证准确率变成奖励，搜索逐渐偏向更强的架构。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenReview",
+          "zh": "OpenReview"
+        },
+        "title": {
+          "en": "Neural Architecture Search with Reinforcement Learning",
+          "zh": "基于强化学习的神经架构搜索"
+        },
+        "description": {
+          "en": "OpenReview source card for Neural Architecture Search.",
+          "zh": "OpenReview 的神经架构搜索资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1611.01578",
+        "source": "https://arxiv.org/abs/1611.01578",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "Google Brain"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.3861,
+      -122.0839
+    ]
   }
 }

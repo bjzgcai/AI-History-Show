@@ -168,7 +168,9 @@ Disabled refs are skipped by archive preview and overlay. Use this for archive v
 
 ## Legacy source boundary
 
-Until source-of-truth closure is complete, these legacy files remain active inputs for compatible generation:
+The default `npm run generate` path still uses the legacy management sources for compatibility. The opt-in `npm run generate:archive` path reads only archive storylines and event bundles, then writes the two runtime milestone files directly.
+
+Legacy files remain active inputs for the compatible generator and for future archive content editing/migration:
 
 - `manage/events.js`
 - `manage/ai100-extra-events.js`
@@ -182,7 +184,26 @@ Until source-of-truth closure is complete, these legacy files remain active inpu
 - `resources/research-candidates.js`
 - `resources/videos/*.json`
 
-Do not delete or bypass them until Step 12 explicitly makes archive the authoritative source for the corresponding content.
+Do not delete them until the default generator and content-management workflows are explicitly switched to archive authority.
+
+## Archive-native generation
+
+Archive-native generation can now emit the complete current frontend milestone presentation shape without using `milestones-data.js` as a scaffold:
+
+```bash
+npm run generate:archive
+npm run generate:archive-native-preview
+npm run diff:archive-native
+npm run report:archive-native-fields
+```
+
+`generate:archive` writes `milestones-data.js` and `milestones-data-default.js`; the preview command writes the separate review artifact. The one-time migration command used to copy remaining legacy presentation enrichments into storyline variants is:
+
+```bash
+npm run migrate:archive-presentation
+```
+
+Variant-owned presentation fields include quote formatting, figure cards, video metadata, achievement auxiliary fields, commentary, analysis, and quizzes. Canonical facts remain in `event.json`; sources, claims, assets, and quizzes remain in their dedicated event files.
 
 ## Remaining work
 

@@ -67,5 +67,111 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Large Models and Scientific Intelligence",
+    "zh": "大模型与科学智能"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Stuart Russell",
+        "zh": "斯图尔特·罗素"
+      },
+      "role": {
+        "en": "Founder of Agent Theory",
+        "zh": "智能体理论奠基人"
+      },
+      "avatar": "resources/images/figures/stuart-russell.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Peter Norvig",
+        "zh": "彼得·诺维格"
+      },
+      "role": {
+        "en": "AIMA author",
+        "zh": "《人工智能：一种现代方法》作者"
+      },
+      "avatar": "resources/images/figures/peter-norvig.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Michael Wooldridge",
+        "zh": "迈克尔·伍尔德里奇"
+      },
+      "role": {
+        "en": "Expert in Multi-Agent Systems",
+        "zh": "多智能体系统专家"
+      },
+      "avatar": "resources/images/figures/michael-wooldridge.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+        "url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4",
+        "title": "2023AI智能体：70年的梦想",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.\"",
+    "zh": "\"ReAct 及相关系统展示了语言模型如何交错生成推理轨迹与行动，使 LLM 从文本预测器延伸为可调用工具的智能体组件。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "Shunyu Yao et al.",
+      "zh": "姚顺雨等"
+    },
+    "workTitle": {
+      "en": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "zh": "ReAct：在语言模型中协同推理与行动"
+    },
+    "workAuthors": {
+      "en": "Shunyu Yao et al., arXiv, 2022",
+      "zh": "姚顺雨等，arXiv，2022"
+    },
+    "sourceLabel": {
+      "en": "ReAct arXiv paper page",
+      "zh": "ReAct arXiv 论文页面"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2210.03629"
+  },
+  "quotePage": {
+    "en": "ReAct paper: Synergizing Reasoning and Acting in Language Models",
+    "zh": "ReAct 论文《在语言模型中协同推理与行动》"
+  },
+  "quoteAttribution": {
+    "en": "<em>ReAct: Synergizing Reasoning and Acting in Language Models</em>, Shunyu Yao et al., arXiv, 2022",
+    "zh": "《ReAct：在语言模型中协同推理与行动》，姚顺雨等"
+  },
+  "location": {
+    "name": {
+      "en": "Global AI Labs",
+      "zh": "全球研究"
+    },
+    "country": {
+      "en": "Global",
+      "zh": "多个机构"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
   }
 }

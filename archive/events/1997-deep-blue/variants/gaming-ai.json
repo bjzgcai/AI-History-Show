@@ -63,7 +63,7 @@
         "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
         "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
       },
-      "url": "resources/videos/game-evolution/1997-deep-blue.mp4",
+      "url": "resources/videos/game-evolution/sample-go-game.gif",
       "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
       "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
       "sourceSgf": "examples/sgf/sample-go-game.sgf",
@@ -152,5 +152,221 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "AI in Board & Tabletop Games",
+    "zh": "AI 在棋牌与博弈论的演进"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Murray Campbell",
+        "zh": "默里·坎贝尔"
+      },
+      "role": {
+        "en": "Deep Blue team member",
+        "zh": "深蓝 团队成员"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Specialized chess search hardware\"",
+    "zh": "\"专用国际象棋搜索硬件\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Deep Blue journal article",
+      "zh": "深蓝期刊论文"
+    },
+    "workAuthors": {
+      "en": "Murray Campbell",
+      "zh": "默里·坎贝尔"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game AI / Deep Blue",
+    "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
+  },
+  "quoteAttribution": {
+    "en": "<em>Deep Blue journal article</em>, Murray Campbell",
+    "zh": "《深蓝期刊论文》, 默里·坎贝尔"
+  },
+  "achievement": {
+    "area": {
+      "en": "Game AI",
+      "zh": "博弈 AI"
+    },
+    "method": {
+      "en": "Specialized chess search hardware",
+      "zh": "专用国际象棋搜索硬件"
+    },
+    "artifact": {
+      "en": "World-champion chess match system",
+      "zh": "世界冠军对弈系统"
+    },
+    "material": {
+      "en": "IBM Research profile and Deep Blue histories",
+      "zh": "IBM 研究院 人物资料与 深蓝 史料"
+    },
+    "demo": {
+      "en": "Search millions of chess positions with evaluation hardware",
+      "zh": "用评估硬件搜索数百万棋局位置"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Alpha-Beta Search",
+          "zh": "Alpha-Beta 搜索"
+        },
+        "text": {
+          "en": "A pruning method that avoids searching branches that cannot change the decision.",
+          "zh": "一种剪枝方法，避免搜索不会改变决策的分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation Function",
+          "zh": "评估函数"
+        },
+        "text": {
+          "en": "Chess knowledge assigns a score to positions when search stops.",
+          "zh": "搜索停止时，棋类知识为局面赋分。"
+        }
+      },
+      {
+        "label": {
+          "en": "Custom Hardware",
+          "zh": "定制硬件"
+        },
+        "text": {
+          "en": "Special chips accelerated chess move generation and evaluation.",
+          "zh": "专用芯片加速走法生成和局面评估。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlphaGo",
+        "zh": "AlphaGo"
+      },
+      {
+        "en": "Game AI",
+        "zh": "博弈 AI"
+      },
+      {
+        "en": "Search",
+        "zh": "搜索"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Generate moves",
+        "zh": "生成走法"
+      },
+      {
+        "en": "Prune branches",
+        "zh": "剪枝分支"
+      },
+      {
+        "en": "Score end leaves",
+        "zh": "评估叶节点"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Artificial Intelligence",
+          "zh": "人工智能"
+        },
+        "title": {
+          "en": "Deep Blue journal article",
+          "zh": "深蓝 期刊论文"
+        },
+        "description": {
+          "en": "AI journal article record on Deep Blue as a chess-playing system.",
+          "zh": "关于 深蓝 国际象棋系统的 AI 期刊记录。"
+        },
+        "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open article record",
+          "zh": "打开论文记录"
+        }
+      },
+      {
+        "type": "gameEvolutionVideo",
+        "site": {
+          "en": "Game evolution clip",
+          "zh": "棋局演化短片"
+        },
+        "title": {
+          "en": "Deep Blue game evolution",
+          "zh": "深蓝 棋局演化"
+        },
+        "description": {
+          "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
+          "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
+        },
+        "url": "resources/videos/game-evolution/sample-go-game.gif",
+        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+        "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+        "sourceSgf": "examples/sgf/sample-go-game.sgf",
+        "generator": "scripts/sgf_to_video.py",
+        "duration": {
+          "en": "about 1 min",
+          "zh": "约 1 分钟"
+        },
+        "fps": "30",
+        "license": {
+          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+        },
+        "usage": {
+          "en": "Playable game-state evolution module",
+          "zh": "可播放的棋局状态演化模块"
+        },
+        "action": {
+          "en": "Play evolution clip",
+          "zh": "播放演化短片"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "IBM Research",
+      "zh": "IBM 研究院"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      41.2108,
+      -73.8035
+    ]
   }
 }

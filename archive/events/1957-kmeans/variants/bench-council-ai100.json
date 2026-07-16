@@ -109,5 +109,178 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Stuart Lloyd",
+        "zh": "斯图尔特·劳埃德"
+      },
+      "role": {
+        "en": "Author of Lloyd's k-means-style quantization method",
+        "zh": "劳埃德 式 k-means 量化方法作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Assign points, update centroids, repeat\"",
+    "zh": "\"分配样本、更新质心、反复迭代\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Least squares quantization in PCM",
+      "zh": "PCM 中的最小二乘量化"
+    },
+    "workAuthors": {
+      "en": "Stuart Lloyd",
+      "zh": "斯图尔特·劳埃德"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1109/TIT.1982.1056489"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Cluster, Classification, Regression / K-means",
+    "zh": "BenchCouncil AI100：聚类、分类与回归 / K-means 聚类"
+  },
+  "quoteAttribution": {
+    "en": "<em>Least squares quantization in PCM</em>, Stuart Lloyd",
+    "zh": "《PCM 中的最小二乘量化》, 斯图尔特·劳埃德"
+  },
+  "achievement": {
+    "area": {
+      "en": "Cluster, Classification, Regression",
+      "zh": "聚类、分类与回归"
+    },
+    "method": {
+      "en": "Alternating centroid optimization",
+      "zh": "交替质心优化"
+    },
+    "artifact": {
+      "en": "Lloyd / k-means clustering loop",
+      "zh": "劳埃德 / k-means 聚类循环"
+    },
+    "material": {
+      "en": "Bell Labs manuscript and IEEE paper",
+      "zh": "贝尔实验室手稿与 IEEE 论文"
+    },
+    "demo": {
+      "en": "Move cluster centers until assignments stabilize",
+      "zh": "移动簇中心直到分配稳定"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Centroid",
+          "zh": "质心"
+        },
+        "text": {
+          "en": "Each cluster is represented by its mean point.",
+          "zh": "每个簇由其均值点表示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Assignment Step",
+          "zh": "分配步骤"
+        },
+        "text": {
+          "en": "Points join the closest center.",
+          "zh": "样本加入最近中心。"
+        }
+      },
+      {
+        "label": {
+          "en": "Update Step",
+          "zh": "更新步骤"
+        },
+        "text": {
+          "en": "Centers move to the average of assigned points.",
+          "zh": "中心移动到所属样本均值。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "DBSCAN",
+        "zh": "DBSCAN"
+      },
+      {
+        "en": "Spectral clustering",
+        "zh": "谱聚类"
+      },
+      {
+        "en": "Lasso",
+        "zh": "Lasso"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "New Jersey, United States",
+        "zh": "美国新泽西州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Pick centers",
+        "zh": "选择中心"
+      },
+      {
+        "en": "Assign points",
+        "zh": "分配样本"
+      },
+      {
+        "en": "Move means",
+        "zh": "移动均值"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Least squares quantization in PCM",
+          "zh": "PCM 中的最小二乘量化"
+        },
+        "description": {
+          "en": "IEEE record for Lloyd's least-squares quantization algorithm, later known as k-means.",
+          "zh": "IEEE 记录：劳埃德的最小二乘量化算法，后来称为 k-means。"
+        },
+        "url": "https://doi.org/10.1109/TIT.1982.1056489",
+        "source": "https://doi.org/10.1109/TIT.1982.1056489",
+        "action": {
+          "en": "Open IEEE record",
+          "zh": "打开 IEEE 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Bell Labs",
+      "zh": "贝尔实验室"
+    },
+    "country": {
+      "en": "New Jersey, United States",
+      "zh": "美国新泽西州"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4013
+    ]
   }
 }

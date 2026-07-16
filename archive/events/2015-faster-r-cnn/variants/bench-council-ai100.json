@@ -112,5 +112,224 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Shaoqing Ren",
+        "zh": "任少卿"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "avatar": "resources/images/figures/kaiming-he.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Ross Girshick",
+        "zh": "罗斯·格希克"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "Co-author of Faster R-CNN",
+        "zh": "Faster R-CNN 共同作者"
+      },
+      "avatar": "resources/images/figures/sun-jian.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"towards real-time object detection\"",
+    "zh": "\"迈向实时目标检测\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测"
+    },
+    "workAuthors": {
+      "en": "Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+      "zh": "任少卿、何恺明、罗斯·格希克、孙剑, 神经信息处理系统大会, 2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1506.01497"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Object Detection / Faster r-cnn",
+    "zh": "BenchCouncil AI100：目标检测 / Faster R-CNN"
+  },
+  "quoteAttribution": {
+    "en": "<em>Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</em>, Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun, Neural Information Processing Systems, 2015",
+    "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》, 任少卿、何恺明、罗斯·格希克、孙剑, 神经信息处理系统大会, 2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Object Detection",
+      "zh": "目标检测"
+    },
+    "method": {
+      "en": "Region Proposal Network with shared features",
+      "zh": "共享特征的区域建议网络"
+    },
+    "artifact": {
+      "en": "Two-stage detector with learned proposals",
+      "zh": "带学习型候选区域的两阶段检测器"
+    },
+    "material": {
+      "en": "NeurIPS paper and detection pipeline",
+      "zh": "神经信息处理系统大会 论文与检测流水线"
+    },
+    "demo": {
+      "en": "Propose boxes, classify objects",
+      "zh": "提出候选框并分类目标"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Region Proposal Network",
+          "zh": "区域建议网络"
+        },
+        "text": {
+          "en": "An RPN predicts likely object boxes directly from convolutional features instead of relying on a separate proposal method.",
+          "zh": "RPN 直接从卷积特征预测可能的目标框，而不是依赖外部候选区域方法。"
+        }
+      },
+      {
+        "label": {
+          "en": "Shared Features",
+          "zh": "共享特征"
+        },
+        "text": {
+          "en": "Proposal generation and object classification reuse the same feature maps, improving speed and consistency.",
+          "zh": "候选区域生成与目标分类复用同一组特征图，提高速度和一致性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Two-Stage Detection",
+          "zh": "两阶段检测"
+        },
+        "text": {
+          "en": "The system first proposes candidate boxes and then refines class labels and bounding boxes.",
+          "zh": "系统先提出候选框，再细化类别标签和边界框。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "R-CNN",
+        "zh": "R-CNN"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "YOLO",
+        "zh": "YOLO"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "China",
+        "zh": "中国"
+      },
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Shared conv map",
+        "zh": "共享卷积特征图"
+      },
+      {
+        "en": "Anchors propose boxes",
+        "zh": "Anchors 提出候选框"
+      },
+      {
+        "en": "Class + box heads",
+        "zh": "分类与框回归头"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "GitHub",
+        "title": {
+          "en": "ShaoqingRen/faster_rcnn",
+          "zh": "任少卿/faster_rcnn"
+        },
+        "description": {
+          "en": "Author-linked MATLAB implementation repository for Faster R-CNN.",
+          "zh": "Faster R-CNN 作者关联的 MATLAB 实现仓库。"
+        },
+        "url": "https://github.com/ShaoqingRen/faster_rcnn",
+        "source": "https://github.com/ShaoqingRen/faster_rcnn",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open code repository",
+          "zh": "打开代码仓库"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
   }
 }

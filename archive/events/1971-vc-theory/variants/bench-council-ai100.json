@@ -78,5 +78,176 @@
       "zh": "由 legacy AI100 数据批量生成的 variant。",
       "en": "Variant generated from legacy AI100 data in a batch migration."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Vladimir N. Vapnik",
+        "zh": "弗拉基米尔·N·瓦普尼克"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Alexey Ya. Chervonenkis",
+        "zh": "阿列克谢·雅·切尔沃年基斯"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Statistical learning theory was introduced in the late 1960's.\"",
+    "zh": "\"统计学习理论是在 20 世纪 60 年代末提出的。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "An Overview of Statistical Learning Theory",
+      "zh": "统计学习理论概览"
+    },
+    "workAuthors": {
+      "en": "Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "zh": "弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Theory / VC theory",
+    "zh": "BenchCouncil AI100：理论 / VC 理论"
+  },
+  "quoteAttribution": {
+    "en": "<em>An Overview of Statistical Learning Theory</em>, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+    "zh": "《统计学习理论概览》, 弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
+  },
+  "achievement": {
+    "area": {
+      "en": "Theory",
+      "zh": "理论"
+    },
+    "method": {
+      "en": "Statistical learning",
+      "zh": "统计学习"
+    },
+    "artifact": {
+      "en": "VC dimension",
+      "zh": "VC 维"
+    },
+    "material": {
+      "en": "Paper + book + overview",
+      "zh": "论文 + 著作 + 综述"
+    },
+    "demo": {
+      "en": "Capacity vs generalization",
+      "zh": "容量与泛化"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "VC Dimension",
+          "zh": "VC 维"
+        },
+        "text": {
+          "en": "VC dimension measures how flexible a class of classifiers is. A high-capacity class can fit many label patterns, so it usually needs more data to generalize reliably.",
+          "zh": "VC 维衡量一类分类器有多灵活。容量越高，越能拟合多种标签模式，通常也需要更多数据才能可靠泛化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Uniform Convergence",
+          "zh": "一致收敛"
+        },
+        "text": {
+          "en": "Uniform convergence asks whether training-sample measurements stay close to true probabilities across a whole model class. This bridges training performance and expected test performance.",
+          "zh": "一致收敛关注训练样本上的测量是否能在整个模型类上接近真实概率。它连接了训练表现和预期测试表现。"
+        }
+      },
+      {
+        "label": {
+          "en": "Structural Risk Minimization",
+          "zh": "结构风险最小化"
+        },
+        "text": {
+          "en": "Structural risk minimization balances training error against model capacity. It explains why the best learner is not always the one that fits the training data most tightly.",
+          "zh": "结构风险最小化在训练误差和模型容量之间取平衡。它说明最好的学习器不一定是最贴合训练数据的那个。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Complexity theory",
+        "zh": "计算复杂性理论"
+      },
+      {
+        "en": "Support vector machines",
+        "zh": "支持向量机"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Russia",
+        "zh": "俄罗斯"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "SIAM",
+        "title": {
+          "en": "On the Uniform Convergence of Relative Frequencies",
+          "zh": "《相对频率的一致收敛》"
+        },
+        "description": {
+          "en": "Official SIAM page for the English version of the 1971 Vapnik-Chervonenkis paper.",
+          "zh": "SIAM 官方页面，收录 瓦普尼克-切尔沃年基斯 1971 年论文的英文版本。"
+        },
+        "url": "https://epubs.siam.org/doi/10.1137/1116025",
+        "source": "https://epubs.siam.org/doi/10.1137/1116025",
+        "license": {
+          "en": "SIAM publication page; reuse requires checking SIAM rights.",
+          "zh": "SIAM 出版页面；复用需要核查 SIAM 权利条款。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open SIAM paper",
+          "zh": "打开 SIAM 论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Institute of Control Sciences, Moscow",
+      "zh": "莫斯科控制科学研究所"
+    },
+    "country": {
+      "en": "Moscow, Russia",
+      "zh": "俄罗斯，莫斯科"
+    },
+    "coordinates": [
+      55.7558,
+      37.6173
+    ]
   }
 }

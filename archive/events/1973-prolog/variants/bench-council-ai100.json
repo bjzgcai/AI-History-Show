@@ -115,5 +115,201 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alain Colmerauer",
+        "zh": "阿兰·科尔梅罗尔"
+      },
+      "role": {
+        "en": "Creator of the first Prolog implementation",
+        "zh": "早期 Prolog 实现创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Robert Kowalski",
+        "zh": "罗伯特·科瓦尔斯基"
+      },
+      "role": {
+        "en": "Logic programming theorist",
+        "zh": "逻辑程序设计理论贡献者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"logic programming\"",
+    "zh": "\"逻辑程序设计\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "The Birth of Prolog",
+      "zh": "Prolog 的诞生"
+    },
+    "workAuthors": {
+      "en": "Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+      "zh": "阿兰·科尔梅罗尔、菲利普·鲁塞尔, 《ACM SIGPLAN 通讯》, 1993"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1145/155360.155362"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Language / PROLOG",
+    "zh": "BenchCouncil AI100：语言 / PROLOG"
+  },
+  "quoteAttribution": {
+    "en": "<em>The Birth of Prolog</em>, Alain Colmerauer and Philippe Roussel, ACM SIGPLAN Notices, 1993",
+    "zh": "《Prolog 的诞生》, 阿兰·科尔梅罗尔、菲利普·鲁塞尔, 《ACM SIGPLAN 通讯》, 1993"
+  },
+  "achievement": {
+    "area": {
+      "en": "Language",
+      "zh": "语言"
+    },
+    "method": {
+      "en": "Unification plus backtracking over Horn clauses",
+      "zh": "Horn 子句上的合一与回溯"
+    },
+    "artifact": {
+      "en": "Logic programming language",
+      "zh": "逻辑程序设计语言"
+    },
+    "material": {
+      "en": "History paper and Prolog heritage archives",
+      "zh": "历史论文与 Prolog Heritage 档案"
+    },
+    "demo": {
+      "en": "Facts and rules answer a query",
+      "zh": "事实与规则回答查询"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Facts",
+          "zh": "事实"
+        },
+        "text": {
+          "en": "Base relations such as parent(alice,bob) define the world the program knows.",
+          "zh": "像 parent(alice,bob) 这样的基本关系定义程序已知世界。"
+        }
+      },
+      {
+        "label": {
+          "en": "Rules",
+          "zh": "规则"
+        },
+        "text": {
+          "en": "Rules describe how new relations follow from existing ones.",
+          "zh": "规则描述新关系如何从已有关系推出。"
+        }
+      },
+      {
+        "label": {
+          "en": "Backtracking",
+          "zh": "回溯"
+        },
+        "text": {
+          "en": "When one path fails, Prolog returns to a choice point and tries another proof.",
+          "zh": "当一条路径失败时，Prolog 回到选择点尝试另一条证明路径。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Resolution Method",
+        "zh": "归结方法"
+      },
+      {
+        "en": "LISP",
+        "zh": "LISP"
+      },
+      {
+        "en": "Expert systems",
+        "zh": "专家系统"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "France",
+        "zh": "法国"
+      },
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Facts",
+        "zh": "事实"
+      },
+      {
+        "en": "Rules",
+        "zh": "规则"
+      },
+      {
+        "en": "Backtracking",
+        "zh": "回溯"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "ACM SIGPLAN Notices",
+          "zh": "《ACM SIGPLAN 通讯》"
+        },
+        "title": {
+          "en": "The Birth of Prolog",
+          "zh": "Prolog 的诞生"
+        },
+        "description": {
+          "en": "Historical account of Prolog; local visuals redraw query resolution rather than copying figures.",
+          "zh": "Prolog 历史叙述；本地图重画查询求解过程，不复制原图。"
+        },
+        "url": "https://doi.org/10.1145/155360.155362",
+        "source": "https://doi.org/10.1145/155360.155362",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open ACM record",
+          "zh": "打开 ACM 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Aix-Marseille University and University of Edinburgh",
+      "zh": "艾克斯-马赛大学与爱丁堡大学"
+    },
+    "country": {
+      "en": "Marseille, France and Edinburgh, United Kingdom",
+      "zh": "法国马赛与英国爱丁堡"
+    },
+    "coordinates": [
+      43.3047,
+      5.3771
+    ]
   }
 }

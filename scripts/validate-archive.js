@@ -243,6 +243,31 @@ function validateQuizzes(eventDir, quizzes, sourceIds, assetIds) {
     return toIdSet(quizzes);
 }
 
+function validateVariantPapers(filePath, papers) {
+    if (papers === undefined) return;
+    if (!Array.isArray(papers)) {
+        addError(filePath, 'variant papers must be an array.');
+        return;
+    }
+
+    papers.forEach((paper, index) => {
+        const label = `papers[${index}]`;
+        if (!isObject(paper)) {
+            addError(filePath, `${label} must be an object.`);
+            return;
+        }
+        checkLocalized(filePath, paper.title, `${label}.title`);
+        checkLocalized(filePath, paper.authors, `${label}.authors`);
+        checkLocalized(filePath, paper.journal, `${label}.journal`);
+        if (!hasText(String(paper.year || ''))) addError(filePath, `${label}.year is required.`);
+        if (!hasText(paper.url)) {
+            addError(filePath, `${label}.url is required.`);
+        } else if (!/^https?:\/\//i.test(paper.url) && !fs.existsSync(resolveAssetPath(paper.url))) {
+            addError(filePath, `${label}.url does not exist: ${paper.url}`);
+        }
+    });
+}
+
 function validateVariant(eventDir, eventId, filePath, sourceIds, assetIds, claimIds, quizIds) {
     const variant = readJson(filePath);
     if (!variant) return null;
@@ -268,6 +293,7 @@ function validateVariant(eventDir, eventId, filePath, sourceIds, assetIds, claim
     if (variant.quizId && !quizIds.has(variant.quizId)) {
         addError(filePath, `variant references missing quizId: ${variant.quizId}`);
     }
+    validateVariantPapers(filePath, variant.papers);
 
     if (Array.isArray(variant.commentarySections)) {
         variant.commentarySections.forEach((section, index) => {

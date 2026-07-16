@@ -35,5 +35,260 @@
   "displayDescription": {
     "en": "<p>In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems.</p>",
     "zh": "<p>2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>"
+  },
+  "category": {
+    "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+    "zh": "深度学习与范式归一（2010年代至2020年代）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ashish Vaswani",
+        "zh": "阿希什·瓦斯瓦尼"
+      },
+      "role": {
+        "en": "Transformer lead author",
+        "zh": "Transformer 主要作者"
+      },
+      "avatar": "resources/images/figures/ashish-vaswani.jpg",
+      "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Noam Shazeer",
+        "zh": "诺姆·沙泽尔"
+      },
+      "role": {
+        "en": "Transformer co-author",
+        "zh": "Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+        "url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+        "title": "2017Transformer：改变AI的2017年论文",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.\"",
+    "zh": "\"Transformer 用自注意力替代循环和卷积，形成了一种可扩展架构，并成为现代语言模型的基础。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Attention Is All You Need",
+      "zh": "注意力就是你所需要的一切"
+    },
+    "workAuthors": {
+      "en": "Ashish Vaswani et al., NeurIPS, 2017",
+      "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
+  },
+  "quotePage": {
+    "en": "NeurIPS 2017 paper: Attention Is All You Need",
+    "zh": "NeurIPS 2017 论文《注意力就是你所需要的一切》"
+  },
+  "quoteAttribution": {
+    "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al., NeurIPS, 2017",
+    "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Self-attention sequence architecture",
+      "zh": "自注意力序列架构"
+    },
+    "artifact": {
+      "en": "Transformer architecture",
+      "zh": "Transformer 架构"
+    },
+    "material": {
+      "en": "NeurIPS paper",
+      "zh": "NeurIPS 论文"
+    },
+    "demo": {
+      "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+      "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Self-attention",
+          "zh": "自注意力"
+        },
+        "text": {
+          "en": "Tokens exchange information through learned attention weights.",
+          "zh": "令牌通过学习到的注意力权重交换信息。"
+        }
+      },
+      {
+        "label": {
+          "en": "Parallel Training",
+          "zh": "并行训练"
+        },
+        "text": {
+          "en": "Sequence positions can be processed without recurrence.",
+          "zh": "序列位置无需循环即可处理。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Attention",
+        "zh": "注意力机制"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      },
+      {
+        "en": "GPT",
+        "zh": "GPT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Token embeddings",
+        "zh": "令牌嵌入"
+      },
+      {
+        "en": "Self-attention",
+        "zh": "自注意力"
+      },
+      {
+        "en": "Feed-forward stack",
+        "zh": "前馈堆栈"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NeurIPS paper",
+          "zh": "NeurIPS 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Attention Is All You Need",
+          "zh": "Attention Is All You Need"
+        },
+        "description": {
+          "en": "Open paper for the Transformer architecture.",
+          "zh": "Transformer 架构的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1706.03762",
+        "source": "https://arxiv.org/abs/1706.03762",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
+        "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。"
+      }
+    },
+    {
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+        "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research.",
+        "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。"
+      }
+    }
+  ],
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "Google Brain"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
   }
 }

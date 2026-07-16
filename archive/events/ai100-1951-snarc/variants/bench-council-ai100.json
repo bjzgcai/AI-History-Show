@@ -115,5 +115,210 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
+      },
+      "avatar": "resources/images/figures/marvin-minsky.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Dean Edmonds",
+        "zh": "迪恩·埃德蒙兹"
+      },
+      "role": {
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"stochastic neural analog reinforcement calculator\"",
+    "zh": "\"随机神经模拟强化计算器\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "SNARC historical records",
+      "zh": "SNARC 历史记录"
+    },
+    "workAuthors": {
+      "en": "Marvin Minsky and Dean Edmonds, 1951",
+      "zh": "马文·明斯基、迪恩·埃德蒙兹，1951"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://history-computer.com/snarc/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>SNARC historical records</em>, Marvin Minsky and Dean Edmonds, 1951",
+    "zh": "《SNARC 历史记录》, 马文·明斯基、迪恩·埃德蒙兹，1951"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Analog reinforcement machine",
+      "zh": "模拟强化学习机器"
+    },
+    "artifact": {
+      "en": "Early neural learning hardware",
+      "zh": "早期神经学习硬件"
+    },
+    "material": {
+      "en": "SNARC historical documentation",
+      "zh": "SNARC 历史资料"
+    },
+    "demo": {
+      "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
+      "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Analog Neurons",
+          "zh": "模拟神经元"
+        },
+        "text": {
+          "en": "Hardware circuits approximated neural behavior before digital deep learning.",
+          "zh": "在数字深度学习之前，硬件电路用来近似神经行为。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reinforcement",
+          "zh": "强化"
+        },
+        "text": {
+          "en": "Reward feedback adjusted the machine behavior over trials.",
+          "zh": "奖励反馈在多次试验中调整机器行为。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      {
+        "en": "Perceptron",
+        "zh": "感知机"
+      },
+      {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Maze state",
+        "zh": "迷宫状态"
+      },
+      {
+        "en": "Reward signal",
+        "zh": "奖励信号"
+      },
+      {
+        "en": "Adjusted path",
+        "zh": "调整后的路径"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "SNARC historical documentation",
+          "zh": "SNARC 历史资料"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A simulated rat receives reinforcement and changes path preferences through a maze.",
+          "zh": "模拟老鼠接收强化信号，并改变穿越迷宫的路径偏好。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "History Computer",
+          "zh": "History Computer"
+        },
+        "title": {
+          "en": "SNARC",
+          "zh": "SNARC"
+        },
+        "description": {
+          "en": "Historical article on the stochastic neural analog reinforcement calculator.",
+          "zh": "关于随机神经模拟强化计算机的历史文章。"
+        },
+        "url": "https://history-computer.com/snarc/",
+        "source": "https://history-computer.com/snarc/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Princeton University",
+      "zh": "普林斯顿大学"
+    },
+    "country": {
+      "en": "Princeton, United States",
+      "zh": "美国普林斯顿"
+    },
+    "coordinates": [
+      40.3431,
+      -74.6551
+    ]
   }
 }

@@ -158,7 +158,7 @@ function buildMilestonePreview(root, storyline, ref) {
     const summary = pickLocalized(variant.displaySummary, event.summary);
     const description = pickLocalized(variant.displayDescription, event.description || event.summary);
 
-    return {
+    const milestone = {
         id: legacyIdFor(storyline.id, event.id) || `archive-preview-${storyline.id}-${event.id}`,
         archiveEventId: event.id,
         archiveVariantId: ref.variant,
@@ -195,7 +195,7 @@ function buildMilestonePreview(root, storyline, ref) {
         },
         imageMeta,
         achievement: {
-            visual: variant.visual || '',
+            ...(variant.visual ? { visual: variant.visual } : {}),
             visualModules: variant.visualModules || [],
             sources: displaySources.map(sourceDisplay),
             sourceIds: displaySources.map((source) => source.id),
@@ -220,6 +220,8 @@ function buildMilestonePreview(root, storyline, ref) {
             presentationMode: variant.presentationMode || 'preserve-legacy'
         }
     };
+
+    return applyVariantPresentation(milestone, variant);
 }
 
 function loadStorylines(root) {
@@ -230,6 +232,39 @@ function loadStorylines(root) {
         .filter((file) => file.endsWith('.json'))
         .sort()
         .map((file) => readJson(path.join(storylinesDir, file)));
+}
+
+function applyVariantPresentation(milestone, variant) {
+    const directFields = [
+        'category',
+        'location',
+        'figures',
+        'papers',
+        'photos',
+        'videoUrl',
+        'quote',
+        'quoteText',
+        'quoteHtml',
+        'quoteMeta',
+        'quotePage',
+        'quoteAttribution',
+        'quoteLabel'
+    ];
+    for (const field of directFields) {
+        if (variant[field] !== undefined) milestone[field] = cloneForReview(variant[field]);
+    }
+
+    if (variant.resources && Array.isArray(variant.resources.videos)) {
+        milestone.resources.videos = cloneForReview(variant.resources.videos);
+    }
+    if (variant.achievement && typeof variant.achievement === 'object' && !Array.isArray(variant.achievement)) {
+        milestone.achievement = {
+            ...milestone.achievement,
+            ...cloneForReview(variant.achievement)
+        };
+    }
+
+    return milestone;
 }
 
 function buildArchivePreview(root) {
@@ -307,6 +342,7 @@ function applyArchivePresentation(target, preview) {
     target.title = mergeLocalizedPatch(target.title, preview.title);
     target.subtitle = mergeLocalizedPatch(target.subtitle, preview.subtitle);
     target.description = mergeLocalizedPatch(target.description, preview.description);
+    if (Array.isArray(preview.papers)) target.papers = cloneForReview(preview.papers);
 
     target.resources = target.resources || {};
     target.resources.images = preview.resources.images;
@@ -315,6 +351,9 @@ function applyArchivePresentation(target, preview) {
     target.achievement.sources = preview.achievement.sources;
     target.achievement.sourceIds = preview.achievement.sourceIds;
     if (preview.achievement.visual) target.achievement.visual = preview.achievement.visual;
+    if (Array.isArray(preview.achievement.visualModules) && preview.achievement.visualModules.length > 0) {
+        target.achievement.visualModules = preview.achievement.visualModules;
+    }
 
     if (preview.commentarySections.length > 0) target.commentarySections = preview.commentarySections;
     if (preview.analysis) target.analysis = preview.analysis;

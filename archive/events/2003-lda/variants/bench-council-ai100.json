@@ -115,5 +115,201 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Blei",
+        "zh": "戴维·布莱"
+      },
+      "role": {
+        "en": "First author of LDA",
+        "zh": "LDA 第一作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Michael Jordan",
+        "zh": "迈克尔·乔丹"
+      },
+      "role": {
+        "en": "Co-author and probabilistic ML researcher",
+        "zh": "共同作者，概率机器学习研究者"
+      },
+      "avatar": "resources/images/figures/michael-i-jordan.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"latent Dirichlet allocation\"",
+    "zh": "\"潜在狄利克雷分配\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Latent Dirichlet Allocation",
+      "zh": "潜在狄利克雷分配"
+    },
+    "workAuthors": {
+      "en": "David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+      "zh": "戴维·M·布莱, 吴恩达、迈克尔·I·乔丹, 《机器学习研究杂志》, 2003"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://jmlr.org/papers/v3/blei03a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Probabilistic graphical model / LDA",
+    "zh": "BenchCouncil AI100：概率图模型 / LDA"
+  },
+  "quoteAttribution": {
+    "en": "<em>Latent Dirichlet Allocation</em>, David M. Blei, Andrew Y. Ng, Michael I. Jordan, Journal of Machine Learning Research, 2003",
+    "zh": "《潜在狄利克雷分配》, 戴维·M·布莱, 吴恩达、迈克尔·I·乔丹, 《机器学习研究杂志》, 2003"
+  },
+  "achievement": {
+    "area": {
+      "en": "Probabilistic graphical model",
+      "zh": "概率图模型"
+    },
+    "method": {
+      "en": "Bayesian topic model with Dirichlet priors",
+      "zh": "带 Dirichlet 先验的贝叶斯主题模型"
+    },
+    "artifact": {
+      "en": "LDA topic model",
+      "zh": "LDA 主题模型"
+    },
+    "material": {
+      "en": "JMLR paper, author page, and implementation docs",
+      "zh": "《机器学习研究杂志》 论文、作者主页与实现文档"
+    },
+    "demo": {
+      "en": "Documents mix topics; topics emit words",
+      "zh": "文档混合主题；主题生成词"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Topic Mixture",
+          "zh": "主题混合"
+        },
+        "text": {
+          "en": "A document can combine several themes instead of belonging to one class.",
+          "zh": "一篇文档可以组合多个主题，而不是只属于一个类别。"
+        }
+      },
+      {
+        "label": {
+          "en": "Word Distribution",
+          "zh": "词分布"
+        },
+        "text": {
+          "en": "Each topic is represented as probabilities over words.",
+          "zh": "每个主题表示为词上的概率分布。"
+        }
+      },
+      {
+        "label": {
+          "en": "Variational Inference",
+          "zh": "变分推断"
+        },
+        "text": {
+          "en": "Approximate inference estimates hidden topic assignments from observed words.",
+          "zh": "近似推断从可见词估计隐藏主题分配。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Bayesian network",
+        "zh": "贝叶斯网络"
+      },
+      {
+        "en": "Neural language models",
+        "zh": "神经语言模型"
+      },
+      {
+        "en": "Topic modeling",
+        "zh": "主题模型"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Text mining",
+        "zh": "文本挖掘"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Topic Mixture",
+        "zh": "主题混合"
+      },
+      {
+        "en": "Word Distribution",
+        "zh": "词分布"
+      },
+      {
+        "en": "Variational Inference",
+        "zh": "变分推断"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "JMLR",
+          "zh": "《机器学习研究杂志》"
+        },
+        "title": {
+          "en": "LDA paper",
+          "zh": "LDA 论文"
+        },
+        "description": {
+          "en": "Primary JMLR source for LDA; local images redraw topic mixtures and plate notation.",
+          "zh": "LDA 的 《机器学习研究杂志》 原始来源；本地图重画主题混合和 plate notation。"
+        },
+        "url": "https://jmlr.org/papers/v3/blei03a.html",
+        "source": "https://jmlr.org/papers/v3/blei03a.html",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open JMLR paper",
+          "zh": "打开 《机器学习研究杂志》 论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley / Stanford University",
+      "zh": "加州大学伯克利分校 / 斯坦福大学"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      37.8715,
+      -122.273
+    ]
   }
 }

@@ -79,5 +79,170 @@
       "zh": "由 legacy AI100 数据批量生成的 variant。",
       "en": "Variant generated from legacy AI100 data in a batch migration."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alan Turing",
+        "zh": "艾伦·图灵"
+      },
+      "role": {
+        "en": "Proposed the imitation game",
+        "zh": "提出模仿游戏"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"I propose to consider the question, 'Can machines think?'\"",
+    "zh": "\"我建议考虑这样一个问题：机器能思考吗？\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Computing Machinery and Intelligence",
+      "zh": "计算机器与智能"
+    },
+    "workAuthors": {
+      "en": "Alan M. Turing, Mind, 1950",
+      "zh": "艾伦·M·图灵, 《心灵》, 1950"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Theory / Turing test",
+    "zh": "BenchCouncil AI100：理论 / 图灵测试"
+  },
+  "quoteAttribution": {
+    "en": "<em>Computing Machinery and Intelligence</em>, Alan M. Turing, Mind, 1950",
+    "zh": "《计算机器与智能》, 艾伦·M·图灵, 《心灵》, 1950"
+  },
+  "achievement": {
+    "area": {
+      "en": "Theory",
+      "zh": "理论"
+    },
+    "method": {
+      "en": "Behavioral evaluation",
+      "zh": "行为评估"
+    },
+    "artifact": {
+      "en": "Imitation game protocol",
+      "zh": "模仿游戏协议"
+    },
+    "material": {
+      "en": "Paper + archive",
+      "zh": "论文 + 档案"
+    },
+    "demo": {
+      "en": "Blind transcript vote",
+      "zh": "匿名对话投票"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Imitation Game",
+          "zh": "模仿游戏"
+        },
+        "text": {
+          "en": "Turing's setup hides identity and asks a judge to compare typed answers from a human and a machine. It turns intelligence into an observable interaction rather than an internal claim.",
+          "zh": "图灵的设置遮蔽身份，让裁判比较人和机器的文字回答。它把智能变成可观察的互动，而不是关于内部状态的主张。"
+        }
+      },
+      {
+        "label": {
+          "en": "Behavioral Evaluation",
+          "zh": "行为评估"
+        },
+        "text": {
+          "en": "The test judges performance through conversation under a controlled interface. The protocol, not the machine's construction, becomes the evidence.",
+          "zh": "测试在受控界面中通过对话判断表现。成为证据的是评估协议，而不是机器由什么构成。"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Blind channel",
+        "zh": "盲测通道"
+      },
+      {
+        "en": "Human judgment",
+        "zh": "人类判断"
+      },
+      {
+        "en": "Evaluation debate",
+        "zh": "评估争议"
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "ELIZA",
+        "zh": "ELIZA"
+      },
+      {
+        "en": "IBM Watson",
+        "zh": "IBM Watson"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Internet Archive",
+          "zh": "互联网档案馆"
+        },
+        "title": {
+          "en": "Computing Machinery and Intelligence archive preview",
+          "zh": "《计算机器与智能》档案预览"
+        },
+        "description": {
+          "en": "Digitized access page for Turing's 1950 Mind paper, showing the title, author, publication date and download options.",
+          "zh": "图灵 1950 年 Mind 论文的数字化访问页，展示题名、作者、出版日期和下载入口。"
+        },
+        "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+        "source": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+        "license": {
+          "en": "Rights unclear; Internet Archive provides digital access, but the page does not state a clear commercial license.",
+          "zh": "权利状态不明确；互联网档案馆提供数字访问，但页面未说明清晰的商业复用许可。"
+        },
+        "usage": {
+          "en": "Source material image / Archival reference",
+          "zh": "原始材料入口 / 档案参考"
+        },
+        "action": {
+          "en": "Open archive preview",
+          "zh": "打开档案预览"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Manchester",
+      "zh": "曼彻斯特大学"
+    },
+    "country": {
+      "en": "Manchester, United Kingdom",
+      "zh": "英国，曼彻斯特"
+    },
+    "coordinates": [
+      53.4668,
+      -2.2339
+    ]
   }
 }

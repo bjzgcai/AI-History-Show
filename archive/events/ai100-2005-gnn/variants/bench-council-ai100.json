@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Franco Scarselli",
+        "zh": "弗兰科·斯卡塞利"
+      },
+      "role": {
+        "en": "Graph neural network co-author",
+        "zh": "图神经网络共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"A new model for learning in graph domains\"",
+    "zh": "\"一种用于图领域学习的新模型\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "The Graph Neural Network Model",
+      "zh": "图神经网络模型"
+    },
+    "workAuthors": {
+      "en": "Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
+      "zh": "弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1109/TNN.2008.2005605"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>The Graph Neural Network Model</em>, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
+    "zh": "《图神经网络模型》, 弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
+  },
+  "achievement": {
+    "area": {
+      "en": "Graph learning",
+      "zh": "图学习"
+    },
+    "method": {
+      "en": "Iterative message passing on graphs",
+      "zh": "图上的迭代消息传递"
+    },
+    "artifact": {
+      "en": "Graph neural network model",
+      "zh": "图神经网络模型"
+    },
+    "material": {
+      "en": "IEEE Transactions paper",
+      "zh": "IEEE Transactions 论文"
+    },
+    "demo": {
+      "en": "Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round.",
+      "zh": "每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Message Passing",
+          "zh": "消息传递"
+        },
+        "text": {
+          "en": "Neighbors exchange learned information.",
+          "zh": "邻居交换学习得到的信息。"
+        }
+      },
+      {
+        "label": {
+          "en": "Graph State",
+          "zh": "图状态"
+        },
+        "text": {
+          "en": "Node states summarize local structure.",
+          "zh": "节点状态概括局部结构。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GCN",
+          "zh": "GCN"
+        },
+        "zh": {
+          "en": "GCN",
+          "zh": "GCN"
+        }
+      },
+      {
+        "en": {
+          "en": "GAT",
+          "zh": "GAT"
+        },
+        "zh": {
+          "en": "GAT",
+          "zh": "GAT"
+        }
+      },
+      {
+        "en": {
+          "en": "Spectral clustering",
+          "zh": "谱聚类"
+        },
+        "zh": {
+          "en": "Spectral clustering",
+          "zh": "谱聚类"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "Italy",
+          "zh": "意大利"
+        },
+        "zh": {
+          "en": "Italy",
+          "zh": "意大利"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Node features",
+          "zh": "节点特征"
+        },
+        "zh": {
+          "en": "Node features",
+          "zh": "节点特征"
+        }
+      },
+      {
+        "en": {
+          "en": "Neighbor messages",
+          "zh": "邻居消息"
+        },
+        "zh": {
+          "en": "Neighbor messages",
+          "zh": "邻居消息"
+        }
+      },
+      {
+        "en": {
+          "en": "Updated states",
+          "zh": "更新状态"
+        },
+        "zh": {
+          "en": "Updated states",
+          "zh": "更新状态"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "IEEE Transactions paper",
+          "zh": "IEEE Transactions 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round.",
+          "zh": "每个节点从邻居收集消息，更新自己的隐藏状态，并在下一轮分享新状态。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "IEEE Xplore",
+          "zh": "IEEE Xplore"
+        },
+        "title": {
+          "en": "The Graph Neural Network Model",
+          "zh": "图神经网络模型"
+        },
+        "description": {
+          "en": "IEEE Xplore source card for Graph Neural Network.",
+          "zh": "IEEE Xplore 的图神经网络资料卡片。"
+        },
+        "url": "https://doi.org/10.1109/TNN.2008.2005605",
+        "source": "https://doi.org/10.1109/TNN.2008.2005605",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI page",
+          "zh": "打开 DOI 页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Siena",
+      "zh": "University of Siena"
+    },
+    "country": {
+      "en": "Siena, Italy",
+      "zh": "Siena, Italy"
+    },
+    "coordinates": [
+      43.3188,
+      11.3308
+    ]
   }
 }

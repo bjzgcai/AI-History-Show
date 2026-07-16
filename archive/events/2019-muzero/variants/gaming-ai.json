@@ -1,154 +1,438 @@
 {
-  "storylineId": "gaming-ai",
-  "eventId": "2019-muzero",
-  "presentationMode": "preserve-legacy",
-  "displayTitle": {
-    "zh": "MuZero",
-    "en": "MuZero"
-  },
-  "displaySummary": {
-    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-    "en": "Game AI as a Testbed for Search, Learning and Planning"
-  },
-  "displayDescription": {
-    "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>",
-    "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>"
-  },
-  "emphasis": [
-    "batch-migration",
-    "source-review-needed"
-  ],
-  "visual": "configuredPaper",
-  "visualModules": [
-    {
-      "type": "archiveLink",
-      "site": {
-        "en": "Nature",
-        "zh": "Nature"
-      },
-      "title": {
-        "en": "MuZero paper",
-        "zh": "MuZero 论文"
-      },
-      "description": {
-        "en": "Nature article describing planning with a learned model.",
-        "zh": "描述用学习模型进行规划的 Nature 论文。"
-      },
-      "url": "https://www.nature.com/articles/s41586-020-03051-4",
-      "source": "https://www.nature.com/articles/s41586-020-03051-4",
-      "action": {
-        "en": "Open source page",
-        "zh": "打开资料页面"
-      },
-      "license": {
-        "en": "Reference link only; local exhibition graphics are original redraws.",
-        "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
-      },
-      "usage": {
-        "en": "Source card for the gaming AI branch",
-        "zh": "AI 棋牌分支的资料卡片"
-      }
+    "storylineId": "gaming-ai",
+    "eventId": "2019-muzero",
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+        "zh": "MuZero",
+        "en": "MuZero"
     },
-    {
-      "type": "gameEvolutionVideo",
-      "site": {
-        "en": "Game evolution clip",
-        "zh": "棋局演化短片"
-      },
-      "title": {
-        "en": "MuZero game evolution",
-        "zh": "MuZero 棋局演化"
-      },
-      "description": {
-        "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-        "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-      },
-      "url": "resources/videos/game-evolution/2019-muzero.mp4",
-      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-      "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-      "sourceSgf": "examples/sgf/sample-go-game.sgf",
-      "generator": "scripts/sgf_to_video.py",
-      "duration": {
-        "en": "about 1 min",
-        "zh": "约 1 分钟"
-      },
-      "fps": "30",
-      "license": {
-        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-      },
-      "usage": {
-        "en": "Playable game-state evolution module",
-        "zh": "可播放的棋局状态演化模块"
-      },
-      "action": {
-        "en": "Play evolution clip",
-        "zh": "播放演化短片"
-      }
-    }
-  ],
-  "assetIds": [
-    "asset-2019-muzero-learned-model"
-  ],
-  "sourceIds": [
-    "source-nature-paper",
-    "source-arxiv-preprint",
-    "source-deepmind-muzero-blog"
-  ],
-  "claimIds": [
-    "claim-legacy-achievement-summary",
-    "claim-legacy-description"
-  ],
-  "quizId": "2019-muzero-quiz-1",
-  "commentarySections": [
-    {
-      "id": "historical-background",
-      "label": {
-        "zh": "历史背景",
-        "en": "Historical Background"
-      },
-      "html": {
-        "zh": "AlphaZero 依赖已知规则搜索，而许多强化学习智能体从像素学习但缺少显式前瞻。MuZero 通过学习一个对规划有用的模型，把这两个世界连接起来，即使没有提供精确规则也能工作。",
-        "en": "AlphaZero searched using known rules, while many reinforcement-learning agents learned from pixels without explicit lookahead. MuZero connected these two worlds by learning a model that was useful for planning even when the exact rules were not supplied."
-      },
-      "sourceIds": [
-        "source-nature-paper"
-      ]
+    "displaySummary": {
+        "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+        "en": "Game AI as a Testbed for Search, Learning and Planning"
     },
-    {
-      "id": "core-idea",
-      "label": {
-        "zh": "核心思想",
-        "en": "Core Idea"
-      },
-      "html": {
-        "zh": "MuZero 不预测每个未来观测，而是学习面向奖励、价值、策略和搜索的潜在动力学模型。这个模型按是否帮助决策来评价，而不是按是否重建完整世界来评价。",
-        "en": "Instead of predicting every future observation, MuZero learns a latent dynamics model for rewards, values, policies, and search. The model is judged by whether it helps decisions, not by whether it reconstructs the full world."
-      },
-      "sourceIds": [
-        "source-nature-paper"
-      ]
+    "displayDescription": {
+        "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>",
+        "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>"
     },
-    {
-      "id": "long-term-legacy",
-      "label": {
-        "zh": "长期影响",
-        "en": "Long-Term Legacy"
-      },
-      "html": {
-        "zh": "专家通常把 MuZero 视为学习模型规划的标志性成果。它的长期影响在于说明：基于模型的强化学习可以结合 AlphaZero 式搜索和经验驱动模型学习的优势。",
-        "en": "Experts generally treat MuZero as a landmark in learned-model planning. Its legacy is showing that model-based reinforcement learning can combine the strengths of AlphaZero-style search with experience-driven model learning."
-      },
-      "sourceIds": [
-        "source-nature-paper"
-      ]
-    }
-  ],
-  "review": {
-    "status": "draft",
-    "notes": {
-      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
-      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
-    }
-  }
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "configuredPaper",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Nature",
+                "zh": "Nature"
+            },
+            "title": {
+                "en": "MuZero paper",
+                "zh": "MuZero 论文"
+            },
+            "description": {
+                "en": "Nature article describing planning with a learned model.",
+                "zh": "描述用学习模型进行规划的 Nature 论文。"
+            },
+            "url": "https://www.nature.com/articles/s41586-020-03051-4",
+            "source": "https://www.nature.com/articles/s41586-020-03051-4",
+            "action": {
+                "en": "Open source page",
+                "zh": "打开资料页面"
+            },
+            "license": {
+                "en": "Reference link only; local exhibition graphics are original redraws.",
+                "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+            },
+            "usage": {
+                "en": "Source card for the gaming AI branch",
+                "zh": "AI 棋牌分支的资料卡片"
+            }
+        },
+        {
+            "type": "gameEvolutionVideo",
+            "site": {
+                "en": "Game evolution clip",
+                "zh": "棋局演化短片"
+            },
+            "title": {
+                "en": "MuZero game evolution",
+                "zh": "MuZero 棋局演化"
+            },
+            "description": {
+                "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
+                "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
+            },
+            "url": "resources/videos/game-evolution/sample-go-game.gif",
+            "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+            "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
+            "sourceSgf": "examples/sgf/sample-go-game.sgf",
+            "generator": "scripts/sgf_to_video.py",
+            "duration": {
+                "en": "about 1 min",
+                "zh": "约 1 分钟"
+            },
+            "fps": "30",
+            "license": {
+                "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+                "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+            },
+            "usage": {
+                "en": "Playable game-state evolution module",
+                "zh": "可播放的棋局状态演化模块"
+            },
+            "action": {
+                "en": "Play evolution clip",
+                "zh": "播放演化短片"
+            }
+        }
+    ],
+    "assetIds": ["asset-2019-muzero-learned-model"],
+    "sourceIds": ["source-nature-paper", "source-arxiv-preprint", "source-deepmind-muzero-blog"],
+    "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+    "quizId": "2019-muzero-quiz-1",
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "AlphaZero 依赖已知规则搜索，而许多强化学习智能体从像素学习但缺少显式前瞻。MuZero 通过学习一个对规划有用的模型，把这两个世界连接起来，即使没有提供精确规则也能工作。",
+                "en": "AlphaZero searched using known rules, while many reinforcement-learning agents learned from pixels without explicit lookahead. MuZero connected these two worlds by learning a model that was useful for planning even when the exact rules were not supplied."
+            },
+            "sourceIds": ["source-nature-paper"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "MuZero 不预测每个未来观测，而是学习面向奖励、价值、策略和搜索的潜在动力学模型。这个模型按是否帮助决策来评价，而不是按是否重建完整世界来评价。",
+                "en": "Instead of predicting every future observation, MuZero learns a latent dynamics model for rewards, values, policies, and search. The model is judged by whether it helps decisions, not by whether it reconstructs the full world."
+            },
+            "sourceIds": ["source-nature-paper"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 MuZero 视为学习模型规划的标志性成果。它的长期影响在于说明：基于模型的强化学习可以结合 AlphaZero 式搜索和经验驱动模型学习的优势。",
+                "en": "Experts generally treat MuZero as a landmark in learned-model planning. Its legacy is showing that model-based reinforcement learning can combine the strengths of AlphaZero-style search with experience-driven model learning."
+            },
+            "sourceIds": ["source-nature-paper"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "category": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "figures": [
+        {
+            "name": {
+                "en": "Julian Schrittwieser",
+                "zh": "朱利安·施里特维泽"
+            },
+            "role": {
+                "en": "MuZero first author",
+                "zh": "MuZero 第一作者"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "David Silver",
+                "zh": "大卫·席尔瓦"
+            },
+            "role": {
+                "en": "DeepMind reinforcement learning lead",
+                "zh": "DeepMind 强化学习负责人"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+        "en": "\"planning with a learned model\"",
+        "zh": "\"用学习到的模型进行规划\""
+    },
+    "quoteMeta": {
+        "speaker": "",
+        "workTitle": {
+            "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+            "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+        },
+        "workAuthors": {
+            "en": "Julian Schrittwieser et al., Nature, 2020",
+            "zh": "Julian Schrittwieser 等，Nature，2020"
+        },
+        "sourceLabel": "",
+        "sourceUrl": "https://www.nature.com/articles/s41586-020-03051-4"
+    },
+    "quotePage": {
+        "en": "Gaming AI branch: MuZero",
+        "zh": "AI 棋牌分支：MuZero"
+    },
+    "quoteAttribution": {
+        "en": "<em>Mastering Atari, Go, chess and shogi by planning with a learned model</em>, Julian Schrittwieser et al., Nature, 2020",
+        "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》, Julian Schrittwieser 等，Nature，2020"
+    },
+    "quoteLabel": {
+        "en": "Paper cue",
+        "zh": "论文线索"
+    },
+    "achievement": {
+        "area": {
+            "en": "Learned-model planning",
+            "zh": "学习模型的规划"
+        },
+        "method": {
+            "en": "Latent dynamics, policy-value prediction, and tree search",
+            "zh": "潜在动力学、策略-价值预测与树搜索"
+        },
+        "artifact": {
+            "en": "Planning agent for board games and Atari",
+            "zh": "面向棋类游戏与 Atari 的规划智能体"
+        },
+        "material": {
+            "en": "Nature paper, arXiv preprint, and DeepMind blog",
+            "zh": "Nature 论文、arXiv 预印本与 DeepMind 博客"
+        },
+        "demo": {
+            "en": "See how a compact latent model replaces handcrafted game dynamics inside search.",
+            "zh": "观察紧凑潜在模型如何在搜索中替代手工游戏动力学。"
+        },
+        "keyConcepts": [
+            {
+                "label": {
+                    "en": "Latent dynamics",
+                    "zh": "潜在动力学"
+                },
+                "text": {
+                    "en": "The model predicts internal states rather than full observations.",
+                    "zh": "模型预测内部状态，而不是完整观测。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Reward prediction",
+                    "zh": "奖励预测"
+                },
+                "text": {
+                    "en": "Search uses learned reward estimates at imagined steps.",
+                    "zh": "搜索在想象步骤中使用学习到的奖励估计。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Policy-value search",
+                    "zh": "策略-价值搜索"
+                },
+                "text": {
+                    "en": "Planning still uses policy and value guidance.",
+                    "zh": "规划仍然使用策略和价值引导。"
+                }
+            }
+        ],
+        "relatedAchievements": [
+            {
+                "en": "AlphaZero",
+                "zh": "AlphaZero"
+            },
+            {
+                "en": "DQN",
+                "zh": "DQN"
+            },
+            {
+                "en": "Model-based reinforcement learning",
+                "zh": "基于模型的强化学习"
+            }
+        ],
+        "relatedRegions": [
+            {
+                "en": "United Kingdom",
+                "zh": "英国"
+            }
+        ],
+        "demoSteps": [
+            {
+                "en": "Encode observation",
+                "zh": "编码观测"
+            },
+            {
+                "en": "Roll latent model",
+                "zh": "推进潜在模型"
+            },
+            {
+                "en": "Search for action",
+                "zh": "搜索行动"
+            }
+        ],
+        "demoImage": "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg",
+        "demoPanel": "sources",
+        "demoNotes": [
+            {
+                "label": {
+                    "en": "model cue",
+                    "zh": "模型线索"
+                },
+                "text": {
+                    "en": "The model predicts only what search needs: reward, value, and policy.",
+                    "zh": "模型只预测搜索需要的内容：奖励、价值和策略。"
+                }
+            },
+            {
+                "label": {
+                    "en": "interaction point",
+                    "zh": "互动点"
+                },
+                "text": {
+                    "en": "Toggle between known rules and learned dynamics to see how MuZero keeps planning without a handcrafted simulator.",
+                    "zh": "切换已知规则和学习动力学，观察 MuZero 如何在没有手工模拟器时继续规划。"
+                }
+            }
+        ],
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Nature",
+                    "zh": "Nature"
+                },
+                "title": {
+                    "en": "MuZero paper",
+                    "zh": "MuZero 论文"
+                },
+                "description": {
+                    "en": "Nature article describing planning with a learned model.",
+                    "zh": "描述用学习模型进行规划的 Nature 论文。"
+                },
+                "url": "https://www.nature.com/articles/s41586-020-03051-4",
+                "source": "https://www.nature.com/articles/s41586-020-03051-4",
+                "action": {
+                    "en": "Open source page",
+                    "zh": "打开资料页面"
+                },
+                "license": {
+                    "en": "Reference link only; local exhibition graphics are original redraws.",
+                    "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+                },
+                "usage": {
+                    "en": "Source card for the gaming AI branch",
+                    "zh": "AI 棋牌分支的资料卡片"
+                }
+            },
+            {
+                "type": "gameEvolutionVideo",
+                "site": {
+                    "en": "Game evolution clip",
+                    "zh": "棋局演化短片"
+                },
+                "title": {
+                    "en": "MuZero game evolution",
+                    "zh": "MuZero 棋局演化"
+                },
+                "description": {
+                    "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
+                    "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
+                },
+                "url": "resources/videos/game-evolution/sample-go-game.gif",
+                "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+                "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
+                "sourceSgf": "examples/sgf/sample-go-game.sgf",
+                "generator": "scripts/sgf_to_video.py",
+                "duration": {
+                    "en": "about 1 min",
+                    "zh": "约 1 分钟"
+                },
+                "fps": "30",
+                "license": {
+                    "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+                    "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+                },
+                "usage": {
+                    "en": "Playable game-state evolution module",
+                    "zh": "可播放的棋局状态演化模块"
+                },
+                "action": {
+                    "en": "Play evolution clip",
+                    "zh": "播放演化短片"
+                }
+            }
+        ]
+    },
+    "analysis": {
+        "what": {
+            "en": "MuZero extended AlphaZero-style planning by learning its own compact model instead of receiving exact environment dynamics.",
+            "zh": "MuZero 通过学习自己的紧凑模型扩展了 AlphaZero 式规划，而不是直接获得精确环境动力学。"
+        },
+        "how": {
+            "en": "It learned latent dynamics, reward, policy, and value predictions, then used those predictions inside tree search.",
+            "zh": "它学习潜在动力学、奖励、策略和价值预测，并把这些预测放入树搜索。"
+        },
+        "why": {
+            "en": "It worked because search did not need a perfect simulator of every future observation; it only needed a model useful for rewards and values.",
+            "zh": "它成功在于搜索不需要完美模拟每个未来观测，只需要一个对奖励和价值有用的模型。"
+        }
+    },
+    "location": {
+        "name": {
+            "en": "DeepMind",
+            "zh": "DeepMind"
+        },
+        "country": {
+            "en": "London, United Kingdom",
+            "zh": "英国伦敦"
+        },
+        "coordinates": [51.523, -0.128]
+    },
+    "papers": [
+        {
+            "title": {
+                "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+                "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+            },
+            "authors": {
+                "en": "Julian Schrittwieser et al.",
+                "zh": "Julian Schrittwieser 等"
+            },
+            "journal": {
+                "en": "Nature",
+                "zh": "Nature"
+            },
+            "year": "2020",
+            "url": "https://www.nature.com/articles/s41586-020-03051-4"
+        },
+        {
+            "title": {
+                "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+                "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+            },
+            "authors": {
+                "en": "Julian Schrittwieser et al.",
+                "zh": "Julian Schrittwieser 等"
+            },
+            "journal": {
+                "en": "arXiv",
+                "zh": "arXiv"
+            },
+            "year": "2019",
+            "url": "resources/papers/2019-muzero-learned-model.pdf"
+        }
+    ]
 }

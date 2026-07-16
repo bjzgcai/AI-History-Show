@@ -115,5 +115,214 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
+      "role": {
+        "en": "Early neural vision researcher",
+        "zh": "早期神经视觉研究者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Co-author of later deep rectifier analysis",
+        "zh": "后续深度整流函数分析共同作者"
+      },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"rectified linear units\"",
+    "zh": "\"整流线性单元\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Deep Sparse Rectifier Neural Networks",
+      "zh": "深度稀疏整流神经网络"
+    },
+    "workAuthors": {
+      "en": "Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+      "zh": "泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://proceedings.mlr.press/v15/glorot11a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Deep Sparse Rectifier Neural Networks</em>, Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011",
+    "zh": "《深度稀疏整流神经网络》, 泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Piecewise-linear activation",
+      "zh": "分段线性激活"
+    },
+    "artifact": {
+      "en": "Rectified activation function",
+      "zh": "整流激活函数"
+    },
+    "material": {
+      "en": "Neural vision and deep rectifier literature",
+      "zh": "神经视觉与深度整流函数文献"
+    },
+    "demo": {
+      "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+      "zh": "负响应被截断为零，正响应则线性通过。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Non-saturation",
+          "zh": "非饱和"
+        },
+        "text": {
+          "en": "Positive activations keep gradients from shrinking as quickly.",
+          "zh": "正激活让梯度不那么容易快速缩小。"
+        }
+      },
+      {
+        "label": {
+          "en": "Sparse Activity",
+          "zh": "稀疏活动"
+        },
+        "text": {
+          "en": "Many neurons output exactly zero, simplifying representation.",
+          "zh": "许多神经元输出正好为零，从而简化表示。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Neocognitron",
+        "zh": "新认知机"
+      },
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Japan",
+        "zh": "日本"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Input",
+        "zh": "输入"
+      },
+      {
+        "en": "max(0, x)",
+        "zh": "max(0, x)"
+      },
+      {
+        "en": "Sparse activation",
+        "zh": "稀疏激活"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Neural vision and deep rectifier literature",
+          "zh": "神经视觉与深度整流函数文献"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Negative responses are clipped to zero while positive responses pass through linearly.",
+          "zh": "负响应被截断为零，正响应则线性通过。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Deep Sparse Rectifier Neural Networks",
+          "zh": "深度稀疏整流神经网络"
+        },
+        "description": {
+          "en": "Article connecting rectifiers to deep sparse neural networks.",
+          "zh": "将整流函数与深度稀疏神经网络联系起来的文章。"
+        },
+        "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+        "source": "https://proceedings.mlr.press/v15/glorot11a.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "NHK 广播科学研究实验室"
+    },
+    "country": {
+      "en": "Tokyo, Japan",
+      "zh": "日本东京"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
   }
 }

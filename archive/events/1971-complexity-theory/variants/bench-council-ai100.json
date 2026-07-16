@@ -78,5 +78,179 @@
       "zh": "由 legacy AI100 数据批量生成的 variant。",
       "en": "Variant generated from legacy AI100 data in a batch migration."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Stephen A. Cook",
+        "zh": "斯蒂芬·A·库克"
+      },
+      "role": {
+        "en": "Introduced NP-completeness",
+        "zh": "提出 NP 完全性"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Leonid Levin",
+        "zh": "列昂尼德·列文"
+      },
+      "role": {
+        "en": "Independently formulated related NP-completeness ideas",
+        "zh": "独立提出相关 NP 完全性思想"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"laid the foundations for the theory of NP-Completeness\"",
+    "zh": "\"奠定了 NP 完全性理论的基础\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Stephen A. Cook A.M. Turing Award citation",
+      "zh": "斯蒂芬·A·库克 ACM 图灵奖获奖说明"
+    },
+    "workAuthors": {
+      "en": "Association for Computing Machinery, 1982",
+      "zh": "美国计算机协会, 1982"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://awards.acm.org/award_winners/cook_N991950"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Theory / Complexity theory",
+    "zh": "BenchCouncil AI100：理论 / 计算复杂性理论"
+  },
+  "quoteAttribution": {
+    "en": "<em>Stephen A. Cook A.M. Turing Award citation</em>, Association for Computing Machinery, 1982",
+    "zh": "《斯蒂芬·A·库克 ACM 图灵奖获奖说明》, 美国计算机协会, 1982"
+  },
+  "achievement": {
+    "area": {
+      "en": "Theory",
+      "zh": "理论"
+    },
+    "method": {
+      "en": "Polynomial-time reductions",
+      "zh": "多项式时间归约"
+    },
+    "artifact": {
+      "en": "NP-completeness framework",
+      "zh": "NP 完全性框架"
+    },
+    "material": {
+      "en": "STOC paper + Clay problem",
+      "zh": "STOC 论文 + Clay 难题"
+    },
+    "demo": {
+      "en": "Reduction map",
+      "zh": "归约地图"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "P versus NP",
+          "zh": "P 与 NP"
+        },
+        "text": {
+          "en": "P contains problems that can be solved quickly, while NP contains problems whose proposed answers can be checked quickly. The open question is whether quick checking always implies quick solving.",
+          "zh": "P 包含可以快速求解的问题，NP 包含给出答案后可以快速验证的问题。核心未解问题是：快速验证是否总意味着也能快速求解。"
+        }
+      },
+      {
+        "label": {
+          "en": "NP-Completeness",
+          "zh": "NP 完全性"
+        },
+        "text": {
+          "en": "An NP-complete problem is among the hardest problems in NP. If one NP-complete problem can be solved efficiently, then every problem in NP can be solved efficiently.",
+          "zh": "NP 完全问题属于 NP 中最困难的一类。如果一个 NP 完全问题能被高效求解，那么 NP 中所有问题都能被高效求解。"
+        }
+      },
+      {
+        "label": {
+          "en": "Polynomial-Time Reduction",
+          "zh": "多项式时间归约"
+        },
+        "text": {
+          "en": "A reduction translates one problem into another efficiently. It lets researchers compare difficulty across very different-looking problems without solving them directly.",
+          "zh": "归约把一个问题高效转换成另一个问题。它让研究者无需直接求解，也能比较外表差异很大的问题之间的困难性。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Turing machines",
+        "zh": "图灵机"
+      },
+      {
+        "en": "SAT solving",
+        "zh": "SAT 求解"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "ACM Digital Library",
+          "zh": "ACM 数字图书馆"
+        },
+        "title": {
+          "en": "The Complexity of Theorem-Proving Procedures",
+          "zh": "《定理证明过程的复杂性》"
+        },
+        "description": {
+          "en": "Official ACM page for Cook's 1971 STOC paper introducing NP-completeness.",
+          "zh": "ACM 官方论文页，收录 库克 1971 年提出 NP 完全性的 STOC 论文。"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/800157.805047",
+        "source": "https://dl.acm.org/doi/10.1145/800157.805047",
+        "license": {
+          "en": "ACM article page; reuse rights are controlled by ACM.",
+          "zh": "ACM 文章页面；复用权利由 ACM 条款控制。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open ACM paper",
+          "zh": "打开 ACM 论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Toronto, Canada",
+      "zh": "加拿大，多伦多"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
   }
 }

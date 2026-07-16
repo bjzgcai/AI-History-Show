@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jeffrey Pennington",
+        "zh": "杰弗里·彭宁顿"
+      },
+      "role": {
+        "en": "GloVe lead author",
+        "zh": "GloVe 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Global vectors for word representation\"",
+    "zh": "\"用于词表示的全局向量\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "GloVe: Global Vectors for Word Representation",
+      "zh": "GloVe：用于词表示的全局向量"
+    },
+    "workAuthors": {
+      "en": "Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
+      "zh": "杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://aclanthology.org/D14-1162/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>GloVe: Global Vectors for Word Representation</em>, Jeffrey Pennington, Richard Socher, and Christopher Manning, EMNLP, 2014",
+    "zh": "《GloVe：用于词表示的全局向量》, 杰弗里·彭宁顿、理查德·索彻、克里斯托弗·曼宁，EMNLP，2014"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Global word-vector factorization",
+      "zh": "全局词向量分解"
+    },
+    "artifact": {
+      "en": "GloVe word embeddings",
+      "zh": "GloVe 词嵌入"
+    },
+    "material": {
+      "en": "EMNLP paper and Stanford project page",
+      "zh": "EMNLP 论文与斯坦福项目页面"
+    },
+    "demo": {
+      "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions.",
+      "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Co-occurrence",
+          "zh": "共现"
+        },
+        "text": {
+          "en": "Word counts preserve corpus-level association.",
+          "zh": "词共现计数保留语料级关联。"
+        }
+      },
+      {
+        "label": {
+          "en": "Vector Analogy",
+          "zh": "向量类比"
+        },
+        "text": {
+          "en": "Linear directions capture useful relations.",
+          "zh": "线性方向捕获有用关系。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Word2vec",
+          "zh": "Word2vec"
+        },
+        "zh": {
+          "en": "Word2vec",
+          "zh": "Word2vec"
+        }
+      },
+      {
+        "en": {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        },
+        "zh": {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        }
+      },
+      {
+        "en": {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        "zh": {
+          "en": "BERT",
+          "zh": "BERT"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Count pairs",
+          "zh": "统计词对"
+        },
+        "zh": {
+          "en": "Count pairs",
+          "zh": "统计词对"
+        }
+      },
+      {
+        "en": {
+          "en": "Fit vectors",
+          "zh": "拟合向量"
+        },
+        "zh": {
+          "en": "Fit vectors",
+          "zh": "拟合向量"
+        }
+      },
+      {
+        "en": {
+          "en": "Compare meanings",
+          "zh": "比较语义"
+        },
+        "zh": {
+          "en": "Compare meanings",
+          "zh": "比较语义"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "EMNLP paper and Stanford project page",
+          "zh": "EMNLP 论文与斯坦福项目页面"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A co-occurrence matrix is weighted, factorized, and turned into dense vectors where semantic relations become geometric directions.",
+          "zh": "共现矩阵经过加权和分解，转化为稠密向量，使语义关系表现为几何方向。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "ACL Anthology",
+          "zh": "ACL Anthology"
+        },
+        "title": {
+          "en": "GloVe: Global Vectors for Word Representation",
+          "zh": "GloVe：用于词表示的全局向量"
+        },
+        "description": {
+          "en": "ACL Anthology source card for GloVe.",
+          "zh": "ACL Anthology 的GloVe资料卡片。"
+        },
+        "url": "https://aclanthology.org/D14-1162/",
+        "source": "https://aclanthology.org/D14-1162/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
   }
 }

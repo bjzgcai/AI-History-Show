@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Mehdi Mirza",
+        "zh": "迈赫迪·米尔扎"
+      },
+      "role": {
+        "en": "Conditional GAN lead author",
+        "zh": "Conditional GAN 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Conditional generative adversarial nets\"",
+    "zh": "\"条件生成对抗网络\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Conditional Generative Adversarial Nets",
+      "zh": "条件生成对抗网络"
+    },
+    "workAuthors": {
+      "en": "Mehdi Mirza and Simon Osindero, 2014",
+      "zh": "迈赫迪·米尔扎、西蒙·奥辛德罗，2014"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1411.1784"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Conditional Generative Adversarial Nets</em>, Mehdi Mirza and Simon Osindero, 2014",
+    "zh": "《条件生成对抗网络》, 迈赫迪·米尔扎、西蒙·奥辛德罗，2014"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Conditioned adversarial training",
+      "zh": "条件化对抗训练"
+    },
+    "artifact": {
+      "en": "Conditional GAN formulation",
+      "zh": "Conditional GAN 公式化方法"
+    },
+    "material": {
+      "en": "arXiv paper introducing conditional adversarial nets",
+      "zh": "提出条件化对抗网络的 arXiv 论文"
+    },
+    "demo": {
+      "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute.",
+      "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Condition Signal",
+          "zh": "条件信号"
+        },
+        "text": {
+          "en": "Labels steer generated samples.",
+          "zh": "标签引导生成样本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Adversarial Loss",
+          "zh": "对抗损失"
+        },
+        "text": {
+          "en": "The discriminator checks both realism and condition match.",
+          "zh": "判别器同时检查真实感和条件匹配。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Pix2Pix",
+          "zh": "Pix2Pix"
+        },
+        "zh": {
+          "en": "Pix2Pix",
+          "zh": "Pix2Pix"
+        }
+      },
+      {
+        "en": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        },
+        "zh": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "Canada",
+          "zh": "加拿大"
+        },
+        "zh": {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Noise + label",
+          "zh": "噪声 + 标签"
+        },
+        "zh": {
+          "en": "Noise + label",
+          "zh": "噪声 + 标签"
+        }
+      },
+      {
+        "en": {
+          "en": "Generator",
+          "zh": "生成器"
+        },
+        "zh": {
+          "en": "Generator",
+          "zh": "生成器"
+        }
+      },
+      {
+        "en": {
+          "en": "Conditioned sample",
+          "zh": "条件样本"
+        },
+        "zh": {
+          "en": "Conditioned sample",
+          "zh": "条件样本"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "arXiv paper introducing conditional adversarial nets",
+          "zh": "提出条件化对抗网络的 arXiv 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A condition vector is paired with noise so the generator can synthesize samples that match a requested class or attribute.",
+          "zh": "条件向量与噪声配对，使生成器能够合成符合指定类别或属性的样本。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Conditional Generative Adversarial Nets",
+          "zh": "条件生成对抗网络"
+        },
+        "description": {
+          "en": "arXiv source card for Conditional GAN.",
+          "zh": "arXiv 的Conditional GAN资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1411.1784",
+        "source": "https://arxiv.org/abs/1411.1784",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
   }
 }

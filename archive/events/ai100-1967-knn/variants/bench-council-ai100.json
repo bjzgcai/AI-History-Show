@@ -115,5 +115,210 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Thomas Cover",
+        "zh": "托马斯·科弗"
+      },
+      "role": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Peter Hart",
+        "zh": "彼得·哈特"
+      },
+      "role": {
+        "en": "Co-author of nearest-neighbor classification",
+        "zh": "最近邻分类共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Nearest neighbor pattern classification\"",
+    "zh": "\"最近邻模式分类\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Nearest Neighbor Pattern Classification",
+      "zh": "最近邻模式分类"
+    },
+    "workAuthors": {
+      "en": "Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
+      "zh": "托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1109/TIT.1967.1053964"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Nearest Neighbor Pattern Classification</em>, Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967",
+    "zh": "《最近邻模式分类》, 托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967"
+  },
+  "achievement": {
+    "area": {
+      "en": "Cluster, Classification, Regression",
+      "zh": "聚类、分类与回归"
+    },
+    "method": {
+      "en": "Instance-based local voting",
+      "zh": "基于实例的局部投票"
+    },
+    "artifact": {
+      "en": "Nearest-neighbor classifier",
+      "zh": "最近邻分类器"
+    },
+    "material": {
+      "en": "IEEE Transactions on Information Theory paper",
+      "zh": "《IEEE Transactions on Information Theory》论文"
+    },
+    "demo": {
+      "en": "A query point receives the label most common among nearby training examples.",
+      "zh": "查询点获得附近训练样本中最常见的标签。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Local Voting",
+          "zh": "局部投票"
+        },
+        "text": {
+          "en": "Classification comes from nearby examples.",
+          "zh": "分类来自附近样本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Nonparametric Memory",
+          "zh": "非参数记忆"
+        },
+        "text": {
+          "en": "The training set remains part of the model.",
+          "zh": "训练集本身保留为模型的一部分。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "SVM",
+        "zh": "SVM"
+      },
+      {
+        "en": "K-means",
+        "zh": "K-means"
+      },
+      {
+        "en": "Decision Trees",
+        "zh": "决策树"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Query point",
+        "zh": "查询点"
+      },
+      {
+        "en": "Nearest examples",
+        "zh": "最近样本"
+      },
+      {
+        "en": "Majority label",
+        "zh": "多数标签"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "IEEE Transactions on Information Theory paper",
+          "zh": "《IEEE Transactions on Information Theory》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A query point receives the label most common among nearby training examples.",
+          "zh": "查询点获得附近训练样本中最常见的标签。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "IEEE",
+          "zh": "IEEE"
+        },
+        "title": {
+          "en": "Nearest Neighbor Pattern Classification",
+          "zh": "最近邻模式分类"
+        },
+        "description": {
+          "en": "Paper record for the nearest-neighbor classification result.",
+          "zh": "最近邻分类结果的论文记录。"
+        },
+        "url": "https://doi.org/10.1109/TIT.1967.1053964",
+        "source": "https://doi.org/10.1109/TIT.1967.1053964",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
   }
 }

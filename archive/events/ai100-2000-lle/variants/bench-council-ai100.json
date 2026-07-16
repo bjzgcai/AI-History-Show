@@ -115,5 +115,210 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Sam Roweis",
+        "zh": "萨姆·罗维斯"
+      },
+      "role": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Lawrence Saul",
+        "zh": "劳伦斯·索尔"
+      },
+      "role": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Nonlinear Dimensionality Reduction by Locally Linear Embedding\"",
+    "zh": "\"通过局部线性嵌入进行非线性降维\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "zh": "通过局部线性嵌入进行非线性降维"
+    },
+    "workAuthors": {
+      "en": "Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+      "zh": "萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1126/science.290.5500.2323"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Nonlinear Dimensionality Reduction by Locally Linear Embedding</em>, Sam T. Roweis and Lawrence K. Saul, Science, 2000",
+    "zh": "《通过局部线性嵌入进行非线性降维》, 萨姆·T·罗维斯、劳伦斯·K·索尔，《Science》，2000"
+  },
+  "achievement": {
+    "area": {
+      "en": "Dimension reduction, Feature extraction",
+      "zh": "降维与特征提取"
+    },
+    "method": {
+      "en": "Neighborhood-preserving embedding",
+      "zh": "保持邻域的嵌入"
+    },
+    "artifact": {
+      "en": "LLE embedding",
+      "zh": "LLE 嵌入"
+    },
+    "material": {
+      "en": "Science paper",
+      "zh": "《Science》论文"
+    },
+    "demo": {
+      "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
+      "zh": "每个点由邻居重建，低维映射保持这些权重。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Local Reconstruction",
+          "zh": "局部重建"
+        },
+        "text": {
+          "en": "A point is expressed by nearby points.",
+          "zh": "一个点由附近点表示。"
+        }
+      },
+      {
+        "label": {
+          "en": "Global Coordinates",
+          "zh": "全局坐标"
+        },
+        "text": {
+          "en": "Local weights are preserved in a shared map.",
+          "zh": "局部权重在共享地图中保持。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Isomap",
+        "zh": "Isomap"
+      },
+      {
+        "en": "Kernel PCA",
+        "zh": "Kernel PCA"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Find neighbors",
+        "zh": "寻找邻居"
+      },
+      {
+        "en": "Reconstruction weights",
+        "zh": "重建权重"
+      },
+      {
+        "en": "Embedding",
+        "zh": "嵌入"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Science paper",
+          "zh": "《Science》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Each point is reconstructed from neighbors, and the low-dimensional map preserves those weights.",
+          "zh": "每个点由邻居重建，低维映射保持这些权重。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Science",
+          "zh": "Science"
+        },
+        "title": {
+          "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+          "zh": "通过局部线性嵌入进行非线性降维"
+        },
+        "description": {
+          "en": "Primary Science paper record for LLE.",
+          "zh": "LLE 的 Science 主论文记录。"
+        },
+        "url": "https://doi.org/10.1126/science.290.5500.2323",
+        "source": "https://doi.org/10.1126/science.290.5500.2323",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "AT&T Labs",
+      "zh": "AT&T 实验室"
+    },
+    "country": {
+      "en": "Florham Park, United States",
+      "zh": "美国弗洛勒姆帕克"
+    },
+    "coordinates": [
+      40.7879,
+      -74.3882
+    ]
   }
 }

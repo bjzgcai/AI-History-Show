@@ -68,5 +68,99 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Large Models and Scientific Intelligence",
+    "zh": "大模型与科学智能"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Research Institutions",
+        "zh": "研究机构"
+      },
+      "role": {
+        "en": "Leading-edge model R&D organization",
+        "zh": "前沿模型研发机构"
+      },
+      "avatar": "resources/images/figures/research-institution.png",
+      "avatarStyle": "",
+      "figureType": "team"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+        "url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+        "title": "2025新AI竞技场：我们如何评判最强AI",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.\"",
+    "zh": "\"Chatbot Arena 引入了面向语言模型的大规模人类偏好评测，使公开模型比较成为大语言模型生态中可见的一部分。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "Wei-Lin Chiang et al.",
+      "zh": "蒋维霖等"
+    },
+    "workTitle": {
+      "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+      "zh": "Chatbot Arena：基于人类偏好评估大语言模型的开放平台"
+    },
+    "workAuthors": {
+      "en": "LMSYS / LMArena team, arXiv, 2024",
+      "zh": "LMSYS / LMArena 团队，arXiv，2024"
+    },
+    "sourceLabel": {
+      "en": "Chatbot Arena arXiv paper page",
+      "zh": "Chatbot Arena arXiv 论文页面"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2403.04132"
+  },
+  "quotePage": {
+    "en": "Chatbot Arena paper and LMArena public leaderboard",
+    "zh": "Chatbot Arena 论文与 LMArena 公开排行榜"
+  },
+  "quoteAttribution": {
+    "en": "<em>Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference</em>, LMSYS / LMArena team, arXiv, 2024",
+    "zh": "《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等"
+  },
+  "location": {
+    "name": {
+      "en": "Global AI Industry",
+      "zh": "全球研究"
+    },
+    "country": {
+      "en": "Global",
+      "zh": "美国 / 中国"
+    },
+    "coordinates": [
+      [
+        37.7749,
+        -122.4194
+      ],
+      [
+        37.422,
+        -122.0841
+      ],
+      [
+        39.9042,
+        116.4074
+      ],
+      [
+        30.2741,
+        120.1551
+      ]
+    ]
   }
 }

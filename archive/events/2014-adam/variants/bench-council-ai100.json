@@ -79,5 +79,198 @@
       "zh": "由 legacy AI100 数据批量生成的 variant。",
       "en": "Variant generated from legacy AI100 data in a batch migration."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Diederik P. Kingma",
+        "zh": "迪德里克·P·金马"
+      },
+      "role": {
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Jimmy Ba",
+        "zh": "吉米·巴"
+      },
+      "role": {
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"straightforward to implement, computationally efficient\"",
+    "zh": "\"易于实现且计算高效\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Adam: A Method for Stochastic Optimization",
+      "zh": "Adam：一种随机优化方法"
+    },
+    "workAuthors": {
+      "en": "Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+      "zh": "迪德里克·P·金马、吉米·巴, 国际学习表征会议, 2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1412.6980"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Optimization / Adam",
+    "zh": "BenchCouncil AI100：优化算法 / Adam 优化器"
+  },
+  "quoteAttribution": {
+    "en": "<em>Adam: A Method for Stochastic Optimization</em>, Diederik P. Kingma and Jimmy Ba, International Conference on Learning Representations, 2015",
+    "zh": "《Adam：一种随机优化方法》, 迪德里克·P·金马、吉米·巴, 国际学习表征会议, 2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Optimization",
+      "zh": "优化算法"
+    },
+    "method": {
+      "en": "Adaptive first- and second-moment updates",
+      "zh": "一阶与二阶矩自适应更新"
+    },
+    "artifact": {
+      "en": "Adam stochastic optimizer",
+      "zh": "Adam 随机优化器"
+    },
+    "material": {
+      "en": "arXiv paper and optimizer implementations",
+      "zh": "arXiv 论文与优化器实现"
+    },
+    "demo": {
+      "en": "Momentum plus per-parameter scaling",
+      "zh": "动量加逐参数缩放"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "First Moment",
+          "zh": "一阶矩"
+        },
+        "text": {
+          "en": "A running average of gradients behaves like momentum, keeping updates aligned with persistent descent directions.",
+          "zh": "梯度的滑动平均类似动量，让更新方向跟随持续出现的下降方向。"
+        }
+      },
+      {
+        "label": {
+          "en": "Second Moment",
+          "zh": "二阶矩"
+        },
+        "text": {
+          "en": "A running average of squared gradients rescales each parameter so frequent large gradients do not dominate every step.",
+          "zh": "梯度平方的滑动平均会缩放每个参数，使频繁出现的大梯度不至于支配所有更新。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bias Correction",
+          "zh": "偏差校正"
+        },
+        "text": {
+          "en": "Adam corrects early moving averages that start near zero, making the first optimization steps less distorted.",
+          "zh": "Adam 会校正初期接近零的滑动平均，让训练开始阶段的步伐不被过度扭曲。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Backpropagation",
+        "zh": "反向传播"
+      },
+      {
+        "en": "RMSProp",
+        "zh": "RMSProp"
+      },
+      {
+        "en": "Transformer training",
+        "zh": "Transformer 训练"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Netherlands",
+        "zh": "荷兰"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Gradient sample",
+        "zh": "梯度样本"
+      },
+      {
+        "en": "Moment estimates",
+        "zh": "矩估计"
+      },
+      {
+        "en": "Bias-corrected update",
+        "zh": "偏差校正更新"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "arXiv / ICLR",
+        "title": {
+          "en": "Adam paper and Algorithm 1",
+          "zh": "Adam 论文与算法 1"
+        },
+        "description": {
+          "en": "Primary paper record for Adam; local images are redrawn from equations and pseudocode.",
+          "zh": "Adam 的主要论文记录；本地图片依据公式和伪代码重绘。"
+        },
+        "url": "https://arxiv.org/abs/1412.6980",
+        "source": "https://arxiv.org/abs/1412.6980",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Amsterdam / University of Toronto",
+      "zh": "阿姆斯特丹大学 / 多伦多大学"
+    },
+    "country": {
+      "en": "Amsterdam, Netherlands and Toronto, Canada",
+      "zh": "荷兰阿姆斯特丹与加拿大多伦多"
+    },
+    "coordinates": [
+      52.3558,
+      4.9558
+    ]
   }
 }

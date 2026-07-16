@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jascha Sohl-Dickstein",
+        "zh": "雅沙·索尔-迪克斯坦"
+      },
+      "role": {
+        "en": "Diffusion model lead author",
+        "zh": "扩散模型主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Deep unsupervised learning using nonequilibrium thermodynamics\"",
+    "zh": "\"使用非平衡热力学进行深度无监督学习\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+      "zh": "使用非平衡热力学进行深度无监督学习"
+    },
+    "workAuthors": {
+      "en": "Jascha Sohl-Dickstein et al., ICML, 2015",
+      "zh": "雅沙·索尔-迪克斯坦等，ICML，2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Deep Unsupervised Learning using Nonequilibrium Thermodynamics</em>, Jascha Sohl-Dickstein et al., ICML, 2015",
+    "zh": "《使用非平衡热力学进行深度无监督学习》, 雅沙·索尔-迪克斯坦等，ICML，2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Forward noising and learned reverse denoising",
+      "zh": "正向加噪与学习型反向去噪"
+    },
+    "artifact": {
+      "en": "Nonequilibrium thermodynamics diffusion model",
+      "zh": "非平衡热力学扩散模型"
+    },
+    "material": {
+      "en": "ICML paper and later denoising diffusion work",
+      "zh": "ICML 论文与后续去噪扩散工作"
+    },
+    "demo": {
+      "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+      "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Forward Process",
+          "zh": "正向过程"
+        },
+        "text": {
+          "en": "Noise is added through many small steps.",
+          "zh": "噪声通过许多小步骤加入。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reverse Process",
+          "zh": "反向过程"
+        },
+        "text": {
+          "en": "A model learns to denoise step by step.",
+          "zh": "模型学习逐步去噪。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        },
+        "zh": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        }
+      },
+      {
+        "en": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        },
+        "zh": {
+          "en": "DALL-E",
+          "zh": "DALL-E"
+        }
+      },
+      {
+        "en": {
+          "en": "Variational Autoencoder",
+          "zh": "变分自编码器"
+        },
+        "zh": {
+          "en": "Variational Autoencoder",
+          "zh": "变分自编码器"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Add noise",
+          "zh": "加入噪声"
+        },
+        "zh": {
+          "en": "Add noise",
+          "zh": "加入噪声"
+        }
+      },
+      {
+        "en": {
+          "en": "Learn reverse",
+          "zh": "学习反向过程"
+        },
+        "zh": {
+          "en": "Learn reverse",
+          "zh": "学习反向过程"
+        }
+      },
+      {
+        "en": {
+          "en": "Generate sample",
+          "zh": "生成样本"
+        },
+        "zh": {
+          "en": "Generate sample",
+          "zh": "生成样本"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICML paper and later denoising diffusion work",
+          "zh": "ICML 论文与后续去噪扩散工作"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+          "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+          "zh": "使用非平衡热力学进行深度无监督学习"
+        },
+        "description": {
+          "en": "PMLR source card for Diffusion Model.",
+          "zh": "PMLR 的扩散模型资料卡片。"
+        },
+        "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+        "source": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "Stanford, United States",
+      "zh": "美国斯坦福"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
   }
 }

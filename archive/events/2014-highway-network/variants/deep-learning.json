@@ -66,5 +66,98 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+    "zh": "深度学习与范式归一（2010年代至2020年代）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ian Goodfellow",
+        "zh": "伊恩·古德费洛"
+      },
+      "role": {
+        "en": "GAN inventor",
+        "zh": "GAN发明者"
+      },
+      "avatar": "resources/images/figures/ian-goodfellow.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Proposer of Attention Mechanism ",
+        "zh": "注意力机制提出者"
+      },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+        "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+        "title": "2014高速网络：深度学习中被遗忘的英雄",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
+    "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+      "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+    },
+    "workTitle": {
+      "en": "Highway Networks",
+      "zh": "高速网络"
+    },
+    "workAuthors": {
+      "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+      "zh": "Rupesh Kumar Srivastava、Klaus Greff、于尔根·施密德胡伯，arXiv，2015"
+    },
+    "sourceLabel": {
+      "en": "arXiv paper page",
+      "zh": "arXiv 论文页面"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1505.00387"
+  },
+  "quotePage": {
+    "en": "arXiv paper: Highway Networks",
+    "zh": "arXiv 论文《高速网络》"
+  },
+  "quoteAttribution": {
+    "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+    "zh": "《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯"
+  },
+  "location": {
+    "name": {
+      "en": "IDSIA",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Switzerland",
+      "zh": "加拿大, 魁北克省"
+    },
+    "coordinates": [
+      45.5017,
+      -73.5673
+    ]
   }
 }

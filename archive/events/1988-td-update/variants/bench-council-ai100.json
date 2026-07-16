@@ -112,5 +112,181 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Richard Sutton",
+        "zh": "理查德·萨顿"
+      },
+      "role": {
+        "en": "Author of temporal-difference learning",
+        "zh": "时序差分学习提出者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Bootstrapped value prediction\"",
+    "zh": "\"自举式价值预测\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Learning to predict by temporal differences",
+      "zh": "通过时序差分学习预测"
+    },
+    "workAuthors": {
+      "en": "Richard Sutton",
+      "zh": "理查德·萨顿"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1007/BF00115009"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Reinforcement learning / Temporal-Difference Update",
+    "zh": "BenchCouncil AI100：强化学习 / 时序差分更新"
+  },
+  "quoteAttribution": {
+    "en": "<em>Learning to predict by temporal differences</em>, Richard Sutton",
+    "zh": "《通过时序差分学习预测》, 理查德·萨顿"
+  },
+  "achievement": {
+    "area": {
+      "en": "Reinforcement learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Bootstrapped value prediction",
+      "zh": "自举式价值预测"
+    },
+    "artifact": {
+      "en": "TD learning update rule",
+      "zh": "TD 学习更新规则"
+    },
+    "material": {
+      "en": "Machine Learning paper and RL histories",
+      "zh": "Machine Learning 论文与强化学习史料"
+    },
+    "demo": {
+      "en": "Update a value estimate from the next prediction and reward",
+      "zh": "用下一步预测和奖励更新价值估计"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "TD Error",
+          "zh": "TD 误差"
+        },
+        "text": {
+          "en": "The gap between current prediction and one-step bootstrapped target.",
+          "zh": "当前预测与一步自举目标之间的差距。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bootstrapping",
+          "zh": "自举"
+        },
+        "text": {
+          "en": "A prediction is updated using another prediction.",
+          "zh": "用另一个预测来更新一个预测。"
+        }
+      },
+      {
+        "label": {
+          "en": "Value Function",
+          "zh": "价值函数"
+        },
+        "text": {
+          "en": "A function estimates expected future reward from a state.",
+          "zh": "估计从某状态出发的预期未来奖励。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Q Learning",
+        "zh": "Q Learning"
+      },
+      {
+        "en": "Actor-Critic",
+        "zh": "Actor-Critic"
+      },
+      {
+        "en": "Deep Q Network",
+        "zh": "深度 Q 网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States and Canada",
+        "zh": "美国与加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Observe reward",
+        "zh": "观察奖励"
+      },
+      {
+        "en": "Compare next value",
+        "zh": "比较下一价值"
+      },
+      {
+        "en": "Nudge estimate",
+        "zh": "推进估计"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "Machine Learning",
+        "title": {
+          "en": "Learning to predict by temporal differences",
+          "zh": "用时序差分学习预测"
+        },
+        "description": {
+          "en": "Canonical Machine Learning paper record for TD learning.",
+          "zh": "TD 学习经典 Machine Learning 论文记录。"
+        },
+        "url": "https://doi.org/10.1007/BF00115009",
+        "source": "https://doi.org/10.1007/BF00115009",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open DOI record",
+          "zh": "打开 DOI 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "GTE Laboratories / University of Massachusetts lineage",
+      "zh": "GTE 实验室 / 麻省大学学术谱系"
+    },
+    "country": {
+      "en": "United States and Canada",
+      "zh": "美国与加拿大"
+    },
+    "coordinates": [
+      42.3732,
+      -72.5199
+    ]
   }
 }
