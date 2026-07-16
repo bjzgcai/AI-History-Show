@@ -73,6 +73,8 @@ npm run validate:deployment
 
 质量门禁会依次运行 ESLint、Prettier 格式检查，以及现有的 Node.js 校验脚本。部署验证会重新生成里程碑数据、运行测试、启动展示页和管理服务；CI 还会构建 Docker 镜像并校验 Compose 配置。
 
+移动端支持范围、视口检查清单和响应式验证命令记录在 [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md)。
+
 后续优先补充测试覆盖的模块：
 
 - `manage/generate.js`：生成后的里程碑数据结构、引言选择、视频查找、缺失资源警告。

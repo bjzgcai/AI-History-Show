@@ -2,36 +2,10 @@
 'use strict';
 
 const { milestones } = require('../milestones-data.js');
+const { countTextSentences, getLocalizedText } = require('../shared/utils.js');
 
 const REQUIRED_LABELS = new Set(['Historical Background', 'Core Idea', 'Long-Term Legacy']);
 const STRICT = process.argv.includes('--strict');
-
-function localizedText(value, locale) {
-    if (value && typeof value === 'object') {
-        return String(value[locale] || value.en || value.zh || '').trim();
-    }
-    return String(value || '').trim();
-}
-
-function stripHtml(value) {
-    return String(value || '')
-        .replace(/<[^>]*>/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-}
-
-function sentenceCount(value, locale) {
-    const text = stripHtml(value);
-    if (!text) return 0;
-
-    if (locale === 'zh') {
-        const matches = text.match(/[。！？!?]/g);
-        return matches ? matches.length : 1;
-    }
-
-    const matches = text.match(/[.!?](?:\s|$|["'”’）)])/g);
-    return matches ? matches.length : 1;
-}
 
 const failures = [];
 
@@ -43,15 +17,15 @@ for (const milestone of milestones) {
 
     const sections = Array.isArray(milestone.commentarySections) ? milestone.commentarySections : [];
     for (const section of sections) {
-        const label = localizedText(section && section.label, 'en');
+        const label = getLocalizedText(section && section.label, 'en');
         if (!REQUIRED_LABELS.has(label)) continue;
 
         for (const locale of ['en', 'zh']) {
-            const count = sentenceCount(localizedText(section.html, locale), locale);
+            const count = countTextSentences(getLocalizedText(section.html, locale), locale);
             if (count < 2) {
                 failures.push({
                     id: milestone.id,
-                    title: localizedText(milestone.title, locale),
+                    title: getLocalizedText(milestone.title, locale),
                     label,
                     locale,
                     count

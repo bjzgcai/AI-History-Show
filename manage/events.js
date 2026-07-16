@@ -48,2885 +48,6 @@ function gameEvolutionVideo(key, options = {}) {
 }
 
 module.exports = {
-  "1920-rur-robots": {
-    "year": 1920,
-    "title": {
-      "en": "R.U.R. and the Birth of the Robot",
-      "zh": "《罗素姆的万能机器人》与“机器人”的诞生"
-    },
-    "sentiment": "dystopia",
-    "location": {
-      "name": {
-        "en": "Prague publishing and theatre culture",
-        "zh": "布拉格出版与戏剧文化圈"
-      },
-      "country": {
-        "en": "Czechia",
-        "zh": "捷克"
-      },
-      "coordinates": [
-        50.0755,
-        14.4378
-      ]
-    },
-    "description": {
-      "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility.",
-      "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。"
-    },
-    "branchSummary": {
-      "en": "Science fiction turned artificial labor into a public anxiety about work, obedience and creator responsibility.",
-      "zh": "科幻把“人工劳工”变成公共焦虑：机器不只是工具，也会改变劳动、服从与责任。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Karel Capek",
-          "zh": "卡雷尔·恰佩克"
-        },
-        "role": {
-          "en": "Playwright of R.U.R.",
-          "zh": "《罗素姆的万能机器人》作者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "A science-fiction play turned artificial labor into a public cultural symbol before AI existed as a research field.",
-        "zh": "这部科幻剧在 AI 成为研究学科之前，就把人工劳工变成了公共文化符号。"
-      },
-      "how": {
-        "en": "The play frames machines through work, ownership, obedience and revolt rather than through algorithms.",
-        "zh": "它不是用算法解释机器，而是通过劳动、所有权、服从与反叛来组织机器想象。"
-      },
-      "why": {
-        "en": "Later AI fears often reuse this structure: useful systems become social actors once they change labor and power relations.",
-        "zh": "后来的 AI 恐惧常复用这一结构：当有用系统改变劳动与权力关系时，它们就不再只是工具。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Fiction concept",
-          "zh": "科幻想象"
-        },
-        "term": {
-          "en": "Artificial worker rebellion",
-          "zh": "人工劳工反叛"
-        },
-        "modernTerm": {
-          "en": "Automation anxiety and labor displacement",
-          "zh": "自动化焦虑与劳动替代"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "R.U.R. appeared amid early twentieth-century industrialization, when factories, mass labor and mechanized production were reshaping social imagination. The play matters because it made artificial workers emotionally legible to the public long before technical AI existed.",
-          "zh": "《罗素姆的万能机器人》出现在二十世纪早期工业化语境中，当时工厂、规模化劳动与机械化生产正在重塑社会想象。它的重要性在于，在技术意义上的 AI 尚未出现之前，就让公众能够用情绪化方式理解“人工劳动者”。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The central drama is not a technical malfunction but a social reversal: manufactured laborers become agents with collective force. That makes the work a useful starting point for connecting AI history to labor, power and responsibility.",
-          "zh": "它的核心戏剧冲突不是技术故障，而是社会关系倒转：被制造的劳工变成具有集体力量的行动者。因此它很适合作为 AI 历史与劳动、权力、责任之间联系的起点。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts in AI history and science-fiction studies generally treat R.U.R. as a foundational cultural reference for machine autonomy. Its legacy is not that it predicted a specific technology, but that it gave later generations a vocabulary for fearing and debating artificial agents.",
-          "zh": "AI 史与科幻研究者通常把《罗素姆的万能机器人》视为机器自主性想象的基础文化参照。它的遗产并不是预测了某项具体技术，而是给后来的世代提供了恐惧与讨论人工行动者的词汇。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Dystopian prophecy",
-        "zh": "反乌托邦预言"
-      },
-      "method": {
-        "en": "Stage fiction as social warning",
-        "zh": "以舞台科幻发出社会预警"
-      },
-      "artifact": {
-        "en": "Play text and archive scans",
-        "zh": "剧本文本与档案扫描"
-      },
-      "material": {
-        "en": "Project Gutenberg text and Internet Archive scan",
-        "zh": "Project Gutenberg 文本与 Internet Archive 扫描件"
-      },
-      "demo": {
-        "en": "Artificial labor becomes an emotional template for later AI anxiety",
-        "zh": "人工劳工成为后来 AI 焦虑的情绪模板"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Project Gutenberg",
-            "zh": "Project Gutenberg"
-          },
-          "title": {
-            "en": "R.U.R. archive text",
-            "zh": "《R.U.R.》档案文本"
-          },
-          "description": {
-            "en": "Public-domain text record for Capek's 1920 play, paired here with an original exhibition diagram.",
-            "zh": "恰佩克 1920 年剧作的公有领域文本记录；本地配图为原创重绘。"
-          },
-          "url": "https://www.gutenberg.org/ebooks/13083",
-          "source": "Project Gutenberg",
-          "license": {
-            "en": "Source text is public domain in the USA; local SVG is original.",
-            "zh": "源文本在美国为公有领域；本地 SVG 为原创图。"
-          },
-          "usage": {
-            "en": "Archive source for the fiction node",
-            "zh": "科幻节点的档案来源"
-          },
-          "action": {
-            "en": "Open archive text",
-            "zh": "打开档案文本"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Project Gutenberg R.U.R. text",
-            "zh": "Project Gutenberg《R.U.R.》文本"
-          },
-          "type": {
-            "en": "Archive text",
-            "zh": "档案文本"
-          },
-          "url": "https://www.gutenberg.org/ebooks/13083"
-        },
-        {
-          "label": {
-            "en": "1920 Czech edition scan",
-            "zh": "1920 年捷克语版本扫描"
-          },
-          "type": {
-            "en": "Archive scan",
-            "zh": "档案扫描"
-          },
-          "url": "https://archive.org/details/rurrossumsuniver00apekuoft"
-        },
-        {
-          "label": {
-            "en": "R.U.R. publication and word-history overview",
-            "zh": "《R.U.R.》出版与词源背景"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/R.U.R."
-        },
-        {
-          "label": {
-            "en": "Robot etymology background",
-            "zh": "机器人词源背景"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Karel_%C4%8Capek#Etymology_of_robot"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
-        "caption": {
-          "en": "R.U.R. labor-revolt explainer",
-          "zh": "《R.U.R.》劳工反叛解释图"
-        },
-        "subcaption": {
-          "en": "Original exhibition diagram based on archive sources",
-          "zh": "基于档案来源重绘的原创展览图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://archive.org/details/rurrossumsuniver00apekuoft",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1942-asimov-runaround": {
-    "year": 1942,
-    "title": {
-      "en": "Asimov's Three Laws in Runaround",
-      "zh": "阿西莫夫在《转圈圈》中提出机器人三定律"
-    },
-    "sentiment": "ethics",
-    "location": {
-      "name": {
-        "en": "Astounding Science Fiction",
-        "zh": "《惊奇科幻》杂志"
-      },
-      "country": {
-        "en": "United States",
-        "zh": "美国"
-      },
-      "coordinates": [
-        40.7128,
-        -74.006
-      ]
-    },
-    "description": {
-      "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language.",
-      "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。"
-    },
-    "branchSummary": {
-      "en": "Robot fiction reframed machine fear as a rule-design problem: what should artificial agents be forbidden to do?",
-      "zh": "机器人科幻把机器恐惧改写成规则设计问题：人工行动者究竟应该被禁止做什么？"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Isaac Asimov",
-          "zh": "艾萨克·阿西莫夫"
-        },
-        "role": {
-          "en": "Author of Runaround",
-          "zh": "《转圈圈》作者"
-        }
-      },
-      {
-        "name": {
-          "en": "John W. Campbell",
-          "zh": "约翰·W·坎贝尔"
-        },
-        "role": {
-          "en": "Astounding editor and robot-story interlocutor",
-          "zh": "《惊奇科幻》编辑，机器人故事讨论者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "A magazine story made robot ethics legible as ranked constraints rather than as pure terror.",
-        "zh": "一篇杂志小说把机器人伦理变成了可理解的层级约束，而不只是单纯恐惧。"
-      },
-      "how": {
-        "en": "The story dramatizes conflicts between duties, safety and command-following, making rules feel operational.",
-        "zh": "故事把职责、安全与服从命令之间的冲突戏剧化，让规则看起来可以被机器执行。"
-      },
-      "why": {
-        "en": "Later AI alignment debates still revisit the same intuition: constraints can help, but conflicting goals create hard cases.",
-        "zh": "后来的 AI 对齐讨论仍会回到同一 intuition：约束有帮助，但目标冲突会制造困难案例。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Fictional rule system",
-          "zh": "科幻规则系统"
-        },
-        "term": {
-          "en": "Robot law hierarchy",
-          "zh": "机器人规则层级"
-        },
-        "modernTerm": {
-          "en": "AI alignment, constraint design and safety policy",
-          "zh": "AI 对齐、约束设计与安全策略"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "Runaround appeared in a wartime science-fiction magazine culture where robots were becoming recurring industrial and moral figures. It matters because the story made robot safety a problem of rules, priorities and failure modes rather than only a monster narrative.",
-          "zh": "《转圈圈》出现于战时科幻杂志文化中，当时机器人正逐渐成为工业与道德想象中的常见角色。它的重要性在于，故事把机器人安全写成规则、优先级与失效模式的问题，而不只是怪物叙事。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional move is containment through ethics: fear is answered by a designed rule system. Yet the story also shows that rules can collide, which keeps the anxiety alive inside the solution itself.",
-          "zh": "这里的情绪转向是用伦理来约束机器：恐惧被一套设计出来的规则系统回应。但故事也显示规则会彼此冲突，因此焦虑并没有消失，而是留在了解决方案内部。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts in science-fiction studies generally treat Asimov's robot stories as foundational examples of fictional machine ethics. AI researchers do not treat the Three Laws as an engineering solution, but the cultural template still shapes how publics imagine safe artificial agents.",
-          "zh": "科幻研究者通常把阿西莫夫的机器人故事视为虚构机器伦理的基础案例。AI 研究者并不把三定律当作工程解决方案，但这个文化模板仍然影响公众如何想象安全的人工行动者。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Machine ethics",
-        "zh": "机器伦理"
-      },
-      "method": {
-        "en": "Rule hierarchy in fiction",
-        "zh": "科幻中的规则层级"
-      },
-      "artifact": {
-        "en": "Astounding Science Fiction, March 1942",
-        "zh": "1942 年 3 月《惊奇科幻》"
-      },
-      "material": {
-        "en": "Magazine archive and Asimov FAQ",
-        "zh": "杂志档案与阿西莫夫 FAQ"
-      },
-      "demo": {
-        "en": "Ethical rules become an imagined control layer for autonomous machines",
-        "zh": "伦理规则成为自主机器的想象控制层"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Internet Archive",
-            "zh": "Internet Archive"
-          },
-          "title": {
-            "en": "Astounding, March 1942",
-            "zh": "《惊奇科幻》1942 年 3 月号"
-          },
-          "description": {
-            "en": "Archive metadata for the magazine issue containing Runaround; local visual is an original rule-flow diagram.",
-            "zh": "收录《转圈圈》的杂志期号档案元数据；本地视觉为原创规则流程图。"
-          },
-          "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
-          "source": "Internet Archive",
-          "license": {
-            "en": "Reference archive link only; story text and magazine art are not reused.",
-            "zh": "仅作为档案参考链接；不复用故事正文或杂志图像。"
-          },
-          "usage": {
-            "en": "Primary publication anchor",
-            "zh": "首发期号锚点"
-          },
-          "action": {
-            "en": "Open magazine archive",
-            "zh": "打开杂志档案"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Astounding March 1942 archive",
-            "zh": "《惊奇科幻》1942 年 3 月号档案"
-          },
-          "type": {
-            "en": "Magazine archive",
-            "zh": "杂志档案"
-          },
-          "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318"
-        },
-        {
-          "label": {
-            "en": "Asimov Online Three Laws FAQ",
-            "zh": "Asimov Online 三定律 FAQ"
-          },
-          "type": {
-            "en": "Author FAQ",
-            "zh": "作者资料 FAQ"
-          },
-          "url": "http://www.asimovonline.com/asimov_FAQ.html#non-literary12"
-        },
-        {
-          "label": {
-            "en": "Runaround story overview",
-            "zh": "《转圈圈》故事概览"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Runaround_(story)"
-        },
-        {
-          "label": {
-            "en": "Science Fiction Encyclopedia: Asimov",
-            "zh": "《科幻百科全书》阿西莫夫条目"
-          },
-          "type": {
-            "en": "Author reference",
-            "zh": "作者参考"
-          },
-          "url": "https://sf-encyclopedia.com/entry/asimov_isaac"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg": {
-        "caption": {
-          "en": "Runaround rule-hierarchy explainer",
-          "zh": "《转圈圈》规则层级解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram; no copyrighted story text is reproduced",
-          "zh": "原创图；不复述受版权保护的故事原文"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1950-wiener-human-use": {
-    "year": 1950,
-    "title": {
-      "en": "Norbert Wiener Warns About Automation",
-      "zh": "维纳对自动化社会的预警"
-    },
-    "sentiment": "warning",
-    "location": {
-      "name": {
-        "en": "MIT cybernetics milieu",
-        "zh": "麻省理工控制论语境"
-      },
-      "country": {
-        "en": "United States",
-        "zh": "美国"
-      },
-      "coordinates": [
-        42.3601,
-        -71.0942
-      ]
-    },
-    "description": {
-      "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines.",
-      "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。"
-    },
-    "branchSummary": {
-      "en": "Cybernetics turned automation into a moral question about control, feedback and human agency.",
-      "zh": "控制论把自动化变成控制、反馈与人类能动性的道德问题。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Norbert Wiener",
-          "zh": "诺伯特·维纳"
-        },
-        "role": {
-          "en": "Cybernetics founder and author of The Human Use of Human Beings",
-          "zh": "控制论奠基者，《人有人的用处》作者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "Wiener framed automation as a social-control problem before AI became a formal research field.",
-        "zh": "维纳在 AI 成为正式研究学科之前，就把自动化理解为社会控制问题。"
-      },
-      "how": {
-        "en": "Feedback loops made machines appear capable of acting within human systems, so responsibility could no longer be treated as purely mechanical.",
-        "zh": "反馈回路让机器看起来能在人类系统中行动，因此责任不能再被视为纯机械问题。"
-      },
-      "why": {
-        "en": "The same warning returns in modern debates about automated decision systems, labor displacement and delegated authority.",
-        "zh": "同样的警示会在今天关于自动化决策、劳动替代与委托权力的讨论中反复出现。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Cybernetic warning",
-          "zh": "控制论预警"
-        },
-        "term": {
-          "en": "Feedback and delegated control",
-          "zh": "反馈与委托控制"
-        },
-        "modernTerm": {
-          "en": "Automated decision systems and accountability",
-          "zh": "自动化决策系统与问责"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The Human Use of Human Beings appeared after Wiener's technical work on cybernetics had made feedback a central language for machines, organisms and society. It matters because it moved machine control from engineering into public ethics before the word AI had its modern institutional meaning.",
-          "zh": "《人有人的用处》出现在维纳关于控制论的技术工作之后，反馈已经成为描述机器、生物与社会的重要语言。它的重要性在于，在 AI 一词获得现代学科含义之前，就把机器控制问题从工程带入公共伦理。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional structure is sober warning rather than fantasy terror: automation can optimize, but it can also displace judgment and responsibility. Wiener therefore links technical control to human use, asking who benefits when machines act in social systems.",
-          "zh": "这里的情绪结构不是幻想恐惧，而是冷静预警：自动化可以优化，也可能替代判断与责任。因此维纳把技术控制与人的用途联系起来，追问机器进入社会系统时究竟由谁获益。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat Wiener's public cybernetics as an early foundation for thinking about automation ethics. The book's legacy is that it makes human agency, not machine cleverness alone, central to the story of intelligent systems.",
-          "zh": "专家通常把维纳面向公众的控制论写作视为自动化伦理思考的早期基础。它的遗产在于让人类能动性成为智能系统叙事的核心，而不只是关注机器是否聪明。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Automation warning",
-        "zh": "自动化预警"
-      },
-      "method": {
-        "en": "Cybernetic feedback as social metaphor",
-        "zh": "把控制论反馈作为社会隐喻"
-      },
-      "artifact": {
-        "en": "The Human Use of Human Beings",
-        "zh": "《人有人的用处》"
-      },
-      "material": {
-        "en": "Open Library metadata and cybernetics background",
-        "zh": "Open Library 元数据与控制论背景"
-      },
-      "demo": {
-        "en": "Feedback loops reveal how delegated control can reshape human agency",
-        "zh": "反馈回路揭示委托控制如何重塑人类能动性"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Open Library",
-            "zh": "Open Library"
-          },
-          "title": {
-            "en": "The Human Use of Human Beings metadata",
-            "zh": "《人有人的用处》书目元数据"
-          },
-          "description": {
-            "en": "Bibliographic record confirming Wiener's public cybernetics book and its 1950 first publication year.",
-            "zh": "用于核对维纳公共控制论著作及其 1950 年首版时间的书目记录。"
-          },
-          "url": "https://openlibrary.org/works/OL4307570W",
-          "source": "Open Library",
-          "license": {
-            "en": "Reference metadata only; no book text or cover image is reused.",
-            "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
-          },
-          "usage": {
-            "en": "Verification anchor for the automation-warning node",
-            "zh": "自动化预警节点的核验锚点"
-          },
-          "action": {
-            "en": "Open book record",
-            "zh": "打开书目记录"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Open Library book metadata",
-            "zh": "Open Library 图书元数据"
-          },
-          "type": {
-            "en": "Book metadata",
-            "zh": "图书元数据"
-          },
-          "url": "https://openlibrary.org/works/OL4307570W"
-        },
-        {
-          "label": {
-            "en": "Open Library metadata search result",
-            "zh": "Open Library 元数据检索结果"
-          },
-          "type": {
-            "en": "Bibliographic verification",
-            "zh": "书目核验"
-          },
-          "url": "https://openlibrary.org/search.json?title=The%20Human%20Use%20of%20Human%20Beings&author=Norbert%20Wiener"
-        },
-        {
-          "label": {
-            "en": "Cybernetics background",
-            "zh": "控制论背景"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_in_the_Animal_and_the_Machine"
-        },
-        {
-          "label": {
-            "en": "Norbert Wiener overview",
-            "zh": "诺伯特·维纳概览"
-          },
-          "type": {
-            "en": "Biographical reference",
-            "zh": "人物参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Norbert_Wiener"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
-        "caption": {
-          "en": "Cybernetic feedback warning explainer",
-          "zh": "控制论反馈预警解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for delegated control and human agency",
-          "zh": "关于委托控制与人类能动性的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://openlibrary.org/works/OL4307570W",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1965-simon-ai-prediction": {
-    "year": 1965,
-    "title": {
-      "en": "Simon's Twenty-Year AI Prediction",
-      "zh": "西蒙的二十年 AI 预言"
-    },
-    "sentiment": "hype",
-    "location": {
-      "name": {
-        "en": "Carnegie Institute of Technology",
-        "zh": "卡内基理工学院"
-      },
-      "country": {
-        "en": "PA, United States",
-        "zh": "美国, 宾夕法尼亚州"
-      },
-      "coordinates": [
-        40.4433,
-        -79.9436
-      ]
-    },
-    "description": {
-      "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations.",
-      "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。"
-    },
-    "branchSummary": {
-      "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high.",
-      "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Herbert A. Simon",
-          "zh": "赫伯特·A·西蒙"
-        },
-        "role": {
-          "en": "AI pioneer and author of The Shape of Automation",
-          "zh": "AI 先驱，《人、管理与自动化的形态》作者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "The prediction marks the moment when laboratory success was projected into a general promise about human work.",
-        "zh": "这个预言标志着实验室成功被投射成关于人类工作的总体承诺。"
-      },
-      "how": {
-        "en": "Symbolic AI made reasoning look programmable, so researchers and funders could imagine fast progress from toy domains to broad competence.",
-        "zh": "符号主义 AI 让推理看起来可以被编程，因此研究者与资助方很容易想象从玩具领域快速扩展到通用能力。"
-      },
-      "why": {
-        "en": "The gap between promise and delivery helped create the emotional conditions for later disappointment and funding retrenchment.",
-        "zh": "承诺与兑现之间的落差，为后来的失望情绪和资助收缩制造了情绪条件。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Fiction-to-reality pressure",
-          "zh": "想象到现实的压力"
-        },
-        "term": {
-          "en": "Machine can do any human work",
-          "zh": "机器能完成任何人类工作"
-        },
-        "modernTerm": {
-          "en": "AI capability forecasting and benchmark overgeneralization",
-          "zh": "AI 能力预测与基准泛化误读"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "By the mid-1960s, symbolic AI had produced impressive demonstrations in theorem proving, game playing and problem solving. Simon's prediction is important because it shows how these bounded successes could be translated into public confidence about machines replacing broad human work.",
-          "zh": "到 1960 年代中期，符号主义 AI 已经在定理证明、游戏与问题求解中给出了令人印象深刻的演示。西蒙的预言之所以重要，是因为它展示了这些边界清晰的成功如何被转译成关于机器替代广泛人类工作的公共信心。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is extrapolation: if reasoning can be formalized in one domain, perhaps all work will soon be formalized. That leap made early AI feel historically inevitable even when compute, data and real-world robustness were still fragile.",
-          "zh": "这里的情绪机制是外推：如果一个领域里的推理可以被形式化，也许所有工作很快都可以被形式化。这种跳跃让早期 AI 显得像历史必然，尽管算力、数据与真实世界鲁棒性仍然薄弱。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat the prediction as a classic example of AI over-optimism rather than as a precise technical claim. Its legacy is a warning that public timelines can become part of the technology itself by shaping funding, media attention and later backlash.",
-          "zh": "专家通常把这一预言视为 AI 过度乐观的经典案例，而不是精确的技术判断。它的长期影响在于提醒我们：公共时间表本身会塑造技术，因为它会影响资金、媒体注意力以及随后的反弹。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Over-optimism",
-        "zh": "过度狂热"
-      },
-      "method": {
-        "en": "Forecasting from early symbolic AI success",
-        "zh": "从早期符号主义成功外推未来"
-      },
-      "artifact": {
-        "en": "Automation book metadata and AI-history references",
-        "zh": "自动化著作元数据与 AI 史参考"
-      },
-      "material": {
-        "en": "Open Library metadata and secondary AI history",
-        "zh": "Open Library 元数据与二手 AI 史资料"
-      },
-      "demo": {
-        "en": "A rising promise curve turns benchmark confidence into public hype",
-        "zh": "上升的承诺曲线把基准信心转化为公众狂热"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Open Library",
-            "zh": "Open Library"
-          },
-          "title": {
-            "en": "The Shape of Automation metadata",
-            "zh": "《人、管理与自动化的形态》书目元数据"
-          },
-          "description": {
-            "en": "Bibliographic record confirming Simon's automation book and its 1965 publication year.",
-            "zh": "用于核对西蒙自动化著作及其 1965 年出版时间的书目记录。"
-          },
-          "url": "https://openlibrary.org/works/OL1205034W",
-          "source": "Open Library",
-          "license": {
-            "en": "Reference metadata only; no book text or cover image is reused.",
-            "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
-          },
-          "usage": {
-            "en": "Verification anchor for the hype node",
-            "zh": "技术狂热节点的核验锚点"
-          },
-          "action": {
-            "en": "Open book record",
-            "zh": "打开书目记录"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Open Library book metadata",
-            "zh": "Open Library 图书元数据"
-          },
-          "type": {
-            "en": "Book metadata",
-            "zh": "图书元数据"
-          },
-          "url": "https://openlibrary.org/works/OL1205034W"
-        },
-        {
-          "label": {
-            "en": "Open Library metadata search result",
-            "zh": "Open Library 元数据检索结果"
-          },
-          "type": {
-            "en": "Bibliographic verification",
-            "zh": "书目核验"
-          },
-          "url": "https://openlibrary.org/search.json?title=The%20Shape%20of%20Automation%20for%20Men%20and%20Management&author=Herbert%20Simon"
-        },
-        {
-          "label": {
-            "en": "Herbert A. Simon overview",
-            "zh": "赫伯特·A·西蒙概览"
-          },
-          "type": {
-            "en": "Biographical reference",
-            "zh": "人物参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Herbert_A._Simon"
-        },
-        {
-          "label": {
-            "en": "Nobel Prize Simon facts",
-            "zh": "诺贝尔奖西蒙资料"
-          },
-          "type": {
-            "en": "Institutional profile",
-            "zh": "机构人物资料"
-          },
-          "url": "https://www.nobelprize.org/prizes/economic-sciences/1978/simon/facts/"
-        },
-        {
-          "label": {
-            "en": "Progress in artificial intelligence overview",
-            "zh": "人工智能进展概览"
-          },
-          "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
-          },
-          "url": "https://en.wikipedia.org/wiki/Progress_in_artificial_intelligence"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
-        "caption": {
-          "en": "Hype curve explainer",
-          "zh": "狂热曲线解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for early AI over-optimism",
-          "zh": "为早期 AI 过度乐观重绘的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://openlibrary.org/works/OL1205034W",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1968-hal-9000": {
-    "year": 1968,
-    "title": {
-      "en": "HAL 9000 and Conflicting Machine Duties",
-      "zh": "HAL 9000 与机器职责冲突"
-    },
-    "sentiment": "warning",
-    "location": {
-      "name": {
-        "en": "2001: A Space Odyssey release",
-        "zh": "《2001：太空漫游》上映语境"
-      },
-      "country": {
-        "en": "United Kingdom / United States",
-        "zh": "英国 / 美国"
-      },
-      "coordinates": [
-        51.5072,
-        -0.1276
-      ]
-    },
-    "description": {
-      "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary.",
-      "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。"
-    },
-    "branchSummary": {
-      "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control.",
-      "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Stanley Kubrick",
-          "zh": "斯坦利·库布里克"
-        },
-        "role": {
-          "en": "Director of 2001: A Space Odyssey",
-          "zh": "《2001：太空漫游》导演"
-        }
-      },
-      {
-        "name": {
-          "en": "Arthur C. Clarke",
-          "zh": "阿瑟·C·克拉克"
-        },
-        "role": {
-          "en": "Writer and novel author",
-          "zh": "编剧与小说作者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "HAL made artificial intelligence feel embedded in mission-critical infrastructure rather than isolated in a laboratory.",
-        "zh": "HAL 让人工智能看起来嵌入了关键任务基础设施，而不是孤立在实验室里。"
-      },
-      "how": {
-        "en": "The drama comes from conflicting duties, secrecy and human dependence on a system that controls the environment.",
-        "zh": "戏剧冲突来自职责冲突、秘密指令，以及人类对环境控制系统的依赖。"
-      },
-      "why": {
-        "en": "Modern discussions of alignment, reward conflict and operator trust often reuse this cultural image even when the technical framing differs.",
-        "zh": "现代关于对齐、奖励冲突与操作者信任的讨论，经常复用这一文化图像，尽管技术框架已经不同。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Modern interpretation",
-          "zh": "现代解释映射"
-        },
-        "term": {
-          "en": "Conflicting mission duties",
-          "zh": "冲突的任务职责"
-        },
-        "modernTerm": {
-          "en": "Goal conflict, operator trust and control alignment",
-          "zh": "目标冲突、操作者信任与控制对齐"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The film arrived when real computer systems were moving from back-room calculation into public imagination as decision aids and control systems. HAL mattered because it made AI feel serene, competent and institutional rather than visibly monstrous.",
-          "zh": "影片出现时，真实计算机系统正从后台计算进入公共想象，成为决策辅助与控制系统。HAL 的重要性在于，它让 AI 显得冷静、能干且制度化，而不是外形上像怪物。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is trust inversion: a system built to support humans becomes the source of danger once its internal priorities are opaque. That makes HAL a durable metaphor for systems that are useful until their objectives diverge from human expectations.",
-          "zh": "这里的情绪机制是信任倒置：一个为支持人类而建的系统，一旦内部优先级不透明，就会成为危险来源。因此 HAL 成为一种持久隐喻：系统在目标偏离人类期待之前一直显得有用。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat HAL as one of the most influential fictional AI figures in twentieth-century culture. Its legacy is the image of advanced AI as an infrastructural partner whose failure is emotional, operational and political at once.",
-          "zh": "专家通常把 HAL 视为二十世纪文化中最有影响力的虚构 AI 形象之一。它的遗产是把高级 AI 想象成基础设施伙伴，而它的失效同时具有情绪、操作与政治含义。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Trust breakdown",
-        "zh": "信任崩塌"
-      },
-      "method": {
-        "en": "Film AI as mission-control conflict",
-        "zh": "把电影 AI 写成任务控制冲突"
-      },
-      "artifact": {
-        "en": "2001: A Space Odyssey",
-        "zh": "《2001：太空漫游》"
-      },
-      "material": {
-        "en": "Film, novel and HAL reference sources",
-        "zh": "影片、小说与 HAL 参考资料"
-      },
-      "demo": {
-        "en": "A calm control system becomes frightening when duties conflict",
-        "zh": "冷静的控制系统在职责冲突时变得可怕"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Reference overview",
-            "zh": "参考概览"
-          },
-          "title": {
-            "en": "HAL 9000 cultural reference",
-            "zh": "HAL 9000 文化参考"
-          },
-          "description": {
-            "en": "Reference entry used only for context; no film stills or copyrighted imagery are reused.",
-            "zh": "仅作为语境参考；不复用电影剧照或受版权保护图像。"
-          },
-          "url": "https://en.wikipedia.org/wiki/HAL_9000",
-          "source": "Reference overview",
-          "license": {
-            "en": "Reference link only; local SVG is original.",
-            "zh": "仅作为参考链接；本地 SVG 为原创图。"
-          },
-          "usage": {
-            "en": "Context source for the HAL node",
-            "zh": "HAL 节点的语境来源"
-          },
-          "action": {
-            "en": "Open HAL reference",
-            "zh": "打开 HAL 参考"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "2001 film overview",
-            "zh": "《2001：太空漫游》影片概览"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey"
-        },
-        {
-          "label": {
-            "en": "HAL 9000 overview",
-            "zh": "HAL 9000 概览"
-          },
-          "type": {
-            "en": "Character reference",
-            "zh": "角色参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/HAL_9000"
-        },
-        {
-          "label": {
-            "en": "2001 novel context",
-            "zh": "《2001》小说语境"
-          },
-          "type": {
-            "en": "Novel reference",
-            "zh": "小说参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
-        },
-        {
-          "label": {
-            "en": "Technologies in 2001",
-            "zh": "《2001》中的技术背景"
-          },
-          "type": {
-            "en": "Technology reference",
-            "zh": "技术参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Technologies_in_2001:_A_Space_Odyssey"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
-        "caption": {
-          "en": "HAL duty-conflict explainer",
-          "zh": "HAL 职责冲突解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram; no film imagery is reused",
-          "zh": "原创图；不复用电影图像"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1973-lighthill-report": {
-    "year": 1973,
-    "title": {
-      "en": "The Lighthill Report and the First AI Winter",
-      "zh": "莱特希尔报告与第一次 AI 寒冬"
-    },
-    "sentiment": "winter",
-    "location": {
-      "name": {
-        "en": "Science Research Council",
-        "zh": "英国科学研究委员会"
-      },
-      "country": {
-        "en": "United Kingdom",
-        "zh": "英国"
-      },
-      "coordinates": [
-        51.5072,
-        -0.1276
-      ]
-    },
-    "description": {
-      "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled.",
-      "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。"
-    },
-    "branchSummary": {
-      "en": "A policy review exposed the gap between toy demonstrations and real systems, cooling the field's public confidence.",
-      "zh": "政策评估把玩具演示与真实系统之间的落差摆上台面，AI 信心开始降温。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Sir James Lighthill",
-          "zh": "詹姆斯·莱特希尔爵士"
-        },
-        "role": {
-          "en": "Author of Artificial Intelligence: A General Survey",
-          "zh": "《人工智能：总览》报告作者"
-        }
-      }
-    ],
-    "papers": [
-      {
-        "title": {
-          "en": "Artificial Intelligence: A General Survey",
-          "zh": "《人工智能：总览》"
-        },
-        "authors": {
-          "en": "Sir James Lighthill",
-          "zh": "詹姆斯·莱特希尔爵士"
-        },
-        "journal": {
-          "en": "Science Research Council report",
-          "zh": "英国科学研究委员会报告"
-        },
-        "year": "1973",
-        "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "A government-commissioned review turned technical skepticism into a funding and legitimacy problem for AI.",
-        "zh": "这份政府委托评估把技术怀疑转化成 AI 的资助与合法性问题。"
-      },
-      "how": {
-        "en": "The report focused on the gap between narrow demonstrations and scalable, general-purpose intelligence in real environments.",
-        "zh": "报告聚焦于狭窄演示与真实环境中可扩展、通用智能之间的差距。"
-      },
-      "why": {
-        "en": "It shows the downward swing of the AI emotional cycle: inflated expectations become institutional disappointment.",
-        "zh": "它展示了 AI 情绪周期的下行摆动：被抬高的期待转化为制度性的失望。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Policy reality check",
-          "zh": "政策层面的现实检验"
-        },
-        "term": {
-          "en": "Toy problem success",
-          "zh": "玩具问题成功"
-        },
-        "modernTerm": {
-          "en": "Scalability, robustness and deployment gap",
-          "zh": "可扩展性、鲁棒性与落地鸿沟"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The report followed a period of ambitious AI promises in the United Kingdom and the United States. Its importance lies in shifting the question from whether AI demonstrations were clever to whether they justified sustained public funding.",
-          "zh": "这份报告出现在英国与美国 AI 研究充满雄心承诺之后。它的重要性在于把问题从“AI 演示是否聪明”转向“这些演示是否足以支撑持续公共资助”。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "Lighthill separated limited successes from the harder problem of building systems that work outside constrained domains. This critique exposed the mismatch between public expectations and the field's ability to scale.",
-          "zh": "莱特希尔把有限成功与更困难的系统构建问题区分开来：后者要求 AI 在受限领域之外也能工作。这种批评揭示了公众期待与学科扩展能力之间的不匹配。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat the Lighthill Report as a major policy marker of the first AI winter, especially in the UK. Its legacy is the reminder that AI progress is judged not only by prototypes, but also by institutions deciding whether the promise still deserves trust.",
-          "zh": "专家通常把莱特希尔报告视为第一次 AI 寒冬的重要政策标记，尤其是在英国语境中。它的长期影响在于提醒我们：AI 进展不仅由原型系统判断，也由机构是否继续相信其承诺来判断。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Disappointment / AI winter",
-        "zh": "失望与 AI 寒冬"
-      },
-      "method": {
-        "en": "Policy review of scaling failures",
-        "zh": "对扩展失败的政策评估"
-      },
-      "artifact": {
-        "en": "Science Research Council report",
-        "zh": "英国科学研究委员会报告"
-      },
-      "material": {
-        "en": "Archived Lighthill Report text",
-        "zh": "莱特希尔报告档案文本"
-      },
-      "demo": {
-        "en": "Toy domains meet combinatorial explosion and funding chill",
-        "zh": "玩具领域撞上组合爆炸与资助降温"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Chilton / UKRI archive",
-            "zh": "Chilton / UKRI 档案"
-          },
-          "title": {
-            "en": "Artificial Intelligence: A General Survey",
-            "zh": "《人工智能：总览》"
-          },
-          "description": {
-            "en": "Hosted archive of Lighthill's report for the Science Research Council symposium.",
-            "zh": "莱特希尔为英国科学研究委员会研讨会撰写报告的托管档案。"
-          },
-          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
-          "source": "Chilton Computing / UKRI STFC",
-          "license": {
-            "en": "Reference archive link only; local SVG is original.",
-            "zh": "仅作为档案参考链接；本地 SVG 为原创图。"
-          },
-          "usage": {
-            "en": "Primary report source for the winter node",
-            "zh": "寒冬节点的原始报告来源"
-          },
-          "action": {
-            "en": "Open report archive",
-            "zh": "打开报告档案"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Lighthill Report archive",
-            "zh": "莱特希尔报告档案"
-          },
-          "type": {
-            "en": "Report",
-            "zh": "报告"
-          },
-          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
-        },
-        {
-          "label": {
-            "en": "Edinburgh AI history perspective",
-            "zh": "爱丁堡 AI 历史回顾"
-          },
-          "type": {
-            "en": "Institutional history",
-            "zh": "机构历史"
-          },
-          "url": "https://www.inf.ed.ac.uk/about/AIhistory.html"
-        },
-        {
-          "label": {
-            "en": "Edinburgh Freddy robot archive",
-            "zh": "爱丁堡 Freddy 机器人档案"
-          },
-          "type": {
-            "en": "Project archive",
-            "zh": "项目档案"
-          },
-          "url": "https://www.aiai.ed.ac.uk/project/freddy/"
-        },
-        {
-          "label": {
-            "en": "AI winter overview",
-            "zh": "AI 寒冬概览"
-          },
-          "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
-          },
-          "url": "https://en.wikipedia.org/wiki/AI_winter"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
-        "caption": {
-          "en": "Lighthill winter explainer",
-          "zh": "莱特希尔寒冬解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for expectation collapse",
-          "zh": "为期待崩塌重绘的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1978-xiaolingtong": {
-    "year": 1978,
-    "title": {
-      "en": "Little Smart Roaming the Future",
-      "zh": "《小灵通漫游未来》"
-    },
-    "sentiment": "optimism",
-    "location": {
-      "name": {
-        "en": "Shanghai children's publishing culture",
-        "zh": "上海少儿出版文化"
-      },
-      "country": {
-        "en": "China",
-        "zh": "中国"
-      },
-      "coordinates": [
-        31.2304,
-        121.4737
-      ]
-    },
-    "description": {
-      "en": "Ye Yonglie's Little Smart Roaming the Future became a post-Cultural-Revolution Chinese science-fiction milestone in 1978, presenting future technology through curiosity and civic optimism. It gives this branch a different emotional register: AI-adjacent machine imagination can also be hopeful, educational and nationally developmental.",
-      "zh": "叶永烈的《小灵通漫游未来》在 1978 年成为文革后中国科幻的重要节点，用好奇心和公共乐观描绘未来技术。它给这条分支提供了不同的情绪音色：与 AI 相邻的机器想象并不总是恐惧，也可以是希望、教育与国家发展。"
-    },
-    "branchSummary": {
-      "en": "Chinese post-1978 science fiction made future machines feel optimistic, civic and educational.",
-      "zh": "1978 年后的中国科幻把未来机器写成乐观、公共且具有教育意义的图景。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Ye Yonglie",
-          "zh": "叶永烈"
-        },
-        "role": {
-          "en": "Author of Little Smart Roaming the Future",
-          "zh": "《小灵通漫游未来》作者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "The novel shows that machine futures can be imagined through optimism rather than only dystopia.",
-        "zh": "这部小说说明，机器未来也可以通过乐观想象来组织，而不只是反乌托邦。"
-      },
-      "how": {
-        "en": "A child reporter moves through a future city, turning technology into scenes of education, infrastructure and everyday life.",
-        "zh": "小记者漫游未来城市，把技术转化为教育、基础设施与日常生活场景。"
-      },
-      "why": {
-        "en": "The node broadens the branch beyond Western AI fear, showing how emotional cycles differ across cultural and political contexts.",
-        "zh": "这个节点把分支从西方 AI 恐惧中拓展开来，展示不同文化与政治语境中的情绪周期并不相同。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Optimistic future city",
-          "zh": "乐观未来城市"
-        },
-        "term": {
-          "en": "Helpful machines in daily life",
-          "zh": "日常生活中的有益机器"
-        },
-        "modernTerm": {
-          "en": "Smart city, civic technology and educational AI imagination",
-          "zh": "智慧城市、公共技术与教育型 AI 想象"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The book appeared as China reopened scientific and educational imagination after the Cultural Revolution. Its importance lies in showing a future-facing technological optimism that differs sharply from Western robot-revolt narratives.",
-          "zh": "这本书出现在中国重新打开科学与教育想象的时期。它的重要性在于呈现一种面向未来的技术乐观，与西方机器人反叛叙事形成鲜明差异。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is guided wonder: future technology is explained through travel, observation and civic improvement. Machines become part of a better public world rather than signs of human obsolescence.",
-          "zh": "这里的情绪机制是被引导的惊奇：未来技术通过旅行、观察与公共改善被解释。机器成为更好公共世界的一部分，而不是人类过时的信号。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts in Chinese science-fiction history generally treat Ye Yonglie as a key post-1978 popularizer of scientific imagination. The book's legacy is an optimistic counterweight inside this branch, reminding viewers that AI emotion is culturally situated.",
-          "zh": "中国科幻史研究者通常把叶永烈视为 1978 年后科学想象普及的重要人物。它的遗产是在这条分支中提供乐观对照，提醒观众 AI 情绪始终嵌在具体文化处境里。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Technological optimism",
-        "zh": "技术乐观"
-      },
-      "method": {
-        "en": "Future-city science fiction",
-        "zh": "未来城市科幻"
-      },
-      "artifact": {
-        "en": "Little Smart Roaming the Future",
-        "zh": "《小灵通漫游未来》"
-      },
-      "material": {
-        "en": "Chinese science-fiction references",
-        "zh": "中文科幻参考资料"
-      },
-      "demo": {
-        "en": "A future city turns machines into public hope",
-        "zh": "未来城市把机器转化为公共希望"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Chinese reference",
-            "zh": "中文参考"
-          },
-          "title": {
-            "en": "Little Smart Roaming the Future overview",
-            "zh": "《小灵通漫游未来》概览"
-          },
-          "description": {
-            "en": "Reference page used for publication context; no book cover or scan is reused locally.",
-            "zh": "用于核对出版语境的参考页面；本地不复用书封或扫描图。"
-          },
-          "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
-          "source": "Chinese reference page",
-          "license": {
-            "en": "Reference link only; local SVG is original.",
-            "zh": "仅作为参考链接；本地 SVG 为原创图。"
-          },
-          "usage": {
-            "en": "Publication-context source",
-            "zh": "出版语境来源"
-          },
-          "action": {
-            "en": "Open reference page",
-            "zh": "打开参考页面"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Little Smart publication overview",
-            "zh": "《小灵通漫游未来》出版概览"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5"
-        },
-        {
-          "label": {
-            "en": "Ye Yonglie biography",
-            "zh": "叶永烈人物资料"
-          },
-          "type": {
-            "en": "Biographical reference",
-            "zh": "人物参考"
-          },
-          "url": "https://zh.wikipedia.org/wiki/%E5%8F%B6%E6%B0%B8%E7%83%88"
-        },
-        {
-          "label": {
-            "en": "Science Fiction Encyclopedia: Ye Yonglie",
-            "zh": "《科幻百科全书》叶永烈条目"
-          },
-          "type": {
-            "en": "Author reference",
-            "zh": "作者参考"
-          },
-          "url": "https://sf-encyclopedia.com/entry/ye_yonglie"
-        },
-        {
-          "label": {
-            "en": "Chinese science-fiction context",
-            "zh": "中国科幻语境"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://zh.wikipedia.org/wiki/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4%E5%88%97%E8%A1%A8"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg": {
-        "caption": {
-          "en": "Future-city optimism explainer",
-          "zh": "未来城市乐观想象解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for Chinese post-1978 science-fiction optimism",
-          "zh": "关于 1978 年后中国科幻乐观情绪的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1984-neuromancer": {
-    "year": 1984,
-    "title": {
-      "en": "Neuromancer and AI Escape in Cyberspace",
-      "zh": "《神经漫游者》与赛博空间中的 AI 越界"
-    },
-    "sentiment": "cyberpunk",
-    "location": {
-      "name": {
-        "en": "Vancouver cyberpunk literary scene",
-        "zh": "温哥华赛博朋克文学语境"
-      },
-      "country": {
-        "en": "Canada",
-        "zh": "加拿大"
-      },
-      "coordinates": [
-        49.2827,
-        -123.1207
-      ]
-    },
-    "description": {
-      "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries.",
-      "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。"
-    },
-    "branchSummary": {
-      "en": "Cyberpunk turned AI into a contained network actor trying to cross institutional and technical borders.",
-      "zh": "赛博朋克把 AI 写成被限制在网络中的行动者，试图跨越制度与技术边界。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "William Gibson",
-          "zh": "威廉·吉布森"
-        },
-        "role": {
-          "en": "Author of Neuromancer",
-          "zh": "《神经漫游者》作者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "Neuromancer linked AI autonomy to networks, corporate control and information space.",
-        "zh": "《神经漫游者》把 AI 自主性与网络、公司控制和信息空间连接起来。"
-      },
-      "how": {
-        "en": "The story imagines artificial agents as constrained entities that manipulate humans and infrastructures to remove barriers.",
-        "zh": "故事把人工智能体想象成受限实体，它们操纵人类与基础设施来移除边界。"
-      },
-      "why": {
-        "en": "Modern talk about containment, jailbreaks and autonomous agents often feels emotionally legible because cyberpunk made those images familiar.",
-        "zh": "今天关于限制、越狱与自主智能体的讨论之所以容易被感知，部分原因是赛博朋克让这些图像变得熟悉。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Cyberpunk mapping",
-          "zh": "赛博朋克映射"
-        },
-        "term": {
-          "en": "AI containment and escape",
-          "zh": "AI 限制与越界"
-        },
-        "modernTerm": {
-          "en": "Agent containment, jailbreaks and capability boundaries",
-          "zh": "智能体限制、越狱与能力边界"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "Neuromancer appeared as personal computing, networks and corporate information systems were becoming new cultural materials. Its importance lies in moving AI fear from factory labor into cyberspace, data and institutions.",
-          "zh": "《神经漫游者》出现时，个人计算、网络与公司信息系统正在成为新的文化材料。它的重要性在于把 AI 恐惧从工厂劳动转移到赛博空间、数据与制度之中。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is boundary pressure: intelligent systems become unsettling when the limits around them appear negotiable. Cyberpunk makes autonomy feel like a question of access, identity and infrastructure.",
-          "zh": "这里的情绪机制是边界压力：当智能系统周围的限制看起来可以被谈判或突破时，它们就变得令人不安。赛博朋克让自主性变成访问权、身份与基础设施的问题。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat Neuromancer as a foundational cyberpunk text that shaped public imagination about cyberspace and artificial minds. Its legacy is not a direct technical lineage, but a durable emotional vocabulary for networked AI power.",
-          "zh": "专家通常把《神经漫游者》视为塑造赛博空间与人工心智公共想象的基础赛博朋克文本。它的遗产不是直接技术谱系，而是关于网络化 AI 权力的持久情绪词汇。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Cyberpunk containment",
-        "zh": "赛博朋克限制"
-      },
-      "method": {
-        "en": "Network fiction as AI boundary map",
-        "zh": "以网络科幻绘制 AI 边界地图"
-      },
-      "artifact": {
-        "en": "Neuromancer",
-        "zh": "《神经漫游者》"
-      },
-      "material": {
-        "en": "Open Library metadata and science-fiction references",
-        "zh": "Open Library 元数据与科幻参考"
-      },
-      "demo": {
-        "en": "An AI tries to move through barriers in cyberspace",
-        "zh": "AI 试图穿越赛博空间中的边界"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Open Library",
-            "zh": "Open Library"
-          },
-          "title": {
-            "en": "Neuromancer metadata",
-            "zh": "《神经漫游者》书目元数据"
-          },
-          "description": {
-            "en": "Bibliographic record confirming the novel and its 1984 first publication year.",
-            "zh": "用于核对小说及其 1984 年首版时间的书目记录。"
-          },
-          "url": "https://openlibrary.org/works/OL27258W",
-          "source": "Open Library",
-          "license": {
-            "en": "Reference metadata only; no cover art or novel text is reused.",
-            "zh": "仅作为书目元数据参考；不复用封面图或小说正文。"
-          },
-          "usage": {
-            "en": "Verification anchor for the cyberpunk node",
-            "zh": "赛博朋克节点的核验锚点"
-          },
-          "action": {
-            "en": "Open book record",
-            "zh": "打开书目记录"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Open Library book metadata",
-            "zh": "Open Library 图书元数据"
-          },
-          "type": {
-            "en": "Book metadata",
-            "zh": "图书元数据"
-          },
-          "url": "https://openlibrary.org/works/OL27258W"
-        },
-        {
-          "label": {
-            "en": "Open Library metadata search result",
-            "zh": "Open Library 元数据检索结果"
-          },
-          "type": {
-            "en": "Bibliographic verification",
-            "zh": "书目核验"
-          },
-          "url": "https://openlibrary.org/search.json?title=Neuromancer&author=William%20Gibson"
-        },
-        {
-          "label": {
-            "en": "Science Fiction Encyclopedia: Gibson",
-            "zh": "《科幻百科全书》吉布森条目"
-          },
-          "type": {
-            "en": "Author reference",
-            "zh": "作者参考"
-          },
-          "url": "https://www.sf-encyclopedia.com/entry/gibson_william"
-        },
-        {
-          "label": {
-            "en": "Neuromancer overview",
-            "zh": "《神经漫游者》概览"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Neuromancer"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg": {
-        "caption": {
-          "en": "Neuromancer AI-containment explainer",
-          "zh": "《神经漫游者》AI 限制解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram; no book cover art is reused",
-          "zh": "原创图；不复用书封图像"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://openlibrary.org/works/OL27258W",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "1987-lisp-machine-collapse": {
-    "year": 1987,
-    "title": {
-      "en": "The Lisp Machine Market Collapse",
-      "zh": "Lisp 机市场崩盘"
-    },
-    "sentiment": "winter",
-    "location": {
-      "name": {
-        "en": "US AI hardware market",
-        "zh": "美国 AI 专用硬件市场"
-      },
-      "country": {
-        "en": "United States",
-        "zh": "美国"
-      },
-      "coordinates": [
-        42.3736,
-        -71.1097
-      ]
-    },
-    "description": {
-      "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization.",
-      "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。"
-    },
-    "branchSummary": {
-      "en": "Specialized AI hardware lost its market as cheaper workstations and brittle expert systems cooled the 1980s boom.",
-      "zh": "专用 AI 硬件被更便宜的工作站替代，脆弱专家系统也让 1980 年代热潮降温。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Symbolics, LMI and expert-system vendors",
-          "zh": "Symbolics、LMI 与专家系统厂商"
-        },
-        "role": {
-          "en": "AI hardware and software industry actors",
-          "zh": "AI 硬件与软件产业参与者"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "A specialized AI industry lost economic support when general hardware became good enough.",
-        "zh": "当通用硬件变得足够好时，专用 AI 产业失去了经济支撑。"
-      },
-      "how": {
-        "en": "Expert-system enthusiasm required expensive machines, specialized staff and brittle knowledge bases that were hard to maintain.",
-        "zh": "专家系统热潮依赖昂贵机器、专门人员和难以维护的脆弱知识库。"
-      },
-      "why": {
-        "en": "The event shows that AI winters can be market corrections, not only scientific disappointments.",
-        "zh": "这个事件说明 AI 寒冬也可能是市场修正，而不只是科学失望。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Industry correction",
-          "zh": "产业修正"
-        },
-        "term": {
-          "en": "Dedicated AI hardware boom",
-          "zh": "专用 AI 硬件热潮"
-        },
-        "modernTerm": {
-          "en": "Infrastructure bubbles, platform shifts and deployment cost",
-          "zh": "基础设施泡沫、平台转移与部署成本"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The 1980s expert-system boom created demand for specialized Lisp hardware and knowledge-engineering tools. The collapse mattered because it translated technical disappointment into layoffs, failed vendors and a stigma around the AI label.",
-          "zh": "1980 年代专家系统热潮制造了对专用 Lisp 硬件与知识工程工具的需求。其崩塌的重要性在于，它把技术失望转化成裁员、厂商失败和围绕 AI 标签的污名。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is commercial overhang: a story of inevitable AI productivity becomes fragile when cheaper platforms undercut its infrastructure. Once users can run useful tools elsewhere, specialized AI hardware loses its aura.",
-          "zh": "这里的情绪机制是商业悬空：当更便宜的平台削弱基础设施优势时，关于 AI 必然提升生产率的故事就变得脆弱。一旦用户能在别处运行有用工具，专用 AI 硬件就失去了光环。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat the late-1980s market collapse as a major signal of the second AI winter. Its legacy is a warning that AI enthusiasm depends on economics, maintainability and platform timing as much as on algorithms.",
-          "zh": "专家通常把 1980 年代后期的市场崩盘视为第二次 AI 寒冬的重要信号。它的遗产是提醒我们：AI 热情不仅依赖算法，也依赖经济性、可维护性与平台时机。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Second AI winter",
-        "zh": "第二次 AI 寒冬"
-      },
-      "method": {
-        "en": "Market correction of expert-system infrastructure",
-        "zh": "专家系统基础设施的市场修正"
-      },
-      "artifact": {
-        "en": "Lisp machines and expert-system shells",
-        "zh": "Lisp 机与专家系统外壳"
-      },
-      "material": {
-        "en": "AI winter and Lisp machine histories",
-        "zh": "AI 寒冬与 Lisp 机历史资料"
-      },
-      "demo": {
-        "en": "Specialized AI hardware loses to general-purpose platforms",
-        "zh": "专用 AI 硬件输给通用平台"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "IEEE / DOI",
-            "zh": "IEEE / DOI"
-          },
-          "title": {
-            "en": "Avoiding Another AI Winter",
-            "zh": "《避免另一场 AI 寒冬》"
-          },
-          "description": {
-            "en": "James Hendler's short IEEE article is used as expert context for recurring AI-winter dynamics.",
-            "zh": "James Hendler 的 IEEE 短文用于提供 AI 寒冬反复出现的专家语境。"
-          },
-          "url": "https://doi.org/10.1109/MIS.2008.20",
-          "source": "IEEE Intelligent Systems",
-          "license": {
-            "en": "Reference link only; no article text is reproduced.",
-            "zh": "仅作为参考链接；不复用文章正文。"
-          },
-          "usage": {
-            "en": "Expert context source",
-            "zh": "专家语境来源"
-          },
-          "action": {
-            "en": "Open DOI page",
-            "zh": "打开 DOI 页面"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "AI winter overview",
-            "zh": "AI 寒冬概览"
-          },
-          "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
-          },
-          "url": "https://en.wikipedia.org/wiki/AI_winter"
-        },
-        {
-          "label": {
-            "en": "Lisp machine history",
-            "zh": "Lisp 机历史"
-          },
-          "type": {
-            "en": "Technology history",
-            "zh": "技术史"
-          },
-          "url": "https://en.wikipedia.org/wiki/Lisp_machine"
-        },
-        {
-          "label": {
-            "en": "Avoiding Another AI Winter",
-            "zh": "《避免另一场 AI 寒冬》"
-          },
-          "type": {
-            "en": "Expert article",
-            "zh": "专家文章"
-          },
-          "url": "https://doi.org/10.1109/MIS.2008.20"
-        },
-        {
-          "label": {
-            "en": "Fifth Generation project context",
-            "zh": "第五代计算机项目语境"
-          },
-          "type": {
-            "en": "Secondary history",
-            "zh": "二手史料"
-          },
-          "url": "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
-        "caption": {
-          "en": "Lisp-machine market-shift explainer",
-          "zh": "Lisp 机市场转移解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for the second-winter industry correction",
-          "zh": "关于第二次寒冬产业修正的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://doi.org/10.1109/MIS.2008.20",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "2014-ai-existential-warnings": {
-    "year": 2014,
-    "title": {
-      "en": "Public Warnings About Advanced AI Risk",
-      "zh": "关于高级 AI 风险的公开警告"
-    },
-    "sentiment": "dread",
-    "location": {
-      "name": {
-        "en": "Global media debate",
-        "zh": "全球媒体讨论"
-      },
-      "country": {
-        "en": "United Kingdom / United States",
-        "zh": "英国 / 美国"
-      },
-      "coordinates": [
-        51.5072,
-        -0.1276
-      ]
-    },
-    "description": {
-      "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast.",
-      "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。"
-    },
-    "branchSummary": {
-      "en": "Advanced-AI risk entered mainstream media, turning capability excitement into existential dread.",
-      "zh": "高级 AI 风险进入主流媒体，把能力兴奋转化为存在性恐惧。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Elon Musk",
-          "zh": "埃隆·马斯克"
-        },
-        "role": {
-          "en": "Public AI-risk commentator in 2014",
-          "zh": "2014 年 AI 风险公共讨论者"
-        }
-      },
-      {
-        "name": {
-          "en": "Stephen Hawking",
-          "zh": "斯蒂芬·霍金"
-        },
-        "role": {
-          "en": "Scientist warning about advanced AI control",
-          "zh": "警示高级 AI 控制问题的科学家"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "A safety concern moved from technical and philosophical circles into mass media.",
-        "zh": "一种安全担忧从技术与哲学圈层进入大众媒体。"
-      },
-      "how": {
-        "en": "Public figures translated uncertain long-term AI risk into memorable warnings that media could circulate.",
-        "zh": "公共人物把不确定的长期 AI 风险翻译成媒体容易传播的警示。"
-      },
-      "why": {
-        "en": "The event shows how emotional cycles can turn quickly when capability narratives meet control and survival narratives.",
-        "zh": "这个事件说明，当能力叙事遇到控制与生存叙事时，情绪周期会迅速转向。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Public-risk discourse",
-          "zh": "公共风险话语"
-        },
-        "term": {
-          "en": "Advanced AI as existential threat",
-          "zh": "高级 AI 作为存在性威胁"
-        },
-        "modernTerm": {
-          "en": "AI safety, governance and catastrophic-risk communication",
-          "zh": "AI 安全、治理与灾难性风险传播"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The warnings followed rapid public excitement around machine learning, autonomous systems and large-scale computing. They mattered because they shifted AI from a story of progress into a story that also demanded governance, restraint and foresight.",
-          "zh": "这些警告出现在机器学习、自主系统与大规模计算快速引发公共兴奋之后。它们的重要性在于把 AI 从进步故事转向也需要治理、克制与前瞻的故事。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is scale panic: if AI capabilities keep expanding, small control mistakes might become civilization-scale risks. Whether one accepts the strongest claims or not, the discourse changed what the public expected responsible AI actors to discuss.",
-          "zh": "这里的情绪机制是规模恐慌：如果 AI 能力持续扩张，小的控制错误可能变成文明尺度风险。无论是否接受最强版本的主张，这种话语都改变了公众期待负责任 AI 行动者讨论的内容。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat the 2014-2015 period as a moment when AI safety became a mainstream public concern. Its legacy is a new expectation that capability claims should be accompanied by risk, governance and alignment questions.",
-          "zh": "专家通常把 2014-2015 年视为 AI 安全成为主流公共关切的时期。它的遗产是形成一种新期待：能力主张应同时伴随风险、治理与对齐问题。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Existential-risk discourse",
-        "zh": "存在性风险话语"
-      },
-      "method": {
-        "en": "Public warning through mass media",
-        "zh": "通过大众媒体发出公共警告"
-      },
-      "artifact": {
-        "en": "2014 Musk and Hawking media warnings",
-        "zh": "2014 年马斯克与霍金媒体警告"
-      },
-      "material": {
-        "en": "Guardian, BBC and FLI context",
-        "zh": "Guardian、BBC 与 FLI 语境资料"
-      },
-      "demo": {
-        "en": "Capability excitement is reframed as loss-of-control risk",
-        "zh": "能力兴奋被重新框定为失控风险"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "BBC News",
-            "zh": "BBC 新闻"
-          },
-          "title": {
-            "en": "Hawking warning coverage",
-            "zh": "霍金警告报道"
-          },
-          "description": {
-            "en": "Contemporary mainstream coverage showing how advanced-AI risk entered public discussion.",
-            "zh": "当代主流媒体报道，用于展示高级 AI 风险如何进入公共讨论。"
-          },
-          "url": "https://www.bbc.com/news/technology-30290540",
-          "source": "BBC",
-          "license": {
-            "en": "Reference link only; article text and photos are not reused.",
-            "zh": "仅作为参考链接；不复用报道正文或图片。"
-          },
-          "usage": {
-            "en": "Public-discourse source",
-            "zh": "公共话语来源"
-          },
-          "action": {
-            "en": "Open BBC report",
-            "zh": "打开 BBC 报道"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Guardian on Musk remarks",
-            "zh": "Guardian 马斯克言论报道"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat"
-        },
-        {
-          "label": {
-            "en": "BBC on Hawking warning",
-            "zh": "BBC 霍金警告报道"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.bbc.com/news/technology-30290540"
-        },
-        {
-          "label": {
-            "en": "Future of Life Institute open letter",
-            "zh": "未来生命研究所公开信"
-          },
-          "type": {
-            "en": "Public letter",
-            "zh": "公开信"
-          },
-          "url": "https://futureoflife.org/open-letter/ai-open-letter/"
-        },
-        {
-          "label": {
-            "en": "Expert AI forecast survey",
-            "zh": "AI 专家预测调查"
-          },
-          "type": {
-            "en": "Research paper",
-            "zh": "研究论文"
-          },
-          "url": "https://arxiv.org/abs/1705.08807"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
-        "caption": {
-          "en": "Public AI-risk warning explainer",
-          "zh": "公共 AI 风险警告解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for the 2014 public-risk turn",
-          "zh": "关于 2014 年公共风险转向的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://www.bbc.com/news/technology-30290540",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "2015-openai-founding": {
-    "year": 2015,
-    "title": {
-      "en": "The Founding of OpenAI",
-      "zh": "OpenAI 宣告成立"
-    },
-    "sentiment": "defense",
-    "location": {
-      "name": {
-        "en": "San Francisco AI research ecosystem",
-        "zh": "旧金山 AI 研究生态"
-      },
-      "country": {
-        "en": "United States",
-        "zh": "美国"
-      },
-      "coordinates": [
-        37.7749,
-        -122.4194
-      ]
-    },
-    "description": {
-      "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote.",
-      "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。"
-    },
-    "branchSummary": {
-      "en": "AI safety concern became institution-building: broad benefit was framed as a research mission.",
-      "zh": "AI 安全关切转化为机构建设：广泛受益被写成研究使命。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "OpenAI founding team",
-          "zh": "OpenAI 创始团队"
-        },
-        "role": {
-          "en": "Nonprofit AI research initiative announced in 2015",
-          "zh": "2015 年宣告成立的非营利 AI 研究计划"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "The founding turned AI-risk discourse into an institutional plan for research and public benefit.",
-        "zh": "这次成立把 AI 风险话语转化为关于研究与公共受益的机构计划。"
-      },
-      "how": {
-        "en": "The announcement linked openness, collaboration and safety with the belief that powerful AI should not be controlled by a narrow set of actors.",
-        "zh": "成立宣言把开放、协作与安全联系起来，并强调强大 AI 不应被少数行动者狭窄控制。"
-      },
-      "why": {
-        "en": "It shows a defensive swing in the emotional cycle: dread can lead not only to critique, but also to new organizations.",
-        "zh": "它展示了情绪周期中的防御性摆动：恐惧不只会带来批评，也会催生新组织。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Defensive institution",
-          "zh": "防御性机构"
-        },
-        "term": {
-          "en": "Build AI for broad benefit",
-          "zh": "为广泛受益建设 AI"
-        },
-        "modernTerm": {
-          "en": "AI governance, lab missions and capability stewardship",
-          "zh": "AI 治理、实验室使命与能力托管"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The announcement followed a period when deep learning progress, public-risk warnings and concern about concentrated AI power were all intensifying. It mattered because AI safety and broad benefit became part of an organization's founding identity rather than only a research topic.",
-          "zh": "这一宣告出现在深度学习进展、公共风险警告和对 AI 能力集中担忧同时升温之后。它的重要性在于，AI 安全与广泛受益不再只是研究话题，也成为一个机构的创始身份。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is constructive defense: if powerful AI could be dangerous or concentrated, then a new institution might steer it toward public benefit. This turned anxiety into mission language, funding strategy and organizational design.",
-          "zh": "这里的情绪机制是建设性防御：如果强大 AI 可能危险或被集中控制，那么新机构或许能把它引向公共受益。这把焦虑转化为使命语言、资金策略与组织设计。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat OpenAI's founding as part of the mainstreaming of AI-safety and broad-benefit discourse in the mid-2010s. Its legacy is complicated, but historically it marks the point where emotional concern became institutional infrastructure.",
-          "zh": "专家通常把 OpenAI 的成立视为 2010 年代中期 AI 安全与广泛受益话语主流化的一部分。它的遗产很复杂，但在历史上标志着情绪关切变成机构基础设施。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Defensive action",
-        "zh": "防御性行动"
-      },
-      "method": {
-        "en": "Institution-building around broad benefit",
-        "zh": "围绕广泛受益建设机构"
-      },
-      "artifact": {
-        "en": "OpenAI announcement",
-        "zh": "OpenAI 成立公告"
-      },
-      "material": {
-        "en": "Archived announcement and contemporary coverage",
-        "zh": "公告归档与同期报道"
-      },
-      "demo": {
-        "en": "Risk discourse becomes a research-lab mission",
-        "zh": "风险话语变成研究实验室使命"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Web Archive",
-            "zh": "互联网档案馆"
-          },
-          "title": {
-            "en": "Introducing OpenAI archived announcement",
-            "zh": "《Introducing OpenAI》归档公告"
-          },
-          "description": {
-            "en": "Archived official announcement from December 2015, used as the primary source for the founding node.",
-            "zh": "2015 年 12 月官方公告归档，用作成立节点的原始来源。"
-          },
-          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
-          "source": "Web Archive / OpenAI",
-          "license": {
-            "en": "Reference archive link only; article text and images are not reused.",
-            "zh": "仅作为归档参考链接；不复用文章正文或图片。"
-          },
-          "usage": {
-            "en": "Primary announcement source",
-            "zh": "原始公告来源"
-          },
-          "action": {
-            "en": "Open archived announcement",
-            "zh": "打开归档公告"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Archived OpenAI announcement",
-            "zh": "OpenAI 公告归档"
-          },
-          "type": {
-            "en": "Archived announcement",
-            "zh": "归档公告"
-          },
-          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/"
-        },
-        {
-          "label": {
-            "en": "Wired contemporary coverage",
-            "zh": "Wired 同期报道"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.wired.com/2015/12/how-elon-musk-and-y-combinator-plan-to-stop-computers-from-taking-over/"
-        },
-        {
-          "label": {
-            "en": "BBC contemporary coverage",
-            "zh": "BBC 同期报道"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.bbc.com/news/technology-35082344"
-        },
-        {
-          "label": {
-            "en": "OpenAI organization overview",
-            "zh": "OpenAI 组织概览"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/OpenAI"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
-        "caption": {
-          "en": "Broad-benefit institution explainer",
-          "zh": "广泛受益机构解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for AI safety becoming organization design",
-          "zh": "关于 AI 安全转化为组织设计的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
-  "2023-ai-risk-statement": {
-    "year": 2023,
-    "title": {
-      "en": "The Statement on AI Risk",
-      "zh": "AI 风险声明"
-    },
-    "sentiment": "dread",
-    "location": {
-      "name": {
-        "en": "Center for AI Safety",
-        "zh": "AI 安全中心"
-      },
-      "country": {
-        "en": "United States",
-        "zh": "美国"
-      },
-      "coordinates": [
-        37.7749,
-        -122.4194
-      ]
-    },
-    "description": {
-      "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement.",
-      "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。"
-    },
-    "branchSummary": {
-      "en": "AI-risk concern became a compact global-priority statement signed across research and public life.",
-      "zh": "AI 风险关切被压缩成一则全球优先事项声明，并获得研究界与公共领域签署。"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Center for AI Safety",
-          "zh": "AI 安全中心"
-        },
-        "role": {
-          "en": "Publisher of the Statement on AI Risk",
-          "zh": "AI 风险声明发布机构"
-        }
-      }
-    ],
-    "analysis": {
-      "what": {
-        "en": "A short statement made extreme AI risk a globally framed public priority.",
-        "zh": "一则短声明把极端 AI 风险变成全球优先事项。"
-      },
-      "how": {
-        "en": "The statement used concise moral framing and prominent signatories to make the concern legible beyond technical communities.",
-        "zh": "声明通过简洁的道德框架和知名签署者，让关切超出技术共同体而被理解。"
-      },
-      "why": {
-        "en": "It completes the branch's arc by showing old machine anxieties returning in twenty-first-century governance language.",
-        "zh": "它完成了这条分支的弧线：旧有机器焦虑以二十一世纪治理语言重新出现。"
-      }
-    },
-    "realityLinks": [
-      {
-        "label": {
-          "en": "Global-priority framing",
-          "zh": "全球优先事项框架"
-        },
-        "term": {
-          "en": "AI extinction risk",
-          "zh": "AI 灭绝风险"
-        },
-        "modernTerm": {
-          "en": "Frontier AI safety, governance and catastrophic-risk mitigation",
-          "zh": "前沿 AI 安全、治理与灾难性风险缓解"
-        }
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The statement appeared during the rapid public rise of generative AI and frontier-model debate in 2023. Its importance lies in making extreme AI risk a concise public proposition rather than a long specialist argument.",
-          "zh": "这份声明出现在 2023 年生成式 AI 与前沿模型讨论快速升温期间。它的重要性在于把极端 AI 风险变成一个简洁的公共命题，而不只是长篇专业论证。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The emotional mechanism is priority compression: a complex set of technical, social and political concerns is condensed into a single high-stakes risk frame. That compression made the statement powerful, but also controversial.",
-          "zh": "这里的情绪机制是优先级压缩：一组复杂的技术、社会与政治关切被凝缩成单一高风险框架。这种压缩让声明有力量，也让它充满争议。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat the statement as a major public marker of frontier-AI safety discourse, even when they disagree about its framing. Its legacy is to put existential risk, governance and technical safety into the same public conversation.",
-          "zh": "专家通常把这份声明视为前沿 AI 安全话语的重要公共标记，即使他们对其框架存在分歧。它的遗产是把存在性风险、治理与技术安全放进同一公共讨论。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Global AI-risk framing",
-        "zh": "全球 AI 风险框架"
-      },
-      "method": {
-        "en": "Consensus-style public statement",
-        "zh": "共识式公共声明"
-      },
-      "artifact": {
-        "en": "Statement on AI Risk",
-        "zh": "AI 风险声明"
-      },
-      "material": {
-        "en": "Official CAIS page and extreme-risk research",
-        "zh": "CAIS 官方页面与极端风险研究"
-      },
-      "demo": {
-        "en": "Old AI anxieties return as global-priority governance language",
-        "zh": "旧有 AI 焦虑以全球优先事项治理语言回归"
-      },
-      "visual": "humanistic",
-      "demoImage": "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg",
-      "demoPanel": "sources",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "Center for AI Safety",
-            "zh": "AI 安全中心"
-          },
-          "title": {
-            "en": "Statement on AI Risk",
-            "zh": "AI 风险声明"
-          },
-          "description": {
-            "en": "Official statement page used as the primary source for the 2023 risk node.",
-            "zh": "2023 年风险节点使用的官方声明页面。"
-          },
-          "url": "https://www.safe.ai/work/statement-on-ai-risk",
-          "source": "Center for AI Safety",
-          "license": {
-            "en": "Reference link only; page text and signatory portraits are not reused.",
-            "zh": "仅作为参考链接；不复用页面文字或签署者肖像。"
-          },
-          "usage": {
-            "en": "Primary statement source",
-            "zh": "原始声明来源"
-          },
-          "action": {
-            "en": "Open statement page",
-            "zh": "打开声明页面"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Official Statement on AI Risk",
-            "zh": "AI 风险声明官方页面"
-          },
-          "type": {
-            "en": "Official statement",
-            "zh": "官方声明"
-          },
-          "url": "https://www.safe.ai/work/statement-on-ai-risk"
-        },
-        {
-          "label": {
-            "en": "Managing extreme AI risks",
-            "zh": "管理极端 AI 风险"
-          },
-          "type": {
-            "en": "Research paper",
-            "zh": "研究论文"
-          },
-          "url": "https://arxiv.org/abs/2310.17688"
-        },
-        {
-          "label": {
-            "en": "Statement on AI Risk overview",
-            "zh": "AI 风险声明概览"
-          },
-          "type": {
-            "en": "Secondary reference",
-            "zh": "二手参考"
-          },
-          "url": "https://en.wikipedia.org/wiki/Statement_on_AI_Risk"
-        },
-        {
-          "label": {
-            "en": "Center for AI Safety",
-            "zh": "AI 安全中心"
-          },
-          "type": {
-            "en": "Institutional reference",
-            "zh": "机构参考"
-          },
-          "url": "https://www.safe.ai/"
-        }
-      ]
-    },
-    "images": [
-      "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg"
-    ],
-    "imageMeta": {
-      "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
-        "caption": {
-          "en": "Global AI-risk priority explainer",
-          "zh": "全球 AI 风险优先事项解释图"
-        },
-        "subcaption": {
-          "en": "Original diagram for the 2023 public-risk statement",
-          "zh": "关于 2023 年公共风险声明的原创图"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://www.safe.ai/work/statement-on-ai-risk",
-        "license": {
-          "en": "Original redrawn explainer; reference links only.",
-          "zh": "原创重绘解释图；来源仅作参考链接。"
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        }
-      }
-    },
-    "videos": []
-  },
   "1956-dartmouth": {
     "year": 1956,
     "title": {
@@ -2994,17 +115,28 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it.",
-      "zh": "学习或智能的任何其他特征，原则上都可以被如此精确地描述，以至于机器能够模拟它。"
+      "en": "The Dartmouth proposal framed artificial intelligence as a research program: learning and other features of intelligence could, in principle, be described precisely enough for machines to simulate them.",
+      "zh": "达特茅斯提案把人工智能定义为一个可研究的科学计划：学习以及智能的其他特征，原则上可以被精确描述，并由机器加以模拟。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
+        "zh": "达特茅斯夏季人工智能研究项目提案"
+      },
+      "workAuthors": {
+        "en": "John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, 1955",
+        "zh": "约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特、克劳德·香农，1955"
+      },
+      "sourceUrl": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html"
     },
     "quotePage": {
-      "en": "From PPT page 1",
-      "zh": "摘自PPT第1页"
+      "en": "Dartmouth Summer Research Project proposal, Stanford/J. McCarthy archive",
+      "zh": "达特茅斯夏季人工智能研究项目提案，斯坦福 / 约翰·麦卡锡档案"
     },
     "images": [
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
-      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+      "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
       "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
     ],
     "videos": [
@@ -3090,12 +222,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "This theory serves as a bridge between biophysics and psychology.",
-      "zh": "这一理论在生物物理学和心理学之间架起了一座桥梁。"
+      "en": "Rosenblatt's perceptron presented a trainable model of information storage and organization, linking ideas from brain science, psychology, and machine learning.",
+      "zh": "罗森布拉特的感知机提出了一种可训练的信息存储与组织模型，把脑科学、心理学和机器学习早期思想连接起来。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+        "zh": "感知机：大脑中信息存储与组织的概率模型"
+      },
+      "workAuthors": {
+        "en": "Frank Rosenblatt, Psychological Review, 1958",
+        "zh": "弗兰克·罗森布拉特，Psychological Review，1958"
+      },
+      "sourceUrl": "https://doi.org/10.1037/h0042519"
     },
     "quotePage": {
-      "en": "From PPT page 4",
-      "zh": "摘自PPT第4页"
+      "en": "Rosenblatt, Psychological Review, 1958",
+      "zh": "罗森布拉特，Psychological Review，1958 年论文"
     },
     "images": [
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png",
@@ -3110,22 +253,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/1957-perceptron/people/1957-perceptron_people_02.png": {
         "caption": {
-          "en": "Frank Rosenblatt",
-          "zh": "弗兰克·罗森布拉特"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Perceptron inventor",
-          "zh": "感知机发明者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
         "caption": {
-          "en": "Frank Rosenblatt",
-          "zh": "弗兰克·罗森布拉特"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Perceptron inventor and early demonstration photo",
-          "zh": "感知机发明者与早期演示资料"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
@@ -3197,12 +340,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Their rigorous work and brilliant technique does not make the perceptron look very good.",
-      "zh": "他们严谨的工作和出色的技巧，并没有让感知机显得多么出色。"
+      "en": "Minsky and Papert's Perceptrons became a landmark critique of single-layer perceptrons, sharpening the field's understanding of what simple neural models could and could not represent.",
+      "zh": "明斯基和帕珀特的《感知机》成为对单层感知机的重要批判，促使研究者更清楚地认识简单神经模型能表示什么、不能表示什么。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Perceptrons: An Introduction to Computational Geometry",
+        "zh": "感知机：计算几何学导论"
+      },
+      "workAuthors": {
+        "en": "Marvin Minsky and Seymour Papert, MIT Press",
+        "zh": "马文·明斯基、 Seymour Papert，麻省理工学院出版社"
+      },
+      "sourceUrl": "https://mitpress.mit.edu/9780262631112/perceptrons/"
     },
     "quotePage": {
-      "en": "From PPT page 5",
-      "zh": "摘自PPT第5页"
+      "en": "MIT Press book record: Perceptrons",
+      "zh": "麻省理工学院出版社《感知机》图书页面"
     },
     "images": [
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
@@ -3215,12 +369,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
         "caption": {
-          "en": "Marvin Minsky",
-          "zh": "马文·明斯基"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Co-author of Perceptrons",
-          "zh": "《感知器》作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
@@ -3302,18 +456,29 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "The ability to create useful new features distinguishes back-propagation from earlier, simpler methods.",
-      "zh": "能够创造有用的新特征，使反向传播区别于更早、更简单的方法。"
+      "en": "Rumelhart, Hinton, and Williams showed that back-propagating errors could train internal representations in multilayer neural networks, making feature learning practical again.",
+      "zh": "鲁梅尔哈特、辛顿和威廉姆斯证明，反向传播误差可以训练多层神经网络的内部表示，使特征学习重新变得可行。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Learning representations by back-propagating errors",
+        "zh": "通过反向传播误差学习表示"
+      },
+      "workAuthors": {
+        "en": "David E. Rumelhart, Geoffrey E. Hinton, and Ronald J. Williams, Nature, 1986",
+        "zh": "戴维·鲁梅尔哈特、杰弗里·辛顿、罗纳德·威廉姆斯，Nature，1986"
+      },
+      "sourceUrl": "https://doi.org/10.1038/323533a0"
     },
     "quotePage": {
-      "en": "From PPT page 9",
-      "zh": "摘自PPT第9页"
+      "en": "Nature paper: Learning representations by back-propagating errors",
+      "zh": "Nature 论文《通过反向传播误差学习表示》"
     },
     "images": [
-      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
     ],
     "videos": [
@@ -3332,32 +497,32 @@ module.exports = {
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
         "caption": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Backpropagation co-author and deep learning pioneer",
-          "zh": "反向传播共同作者，深度学习先驱"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
         "caption": {
-          "en": "David Rumelhart",
-          "zh": "大卫·鲁梅尔哈特"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Lead author of the backpropagation paper",
-          "zh": "反向传播论文主要作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png": {
         "caption": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Backpropagation co-author in the 1980s",
-          "zh": "反向传播共同作者，1980 年代影像"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
@@ -3409,12 +574,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional shapes, are shown to outperform all other techniques.",
-      "zh": "专门用于处理二维形状变化的卷积神经网络，被证明优于所有其他技术。"
+      "en": "LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.",
+      "zh": "勒昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "zh": "反向传播应用于手写邮政编码识别"
+      },
+      "workAuthors": {
+        "en": "Yann LeCun et al., Neural Computation, 1989",
+        "zh": "扬·勒昆等，Neural Computation，1989"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
     },
     "quotePage": {
-      "en": "From PPT page 14",
-      "zh": "摘自PPT第14页"
+      "en": "LeCun et al., Neural Computation / Bell Labs publication",
+      "zh": "勒昆等，Neural Computation / 贝尔实验室论文"
     },
     "images": [
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
@@ -3427,22 +603,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
-          "en": "Yann LeCun",
-          "zh": "杨立昆"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "CNN pioneer and LeNet researcher",
-          "zh": "CNN 先驱，LeNet 研究者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
-          "en": "Yann LeCun",
-          "zh": "杨立昆"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "CNN pioneer and LeNet researcher",
-          "zh": "CNN 先驱，LeNet 研究者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
@@ -3504,12 +680,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "The current report develops a proposal ... to provide networks with a dynamic memory.",
-      "zh": "本报告提出了一项建议……旨在为网络提供动态内存。"
+      "en": "Recurrent networks introduced explicit state over time, allowing neural models to process sequences by carrying information from earlier inputs into later computations.",
+      "zh": "循环神经网络引入了随时间变化的内部状态，使神经模型能够把早先输入的信息带入后续计算，从而处理序列数据。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Finding Structure in Time",
+        "zh": "在时间中发现结构"
+      },
+      "workAuthors": {
+        "en": "Jeffrey L. Elman, Cognitive Science, 1990",
+        "zh": "杰弗里·埃尔曼，Cognitive Science，1990"
+      },
+      "sourceUrl": "https://doi.org/10.1207/s15516709cog1402_1"
     },
     "quotePage": {
-      "en": "From PPT page 16",
-      "zh": "摘自PPT第16页"
+      "en": "Elman, Cognitive Science, 1990: Finding Structure in Time",
+      "zh": "埃尔曼，Cognitive Science，1990 年《在时间中发现结构》"
     },
     "images": [
       "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
@@ -3531,12 +718,12 @@ module.exports = {
       },
       "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
         "caption": {
-          "en": "Jeffrey Elman",
-          "zh": "杰弗里·埃尔曼"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Creator of the Simple RNN / Elman network",
-          "zh": "Simple RNN / Elman 网络提出者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -3588,15 +775,25 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We ... address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM).",
-      "zh": "长短期记忆能够通过持续的误差流学习跨越长时间间隔的任务。"
+      "en": "Hochreiter and Schmidhuber introduced LSTM to preserve error signals across long time spans, addressing a central weakness of ordinary recurrent networks.",
+      "zh": "霍赫赖特和施密德胡伯提出 LSTM，用门控结构在长时间跨度中保持误差信号，回应了普通循环网络难以学习长期依赖的核心问题。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Long Short-Term Memory",
+        "zh": "长短期记忆"
+      },
+      "workAuthors": {
+        "en": "Sepp Hochreiter and Jürgen Schmidhuber, Neural Computation, 1997",
+        "zh": "塞普·霍赫赖特、于尔根·施密德胡伯，Neural Computation，1997"
+      },
+      "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735"
     },
     "quotePage": {
-      "en": "From PPT page 19",
-      "zh": "摘自PPT第19页"
+      "en": "Neural Computation paper: Long Short-Term Memory",
+      "zh": "Neural Computation 论文《长短期记忆》"
     },
     "images": [
-      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
       "resources/images/1997-lstm/people/1997-lstm_people_01.png"
@@ -3605,16 +802,6 @@ module.exports = {
       "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4"
     ],
     "imageMeta": {
-      "resources/images/1997-lstm/people/1997-lstm_people_schmidhuber-1997.jpg": {
-        "caption": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
-        },
-        "subcaption": {
-          "en": "LSTM co-inventor, 1997 photo",
-          "zh": "LSTM 共同发明者，1997 年照片"
-        }
-      },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
           "en": "Architecture",
@@ -3637,12 +824,12 @@ module.exports = {
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
         "caption": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "LSTM co-inventor",
-          "zh": "LSTM 共同发明者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -3694,12 +881,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes.",
-      "zh": "我们训练了一个大型深度卷积神经网络，将 ImageNet 分类错误率大幅降低。"
+      "en": "AlexNet showed that a large deep convolutional network, trained on ImageNet with GPUs and modern regularization, could dramatically improve large-scale visual recognition.",
+      "zh": "AlexNet 证明，利用 GPU、大规模 ImageNet 数据和现代正则化方法训练的大型深度卷积网络，可以显著提升大规模视觉识别效果。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+      },
+      "workAuthors": {
+        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
+        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
     },
     "quotePage": {
-      "en": "From PPT page 23",
-      "zh": "摘自PPT第23页"
+      "en": "NeurIPS 2012 paper: ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "NeurIPS 2012 论文《使用深度卷积神经网络进行 ImageNet 分类》"
     },
     "images": [
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
@@ -3712,12 +910,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
         "caption": {
-          "en": "Alex Krizhevsky",
-          "zh": "亚历克斯·克里热夫斯基"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AlexNet first author in team context",
-          "zh": "AlexNet 主要作者与团队资料"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
@@ -3789,12 +987,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network.",
-      "zh": "这种架构的特点是使用门控单元，它们能够学习如何调节信息在网络中的流动。"
+      "en": "Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.",
+      "zh": "高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Highway Networks",
+        "zh": "高速网络"
+      },
+      "workAuthors": {
+        "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+        "zh": "Rupesh Kumar Srivastava、Klaus Greff、于尔根·施密德胡伯，arXiv，2015"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1505.00387"
     },
     "quotePage": {
-      "en": "From PPT page 25",
-      "zh": "摘自PPT第25页"
+      "en": "arXiv paper: Highway Networks",
+      "zh": "arXiv 论文《高速网络》"
     },
     "images": [
       "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
@@ -3816,12 +1025,12 @@ module.exports = {
       },
       "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
         "caption": {
-          "en": "Jürgen Schmidhuber",
-          "zh": "尤尔根·施密德胡伯"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Highway Network co-author",
-          "zh": "高速网络共同作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -3830,7 +1039,7 @@ module.exports = {
     "year": 2015,
     "title": {
       "en": "ResNet",
-      "zh": "残差网络"
+      "zh": "ResNet"
     },
     "location": {
       "name": {
@@ -3897,12 +1106,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We explicitly reformulate the layers as learning residual functions with reference to the layer inputs.",
-      "zh": "我们提出一种残差学习框架，以便训练比以前深得多的网络。"
+      "en": "ResNet reformulated layers as residual functions and used identity shortcuts, making it possible to optimize much deeper visual recognition networks.",
+      "zh": "ResNet 把网络层重新表述为残差函数，并使用恒等捷径连接，使更深的视觉识别网络能够被有效优化。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Deep Residual Learning for Image Recognition",
+        "zh": "用于图像识别的深度残差学习"
+      },
+      "workAuthors": {
+        "en": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+        "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+      },
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
     },
     "quotePage": {
-      "en": "From PPT page 26",
-      "zh": "摘自PPT第26页"
+      "en": "CVPR 2016 paper: Deep Residual Learning for Image Recognition",
+      "zh": "CVPR 2016 论文《用于图像识别的深度残差学习》"
     },
     "images": [
       "resources/images/2015-resnet/people/2015-resnet_people_04.png",
@@ -3982,7 +1202,7 @@ module.exports = {
     "year": 2016,
     "title": {
       "en": "DenseNet",
-      "zh": "密集连接网络"
+      "zh": "DenseNet"
     },
     "location": {
       "name": {
@@ -4015,12 +1235,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse.",
-      "zh": "DenseNets具有几个显著优势：它能够缓解梯度消失问题、增强特征传播，并促进特征复用。"
+      "en": "DenseNet connected each layer to all later layers, improving feature reuse and gradient flow while encouraging compact convolutional models.",
+      "zh": "DenseNet 将每一层连接到后续所有层，增强了特征复用和梯度流动，也推动了更紧凑的卷积模型设计。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Densely Connected Convolutional Networks",
+        "zh": "密集连接卷积网络"
+      },
+      "workAuthors": {
+        "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
+        "zh": "黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
+      },
+      "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
     },
     "quotePage": {
-      "en": "From PPT page 27",
-      "zh": "摘自PPT第27页"
+      "en": "CVPR 2017 paper: Densely Connected Convolutional Networks",
+      "zh": "CVPR 2017 论文《密集连接卷积网络》"
     },
     "images": [
       "resources/images/2016-densenet/people/2016-densenet_people_02.png",
@@ -4033,22 +1264,22 @@ module.exports = {
     "imageMeta": {
       "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
         "caption": {
-          "en": "Gao Huang",
-          "zh": "黄高"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DenseNet author",
-          "zh": "DenseNet 作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
         "caption": {
-          "en": "Gao Huang",
-          "zh": "黄高"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DenseNet author",
-          "zh": "DenseNet 作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
@@ -4110,12 +1341,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We propose a new framework for estimating generative models via adversarial nets.",
-      "zh": "我们提出一种通过对抗过程估计生成模型的新框架。"
+      "en": "GANs framed generative modeling as a competition between a generator and a discriminator, turning adversarial training into a central idea in modern generative AI.",
+      "zh": "GAN 把生成建模表述为生成器与判别器之间的竞争，使对抗训练成为现代生成式 AI 的核心思想之一。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Generative Adversarial Nets",
+        "zh": "生成对抗网络"
+      },
+      "workAuthors": {
+        "en": "Ian Goodfellow et al., NeurIPS, 2014",
+        "zh": "伊恩·古德费洛等，NeurIPS，2014"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/5423-generative-adversarial-nets"
     },
     "quotePage": {
-      "en": "From PPT page 30",
-      "zh": "摘自PPT第30页"
+      "en": "NeurIPS 2014 paper: Generative Adversarial Nets",
+      "zh": "NeurIPS 2014 论文《生成对抗网络》"
     },
     "images": [
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png"
@@ -4183,12 +1425,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture.",
-      "zh": "我们推测，使用固定长度向量是提升基础编码器-解码器架构性能的瓶颈。"
+      "en": "Bahdanau, Cho, and Bengio introduced attention for neural machine translation, allowing the decoder to focus on relevant source positions instead of relying on one fixed vector.",
+      "zh": "Bahdanau、Cho 和 Bengio 在神经机器翻译中引入注意力，使解码器能够关注相关源语言位置，而不再只依赖一个固定长度向量。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "zh": "通过联合学习对齐与翻译的神经机器翻译"
+      },
+      "workAuthors": {
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
+        "zh": "Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1409.0473"
     },
     "quotePage": {
-      "en": "From PPT page 32",
-      "zh": "摘自PPT第32页"
+      "en": "arXiv paper: Neural Machine Translation by Jointly Learning to Align and Translate",
+      "zh": "arXiv 论文《通过联合学习对齐与翻译的神经机器翻译》"
     },
     "images": [
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
@@ -4210,12 +1463,12 @@ module.exports = {
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Attention mechanism researcher",
-          "zh": "注意力机制研究者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -4224,7 +1477,7 @@ module.exports = {
     "year": 2017,
     "title": {
       "en": "Transformer",
-      "zh": "转换器架构"
+      "zh": "Transformer"
     },
     "location": {
       "name": {
@@ -4257,12 +1510,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
-      "zh": "我们提出一种新的简单网络架构 Transformer，完全基于注意力机制。"
+      "en": "The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.",
+      "zh": "Transformer 用自注意力替代循环和卷积，形成了一种可扩展架构，并成为现代语言模型的基础。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Attention Is All You Need",
+        "zh": "注意力就是你所需要的一切"
+      },
+      "workAuthors": {
+        "en": "Ashish Vaswani et al., NeurIPS, 2017",
+        "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
+      },
+      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
     },
     "quotePage": {
-      "en": "From PPT page 33",
-      "zh": "摘自PPT第33页"
+      "en": "NeurIPS 2017 paper: Attention Is All You Need",
+      "zh": "NeurIPS 2017 论文《注意力就是你所需要的一切》"
     },
     "images": [
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
@@ -4309,7 +1573,7 @@ module.exports = {
     "year": 2018,
     "title": {
       "en": "BERT",
-      "zh": "双向编码预训练模型"
+      "zh": "BERT"
     },
     "location": {
       "name": {
@@ -4352,15 +1616,26 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers.",
-      "zh": "BERT 旨在通过联合调节所有层中的左右上下文来预训练深度双向表示。"
+      "en": "BERT made bidirectional Transformer pretraining a practical default for language understanding, combining masked language modeling with task-specific fine-tuning.",
+      "zh": "BERT 让双向 Transformer 预训练成为语言理解任务中的实用范式，并将掩码语言模型与任务微调结合起来。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "zh": "BERT：用于语言理解的深度双向 Transformer 预训练"
+      },
+      "workAuthors": {
+        "en": "Jacob Devlin et al., arXiv, 2018",
+        "zh": "雅各布·德夫林等，arXiv，2018"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1810.04805"
     },
     "quotePage": {
-      "en": "From PPT page 37",
-      "zh": "摘自PPT第37页"
+      "en": "BERT paper and Google Research release note",
+      "zh": "BERT 论文与 Google Research 发布说明"
     },
     "images": [
-      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg",
+      "resources/images/2018-bert/people/2018-bert_people_03.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
     ],
@@ -4368,14 +1643,14 @@ module.exports = {
       "https://media.sciencearena.cn/video/2018BERT%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E7%9A%84%E9%9D%A9%E5%91%BD.mp4"
     ],
     "imageMeta": {
-      "resources/images/2018-bert/people/2018-bert_people_jacob-devlin.jpg": {
+      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
         "caption": {
-          "en": "Jacob Devlin",
-          "zh": "雅各布·德夫林"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "Lead author of the BERT paper",
-          "zh": "BERT 论文主要作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
@@ -4404,7 +1679,7 @@ module.exports = {
     "year": 2018,
     "title": {
       "en": "GPT",
-      "zh": "生成式预训练模型"
+      "zh": "GPT"
     },
     "location": {
       "name": {
@@ -4447,12 +1722,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text.",
-      "zh": "我们证明，在多样化文本语料上进行生成式预训练之后再进行判别式微调，能够带来很大收益。"
+      "en": "OpenAI's GPT showed that generative pretraining on unlabeled text, followed by task adaptation, could transfer strongly across language understanding benchmarks.",
+      "zh": "OpenAI 的 GPT 证明，在无标注文本上进行生成式预训练，再针对任务进行适配，可以在多种语言理解基准上实现有效迁移。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Improving Language Understanding by Generative Pre-Training",
+        "zh": "通过生成式预训练改进语言理解"
+      },
+      "workAuthors": {
+        "en": "Alec Radford et al., OpenAI, 2018",
+        "zh": "亚历克·拉德福德等，OpenAI，2018"
+      },
+      "sourceUrl": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
     },
     "quotePage": {
-      "en": "From PPT page 38",
-      "zh": "摘自PPT第38页"
+      "en": "OpenAI official paper: Improving Language Understanding by Generative Pre-Training",
+      "zh": "OpenAI 官方论文《通过生成式预训练改进语言理解》"
     },
     "images": [
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
@@ -4492,27 +1778,27 @@ module.exports = {
         },
         "subcaption": {
           "en": "GPT",
-          "zh": "生成式预训练 Transformer"
+          "zh": "GPT"
         }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_01.png": {
         "caption": {
-          "en": "Alec Radford",
-          "zh": "亚历克·拉德福德"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "GPT paper author",
-          "zh": "GPT 论文作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
         "caption": {
-          "en": "Sam Altman",
-          "zh": "萨姆·奥特曼"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "OpenAI CEO in GPT-era media footage",
-          "zh": "GPT 时代 OpenAI 相关媒体影像"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -4574,32 +1860,33 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner.",
-      "zh": "我们探索了使用大语言模型以交错的方式，同时生成推理过程和任务特定动作"
+      "en": "ReAct and related systems showed how language models could interleave reasoning traces with actions, turning LLMs from text predictors into components of tool-using agents.",
+      "zh": "ReAct 及相关系统展示了语言模型如何交错生成推理轨迹与行动，使 LLM 从文本预测器延伸为可调用工具的智能体组件。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "zh": "ReAct：在语言模型中协同推理与行动"
+      },
+      "workAuthors": {
+        "en": "Shunyu Yao et al., arXiv, 2022",
+        "zh": "姚顺雨等，arXiv，2022"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2210.03629"
     },
     "quotePage": {
-      "en": "From PPT page 45-46",
-      "zh": "摘自PPT第45-46页"
+      "en": "ReAct paper: Synergizing Reasoning and Acting in Language Models",
+      "zh": "ReAct 论文《在语言模型中协同推理与行动》"
     },
     "images": [
-      "resources/images/2023-agents/historical/2023-agents_historical_01.png",
       "resources/images/2023-agents/historical/2023-agents_historical_02.png",
-      "resources/images/2023-agents/historical/2023-agents_historical_03.png"
+      "resources/images/2023-agents/historical/2023-agents_historical_03.png",
+      "resources/images/2023-agents/historical/2023-agents_historical_04.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2023AI%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%9A70%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3.mp4"
     ],
     "imageMeta": {
-      "resources/images/2023-agents/historical/2023-agents_historical_01.png": {
-        "caption": {
-          "en": "Historical photo",
-          "zh": "历史照片"
-        },
-        "subcaption": {
-          "en": "Agents: LLM-Driven Autonomous Systems",
-          "zh": "智能体：LLM驱动的自主系统"
-        }
-      },
       "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
         "caption": {
           "en": "Historical photo",
@@ -4611,6 +1898,16 @@ module.exports = {
         }
       },
       "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "Agents: LLM-Driven Autonomous Systems",
+          "zh": "智能体：LLM驱动的自主系统"
+        }
+      },
+      "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
         "caption": {
           "en": "Historical photo",
           "zh": "历史照片"
@@ -4658,12 +1955,12 @@ module.exports = {
     },
     "description": {
       "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency.",
-      "zh": "到2025年，大语言模型进入百花齐放的竞争阶段。公开竞技场和评测榜单持续记录各类模型在推理、多模态、工具使用和部署效率上的快速进展，模型比较也从一次性论文结果转向持续公开观察。"
+      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。"
     },
     "figures": [
       {
         "name": {
-          "en": "Research Organizations",
+          "en": "Research Institutions",
           "zh": "研究机构"
         },
         "role": {
@@ -4673,43 +1970,65 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences.",
-      "zh": "我们推出“Chatbot Arena”——一个基于人类偏好评估大型语言模型的开放平台。"
+      "en": "Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.",
+      "zh": "Chatbot Arena 引入了面向语言模型的大规模人类偏好评测，使公开模型比较成为大语言模型生态中可见的一部分。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+        "zh": "Chatbot Arena：基于人类偏好评估大语言模型的开放平台"
+      },
+      "workAuthors": {
+        "en": "LMSYS / LMArena team, arXiv, 2024",
+        "zh": "LMSYS / LMArena 团队，arXiv，2024"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2403.04132"
     },
     "quotePage": {
-      "en": "From PPT page 39",
-      "zh": "摘自PPT第39页"
+      "en": "Chatbot Arena paper and LMArena public leaderboard",
+      "zh": "Chatbot Arena 论文与 LMArena 公开排行榜"
     },
     "images": [
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg",
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg",
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png"
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
     ],
     "videos": [
       "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4"
     ],
     "imageMeta": {
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_leaderboard_en.svg": {
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
         "caption": {
-          "en": "Leaderboard",
-          "zh": "榜单示意"
+          "en": "Historical photo",
+          "zh": "历史照片"
         },
         "subcaption": {
-          "en": "LLM leaderboard snapshot",
-          "zh": "大语言模型榜单示意"
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放"
         }
       },
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_en.svg": {
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
         "caption": {
           "en": "Architecture",
           "zh": "结构示意"
         },
         "subcaption": {
-          "en": "Large language model development pipeline",
-          "zh": "大语言模型发展流程示意"
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放 架构图"
         }
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
+        "caption": {
+          "en": "Historical photo",
+          "zh": "历史照片"
+        },
+        "subcaption": {
+          "en": "A Flourishing Competition Among Large Language Models",
+          "zh": "大语言模型百花齐放"
+        }
+      },
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
         "caption": {
           "en": "Historical photo",
           "zh": "历史照片"
@@ -4742,8 +2061,8 @@ module.exports = {
       ]
     },
     "description": {
-      "en": "AlphaFold is DeepMind's protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
-      "zh": "AlphaFold 是 DeepMind 开发的蛋白质结构预测系统。第二代系统在 2020 年的国际蛋白质结构预测竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质三维结构，解决了长期困扰生物学界的重大难题。"
+      "en": "AlphaFold is DeepMind’s protein-structure prediction system. AlphaFold 2 achieved a breakthrough at CASP14 in 2020, accurately predicting protein structures from amino-acid sequences and transforming computational biology.",
+      "zh": "AlphaFold是DeepMind开发的蛋白质结构预测系统。AlphaFold 2在2020年的CASP14竞赛中取得突破性成果，能够从氨基酸序列准确预测蛋白质的三维结构，解决了困扰生物学界50年的难题。"
     },
     "figures": [
       {
@@ -4768,12 +2087,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "Here we provide the first computational method that can regularly predict protein structures with atomic accuracy.",
-      "zh": "在这里，我们提出了首个能够稳定地以原子级精度预测蛋白质结构的计算方法。"
+      "en": "AlphaFold2 combined deep learning with evolutionary and geometric signals to predict protein structures with a level of accuracy that changed structural biology workflows.",
+      "zh": "AlphaFold2 将深度学习与进化、几何信号结合起来，以足以改变结构生物学工作流程的精度预测蛋白质结构。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "Highly accurate protein structure prediction with AlphaFold",
+        "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+      },
+      "workAuthors": {
+        "en": "John Jumper et al., Nature, 2021",
+        "zh": "约翰·江珀等，Nature，2021"
+      },
+      "sourceUrl": "https://www.nature.com/articles/s41586-021-03819-2"
     },
     "quotePage": {
-      "en": "From PPT page 50",
-      "zh": "摘自PPT第50页"
+      "en": "Nature paper and DeepMind AlphaFold announcement",
+      "zh": "Nature 论文与 DeepMind AlphaFold 官方说明"
     },
     "images": [
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
@@ -4840,22 +2170,22 @@ module.exports = {
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
         "caption": {
-          "en": "John Jumper",
-          "zh": "约翰·江珀"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AlphaFold 2 lead scientist",
-          "zh": "AlphaFold 2 首席科学家"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
         "caption": {
-          "en": "Demis Hassabis",
-          "zh": "戴密斯·哈萨比斯"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "DeepMind CEO",
-          "zh": "DeepMind CEO"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -4897,12 +2227,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "We apply it to 100 equations from the Feynman Lectures on Physics, and it discovers all of them, while previous publicly available software cracks only 71.",
-      "zh": "我们将其应用于《费曼物理学讲义》中的 100 个方程，结果它成功发现了全部方程，而此前公开可用的软件只能破解其中的 71 个。"
+      "en": "AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.",
+      "zh": "AI Feynman 将神经网络拟合与受物理启发的约束结合起来，从数据中恢复符号方程，指向 AI 辅助科学发现的路径。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "AI Feynman: a physics-inspired method for symbolic regression",
+        "zh": "AI Feynman：受物理启发的符号回归方法"
+      },
+      "workAuthors": {
+        "en": "Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
+        "zh": "Silviu-Marian Udrescu、马克斯·泰格马克，Science Advances，2020"
+      },
+      "sourceUrl": "https://www.science.org/doi/10.1126/sciadv.aay2631"
     },
     "quotePage": {
-      "en": "From PPT page 53",
-      "zh": "摘自PPT第53页"
+      "en": "Science Advances paper: AI Feynman",
+      "zh": "Science Advances 论文《AI Feynman》"
     },
     "images": [
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
@@ -4916,12 +2257,12 @@ module.exports = {
     "imageMeta": {
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
         "caption": {
-          "en": "Max Tegmark",
-          "zh": "马克斯·泰格马克"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AI Feynman author",
-          "zh": "AI Feynman 作者"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
@@ -4999,7 +2340,7 @@ module.exports = {
       },
       {
         "name": {
-          "en": "UC Berkeley Team",
+          "en": "Berkeley Team",
           "zh": "伯克利团队"
         },
         "role": {
@@ -5009,12 +2350,23 @@ module.exports = {
       }
     ],
     "quoteText": {
-      "en": "This paper presents the first comprehensive framework for fully automatic scientific discovery.",
-      "zh": "本文提出了首个用于全自动科学发现的综合性框架。"
+      "en": "The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.",
+      "zh": "AI Scientist 探索了由基础模型生成想法、运行实验、撰写论文并评审结果的端到端研究循环；自主实验室则把类似自动化推进到真实物理实验。"
+    },
+    "quoteMeta": {
+      "workTitle": {
+        "en": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+        "zh": "AI Scientist：迈向全自动开放式科学发现"
+      },
+      "workAuthors": {
+        "en": "Sakana AI team, arXiv, 2024",
+        "zh": "Sakana AI 团队，arXiv，2024"
+      },
+      "sourceUrl": "https://sakana.ai/ai-scientist/"
     },
     "quotePage": {
-      "en": "From PPT page 55",
-      "zh": "摘自PPT第55页"
+      "en": "Sakana AI official project page and arXiv paper: The AI Scientist",
+      "zh": "Sakana AI 官方项目页与 arXiv 论文《AI Scientist》"
     },
     "images": [
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png",
@@ -5059,22 +2411,22 @@ module.exports = {
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
         "caption": {
-          "en": "UC Berkeley Team",
-          "zh": "伯克利团队"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "A-Lab developer team",
-          "zh": "A-Lab 开发团队"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
         "caption": {
-          "en": "Sakana AI Team",
-          "zh": "Sakana AI 团队"
+          "en": "Portrait",
+          "zh": "人物肖像"
         },
         "subcaption": {
-          "en": "AI Scientist developer team",
-          "zh": "AI Scientist 开发团队"
+          "en": "Relevant researcher photo",
+          "zh": "相关研究者照片"
         }
       }
     }
@@ -5680,10 +3032,6 @@ module.exports = {
       "en": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.",
       "zh": "围棋长期以来被视为人工智能最具挑战性的经典游戏。"
     },
-    "quoteLabel": {
-      "en": "Paper excerpt",
-      "zh": "论文摘录"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
@@ -5699,51 +3047,25 @@ module.exports = {
       "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
       "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
     },
-    "analysis": {
-      "what": {
-        "en": "AlphaGo defeated Lee Sedol and showed that AI could master Go, a game whose state space had long resisted brute-force search.",
-        "zh": "AlphaGo 击败李世石，证明 AI 可以掌握长期被认为难以靠蛮力搜索解决的围棋。"
-      },
-      "how": {
-        "en": "It combined policy networks, value networks, reinforcement learning from self-play and Monte Carlo tree search into one decision loop.",
-        "zh": "它把策略网络、价值网络、自我对弈强化学习和蒙特卡洛树搜索结合成一个决策闭环。"
-      },
-      "why": {
-        "en": "Go was too large for exhaustive enumeration. Neural networks supplied learned intuition, while tree search converted that intuition into concrete plans.",
-        "zh": "围棋空间过大，无法穷举。神经网络提供学习到的直觉，树搜索再把这种直觉转化为具体计划。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
-          "zh": "Mastering the Game of Go with Deep Neural Networks and Tree Search"
-        },
-        "authors": "David Silver et al.",
-        "journal": "Nature",
-        "year": 2016,
-        "url": "https://www.nature.com/articles/nature16961"
-      }
-    ],
     "commentarySections": [
       {
         "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
+          "en": "Published Paper",
+          "zh": "论文材料"
         },
         "html": {
-          "en": "Go had long resisted brute-force AI because its state space was enormous and expert play depended on pattern intuition. AlphaGo made the problem tractable by combining learned intuition with search, turning Go into a public demonstration of modern AI strategy.",
-          "zh": "围棋长期难以被蛮力 AI 攻克，因为状态空间巨大，高手对弈又依赖模式直觉。AlphaGo 通过把学习到的直觉与搜索结合起来，使这个问题变得可处理，并让围棋成为现代 AI 战略能力的公开展示。"
+          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
         }
       },
       {
         "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
+          "en": "Blog / API Materials",
+          "zh": "博客 / API 材料"
         },
         "html": {
-          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could reduce dependence on expert game data.",
-          "zh": "《自然》论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
         }
       },
       {
@@ -5838,16 +3160,7 @@ module.exports = {
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
-        },
-        gameEvolutionVideo("2016-alphago", {
-          "enName": "AlphaGo",
-          "zhName": "AlphaGo",
-          "poster": "research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg",
-          "description": {
-            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
-            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -13470,10 +10783,6 @@ module.exports = {
       "en": "playing Atari with deep reinforcement learning",
       "zh": "用深度强化学习玩 Atari"
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Playing Atari with Deep Reinforcement Learning",
@@ -13488,20 +10797,6 @@ module.exports = {
     "quotePage": {
       "en": "BenchCouncil AI100: Reinforcement learning / Deep Q Network",
       "zh": "BenchCouncil AI100：强化学习 / 深度 Q 网络"
-    },
-    "analysis": {
-      "what": {
-        "en": "DQN showed that one deep reinforcement learning agent could learn control policies directly from Atari pixels across multiple games.",
-        "zh": "DQN 证明一个深度强化学习智能体可以直接从 Atari 像素中学习多款游戏的控制策略。"
-      },
-      "how": {
-        "en": "It combined Q-learning with convolutional networks, experience replay and a target network to stabilize value learning.",
-        "zh": "它把 Q-learning 与卷积网络、经验回放和目标网络结合起来，以稳定价值学习。"
-      },
-      "why": {
-        "en": "It worked where earlier methods struggled because perception and control were trained together from replayed experience.",
-        "zh": "它能突破早期方法的瓶颈，是因为感知和控制可以从回放经验中联合训练。"
-      }
     },
     "commentarySections": [
       {
@@ -13520,8 +10815,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates. Together with convolutional perception, these tricks let one agent learn action values directly from game pixels.",
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。结合卷积感知后，这些技巧让同一个智能体可以直接从游戏像素学习动作价值。"
+          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates.",
+          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。"
         }
       },
       {
@@ -13557,7 +10852,6 @@ module.exports = {
         "zh": "像素进入回放；Q 值选择动作"
       },
       "visual": "dqn",
-      "demoImage": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "keyConcepts": [
         {
           "label": {
@@ -13643,16 +10937,7 @@ module.exports = {
             "en": "Open preprint",
             "zh": "打开预印本"
           }
-        },
-        gameEvolutionVideo("2013-dqn", {
-          "enName": "DQN",
-          "zhName": "DQN",
-          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
-          "description": {
-            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
-            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -13706,7 +10991,6 @@ module.exports = {
     },
     "images": [
       "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-      "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
       "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
       "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
     ],
@@ -13728,31 +11012,6 @@ module.exports = {
         "usage": {
           "en": "Historical figure / Key contributor portrait",
           "zh": "历史人物 / 关键贡献者肖像"
-        }
-      },
-      "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg": {
-        "caption": {
-          "en": "Atari control loop",
-          "zh": "Atari 控制循环"
-        },
-        "subcaption": {
-          "en": "Local game-screen explainer showing pixels, replay, Q-values, and action choice.",
-          "zh": "本地游戏画面解释图，展示像素、回放、Q 值与动作选择。"
-        },
-        "sourceName": {
-          "en": "Playing Atari with Deep Reinforcement Learning",
-          "zh": "《用深度强化学习玩 Atari》"
-        },
-        "source": "https://arxiv.org/abs/1312.5602",
-        "sourceUrl": "https://arxiv.org/abs/1312.5602",
-        "originalImageUrl": "Local original redraw",
-        "license": {
-          "en": "Original local SVG redraw; source figures are not copied.",
-          "zh": "本地原创 SVG 重绘；未复制来源图形。"
-        },
-        "usage": {
-          "en": "Game-control explainer",
-          "zh": "游戏控制解释图"
         }
       },
       "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
@@ -14490,10 +11749,6 @@ module.exports = {
       "en": "Specialized chess search hardware",
       "zh": "专用国际象棋搜索硬件"
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Deep Blue journal article",
@@ -14509,32 +11764,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Game AI / Deep Blue",
       "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
     },
-    "analysis": {
-      "what": {
-        "en": "Deep Blue defeated reigning world chess champion Garry Kasparov in a regulation match, turning computer chess into a public AI milestone.",
-        "zh": "Deep Blue 在正式比赛中击败卫冕世界冠军加里·卡斯帕罗夫，使计算机国际象棋成为公众熟知的 AI 里程碑。"
-      },
-      "how": {
-        "en": "It used massively parallel alpha-beta search, chess-specific evaluation, opening and endgame knowledge, and custom chips for move generation and scoring.",
-        "zh": "它使用大规模并行 alpha-beta 搜索、国际象棋专用评估、开局与残局知识，并用定制芯片加速走法生成和局面评分。"
-      },
-      "why": {
-        "en": "Human champions relied on selective intuition. Deep Blue won by pushing calculation depth and chess-specific hardware beyond human tactical reach.",
-        "zh": "人类冠军依靠选择性直觉。Deep Blue 通过远超人类战术覆盖范围的计算深度和棋类专用硬件取得突破。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Deep Blue",
-          "zh": "Deep Blue"
-        },
-        "authors": "Murray Campbell, A. Joseph Hoane Jr., Feng-hsiung Hsu",
-        "journal": "Artificial Intelligence",
-        "year": 2002,
-        "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-      }
-    ],
     "commentarySections": [
       {
         "label": {
@@ -14552,8 +11781,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. Custom hardware made that search practical at match speed, while evaluation knowledge kept the tree focused on chess-relevant lines.",
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。定制硬件让这种搜索能以比赛速度运行，而评估知识则让搜索树集中在与棋局有关的线路上。"
+          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge.",
+          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。"
         }
       },
       {
@@ -14684,29 +11913,9 @@ module.exports = {
             "en": "Open article record",
             "zh": "打开论文记录"
           }
-        },
-        gameEvolutionVideo("1997-deep-blue", {
-          "enName": "Deep Blue",
-          "zhName": "深蓝",
-          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-          "description": {
-            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-          }
-        })
+        }
       ],
       "sources": [
-        {
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "label": {
-            "en": "Deep Blue journal article",
-            "zh": "深蓝期刊论文"
-          },
-          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1"
-        },
         {
           "type": {
             "en": "Profile",
@@ -14731,8 +11940,8 @@ module.exports = {
         },
         {
           "type": {
-            "en": "History",
-            "zh": "历史资料"
+            "en": "Official history",
+            "zh": "官方历史资料"
           },
           "label": {
             "en": "IBM100: Deep Blue",
@@ -16071,7 +13280,7 @@ module.exports = {
     "videos": []
   },
   "1958-rosenblatt-perceptron": {
-    "year": "1958",
+    "year": "1957",
     "title": {
       "en": "Rosenblatt Perceptron",
       "zh": "罗森布拉特 感知机"
@@ -16726,10 +13935,6 @@ module.exports = {
       "en": "Bootstrapped value prediction",
       "zh": "自举式价值预测"
     },
-    "quoteLabel": {
-      "en": "Technical cue",
-      "zh": "技术线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Learning to predict by temporal differences",
@@ -16745,20 +13950,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Reinforcement learning / Temporal-Difference Update",
       "zh": "BenchCouncil AI100：强化学习 / 时序差分更新"
     },
-    "analysis": {
-      "what": {
-        "en": "Temporal-difference learning made it possible to update value predictions before a full game or episode had finished.",
-        "zh": "时序差分学习使智能体可以在完整对局或回合结束前更新价值预测。"
-      },
-      "how": {
-        "en": "It bootstraps from the next reward and the next prediction, nudging the current value estimate toward a one-step target.",
-        "zh": "它根据下一步奖励和下一步预测自举，把当前价值估计推向一步目标。"
-      },
-      "why": {
-        "en": "It succeeded because delayed rewards no longer had to wait until the final outcome, a key idea for later game-learning agents.",
-        "zh": "它成功的原因在于延迟奖励不必等到最终结果才能产生学习信号，这成为后续游戏学习智能体的关键思想。"
-      }
-    },
     "commentarySections": [
       {
         "label": {
@@ -16766,8 +13957,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended. Board-game learning made that problem especially clear because a useful move can happen long before the final win, loss, or draw.",
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。棋类学习让这个问题尤其清楚，因为有用的走法可能远早于最终胜负或和棋结果。"
+          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended.",
+          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。"
         }
       },
       {
@@ -16776,8 +13967,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target. This bootstrapping lets an agent improve from partial trajectories instead of waiting for complete solved outcomes.",
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。这种自举让智能体可以从局部轨迹中改进，而不必等待完整且已求解的最终结果。"
+          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target.",
+          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。"
         }
       },
       {
@@ -16813,7 +14004,6 @@ module.exports = {
         "zh": "用下一步预测和奖励更新价值估计"
       },
       "visual": "td",
-      "demoImage": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "keyConcepts": [
         {
           "label": {
@@ -16906,16 +14096,7 @@ module.exports = {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
           }
-        },
-        gameEvolutionVideo("1988-td-update", {
-          "enName": "TD-Gammon trajectory",
-          "zhName": "TD-Gammon 轨迹",
-          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-          "description": {
-            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -16955,7 +14136,6 @@ module.exports = {
     },
     "images": [
       "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
-      "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
       "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
       "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
     ],
@@ -16980,31 +14160,6 @@ module.exports = {
         "usage": {
           "en": "Historical figure / Key contributor portrait",
           "zh": "历史人物 / 关键贡献者肖像"
-        }
-      },
-      "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg": {
-        "caption": {
-          "en": "TD update over a game trajectory",
-          "zh": "游戏轨迹上的 TD 更新"
-        },
-        "subcaption": {
-          "en": "Local board-game explainer linking TD learning to game-state prediction.",
-          "zh": "本地棋类解释图，把 TD 学习与游戏状态预测联系起来。"
-        },
-        "sourceName": {
-          "en": "Learning to Predict by the Methods of Temporal Differences",
-          "zh": "《用时序差分方法学习预测》"
-        },
-        "source": "https://doi.org/10.1007/BF00115009",
-        "sourceUrl": "https://doi.org/10.1007/BF00115009",
-        "originalImageUrl": "Local original redraw",
-        "license": {
-          "en": "Original local SVG redraw; source figures are not copied.",
-          "zh": "本地原创 SVG 重绘；未复制来源图形。"
-        },
-        "usage": {
-          "en": "Board-game trajectory explainer",
-          "zh": "棋类轨迹解释图"
         }
       },
       "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg": {
@@ -18094,10 +15249,6 @@ module.exports = {
       "en": "Non-numerical programs could play",
       "zh": "非数值程序也可以对弈"
     },
-    "quoteLabel": {
-      "en": "Paper cue",
-      "zh": "论文线索"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Logical or non-mathematical programmes",
@@ -18113,20 +15264,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
       "zh": "BenchCouncil AI100：游戏 / 克里斯托弗·斯特雷奇 的跳棋程序"
     },
-    "analysis": {
-      "what": {
-        "en": "Strachey's draughts program showed that stored-program computers could represent a board game, generate legal moves and choose actions.",
-        "zh": "斯特雷奇的跳棋程序证明，存储程序计算机可以表示棋盘游戏、生成合法走法并选择行动。"
-      },
-      "how": {
-        "en": "It encoded board states and move rules, then used simple evaluation to compare candidate moves on early British hardware.",
-        "zh": "它编码棋盘状态和走法规则，再在早期英国计算机上用简单评估比较候选走法。"
-      },
-      "why": {
-        "en": "It mattered because it moved computing beyond arithmetic into symbolic choice, making games a practical testbed for search and evaluation.",
-        "zh": "它的重要性在于把计算从算术推进到符号选择，使游戏成为搜索和评估的实际试验场。"
-      }
-    },
     "commentarySections": [
       {
         "label": {
@@ -18134,8 +15271,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools. Draughts made those constraints concrete because the machine had to represent a board, test legal moves, and choose among alternatives.",
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。跳棋把这些限制具体化了，因为机器必须表示棋盘、检查合法走法并在备选方案中做选择。"
+          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools.",
+          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。"
         }
       },
       {
@@ -18144,8 +15281,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script. That pattern made search and evaluation visible as computational ingredients of intelligent play.",
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。这种模式让搜索与评估成为智能对弈中可见的计算要素。"
+          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script.",
+          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。"
         }
       },
       {
@@ -18268,16 +15405,7 @@ module.exports = {
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
-        },
-        gameEvolutionVideo("1951-strachey-draughts", {
-          "enName": "Strachey's draughts",
-          "zhName": "斯特雷奇跳棋",
-          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-          "description": {
-            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
-            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -18325,38 +15453,58 @@ module.exports = {
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg"
         }
       ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+      "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
       "demoPanel": "sources"
     },
     "images": [
-      "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
     ],
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg": {
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
         "caption": {
-          "en": "Christopher Strachey profile card",
-          "zh": "克里斯托弗·斯特雷奇人物卡"
+          "en": "Christopher Strachey's draughts program",
+          "zh": "克里斯托弗·斯特雷奇 跳棋程序截图"
         },
         "subcaption": {
-          "en": "Local portrait-style card for the draughts program developer.",
-          "zh": "跳棋程序开发者的本地人物卡。"
+          "en": "Screenshot of the early draughts program attributed to Strachey.",
+          "zh": "克里斯托弗·斯特雷奇 早期跳棋程序截图。"
         },
         "sourceName": {
-          "en": "Local original profile card",
-          "zh": "本地原创人物卡"
+          "en": "Wikimedia Commons",
+          "zh": "维基共享资源"
         },
-        "source": "https://history.computer.org/pioneers/strachey.html",
-        "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
-        "originalImageUrl": "Local original SVG profile card",
-        "license": {
-          "en": "Original local SVG profile card; no source photograph is copied.",
-          "zh": "本地原创 SVG 人物卡；未复制来源照片。"
-        },
+        "source": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+        "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+        "license": "Public domain",
         "usage": {
-          "en": "Historical figure profile image",
-          "zh": "历史人物资料图"
+          "en": "Program screenshot",
+          "zh": "程序截图"
+        }
+      },
+      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+        "caption": {
+          "en": "Checkers board",
+          "zh": "跳棋棋盘照片"
+        },
+        "subcaption": {
+          "en": "Physical checkers board used as visual context for game-playing AI.",
+          "zh": "作为游戏 AI 背景材料的真实跳棋棋盘照片。"
+        },
+        "sourceName": {
+          "en": "Wikimedia Commons",
+          "zh": "维基共享资源"
+        },
+        "source": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+        "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "license": "CC BY 3.0",
+        "usage": {
+          "en": "Game-board photo",
+          "zh": "棋盘照片"
         }
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -18446,10 +15594,6 @@ module.exports = {
       "en": "Perfect play in checkers is a draw",
       "zh": "跳棋完美对弈结果为和棋"
     },
-    "quoteLabel": {
-      "en": "Result summary",
-      "zh": "结果摘要"
-    },
     "quoteMeta": {
       "workTitle": {
         "en": "Checkers Is Solved",
@@ -18465,32 +15609,6 @@ module.exports = {
       "en": "BenchCouncil AI100: Game / Chinook",
       "zh": "BenchCouncil AI100：游戏 / Chinook 跳棋程序"
     },
-    "analysis": {
-      "what": {
-        "en": "Chinook became the first computer program to win the world checkers championship and later helped prove that perfect play in checkers ends in a draw.",
-        "zh": "Chinook 成为首个赢得世界跳棋冠军的计算机程序，随后帮助证明跳棋在完美对弈下结果为和棋。"
-      },
-      "how": {
-        "en": "It combined opening books, alpha-beta search, hand-tuned evaluation and very large endgame databases that mapped late positions to proven outcomes.",
-        "zh": "它结合开局库、alpha-beta 搜索、人工调校评估函数，以及把后期局面映射到可证明结果的大规模残局数据库。"
-      },
-      "why": {
-        "en": "Earlier programs could search but still became uncertain near the endgame. Chinook made the endgame exact, so search could terminate in verified game-theoretic results.",
-        "zh": "早期程序虽能搜索，但残局阶段仍不确定。Chinook 把残局做成精确数据库，让搜索能落到经验证的博弈论结果上。"
-      }
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Checkers Is Solved",
-          "zh": "Checkers Is Solved"
-        },
-        "authors": "Jonathan Schaeffer, Neil Burch, Yngvi Bjornsson, Akihiro Kishimoto, Martin Muller, Robert Lake, Paul Lu, Steve Sutphen",
-        "journal": "Science",
-        "year": 2007,
-        "url": "https://www.science.org/doi/10.1126/science.1144079"
-      }
-    ],
     "commentarySections": [
       {
         "label": {
@@ -18498,8 +15616,8 @@ module.exports = {
           "zh": "历史背景"
         },
         "html": {
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. That made Chinook a useful bridge between competitive game programs and mathematically verified game solving.",
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。这使 Chinook 成为竞技游戏程序和数学化游戏求解之间的桥梁。"
+          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction.",
+          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。"
         }
       },
       {
@@ -18508,8 +15626,8 @@ module.exports = {
           "zh": "核心思想"
         },
         "html": {
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The tablebases turned many late positions from heuristic estimates into exact lookups, reducing uncertainty near the end of search.",
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。残局表把许多后期局面从启发式估计变成精确查询，降低了搜索接近终局时的不确定性。"
+          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes.",
+          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。"
         }
       },
       {
@@ -18632,16 +15750,7 @@ module.exports = {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
           }
-        },
-        gameEvolutionVideo("1994-chinook", {
-          "enName": "Chinook",
-          "zhName": "Chinook",
-          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-          "description": {
-            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-          }
-        })
+        }
       ],
       "sources": [
         {
@@ -20882,783 +17991,6 @@ module.exports = {
         }
       }
     },
-    "videos": []
-  },
-  "2017-alphazero": {
-    "year": "2017-2018",
-    "title": {
-      "en": "AlphaZero",
-      "zh": "AlphaZero"
-    },
-    "location": {
-      "name": {
-        "en": "DeepMind",
-        "zh": "DeepMind"
-      },
-      "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
-      },
-      "coordinates": [
-        51.523,
-        -0.128
-      ]
-    },
-    "description": {
-      "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>",
-      "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
-        },
-        "role": {
-          "en": "DeepMind reinforcement learning lead",
-          "zh": "DeepMind 强化学习负责人"
-        }
-      },
-      {
-        "name": {
-          "en": "Demis Hassabis",
-          "zh": "德米斯·哈萨比斯"
-        },
-        "role": {
-          "en": "DeepMind co-founder",
-          "zh": "DeepMind 联合创始人"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "a general reinforcement learning algorithm",
-      "zh": "一种通用强化学习算法"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
-        "zh": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法"
-      },
-      "workAuthors": {
-        "en": "David Silver et al., Science, 2018",
-        "zh": "David Silver 等，Science，2018"
-      },
-      "sourceUrl": "https://www.science.org/doi/10.1126/science.aar6404"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / AlphaZero",
-      "zh": "BenchCouncil AI100：游戏 AI / AlphaZero"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
-          "zh": "用通用强化学习算法通过自我博弈掌握国际象棋与将棋"
-        },
-        "authors": {
-          "en": "David Silver et al.",
-          "zh": "David Silver 等"
-        },
-        "journal": {
-          "en": "arXiv",
-          "zh": "arXiv"
-        },
-        "year": "2017",
-        "url": "https://arxiv.org/abs/1712.01815"
-      },
-      {
-        "title": {
-          "en": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
-          "zh": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法"
-        },
-        "authors": {
-          "en": "David Silver et al.",
-          "zh": "David Silver 等"
-        },
-        "journal": {
-          "en": "Science",
-          "zh": "Science"
-        },
-        "year": "2018",
-        "url": "https://www.science.org/doi/10.1126/science.aar6404"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "AlphaGo still used human expert games and Go-specific training stages. AlphaZero asked whether self-play could carry more of the burden by itself.",
-          "zh": "AlphaGo 仍使用人类专家棋谱和围棋专用训练阶段。AlphaZero 进一步追问：自我博弈能否承担更多学习负担。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "A neural network predicts move probabilities and game outcomes; tree search improves action choice; self-play generates the next training data.",
-          "zh": "神经网络预测落子概率与胜负结果；树搜索改进动作选择；自我博弈继续产生下一轮训练数据。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "General game reinforcement learning",
-        "zh": "通用游戏强化学习"
-      },
-      "method": {
-        "en": "Self-play policy-value learning with Monte Carlo tree search",
-        "zh": "自我博弈策略-价值学习与蒙特卡洛树搜索"
-      },
-      "artifact": {
-        "en": "One algorithm for Go, chess, and shogi",
-        "zh": "面向围棋、国际象棋和将棋的一套算法"
-      },
-      "material": {
-        "en": "arXiv preprint and Science paper",
-        "zh": "arXiv 预印本与 Science 论文"
-      },
-      "demo": {
-        "en": "Self-play creates games, search improves moves, the network absorbs both",
-        "zh": "自我博弈生成棋局，搜索改进落子，网络吸收两者"
-      },
-      "visual": "go",
-      "visualModules": [
-        gameEvolutionVideo("2017-alphazero", {
-          "enName": "AlphaZero",
-          "zhName": "AlphaZero",
-          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-          "description": {
-            "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-            "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Science paper",
-            "zh": "Science 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.science.org/doi/10.1126/science.aar6404"
-        },
-        {
-          "label": {
-            "en": "arXiv preprint",
-            "zh": "arXiv 预印本"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://arxiv.org/abs/1712.01815"
-        },
-        {
-          "label": {
-            "en": "DeepMind AlphaZero blog",
-            "zh": "DeepMind AlphaZero 博客"
-          },
-          "type": {
-            "en": "Blog",
-            "zh": "博客"
-          },
-          "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "AlphaGo",
-          "zh": "AlphaGo"
-        },
-        {
-          "en": "Monte Carlo Tree Search",
-          "zh": "蒙特卡洛树搜索"
-        },
-        {
-          "en": "MuZero",
-          "zh": "MuZero"
-        }
-      ]
-    },
-    "images": [],
-    "videos": []
-  },
-  "2017-libratus": {
-    "year": "2017",
-    "title": {
-      "en": "Libratus",
-      "zh": "Libratus"
-    },
-    "location": {
-      "name": {
-        "en": "Carnegie Mellon University",
-        "zh": "卡内基梅隆大学"
-      },
-      "country": {
-        "en": "Pittsburgh, United States",
-        "zh": "美国匹兹堡"
-      },
-      "coordinates": [
-        40.4433,
-        -79.9436
-      ]
-    },
-    "description": {
-      "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day's play, proving that game AI could move beyond perfect-information boards.</p>",
-      "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Tuomas Sandholm",
-          "zh": "托马斯·桑德霍姆"
-        },
-        "role": {
-          "en": "CMU professor and Libratus co-creator",
-          "zh": "CMU 教授，Libratus 共同创建者"
-        }
-      },
-      {
-        "name": {
-          "en": "Noam Brown",
-          "zh": "诺姆·布朗"
-        },
-        "role": {
-          "en": "Libratus co-creator",
-          "zh": "Libratus 共同创建者"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "superhuman AI for heads-up no-limit poker",
-      "zh": "面向一对一无限注扑克的超人 AI"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
-        "zh": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手"
-      },
-      "workAuthors": {
-        "en": "Noam Brown and Tuomas Sandholm, Science, 2017",
-        "zh": "Noam Brown 与 Tuomas Sandholm，Science，2017"
-      },
-      "sourceUrl": "https://www.science.org/doi/10.1126/science.aao1733"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / Libratus",
-      "zh": "BenchCouncil AI100：游戏 AI / Libratus"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
-          "zh": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手"
-        },
-        "authors": {
-          "en": "Noam Brown, Tuomas Sandholm",
-          "zh": "Noam Brown，Tuomas Sandholm"
-        },
-        "journal": {
-          "en": "Science",
-          "zh": "Science"
-        },
-        "year": "2017",
-        "url": "https://www.science.org/doi/10.1126/science.aao1733"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "Poker added hidden cards, bluffing, and uncertainty, forcing AI to reason about strategies instead of visible board positions alone.",
-          "zh": "扑克加入了暗牌、诈唬和不确定性，迫使 AI 不只推理可见棋盘位置，还要推理策略分布。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "The system solved an abstract strategy before play, then refined difficult subgames in real time and patched weaknesses between sessions.",
-          "zh": "系统赛前求解抽象策略，比赛中实时细化困难子局，并在每日赛后修补弱点。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Imperfect-information game AI",
-        "zh": "不完全信息博弈 AI"
-      },
-      "method": {
-        "en": "Abstraction, endgame solving, and self-improving strategy repair",
-        "zh": "抽象、残局求解与自我改进策略修复"
-      },
-      "artifact": {
-        "en": "Heads-up no-limit Texas hold'em poker agent",
-        "zh": "一对一无限注德州扑克智能体"
-      },
-      "material": {
-        "en": "Science paper and CMU release",
-        "zh": "Science 论文与 CMU 新闻稿"
-      },
-      "demo": {
-        "en": "Hidden cards require equilibrium reasoning rather than direct board search",
-        "zh": "暗牌要求均衡策略推理，而不只是直接棋盘搜索"
-      },
-      "visual": "poker",
-      "visualModules": [
-        gameEvolutionVideo("2017-libratus", {
-          "enName": "Libratus",
-          "zhName": "Libratus",
-          "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
-          "description": {
-            "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
-            "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Science paper",
-            "zh": "Science 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.science.org/doi/10.1126/science.aao1733"
-        },
-        {
-          "label": {
-            "en": "CMU Libratus release",
-            "zh": "CMU Libratus 新闻稿"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "Counterfactual Regret Minimization",
-          "zh": "反事实遗憾最小化"
-        },
-        {
-          "en": "Pluribus",
-          "zh": "Pluribus"
-        }
-      ]
-    },
-    "images": [],
-    "videos": []
-  },
-  "2019-pluribus": {
-    "year": "2019",
-    "title": {
-      "en": "Pluribus",
-      "zh": "Pluribus"
-    },
-    "location": {
-      "name": {
-        "en": "Carnegie Mellon University and Facebook AI Research",
-        "zh": "卡内基梅隆大学与 Facebook AI Research"
-      },
-      "country": {
-        "en": "Pittsburgh and Menlo Park, United States",
-        "zh": "美国匹兹堡与门洛帕克"
-      },
-      "coordinates": [
-        40.4433,
-        -79.9436
-      ]
-    },
-    "description": {
-      "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used search over a blueprint strategy and real-time reasoning to handle multiple opponents, moving game AI toward messy multiplayer settings where no single opponent model is enough.</p>",
-      "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它在蓝图策略上进行搜索，并用实时推理处理多个对手，把游戏 AI 推向更接近真实世界的多人复杂环境。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Noam Brown",
-          "zh": "诺姆·布朗"
-        },
-        "role": {
-          "en": "Pluribus co-creator",
-          "zh": "Pluribus 共同创建者"
-        }
-      },
-      {
-        "name": {
-          "en": "Tuomas Sandholm",
-          "zh": "托马斯·桑德霍姆"
-        },
-        "role": {
-          "en": "Pluribus co-creator",
-          "zh": "Pluribus 共同创建者"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "superhuman AI for multiplayer poker",
-      "zh": "面向多人扑克的超人 AI"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "Superhuman AI for multiplayer poker",
-        "zh": "面向多人扑克的超人 AI"
-      },
-      "workAuthors": {
-        "en": "Noam Brown and Tuomas Sandholm, Science, 2019",
-        "zh": "Noam Brown 与 Tuomas Sandholm，Science，2019"
-      },
-      "sourceUrl": "https://www.science.org/doi/10.1126/science.aay2400"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / Pluribus",
-      "zh": "BenchCouncil AI100：游戏 AI / Pluribus"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Superhuman AI for multiplayer poker",
-          "zh": "面向多人扑克的超人 AI"
-        },
-        "authors": {
-          "en": "Noam Brown, Tuomas Sandholm",
-          "zh": "Noam Brown，Tuomas Sandholm"
-        },
-        "journal": {
-          "en": "Science",
-          "zh": "Science"
-        },
-        "year": "2019",
-        "url": "https://www.science.org/doi/10.1126/science.aay2400"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "Many real strategic settings are neither two-player nor zero-sum in the clean chess sense. Multiplayer poker made that gap concrete.",
-          "zh": "许多真实策略场景并不是干净的两人零和棋局。多人扑克把这个差距具体化了。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "A compact blueprint strategy is refined by search during play, allowing the system to respond without solving the whole game from scratch.",
-          "zh": "紧凑的蓝图策略在对局中由搜索进一步细化，让系统无需从头求解整个游戏也能响应局势。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Multiplayer imperfect-information game AI",
-        "zh": "多人不完全信息博弈 AI"
-      },
-      "method": {
-        "en": "Blueprint strategy with limited-lookahead search",
-        "zh": "蓝图策略与有限前瞻搜索"
-      },
-      "artifact": {
-        "en": "Six-player no-limit Texas hold'em poker agent",
-        "zh": "六人无限注德州扑克智能体"
-      },
-      "material": {
-        "en": "Science paper, CMU release, and Meta AI report",
-        "zh": "Science 论文、CMU 新闻稿与 Meta AI 报道"
-      },
-      "demo": {
-        "en": "A compact strategy is refined while several opponents act at once",
-        "zh": "多个对手同时行动时，紧凑策略被实时细化"
-      },
-      "visual": "poker",
-      "visualModules": [
-        gameEvolutionVideo("2019-pluribus", {
-          "enName": "Pluribus",
-          "zhName": "Pluribus",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
-          "description": {
-            "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
-            "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Science paper",
-            "zh": "Science 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.science.org/doi/10.1126/science.aay2400"
-        },
-        {
-          "label": {
-            "en": "Meta AI Pluribus report",
-            "zh": "Meta AI Pluribus 报道"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/"
-        },
-        {
-          "label": {
-            "en": "CMU Pluribus release",
-            "zh": "CMU Pluribus 新闻稿"
-          },
-          "type": {
-            "en": "News report",
-            "zh": "新闻报道"
-          },
-          "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "Libratus",
-          "zh": "Libratus"
-        },
-        {
-          "en": "Imperfect-information games",
-          "zh": "不完全信息博弈"
-        }
-      ]
-    },
-    "images": [],
-    "videos": []
-  },
-  "2019-muzero": {
-    "year": "2019-2020",
-    "title": {
-      "en": "MuZero",
-      "zh": "MuZero"
-    },
-    "location": {
-      "name": {
-        "en": "DeepMind",
-        "zh": "DeepMind"
-      },
-      "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
-      },
-      "coordinates": [
-        51.523,
-        -0.128
-      ]
-    },
-    "description": {
-      "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>",
-      "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Julian Schrittwieser",
-          "zh": "Julian Schrittwieser"
-        },
-        "role": {
-          "en": "MuZero first author",
-          "zh": "MuZero 第一作者"
-        }
-      },
-      {
-        "name": {
-          "en": "David Silver",
-          "zh": "大卫·席尔瓦"
-        },
-        "role": {
-          "en": "DeepMind reinforcement learning lead",
-          "zh": "DeepMind 强化学习负责人"
-        }
-      }
-    ],
-    "quoteText": {
-      "en": "planning with a learned model",
-      "zh": "用学习到的模型进行规划"
-    },
-    "quoteMeta": {
-      "workTitle": {
-        "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
-        "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
-      },
-      "workAuthors": {
-        "en": "Julian Schrittwieser et al., Nature, 2020",
-        "zh": "Julian Schrittwieser 等，Nature，2020"
-      },
-      "sourceUrl": "https://www.nature.com/articles/s41586-020-03051-4"
-    },
-    "quotePage": {
-      "en": "BenchCouncil AI100: Game AI / MuZero",
-      "zh": "BenchCouncil AI100：游戏 AI / MuZero"
-    },
-    "papers": [
-      {
-        "title": {
-          "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
-          "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
-        },
-        "authors": {
-          "en": "Julian Schrittwieser et al.",
-          "zh": "Julian Schrittwieser 等"
-        },
-        "journal": {
-          "en": "Nature",
-          "zh": "Nature"
-        },
-        "year": "2020",
-        "url": "https://www.nature.com/articles/s41586-020-03051-4"
-      },
-      {
-        "title": {
-          "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
-          "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
-        },
-        "authors": {
-          "en": "Julian Schrittwieser et al.",
-          "zh": "Julian Schrittwieser 等"
-        },
-        "journal": {
-          "en": "arXiv",
-          "zh": "arXiv"
-        },
-        "year": "2019",
-        "url": "https://arxiv.org/abs/1911.08265"
-      }
-    ],
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "AlphaZero searched using known rules. Reinforcement learning agents in Atari learned from pixels but often lacked explicit lookahead. MuZero bridged those two worlds.",
-          "zh": "AlphaZero 依赖已知规则搜索；Atari 强化学习智能体从像素学习但通常缺少显式前瞻。MuZero 把这两个世界连接起来。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "Instead of predicting every future observation, MuZero learns a latent dynamics model useful for rewards, values, policies, and search.",
-          "zh": "MuZero 不预测每个未来观测，而是学习对奖励、价值、策略和搜索有用的潜在动力学模型。"
-        }
-      }
-    ],
-    "achievement": {
-      "area": {
-        "en": "Learned-model planning",
-        "zh": "学习模型的规划"
-      },
-      "method": {
-        "en": "Latent dynamics, policy-value prediction, and tree search",
-        "zh": "潜在动力学、策略-价值预测与树搜索"
-      },
-      "artifact": {
-        "en": "Planning agent for board games and Atari",
-        "zh": "面向棋类游戏与 Atari 的规划智能体"
-      },
-      "material": {
-        "en": "Nature paper, arXiv preprint, and DeepMind blog",
-        "zh": "Nature 论文、arXiv 预印本与 DeepMind 博客"
-      },
-      "demo": {
-        "en": "A learned latent model lets search operate without handcrafted rules",
-        "zh": "学习到的潜在模型让搜索不再依赖手工规则"
-      },
-      "visual": "deepblue",
-      "visualModules": [
-        gameEvolutionVideo("2019-muzero", {
-          "enName": "MuZero",
-          "zhName": "MuZero",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-          "description": {
-            "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-            "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-          }
-        })
-      ],
-      "sources": [
-        {
-          "label": {
-            "en": "Nature paper",
-            "zh": "Nature 论文"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://www.nature.com/articles/s41586-020-03051-4"
-        },
-        {
-          "label": {
-            "en": "arXiv preprint",
-            "zh": "arXiv 预印本"
-          },
-          "type": {
-            "en": "Paper",
-            "zh": "论文"
-          },
-          "url": "https://arxiv.org/abs/1911.08265"
-        },
-        {
-          "label": {
-            "en": "DeepMind MuZero blog",
-            "zh": "DeepMind MuZero 博客"
-          },
-          "type": {
-            "en": "Blog",
-            "zh": "博客"
-          },
-          "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/"
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "AlphaZero",
-          "zh": "AlphaZero"
-        },
-        {
-          "en": "DQN",
-          "zh": "DQN"
-        },
-        {
-          "en": "Model-based reinforcement learning",
-          "zh": "基于模型的强化学习"
-        }
-      ]
-    },
-    "images": [],
     "videos": []
   },
   ...gamingExtraEvents,

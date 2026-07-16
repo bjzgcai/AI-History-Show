@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh.md)
 
-An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. Supports both Chinese and English (with an in-page language switch), and adapts automatically between single-screen, mobile, and dual-screen layouts.
+An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. Supports both Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and includes multiple storylines such as the core AI history exhibition, BenchCouncil AI100 achievements, and the gaming AI branch.
 
 ## Repositories
 
@@ -24,6 +24,13 @@ npm run start:demo
 
 # Validate generated data, tests, and startup behavior
 npm run validate:deployment
+
+# Validate AI100 context and quiz grounding
+npm run validate:ai100-context
+npm run validate:ai100-quizzes
+
+# Audit AI100 accuracy-sensitive claims
+npm run audit:ai100-accuracy
 
 # Run the full quality gate (lint + format check + tests)
 npm run quality
@@ -48,7 +55,7 @@ docker compose --profile admin up --build
 
 > **Security notice**: The management service (port 3001) has no authentication and is intended for **local use only**. **Never expose it directly to the public internet.** For production, access it through an SSH tunnel or behind Nginx Basic Auth — see [DEPLOYMENT.md](DEPLOYMENT.md) for details.
 
-Cloud deployment (Nginx + PM2), static hosting, and SSH-tunnel access to the admin console are all covered in [DEPLOYMENT.md](DEPLOYMENT.md).
+Cloud deployment (Nginx + PM2), static hosting, GitHub Pages, and SSH-tunnel access to the admin console are all covered in [DEPLOYMENT.md](DEPLOYMENT.md). The repository also includes a custom GitHub Pages workflow at [.github/workflows/pages.yml](.github/workflows/pages.yml).
 
 ## Internationalization (i18n)
 
@@ -61,6 +68,30 @@ The exhibition ships with built-in Chinese/English support:
 
 When authoring content, you can mix plain strings (treated as Chinese) and bilingual objects in the same event. The build step in `manage/generate.js` normalizes both forms into the final `milestones-data.js`.
 
+## Storylines
+
+The single-screen entry includes a story selector dialog in the top bar. The generated dataset currently contains:
+
+| Storyline | Count | Notes |
+|-----------|-------|-------|
+| Core AI history | 21 | Main exhibition flow with the Three.js globe and milestone panels |
+| BenchCouncil AI100 achievements | 100 | Achievement-map layout with source cards, context sections, demos, and quizzes |
+| AI in Board & Tabletop Games | 13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
+
+Open a specific storyline directly with `?storyline=...`, for example:
+
+```text
+http://localhost:8000/index.html?storyline=bench-council-ai100
+http://localhost:8000/index.html?storyline=gaming-ai
+```
+
+The gaming branch supports SGF/game-state evolution modules. Source SGF examples and tooling live in:
+
+- `examples/sgf/sample-go-game.sgf`
+- `scripts/sgf_to_video.py`
+- `scripts/README-game-evolution-video.md`
+- `resources/videos/game-evolution/sample-go-game.gif`
+
 ## Quality Gate
 
 Before opening a Pull Request or merging changes, please run:
@@ -72,6 +103,16 @@ npm run validate:deployment
 ```
 
 The quality gate runs ESLint, Prettier format checks, and the existing Node.js verification scripts in sequence. Deployment validation regenerates the milestone data, runs tests, starts the presentation/admin services, builds the Docker image, and validates the Compose configuration in CI.
+
+Mobile support scope, viewport checklist, and responsive validation notes are recorded in [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md).
+
+For AI100 content work, also run:
+
+```bash
+npm run validate:ai100-context
+npm run validate:ai100-quizzes
+npm run audit:ai100-accuracy
+```
 
 Modules that should be prioritized for additional test coverage:
 
@@ -122,6 +163,7 @@ Edit categories and event content directly in the browser, click **Save**, then 
 manage/catalog.js   ─┐
                       ├─→  node manage/generate.js  ─→  milestones-data.js
 manage/events.js    ─┘
+manage/quizzes.js   ─┘
 resources/videos/   ─┘
 ```
 
@@ -133,7 +175,7 @@ No dependencies need to be installed — run it directly. If the script fails (o
 
 ```
 ✓ Generated: milestones-data.js
-  5 categories, 21 events total
+  5 categories, 1 branch, 134 events total
 ```
 
 ---
@@ -166,7 +208,12 @@ module.exports = {
 };
 ```
 
-**Current categories (4 categories, 21 events):**
+`catalog.js` supports two top-level display lists:
+
+- `categories`: main linear exhibition categories, including the BenchCouncil AI100 category.
+- `branches`: alternate storyline branches such as `gaming-ai`; branch-generated milestone IDs are prefixed with the branch ID, for example `milestone-gaming-ai-2016-alphago`.
+
+**Current main categories (5 categories, 121 generated events):**
 
 | Category | Events | Timespan |
 |----------|--------|----------|
@@ -174,6 +221,13 @@ module.exports = {
 | Neural Networks and Connectionism | 4 | 1980s–2000s |
 | Deep Learning and Unified Paradigms | 7 | 2010s–2020s |
 | Large Models and Scientific Intelligence | 7 | 2018–2025 |
+| BenchCouncil AI100 Achievements | 100 | 1940s–2020s |
+
+**Current branch storylines:**
+
+| Branch | Events | Layout |
+|--------|--------|--------|
+| AI in Board & Tabletop Games (`gaming-ai`) | 13 | Horizontal branch timeline |
 
 ---
 
@@ -230,6 +284,17 @@ module.exports = {
 | `quotePage` | string | Quote source / attribution |
 | `images` | array | List of relative image paths |
 | `videos` | array | List of YouTube video IDs (matching JSON metadata required) |
+
+AI100 and branch events may also include richer fields such as:
+
+| Field | Description |
+|-------|-------------|
+| `storyline` | Storyline identifier and label; generated automatically for catalog branches |
+| `achievement` | AI100/branch achievement metadata, demo configuration, visual modules, and sources |
+| `commentarySections` | Bilingual right-side context sections |
+| `analysis` | Branch timeline summary blocks (`what`, `how`, `why`) |
+| `papers` | Branch paper/source list rendered in the branch timeline and sources panels |
+| `quoteLabel` | Custom label for quote-like records such as match records or paper cues |
 
 ---
 
@@ -294,6 +359,9 @@ AI-History-Show/
 ├── manage/                      # Content management directory
 │   ├── catalog.js               # File A: category and event catalog
 │   ├── events.js                # File B: per-event content
+│   ├── ai100-extra-events.js    # Additional BenchCouncil AI100 content
+│   ├── gaming-extra-events.js   # Gaming AI branch content
+│   ├── quizzes.js               # AI100 / branch quiz data
 │   ├── figure-avatars.js        # Canonical figure-avatar registry
 │   ├── generate.js              # Generator script (no dependencies)
 │   ├── server.js                # Visual admin server (node manage/server.js)
@@ -309,13 +377,20 @@ AI-History-Show/
 ├── scripts/                     # Local verification and reporting scripts
 │   ├── test-layout-router.js
 │   ├── test-swipe-navigation.js
+│   ├── validate-ai100-context.js
+│   ├── validate-ai100-quizzes-grounded.js
+│   ├── audit-ai100-accuracy.js
+│   ├── sgf_to_video.py
 │   └── report-figure-avatars.js
 │
 ├── resources/
 │   ├── images/                  # Event images (subfolders per event key)
+│   ├── papers/                  # Local paper PDFs used by source cards
 │   └── videos/                  # YouTube metadata JSON (one file per event)
 │
-├── DEPLOYMENT.md                # Deployment guide (Nginx / Gitee Pages)
+├── .github/workflows/           # Quality, deployment, and Pages workflows
+│
+├── DEPLOYMENT.md                # Deployment guide (Nginx / GitHub Pages / Gitee)
 └── README.md                    # This file
 ```
 
@@ -326,8 +401,12 @@ AI-History-Show/
 - **3D globe**: Three.js rendering, auto-locates to the geographic coordinates of the current event
 - **Bilingual UI**: Switch between Chinese and English at any time; the choice persists across sessions
 - **Page navigation**: Buttons or keyboard arrows (`←` / `→`)
+- **Storyline selector**: Dialog-based selector for core history, AI100, and gaming AI branch views
+- **AI100 achievement map**: Region filtering, source cards, paper-style demos, and grounded quizzes
+- **Gaming AI branch**: Horizontal timeline with game-record/evolution modules and branch-specific source cards
 - **Dual-screen auto paging**: `dual-screen.html` supports "Start/Stop auto play" — off by default; once enabled, pages cycle every 10 seconds
 - **Video playback**: Embedded YouTube videos plus local commentary videos
+- **SGF/game evolution playback**: Optional generated board-state clips with GIF fallback
 - **Image viewer**: Click to enter fullscreen, navigate with `←` / `→` / `Esc`
 - **Responsive**: Adapts to large screens (4K/2K/1080p) and mobile devices
 
@@ -338,6 +417,7 @@ AI-History-Show/
 - **Pure frontend**: HTML5 + CSS3 + JavaScript ES6+, no build tool and no runtime npm dependencies on the frontend
 - **Three.js** (loaded via CDN): 3D globe rendering
 - **Node.js** (used only for content generation): runs `manage/generate.js`
+- **Python** (optional): used by `scripts/sgf_to_video.py` to generate game-evolution clips
 
 ---
 
