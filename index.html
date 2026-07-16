@@ -8047,6 +8047,7 @@
         }
     </script>
     <script src="shared/i18n.js"></script>
+    <script src="shared/storyline-routing.js"></script>
     <script>
         document.write('<script src="' + _milestonesDataPath('milestones-data.js?v=20260613-gaming-ai-images') + '" onerror="_loadDefaultMilestones()"><\/script>');
     </script>
@@ -8078,7 +8079,7 @@
         const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .about-modal, .about-trigger, .region-modal, .mobile-quiz-app, iframe, .storyline-select, .ui-detail-image-stage';
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
-        const DEEP_STORYLINE_ID = 'deep-learning-history';
+        const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const STORYLINE_OPTIONS = [
             {
@@ -8138,12 +8139,7 @@
             }
         ];
         const allMilestones = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
-        const getMilestoneStorylineId = (milestone) => {
-            const storyline = milestone && milestone.storyline;
-            if (typeof storyline === 'string') return storyline || DEFAULT_STORYLINE_ID;
-            if (storyline && typeof storyline === 'object' && storyline.id) return storyline.id;
-            return DEEP_STORYLINE_ID;
-        };
+        const getMilestoneStorylineId = (milestone) => StorylineRouting.getMilestoneStorylineId(milestone, DEEP_STORYLINE_ID);
         const getStorylineMilestones = (storylineId) => (storylineId === UNIFIED_STORYLINE_ID
             ? buildUnifiedMilestones()
             : allMilestones.filter((item) => getMilestoneStorylineId(item) === storylineId).sort(compareMilestonesByTime));
@@ -8285,7 +8281,7 @@
                 return '';
             }
         };
-        const getRequestedStorylineId = () => getSearchParam('storyline');
+        const getRequestedStorylineId = () => StorylineRouting.normalizeStorylineId(getSearchParam('storyline'));
         const getRequestedQuizMode = () => getSearchParam('quiz');
         const getRequestedUiMode = () => getSearchParam('uiMode');
         const getRequestedEventId = () => getSearchParam('event');

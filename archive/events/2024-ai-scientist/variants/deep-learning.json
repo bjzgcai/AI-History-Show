@@ -69,5 +69,104 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Large Models and Scientific Intelligence",
+    "zh": "大模型与科学智能"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Sakana AI team",
+        "zh": "Sakana AI 团队"
+      },
+      "role": {
+        "en": "AI Scientist Developer",
+        "zh": "AI Scientist开发者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Berkeley Team",
+        "zh": "伯克利团队"
+      },
+      "role": {
+        "en": "A-Lab Developer",
+        "zh": "A-Lab开发者"
+      },
+      "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
+      "avatarStyle": "",
+      "figureType": "team"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+        "url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2024AI%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%9A%E6%8E%A2%E7%B4%A2%E5%8F%91%E7%8E%B0%E7%9A%84%E6%96%B0%E7%BA%AA%E5%85%83.mp4",
+        "title": "2024AI科学家：探索发现的新纪元",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"The AI Scientist explored an end-to-end research loop in which foundation models generate ideas, run experiments, write papers, and review results, while autonomous labs pushed similar automation into physical experimentation.\"",
+    "zh": "\"AI Scientist 探索了由基础模型生成想法、运行实验、撰写论文并评审结果的端到端研究循环；自主实验室则把类似自动化推进到真实物理实验。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "Chris Lu et al.",
+      "zh": "克里斯·卢等"
+    },
+    "workTitle": {
+      "en": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+      "zh": "AI Scientist：迈向全自动开放式科学发现"
+    },
+    "workAuthors": {
+      "en": "Sakana AI team, arXiv, 2024",
+      "zh": "Sakana AI 团队，arXiv，2024"
+    },
+    "sourceLabel": {
+      "en": "Sakana AI official project page",
+      "zh": "Sakana AI 官方项目页面"
+    },
+    "sourceUrl": "https://sakana.ai/ai-scientist/"
+  },
+  "quotePage": {
+    "en": "Sakana AI official project page and arXiv paper: The AI Scientist",
+    "zh": "Sakana AI 官方项目页与 arXiv 论文《AI Scientist》"
+  },
+  "quoteAttribution": {
+    "en": "<em>The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery</em>, Sakana AI team, arXiv, 2024",
+    "zh": "《AI 科学家》，克里斯·卢等"
+  },
+  "location": {
+    "name": {
+      "en": "Sakana AI / UC Berkeley",
+      "zh": "Sakana AI / UC Berkeley"
+    },
+    "country": {
+      "en": "Japan / United States",
+      "zh": "日本 / 美国"
+    },
+    "coordinates": [
+      [
+        35.6762,
+        139.6503
+      ],
+      [
+        37.8719,
+        -122.2585
+      ]
+    ]
   }
 }

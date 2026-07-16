@@ -119,5 +119,250 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+    "zh": "深度学习与范式归一（2010年代至2020年代）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "ResNet lead author",
+        "zh": "ResNet 第一作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Xiangyu Zhang",
+        "zh": "张祥雨"
+      },
+      "role": {
+        "en": "ResNet co-author",
+        "zh": "ResNet 共同作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Shaoqing Ren",
+        "zh": "任少卿"
+      },
+      "role": {
+        "en": "ResNet co-author",
+        "zh": "ResNet 共同作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "ResNet co-author and corresponding author",
+        "zh": "ResNet 共同作者与通讯作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+        "url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2015ResNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9A%84%E7%AA%81%E7%A0%B4.mp4",
+        "title": "2015ResNet：深度学习的突破",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"ResNet reformulated layers as residual functions and used identity shortcuts, making it possible to optimize much deeper visual recognition networks.\"",
+    "zh": "\"ResNet 把网络层重新表述为残差函数，并使用恒等捷径连接，使更深的视觉识别网络能够被有效优化。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Deep Residual Learning for Image Recognition",
+      "zh": "用于图像识别的深度残差学习"
+    },
+    "workAuthors": {
+      "en": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+      "zh": "何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
+  },
+  "quotePage": {
+    "en": "CVPR 2016 paper: Deep Residual Learning for Image Recognition",
+    "zh": "CVPR 2016 论文《用于图像识别的深度残差学习》"
+  },
+  "quoteAttribution": {
+    "en": "<em>Deep Residual Learning for Image Recognition</em>, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun, CVPR, 2016",
+    "zh": "《用于图像识别的深度残差学习》, 何恺明、张祥雨、任少卿、孙剑，CVPR，2016"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Residual learning with shortcut connections",
+      "zh": "带捷径连接的残差学习"
+    },
+    "artifact": {
+      "en": "Deep residual network",
+      "zh": "深度残差网络"
+    },
+    "material": {
+      "en": "CVPR paper",
+      "zh": "CVPR 论文"
+    },
+    "demo": {
+      "en": "A shortcut path adds the input back to a learned residual transformation.",
+      "zh": "捷径路径把输入加回学习得到的残差变换。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Shortcut Connection",
+          "zh": "捷径连接"
+        },
+        "text": {
+          "en": "The input can flow around a block and be added back.",
+          "zh": "输入可以绕过模块并被加回输出。"
+        }
+      },
+      {
+        "label": {
+          "en": "Residual Function",
+          "zh": "残差函数"
+        },
+        "text": {
+          "en": "The network learns changes to features rather than replacing them entirely.",
+          "zh": "网络学习特征变化，而不是完全替换特征。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "VGG",
+        "zh": "VGG"
+      },
+      {
+        "en": "DenseNet",
+        "zh": "DenseNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "China",
+        "zh": "中国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Input",
+        "zh": "输入"
+      },
+      {
+        "en": "Residual block",
+        "zh": "残差模块"
+      },
+      {
+        "en": "Add shortcut",
+        "zh": "加入捷径"
+      }
+    ],
+    "demoImage": "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper",
+          "zh": "CVPR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A shortcut path adds the input back to a learned residual transformation.",
+          "zh": "捷径路径把输入加回学习得到的残差变换。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Deep Residual Learning for Image Recognition",
+          "zh": "用于图像识别的深度残差学习"
+        },
+        "description": {
+          "en": "Open paper for residual networks.",
+          "zh": "残差网络的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1512.03385",
+        "source": "https://arxiv.org/abs/1512.03385",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
   }
 }

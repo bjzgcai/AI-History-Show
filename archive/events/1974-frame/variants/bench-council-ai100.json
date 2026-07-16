@@ -115,5 +115,184 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Author of the frame representation proposal",
+        "zh": "框架表示思想提出者"
+      },
+      "avatar": "resources/images/figures/marvin-minsky.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Structured slots with defaults and inheritance\"",
+    "zh": "\"带默认值和继承的槽结构\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A Framework for Representing Knowledge",
+      "zh": "表示知识的一种框架"
+    },
+    "workAuthors": {
+      "en": "Marvin Minsky",
+      "zh": "马文·明斯基"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Knowledge representation / Frame",
+    "zh": "BenchCouncil AI100：知识表示 / 框架"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Framework for Representing Knowledge</em>, Marvin Minsky",
+    "zh": "《表示知识的一种框架》, 马文·明斯基"
+  },
+  "achievement": {
+    "area": {
+      "en": "Knowledge representation",
+      "zh": "知识表示"
+    },
+    "method": {
+      "en": "Structured slots with defaults and inheritance",
+      "zh": "带默认值和继承的槽结构"
+    },
+    "artifact": {
+      "en": "Frame representation",
+      "zh": "框架知识表示"
+    },
+    "material": {
+      "en": "Minsky frame paper and MIT historical material",
+      "zh": "明斯基 框架论文与 麻省理工学院 史料"
+    },
+    "demo": {
+      "en": "Fill slots and inherit defaults for a situation",
+      "zh": "为情境填槽并继承默认值"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Slot",
+          "zh": "槽"
+        },
+        "text": {
+          "en": "A named field in a frame, such as color, owner, or expected part.",
+          "zh": "框架中的命名字段，例如颜色、拥有者或预期部件。"
+        }
+      },
+      {
+        "label": {
+          "en": "Default Value",
+          "zh": "默认值"
+        },
+        "text": {
+          "en": "A typical assumption used until evidence says otherwise.",
+          "zh": "在证据出现前使用的典型假设。"
+        }
+      },
+      {
+        "label": {
+          "en": "Inheritance",
+          "zh": "继承"
+        },
+        "text": {
+          "en": "Specific frames can reuse knowledge from more general frames.",
+          "zh": "具体框架可以复用更一般框架的知识。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "SHRDLU",
+        "zh": "SHRDLU"
+      },
+      {
+        "en": "Cyc",
+        "zh": "Cyc"
+      },
+      {
+        "en": "Knowledge representation",
+        "zh": "知识表示"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Choose situation",
+        "zh": "选择情境"
+      },
+      {
+        "en": "Fill slots",
+        "zh": "填充槽"
+      },
+      {
+        "en": "Override defaults",
+        "zh": "覆盖默认值"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Media Lab course archive",
+          "zh": "麻省理工学院媒体实验室课程档案"
+        },
+        "title": {
+          "en": "A Framework for Representing Knowledge",
+          "zh": "表示知识的一种框架"
+        },
+        "description": {
+          "en": "Course-hosted copy of Minsky's frame proposal.",
+          "zh": "课程资料中保存的 明斯基 框架论文。"
+        },
+        "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open paper PDF",
+          "zh": "打开论文 PDF"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
   }
 }

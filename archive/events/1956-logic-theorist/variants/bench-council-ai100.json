@@ -78,5 +78,192 @@
       "zh": "由 legacy AI100 数据批量生成的 variant。",
       "en": "Variant generated from legacy AI100 data in a batch migration."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Allen Newell",
+        "zh": "艾伦·纽厄尔"
+      },
+      "role": {
+        "en": "Logic Theorist co-creator",
+        "zh": "Logic Theorist 共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Herbert A. Simon",
+        "zh": "赫伯特·A·西蒙"
+      },
+      "role": {
+        "en": "Logic Theorist co-creator",
+        "zh": "Logic Theorist 共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "J. C. Shaw",
+        "zh": "J·C·肖"
+      },
+      "role": {
+        "en": "Programmer and co-developer",
+        "zh": "程序员与共同开发者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"capable of discovering proofs for theorems in symbolic logic\"",
+    "zh": "\"能够发现符号逻辑中定理的证明\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "The Logic Theory Machine: A Complex Information Processing System",
+      "zh": "逻辑理论机：一个复杂信息处理系统"
+    },
+    "workAuthors": {
+      "en": "Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+      "zh": "艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Logic Theorist",
+    "zh": "BenchCouncil AI100：自动定理证明 / Logic Theorist"
+  },
+  "quoteAttribution": {
+    "en": "<em>The Logic Theory Machine: A Complex Information Processing System</em>, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+    "zh": "《逻辑理论机：一个复杂信息处理系统》, 艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
+  },
+  "achievement": {
+    "area": {
+      "en": "Automated Theorem Proving",
+      "zh": "自动定理证明"
+    },
+    "method": {
+      "en": "Heuristic proof search",
+      "zh": "启发式证明搜索"
+    },
+    "artifact": {
+      "en": "Logic Theory Machine",
+      "zh": "逻辑理论机器"
+    },
+    "material": {
+      "en": "Paper + archive",
+      "zh": "论文 + 档案"
+    },
+    "demo": {
+      "en": "Proof search loop",
+      "zh": "证明搜索循环"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Heuristic Search",
+          "zh": "启发式搜索"
+        },
+        "text": {
+          "en": "Logic Theorist used rules of thumb to guide proof search. This made reasoning a selective process rather than brute-force enumeration.",
+          "zh": "Logic Theorist 用经验规则引导证明搜索。这让推理成为选择性过程，而不是暴力穷举。"
+        }
+      },
+      {
+        "label": {
+          "en": "Symbolic Reasoning",
+          "zh": "符号推理"
+        },
+        "text": {
+          "en": "The program manipulated logical expressions as symbols. That became a central pattern in early AI systems.",
+          "zh": "程序把逻辑表达式作为符号来操作。这成为早期 AI 系统的核心模式之一。"
+        }
+      },
+      {
+        "label": {
+          "en": "Automated Theorem Proving",
+          "zh": "自动定理证明"
+        },
+        "text": {
+          "en": "The system attempted to discover proof chains for mathematical logic statements. It helped establish theorem proving as a major AI task.",
+          "zh": "系统尝试为数理逻辑命题发现证明链。它帮助确立了定理证明作为 AI 重要任务的地位。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "General Problem Solver",
+        "zh": "General Problem Solver"
+      },
+      {
+        "en": "LISP",
+        "zh": "LISP"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Google Books",
+          "zh": "谷歌图书"
+        },
+        "title": {
+          "en": "The Logic Theory Machine",
+          "zh": "《逻辑理论机》"
+        },
+        "description": {
+          "en": "Bibliographic page for the 1956 Logic Theory Machine publication, including abstract and publication details.",
+          "zh": "1956 年 Logic Theory Machine 出版物的书目页面，包含摘要和出版信息。"
+        },
+        "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+        "source": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+        "license": {
+          "en": "Google Books bibliographic preview; reuse rights for book scans are not stated.",
+          "zh": "谷歌图书书目预览页；书籍扫描内容的复用权利未说明。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open book record",
+          "zh": "打开书目记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "RAND Corporation / Carnegie Institute of Technology",
+      "zh": "RAND Corporation / 卡内基理工学院"
+    },
+    "country": {
+      "en": "Santa Monica and Pittsburgh, United States",
+      "zh": "美国，圣塔莫尼卡与匹兹堡"
+    },
+    "coordinates": [
+      34.0195,
+      -118.4912
+    ]
   }
 }

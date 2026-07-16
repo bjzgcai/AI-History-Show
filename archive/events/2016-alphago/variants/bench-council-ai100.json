@@ -78,5 +78,174 @@
   "displayDescription": {
     "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>",
     "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>"
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Silver",
+        "zh": "大卫·席尔瓦"
+      },
+      "role": {
+        "en": "AlphaGo lead researcher",
+        "zh": "AlphaGo 主要研究者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "戴密斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder",
+        "zh": "DeepMind 联合创始人"
+      },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Aja Huang",
+        "zh": "黄士杰"
+      },
+      "role": {
+        "en": "AlphaGo researcher",
+        "zh": "AlphaGo 研究者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
+    "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+      "zh": "用深度神经网络和树搜索掌握围棋"
+    },
+    "workAuthors": {
+      "en": "David Silver et al., Nature, 2016",
+      "zh": "戴维·席尔瓦等, 《自然》, 2016"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.nature.com/articles/nature16961"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
+    "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
+  },
+  "quoteAttribution": {
+    "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
+    "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+  },
+  "achievement": {
+    "area": {
+      "en": "Reinforcement Learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Self-play search",
+      "zh": "自我对弈搜索"
+    },
+    "artifact": {
+      "en": "Policy/value networks + MCTS",
+      "zh": "策略 / 价值网络 + MCTS"
+    },
+    "material": {
+      "en": "Nature paper + blog + SGF/API",
+      "zh": "《自然》 论文 + 博客 + 棋谱/API"
+    },
+    "demo": {
+      "en": "Move 37 board explainer",
+      "zh": "第 37 手棋盘解释器"
+    },
+    "demoSteps": [
+      {
+        "en": "Policy prior",
+        "zh": "策略先验"
+      },
+      {
+        "en": "Value estimate",
+        "zh": "价值估计"
+      },
+      {
+        "en": "Search variation",
+        "zh": "搜索分支"
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "AlphaZero",
+        "zh": "AlphaZero"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Nature",
+          "zh": "《自然》"
+        },
+        "title": {
+          "en": "Mastering the game of Go with deep neural networks and tree search",
+          "zh": "《用深度神经网络和树搜索掌握围棋》"
+        },
+        "description": {
+          "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
+          "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+        },
+        "url": "https://www.nature.com/articles/nature16961",
+        "source": "https://www.nature.com/articles/nature16961",
+        "license": {
+          "en": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
+          "zh": "《自然》文章访问页；论文图表的复用受出版方条款限制。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open Nature paper",
+          "zh": "打开 《自然》 论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google DeepMind",
+      "zh": "谷歌 DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国，伦敦"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
   }
 }

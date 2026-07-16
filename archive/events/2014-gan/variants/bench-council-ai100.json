@@ -116,5 +116,228 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ian Goodfellow",
+        "zh": "伊恩·古德费洛"
+      },
+      "role": {
+        "en": "GAN lead author",
+        "zh": "GAN 主要作者"
+      },
+      "avatar": "resources/images/figures/ian-goodfellow.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "GAN co-author and advisor",
+        "zh": "GAN 共同作者与导师"
+      },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
+        "url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2014%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%86%B3%E6%96%97%E3%80%81%E5%BB%B6%E8%BF%9F%E4%B8%8E%E8%BE%A9%E8%AE%BA.mp4",
+        "title": "",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Generative adversarial nets\"",
+    "zh": "\"生成对抗网络\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Generative Adversarial Nets",
+      "zh": "生成对抗网络"
+    },
+    "workAuthors": {
+      "en": "Ian Goodfellow et al., NeurIPS, 2014",
+      "zh": "伊恩·古德费洛等，NeurIPS，2014"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1406.2661"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Generative Adversarial Nets</em>, Ian Goodfellow et al., NeurIPS, 2014",
+    "zh": "《生成对抗网络》, 伊恩·古德费洛等，NeurIPS，2014"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Adversarial generator-discriminator training",
+      "zh": "生成器-判别器对抗训练"
+    },
+    "artifact": {
+      "en": "GAN framework",
+      "zh": "GAN 框架"
+    },
+    "material": {
+      "en": "NeurIPS paper",
+      "zh": "NeurIPS 论文"
+    },
+    "demo": {
+      "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
+      "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Generator",
+          "zh": "生成器"
+        },
+        "text": {
+          "en": "A model maps noise to candidate samples.",
+          "zh": "模型把噪声映射为候选样本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Discriminator",
+          "zh": "判别器"
+        },
+        "text": {
+          "en": "A classifier provides adversarial feedback.",
+          "zh": "分类器提供对抗反馈。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "Diffusion models",
+        "zh": "扩散模型"
+      },
+      {
+        "en": "DALL-E",
+        "zh": "DALL-E"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      },
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Noise vector",
+        "zh": "Noise vector"
+      },
+      {
+        "en": "Generator",
+        "zh": "Generator"
+      },
+      {
+        "en": "Discriminator feedback",
+        "zh": "Discriminator feedback"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "NeurIPS paper",
+          "zh": "NeurIPS 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A generator tries to synthesize realistic samples while a discriminator learns to distinguish generated samples from real data. Their competition turns generation into a learned game, pushing the generator toward the data distribution.",
+          "zh": "生成器尝试合成逼真样本，判别器则学习区分生成样本和真实数据。两者的竞争把生成过程变成可学习的博弈，推动生成器接近真实数据分布。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Generative Adversarial Nets",
+          "zh": "生成对抗网络"
+        },
+        "description": {
+          "en": "Open paper for the original GAN framework.",
+          "zh": "原始 GAN 框架的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1406.2661",
+        "source": "https://arxiv.org/abs/1406.2661",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5056,
+      -73.6139
+    ]
   }
 }

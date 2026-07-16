@@ -115,5 +115,210 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Scott Kirkpatrick",
+        "zh": "斯科特·柯克帕特里克"
+      },
+      "role": {
+        "en": "Co-author of the 1983 simulated annealing paper",
+        "zh": "1983 年模拟退火论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "C. Daniel Gelatt Jr.",
+        "zh": "C·丹尼尔·格拉特 Jr."
+      },
+      "role": {
+        "en": "Co-author of the 1983 simulated annealing paper",
+        "zh": "1983 年模拟退火论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Mario P. Vecchi",
+        "zh": "马里奥·P·维基"
+      },
+      "role": {
+        "en": "Co-author of the 1983 simulated annealing paper",
+        "zh": "1983 年模拟退火论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"optimization by simulated annealing\"",
+    "zh": "\"通过模拟退火进行优化\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Optimization by Simulated Annealing",
+      "zh": "模拟退火优化"
+    },
+    "workAuthors": {
+      "en": "Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+      "zh": "斯科特·柯克帕特里克, C·丹尼尔·格拉特 Jr.、马里奥·P·维基, 《科学》, 1983"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Optimization / Simulated annealing",
+    "zh": "BenchCouncil AI100：优化算法 / 模拟退火"
+  },
+  "quoteAttribution": {
+    "en": "<em>Optimization by Simulated Annealing</em>, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi, Science, 1983",
+    "zh": "《模拟退火优化》, 斯科特·柯克帕特里克, C·丹尼尔·格拉特 Jr.、马里奥·P·维基, 《科学》, 1983"
+  },
+  "achievement": {
+    "area": {
+      "en": "Optimization",
+      "zh": "优化算法"
+    },
+    "method": {
+      "en": "Probabilistic search with a cooling schedule",
+      "zh": "带降温计划的概率搜索"
+    },
+    "artifact": {
+      "en": "Simulated annealing algorithm",
+      "zh": "模拟退火算法"
+    },
+    "material": {
+      "en": "Science paper on optimization by annealing",
+      "zh": "《科学》 模拟退火优化论文"
+    },
+    "demo": {
+      "en": "Accept some worse moves early, cool over time",
+      "zh": "早期接受部分坏移动，逐步降温"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Temperature",
+          "zh": "温度"
+        },
+        "text": {
+          "en": "A temperature parameter controls how willing the algorithm is to accept worse moves.",
+          "zh": "温度参数控制算法接受较差移动的意愿。"
+        }
+      },
+      {
+        "label": {
+          "en": "Cooling Schedule",
+          "zh": "降温计划"
+        },
+        "text": {
+          "en": "The schedule gradually lowers temperature so the search shifts from exploration to refinement.",
+          "zh": "降温计划逐渐降低温度，使搜索从探索转向精修。"
+        }
+      },
+      {
+        "label": {
+          "en": "Local Optima",
+          "zh": "局部最优"
+        },
+        "text": {
+          "en": "Accepting occasional worse moves helps the search escape solutions that are good nearby but not globally best.",
+          "zh": "偶尔接受较差移动可以帮助搜索逃离局部看起来不错但全局并非最优的解。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Genetic algorithms",
+        "zh": "遗传算法"
+      },
+      {
+        "en": "Monte Carlo methods",
+        "zh": "蒙特卡洛方法"
+      },
+      {
+        "en": "Search algorithms",
+        "zh": "搜索算法"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "High temperature",
+        "zh": "高温探索"
+      },
+      {
+        "en": "Occasional uphill move",
+        "zh": "偶尔上坡移动"
+      },
+      {
+        "en": "Cooling schedule",
+        "zh": "降温计划"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Science",
+          "zh": "《科学》"
+        },
+        "title": {
+          "en": "Optimization by Simulated Annealing",
+          "zh": "模拟退火优化"
+        },
+        "description": {
+          "en": "Original Science record for the physical annealing analogy applied to optimization.",
+          "zh": "《科学》原始记录：将物理退火类比用于优化问题。"
+        },
+        "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open Science record",
+          "zh": "打开 《科学》 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "IBM Thomas J. Watson Research Center",
+      "zh": "IBM 托马斯·J·沃森 研究中心"
+    },
+    "country": {
+      "en": "Yorktown Heights, United States",
+      "zh": "美国约克敦高地"
+    },
+    "coordinates": [
+      41.2107,
+      -73.8021
+    ]
   }
 }

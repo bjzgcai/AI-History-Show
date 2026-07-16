@@ -109,5 +109,178 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Oliver Selfridge",
+        "zh": "奥利弗·塞尔弗里奇"
+      },
+      "role": {
+        "en": "Author of the Pandemonium architecture",
+        "zh": "Pandemonium 架构提出者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Layered feature voters build perception\"",
+    "zh": "\"分层特征投票构成感知\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Pandemonium: A Paradigm for Learning",
+      "zh": "群魔殿：一种学习范式"
+    },
+    "workAuthors": {
+      "en": "Oliver G. Selfridge",
+      "zh": "奥利弗·G·塞尔弗里奇"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1007/978-1-4899-1221-6_4"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Perception / Pandemonium",
+    "zh": "BenchCouncil AI100：感知 / Pandemonium 感知架构"
+  },
+  "quoteAttribution": {
+    "en": "<em>Pandemonium: A Paradigm for Learning</em>, Oliver G. Selfridge",
+    "zh": "《群魔殿：一种学习范式》, 奥利弗·G·塞尔弗里奇"
+  },
+  "achievement": {
+    "area": {
+      "en": "Perception",
+      "zh": "感知"
+    },
+    "method": {
+      "en": "Layered feature detection and voting",
+      "zh": "分层特征检测与投票"
+    },
+    "artifact": {
+      "en": "Pandemonium architecture",
+      "zh": "Pandemonium 架构"
+    },
+    "material": {
+      "en": "1959 Mechanisation of Thought Processes paper",
+      "zh": "1959 年 Mechanisation of Thought Processes 论文"
+    },
+    "demo": {
+      "en": "Aggregate feature votes into a pattern decision",
+      "zh": "把特征投票聚合成模式决策"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Feature Detectors",
+          "zh": "特征检测器"
+        },
+        "text": {
+          "en": "Small recognizers fire for local evidence.",
+          "zh": "小型识别器针对局部证据激活。"
+        }
+      },
+      {
+        "label": {
+          "en": "Layered Competition",
+          "zh": "分层竞争"
+        },
+        "text": {
+          "en": "Higher-level hypotheses compete using lower-level signals.",
+          "zh": "高层假设利用低层信号竞争。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evidence Accumulation",
+          "zh": "证据累积"
+        },
+        "text": {
+          "en": "Recognition emerges from many partial votes.",
+          "zh": "识别来自许多局部投票的汇聚。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Perceptron",
+        "zh": "感知机"
+      },
+      {
+        "en": "SIFT",
+        "zh": "SIFT"
+      },
+      {
+        "en": "CNN",
+        "zh": "CNN"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Detect features",
+        "zh": "检测特征"
+      },
+      {
+        "en": "Vote upward",
+        "zh": "向上投票"
+      },
+      {
+        "en": "Choose pattern",
+        "zh": "选择模式"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Pandemonium: A Paradigm for Learning",
+          "zh": "群魔殿：一种学习范式"
+        },
+        "description": {
+          "en": "Primary paper for Selfridge's layered demon architecture and feature-vote recognition metaphor.",
+          "zh": "主要论文： 塞尔弗里奇的分层“魔鬼”架构与特征投票识别隐喻。"
+        },
+        "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+        "source": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "MIT Lincoln Laboratory",
+      "zh": "麻省理工学院 林肯实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.4595,
+      -71.2677
+    ]
   }
 }

@@ -115,5 +115,210 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Warren McCulloch",
+        "zh": "沃伦·麦卡洛克"
+      },
+      "role": {
+        "en": "Co-author of the logical neuron model",
+        "zh": "逻辑神经元模型共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Walter Pitts",
+        "zh": "沃尔特·皮茨"
+      },
+      "role": {
+        "en": "Co-author of the logical neuron model",
+        "zh": "逻辑神经元模型共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"A logical calculus of the ideas immanent in nervous activity\"",
+    "zh": "\"神经活动内在观念的逻辑演算\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+      "zh": "神经活动内在观念的逻辑演算"
+    },
+    "workAuthors": {
+      "en": "Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
+      "zh": "沃伦·麦卡洛克、沃尔特·皮茨，《数学生物物理学通报》，1943"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1007/BF02478259"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Logical Calculus of Ideas Immanent in Nervous Activity</em>, Warren S. McCulloch and Walter Pitts, Bulletin of Mathematical Biophysics, 1943",
+    "zh": "《神经活动内在观念的逻辑演算》, 沃伦·麦卡洛克、沃尔特·皮茨，《数学生物物理学通报》，1943"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Binary threshold logic",
+      "zh": "二值阈值逻辑"
+    },
+    "artifact": {
+      "en": "Formal neuron model",
+      "zh": "形式化神经元模型"
+    },
+    "material": {
+      "en": "1943 Bulletin of Mathematical Biophysics paper",
+      "zh": "1943 年《数学生物物理学通报》论文"
+    },
+    "demo": {
+      "en": "Inputs pass through weighted thresholds, producing logical output states.",
+      "zh": "输入经过加权阈值，产生逻辑输出状态。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Threshold Unit",
+          "zh": "阈值单元"
+        },
+        "text": {
+          "en": "A neuron fires when combined inputs cross a threshold.",
+          "zh": "当组合输入越过阈值时，神经元被激活。"
+        }
+      },
+      {
+        "label": {
+          "en": "Logic and Brains",
+          "zh": "逻辑与大脑"
+        },
+        "text": {
+          "en": "Neural activity was expressed as a calculus of propositions.",
+          "zh": "神经活动被表示为命题演算。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Perceptron",
+        "zh": "感知机"
+      },
+      {
+        "en": "Back-propagation",
+        "zh": "反向传播"
+      },
+      {
+        "en": "Neural networks",
+        "zh": "神经网络"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Inputs",
+        "zh": "输入"
+      },
+      {
+        "en": "Threshold",
+        "zh": "阈值"
+      },
+      {
+        "en": "Logical output",
+        "zh": "逻辑输出"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "1943 Bulletin of Mathematical Biophysics paper",
+          "zh": "1943 年《数学生物物理学通报》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Inputs pass through weighted thresholds, producing logical output states.",
+          "zh": "输入经过加权阈值，产生逻辑输出状态。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Springer",
+          "zh": "Springer"
+        },
+        "title": {
+          "en": "A Logical Calculus of Ideas Immanent in Nervous Activity",
+          "zh": "神经活动内在观念的逻辑演算"
+        },
+        "description": {
+          "en": "Canonical paper introducing the formal neuron model.",
+          "zh": "介绍形式化神经元模型的经典论文。"
+        },
+        "url": "https://doi.org/10.1007/BF02478259",
+        "source": "https://doi.org/10.1007/BF02478259",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI",
+          "zh": "打开 DOI"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Illinois at Chicago",
+      "zh": "伊利诺伊大学芝加哥分校"
+    },
+    "country": {
+      "en": "Chicago, United States",
+      "zh": "美国芝加哥"
+    },
+    "coordinates": [
+      41.8719,
+      -87.6493
+    ]
   }
 }

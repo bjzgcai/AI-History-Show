@@ -121,5 +121,224 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Large Models and Scientific Intelligence",
+    "zh": "大模型与科学智能"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John Jumper",
+        "zh": "约翰·江珀"
+      },
+      "role": {
+        "en": "AlphaFold2 lead researcher",
+        "zh": "AlphaFold2 主要研究者"
+      },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "德米斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder and AlphaFold leader",
+        "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
+      },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
+        "url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2020AlphaFold%EF%BC%9A%E7%A0%B4%E8%A7%A3%E7%94%9F%E7%89%A9%E5%AD%A6%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%91%E6%88%98.mp4",
+        "title": "2020AlphaFold：破解生物学的终极挑战",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"AlphaFold2 combined deep learning with evolutionary and geometric signals to predict protein structures with a level of accuracy that changed structural biology workflows.\"",
+    "zh": "\"AlphaFold2 将深度学习与进化、几何信号结合起来，以足以改变结构生物学工作流程的精度预测蛋白质结构。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Highly accurate protein structure prediction with AlphaFold",
+      "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+    },
+    "workAuthors": {
+      "en": "John Jumper et al., Nature, 2021",
+      "zh": "约翰·江珀等，Nature，2021"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.nature.com/articles/s41586-021-03819-2"
+  },
+  "quotePage": {
+    "en": "Nature paper and DeepMind AlphaFold announcement",
+    "zh": "Nature 论文与 DeepMind AlphaFold 官方说明"
+  },
+  "quoteAttribution": {
+    "en": "<em>Highly accurate protein structure prediction with AlphaFold</em>, John Jumper et al., Nature, 2021",
+    "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》, 约翰·江珀等，Nature，2021"
+  },
+  "achievement": {
+    "area": {
+      "en": "AI for Science",
+      "zh": "AI for Science"
+    },
+    "method": {
+      "en": "Attention-based protein structure prediction",
+      "zh": "基于注意力的蛋白质结构预测"
+    },
+    "artifact": {
+      "en": "AlphaFold2 system",
+      "zh": "AlphaFold2 系统"
+    },
+    "material": {
+      "en": "Nature paper and AlphaFold Protein Structure Database",
+      "zh": "《Nature》论文与 AlphaFold 蛋白质结构数据库"
+    },
+    "demo": {
+      "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
+      "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Evolutionary Signal",
+          "zh": "进化信号"
+        },
+        "text": {
+          "en": "Related sequences provide constraints on residue pairs.",
+          "zh": "相关序列为残基对提供约束。"
+        }
+      },
+      {
+        "label": {
+          "en": "Structure Module",
+          "zh": "结构模块"
+        },
+        "text": {
+          "en": "The network refines coordinates into a 3D model.",
+          "zh": "网络把坐标优化成三维模型。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "AI for Science",
+        "zh": "AI for Science"
+      },
+      {
+        "en": "Protein structure prediction",
+        "zh": "蛋白质结构预测"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Amino-acid sequence",
+        "zh": "Amino-acid sequence"
+      },
+      {
+        "en": "Pair representation",
+        "zh": "Pair representation"
+      },
+      {
+        "en": "3D structure",
+        "zh": "3D structure"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Nature paper and AlphaFold Protein Structure Database",
+          "zh": "《Nature》论文与 AlphaFold 蛋白质结构数据库"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Sequence and multiple-sequence alignment features flow through pair and structure modules to predict a folded 3D protein model. The system turns evolutionary constraints into coordinates that scientists can inspect and test.",
+          "zh": "序列和多序列比对特征流经 pair 模块与结构模块，预测折叠后的三维蛋白质模型。系统把进化约束转化为科学家可以检查和验证的坐标。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Nature",
+          "zh": "《Nature》"
+        },
+        "title": {
+          "en": "Highly accurate protein structure prediction with AlphaFold",
+          "zh": "使用 AlphaFold 进行高精度蛋白质结构预测"
+        },
+        "description": {
+          "en": "Primary Nature paper for AlphaFold2.",
+          "zh": "AlphaFold2 的 Nature 主论文。"
+        },
+        "url": "https://doi.org/10.1038/s41586-021-03819-2",
+        "source": "https://doi.org/10.1038/s41586-021-03819-2",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI page",
+          "zh": "打开 DOI 页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "DeepMind",
+      "zh": "DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国伦敦"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
   }
 }

@@ -115,5 +115,184 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Laurens van der Maaten",
+        "zh": "劳伦斯·范德马滕"
+      },
+      "role": {
+        "en": "Co-author of t-SNE",
+        "zh": "t-SNE 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Neighbor-preserving nonlinear embedding\"",
+    "zh": "\"保持邻域的非线性嵌入\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Visualizing Data using t-SNE",
+      "zh": "使用 t-SNE 可视化数据"
+    },
+    "workAuthors": {
+      "en": "Laurens van der Maaten",
+      "zh": "劳伦斯·范德马滕"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Dimensionality reduction / t-SNE",
+    "zh": "BenchCouncil AI100：降维 / t-SNE"
+  },
+  "quoteAttribution": {
+    "en": "<em>Visualizing Data using t-SNE</em>, Laurens van der Maaten",
+    "zh": "《使用 t-SNE 可视化数据》, 劳伦斯·范德马滕"
+  },
+  "achievement": {
+    "area": {
+      "en": "Dimensionality reduction",
+      "zh": "降维"
+    },
+    "method": {
+      "en": "Neighbor-preserving nonlinear embedding",
+      "zh": "保持邻域的非线性嵌入"
+    },
+    "artifact": {
+      "en": "t-distributed stochastic neighbor embedding",
+      "zh": "t 分布随机邻域嵌入"
+    },
+    "material": {
+      "en": "JMLR paper and author materials",
+      "zh": "《机器学习研究杂志》 论文与作者资料"
+    },
+    "demo": {
+      "en": "Turn high-dimensional neighborhoods into 2D clusters",
+      "zh": "把高维邻域转为二维簇"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Perplexity",
+          "zh": "困惑度"
+        },
+        "text": {
+          "en": "A parameter that roughly controls neighborhood size.",
+          "zh": "一个大致控制邻域大小的参数。"
+        }
+      },
+      {
+        "label": {
+          "en": "Local Neighborhood",
+          "zh": "局部邻域"
+        },
+        "text": {
+          "en": "The method emphasizes nearby points more than global distances.",
+          "zh": "该方法更强调邻近点，而非全局距离。"
+        }
+      },
+      {
+        "label": {
+          "en": "Crowding Problem",
+          "zh": "拥挤问题"
+        },
+        "text": {
+          "en": "Heavy tails help separate groups in the low-dimensional map.",
+          "zh": "重尾分布帮助低维图中群组分开。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Isomap",
+        "zh": "Isomap"
+      },
+      {
+        "en": "Locally linear embedding",
+        "zh": "局部线性嵌入"
+      },
+      {
+        "en": "Embedding visualization",
+        "zh": "嵌入可视化"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Netherlands and Canada",
+        "zh": "荷兰与加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Compute neighbors",
+        "zh": "计算邻域"
+      },
+      {
+        "en": "Match probabilities",
+        "zh": "匹配概率"
+      },
+      {
+        "en": "Relax map",
+        "zh": "松弛地图"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Journal of Machine Learning Research",
+          "zh": "《机器学习研究杂志》"
+        },
+        "title": {
+          "en": "Visualizing Data using t-SNE",
+          "zh": "使用 t-SNE 可视化数据"
+        },
+        "description": {
+          "en": "JMLR article page for the canonical t-SNE paper.",
+          "zh": "t-SNE 经典论文的 《机器学习研究杂志》 页面。"
+        },
+        "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open JMLR page",
+          "zh": "打开 《机器学习研究杂志》 页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Tilburg University / University of Toronto",
+      "zh": "蒂尔堡大学 / 多伦多大学"
+    },
+    "country": {
+      "en": "Netherlands and Canada",
+      "zh": "荷兰与加拿大"
+    },
+    "coordinates": [
+      51.5633,
+      5.0431
+    ]
   }
 }

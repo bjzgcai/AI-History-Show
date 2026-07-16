@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Timothy Lillicrap",
+        "zh": "蒂莫西·利利克拉普"
+      },
+      "role": {
+        "en": "DDPG lead author",
+        "zh": "DDPG 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Continuous control with deep reinforcement learning\"",
+    "zh": "\"使用深度强化学习进行连续控制\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Continuous Control with Deep Reinforcement Learning",
+      "zh": "使用深度强化学习进行连续控制"
+    },
+    "workAuthors": {
+      "en": "Timothy Lillicrap et al., ICLR, 2016",
+      "zh": "蒂莫西·利利克拉普等，ICLR，2016"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1509.02971"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Continuous Control with Deep Reinforcement Learning</em>, Timothy Lillicrap et al., ICLR, 2016",
+    "zh": "《使用深度强化学习进行连续控制》, 蒂莫西·利利克拉普等，ICLR，2016"
+  },
+  "achievement": {
+    "area": {
+      "en": "Reinforcement learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Deterministic actor-critic for continuous control",
+      "zh": "用于连续控制的确定性 actor-critic"
+    },
+    "artifact": {
+      "en": "Deep Deterministic Policy Gradient",
+      "zh": "深度确定性策略梯度"
+    },
+    "material": {
+      "en": "ICLR paper and continuous-control benchmarks",
+      "zh": "ICLR 论文与连续控制基准"
+    },
+    "demo": {
+      "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
+      "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Actor",
+          "zh": "Actor"
+        },
+        "text": {
+          "en": "The policy outputs a continuous action.",
+          "zh": "策略输出连续动作。"
+        }
+      },
+      {
+        "label": {
+          "en": "Critic",
+          "zh": "Critic"
+        },
+        "text": {
+          "en": "The value model supplies policy gradients.",
+          "zh": "价值模型提供策略梯度。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Actor-Critic",
+          "zh": "Actor-Critic"
+        },
+        "zh": {
+          "en": "Actor-Critic",
+          "zh": "Actor-Critic"
+        }
+      },
+      {
+        "en": {
+          "en": "Deep Q Network",
+          "zh": "深度 Q 网络"
+        },
+        "zh": {
+          "en": "Deep Q Network",
+          "zh": "深度 Q 网络"
+        }
+      },
+      {
+        "en": {
+          "en": "Policy gradient theorem",
+          "zh": "策略梯度定理"
+        },
+        "zh": {
+          "en": "Policy gradient theorem",
+          "zh": "策略梯度定理"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United Kingdom",
+          "zh": "英国"
+        },
+        "zh": {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Actor action",
+          "zh": "actor 动作"
+        },
+        "zh": {
+          "en": "Actor action",
+          "zh": "actor 动作"
+        }
+      },
+      {
+        "en": {
+          "en": "Critic value",
+          "zh": "critic 价值"
+        },
+        "zh": {
+          "en": "Critic value",
+          "zh": "critic 价值"
+        }
+      },
+      {
+        "en": {
+          "en": "Policy update",
+          "zh": "策略更新"
+        },
+        "zh": {
+          "en": "Policy update",
+          "zh": "策略更新"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper and continuous-control benchmarks",
+          "zh": "ICLR 论文与连续控制基准"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
+          "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Continuous Control with Deep Reinforcement Learning",
+          "zh": "使用深度强化学习进行连续控制"
+        },
+        "description": {
+          "en": "arXiv source card for DDPG.",
+          "zh": "arXiv 的DDPG资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1509.02971",
+        "source": "https://arxiv.org/abs/1509.02971",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "DeepMind",
+      "zh": "DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国伦敦"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
   }
 }

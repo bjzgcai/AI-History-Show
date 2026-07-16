@@ -1,6 +1,6 @@
 # Archive Build Diff
 
-Generated: 2026-07-10T08:44:30.632Z
+Generated: 2026-07-15T01:39:50.754Z
 
 This report compares legacy snapshots with generated final milestones after archive overlay.
 Archive migration defaults to `presentationMode: preserve-legacy`, so user-visible presentation changes are failures unless a variant explicitly sets `presentationMode: archive`.

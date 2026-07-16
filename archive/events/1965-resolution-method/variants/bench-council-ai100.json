@@ -115,5 +115,188 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John Alan Robinson",
+        "zh": "约翰·艾伦·罗宾逊"
+      },
+      "role": {
+        "en": "Inventor of the resolution principle",
+        "zh": "归结原理提出者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"the resolution principle\"",
+    "zh": "\"归结原理\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A Machine-Oriented Logic Based on the Resolution Principle",
+      "zh": "基于归结原理的机器导向逻辑"
+    },
+    "workAuthors": {
+      "en": "John Alan Robinson, Journal of the ACM, 1965",
+      "zh": "约翰·艾伦·罗宾逊, 《ACM 杂志》, 1965"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1145/321250.321253"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Resolution method",
+    "zh": "BenchCouncil AI100：自动定理证明 / 归结方法"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Machine-Oriented Logic Based on the Resolution Principle</em>, John Alan Robinson, Journal of the ACM, 1965",
+    "zh": "《基于归结原理的机器导向逻辑》, 约翰·艾伦·罗宾逊, 《ACM 杂志》, 1965"
+  },
+  "achievement": {
+    "area": {
+      "en": "Automated theorem proving",
+      "zh": "自动定理证明"
+    },
+    "method": {
+      "en": "Clause refutation with unification",
+      "zh": "带合一的子句反驳"
+    },
+    "artifact": {
+      "en": "Resolution proof procedure",
+      "zh": "归结证明过程"
+    },
+    "material": {
+      "en": "Journal of the ACM paper and theorem-proving histories",
+      "zh": "《ACM 杂志》 论文与自动证明史料"
+    },
+    "demo": {
+      "en": "Resolve clauses until contradiction appears",
+      "zh": "不断归结子句直到出现矛盾"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Clause Form",
+          "zh": "子句形式"
+        },
+        "text": {
+          "en": "Statements are converted into disjunctions of literals so one inference rule can operate repeatedly.",
+          "zh": "命题被转成文字析取子句，使同一条推理规则可以反复作用。"
+        }
+      },
+      {
+        "label": {
+          "en": "Unification",
+          "zh": "合一"
+        },
+        "text": {
+          "en": "Variables are matched by substitutions, allowing one rule to handle many concrete formulas.",
+          "zh": "变量通过替换匹配，让一条规则能处理大量具体公式。"
+        }
+      },
+      {
+        "label": {
+          "en": "Empty Clause",
+          "zh": "空子句"
+        },
+        "text": {
+          "en": "Deriving the empty clause means the negated goal is inconsistent with the premises.",
+          "zh": "推出空子句意味着否定目标与前提不相容。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "DPLL",
+        "zh": "DPLL"
+      },
+      {
+        "en": "PROLOG",
+        "zh": "PROLOG"
+      },
+      {
+        "en": "Automated theorem proving",
+        "zh": "自动定理证明"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Clause Form",
+        "zh": "子句形式"
+      },
+      {
+        "en": "Unification",
+        "zh": "合一"
+      },
+      {
+        "en": "Empty Clause",
+        "zh": "空子句"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Journal of the ACM",
+          "zh": "《ACM 杂志》"
+        },
+        "title": {
+          "en": "Resolution principle paper",
+          "zh": "归结原理论文"
+        },
+        "description": {
+          "en": "Canonical source for resolution; local diagrams redraw clause operations and refutation flow.",
+          "zh": "归结方法的经典来源；本地图重画子句操作和反驳流程。"
+        },
+        "url": "https://doi.org/10.1145/321250.321253",
+        "source": "https://doi.org/10.1145/321250.321253",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open DOI",
+          "zh": "打开 DOI"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Argonne National Laboratory / Syracuse University",
+      "zh": "阿贡国家实验室 / 雪城大学"
+    },
+    "country": {
+      "en": "Illinois and New York, United States",
+      "zh": "美国伊利诺伊州与纽约州"
+    },
+    "coordinates": [
+      41.7181,
+      -87.9798
+    ]
   }
 }

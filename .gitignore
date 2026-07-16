@@ -8,6 +8,9 @@ node_modules/
 # Auto-generated backups
 manage/.backups/
 
+# Archive parity browser artifacts
+.tmp/
+
 # OS
 .DS_Store
 Thumbs.db

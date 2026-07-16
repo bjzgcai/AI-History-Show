@@ -115,5 +115,210 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Sergey Ioffe",
+        "zh": "谢尔盖·约费"
+      },
+      "role": {
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
+      "role": {
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift\"",
+    "zh": "\"批归一化：通过减少内部协变量偏移加速深度网络训练\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "zh": "批归一化：通过减少内部协变量偏移加速深度网络训练"
+    },
+    "workAuthors": {
+      "en": "Sergey Ioffe and Christian Szegedy, ICML, 2015",
+      "zh": "谢尔盖·约费、克里斯蒂安·塞格迪，ICML，2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://proceedings.mlr.press/v37/ioffe15.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</em>, Sergey Ioffe and Christian Szegedy, ICML, 2015",
+    "zh": "《批归一化：通过减少内部协变量偏移加速深度网络训练》, 谢尔盖·约费、克里斯蒂安·塞格迪，ICML，2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Mini-batch activation normalization",
+      "zh": "小批量激活归一化"
+    },
+    "artifact": {
+      "en": "Batch normalization layer",
+      "zh": "批归一化层"
+    },
+    "material": {
+      "en": "ICML paper",
+      "zh": "ICML 论文"
+    },
+    "demo": {
+      "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
+      "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Normalize Activations",
+          "zh": "归一化激活"
+        },
+        "text": {
+          "en": "Layer inputs are standardized over each mini-batch.",
+          "zh": "层输入在每个小批量上被标准化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Learned Scale and Shift",
+          "zh": "可学习缩放和平移"
+        },
+        "text": {
+          "en": "The model can recover useful activation ranges after normalization.",
+          "zh": "模型可以在归一化后恢复有用的激活范围。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Inception",
+        "zh": "Inception"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Batch statistics",
+        "zh": "批统计量"
+      },
+      {
+        "en": "Normalize",
+        "zh": "归一化"
+      },
+      {
+        "en": "Scale + shift",
+        "zh": "缩放 + 平移"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICML paper",
+          "zh": "ICML 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Activations are centered, scaled, then shifted by learned parameters inside the network.",
+          "zh": "激活值在网络内部先居中和缩放，再由学习参数进行平移。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Batch Normalization",
+          "zh": "批归一化"
+        },
+        "description": {
+          "en": "Open ICML paper page for batch normalization.",
+          "zh": "批归一化的 ICML 开放论文页面。"
+        },
+        "url": "https://proceedings.mlr.press/v37/ioffe15.html",
+        "source": "https://proceedings.mlr.press/v37/ioffe15.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
   }
 }

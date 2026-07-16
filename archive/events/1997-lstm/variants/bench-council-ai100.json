@@ -118,5 +118,228 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Sepp Hochreiter",
+        "zh": "塞普·霍赫赖特"
+      },
+      "role": {
+        "en": "LSTM co-author",
+        "zh": "LSTM 共同作者"
+      },
+      "avatar": "resources/images/figures/sepp-hochreiter.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Jürgen Schmidhuber",
+        "zh": "尤尔根·施密德胡伯"
+      },
+      "role": {
+        "en": "LSTM co-author",
+        "zh": "LSTM 共同作者"
+      },
+      "avatar": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
+      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 42%;",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
+        "url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/1997%EF%BC%9ALSTM%E4%B8%8EAI%E7%9A%84%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%9C%E5%88%A9.mp4",
+        "title": "",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Long short-term memory\"",
+    "zh": "\"长短期记忆\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Long Short-Term Memory",
+      "zh": "长短期记忆"
+    },
+    "workAuthors": {
+      "en": "Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+      "zh": "塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1162/neco.1997.9.8.1735"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Long Short-Term Memory</em>, Sepp Hochreiter and Juergen Schmidhuber, Neural Computation, 1997",
+    "zh": "《长短期记忆》, 塞普·霍赫赖特、尤尔根·施密德胡伯，《Neural Computation》，1997"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Gated recurrent memory",
+      "zh": "门控循环记忆"
+    },
+    "artifact": {
+      "en": "LSTM cell",
+      "zh": "LSTM 单元"
+    },
+    "material": {
+      "en": "Neural Computation paper",
+      "zh": "《Neural Computation》论文"
+    },
+    "demo": {
+      "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
+      "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Memory Cell",
+          "zh": "记忆单元"
+        },
+        "text": {
+          "en": "A persistent state carries sequence information.",
+          "zh": "持久状态携带序列信息。"
+        }
+      },
+      {
+        "label": {
+          "en": "Gates",
+          "zh": "门控机制"
+        },
+        "text": {
+          "en": "Learned gates decide what to write, keep, or expose.",
+          "zh": "学习到的门决定写入、保留或输出哪些信息。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "RNN",
+        "zh": "RNN"
+      },
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "Neural Language Model",
+        "zh": "神经语言模型"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Germany",
+        "zh": "德国"
+      },
+      {
+        "en": "Switzerland",
+        "zh": "瑞士"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Sequence input",
+        "zh": "Sequence input"
+      },
+      {
+        "en": "Gated memory cell",
+        "zh": "Gated memory cell"
+      },
+      {
+        "en": "Long-range state",
+        "zh": "Long-range state"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Neural Computation paper",
+          "zh": "《Neural Computation》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Input, output, and forget gates regulate what enters memory, what remains stored, and what affects the next hidden state. This design helps gradients and information persist across long sequences where simpler recurrent networks often fail.",
+          "zh": "输入门、输出门和遗忘门调节哪些信息进入记忆、哪些信息继续保存，以及哪些信息影响下一个隐藏状态。这种设计帮助梯度和信息跨越长序列保持稳定，而简单循环网络常在这里失效。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Press",
+          "zh": "麻省理工学院出版社"
+        },
+        "title": {
+          "en": "Long Short-Term Memory",
+          "zh": "长短期记忆"
+        },
+        "description": {
+          "en": "Primary paper record for the LSTM architecture.",
+          "zh": "LSTM 架构的主论文记录。"
+        },
+        "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+        "source": "https://doi.org/10.1162/neco.1997.9.8.1735",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI page",
+          "zh": "打开 DOI 页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Technical University of Munich",
+      "zh": "慕尼黑工业大学"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1496,
+      11.5677
+    ]
   }
 }

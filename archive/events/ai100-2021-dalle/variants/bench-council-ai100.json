@@ -115,5 +115,197 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Aditya Ramesh",
+        "zh": "阿迪蒂亚·拉梅什"
+      },
+      "role": {
+        "en": "Lead author and creator of DALL-E",
+        "zh": "DALL-E 主要作者与创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Zero-shot text-to-image generation\"",
+    "zh": "\"零样本文本到图像生成\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Zero-Shot Text-to-Image Generation",
+      "zh": "零样本文本到图像生成"
+    },
+    "workAuthors": {
+      "en": "Aditya Ramesh et al., ICML, 2021",
+      "zh": "阿迪蒂亚·拉梅什等，ICML，2021"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/2102.12092"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Zero-Shot Text-to-Image Generation</em>, Aditya Ramesh et al., ICML, 2021",
+    "zh": "《零样本文本到图像生成》, 阿迪蒂亚·拉梅什等，ICML，2021"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Autoregressive text-to-image generation",
+      "zh": "自回归文本到图像生成"
+    },
+    "artifact": {
+      "en": "DALL-E text-to-image system",
+      "zh": "DALL-E 文生图系统"
+    },
+    "material": {
+      "en": "ICML paper and OpenAI release",
+      "zh": "ICML 论文与 OpenAI 发布材料"
+    },
+    "demo": {
+      "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images.",
+      "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Prompt Control",
+          "zh": "提示控制"
+        },
+        "text": {
+          "en": "Text specifies objects, relations, and style cues.",
+          "zh": "文本指定对象、关系和风格线索。"
+        }
+      },
+      {
+        "label": {
+          "en": "Image Tokens",
+          "zh": "图像令牌"
+        },
+        "text": {
+          "en": "Images are generated as discrete visual tokens.",
+          "zh": "图像以离散视觉令牌形式生成。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "GPT",
+        "zh": "GPT"
+      },
+      {
+        "en": "CLIP",
+        "zh": "CLIP"
+      },
+      {
+        "en": "GAN",
+        "zh": "GAN"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Text prompt",
+        "zh": "Text prompt"
+      },
+      {
+        "en": "Image tokens",
+        "zh": "Image tokens"
+      },
+      {
+        "en": "Generated image",
+        "zh": "Generated image"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICML paper and OpenAI release",
+          "zh": "ICML 论文与 OpenAI 发布材料"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A text prompt is encoded with image tokens so an autoregressive transformer can synthesize a matching visual composition. This links language instructions to objects, relations, and styles in generated images.",
+          "zh": "文本提示与图像令牌一起编码，使自回归 Transformer 能合成匹配的视觉构图。这把语言指令与生成图像中的对象、关系和风格连接起来。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenAI",
+          "zh": "OpenAI"
+        },
+        "title": {
+          "en": "DALL-E: Creating images from text",
+          "zh": "DALL-E：从文本创建图像"
+        },
+        "description": {
+          "en": "OpenAI project page introducing text-to-image generation.",
+          "zh": "介绍文本到图像生成的 OpenAI 项目页面。"
+        },
+        "url": "https://openai.com/index/dall-e/",
+        "source": "https://openai.com/index/dall-e/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "San Francisco, United States",
+      "zh": "美国旧金山"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
   }
 }

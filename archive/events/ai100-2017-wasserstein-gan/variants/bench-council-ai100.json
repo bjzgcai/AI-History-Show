@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Arjovsky",
+        "zh": "马丁·阿尔乔夫斯基"
+      },
+      "role": {
+        "en": "Wasserstein GAN lead author",
+        "zh": "Wasserstein GAN 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Wasserstein generative adversarial networks\"",
+    "zh": "\"Wasserstein 生成对抗网络\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Wasserstein Generative Adversarial Networks",
+      "zh": "Wasserstein 生成对抗网络"
+    },
+    "workAuthors": {
+      "en": "Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
+      "zh": "马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://proceedings.mlr.press/v70/arjovsky17a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Wasserstein Generative Adversarial Networks</em>, Martin Arjovsky, Soumith Chintala, and Leon Bottou, ICML, 2017",
+    "zh": "《Wasserstein 生成对抗网络》, 马丁·阿尔乔夫斯基、苏米特·钦塔拉、莱昂·博图，ICML，2017"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Earth-mover distance adversarial learning",
+      "zh": "基于推土机距离的对抗学习"
+    },
+    "artifact": {
+      "en": "Wasserstein GAN objective",
+      "zh": "Wasserstein GAN 目标函数"
+    },
+    "material": {
+      "en": "ICML paper and improved WGAN follow-up",
+      "zh": "ICML 论文与改进 WGAN 后续研究"
+    },
+    "demo": {
+      "en": "A critic estimates how far the generated distribution is from the real distribution, giving smoother feedback to the generator.",
+      "zh": "critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Critic",
+          "zh": "Critic"
+        },
+        "text": {
+          "en": "The critic scores samples instead of outputting a probability.",
+          "zh": "critic 给样本打分，而不是输出概率。"
+        }
+      },
+      {
+        "label": {
+          "en": "Transport Distance",
+          "zh": "传输距离"
+        },
+        "text": {
+          "en": "Training follows a smoother distribution distance.",
+          "zh": "训练跟随更平滑的分布距离。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "DCGAN",
+          "zh": "DCGAN"
+        },
+        "zh": {
+          "en": "DCGAN",
+          "zh": "DCGAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Diffusion Model",
+          "zh": "扩散模型"
+        },
+        "zh": {
+          "en": "Diffusion Model",
+          "zh": "扩散模型"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Real samples",
+          "zh": "真实样本"
+        },
+        "zh": {
+          "en": "Real samples",
+          "zh": "真实样本"
+        }
+      },
+      {
+        "en": {
+          "en": "Critic distance",
+          "zh": "critic 距离"
+        },
+        "zh": {
+          "en": "Critic distance",
+          "zh": "critic 距离"
+        }
+      },
+      {
+        "en": {
+          "en": "Generator update",
+          "zh": "生成器更新"
+        },
+        "zh": {
+          "en": "Generator update",
+          "zh": "生成器更新"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICML paper and improved WGAN follow-up",
+          "zh": "ICML 论文与改进 WGAN 后续研究"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A critic estimates how far the generated distribution is from the real distribution, giving smoother feedback to the generator.",
+          "zh": "critic 估计生成分布与真实分布的距离，为生成器提供更平滑的反馈。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PMLR",
+          "zh": "PMLR"
+        },
+        "title": {
+          "en": "Wasserstein Generative Adversarial Networks",
+          "zh": "Wasserstein 生成对抗网络"
+        },
+        "description": {
+          "en": "PMLR source card for Wasserstein GAN.",
+          "zh": "PMLR 的Wasserstein GAN资料卡片。"
+        },
+        "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+        "source": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Courant Institute and Facebook AI Research",
+      "zh": "Courant Institute and Facebook AI Research"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "New York, United States"
+    },
+    "coordinates": [
+      40.7295,
+      -73.9965
+    ]
   }
 }

@@ -115,5 +115,210 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Daniel Lee",
+        "zh": "丹尼尔·李"
+      },
+      "role": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "H. Sebastian Seung",
+        "zh": "H. 塞巴斯蒂安·承"
+      },
+      "role": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Learning the parts of objects by non-negative matrix factorization\"",
+    "zh": "\"通过非负矩阵分解学习物体部件\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Learning the parts of objects by non-negative matrix factorization",
+      "zh": "通过非负矩阵分解学习物体部件"
+    },
+    "workAuthors": {
+      "en": "Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
+      "zh": "丹尼尔·D·李、H. 塞巴斯蒂安·承，《Nature》，1999"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1038/44565"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Learning the parts of objects by non-negative matrix factorization</em>, Daniel D. Lee and H. Sebastian Seung, Nature, 1999",
+    "zh": "《通过非负矩阵分解学习物体部件》, 丹尼尔·D·李、H. 塞巴斯蒂安·承，《Nature》，1999"
+  },
+  "achievement": {
+    "area": {
+      "en": "Dimension reduction, Feature extraction",
+      "zh": "降维与特征提取"
+    },
+    "method": {
+      "en": "Nonnegative matrix factorization",
+      "zh": "非负矩阵分解"
+    },
+    "artifact": {
+      "en": "Parts-based representation",
+      "zh": "基于部件的表示"
+    },
+    "material": {
+      "en": "Nature paper",
+      "zh": "《Nature》论文"
+    },
+    "demo": {
+      "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+      "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Additive Parts",
+          "zh": "可加部件"
+        },
+        "text": {
+          "en": "Representations combine by addition rather than cancellation.",
+          "zh": "表示通过相加组合，而不是相互抵消。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interpretability",
+          "zh": "可解释性"
+        },
+        "text": {
+          "en": "Basis vectors often align with meaningful parts or topics.",
+          "zh": "基向量常对应有意义的部件或主题。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Kernel PCA",
+        "zh": "Kernel PCA"
+      },
+      {
+        "en": "LDA",
+        "zh": "LDA"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Data matrix",
+        "zh": "数据矩阵"
+      },
+      {
+        "en": "Basis parts",
+        "zh": "基部件"
+      },
+      {
+        "en": "Activations",
+        "zh": "激活值"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Nature paper",
+          "zh": "《Nature》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A data matrix is approximated as nonnegative basis parts multiplied by nonnegative activations.",
+          "zh": "数据矩阵被近似为非负基部件与非负激活的乘积。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Nature",
+          "zh": "Nature"
+        },
+        "title": {
+          "en": "Learning the parts of objects by non-negative matrix factorization",
+          "zh": "通过非负矩阵分解学习物体部件"
+        },
+        "description": {
+          "en": "Primary Nature paper record for NMF.",
+          "zh": "NMF 的 Nature 主论文记录。"
+        },
+        "url": "https://doi.org/10.1038/44565",
+        "source": "https://doi.org/10.1038/44565",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Bell Labs and MIT",
+      "zh": "贝尔实验室与 MIT"
+    },
+    "country": {
+      "en": "New Jersey and Cambridge, United States",
+      "zh": "美国新泽西州与剑桥"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4015
+    ]
   }
 }

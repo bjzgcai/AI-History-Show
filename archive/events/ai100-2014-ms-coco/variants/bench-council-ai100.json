@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Tsung-Yi Lin",
+        "zh": "林宗毅"
+      },
+      "role": {
+        "en": "MS COCO lead author",
+        "zh": "MS COCO 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Common objects in context\"",
+    "zh": "\"上下文中的常见物体\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Microsoft COCO: Common Objects in Context",
+      "zh": "Microsoft COCO：上下文中的常见物体"
+    },
+    "workAuthors": {
+      "en": "Tsung-Yi Lin et al., ECCV, 2014",
+      "zh": "林宗毅等，ECCV，2014"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1405.0312"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Microsoft COCO: Common Objects in Context</em>, Tsung-Yi Lin et al., ECCV, 2014",
+    "zh": "《Microsoft COCO：上下文中的常见物体》, 林宗毅等，ECCV，2014"
+  },
+  "achievement": {
+    "area": {
+      "en": "Computer Vision Dataset",
+      "zh": "计算机视觉数据集"
+    },
+    "method": {
+      "en": "Objects in context benchmark",
+      "zh": "上下文中的目标基准"
+    },
+    "artifact": {
+      "en": "Microsoft COCO dataset",
+      "zh": "Microsoft COCO 数据集"
+    },
+    "material": {
+      "en": "ECCV paper and dataset website",
+      "zh": "ECCV 论文与数据集网站"
+    },
+    "demo": {
+      "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding.",
+      "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Context",
+          "zh": "上下文"
+        },
+        "text": {
+          "en": "Objects are labeled inside everyday scenes.",
+          "zh": "物体在日常场景中被标注。"
+        }
+      },
+      {
+        "label": {
+          "en": "Multi-task Labels",
+          "zh": "多任务标签"
+        },
+        "text": {
+          "en": "Detection, masks, captions, and keypoints share one dataset.",
+          "zh": "检测、掩码、字幕和关键点共享同一数据集。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        },
+        "zh": {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        }
+      },
+      {
+        "en": {
+          "en": "Faster R-CNN",
+          "zh": "Faster R-CNN"
+        },
+        "zh": {
+          "en": "Faster R-CNN",
+          "zh": "Faster R-CNN"
+        }
+      },
+      {
+        "en": {
+          "en": "Segment Anything",
+          "zh": "Segment Anything"
+        },
+        "zh": {
+          "en": "Segment Anything",
+          "zh": "Segment Anything"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Scene image",
+          "zh": "场景图像"
+        },
+        "zh": {
+          "en": "Scene image",
+          "zh": "场景图像"
+        }
+      },
+      {
+        "en": {
+          "en": "Object labels",
+          "zh": "物体标签"
+        },
+        "zh": {
+          "en": "Object labels",
+          "zh": "物体标签"
+        }
+      },
+      {
+        "en": {
+          "en": "Benchmark tasks",
+          "zh": "基准任务"
+        },
+        "zh": {
+          "en": "Benchmark tasks",
+          "zh": "基准任务"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ECCV paper and dataset website",
+          "zh": "ECCV 论文与数据集网站"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Images are annotated with objects, masks, captions, and task labels so models are evaluated on richer scene understanding.",
+          "zh": "图像被标注物体、掩码、字幕和任务标签，使模型在更丰富的场景理解上接受评估。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "COCO Dataset",
+          "zh": "COCO 数据集"
+        },
+        "title": {
+          "en": "Microsoft COCO: Common Objects in Context",
+          "zh": "Microsoft COCO：上下文中的常见物体"
+        },
+        "description": {
+          "en": "COCO Dataset source card for MS COCO.",
+          "zh": "COCO 数据集 的MS COCO资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1405.0312",
+        "source": "https://arxiv.org/abs/1405.0312",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open dataset",
+          "zh": "打开数据集"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research",
+      "zh": "Microsoft Research"
+    },
+    "country": {
+      "en": "Redmond, United States",
+      "zh": "Redmond, United States"
+    },
+    "coordinates": [
+      47.674,
+      -122.1215
+    ]
   }
 }

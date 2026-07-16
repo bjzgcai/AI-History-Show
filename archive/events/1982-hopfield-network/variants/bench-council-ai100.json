@@ -112,5 +112,185 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John J. Hopfield",
+        "zh": "约翰·J·霍普菲尔德"
+      },
+      "role": {
+        "en": "Inventor of Hopfield networks",
+        "zh": "Hopfield 网络提出者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"neural networks and physical systems\"",
+    "zh": "\"神经网络与物理系统\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+      "zh": "具有涌现集体计算能力的神经网络与物理系统"
+    },
+    "workAuthors": {
+      "en": "John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "zh": "约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Hopfield network",
+    "zh": "BenchCouncil AI100：神经网络 / Hopfield 网络"
+  },
+  "quoteAttribution": {
+    "en": "<em>Neural Networks and Physical Systems with Emergent Collective Computational Abilities</em>, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+    "zh": "《具有涌现集体计算能力的神经网络与物理系统》, 约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Attractor dynamics and energy minimization",
+      "zh": "吸引子动力学与能量最小化"
+    },
+    "artifact": {
+      "en": "Recurrent associative memory network",
+      "zh": "递归联想记忆网络"
+    },
+    "material": {
+      "en": "PNAS paper and Nobel Prize profile",
+      "zh": "PNAS 论文与诺贝尔奖人物资料"
+    },
+    "demo": {
+      "en": "Noisy pattern settles into a stored memory",
+      "zh": "带噪模式收敛到已存记忆"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Attractor",
+          "zh": "吸引子"
+        },
+        "text": {
+          "en": "A stored pattern is a stable state that nearby noisy patterns tend to approach.",
+          "zh": "已存模式是稳定状态，附近的带噪模式倾向于靠近它。"
+        }
+      },
+      {
+        "label": {
+          "en": "Energy Function",
+          "zh": "能量函数"
+        },
+        "text": {
+          "en": "The network changes state in a direction that lowers energy.",
+          "zh": "网络沿着降低能量的方向改变状态。"
+        }
+      },
+      {
+        "label": {
+          "en": "Associative Memory",
+          "zh": "联想记忆"
+        },
+        "text": {
+          "en": "Partial or corrupted inputs can recover a complete stored pattern.",
+          "zh": "部分或损坏输入可以恢复完整存储模式。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Boltzmann machines",
+        "zh": "玻尔兹曼机"
+      },
+      {
+        "en": "Energy-based models",
+        "zh": "能量模型"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Physics",
+        "zh": "物理学"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Attractor",
+        "zh": "吸引子"
+      },
+      {
+        "en": "Energy Function",
+        "zh": "能量函数"
+      },
+      {
+        "en": "Associative Memory",
+        "zh": "联想记忆"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "PNAS",
+        "title": {
+          "en": "Hopfield network paper",
+          "zh": "Hopfield 网络论文"
+        },
+        "description": {
+          "en": "Primary source for recurrent associative memory; local images redraw energy and attractor dynamics.",
+          "zh": "递归联想记忆的原始来源；本地图重画能量与吸引子动力学。"
+        },
+        "url": "https://doi.org/10.1073/pnas.79.8.2554",
+        "source": "https://doi.org/10.1073/pnas.79.8.2554",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open PNAS DOI",
+          "zh": "打开 PNAS DOI"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "California Institute of Technology",
+      "zh": "加州理工学院"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      34.1377,
+      -118.1253
+    ]
   }
 }

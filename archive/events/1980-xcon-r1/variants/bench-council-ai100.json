@@ -109,5 +109,178 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John McDermott",
+        "zh": "约翰·麦克德莫特"
+      },
+      "role": {
+        "en": "Developer of R1/XCON",
+        "zh": "R1/XCON 开发者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Production rules configured real orders\"",
+    "zh": "\"产生式规则配置真实订单\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "R1: An Expert in the Computer Systems Domain",
+      "zh": "R1：计算机系统领域的专家"
+    },
+    "workAuthors": {
+      "en": "John McDermott",
+      "zh": "约翰·麦克德莫特"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/8022"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Expert system / XCON-R1",
+    "zh": "BenchCouncil AI100：专家系统 / XCON / R1 专家系统"
+  },
+  "quoteAttribution": {
+    "en": "<em>R1: An Expert in the Computer Systems Domain</em>, John McDermott",
+    "zh": "《R1：计算机系统领域的专家》, 约翰·麦克德莫特"
+  },
+  "achievement": {
+    "area": {
+      "en": "Expert system",
+      "zh": "专家系统"
+    },
+    "method": {
+      "en": "OPS5 production-rule configuration",
+      "zh": "OPS5 产生式规则配置"
+    },
+    "artifact": {
+      "en": "R1/XCON VAX configurator",
+      "zh": "R1/XCON VAX 配置器"
+    },
+    "material": {
+      "en": "AAAI and Artificial Intelligence expert-system papers",
+      "zh": "AAAI 与 人工智能 专家系统论文"
+    },
+    "demo": {
+      "en": "Turn customer requirements into a valid component list",
+      "zh": "把客户需求转化为有效组件清单"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Production Rule",
+          "zh": "产生式规则"
+        },
+        "text": {
+          "en": "If-then rules encode configuration expertise.",
+          "zh": "if-then 规则编码配置专长。"
+        }
+      },
+      {
+        "label": {
+          "en": "Working Memory",
+          "zh": "工作记忆"
+        },
+        "text": {
+          "en": "Current order facts are updated as rules fire.",
+          "zh": "规则触发时持续更新当前订单事实。"
+        }
+      },
+      {
+        "label": {
+          "en": "Knowledge Engineering",
+          "zh": "知识工程"
+        },
+        "text": {
+          "en": "Expert knowledge is elicited, encoded, and maintained.",
+          "zh": "专家知识被获取、编码并维护。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "DENDRAL",
+        "zh": "DENDRAL"
+      },
+      {
+        "en": "MYCIN",
+        "zh": "MYCIN"
+      },
+      {
+        "en": "Cyc",
+        "zh": "Cyc"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Pennsylvania, United States",
+        "zh": "美国宾夕法尼亚州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Read order",
+        "zh": "读取订单"
+      },
+      {
+        "en": "Fire rules",
+        "zh": "触发规则"
+      },
+      {
+        "en": "Emit config",
+        "zh": "输出配置"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "AAAI Paper",
+          "zh": "AAAI 论文"
+        },
+        "title": {
+          "en": "R1: An Expert in the Computer Systems Domain",
+          "zh": "R1：计算机系统领域的专家"
+        },
+        "description": {
+          "en": "AAAI paper describing the rule-based configuration expert system behind XCON/R1.",
+          "zh": "介绍 XCON/R1 背后基于规则的配置专家系统的 AAAI 论文。"
+        },
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+        "source": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+        "action": {
+          "en": "Open AAAI record",
+          "zh": "打开 AAAI 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Carnegie Mellon University",
+      "zh": "卡内基梅隆大学"
+    },
+    "country": {
+      "en": "Pennsylvania, United States",
+      "zh": "美国宾夕法尼亚州"
+    },
+    "coordinates": [
+      40.4433,
+      -79.9436
+    ]
   }
 }

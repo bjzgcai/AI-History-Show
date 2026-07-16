@@ -108,5 +108,178 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "William McCune",
+        "zh": "威廉·麦丘恩"
+      },
+      "role": {
+        "en": "Creator of Otter",
+        "zh": "Otter 创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Resolution-style proof search made practical\"",
+    "zh": "\"让归结式证明搜索变得实用\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "OTTER 3.3 Reference Manual",
+      "zh": "OTTER 3.3 参考手册"
+    },
+    "workAuthors": {
+      "en": "William McCune",
+      "zh": "威廉·麦丘恩"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/cs/0310056"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Otter",
+    "zh": "BenchCouncil AI100：自动定理证明 / Otter 自动定理证明器"
+  },
+  "quoteAttribution": {
+    "en": "<em>OTTER 3.3 Reference Manual</em>, William McCune",
+    "zh": "《OTTER 3.3 参考手册》, 威廉·麦丘恩"
+  },
+  "achievement": {
+    "area": {
+      "en": "Automated theorem proving",
+      "zh": "自动定理证明"
+    },
+    "method": {
+      "en": "Given-clause resolution and paramodulation",
+      "zh": "given-clause 归结与参数调解"
+    },
+    "artifact": {
+      "en": "Otter theorem prover",
+      "zh": "Otter 定理证明器"
+    },
+    "material": {
+      "en": "Argonne technical manual and theorem-proving software",
+      "zh": "阿贡技术手册与定理证明软件"
+    },
+    "demo": {
+      "en": "Watch clauses move from usable facts to a proof",
+      "zh": "观察子句从可用事实推进到证明"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Given-Clause Loop",
+          "zh": "given-clause 循环"
+        },
+        "text": {
+          "en": "A selected clause drives each round of saturation search.",
+          "zh": "每轮饱和搜索由被选中的子句驱动。"
+        }
+      },
+      {
+        "label": {
+          "en": "Paramodulation",
+          "zh": "参数调解"
+        },
+        "text": {
+          "en": "Equality reasoning rewrites terms inside clauses.",
+          "zh": "等式推理会在子句内部重写项。"
+        }
+      },
+      {
+        "label": {
+          "en": "Term Indexing",
+          "zh": "项索引"
+        },
+        "text": {
+          "en": "Indexes speed up finding clauses that can participate in an inference.",
+          "zh": "索引加速寻找可参与推理的子句。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Resolution method",
+        "zh": "归结方法"
+      },
+      {
+        "en": "DPLL",
+        "zh": "DPLL"
+      },
+      {
+        "en": "Prover9",
+        "zh": "Prover9"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Illinois, United States",
+        "zh": "美国伊利诺伊州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Select clause",
+        "zh": "选择子句"
+      },
+      {
+        "en": "Infer and simplify",
+        "zh": "推理并化简"
+      },
+      {
+        "en": "Close proof",
+        "zh": "闭合证明"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Reference",
+          "zh": "参考资料"
+        },
+        "title": {
+          "en": "OTTER 3.3 Reference Manual",
+          "zh": "OTTER 3.3 参考手册"
+        },
+        "description": {
+          "en": "Primary manual for Otter input syntax, inference rules, and proof-search controls.",
+          "zh": "主要手册：介绍 Otter 的输入语法、推理规则和证明搜索控制。"
+        },
+        "url": "https://arxiv.org/abs/cs/0310056",
+        "source": "https://arxiv.org/abs/cs/0310056",
+        "action": {
+          "en": "Open reference",
+          "zh": "打开参考资料"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Argonne National Laboratory",
+      "zh": "阿贡国家实验室"
+    },
+    "country": {
+      "en": "Illinois, United States",
+      "zh": "美国伊利诺伊州"
+    },
+    "coordinates": [
+      41.7106,
+      -87.9789
+    ]
   }
 }

@@ -115,5 +115,201 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Robin Rombach",
+        "zh": "罗宾·罗姆巴赫"
+      },
+      "role": {
+        "en": "Lead author of latent diffusion models",
+        "zh": "潜扩散模型主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"High-resolution image synthesis with latent diffusion models\"",
+    "zh": "\"使用潜扩散模型进行高分辨率图像合成\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "zh": "使用潜扩散模型进行高分辨率图像合成"
+    },
+    "workAuthors": {
+      "en": "Robin Rombach et al., CVPR, 2022",
+      "zh": "罗宾·罗姆巴赫等，CVPR，2022"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/2112.10752"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>High-Resolution Image Synthesis with Latent Diffusion Models</em>, Robin Rombach et al., CVPR, 2022",
+    "zh": "《使用潜扩散模型进行高分辨率图像合成》, 罗宾·罗姆巴赫等，CVPR，2022"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Text-conditioned latent diffusion",
+      "zh": "文本条件潜扩散"
+    },
+    "artifact": {
+      "en": "Stable Diffusion model release",
+      "zh": "Stable Diffusion 模型发布"
+    },
+    "material": {
+      "en": "CVPR paper and model release",
+      "zh": "CVPR 论文与模型发布"
+    },
+    "demo": {
+      "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical.",
+      "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Latent Space",
+          "zh": "潜空间"
+        },
+        "text": {
+          "en": "Denoising happens in a compressed representation.",
+          "zh": "去噪发生在压缩表示中。"
+        }
+      },
+      {
+        "label": {
+          "en": "Guidance",
+          "zh": "引导"
+        },
+        "text": {
+          "en": "Text conditioning steers each denoising step.",
+          "zh": "文本条件引导每一步去噪。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "GAN",
+        "zh": "GAN"
+      },
+      {
+        "en": "DALL-E",
+        "zh": "DALL-E"
+      },
+      {
+        "en": "CLIP",
+        "zh": "CLIP"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Germany",
+        "zh": "德国"
+      },
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Prompt",
+        "zh": "Prompt"
+      },
+      {
+        "en": "Latent noise",
+        "zh": "Latent noise"
+      },
+      {
+        "en": "Denoised image",
+        "zh": "Denoised image"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper and model release",
+          "zh": "CVPR 论文与模型发布"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Noise is iteratively denoised in latent space while text conditioning guides the image toward the prompt. Working in latent space lowers the compute cost and made broad model release more practical.",
+          "zh": "噪声在潜空间中逐步去噪，文本条件引导图像朝提示词描述收敛。在潜空间中工作降低了计算成本，也让广泛发布模型更可行。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVF Open Access",
+          "zh": "CVF 开放论文库"
+        },
+        "title": {
+          "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "zh": "使用潜扩散模型进行高分辨率图像合成"
+        },
+        "description": {
+          "en": "Open CVPR paper for latent diffusion models.",
+          "zh": "潜扩散模型的 CVPR 开放论文。"
+        },
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+        "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "LMU Munich and Stability AI",
+      "zh": "慕尼黑大学与 Stability AI"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1508,
+      11.5802
+    ]
   }
 }

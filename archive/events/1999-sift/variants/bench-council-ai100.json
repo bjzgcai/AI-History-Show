@@ -112,5 +112,181 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Lowe",
+        "zh": "戴维·洛"
+      },
+      "role": {
+        "en": "Inventor of SIFT",
+        "zh": "SIFT 发明者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Scale-invariant local features\"",
+    "zh": "\"尺度不变局部特征\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "SIFT ICCV paper PDF",
+      "zh": "SIFT 国际计算机视觉会议论文 PDF"
+    },
+    "workAuthors": {
+      "en": "David Lowe",
+      "zh": "戴维·洛"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Computer vision feature extraction / SIFT",
+    "zh": "BenchCouncil AI100：计算机视觉特征提取 / SIFT"
+  },
+  "quoteAttribution": {
+    "en": "<em>SIFT ICCV paper PDF</em>, David Lowe",
+    "zh": "《SIFT 国际计算机视觉会议论文 PDF》, 戴维·洛"
+  },
+  "achievement": {
+    "area": {
+      "en": "Computer vision feature extraction",
+      "zh": "计算机视觉特征提取"
+    },
+    "method": {
+      "en": "Scale-invariant local features",
+      "zh": "尺度不变局部特征"
+    },
+    "artifact": {
+      "en": "SIFT keypoint descriptor",
+      "zh": "SIFT 关键点描述子"
+    },
+    "material": {
+      "en": "ICCV paper and IJCV article",
+      "zh": "ICCV 论文与 IJCV 文章"
+    },
+    "demo": {
+      "en": "Find stable keypoints across scale and rotation",
+      "zh": "跨尺度与旋转寻找稳定关键点"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Scale Space",
+          "zh": "尺度空间"
+        },
+        "text": {
+          "en": "The image is examined at multiple blur levels to find stable structures.",
+          "zh": "图像在多个模糊尺度上被检查，以寻找稳定结构。"
+        }
+      },
+      {
+        "label": {
+          "en": "Keypoint",
+          "zh": "关键点"
+        },
+        "text": {
+          "en": "A repeatable local point that can be matched across images.",
+          "zh": "可在多张图像间重复匹配的局部点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Descriptor",
+          "zh": "描述子"
+        },
+        "text": {
+          "en": "Gradient histograms summarize the nearby appearance.",
+          "zh": "梯度直方图概括邻域外观。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "HOG",
+        "zh": "HOG"
+      },
+      {
+        "en": "SURF",
+        "zh": "SURF"
+      },
+      {
+        "en": "Computer vision",
+        "zh": "计算机视觉"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "British Columbia, Canada",
+        "zh": "加拿大不列颠哥伦比亚省"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Build scale space",
+        "zh": "构建尺度空间"
+      },
+      {
+        "en": "Pick keypoints",
+        "zh": "选择关键点"
+      },
+      {
+        "en": "Match descriptors",
+        "zh": "匹配描述子"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "UBC Laboratory for Computational Intelligence",
+        "title": {
+          "en": "SIFT ICCV paper PDF",
+          "zh": "SIFT ICCV 论文 PDF"
+        },
+        "description": {
+          "en": "UBC-hosted PDF for the original SIFT conference paper.",
+          "zh": "UBC 托管的 SIFT 原始会议论文 PDF。"
+        },
+        "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "source": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open paper PDF",
+          "zh": "打开论文 PDF"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of British Columbia",
+      "zh": "不列颠哥伦比亚大学"
+    },
+    "country": {
+      "en": "British Columbia, Canada",
+      "zh": "加拿大不列颠哥伦比亚省"
+    },
+    "coordinates": [
+      49.2606,
+      -123.246
+    ]
   }
 }

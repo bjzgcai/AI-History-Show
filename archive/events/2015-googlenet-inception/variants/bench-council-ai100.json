@@ -115,5 +115,197 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
+      "role": {
+        "en": "Lead author of the GoogLeNet paper",
+        "zh": "GoogLeNet 论文第一作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Google research team",
+        "zh": "谷歌 研究团队"
+      },
+      "role": {
+        "en": "Developed the Inception architecture",
+        "zh": "开发 Inception 架构"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"going deeper with convolutions\"",
+    "zh": "\"用卷积走得更深\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Going Deeper with Convolutions",
+      "zh": "用卷积走得更深"
+    },
+    "workAuthors": {
+      "en": "Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "zh": "克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Computer Vision / GoogLeNet",
+    "zh": "BenchCouncil AI100：计算机视觉 / GoogLeNet / Inception"
+  },
+  "quoteAttribution": {
+    "en": "<em>Going Deeper with Convolutions</em>, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+    "zh": "《用卷积走得更深》, 克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Computer Vision",
+      "zh": "计算机视觉"
+    },
+    "method": {
+      "en": "Multi-scale Inception modules",
+      "zh": "多尺度 Inception 模块"
+    },
+    "artifact": {
+      "en": "GoogLeNet architecture",
+      "zh": "GoogLeNet 架构"
+    },
+    "material": {
+      "en": "CVPR paper and ImageNet-winning model",
+      "zh": "计算机视觉与模式识别会议 论文与 ImageNet 冠军模型"
+    },
+    "demo": {
+      "en": "Parallel filters, efficient depth",
+      "zh": "并行滤波器与高效深度"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Inception Module",
+          "zh": "Inception 模块"
+        },
+        "text": {
+          "en": "Several convolution and pooling paths run in parallel, letting the network capture patterns at multiple scales.",
+          "zh": "多个卷积与池化路径并行运行，让网络捕捉多尺度模式。"
+        }
+      },
+      {
+        "label": {
+          "en": "Bottleneck Layers",
+          "zh": "瓶颈层"
+        },
+        "text": {
+          "en": "1x1 convolutions reduce channel counts before expensive operations, improving computational efficiency.",
+          "zh": "1x1 卷积在昂贵操作前减少通道数，提高计算效率。"
+        }
+      },
+      {
+        "label": {
+          "en": "Parameter Efficiency",
+          "zh": "参数效率"
+        },
+        "text": {
+          "en": "The architecture increases depth and width while controlling memory and compute cost.",
+          "zh": "该架构在增加深度与宽度的同时控制内存和计算成本。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "VGG",
+        "zh": "VGG"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "1x1 bottleneck",
+        "zh": "1x1 瓶颈"
+      },
+      {
+        "en": "Parallel filters",
+        "zh": "并行滤波器"
+      },
+      {
+        "en": "Concatenate channels",
+        "zh": "拼接通道"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVF Open Access",
+          "zh": "CVF 开放访问"
+        },
+        "title": {
+          "en": "Going Deeper with Convolutions",
+          "zh": "用卷积走得更深"
+        },
+        "description": {
+          "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
+          "zh": "CVPR 开放访问页面，介绍 GoogLeNet 与 Inception 模块。"
+        },
+        "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open CVF paper",
+          "zh": "打开 CVF 论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google",
+      "zh": "谷歌"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
   }
 }

@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Andrew Barto",
+        "zh": "安德鲁·巴托"
+      },
+      "role": {
+        "en": "Actor-Critic co-author",
+        "zh": "Actor-Critic 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Neuronlike adaptive elements that can solve difficult learning control problems\"",
+    "zh": "\"能够解决困难学习控制问题的类神经自适应元件\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+      "zh": "能够解决困难学习控制问题的类神经自适应元件"
+    },
+    "workAuthors": {
+      "en": "Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
+      "zh": "安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1109/TSMC.1983.6313077"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems</em>, Andrew Barto, Richard Sutton, and Charles Anderson, 1983",
+    "zh": "《能够解决困难学习控制问题的类神经自适应元件》, 安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983"
+  },
+  "achievement": {
+    "area": {
+      "en": "Reinforcement learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Separate policy and value learning",
+      "zh": "分离的策略与价值学习"
+    },
+    "artifact": {
+      "en": "Actor-critic reinforcement-learning architecture",
+      "zh": "Actor-Critic 强化学习架构"
+    },
+    "material": {
+      "en": "IEEE Systems, Man, and Cybernetics paper",
+      "zh": "IEEE Systems, Man, and Cybernetics 论文"
+    },
+    "demo": {
+      "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly.",
+      "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Actor",
+          "zh": "Actor"
+        },
+        "text": {
+          "en": "The policy chooses actions.",
+          "zh": "策略选择动作。"
+        }
+      },
+      {
+        "label": {
+          "en": "Critic",
+          "zh": "Critic"
+        },
+        "text": {
+          "en": "The value estimate evaluates the action.",
+          "zh": "价值估计评价动作。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Temporal-difference update",
+          "zh": "时序差分更新"
+        },
+        "zh": {
+          "en": "Temporal-difference update",
+          "zh": "时序差分更新"
+        }
+      },
+      {
+        "en": {
+          "en": "Q-Learning",
+          "zh": "Q-Learning"
+        },
+        "zh": {
+          "en": "Q-Learning",
+          "zh": "Q-Learning"
+        }
+      },
+      {
+        "en": {
+          "en": "DDPG",
+          "zh": "DDPG"
+        },
+        "zh": {
+          "en": "DDPG",
+          "zh": "DDPG"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Act",
+          "zh": "行动"
+        },
+        "zh": {
+          "en": "Act",
+          "zh": "行动"
+        }
+      },
+      {
+        "en": {
+          "en": "Critique",
+          "zh": "评价"
+        },
+        "zh": {
+          "en": "Critique",
+          "zh": "评价"
+        }
+      },
+      {
+        "en": {
+          "en": "Improve policy",
+          "zh": "改进策略"
+        },
+        "zh": {
+          "en": "Improve policy",
+          "zh": "改进策略"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "IEEE Systems, Man, and Cybernetics paper",
+          "zh": "IEEE Systems, Man, and Cybernetics 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The actor chooses an action, the critic estimates whether the outcome was better than expected, and the actor shifts future choices accordingly.",
+          "zh": "actor 选择动作，critic 估计结果是否优于预期，actor 据此调整未来选择。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "IEEE Xplore",
+          "zh": "IEEE Xplore"
+        },
+        "title": {
+          "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems",
+          "zh": "能够解决困难学习控制问题的类神经自适应元件"
+        },
+        "description": {
+          "en": "IEEE Xplore source card for Actor-Critic.",
+          "zh": "IEEE Xplore 的Actor-Critic资料卡片。"
+        },
+        "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+        "source": "https://doi.org/10.1109/TSMC.1983.6313077",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI page",
+          "zh": "打开 DOI 页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Massachusetts Amherst",
+      "zh": "University of Massachusetts Amherst"
+    },
+    "country": {
+      "en": "Amherst, United States",
+      "zh": "Amherst, United States"
+    },
+    "coordinates": [
+      42.3868,
+      -72.5301
+    ]
   }
 }

@@ -109,5 +109,191 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Martin Ester",
+        "zh": "马丁·埃斯特"
+      },
+      "role": {
+        "en": "Co-author of DBSCAN",
+        "zh": "DBSCAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+        "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟"
+      },
+      "role": {
+        "en": "DBSCAN research team",
+        "zh": "DBSCAN 研究团队"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Clusters are dense regions separated by sparse noise\"",
+    "zh": "\"簇是被稀疏噪声隔开的密集区域\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+      "zh": "一种在含噪大型空间数据库中发现簇的基于密度的算法"
+    },
+    "workAuthors": {
+      "en": "Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+      "zh": "马丁·埃斯特, 汉斯-彼得·克里格尔, 约尔格·桑德, 徐晓伟"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://dl.acm.org/doi/10.5555/3001460.3001507"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Cluster, Classification, Regression / DBSCAN",
+    "zh": "BenchCouncil AI100：聚类、分类与回归 / DBSCAN 密度聚类"
+  },
+  "quoteAttribution": {
+    "en": "<em>A density-based algorithm for discovering clusters in large spatial databases with noise</em>, Martin Ester, Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+    "zh": "《一种在含噪大型空间数据库中发现簇的基于密度的算法》, 马丁·埃斯特, 汉斯-彼得·克里格尔, 约尔格·桑德, 徐晓伟"
+  },
+  "achievement": {
+    "area": {
+      "en": "Cluster, Classification, Regression",
+      "zh": "聚类、分类与回归"
+    },
+    "method": {
+      "en": "Density reachability with epsilon and MinPts",
+      "zh": "基于 epsilon 与 MinPts 的密度可达"
+    },
+    "artifact": {
+      "en": "DBSCAN clustering algorithm",
+      "zh": "DBSCAN 聚类算法"
+    },
+    "material": {
+      "en": "KDD 1996 paper and later density-clustering references",
+      "zh": "KDD 1996 论文与后续密度聚类资料"
+    },
+    "demo": {
+      "en": "Grow clusters from core points and mark noise",
+      "zh": "从核心点生长簇并标记噪声"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Core Point",
+          "zh": "核心点"
+        },
+        "text": {
+          "en": "A point with enough neighbors in an epsilon radius.",
+          "zh": "epsilon 半径内邻居足够多的点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Density Reachability",
+          "zh": "密度可达"
+        },
+        "text": {
+          "en": "Clusters grow by connecting dense neighborhoods.",
+          "zh": "簇通过连接密集邻域生长。"
+        }
+      },
+      {
+        "label": {
+          "en": "Noise",
+          "zh": "噪声"
+        },
+        "text": {
+          "en": "Sparse points can remain outside all clusters.",
+          "zh": "稀疏点可以不属于任何簇。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "K-means",
+        "zh": "K-means"
+      },
+      {
+        "en": "Spectral clustering",
+        "zh": "谱聚类"
+      },
+      {
+        "en": "t-SNE",
+        "zh": "t-SNE"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Munich, Germany",
+        "zh": "德国慕尼黑"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Find neighbors",
+        "zh": "寻找邻居"
+      },
+      {
+        "en": "Expand core",
+        "zh": "扩展核心点"
+      },
+      {
+        "en": "Label noise",
+        "zh": "标记噪声"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "KDD Paper",
+          "zh": "KDD 论文"
+        },
+        "title": {
+          "en": "A density-based algorithm for discovering clusters",
+          "zh": "一种发现簇的基于密度的算法"
+        },
+        "description": {
+          "en": "Original KDD paper introducing DBSCAN's density reachability and noise-aware clustering.",
+          "zh": "KDD 原始论文：介绍 DBSCAN 的密度可达与噪声感知聚类。"
+        },
+        "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+        "source": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+        "action": {
+          "en": "Open paper record",
+          "zh": "打开论文记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Munich",
+      "zh": "慕尼黑大学"
+    },
+    "country": {
+      "en": "Munich, Germany",
+      "zh": "德国慕尼黑"
+    },
+    "coordinates": [
+      48.1508,
+      11.58
+    ]
   }
 }

@@ -109,5 +109,178 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Christopher Strachey",
+        "zh": "克里斯托弗·斯特雷奇"
+      },
+      "role": {
+        "en": "Developer of the early draughts program",
+        "zh": "早期跳棋程序开发者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Non-numerical programs could play\"",
+    "zh": "\"非数值程序也可以对弈\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Logical or non-mathematical programmes",
+      "zh": "逻辑或非数学程序"
+    },
+    "workAuthors": {
+      "en": "Christopher Strachey",
+      "zh": "克里斯托弗·斯特雷奇"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
+    "zh": "BenchCouncil AI100：游戏 / 克里斯托弗·斯特雷奇 的跳棋程序"
+  },
+  "quoteAttribution": {
+    "en": "<em>Logical or non-mathematical programmes</em>, Christopher Strachey",
+    "zh": "《逻辑或非数学程序》, 克里斯托弗·斯特雷奇"
+  },
+  "achievement": {
+    "area": {
+      "en": "Game",
+      "zh": "游戏"
+    },
+    "method": {
+      "en": "Board-state search and evaluation",
+      "zh": "棋盘状态搜索与评估"
+    },
+    "artifact": {
+      "en": "Pilot ACE / Ferranti Mark 1 draughts program",
+      "zh": "Pilot ACE / Ferranti Mark 1 跳棋程序"
+    },
+    "material": {
+      "en": "Historical accounts and Strachey's 1952 program report",
+      "zh": "历史记录与 斯特雷奇 1952 年程序报告"
+    },
+    "demo": {
+      "en": "Evaluate legal draughts moves on a tiny memory budget",
+      "zh": "在极小内存预算下评估合法跳棋走法"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Board Representation",
+          "zh": "棋盘表示"
+        },
+        "text": {
+          "en": "A game state becomes data the computer can inspect.",
+          "zh": "棋局状态变成计算机可检查的数据。"
+        }
+      },
+      {
+        "label": {
+          "en": "Move Generation",
+          "zh": "走法生成"
+        },
+        "text": {
+          "en": "The program enumerates legal moves instead of following a fixed script.",
+          "zh": "程序枚举合法走法，而不是沿用固定脚本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation",
+          "zh": "局面评估"
+        },
+        "text": {
+          "en": "Candidate positions are scored so the machine can choose.",
+          "zh": "候选局面被评分，机器据此选择。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Turing Test",
+        "zh": "图灵测试"
+      },
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "Chinook",
+        "zh": "Chinook"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Teddington, United Kingdom",
+        "zh": "英国特丁顿"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Represent board",
+        "zh": "表示棋盘"
+      },
+      {
+        "en": "Generate moves",
+        "zh": "生成走法"
+      },
+      {
+        "en": "Choose move",
+        "zh": "选择走法"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Logical or non-mathematical programmes",
+          "zh": "逻辑或非数学程序"
+        },
+        "description": {
+          "en": "ACM record for Strachey's early game-playing program and non-numerical computing argument.",
+          "zh": "ACM 记录：斯特雷奇早期博弈程序与非数值计算论述。"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "action": {
+          "en": "Open ACM record",
+          "zh": "打开 ACM 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "National Physical Laboratory",
+      "zh": "英国国家物理实验室"
+    },
+    "country": {
+      "en": "Teddington, United Kingdom",
+      "zh": "英国特丁顿"
+    },
+    "coordinates": [
+      51.4245,
+      -0.3426
+    ]
   }
 }

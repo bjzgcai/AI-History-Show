@@ -115,5 +115,228 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+    "zh": "深度学习与范式归一（2010年代至2020年代）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Gao Huang",
+        "zh": "黄高"
+      },
+      "role": {
+        "en": "DenseNet lead author",
+        "zh": "DenseNet 主要作者"
+      },
+      "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+      "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Zhuang Liu",
+        "zh": "刘壮"
+      },
+      "role": {
+        "en": "DenseNet co-author",
+        "zh": "DenseNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
+        "url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2016DenseNet%EF%BC%9A%E5%A5%94%E5%90%91%E6%9B%B4%E6%B7%B1%E5%B1%82%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD.mp4",
+        "title": "2016DenseNet：奔向更深层的人工智能",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"DenseNet connected each layer to all later layers, improving feature reuse and gradient flow while encouraging compact convolutional models.\"",
+    "zh": "\"DenseNet 将每一层连接到后续所有层，增强了特征复用和梯度流动，也推动了更紧凑的卷积模型设计。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Densely Connected Convolutional Networks",
+      "zh": "密集连接卷积网络"
+    },
+    "workAuthors": {
+      "en": "Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
+      "zh": "黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html"
+  },
+  "quotePage": {
+    "en": "CVPR 2017 paper: Densely Connected Convolutional Networks",
+    "zh": "CVPR 2017 论文《密集连接卷积网络》"
+  },
+  "quoteAttribution": {
+    "en": "<em>Densely Connected Convolutional Networks</em>, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q. Weinberger, CVPR, 2017",
+    "zh": "《密集连接卷积网络》, 黄高、刘壮、Laurens van der Maaten、Kilian Q. Weinberger，CVPR，2017"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Dense feature reuse connections",
+      "zh": "密集特征复用连接"
+    },
+    "artifact": {
+      "en": "Densely connected convolutional network",
+      "zh": "密集连接卷积网络"
+    },
+    "material": {
+      "en": "CVPR paper",
+      "zh": "CVPR 论文"
+    },
+    "demo": {
+      "en": "Every layer receives the feature maps of all earlier layers in the same block.",
+      "zh": "每一层都会接收同一块中所有早期层的特征图。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Feature Reuse",
+          "zh": "特征复用"
+        },
+        "text": {
+          "en": "Later layers can directly use earlier features.",
+          "zh": "后续层可以直接使用早期特征。"
+        }
+      },
+      {
+        "label": {
+          "en": "Dense Connectivity",
+          "zh": "密集连接"
+        },
+        "text": {
+          "en": "Many short paths help gradient flow through the network.",
+          "zh": "许多短路径帮助梯度在网络中流动。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "CNN",
+        "zh": "CNN"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "China",
+        "zh": "中国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Layer 1",
+        "zh": "第 1 层"
+      },
+      {
+        "en": "Concatenate features",
+        "zh": "拼接特征"
+      },
+      {
+        "en": "Layer N",
+        "zh": "第 N 层"
+      }
+    ],
+    "demoImage": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper",
+          "zh": "CVPR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Every layer receives the feature maps of all earlier layers in the same block.",
+          "zh": "每一层都会接收同一块中所有早期层的特征图。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Densely Connected Convolutional Networks",
+          "zh": "密集连接卷积网络"
+        },
+        "description": {
+          "en": "Open paper for DenseNet.",
+          "zh": "DenseNet 的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1608.06993",
+        "source": "https://arxiv.org/abs/1608.06993",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Cornell University",
+      "zh": "康奈尔大学"
+    },
+    "country": {
+      "en": "Ithaca, United States",
+      "zh": "美国伊萨卡"
+    },
+    "coordinates": [
+      42.4534,
+      -76.4735
+    ]
   }
 }

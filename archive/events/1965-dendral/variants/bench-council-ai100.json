@@ -112,5 +112,181 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Edward Feigenbaum",
+        "zh": "爱德华·费根鲍姆"
+      },
+      "role": {
+        "en": "Leader in expert-system AI",
+        "zh": "专家系统 AI 代表人物"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Rule-guided chemical structure inference\"",
+    "zh": "\"规则引导的化学结构推断\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Chemical inference paper record",
+      "zh": "化学推断论文记录"
+    },
+    "workAuthors": {
+      "en": "Edward Feigenbaum",
+      "zh": "爱德华·费根鲍姆"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1021/ci60034a002"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Expert systems / DENDRAL",
+    "zh": "BenchCouncil AI100：专家系统 / DENDRAL"
+  },
+  "quoteAttribution": {
+    "en": "<em>Chemical inference paper record</em>, Edward Feigenbaum",
+    "zh": "《化学推断论文记录》, 爱德华·费根鲍姆"
+  },
+  "achievement": {
+    "area": {
+      "en": "Expert systems",
+      "zh": "专家系统"
+    },
+    "method": {
+      "en": "Rule-guided chemical structure inference",
+      "zh": "规则引导的化学结构推断"
+    },
+    "artifact": {
+      "en": "DENDRAL expert system",
+      "zh": "DENDRAL 专家系统"
+    },
+    "material": {
+      "en": "Chemical inference papers and Turing Award histories",
+      "zh": "化学推断论文与图灵奖史料"
+    },
+    "demo": {
+      "en": "Use expert rules to narrow molecular structures",
+      "zh": "用专家规则缩小分子结构候选"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Knowledge Engineering",
+          "zh": "知识工程"
+        },
+        "text": {
+          "en": "Experts help encode rules that guide the system.",
+          "zh": "专家帮助编码规则以引导系统。"
+        }
+      },
+      {
+        "label": {
+          "en": "Generate and Test",
+          "zh": "生成与检验"
+        },
+        "text": {
+          "en": "Candidate structures are generated, then filtered by constraints.",
+          "zh": "先生成候选结构，再用约束筛选。"
+        }
+      },
+      {
+        "label": {
+          "en": "Mass Spectrum",
+          "zh": "质谱"
+        },
+        "text": {
+          "en": "Chemical evidence supplies clues about molecular fragments.",
+          "zh": "化学证据提供关于分子片段的线索。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Expert systems",
+        "zh": "专家系统"
+      },
+      {
+        "en": "Cyc",
+        "zh": "Cyc"
+      },
+      {
+        "en": "AI for Science",
+        "zh": "AI for 《科学》"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Read spectrum",
+        "zh": "读取质谱"
+      },
+      {
+        "en": "Apply rules",
+        "zh": "应用规则"
+      },
+      {
+        "en": "Rank molecules",
+        "zh": "排序分子"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "ACS Publications",
+        "title": {
+          "en": "Chemical inference paper record",
+          "zh": "化学推断论文记录"
+        },
+        "description": {
+          "en": "Primary literature record for early DENDRAL chemical inference.",
+          "zh": "早期 DENDRAL 化学推断工作的原始文献记录。"
+        },
+        "url": "https://doi.org/10.1021/ci60034a002",
+        "source": "https://doi.org/10.1021/ci60034a002",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open DOI record",
+          "zh": "打开 DOI 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
   }
 }

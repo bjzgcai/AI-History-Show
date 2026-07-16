@@ -112,5 +112,181 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author of deep belief net learning",
+        "zh": "深度置信网络学习共同作者"
+      },
+      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Layer-wise unsupervised pretraining\"",
+    "zh": "\"逐层无监督预训练\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Fast learning algorithm for deep belief nets",
+      "zh": "深度置信网络的快速学习算法"
+    },
+    "workAuthors": {
+      "en": "Geoffrey Hinton",
+      "zh": "杰弗里·辛顿"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Deep learning / Deep Belief Network",
+    "zh": "BenchCouncil AI100：深度学习 / 深度置信网络"
+  },
+  "quoteAttribution": {
+    "en": "<em>Fast learning algorithm for deep belief nets</em>, Geoffrey Hinton",
+    "zh": "《深度置信网络的快速学习算法》, 杰弗里·辛顿"
+  },
+  "achievement": {
+    "area": {
+      "en": "Deep learning",
+      "zh": "深度学习"
+    },
+    "method": {
+      "en": "Layer-wise unsupervised pretraining",
+      "zh": "逐层无监督预训练"
+    },
+    "artifact": {
+      "en": "Deep belief net training recipe",
+      "zh": "深度置信网络训练方案"
+    },
+    "material": {
+      "en": "Neural Computation paper and University of Toronto materials",
+      "zh": "Neural Computation 论文与多伦多大学资料"
+    },
+    "demo": {
+      "en": "Pretrain stacked RBMs before supervised fine-tuning",
+      "zh": "先预训练堆叠 RBM，再监督微调"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Restricted Boltzmann Machine",
+          "zh": "受限玻尔兹曼机"
+        },
+        "text": {
+          "en": "A two-layer generative model used for pretraining.",
+          "zh": "用于预训练的双层生成模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Greedy Layer Training",
+          "zh": "贪心逐层训练"
+        },
+        "text": {
+          "en": "Train one layer at a time before tuning the whole model.",
+          "zh": "先一次训练一层，再微调整体模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Fine-Tuning",
+          "zh": "微调"
+        },
+        "text": {
+          "en": "Supervised training adjusts the pretrained stack for a target task.",
+          "zh": "监督训练把预训练堆栈调整到目标任务。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Back-propagation",
+        "zh": "反向传播"
+      },
+      {
+        "en": "Dropout",
+        "zh": "Dropout"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Ontario, Canada",
+        "zh": "加拿大安大略省"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Train RBM 1",
+        "zh": "训练 RBM 1"
+      },
+      {
+        "en": "Stack features",
+        "zh": "堆叠特征"
+      },
+      {
+        "en": "Fine-tune labels",
+        "zh": "标签微调"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "Neural Computation",
+        "title": {
+          "en": "Fast learning algorithm for deep belief nets",
+          "zh": "深度置信网络快速学习算法"
+        },
+        "description": {
+          "en": "Neural Computation paper record for deep belief nets.",
+          "zh": "深度置信网络 Neural Computation 论文记录。"
+        },
+        "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open DOI record",
+          "zh": "打开 DOI 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
+    },
+    "country": {
+      "en": "Ontario, Canada",
+      "zh": "加拿大安大略省"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
   }
 }

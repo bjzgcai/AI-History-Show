@@ -1,6 +1,6 @@
 # Archive Validation Report
 
-Generated: 2026-07-10T08:44:29.419Z
+Generated: 2026-07-16T06:04:23.598Z
 
 ## Summary
 
@@ -10,7 +10,7 @@ Generated: 2026-07-10T08:44:29.419Z
 - Claims: 253
 - Sources: 373
 - Assets: 327
-- Quizzes: 117
+- Quizzes: 118
 - Errors: 0
 - Warnings: 0
 
@@ -201,22 +201,6 @@ None.
 - `https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg` — ai100-2022-stable-diffusion/asset-ai100-2022-stable-diffusion-robin-update-5
 - `https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg` — ai100-1970-ridge/asset-ai100-1970-ridge-ai-ridge-regression-main
 - `https://zeliu98.github.io/images/zeliu.jpg` — ai100-2021-swin-transformer/asset-ai100-2021-swin-transformer-zeliu
-- `research/ai100/pages/001.turing-test/photos/1950-turing-test_alan-turing.jpg` — 1950-turing-test/asset-1950-turing-test-alan-turing
-- `research/ai100/pages/001.turing-test/photos/1950-turing-test_diagram.png` — 1950-turing-test/asset-1950-turing-test-diagram
-- `research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_reduction-map.svg` — 1971-complexity-theory/asset-1971-complexity-theory-reduction-map
-- `research/ai100/pages/002.complexity-theory/photos/1971-complexity-theory_stephen-cook.jpg` — 1971-complexity-theory/asset-1971-complexity-theory-stephen-cook
-- `research/ai100/pages/003.vc-theory/photos/1971-vc-theory_generalization.svg` — 1971-vc-theory/asset-1971-vc-theory-generalization
-- `research/ai100/pages/003.vc-theory/photos/1971-vc-theory_vladimir-vapnik.png` — 1971-vc-theory/asset-1971-vc-theory-vladimir-vapnik
-- `research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_herbert-simon.jpg` — 1956-logic-theorist/asset-1956-logic-theorist-herbert-simon
-- `research/ai100/pages/004.logic-theorist/photos/1956-logic-theorist_proof-search.svg` — 1956-logic-theorist/asset-1956-logic-theorist-proof-search
-- `research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_hao-wang.jpg` — 1958-wangs-algorithm/asset-1958-wangs-algorithm-hao-wang
-- `research/ai100/pages/005.wangs-algorithm/photos/1958-wangs-algorithm_pattern-proof.svg` — 1958-wangs-algorithm/asset-1958-wangs-algorithm-pattern-proof
-- `research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_hilary-putnam.jpg` — 1960-davis-putnam-dpll/asset-1960-davis-putnam-dpll-hilary-putnam
-- `research/ai100/pages/006.davis-putnam-algorithm-and-dpll/photos/1960-davis-putnam-dpll_sat-search.svg` — 1960-davis-putnam-dpll/asset-1960-davis-putnam-dpll-sat-search
-- `research/ai100/pages/009.lisp/photos/1958-lisp_eval-flow.svg` — 1958-lisp/asset-1958-lisp-eval-flow
-- `research/ai100/pages/009.lisp/photos/1958-lisp_john-mccarthy.jpg` — 1958-lisp/asset-1958-lisp-john-mccarthy
-- `research/ai100/pages/098.alphago/photos/2016-alphago_lee-sedol.jpg` — 2016-alphago/asset-alphago-lee-sedol
-- `research/ai100/pages/098.alphago/photos/2016-alphago_policy-value-search.svg` — 2016-alphago/asset-alphago-policy-value-search
 - `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-01
 - `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-02
 - `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-04
@@ -292,15 +276,20 @@ None.
 - `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png` — 2025-llm-competition/asset-2025-llm-competition-historical-02
 - `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png` — 2025-llm-competition/asset-2025-llm-competition-historical-03
 - `resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg` — ai100-1943-mcculloch-pitts-neuron/asset-1943-mcculloch-pitts-neuron-threshold-logic
+- `resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png` — 1950-turing-test/asset-1950-turing-test-diagram
 - `resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg` — ai100-1951-snarc/asset-1951-snarc-maze-reinforcement
 - `resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg` — 1951-strachey-draughts/asset-1951-strachey-draughts-board-search
 - `resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg` — 1951-strachey-draughts/asset-1951-strachey-draughts-program-flow
+- `resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg` — 1956-logic-theorist/asset-1956-logic-theorist-proof-search
 - `resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg` — 1957-kmeans/asset-1957-kmeans-centroid-loop
 - `resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg` — 1957-kmeans/asset-1957-kmeans-cluster-update
+- `resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg` — 1958-lisp/asset-1958-lisp-eval-flow
 - `resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg` — 1957-perceptron/asset-1958-rosenblatt-perceptron-sensor-grid
 - `resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg` — 1957-perceptron/asset-1958-rosenblatt-perceptron-threshold
+- `resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg` — 1958-wangs-algorithm/asset-1958-wangs-algorithm-pattern-proof
 - `resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg` — 1959-pandemonium/asset-1959-pandemonium-feature-votes
 - `resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg` — 1959-pandemonium/asset-1959-pandemonium-layered-recognition
+- `resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg` — 1960-davis-putnam-dpll/asset-1960-davis-putnam-dpll-sat-search
 - `resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg` — 1965-dendral/asset-1965-dendral-mass-spectrum
 - `resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg` — 1965-dendral/asset-1965-dendral-rule-filter
 - `resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg` — 1965-resolution-method/asset-1965-resolution-method-clause-refutation
@@ -313,6 +302,8 @@ None.
 - `resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg` — ai100-1970-ridge/asset-1970-ridge-shrinkage
 - `resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg` — 1970-shrdlu/asset-1970-shrdlu-blocks-world
 - `resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg` — 1970-shrdlu/asset-1970-shrdlu-parser-plan
+- `resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg` — 1971-complexity-theory/asset-1971-complexity-theory-reduction-map
+- `resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg` — 1971-vc-theory/asset-1971-vc-theory-generalization
 - `resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg` — 1973-prolog/asset-1973-prolog-query-tree
 - `resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg` — 1973-prolog/asset-1973-prolog-unification-trace
 - `resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg` — 1974-frame/asset-1974-frame-inheritance
@@ -404,6 +395,7 @@ None.
 - `resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg` — ai100-2015-knowledge-distillation/asset-2015-knowledge-distillation-teacher-student
 - `resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg` — 2015-u-net/asset-2015-u-net-segmentation-mask
 - `resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg` — 2015-u-net/asset-2015-u-net-u-shape-architecture
+- `resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg` — 2016-alphago/asset-alphago-policy-value-search
 - `resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg` — ai100-2016-gcn/asset-2016-gcn-spectral-convolution
 - `resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg` — ai100-2016-nas/asset-2016-nas-controller-search
 - `resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg` — 2016-yolo/asset-2016-yolo-grid-detector
@@ -428,12 +420,19 @@ None.
 - `resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg` — ai100-2021-swin-transformer/asset-2021-swin-transformer-shifted-windows
 - `resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg` — ai100-2022-stable-diffusion/asset-2022-stable-diffusion-latent-denoise
 - `resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg` — ai100-2023-segment-anything/asset-2023-segment-anything-prompt-mask
+- `resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg` — 1950-turing-test/asset-1950-turing-test-alan-turing
+- `resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg` — 1956-logic-theorist/asset-1956-logic-theorist-herbert-simon
+- `resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg` — 1958-lisp/asset-1958-lisp-john-mccarthy
 - `resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg` — 1957-perceptron/asset-1958-rosenblatt-perceptron-frank-rosenblatt
+- `resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg` — 1958-wangs-algorithm/asset-1958-wangs-algorithm-hao-wang
 - `resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg` — 1959-pandemonium/asset-1959-pandemonium-oliver-selfridge
+- `resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg` — 1960-davis-putnam-dpll/asset-1960-davis-putnam-dpll-hilary-putnam
 - `resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg` — 1965-dendral/asset-1965-dendral-edward-feigenbaum
 - `resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg` — 1965-resolution-method/asset-1965-resolution-method-john-alan-robinson
 - `resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg` — 1966-eliza/asset-1966-eliza-joseph-weizenbaum
 - `resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg` — 1970-shrdlu/asset-1970-shrdlu-terry-winograd
+- `resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg` — 1971-complexity-theory/asset-1971-complexity-theory-stephen-cook
+- `resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png` — 1971-vc-theory/asset-1971-vc-theory-vladimir-vapnik
 - `resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg` — 1973-prolog/asset-1973-prolog-alain-colmerauer
 - `resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg` — 1974-frame/asset-1974-frame-marvin-minsky
 - `resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg` — 1975-genetic-algorithm/asset-1975-genetic-algorithm-john-henry-holland
@@ -461,6 +460,7 @@ None.
 - `resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg` — 2015-googlenet-inception/asset-2015-googlenet-inception-christian-szegedy
 - `resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg` — ai100-2015-batch-normalization/asset-2015-googlenet-inception-christian-szegedy
 - `resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg` — 2015-u-net/asset-2015-u-net-olaf-ronneberger
+- `resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg` — 2016-alphago/asset-alphago-lee-sedol
 - `resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg` — 2016-yolo/asset-2016-yolo-joseph-redmon
 - `resources/images/bench-council-ai100/source/1994-chinook_homepage.png` — 1994-chinook/asset-1994-chinook-homepage
 - `resources/images/figures/alec-radford.png` — 2018-gpt/asset-alec-radford

@@ -115,5 +115,188 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Tomas Mikolov",
+        "zh": "托马斯·米科洛夫"
+      },
+      "role": {
+        "en": "Lead author of word2vec papers",
+        "zh": "word2vec 论文主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"distributed representations of words\"",
+    "zh": "\"词的分布式表示\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Distributed Representations of Words and Phrases and their Compositionality",
+      "zh": "词与短语的分布式表示及其组合性"
+    },
+    "workAuthors": {
+      "en": "Tomas Mikolov et al., NeurIPS, 2013",
+      "zh": "托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1301.3781"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Word2Vec",
+    "zh": "BenchCouncil AI100：神经网络 / Word2Vec"
+  },
+  "quoteAttribution": {
+    "en": "<em>Distributed Representations of Words and Phrases and their Compositionality</em>, Tomas Mikolov et al., NeurIPS, 2013",
+    "zh": "《词与短语的分布式表示及其组合性》, 托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Skip-gram and CBOW neural word embeddings",
+      "zh": "Skip-gram 与 CBOW 神经词嵌入"
+    },
+    "artifact": {
+      "en": "Word2Vec embedding toolkit",
+      "zh": "Word2Vec 嵌入工具"
+    },
+    "material": {
+      "en": "NeurIPS paper, arXiv preprint, and Google code archive",
+      "zh": "神经信息处理系统大会 论文、arXiv 预印本与 谷歌 代码档案"
+    },
+    "demo": {
+      "en": "Move through a semantic vector space",
+      "zh": "在语义向量空间中移动"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Skip-gram",
+          "zh": "Skip-gram"
+        },
+        "text": {
+          "en": "Predicts neighboring words from a center word.",
+          "zh": "由中心词预测邻近词。"
+        }
+      },
+      {
+        "label": {
+          "en": "Negative Sampling",
+          "zh": "负采样"
+        },
+        "text": {
+          "en": "Speeds training by contrasting observed word-context pairs with sampled alternatives.",
+          "zh": "通过对比真实词-上下文对和采样负例来加速训练。"
+        }
+      },
+      {
+        "label": {
+          "en": "Vector Analogy",
+          "zh": "向量类比"
+        },
+        "text": {
+          "en": "Relations such as gender or capital-city can appear as vector offsets.",
+          "zh": "性别、首都等关系可表现为向量偏移。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Neural Language Model",
+        "zh": "神经语言模型"
+      },
+      {
+        "en": "GloVe",
+        "zh": "GloVe"
+      },
+      {
+        "en": "Transformer embeddings",
+        "zh": "Transformer 嵌入"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Czech Republic",
+        "zh": "捷克"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Skip-gram",
+        "zh": "Skip-gram"
+      },
+      {
+        "en": "Negative Sampling",
+        "zh": "负采样"
+      },
+      {
+        "en": "Vector Analogy",
+        "zh": "向量类比"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "NeurIPS / arXiv",
+          "zh": "神经信息处理系统大会 / arXiv"
+        },
+        "title": {
+          "en": "Word2Vec papers",
+          "zh": "Word2Vec 论文"
+        },
+        "description": {
+          "en": "Primary word embedding sources; local images redraw skip-gram windows and vector analogies.",
+          "zh": "词嵌入原始来源；本地图重画 skip-gram 窗口和向量类比。"
+        },
+        "url": "https://arxiv.org/abs/1301.3781",
+        "source": "https://arxiv.org/abs/1301.3781",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open preprint",
+          "zh": "打开预印本"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "谷歌大脑"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
   }
 }

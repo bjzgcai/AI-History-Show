@@ -38,6 +38,7 @@ module.exports = [
         ignores: [
             'node_modules/**',
             'manage/.backups/**',
+            '.tmp/**',
             'resources/images/**',
             'resources/videos/**',
             'milestones-data*.js',

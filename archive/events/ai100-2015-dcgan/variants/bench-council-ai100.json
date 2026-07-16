@@ -114,5 +114,239 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "DCGAN lead author",
+        "zh": "DCGAN 主要作者"
+      },
+      "avatar": "resources/images/figures/alec-radford.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Unsupervised representation learning with deep convolutional generative adversarial networks\"",
+    "zh": "\"使用深度卷积生成对抗网络进行无监督表示学习\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+      "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+    },
+    "workAuthors": {
+      "en": "Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
+      "zh": "亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1511.06434"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</em>, Alec Radford, Luke Metz, and Soumith Chintala, ICLR, 2016",
+    "zh": "《使用深度卷积生成对抗网络进行无监督表示学习》, 亚历克·拉德福德、卢克·梅茨、苏米特·钦塔拉，ICLR，2016"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Convolutional adversarial architecture",
+      "zh": "卷积式对抗架构"
+    },
+    "artifact": {
+      "en": "Deep convolutional GAN design",
+      "zh": "深度卷积 GAN 设计"
+    },
+    "material": {
+      "en": "ICLR paper and code examples",
+      "zh": "ICLR 论文与代码示例"
+    },
+    "demo": {
+      "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.",
+      "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Transposed Convolution",
+          "zh": "转置卷积"
+        },
+        "text": {
+          "en": "Latent vectors become image grids.",
+          "zh": "潜向量变成图像网格。"
+        }
+      },
+      {
+        "label": {
+          "en": "Representation Learning",
+          "zh": "表示学习"
+        },
+        "text": {
+          "en": "The discriminator learns reusable visual features.",
+          "zh": "判别器学习可复用视觉特征。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        },
+        "zh": {
+          "en": "Conditional GAN",
+          "zh": "Conditional GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "StyleGAN",
+          "zh": "StyleGAN"
+        },
+        "zh": {
+          "en": "StyleGAN",
+          "zh": "StyleGAN"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        },
+        "zh": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        }
+      },
+      {
+        "en": {
+          "en": "Upsample",
+          "zh": "上采样"
+        },
+        "zh": {
+          "en": "Upsample",
+          "zh": "上采样"
+        }
+      },
+      {
+        "en": {
+          "en": "Synthetic image",
+          "zh": "合成图像"
+        },
+        "zh": {
+          "en": "Synthetic image",
+          "zh": "合成图像"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper and code examples",
+          "zh": "ICLR 论文与代码示例"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A latent vector is progressively upsampled through convolutional blocks while a discriminator learns image features in the opposite direction.",
+          "zh": "潜向量通过卷积模块逐步上采样，判别器则沿相反方向学习图像特征。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+          "zh": "使用深度卷积生成对抗网络进行无监督表示学习"
+        },
+        "description": {
+          "en": "arXiv source card for DCGAN.",
+          "zh": "arXiv 的DCGAN资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1511.06434",
+        "source": "https://arxiv.org/abs/1511.06434",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Facebook AI Research",
+      "zh": "Facebook AI Research"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "New York, United States"
+    },
+    "coordinates": [
+      40.7128,
+      -74.006
+    ]
   }
 }

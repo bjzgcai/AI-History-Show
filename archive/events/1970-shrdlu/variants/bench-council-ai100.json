@@ -115,5 +115,184 @@
       "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
       "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
     }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Terry Winograd",
+        "zh": "特里·维诺格拉德"
+      },
+      "role": {
+        "en": "Creator of SHRDLU",
+        "zh": "SHRDLU 创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Blocks-world language understanding\"",
+    "zh": "\"积木世界语言理解\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "SHRDLU dissertation record",
+      "zh": "SHRDLU 博士论文记录"
+    },
+    "workAuthors": {
+      "en": "Terry Winograd",
+      "zh": "特里·维诺格拉德"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://dspace.mit.edu/handle/1721.1/7095"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Natural language understanding / SHRDLU",
+    "zh": "BenchCouncil AI100：自然语言理解 / SHRDLU"
+  },
+  "quoteAttribution": {
+    "en": "<em>SHRDLU dissertation record</em>, Terry Winograd",
+    "zh": "《SHRDLU 博士论文记录》, 特里·维诺格拉德"
+  },
+  "achievement": {
+    "area": {
+      "en": "Natural language understanding",
+      "zh": "自然语言理解"
+    },
+    "method": {
+      "en": "Blocks-world language understanding",
+      "zh": "积木世界语言理解"
+    },
+    "artifact": {
+      "en": "Interactive blocks-world dialogue system",
+      "zh": "交互式积木世界对话系统"
+    },
+    "material": {
+      "en": "MIT thesis and AI Lab reports",
+      "zh": "麻省理工学院 论文与 AI Lab 报告"
+    },
+    "demo": {
+      "en": "Parse language into plans over visible blocks",
+      "zh": "把语言解析为可见积木上的计划"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Microworld",
+          "zh": "微世界"
+        },
+        "text": {
+          "en": "A narrow environment makes language and action tractable.",
+          "zh": "受限环境让语言和动作变得可处理。"
+        }
+      },
+      {
+        "label": {
+          "en": "Procedural Semantics",
+          "zh": "过程语义"
+        },
+        "text": {
+          "en": "Meaning is tied to procedures the system can run.",
+          "zh": "意义绑定到系统可执行的过程。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reference Resolution",
+          "zh": "指称消解"
+        },
+        "text": {
+          "en": "The system maps words like \"the red block\" to objects in the scene.",
+          "zh": "系统把“红色积木”等表达映射到场景对象。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "ELIZA",
+        "zh": "ELIZA"
+      },
+      {
+        "en": "Frame",
+        "zh": "框架"
+      },
+      {
+        "en": "Natural language understanding",
+        "zh": "自然语言理解"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Parse command",
+        "zh": "解析命令"
+      },
+      {
+        "en": "Resolve object",
+        "zh": "解析指称"
+      },
+      {
+        "en": "Plan block action",
+        "zh": "规划积木动作"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT DSpace",
+          "zh": "麻省理工学院 DSpace"
+        },
+        "title": {
+          "en": "SHRDLU dissertation record",
+          "zh": "SHRDLU 学位论文记录"
+        },
+        "description": {
+          "en": "Repository record for Winograd's language-understanding work.",
+          "zh": "麻省理工学院仓储记录，收录维诺格拉德的语言理解工作。"
+        },
+        "url": "https://dspace.mit.edu/handle/1721.1/7095",
+        "source": "https://dspace.mit.edu/handle/1721.1/7095",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse thesis figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open MIT record",
+          "zh": "打开 麻省理工学院 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
   }
 }
