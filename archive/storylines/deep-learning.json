@@ -1,161 +1,182 @@
 {
-  "id": "deep-learning",
-  "title": {
-    "zh": "深度学习分支",
-    "en": "Deep Learning"
-  },
-  "subtitle": {
-    "zh": "从感知机、反向传播、卷积网络到 Transformer 和复杂决策系统的技术演进。",
-    "en": "The technical evolution from perceptrons, backpropagation, and convolutional networks to Transformers and complex decision systems."
-  },
-  "type": "timeline",
-  "description": {
-    "zh": "深度学习分支强调神经网络、表示学习、规模化训练和模型架构如何逐步改变 AI 能力边界。",
-    "en": "The deep-learning storyline emphasizes how neural networks, representation learning, scaled training, and model architectures expanded the boundary of AI capabilities."
-  },
-  "events": [
-    {
-      "eventId": "1956-dartmouth",
-      "variant": "deep-learning",
-      "order": 10,
-      "enabled": true
+    "id": "deep-learning",
+    "title": {
+        "zh": "深度学习分支",
+        "en": "Deep Learning"
     },
-    {
-      "eventId": "2012-alexnet",
-      "variant": "deep-learning",
-      "order": 10,
-      "enabled": true
+    "subtitle": {
+        "zh": "从感知机、反向传播、卷积网络到 Transformer 和复杂决策系统的技术演进。",
+        "en": "The technical evolution from perceptrons, backpropagation, and convolutional networks to Transformers and complex decision systems."
     },
-    {
-      "eventId": "1957-perceptron",
-      "variant": "deep-learning",
-      "order": 20,
-      "enabled": true
+    "type": "timeline",
+    "description": {
+        "zh": "深度学习分支强调神经网络、表示学习、规模化训练和模型架构如何逐步改变 AI 能力边界。",
+        "en": "The deep-learning storyline emphasizes how neural networks, representation learning, scaled training, and model architectures expanded the boundary of AI capabilities."
     },
-    {
-      "eventId": "2017-transformer",
-      "variant": "deep-learning",
-      "order": 20,
-      "enabled": true
-    },
-    {
-      "eventId": "1969-ai-winter",
-      "variant": "deep-learning",
-      "order": 30,
-      "enabled": true
-    },
-    {
-      "eventId": "1986-backpropagation",
-      "variant": "deep-learning",
-      "order": 40,
-      "enabled": true
-    },
-    {
-      "eventId": "1986-rnn",
-      "variant": "deep-learning",
-      "order": 50,
-      "enabled": true
-    },
-    {
-      "eventId": "1989-cnn",
-      "variant": "deep-learning",
-      "order": 60,
-      "enabled": true
-    },
-    {
-      "eventId": "1997-lstm",
-      "variant": "deep-learning",
-      "order": 70,
-      "enabled": true
-    },
-    {
-      "eventId": "2014-highway-network",
-      "variant": "deep-learning",
-      "order": 90,
-      "enabled": true
-    },
-    {
-      "eventId": "2014-gan",
-      "variant": "deep-learning",
-      "order": 100,
-      "enabled": true
-    },
-    {
-      "eventId": "2014-attention",
-      "variant": "deep-learning",
-      "order": 110,
-      "enabled": true
-    },
-    {
-      "eventId": "2015-resnet",
-      "variant": "deep-learning",
-      "order": 120,
-      "enabled": true
-    },
-    {
-      "eventId": "2016-densenet",
-      "variant": "deep-learning",
-      "order": 130,
-      "enabled": true
-    },
-    {
-      "eventId": "2018-bert",
-      "variant": "deep-learning",
-      "order": 150,
-      "enabled": true
-    },
-    {
-      "eventId": "2018-gpt",
-      "variant": "deep-learning",
-      "order": 160,
-      "enabled": true
-    },
-    {
-      "eventId": "2019-ai-feynman",
-      "variant": "deep-learning",
-      "order": 170,
-      "enabled": true
-    },
-    {
-      "eventId": "2020-alphafold",
-      "variant": "deep-learning",
-      "order": 180,
-      "enabled": true
-    },
-    {
-      "eventId": "2023-agents",
-      "variant": "deep-learning",
-      "order": 190,
-      "enabled": true
-    },
-    {
-      "eventId": "2024-ai-scientist",
-      "variant": "deep-learning",
-      "order": 200,
-      "enabled": true
-    },
-    {
-      "eventId": "2025-llm-competition",
-      "variant": "deep-learning",
-      "order": 210,
-      "enabled": true
-    },
-    {
-      "eventId": "2016-alphago",
-      "variant": "deep-learning",
-      "order": 30,
-      "enabled": false,
-      "notes": {
-        "zh": "AlphaGo 在 legacy 中没有独立的深度学习 milestone；迁移期先不生成 archive preview，避免出现无 legacy 对照的展示条目。",
-        "en": "AlphaGo has no standalone deep-learning legacy milestone; keep this reference disabled during migration to avoid a preview without a legacy comparison."
-      }
+    "events": [
+        {
+            "eventId": "1956-dartmouth",
+            "variant": "deep-learning",
+            "order": 10,
+            "enabled": true,
+            "milestoneId": "milestone-1956-dartmouth"
+        },
+        {
+            "eventId": "2012-alexnet",
+            "variant": "deep-learning",
+            "order": 10,
+            "enabled": true,
+            "milestoneId": "milestone-2012-alexnet"
+        },
+        {
+            "eventId": "1957-perceptron",
+            "variant": "deep-learning",
+            "order": 20,
+            "enabled": true,
+            "milestoneId": "milestone-1957-perceptron"
+        },
+        {
+            "eventId": "2017-transformer",
+            "variant": "deep-learning",
+            "order": 20,
+            "enabled": true,
+            "milestoneId": "milestone-2017-transformer"
+        },
+        {
+            "eventId": "1969-ai-winter",
+            "variant": "deep-learning",
+            "order": 30,
+            "enabled": true,
+            "milestoneId": "milestone-1969-ai-winter"
+        },
+        {
+            "eventId": "1986-backpropagation",
+            "variant": "deep-learning",
+            "order": 40,
+            "enabled": true,
+            "milestoneId": "milestone-1986-backpropagation"
+        },
+        {
+            "eventId": "1986-rnn",
+            "variant": "deep-learning",
+            "order": 50,
+            "enabled": true,
+            "milestoneId": "milestone-1986-rnn"
+        },
+        {
+            "eventId": "1989-cnn",
+            "variant": "deep-learning",
+            "order": 60,
+            "enabled": true,
+            "milestoneId": "milestone-1989-cnn"
+        },
+        {
+            "eventId": "1997-lstm",
+            "variant": "deep-learning",
+            "order": 70,
+            "enabled": true,
+            "milestoneId": "milestone-1997-lstm"
+        },
+        {
+            "eventId": "2014-highway-network",
+            "variant": "deep-learning",
+            "order": 90,
+            "enabled": true,
+            "milestoneId": "milestone-2014-highway-network"
+        },
+        {
+            "eventId": "2014-gan",
+            "variant": "deep-learning",
+            "order": 100,
+            "enabled": true,
+            "milestoneId": "milestone-2014-gan"
+        },
+        {
+            "eventId": "2014-attention",
+            "variant": "deep-learning",
+            "order": 110,
+            "enabled": true,
+            "milestoneId": "milestone-2014-attention"
+        },
+        {
+            "eventId": "2015-resnet",
+            "variant": "deep-learning",
+            "order": 120,
+            "enabled": true,
+            "milestoneId": "milestone-2015-resnet"
+        },
+        {
+            "eventId": "2016-densenet",
+            "variant": "deep-learning",
+            "order": 130,
+            "enabled": true,
+            "milestoneId": "milestone-2016-densenet"
+        },
+        {
+            "eventId": "2018-bert",
+            "variant": "deep-learning",
+            "order": 150,
+            "enabled": true,
+            "milestoneId": "milestone-2018-bert"
+        },
+        {
+            "eventId": "2018-gpt",
+            "variant": "deep-learning",
+            "order": 160,
+            "enabled": true,
+            "milestoneId": "milestone-2018-gpt"
+        },
+        {
+            "eventId": "2019-ai-feynman",
+            "variant": "deep-learning",
+            "order": 170,
+            "enabled": true,
+            "milestoneId": "milestone-2019-ai-feynman"
+        },
+        {
+            "eventId": "2020-alphafold",
+            "variant": "deep-learning",
+            "order": 180,
+            "enabled": true,
+            "milestoneId": "milestone-2020-alphafold"
+        },
+        {
+            "eventId": "2023-agents",
+            "variant": "deep-learning",
+            "order": 190,
+            "enabled": true,
+            "milestoneId": "milestone-2023-agents"
+        },
+        {
+            "eventId": "2024-ai-scientist",
+            "variant": "deep-learning",
+            "order": 200,
+            "enabled": true,
+            "milestoneId": "milestone-2024-ai-scientist"
+        },
+        {
+            "eventId": "2025-llm-competition",
+            "variant": "deep-learning",
+            "order": 210,
+            "enabled": true,
+            "milestoneId": "milestone-2025-llm-competition"
+        },
+        {
+            "eventId": "2016-alphago",
+            "variant": "deep-learning",
+            "order": 30,
+            "enabled": false,
+            "notes": {
+                "zh": "AlphaGo 在 legacy 中没有独立的深度学习 milestone；迁移期先不生成 archive preview，避免出现无 legacy 对照的展示条目。",
+                "en": "AlphaGo has no standalone deep-learning legacy milestone; keep this reference disabled during migration to avoid a preview without a legacy comparison."
+            }
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "Step 2 初版，仅引用 Step 3 计划迁移的样例事件。",
+            "en": "Step 2 draft that only references the sample events planned for Step 3."
+        }
     }
-  ],
-  "review": {
-    "status": "draft",
-    "notes": {
-      "zh": "Step 2 初版，仅引用 Step 3 计划迁移的样例事件。",
-      "en": "Step 2 draft that only references the sample events planned for Step 3."
-    }
-  }
 }

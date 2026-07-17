@@ -8,7 +8,7 @@ const { spawnSync } = require('node:child_process');
 const { buildArchivePreview } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUTPUT_DIR = path.join(ROOT, 'reports', 'archive-parity', 'data');
+const OUTPUT_DIR = path.join(ROOT, '.tmp', 'archive-parity', 'data');
 const LEGACY_OUTPUT = path.join(OUTPUT_DIR, 'milestones-data-legacy.js');
 const ARCHIVE_OUTPUT = path.join(OUTPUT_DIR, 'milestones-data-archive.js');
 const MANIFEST_OUTPUT = path.join(OUTPUT_DIR, 'manifest.json');

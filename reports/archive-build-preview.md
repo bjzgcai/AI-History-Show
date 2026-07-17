@@ -1,13 +1,13 @@
 # Archive Build Preview
 
-Generated: 2026-07-10T08:44:29.569Z
+Generated: 2026-07-17T08:58:10.980Z
 
 This is a preview-only build from `archive/`. It does not replace `milestones-data.js`.
 
 ## Summary
 
-- Storylines: 3
-- Milestone previews: 134
+- Storylines: 4
+- Milestone previews: 146
 - Errors: 0
 
 ## Milestones
@@ -146,6 +146,18 @@ This is a preview-only build from `archive/`. It does not replace `milestones-da
 - `2019-pluribus` / `gaming-ai` / `gaming-ai` — 2019
 - `2019-suphx` / `gaming-ai` / `gaming-ai` — 2019-2020
 - `2019-muzero` / `gaming-ai` / `gaming-ai` — 2019-2020
+- `1920-rur-robots` / `humanistic-cycle` / `humanistic-cycle` — 1920
+- `1942-asimov-runaround` / `humanistic-cycle` / `humanistic-cycle` — 1942
+- `1950-wiener-human-use` / `humanistic-cycle` / `humanistic-cycle` — 1950
+- `1965-simon-ai-prediction` / `humanistic-cycle` / `humanistic-cycle` — 1965
+- `1968-hal-9000` / `humanistic-cycle` / `humanistic-cycle` — 1968
+- `1973-lighthill-report` / `humanistic-cycle` / `humanistic-cycle` — 1973
+- `1978-xiaolingtong` / `humanistic-cycle` / `humanistic-cycle` — 1978
+- `1984-neuromancer` / `humanistic-cycle` / `humanistic-cycle` — 1984
+- `1987-lisp-machine-collapse` / `humanistic-cycle` / `humanistic-cycle` — 1987
+- `2014-ai-existential-warnings` / `humanistic-cycle` / `humanistic-cycle` — 2014
+- `2015-openai-founding` / `humanistic-cycle` / `humanistic-cycle` — 2015
+- `2023-ai-risk-statement` / `humanistic-cycle` / `humanistic-cycle` — 2023
 
 ## Errors
 

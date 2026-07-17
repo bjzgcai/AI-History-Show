@@ -12,7 +12,7 @@ This directory supports the AI History Museum / AI Top 100 Achievements research
 
 ## Website Achievement Schema
 
-AI100 pages must support the exhibition layout used by the website. Future achievements should be prepared with all of these fields before being added to `manage/events.js`:
+AI100 pages must support the exhibition layout used by the website. Future achievements should be prepared with all of these fields before being added to `archive/events/<event-id>/` and the `bench-council-ai100` storyline:
 
 - Top visual row:
   - `images[0]` is the scientist/person/team/institution image, preferably a portrait.
@@ -30,7 +30,7 @@ AI100 pages must support the exhibition layout used by the website. Future achie
   - Include the primary paper/source plus relevant background, project, people, institution, code, image-source, publication, or retrospective links.
   - Every source needs real bilingual `type` and `label` text plus a URL.
 - Quiz:
-  - Every added AI100 achievement needs a matching quiz in `manage/quizzes.js`.
+  - Every added AI100 achievement needs a matching quiz in the event's `archive/events/<event-id>/quizzes.json`, selected by its variant.
   - Use the older checkpoint layout: related material on the left, easy quick challenge on the right, 4 options.
   - Questions should be understandable for general visitors.
   - Answer order is randomized by the frontend, so source options can stay in a clear authoring order.
@@ -40,7 +40,7 @@ AI100 pages must support the exhibition layout used by the website. Future achie
   - Chinese pages must display Chinese and English pages must display English.
   - Do not copy English into Chinese fields except for proper names, acronyms, or model names.
 - Verification:
-  - Regenerate with `node manage/generate.js`.
+  - Validate and regenerate with `npm run validate:archive` and `npm run generate`.
   - Run `npm run lint` and `npm test`; run `npm run validate:startup` when page loading/startup may be affected.
 
 Regenerate the list:

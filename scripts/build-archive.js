@@ -6,7 +6,7 @@ const path = require('node:path');
 const { buildArchivePreview } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUTPUT_PATH = path.join(ROOT, 'reports', 'archive-build-preview.json');
+const OUTPUT_PATH = path.join(ROOT, '.tmp', 'archive-build', 'archive-build-preview.json');
 const SUMMARY_PATH = path.join(ROOT, 'reports', 'archive-build-preview.md');
 
 function writeSummary(output) {

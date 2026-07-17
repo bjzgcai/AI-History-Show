@@ -1,10 +1,11 @@
 # Legacy 历史数据文件盘点
 
+> **当前状态（2026-07-17）**：Archive JSON 已成为生产权威。默认 `npm run generate` 只编译 `archive/storylines/*.json` 与 `archive/events/*`；正式 compiler 不再读取 `manage/events.js`、`manage/catalog.js` 或 `manage/event-fusions.js`。本文后续“正式展陈仍从 Legacy 生成”等段落记录的是迁移阶段历史，不再是当前操作指南。保留的 Legacy 文件仅用于显式 `npm run generate:legacy`、rollback、comparison、migration 和 parity。重型 preview/parity/review 产物写入 `.tmp/archive-*`，正式页面也不再支持 `?archivePreview=1` 数据旁路。
 本文档用于记录 archive 迁移之后，旧版历史数据文件（legacy data files）当前还承担哪些职责，以及后续应如何逐步收口到文件化 `archive/` 模型中。
 
 ## 当前状态
 
-项目已经建立了结构化 archive 层，但正式展陈数据目前仍然先从 legacy JavaScript 数据文件生成，然后再叠加 archive metadata。默认策略仍然是保留 legacy 展示内容，避免迁移过程中改变用户可见的标题、描述、图片、来源、quiz 和 visual module。
+迁移阶段曾先从 Legacy JavaScript 生成正式展陈数据，再叠加 Archive metadata，以避免 title、description、images、sources、quiz 和 visual module 在迁移过程中发生非预期变化。该阶段已经结束；当前默认 generator 直接从 Archive 生成正式数据。
 
 当前正式生成链路仍是：
 
@@ -120,7 +121,7 @@ resources/research-candidates.js
 
 ## 整理规则
 
-1. 不手动编辑生成文件，例如 `milestones-data.js`、`milestones-data-default.js`、`milestones-data-archive-preview.js`；需要通过脚本重新生成。
+1. 不手动编辑生成文件，例如 `milestones-data.js`、`milestones-data-default.js` 和 `.tmp/archive-*` 下的 preview/review 产物；需要通过脚本重新生成。
 2. 在 `manage/generate.js` 仍依赖 legacy 文件时，不删除 legacy 数据文件。
 3. 不在没有版权/授权核验的情况下，把外链图片或视频下载到本地 `resources/`。
 4. 继续把 `resources/` 视为 append-only，除非用户明确要求清理或删除。
@@ -212,7 +213,7 @@ manage/gaming-extra-events.js
 在不影响正式展陈的前提下，先做 archive-native generation preview：
 
 ```text
-archive -> milestones-data-archive-preview.js
+archive -> .tmp/archive-preview/milestones-data-archive-preview.js
 ```
 
 持续用：

@@ -1,6 +1,12 @@
 # AI History Archive
 
-This directory is the source archive for AI history events, sources, claims, assets, quizzes, and storyline variants.
+## Current production boundary (2026-07-17)
+
+Archive JSON is the production authority. `npm run generate` compiles `archive/storylines/*.json` and `archive/events/*` directly; milestone identities are owned by storyline refs, and the production compiler does not read Legacy event, catalog, or fusion metadata.
+
+The official pages no longer support an Archive preview query switch. Explicit preview, native, parity, and review commands remain offline comparison tools and write their heavy JS/JSON/HTML working files under ignored `.tmp/archive-*` directories. Pages and Docker publish only `.tmp/static-site`.
+
+Use `/archive-admin` to edit both event bundles and existing storylines, then validate and regenerate. `/admin` and `npm run generate:legacy` are retained only for read-only reference, rollback, comparison, and migration.
 
 The archive is now the default generated-display authority. Every current display target is represented by an archive event or canonical event variant; the legacy-compatible generator is retained temporarily for comparison and rollback.
 
@@ -41,12 +47,12 @@ Do not edit generated display data by hand:
 ```text
 milestones-data.js
 milestones-data-default.js
-archive-review.html
+.tmp/archive-*/**
 reports/archive-*.md
 reports/archive-*.json
 ```
 
-After archive or legacy source edits, regenerate and review with:
+Heavy rebuildable review data is written under `.tmp/archive-*` and is not tracked. Retained Markdown reports summarize long-lived audit conclusions. After Archive source edits, validate and regenerate with:
 
 ```bash
 npm run validate:archive
@@ -124,33 +130,18 @@ A variant may set:
 
 only when changing the generated presentation is intentional. `npm run diff:archive` treats unintentional presentation changes as failures.
 
-## Archive preview of direct presentation takeover
+## Offline Archive presentation comparison
 
-For local review, the project can generate a separate forced archive presentation data file:
+For explicit local comparison, generate separate data under `.tmp/archive-preview/`:
 
 ```bash
 npm run preview:archive-data
 npm run diff:archive-preview
+npm run generate:archive-native-preview
+npm run diff:archive-native
 ```
 
-This writes:
-
-```text
-milestones-data-archive-preview.js
-reports/archive-preview-main-diff.md
-reports/archive-preview-main-diff.json
-```
-
-and can be viewed with:
-
-```text
-/index.html?archivePreview=1
-archive-preview-compare.html
-```
-
-This preview is intentionally separate from normal generation. It answers “what would the main exhibit look like if archive presentation data directly drove it?” while normal generation still answers “did archive metadata preserve the existing exhibit?”
-
-Earlier preview mismatches came from three causes: remote legacy AI100 images were not represented as archive assets, some curated variants had incomplete `assetIds` / `sourceIds`, and a few variants intentionally rewrote title/description/visual fields. Current cleanup restored display-critical parity: no image/source/commentary/quiz decreases and no title/subtitle/description/image/visual/analysis differences. See `reports/archive-preview-display-consistency.md`.
+These commands do not alter the data source selected by `index.html` or `dual-screen.html`. Use the generated files with dedicated local analysis tooling; `?archivePreview=1` is intentionally ignored by official pages.
 
 ## Storyline refs
 
@@ -216,5 +207,5 @@ The structural archive migration is complete for current display targets. Remain
 - Review batch-generated claims and `needs-source` entries.
 - Improve primary/secondary source quality for AI100 events.
 - Review asset rights and duplicate resource usage.
-- Upgrade `/archive-admin` from a JSON editor to structured entity forms.
-- Gradually retire `manage/event-fusions.js` and other legacy source responsibilities once archive-native generation can safely replace them.
+- Continue structured-form improvements for `/archive-admin` beyond its current event/storyline JSON editing workflow.
+- Gradually retire retained Legacy source responsibilities after the rollback/comparison period; production compilation is already independent of `manage/event-fusions.js`.

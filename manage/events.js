@@ -1,10 +1,6 @@
-// 文件B: 核心事件内容配置（由管理页面生成）
-// 修改此文件后运行 `node manage/generate.js` 重新生成 milestones-data.js
-//
-// Archive migration note:
-// This remains the legacy compatibility source for the normal exhibit build.
-// Long-term canonical facts, provenance, assets, quizzes, and storyline variants
-// should be migrated into archive/events/* before this file is reduced or retired.
+// LEGACY — rollback/comparison/migration only.
+// Production event content lives in archive/events/* and is compiled by `npm run generate`.
+// This file is consumed only by explicit Legacy tooling such as `npm run generate:legacy`.
 
 /* eslint-disable */
 const ai100ExtraEvents = require('./ai100-extra-events.js');

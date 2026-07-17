@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
-const PREVIEW_DATA_PATH = path.join(ROOT, 'milestones-data-archive-preview.js');
+const PREVIEW_DATA_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-preview.js');
 const ARCHIVE_EVENTS_PATH = path.join(ROOT, 'archive', 'events');
 
 const QUOTE_FIELDS = ['quote', 'quoteText', 'quoteHtml', 'quoteMeta', 'quotePage', 'quoteAttribution', 'quoteLabel'];

@@ -7,7 +7,7 @@ const { buildArchivePreview } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const REPORT_PATH = path.join(ROOT, 'reports', 'archive-build-diff.md');
-const SNAPSHOT_PATH = path.join(ROOT, 'reports', 'archive-review-snapshot.json');
+const SNAPSHOT_PATH = path.join(ROOT, '.tmp', 'archive-review', 'archive-review-snapshot.json');
 const GENERATED_DATA = path.join(ROOT, 'milestones-data.js');
 
 function localize(value, locale) {
@@ -194,7 +194,7 @@ function writeMissingSnapshotReport(preview) {
         '',
         `Generated: ${new Date().toISOString()}`,
         '',
-        'Run `npm run generate` before `npm run diff:archive` so `reports/archive-review-snapshot.json` contains legacy and final snapshots.',
+        'Run `npm run generate:legacy` before `npm run diff:archive` so `.tmp/archive-review/archive-review-snapshot.json` contains legacy and final snapshots.',
         '',
         '## Summary',
         '',
@@ -211,7 +211,9 @@ function main() {
     const preview = buildArchivePreview(ROOT);
     if (!fs.existsSync(SNAPSHOT_PATH)) {
         writeMissingSnapshotReport(preview);
-        console.error('Archive diff requires reports/archive-review-snapshot.json. Run npm run generate first.');
+        console.error(
+            'Archive diff requires .tmp/archive-review/archive-review-snapshot.json. Run npm run generate:legacy first.'
+        );
         process.exitCode = 1;
         return;
     }

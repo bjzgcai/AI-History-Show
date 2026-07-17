@@ -41,8 +41,9 @@ PORT=3002 npm run start:admin
 `Dockerfile` 默认构建 Nginx 展示页镜像，对应下面“方案一：Nginx 云服务器”的部署流程：
 
 1. 使用 Node.js 生成 `milestones-data.js` 和 `milestones-data-default.js`。
-2. 将 `index.html`、`dual-screen.html`、`shared/`、`resources/` 和生成数据复制到 Nginx Web 根目录。
-3. 使用容器内的 Nginx 在 `8000` 端口提供静态展示页。
+2. 运行 `npm run build:static`，将页面、正式数据、`shared/`、`resources/` 和所需 `public/` 资源组装到 `.tmp/static-site/`。
+3. Docker presentation stage 与 GitHub Pages 都只发布这一个 allowlist 静态包。
+4. 使用容器内的 Nginx 在 `8000` 端口提供静态展示页。
 
 ```bash
 docker build -t ai-history-show .
@@ -78,7 +79,7 @@ docker compose --profile admin up --build
 Legacy 只读参考：http://localhost:3001/admin
 ```
 
-Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此 Archive 编辑器保存的 `archive/events/*` JSON 和随后通过 `npm run generate` 产生的运行时数据会同步写回本地工作区。Legacy `manage/events.js` / `manage/catalog.js` 不再是生产编辑目标。
+Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此 Archive 编辑器保存的 `archive/events/*` 与 `archive/storylines/*` JSON，以及随后通过 `npm run generate` 产生的运行时数据，会同步写回本地工作区。Legacy `manage/events.js` / `manage/catalog.js` 不再是生产编辑目标。
 
 > **安全提示**：`admin` 服务无认证保护，只能用于本机、内网或受保护环境。不要把 `3001` 直接暴露到公网。
 
@@ -117,11 +118,15 @@ docker compose config --quiet
 
 **第一步：上传文件到服务器**
 
-在本地执行，将项目文件同步到服务器（排除 .git，约 35MB）：
+在本地生成最小静态发布包，再只同步该目录（不上传 Archive 源、管理端、Legacy 数据和内部报告）：
 
 ```bash
 cd /path/to/AI-History-Show
-rsync -avz --exclude='.git' ./ root@你的服务器IP:/var/www/ai-history/
+npm ci
+npm run validate:archive
+npm run generate
+npm run build:static
+rsync -avz --delete .tmp/static-site/ root@你的服务器IP:/var/www/ai-history/
 ```
 
 **第二步：安装 Nginx**
@@ -191,7 +196,9 @@ sudo certbot --nginx -d your-domain.com
 每次内容有改动，重新 rsync 即可，无需重启 Nginx：
 
 ```bash
-rsync -avz --exclude='.git' ./ root@你的服务器IP:/var/www/ai-history/
+npm run generate
+npm run build:static
+rsync -avz --delete .tmp/static-site/ root@你的服务器IP:/var/www/ai-history/
 ```
 
 ---

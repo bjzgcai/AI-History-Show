@@ -28,12 +28,13 @@ jobs:
                   node-version: 22
                   cache: npm
 
-            - name: Generate Archive-authority data
+            - name: Generate and validate static site
               run: |
                   npm ci
                   npm run validate:archive
                   npm run generate
-                  npm test
+                  npm run quality
+                  npm run build:static
 
             - name: Setup Pages
               uses: actions/configure-pages@v5
@@ -41,7 +42,7 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: .
+                  path: .tmp/static-site
 
     deploy:
         environment:

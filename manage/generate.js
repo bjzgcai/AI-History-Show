@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-// 生成脚本：读取 catalog.js + events.js，输出 milestones-data.js / milestones-data-default.js
-// 用法：node manage/generate.js
-//
-// 无需安装任何依赖，直接运行即可。
+// LEGACY generator — rollback/comparison/migration only.
+// Production data is generated from Archive JSON with `npm run generate`.
+// Explicit use: `npm run generate:legacy` or parity tooling with --review-output.
 
 'use strict';
 
@@ -813,7 +812,7 @@ function validateAvatarAssets(items) {
 
 const archiveOverlayResult = applyArchiveOverlays(milestones, { root: ROOT });
 if (!REVIEW_MODE) {
-    const archiveReviewSnapshotPath = path.join(ROOT, 'reports', 'archive-review-snapshot.json');
+    const archiveReviewSnapshotPath = path.join(ROOT, '.tmp', 'archive-review', 'archive-review-snapshot.json');
     fs.mkdirSync(path.dirname(archiveReviewSnapshotPath), { recursive: true });
     fs.writeFileSync(
         archiveReviewSnapshotPath,

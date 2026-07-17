@@ -1,5 +1,6 @@
 # AI 历史档案架构重构方案
 
+> **当前状态（2026-07-17）**：本文主体保留架构设计与迁移阶段记录。现在 Archive 已是生产内容权威：默认 generator 直接读取 Archive，storyline refs 拥有稳定 `milestoneId`，production compiler 不读取 Legacy fusion metadata，正式 single/dual 页面也不再支持 `?archivePreview=1`。显式 preview/parity/review 工具仍可离线运行，但重型产物写入 `.tmp/archive-*`。当前操作请以 README、`archive/README.md` 和 CLAUDE.md 为准。
 本文档描述 AI-History-Show 从「展示数据驱动」升级为「文件化档案库 + 多分支展示生成」的架构方案。
 
 ## 背景
@@ -72,7 +73,7 @@ npm run preview:archive-data
 npm run diff:archive-preview
 ```
 
-该路径生成 `milestones-data-archive-preview.js`，并可用 `?archivePreview=1` 或 `archive-preview-compare.html` 进行左右视觉对比。它用于观察“如果 archive presentation 直接驱动主展陈会怎样”，不影响正式 `milestones-data.js`。此前预览不一致的主要原因是：AI100 legacy 使用大量外链图片但 archive assets 尚未记录、少数 curated variants 未选齐 asset/source、以及部分 variants 曾尝试改写标题/描述/visual。目前这些显示层差异已回归 legacy 信息；剩余 preview 差异仅为 sources/commentary/quizzes 的 archive 结构替换。
+该路径在当时生成根目录 preview 数据，并曾通过 `?archivePreview=1` 或独立 compare 页面进行左右视觉对比。这一做法现已退役：正式页面始终读取 production runtime data，显式 preview 工具改为输出到 `.tmp/archive-preview/`。下述差异分析仅保留为迁移历史。
 
 当前采用迁移期兼容策略：
 
@@ -1131,7 +1132,7 @@ archive/events/{eventId}/
    - 输出一个中间文件，例如：
 
      ```text
-     reports/archive-build-preview.json
+     .tmp/archive-build/archive-build-preview.json
      ```
 
 4. 初版不要立即替换现有 `milestones-data.js`，先生成 preview 对比。
@@ -1151,7 +1152,7 @@ archive/events/{eventId}/
 交付：
 
 - `npm run build:archive` 可执行。
-- 生成 `reports/archive-build-preview.json`。
+- 生成 `.tmp/archive-build/archive-build-preview.json`。
 - 三个样例事件可以从 archive 组装成展示预览数据。
 
 ### Step 6：接入兼容生成路径

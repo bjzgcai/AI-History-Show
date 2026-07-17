@@ -402,7 +402,7 @@ achievement: {
 
 ### Quiz / 浏览检查点
 
-每个新增 achievement 必须同步规划 quiz，并最终写入 `manage/quizzes.js`：
+每个新增 achievement 必须同步规划 quiz，并最终写入对应 `archive/events/<event-id>/quizzes.json`，再由该 storyline variant 的 `quizId` 选择：
 
 - 使用旧 achievement 的 checkpoint layout：
   - 左侧：相关材料，包括人物/团队/机构图片、论文、博客或项目来源。
@@ -444,7 +444,7 @@ achievement: {
 - `achievement.sources` 至少 3 条，推荐 4 条。
 - Quiz 已添加，4 选项，简单易懂，材料完整。
 - 所有可见文字都有真实英文和中文。
-- 已运行 `node manage/generate.js`，并检查生成后的页面数据。
+- 已运行 `npm run validate:archive` 与 `npm run generate`，并检查生成后的页面数据。
 
 # Video Clips
 

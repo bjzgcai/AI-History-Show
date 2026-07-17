@@ -1,11 +1,6 @@
-// Per-event asset selection for fused events.
-//
-// Archive migration note:
-// This is transition curation for legacy fused events. The long-term target is
-// variant assetIds ordering in archive/events/*/variants/*.json.
-//
-// Keep this file focused on images/media curation. The narrative fusion itself
-// lives in event-fusions.js.
+// LEGACY — rollback/comparison/migration only. Not consumed by production `npm run generate`.
+// Per-event asset selection for fused events in the explicit Legacy generator.
+// Production asset ordering lives in archive event variants.
 //
 // Edit `images` directly to control the final image order/content for each
 // fused event. Delete redundant URLs from the arrays below, then run:

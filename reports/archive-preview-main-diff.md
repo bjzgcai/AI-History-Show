@@ -10,14 +10,14 @@ The report separates display-critical differences from structured archive object
 
 ## Summary
 
-- Normal milestones: 134
-- Archive preview milestones: 134
-- Changed milestones: 1
+- Normal milestones: 146
+- Archive preview milestones: 146
+- Changed milestones: 0
 - Display-critical changed milestones: 0
 - Visible structured changed milestones: 0
 - Active visible structured changed milestones: 0
 - Accepted archive commentary differences: 0
-- Structured archive changed milestones: 1
+- Structured archive changed milestones: 0
 - Image decreases: 0
 - Image increases: 0
 - Source decreases: 0
@@ -26,11 +26,11 @@ The report separates display-critical differences from structured archive object
 - Commentary increases: 0
 - Quiz decreases: 0
 - Quiz increases: 0
-- Changed fields: quizzes: 1
+- Changed fields: none
 - Display-critical fields: none
 - Visible structured fields: none
 - Active visible structured fields: none
-- Structured archive fields: quizzes: 1
+- Structured archive fields: none
 
 ## Display-critical differences
 
@@ -73,17 +73,13 @@ None.
 
 ## Structured archive object differences
 
-These differences indicate archive objects replacing legacy objects while preserving counts. They are expected during archive migration if display-critical fields and decrease counts stay clean.
+None.
 
 ## Structured archive changed milestones
 
-### milestone-gaming-ai-2016-alphago — 2016-alphago/gaming-ai
-
-- Diffs: quizzes 1->1
+None.
 
 ## All changed milestones
 
-### milestone-gaming-ai-2016-alphago — 2016-alphago/gaming-ai
-
-- Diffs: quizzes 1->1
+None.
 

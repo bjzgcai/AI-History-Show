@@ -1,9 +1,7 @@
 'use strict';
 
-// Archive migration note:
-// This is a legacy compatibility bundle for the gaming-ai branch. Preserve it
-// while manage/generate.js still builds normal milestones from legacy events,
-// but migrate durable gaming facts, sources, media, and variants to archive/.
+// LEGACY — rollback/comparison/migration only. Not consumed by production `npm run generate`.
+// Durable gaming facts, sources, media, quizzes, and variants live under archive/.
 
 function t(en, zh) {
   return { en, zh };

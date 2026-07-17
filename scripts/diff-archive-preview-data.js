@@ -6,7 +6,7 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const NORMAL_DATA_PATH = path.join(ROOT, 'milestones-data.js');
-const PREVIEW_DATA_PATH = path.join(ROOT, 'milestones-data-archive-preview.js');
+const PREVIEW_DATA_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-preview.js');
 const REPORT_PATH = path.join(ROOT, 'reports', 'archive-preview-main-diff.md');
 const JSON_REPORT_PATH = path.join(ROOT, 'reports', 'archive-preview-main-diff.json');
 
@@ -66,10 +66,6 @@ function quizDisplaySignature(quiz) {
         answerIndex: typeof (quiz && quiz.answerIndex) === 'number' ? quiz.answerIndex : quiz && quiz.answer,
         explanation: localize(quiz && quiz.explanation)
     };
-}
-
-function compactSignature(value) {
-    return JSON.stringify(value);
 }
 
 function diffGroup(field) {
@@ -414,7 +410,8 @@ report.push(`- Commentary decreases: ${commentaryDecreases.length}`);
 report.push(`- Commentary increases: ${commentaryIncreases.length}`);
 report.push(`- Quiz decreases: ${quizDecreases.length}`);
 report.push(`- Quiz increases: ${quizIncreases.length}`);
-report.push(`- Changed fields: ${fieldCounts.map(([field, count]) => `${field}: ${count}`).join(', ')}`);
+const changedFieldSummary = fieldCounts.map(([field, count]) => `${field}: ${count}`).join(', ') || 'none';
+report.push(`- Changed fields: ${changedFieldSummary}`);
 report.push(
     `- Display-critical fields: ${displayCriticalFieldCounts.map(([field, count]) => `${field}: ${count}`).join(', ') || 'none'}`
 );
@@ -553,7 +550,7 @@ console.log(`Visible structured changed milestones: ${countRowsWithGroup(rows, '
 console.log(`Active visible structured changed milestones: ${activeVisibleStructuredRows.length}`);
 console.log(`Accepted archive commentary differences: ${acceptedArchiveCommentaryRows.length}`);
 console.log(`Structured archive changed milestones: ${countRowsWithGroup(rows, 'structuredArchive')}`);
-console.log(`Changed fields: ${fieldCounts.map(([field, count]) => `${field}:${count}`).join(', ')}`);
+console.log(`Changed fields: ${fieldCounts.map(([field, count]) => `${field}:${count}`).join(', ') || 'none'}`);
 console.log(
     `Display-critical fields: ${displayCriticalFieldCounts.map(([field, count]) => `${field}:${count}`).join(', ') || 'none'}`
 );
