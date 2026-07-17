@@ -4,6 +4,7 @@
 const assert = require('node:assert/strict');
 const { spawn } = require('node:child_process');
 const { once } = require('node:events');
+const { LEGACY_WRITE_ROUTES } = require('../manage/authority-boundary.js');
 
 const HOST = '127.0.0.1';
 
@@ -83,12 +84,26 @@ async function validateAdminServer() {
 
     try {
         const admin = await waitForHttp(`http://${HOST}:${port}/admin`);
-        assert.match(await admin.text(), /AI|admin|管理/i);
+        const adminHtml = await admin.text();
+        assert.match(adminHtml, /Legacy 内容查看（只读）/);
+        assert.doesNotMatch(adminHtml, /POST.*\/api\/(?:events|catalog|generate)/);
+
+        const archiveAdmin = await waitForHttp(`http://${HOST}:${port}/archive-admin`);
+        assert.match(await archiveAdmin.text(), /Archive Entity Editor/);
+
+        const archiveEvents = await waitForHttp(`http://${HOST}:${port}/api/archive/events`);
+        const archiveEventList = await archiveEvents.json();
+        assert.ok(Array.isArray(archiveEventList) && archiveEventList.length > 0);
+
+        const legacyWrite = await fetch(`http://${HOST}:${port}/api/generate`, { method: 'POST' });
+        assert.equal(legacyWrite.status, 403);
+        assert.match((await legacyWrite.json()).error, /Legacy admin is read-only/);
+        assert.ok(LEGACY_WRITE_ROUTES.has('POST /api/generate'));
 
         const resource = await waitForHttp(`http://${HOST}:${port}/resources/images/ui/brand.png`);
         assert.equal(resource.headers.get('content-type'), 'image/png');
 
-        console.log('PASS admin server startup validation');
+        console.log('PASS admin authority boundary startup validation');
     } finally {
         await stopProcess(child);
     }

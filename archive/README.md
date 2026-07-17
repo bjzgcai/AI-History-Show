@@ -2,7 +2,7 @@
 
 This directory is the source archive for AI history events, sources, claims, assets, quizzes, and storyline variants.
 
-The archive is introduced incrementally. Current generated display data still uses the legacy-compatible generation path, but every current display target is now represented by an archive event or canonical event variant.
+The archive is now the default generated-display authority. Every current display target is represented by an archive event or canonical event variant; the legacy-compatible generator is retained temporarily for comparison and rollback.
 
 ## Directory roles
 
@@ -168,9 +168,13 @@ Disabled refs are skipped by archive preview and overlay. Use this for archive v
 
 ## Legacy source boundary
 
-The default `npm run generate` path still uses the legacy management sources for compatibility. The opt-in `npm run generate:archive` path reads only archive storylines and event bundles, then writes the two runtime milestone files directly.
+The default `npm run generate` path now reads Archive storylines and event bundles and writes both runtime milestone files. The former compatible path remains available as:
 
-Legacy files remain active inputs for the compatible generator and for future archive content editing/migration:
+```bash
+npm run generate:legacy
+```
+
+The Legacy management page at `/admin` is read-only after the cutover. Use `/archive-admin` to edit and validate Archive JSON. Legacy files remain in the repository for comparison, rollback, and unfinished tooling migration:
 
 - `manage/events.js`
 - `manage/ai100-extra-events.js`
@@ -184,7 +188,7 @@ Legacy files remain active inputs for the compatible generator and for future ar
 - `resources/research-candidates.js`
 - `resources/videos/*.json`
 
-Do not delete them until the default generator and content-management workflows are explicitly switched to archive authority.
+Do not delete these files until the comparison period ends and remaining Archive compiler/Admin dependencies are removed.
 
 ## Archive-native generation
 
