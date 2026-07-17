@@ -5,6 +5,7 @@
   <rect x="64" y="64" width="832" height="512" rx="24" fill="#0f172a" stroke="#22c55e" stroke-width="3"/>
   <text x="96" y="122" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">AlphaZero self-play recipe</text>
   <text x="96" y="160" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="18">rules only -> games -> search targets -> policy-value network</text>
+  <g transform="translate(86 80) scale(0.82)">
   <g font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
     <circle cx="250" cy="318" r="82" fill="#1d4ed8"/><text x="250" y="307" fill="#fff" font-size="25">Rules</text><text x="250" y="338" fill="#dbeafe" font-size="16">Go / chess / shogi</text>
     <circle cx="480" cy="210" r="82" fill="#16a34a"/><text x="480" y="200" fill="#fff" font-size="25">Self-play</text><text x="480" y="230" fill="#dcfce7" font-size="16">new games</text>
@@ -22,6 +23,7 @@
     <path d="M644 264l31 18-31 16z"/>
     <path d="M577 411l-25 23 34 7z"/>
     <path d="M317 383l-32-15 30-19z"/>
+  </g>
   </g>
   <text x="96" y="548" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20">Interaction: step through one loop to see how search becomes training data.</text>
 </svg>
