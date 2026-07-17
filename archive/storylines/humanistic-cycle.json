@@ -1,0 +1,98 @@
+{
+    "id": "humanistic-cycle",
+    "title": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "subtitle": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "type": "branch-timeline",
+    "events": [
+        {
+            "eventId": "1920-rur-robots",
+            "variant": "humanistic-cycle",
+            "order": 10,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1920-rur-robots"
+        },
+        {
+            "eventId": "1942-asimov-runaround",
+            "variant": "humanistic-cycle",
+            "order": 20,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1942-asimov-runaround"
+        },
+        {
+            "eventId": "1950-wiener-human-use",
+            "variant": "humanistic-cycle",
+            "order": 30,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1950-wiener-human-use"
+        },
+        {
+            "eventId": "1965-simon-ai-prediction",
+            "variant": "humanistic-cycle",
+            "order": 40,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1965-simon-ai-prediction"
+        },
+        {
+            "eventId": "1968-hal-9000",
+            "variant": "humanistic-cycle",
+            "order": 50,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1968-hal-9000"
+        },
+        {
+            "eventId": "1973-lighthill-report",
+            "variant": "humanistic-cycle",
+            "order": 60,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1973-lighthill-report"
+        },
+        {
+            "eventId": "1978-xiaolingtong",
+            "variant": "humanistic-cycle",
+            "order": 70,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1978-xiaolingtong"
+        },
+        {
+            "eventId": "1984-neuromancer",
+            "variant": "humanistic-cycle",
+            "order": 80,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1984-neuromancer"
+        },
+        {
+            "eventId": "1987-lisp-machine-collapse",
+            "variant": "humanistic-cycle",
+            "order": 90,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-1987-lisp-machine-collapse"
+        },
+        {
+            "eventId": "2014-ai-existential-warnings",
+            "variant": "humanistic-cycle",
+            "order": 100,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-2014-ai-existential-warnings"
+        },
+        {
+            "eventId": "2015-openai-founding",
+            "variant": "humanistic-cycle",
+            "order": 110,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-2015-openai-founding"
+        },
+        {
+            "eventId": "2023-ai-risk-statement",
+            "variant": "humanistic-cycle",
+            "order": 120,
+            "enabled": true,
+            "milestoneId": "milestone-humanistic-cycle-2023-ai-risk-statement"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-little-smart-publication-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "《小灵通漫游未来》出版概览",
+      "en": "Little Smart publication overview"
+    },
+    "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-ye-yonglie-biography",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物参考",
+      "en": "Biographical reference"
+    },
+    "title": {
+      "zh": "叶永烈人物资料",
+      "en": "Ye Yonglie biography"
+    },
+    "url": "https://zh.wikipedia.org/wiki/%E5%8F%B6%E6%B0%B8%E7%83%88",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-science-fiction-encyclopedia-ye-yonglie",
+    "type": "reference-only",
+    "label": {
+      "zh": "作者参考",
+      "en": "Author reference"
+    },
+    "title": {
+      "zh": "《科幻百科全书》叶永烈条目",
+      "en": "Science Fiction Encyclopedia: Ye Yonglie"
+    },
+    "url": "https://sf-encyclopedia.com/entry/ye_yonglie",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-chinese-science-fiction-context",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "中国科幻语境",
+      "en": "Chinese science-fiction context"
+    },
+    "url": "https://zh.wikipedia.org/wiki/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4%E5%88%97%E8%A1%A8",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

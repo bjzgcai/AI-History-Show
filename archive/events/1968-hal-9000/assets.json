@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-1968-hal-9000-conflict",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "HAL 职责冲突解释图",
+      "en": "HAL duty-conflict explainer"
+    },
+    "subcaption": {
+      "zh": "原创图；不复用电影图像",
+      "en": "Original diagram; no film imagery is reused"
+    },
+    "sourceId": "source-2001-film-overview",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

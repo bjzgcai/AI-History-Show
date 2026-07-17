@@ -1,0 +1,65 @@
+{
+  "id": "1984-neuromancer",
+  "year": 1984,
+  "date": "1984",
+  "title": {
+    "zh": "《神经漫游者》与赛博空间中的 AI 越界",
+    "en": "Neuromancer and AI Escape in Cyberspace"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。",
+    "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries."
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大",
+      "en": "Canada"
+    },
+    "place": {
+      "zh": "温哥华赛博朋克文学语境",
+      "en": "Vancouver cyberpunk literary scene"
+    },
+    "coordinates": [
+      49.2827,
+      -123.1207
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "william-gibson",
+      "name": {
+        "en": "William Gibson",
+        "zh": "威廉·吉布森"
+      },
+      "role": {
+        "en": "Author of Neuromancer",
+        "zh": "《神经漫游者》作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

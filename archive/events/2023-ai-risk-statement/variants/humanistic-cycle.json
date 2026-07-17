@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "2023-ai-risk-statement",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "AI 风险声明",
+        "en": "The Statement on AI Risk"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。",
+        "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Center for AI Safety",
+                "zh": "AI 安全中心"
+            },
+            "title": {
+                "en": "Statement on AI Risk",
+                "zh": "AI 风险声明"
+            },
+            "description": {
+                "en": "Official statement page used as the primary source for the 2023 risk node.",
+                "zh": "2023 年风险节点使用的官方声明页面。"
+            },
+            "url": "https://www.safe.ai/work/statement-on-ai-risk",
+            "source": "Center for AI Safety",
+            "license": {
+                "en": "Reference link only; page text and signatory portraits are not reused.",
+                "zh": "仅作为参考链接；不复用页面文字或签署者肖像。"
+            },
+            "usage": {
+                "en": "Primary statement source",
+                "zh": "原始声明来源"
+            },
+            "action": {
+                "en": "Open statement page",
+                "zh": "打开声明页面"
+            }
+        }
+    ],
+    "assetIds": ["asset-2023-ai-risk-statement-global-priority"],
+    "sourceIds": [
+        "source-official-statement-on-ai-risk",
+        "source-managing-extreme-ai-risks",
+        "source-statement-on-ai-risk-overview",
+        "source-center-for-ai-safety"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "这份声明出现在 2023 年生成式 AI 与前沿模型讨论快速升温期间。它的重要性在于把极端 AI 风险变成一个简洁的公共命题，而不只是长篇专业论证。",
+                "en": "The statement appeared during the rapid public rise of generative AI and frontier-model debate in 2023. Its importance lies in making extreme AI risk a concise public proposition rather than a long specialist argument."
+            },
+            "sourceIds": ["source-official-statement-on-ai-risk"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪机制是优先级压缩：一组复杂的技术、社会与政治关切被凝缩成单一高风险框架。这种压缩让声明有力量，也让它充满争议。",
+                "en": "The emotional mechanism is priority compression: a complex set of technical, social and political concerns is condensed into a single high-stakes risk frame. That compression made the statement powerful, but also controversial."
+            },
+            "sourceIds": ["source-official-statement-on-ai-risk"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把这份声明视为前沿 AI 安全话语的重要公共标记，即使他们对其框架存在分歧。它的遗产是把存在性风险、治理与技术安全放进同一公共讨论。",
+                "en": "Experts generally treat the statement as a major public marker of frontier-AI safety discourse, even when they disagree about its framing. Its legacy is to put existential risk, governance and technical safety into the same public conversation."
+            },
+            "sourceIds": ["source-official-statement-on-ai-risk"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "dread",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Global-priority framing",
+                "zh": "全球优先事项框架"
+            },
+            "term": {
+                "en": "AI extinction risk",
+                "zh": "AI 灭绝风险"
+            },
+            "modernTerm": {
+                "en": "Frontier AI safety, governance and catastrophic-risk mitigation",
+                "zh": "前沿 AI 安全、治理与灾难性风险缓解"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "AI 风险关切被压缩成一则全球优先事项声明，并获得研究界与公共领域签署。",
+        "en": "AI-risk concern became a compact global-priority statement signed across research and public life."
+    },
+    "analysis": {
+        "what": {
+            "en": "A short statement made extreme AI risk a globally framed public priority.",
+            "zh": "一则短声明把极端 AI 风险变成全球优先事项。"
+        },
+        "how": {
+            "en": "The statement used concise moral framing and prominent signatories to make the concern legible beyond technical communities.",
+            "zh": "声明通过简洁的道德框架和知名签署者，让关切超出技术共同体而被理解。"
+        },
+        "why": {
+            "en": "It completes the branch's arc by showing old machine anxieties returning in twenty-first-century governance language.",
+            "zh": "它完成了这条分支的弧线：旧有机器焦虑以二十一世纪治理语言重新出现。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Global AI-risk framing",
+            "zh": "全球 AI 风险框架"
+        },
+        "method": {
+            "en": "Consensus-style public statement",
+            "zh": "共识式公共声明"
+        },
+        "artifact": {
+            "en": "Statement on AI Risk",
+            "zh": "AI 风险声明"
+        },
+        "material": {
+            "en": "Official CAIS page and extreme-risk research",
+            "zh": "CAIS 官方页面与极端风险研究"
+        },
+        "demo": {
+            "en": "Old AI anxieties return as global-priority governance language",
+            "zh": "旧有 AI 焦虑以全球优先事项治理语言回归"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Center for AI Safety",
+                    "zh": "AI 安全中心"
+                },
+                "title": {
+                    "en": "Statement on AI Risk",
+                    "zh": "AI 风险声明"
+                },
+                "description": {
+                    "en": "Official statement page used as the primary source for the 2023 risk node.",
+                    "zh": "2023 年风险节点使用的官方声明页面。"
+                },
+                "url": "https://www.safe.ai/work/statement-on-ai-risk",
+                "source": "Center for AI Safety",
+                "license": {
+                    "en": "Reference link only; page text and signatory portraits are not reused.",
+                    "zh": "仅作为参考链接；不复用页面文字或签署者肖像。"
+                },
+                "usage": {
+                    "en": "Primary statement source",
+                    "zh": "原始声明来源"
+                },
+                "action": {
+                    "en": "Open statement page",
+                    "zh": "打开声明页面"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Official Statement on AI Risk",
+                    "zh": "AI 风险声明官方页面"
+                },
+                "type": {
+                    "en": "Official statement",
+                    "zh": "官方声明"
+                },
+                "url": "https://www.safe.ai/work/statement-on-ai-risk"
+            },
+            {
+                "label": {
+                    "en": "Managing extreme AI risks",
+                    "zh": "管理极端 AI 风险"
+                },
+                "type": {
+                    "en": "Research paper",
+                    "zh": "研究论文"
+                },
+                "url": "https://arxiv.org/abs/2310.17688"
+            },
+            {
+                "label": {
+                    "en": "Statement on AI Risk overview",
+                    "zh": "AI 风险声明概览"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Statement_on_AI_Risk"
+            },
+            {
+                "label": {
+                    "en": "Center for AI Safety",
+                    "zh": "AI 安全中心"
+                },
+                "type": {
+                    "en": "Institutional reference",
+                    "zh": "机构参考"
+                },
+                "url": "https://www.safe.ai/"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

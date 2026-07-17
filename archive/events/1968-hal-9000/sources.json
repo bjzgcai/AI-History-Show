@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-2001-film-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "《2001：太空漫游》影片概览",
+      "en": "2001 film overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-hal-9000-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "角色参考",
+      "en": "Character reference"
+    },
+    "title": {
+      "zh": "HAL 9000 概览",
+      "en": "HAL 9000 overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/HAL_9000",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-2001-novel-context",
+    "type": "reference-only",
+    "label": {
+      "zh": "小说参考",
+      "en": "Novel reference"
+    },
+    "title": {
+      "zh": "《2001》小说语境",
+      "en": "2001 novel context"
+    },
+    "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-technologies-in-2001",
+    "type": "reference-only",
+    "label": {
+      "zh": "技术参考",
+      "en": "Technology reference"
+    },
+    "title": {
+      "zh": "《2001》中的技术背景",
+      "en": "Technologies in 2001"
+    },
+    "url": "https://en.wikipedia.org/wiki/Technologies_in_2001:_A_Space_Odyssey",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

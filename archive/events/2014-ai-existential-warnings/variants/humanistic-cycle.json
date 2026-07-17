@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "2014-ai-existential-warnings",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "关于高级 AI 风险的公开警告",
+        "en": "Public Warnings About Advanced AI Risk"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。",
+        "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "BBC News",
+                "zh": "BBC 新闻"
+            },
+            "title": {
+                "en": "Hawking warning coverage",
+                "zh": "霍金警告报道"
+            },
+            "description": {
+                "en": "Contemporary mainstream coverage showing how advanced-AI risk entered public discussion.",
+                "zh": "当代主流媒体报道，用于展示高级 AI 风险如何进入公共讨论。"
+            },
+            "url": "https://www.bbc.com/news/technology-30290540",
+            "source": "BBC",
+            "license": {
+                "en": "Reference link only; article text and photos are not reused.",
+                "zh": "仅作为参考链接；不复用报道正文或图片。"
+            },
+            "usage": {
+                "en": "Public-discourse source",
+                "zh": "公共话语来源"
+            },
+            "action": {
+                "en": "Open BBC report",
+                "zh": "打开 BBC 报道"
+            }
+        }
+    ],
+    "assetIds": ["asset-2014-ai-existential-warnings-public-risk"],
+    "sourceIds": [
+        "source-guardian-on-musk-remarks",
+        "source-bbc-on-hawking-warning",
+        "source-future-of-life-institute-open-letter",
+        "source-expert-ai-forecast-survey"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "这些警告出现在机器学习、自主系统与大规模计算快速引发公共兴奋之后。它们的重要性在于把 AI 从进步故事转向也需要治理、克制与前瞻的故事。",
+                "en": "The warnings followed rapid public excitement around machine learning, autonomous systems and large-scale computing. They mattered because they shifted AI from a story of progress into a story that also demanded governance, restraint and foresight."
+            },
+            "sourceIds": ["source-guardian-on-musk-remarks"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪机制是规模恐慌：如果 AI 能力持续扩张，小的控制错误可能变成文明尺度风险。无论是否接受最强版本的主张，这种话语都改变了公众期待负责任 AI 行动者讨论的内容。",
+                "en": "The emotional mechanism is scale panic: if AI capabilities keep expanding, small control mistakes might become civilization-scale risks. Whether one accepts the strongest claims or not, the discourse changed what the public expected responsible AI actors to discuss."
+            },
+            "sourceIds": ["source-guardian-on-musk-remarks"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 2014-2015 年视为 AI 安全成为主流公共关切的时期。它的遗产是形成一种新期待：能力主张应同时伴随风险、治理与对齐问题。",
+                "en": "Experts generally treat the 2014-2015 period as a moment when AI safety became a mainstream public concern. Its legacy is a new expectation that capability claims should be accompanied by risk, governance and alignment questions."
+            },
+            "sourceIds": ["source-guardian-on-musk-remarks"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "dread",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Public-risk discourse",
+                "zh": "公共风险话语"
+            },
+            "term": {
+                "en": "Advanced AI as existential threat",
+                "zh": "高级 AI 作为存在性威胁"
+            },
+            "modernTerm": {
+                "en": "AI safety, governance and catastrophic-risk communication",
+                "zh": "AI 安全、治理与灾难性风险传播"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "高级 AI 风险进入主流媒体，把能力兴奋转化为存在性恐惧。",
+        "en": "Advanced-AI risk entered mainstream media, turning capability excitement into existential dread."
+    },
+    "analysis": {
+        "what": {
+            "en": "A safety concern moved from technical and philosophical circles into mass media.",
+            "zh": "一种安全担忧从技术与哲学圈层进入大众媒体。"
+        },
+        "how": {
+            "en": "Public figures translated uncertain long-term AI risk into memorable warnings that media could circulate.",
+            "zh": "公共人物把不确定的长期 AI 风险翻译成媒体容易传播的警示。"
+        },
+        "why": {
+            "en": "The event shows how emotional cycles can turn quickly when capability narratives meet control and survival narratives.",
+            "zh": "这个事件说明，当能力叙事遇到控制与生存叙事时，情绪周期会迅速转向。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Existential-risk discourse",
+            "zh": "存在性风险话语"
+        },
+        "method": {
+            "en": "Public warning through mass media",
+            "zh": "通过大众媒体发出公共警告"
+        },
+        "artifact": {
+            "en": "2014 Musk and Hawking media warnings",
+            "zh": "2014 年马斯克与霍金媒体警告"
+        },
+        "material": {
+            "en": "Guardian, BBC and FLI context",
+            "zh": "Guardian、BBC 与 FLI 语境资料"
+        },
+        "demo": {
+            "en": "Capability excitement is reframed as loss-of-control risk",
+            "zh": "能力兴奋被重新框定为失控风险"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "BBC News",
+                    "zh": "BBC 新闻"
+                },
+                "title": {
+                    "en": "Hawking warning coverage",
+                    "zh": "霍金警告报道"
+                },
+                "description": {
+                    "en": "Contemporary mainstream coverage showing how advanced-AI risk entered public discussion.",
+                    "zh": "当代主流媒体报道，用于展示高级 AI 风险如何进入公共讨论。"
+                },
+                "url": "https://www.bbc.com/news/technology-30290540",
+                "source": "BBC",
+                "license": {
+                    "en": "Reference link only; article text and photos are not reused.",
+                    "zh": "仅作为参考链接；不复用报道正文或图片。"
+                },
+                "usage": {
+                    "en": "Public-discourse source",
+                    "zh": "公共话语来源"
+                },
+                "action": {
+                    "en": "Open BBC report",
+                    "zh": "打开 BBC 报道"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Guardian on Musk remarks",
+                    "zh": "Guardian 马斯克言论报道"
+                },
+                "type": {
+                    "en": "News report",
+                    "zh": "新闻报道"
+                },
+                "url": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat"
+            },
+            {
+                "label": {
+                    "en": "BBC on Hawking warning",
+                    "zh": "BBC 霍金警告报道"
+                },
+                "type": {
+                    "en": "News report",
+                    "zh": "新闻报道"
+                },
+                "url": "https://www.bbc.com/news/technology-30290540"
+            },
+            {
+                "label": {
+                    "en": "Future of Life Institute open letter",
+                    "zh": "未来生命研究所公开信"
+                },
+                "type": {
+                    "en": "Public letter",
+                    "zh": "公开信"
+                },
+                "url": "https://futureoflife.org/open-letter/ai-open-letter/"
+            },
+            {
+                "label": {
+                    "en": "Expert AI forecast survey",
+                    "zh": "AI 专家预测调查"
+                },
+                "type": {
+                    "en": "Research paper",
+                    "zh": "研究论文"
+                },
+                "url": "https://arxiv.org/abs/1705.08807"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

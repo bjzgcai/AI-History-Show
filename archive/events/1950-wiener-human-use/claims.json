@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "Cybernetics turned automation into a moral question about control, feedback and human agency.",
+      "zh": "控制论把自动化变成控制、反馈与人类能动性的道德问题。"
+    },
+    "sourceIds": [
+      "source-open-library-book-metadata",
+      "source-open-library-metadata-search-result"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines.",
+      "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。"
+    },
+    "sourceIds": [
+      "source-open-library-book-metadata",
+      "source-open-library-metadata-search-result"
+    ],
+    "status": "needs-source"
+  }
+]

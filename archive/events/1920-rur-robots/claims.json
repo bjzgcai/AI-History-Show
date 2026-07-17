@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "Science fiction turned artificial labor into a public anxiety about work, obedience and creator responsibility.",
+      "zh": "科幻把“人工劳工”变成公共焦虑：机器不只是工具，也会改变劳动、服从与责任。"
+    },
+    "sourceIds": [
+      "source-project-gutenberg-r-u-r-text",
+      "source-1920-czech-edition-scan"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility.",
+      "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。"
+    },
+    "sourceIds": [
+      "source-project-gutenberg-r-u-r-text",
+      "source-1920-czech-edition-scan"
+    ],
+    "status": "needs-source"
+  }
+]

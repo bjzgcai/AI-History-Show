@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "1942-asimov-runaround",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "阿西莫夫在《转圈圈》中提出机器人三定律",
+        "en": "Asimov's Three Laws in Runaround"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。",
+        "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Internet Archive",
+                "zh": "Internet Archive"
+            },
+            "title": {
+                "en": "Astounding, March 1942",
+                "zh": "《惊奇科幻》1942 年 3 月号"
+            },
+            "description": {
+                "en": "Archive metadata for the magazine issue containing Runaround; local visual is an original rule-flow diagram.",
+                "zh": "收录《转圈圈》的杂志期号档案元数据；本地视觉为原创规则流程图。"
+            },
+            "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+            "source": "Internet Archive",
+            "license": {
+                "en": "Reference archive link only; story text and magazine art are not reused.",
+                "zh": "仅作为档案参考链接；不复用故事正文或杂志图像。"
+            },
+            "usage": {
+                "en": "Primary publication anchor",
+                "zh": "首发期号锚点"
+            },
+            "action": {
+                "en": "Open magazine archive",
+                "zh": "打开杂志档案"
+            }
+        }
+    ],
+    "assetIds": ["asset-1942-asimov-runaround-three-laws"],
+    "sourceIds": [
+        "source-astounding-march-1942-archive",
+        "source-asimov-online-three-laws-faq",
+        "source-runaround-story-overview",
+        "source-science-fiction-encyclopedia-asimov"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "《转圈圈》出现于战时科幻杂志文化中，当时机器人正逐渐成为工业与道德想象中的常见角色。它的重要性在于，故事把机器人安全写成规则、优先级与失效模式的问题，而不只是怪物叙事。",
+                "en": "Runaround appeared in a wartime science-fiction magazine culture where robots were becoming recurring industrial and moral figures. It matters because the story made robot safety a problem of rules, priorities and failure modes rather than only a monster narrative."
+            },
+            "sourceIds": ["source-astounding-march-1942-archive"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪转向是用伦理来约束机器：恐惧被一套设计出来的规则系统回应。但故事也显示规则会彼此冲突，因此焦虑并没有消失，而是留在了解决方案内部。",
+                "en": "The emotional move is containment through ethics: fear is answered by a designed rule system. Yet the story also shows that rules can collide, which keeps the anxiety alive inside the solution itself."
+            },
+            "sourceIds": ["source-astounding-march-1942-archive"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "科幻研究者通常把阿西莫夫的机器人故事视为虚构机器伦理的基础案例。AI 研究者并不把三定律当作工程解决方案，但这个文化模板仍然影响公众如何想象安全的人工行动者。",
+                "en": "Experts in science-fiction studies generally treat Asimov's robot stories as foundational examples of fictional machine ethics. AI researchers do not treat the Three Laws as an engineering solution, but the cultural template still shapes how publics imagine safe artificial agents."
+            },
+            "sourceIds": ["source-astounding-march-1942-archive"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "ethics",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Fictional rule system",
+                "zh": "科幻规则系统"
+            },
+            "term": {
+                "en": "Robot law hierarchy",
+                "zh": "机器人规则层级"
+            },
+            "modernTerm": {
+                "en": "AI alignment, constraint design and safety policy",
+                "zh": "AI 对齐、约束设计与安全策略"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "机器人科幻把机器恐惧改写成规则设计问题：人工行动者究竟应该被禁止做什么？",
+        "en": "Robot fiction reframed machine fear as a rule-design problem: what should artificial agents be forbidden to do?"
+    },
+    "analysis": {
+        "what": {
+            "en": "A magazine story made robot ethics legible as ranked constraints rather than as pure terror.",
+            "zh": "一篇杂志小说把机器人伦理变成了可理解的层级约束，而不只是单纯恐惧。"
+        },
+        "how": {
+            "en": "The story dramatizes conflicts between duties, safety and command-following, making rules feel operational.",
+            "zh": "故事把职责、安全与服从命令之间的冲突戏剧化，让规则看起来可以被机器执行。"
+        },
+        "why": {
+            "en": "Later AI alignment debates still revisit the same intuition: constraints can help, but conflicting goals create hard cases.",
+            "zh": "后来的 AI 对齐讨论仍会回到同一 intuition：约束有帮助，但目标冲突会制造困难案例。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Machine ethics",
+            "zh": "机器伦理"
+        },
+        "method": {
+            "en": "Rule hierarchy in fiction",
+            "zh": "科幻中的规则层级"
+        },
+        "artifact": {
+            "en": "Astounding Science Fiction, March 1942",
+            "zh": "1942 年 3 月《惊奇科幻》"
+        },
+        "material": {
+            "en": "Magazine archive and Asimov FAQ",
+            "zh": "杂志档案与阿西莫夫 FAQ"
+        },
+        "demo": {
+            "en": "Ethical rules become an imagined control layer for autonomous machines",
+            "zh": "伦理规则成为自主机器的想象控制层"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Internet Archive",
+                    "zh": "Internet Archive"
+                },
+                "title": {
+                    "en": "Astounding, March 1942",
+                    "zh": "《惊奇科幻》1942 年 3 月号"
+                },
+                "description": {
+                    "en": "Archive metadata for the magazine issue containing Runaround; local visual is an original rule-flow diagram.",
+                    "zh": "收录《转圈圈》的杂志期号档案元数据；本地视觉为原创规则流程图。"
+                },
+                "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+                "source": "Internet Archive",
+                "license": {
+                    "en": "Reference archive link only; story text and magazine art are not reused.",
+                    "zh": "仅作为档案参考链接；不复用故事正文或杂志图像。"
+                },
+                "usage": {
+                    "en": "Primary publication anchor",
+                    "zh": "首发期号锚点"
+                },
+                "action": {
+                    "en": "Open magazine archive",
+                    "zh": "打开杂志档案"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Astounding March 1942 archive",
+                    "zh": "《惊奇科幻》1942 年 3 月号档案"
+                },
+                "type": {
+                    "en": "Magazine archive",
+                    "zh": "杂志档案"
+                },
+                "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318"
+            },
+            {
+                "label": {
+                    "en": "Asimov Online Three Laws FAQ",
+                    "zh": "Asimov Online 三定律 FAQ"
+                },
+                "type": {
+                    "en": "Author FAQ",
+                    "zh": "作者资料 FAQ"
+                },
+                "url": "http://www.asimovonline.com/asimov_FAQ.html#non-literary12"
+            },
+            {
+                "label": {
+                    "en": "Runaround story overview",
+                    "zh": "《转圈圈》故事概览"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Runaround_(story)"
+            },
+            {
+                "label": {
+                    "en": "Science Fiction Encyclopedia: Asimov",
+                    "zh": "《科幻百科全书》阿西莫夫条目"
+                },
+                "type": {
+                    "en": "Author reference",
+                    "zh": "作者参考"
+                },
+                "url": "https://sf-encyclopedia.com/entry/asimov_isaac"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

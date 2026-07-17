@@ -7,6 +7,7 @@ const os = require('node:os');
 const path = require('node:path');
 
 const packageJson = require('../package.json');
+const { milestones } = require('../milestones-data.js');
 const { generateArchiveData, normalizeGeneratedTime, writeOutputsAtomically } = require('./generate-archive-data.js');
 
 function createTempDir() {
@@ -36,6 +37,41 @@ assert.equal(
     'the Legacy generator must require an explicit command'
 );
 console.log('PASS default generation authority');
+
+assert.equal(milestones.length, 146, 'Archive runtime should contain all four storylines and 146 milestones');
+const humanisticMilestones = milestones.filter(
+    (milestone) => milestone.storyline && milestone.storyline.id === 'humanistic-cycle'
+);
+assert.equal(humanisticMilestones.length, 12, 'Archive runtime should contain all 12 humanistic cycle events');
+assert.deepEqual(
+    humanisticMilestones.map((milestone) => milestone.id),
+    [
+        'milestone-humanistic-cycle-1920-rur-robots',
+        'milestone-humanistic-cycle-1942-asimov-runaround',
+        'milestone-humanistic-cycle-1950-wiener-human-use',
+        'milestone-humanistic-cycle-1965-simon-ai-prediction',
+        'milestone-humanistic-cycle-1968-hal-9000',
+        'milestone-humanistic-cycle-1973-lighthill-report',
+        'milestone-humanistic-cycle-1978-xiaolingtong',
+        'milestone-humanistic-cycle-1984-neuromancer',
+        'milestone-humanistic-cycle-1987-lisp-machine-collapse',
+        'milestone-humanistic-cycle-2014-ai-existential-warnings',
+        'milestone-humanistic-cycle-2015-openai-founding',
+        'milestone-humanistic-cycle-2023-ai-risk-statement'
+    ],
+    'humanistic cycle milestone identities and order must remain stable'
+);
+for (const milestone of humanisticMilestones) {
+    assert.equal(milestone.archiveVariantId, 'humanistic-cycle');
+    assert.equal(milestone.archivePresentationMode, 'archive');
+    assert.ok(milestone.sentiment, `${milestone.id} should preserve its sentiment`);
+    assert.ok(Array.isArray(milestone.realityLinks) && milestone.realityLinks.length > 0);
+    assert.ok(milestone.branchSummary && milestone.branchSummary.zh && milestone.branchSummary.en);
+    assert.ok(milestone.analysis && milestone.analysis.what && milestone.analysis.how && milestone.analysis.why);
+    assert.ok(milestone.resources && milestone.resources.images.length > 0);
+    assert.ok(milestone.achievement && milestone.achievement.sources.length >= 4);
+}
+console.log('PASS humanistic cycle Archive authority');
 
 {
     const tempDir = createTempDir();

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-ai-winter-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手史料",
+      "en": "Secondary history"
+    },
+    "title": {
+      "zh": "AI 寒冬概览",
+      "en": "AI winter overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/AI_winter",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-lisp-machine-history",
+    "type": "reference-only",
+    "label": {
+      "zh": "技术史",
+      "en": "Technology history"
+    },
+    "title": {
+      "zh": "Lisp 机历史",
+      "en": "Lisp machine history"
+    },
+    "url": "https://en.wikipedia.org/wiki/Lisp_machine",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-avoiding-another-ai-winter",
+    "type": "reference-only",
+    "label": {
+      "zh": "专家文章",
+      "en": "Expert article"
+    },
+    "title": {
+      "zh": "《避免另一场 AI 寒冬》",
+      "en": "Avoiding Another AI Winter"
+    },
+    "url": "https://doi.org/10.1109/MIS.2008.20",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-fifth-generation-project-context",
+    "type": "project-page",
+    "label": {
+      "zh": "二手史料",
+      "en": "Secondary history"
+    },
+    "title": {
+      "zh": "第五代计算机项目语境",
+      "en": "Fifth Generation project context"
+    },
+    "url": "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

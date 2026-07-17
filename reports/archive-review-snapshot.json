@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T02:10:25.608Z",
+  "generatedAt": "2026-07-17T06:23:01.831Z",
   "applied": [
     {
       "id": "milestone-ai100-2012-alexnet",
@@ -265671,6 +265671,40 @@
           "variantFile": "archive/events/1997-logistello/variants/gaming-ai.json",
           "presentationMode": "preserve-legacy"
         },
+        "papers": [
+          {
+            "title": {
+              "en": "Statistical Feature Combination for the Evaluation of Game Positions",
+              "zh": "用于棋局评估的统计特征组合"
+            },
+            "authors": {
+              "en": "Michael Buro",
+              "zh": "迈克尔·布罗"
+            },
+            "journal": {
+              "en": "Journal of Artificial Intelligence Research / arXiv",
+              "zh": "JAIR / arXiv"
+            },
+            "year": "1995",
+            "url": "resources/papers/1997-logistello-statistical-feature-combination.pdf"
+          },
+          {
+            "title": {
+              "en": "The Othello Match of the Year: Takeshi Murakami vs. Logistello",
+              "zh": "年度黑白棋对局：村上健对 Logistello"
+            },
+            "authors": {
+              "en": "Michael Buro",
+              "zh": "迈克尔·布罗"
+            },
+            "journal": {
+              "en": "ICCA Journal / NECI technical note",
+              "zh": "ICCA Journal / NECI 技术说明"
+            },
+            "year": "1997",
+            "url": "https://skatgame.net/mburo/event.html"
+          }
+        ],
         "photos": [],
         "videoUrl": "",
         "quote": {
@@ -270092,6 +270126,24 @@
           "variantFile": "archive/events/2000s-alphacat/variants/gaming-ai.json",
           "presentationMode": "preserve-legacy"
         },
+        "papers": [
+          {
+            "title": {
+              "en": "Comparison Training for Computer Chinese Chess",
+              "zh": "面向计算机中国象棋的比较训练"
+            },
+            "authors": {
+              "en": "Wen-Jie Tseng, Jr-Chang Chen, I-Chen Wu, Tinghan Wei",
+              "zh": "曾文杰、陈日章、吴毅成、魏廷翰"
+            },
+            "journal": {
+              "en": "arXiv / submitted to IEEE Transactions on Games",
+              "zh": "arXiv / 投稿至 IEEE Transactions on Games"
+            },
+            "year": "2018",
+            "url": "resources/papers/2000s-alphacat-comparison-training-chinese-chess.pdf"
+          }
+        ],
         "photos": [],
         "videoUrl": "",
         "quote": {
@@ -274652,6 +274704,40 @@
           "variantFile": "archive/events/2017-alphazero/variants/gaming-ai.json",
           "presentationMode": "preserve-legacy"
         },
+        "papers": [
+          {
+            "title": {
+              "en": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
+              "zh": "用通用强化学习算法通过自我博弈掌握国际象棋与将棋"
+            },
+            "authors": {
+              "en": "David Silver et al.",
+              "zh": "David Silver 等"
+            },
+            "journal": {
+              "en": "arXiv",
+              "zh": "arXiv"
+            },
+            "year": "2017",
+            "url": "resources/papers/2017-alphazero-self-play.pdf"
+          },
+          {
+            "title": {
+              "en": "A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play",
+              "zh": "通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法"
+            },
+            "authors": {
+              "en": "David Silver et al.",
+              "zh": "David Silver 等"
+            },
+            "journal": {
+              "en": "Science",
+              "zh": "Science"
+            },
+            "year": "2018",
+            "url": "https://www.science.org/doi/10.1126/science.aar6404"
+          }
+        ],
         "photos": [],
         "videoUrl": "",
         "quote": {
@@ -276915,6 +277001,24 @@
           "variantFile": "archive/events/2017-libratus/variants/gaming-ai.json",
           "presentationMode": "preserve-legacy"
         },
+        "papers": [
+          {
+            "title": {
+              "en": "Superhuman AI for heads-up no-limit poker: Libratus beats top professionals",
+              "zh": "一对一无限注扑克的超人 AI：Libratus 击败顶级职业牌手"
+            },
+            "authors": {
+              "en": "Noam Brown, Tuomas Sandholm",
+              "zh": "Noam Brown，Tuomas Sandholm"
+            },
+            "journal": {
+              "en": "Science",
+              "zh": "Science"
+            },
+            "year": "2017",
+            "url": "https://www.science.org/doi/10.1126/science.aao1733"
+          }
+        ],
         "photos": [],
         "videoUrl": "",
         "quote": {
@@ -279158,6 +279262,24 @@
           "variantFile": "archive/events/2019-pluribus/variants/gaming-ai.json",
           "presentationMode": "preserve-legacy"
         },
+        "papers": [
+          {
+            "title": {
+              "en": "Superhuman AI for multiplayer poker",
+              "zh": "面向多人扑克的超人 AI"
+            },
+            "authors": {
+              "en": "Noam Brown, Tuomas Sandholm",
+              "zh": "Noam Brown，Tuomas Sandholm"
+            },
+            "journal": {
+              "en": "Science",
+              "zh": "Science"
+            },
+            "year": "2019",
+            "url": "https://www.science.org/doi/10.1126/science.aay2400"
+          }
+        ],
         "photos": [],
         "videoUrl": "",
         "quote": {
@@ -281353,6 +281475,24 @@
           "variantFile": "archive/events/2019-suphx/variants/gaming-ai.json",
           "presentationMode": "preserve-legacy"
         },
+        "papers": [
+          {
+            "title": {
+              "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning",
+              "zh": "Suphx：用深度强化学习掌握麻将"
+            },
+            "authors": {
+              "en": "Junjie Li, Sotetsu Koyamada, Qiwei Ye, Guoqing Liu, Chao Wang, Ruihan Yang, Li Zhao, Tao Qin, Tie-Yan Liu, Hsiao-Wuen Hon",
+              "zh": "Junjie Li、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
+            },
+            "journal": {
+              "en": "arXiv",
+              "zh": "arXiv"
+            },
+            "year": "2020",
+            "url": "resources/papers/2019-suphx-mahjong-deep-rl.pdf"
+          }
+        ],
         "photos": [],
         "videoUrl": "",
         "quote": {
@@ -283624,6 +283764,40 @@
           "variantFile": "archive/events/2019-muzero/variants/gaming-ai.json",
           "presentationMode": "preserve-legacy"
         },
+        "papers": [
+          {
+            "title": {
+              "en": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+              "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+            },
+            "authors": {
+              "en": "Julian Schrittwieser et al.",
+              "zh": "Julian Schrittwieser 等"
+            },
+            "journal": {
+              "en": "Nature",
+              "zh": "Nature"
+            },
+            "year": "2020",
+            "url": "https://www.nature.com/articles/s41586-020-03051-4"
+          },
+          {
+            "title": {
+              "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+              "zh": "通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋"
+            },
+            "authors": {
+              "en": "Julian Schrittwieser et al.",
+              "zh": "Julian Schrittwieser 等"
+            },
+            "journal": {
+              "en": "arXiv",
+              "zh": "arXiv"
+            },
+            "year": "2019",
+            "url": "resources/papers/2019-muzero-learned-model.pdf"
+          }
+        ],
         "photos": [],
         "videoUrl": "",
         "quote": {

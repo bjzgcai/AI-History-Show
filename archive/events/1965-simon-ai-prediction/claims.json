@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high.",
+      "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。"
+    },
+    "sourceIds": [
+      "source-open-library-book-metadata",
+      "source-open-library-metadata-search-result"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations.",
+      "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。"
+    },
+    "sourceIds": [
+      "source-open-library-book-metadata",
+      "source-open-library-metadata-search-result"
+    ],
+    "status": "needs-source"
+  }
+]

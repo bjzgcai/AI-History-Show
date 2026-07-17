@@ -1,22 +1,25 @@
 # Archive Validation Report
 
-Generated: 2026-07-16T06:04:23.598Z
+Generated: 2026-07-17T06:40:15.481Z
 
 ## Summary
 
-- Events: 116
-- Storylines: 3
-- Variants: 135
-- Claims: 253
-- Sources: 373
-- Assets: 327
+- Events: 128
+- Storylines: 4
+- Variants: 147
+- Claims: 277
+- Sources: 422
+- Assets: 339
 - Quizzes: 118
 - Errors: 0
 - Warnings: 0
 
 ## Events
 
+- `1920-rur-robots` — variants: `humanistic-cycle`
+- `1942-asimov-runaround` — variants: `humanistic-cycle`
 - `1950-turing-test` — variants: `bench-council-ai100`
+- `1950-wiener-human-use` — variants: `humanistic-cycle`
 - `1951-strachey-draughts` — variants: `bench-council-ai100`, `gaming-ai`
 - `1956-dartmouth` — variants: `deep-learning`
 - `1956-logic-theorist` — variants: `bench-council-ai100`
@@ -28,22 +31,28 @@ Generated: 2026-07-16T06:04:23.598Z
 - `1960-davis-putnam-dpll` — variants: `bench-council-ai100`
 - `1965-dendral` — variants: `bench-council-ai100`
 - `1965-resolution-method` — variants: `bench-council-ai100`
+- `1965-simon-ai-prediction` — variants: `humanistic-cycle`
 - `1966-eliza` — variants: `bench-council-ai100`
+- `1968-hal-9000` — variants: `humanistic-cycle`
 - `1969-ai-winter` — variants: `deep-learning`
 - `1970-shrdlu` — variants: `bench-council-ai100`
 - `1971-complexity-theory` — variants: `bench-council-ai100`
 - `1971-vc-theory` — variants: `bench-council-ai100`
+- `1973-lighthill-report` — variants: `humanistic-cycle`
 - `1973-prolog` — variants: `bench-council-ai100`
 - `1974-frame` — variants: `bench-council-ai100`
 - `1975-genetic-algorithm` — variants: `bench-council-ai100`
+- `1978-xiaolingtong` — variants: `humanistic-cycle`
 - `1980-xcon-r1` — variants: `bench-council-ai100`
 - `1982-hopfield-network` — variants: `bench-council-ai100`
 - `1983-simulated-annealing` — variants: `bench-council-ai100`
 - `1984-cart` — variants: `bench-council-ai100`
 - `1984-cyc` — variants: `bench-council-ai100`
+- `1984-neuromancer` — variants: `humanistic-cycle`
 - `1985-bayesian-network` — variants: `bench-council-ai100`
 - `1986-backpropagation` — variants: `deep-learning`
 - `1986-rnn` — variants: `deep-learning`
+- `1987-lisp-machine-collapse` — variants: `humanistic-cycle`
 - `1988-td-update` — variants: `bench-council-ai100`, `gaming-ai`
 - `1989-cnn` — variants: `bench-council-ai100`, `deep-learning`
 - `1990-otter` — variants: `bench-council-ai100`
@@ -66,6 +75,7 @@ Generated: 2026-07-16T06:04:23.598Z
 - `2013-dqn` — variants: `bench-council-ai100`, `gaming-ai`
 - `2013-word2vec` — variants: `bench-council-ai100`
 - `2014-adam` — variants: `bench-council-ai100`
+- `2014-ai-existential-warnings` — variants: `humanistic-cycle`
 - `2014-attention` — variants: `bench-council-ai100`, `deep-learning`
 - `2014-dropout` — variants: `bench-council-ai100`
 - `2014-gan` — variants: `bench-council-ai100`, `deep-learning`
@@ -73,6 +83,7 @@ Generated: 2026-07-16T06:04:23.598Z
 - `2014-vgg` — variants: `bench-council-ai100`
 - `2015-faster-r-cnn` — variants: `bench-council-ai100`
 - `2015-googlenet-inception` — variants: `bench-council-ai100`
+- `2015-openai-founding` — variants: `humanistic-cycle`
 - `2015-resnet` — variants: `bench-council-ai100`, `deep-learning`
 - `2015-u-net` — variants: `bench-council-ai100`
 - `2016-alphago` — variants: `bench-council-ai100`, `deep-learning`, `gaming-ai`
@@ -89,6 +100,7 @@ Generated: 2026-07-16T06:04:23.598Z
 - `2019-suphx` — variants: `gaming-ai`
 - `2020-alphafold` — variants: `bench-council-ai100`, `deep-learning`
 - `2023-agents` — variants: `deep-learning`
+- `2023-ai-risk-statement` — variants: `humanistic-cycle`
 - `2024-ai-scientist` — variants: `deep-learning`
 - `2025-llm-competition` — variants: `deep-learning`
 - `ai100-1943-mcculloch-pitts-neuron` — variants: `bench-council-ai100`
@@ -138,6 +150,7 @@ Generated: 2026-07-16T06:04:23.598Z
 - `bench-council-ai100` — event refs: 100
 - `deep-learning` — event refs: 22
 - `gaming-ai` — event refs: 13
+- `humanistic-cycle` — event refs: 12
 
 ## Errors
 
@@ -476,4 +489,16 @@ None.
 - `resources/images/figures/kaiming-he.jpg` — 2015-resnet/asset-kaiming-he
 - `resources/images/figures/marvin-minsky.jpg` — ai100-1951-snarc/asset-marvin-minsky
 - `resources/images/figures/sepp-hochreiter.jpg` — 1997-lstm/asset-sepp-hochreiter
+- `resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg` — 1920-rur-robots/asset-1920-rur-robots-labor-revolt
+- `resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg` — 1942-asimov-runaround/asset-1942-asimov-runaround-three-laws
+- `resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg` — 1950-wiener-human-use/asset-1950-wiener-human-use-feedback-warning
+- `resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg` — 1965-simon-ai-prediction/asset-1965-simon-ai-prediction-hype-curve
+- `resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg` — 1968-hal-9000/asset-1968-hal-9000-conflict
+- `resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg` — 1973-lighthill-report/asset-1973-lighthill-report-winter-filter
+- `resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg` — 1978-xiaolingtong/asset-1978-xiaolingtong-future-city
+- `resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg` — 1984-neuromancer/asset-1984-neuromancer-ai-containment
+- `resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg` — 1987-lisp-machine-collapse/asset-1987-lisp-machine-collapse-market-shift
+- `resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg` — 2014-ai-existential-warnings/asset-2014-ai-existential-warnings-public-risk
+- `resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg` — 2015-openai-founding/asset-2015-openai-founding-broad-benefit
+- `resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg` — 2023-ai-risk-statement/asset-2023-ai-risk-statement-global-priority
 

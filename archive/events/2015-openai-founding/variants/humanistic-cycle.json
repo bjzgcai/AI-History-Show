@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "2015-openai-founding",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "OpenAI 宣告成立",
+        "en": "The Founding of OpenAI"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。",
+        "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Web Archive",
+                "zh": "互联网档案馆"
+            },
+            "title": {
+                "en": "Introducing OpenAI archived announcement",
+                "zh": "《Introducing OpenAI》归档公告"
+            },
+            "description": {
+                "en": "Archived official announcement from December 2015, used as the primary source for the founding node.",
+                "zh": "2015 年 12 月官方公告归档，用作成立节点的原始来源。"
+            },
+            "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+            "source": "Web Archive / OpenAI",
+            "license": {
+                "en": "Reference archive link only; article text and images are not reused.",
+                "zh": "仅作为归档参考链接；不复用文章正文或图片。"
+            },
+            "usage": {
+                "en": "Primary announcement source",
+                "zh": "原始公告来源"
+            },
+            "action": {
+                "en": "Open archived announcement",
+                "zh": "打开归档公告"
+            }
+        }
+    ],
+    "assetIds": ["asset-2015-openai-founding-broad-benefit"],
+    "sourceIds": [
+        "source-archived-openai-announcement",
+        "source-wired-contemporary-coverage",
+        "source-bbc-contemporary-coverage",
+        "source-openai-organization-overview"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "这一宣告出现在深度学习进展、公共风险警告和对 AI 能力集中担忧同时升温之后。它的重要性在于，AI 安全与广泛受益不再只是研究话题，也成为一个机构的创始身份。",
+                "en": "The announcement followed a period when deep learning progress, public-risk warnings and concern about concentrated AI power were all intensifying. It mattered because AI safety and broad benefit became part of an organization's founding identity rather than only a research topic."
+            },
+            "sourceIds": ["source-archived-openai-announcement"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪机制是建设性防御：如果强大 AI 可能危险或被集中控制，那么新机构或许能把它引向公共受益。这把焦虑转化为使命语言、资金策略与组织设计。",
+                "en": "The emotional mechanism is constructive defense: if powerful AI could be dangerous or concentrated, then a new institution might steer it toward public benefit. This turned anxiety into mission language, funding strategy and organizational design."
+            },
+            "sourceIds": ["source-archived-openai-announcement"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 OpenAI 的成立视为 2010 年代中期 AI 安全与广泛受益话语主流化的一部分。它的遗产很复杂，但在历史上标志着情绪关切变成机构基础设施。",
+                "en": "Experts generally treat OpenAI's founding as part of the mainstreaming of AI-safety and broad-benefit discourse in the mid-2010s. Its legacy is complicated, but historically it marks the point where emotional concern became institutional infrastructure."
+            },
+            "sourceIds": ["source-archived-openai-announcement"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "defense",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Defensive institution",
+                "zh": "防御性机构"
+            },
+            "term": {
+                "en": "Build AI for broad benefit",
+                "zh": "为广泛受益建设 AI"
+            },
+            "modernTerm": {
+                "en": "AI governance, lab missions and capability stewardship",
+                "zh": "AI 治理、实验室使命与能力托管"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "AI 安全关切转化为机构建设：广泛受益被写成研究使命。",
+        "en": "AI safety concern became institution-building: broad benefit was framed as a research mission."
+    },
+    "analysis": {
+        "what": {
+            "en": "The founding turned AI-risk discourse into an institutional plan for research and public benefit.",
+            "zh": "这次成立把 AI 风险话语转化为关于研究与公共受益的机构计划。"
+        },
+        "how": {
+            "en": "The announcement linked openness, collaboration and safety with the belief that powerful AI should not be controlled by a narrow set of actors.",
+            "zh": "成立宣言把开放、协作与安全联系起来，并强调强大 AI 不应被少数行动者狭窄控制。"
+        },
+        "why": {
+            "en": "It shows a defensive swing in the emotional cycle: dread can lead not only to critique, but also to new organizations.",
+            "zh": "它展示了情绪周期中的防御性摆动：恐惧不只会带来批评，也会催生新组织。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Defensive action",
+            "zh": "防御性行动"
+        },
+        "method": {
+            "en": "Institution-building around broad benefit",
+            "zh": "围绕广泛受益建设机构"
+        },
+        "artifact": {
+            "en": "OpenAI announcement",
+            "zh": "OpenAI 成立公告"
+        },
+        "material": {
+            "en": "Archived announcement and contemporary coverage",
+            "zh": "公告归档与同期报道"
+        },
+        "demo": {
+            "en": "Risk discourse becomes a research-lab mission",
+            "zh": "风险话语变成研究实验室使命"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Web Archive",
+                    "zh": "互联网档案馆"
+                },
+                "title": {
+                    "en": "Introducing OpenAI archived announcement",
+                    "zh": "《Introducing OpenAI》归档公告"
+                },
+                "description": {
+                    "en": "Archived official announcement from December 2015, used as the primary source for the founding node.",
+                    "zh": "2015 年 12 月官方公告归档，用作成立节点的原始来源。"
+                },
+                "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+                "source": "Web Archive / OpenAI",
+                "license": {
+                    "en": "Reference archive link only; article text and images are not reused.",
+                    "zh": "仅作为归档参考链接；不复用文章正文或图片。"
+                },
+                "usage": {
+                    "en": "Primary announcement source",
+                    "zh": "原始公告来源"
+                },
+                "action": {
+                    "en": "Open archived announcement",
+                    "zh": "打开归档公告"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Archived OpenAI announcement",
+                    "zh": "OpenAI 公告归档"
+                },
+                "type": {
+                    "en": "Archived announcement",
+                    "zh": "归档公告"
+                },
+                "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/"
+            },
+            {
+                "label": {
+                    "en": "Wired contemporary coverage",
+                    "zh": "Wired 同期报道"
+                },
+                "type": {
+                    "en": "News report",
+                    "zh": "新闻报道"
+                },
+                "url": "https://www.wired.com/2015/12/how-elon-musk-and-y-combinator-plan-to-stop-computers-from-taking-over/"
+            },
+            {
+                "label": {
+                    "en": "BBC contemporary coverage",
+                    "zh": "BBC 同期报道"
+                },
+                "type": {
+                    "en": "News report",
+                    "zh": "新闻报道"
+                },
+                "url": "https://www.bbc.com/news/technology-35082344"
+            },
+            {
+                "label": {
+                    "en": "OpenAI organization overview",
+                    "zh": "OpenAI 组织概览"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/OpenAI"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

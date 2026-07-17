@@ -4,6 +4,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const { legacyIdFor } = require('./archive-compiler.js');
+
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
@@ -376,6 +378,9 @@ function validateStorylines(eventIds) {
         .readdirSync(STORYLINES_DIR)
         .filter((file) => file.endsWith('.json'))
         .sort();
+    const milestoneIds = new Set();
+    const generatedMilestoneId = (storylineId, ref) =>
+        ref.milestoneId || legacyIdFor(storylineId, ref.eventId) || `archive-preview-${storylineId}-${ref.eventId}`;
     for (const fileName of storylineFiles) {
         const filePath = path.join(STORYLINES_DIR, fileName);
         const storyline = readJson(filePath);
@@ -405,6 +410,17 @@ function validateStorylines(eventIds) {
             const variantFile = path.join(EVENTS_DIR, ref.eventId, 'variants', `${ref.variant}.json`);
             if (!fs.existsSync(variantFile)) {
                 addError(filePath, `storyline references missing variant: ${ref.eventId}/variants/${ref.variant}.json`);
+            }
+            const milestoneId = generatedMilestoneId(storylineId, ref);
+            if (milestoneId.startsWith('archive-preview-')) {
+                continue;
+            }
+            if (!/^milestone-[a-z0-9][a-z0-9._-]*$/.test(milestoneId)) {
+                addError(filePath, `storyline event has invalid milestoneId: ${milestoneId}`);
+            } else if (ref.enabled !== false && milestoneIds.has(milestoneId)) {
+                addError(filePath, `enabled storyline event has duplicate milestoneId: ${milestoneId}`);
+            } else if (ref.enabled !== false) {
+                milestoneIds.add(milestoneId);
             }
             const key = `${ref.eventId}/${ref.variant}`;
             if (seenRefs.has(key)) addError(filePath, `storyline has duplicate event reference: ${key}`);
