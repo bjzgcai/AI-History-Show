@@ -8,6 +8,7 @@ const path = require('node:path');
 
 const packageJson = require('../package.json');
 const { milestones } = require('../milestones-data.js');
+const { compileArchive } = require('./archive-compiler.js');
 const { generateArchiveData, normalizeGeneratedTime, writeOutputsAtomically } = require('./generate-archive-data.js');
 
 function createTempDir() {
@@ -36,7 +37,34 @@ assert.equal(
     'node manage/generate.js',
     'the Legacy generator must require an explicit command'
 );
-console.log('PASS default generation authority');
+
+const compilerSource = fs.readFileSync(path.join(__dirname, 'archive-compiler.js'), 'utf8');
+for (const legacyInput of ['manage/event-fusions.js', 'manage/events.js', 'manage/catalog.js']) {
+    assert.equal(compilerSource.includes(legacyInput), false, `production compiler must not read ${legacyInput}`);
+}
+for (const storylineFile of fs.readdirSync(path.join(__dirname, '..', 'archive', 'storylines'))) {
+    if (!storylineFile.endsWith('.json')) continue;
+    const storyline = JSON.parse(
+        fs.readFileSync(path.join(__dirname, '..', 'archive', 'storylines', storylineFile), 'utf8')
+    );
+    for (const ref of storyline.events || []) {
+        if (ref.enabled === false) continue;
+        assert.match(ref.milestoneId, /^milestone-[a-z0-9][a-z0-9._-]*$/, `${storyline.id} ref must own its ID`);
+    }
+}
+console.log('PASS production compiler uses Archive-owned milestone identities');
+
+const compiledArchive = compileArchive(path.join(__dirname, '..'));
+assert.equal(compiledArchive.source, 'archive');
+assert.equal(compiledArchive.errors.length, 0);
+assert.equal(compiledArchive.milestones.length, 146);
+assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
+assert.deepEqual(
+    new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
+    compiledArchive.milestones.length,
+    'compiled Archive milestone IDs must be unique'
+);
+console.log('PASS production compiler emits Archive provenance');
 
 assert.equal(milestones.length, 146, 'Archive runtime should contain all four storylines and 146 milestones');
 const humanisticMilestones = milestones.filter(

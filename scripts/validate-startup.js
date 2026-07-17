@@ -67,6 +67,14 @@ async function validateStaticServer() {
         const dual = await waitForHttp(`http://${HOST}:${port}/dual-screen.html`);
         assert.match(await dual.text(), /dual|milestones/i);
 
+        const indexPreview = await waitForHttp(`http://${HOST}:${port}/?archivePreview=1`);
+        const indexPreviewHtml = await indexPreview.text();
+        assert.doesNotMatch(indexPreviewHtml, /milestones-data-archive-preview\.js/);
+        assert.match(indexPreviewHtml, /milestones-data\.js/);
+
+        const dualPreview = await waitForHttp(`http://${HOST}:${port}/dual-screen.html?archivePreview=1`);
+        assert.doesNotMatch(await dualPreview.text(), /milestones-data-archive-preview\.js/);
+
         const data = await waitForHttp(`http://${HOST}:${port}/milestones-data.js`);
         assert.match(await data.text(), /const\s+milestones\s*=/);
 
@@ -89,11 +97,48 @@ async function validateAdminServer() {
         assert.doesNotMatch(adminHtml, /POST.*\/api\/(?:events|catalog|generate)/);
 
         const archiveAdmin = await waitForHttp(`http://${HOST}:${port}/archive-admin`);
-        assert.match(await archiveAdmin.text(), /Archive Entity Editor/);
+        const archiveAdminHtml = await archiveAdmin.text();
+        assert.match(archiveAdminHtml, /Archive Entity Editor/);
+        assert.match(archiveAdminHtml, /Storylines/);
 
         const archiveEvents = await waitForHttp(`http://${HOST}:${port}/api/archive/events`);
         const archiveEventList = await archiveEvents.json();
         assert.ok(Array.isArray(archiveEventList) && archiveEventList.length > 0);
+
+        const storylines = await waitForHttp(`http://${HOST}:${port}/api/archive/storylines`);
+        const storylineIds = await storylines.json();
+        assert.ok(storylineIds.includes('humanistic-cycle'));
+
+        const storylineResponse = await waitForHttp(
+            `http://${HOST}:${port}/api/archive/storyline?storylineId=humanistic-cycle`
+        );
+        const storylineData = await storylineResponse.json();
+        assert.equal(storylineData.data.id, 'humanistic-cycle');
+
+        const invalidStorylineData = await fetch(`http://${HOST}:${port}/api/archive/storyline`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ storylineId: 'humanistic-cycle', data: [] })
+        });
+        assert.equal(invalidStorylineData.status, 400);
+        assert.match((await invalidStorylineData.json()).error, /must be a JSON object/i);
+
+        const mismatchedStoryline = await fetch(`http://${HOST}:${port}/api/archive/storyline`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                storylineId: 'humanistic-cycle',
+                data: { ...storylineData.data, id: 'wrong-storyline' }
+            })
+        });
+        assert.equal(mismatchedStoryline.status, 400);
+        assert.match((await mismatchedStoryline.json()).error, /data\.id must match storylineId/i);
+
+        const traversal = await fetch(
+            `http://${HOST}:${port}/api/archive/storyline?storylineId=${encodeURIComponent('../package')}`
+        );
+        assert.equal(traversal.status, 400);
+        assert.match((await traversal.json()).error, /Invalid archive storylineId|path traversal/i);
 
         const legacyWrite = await fetch(`http://${HOST}:${port}/api/generate`, { method: 'POST' });
         assert.equal(legacyWrite.status, 403);

@@ -6,8 +6,8 @@ const path = require('node:path');
 const { buildArchivePreview } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const SNAPSHOT_PATH = path.join(ROOT, 'reports', 'archive-review-snapshot.json');
-const OUTPUT_PATH = path.join(ROOT, 'archive-review.html');
+const SNAPSHOT_PATH = path.join(ROOT, '.tmp', 'archive-review', 'archive-review-snapshot.json');
+const OUTPUT_PATH = path.join(ROOT, '.tmp', 'archive-review', 'archive-review.html');
 
 function esc(value) {
     return String(value == null ? '' : value)
@@ -202,7 +202,7 @@ figcaption { padding:6px; font-size:11px; color:var(--muted); overflow-wrap:anyw
 <body>
 <main>
 <h1>Archive Migration Review</h1>
-<p class="summary">Generated from <code>reports/archive-review-snapshot.json</code> at ${esc(snapshot.generatedAt)}. Run <code>npm run generate && npm run review:archive</code> to refresh legacy/archive/final comparisons.</p>
+<p class="summary">Generated from <code>.tmp/archive-review/archive-review-snapshot.json</code> at ${esc(snapshot.generatedAt)}. Run <code>npm run generate:legacy &amp;&amp; npm run review:archive</code> to refresh legacy/archive/final comparisons.</p>
 <p class="summary">Applied: ${snapshot.applied.length} · Skipped: ${snapshot.skipped.length} · Errors: ${snapshot.errors.length}</p>
 ${buildRows(snapshot)}
 </main>
@@ -210,5 +210,6 @@ ${buildRows(snapshot)}
 </html>
 `;
 
+fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
 fs.writeFileSync(OUTPUT_PATH, html);
 console.log(`Archive review page: ${path.relative(ROOT, OUTPUT_PATH)}`);

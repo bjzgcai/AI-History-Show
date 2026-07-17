@@ -3,7 +3,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { buildArchivePreview } = require('./archive-compiler.js');
+const { compileArchive } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUTPUTS = [path.join(ROOT, 'milestones-data.js'), path.join(ROOT, 'milestones-data-default.js')];
@@ -92,11 +92,12 @@ function buildOutputContent(milestones, now, result) {
 function generateArchiveData({
     root = ROOT,
     outputs = OUTPUTS,
-    buildPreview = buildArchivePreview,
+    compile = compileArchive,
+    buildPreview,
     now = new Date().toISOString().replace('T', ' ').slice(0, 16),
     logger = console
 } = {}) {
-    const result = buildPreview(root);
+    const result = (buildPreview || compile)(root);
     for (const item of result.errors) {
         logger.warn(
             `[警告] archive-native 构建失败：${item.storylineId} ${JSON.stringify(item.ref)} — ${item.message}`

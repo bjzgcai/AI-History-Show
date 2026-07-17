@@ -7,7 +7,7 @@ const { applyArchiveOverlays } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const LEGACY_DATA_PATH = path.join(ROOT, 'milestones-data.js');
-const OUTPUT_PATH = path.join(ROOT, 'milestones-data-archive-preview.js');
+const OUTPUT_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-preview.js');
 
 function normalizeGeneratedTime(content) {
     return String(content || '')
@@ -16,6 +16,7 @@ function normalizeGeneratedTime(content) {
 }
 
 function writeIfMeaningfullyChanged(file, content) {
+    fs.mkdirSync(path.dirname(file), { recursive: true });
     if (fs.existsSync(file)) {
         const existing = fs.readFileSync(file, 'utf8');
         if (normalizeGeneratedTime(existing) === normalizeGeneratedTime(content)) return false;

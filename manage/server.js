@@ -584,9 +584,9 @@ function atomicWrite(filePath, content) {
 function writeCatalog(data) {
   const target  = path.join(MANAGE, 'catalog.js');
   const content = [
-    `// 文件A: 展示目录配置（由管理页面生成）`,
-    `// 控制展示哪些分类、哪些核心事件，以及展示顺序`,
-    `// 修改此文件后运行 \`node manage/generate.js\` 重新生成 milestones-data.js`,
+    `// LEGACY — rollback/comparison/migration only.`,
+    `// Production storyline membership and order live in archive/storylines/*.json.`,
+    `// This file is consumed only by explicit Legacy tooling such as \`npm run generate:legacy\`.`,
     ``,
     `module.exports = ${JSON.stringify(data, null, 2)};`,
     ``,
@@ -598,8 +598,9 @@ function writeCatalog(data) {
 function writeEvents(data) {
   const target  = path.join(MANAGE, 'events.js');
   const content = [
-    `// 文件B: 核心事件内容配置（由管理页面生成）`,
-    `// 修改此文件后运行 \`node manage/generate.js\` 重新生成 milestones-data.js`,
+    `// LEGACY — rollback/comparison/migration only.`,
+    `// Production event content lives in archive/events/* and is compiled by \`npm run generate\`.`,
+    `// This file is consumed only by explicit Legacy tooling such as \`npm run generate:legacy\`.`,
     ``,
     `/* eslint-disable */`,
     `module.exports = ${JSON.stringify(data, null, 2)};`,
@@ -660,9 +661,13 @@ function archiveEventFileList(eventId) {
   return files;
 }
 
+function safeArchiveId(value, label) {
+  if (typeof value !== 'string' || !/^[a-z0-9][a-z0-9._-]*$/.test(value)) throw new Error(`Invalid ${label}`);
+  return value;
+}
+
 function safeArchiveEventId(eventId) {
-  if (!eventId || !/^[a-z0-9][a-z0-9._-]*$/.test(eventId)) throw new Error('Invalid archive eventId');
-  return eventId;
+  return safeArchiveId(eventId, 'archive eventId');
 }
 
 function safeArchiveFileName(file) {
@@ -680,7 +685,14 @@ function archiveFilePath(eventId, file) {
   if (!fullPath.startsWith(baseDir)) throw new Error('Archive path traversal rejected');
   return fullPath;
 }
-// ─── 路由处理 ─────────────────────────────────────────────────────────────────
+function archiveStorylinePath(storylineId) {
+  const safeStorylineId = safeArchiveId(storylineId, 'archive storylineId');
+  const baseDir = path.join(ROOT, 'archive', 'storylines');
+  const fullPath = path.join(baseDir, `${safeStorylineId}.json`);
+  if (path.dirname(fullPath) !== baseDir) throw new Error('Archive path traversal rejected');
+  return fullPath;
+}
+
 
 const routes = {
 
@@ -705,6 +717,47 @@ const routes = {
         .sort((a, b) => a.id.localeCompare(b.id));
       json(res, events);
     } catch (e) { err(res, e.message); }
+  },
+
+  'GET /api/archive/storylines': (req, res) => {
+    try {
+      const storylinesDir = path.join(ROOT, 'archive', 'storylines');
+      if (!fs.existsSync(storylinesDir)) { json(res, []); return; }
+      const storylines = fs.readdirSync(storylinesDir)
+        .filter((file) => file.endsWith('.json'))
+        .map((file) => file.replace(/\.json$/, ''))
+        .filter((storylineId) => /^[a-z0-9][a-z0-9._-]*$/.test(storylineId))
+        .sort();
+      json(res, storylines);
+    } catch (e) { err(res, e.message); }
+  },
+
+  'GET /api/archive/storyline': (req, res) => {
+    try {
+      const q = parseQuery(req.url);
+      const filePath = archiveStorylinePath(q.storylineId);
+      if (!fs.existsSync(filePath)) { err(res, 'Archive storyline not found', 404); return; }
+      json(res, { storylineId: q.storylineId, data: JSON.parse(fs.readFileSync(filePath, 'utf8')) });
+    } catch (e) { err(res, e.message, 400); }
+  },
+
+  'POST /api/archive/storyline': async (req, res) => {
+    try {
+      const body = await readBody(req);
+      const storylineId = safeArchiveId(body.storylineId, 'archive storylineId');
+      if (!body.data || typeof body.data !== 'object' || Array.isArray(body.data)) {
+        err(res, 'Archive storyline data must be a JSON object', 400);
+        return;
+      }
+      if (body.data.id !== storylineId) {
+        err(res, 'Archive storyline data.id must match storylineId', 400);
+        return;
+      }
+      const filePath = archiveStorylinePath(storylineId);
+      if (!fs.existsSync(filePath)) { err(res, 'Archive storyline not found', 404); return; }
+      atomicWrite(filePath, JSON.stringify(body.data, null, 2) + '\n');
+      json(res, { ok: true, storylineId });
+    } catch (e) { err(res, e.message, 400); }
   },
 
   'GET /api/archive/file': (req, res) => {

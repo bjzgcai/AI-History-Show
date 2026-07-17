@@ -1,14 +1,14 @@
 # Archive Build Diff
 
-Generated: 2026-07-15T01:39:50.754Z
+Generated: 2026-07-17T08:58:11.730Z
 
 This report compares legacy snapshots with generated final milestones after archive overlay.
 Archive migration defaults to `presentationMode: preserve-legacy`, so user-visible presentation changes are failures unless a variant explicitly sets `presentationMode: archive`.
 
 ## Summary
 
-- Archive preview milestones: 134
-- Snapshot rows: 134
+- Archive preview milestones: 146
+- Snapshot rows: 146
 - Archive preview errors: 0
 - Duplicate preview target ids: 0
 - Generated ids missing archive preview: 0
@@ -818,18 +818,90 @@ Archive migration defaults to `presentationMode: preserve-legacy`, so user-visib
 - Presentation mode: `preserve-legacy`
 - Status: same
 
+## 1920-rur-robots / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1920-rur-robots`
+- Presentation mode: `archive`
+- Status: same
+
+## 1942-asimov-runaround / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1942-asimov-runaround`
+- Presentation mode: `archive`
+- Status: same
+
+## 1950-wiener-human-use / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1950-wiener-human-use`
+- Presentation mode: `archive`
+- Status: same
+
+## 1965-simon-ai-prediction / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1965-simon-ai-prediction`
+- Presentation mode: `archive`
+- Status: same
+
+## 1968-hal-9000 / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1968-hal-9000`
+- Presentation mode: `archive`
+- Status: same
+
+## 1973-lighthill-report / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1973-lighthill-report`
+- Presentation mode: `archive`
+- Status: same
+
+## 1978-xiaolingtong / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1978-xiaolingtong`
+- Presentation mode: `archive`
+- Status: same
+
+## 1984-neuromancer / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1984-neuromancer`
+- Presentation mode: `archive`
+- Status: same
+
+## 1987-lisp-machine-collapse / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-1987-lisp-machine-collapse`
+- Presentation mode: `archive`
+- Status: same
+
+## 2014-ai-existential-warnings / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-2014-ai-existential-warnings`
+- Presentation mode: `archive`
+- Status: same
+
+## 2015-openai-founding / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-2015-openai-founding`
+- Presentation mode: `archive`
+- Status: same
+
+## 2023-ai-risk-statement / humanistic-cycle / humanistic-cycle
+
+- Target milestone id: `milestone-humanistic-cycle-2023-ai-risk-statement`
+- Presentation mode: `archive`
+- Status: same
+
 ## Presentation result
 
-- Same presentation rows: 134
+- Same presentation rows: 146
 - Intentional presentation changes: 0
 - Unexpected presentation changes: 0
 
 ## Coverage result
 
-- Generated milestones: 134
-- Archive preview targets: 134
-- Unique archive preview target ids: 134
-- Snapshot rows: 134
+- Generated milestones: 146
+- Archive preview targets: 146
+- Unique archive preview target ids: 146
+- Snapshot rows: 146
 - Duplicate preview target ids: 0
 - Duplicate snapshot target ids: 0
 - Preview ids missing generated target: 0

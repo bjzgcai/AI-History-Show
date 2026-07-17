@@ -4,8 +4,8 @@ Compares scaffold-based archive preview data with archive-native data generated 
 
 ## Summary
 
-- Scaffold archive preview milestones: 134
-- Archive-native milestones: 134
+- Scaffold archive preview milestones: 146
+- Archive-native milestones: 146
 - Changed milestones: 0
 - Display-critical changed milestones: 0
 - Visible structured changed milestones: 0

@@ -10,6 +10,7 @@
         "start:demo": "node scripts/static-server.js --host 127.0.0.1 --port 8000",
         "generate": "node scripts/generate-archive-data.js",
         "generate:archive": "node scripts/generate-archive-data.js",
+        "build:static": "node scripts/build-static-site.js",
         "generate:legacy": "node manage/generate.js",
         "generate:parity": "node scripts/generate-archive-parity.js",
         "diff:parity": "node scripts/diff-archive-parity.js",
@@ -40,7 +41,7 @@
         "validate:ai100-context": "node scripts/validate-ai100-context.js",
         "validate:ai100-quizzes": "node scripts/validate-ai100-quizzes-grounded.js",
         "audit:ai100-accuracy": "node scripts/audit-ai100-accuracy.js",
-        "validate:deployment": "npm run validate:archive && npm run generate && npm test && npm run validate:startup"
+        "validate:deployment": "npm run validate:archive && npm run generate && npm run build:static && npm test && npm run validate:startup"
     },
     "devDependencies": {
         "@eslint/js": "^9.0.0",

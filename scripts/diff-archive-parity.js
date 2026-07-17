@@ -6,11 +6,11 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const DATA_DIR = path.join(ROOT, 'reports', 'archive-parity', 'data');
+const DATA_DIR = path.join(ROOT, '.tmp', 'archive-parity', 'data');
 const LEGACY_PATH = path.join(DATA_DIR, 'milestones-data-legacy.js');
 const ARCHIVE_PATH = path.join(DATA_DIR, 'milestones-data-archive.js');
-const JSON_PATH = path.join(ROOT, 'reports', 'archive-parity', 'data-diff.json');
-const MARKDOWN_PATH = path.join(ROOT, 'reports', 'archive-parity', 'data-diff.md');
+const JSON_PATH = path.join(ROOT, '.tmp', 'archive-parity', 'data-diff.json');
+const MARKDOWN_PATH = path.join(ROOT, '.tmp', 'archive-parity', 'data-diff.md');
 const VIEW_SCRIPT = fs.readFileSync(path.join(ROOT, 'shared', 'milestone-view.js'), 'utf8');
 
 function load(filePath) {

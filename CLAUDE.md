@@ -64,7 +64,7 @@ index.html / dual-screen.html
 - Canonical facts, evidence, assets, quizzes, and storyline-specific presentation live under `archive/events/<event-id>/`.
 - `scripts/archive-compiler.js` resolves each storyline reference, selects variant-owned source/claim/asset/quiz IDs, and emits the frontend milestone shape.
 - `npm run generate` and `npm run generate:archive` both use the Archive-native generator. `npm run generate:legacy` retains the former compatible generator for comparison and rollback only.
-- `manage/event-fusions.js` still supplies legacy milestone-ID aliases to the Archive compiler and must remain until those mappings move into Archive metadata.
+- `manage/event-fusions.js` remains only for the explicit Legacy generator, migration, and parity tooling. The production Archive compiler gets stable milestone IDs from `archive/storylines/*.json`.
 - `manage/events.js`, `manage/catalog.js`, legacy helper files, and `resources/quote-candidates.js`, `resources/research-candidates.js`, and `resources/videos/*.json` remain for rollback and unfinished tooling migration; they are not production generation inputs.
 - `milestones-data.js` and `milestones-data-default.js` are generated outputs. Regenerate them with `npm run generate` after Archive source changes.
 

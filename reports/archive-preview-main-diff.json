@@ -1,20 +1,16 @@
 {
-  "normalCount": 134,
-  "previewCount": 134,
-  "changedCount": 1,
+  "normalCount": 146,
+  "previewCount": 146,
+  "changedCount": 0,
   "displayCriticalChangedCount": 0,
   "activeVisibleStructuredChangedCount": 0,
   "acceptedArchiveCommentaryChangedCount": 0,
-  "structuredArchiveChangedCount": 1,
-  "fieldCounts": {
-    "quizzes": 1
-  },
+  "structuredArchiveChangedCount": 0,
+  "fieldCounts": {},
   "displayCriticalFieldCounts": {},
   "visibleStructuredFieldCounts": {},
   "activeVisibleStructuredFieldCounts": {},
-  "structuredArchiveFieldCounts": {
-    "quizzes": 1
-  },
+  "structuredArchiveFieldCounts": {},
   "imageDecreaseCount": 0,
   "imageIncreaseCount": 0,
   "sourceDecreaseCount": 0,
@@ -23,36 +19,10 @@
   "commentaryIncreaseCount": 0,
   "quizDecreaseCount": 0,
   "quizIncreaseCount": 0,
-  "rows": [
-    {
-      "id": "milestone-gaming-ai-2016-alphago",
-      "archiveEventId": "2016-alphago",
-      "archiveVariantId": "gaming-ai",
-      "title": {
-        "zh": "AlphaGo",
-        "en": "AlphaGo"
-      },
-      "previewTitle": {
-        "zh": "AlphaGo",
-        "en": "AlphaGo"
-      },
-      "diffs": [
-        {
-          "field": "quizzes",
-          "group": "structuredArchive",
-          "normalCount": 1,
-          "previewCount": 1,
-          "decreased": false,
-          "increased": false
-        }
-      ]
-    }
-  ],
+  "rows": [],
   "displayCriticalRowIds": [],
   "visibleStructuredRowIds": [],
   "activeVisibleStructuredRowIds": [],
   "acceptedArchiveCommentaryRowIds": [],
-  "structuredArchiveRowIds": [
-    "milestone-gaming-ai-2016-alphago"
-  ]
+  "structuredArchiveRowIds": []
 }

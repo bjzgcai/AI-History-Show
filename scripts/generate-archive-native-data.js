@@ -6,7 +6,7 @@ const path = require('node:path');
 const { buildArchivePreview } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUTPUT_PATH = path.join(ROOT, 'milestones-data-archive-native.js');
+const OUTPUT_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-native.js');
 
 function normalizeGeneratedTime(content) {
     return String(content || '')
@@ -15,6 +15,7 @@ function normalizeGeneratedTime(content) {
 }
 
 function writeIfMeaningfullyChanged(file, content) {
+    fs.mkdirSync(path.dirname(file), { recursive: true });
     if (fs.existsSync(file)) {
         const existing = fs.readFileSync(file, 'utf8');
         if (normalizeGeneratedTime(existing) === normalizeGeneratedTime(content)) return false;

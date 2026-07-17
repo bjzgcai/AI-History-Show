@@ -1,5 +1,6 @@
 # Event Fusion Data Workflow
 
+> **LEGACY WORKFLOW — current status 2026-07-17:** This document describes the retained Legacy generator and historical fusion review process. Production `npm run generate` now compiles Archive canonical events and storyline variants directly, with milestone IDs stored in `archive/storylines/*.json`; it does not consume `manage/event-fusions.js`. Use the commands below only for explicit rollback, comparison, migration, or parity work. Restore production runtime data with `npm run generate` afterward.
 This document summarizes how duplicate events from the deep-learning storyline and the BenchCouncil AI100 storyline are fused into one consistent presentation.
 
 ## Goal

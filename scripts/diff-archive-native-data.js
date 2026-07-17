@@ -5,8 +5,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
-const PREVIEW_DATA_PATH = path.join(ROOT, 'milestones-data-archive-preview.js');
-const NATIVE_DATA_PATH = path.join(ROOT, 'milestones-data-archive-native.js');
+const PREVIEW_DATA_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-preview.js');
+const NATIVE_DATA_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-native.js');
 const REPORT_PATH = path.join(ROOT, 'reports', 'archive-native-diff.md');
 const JSON_REPORT_PATH = path.join(ROOT, 'reports', 'archive-native-diff.json');
 

@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
-RUN npm run validate:archive && npm run generate && npm prune --omit=dev
+RUN npm run validate:archive && npm run generate && npm run build:static && npm prune --omit=dev
 
 FROM node:22-alpine AS admin
 
@@ -20,7 +20,7 @@ ENV PORT=3001
 EXPOSE 3001
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD node -e "fetch('http://127.0.0.1:' + (process.env.PORT || 3001) + '/admin').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"
+    CMD node -e "fetch('http://127.0.0.1:' + (process.env.PORT || 3001) + '/archive-admin').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"
 
 CMD ["node", "manage/server.js"]
 
@@ -30,12 +30,7 @@ CMD ["node", "manage/server.js"]
 FROM nginx:1.27-alpine AS presentation
 
 COPY deploy/nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/index.html /usr/share/nginx/html/
-COPY --from=build /app/dual-screen.html /usr/share/nginx/html/
-COPY --from=build /app/milestones-data.js /usr/share/nginx/html/
-COPY --from=build /app/milestones-data-default.js /usr/share/nginx/html/
-COPY --from=build /app/shared /usr/share/nginx/html/shared
-COPY --from=build /app/resources /usr/share/nginx/html/resources
+COPY --from=build /app/.tmp/static-site/ /usr/share/nginx/html/
 
 EXPOSE 8000
 

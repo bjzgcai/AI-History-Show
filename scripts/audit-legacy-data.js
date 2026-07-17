@@ -3,7 +3,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { buildArchivePreview, legacyIdFor } = require('./archive-compiler.js');
+const { buildArchivePreview } = require('./archive-compiler.js');
 const { FUSIONS } = require('../manage/event-fusions.js');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -109,8 +109,7 @@ function fusionArchiveCoverage(storylines) {
                 path.join(ROOT, 'archive', 'events', canonical, 'variants', 'bench-council-ai100.json')
             ),
             hasDeepStorylineRef: refKeys.has(deepKey),
-            hasAi100StorylineRef: refKeys.has(ai100Key) || refKeys.has(legacyAi100Key),
-            legacyAi100Id: legacyIdFor('bench-council-ai100', canonical)
+            hasAi100StorylineRef: refKeys.has(ai100Key) || refKeys.has(legacyAi100Key)
         };
     });
 }

@@ -7,7 +7,7 @@ const path = require('node:path');
 const { URL } = require('node:url');
 
 const ROOT = path.resolve(__dirname, '..');
-const DATA_DIR = path.join(ROOT, 'reports', 'archive-parity', 'data');
+const DATA_DIR = path.join(ROOT, '.tmp', 'archive-parity', 'data');
 const MIME = {
     '.html': 'text/html; charset=utf-8',
     '.js': 'text/javascript; charset=utf-8',

@@ -12,16 +12,17 @@
 
 ## 数据流（重要）
 
-```
-manage/catalog.js   ─┐
-manage/events.js     ├─→  node manage/generate.js  ─→  milestones-data.js  ─→  前端
-manage/figure-avatars.js ─┘
-resources/videos/{key}.json
+```text
+archive/storylines/*.json ─┐
+archive/events/*/          ├─→ npm run validate:archive ─→ npm run generate
+resources/                 ┘                              ├─→ milestones-data.js
+                                                           └─→ milestones-data-default.js
 ```
 
-- **`milestones-data.js` 自动生成，禁止手动编辑**。生成失败时前端回退到 `milestones-data-default.js`。
-- 改内容只动 `manage/catalog.js`（分类与顺序）、`manage/events.js`（事件正文）、`manage/figure-avatars.js`（人物头像注册表）。
-- 文本字段支持双语：纯字符串 → 视为中文；或写成 `{ zh, en }`。缺失语言会自动回退。
+- **两份 `milestones-data*.js` 都自动生成，禁止手动编辑**。
+- 内容、来源、资源、quiz 和 variant 写入 `archive/events/*`；storyline 成员、顺序和展示 ID 写入 `archive/storylines/*.json`。
+- `manage/catalog.js`、`manage/events.js`、`manage/figure-avatars.js` 和 `manage/generate.js` 仅供 Legacy rollback/comparison/migration 使用，不是生产输入。
+- 可见文本字段使用 `{ zh, en }`，缺失语言会回退。
 
 ## i18n
 
@@ -32,11 +33,12 @@ resources/videos/{key}.json
 ## 管理后台
 
 ```bash
-node manage/server.js   # http://localhost:3001/admin
+npm run start:admin   # http://localhost:3001/archive-admin
 ```
 
-- 无认证，仅供本地使用，切勿暴露公网
-- 关键接口：`GET /api/generate/diff`（预览变更）、`POST /api/generate`（执行生成）、`POST /api/events`（保存 events.js，写入前会同步 YouTube 元数据到 `resources/videos/{key}.json`）
+- 无认证，仅供本地或受保护环境使用，切勿暴露公网。
+- `/archive-admin` 可编辑 Archive event bundles 和已有 storylines；保存后显式运行 validation 与 `npm run generate`。
+- `/admin` 是 Legacy 只读参考页，Legacy mutation endpoints 返回 HTTP 403。
 
 ## 质量门禁
 

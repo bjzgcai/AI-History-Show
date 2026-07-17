@@ -1,6 +1,6 @@
 # Legacy Data Audit
 
-Generated: 2026-07-13T10:50:41.845Z
+Generated: 2026-07-17T08:34:42.493Z
 
 This report checks the legacy history data files against the archive migration boundary.
 It is intentionally read-only and does not regenerate display data.
@@ -8,17 +8,17 @@ It is intentionally read-only and does not regenerate display data.
 ## Summary
 
 - Catalog categories: 5
-- Catalog branches: 1
-- Catalog event references: 134
-- Unique catalog event references: 128
-- Legacy event keys: 128
-- Archive event directories: 116
+- Catalog branches: 2
+- Catalog event references: 146
+- Unique catalog event references: 140
+- Legacy event keys: 140
+- Archive event directories: 128
 - Legacy quiz event keys: 107
 - Archive quiz event keys: 107
 - Fusion rules: 12
-- Archive preview milestones: 134
+- Archive preview milestones: 146
 - Archive preview errors: 0
-- Generated milestone ids: 134
+- Generated milestone ids: 146
 - Duplicate catalog refs: 6
 - Catalog refs missing legacy events: 0
 - Legacy event keys not referenced by catalog: 0

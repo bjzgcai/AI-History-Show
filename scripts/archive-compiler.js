@@ -3,19 +3,6 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { FUSIONS } = require('../manage/event-fusions.js');
-
-const AI100_LEGACY_ID_BY_CANONICAL = new Map(FUSIONS.map((fusion) => [fusion.canonical, `milestone-${fusion.ai100}`]));
-
-const SAMPLE_LEGACY_IDS = {
-    'deep-learning:2012-alexnet': 'milestone-2012-alexnet',
-    'deep-learning:2017-transformer': 'milestone-2017-transformer',
-    'deep-learning:2016-alphago': null,
-    'bench-council-ai100:2012-alexnet': 'milestone-ai100-2012-alexnet',
-    'bench-council-ai100:2017-transformer': 'milestone-ai100-2017-transformer',
-    'bench-council-ai100:2016-alphago': 'milestone-2016-alphago',
-    'gaming-ai:2016-alphago': 'milestone-gaming-ai-2016-alphago'
-};
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -136,17 +123,10 @@ function loadVariant(bundle, variantId) {
     return readJson(variantPath);
 }
 
-function legacyIdFor(storylineId, eventId) {
-    const key = `${storylineId}:${eventId}`;
-    if (Object.prototype.hasOwnProperty.call(SAMPLE_LEGACY_IDS, key)) return SAMPLE_LEGACY_IDS[key];
-    if (storylineId === 'gaming-ai') return `milestone-gaming-ai-${eventId}`;
-    if (storylineId === 'bench-council-ai100' && eventId.startsWith('ai100-')) return `milestone-${eventId}`;
-    if (storylineId === 'bench-council-ai100')
-        return AI100_LEGACY_ID_BY_CANONICAL.get(eventId) || `milestone-${eventId}`;
-    return `milestone-${eventId}`;
-}
-
-function buildMilestonePreview(root, storyline, ref) {
+function buildMilestone(root, storyline, ref) {
+    if (!ref.milestoneId) {
+        throw new Error(`Missing milestoneId: ${storyline.id}/${ref.eventId}/${ref.variant}`);
+    }
     const bundle = loadEventBundle(root, ref.eventId);
     const variant = loadVariant(bundle, ref.variant);
     const event = bundle.event;
@@ -167,11 +147,11 @@ function buildMilestonePreview(root, storyline, ref) {
     const description = pickLocalized(variant.displayDescription, event.description || event.summary);
 
     const milestone = {
-        id: ref.milestoneId || legacyIdFor(storyline.id, event.id) || `archive-preview-${storyline.id}-${event.id}`,
+        id: ref.milestoneId,
         archiveEventId: event.id,
         archiveVariantId: ref.variant,
         archivePresentationMode: variant.presentationMode || 'preserve-legacy',
-        sourceKind: 'archive-preview',
+        sourceKind: 'archive',
         storyline: {
             id: storyline.id,
             name: localizePair(storyline.title)
@@ -280,7 +260,7 @@ function applyVariantPresentation(milestone, variant) {
     return milestone;
 }
 
-function buildArchivePreview(root) {
+function compileArchive(root) {
     const storylines = loadStorylines(root);
     const milestones = [];
     const errors = [];
@@ -289,7 +269,7 @@ function buildArchivePreview(root) {
         for (const ref of storyline.events || []) {
             if (ref && ref.enabled === false) continue;
             try {
-                milestones.push(buildMilestonePreview(root, storyline, ref));
+                milestones.push(buildMilestone(root, storyline, ref));
             } catch (error) {
                 errors.push({ storylineId: storyline.id, ref, message: error.message });
             }
@@ -298,8 +278,8 @@ function buildArchivePreview(root) {
 
     return {
         generatedAt: new Date().toISOString(),
-        source: 'archive-preview',
-        note: 'Preview output only. This file is not consumed by index.html or dual-screen.html.',
+        source: 'archive',
+        note: 'Compiled from Archive storylines, events, and variants.',
         counts: {
             storylines: storylines.length,
             milestones: milestones.length,
@@ -393,7 +373,7 @@ function buildEffectiveArchivePreview(legacySnapshot, preview, options = {}) {
 function applyArchiveOverlays(milestones, options = {}) {
     const root = options.root || path.resolve(__dirname, '..');
     const forceArchivePresentation = options.forceArchivePresentation === true;
-    const preview = buildArchivePreview(root);
+    const preview = compileArchive(root);
     const applied = [];
     const skipped = [];
     const reviewRows = [];
@@ -478,6 +458,6 @@ function applyArchiveOverlays(milestones, options = {}) {
 module.exports = {
     applyArchivePreviewToMilestone,
     applyArchiveOverlays,
-    buildArchivePreview,
-    legacyIdFor
+    buildArchivePreview: compileArchive,
+    compileArchive
 };

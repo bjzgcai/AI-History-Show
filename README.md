@@ -77,12 +77,14 @@ The single-screen entry includes a story selector dialog in the top bar. The gen
 | Core AI history | 21 | Main exhibition flow with the Three.js globe and milestone panels |
 | BenchCouncil AI100 achievements | 100 | Achievement-map layout with source cards, context sections, demos, and quizzes |
 | AI in Board & Tabletop Games | 13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
+| Humanistic & emotional cycles | 12 | Sci-fi prophecy, technology hype, AI winters, and risk debates |
 
 Open a specific storyline directly with `?storyline=...`, for example:
 
 ```text
 http://localhost:8000/index.html?storyline=bench-council-ai100
 http://localhost:8000/index.html?storyline=gaming-ai
+http://localhost:8000/index.html?storyline=humanistic-cycle
 ```
 
 The gaming branch supports SGF/game-state evolution modules. Source SGF examples and tooling live in:
@@ -153,7 +155,7 @@ npm run start:admin
 # Open http://localhost:3001/archive-admin
 ```
 
-Edit `archive/events/<event-id>/*.json` in the Archive editor, run validation, then regenerate the runtime files:
+Edit `archive/events/<event-id>/*.json` and `archive/storylines/*.json` in the Archive editor, run validation, then regenerate the runtime files:
 
 ```text
 archive/storylines/*.json ─┐
@@ -175,6 +177,15 @@ npm run generate:legacy
 
 Do not hand-edit `milestones-data.js` or `milestones-data-default.js`.
 
+Pages and the Docker presentation image share the same allowlisted release bundle:
+
+```bash
+npm run build:static
+# Output: .tmp/static-site/
+```
+
+The bundle contains the presentation pages, runtime data, `shared/`, `resources/`, required `public/` assets, and `.nojekyll`; it excludes Archive source JSON, management tools, Legacy data, reports, research files, and scripts.
+
 For the Archive entity layout and source/asset relationships, see [`archive/README.md`](archive/README.md). For retained browser resources, see [`docs/archive-resources-retention.md`](docs/archive-resources-retention.md).
 
 ---
@@ -189,7 +200,7 @@ The files under `manage/`—including `catalog.js`, `events.js`, the extra-event
 
 They are **not production authoring inputs**. Do not use `/admin` or edit these files expecting `npm run generate` to consume the changes. Current storyline membership and order live in `archive/storylines/*.json`; event facts, assets, sources, quizzes, and presentation variants live in `archive/events/<event-id>/`.
 
-The `/admin` page exposes this Legacy dataset as a read-only reference. Its mutation endpoints are blocked by the server. Keep the retained files until the comparison period ends and the remaining `manage/event-fusions.js` alias dependency has moved into Archive metadata.
+The `/admin` page exposes this Legacy dataset as a read-only reference. Its mutation endpoints are blocked by the server. Retained Legacy files remain available only for an explicit rollback/comparison period and for migration tools; the production Archive compiler no longer reads `manage/event-fusions.js` for milestone identities.
 
 ---
 

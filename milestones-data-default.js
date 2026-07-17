@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-17 06:40
+// 生成时间: 2026-07-17 08:58
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -9,7 +9,7 @@ const milestones = [
     "archiveEventId": "2012-alexnet",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -572,7 +572,7 @@ const milestones = [
     "archiveEventId": "2017-transformer",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -1153,7 +1153,7 @@ const milestones = [
     "archiveEventId": "2016-alphago",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -1602,7 +1602,7 @@ const milestones = [
     "archiveEventId": "1950-turing-test",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -2048,7 +2048,7 @@ const milestones = [
     "archiveEventId": "1958-lisp",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -2457,7 +2457,7 @@ const milestones = [
     "archiveEventId": "1971-complexity-theory",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -2897,7 +2897,7 @@ const milestones = [
     "archiveEventId": "1971-vc-theory",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -3334,7 +3334,7 @@ const milestones = [
     "archiveEventId": "1956-logic-theorist",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -3787,7 +3787,7 @@ const milestones = [
     "archiveEventId": "1958-wangs-algorithm",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -4214,7 +4214,7 @@ const milestones = [
     "archiveEventId": "1960-davis-putnam-dpll",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -4680,7 +4680,7 @@ const milestones = [
     "archiveEventId": "2014-adam",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -5165,7 +5165,7 @@ const milestones = [
     "archiveEventId": "2014-vgg",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -5646,7 +5646,7 @@ const milestones = [
     "archiveEventId": "2015-u-net",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -6143,7 +6143,7 @@ const milestones = [
     "archiveEventId": "1975-genetic-algorithm",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -6614,7 +6614,7 @@ const milestones = [
     "archiveEventId": "2015-faster-r-cnn",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -7125,7 +7125,7 @@ const milestones = [
     "archiveEventId": "1992-svm",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -7619,7 +7619,7 @@ const milestones = [
     "archiveEventId": "1984-cart",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -8126,7 +8126,7 @@ const milestones = [
     "archiveEventId": "1983-simulated-annealing",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -8623,7 +8623,7 @@ const milestones = [
     "archiveEventId": "1996-lasso",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -9095,7 +9095,7 @@ const milestones = [
     "archiveEventId": "2015-googlenet-inception",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -9579,7 +9579,7 @@ const milestones = [
     "archiveEventId": "1965-resolution-method",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -10054,7 +10054,7 @@ const milestones = [
     "archiveEventId": "1973-prolog",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -10542,7 +10542,7 @@ const milestones = [
     "archiveEventId": "1966-eliza",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -11017,7 +11017,7 @@ const milestones = [
     "archiveEventId": "1982-hopfield-network",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -11489,7 +11489,7 @@ const milestones = [
     "archiveEventId": "2014-dropout",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -11977,7 +11977,7 @@ const milestones = [
     "archiveEventId": "2016-yolo",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -12465,7 +12465,7 @@ const milestones = [
     "archiveEventId": "2013-word2vec",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -12940,7 +12940,7 @@ const milestones = [
     "archiveEventId": "2009-imagenet",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -13428,7 +13428,7 @@ const milestones = [
     "archiveEventId": "2013-dqn",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -13916,7 +13916,7 @@ const milestones = [
     "archiveEventId": "2003-lda",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -14404,7 +14404,7 @@ const milestones = [
     "archiveEventId": "1970-shrdlu",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -14875,7 +14875,7 @@ const milestones = [
     "archiveEventId": "1997-deep-blue",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -15346,7 +15346,7 @@ const milestones = [
     "archiveEventId": "1974-frame",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -15817,7 +15817,7 @@ const milestones = [
     "archiveEventId": "1965-dendral",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -16285,7 +16285,7 @@ const milestones = [
     "archiveEventId": "1999-sift",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -16753,7 +16753,7 @@ const milestones = [
     "archiveEventId": "2008-tsne",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -17224,7 +17224,7 @@ const milestones = [
     "archiveEventId": "1957-perceptron",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -17807,7 +17807,7 @@ const milestones = [
     "archiveEventId": "2006-dbn",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -18275,7 +18275,7 @@ const milestones = [
     "archiveEventId": "1988-td-update",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -18743,7 +18743,7 @@ const milestones = [
     "archiveEventId": "1985-bayesian-network",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -19214,7 +19214,7 @@ const milestones = [
     "archiveEventId": "1990-otter",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -19705,7 +19705,7 @@ const milestones = [
     "archiveEventId": "2011-ibm-watson",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -20226,7 +20226,7 @@ const milestones = [
     "archiveEventId": "1951-strachey-draughts",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -20734,7 +20734,7 @@ const milestones = [
     "archiveEventId": "1994-chinook",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -21241,7 +21241,7 @@ const milestones = [
     "archiveEventId": "1959-pandemonium",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -21748,7 +21748,7 @@ const milestones = [
     "archiveEventId": "1984-cyc",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -22268,7 +22268,7 @@ const milestones = [
     "archiveEventId": "1980-xcon-r1",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -22776,7 +22776,7 @@ const milestones = [
     "archiveEventId": "1957-kmeans",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -23284,7 +23284,7 @@ const milestones = [
     "archiveEventId": "1996-dbscan",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -23805,7 +23805,7 @@ const milestones = [
     "archiveEventId": "2000-spectral-clustering",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -24326,7 +24326,7 @@ const milestones = [
     "archiveEventId": "ai100-1967-knn",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -24813,7 +24813,7 @@ const milestones = [
     "archiveEventId": "ai100-1970-ridge",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -25300,7 +25300,7 @@ const milestones = [
     "archiveEventId": "ai100-2005-hog",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -25787,7 +25787,7 @@ const milestones = [
     "archiveEventId": "ai100-2006-surf",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -26274,7 +26274,7 @@ const milestones = [
     "archiveEventId": "ai100-1997-kernel-pca",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -26761,7 +26761,7 @@ const milestones = [
     "archiveEventId": "ai100-1999-nmf",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -27248,7 +27248,7 @@ const milestones = [
     "archiveEventId": "ai100-2000-isomap",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -27735,7 +27735,7 @@ const milestones = [
     "archiveEventId": "ai100-2000-lle",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -28222,7 +28222,7 @@ const milestones = [
     "archiveEventId": "ai100-1943-mcculloch-pitts-neuron",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -28709,7 +28709,7 @@ const milestones = [
     "archiveEventId": "ai100-1951-snarc",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -29195,7 +29195,7 @@ const milestones = [
     "archiveEventId": "ai100-1982-som",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -29669,7 +29669,7 @@ const milestones = [
     "archiveEventId": "ai100-1967-back-propagation",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -30159,7 +30159,7 @@ const milestones = [
     "archiveEventId": "ai100-1969-relu",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -30650,7 +30650,7 @@ const milestones = [
     "archiveEventId": "ai100-1980-neocognitron",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -31124,7 +31124,7 @@ const milestones = [
     "archiveEventId": "1989-cnn",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -31687,7 +31687,7 @@ const milestones = [
     "archiveEventId": "ai100-2000-neural-language-model",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -32161,7 +32161,7 @@ const milestones = [
     "archiveEventId": "2015-resnet",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -32814,7 +32814,7 @@ const milestones = [
     "archiveEventId": "ai100-2015-batch-normalization",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -33300,7 +33300,7 @@ const milestones = [
     "archiveEventId": "2016-densenet",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -33827,7 +33827,7 @@ const milestones = [
     "archiveEventId": "ai100-2020-vit",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -34314,7 +34314,7 @@ const milestones = [
     "archiveEventId": "1997-lstm",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -34893,7 +34893,7 @@ const milestones = [
     "archiveEventId": "2014-gan",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -35420,7 +35420,7 @@ const milestones = [
     "archiveEventId": "2014-attention",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -35982,7 +35982,7 @@ const milestones = [
     "archiveEventId": "2018-bert",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -36544,7 +36544,7 @@ const milestones = [
     "archiveEventId": "2018-gpt",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -37132,7 +37132,7 @@ const milestones = [
     "archiveEventId": "2020-alphafold",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -37812,7 +37812,7 @@ const milestones = [
     "archiveEventId": "ai100-2021-clip",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -38285,7 +38285,7 @@ const milestones = [
     "archiveEventId": "ai100-2021-dalle",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -38759,7 +38759,7 @@ const milestones = [
     "archiveEventId": "ai100-2022-stable-diffusion",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -39237,7 +39237,7 @@ const milestones = [
     "archiveEventId": "ai100-2023-segment-anything",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -39711,7 +39711,7 @@ const milestones = [
     "archiveEventId": "ai100-2021-swin-transformer",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -40212,7 +40212,7 @@ const milestones = [
     "archiveEventId": "ai100-2014-glove",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -40713,7 +40713,7 @@ const milestones = [
     "archiveEventId": "ai100-2014-conditional-gan",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -41214,7 +41214,7 @@ const milestones = [
     "archiveEventId": "ai100-2015-dcgan",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -41714,7 +41714,7 @@ const milestones = [
     "archiveEventId": "ai100-2017-wasserstein-gan",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -42215,7 +42215,7 @@ const milestones = [
     "archiveEventId": "ai100-2017-cyclegan",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -42716,7 +42716,7 @@ const milestones = [
     "archiveEventId": "ai100-2017-pix2pix",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -43217,7 +43217,7 @@ const milestones = [
     "archiveEventId": "ai100-2019-stylegan",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -43718,7 +43718,7 @@ const milestones = [
     "archiveEventId": "ai100-2013-variational-autoencoder",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -44219,7 +44219,7 @@ const milestones = [
     "archiveEventId": "ai100-2015-diffusion-model",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -44720,7 +44720,7 @@ const milestones = [
     "archiveEventId": "ai100-2005-gnn",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -45221,7 +45221,7 @@ const milestones = [
     "archiveEventId": "ai100-2016-gcn",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -45722,7 +45722,7 @@ const milestones = [
     "archiveEventId": "ai100-2017-gat",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -46233,7 +46233,7 @@ const milestones = [
     "archiveEventId": "ai100-2016-nas",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -46734,7 +46734,7 @@ const milestones = [
     "archiveEventId": "ai100-2015-deep-compression",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -47245,7 +47245,7 @@ const milestones = [
     "archiveEventId": "ai100-2015-knowledge-distillation",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -47745,7 +47745,7 @@ const milestones = [
     "archiveEventId": "ai100-2014-ms-coco",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -48246,7 +48246,7 @@ const milestones = [
     "archiveEventId": "ai100-1989-q-learning",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -48747,7 +48747,7 @@ const milestones = [
     "archiveEventId": "ai100-2015-ddpg",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -49248,7 +49248,7 @@ const milestones = [
     "archiveEventId": "ai100-1983-actor-critic",
     "archiveVariantId": "bench-council-ai100",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
@@ -49749,7 +49749,7 @@ const milestones = [
     "archiveEventId": "1956-dartmouth",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -50083,7 +50083,7 @@ const milestones = [
     "archiveEventId": "2012-alexnet",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -50594,7 +50594,7 @@ const milestones = [
     "archiveEventId": "1957-perceptron",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -51138,7 +51138,7 @@ const milestones = [
     "archiveEventId": "2017-transformer",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -51667,7 +51667,7 @@ const milestones = [
     "archiveEventId": "1969-ai-winter",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -51936,7 +51936,7 @@ const milestones = [
     "archiveEventId": "1986-backpropagation",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -52283,7 +52283,7 @@ const milestones = [
     "archiveEventId": "1986-rnn",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -52539,7 +52539,7 @@ const milestones = [
     "archiveEventId": "1989-cnn",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -53063,7 +53063,7 @@ const milestones = [
     "archiveEventId": "1997-lstm",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -53603,7 +53603,7 @@ const milestones = [
     "archiveEventId": "2014-highway-network",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -53859,7 +53859,7 @@ const milestones = [
     "archiveEventId": "2014-gan",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -54347,7 +54347,7 @@ const milestones = [
     "archiveEventId": "2014-attention",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -54870,7 +54870,7 @@ const milestones = [
     "archiveEventId": "2015-resnet",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -55484,7 +55484,7 @@ const milestones = [
     "archiveEventId": "2016-densenet",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -55972,7 +55972,7 @@ const milestones = [
     "archiveEventId": "2018-bert",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -56495,7 +56495,7 @@ const milestones = [
     "archiveEventId": "2018-gpt",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -57044,7 +57044,7 @@ const milestones = [
     "archiveEventId": "2019-ai-feynman",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -57339,7 +57339,7 @@ const milestones = [
     "archiveEventId": "2020-alphafold",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -57980,7 +57980,7 @@ const milestones = [
     "archiveEventId": "2023-agents",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -58275,7 +58275,7 @@ const milestones = [
     "archiveEventId": "2024-ai-scientist",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -58615,7 +58615,7 @@ const milestones = [
     "archiveEventId": "2025-llm-competition",
     "archiveVariantId": "deep-learning",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "deep-learning",
       "name": {
@@ -58924,7 +58924,7 @@ const milestones = [
     "archiveEventId": "1951-strachey-draughts",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -59469,7 +59469,7 @@ const milestones = [
     "archiveEventId": "2016-alphago",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -59939,7 +59939,7 @@ const milestones = [
     "archiveEventId": "1988-td-update",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -60444,7 +60444,7 @@ const milestones = [
     "archiveEventId": "1994-chinook",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -60988,7 +60988,7 @@ const milestones = [
     "archiveEventId": "1997-logistello",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -61514,7 +61514,7 @@ const milestones = [
     "archiveEventId": "1997-deep-blue",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -62022,7 +62022,7 @@ const milestones = [
     "archiveEventId": "2000s-alphacat",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -62517,7 +62517,7 @@ const milestones = [
     "archiveEventId": "2013-dqn",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -63042,7 +63042,7 @@ const milestones = [
     "archiveEventId": "2017-alphazero",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -63586,7 +63586,7 @@ const milestones = [
     "archiveEventId": "2017-libratus",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -64110,7 +64110,7 @@ const milestones = [
     "archiveEventId": "2019-pluribus",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -64634,7 +64634,7 @@ const milestones = [
     "archiveEventId": "2019-suphx",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -65142,7 +65142,7 @@ const milestones = [
     "archiveEventId": "2019-muzero",
     "archiveVariantId": "gaming-ai",
     "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "gaming-ai",
       "name": {
@@ -65686,7 +65686,7 @@ const milestones = [
     "archiveEventId": "1920-rur-robots",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -66072,7 +66072,7 @@ const milestones = [
     "archiveEventId": "1942-asimov-runaround",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -66473,7 +66473,7 @@ const milestones = [
     "archiveEventId": "1950-wiener-human-use",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -66859,7 +66859,7 @@ const milestones = [
     "archiveEventId": "1965-simon-ai-prediction",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -67257,7 +67257,7 @@ const milestones = [
     "archiveEventId": "1968-hal-9000",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -67658,7 +67658,7 @@ const milestones = [
     "archiveEventId": "1973-lighthill-report",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -68062,7 +68062,7 @@ const milestones = [
     "archiveEventId": "1978-xiaolingtong",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -68448,7 +68448,7 @@ const milestones = [
     "archiveEventId": "1984-neuromancer",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -68834,7 +68834,7 @@ const milestones = [
     "archiveEventId": "1987-lisp-machine-collapse",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -69220,7 +69220,7 @@ const milestones = [
     "archiveEventId": "2014-ai-existential-warnings",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -69621,7 +69621,7 @@ const milestones = [
     "archiveEventId": "2015-openai-founding",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {
@@ -70007,7 +70007,7 @@ const milestones = [
     "archiveEventId": "2023-ai-risk-statement",
     "archiveVariantId": "humanistic-cycle",
     "archivePresentationMode": "archive",
-    "sourceKind": "archive-preview",
+    "sourceKind": "archive",
     "storyline": {
       "id": "humanistic-cycle",
       "name": {

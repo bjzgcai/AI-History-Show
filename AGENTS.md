@@ -6,7 +6,7 @@
 
 - **技术栈**: HTML5 + CSS3 + Vanilla JS + Three.js（3D地球）
 - **主入口**: `index.html`（Three.js地球 + 里程碑展示）
-- **数据文件**: `milestones-data.js`（由 `manage/generate.js` 生成，勿手动编辑）
+- **数据文件**: `milestones-data.js`（由 `npm run generate` 从 Archive JSON 生成，勿手动编辑）
 
 ## 文件结构
 
@@ -30,13 +30,16 @@ AI-History-Show/
 
 ## 内容管理工作流
 
-**只需编辑两个文件**，然后运行生成脚本：
+Archive JSON 是生产内容权威：
 
 ```bash
-# 编辑 manage/catalog.js（分类/顺序）或 manage/events.js（事件内容）
-node manage/generate.js
-# → 重新生成 milestones-data.js
+# 编辑 archive/events/<event-id>/* 和 archive/storylines/*.json
+npm run validate:archive
+npm run generate
+# → 同步生成 milestones-data.js 与 milestones-data-default.js
 ```
+
+`manage/catalog.js`、`manage/events.js` 与 `manage/generate.js` 是 Legacy rollback/comparison/migration 文件，不是默认生产写作链路。
 
 ### 数据结构（events.js）
 
@@ -104,7 +107,7 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 
 #### 5. Quiz
 
-- 每个新增 AI100 achievement 必须同步在 `manage/quizzes.js` 添加 quiz。
+- 每个新增 AI100 achievement 必须在对应 `archive/events/<event-id>/quizzes.json` 添加 quiz，并由 storyline variant 的 `quizId` 选择。
 - Quiz 布局必须匹配旧 achievement 的浏览检查点：左侧相关材料，右侧快速挑战，包含 4 个选项。
 - 题目必须简单、清楚，适合普通观众，不要考冷门细节。
 - 选项源数据可以保持固定顺序；前端会随机显示答案顺序。
@@ -124,7 +127,7 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 
 #### 7. 生成与验证
 
-- 修改 source 后必须运行 `node manage/generate.js`。
+- 修改 Archive source 后必须运行 `npm run validate:archive` 与 `npm run generate`。
 - 至少运行 `npm run lint` 和 `npm test`。
 - 新增或大批修改 AI100 achievement 时，运行 `npm run validate:ai100-context`，确保主要 context sections 满足至少两句要求。
 - 新增 archive/right-side cards 后，应抽查生成后的 `milestones-data.js`，确认 `visualModules` 的中文字段没有英文 UI 句子残留。

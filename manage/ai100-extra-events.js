@@ -1,10 +1,6 @@
-// Additional BenchCouncil AI100 entries. Keep generated milestone data in sync with `node manage/generate.js`.
-//
-// Archive migration note:
-// This is a legacy compatibility bundle for AI100 presentation content. New
-// long-term AI100 facts, sources, assets, quizzes, and display variants should
-// be authored archive-first under archive/events/* and mirrored here only when
-// the legacy generator still needs compatibility data.
+// LEGACY — rollback/comparison/migration only. Not consumed by production `npm run generate`.
+// Additional BenchCouncil AI100 entries for the explicit Legacy generator.
+// Durable AI100 facts, sources, assets, quizzes, and variants live under archive/events/*.
 
 const l = (en, zh) => ({ en, zh });
 const zh = {
