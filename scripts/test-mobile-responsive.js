@@ -62,12 +62,27 @@ const mobileRequirements = [
     },
     {
         pattern:
+            /@media\s*\(max-width:\s*600px\),\s*\(max-width:\s*932px\) and \(max-height:\s*600px\) and \(orientation:\s*landscape\)/,
+        message: 'phone landscape uses the stacked branch timeline layout'
+    },
+    {
+        pattern:
+            /\.single-stage\.is-branch-timeline \.topbar-actions[\s\S]*?--branch-about-width:\s*58px[\s\S]*?grid-template-columns:[^;]*var\(--branch-about-width\)[\s\S]*?\.single-stage\.is-branch-timeline \.about-trigger[\s\S]*?width:\s*var\(--branch-about-width\)[\s\S]*?white-space:\s*nowrap/,
+        message: 'phone branch about control stays on one line'
+    },
+    {
+        pattern:
+            /\.branch-event-summary[\s\S]*?display:\s*block[\s\S]*?overflow:\s*visible[\s\S]*?-webkit-line-clamp:\s*unset/,
+        message: 'phone branch summaries remain fully readable'
+    },
+    {
+        pattern:
             /@media\s*\(max-width:\s*600px\)[\s\S]*?\.branch-event \.branch-game-record-trigger[\s\S]*?pointer-events:\s*auto/,
         message: 'phone chess demos remain visible and touchable'
     },
     {
         pattern:
-            /const showAllRecords = window\.matchMedia\('\(max-width: 600px\)'\)\.matches;[\s\S]*?showAllRecords \|\| isCentered/,
+            /const BRANCH_TIMELINE_STACK_MEDIA_QUERY =\s*'[^']*orientation: landscape[^']*';[\s\S]*?window\.matchMedia\(BRANCH_TIMELINE_STACK_MEDIA_QUERY\)\.matches;[\s\S]*?showAllRecords \|\| isCentered/,
         message: 'phone chess demos remain keyboard accessible'
     },
     {
