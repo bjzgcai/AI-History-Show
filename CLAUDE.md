@@ -37,25 +37,22 @@ This is a no-build-tool exhibition app: the frontend is static HTML/CSS/vanilla 
 
 ### Content data flow
 
-Do not hand-edit generated data files. Source content is assembled like this:
+Do not hand-edit generated data files. Archive JSON is the production content authority:
 
 ```text
-manage/catalog.js
-manage/events.js
-manage/ai100-extra-events.js
-manage/gaming-extra-events.js
-manage/quizzes.js
-manage/figure-avatars.js
-manage/event-fusions.js
-resources/videos/{key}.json
-resources/quote-candidates.js
-resources/research-candidates.js
+archive/storylines/*.json
+archive/events/<event-id>/
+├── event.json
+├── claims.json
+├── sources.json
+├── assets.json
+├── quizzes.json
+└── variants/*.json
+resources/ browser-loadable assets
         │
         ▼
-node manage/generate.js
+node scripts/generate-archive-data.js
         │
-        ├── applies archive overlays from archive/ when enabled
-        │   (default presentationMode: preserve-legacy)
         ▼
 milestones-data.js + milestones-data-default.js
         │
@@ -63,19 +60,20 @@ milestones-data.js + milestones-data-default.js
 index.html / dual-screen.html
 ```
 
-- `manage/catalog.js` controls categories, branches/storylines, event order, and story identifiers.
-- `manage/events.js` and the extra event files hold event content. Most user-visible text should be bilingual `{ zh, en }`; plain strings are treated as Chinese and fall back through the i18n helpers.
-- `manage/event-fusions.js` merges deep-learning timeline records with overlapping BenchCouncil AI100 records so shared events present consistently across storylines.
-- `manage/generate.js` enriches events with videos, avatar registry entries, quotes, quizzes, commentary, branch/game-evolution metadata, applies archive overlays, and writes both generated data files.
-- Archive overlays currently cover all current generated display targets while preserving legacy presentation by default. `presentationMode: "preserve-legacy"` attaches archive metadata without replacing title, description, images, sources, visual modules, commentary, analysis, or quizzes. Use `presentationMode: "archive"` only for intentional presentation changes, and verify with `npm run diff:archive`.
-- `milestones-data.js` and `milestones-data-default.js` are generated outputs. Regenerate them with `npm run generate` after source content changes.
+- `archive/storylines/*.json` controls storyline membership, variant selection, enablement, and order.
+- Canonical facts, evidence, assets, quizzes, and storyline-specific presentation live under `archive/events/<event-id>/`.
+- `scripts/archive-compiler.js` resolves each storyline reference, selects variant-owned source/claim/asset/quiz IDs, and emits the frontend milestone shape.
+- `npm run generate` and `npm run generate:archive` both use the Archive-native generator. `npm run generate:legacy` retains the former compatible generator for comparison and rollback only.
+- `manage/event-fusions.js` still supplies legacy milestone-ID aliases to the Archive compiler and must remain until those mappings move into Archive metadata.
+- `manage/events.js`, `manage/catalog.js`, legacy helper files, and `resources/quote-candidates.js`, `resources/research-candidates.js`, and `resources/videos/*.json` remain for rollback and unfinished tooling migration; they are not production generation inputs.
+- `milestones-data.js` and `milestones-data-default.js` are generated outputs. Regenerate them with `npm run generate` after Archive source changes.
 
 ### Content management server
 
-- `manage/server.js` serves `manage/admin.html` at `/admin`, `manage/archive-admin.html` at `/archive-admin`, static assets, and JSON APIs for editing, archive JSON files, validation, and generation.
-- Important endpoints include `GET /api/generate/diff`, `POST /api/generate`, and `POST /api/events`.
+- `manage/server.js` serves the read-only Legacy viewer at `/admin`, the Archive JSON editor at `/archive-admin`, static assets, and Archive read/write/validation APIs.
+- Legacy mutation endpoints (`POST /api/events`, catalog/image/event-init writes, restore, and `POST /api/generate`) return HTTP 403 after the Archive authority cutover.
+- Archive editing uses `GET/POST /api/archive/file` and `POST /api/archive/validate`. Generate runtime data with `npm run generate` after validation.
 - The admin server has no authentication and is intended for local/protected use only; do not expose port 3001 publicly.
-- Server writes create backups in `manage/.backups/` and may sync YouTube/video metadata into `resources/videos/{key}.json` before saving events.
 
 ### Storylines and layouts
 
@@ -92,7 +90,7 @@ When adding or heavily editing BenchCouncil AI100 achievements:
 - Avoid generic demos: `achievement.visual` should map to a non-generic renderer or use a `buildImagePaperDemo` / `buildPaperDemo` style layout.
 - `commentarySections` should include at least `Historical Background`, `Core Idea`, and `Long-Term Legacy`, with meaningful English and Chinese text.
 - Add at least three real `achievement.sources`, including the primary paper/original source where applicable.
-- Add a matching quiz in `manage/quizzes.js`.
+- Add a matching quiz in the event's `archive/events/<event-id>/quizzes.json` and select it from the relevant variant.
 - Localize all visible fields (`title`, `description`, `location`, `figures`, `commentarySections`, `achievement`, `imageMeta`, `visualModules`, `sources`, `quizzes`). Chinese UI fields should not contain untranslated English UI phrases except proper nouns/acronyms.
 - After changes, run `npm run generate`, `npm run lint`, `npm test`, and the AI100 validators when relevant.
 

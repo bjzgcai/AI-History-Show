@@ -32,6 +32,7 @@ const {
   normalizeEditableQuoteMeta,
   normalizeQuoteText,
 } = require('../shared/utils.js');
+const { isLegacyWriteRoute } = require('./authority-boundary.js');
 const localizedText = getLocalizedText;
 const BACKUP_DIR = path.join(MANAGE, '.backups');
 
@@ -1220,6 +1221,10 @@ const server = http.createServer((req, res) => {
   }
 
   const routeKey = `${req.method} ${req.url.split('?')[0]}`;
+  if (isLegacyWriteRoute(req.method, req.url)) {
+    err(res, 'Legacy admin is read-only after the Archive authority cutover. Use /archive-admin.', 403);
+    return;
+  }
   const handler  = routes[routeKey];
 
   if (handler) {
@@ -1247,5 +1252,6 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`✓ 管理服务器已启动`);
-  console.log(`  http://localhost:${PORT}/admin`);
+  console.log(`  http://localhost:${PORT}/admin (Legacy read-only)`);
+  console.log(`  http://localhost:${PORT}/archive-admin`);
 });

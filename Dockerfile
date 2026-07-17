@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
-RUN npm run generate && npm prune --omit=dev
+RUN npm run validate:archive && npm run generate && npm prune --omit=dev
 
 FROM node:22-alpine AS admin
 
