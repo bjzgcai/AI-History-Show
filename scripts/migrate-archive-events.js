@@ -14,6 +14,10 @@ const GENERATED_DATA = path.join(ROOT, 'milestones-data.js');
 
 const FUSION_BY_AI100 = new Map(FUSIONS.map((fusion) => [fusion.ai100, fusion]));
 
+function clone(value) {
+    return JSON.parse(JSON.stringify(value));
+}
+
 function hasOwn(obj, key) {
     return Object.prototype.hasOwnProperty.call(obj || {}, key);
 }
@@ -193,6 +197,9 @@ function buildAssets(milestone, sourceId) {
                 role,
                 caption: localized(meta.caption || `${text(milestone.title, 'en')} ${role}`),
                 subcaption: localized(meta.subcaption || role),
+                sourceName: clone(meta.sourceName || {}),
+                sourceUrl: meta.sourceUrl || '',
+                displayUsage: clone(meta.usage || {}),
                 sourceId,
                 rights: {
                     status: meta.license
@@ -212,9 +219,27 @@ function buildAssets(milestone, sourceId) {
         });
 }
 
-function buildClaims(milestone, sourceIds) {
+function buildClaims(milestone, sourceIds, storylineId = '') {
     const title = localized(milestone.title || milestone.id);
     const claimSourceIds = sourceIds.slice(0, Math.min(2, sourceIds.length));
+    if (storylineId === 'humanistic-cycle') {
+        return [
+            {
+                id: 'claim-branch-summary',
+                importance: 'core',
+                text: localized(milestone.branchSummary || milestone.subtitle || title),
+                sourceIds: claimSourceIds,
+                status: 'needs-source'
+            },
+            {
+                id: 'claim-event-description',
+                importance: 'context',
+                text: localized(milestone.description || milestone.subtitle || title),
+                sourceIds: claimSourceIds,
+                status: 'needs-source'
+            }
+        ];
+    }
     return [
         {
             id: 'claim-legacy-achievement-summary',
@@ -278,7 +303,13 @@ function buildEvent(archiveId, milestone, legacyKey, storylineId) {
         },
         topics: [storylineId],
         achievementTypeIds: [storylineId === 'bench-council-ai100' ? 'ai100-achievement' : storylineId],
-        figures: normalizeFigures(milestone),
+        figures: normalizeFigures(milestone).map((figure, index) => ({
+            ...figure,
+            name: localized((milestone.figures || [])[index] && (milestone.figures || [])[index].name, figure.figureId),
+            avatar: ((milestone.figures || [])[index] && (milestone.figures || [])[index].avatar) || '',
+            avatarStyle: ((milestone.figures || [])[index] && (milestone.figures || [])[index].avatarStyle) || '',
+            figureType: ((milestone.figures || [])[index] && (milestone.figures || [])[index].figureType) || 'person'
+        })),
         organizations: [],
         canonical: true,
         relatedLegacyIds: archiveId === legacyKey ? [] : [legacyKey],
@@ -316,12 +347,13 @@ function variantPath(eventDir, variantId) {
 }
 
 function buildVariant(target, milestone, sources, assets, claims, quizzes) {
-    return {
+    const variant = {
         storylineId: target.storylineId,
         eventId: target.archiveId,
-        presentationMode: 'preserve-legacy',
+        presentationMode: target.storylineId === 'humanistic-cycle' ? 'archive' : 'preserve-legacy',
         displayTitle: localized(milestone.title || target.legacyKey),
         displaySummary: localized(milestone.subtitle || milestone.description || milestone.title || target.legacyKey),
+        ...(target.storylineId === 'humanistic-cycle' ? { displaySubtitle: localized(milestone.subtitle || '') } : {}),
         displayDescription: localized(
             milestone.description || milestone.subtitle || milestone.title || target.legacyKey
         ),
@@ -348,6 +380,23 @@ function buildVariant(target, milestone, sources, assets, claims, quizzes) {
             }
         }
     };
+
+    if (target.storylineId !== 'humanistic-cycle') return variant;
+
+    variant.sentiment = milestone.sentiment || '';
+    variant.realityLinks = clone(milestone.realityLinks || []);
+    variant.branchSummary = localized(milestone.branchSummary || milestone.subtitle || '');
+    variant.branch = clone(milestone.branch || {});
+    variant.analysis = clone(milestone.analysis || {});
+    variant.achievement = clone(milestone.achievement || {});
+    if (Array.isArray(milestone.papers)) variant.papers = clone(milestone.papers);
+    variant.photos = clone(milestone.photos || []);
+    variant.videoUrl = milestone.videoUrl || '';
+    variant.quote = clone(milestone.quote || '');
+    variant.quoteAttribution = clone(milestone.quoteAttribution || '');
+    variant.quoteMeta = clone(milestone.quoteMeta || {});
+    variant.quotePage = clone(milestone.quotePage || '');
+    return variant;
 }
 
 function loadMilestones() {
@@ -357,6 +406,7 @@ function loadMilestones() {
 
 function milestoneIdForTarget(target) {
     if (target.storylineId === 'gaming-ai') return `milestone-gaming-ai-${target.legacyKey}`;
+    if (target.storylineId === 'humanistic-cycle') return `milestone-humanistic-cycle-${target.legacyKey}`;
     return `milestone-${target.legacyKey}`;
 }
 
@@ -398,23 +448,32 @@ function coreTargets() {
     return targets;
 }
 
-function gamingTargets() {
-    const branch = (catalog.branches || []).find((item) => item.id === 'gaming-ai');
+function branchTargets(storylineId) {
+    const branch = (catalog.branches || []).find((item) => item.id === storylineId);
     return ((branch && branch.events) || []).map((key, index) => ({
-        group: 'gaming',
-        storylineId: 'gaming-ai',
-        variantId: 'gaming-ai',
+        group: storylineId,
+        storylineId,
+        variantId: storylineId,
         legacyKey: key,
         archiveId: getFusionCanonical(key),
         order: (index + 1) * 10
     }));
 }
 
+function gamingTargets() {
+    return branchTargets('gaming-ai').map((target) => ({ ...target, group: 'gaming' }));
+}
+
+function humanisticTargets() {
+    return branchTargets('humanistic-cycle');
+}
+
 function selectedTargets(mode) {
     if (mode === 'ai100') return ai100Targets();
     if (mode === 'core') return coreTargets();
     if (mode === 'gaming') return gamingTargets();
-    return [...ai100Targets(), ...coreTargets(), ...gamingTargets()];
+    if (mode === 'humanistic') return humanisticTargets();
+    return [...ai100Targets(), ...coreTargets(), ...gamingTargets(), ...humanisticTargets()];
 }
 
 function migrateTarget(target, milestoneById) {
@@ -453,7 +512,8 @@ function migrateTarget(target, milestoneById) {
     const existingClaims = readJson(claimsPath, []);
     const generatedClaims = buildClaims(
         milestone,
-        sources.map((source) => source.id)
+        sources.map((source) => source.id),
+        target.storylineId
     );
     const shouldGenerateClaims = !hasExistingEvent || existingClaims.length === 0;
     const newClaims = shouldGenerateClaims ? generatedClaims : [];
@@ -502,11 +562,13 @@ function storylineFile(storylineId) {
 }
 
 function updateStoryline(storylineId, targets) {
+    const branch = (catalog.branches || []).find((item) => item.id === storylineId);
     const filePath = storylineFile(storylineId);
     const storyline = readJson(filePath, {
         id: storylineId,
-        title: localized(storylineId),
-        type: 'timeline',
+        title: localized((branch && branch.name) || storylineId),
+        subtitle: localized((branch && branch.subtitle) || ''),
+        type: branch ? 'branch-timeline' : 'timeline',
         events: []
     });
     const existing = Array.isArray(storyline.events) ? storyline.events : [];
@@ -515,7 +577,13 @@ function updateStoryline(storylineId, targets) {
     for (const target of targets) {
         const key = `${target.archiveId}/${target.variantId}`;
         if (seen.has(key)) continue;
-        existing.push({ eventId: target.archiveId, variant: target.variantId, order: target.order, enabled: true });
+        existing.push({
+            eventId: target.archiveId,
+            variant: target.variantId,
+            ...(target.storylineId === 'humanistic-cycle' ? { milestoneId: milestoneIdForTarget(target) } : {}),
+            order: target.order,
+            enabled: true
+        });
         seen.add(key);
         changed = true;
     }
@@ -584,7 +652,7 @@ function writeProgressReport(results) {
 function main() {
     const modeArg = process.argv.find((arg) => arg.startsWith('--mode='));
     const mode = modeArg ? modeArg.split('=')[1] : 'ai100';
-    if (!['ai100', 'core', 'gaming', 'all'].includes(mode)) throw new Error(`Unsupported mode: ${mode}`);
+    if (!['ai100', 'core', 'gaming', 'humanistic', 'all'].includes(mode)) throw new Error(`Unsupported mode: ${mode}`);
     const keys = process.argv.filter((arg) => !arg.startsWith('--')).slice(2);
     const targets = selectedTargets(mode).filter(
         (target) => keys.length === 0 || keys.includes(target.legacyKey) || keys.includes(target.archiveId)

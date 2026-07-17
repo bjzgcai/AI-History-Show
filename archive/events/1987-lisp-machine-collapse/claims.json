@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "Specialized AI hardware lost its market as cheaper workstations and brittle expert systems cooled the 1980s boom.",
+      "zh": "专用 AI 硬件被更便宜的工作站替代，脆弱专家系统也让 1980 年代热潮降温。"
+    },
+    "sourceIds": [
+      "source-ai-winter-overview",
+      "source-lisp-machine-history"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization.",
+      "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。"
+    },
+    "sourceIds": [
+      "source-ai-winter-overview",
+      "source-lisp-machine-history"
+    ],
+    "status": "needs-source"
+  }
+]

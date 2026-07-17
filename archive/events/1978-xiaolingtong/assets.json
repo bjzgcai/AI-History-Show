@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-1978-xiaolingtong-future-city",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "未来城市乐观想象解释图",
+      "en": "Future-city optimism explainer"
+    },
+    "subcaption": {
+      "zh": "关于 1978 年后中国科幻乐观情绪的原创图",
+      "en": "Original diagram for Chinese post-1978 science-fiction optimism"
+    },
+    "sourceId": "source-little-smart-publication-overview",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

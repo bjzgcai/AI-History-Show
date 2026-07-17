@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-1920-rur-robots-labor-revolt",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "《R.U.R.》劳工反叛解释图",
+      "en": "R.U.R. labor-revolt explainer"
+    },
+    "subcaption": {
+      "zh": "基于档案来源重绘的原创展览图",
+      "en": "Original exhibition diagram based on archive sources"
+    },
+    "sourceId": "source-project-gutenberg-r-u-r-text",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://archive.org/details/rurrossumsuniver00apekuoft",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

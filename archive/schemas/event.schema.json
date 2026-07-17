@@ -1,113 +1,113 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "event.schema.json",
-  "title": "Archive event",
-  "type": "object",
-  "required": ["id", "year", "title"],
-  "properties": {
-    "id": {
-      "$ref": "shared.schema.json#/$defs/archiveId"
-    },
-    "year": {
-      "oneOf": [
-        { "type": "integer" },
-        { "type": "string", "minLength": 1 }
-      ]
-    },
-    "date": {
-      "type": "string"
-    },
-    "title": {
-      "$ref": "shared.schema.json#/$defs/localizedText"
-    },
-    "summary": {
-      "$ref": "shared.schema.json#/$defs/localizedText"
-    },
-    "description": {
-      "$ref": "shared.schema.json#/$defs/localizedHtml"
-    },
-    "location": {
-      "type": "object",
-      "properties": {
-        "regionId": {
-          "$ref": "shared.schema.json#/$defs/archiveId"
-        },
-        "country": {
-          "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "place": {
-          "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-        },
-        "coordinates": {
-          "$ref": "shared.schema.json#/$defs/coordinates"
-        }
-      },
-      "additionalProperties": true
-    },
-    "topics": {
-      "type": "array",
-      "items": {
-        "$ref": "shared.schema.json#/$defs/archiveId"
-      },
-      "uniqueItems": true
-    },
-    "achievementTypeIds": {
-      "type": "array",
-      "items": {
-        "$ref": "shared.schema.json#/$defs/archiveId"
-      },
-      "uniqueItems": true
-    },
-    "figures": {
-      "type": "array",
-      "items": {
-        "oneOf": [
-          {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "event.schema.json",
+    "title": "Archive event",
+    "type": "object",
+    "required": ["id", "year", "title"],
+    "properties": {
+        "id": {
             "$ref": "shared.schema.json#/$defs/archiveId"
-          },
-          {
+        },
+        "year": {
+            "oneOf": [{ "type": "integer" }, { "type": "string", "minLength": 1 }]
+        },
+        "date": {
+            "type": "string"
+        },
+        "title": {
+            "$ref": "shared.schema.json#/$defs/localizedText"
+        },
+        "summary": {
+            "$ref": "shared.schema.json#/$defs/localizedText"
+        },
+        "description": {
+            "$ref": "shared.schema.json#/$defs/localizedHtml"
+        },
+        "location": {
             "type": "object",
-            "required": ["figureId"],
             "properties": {
-              "figureId": {
-                "$ref": "shared.schema.json#/$defs/archiveId"
-              },
-              "role": {
-                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-              },
-              "organizationIds": {
-                "type": "array",
-                "items": {
-                  "$ref": "shared.schema.json#/$defs/archiveId"
+                "regionId": {
+                    "$ref": "shared.schema.json#/$defs/archiveId"
                 },
-                "uniqueItems": true
-              }
+                "country": {
+                    "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                },
+                "place": {
+                    "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                },
+                "coordinates": {
+                    "$ref": "shared.schema.json#/$defs/coordinates"
+                }
             },
             "additionalProperties": true
-          }
-        ]
-      }
+        },
+        "topics": {
+            "type": "array",
+            "items": {
+                "$ref": "shared.schema.json#/$defs/archiveId"
+            },
+            "uniqueItems": true
+        },
+        "achievementTypeIds": {
+            "type": "array",
+            "items": {
+                "$ref": "shared.schema.json#/$defs/archiveId"
+            },
+            "uniqueItems": true
+        },
+        "figures": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    {
+                        "type": "object",
+                        "required": ["figureId"],
+                        "properties": {
+                            "figureId": {
+                                "$ref": "shared.schema.json#/$defs/archiveId"
+                            },
+                            "name": {
+                                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                            },
+                            "role": {
+                                "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+                            },
+                            "organizationIds": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "shared.schema.json#/$defs/archiveId"
+                                },
+                                "uniqueItems": true
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "organizations": {
+            "type": "array",
+            "items": {
+                "$ref": "shared.schema.json#/$defs/archiveId"
+            },
+            "uniqueItems": true
+        },
+        "canonical": {
+            "type": "boolean"
+        },
+        "relatedEventIds": {
+            "type": "array",
+            "items": {
+                "$ref": "shared.schema.json#/$defs/archiveId"
+            },
+            "uniqueItems": true
+        },
+        "review": {
+            "$ref": "shared.schema.json#/$defs/reviewState"
+        }
     },
-    "organizations": {
-      "type": "array",
-      "items": {
-        "$ref": "shared.schema.json#/$defs/archiveId"
-      },
-      "uniqueItems": true
-    },
-    "canonical": {
-      "type": "boolean"
-    },
-    "relatedEventIds": {
-      "type": "array",
-      "items": {
-        "$ref": "shared.schema.json#/$defs/archiveId"
-      },
-      "uniqueItems": true
-    },
-    "review": {
-      "$ref": "shared.schema.json#/$defs/reviewState"
-    }
-  },
-  "additionalProperties": true
+    "additionalProperties": true
 }

@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "1950-wiener-human-use",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "维纳对自动化社会的预警",
+        "en": "Norbert Wiener Warns About Automation"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。",
+        "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Open Library",
+                "zh": "Open Library"
+            },
+            "title": {
+                "en": "The Human Use of Human Beings metadata",
+                "zh": "《人有人的用处》书目元数据"
+            },
+            "description": {
+                "en": "Bibliographic record confirming Wiener's public cybernetics book and its 1950 first publication year.",
+                "zh": "用于核对维纳公共控制论著作及其 1950 年首版时间的书目记录。"
+            },
+            "url": "https://openlibrary.org/works/OL4307570W",
+            "source": "Open Library",
+            "license": {
+                "en": "Reference metadata only; no book text or cover image is reused.",
+                "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
+            },
+            "usage": {
+                "en": "Verification anchor for the automation-warning node",
+                "zh": "自动化预警节点的核验锚点"
+            },
+            "action": {
+                "en": "Open book record",
+                "zh": "打开书目记录"
+            }
+        }
+    ],
+    "assetIds": ["asset-1950-wiener-human-use-feedback-warning"],
+    "sourceIds": [
+        "source-open-library-book-metadata",
+        "source-open-library-metadata-search-result",
+        "source-cybernetics-background",
+        "source-norbert-wiener-overview"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "《人有人的用处》出现在维纳关于控制论的技术工作之后，反馈已经成为描述机器、生物与社会的重要语言。它的重要性在于，在 AI 一词获得现代学科含义之前，就把机器控制问题从工程带入公共伦理。",
+                "en": "The Human Use of Human Beings appeared after Wiener's technical work on cybernetics had made feedback a central language for machines, organisms and society. It matters because it moved machine control from engineering into public ethics before the word AI had its modern institutional meaning."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪结构不是幻想恐惧，而是冷静预警：自动化可以优化，也可能替代判断与责任。因此维纳把技术控制与人的用途联系起来，追问机器进入社会系统时究竟由谁获益。",
+                "en": "The emotional structure is sober warning rather than fantasy terror: automation can optimize, but it can also displace judgment and responsibility. Wiener therefore links technical control to human use, asking who benefits when machines act in social systems."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把维纳面向公众的控制论写作视为自动化伦理思考的早期基础。它的遗产在于让人类能动性成为智能系统叙事的核心，而不只是关注机器是否聪明。",
+                "en": "Experts generally treat Wiener's public cybernetics as an early foundation for thinking about automation ethics. The book's legacy is that it makes human agency, not machine cleverness alone, central to the story of intelligent systems."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "warning",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Cybernetic warning",
+                "zh": "控制论预警"
+            },
+            "term": {
+                "en": "Feedback and delegated control",
+                "zh": "反馈与委托控制"
+            },
+            "modernTerm": {
+                "en": "Automated decision systems and accountability",
+                "zh": "自动化决策系统与问责"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "控制论把自动化变成控制、反馈与人类能动性的道德问题。",
+        "en": "Cybernetics turned automation into a moral question about control, feedback and human agency."
+    },
+    "analysis": {
+        "what": {
+            "en": "Wiener framed automation as a social-control problem before AI became a formal research field.",
+            "zh": "维纳在 AI 成为正式研究学科之前，就把自动化理解为社会控制问题。"
+        },
+        "how": {
+            "en": "Feedback loops made machines appear capable of acting within human systems, so responsibility could no longer be treated as purely mechanical.",
+            "zh": "反馈回路让机器看起来能在人类系统中行动，因此责任不能再被视为纯机械问题。"
+        },
+        "why": {
+            "en": "The same warning returns in modern debates about automated decision systems, labor displacement and delegated authority.",
+            "zh": "同样的警示会在今天关于自动化决策、劳动替代与委托权力的讨论中反复出现。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Automation warning",
+            "zh": "自动化预警"
+        },
+        "method": {
+            "en": "Cybernetic feedback as social metaphor",
+            "zh": "把控制论反馈作为社会隐喻"
+        },
+        "artifact": {
+            "en": "The Human Use of Human Beings",
+            "zh": "《人有人的用处》"
+        },
+        "material": {
+            "en": "Open Library metadata and cybernetics background",
+            "zh": "Open Library 元数据与控制论背景"
+        },
+        "demo": {
+            "en": "Feedback loops reveal how delegated control can reshape human agency",
+            "zh": "反馈回路揭示委托控制如何重塑人类能动性"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Open Library",
+                    "zh": "Open Library"
+                },
+                "title": {
+                    "en": "The Human Use of Human Beings metadata",
+                    "zh": "《人有人的用处》书目元数据"
+                },
+                "description": {
+                    "en": "Bibliographic record confirming Wiener's public cybernetics book and its 1950 first publication year.",
+                    "zh": "用于核对维纳公共控制论著作及其 1950 年首版时间的书目记录。"
+                },
+                "url": "https://openlibrary.org/works/OL4307570W",
+                "source": "Open Library",
+                "license": {
+                    "en": "Reference metadata only; no book text or cover image is reused.",
+                    "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
+                },
+                "usage": {
+                    "en": "Verification anchor for the automation-warning node",
+                    "zh": "自动化预警节点的核验锚点"
+                },
+                "action": {
+                    "en": "Open book record",
+                    "zh": "打开书目记录"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Open Library book metadata",
+                    "zh": "Open Library 图书元数据"
+                },
+                "type": {
+                    "en": "Book metadata",
+                    "zh": "图书元数据"
+                },
+                "url": "https://openlibrary.org/works/OL4307570W"
+            },
+            {
+                "label": {
+                    "en": "Open Library metadata search result",
+                    "zh": "Open Library 元数据检索结果"
+                },
+                "type": {
+                    "en": "Bibliographic verification",
+                    "zh": "书目核验"
+                },
+                "url": "https://openlibrary.org/search.json?title=The%20Human%20Use%20of%20Human%20Beings&author=Norbert%20Wiener"
+            },
+            {
+                "label": {
+                    "en": "Cybernetics background",
+                    "zh": "控制论背景"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_in_the_Animal_and_the_Machine"
+            },
+            {
+                "label": {
+                    "en": "Norbert Wiener overview",
+                    "zh": "诺伯特·维纳概览"
+                },
+                "type": {
+                    "en": "Biographical reference",
+                    "zh": "人物参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Norbert_Wiener"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

@@ -65,11 +65,16 @@ function sourceDisplay(source) {
 }
 
 function assetImageMeta(asset) {
+    const rights = asset.rights || {};
     return {
         caption: localizePair(asset.caption),
         subcaption: localizePair(asset.subcaption || { zh: asset.role || '', en: asset.role || '' }),
+        ...(asset.sourceName ? { sourceName: cloneForReview(asset.sourceName) } : {}),
+        ...(asset.sourceUrl ? { sourceUrl: asset.sourceUrl } : {}),
+        ...(rights.license ? { license: cloneForReview(rights.license) } : {}),
+        ...(asset.displayUsage ? { usage: cloneForReview(asset.displayUsage) } : {}),
         sourceId: asset.sourceId || (Array.isArray(asset.sourceIds) ? asset.sourceIds[0] : ''),
-        rights: asset.rights || {},
+        rights,
         role: asset.role || '',
         type: asset.type || ''
     };
@@ -86,8 +91,11 @@ function normalizeFigure(figure) {
 
     return {
         id: figure.figureId || '',
-        name: { zh: figure.figureId || '', en: figure.figureId || '' },
+        name: localizePair(figure.name || { zh: figure.figureId || '', en: figure.figureId || '' }),
         role: localizePair(figure.role || { zh: '', en: '' }),
+        ...(figure.avatar !== undefined ? { avatar: figure.avatar || '' } : {}),
+        ...(figure.avatarStyle !== undefined ? { avatarStyle: figure.avatarStyle || '' } : {}),
+        ...(figure.figureType !== undefined ? { figureType: figure.figureType || 'person' } : {}),
         organizationIds: figure.organizationIds || []
     };
 }
@@ -159,7 +167,7 @@ function buildMilestonePreview(root, storyline, ref) {
     const description = pickLocalized(variant.displayDescription, event.description || event.summary);
 
     const milestone = {
-        id: legacyIdFor(storyline.id, event.id) || `archive-preview-${storyline.id}-${event.id}`,
+        id: ref.milestoneId || legacyIdFor(storyline.id, event.id) || `archive-preview-${storyline.id}-${event.id}`,
         archiveEventId: event.id,
         archiveVariantId: ref.variant,
         archivePresentationMode: variant.presentationMode || 'preserve-legacy',
@@ -172,7 +180,7 @@ function buildMilestonePreview(root, storyline, ref) {
         year: event.year,
         date: event.date || '',
         title,
-        subtitle: summary,
+        subtitle: pickLocalized(variant.displaySubtitle, summary),
         category: localizePair(storyline.title),
         location: {
             name: (event.location && (event.location.place || event.location.name)) || { zh: '', en: '' },
@@ -188,6 +196,7 @@ function buildMilestonePreview(root, storyline, ref) {
         figures: (event.figures || []).map(normalizeFigure),
         resources: {
             images: imageAssets.map((asset) => asset.path),
+            ...(storyline.id === 'humanistic-cycle' ? { imageMeta } : {}),
             videos: selectedAssets
                 .filter((asset) => asset.type === 'video')
                 .map((asset) => ({ id: asset.id, url: asset.path })),
@@ -248,7 +257,11 @@ function applyVariantPresentation(milestone, variant) {
         'quoteMeta',
         'quotePage',
         'quoteAttribution',
-        'quoteLabel'
+        'quoteLabel',
+        'sentiment',
+        'realityLinks',
+        'branchSummary',
+        'branch'
     ];
     for (const field of directFields) {
         if (variant[field] !== undefined) milestone[field] = cloneForReview(variant[field]);

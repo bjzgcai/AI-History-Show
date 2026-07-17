@@ -1,0 +1,269 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "1965-simon-ai-prediction",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "西蒙的二十年 AI 预言",
+        "en": "Simon's Twenty-Year AI Prediction"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。",
+        "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Open Library",
+                "zh": "Open Library"
+            },
+            "title": {
+                "en": "The Shape of Automation metadata",
+                "zh": "《人、管理与自动化的形态》书目元数据"
+            },
+            "description": {
+                "en": "Bibliographic record confirming Simon's automation book and its 1965 publication year.",
+                "zh": "用于核对西蒙自动化著作及其 1965 年出版时间的书目记录。"
+            },
+            "url": "https://openlibrary.org/works/OL1205034W",
+            "source": "Open Library",
+            "license": {
+                "en": "Reference metadata only; no book text or cover image is reused.",
+                "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
+            },
+            "usage": {
+                "en": "Verification anchor for the hype node",
+                "zh": "技术狂热节点的核验锚点"
+            },
+            "action": {
+                "en": "Open book record",
+                "zh": "打开书目记录"
+            }
+        }
+    ],
+    "assetIds": ["asset-1965-simon-ai-prediction-hype-curve"],
+    "sourceIds": [
+        "source-open-library-book-metadata",
+        "source-open-library-metadata-search-result",
+        "source-herbert-a-simon-overview",
+        "source-nobel-prize-simon-facts",
+        "source-progress-in-artificial-intelligence-overview"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "到 1960 年代中期，符号主义 AI 已经在定理证明、游戏与问题求解中给出了令人印象深刻的演示。西蒙的预言之所以重要，是因为它展示了这些边界清晰的成功如何被转译成关于机器替代广泛人类工作的公共信心。",
+                "en": "By the mid-1960s, symbolic AI had produced impressive demonstrations in theorem proving, game playing and problem solving. Simon's prediction is important because it shows how these bounded successes could be translated into public confidence about machines replacing broad human work."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪机制是外推：如果一个领域里的推理可以被形式化，也许所有工作很快都可以被形式化。这种跳跃让早期 AI 显得像历史必然，尽管算力、数据与真实世界鲁棒性仍然薄弱。",
+                "en": "The emotional mechanism is extrapolation: if reasoning can be formalized in one domain, perhaps all work will soon be formalized. That leap made early AI feel historically inevitable even when compute, data and real-world robustness were still fragile."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把这一预言视为 AI 过度乐观的经典案例，而不是精确的技术判断。它的长期影响在于提醒我们：公共时间表本身会塑造技术，因为它会影响资金、媒体注意力以及随后的反弹。",
+                "en": "Experts generally treat the prediction as a classic example of AI over-optimism rather than as a precise technical claim. Its legacy is a warning that public timelines can become part of the technology itself by shaping funding, media attention and later backlash."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "hype",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Fiction-to-reality pressure",
+                "zh": "想象到现实的压力"
+            },
+            "term": {
+                "en": "Machine can do any human work",
+                "zh": "机器能完成任何人类工作"
+            },
+            "modernTerm": {
+                "en": "AI capability forecasting and benchmark overgeneralization",
+                "zh": "AI 能力预测与基准泛化误读"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。",
+        "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high."
+    },
+    "analysis": {
+        "what": {
+            "en": "The prediction marks the moment when laboratory success was projected into a general promise about human work.",
+            "zh": "这个预言标志着实验室成功被投射成关于人类工作的总体承诺。"
+        },
+        "how": {
+            "en": "Symbolic AI made reasoning look programmable, so researchers and funders could imagine fast progress from toy domains to broad competence.",
+            "zh": "符号主义 AI 让推理看起来可以被编程，因此研究者与资助方很容易想象从玩具领域快速扩展到通用能力。"
+        },
+        "why": {
+            "en": "The gap between promise and delivery helped create the emotional conditions for later disappointment and funding retrenchment.",
+            "zh": "承诺与兑现之间的落差，为后来的失望情绪和资助收缩制造了情绪条件。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Over-optimism",
+            "zh": "过度狂热"
+        },
+        "method": {
+            "en": "Forecasting from early symbolic AI success",
+            "zh": "从早期符号主义成功外推未来"
+        },
+        "artifact": {
+            "en": "Automation book metadata and AI-history references",
+            "zh": "自动化著作元数据与 AI 史参考"
+        },
+        "material": {
+            "en": "Open Library metadata and secondary AI history",
+            "zh": "Open Library 元数据与二手 AI 史资料"
+        },
+        "demo": {
+            "en": "A rising promise curve turns benchmark confidence into public hype",
+            "zh": "上升的承诺曲线把基准信心转化为公众狂热"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Open Library",
+                    "zh": "Open Library"
+                },
+                "title": {
+                    "en": "The Shape of Automation metadata",
+                    "zh": "《人、管理与自动化的形态》书目元数据"
+                },
+                "description": {
+                    "en": "Bibliographic record confirming Simon's automation book and its 1965 publication year.",
+                    "zh": "用于核对西蒙自动化著作及其 1965 年出版时间的书目记录。"
+                },
+                "url": "https://openlibrary.org/works/OL1205034W",
+                "source": "Open Library",
+                "license": {
+                    "en": "Reference metadata only; no book text or cover image is reused.",
+                    "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
+                },
+                "usage": {
+                    "en": "Verification anchor for the hype node",
+                    "zh": "技术狂热节点的核验锚点"
+                },
+                "action": {
+                    "en": "Open book record",
+                    "zh": "打开书目记录"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Open Library book metadata",
+                    "zh": "Open Library 图书元数据"
+                },
+                "type": {
+                    "en": "Book metadata",
+                    "zh": "图书元数据"
+                },
+                "url": "https://openlibrary.org/works/OL1205034W"
+            },
+            {
+                "label": {
+                    "en": "Open Library metadata search result",
+                    "zh": "Open Library 元数据检索结果"
+                },
+                "type": {
+                    "en": "Bibliographic verification",
+                    "zh": "书目核验"
+                },
+                "url": "https://openlibrary.org/search.json?title=The%20Shape%20of%20Automation%20for%20Men%20and%20Management&author=Herbert%20Simon"
+            },
+            {
+                "label": {
+                    "en": "Herbert A. Simon overview",
+                    "zh": "赫伯特·A·西蒙概览"
+                },
+                "type": {
+                    "en": "Biographical reference",
+                    "zh": "人物参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Herbert_A._Simon"
+            },
+            {
+                "label": {
+                    "en": "Nobel Prize Simon facts",
+                    "zh": "诺贝尔奖西蒙资料"
+                },
+                "type": {
+                    "en": "Institutional profile",
+                    "zh": "机构人物资料"
+                },
+                "url": "https://www.nobelprize.org/prizes/economic-sciences/1978/simon/facts/"
+            },
+            {
+                "label": {
+                    "en": "Progress in artificial intelligence overview",
+                    "zh": "人工智能进展概览"
+                },
+                "type": {
+                    "en": "Secondary history",
+                    "zh": "二手史料"
+                },
+                "url": "https://en.wikipedia.org/wiki/Progress_in_artificial_intelligence"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

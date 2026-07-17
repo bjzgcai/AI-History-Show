@@ -1,50 +1,54 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "storyline.schema.json",
-  "title": "Archive storyline",
-  "type": "object",
-  "required": ["id", "title", "events"],
-  "properties": {
-    "id": {
-      "$ref": "shared.schema.json#/$defs/archiveId"
-    },
-    "title": {
-      "$ref": "shared.schema.json#/$defs/localizedText"
-    },
-    "subtitle": {
-      "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-    },
-    "type": {
-      "type": "string"
-    },
-    "description": {
-      "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
-    },
-    "events": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["eventId", "variant"],
-        "properties": {
-          "eventId": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "storyline.schema.json",
+    "title": "Archive storyline",
+    "type": "object",
+    "required": ["id", "title", "events"],
+    "properties": {
+        "id": {
             "$ref": "shared.schema.json#/$defs/archiveId"
-          },
-          "variant": {
-            "$ref": "shared.schema.json#/$defs/archiveId"
-          },
-          "order": {
-            "type": "number"
-          },
-          "enabled": {
-            "type": "boolean"
-          }
         },
-        "additionalProperties": true
-      }
+        "title": {
+            "$ref": "shared.schema.json#/$defs/localizedText"
+        },
+        "subtitle": {
+            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+        },
+        "type": {
+            "type": "string"
+        },
+        "description": {
+            "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+        },
+        "events": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["eventId", "variant"],
+                "properties": {
+                    "eventId": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "variant": {
+                        "$ref": "shared.schema.json#/$defs/archiveId"
+                    },
+                    "milestoneId": {
+                        "type": "string",
+                        "pattern": "^milestone-[a-z0-9][a-z0-9._-]*$"
+                    },
+                    "order": {
+                        "type": "number"
+                    },
+                    "enabled": {
+                        "type": "boolean"
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "review": {
+            "$ref": "shared.schema.json#/$defs/reviewState"
+        }
     },
-    "review": {
-      "$ref": "shared.schema.json#/$defs/reviewState"
-    }
-  },
-  "additionalProperties": true
+    "additionalProperties": true
 }

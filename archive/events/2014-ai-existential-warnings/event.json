@@ -1,0 +1,80 @@
+{
+  "id": "2014-ai-existential-warnings",
+  "year": 2014,
+  "date": "2014",
+  "title": {
+    "zh": "关于高级 AI 风险的公开警告",
+    "en": "Public Warnings About Advanced AI Risk"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。",
+    "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "英国 / 美国",
+      "en": "United Kingdom / United States"
+    },
+    "place": {
+      "zh": "全球媒体讨论",
+      "en": "Global media debate"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "elon-musk",
+      "name": {
+        "en": "Elon Musk",
+        "zh": "埃隆·马斯克"
+      },
+      "role": {
+        "en": "Public AI-risk commentator in 2014",
+        "zh": "2014 年 AI 风险公共讨论者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "stephen-hawking",
+      "name": {
+        "en": "Stephen Hawking",
+        "zh": "斯蒂芬·霍金"
+      },
+      "role": {
+        "en": "Scientist warning about advanced AI control",
+        "zh": "警示高级 AI 控制问题的科学家"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

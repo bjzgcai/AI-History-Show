@@ -199,6 +199,31 @@ module.exports = {
   ],
   "branches": [
     {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      },
+      "subtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+      },
+      "events": [
+        "1920-rur-robots",
+        "1942-asimov-runaround",
+        "1950-wiener-human-use",
+        "1965-simon-ai-prediction",
+        "1968-hal-9000",
+        "1973-lighthill-report",
+        "1978-xiaolingtong",
+        "1984-neuromancer",
+        "1987-lisp-machine-collapse",
+        "2014-ai-existential-warnings",
+        "2015-openai-founding",
+        "2023-ai-risk-statement"
+      ]
+    },
+    {
       "id": "gaming-ai",
       "name": {
         "en": "AI in Board & Tabletop Games",

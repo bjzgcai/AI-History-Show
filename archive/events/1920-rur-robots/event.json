@@ -1,0 +1,65 @@
+{
+  "id": "1920-rur-robots",
+  "year": 1920,
+  "date": "1920",
+  "title": {
+    "zh": "《罗素姆的万能机器人》与“机器人”的诞生",
+    "en": "R.U.R. and the Birth of the Robot"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。",
+    "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility."
+  },
+  "location": {
+    "regionId": "czechia",
+    "country": {
+      "zh": "捷克",
+      "en": "Czechia"
+    },
+    "place": {
+      "zh": "布拉格出版与戏剧文化圈",
+      "en": "Prague publishing and theatre culture"
+    },
+    "coordinates": [
+      50.0755,
+      14.4378
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "karel-capek",
+      "name": {
+        "en": "Karel Capek",
+        "zh": "卡雷尔·恰佩克"
+      },
+      "role": {
+        "en": "Playwright of R.U.R.",
+        "zh": "《罗素姆的万能机器人》作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

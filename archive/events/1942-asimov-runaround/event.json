@@ -1,0 +1,80 @@
+{
+  "id": "1942-asimov-runaround",
+  "year": 1942,
+  "date": "1942",
+  "title": {
+    "zh": "阿西莫夫在《转圈圈》中提出机器人三定律",
+    "en": "Asimov's Three Laws in Runaround"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。",
+    "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "《惊奇科幻》杂志",
+      "en": "Astounding Science Fiction"
+    },
+    "coordinates": [
+      40.7128,
+      -74.006
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "isaac-asimov",
+      "name": {
+        "en": "Isaac Asimov",
+        "zh": "艾萨克·阿西莫夫"
+      },
+      "role": {
+        "en": "Author of Runaround",
+        "zh": "《转圈圈》作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "john-w-campbell",
+      "name": {
+        "en": "John W. Campbell",
+        "zh": "约翰·W·坎贝尔"
+      },
+      "role": {
+        "en": "Astounding editor and robot-story interlocutor",
+        "zh": "《惊奇科幻》编辑，机器人故事讨论者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -40,6 +40,11 @@ assert.equal(
     'gaming-ai',
     'other explicit storylines should remain unchanged'
 );
+assert.equal(
+    routing.getMilestoneStorylineId({ storyline: { id: 'humanistic-cycle' } }),
+    'humanistic-cycle',
+    'the humanistic cycle storyline should remain independently routable'
+);
 console.log('PASS milestone storyline resolution');
 
 const archiveMilestones = [

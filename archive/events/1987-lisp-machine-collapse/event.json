@@ -1,0 +1,65 @@
+{
+  "id": "1987-lisp-machine-collapse",
+  "year": 1987,
+  "date": "1987",
+  "title": {
+    "zh": "Lisp 机市场崩盘",
+    "en": "The Lisp Machine Market Collapse"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
+    "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "美国 AI 专用硬件市场",
+      "en": "US AI hardware market"
+    },
+    "coordinates": [
+      42.3736,
+      -71.1097
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "symbolics-lmi-and-expert-system-vendors",
+      "name": {
+        "en": "Symbolics, LMI and expert-system vendors",
+        "zh": "Symbolics、LMI 与专家系统厂商"
+      },
+      "role": {
+        "en": "AI hardware and software industry actors",
+        "zh": "AI 硬件与软件产业参与者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

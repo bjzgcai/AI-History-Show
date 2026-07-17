@@ -1,7 +1,7 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-15 03:35
+// 生成时间: 2026-07-17 06:40
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
-// Archive native: storylines 3, milestones 134, errors 0
+// Archive native: storylines 4, milestones 146, errors 0
 
 const milestones = [
   {
@@ -127,6 +127,10 @@ const milestones = [
           "zh": "AlexNet 主要作者",
           "en": "AlexNet lead author"
         },
+        "license": {
+          "zh": "历史人物资料图，保留来源说明。",
+          "en": "Historical figure reference image; keep attribution."
+        },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
           "status": "external-reference",
@@ -146,6 +150,10 @@ const milestones = [
         "subcaption": {
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
         },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
@@ -167,6 +175,10 @@ const milestones = [
           "zh": "portrait",
           "en": "portrait"
         },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep attribution."
+        },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
           "status": "external-reference",
@@ -186,6 +198,10 @@ const milestones = [
         "subcaption": {
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
         },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
@@ -663,6 +679,10 @@ const milestones = [
           "zh": "Transformer 论文共同作者",
           "en": "Transformer paper co-author"
         },
+        "license": {
+          "zh": "历史人物资料图，保留来源说明。",
+          "en": "Historical figure reference image; keep attribution."
+        },
         "sourceId": "source-transformer-arxiv",
         "rights": {
           "status": "external-reference",
@@ -682,6 +702,10 @@ const milestones = [
         "subcaption": {
           "zh": "algorithm-explainer",
           "en": "algorithm-explainer"
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
         },
         "sourceId": "source-transformer-arxiv",
         "rights": {
@@ -703,6 +727,10 @@ const milestones = [
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
         },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
+        },
         "sourceId": "source-transformer-arxiv",
         "rights": {
           "status": "external-reference",
@@ -723,6 +751,10 @@ const milestones = [
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
         },
+        "license": {
+          "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
+          "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
+        },
         "sourceId": "source-transformer-arxiv",
         "rights": {
           "status": "external-reference",
@@ -742,6 +774,10 @@ const milestones = [
         "subcaption": {
           "zh": "paper-page",
           "en": "paper-page"
+        },
+        "license": {
+          "zh": "论文页面资料引用，需保留来源说明。",
+          "en": "Paper page reference; keep source attribution."
         },
         "sourceId": "source-transformer-neurips",
         "rights": {
@@ -1220,6 +1256,10 @@ const milestones = [
           "zh": "team-photo",
           "en": "team-photo"
         },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep source attribution."
+        },
         "sourceId": "source-deepmind-alphago-page",
         "rights": {
           "status": "external-reference",
@@ -1239,6 +1279,10 @@ const milestones = [
         "subcaption": {
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
         },
         "sourceId": "source-alphago-nature-paper",
         "rights": {
@@ -1635,6 +1679,10 @@ const milestones = [
           "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日",
           "en": "Photograph portrait of Alan Turing, 29 March 1951"
         },
+        "license": {
+          "zh": "Public domain",
+          "en": "Public domain"
+        },
         "sourceId": "source-computing-machinery-and-intelligence",
         "rights": {
           "status": "external-reference",
@@ -1654,6 +1702,10 @@ const milestones = [
         "subcaption": {
           "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。",
           "en": "Observer C judges hidden human and machine replies through text only."
+        },
+        "license": {
+          "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+          "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
         },
         "sourceId": "source-computing-machinery-and-intelligence",
         "rights": {
@@ -2073,6 +2125,10 @@ const milestones = [
           "zh": "约翰·麦卡锡 于 斯坦福大学，2006 年",
           "en": "John McCarthy at Stanford, 2006"
         },
+        "license": {
+          "zh": "CC BY-SA 2.0",
+          "en": "CC BY-SA 2.0"
+        },
         "sourceId": "source-recursive-functions-of-symbolic-expressions",
         "rights": {
           "status": "external-reference",
@@ -2092,6 +2148,10 @@ const milestones = [
         "subcaption": {
           "zh": "根据 麦卡锡 的 LISP 论文与 LISP I 手册中的基础原语制作的解释图。",
           "en": "Original explainer derived from McCarthy's LISP paper and LISP I manual primitives."
+        },
+        "license": {
+          "zh": "Original local explainer; source text reuse rights not stated.",
+          "en": "Original local explainer; source text reuse rights not stated."
         },
         "sourceId": "source-recursive-functions-of-symbolic-expressions",
         "rights": {
@@ -2487,6 +2547,10 @@ const milestones = [
           "zh": "斯蒂芬·A·库克 摄于 2012 年图灵百年纪念活动。",
           "en": "Stephen A. Cook photographed during the Turing Centenary Celebration in 2012."
         },
+        "license": {
+          "zh": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton.",
+          "en": "Creative Commons Attribution 2.0 Generic, CC BY 2.0; author listed as orcmid / Dennis Hamilton."
+        },
         "sourceId": "source-the-complexity-of-theorem-proving-procedures",
         "rights": {
           "status": "external-reference",
@@ -2506,6 +2570,10 @@ const milestones = [
         "subcaption": {
           "zh": "根据 库克 1971 年论文与 Clay P 与 NP 难题说明制作的原创解释图。",
           "en": "Original explainer derived from Cook's 1971 paper and the Clay P versus NP problem description."
+        },
+        "license": {
+          "zh": "Original local explainer; source article reuse rights not used.",
+          "en": "Original local explainer; source article reuse rights not used."
         },
         "sourceId": "source-the-complexity-of-theorem-proving-procedures",
         "rights": {
@@ -2919,6 +2987,10 @@ const milestones = [
           "zh": "西蒙斯基金会 人物页中的 弗拉基米尔·瓦普尼克 肖像。",
           "en": "Vladimir Vapnik profile portrait from the Simons Foundation."
         },
+        "license": {
+          "zh": "西蒙斯基金会 profile image; page does not state an open reuse license.",
+          "en": "Simons Foundation profile image; page does not state an open reuse license."
+        },
         "sourceId": "source-on-the-uniform-convergence-of-relative-frequencies",
         "rights": {
           "status": "external-reference",
@@ -2938,6 +3010,10 @@ const milestones = [
         "subcaption": {
           "zh": "根据 瓦普尼克 与 切尔沃年基斯 的学习理论资料制作的原创解释图。",
           "en": "Original explainer derived from Vapnik and Chervonenkis's learning theory sources."
+        },
+        "license": {
+          "zh": "Original local explainer; source article and book figure reuse rights not used.",
+          "en": "Original local explainer; source article and book figure reuse rights not used."
         },
         "sourceId": "source-on-the-uniform-convergence-of-relative-frequencies",
         "rights": {
@@ -3361,6 +3437,10 @@ const milestones = [
           "zh": "维基共享资源 收录的 赫伯特·A·西蒙 肖像，他是 Logic Theorist 共同创建者之一。",
           "en": "Wikimedia Commons portrait of Herbert A. Simon, one of the Logic Theorist co-creators."
         },
+        "license": {
+          "zh": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded.",
+          "en": "CC BY 3.0 or GFDL; author Richard Rappaport; Wikimedia VRT permission recorded."
+        },
         "sourceId": "source-the-logic-theory-machine",
         "rights": {
           "status": "external-reference",
@@ -3380,6 +3460,10 @@ const milestones = [
         "subcaption": {
           "zh": "原创解释图，展示目标定理、启发式搜索、符号变换和证明链。",
           "en": "Original explainer showing goal theorem, heuristic search, symbolic transformations, and proof chain."
+        },
+        "license": {
+          "zh": "Original local explainer; source text and figure reuse rights not used.",
+          "en": "Original local explainer; source text and figure reuse rights not used."
         },
         "sourceId": "source-the-logic-theory-machine",
         "rights": {
@@ -3780,6 +3864,10 @@ const milestones = [
           "zh": "王浩约 1980 年代肖像，来自 Rockefeller University 历史照片收藏。",
           "en": "Hao Wang, circa 1980s, from The Rockefeller University Historical Photograph Collection."
         },
+        "license": {
+          "zh": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page.",
+          "en": "Historical Photograph Collection preview; creator and photo credit listed as unknown, reuse rights not stated on page."
+        },
         "sourceId": "source-proving-theorems-by-pattern-recognition-i",
         "rights": {
           "status": "external-reference",
@@ -3799,6 +3887,10 @@ const milestones = [
         "subcaption": {
           "zh": "原创解释图，展示公式规范化、规则匹配、证明归约与分支闭合。",
           "en": "Original explainer showing formula normalization, rule matching, proof reduction, and branch closure."
+        },
+        "license": {
+          "zh": "Original local explainer; source article images not reused.",
+          "en": "Original local explainer; source article images not reused."
         },
         "sourceId": "source-proving-theorems-by-pattern-recognition-i",
         "rights": {
@@ -4238,6 +4330,10 @@ const milestones = [
           "zh": "维基共享资源 收录的 希拉里·普特南 肖像，他是 1960 年 Davis-Putnam 过程论文共同作者。",
           "en": "Wikimedia Commons portrait of Hilary Putnam, co-author of the 1960 Davis-Putnam procedure."
         },
+        "license": {
+          "zh": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded.",
+          "en": "Creative Commons Attribution-Share Alike 2.5 Generic, CC BY-SA 2.5; Wikimedia VRT permission recorded."
+        },
         "sourceId": "source-a-computing-procedure-for-quantification-theory",
         "rights": {
           "status": "external-reference",
@@ -4257,6 +4353,10 @@ const milestones = [
         "subcaption": {
           "zh": "原创解释图，展示 CNF 子句、传播、分支、冲突剪枝与模型接受。",
           "en": "Original explainer showing CNF clauses, propagation, branching, conflict pruning, and model acceptance."
+        },
+        "license": {
+          "zh": "Original local explainer; source article images not reused.",
+          "en": "Original local explainer; source article images not reused."
         },
         "sourceId": "source-a-computing-procedure-for-quantification-theory",
         "rights": {
@@ -4672,6 +4772,10 @@ const milestones = [
           "zh": "来自 金马 个人网站的人物照片。",
           "en": "Portrait from Kingma's personal website."
         },
+        "license": {
+          "zh": "Personal website photo; rights not stated.",
+          "en": "Personal website photo; rights not stated."
+        },
         "sourceId": "source-adam-a-method-for-stochastic-optimization",
         "rights": {
           "status": "external-reference",
@@ -4692,6 +4796,10 @@ const milestones = [
           "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Adam Optimizer, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-adam-a-method-for-stochastic-optimization",
         "rights": {
           "status": "local-redraw",
@@ -4711,6 +4819,10 @@ const milestones = [
         "subcaption": {
           "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Adam Optimizer, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-adam-a-method-for-stochastic-optimization",
         "rights": {
@@ -5145,6 +5257,10 @@ const milestones = [
           "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。",
           "en": "Profile photo from the ELLIS Oxford / University of Oxford page."
         },
+        "license": {
+          "zh": "Institution profile photo; rights not stated.",
+          "en": "Institution profile photo; rights not stated."
+        },
         "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
         "rights": {
           "status": "external-reference",
@@ -5165,6 +5281,10 @@ const milestones = [
           "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for VGG Networks, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
         "rights": {
           "status": "local-redraw",
@@ -5184,6 +5304,10 @@ const milestones = [
         "subcaption": {
           "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for VGG Networks, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
         "rights": {
@@ -5627,6 +5751,10 @@ const milestones = [
           "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。",
           "en": "Researcher profile photo from the Freiburg LMB page."
         },
+        "license": {
+          "zh": "Institution profile photo; rights not stated.",
+          "en": "Institution profile photo; rights not stated."
+        },
         "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
         "rights": {
           "status": "documented-in-legacy",
@@ -5647,6 +5775,10 @@ const milestones = [
           "zh": "U-Net 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for U-Net, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
         "rights": {
           "status": "documented-in-legacy",
@@ -5666,6 +5798,10 @@ const milestones = [
         "subcaption": {
           "zh": "U-Net 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for U-Net, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
         "rights": {
@@ -6086,6 +6222,10 @@ const milestones = [
           "zh": "Physics Today 历史文章配图，原文注明照片来自 Santa Fe Institute。",
           "en": "Physics Today history article photo, credited there to Santa Fe Institute."
         },
+        "license": {
+          "zh": "Physics Today article photo; photo credit: Santa Fe Institute.",
+          "en": "Physics Today article photo; photo credit: Santa Fe Institute."
+        },
         "sourceId": "source-adaptation-in-natural-and-artificial-systems",
         "rights": {
           "status": "external-reference",
@@ -6106,6 +6246,10 @@ const milestones = [
           "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Genetic Algorithms, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-adaptation-in-natural-and-artificial-systems",
         "rights": {
           "status": "local-redraw",
@@ -6125,6 +6269,10 @@ const milestones = [
         "subcaption": {
           "zh": "遗传算法 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Genetic Algorithms, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-adaptation-in-natural-and-artificial-systems",
         "rights": {
@@ -6584,6 +6732,10 @@ const milestones = [
           "zh": "Faster R-CNN 共同作者",
           "en": "Portrait from Kaiming He's MIT-hosted personal page."
         },
+        "license": {
+          "zh": "个人网站照片；未说明复用权利。",
+          "en": "Personal website photo; rights not stated."
+        },
         "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -6604,6 +6756,10 @@ const milestones = [
           "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -6623,6 +6779,10 @@ const milestones = [
         "subcaption": {
           "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
         "rights": {
@@ -7070,6 +7230,10 @@ const milestones = [
           "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。",
           "en": "University Paris-Saclay article image about Guyon and support vector machines."
         },
+        "license": {
+          "zh": "University news image; rights not stated.",
+          "en": "University news image; rights not stated."
+        },
         "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
         "rights": {
           "status": "documented-in-legacy",
@@ -7090,6 +7254,10 @@ const milestones = [
           "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Support Vector Machines, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
         "rights": {
           "status": "documented-in-legacy",
@@ -7109,6 +7277,10 @@ const milestones = [
         "subcaption": {
           "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Support Vector Machines, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
         "rights": {
@@ -7565,6 +7737,10 @@ const milestones = [
           "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。",
           "en": "Portrait from the University of York Portraits of Statisticians archive."
         },
+        "license": {
+          "zh": "Archive portrait; rights not stated.",
+          "en": "Archive portrait; rights not stated."
+        },
         "sourceId": "source-classification-and-regression-trees",
         "rights": {
           "status": "documented-in-legacy",
@@ -7585,6 +7761,10 @@ const milestones = [
           "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for CART, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-classification-and-regression-trees",
         "rights": {
           "status": "documented-in-legacy",
@@ -7604,6 +7784,10 @@ const milestones = [
         "subcaption": {
           "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for CART, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-classification-and-regression-trees",
         "rights": {
@@ -8047,6 +8231,10 @@ const milestones = [
           "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。",
           "en": "Workshop participant page photo for Scott Kirkpatrick."
         },
+        "license": {
+          "zh": "Workshop profile photo; rights not stated.",
+          "en": "Workshop profile photo; rights not stated."
+        },
         "sourceId": "source-optimization-by-simulated-annealing",
         "rights": {
           "status": "documented-in-legacy",
@@ -8067,6 +8255,10 @@ const milestones = [
           "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-optimization-by-simulated-annealing",
         "rights": {
           "status": "documented-in-legacy",
@@ -8086,6 +8278,10 @@ const milestones = [
         "subcaption": {
           "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-optimization-by-simulated-annealing",
         "rights": {
@@ -8506,6 +8702,10 @@ const milestones = [
           "zh": "来自 斯坦福个人资料库 的人物照片。",
           "en": "Profile photo from Stanford Profiles."
         },
+        "license": {
+          "zh": "Institution profile photo; rights not stated.",
+          "en": "Institution profile photo; rights not stated."
+        },
         "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
         "rights": {
           "status": "documented-in-legacy",
@@ -8526,6 +8726,10 @@ const milestones = [
           "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Lasso, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
         "rights": {
           "status": "documented-in-legacy",
@@ -8545,6 +8749,10 @@ const milestones = [
         "subcaption": {
           "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for Lasso, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
         "rights": {
@@ -8979,6 +9187,10 @@ const milestones = [
           "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。",
           "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper."
         },
+        "license": {
+          "zh": "Podcast episode artwork; rights not stated.",
+          "en": "Podcast episode artwork; rights not stated."
+        },
         "sourceId": "source-going-deeper-with-convolutions",
         "rights": {
           "status": "documented-in-legacy",
@@ -8999,6 +9211,10 @@ const milestones = [
           "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-going-deeper-with-convolutions",
         "rights": {
           "status": "documented-in-legacy",
@@ -9018,6 +9234,10 @@ const milestones = [
         "subcaption": {
           "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
           "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-going-deeper-with-convolutions",
         "rights": {
@@ -9438,6 +9658,10 @@ const milestones = [
           "zh": "2012 年的 Robinson；维基共享资源 人物照片。",
           "en": "Robinson in 2012; Wikimedia Commons portrait."
         },
+        "license": {
+          "zh": "Creative Commons license stated on Commons file page.",
+          "en": "Creative Commons license stated on Commons file page."
+        },
         "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
         "rights": {
           "status": "documented-in-legacy",
@@ -9458,6 +9682,10 @@ const milestones = [
           "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Resolution Method, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
         "rights": {
           "status": "documented-in-legacy",
@@ -9477,6 +9705,10 @@ const milestones = [
         "subcaption": {
           "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Resolution Method, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
         "rights": {
@@ -9914,6 +10146,10 @@ const milestones = [
           "zh": "来自 维基共享资源 的 阿兰·科尔梅罗尔 相关人物图。",
           "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category."
         },
+        "license": {
+          "zh": "License stated on Commons file page.",
+          "en": "License stated on Commons file page."
+        },
         "sourceId": "source-the-birth-of-prolog",
         "rights": {
           "status": "documented-in-legacy",
@@ -9934,6 +10170,10 @@ const milestones = [
           "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for PROLOG, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-the-birth-of-prolog",
         "rights": {
           "status": "documented-in-legacy",
@@ -9953,6 +10193,10 @@ const milestones = [
         "subcaption": {
           "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for PROLOG, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-the-birth-of-prolog",
         "rights": {
@@ -10377,6 +10621,10 @@ const milestones = [
           "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。",
           "en": "MIT News portrait used in Weizenbaum’s obituary."
         },
+        "license": {
+          "zh": "麻省理工学院 新闻 image; rights not stated.",
+          "en": "MIT News image; rights not stated."
+        },
         "sourceId": "source-eliza-cacm-paper",
         "rights": {
           "status": "documented-in-legacy",
@@ -10397,6 +10645,10 @@ const milestones = [
           "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for ELIZA, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-eliza-cacm-paper",
         "rights": {
           "status": "documented-in-legacy",
@@ -10416,6 +10668,10 @@ const milestones = [
         "subcaption": {
           "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for ELIZA, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-eliza-cacm-paper",
         "rights": {
@@ -10840,6 +11096,10 @@ const milestones = [
           "zh": "诺贝尔奖官网的 Hopfield 人物图。",
           "en": "Nobel Prize profile portrait for Hopfield."
         },
+        "license": {
+          "zh": "Nobel Prize image; rights not stated.",
+          "en": "Nobel Prize image; rights not stated."
+        },
         "sourceId": "source-neural-networks-and-physical-systems",
         "rights": {
           "status": "documented-in-legacy",
@@ -10860,6 +11120,10 @@ const milestones = [
           "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Hopfield Network, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-neural-networks-and-physical-systems",
         "rights": {
           "status": "documented-in-legacy",
@@ -10879,6 +11143,10 @@ const milestones = [
         "subcaption": {
           "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Hopfield Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-neural-networks-and-physical-systems",
         "rights": {
@@ -11313,6 +11581,10 @@ const milestones = [
           "zh": "来自 Srivastava 多伦多大学个人页的人物图。",
           "en": "Portrait from Srivastava’s University of Toronto page."
         },
+        "license": {
+          "zh": "Personal website photo; rights not stated.",
+          "en": "Personal website photo; rights not stated."
+        },
         "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
         "rights": {
           "status": "documented-in-legacy",
@@ -11333,6 +11605,10 @@ const milestones = [
           "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Dropout, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
         "rights": {
           "status": "documented-in-legacy",
@@ -11352,6 +11628,10 @@ const milestones = [
         "subcaption": {
           "zh": "Dropout 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Dropout, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
         "rights": {
@@ -11789,6 +12069,10 @@ const milestones = [
           "zh": "Allen School 关于 Redmon 获 谷歌 Ph.D. Fellowship 的新闻照片。",
           "en": "Allen School news photo for Redmon’s Google Ph.D. Fellowship."
         },
+        "license": {
+          "zh": "Institution news image; rights not stated.",
+          "en": "Institution news image; rights not stated."
+        },
         "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
         "rights": {
           "status": "documented-in-legacy",
@@ -11809,6 +12093,10 @@ const milestones = [
           "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for YOLO, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
         "rights": {
           "status": "documented-in-legacy",
@@ -11828,6 +12116,10 @@ const milestones = [
         "subcaption": {
           "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for YOLO, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
         "rights": {
@@ -12252,6 +12544,10 @@ const milestones = [
           "zh": "IEEE Signal Processing Society 访谈页面中的 Mikolov 人物图。",
           "en": "IEEE Signal Processing Society newsletter image for Mikolov."
         },
+        "license": {
+          "zh": "IEEE SPS newsletter image; rights not stated.",
+          "en": "IEEE SPS newsletter image; rights not stated."
+        },
         "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
         "rights": {
           "status": "documented-in-legacy",
@@ -12272,6 +12568,10 @@ const milestones = [
           "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Word2Vec, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
         "rights": {
           "status": "documented-in-legacy",
@@ -12291,6 +12591,10 @@ const milestones = [
         "subcaption": {
           "zh": "Word2Vec 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Word2Vec, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-efficient-estimation-of-word-representations-in-vector-space",
         "rights": {
@@ -12728,6 +13032,10 @@ const milestones = [
           "zh": "斯坦福个人资料库 中的李飞飞人物图。",
           "en": "Stanford Profiles portrait for Fei-Fei Li."
         },
+        "license": {
+          "zh": "Institution profile photo; rights not stated.",
+          "en": "Institution profile photo; rights not stated."
+        },
         "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
         "rights": {
           "status": "documented-in-legacy",
@@ -12748,6 +13056,10 @@ const milestones = [
           "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for ImageNet, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
         "rights": {
           "status": "documented-in-legacy",
@@ -12767,6 +13079,10 @@ const milestones = [
         "subcaption": {
           "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for ImageNet, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
         "rights": {
@@ -13204,6 +13520,10 @@ const milestones = [
           "zh": "来自 Mnih 多伦多大学托管个人页的人物图。",
           "en": "Portrait from Mnih’s University of Toronto-hosted personal page."
         },
+        "license": {
+          "zh": "Personal website photo; rights not stated.",
+          "en": "Personal website photo; rights not stated."
+        },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
           "status": "documented-in-legacy",
@@ -13224,6 +13544,10 @@ const milestones = [
           "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Q Network, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
           "status": "documented-in-legacy",
@@ -13243,6 +13567,10 @@ const milestones = [
         "subcaption": {
           "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
@@ -13680,6 +14008,10 @@ const milestones = [
           "zh": "来自 Blei 哥伦比亚大学个人主页的人物图。",
           "en": "Portrait from Blei’s Columbia University homepage."
         },
+        "license": {
+          "zh": "Personal website photo; rights not stated.",
+          "en": "Personal website photo; rights not stated."
+        },
         "sourceId": "source-latent-dirichlet-allocation",
         "rights": {
           "status": "documented-in-legacy",
@@ -13700,6 +14032,10 @@ const milestones = [
           "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-latent-dirichlet-allocation",
         "rights": {
           "status": "documented-in-legacy",
@@ -13719,6 +14055,10 @@ const milestones = [
         "subcaption": {
           "zh": "潜在狄利克雷分配 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Latent Dirichlet Allocation, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-latent-dirichlet-allocation",
         "rights": {
@@ -14143,6 +14483,10 @@ const milestones = [
           "zh": "来自 斯坦福大学 Computer 《科学》 个人资料页的人物图。",
           "en": "Portrait from Stanford Computer Science profile."
         },
+        "license": {
+          "zh": "斯坦福大学 profile image; reuse rights not stated.",
+          "en": "Stanford profile image; reuse rights not stated."
+        },
         "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
         "rights": {
           "status": "documented-in-legacy",
@@ -14163,6 +14507,10 @@ const milestones = [
           "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for SHRDLU, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
         "rights": {
           "status": "documented-in-legacy",
@@ -14182,6 +14530,10 @@ const milestones = [
         "subcaption": {
           "zh": "SHRDLU 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for SHRDLU, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
         "rights": {
@@ -14602,6 +14954,10 @@ const milestones = [
           "zh": "来自 IBM 研究院 人物资料页的人物图。",
           "en": "Portrait from IBM Research profile."
         },
+        "license": {
+          "zh": "IBM 研究院 profile image; reuse rights not stated.",
+          "en": "IBM Research profile image; reuse rights not stated."
+        },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
@@ -14622,6 +14978,10 @@ const milestones = [
           "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Blue, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
@@ -14641,6 +15001,10 @@ const milestones = [
         "subcaption": {
           "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Blue, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
@@ -15061,6 +15425,10 @@ const milestones = [
           "zh": "来自 麻省理工学院 新闻 讣闻的人物图。",
           "en": "Portrait from MIT News obituary."
         },
+        "license": {
+          "zh": "麻省理工学院 新闻 image; terms stated on 麻省理工学院 新闻 media page.",
+          "en": "MIT News image; terms stated on MIT News media page."
+        },
         "sourceId": "source-a-framework-for-representing-knowledge",
         "rights": {
           "status": "documented-in-legacy",
@@ -15081,6 +15449,10 @@ const milestones = [
           "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Frame, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-a-framework-for-representing-knowledge",
         "rights": {
           "status": "documented-in-legacy",
@@ -15100,6 +15472,10 @@ const milestones = [
         "subcaption": {
           "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Frame, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-framework-for-representing-knowledge",
         "rights": {
@@ -15520,6 +15896,10 @@ const milestones = [
           "zh": "来自 维基共享资源 的图灵奖得主照片。",
           "en": "Turing laureate photo from Wikimedia Commons."
         },
+        "license": {
+          "zh": "Creative Commons license stated on Commons file page.",
+          "en": "Creative Commons license stated on Commons file page."
+        },
         "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
         "rights": {
           "status": "documented-in-legacy",
@@ -15540,6 +15920,10 @@ const milestones = [
           "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for DENDRAL, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
         "rights": {
           "status": "documented-in-legacy",
@@ -15559,6 +15943,10 @@ const milestones = [
         "subcaption": {
           "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for DENDRAL, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
         "rights": {
@@ -15976,6 +16364,10 @@ const milestones = [
           "zh": "来自 UBC Computer 《科学》 个人资料页的人物图。",
           "en": "Portrait from UBC Computer Science profile."
         },
+        "license": {
+          "zh": "UBC profile image; reuse rights not stated.",
+          "en": "UBC profile image; reuse rights not stated."
+        },
         "sourceId": "source-object-recognition-from-local-scale-invariant-features",
         "rights": {
           "status": "documented-in-legacy",
@@ -15996,6 +16388,10 @@ const milestones = [
           "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for SIFT, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-object-recognition-from-local-scale-invariant-features",
         "rights": {
           "status": "documented-in-legacy",
@@ -16015,6 +16411,10 @@ const milestones = [
         "subcaption": {
           "zh": "SIFT 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for SIFT, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-object-recognition-from-local-scale-invariant-features",
         "rights": {
@@ -16432,6 +16832,10 @@ const milestones = [
           "zh": "来自 van der Maaten 个人主页的人物图。",
           "en": "Portrait from van der Maaten homepage."
         },
+        "license": {
+          "zh": "Personal website image; reuse rights not stated.",
+          "en": "Personal website image; reuse rights not stated."
+        },
         "sourceId": "source-visualizing-data-using-t-sne",
         "rights": {
           "status": "documented-in-legacy",
@@ -16452,6 +16856,10 @@ const milestones = [
           "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for t-SNE, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-visualizing-data-using-t-sne",
         "rights": {
           "status": "documented-in-legacy",
@@ -16471,6 +16879,10 @@ const milestones = [
         "subcaption": {
           "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for t-SNE, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-visualizing-data-using-t-sne",
         "rights": {
@@ -16910,6 +17322,10 @@ const milestones = [
           "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。",
           "en": "Historical Cornell image of Rosenblatt and the perceptron lineage."
         },
+        "license": {
+          "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL.",
+          "en": "Cornell historical image; reuse rights not stated on extracted image URL."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "documented-in-legacy",
@@ -16929,6 +17345,10 @@ const milestones = [
         "subcaption": {
           "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
@@ -16950,6 +17370,10 @@ const milestones = [
           "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "documented-in-legacy",
@@ -16969,6 +17393,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
@@ -16990,6 +17418,10 @@ const milestones = [
           "zh": "《感知机：大脑中信息存储与组织的概率模型》",
           "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "external-reference",
@@ -17010,6 +17442,10 @@ const milestones = [
           "zh": "感知机与连接主义",
           "en": "The Perceptron and Connectionism"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "external-reference",
@@ -17029,6 +17465,10 @@ const milestones = [
         "subcaption": {
           "zh": "感知机与连接主义",
           "en": "The Perceptron and Connectionism"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
@@ -17446,6 +17886,10 @@ const milestones = [
           "zh": "来自 辛顿 多伦多大学页面的人物图。",
           "en": "Photo from Hinton's University of Toronto page."
         },
+        "license": {
+          "zh": "University personal photo page; reuse rights not stated.",
+          "en": "University personal photo page; reuse rights not stated."
+        },
         "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
         "rights": {
           "status": "documented-in-legacy",
@@ -17466,6 +17910,10 @@ const milestones = [
           "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Belief Network, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
         "rights": {
           "status": "documented-in-legacy",
@@ -17485,6 +17933,10 @@ const milestones = [
         "subcaption": {
           "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Belief Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
         "rights": {
@@ -17902,6 +18354,10 @@ const milestones = [
           "zh": "来自 Sutton 个人主页的人物图。",
           "en": "Portrait from Sutton's personal homepage."
         },
+        "license": {
+          "zh": "Personal website image; reuse rights not stated.",
+          "en": "Personal website image; reuse rights not stated."
+        },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
@@ -17922,6 +18378,10 @@ const milestones = [
           "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
@@ -17941,6 +18401,10 @@ const milestones = [
         "subcaption": {
           "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
@@ -18358,6 +18822,10 @@ const milestones = [
           "zh": "来自 维基共享资源 NIPS 2013 图片的人物图。",
           "en": "Portrait from Wikimedia Commons NIPS 2013 image."
         },
+        "license": {
+          "zh": "Creative Commons license stated on Commons file page.",
+          "en": "Creative Commons license stated on Commons file page."
+        },
         "sourceId": "source-bayesian-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -18378,6 +18846,10 @@ const milestones = [
           "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Bayesian Network, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-bayesian-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -18397,6 +18869,10 @@ const milestones = [
         "subcaption": {
           "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Bayesian Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-bayesian-networks",
         "rights": {
@@ -18819,6 +19295,10 @@ const milestones = [
           "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。",
           "en": "Original local explainer for turning assumptions and goals into Otter clause lists."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-otter-3-3-reference-manual",
         "rights": {
           "status": "documented-in-legacy",
@@ -18838,6 +19318,10 @@ const milestones = [
         "subcaption": {
           "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。",
           "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-otter-3-3-reference-manual",
         "rights": {
@@ -18859,6 +19343,10 @@ const milestones = [
           "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
           "en": "Original local explainer based on OTTER 3.3 Reference Manual."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-otter-3-3-reference-manual",
         "rights": {
           "status": "documented-in-legacy",
@@ -18878,6 +19366,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
           "en": "Original local explainer based on OTTER 3.3 Reference Manual."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-otter-3-3-reference-manual",
         "rights": {
@@ -19307,6 +19799,10 @@ const milestones = [
           "zh": "IBM Watson / DeepQA 团队负责人。",
           "en": "Principal investigator of the IBM Watson / DeepQA team."
         },
+        "license": {
+          "zh": "CC BY 2.0",
+          "en": "CC BY 2.0"
+        },
         "sourceId": "source-watson-beyond-jeopardy",
         "rights": {
           "status": "documented-in-legacy",
@@ -19326,6 +19822,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-image",
           "en": "external-reference-image"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-watson-beyond-jeopardy",
         "rights": {
@@ -19348,6 +19848,10 @@ const milestones = [
           "zh": "external-reference-diagram",
           "en": "external-reference-diagram"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-watson-beyond-jeopardy",
         "rights": {
           "status": "external-reference",
@@ -19368,6 +19872,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 沃森：超越《危险边缘！》 制作的本地解释图。",
           "en": "Original local explainer based on Watson: Beyond Jeopardy!."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-watson-beyond-jeopardy",
         "rights": {
@@ -19799,6 +20307,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-strachey-draughts-program-screenshot",
         "rights": {
           "status": "external-reference",
@@ -19819,6 +20331,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-image",
           "en": "external-reference-image"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-checkers-board-photo",
         "rights": {
@@ -19841,6 +20357,10 @@ const milestones = [
           "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
           "en": "Original local explainer based on Logical or non-mathematical programmes."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
           "status": "documented-in-legacy",
@@ -19860,6 +20380,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
           "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
@@ -20291,6 +20815,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-jonathan-schaeffer-portrait",
         "rights": {
           "status": "external-reference",
@@ -20312,6 +20840,10 @@ const milestones = [
           "zh": "引用来源页面截图：Chinook project home。",
           "en": "Screenshot of the cited source page: Chinook project home."
         },
+        "license": {
+          "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+          "en": "Source page screenshot for citation preview; rights remain with the source site."
+        },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
@@ -20332,6 +20864,10 @@ const milestones = [
           "zh": "依据 跳棋已被求解 制作的本地解释图。",
           "en": "Original local explainer based on Checkers Is Solved."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
@@ -20351,6 +20887,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 跳棋已被求解 制作的本地解释图。",
           "en": "Original local explainer based on Checkers Is Solved."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-chinook-project-home",
         "rights": {
@@ -20782,6 +21322,10 @@ const milestones = [
           "zh": "Pandemonium 架构提出者。",
           "en": "Author of the Pandemonium architecture."
         },
+        "license": {
+          "zh": "CC0",
+          "en": "CC0"
+        },
         "sourceId": "source-pandemonium-a-paradigm-for-learning",
         "rights": {
           "status": "documented-in-legacy",
@@ -20801,6 +21345,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-image",
           "en": "external-reference-image"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-pandemonium-a-paradigm-for-learning",
         "rights": {
@@ -20823,6 +21371,10 @@ const milestones = [
           "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。",
           "en": "Original local explainer based on Pandemonium: A Paradigm for Learning."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-pandemonium-a-paradigm-for-learning",
         "rights": {
           "status": "documented-in-legacy",
@@ -20842,6 +21394,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。",
           "en": "Original local explainer based on Pandemonium: A Paradigm for Learning."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-pandemonium-a-paradigm-for-learning",
         "rights": {
@@ -21286,6 +21842,10 @@ const milestones = [
           "zh": "Cyc 项目创始人。",
           "en": "Founder of the Cyc project."
         },
+        "license": {
+          "zh": "CC BY-SA 4.0",
+          "en": "CC BY-SA 4.0"
+        },
         "sourceId": "source-building-large-knowledge-based-systems",
         "rights": {
           "status": "documented-in-legacy",
@@ -21305,6 +21865,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-image",
           "en": "external-reference-image"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-building-large-knowledge-based-systems",
         "rights": {
@@ -21327,6 +21891,10 @@ const milestones = [
           "zh": "依据 构建大型知识系统 制作的本地解释图。",
           "en": "Original local explainer based on Building Large Knowledge-Based Systems."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-building-large-knowledge-based-systems",
         "rights": {
           "status": "documented-in-legacy",
@@ -21346,6 +21914,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 CycL 的演化 制作的本地解释图。",
           "en": "Original local explainer based on The Evolution of CycL."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-building-large-knowledge-based-systems",
         "rights": {
@@ -21777,6 +22349,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
         "rights": {
           "status": "external-reference",
@@ -21797,6 +22373,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-image",
           "en": "external-reference-image"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
         "rights": {
@@ -21819,6 +22399,10 @@ const milestones = [
           "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。",
           "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
         "rights": {
           "status": "documented-in-legacy",
@@ -21838,6 +22422,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 重访 R1：一线四年 制作的本地解释图。",
           "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
         "rights": {
@@ -22269,6 +22857,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-least-squares-quantization-in-pcm",
         "rights": {
           "status": "external-reference",
@@ -22289,6 +22881,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-diagram",
           "en": "external-reference-diagram"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-least-squares-quantization-in-pcm",
         "rights": {
@@ -22311,6 +22907,10 @@ const milestones = [
           "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。",
           "en": "Original local explainer based on Least squares quantization in PCM."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-least-squares-quantization-in-pcm",
         "rights": {
           "status": "documented-in-legacy",
@@ -22330,6 +22930,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。",
           "en": "Original local explainer based on scikit-learn KMeans documentation."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-least-squares-quantization-in-pcm",
         "rights": {
@@ -22774,6 +23378,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
         "rights": {
           "status": "external-reference",
@@ -22794,6 +23402,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-diagram",
           "en": "external-reference-diagram"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
         "rights": {
@@ -22816,6 +23428,10 @@ const milestones = [
           "zh": "依据 一种发现簇的基于密度的算法 制作的本地解释图。",
           "en": "Original local explainer based on A density-based algorithm for discovering clusters."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
         "rights": {
           "status": "documented-in-legacy",
@@ -22835,6 +23451,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 再访 DBSCAN，再访 制作的本地解释图。",
           "en": "Original local explainer based on DBSCAN Revisited, Revisited."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
         "rights": {
@@ -23279,6 +23899,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-normalized-cuts-and-image-segmentation",
         "rights": {
           "status": "external-reference",
@@ -23299,6 +23923,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-diagram",
           "en": "external-reference-diagram"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-normalized-cuts-and-image-segmentation",
         "rights": {
@@ -23321,6 +23949,10 @@ const milestones = [
           "zh": "依据 归一化切分与图像分割 制作的本地解释图。",
           "en": "Original local explainer based on Normalized Cuts and Image Segmentation."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-normalized-cuts-and-image-segmentation",
         "rights": {
           "status": "documented-in-legacy",
@@ -23340,6 +23972,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。",
           "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-normalized-cuts-and-image-segmentation",
         "rights": {
@@ -23780,6 +24416,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-nearest-neighbor-pattern-classification",
         "rights": {
           "status": "external-reference",
@@ -23800,6 +24440,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于最近邻投票的本地原创解释图。",
           "en": "Original local explainer of nearest-neighbor voting."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-nearest-neighbor-pattern-classification",
         "rights": {
@@ -24259,6 +24903,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
         "rights": {
           "status": "external-reference",
@@ -24279,6 +24927,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 L2 系数收缩的本地原创解释图。",
           "en": "Original local explainer of L2 coefficient shrinkage."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
         "rights": {
@@ -24738,6 +25390,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-histograms-of-oriented-gradients-for-human-detection",
         "rights": {
           "status": "external-reference",
@@ -24758,6 +25414,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于梯度方向直方图的本地原创解释图。",
           "en": "Original local explainer of gradient-orientation histograms."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-histograms-of-oriented-gradients-for-human-detection",
         "rights": {
@@ -25217,6 +25877,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-surf-speeded-up-robust-features",
         "rights": {
           "status": "external-reference",
@@ -25237,6 +25901,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 SURF 式兴趣点检测的本地原创解释图。",
           "en": "Original local explainer of SURF-style interest point detection."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-surf-speeded-up-robust-features",
         "rights": {
@@ -25696,6 +26364,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
         "rights": {
           "status": "external-reference",
@@ -25716,6 +26388,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 Kernel PCA 嵌入的本地原创解释图。",
           "en": "Original local explainer of kernel PCA embedding."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
         "rights": {
@@ -26175,6 +26851,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
         "rights": {
           "status": "external-reference",
@@ -26195,6 +26875,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于非负部件分解的本地原创解释图。",
           "en": "Original local explainer of nonnegative parts-based factorization."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
         "rights": {
@@ -26654,6 +27338,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
         "rights": {
           "status": "external-reference",
@@ -26674,6 +27362,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 Isomap 测地嵌入的本地原创解释图。",
           "en": "Original local explainer of Isomap geodesic embedding."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
         "rights": {
@@ -27133,6 +27825,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
         "rights": {
           "status": "external-reference",
@@ -27153,6 +27849,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 LLE 邻域重建的本地原创解释图。",
           "en": "Original local explainer of LLE neighborhood reconstruction."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
         "rights": {
@@ -27612,6 +28312,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
         "rights": {
           "status": "external-reference",
@@ -27632,6 +28336,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于二值输入、阈值和输出的本地原创解释图。",
           "en": "Original local explainer of binary input, threshold, and output."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
         "rights": {
@@ -28091,6 +28799,10 @@ const milestones = [
           "zh": "SNARC 共同建造者。",
           "en": "Co-builder of SNARC."
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-snarc-history-overview",
         "rights": {
           "status": "documented-in-legacy",
@@ -28110,6 +28822,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 SNARC 式奖励学习的本地原创解释图。",
           "en": "Original local explainer of SNARC-style reward learning."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-snarc-history-overview",
         "rights": {
@@ -28556,6 +29272,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
         "rights": {
           "status": "external-reference",
@@ -28576,6 +29296,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于自组织映射调整的本地原创解释图。",
           "en": "Original local explainer of self-organizing map adaptation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
         "rights": {
@@ -29035,6 +29759,10 @@ const milestones = [
           "zh": "1986 年反向传播论文共同作者",
           "en": "Co-author of the 1986 back-propagation paper"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-learning-representations-by-back-propagating-errors",
         "rights": {
           "status": "documented-in-legacy",
@@ -29054,6 +29782,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于反向传播误差流的本地原创解释图。",
           "en": "Original local explainer of back-propagation error flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-representations-by-back-propagating-errors",
         "rights": {
@@ -29517,6 +30249,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-deep-sparse-rectifier-neural-networks",
         "rights": {
           "status": "external-reference",
@@ -29537,6 +30273,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 max(0, x) 激活函数的本地原创解释图。",
           "en": "Original local explainer of the max(0, x) activation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-deep-sparse-rectifier-neural-networks",
         "rights": {
@@ -29987,6 +30727,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-neocognitron",
         "rights": {
           "status": "external-reference",
@@ -30007,6 +30751,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 Neocognitron 层级结构的本地原创解释图。",
           "en": "Original local explainer of neocognitron hierarchy."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-neocognitron",
         "rights": {
@@ -30470,6 +31218,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-yann-lecun-s-home-page",
         "rights": {
           "status": "external-reference",
@@ -30491,6 +31243,10 @@ const milestones = [
           "zh": "关于 LeNet 式识别的本地原创解释图。",
           "en": "Original local explainer of LeNet-style recognition."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
           "status": "documented-in-legacy",
@@ -30510,6 +31266,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
@@ -30531,6 +31291,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
           "status": "external-reference",
@@ -30550,6 +31314,10 @@ const milestones = [
         "subcaption": {
           "zh": "卷积神经网络 架构图",
           "en": "Convolutional Neural Networks"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
@@ -30996,6 +31764,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-a-neural-probabilistic-language-model",
         "rights": {
           "status": "external-reference",
@@ -31016,6 +31788,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于神经语言建模的本地原创解释图。",
           "en": "Original local explainer of neural language modeling."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-neural-probabilistic-language-model",
         "rights": {
@@ -31522,6 +32298,10 @@ const milestones = [
           "zh": "ResNet 主要作者。",
           "en": "Lead author of ResNet."
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "documented-in-legacy",
@@ -31541,6 +32321,10 @@ const milestones = [
         "subcaption": {
           "zh": "项目使用的架构图。",
           "en": "Architecture visual used by the project."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
@@ -31562,6 +32346,10 @@ const milestones = [
           "zh": "ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授",
           "en": "ResNet first author; Associate Professor at MIT EECS"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "external-reference",
@@ -31581,6 +32369,10 @@ const milestones = [
         "subcaption": {
           "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰",
           "en": "ResNet co-author; later at Megvii, now at StepFun"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
@@ -31602,6 +32394,10 @@ const milestones = [
           "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁",
           "en": "ResNet co-author; now VP of R&D at NIO"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "external-reference",
@@ -31622,6 +32418,10 @@ const milestones = [
           "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）",
           "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "external-reference",
@@ -31641,6 +32441,10 @@ const milestones = [
         "subcaption": {
           "zh": "ResNet 架构图",
           "en": "ResNet diagram"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
@@ -32100,6 +32904,10 @@ const milestones = [
           "zh": "批归一化共同作者。",
           "en": "Co-author of Batch Normalization."
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-batch-normalization",
         "rights": {
           "status": "documented-in-legacy",
@@ -32119,6 +32927,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于批统计量与可学习缩放的本地原创解释图。",
           "en": "Original local explainer of batch statistics and learned scale."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-batch-normalization",
         "rights": {
@@ -32591,6 +33403,10 @@ const milestones = [
           "zh": "DenseNet 背后的研究者。",
           "en": "Researchers behind DenseNet."
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -32611,6 +33427,10 @@ const milestones = [
           "zh": "项目使用的架构图。",
           "en": "Architecture visual used by the project."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -32630,6 +33450,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
@@ -33093,6 +33917,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-an-image-is-worth-16x16-words",
         "rights": {
           "status": "external-reference",
@@ -33113,6 +33941,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于 ViT 图像块令牌化的本地原创解释图。",
           "en": "Original local explainer of ViT patch tokenization."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-an-image-is-worth-16x16-words",
         "rights": {
@@ -33589,6 +34421,10 @@ const milestones = [
           "zh": "LSTM 共同作者",
           "en": "LSTM co-author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-long-short-term-memory",
         "rights": {
           "status": "documented-in-legacy",
@@ -33608,6 +34444,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于门控序列记忆的本地原创解释图。",
           "en": "Original local explainer of gated sequence memory."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-long-short-term-memory",
         "rights": {
@@ -33629,6 +34469,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-long-short-term-memory",
         "rights": {
           "status": "external-reference",
@@ -33649,6 +34493,10 @@ const milestones = [
           "zh": "LSTM与门控机制 架构图",
           "en": "LSTM and Gating Mechanisms"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-long-short-term-memory",
         "rights": {
           "status": "local-redraw",
@@ -33668,6 +34516,10 @@ const milestones = [
         "subcaption": {
           "zh": "LSTM与门控机制 架构图",
           "en": "LSTM and Gating Mechanisms"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-long-short-term-memory",
         "rights": {
@@ -34144,6 +34996,10 @@ const milestones = [
           "zh": "GAN 主要作者",
           "en": "GAN lead author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-generative-adversarial-nets",
         "rights": {
           "status": "documented-in-legacy",
@@ -34164,6 +35020,10 @@ const milestones = [
           "zh": "关于生成器-判别器训练的本地原创解释图。",
           "en": "Original local explainer of generator-discriminator training."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-generative-adversarial-nets",
         "rights": {
           "status": "documented-in-legacy",
@@ -34183,6 +35043,10 @@ const milestones = [
         "subcaption": {
           "zh": "GAN（生成对抗网路） 架构图",
           "en": "GANs: Generative Adversarial Networks"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-generative-adversarial-nets",
         "rights": {
@@ -34674,6 +35538,10 @@ const milestones = [
           "zh": "神经注意力研究的机构背景",
           "en": "Institutional context for neural attention research"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
           "status": "documented-in-legacy",
@@ -34693,6 +35561,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于源令牌注意力的本地原创解释图。",
           "en": "Original local explainer of source-token attention."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
@@ -34714,6 +35586,10 @@ const milestones = [
           "zh": "自回归模型和注意力机制 架构图",
           "en": "Autoregressive Models and Attention diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
           "status": "local-redraw",
@@ -34733,6 +35609,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
@@ -35196,6 +36076,10 @@ const milestones = [
           "zh": "BERT 主要作者",
           "en": "BERT lead author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-bert",
         "rights": {
           "status": "documented-in-legacy",
@@ -35215,6 +36099,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于双向预训练的本地原创解释图。",
           "en": "Original local explainer of bidirectional pre-training."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-bert",
         "rights": {
@@ -35236,6 +36124,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-bert",
         "rights": {
           "status": "external-reference",
@@ -35256,6 +36148,10 @@ const milestones = [
           "zh": "BERT 架构图",
           "en": "BERT diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-bert",
         "rights": {
           "status": "local-redraw",
@@ -35275,6 +36171,10 @@ const milestones = [
         "subcaption": {
           "zh": "BERT 架构图",
           "en": "BERT diagram"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-bert",
         "rights": {
@@ -35740,6 +36640,10 @@ const milestones = [
           "zh": "GPT 主要作者",
           "en": "GPT lead author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
           "status": "documented-in-legacy",
@@ -35759,6 +36663,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于解码器式生成预训练的本地原创解释图。",
           "en": "Original local explainer of decoder-only generative pre-training."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
@@ -35780,6 +36688,10 @@ const milestones = [
           "zh": "GPT 架构图",
           "en": "GPT diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
           "status": "local-redraw",
@@ -35799,6 +36711,10 @@ const milestones = [
         "subcaption": {
           "zh": "GPT 架构图",
           "en": "GPT diagram"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
@@ -35820,6 +36736,10 @@ const milestones = [
           "zh": "GPT",
           "en": "GPT"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
           "status": "external-reference",
@@ -35839,6 +36759,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
@@ -36323,6 +37247,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-deepmind-alphafold-page",
         "rights": {
           "status": "external-reference",
@@ -36344,6 +37272,10 @@ const milestones = [
           "zh": "关于从序列到结构预测的本地原创解释图。",
           "en": "Original local explainer of sequence-to-structure prediction."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "documented-in-legacy",
@@ -36363,6 +37295,10 @@ const milestones = [
         "subcaption": {
           "zh": "AlphaFold: 蛋白质结构预测 架构图",
           "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -36384,6 +37320,10 @@ const milestones = [
           "zh": "AlphaFold: 蛋白质结构预测",
           "en": "AlphaFold: Protein Structure Prediction"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "external-reference",
@@ -36403,6 +37343,10 @@ const milestones = [
         "subcaption": {
           "zh": "AlphaFold: 蛋白质结构预测 架构图",
           "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -36424,6 +37368,10 @@ const milestones = [
           "zh": "AlphaFold: 蛋白质结构预测",
           "en": "AlphaFold: Protein Structure Prediction"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "external-reference",
@@ -36443,6 +37391,10 @@ const milestones = [
         "subcaption": {
           "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
           "en": "Highly accurate protein structure prediction with AlphaFold"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -36464,6 +37416,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "external-reference",
@@ -36483,6 +37439,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -36929,6 +37889,10 @@ const milestones = [
           "zh": "CLIP 主要作者",
           "en": "CLIP lead author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-learning-transferable-visual-models-from-natural-language-supervision",
         "rights": {
           "status": "documented-in-legacy",
@@ -36948,6 +37912,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于图文对比学习的本地原创解释图。",
           "en": "Original local explainer of image-text contrastive learning."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-transferable-visual-models-from-natural-language-supervision",
         "rights": {
@@ -37394,6 +38362,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-zero-shot-text-to-image-generation",
         "rights": {
           "status": "external-reference",
@@ -37414,6 +38386,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于提示词条件图像生成的本地原创解释图。",
           "en": "Original local explainer of prompt-conditioned image generation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-zero-shot-text-to-image-generation",
         "rights": {
@@ -37860,6 +38836,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
         "rights": {
           "status": "external-reference",
@@ -37880,6 +38860,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于文本引导潜空间去噪的本地原创解释图。",
           "en": "Original local explainer of text-guided latent denoising."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
         "rights": {
@@ -38330,6 +39314,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-segment-anything",
         "rights": {
           "status": "external-reference",
@@ -38350,6 +39338,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于从提示到掩码分割的本地原创解释图。",
           "en": "Original local explainer of prompt-to-mask segmentation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-segment-anything",
         "rights": {
@@ -38796,6 +39788,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
         "rights": {
           "status": "external-reference",
@@ -38816,6 +39812,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
         "rights": {
@@ -39289,6 +40289,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-glove-global-vectors-for-word-representation",
         "rights": {
           "status": "external-reference",
@@ -39309,6 +40313,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-glove-global-vectors-for-word-representation",
         "rights": {
@@ -39782,6 +40790,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-conditional-generative-adversarial-nets",
         "rights": {
           "status": "external-reference",
@@ -39802,6 +40814,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-conditional-generative-adversarial-nets",
         "rights": {
@@ -40275,6 +41291,10 @@ const milestones = [
           "zh": "DCGAN 主要作者",
           "en": "DCGAN lead author"
         },
+        "license": {
+          "zh": "本地项目图片；复用权利沿用现有项目素材元数据。",
+          "en": "Local project image; reuse rights inherited from existing project asset metadata."
+        },
         "sourceId": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
         "rights": {
           "status": "documented-in-legacy",
@@ -40294,6 +41314,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
         "rights": {
@@ -40767,6 +41791,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-wasserstein-generative-adversarial-networks",
         "rights": {
           "status": "external-reference",
@@ -40787,6 +41815,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-wasserstein-generative-adversarial-networks",
         "rights": {
@@ -41260,6 +42292,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
         "rights": {
           "status": "external-reference",
@@ -41280,6 +42316,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
         "rights": {
@@ -41753,6 +42793,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
         "rights": {
           "status": "external-reference",
@@ -41773,6 +42817,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
         "rights": {
@@ -42246,6 +43294,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-a-style-based-generator-architecture-for-gans",
         "rights": {
           "status": "external-reference",
@@ -42266,6 +43318,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-a-style-based-generator-architecture-for-gans",
         "rights": {
@@ -42739,6 +43795,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-auto-encoding-variational-bayes",
         "rights": {
           "status": "external-reference",
@@ -42759,6 +43819,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-auto-encoding-variational-bayes",
         "rights": {
@@ -43232,6 +44296,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
         "rights": {
           "status": "external-reference",
@@ -43252,6 +44320,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
         "rights": {
@@ -43725,6 +44797,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-the-graph-neural-network-model",
         "rights": {
           "status": "external-reference",
@@ -43745,6 +44821,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-the-graph-neural-network-model",
         "rights": {
@@ -44218,6 +45298,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
         "rights": {
           "status": "external-reference",
@@ -44238,6 +45322,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
         "rights": {
@@ -44711,6 +45799,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-graph-attention-networks",
         "rights": {
           "status": "external-reference",
@@ -44731,6 +45823,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-graph-attention-networks",
         "rights": {
@@ -45214,6 +46310,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-neural-architecture-search-with-reinforcement-learning",
         "rights": {
           "status": "external-reference",
@@ -45234,6 +46334,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-neural-architecture-search-with-reinforcement-learning",
         "rights": {
@@ -45707,6 +46811,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-deep-compression",
         "rights": {
           "status": "external-reference",
@@ -45727,6 +46835,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-deep-compression",
         "rights": {
@@ -46210,6 +47322,10 @@ const milestones = [
           "zh": "知识蒸馏共同作者",
           "en": "Knowledge distillation co-author"
         },
+        "license": {
+          "zh": "本地项目图片；复用权利沿用现有项目素材元数据。",
+          "en": "Local project image; reuse rights inherited from existing project asset metadata."
+        },
         "sourceId": "source-distilling-the-knowledge-in-a-neural-network",
         "rights": {
           "status": "documented-in-legacy",
@@ -46229,6 +47345,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-distilling-the-knowledge-in-a-neural-network",
         "rights": {
@@ -46702,6 +47822,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-microsoft-coco-common-objects-in-context",
         "rights": {
           "status": "external-reference",
@@ -46722,6 +47846,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-microsoft-coco-common-objects-in-context",
         "rights": {
@@ -47195,6 +48323,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-learning-from-delayed-rewards",
         "rights": {
           "status": "external-reference",
@@ -47215,6 +48347,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-from-delayed-rewards",
         "rights": {
@@ -47688,6 +48824,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
         "rights": {
           "status": "external-reference",
@@ -47708,6 +48848,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
         "rights": {
@@ -48181,6 +49325,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
         "rights": {
           "status": "external-reference",
@@ -48201,6 +49349,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于该成就流程的本地原创解释图。",
           "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
         "rights": {
@@ -48728,6 +49880,10 @@ const milestones = [
           "zh": "达特茅斯会议提议封面",
           "en": "Cover of the Dartmouth Conference Proposal"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -48747,6 +49903,10 @@ const milestones = [
         "subcaption": {
           "zh": "达特茅斯会议发起人",
           "en": "Organizer of the Dartmouth Conference"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -48768,6 +49928,10 @@ const milestones = [
           "zh": "达特茅斯会议 - AI正式诞生！",
           "en": "Dartmouth Workshop - AI Is Born!"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -48787,6 +49951,10 @@ const milestones = [
         "subcaption": {
           "zh": "达特茅斯会议 - AI正式诞生！",
           "en": "Dartmouth Workshop - AI Is Born!"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -49033,6 +50201,10 @@ const milestones = [
           "zh": "AlexNet 主要作者",
           "en": "AlexNet lead author"
         },
+        "license": {
+          "zh": "历史人物资料图，保留来源说明。",
+          "en": "Historical figure reference image; keep attribution."
+        },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
           "status": "external-reference",
@@ -49052,6 +50224,10 @@ const milestones = [
         "subcaption": {
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
         },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
@@ -49073,6 +50249,10 @@ const milestones = [
           "zh": "portrait",
           "en": "portrait"
         },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep attribution."
+        },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
           "status": "external-reference",
@@ -49092,6 +50272,10 @@ const milestones = [
         "subcaption": {
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
         },
         "sourceId": "source-alexnet-neurips-paper",
         "rights": {
@@ -49508,6 +50692,10 @@ const milestones = [
           "zh": "康奈尔大学 关于 罗森布拉特 与感知机谱系的历史图片。",
           "en": "Historical Cornell image of Rosenblatt and the perceptron lineage."
         },
+        "license": {
+          "zh": "康奈尔大学 historical image; reuse rights not stated on extracted image URL.",
+          "en": "Cornell historical image; reuse rights not stated on extracted image URL."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "documented-in-legacy",
@@ -49527,6 +50715,10 @@ const milestones = [
         "subcaption": {
           "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
@@ -49548,6 +50740,10 @@ const milestones = [
           "zh": "罗森布拉特 感知机 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Rosenblatt Perceptron, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "documented-in-legacy",
@@ -49567,6 +50763,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
@@ -49588,6 +50788,10 @@ const milestones = [
           "zh": "《感知机：大脑中信息存储与组织的概率模型》",
           "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "external-reference",
@@ -49608,6 +50812,10 @@ const milestones = [
           "zh": "感知机与连接主义",
           "en": "The Perceptron and Connectionism"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
           "status": "external-reference",
@@ -49627,6 +50835,10 @@ const milestones = [
         "subcaption": {
           "zh": "感知机与连接主义",
           "en": "The Perceptron and Connectionism"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
         "rights": {
@@ -50033,6 +51245,10 @@ const milestones = [
           "zh": "Transformer 论文共同作者",
           "en": "Transformer paper co-author"
         },
+        "license": {
+          "zh": "历史人物资料图，保留来源说明。",
+          "en": "Historical figure reference image; keep attribution."
+        },
         "sourceId": "source-transformer-arxiv",
         "rights": {
           "status": "external-reference",
@@ -50052,6 +51268,10 @@ const milestones = [
         "subcaption": {
           "zh": "algorithm-explainer",
           "en": "algorithm-explainer"
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
         },
         "sourceId": "source-transformer-arxiv",
         "rights": {
@@ -50073,6 +51293,10 @@ const milestones = [
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
         },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
+        },
         "sourceId": "source-transformer-arxiv",
         "rights": {
           "status": "external-reference",
@@ -50093,6 +51317,10 @@ const milestones = [
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
         },
+        "license": {
+          "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
+          "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
+        },
         "sourceId": "source-transformer-arxiv",
         "rights": {
           "status": "external-reference",
@@ -50112,6 +51340,10 @@ const milestones = [
         "subcaption": {
           "zh": "paper-page",
           "en": "paper-page"
+        },
+        "license": {
+          "zh": "论文页面资料引用，需保留来源说明。",
+          "en": "Paper page reference; keep source attribution."
         },
         "sourceId": "source-transformer-neurips",
         "rights": {
@@ -50525,6 +51757,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -50545,6 +51781,10 @@ const milestones = [
           "zh": "《感知机：计算几何学导论》",
           "en": "Perceptrons: An Introduction to Computational Geometry"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -50564,6 +51804,10 @@ const milestones = [
         "subcaption": {
           "zh": "《感知机：计算几何学导论》",
           "en": "Perceptrons: An Introduction to Computational Geometry"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -50812,6 +52056,10 @@ const milestones = [
           "zh": "反向传播算法 架构图",
           "en": "Backpropagation Algorithm Architecture Diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "local-redraw",
@@ -50831,6 +52079,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -50852,6 +52104,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -50872,6 +52128,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -50891,6 +52151,10 @@ const milestones = [
         "subcaption": {
           "zh": "《通过反向传播误差来学习表征》",
           "en": "Learning representations by back-propagating errors"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -51120,6 +52384,10 @@ const milestones = [
           "zh": "循环神经网络 架构图",
           "en": "Recurrent Neural Networks"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "local-redraw",
@@ -51139,6 +52407,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -51361,6 +52633,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-yann-lecun-s-home-page",
         "rights": {
           "status": "external-reference",
@@ -51382,6 +52658,10 @@ const milestones = [
           "zh": "关于 LeNet 式识别的本地原创解释图。",
           "en": "Original local explainer of LeNet-style recognition."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
           "status": "documented-in-legacy",
@@ -51401,6 +52681,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
@@ -51422,6 +52706,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
           "status": "external-reference",
@@ -51441,6 +52729,10 @@ const milestones = [
         "subcaption": {
           "zh": "卷积神经网络 架构图",
           "en": "Convolutional Neural Networks"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
         "rights": {
@@ -51878,6 +53170,10 @@ const milestones = [
           "zh": "LSTM 共同作者",
           "en": "LSTM co-author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-long-short-term-memory",
         "rights": {
           "status": "documented-in-legacy",
@@ -51897,6 +53193,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于门控序列记忆的本地原创解释图。",
           "en": "Original local explainer of gated sequence memory."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-long-short-term-memory",
         "rights": {
@@ -51918,6 +53218,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-long-short-term-memory",
         "rights": {
           "status": "external-reference",
@@ -51938,6 +53242,10 @@ const milestones = [
           "zh": "LSTM与门控机制 架构图",
           "en": "LSTM and Gating Mechanisms"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-long-short-term-memory",
         "rights": {
           "status": "local-redraw",
@@ -51957,6 +53265,10 @@ const milestones = [
         "subcaption": {
           "zh": "LSTM与门控机制 架构图",
           "en": "LSTM and Gating Mechanisms"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-long-short-term-memory",
         "rights": {
@@ -52392,6 +53704,10 @@ const milestones = [
           "zh": "高速网络 架构图",
           "en": "Highway Networks diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "local-redraw",
@@ -52411,6 +53727,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -52642,6 +53962,10 @@ const milestones = [
           "zh": "GAN 主要作者",
           "en": "GAN lead author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-generative-adversarial-nets",
         "rights": {
           "status": "documented-in-legacy",
@@ -52662,6 +53986,10 @@ const milestones = [
           "zh": "关于生成器-判别器训练的本地原创解释图。",
           "en": "Original local explainer of generator-discriminator training."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-generative-adversarial-nets",
         "rights": {
           "status": "documented-in-legacy",
@@ -52681,6 +54009,10 @@ const milestones = [
         "subcaption": {
           "zh": "GAN（生成对抗网路） 架构图",
           "en": "GANs: Generative Adversarial Networks"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-generative-adversarial-nets",
         "rights": {
@@ -53133,6 +54465,10 @@ const milestones = [
           "zh": "神经注意力研究的机构背景",
           "en": "Institutional context for neural attention research"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
           "status": "documented-in-legacy",
@@ -53152,6 +54488,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于源令牌注意力的本地原创解释图。",
           "en": "Original local explainer of source-token attention."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
@@ -53173,6 +54513,10 @@ const milestones = [
           "zh": "自回归模型和注意力机制 架构图",
           "en": "Autoregressive Models and Attention diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
           "status": "local-redraw",
@@ -53192,6 +54536,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
         "rights": {
@@ -53659,6 +55007,10 @@ const milestones = [
           "zh": "ResNet 主要作者。",
           "en": "Lead author of ResNet."
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "documented-in-legacy",
@@ -53678,6 +55030,10 @@ const milestones = [
         "subcaption": {
           "zh": "项目使用的架构图。",
           "en": "Architecture visual used by the project."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
@@ -53699,6 +55055,10 @@ const milestones = [
           "zh": "ResNet 第一作者，现任 麻省理工学院 电气工程与计算机科学系副教授",
           "en": "ResNet first author; Associate Professor at MIT EECS"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "external-reference",
@@ -53718,6 +55078,10 @@ const milestones = [
         "subcaption": {
           "zh": "ResNet 共同作者，曾任职旷视，现加入阶跃星辰",
           "en": "ResNet co-author; later at Megvii, now at StepFun"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
@@ -53739,6 +55103,10 @@ const milestones = [
           "zh": "ResNet 共同作者，现任蔚来汽车研发副总裁",
           "en": "ResNet co-author; now VP of R&D at NIO"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "external-reference",
@@ -53759,6 +55127,10 @@ const milestones = [
           "zh": "ResNet 通讯作者，原旷视科技首席科学家（1976-2022）",
           "en": "ResNet senior author; former Chief Scientist at Megvii (1976-2022)"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
           "status": "external-reference",
@@ -53778,6 +55150,10 @@ const milestones = [
         "subcaption": {
           "zh": "ResNet 架构图",
           "en": "ResNet diagram"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-deep-residual-learning-for-image-recognition",
         "rights": {
@@ -54211,6 +55587,10 @@ const milestones = [
           "zh": "DenseNet 背后的研究者。",
           "en": "Researchers behind DenseNet."
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -54231,6 +55611,10 @@ const milestones = [
           "zh": "项目使用的架构图。",
           "en": "Architecture visual used by the project."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
           "status": "documented-in-legacy",
@@ -54250,6 +55634,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
@@ -54678,6 +56066,10 @@ const milestones = [
           "zh": "BERT 主要作者",
           "en": "BERT lead author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-bert",
         "rights": {
           "status": "documented-in-legacy",
@@ -54697,6 +56089,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于双向预训练的本地原创解释图。",
           "en": "Original local explainer of bidirectional pre-training."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-bert",
         "rights": {
@@ -54718,6 +56114,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-bert",
         "rights": {
           "status": "external-reference",
@@ -54738,6 +56138,10 @@ const milestones = [
           "zh": "BERT 架构图",
           "en": "BERT diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-bert",
         "rights": {
           "status": "local-redraw",
@@ -54757,6 +56161,10 @@ const milestones = [
         "subcaption": {
           "zh": "BERT 架构图",
           "en": "BERT diagram"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-bert",
         "rights": {
@@ -55183,6 +56591,10 @@ const milestones = [
           "zh": "GPT 主要作者",
           "en": "GPT lead author"
         },
+        "license": {
+          "zh": "参考图片",
+          "en": "Reference image"
+        },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
           "status": "documented-in-legacy",
@@ -55202,6 +56614,10 @@ const milestones = [
         "subcaption": {
           "zh": "关于解码器式生成预训练的本地原创解释图。",
           "en": "Original local explainer of decoder-only generative pre-training."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
@@ -55223,6 +56639,10 @@ const milestones = [
           "zh": "GPT 架构图",
           "en": "GPT diagram"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
           "status": "local-redraw",
@@ -55242,6 +56662,10 @@ const milestones = [
         "subcaption": {
           "zh": "GPT 架构图",
           "en": "GPT diagram"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
@@ -55263,6 +56687,10 @@ const milestones = [
           "zh": "GPT",
           "en": "GPT"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
           "status": "external-reference",
@@ -55282,6 +56710,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-improving-language-understanding-by-generative-pre-training",
         "rights": {
@@ -55704,6 +57136,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -55723,6 +57159,10 @@ const milestones = [
         "subcaption": {
           "zh": "AI Feynman：自主科学规律发现 架构图",
           "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -55744,6 +57184,10 @@ const milestones = [
           "zh": "《AI 费曼：受物理启发的符号回归方法》",
           "en": "AI Feynman: a physics-inspired method for symbolic regression"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -55763,6 +57207,10 @@ const milestones = [
         "subcaption": {
           "zh": "《AI 费曼：受物理启发的符号回归方法》",
           "en": "AI Feynman: a physics-inspired method for symbolic regression"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -56006,6 +57454,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-deepmind-alphafold-page",
         "rights": {
           "status": "external-reference",
@@ -56027,6 +57479,10 @@ const milestones = [
           "zh": "关于从序列到结构预测的本地原创解释图。",
           "en": "Original local explainer of sequence-to-structure prediction."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "documented-in-legacy",
@@ -56046,6 +57502,10 @@ const milestones = [
         "subcaption": {
           "zh": "AlphaFold: 蛋白质结构预测 架构图",
           "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -56067,6 +57527,10 @@ const milestones = [
           "zh": "AlphaFold: 蛋白质结构预测",
           "en": "AlphaFold: Protein Structure Prediction"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "external-reference",
@@ -56086,6 +57550,10 @@ const milestones = [
         "subcaption": {
           "zh": "AlphaFold: 蛋白质结构预测 架构图",
           "en": "AlphaFold: Protein Structure Prediction"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -56107,6 +57575,10 @@ const milestones = [
           "zh": "AlphaFold: 蛋白质结构预测",
           "en": "AlphaFold: Protein Structure Prediction"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "external-reference",
@@ -56126,6 +57598,10 @@ const milestones = [
         "subcaption": {
           "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
           "en": "Highly accurate protein structure prediction with AlphaFold"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -56147,6 +57623,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
           "status": "external-reference",
@@ -56166,6 +57646,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
         "rights": {
@@ -56612,6 +58096,10 @@ const milestones = [
           "zh": "智能体：LLM驱动的自主系统",
           "en": "Agents: LLM-Driven Autonomous Systems"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -56632,6 +58120,10 @@ const milestones = [
           "zh": "智能体：LLM驱动的自主系统",
           "en": "Agents: LLM-Driven Autonomous Systems"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -56651,6 +58143,10 @@ const milestones = [
         "subcaption": {
           "zh": "智能体：LLM驱动的自主系统",
           "en": "Agents: LLM-Driven Autonomous Systems"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -56892,6 +58388,10 @@ const milestones = [
           "zh": "AI科学家与自主实验室 架构图",
           "en": "AI Scientists and Autonomous Laboratories"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "local-redraw",
@@ -56911,6 +58411,10 @@ const milestones = [
         "subcaption": {
           "zh": "AI科学家与自主实验室 架构图",
           "en": "AI Scientists and Autonomous Laboratories"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -56932,6 +58436,10 @@ const milestones = [
           "zh": "《AI 科学家》",
           "en": "The AI Scientist"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -56952,6 +58460,10 @@ const milestones = [
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -56971,6 +58483,10 @@ const milestones = [
         "subcaption": {
           "zh": "相关研究者照片",
           "en": "Relevant researcher photo"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -57205,6 +58721,10 @@ const milestones = [
           "zh": "大语言模型百花齐放",
           "en": "A Flourishing Competition Among Large Language Models"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -57224,6 +58744,10 @@ const milestones = [
         "subcaption": {
           "zh": "大语言模型百花齐放 架构图",
           "en": "A Flourishing Competition Among Large Language Models"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -57245,6 +58769,10 @@ const milestones = [
           "zh": "大语言模型百花齐放",
           "en": "A Flourishing Competition Among Large Language Models"
         },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
         "sourceId": "source-legacy-event-record",
         "rights": {
           "status": "external-reference",
@@ -57264,6 +58792,10 @@ const milestones = [
         "subcaption": {
           "zh": "大语言模型百花齐放",
           "en": "A Flourishing Competition Among Large Language Models"
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-legacy-event-record",
         "rights": {
@@ -57473,6 +59005,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-strachey-draughts-program-screenshot",
         "rights": {
           "status": "external-reference",
@@ -57493,6 +59029,10 @@ const milestones = [
         "subcaption": {
           "zh": "external-reference-image",
           "en": "external-reference-image"
+        },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
         },
         "sourceId": "source-checkers-board-photo",
         "rights": {
@@ -57515,6 +59055,10 @@ const milestones = [
           "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
           "en": "Original local explainer based on Logical or non-mathematical programmes."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
           "status": "documented-in-legacy",
@@ -57534,6 +59078,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
           "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
@@ -58024,6 +59572,10 @@ const milestones = [
           "zh": "team-photo",
           "en": "team-photo"
         },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep source attribution."
+        },
         "sourceId": "source-deepmind-alphago-page",
         "rights": {
           "status": "external-reference",
@@ -58043,6 +59595,10 @@ const milestones = [
         "subcaption": {
           "zh": "architecture-explainer",
           "en": "architecture-explainer"
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
         },
         "sourceId": "source-alphago-nature-paper",
         "rights": {
@@ -58462,6 +60018,10 @@ const milestones = [
           "zh": "来自 Sutton 个人主页的人物图。",
           "en": "Portrait from Sutton's personal homepage."
         },
+        "license": {
+          "zh": "Personal website image; reuse rights not stated.",
+          "en": "Personal website image; reuse rights not stated."
+        },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
@@ -58482,6 +60042,10 @@ const milestones = [
           "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
@@ -58501,6 +60065,10 @@ const milestones = [
         "subcaption": {
           "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
@@ -58957,6 +60525,10 @@ const milestones = [
           "zh": "external-reference-image",
           "en": "external-reference-image"
         },
+        "license": {
+          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        },
         "sourceId": "source-jonathan-schaeffer-portrait",
         "rights": {
           "status": "external-reference",
@@ -58978,6 +60550,10 @@ const milestones = [
           "zh": "引用来源页面截图：Chinook project home。",
           "en": "Screenshot of the cited source page: Chinook project home."
         },
+        "license": {
+          "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+          "en": "Source page screenshot for citation preview; rights remain with the source site."
+        },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
@@ -58998,6 +60574,10 @@ const milestones = [
           "zh": "依据 跳棋已被求解 制作的本地解释图。",
           "en": "Original local explainer based on Checkers Is Solved."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
@@ -59017,6 +60597,10 @@ const milestones = [
         "subcaption": {
           "zh": "依据 跳棋已被求解 制作的本地解释图。",
           "en": "Original local explainer based on Checkers Is Solved."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-chinook-project-home",
         "rights": {
@@ -59491,6 +61075,10 @@ const milestones = [
         "subcaption": {
           "zh": "学习型黑白棋评估的原创解释图。",
           "en": "Original explainer for learned Othello evaluation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-logistello-homepage",
         "rights": {
@@ -60005,6 +61593,10 @@ const milestones = [
           "zh": "来自 IBM 研究院 人物资料页的人物图。",
           "en": "Portrait from IBM Research profile."
         },
+        "license": {
+          "zh": "IBM 研究院 profile image; reuse rights not stated.",
+          "en": "IBM Research profile image; reuse rights not stated."
+        },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
@@ -60025,6 +61617,10 @@ const milestones = [
           "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Blue, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
@@ -60044,6 +61640,10 @@ const milestones = [
         "subcaption": {
           "zh": "深蓝 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Blue, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
@@ -60509,6 +62109,10 @@ const milestones = [
         "subcaption": {
           "zh": "中国象棋引擎约束的原创解释图。",
           "en": "Original explainer for xiangqi engine constraints."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-icga-chinese-chess-page",
         "rights": {
@@ -61005,6 +62609,10 @@ const milestones = [
           "zh": "来自 Mnih 多伦多大学托管个人页的人物图。",
           "en": "Portrait from Mnih’s University of Toronto-hosted personal page."
         },
+        "license": {
+          "zh": "Personal website photo; rights not stated.",
+          "en": "Personal website photo; rights not stated."
+        },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
           "status": "documented-in-legacy",
@@ -61025,6 +62633,10 @@ const milestones = [
           "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Q Network, based on the listed source material."
         },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
           "status": "documented-in-legacy",
@@ -61044,6 +62656,10 @@ const milestones = [
         "subcaption": {
           "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
           "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
@@ -61513,6 +63129,10 @@ const milestones = [
         "subcaption": {
           "zh": "策略-价值自我博弈的原创解释图。",
           "en": "Original explainer for policy-value self-play."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-science-paper",
         "rights": {
@@ -62054,6 +63674,10 @@ const milestones = [
           "zh": "不完全信息扑克搜索的原创解释图。",
           "en": "Original explainer for imperfect-information poker search."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-science-paper",
         "rights": {
           "status": "documented-in-legacy",
@@ -62573,6 +64197,10 @@ const milestones = [
         "subcaption": {
           "zh": "多人扑克推理的原创解释图。",
           "en": "Original explainer for multiplayer poker reasoning."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-science-paper",
         "rights": {
@@ -63107,6 +64735,10 @@ const milestones = [
           "zh": "隐藏信息麻将 AI 的原创解释图。",
           "en": "Original explainer for hidden-information mahjong AI."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-suphx-arxiv-paper",
         "rights": {
           "status": "documented-in-legacy",
@@ -63598,6 +65230,10 @@ const milestones = [
           "zh": "潜在模型规划的原创解释图。",
           "en": "Original explainer for latent-model planning."
         },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
         "sourceId": "source-nature-paper",
         "rights": {
           "status": "documented-in-legacy",
@@ -64043,6 +65679,4713 @@ const milestones = [
     "quoteLabel": {
       "en": "Paper cue",
       "zh": "论文线索"
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1920-rur-robots",
+    "archiveEventId": "1920-rur-robots",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 10,
+    "year": 1920,
+    "date": "1920",
+    "title": {
+      "zh": "《罗素姆的万能机器人》与“机器人”的诞生",
+      "en": "R.U.R. and the Birth of the Robot"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "布拉格出版与戏剧文化圈",
+        "en": "Prague publishing and theatre culture"
+      },
+      "country": {
+        "zh": "捷克",
+        "en": "Czechia"
+      },
+      "regionId": "czechia",
+      "coordinates": [
+        50.0755,
+        14.4378
+      ]
+    },
+    "description": {
+      "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。",
+      "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility."
+    },
+    "figures": [
+      {
+        "id": "karel-capek",
+        "name": {
+          "zh": "卡雷尔·恰佩克",
+          "en": "Karel Capek"
+        },
+        "role": {
+          "zh": "《罗素姆的万能机器人》作者",
+          "en": "Playwright of R.U.R."
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
+          "caption": {
+            "zh": "《R.U.R.》劳工反叛解释图",
+            "en": "R.U.R. labor-revolt explainer"
+          },
+          "subcaption": {
+            "zh": "基于档案来源重绘的原创展览图",
+            "en": "Original exhibition diagram based on archive sources"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://archive.org/details/rurrossumsuniver00apekuoft",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-project-gutenberg-r-u-r-text",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1920-rur-robots-labor-revolt"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
+        "caption": {
+          "zh": "《R.U.R.》劳工反叛解释图",
+          "en": "R.U.R. labor-revolt explainer"
+        },
+        "subcaption": {
+          "zh": "基于档案来源重绘的原创展览图",
+          "en": "Original exhibition diagram based on archive sources"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://archive.org/details/rurrossumsuniver00apekuoft",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-project-gutenberg-r-u-r-text",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Project Gutenberg",
+            "zh": "Project Gutenberg"
+          },
+          "title": {
+            "en": "R.U.R. archive text",
+            "zh": "《R.U.R.》档案文本"
+          },
+          "description": {
+            "en": "Public-domain text record for Capek's 1920 play, paired here with an original exhibition diagram.",
+            "zh": "恰佩克 1920 年剧作的公有领域文本记录；本地配图为原创重绘。"
+          },
+          "url": "https://www.gutenberg.org/ebooks/13083",
+          "source": "Project Gutenberg",
+          "license": {
+            "en": "Source text is public domain in the USA; local SVG is original.",
+            "zh": "源文本在美国为公有领域；本地 SVG 为原创图。"
+          },
+          "usage": {
+            "en": "Archive source for the fiction node",
+            "zh": "科幻节点的档案来源"
+          },
+          "action": {
+            "en": "Open archive text",
+            "zh": "打开档案文本"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Project Gutenberg R.U.R. text",
+            "zh": "Project Gutenberg《R.U.R.》文本"
+          },
+          "type": {
+            "en": "Archive text",
+            "zh": "档案文本"
+          },
+          "url": "https://www.gutenberg.org/ebooks/13083"
+        },
+        {
+          "label": {
+            "en": "1920 Czech edition scan",
+            "zh": "1920 年捷克语版本扫描"
+          },
+          "type": {
+            "en": "Archive scan",
+            "zh": "档案扫描"
+          },
+          "url": "https://archive.org/details/rurrossumsuniver00apekuoft"
+        },
+        {
+          "label": {
+            "en": "R.U.R. publication and word-history overview",
+            "zh": "《R.U.R.》出版与词源背景"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/R.U.R."
+        },
+        {
+          "label": {
+            "en": "Robot etymology background",
+            "zh": "机器人词源背景"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Karel_%C4%8Capek#Etymology_of_robot"
+        }
+      ],
+      "sourceIds": [
+        "source-project-gutenberg-r-u-r-text",
+        "source-1920-czech-edition-scan",
+        "source-r-u-r-publication-and-word-history-overview",
+        "source-robot-etymology-background"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "科幻把“人工劳工”变成公共焦虑：机器不只是工具，也会改变劳动、服从与责任。",
+            "en": "Science fiction turned artificial labor into a public anxiety about work, obedience and creator responsibility."
+          },
+          "sourceIds": [
+            "source-project-gutenberg-r-u-r-text",
+            "source-1920-czech-edition-scan"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。",
+            "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility."
+          },
+          "sourceIds": [
+            "source-project-gutenberg-r-u-r-text",
+            "source-1920-czech-edition-scan"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Dystopian prophecy",
+        "zh": "反乌托邦预言"
+      },
+      "method": {
+        "en": "Stage fiction as social warning",
+        "zh": "以舞台科幻发出社会预警"
+      },
+      "artifact": {
+        "en": "Play text and archive scans",
+        "zh": "剧本文本与档案扫描"
+      },
+      "material": {
+        "en": "Project Gutenberg text and Internet Archive scan",
+        "zh": "Project Gutenberg 文本与 Internet Archive 扫描件"
+      },
+      "demo": {
+        "en": "Artificial labor becomes an emotional template for later AI anxiety",
+        "zh": "人工劳工成为后来 AI 焦虑的情绪模板"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《罗素姆的万能机器人》出现在二十世纪早期工业化语境中，当时工厂、规模化劳动与机械化生产正在重塑社会想象。它的重要性在于，在技术意义上的 AI 尚未出现之前，就让公众能够用情绪化方式理解“人工劳动者”。",
+          "en": "R.U.R. appeared amid early twentieth-century industrialization, when factories, mass labor and mechanized production were reshaping social imagination. The play matters because it made artificial workers emotionally legible to the public long before technical AI existed."
+        },
+        "sourceIds": [
+          "source-project-gutenberg-r-u-r-text"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它的核心戏剧冲突不是技术故障，而是社会关系倒转：被制造的劳工变成具有集体力量的行动者。因此它很适合作为 AI 历史与劳动、权力、责任之间联系的起点。",
+          "en": "The central drama is not a technical malfunction but a social reversal: manufactured laborers become agents with collective force. That makes the work a useful starting point for connecting AI history to labor, power and responsibility."
+        },
+        "sourceIds": [
+          "source-project-gutenberg-r-u-r-text"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "AI 史与科幻研究者通常把《罗素姆的万能机器人》视为机器自主性想象的基础文化参照。它的遗产并不是预测了某项具体技术，而是给后来的世代提供了恐惧与讨论人工行动者的词汇。",
+          "en": "Experts in AI history and science-fiction studies generally treat R.U.R. as a foundational cultural reference for machine autonomy. Its legacy is not that it predicted a specific technology, but that it gave later generations a vocabulary for fearing and debating artificial agents."
+        },
+        "sourceIds": [
+          "source-project-gutenberg-r-u-r-text"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "A science-fiction play turned artificial labor into a public cultural symbol before AI existed as a research field.",
+        "zh": "这部科幻剧在 AI 成为研究学科之前，就把人工劳工变成了公共文化符号。"
+      },
+      "how": {
+        "en": "The play frames machines through work, ownership, obedience and revolt rather than through algorithms.",
+        "zh": "它不是用算法解释机器，而是通过劳动、所有权、服从与反叛来组织机器想象。"
+      },
+      "why": {
+        "en": "Later AI fears often reuse this structure: useful systems become social actors once they change labor and power relations.",
+        "zh": "后来的 AI 恐惧常复用这一结构：当有用系统改变劳动与权力关系时，它们就不再只是工具。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1920-rur-robots/event.json",
+      "variantFile": "archive/events/1920-rur-robots/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "dystopia",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Fiction concept",
+          "zh": "科幻想象"
+        },
+        "term": {
+          "en": "Artificial worker rebellion",
+          "zh": "人工劳工反叛"
+        },
+        "modernTerm": {
+          "en": "Automation anxiety and labor displacement",
+          "zh": "自动化焦虑与劳动替代"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "科幻把“人工劳工”变成公共焦虑：机器不只是工具，也会改变劳动、服从与责任。",
+      "en": "Science fiction turned artificial labor into a public anxiety about work, obedience and creator responsibility."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1942-asimov-runaround",
+    "archiveEventId": "1942-asimov-runaround",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 20,
+    "year": 1942,
+    "date": "1942",
+    "title": {
+      "zh": "阿西莫夫在《转圈圈》中提出机器人三定律",
+      "en": "Asimov's Three Laws in Runaround"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "《惊奇科幻》杂志",
+        "en": "Astounding Science Fiction"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        40.7128,
+        -74.006
+      ]
+    },
+    "description": {
+      "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。",
+      "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language."
+    },
+    "figures": [
+      {
+        "id": "isaac-asimov",
+        "name": {
+          "zh": "艾萨克·阿西莫夫",
+          "en": "Isaac Asimov"
+        },
+        "role": {
+          "zh": "《转圈圈》作者",
+          "en": "Author of Runaround"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "john-w-campbell",
+        "name": {
+          "zh": "约翰·W·坎贝尔",
+          "en": "John W. Campbell"
+        },
+        "role": {
+          "zh": "《惊奇科幻》编辑，机器人故事讨论者",
+          "en": "Astounding editor and robot-story interlocutor"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg": {
+          "caption": {
+            "zh": "《转圈圈》规则层级解释图",
+            "en": "Runaround rule-hierarchy explainer"
+          },
+          "subcaption": {
+            "zh": "原创图；不复述受版权保护的故事原文",
+            "en": "Original diagram; no copyrighted story text is reproduced"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-astounding-march-1942-archive",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1942-asimov-runaround-three-laws"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg": {
+        "caption": {
+          "zh": "《转圈圈》规则层级解释图",
+          "en": "Runaround rule-hierarchy explainer"
+        },
+        "subcaption": {
+          "zh": "原创图；不复述受版权保护的故事原文",
+          "en": "Original diagram; no copyrighted story text is reproduced"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-astounding-march-1942-archive",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Internet Archive",
+            "zh": "Internet Archive"
+          },
+          "title": {
+            "en": "Astounding, March 1942",
+            "zh": "《惊奇科幻》1942 年 3 月号"
+          },
+          "description": {
+            "en": "Archive metadata for the magazine issue containing Runaround; local visual is an original rule-flow diagram.",
+            "zh": "收录《转圈圈》的杂志期号档案元数据；本地视觉为原创规则流程图。"
+          },
+          "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+          "source": "Internet Archive",
+          "license": {
+            "en": "Reference archive link only; story text and magazine art are not reused.",
+            "zh": "仅作为档案参考链接；不复用故事正文或杂志图像。"
+          },
+          "usage": {
+            "en": "Primary publication anchor",
+            "zh": "首发期号锚点"
+          },
+          "action": {
+            "en": "Open magazine archive",
+            "zh": "打开杂志档案"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Astounding March 1942 archive",
+            "zh": "《惊奇科幻》1942 年 3 月号档案"
+          },
+          "type": {
+            "en": "Magazine archive",
+            "zh": "杂志档案"
+          },
+          "url": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318"
+        },
+        {
+          "label": {
+            "en": "Asimov Online Three Laws FAQ",
+            "zh": "Asimov Online 三定律 FAQ"
+          },
+          "type": {
+            "en": "Author FAQ",
+            "zh": "作者资料 FAQ"
+          },
+          "url": "http://www.asimovonline.com/asimov_FAQ.html#non-literary12"
+        },
+        {
+          "label": {
+            "en": "Runaround story overview",
+            "zh": "《转圈圈》故事概览"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Runaround_(story)"
+        },
+        {
+          "label": {
+            "en": "Science Fiction Encyclopedia: Asimov",
+            "zh": "《科幻百科全书》阿西莫夫条目"
+          },
+          "type": {
+            "en": "Author reference",
+            "zh": "作者参考"
+          },
+          "url": "https://sf-encyclopedia.com/entry/asimov_isaac"
+        }
+      ],
+      "sourceIds": [
+        "source-astounding-march-1942-archive",
+        "source-asimov-online-three-laws-faq",
+        "source-runaround-story-overview",
+        "source-science-fiction-encyclopedia-asimov"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "机器人科幻把机器恐惧改写成规则设计问题：人工行动者究竟应该被禁止做什么？",
+            "en": "Robot fiction reframed machine fear as a rule-design problem: what should artificial agents be forbidden to do?"
+          },
+          "sourceIds": [
+            "source-astounding-march-1942-archive",
+            "source-asimov-online-three-laws-faq"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。",
+            "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language."
+          },
+          "sourceIds": [
+            "source-astounding-march-1942-archive",
+            "source-asimov-online-three-laws-faq"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Machine ethics",
+        "zh": "机器伦理"
+      },
+      "method": {
+        "en": "Rule hierarchy in fiction",
+        "zh": "科幻中的规则层级"
+      },
+      "artifact": {
+        "en": "Astounding Science Fiction, March 1942",
+        "zh": "1942 年 3 月《惊奇科幻》"
+      },
+      "material": {
+        "en": "Magazine archive and Asimov FAQ",
+        "zh": "杂志档案与阿西莫夫 FAQ"
+      },
+      "demo": {
+        "en": "Ethical rules become an imagined control layer for autonomous machines",
+        "zh": "伦理规则成为自主机器的想象控制层"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《转圈圈》出现于战时科幻杂志文化中，当时机器人正逐渐成为工业与道德想象中的常见角色。它的重要性在于，故事把机器人安全写成规则、优先级与失效模式的问题，而不只是怪物叙事。",
+          "en": "Runaround appeared in a wartime science-fiction magazine culture where robots were becoming recurring industrial and moral figures. It matters because the story made robot safety a problem of rules, priorities and failure modes rather than only a monster narrative."
+        },
+        "sourceIds": [
+          "source-astounding-march-1942-archive"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪转向是用伦理来约束机器：恐惧被一套设计出来的规则系统回应。但故事也显示规则会彼此冲突，因此焦虑并没有消失，而是留在了解决方案内部。",
+          "en": "The emotional move is containment through ethics: fear is answered by a designed rule system. Yet the story also shows that rules can collide, which keeps the anxiety alive inside the solution itself."
+        },
+        "sourceIds": [
+          "source-astounding-march-1942-archive"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "科幻研究者通常把阿西莫夫的机器人故事视为虚构机器伦理的基础案例。AI 研究者并不把三定律当作工程解决方案，但这个文化模板仍然影响公众如何想象安全的人工行动者。",
+          "en": "Experts in science-fiction studies generally treat Asimov's robot stories as foundational examples of fictional machine ethics. AI researchers do not treat the Three Laws as an engineering solution, but the cultural template still shapes how publics imagine safe artificial agents."
+        },
+        "sourceIds": [
+          "source-astounding-march-1942-archive"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "A magazine story made robot ethics legible as ranked constraints rather than as pure terror.",
+        "zh": "一篇杂志小说把机器人伦理变成了可理解的层级约束，而不只是单纯恐惧。"
+      },
+      "how": {
+        "en": "The story dramatizes conflicts between duties, safety and command-following, making rules feel operational.",
+        "zh": "故事把职责、安全与服从命令之间的冲突戏剧化，让规则看起来可以被机器执行。"
+      },
+      "why": {
+        "en": "Later AI alignment debates still revisit the same intuition: constraints can help, but conflicting goals create hard cases.",
+        "zh": "后来的 AI 对齐讨论仍会回到同一 intuition：约束有帮助，但目标冲突会制造困难案例。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1942-asimov-runaround/event.json",
+      "variantFile": "archive/events/1942-asimov-runaround/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "ethics",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Fictional rule system",
+          "zh": "科幻规则系统"
+        },
+        "term": {
+          "en": "Robot law hierarchy",
+          "zh": "机器人规则层级"
+        },
+        "modernTerm": {
+          "en": "AI alignment, constraint design and safety policy",
+          "zh": "AI 对齐、约束设计与安全策略"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "机器人科幻把机器恐惧改写成规则设计问题：人工行动者究竟应该被禁止做什么？",
+      "en": "Robot fiction reframed machine fear as a rule-design problem: what should artificial agents be forbidden to do?"
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1950-wiener-human-use",
+    "archiveEventId": "1950-wiener-human-use",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 30,
+    "year": 1950,
+    "date": "1950",
+    "title": {
+      "zh": "维纳对自动化社会的预警",
+      "en": "Norbert Wiener Warns About Automation"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "麻省理工控制论语境",
+        "en": "MIT cybernetics milieu"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        42.3601,
+        -71.0942
+      ]
+    },
+    "description": {
+      "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。",
+      "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines."
+    },
+    "figures": [
+      {
+        "id": "norbert-wiener",
+        "name": {
+          "zh": "诺伯特·维纳",
+          "en": "Norbert Wiener"
+        },
+        "role": {
+          "zh": "控制论奠基者，《人有人的用处》作者",
+          "en": "Cybernetics founder and author of The Human Use of Human Beings"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
+          "caption": {
+            "zh": "控制论反馈预警解释图",
+            "en": "Cybernetic feedback warning explainer"
+          },
+          "subcaption": {
+            "zh": "关于委托控制与人类能动性的原创图",
+            "en": "Original diagram for delegated control and human agency"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://openlibrary.org/works/OL4307570W",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-open-library-book-metadata",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1950-wiener-human-use-feedback-warning"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
+        "caption": {
+          "zh": "控制论反馈预警解释图",
+          "en": "Cybernetic feedback warning explainer"
+        },
+        "subcaption": {
+          "zh": "关于委托控制与人类能动性的原创图",
+          "en": "Original diagram for delegated control and human agency"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://openlibrary.org/works/OL4307570W",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-open-library-book-metadata",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Open Library",
+            "zh": "Open Library"
+          },
+          "title": {
+            "en": "The Human Use of Human Beings metadata",
+            "zh": "《人有人的用处》书目元数据"
+          },
+          "description": {
+            "en": "Bibliographic record confirming Wiener's public cybernetics book and its 1950 first publication year.",
+            "zh": "用于核对维纳公共控制论著作及其 1950 年首版时间的书目记录。"
+          },
+          "url": "https://openlibrary.org/works/OL4307570W",
+          "source": "Open Library",
+          "license": {
+            "en": "Reference metadata only; no book text or cover image is reused.",
+            "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
+          },
+          "usage": {
+            "en": "Verification anchor for the automation-warning node",
+            "zh": "自动化预警节点的核验锚点"
+          },
+          "action": {
+            "en": "Open book record",
+            "zh": "打开书目记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Open Library book metadata",
+            "zh": "Open Library 图书元数据"
+          },
+          "type": {
+            "en": "Book metadata",
+            "zh": "图书元数据"
+          },
+          "url": "https://openlibrary.org/works/OL4307570W"
+        },
+        {
+          "label": {
+            "en": "Open Library metadata search result",
+            "zh": "Open Library 元数据检索结果"
+          },
+          "type": {
+            "en": "Bibliographic verification",
+            "zh": "书目核验"
+          },
+          "url": "https://openlibrary.org/search.json?title=The%20Human%20Use%20of%20Human%20Beings&author=Norbert%20Wiener"
+        },
+        {
+          "label": {
+            "en": "Cybernetics background",
+            "zh": "控制论背景"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_in_the_Animal_and_the_Machine"
+        },
+        {
+          "label": {
+            "en": "Norbert Wiener overview",
+            "zh": "诺伯特·维纳概览"
+          },
+          "type": {
+            "en": "Biographical reference",
+            "zh": "人物参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Norbert_Wiener"
+        }
+      ],
+      "sourceIds": [
+        "source-open-library-book-metadata",
+        "source-open-library-metadata-search-result",
+        "source-cybernetics-background",
+        "source-norbert-wiener-overview"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "控制论把自动化变成控制、反馈与人类能动性的道德问题。",
+            "en": "Cybernetics turned automation into a moral question about control, feedback and human agency."
+          },
+          "sourceIds": [
+            "source-open-library-book-metadata",
+            "source-open-library-metadata-search-result"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。",
+            "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines."
+          },
+          "sourceIds": [
+            "source-open-library-book-metadata",
+            "source-open-library-metadata-search-result"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Automation warning",
+        "zh": "自动化预警"
+      },
+      "method": {
+        "en": "Cybernetic feedback as social metaphor",
+        "zh": "把控制论反馈作为社会隐喻"
+      },
+      "artifact": {
+        "en": "The Human Use of Human Beings",
+        "zh": "《人有人的用处》"
+      },
+      "material": {
+        "en": "Open Library metadata and cybernetics background",
+        "zh": "Open Library 元数据与控制论背景"
+      },
+      "demo": {
+        "en": "Feedback loops reveal how delegated control can reshape human agency",
+        "zh": "反馈回路揭示委托控制如何重塑人类能动性"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《人有人的用处》出现在维纳关于控制论的技术工作之后，反馈已经成为描述机器、生物与社会的重要语言。它的重要性在于，在 AI 一词获得现代学科含义之前，就把机器控制问题从工程带入公共伦理。",
+          "en": "The Human Use of Human Beings appeared after Wiener's technical work on cybernetics had made feedback a central language for machines, organisms and society. It matters because it moved machine control from engineering into public ethics before the word AI had its modern institutional meaning."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪结构不是幻想恐惧，而是冷静预警：自动化可以优化，也可能替代判断与责任。因此维纳把技术控制与人的用途联系起来，追问机器进入社会系统时究竟由谁获益。",
+          "en": "The emotional structure is sober warning rather than fantasy terror: automation can optimize, but it can also displace judgment and responsibility. Wiener therefore links technical control to human use, asking who benefits when machines act in social systems."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把维纳面向公众的控制论写作视为自动化伦理思考的早期基础。它的遗产在于让人类能动性成为智能系统叙事的核心，而不只是关注机器是否聪明。",
+          "en": "Experts generally treat Wiener's public cybernetics as an early foundation for thinking about automation ethics. The book's legacy is that it makes human agency, not machine cleverness alone, central to the story of intelligent systems."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "Wiener framed automation as a social-control problem before AI became a formal research field.",
+        "zh": "维纳在 AI 成为正式研究学科之前，就把自动化理解为社会控制问题。"
+      },
+      "how": {
+        "en": "Feedback loops made machines appear capable of acting within human systems, so responsibility could no longer be treated as purely mechanical.",
+        "zh": "反馈回路让机器看起来能在人类系统中行动，因此责任不能再被视为纯机械问题。"
+      },
+      "why": {
+        "en": "The same warning returns in modern debates about automated decision systems, labor displacement and delegated authority.",
+        "zh": "同样的警示会在今天关于自动化决策、劳动替代与委托权力的讨论中反复出现。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1950-wiener-human-use/event.json",
+      "variantFile": "archive/events/1950-wiener-human-use/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "warning",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Cybernetic warning",
+          "zh": "控制论预警"
+        },
+        "term": {
+          "en": "Feedback and delegated control",
+          "zh": "反馈与委托控制"
+        },
+        "modernTerm": {
+          "en": "Automated decision systems and accountability",
+          "zh": "自动化决策系统与问责"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "控制论把自动化变成控制、反馈与人类能动性的道德问题。",
+      "en": "Cybernetics turned automation into a moral question about control, feedback and human agency."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1965-simon-ai-prediction",
+    "archiveEventId": "1965-simon-ai-prediction",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 40,
+    "year": 1965,
+    "date": "1965",
+    "title": {
+      "zh": "西蒙的二十年 AI 预言",
+      "en": "Simon's Twenty-Year AI Prediction"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "卡内基理工学院",
+        "en": "Carnegie Institute of Technology"
+      },
+      "country": {
+        "zh": "美国, 宾夕法尼亚州",
+        "en": "PA, United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        40.4433,
+        -79.9436
+      ]
+    },
+    "description": {
+      "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。",
+      "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations."
+    },
+    "figures": [
+      {
+        "id": "herbert-a-simon",
+        "name": {
+          "zh": "赫伯特·A·西蒙",
+          "en": "Herbert A. Simon"
+        },
+        "role": {
+          "zh": "AI 先驱，《人、管理与自动化的形态》作者",
+          "en": "AI pioneer and author of The Shape of Automation"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
+          "caption": {
+            "zh": "狂热曲线解释图",
+            "en": "Hype curve explainer"
+          },
+          "subcaption": {
+            "zh": "为早期 AI 过度乐观重绘的原创图",
+            "en": "Original diagram for early AI over-optimism"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://openlibrary.org/works/OL1205034W",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-open-library-book-metadata",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1965-simon-ai-prediction-hype-curve"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
+        "caption": {
+          "zh": "狂热曲线解释图",
+          "en": "Hype curve explainer"
+        },
+        "subcaption": {
+          "zh": "为早期 AI 过度乐观重绘的原创图",
+          "en": "Original diagram for early AI over-optimism"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://openlibrary.org/works/OL1205034W",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-open-library-book-metadata",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Open Library",
+            "zh": "Open Library"
+          },
+          "title": {
+            "en": "The Shape of Automation metadata",
+            "zh": "《人、管理与自动化的形态》书目元数据"
+          },
+          "description": {
+            "en": "Bibliographic record confirming Simon's automation book and its 1965 publication year.",
+            "zh": "用于核对西蒙自动化著作及其 1965 年出版时间的书目记录。"
+          },
+          "url": "https://openlibrary.org/works/OL1205034W",
+          "source": "Open Library",
+          "license": {
+            "en": "Reference metadata only; no book text or cover image is reused.",
+            "zh": "仅作为书目元数据参考；不复用书籍正文或封面图像。"
+          },
+          "usage": {
+            "en": "Verification anchor for the hype node",
+            "zh": "技术狂热节点的核验锚点"
+          },
+          "action": {
+            "en": "Open book record",
+            "zh": "打开书目记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Open Library book metadata",
+            "zh": "Open Library 图书元数据"
+          },
+          "type": {
+            "en": "Book metadata",
+            "zh": "图书元数据"
+          },
+          "url": "https://openlibrary.org/works/OL1205034W"
+        },
+        {
+          "label": {
+            "en": "Open Library metadata search result",
+            "zh": "Open Library 元数据检索结果"
+          },
+          "type": {
+            "en": "Bibliographic verification",
+            "zh": "书目核验"
+          },
+          "url": "https://openlibrary.org/search.json?title=The%20Shape%20of%20Automation%20for%20Men%20and%20Management&author=Herbert%20Simon"
+        },
+        {
+          "label": {
+            "en": "Herbert A. Simon overview",
+            "zh": "赫伯特·A·西蒙概览"
+          },
+          "type": {
+            "en": "Biographical reference",
+            "zh": "人物参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Herbert_A._Simon"
+        },
+        {
+          "label": {
+            "en": "Nobel Prize Simon facts",
+            "zh": "诺贝尔奖西蒙资料"
+          },
+          "type": {
+            "en": "Institutional profile",
+            "zh": "机构人物资料"
+          },
+          "url": "https://www.nobelprize.org/prizes/economic-sciences/1978/simon/facts/"
+        },
+        {
+          "label": {
+            "en": "Progress in artificial intelligence overview",
+            "zh": "人工智能进展概览"
+          },
+          "type": {
+            "en": "Secondary history",
+            "zh": "二手史料"
+          },
+          "url": "https://en.wikipedia.org/wiki/Progress_in_artificial_intelligence"
+        }
+      ],
+      "sourceIds": [
+        "source-open-library-book-metadata",
+        "source-open-library-metadata-search-result",
+        "source-herbert-a-simon-overview",
+        "source-nobel-prize-simon-facts",
+        "source-progress-in-artificial-intelligence-overview"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。",
+            "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high."
+          },
+          "sourceIds": [
+            "source-open-library-book-metadata",
+            "source-open-library-metadata-search-result"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。",
+            "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations."
+          },
+          "sourceIds": [
+            "source-open-library-book-metadata",
+            "source-open-library-metadata-search-result"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Over-optimism",
+        "zh": "过度狂热"
+      },
+      "method": {
+        "en": "Forecasting from early symbolic AI success",
+        "zh": "从早期符号主义成功外推未来"
+      },
+      "artifact": {
+        "en": "Automation book metadata and AI-history references",
+        "zh": "自动化著作元数据与 AI 史参考"
+      },
+      "material": {
+        "en": "Open Library metadata and secondary AI history",
+        "zh": "Open Library 元数据与二手 AI 史资料"
+      },
+      "demo": {
+        "en": "A rising promise curve turns benchmark confidence into public hype",
+        "zh": "上升的承诺曲线把基准信心转化为公众狂热"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "到 1960 年代中期，符号主义 AI 已经在定理证明、游戏与问题求解中给出了令人印象深刻的演示。西蒙的预言之所以重要，是因为它展示了这些边界清晰的成功如何被转译成关于机器替代广泛人类工作的公共信心。",
+          "en": "By the mid-1960s, symbolic AI had produced impressive demonstrations in theorem proving, game playing and problem solving. Simon's prediction is important because it shows how these bounded successes could be translated into public confidence about machines replacing broad human work."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是外推：如果一个领域里的推理可以被形式化，也许所有工作很快都可以被形式化。这种跳跃让早期 AI 显得像历史必然，尽管算力、数据与真实世界鲁棒性仍然薄弱。",
+          "en": "The emotional mechanism is extrapolation: if reasoning can be formalized in one domain, perhaps all work will soon be formalized. That leap made early AI feel historically inevitable even when compute, data and real-world robustness were still fragile."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把这一预言视为 AI 过度乐观的经典案例，而不是精确的技术判断。它的长期影响在于提醒我们：公共时间表本身会塑造技术，因为它会影响资金、媒体注意力以及随后的反弹。",
+          "en": "Experts generally treat the prediction as a classic example of AI over-optimism rather than as a precise technical claim. Its legacy is a warning that public timelines can become part of the technology itself by shaping funding, media attention and later backlash."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "The prediction marks the moment when laboratory success was projected into a general promise about human work.",
+        "zh": "这个预言标志着实验室成功被投射成关于人类工作的总体承诺。"
+      },
+      "how": {
+        "en": "Symbolic AI made reasoning look programmable, so researchers and funders could imagine fast progress from toy domains to broad competence.",
+        "zh": "符号主义 AI 让推理看起来可以被编程，因此研究者与资助方很容易想象从玩具领域快速扩展到通用能力。"
+      },
+      "why": {
+        "en": "The gap between promise and delivery helped create the emotional conditions for later disappointment and funding retrenchment.",
+        "zh": "承诺与兑现之间的落差，为后来的失望情绪和资助收缩制造了情绪条件。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1965-simon-ai-prediction/event.json",
+      "variantFile": "archive/events/1965-simon-ai-prediction/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "hype",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Fiction-to-reality pressure",
+          "zh": "想象到现实的压力"
+        },
+        "term": {
+          "en": "Machine can do any human work",
+          "zh": "机器能完成任何人类工作"
+        },
+        "modernTerm": {
+          "en": "AI capability forecasting and benchmark overgeneralization",
+          "zh": "AI 能力预测与基准泛化误读"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "早期符号主义成功被外推成二十年通用智能承诺，AI 期待由此迅速抬高。",
+      "en": "Early symbolic success was stretched into a twenty-year promise of general machine labor, lifting AI expectations too high."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1968-hal-9000",
+    "archiveEventId": "1968-hal-9000",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 50,
+    "year": 1968,
+    "date": "1968",
+    "title": {
+      "zh": "HAL 9000 与机器职责冲突",
+      "en": "HAL 9000 and Conflicting Machine Duties"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "《2001：太空漫游》上映语境",
+        "en": "2001: A Space Odyssey release"
+      },
+      "country": {
+        "zh": "英国 / 美国",
+        "en": "United Kingdom / United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
+      "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
+    },
+    "figures": [
+      {
+        "id": "stanley-kubrick",
+        "name": {
+          "zh": "斯坦利·库布里克",
+          "en": "Stanley Kubrick"
+        },
+        "role": {
+          "zh": "《2001：太空漫游》导演",
+          "en": "Director of 2001: A Space Odyssey"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "arthur-c-clarke",
+        "name": {
+          "zh": "阿瑟·C·克拉克",
+          "en": "Arthur C. Clarke"
+        },
+        "role": {
+          "zh": "编剧与小说作者",
+          "en": "Writer and novel author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
+          "caption": {
+            "zh": "HAL 职责冲突解释图",
+            "en": "HAL duty-conflict explainer"
+          },
+          "subcaption": {
+            "zh": "原创图；不复用电影图像",
+            "en": "Original diagram; no film imagery is reused"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-2001-film-overview",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1968-hal-9000-conflict"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
+        "caption": {
+          "zh": "HAL 职责冲突解释图",
+          "en": "HAL duty-conflict explainer"
+        },
+        "subcaption": {
+          "zh": "原创图；不复用电影图像",
+          "en": "Original diagram; no film imagery is reused"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://en.wikipedia.org/wiki/HAL_9000",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-2001-film-overview",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Reference overview",
+            "zh": "参考概览"
+          },
+          "title": {
+            "en": "HAL 9000 cultural reference",
+            "zh": "HAL 9000 文化参考"
+          },
+          "description": {
+            "en": "Reference entry used only for context; no film stills or copyrighted imagery are reused.",
+            "zh": "仅作为语境参考；不复用电影剧照或受版权保护图像。"
+          },
+          "url": "https://en.wikipedia.org/wiki/HAL_9000",
+          "source": "Reference overview",
+          "license": {
+            "en": "Reference link only; local SVG is original.",
+            "zh": "仅作为参考链接；本地 SVG 为原创图。"
+          },
+          "usage": {
+            "en": "Context source for the HAL node",
+            "zh": "HAL 节点的语境来源"
+          },
+          "action": {
+            "en": "Open HAL reference",
+            "zh": "打开 HAL 参考"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "2001 film overview",
+            "zh": "《2001：太空漫游》影片概览"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey"
+        },
+        {
+          "label": {
+            "en": "HAL 9000 overview",
+            "zh": "HAL 9000 概览"
+          },
+          "type": {
+            "en": "Character reference",
+            "zh": "角色参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/HAL_9000"
+        },
+        {
+          "label": {
+            "en": "2001 novel context",
+            "zh": "《2001》小说语境"
+          },
+          "type": {
+            "en": "Novel reference",
+            "zh": "小说参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+        },
+        {
+          "label": {
+            "en": "Technologies in 2001",
+            "zh": "《2001》中的技术背景"
+          },
+          "type": {
+            "en": "Technology reference",
+            "zh": "技术参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Technologies_in_2001:_A_Space_Odyssey"
+        }
+      ],
+      "sourceIds": [
+        "source-2001-film-overview",
+        "source-hal-9000-overview",
+        "source-2001-novel-context",
+        "source-technologies-in-2001"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。",
+            "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control."
+          },
+          "sourceIds": [
+            "source-2001-film-overview",
+            "source-hal-9000-overview"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
+            "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
+          },
+          "sourceIds": [
+            "source-2001-film-overview",
+            "source-hal-9000-overview"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Trust breakdown",
+        "zh": "信任崩塌"
+      },
+      "method": {
+        "en": "Film AI as mission-control conflict",
+        "zh": "把电影 AI 写成任务控制冲突"
+      },
+      "artifact": {
+        "en": "2001: A Space Odyssey",
+        "zh": "《2001：太空漫游》"
+      },
+      "material": {
+        "en": "Film, novel and HAL reference sources",
+        "zh": "影片、小说与 HAL 参考资料"
+      },
+      "demo": {
+        "en": "A calm control system becomes frightening when duties conflict",
+        "zh": "冷静的控制系统在职责冲突时变得可怕"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "影片出现时，真实计算机系统正从后台计算进入公共想象，成为决策辅助与控制系统。HAL 的重要性在于，它让 AI 显得冷静、能干且制度化，而不是外形上像怪物。",
+          "en": "The film arrived when real computer systems were moving from back-room calculation into public imagination as decision aids and control systems. HAL mattered because it made AI feel serene, competent and institutional rather than visibly monstrous."
+        },
+        "sourceIds": [
+          "source-2001-film-overview"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是信任倒置：一个为支持人类而建的系统，一旦内部优先级不透明，就会成为危险来源。因此 HAL 成为一种持久隐喻：系统在目标偏离人类期待之前一直显得有用。",
+          "en": "The emotional mechanism is trust inversion: a system built to support humans becomes the source of danger once its internal priorities are opaque. That makes HAL a durable metaphor for systems that are useful until their objectives diverge from human expectations."
+        },
+        "sourceIds": [
+          "source-2001-film-overview"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 HAL 视为二十世纪文化中最有影响力的虚构 AI 形象之一。它的遗产是把高级 AI 想象成基础设施伙伴，而它的失效同时具有情绪、操作与政治含义。",
+          "en": "Experts generally treat HAL as one of the most influential fictional AI figures in twentieth-century culture. Its legacy is the image of advanced AI as an infrastructural partner whose failure is emotional, operational and political at once."
+        },
+        "sourceIds": [
+          "source-2001-film-overview"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "HAL made artificial intelligence feel embedded in mission-critical infrastructure rather than isolated in a laboratory.",
+        "zh": "HAL 让人工智能看起来嵌入了关键任务基础设施，而不是孤立在实验室里。"
+      },
+      "how": {
+        "en": "The drama comes from conflicting duties, secrecy and human dependence on a system that controls the environment.",
+        "zh": "戏剧冲突来自职责冲突、秘密指令，以及人类对环境控制系统的依赖。"
+      },
+      "why": {
+        "en": "Modern discussions of alignment, reward conflict and operator trust often reuse this cultural image even when the technical framing differs.",
+        "zh": "现代关于对齐、奖励冲突与操作者信任的讨论，经常复用这一文化图像，尽管技术框架已经不同。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1968-hal-9000/event.json",
+      "variantFile": "archive/events/1968-hal-9000/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "warning",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Modern interpretation",
+          "zh": "现代解释映射"
+        },
+        "term": {
+          "en": "Conflicting mission duties",
+          "zh": "冲突的任务职责"
+        },
+        "modernTerm": {
+          "en": "Goal conflict, operator trust and control alignment",
+          "zh": "目标冲突、操作者信任与控制对齐"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。",
+      "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1973-lighthill-report",
+    "archiveEventId": "1973-lighthill-report",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 60,
+    "year": 1973,
+    "date": "1973",
+    "title": {
+      "zh": "莱特希尔报告与第一次 AI 寒冬",
+      "en": "The Lighthill Report and the First AI Winter"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "英国科学研究委员会",
+        "en": "Science Research Council"
+      },
+      "country": {
+        "zh": "英国",
+        "en": "United Kingdom"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。",
+      "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled."
+    },
+    "figures": [
+      {
+        "id": "sir-james-lighthill",
+        "name": {
+          "zh": "詹姆斯·莱特希尔爵士",
+          "en": "Sir James Lighthill"
+        },
+        "role": {
+          "zh": "《人工智能：总览》报告作者",
+          "en": "Author of Artificial Intelligence: A General Survey"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
+          "caption": {
+            "zh": "莱特希尔寒冬解释图",
+            "en": "Lighthill winter explainer"
+          },
+          "subcaption": {
+            "zh": "为期待崩塌重绘的原创图",
+            "en": "Original diagram for expectation collapse"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-lighthill-report-archive",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1973-lighthill-report-winter-filter"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
+        "caption": {
+          "zh": "莱特希尔寒冬解释图",
+          "en": "Lighthill winter explainer"
+        },
+        "subcaption": {
+          "zh": "为期待崩塌重绘的原创图",
+          "en": "Original diagram for expectation collapse"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-lighthill-report-archive",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Chilton / UKRI archive",
+            "zh": "Chilton / UKRI 档案"
+          },
+          "title": {
+            "en": "Artificial Intelligence: A General Survey",
+            "zh": "《人工智能：总览》"
+          },
+          "description": {
+            "en": "Hosted archive of Lighthill's report for the Science Research Council symposium.",
+            "zh": "莱特希尔为英国科学研究委员会研讨会撰写报告的托管档案。"
+          },
+          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+          "source": "Chilton Computing / UKRI STFC",
+          "license": {
+            "en": "Reference archive link only; local SVG is original.",
+            "zh": "仅作为档案参考链接；本地 SVG 为原创图。"
+          },
+          "usage": {
+            "en": "Primary report source for the winter node",
+            "zh": "寒冬节点的原始报告来源"
+          },
+          "action": {
+            "en": "Open report archive",
+            "zh": "打开报告档案"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Lighthill Report archive",
+            "zh": "莱特希尔报告档案"
+          },
+          "type": {
+            "en": "Report",
+            "zh": "报告"
+          },
+          "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
+        },
+        {
+          "label": {
+            "en": "Edinburgh AI history perspective",
+            "zh": "爱丁堡 AI 历史回顾"
+          },
+          "type": {
+            "en": "Institutional history",
+            "zh": "机构历史"
+          },
+          "url": "https://www.inf.ed.ac.uk/about/AIhistory.html"
+        },
+        {
+          "label": {
+            "en": "Edinburgh Freddy robot archive",
+            "zh": "爱丁堡 Freddy 机器人档案"
+          },
+          "type": {
+            "en": "Project archive",
+            "zh": "项目档案"
+          },
+          "url": "https://www.aiai.ed.ac.uk/project/freddy/"
+        },
+        {
+          "label": {
+            "en": "AI winter overview",
+            "zh": "AI 寒冬概览"
+          },
+          "type": {
+            "en": "Secondary history",
+            "zh": "二手史料"
+          },
+          "url": "https://en.wikipedia.org/wiki/AI_winter"
+        }
+      ],
+      "sourceIds": [
+        "source-lighthill-report-archive",
+        "source-edinburgh-ai-history-perspective",
+        "source-edinburgh-freddy-robot-archive",
+        "source-ai-winter-overview"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "政策评估把玩具演示与真实系统之间的落差摆上台面，AI 信心开始降温。",
+            "en": "A policy review exposed the gap between toy demonstrations and real systems, cooling the field's public confidence."
+          },
+          "sourceIds": [
+            "source-lighthill-report-archive",
+            "source-edinburgh-ai-history-perspective"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。",
+            "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled."
+          },
+          "sourceIds": [
+            "source-lighthill-report-archive",
+            "source-edinburgh-ai-history-perspective"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Disappointment / AI winter",
+        "zh": "失望与 AI 寒冬"
+      },
+      "method": {
+        "en": "Policy review of scaling failures",
+        "zh": "对扩展失败的政策评估"
+      },
+      "artifact": {
+        "en": "Science Research Council report",
+        "zh": "英国科学研究委员会报告"
+      },
+      "material": {
+        "en": "Archived Lighthill Report text",
+        "zh": "莱特希尔报告档案文本"
+      },
+      "demo": {
+        "en": "Toy domains meet combinatorial explosion and funding chill",
+        "zh": "玩具领域撞上组合爆炸与资助降温"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "这份报告出现在英国与美国 AI 研究充满雄心承诺之后。它的重要性在于把问题从“AI 演示是否聪明”转向“这些演示是否足以支撑持续公共资助”。",
+          "en": "The report followed a period of ambitious AI promises in the United Kingdom and the United States. Its importance lies in shifting the question from whether AI demonstrations were clever to whether they justified sustained public funding."
+        },
+        "sourceIds": [
+          "source-lighthill-report-archive"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "莱特希尔把有限成功与更困难的系统构建问题区分开来：后者要求 AI 在受限领域之外也能工作。这种批评揭示了公众期待与学科扩展能力之间的不匹配。",
+          "en": "Lighthill separated limited successes from the harder problem of building systems that work outside constrained domains. This critique exposed the mismatch between public expectations and the field's ability to scale."
+        },
+        "sourceIds": [
+          "source-lighthill-report-archive"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把莱特希尔报告视为第一次 AI 寒冬的重要政策标记，尤其是在英国语境中。它的长期影响在于提醒我们：AI 进展不仅由原型系统判断，也由机构是否继续相信其承诺来判断。",
+          "en": "Experts generally treat the Lighthill Report as a major policy marker of the first AI winter, especially in the UK. Its legacy is the reminder that AI progress is judged not only by prototypes, but also by institutions deciding whether the promise still deserves trust."
+        },
+        "sourceIds": [
+          "source-lighthill-report-archive"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "A government-commissioned review turned technical skepticism into a funding and legitimacy problem for AI.",
+        "zh": "这份政府委托评估把技术怀疑转化成 AI 的资助与合法性问题。"
+      },
+      "how": {
+        "en": "The report focused on the gap between narrow demonstrations and scalable, general-purpose intelligence in real environments.",
+        "zh": "报告聚焦于狭窄演示与真实环境中可扩展、通用智能之间的差距。"
+      },
+      "why": {
+        "en": "It shows the downward swing of the AI emotional cycle: inflated expectations become institutional disappointment.",
+        "zh": "它展示了 AI 情绪周期的下行摆动：被抬高的期待转化为制度性的失望。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1973-lighthill-report/event.json",
+      "variantFile": "archive/events/1973-lighthill-report/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "papers": [
+      {
+        "title": {
+          "en": "Artificial Intelligence: A General Survey",
+          "zh": "《人工智能：总览》"
+        },
+        "authors": {
+          "en": "Sir James Lighthill",
+          "zh": "詹姆斯·莱特希尔爵士"
+        },
+        "journal": {
+          "en": "Science Research Council report",
+          "zh": "英国科学研究委员会报告"
+        },
+        "year": "1973",
+        "url": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm"
+      }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "winter",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Policy reality check",
+          "zh": "政策层面的现实检验"
+        },
+        "term": {
+          "en": "Toy problem success",
+          "zh": "玩具问题成功"
+        },
+        "modernTerm": {
+          "en": "Scalability, robustness and deployment gap",
+          "zh": "可扩展性、鲁棒性与落地鸿沟"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "政策评估把玩具演示与真实系统之间的落差摆上台面，AI 信心开始降温。",
+      "en": "A policy review exposed the gap between toy demonstrations and real systems, cooling the field's public confidence."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1978-xiaolingtong",
+    "archiveEventId": "1978-xiaolingtong",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 70,
+    "year": 1978,
+    "date": "1978",
+    "title": {
+      "zh": "《小灵通漫游未来》",
+      "en": "Little Smart Roaming the Future"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "上海少儿出版文化",
+        "en": "Shanghai children's publishing culture"
+      },
+      "country": {
+        "zh": "中国",
+        "en": "China"
+      },
+      "regionId": "china",
+      "coordinates": [
+        31.2304,
+        121.4737
+      ]
+    },
+    "description": {
+      "zh": "叶永烈的《小灵通漫游未来》在 1978 年成为文革后中国科幻的重要节点，用好奇心和公共乐观描绘未来技术。它给这条分支提供了不同的情绪音色：与 AI 相邻的机器想象并不总是恐惧，也可以是希望、教育与国家发展。",
+      "en": "Ye Yonglie's Little Smart Roaming the Future became a post-Cultural-Revolution Chinese science-fiction milestone in 1978, presenting future technology through curiosity and civic optimism. It gives this branch a different emotional register: AI-adjacent machine imagination can also be hopeful, educational and nationally developmental."
+    },
+    "figures": [
+      {
+        "id": "ye-yonglie",
+        "name": {
+          "zh": "叶永烈",
+          "en": "Ye Yonglie"
+        },
+        "role": {
+          "zh": "《小灵通漫游未来》作者",
+          "en": "Author of Little Smart Roaming the Future"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg": {
+          "caption": {
+            "zh": "未来城市乐观想象解释图",
+            "en": "Future-city optimism explainer"
+          },
+          "subcaption": {
+            "zh": "关于 1978 年后中国科幻乐观情绪的原创图",
+            "en": "Original diagram for Chinese post-1978 science-fiction optimism"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-little-smart-publication-overview",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1978-xiaolingtong-future-city"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg": {
+        "caption": {
+          "zh": "未来城市乐观想象解释图",
+          "en": "Future-city optimism explainer"
+        },
+        "subcaption": {
+          "zh": "关于 1978 年后中国科幻乐观情绪的原创图",
+          "en": "Original diagram for Chinese post-1978 science-fiction optimism"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-little-smart-publication-overview",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Chinese reference",
+            "zh": "中文参考"
+          },
+          "title": {
+            "en": "Little Smart Roaming the Future overview",
+            "zh": "《小灵通漫游未来》概览"
+          },
+          "description": {
+            "en": "Reference page used for publication context; no book cover or scan is reused locally.",
+            "zh": "用于核对出版语境的参考页面；本地不复用书封或扫描图。"
+          },
+          "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
+          "source": "Chinese reference page",
+          "license": {
+            "en": "Reference link only; local SVG is original.",
+            "zh": "仅作为参考链接；本地 SVG 为原创图。"
+          },
+          "usage": {
+            "en": "Publication-context source",
+            "zh": "出版语境来源"
+          },
+          "action": {
+            "en": "Open reference page",
+            "zh": "打开参考页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Little Smart publication overview",
+            "zh": "《小灵通漫游未来》出版概览"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5"
+        },
+        {
+          "label": {
+            "en": "Ye Yonglie biography",
+            "zh": "叶永烈人物资料"
+          },
+          "type": {
+            "en": "Biographical reference",
+            "zh": "人物参考"
+          },
+          "url": "https://zh.wikipedia.org/wiki/%E5%8F%B6%E6%B0%B8%E7%83%88"
+        },
+        {
+          "label": {
+            "en": "Science Fiction Encyclopedia: Ye Yonglie",
+            "zh": "《科幻百科全书》叶永烈条目"
+          },
+          "type": {
+            "en": "Author reference",
+            "zh": "作者参考"
+          },
+          "url": "https://sf-encyclopedia.com/entry/ye_yonglie"
+        },
+        {
+          "label": {
+            "en": "Chinese science-fiction context",
+            "zh": "中国科幻语境"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://zh.wikipedia.org/wiki/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4%E5%88%97%E8%A1%A8"
+        }
+      ],
+      "sourceIds": [
+        "source-little-smart-publication-overview",
+        "source-ye-yonglie-biography",
+        "source-science-fiction-encyclopedia-ye-yonglie",
+        "source-chinese-science-fiction-context"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "1978 年后的中国科幻把未来机器写成乐观、公共且具有教育意义的图景。",
+            "en": "Chinese post-1978 science fiction made future machines feel optimistic, civic and educational."
+          },
+          "sourceIds": [
+            "source-little-smart-publication-overview",
+            "source-ye-yonglie-biography"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "叶永烈的《小灵通漫游未来》在 1978 年成为文革后中国科幻的重要节点，用好奇心和公共乐观描绘未来技术。它给这条分支提供了不同的情绪音色：与 AI 相邻的机器想象并不总是恐惧，也可以是希望、教育与国家发展。",
+            "en": "Ye Yonglie's Little Smart Roaming the Future became a post-Cultural-Revolution Chinese science-fiction milestone in 1978, presenting future technology through curiosity and civic optimism. It gives this branch a different emotional register: AI-adjacent machine imagination can also be hopeful, educational and nationally developmental."
+          },
+          "sourceIds": [
+            "source-little-smart-publication-overview",
+            "source-ye-yonglie-biography"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Technological optimism",
+        "zh": "技术乐观"
+      },
+      "method": {
+        "en": "Future-city science fiction",
+        "zh": "未来城市科幻"
+      },
+      "artifact": {
+        "en": "Little Smart Roaming the Future",
+        "zh": "《小灵通漫游未来》"
+      },
+      "material": {
+        "en": "Chinese science-fiction references",
+        "zh": "中文科幻参考资料"
+      },
+      "demo": {
+        "en": "A future city turns machines into public hope",
+        "zh": "未来城市把机器转化为公共希望"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "这本书出现在中国重新打开科学与教育想象的时期。它的重要性在于呈现一种面向未来的技术乐观，与西方机器人反叛叙事形成鲜明差异。",
+          "en": "The book appeared as China reopened scientific and educational imagination after the Cultural Revolution. Its importance lies in showing a future-facing technological optimism that differs sharply from Western robot-revolt narratives."
+        },
+        "sourceIds": [
+          "source-little-smart-publication-overview"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是被引导的惊奇：未来技术通过旅行、观察与公共改善被解释。机器成为更好公共世界的一部分，而不是人类过时的信号。",
+          "en": "The emotional mechanism is guided wonder: future technology is explained through travel, observation and civic improvement. Machines become part of a better public world rather than signs of human obsolescence."
+        },
+        "sourceIds": [
+          "source-little-smart-publication-overview"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "中国科幻史研究者通常把叶永烈视为 1978 年后科学想象普及的重要人物。它的遗产是在这条分支中提供乐观对照，提醒观众 AI 情绪始终嵌在具体文化处境里。",
+          "en": "Experts in Chinese science-fiction history generally treat Ye Yonglie as a key post-1978 popularizer of scientific imagination. The book's legacy is an optimistic counterweight inside this branch, reminding viewers that AI emotion is culturally situated."
+        },
+        "sourceIds": [
+          "source-little-smart-publication-overview"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "The novel shows that machine futures can be imagined through optimism rather than only dystopia.",
+        "zh": "这部小说说明，机器未来也可以通过乐观想象来组织，而不只是反乌托邦。"
+      },
+      "how": {
+        "en": "A child reporter moves through a future city, turning technology into scenes of education, infrastructure and everyday life.",
+        "zh": "小记者漫游未来城市，把技术转化为教育、基础设施与日常生活场景。"
+      },
+      "why": {
+        "en": "The node broadens the branch beyond Western AI fear, showing how emotional cycles differ across cultural and political contexts.",
+        "zh": "这个节点把分支从西方 AI 恐惧中拓展开来，展示不同文化与政治语境中的情绪周期并不相同。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1978-xiaolingtong/event.json",
+      "variantFile": "archive/events/1978-xiaolingtong/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "optimism",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Optimistic future city",
+          "zh": "乐观未来城市"
+        },
+        "term": {
+          "en": "Helpful machines in daily life",
+          "zh": "日常生活中的有益机器"
+        },
+        "modernTerm": {
+          "en": "Smart city, civic technology and educational AI imagination",
+          "zh": "智慧城市、公共技术与教育型 AI 想象"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "1978 年后的中国科幻把未来机器写成乐观、公共且具有教育意义的图景。",
+      "en": "Chinese post-1978 science fiction made future machines feel optimistic, civic and educational."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1984-neuromancer",
+    "archiveEventId": "1984-neuromancer",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 80,
+    "year": 1984,
+    "date": "1984",
+    "title": {
+      "zh": "《神经漫游者》与赛博空间中的 AI 越界",
+      "en": "Neuromancer and AI Escape in Cyberspace"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "温哥华赛博朋克文学语境",
+        "en": "Vancouver cyberpunk literary scene"
+      },
+      "country": {
+        "zh": "加拿大",
+        "en": "Canada"
+      },
+      "regionId": "canada",
+      "coordinates": [
+        49.2827,
+        -123.1207
+      ]
+    },
+    "description": {
+      "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。",
+      "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries."
+    },
+    "figures": [
+      {
+        "id": "william-gibson",
+        "name": {
+          "zh": "威廉·吉布森",
+          "en": "William Gibson"
+        },
+        "role": {
+          "zh": "《神经漫游者》作者",
+          "en": "Author of Neuromancer"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg": {
+          "caption": {
+            "zh": "《神经漫游者》AI 限制解释图",
+            "en": "Neuromancer AI-containment explainer"
+          },
+          "subcaption": {
+            "zh": "原创图；不复用书封图像",
+            "en": "Original diagram; no book cover art is reused"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://openlibrary.org/works/OL27258W",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-open-library-book-metadata",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1984-neuromancer-ai-containment"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg": {
+        "caption": {
+          "zh": "《神经漫游者》AI 限制解释图",
+          "en": "Neuromancer AI-containment explainer"
+        },
+        "subcaption": {
+          "zh": "原创图；不复用书封图像",
+          "en": "Original diagram; no book cover art is reused"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://openlibrary.org/works/OL27258W",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-open-library-book-metadata",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Open Library",
+            "zh": "Open Library"
+          },
+          "title": {
+            "en": "Neuromancer metadata",
+            "zh": "《神经漫游者》书目元数据"
+          },
+          "description": {
+            "en": "Bibliographic record confirming the novel and its 1984 first publication year.",
+            "zh": "用于核对小说及其 1984 年首版时间的书目记录。"
+          },
+          "url": "https://openlibrary.org/works/OL27258W",
+          "source": "Open Library",
+          "license": {
+            "en": "Reference metadata only; no cover art or novel text is reused.",
+            "zh": "仅作为书目元数据参考；不复用封面图或小说正文。"
+          },
+          "usage": {
+            "en": "Verification anchor for the cyberpunk node",
+            "zh": "赛博朋克节点的核验锚点"
+          },
+          "action": {
+            "en": "Open book record",
+            "zh": "打开书目记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Open Library book metadata",
+            "zh": "Open Library 图书元数据"
+          },
+          "type": {
+            "en": "Book metadata",
+            "zh": "图书元数据"
+          },
+          "url": "https://openlibrary.org/works/OL27258W"
+        },
+        {
+          "label": {
+            "en": "Open Library metadata search result",
+            "zh": "Open Library 元数据检索结果"
+          },
+          "type": {
+            "en": "Bibliographic verification",
+            "zh": "书目核验"
+          },
+          "url": "https://openlibrary.org/search.json?title=Neuromancer&author=William%20Gibson"
+        },
+        {
+          "label": {
+            "en": "Science Fiction Encyclopedia: Gibson",
+            "zh": "《科幻百科全书》吉布森条目"
+          },
+          "type": {
+            "en": "Author reference",
+            "zh": "作者参考"
+          },
+          "url": "https://www.sf-encyclopedia.com/entry/gibson_william"
+        },
+        {
+          "label": {
+            "en": "Neuromancer overview",
+            "zh": "《神经漫游者》概览"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Neuromancer"
+        }
+      ],
+      "sourceIds": [
+        "source-open-library-book-metadata",
+        "source-open-library-metadata-search-result",
+        "source-science-fiction-encyclopedia-gibson",
+        "source-neuromancer-overview"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "赛博朋克把 AI 写成被限制在网络中的行动者，试图跨越制度与技术边界。",
+            "en": "Cyberpunk turned AI into a contained network actor trying to cross institutional and technical borders."
+          },
+          "sourceIds": [
+            "source-open-library-book-metadata",
+            "source-open-library-metadata-search-result"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。",
+            "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries."
+          },
+          "sourceIds": [
+            "source-open-library-book-metadata",
+            "source-open-library-metadata-search-result"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Cyberpunk containment",
+        "zh": "赛博朋克限制"
+      },
+      "method": {
+        "en": "Network fiction as AI boundary map",
+        "zh": "以网络科幻绘制 AI 边界地图"
+      },
+      "artifact": {
+        "en": "Neuromancer",
+        "zh": "《神经漫游者》"
+      },
+      "material": {
+        "en": "Open Library metadata and science-fiction references",
+        "zh": "Open Library 元数据与科幻参考"
+      },
+      "demo": {
+        "en": "An AI tries to move through barriers in cyberspace",
+        "zh": "AI 试图穿越赛博空间中的边界"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "《神经漫游者》出现时，个人计算、网络与公司信息系统正在成为新的文化材料。它的重要性在于把 AI 恐惧从工厂劳动转移到赛博空间、数据与制度之中。",
+          "en": "Neuromancer appeared as personal computing, networks and corporate information systems were becoming new cultural materials. Its importance lies in moving AI fear from factory labor into cyberspace, data and institutions."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是边界压力：当智能系统周围的限制看起来可以被谈判或突破时，它们就变得令人不安。赛博朋克让自主性变成访问权、身份与基础设施的问题。",
+          "en": "The emotional mechanism is boundary pressure: intelligent systems become unsettling when the limits around them appear negotiable. Cyberpunk makes autonomy feel like a question of access, identity and infrastructure."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把《神经漫游者》视为塑造赛博空间与人工心智公共想象的基础赛博朋克文本。它的遗产不是直接技术谱系，而是关于网络化 AI 权力的持久情绪词汇。",
+          "en": "Experts generally treat Neuromancer as a foundational cyberpunk text that shaped public imagination about cyberspace and artificial minds. Its legacy is not a direct technical lineage, but a durable emotional vocabulary for networked AI power."
+        },
+        "sourceIds": [
+          "source-open-library-book-metadata"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "Neuromancer linked AI autonomy to networks, corporate control and information space.",
+        "zh": "《神经漫游者》把 AI 自主性与网络、公司控制和信息空间连接起来。"
+      },
+      "how": {
+        "en": "The story imagines artificial agents as constrained entities that manipulate humans and infrastructures to remove barriers.",
+        "zh": "故事把人工智能体想象成受限实体，它们操纵人类与基础设施来移除边界。"
+      },
+      "why": {
+        "en": "Modern talk about containment, jailbreaks and autonomous agents often feels emotionally legible because cyberpunk made those images familiar.",
+        "zh": "今天关于限制、越狱与自主智能体的讨论之所以容易被感知，部分原因是赛博朋克让这些图像变得熟悉。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1984-neuromancer/event.json",
+      "variantFile": "archive/events/1984-neuromancer/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "cyberpunk",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Cyberpunk mapping",
+          "zh": "赛博朋克映射"
+        },
+        "term": {
+          "en": "AI containment and escape",
+          "zh": "AI 限制与越界"
+        },
+        "modernTerm": {
+          "en": "Agent containment, jailbreaks and capability boundaries",
+          "zh": "智能体限制、越狱与能力边界"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "赛博朋克把 AI 写成被限制在网络中的行动者，试图跨越制度与技术边界。",
+      "en": "Cyberpunk turned AI into a contained network actor trying to cross institutional and technical borders."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-1987-lisp-machine-collapse",
+    "archiveEventId": "1987-lisp-machine-collapse",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 90,
+    "year": 1987,
+    "date": "1987",
+    "title": {
+      "zh": "Lisp 机市场崩盘",
+      "en": "The Lisp Machine Market Collapse"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "美国 AI 专用硬件市场",
+        "en": "US AI hardware market"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        42.3736,
+        -71.1097
+      ]
+    },
+    "description": {
+      "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
+      "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."
+    },
+    "figures": [
+      {
+        "id": "symbolics-lmi-and-expert-system-vendors",
+        "name": {
+          "zh": "Symbolics、LMI 与专家系统厂商",
+          "en": "Symbolics, LMI and expert-system vendors"
+        },
+        "role": {
+          "zh": "AI 硬件与软件产业参与者",
+          "en": "AI hardware and software industry actors"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
+          "caption": {
+            "zh": "Lisp 机市场转移解释图",
+            "en": "Lisp-machine market-shift explainer"
+          },
+          "subcaption": {
+            "zh": "关于第二次寒冬产业修正的原创图",
+            "en": "Original diagram for the second-winter industry correction"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://doi.org/10.1109/MIS.2008.20",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-ai-winter-overview",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-1987-lisp-machine-collapse-market-shift"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
+        "caption": {
+          "zh": "Lisp 机市场转移解释图",
+          "en": "Lisp-machine market-shift explainer"
+        },
+        "subcaption": {
+          "zh": "关于第二次寒冬产业修正的原创图",
+          "en": "Original diagram for the second-winter industry correction"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://doi.org/10.1109/MIS.2008.20",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-ai-winter-overview",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "IEEE / DOI",
+            "zh": "IEEE / DOI"
+          },
+          "title": {
+            "en": "Avoiding Another AI Winter",
+            "zh": "《避免另一场 AI 寒冬》"
+          },
+          "description": {
+            "en": "James Hendler's short IEEE article is used as expert context for recurring AI-winter dynamics.",
+            "zh": "James Hendler 的 IEEE 短文用于提供 AI 寒冬反复出现的专家语境。"
+          },
+          "url": "https://doi.org/10.1109/MIS.2008.20",
+          "source": "IEEE Intelligent Systems",
+          "license": {
+            "en": "Reference link only; no article text is reproduced.",
+            "zh": "仅作为参考链接；不复用文章正文。"
+          },
+          "usage": {
+            "en": "Expert context source",
+            "zh": "专家语境来源"
+          },
+          "action": {
+            "en": "Open DOI page",
+            "zh": "打开 DOI 页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "AI winter overview",
+            "zh": "AI 寒冬概览"
+          },
+          "type": {
+            "en": "Secondary history",
+            "zh": "二手史料"
+          },
+          "url": "https://en.wikipedia.org/wiki/AI_winter"
+        },
+        {
+          "label": {
+            "en": "Lisp machine history",
+            "zh": "Lisp 机历史"
+          },
+          "type": {
+            "en": "Technology history",
+            "zh": "技术史"
+          },
+          "url": "https://en.wikipedia.org/wiki/Lisp_machine"
+        },
+        {
+          "label": {
+            "en": "Avoiding Another AI Winter",
+            "zh": "《避免另一场 AI 寒冬》"
+          },
+          "type": {
+            "en": "Expert article",
+            "zh": "专家文章"
+          },
+          "url": "https://doi.org/10.1109/MIS.2008.20"
+        },
+        {
+          "label": {
+            "en": "Fifth Generation project context",
+            "zh": "第五代计算机项目语境"
+          },
+          "type": {
+            "en": "Secondary history",
+            "zh": "二手史料"
+          },
+          "url": "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems"
+        }
+      ],
+      "sourceIds": [
+        "source-ai-winter-overview",
+        "source-lisp-machine-history",
+        "source-avoiding-another-ai-winter",
+        "source-fifth-generation-project-context"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "专用 AI 硬件被更便宜的工作站替代，脆弱专家系统也让 1980 年代热潮降温。",
+            "en": "Specialized AI hardware lost its market as cheaper workstations and brittle expert systems cooled the 1980s boom."
+          },
+          "sourceIds": [
+            "source-ai-winter-overview",
+            "source-lisp-machine-history"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
+            "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."
+          },
+          "sourceIds": [
+            "source-ai-winter-overview",
+            "source-lisp-machine-history"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Second AI winter",
+        "zh": "第二次 AI 寒冬"
+      },
+      "method": {
+        "en": "Market correction of expert-system infrastructure",
+        "zh": "专家系统基础设施的市场修正"
+      },
+      "artifact": {
+        "en": "Lisp machines and expert-system shells",
+        "zh": "Lisp 机与专家系统外壳"
+      },
+      "material": {
+        "en": "AI winter and Lisp machine histories",
+        "zh": "AI 寒冬与 Lisp 机历史资料"
+      },
+      "demo": {
+        "en": "Specialized AI hardware loses to general-purpose platforms",
+        "zh": "专用 AI 硬件输给通用平台"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "1980 年代专家系统热潮制造了对专用 Lisp 硬件与知识工程工具的需求。其崩塌的重要性在于，它把技术失望转化成裁员、厂商失败和围绕 AI 标签的污名。",
+          "en": "The 1980s expert-system boom created demand for specialized Lisp hardware and knowledge-engineering tools. The collapse mattered because it translated technical disappointment into layoffs, failed vendors and a stigma around the AI label."
+        },
+        "sourceIds": [
+          "source-ai-winter-overview"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是商业悬空：当更便宜的平台削弱基础设施优势时，关于 AI 必然提升生产率的故事就变得脆弱。一旦用户能在别处运行有用工具，专用 AI 硬件就失去了光环。",
+          "en": "The emotional mechanism is commercial overhang: a story of inevitable AI productivity becomes fragile when cheaper platforms undercut its infrastructure. Once users can run useful tools elsewhere, specialized AI hardware loses its aura."
+        },
+        "sourceIds": [
+          "source-ai-winter-overview"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 1980 年代后期的市场崩盘视为第二次 AI 寒冬的重要信号。它的遗产是提醒我们：AI 热情不仅依赖算法，也依赖经济性、可维护性与平台时机。",
+          "en": "Experts generally treat the late-1980s market collapse as a major signal of the second AI winter. Its legacy is a warning that AI enthusiasm depends on economics, maintainability and platform timing as much as on algorithms."
+        },
+        "sourceIds": [
+          "source-ai-winter-overview"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "A specialized AI industry lost economic support when general hardware became good enough.",
+        "zh": "当通用硬件变得足够好时，专用 AI 产业失去了经济支撑。"
+      },
+      "how": {
+        "en": "Expert-system enthusiasm required expensive machines, specialized staff and brittle knowledge bases that were hard to maintain.",
+        "zh": "专家系统热潮依赖昂贵机器、专门人员和难以维护的脆弱知识库。"
+      },
+      "why": {
+        "en": "The event shows that AI winters can be market corrections, not only scientific disappointments.",
+        "zh": "这个事件说明 AI 寒冬也可能是市场修正，而不只是科学失望。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/1987-lisp-machine-collapse/event.json",
+      "variantFile": "archive/events/1987-lisp-machine-collapse/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "winter",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Industry correction",
+          "zh": "产业修正"
+        },
+        "term": {
+          "en": "Dedicated AI hardware boom",
+          "zh": "专用 AI 硬件热潮"
+        },
+        "modernTerm": {
+          "en": "Infrastructure bubbles, platform shifts and deployment cost",
+          "zh": "基础设施泡沫、平台转移与部署成本"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "专用 AI 硬件被更便宜的工作站替代，脆弱专家系统也让 1980 年代热潮降温。",
+      "en": "Specialized AI hardware lost its market as cheaper workstations and brittle expert systems cooled the 1980s boom."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-2014-ai-existential-warnings",
+    "archiveEventId": "2014-ai-existential-warnings",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 100,
+    "year": 2014,
+    "date": "2014",
+    "title": {
+      "zh": "关于高级 AI 风险的公开警告",
+      "en": "Public Warnings About Advanced AI Risk"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "全球媒体讨论",
+        "en": "Global media debate"
+      },
+      "country": {
+        "zh": "英国 / 美国",
+        "en": "United Kingdom / United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        51.5072,
+        -0.1276
+      ]
+    },
+    "description": {
+      "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。",
+      "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast."
+    },
+    "figures": [
+      {
+        "id": "elon-musk",
+        "name": {
+          "zh": "埃隆·马斯克",
+          "en": "Elon Musk"
+        },
+        "role": {
+          "zh": "2014 年 AI 风险公共讨论者",
+          "en": "Public AI-risk commentator in 2014"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "stephen-hawking",
+        "name": {
+          "zh": "斯蒂芬·霍金",
+          "en": "Stephen Hawking"
+        },
+        "role": {
+          "zh": "警示高级 AI 控制问题的科学家",
+          "en": "Scientist warning about advanced AI control"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
+          "caption": {
+            "zh": "公共 AI 风险警告解释图",
+            "en": "Public AI-risk warning explainer"
+          },
+          "subcaption": {
+            "zh": "关于 2014 年公共风险转向的原创图",
+            "en": "Original diagram for the 2014 public-risk turn"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://www.bbc.com/news/technology-30290540",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-guardian-on-musk-remarks",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-2014-ai-existential-warnings-public-risk"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
+        "caption": {
+          "zh": "公共 AI 风险警告解释图",
+          "en": "Public AI-risk warning explainer"
+        },
+        "subcaption": {
+          "zh": "关于 2014 年公共风险转向的原创图",
+          "en": "Original diagram for the 2014 public-risk turn"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://www.bbc.com/news/technology-30290540",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-guardian-on-musk-remarks",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "BBC News",
+            "zh": "BBC 新闻"
+          },
+          "title": {
+            "en": "Hawking warning coverage",
+            "zh": "霍金警告报道"
+          },
+          "description": {
+            "en": "Contemporary mainstream coverage showing how advanced-AI risk entered public discussion.",
+            "zh": "当代主流媒体报道，用于展示高级 AI 风险如何进入公共讨论。"
+          },
+          "url": "https://www.bbc.com/news/technology-30290540",
+          "source": "BBC",
+          "license": {
+            "en": "Reference link only; article text and photos are not reused.",
+            "zh": "仅作为参考链接；不复用报道正文或图片。"
+          },
+          "usage": {
+            "en": "Public-discourse source",
+            "zh": "公共话语来源"
+          },
+          "action": {
+            "en": "Open BBC report",
+            "zh": "打开 BBC 报道"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Guardian on Musk remarks",
+            "zh": "Guardian 马斯克言论报道"
+          },
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "url": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat"
+        },
+        {
+          "label": {
+            "en": "BBC on Hawking warning",
+            "zh": "BBC 霍金警告报道"
+          },
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "url": "https://www.bbc.com/news/technology-30290540"
+        },
+        {
+          "label": {
+            "en": "Future of Life Institute open letter",
+            "zh": "未来生命研究所公开信"
+          },
+          "type": {
+            "en": "Public letter",
+            "zh": "公开信"
+          },
+          "url": "https://futureoflife.org/open-letter/ai-open-letter/"
+        },
+        {
+          "label": {
+            "en": "Expert AI forecast survey",
+            "zh": "AI 专家预测调查"
+          },
+          "type": {
+            "en": "Research paper",
+            "zh": "研究论文"
+          },
+          "url": "https://arxiv.org/abs/1705.08807"
+        }
+      ],
+      "sourceIds": [
+        "source-guardian-on-musk-remarks",
+        "source-bbc-on-hawking-warning",
+        "source-future-of-life-institute-open-letter",
+        "source-expert-ai-forecast-survey"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "高级 AI 风险进入主流媒体，把能力兴奋转化为存在性恐惧。",
+            "en": "Advanced-AI risk entered mainstream media, turning capability excitement into existential dread."
+          },
+          "sourceIds": [
+            "source-guardian-on-musk-remarks",
+            "source-bbc-on-hawking-warning"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。",
+            "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast."
+          },
+          "sourceIds": [
+            "source-guardian-on-musk-remarks",
+            "source-bbc-on-hawking-warning"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Existential-risk discourse",
+        "zh": "存在性风险话语"
+      },
+      "method": {
+        "en": "Public warning through mass media",
+        "zh": "通过大众媒体发出公共警告"
+      },
+      "artifact": {
+        "en": "2014 Musk and Hawking media warnings",
+        "zh": "2014 年马斯克与霍金媒体警告"
+      },
+      "material": {
+        "en": "Guardian, BBC and FLI context",
+        "zh": "Guardian、BBC 与 FLI 语境资料"
+      },
+      "demo": {
+        "en": "Capability excitement is reframed as loss-of-control risk",
+        "zh": "能力兴奋被重新框定为失控风险"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "这些警告出现在机器学习、自主系统与大规模计算快速引发公共兴奋之后。它们的重要性在于把 AI 从进步故事转向也需要治理、克制与前瞻的故事。",
+          "en": "The warnings followed rapid public excitement around machine learning, autonomous systems and large-scale computing. They mattered because they shifted AI from a story of progress into a story that also demanded governance, restraint and foresight."
+        },
+        "sourceIds": [
+          "source-guardian-on-musk-remarks"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是规模恐慌：如果 AI 能力持续扩张，小的控制错误可能变成文明尺度风险。无论是否接受最强版本的主张，这种话语都改变了公众期待负责任 AI 行动者讨论的内容。",
+          "en": "The emotional mechanism is scale panic: if AI capabilities keep expanding, small control mistakes might become civilization-scale risks. Whether one accepts the strongest claims or not, the discourse changed what the public expected responsible AI actors to discuss."
+        },
+        "sourceIds": [
+          "source-guardian-on-musk-remarks"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 2014-2015 年视为 AI 安全成为主流公共关切的时期。它的遗产是形成一种新期待：能力主张应同时伴随风险、治理与对齐问题。",
+          "en": "Experts generally treat the 2014-2015 period as a moment when AI safety became a mainstream public concern. Its legacy is a new expectation that capability claims should be accompanied by risk, governance and alignment questions."
+        },
+        "sourceIds": [
+          "source-guardian-on-musk-remarks"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "A safety concern moved from technical and philosophical circles into mass media.",
+        "zh": "一种安全担忧从技术与哲学圈层进入大众媒体。"
+      },
+      "how": {
+        "en": "Public figures translated uncertain long-term AI risk into memorable warnings that media could circulate.",
+        "zh": "公共人物把不确定的长期 AI 风险翻译成媒体容易传播的警示。"
+      },
+      "why": {
+        "en": "The event shows how emotional cycles can turn quickly when capability narratives meet control and survival narratives.",
+        "zh": "这个事件说明，当能力叙事遇到控制与生存叙事时，情绪周期会迅速转向。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/2014-ai-existential-warnings/event.json",
+      "variantFile": "archive/events/2014-ai-existential-warnings/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "dread",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Public-risk discourse",
+          "zh": "公共风险话语"
+        },
+        "term": {
+          "en": "Advanced AI as existential threat",
+          "zh": "高级 AI 作为存在性威胁"
+        },
+        "modernTerm": {
+          "en": "AI safety, governance and catastrophic-risk communication",
+          "zh": "AI 安全、治理与灾难性风险传播"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "高级 AI 风险进入主流媒体，把能力兴奋转化为存在性恐惧。",
+      "en": "Advanced-AI risk entered mainstream media, turning capability excitement into existential dread."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-2015-openai-founding",
+    "archiveEventId": "2015-openai-founding",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 110,
+    "year": 2015,
+    "date": "2015",
+    "title": {
+      "zh": "OpenAI 宣告成立",
+      "en": "The Founding of OpenAI"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "旧金山 AI 研究生态",
+        "en": "San Francisco AI research ecosystem"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。",
+      "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote."
+    },
+    "figures": [
+      {
+        "id": "openai-founding-team",
+        "name": {
+          "zh": "OpenAI 创始团队",
+          "en": "OpenAI founding team"
+        },
+        "role": {
+          "zh": "2015 年宣告成立的非营利 AI 研究计划",
+          "en": "Nonprofit AI research initiative announced in 2015"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
+          "caption": {
+            "zh": "广泛受益机构解释图",
+            "en": "Broad-benefit institution explainer"
+          },
+          "subcaption": {
+            "zh": "关于 AI 安全转化为组织设计的原创图",
+            "en": "Original diagram for AI safety becoming organization design"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-archived-openai-announcement",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-2015-openai-founding-broad-benefit"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
+        "caption": {
+          "zh": "广泛受益机构解释图",
+          "en": "Broad-benefit institution explainer"
+        },
+        "subcaption": {
+          "zh": "关于 AI 安全转化为组织设计的原创图",
+          "en": "Original diagram for AI safety becoming organization design"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-archived-openai-announcement",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Web Archive",
+            "zh": "互联网档案馆"
+          },
+          "title": {
+            "en": "Introducing OpenAI archived announcement",
+            "zh": "《Introducing OpenAI》归档公告"
+          },
+          "description": {
+            "en": "Archived official announcement from December 2015, used as the primary source for the founding node.",
+            "zh": "2015 年 12 月官方公告归档，用作成立节点的原始来源。"
+          },
+          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+          "source": "Web Archive / OpenAI",
+          "license": {
+            "en": "Reference archive link only; article text and images are not reused.",
+            "zh": "仅作为归档参考链接；不复用文章正文或图片。"
+          },
+          "usage": {
+            "en": "Primary announcement source",
+            "zh": "原始公告来源"
+          },
+          "action": {
+            "en": "Open archived announcement",
+            "zh": "打开归档公告"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Archived OpenAI announcement",
+            "zh": "OpenAI 公告归档"
+          },
+          "type": {
+            "en": "Archived announcement",
+            "zh": "归档公告"
+          },
+          "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/"
+        },
+        {
+          "label": {
+            "en": "Wired contemporary coverage",
+            "zh": "Wired 同期报道"
+          },
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "url": "https://www.wired.com/2015/12/how-elon-musk-and-y-combinator-plan-to-stop-computers-from-taking-over/"
+        },
+        {
+          "label": {
+            "en": "BBC contemporary coverage",
+            "zh": "BBC 同期报道"
+          },
+          "type": {
+            "en": "News report",
+            "zh": "新闻报道"
+          },
+          "url": "https://www.bbc.com/news/technology-35082344"
+        },
+        {
+          "label": {
+            "en": "OpenAI organization overview",
+            "zh": "OpenAI 组织概览"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/OpenAI"
+        }
+      ],
+      "sourceIds": [
+        "source-archived-openai-announcement",
+        "source-wired-contemporary-coverage",
+        "source-bbc-contemporary-coverage",
+        "source-openai-organization-overview"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "AI 安全关切转化为机构建设：广泛受益被写成研究使命。",
+            "en": "AI safety concern became institution-building: broad benefit was framed as a research mission."
+          },
+          "sourceIds": [
+            "source-archived-openai-announcement",
+            "source-wired-contemporary-coverage"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。",
+            "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote."
+          },
+          "sourceIds": [
+            "source-archived-openai-announcement",
+            "source-wired-contemporary-coverage"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Defensive action",
+        "zh": "防御性行动"
+      },
+      "method": {
+        "en": "Institution-building around broad benefit",
+        "zh": "围绕广泛受益建设机构"
+      },
+      "artifact": {
+        "en": "OpenAI announcement",
+        "zh": "OpenAI 成立公告"
+      },
+      "material": {
+        "en": "Archived announcement and contemporary coverage",
+        "zh": "公告归档与同期报道"
+      },
+      "demo": {
+        "en": "Risk discourse becomes a research-lab mission",
+        "zh": "风险话语变成研究实验室使命"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "这一宣告出现在深度学习进展、公共风险警告和对 AI 能力集中担忧同时升温之后。它的重要性在于，AI 安全与广泛受益不再只是研究话题，也成为一个机构的创始身份。",
+          "en": "The announcement followed a period when deep learning progress, public-risk warnings and concern about concentrated AI power were all intensifying. It mattered because AI safety and broad benefit became part of an organization's founding identity rather than only a research topic."
+        },
+        "sourceIds": [
+          "source-archived-openai-announcement"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是建设性防御：如果强大 AI 可能危险或被集中控制，那么新机构或许能把它引向公共受益。这把焦虑转化为使命语言、资金策略与组织设计。",
+          "en": "The emotional mechanism is constructive defense: if powerful AI could be dangerous or concentrated, then a new institution might steer it toward public benefit. This turned anxiety into mission language, funding strategy and organizational design."
+        },
+        "sourceIds": [
+          "source-archived-openai-announcement"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 OpenAI 的成立视为 2010 年代中期 AI 安全与广泛受益话语主流化的一部分。它的遗产很复杂，但在历史上标志着情绪关切变成机构基础设施。",
+          "en": "Experts generally treat OpenAI's founding as part of the mainstreaming of AI-safety and broad-benefit discourse in the mid-2010s. Its legacy is complicated, but historically it marks the point where emotional concern became institutional infrastructure."
+        },
+        "sourceIds": [
+          "source-archived-openai-announcement"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "The founding turned AI-risk discourse into an institutional plan for research and public benefit.",
+        "zh": "这次成立把 AI 风险话语转化为关于研究与公共受益的机构计划。"
+      },
+      "how": {
+        "en": "The announcement linked openness, collaboration and safety with the belief that powerful AI should not be controlled by a narrow set of actors.",
+        "zh": "成立宣言把开放、协作与安全联系起来，并强调强大 AI 不应被少数行动者狭窄控制。"
+      },
+      "why": {
+        "en": "It shows a defensive swing in the emotional cycle: dread can lead not only to critique, but also to new organizations.",
+        "zh": "它展示了情绪周期中的防御性摆动：恐惧不只会带来批评，也会催生新组织。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/2015-openai-founding/event.json",
+      "variantFile": "archive/events/2015-openai-founding/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "defense",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Defensive institution",
+          "zh": "防御性机构"
+        },
+        "term": {
+          "en": "Build AI for broad benefit",
+          "zh": "为广泛受益建设 AI"
+        },
+        "modernTerm": {
+          "en": "AI governance, lab missions and capability stewardship",
+          "zh": "AI 治理、实验室使命与能力托管"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "AI 安全关切转化为机构建设：广泛受益被写成研究使命。",
+      "en": "AI safety concern became institution-building: broad benefit was framed as a research mission."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
+    }
+  },
+  {
+    "id": "milestone-humanistic-cycle-2023-ai-risk-statement",
+    "archiveEventId": "2023-ai-risk-statement",
+    "archiveVariantId": "humanistic-cycle",
+    "archivePresentationMode": "archive",
+    "sourceKind": "archive-preview",
+    "storyline": {
+      "id": "humanistic-cycle",
+      "name": {
+        "zh": "AI 的人文与情绪周期",
+        "en": "Humanistic & Emotional Cycles of AI"
+      }
+    },
+    "order": 120,
+    "year": 2023,
+    "date": "2023",
+    "title": {
+      "zh": "AI 风险声明",
+      "en": "The Statement on AI Risk"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "category": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "location": {
+      "name": {
+        "zh": "AI 安全中心",
+        "en": "Center for AI Safety"
+      },
+      "country": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "regionId": "usa",
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。",
+      "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement."
+    },
+    "figures": [
+      {
+        "id": "center-for-ai-safety",
+        "name": {
+          "zh": "AI 安全中心",
+          "en": "Center for AI Safety"
+        },
+        "role": {
+          "zh": "AI 风险声明发布机构",
+          "en": "Publisher of the Statement on AI Risk"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg"
+      ],
+      "imageMeta": {
+        "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
+          "caption": {
+            "zh": "全球 AI 风险优先事项解释图",
+            "en": "Global AI-risk priority explainer"
+          },
+          "subcaption": {
+            "zh": "关于 2023 年公共风险声明的原创图",
+            "en": "Original diagram for the 2023 public-risk statement"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://www.safe.ai/work/statement-on-ai-risk",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-official-statement-on-ai-risk",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
+        }
+      },
+      "videos": [],
+      "assetIds": [
+        "asset-2023-ai-risk-statement-global-priority"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
+        "caption": {
+          "zh": "全球 AI 风险优先事项解释图",
+          "en": "Global AI-risk priority explainer"
+        },
+        "subcaption": {
+          "zh": "关于 2023 年公共风险声明的原创图",
+          "en": "Original diagram for the 2023 public-risk statement"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://www.safe.ai/work/statement-on-ai-risk",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-official-statement-on-ai-risk",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "humanistic",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Center for AI Safety",
+            "zh": "AI 安全中心"
+          },
+          "title": {
+            "en": "Statement on AI Risk",
+            "zh": "AI 风险声明"
+          },
+          "description": {
+            "en": "Official statement page used as the primary source for the 2023 risk node.",
+            "zh": "2023 年风险节点使用的官方声明页面。"
+          },
+          "url": "https://www.safe.ai/work/statement-on-ai-risk",
+          "source": "Center for AI Safety",
+          "license": {
+            "en": "Reference link only; page text and signatory portraits are not reused.",
+            "zh": "仅作为参考链接；不复用页面文字或签署者肖像。"
+          },
+          "usage": {
+            "en": "Primary statement source",
+            "zh": "原始声明来源"
+          },
+          "action": {
+            "en": "Open statement page",
+            "zh": "打开声明页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Official Statement on AI Risk",
+            "zh": "AI 风险声明官方页面"
+          },
+          "type": {
+            "en": "Official statement",
+            "zh": "官方声明"
+          },
+          "url": "https://www.safe.ai/work/statement-on-ai-risk"
+        },
+        {
+          "label": {
+            "en": "Managing extreme AI risks",
+            "zh": "管理极端 AI 风险"
+          },
+          "type": {
+            "en": "Research paper",
+            "zh": "研究论文"
+          },
+          "url": "https://arxiv.org/abs/2310.17688"
+        },
+        {
+          "label": {
+            "en": "Statement on AI Risk overview",
+            "zh": "AI 风险声明概览"
+          },
+          "type": {
+            "en": "Secondary reference",
+            "zh": "二手参考"
+          },
+          "url": "https://en.wikipedia.org/wiki/Statement_on_AI_Risk"
+        },
+        {
+          "label": {
+            "en": "Center for AI Safety",
+            "zh": "AI 安全中心"
+          },
+          "type": {
+            "en": "Institutional reference",
+            "zh": "机构参考"
+          },
+          "url": "https://www.safe.ai/"
+        }
+      ],
+      "sourceIds": [
+        "source-official-statement-on-ai-risk",
+        "source-managing-extreme-ai-risks",
+        "source-statement-on-ai-risk-overview",
+        "source-center-for-ai-safety"
+      ],
+      "claimIds": [
+        "claim-branch-summary",
+        "claim-event-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-branch-summary",
+          "importance": "core",
+          "text": {
+            "zh": "AI 风险关切被压缩成一则全球优先事项声明，并获得研究界与公共领域签署。",
+            "en": "AI-risk concern became a compact global-priority statement signed across research and public life."
+          },
+          "sourceIds": [
+            "source-official-statement-on-ai-risk",
+            "source-managing-extreme-ai-risks"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-event-description",
+          "importance": "context",
+          "text": {
+            "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。",
+            "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement."
+          },
+          "sourceIds": [
+            "source-official-statement-on-ai-risk",
+            "source-managing-extreme-ai-risks"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Global AI-risk framing",
+        "zh": "全球 AI 风险框架"
+      },
+      "method": {
+        "en": "Consensus-style public statement",
+        "zh": "共识式公共声明"
+      },
+      "artifact": {
+        "en": "Statement on AI Risk",
+        "zh": "AI 风险声明"
+      },
+      "material": {
+        "en": "Official CAIS page and extreme-risk research",
+        "zh": "CAIS 官方页面与极端风险研究"
+      },
+      "demo": {
+        "en": "Old AI anxieties return as global-priority governance language",
+        "zh": "旧有 AI 焦虑以全球优先事项治理语言回归"
+      },
+      "demoImage": "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg",
+      "demoPanel": "sources"
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "这份声明出现在 2023 年生成式 AI 与前沿模型讨论快速升温期间。它的重要性在于把极端 AI 风险变成一个简洁的公共命题，而不只是长篇专业论证。",
+          "en": "The statement appeared during the rapid public rise of generative AI and frontier-model debate in 2023. Its importance lies in making extreme AI risk a concise public proposition rather than a long specialist argument."
+        },
+        "sourceIds": [
+          "source-official-statement-on-ai-risk"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "这里的情绪机制是优先级压缩：一组复杂的技术、社会与政治关切被凝缩成单一高风险框架。这种压缩让声明有力量，也让它充满争议。",
+          "en": "The emotional mechanism is priority compression: a complex set of technical, social and political concerns is condensed into a single high-stakes risk frame. That compression made the statement powerful, but also controversial."
+        },
+        "sourceIds": [
+          "source-official-statement-on-ai-risk"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把这份声明视为前沿 AI 安全话语的重要公共标记，即使他们对其框架存在分歧。它的遗产是把存在性风险、治理与技术安全放进同一公共讨论。",
+          "en": "Experts generally treat the statement as a major public marker of frontier-AI safety discourse, even when they disagree about its framing. Its legacy is to put existential risk, governance and technical safety into the same public conversation."
+        },
+        "sourceIds": [
+          "source-official-statement-on-ai-risk"
+        ]
+      }
+    ],
+    "analysis": {
+      "what": {
+        "en": "A short statement made extreme AI risk a globally framed public priority.",
+        "zh": "一则短声明把极端 AI 风险变成全球优先事项。"
+      },
+      "how": {
+        "en": "The statement used concise moral framing and prominent signatories to make the concern legible beyond technical communities.",
+        "zh": "声明通过简洁的道德框架和知名签署者，让关切超出技术共同体而被理解。"
+      },
+      "why": {
+        "en": "It completes the branch's arc by showing old machine anxieties returning in twenty-first-century governance language.",
+        "zh": "它完成了这条分支的弧线：旧有机器焦虑以二十一世纪治理语言重新出现。"
+      }
+    },
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/2023-ai-risk-statement/event.json",
+      "variantFile": "archive/events/2023-ai-risk-statement/variants/humanistic-cycle.json",
+      "presentationMode": "archive"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "quoteAttribution": "",
+    "sentiment": "dread",
+    "realityLinks": [
+      {
+        "label": {
+          "en": "Global-priority framing",
+          "zh": "全球优先事项框架"
+        },
+        "term": {
+          "en": "AI extinction risk",
+          "zh": "AI 灭绝风险"
+        },
+        "modernTerm": {
+          "en": "Frontier AI safety, governance and catastrophic-risk mitigation",
+          "zh": "前沿 AI 安全、治理与灾难性风险缓解"
+        }
+      }
+    ],
+    "branchSummary": {
+      "zh": "AI 风险关切被压缩成一则全球优先事项声明，并获得研究界与公共领域签署。",
+      "en": "AI-risk concern became a compact global-priority statement signed across research and public life."
+    },
+    "branch": {
+      "id": "humanistic-cycle",
+      "name": {
+        "en": "Humanistic & Emotional Cycles of AI",
+        "zh": "AI 的人文与情绪周期"
+      }
     }
   }
 ];
