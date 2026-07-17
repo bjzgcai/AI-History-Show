@@ -9356,7 +9356,8 @@
             }
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 600px),
+            (max-width: 932px) and (max-height: 600px) and (orientation: landscape) {
             html.branch-timeline-active,
             html.branch-timeline-active body {
                 height: auto;
@@ -9395,7 +9396,20 @@
             }
 
             .single-stage.is-branch-timeline .topbar-actions {
+                --branch-about-width: 58px;
+
+                grid-template-columns: minmax(0, 1fr) var(--touch-target) var(--branch-about-width);
                 gap: 8px;
+            }
+
+            .single-stage.is-branch-timeline .about-trigger {
+                width: var(--branch-about-width);
+                min-width: var(--branch-about-width);
+                max-width: var(--branch-about-width);
+                padding: 0 7px;
+                font-size: 12px;
+                line-height: 1;
+                white-space: nowrap;
             }
 
             .branch-timeline-page {
@@ -9567,14 +9581,21 @@
             }
 
             .branch-event-summary {
+                display: block;
+                min-height: 0;
+                overflow: visible;
                 color: rgba(244, 239, 229, 0.7);
+                -webkit-line-clamp: unset;
+                -webkit-box-orient: initial;
             }
 
             .branch-element-item {
                 border-color: rgba(244, 239, 229, 0.14);
                 background: rgba(255, 255, 255, 0.035);
             }
+        }
 
+        @media (max-width: 600px) {
             html,
             body,
             .stage-viewport,
@@ -12360,6 +12381,8 @@
         const BRANCH_TIMELINE_HORIZONTAL_INTENT_RATIO = 1.35;
         const BRANCH_TIMELINE_TEXT_HORIZONTAL_INTENT_RATIO = 1.8;
         const BRANCH_TIMELINE_SCROLLABLE_TEXT_SELECTOR = '.branch-event-content';
+        const BRANCH_TIMELINE_STACK_MEDIA_QUERY =
+            '(max-width: 600px), (max-width: 932px) and (max-height: 600px) and (orientation: landscape)';
         let branchTimelineWheelSnapTimer = 0;
         let branchTimelineDragReleaseTimer = 0;
         let branchTimelineDragGesture = null;
@@ -12396,7 +12419,7 @@
             const centeredEvent = getBranchTimelineCenteredEvent(timeline);
             const centeredKey = centeredEvent ? String(centeredEvent.dataset.branchEventKey || '') : '';
             const extraRecordKeys = new Set(BRANCH_EXTRA_GAME_RECORD_KEYS[centeredKey] || []);
-            const showAllRecords = window.matchMedia('(max-width: 600px)').matches;
+            const showAllRecords = window.matchMedia(BRANCH_TIMELINE_STACK_MEDIA_QUERY).matches;
             timeline.querySelectorAll('.branch-event').forEach((eventCard) => {
                 const isCentered = eventCard === centeredEvent;
                 const isExtraRecordVisible = extraRecordKeys.has(String(eventCard.dataset.branchEventKey || ''));
