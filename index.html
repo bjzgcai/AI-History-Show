@@ -10041,6 +10041,9 @@
     <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
+    <script src="shared/umami-config.js"></script>
+    <script src="shared/analytics-config.js"></script>
+    <script src="shared/analytics.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
     <script>
@@ -10051,6 +10054,7 @@
         const POP_QUIZ_MOBILE_STORYLINE_ID = 'bench-council-ai100';
         const POP_QUIZ_MOBILE_QUERY_VALUE = 'mobile';
         const POP_QUIZ_MOBILE_QUESTION_COUNT = 10;
+        const POP_QUIZ_MOBILE_CAMPAIGN = 'ai100-pop-quiz-v2';
         const POP_QUIZ_MOBILE_PUBLIC_URL = 'https://bjzgcai.github.io/AI-History-Show/?storyline=bench-council-ai100&quiz=mobile';
         const POP_QUIZ_MOBILE_QR_URL = 'resources/images/ui/ai100-pop-quiz-qr-v2.svg?v=20260608';
         const COMPLETION_QUIZ_MIN_DWELL_MS = 15 * 1000;
@@ -10071,6 +10075,13 @@
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
+        const analytics = window.AIHistoryAnalytics || null;
+        if (analytics) {
+            analytics.setContext({
+                layout: 'single',
+                entry: 'index'
+            });
+        }
         const STORYLINE_OPTIONS = [
             {
                 id: UNIFIED_STORYLINE_ID,
@@ -11226,6 +11237,33 @@
                 : buildFallbackVm(milestoneList[index], index);
             vmCache.set(index, vm);
             return vm;
+        }
+
+        function getAnalyticsMilestoneMetadata(vm, navigationSource = 'render') {
+            const raw = vm && vm.raw ? vm.raw : {};
+            return {
+                milestone_id: raw.id || '',
+                archive_event_id: raw.archiveEventId || getCanonicalMilestoneSlug(raw),
+                archive_variant_id: raw.archiveVariantId || '',
+                storyline_id: activeStorylineId,
+                category: vm && vm.category ? vm.category : '',
+                year: vm && vm.year ? String(vm.year) : '',
+                navigation_source: navigationSource,
+                layout: 'single'
+            };
+        }
+
+        function startAnalyticsMilestoneView(vm, options = {}) {
+            if (!analytics) return;
+            analytics.startMilestoneView(
+                getAnalyticsMilestoneMetadata(vm, options.navigationSource),
+                { eligible: options.eligible !== false }
+            );
+        }
+
+        function trackAnalyticsEvent(eventName, eventData) {
+            if (!analytics) return false;
+            return analytics.track(eventName, eventData);
         }
 
         function preloadImage(url) {
@@ -14081,10 +14119,25 @@
             }).filter(Boolean);
         }
 
+        function getQuizAnalyticsMetadata(quiz, vm, surface) {
+            const milestoneMetadata = getAnalyticsMilestoneMetadata(vm || getVm(currentIndex), 'quiz');
+            return {
+                quiz_id: quiz && quiz.id ? quiz.id : '',
+                milestone_id: milestoneMetadata.milestone_id,
+                archive_event_id: milestoneMetadata.archive_event_id,
+                storyline_id: milestoneMetadata.storyline_id,
+                surface
+            };
+        }
+
         function applyQuizAnswer(container, quiz, selectedIndex) {
             if (!container || !quiz || container.classList.contains('is-answered')) return;
             const isCorrect = selectedIndex === quiz.answerIndex;
             container.classList.add('is-answered');
+            trackAnalyticsEvent('quiz_answer', {
+                ...getQuizAnalyticsMetadata(quiz, getVm(currentIndex), container === refs.quizModalBody ? 'checkpoint' : 'inline'),
+                correct: isCorrect
+            });
 
             container.querySelectorAll('.quick-quiz-option').forEach((button) => {
                 const optionIndex = Number(button.dataset.answerIndex);
@@ -14151,6 +14204,8 @@
                 url.searchParams.delete('layout');
                 url.searchParams.set('storyline', POP_QUIZ_MOBILE_STORYLINE_ID);
                 url.searchParams.set('quiz', POP_QUIZ_MOBILE_QUERY_VALUE);
+                url.searchParams.set('source', 'screen_link');
+                url.searchParams.set('campaign', POP_QUIZ_MOBILE_CAMPAIGN);
                 return url.href;
             } catch (_) {
                 return POP_QUIZ_MOBILE_PUBLIC_URL;
@@ -14231,9 +14286,71 @@
                     ...shuffleQuizOptions(quiz),
                     sourceTitle: vm.title || '',
                     sourceYear: vm.year || '',
+                    sourceMilestoneId: vm.raw && vm.raw.id ? vm.raw.id : '',
+                    sourceArchiveEventId: vm.raw && vm.raw.archiveEventId ? vm.raw.archiveEventId : '',
                     selectedIndex: null
                 };
             }).filter(Boolean).slice(0, POP_QUIZ_MOBILE_QUESTION_COUNT);
+        }
+
+        function getMobileQuizCampaign() {
+            return getSearchParam('campaign') || POP_QUIZ_MOBILE_CAMPAIGN;
+        }
+
+        function trackMobileQuizLanding() {
+            if (!analytics || !isMobileQuizRequest()) return;
+            const source = getSearchParam('source');
+            if (source && source !== 'qr') return;
+            analytics.trackOnce(
+                `qr-landing:${getMobileQuizCampaign()}`,
+                'qr_landing',
+                {
+                    campaign: getMobileQuizCampaign(),
+                    source: source || 'legacy_qr_url',
+                    storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID
+                }
+            );
+        }
+
+        function trackMobileQuizStart(restarted) {
+            if (!mobileQuizState) return;
+            trackAnalyticsEvent('mobile_quiz_start', {
+                campaign: getMobileQuizCampaign(),
+                storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
+                attempt: mobileQuizState.attempt,
+                restarted: Boolean(restarted),
+                quiz_count: mobileQuizState.items.length
+            });
+        }
+
+        function trackMobileQuizImpressions() {
+            if (!mobileQuizState) return;
+            mobileQuizState.items.forEach((item) => {
+                if (mobileQuizState.impressedQuizIds.has(item.id)) return;
+                mobileQuizState.impressedQuizIds.add(item.id);
+                trackAnalyticsEvent('quiz_impression', {
+                    quiz_id: item.id,
+                    milestone_id: item.sourceMilestoneId,
+                    archive_event_id: item.sourceArchiveEventId,
+                    storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
+                    surface: 'mobile'
+                });
+            });
+        }
+
+        function trackMobileQuizCompletion() {
+            if (!mobileQuizState || mobileQuizState.completionTracked) return;
+            const score = getMobileQuizScore();
+            if (!score.total || score.answered !== score.total) return;
+            mobileQuizState.completionTracked = true;
+            trackAnalyticsEvent('mobile_quiz_complete', {
+                campaign: getMobileQuizCampaign(),
+                storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
+                attempt: mobileQuizState.attempt,
+                answered: score.answered,
+                correct: score.correct,
+                total: score.total
+            });
         }
 
         function getMobileQuizScore() {
@@ -14255,6 +14372,7 @@
             const items = mobileQuizState.items;
             const optionLabels = ['A', 'B', 'C', 'D', 'E'];
             const score = getMobileQuizScore();
+            trackMobileQuizImpressions();
 
             refs.mobileQuizEyebrow.textContent = uiText('AI100 Pop Quiz', 'AI100 快速问答');
             refs.mobileQuizTitle.textContent = uiText('10-question mobile challenge', '10 题手机挑战');
@@ -14328,7 +14446,15 @@
             clearIdleAdvanceTimer();
             closeQuizModal();
             closeRegionPicker();
-            mobileQuizState = { items: buildMobileQuizItems() };
+            if (analytics) analytics.endMilestoneView('mobile_quiz');
+            mobileQuizState = {
+                items: buildMobileQuizItems(),
+                attempt: 1,
+                completionTracked: false,
+                impressedQuizIds: new Set()
+            };
+            trackMobileQuizLanding();
+            trackMobileQuizStart(false);
             document.body.classList.add('mobile-quiz-active');
             refs.mobileQuizApp.classList.remove('is-hidden');
             renderMobileQuizState();
@@ -14340,6 +14466,16 @@
             const item = items[questionIndex];
             if (!item || Number.isInteger(item.selectedIndex)) return;
             item.selectedIndex = optionIndex;
+            trackAnalyticsEvent('quiz_answer', {
+                quiz_id: item.id,
+                milestone_id: item.sourceMilestoneId,
+                archive_event_id: item.sourceArchiveEventId,
+                storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
+                surface: 'mobile',
+                correct: item.selectedIndex === item.answerIndex,
+                attempt: mobileQuizState.attempt
+            });
+            trackMobileQuizCompletion();
             renderMobileQuizState();
         }
 
@@ -14349,6 +14485,10 @@
                 return;
             }
             mobileQuizState.items = buildMobileQuizItems();
+            mobileQuizState.attempt += 1;
+            mobileQuizState.completionTracked = false;
+            mobileQuizState.impressedQuizIds = new Set();
+            trackMobileQuizStart(true);
             renderMobileQuizState();
             if (refs.mobileQuizApp) refs.mobileQuizApp.scrollTop = 0;
         }
@@ -14362,9 +14502,12 @@
             try {
                 const url = new URL(window.location.href);
                 url.searchParams.delete('quiz');
+                url.searchParams.delete('source');
+                url.searchParams.delete('campaign');
                 window.history.replaceState(null, '', url);
             } catch (_) {}
 
+            startAnalyticsMilestoneView(getVm(currentIndex), { navigationSource: 'mobile_quiz_exit' });
             restartIdleAdvanceTimer();
         }
 
@@ -14496,6 +14639,7 @@
             refs.quizModal.classList.remove('is-hidden');
             renderQuizMaterials(refs.quizModalMaterials, vm);
             renderQuickQuiz(refs.quizModalBody, vm);
+            trackAnalyticsEvent('quiz_impression', getQuizAnalyticsMetadata(quiz, vm, 'checkpoint'));
             window.requestAnimationFrame(() => {
                 const firstOption = refs.quizModalBody.querySelector('.quick-quiz-option');
                 if (firstOption) firstOption.focus();
@@ -17692,10 +17836,14 @@
             observer.observe(document.body, { childList: true });
         }
 
-        function renderPage(index) {
+        function renderPage(index, analyticsOptions = {}) {
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
             syncUiBrowserCurrentIndex();
             const vm = getVm(currentIndex);
+            startAnalyticsMilestoneView(vm, {
+                navigationSource: analyticsOptions.navigationSource || 'render',
+                eligible: analyticsOptions.eligible !== false
+            });
             currentMilestoneViewedAt = Date.now();
             markCompletionQuizView(vm);
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
@@ -18033,7 +18181,7 @@
         }
 
         function jumpTo(index, options = {}) {
-            const { portraitScrollAnchor = 'top', skipCompletionQuiz = false } = options;
+            const { portraitScrollAnchor = 'top', skipCompletionQuiz = false, analyticsSource = 'manual' } = options;
             if (index < 0 || index >= milestoneList.length || index === currentIndex) return;
             if (!skipCompletionQuiz && maybeOpenCompletionQuiz(() => {
                 jumpTo(index, { ...options, skipCompletionQuiz: true });
@@ -18051,7 +18199,10 @@
                 uiSelectedLocationKey = '';
                 uiSelectedLocationEventIds = [];
             }
-            renderPage(currentIndex);
+            renderPage(currentIndex, {
+                navigationSource: analyticsSource,
+                eligible: analyticsSource !== 'auto'
+            });
             if (portraitScrollAnchor === 'bottom') {
                 scrollPortraitToBoundary('bottom');
             } else {
@@ -18150,7 +18301,7 @@
 
             closeTransientOverlaysForIdleAdvance();
             const nextIndex = currentIndex >= milestoneList.length - 1 ? 0 : currentIndex + 1;
-            jumpTo(nextIndex, { skipCompletionQuiz: true });
+            jumpTo(nextIndex, { skipCompletionQuiz: true, analyticsSource: 'auto' });
             restartIdleAdvanceTimer();
         }
 
@@ -18162,6 +18313,7 @@
 
         function registerUserActivity(event) {
             if (event && event.isTrusted === false) return;
+            if (analytics) analytics.markInteraction();
             if (hasOpenMobileQuiz()) return;
             restartIdleAdvanceTimer();
         }

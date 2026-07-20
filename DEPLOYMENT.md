@@ -102,6 +102,27 @@ docker compose config --quiet
 
 ## 二、展示页部署
 
+### 可选：启用 Umami 统计
+
+展示页内置了可插拔统计模块。Umami 专属配置位于 `shared/umami-config.js`，通用 provider 选择位于 `shared/analytics-config.js`。Umami 未启用或 `websiteId` 为空时，通用配置自动使用 `none` provider，不会加载第三方脚本或发送网络请求，也不会影响页面启动。
+
+Umami 部署完成后，只需修改 `shared/umami-config.js` 中的开关和 Website ID：
+
+```js
+globalScope.AI_HISTORY_UMAMI_CONFIG = {
+    enabled: true,
+    websiteId: '你的 Umami Website ID',
+    scriptUrl: 'https://museum.bza.edu.cn/umami/script.js',
+    hostUrl: 'https://museum.bza.edu.cn/umami',
+    autoTrack: true,
+    domains: ['museum.bza.edu.cn']
+};
+```
+
+当前采集地址已配置为 `https://museum.bza.edu.cn/umami/script.js`，数据发送到 `https://museum.bza.edu.cn/umami/api/send`。内网管理面板和 Docker 服务地址不进入前端配置。`websiteId` 缺失、Umami 服务不可达或脚本被浏览器拦截时，统计模块会静默降级，不阻塞展示页面。
+
+当前自定义事件包括 `session_start`、`milestone_view`、`milestone_leave`、`quiz_impression`、`quiz_answer`、`mobile_quiz_start`、`mobile_quiz_complete` 和 `qr_landing`。事件浏览需累计至少 1 秒可见时间；连续 60 秒没有人工操作会暂停停留计时，30 分钟没有操作后再次互动会开始新会话。大屏自动轮播不会直接产生有效事件浏览，除非观众随后发生真实操作。
+
 ### 方案对比
 
 | 维度 | 方案一：Nginx 云服务器 | 方案二：Gitee Pages |

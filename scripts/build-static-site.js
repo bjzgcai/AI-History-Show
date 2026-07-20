@@ -44,6 +44,15 @@ function validateBundle() {
         fs.existsSync(path.join(OUTPUT, 'shared', 'milestone-view.js')),
         'Bundle is missing shared/milestone-view.js'
     );
+    assert.ok(fs.existsSync(path.join(OUTPUT, 'shared', 'analytics.js')), 'Bundle is missing shared/analytics.js');
+    assert.ok(
+        fs.existsSync(path.join(OUTPUT, 'shared', 'analytics-config.js')),
+        'Bundle is missing shared/analytics-config.js'
+    );
+    assert.ok(
+        fs.existsSync(path.join(OUTPUT, 'shared', 'umami-config.js')),
+        'Bundle is missing shared/umami-config.js'
+    );
     assert.ok(
         fs.existsSync(path.join(OUTPUT, 'resources', 'images', 'ui', 'brand.png')),
         'Bundle is missing the brand image'
