@@ -1,0 +1,85 @@
+[
+  {
+    "id": "source-alexnet-neurips-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
+      "en": "ImageNet Classification with Deep Convolutional Neural Networks"
+    },
+    "authors": [
+      "Alex Krizhevsky",
+      "Ilya Sutskever",
+      "Geoffrey Hinton"
+    ],
+    "year": 2012,
+    "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "AlexNet 主论文页面。",
+      "en": "Primary AlexNet paper page."
+    }
+  },
+  {
+    "id": "source-alexnet-neurips-pdf",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "NeurIPS 完整论文 PDF",
+      "en": "NeurIPS full paper PDF"
+    },
+    "year": 2012,
+    "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "AlexNet 论文 PDF。",
+      "en": "AlexNet paper PDF."
+    }
+  },
+  {
+    "id": "source-imagenet-challenge",
+    "type": "official-page",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "ImageNet 大规模视觉识别挑战赛",
+      "en": "ImageNet Large Scale Visual Recognition Challenge"
+    },
+    "url": "https://www.image-net.org/challenges/LSVRC/index.php",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "ImageNet 大规模视觉识别挑战赛页面。",
+      "en": "ImageNet Large Scale Visual Recognition Challenge page."
+    }
+  },
+  {
+    "id": "source-alexnet-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Context"
+    },
+    "title": {
+      "zh": "AlexNet 概览",
+      "en": "AlexNet overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/AlexNet",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "AlexNet 概览补充资料。",
+      "en": "Supplementary AlexNet overview reference."
+    }
+  }
+]

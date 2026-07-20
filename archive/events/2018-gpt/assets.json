@@ -1,0 +1,158 @@
+[
+  {
+    "id": "asset-alec-radford",
+    "type": "image",
+    "path": "resources/images/figures/alec-radford.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "亚历克·拉德福德肖像",
+      "en": "Alec Radford portrait"
+    },
+    "subcaption": {
+      "zh": "GPT 主要作者",
+      "en": "GPT lead author"
+    },
+    "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-gpt-next-token",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "GPT 下一个令牌预训练",
+      "en": "GPT next-token pre-training"
+    },
+    "subcaption": {
+      "zh": "关于解码器式生成预训练的本地原创解释图。",
+      "en": "Original local explainer of decoder-only generative pre-training."
+    },
+    "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-gpt-architecture-01",
+    "type": "image",
+    "path": "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "GPT 架构图",
+      "en": "GPT diagram"
+    },
+    "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-gpt-architecture-02",
+    "type": "image",
+    "path": "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "GPT 架构图",
+      "en": "GPT diagram"
+    },
+    "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-gpt-historical-01",
+    "type": "image",
+    "path": "resources/images/2018-gpt/historical/2018-gpt_historical_01.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "GPT",
+      "en": "GPT"
+    },
+    "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2018-gpt-people-02",
+    "type": "image",
+    "path": "resources/images/2018-gpt/people/2018-gpt_people_02.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-improving-language-understanding-by-generative-pre-training",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

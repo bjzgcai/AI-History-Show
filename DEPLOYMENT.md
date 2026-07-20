@@ -2,7 +2,7 @@
 
 本项目包含两个独立部分：
 - **展示页**（`index.html`）：纯静态 HTML5，任何静态文件服务器均可运行
-- **内容管理服务**（`manage/server.js`）：Node.js 服务，用于在线编辑内容，**仅需在有编辑需求时运行**
+- **内容管理服务**（`manage/server.js`）：Node.js 服务，用于编辑 Archive JSON；Legacy 数据仅提供只读参考，**仅需在有编辑需求时运行**
 
 ---
 
@@ -25,7 +25,7 @@ npm run start:static
 # 展厅本机演示服务，固定使用 127.0.0.1:8000
 npm run start:demo
 
-# 内容管理服务，默认监听 http://localhost:3001/admin
+# Archive 内容管理服务，默认入口 http://localhost:3001/archive-admin
 npm run start:admin
 ```
 
@@ -41,8 +41,9 @@ PORT=3002 npm run start:admin
 `Dockerfile` 默认构建 Nginx 展示页镜像，对应下面“方案一：Nginx 云服务器”的部署流程：
 
 1. 使用 Node.js 生成 `milestones-data.js` 和 `milestones-data-default.js`。
-2. 将 `index.html`、`dual-screen.html`、`shared/`、`resources/` 和生成数据复制到 Nginx Web 根目录。
-3. 使用容器内的 Nginx 在 `8000` 端口提供静态展示页。
+2. 运行 `npm run build:static`，将页面、正式数据、`shared/`、`resources/` 和所需 `public/` 资源组装到 `.tmp/static-site/`。
+3. Docker presentation stage 与 GitHub Pages 都只发布这一个 allowlist 静态包。
+4. 使用容器内的 Nginx 在 `8000` 端口提供静态展示页。
 
 ```bash
 docker build -t ai-history-show .
@@ -74,10 +75,11 @@ docker compose --profile admin up --build
 
 ```text
 展示页：http://localhost:8000/
-管理后台：http://localhost:3001/admin
+管理后台：http://localhost:3001/archive-admin
+Legacy 只读参考：http://localhost:3001/admin
 ```
 
-Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此在管理后台保存内容后，`manage/events.js`、`manage/catalog.js` 和生成数据会同步写回本地工作区。
+Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此 Archive 编辑器保存的 `archive/events/*` 与 `archive/storylines/*` JSON，以及随后通过 `npm run generate` 产生的运行时数据，会同步写回本地工作区。Legacy `manage/events.js` / `manage/catalog.js` 不再是生产编辑目标。
 
 > **安全提示**：`admin` 服务无认证保护，只能用于本机、内网或受保护环境。不要把 `3001` 直接暴露到公网。
 
@@ -116,11 +118,15 @@ docker compose config --quiet
 
 **第一步：上传文件到服务器**
 
-在本地执行，将项目文件同步到服务器（排除 .git，约 35MB）：
+在本地生成最小静态发布包，再只同步该目录（不上传 Archive 源、管理端、Legacy 数据和内部报告）：
 
 ```bash
 cd /path/to/AI-History-Show
-rsync -avz --exclude='.git' ./ root@你的服务器IP:/var/www/ai-history/
+npm ci
+npm run validate:archive
+npm run generate
+npm run build:static
+rsync -avz --delete .tmp/static-site/ root@你的服务器IP:/var/www/ai-history/
 ```
 
 **第二步：安装 Nginx**
@@ -190,7 +196,9 @@ sudo certbot --nginx -d your-domain.com
 每次内容有改动，重新 rsync 即可，无需重启 Nginx：
 
 ```bash
-rsync -avz --exclude='.git' ./ root@你的服务器IP:/var/www/ai-history/
+npm run generate
+npm run build:static
+rsync -avz --delete .tmp/static-site/ root@你的服务器IP:/var/www/ai-history/
 ```
 
 ---
@@ -374,11 +382,12 @@ Edge `kiosk` 模式：
 
 ## 四、内容管理服务部署（manage/server.js）
 
-`server.js` 提供网页版内容编辑功能（端口 3001）。它会直接修改服务器上的 `manage/events.js`、`manage/catalog.js`，并重新生成 `milestones-data.js`，**Nginx 无需重启，刷新展示页即生效**。
+`server.js` 提供本地内容管理服务（端口 3001）。生产内容权威已经切换到 Archive：使用 `/archive-admin` 编辑 `archive/events/*` JSON，并运行 `npm run validate:archive` 与 `npm run generate` 生成 `milestones-data.js`。旧 `/admin` 仅保留为 Legacy 数据只读查看器，服务端会拒绝其保存、恢复、图片写入和生成请求。**Nginx 无需重启，生成后刷新展示页即可生效**。
 
+> `/archive-admin` 当前是原始 JSON 编辑器；保存后应先运行 Archive validation，再生成运行时数据。
 > **安全原则：不要将 3001 端口直接暴露到公网**，推荐通过 SSH 隧道访问。
 
-### 第一步：确认 Node.js 已安装（v14+）
+### 第一步：确认 Node.js 已安装（v22+）
 
 ```bash
 node -v
@@ -431,7 +440,7 @@ pm2 stop ai-admin     # 停止
 ssh -L 3001:localhost:3001 root@你的服务器IP
 ```
 
-然后在本地浏览器访问 `http://localhost:3001/admin`，流量走加密 SSH 通道。
+然后在本地浏览器访问 `http://localhost:3001/archive-admin`，流量走加密 SSH 通道。Legacy 只读参考仍位于 `/admin`。
 
 > 每次需要编辑内容时建立隧道，编辑完断开即可。
 
@@ -452,7 +461,7 @@ sudo htpasswd -c /etc/nginx/.htpasswd admin
 **在 Nginx 配置中追加（放在 `server {}` 块内）：**
 
 ```nginx
-location /admin {
+location /archive-admin {
     proxy_pass http://localhost:3001;
     auth_basic "管理后台";
     auth_basic_user_file /etc/nginx/.htpasswd;
@@ -469,7 +478,7 @@ location /api/ {
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
-访问地址：`http://你的域名/admin`（安全组**只需开放 80/443，不开放 3001**）。
+访问地址：`http://你的域名/archive-admin`（安全组**只需开放 80/443，不开放 3001**）。
 
 ---
 
@@ -493,7 +502,8 @@ docker build -t ai-history-show:ci .
 
 **内容管理服务：**
 
-- [ ] `http://localhost:3001/admin`（或反代地址）可正常打开
-- [ ] 侧边栏显示分类和事件列表
-- [ ] 点击"应用数据"能正常预览变更并确认生成
-- [ ] 生成后刷新展示页，内容已更新
+- [ ] `http://localhost:3001/archive-admin`（或反代地址）可正常打开
+- [ ] Archive 事件和 JSON 文件列表可加载
+- [ ] 保存 Archive JSON 后，页面内 validation 可通过
+- [ ] 运行 `npm run generate` 后刷新展示页，内容已更新
+- [ ] `http://localhost:3001/admin` 显示 Legacy 只读说明，且不提供保存或生成操作

@@ -1,0 +1,58 @@
+{
+  "id": "2013-word2vec",
+  "year": "2013",
+  "date": "2013",
+  "title": {
+    "zh": "Word2Vec",
+    "en": "Word2Vec"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。</p>",
+    "en": "<p>Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国山景城",
+      "en": "Mountain View, United States"
+    },
+    "place": {
+      "zh": "谷歌大脑",
+      "en": "Google Brain"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "tomas-mikolov",
+      "role": {
+        "zh": "word2vec 论文主要作者",
+        "en": "Lead author of word2vec papers"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

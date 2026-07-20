@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "1920-rur-robots",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "《罗素姆的万能机器人》与“机器人”的诞生",
+        "en": "R.U.R. and the Birth of the Robot"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。",
+        "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Project Gutenberg",
+                "zh": "Project Gutenberg"
+            },
+            "title": {
+                "en": "R.U.R. archive text",
+                "zh": "《R.U.R.》档案文本"
+            },
+            "description": {
+                "en": "Public-domain text record for Capek's 1920 play, paired here with an original exhibition diagram.",
+                "zh": "恰佩克 1920 年剧作的公有领域文本记录；本地配图为原创重绘。"
+            },
+            "url": "https://www.gutenberg.org/ebooks/13083",
+            "source": "Project Gutenberg",
+            "license": {
+                "en": "Source text is public domain in the USA; local SVG is original.",
+                "zh": "源文本在美国为公有领域；本地 SVG 为原创图。"
+            },
+            "usage": {
+                "en": "Archive source for the fiction node",
+                "zh": "科幻节点的档案来源"
+            },
+            "action": {
+                "en": "Open archive text",
+                "zh": "打开档案文本"
+            }
+        }
+    ],
+    "assetIds": ["asset-1920-rur-robots-labor-revolt"],
+    "sourceIds": [
+        "source-project-gutenberg-r-u-r-text",
+        "source-1920-czech-edition-scan",
+        "source-r-u-r-publication-and-word-history-overview",
+        "source-robot-etymology-background"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "《罗素姆的万能机器人》出现在二十世纪早期工业化语境中，当时工厂、规模化劳动与机械化生产正在重塑社会想象。它的重要性在于，在技术意义上的 AI 尚未出现之前，就让公众能够用情绪化方式理解“人工劳动者”。",
+                "en": "R.U.R. appeared amid early twentieth-century industrialization, when factories, mass labor and mechanized production were reshaping social imagination. The play matters because it made artificial workers emotionally legible to the public long before technical AI existed."
+            },
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "它的核心戏剧冲突不是技术故障，而是社会关系倒转：被制造的劳工变成具有集体力量的行动者。因此它很适合作为 AI 历史与劳动、权力、责任之间联系的起点。",
+                "en": "The central drama is not a technical malfunction but a social reversal: manufactured laborers become agents with collective force. That makes the work a useful starting point for connecting AI history to labor, power and responsibility."
+            },
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "AI 史与科幻研究者通常把《罗素姆的万能机器人》视为机器自主性想象的基础文化参照。它的遗产并不是预测了某项具体技术，而是给后来的世代提供了恐惧与讨论人工行动者的词汇。",
+                "en": "Experts in AI history and science-fiction studies generally treat R.U.R. as a foundational cultural reference for machine autonomy. Its legacy is not that it predicted a specific technology, but that it gave later generations a vocabulary for fearing and debating artificial agents."
+            },
+            "sourceIds": ["source-project-gutenberg-r-u-r-text"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "dystopia",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Fiction concept",
+                "zh": "科幻想象"
+            },
+            "term": {
+                "en": "Artificial worker rebellion",
+                "zh": "人工劳工反叛"
+            },
+            "modernTerm": {
+                "en": "Automation anxiety and labor displacement",
+                "zh": "自动化焦虑与劳动替代"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "科幻把“人工劳工”变成公共焦虑：机器不只是工具，也会改变劳动、服从与责任。",
+        "en": "Science fiction turned artificial labor into a public anxiety about work, obedience and creator responsibility."
+    },
+    "analysis": {
+        "what": {
+            "en": "A science-fiction play turned artificial labor into a public cultural symbol before AI existed as a research field.",
+            "zh": "这部科幻剧在 AI 成为研究学科之前，就把人工劳工变成了公共文化符号。"
+        },
+        "how": {
+            "en": "The play frames machines through work, ownership, obedience and revolt rather than through algorithms.",
+            "zh": "它不是用算法解释机器，而是通过劳动、所有权、服从与反叛来组织机器想象。"
+        },
+        "why": {
+            "en": "Later AI fears often reuse this structure: useful systems become social actors once they change labor and power relations.",
+            "zh": "后来的 AI 恐惧常复用这一结构：当有用系统改变劳动与权力关系时，它们就不再只是工具。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Dystopian prophecy",
+            "zh": "反乌托邦预言"
+        },
+        "method": {
+            "en": "Stage fiction as social warning",
+            "zh": "以舞台科幻发出社会预警"
+        },
+        "artifact": {
+            "en": "Play text and archive scans",
+            "zh": "剧本文本与档案扫描"
+        },
+        "material": {
+            "en": "Project Gutenberg text and Internet Archive scan",
+            "zh": "Project Gutenberg 文本与 Internet Archive 扫描件"
+        },
+        "demo": {
+            "en": "Artificial labor becomes an emotional template for later AI anxiety",
+            "zh": "人工劳工成为后来 AI 焦虑的情绪模板"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Project Gutenberg",
+                    "zh": "Project Gutenberg"
+                },
+                "title": {
+                    "en": "R.U.R. archive text",
+                    "zh": "《R.U.R.》档案文本"
+                },
+                "description": {
+                    "en": "Public-domain text record for Capek's 1920 play, paired here with an original exhibition diagram.",
+                    "zh": "恰佩克 1920 年剧作的公有领域文本记录；本地配图为原创重绘。"
+                },
+                "url": "https://www.gutenberg.org/ebooks/13083",
+                "source": "Project Gutenberg",
+                "license": {
+                    "en": "Source text is public domain in the USA; local SVG is original.",
+                    "zh": "源文本在美国为公有领域；本地 SVG 为原创图。"
+                },
+                "usage": {
+                    "en": "Archive source for the fiction node",
+                    "zh": "科幻节点的档案来源"
+                },
+                "action": {
+                    "en": "Open archive text",
+                    "zh": "打开档案文本"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Project Gutenberg R.U.R. text",
+                    "zh": "Project Gutenberg《R.U.R.》文本"
+                },
+                "type": {
+                    "en": "Archive text",
+                    "zh": "档案文本"
+                },
+                "url": "https://www.gutenberg.org/ebooks/13083"
+            },
+            {
+                "label": {
+                    "en": "1920 Czech edition scan",
+                    "zh": "1920 年捷克语版本扫描"
+                },
+                "type": {
+                    "en": "Archive scan",
+                    "zh": "档案扫描"
+                },
+                "url": "https://archive.org/details/rurrossumsuniver00apekuoft"
+            },
+            {
+                "label": {
+                    "en": "R.U.R. publication and word-history overview",
+                    "zh": "《R.U.R.》出版与词源背景"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/R.U.R."
+            },
+            {
+                "label": {
+                    "en": "Robot etymology background",
+                    "zh": "机器人词源背景"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Karel_%C4%8Capek#Etymology_of_robot"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

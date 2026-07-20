@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《使用非平衡热力学进行深度无监督学习》",
+      "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics"
+    },
+    "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-denoising-diffusion-probabilistic-models",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《去噪扩散概率模型》",
+      "en": "Denoising Diffusion Probabilistic Models"
+    },
+    "url": "https://arxiv.org/abs/2006.11239",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-diffusion-model-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "扩散模型概览",
+      "en": "Diffusion model overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Diffusion_model",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

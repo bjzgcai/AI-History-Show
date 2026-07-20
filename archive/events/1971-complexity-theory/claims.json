@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "NP 完全性 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "NP-Completeness is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-the-complexity-of-theorem-proving-procedures",
+      "source-stephen-a-cook-acm-a-m-turing-award"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "NP 完全性 的技术线索包括「多项式时间归约」，代表性产物是「NP 完全性框架」。",
+      "en": "NP-Completeness is described through the method \"Polynomial-time reductions\" and the artifact \"NP-completeness framework\"."
+    },
+    "sourceIds": [
+      "source-the-complexity-of-theorem-proving-procedures",
+      "source-stephen-a-cook-acm-a-m-turing-award"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "NP 完全性 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "NP-Completeness is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-the-complexity-of-theorem-proving-procedures",
+      "source-stephen-a-cook-acm-a-m-turing-award"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。</p>",
+      "en": "<p>Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.</p>"
+    },
+    "sourceIds": [
+      "source-the-complexity-of-theorem-proving-procedures",
+      "source-stephen-a-cook-acm-a-m-turing-award"
+    ],
+    "status": "needs-source"
+  }
+]

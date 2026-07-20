@@ -1,0 +1,74 @@
+{
+  "id": "1983-simulated-annealing",
+  "year": "1983",
+  "date": "1983",
+  "title": {
+    "zh": "模拟退火",
+    "en": "Simulated Annealing"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>",
+    "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国约克敦高地",
+      "en": "Yorktown Heights, United States"
+    },
+    "place": {
+      "zh": "IBM 托马斯·J·沃森 研究中心",
+      "en": "IBM Thomas J. Watson Research Center"
+    },
+    "coordinates": [
+      41.2107,
+      -73.8021
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "scott-kirkpatrick",
+      "role": {
+        "zh": "1983 年模拟退火论文共同作者",
+        "en": "Co-author of the 1983 simulated annealing paper"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "c-daniel-gelatt-jr",
+      "role": {
+        "zh": "1983 年模拟退火论文共同作者",
+        "en": "Co-author of the 1983 simulated annealing paper"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "mario-p-vecchi",
+      "role": {
+        "zh": "1983 年模拟退火论文共同作者",
+        "en": "Co-author of the 1983 simulated annealing paper"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

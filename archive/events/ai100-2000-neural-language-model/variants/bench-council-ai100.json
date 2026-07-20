@@ -1,0 +1,311 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2000-neural-language-model",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "神经语言模型",
+    "en": "Neural Language Model"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>",
+    "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "neuralLm",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "JMLR",
+        "zh": "JMLR"
+      },
+      "title": {
+        "en": "A Neural Probabilistic Language Model",
+        "zh": "神经概率语言模型"
+      },
+      "description": {
+        "en": "Open paper record for the neural probabilistic language model.",
+        "zh": "神经概率语言模型的开放论文记录。"
+      },
+      "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "source": "https://www.jmlr.org/papers/v3/bengio03a.html",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open article",
+        "zh": "打开文章"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02",
+    "asset-2000-neural-language-model-context-prediction"
+  ],
+  "sourceIds": [
+    "source-a-neural-probabilistic-language-model",
+    "source-jmlr-full-paper-pdf",
+    "source-dblp-record",
+    "source-yoshua-bengio-profile-at-mila"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2000-neural-language-model-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。",
+        "en": "Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs."
+      },
+      "sourceIds": [
+        "source-a-neural-probabilistic-language-model"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "词被映射为向量，与上下文组合后用于预测下一个词。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Words are mapped into vectors, combined as context, and used to predict the next word. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-a-neural-probabilistic-language-model"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把神经概率语言模型视为从稀疏 n-gram 方法走向学习型分布式表示的重要桥梁。它的长期影响在于证明语言预测可以学习可复用的词向量和上下文表示。",
+        "en": "Experts generally treat neural probabilistic language modeling as an important bridge from sparse n-gram methods to learned distributed representations. Its long-term legacy is the idea that language prediction can learn reusable word vectors and context-sensitive representations."
+      },
+      "sourceIds": [
+        "source-a-neural-probabilistic-language-model"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Lead author of the neural probabilistic language model",
+        "zh": "神经概率语言模型主要作者"
+      },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"A Neural Probabilistic Language Model\"",
+    "zh": "\"神经概率语言模型\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A Neural Probabilistic Language Model",
+      "zh": "神经概率语言模型"
+    },
+    "workAuthors": {
+      "en": "Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
+      "zh": "约书亚·本吉奥、雷让·迪沙姆、帕斯卡尔·文森特、克里斯蒂安·让万，JMLR，2003"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.jmlr.org/papers/v3/bengio03a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Neural Probabilistic Language Model</em>, Yoshua Bengio, Rejean Ducharme, Pascal Vincent, and Christian Janvin, JMLR, 2003",
+    "zh": "《神经概率语言模型》, 约书亚·本吉奥、雷让·迪沙姆、帕斯卡尔·文森特、克里斯蒂安·让万，JMLR，2003"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Distributed word embeddings for language prediction",
+      "zh": "用于语言预测的分布式词嵌入"
+    },
+    "artifact": {
+      "en": "Neural probabilistic language model",
+      "zh": "神经概率语言模型"
+    },
+    "material": {
+      "en": "JMLR paper",
+      "zh": "JMLR 论文"
+    },
+    "demo": {
+      "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
+      "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Distributed Representation",
+          "zh": "分布式表示"
+        },
+        "text": {
+          "en": "Words become dense vectors rather than isolated IDs.",
+          "zh": "词不再是孤立 ID，而是稠密向量。"
+        }
+      },
+      {
+        "label": {
+          "en": "Next-word Prediction",
+          "zh": "下一个词预测"
+        },
+        "text": {
+          "en": "The model learns language statistics by predicting continuation.",
+          "zh": "模型通过预测后续内容来学习语言统计规律。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Word2vec",
+        "zh": "Word2vec"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      },
+      {
+        "en": "GPT",
+        "zh": "GPT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Word vectors",
+        "zh": "词向量"
+      },
+      {
+        "en": "Context window",
+        "zh": "上下文窗口"
+      },
+      {
+        "en": "Next word",
+        "zh": "下一个词"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "JMLR paper",
+          "zh": "JMLR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Words are mapped into vectors, combined as context, and used to predict the next word.",
+          "zh": "词被映射为向量，与上下文组合后用于预测下一个词。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "JMLR",
+          "zh": "JMLR"
+        },
+        "title": {
+          "en": "A Neural Probabilistic Language Model",
+          "zh": "神经概率语言模型"
+        },
+        "description": {
+          "en": "Open paper record for the neural probabilistic language model.",
+          "zh": "神经概率语言模型的开放论文记录。"
+        },
+        "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+        "source": "https://www.jmlr.org/papers/v3/bengio03a.html",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
+  }
+}

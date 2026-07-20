@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "A policy review exposed the gap between toy demonstrations and real systems, cooling the field's public confidence.",
+      "zh": "政策评估把玩具演示与真实系统之间的落差摆上台面，AI 信心开始降温。"
+    },
+    "sourceIds": [
+      "source-lighthill-report-archive",
+      "source-edinburgh-ai-history-perspective"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled.",
+      "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。"
+    },
+    "sourceIds": [
+      "source-lighthill-report-archive",
+      "source-edinburgh-ai-history-perspective"
+    ],
+    "status": "needs-source"
+  }
+]

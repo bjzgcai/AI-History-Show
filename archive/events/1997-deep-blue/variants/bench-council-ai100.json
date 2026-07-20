@@ -1,0 +1,298 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1997-deep-blue",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "深蓝",
+    "en": "Deep Blue"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
+    "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "deepblue",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Artificial Intelligence",
+        "zh": "人工智能"
+      },
+      "title": {
+        "en": "Deep Blue journal article",
+        "zh": "深蓝 期刊论文"
+      },
+      "description": {
+        "en": "AI journal article record on Deep Blue as a chess-playing system.",
+        "zh": "关于 深蓝 国际象棋系统的 AI 期刊记录。"
+      },
+      "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+      "license": {
+        "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Source material image / Literature reference",
+        "zh": "原始材料入口 / 文献参考"
+      },
+      "action": {
+        "en": "Open article record",
+        "zh": "打开论文记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1997-deep-blue-murray-campbell",
+    "asset-1997-deep-blue-search-tree",
+    "asset-1997-deep-blue-chip-board"
+  ],
+  "sourceIds": [
+    "source-murray-campbell-ibm-research",
+    "source-mastering-the-game-computer-history-museum",
+    "source-ibm100-deep-blue"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1997-deep-blue-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。深蓝 把这条路线带到全球舞台。",
+        "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage."
+      },
+      "sourceIds": [
+        "source-murray-campbell-ibm-research"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。 关键机制是专用国际象棋搜索硬件，它把资料线索与可见的演示行为连接起来。",
+        "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge. The key mechanism is Specialized chess search hardware, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-murray-campbell-ibm-research"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把深蓝视为专用搜索、局面评估和高性能游戏 AI 的标志性成果。它的长期影响在于塑造了公众对 AI 里程碑的期待，并成为 AlphaGo 等后续游戏系统的参照点。",
+        "en": "Experts generally treat Deep Blue as a landmark in specialized search, evaluation, and high-performance game AI. Its long-term legacy is shaping public expectations for AI milestones and serving as a reference point for later game systems such as AlphaGo."
+      },
+      "sourceIds": [
+        "source-murray-campbell-ibm-research"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Murray Campbell",
+        "zh": "默里·坎贝尔"
+      },
+      "role": {
+        "en": "Deep Blue team member",
+        "zh": "深蓝 团队成员"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Specialized chess search hardware\"",
+    "zh": "\"专用国际象棋搜索硬件\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Deep Blue journal article",
+      "zh": "深蓝期刊论文"
+    },
+    "workAuthors": {
+      "en": "Murray Campbell",
+      "zh": "默里·坎贝尔"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1016/S0004-3702(99)00044-5"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game AI / Deep Blue",
+    "zh": "BenchCouncil AI100：博弈 AI / 深蓝"
+  },
+  "quoteAttribution": {
+    "en": "<em>Deep Blue journal article</em>, Murray Campbell",
+    "zh": "《深蓝期刊论文》, 默里·坎贝尔"
+  },
+  "achievement": {
+    "area": {
+      "en": "Game AI",
+      "zh": "博弈 AI"
+    },
+    "method": {
+      "en": "Specialized chess search hardware",
+      "zh": "专用国际象棋搜索硬件"
+    },
+    "artifact": {
+      "en": "World-champion chess match system",
+      "zh": "世界冠军对弈系统"
+    },
+    "material": {
+      "en": "IBM Research profile and Deep Blue histories",
+      "zh": "IBM 研究院 人物资料与 深蓝 史料"
+    },
+    "demo": {
+      "en": "Search millions of chess positions with evaluation hardware",
+      "zh": "用评估硬件搜索数百万棋局位置"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Alpha-Beta Search",
+          "zh": "Alpha-Beta 搜索"
+        },
+        "text": {
+          "en": "A pruning method that avoids searching branches that cannot change the decision.",
+          "zh": "一种剪枝方法，避免搜索不会改变决策的分支。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation Function",
+          "zh": "评估函数"
+        },
+        "text": {
+          "en": "Chess knowledge assigns a score to positions when search stops.",
+          "zh": "搜索停止时，棋类知识为局面赋分。"
+        }
+      },
+      {
+        "label": {
+          "en": "Custom Hardware",
+          "zh": "定制硬件"
+        },
+        "text": {
+          "en": "Special chips accelerated chess move generation and evaluation.",
+          "zh": "专用芯片加速走法生成和局面评估。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlphaGo",
+        "zh": "AlphaGo"
+      },
+      {
+        "en": "Game AI",
+        "zh": "博弈 AI"
+      },
+      {
+        "en": "Search",
+        "zh": "搜索"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "New York, United States",
+        "zh": "美国纽约州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Generate moves",
+        "zh": "生成走法"
+      },
+      {
+        "en": "Prune branches",
+        "zh": "剪枝分支"
+      },
+      {
+        "en": "Score end leaves",
+        "zh": "评估叶节点"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Artificial Intelligence",
+          "zh": "人工智能"
+        },
+        "title": {
+          "en": "Deep Blue journal article",
+          "zh": "深蓝 期刊论文"
+        },
+        "description": {
+          "en": "AI journal article record on Deep Blue as a chess-playing system.",
+          "zh": "关于 深蓝 国际象棋系统的 AI 期刊记录。"
+        },
+        "url": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "source": "https://doi.org/10.1016/S0004-3702(99)00044-5",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open article record",
+          "zh": "打开论文记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "IBM Research",
+      "zh": "IBM 研究院"
+    },
+    "country": {
+      "en": "New York, United States",
+      "zh": "美国纽约州"
+    },
+    "coordinates": [
+      41.2108,
+      -73.8035
+    ]
+  }
+}

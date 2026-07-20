@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1967-back-propagation",
+  "year": 1967,
+  "date": "1967",
+  "title": {
+    "zh": "反向传播",
+    "en": "Back-propagation"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>",
+    "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "福冈与圣迭戈",
+      "en": "Fukuoka and San Diego"
+    },
+    "place": {
+      "zh": "九州大学与加州大学圣迭戈分校",
+      "en": "Kyushu University and UC San Diego"
+    },
+    "coordinates": [
+      32.8731,
+      130.742
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "shunichi-amari",
+      "role": {
+        "zh": "自适应神经学习早期贡献者",
+        "en": "Early contributor to adaptive neural learning"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "david-rumelhart",
+      "role": {
+        "zh": "1986 年反向传播论文共同作者",
+        "en": "Co-author of the 1986 back-propagation paper"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

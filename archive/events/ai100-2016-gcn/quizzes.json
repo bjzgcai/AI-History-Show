@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2016-gcn-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "GCN 层组合什么？",
+      "en": "What does a GCN layer combine?"
+    },
+    "options": [
+      {
+        "zh": "归一化图邻域中的节点特征",
+        "en": "Node features from normalized graph neighborhoods"
+      },
+      {
+        "zh": "只有文本提示",
+        "en": "Only text prompts"
+      },
+      {
+        "zh": "只有蛋白质名称",
+        "en": "Only protein names"
+      },
+      {
+        "zh": "随机密码列表",
+        "en": "A random password list"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "GCN 通过归一化图传播规则聚合附近节点特征。",
+      "en": "GCN aggregates nearby node features through a normalized graph propagation rule."
+    },
+    "sourceIds": [
+      "source-semi-supervised-classification-with-graph-convolutional-networks"
+    ],
+    "assetIds": [
+      "asset-2016-gcn-spectral-convolution"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2015-diffusion-model",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "扩散模型",
+    "en": "Diffusion Model"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>",
+    "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国斯坦福",
+      "en": "Stanford, United States"
+    },
+    "place": {
+      "zh": "斯坦福大学",
+      "en": "Stanford University"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "jascha-sohl-dickstein",
+      "role": {
+        "zh": "扩散模型主要作者",
+        "en": "Diffusion model lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

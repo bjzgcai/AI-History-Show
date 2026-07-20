@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "非负矩阵分解 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "NMF is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+      "source-nature-article-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>",
+      "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>"
+    },
+    "sourceIds": [
+      "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
+      "source-nature-article-page"
+    ],
+    "status": "needs-source"
+  }
+]

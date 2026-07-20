@@ -1,0 +1,369 @@
+{
+    "storylineId": "gaming-ai",
+    "eventId": "2019-suphx",
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+        "zh": "Suphx：深度强化学习麻将 AI",
+        "en": "Suphx: Mahjong with Deep Reinforcement Learning"
+    },
+    "displaySummary": {
+        "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+        "en": "Game AI as a Testbed for Search, Learning and Planning"
+    },
+    "displayDescription": {
+        "zh": "<p>Suphx 将深度强化学习带入日本麻将，这是一种四人不完全信息游戏，包含隐藏牌、随机摸牌、复杂计分和长期风险权衡。它使用监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配，在天凤平台达到超过绝大多数注册段位玩家的水平。</p>",
+        "en": "<p>Suphx brought deep reinforcement learning to Japanese mahjong, a four-player imperfect-information game with hidden tiles, stochastic draws, complex scoring, and long-horizon risk tradeoffs. It used supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation to reach a level above most ranked Tenhou players.</p>"
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "configuredPaper",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "arXiv",
+                "zh": "arXiv"
+            },
+            "title": {
+                "en": "Suphx paper",
+                "zh": "Suphx 论文"
+            },
+            "description": {
+                "en": "Paper describing deep reinforcement learning for Japanese mahjong with hidden information and stochastic rewards.",
+                "zh": "论文说明如何用深度强化学习处理日本麻将中的隐藏信息和随机收益。"
+            },
+            "url": "https://arxiv.org/abs/2003.13590",
+            "source": "https://arxiv.org/abs/2003.13590",
+            "action": {
+                "en": "Open source page",
+                "zh": "打开资料页面"
+            },
+            "license": {
+                "en": "Reference link only; local exhibition graphics are original redraws.",
+                "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+            },
+            "usage": {
+                "en": "Source card for the gaming AI branch",
+                "zh": "AI 棋牌分支的资料卡片"
+            }
+        }
+    ],
+    "assetIds": ["asset-2019-suphx-mahjong-policy"],
+    "sourceIds": [
+        "source-suphx-arxiv-paper",
+        "source-arxiv-doi-page",
+        "source-building-a-computer-mahjong-player-via-deep-cnns"
+    ],
+    "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+    "quizId": "2019-suphx-quiz-1",
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "麻将比类棋盘游戏更难直接搜索，因为玩家只能看到部分状态。每一次打牌都会影响手牌价值、安全性、巡目节奏，以及三个对手的隐藏意图。",
+                "en": "Mahjong is more difficult for direct search than chess-like board games because players see only part of the state. Every discard affects hand value, safety, turn order, and the hidden intentions of three opponents."
+            },
+            "sourceIds": ["source-suphx-arxiv-paper"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "Suphx 先从人类牌谱学习，再通过强化学习改进。额外的奖励预测、oracle guiding 和策略适配组件，帮助它推理延迟得分、隐藏牌和不断变化的牌桌上下文。",
+                "en": "Suphx learned from human games and then improved through reinforcement learning. Its additional reward prediction, oracle guiding, and policy adaptation components helped it reason about delayed points, hidden tiles, and changing table context."
+            },
+            "sourceIds": ["source-suphx-arxiv-paper"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 Suphx 视为一个信号：深度强化学习可以处理扑克之外的多人随机不完全信息游戏。它的长期影响在于把游戏 AI 试验场从干净棋盘和两人均衡，扩展到具有丰富隐藏状态的复杂文化游戏。",
+                "en": "Experts generally treat Suphx as a signal that deep reinforcement learning can handle multi-player stochastic imperfect-information games beyond poker. Its legacy is broadening the game-AI testbed from clean boards and two-player equilibrium toward messy cultural games with rich hidden state."
+            },
+            "sourceIds": ["source-suphx-arxiv-paper"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "category": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "figures": [
+        {
+            "name": {
+                "en": "Junjie Li",
+                "zh": "李俊杰"
+            },
+            "role": {
+                "en": "Suphx paper first author",
+                "zh": "Suphx 论文第一作者"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Tao Qin",
+                "zh": "秦涛"
+            },
+            "role": {
+                "en": "Microsoft Research Asia researcher",
+                "zh": "微软亚洲研究院研究员"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Tie-Yan Liu",
+                "zh": "刘铁岩"
+            },
+            "role": {
+                "en": "Microsoft Research Asia research leader",
+                "zh": "微软亚洲研究院研究负责人"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+        "en": "\"Mastering Mahjong with Deep Reinforcement Learning\"",
+        "zh": "\"用深度强化学习掌握麻将\""
+    },
+    "quoteMeta": {
+        "speaker": "",
+        "workTitle": {
+            "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning",
+            "zh": "Suphx：用深度强化学习掌握麻将"
+        },
+        "workAuthors": {
+            "en": "Junjie Li et al., arXiv, 2020",
+            "zh": "Junjie Li 等，arXiv，2020"
+        },
+        "sourceLabel": "",
+        "sourceUrl": "https://arxiv.org/abs/2003.13590"
+    },
+    "quotePage": {
+        "en": "Gaming AI branch: Japanese Mahjong / Suphx",
+        "zh": "AI 棋牌分支：日本麻将 / Suphx"
+    },
+    "quoteAttribution": {
+        "en": "<em>Suphx: Mastering Mahjong with Deep Reinforcement Learning</em>, Junjie Li et al., arXiv, 2020",
+        "zh": "《Suphx：用深度强化学习掌握麻将》, Junjie Li 等，arXiv，2020"
+    },
+    "quoteLabel": {
+        "en": "Paper cue",
+        "zh": "论文线索"
+    },
+    "achievement": {
+        "area": {
+            "en": "Multiplayer stochastic imperfect-information game AI",
+            "zh": "多人随机不完全信息博弈 AI"
+        },
+        "method": {
+            "en": "Deep reinforcement learning with reward prediction and run-time policy adaptation",
+            "zh": "结合奖励预测与运行时策略适配的深度强化学习"
+        },
+        "artifact": {
+            "en": "Japanese mahjong AI for Tenhou-style play",
+            "zh": "面向天凤式对局的日本麻将 AI"
+        },
+        "material": {
+            "en": "Suphx arXiv paper and Microsoft Research Asia authorship",
+            "zh": "Suphx arXiv 论文与微软亚洲研究院作者团队"
+        },
+        "demo": {
+            "en": "Follow one discard through hidden tiles, table risk, reward prediction, and policy adaptation.",
+            "zh": "跟随一次弃牌穿过隐藏牌、牌桌风险、奖励预测和策略适配。"
+        },
+        "keyConcepts": [
+            {
+                "label": {
+                    "en": "Hidden tiles",
+                    "zh": "隐藏牌"
+                },
+                "text": {
+                    "en": "Most relevant state information is not directly visible.",
+                    "zh": "大多数相关状态信息并不可见。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Global reward prediction",
+                    "zh": "全局奖励预测"
+                },
+                "text": {
+                    "en": "The agent estimates long-horizon table outcomes.",
+                    "zh": "智能体估计长程牌桌收益。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Run-time adaptation",
+                    "zh": "运行时适配"
+                },
+                "text": {
+                    "en": "Policy behavior changes with table context.",
+                    "zh": "策略行为随牌桌上下文调整。"
+                }
+            }
+        ],
+        "relatedAchievements": [
+            {
+                "en": "Pluribus",
+                "zh": "Pluribus"
+            },
+            {
+                "en": "Deep reinforcement learning",
+                "zh": "深度强化学习"
+            },
+            {
+                "en": "Imperfect-information games",
+                "zh": "不完全信息博弈"
+            }
+        ],
+        "relatedRegions": [
+            {
+                "en": "China",
+                "zh": "中国"
+            },
+            {
+                "en": "Japan",
+                "zh": "日本"
+            }
+        ],
+        "demoSteps": [
+            {
+                "en": "Observe public tiles",
+                "zh": "观察公开牌"
+            },
+            {
+                "en": "Infer hidden state",
+                "zh": "推断隐藏状态"
+            },
+            {
+                "en": "Adapt discard policy",
+                "zh": "适配弃牌策略"
+            }
+        ],
+        "demoImage": "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
+        "demoPanel": "sources",
+        "demoNotes": [
+            {
+                "label": {
+                    "en": "uncertainty cue",
+                    "zh": "不确定性线索"
+                },
+                "text": {
+                    "en": "The explainer separates visible discards from hidden hands and delayed reward estimates.",
+                    "zh": "解释图把公开弃牌、隐藏手牌和延迟奖励估计分开。"
+                }
+            },
+            {
+                "label": {
+                    "en": "interaction point",
+                    "zh": "互动点"
+                },
+                "text": {
+                    "en": "Toggle risk mode to see how the best discard changes when opponents appear close to winning.",
+                    "zh": "切换风险模式，观察当对手接近和牌时最佳弃牌如何变化。"
+                }
+            }
+        ],
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "arXiv",
+                    "zh": "arXiv"
+                },
+                "title": {
+                    "en": "Suphx paper",
+                    "zh": "Suphx 论文"
+                },
+                "description": {
+                    "en": "Paper describing deep reinforcement learning for Japanese mahjong with hidden information and stochastic rewards.",
+                    "zh": "论文说明如何用深度强化学习处理日本麻将中的隐藏信息和随机收益。"
+                },
+                "url": "https://arxiv.org/abs/2003.13590",
+                "source": "https://arxiv.org/abs/2003.13590",
+                "action": {
+                    "en": "Open source page",
+                    "zh": "打开资料页面"
+                },
+                "license": {
+                    "en": "Reference link only; local exhibition graphics are original redraws.",
+                    "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+                },
+                "usage": {
+                    "en": "Source card for the gaming AI branch",
+                    "zh": "AI 棋牌分支的资料卡片"
+                }
+            }
+        ]
+    },
+    "analysis": {
+        "what": {
+            "en": "Suphx became a landmark mahjong AI that exceeded most top ranked human players on Tenhou according to stable rank and rating statistics.",
+            "zh": "Suphx 成为麻将 AI 里程碑；按稳定段位和评级统计，它超过了天凤平台上绝大多数顶级人类玩家。"
+        },
+        "how": {
+            "en": "It combined supervised learning from human logs, deep reinforcement learning through self-play, global reward prediction, oracle guiding, and run-time policy adaptation.",
+            "zh": "它结合人类牌谱监督学习、自我对弈深度强化学习、全局奖励预测、oracle guiding 和运行时策略适配。"
+        },
+        "why": {
+            "en": "Mahjong defeated simpler search because the real state is hidden and scoring is long-horizon. Suphx worked by learning policies and reward estimates that could operate under uncertainty instead of enumerating a visible tree.",
+            "zh": "麻将难倒简单搜索，因为真实状态隐藏且计分具有长程权衡。Suphx 的突破在于学习能在不确定性下运行的策略和奖励估计，而不是枚举可见树。"
+        }
+    },
+    "location": {
+        "name": {
+            "en": "Microsoft Research Asia",
+            "zh": "微软亚洲研究院"
+        },
+        "country": {
+            "en": "Beijing, China",
+            "zh": "中国北京"
+        },
+        "coordinates": [39.9786, 116.3317]
+    },
+    "papers": [
+        {
+            "title": {
+                "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning",
+                "zh": "Suphx：用深度强化学习掌握麻将"
+            },
+            "authors": {
+                "en": "Junjie Li, Sotetsu Koyamada, Qiwei Ye, Guoqing Liu, Chao Wang, Ruihan Yang, Li Zhao, Tao Qin, Tie-Yan Liu, Hsiao-Wuen Hon",
+                "zh": "Junjie Li、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
+            },
+            "journal": {
+                "en": "arXiv",
+                "zh": "arXiv"
+            },
+            "year": "2020",
+            "url": "resources/papers/2019-suphx-mahjong-deep-rl.pdf"
+        }
+    ]
+}

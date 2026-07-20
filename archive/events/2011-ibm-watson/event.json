@@ -1,0 +1,66 @@
+{
+  "id": "2011-ibm-watson",
+  "year": "2006-2011",
+  "date": "2006-2011",
+  "title": {
+    "zh": "IBM Watson",
+    "en": "IBM Watson"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>",
+    "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国纽约州",
+      "en": "New York, United States"
+    },
+    "place": {
+      "zh": "IBM 托马斯·J·沃森 研究中心",
+      "en": "IBM Thomas J. Watson Research Center"
+    },
+    "coordinates": [
+      41.2101,
+      -73.8037
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "david-ferrucci",
+      "role": {
+        "zh": "Watson / DeepQA 团队负责人",
+        "en": "Principal investigator of the Watson / DeepQA team"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "ibm-deepqa-team",
+      "role": {
+        "zh": "构建问答系统",
+        "en": "Built the question-answering system"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

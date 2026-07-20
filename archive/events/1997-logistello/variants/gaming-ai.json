@@ -1,0 +1,373 @@
+{
+    "storylineId": "gaming-ai",
+    "eventId": "1997-logistello",
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+        "zh": "Logistello：黑白棋评估函数学习",
+        "en": "Logistello: Learning Evaluation for Othello"
+    },
+    "displaySummary": {
+        "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+        "en": "Game AI as a Testbed for Search, Learning and Planning"
+    },
+    "displayDescription": {
+        "zh": "<p>Logistello 在 1997 年黑白棋对局中以 6 比 0 击败世界冠军村上健。Michael Buro 将选择性博弈树搜索、基于棋盘模式的评估、统计特征学习、开局库学习和强残局求解结合起来，说明学习得到的评估函数可以在紧凑棋盘游戏中超过手工启发式规则。</p>",
+        "en": "<p>Logistello defeated world champion Takeshi Murakami 6-0 in a 1997 Othello match. Michael Buro combined selective game-tree search, pattern-based evaluation, statistical feature learning, opening-book learning, and strong endgame solving, showing that learned evaluation could outperform hand-crafted heuristics in a compact board game.</p>"
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "configuredPaper",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Logistello homepage",
+                "zh": "Logistello 主页"
+            },
+            "title": {
+                "en": "Program overview and source release",
+                "zh": "程序概览与源码发布"
+            },
+            "description": {
+                "en": "Michael Buro describes Logistello features, search, opening book learning, and training data requirements.",
+                "zh": "迈克尔·布罗说明 Logistello 的特征、搜索、开局库学习和训练数据需求。"
+            },
+            "url": "https://skatgame.net/mburo/log.html",
+            "source": "https://skatgame.net/mburo/log.html",
+            "action": {
+                "en": "Open source page",
+                "zh": "打开资料页面"
+            },
+            "license": {
+                "en": "Reference link only; local exhibition graphics are original redraws.",
+                "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+            },
+            "usage": {
+                "en": "Source card for the gaming AI branch",
+                "zh": "AI 棋牌分支的资料卡片"
+            }
+        }
+    ],
+    "assetIds": ["asset-1997-logistello-pattern-eval"],
+    "sourceIds": [
+        "source-logistello-homepage",
+        "source-murakami-vs-logistello",
+        "source-statistical-feature-combination",
+        "source-michael-buro-publications"
+    ],
+    "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+    "quizId": "1997-logistello-quiz-1",
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "黑白棋足够紧凑，可以进行深层搜索；但它又足够复杂，不能只靠浅层子数统计。到 1990 年代，关键瓶颈不只是速度，而是程序能否准确评估不稳定的中盘局面。",
+                "en": "Othello was small enough for deep search but rich enough that shallow material counting failed. By the 1990s, the key bottleneck was not just speed but how accurately a program could evaluate unstable midgame positions."
+            },
+            "sourceIds": ["source-logistello-homepage"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "Logistello 把评估函数看成一个跨棋盘模式和阶段的统计学习问题。搜索仍然重要，但学习到的评估器让搜索更清楚哪些局面具有战略潜力。",
+                "en": "Logistello treated evaluation as a statistical learning problem over board patterns and game phases. Search still mattered, but the learned evaluator gave search a sharper sense of which positions were strategically promising."
+            },
+            "sourceIds": ["source-logistello-homepage"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 Logistello 视为经典博弈树搜索与机器学习评估函数之间的桥梁。它的长期影响在于说明：当评估参数来自大规模棋局语料学习时，搜索质量会发生显著变化。",
+                "en": "Experts generally treat Logistello as a bridge between classical game-tree search and machine-learned evaluation functions. Its legacy is the lesson that search quality can change dramatically when evaluation parameters are learned from large game-position corpora."
+            },
+            "sourceIds": ["source-logistello-homepage"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "category": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "figures": [
+        {
+            "name": {
+                "en": "Michael Buro",
+                "zh": "迈克尔·布罗"
+            },
+            "role": {
+                "en": "Creator of Logistello",
+                "zh": "Logistello 创建者"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Takeshi Murakami",
+                "zh": "村上健"
+            },
+            "role": {
+                "en": "World Othello champion in the 1997 match",
+                "zh": "1997 年对局中的黑白棋世界冠军"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+        "en": "\"Takeshi Murakami (0) vs. Logistello (6)\"",
+        "zh": "\"村上健 0 比 6 负于 Logistello\""
+    },
+    "quoteMeta": {
+        "speaker": "",
+        "workTitle": {
+            "en": "The Othello Match of the Year",
+            "zh": "年度黑白棋对局"
+        },
+        "workAuthors": {
+            "en": "Michael Buro / NEC Research Institute",
+            "zh": "迈克尔·布罗 / NEC 研究院"
+        },
+        "sourceLabel": "",
+        "sourceUrl": "https://skatgame.net/mburo/event.html"
+    },
+    "quotePage": {
+        "en": "Gaming AI branch: Othello / Logistello",
+        "zh": "AI 棋牌分支：黑白棋 / Logistello"
+    },
+    "quoteAttribution": {
+        "en": "<em>The Othello Match of the Year</em>, Michael Buro / NEC Research Institute",
+        "zh": "《年度黑白棋对局》, 迈克尔·布罗 / NEC 研究院"
+    },
+    "quoteLabel": {
+        "en": "Match record",
+        "zh": "赛事记录"
+    },
+    "achievement": {
+        "area": {
+            "en": "Othello game AI",
+            "zh": "黑白棋 AI"
+        },
+        "method": {
+            "en": "Pattern evaluation learning with selective alpha-beta search",
+            "zh": "模式评估学习与选择性 alpha-beta 搜索"
+        },
+        "artifact": {
+            "en": "World-champion-level Othello program",
+            "zh": "世界冠军级黑白棋程序"
+        },
+        "material": {
+            "en": "Logistello homepage, match report, and evaluation-function paper",
+            "zh": "Logistello 主页、对局报告与评估函数论文"
+        },
+        "demo": {
+            "en": "Toggle pattern weights to see how learned features steer search away from bad mobility and parity traps.",
+            "zh": "切换模式权重，观察学习特征如何引导搜索避开行动力和奇偶陷阱。"
+        },
+        "keyConcepts": [
+            {
+                "label": {
+                    "en": "Pattern tables",
+                    "zh": "模式表"
+                },
+                "text": {
+                    "en": "Board patterns are scored differently across game stages.",
+                    "zh": "棋盘模式会按不同阶段给出不同评分。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Multi-ProbCut",
+                    "zh": "Multi-ProbCut"
+                },
+                "text": {
+                    "en": "Selective pruning estimates which branches are unlikely to matter.",
+                    "zh": "选择性剪枝估计哪些分支不太可能影响决策。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Book learning",
+                    "zh": "开局库学习"
+                },
+                "text": {
+                    "en": "Self-play and evaluated lines improve opening choices.",
+                    "zh": "自我对弈和已评估变例改进开局选择。"
+                }
+            }
+        ],
+        "relatedAchievements": [
+            {
+                "en": "Chinook",
+                "zh": "Chinook"
+            },
+            {
+                "en": "Deep Blue",
+                "zh": "深蓝"
+            },
+            {
+                "en": "Learned evaluation functions",
+                "zh": "学习型评估函数"
+            }
+        ],
+        "relatedRegions": [
+            {
+                "en": "United States",
+                "zh": "美国"
+            },
+            {
+                "en": "Germany",
+                "zh": "德国"
+            }
+        ],
+        "demoSteps": [
+            {
+                "en": "Encode board patterns",
+                "zh": "编码棋盘模式"
+            },
+            {
+                "en": "Estimate position value",
+                "zh": "估计局面价值"
+            },
+            {
+                "en": "Prune and solve endgames",
+                "zh": "剪枝并求解残局"
+            }
+        ],
+        "demoImage": "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
+        "demoPanel": "sources",
+        "demoNotes": [
+            {
+                "label": {
+                    "en": "evaluation cue",
+                    "zh": "评估线索"
+                },
+                "text": {
+                    "en": "Pattern weights turn raw discs into a learned positional score.",
+                    "zh": "模式权重把原始棋子分布转成学习到的局面评分。"
+                }
+            },
+            {
+                "label": {
+                    "en": "interaction point",
+                    "zh": "互动点"
+                },
+                "text": {
+                    "en": "Switch between mobility, corners, parity, and endgame mode to see why the preferred move changes.",
+                    "zh": "切换行动力、角位、奇偶和残局模式，观察首选落子为什么会改变。"
+                }
+            }
+        ],
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Logistello homepage",
+                    "zh": "Logistello 主页"
+                },
+                "title": {
+                    "en": "Program overview and source release",
+                    "zh": "程序概览与源码发布"
+                },
+                "description": {
+                    "en": "Michael Buro describes Logistello features, search, opening book learning, and training data requirements.",
+                    "zh": "迈克尔·布罗说明 Logistello 的特征、搜索、开局库学习和训练数据需求。"
+                },
+                "url": "https://skatgame.net/mburo/log.html",
+                "source": "https://skatgame.net/mburo/log.html",
+                "action": {
+                    "en": "Open source page",
+                    "zh": "打开资料页面"
+                },
+                "license": {
+                    "en": "Reference link only; local exhibition graphics are original redraws.",
+                    "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+                },
+                "usage": {
+                    "en": "Source card for the gaming AI branch",
+                    "zh": "AI 棋牌分支的资料卡片"
+                }
+            }
+        ]
+    },
+    "analysis": {
+        "what": {
+            "en": "Logistello made Othello a milestone for learned evaluation by defeating the reigning world champion in a six-game match.",
+            "zh": "Logistello 在六局对抗中击败当时世界冠军，使黑白棋成为评估函数学习的重要里程碑。"
+        },
+        "how": {
+            "en": "It used NegaScout-style alpha-beta search, Multi-ProbCut, pattern tables, linear/statistical feature combination, opening-book learning, and exact endgame search.",
+            "zh": "它使用 NegaScout 式 alpha-beta 搜索、Multi-ProbCut、模式表、线性/统计特征组合、开局库学习和精确残局搜索。"
+        },
+        "why": {
+            "en": "Earlier Othello programs relied heavily on human-tuned heuristics. Logistello improved because millions of positions could tune many pattern parameters and let search focus on the most promising branches.",
+            "zh": "早期黑白棋程序高度依赖人工调参的启发式。Logistello 的突破在于用大量局面调校大量模式参数，并让搜索集中在更有希望的分支上。"
+        }
+    },
+    "location": {
+        "name": {
+            "en": "NEC Research Institute",
+            "zh": "NEC 研究院"
+        },
+        "country": {
+            "en": "NJ, United States",
+            "zh": "美国新泽西州"
+        },
+        "coordinates": [40.3493, -74.6593]
+    },
+    "papers": [
+        {
+            "title": {
+                "en": "Statistical Feature Combination for the Evaluation of Game Positions",
+                "zh": "用于棋局评估的统计特征组合"
+            },
+            "authors": {
+                "en": "Michael Buro",
+                "zh": "迈克尔·布罗"
+            },
+            "journal": {
+                "en": "Journal of Artificial Intelligence Research / arXiv",
+                "zh": "JAIR / arXiv"
+            },
+            "year": "1995",
+            "url": "resources/papers/1997-logistello-statistical-feature-combination.pdf"
+        },
+        {
+            "title": {
+                "en": "The Othello Match of the Year: Takeshi Murakami vs. Logistello",
+                "zh": "年度黑白棋对局：村上健对 Logistello"
+            },
+            "authors": {
+                "en": "Michael Buro",
+                "zh": "迈克尔·布罗"
+            },
+            "journal": {
+                "en": "ICCA Journal / NECI technical note",
+                "zh": "ICCA Journal / NECI 技术说明"
+            },
+            "year": "1997",
+            "url": "https://skatgame.net/mburo/event.html"
+        }
+    ]
+}

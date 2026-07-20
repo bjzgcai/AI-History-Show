@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "t-SNE 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "t-SNE is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-visualizing-data-using-t-sne",
+      "source-laurens-van-der-maaten-homepage"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>",
+      "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>"
+    },
+    "sourceIds": [
+      "source-visualizing-data-using-t-sne",
+      "source-laurens-van-der-maaten-homepage"
+    ],
+    "status": "needs-source"
+  }
+]

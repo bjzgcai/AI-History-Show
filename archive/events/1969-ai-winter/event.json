@@ -1,0 +1,58 @@
+{
+  "id": "1969-ai-winter",
+  "year": 1969,
+  "date": "1969",
+  "title": {
+    "zh": "第一次寒冬的到来",
+    "en": "The First AI Winter Arrives"
+  },
+  "summary": {
+    "zh": "AI创世纪",
+    "en": "Genesis of AI"
+  },
+  "description": {
+    "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
+    "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国, 马萨诸塞州",
+      "en": "MA, United States"
+    },
+    "place": {
+      "zh": "麻省理工学院",
+      "en": "MIT"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "topics": [
+    "deep-learning"
+  ],
+  "achievementTypeIds": [
+    "deep-learning"
+  ],
+  "figures": [
+    {
+      "figureId": "marvin-minsky",
+      "role": {
+        "zh": "《感知器》作者",
+        "en": "Author of Perceptrons"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

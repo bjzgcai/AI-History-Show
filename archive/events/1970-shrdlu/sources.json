@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
+    "type": "reference-only",
+    "label": {
+      "zh": "论文",
+      "en": "Thesis"
+    },
+    "title": {
+      "zh": "在理解自然语言的计算机程序中把过程作为数据表示",
+      "en": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language"
+    },
+    "url": "https://dspace.mit.edu/handle/1721.1/7095",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-terry-winograd-stanford-computer-science",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "特里·维诺格拉德, 斯坦福大学 Computer 《科学》",
+      "en": "Terry Winograd, Stanford Computer Science"
+    },
+    "url": "https://www.cs.stanford.edu/people/terry-winograd",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-terry-winograd-oral-history-cbi",
+    "type": "reference-only",
+    "label": {
+      "zh": "口述史",
+      "en": "Oral history"
+    },
+    "title": {
+      "zh": "特里·维诺格拉德 oral history, CBI",
+      "en": "Terry Winograd oral history, CBI"
+    },
+    "url": "https://hdl.handle.net/11299/107717",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《非线性降维的全局几何框架》",
+      "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction"
+    },
+    "url": "https://doi.org/10.1126/science.290.5500.2319",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-science-article-page",
+    "type": "reference-only",
+    "label": {
+      "zh": "出版页",
+      "en": "Publication"
+    },
+    "title": {
+      "zh": "Science 文章页面",
+      "en": "Science article page"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.290.5500.2319",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-pubmed-record-for-isomap",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "Isomap 的 PubMed 记录",
+      "en": "PubMed record for Isomap"
+    },
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11125149/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-isomap-documentation",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-learn Isomap 文档",
+      "en": "scikit-learn Isomap documentation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/manifold.html#isomap",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

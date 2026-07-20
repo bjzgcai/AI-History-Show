@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2020-alphafold2-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "AlphaFold2 改变了什么问题？",
+      "en": "What problem did AlphaFold2 transform?"
+    },
+    "options": [
+      {
+        "zh": "蛋白质结构预测",
+        "en": "Protein structure prediction"
+      },
+      {
+        "zh": "只有聊天机器人闲聊",
+        "en": "Chatbot small talk only"
+      },
+      {
+        "zh": "电子表格格式设置",
+        "en": "Spreadsheet formatting"
+      },
+      {
+        "zh": "只有定理子句排序",
+        "en": "Theorem clause ordering only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "AlphaFold2 根据序列和进化特征预测三维蛋白质结构。",
+      "en": "AlphaFold2 predicts 3D protein structures from sequence and evolutionary features."
+    },
+    "sourceIds": [
+      "source-highly-accurate-protein-structure-prediction-with-alphafold"
+    ],
+    "assetIds": [
+      "asset-2020-alphafold2-structure-pipeline"
+    ]
+  }
+]

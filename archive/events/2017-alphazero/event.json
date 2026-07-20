@@ -1,0 +1,66 @@
+{
+  "id": "2017-alphazero",
+  "year": "2017-2018",
+  "date": "2017-2018",
+  "title": {
+    "zh": "AlphaZero",
+    "en": "AlphaZero"
+  },
+  "summary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "description": {
+    "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>",
+    "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国伦敦",
+      "en": "London, United Kingdom"
+    },
+    "place": {
+      "zh": "DeepMind",
+      "en": "DeepMind"
+    },
+    "coordinates": [
+      51.523,
+      -0.128
+    ]
+  },
+  "topics": [
+    "gaming-ai"
+  ],
+  "achievementTypeIds": [
+    "gaming-ai"
+  ],
+  "figures": [
+    {
+      "figureId": "david-silver",
+      "role": {
+        "zh": "DeepMind 强化学习负责人",
+        "en": "DeepMind reinforcement learning lead"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "demis-hassabis",
+      "role": {
+        "zh": "DeepMind 联合创始人",
+        "en": "DeepMind co-founder"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "1950-turing-test",
+  "year": 1950,
+  "date": "1950",
+  "title": {
+    "zh": "图灵测试",
+    "en": "Turing Test"
+  },
+  "summary": {
+    "zh": "<p>1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。</p>",
+    "en": "<p>In 1950, Alan Turing turned the question “Can machines think?” into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.</p>"
+  },
+  "description": {
+    "zh": "<p>1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。</p>",
+    "en": "<p>In 1950, Alan Turing turned the question “Can machines think?” into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国，曼彻斯特",
+      "en": "Manchester, United Kingdom"
+    },
+    "place": {
+      "zh": "曼彻斯特大学",
+      "en": "University of Manchester"
+    },
+    "coordinates": [
+      53.4668,
+      -2.2339
+    ]
+  },
+  "topics": [
+    "ai100"
+  ],
+  "achievementTypeIds": [
+    "theory"
+  ],
+  "figures": [
+    {
+      "figureId": "alan-turing",
+      "role": {
+        "zh": "提出模仿游戏",
+        "en": "Proposed the imitation game"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 8 首批 AI100 批量迁移，需后续人工核对 claim 粒度与来源绑定。",
+      "en": "Step 8 initial AI100 batch migration; claim granularity and source binding need later manual review."
+    }
+  }
+}

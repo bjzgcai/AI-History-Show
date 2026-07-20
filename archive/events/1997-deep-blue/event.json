@@ -1,0 +1,58 @@
+{
+  "id": "1997-deep-blue",
+  "year": "1997",
+  "date": "1997",
+  "title": {
+    "zh": "深蓝",
+    "en": "Deep Blue"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
+    "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国纽约州",
+      "en": "New York, United States"
+    },
+    "place": {
+      "zh": "IBM 研究院",
+      "en": "IBM Research"
+    },
+    "coordinates": [
+      41.2108,
+      -73.8035
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "murray-campbell",
+      "role": {
+        "zh": "深蓝 团队成员",
+        "en": "Deep Blue team member"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

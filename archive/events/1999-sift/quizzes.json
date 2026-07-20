@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1999-sift-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "SIFT 试图让什么保持稳定？",
+      "en": "What does SIFT try to make stable?"
+    },
+    "options": [
+      {
+        "zh": "跨尺度和旋转的局部图像关键点与描述子",
+        "en": "Local image keypoints and descriptors across scale and rotation"
+      },
+      {
+        "zh": "国际象棋开局库",
+        "en": "A chess opening book"
+      },
+      {
+        "zh": "贝叶斯网络先验",
+        "en": "A Bayesian network prior"
+      },
+      {
+        "zh": "自然语言聊天脚本",
+        "en": "A natural-language chatbot script"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "SIFT 检测设计为在常见图像变换下仍可匹配的局部特征。",
+      "en": "SIFT detects local features designed to remain matchable despite common image transformations."
+    },
+    "sourceIds": [
+      "source-object-recognition-from-local-scale-invariant-features"
+    ],
+    "assetIds": [
+      "asset-1999-sift-david-lowe"
+    ]
+  }
+]

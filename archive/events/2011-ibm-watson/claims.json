@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "IBM Watson 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "IBM Watson is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-watson-beyond-jeopardy",
+      "source-building-watson-an-overview-of-the-deepqa-project"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>",
+      "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>"
+    },
+    "sourceIds": [
+      "source-watson-beyond-jeopardy",
+      "source-building-watson-an-overview-of-the-deepqa-project"
+    ],
+    "status": "needs-source"
+  }
+]

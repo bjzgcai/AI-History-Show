@@ -1,0 +1,72 @@
+[
+  {
+    "id": "quiz-2016-alphago-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "AlphaGo 不只是“搜得更多”。它学会了什么来引导搜索？",
+      "en": "AlphaGo did not just search harder. What did it learn to guide search?"
+    },
+    "options": [
+      {
+        "zh": "策略先验和价值估计",
+        "en": "Policy priors and value estimates"
+      },
+      {
+        "zh": "裁判的笔迹",
+        "en": "The referee's handwriting"
+      },
+      {
+        "zh": "只有棋盘颜色",
+        "en": "Only the board color"
+      },
+      {
+        "zh": "每盘棋固定第一手",
+        "en": "A fixed first move for every game"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "策略网络缩小候选落子，价值网络评估局面，树搜索向前规划。",
+      "en": "Policy networks narrow candidate moves, value networks estimate positions, and tree search plans ahead."
+    },
+    "sourceIds": [
+      "source-alphago-nature-paper"
+    ],
+    "assetIds": [
+      "asset-alphago-policy-value-search"
+    ]
+  },
+  {
+    "id": "2016-alphago-quiz-1",
+    "storylineId": "gaming-ai",
+    "question": {
+      "en": "AlphaGo did not just search harder. What did it learn to guide search?",
+      "zh": "AlphaGo 不只是“搜得更多”。它学会了什么来引导搜索？"
+    },
+    "options": [
+      {
+        "en": "Policy priors and value estimates",
+        "zh": "策略先验和价值估计"
+      },
+      {
+        "en": "The referee's handwriting",
+        "zh": "裁判的笔迹"
+      },
+      {
+        "en": "Only the board color",
+        "zh": "只有棋盘颜色"
+      },
+      {
+        "en": "A fixed first move for every game",
+        "zh": "每盘棋固定第一手"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Policy networks narrow candidate moves, value networks estimate positions, and tree search plans ahead.",
+      "zh": "策略网络缩小候选落子，价值网络评估局面，树搜索向前规划。"
+    },
+    "sourceIds": [],
+    "assetIds": []
+  }
+]

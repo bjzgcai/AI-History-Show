@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2016-yolo-joseph-redmon",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "约瑟夫·雷德蒙 肖像",
+      "en": "Joseph Redmon portrait"
+    },
+    "subcaption": {
+      "zh": "Allen School 关于 Redmon 获 谷歌 Ph.D. Fellowship 的新闻照片。",
+      "en": "Allen School news photo for Redmon’s Google Ph.D. Fellowship."
+    },
+    "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Institution news image; rights not stated.",
+        "en": "Institution news image; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2016-yolo-grid-detector",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "网格检测器",
+      "en": "Grid detector"
+    },
+    "subcaption": {
+      "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for YOLO, based on the listed source material."
+    },
+    "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2016-yolo-single-pass",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "单次前向管线",
+      "en": "Single-pass pipeline"
+    },
+    "subcaption": {
+      "zh": "YOLO 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for YOLO, based on the listed source material."
+    },
+    "sourceId": "source-you-only-look-once-unified-real-time-object-detection",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

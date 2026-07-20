@@ -1,0 +1,725 @@
+{
+    "id": "bench-council-ai100",
+    "title": {
+        "zh": "AI 百大成就（BenchCouncil）",
+        "en": "AI Top 100 Achievements (BenchCouncil)"
+    },
+    "subtitle": {
+        "zh": "面向 AI100 achievement dossier 的来源、论文、视觉模块与互动测验叙事。",
+        "en": "A source-grounded achievement dossier storyline for AI100 papers, visual modules, and quizzes."
+    },
+    "type": "achievement-map",
+    "description": {
+        "zh": "AI100 分支强调每个成就的来源、主论文、专家评价、长期影响、可视化解释和面向观众的快速挑战。",
+        "en": "The AI100 storyline emphasizes sources, primary papers, expert assessment, long-term impact, visual explanation, and audience-facing quick challenges for each achievement."
+    },
+    "events": [
+        {
+            "eventId": "2012-alexnet",
+            "variant": "bench-council-ai100",
+            "order": 10,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2012-alexnet"
+        },
+        {
+            "eventId": "2017-transformer",
+            "variant": "bench-council-ai100",
+            "order": 20,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2017-transformer"
+        },
+        {
+            "eventId": "2016-alphago",
+            "variant": "bench-council-ai100",
+            "order": 30,
+            "enabled": true,
+            "milestoneId": "milestone-2016-alphago"
+        },
+        {
+            "eventId": "1950-turing-test",
+            "variant": "bench-council-ai100",
+            "order": 40,
+            "enabled": true,
+            "milestoneId": "milestone-1950-turing-test"
+        },
+        {
+            "eventId": "1958-lisp",
+            "variant": "bench-council-ai100",
+            "order": 50,
+            "enabled": true,
+            "milestoneId": "milestone-1958-lisp"
+        },
+        {
+            "eventId": "1971-complexity-theory",
+            "variant": "bench-council-ai100",
+            "order": 60,
+            "enabled": true,
+            "milestoneId": "milestone-1971-complexity-theory"
+        },
+        {
+            "eventId": "1971-vc-theory",
+            "variant": "bench-council-ai100",
+            "order": 70,
+            "enabled": true,
+            "milestoneId": "milestone-1971-vc-theory"
+        },
+        {
+            "eventId": "1956-logic-theorist",
+            "variant": "bench-council-ai100",
+            "order": 80,
+            "enabled": true,
+            "milestoneId": "milestone-1956-logic-theorist"
+        },
+        {
+            "eventId": "1958-wangs-algorithm",
+            "variant": "bench-council-ai100",
+            "order": 90,
+            "enabled": true,
+            "milestoneId": "milestone-1958-wangs-algorithm"
+        },
+        {
+            "eventId": "1960-davis-putnam-dpll",
+            "variant": "bench-council-ai100",
+            "order": 100,
+            "enabled": true,
+            "milestoneId": "milestone-1960-davis-putnam-dpll"
+        },
+        {
+            "eventId": "2014-adam",
+            "variant": "bench-council-ai100",
+            "order": 110,
+            "enabled": true,
+            "milestoneId": "milestone-2014-adam"
+        },
+        {
+            "eventId": "2014-vgg",
+            "variant": "bench-council-ai100",
+            "order": 120,
+            "enabled": true,
+            "milestoneId": "milestone-2014-vgg"
+        },
+        {
+            "eventId": "2015-u-net",
+            "variant": "bench-council-ai100",
+            "order": 120,
+            "enabled": true,
+            "milestoneId": "milestone-2015-u-net"
+        },
+        {
+            "eventId": "1975-genetic-algorithm",
+            "variant": "bench-council-ai100",
+            "order": 130,
+            "enabled": true,
+            "milestoneId": "milestone-1975-genetic-algorithm"
+        },
+        {
+            "eventId": "2015-faster-r-cnn",
+            "variant": "bench-council-ai100",
+            "order": 130,
+            "enabled": true,
+            "milestoneId": "milestone-2015-faster-r-cnn"
+        },
+        {
+            "eventId": "1992-svm",
+            "variant": "bench-council-ai100",
+            "order": 140,
+            "enabled": true,
+            "milestoneId": "milestone-1992-svm"
+        },
+        {
+            "eventId": "1984-cart",
+            "variant": "bench-council-ai100",
+            "order": 150,
+            "enabled": true,
+            "milestoneId": "milestone-1984-cart"
+        },
+        {
+            "eventId": "1983-simulated-annealing",
+            "variant": "bench-council-ai100",
+            "order": 160,
+            "enabled": true,
+            "milestoneId": "milestone-1983-simulated-annealing"
+        },
+        {
+            "eventId": "1996-lasso",
+            "variant": "bench-council-ai100",
+            "order": 170,
+            "enabled": true,
+            "milestoneId": "milestone-1996-lasso"
+        },
+        {
+            "eventId": "2015-googlenet-inception",
+            "variant": "bench-council-ai100",
+            "order": 180,
+            "enabled": true,
+            "milestoneId": "milestone-2015-googlenet-inception"
+        },
+        {
+            "eventId": "1965-resolution-method",
+            "variant": "bench-council-ai100",
+            "order": 190,
+            "enabled": true,
+            "milestoneId": "milestone-1965-resolution-method"
+        },
+        {
+            "eventId": "1973-prolog",
+            "variant": "bench-council-ai100",
+            "order": 200,
+            "enabled": true,
+            "milestoneId": "milestone-1973-prolog"
+        },
+        {
+            "eventId": "1966-eliza",
+            "variant": "bench-council-ai100",
+            "order": 210,
+            "enabled": true,
+            "milestoneId": "milestone-1966-eliza"
+        },
+        {
+            "eventId": "1982-hopfield-network",
+            "variant": "bench-council-ai100",
+            "order": 220,
+            "enabled": true,
+            "milestoneId": "milestone-1982-hopfield-network"
+        },
+        {
+            "eventId": "2014-dropout",
+            "variant": "bench-council-ai100",
+            "order": 230,
+            "enabled": true,
+            "milestoneId": "milestone-2014-dropout"
+        },
+        {
+            "eventId": "2016-yolo",
+            "variant": "bench-council-ai100",
+            "order": 240,
+            "enabled": true,
+            "milestoneId": "milestone-2016-yolo"
+        },
+        {
+            "eventId": "2013-word2vec",
+            "variant": "bench-council-ai100",
+            "order": 250,
+            "enabled": true,
+            "milestoneId": "milestone-2013-word2vec"
+        },
+        {
+            "eventId": "2009-imagenet",
+            "variant": "bench-council-ai100",
+            "order": 260,
+            "enabled": true,
+            "milestoneId": "milestone-2009-imagenet"
+        },
+        {
+            "eventId": "2013-dqn",
+            "variant": "bench-council-ai100",
+            "order": 270,
+            "enabled": true,
+            "milestoneId": "milestone-2013-dqn"
+        },
+        {
+            "eventId": "2003-lda",
+            "variant": "bench-council-ai100",
+            "order": 280,
+            "enabled": true,
+            "milestoneId": "milestone-2003-lda"
+        },
+        {
+            "eventId": "1970-shrdlu",
+            "variant": "bench-council-ai100",
+            "order": 290,
+            "enabled": true,
+            "milestoneId": "milestone-1970-shrdlu"
+        },
+        {
+            "eventId": "1997-deep-blue",
+            "variant": "bench-council-ai100",
+            "order": 300,
+            "enabled": true,
+            "milestoneId": "milestone-1997-deep-blue"
+        },
+        {
+            "eventId": "1974-frame",
+            "variant": "bench-council-ai100",
+            "order": 310,
+            "enabled": true,
+            "milestoneId": "milestone-1974-frame"
+        },
+        {
+            "eventId": "1965-dendral",
+            "variant": "bench-council-ai100",
+            "order": 320,
+            "enabled": true,
+            "milestoneId": "milestone-1965-dendral"
+        },
+        {
+            "eventId": "1999-sift",
+            "variant": "bench-council-ai100",
+            "order": 330,
+            "enabled": true,
+            "milestoneId": "milestone-1999-sift"
+        },
+        {
+            "eventId": "2008-tsne",
+            "variant": "bench-council-ai100",
+            "order": 340,
+            "enabled": true,
+            "milestoneId": "milestone-2008-tsne"
+        },
+        {
+            "eventId": "1957-perceptron",
+            "variant": "bench-council-ai100",
+            "order": 350,
+            "enabled": true,
+            "milestoneId": "milestone-1958-rosenblatt-perceptron"
+        },
+        {
+            "eventId": "2006-dbn",
+            "variant": "bench-council-ai100",
+            "order": 360,
+            "enabled": true,
+            "milestoneId": "milestone-2006-dbn"
+        },
+        {
+            "eventId": "1988-td-update",
+            "variant": "bench-council-ai100",
+            "order": 370,
+            "enabled": true,
+            "milestoneId": "milestone-1988-td-update"
+        },
+        {
+            "eventId": "1985-bayesian-network",
+            "variant": "bench-council-ai100",
+            "order": 380,
+            "enabled": true,
+            "milestoneId": "milestone-1985-bayesian-network"
+        },
+        {
+            "eventId": "1990-otter",
+            "variant": "bench-council-ai100",
+            "order": 390,
+            "enabled": true,
+            "milestoneId": "milestone-1990-otter"
+        },
+        {
+            "eventId": "2011-ibm-watson",
+            "variant": "bench-council-ai100",
+            "order": 400,
+            "enabled": true,
+            "milestoneId": "milestone-2011-ibm-watson"
+        },
+        {
+            "eventId": "1951-strachey-draughts",
+            "variant": "bench-council-ai100",
+            "order": 410,
+            "enabled": true,
+            "milestoneId": "milestone-1951-strachey-draughts"
+        },
+        {
+            "eventId": "1994-chinook",
+            "variant": "bench-council-ai100",
+            "order": 420,
+            "enabled": true,
+            "milestoneId": "milestone-1994-chinook"
+        },
+        {
+            "eventId": "1959-pandemonium",
+            "variant": "bench-council-ai100",
+            "order": 430,
+            "enabled": true,
+            "milestoneId": "milestone-1959-pandemonium"
+        },
+        {
+            "eventId": "1984-cyc",
+            "variant": "bench-council-ai100",
+            "order": 440,
+            "enabled": true,
+            "milestoneId": "milestone-1984-cyc"
+        },
+        {
+            "eventId": "1980-xcon-r1",
+            "variant": "bench-council-ai100",
+            "order": 450,
+            "enabled": true,
+            "milestoneId": "milestone-1980-xcon-r1"
+        },
+        {
+            "eventId": "1957-kmeans",
+            "variant": "bench-council-ai100",
+            "order": 460,
+            "enabled": true,
+            "milestoneId": "milestone-1957-kmeans"
+        },
+        {
+            "eventId": "1996-dbscan",
+            "variant": "bench-council-ai100",
+            "order": 470,
+            "enabled": true,
+            "milestoneId": "milestone-1996-dbscan"
+        },
+        {
+            "eventId": "2000-spectral-clustering",
+            "variant": "bench-council-ai100",
+            "order": 480,
+            "enabled": true,
+            "milestoneId": "milestone-2000-spectral-clustering"
+        },
+        {
+            "eventId": "ai100-1967-knn",
+            "variant": "bench-council-ai100",
+            "order": 490,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1967-knn"
+        },
+        {
+            "eventId": "ai100-1970-ridge",
+            "variant": "bench-council-ai100",
+            "order": 500,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1970-ridge"
+        },
+        {
+            "eventId": "ai100-2005-hog",
+            "variant": "bench-council-ai100",
+            "order": 510,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2005-hog"
+        },
+        {
+            "eventId": "ai100-2006-surf",
+            "variant": "bench-council-ai100",
+            "order": 520,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2006-surf"
+        },
+        {
+            "eventId": "ai100-1997-kernel-pca",
+            "variant": "bench-council-ai100",
+            "order": 530,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1997-kernel-pca"
+        },
+        {
+            "eventId": "ai100-1999-nmf",
+            "variant": "bench-council-ai100",
+            "order": 540,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1999-nmf"
+        },
+        {
+            "eventId": "ai100-2000-isomap",
+            "variant": "bench-council-ai100",
+            "order": 550,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2000-isomap"
+        },
+        {
+            "eventId": "ai100-2000-lle",
+            "variant": "bench-council-ai100",
+            "order": 560,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2000-lle"
+        },
+        {
+            "eventId": "ai100-1943-mcculloch-pitts-neuron",
+            "variant": "bench-council-ai100",
+            "order": 570,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1943-mcculloch-pitts-neuron"
+        },
+        {
+            "eventId": "ai100-1951-snarc",
+            "variant": "bench-council-ai100",
+            "order": 580,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1951-snarc"
+        },
+        {
+            "eventId": "ai100-1982-som",
+            "variant": "bench-council-ai100",
+            "order": 590,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1982-som"
+        },
+        {
+            "eventId": "ai100-1967-back-propagation",
+            "variant": "bench-council-ai100",
+            "order": 600,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1967-back-propagation"
+        },
+        {
+            "eventId": "ai100-1969-relu",
+            "variant": "bench-council-ai100",
+            "order": 610,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1969-relu"
+        },
+        {
+            "eventId": "ai100-1980-neocognitron",
+            "variant": "bench-council-ai100",
+            "order": 620,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1980-neocognitron"
+        },
+        {
+            "eventId": "1989-cnn",
+            "variant": "bench-council-ai100",
+            "order": 630,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1989-lenet"
+        },
+        {
+            "eventId": "ai100-2000-neural-language-model",
+            "variant": "bench-council-ai100",
+            "order": 640,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2000-neural-language-model"
+        },
+        {
+            "eventId": "2015-resnet",
+            "variant": "bench-council-ai100",
+            "order": 660,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2015-resnet"
+        },
+        {
+            "eventId": "ai100-2015-batch-normalization",
+            "variant": "bench-council-ai100",
+            "order": 670,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2015-batch-normalization"
+        },
+        {
+            "eventId": "2016-densenet",
+            "variant": "bench-council-ai100",
+            "order": 680,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2017-densenet"
+        },
+        {
+            "eventId": "ai100-2020-vit",
+            "variant": "bench-council-ai100",
+            "order": 700,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2020-vit"
+        },
+        {
+            "eventId": "1997-lstm",
+            "variant": "bench-council-ai100",
+            "order": 710,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1997-lstm"
+        },
+        {
+            "eventId": "2014-gan",
+            "variant": "bench-council-ai100",
+            "order": 720,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2014-gan"
+        },
+        {
+            "eventId": "2014-attention",
+            "variant": "bench-council-ai100",
+            "order": 730,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2014-neural-machine-translation-attention"
+        },
+        {
+            "eventId": "2018-bert",
+            "variant": "bench-council-ai100",
+            "order": 740,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2018-bert"
+        },
+        {
+            "eventId": "2018-gpt",
+            "variant": "bench-council-ai100",
+            "order": 750,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2018-gpt"
+        },
+        {
+            "eventId": "2020-alphafold",
+            "variant": "bench-council-ai100",
+            "order": 760,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2020-alphafold2"
+        },
+        {
+            "eventId": "ai100-2021-clip",
+            "variant": "bench-council-ai100",
+            "order": 770,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2021-clip"
+        },
+        {
+            "eventId": "ai100-2021-dalle",
+            "variant": "bench-council-ai100",
+            "order": 780,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2021-dalle"
+        },
+        {
+            "eventId": "ai100-2022-stable-diffusion",
+            "variant": "bench-council-ai100",
+            "order": 790,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2022-stable-diffusion"
+        },
+        {
+            "eventId": "ai100-2023-segment-anything",
+            "variant": "bench-council-ai100",
+            "order": 800,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2023-segment-anything"
+        },
+        {
+            "eventId": "ai100-2021-swin-transformer",
+            "variant": "bench-council-ai100",
+            "order": 810,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2021-swin-transformer"
+        },
+        {
+            "eventId": "ai100-2014-glove",
+            "variant": "bench-council-ai100",
+            "order": 820,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2014-glove"
+        },
+        {
+            "eventId": "ai100-2014-conditional-gan",
+            "variant": "bench-council-ai100",
+            "order": 830,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2014-conditional-gan"
+        },
+        {
+            "eventId": "ai100-2015-dcgan",
+            "variant": "bench-council-ai100",
+            "order": 840,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2015-dcgan"
+        },
+        {
+            "eventId": "ai100-2017-wasserstein-gan",
+            "variant": "bench-council-ai100",
+            "order": 850,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2017-wasserstein-gan"
+        },
+        {
+            "eventId": "ai100-2017-cyclegan",
+            "variant": "bench-council-ai100",
+            "order": 860,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2017-cyclegan"
+        },
+        {
+            "eventId": "ai100-2017-pix2pix",
+            "variant": "bench-council-ai100",
+            "order": 870,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2017-pix2pix"
+        },
+        {
+            "eventId": "ai100-2019-stylegan",
+            "variant": "bench-council-ai100",
+            "order": 880,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2019-stylegan"
+        },
+        {
+            "eventId": "ai100-2013-variational-autoencoder",
+            "variant": "bench-council-ai100",
+            "order": 890,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2013-variational-autoencoder"
+        },
+        {
+            "eventId": "ai100-2015-diffusion-model",
+            "variant": "bench-council-ai100",
+            "order": 900,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2015-diffusion-model"
+        },
+        {
+            "eventId": "ai100-2005-gnn",
+            "variant": "bench-council-ai100",
+            "order": 910,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2005-gnn"
+        },
+        {
+            "eventId": "ai100-2016-gcn",
+            "variant": "bench-council-ai100",
+            "order": 920,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2016-gcn"
+        },
+        {
+            "eventId": "ai100-2017-gat",
+            "variant": "bench-council-ai100",
+            "order": 930,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2017-gat"
+        },
+        {
+            "eventId": "ai100-2016-nas",
+            "variant": "bench-council-ai100",
+            "order": 940,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2016-nas"
+        },
+        {
+            "eventId": "ai100-2015-deep-compression",
+            "variant": "bench-council-ai100",
+            "order": 950,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2015-deep-compression"
+        },
+        {
+            "eventId": "ai100-2015-knowledge-distillation",
+            "variant": "bench-council-ai100",
+            "order": 960,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2015-knowledge-distillation"
+        },
+        {
+            "eventId": "ai100-2014-ms-coco",
+            "variant": "bench-council-ai100",
+            "order": 970,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2014-ms-coco"
+        },
+        {
+            "eventId": "ai100-1989-q-learning",
+            "variant": "bench-council-ai100",
+            "order": 980,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1989-q-learning"
+        },
+        {
+            "eventId": "ai100-2015-ddpg",
+            "variant": "bench-council-ai100",
+            "order": 990,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-2015-ddpg"
+        },
+        {
+            "eventId": "ai100-1983-actor-critic",
+            "variant": "bench-council-ai100",
+            "order": 1000,
+            "enabled": true,
+            "milestoneId": "milestone-ai100-1983-actor-critic"
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "Step 2 初版，仅引用 Step 3 计划迁移的样例事件。",
+            "en": "Step 2 draft that only references the sample events planned for Step 3."
+        }
+    }
+}

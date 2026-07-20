@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2008-tsne-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "t-SNE 主要试图保留哪类结构？",
+      "en": "What kind of structure does t-SNE mainly try to preserve?"
+    },
+    "options": [
+      {
+        "zh": "局部邻域关系",
+        "en": "Local neighborhood relationships"
+      },
+      {
+        "zh": "所有位置的精确全局距离",
+        "en": "Exact global distances everywhere"
+      },
+      {
+        "zh": "国际象棋走法合法性表",
+        "en": "Chess move legality tables"
+      },
+      {
+        "zh": "仅化学质谱",
+        "en": "Chemical mass spectra only"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "t-SNE 最适合理解为局部邻域可视化方法，而不是忠实全局地图。",
+      "en": "t-SNE is best understood as a local-neighborhood visualization method, not a faithful global map."
+    },
+    "sourceIds": [
+      "source-visualizing-data-using-t-sne"
+    ],
+    "assetIds": [
+      "asset-2008-tsne-laurens-van-der-maaten"
+    ]
+  }
+]

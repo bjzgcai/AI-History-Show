@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1984-cyc-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Cyc 试图为 AI 系统显式表示什么？",
+      "en": "What did Cyc try to make explicit for AI systems?"
+    },
+    "options": [
+      {
+        "zh": "作为本体与规则库的常识知识",
+        "en": "Common-sense knowledge as an ontology and rule base"
+      },
+      {
+        "zh": "只有原始图像像素",
+        "en": "Only raw image pixels"
+      },
+      {
+        "zh": "只有跳棋残局表",
+        "en": "Only endgame checkers tables"
+      },
+      {
+        "zh": "单个梯度更新",
+        "en": "A single gradient update"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Cyc 是长期运行的符号 AI 项目，核心是显式常识知识与推理。",
+      "en": "Cyc is a long-running symbolic AI project centered on explicit common-sense knowledge and inference."
+    },
+    "sourceIds": [
+      "source-building-large-knowledge-based-systems"
+    ],
+    "assetIds": [
+      "asset-1984-cyc-douglas-lenat"
+    ]
+  }
+]

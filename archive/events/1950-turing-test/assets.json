@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-1950-turing-test-alan-turing",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
+    "role": "source-card",
+    "caption": {
+      "zh": "艾伦·图灵 肖像",
+      "en": "Alan Turing portrait"
+    },
+    "subcaption": {
+      "zh": "艾伦·图灵 肖像照，1951 年 3 月 29 日",
+      "en": "Photograph portrait of Alan Turing, 29 March 1951"
+    },
+    "sourceId": "source-computing-machinery-and-intelligence",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Public domain",
+        "en": "Public domain"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1950-turing-test-diagram",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png",
+    "role": "algorithm-explainer",
+    "caption": {
+      "zh": "图灵测试结构图",
+      "en": "Turing test diagram"
+    },
+    "subcaption": {
+      "zh": "观察者 C 只通过文字回答判断隐藏的人类与机器。",
+      "en": "Observer C judges hidden human and machine replies through text only."
+    },
+    "sourceId": "source-computing-machinery-and-intelligence",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Creative Commons Attribution 2.5 Generic, CC BY 2.5",
+        "en": "Creative Commons Attribution 2.5 Generic, CC BY 2.5"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

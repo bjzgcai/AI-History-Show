@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2015-u-net-olaf-ronneberger",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "奥拉夫·龙讷贝格 肖像",
+      "en": "Olaf Ronneberger portrait"
+    },
+    "subcaption": {
+      "zh": "来自 弗赖堡 LMB 研究者主页的人物照片。",
+      "en": "Researcher profile photo from the Freiburg LMB page."
+    },
+    "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Institution profile photo; rights not stated.",
+        "en": "Institution profile photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-u-net-u-shape-architecture",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "U 形编码器-解码器",
+      "en": "U-shaped encoder-decoder"
+    },
+    "subcaption": {
+      "zh": "U-Net 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for U-Net, based on the related source material."
+    },
+    "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-u-net-segmentation-mask",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "生物医学分割掩码",
+      "en": "Biomedical mask output"
+    },
+    "subcaption": {
+      "zh": "U-Net 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for U-Net, based on the related source material."
+    },
+    "sourceId": "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

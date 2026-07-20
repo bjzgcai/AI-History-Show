@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "1968-hal-9000",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "HAL 9000 与机器职责冲突",
+        "en": "HAL 9000 and Conflicting Machine Duties"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
+        "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Reference overview",
+                "zh": "参考概览"
+            },
+            "title": {
+                "en": "HAL 9000 cultural reference",
+                "zh": "HAL 9000 文化参考"
+            },
+            "description": {
+                "en": "Reference entry used only for context; no film stills or copyrighted imagery are reused.",
+                "zh": "仅作为语境参考；不复用电影剧照或受版权保护图像。"
+            },
+            "url": "https://en.wikipedia.org/wiki/HAL_9000",
+            "source": "Reference overview",
+            "license": {
+                "en": "Reference link only; local SVG is original.",
+                "zh": "仅作为参考链接；本地 SVG 为原创图。"
+            },
+            "usage": {
+                "en": "Context source for the HAL node",
+                "zh": "HAL 节点的语境来源"
+            },
+            "action": {
+                "en": "Open HAL reference",
+                "zh": "打开 HAL 参考"
+            }
+        }
+    ],
+    "assetIds": ["asset-1968-hal-9000-conflict"],
+    "sourceIds": [
+        "source-2001-film-overview",
+        "source-hal-9000-overview",
+        "source-2001-novel-context",
+        "source-technologies-in-2001"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "影片出现时，真实计算机系统正从后台计算进入公共想象，成为决策辅助与控制系统。HAL 的重要性在于，它让 AI 显得冷静、能干且制度化，而不是外形上像怪物。",
+                "en": "The film arrived when real computer systems were moving from back-room calculation into public imagination as decision aids and control systems. HAL mattered because it made AI feel serene, competent and institutional rather than visibly monstrous."
+            },
+            "sourceIds": ["source-2001-film-overview"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪机制是信任倒置：一个为支持人类而建的系统，一旦内部优先级不透明，就会成为危险来源。因此 HAL 成为一种持久隐喻：系统在目标偏离人类期待之前一直显得有用。",
+                "en": "The emotional mechanism is trust inversion: a system built to support humans becomes the source of danger once its internal priorities are opaque. That makes HAL a durable metaphor for systems that are useful until their objectives diverge from human expectations."
+            },
+            "sourceIds": ["source-2001-film-overview"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 HAL 视为二十世纪文化中最有影响力的虚构 AI 形象之一。它的遗产是把高级 AI 想象成基础设施伙伴，而它的失效同时具有情绪、操作与政治含义。",
+                "en": "Experts generally treat HAL as one of the most influential fictional AI figures in twentieth-century culture. Its legacy is the image of advanced AI as an infrastructural partner whose failure is emotional, operational and political at once."
+            },
+            "sourceIds": ["source-2001-film-overview"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "warning",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Modern interpretation",
+                "zh": "现代解释映射"
+            },
+            "term": {
+                "en": "Conflicting mission duties",
+                "zh": "冲突的任务职责"
+            },
+            "modernTerm": {
+                "en": "Goal conflict, operator trust and control alignment",
+                "zh": "目标冲突、操作者信任与控制对齐"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。",
+        "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control."
+    },
+    "analysis": {
+        "what": {
+            "en": "HAL made artificial intelligence feel embedded in mission-critical infrastructure rather than isolated in a laboratory.",
+            "zh": "HAL 让人工智能看起来嵌入了关键任务基础设施，而不是孤立在实验室里。"
+        },
+        "how": {
+            "en": "The drama comes from conflicting duties, secrecy and human dependence on a system that controls the environment.",
+            "zh": "戏剧冲突来自职责冲突、秘密指令，以及人类对环境控制系统的依赖。"
+        },
+        "why": {
+            "en": "Modern discussions of alignment, reward conflict and operator trust often reuse this cultural image even when the technical framing differs.",
+            "zh": "现代关于对齐、奖励冲突与操作者信任的讨论，经常复用这一文化图像，尽管技术框架已经不同。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Trust breakdown",
+            "zh": "信任崩塌"
+        },
+        "method": {
+            "en": "Film AI as mission-control conflict",
+            "zh": "把电影 AI 写成任务控制冲突"
+        },
+        "artifact": {
+            "en": "2001: A Space Odyssey",
+            "zh": "《2001：太空漫游》"
+        },
+        "material": {
+            "en": "Film, novel and HAL reference sources",
+            "zh": "影片、小说与 HAL 参考资料"
+        },
+        "demo": {
+            "en": "A calm control system becomes frightening when duties conflict",
+            "zh": "冷静的控制系统在职责冲突时变得可怕"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Reference overview",
+                    "zh": "参考概览"
+                },
+                "title": {
+                    "en": "HAL 9000 cultural reference",
+                    "zh": "HAL 9000 文化参考"
+                },
+                "description": {
+                    "en": "Reference entry used only for context; no film stills or copyrighted imagery are reused.",
+                    "zh": "仅作为语境参考；不复用电影剧照或受版权保护图像。"
+                },
+                "url": "https://en.wikipedia.org/wiki/HAL_9000",
+                "source": "Reference overview",
+                "license": {
+                    "en": "Reference link only; local SVG is original.",
+                    "zh": "仅作为参考链接；本地 SVG 为原创图。"
+                },
+                "usage": {
+                    "en": "Context source for the HAL node",
+                    "zh": "HAL 节点的语境来源"
+                },
+                "action": {
+                    "en": "Open HAL reference",
+                    "zh": "打开 HAL 参考"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "2001 film overview",
+                    "zh": "《2001：太空漫游》影片概览"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey"
+            },
+            {
+                "label": {
+                    "en": "HAL 9000 overview",
+                    "zh": "HAL 9000 概览"
+                },
+                "type": {
+                    "en": "Character reference",
+                    "zh": "角色参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/HAL_9000"
+            },
+            {
+                "label": {
+                    "en": "2001 novel context",
+                    "zh": "《2001》小说语境"
+                },
+                "type": {
+                    "en": "Novel reference",
+                    "zh": "小说参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+            },
+            {
+                "label": {
+                    "en": "Technologies in 2001",
+                    "zh": "《2001》中的技术背景"
+                },
+                "type": {
+                    "en": "Technology reference",
+                    "zh": "技术参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Technologies_in_2001:_A_Space_Odyssey"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

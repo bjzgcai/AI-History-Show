@@ -1,0 +1,106 @@
+[
+  {
+    "id": "asset-geoffrey-hinton",
+    "type": "image",
+    "path": "resources/images/figures/geoffrey-hinton.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "蒙特利尔深度学习研究背景图",
+      "en": "Montreal deep learning research context"
+    },
+    "subcaption": {
+      "zh": "神经注意力研究的机构背景",
+      "en": "Institutional context for neural attention research"
+    },
+    "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-attention-alignment",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "注意力对齐图",
+      "en": "Attention alignment map"
+    },
+    "subcaption": {
+      "zh": "关于源令牌注意力的本地原创解释图。",
+      "en": "Original local explainer of source-token attention."
+    },
+    "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-attention-architecture-01",
+    "type": "image",
+    "path": "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "自回归模型和注意力机制 架构图",
+      "en": "Autoregressive Models and Attention diagram"
+    },
+    "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-attention-people-01",
+    "type": "image",
+    "path": "resources/images/2014-attention/people/2014-attention_people_01.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

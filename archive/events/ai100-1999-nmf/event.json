@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1999-nmf",
+  "year": 1999,
+  "date": "1999",
+  "title": {
+    "zh": "非负矩阵分解",
+    "en": "NMF"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>",
+    "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国新泽西州与剑桥",
+      "en": "New Jersey and Cambridge, United States"
+    },
+    "place": {
+      "zh": "贝尔实验室与 MIT",
+      "en": "Bell Labs and MIT"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4015
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "daniel-lee",
+      "role": {
+        "zh": "NMF 共同作者",
+        "en": "Co-author of NMF"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "h-sebastian-seung",
+      "role": {
+        "zh": "NMF 共同作者",
+        "en": "Co-author of NMF"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

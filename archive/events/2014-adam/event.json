@@ -1,0 +1,65 @@
+{
+  "id": "2014-adam",
+  "year": "2014",
+  "date": "2014",
+  "title": {
+    "zh": "Adam 优化器",
+    "en": "Adam Optimizer"
+  },
+  "summary": {
+    "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>",
+    "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>"
+  },
+  "description": {
+    "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>",
+    "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "荷兰阿姆斯特丹与加拿大多伦多",
+      "en": "Amsterdam, Netherlands and Toronto, Canada"
+    },
+    "place": {
+      "zh": "阿姆斯特丹大学 / 多伦多大学",
+      "en": "University of Amsterdam / University of Toronto"
+    },
+    "coordinates": [
+      52.3558,
+      4.9558
+    ]
+  },
+  "topics": [
+    "ai100"
+  ],
+  "achievementTypeIds": [
+    "optimization"
+  ],
+  "figures": [
+    {
+      "figureId": "diederik-p-kingma",
+      "role": {
+        "zh": "Adam 共同作者",
+        "en": "Co-author of Adam"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jimmy-ba",
+      "role": {
+        "zh": "Adam 共同作者",
+        "en": "Co-author of Adam"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 8 首批 AI100 批量迁移，需后续人工核对 claim 粒度与来源绑定。",
+      "en": "Step 8 initial AI100 batch migration; claim granularity and source binding need later manual review."
+    }
+  }
+}

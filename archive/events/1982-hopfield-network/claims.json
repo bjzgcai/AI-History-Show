@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Hopfield 网络 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Hopfield Network is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-neural-networks-and-physical-systems",
+      "source-nobel-prize-john-j-hopfield-facts"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>",
+      "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>"
+    },
+    "sourceIds": [
+      "source-neural-networks-and-physical-systems",
+      "source-nobel-prize-john-j-hopfield-facts"
+    ],
+    "status": "needs-source"
+  }
+]

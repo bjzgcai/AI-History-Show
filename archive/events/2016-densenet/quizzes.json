@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2017-densenet-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "DenseNet 在网络内部鼓励什么？",
+      "en": "What does DenseNet encourage inside a network?"
+    },
+    "options": [
+      {
+        "zh": "通过密集连接复用特征",
+        "en": "Feature reuse through dense connections"
+      },
+      {
+        "zh": "忘记所有早期层",
+        "en": "Forgetting all earlier layers"
+      },
+      {
+        "zh": "只使用手写规则",
+        "en": "Only using handwritten rules"
+      },
+      {
+        "zh": "用棋盘替换图像",
+        "en": "Replacing images with chess boards"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DenseNet 连接各层，使后续层可以直接使用早期特征图。",
+      "en": "DenseNet connects layers so later layers can directly use earlier feature maps."
+    },
+    "sourceIds": [
+      "source-densely-connected-convolutional-networks"
+    ],
+    "assetIds": [
+      "asset-2016-densenet-people-01"
+    ]
+  }
+]

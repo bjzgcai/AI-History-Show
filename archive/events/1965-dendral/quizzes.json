@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1965-dendral-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "DENDRAL 的历史重要性主要是什么？",
+      "en": "What made DENDRAL historically important?"
+    },
+    "options": [
+      {
+        "zh": "它用专家化学知识引导科学推断",
+        "en": "It used expert chemical knowledge to guide scientific inference"
+      },
+      {
+        "zh": "它发明了 t-SNE 可视化",
+        "en": "It invented t-SNE visualization"
+      },
+      {
+        "zh": "它归一化神经激活",
+        "en": "It normalized neural activations"
+      },
+      {
+        "zh": "它用蒙特卡洛树搜索赢围棋",
+        "en": "It won at Go with Monte Carlo tree search"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DENDRAL 表明富知识专家系统可以解决实际科学任务。",
+      "en": "DENDRAL helped show that knowledge-rich expert systems could solve practical scientific tasks."
+    },
+    "sourceIds": [
+      "source-applications-of-artificial-intelligence-for-chemical-inference"
+    ],
+    "assetIds": [
+      "asset-1965-dendral-edward-feigenbaum"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-alec-radford",
+    "type": "image",
+    "path": "resources/images/figures/alec-radford.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "亚历克·拉德福德肖像",
+      "en": "Alec Radford portrait"
+    },
+    "subcaption": {
+      "zh": "DCGAN 主要作者",
+      "en": "DCGAN lead author"
+    },
+    "sourceId": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地项目图片；复用权利沿用现有项目素材元数据。",
+        "en": "Local project image; reuse rights inherited from existing project asset metadata."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-dcgan-conv-generator",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "DCGAN 解释图",
+      "en": "DCGAN explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

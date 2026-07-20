@@ -1,0 +1,311 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2021-clip",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "CLIP",
+    "en": "CLIP"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。</p>",
+    "en": "<p>OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "clip",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "title": {
+        "en": "CLIP: Connecting text and images",
+        "zh": "CLIP：连接文本与图像"
+      },
+      "description": {
+        "en": "OpenAI project page explaining CLIP and zero-shot transfer.",
+        "zh": "解释 CLIP 与零样本迁移的 OpenAI 项目页面。"
+      },
+      "url": "https://openai.com/index/clip/",
+      "source": "https://openai.com/index/clip/",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open project page",
+        "zh": "打开项目页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-alec-radford",
+    "asset-2021-clip-contrastive-pairs"
+  ],
+  "sourceIds": [
+    "source-learning-transferable-visual-models-from-natural-language-supervision",
+    "source-icml-clip-paper-page",
+    "source-openai-clip-blog-post",
+    "source-openai-clip-github-repository"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2021-clip-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。",
+        "en": "OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification."
+      },
+      "sourceIds": [
+        "source-learning-transferable-visual-models-from-natural-language-supervision"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-learning-transferable-visual-models-from-natural-language-supervision"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 CLIP 视为让网页规模语言监督服务于视觉任务的关键一步。它的长期影响在于共享图文嵌入模式支撑了检索、零样本分类以及许多文生图系统。",
+        "en": "Experts generally treat CLIP as a key step in making web-scale language supervision useful for vision. Its long-term legacy is the shared image-text embedding pattern behind retrieval, zero-shot classification, and many text-to-image systems."
+      },
+      "sourceIds": [
+        "source-learning-transferable-visual-models-from-natural-language-supervision"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "Lead author of CLIP",
+        "zh": "CLIP 主要作者"
+      },
+      "avatar": "resources/images/figures/alec-radford.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Learning transferable visual models from natural language supervision\"",
+    "zh": "\"从自然语言监督中学习可迁移视觉模型\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Learning Transferable Visual Models From Natural Language Supervision",
+      "zh": "从自然语言监督中学习可迁移视觉模型"
+    },
+    "workAuthors": {
+      "en": "Alec Radford et al., ICML, 2021",
+      "zh": "亚历克·拉德福德等，ICML，2021"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/2103.00020"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Learning Transferable Visual Models From Natural Language Supervision</em>, Alec Radford et al., ICML, 2021",
+    "zh": "《从自然语言监督中学习可迁移视觉模型》, 亚历克·拉德福德等，ICML，2021"
+  },
+  "achievement": {
+    "area": {
+      "en": "Multimodal learning",
+      "zh": "多模态学习"
+    },
+    "method": {
+      "en": "Image-text contrastive pre-training",
+      "zh": "图文对比预训练"
+    },
+    "artifact": {
+      "en": "CLIP model",
+      "zh": "CLIP 模型"
+    },
+    "material": {
+      "en": "ICML paper and OpenAI release",
+      "zh": "ICML 论文与 OpenAI 发布材料"
+    },
+    "demo": {
+      "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings.",
+      "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Shared Embedding",
+          "zh": "共享嵌入"
+        },
+        "text": {
+          "en": "Images and captions occupy one comparison space.",
+          "zh": "图像和文字说明进入同一个比较空间。"
+        }
+      },
+      {
+        "label": {
+          "en": "Zero-shot",
+          "zh": "零样本"
+        },
+        "text": {
+          "en": "Labels can be written as text prompts.",
+          "zh": "标签可以写成文本提示。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "GPT",
+        "zh": "GPT"
+      },
+      {
+        "en": "Vision Transformer",
+        "zh": "视觉 Transformer"
+      },
+      {
+        "en": "DALL-E",
+        "zh": "DALL-E"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Image encoder",
+        "zh": "Image encoder"
+      },
+      {
+        "en": "Text encoder",
+        "zh": "Text encoder"
+      },
+      {
+        "en": "Contrastive match",
+        "zh": "Contrastive match"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICML paper and OpenAI release",
+          "zh": "ICML 论文与 OpenAI 发布材料"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Image and text encoders are trained so matching pairs land close together and mismatched pairs move apart. Once trained, class names can be written as prompts and compared directly with image embeddings.",
+          "zh": "图像编码器和文本编码器被训练成让匹配图文靠近、不匹配图文远离。训练完成后，类别名称可以写成提示词，并直接与图像嵌入比较。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenAI",
+          "zh": "OpenAI"
+        },
+        "title": {
+          "en": "CLIP: Connecting text and images",
+          "zh": "CLIP：连接文本与图像"
+        },
+        "description": {
+          "en": "OpenAI project page explaining CLIP and zero-shot transfer.",
+          "zh": "解释 CLIP 与零样本迁移的 OpenAI 项目页面。"
+        },
+        "url": "https://openai.com/index/clip/",
+        "source": "https://openai.com/index/clip/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "country": {
+      "en": "San Francisco, United States",
+      "zh": "美国旧金山"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  }
+}

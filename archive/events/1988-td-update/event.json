@@ -1,0 +1,58 @@
+{
+  "id": "1988-td-update",
+  "year": "1988",
+  "date": "1988",
+  "title": {
+    "zh": "时序差分更新",
+    "en": "Temporal-Difference Update"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
+    "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国与加拿大",
+      "en": "United States and Canada"
+    },
+    "place": {
+      "zh": "GTE 实验室 / 麻省大学学术谱系",
+      "en": "GTE Laboratories / University of Massachusetts lineage"
+    },
+    "coordinates": [
+      42.3732,
+      -72.5199
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "richard-sutton",
+      "role": {
+        "zh": "时序差分学习提出者",
+        "en": "Author of temporal-difference learning"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

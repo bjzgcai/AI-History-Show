@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-2019-pluribus-blueprint-search",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Pluribus 蓝图搜索",
+      "en": "Pluribus blueprint search"
+    },
+    "subcaption": {
+      "zh": "多人扑克推理的原创解释图。",
+      "en": "Original explainer for multiplayer poker reasoning."
+    },
+    "sourceId": "source-science-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

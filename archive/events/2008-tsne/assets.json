@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2008-tsne-laurens-van-der-maaten",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+    "role": "hero-image",
+    "caption": {
+      "zh": "劳伦斯·范德马滕 肖像",
+      "en": "Laurens van der Maaten portrait"
+    },
+    "subcaption": {
+      "zh": "来自 van der Maaten 个人主页的人物图。",
+      "en": "Portrait from van der Maaten homepage."
+    },
+    "sourceId": "source-visualizing-data-using-t-sne",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Personal website image; reuse rights not stated.",
+        "en": "Personal website image; reuse rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2008-tsne-neighbor-probabilities",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "邻域概率匹配",
+      "en": "Neighbor probability matching"
+    },
+    "subcaption": {
+      "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for t-SNE, based on the listed source material."
+    },
+    "sourceId": "source-visualizing-data-using-t-sne",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2008-tsne-cluster-map",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "二维簇图",
+      "en": "2D cluster map"
+    },
+    "subcaption": {
+      "zh": "t-SNE 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for t-SNE, based on the listed source material."
+    },
+    "sourceId": "source-visualizing-data-using-t-sne",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

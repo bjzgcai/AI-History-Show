@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2019-pluribus-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Pluribus 相比 Libratus 主要扩展了什么？",
+      "en": "What did Pluribus add beyond Libratus?"
+    },
+    "options": [
+      {
+        "zh": "它处理六人无限注德州扑克",
+        "en": "It handled six-player no-limit Texas hold'em"
+      },
+      {
+        "zh": "它移除了所有隐藏信息",
+        "en": "It removed all hidden information"
+      },
+      {
+        "zh": "它只下跳棋",
+        "en": "It played only checkers"
+      },
+      {
+        "zh": "它不使用策略蓝图",
+        "en": "It used no strategy blueprint"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Pluribus 将不完全信息扑克 AI 从一对一扩展到多人牌桌。",
+      "en": "Pluribus scaled imperfect-information poker AI from heads-up play to a multiplayer table."
+    },
+    "sourceIds": [
+      "source-science-paper"
+    ],
+    "assetIds": [
+      "asset-2019-pluribus-blueprint-search"
+    ]
+  }
+]

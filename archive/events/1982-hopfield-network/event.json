@@ -1,0 +1,58 @@
+{
+  "id": "1982-hopfield-network",
+  "year": "1982",
+  "date": "1982",
+  "title": {
+    "zh": "Hopfield 网络",
+    "en": "Hopfield Network"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>",
+    "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国加利福尼亚州",
+      "en": "California, United States"
+    },
+    "place": {
+      "zh": "加州理工学院",
+      "en": "California Institute of Technology"
+    },
+    "coordinates": [
+      34.1377,
+      -118.1253
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "john-j-hopfield",
+      "role": {
+        "zh": "Hopfield 网络提出者",
+        "en": "Inventor of Hopfield networks"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

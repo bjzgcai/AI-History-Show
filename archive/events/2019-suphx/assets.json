@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-2019-suphx-mahjong-policy",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Suphx 麻将策略循环",
+      "en": "Suphx mahjong policy loop"
+    },
+    "subcaption": {
+      "zh": "隐藏信息麻将 AI 的原创解释图。",
+      "en": "Original explainer for hidden-information mahjong AI."
+    },
+    "sourceId": "source-suphx-arxiv-paper",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

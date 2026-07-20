@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1989-lenet-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "LeNet 因什么任务而闻名？",
+      "en": "What kind of task made LeNet famous?"
+    },
+    "options": [
+      {
+        "zh": "识别手写数字或邮编",
+        "en": "Reading handwritten digits or ZIP codes"
+      },
+      {
+        "zh": "证明所有数学定理",
+        "en": "Solving every math theorem"
+      },
+      {
+        "zh": "只用树搜索下围棋",
+        "en": "Playing Go with tree search only"
+      },
+      {
+        "zh": "按封面颜色给书排序",
+        "en": "Sorting books by cover color"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "LeNet 展示了端到端训练的卷积网络可以识别手写内容。",
+      "en": "LeNet showed that convolutional networks trained end-to-end could recognize handwriting."
+    },
+    "sourceIds": [
+      "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+    ],
+    "assetIds": [
+      "asset-1989-lenet-zip-code-cnn"
+    ]
+  }
+]

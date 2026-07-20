@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-wasserstein-generative-adversarial-networks",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Wasserstein 生成对抗网络》",
+      "en": "Wasserstein Generative Adversarial Networks"
+    },
+    "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-improved-training-of-wasserstein-gans",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Wasserstein GAN 的改进训练》",
+      "en": "Improved Training of Wasserstein GANs"
+    },
+    "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-wasserstein-gan-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "Wasserstein GAN 概览",
+      "en": "Wasserstein GAN overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

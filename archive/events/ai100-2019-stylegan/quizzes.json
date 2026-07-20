@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2019-stylegan-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "StyleGAN 用什么控制图像合成？",
+      "en": "What does StyleGAN use to control image synthesis?"
+    },
+    "options": [
+      {
+        "zh": "调制生成器层的风格向量",
+        "en": "Style vectors that modulate generator layers"
+      },
+      {
+        "zh": "只有最近邻投票",
+        "en": "Only nearest-neighbor votes"
+      },
+      {
+        "zh": "固定定理列表",
+        "en": "A fixed theorem list"
+      },
+      {
+        "zh": "只有边缘直方图",
+        "en": "Only edge histograms"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "StyleGAN 把潜编码映射为控制不同合成层的风格。",
+      "en": "StyleGAN maps latent codes into styles that control different synthesis layers."
+    },
+    "sourceIds": [
+      "source-a-style-based-generator-architecture-for-gans"
+    ],
+    "assetIds": [
+      "asset-2019-stylegan-style-modulation"
+    ]
+  }
+]

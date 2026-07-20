@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-generative-adversarial-nets",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《生成对抗网络》",
+      "en": "Generative Adversarial Nets"
+    },
+    "url": "https://arxiv.org/abs/1406.2661",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-neurips-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "NeurIPS 论文页面",
+      "en": "NeurIPS paper page"
+    },
+    "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-goodfellow-gan-tutorial",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "古德费洛 GAN 教程",
+      "en": "Goodfellow GAN tutorial"
+    },
+    "url": "https://arxiv.org/abs/1701.00160",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-ian-goodfellow-profile",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物",
+      "en": "People"
+    },
+    "title": {
+      "zh": "伊恩·古德费洛个人网站",
+      "en": "Ian Goodfellow profile"
+    },
+    "url": "https://www.iangoodfellow.com/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

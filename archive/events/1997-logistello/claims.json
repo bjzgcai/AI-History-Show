@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Logistello：黑白棋评估函数学习 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Logistello: Learning Evaluation for Othello is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-logistello-homepage",
+      "source-murakami-vs-logistello"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Logistello 在 1997 年黑白棋对局中以 6 比 0 击败世界冠军村上健。Michael Buro 将选择性博弈树搜索、基于棋盘模式的评估、统计特征学习、开局库学习和强残局求解结合起来，说明学习得到的评估函数可以在紧凑棋盘游戏中超过手工启发式规则。</p>",
+      "en": "<p>Logistello defeated world champion Takeshi Murakami 6-0 in a 1997 Othello match. Michael Buro combined selective game-tree search, pattern-based evaluation, statistical feature learning, opening-book learning, and strong endgame solving, showing that learned evaluation could outperform hand-crafted heuristics in a compact board game.</p>"
+    },
+    "sourceIds": [
+      "source-logistello-homepage",
+      "source-murakami-vs-logistello"
+    ],
+    "status": "needs-source"
+  }
+]

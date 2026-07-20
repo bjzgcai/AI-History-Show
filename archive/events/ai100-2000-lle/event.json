@@ -1,0 +1,66 @@
+{
+  "id": "ai100-2000-lle",
+  "year": 2000,
+  "date": "2000",
+  "title": {
+    "zh": "局部线性嵌入",
+    "en": "Locally Linear Embedding"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>",
+    "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国弗洛勒姆帕克",
+      "en": "Florham Park, United States"
+    },
+    "place": {
+      "zh": "AT&T 实验室",
+      "en": "AT&T Labs"
+    },
+    "coordinates": [
+      40.7879,
+      -74.3882
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "sam-roweis",
+      "role": {
+        "zh": "LLE 共同作者",
+        "en": "Co-author of LLE"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "lawrence-saul",
+      "role": {
+        "zh": "LLE 共同作者",
+        "en": "Co-author of LLE"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

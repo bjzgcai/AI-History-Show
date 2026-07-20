@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-nearest-neighbor-pattern-classification",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《最近邻模式分类》",
+      "en": "Nearest Neighbor Pattern Classification"
+    },
+    "url": "https://doi.org/10.1109/TIT.1967.1053964",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-stanford-hosted-paper-pdf",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "斯坦福托管论文 PDF",
+      "en": "Stanford-hosted paper PDF"
+    },
+    "url": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-k-nearest-neighbors-algorithm-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "k 近邻算法概览",
+      "en": "k-nearest neighbors algorithm overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-nearest-neighbors-documentation",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-learn 最近邻文档",
+      "en": "scikit-learn nearest neighbors documentation"
+    },
+    "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "id": "2016-alphago",
+  "year": 2016,
+  "date": "2016-03",
+  "title": {
+    "zh": "AlphaGo",
+    "en": "AlphaGo"
+  },
+  "summary": {
+    "zh": "AlphaGo 将深度神经网络、强化学习和蒙特卡洛树搜索结合，在围棋中击败李世石。",
+    "en": "AlphaGo combined deep neural networks, reinforcement learning, and Monte Carlo tree search to defeat Lee Sedol in Go."
+  },
+  "description": {
+    "zh": "2016 年，Google DeepMind 的 AlphaGo 在与李世石的五番棋中获胜，展示了深度学习、搜索和强化学习在复杂博弈任务中的结合能力。",
+    "en": "In 2016, Google DeepMind’s AlphaGo defeated Lee Sedol in a five-game Go match, demonstrating how deep learning, search, and reinforcement learning could combine in a complex game domain."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "Google DeepMind",
+      "en": "Google DeepMind"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
+  },
+  "topics": [
+    "reinforcement-learning",
+    "game-ai",
+    "search",
+    "self-play"
+  ],
+  "achievementTypeIds": [
+    "system",
+    "application-breakthrough"
+  ],
+  "figures": [
+    {
+      "figureId": "david-silver",
+      "role": {
+        "zh": "AlphaGo 主要研究者",
+        "en": "AlphaGo lead researcher"
+      },
+      "organizationIds": [
+        "deepmind"
+      ]
+    },
+    {
+      "figureId": "demis-hassabis",
+      "role": {
+        "zh": "DeepMind 联合创始人",
+        "en": "DeepMind co-founder"
+      },
+      "organizationIds": [
+        "deepmind"
+      ]
+    },
+    {
+      "figureId": "aja-huang",
+      "role": {
+        "zh": "AlphaGo 研究者",
+        "en": "AlphaGo researcher"
+      },
+      "organizationIds": [
+        "deepmind"
+      ]
+    }
+  ],
+  "organizations": [
+    "deepmind"
+  ],
+  "canonical": true,
+  "review": {
+    "status": "draft"
+  }
+}

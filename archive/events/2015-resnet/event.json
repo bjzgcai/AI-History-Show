@@ -1,0 +1,84 @@
+{
+  "id": "2015-resnet",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "ResNet",
+    "en": "ResNet"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。</p>",
+    "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning at Microsoft Research Asia. ResNet used shortcut connections so very deep networks could learn residual refinements instead of full transformations, solving a practical training bottleneck and becoming a standard visual backbone. The fused version combines the deep-learning storyline's emphasis on engineering simplicity and trainability with the AI100 paper sources and residual-block explanation.</p>"
+  },
+  "location": {
+    "regionId": "china",
+    "country": {
+      "zh": "中国北京",
+      "en": "Beijing, China"
+    },
+    "place": {
+      "zh": "微软亚洲研究院",
+      "en": "Microsoft Research Asia"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "kaiming-he",
+      "role": {
+        "zh": "ResNet 第一作者",
+        "en": "ResNet lead author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "xiangyu-zhang",
+      "role": {
+        "zh": "ResNet 共同作者",
+        "en": "ResNet co-author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "shaoqing-ren",
+      "role": {
+        "zh": "ResNet 共同作者",
+        "en": "ResNet co-author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jian-sun",
+      "role": {
+        "zh": "ResNet 共同作者与通讯作者",
+        "en": "ResNet co-author and corresponding author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [
+    "ai100-2015-resnet"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

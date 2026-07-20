@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "AI-risk concern became a compact global-priority statement signed across research and public life.",
+      "zh": "AI 风险关切被压缩成一则全球优先事项声明，并获得研究界与公共领域签署。"
+    },
+    "sourceIds": [
+      "source-official-statement-on-ai-risk",
+      "source-managing-extreme-ai-risks"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement.",
+      "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。"
+    },
+    "sourceIds": [
+      "source-official-statement-on-ai-risk",
+      "source-managing-extreme-ai-risks"
+    ],
+    "status": "needs-source"
+  }
+]

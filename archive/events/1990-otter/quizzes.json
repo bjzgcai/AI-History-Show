@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1990-otter-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Otter 实用定理证明风格的核心是什么？",
+      "en": "What was central to Otter's practical theorem-proving style?"
+    },
+    "options": [
+      {
+        "zh": "结合归结与参数调解的受控 given-clause 搜索",
+        "en": "A controlled given-clause search with resolution and paramodulation"
+      },
+      {
+        "zh": "只有固定的棋类开局库",
+        "en": "Only a fixed chess opening book"
+      },
+      {
+        "zh": "神经图像分类器",
+        "en": "A neural image classifier"
+      },
+      {
+        "zh": "随机文本生成器",
+        "en": "A random text generator"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Otter 用归结式推理、等式推理、索引和搜索控制启发式来搜索一阶子句空间。",
+      "en": "Otter searched first-order clause spaces using resolution-style inference, equality reasoning, indexing, and search-control heuristics."
+    },
+    "sourceIds": [
+      "source-otter-3-3-reference-manual"
+    ],
+    "assetIds": [
+      "asset-1990-otter-input-clauses"
+    ]
+  }
+]

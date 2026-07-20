@@ -1,0 +1,286 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1994-chinook",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Chinook 跳棋程序",
+    "en": "Chinook"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
+    "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "chinook",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Science",
+        "zh": "《科学》"
+      },
+      "title": {
+        "en": "Checkers Is Solved",
+        "zh": "跳棋已被求解"
+      },
+      "description": {
+        "en": "Science record for the weak solution of checkers and Chinook's endgame database work.",
+        "zh": "《科学》 记录：跳棋弱求解与 Chinook 残局数据库工作。"
+      },
+      "url": "https://www.science.org/doi/10.1126/science.1144079",
+      "source": "https://www.science.org/doi/10.1126/science.1144079",
+      "action": {
+        "en": "Open Science record",
+        "zh": "打开 《科学》 记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1994-chinook-jonathan-schaeffer-external",
+    "asset-1994-chinook-homepage",
+    "asset-1994-chinook-endgame-database",
+    "asset-1994-chinook-perfect-play"
+  ],
+  "sourceIds": [
+    "source-chinook-project-home",
+    "source-checkers-is-solved",
+    "source-chinook-publications",
+    "source-jonathan-schaeffer-portrait"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1994-chinook-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。 这段背景帮助观众把Chinook 跳棋程序放回当时的技术问题和研究重点中理解。",
+        "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction. This context helps viewers place Chinook in the technical problems and research priorities of its time."
+      },
+      "sourceIds": [
+        "source-chinook-project-home"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。 关键机制是alpha-beta 搜索加残局数据库，它把资料线索与可见的演示行为连接起来。",
+        "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes. The key mechanism is Alpha-beta search plus endgame databases, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-chinook-project-home"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Chinook 视为游戏求解研究和高性能搜索的里程碑。它的长期影响在于展示专家评估、alpha-beta 搜索、开局知识和残局数据库如何结合并逼近完美对弈。",
+        "en": "Experts generally treat Chinook as a landmark in game-solving research and high-performance search. Its long-term legacy is showing how expert evaluation, alpha-beta search, opening knowledge, and endgame databases can combine to approach perfect play."
+      },
+      "sourceIds": [
+        "source-chinook-project-home"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jonathan Schaeffer",
+        "zh": "乔纳森·谢弗"
+      },
+      "role": {
+        "en": "Leader of the Chinook team",
+        "zh": "Chinook 团队负责人"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Perfect play in checkers is a draw\"",
+    "zh": "\"跳棋完美对弈结果为和棋\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Checkers Is Solved",
+      "zh": "跳棋已被求解"
+    },
+    "workAuthors": {
+      "en": "Jonathan Schaeffer et al.",
+      "zh": "乔纳森·谢弗等"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.1144079"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game / Chinook",
+    "zh": "BenchCouncil AI100：游戏 / Chinook 跳棋程序"
+  },
+  "quoteAttribution": {
+    "en": "<em>Checkers Is Solved</em>, Jonathan Schaeffer et al.",
+    "zh": "《跳棋已被求解》, 乔纳森·谢弗等"
+  },
+  "achievement": {
+    "area": {
+      "en": "Game",
+      "zh": "游戏"
+    },
+    "method": {
+      "en": "Alpha-beta search plus endgame databases",
+      "zh": "alpha-beta 搜索加残局数据库"
+    },
+    "artifact": {
+      "en": "Chinook checkers system",
+      "zh": "Chinook 跳棋系统"
+    },
+    "material": {
+      "en": "University of Alberta Chinook pages and Science paper",
+      "zh": "阿尔伯塔大学 Chinook 页面与 《科学》 论文"
+    },
+    "demo": {
+      "en": "Connect a move to a solved endgame table",
+      "zh": "把一步棋连接到已求解残局表"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Opening Book",
+          "zh": "开局库"
+        },
+        "text": {
+          "en": "Human and computer game knowledge narrows early choices.",
+          "zh": "人类与计算机棋谱知识缩小早期选择。"
+        }
+      },
+      {
+        "label": {
+          "en": "Endgame Database",
+          "zh": "残局数据库"
+        },
+        "text": {
+          "en": "Late positions are precomputed to proven outcomes.",
+          "zh": "后期局面被预计算为可证明结果。"
+        }
+      },
+      {
+        "label": {
+          "en": "Weak Solution",
+          "zh": "弱求解"
+        },
+        "text": {
+          "en": "The game-theoretic value is known from the starting position.",
+          "zh": "从初始局面可知游戏理论值。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "Strachey's Draughts",
+        "zh": "斯特雷奇 跳棋程序"
+      },
+      {
+        "en": "AlphaGo",
+        "zh": "AlphaGo"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Alberta, Canada",
+        "zh": "加拿大阿尔伯塔省"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Search moves",
+        "zh": "搜索走法"
+      },
+      {
+        "en": "Probe table",
+        "zh": "查询残局表"
+      },
+      {
+        "en": "Prove draw",
+        "zh": "证明和棋"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Science",
+          "zh": "《科学》"
+        },
+        "title": {
+          "en": "Checkers Is Solved",
+          "zh": "跳棋已被求解"
+        },
+        "description": {
+          "en": "Science record for the weak solution of checkers and Chinook's endgame database work.",
+          "zh": "《科学》 记录：跳棋弱求解与 Chinook 残局数据库工作。"
+        },
+        "url": "https://www.science.org/doi/10.1126/science.1144079",
+        "source": "https://www.science.org/doi/10.1126/science.1144079",
+        "action": {
+          "en": "Open Science record",
+          "zh": "打开 《科学》 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Alberta",
+      "zh": "阿尔伯塔大学"
+    },
+    "country": {
+      "en": "Alberta, Canada",
+      "zh": "加拿大阿尔伯塔省"
+    },
+    "coordinates": [
+      53.5232,
+      -113.5263
+    ]
+  }
+}

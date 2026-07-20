@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2016-densenet-people-01",
+    "type": "image",
+    "path": "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "DenseNet 作者团队",
+      "en": "DenseNet author group"
+    },
+    "subcaption": {
+      "zh": "DenseNet 背后的研究者。",
+      "en": "Researchers behind DenseNet."
+    },
+    "sourceId": "source-densely-connected-convolutional-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2016-densenet-architecture-01",
+    "type": "image",
+    "path": "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "密集连接",
+      "en": "Dense connectivity"
+    },
+    "subcaption": {
+      "zh": "项目使用的架构图。",
+      "en": "Architecture visual used by the project."
+    },
+    "sourceId": "source-densely-connected-convolutional-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2016-densenet-people-02",
+    "type": "image",
+    "path": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-densely-connected-convolutional-networks",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

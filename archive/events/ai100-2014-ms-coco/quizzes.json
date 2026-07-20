@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2014-ms-coco-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "MS COCO 对视觉基准特别有用的原因是什么？",
+      "en": "What made MS COCO especially useful for vision benchmarks?"
+    },
+    "options": [
+      {
+        "zh": "上下文中的物体和多种标注类型",
+        "en": "Objects in context with multiple annotation types"
+      },
+      {
+        "zh": "只有合成棋盘",
+        "en": "Only synthetic chess boards"
+      },
+      {
+        "zh": "只有非结构化音频",
+        "en": "Only unstructured audio"
+      },
+      {
+        "zh": "单个定理证明",
+        "en": "A single theorem proof"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "COCO 在日常场景上支持检测、分割、字幕等任务。",
+      "en": "COCO supports detection, segmentation, captions, and related tasks on everyday scenes."
+    },
+    "sourceIds": [
+      "source-microsoft-coco-common-objects-in-context"
+    ],
+    "assetIds": [
+      "asset-2014-ms-coco-context-dataset"
+    ]
+  }
+]

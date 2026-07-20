@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-2015-googlenet-inception-christian-szegedy",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "克里斯蒂安·塞格迪肖像",
+      "en": "Christian Szegedy portrait"
+    },
+    "subcaption": {
+      "zh": "批归一化共同作者。",
+      "en": "Co-author of Batch Normalization."
+    },
+    "sourceId": "source-batch-normalization",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-batch-normalization-activation-scale",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "激活归一化",
+      "en": "Activation normalization"
+    },
+    "subcaption": {
+      "zh": "关于批统计量与可学习缩放的本地原创解释图。",
+      "en": "Original local explainer of batch statistics and learned scale."
+    },
+    "sourceId": "source-batch-normalization",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2022-stable-diffusion-latent-denoise",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "潜扩散去噪",
+      "en": "Latent diffusion denoising"
+    },
+    "subcaption": {
+      "zh": "关于文本引导潜空间去噪的本地原创解释图。",
+      "en": "Original local explainer of text-guided latent denoising."
+    },
+    "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2022-stable-diffusion-robin-update-5",
+    "type": "image",
+    "path": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "Stable Diffusion 外部参考图",
+      "en": "Stable Diffusion external reference image"
+    },
+    "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1985-bayesian-network-judea-pearl",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "朱迪亚·珀尔 肖像",
+      "en": "Judea Pearl portrait"
+    },
+    "subcaption": {
+      "zh": "来自 维基共享资源 NIPS 2013 图片的人物图。",
+      "en": "Portrait from Wikimedia Commons NIPS 2013 image."
+    },
+    "sourceId": "source-bayesian-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Creative Commons license stated on Commons file page.",
+        "en": "Creative Commons license stated on Commons file page."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1985-bayesian-network-dag",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "贝叶斯网络 DAG",
+      "en": "Bayesian network DAG"
+    },
+    "subcaption": {
+      "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Bayesian Network, based on the listed source material."
+    },
+    "sourceId": "source-bayesian-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1985-bayesian-network-message-pass",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "证据消息传递",
+      "en": "Evidence message passing"
+    },
+    "subcaption": {
+      "zh": "贝叶斯网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Bayesian Network, based on the listed source material."
+    },
+    "sourceId": "source-bayesian-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

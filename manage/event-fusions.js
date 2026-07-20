@@ -1,7 +1,8 @@
-// Shared content fusions for events that appear in both the deep-learning
-// storyline and the BenchCouncil AI100 storyline.
+// LEGACY — rollback/comparison/migration only. Not consumed by the production Archive compiler.
+// Shared content fusions for events in the explicit Legacy generator and parity tools.
+// Production identity and presentation come from canonical Archive events and storyline variants.
 //
-// The generated milestones should present the same event content regardless of
+// The generated Legacy milestones should present the same event content regardless of
 // the entry point. Keep sources/key concepts/visual modules from AI100, keep
 // videos from the deep-learning chapter when available, and use these fused
 // descriptions for the main body text.

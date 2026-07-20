@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1966-eliza-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "ELIZA 没有深层理解，为什么仍显得像在对话？",
+      "en": "Why did ELIZA feel conversational despite having no deep understanding?"
+    },
+    "options": [
+      {
+        "zh": "它用脚本把用户短语反射成问题",
+        "en": "It used scripts to reflect user phrases back as questions"
+      },
+      {
+        "zh": "它在网页上训练了 Transformer",
+        "en": "It trained a transformer on the web"
+      },
+      {
+        "zh": "它解决了 ImageNet 分类",
+        "en": "It solved ImageNet classification"
+      },
+      {
+        "zh": "它使用蒙特卡洛树搜索",
+        "en": "It used Monte Carlo tree search"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "ELIZA 的 DOCTOR 脚本依赖模式匹配和回应模板，让用户持续提供语义。",
+      "en": "ELIZA’s DOCTOR script relied on pattern matching and response templates that made users continue supplying meaning."
+    },
+    "sourceIds": [
+      "source-eliza-cacm-paper"
+    ],
+    "assetIds": [
+      "asset-1966-eliza-joseph-weizenbaum"
+    ]
+  }
+]

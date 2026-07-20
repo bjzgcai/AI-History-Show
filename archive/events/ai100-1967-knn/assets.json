@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-1967-knn-neighbor-vote",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "最近邻投票",
+      "en": "Nearest-neighbor vote"
+    },
+    "subcaption": {
+      "zh": "关于最近邻投票的本地原创解释图。",
+      "en": "Original local explainer of nearest-neighbor voting."
+    },
+    "sourceId": "source-nearest-neighbor-pattern-classification",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-1967-knn-2012-04-12-obit-cover",
+    "type": "image",
+    "path": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "KNN 最近邻 外部参考图",
+      "en": "KNN external reference image"
+    },
+    "sourceId": "source-nearest-neighbor-pattern-classification",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

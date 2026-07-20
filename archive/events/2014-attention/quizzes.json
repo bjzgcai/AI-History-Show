@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2014-neural-machine-translation-attention-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "神经注意力为机器翻译加入了什么？",
+      "en": "What did neural attention add to machine translation?"
+    },
+    "options": [
+      {
+        "zh": "源词与目标词之间的学习型对齐",
+        "en": "Learned alignment between source and target words"
+      },
+      {
+        "zh": "固定棋步列表",
+        "en": "A fixed list of chess moves"
+      },
+      {
+        "zh": "只有图像去噪",
+        "en": "Only image denoising"
+      },
+      {
+        "zh": "化学规则数据库",
+        "en": "A chemical rule database"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "注意力让解码器针对每个目标词为源语言位置分配不同权重。",
+      "en": "Attention lets the decoder weight source positions differently for each target word."
+    },
+    "sourceIds": [
+      "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
+    ],
+    "assetIds": [
+      "asset-geoffrey-hinton"
+    ]
+  }
+]

@@ -1,0 +1,352 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2021-swin-transformer",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Swin Transformer",
+    "en": "Swin Transformer"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>",
+    "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "CVF Open Access",
+        "zh": "CVF 开放论文库"
+      },
+      "title": {
+        "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+        "zh": "Swin Transformer：使用移位窗口的层级视觉 Transformer"
+      },
+      "description": {
+        "en": "CVF Open Access source card for Swin Transformer.",
+        "zh": "CVF 开放论文库 的Swin Transformer资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/2103.14030",
+      "source": "https://arxiv.org/abs/2103.14030",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2021-swin-transformer-zeliu",
+    "asset-2021-swin-transformer-shifted-windows"
+  ],
+  "sourceIds": [
+    "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+    "source-iccv-open-access-paper-page",
+    "source-microsoft-swin-transformer-repository"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2021-swin-transformer-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。",
+        "en": "Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features."
+      },
+      "sourceIds": [
+        "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Image patches are grouped into windows, attention runs locally, and shifted windows let neighboring regions exchange information across layers. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Swin Transformer 视为让视觉 Transformer 超越图像分类并进入密集预测的重要一步。它的长期影响在于层级移位窗口设计被许多密集预测系统复用。",
+        "en": "Experts generally treat Swin Transformer as a key step in making vision transformers competitive beyond image classification. Its long-term legacy is the hierarchical shifted-window design used by many dense prediction systems."
+      },
+      "sourceIds": [
+        "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ze Liu",
+        "zh": "刘泽"
+      },
+      "role": {
+        "en": "Swin Transformer lead author",
+        "zh": "Swin Transformer 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Hierarchical vision Transformer using shifted windows\"",
+    "zh": "\"使用移位窗口的层级视觉 Transformer\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "zh": "Swin Transformer：使用移位窗口的层级视觉 Transformer"
+    },
+    "workAuthors": {
+      "en": "Ze Liu et al., ICCV, 2021",
+      "zh": "刘泽等，ICCV，2021"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/2103.14030"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Swin Transformer: Hierarchical Vision Transformer using Shifted Windows</em>, Ze Liu et al., ICCV, 2021",
+    "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》, 刘泽等，ICCV，2021"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Shifted-window hierarchical attention",
+      "zh": "移位窗口层级注意力"
+    },
+    "artifact": {
+      "en": "Swin Transformer vision backbone",
+      "zh": "Swin Transformer 视觉骨干网络"
+    },
+    "material": {
+      "en": "ICCV paper and official code release",
+      "zh": "ICCV 论文与官方代码发布"
+    },
+    "demo": {
+      "en": "Image patches are grouped into windows, attention runs locally, and shifted windows let neighboring regions exchange information across layers.",
+      "zh": "图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Shifted Windows",
+          "zh": "移位窗口"
+        },
+        "text": {
+          "en": "Local attention windows are offset between stages.",
+          "zh": "局部注意力窗口在阶段之间错位。"
+        }
+      },
+      {
+        "label": {
+          "en": "Hierarchy",
+          "zh": "层级结构"
+        },
+        "text": {
+          "en": "Patch merging builds multi-scale feature maps.",
+          "zh": "图像块合并构建多尺度特征图。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "Vision Transformer",
+          "zh": "视觉 Transformer"
+        },
+        "zh": {
+          "en": "Vision Transformer",
+          "zh": "视觉 Transformer"
+        }
+      },
+      {
+        "en": {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        },
+        "zh": {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        }
+      },
+      {
+        "en": {
+          "en": "FPN",
+          "zh": "FPN"
+        },
+        "zh": {
+          "en": "FPN",
+          "zh": "FPN"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "China",
+          "zh": "中国"
+        },
+        "zh": {
+          "en": "China",
+          "zh": "中国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Patch grid",
+          "zh": "图像块网格"
+        },
+        "zh": {
+          "en": "Patch grid",
+          "zh": "图像块网格"
+        }
+      },
+      {
+        "en": {
+          "en": "Window attention",
+          "zh": "窗口注意力"
+        },
+        "zh": {
+          "en": "Window attention",
+          "zh": "窗口注意力"
+        }
+      },
+      {
+        "en": {
+          "en": "Shift and merge",
+          "zh": "移位与合并"
+        },
+        "zh": {
+          "en": "Shift and merge",
+          "zh": "移位与合并"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICCV paper and official code release",
+          "zh": "ICCV 论文与官方代码发布"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Image patches are grouped into windows, attention runs locally, and shifted windows let neighboring regions exchange information across layers.",
+          "zh": "图像块被分组为窗口，注意力先在局部运行，移位窗口让相邻区域在层与层之间交换信息。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVF Open Access",
+          "zh": "CVF 开放论文库"
+        },
+        "title": {
+          "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+          "zh": "Swin Transformer：使用移位窗口的层级视觉 Transformer"
+        },
+        "description": {
+          "en": "CVF Open Access source card for Swin Transformer.",
+          "zh": "CVF 开放论文库 的Swin Transformer资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/2103.14030",
+        "source": "https://arxiv.org/abs/2103.14030",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Microsoft Research Asia",
+      "zh": "微软亚洲研究院"
+    },
+    "country": {
+      "en": "Beijing, China",
+      "zh": "中国北京"
+    },
+    "coordinates": [
+      39.9042,
+      116.4074
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1973-prolog-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Prolog 查询主要会触发什么？",
+      "en": "What does a Prolog query mainly trigger?"
+    },
+    "options": [
+      {
+        "zh": "对能证明查询的事实和规则进行搜索",
+        "en": "A search for facts and rules that prove the query"
+      },
+      {
+        "zh": "固定图像卷积",
+        "en": "A fixed image convolution"
+      },
+      {
+        "zh": "随机树集成",
+        "en": "A random tree ensemble"
+      },
+      {
+        "zh": "只面向 GPU 的矩阵基准",
+        "en": "A GPU-only matrix benchmark"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Prolog 通过将项与事实和规则合一来求值查询，并在需要时回溯尝试其他路径。",
+      "en": "Prolog evaluates queries by unifying terms with facts and rules, then backtracking through alternatives when needed."
+    },
+    "sourceIds": [
+      "source-the-birth-of-prolog"
+    ],
+    "assetIds": [
+      "asset-1973-prolog-alain-colmerauer"
+    ]
+  }
+]

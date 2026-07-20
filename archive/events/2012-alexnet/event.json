@@ -1,0 +1,84 @@
+{
+  "id": "2012-alexnet",
+  "year": 2012,
+  "date": "2012",
+  "title": {
+    "zh": "AlexNet 与 ImageNet 突破",
+    "en": "AlexNet and the ImageNet Breakthrough"
+  },
+  "summary": {
+    "zh": "AlexNet 以深度卷积网络、GPU 训练、ReLU、数据增强和 dropout 在 ImageNet 上取得突破性结果。",
+    "en": "AlexNet achieved a breakthrough on ImageNet by combining deep convolutional networks, GPU training, ReLU, data augmentation, and dropout."
+  },
+  "description": {
+    "zh": "2012 年，Alex Krizhevsky、Ilya Sutskever 和 Geoffrey Hinton 的 AlexNet 在 ImageNet 竞赛中显著降低图像分类错误率，使深度卷积神经网络成为现代计算机视觉的核心路线。",
+    "en": "In 2012, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton introduced AlexNet, which substantially reduced ImageNet classification error and made deep convolutional networks central to modern computer vision."
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大",
+      "en": "Canada"
+    },
+    "place": {
+      "zh": "多伦多大学",
+      "en": "University of Toronto"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  },
+  "topics": [
+    "deep-learning",
+    "computer-vision",
+    "convolutional-networks"
+  ],
+  "achievementTypeIds": [
+    "model-architecture",
+    "application-breakthrough"
+  ],
+  "figures": [
+    {
+      "figureId": "alex-krizhevsky",
+      "role": {
+        "zh": "AlexNet 主要作者",
+        "en": "AlexNet lead author"
+      },
+      "organizationIds": [
+        "university-of-toronto"
+      ]
+    },
+    {
+      "figureId": "ilya-sutskever",
+      "role": {
+        "zh": "AlexNet 共同作者",
+        "en": "AlexNet co-author"
+      },
+      "organizationIds": [
+        "university-of-toronto"
+      ]
+    },
+    {
+      "figureId": "geoffrey-hinton",
+      "role": {
+        "zh": "AlexNet 共同作者与导师",
+        "en": "AlexNet co-author and advisor"
+      },
+      "organizationIds": [
+        "university-of-toronto"
+      ]
+    }
+  ],
+  "organizations": [
+    "university-of-toronto"
+  ],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 3 样例事件，来源于 legacy deep-learning 与 AI100 数据。",
+      "en": "Step 3 sample event sourced from legacy deep-learning and AI100 data."
+    }
+  }
+}

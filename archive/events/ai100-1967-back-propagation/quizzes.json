@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1967-back-propagation-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "反向传播把什么沿网络向后传递？",
+      "en": "What does back-propagation send backward through a network?"
+    },
+    "options": [
+      {
+        "zh": "用于权重更新的误差梯度",
+        "en": "Error gradients for weight updates"
+      },
+      {
+        "zh": "只有原始视频帧",
+        "en": "Raw video frames only"
+      },
+      {
+        "zh": "数据库列列表",
+        "en": "A list of database columns"
+      },
+      {
+        "zh": "不训练直接给最终答案",
+        "en": "The final answer without training"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "反向传播用梯度把贡献或责任分配给更早的权重。",
+      "en": "Back-propagation uses gradients to assign credit or blame to earlier weights."
+    },
+    "sourceIds": [
+      "source-learning-representations-by-back-propagating-errors"
+    ],
+    "assetIds": [
+      "asset-david-rumelhart"
+    ]
+  }
+]

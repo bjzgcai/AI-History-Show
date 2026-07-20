@@ -1,0 +1,225 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1958-lisp",
+  "displayTitle": {
+    "zh": "LISP",
+    "en": "LISP"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "eval",
+  "assetIds": [
+    "asset-1958-lisp-john-mccarthy",
+    "asset-1958-lisp-eval-flow"
+  ],
+  "sourceIds": [
+    "source-recursive-functions-of-symbolic-expressions",
+    "source-lisp-i-programmer-s-manual",
+    "source-history-of-lisp"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1958-lisp-ai100",
+  "commentarySections": [
+    {
+      "id": "published-paper",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "麦卡锡 1960 年的 CACM 论文形式化了符号表达式与递归函数；LISP I 程序员手册 则把这个思想变成可运行系统。二者能清楚展示从数学记法到实验室工具的转化。",
+        "en": "McCarthy's 1960 CACM paper formalized symbolic expressions and recursive functions; the LISP I Programmer's Manual turned the idea into a working system. Together they show the path from mathematical notation to laboratory tool."
+      },
+      "sourceIds": [
+        "source-recursive-functions-of-symbolic-expressions"
+      ]
+    },
+    {
+      "id": "api-like-primitives",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "最适合展示的是它极小的接口：CONS、CAR、CDR、QUOTE、COND 和 EVAL。这些原语让代码和数据共享同一种符号形态，也解释了为什么 LISP 会成为早期 AI 系统的自然语言。",
+        "en": "The memorable interface is tiny: CONS, CAR, CDR, QUOTE, COND and EVAL. Those primitives let code and data share the same symbolic form, which is why LISP became a natural language for early AI systems."
+      },
+      "sourceIds": [
+        "source-recursive-functions-of-symbolic-expressions"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 LISP 视为符号 AI 和交互式编程的定义性语言之一。它的长期影响在于“代码即数据”、递归符号处理，以及由此形成并影响后续编程语言设计的 AI 系统生态。",
+        "en": "Experts generally treat LISP as one of the defining languages of symbolic AI and interactive programming. Its long-term legacy is the code-as-data idea, recursive symbolic processing, and an ecosystem of AI systems that shaped later programming-language design."
+      },
+      "sourceIds": [
+        "source-recursive-functions-of-symbolic-expressions"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John McCarthy",
+        "zh": "约翰·麦卡锡"
+      },
+      "role": {
+        "en": "Designer of LISP",
+        "zh": "LISP 设计者"
+      },
+      "avatar": "resources/images/figures/historical/john-mccarthy-1956-v2.png",
+      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Recursive functions of symbolic expressions became a working language for artificial intelligence.\"",
+    "zh": "\"符号表达式的递归函数成为人工智能可以实际使用的语言。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I",
+      "zh": "符号表达式的递归函数及其机器计算（第一部分）"
+    },
+    "workAuthors": {
+      "en": "John McCarthy, Communications of the ACM, 1960",
+      "zh": "约翰·麦卡锡, 《ACM 通讯》, 1960"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www-formal.stanford.edu/jmc/recursive.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Language / LISP",
+    "zh": "BenchCouncil AI100：语言 / LISP"
+  },
+  "quoteAttribution": {
+    "en": "<em>Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I</em>, John McCarthy, Communications of the ACM, 1960",
+    "zh": "《符号表达式的递归函数及其机器计算（第一部分）》, 约翰·麦卡锡, 《ACM 通讯》, 1960"
+  },
+  "achievement": {
+    "area": {
+      "en": "Language",
+      "zh": "语言"
+    },
+    "method": {
+      "en": "Symbolic recursion",
+      "zh": "符号递归"
+    },
+    "artifact": {
+      "en": "S-expression evaluator",
+      "zh": "S 表达式求值器"
+    },
+    "material": {
+      "en": "Paper + manual",
+      "zh": "论文 + 手册"
+    },
+    "demo": {
+      "en": "EVAL reduction",
+      "zh": "EVAL 归约"
+    },
+    "demoSteps": [
+      {
+        "en": "S-expression",
+        "zh": "S 表达式"
+      },
+      {
+        "en": "Primitive operators",
+        "zh": "基础原语"
+      },
+      {
+        "en": "Code as data",
+        "zh": "代码即数据"
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "PROLOG",
+        "zh": "PROLOG"
+      },
+      {
+        "en": "ELIZA",
+        "zh": "ELIZA"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Stanford / John McCarthy",
+          "zh": "斯坦福大学 / 约翰·麦卡锡"
+        },
+        "title": {
+          "en": "Recursive Functions of Symbolic Expressions",
+          "zh": "《符号表达式的递归函数》原文"
+        },
+        "description": {
+          "en": "Author-hosted Stanford page for McCarthy's original LISP paper, first published in Communications of the ACM in April 1960.",
+          "zh": "麦卡锡 在 斯坦福大学 个人站点保存的 LISP 原始论文页面，论文最初发表于 1960 年 4 月的 《ACM 通讯》。"
+        },
+        "url": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+        "source": "https://www-formal.stanford.edu/jmc/recursive/recursive.html",
+        "license": {
+          "en": "Author-hosted web access; reuse rights for the text are not stated.",
+          "zh": "作者托管的网页访问版本；文本复用权利未说明。"
+        },
+        "usage": {
+          "en": "Source material / Original paper reference",
+          "zh": "原始材料入口 / 原始论文参考"
+        },
+        "action": {
+          "en": "Open paper source",
+          "zh": "打开论文原文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "MIT",
+      "zh": "麻省理工学院"
+    },
+    "country": {
+      "en": "MA, United States",
+      "zh": "美国，马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  }
+}

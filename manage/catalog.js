@@ -1,6 +1,6 @@
-// 文件A: 展示目录配置（由管理页面生成）
-// 控制展示哪些分类、哪些核心事件，以及展示顺序
-// 修改此文件后运行 `node manage/generate.js` 重新生成 milestones-data.js
+// LEGACY — rollback/comparison/migration only.
+// Production storyline membership and order live in archive/storylines/*.json.
+// This file is consumed only by explicit Legacy tooling such as `npm run generate:legacy`.
 
 module.exports = {
   "categories": [

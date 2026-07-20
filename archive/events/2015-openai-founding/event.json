@@ -1,0 +1,65 @@
+{
+  "id": "2015-openai-founding",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "OpenAI 宣告成立",
+    "en": "The Founding of OpenAI"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。",
+    "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "旧金山 AI 研究生态",
+      "en": "San Francisco AI research ecosystem"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "openai-founding-team",
+      "name": {
+        "en": "OpenAI founding team",
+        "zh": "OpenAI 创始团队"
+      },
+      "role": {
+        "en": "Nonprofit AI research initiative announced in 2015",
+        "zh": "2015 年宣告成立的非营利 AI 研究计划"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

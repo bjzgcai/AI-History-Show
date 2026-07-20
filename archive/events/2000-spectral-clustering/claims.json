@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "谱聚类 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Spectral Clustering is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-normalized-cuts-and-image-segmentation",
+      "source-on-spectral-clustering-analysis-and-an-algorithm"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>",
+      "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>"
+    },
+    "sourceIds": [
+      "source-normalized-cuts-and-image-segmentation",
+      "source-on-spectral-clustering-analysis-and-an-algorithm"
+    ],
+    "status": "needs-source"
+  }
+]

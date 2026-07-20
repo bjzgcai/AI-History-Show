@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1965-resolution-method-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "归结方法在否定目标结论后试图推出什么？",
+      "en": "What does the resolution method try to derive after negating the target claim?"
+    },
+    "options": [
+      {
+        "zh": "空子句，表示矛盾",
+        "en": "The empty clause, showing contradiction"
+      },
+      {
+        "zh": "更大的图像数据集",
+        "en": "A larger image dataset"
+      },
+      {
+        "zh": "随机 dropout 掩码",
+        "en": "A random dropout mask"
+      },
+      {
+        "zh": "国际象棋开局库",
+        "en": "A chess opening book"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "归结通常作为反驳证明使用：如果前提加否定目标能推出空子句，原目标就成立。",
+      "en": "Resolution is usually used as refutation: if the premises plus the negated goal imply the empty clause, the original goal follows."
+    },
+    "sourceIds": [
+      "source-a-machine-oriented-logic-based-on-the-resolution-principle"
+    ],
+    "assetIds": [
+      "asset-1965-resolution-method-john-alan-robinson"
+    ]
+  }
+]

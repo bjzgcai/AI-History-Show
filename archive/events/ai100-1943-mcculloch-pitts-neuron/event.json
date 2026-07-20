@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1943-mcculloch-pitts-neuron",
+  "year": 1943,
+  "date": "1943",
+  "title": {
+    "zh": "麦卡洛克-皮茨神经元",
+    "en": "McCulloch-Pitts Neuron"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>",
+    "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国芝加哥",
+      "en": "Chicago, United States"
+    },
+    "place": {
+      "zh": "伊利诺伊大学芝加哥分校",
+      "en": "University of Illinois at Chicago"
+    },
+    "coordinates": [
+      41.8719,
+      -87.6493
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "warren-mcculloch",
+      "role": {
+        "zh": "逻辑神经元模型共同作者",
+        "en": "Co-author of the logical neuron model"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "walter-pitts",
+      "role": {
+        "zh": "逻辑神经元模型共同作者",
+        "en": "Co-author of the logical neuron model"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

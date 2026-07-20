@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "批归一化 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Batch Normalization is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-batch-normalization",
+      "source-batch-normalization-on-arxiv"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>",
+      "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>"
+    },
+    "sourceIds": [
+      "source-batch-normalization",
+      "source-batch-normalization-on-arxiv"
+    ],
+    "status": "needs-source"
+  }
+]

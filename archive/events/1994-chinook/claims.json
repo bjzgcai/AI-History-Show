@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Chinook 跳棋程序 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Chinook is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-chinook-project-home",
+      "source-checkers-is-solved"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
+      "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+    },
+    "sourceIds": [
+      "source-chinook-project-home",
+      "source-checkers-is-solved"
+    ],
+    "status": "needs-source"
+  }
+]

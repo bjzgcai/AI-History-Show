@@ -1,0 +1,58 @@
+{
+  "id": "1999-sift",
+  "year": "1999",
+  "date": "1999",
+  "title": {
+    "zh": "SIFT",
+    "en": "SIFT"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>",
+    "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "zh": "加拿大不列颠哥伦比亚省",
+      "en": "British Columbia, Canada"
+    },
+    "place": {
+      "zh": "不列颠哥伦比亚大学",
+      "en": "University of British Columbia"
+    },
+    "coordinates": [
+      49.2606,
+      -123.246
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "david-lowe",
+      "role": {
+        "zh": "SIFT 发明者",
+        "en": "Inventor of SIFT"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

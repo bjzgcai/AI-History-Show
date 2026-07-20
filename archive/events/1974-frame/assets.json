@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1974-frame-marvin-minsky",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "马文·明斯基 肖像",
+      "en": "Marvin Minsky portrait"
+    },
+    "subcaption": {
+      "zh": "来自 麻省理工学院 新闻 讣闻的人物图。",
+      "en": "Portrait from MIT News obituary."
+    },
+    "sourceId": "source-a-framework-for-representing-knowledge",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "麻省理工学院 新闻 image; terms stated on 麻省理工学院 新闻 media page.",
+        "en": "MIT News image; terms stated on MIT News media page."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1974-frame-slot-card",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "槽与默认值框架卡",
+      "en": "Slot-default frame card"
+    },
+    "subcaption": {
+      "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Frame, based on the listed source material."
+    },
+    "sourceId": "source-a-framework-for-representing-knowledge",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1974-frame-inheritance",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "框架继承草图",
+      "en": "Frame inheritance sketch"
+    },
+    "subcaption": {
+      "zh": "框架 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Frame, based on the listed source material."
+    },
+    "sourceId": "source-a-framework-for-representing-knowledge",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

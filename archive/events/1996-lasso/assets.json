@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1996-lasso-robert-tibshirani",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "罗伯特·蒂布希拉尼 肖像",
+      "en": "Robert Tibshirani portrait"
+    },
+    "subcaption": {
+      "zh": "来自 斯坦福个人资料库 的人物照片。",
+      "en": "Profile photo from Stanford Profiles."
+    },
+    "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Institution profile photo; rights not stated.",
+        "en": "Institution profile photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1996-lasso-l1-constraint",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "L1 约束几何",
+      "en": "L1 constraint geometry"
+    },
+    "subcaption": {
+      "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Lasso, based on the related source material."
+    },
+    "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1996-lasso-coefficient-path",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "系数路径",
+      "en": "Coefficient path"
+    },
+    "subcaption": {
+      "zh": "Lasso 回归 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Lasso, based on the related source material."
+    },
+    "sourceId": "source-regression-shrinkage-and-selection-via-the-lasso",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

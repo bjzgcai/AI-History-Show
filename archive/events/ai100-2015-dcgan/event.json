@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2015-dcgan",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "zh": "DCGAN",
+    "en": "DCGAN"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。</p>",
+    "en": "<p>DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "New York, United States",
+      "en": "New York, United States"
+    },
+    "place": {
+      "zh": "Facebook AI Research",
+      "en": "Facebook AI Research"
+    },
+    "coordinates": [
+      40.7128,
+      -74.006
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "alec-radford",
+      "role": {
+        "zh": "DCGAN 主要作者",
+        "en": "DCGAN lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

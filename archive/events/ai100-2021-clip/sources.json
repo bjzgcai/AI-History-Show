@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-learning-transferable-visual-models-from-natural-language-supervision",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《从自然语言监督中学习可迁移视觉模型》",
+      "en": "Learning Transferable Visual Models From Natural Language Supervision"
+    },
+    "url": "https://arxiv.org/abs/2103.00020",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-icml-clip-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICML CLIP 论文页面",
+      "en": "ICML CLIP paper page"
+    },
+    "url": "https://proceedings.mlr.press/v139/radford21a.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-openai-clip-blog-post",
+    "type": "official-page",
+    "label": {
+      "zh": "出版页",
+      "en": "Publication"
+    },
+    "title": {
+      "zh": "OpenAI CLIP 博客",
+      "en": "OpenAI CLIP blog post"
+    },
+    "url": "https://openai.com/index/clip/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-openai-clip-github-repository",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "OpenAI CLIP 代码仓库",
+      "en": "OpenAI CLIP GitHub repository"
+    },
+    "url": "https://github.com/openai/CLIP",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2017-wasserstein-gan",
+  "year": 2017,
+  "date": "2017",
+  "title": {
+    "zh": "Wasserstein GAN",
+    "en": "Wasserstein GAN"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。</p>",
+    "en": "<p>Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "New York, United States",
+      "en": "New York, United States"
+    },
+    "place": {
+      "zh": "Courant Institute and Facebook AI Research",
+      "en": "Courant Institute and Facebook AI Research"
+    },
+    "coordinates": [
+      40.7295,
+      -73.9965
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "martin-arjovsky",
+      "role": {
+        "zh": "Wasserstein GAN 主要作者",
+        "en": "Wasserstein GAN lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

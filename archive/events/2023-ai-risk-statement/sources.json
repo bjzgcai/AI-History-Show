@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-official-statement-on-ai-risk",
+    "type": "project-page",
+    "label": {
+      "zh": "官方声明",
+      "en": "Official statement"
+    },
+    "title": {
+      "zh": "AI 风险声明官方页面",
+      "en": "Official Statement on AI Risk"
+    },
+    "url": "https://www.safe.ai/work/statement-on-ai-risk",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-managing-extreme-ai-risks",
+    "type": "paper",
+    "label": {
+      "zh": "研究论文",
+      "en": "Research paper"
+    },
+    "title": {
+      "zh": "管理极端 AI 风险",
+      "en": "Managing extreme AI risks"
+    },
+    "url": "https://arxiv.org/abs/2310.17688",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-statement-on-ai-risk-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "AI 风险声明概览",
+      "en": "Statement on AI Risk overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Statement_on_AI_Risk",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-center-for-ai-safety",
+    "type": "reference-only",
+    "label": {
+      "zh": "机构参考",
+      "en": "Institutional reference"
+    },
+    "title": {
+      "zh": "AI 安全中心",
+      "en": "Center for AI Safety"
+    },
+    "url": "https://www.safe.ai/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Swin Transformer：使用移位窗口的层级视觉 Transformer》",
+      "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows"
+    },
+    "url": "https://arxiv.org/abs/2103.14030",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iccv-open-access-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICCV 开放论文页面",
+      "en": "ICCV open-access paper page"
+    },
+    "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-microsoft-swin-transformer-repository",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "Microsoft Swin Transformer 代码仓库",
+      "en": "Microsoft Swin Transformer repository"
+    },
+    "url": "https://github.com/microsoft/Swin-Transformer",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

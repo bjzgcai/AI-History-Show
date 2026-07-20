@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-project-gutenberg-r-u-r-text",
+    "type": "archive",
+    "label": {
+      "zh": "档案文本",
+      "en": "Archive text"
+    },
+    "title": {
+      "zh": "Project Gutenberg《R.U.R.》文本",
+      "en": "Project Gutenberg R.U.R. text"
+    },
+    "url": "https://www.gutenberg.org/ebooks/13083",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-1920-czech-edition-scan",
+    "type": "archive",
+    "label": {
+      "zh": "档案扫描",
+      "en": "Archive scan"
+    },
+    "title": {
+      "zh": "1920 年捷克语版本扫描",
+      "en": "1920 Czech edition scan"
+    },
+    "url": "https://archive.org/details/rurrossumsuniver00apekuoft",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-r-u-r-publication-and-word-history-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "《R.U.R.》出版与词源背景",
+      "en": "R.U.R. publication and word-history overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/R.U.R.",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-robot-etymology-background",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "机器人词源背景",
+      "en": "Robot etymology background"
+    },
+    "url": "https://en.wikipedia.org/wiki/Karel_%C4%8Capek#Etymology_of_robot",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

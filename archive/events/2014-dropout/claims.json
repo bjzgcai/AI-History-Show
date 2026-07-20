@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Dropout 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Dropout is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+      "source-improving-neural-networks-by-preventing-co-adaptation"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。</p>",
+      "en": "<p>Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.</p>"
+    },
+    "sourceIds": [
+      "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
+      "source-improving-neural-networks-by-preventing-co-adaptation"
+    ],
+    "status": "needs-source"
+  }
+]

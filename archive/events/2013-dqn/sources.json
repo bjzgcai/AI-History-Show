@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-playing-atari-with-deep-reinforcement-learning",
+    "type": "reference-only",
+    "label": {
+      "zh": "预印本",
+      "en": "Preprint"
+    },
+    "title": {
+      "zh": "用深度强化学习玩 Atari",
+      "en": "Playing Atari with Deep Reinforcement Learning"
+    },
+    "url": "https://arxiv.org/abs/1312.5602",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-human-level-control-through-deep-reinforcement-learning",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Human-level control through deep reinforcement learning",
+      "en": "Human-level control through deep reinforcement learning"
+    },
+    "url": "https://www.nature.com/articles/nature14236",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-google-deepmind-deep-reinforcement-learning",
+    "type": "project-page",
+    "label": {
+      "zh": "项目说明",
+      "en": "Project note"
+    },
+    "title": {
+      "zh": "谷歌 DeepMind: Deep Reinforcement Learning",
+      "en": "Google DeepMind: Deep Reinforcement Learning"
+    },
+    "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

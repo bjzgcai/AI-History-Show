@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-1986-rnn-architecture-01",
+    "type": "image",
+    "path": "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "循环神经网络 架构图",
+      "en": "Recurrent Neural Networks"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1986-rnn-people-01",
+    "type": "image",
+    "path": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+    "role": "team-photo",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2020-vit-patch-tokens",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "图像块令牌到 Transformer",
+      "en": "Patch tokens to transformer"
+    },
+    "subcaption": {
+      "zh": "关于 ViT 图像块令牌化的本地原创解释图。",
+      "en": "Original local explainer of ViT patch tokenization."
+    },
+    "sourceId": "source-an-image-is-worth-16x16-words",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2020-vit-alexey-dosovitskiy",
+    "type": "image",
+    "path": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "视觉 Transformer 外部参考图",
+      "en": "Vision Transformer external reference image"
+    },
+    "sourceId": "source-an-image-is-worth-16x16-words",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

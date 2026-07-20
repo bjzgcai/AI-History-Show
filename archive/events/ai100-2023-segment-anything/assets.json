@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2023-segment-anything-prompt-mask",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "可提示分割流程",
+      "en": "Promptable segmentation flow"
+    },
+    "subcaption": {
+      "zh": "关于从提示到掩码分割的本地原创解释图。",
+      "en": "Original local explainer of prompt-to-mask segmentation."
+    },
+    "sourceId": "source-segment-anything",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2023-segment-anything-alexander-kirillov",
+    "type": "image",
+    "path": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "Segment Anything 外部参考图",
+      "en": "Segment Anything external reference image"
+    },
+    "sourceId": "source-segment-anything",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

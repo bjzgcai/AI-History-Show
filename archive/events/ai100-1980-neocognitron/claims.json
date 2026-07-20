@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "新认知机 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Neocognitron is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-neocognitron",
+      "source-open-neocognitron-pdf"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>",
+      "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>"
+    },
+    "sourceIds": [
+      "source-neocognitron",
+      "source-open-neocognitron-pdf"
+    ],
+    "status": "needs-source"
+  }
+]

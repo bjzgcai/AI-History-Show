@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2000-neural-language-model-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "神经语言模型为词学习了什么？",
+      "en": "What did neural language models learn for words?"
+    },
+    "options": [
+      {
+        "zh": "稠密向量表示",
+        "en": "Dense vector representations"
+      },
+      {
+        "zh": "只有字体颜色",
+        "en": "Only font colors"
+      },
+      {
+        "zh": "键盘的物理重量",
+        "en": "Physical keyboard weight"
+      },
+      {
+        "zh": "固定的第一句话",
+        "en": "A fixed first sentence"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "神经语言模型把词映射为学习得到的向量，并用上下文预测语言。",
+      "en": "Neural language models map words into learned vectors and use context to predict language."
+    },
+    "sourceIds": [
+      "source-a-neural-probabilistic-language-model"
+    ],
+    "assetIds": [
+      "asset-2000-neural-language-model-context-prediction"
+    ]
+  }
+]

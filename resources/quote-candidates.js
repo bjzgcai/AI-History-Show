@@ -3,6 +3,8 @@
 // - 每个事件至少提供一条高相关、可追溯来源的候选引言
 // - 优先选择官方页面、论文摘要、学术出版社页面或机构页面中的原话
 // - 当前文件仅存候选数据，不直接参与页面渲染
+// - Archive migration: treat this as a research inbox; verified quotes should
+//   be promoted to archive claims/sources before becoming authoritative.
 
 const quoteCandidates = {
   "curatedAt": "2026-04-23",

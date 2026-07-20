@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1992-svm-isabelle-guyon",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "伊莎贝尔·居永 肖像",
+      "en": "Isabelle Guyon portrait"
+    },
+    "subcaption": {
+      "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。",
+      "en": "University Paris-Saclay article image about Guyon and support vector machines."
+    },
+    "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "University news image; rights not stated.",
+        "en": "University news image; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1992-svm-max-margin",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "最大间隔分类器",
+      "en": "Maximum-margin classifier"
+    },
+    "subcaption": {
+      "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Support Vector Machines, based on the related source material."
+    },
+    "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1992-svm-kernel-lift",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "核函数特征提升",
+      "en": "Kernel feature lift"
+    },
+    "subcaption": {
+      "zh": "支持向量机 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Support Vector Machines, based on the related source material."
+    },
+    "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

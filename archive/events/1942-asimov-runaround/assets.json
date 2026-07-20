@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-1942-asimov-runaround-three-laws",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "《转圈圈》规则层级解释图",
+      "en": "Runaround rule-hierarchy explainer"
+    },
+    "subcaption": {
+      "zh": "原创图；不复述受版权保护的故事原文",
+      "en": "Original diagram; no copyrighted story text is reproduced"
+    },
+    "sourceId": "source-astounding-march-1942-archive",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://archive.org/details/Astounding_v29n01_1942-03_dtsg0318",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

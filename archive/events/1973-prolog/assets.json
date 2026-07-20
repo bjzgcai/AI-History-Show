@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1973-prolog-alain-colmerauer",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "阿兰·科尔梅罗尔 肖像",
+      "en": "Alain Colmerauer portrait"
+    },
+    "subcaption": {
+      "zh": "来自 维基共享资源 的 阿兰·科尔梅罗尔 相关人物图。",
+      "en": "Portrait from Wikimedia Commons, associated with the Alain Colmerauer category."
+    },
+    "sourceId": "source-the-birth-of-prolog",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "License stated on Commons file page.",
+        "en": "License stated on Commons file page."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1973-prolog-query-tree",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "查询证明树",
+      "en": "Query proof tree"
+    },
+    "subcaption": {
+      "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for PROLOG, based on the listed source material."
+    },
+    "sourceId": "source-the-birth-of-prolog",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1973-prolog-unification-trace",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "合一轨迹",
+      "en": "Unification trace"
+    },
+    "subcaption": {
+      "zh": "PROLOG 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for PROLOG, based on the listed source material."
+    },
+    "sourceId": "source-the-birth-of-prolog",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

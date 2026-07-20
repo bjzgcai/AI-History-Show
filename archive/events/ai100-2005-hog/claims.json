@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "HOG 方向梯度直方图 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "HOG is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-histograms-of-oriented-gradients-for-human-detection",
+      "source-ieee-cvpr-paper-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>",
+      "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>"
+    },
+    "sourceIds": [
+      "source-histograms-of-oriented-gradients-for-human-detection",
+      "source-ieee-cvpr-paper-record"
+    ],
+    "status": "needs-source"
+  }
+]

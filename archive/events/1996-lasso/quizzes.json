@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1996-lasso-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Lasso 中的 L1 惩罚通常会让系数发生什么？",
+      "en": "What does the L1 penalty in lasso often do to coefficients?"
+    },
+    "options": [
+      {
+        "zh": "它会把部分系数精确压到零",
+        "en": "It drives some coefficients exactly to zero"
+      },
+      {
+        "zh": "它让所有系数变成无穷大",
+        "en": "It makes every coefficient infinite"
+      },
+      {
+        "zh": "它移除训练数据",
+        "en": "It removes the training data"
+      },
+      {
+        "zh": "它把回归变成视频播放",
+        "en": "It converts regression into video playback"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "L1 惩罚鼓励稀疏性，因此 Lasso 在拟合模型时同时进行变量选择。",
+      "en": "The L1 penalty encourages sparsity, so lasso performs variable selection while fitting a model."
+    },
+    "sourceIds": [
+      "source-regression-shrinkage-and-selection-via-the-lasso"
+    ],
+    "assetIds": [
+      "asset-1996-lasso-robert-tibshirani"
+    ]
+  }
+]

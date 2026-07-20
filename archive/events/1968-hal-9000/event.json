@@ -1,0 +1,80 @@
+{
+  "id": "1968-hal-9000",
+  "year": 1968,
+  "date": "1968",
+  "title": {
+    "zh": "HAL 9000 与机器职责冲突",
+    "en": "HAL 9000 and Conflicting Machine Duties"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
+    "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "英国 / 美国",
+      "en": "United Kingdom / United States"
+    },
+    "place": {
+      "zh": "《2001：太空漫游》上映语境",
+      "en": "2001: A Space Odyssey release"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "stanley-kubrick",
+      "name": {
+        "en": "Stanley Kubrick",
+        "zh": "斯坦利·库布里克"
+      },
+      "role": {
+        "en": "Director of 2001: A Space Odyssey",
+        "zh": "《2001：太空漫游》导演"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "arthur-c-clarke",
+      "name": {
+        "en": "Arthur C. Clarke",
+        "zh": "阿瑟·C·克拉克"
+      },
+      "role": {
+        "en": "Writer and novel author",
+        "zh": "编剧与小说作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

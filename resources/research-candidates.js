@@ -5,6 +5,8 @@
 // 说明：
 // - 这里存的是候选文案与候选图片来源，不直接参与当前页面渲染
 // - candidateImageSources 中的 sourceUrl 主要是来源页/PDF 页，便于后续下载、截图或裁剪
+// - Archive migration: treat this as a research inbox; verified material should
+//   be promoted to archive claims/sources/assets/variants before presentation use.
 
 const researchCandidates = {
   meta: {

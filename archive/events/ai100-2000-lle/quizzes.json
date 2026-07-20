@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2000-lle-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "LLE 保持什么关系？",
+      "en": "What relationship does LLE preserve?"
+    },
+    "options": [
+      {
+        "zh": "由最近邻进行局部重建",
+        "en": "Local reconstruction from nearest neighbors"
+      },
+      {
+        "zh": "只有时间顺序",
+        "en": "Only chronological order"
+      },
+      {
+        "zh": "游戏分数表",
+        "en": "A game score table"
+      },
+      {
+        "zh": "随机密码",
+        "en": "A random password"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "LLE 保持每个点由附近邻居重建时的权重。",
+      "en": "LLE keeps the weights that reconstruct each point from its nearby neighbors."
+    },
+    "sourceIds": [
+      "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
+    ],
+    "assetIds": [
+      "asset-2000-lle-neighbor-reconstruction"
+    ]
+  }
+]

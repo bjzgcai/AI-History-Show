@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-auto-encoding-variational-bayes",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《自动编码变分贝叶斯》",
+      "en": "Auto-Encoding Variational Bayes"
+    },
+    "url": "https://arxiv.org/abs/1312.6114",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iclr-paper-record",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICLR 论文记录",
+      "en": "ICLR paper record"
+    },
+    "url": "https://openreview.net/forum?id=33X9fd2-9FyZd",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-variational-autoencoder-overview",
+    "type": "code",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "变分自编码器概览",
+      "en": "Variational autoencoder overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Variational_autoencoder",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

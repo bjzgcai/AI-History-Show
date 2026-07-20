@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "神经语言模型 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Neural Language Model is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-a-neural-probabilistic-language-model",
+      "source-jmlr-full-paper-pdf"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>",
+      "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>"
+    },
+    "sourceIds": [
+      "source-a-neural-probabilistic-language-model",
+      "source-jmlr-full-paper-pdf"
+    ],
+    "status": "needs-source"
+  }
+]

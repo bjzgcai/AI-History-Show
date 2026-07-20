@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1983-simulated-annealing-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "模拟退火为什么会接受较差移动？",
+      "en": "Why can simulated annealing accept a worse move?"
+    },
+    "options": [
+      {
+        "zh": "在温度较高时逃离局部最优",
+        "en": "To escape local optima while temperature is still high"
+      },
+      {
+        "zh": "因为它从不评估解",
+        "en": "Because it never evaluates solutions"
+      },
+      {
+        "zh": "为了强制所有答案错误",
+        "en": "To force every answer to be wrong"
+      },
+      {
+        "zh": "因为它只排序文本",
+        "en": "Because it only sorts text"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "早期探索允许以一定概率进行上坡移动；降温会逐渐让搜索更挑剔。",
+      "en": "Early exploration allows uphill moves with some probability; cooling gradually makes the search more selective."
+    },
+    "sourceIds": [
+      "source-optimization-by-simulated-annealing"
+    ],
+    "assetIds": [
+      "asset-1983-simulated-annealing-scott-kirkpatrick"
+    ]
+  }
+]

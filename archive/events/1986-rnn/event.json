@@ -1,0 +1,66 @@
+{
+  "id": "1986-rnn",
+  "year": 1986,
+  "date": "1986",
+  "title": {
+    "zh": "循环神经网络",
+    "en": "Recurrent Neural Networks"
+  },
+  "summary": {
+    "zh": "神经网络与连接主义的复兴",
+    "en": "Neural Networks and Connectionism"
+  },
+  "description": {
+    "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
+    "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国, 加利福尼亚州",
+      "en": "CA, United States"
+    },
+    "place": {
+      "zh": "加州大学圣地亚哥分校",
+      "en": "University of California, San Diego"
+    },
+    "coordinates": [
+      32.8801,
+      -117.234
+    ]
+  },
+  "topics": [
+    "deep-learning"
+  ],
+  "achievementTypeIds": [
+    "deep-learning"
+  ],
+  "figures": [
+    {
+      "figureId": "jeffrey-elman",
+      "role": {
+        "zh": "简单循环神经网络提出者",
+        "en": "The creator of Simple RNN"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "michael-jordan",
+      "role": {
+        "zh": "乔丹网络提出者",
+        "en": "The creator of Jordan Network"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

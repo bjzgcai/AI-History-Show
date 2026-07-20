@@ -1,6 +1,6 @@
-// Pop Quiz configuration for generated BenchCouncil AI100 milestones.
-// Shape is intentionally close to the possible pq.lab.bza.edu.cn export:
-// question, options, answerIndex, explanation, source.
+// LEGACY — rollback/comparison/migration only. Not consumed by production `npm run generate`.
+// Pop Quiz configuration for the explicit Legacy generator.
+// Production quizzes live in archive/events/*/quizzes.json and are selected by variants.
 
 'use strict';
 

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "Robot fiction reframed machine fear as a rule-design problem: what should artificial agents be forbidden to do?",
+      "zh": "机器人科幻把机器恐惧改写成规则设计问题：人工行动者究竟应该被禁止做什么？"
+    },
+    "sourceIds": [
+      "source-astounding-march-1942-archive",
+      "source-asimov-online-three-laws-faq"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language.",
+      "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。"
+    },
+    "sourceIds": [
+      "source-astounding-march-1942-archive",
+      "source-asimov-online-three-laws-faq"
+    ],
+    "status": "needs-source"
+  }
+]

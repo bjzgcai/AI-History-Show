@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-efficient-estimation-of-word-representations-in-vector-space",
+    "type": "reference-only",
+    "label": {
+      "zh": "预印本",
+      "en": "Preprint"
+    },
+    "title": {
+      "zh": "向量空间中词表示的高效估计",
+      "en": "Efficient Estimation of Word Representations in Vector Space"
+    },
+    "url": "https://arxiv.org/abs/1301.3781",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "词与短语的分布式表示及其组合性",
+      "en": "Distributed Representations of Words and Phrases and their Compositionality"
+    },
+    "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-google-code-archive-word2vec",
+    "type": "code",
+    "label": {
+      "zh": "代码档案",
+      "en": "Code archive"
+    },
+    "title": {
+      "zh": "谷歌 代码 archive: word2vec",
+      "en": "Google Code archive: word2vec"
+    },
+    "url": "https://code.google.com/archive/p/word2vec/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

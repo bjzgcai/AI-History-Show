@@ -1,0 +1,65 @@
+{
+  "id": "1973-lighthill-report",
+  "year": 1973,
+  "date": "1973",
+  "title": {
+    "zh": "莱特希尔报告与第一次 AI 寒冬",
+    "en": "The Lighthill Report and the First AI Winter"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。",
+    "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled."
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国",
+      "en": "United Kingdom"
+    },
+    "place": {
+      "zh": "英国科学研究委员会",
+      "en": "Science Research Council"
+    },
+    "coordinates": [
+      51.5072,
+      -0.1276
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "sir-james-lighthill",
+      "name": {
+        "en": "Sir James Lighthill",
+        "zh": "詹姆斯·莱特希尔爵士"
+      },
+      "role": {
+        "en": "Author of Artificial Intelligence: A General Survey",
+        "zh": "《人工智能：总览》报告作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

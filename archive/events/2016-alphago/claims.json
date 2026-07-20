@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-hybrid-policy-value-search",
+    "importance": "core",
+    "text": {
+      "zh": "AlphaGo 结合了策略网络、价值网络和蒙特卡洛树搜索。",
+      "en": "AlphaGo combined policy networks, value networks, and Monte Carlo tree search."
+    },
+    "sourceIds": [
+      "source-alphago-nature-paper"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-lee-sedol-match",
+    "importance": "core",
+    "text": {
+      "zh": "AlphaGo 在 2016 年与李世石的五番棋中获胜。",
+      "en": "AlphaGo won the five-game match against Lee Sedol in 2016."
+    },
+    "sourceIds": [
+      "source-deepmind-alphago-page"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-self-play-legacy",
+    "importance": "context",
+    "text": {
+      "zh": "AlphaGo 的神经搜索和自我对弈路线影响了后续 AlphaGo Zero、AlphaZero 和 MuZero 等系统。",
+      "en": "AlphaGo’s neural search and self-play pattern influenced later systems such as AlphaGo Zero, AlphaZero, and MuZero."
+    },
+    "sourceIds": [
+      "source-deepmind-alphago-page",
+      "source-alphago-nature-paper"
+    ],
+    "status": "verified"
+  }
+]

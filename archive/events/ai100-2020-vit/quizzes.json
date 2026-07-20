@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2020-vit-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "视觉 Transformer 如何看待一张图像？",
+      "en": "How does Vision Transformer look at an image?"
+    },
+    "options": [
+      {
+        "zh": "把图像看作一串图像块",
+        "en": "As a sequence of image patches"
+      },
+      {
+        "zh": "只看作定理子句列表",
+        "en": "As a list of theorem clauses only"
+      },
+      {
+        "zh": "看作一步棋",
+        "en": "As a single chess move"
+      },
+      {
+        "zh": "看作一段录音",
+        "en": "As a sound recording"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "ViT 把图像切成图像块，将它们嵌入为令牌，再用 Transformer 注意力处理。",
+      "en": "ViT splits an image into patches, embeds them as tokens, and processes them with transformer attention."
+    },
+    "sourceIds": [
+      "source-an-image-is-worth-16x16-words"
+    ],
+    "assetIds": [
+      "asset-2020-vit-patch-tokens"
+    ]
+  }
+]

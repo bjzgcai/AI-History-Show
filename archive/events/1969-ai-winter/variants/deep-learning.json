@@ -1,0 +1,151 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "1969-ai-winter",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "第一次寒冬的到来",
+    "en": "The First AI Winter Arrives"
+  },
+  "displaySummary": {
+    "zh": "AI创世纪",
+    "en": "Genesis of AI"
+  },
+  "displayDescription": {
+    "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
+    "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-1969-ai-winter-papers-01",
+    "asset-1969-ai-winter-papers-02",
+    "asset-1969-ai-winter-papers-01-2"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "《Perceptrons》真正改变研究方向的地方，在于它把“哪些任务是单层感知机做不到的”说清楚了；学术界随后开始把注意力从神经网络热潮转向更容易形式化和证明的路线。",
+        "en": "What changed the field in Perceptrons was that it clarified exactly which tasks single-layer perceptrons could not solve. Researchers then shifted attention away from the neural-network boom toward approaches that were easier to formalize and prove."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "寒冬并不意味着神经网络从此失效，而是意味着在当时的计算与算法条件下，它的承诺被重新估价；后来 BP、LSTM 与大算力的回归，本质上是在补齐当年缺失的训练机制与资源基础。",
+        "en": "The winter did not mean neural networks had failed forever. It meant their promise was revalued under the computing and algorithmic limits of the time. The later return of backpropagation, LSTM, and large-scale compute essentially filled in the missing training mechanisms and resources."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "Genesis of AI (1950s-1970s)",
+    "zh": "AI创世纪（20世纪50年代至70年代）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Author of Perceptrons",
+        "zh": "《感知器》作者"
+      },
+      "avatar": "resources/images/figures/historical/marvin-minsky-1968.png",
+      "avatarStyle": "transform: scale(1.32); transform-origin: 50% 35%;",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
+        "url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/1969%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%92%E5%86%AC%EF%BC%9A%E9%80%BB%E8%BE%91%E8%B0%9C%E9%A2%98%E5%A6%82%E4%BD%95%E5%86%B0%E5%B0%81AI%E4%B9%8B%E6%A2%A6.mp4",
+        "title": "1969第一次人工智能寒冬：逻辑谜题如何冰封AI之梦",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Minsky and Papert's Perceptrons became a landmark critique of single-layer perceptrons, sharpening the field's understanding of what simple neural models could and could not represent.\"",
+    "zh": "\"明斯基和帕珀特的《感知机》成为对单层感知机的重要批判，促使研究者更清楚地认识简单神经模型能表示什么、不能表示什么。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "Léon Bottou",
+      "zh": "莱昂·博图"
+    },
+    "workTitle": {
+      "en": "Perceptrons: An Introduction to Computational Geometry",
+      "zh": "感知机：计算几何学导论"
+    },
+    "workAuthors": {
+      "en": "Marvin Minsky and Seymour Papert, MIT Press",
+      "zh": "马文·明斯基、 Seymour Papert，麻省理工学院出版社"
+    },
+    "sourceLabel": {
+      "en": "MIT Press book record",
+      "zh": "麻省理工学院出版社图书页面"
+    },
+    "sourceUrl": "https://mitpress.mit.edu/9780262631112/perceptrons/"
+  },
+  "quotePage": {
+    "en": "MIT Press book record: Perceptrons",
+    "zh": "麻省理工学院出版社《感知机》图书页面"
+  },
+  "quoteAttribution": {
+    "en": "<em>Perceptrons: An Introduction to Computational Geometry</em>, Marvin Minsky and Seymour Papert, MIT Press",
+    "zh": "《感知机：计算几何导论》，马文·明斯基、西摩·派珀特"
+  },
+  "location": {
+    "name": {
+      "en": "MIT",
+      "zh": "麻省理工学院"
+    },
+    "country": {
+      "en": "MA, United States",
+      "zh": "美国, 马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  }
+}

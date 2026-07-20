@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1988-td-update-richard-sutton",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "理查德·萨顿 肖像",
+      "en": "Richard Sutton portrait"
+    },
+    "subcaption": {
+      "zh": "来自 Sutton 个人主页的人物图。",
+      "en": "Portrait from Sutton's personal homepage."
+    },
+    "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Personal website image; reuse rights not stated.",
+        "en": "Personal website image; reuse rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1988-td-update-value-timeline",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "价值时间线更新",
+      "en": "Value timeline update"
+    },
+    "subcaption": {
+      "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+    },
+    "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1988-td-update-error-meter",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "TD 误差仪表",
+      "en": "TD error meter"
+    },
+    "subcaption": {
+      "zh": "时序差分更新 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
+    },
+    "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

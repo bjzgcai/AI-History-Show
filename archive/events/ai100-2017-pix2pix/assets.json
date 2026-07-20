@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2017-pix2pix-paired-translation",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Pix2Pix 解释图",
+      "en": "Pix2Pix explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2017-pix2pix-photo-of-me-korea",
+    "type": "image",
+    "path": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "Pix2Pix 外部参考图",
+      "en": "Pix2Pix external reference image"
+    },
+    "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

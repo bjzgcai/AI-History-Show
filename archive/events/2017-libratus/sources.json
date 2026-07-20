@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-science-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Science 论文",
+      "en": "Science paper"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.aao1733",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cmu-libratus-release",
+    "type": "reference-only",
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "title": {
+      "zh": "CMU Libratus 新闻稿",
+      "en": "CMU Libratus release"
+    },
+    "url": "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-safe-and-nested-subgame-solving",
+    "type": "reference-only",
+    "label": {
+      "zh": "预印本",
+      "en": "Preprint"
+    },
+    "title": {
+      "zh": "安全嵌套子局求解论文",
+      "en": "Safe and Nested Subgame Solving"
+    },
+    "url": "https://arxiv.org/abs/1705.02955",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

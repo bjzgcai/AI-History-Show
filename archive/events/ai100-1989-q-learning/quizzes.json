@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1989-q-learning-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Q-learning 更新什么价值？",
+      "en": "What value does Q-learning update?"
+    },
+    "options": [
+      {
+        "zh": "状态-动作对的价值",
+        "en": "The value of a state-action pair"
+      },
+      {
+        "zh": "图像颜色",
+        "en": "The color of an image"
+      },
+      {
+        "zh": "只有单词拼写",
+        "en": "Only a word spelling"
+      },
+      {
+        "zh": "固定定理标题",
+        "en": "A fixed theorem title"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Q-learning 根据奖励和下一状态信息把 Q 值朝 Bellman 目标更新。",
+      "en": "Q-learning updates Q values toward a Bellman target from reward and next-state information."
+    },
+    "sourceIds": [
+      "source-learning-from-delayed-rewards"
+    ],
+    "assetIds": [
+      "asset-1989-q-learning-bellman-update"
+    ]
+  }
+]

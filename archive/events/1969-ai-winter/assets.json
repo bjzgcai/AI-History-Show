@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1969-ai-winter-papers-01",
+    "type": "image",
+    "path": "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "人物肖像",
+      "en": "Portrait"
+    },
+    "subcaption": {
+      "zh": "相关研究者照片",
+      "en": "Relevant researcher photo"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1969-ai-winter-papers-02",
+    "type": "image",
+    "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg",
+    "role": "paper-page",
+    "caption": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "subcaption": {
+      "zh": "《感知机：计算几何学导论》",
+      "en": "Perceptrons: An Introduction to Computational Geometry"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1969-ai-winter-papers-01-2",
+    "type": "image",
+    "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png",
+    "role": "paper-page",
+    "caption": {
+      "zh": "论文页面",
+      "en": "Paper page"
+    },
+    "subcaption": {
+      "zh": "《感知机：计算几何学导论》",
+      "en": "Perceptrons: An Introduction to Computational Geometry"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

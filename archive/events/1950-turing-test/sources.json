@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-computing-machinery-and-intelligence",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "计算机器与智能",
+      "en": "Computing Machinery and Intelligence"
+    },
+    "url": "https://academic.oup.com/mind/article/LIX/236/433/986238",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
+      "en": "Primary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-turing-digital-archive",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "图灵数字档案",
+      "en": "Turing Digital Archive"
+    },
+    "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-internet-archive-digital-preview",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "互联网档案馆 数字化预览",
+      "en": "Internet Archive digital preview"
+    },
+    "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-stanford-encyclopedia-of-philosophy",
+    "type": "context",
+    "label": {
+      "zh": "背景",
+      "en": "Context"
+    },
+    "title": {
+      "zh": "斯坦福哲学百科全书",
+      "en": "Stanford Encyclopedia of Philosophy"
+    },
+    "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  }
+]

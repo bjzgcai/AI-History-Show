@@ -1,0 +1,100 @@
+[
+  {
+    "id": "asset-1996-dbscan-density-reachability",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "密度可达性",
+      "en": "Density reachability"
+    },
+    "subcaption": {
+      "zh": "依据 一种发现簇的基于密度的算法 制作的本地解释图。",
+      "en": "Original local explainer based on A density-based algorithm for discovering clusters."
+    },
+    "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1996-dbscan-noise-core-border",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "核心点、边界点与噪声点",
+      "en": "Core, border, noise points"
+    },
+    "subcaption": {
+      "zh": "依据 再访 DBSCAN，再访 制作的本地解释图。",
+      "en": "Original local explainer based on DBSCAN Revisited, Revisited."
+    },
+    "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1996-dbscan-sfu-professor-martin-ester-2019",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "DBSCAN 密度聚类 外部参考图",
+      "en": "DBSCAN external reference image"
+    },
+    "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1996-dbscan-dbscan-density-data",
+    "type": "svg",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+    "role": "external-reference-diagram",
+    "caption": {
+      "zh": "DBSCAN 密度聚类 外部参考图",
+      "en": "DBSCAN external reference image"
+    },
+    "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

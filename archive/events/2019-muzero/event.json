@@ -1,0 +1,66 @@
+{
+  "id": "2019-muzero",
+  "year": "2019-2020",
+  "date": "2019-2020",
+  "title": {
+    "zh": "MuZero",
+    "en": "MuZero"
+  },
+  "summary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "description": {
+    "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>",
+    "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国伦敦",
+      "en": "London, United Kingdom"
+    },
+    "place": {
+      "zh": "DeepMind",
+      "en": "DeepMind"
+    },
+    "coordinates": [
+      51.523,
+      -0.128
+    ]
+  },
+  "topics": [
+    "gaming-ai"
+  ],
+  "achievementTypeIds": [
+    "gaming-ai"
+  ],
+  "figures": [
+    {
+      "figureId": "julian-schrittwieser",
+      "role": {
+        "zh": "MuZero 第一作者",
+        "en": "MuZero first author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "david-silver",
+      "role": {
+        "zh": "DeepMind 强化学习负责人",
+        "en": "DeepMind reinforcement learning lead"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

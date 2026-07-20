@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2016-nas-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "神经架构搜索在搜索什么？",
+      "en": "What is being searched in neural architecture search?"
+    },
+    "options": [
+      {
+        "zh": "模型设计或架构",
+        "en": "Model designs or architectures"
+      },
+      {
+        "zh": "邮箱地址列表",
+        "en": "A list of email addresses"
+      },
+      {
+        "zh": "只有定理名称",
+        "en": "Only theorem names"
+      },
+      {
+        "zh": "机器人的颜色",
+        "en": "The color of a robot"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "NAS 评估候选神经网络设计，并用评分引导下一批提案。",
+      "en": "NAS evaluates candidate neural network designs and uses scores to guide the next proposals."
+    },
+    "sourceIds": [
+      "source-neural-architecture-search-with-reinforcement-learning"
+    ],
+    "assetIds": [
+      "asset-2016-nas-controller-search"
+    ]
+  }
+]

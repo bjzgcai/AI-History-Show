@@ -1,0 +1,356 @@
+{
+    "storylineId": "gaming-ai",
+    "eventId": "2000s-alphacat",
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+        "zh": "中国象棋引擎与 AlphaCat",
+        "en": "Chinese Chess Engines and AlphaCat"
+    },
+    "displaySummary": {
+        "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+        "en": "Game AI as a Testbed for Search, Learning and Planning"
+    },
+    "displayDescription": {
+        "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
+        "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "configuredPaper",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "ICGA Tournaments",
+                "zh": "ICGA 赛事档案"
+            },
+            "title": {
+                "en": "Chinese Chess tournament archive",
+                "zh": "中国象棋赛事档案"
+            },
+            "description": {
+                "en": "Tournament archive listing Chinese Chess competitions and programs in the Computer Olympiad lineage.",
+                "zh": "赛事档案列出计算机奥林匹克中国象棋项目及参赛程序谱系。"
+            },
+            "url": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+            "source": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+            "action": {
+                "en": "Open source page",
+                "zh": "打开资料页面"
+            },
+            "license": {
+                "en": "Reference link only; local exhibition graphics are original redraws.",
+                "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+            },
+            "usage": {
+                "en": "Source card for the gaming AI branch",
+                "zh": "AI 棋牌分支的资料卡片"
+            }
+        }
+    ],
+    "assetIds": ["asset-2000s-alphacat-xiangqi-search"],
+    "sourceIds": [
+        "source-icga-chinese-chess-page",
+        "source-comparison-training-for-computer-chinese-chess",
+        "source-xiangqi-overview"
+    ],
+    "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+    "quizId": "2000s-alphacat-quiz-1",
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "中国象棋与国际象棋足够接近，因此搜索和评估是自然起点。它又足够不同：炮的隔子打、九宫限制、过河规则和长打规则，迫使引擎作者重新设计棋盘表示和战术评估。",
+                "en": "Xiangqi is close enough to chess that search and evaluation are natural starting points. It is also different enough that cannon captures, palace restrictions, river effects, and repetition rules force engine authors to redesign board representation and tactical evaluation."
+            },
+            "sourceIds": ["source-icga-chinese-chess-page"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "实用路线不是一个万能技巧，而是一组面向领域的工程组合。快速走法生成、激进 alpha-beta 剪枝、开局知识和调校后的评估矩阵共同作用，才能应对高度战术化的搜索空间。",
+                "en": "The practical route was not one universal trick but a stack of domain-aware engineering. Fast move generation, aggressive alpha-beta pruning, opening knowledge, and tuned evaluation matrices worked together to survive a highly tactical search space."
+            },
+            "sourceIds": ["source-icga-chinese-chess-page"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把强中国象棋引擎视为证据：只要深度适配具体游戏，经典搜索仍然非常有力。这条路线也预示了后来的学习型评估工作，手工兵种位置表逐步被自动调校权重补充。",
+                "en": "Experts generally treat strong xiangqi engines as evidence that classical search remains powerful when it is deeply adapted to a game. This line also foreshadowed later learned-evaluation work, where handcrafted piece-square matrices were gradually complemented by automatically tuned weights."
+            },
+            "sourceIds": ["source-icga-chinese-chess-page"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "category": {
+        "en": "AI in Board & Tabletop Games",
+        "zh": "AI 在棋牌与博弈论的演进"
+    },
+    "figures": [
+        {
+            "name": {
+                "en": "Xiangqi engine teams",
+                "zh": "中国象棋引擎团队"
+            },
+            "role": {
+                "en": "Programmers behind ICGA Chinese Chess entrants",
+                "zh": "ICGA 中国象棋项目参赛程序背后的开发者"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "AlphaCat",
+                "zh": "AlphaCat"
+            },
+            "role": {
+                "en": "Representative system requested by the issue",
+                "zh": "issue 指定的代表性系统"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        }
+    ],
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+        "en": "\"Chinese Chess: 16 tournaments, 38 programs\"",
+        "zh": "\"中国象棋：16 次赛事，38 个程序\""
+    },
+    "quoteMeta": {
+        "speaker": "",
+        "workTitle": {
+            "en": "ICGA Tournaments: Chinese Chess",
+            "zh": "ICGA 赛事：中国象棋"
+        },
+        "workAuthors": {
+            "en": "International Computer Games Association tournament archive",
+            "zh": "国际计算机博弈协会赛事档案"
+        },
+        "sourceLabel": "",
+        "sourceUrl": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13"
+    },
+    "quotePage": {
+        "en": "Gaming AI branch: Chinese Chess / AlphaCat",
+        "zh": "AI 棋牌分支：中国象棋 / AlphaCat"
+    },
+    "quoteAttribution": {
+        "en": "<em>ICGA Tournaments: Chinese Chess</em>, International Computer Games Association tournament archive",
+        "zh": "《ICGA 赛事：中国象棋》, 国际计算机博弈协会赛事档案"
+    },
+    "quoteLabel": {
+        "en": "Tournament archive",
+        "zh": "赛事档案"
+    },
+    "achievement": {
+        "area": {
+            "en": "Chinese chess game AI",
+            "zh": "中国象棋 AI"
+        },
+        "method": {
+            "en": "Domain-specific minimax search and tuned evaluation",
+            "zh": "领域化极大极小搜索与调校评估"
+        },
+        "artifact": {
+            "en": "AlphaCat-style xiangqi engine lineage",
+            "zh": "AlphaCat 式中国象棋引擎谱系"
+        },
+        "material": {
+            "en": "ICGA tournament archive and Chinese-chess evaluation research",
+            "zh": "ICGA 赛事档案与中国象棋评估研究"
+        },
+        "demo": {
+            "en": "Move the cannon, horse, and general constraints to see why xiangqi needs its own search geometry.",
+            "zh": "切换炮、马和将帅约束，观察为什么中国象棋需要自己的搜索几何。"
+        },
+        "keyConcepts": [
+            {
+                "label": {
+                    "en": "Cannon geometry",
+                    "zh": "炮的几何"
+                },
+                "text": {
+                    "en": "A cannon captures only by jumping a screen piece.",
+                    "zh": "炮必须隔一个子才能吃子。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Asymmetric evaluation",
+                    "zh": "非对称评估"
+                },
+                "text": {
+                    "en": "Pieces differ sharply in mobility and tactical value.",
+                    "zh": "不同兵种在行动力和战术价值上差异很大。"
+                }
+            },
+            {
+                "label": {
+                    "en": "Tactical extensions",
+                    "zh": "战术延伸"
+                },
+                "text": {
+                    "en": "Search must follow checks, threats, and forcing sequences deeper.",
+                    "zh": "搜索必须对将军、威胁和强制变例继续加深。"
+                }
+            }
+        ],
+        "relatedAchievements": [
+            {
+                "en": "Deep Blue",
+                "zh": "深蓝"
+            },
+            {
+                "en": "AlphaZero",
+                "zh": "AlphaZero"
+            },
+            {
+                "en": "Evaluation-function tuning",
+                "zh": "评估函数调校"
+            }
+        ],
+        "relatedRegions": [
+            {
+                "en": "China",
+                "zh": "中国"
+            },
+            {
+                "en": "Taiwan",
+                "zh": "中国台湾"
+            }
+        ],
+        "demoSteps": [
+            {
+                "en": "Generate legal moves",
+                "zh": "生成合法走法"
+            },
+            {
+                "en": "Search tactical tree",
+                "zh": "搜索战术树"
+            },
+            {
+                "en": "Score asymmetric pieces",
+                "zh": "评估非对称兵种"
+            }
+        ],
+        "demoImage": "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg",
+        "demoPanel": "sources",
+        "demoNotes": [
+            {
+                "label": {
+                    "en": "architecture cue",
+                    "zh": "架构线索"
+                },
+                "text": {
+                    "en": "The explainer highlights board encoding, legal-move generation, and tactical evaluation as one coupled engine loop.",
+                    "zh": "解释图强调棋盘编码、合法走法生成和战术评估是一个耦合的引擎循环。"
+                }
+            },
+            {
+                "label": {
+                    "en": "interaction point",
+                    "zh": "互动点"
+                },
+                "text": {
+                    "en": "Toggle cannon screens and river crossing to see how legal moves reshape the search frontier.",
+                    "zh": "切换炮架和过河状态，观察合法走法如何重塑搜索边界。"
+                }
+            }
+        ],
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "ICGA Tournaments",
+                    "zh": "ICGA 赛事档案"
+                },
+                "title": {
+                    "en": "Chinese Chess tournament archive",
+                    "zh": "中国象棋赛事档案"
+                },
+                "description": {
+                    "en": "Tournament archive listing Chinese Chess competitions and programs in the Computer Olympiad lineage.",
+                    "zh": "赛事档案列出计算机奥林匹克中国象棋项目及参赛程序谱系。"
+                },
+                "url": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+                "source": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+                "action": {
+                    "en": "Open source page",
+                    "zh": "打开资料页面"
+                },
+                "license": {
+                    "en": "Reference link only; local exhibition graphics are original redraws.",
+                    "zh": "仅作为参考链接；本地展陈图形为原创重绘。"
+                },
+                "usage": {
+                    "en": "Source card for the gaming AI branch",
+                    "zh": "AI 棋牌分支的资料卡片"
+                }
+            }
+        ]
+    },
+    "analysis": {
+        "what": {
+            "en": "The 2000s Chinese-chess line shows how game AI adapted chess-engine ideas to xiangqi, including issue-requested AlphaCat as a representative system.",
+            "zh": "2000 年代中国象棋路线展示了游戏 AI 如何把象棋引擎思想迁移到中国象棋，并以 issue 指定的 AlphaCat 作为代表系统。"
+        },
+        "how": {
+            "en": "Engines used compact board representations, legal-move tables, alpha-beta or minimax search, opening books, tactical extensions, and evaluation weights for asymmetric pieces and attack pressure.",
+            "zh": "这些引擎使用紧凑棋盘表示、合法走法表、alpha-beta 或极大极小搜索、开局库、战术延伸，以及面向非对称兵种和攻势压力的评估权重。"
+        },
+        "why": {
+            "en": "Western chess methods could not transfer unchanged because cannons, palaces, rivers, and repetition rules create different tactical geometry. Xiangqi programs worked by encoding those local constraints directly into search and evaluation.",
+            "zh": "国际象棋方法不能原样迁移，因为炮、九宫、楚河汉界和长打规则会产生不同的战术几何。中国象棋程序的突破在于把这些局部约束直接编码进搜索和评估。"
+        }
+    },
+    "location": {
+        "name": {
+            "en": "Computer Olympiad Chinese Chess track",
+            "zh": "计算机奥林匹克中国象棋项目"
+        },
+        "country": {
+            "en": "China and Taiwan",
+            "zh": "中国大陆与中国台湾"
+        },
+        "coordinates": [39.9042, 116.4074]
+    },
+    "papers": [
+        {
+            "title": {
+                "en": "Comparison Training for Computer Chinese Chess",
+                "zh": "面向计算机中国象棋的比较训练"
+            },
+            "authors": {
+                "en": "Wen-Jie Tseng, Jr-Chang Chen, I-Chen Wu, Tinghan Wei",
+                "zh": "曾文杰、陈日章、吴毅成、魏廷翰"
+            },
+            "journal": {
+                "en": "arXiv / submitted to IEEE Transactions on Games",
+                "zh": "arXiv / 投稿至 IEEE Transactions on Games"
+            },
+            "year": "2018",
+            "url": "resources/papers/2000s-alphacat-comparison-training-chinese-chess.pdf"
+        }
+    ]
+}

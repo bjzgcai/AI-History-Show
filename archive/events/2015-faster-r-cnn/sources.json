@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测",
+      "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
+    },
+    "url": "https://arxiv.org/abs/1506.01497",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-shaoqingren-faster-rcnn",
+    "type": "code",
+    "label": {
+      "zh": "代码",
+      "en": "Code"
+    },
+    "title": {
+      "zh": "任少卿/faster_rcnn",
+      "en": "ShaoqingRen/faster_rcnn"
+    },
+    "url": "https://github.com/ShaoqingRen/faster_rcnn",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-torchvision-faster-r-cnn-model",
+    "type": "reference-only",
+    "label": {
+      "zh": "模型文档",
+      "en": "Model docs"
+    },
+    "title": {
+      "zh": "TorchVision Faster R-CNN 模型",
+      "en": "TorchVision Faster R-CNN model"
+    },
+    "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

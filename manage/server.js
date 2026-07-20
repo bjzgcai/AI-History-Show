@@ -32,6 +32,7 @@ const {
   normalizeEditableQuoteMeta,
   normalizeQuoteText,
 } = require('../shared/utils.js');
+const { isLegacyWriteRoute } = require('./authority-boundary.js');
 const localizedText = getLocalizedText;
 const BACKUP_DIR = path.join(MANAGE, '.backups');
 
@@ -583,9 +584,9 @@ function atomicWrite(filePath, content) {
 function writeCatalog(data) {
   const target  = path.join(MANAGE, 'catalog.js');
   const content = [
-    `// 文件A: 展示目录配置（由管理页面生成）`,
-    `// 控制展示哪些分类、哪些核心事件，以及展示顺序`,
-    `// 修改此文件后运行 \`node manage/generate.js\` 重新生成 milestones-data.js`,
+    `// LEGACY — rollback/comparison/migration only.`,
+    `// Production storyline membership and order live in archive/storylines/*.json.`,
+    `// This file is consumed only by explicit Legacy tooling such as \`npm run generate:legacy\`.`,
     ``,
     `module.exports = ${JSON.stringify(data, null, 2)};`,
     ``,
@@ -597,8 +598,9 @@ function writeCatalog(data) {
 function writeEvents(data) {
   const target  = path.join(MANAGE, 'events.js');
   const content = [
-    `// 文件B: 核心事件内容配置（由管理页面生成）`,
-    `// 修改此文件后运行 \`node manage/generate.js\` 重新生成 milestones-data.js`,
+    `// LEGACY — rollback/comparison/migration only.`,
+    `// Production event content lives in archive/events/* and is compiled by \`npm run generate\`.`,
+    `// This file is consumed only by explicit Legacy tooling such as \`npm run generate:legacy\`.`,
     ``,
     `/* eslint-disable */`,
     `module.exports = ${JSON.stringify(data, null, 2)};`,
@@ -643,9 +645,146 @@ function ensureVideoCatalogEntry(jsonPath, eventKey, ev, matchFn, newEntry) {
   return true;
 }
 
-// ─── 路由处理 ─────────────────────────────────────────────────────────────────
+function archiveEventFileList(eventId) {
+  const eventDir = path.join(ROOT, 'archive', 'events', eventId);
+  if (!fs.existsSync(eventDir) || !fs.statSync(eventDir).isDirectory()) return [];
+  const files = [];
+  for (const name of ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json']) {
+    if (fs.existsSync(path.join(eventDir, name))) files.push(name);
+  }
+  const variantsDir = path.join(eventDir, 'variants');
+  if (fs.existsSync(variantsDir)) {
+    for (const file of fs.readdirSync(variantsDir).filter((item) => item.endsWith('.json')).sort()) {
+      files.push(`variants/${file}`);
+    }
+  }
+  return files;
+}
+
+function safeArchiveId(value, label) {
+  if (typeof value !== 'string' || !/^[a-z0-9][a-z0-9._-]*$/.test(value)) throw new Error(`Invalid ${label}`);
+  return value;
+}
+
+function safeArchiveEventId(eventId) {
+  return safeArchiveId(eventId, 'archive eventId');
+}
+
+function safeArchiveFileName(file) {
+  if (!file || !/^(event|claims|sources|assets|quizzes)\.json$|^variants\/[a-z0-9][a-z0-9._-]*\.json$/.test(file)) {
+    throw new Error('Invalid archive file');
+  }
+  return file;
+}
+
+function archiveFilePath(eventId, file) {
+  const safeEventId = safeArchiveEventId(eventId);
+  const safeFile = safeArchiveFileName(file);
+  const fullPath = path.join(ROOT, 'archive', 'events', safeEventId, safeFile);
+  const baseDir = path.join(ROOT, 'archive', 'events', safeEventId);
+  if (!fullPath.startsWith(baseDir)) throw new Error('Archive path traversal rejected');
+  return fullPath;
+}
+function archiveStorylinePath(storylineId) {
+  const safeStorylineId = safeArchiveId(storylineId, 'archive storylineId');
+  const baseDir = path.join(ROOT, 'archive', 'storylines');
+  const fullPath = path.join(baseDir, `${safeStorylineId}.json`);
+  if (path.dirname(fullPath) !== baseDir) throw new Error('Archive path traversal rejected');
+  return fullPath;
+}
+
 
 const routes = {
+
+  'GET /archive-admin': (req, res) => {
+    const file = path.join(MANAGE, 'archive-admin.html');
+    if (!fs.existsSync(file)) { res.writeHead(404); res.end('archive-admin.html not found'); return; }
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(fs.readFileSync(file));
+  },
+
+  'GET /api/archive/events': (req, res) => {
+    try {
+      const eventsDir = path.join(ROOT, 'archive', 'events');
+      if (!fs.existsSync(eventsDir)) { json(res, []); return; }
+      const events = fs.readdirSync(eventsDir, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory())
+        .map((entry) => ({
+          id: entry.name,
+          files: archiveEventFileList(entry.name),
+          variants: archiveEventFileList(entry.name).filter((file) => file.startsWith('variants/')).map((file) => file.replace(/^variants\//, '').replace(/\.json$/, '')),
+        }))
+        .sort((a, b) => a.id.localeCompare(b.id));
+      json(res, events);
+    } catch (e) { err(res, e.message); }
+  },
+
+  'GET /api/archive/storylines': (req, res) => {
+    try {
+      const storylinesDir = path.join(ROOT, 'archive', 'storylines');
+      if (!fs.existsSync(storylinesDir)) { json(res, []); return; }
+      const storylines = fs.readdirSync(storylinesDir)
+        .filter((file) => file.endsWith('.json'))
+        .map((file) => file.replace(/\.json$/, ''))
+        .filter((storylineId) => /^[a-z0-9][a-z0-9._-]*$/.test(storylineId))
+        .sort();
+      json(res, storylines);
+    } catch (e) { err(res, e.message); }
+  },
+
+  'GET /api/archive/storyline': (req, res) => {
+    try {
+      const q = parseQuery(req.url);
+      const filePath = archiveStorylinePath(q.storylineId);
+      if (!fs.existsSync(filePath)) { err(res, 'Archive storyline not found', 404); return; }
+      json(res, { storylineId: q.storylineId, data: JSON.parse(fs.readFileSync(filePath, 'utf8')) });
+    } catch (e) { err(res, e.message, 400); }
+  },
+
+  'POST /api/archive/storyline': async (req, res) => {
+    try {
+      const body = await readBody(req);
+      const storylineId = safeArchiveId(body.storylineId, 'archive storylineId');
+      if (!body.data || typeof body.data !== 'object' || Array.isArray(body.data)) {
+        err(res, 'Archive storyline data must be a JSON object', 400);
+        return;
+      }
+      if (body.data.id !== storylineId) {
+        err(res, 'Archive storyline data.id must match storylineId', 400);
+        return;
+      }
+      const filePath = archiveStorylinePath(storylineId);
+      if (!fs.existsSync(filePath)) { err(res, 'Archive storyline not found', 404); return; }
+      atomicWrite(filePath, JSON.stringify(body.data, null, 2) + '\n');
+      json(res, { ok: true, storylineId });
+    } catch (e) { err(res, e.message, 400); }
+  },
+
+  'GET /api/archive/file': (req, res) => {
+    try {
+      const q = parseQuery(req.url);
+      const filePath = archiveFilePath(q.eventId, q.file);
+      if (!fs.existsSync(filePath)) { err(res, 'Archive file not found', 404); return; }
+      json(res, { eventId: q.eventId, file: q.file, data: JSON.parse(fs.readFileSync(filePath, 'utf8')) });
+    } catch (e) { err(res, e.message); }
+  },
+
+  'POST /api/archive/file': async (req, res) => {
+    try {
+      const body = await readBody(req);
+      const filePath = archiveFilePath(body.eventId, body.file);
+      mkdirp(path.dirname(filePath));
+      atomicWrite(filePath, JSON.stringify(body.data, null, 2) + '\n');
+      json(res, { ok: true, eventId: body.eventId, file: body.file });
+    } catch (e) { err(res, e.message); }
+  },
+
+  'POST /api/archive/validate': (req, res) => {
+    const script = path.join(ROOT, 'scripts', 'validate-archive.js');
+    execFile(process.execPath, [script], { cwd: ROOT }, (error, stdout, stderr) => {
+      json(res, { ok: !error, stdout: stdout || '', stderr: stderr || '', exitCode: error ? error.code : 0 });
+    });
+  },
 
   'GET /admin': (req, res) => {
     const file = path.join(MANAGE, 'admin.html');
@@ -1135,6 +1274,10 @@ const server = http.createServer((req, res) => {
   }
 
   const routeKey = `${req.method} ${req.url.split('?')[0]}`;
+  if (isLegacyWriteRoute(req.method, req.url)) {
+    err(res, 'Legacy admin is read-only after the Archive authority cutover. Use /archive-admin.', 403);
+    return;
+  }
   const handler  = routes[routeKey];
 
   if (handler) {
@@ -1162,5 +1305,6 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`✓ 管理服务器已启动`);
-  console.log(`  http://localhost:${PORT}/admin`);
+  console.log(`  http://localhost:${PORT}/admin (Legacy read-only)`);
+  console.log(`  http://localhost:${PORT}/archive-admin`);
 });

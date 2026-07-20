@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Learning to Predict by the Methods of Temporal Differences",
+      "en": "Learning to Predict by the Methods of Temporal Differences"
+    },
+    "url": "https://doi.org/10.1007/BF00115009",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-richard-sutton-homepage",
+    "type": "reference-only",
+    "label": {
+      "zh": "个人主页",
+      "en": "Homepage"
+    },
+    "title": {
+      "zh": "理查德·萨顿 homepage",
+      "en": "Richard Sutton homepage"
+    },
+    "url": "http://incompleteideas.net/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-acm-2024-turing-award-announcement",
+    "type": "reference-only",
+    "label": {
+      "zh": "奖项资料",
+      "en": "Award"
+    },
+    "title": {
+      "zh": "ACM 2024 图灵 Award announcement",
+      "en": "ACM 2024 Turing Award announcement"
+    },
+    "url": "https://awards.acm.org/about/2024-turing",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

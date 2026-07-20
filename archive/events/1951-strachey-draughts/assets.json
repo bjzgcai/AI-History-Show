@@ -1,0 +1,102 @@
+[
+  {
+    "id": "asset-1951-strachey-draughts-board-search",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "跳棋棋盘搜索",
+      "en": "Draughts board search"
+    },
+    "subcaption": {
+      "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+      "en": "Original local explainer based on Logical or non-mathematical programmes."
+    },
+    "sourceId": "source-logical-or-non-mathematical-programmes",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1951-strachey-draughts-program-flow",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "早期游戏程序流程",
+      "en": "Early game-program flow"
+    },
+    "subcaption": {
+      "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+      "en": "Original local explainer based on Logical or non-mathematical programmes."
+    },
+    "sourceId": "source-logical-or-non-mathematical-programmes",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1951-strachey-draughts-program-external",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "斯特雷奇跳棋程序外部参考图",
+      "en": "Strachey draughts program external reference image"
+    },
+    "sourceId": "source-strachey-draughts-program-screenshot",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1951-strachey-draughts-checkers-board-external",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "跳棋棋盘外部参考图",
+      "en": "Checkers board external reference image"
+    },
+    "sourceId": "source-checkers-board-photo",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

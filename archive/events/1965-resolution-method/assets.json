@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1965-resolution-method-john-alan-robinson",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "约翰·艾伦·罗宾逊 肖像",
+      "en": "John Alan Robinson portrait"
+    },
+    "subcaption": {
+      "zh": "2012 年的 Robinson；维基共享资源 人物照片。",
+      "en": "Robinson in 2012; Wikimedia Commons portrait."
+    },
+    "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Creative Commons license stated on Commons file page.",
+        "en": "Creative Commons license stated on Commons file page."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1965-resolution-method-clause-refutation",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "子句反驳阶梯",
+      "en": "Clause refutation ladder"
+    },
+    "subcaption": {
+      "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Resolution Method, based on the listed source material."
+    },
+    "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1965-resolution-method-unification-map",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "合一映射图",
+      "en": "Unification map"
+    },
+    "subcaption": {
+      "zh": "归结方法 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Resolution Method, based on the listed source material."
+    },
+    "sourceId": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Pluribus 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Pluribus is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-science-paper",
+      "source-meta-ai-pluribus-report"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它使用紧凑蓝图策略与有限前瞻搜索，同时处理多个对手，把游戏 AI 推向无法只靠单一对手模型的多人场景。</p>",
+      "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used a compact blueprint strategy plus limited-lookahead search to handle several opponents at once, moving game AI toward multiplayer settings where no single opponent model is enough.</p>"
+    },
+    "sourceIds": [
+      "source-science-paper",
+      "source-meta-ai-pluribus-report"
+    ],
+    "status": "needs-source"
+  }
+]

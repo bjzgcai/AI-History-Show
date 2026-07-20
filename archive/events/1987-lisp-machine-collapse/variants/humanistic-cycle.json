@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "1987-lisp-machine-collapse",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "Lisp 机市场崩盘",
+        "en": "The Lisp Machine Market Collapse"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
+        "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "IEEE / DOI",
+                "zh": "IEEE / DOI"
+            },
+            "title": {
+                "en": "Avoiding Another AI Winter",
+                "zh": "《避免另一场 AI 寒冬》"
+            },
+            "description": {
+                "en": "James Hendler's short IEEE article is used as expert context for recurring AI-winter dynamics.",
+                "zh": "James Hendler 的 IEEE 短文用于提供 AI 寒冬反复出现的专家语境。"
+            },
+            "url": "https://doi.org/10.1109/MIS.2008.20",
+            "source": "IEEE Intelligent Systems",
+            "license": {
+                "en": "Reference link only; no article text is reproduced.",
+                "zh": "仅作为参考链接；不复用文章正文。"
+            },
+            "usage": {
+                "en": "Expert context source",
+                "zh": "专家语境来源"
+            },
+            "action": {
+                "en": "Open DOI page",
+                "zh": "打开 DOI 页面"
+            }
+        }
+    ],
+    "assetIds": ["asset-1987-lisp-machine-collapse-market-shift"],
+    "sourceIds": [
+        "source-ai-winter-overview",
+        "source-lisp-machine-history",
+        "source-avoiding-another-ai-winter",
+        "source-fifth-generation-project-context"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "1980 年代专家系统热潮制造了对专用 Lisp 硬件与知识工程工具的需求。其崩塌的重要性在于，它把技术失望转化成裁员、厂商失败和围绕 AI 标签的污名。",
+                "en": "The 1980s expert-system boom created demand for specialized Lisp hardware and knowledge-engineering tools. The collapse mattered because it translated technical disappointment into layoffs, failed vendors and a stigma around the AI label."
+            },
+            "sourceIds": ["source-ai-winter-overview"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪机制是商业悬空：当更便宜的平台削弱基础设施优势时，关于 AI 必然提升生产率的故事就变得脆弱。一旦用户能在别处运行有用工具，专用 AI 硬件就失去了光环。",
+                "en": "The emotional mechanism is commercial overhang: a story of inevitable AI productivity becomes fragile when cheaper platforms undercut its infrastructure. Once users can run useful tools elsewhere, specialized AI hardware loses its aura."
+            },
+            "sourceIds": ["source-ai-winter-overview"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 1980 年代后期的市场崩盘视为第二次 AI 寒冬的重要信号。它的遗产是提醒我们：AI 热情不仅依赖算法，也依赖经济性、可维护性与平台时机。",
+                "en": "Experts generally treat the late-1980s market collapse as a major signal of the second AI winter. Its legacy is a warning that AI enthusiasm depends on economics, maintainability and platform timing as much as on algorithms."
+            },
+            "sourceIds": ["source-ai-winter-overview"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "winter",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Industry correction",
+                "zh": "产业修正"
+            },
+            "term": {
+                "en": "Dedicated AI hardware boom",
+                "zh": "专用 AI 硬件热潮"
+            },
+            "modernTerm": {
+                "en": "Infrastructure bubbles, platform shifts and deployment cost",
+                "zh": "基础设施泡沫、平台转移与部署成本"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "专用 AI 硬件被更便宜的工作站替代，脆弱专家系统也让 1980 年代热潮降温。",
+        "en": "Specialized AI hardware lost its market as cheaper workstations and brittle expert systems cooled the 1980s boom."
+    },
+    "analysis": {
+        "what": {
+            "en": "A specialized AI industry lost economic support when general hardware became good enough.",
+            "zh": "当通用硬件变得足够好时，专用 AI 产业失去了经济支撑。"
+        },
+        "how": {
+            "en": "Expert-system enthusiasm required expensive machines, specialized staff and brittle knowledge bases that were hard to maintain.",
+            "zh": "专家系统热潮依赖昂贵机器、专门人员和难以维护的脆弱知识库。"
+        },
+        "why": {
+            "en": "The event shows that AI winters can be market corrections, not only scientific disappointments.",
+            "zh": "这个事件说明 AI 寒冬也可能是市场修正，而不只是科学失望。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Second AI winter",
+            "zh": "第二次 AI 寒冬"
+        },
+        "method": {
+            "en": "Market correction of expert-system infrastructure",
+            "zh": "专家系统基础设施的市场修正"
+        },
+        "artifact": {
+            "en": "Lisp machines and expert-system shells",
+            "zh": "Lisp 机与专家系统外壳"
+        },
+        "material": {
+            "en": "AI winter and Lisp machine histories",
+            "zh": "AI 寒冬与 Lisp 机历史资料"
+        },
+        "demo": {
+            "en": "Specialized AI hardware loses to general-purpose platforms",
+            "zh": "专用 AI 硬件输给通用平台"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "IEEE / DOI",
+                    "zh": "IEEE / DOI"
+                },
+                "title": {
+                    "en": "Avoiding Another AI Winter",
+                    "zh": "《避免另一场 AI 寒冬》"
+                },
+                "description": {
+                    "en": "James Hendler's short IEEE article is used as expert context for recurring AI-winter dynamics.",
+                    "zh": "James Hendler 的 IEEE 短文用于提供 AI 寒冬反复出现的专家语境。"
+                },
+                "url": "https://doi.org/10.1109/MIS.2008.20",
+                "source": "IEEE Intelligent Systems",
+                "license": {
+                    "en": "Reference link only; no article text is reproduced.",
+                    "zh": "仅作为参考链接；不复用文章正文。"
+                },
+                "usage": {
+                    "en": "Expert context source",
+                    "zh": "专家语境来源"
+                },
+                "action": {
+                    "en": "Open DOI page",
+                    "zh": "打开 DOI 页面"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "AI winter overview",
+                    "zh": "AI 寒冬概览"
+                },
+                "type": {
+                    "en": "Secondary history",
+                    "zh": "二手史料"
+                },
+                "url": "https://en.wikipedia.org/wiki/AI_winter"
+            },
+            {
+                "label": {
+                    "en": "Lisp machine history",
+                    "zh": "Lisp 机历史"
+                },
+                "type": {
+                    "en": "Technology history",
+                    "zh": "技术史"
+                },
+                "url": "https://en.wikipedia.org/wiki/Lisp_machine"
+            },
+            {
+                "label": {
+                    "en": "Avoiding Another AI Winter",
+                    "zh": "《避免另一场 AI 寒冬》"
+                },
+                "type": {
+                    "en": "Expert article",
+                    "zh": "专家文章"
+                },
+                "url": "https://doi.org/10.1109/MIS.2008.20"
+            },
+            {
+                "label": {
+                    "en": "Fifth Generation project context",
+                    "zh": "第五代计算机项目语境"
+                },
+                "type": {
+                    "en": "Secondary history",
+                    "zh": "二手史料"
+                },
+                "url": "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "1965-simon-ai-prediction",
+  "year": 1965,
+  "date": "1965",
+  "title": {
+    "zh": "西蒙的二十年 AI 预言",
+    "en": "Simon's Twenty-Year AI Prediction"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。",
+    "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国, 宾夕法尼亚州",
+      "en": "PA, United States"
+    },
+    "place": {
+      "zh": "卡内基理工学院",
+      "en": "Carnegie Institute of Technology"
+    },
+    "coordinates": [
+      40.4433,
+      -79.9436
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "herbert-a-simon",
+      "name": {
+        "en": "Herbert A. Simon",
+        "zh": "赫伯特·A·西蒙"
+      },
+      "role": {
+        "en": "AI pioneer and author of The Shape of Automation",
+        "zh": "AI 先驱，《人、管理与自动化的形态》作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

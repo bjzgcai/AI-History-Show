@@ -1,0 +1,66 @@
+{
+  "id": "1973-prolog",
+  "year": "1973",
+  "date": "1973",
+  "title": {
+    "zh": "PROLOG",
+    "en": "PROLOG"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>PROLOG 让逻辑变得可执行。程序员不再只写一步步过程，而是写事实与规则，再提出查询，由系统通过合一和回溯求解。它把定理证明、自然语言处理和知识表示连接成一种实用的符号 AI 工具。</p>",
+    "en": "<p>PROLOG made logic executable. Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking. The language joined theorem proving, natural-language work, and knowledge representation into a practical symbolic AI tool.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "法国马赛与英国爱丁堡",
+      "en": "Marseille, France and Edinburgh, United Kingdom"
+    },
+    "place": {
+      "zh": "艾克斯-马赛大学与爱丁堡大学",
+      "en": "Aix-Marseille University and University of Edinburgh"
+    },
+    "coordinates": [
+      43.3047,
+      5.3771
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "alain-colmerauer",
+      "role": {
+        "zh": "早期 Prolog 实现创建者",
+        "en": "Creator of the first Prolog implementation"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "robert-kowalski",
+      "role": {
+        "zh": "逻辑程序设计理论贡献者",
+        "en": "Logic programming theorist"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

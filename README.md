@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh.md)
 
-An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. Supports both Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and includes multiple storylines such as the core AI history exhibition, BenchCouncil AI100 achievements, and the gaming AI branch.
+An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. It supports Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and presents deep-learning history, BenchCouncil AI100 achievements, gaming AI, and the humanistic and emotional cycles surrounding AI.
 
 ## Repositories
 
@@ -37,7 +37,7 @@ npm run quality
 
 # Run the content management server locally
 npm run start:admin
-# Open http://localhost:3001/admin
+# Open http://localhost:3001/archive-admin
 ```
 
 Containerized preview:
@@ -47,7 +47,7 @@ docker build -t ai-history-show .
 docker run --rm -p 8000:8000 ai-history-show
 
 # Or run the Nginx presentation service with Compose
-docker compose up --build
+docker compose up --build presentation
 
 # Include the local admin service when needed
 docker compose --profile admin up --build
@@ -66,24 +66,30 @@ The exhibition ships with built-in Chinese/English support:
 - A language toggle button is rendered in both single- and dual-screen layouts
 - Milestone content fields (titles, descriptions, quotes, etc.) support a bilingual object form `{ zh: "...", en: "..." }`; missing locales fall back gracefully
 
-When authoring content, you can mix plain strings (treated as Chinese) and bilingual objects in the same event. The build step in `manage/generate.js` normalizes both forms into the final `milestones-data.js`.
+When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }` in Archive event and variant JSON. The Archive compiler resolves these records into the final `milestones-data.js`.
 
 ## Storylines
 
-The single-screen entry includes a story selector dialog in the top bar. The generated dataset currently contains:
+The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 146 Archive milestones across four source storylines, plus a unified map that merges deep-learning and AI100 records for browsing:
 
-| Storyline | Count | Notes |
-|-----------|-------|-------|
-| Core AI history | 21 | Main exhibition flow with the Three.js globe and milestone panels |
-| BenchCouncil AI100 achievements | 100 | Achievement-map layout with source cards, context sections, demos, and quizzes |
-| AI in Board & Tabletop Games | 13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
+| Public view                     | Archive records | Notes                                                                                                                 |
+| ------------------------------- | --------------: | --------------------------------------------------------------------------------------------------------------------- |
+| AI History Map                  |    Derived view | Unified browser combining deep-learning milestones and AI100 achievements                                             |
+| AI History (Deep Learning)      |              21 | Technical timeline from early AI through neural networks, scaled learning, and modern architectures                   |
+| BenchCouncil AI100 achievements |             100 | Achievement-map layout with source cards, context sections, demos, and quizzes                                        |
+| AI in Board & Tabletop Games    |              13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
+| Humanistic & emotional cycles   |              12 | Sci-fi prophecy, technology hype, AI winters, and risk debates                                                        |
 
 Open a specific storyline directly with `?storyline=...`, for example:
 
 ```text
+http://localhost:8000/index.html?storyline=deep-learning-history
 http://localhost:8000/index.html?storyline=bench-council-ai100
 http://localhost:8000/index.html?storyline=gaming-ai
+http://localhost:8000/index.html?storyline=humanistic-cycle
 ```
+
+The Archive identifier `deep-learning` is normalized to the public URL identifier `deep-learning-history`; use the latter when linking to the exhibition.
 
 The gaming branch supports SGF/game-state evolution modules. Source SGF examples and tooling live in:
 
@@ -102,7 +108,7 @@ npm run quality
 npm run validate:deployment
 ```
 
-The quality gate runs ESLint, Prettier format checks, and the existing Node.js verification scripts in sequence. Deployment validation regenerates the milestone data, runs tests, starts the presentation/admin services, builds the Docker image, and validates the Compose configuration in CI.
+`npm run validate:deployment` validates Archive data, regenerates both runtime data files, assembles and checks the allowlisted static bundle, runs the Node.js test suite, and smoke-tests the presentation and admin HTTP services. CI additionally builds and smoke-tests the Docker presentation image and validates the Compose configuration.
 
 Mobile support scope, viewport checklist, and responsive validation notes are recorded in [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md).
 
@@ -116,9 +122,9 @@ npm run audit:ai100-accuracy
 
 Modules that should be prioritized for additional test coverage:
 
-- `manage/generate.js`: generated milestone data structure, quote selection, video lookup, missing-asset warnings.
+- `scripts/archive-compiler.js`: storyline resolution, variant selection, and generated milestone shape.
 - `shared/milestone-view.js`: multilingual rendering fallbacks and media metadata normalization.
-- `manage/server.js`: `/api/generate/diff`, `/api/events`, and image/video metadata normalization.
+- `manage/server.js`: Archive file validation and safe content-management boundaries.
 
 ## Code Sync
 
@@ -146,203 +152,59 @@ If you also configure a Gitee remote locally (e.g. `git remote add gitee ssh://g
 
 ## Content Management Workflow
 
-### Option A: Visual admin page (recommended)
+Archive JSON is the production source of truth. Start the local management service and open the Archive editor:
 
 ```bash
-node manage/server.js
-# Open http://localhost:3001/admin
+npm run start:admin
+# Open http://localhost:3001/archive-admin
 ```
 
-Edit categories and event content directly in the browser, click **Save**, then click **▶ Apply data**. The admin UI preserves bilingual fields and writes them back into `manage/events.js`.
+Edit `archive/events/<event-id>/*.json` and `archive/storylines/*.json` in the Archive editor, run validation, then regenerate the runtime files:
 
-### Option B: Edit files directly + CLI
-
-> Edit config files → run the script → refresh the browser
-
-```
-manage/catalog.js   ─┐
-                      ├─→  node manage/generate.js  ─→  milestones-data.js
-manage/events.js    ─┘
-manage/quizzes.js   ─┘
-resources/videos/   ─┘
+```text
+archive/storylines/*.json ─┐
+archive/events/*/          ├─→ npm run validate:archive ─→ npm run generate
+resources/                 ┘                              ├─→ milestones-data.js
+                                                           └─→ milestones-data-default.js
 ```
 
 ```bash
-node manage/generate.js
+npm run validate:archive
+npm run generate
 ```
 
-No dependencies need to be installed — run it directly. If the script fails (or has not yet been run), the page automatically falls back to `milestones-data-default.js`. Example output:
-
-```
-✓ Generated: milestones-data.js
-  5 categories, 1 branch, 134 events total
-```
-
----
-
-### File A: `manage/catalog.js` — display catalog
-
-Controls **which categories and events are shown, and in what order**.
-
-```javascript
-module.exports = {
-  categories: [
-    {
-      // Both `name` and `subtitle` are bilingual objects.
-      name: {
-        en: "Genesis of AI (1950s-1970s)",   // Full category name
-        zh: "AI创世纪 (1950s-1970s)"
-      },
-      subtitle: {
-        en: "Genesis of AI",                  // Short title shown on the page
-        zh: "AI创世纪"
-      },
-      events: [
-        "1956-dartmouth",                     // Event key — must exist in events.js
-        "1957-perceptron",
-        "1969-ai-winter"
-      ]
-    },
-    // ... more categories
-  ]
-};
-```
-
-`catalog.js` supports two top-level display lists:
-
-- `categories`: main linear exhibition categories, including the BenchCouncil AI100 category.
-- `branches`: alternate storyline branches such as `gaming-ai`; branch-generated milestone IDs are prefixed with the branch ID, for example `milestone-gaming-ai-2016-alphago`.
-
-**Current main categories (5 categories, 121 generated events):**
-
-| Category | Events | Timespan |
-|----------|--------|----------|
-| Genesis of AI | 3 | 1950s–1970s |
-| Neural Networks and Connectionism | 4 | 1980s–2000s |
-| Deep Learning and Unified Paradigms | 7 | 2010s–2020s |
-| Large Models and Scientific Intelligence | 7 | 2018–2025 |
-| BenchCouncil AI100 Achievements | 100 | 1940s–2020s |
-
-**Current branch storylines:**
-
-| Branch | Events | Layout |
-|--------|--------|--------|
-| AI in Board & Tabletop Games (`gaming-ai`) | 13 | Horizontal branch timeline |
-
----
-
-### File B: `manage/events.js` — event content
-
-Each event key corresponds to a complete content object. Text fields accept either a plain string (treated as Chinese) or a bilingual object `{ zh, en }`:
-
-```javascript
-module.exports = {
-  "1956-dartmouth": {
-    year: 1956,
-    title: { zh: "达特茅斯会议", en: "Dartmouth Workshop" },
-
-    location: {
-      name: { zh: "达特茅斯学院", en: "Dartmouth College" },
-      country: { zh: "美国，新罕布什尔州", en: "Hanover, New Hampshire, USA" },
-      coordinates: [43.7044, -72.2887]   // [latitude, longitude]
-    },
-
-    description: { zh: `中文详细描述，支持 HTML。`, en: `English description, HTML allowed.` },
-
-    figures: [
-      { name: "John McCarthy", role: { zh: "会议发起人", en: "Workshop organizer" } },
-      { name: "Marvin Minsky", role: { zh: "联合发起人", en: "Co-organizer" } }
-    ],
-
-    commentaryVideo: "URL of the commentary video (.mp4)",
-
-    quoteText: { zh: "引言正文\n支持换行", en: "Quote text\nNewlines become <br>" },
-    quotePage: "— Citation source",
-
-    images: [
-      "resources/images/1956-dartmouth/photo1.jpg",
-    ],
-
-    videos: ["dQw4w9WgXcQ"],   // YouTube video ID — must have matching JSON in resources/videos/
-  },
-
-  // ... more events
-};
-```
-
-**Field reference:**
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `year` | number | Year |
-| `title` | string \| `{zh, en}` | Event title |
-| `location` | object | Place name, country, latitude/longitude coordinates |
-| `description` | string \| `{zh, en}` | Detailed description; HTML allowed |
-| `figures` | array | Key figures `[{name, role}]` |
-| `commentaryVideo` | string | Commentary video URL (.mp4) |
-| `quoteText` | string \| `{zh, en}` | Quote text; `\n` becomes `<br>` automatically |
-| `quotePage` | string | Quote source / attribution |
-| `images` | array | List of relative image paths |
-| `videos` | array | List of YouTube video IDs (matching JSON metadata required) |
-
-AI100 and branch events may also include richer fields such as:
-
-| Field | Description |
-|-------|-------------|
-| `storyline` | Storyline identifier and label; generated automatically for catalog branches |
-| `achievement` | AI100/branch achievement metadata, demo configuration, visual modules, and sources |
-| `commentarySections` | Bilingual right-side context sections |
-| `analysis` | Branch timeline summary blocks (`what`, `how`, `why`) |
-| `papers` | Branch paper/source list rendered in the branch timeline and sources panels |
-| `quoteLabel` | Custom label for quote-like records such as match records or paper cues |
-
----
-
-### Figure avatars: `manage/figure-avatars.js`
-
-A canonical registry of portraits used in chapter data. Each entry maps a figure's name to a local avatar image and optional metadata:
-
-```javascript
-"Alec Radford": {
-  type: "person",
-  status: "ready",
-  wikipediaTitle: "",
-  avatar: "resources/images/figures/alec-radford.png",
-  note: "Source notes for future maintenance."
-}
-```
-
-`manage/generate.js` consults this registry to fill in avatars across events. To audit which figures are missing portraits or notes, run:
+The legacy editor at `http://localhost:3001/admin` is retained as a read-only reference. Its write, restore, image mutation, and generation endpoints return HTTP 403. The former compatible generator remains available only for comparison or rollback:
 
 ```bash
-node scripts/report-figure-avatars.js
-# Output: manage/figure-avatar-report.md
+npm run generate:legacy
 ```
+
+Do not hand-edit `milestones-data.js` or `milestones-data-default.js`.
+
+Pages and the Docker presentation image share the same allowlisted release bundle:
+
+```bash
+npm run build:static
+# Output: .tmp/static-site/
+```
+
+The bundle contains the presentation pages, runtime data, `shared/`, `resources/`, required `public/` assets, and `.nojekyll`; it excludes Archive source JSON, management tools, Legacy data, reports, research files, and scripts.
+
+For the complete entity graph, compile sequence, failure safeguards, and deployment boundary, see [`docs/archive-data-flow.md`](docs/archive-data-flow.md). For the Archive entity layout and source/asset relationships, see [`archive/README.md`](archive/README.md). For retained browser resources, see [`docs/archive-resources-retention.md`](docs/archive-resources-retention.md).
 
 ---
 
-### Video metadata: `resources/videos/{key}.json`
+### Legacy compatibility reference
 
-YouTube video metadata for each event is stored in its own file. Format:
+The files under `manage/`—including `catalog.js`, `events.js`, the extra-event helpers, quizzes, avatars, and `generate.js`—describe the former compatible content system. They remain available for:
 
-```json
-{
-  "candidate_videos": [
-    {
-      "id": "dQw4w9WgXcQ",
-      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "embed_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "title": "Video title",
-      "channel": "Channel name",
-      "duration": "10:23",
-      "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-      "source": "YouTube"
-    }
-  ]
-}
-```
+- `npm run generate:legacy` rollback/comparison output;
+- parity reports that compare Legacy and Archive rendering;
+- migration and audit scripts that still map old event IDs into Archive entities.
 
-The generator looks up each video ID listed in `events.js` and writes the matched metadata into the output.
+They are **not production authoring inputs**. Do not use `/admin` or edit these files expecting `npm run generate` to consume the changes. Current storyline membership and order live in `archive/storylines/*.json`; event facts, assets, sources, quizzes, and presentation variants live in `archive/events/<event-id>/`.
+
+The `/admin` page exposes this Legacy dataset as a read-only reference. Its mutation endpoints are blocked by the server. Retained Legacy files remain available only for an explicit rollback/comparison period and for migration tools; the production Archive compiler no longer reads `manage/event-fusions.js` for milestone identities.
 
 ---
 
@@ -353,19 +215,21 @@ AI-History-Show/
 ├── index.html                   # Adaptive entry (Three.js globe + milestone view)
 ├── dual-screen.html             # Fixed dual-screen entry
 │
-├── milestones-data.js           # ⚠️ Auto-generated; do not hand-edit (output of generate.js)
-├── milestones-data-default.js   # Default fallback data (used when generate.js fails)
+├── milestones-data.js           # ⚠️ Archive-generated runtime data; do not hand-edit
+├── milestones-data-default.js   # Archive-generated fallback data; do not hand-edit
 │
-├── manage/                      # Content management directory
-│   ├── catalog.js               # File A: category and event catalog
-│   ├── events.js                # File B: per-event content
-│   ├── ai100-extra-events.js    # Additional BenchCouncil AI100 content
-│   ├── gaming-extra-events.js   # Gaming AI branch content
-│   ├── quizzes.js               # AI100 / branch quiz data
-│   ├── figure-avatars.js        # Canonical figure-avatar registry
-│   ├── generate.js              # Generator script (no dependencies)
-│   ├── server.js                # Visual admin server (node manage/server.js)
-│   └── admin.html               # Admin page (served by server.js)
+├── archive/                      # Production content authority
+│   ├── storylines/               # Storyline membership, variants, enablement, and order
+│   └── events/                   # Canonical event JSON, evidence, assets, quizzes, and variants
+│
+├── manage/                      # Local content tools and retained Legacy compatibility data
+│   ├── archive-admin.html        # Writable Archive JSON editor
+│   ├── admin.html                # Read-only Legacy viewer
+│   ├── server.js                 # Local Archive/Legacy management server
+│   ├── authority-boundary.js     # Legacy mutation route boundary
+│   ├── catalog.js                # Retained Legacy catalog
+│   ├── events.js                 # Retained Legacy event content
+│   └── generate.js               # Explicit Legacy comparison/rollback generator
 │
 ├── shared/                      # Shared frontend logic across single/dual screen
 │   ├── i18n.js                  # Bilingual dictionary and runtime locale switching
@@ -374,14 +238,13 @@ AI-History-Show/
 │   ├── swipe-navigation.js      # Touch swipe paging
 │   └── utils.js
 │
-├── scripts/                     # Local verification and reporting scripts
+├── scripts/                     # Generation, validation, migration, and reporting scripts
+│   ├── generate-archive-data.js # Default Archive-native generator
+│   ├── archive-compiler.js       # Archive storyline/event compiler
+│   ├── test-archive-authority.js
 │   ├── test-layout-router.js
 │   ├── test-swipe-navigation.js
-│   ├── validate-ai100-context.js
-│   ├── validate-ai100-quizzes-grounded.js
-│   ├── audit-ai100-accuracy.js
-│   ├── sgf_to_video.py
-│   └── report-figure-avatars.js
+│   └── validate-archive.js
 │
 ├── resources/
 │   ├── images/                  # Event images (subfolders per event key)
@@ -401,9 +264,10 @@ AI-History-Show/
 - **3D globe**: Three.js rendering, auto-locates to the geographic coordinates of the current event
 - **Bilingual UI**: Switch between Chinese and English at any time; the choice persists across sessions
 - **Page navigation**: Buttons or keyboard arrows (`←` / `→`)
-- **Storyline selector**: Dialog-based selector for core history, AI100, and gaming AI branch views
+- **Storyline selector**: Dialog-based selector for the unified history map, deep-learning history, AI100, gaming AI, and the humanistic cycle
 - **AI100 achievement map**: Region filtering, source cards, paper-style demos, and grounded quizzes
 - **Gaming AI branch**: Horizontal timeline with game-record/evolution modules and branch-specific source cards
+- **Humanistic cycle**: Cultural counter-timeline connecting science fiction, hype, AI winters, ethics, and risk debates
 - **Dual-screen auto paging**: `dual-screen.html` supports "Start/Stop auto play" — off by default; once enabled, pages cycle every 10 seconds
 - **Video playback**: Embedded YouTube videos plus local commentary videos
 - **SGF/game evolution playback**: Optional generated board-state clips with GIF fallback
@@ -416,7 +280,7 @@ AI-History-Show/
 
 - **Pure frontend**: HTML5 + CSS3 + JavaScript ES6+, no build tool and no runtime npm dependencies on the frontend
 - **Three.js** (loaded via CDN): 3D globe rendering
-- **Node.js** (used only for content generation): runs `manage/generate.js`
+- **Node.js**: compiles Archive JSON with `scripts/generate-archive-data.js` and runs local management/validation tooling
 - **Python** (optional): used by `scripts/sgf_to_video.py` to generate game-evolution clips
 
 ---

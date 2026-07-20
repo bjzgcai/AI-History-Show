@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-alec-radford",
+    "type": "image",
+    "path": "resources/images/figures/alec-radford.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "亚历克·拉德福德肖像",
+      "en": "Alec Radford portrait"
+    },
+    "subcaption": {
+      "zh": "CLIP 主要作者",
+      "en": "CLIP lead author"
+    },
+    "sourceId": "source-learning-transferable-visual-models-from-natural-language-supervision",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2021-clip-contrastive-pairs",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "CLIP 对比图文对",
+      "en": "CLIP contrastive pairs"
+    },
+    "subcaption": {
+      "zh": "关于图文对比学习的本地原创解释图。",
+      "en": "Original local explainer of image-text contrastive learning."
+    },
+    "sourceId": "source-learning-transferable-visual-models-from-natural-language-supervision",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

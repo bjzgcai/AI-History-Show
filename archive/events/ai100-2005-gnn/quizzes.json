@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2005-gnn-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "图神经网络在节点之间传递什么？",
+      "en": "What does a graph neural network pass between nodes?"
+    },
+    "options": [
+      {
+        "zh": "来自邻居的学习型消息",
+        "en": "Learned messages from neighbors"
+      },
+      {
+        "zh": "只有原始像素",
+        "en": "Only raw pixels"
+      },
+      {
+        "zh": "电子表格颜色",
+        "en": "Spreadsheet colors"
+      },
+      {
+        "zh": "固定音频编码",
+        "en": "A fixed audio codec"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "GNN 沿图边交换消息来更新节点状态。",
+      "en": "GNNs update node states by exchanging messages along graph edges."
+    },
+    "sourceIds": [
+      "source-the-graph-neural-network-model"
+    ],
+    "assetIds": [
+      "asset-2005-gnn-message-passing"
+    ]
+  }
+]

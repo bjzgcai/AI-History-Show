@@ -10028,6 +10028,7 @@
         }
     </script>
     <script src="shared/i18n.js"></script>
+    <script src="shared/storyline-routing.js"></script>
     <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -10059,7 +10060,7 @@
         const MOBILE_GLOBE_PIXEL_RATIO_CAP = 1.5;
         const TABLET_GLOBE_PIXEL_RATIO_CAP = 1.75;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
-        const DEEP_STORYLINE_ID = 'deep-learning-history';
+        const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const STORYLINE_OPTIONS = [
             {
@@ -10120,12 +10121,7 @@
             }
         ];
         const allMilestones = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
-        const getMilestoneStorylineId = (milestone) => {
-            const storyline = milestone && milestone.storyline;
-            if (typeof storyline === 'string') return storyline || DEFAULT_STORYLINE_ID;
-            if (storyline && typeof storyline === 'object' && storyline.id) return storyline.id;
-            return DEEP_STORYLINE_ID;
-        };
+        const getMilestoneStorylineId = (milestone) => StorylineRouting.getMilestoneStorylineId(milestone, DEEP_STORYLINE_ID);
         const getStorylineMilestones = (storylineId) => (storylineId === UNIFIED_STORYLINE_ID
             ? buildUnifiedMilestones()
             : allMilestones.filter((item) => getMilestoneStorylineId(item) === storylineId).sort(compareMilestonesByTime));
@@ -10267,7 +10263,7 @@
                 return '';
             }
         };
-        const getRequestedStorylineId = () => getSearchParam('storyline');
+        const getRequestedStorylineId = () => StorylineRouting.normalizeStorylineId(getSearchParam('storyline'));
         const getRequestedQuizMode = () => getSearchParam('quiz');
         const getRequestedUiMode = () => getSearchParam('uiMode');
         const getRequestedEventId = () => getSearchParam('event');
@@ -17306,9 +17302,7 @@
             const attributionHtml = String(vm && vm.quoteAttribution ? vm.quoteAttribution : '').trim();
             const attributionText = stripHtml(attributionHtml || (vm && vm.quotePage ? vm.quotePage : ''));
             const quote = formatInlineTextHtml(quoteHtml);
-            const attribution = attributionHtml
-                ? formatInlineTextHtml(attributionHtml)
-                : escapeHtml(attributionText);
+            const attribution = attributionHtml ? formatInlineTextHtml(attributionHtml) : escapeHtml(attributionText);
             return {
                 label: tx('quoteExcerpt'),
                 html: attributionText ? `${quote}<br>${escapeHtml(tx('source'))}：${attribution}` : quote

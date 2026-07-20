@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2016-gcn-spectral-convolution",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "GCN 解释图",
+      "en": "GCN explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2016-gcn-photo",
+    "type": "image",
+    "path": "https://tkipf.github.io/images/photo.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "GCN 外部参考图",
+      "en": "GCN external reference image"
+    },
+    "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

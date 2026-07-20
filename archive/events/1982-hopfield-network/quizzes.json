@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1982-hopfield-network-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "在 Hopfield 网络中，被存储的模式像什么？",
+      "en": "In a Hopfield network, what does a stored pattern act like?"
+    },
+    "options": [
+      {
+        "zh": "能量地形中的稳定吸引子",
+        "en": "A stable attractor in an energy landscape"
+      },
+      {
+        "zh": "固定 dropout 概率",
+        "en": "A fixed dropout probability"
+      },
+      {
+        "zh": "网页规模图像标签",
+        "en": "A web-scale image label"
+      },
+      {
+        "zh": "单次检测框",
+        "en": "A single-shot bounding box"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Hopfield 网络把记忆存为稳定状态；带噪输入可以向这些状态收敛。",
+      "en": "Hopfield networks store memories as stable states; noisy inputs can relax toward those states."
+    },
+    "sourceIds": [
+      "source-neural-networks-and-physical-systems"
+    ],
+    "assetIds": [
+      "asset-1982-hopfield-network-john-hopfield"
+    ]
+  }
+]

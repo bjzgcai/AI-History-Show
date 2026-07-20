@@ -1,5 +1,6 @@
 # Event Fusion Data Workflow
 
+> **LEGACY WORKFLOW — current status 2026-07-17:** This document describes the retained Legacy generator and historical fusion review process. Production `npm run generate` now compiles Archive canonical events and storyline variants directly, with milestone IDs stored in `archive/storylines/*.json`; it does not consume `manage/event-fusions.js`. Use the commands below only for explicit rollback, comparison, migration, or parity work. Restore production runtime data with `npm run generate` afterward.
 This document summarizes how duplicate events from the deep-learning storyline and the BenchCouncil AI100 storyline are fused into one consistent presentation.
 
 ## Goal
@@ -37,7 +38,7 @@ Edit these files instead of editing generated data directly.
   - Do not usually edit this unless the fusion mechanism itself needs to change.
 
 - `manage/generate-event-fusion-review.js`
-  - Generates `event-fusion-review.html`.
+  - Generates `.tmp/archive-review/event-fusion-review.html`.
   - The review page compares deep-learning raw data, AI100 raw data, and the final fused data.
 
 ## Generated Files
@@ -46,7 +47,7 @@ Do not edit these by hand.
 
 - `milestones-data.js`
 - `milestones-data-default.js`
-- `event-fusion-review.html`
+- `.tmp/archive-review/event-fusion-review.html`
 
 Regenerate them with the commands below.
 
@@ -65,10 +66,10 @@ Regenerate them with the commands below.
    node manage/generate-event-fusion-review.js
    ```
 
-5. Open the review page:
+5. Open the generated file directly in a browser, or serve the repository root with a local server that does not hide dot-directories:
 
    ```text
-   http://127.0.0.1:8000/event-fusion-review.html
+   .tmp/archive-review/event-fusion-review.html
    ```
 
 6. Check the right column, `融合后最终数据`.
@@ -113,7 +114,7 @@ The review page also reads `milestones-data.js` when generated. Therefore, the f
 
 There is one important difference:
 
-- `event-fusion-review.html` expands the final data for inspection.
+- `.tmp/archive-review/event-fusion-review.html` expands the final data for inspection.
 - `index.html` applies UI display logic, such as choosing a primary image, preferring diagrams, and avoiding portrait-like media in some right-side panels.
 
 So the data source is the same, but the exact image shown in a specific UI slot may be selected by frontend logic.
@@ -157,8 +158,8 @@ npm run validate:startup
 
 Check where it appears:
 
-- Raw column in `event-fusion-review.html`: expected; raw data is not filtered.
-- Right column in `event-fusion-review.html`: run `node manage/generate.js` and `node manage/generate-event-fusion-review.js` again.
+- Raw column in `.tmp/archive-review/event-fusion-review.html`: expected; raw data is not filtered.
+- Right column in `.tmp/archive-review/event-fusion-review.html`: run `node manage/generate.js` and `node manage/generate-event-fusion-review.js` again.
 - Avatar circle or figure card: update `manage/figure-avatars.js` or the explicit `figures` entry in `manage/event-fusions.js`.
 - Frontend-specific panel: check `index.html` image selection helpers such as `getUiDetailImages()` and `getUiMediaVisualImage()`.
 

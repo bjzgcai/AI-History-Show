@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1965-dendral-edward-feigenbaum",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "爱德华·费根鲍姆 肖像",
+      "en": "Edward Feigenbaum portrait"
+    },
+    "subcaption": {
+      "zh": "来自 维基共享资源 的图灵奖得主照片。",
+      "en": "Turing laureate photo from Wikimedia Commons."
+    },
+    "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Creative Commons license stated on Commons file page.",
+        "en": "Creative Commons license stated on Commons file page."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1965-dendral-mass-spectrum",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "质谱到片段",
+      "en": "Mass spectrum to fragments"
+    },
+    "subcaption": {
+      "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for DENDRAL, based on the listed source material."
+    },
+    "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1965-dendral-rule-filter",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "规则筛选分子搜索",
+      "en": "Rule-filtered molecule search"
+    },
+    "subcaption": {
+      "zh": "DENDRAL 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for DENDRAL, based on the listed source material."
+    },
+    "sourceId": "source-applications-of-artificial-intelligence-for-chemical-inference",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

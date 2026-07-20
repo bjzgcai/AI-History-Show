@@ -1,0 +1,58 @@
+{
+  "id": "1974-frame",
+  "year": "1974",
+  "date": "1974",
+  "title": {
+    "zh": "框架",
+    "en": "Frame"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>",
+    "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国马萨诸塞州",
+      "en": "Massachusetts, United States"
+    },
+    "place": {
+      "zh": "麻省理工学院 人工智能实验室",
+      "en": "MIT Artificial Intelligence Laboratory"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "marvin-minsky",
+      "role": {
+        "zh": "框架表示思想提出者",
+        "en": "Author of the frame representation proposal"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

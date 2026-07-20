@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2014-adam-diederik-kingma",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+    "role": "source-card",
+    "caption": {
+      "zh": "迪德里克·P·金马 肖像",
+      "en": "Diederik P. Kingma portrait"
+    },
+    "subcaption": {
+      "zh": "来自 金马 个人网站的人物照片。",
+      "en": "Portrait from Kingma's personal website."
+    },
+    "sourceId": "source-adam-a-method-for-stochastic-optimization",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Personal website photo; rights not stated.",
+        "en": "Personal website photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-adam-moment-traces",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Adam 一阶/二阶矩曲线",
+      "en": "Adam moment traces"
+    },
+    "subcaption": {
+      "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Adam Optimizer, based on the related source material."
+    },
+    "sourceId": "source-adam-a-method-for-stochastic-optimization",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-adam-loss-trajectory",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "损失地形轨迹",
+      "en": "Loss landscape trajectory"
+    },
+    "subcaption": {
+      "zh": "Adam 优化器 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Adam Optimizer, based on the related source material."
+    },
+    "sourceId": "source-adam-a-method-for-stochastic-optimization",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

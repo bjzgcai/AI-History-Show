@@ -1,0 +1,58 @@
+{
+  "id": "ai100-1983-actor-critic",
+  "year": 1983,
+  "date": "1983",
+  "title": {
+    "zh": "Actor-Critic",
+    "en": "Actor-Critic"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>",
+    "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "Amherst, United States",
+      "en": "Amherst, United States"
+    },
+    "place": {
+      "zh": "University of Massachusetts Amherst",
+      "en": "University of Massachusetts Amherst"
+    },
+    "coordinates": [
+      42.3868,
+      -72.5301
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "andrew-barto",
+      "role": {
+        "zh": "Actor-Critic 共同作者",
+        "en": "Actor-Critic co-author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

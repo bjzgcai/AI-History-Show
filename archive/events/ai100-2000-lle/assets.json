@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2000-lle-neighbor-reconstruction",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "局部线性嵌入",
+      "en": "Locally linear embedding"
+    },
+    "subcaption": {
+      "zh": "关于 LLE 邻域重建的本地原创解释图。",
+      "en": "Original local explainer of LLE neighborhood reconstruction."
+    },
+    "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb",
+    "type": "image",
+    "path": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "局部线性嵌入 外部参考图",
+      "en": "Locally Linear Embedding external reference image"
+    },
+    "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

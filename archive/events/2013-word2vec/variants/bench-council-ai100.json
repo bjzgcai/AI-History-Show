@@ -1,0 +1,302 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2013-word2vec",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Word2Vec",
+    "en": "Word2Vec"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。</p>",
+    "en": "<p>Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "word2vec",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "NeurIPS / arXiv",
+        "zh": "神经信息处理系统大会 / arXiv"
+      },
+      "title": {
+        "en": "Word2Vec papers",
+        "zh": "Word2Vec 论文"
+      },
+      "description": {
+        "en": "Primary word embedding sources; local images redraw skip-gram windows and vector analogies.",
+        "zh": "词嵌入原始来源；本地图重画 skip-gram 窗口和向量类比。"
+      },
+      "url": "https://arxiv.org/abs/1301.3781",
+      "source": "https://arxiv.org/abs/1301.3781",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open preprint",
+        "zh": "打开预印本"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2013-word2vec-tomas-mikolov",
+    "asset-2013-word2vec-skipgram-window",
+    "asset-2013-word2vec-vector-analogy"
+  ],
+  "sourceIds": [
+    "source-efficient-estimation-of-word-representations-in-vector-space",
+    "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
+    "source-google-code-archive-word2vec"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2013-word2vec-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Word2Vec 之前，许多 NLP 系统依赖稀疏计数或手工特征。Word2Vec 让密集向量在网页规模上变得实用。",
+        "en": "Before word2vec, many NLP systems relied on sparse counts or hand-built features. Word2vec made dense vectors practical at web scale."
+      },
+      "sourceIds": [
+        "source-efficient-estimation-of-word-representations-in-vector-space"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "模型要么由词预测上下文，要么由上下文预测词，从而迫使相关词占据向量空间的相近区域。 关键机制是Skip-gram 与 CBOW 神经词嵌入，它把资料线索与可见的演示行为连接起来。",
+        "en": "The model predicts context from a word or a word from context, forcing related words to occupy nearby regions of vector space. The key mechanism is Skip-gram and CBOW neural word embeddings, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-efficient-estimation-of-word-representations-in-vector-space"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Word2Vec 视为基础性的嵌入方法，它让分布式语义能够规模化运行。它的长期影响在于意义的几何观仍影响检索、表示学习和向量数据库。",
+        "en": "Experts generally treat Word2Vec as a foundational embedding method that made distributional semantics operational at scale. Its long-term legacy is the geometric view of meaning that still informs retrieval, representation learning, and vector databases."
+      },
+      "sourceIds": [
+        "source-efficient-estimation-of-word-representations-in-vector-space"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Tomas Mikolov",
+        "zh": "托马斯·米科洛夫"
+      },
+      "role": {
+        "en": "Lead author of word2vec papers",
+        "zh": "word2vec 论文主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"distributed representations of words\"",
+    "zh": "\"词的分布式表示\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Distributed Representations of Words and Phrases and their Compositionality",
+      "zh": "词与短语的分布式表示及其组合性"
+    },
+    "workAuthors": {
+      "en": "Tomas Mikolov et al., NeurIPS, 2013",
+      "zh": "托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1301.3781"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Word2Vec",
+    "zh": "BenchCouncil AI100：神经网络 / Word2Vec"
+  },
+  "quoteAttribution": {
+    "en": "<em>Distributed Representations of Words and Phrases and their Compositionality</em>, Tomas Mikolov et al., NeurIPS, 2013",
+    "zh": "《词与短语的分布式表示及其组合性》, 托马斯·米科洛夫等, 神经信息处理系统大会, 2013"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Skip-gram and CBOW neural word embeddings",
+      "zh": "Skip-gram 与 CBOW 神经词嵌入"
+    },
+    "artifact": {
+      "en": "Word2Vec embedding toolkit",
+      "zh": "Word2Vec 嵌入工具"
+    },
+    "material": {
+      "en": "NeurIPS paper, arXiv preprint, and Google code archive",
+      "zh": "神经信息处理系统大会 论文、arXiv 预印本与 谷歌 代码档案"
+    },
+    "demo": {
+      "en": "Move through a semantic vector space",
+      "zh": "在语义向量空间中移动"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Skip-gram",
+          "zh": "Skip-gram"
+        },
+        "text": {
+          "en": "Predicts neighboring words from a center word.",
+          "zh": "由中心词预测邻近词。"
+        }
+      },
+      {
+        "label": {
+          "en": "Negative Sampling",
+          "zh": "负采样"
+        },
+        "text": {
+          "en": "Speeds training by contrasting observed word-context pairs with sampled alternatives.",
+          "zh": "通过对比真实词-上下文对和采样负例来加速训练。"
+        }
+      },
+      {
+        "label": {
+          "en": "Vector Analogy",
+          "zh": "向量类比"
+        },
+        "text": {
+          "en": "Relations such as gender or capital-city can appear as vector offsets.",
+          "zh": "性别、首都等关系可表现为向量偏移。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Neural Language Model",
+        "zh": "神经语言模型"
+      },
+      {
+        "en": "GloVe",
+        "zh": "GloVe"
+      },
+      {
+        "en": "Transformer embeddings",
+        "zh": "Transformer 嵌入"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Czech Republic",
+        "zh": "捷克"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Skip-gram",
+        "zh": "Skip-gram"
+      },
+      {
+        "en": "Negative Sampling",
+        "zh": "负采样"
+      },
+      {
+        "en": "Vector Analogy",
+        "zh": "向量类比"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "NeurIPS / arXiv",
+          "zh": "神经信息处理系统大会 / arXiv"
+        },
+        "title": {
+          "en": "Word2Vec papers",
+          "zh": "Word2Vec 论文"
+        },
+        "description": {
+          "en": "Primary word embedding sources; local images redraw skip-gram windows and vector analogies.",
+          "zh": "词嵌入原始来源；本地图重画 skip-gram 窗口和向量类比。"
+        },
+        "url": "https://arxiv.org/abs/1301.3781",
+        "source": "https://arxiv.org/abs/1301.3781",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open preprint",
+          "zh": "打开预印本"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google Brain",
+      "zh": "谷歌大脑"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  }
+}

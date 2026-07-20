@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "GCN 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "GCN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-semi-supervised-classification-with-graph-convolutional-networks",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。</p>",
+      "en": "<p>GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.</p>"
+    },
+    "sourceIds": [
+      "source-semi-supervised-classification-with-graph-convolutional-networks",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  }
+]

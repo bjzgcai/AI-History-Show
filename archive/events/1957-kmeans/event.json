@@ -1,0 +1,58 @@
+{
+  "id": "1957-kmeans",
+  "year": "1957 / 1982",
+  "date": "1957 / 1982",
+  "title": {
+    "zh": "K-means 聚类",
+    "en": "K-means"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
+    "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国新泽西州",
+      "en": "New Jersey, United States"
+    },
+    "place": {
+      "zh": "贝尔实验室",
+      "en": "Bell Labs"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4013
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "stuart-lloyd",
+      "role": {
+        "zh": "劳埃德 式 k-means 量化方法作者",
+        "en": "Author of Lloyd's k-means-style quantization method"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

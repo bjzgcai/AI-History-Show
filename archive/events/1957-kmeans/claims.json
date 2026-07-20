@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "K-means 聚类 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "K-means is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-least-squares-quantization-in-pcm",
+      "source-bell-labs-k-means-history-note"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
+      "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+    },
+    "sourceIds": [
+      "source-least-squares-quantization-in-pcm",
+      "source-bell-labs-k-means-history-note"
+    ],
+    "status": "needs-source"
+  }
+]

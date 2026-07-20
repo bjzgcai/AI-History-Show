@@ -1,0 +1,272 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2014-vgg",
+  "displayTitle": {
+    "zh": "VGG 网络",
+    "en": "VGG Networks"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "vgg",
+  "assetIds": [
+    "asset-2014-vgg-andrew-zisserman",
+    "asset-2014-vgg-depth-configurations",
+    "asset-2014-vgg-receptive-field"
+  ],
+  "sourceIds": [
+    "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+    "source-oxford-vgg-very-deep-convnets",
+    "source-torchvision-vgg-model-family"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-2014-vgg-ai100",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "AlexNet 之后，研究者知道大型 CNN 能赢得 ImageNet，但架构设计空间仍然混乱。VGG 追问：如果谨慎增加深度，一个简单同质化设计能走多远？",
+        "en": "After AlexNet, the field knew that large CNNs could win ImageNet, but the design space was still messy. VGG asked how far a simple homogeneous design could go if depth was increased carefully."
+      },
+      "sourceIds": [
+        "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "VGG 不混用大量卷积核尺寸，而是按规则堆叠小卷积。网络因此变深，同时架构仍保持统一。",
+        "en": "Instead of mixing many filter sizes, VGG stacks small convolutions in a regular pattern. The network becomes deeper without turning the architecture into a collection of special cases."
+      },
+      "sourceIds": [
+        "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。它的长期影响在于清晰性：即使新模型更高效，它仍适合讲解网络深度、预训练视觉特征和基线比较。",
+        "en": "Experts generally treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its long-term legacy is clarity: it still teaches depth, pretrained visual features, and baseline comparison even though newer models are more efficient."
+      },
+      "sourceIds": [
+        "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Karen Simonyan",
+        "zh": "卡伦·西莫尼扬"
+      },
+      "role": {
+        "en": "Co-author of the VGG paper",
+        "zh": "VGG 论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Andrew Zisserman",
+        "zh": "安德鲁·齐瑟曼"
+      },
+      "role": {
+        "en": "Co-author and Visual Geometry Group lead",
+        "zh": "共同作者，视觉几何组负责人"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"very deep convolutional networks\"",
+    "zh": "\"非常深的卷积网络\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+      "zh": "用于大规模图像识别的超深卷积网络"
+    },
+    "workAuthors": {
+      "en": "Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+      "zh": "卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1409.1556"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Computer Vision / VGG",
+    "zh": "BenchCouncil AI100：计算机视觉 / VGG 网络"
+  },
+  "quoteAttribution": {
+    "en": "<em>Very Deep Convolutional Networks for Large-Scale Image Recognition</em>, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+    "zh": "《用于大规模图像识别的超深卷积网络》, 卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Computer Vision",
+      "zh": "计算机视觉"
+    },
+    "method": {
+      "en": "Very deep stacks of 3x3 convolutions",
+      "zh": "由 3x3 卷积堆叠出的很深网络"
+    },
+    "artifact": {
+      "en": "VGG-16 and VGG-19 architectures",
+      "zh": "VGG-16 与 VGG-19 架构"
+    },
+    "material": {
+      "en": "ImageNet recognition model",
+      "zh": "ImageNet 识别模型"
+    },
+    "demo": {
+      "en": "Depth through small filters",
+      "zh": "用小卷积核堆叠深度"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "3x3 Filters",
+          "zh": "3x3 卷积核"
+        },
+        "text": {
+          "en": "VGG repeatedly uses small filters, letting several layers build a larger effective receptive field while adding nonlinearities.",
+          "zh": "VGG 反复使用小卷积核，让多层组合出更大的有效感受野，同时插入更多非线性。"
+        }
+      },
+      {
+        "label": {
+          "en": "Network Depth",
+          "zh": "网络深度"
+        },
+        "text": {
+          "en": "The paper systematically increased depth and showed that deeper convolutional stacks improved large-scale recognition.",
+          "zh": "论文系统增加网络深度，并展示更深卷积堆叠能提升大规模识别。"
+        }
+      },
+      {
+        "label": {
+          "en": "Transfer Features",
+          "zh": "迁移特征"
+        },
+        "text": {
+          "en": "Pretrained VGG features became a common starting point for detection, segmentation, style transfer, and visualization.",
+          "zh": "预训练 VGG 特征后来成为检测、分割、风格迁移和可视化的常用起点。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "GoogLeNet / Inception",
+        "zh": "GoogLeNet / Inception"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "3x3 filters",
+        "zh": "3x3 卷积核"
+      },
+      {
+        "en": "16-19 weight layers",
+        "zh": "16-19 个权重层"
+      },
+      {
+        "en": "Released models",
+        "zh": "公开模型"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "Oxford VGG",
+        "title": {
+          "en": "Very Deep ConvNets project",
+          "zh": "超深卷积网络项目"
+        },
+        "description": {
+          "en": "Official VGG project page with model release notes and source material.",
+          "zh": "VGG 官方项目页，包含模型发布说明和相关资料。"
+        },
+        "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Visual Geometry Group, University of Oxford",
+      "zh": "牛津大学视觉几何组"
+    },
+    "country": {
+      "en": "Oxford, United Kingdom",
+      "zh": "英国牛津"
+    },
+    "coordinates": [
+      51.7548,
+      -1.2544
+    ]
+  }
+}

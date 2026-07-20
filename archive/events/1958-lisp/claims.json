@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "LISP 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "LISP is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-recursive-functions-of-symbolic-expressions",
+      "source-lisp-i-programmer-s-manual"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "LISP 的技术线索包括「符号递归」，代表性产物是「S 表达式求值器」。",
+      "en": "LISP is described through the method \"Symbolic recursion\" and the artifact \"S-expression evaluator\"."
+    },
+    "sourceIds": [
+      "source-recursive-functions-of-symbolic-expressions",
+      "source-lisp-i-programmer-s-manual"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "LISP 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "LISP is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-recursive-functions-of-symbolic-expressions",
+      "source-lisp-i-programmer-s-manual"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>约翰·麦卡锡的 LISP 为符号 AI 提供了实用编程语言。它把代码和数据都表示为表结构，使递归式符号处理成为可执行的工程工具。这让它自然适合早期以符号、规则和“处理程序的程序”为核心的 AI 系统。</p>",
+      "en": "<p>John McCarthy's LISP gave symbolic AI a practical programming language. It treated code and data as list structures that could be created, transformed and evaluated recursively. That made it a natural tool for early AI systems built around symbols, rules and programs that manipulate programs.</p>"
+    },
+    "sourceIds": [
+      "source-recursive-functions-of-symbolic-expressions",
+      "source-lisp-i-programmer-s-manual"
+    ],
+    "status": "needs-source"
+  }
+]

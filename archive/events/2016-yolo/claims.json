@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "YOLO 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "YOLO is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-you-only-look-once-unified-real-time-object-detection",
+      "source-cvpr-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。</p>",
+      "en": "<p>YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.</p>"
+    },
+    "sourceIds": [
+      "source-you-only-look-once-unified-real-time-object-detection",
+      "source-cvpr-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

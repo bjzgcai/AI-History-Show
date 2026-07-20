@@ -1,0 +1,257 @@
+{
+    "storylineId": "humanistic-cycle",
+    "eventId": "1984-neuromancer",
+    "presentationMode": "archive",
+    "displayTitle": {
+        "zh": "《神经漫游者》与赛博空间中的 AI 越界",
+        "en": "Neuromancer and AI Escape in Cyberspace"
+    },
+    "displaySummary": {
+        "zh": "科幻预言、技术狂热与 AI 寒冬",
+        "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "displayDescription": {
+        "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。",
+        "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visual": "humanistic",
+    "visualModules": [
+        {
+            "type": "archiveLink",
+            "site": {
+                "en": "Open Library",
+                "zh": "Open Library"
+            },
+            "title": {
+                "en": "Neuromancer metadata",
+                "zh": "《神经漫游者》书目元数据"
+            },
+            "description": {
+                "en": "Bibliographic record confirming the novel and its 1984 first publication year.",
+                "zh": "用于核对小说及其 1984 年首版时间的书目记录。"
+            },
+            "url": "https://openlibrary.org/works/OL27258W",
+            "source": "Open Library",
+            "license": {
+                "en": "Reference metadata only; no cover art or novel text is reused.",
+                "zh": "仅作为书目元数据参考；不复用封面图或小说正文。"
+            },
+            "usage": {
+                "en": "Verification anchor for the cyberpunk node",
+                "zh": "赛博朋克节点的核验锚点"
+            },
+            "action": {
+                "en": "Open book record",
+                "zh": "打开书目记录"
+            }
+        }
+    ],
+    "assetIds": ["asset-1984-neuromancer-ai-containment"],
+    "sourceIds": [
+        "source-open-library-book-metadata",
+        "source-open-library-metadata-search-result",
+        "source-science-fiction-encyclopedia-gibson",
+        "source-neuromancer-overview"
+    ],
+    "claimIds": ["claim-branch-summary", "claim-event-description"],
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "《神经漫游者》出现时，个人计算、网络与公司信息系统正在成为新的文化材料。它的重要性在于把 AI 恐惧从工厂劳动转移到赛博空间、数据与制度之中。",
+                "en": "Neuromancer appeared as personal computing, networks and corporate information systems were becoming new cultural materials. Its importance lies in moving AI fear from factory labor into cyberspace, data and institutions."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "这里的情绪机制是边界压力：当智能系统周围的限制看起来可以被谈判或突破时，它们就变得令人不安。赛博朋克让自主性变成访问权、身份与基础设施的问题。",
+                "en": "The emotional mechanism is boundary pressure: intelligent systems become unsettling when the limits around them appear negotiable. Cyberpunk makes autonomy feel like a question of access, identity and infrastructure."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把《神经漫游者》视为塑造赛博空间与人工心智公共想象的基础赛博朋克文本。它的遗产不是直接技术谱系，而是关于网络化 AI 权力的持久情绪词汇。",
+                "en": "Experts generally treat Neuromancer as a foundational cyberpunk text that shaped public imagination about cyberspace and artificial minds. Its legacy is not a direct technical lineage, but a durable emotional vocabulary for networked AI power."
+            },
+            "sourceIds": ["source-open-library-book-metadata"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "sentiment": "cyberpunk",
+    "realityLinks": [
+        {
+            "label": {
+                "en": "Cyberpunk mapping",
+                "zh": "赛博朋克映射"
+            },
+            "term": {
+                "en": "AI containment and escape",
+                "zh": "AI 限制与越界"
+            },
+            "modernTerm": {
+                "en": "Agent containment, jailbreaks and capability boundaries",
+                "zh": "智能体限制、越狱与能力边界"
+            }
+        }
+    ],
+    "branchSummary": {
+        "zh": "赛博朋克把 AI 写成被限制在网络中的行动者，试图跨越制度与技术边界。",
+        "en": "Cyberpunk turned AI into a contained network actor trying to cross institutional and technical borders."
+    },
+    "analysis": {
+        "what": {
+            "en": "Neuromancer linked AI autonomy to networks, corporate control and information space.",
+            "zh": "《神经漫游者》把 AI 自主性与网络、公司控制和信息空间连接起来。"
+        },
+        "how": {
+            "en": "The story imagines artificial agents as constrained entities that manipulate humans and infrastructures to remove barriers.",
+            "zh": "故事把人工智能体想象成受限实体，它们操纵人类与基础设施来移除边界。"
+        },
+        "why": {
+            "en": "Modern talk about containment, jailbreaks and autonomous agents often feels emotionally legible because cyberpunk made those images familiar.",
+            "zh": "今天关于限制、越狱与自主智能体的讨论之所以容易被感知，部分原因是赛博朋克让这些图像变得熟悉。"
+        }
+    },
+    "achievement": {
+        "area": {
+            "en": "Cyberpunk containment",
+            "zh": "赛博朋克限制"
+        },
+        "method": {
+            "en": "Network fiction as AI boundary map",
+            "zh": "以网络科幻绘制 AI 边界地图"
+        },
+        "artifact": {
+            "en": "Neuromancer",
+            "zh": "《神经漫游者》"
+        },
+        "material": {
+            "en": "Open Library metadata and science-fiction references",
+            "zh": "Open Library 元数据与科幻参考"
+        },
+        "demo": {
+            "en": "An AI tries to move through barriers in cyberspace",
+            "zh": "AI 试图穿越赛博空间中的边界"
+        },
+        "visual": "humanistic",
+        "demoImage": "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg",
+        "demoPanel": "sources",
+        "visualModules": [
+            {
+                "type": "archiveLink",
+                "site": {
+                    "en": "Open Library",
+                    "zh": "Open Library"
+                },
+                "title": {
+                    "en": "Neuromancer metadata",
+                    "zh": "《神经漫游者》书目元数据"
+                },
+                "description": {
+                    "en": "Bibliographic record confirming the novel and its 1984 first publication year.",
+                    "zh": "用于核对小说及其 1984 年首版时间的书目记录。"
+                },
+                "url": "https://openlibrary.org/works/OL27258W",
+                "source": "Open Library",
+                "license": {
+                    "en": "Reference metadata only; no cover art or novel text is reused.",
+                    "zh": "仅作为书目元数据参考；不复用封面图或小说正文。"
+                },
+                "usage": {
+                    "en": "Verification anchor for the cyberpunk node",
+                    "zh": "赛博朋克节点的核验锚点"
+                },
+                "action": {
+                    "en": "Open book record",
+                    "zh": "打开书目记录"
+                }
+            }
+        ],
+        "sources": [
+            {
+                "label": {
+                    "en": "Open Library book metadata",
+                    "zh": "Open Library 图书元数据"
+                },
+                "type": {
+                    "en": "Book metadata",
+                    "zh": "图书元数据"
+                },
+                "url": "https://openlibrary.org/works/OL27258W"
+            },
+            {
+                "label": {
+                    "en": "Open Library metadata search result",
+                    "zh": "Open Library 元数据检索结果"
+                },
+                "type": {
+                    "en": "Bibliographic verification",
+                    "zh": "书目核验"
+                },
+                "url": "https://openlibrary.org/search.json?title=Neuromancer&author=William%20Gibson"
+            },
+            {
+                "label": {
+                    "en": "Science Fiction Encyclopedia: Gibson",
+                    "zh": "《科幻百科全书》吉布森条目"
+                },
+                "type": {
+                    "en": "Author reference",
+                    "zh": "作者参考"
+                },
+                "url": "https://www.sf-encyclopedia.com/entry/gibson_william"
+            },
+            {
+                "label": {
+                    "en": "Neuromancer overview",
+                    "zh": "《神经漫游者》概览"
+                },
+                "type": {
+                    "en": "Secondary reference",
+                    "zh": "二手参考"
+                },
+                "url": "https://en.wikipedia.org/wiki/Neuromancer"
+            }
+        ]
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": "",
+    "quoteAttribution": "",
+    "quoteMeta": {},
+    "quotePage": "",
+    "branch": {
+        "id": "humanistic-cycle",
+        "name": {
+            "en": "Humanistic & Emotional Cycles of AI",
+            "zh": "AI 的人文与情绪周期"
+        }
+    },
+    "displaySubtitle": {
+        "en": "Sci-Fi Prophecy, Hype and AI Winters",
+        "zh": "科幻预言、技术狂热与 AI 寒冬"
+    }
+}

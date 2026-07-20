@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-a-training-algorithm-for-optimal-margin-classifiers",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "最优间隔分类器的训练算法",
+      "en": "A Training Algorithm for Optimal Margin Classifiers"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-libsvm-project-page",
+    "type": "project-page",
+    "label": {
+      "zh": "工具包",
+      "en": "Toolkit"
+    },
+    "title": {
+      "zh": "LIBSVM project page",
+      "en": "LIBSVM project page"
+    },
+    "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-learn-svc",
+    "type": "reference-only",
+    "label": {
+      "zh": "模型文档",
+      "en": "Model docs"
+    },
+    "title": {
+      "zh": "scikit-learn SVC",
+      "en": "scikit-learn SVC"
+    },
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]
