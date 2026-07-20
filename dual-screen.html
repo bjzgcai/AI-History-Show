@@ -1859,6 +1859,9 @@
     <script src="milestones-data.js?v=20260604-ai100-three-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
+    <script src="shared/umami-config.js"></script>
+    <script src="shared/analytics-config.js"></script>
+    <script src="shared/analytics.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script>
         const SCREEN_WIDTH = 1920;
@@ -1866,6 +1869,13 @@
         const STAGE_WIDTH = SCREEN_WIDTH * 2;
         const STAGE_HEIGHT = SCREEN_HEIGHT;
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
+        const analytics = window.AIHistoryAnalytics || null;
+        if (analytics) {
+            analytics.setContext({
+                layout: 'dual',
+                entry: 'dual-screen'
+            });
+        }
 
         let currentIndex = 0;
         let currentArchiveIndex = 0;
@@ -2112,6 +2122,34 @@
                 : buildFallbackVm(milestones[index], index);
             vmCache.set(index, vm);
             return vm;
+        }
+
+        function getAnalyticsMilestoneMetadata(vm, navigationSource = 'render') {
+            const raw = vm && vm.raw ? vm.raw : {};
+            const rawStoryline = raw.storyline;
+            const storylineId = typeof rawStoryline === 'string'
+                ? rawStoryline
+                : rawStoryline && rawStoryline.id
+                  ? rawStoryline.id
+                  : raw.archiveVariantId || '';
+            return {
+                milestone_id: raw.id || '',
+                archive_event_id: raw.archiveEventId || String(raw.id || '').replace(/^milestone-/, ''),
+                archive_variant_id: raw.archiveVariantId || '',
+                storyline_id: storylineId,
+                category: vm && vm.category ? vm.category : '',
+                year: vm && vm.year ? String(vm.year) : '',
+                navigation_source: navigationSource,
+                layout: 'dual'
+            };
+        }
+
+        function startAnalyticsMilestoneView(vm, options = {}) {
+            if (!analytics) return;
+            analytics.startMilestoneView(
+                getAnalyticsMilestoneMetadata(vm, options.navigationSource),
+                { eligible: options.eligible !== false }
+            );
         }
 
         function preloadImage(url) {
@@ -2445,7 +2483,7 @@
 
             closeTransientOverlaysForIdleAdvance();
             const nextIndex = currentIndex === milestones.length - 1 ? 0 : currentIndex + 1;
-            jumpTo(nextIndex, { resetAutoplay: false });
+            jumpTo(nextIndex, { resetAutoplay: false, analyticsSource: 'auto' });
             restartIdleCountdown();
         }
 
@@ -2461,6 +2499,7 @@
 
         function registerUserActivity(event) {
             if (event && event.isTrusted === false) return;
+            if (analytics) analytics.markInteraction();
             restartIdleCountdown();
         }
 
@@ -3648,8 +3687,12 @@
             observer.observe(document.body, { childList: true });
         }
 
-        function renderPage(index) {
+        function renderPage(index, analyticsOptions = {}) {
             const vm = getVm(index);
+            startAnalyticsMilestoneView(vm, {
+                navigationSource: analyticsOptions.navigationSource || 'render',
+                eligible: analyticsOptions.eligible !== false
+            });
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
             renderLeft(vm);
@@ -3664,13 +3707,16 @@
         }
 
         function jumpTo(index, options = {}) {
-            const { resetAutoplay = true } = options;
+            const { resetAutoplay = true, analyticsSource = 'manual' } = options;
             if (index < 0 || index >= milestones.length || index === currentIndex) return;
 
             preloadMilestoneAssets(index);
             currentIndex = index;
             currentArchiveIndex = 0;
-            renderPage(currentIndex);
+            renderPage(currentIndex, {
+                navigationSource: analyticsSource,
+                eligible: analyticsSource !== 'auto'
+            });
             if (resetAutoplay) {
                 resetAutoplayTimer();
             }
