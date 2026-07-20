@@ -6924,6 +6924,15 @@
             font: inherit;
         }
 
+        .ui-media-video-poster {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            opacity: 0.56;
+            filter: saturate(0.72) contrast(1.08);
+        }
+
         .ui-media-video::before {
             content: "";
             position: absolute;
@@ -10289,14 +10298,21 @@
         let currentIndex = 0;
         const requestedUiMode = getRequestedUiMode();
         const requestedEventId = getRequestedEventId();
-        if (requestedUiMode === 'detail' && requestedEventId) {
-            const requestedIndex = milestoneList.findIndex((item) => item && item.id === requestedEventId);
-            if (requestedIndex >= 0) {
-                currentIndex = requestedIndex;
-                uiBrowserMode = 'detail';
-                uiSelectedEventId = requestedEventId;
-                uiSelectedYear = getMilestoneSortYear(milestoneList[requestedIndex]) || uiSelectedYear;
-            }
+        const requestedIndex = requestedEventId
+            ? milestoneList.findIndex((item) => item && item.id === requestedEventId)
+            : -1;
+        if (requestedUiMode === 'detail' && requestedIndex >= 0 && isUiBrowserActive()) {
+            currentIndex = requestedIndex;
+            uiBrowserMode = 'detail';
+            uiSelectedEventId = requestedEventId;
+            uiSelectedYear = getMilestoneSortYear(milestoneList[requestedIndex]) || uiSelectedYear;
+        } else if (requestedUiMode || requestedEventId) {
+            try {
+                const normalizedUrl = new URL(window.location.href);
+                normalizedUrl.searchParams.delete('uiMode');
+                normalizedUrl.searchParams.delete('event');
+                window.history.replaceState(null, '', normalizedUrl);
+            } catch (_) {}
         }
         let currentArchiveIndex = 0;
         let activeQuizMilestoneKey = '';
@@ -10827,6 +10843,8 @@
                 } else {
                     url.searchParams.delete('storyline');
                 }
+                url.searchParams.delete('uiMode');
+                url.searchParams.delete('event');
                 window.history.replaceState(null, '', url);
             } catch (_) {}
         }
@@ -12691,7 +12709,8 @@
             const poster = String(module.poster || '').trim();
             const playableImage = fallbackUrl || poster;
             const fallbackImageUrl = appendPlaybackRestartToken(playableImage);
-            const shouldUseVideo = await canLoadBranchVideo(videoUrl, Boolean(playableImage));
+            const shouldUseVideo = isDirectVideoMedia(videoUrl)
+                && await canLoadBranchVideo(videoUrl, Boolean(playableImage));
             const sourceSgf = String(module.sourceSgf || '').trim();
             const generator = String(module.generator || '').trim();
             const sourceLine = sourceSgf
@@ -17253,8 +17272,14 @@
         function buildUiMediaHtml(vm) {
             const raw = vm.raw || {};
             if (vm.videoEmbedUrl) {
+                const posterUrl = getUiMediaVisualImage(vm);
+                const posterMeta = posterUrl ? buildArchivePhotoMeta(vm, posterUrl) : null;
+                const posterHtml = posterUrl
+                    ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(posterMeta && posterMeta.name || tx('archiveImage'))}">`
+                    : '';
                 return `
                     <button class="ui-media-video" type="button" data-ui-media-video="${escapeHtml(vm.videoEmbedUrl)}" aria-label="${escapeHtml(tx('playVideo'))}">
+                        ${posterHtml}
                         <span class="ui-media-video-play">PLAY</span>
                         <span class="ui-media-video-quote">${escapeHtml(extractVideoQuote(vm))}</span>
                         <span class="ui-media-video-time">
@@ -17568,6 +17593,13 @@
                         ? `<video class="ui-media-video-media" controls autoplay playsinline preload="metadata" src="${escapeHtml(videoUrl)}"></video>`
                         : `<iframe class="ui-media-video-media" src="${escapeHtml(videoUrl)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
                     button.innerHTML = media;
+                    const player = button.querySelector('video');
+                    if (player && typeof player.play === 'function') {
+                        const playback = player.play();
+                        if (playback && typeof playback.catch === 'function') {
+                            playback.catch(() => {});
+                        }
+                    }
                 }, { once: true });
             });
             bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
