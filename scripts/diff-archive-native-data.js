@@ -8,7 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const PREVIEW_DATA_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-preview.js');
 const NATIVE_DATA_PATH = path.join(ROOT, '.tmp', 'archive-preview', 'milestones-data-archive-native.js');
 const REPORT_PATH = path.join(ROOT, 'reports', 'archive-native-diff.md');
-const JSON_REPORT_PATH = path.join(ROOT, 'reports', 'archive-native-diff.json');
+const JSON_REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-native-diff.json');
 
 const DISPLAY_CRITICAL_FIELDS = new Set(['title', 'subtitle', 'description', 'images', 'visual', 'analysis']);
 const VISIBLE_STRUCTURED_FIELDS = new Set(['sourceDisplay', 'papers', 'commentaryDisplay', 'quizDisplay']);
@@ -281,6 +281,7 @@ if (rows.length === 0) {
 }
 
 fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
+fs.mkdirSync(path.dirname(JSON_REPORT_PATH), { recursive: true });
 fs.writeFileSync(REPORT_PATH, `${report.join('\n')}\n`, 'utf8');
 fs.writeFileSync(
     JSON_REPORT_PATH,

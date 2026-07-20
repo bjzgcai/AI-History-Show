@@ -2,7 +2,7 @@
 
 Generated: 2026-07-09
 
-This report checks the current repository against `docs/archive-architecture-refactor.md`.
+This report checks the current repository against `../../docs/archive-architecture-refactor.md`.
 
 ## Validation commands run
 

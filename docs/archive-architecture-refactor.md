@@ -1,6 +1,6 @@
 # AI 历史档案架构重构方案
 
-> **当前状态（2026-07-17）**：本文主体保留架构设计与迁移阶段记录。现在 Archive 已是生产内容权威：默认 generator 直接读取 Archive，storyline refs 拥有稳定 `milestoneId`，production compiler 不读取 Legacy fusion metadata，正式 single/dual 页面也不再支持 `?archivePreview=1`。显式 preview/parity/review 工具仍可离线运行，但重型产物写入 `.tmp/archive-*`。当前操作请以 README、`archive/README.md` 和 CLAUDE.md 为准。
+> **当前状态（2026-07-17）**：本文主体保留架构设计与迁移阶段记录。现在 Archive 已是生产内容权威：默认 generator 直接读取 Archive，storyline refs 拥有稳定 `milestoneId`，production compiler 不读取 Legacy fusion metadata，正式 single/dual 页面也不再支持 `?archivePreview=1`。显式 preview/parity/review 工具仍可离线运行，但重型产物写入 `.tmp/archive-*`。当前操作请以 [Archive 数据流与内容权威边界](archive-data-flow.md)、README、`archive/README.md` 和 CLAUDE.md 为准。
 本文档描述 AI-History-Show 从「展示数据驱动」升级为「文件化档案库 + 多分支展示生成」的架构方案。
 
 ## 背景
@@ -63,7 +63,7 @@ Forced archive preview title/subtitle/description/image/visual/analysis differen
 阶段验收报告见：
 
 ```text
-reports/archive-preview-display-consistency.md
+reports/history/archive-preview-display-consistency.md
 ```
 
 当前还提供一个独立于正式生成路径的主展陈 archive preview：

@@ -7,7 +7,7 @@ const { FUSIONS } = require('../manage/event-fusions.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
-const OUT_JSON = path.join(ROOT, 'reports', 'archive-fusion-variant-map.json');
+const OUT_JSON = path.join(ROOT, '.tmp', 'archive-reports', 'archive-fusion-variant-map.json');
 const OUT_MD = path.join(ROOT, 'reports', 'archive-fusion-variant-map.md');
 
 function existsEvent(id) {
@@ -51,6 +51,7 @@ function main() {
     });
 
     fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
+    fs.mkdirSync(path.dirname(OUT_MD), { recursive: true });
     fs.writeFileSync(OUT_JSON, `${JSON.stringify({ generatedAt: new Date().toISOString(), rows }, null, 2)}\n`);
 
     const lines = [];
@@ -82,6 +83,7 @@ function main() {
     fs.writeFileSync(OUT_MD, `${lines.join('\n')}\n`);
 
     console.log(`Archive fusion variant map: ${path.relative(ROOT, OUT_MD)}`);
+    console.log(`Archive fusion variant map JSON: ${path.relative(ROOT, OUT_JSON)}`);
 }
 
 main();

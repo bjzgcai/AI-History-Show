@@ -43,28 +43,6 @@ AI100 pages must support the exhibition layout used by the website. Future achie
   - Validate and regenerate with `npm run validate:archive` and `npm run generate`.
   - Run `npm run lint` and `npm test`; run `npm run validate:startup` when page loading/startup may be affected.
 
-Regenerate the list:
-
-```bash
-node scripts/fetch-ai100-list.mjs
-```
-
-Regenerate the per-achievement Markdown templates:
-
-```bash
-node scripts/create-ai100-research-pages.mjs
-```
-
-Existing `index.md` files are not overwritten by default. To rebuild templates deliberately:
-
-```bash
-node scripts/create-ai100-research-pages.mjs --force
-```
-
-Generate only the first three pages for preview:
-
-```bash
-node scripts/create-ai100-research-pages.mjs --limit=3
-```
+The achievement list and per-achievement Markdown pages are retained research snapshots. The one-time fetch/template bootstrap scripts have been retired after the Archive authority cutover; maintain current exhibition content in `archive/events/<event-id>/` and `archive/storylines/bench-council-ai100.json`.
 
 Source: https://www.benchcouncil.org/evaluation/ai/

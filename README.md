@@ -186,7 +186,7 @@ npm run build:static
 
 The bundle contains the presentation pages, runtime data, `shared/`, `resources/`, required `public/` assets, and `.nojekyll`; it excludes Archive source JSON, management tools, Legacy data, reports, research files, and scripts.
 
-For the Archive entity layout and source/asset relationships, see [`archive/README.md`](archive/README.md). For retained browser resources, see [`docs/archive-resources-retention.md`](docs/archive-resources-retention.md).
+For the complete entity graph, compile sequence, failure safeguards, and deployment boundary, see [`docs/archive-data-flow.md`](docs/archive-data-flow.md). For the Archive entity layout and source/asset relationships, see [`archive/README.md`](archive/README.md). For retained browser resources, see [`docs/archive-resources-retention.md`](docs/archive-resources-retention.md).
 
 ---
 

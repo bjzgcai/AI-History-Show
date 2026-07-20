@@ -71,7 +71,7 @@ archive/events/<event-id>/
 archive/storylines/*.json
 ```
 
-Archive compiler 从这些文件解析 storyline ref、variant、来源、资源、quiz 和展示 ID，不读取 Legacy event/catalog/fusion metadata 作为生产输入。
+Archive compiler 从这些文件解析 storyline ref、variant、来源、资源、quiz 和展示 ID，不读取 Legacy event/catalog/fusion metadata 作为生产输入。完整的实体关系、编译展开、失败保护和部署流见 [Archive 数据流与内容权威边界](docs/archive-data-flow.md)。
 
 ### Legacy 兼容边界
 

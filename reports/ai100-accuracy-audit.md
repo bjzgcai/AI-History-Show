@@ -7,10 +7,10 @@ This report is an evidence-audit worklist. It does not certify historical accura
 ## Summary
 
 - Milestones: 100
-- Claims extracted: 2815
-- Milestones with issues: 0
-- Risk-word claims: 236
-- Weak/manual-review claims: 52
+- Claims extracted: 2816
+- Milestones with issues: 4
+- Risk-word claims: 240
+- Weak/manual-review claims: 56
 
 ## Milestone Checklist
 
@@ -20,22 +20,20 @@ This report is an evidence-audit worklist. It does not certify historical accura
 | milestone-1951-strachey-draughts | Christopher Strachey's Draughts | 4 | 1 | 26 | 4 | 3 | ready for source review |
 | milestone-1956-logic-theorist | Logic Theorist | 3 | 3 | 35 | 2 | 1 | ready for source review |
 | milestone-1957-kmeans | K-means | 4 | 1 | 26 | 2 | 0 | ready for source review |
+| milestone-1958-rosenblatt-perceptron | The Perceptron and Connectionism | 3 | 1 | 25 | 4 | 2 | ready for source review |
 | milestone-1958-lisp | LISP | 3 | 2 | 28 | 2 | 0 | ready for source review |
-| milestone-1958-rosenblatt-perceptron | Rosenblatt Perceptron | 3 | 1 | 28 | 3 | 1 | ready for source review |
-| milestone-1958-wangs-algorithm | Wang's Algorithm | 3 | 2 | 28 | 3 | 2 | ready for source review |
+| milestone-1958-wangs-algorithm | Wang's Algorithm | 3 | 2 | 26 | 3 | 2 | Core Idea en has 1 sentence(s); Core Idea zh has 1 sentence(s) |
 | milestone-1959-pandemonium | Pandemonium | 4 | 1 | 26 | 2 | 0 | ready for source review |
-| milestone-1960-davis-putnam-dpll | Davis-Putnam & DPLL | 3 | 2 | 34 | 2 | 0 | ready for source review |
+| milestone-1960-davis-putnam-dpll | Davis-Putnam & DPLL | 3 | 2 | 32 | 2 | 0 | Core Idea en has 1 sentence(s); Core Idea zh has 1 sentence(s) |
 | milestone-1965-dendral | DENDRAL | 3 | 2 | 28 | 4 | 4 | ready for source review |
 | milestone-1965-resolution-method | Resolution Method | 3 | 2 | 28 | 2 | 1 | ready for source review |
 | milestone-1966-eliza | ELIZA | 3 | 2 | 28 | 2 | 0 | ready for source review |
-| milestone-ai100-1967-knn | KNN | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-1970-shrdlu | SHRDLU | 3 | 1 | 28 | 2 | 0 | ready for source review |
-| milestone-ai100-1970-ridge | Ridge | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-1971-complexity-theory | NP-Completeness | 3 | 2 | 30 | 3 | 1 | ready for source review |
 | milestone-1971-vc-theory | VC Theory | 3 | 2 | 30 | 2 | 0 | ready for source review |
 | milestone-1973-prolog | PROLOG | 3 | 2 | 30 | 4 | 2 | ready for source review |
 | milestone-1974-frame | Frame | 3 | 1 | 28 | 2 | 0 | ready for source review |
-| milestone-1975-genetic-algorithm | Genetic Algorithms | 3 | 1 | 28 | 2 | 0 | ready for source review |
+| milestone-1975-genetic-algorithm | Genetic Algorithms | 3 | 1 | 27 | 2 | 0 | Core Idea zh has 1 sentence(s) |
 | milestone-1980-xcon-r1 | XCON-R1 | 4 | 1 | 26 | 2 | 2 | ready for source review |
 | milestone-1982-hopfield-network | Hopfield Network | 3 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-1983-simulated-annealing | Simulated Annealing | 3 | 2 | 32 | 2 | 2 | ready for source review |
@@ -56,9 +54,10 @@ This report is an evidence-audit worklist. It does not certify historical accura
 | milestone-2008-tsne | t-SNE | 3 | 1 | 28 | 2 | 0 | ready for source review |
 | milestone-2009-imagenet | ImageNet | 3 | 1 | 30 | 3 | 1 | ready for source review |
 | milestone-2011-ibm-watson | IBM Watson | 4 | 1 | 29 | 2 | 0 | ready for source review |
+| milestone-ai100-2012-alexnet | AlexNet and the ImageNet Breakthrough | 4 | 2 | 30 | 2 | 0 | ready for source review |
 | milestone-2013-dqn | Deep Q Network | 3 | 2 | 30 | 3 | 1 | ready for source review |
 | milestone-2013-word2vec | Word2Vec | 3 | 3 | 28 | 2 | 0 | ready for source review |
-| milestone-2014-adam | Adam Optimizer | 3 | 1 | 30 | 2 | 1 | ready for source review |
+| milestone-2014-adam | Adam Optimizer | 3 | 1 | 29 | 2 | 1 | Core Idea zh has 1 sentence(s) |
 | milestone-2014-dropout | Dropout | 3 | 2 | 30 | 3 | 1 | ready for source review |
 | milestone-2014-vgg | VGG Networks | 3 | 1 | 30 | 2 | 2 | ready for source review |
 | milestone-2015-faster-r-cnn | Faster R-CNN | 3 | 1 | 34 | 2 | 0 | ready for source review |
@@ -66,14 +65,16 @@ This report is an evidence-audit worklist. It does not certify historical accura
 | milestone-ai100-1943-mcculloch-pitts-neuron | McCulloch-Pitts Neuron | 4 | 1 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-1951-snarc | SNARC | 4 | 1 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-1967-back-propagation | Back-propagation | 4 | 3 | 28 | 2 | 0 | ready for source review |
+| milestone-ai100-1967-knn | KNN | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-1969-relu | ReLU | 4 | 2 | 28 | 2 | 0 | ready for source review |
+| milestone-ai100-1970-ridge | Ridge | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-1980-neocognitron | Neocognitron | 4 | 3 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-1982-som | Self-organizing Map | 4 | 3 | 26 | 3 | 1 | ready for source review |
 | milestone-ai100-1983-actor-critic | Actor-Critic | 3 | 2 | 26 | 2 | 0 | ready for source review |
-| milestone-ai100-1989-lenet | LeNet | 4 | 2 | 26 | 2 | 2 | ready for source review |
+| milestone-ai100-1989-lenet | Convolutional Networks and LeNet | 4 | 2 | 26 | 2 | 2 | ready for source review |
 | milestone-ai100-1989-q-learning | Q-Learning | 3 | 1 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-1997-kernel-pca | Kernel PCA | 4 | 2 | 28 | 2 | 0 | ready for source review |
-| milestone-ai100-1997-lstm | LSTM | 4 | 2 | 30 | 2 | 0 | ready for source review |
+| milestone-ai100-1997-lstm | LSTM and Gated Memory | 4 | 2 | 30 | 2 | 0 | ready for source review |
 | milestone-ai100-1999-nmf | NMF | 4 | 3 | 30 | 2 | 0 | ready for source review |
 | milestone-ai100-2000-isomap | Isomap | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-2000-lle | Locally Linear Embedding | 4 | 2 | 28 | 2 | 0 | ready for source review |
@@ -81,13 +82,12 @@ This report is an evidence-audit worklist. It does not certify historical accura
 | milestone-ai100-2005-gnn | Graph Neural Network | 3 | 2 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-2005-hog | HOG | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-2006-surf | SURF | 4 | 2 | 28 | 2 | 0 | ready for source review |
-| milestone-ai100-2012-alexnet | AlexNet | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-2013-variational-autoencoder | Variational Autoencoder | 3 | 2 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-2014-conditional-gan | Conditional GAN | 3 | 2 | 26 | 4 | 2 | ready for source review |
-| milestone-ai100-2014-gan | Generative Adversarial Network | 4 | 3 | 30 | 2 | 0 | ready for source review |
+| milestone-ai100-2014-gan | Generative Adversarial Networks | 4 | 3 | 30 | 2 | 0 | ready for source review |
 | milestone-ai100-2014-glove | GloVe | 3 | 2 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-2014-ms-coco | MS COCO | 3 | 2 | 26 | 2 | 1 | ready for source review |
-| milestone-ai100-2014-neural-machine-translation-attention | Neural Machine Translation with Attention | 4 | 2 | 30 | 2 | 0 | ready for source review |
+| milestone-ai100-2014-neural-machine-translation-attention | Neural Machine Translation with Attention | 4 | 2 | 32 | 2 | 0 | ready for source review |
 | milestone-2015-u-net | U-Net | 3 | 1 | 32 | 2 | 0 | ready for source review |
 | milestone-ai100-2015-batch-normalization | Batch Normalization | 4 | 3 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-2015-dcgan | DCGAN | 3 | 1 | 26 | 2 | 0 | ready for source review |
@@ -95,13 +95,13 @@ This report is an evidence-audit worklist. It does not certify historical accura
 | milestone-ai100-2015-deep-compression | Deep Compression | 3 | 2 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-2015-diffusion-model | Diffusion Model | 3 | 2 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-2015-knowledge-distillation | Knowledge Distillation | 3 | 1 | 26 | 2 | 0 | ready for source review |
-| milestone-ai100-2015-resnet | ResNet | 4 | 3 | 28 | 2 | 0 | ready for source review |
+| milestone-ai100-2015-resnet | ResNet | 4 | 3 | 34 | 3 | 1 | ready for source review |
 | milestone-2016-alphago | AlphaGo | 3 | 1 | 32 | 2 | 0 | ready for source review |
 | milestone-2016-yolo | YOLO | 3 | 2 | 30 | 4 | 1 | ready for source review |
 | milestone-ai100-2016-gcn | GCN | 3 | 2 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-2016-nas | Neural Architecture Search | 3 | 2 | 26 | 2 | 0 | ready for source review |
+| milestone-ai100-2017-densenet | DenseNet | 4 | 2 | 28 | 4 | 2 | ready for source review |
 | milestone-ai100-2017-cyclegan | CycleGAN | 3 | 2 | 26 | 2 | 0 | ready for source review |
-| milestone-ai100-2017-densenet | DenseNet | 4 | 2 | 28 | 2 | 0 | ready for source review |
 | milestone-ai100-2017-gat | GAT | 3 | 2 | 26 | 3 | 1 | ready for source review |
 | milestone-ai100-2017-pix2pix | Pix2Pix | 3 | 2 | 26 | 2 | 0 | ready for source review |
 | milestone-ai100-2017-transformer | Transformer | 4 | 2 | 28 | 2 | 0 | ready for source review |
@@ -285,6 +285,41 @@ Sources:
 | quote-work | zh | no | no | PCM 中的最小二乘量化 | structural-only |
 | quote-authors | zh | no | no | 斯图尔特·劳埃德 | structural-only |
 
+### milestone-1958-rosenblatt-perceptron - The Perceptron and Connectionism
+
+Sources:
+- [The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain](https://doi.org/10.1037/h0042519) (Paper primary-candidate)
+- [Cornell Chronicle perceptron retrospective](https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon) (History)
+- [Smithsonian Mark I Perceptron object record](https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414) (Museum)
+
+| Field | Locale | Risk | Manual Review | Claim | Status |
+| --- | --- | --- | --- | --- | --- |
+| year-title | en | no | no | 1957: The Perceptron and Connectionism | structural-only |
+| year-title | zh | no | no | 1957: 感知机与连接主义 | structural-only |
+| location | en | no | no | Cornell Aeronautical Laboratory, New York, United States | structural-only |
+| location | zh | no | no | 康奈尔航空实验室，美国纽约州 | structural-only |
+| figure | en | no | no | Frank Rosenblatt - Inventor of the perceptron | structural-only |
+| figure | zh | no | no | 弗兰克·罗森布拉特 - 感知机发明者 | structural-only |
+| description | en | no | no | In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. | structural-only |
+| description | en | yes | absolute-first-or-only wording; non-legacy risk claim | Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning. | needs-manual-source-review |
+| description | zh | yes | absolute-first-or-only wording; non-legacy risk claim | 1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。 | needs-manual-source-review |
+| commentary:Historical Background | en | no | no | In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception. | structural-only |
+| commentary:Historical Background | en | no | no | This context helps viewers place The Perceptron and Connectionism in the technical problems and research priorities of its time. | structural-only |
+| commentary:Historical Background | zh | no | no | 20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。 | structural-only |
+| commentary:Historical Background | zh | no | no | 这段背景帮助观众把感知机与连接主义放回当时的技术问题和研究重点中理解。 | structural-only |
+| commentary:Core Idea | en | no | no | A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates. | structural-only |
+| commentary:Core Idea | en | no | no | The key mechanism is Linear threshold learning machine, which links the source material to the visible demo behavior. | structural-only |
+| commentary:Core Idea | zh | no | no | 感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。 | structural-only |
+| commentary:Core Idea | zh | no | no | 关键机制是线性阈值学习机，它把资料线索与可见的演示行为连接起来。 | structural-only |
+| commentary:Long-Term Legacy | en | yes | no | Experts generally treat Rosenblatt's perceptron as a foundational neural-learning model and a symbol of early connectionist optimism. | low-priority-risk |
+| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the debate over linear separability and the path from single threshold units to multilayer representation learning. | structural-only |
+| commentary:Long-Term Legacy | zh | yes | no | 专家通常把罗森布拉特感知机视为基础性的神经学习模型，也是早期连接主义乐观精神的象征。 | low-priority-risk |
+| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于引发关于线性可分性的讨论，并铺垫了从单个阈值单元到多层表示学习的道路。 | structural-only |
+| quote-work | en | no | no | The perceptron paper record | structural-only |
+| quote-authors | en | no | no | Frank Rosenblatt | structural-only |
+| quote-work | zh | no | no | 感知机论文记录 | structural-only |
+| quote-authors | zh | no | no | 弗兰克·罗森布拉特 | structural-only |
+
 ### milestone-1958-lisp - LISP
 
 Sources:
@@ -323,44 +358,6 @@ Sources:
 | quote-work | zh | no | no | 符号表达式的递归函数及其机器计算（第一部分） | structural-only |
 | quote-authors | zh | no | no | 约翰·麦卡锡, 《ACM 通讯》, 1960 | structural-only |
 
-### milestone-1958-rosenblatt-perceptron - Rosenblatt Perceptron
-
-Sources:
-- [The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain](https://doi.org/10.1037/h0042519) (Paper primary-candidate)
-- [Cornell Chronicle perceptron retrospective](https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon) (History)
-- [Smithsonian Mark I Perceptron object record](https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414) (Museum)
-
-| Field | Locale | Risk | Manual Review | Claim | Status |
-| --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 1958: Rosenblatt Perceptron | structural-only |
-| year-title | zh | no | no | 1958: 罗森布拉特 感知机 | structural-only |
-| location | en | no | no | Cornell Aeronautical Laboratory, New York, United States | structural-only |
-| location | zh | no | no | 康奈尔航空实验室，美国纽约州 | structural-only |
-| figure | en | no | no | Frank Rosenblatt - Inventor of the perceptron | structural-only |
-| figure | zh | no | no | 弗兰克·罗森布拉特 - 感知机发明者 | structural-only |
-| description | en | no | no | Rosenblatt's perceptron made neural learning tangible by pairing a simple threshold unit with an update rule. | structural-only |
-| description | en | yes | absolute-first-or-only wording; non-legacy risk claim | It promised machines that could learn from examples rather than being programmed only by explicit rules. | needs-manual-source-review |
-| description | en | no | no | The perceptron later became both a symbol of early neural optimism and a baseline for understanding linear classification. | structural-only |
-| description | zh | no | no | 罗森布拉特 的感知机把神经学习变得具体：一个简单阈值单元配合权重更新规则。 | structural-only |
-| description | zh | no | no | 它承诺机器可以从样本中学习，而不仅靠显式规则编程。 | structural-only |
-| description | zh | no | no | 感知机后来既成为早期神经网络乐观主义的象征，也成为理解线性分类的基线。 | structural-only |
-| commentary:Historical Background | en | no | no | In the 1950s, researchers were exploring machines inspired by neural and psychological models of perception. | structural-only |
-| commentary:Historical Background | en | no | no | This context helps viewers place Rosenblatt Perceptron in the technical problems and research priorities of its time. | structural-only |
-| commentary:Historical Background | zh | no | no | 20 世纪 50 年代，研究者正在探索受神经和心理感知模型启发的机器。 | structural-only |
-| commentary:Historical Background | zh | no | no | 这段背景帮助观众把罗森布拉特 感知机放回当时的技术问题和研究重点中理解。 | structural-only |
-| commentary:Core Idea | en | no | no | A perceptron computes a weighted sum of inputs and fires when the sum crosses a threshold; mistakes trigger weight updates. | structural-only |
-| commentary:Core Idea | en | no | no | The key mechanism is Linear threshold learning machine, which links the source material to the visible demo behavior. | structural-only |
-| commentary:Core Idea | zh | no | no | 感知机计算输入加权和，当总和越过阈值时激活；错误会触发权重更新。 | structural-only |
-| commentary:Core Idea | zh | no | no | 关键机制是线性阈值学习机，它把资料线索与可见的演示行为连接起来。 | structural-only |
-| commentary:Long-Term Legacy | en | yes | no | Experts generally treat Rosenblatt's perceptron as a foundational neural-learning model and a symbol of early connectionist optimism. | low-priority-risk |
-| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the debate over linear separability and the path from single threshold units to multilayer representation learning. | structural-only |
-| commentary:Long-Term Legacy | zh | yes | no | 专家通常把罗森布拉特感知机视为基础性的神经学习模型，也是早期连接主义乐观精神的象征。 | low-priority-risk |
-| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于引发关于线性可分性的讨论，并铺垫了从单个阈值单元到多层表示学习的道路。 | structural-only |
-| quote-work | en | no | no | The perceptron paper record | structural-only |
-| quote-authors | en | no | no | Frank Rosenblatt | structural-only |
-| quote-work | zh | no | no | 感知机论文记录 | structural-only |
-| quote-authors | zh | no | no | 弗兰克·罗森布拉特 | structural-only |
-
 ### milestone-1958-wangs-algorithm - Wang's Algorithm
 
 Sources:
@@ -387,9 +384,7 @@ Sources:
 | commentary:Historical Background | zh | no | no | 第一篇论文发表于 1960 年 4 月 《ACM 通讯》，DOI 为 10.1145/367177.367224。 | structural-only |
 | commentary:Historical Background | zh | no | no | 贝尔实验室 档案保存了 1961 年续篇，其中 王浩 讨论了谓词演算证明过程及相关判定问题情形。 | structural-only |
 | commentary:Core Idea | en | no | no | The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears. | structural-only |
-| commentary:Core Idea | en | no | no | The key mechanism is Pattern-guided proof procedure, which links the source material to the visible demo behavior. | structural-only |
 | commentary:Core Idea | zh | no | no | 展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。 | structural-only |
-| commentary:Core Idea | zh | no | no | 关键机制是模式引导证明过程，它把资料线索与可见的演示行为连接起来。 | structural-only |
 | commentary:Long-Term Legacy | en | yes | no | Experts generally treat Wang's algorithm as an early milestone in automated theorem proving. | low-priority-risk |
 | commentary:Long-Term Legacy | en | no | no | Its long-term legacy is that it narrowed the gap between formal logic and machine execution, influencing later proof procedures and SAT-style reasoning. | structural-only |
 | commentary:Long-Term Legacy | zh | yes | proof/solved wording | 专家通常把王氏算法视为自动定理证明的早期里程碑。 | needs-manual-source-review |
@@ -468,9 +463,7 @@ Sources:
 | commentary:Historical Background | zh | no | no | Davis 和 Putnam 1960 年 《ACM 杂志》 论文提出了量词理论证明过程。 | structural-only |
 | commentary:Historical Background | zh | no | no | Davis、Logemann 与 Loveland 1962 年发表于 《ACM 通讯》 的文章报告了一个定理证明机器程序，形成了 DPLL 这一脉络。 | structural-only |
 | commentary:Core Idea | en | no | no | The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible. | structural-only |
-| commentary:Core Idea | en | no | no | The key mechanism is SAT search with propagation, which links the source material to the visible demo behavior. | structural-only |
 | commentary:Core Idea | zh | no | no | 界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。 | structural-only |
-| commentary:Core Idea | zh | no | no | 关键机制是带传播的 SAT 搜索，它把资料线索与可见的演示行为连接起来。 | structural-only |
 | commentary:Long-Term Legacy | en | yes | no | Experts generally treat Davis-Putnam and DPLL as foundational work behind practical SAT solving. | low-priority-risk |
 | commentary:Long-Term Legacy | en | no | no | Their long-term legacy is the search-and-propagate structure that still underlies modern solvers, even after learning, restarts, watched literals, and heuristics were added. | structural-only |
 | commentary:Long-Term Legacy | zh | yes | no | 专家通常把 Davis-Putnam 和 DPLL 视为实用 SAT 求解背后的基础工作。 | low-priority-risk |
@@ -594,45 +587,6 @@ Sources:
 | quote-work | zh | no | no | ELIZA：研究人与机器之间自然语言交流的计算机程序 | structural-only |
 | quote-authors | zh | no | no | 约瑟夫·魏岑鲍姆, 《ACM 通讯》, 1966 | structural-only |
 
-### milestone-ai100-1967-knn - KNN
-
-Sources:
-- [Nearest Neighbor Pattern Classification](https://doi.org/10.1109/TIT.1967.1053964) (Paper primary-candidate)
-- [Stanford-hosted paper PDF](https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf) (Paper PDF primary-candidate)
-- [k-nearest neighbors algorithm overview](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) (Background)
-- [scikit-learn nearest neighbors documentation](https://scikit-learn.org/stable/modules/neighbors.html) (Documentation)
-
-| Field | Locale | Risk | Manual Review | Claim | Status |
-| --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 1967: KNN | structural-only |
-| year-title | zh | no | no | 1967: KNN 最近邻 | structural-only |
-| location | en | no | no | Stanford University, Stanford, United States | structural-only |
-| location | zh | no | no | 斯坦福大学，美国斯坦福 | structural-only |
-| figure | en | no | no | Thomas Cover - Co-author of nearest-neighbor classification | structural-only |
-| figure | zh | no | no | 托马斯·科弗 - 最近邻分类共同作者 | structural-only |
-| figure | en | no | no | Peter Hart - Co-author of nearest-neighbor classification | structural-only |
-| figure | zh | no | no | 彼得·哈特 - 最近邻分类共同作者 | structural-only |
-| description | en | no | no | Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. | structural-only |
-| description | en | no | no | The result made instance-based learning a durable baseline for pattern recognition and machine learning. | structural-only |
-| description | zh | no | no | 托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。 | structural-only |
-| description | zh | no | no | 这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。 | structural-only |
-| commentary:Historical Background | en | no | no | Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. | structural-only |
-| commentary:Historical Background | en | no | no | The result made instance-based learning a durable baseline for pattern recognition and machine learning. | structural-only |
-| commentary:Historical Background | zh | no | no | 托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。 | structural-only |
-| commentary:Historical Background | zh | no | no | 这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。 | structural-only |
-| commentary:Core Idea | en | no | no | A query point receives the label most common among nearby training examples. | structural-only |
-| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
-| commentary:Core Idea | zh | no | no | 查询点获得附近训练样本中最常见的标签。 | structural-only |
-| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
-| commentary:Long-Term Legacy | en | yes | no | Experts generally treat KNN as a foundational nonparametric baseline: simple, interpretable, and surprisingly strong when distance is meaningful. | low-priority-risk |
-| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the idea that stored examples and local similarity can be a model, not just training data. | structural-only |
-| commentary:Long-Term Legacy | zh | yes | no | 专家通常把 KNN 视为基础性的非参数基线：简单、可解释，并且在距离有意义时表现很强。 | low-priority-risk |
-| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于说明存储样本和局部相似性本身就可以构成模型，而不只是训练数据。 | structural-only |
-| quote-work | en | no | no | Nearest Neighbor Pattern Classification | structural-only |
-| quote-authors | en | no | no | Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967 | structural-only |
-| quote-work | zh | no | no | 最近邻模式分类 | structural-only |
-| quote-authors | zh | no | no | 托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967 | structural-only |
-
 ### milestone-1970-shrdlu - SHRDLU
 
 Sources:
@@ -670,45 +624,6 @@ Sources:
 | quote-authors | en | no | no | Terry Winograd | structural-only |
 | quote-work | zh | no | no | SHRDLU 博士论文记录 | structural-only |
 | quote-authors | zh | no | no | 特里·维诺格拉德 | structural-only |
-
-### milestone-ai100-1970-ridge - Ridge
-
-Sources:
-- [Ridge Regression: Biased Estimation for Nonorthogonal Problems](https://doi.org/10.1080/00401706.1970.10488634) (Paper primary-candidate)
-- [Open PDF copy of the Technometrics paper](https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf) (Paper PDF primary-candidate)
-- [Ridge regression overview](https://en.wikipedia.org/wiki/Ridge_regression) (Background)
-- [scikit-learn Ridge documentation](https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification) (Documentation)
-
-| Field | Locale | Risk | Manual Review | Claim | Status |
-| --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 1970: Ridge | structural-only |
-| year-title | zh | no | no | 1970: 岭回归 | structural-only |
-| location | en | no | no | University of Delaware, Newark, United States | structural-only |
-| location | zh | no | no | 特拉华大学，美国纽瓦克 | structural-only |
-| figure | en | no | no | Arthur Hoerl - Co-author of ridge regression | structural-only |
-| figure | zh | no | no | 阿瑟·霍尔 - 岭回归共同作者 | structural-only |
-| figure | en | no | no | Robert Kennard - Co-author of ridge regression | structural-only |
-| figure | zh | no | no | 罗伯特·肯纳德 - 岭回归共同作者 | structural-only |
-| description | en | no | no | Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. | structural-only |
-| description | en | no | no | Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable. | structural-only |
-| description | zh | no | no | 阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。 | structural-only |
-| description | zh | no | no | 向正规方程对角线加入小的正数，可以降低系数估计的方差。 | structural-only |
-| commentary:Historical Background | en | no | no | Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. | structural-only |
-| commentary:Historical Background | en | no | no | Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable. | structural-only |
-| commentary:Historical Background | zh | no | no | 阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。 | structural-only |
-| commentary:Historical Background | zh | no | no | 向正规方程对角线加入小的正数，可以降低系数估计的方差。 | structural-only |
-| commentary:Core Idea | en | no | no | A penalty term shrinks coefficients so correlated predictors no longer dominate the fit. | structural-only |
-| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
-| commentary:Core Idea | zh | no | no | 惩罚项会收缩系数，使相关预测变量不再主导拟合。 | structural-only |
-| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
-| commentary:Long-Term Legacy | en | yes | no | Experts generally treat ridge regression as a classic regularization result that made controlled bias a practical tool. | low-priority-risk |
-| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the L2 penalty pattern used across statistics, kernel methods, and deep-learning weight decay. | structural-only |
-| commentary:Long-Term Legacy | zh | yes | no | 专家通常把岭回归视为经典正则化成果，使可控偏差成为实用工具。 | low-priority-risk |
-| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于 L2 惩罚模式被统计学习、核方法和深度学习权重衰减广泛采用。 | structural-only |
-| quote-work | en | no | no | Ridge Regression: Biased Estimation for Nonorthogonal Problems | structural-only |
-| quote-authors | en | no | no | Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970 | structural-only |
-| quote-work | zh | no | no | 岭回归：非正交问题中的有偏估计 | structural-only |
-| quote-authors | zh | no | no | 阿瑟·E·霍尔、罗伯特·W·肯纳德，《Technometrics》，1970 | structural-only |
 
 ### milestone-1971-complexity-theory - NP-Completeness
 
@@ -896,7 +811,6 @@ Sources:
 | commentary:Core Idea | en | no | no | A genetic algorithm does not improve one solution directly. | structural-only |
 | commentary:Core Idea | en | no | no | It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates. | structural-only |
 | commentary:Core Idea | zh | no | no | 遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。 | structural-only |
-| commentary:Core Idea | zh | no | no | 关键机制是基于种群的进化搜索，它把资料线索与可见的演示行为连接起来。 | structural-only |
 | commentary:Long-Term Legacy | en | yes | no | Experts generally treat genetic algorithms as useful search heuristics for difficult design spaces, not as a general theory of intelligence. | low-priority-risk |
 | commentary:Long-Term Legacy | en | no | no | Their long-term legacy is population-based exploration for problems where gradients are unavailable, objectives are awkward, or candidate designs must be evolved. | structural-only |
 | commentary:Long-Term Legacy | zh | yes | no | 专家通常把遗传算法视为困难设计空间中的有用搜索启发式方法，而不是通用智能理论。 | low-priority-risk |
@@ -1685,6 +1599,47 @@ Sources:
 | quote-work | zh | no | no | 沃森：超越《危险边缘！》 | structural-only |
 | quote-authors | zh | no | no | 戴维·费鲁奇等 | structural-only |
 
+### milestone-ai100-2012-alexnet - AlexNet and the ImageNet Breakthrough
+
+Sources:
+- [ImageNet Classification with Deep Convolutional Neural Networks](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) (Paper primary-candidate)
+- [NeurIPS full paper PDF](https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (Paper PDF primary-candidate)
+- [ImageNet Large Scale Visual Recognition Challenge](https://www.image-net.org/challenges/LSVRC/index.php) (Background)
+- [AlexNet overview](https://en.wikipedia.org/wiki/AlexNet) (Context)
+
+| Field | Locale | Risk | Manual Review | Claim | Status |
+| --- | --- | --- | --- | --- | --- |
+| year-title | en | no | no | 2012: AlexNet and the ImageNet Breakthrough | structural-only |
+| year-title | zh | no | no | 2012: AlexNet 与 ImageNet 突破 | structural-only |
+| location | en | no | no | University of Toronto, Toronto, Canada | structural-only |
+| location | zh | no | no | 多伦多大学，加拿大多伦多 | structural-only |
+| figure | en | no | no | Alex Krizhevsky - AlexNet lead author | structural-only |
+| figure | zh | no | no | 亚历克斯·克里热夫斯基 - AlexNet 主要作者 | structural-only |
+| figure | en | no | no | Ilya Sutskever - AlexNet co-author | structural-only |
+| figure | zh | no | no | 伊利亚·苏茨克维 - AlexNet 共同作者 | structural-only |
+| figure | en | no | no | Geoffrey Hinton - AlexNet co-author and advisor | structural-only |
+| figure | zh | no | no | 杰弗里·辛顿 - AlexNet 共同作者与导师 | structural-only |
+| description | en | no | no | In 2012, AlexNet won ImageNet by a large margin and made deep convolutional networks the center of modern computer vision. | structural-only |
+| description | en | no | no | The deep-learning storyline stresses the combined force of data, GPU computation, ReLU, dropout, and engineering scale; the AI100 account anchors the same event in the NeurIPS paper and the ImageNet challenge, where the result made scale visible to the whole field. | structural-only |
+| description | zh | no | no | 2012年，AlexNet 以巨大优势赢得 ImageNet，使深度卷积网络成为现代计算机视觉的中心。 | structural-only |
+| description | zh | no | no | 深度学习发展线强调数据、GPU 算力、ReLU、dropout 和工程规模共同发挥作用；AI100 资料则把这一事件锚定在 NeurIPS 论文与 ImageNet 挑战赛中，说明这个结果如何让整个领域看见规模化训练的力量。 | structural-only |
+| commentary:Historical Background | en | no | no | AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. | structural-only |
+| commentary:Historical Background | en | no | no | GPU training, ReLU activations, data augmentation, and dropout made scale visible. | structural-only |
+| commentary:Historical Background | zh | no | no | AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。 | structural-only |
+| commentary:Historical Background | zh | no | no | GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。 | structural-only |
+| commentary:Core Idea | en | no | no | A deep CNN transforms pixels through learned convolutional layers into object classes. | structural-only |
+| commentary:Core Idea | en | no | no | The demo should highlight how data, GPUs, convolution, ReLU, and regularization formed a trainable system. | structural-only |
+| commentary:Core Idea | zh | no | no | 深度 CNN 通过学习得到的卷积层把像素转换为物体类别。 | structural-only |
+| commentary:Core Idea | zh | no | no | 互动演示应突出数据、GPU、卷积、ReLU 和正则化如何共同构成可训练系统。 | structural-only |
+| commentary:Long-Term Legacy | en | yes | no | Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. | low-priority-risk |
+| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research. | structural-only |
+| commentary:Long-Term Legacy | zh | yes | no | 专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。 | low-priority-risk |
+| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。 | structural-only |
+| quote-work | en | no | no | ImageNet Classification with Deep Convolutional Neural Networks | structural-only |
+| quote-authors | en | no | no | Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012 | structural-only |
+| quote-work | zh | no | no | 使用深度卷积神经网络进行 ImageNet 分类 | structural-only |
+| quote-authors | zh | no | no | 亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012 | structural-only |
+
 ### milestone-2013-dqn - Deep Q Network
 
 Sources:
@@ -1793,7 +1748,6 @@ Sources:
 | commentary:Core Idea | en | no | no | Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. | structural-only |
 | commentary:Core Idea | en | no | no | The result is a compact update rule that usually reaches useful training regimes quickly. | structural-only |
 | commentary:Core Idea | zh | no | no | Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。 | structural-only |
-| commentary:Core Idea | zh | no | no | 关键机制是一阶与二阶矩自适应更新，它把资料线索与可见的演示行为连接起来。 | structural-only |
 | commentary:Long-Term Legacy | en | yes | no | Experts generally treat Adam as a practical default optimizer rather than a universal optimum. | low-priority-risk |
 | commentary:Long-Term Legacy | en | no | no | Its long-term legacy is fast and stable neural-network training, plus a family of descendants such as AdamW and schedule-aware training recipes. | structural-only |
 | commentary:Long-Term Legacy | zh | yes | superlative or benchmark wording | 专家通常把 Adam 视为实用默认优化器，而不是万能最优解。 | needs-manual-source-review |
@@ -2084,6 +2038,45 @@ Sources:
 | quote-work | zh | no | no | 通过反向传播误差学习表示 | structural-only |
 | quote-authors | zh | no | no | 大卫·E·鲁梅尔哈特、杰弗里·E·辛顿、罗纳德·J·威廉姆斯，《Nature》，1986 | structural-only |
 
+### milestone-ai100-1967-knn - KNN
+
+Sources:
+- [Nearest Neighbor Pattern Classification](https://doi.org/10.1109/TIT.1967.1053964) (Paper primary-candidate)
+- [Stanford-hosted paper PDF](https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf) (Paper PDF primary-candidate)
+- [k-nearest neighbors algorithm overview](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) (Background)
+- [scikit-learn nearest neighbors documentation](https://scikit-learn.org/stable/modules/neighbors.html) (Documentation)
+
+| Field | Locale | Risk | Manual Review | Claim | Status |
+| --- | --- | --- | --- | --- | --- |
+| year-title | en | no | no | 1967: KNN | structural-only |
+| year-title | zh | no | no | 1967: KNN 最近邻 | structural-only |
+| location | en | no | no | Stanford University, Stanford, United States | structural-only |
+| location | zh | no | no | 斯坦福大学，美国斯坦福 | structural-only |
+| figure | en | no | no | Thomas Cover - Co-author of nearest-neighbor classification | structural-only |
+| figure | zh | no | no | 托马斯·科弗 - 最近邻分类共同作者 | structural-only |
+| figure | en | no | no | Peter Hart - Co-author of nearest-neighbor classification | structural-only |
+| figure | zh | no | no | 彼得·哈特 - 最近邻分类共同作者 | structural-only |
+| description | en | no | no | Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. | structural-only |
+| description | en | no | no | The result made instance-based learning a durable baseline for pattern recognition and machine learning. | structural-only |
+| description | zh | no | no | 托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。 | structural-only |
+| description | zh | no | no | 这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。 | structural-only |
+| commentary:Historical Background | en | no | no | Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. | structural-only |
+| commentary:Historical Background | en | no | no | The result made instance-based learning a durable baseline for pattern recognition and machine learning. | structural-only |
+| commentary:Historical Background | zh | no | no | 托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。 | structural-only |
+| commentary:Historical Background | zh | no | no | 这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。 | structural-only |
+| commentary:Core Idea | en | no | no | A query point receives the label most common among nearby training examples. | structural-only |
+| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
+| commentary:Core Idea | zh | no | no | 查询点获得附近训练样本中最常见的标签。 | structural-only |
+| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
+| commentary:Long-Term Legacy | en | yes | no | Experts generally treat KNN as a foundational nonparametric baseline: simple, interpretable, and surprisingly strong when distance is meaningful. | low-priority-risk |
+| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the idea that stored examples and local similarity can be a model, not just training data. | structural-only |
+| commentary:Long-Term Legacy | zh | yes | no | 专家通常把 KNN 视为基础性的非参数基线：简单、可解释，并且在距离有意义时表现很强。 | low-priority-risk |
+| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于说明存储样本和局部相似性本身就可以构成模型，而不只是训练数据。 | structural-only |
+| quote-work | en | no | no | Nearest Neighbor Pattern Classification | structural-only |
+| quote-authors | en | no | no | Thomas M. Cover and Peter E. Hart, IEEE Transactions on Information Theory, 1967 | structural-only |
+| quote-work | zh | no | no | 最近邻模式分类 | structural-only |
+| quote-authors | zh | no | no | 托马斯·M·科弗、彼得·E·哈特，《IEEE Transactions on Information Theory》，1967 | structural-only |
+
 ### milestone-ai100-1969-relu - ReLU
 
 Sources:
@@ -2122,6 +2115,45 @@ Sources:
 | quote-authors | en | no | no | Xavier Glorot, Antoine Bordes, and Yoshua Bengio, AISTATS, 2011 | structural-only |
 | quote-work | zh | no | no | 深度稀疏整流神经网络 | structural-only |
 | quote-authors | zh | no | no | 泽维尔·格洛罗、安托万·博尔德、约书亚·本吉奥，AISTATS，2011 | structural-only |
+
+### milestone-ai100-1970-ridge - Ridge
+
+Sources:
+- [Ridge Regression: Biased Estimation for Nonorthogonal Problems](https://doi.org/10.1080/00401706.1970.10488634) (Paper primary-candidate)
+- [Open PDF copy of the Technometrics paper](https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf) (Paper PDF primary-candidate)
+- [Ridge regression overview](https://en.wikipedia.org/wiki/Ridge_regression) (Background)
+- [scikit-learn Ridge documentation](https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification) (Documentation)
+
+| Field | Locale | Risk | Manual Review | Claim | Status |
+| --- | --- | --- | --- | --- | --- |
+| year-title | en | no | no | 1970: Ridge | structural-only |
+| year-title | zh | no | no | 1970: 岭回归 | structural-only |
+| location | en | no | no | University of Delaware, Newark, United States | structural-only |
+| location | zh | no | no | 特拉华大学，美国纽瓦克 | structural-only |
+| figure | en | no | no | Arthur Hoerl - Co-author of ridge regression | structural-only |
+| figure | zh | no | no | 阿瑟·霍尔 - 岭回归共同作者 | structural-only |
+| figure | en | no | no | Robert Kennard - Co-author of ridge regression | structural-only |
+| figure | zh | no | no | 罗伯特·肯纳德 - 岭回归共同作者 | structural-only |
+| description | en | no | no | Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. | structural-only |
+| description | en | no | no | Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable. | structural-only |
+| description | zh | no | no | 阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。 | structural-only |
+| description | zh | no | no | 向正规方程对角线加入小的正数，可以降低系数估计的方差。 | structural-only |
+| commentary:Historical Background | en | no | no | Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. | structural-only |
+| commentary:Historical Background | en | no | no | Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable. | structural-only |
+| commentary:Historical Background | zh | no | no | 阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。 | structural-only |
+| commentary:Historical Background | zh | no | no | 向正规方程对角线加入小的正数，可以降低系数估计的方差。 | structural-only |
+| commentary:Core Idea | en | no | no | A penalty term shrinks coefficients so correlated predictors no longer dominate the fit. | structural-only |
+| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
+| commentary:Core Idea | zh | no | no | 惩罚项会收缩系数，使相关预测变量不再主导拟合。 | structural-only |
+| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
+| commentary:Long-Term Legacy | en | yes | no | Experts generally treat ridge regression as a classic regularization result that made controlled bias a practical tool. | low-priority-risk |
+| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the L2 penalty pattern used across statistics, kernel methods, and deep-learning weight decay. | structural-only |
+| commentary:Long-Term Legacy | zh | yes | no | 专家通常把岭回归视为经典正则化成果，使可控偏差成为实用工具。 | low-priority-risk |
+| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于 L2 惩罚模式被统计学习、核方法和深度学习权重衰减广泛采用。 | structural-only |
+| quote-work | en | no | no | Ridge Regression: Biased Estimation for Nonorthogonal Problems | structural-only |
+| quote-authors | en | no | no | Arthur E. Hoerl and Robert W. Kennard, Technometrics, 1970 | structural-only |
+| quote-work | zh | no | no | 岭回归：非正交问题中的有偏估计 | structural-only |
+| quote-authors | zh | no | no | 阿瑟·E·霍尔、罗伯特·W·肯纳德，《Technometrics》，1970 | structural-only |
 
 ### milestone-ai100-1980-neocognitron - Neocognitron
 
@@ -2233,7 +2265,7 @@ Sources:
 | quote-work | zh | no | no | 能够解决困难学习控制问题的类神经自适应元件 | structural-only |
 | quote-authors | zh | no | no | 安德鲁·巴托、理查德·萨顿、查尔斯·安德森，1983 | structural-only |
 
-### milestone-ai100-1989-lenet - LeNet
+### milestone-ai100-1989-lenet - Convolutional Networks and LeNet
 
 Sources:
 - [Backpropagation Applied to Handwritten Zip Code Recognition](https://doi.org/10.1162/neco.1989.1.4.541) (Paper primary-candidate)
@@ -2243,16 +2275,16 @@ Sources:
 
 | Field | Locale | Risk | Manual Review | Claim | Status |
 | --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 1989: LeNet | structural-only |
-| year-title | zh | no | no | 1989: LeNet | structural-only |
+| year-title | en | no | no | 1989: Convolutional Networks and LeNet | structural-only |
+| year-title | zh | no | no | 1989: 卷积神经网络与 LeNet | structural-only |
 | location | en | no | no | Bell Labs, New Jersey, United States | structural-only |
 | location | zh | no | no | 贝尔实验室，美国新泽西州 | structural-only |
 | figure | en | no | no | Yann LeCun - LeNet lead researcher | structural-only |
 | figure | zh | no | no | 扬·勒昆 - LeNet 主要研究者 | structural-only |
-| description | en | no | no | Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. | structural-only |
-| description | en | no | no | LeNet became a defining example of end-to-end convolutional perception. | structural-only |
-| description | zh | no | no | 扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。 | structural-only |
-| description | zh | no | no | LeNet 成为端到端卷积感知系统的标志性案例。 | structural-only |
+| description | en | no | no | In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. | structural-only |
+| description | en | no | no | LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition. | structural-only |
+| description | zh | no | no | 1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。 | structural-only |
+| description | zh | no | no | LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。 | structural-only |
 | commentary:Historical Background | en | no | no | Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. | structural-only |
 | commentary:Historical Background | en | no | no | LeNet became a defining example of end-to-end convolutional perception. | structural-only |
 | commentary:Historical Background | zh | no | no | 扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。 | structural-only |
@@ -2345,7 +2377,7 @@ Sources:
 | quote-work | zh | no | no | 作为核特征值问题的非线性成分分析 | structural-only |
 | quote-authors | zh | no | no | 伯恩哈德·舍尔科普夫、亚历山大·斯莫拉、克劳斯-罗伯特·穆勒，《Neural Computation》，1998 | structural-only |
 
-### milestone-ai100-1997-lstm - LSTM
+### milestone-ai100-1997-lstm - LSTM and Gated Memory
 
 Sources:
 - [Long Short-Term Memory](https://doi.org/10.1162/neco.1997.9.8.1735) (Paper primary-candidate)
@@ -2355,18 +2387,18 @@ Sources:
 
 | Field | Locale | Risk | Manual Review | Claim | Status |
 | --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 1997: LSTM | structural-only |
-| year-title | zh | no | no | 1997: 长短期记忆网络 | structural-only |
+| year-title | en | no | no | 1997: LSTM and Gated Memory | structural-only |
+| year-title | zh | no | no | 1997: LSTM 与门控记忆 | structural-only |
 | location | en | no | no | Technical University of Munich, Munich, Germany | structural-only |
 | location | zh | no | no | 慕尼黑工业大学，德国慕尼黑 | structural-only |
-| figure | en | no | no | Sepp Hochreiter - Co-author of LSTM | structural-only |
+| figure | en | no | no | Sepp Hochreiter - LSTM co-author | structural-only |
 | figure | zh | no | no | 塞普·霍赫赖特 - LSTM 共同作者 | structural-only |
-| figure | en | no | no | Juergen Schmidhuber - Co-author of LSTM | structural-only |
+| figure | en | no | no | Jürgen Schmidhuber - LSTM co-author | structural-only |
 | figure | zh | no | no | 尤尔根·施密德胡伯 - LSTM 共同作者 | structural-only |
-| description | en | no | no | Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. | structural-only |
-| description | en | no | no | Its gated memory cell allowed sequence models to preserve information over much longer spans than many earlier recurrent designs. | structural-only |
-| description | zh | no | no | 塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。 | structural-only |
-| description | zh | no | no | 它的门控记忆单元让序列模型能比许多早期循环结构保留更长跨度的信息。 | structural-only |
+| description | en | no | no | In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. | structural-only |
+| description | en | no | no | The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant. | structural-only |
+| description | zh | no | no | 1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。 | structural-only |
+| description | zh | no | no | 融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。 | structural-only |
 | commentary:Historical Background | en | no | no | Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. | structural-only |
 | commentary:Historical Background | en | no | no | Its gated memory cell allowed sequence models to preserve information over much longer spans than many earlier recurrent designs. | structural-only |
 | commentary:Historical Background | zh | no | no | 塞普·霍赫赖特和尤尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。 | structural-only |
@@ -2656,45 +2688,6 @@ Sources:
 | quote-work | zh | no | no | SURF：加速稳健特征 | structural-only |
 | quote-authors | zh | no | no | 赫伯特·贝、蒂娜·图伊特拉尔斯、卢克·范古尔，ECCV，2006 | structural-only |
 
-### milestone-ai100-2012-alexnet - AlexNet
-
-Sources:
-- [ImageNet Classification with Deep Convolutional Neural Networks](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) (Paper primary-candidate)
-- [NeurIPS full paper PDF](https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (Paper PDF primary-candidate)
-- [ImageNet Large Scale Visual Recognition Challenge](https://www.image-net.org/challenges/LSVRC/index.php) (Background)
-- [AlexNet overview](https://en.wikipedia.org/wiki/AlexNet) (Context)
-
-| Field | Locale | Risk | Manual Review | Claim | Status |
-| --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 2012: AlexNet | structural-only |
-| year-title | zh | no | no | 2012: AlexNet | structural-only |
-| location | en | no | no | University of Toronto, Toronto, Canada | structural-only |
-| location | zh | no | no | 多伦多大学，加拿大多伦多 | structural-only |
-| figure | en | no | no | Alex Krizhevsky - AlexNet lead author | structural-only |
-| figure | zh | no | no | 亚历克斯·克里泽夫斯基 - AlexNet 主要作者 | structural-only |
-| figure | en | no | no | Geoffrey Hinton - Co-author and advisor | structural-only |
-| figure | zh | no | no | 杰弗里·辛顿 - 共同作者与导师 | structural-only |
-| description | en | no | no | AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. | structural-only |
-| description | en | no | no | GPU training, ReLU activations, data augmentation, and dropout made scale visible. | structural-only |
-| description | zh | no | no | AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。 | structural-only |
-| description | zh | no | no | GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。 | structural-only |
-| commentary:Historical Background | en | no | no | AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. | structural-only |
-| commentary:Historical Background | en | no | no | GPU training, ReLU activations, data augmentation, and dropout made scale visible. | structural-only |
-| commentary:Historical Background | zh | no | no | AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。 | structural-only |
-| commentary:Historical Background | zh | no | no | GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。 | structural-only |
-| commentary:Core Idea | en | no | no | A deep CNN transforms pixels through learned convolutional layers into object classes. | structural-only |
-| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
-| commentary:Core Idea | zh | no | no | 深度 CNN 通过学习得到的卷积层把像素转换为物体类别。 | structural-only |
-| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
-| commentary:Long-Term Legacy | en | yes | no | Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. | low-priority-risk |
-| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research. | structural-only |
-| commentary:Long-Term Legacy | zh | yes | no | 专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。 | low-priority-risk |
-| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。 | structural-only |
-| quote-work | en | no | no | ImageNet Classification with Deep Convolutional Neural Networks | structural-only |
-| quote-authors | en | no | no | Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, NeurIPS, 2012 | structural-only |
-| quote-work | zh | no | no | 使用深度卷积神经网络进行 ImageNet 分类 | structural-only |
-| quote-authors | zh | no | no | 亚历克斯·克里泽夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012 | structural-only |
-
 ### milestone-ai100-2013-variational-autoencoder - Variational Autoencoder
 
 Sources:
@@ -2767,7 +2760,7 @@ Sources:
 | quote-work | zh | no | no | 条件生成对抗网络 | structural-only |
 | quote-authors | zh | no | no | 迈赫迪·米尔扎、西蒙·奥辛德罗，2014 | structural-only |
 
-### milestone-ai100-2014-gan - Generative Adversarial Network
+### milestone-ai100-2014-gan - Generative Adversarial Networks
 
 Sources:
 - [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661) (Paper primary-candidate)
@@ -2777,18 +2770,18 @@ Sources:
 
 | Field | Locale | Risk | Manual Review | Claim | Status |
 | --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 2014: Generative Adversarial Network | structural-only |
+| year-title | en | no | no | 2014: Generative Adversarial Networks | structural-only |
 | year-title | zh | no | no | 2014: 生成对抗网络 | structural-only |
 | location | en | no | no | University of Montreal, Montreal, Canada | structural-only |
 | location | zh | no | no | 蒙特利尔大学，加拿大蒙特利尔 | structural-only |
-| figure | en | no | no | Ian Goodfellow - Lead author of the GAN paper | structural-only |
-| figure | zh | no | no | 伊恩·古德费洛 - GAN 论文主要作者 | structural-only |
-| figure | en | no | no | Yoshua Bengio - Co-author and advisor | structural-only |
-| figure | zh | no | no | 约书亚·本吉奥 - 共同作者与导师 | structural-only |
-| description | en | no | no | Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. | structural-only |
-| description | en | no | no | The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI. | structural-only |
-| description | zh | no | no | 伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。 | structural-only |
-| description | zh | no | no | 这个框架让图像生成、表示学习和对抗训练成为现代生成式 AI 的核心线索之一。 | structural-only |
+| figure | en | no | no | Ian Goodfellow - GAN lead author | structural-only |
+| figure | zh | no | no | 伊恩·古德费洛 - GAN 主要作者 | structural-only |
+| figure | en | no | no | Yoshua Bengio - GAN co-author and advisor | structural-only |
+| figure | zh | no | no | 约书亚·本吉奥 - GAN 共同作者与导师 | structural-only |
+| description | en | no | no | In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. | structural-only |
+| description | en | no | no | The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training. | structural-only |
+| description | zh | no | no | 2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。 | structural-only |
+| description | zh | no | no | 融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。 | structural-only |
 | commentary:Historical Background | en | no | no | Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning setup between a generator and a discriminator. | structural-only |
 | commentary:Historical Background | en | no | no | The framework made image generation, representation learning, and adversarial training a central thread of modern generative AI. | structural-only |
 | commentary:Historical Background | zh | no | no | 伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。 | structural-only |
@@ -2894,14 +2887,16 @@ Sources:
 | year-title | zh | no | no | 2014: 带注意力机制的神经机器翻译 | structural-only |
 | location | en | no | no | University of Montreal, Montreal, Canada | structural-only |
 | location | zh | no | no | 蒙特利尔大学，加拿大蒙特利尔 | structural-only |
-| figure | en | no | no | Yoshua Bengio - Co-author of the neural attention paper | structural-only |
-| figure | zh | no | no | 约书亚·本吉奥 - 神经注意力论文共同作者 | structural-only |
-| figure | en | no | no | Kyunghyun Cho - Co-author of the neural attention paper | structural-only |
+| figure | en | no | no | Dzmitry Bahdanau - Lead author of neural attention paper | structural-only |
+| figure | zh | no | no | 兹米特里·巴赫达瑙 - 神经注意力论文主要作者 | structural-only |
+| figure | en | no | no | Kyunghyun Cho - Neural attention paper co-author | structural-only |
 | figure | zh | no | no | 赵京贤 - 神经注意力论文共同作者 | structural-only |
-| description | en | no | no | Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. | structural-only |
-| description | en | no | no | This made alignment a learned, differentiable part of sequence-to-sequence modeling. | structural-only |
-| description | zh | no | no | 兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。 | structural-only |
-| description | zh | no | no | 这使对齐成为序列到序列建模中可学习、可微分的一部分。 | structural-only |
+| figure | en | no | no | Yoshua Bengio - Neural attention paper co-author | structural-only |
+| figure | zh | no | no | 约书亚·本吉奥 - 神经注意力论文共同作者 | structural-only |
+| description | en | no | no | In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. | structural-only |
+| description | en | no | no | This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI. | structural-only |
+| description | zh | no | no | 2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。 | structural-only |
+| description | zh | no | no | 融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。 | structural-only |
 | commentary:Historical Background | en | no | no | Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. | structural-only |
 | commentary:Historical Background | en | no | no | This made alignment a learned, differentiable part of sequence-to-sequence modeling. | structural-only |
 | commentary:Historical Background | zh | no | no | 兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。 | structural-only |
@@ -3196,14 +3191,20 @@ Sources:
 | year-title | zh | no | no | 2015: ResNet | structural-only |
 | location | en | no | no | Microsoft Research Asia, Beijing, China | structural-only |
 | location | zh | no | no | 微软亚洲研究院，中国北京 | structural-only |
-| figure | en | no | no | Kaiming He - Lead author of ResNet | structural-only |
-| figure | zh | no | no | 何恺明 - ResNet 主要作者 | structural-only |
-| figure | en | no | no | Jian Sun - Co-author of ResNet | structural-only |
-| figure | zh | no | no | 孙剑 - ResNet 共同作者 | structural-only |
-| description | en | no | no | ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. | structural-only |
-| description | en | no | no | It made hundreds of layers trainable and became a backbone for vision systems. | structural-only |
-| description | zh | no | no | ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。 | structural-only |
-| description | zh | no | no | 它让数百层网络变得可训练，并成为视觉系统的常用骨干网络。 | structural-only |
+| figure | en | no | no | Kaiming He - ResNet lead author | structural-only |
+| figure | zh | no | no | 何恺明 - ResNet 第一作者 | structural-only |
+| figure | en | no | no | Xiangyu Zhang - ResNet co-author | structural-only |
+| figure | zh | no | no | 张祥雨 - ResNet 共同作者 | structural-only |
+| figure | en | no | no | Shaoqing Ren - ResNet co-author | structural-only |
+| figure | zh | no | no | 任少卿 - ResNet 共同作者 | structural-only |
+| figure | en | no | no | Jian Sun - ResNet co-author and corresponding author | structural-only |
+| figure | zh | no | no | 孙剑 - ResNet 共同作者与通讯作者 | structural-only |
+| description | en | no | no | In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning at Microsoft Research Asia. | structural-only |
+| description | en | no | no | ResNet used shortcut connections so very deep networks could learn residual refinements instead of full transformations, solving a practical training bottleneck and becoming a standard visual backbone. | structural-only |
+| description | en | no | no | The fused version combines the deep-learning storyline's emphasis on engineering simplicity and trainability with the AI100 paper sources and residual-block explanation. | structural-only |
+| description | zh | no | no | 2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。 | structural-only |
+| description | zh | yes | proof/solved wording; non-legacy risk claim | ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。 | needs-manual-source-review |
+| description | zh | no | no | 融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。 | structural-only |
 | commentary:Historical Background | en | no | no | ResNet introduced residual connections that let very deep networks learn refinements instead of full transformations. | structural-only |
 | commentary:Historical Background | en | no | no | It made hundreds of layers trainable and became a backbone for vision systems. | structural-only |
 | commentary:Historical Background | zh | no | no | ResNet 引入残差连接，使很深的网络可以学习增量修正，而不是完整变换。 | structural-only |
@@ -3375,6 +3376,45 @@ Sources:
 | quote-work | zh | no | no | 基于强化学习的神经架构搜索 | structural-only |
 | quote-authors | zh | no | no | 巴雷特·佐夫、黎国威，ICLR，2017 | structural-only |
 
+### milestone-ai100-2017-densenet - DenseNet
+
+Sources:
+- [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993) (Paper primary-candidate)
+- [CVF Open Access paper page](https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html) (Conference paper primary-candidate)
+- [Original DenseNet code repository](https://github.com/liuzhuang13/DenseNet) (Code)
+- [Meta AI publication page](https://ai.meta.com/research/publications/densely-connected-convolutional-networks/) (Publication)
+
+| Field | Locale | Risk | Manual Review | Claim | Status |
+| --- | --- | --- | --- | --- | --- |
+| year-title | en | no | no | 2016: DenseNet | structural-only |
+| year-title | zh | no | no | 2016: DenseNet | structural-only |
+| location | en | no | no | Cornell University, Ithaca, United States | structural-only |
+| location | zh | no | no | 康奈尔大学，美国伊萨卡 | structural-only |
+| figure | en | no | no | Gao Huang - DenseNet lead author | structural-only |
+| figure | zh | no | no | 黄高 - DenseNet 主要作者 | structural-only |
+| figure | en | no | no | Zhuang Liu - DenseNet co-author | structural-only |
+| figure | zh | no | no | 刘壮 - DenseNet 共同作者 | structural-only |
+| description | en | yes | absolute-first-or-only wording; non-legacy risk claim | DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. | needs-manual-source-review |
+| description | en | no | no | The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper. | structural-only |
+| description | zh | yes | absolute-first-or-only wording; non-legacy risk claim | DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。 | needs-manual-source-review |
+| description | zh | no | no | 深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。 | structural-only |
+| commentary:Historical Background | en | no | no | DenseNet connected each layer to every later layer within a dense block. | structural-only |
+| commentary:Historical Background | en | no | no | This encouraged feature reuse, improved gradient flow, and offered a compact alternative to simply making networks wider or deeper. | structural-only |
+| commentary:Historical Background | zh | no | no | DenseNet 在密集块中把每一层连接到后续所有层。 | structural-only |
+| commentary:Historical Background | zh | no | no | 这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。 | structural-only |
+| commentary:Core Idea | en | no | no | Every layer receives the feature maps of all earlier layers in the same block. | structural-only |
+| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
+| commentary:Core Idea | zh | no | no | 每一层都会接收同一块中所有早期层的特征图。 | structural-only |
+| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
+| commentary:Long-Term Legacy | en | yes | no | Experts generally treat DenseNet as an influential architecture for feature reuse and gradient flow, even when newer backbones are preferred in deployment. | low-priority-risk |
+| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the dense-connectivity pattern that clarified how short paths and reused features can improve deep CNNs. | structural-only |
+| commentary:Long-Term Legacy | zh | yes | no | 专家通常把 DenseNet 视为对特征复用和梯度流动有重要影响的架构，即使部署中常使用更新的骨干网络。 | low-priority-risk |
+| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于密集连接模式阐明了短路径和复用特征如何改进深度 CNN。 | structural-only |
+| quote-work | en | no | no | Densely Connected Convolutional Networks | structural-only |
+| quote-authors | en | no | no | Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017 | structural-only |
+| quote-work | zh | no | no | 密集连接卷积网络 | structural-only |
+| quote-authors | zh | no | no | 黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017 | structural-only |
+
 ### milestone-ai100-2017-cyclegan - CycleGAN
 
 Sources:
@@ -3410,45 +3450,6 @@ Sources:
 | quote-authors | en | no | no | Jun-Yan Zhu et al., ICCV, 2017 | structural-only |
 | quote-work | zh | no | no | 使用循环一致对抗网络进行非配对图像到图像转换 | structural-only |
 | quote-authors | zh | no | no | 朱俊彦等，ICCV，2017 | structural-only |
-
-### milestone-ai100-2017-densenet - DenseNet
-
-Sources:
-- [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993) (Paper primary-candidate)
-- [CVF Open Access paper page](https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html) (Conference paper primary-candidate)
-- [Original DenseNet code repository](https://github.com/liuzhuang13/DenseNet) (Code)
-- [Meta AI publication page](https://ai.meta.com/research/publications/densely-connected-convolutional-networks/) (Publication)
-
-| Field | Locale | Risk | Manual Review | Claim | Status |
-| --- | --- | --- | --- | --- | --- |
-| year-title | en | no | no | 2017: DenseNet | structural-only |
-| year-title | zh | no | no | 2017: DenseNet | structural-only |
-| location | en | no | no | Cornell University, Ithaca, United States | structural-only |
-| location | zh | no | no | 康奈尔大学，美国伊萨卡 | structural-only |
-| figure | en | no | no | Gao Huang - Lead author of DenseNet | structural-only |
-| figure | zh | no | no | 黄高 - DenseNet 主要作者 | structural-only |
-| figure | en | no | no | Zhuang Liu - Co-author of DenseNet | structural-only |
-| figure | zh | no | no | 刘壮 - DenseNet 共同作者 | structural-only |
-| description | en | no | no | DenseNet connected each layer to every later layer within a dense block. | structural-only |
-| description | en | no | no | This encouraged feature reuse, improved gradient flow, and offered a compact alternative to simply making networks wider or deeper. | structural-only |
-| description | zh | no | no | DenseNet 在密集块中把每一层连接到后续所有层。 | structural-only |
-| description | zh | no | no | 这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。 | structural-only |
-| commentary:Historical Background | en | no | no | DenseNet connected each layer to every later layer within a dense block. | structural-only |
-| commentary:Historical Background | en | no | no | This encouraged feature reuse, improved gradient flow, and offered a compact alternative to simply making networks wider or deeper. | structural-only |
-| commentary:Historical Background | zh | no | no | DenseNet 在密集块中把每一层连接到后续所有层。 | structural-only |
-| commentary:Historical Background | zh | no | no | 这促进了特征复用，改善了梯度流动，并提供了比单纯加宽或加深网络更紧凑的方案。 | structural-only |
-| commentary:Core Idea | en | no | no | Every layer receives the feature maps of all earlier layers in the same block. | structural-only |
-| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
-| commentary:Core Idea | zh | no | no | 每一层都会接收同一块中所有早期层的特征图。 | structural-only |
-| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
-| commentary:Long-Term Legacy | en | yes | no | Experts generally treat DenseNet as an influential architecture for feature reuse and gradient flow, even when newer backbones are preferred in deployment. | low-priority-risk |
-| commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the dense-connectivity pattern that clarified how short paths and reused features can improve deep CNNs. | structural-only |
-| commentary:Long-Term Legacy | zh | yes | no | 专家通常把 DenseNet 视为对特征复用和梯度流动有重要影响的架构，即使部署中常使用更新的骨干网络。 | low-priority-risk |
-| commentary:Long-Term Legacy | zh | no | no | 它的长期影响在于密集连接模式阐明了短路径和复用特征如何改进深度 CNN。 | structural-only |
-| quote-work | en | no | no | Densely Connected Convolutional Networks | structural-only |
-| quote-authors | en | no | no | Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger, CVPR, 2017 | structural-only |
-| quote-work | zh | no | no | 密集连接卷积网络 | structural-only |
-| quote-authors | zh | no | no | 黄高、刘壮、劳伦斯·范德马滕、基利安·温伯格，CVPR，2017 | structural-only |
 
 ### milestone-ai100-2017-gat - GAT
 
@@ -3536,22 +3537,22 @@ Sources:
 | year-title | zh | no | no | 2017: Transformer | structural-only |
 | location | en | no | no | Google Brain, Mountain View, United States | structural-only |
 | location | zh | no | no | Google Brain，美国山景城 | structural-only |
-| figure | en | no | no | Ashish Vaswani - Co-author of the Transformer paper | structural-only |
-| figure | zh | no | no | 阿希什·瓦斯瓦尼 - Transformer 论文共同作者 | structural-only |
-| figure | en | no | no | Noam Shazeer - Co-author of the Transformer paper | structural-only |
-| figure | zh | no | no | 诺姆·沙泽尔 - Transformer 论文共同作者 | structural-only |
-| description | en | no | no | The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. | structural-only |
-| description | en | no | no | Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems. | structural-only |
-| description | zh | no | no | Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。 | structural-only |
-| description | zh | no | no | 它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。 | structural-only |
+| figure | en | no | no | Ashish Vaswani - Transformer lead author | structural-only |
+| figure | zh | no | no | 阿希什·瓦斯瓦尼 - Transformer 主要作者 | structural-only |
+| figure | en | no | no | Noam Shazeer - Transformer co-author | structural-only |
+| figure | zh | no | no | 诺姆·沙泽尔 - Transformer 共同作者 | structural-only |
+| description | en | no | no | In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. | structural-only |
+| description | en | no | no | The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems. | structural-only |
+| description | zh | no | no | 2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。 | structural-only |
+| description | zh | no | no | 深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。 | structural-only |
 | commentary:Historical Background | en | no | no | The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. | structural-only |
 | commentary:Historical Background | en | no | no | Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems. | structural-only |
 | commentary:Historical Background | zh | no | no | Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。 | structural-only |
 | commentary:Historical Background | zh | no | no | 它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。 | structural-only |
 | commentary:Core Idea | en | no | no | Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. | structural-only |
-| commentary:Core Idea | en | no | no | The interactive demo focuses on the steps that connect the source material to the visible system behavior. | structural-only |
+| commentary:Core Idea | en | no | no | The demo should highlight how self-attention replaced recurrent processing. | structural-only |
 | commentary:Core Idea | zh | no | no | 每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。 | structural-only |
-| commentary:Core Idea | zh | no | no | 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。 | structural-only |
+| commentary:Core Idea | zh | no | no | 互动演示应突出自注意力如何替代循环式处理。 | structural-only |
 | commentary:Long-Term Legacy | en | yes | no | Experts generally treat the Transformer as one of the defining architectures of modern AI. | low-priority-risk |
 | commentary:Long-Term Legacy | en | no | no | Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research. | structural-only |
 | commentary:Long-Term Legacy | zh | yes | no | 专家通常把 Transformer 视为现代 AI 的定义性架构之一。 | low-priority-risk |
@@ -3611,12 +3612,12 @@ Sources:
 | year-title | zh | no | no | 2018: BERT | structural-only |
 | location | en | no | no | Google, Mountain View, United States | structural-only |
 | location | zh | no | no | Google，美国山景城 | structural-only |
-| figure | en | no | no | Jacob Devlin - Lead author of BERT | structural-only |
+| figure | en | no | no | Jacob Devlin - BERT lead author | structural-only |
 | figure | zh | no | no | 雅各布·德夫林 - BERT 主要作者 | structural-only |
-| description | en | no | no | Jacob Devlin and collaborators introduced BERT as a bidirectional transformer language model pre-trained with masked language modeling and next-sentence prediction. | structural-only |
-| description | en | no | no | It made pre-training then fine-tuning a dominant recipe for natural language understanding. | structural-only |
-| description | zh | no | no | 雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。 | structural-only |
-| description | zh | no | no | 它让“先预训练、再微调”成为自然语言理解的主流配方。 | structural-only |
+| description | en | no | no | In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. | structural-only |
+| description | en | no | no | The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line. | structural-only |
+| description | zh | no | no | 2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。 | structural-only |
+| description | zh | no | no | 融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。 | structural-only |
 | commentary:Historical Background | en | no | no | Jacob Devlin and collaborators introduced BERT as a bidirectional transformer language model pre-trained with masked language modeling and next-sentence prediction. | structural-only |
 | commentary:Historical Background | en | no | no | It made pre-training then fine-tuning a dominant recipe for natural language understanding. | structural-only |
 | commentary:Historical Background | zh | no | no | 雅各布·德夫林及合作者提出 BERT，这是一种用掩码语言建模和下一句预测预训练的双向 Transformer 语言模型。 | structural-only |
@@ -3650,12 +3651,12 @@ Sources:
 | year-title | zh | no | no | 2018: GPT | structural-only |
 | location | en | no | no | OpenAI, San Francisco, United States | structural-only |
 | location | zh | no | no | OpenAI，美国旧金山 | structural-only |
-| figure | en | no | no | Alec Radford - Lead author of the GPT paper | structural-only |
-| figure | zh | no | no | 亚历克·拉德福德 - GPT 论文主要作者 | structural-only |
-| description | en | yes | absolute-first-or-only wording; non-legacy risk claim | Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. | needs-manual-source-review |
-| description | en | yes | absolute-first-or-only wording; non-legacy risk claim | It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models. | needs-manual-source-review |
-| description | zh | no | no | 亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。 | structural-only |
-| description | zh | no | no | 它确立了解码器式预训练模式，后来扩展为 GPT-2、GPT-3 和现代语言模型。 | structural-only |
+| figure | en | no | no | Alec Radford - GPT lead author | structural-only |
+| figure | zh | no | no | 亚历克·拉德福德 - GPT 主要作者 | structural-only |
+| description | en | yes | absolute-first-or-only wording; non-legacy risk claim | In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. | needs-manual-source-review |
+| description | en | yes | absolute-first-or-only wording; non-legacy risk claim | The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models. | needs-manual-source-review |
+| description | zh | no | no | 2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。 | structural-only |
+| description | zh | no | no | 融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。 | structural-only |
 | commentary:Historical Background | en | yes | absolute-first-or-only wording; non-legacy risk claim | Alec Radford and colleagues introduced the first Generative Pre-trained Transformer as a language model trained on large unlabeled text and adapted to downstream tasks. | needs-manual-source-review |
 | commentary:Historical Background | en | yes | absolute-first-or-only wording; non-legacy risk claim | It established the decoder-only pre-training pattern that later scaled into GPT-2, GPT-3, and modern language models. | needs-manual-source-review |
 | commentary:Historical Background | zh | no | no | 亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，把语言模型先在大规模无标注文本上训练，再适配下游任务。 | structural-only |
@@ -3729,10 +3730,10 @@ Sources:
 | figure | zh | no | no | 约翰·江珀 - AlphaFold2 主要研究者 | structural-only |
 | figure | en | no | no | Demis Hassabis - DeepMind co-founder and AlphaFold leader | structural-only |
 | figure | zh | no | no | 德米斯·哈萨比斯 - DeepMind 联合创始人与 AlphaFold 负责人 | structural-only |
-| description | en | no | no | DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. | structural-only |
-| description | en | no | no | It showed how deep learning could transform a long-standing scientific problem. | structural-only |
-| description | zh | no | no | DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。 | structural-only |
-| description | zh | no | no | 它展示了深度学习如何改变长期存在的科学难题。 | structural-only |
+| description | en | no | no | In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. | structural-only |
+| description | en | no | no | The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement. | structural-only |
+| description | zh | no | no | 2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。 | structural-only |
+| description | zh | no | no | 融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。 | structural-only |
 | commentary:Historical Background | en | no | no | DeepMind’s AlphaFold2 achieved a major jump in protein structure prediction at CASP14 by combining evolutionary information, attention-based representations, and end-to-end structure refinement. | structural-only |
 | commentary:Historical Background | en | no | no | It showed how deep learning could transform a long-standing scientific problem. | structural-only |
 | commentary:Historical Background | zh | no | no | DeepMind 的 AlphaFold2 在 CASP14 蛋白质结构预测中取得重大跃升，结合进化信息、基于注意力的表示和端到端结构优化。 | structural-only |

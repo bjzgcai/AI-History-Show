@@ -6,6 +6,8 @@ Archive JSON is the production authority. `npm run generate` compiles `archive/s
 
 The official pages no longer support an Archive preview query switch. Explicit preview, native, parity, and review commands remain offline comparison tools and write their heavy JS/JSON/HTML working files under ignored `.tmp/archive-*` directories. Pages and Docker publish only `.tmp/static-site`.
 
+The current entity graph, compilation sequence, failure safeguards, Legacy isolation, and deployment flow are documented in [`docs/archive-data-flow.md`](../docs/archive-data-flow.md).
+
 Use `/archive-admin` to edit both event bundles and existing storylines, then validate and regenerate. `/admin` and `npm run generate:legacy` are retained only for read-only reference, rollback, comparison, and migration.
 
 The archive is now the default generated-display authority. Every current display target is represented by an archive event or canonical event variant; the legacy-compatible generator is retained temporarily for comparison and rollback.
@@ -69,7 +71,7 @@ Current archive coverage is tracked in:
 ```text
 reports/archive-migration-progress.md
 reports/archive-build-diff.md
-reports/archive-refactor-completion-audit.md
+reports/history/archive-refactor-completion-audit.md
 ```
 
 As of the latest audit:
