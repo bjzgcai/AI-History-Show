@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUTPUT = path.join(ROOT, 'manage', 'figure-avatar-report.md');
+const OUTPUT = path.join(ROOT, '.tmp', 'archive-reports', 'figure-avatar-report.md');
 const AVATAR_REGISTRY_PATH = path.join(ROOT, 'manage', 'figure-avatars.js');
 
 const { SUPPORTED_LOCALES, getLocalizedText, isLocalizedText } = require(path.join(ROOT, 'shared', 'utils.js'));
@@ -74,6 +74,7 @@ function writeIfMeaningfullyChanged(file, content) {
         }
     }
 
+    fs.mkdirSync(path.dirname(file), { recursive: true });
     fs.writeFileSync(file, content, 'utf8');
     return true;
 }

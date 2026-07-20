@@ -7,7 +7,7 @@ const path = require('node:path');
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const RESOURCE_ROOTS = ['resources', 'research', 'examples'];
-const OUT_JSON = path.join(ROOT, 'reports', 'assets-usage.json');
+const OUT_JSON = path.join(ROOT, '.tmp', 'archive-reports', 'assets-usage.json');
 const OUT_MD = path.join(ROOT, 'reports', 'assets-usage.md');
 const EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.pdf', '.mp4', '.json', '.sgf']);
 
@@ -87,6 +87,7 @@ function main() {
         incomplete
     };
     fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
+    fs.mkdirSync(path.dirname(OUT_MD), { recursive: true });
     fs.writeFileSync(OUT_JSON, `${JSON.stringify(output, null, 2)}\n`);
 
     const lines = [];
@@ -141,6 +142,7 @@ function main() {
     lines.push('');
     fs.writeFileSync(OUT_MD, `${lines.join('\n')}\n`);
     console.log(`Assets usage report: ${rel(OUT_MD)}`);
+    console.log(`Assets usage JSON: ${rel(OUT_JSON)}`);
 }
 
 main();

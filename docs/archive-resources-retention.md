@@ -28,9 +28,9 @@ archive/events/<event-id>/quizzes.json
 
 其中 `npm run generate:archive` 直接写入 `milestones-data.js` 和 `milestones-data-default.js`，不读取 legacy milestones 作为 scaffold。
 
-### Legacy-compatible generator
+### Legacy generator（显式兼容路径）
 
-默认的 `npm run generate` 仍读取 `manage/` 与部分 legacy resource helper。只要该生成路径和本地 admin 仍保留，就不能删除这些辅助文件。
+默认 `npm run generate` 已直接编译 Archive。仅 `npm run generate:legacy`、Legacy 只读参考页，以及部分 migration/parity/audit 工具继续读取 `manage/` 与 legacy resource helper。只要这些显式兼容用途仍保留，就不能删除相关辅助文件。当前完整边界见 [Archive 数据流与内容权威边界](archive-data-flow.md)。
 
 ## 必须保留：archive 内容直接引用
 
@@ -113,11 +113,11 @@ resources/videos/*.json
 
 但目前仍由 legacy generator 或 admin 使用：
 
-- `manage/generate.js` 读取 quote/research candidates 和视频 metadata；
-- `manage/server.js` 与 `manage/admin.html` 使用 quote candidates，并会维护 `resources/videos/{key}.json`；
-- 默认 `npm run generate` 仍走该兼容链路。
+- 默认 `npm run generate` 不读取这些 helper；
+- `manage/generate.js`（仅由 `npm run generate:legacy` 等显式兼容流程调用）读取 quote/research candidates 和视频 metadata；
+- `manage/server.js` 的 Legacy 只读界面仍读取 quote candidates；原有 mutation 路由已在 authority boundary 返回 HTTP 403。
 
-结论：它们可以从 archive-native 运行时依赖清单中排除，但现在不能从仓库删除。只有默认 generator 和 admin 编辑流程也切换到 archive authority 后，才能退休。
+结论：它们可以从 Archive 生产运行时依赖清单中排除，但现在仍不能从仓库删除。只有 rollback/comparison/migration 周期结束且剩余工具完成迁移后，才能退休。
 
 ## `resources/papers/` 的状态
 

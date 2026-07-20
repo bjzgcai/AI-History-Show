@@ -1,13 +1,13 @@
 # Archive-native vs Legacy Main Exhibit Diff
 
-Generated: 2026-07-15T02:17:44.551Z
+Generated: 2026-07-17T11:35:30.351Z
 
 This report compares fresh outputs from the legacy-compatible generator and the direct archive-native generator as consumed by `index.html`.
 
 ## Summary
 
-- Legacy milestones: 134
-- Archive-native milestones: 134
+- Legacy milestones: 146
+- Archive-native milestones: 146
 - Missing archive ids: 0
 - Extra archive ids: 0
 - Storyline membership and order identical: yes
@@ -26,7 +26,7 @@ This report compares fresh outputs from the legacy-compatible generator and the 
 | category | 0 | 0 |
 | figures | 0 | 0 |
 | quote | 0 | 0 |
-| sources | 7 | 7 |
+| sources | 0 | 0 |
 | commentary | 4 | 6 |
 | quizzes | 0 | 0 |
 
@@ -39,7 +39,7 @@ This report compares fresh outputs from the legacy-compatible generator and the 
 - Visual renderer changed: 0
 - Analysis changed: 0
 - Achievement auxiliary fields changed: 0
-- Legacy paper-list changed: 7
+- Legacy paper-list changed: 0
 
 The seven `sources` differences come from legacy `papers[]` cards that are absent in archive-native output. Remote paper URLs are still present in `achievement.sources`, but five local PDF links are no longer rendered.
 ## Visual-module differences
@@ -82,17 +82,17 @@ Archive-native commentary carries source bindings and, for the listed records, u
 
 | Field | Legacy records | Archive-native records |
 |---|---:|---:|
-| archive | 134 | 134 |
-| archiveEventId | 134 | 134 |
-| archiveVariantId | 134 | 134 |
-| archivePresentationMode | 134 | 134 |
-| sourceKind | 134 | 134 |
-| storyline | 113 | 134 |
-| branch | 13 | 0 |
+| archive | 146 | 146 |
+| archiveEventId | 146 | 146 |
+| archiveVariantId | 146 | 146 |
+| archivePresentationMode | 146 | 146 |
+| sourceKind | 146 | 146 |
+| storyline | 125 | 146 |
+| branch | 25 | 12 |
 | fusionCanonical | 24 | 0 |
-| order | 0 | 134 |
-| date | 0 | 134 |
-| papers | 7 | 0 |
+| order | 0 | 146 |
+| date | 0 | 146 |
+| papers | 8 | 8 |
 | quiz | 113 | 0 |
 
 Notable interpretation:

@@ -1,6 +1,6 @@
 # AI100 Manual Source Review Guide
 
-Generated from `reports/ai100-accuracy-audit.json`. This file rewrites the 52 weak/manual-review claims into a reviewer-friendly checklist.
+Generated from `.tmp/archive-reports/ai100-accuracy-audit.json`. This file rewrites the 52 weak/manual-review claims into a reviewer-friendly checklist.
 
 ## What is the problem?
 
@@ -33,7 +33,7 @@ For each item below:
 1. Open the primary candidate source first.
 2. Verify the exact claim, not just the general topic.
 3. Mark one outcome in your notes: `Supported`, `Needs softer wording`, `Needs better source`, or `Incorrect`.
-4. If editing content, update `manage/events.js` or `manage/ai100-extra-events.js`, then run `npm run generate && npm run audit:ai100-accuracy`.
+4. If editing content, update the relevant `archive/events/<event-id>/` bundle or storyline variant, then run `npm run validate:archive && npm run generate && npm run audit:ai100-accuracy`.
 
 ## Manual Review Checklist
 

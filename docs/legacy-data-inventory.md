@@ -1,6 +1,6 @@
 # Legacy 历史数据文件盘点
 
-> **当前状态（2026-07-17）**：Archive JSON 已成为生产权威。默认 `npm run generate` 只编译 `archive/storylines/*.json` 与 `archive/events/*`；正式 compiler 不再读取 `manage/events.js`、`manage/catalog.js` 或 `manage/event-fusions.js`。本文后续“正式展陈仍从 Legacy 生成”等段落记录的是迁移阶段历史，不再是当前操作指南。保留的 Legacy 文件仅用于显式 `npm run generate:legacy`、rollback、comparison、migration 和 parity。重型 preview/parity/review 产物写入 `.tmp/archive-*`，正式页面也不再支持 `?archivePreview=1` 数据旁路。
+> **当前状态（2026-07-17）**：Archive JSON 已成为生产权威。默认 `npm run generate` 只编译 `archive/storylines/*.json` 与 `archive/events/*`；正式 compiler 不再读取 `manage/events.js`、`manage/catalog.js` 或 `manage/event-fusions.js`。本文后续“正式展陈仍从 Legacy 生成”等段落记录的是迁移阶段历史，不再是当前操作指南。保留的 Legacy 文件仅用于显式 `npm run generate:legacy`、rollback、comparison、migration 和 parity。重型 preview/parity/review 产物写入 `.tmp/archive-*`，正式页面也不再支持 `?archivePreview=1` 数据旁路。当前边界图见 [Archive 数据流与内容权威边界](archive-data-flow.md)。
 本文档用于记录 archive 迁移之后，旧版历史数据文件（legacy data files）当前还承担哪些职责，以及后续应如何逐步收口到文件化 `archive/` 模型中。
 
 ## 当前状态

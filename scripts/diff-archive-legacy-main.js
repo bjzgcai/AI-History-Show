@@ -6,10 +6,12 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const LEGACY_PATH = process.argv[2] ? path.resolve(process.argv[2]) : path.join(ROOT, 'milestones-data-legacy.js');
+const LEGACY_PATH = process.argv[2]
+    ? path.resolve(process.argv[2])
+    : path.join(ROOT, '.tmp', 'archive-parity', 'data', 'milestones-data-legacy.js');
 const ARCHIVE_PATH = process.argv[3] ? path.resolve(process.argv[3]) : path.join(ROOT, 'milestones-data.js');
 const REPORT_PATH = path.join(ROOT, 'reports', 'archive-legacy-main-diff.md');
-const JSON_REPORT_PATH = path.join(ROOT, 'reports', 'archive-legacy-main-diff.json');
+const JSON_REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-legacy-main-diff.json');
 const VIEW_SCRIPT = fs.readFileSync(path.join(ROOT, 'shared', 'milestone-view.js'), 'utf8');
 
 function loadMilestones(filePath) {
@@ -417,9 +419,9 @@ lines.push(
     '- Archive-native omits legacy `papers[]`. Seven gaming records lose paper-list metadata; five of those records lose a rendered local PDF card, while equivalent remote sources remain available. Quiz rendering remains unchanged through `quizzes`.'
 );
 lines.push('- Provenance changes from `sourceKind: archive+legacy` to `sourceKind: archive-preview`.');
-lines.push('');
 
 fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
+fs.mkdirSync(path.dirname(JSON_REPORT_PATH), { recursive: true });
 fs.writeFileSync(REPORT_PATH, `${lines.join('\n')}\n`, 'utf8');
 fs.writeFileSync(JSON_REPORT_PATH, `${JSON.stringify(reportData, null, 2)}\n`, 'utf8');
 console.log(`Archive/legacy main diff: ${path.relative(ROOT, REPORT_PATH)}`);
