@@ -1,4 +1,5 @@
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
 const path = require('node:path');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
@@ -66,5 +67,35 @@ assert.equal(
     'detail routing should find an archive event by its milestone id'
 );
 console.log('PASS archive deep-learning detail lookup');
+
+const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+assert.match(
+    indexHtml,
+    /function updateStorylineUrl[\s\S]*?searchParams\.delete\('uiMode'\)[\s\S]*?searchParams\.delete\('event'\)/,
+    'storyline changes should clear stale detail URL parameters'
+);
+assert.match(
+    indexHtml,
+    /requestedUiMode === 'detail'[\s\S]*?isUiBrowserActive\(\)[\s\S]*?normalizedUrl\.searchParams\.delete\('uiMode'\)/,
+    'initial detail URLs should only restore inside the UI browser and otherwise normalize themselves'
+);
+console.log('PASS storyline detail URL normalization');
+
+assert.match(
+    indexHtml,
+    /const shouldUseVideo = isDirectVideoMedia\(videoUrl\)[\s\S]*?canLoadBranchVideo/,
+    'game evolution images such as GIF files should not be rendered through a video element'
+);
+assert.match(
+    indexHtml,
+    /class="ui-media-video-poster"/,
+    'AI100 commentary media should display a visual poster before playback'
+);
+assert.match(
+    indexHtml,
+    /const player = button\.querySelector\('video'\)[\s\S]*?const playback = player\.play\(\)/,
+    'direct AI100 commentary videos should start playback from the user click'
+);
+console.log('PASS Pages media rendering safeguards');
 
 console.log('All storyline-routing checks passed.');
