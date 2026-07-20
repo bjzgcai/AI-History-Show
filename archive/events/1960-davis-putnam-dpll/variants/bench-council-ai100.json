@@ -50,8 +50,8 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。",
-        "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible."
+        "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。这一流程把逻辑可满足性问题组织成可系统探索和剪枝的搜索树。",
+        "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible. This process organizes satisfiability into a search tree that can be explored systematically and pruned when contradictions appear."
       },
       "sourceIds": [
         "source-a-computing-procedure-for-quantification-theory"

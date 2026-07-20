@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-17 08:58
+// 生成时间: 2026-07-20 03:23
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -4113,8 +4113,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。",
-          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears."
+          "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。这种规则化归约把许多证明步骤变成确定性的结构转换，从而减少不必要的搜索。",
+          "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears. This rule-driven reduction turns many proof steps into deterministic structural transformations, reducing unnecessary search."
         },
         "sourceIds": [
           "source-proving-theorems-by-pattern-recognition-i"
@@ -4579,8 +4579,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。",
-          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible."
+          "zh": "界面应展示有纪律的分支搜索：简化子句、传播被迫赋值、选择变量分裂，并在分支不可能时回溯。这一流程把逻辑可满足性问题组织成可系统探索和剪枝的搜索树。",
+          "en": "The interface should show disciplined branching: simplify clauses, propagate forced assignments, split on a variable, and backtrack when a branch becomes impossible. This process organizes satisfiability into a search tree that can be explored systematically and pruned when contradictions appear."
         },
         "sourceIds": [
           "source-a-computing-procedure-for-quantification-theory"
@@ -5064,7 +5064,7 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。",
+          "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来。由此形成的紧凑更新规则通常能较快进入可用训练状态。",
           "en": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly."
         },
         "sourceIds": [
@@ -6513,7 +6513,7 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。",
+          "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。这种群体式搜索能够同时探索多个候选方向，并通过选择压力保留更有希望的结构。",
           "en": "A genetic algorithm does not improve one solution directly. It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates."
         },
         "sourceIds": [

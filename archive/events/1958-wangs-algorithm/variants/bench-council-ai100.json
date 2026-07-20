@@ -50,8 +50,8 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。",
-        "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears."
+        "zh": "展示重点是由模式引导的证明归约：把公式转换成可识别的逻辑形状，应用规则拆分或简化它们，并在出现证明条件时闭合分支。这种规则化归约把许多证明步骤变成确定性的结构转换，从而减少不必要的搜索。",
+        "en": "The key display idea is pattern-guided proof reduction: transform formulas into recognizable logical shapes, apply rules to split or simplify them, and close branches when a proof condition appears. This rule-driven reduction turns many proof steps into deterministic structural transformations, reducing unnecessary search."
       },
       "sourceIds": [
         "source-proving-theorems-by-pattern-recognition-i"

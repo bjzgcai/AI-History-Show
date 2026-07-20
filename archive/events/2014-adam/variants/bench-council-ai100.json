@@ -51,7 +51,7 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来，形成紧凑的更新规则，通常能较快进入可用训练状态。",
+        "zh": "Adam 把动量的方向记忆与 RMSProp 的逐参数缩放结合起来。由此形成的紧凑更新规则通常能较快进入可用训练状态。",
         "en": "Adam merges the direction memory of momentum with the per-parameter scaling of RMSProp. The result is a compact update rule that usually reaches useful training regimes quickly."
       },
       "sourceIds": [

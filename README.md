@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh.md)
 
-An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. Supports both Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and includes multiple storylines such as the core AI history exhibition, BenchCouncil AI100 achievements, and the gaming AI branch.
+An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. It supports Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and presents deep-learning history, BenchCouncil AI100 achievements, gaming AI, and the humanistic and emotional cycles surrounding AI.
 
 ## Repositories
 
@@ -47,7 +47,7 @@ docker build -t ai-history-show .
 docker run --rm -p 8000:8000 ai-history-show
 
 # Or run the Nginx presentation service with Compose
-docker compose up --build
+docker compose up --build presentation
 
 # Include the local admin service when needed
 docker compose --profile admin up --build
@@ -70,22 +70,26 @@ When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }`
 
 ## Storylines
 
-The single-screen entry includes a story selector dialog in the top bar. The generated dataset currently contains:
+The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 146 Archive milestones across four source storylines, plus a unified map that merges deep-learning and AI100 records for browsing:
 
-| Storyline | Count | Notes |
-|-----------|-------|-------|
-| Core AI history | 21 | Main exhibition flow with the Three.js globe and milestone panels |
-| BenchCouncil AI100 achievements | 100 | Achievement-map layout with source cards, context sections, demos, and quizzes |
-| AI in Board & Tabletop Games | 13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
-| Humanistic & emotional cycles | 12 | Sci-fi prophecy, technology hype, AI winters, and risk debates |
+| Public view                     | Archive records | Notes                                                                                                                 |
+| ------------------------------- | --------------: | --------------------------------------------------------------------------------------------------------------------- |
+| AI History Map                  |    Derived view | Unified browser combining deep-learning milestones and AI100 achievements                                             |
+| AI History (Deep Learning)      |              21 | Technical timeline from early AI through neural networks, scaled learning, and modern architectures                   |
+| BenchCouncil AI100 achievements |             100 | Achievement-map layout with source cards, context sections, demos, and quizzes                                        |
+| AI in Board & Tabletop Games    |              13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
+| Humanistic & emotional cycles   |              12 | Sci-fi prophecy, technology hype, AI winters, and risk debates                                                        |
 
 Open a specific storyline directly with `?storyline=...`, for example:
 
 ```text
+http://localhost:8000/index.html?storyline=deep-learning-history
 http://localhost:8000/index.html?storyline=bench-council-ai100
 http://localhost:8000/index.html?storyline=gaming-ai
 http://localhost:8000/index.html?storyline=humanistic-cycle
 ```
+
+The Archive identifier `deep-learning` is normalized to the public URL identifier `deep-learning-history`; use the latter when linking to the exhibition.
 
 The gaming branch supports SGF/game-state evolution modules. Source SGF examples and tooling live in:
 
@@ -104,7 +108,7 @@ npm run quality
 npm run validate:deployment
 ```
 
-The quality gate runs ESLint, Prettier format checks, and the existing Node.js verification scripts in sequence. Deployment validation regenerates the milestone data, runs tests, starts the presentation/admin services, builds the Docker image, and validates the Compose configuration in CI.
+`npm run validate:deployment` validates Archive data, regenerates both runtime data files, assembles and checks the allowlisted static bundle, runs the Node.js test suite, and smoke-tests the presentation and admin HTTP services. CI additionally builds and smoke-tests the Docker presentation image and validates the Compose configuration.
 
 Mobile support scope, viewport checklist, and responsive validation notes are recorded in [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md).
 
@@ -260,9 +264,10 @@ AI-History-Show/
 - **3D globe**: Three.js rendering, auto-locates to the geographic coordinates of the current event
 - **Bilingual UI**: Switch between Chinese and English at any time; the choice persists across sessions
 - **Page navigation**: Buttons or keyboard arrows (`←` / `→`)
-- **Storyline selector**: Dialog-based selector for core history, AI100, and gaming AI branch views
+- **Storyline selector**: Dialog-based selector for the unified history map, deep-learning history, AI100, gaming AI, and the humanistic cycle
 - **AI100 achievement map**: Region filtering, source cards, paper-style demos, and grounded quizzes
 - **Gaming AI branch**: Horizontal timeline with game-record/evolution modules and branch-specific source cards
+- **Humanistic cycle**: Cultural counter-timeline connecting science fiction, hype, AI winters, ethics, and risk debates
 - **Dual-screen auto paging**: `dual-screen.html` supports "Start/Stop auto play" — off by default; once enabled, pages cycle every 10 seconds
 - **Video playback**: Embedded YouTube videos plus local commentary videos
 - **SGF/game evolution playback**: Optional generated board-state clips with GIF fallback

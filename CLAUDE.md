@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Install dependencies: `npm ci` (Node.js >= 22; CI currently uses Node 22/24).
 - Preview the static exhibition: `npm run start:static` then open `http://localhost:8000`.
 - Fixed local demo server: `npm run start:demo` (binds `127.0.0.1:8000`).
-- Run the local admin/content editor: `npm run start:admin` then open `http://localhost:3001/admin`.
+- Run the local admin/content editor: `npm run start:admin` then open `http://localhost:3001/archive-admin` (`/admin` is the Legacy read-only viewer).
 - Regenerate exhibition data after content edits: `npm run generate`.
 - Lint: `npm run lint`.
 - Format check: `npm run format:check`; apply formatting with `npm run format`.
@@ -98,7 +98,7 @@ When adding or heavily editing BenchCouncil AI100 achievements:
 
 - `.github/workflows/quality.yml` runs `npm ci` and `npm run quality` on push/PR.
 - `.github/workflows/deployment.yml` runs `npm run validate:deployment`, builds the Docker image, smoke-tests the container, and validates Compose config.
-- `.github/workflows/pages.yml` deploys the repository root to GitHub Pages from `main`.
+- `.github/workflows/pages.yml` validates and builds `.tmp/static-site`, then deploys that allowlisted bundle from `main`; Archive source JSON, management tools, reports, research files, and scripts are not published.
 - `Dockerfile` has a build stage that runs `npm run generate`, an `admin` Node stage, and a `presentation` Nginx stage that serves the static exhibit on port 8000.
 - `DEPLOYMENT.md` contains detailed Nginx, PM2, SSH-tunnel, kiosk, and multi-display instructions.
 

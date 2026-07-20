@@ -5,25 +5,31 @@
 交互式AI历史展览大屏应用。
 
 - **技术栈**: HTML5 + CSS3 + Vanilla JS + Three.js（3D地球）
-- **主入口**: `index.html`（Three.js地球 + 里程碑展示）
-- **数据文件**: `milestones-data.js`（由 `npm run generate` 从 Archive JSON 生成，勿手动编辑）
+- **展示入口**: `index.html`（自适应单屏/移动端）与 `dual-screen.html`（固定双屏）
+- **数据文件**: `milestones-data.js` 与 `milestones-data-default.js`（由 `npm run generate` 从 Archive JSON 同步生成，勿手动编辑）
 
 ## 文件结构
 
 ```
 AI-History-Show/
-├── index.html                   # 主展示页
-├── milestones-data.js           # 生成的数据（勿手动编辑）
-├── milestones-data-full.js      # 原始手工数据（仅供参考）
+├── index.html                    # 自适应单屏/移动端入口
+├── dual-screen.html              # 固定双屏入口
+├── milestones-data.js            # Archive 生成的正式运行时数据
+├── milestones-data-default.js    # 同步生成的 fallback 数据
+├── archive/
+│   ├── storylines/               # Storyline 成员、variant、顺序和展示 ID
+│   └── events/                   # 事件事实、来源、资源、quiz 与 variants
+├── shared/                       # 两个展示入口共用的前端逻辑
 ├── resources/
-│   ├── images/                  # 里程碑图片（23个文件夹，~35MB，append-only）
-│   └── videos/                  # 视频元数据 JSON（18个文件，append-only）
+│   ├── images/                   # 里程碑图片（append-only）
+│   ├── papers/                   # 页面使用的本地论文资料
+│   └── videos/                   # 视频与视频元数据（append-only）
 ├── manage/
-│   ├── catalog.js               # ✏️ 分类与展示顺序配置
-│   ├── events.js                # ✏️ 各事件内容
-│   ├── generate.js              # 生成脚本
-│   ├── server.js                # 管理后台服务
-│   └── admin.html               # 管理界面
+│   ├── archive-admin.html        # 可写 Archive JSON 编辑器
+│   ├── admin.html                # Legacy 只读查看器
+│   ├── server.js                 # 本地内容管理服务
+│   └── *.js                      # Legacy rollback/comparison/migration 文件
+├── scripts/                      # 生成、验证、测试、迁移与报告脚本
 ├── DEPLOYMENT.md                # 部署指南
 └── AGENTS.md                    # 本文档
 ```
@@ -33,28 +39,33 @@ AI-History-Show/
 Archive JSON 是生产内容权威：
 
 ```bash
-# 编辑 archive/events/<event-id>/* 和 archive/storylines/*.json
+# 可选：启动本地编辑器并打开 http://localhost:3001/archive-admin
+npm run start:admin
+
+# 编辑 archive/events/<event-id>/* 和 archive/storylines/*.json 后
 npm run validate:archive
 npm run generate
 # → 同步生成 milestones-data.js 与 milestones-data-default.js
 ```
 
-`manage/catalog.js`、`manage/events.js` 与 `manage/generate.js` 是 Legacy rollback/comparison/migration 文件，不是默认生产写作链路。
+`/archive-admin` 是可写的 Archive 编辑入口；`/admin` 是 Legacy 只读参考页。Legacy 保存、恢复、图片写入和生成 API 在生产权威切换后返回 HTTP 403。
 
-### 数据结构（events.js）
+`manage/catalog.js`、`manage/events.js`、`manage/event-fusions.js` 与 `manage/generate.js` 是 Legacy rollback/comparison/migration 文件，不是默认生产写作链路。只有显式运行 `npm run generate:legacy` 才会使用旧生成器；完成比较后应再次执行 `npm run generate` 恢复正式 Archive 输出。
 
-每个事件 key（如 `"1956-dartmouth"`）包含：
+### Archive 事件结构
 
-| 字段 | 说明 |
+每个事件目录（如 `archive/events/1956-dartmouth/`）包含：
+
+| 文件 | 说明 |
 |------|------|
-| `year`, `title` | 年份、标题 |
-| `location` | `{name, country, coordinates: [lat, lng]}` |
-| `description` | 正文描述 |
-| `figures` | `[{name, role}]` |
-| `quoteText` / `quotePage` | 引用文字（`\n` → `<br>`）/ 出处 |
-| `commentaryVideo` | 解说视频 mp4 URL |
-| `images` | 相对路径数组 |
-| `videos` | `[{id, title, channel, duration}]`，YouTube 视频 |
+| `event.json` | 年份、标题、地点、人物等 canonical event facts |
+| `claims.json` | 可追溯的事实主张与证据引用 |
+| `sources.json` | 论文、档案、机构页等来源 |
+| `assets.json` | 图片、视频、论文等资源及双语元数据 |
+| `quizzes.json` | 事件可用的 quiz 集合 |
+| `variants/*.json` | Storyline 专属的描述、展示模块、资源/来源/quiz 选择 |
+
+`archive/storylines/*.json` 决定事件成员、variant、启用状态、顺序与稳定 `milestoneId`。生产 compiler 不从 Legacy catalog 或 fusion metadata 推导正式里程碑 ID。
 
 ### AI100 成就新增 schema（必须遵守）
 
@@ -158,9 +169,19 @@ theta = -lng * (Math.PI / 180)
 
 ### 管理后台（manage/server.js）
 
-- `GET /api/generate/diff` — 预览变更（对比 manage/ 与已生成的 milestones-data.js）
-- `POST /api/generate` — 执行生成
-- `POST /api/events` — 保存 events.js（写入前同步 YouTube 视频到 resources/videos/{key}.json）
+- `GET /archive-admin` — Archive JSON 编辑器，可编辑 event bundles 与已有 storylines
+- `GET /admin` — Legacy 只读参考页
+- `GET/POST /api/archive/file` — 读取或保存 Archive JSON
+- `POST /api/archive/validate` — 运行 Archive 校验
+- Legacy mutation endpoints（包括 `POST /api/events` 与 `POST /api/generate`）返回 HTTP 403
+- 管理服务没有身份验证，只能用于本机、内网或受保护环境，不得直接暴露端口 3001
+
+### 静态发布边界
+
+- `npm run build:static` 将展示页、两份运行时数据、`shared/`、`resources/`、所需 `public/` 资源和 `.nojekyll` 组装到 `.tmp/static-site/`。
+- Docker presentation stage 与 `.github/workflows/pages.yml` 都只发布这个 allowlist 静态包。
+- GitHub Pages 工作流会先校验 Archive、生成数据、运行质量门禁并构建 `.tmp/static-site`，再从 `main` 部署。
+- `archive/` 源 JSON、`manage/`、Legacy 数据、`reports/`、`research/` 和 `scripts/` 不进入 Pages/Docker presentation 发布物。
 
 ### 注意事项
 

@@ -51,7 +51,7 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。",
+        "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。这种群体式搜索能够同时探索多个候选方向，并通过选择压力保留更有希望的结构。",
         "en": "A genetic algorithm does not improve one solution directly. It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates."
       },
       "sourceIds": [
