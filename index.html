@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async defer src="https://museum.bza.edu.cn/umami/script.js" data-website-id="6080b0e0-ea6d-459f-838d-8b4d446d0746"></script>
     <title>AI 历史回顾展览 - 单屏模式</title>
     <script src="shared/layout-router.js"></script>
     <style>
@@ -14084,6 +14085,13 @@
         function applyQuizAnswer(container, quiz, selectedIndex) {
             if (!container || !quiz || container.classList.contains('is-answered')) return;
             const isCorrect = selectedIndex === quiz.answerIndex;
+            if (window.umami) {
+                umami.track('quiz_answer', {
+                    quizId: quiz.id || 'unknown',
+                    selectedIndex: selectedIndex,
+                    isCorrect: isCorrect
+                });
+            }
             container.classList.add('is-answered');
 
             container.querySelectorAll('.quick-quiz-option').forEach((button) => {
@@ -14176,7 +14184,7 @@
                         <span class="quick-quiz-mobile-title">${escapeHtml(title)}</span>
                         <span class="quick-quiz-mobile-note">${escapeHtml(note)}</span>
                     </div>
-                    <a class="quick-quiz-mobile-qr-link" href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer">
+                    <a class="quick-quiz-mobile-qr-link" href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer" onclick="if(window.umami)umami.track('qr_scan',{storylineId:'${activeStorylineId||''}'})">
                         <img class="quick-quiz-mobile-qr" src="${escapeHtml(POP_QUIZ_MOBILE_QR_URL)}" alt="${escapeHtml(qrAlt)}">
                     </a>
                 </div>
@@ -14194,6 +14202,13 @@
             }
 
             const displayQuiz = shuffleQuizOptions(quiz);
+            if (window.umami) {
+                umami.track('quiz_show', {
+                    quizId: displayQuiz.id || 'unknown',
+                    eventKey: vm.milestone ? vm.milestone.id : undefined,
+                    storylineId: activeStorylineId
+                });
+            }
             const optionLabels = ['A', 'B', 'C', 'D', 'E'];
             container.innerHTML = `
                 <div class="quick-quiz-kicker">${escapeHtml(uiText('Quick challenge', '快速挑战'))}</div>
@@ -17697,6 +17712,13 @@
             syncUiBrowserCurrentIndex();
             const vm = getVm(currentIndex);
             currentMilestoneViewedAt = Date.now();
+            if (window.umami) {
+                umami.track('event_view', {
+                    eventKey: vm.milestone ? vm.milestone.id : undefined,
+                    storylineId: activeStorylineId,
+                    year: vm.milestone ? getMilestoneSortYear(vm.milestone) : undefined
+                });
+            }
             markCompletionQuizView(vm);
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
