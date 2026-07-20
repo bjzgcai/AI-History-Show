@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1983-actor-critic-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Actor-Critic 方法的两个部分是什么？",
+      "en": "What are the two parts of an actor-critic method?"
+    },
+    "options": [
+      {
+        "zh": "策略 actor 和价值 critic",
+        "en": "A policy actor and a value critic"
+      },
+      {
+        "zh": "解析器和打印机",
+        "en": "A parser and a printer"
+      },
+      {
+        "zh": "只有字幕和相机",
+        "en": "A caption and a camera only"
+      },
+      {
+        "zh": "密码和数据库",
+        "en": "A password and a database"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "actor 选择动作，critic 用价值反馈评价动作。",
+      "en": "The actor chooses actions while the critic evaluates them with value feedback."
+    },
+    "sourceIds": [
+      "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems"
+    ],
+    "assetIds": [
+      "asset-1983-actor-critic-two-paths"
+    ]
+  }
+]

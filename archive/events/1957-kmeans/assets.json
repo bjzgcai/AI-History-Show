@@ -1,0 +1,100 @@
+[
+  {
+    "id": "asset-1957-kmeans-centroid-loop",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "质心分配循环",
+      "en": "Centroid assignment loop"
+    },
+    "subcaption": {
+      "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。",
+      "en": "Original local explainer based on Least squares quantization in PCM."
+    },
+    "sourceId": "source-least-squares-quantization-in-pcm",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1957-kmeans-cluster-update",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "簇更新步骤",
+      "en": "Cluster update step"
+    },
+    "subcaption": {
+      "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。",
+      "en": "Original local explainer based on scikit-learn KMeans documentation."
+    },
+    "sourceId": "source-least-squares-quantization-in-pcm",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1957-kmeans-bell-labs-holmdel",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "K-means 聚类 外部参考图",
+      "en": "K-means external reference image"
+    },
+    "sourceId": "source-least-squares-quantization-in-pcm",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1957-kmeans-iris-flowers-clustering-kmeans",
+    "type": "svg",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+    "role": "external-reference-diagram",
+    "caption": {
+      "zh": "K-means 聚类 外部参考图",
+      "en": "K-means external reference image"
+    },
+    "sourceId": "source-least-squares-quantization-in-pcm",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

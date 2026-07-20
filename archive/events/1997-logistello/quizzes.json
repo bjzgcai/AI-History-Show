@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1997-logistello-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Logistello 为什么比早期黑白棋程序更强？",
+      "en": "What made Logistello stronger than older Othello programs?"
+    },
+    "options": [
+      {
+        "zh": "它学习基于棋盘模式的评估权重，并与选择性搜索结合",
+        "en": "It learned pattern-based evaluation weights and combined them with selective search"
+      },
+      {
+        "zh": "它随机猜测走法",
+        "en": "It guessed moves randomly"
+      },
+      {
+        "zh": "它忽略残局",
+        "en": "It ignored endgames"
+      },
+      {
+        "zh": "它只使用语音识别",
+        "en": "It used only speech recognition"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Logistello 将学习型评估特征、快速搜索和残局求解结合起来。",
+      "en": "Logistello paired learned evaluation features with fast search and endgame solving."
+    },
+    "sourceIds": [
+      "source-logistello-homepage"
+    ],
+    "assetIds": [
+      "asset-1997-logistello-pattern-eval"
+    ]
+  }
+]

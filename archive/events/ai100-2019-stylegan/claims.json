@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "StyleGAN 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "StyleGAN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-a-style-based-generator-architecture-for-gans",
+      "source-cvpr-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>",
+      "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>"
+    },
+    "sourceIds": [
+      "source-a-style-based-generator-architecture-for-gans",
+      "source-cvpr-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

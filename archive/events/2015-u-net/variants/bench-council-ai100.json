@@ -1,0 +1,324 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2015-u-net",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "U-Net",
+    "en": "U-Net"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>U-Net 最初面向生物医学图像分割，在这类任务中标注数据稀缺且边界细节重要。收缩路径汇聚上下文，扩张路径恢复分辨率，跳跃连接则把精细信息跨过 U 形结构传递过去。这个设计后来走出原始领域，成为分割、图像复原、扩散模型和密集预测的通用模板。</p>",
+    "en": "<p>U-Net was designed for biomedical image segmentation, where labeled data can be scarce and boundary detail matters. Its contracting path gathers context while the expanding path restores resolution, with skip connections carrying fine details across the U shape. The design escaped its original niche and became a general template for segmentation, restoration, diffusion models, and dense prediction.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "unet",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Freiburg CVL",
+        "zh": "弗赖堡计算机视觉实验室"
+      },
+      "title": {
+        "en": "U-Net release page",
+        "zh": "U-Net 项目发布页"
+      },
+      "description": {
+        "en": "Project page and downloadable implementation materials from the Freiburg group.",
+        "zh": "弗赖堡团队的项目页面，提供 U-Net 实现材料下载。"
+      },
+      "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open project page",
+        "zh": "打开项目页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2015-u-net-olaf-ronneberger",
+    "asset-2015-u-net-u-shape-architecture",
+    "asset-2015-u-net-segmentation-mask"
+  ],
+  "sourceIds": [
+    "source-u-net-convolutional-networks-for-biomedical-image-segmentation",
+    "source-freiburg-u-net-release-page",
+    "source-nnu-net-implementation-project"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2015-u-net-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "生物医学图像需要模型在有限标注下学习，并保留细小结构。普通分类 CNN 不够，因为输出必须与每个像素对齐。",
+        "en": "Biomedical imaging needed models that could learn from limited annotations while preserving small structures. Plain classification CNNs were not enough because the output had to align with every pixel."
+      },
+      "sourceIds": [
+        "source-u-net-convolutional-networks-for-biomedical-image-segmentation"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "U-Net 将收集上下文的路径与恢复分辨率的路径配对。跳跃连接把语义上下文与局部细节重新合在一起。",
+        "en": "U-Net pairs a context-gathering path with a resolution-restoring path. Skip connections reunite semantic context with local detail."
+      },
+      "sourceIds": [
+        "source-u-net-convolutional-networks-for-biomedical-image-segmentation"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 U-Net 视为密集预测和图像复原的经典架构。它的长期影响在于带跳跃连接的编码器-解码器模式，从生物医学分割扩展到图像复原、生成模型和扩散模型骨干网络。",
+        "en": "Experts generally treat U-Net as a canonical architecture for dense prediction and image restoration. Its long-term legacy is the encoder-decoder pattern with skip connections, which spread from biomedical segmentation to restoration, generative models, and diffusion backbones."
+      },
+      "sourceIds": [
+        "source-u-net-convolutional-networks-for-biomedical-image-segmentation"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Olaf Ronneberger",
+        "zh": "奥拉夫·龙讷贝格"
+      },
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Philipp Fischer",
+        "zh": "菲利普·菲舍尔"
+      },
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Thomas Brox",
+        "zh": "托马斯·布洛克斯"
+      },
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"convolutional networks for biomedical image segmentation\"",
+    "zh": "\"用于生物医学图像分割的卷积网络\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "zh": "U-Net：用于生物医学图像分割的卷积网络"
+    },
+    "workAuthors": {
+      "en": "Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+      "zh": "奥拉夫·龙讷贝格、菲利普·菲舍尔、托马斯·布洛克斯, 医学图像计算与计算机辅助干预会议, 2015"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1505.04597"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Computer Vision / U-net",
+    "zh": "BenchCouncil AI100：计算机视觉 / U-Net"
+  },
+  "quoteAttribution": {
+    "en": "<em>U-Net: Convolutional Networks for Biomedical Image Segmentation</em>, Olaf Ronneberger, Philipp Fischer, and Thomas Brox, Medical Image Computing and Computer-Assisted Intervention, 2015",
+    "zh": "《U-Net：用于生物医学图像分割的卷积网络》, 奥拉夫·龙讷贝格、菲利普·菲舍尔、托马斯·布洛克斯, 医学图像计算与计算机辅助干预会议, 2015"
+  },
+  "achievement": {
+    "area": {
+      "en": "Computer Vision",
+      "zh": "计算机视觉"
+    },
+    "method": {
+      "en": "Encoder-decoder segmentation with skip connections",
+      "zh": "带跳跃连接的编码器-解码器分割"
+    },
+    "artifact": {
+      "en": "U-shaped biomedical segmentation network",
+      "zh": "U 形生物医学分割网络"
+    },
+    "material": {
+      "en": "MICCAI paper and open architecture",
+      "zh": "MICCAI 论文与开放架构"
+    },
+    "demo": {
+      "en": "Contracting path plus expanding path",
+      "zh": "收缩路径加扩张路径"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Encoder-Decoder",
+          "zh": "编码器-解码器"
+        },
+        "text": {
+          "en": "The encoder compresses the image into context; the decoder expands it back to pixel-level predictions.",
+          "zh": "编码器把图像压缩成上下文表示，解码器再把它扩展回像素级预测。"
+        }
+      },
+      {
+        "label": {
+          "en": "Skip Connections",
+          "zh": "跳跃连接"
+        },
+        "text": {
+          "en": "Feature maps from early layers are copied to matching decoder layers so localization details are not lost.",
+          "zh": "早期层的特征图会复制到对应解码层，避免定位细节丢失。"
+        }
+      },
+      {
+        "label": {
+          "en": "Dense Prediction",
+          "zh": "密集预测"
+        },
+        "text": {
+          "en": "U-Net predicts a label for each pixel, making it a landmark for segmentation rather than only classification.",
+          "zh": "U-Net 为每个像素预测标签，因此成为分割任务而非单纯分类任务的里程碑。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Fully convolutional networks",
+        "zh": "全卷积网络"
+      },
+      {
+        "en": "ResNet",
+        "zh": "ResNet"
+      },
+      {
+        "en": "Diffusion models",
+        "zh": "扩散模型"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Germany",
+        "zh": "德国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Contracting path",
+        "zh": "收缩路径"
+      },
+      {
+        "en": "Skip-copy detail",
+        "zh": "跳跃复制细节"
+      },
+      {
+        "en": "Pixel mask output",
+        "zh": "像素掩码输出"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Freiburg CVL",
+          "zh": "弗赖堡计算机视觉实验室"
+        },
+        "title": {
+          "en": "U-Net release page",
+          "zh": "U-Net 项目发布页"
+        },
+        "description": {
+          "en": "Project page and downloadable implementation materials from the Freiburg group.",
+          "zh": "弗赖堡团队的项目页面，提供 U-Net 实现材料下载。"
+        },
+        "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "source": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Freiburg",
+      "zh": "弗赖堡大学"
+    },
+    "country": {
+      "en": "Freiburg, Germany",
+      "zh": "德国弗赖堡"
+    },
+    "coordinates": [
+      47.999,
+      7.8421
+    ]
+  }
+}

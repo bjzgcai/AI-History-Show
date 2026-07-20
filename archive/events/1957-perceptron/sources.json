@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "感知机：大脑中信息存储与组织的概率模型",
+      "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+    },
+    "url": "https://doi.org/10.1037/h0042519",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cornell-chronicle-perceptron-retrospective",
+    "type": "reference-only",
+    "label": {
+      "zh": "历史资料",
+      "en": "History"
+    },
+    "title": {
+      "zh": "康奈尔大学 Chronicle perceptron retrospective",
+      "en": "Cornell Chronicle perceptron retrospective"
+    },
+    "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-smithsonian-mark-i-perceptron-object-record",
+    "type": "reference-only",
+    "label": {
+      "zh": "博物馆",
+      "en": "Museum"
+    },
+    "title": {
+      "zh": "Smithsonian Mark I Perceptron object record",
+      "en": "Smithsonian Mark I Perceptron object record"
+    },
+    "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

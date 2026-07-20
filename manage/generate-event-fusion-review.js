@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUTPUT = path.join(ROOT, 'event-fusion-review.html');
+const OUTPUT = path.join(ROOT, '.tmp', 'archive-review', 'event-fusion-review.html');
 const eventMap = require('./events.js');
 const avatarRegistry = require('./figure-avatars.js');
 const { FUSIONS } = require('./event-fusions.js');
@@ -320,5 +320,6 @@ function renderHtml() {
 `;
 }
 
+fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
 fs.writeFileSync(OUTPUT, renderHtml(), 'utf8');
 console.log(`✓ 生成完成：${OUTPUT}`);

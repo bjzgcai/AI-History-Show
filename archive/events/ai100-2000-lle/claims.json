@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "局部线性嵌入 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Locally Linear Embedding is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+      "source-science-article-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>",
+      "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>"
+    },
+    "sourceIds": [
+      "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
+      "source-science-article-page"
+    ],
+    "status": "needs-source"
+  }
+]

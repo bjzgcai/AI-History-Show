@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-2023-ai-risk-statement-global-priority",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "全球 AI 风险优先事项解释图",
+      "en": "Global AI-risk priority explainer"
+    },
+    "subcaption": {
+      "zh": "关于 2023 年公共风险声明的原创图",
+      "en": "Original diagram for the 2023 public-risk statement"
+    },
+    "sourceId": "source-official-statement-on-ai-risk",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://www.safe.ai/work/statement-on-ai-risk",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

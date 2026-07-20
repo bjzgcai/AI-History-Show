@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2017-wasserstein-gan-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "Wasserstein GAN 改变了 GAN 训练中的什么？",
+      "en": "What does Wasserstein GAN change about GAN training?"
+    },
+    "options": [
+      {
+        "zh": "它使用更平滑的分布距离目标",
+        "en": "It uses a smoother distribution-distance objective"
+      },
+      {
+        "zh": "它移除生成器",
+        "en": "It removes the generator"
+      },
+      {
+        "zh": "它只训练决策树",
+        "en": "It trains only decision trees"
+      },
+      {
+        "zh": "它标注蛋白质原子",
+        "en": "It labels protein atoms"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "critic 估计真实分布和生成分布之间受传输启发的距离。",
+      "en": "The critic estimates a transport-inspired distance between real and generated distributions."
+    },
+    "sourceIds": [
+      "source-wasserstein-generative-adversarial-networks"
+    ],
+    "assetIds": [
+      "asset-2017-wasserstein-gan-critic-distance"
+    ]
+  }
+]

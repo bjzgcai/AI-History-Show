@@ -1,0 +1,66 @@
+{
+  "id": "2000-spectral-clustering",
+  "year": "2000",
+  "date": "2000",
+  "title": {
+    "zh": "谱聚类",
+    "en": "Spectral Clustering"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>",
+    "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国加利福尼亚州",
+      "en": "California, United States"
+    },
+    "place": {
+      "zh": "加州大学伯克利分校",
+      "en": "University of California, Berkeley"
+    },
+    "coordinates": [
+      37.8719,
+      -122.2585
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "jianbo-shi",
+      "role": {
+        "zh": "Normalized Cuts 共同作者",
+        "en": "Co-author of normalized cuts"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jitendra-malik-andrew-ng-yair-weiss",
+      "role": {
+        "zh": "谱聚类形式化的重要贡献者",
+        "en": "Key contributors to spectral clustering formulations"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

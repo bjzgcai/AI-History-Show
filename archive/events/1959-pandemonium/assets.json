@@ -1,0 +1,103 @@
+[
+  {
+    "id": "asset-1959-pandemonium-oliver-selfridge",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "奥利弗·塞尔弗里奇 人物照片",
+      "en": "Oliver Selfridge portrait"
+    },
+    "subcaption": {
+      "zh": "Pandemonium 架构提出者。",
+      "en": "Author of the Pandemonium architecture."
+    },
+    "sourceId": "source-pandemonium-a-paradigm-for-learning",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "CC0",
+        "en": "CC0"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1959-pandemonium-feature-votes",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "特征投票级联",
+      "en": "Feature-vote cascade"
+    },
+    "subcaption": {
+      "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。",
+      "en": "Original local explainer based on Pandemonium: A Paradigm for Learning."
+    },
+    "sourceId": "source-pandemonium-a-paradigm-for-learning",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1959-pandemonium-layered-recognition",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "分层识别小程序",
+      "en": "Layered recognition demons"
+    },
+    "subcaption": {
+      "zh": "依据 群魔殿：一种学习范式 制作的本地解释图。",
+      "en": "Original local explainer based on Pandemonium: A Paradigm for Learning."
+    },
+    "sourceId": "source-pandemonium-a-paradigm-for-learning",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1959-pandemonium-original-pande2",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "Pandemonium 感知架构 外部参考图",
+      "en": "Pandemonium external reference image"
+    },
+    "sourceId": "source-pandemonium-a-paradigm-for-learning",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

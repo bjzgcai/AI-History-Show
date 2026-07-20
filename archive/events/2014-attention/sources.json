@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《通过联合学习对齐与翻译实现神经机器翻译》",
+      "en": "Neural Machine Translation by Jointly Learning to Align and Translate"
+    },
+    "url": "https://arxiv.org/abs/1409.0473",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iclr-2015-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICLR 2015 论文页面",
+      "en": "ICLR 2015 paper page"
+    },
+    "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-attention-mechanism-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "注意力机制概览",
+      "en": "Attention mechanism overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-yoshua-bengio-lab-profile",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物",
+      "en": "People"
+    },
+    "title": {
+      "zh": "约书亚·本吉奥 Mila 资料",
+      "en": "Yoshua Bengio lab profile"
+    },
+    "url": "https://mila.quebec/en/person/yoshua-bengio/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

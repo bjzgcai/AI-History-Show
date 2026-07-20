@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2014-ms-coco",
+  "year": 2014,
+  "date": "2014",
+  "title": {
+    "zh": "MS COCO",
+    "en": "MS COCO"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>",
+    "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "Redmond, United States",
+      "en": "Redmond, United States"
+    },
+    "place": {
+      "zh": "Microsoft Research",
+      "en": "Microsoft Research"
+    },
+    "coordinates": [
+      47.674,
+      -122.1215
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "tsung-yi-lin",
+      "role": {
+        "zh": "MS COCO 主要作者",
+        "en": "MS COCO lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1996-dbscan-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "DBSCAN 如何处理低密度点？",
+      "en": "What does DBSCAN do with low-density points?"
+    },
+    "options": [
+      {
+        "zh": "它可以把它们标为噪声，而不是强行归入簇",
+        "en": "It can label them as noise instead of forcing them into a cluster"
+      },
+      {
+        "zh": "它总是为每个点创建一个簇",
+        "en": "It always creates one cluster per point"
+      },
+      {
+        "zh": "它把它们变成定理子句",
+        "en": "It turns them into theorem clauses"
+      },
+      {
+        "zh": "它使用棋类开局库",
+        "en": "It uses a chess opening book"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DBSCAN 从密集邻域形成簇，并可把稀疏离群点留在簇外。",
+      "en": "DBSCAN forms clusters from dense neighborhoods and can leave sparse outliers outside the clusters."
+    },
+    "sourceIds": [
+      "source-a-density-based-algorithm-for-discovering-clusters"
+    ],
+    "assetIds": [
+      "asset-1996-dbscan-density-reachability"
+    ]
+  }
+]

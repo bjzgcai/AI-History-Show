@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "岭回归 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Ridge is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+      "source-open-pdf-copy-of-the-technometrics-paper"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>",
+      "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>"
+    },
+    "sourceIds": [
+      "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
+      "source-open-pdf-copy-of-the-technometrics-paper"
+    ],
+    "status": "needs-source"
+  }
+]

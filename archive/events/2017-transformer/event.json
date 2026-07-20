@@ -1,0 +1,70 @@
+{
+  "id": "2017-transformer",
+  "year": 2017,
+  "date": "2017",
+  "title": {
+    "zh": "Transformer",
+    "en": "Transformer"
+  },
+  "summary": {
+    "zh": "Transformer 用自注意力替代循环和卷积，成为现代基础模型的重要架构。",
+    "en": "The Transformer replaced recurrence and convolution with self-attention and became a key architecture for modern foundation models."
+  },
+  "description": {
+    "zh": "2017 年，Google Brain 团队提出 Transformer。它完全基于注意力机制进行序列建模，为 BERT、GPT、多模态模型和后续基础模型奠定了架构基础。",
+    "en": "In 2017, a Google Brain team introduced the Transformer, a sequence architecture based entirely on attention mechanisms that later underpinned BERT, GPT-style models, multimodal systems, and foundation models."
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国",
+      "en": "United States"
+    },
+    "place": {
+      "zh": "Google Brain",
+      "en": "Google Brain"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "topics": [
+    "deep-learning",
+    "sequence-modeling",
+    "attention",
+    "foundation-models"
+  ],
+  "achievementTypeIds": [
+    "model-architecture"
+  ],
+  "figures": [
+    {
+      "figureId": "ashish-vaswani",
+      "role": {
+        "zh": "Transformer 论文共同作者",
+        "en": "Transformer paper co-author"
+      },
+      "organizationIds": [
+        "google-brain"
+      ]
+    },
+    {
+      "figureId": "noam-shazeer",
+      "role": {
+        "zh": "Transformer 论文共同作者",
+        "en": "Transformer paper co-author"
+      },
+      "organizationIds": [
+        "google-brain"
+      ]
+    }
+  ],
+  "organizations": [
+    "google-brain"
+  ],
+  "canonical": true,
+  "review": {
+    "status": "draft"
+  }
+}

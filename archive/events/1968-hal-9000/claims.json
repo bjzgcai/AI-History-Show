@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "HAL shifted AI anxiety from mechanical revolt to hidden instructions, trust breakdown and system control.",
+      "zh": "HAL 把 AI 焦虑从机械反叛转向隐藏指令、信任崩塌与系统控制。"
+    },
+    "sourceIds": [
+      "source-2001-film-overview",
+      "source-hal-9000-overview"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary.",
+      "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。"
+    },
+    "sourceIds": [
+      "source-2001-film-overview",
+      "source-hal-9000-overview"
+    ],
+    "status": "needs-source"
+  }
+]

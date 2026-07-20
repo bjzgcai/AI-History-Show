@@ -1,0 +1,73 @@
+{
+  "id": "1956-logic-theorist",
+  "year": 1956,
+  "date": "1956",
+  "title": {
+    "zh": "逻辑理论家",
+    "en": "Logic Theorist"
+  },
+  "summary": {
+    "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J·C·肖 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>",
+    "en": "<p>In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.</p>"
+  },
+  "description": {
+    "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J·C·肖 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>",
+    "en": "<p>In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国，圣塔莫尼卡与匹兹堡",
+      "en": "Santa Monica and Pittsburgh, United States"
+    },
+    "place": {
+      "zh": "RAND Corporation / 卡内基理工学院",
+      "en": "RAND Corporation / Carnegie Institute of Technology"
+    },
+    "coordinates": [
+      34.0195,
+      -118.4912
+    ]
+  },
+  "topics": [
+    "ai100"
+  ],
+  "achievementTypeIds": [
+    "automated-theorem-proving"
+  ],
+  "figures": [
+    {
+      "figureId": "allen-newell",
+      "role": {
+        "zh": "Logic Theorist 共同创建者",
+        "en": "Logic Theorist co-creator"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "herbert-a-simon",
+      "role": {
+        "zh": "Logic Theorist 共同创建者",
+        "en": "Logic Theorist co-creator"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "j-c-shaw",
+      "role": {
+        "zh": "程序员与共同开发者",
+        "en": "Programmer and co-developer"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "Step 8 首批 AI100 批量迁移，需后续人工核对 claim 粒度与来源绑定。",
+      "en": "Step 8 initial AI100 batch migration; claim granularity and source binding need later manual review."
+    }
+  }
+}

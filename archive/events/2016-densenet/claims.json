@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "DenseNet 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "DenseNet is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-densely-connected-convolutional-networks",
+      "source-cvf-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
+      "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+    },
+    "sourceIds": [
+      "source-densely-connected-convolutional-networks",
+      "source-cvf-open-access-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

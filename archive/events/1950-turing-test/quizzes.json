@@ -1,0 +1,76 @@
+[
+  {
+    "id": "quiz-1950-turing-test-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "图灵测试不打开机器看内部，它改为判断什么？",
+      "en": "Turing's test avoids opening the machine. What does it judge instead?"
+    },
+    "options": [
+      {
+        "zh": "盲测协议下的对话行为",
+        "en": "Conversational behavior under a blind protocol"
+      },
+      {
+        "zh": "电脑外壳颜色",
+        "en": "The color of the computer case"
+      },
+      {
+        "zh": "机器运行声音大小",
+        "en": "How loudly the machine runs"
+      },
+      {
+        "zh": "它是否拥有棋盘",
+        "en": "Whether it owns a chessboard"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "模仿游戏关注可观察互动，而不是检查内部机制。",
+      "en": "The imitation game focuses on observable interaction rather than inspecting internal mechanisms."
+    },
+    "sourceIds": [
+      "source-computing-machinery-and-intelligence"
+    ],
+    "assetIds": [
+      "asset-1950-turing-test-alan-turing"
+    ]
+  },
+  {
+    "id": "1950-turing-test-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "图灵测试不打开机器看内部，它改为判断什么？",
+      "en": "Turing's test avoids opening the machine. What does it judge instead?"
+    },
+    "options": [
+      {
+        "zh": "盲测协议下的对话行为",
+        "en": "Conversational behavior under a blind protocol"
+      },
+      {
+        "zh": "电脑外壳颜色",
+        "en": "The color of the computer case"
+      },
+      {
+        "zh": "机器运行声音大小",
+        "en": "How loudly the machine runs"
+      },
+      {
+        "zh": "它是否拥有棋盘",
+        "en": "Whether it owns a chessboard"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "模仿游戏关注可观察互动，而不是检查内部机制。",
+      "en": "The imitation game focuses on observable interaction rather than inspecting internal mechanisms."
+    },
+    "sourceIds": [
+      "source-computing-machinery-and-intelligence"
+    ],
+    "assetIds": [
+      "asset-1950-turing-test-alan-turing"
+    ]
+  }
+]

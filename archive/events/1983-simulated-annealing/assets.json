@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1983-simulated-annealing-scott-kirkpatrick",
+    "type": "gif",
+    "path": "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
+    "role": "hero-image",
+    "caption": {
+      "zh": "斯科特·柯克帕特里克 肖像",
+      "en": "Scott Kirkpatrick portrait"
+    },
+    "subcaption": {
+      "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。",
+      "en": "Workshop participant page photo for Scott Kirkpatrick."
+    },
+    "sourceId": "source-optimization-by-simulated-annealing",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Workshop profile photo; rights not stated.",
+        "en": "Workshop profile photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1983-simulated-annealing-energy-landscape",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "能量地形搜索",
+      "en": "Energy landscape search"
+    },
+    "subcaption": {
+      "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+    },
+    "sourceId": "source-optimization-by-simulated-annealing",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1983-simulated-annealing-temperature-schedule",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "温度计划",
+      "en": "Temperature schedule"
+    },
+    "subcaption": {
+      "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+    },
+    "sourceId": "source-optimization-by-simulated-annealing",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

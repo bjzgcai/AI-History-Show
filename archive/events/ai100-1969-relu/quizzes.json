@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1969-relu-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "ReLU 会怎样处理负输入值？",
+      "en": "What does ReLU do to negative input values?"
+    },
+    "options": [
+      {
+        "zh": "把它们截断为 0",
+        "en": "It clips them to zero"
+      },
+      {
+        "zh": "把它们变成图像",
+        "en": "It turns them into images"
+      },
+      {
+        "zh": "把它们存成棋步",
+        "en": "It stores them as chess moves"
+      },
+      {
+        "zh": "总是把它们翻倍",
+        "en": "It always doubles them"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "ReLU 是 max(0, x)：负值变成 0，正值直接通过。",
+      "en": "ReLU is max(0, x): negative values become zero, and positive values pass through."
+    },
+    "sourceIds": [
+      "source-deep-sparse-rectifier-neural-networks"
+    ],
+    "assetIds": [
+      "asset-1969-relu-activation"
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-self-organized-formation-of-topologically-correct-feature-maps",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《拓扑正确特征映射的自组织形成》",
+      "en": "Self-organized formation of topologically correct feature maps"
+    },
+    "url": "https://doi.org/10.1007/BF00337288",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-open-som-paper-pdf",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "SOM 论文开放 PDF",
+      "en": "Open SOM paper PDF"
+    },
+    "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-self-organizing-map-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "自组织映射概览",
+      "en": "Self-organizing map overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-essentials-of-the-self-organizing-map",
+    "type": "reference-only",
+    "label": {
+      "zh": "回顾",
+      "en": "Retrospective"
+    },
+    "title": {
+      "zh": "自组织映射要点回顾",
+      "en": "Essentials of the self-organizing map"
+    },
+    "url": "https://doi.org/10.1016/j.neunet.2012.09.018",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

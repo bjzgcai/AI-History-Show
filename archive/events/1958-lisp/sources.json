@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-recursive-functions-of-symbolic-expressions",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "符号表达式的递归函数",
+      "en": "Recursive Functions of Symbolic Expressions"
+    },
+    "url": "https://www-formal.stanford.edu/jmc/recursive.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
+      "en": "Primary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-lisp-i-programmer-s-manual",
+    "type": "manual",
+    "label": {
+      "zh": "手册",
+      "en": "Manual"
+    },
+    "title": {
+      "zh": "LISP I 程序员手册",
+      "en": "LISP I Programmer's Manual"
+    },
+    "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-history-of-lisp",
+    "type": "history",
+    "label": {
+      "zh": "历史",
+      "en": "History"
+    },
+    "title": {
+      "zh": "Lisp 史",
+      "en": "History of Lisp"
+    },
+    "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  }
+]

@@ -1,0 +1,324 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2020-vit",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "视觉 Transformer",
+    "en": "Vision Transformer"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>",
+    "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "vit",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "An Image is Worth 16x16 Words",
+        "zh": "一张图像价值 16x16 个词"
+      },
+      "description": {
+        "en": "Open paper for Vision Transformer.",
+        "zh": "视觉 Transformer 的开放论文。"
+      },
+      "url": "https://arxiv.org/abs/2010.11929",
+      "source": "https://arxiv.org/abs/2010.11929",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open article",
+        "zh": "打开文章"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2020-vit-alexey-dosovitskiy",
+    "asset-2020-vit-patch-tokens"
+  ],
+  "sourceIds": [
+    "source-an-image-is-worth-16x16-words",
+    "source-iclr-openreview-page",
+    "source-openreview-full-paper-pdf",
+    "source-google-research-publication-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2020-vit-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。",
+        "en": "Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision."
+      },
+      "sourceIds": [
+        "source-an-image-is-worth-16x16-words"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "An image is split into patches, embedded as tokens, and processed by transformer attention. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-an-image-is-worth-16x16-words"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把视觉 Transformer 视为把 Transformer 式规模化带入计算机视觉的重要转变，同时也指出它对数据和算力需求较高。它的长期影响在于图像块令牌视角以及基于注意力的视觉骨干网络的扩散。",
+        "en": "Experts generally treat Vision Transformer as a major shift that brought transformer-style scaling into computer vision, while noting its appetite for data and compute. Its long-term legacy is the patch-token view of images and the spread of attention-based vision backbones."
+      },
+      "sourceIds": [
+        "source-an-image-is-worth-16x16-words"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alexey Dosovitskiy",
+        "zh": "阿列克谢·多索维茨基"
+      },
+      "role": {
+        "en": "Lead author of Vision Transformer",
+        "zh": "视觉 Transformer 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Google Research",
+        "zh": "Google 研究院"
+      },
+      "role": {
+        "en": "Research organization",
+        "zh": "研究机构"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"An Image is Worth 16x16 Words\"",
+    "zh": "\"一张图像价值 16x16 个词\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "zh": "一张图像价值 16x16 个词：用于大规模图像识别的 Transformer"
+    },
+    "workAuthors": {
+      "en": "Alexey Dosovitskiy et al., ICLR, 2021",
+      "zh": "阿列克谢·多索维茨基等，ICLR，2021"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/2010.11929"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</em>, Alexey Dosovitskiy et al., ICLR, 2021",
+    "zh": "《一张图像价值 16x16 个词：用于大规模图像识别的 Transformer》, 阿列克谢·多索维茨基等，ICLR，2021"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Patch-token transformer for images",
+      "zh": "面向图像的块令牌 Transformer"
+    },
+    "artifact": {
+      "en": "Vision Transformer classifier",
+      "zh": "视觉 Transformer 分类器"
+    },
+    "material": {
+      "en": "ICLR paper",
+      "zh": "ICLR 论文"
+    },
+    "demo": {
+      "en": "An image is split into patches, embedded as tokens, and processed by transformer attention.",
+      "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Patch Tokens",
+          "zh": "图像块令牌"
+        },
+        "text": {
+          "en": "Fixed-size image patches become a sequence like words.",
+          "zh": "固定大小的图像块像词一样变成序列。"
+        }
+      },
+      {
+        "label": {
+          "en": "Self-attention",
+          "zh": "自注意力"
+        },
+        "text": {
+          "en": "The model learns relationships between distant image regions.",
+          "zh": "模型学习远距离图像区域之间的关系。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "ImageNet",
+        "zh": "ImageNet"
+      },
+      {
+        "en": "Swin Transformer",
+        "zh": "Swin Transformer"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Split patches",
+        "zh": "切分图像块"
+      },
+      {
+        "en": "Add positions",
+        "zh": "加入位置"
+      },
+      {
+        "en": "Transformer encoder",
+        "zh": "Transformer 编码器"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper",
+          "zh": "ICLR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "An image is split into patches, embedded as tokens, and processed by transformer attention.",
+          "zh": "图像被切分成图像块，嵌入为令牌，并由 Transformer 注意力处理。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "An Image is Worth 16x16 Words",
+          "zh": "一张图像价值 16x16 个词"
+        },
+        "description": {
+          "en": "Open paper for Vision Transformer.",
+          "zh": "视觉 Transformer 的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/2010.11929",
+        "source": "https://arxiv.org/abs/2010.11929",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open article",
+          "zh": "打开文章"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Google Research",
+      "zh": "Google 研究院"
+    },
+    "country": {
+      "en": "Mountain View, United States",
+      "zh": "美国山景城"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  }
+}

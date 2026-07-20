@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Libratus 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Libratus is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-science-paper",
+      "source-cmu-libratus-release"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>",
+      "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day of play, proving that game AI could move beyond perfect-information boards.</p>"
+    },
+    "sourceIds": [
+      "source-science-paper",
+      "source-cmu-libratus-release"
+    ],
+    "status": "needs-source"
+  }
+]

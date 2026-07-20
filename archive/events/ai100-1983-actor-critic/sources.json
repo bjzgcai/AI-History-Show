@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《能够解决困难学习控制问题的类神经自适应元件》",
+      "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems"
+    },
+    "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-reinforcement-learning-an-introduction",
+    "type": "book",
+    "label": {
+      "zh": "书籍",
+      "en": "Book"
+    },
+    "title": {
+      "zh": "《强化学习导论》",
+      "en": "Reinforcement Learning: An Introduction"
+    },
+    "url": "http://incompleteideas.net/book/the-book-2nd.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-actor-critic-model-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "Actor-Critic 模型概览",
+      "en": "Actor-critic model overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Actor-critic_model",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

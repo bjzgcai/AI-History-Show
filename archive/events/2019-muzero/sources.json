@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-nature-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Nature 论文",
+      "en": "Nature paper"
+    },
+    "url": "https://www.nature.com/articles/s41586-020-03051-4",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-arxiv-preprint",
+    "type": "reference-only",
+    "label": {
+      "zh": "预印本",
+      "en": "Preprint"
+    },
+    "title": {
+      "zh": "arXiv 预印本",
+      "en": "arXiv preprint"
+    },
+    "url": "https://arxiv.org/abs/1911.08265",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-deepmind-muzero-blog",
+    "type": "official-page",
+    "label": {
+      "zh": "博客",
+      "en": "Blog"
+    },
+    "title": {
+      "zh": "DeepMind MuZero 博客",
+      "en": "DeepMind MuZero blog"
+    },
+    "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

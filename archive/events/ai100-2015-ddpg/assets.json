@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2015-ddpg-actor-critic",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "DDPG 解释图",
+      "en": "DDPG explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2015-ddpg-timothy-lillicrap-1",
+    "type": "image",
+    "path": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "DDPG 外部参考图",
+      "en": "DDPG external reference image"
+    },
+    "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

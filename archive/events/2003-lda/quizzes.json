@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2003-lda-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "LDA 如何表示一篇文档？",
+      "en": "How does LDA represent a document?"
+    },
+    "options": [
+      {
+        "zh": "表示为隐藏主题的混合",
+        "en": "As a mixture of latent topics"
+      },
+      {
+        "zh": "表示为一个固定目标框",
+        "en": "As one fixed object box"
+      },
+      {
+        "zh": "只表示为一个 Prolog 事实",
+        "en": "As a single Prolog fact only"
+      },
+      {
+        "zh": "表示为 Atari 奖励回放池",
+        "en": "As an Atari reward replay buffer"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "LDA 假设每篇文档混合多个主题，每个主题都是词上的分布。",
+      "en": "LDA assumes each document mixes topics, and each topic is a distribution over words."
+    },
+    "sourceIds": [
+      "source-latent-dirichlet-allocation"
+    ],
+    "assetIds": [
+      "asset-2003-lda-david-blei"
+    ]
+  }
+]

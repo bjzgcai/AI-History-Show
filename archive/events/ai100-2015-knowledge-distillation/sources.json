@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-distilling-the-knowledge-in-a-neural-network",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《蒸馏神经网络中的知识》",
+      "en": "Distilling the Knowledge in a Neural Network"
+    },
+    "url": "https://arxiv.org/abs/1503.02531",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-knowledge-distillation-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "知识蒸馏概览",
+      "en": "Knowledge distillation overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-geoffrey-hinton-profile",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物",
+      "en": "People"
+    },
+    "title": {
+      "zh": "杰弗里·辛顿资料",
+      "en": "Geoffrey Hinton profile"
+    },
+    "url": "https://www.cs.toronto.edu/~hinton/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

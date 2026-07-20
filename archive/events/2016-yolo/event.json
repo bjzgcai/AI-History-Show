@@ -1,0 +1,66 @@
+{
+  "id": "2016-yolo",
+  "year": "2016",
+  "date": "2016",
+  "title": {
+    "zh": "YOLO",
+    "en": "YOLO"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。</p>",
+    "en": "<p>YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国西雅图",
+      "en": "Seattle, United States"
+    },
+    "place": {
+      "zh": "华盛顿大学 / Allen Institute for AI",
+      "en": "University of Washington / Allen Institute for AI"
+    },
+    "coordinates": [
+      47.6553,
+      -122.3035
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "joseph-redmon",
+      "role": {
+        "zh": "YOLO 第一作者",
+        "en": "First author of YOLO"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "ali-farhadi",
+      "role": {
+        "zh": "YOLO 共同作者",
+        "en": "Co-author of YOLO"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

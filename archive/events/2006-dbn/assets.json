@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2006-dbn-geoffrey-hinton",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "杰弗里·辛顿 肖像",
+      "en": "Geoffrey Hinton portrait"
+    },
+    "subcaption": {
+      "zh": "来自 辛顿 多伦多大学页面的人物图。",
+      "en": "Photo from Hinton's University of Toronto page."
+    },
+    "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "University personal photo page; reuse rights not stated.",
+        "en": "University personal photo page; reuse rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2006-dbn-stacked-rbms",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "堆叠 RBM 预训练",
+      "en": "Stacked RBM pretraining"
+    },
+    "subcaption": {
+      "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Deep Belief Network, based on the listed source material."
+    },
+    "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2006-dbn-wake-finetune",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "预训练后微调",
+      "en": "Pretrain then fine-tune"
+    },
+    "subcaption": {
+      "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Deep Belief Network, based on the listed source material."
+    },
+    "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

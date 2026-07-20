@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "AI safety concern became institution-building: broad benefit was framed as a research mission.",
+      "zh": "AI 安全关切转化为机构建设：广泛受益被写成研究使命。"
+    },
+    "sourceIds": [
+      "source-archived-openai-announcement",
+      "source-wired-contemporary-coverage"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote.",
+      "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。"
+    },
+    "sourceIds": [
+      "source-archived-openai-announcement",
+      "source-wired-contemporary-coverage"
+    ],
+    "status": "needs-source"
+  }
+]

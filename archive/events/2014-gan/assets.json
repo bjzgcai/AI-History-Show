@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-ian-goodfellow",
+    "type": "image",
+    "path": "resources/images/figures/ian-goodfellow.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "伊恩·古德费洛肖像",
+      "en": "Ian Goodfellow portrait"
+    },
+    "subcaption": {
+      "zh": "GAN 主要作者",
+      "en": "GAN lead author"
+    },
+    "sourceId": "source-generative-adversarial-nets",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-gan-adversarial-loop",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "GAN 对抗循环",
+      "en": "GAN adversarial loop"
+    },
+    "subcaption": {
+      "zh": "关于生成器-判别器训练的本地原创解释图。",
+      "en": "Original local explainer of generator-discriminator training."
+    },
+    "sourceId": "source-generative-adversarial-nets",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-gan-architecture-01",
+    "type": "image",
+    "path": "resources/images/2014-gan/architecture/2014-gan_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "GAN（生成对抗网路） 架构图",
+      "en": "GANs: Generative Adversarial Networks"
+    },
+    "sourceId": "source-generative-adversarial-nets",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

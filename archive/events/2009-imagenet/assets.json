@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-2009-imagenet-fei-fei-li",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "李飞飞肖像",
+      "en": "Fei-Fei Li portrait"
+    },
+    "subcaption": {
+      "zh": "斯坦福个人资料库 中的李飞飞人物图。",
+      "en": "Stanford Profiles portrait for Fei-Fei Li."
+    },
+    "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Institution profile photo; rights not stated.",
+        "en": "Institution profile photo; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2009-imagenet-hierarchy",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "WordNet 层级",
+      "en": "WordNet hierarchy"
+    },
+    "subcaption": {
+      "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for ImageNet, based on the listed source material."
+    },
+    "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2009-imagenet-benchmark",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "ILSVRC 基准",
+      "en": "ILSVRC benchmark"
+    },
+    "subcaption": {
+      "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for ImageNet, based on the listed source material."
+    },
+    "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

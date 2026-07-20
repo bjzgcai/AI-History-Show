@@ -1,0 +1,58 @@
+{
+  "id": "ai100-2022-stable-diffusion",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "zh": "Stable Diffusion",
+    "en": "Stable Diffusion"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。</p>",
+    "en": "<p>Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.</p>"
+  },
+  "location": {
+    "regionId": "germany",
+    "country": {
+      "zh": "德国慕尼黑",
+      "en": "Munich, Germany"
+    },
+    "place": {
+      "zh": "慕尼黑大学与 Stability AI",
+      "en": "LMU Munich and Stability AI"
+    },
+    "coordinates": [
+      48.1508,
+      11.5802
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "robin-rombach",
+      "role": {
+        "zh": "潜扩散模型主要作者",
+        "en": "Lead author of latent diffusion models"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

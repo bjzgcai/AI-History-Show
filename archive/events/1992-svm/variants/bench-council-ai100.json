@@ -1,0 +1,318 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1992-svm",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "支持向量机",
+    "en": "Support Vector Machines"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>",
+    "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "svm",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": "ACM COLT",
+      "title": {
+        "en": "Optimal margin classifiers",
+        "zh": "最优间隔分类器"
+      },
+      "description": {
+        "en": "Original ACM record for the 1992 optimal-margin classifier paper.",
+        "zh": "ACM 原始记录：1992 年最优间隔分类器论文。"
+      },
+      "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+      "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open ACM record",
+        "zh": "打开 ACM 记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1992-svm-isabelle-guyon",
+    "asset-1992-svm-max-margin",
+    "asset-1992-svm-kernel-lift"
+  ],
+  "sourceIds": [
+    "source-a-training-algorithm-for-optimal-margin-classifiers",
+    "source-libsvm-project-page",
+    "source-scikit-learn-svc"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1992-svm-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "20 世纪 90 年代初，机器学习需要能在有限数据上泛化并具有清晰数学保证的方法。SVM 将 VC 式容量控制转化为实用分类器。",
+        "en": "In the early 1990s, machine learning needed methods that could generalize from limited data with clear mathematical guarantees. SVMs translated VC-style capacity control into a practical classifier."
+      },
+      "sourceIds": [
+        "source-a-training-algorithm-for-optimal-margin-classifiers"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "SVM 偏好不只是训练集正确、而且离最近样本足够远的边界。核函数让非线性边界成为可能，同时保留凸优化问题。",
+        "en": "SVMs prefer a boundary that is not merely correct on training data, but comfortably separated from the closest examples. Kernels make nonlinear boundaries possible while preserving a convex optimization problem."
+      },
+      "sourceIds": [
+        "source-a-training-algorithm-for-optimal-margin-classifiers"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 SVM 视为成熟的经典方法，其概念重要性超过了它在多数现代深度学习流水线中的实际角色。它的长期影响在于用间隔和核方法理解泛化、稳健边界和非线性分类。",
+        "en": "Experts generally treat SVMs as mature classical methods whose conceptual importance exceeds their role in most modern deep-learning pipelines. Their long-term legacy is the margin-and-kernel view of generalization, robust boundaries, and nonlinear classification."
+      },
+      "sourceIds": [
+        "source-a-training-algorithm-for-optimal-margin-classifiers"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Vladimir Vapnik",
+        "zh": "弗拉基米尔·瓦普尼克"
+      },
+      "role": {
+        "en": "Co-developed optimal-margin classifiers and statistical learning theory",
+        "zh": "共同发展最优间隔分类器与统计学习理论"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Bernhard Boser",
+        "zh": "伯恩哈德·博泽尔"
+      },
+      "role": {
+        "en": "Co-author of the 1992 optimal-margin classifier paper",
+        "zh": "1992 年最优间隔分类器论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Isabelle Guyon",
+        "zh": "伊莎贝尔·居永"
+      },
+      "role": {
+        "en": "Co-author of the 1992 optimal-margin classifier paper",
+        "zh": "1992 年最优间隔分类器论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"optimal margin classifiers\"",
+    "zh": "\"最优间隔分类器\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A Training Algorithm for Optimal Margin Classifiers",
+      "zh": "最优间隔分类器的训练算法"
+    },
+    "workAuthors": {
+      "en": "Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+      "zh": "伯恩哈德·E·博瑟、伊莎贝尔·M·居永、弗拉基米尔·N·瓦普尼克, 第五届计算学习理论年度研讨会, 1992"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/130385.130401"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Statistical Learning / SVM",
+    "zh": "BenchCouncil AI100：统计学习 / 支持向量机"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Training Algorithm for Optimal Margin Classifiers</em>, Bernhard E. Boser, Isabelle M. Guyon, and Vladimir N. Vapnik, Fifth Annual Workshop on Computational Learning Theory, 1992",
+    "zh": "《最优间隔分类器的训练算法》, 伯恩哈德·E·博瑟、伊莎贝尔·M·居永、弗拉基米尔·N·瓦普尼克, 第五届计算学习理论年度研讨会, 1992"
+  },
+  "achievement": {
+    "area": {
+      "en": "Statistical Learning",
+      "zh": "统计学习"
+    },
+    "method": {
+      "en": "Maximum-margin classification with kernels",
+      "zh": "带核函数的最大间隔分类"
+    },
+    "artifact": {
+      "en": "Support vector machine",
+      "zh": "支持向量机"
+    },
+    "material": {
+      "en": "COLT paper and statistical learning theory",
+      "zh": "COLT 论文与统计学习理论"
+    },
+    "demo": {
+      "en": "Find the widest separating margin",
+      "zh": "寻找最宽分类间隔"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Maximum Margin",
+          "zh": "最大间隔"
+        },
+        "text": {
+          "en": "The classifier chooses the separating boundary with the widest gap to the nearest training examples.",
+          "zh": "分类器选择与最近训练样本之间间隔最宽的分隔边界。"
+        }
+      },
+      {
+        "label": {
+          "en": "Support Vectors",
+          "zh": "支持向量"
+        },
+        "text": {
+          "en": "Only the closest examples define the boundary, making the model depend on critical cases rather than all points equally.",
+          "zh": "只有最接近边界的样本定义分类面，使模型依赖关键样本，而不是同等依赖所有点。"
+        }
+      },
+      {
+        "label": {
+          "en": "Kernel Trick",
+          "zh": "核技巧"
+        },
+        "text": {
+          "en": "Kernels compute similarity as if data had been mapped into a richer space, without explicitly constructing that space.",
+          "zh": "核函数像是在更丰富空间中计算相似度，却不需要显式构造那个空间。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "VC theory",
+        "zh": "VC 理论"
+      },
+      {
+        "en": "Kernel methods",
+        "zh": "核方法"
+      },
+      {
+        "en": "Lasso",
+        "zh": "Lasso"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Support vectors",
+        "zh": "支持向量"
+      },
+      {
+        "en": "Widest margin",
+        "zh": "最宽间隔"
+      },
+      {
+        "en": "Kernel boundary",
+        "zh": "核边界"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "ACM COLT",
+        "title": {
+          "en": "Optimal margin classifiers",
+          "zh": "最优间隔分类器"
+        },
+        "description": {
+          "en": "Original ACM record for the 1992 optimal-margin classifier paper.",
+          "zh": "ACM 原始记录：1992 年最优间隔分类器论文。"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "source": "https://dl.acm.org/doi/10.1145/130385.130401",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open ACM record",
+          "zh": "打开 ACM 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Bell Laboratories",
+      "zh": "贝尔实验室"
+    },
+    "country": {
+      "en": "Murray Hill, United States",
+      "zh": "美国默里山"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4018
+    ]
+  }
+}

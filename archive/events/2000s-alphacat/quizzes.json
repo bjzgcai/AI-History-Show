@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2000s-alphacat-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "为什么中国象棋需要面向领域的引擎设计？",
+      "en": "Why does Chinese chess need domain-specific engine design?"
+    },
+    "options": [
+      {
+        "zh": "炮、九宫、楚河汉界和非对称兵种会改变合法走法与局面评估",
+        "en": "Its cannons, palace, river, and asymmetric pieces change legal moves and evaluation"
+      },
+      {
+        "zh": "它没有棋盘",
+        "en": "It has no board"
+      },
+      {
+        "zh": "所有棋子走法完全一样",
+        "en": "All pieces move identically"
+      },
+      {
+        "zh": "每一步都由暗牌决定",
+        "en": "Hidden cards decide every move"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "中国象棋引擎必须先编码游戏几何，搜索和评估才能有效工作。",
+      "en": "Xiangqi engines must encode the game geometry before search and evaluation can work well."
+    },
+    "sourceIds": [
+      "source-icga-chinese-chess-page"
+    ],
+    "assetIds": [
+      "asset-2000s-alphacat-xiangqi-search"
+    ]
+  }
+]

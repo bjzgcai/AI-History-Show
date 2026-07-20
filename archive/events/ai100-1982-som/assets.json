@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-1982-som-topology-map",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "科霍宁映射调整",
+      "en": "Kohonen map adaptation"
+    },
+    "subcaption": {
+      "zh": "关于自组织映射调整的本地原创解释图。",
+      "en": "Original local explainer of self-organizing map adaptation."
+    },
+    "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-1982-som-teuvo-kohonen",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "自组织映射 外部参考图",
+      "en": "Self-organizing Map external reference image"
+    },
+    "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

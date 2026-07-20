@@ -1,0 +1,311 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2023-segment-anything",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Segment Anything",
+    "en": "Segment Anything"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。</p>",
+    "en": "<p>Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "sam",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Segment Anything",
+        "zh": "Segment Anything"
+      },
+      "title": {
+        "en": "Segment Anything project page",
+        "zh": "Segment Anything 项目页面"
+      },
+      "description": {
+        "en": "Official project page with paper, model, dataset, and demo links.",
+        "zh": "官方项目页面，包含论文、模型、数据集和演示链接。"
+      },
+      "url": "https://segment-anything.com/",
+      "source": "https://segment-anything.com/",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open project page",
+        "zh": "打开项目页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2023-segment-anything-alexander-kirillov",
+    "asset-2023-segment-anything-prompt-mask"
+  ],
+  "sourceIds": [
+    "source-segment-anything",
+    "source-iccv-paper-page",
+    "source-segment-anything-project-page",
+    "source-segment-anything-github-repository"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2023-segment-anything-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。",
+        "en": "Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts."
+      },
+      "sourceIds": [
+        "source-segment-anything"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-segment-anything"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Segment Anything 视为计算机视觉中基础模型思路的重要例子。它的长期影响在于可提示分割接口和数据规模让交互式掩码能在许多领域复用。",
+        "en": "Experts generally treat Segment Anything as an important example of foundation-model thinking in computer vision. Its long-term legacy is the promptable segmentation interface and dataset scale that made interactive masks reusable across many domains."
+      },
+      "sourceIds": [
+        "source-segment-anything"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Alexander Kirillov",
+        "zh": "亚历山大·基里洛夫"
+      },
+      "role": {
+        "en": "Lead author of Segment Anything",
+        "zh": "Segment Anything 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Segment anything\"",
+    "zh": "\"分割一切\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Segment Anything",
+      "zh": "Segment Anything"
+    },
+    "workAuthors": {
+      "en": "Alexander Kirillov et al., ICCV, 2023",
+      "zh": "亚历山大·基里洛夫等，ICCV，2023"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/2304.02643"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Segment Anything</em>, Alexander Kirillov et al., ICCV, 2023",
+    "zh": "《Segment Anything》, 亚历山大·基里洛夫等，ICCV，2023"
+  },
+  "achievement": {
+    "area": {
+      "en": "Computer Vision",
+      "zh": "计算机视觉"
+    },
+    "method": {
+      "en": "Promptable foundation model for segmentation",
+      "zh": "用于分割的可提示基础模型"
+    },
+    "artifact": {
+      "en": "Segment Anything Model",
+      "zh": "Segment Anything Model"
+    },
+    "material": {
+      "en": "ICCV paper, model, and SA-1B dataset",
+      "zh": "ICCV 论文、模型与 SA-1B 数据集"
+    },
+    "demo": {
+      "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image.",
+      "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Promptable Segmentation",
+          "zh": "可提示分割"
+        },
+        "text": {
+          "en": "Users can request masks with points or boxes.",
+          "zh": "用户可用点或框请求掩码。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reusable Image Features",
+          "zh": "可复用图像特征"
+        },
+        "text": {
+          "en": "One image embedding supports many mask prompts.",
+          "zh": "一个图像嵌入支持多种掩码提示。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "U-Net",
+        "zh": "U-Net"
+      },
+      {
+        "en": "Vision Transformer",
+        "zh": "视觉 Transformer"
+      },
+      {
+        "en": "ImageNet",
+        "zh": "ImageNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Image embedding",
+        "zh": "Image embedding"
+      },
+      {
+        "en": "Point or box prompt",
+        "zh": "Point or box prompt"
+      },
+      {
+        "en": "Mask decoder",
+        "zh": "Mask decoder"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICCV paper, model, and SA-1B dataset",
+          "zh": "ICCV 论文、模型与 SA-1B 数据集"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "An image encoder builds reusable features while point, box, or mask prompts guide a mask decoder to produce object segments. The promptable interface lets one model support many segmentation requests on the same image.",
+          "zh": "图像编码器构建可复用特征，点、框或掩码提示引导掩码解码器生成目标分割。可提示接口让一个模型能在同一张图像上支持多种分割请求。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Segment Anything",
+          "zh": "Segment Anything"
+        },
+        "title": {
+          "en": "Segment Anything project page",
+          "zh": "Segment Anything 项目页面"
+        },
+        "description": {
+          "en": "Official project page with paper, model, dataset, and demo links.",
+          "zh": "官方项目页面，包含论文、模型、数据集和演示链接。"
+        },
+        "url": "https://segment-anything.com/",
+        "source": "https://segment-anything.com/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open project page",
+          "zh": "打开项目页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Meta AI",
+      "zh": "Meta AI"
+    },
+    "country": {
+      "en": "Menlo Park, United States",
+      "zh": "美国门洛帕克"
+    },
+    "coordinates": [
+      37.4848,
+      -122.1484
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-deep-sparse-rectifier-neural-networks",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《深度稀疏整流神经网络》",
+      "en": "Deep Sparse Rectifier Neural Networks"
+    },
+    "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-rectified-linear-units-improve-restricted-boltzmann-machines",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《整流线性单元改进受限玻尔兹曼机》",
+      "en": "Rectified Linear Units Improve Restricted Boltzmann Machines"
+    },
+    "url": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-rectifier-activation-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "整流激活函数概览",
+      "en": "Rectifier activation overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-yoshua-bengio-profile-at-mila",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物",
+      "en": "People"
+    },
+    "title": {
+      "zh": "Mila 的约书亚·本吉奥资料",
+      "en": "Yoshua Bengio profile at Mila"
+    },
+    "url": "https://mila.quebec/en/directory/yoshua-bengio",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-1973-lighthill-report-winter-filter",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "莱特希尔寒冬解释图",
+      "en": "Lighthill winter explainer"
+    },
+    "subcaption": {
+      "zh": "为期待崩塌重绘的原创图",
+      "en": "Original diagram for expectation collapse"
+    },
+    "sourceId": "source-lighthill-report-archive",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

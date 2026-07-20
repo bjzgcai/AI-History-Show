@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-2014-ai-existential-warnings-public-risk",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "公共 AI 风险警告解释图",
+      "en": "Public AI-risk warning explainer"
+    },
+    "subcaption": {
+      "zh": "关于 2014 年公共风险转向的原创图",
+      "en": "Original diagram for the 2014 public-risk turn"
+    },
+    "sourceId": "source-guardian-on-musk-remarks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://www.bbc.com/news/technology-30290540",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

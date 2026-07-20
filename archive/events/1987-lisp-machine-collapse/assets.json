@@ -1,0 +1,37 @@
+[
+  {
+    "id": "asset-1987-lisp-machine-collapse-market-shift",
+    "type": "svg",
+    "path": "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Lisp 机市场转移解释图",
+      "en": "Lisp-machine market-shift explainer"
+    },
+    "subcaption": {
+      "zh": "关于第二次寒冬产业修正的原创图",
+      "en": "Original diagram for the second-winter industry correction"
+    },
+    "sourceId": "source-ai-winter-overview",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "原创重绘解释图；来源仅作参考链接。",
+        "en": "Original redrawn explainer; reference links only."
+      }
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true,
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://doi.org/10.1109/MIS.2008.20",
+    "displayUsage": {
+      "en": "Branch timeline visual",
+      "zh": "分支时间线视觉图"
+    }
+  }
+]

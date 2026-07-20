@@ -1,0 +1,118 @@
+[
+  {
+    "id": "asset-transformer-portrait",
+    "type": "image",
+    "path": "resources/images/figures/ashish-vaswani.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "阿希什·瓦斯瓦尼肖像",
+      "en": "Ashish Vaswani portrait"
+    },
+    "subcaption": {
+      "zh": "Transformer 论文共同作者",
+      "en": "Transformer paper co-author"
+    },
+    "sourceId": "source-transformer-arxiv",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "历史人物资料图，保留来源说明。",
+        "en": "Historical figure reference image; keep attribution."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-transformer-architecture",
+    "type": "image",
+    "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Transformer 架构示意",
+      "en": "Transformer architecture explainer"
+    },
+    "sourceId": "source-transformer-arxiv",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "用于展陈解释的架构资料图。",
+        "en": "Architecture reference image for exhibition explanation."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-transformer-attention",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+    "role": "algorithm-explainer",
+    "caption": {
+      "zh": "Transformer 自注意力机制示意",
+      "en": "Transformer self-attention explainer"
+    },
+    "sourceId": "source-transformer-arxiv",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "根据论文方法本地重绘，不复制原论文图。",
+        "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-transformer-paper-page",
+    "type": "image",
+    "path": "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
+    "role": "paper-page",
+    "caption": {
+      "zh": "Transformer 论文页面资料",
+      "en": "Transformer paper page material"
+    },
+    "sourceId": "source-transformer-neurips",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "论文页面资料引用，需保留来源说明。",
+        "en": "Paper page reference; keep source attribution."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-transformer-architecture-detail",
+    "type": "image",
+    "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Transformer 架构细节图",
+      "en": "Transformer architecture detail"
+    },
+    "sourceId": "source-transformer-arxiv",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
+        "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning",
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

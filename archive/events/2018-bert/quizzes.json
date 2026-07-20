@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2018-bert-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "BERT 主要如何预训练？",
+      "en": "How is BERT mainly pre-trained?"
+    },
+    "options": [
+      {
+        "zh": "从双向上下文预测被遮盖的词",
+        "en": "By predicting masked words from bidirectional context"
+      },
+      {
+        "zh": "只给蛋白质原子排序",
+        "en": "By sorting protein atoms only"
+      },
+      {
+        "zh": "剪枝棋类搜索树",
+        "en": "By pruning a chess search tree"
+      },
+      {
+        "zh": "只统计边缘梯度",
+        "en": "By counting only edge gradients"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "BERT 遮盖部分令牌，并利用左右上下文重建它们。",
+      "en": "BERT hides some tokens and learns to reconstruct them using both left and right context."
+    },
+    "sourceIds": [
+      "source-bert"
+    ],
+    "assetIds": [
+      "asset-jacob-devlin"
+    ]
+  }
+]

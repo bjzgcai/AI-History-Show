@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-science-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "Science 论文",
+      "en": "Science paper"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.aar6404",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-arxiv-preprint",
+    "type": "reference-only",
+    "label": {
+      "zh": "预印本",
+      "en": "Preprint"
+    },
+    "title": {
+      "zh": "arXiv 预印本",
+      "en": "arXiv preprint"
+    },
+    "url": "https://arxiv.org/abs/1712.01815",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-deepmind-alphazero-blog",
+    "type": "official-page",
+    "label": {
+      "zh": "博客",
+      "en": "Blog"
+    },
+    "title": {
+      "zh": "DeepMind AlphaZero 博客",
+      "en": "DeepMind AlphaZero blog"
+    },
+    "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

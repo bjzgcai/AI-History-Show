@@ -1,0 +1,39 @@
+[
+  {
+    "id": "quiz-2017-transformer-ai100",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "zh": "Transformer 主要围绕什么构建？",
+      "en": "What is the Transformer built around?"
+    },
+    "options": [
+      {
+        "zh": "令牌之间的自注意力",
+        "en": "Self-attention over tokens"
+      },
+      {
+        "zh": "只有最近邻投票",
+        "en": "Only nearest-neighbor voting"
+      },
+      {
+        "zh": "化学专家规则",
+        "en": "A chemical expert rule"
+      },
+      {
+        "zh": "固定决策树",
+        "en": "A fixed decision tree"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "Transformer 使用自注意力模块，而不是循环式序列处理。",
+      "en": "The Transformer uses self-attention blocks instead of recurrent sequence processing."
+    },
+    "sourceIds": [
+      "source-transformer-arxiv"
+    ],
+    "assetIds": [
+      "asset-transformer-attention"
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "2008-tsne",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "t-SNE",
+    "en": "t-SNE"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>",
+    "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "tsne",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Journal of Machine Learning Research",
+        "zh": "《机器学习研究杂志》"
+      },
+      "title": {
+        "en": "Visualizing Data using t-SNE",
+        "zh": "使用 t-SNE 可视化数据"
+      },
+      "description": {
+        "en": "JMLR article page for the canonical t-SNE paper.",
+        "zh": "t-SNE 经典论文的 《机器学习研究杂志》 页面。"
+      },
+      "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+      "license": {
+        "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+        "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+      },
+      "usage": {
+        "en": "Source material image / Literature reference",
+        "zh": "原始材料入口 / 文献参考"
+      },
+      "action": {
+        "en": "Open JMLR page",
+        "zh": "打开 《机器学习研究杂志》 页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2008-tsne-laurens-van-der-maaten",
+    "asset-2008-tsne-neighbor-probabilities",
+    "asset-2008-tsne-cluster-map"
+  ],
+  "sourceIds": [
+    "source-visualizing-data-using-t-sne",
+    "source-laurens-van-der-maaten-homepage",
+    "source-how-to-use-t-sne-effectively-distill"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2008-tsne-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "研究者需要直观方法检查嵌入、数字、基因表达等高维数据。 这段背景帮助观众把t-SNE放回当时的技术问题和研究重点中理解。",
+        "en": "Researchers needed intuitive ways to inspect embeddings, digits, gene expression, and other high-dimensional data. This context helps viewers place t-SNE in the technical problems and research priorities of its time."
+      },
+      "sourceIds": [
+        "source-visualizing-data-using-t-sne"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "t-SNE 保持局部邻域概率，并用 t 分布减少二维图中的拥挤问题。 关键机制是保持邻域的非线性嵌入，它把资料线索与可见的演示行为连接起来。",
+        "en": "t-SNE preserves local neighbor probabilities while using a t distribution to reduce crowding in the 2D map. The key mechanism is Neighbor-preserving nonlinear embedding, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-visualizing-data-using-t-sne"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 t-SNE 视为强大的探索性可视化工具，但也强调必须谨慎解读。它的长期影响在于让高维嵌入变得可视化可检查，同时提醒用户簇图有说服力但不是决定性证据。",
+        "en": "Experts generally treat t-SNE as a powerful exploratory visualization tool that must be interpreted carefully. Its long-term legacy is making high-dimensional embeddings visually inspectable, while teaching users that cluster maps can be persuasive but not definitive evidence."
+      },
+      "sourceIds": [
+        "source-visualizing-data-using-t-sne"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Laurens van der Maaten",
+        "zh": "劳伦斯·范德马滕"
+      },
+      "role": {
+        "en": "Co-author of t-SNE",
+        "zh": "t-SNE 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Neighbor-preserving nonlinear embedding\"",
+    "zh": "\"保持邻域的非线性嵌入\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Visualizing Data using t-SNE",
+      "zh": "使用 t-SNE 可视化数据"
+    },
+    "workAuthors": {
+      "en": "Laurens van der Maaten",
+      "zh": "劳伦斯·范德马滕"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Dimensionality reduction / t-SNE",
+    "zh": "BenchCouncil AI100：降维 / t-SNE"
+  },
+  "quoteAttribution": {
+    "en": "<em>Visualizing Data using t-SNE</em>, Laurens van der Maaten",
+    "zh": "《使用 t-SNE 可视化数据》, 劳伦斯·范德马滕"
+  },
+  "achievement": {
+    "area": {
+      "en": "Dimensionality reduction",
+      "zh": "降维"
+    },
+    "method": {
+      "en": "Neighbor-preserving nonlinear embedding",
+      "zh": "保持邻域的非线性嵌入"
+    },
+    "artifact": {
+      "en": "t-distributed stochastic neighbor embedding",
+      "zh": "t 分布随机邻域嵌入"
+    },
+    "material": {
+      "en": "JMLR paper and author materials",
+      "zh": "《机器学习研究杂志》 论文与作者资料"
+    },
+    "demo": {
+      "en": "Turn high-dimensional neighborhoods into 2D clusters",
+      "zh": "把高维邻域转为二维簇"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Perplexity",
+          "zh": "困惑度"
+        },
+        "text": {
+          "en": "A parameter that roughly controls neighborhood size.",
+          "zh": "一个大致控制邻域大小的参数。"
+        }
+      },
+      {
+        "label": {
+          "en": "Local Neighborhood",
+          "zh": "局部邻域"
+        },
+        "text": {
+          "en": "The method emphasizes nearby points more than global distances.",
+          "zh": "该方法更强调邻近点，而非全局距离。"
+        }
+      },
+      {
+        "label": {
+          "en": "Crowding Problem",
+          "zh": "拥挤问题"
+        },
+        "text": {
+          "en": "Heavy tails help separate groups in the low-dimensional map.",
+          "zh": "重尾分布帮助低维图中群组分开。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Isomap",
+        "zh": "Isomap"
+      },
+      {
+        "en": "Locally linear embedding",
+        "zh": "局部线性嵌入"
+      },
+      {
+        "en": "Embedding visualization",
+        "zh": "嵌入可视化"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Netherlands and Canada",
+        "zh": "荷兰与加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Compute neighbors",
+        "zh": "计算邻域"
+      },
+      {
+        "en": "Match probabilities",
+        "zh": "匹配概率"
+      },
+      {
+        "en": "Relax map",
+        "zh": "松弛地图"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Journal of Machine Learning Research",
+          "zh": "《机器学习研究杂志》"
+        },
+        "title": {
+          "en": "Visualizing Data using t-SNE",
+          "zh": "使用 t-SNE 可视化数据"
+        },
+        "description": {
+          "en": "JMLR article page for the canonical t-SNE paper.",
+          "zh": "t-SNE 经典论文的 《机器学习研究杂志》 页面。"
+        },
+        "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "source": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open JMLR page",
+          "zh": "打开 《机器学习研究杂志》 页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Tilburg University / University of Toronto",
+      "zh": "蒂尔堡大学 / 多伦多大学"
+    },
+    "country": {
+      "en": "Netherlands and Canada",
+      "zh": "荷兰与加拿大"
+    },
+    "coordinates": [
+      51.5633,
+      5.0431
+    ]
+  }
+}

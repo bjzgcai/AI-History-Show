@@ -1,0 +1,360 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "1951-strachey-draughts",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "克里斯托弗·斯特雷奇 的跳棋程序",
+    "en": "Christopher Strachey's Draughts"
+  },
+  "displaySummary": {
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
+    "en": "Game AI as a Testbed for Search, Learning and Planning"
+  },
+  "displayDescription": {
+    "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
+    "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "draughts",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Paper",
+        "zh": "论文"
+      },
+      "title": {
+        "en": "Logical or non-mathematical programmes",
+        "zh": "逻辑或非数学程序"
+      },
+      "description": {
+        "en": "ACM record for Strachey's early game-playing program and non-numerical computing argument.",
+        "zh": "ACM 记录：斯特雷奇早期博弈程序与非数值计算论述。"
+      },
+      "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+      "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+      "action": {
+        "en": "Open ACM record",
+        "zh": "打开 ACM 记录"
+      }
+    },
+    {
+      "type": "gameEvolutionVideo",
+      "site": {
+        "en": "Game evolution clip",
+        "zh": "棋局演化短片"
+      },
+      "title": {
+        "en": "Strachey's draughts game evolution",
+        "zh": "斯特雷奇跳棋 棋局演化"
+      },
+      "description": {
+        "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
+        "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
+      },
+      "url": "resources/videos/game-evolution/sample-go-game.gif",
+      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+      "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+      "sourceSgf": "examples/sgf/sample-go-game.sgf",
+      "generator": "scripts/sgf_to_video.py",
+      "duration": {
+        "en": "about 1 min",
+        "zh": "约 1 分钟"
+      },
+      "fps": "30",
+      "license": {
+        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+      },
+      "usage": {
+        "en": "Playable game-state evolution module",
+        "zh": "可播放的棋局状态演化模块"
+      },
+      "action": {
+        "en": "Play evolution clip",
+        "zh": "播放演化短片"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1951-strachey-draughts-program-external",
+    "asset-1951-strachey-draughts-checkers-board-external",
+    "asset-1951-strachey-draughts-board-search",
+    "asset-1951-strachey-draughts-program-flow"
+  ],
+  "sourceIds": [
+    "source-logical-or-non-mathematical-programmes",
+    "source-computer-pioneers-christopher-strachey",
+    "source-strachey-draughts-program-screenshot",
+    "source-checkers-board-photo"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1951-strachey-draughts-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。",
+        "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools."
+      },
+      "sourceIds": [
+        "source-logical-or-non-mathematical-programmes"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。",
+        "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script."
+      },
+      "sourceIds": [
+        "source-logical-or-non-mathematical-programmes"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把斯特雷奇的跳棋程序视为早期证据，说明存储程序计算机可以尝试非数值对弈和选择。它的长期影响在于帮助把棋类游戏确立为研究搜索、评估和机器智能演示的受控环境。",
+        "en": "Experts generally treat Strachey's draughts program as an early proof that stored-program computers could attempt non-numerical play and choice. Its long-term legacy is helping establish board games as controlled environments for search, evaluation, and machine-intelligence demonstrations."
+      },
+      "sourceIds": [
+        "source-logical-or-non-mathematical-programmes"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "AI in Board & Tabletop Games",
+    "zh": "AI 在棋牌与博弈论的演进"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Christopher Strachey",
+        "zh": "克里斯托弗·斯特雷奇"
+      },
+      "role": {
+        "en": "Developer of the early draughts program",
+        "zh": "早期跳棋程序开发者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Non-numerical programs could play\"",
+    "zh": "\"非数值程序也可以对弈\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Logical or non-mathematical programmes",
+      "zh": "逻辑或非数学程序"
+    },
+    "workAuthors": {
+      "en": "Christopher Strachey",
+      "zh": "克里斯托弗·斯特雷奇"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://dl.acm.org/doi/10.1145/1455270.1455277"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Game / Christopher Strachey's Draughts",
+    "zh": "BenchCouncil AI100：游戏 / 克里斯托弗·斯特雷奇 的跳棋程序"
+  },
+  "quoteAttribution": {
+    "en": "<em>Logical or non-mathematical programmes</em>, Christopher Strachey",
+    "zh": "《逻辑或非数学程序》, 克里斯托弗·斯特雷奇"
+  },
+  "achievement": {
+    "area": {
+      "en": "Game",
+      "zh": "游戏"
+    },
+    "method": {
+      "en": "Board-state search and evaluation",
+      "zh": "棋盘状态搜索与评估"
+    },
+    "artifact": {
+      "en": "Pilot ACE / Ferranti Mark 1 draughts program",
+      "zh": "Pilot ACE / Ferranti Mark 1 跳棋程序"
+    },
+    "material": {
+      "en": "Historical accounts and Strachey's 1952 program report",
+      "zh": "历史记录与 斯特雷奇 1952 年程序报告"
+    },
+    "demo": {
+      "en": "Evaluate legal draughts moves on a tiny memory budget",
+      "zh": "在极小内存预算下评估合法跳棋走法"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Board Representation",
+          "zh": "棋盘表示"
+        },
+        "text": {
+          "en": "A game state becomes data the computer can inspect.",
+          "zh": "棋局状态变成计算机可检查的数据。"
+        }
+      },
+      {
+        "label": {
+          "en": "Move Generation",
+          "zh": "走法生成"
+        },
+        "text": {
+          "en": "The program enumerates legal moves instead of following a fixed script.",
+          "zh": "程序枚举合法走法，而不是沿用固定脚本。"
+        }
+      },
+      {
+        "label": {
+          "en": "Evaluation",
+          "zh": "局面评估"
+        },
+        "text": {
+          "en": "Candidate positions are scored so the machine can choose.",
+          "zh": "候选局面被评分，机器据此选择。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Turing Test",
+        "zh": "图灵测试"
+      },
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "Chinook",
+        "zh": "Chinook"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Teddington, United Kingdom",
+        "zh": "英国特丁顿"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Represent board",
+        "zh": "表示棋盘"
+      },
+      {
+        "en": "Generate moves",
+        "zh": "生成走法"
+      },
+      {
+        "en": "Choose move",
+        "zh": "选择走法"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+    "demoPanel": "sources",
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "title": {
+          "en": "Logical or non-mathematical programmes",
+          "zh": "逻辑或非数学程序"
+        },
+        "description": {
+          "en": "ACM record for Strachey's early game-playing program and non-numerical computing argument.",
+          "zh": "ACM 记录：斯特雷奇早期博弈程序与非数值计算论述。"
+        },
+        "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "source": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+        "action": {
+          "en": "Open ACM record",
+          "zh": "打开 ACM 记录"
+        }
+      },
+      {
+        "type": "gameEvolutionVideo",
+        "site": {
+          "en": "Game evolution clip",
+          "zh": "棋局演化短片"
+        },
+        "title": {
+          "en": "Strachey's draughts game evolution",
+          "zh": "斯特雷奇跳棋 棋局演化"
+        },
+        "description": {
+          "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
+          "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
+        },
+        "url": "resources/videos/game-evolution/sample-go-game.gif",
+        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+        "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+        "sourceSgf": "examples/sgf/sample-go-game.sgf",
+        "generator": "scripts/sgf_to_video.py",
+        "duration": {
+          "en": "about 1 min",
+          "zh": "约 1 分钟"
+        },
+        "fps": "30",
+        "license": {
+          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+        },
+        "usage": {
+          "en": "Playable game-state evolution module",
+          "zh": "可播放的棋局状态演化模块"
+        },
+        "action": {
+          "en": "Play evolution clip",
+          "zh": "播放演化短片"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "National Physical Laboratory",
+      "zh": "英国国家物理实验室"
+    },
+    "country": {
+      "en": "Teddington, United Kingdom",
+      "zh": "英国特丁顿"
+    },
+    "coordinates": [
+      51.4245,
+      -0.3426
+    ]
+  }
+}

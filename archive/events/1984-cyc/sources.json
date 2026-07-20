@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-building-large-knowledge-based-systems",
+    "type": "book",
+    "label": {
+      "zh": "专著",
+      "en": "Book"
+    },
+    "title": {
+      "zh": "构建大型知识系统",
+      "en": "Building Large Knowledge-Based Systems"
+    },
+    "url": "https://dl.acm.org/doi/book/10.5555/70571",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-the-evolution-of-cycl",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "CycL 的演化",
+      "en": "The Evolution of CycL"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/122296.122308",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cyc",
+    "type": "project-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "Cyc",
+      "en": "Cyc"
+    },
+    "url": "https://cyc.com/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-cyc-projects-logo-image",
+    "type": "project-page",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Cyc 项目标识图片",
+      "en": "Cyc projects logo image"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

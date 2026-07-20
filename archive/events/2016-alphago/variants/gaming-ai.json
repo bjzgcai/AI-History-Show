@@ -1,0 +1,276 @@
+{
+  "storylineId": "gaming-ai",
+  "eventId": "2016-alphago",
+  "displayTitle": {
+    "en": "AlphaGo",
+    "zh": "AlphaGo"
+  },
+  "displaySummary": {
+    "en": "Game AI as a Testbed for Search, Learning and Planning",
+    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进"
+  },
+  "emphasis": [
+    "game-ai-lineage",
+    "search",
+    "self-play",
+    "game-record-evolution"
+  ],
+  "visual": "go",
+  "assetIds": [
+    "asset-alphago-lee-sedol",
+    "asset-alphago-policy-value-search"
+  ],
+  "sourceIds": [
+    "source-alphago-nature-paper",
+    "source-deepmind-alphago-page",
+    "source-katago-analysis-engine"
+  ],
+  "claimIds": [
+    "claim-hybrid-policy-value-search",
+    "claim-lee-sedol-match",
+    "claim-self-play-legacy"
+  ],
+  "displayDescription": {
+    "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>",
+    "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>"
+  },
+  "category": {
+    "en": "AI in Board & Tabletop Games",
+    "zh": "AI 在棋牌与博弈论的演进"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "David Silver",
+        "zh": "大卫·席尔瓦"
+      },
+      "role": {
+        "en": "AlphaGo lead researcher",
+        "zh": "AlphaGo 主要研究者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "戴密斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder",
+        "zh": "DeepMind 联合创始人"
+      },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Aja Huang",
+        "zh": "黄士杰"
+      },
+      "role": {
+        "en": "AlphaGo researcher",
+        "zh": "AlphaGo 研究者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence.\"",
+    "zh": "\"围棋长期以来被视为人工智能最具挑战性的经典游戏。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+      "zh": "用深度神经网络和树搜索掌握围棋"
+    },
+    "workAuthors": {
+      "en": "David Silver et al., Nature, 2016",
+      "zh": "戴维·席尔瓦等, 《自然》, 2016"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.nature.com/articles/nature16961"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Reinforcement learning / AlphaGo",
+    "zh": "BenchCouncil AI100：强化学习 / AlphaGo"
+  },
+  "quoteAttribution": {
+    "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
+    "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+  },
+  "achievement": {
+    "area": {
+      "en": "Reinforcement Learning",
+      "zh": "强化学习"
+    },
+    "method": {
+      "en": "Self-play search",
+      "zh": "自我对弈搜索"
+    },
+    "artifact": {
+      "en": "Policy/value networks + MCTS",
+      "zh": "策略 / 价值网络 + MCTS"
+    },
+    "material": {
+      "en": "Nature paper + blog + SGF/API",
+      "zh": "《自然》 论文 + 博客 + 棋谱/API"
+    },
+    "demo": {
+      "en": "Move 37 board explainer",
+      "zh": "第 37 手棋盘解释器"
+    },
+    "demoSteps": [
+      {
+        "en": "Policy prior",
+        "zh": "策略先验"
+      },
+      {
+        "en": "Value estimate",
+        "zh": "价值估计"
+      },
+      {
+        "en": "Search variation",
+        "zh": "搜索分支"
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Deep Blue",
+        "zh": "深蓝"
+      },
+      {
+        "en": "AlphaZero",
+        "zh": "AlphaZero"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United Kingdom",
+        "zh": "英国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Nature",
+          "zh": "《自然》"
+        },
+        "title": {
+          "en": "Mastering the game of Go with deep neural networks and tree search",
+          "zh": "《用深度神经网络和树搜索掌握围棋》"
+        },
+        "description": {
+          "en": "Official Nature article page for the 2016 AlphaGo paper, documenting policy networks, value networks and Monte Carlo tree search.",
+          "zh": "《自然》 官方论文页，记录 AlphaGo 以策略网络、价值网络和蒙特卡洛树搜索结合完成围棋突破。"
+        },
+        "url": "https://www.nature.com/articles/nature16961",
+        "source": "https://www.nature.com/articles/nature16961",
+        "license": {
+          "en": "Nature article access page; reuse rights for article figures are restricted by publisher terms.",
+          "zh": "《自然》文章访问页；论文图表的复用受出版方条款限制。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open Nature paper",
+          "zh": "打开 《自然》 论文"
+        }
+      },
+      {
+        "type": "gameEvolutionVideo",
+        "site": {
+          "en": "Game evolution clip",
+          "zh": "棋局演化短片"
+        },
+        "title": {
+          "en": "AlphaGo game evolution",
+          "zh": "AlphaGo 棋局演化"
+        },
+        "description": {
+          "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
+          "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
+        },
+        "url": "resources/videos/game-evolution/sample-go-game.gif",
+        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
+        "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+        "sourceSgf": "examples/sgf/sample-go-game.sgf",
+        "generator": "scripts/sgf_to_video.py",
+        "duration": {
+          "en": "about 1 min",
+          "zh": "约 1 分钟"
+        },
+        "fps": "30",
+        "license": {
+          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
+          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
+        },
+        "usage": {
+          "en": "Playable game-state evolution module",
+          "zh": "可播放的棋局状态演化模块"
+        },
+        "action": {
+          "en": "Play evolution clip",
+          "zh": "播放演化短片"
+        }
+      }
+    ]
+  },
+  "commentarySections": [
+    {
+      "label": {
+        "en": "Published Paper",
+        "zh": "论文材料"
+      },
+      "html": {
+        "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
+        "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
+      }
+    },
+    {
+      "label": {
+        "en": "Blog / API Materials",
+        "zh": "博客 / API 材料"
+      },
+      "html": {
+        "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
+        "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
+      }
+    },
+    {
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs.",
+        "zh": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。"
+      }
+    }
+  ],
+  "quizId": "2016-alphago-quiz-1",
+  "location": {
+    "name": {
+      "en": "Google DeepMind",
+      "zh": "谷歌 DeepMind"
+    },
+    "country": {
+      "en": "London, United Kingdom",
+      "zh": "英国，伦敦"
+    },
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ]
+  }
+}

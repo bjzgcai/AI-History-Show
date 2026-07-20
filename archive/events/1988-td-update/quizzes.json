@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1988-td-update-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "TD 更新比较什么？",
+      "en": "What does a TD update compare?"
+    },
+    "options": [
+      {
+        "zh": "当前价值估计与“奖励加下一价值估计”",
+        "en": "The current value estimate with reward plus next value estimate"
+      },
+      {
+        "zh": "两个无关图像标题",
+        "en": "Two unrelated image captions"
+      },
+      {
+        "zh": "一个分子与一个棋局",
+        "en": "A molecule with a chess position"
+      },
+      {
+        "zh": "学习停止后才看的最终回合奖励",
+        "en": "Only final episode reward after all learning stops"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "TD 学习用下一步预测作为学习目标的一部分来进行自举。",
+      "en": "TD learning bootstraps by using the next prediction as part of the learning target."
+    },
+    "sourceIds": [
+      "source-learning-to-predict-by-the-methods-of-temporal-differences"
+    ],
+    "assetIds": [
+      "asset-1988-td-update-richard-sutton"
+    ]
+  }
+]

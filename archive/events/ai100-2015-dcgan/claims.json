@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "DCGAN 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "DCGAN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+      "source-pytorch-dcgan-tutorial"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。</p>",
+      "en": "<p>DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.</p>"
+    },
+    "sourceIds": [
+      "source-unsupervised-representation-learning-with-deep-convolutional-gans",
+      "source-pytorch-dcgan-tutorial"
+    ],
+    "status": "needs-source"
+  }
+]

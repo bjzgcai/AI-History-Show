@@ -1,0 +1,60 @@
+{
+  "id": "2018-bert",
+  "year": 2018,
+  "date": "2018",
+  "title": {
+    "zh": "BERT",
+    "en": "BERT"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>",
+    "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国山景城",
+      "en": "Mountain View, United States"
+    },
+    "place": {
+      "zh": "Google",
+      "en": "Google"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "jacob-devlin",
+      "role": {
+        "zh": "BERT 主要作者",
+        "en": "BERT lead author"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [
+    "ai100-2018-bert"
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

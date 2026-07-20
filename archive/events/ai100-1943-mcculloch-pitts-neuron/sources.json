@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《神经活动中内在观念的逻辑演算》",
+      "en": "A Logical Calculus of Ideas Immanent in Nervous Activity"
+    },
+    "url": "https://doi.org/10.1007/BF02478259",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-mcculloch-pitts-neuron-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "麦卡洛克-皮茨神经元概览",
+      "en": "McCulloch-Pitts neuron overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-history-of-information-entry",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Context"
+    },
+    "title": {
+      "zh": "History of Information 历史条目",
+      "en": "History of Information entry"
+    },
+    "url": "https://www.historyofinformation.com/detail.php?id=634",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-walter-pitts-blackboard-photo",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "沃尔特·皮茨黑板照片",
+      "en": "Walter Pitts blackboard photo"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

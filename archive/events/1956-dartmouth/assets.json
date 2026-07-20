@@ -1,0 +1,106 @@
+[
+  {
+    "id": "asset-1956-dartmouth-historical-02",
+    "type": "image",
+    "path": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "达特茅斯会议提议封面",
+      "en": "Cover of the Dartmouth Conference Proposal"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1956-dartmouth-historical-01",
+    "type": "image",
+    "path": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "达特茅斯会议发起人",
+      "en": "Organizer of the Dartmouth Conference"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1956-dartmouth-historical-04",
+    "type": "image",
+    "path": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "达特茅斯会议 - AI正式诞生！",
+      "en": "Dartmouth Workshop - AI Is Born!"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1956-dartmouth-school",
+    "type": "image",
+    "path": "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "达特茅斯学院（现代）",
+      "en": "Dartmouth College（Current）"
+    },
+    "subcaption": {
+      "zh": "达特茅斯会议 - AI正式诞生！",
+      "en": "Dartmouth Workshop - AI Is Born!"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

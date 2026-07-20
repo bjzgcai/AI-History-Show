@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-applications-of-artificial-intelligence-for-chemical-inference",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "人工智能在化学推断中的应用",
+      "en": "Applications of Artificial Intelligence for Chemical Inference"
+    },
+    "url": "https://doi.org/10.1021/ci60034a002",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-acm-turing-award-profile-for-edward-feigenbaum",
+    "type": "reference-only",
+    "label": {
+      "zh": "奖项资料",
+      "en": "Award"
+    },
+    "title": {
+      "zh": "ACM 图灵 Award profile for 爱德华·费根鲍姆",
+      "en": "ACM Turing Award profile for Edward Feigenbaum"
+    },
+    "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-stanford-knowledge-systems-laboratory-history",
+    "type": "reference-only",
+    "label": {
+      "zh": "历史资料",
+      "en": "History"
+    },
+    "title": {
+      "zh": "斯坦福大学 Knowledge Systems Laboratory history",
+      "en": "Stanford Knowledge Systems Laboratory history"
+    },
+    "url": "http://ksl-web.stanford.edu/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

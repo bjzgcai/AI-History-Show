@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "VGG 网络 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "VGG Networks is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+      "source-oxford-vgg-very-deep-convnets"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "VGG 网络 的技术线索包括「由 3x3 卷积堆叠出的很深网络」，代表性产物是「VGG-16 与 VGG-19 架构」。",
+      "en": "VGG Networks is described through the method \"Very deep stacks of 3x3 convolutions\" and the artifact \"VGG-16 and VGG-19 architectures\"."
+    },
+    "sourceIds": [
+      "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+      "source-oxford-vgg-very-deep-convnets"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "VGG 网络 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "VGG Networks is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+      "source-oxford-vgg-very-deep-convnets"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>VGG 让卷积网络看起来像一种有纪律的架构语言：小卷积核、重复模块、阶段性池化，以及很深的层数。牛津团队 2014 年的工作并不是最快或最小的模型，却成为经典特征提取器和教学范例。它的清晰结构帮助研究者在残差连接和密集连接成为标准之前理解“深度”的价值。</p>",
+      "en": "<p>VGG made convolutional networks feel like a disciplined architecture language: small filters, repeated blocks, occasional pooling, and great depth. The 2014 Oxford work was not the fastest or smallest model, but it became a canonical feature extractor and teaching example. Its clarity helped later researchers reason about depth before residual and dense connections became standard.</p>"
+    },
+    "sourceIds": [
+      "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+      "source-oxford-vgg-very-deep-convnets"
+    ],
+    "status": "needs-source"
+  }
+]

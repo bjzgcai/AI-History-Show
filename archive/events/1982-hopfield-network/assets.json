@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1982-hopfield-network-john-hopfield",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "约翰·J·霍普菲尔德 肖像",
+      "en": "John J. Hopfield portrait"
+    },
+    "subcaption": {
+      "zh": "诺贝尔奖官网的 Hopfield 人物图。",
+      "en": "Nobel Prize profile portrait for Hopfield."
+    },
+    "sourceId": "source-neural-networks-and-physical-systems",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Nobel Prize image; rights not stated.",
+        "en": "Nobel Prize image; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1982-hopfield-network-energy-basin",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "能量盆地",
+      "en": "Energy basin"
+    },
+    "subcaption": {
+      "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Hopfield Network, based on the listed source material."
+    },
+    "sourceId": "source-neural-networks-and-physical-systems",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1982-hopfield-network-memory-grid",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "联想记忆网格",
+      "en": "Associative memory grid"
+    },
+    "subcaption": {
+      "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
+      "en": "Local redraw for Hopfield Network, based on the listed source material."
+    },
+    "sourceId": "source-neural-networks-and-physical-systems",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

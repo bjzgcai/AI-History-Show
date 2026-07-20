@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "带注意力机制的神经机器翻译 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Neural Machine Translation with Attention is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+      "source-iclr-2015-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
+      "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+    },
+    "sourceIds": [
+      "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+      "source-iclr-2015-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

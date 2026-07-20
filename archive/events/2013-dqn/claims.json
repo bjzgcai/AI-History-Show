@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "深度 Q 网络 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Deep Q Network is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-playing-atari-with-deep-reinforcement-learning",
+      "source-human-level-control-through-deep-reinforcement-learning"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
+      "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+    },
+    "sourceIds": [
+      "source-playing-atari-with-deep-reinforcement-learning",
+      "source-human-level-control-through-deep-reinforcement-learning"
+    ],
+    "status": "needs-source"
+  }
+]

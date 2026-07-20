@@ -1,0 +1,54 @@
+[
+  {
+    "id": "claim-ai100-achievement",
+    "importance": "core",
+    "text": {
+      "zh": "逻辑理论家 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+      "en": "Logic Theorist is an AI history achievement node in the BenchCouncil AI100 storyline."
+    },
+    "sourceIds": [
+      "source-the-logic-theory-machine",
+      "source-carnegie-mellon-university-archives"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-method-artifact",
+    "importance": "context",
+    "text": {
+      "zh": "逻辑理论家 的技术线索包括「启发式证明搜索」，代表性产物是「逻辑理论机器」。",
+      "en": "Logic Theorist is described through the method \"Heuristic proof search\" and the artifact \"Logic Theory Machine\"."
+    },
+    "sourceIds": [
+      "source-the-logic-theory-machine",
+      "source-carnegie-mellon-university-archives"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "逻辑理论家 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Logic Theorist is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-the-logic-theory-machine",
+      "source-carnegie-mellon-university-archives"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J·C·肖 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>",
+      "en": "<p>In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.</p>"
+    },
+    "sourceIds": [
+      "source-the-logic-theory-machine",
+      "source-carnegie-mellon-university-archives"
+    ],
+    "status": "needs-source"
+  }
+]

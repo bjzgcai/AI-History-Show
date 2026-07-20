@@ -1,0 +1,54 @@
+[
+  {
+    "id": "asset-david-rumelhart",
+    "type": "image",
+    "path": "resources/images/figures/david-rumelhart.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "大卫·鲁梅尔哈特肖像",
+      "en": "David Rumelhart portrait"
+    },
+    "subcaption": {
+      "zh": "1986 年反向传播论文共同作者",
+      "en": "Co-author of the 1986 back-propagation paper"
+    },
+    "sourceId": "source-learning-representations-by-back-propagating-errors",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "参考图片",
+        "en": "Reference image"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1967-back-propagation-error-flow",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "误差信号流",
+      "en": "Error signal flow"
+    },
+    "subcaption": {
+      "zh": "关于反向传播误差流的本地原创解释图。",
+      "en": "Original local explainer of back-propagation error flow."
+    },
+    "sourceId": "source-learning-representations-by-back-propagating-errors",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

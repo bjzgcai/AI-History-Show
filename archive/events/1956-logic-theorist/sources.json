@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-the-logic-theory-machine",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "逻辑理论机",
+      "en": "The Logic Theory Machine"
+    },
+    "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
+      "en": "Primary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-carnegie-mellon-university-archives",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "Carnegie Mellon University Archives",
+      "en": "Carnegie Mellon University Archives"
+    },
+    "url": "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-allen-newell-acm-a-m-turing-award",
+    "type": "award",
+    "label": {
+      "zh": "奖项",
+      "en": "Award"
+    },
+    "title": {
+      "zh": "艾伦·纽厄尔 ACM A.M. 图灵 Award",
+      "en": "Allen Newell ACM A.M. Turing Award"
+    },
+    "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  }
+]

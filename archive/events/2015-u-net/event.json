@@ -1,0 +1,74 @@
+{
+  "id": "2015-u-net",
+  "year": "2015",
+  "date": "2015",
+  "title": {
+    "zh": "U-Net",
+    "en": "U-Net"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>U-Net 最初面向生物医学图像分割，在这类任务中标注数据稀缺且边界细节重要。收缩路径汇聚上下文，扩张路径恢复分辨率，跳跃连接则把精细信息跨过 U 形结构传递过去。这个设计后来走出原始领域，成为分割、图像复原、扩散模型和密集预测的通用模板。</p>",
+    "en": "<p>U-Net was designed for biomedical image segmentation, where labeled data can be scarce and boundary detail matters. Its contracting path gathers context while the expanding path restores resolution, with skip connections carrying fine details across the U shape. The design escaped its original niche and became a general template for segmentation, restoration, diffusion models, and dense prediction.</p>"
+  },
+  "location": {
+    "regionId": "germany",
+    "country": {
+      "zh": "德国弗赖堡",
+      "en": "Freiburg, Germany"
+    },
+    "place": {
+      "zh": "弗赖堡大学",
+      "en": "University of Freiburg"
+    },
+    "coordinates": [
+      47.999,
+      7.8421
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "olaf-ronneberger",
+      "role": {
+        "zh": "U-Net 共同作者",
+        "en": "Co-author of U-Net"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "philipp-fischer",
+      "role": {
+        "zh": "U-Net 共同作者",
+        "en": "Co-author of U-Net"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "thomas-brox",
+      "role": {
+        "zh": "U-Net 共同作者",
+        "en": "Co-author of U-Net"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

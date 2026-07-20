@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "反向传播 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Back-propagation is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-learning-representations-by-back-propagating-errors",
+      "source-a-theory-of-adaptive-pattern-classifiers"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>",
+      "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>"
+    },
+    "sourceIds": [
+      "source-learning-representations-by-back-propagating-errors",
+      "source-a-theory-of-adaptive-pattern-classifiers"
+    ],
+    "status": "needs-source"
+  }
+]

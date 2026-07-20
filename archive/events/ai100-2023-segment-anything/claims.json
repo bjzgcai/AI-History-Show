@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Segment Anything 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Segment Anything is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-segment-anything",
+      "source-iccv-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。</p>",
+      "en": "<p>Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts.</p>"
+    },
+    "sourceIds": [
+      "source-segment-anything",
+      "source-iccv-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

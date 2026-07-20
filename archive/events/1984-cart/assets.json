@@ -1,0 +1,80 @@
+[
+  {
+    "id": "asset-1984-cart-leo-breiman",
+    "type": "gif",
+    "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+    "role": "hero-image",
+    "caption": {
+      "zh": "利奥·布雷曼 肖像",
+      "en": "Leo Breiman portrait"
+    },
+    "subcaption": {
+      "zh": "来自 约克大学 “Portraits of Statisticians” 档案的人物照片。",
+      "en": "Portrait from the University of York Portraits of Statisticians archive."
+    },
+    "sourceId": "source-classification-and-regression-trees",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Archive portrait; rights not stated.",
+        "en": "Archive portrait; rights not stated."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1984-cart-split-regions",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "特征空间划分",
+      "en": "Feature-space splits"
+    },
+    "subcaption": {
+      "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for CART, based on the related source material."
+    },
+    "sourceId": "source-classification-and-regression-trees",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1984-cart-pruning-curve",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "代价复杂度剪枝曲线",
+      "en": "Cost-complexity pruning curve"
+    },
+    "subcaption": {
+      "zh": "CART 决策树 的独立本地重画，依据相关来源材料制作。",
+      "en": "Distinct local redraw for CART, based on the related source material."
+    },
+    "sourceId": "source-classification-and-regression-trees",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

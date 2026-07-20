@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2015-deep-compression-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "深度压缩的三个核心思想是什么？",
+      "en": "Which three ideas are central to Deep Compression?"
+    },
+    "options": [
+      {
+        "zh": "剪枝、量化和编码",
+        "en": "Pruning, quantization, and coding"
+      },
+      {
+        "zh": "解析、打印和排序",
+        "en": "Parsing, printing, and sorting"
+      },
+      {
+        "zh": "聊天、翻译和投票",
+        "en": "Chatting, translating, and voting"
+      },
+      {
+        "zh": "裁剪、旋转和模糊",
+        "en": "Cropping, rotating, and blurring"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "深度压缩通过剪枝、训练型量化和霍夫曼编码缩小网络。",
+      "en": "Deep Compression shrinks networks through pruning, trained quantization, and Huffman coding."
+    },
+    "sourceIds": [
+      "source-deep-compression"
+    ],
+    "assetIds": [
+      "asset-2015-deep-compression-prune-quantize-code"
+    ]
+  }
+]

@@ -1,0 +1,352 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2019-stylegan",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "StyleGAN",
+    "en": "StyleGAN"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>",
+    "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "CVF Open Access",
+        "zh": "CVF 开放论文库"
+      },
+      "title": {
+        "en": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+        "zh": "面向生成对抗网络的基于风格的生成器架构"
+      },
+      "description": {
+        "en": "CVF Open Access source card for StyleGAN.",
+        "zh": "CVF 开放论文库 的StyleGAN资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1812.04948",
+      "source": "https://arxiv.org/abs/1812.04948",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2019-stylegan-tero-karras",
+    "asset-2019-stylegan-style-modulation"
+  ],
+  "sourceIds": [
+    "source-a-style-based-generator-architecture-for-gans",
+    "source-cvpr-open-access-paper-page",
+    "source-nvidia-stylegan-repository"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2019-stylegan-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。",
+        "en": "StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable."
+      },
+      "sourceIds": [
+        "source-a-style-based-generator-architecture-for-gans"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-a-style-based-generator-architecture-for-gans"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 StyleGAN 视为高保真可控图像合成的基准。它的长期影响在于风格空间接口塑造了人脸生成、潜空间编辑和生成媒体研究。",
+        "en": "Experts generally treat StyleGAN as a benchmark for high-fidelity controllable image synthesis. Its long-term legacy is the style-space interface that shaped face generation, latent editing, and generative media research."
+      },
+      "sourceIds": [
+        "source-a-style-based-generator-architecture-for-gans"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Tero Karras",
+        "zh": "特罗·卡拉斯"
+      },
+      "role": {
+        "en": "StyleGAN lead author",
+        "zh": "StyleGAN 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"A style-based generator architecture for generative adversarial networks\"",
+    "zh": "\"面向生成对抗网络的基于风格的生成器架构\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "zh": "面向生成对抗网络的基于风格的生成器架构"
+    },
+    "workAuthors": {
+      "en": "Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
+      "zh": "特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1812.04948"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Style-Based Generator Architecture for Generative Adversarial Networks</em>, Tero Karras, Samuli Laine, and Timo Aila, CVPR, 2019",
+    "zh": "《面向生成对抗网络的基于风格的生成器架构》, 特罗·卡拉斯、萨穆利·莱内、蒂莫·艾拉，CVPR，2019"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Style-modulated generator architecture",
+      "zh": "风格调制生成器架构"
+    },
+    "artifact": {
+      "en": "StyleGAN generator",
+      "zh": "StyleGAN 生成器"
+    },
+    "material": {
+      "en": "CVPR paper and NVIDIA code release",
+      "zh": "CVPR 论文与 NVIDIA 代码发布"
+    },
+    "demo": {
+      "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details.",
+      "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Style Space",
+          "zh": "风格空间"
+        },
+        "text": {
+          "en": "A mapping network controls synthesis layers.",
+          "zh": "映射网络控制合成层。"
+        }
+      },
+      {
+        "label": {
+          "en": "Layer Control",
+          "zh": "分层控制"
+        },
+        "text": {
+          "en": "Different layers affect pose, shape, or texture.",
+          "zh": "不同层影响姿态、形状或纹理。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "DCGAN",
+          "zh": "DCGAN"
+        },
+        "zh": {
+          "en": "DCGAN",
+          "zh": "DCGAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        },
+        "zh": {
+          "en": "Stable Diffusion",
+          "zh": "Stable Diffusion"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "United States",
+          "zh": "美国"
+        },
+        "zh": {
+          "en": "United States",
+          "zh": "美国"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        },
+        "zh": {
+          "en": "Latent code",
+          "zh": "潜编码"
+        }
+      },
+      {
+        "en": {
+          "en": "Style modulation",
+          "zh": "风格调制"
+        },
+        "zh": {
+          "en": "Style modulation",
+          "zh": "风格调制"
+        }
+      },
+      {
+        "en": {
+          "en": "Generated image",
+          "zh": "生成图像"
+        },
+        "zh": {
+          "en": "Generated image",
+          "zh": "生成图像"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "CVPR paper and NVIDIA code release",
+          "zh": "CVPR 论文与 NVIDIA 代码发布"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "A latent code is mapped into styles that control different synthesis layers, separating coarse structure from fine visual details.",
+          "zh": "潜编码被映射为控制不同合成层的风格，从而把粗结构与细节纹理分开。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVF Open Access",
+          "zh": "CVF 开放论文库"
+        },
+        "title": {
+          "en": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+          "zh": "面向生成对抗网络的基于风格的生成器架构"
+        },
+        "description": {
+          "en": "CVF Open Access source card for StyleGAN.",
+          "zh": "CVF 开放论文库 的StyleGAN资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1812.04948",
+        "source": "https://arxiv.org/abs/1812.04948",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "NVIDIA",
+      "zh": "NVIDIA"
+    },
+    "country": {
+      "en": "Santa Clara, United States",
+      "zh": "Santa Clara, United States"
+    },
+    "coordinates": [
+      37.3541,
+      -121.9552
+    ]
+  }
+}

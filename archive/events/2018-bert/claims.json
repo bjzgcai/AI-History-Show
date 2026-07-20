@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "BERT 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "BERT is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-bert",
+      "source-acl-anthology-bert-paper"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>",
+      "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line.</p>"
+    },
+    "sourceIds": [
+      "source-bert",
+      "source-acl-anthology-bert-paper"
+    ],
+    "status": "needs-source"
+  }
+]

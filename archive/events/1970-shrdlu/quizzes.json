@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1970-shrdlu-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "为什么 SHRDLU 在对话中显得很流畅？",
+      "en": "Why could SHRDLU appear so fluent in dialogue?"
+    },
+    "options": [
+      {
+        "zh": "它把语言落地到一个小型积木世界和明确动作中",
+        "en": "It grounded language in a small blocks world with explicit actions"
+      },
+      {
+        "zh": "它在整个网络上训练",
+        "en": "It trained on the full web"
+      },
+      {
+        "zh": "它使用 ImageNet 标签",
+        "en": "It used ImageNet labels"
+      },
+      {
+        "zh": "它用硬件搜索下棋",
+        "en": "It played chess by hardware search"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "SHRDLU 有效是因为语言、对象、记忆和计划都表示在同一个受限微世界里。",
+      "en": "SHRDLU worked because language, objects, memory, and plans were all represented inside one constrained microworld."
+    },
+    "sourceIds": [
+      "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"
+    ],
+    "assetIds": [
+      "asset-1970-shrdlu-terry-winograd"
+    ]
+  }
+]

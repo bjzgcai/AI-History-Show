@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "扩散模型 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Diffusion Model is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+      "source-denoising-diffusion-probabilistic-models"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>",
+      "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>"
+    },
+    "sourceIds": [
+      "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+      "source-denoising-diffusion-probabilistic-models"
+    ],
+    "status": "needs-source"
+  }
+]

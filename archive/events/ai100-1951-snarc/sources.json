@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-snarc-history-overview",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "SNARC 历史概览",
+      "en": "SNARC history overview"
+    },
+    "url": "https://history-computer.com/snarc/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-history-of-ai-snarc-article",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "History of AI 的 SNARC 文章",
+      "en": "History of AI SNARC article"
+    },
+    "url": "https://historyof.ai/snarc/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-stochastic-neural-analog-reinforcement-calculator-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Context"
+    },
+    "title": {
+      "zh": "随机神经模拟强化计算机概览",
+      "en": "Stochastic Neural Analog Reinforcement Calculator overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-history-of-information-snarc-entry",
+    "type": "reference-only",
+    "label": {
+      "zh": "回顾",
+      "en": "Retrospective"
+    },
+    "title": {
+      "zh": "History of Information 的 SNARC 条目",
+      "en": "History of Information SNARC entry"
+    },
+    "url": "https://www.historyofinformation.com/detail.php?id=3884",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

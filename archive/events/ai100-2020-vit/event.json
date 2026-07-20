@@ -1,0 +1,66 @@
+{
+  "id": "ai100-2020-vit",
+  "year": 2020,
+  "date": "2020",
+  "title": {
+    "zh": "视觉 Transformer",
+    "en": "Vision Transformer"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>",
+    "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国山景城",
+      "en": "Mountain View, United States"
+    },
+    "place": {
+      "zh": "Google 研究院",
+      "en": "Google Research"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "alexey-dosovitskiy",
+      "role": {
+        "zh": "视觉 Transformer 主要作者",
+        "en": "Lead author of Vision Transformer"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "google-research",
+      "role": {
+        "zh": "研究机构",
+        "en": "Research organization"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

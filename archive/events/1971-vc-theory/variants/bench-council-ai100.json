@@ -1,0 +1,253 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1971-vc-theory",
+  "displayTitle": {
+    "zh": "VC 理论",
+    "en": "VC Theory"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "transcript",
+  "assetIds": [
+    "asset-1971-vc-theory-vladimir-vapnik",
+    "asset-1971-vc-theory-generalization"
+  ],
+  "sourceIds": [
+    "source-on-the-uniform-convergence-of-relative-frequencies",
+    "source-the-nature-of-statistical-learning-theory",
+    "source-an-overview-of-statistical-learning-theory"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1971-vc-theory-ai100",
+  "commentarySections": [
+    {
+      "id": "published-paper",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "瓦普尼克 和 切尔沃年基斯 1971 年论文把泛化变成了关于一整类事件或假设上一致收敛的数学问题。瓦普尼克 1995 年著作随后系统总结了统计学习理论框架。",
+        "en": "The 1971 Vapnik-Chervonenkis paper made generalization a mathematical question about uniform convergence across a whole class of events or hypotheses. Vapnik's 1995 book later synthesized the framework for statistical learning theory."
+      },
+      "sourceIds": [
+        "source-on-the-uniform-convergence-of-relative-frequencies"
+      ]
+    },
+    {
+      "id": "capacity-logic",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "关键展示点是“拟合样本”和“在未见数据上表现”之间的差距。VC 维提供了一种方法，用来理解模型灵活性何时有帮助、何时会带来过拟合风险。",
+        "en": "The key display idea is the gap between fitting examples and performing on unseen data. VC dimension gives a way to reason about when model flexibility helps and when it becomes overfitting risk."
+      },
+      "sourceIds": [
+        "source-on-the-uniform-convergence-of-relative-frequencies"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 VC 理论视为机器学习的数学基础之一，同时也指出经典界对现代深度网络可能偏保守。它的长期影响在于为模型容量、泛化能力和有限样本学习提供了共同语言。",
+        "en": "Experts generally treat VC theory as one of the mathematical foundations of machine learning, while noting that classical bounds can be conservative for modern deep networks. Its long-term legacy is the language it gave researchers for model capacity, generalization, and learning from finite samples."
+      },
+      "sourceIds": [
+        "source-on-the-uniform-convergence-of-relative-frequencies"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Vladimir N. Vapnik",
+        "zh": "弗拉基米尔·N·瓦普尼克"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Alexey Ya. Chervonenkis",
+        "zh": "阿列克谢·雅·切尔沃年基斯"
+      },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Statistical learning theory was introduced in the late 1960's.\"",
+    "zh": "\"统计学习理论是在 20 世纪 60 年代末提出的。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "An Overview of Statistical Learning Theory",
+      "zh": "统计学习理论概览"
+    },
+    "workAuthors": {
+      "en": "Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+      "zh": "弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18252602/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Theory / VC theory",
+    "zh": "BenchCouncil AI100：理论 / VC 理论"
+  },
+  "quoteAttribution": {
+    "en": "<em>An Overview of Statistical Learning Theory</em>, Vladimir N. Vapnik, IEEE Transactions on Neural Networks, 1999",
+    "zh": "《统计学习理论概览》, 弗拉基米尔·N·瓦普尼克, 《IEEE 神经网络汇刊》, 1999"
+  },
+  "achievement": {
+    "area": {
+      "en": "Theory",
+      "zh": "理论"
+    },
+    "method": {
+      "en": "Statistical learning",
+      "zh": "统计学习"
+    },
+    "artifact": {
+      "en": "VC dimension",
+      "zh": "VC 维"
+    },
+    "material": {
+      "en": "Paper + book + overview",
+      "zh": "论文 + 著作 + 综述"
+    },
+    "demo": {
+      "en": "Capacity vs generalization",
+      "zh": "容量与泛化"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "VC Dimension",
+          "zh": "VC 维"
+        },
+        "text": {
+          "en": "VC dimension measures how flexible a class of classifiers is. A high-capacity class can fit many label patterns, so it usually needs more data to generalize reliably.",
+          "zh": "VC 维衡量一类分类器有多灵活。容量越高，越能拟合多种标签模式，通常也需要更多数据才能可靠泛化。"
+        }
+      },
+      {
+        "label": {
+          "en": "Uniform Convergence",
+          "zh": "一致收敛"
+        },
+        "text": {
+          "en": "Uniform convergence asks whether training-sample measurements stay close to true probabilities across a whole model class. This bridges training performance and expected test performance.",
+          "zh": "一致收敛关注训练样本上的测量是否能在整个模型类上接近真实概率。它连接了训练表现和预期测试表现。"
+        }
+      },
+      {
+        "label": {
+          "en": "Structural Risk Minimization",
+          "zh": "结构风险最小化"
+        },
+        "text": {
+          "en": "Structural risk minimization balances training error against model capacity. It explains why the best learner is not always the one that fits the training data most tightly.",
+          "zh": "结构风险最小化在训练误差和模型容量之间取平衡。它说明最好的学习器不一定是最贴合训练数据的那个。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Complexity theory",
+        "zh": "计算复杂性理论"
+      },
+      {
+        "en": "Support vector machines",
+        "zh": "支持向量机"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Russia",
+        "zh": "俄罗斯"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "SIAM",
+        "title": {
+          "en": "On the Uniform Convergence of Relative Frequencies",
+          "zh": "《相对频率的一致收敛》"
+        },
+        "description": {
+          "en": "Official SIAM page for the English version of the 1971 Vapnik-Chervonenkis paper.",
+          "zh": "SIAM 官方页面，收录 瓦普尼克-切尔沃年基斯 1971 年论文的英文版本。"
+        },
+        "url": "https://epubs.siam.org/doi/10.1137/1116025",
+        "source": "https://epubs.siam.org/doi/10.1137/1116025",
+        "license": {
+          "en": "SIAM publication page; reuse requires checking SIAM rights.",
+          "zh": "SIAM 出版页面；复用需要核查 SIAM 权利条款。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open SIAM paper",
+          "zh": "打开 SIAM 论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Institute of Control Sciences, Moscow",
+      "zh": "莫斯科控制科学研究所"
+    },
+    "country": {
+      "en": "Moscow, Russia",
+      "zh": "俄罗斯，莫斯科"
+    },
+    "coordinates": [
+      55.7558,
+      37.6173
+    ]
+  }
+}

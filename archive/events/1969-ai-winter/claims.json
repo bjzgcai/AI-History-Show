@@ -1,0 +1,26 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "第一次寒冬的到来 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "The First AI Winter Arrives is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-legacy-event-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
+      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+    },
+    "sourceIds": [
+      "source-legacy-event-record"
+    ],
+    "status": "needs-source"
+  }
+]

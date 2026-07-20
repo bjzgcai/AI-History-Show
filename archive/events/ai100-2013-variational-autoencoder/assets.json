@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2013-vae-latent-sampling",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "变分自编码器 解释图",
+      "en": "Variational Autoencoder explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-auto-encoding-variational-bayes",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2013-variational-autoencoder-portrait",
+    "type": "image",
+    "path": "https://dpkingma.com/files/portrait.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "变分自编码器 外部参考图",
+      "en": "Variational Autoencoder external reference image"
+    },
+    "sourceId": "source-auto-encoding-variational-bayes",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://dpkingma.com/files/portrait.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-conditional-generative-adversarial-nets",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《条件生成对抗网络》",
+      "en": "Conditional Generative Adversarial Nets"
+    },
+    "url": "https://arxiv.org/abs/1411.1784",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-generative-adversarial-network-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "生成对抗网络概览",
+      "en": "Generative adversarial network overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-generative-adversarial-nets",
+    "type": "paper",
+    "label": {
+      "zh": "相关论文",
+      "en": "Related paper"
+    },
+    "title": {
+      "zh": "《生成对抗网络》",
+      "en": "Generative Adversarial Nets"
+    },
+    "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

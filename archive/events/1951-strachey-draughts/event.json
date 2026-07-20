@@ -1,0 +1,58 @@
+{
+  "id": "1951-strachey-draughts",
+  "year": "1951-1952",
+  "date": "1951-1952",
+  "title": {
+    "zh": "克里斯托弗·斯特雷奇 的跳棋程序",
+    "en": "Christopher Strachey's Draughts"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
+    "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国特丁顿",
+      "en": "Teddington, United Kingdom"
+    },
+    "place": {
+      "zh": "英国国家物理实验室",
+      "en": "National Physical Laboratory"
+    },
+    "coordinates": [
+      51.4245,
+      -0.3426
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "christopher-strachey",
+      "role": {
+        "zh": "早期跳棋程序开发者",
+        "en": "Developer of the early draughts program"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

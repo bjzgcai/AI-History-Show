@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-open-library-book-metadata",
+    "type": "book",
+    "label": {
+      "zh": "图书元数据",
+      "en": "Book metadata"
+    },
+    "title": {
+      "zh": "Open Library 图书元数据",
+      "en": "Open Library book metadata"
+    },
+    "url": "https://openlibrary.org/works/OL27258W",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-open-library-metadata-search-result",
+    "type": "reference-only",
+    "label": {
+      "zh": "书目核验",
+      "en": "Bibliographic verification"
+    },
+    "title": {
+      "zh": "Open Library 元数据检索结果",
+      "en": "Open Library metadata search result"
+    },
+    "url": "https://openlibrary.org/search.json?title=Neuromancer&author=William%20Gibson",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-science-fiction-encyclopedia-gibson",
+    "type": "reference-only",
+    "label": {
+      "zh": "作者参考",
+      "en": "Author reference"
+    },
+    "title": {
+      "zh": "《科幻百科全书》吉布森条目",
+      "en": "Science Fiction Encyclopedia: Gibson"
+    },
+    "url": "https://www.sf-encyclopedia.com/entry/gibson_william",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-neuromancer-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "《神经漫游者》概览",
+      "en": "Neuromancer overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Neuromancer",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

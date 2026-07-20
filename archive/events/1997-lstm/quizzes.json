@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1997-lstm-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "LSTM 单元用什么保留长程序列信息？",
+      "en": "What does an LSTM cell use to preserve long-range sequence information?"
+    },
+    "options": [
+      {
+        "zh": "门控和持久记忆状态",
+        "en": "Gates and a persistent memory state"
+      },
+      {
+        "zh": "只有最近邻投票",
+        "en": "Only a nearest-neighbor vote"
+      },
+      {
+        "zh": "固定棋类开局",
+        "en": "A fixed chess opening"
+      },
+      {
+        "zh": "化学质谱",
+        "en": "A chemical mass spectrum"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "LSTM 用门决定写入、保留和输出哪些记忆。",
+      "en": "LSTM regulates memory with gates that decide what to write, keep, and expose."
+    },
+    "sourceIds": [
+      "source-long-short-term-memory"
+    ],
+    "assetIds": [
+      "asset-sepp-hochreiter"
+    ]
+  }
+]

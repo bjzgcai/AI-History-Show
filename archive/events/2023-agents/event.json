@@ -1,0 +1,74 @@
+{
+  "id": "2023-agents",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "zh": "智能体：LLM驱动的自主系统",
+    "en": "Agents: LLM-Driven Autonomous Systems"
+  },
+  "summary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "description": {
+    "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
+    "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "多个机构",
+      "en": "Global"
+    },
+    "place": {
+      "zh": "全球研究",
+      "en": "Global AI Labs"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "topics": [
+    "deep-learning"
+  ],
+  "achievementTypeIds": [
+    "deep-learning"
+  ],
+  "figures": [
+    {
+      "figureId": "stuart-russell",
+      "role": {
+        "zh": "智能体理论奠基人",
+        "en": "Founder of Agent Theory"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "peter-norvig",
+      "role": {
+        "zh": "《人工智能：一种现代方法》作者",
+        "en": "AIMA author"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "michael-wooldridge",
+      "role": {
+        "zh": "多智能体系统专家",
+        "en": "Expert in Multi-Agent Systems"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

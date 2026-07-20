@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "生成对抗网络 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Generative Adversarial Networks is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-generative-adversarial-nets",
+      "source-neurips-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
+      "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+    },
+    "sourceIds": [
+      "source-generative-adversarial-nets",
+      "source-neurips-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

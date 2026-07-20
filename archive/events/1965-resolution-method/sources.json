@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-a-machine-oriented-logic-based-on-the-resolution-principle",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "基于归结原理的机器导向逻辑",
+      "en": "A Machine-Oriented Logic Based on the Resolution Principle"
+    },
+    "url": "https://doi.org/10.1145/321250.321253",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-journal-of-symbolic-logic-review-record",
+    "type": "reference-only",
+    "label": {
+      "zh": "评述",
+      "en": "Review"
+    },
+    "title": {
+      "zh": "Journal of Symbolic Logic review record",
+      "en": "Journal of Symbolic Logic review record"
+    },
+    "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-stanford-encyclopedia-automated-reasoning",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "斯坦福大学 Encyclopedia: Automated Reasoning",
+      "en": "Stanford Encyclopedia: Automated Reasoning"
+    },
+    "url": "https://plato.stanford.edu/entries/reasoning-automated/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

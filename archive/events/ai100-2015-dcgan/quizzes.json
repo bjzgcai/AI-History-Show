@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2015-dcgan-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "DCGAN 的重要架构思想是什么？",
+      "en": "What architecture idea made DCGAN important?"
+    },
+    "options": [
+      {
+        "zh": "使用卷积式生成器和判别器网络",
+        "en": "Using convolutional generator and discriminator networks"
+      },
+      {
+        "zh": "用电子表格替代图像",
+        "en": "Replacing images with spreadsheets"
+      },
+      {
+        "zh": "移除所有学习特征",
+        "en": "Removing all learned features"
+      },
+      {
+        "zh": "只使用符号规则",
+        "en": "Using only symbolic rules"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DCGAN 为图像生成 GAN 提供了实用的卷积设计规则。",
+      "en": "DCGAN gave practical convolutional design rules for image-generating GANs."
+    },
+    "sourceIds": [
+      "source-unsupervised-representation-learning-with-deep-convolutional-gans"
+    ],
+    "assetIds": [
+      "asset-alec-radford"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Wasserstein GAN 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Wasserstein GAN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-wasserstein-generative-adversarial-networks",
+      "source-improved-training-of-wasserstein-gans"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。</p>",
+      "en": "<p>Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.</p>"
+    },
+    "sourceIds": [
+      "source-wasserstein-generative-adversarial-networks",
+      "source-improved-training-of-wasserstein-gans"
+    ],
+    "status": "needs-source"
+  }
+]

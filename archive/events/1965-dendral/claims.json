@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "DENDRAL 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "DENDRAL is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-applications-of-artificial-intelligence-for-chemical-inference",
+      "source-acm-turing-award-profile-for-edward-feigenbaum"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>",
+      "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>"
+    },
+    "sourceIds": [
+      "source-applications-of-artificial-intelligence-for-chemical-inference",
+      "source-acm-turing-award-profile-for-edward-feigenbaum"
+    ],
+    "status": "needs-source"
+  }
+]

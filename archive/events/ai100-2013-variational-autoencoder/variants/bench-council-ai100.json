@@ -1,0 +1,352 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2013-variational-autoencoder",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "变分自编码器",
+    "en": "Variational Autoencoder"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。</p>",
+    "en": "<p>The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "Auto-Encoding Variational Bayes",
+        "zh": "自动编码变分贝叶斯"
+      },
+      "description": {
+        "en": "arXiv source card for Variational Autoencoder.",
+        "zh": "arXiv 的变分自编码器资料卡片。"
+      },
+      "url": "https://arxiv.org/abs/1312.6114",
+      "source": "https://arxiv.org/abs/1312.6114",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-2013-variational-autoencoder-portrait",
+    "asset-2013-vae-latent-sampling"
+  ],
+  "sourceIds": [
+    "source-auto-encoding-variational-bayes",
+    "source-iclr-paper-record",
+    "source-variational-autoencoder-overview"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-2013-variational-autoencoder-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。",
+        "en": "The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent."
+      },
+      "sourceIds": [
+        "source-auto-encoding-variational-bayes"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-auto-encoding-variational-bayes"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 VAE 视为连接深度学习与概率推断的核心桥梁。它的长期影响在于潜变量训练模式被用于表示学习、生成建模和后来的扩散自编码器。",
+        "en": "Experts generally treat VAEs as a central bridge between deep learning and probabilistic inference. Its long-term legacy is the latent-variable training pattern used in representation learning, generation, and later diffusion autoencoders."
+      },
+      "sourceIds": [
+        "source-auto-encoding-variational-bayes"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Diederik Kingma",
+        "zh": "迪德里克·金马"
+      },
+      "role": {
+        "en": "Variational autoencoder co-author",
+        "zh": "变分自编码器共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Auto-encoding variational Bayes\"",
+    "zh": "\"自动编码变分贝叶斯\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Auto-Encoding Variational Bayes",
+      "zh": "自动编码变分贝叶斯"
+    },
+    "workAuthors": {
+      "en": "Diederik Kingma and Max Welling, ICLR, 2014",
+      "zh": "迪德里克·金马、马克斯·韦林，ICLR，2014"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1312.6114"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Auto-Encoding Variational Bayes</em>, Diederik Kingma and Max Welling, ICLR, 2014",
+    "zh": "《自动编码变分贝叶斯》, 迪德里克·金马、马克斯·韦林，ICLR，2014"
+  },
+  "achievement": {
+    "area": {
+      "en": "Generative modeling",
+      "zh": "生成式建模"
+    },
+    "method": {
+      "en": "Variational latent-variable learning",
+      "zh": "变分潜变量学习"
+    },
+    "artifact": {
+      "en": "Auto-Encoding Variational Bayes",
+      "zh": "自动编码变分贝叶斯"
+    },
+    "material": {
+      "en": "ICLR paper and reparameterization trick",
+      "zh": "ICLR 论文与重参数化技巧"
+    },
+    "demo": {
+      "en": "The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data.",
+      "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Latent Distribution",
+          "zh": "潜变量分布"
+        },
+        "text": {
+          "en": "The encoder predicts mean and variance.",
+          "zh": "编码器预测均值和方差。"
+        }
+      },
+      {
+        "label": {
+          "en": "Reparameterization",
+          "zh": "重参数化"
+        },
+        "text": {
+          "en": "Sampling is written so gradients can flow.",
+          "zh": "采样被改写为可传递梯度的形式。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": {
+          "en": "GAN",
+          "zh": "GAN"
+        },
+        "zh": {
+          "en": "GAN",
+          "zh": "GAN"
+        }
+      },
+      {
+        "en": {
+          "en": "Diffusion Model",
+          "zh": "扩散模型"
+        },
+        "zh": {
+          "en": "Diffusion Model",
+          "zh": "扩散模型"
+        }
+      },
+      {
+        "en": {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        },
+        "zh": {
+          "en": "Neural Language Model",
+          "zh": "神经语言模型"
+        }
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": {
+          "en": "Netherlands",
+          "zh": "荷兰"
+        },
+        "zh": {
+          "en": "Netherlands",
+          "zh": "荷兰"
+        }
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": {
+          "en": "Encode",
+          "zh": "编码"
+        },
+        "zh": {
+          "en": "Encode",
+          "zh": "编码"
+        }
+      },
+      {
+        "en": {
+          "en": "Sample latent",
+          "zh": "采样潜变量"
+        },
+        "zh": {
+          "en": "Sample latent",
+          "zh": "采样潜变量"
+        }
+      },
+      {
+        "en": {
+          "en": "Decode",
+          "zh": "解码"
+        },
+        "zh": {
+          "en": "Decode",
+          "zh": "解码"
+        }
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper and reparameterization trick",
+          "zh": "ICLR 论文与重参数化技巧"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "The encoder predicts a latent distribution, a sample is drawn through a differentiable path, and the decoder reconstructs or generates data.",
+          "zh": "编码器预测潜变量分布，样本通过可微路径抽取，解码器重建或生成数据。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Auto-Encoding Variational Bayes",
+          "zh": "自动编码变分贝叶斯"
+        },
+        "description": {
+          "en": "arXiv source card for Variational Autoencoder.",
+          "zh": "arXiv 的变分自编码器资料卡片。"
+        },
+        "url": "https://arxiv.org/abs/1312.6114",
+        "source": "https://arxiv.org/abs/1312.6114",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Amsterdam",
+      "zh": "University of Amsterdam"
+    },
+    "country": {
+      "en": "Amsterdam, Netherlands",
+      "zh": "Amsterdam, Netherlands"
+    },
+    "coordinates": [
+      52.3676,
+      4.9041
+    ]
+  }
+}

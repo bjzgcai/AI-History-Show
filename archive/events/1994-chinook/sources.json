@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-chinook-project-home",
+    "type": "project-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "Chinook 项目主页",
+      "en": "Chinook project home"
+    },
+    "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-checkers-is-solved",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "跳棋已被求解",
+      "en": "Checkers Is Solved"
+    },
+    "url": "https://www.science.org/doi/10.1126/science.1144079",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-chinook-publications",
+    "type": "reference-only",
+    "label": {
+      "zh": "论文列表",
+      "en": "Publications"
+    },
+    "title": {
+      "zh": "Chinook 论文列表",
+      "en": "Chinook publications"
+    },
+    "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-jonathan-schaeffer-portrait",
+    "type": "reference-only",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "乔纳森·谢弗 人物照片",
+      "en": "Jonathan Schaeffer portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

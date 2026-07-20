@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Conditional GAN 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Conditional GAN is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-conditional-generative-adversarial-nets",
+      "source-generative-adversarial-network-overview"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>",
+      "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>"
+    },
+    "sourceIds": [
+      "source-conditional-generative-adversarial-nets",
+      "source-generative-adversarial-network-overview"
+    ],
+    "status": "needs-source"
+  }
+]

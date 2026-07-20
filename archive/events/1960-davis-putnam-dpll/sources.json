@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-a-computing-procedure-for-quantification-theory",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "量词理论的计算过程",
+      "en": "A Computing Procedure for Quantification Theory"
+    },
+    "url": "https://dl.acm.org/doi/10.1145/321033.321034",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
+      "en": "Primary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-a-machine-program-for-theorem-proving",
+    "type": "program",
+    "label": {
+      "zh": "程序",
+      "en": "Program"
+    },
+    "title": {
+      "zh": "用于定理证明的机器程序",
+      "en": "A machine program for theorem-proving"
+    },
+    "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  },
+  {
+    "id": "source-wikimedia-commons-hilary-putnam",
+    "type": "photo",
+    "label": {
+      "zh": "照片",
+      "en": "Photo"
+    },
+    "title": {
+      "zh": "维基共享资源: 希拉里·普特南",
+      "en": "Wikimedia Commons: Hilary Putnam"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
+      "en": "Supplementary source migrated from legacy AI100 achievement sources."
+    }
+  }
+]

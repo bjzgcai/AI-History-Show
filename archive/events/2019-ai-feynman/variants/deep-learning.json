@@ -1,0 +1,152 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2019-ai-feynman",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "AI Feynman：自主科学规律发现",
+    "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+  },
+  "displaySummary": {
+    "zh": "大模型与科学智能",
+    "en": "Large Models and Scientific Intelligence"
+  },
+  "displayDescription": {
+    "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
+    "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery."
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visualModules": [],
+  "assetIds": [
+    "asset-2019-ai-feynman-people-01",
+    "asset-2019-ai-feynman-historical-01",
+    "asset-2019-ai-feynman-papers-01",
+    "asset-2019-ai-feynman-papers-02"
+  ],
+  "sourceIds": [
+    "source-legacy-event-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "background",
+      "label": {
+        "zh": "背景解读",
+        "en": "Background"
+      },
+      "html": {
+        "zh": "AI Feynman 的思路很有代表性：它没有把符号回归完全交给暴力搜索，而是引入对称性、量纲分析等物理先验，缩小候选空间，让“机器发现公式”从玩具问题走向真实规律重建。",
+        "en": "AI Feynman's approach is representative because it did not leave symbolic regression entirely to brute-force search. By adding physical priors such as symmetry and dimensional analysis, it narrowed the candidate space and moved machine formula discovery from toy problems toward reconstructing real laws."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "zh": "延展说明",
+        "en": "Context"
+      },
+      "html": {
+        "zh": "这类系统的重要价值在于可解释性。与只给出预测结果的黑盒模型相比，AI Feynman 直接输出人类可读的方程，因此它更像是“可交付给科学共同体”的中间发现工具。",
+        "en": "The value of such systems lies in interpretability. Unlike black-box models that only return predictions, AI Feynman outputs human-readable equations, making it more like an intermediate discovery tool that can be handed to the scientific community."
+      },
+      "sourceIds": [
+        "source-legacy-event-record"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "Large Models and Scientific Intelligence",
+    "zh": "大模型与科学智能"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Max Tegmark",
+        "zh": "马克斯·泰格马克"
+      },
+      "role": {
+        "en": "AI Feynman author",
+        "zh": "AI Feynman作者"
+      },
+      "avatar": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+        "url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2019AI_Feynman%EF%BC%9A%E7%A0%B4%E8%A7%A3%E5%AE%87%E5%AE%99%E7%9A%84%E5%AF%86%E7%A0%81.mp4",
+        "title": "2019AI_Feynman：破解宇宙的密码",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"AI Feynman combined neural-network fitting with physics-inspired constraints to recover symbolic equations from data, pointing toward AI-assisted scientific discovery.\"",
+    "zh": "\"AI Feynman 将神经网络拟合与受物理启发的约束结合起来，从数据中恢复符号方程，指向 AI 辅助科学发现的路径。\""
+  },
+  "quoteMeta": {
+    "speaker": {
+      "en": "Silviu-Marian Udrescu, Max Tegmark",
+      "zh": "西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+    },
+    "workTitle": {
+      "en": "AI Feynman: a physics-inspired method for symbolic regression",
+      "zh": "AI Feynman：受物理启发的符号回归方法"
+    },
+    "workAuthors": {
+      "en": "Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
+      "zh": "Silviu-Marian Udrescu、马克斯·泰格马克，Science Advances，2020"
+    },
+    "sourceLabel": {
+      "en": "Science Advances paper DOI page",
+      "zh": "Science Advances 论文 DOI 页面"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/sciadv.aay2631"
+  },
+  "quotePage": {
+    "en": "Science Advances paper: AI Feynman",
+    "zh": "Science Advances 论文《AI Feynman》"
+  },
+  "quoteAttribution": {
+    "en": "<em>AI Feynman: a physics-inspired method for symbolic regression</em>, Silviu-Marian Udrescu and Max Tegmark, Science Advances, 2020",
+    "zh": "《AI Feynman：一种受物理启发的符号回归方法》，西尔维乌-马里安·乌德雷斯库、马克斯·泰格马克"
+  },
+  "location": {
+    "name": {
+      "en": "MIT",
+      "zh": "麻省理工学院"
+    },
+    "country": {
+      "en": "MA, United States",
+      "zh": "美国, 马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  }
+}

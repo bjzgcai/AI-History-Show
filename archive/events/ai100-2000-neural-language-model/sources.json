@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-a-neural-probabilistic-language-model",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《神经概率语言模型》",
+      "en": "A Neural Probabilistic Language Model"
+    },
+    "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-jmlr-full-paper-pdf",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "JMLR 完整论文 PDF",
+      "en": "JMLR full paper PDF"
+    },
+    "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-dblp-record",
+    "type": "reference-only",
+    "label": {
+      "zh": "论文索引",
+      "en": "Publication index"
+    },
+    "title": {
+      "zh": "DBLP 论文记录",
+      "en": "DBLP record"
+    },
+    "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-yoshua-bengio-profile-at-mila",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物",
+      "en": "People"
+    },
+    "title": {
+      "zh": "Mila 的约书亚·本吉奥资料",
+      "en": "Yoshua Bengio profile at Mila"
+    },
+    "url": "https://mila.quebec/en/directory/yoshua-bengio",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

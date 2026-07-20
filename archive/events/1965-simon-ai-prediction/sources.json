@@ -1,0 +1,97 @@
+[
+  {
+    "id": "source-open-library-book-metadata",
+    "type": "book",
+    "label": {
+      "zh": "图书元数据",
+      "en": "Book metadata"
+    },
+    "title": {
+      "zh": "Open Library 图书元数据",
+      "en": "Open Library book metadata"
+    },
+    "url": "https://openlibrary.org/works/OL1205034W",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-open-library-metadata-search-result",
+    "type": "reference-only",
+    "label": {
+      "zh": "书目核验",
+      "en": "Bibliographic verification"
+    },
+    "title": {
+      "zh": "Open Library 元数据检索结果",
+      "en": "Open Library metadata search result"
+    },
+    "url": "https://openlibrary.org/search.json?title=The%20Shape%20of%20Automation%20for%20Men%20and%20Management&author=Herbert%20Simon",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-herbert-a-simon-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "人物参考",
+      "en": "Biographical reference"
+    },
+    "title": {
+      "zh": "赫伯特·A·西蒙概览",
+      "en": "Herbert A. Simon overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Herbert_A._Simon",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-nobel-prize-simon-facts",
+    "type": "reference-only",
+    "label": {
+      "zh": "机构人物资料",
+      "en": "Institutional profile"
+    },
+    "title": {
+      "zh": "诺贝尔奖西蒙资料",
+      "en": "Nobel Prize Simon facts"
+    },
+    "url": "https://www.nobelprize.org/prizes/economic-sciences/1978/simon/facts/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-progress-in-artificial-intelligence-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手史料",
+      "en": "Secondary history"
+    },
+    "title": {
+      "zh": "人工智能进展概览",
+      "en": "Progress in artificial intelligence overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Progress_in_artificial_intelligence",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

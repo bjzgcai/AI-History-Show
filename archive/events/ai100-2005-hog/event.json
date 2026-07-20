@@ -1,0 +1,66 @@
+{
+  "id": "ai100-2005-hog",
+  "year": 2005,
+  "date": "2005",
+  "title": {
+    "zh": "HOG 方向梯度直方图",
+    "en": "HOG"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>",
+    "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>"
+  },
+  "location": {
+    "regionId": "france",
+    "country": {
+      "zh": "法国格勒诺布尔",
+      "en": "Grenoble, France"
+    },
+    "place": {
+      "zh": "INRIA",
+      "en": "INRIA"
+    },
+    "coordinates": [
+      45.1938,
+      5.7681
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "navneet-dalal",
+      "role": {
+        "zh": "HOG 共同作者",
+        "en": "Co-author of HOG"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "bill-triggs",
+      "role": {
+        "zh": "HOG 共同作者",
+        "en": "Co-author of HOG"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

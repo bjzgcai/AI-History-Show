@@ -1,0 +1,66 @@
+{
+  "id": "2013-dqn",
+  "year": "2013",
+  "date": "2013",
+  "title": {
+    "zh": "深度 Q 网络",
+    "en": "Deep Q Network"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
+    "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "zh": "英国伦敦",
+      "en": "London, United Kingdom"
+    },
+    "place": {
+      "zh": "DeepMind",
+      "en": "DeepMind"
+    },
+    "coordinates": [
+      51.523,
+      -0.128
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "volodymyr-mnih",
+      "role": {
+        "zh": "DQN 工作第一作者",
+        "en": "First author of DQN work"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "david-silver",
+      "role": {
+        "zh": "DeepMind 强化学习研究者",
+        "en": "DeepMind reinforcement learning researcher"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

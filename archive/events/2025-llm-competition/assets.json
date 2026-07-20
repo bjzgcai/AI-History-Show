@@ -1,0 +1,106 @@
+[
+  {
+    "id": "asset-2025-llm-competition-historical-01",
+    "type": "image",
+    "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+    "role": "hero-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "大语言模型百花齐放",
+      "en": "A Flourishing Competition Among Large Language Models"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2025-llm-competition-architecture-01",
+    "type": "image",
+    "path": "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "结构示意",
+      "en": "Architecture"
+    },
+    "subcaption": {
+      "zh": "大语言模型百花齐放 架构图",
+      "en": "A Flourishing Competition Among Large Language Models"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "local-redraw",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2025-llm-competition-historical-02",
+    "type": "image",
+    "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "大语言模型百花齐放",
+      "en": "A Flourishing Competition Among Large Language Models"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2025-llm-competition-historical-03",
+    "type": "image",
+    "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png",
+    "role": "supporting-image",
+    "caption": {
+      "zh": "历史照片",
+      "en": "Historical photo"
+    },
+    "subcaption": {
+      "zh": "大语言模型百花齐放",
+      "en": "A Flourishing Competition Among Large Language Models"
+    },
+    "sourceId": "source-legacy-event-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Migrated from legacy media metadata; verify rights before publication.",
+        "en": "Migrated from legacy media metadata; verify rights before publication."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  }
+]

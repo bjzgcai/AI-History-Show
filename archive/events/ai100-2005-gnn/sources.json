@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-the-graph-neural-network-model",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《图神经网络模型》",
+      "en": "The Graph Neural Network Model"
+    },
+    "url": "https://doi.org/10.1109/TNN.2008.2005605",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-a-new-model-for-learning-in-graph-domains",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《一种用于图领域学习的新模型》",
+      "en": "A new model for learning in graph domains"
+    },
+    "url": "https://ieeexplore.ieee.org/document/4700287",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-graph-neural-network-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "图神经网络概览",
+      "en": "Graph neural network overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Graph_neural_network",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-guardian-on-musk-remarks",
+    "type": "reference-only",
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "title": {
+      "zh": "Guardian 马斯克言论报道",
+      "en": "Guardian on Musk remarks"
+    },
+    "url": "https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-bbc-on-hawking-warning",
+    "type": "reference-only",
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "title": {
+      "zh": "BBC 霍金警告报道",
+      "en": "BBC on Hawking warning"
+    },
+    "url": "https://www.bbc.com/news/technology-30290540",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-future-of-life-institute-open-letter",
+    "type": "reference-only",
+    "label": {
+      "zh": "公开信",
+      "en": "Public letter"
+    },
+    "title": {
+      "zh": "未来生命研究所公开信",
+      "en": "Future of Life Institute open letter"
+    },
+    "url": "https://futureoflife.org/open-letter/ai-open-letter/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-expert-ai-forecast-survey",
+    "type": "paper",
+    "label": {
+      "zh": "研究论文",
+      "en": "Research paper"
+    },
+    "title": {
+      "zh": "AI 专家预测调查",
+      "en": "Expert AI forecast survey"
+    },
+    "url": "https://arxiv.org/abs/1705.08807",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

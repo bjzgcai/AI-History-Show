@@ -1,0 +1,74 @@
+[
+  {
+    "id": "source-transformer-arxiv",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Attention Is All You Need》",
+      "en": "Attention Is All You Need"
+    },
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "Lukasz Kaiser",
+      "Illia Polosukhin"
+    ],
+    "year": 2017,
+    "url": "https://arxiv.org/abs/1706.03762",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-transformer-neurips",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "NeurIPS 论文页面",
+      "en": "NeurIPS paper page"
+    },
+    "year": 2017,
+    "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-google-research-publication",
+    "type": "official-page",
+    "label": {
+      "zh": "出版页",
+      "en": "Publication"
+    },
+    "title": {
+      "zh": "Google Research 出版页面",
+      "en": "Google Research publication page"
+    },
+    "url": "https://research.google/pubs/attention-is-all-you-need/",
+    "language": "en",
+    "reliability": "primary"
+  },
+  {
+    "id": "source-google-transformer-blog",
+    "type": "official-page",
+    "label": {
+      "zh": "回顾",
+      "en": "Retrospective"
+    },
+    "title": {
+      "zh": "Google Research Transformer 博客",
+      "en": "Google Research Transformer blog post"
+    },
+    "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+    "language": "en",
+    "reliability": "secondary"
+  }
+]

@@ -1,0 +1,296 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1982-hopfield-network",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "Hopfield 网络",
+    "en": "Hopfield Network"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>",
+    "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "hopfield",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": "PNAS",
+      "title": {
+        "en": "Hopfield network paper",
+        "zh": "Hopfield 网络论文"
+      },
+      "description": {
+        "en": "Primary source for recurrent associative memory; local images redraw energy and attractor dynamics.",
+        "zh": "递归联想记忆的原始来源；本地图重画能量与吸引子动力学。"
+      },
+      "url": "https://doi.org/10.1073/pnas.79.8.2554",
+      "source": "https://doi.org/10.1073/pnas.79.8.2554",
+      "license": {
+        "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Literature reference link",
+        "zh": "文献参考链接"
+      },
+      "action": {
+        "en": "Open PNAS DOI",
+        "zh": "打开 PNAS DOI"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1982-hopfield-network-john-hopfield",
+    "asset-1982-hopfield-network-energy-basin",
+    "asset-1982-hopfield-network-memory-grid"
+  ],
+  "sourceIds": [
+    "source-neural-networks-and-physical-systems",
+    "source-nobel-prize-john-j-hopfield-facts",
+    "source-princeton-neuroscience-institute-profile"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1982-hopfield-network-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "在深度学习之前，研究者已经在追问大量简单单元如何集体计算。Hopfield 给这个问题提供了基于能量的表述。",
+        "en": "Before deep learning, researchers were already asking how large sets of simple units could compute collectively. Hopfield gave this question an energy-based formulation."
+      },
+      "sourceIds": [
+        "source-neural-networks-and-physical-systems"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "网络更新单元以降低能量函数，因此被存储的记忆会成为稳定吸引子。 关键机制是吸引子动力学与能量最小化，它把资料线索与可见的演示行为连接起来。",
+        "en": "The network updates units to reduce an energy function, so stored memories become stable attractors. The key mechanism is Attractor dynamics and energy minimization, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-neural-networks-and-physical-systems"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Hopfield 网络视为基于能量的神经计算史中的核心成果。它的长期影响在于连接了记忆、优化、吸引子动力学和统计物理。",
+        "en": "Experts generally treat Hopfield networks as central to the history of energy-based neural computation. Their long-term legacy is the connection between memory, optimization, attractor dynamics, and statistical physics."
+      },
+      "sourceIds": [
+        "source-neural-networks-and-physical-systems"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John J. Hopfield",
+        "zh": "约翰·J·霍普菲尔德"
+      },
+      "role": {
+        "en": "Inventor of Hopfield networks",
+        "zh": "Hopfield 网络提出者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"neural networks and physical systems\"",
+    "zh": "\"神经网络与物理系统\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+      "zh": "具有涌现集体计算能力的神经网络与物理系统"
+    },
+    "workAuthors": {
+      "en": "John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "zh": "约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Neural Network / Hopfield network",
+    "zh": "BenchCouncil AI100：神经网络 / Hopfield 网络"
+  },
+  "quoteAttribution": {
+    "en": "<em>Neural Networks and Physical Systems with Emergent Collective Computational Abilities</em>, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+    "zh": "《具有涌现集体计算能力的神经网络与物理系统》, 约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Attractor dynamics and energy minimization",
+      "zh": "吸引子动力学与能量最小化"
+    },
+    "artifact": {
+      "en": "Recurrent associative memory network",
+      "zh": "递归联想记忆网络"
+    },
+    "material": {
+      "en": "PNAS paper and Nobel Prize profile",
+      "zh": "PNAS 论文与诺贝尔奖人物资料"
+    },
+    "demo": {
+      "en": "Noisy pattern settles into a stored memory",
+      "zh": "带噪模式收敛到已存记忆"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Attractor",
+          "zh": "吸引子"
+        },
+        "text": {
+          "en": "A stored pattern is a stable state that nearby noisy patterns tend to approach.",
+          "zh": "已存模式是稳定状态，附近的带噪模式倾向于靠近它。"
+        }
+      },
+      {
+        "label": {
+          "en": "Energy Function",
+          "zh": "能量函数"
+        },
+        "text": {
+          "en": "The network changes state in a direction that lowers energy.",
+          "zh": "网络沿着降低能量的方向改变状态。"
+        }
+      },
+      {
+        "label": {
+          "en": "Associative Memory",
+          "zh": "联想记忆"
+        },
+        "text": {
+          "en": "Partial or corrupted inputs can recover a complete stored pattern.",
+          "zh": "部分或损坏输入可以恢复完整存储模式。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Boltzmann machines",
+        "zh": "玻尔兹曼机"
+      },
+      {
+        "en": "Energy-based models",
+        "zh": "能量模型"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      },
+      {
+        "en": "Physics",
+        "zh": "物理学"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Attractor",
+        "zh": "吸引子"
+      },
+      {
+        "en": "Energy Function",
+        "zh": "能量函数"
+      },
+      {
+        "en": "Associative Memory",
+        "zh": "联想记忆"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "PNAS",
+        "title": {
+          "en": "Hopfield network paper",
+          "zh": "Hopfield 网络论文"
+        },
+        "description": {
+          "en": "Primary source for recurrent associative memory; local images redraw energy and attractor dynamics.",
+          "zh": "递归联想记忆的原始来源；本地图重画能量与吸引子动力学。"
+        },
+        "url": "https://doi.org/10.1073/pnas.79.8.2554",
+        "source": "https://doi.org/10.1073/pnas.79.8.2554",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open PNAS DOI",
+          "zh": "打开 PNAS DOI"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "California Institute of Technology",
+      "zh": "加州理工学院"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      34.1377,
+      -118.1253
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-1980-neocognitron-hierarchy",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "层级视觉网络",
+      "en": "Hierarchical visual layers"
+    },
+    "subcaption": {
+      "zh": "关于 Neocognitron 层级结构的本地原创解释图。",
+      "en": "Original local explainer of neocognitron hierarchy."
+    },
+    "sourceId": "source-neocognitron",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
+    "type": "image",
+    "path": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "新认知机 外部参考图",
+      "en": "Neocognitron external reference image"
+    },
+    "sourceId": "source-neocognitron",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

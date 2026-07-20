@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Pandemonium 感知架构 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Pandemonium is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-pandemonium-a-paradigm-for-learning",
+      "source-pandemonium-architecture-image"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>",
+      "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>"
+    },
+    "sourceIds": [
+      "source-pandemonium-a-paradigm-for-learning",
+      "source-pandemonium-architecture-image"
+    ],
+    "status": "needs-source"
+  }
+]

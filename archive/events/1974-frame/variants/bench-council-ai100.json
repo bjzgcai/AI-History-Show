@@ -1,0 +1,298 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1974-frame",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "框架",
+    "en": "Frame"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>",
+    "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "frame",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "MIT Media Lab course archive",
+        "zh": "麻省理工学院媒体实验室课程档案"
+      },
+      "title": {
+        "en": "A Framework for Representing Knowledge",
+        "zh": "表示知识的一种框架"
+      },
+      "description": {
+        "en": "Course-hosted copy of Minsky's frame proposal.",
+        "zh": "课程资料中保存的 明斯基 框架论文。"
+      },
+      "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+      "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+      "license": {
+        "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+        "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+      },
+      "usage": {
+        "en": "Source material image / Literature reference",
+        "zh": "原始材料入口 / 文献参考"
+      },
+      "action": {
+        "en": "Open paper PDF",
+        "zh": "打开论文 PDF"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1974-frame-marvin-minsky",
+    "asset-1974-frame-slot-card",
+    "asset-1974-frame-inheritance"
+  ],
+  "sourceIds": [
+    "source-a-framework-for-representing-knowledge",
+    "source-marvin-minsky-obituary-mit-news",
+    "source-frame-mit-ai-memo-bibliographic-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1974-frame-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "符号 AI 需要比扁平谓词列表更丰富的结构。框架为场景和概念提供可复用模板。",
+        "en": "Symbolic AI needed richer structures than flat predicate lists. Frames offered reusable templates for scenes and concepts."
+      },
+      "sourceIds": [
+        "source-a-framework-for-representing-knowledge"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "框架存储部件、角色、默认值和附加过程等槽；缺失信息可以由预期补齐。 关键机制是带默认值和继承的槽结构，它把资料线索与可见的演示行为连接起来。",
+        "en": "A frame stores slots such as parts, roles, defaults, and attached procedures; missing information can be filled by expectations. The key mechanism is Structured slots with defaults and inheritance, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-a-framework-for-representing-knowledge"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把框架视为符号 AI 中核心的知识表示思想。它的长期影响在于用类似对象的方式组织默认值、槽和继承，并影响了后来的知识库、模式和语义系统。",
+        "en": "Experts generally treat frames as a central knowledge-representation idea from symbolic AI. Their long-term legacy is the object-like organization of defaults, slots, and inheritance that influenced later knowledge bases, schemas, and semantic systems."
+      },
+      "sourceIds": [
+        "source-a-framework-for-representing-knowledge"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
+      "role": {
+        "en": "Author of the frame representation proposal",
+        "zh": "框架表示思想提出者"
+      },
+      "avatar": "resources/images/figures/marvin-minsky.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Structured slots with defaults and inheritance\"",
+    "zh": "\"带默认值和继承的槽结构\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "A Framework for Representing Knowledge",
+      "zh": "表示知识的一种框架"
+    },
+    "workAuthors": {
+      "en": "Marvin Minsky",
+      "zh": "马文·明斯基"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Knowledge representation / Frame",
+    "zh": "BenchCouncil AI100：知识表示 / 框架"
+  },
+  "quoteAttribution": {
+    "en": "<em>A Framework for Representing Knowledge</em>, Marvin Minsky",
+    "zh": "《表示知识的一种框架》, 马文·明斯基"
+  },
+  "achievement": {
+    "area": {
+      "en": "Knowledge representation",
+      "zh": "知识表示"
+    },
+    "method": {
+      "en": "Structured slots with defaults and inheritance",
+      "zh": "带默认值和继承的槽结构"
+    },
+    "artifact": {
+      "en": "Frame representation",
+      "zh": "框架知识表示"
+    },
+    "material": {
+      "en": "Minsky frame paper and MIT historical material",
+      "zh": "明斯基 框架论文与 麻省理工学院 史料"
+    },
+    "demo": {
+      "en": "Fill slots and inherit defaults for a situation",
+      "zh": "为情境填槽并继承默认值"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Slot",
+          "zh": "槽"
+        },
+        "text": {
+          "en": "A named field in a frame, such as color, owner, or expected part.",
+          "zh": "框架中的命名字段，例如颜色、拥有者或预期部件。"
+        }
+      },
+      {
+        "label": {
+          "en": "Default Value",
+          "zh": "默认值"
+        },
+        "text": {
+          "en": "A typical assumption used until evidence says otherwise.",
+          "zh": "在证据出现前使用的典型假设。"
+        }
+      },
+      {
+        "label": {
+          "en": "Inheritance",
+          "zh": "继承"
+        },
+        "text": {
+          "en": "Specific frames can reuse knowledge from more general frames.",
+          "zh": "具体框架可以复用更一般框架的知识。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "SHRDLU",
+        "zh": "SHRDLU"
+      },
+      {
+        "en": "Cyc",
+        "zh": "Cyc"
+      },
+      {
+        "en": "Knowledge representation",
+        "zh": "知识表示"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Massachusetts, United States",
+        "zh": "美国马萨诸塞州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Choose situation",
+        "zh": "选择情境"
+      },
+      {
+        "en": "Fill slots",
+        "zh": "填充槽"
+      },
+      {
+        "en": "Override defaults",
+        "zh": "覆盖默认值"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Media Lab course archive",
+          "zh": "麻省理工学院媒体实验室课程档案"
+        },
+        "title": {
+          "en": "A Framework for Representing Knowledge",
+          "zh": "表示知识的一种框架"
+        },
+        "description": {
+          "en": "Course-hosted copy of Minsky's frame proposal.",
+          "zh": "课程资料中保存的 明斯基 框架论文。"
+        },
+        "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "source": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse paper figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用论文图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open paper PDF",
+          "zh": "打开论文 PDF"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "MIT Artificial Intelligence Laboratory",
+      "zh": "麻省理工学院 人工智能实验室"
+    },
+    "country": {
+      "en": "Massachusetts, United States",
+      "zh": "美国马萨诸塞州"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  }
+}

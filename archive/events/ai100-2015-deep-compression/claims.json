@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "深度压缩 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Deep Compression is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-deep-compression",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>",
+      "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>"
+    },
+    "sourceIds": [
+      "source-deep-compression",
+      "source-iclr-openreview-record"
+    ],
+    "status": "needs-source"
+  }
+]

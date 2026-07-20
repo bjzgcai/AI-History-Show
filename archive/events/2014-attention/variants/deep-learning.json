@@ -1,0 +1,352 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2014-attention",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "带注意力机制的神经机器翻译",
+    "en": "Neural Machine Translation with Attention"
+  },
+  "displaySummary": {
+    "zh": "深度学习与范式归一",
+    "en": "Deep Learning and Unified Paradigms"
+  },
+  "displayDescription": {
+    "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
+    "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "attentionSeq",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+      },
+      "description": {
+        "en": "Open paper introducing learned attention for neural translation.",
+        "zh": "介绍神经翻译学习型注意力的开放论文。"
+      },
+      "url": "https://arxiv.org/abs/1409.0473",
+      "source": "https://arxiv.org/abs/1409.0473",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-geoffrey-hinton",
+    "asset-2014-attention-alignment",
+    "asset-2014-attention-architecture-01",
+    "asset-2014-attention-people-01"
+  ],
+  "sourceIds": [
+    "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "source-iclr-2015-paper-page",
+    "source-attention-mechanism-overview",
+    "source-yoshua-bengio-lab-profile"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出注意力机制，让神经翻译解码器能回看源句中的不同位置。这使对齐成为序列到序列建模中可学习、可微分的一部分。",
+        "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism that let a neural translation decoder look back at different source positions. This made alignment a learned, differentiable part of sequence-to-sequence modeling."
+      },
+      "sourceIds": [
+        "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把神经翻译中的注意力视为从循环编码器-解码器系统走向 Transformer 式架构的桥梁。它的长期影响在于让学习得到的令牌相关性成为语言、视觉和多模态 AI 的核心操作。",
+        "en": "Experts generally treat neural attention for translation as the bridge from recurrent encoder-decoder systems to transformer-style architectures. Its long-term legacy is making learned token-to-token relevance a central operation in language, vision, and multimodal AI."
+      },
+      "sourceIds": [
+        "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+    "zh": "深度学习与范式归一（2010年代至2020年代）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Dzmitry Bahdanau",
+        "zh": "兹米特里·巴赫达瑙"
+      },
+      "role": {
+        "en": "Lead author of neural attention paper",
+        "zh": "神经注意力论文主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
+        "url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
+        "title": "2014现代AI的突破：注意力机制",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"Bahdanau, Cho, and Bengio introduced attention for neural machine translation, allowing the decoder to focus on relevant source positions instead of relying on one fixed vector.\"",
+    "zh": "\"Bahdanau、Cho 和 Bengio 在神经机器翻译中引入注意力，使解码器能够关注相关源语言位置，而不再只依赖一个固定长度向量。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+      "zh": "通过联合学习对齐与翻译的神经机器翻译"
+    },
+    "workAuthors": {
+      "en": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
+      "zh": "Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1409.0473"
+  },
+  "quotePage": {
+    "en": "arXiv paper: Neural Machine Translation by Jointly Learning to Align and Translate",
+    "zh": "arXiv 论文《通过联合学习对齐与翻译的神经机器翻译》"
+  },
+  "quoteAttribution": {
+    "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
+    "zh": "《通过联合学习对齐与翻译的神经机器翻译》, Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural machine translation",
+      "zh": "神经机器翻译"
+    },
+    "method": {
+      "en": "Differentiable alignment attention",
+      "zh": "可微分对齐注意力"
+    },
+    "artifact": {
+      "en": "Additive attention mechanism",
+      "zh": "加性注意力机制"
+    },
+    "material": {
+      "en": "ICLR paper",
+      "zh": "ICLR 论文"
+    },
+    "demo": {
+      "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
+      "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Alignment",
+          "zh": "对齐"
+        },
+        "text": {
+          "en": "The model learns which source words matter for a target word.",
+          "zh": "模型学习目标词对应哪些源词。"
+        }
+      },
+      {
+        "label": {
+          "en": "Context Vector",
+          "zh": "上下文向量"
+        },
+        "text": {
+          "en": "Weighted source states guide decoding.",
+          "zh": "加权源状态指导解码。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "LSTM",
+        "zh": "LSTM"
+      },
+      {
+        "en": "Transformer",
+        "zh": "Transformer"
+      },
+      {
+        "en": "BERT",
+        "zh": "BERT"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Canada",
+        "zh": "加拿大"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Encoder states",
+        "zh": "Encoder states"
+      },
+      {
+        "en": "Attention weights",
+        "zh": "Attention weights"
+      },
+      {
+        "en": "Decoder word",
+        "zh": "Decoder word"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "ICLR paper",
+          "zh": "ICLR 论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "At each decoding step, attention scores source tokens and forms a context vector for the next translated word. The model can therefore learn soft alignment instead of compressing the whole sentence into one fixed vector.",
+          "zh": "在每个解码步骤，注意力为源语言令牌打分，并形成用于生成下一个译词的上下文向量。因此模型可以学习软对齐，而不是把整句压缩成一个固定向量。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "Neural Machine Translation by Jointly Learning to Align and Translate",
+          "zh": "通过联合学习对齐与翻译实现神经机器翻译"
+        },
+        "description": {
+          "en": "Open paper introducing learned attention for neural translation.",
+          "zh": "介绍神经翻译学习型注意力的开放论文。"
+        },
+        "url": "https://arxiv.org/abs/1409.0473",
+        "source": "https://arxiv.org/abs/1409.0473",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
+    },
+    "country": {
+      "en": "Montreal, Canada",
+      "zh": "加拿大蒙特利尔"
+    },
+    "coordinates": [
+      45.5056,
+      -73.6139
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "asset-1980-xcon-r1-rule-configurator",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "规则式配置器",
+      "en": "Rule-based configurator"
+    },
+    "subcaption": {
+      "zh": "依据 R1：计算机系统领域的专家 制作的本地解释图。",
+      "en": "Original local explainer based on R1: An Expert in the Computer Systems Domain."
+    },
+    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1980-xcon-r1-order-flow",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "计算机订单流程",
+      "en": "Computer-order flow"
+    },
+    "subcaption": {
+      "zh": "依据 重访 R1：一线四年 制作的本地解释图。",
+      "en": "Original local explainer based on R1 Revisited: Four Years in the Trenches."
+    },
+    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "Original local SVG redraw; source figures are not copied.",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "XCON / R1 专家系统 外部参考图",
+      "en": "XCON-R1 external reference image"
+    },
+    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "XCON / R1 专家系统 外部参考图",
+      "en": "XCON-R1 external reference image"
+    },
+    "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

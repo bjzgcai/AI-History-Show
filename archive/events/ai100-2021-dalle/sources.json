@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-zero-shot-text-to-image-generation",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《零样本文本到图像生成》",
+      "en": "Zero-Shot Text-to-Image Generation"
+    },
+    "url": "https://arxiv.org/abs/2102.12092",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-icml-dall-e-paper-page",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICML DALL-E 论文页面",
+      "en": "ICML DALL-E paper page"
+    },
+    "url": "https://proceedings.mlr.press/v139/ramesh21a.html",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-openai-dall-e-blog-post",
+    "type": "official-page",
+    "label": {
+      "zh": "出版页",
+      "en": "Publication"
+    },
+    "title": {
+      "zh": "OpenAI DALL-E 博客",
+      "en": "OpenAI DALL-E blog post"
+    },
+    "url": "https://openai.com/index/dall-e/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-dall-e-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "DALL-E 概览",
+      "en": "DALL-E overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/DALL-E",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

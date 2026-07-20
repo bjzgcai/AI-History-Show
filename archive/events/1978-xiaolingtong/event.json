@@ -1,0 +1,65 @@
+{
+  "id": "1978-xiaolingtong",
+  "year": 1978,
+  "date": "1978",
+  "title": {
+    "zh": "《小灵通漫游未来》",
+    "en": "Little Smart Roaming the Future"
+  },
+  "summary": {
+    "zh": "科幻预言、技术狂热与 AI 寒冬",
+    "en": "Sci-Fi Prophecy, Hype and AI Winters"
+  },
+  "description": {
+    "zh": "叶永烈的《小灵通漫游未来》在 1978 年成为文革后中国科幻的重要节点，用好奇心和公共乐观描绘未来技术。它给这条分支提供了不同的情绪音色：与 AI 相邻的机器想象并不总是恐惧，也可以是希望、教育与国家发展。",
+    "en": "Ye Yonglie's Little Smart Roaming the Future became a post-Cultural-Revolution Chinese science-fiction milestone in 1978, presenting future technology through curiosity and civic optimism. It gives this branch a different emotional register: AI-adjacent machine imagination can also be hopeful, educational and nationally developmental."
+  },
+  "location": {
+    "regionId": "china",
+    "country": {
+      "zh": "中国",
+      "en": "China"
+    },
+    "place": {
+      "zh": "上海少儿出版文化",
+      "en": "Shanghai children's publishing culture"
+    },
+    "coordinates": [
+      31.2304,
+      121.4737
+    ]
+  },
+  "topics": [
+    "humanistic-cycle"
+  ],
+  "achievementTypeIds": [
+    "humanistic-cycle"
+  ],
+  "figures": [
+    {
+      "figureId": "ye-yonglie",
+      "name": {
+        "en": "Ye Yonglie",
+        "zh": "叶永烈"
+      },
+      "role": {
+        "en": "Author of Little Smart Roaming the Future",
+        "zh": "《小灵通漫游未来》作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

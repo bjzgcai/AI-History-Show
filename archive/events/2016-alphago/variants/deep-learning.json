@@ -1,0 +1,17 @@
+{
+    "storylineId": "deep-learning",
+    "eventId": "2016-alphago",
+    "displayTitle": {
+        "zh": "深度学习进入复杂决策系统",
+        "en": "Deep Learning Enters Complex Decision Systems"
+    },
+    "displaySummary": {
+        "zh": "AlphaGo 展示了深度神经网络不仅能处理感知任务，也能通过搜索和强化学习参与复杂决策。",
+        "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
+    },
+    "emphasis": ["deep-learning-expansion", "reinforcement-learning", "search-system"],
+    "visual": "decision-system-demo",
+    "assetIds": ["asset-alphago-policy-value-search"],
+    "sourceIds": ["source-alphago-nature-paper"],
+    "claimIds": ["claim-hybrid-policy-value-search", "claim-self-play-legacy"]
+}

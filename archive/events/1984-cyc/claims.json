@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "Cyc 常识知识库 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Cyc is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-building-large-knowledge-based-systems",
+      "source-the-evolution-of-cycl"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>",
+      "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>"
+    },
+    "sourceIds": [
+      "source-building-large-knowledge-based-systems",
+      "source-the-evolution-of-cycl"
+    ],
+    "status": "needs-source"
+  }
+]

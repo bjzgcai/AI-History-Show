@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "DALL-E 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "DALL-E is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-zero-shot-text-to-image-generation",
+      "source-icml-dall-e-paper-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>",
+      "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>"
+    },
+    "sourceIds": [
+      "source-zero-shot-text-to-image-generation",
+      "source-icml-dall-e-paper-page"
+    ],
+    "status": "needs-source"
+  }
+]

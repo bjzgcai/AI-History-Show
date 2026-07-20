@@ -1,5 +1,8 @@
 'use strict';
 
+// LEGACY — rollback/comparison/migration only. Not consumed by production `npm run generate`.
+// Durable gaming facts, sources, media, quizzes, and variants live under archive/.
+
 function t(en, zh) {
   return { en, zh };
 }

@@ -1,0 +1,269 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1956-logic-theorist",
+  "displayTitle": {
+    "zh": "逻辑理论家",
+    "en": "Logic Theorist"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "transcript",
+  "assetIds": [
+    "asset-1956-logic-theorist-herbert-simon",
+    "asset-1956-logic-theorist-proof-search"
+  ],
+  "sourceIds": [
+    "source-the-logic-theory-machine",
+    "source-carnegie-mellon-university-archives",
+    "source-allen-newell-acm-a-m-turing-award"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1956-logic-theorist-ai100",
+  "commentarySections": [
+    {
+      "id": "published-paper",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "纽厄尔和西蒙 1956 年论文描述了一个能在符号逻辑中发现证明的系统。谷歌图书保存了书目信息和摘要，卡内基梅隆大学档案记录了 1956 年修订版。",
+        "en": "Newell and Simon's 1956 paper described a system for discovering proofs in symbolic logic. Google Books preserves bibliographic details and a short abstract, while Carnegie Mellon Archives records the 1956 revised edition."
+      },
+      "sourceIds": [
+        "source-the-logic-theory-machine"
+      ]
+    },
+    {
+      "id": "reasoning-logic",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "展示重点是证明搜索：从目标定理出发，尝试符号变换，并用启发式规则避免盲目穷举。这让推理成为一串可见的选择过程。",
+        "en": "The display idea is proof search: start with a goal theorem, try symbolic transformations, and use heuristics to avoid blind enumeration. This makes reasoning visible as a sequence of choices."
+      },
+      "sourceIds": [
+        "source-the-logic-theory-machine"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Logic Theorist 视为符号 AI 的奠基系统之一，也是启发式搜索能够模拟推理的早期证据。它的长期影响在于把定理证明、符号编程、认知建模和搜索组织成一种实用 AI 模式。",
+        "en": "Experts generally treat Logic Theorist as a founding symbolic AI system and an early proof that heuristic search could model reasoning. Its long-term legacy is the combination of theorem proving, symbolic programming, cognitive modeling, and search as a practical AI pattern."
+      },
+      "sourceIds": [
+        "source-the-logic-theory-machine"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Allen Newell",
+        "zh": "艾伦·纽厄尔"
+      },
+      "role": {
+        "en": "Logic Theorist co-creator",
+        "zh": "Logic Theorist 共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Herbert A. Simon",
+        "zh": "赫伯特·A·西蒙"
+      },
+      "role": {
+        "en": "Logic Theorist co-creator",
+        "zh": "Logic Theorist 共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "J. C. Shaw",
+        "zh": "J·C·肖"
+      },
+      "role": {
+        "en": "Programmer and co-developer",
+        "zh": "程序员与共同开发者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"capable of discovering proofs for theorems in symbolic logic\"",
+    "zh": "\"能够发现符号逻辑中定理的证明\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "The Logic Theory Machine: A Complex Information Processing System",
+      "zh": "逻辑理论机：一个复杂信息处理系统"
+    },
+    "workAuthors": {
+      "en": "Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+      "zh": "艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Automated theorem proving / Logic Theorist",
+    "zh": "BenchCouncil AI100：自动定理证明 / Logic Theorist"
+  },
+  "quoteAttribution": {
+    "en": "<em>The Logic Theory Machine: A Complex Information Processing System</em>, Allen Newell and Herbert A. Simon, Institute of Radio Engineers, 1956",
+    "zh": "《逻辑理论机：一个复杂信息处理系统》, 艾伦·纽厄尔、赫伯特·A·西蒙, 无线电工程师协会, 1956"
+  },
+  "achievement": {
+    "area": {
+      "en": "Automated Theorem Proving",
+      "zh": "自动定理证明"
+    },
+    "method": {
+      "en": "Heuristic proof search",
+      "zh": "启发式证明搜索"
+    },
+    "artifact": {
+      "en": "Logic Theory Machine",
+      "zh": "逻辑理论机器"
+    },
+    "material": {
+      "en": "Paper + archive",
+      "zh": "论文 + 档案"
+    },
+    "demo": {
+      "en": "Proof search loop",
+      "zh": "证明搜索循环"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Heuristic Search",
+          "zh": "启发式搜索"
+        },
+        "text": {
+          "en": "Logic Theorist used rules of thumb to guide proof search. This made reasoning a selective process rather than brute-force enumeration.",
+          "zh": "Logic Theorist 用经验规则引导证明搜索。这让推理成为选择性过程，而不是暴力穷举。"
+        }
+      },
+      {
+        "label": {
+          "en": "Symbolic Reasoning",
+          "zh": "符号推理"
+        },
+        "text": {
+          "en": "The program manipulated logical expressions as symbols. That became a central pattern in early AI systems.",
+          "zh": "程序把逻辑表达式作为符号来操作。这成为早期 AI 系统的核心模式之一。"
+        }
+      },
+      {
+        "label": {
+          "en": "Automated Theorem Proving",
+          "zh": "自动定理证明"
+        },
+        "text": {
+          "en": "The system attempted to discover proof chains for mathematical logic statements. It helped establish theorem proving as a major AI task.",
+          "zh": "系统尝试为数理逻辑命题发现证明链。它帮助确立了定理证明作为 AI 重要任务的地位。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "General Problem Solver",
+        "zh": "General Problem Solver"
+      },
+      {
+        "en": "LISP",
+        "zh": "LISP"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Google Books",
+          "zh": "谷歌图书"
+        },
+        "title": {
+          "en": "The Logic Theory Machine",
+          "zh": "《逻辑理论机》"
+        },
+        "description": {
+          "en": "Bibliographic page for the 1956 Logic Theory Machine publication, including abstract and publication details.",
+          "zh": "1956 年 Logic Theory Machine 出版物的书目页面，包含摘要和出版信息。"
+        },
+        "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+        "source": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+        "license": {
+          "en": "Google Books bibliographic preview; reuse rights for book scans are not stated.",
+          "zh": "谷歌图书书目预览页；书籍扫描内容的复用权利未说明。"
+        },
+        "usage": {
+          "en": "Source material / Published paper reference",
+          "zh": "原始材料入口 / 发表论文参考"
+        },
+        "action": {
+          "en": "Open book record",
+          "zh": "打开书目记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "RAND Corporation / Carnegie Institute of Technology",
+      "zh": "RAND Corporation / 卡内基理工学院"
+    },
+    "country": {
+      "en": "Santa Monica and Pittsburgh, United States",
+      "zh": "美国，圣塔莫尼卡与匹兹堡"
+    },
+    "coordinates": [
+      34.0195,
+      -118.4912
+    ]
+  }
+}

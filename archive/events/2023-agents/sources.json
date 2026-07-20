@@ -1,0 +1,17 @@
+[
+  {
+    "id": "source-legacy-event-record",
+    "type": "reference-only",
+    "title": {
+      "zh": "Legacy event record for 2023-agents",
+      "en": "Legacy event record for 2023-agents"
+    },
+    "url": "https://www.benchcouncil.org/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。",
+      "en": "Temporary source placeholder generated from the legacy event record; add primary papers or original sources later."
+    }
+  }
+]

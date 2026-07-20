@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "中国象棋引擎与 AlphaCat 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Chinese Chess Engines and AlphaCat is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-icga-chinese-chess-page",
+      "source-comparison-training-for-computer-chinese-chess"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
+      "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+    },
+    "sourceIds": [
+      "source-icga-chinese-chess-page",
+      "source-comparison-training-for-computer-chinese-chess"
+    ],
+    "status": "needs-source"
+  }
+]

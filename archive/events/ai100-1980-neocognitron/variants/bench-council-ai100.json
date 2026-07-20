@@ -1,0 +1,311 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1980-neocognitron",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "新认知机",
+    "en": "Neocognitron"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>",
+    "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "neocognitron",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Springer",
+        "zh": "Springer"
+      },
+      "title": {
+        "en": "Neocognitron",
+        "zh": "新认知机"
+      },
+      "description": {
+        "en": "Primary paper record for the neocognitron.",
+        "zh": "Neocognitron 的主论文记录。"
+      },
+      "url": "https://doi.org/10.1007/BF00344251",
+      "source": "https://doi.org/10.1007/BF00344251",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
+    "asset-1980-neocognitron-hierarchy"
+  ],
+  "sourceIds": [
+    "source-neocognitron",
+    "source-open-neocognitron-pdf",
+    "source-scholarpedia-neocognitron-article",
+    "source-semantic-scholar-paper-record"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "ai100-1980-neocognitron-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。",
+        "en": "Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks."
+      },
+      "sourceIds": [
+        "source-neocognitron"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-neocognitron"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 Neocognitron 视为卷积视觉网络的重要先祖，尽管现代 CNN 使用不同训练流程。它的长期影响在于用于抗平移识别的层级特征与池化模式。",
+        "en": "Experts generally treat the neocognitron as a major ancestor of convolutional vision networks, even though modern CNNs use different training procedures. Its long-term legacy is the hierarchical feature-and-pooling pattern for shift-tolerant recognition."
+      },
+      "sourceIds": [
+        "source-neocognitron"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
+      "role": {
+        "en": "Creator of the neocognitron",
+        "zh": "Neocognitron 提出者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position\"",
+    "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
+      "zh": "Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型"
+    },
+    "workAuthors": {
+      "en": "Kunihiko Fukushima, Biological Cybernetics, 1980",
+      "zh": "福岛邦彦，《Biological Cybernetics》，1980"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1007/BF00344251"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position</em>, Kunihiko Fukushima, Biological Cybernetics, 1980",
+    "zh": "《Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型》, 福岛邦彦，《Biological Cybernetics》，1980"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Hierarchical shift-tolerant vision network",
+      "zh": "层级抗平移视觉网络"
+    },
+    "artifact": {
+      "en": "Neocognitron architecture",
+      "zh": "Neocognitron 架构"
+    },
+    "material": {
+      "en": "Biological Cybernetics paper",
+      "zh": "《Biological Cybernetics》论文"
+    },
+    "demo": {
+      "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
+      "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Hierarchical Vision",
+          "zh": "层级视觉"
+        },
+        "text": {
+          "en": "Simple features are composed into larger patterns.",
+          "zh": "简单特征组合成更大的模式。"
+        }
+      },
+      {
+        "label": {
+          "en": "Shift Tolerance",
+          "zh": "平移容忍"
+        },
+        "text": {
+          "en": "Later layers reduce sensitivity to position changes.",
+          "zh": "后续层降低对位置变化的敏感性。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "CNN",
+        "zh": "CNN"
+      },
+      {
+        "en": "LeNet",
+        "zh": "LeNet"
+      },
+      {
+        "en": "ReLU",
+        "zh": "ReLU"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Japan",
+        "zh": "日本"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Input pattern",
+        "zh": "输入图案"
+      },
+      {
+        "en": "Feature layers",
+        "zh": "特征层"
+      },
+      {
+        "en": "Stable category",
+        "zh": "稳定类别"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Biological Cybernetics paper",
+          "zh": "《Biological Cybernetics》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
+          "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Springer",
+          "zh": "Springer"
+        },
+        "title": {
+          "en": "Neocognitron",
+          "zh": "新认知机"
+        },
+        "description": {
+          "en": "Primary paper record for the neocognitron.",
+          "zh": "Neocognitron 的主论文记录。"
+        },
+        "url": "https://doi.org/10.1007/BF00344251",
+        "source": "https://doi.org/10.1007/BF00344251",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "NHK 广播科学研究实验室"
+    },
+    "country": {
+      "en": "Tokyo, Japan",
+      "zh": "日本东京"
+    },
+    "coordinates": [
+      35.6762,
+      139.6503
+    ]
+  }
+}

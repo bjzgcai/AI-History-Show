@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "GoogLeNet / Inception 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "GoogLeNet / Inception is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-going-deeper-with-convolutions",
+      "source-torchvision-googlenet"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>",
+      "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>"
+    },
+    "sourceIds": [
+      "source-going-deeper-with-convolutions",
+      "source-torchvision-googlenet"
+    ],
+    "status": "needs-source"
+  }
+]

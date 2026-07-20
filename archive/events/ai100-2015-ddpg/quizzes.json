@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2015-ddpg-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "DDPG 为什么与连续控制相关？",
+      "en": "Why is DDPG associated with continuous control?"
+    },
+    "options": [
+      {
+        "zh": "它的 actor 输出连续动作",
+        "en": "Its actor outputs continuous actions"
+      },
+      {
+        "zh": "它只玩文字游戏",
+        "en": "It only plays word games"
+      },
+      {
+        "zh": "它移除 critic",
+        "en": "It removes the critic"
+      },
+      {
+        "zh": "它不训练策略",
+        "en": "It trains no policy"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "DDPG 使用 actor-critic 设置，其中 actor 提出连续动作。",
+      "en": "DDPG uses an actor-critic setup where the actor proposes continuous actions."
+    },
+    "sourceIds": [
+      "source-continuous-control-with-deep-reinforcement-learning"
+    ],
+    "assetIds": [
+      "asset-2015-ddpg-actor-critic"
+    ]
+  }
+]

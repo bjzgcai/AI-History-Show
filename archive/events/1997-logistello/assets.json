@@ -1,0 +1,28 @@
+[
+  {
+    "id": "asset-1997-logistello-pattern-eval",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "Logistello 模式评估",
+      "en": "Logistello pattern evaluation"
+    },
+    "subcaption": {
+      "zh": "学习型黑白棋评估的原创解释图。",
+      "en": "Original explainer for learned Othello evaluation."
+    },
+    "sourceId": "source-logistello-homepage",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  }
+]

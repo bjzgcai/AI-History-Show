@@ -1,0 +1,292 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1965-dendral",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "DENDRAL",
+    "en": "DENDRAL"
+  },
+  "displaySummary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "displayDescription": {
+    "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>",
+    "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "dendral",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": "ACS Publications",
+      "title": {
+        "en": "Chemical inference paper record",
+        "zh": "化学推断论文记录"
+      },
+      "description": {
+        "en": "Primary literature record for early DENDRAL chemical inference.",
+        "zh": "早期 DENDRAL 化学推断工作的原始文献记录。"
+      },
+      "url": "https://doi.org/10.1021/ci60034a002",
+      "source": "https://doi.org/10.1021/ci60034a002",
+      "license": {
+        "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Source material image / Literature reference",
+        "zh": "原始材料入口 / 文献参考"
+      },
+      "action": {
+        "en": "Open DOI record",
+        "zh": "打开 DOI 记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1965-dendral-edward-feigenbaum",
+    "asset-1965-dendral-mass-spectrum",
+    "asset-1965-dendral-rule-filter"
+  ],
+  "sourceIds": [
+    "source-applications-of-artificial-intelligence-for-chemical-inference",
+    "source-acm-turing-award-profile-for-edward-feigenbaum",
+    "source-stanford-knowledge-systems-laboratory-history"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "1965-dendral-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "通用问题求解不足以处理困难科学任务。DENDRAL 表明，精心编码的专业知识可以聚焦搜索。",
+        "en": "General-purpose problem solving was not enough for hard scientific tasks. DENDRAL showed that carefully encoded expertise could focus search."
+      },
+      "sourceIds": [
+        "source-applications-of-artificial-intelligence-for-chemical-inference"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "系统生成候选分子结构，并用化学约束排除不可能的候选。 关键机制是规则引导的化学结构推断，它把资料线索与可见的演示行为连接起来。",
+        "en": "The system generated candidate molecular structures and rejected impossible ones using chemical constraints. The key mechanism is Rule-guided chemical structure inference, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-applications-of-artificial-intelligence-for-chemical-inference"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 DENDRAL 视为最早有力证明领域知识能让 AI 变得有用的系统之一。它的长期影响在于推动了化学、医学和企业决策支持中的专家系统与知识工程传统。",
+        "en": "Experts generally treat DENDRAL as one of the first convincing demonstrations that domain knowledge could make AI useful. Its long-term legacy is the expert-system and knowledge-engineering tradition in chemistry, medicine, and enterprise decision support."
+      },
+      "sourceIds": [
+        "source-applications-of-artificial-intelligence-for-chemical-inference"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Edward Feigenbaum",
+        "zh": "爱德华·费根鲍姆"
+      },
+      "role": {
+        "en": "Leader in expert-system AI",
+        "zh": "专家系统 AI 代表人物"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Rule-guided chemical structure inference\"",
+    "zh": "\"规则引导的化学结构推断\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Chemical inference paper record",
+      "zh": "化学推断论文记录"
+    },
+    "workAuthors": {
+      "en": "Edward Feigenbaum",
+      "zh": "爱德华·费根鲍姆"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1021/ci60034a002"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Expert systems / DENDRAL",
+    "zh": "BenchCouncil AI100：专家系统 / DENDRAL"
+  },
+  "quoteAttribution": {
+    "en": "<em>Chemical inference paper record</em>, Edward Feigenbaum",
+    "zh": "《化学推断论文记录》, 爱德华·费根鲍姆"
+  },
+  "achievement": {
+    "area": {
+      "en": "Expert systems",
+      "zh": "专家系统"
+    },
+    "method": {
+      "en": "Rule-guided chemical structure inference",
+      "zh": "规则引导的化学结构推断"
+    },
+    "artifact": {
+      "en": "DENDRAL expert system",
+      "zh": "DENDRAL 专家系统"
+    },
+    "material": {
+      "en": "Chemical inference papers and Turing Award histories",
+      "zh": "化学推断论文与图灵奖史料"
+    },
+    "demo": {
+      "en": "Use expert rules to narrow molecular structures",
+      "zh": "用专家规则缩小分子结构候选"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Knowledge Engineering",
+          "zh": "知识工程"
+        },
+        "text": {
+          "en": "Experts help encode rules that guide the system.",
+          "zh": "专家帮助编码规则以引导系统。"
+        }
+      },
+      {
+        "label": {
+          "en": "Generate and Test",
+          "zh": "生成与检验"
+        },
+        "text": {
+          "en": "Candidate structures are generated, then filtered by constraints.",
+          "zh": "先生成候选结构，再用约束筛选。"
+        }
+      },
+      {
+        "label": {
+          "en": "Mass Spectrum",
+          "zh": "质谱"
+        },
+        "text": {
+          "en": "Chemical evidence supplies clues about molecular fragments.",
+          "zh": "化学证据提供关于分子片段的线索。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Expert systems",
+        "zh": "专家系统"
+      },
+      {
+        "en": "Cyc",
+        "zh": "Cyc"
+      },
+      {
+        "en": "AI for Science",
+        "zh": "AI for 《科学》"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "California, United States",
+        "zh": "美国加利福尼亚州"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Read spectrum",
+        "zh": "读取质谱"
+      },
+      {
+        "en": "Apply rules",
+        "zh": "应用规则"
+      },
+      {
+        "en": "Rank molecules",
+        "zh": "排序分子"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "ACS Publications",
+        "title": {
+          "en": "Chemical inference paper record",
+          "zh": "化学推断论文记录"
+        },
+        "description": {
+          "en": "Primary literature record for early DENDRAL chemical inference.",
+          "zh": "早期 DENDRAL 化学推断工作的原始文献记录。"
+        },
+        "url": "https://doi.org/10.1021/ci60034a002",
+        "source": "https://doi.org/10.1021/ci60034a002",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open DOI record",
+          "zh": "打开 DOI 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "country": {
+      "en": "California, United States",
+      "zh": "美国加利福尼亚州"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  }
+}

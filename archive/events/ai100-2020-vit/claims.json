@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "视觉 Transformer 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Vision Transformer is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-an-image-is-worth-16x16-words",
+      "source-iclr-openreview-page"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>",
+      "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>"
+    },
+    "sourceIds": [
+      "source-an-image-is-worth-16x16-words",
+      "source-iclr-openreview-page"
+    ],
+    "status": "needs-source"
+  }
+]

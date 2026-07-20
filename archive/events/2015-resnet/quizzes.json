@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2015-resnet-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "ResNet 的关键思想是什么？",
+      "en": "What is the key idea in ResNet?"
+    },
+    "options": [
+      {
+        "zh": "用捷径连接学习残差变化",
+        "en": "Shortcut connections that learn residual changes"
+      },
+      {
+        "zh": "训练后删除每一层",
+        "en": "Deleting every layer after training"
+      },
+      {
+        "zh": "只使用一个像素",
+        "en": "Using only one pixel"
+      },
+      {
+        "zh": "把程序写成 S 表达式",
+        "en": "Writing programs as S-expressions"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "残差捷径把学习到的变化加回输入，使很深的网络更容易优化。",
+      "en": "Residual shortcuts make very deep networks easier to optimize by adding learned changes back to the input."
+    },
+    "sourceIds": [
+      "source-deep-residual-learning-for-image-recognition"
+    ],
+    "assetIds": [
+      "asset-kaiming-he"
+    ]
+  }
+]

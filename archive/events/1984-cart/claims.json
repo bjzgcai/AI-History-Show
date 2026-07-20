@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "CART 决策树 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "CART is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-classification-and-regression-trees",
+      "source-scikit-learn-decisiontreeclassifier"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>",
+      "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>"
+    },
+    "sourceIds": [
+      "source-classification-and-regression-trees",
+      "source-scikit-learn-decisiontreeclassifier"
+    ],
+    "status": "needs-source"
+  }
+]

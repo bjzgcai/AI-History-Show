@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "MS COCO 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "MS COCO is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-microsoft-coco-common-objects-in-context",
+      "source-coco-dataset-website"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>",
+      "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>"
+    },
+    "sourceIds": [
+      "source-microsoft-coco-common-objects-in-context",
+      "source-coco-dataset-website"
+    ],
+    "status": "needs-source"
+  }
+]

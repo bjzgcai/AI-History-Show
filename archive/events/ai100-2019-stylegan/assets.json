@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-2019-stylegan-style-modulation",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "StyleGAN 解释图",
+      "en": "StyleGAN explainer"
+    },
+    "subcaption": {
+      "zh": "关于该成就流程的本地原创解释图。",
+      "en": "Original local explainer for the achievement flow."
+    },
+    "sourceId": "source-a-style-based-generator-architecture-for-gans",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2019-stylegan-tero-karras",
+    "type": "image",
+    "path": "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "StyleGAN 外部参考图",
+      "en": "StyleGAN external reference image"
+    },
+    "sourceId": "source-a-style-based-generator-architecture-for-gans",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "Advanced-AI risk entered mainstream media, turning capability excitement into existential dread.",
+      "zh": "高级 AI 风险进入主流媒体，把能力兴奋转化为存在性恐惧。"
+    },
+    "sourceIds": [
+      "source-guardian-on-musk-remarks",
+      "source-bbc-on-hawking-warning"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast.",
+      "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。"
+    },
+    "sourceIds": [
+      "source-guardian-on-musk-remarks",
+      "source-bbc-on-hawking-warning"
+    ],
+    "status": "needs-source"
+  }
+]

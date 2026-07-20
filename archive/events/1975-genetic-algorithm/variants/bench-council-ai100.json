@@ -1,0 +1,262 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "1975-genetic-algorithm",
+  "displayTitle": {
+    "zh": "遗传算法",
+    "en": "Genetic Algorithms"
+  },
+  "displaySummary": {
+    "en": "AI Top 100 Achievements",
+    "zh": "AI 百大成就"
+  },
+  "emphasis": [
+    "ai100-batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "evolution",
+  "assetIds": [
+    "asset-1975-genetic-algorithm-john-henry-holland",
+    "asset-1975-genetic-algorithm-population-cycle",
+    "asset-1975-genetic-algorithm-chromosome-crossover"
+  ],
+  "sourceIds": [
+    "source-adaptation-in-natural-and-artificial-systems",
+    "source-deap-evolutionary-computation-framework",
+    "source-ecj-evolutionary-computation-system"
+  ],
+  "claimIds": [
+    "claim-ai100-achievement",
+    "claim-method-artifact"
+  ],
+  "quizId": "quiz-1975-genetic-algorithm-ai100",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "在深度学习主导 AI 之前，搜索是这个领域的核心隐喻之一。霍兰德 将生物适应引入计算，使研究人工种群中的学习与优化成为可能。",
+        "en": "Before deep learning dominated AI, search was one of the field’s central metaphors. Holland brought biological adaptation into computation, making it possible to study learning and optimization in artificial populations."
+      },
+      "sourceIds": [
+        "source-adaptation-in-natural-and-artificial-systems"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "遗传算法不是直接改进单个解，而是反复评分、选择、重组和变异候选解，让一个种群逐步演化。这种群体式搜索能够同时探索多个候选方向，并通过选择压力保留更有希望的结构。",
+        "en": "A genetic algorithm does not improve one solution directly. It evolves a population by repeatedly scoring, selecting, recombining, and mutating candidates."
+      },
+      "sourceIds": [
+        "source-adaptation-in-natural-and-artificial-systems"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把遗传算法视为困难设计空间中的有用搜索启发式方法，而不是通用智能理论。它们的长期影响在于基于种群的探索，适用于没有梯度、目标函数棘手或候选设计需要演化的任务。",
+        "en": "Experts generally treat genetic algorithms as useful search heuristics for difficult design spaces, not as a general theory of intelligence. Their long-term legacy is population-based exploration for problems where gradients are unavailable, objectives are awkward, or candidate designs must be evolved."
+      },
+      "sourceIds": [
+        "source-adaptation-in-natural-and-artificial-systems"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy AI100 数据批量生成的 variant。",
+      "en": "Variant generated from legacy AI100 data in a batch migration."
+    }
+  },
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John H. Holland",
+        "zh": "约翰·H·霍兰德"
+      },
+      "role": {
+        "en": "Developed the genetic algorithm framework",
+        "zh": "提出遗传算法框架"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"adaptation in natural and artificial systems\"",
+    "zh": "\"自然与人工系统中的适应\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Adaptation in Natural and Artificial Systems",
+      "zh": "自然系统与人工系统中的适应"
+    },
+    "workAuthors": {
+      "en": "John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+      "zh": "约翰·H·霍兰德, 密歇根大学出版社 / 麻省理工学院出版社版本, 1975"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Search and Optimization / Genetic Algorithm",
+    "zh": "BenchCouncil AI100：搜索与优化 / 遗传算法"
+  },
+  "quoteAttribution": {
+    "en": "<em>Adaptation in Natural and Artificial Systems</em>, John H. Holland, University of Michigan Press / MIT Press edition, 1975",
+    "zh": "《自然系统与人工系统中的适应》, 约翰·H·霍兰德, 密歇根大学出版社 / 麻省理工学院出版社版本, 1975"
+  },
+  "achievement": {
+    "area": {
+      "en": "Search and Optimization",
+      "zh": "搜索与优化"
+    },
+    "method": {
+      "en": "Population-based evolutionary search",
+      "zh": "基于种群的进化搜索"
+    },
+    "artifact": {
+      "en": "Genetic algorithm framework",
+      "zh": "遗传算法框架"
+    },
+    "material": {
+      "en": "Adaptation in Natural and Artificial Systems",
+      "zh": "《自然与人工系统中的适应》"
+    },
+    "demo": {
+      "en": "Select, recombine, mutate",
+      "zh": "选择、重组、变异"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Population Search",
+          "zh": "种群搜索"
+        },
+        "text": {
+          "en": "The algorithm keeps many candidates at once, so search can explore multiple regions instead of following one path.",
+          "zh": "算法同时保留多个候选解，因此可以探索多个区域，而不是只沿一条路径前进。"
+        }
+      },
+      {
+        "label": {
+          "en": "Crossover",
+          "zh": "交叉"
+        },
+        "text": {
+          "en": "Parts of successful candidates are recombined, allowing useful partial structures to move into new solutions.",
+          "zh": "成功候选解的片段会被重组，使有用的局部结构进入新解。"
+        }
+      },
+      {
+        "label": {
+          "en": "Mutation",
+          "zh": "变异"
+        },
+        "text": {
+          "en": "Random changes preserve diversity and let the population escape premature convergence.",
+          "zh": "随机变化保持多样性，并帮助种群避免过早收敛。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Simulated annealing",
+        "zh": "模拟退火"
+      },
+      {
+        "en": "Reinforcement learning",
+        "zh": "强化学习"
+      },
+      {
+        "en": "AutoML",
+        "zh": "自动机器学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Population",
+        "zh": "种群"
+      },
+      {
+        "en": "Crossover + mutation",
+        "zh": "交叉 + 变异"
+      },
+      {
+        "en": "Fitness feedback",
+        "zh": "适应度反馈"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Press",
+          "zh": "麻省理工学院出版社"
+        },
+        "title": {
+          "en": "Adaptation in Natural and Artificial Systems",
+          "zh": "自然系统与人工系统中的适应"
+        },
+        "description": {
+          "en": "Book record for Holland’s foundational genetic-algorithm treatment.",
+          "zh": "霍兰德遗传算法奠基著作的图书记录。"
+        },
+        "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "source": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+        "license": {
+          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        },
+        "usage": {
+          "en": "Literature reference link",
+          "zh": "文献参考链接"
+        },
+        "action": {
+          "en": "Open book record",
+          "zh": "打开图书记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Michigan",
+      "zh": "密歇根大学"
+    },
+    "country": {
+      "en": "Ann Arbor, United States",
+      "zh": "美国安娜堡"
+    },
+    "coordinates": [
+      42.278,
+      -83.7382
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1970-ridge",
+  "year": 1970,
+  "date": "1970",
+  "title": {
+    "zh": "岭回归",
+    "en": "Ridge"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>",
+    "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国纽瓦克",
+      "en": "Newark, United States"
+    },
+    "place": {
+      "zh": "特拉华大学",
+      "en": "University of Delaware"
+    },
+    "coordinates": [
+      39.6779,
+      -75.7506
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "arthur-hoerl",
+      "role": {
+        "zh": "岭回归共同作者",
+        "en": "Co-author of ridge regression"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "robert-kennard",
+      "role": {
+        "zh": "岭回归共同作者",
+        "en": "Co-author of ridge regression"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

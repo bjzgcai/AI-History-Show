@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-deep-compression",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《深度压缩》",
+      "en": "Deep Compression"
+    },
+    "url": "https://arxiv.org/abs/1510.00149",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-iclr-openreview-record",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "ICLR OpenReview 记录",
+      "en": "ICLR OpenReview record"
+    },
+    "url": "https://openreview.net/forum?id=n4Bp24yb5L",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-song-han-efficient-ai-research-page",
+    "type": "project-page",
+    "label": {
+      "zh": "项目",
+      "en": "Project"
+    },
+    "title": {
+      "zh": "韩松实验室深度压缩项目页面",
+      "en": "Song Han efficient AI research page"
+    },
+    "url": "https://hanlab.mit.edu/projects/deep-compression",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2014-glove-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "GloVe 用什么来学习词向量？",
+      "en": "What does GloVe use to learn word vectors?"
+    },
+    "options": [
+      {
+        "zh": "全局词共现统计",
+        "en": "Global word co-occurrence statistics"
+      },
+      {
+        "zh": "只有图像掩码",
+        "en": "Only image masks"
+      },
+      {
+        "zh": "机器人关节力矩",
+        "en": "Robot joint torque"
+      },
+      {
+        "zh": "定理证明轨迹",
+        "en": "A theorem prover trace"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "GloVe 根据语料中的加权词共现信息拟合词向量。",
+      "en": "GloVe fits vectors to weighted word co-occurrence information from a corpus."
+    },
+    "sourceIds": [
+      "source-glove-global-vectors-for-word-representation"
+    ],
+    "assetIds": [
+      "asset-2014-glove-cooccurrence"
+    ]
+  }
+]

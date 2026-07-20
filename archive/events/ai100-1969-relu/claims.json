@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "ReLU 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "ReLU is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-deep-sparse-rectifier-neural-networks",
+      "source-rectified-linear-units-improve-restricted-boltzmann-machines"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>",
+      "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>"
+    },
+    "sourceIds": [
+      "source-deep-sparse-rectifier-neural-networks",
+      "source-rectified-linear-units-improve-restricted-boltzmann-machines"
+    ],
+    "status": "needs-source"
+  }
+]

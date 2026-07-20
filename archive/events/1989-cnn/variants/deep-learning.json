@@ -1,0 +1,327 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "1989-cnn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "卷积神经网络与 LeNet",
+    "en": "Convolutional Networks and LeNet"
+  },
+  "displaySummary": {
+    "zh": "神经网络与连接主义的复兴",
+    "en": "Neural Networks and Connectionism"
+  },
+  "displayDescription": {
+    "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
+    "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+  },
+  "emphasis": [
+    "batch-migration",
+    "source-review-needed"
+  ],
+  "visual": "lenet",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "MIT Press Direct",
+        "zh": "MIT Press Direct"
+      },
+      "title": {
+        "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "zh": "反向传播应用于手写邮编识别"
+      },
+      "description": {
+        "en": "Canonical LeNet paper record.",
+        "zh": "LeNet 经典论文记录。"
+      },
+      "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "source": "https://doi.org/10.1162/neco.1989.1.4.541",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open DOI",
+        "zh": "打开 DOI"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1989-cnn-yann-lecun-external",
+    "asset-1989-lenet-zip-code-cnn",
+    "asset-1989-cnn-people-01",
+    "asset-1989-cnn-people-02",
+    "asset-1989-cnn-architecture-01"
+  ],
+  "sourceIds": [
+    "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+    "source-lenet-5-demos-and-documentation",
+    "source-gradient-based-learning-applied-to-document-recognition",
+    "source-yann-lecun-s-home-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "扬·勒昆及合作者证明，用反向传播训练的卷积网络可以识别手写邮编。LeNet 成为端到端卷积感知系统的标志性案例。",
+        "en": "Yann LeCun and collaborators showed that convolutional networks trained by backpropagation could read handwritten ZIP codes. LeNet became a defining example of end-to-end convolutional perception."
+      },
+      "sourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+        "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+      },
+      "sourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把 LeNet 视为早期经典证据，证明卷积、权重共享和反向传播可以解决真实感知任务。它的长期影响在于端到端 CNN 模式后来扩展成现代计算机视觉的基础。",
+        "en": "Experts generally treat LeNet as a canonical early proof that convolution, weight sharing, and backpropagation could solve real perception tasks. Its long-term legacy is the end-to-end CNN pattern that later scaled into modern computer vision."
+      },
+      "sourceIds": [
+        "source-backpropagation-applied-to-handwritten-zip-code-recognition"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+    }
+  },
+  "category": {
+    "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)",
+    "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Yann LeCun",
+        "zh": "扬·勒昆"
+      },
+      "role": {
+        "en": "LeNet lead researcher",
+        "zh": "LeNet 主要研究者"
+      },
+      "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+      "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
+      "figureType": "person"
+    }
+  ],
+  "photos": [],
+  "videoUrl": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
+  "resources": {
+    "videos": [
+      {
+        "id": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
+        "url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
+        "embed_url": "https://media.sciencearena.cn/video/1989CNN-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E7%9A%84%E9%9A%90%E7%A7%98%E5%8E%86%E5%8F%B2.mp4",
+        "title": "1989CNN-计算机视觉的隐秘历史",
+        "channel": "",
+        "duration": "",
+        "thumbnail": "",
+        "source": "Web"
+      }
+    ]
+  },
+  "quote": {
+    "en": "\"LeCun and collaborators demonstrated that convolutional networks trained with backpropagation could recognize handwritten digits by exploiting local image structure.\"",
+    "zh": "\"勒昆及合作者展示了用反向传播训练的卷积网络可以利用图像局部结构识别手写数字，为现代计算机视觉奠定了重要基础。\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "zh": "反向传播应用于手写邮政编码识别"
+    },
+    "workAuthors": {
+      "en": "Yann LeCun et al., Neural Computation, 1989",
+      "zh": "扬·勒昆等，Neural Computation，1989"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1162/neco.1989.1.4.541"
+  },
+  "quotePage": {
+    "en": "LeCun et al., Neural Computation / Bell Labs publication",
+    "zh": "勒昆等，Neural Computation / 贝尔实验室论文"
+  },
+  "quoteAttribution": {
+    "en": "<em>Backpropagation Applied to Handwritten Zip Code Recognition</em>, Yann LeCun et al., Neural Computation, 1989",
+    "zh": "《反向传播应用于手写邮政编码识别》, 扬·勒昆等，Neural Computation，1989"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Convolutional character recognition",
+      "zh": "卷积字符识别"
+    },
+    "artifact": {
+      "en": "LeNet handwritten digit network",
+      "zh": "LeNet 手写数字网络"
+    },
+    "material": {
+      "en": "Neural Computation paper",
+      "zh": "《Neural Computation》论文"
+    },
+    "demo": {
+      "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
+      "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Shared Weights",
+          "zh": "权重共享"
+        },
+        "text": {
+          "en": "The same filters scan across the image.",
+          "zh": "相同滤波器在整张图像上扫描。"
+        }
+      },
+      {
+        "label": {
+          "en": "End-to-end Learning",
+          "zh": "端到端学习"
+        },
+        "text": {
+          "en": "Feature extraction and classification are trained together.",
+          "zh": "特征提取和分类一起训练。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "CNN",
+        "zh": "CNN"
+      },
+      {
+        "en": "AlexNet",
+        "zh": "AlexNet"
+      },
+      {
+        "en": "ImageNet",
+        "zh": "ImageNet"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Handwritten image",
+        "zh": "手写图像"
+      },
+      {
+        "en": "Convolution + pooling",
+        "zh": "卷积 + 池化"
+      },
+      {
+        "en": "Digit class",
+        "zh": "数字类别"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "Neural Computation paper",
+          "zh": "《Neural Computation》论文"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Convolutions extract local strokes, pooling stabilizes them, and a classifier predicts digits.",
+          "zh": "卷积提取局部笔画，池化稳定特征，分类器预测数字。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "MIT Press Direct",
+          "zh": "MIT Press Direct"
+        },
+        "title": {
+          "en": "Backpropagation Applied to Handwritten Zip Code Recognition",
+          "zh": "反向传播应用于手写邮编识别"
+        },
+        "description": {
+          "en": "Canonical LeNet paper record.",
+          "zh": "LeNet 经典论文记录。"
+        },
+        "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "source": "https://doi.org/10.1162/neco.1989.1.4.541",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open DOI",
+          "zh": "打开 DOI"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Bell Labs",
+      "zh": "贝尔实验室"
+    },
+    "country": {
+      "en": "New Jersey, United States",
+      "zh": "美国新泽西州"
+    },
+    "coordinates": [
+      40.684,
+      -74.401
+    ]
+  }
+}

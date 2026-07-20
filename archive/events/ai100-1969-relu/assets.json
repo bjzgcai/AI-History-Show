@@ -1,0 +1,51 @@
+[
+  {
+    "id": "asset-1969-relu-activation",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "整流激活",
+      "en": "Rectified activation"
+    },
+    "subcaption": {
+      "zh": "关于 max(0, x) 激活函数的本地原创解释图。",
+      "en": "Original local explainer of the max(0, x) activation."
+    },
+    "sourceId": "source-deep-sparse-rectifier-neural-networks",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "zh": "本地原创 SVG 重绘；未复制来源图形。",
+        "en": "Original local SVG redraw; source figures are not copied."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
+    "type": "image",
+    "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+    "role": "external-reference-image",
+    "caption": {
+      "zh": "ReLU 外部参考图",
+      "en": "ReLU external reference image"
+    },
+    "sourceId": "source-deep-sparse-rectifier-neural-networks",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
+        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

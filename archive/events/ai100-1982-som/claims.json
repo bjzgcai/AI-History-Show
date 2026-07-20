@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "自组织映射 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Self-organizing Map is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-self-organized-formation-of-topologically-correct-feature-maps",
+      "source-open-som-paper-pdf"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>",
+      "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>"
+    },
+    "sourceIds": [
+      "source-self-organized-formation-of-topologically-correct-feature-maps",
+      "source-open-som-paper-pdf"
+    ],
+    "status": "needs-source"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-branch-summary",
+    "importance": "core",
+    "text": {
+      "en": "Cyberpunk turned AI into a contained network actor trying to cross institutional and technical borders.",
+      "zh": "赛博朋克把 AI 写成被限制在网络中的行动者，试图跨越制度与技术边界。"
+    },
+    "sourceIds": [
+      "source-open-library-book-metadata",
+      "source-open-library-metadata-search-result"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-event-description",
+    "importance": "context",
+    "text": {
+      "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries.",
+      "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。"
+    },
+    "sourceIds": [
+      "source-open-library-book-metadata",
+      "source-open-library-metadata-search-result"
+    ],
+    "status": "needs-source"
+  }
+]

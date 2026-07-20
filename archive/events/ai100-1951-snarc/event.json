@@ -1,0 +1,66 @@
+{
+  "id": "ai100-1951-snarc",
+  "year": 1951,
+  "date": "1951",
+  "title": {
+    "zh": "SNARC",
+    "en": "SNARC"
+  },
+  "summary": {
+    "zh": "AI 百大成就",
+    "en": "AI Top 100 Achievements"
+  },
+  "description": {
+    "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>",
+    "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "zh": "美国普林斯顿",
+      "en": "Princeton, United States"
+    },
+    "place": {
+      "zh": "普林斯顿大学",
+      "en": "Princeton University"
+    },
+    "coordinates": [
+      40.3431,
+      -74.6551
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "marvin-minsky",
+      "role": {
+        "zh": "SNARC 共同建造者",
+        "en": "Co-builder of SNARC"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "dean-edmonds",
+      "role": {
+        "zh": "SNARC 共同建造者",
+        "en": "Co-builder of SNARC"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+    }
+  }
+}

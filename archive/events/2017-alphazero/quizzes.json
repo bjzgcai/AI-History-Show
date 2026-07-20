@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2017-alphazero-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "AlphaZero 从早期游戏 AI 流程中去掉了什么依赖？",
+      "en": "What did AlphaZero remove from the earlier game-AI pipeline?"
+    },
+    "options": [
+      {
+        "zh": "人类棋谱、开局库和手工评估函数",
+        "en": "Human games, opening books, and handcrafted evaluation functions"
+      },
+      {
+        "zh": "游戏规则本身",
+        "en": "The game rules themselves"
+      },
+      {
+        "zh": "所有树搜索",
+        "en": "All tree search"
+      },
+      {
+        "zh": "所有神经网络",
+        "en": "Every neural network"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "AlphaZero 仍使用规则和搜索，但通过自我博弈生成训练数据。",
+      "en": "AlphaZero still used rules and search, but generated its own training data through self-play."
+    },
+    "sourceIds": [
+      "source-science-paper"
+    ],
+    "assetIds": [
+      "asset-2017-alphazero-self-play-loop"
+    ]
+  }
+]

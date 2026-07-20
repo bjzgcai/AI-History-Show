@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-archived-openai-announcement",
+    "type": "archive",
+    "label": {
+      "zh": "归档公告",
+      "en": "Archived announcement"
+    },
+    "title": {
+      "zh": "OpenAI 公告归档",
+      "en": "Archived OpenAI announcement"
+    },
+    "url": "https://web.archive.org/web/20151212000000/https://openai.com/blog/introducing-openai/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-wired-contemporary-coverage",
+    "type": "reference-only",
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "title": {
+      "zh": "Wired 同期报道",
+      "en": "Wired contemporary coverage"
+    },
+    "url": "https://www.wired.com/2015/12/how-elon-musk-and-y-combinator-plan-to-stop-computers-from-taking-over/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-bbc-contemporary-coverage",
+    "type": "reference-only",
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "title": {
+      "zh": "BBC 同期报道",
+      "en": "BBC contemporary coverage"
+    },
+    "url": "https://www.bbc.com/news/technology-35082344",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-openai-organization-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "二手参考",
+      "en": "Secondary reference"
+    },
+    "title": {
+      "zh": "OpenAI 组织概览",
+      "en": "OpenAI organization overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/OpenAI",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

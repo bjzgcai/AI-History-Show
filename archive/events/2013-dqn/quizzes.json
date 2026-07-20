@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2013-dqn-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "哪两个技巧帮助稳定 DQN 训练？",
+      "en": "Which two tricks helped stabilize DQN training?"
+    },
+    "options": [
+      {
+        "zh": "经验回放和目标网络",
+        "en": "Experience replay and a target network"
+      },
+      {
+        "zh": "只有手写规则且不学习",
+        "en": "Only handwritten rules and no learning"
+      },
+      {
+        "zh": "只有 WordNet 标签和 synsets",
+        "en": "WordNet labels and synsets only"
+      },
+      {
+        "zh": "随机删除所有奖励",
+        "en": "Randomly deleting all rewards"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "经验回放采样过去转移，目标网络则减慢 Q 学习更新中的移动目标。",
+      "en": "Replay samples past transitions, while the target network slows down the moving target in Q-learning updates."
+    },
+    "sourceIds": [
+      "source-playing-atari-with-deep-reinforcement-learning"
+    ],
+    "assetIds": [
+      "asset-2013-dqn-volodymyr-mnih"
+    ]
+  }
+]

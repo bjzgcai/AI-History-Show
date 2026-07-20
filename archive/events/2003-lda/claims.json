@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "潜在狄利克雷分配 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "Latent Dirichlet Allocation is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-latent-dirichlet-allocation",
+      "source-david-m-blei-homepage"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>",
+      "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>"
+    },
+    "sourceIds": [
+      "source-latent-dirichlet-allocation",
+      "source-david-m-blei-homepage"
+    ],
+    "status": "needs-source"
+  }
+]

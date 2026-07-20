@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2016-yolo-quiz-1",
+    "storylineId": "",
+    "question": {
+      "zh": "YOLO 与许多早期目标检测器的关键不同是什么？",
+      "en": "What made YOLO different from many earlier object detectors?"
+    },
+    "options": [
+      {
+        "zh": "它在一次网络前向传播中预测框和类别",
+        "en": "It predicts boxes and classes in one network pass"
+      },
+      {
+        "zh": "它需要独立定理证明器",
+        "en": "It requires a separate theorem prover"
+      },
+      {
+        "zh": "它只聚类表格点",
+        "en": "It only clusters tabular points"
+      },
+      {
+        "zh": "它把记忆存成能量盆地",
+        "en": "It stores memories as energy basins"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "zh": "YOLO 把检测看作网格上的统一预测问题，从而实现实时性能。",
+      "en": "YOLO treats detection as unified prediction over a grid, enabling real-time performance."
+    },
+    "sourceIds": [
+      "source-you-only-look-once-unified-real-time-object-detection"
+    ],
+    "assetIds": [
+      "asset-2016-yolo-joseph-redmon"
+    ]
+  }
+]

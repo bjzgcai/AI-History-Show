@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-histograms-of-oriented-gradients-for-human-detection",
+    "type": "paper",
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "title": {
+      "zh": "《用于人体检测的方向梯度直方图》",
+      "en": "Histograms of Oriented Gradients for Human Detection"
+    },
+    "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-ieee-cvpr-paper-record",
+    "type": "paper",
+    "label": {
+      "zh": "会议论文",
+      "en": "Conference paper"
+    },
+    "title": {
+      "zh": "IEEE CVPR 论文记录",
+      "en": "IEEE CVPR paper record"
+    },
+    "url": "https://doi.org/10.1109/CVPR.2005.177",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-histogram-of-oriented-gradients-overview",
+    "type": "reference-only",
+    "label": {
+      "zh": "背景",
+      "en": "Background"
+    },
+    "title": {
+      "zh": "方向梯度直方图概览",
+      "en": "Histogram of oriented gradients overview"
+    },
+    "url": "https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-scikit-image-hog-example",
+    "type": "reference-only",
+    "label": {
+      "zh": "文档",
+      "en": "Documentation"
+    },
+    "title": {
+      "zh": "scikit-image HOG 示例",
+      "en": "scikit-image HOG example"
+    },
+    "url": "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

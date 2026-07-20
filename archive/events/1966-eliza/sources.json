@@ -1,0 +1,59 @@
+[
+  {
+    "id": "source-eliza-cacm-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "ELIZA CACM paper",
+      "en": "ELIZA CACM paper"
+    },
+    "url": "https://doi.org/10.1145/365153.365168",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-mit-news-obituary-for-joseph-weizenbaum",
+    "type": "reference-only",
+    "label": {
+      "zh": "机构",
+      "en": "Institution"
+    },
+    "title": {
+      "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆",
+      "en": "MIT News obituary for Joseph Weizenbaum"
+    },
+    "url": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  },
+  {
+    "id": "source-eliza-source-reconstruction-project",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "ELIZA source reconstruction project",
+      "en": "ELIZA source reconstruction project"
+    },
+    "url": "https://sites.google.com/view/elizagen-org/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+      "en": "Migrated from generated legacy milestone achievement sources."
+    }
+  }
+]

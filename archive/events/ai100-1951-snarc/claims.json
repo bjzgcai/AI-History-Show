@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-legacy-achievement-summary",
+    "importance": "core",
+    "text": {
+      "zh": "SNARC 是当前 legacy 展示中的一个 AI 历史节点。",
+      "en": "SNARC is an AI history milestone in the current legacy presentation."
+    },
+    "sourceIds": [
+      "source-snarc-history-overview",
+      "source-history-of-ai-snarc-article"
+    ],
+    "status": "needs-source"
+  },
+  {
+    "id": "claim-legacy-description",
+    "importance": "context",
+    "text": {
+      "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>",
+      "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>"
+    },
+    "sourceIds": [
+      "source-snarc-history-overview",
+      "source-history-of-ai-snarc-article"
+    ],
+    "status": "needs-source"
+  }
+]
