@@ -54,7 +54,7 @@
   {
     "id": "asset-2011-ibm-watson-ibmwatson",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+    "path": "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg",
     "role": "supporting-image",
     "caption": {
       "zh": "IBM Watson《危险边缘！》演示",
@@ -64,8 +64,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
     },
@@ -76,12 +76,17 @@
     "subcaption": {
       "zh": "Watson 问答系统的公开演示界面。",
       "en": "Public demonstration interface for the Watson question-answering system."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
   },
   {
     "id": "asset-2011-ibm-watson-deepqa",
-    "type": "svg",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+    "type": "image",
+    "path": "resources/images/external/2011-ibm-watson/deepqa-question-answering-pipeline.png",
     "role": "architecture-explainer",
     "caption": {
       "zh": "DeepQA 问答处理流程",
@@ -91,8 +96,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg"
     },
@@ -103,6 +108,11 @@
     "subcaption": {
       "zh": "从问题分析、候选答案生成到证据评分和最终排序的处理流程。",
       "en": "Pipeline from question analysis and candidate generation to evidence scoring and final ranking."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg"
   }
 ]

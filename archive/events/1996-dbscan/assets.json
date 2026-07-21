@@ -54,7 +54,7 @@
   {
     "id": "asset-1996-dbscan-sfu-professor-martin-ester-2019",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
+    "path": "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "马丁·埃斯特肖像",
@@ -64,8 +64,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
     },
@@ -76,12 +76,17 @@
     "subcaption": {
       "zh": "DBSCAN 共同作者。",
       "en": "Co-author of DBSCAN."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
   },
   {
     "id": "asset-1996-dbscan-dbscan-density-data",
-    "type": "svg",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+    "type": "image",
+    "path": "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png",
     "role": "algorithm-explainer",
     "caption": {
       "zh": "DBSCAN 密度聚类示意",
@@ -91,8 +96,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
     },
@@ -103,6 +108,11 @@
     "subcaption": {
       "zh": "展示密度连通的数据簇与噪声点。",
       "en": "Shows density-connected clusters and noise points."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
   }
 ]

@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-1982-som-teuvo-kohonen",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
+    "path": "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "泰沃·科霍宁肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "自组织映射提出者。",
       "en": "Creator of self-organizing maps."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg"
   }
 ]

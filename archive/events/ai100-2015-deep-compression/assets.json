@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan",
     "type": "image",
-    "path": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+    "path": "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "韩松肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自韩松人物资料来源 CDN；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Song Han profile source CDN; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "Deep Compression 主要作者。",
       "en": "Lead author of Deep Compression."
-    }
+    },
+    "sourceName": {
+      "zh": "韩松人物资料来源 CDN",
+      "en": "Song Han profile source CDN"
+    },
+    "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
   }
 ]

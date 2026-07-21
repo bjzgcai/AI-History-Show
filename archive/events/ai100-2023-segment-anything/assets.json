@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2023-segment-anything-alexander-kirillov",
     "type": "image",
-    "path": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+    "path": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "亚历山大·基里洛夫肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自亚历山大·基里洛夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Alexander Kirillov personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "Segment Anything 主要作者。",
       "en": "Lead author of Segment Anything."
-    }
+    },
+    "sourceName": {
+      "zh": "亚历山大·基里洛夫个人网站",
+      "en": "Alexander Kirillov personal website"
+    },
+    "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg"
   }
 ]

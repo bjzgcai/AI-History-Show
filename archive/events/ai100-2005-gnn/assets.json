@@ -28,20 +28,20 @@
   {
     "id": "asset-ai100-2005-gnn-citations",
     "type": "image",
-    "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2",
+    "path": "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "弗兰科·斯卡塞利肖像",
       "en": "Franco Scarselli portrait"
     },
-    "sourceId": "source-the-graph-neural-network-model",
+    "sourceId": "source-franco-scarselli-homepage",
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自锡耶纳大学作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from University of Siena author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
-      "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2"
+      "sourceUrl": "https://www3.diism.unisi.it/~franco/io.jpg"
     },
     "usage": [
       "variant:bench-council-ai100"
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "图神经网络模型共同作者。",
       "en": "Co-author of the graph neural network model."
-    }
+    },
+    "sourceName": {
+      "zh": "锡耶纳大学作者主页",
+      "en": "University of Siena author homepage"
+    },
+    "sourceUrl": "https://www3.diism.unisi.it/~franco/"
   }
 ]

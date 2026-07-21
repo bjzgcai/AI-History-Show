@@ -54,7 +54,7 @@
   {
     "id": "asset-1951-strachey-draughts-program-external",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+    "path": "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
     "role": "source-card",
     "caption": {
       "zh": "斯特雷奇跳棋程序显示画面",
@@ -64,8 +64,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
     },
@@ -77,12 +77,17 @@
     "subcaption": {
       "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
       "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
   },
   {
     "id": "asset-1951-strachey-draughts-checkers-board-external",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+    "path": "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
     "role": "supporting-image",
     "caption": {
       "zh": "标准跳棋棋盘",
@@ -92,8 +97,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
     },
@@ -105,6 +110,11 @@
     "subcaption": {
       "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
       "en": "The board environment handled by Strachey's program."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
   }
 ]

@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2016-nas-headshot",
     "type": "image",
-    "path": "https://barretzoph.github.io/images/headshot.jpg",
+    "path": "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "巴雷特·佐夫肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自巴雷特·佐夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Barret Zoph personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "神经架构搜索主要作者。",
       "en": "Lead author of neural architecture search."
-    }
+    },
+    "sourceName": {
+      "zh": "巴雷特·佐夫个人网站",
+      "en": "Barret Zoph personal website"
+    },
+    "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg"
   }
 ]

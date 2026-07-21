@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-21 08:34
+// 生成时间: 2026-07-21 09:21
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -19777,8 +19777,8 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
+        "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg",
+        "resources/images/external/2011-ibm-watson/deepqa-question-answering-pipeline.png",
         "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg"
       ],
       "videos": [],
@@ -19814,7 +19814,7 @@ const milestones = [
         "role": "hero-image",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg": {
+      "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg": {
         "caption": {
           "zh": "IBM Watson《危险边缘！》演示",
           "en": "IBM Watson Jeopardy! demonstration"
@@ -19823,23 +19823,28 @@ const milestones = [
           "zh": "Watson 问答系统的公开演示界面。",
           "en": "Public demonstration interface for the Watson question-answering system."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-watson-beyond-jeopardy",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
         },
         "role": "supporting-image",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg": {
+      "resources/images/external/2011-ibm-watson/deepqa-question-answering-pipeline.png": {
         "caption": {
           "zh": "DeepQA 问答处理流程",
           "en": "DeepQA question-answering pipeline"
@@ -19848,21 +19853,26 @@ const milestones = [
           "zh": "从问题分析、候选答案生成到证据评分和最终排序的处理流程。",
           "en": "Pipeline from question analysis and candidate generation to evidence scoring and final ranking."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-watson-beyond-jeopardy",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg"
         },
         "role": "architecture-explainer",
-        "type": "svg"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg": {
         "caption": {
@@ -20284,8 +20294,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
+        "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
       ],
@@ -20298,7 +20308,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
+      "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
           "zh": "斯特雷奇跳棋程序显示画面",
           "en": "Strachey draughts program display"
@@ -20307,23 +20317,28 @@ const milestones = [
           "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
           "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-strachey-draughts-program-screenshot",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
         "role": "source-card",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+      "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
         "caption": {
           "zh": "标准跳棋棋盘",
           "en": "Standard checkers board"
@@ -20332,16 +20347,21 @@ const milestones = [
           "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
           "en": "The board environment handled by Strachey's program."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-checkers-board-photo",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
         },
@@ -20792,7 +20812,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+        "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
         "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
         "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg"
@@ -20806,7 +20826,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
+      "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg": {
         "caption": {
           "zh": "乔纳森·谢弗肖像",
           "en": "Jonathan Schaeffer portrait"
@@ -20815,16 +20835,21 @@ const milestones = [
           "zh": "Chinook 团队负责人。",
           "en": "Leader of the Chinook team."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-jonathan-schaeffer-portrait",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },
@@ -21300,7 +21325,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+        "resources/images/external/1959-pandemonium/pandemonium-layered-recognition-architecture.jpg",
         "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg",
         "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg"
       ],
@@ -21337,7 +21362,7 @@ const milestones = [
         "role": "hero-image",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg": {
+      "resources/images/external/1959-pandemonium/pandemonium-layered-recognition-architecture.jpg": {
         "caption": {
           "zh": "Pandemonium 分层识别架构",
           "en": "Pandemonium layered recognition architecture"
@@ -21346,16 +21371,21 @@ const milestones = [
           "zh": "数据魔、计算魔、认知魔和决策魔组成的分层结构。",
           "en": "Layered structure of data, computational, cognitive, and decision demons."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-pandemonium-a-paradigm-for-learning",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg"
         },
@@ -21820,7 +21850,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+        "resources/images/external/1984-cyc/cyc-related-project-marks.png",
         "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg",
         "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg"
       ],
@@ -21857,7 +21887,7 @@ const milestones = [
         "role": "hero-image",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png": {
+      "resources/images/external/1984-cyc/cyc-related-project-marks.png": {
         "caption": {
           "zh": "Cyc 项目相关标识",
           "en": "Cyc-related project marks"
@@ -21866,16 +21896,21 @@ const milestones = [
           "zh": "Cyc 知识库及相关项目使用的标识组合。",
           "en": "A group of marks used by Cyc and related knowledge-base projects."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-building-large-knowledge-based-systems",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"
         },
@@ -22326,8 +22361,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+        "resources/images/external/1980-xcon-r1/dec-vax-11-780-computer.jpg",
+        "resources/images/external/1980-xcon-r1/vax-11-780-cpu-backplane.jpg",
         "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
         "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg"
       ],
@@ -22340,7 +22375,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg": {
+      "resources/images/external/1980-xcon-r1/dec-vax-11-780-computer.jpg": {
         "caption": {
           "zh": "DEC VAX 11/780 计算机",
           "en": "DEC VAX 11/780 computer"
@@ -22349,23 +22384,28 @@ const milestones = [
           "zh": "XCON/R1 用于自动配置 VAX 计算机系统订单。",
           "en": "XCON/R1 automated the configuration of VAX computer orders."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
         },
         "role": "supporting-image",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg": {
+      "resources/images/external/1980-xcon-r1/vax-11-780-cpu-backplane.jpg": {
         "caption": {
           "zh": "VAX 11/780 CPU 背板",
           "en": "VAX 11/780 CPU backplane"
@@ -22374,16 +22414,21 @@ const milestones = [
           "zh": "VAX 系统内部硬件组件资料照。",
           "en": "Reference photo of an internal VAX hardware component."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-r1-an-expert-in-the-computer-systems-domain",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
         },
@@ -22834,8 +22879,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+        "resources/images/external/1957-kmeans/bell-labs-holmdel-complex.jpg",
+        "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png",
         "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
         "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg"
       ],
@@ -22848,7 +22893,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg": {
+      "resources/images/external/1957-kmeans/bell-labs-holmdel-complex.jpg": {
         "caption": {
           "zh": "贝尔实验室霍姆德尔园区",
           "en": "Bell Labs Holmdel complex"
@@ -22857,23 +22902,28 @@ const milestones = [
           "zh": "斯图尔特·劳埃德提出量化方法时所在机构的历史建筑。",
           "en": "Historic Bell Labs site associated with Stuart Lloyd's quantization work."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-least-squares-quantization-in-pcm",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg"
         },
         "role": "supporting-image",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg": {
+      "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png": {
         "caption": {
           "zh": "K-means 鸢尾花聚类结果",
           "en": "K-means clustering of iris data"
@@ -22882,21 +22932,26 @@ const milestones = [
           "zh": "颜色展示 K-means 得到的不同数据簇。",
           "en": "Colors show the clusters produced by K-means."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-least-squares-quantization-in-pcm",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg"
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg": {
         "caption": {
@@ -23355,8 +23410,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+        "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
+        "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png",
         "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg",
         "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg"
       ],
@@ -23369,7 +23424,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg": {
+      "resources/images/external/1996-dbscan/martin-ester-portrait.jpg": {
         "caption": {
           "zh": "马丁·埃斯特肖像",
           "en": "Martin Ester portrait"
@@ -23378,23 +23433,28 @@ const milestones = [
           "zh": "DBSCAN 共同作者。",
           "en": "Co-author of DBSCAN."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
         },
         "role": "portrait",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg": {
+      "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png": {
         "caption": {
           "zh": "DBSCAN 密度聚类示意",
           "en": "DBSCAN density-clustering diagram"
@@ -23403,21 +23463,26 @@ const milestones = [
           "zh": "展示密度连通的数据簇与噪声点。",
           "en": "Shows density-connected clusters and noise points."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg": {
         "caption": {
@@ -23876,8 +23941,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+        "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
+        "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png",
         "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
         "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg"
       ],
@@ -23890,7 +23955,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg": {
+      "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg": {
         "caption": {
           "zh": "吴恩达肖像",
           "en": "Andrew Ng portrait"
@@ -23899,23 +23964,28 @@ const milestones = [
           "zh": "谱聚类形式化的重要贡献者。",
           "en": "Key contributor to spectral-clustering formulations."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-normalized-cuts-and-image-segmentation",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
         },
         "role": "portrait",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg": {
+      "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png": {
         "caption": {
           "zh": "谱聚类六节点图示",
           "en": "Six-node spectral-clustering graph"
@@ -23924,21 +23994,26 @@ const milestones = [
           "zh": "用于说明谱聚类中的图结构与连接关系。",
           "en": "Illustrates graph structure and connectivity in spectral clustering."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-normalized-cuts-and-image-segmentation",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
         },
         "role": "algorithm-explainer",
-        "type": "svg"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg": {
         "caption": {
@@ -24397,17 +24472,17 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
+        "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-ai100-1967-knn-2012-04-12-obit-cover",
+        "asset-ai100-1967-knn-thomas-cover-stanford",
         "asset-1967-knn-neighbor-vote"
       ]
     },
     "imageMeta": {
-      "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg": {
+      "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg": {
         "caption": {
           "zh": "托马斯·科弗肖像",
           "en": "Thomas Cover portrait"
@@ -24416,18 +24491,23 @@ const milestones = [
           "zh": "最近邻分类共同作者。",
           "en": "Co-author of nearest-neighbor classification."
         },
-        "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "sourceName": {
+          "zh": "Stanford 信息系统实验室",
+          "en": "Stanford Information Systems Laboratory"
         },
-        "sourceId": "source-nearest-neighbor-pattern-classification",
+        "sourceUrl": "https://isl.stanford.edu/~cover/",
+        "license": {
+          "zh": "Stanford 人物主页照片，未注明许可；本地副本用于保证展览稳定显示。",
+          "en": "Stanford profile photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
+        },
+        "sourceId": "source-thomas-cover-stanford-profile",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "Stanford 人物主页照片，未注明许可；本地副本用于保证展览稳定显示。",
+            "en": "Stanford profile photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
           },
-          "sourceUrl": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg"
+          "sourceUrl": "https://isl.stanford.edu/~cover/tc07small.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -24546,13 +24626,28 @@ const milestones = [
           "url": "https://scikit-learn.org/stable/modules/neighbors.html",
           "reliability": "reference-only",
           "sourceType": "reference-only"
+        },
+        {
+          "id": "source-thomas-cover-stanford-profile",
+          "type": {
+            "zh": "人物主页",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "托马斯·科弗 Stanford 人物主页",
+            "en": "Thomas Cover Stanford profile"
+          },
+          "url": "https://isl.stanford.edu/~cover/",
+          "reliability": "primary",
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
         "source-nearest-neighbor-pattern-classification",
         "source-stanford-hosted-paper-pdf",
         "source-k-nearest-neighbors-algorithm-overview",
-        "source-scikit-learn-nearest-neighbors-documentation"
+        "source-scikit-learn-nearest-neighbors-documentation",
+        "source-thomas-cover-stanford-profile"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -24884,7 +24979,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+        "resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg",
         "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg"
       ],
       "videos": [],
@@ -24894,7 +24989,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg": {
+      "resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg": {
         "caption": {
           "zh": "阿瑟·霍尔与岭回归公式",
           "en": "Arthur Hoerl and the ridge-regression formula"
@@ -24903,16 +24998,21 @@ const milestones = [
           "zh": "岭回归共同作者与 L2 惩罚项的组合资料图。",
           "en": "Composite image of a ridge-regression co-author and the L2 penalty term."
         },
+        "sourceName": {
+          "zh": "特拉华大学 UDaily",
+          "en": "University of Delaware UDaily"
+        },
+        "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自特拉华大学 UDaily；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from University of Delaware UDaily; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自特拉华大学 UDaily；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from University of Delaware UDaily; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg"
         },
@@ -25371,39 +25471,44 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
+        "resources/images/external/ai100-2005-hog/bill-triggs-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde",
+        "asset-ai100-2005-hog-bill-triggs-portrait",
         "asset-2005-hog-descriptor-grid"
       ]
     },
     "imageMeta": {
-      "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280": {
+      "resources/images/external/ai100-2005-hog/bill-triggs-portrait.jpg": {
         "caption": {
-          "zh": "HOG 作者资料图",
-          "en": "HOG author reference image"
+          "zh": "比尔·特里格斯肖像",
+          "en": "Bill Triggs portrait"
         },
         "subcaption": {
-          "zh": "人物身份及其与 HOG 事件的关系仍需核验。",
-          "en": "The person's identity and relationship to the HOG event still require verification."
+          "zh": "HOG 论文共同作者。",
+          "en": "Co-author of the HOG paper."
         },
+        "sourceName": {
+          "zh": "INRIA/LEAR 作者主页",
+          "en": "INRIA/LEAR author homepage"
+        },
+        "sourceUrl": "https://lear.inrialpes.fr/people/triggs/",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "INRIA/LEAR 作者主页照片，未注明许可；本地副本用于保证展览稳定显示。",
+          "en": "INRIA/LEAR author-page photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
         },
-        "sourceId": "source-histograms-of-oriented-gradients-for-human-detection",
+        "sourceId": "source-bill-triggs-lear-profile",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "INRIA/LEAR 作者主页照片，未注明许可；本地副本用于保证展览稳定显示。",
+            "en": "INRIA/LEAR author-page photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
           },
-          "sourceUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280"
+          "sourceUrl": "https://lear.inrialpes.fr/people/triggs/bill2.jpg"
         },
-        "role": "supporting-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg": {
@@ -25520,13 +25625,28 @@ const milestones = [
           "url": "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html",
           "reliability": "reference-only",
           "sourceType": "reference-only"
+        },
+        {
+          "id": "source-bill-triggs-lear-profile",
+          "type": {
+            "zh": "作者主页",
+            "en": "Author profile"
+          },
+          "label": {
+            "zh": "比尔·特里格斯 INRIA/LEAR 作者主页",
+            "en": "Bill Triggs INRIA/LEAR author profile"
+          },
+          "url": "https://lear.inrialpes.fr/people/triggs/",
+          "reliability": "primary",
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
         "source-histograms-of-oriented-gradients-for-human-detection",
         "source-ieee-cvpr-paper-record",
         "source-histogram-of-oriented-gradients-overview",
-        "source-scikit-image-hog-example"
+        "source-scikit-image-hog-example",
+        "source-bill-triggs-lear-profile"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -25858,7 +25978,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
+        "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
         "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg"
       ],
       "videos": [],
@@ -25868,7 +25988,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png": {
+      "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png": {
         "caption": {
           "zh": "赫伯特·贝肖像",
           "en": "Herbert Bay portrait"
@@ -25877,16 +25997,21 @@ const milestones = [
           "zh": "SURF 主要作者。",
           "en": "Lead author of SURF."
         },
+        "sourceName": {
+          "zh": "赫伯特·贝个人网站",
+          "en": "Herbert Bay personal website"
+        },
+        "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自赫伯特·贝个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Herbert Bay personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-surf-speeded-up-robust-features",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自赫伯特·贝个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Herbert Bay personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png"
         },
@@ -26345,7 +26470,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
+        "resources/images/external/ai100-1997-kernel-pca/bernhard-scholkopf-portrait.png",
         "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg"
       ],
       "videos": [],
@@ -26355,7 +26480,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png": {
+      "resources/images/external/ai100-1997-kernel-pca/bernhard-scholkopf-portrait.png": {
         "caption": {
           "zh": "伯恩哈德·舍尔科普夫肖像",
           "en": "Bernhard Scholkopf portrait"
@@ -26364,16 +26489,21 @@ const milestones = [
           "zh": "Kernel PCA 共同作者。",
           "en": "Co-author of Kernel PCA."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-nonlinear-component-analysis-as-a-kernel-eigenvalue-problem",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png"
         },
@@ -26832,7 +26962,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+        "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg"
       ],
       "videos": [],
@@ -26842,7 +26972,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj": {
+      "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg": {
         "caption": {
           "zh": "H. 塞巴斯蒂安·承肖像",
           "en": "H. Sebastian Seung portrait"
@@ -26851,16 +26981,21 @@ const milestones = [
           "zh": "非负矩阵分解论文共同作者。",
           "en": "Co-author of the non-negative matrix factorization paper."
         },
+        "sourceName": {
+          "zh": "普林斯顿神经科学研究所",
+          "en": "Princeton Neuroscience Institute"
+        },
+        "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自普林斯顿神经科学研究所；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Princeton Neuroscience Institute; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自普林斯顿神经科学研究所；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Princeton Neuroscience Institute; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj"
         },
@@ -27319,7 +27454,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+        "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg"
       ],
       "videos": [],
@@ -27329,7 +27464,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY": {
+      "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg": {
         "caption": {
           "zh": "约书亚·特南鲍姆肖像",
           "en": "Joshua Tenenbaum portrait"
@@ -27338,16 +27473,21 @@ const milestones = [
           "zh": "Isomap 主要作者。",
           "en": "Lead author of Isomap."
         },
+        "sourceName": {
+          "zh": "麻省理工学院智能探索中心",
+          "en": "MIT Quest for Intelligence"
+        },
+        "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自麻省理工学院智能探索中心；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from MIT Quest for Intelligence; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自麻省理工学院智能探索中心；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from MIT Quest for Intelligence; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY"
         },
@@ -27806,7 +27946,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
+        "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg"
       ],
       "videos": [],
@@ -27816,7 +27956,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg": {
+      "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg": {
         "caption": {
           "zh": "萨姆·罗维斯肖像",
           "en": "Sam Roweis portrait"
@@ -27825,16 +27965,21 @@ const milestones = [
           "zh": "局部线性嵌入共同作者。",
           "en": "Co-author of locally linear embedding."
         },
+        "sourceName": {
+          "zh": "纽约大学计算机科学系",
+          "en": "NYU Computer Science"
+        },
+        "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自纽约大学计算机科学系；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from NYU Computer Science; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自纽约大学计算机科学系；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from NYU Computer Science; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg"
         },
@@ -28293,7 +28438,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg",
+        "resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg",
         "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg"
       ],
       "videos": [],
@@ -28303,7 +28448,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg": {
+      "resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg": {
         "caption": {
           "zh": "沃尔特·皮茨与黑板",
           "en": "Walter Pitts at a blackboard"
@@ -28312,16 +28457,21 @@ const milestones = [
           "zh": "逻辑神经元模型共同作者，照片摄于 1954 年。",
           "en": "Co-author of the logical neuron model, photographed in 1954."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg"
         },
@@ -29253,7 +29403,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
+        "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg"
       ],
       "videos": [],
@@ -29263,7 +29413,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg": {
+      "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg": {
         "caption": {
           "zh": "泰沃·科霍宁肖像",
           "en": "Teuvo Kohonen portrait"
@@ -29272,16 +29422,21 @@ const milestones = [
           "zh": "自组织映射提出者。",
           "en": "Creator of self-organizing maps."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg"
         },
@@ -30230,7 +30385,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+        "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg"
       ],
       "videos": [],
@@ -30240,7 +30395,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
+      "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg": {
         "caption": {
           "zh": "约书亚·本吉奥肖像",
           "en": "Yoshua Bengio portrait"
@@ -30249,16 +30404,21 @@ const milestones = [
           "zh": "深度稀疏整流网络论文共同作者。",
           "en": "Co-author of the deep sparse rectifier network paper."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-deep-sparse-rectifier-neural-networks",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
         },
@@ -30708,7 +30868,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+        "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
       ],
       "videos": [],
@@ -30718,7 +30878,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg": {
+      "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg": {
         "caption": {
           "zh": "福岛邦彦肖像",
           "en": "Kunihiko Fukushima portrait"
@@ -30727,16 +30887,21 @@ const milestones = [
           "zh": "Neocognitron 提出者。",
           "en": "Creator of the neocognitron."
         },
+        "sourceName": {
+          "zh": "C&C 奖官网",
+          "en": "C&C Prize website"
+        },
+        "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-neocognitron",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
         },
@@ -31182,7 +31347,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+        "resources/images/external/1989-cnn/yann-lecun-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
         "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
         "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
@@ -31209,7 +31374,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
+      "resources/images/external/1989-cnn/yann-lecun-portrait.jpg": {
         "caption": {
           "zh": "扬·勒昆肖像",
           "en": "Yann LeCun portrait"
@@ -31218,16 +31383,21 @@ const milestones = [
           "zh": "LeNet 主要研究者。",
           "en": "Lead researcher of LeNet."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-yann-lecun-s-home-page",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
         },
@@ -31745,7 +31915,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+        "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg"
       ],
       "videos": [],
@@ -31755,7 +31925,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
+      "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg": {
         "caption": {
           "zh": "约书亚·本吉奥肖像",
           "en": "Yoshua Bengio portrait"
@@ -31764,16 +31934,21 @@ const milestones = [
           "zh": "神经概率语言模型主要作者。",
           "en": "Lead author of the neural probabilistic language model."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-a-neural-probabilistic-language-model",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
         },
@@ -33898,7 +34073,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
+        "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png",
         "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg"
       ],
       "videos": [],
@@ -33908,7 +34083,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://www.eml-munich.de/team/alexey-dosovitskiy.png": {
+      "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png": {
         "caption": {
           "zh": "阿列克谢·多索维茨基肖像",
           "en": "Alexey Dosovitskiy portrait"
@@ -33917,16 +34092,21 @@ const milestones = [
           "zh": "视觉 Transformer 主要作者。",
           "en": "Lead author of Vision Transformer."
         },
+        "sourceName": {
+          "zh": "ELLIS 慕尼黑单位",
+          "en": "ELLIS Munich Unit"
+        },
+        "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自ELLIS 慕尼黑单位；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from ELLIS Munich Unit; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-an-image-is-worth-16x16-words",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自ELLIS 慕尼黑单位；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from ELLIS Munich Unit; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png"
         },
@@ -37151,7 +37331,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+        "resources/images/external/2020-alphafold/john-jumper-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
         "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
@@ -37186,7 +37366,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg": {
+      "resources/images/external/2020-alphafold/john-jumper-portrait.jpg": {
         "caption": {
           "zh": "约翰·江珀肖像",
           "en": "John Jumper portrait"
@@ -37195,16 +37375,21 @@ const milestones = [
           "zh": "AlphaFold2 主要研究者。",
           "en": "Lead researcher of AlphaFold2."
         },
+        "sourceName": {
+          "zh": "范德堡大学新闻",
+          "en": "Vanderbilt University News"
+        },
+        "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-deepmind-alphafold-page",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
         },
@@ -38291,7 +38476,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+        "resources/images/external/ai100-2021-dalle/aditya-ramesh-portrait.png",
         "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg"
       ],
       "videos": [],
@@ -38301,7 +38486,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png": {
+      "resources/images/external/ai100-2021-dalle/aditya-ramesh-portrait.png": {
         "caption": {
           "zh": "阿迪蒂亚·拉梅什肖像",
           "en": "Aditya Ramesh portrait"
@@ -38310,16 +38495,21 @@ const milestones = [
           "zh": "DALL-E 主要作者与创建者。",
           "en": "Lead author and creator of DALL-E."
         },
+        "sourceName": {
+          "zh": "北京智源人工智能研究院",
+          "en": "Beijing Academy of Artificial Intelligence"
+        },
+        "sourceUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自北京智源人工智能研究院；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Beijing Academy of Artificial Intelligence; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-zero-shot-text-to-image-generation",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自北京智源人工智能研究院；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Beijing Academy of Artificial Intelligence; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png"
         },
@@ -38765,7 +38955,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+        "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg"
       ],
       "videos": [],
@@ -38775,7 +38965,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg": {
+      "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg": {
         "caption": {
           "zh": "罗宾·罗姆巴赫肖像",
           "en": "Robin Rombach portrait"
@@ -38784,16 +38974,21 @@ const milestones = [
           "zh": "潜扩散模型主要作者。",
           "en": "Lead author of latent diffusion models."
         },
+        "sourceName": {
+          "zh": "Latent Labs",
+          "en": "Latent Labs"
+        },
+        "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自Latent Labs；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Latent Labs; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自Latent Labs；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Latent Labs; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg"
         },
@@ -39243,7 +39438,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
+        "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg"
       ],
       "videos": [],
@@ -39253,7 +39448,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg": {
+      "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg": {
         "caption": {
           "zh": "亚历山大·基里洛夫肖像",
           "en": "Alexander Kirillov portrait"
@@ -39262,16 +39457,21 @@ const milestones = [
           "zh": "Segment Anything 主要作者。",
           "en": "Lead author of Segment Anything."
         },
+        "sourceName": {
+          "zh": "亚历山大·基里洛夫个人网站",
+          "en": "Alexander Kirillov personal website"
+        },
+        "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自亚历山大·基里洛夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Alexander Kirillov personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-segment-anything",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自亚历山大·基里洛夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Alexander Kirillov personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg"
         },
@@ -39717,7 +39917,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://zeliu98.github.io/images/zeliu.jpg",
+        "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg"
       ],
       "videos": [],
@@ -39727,7 +39927,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://zeliu98.github.io/images/zeliu.jpg": {
+      "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg": {
         "caption": {
           "zh": "刘泽肖像",
           "en": "Ze Liu portrait"
@@ -39736,16 +39936,21 @@ const milestones = [
           "zh": "Swin Transformer 主要作者。",
           "en": "Lead author of Swin Transformer."
         },
+        "sourceName": {
+          "zh": "刘泽个人网站",
+          "en": "Ze Liu personal website"
+        },
+        "sourceUrl": "https://zeliu98.github.io/images/zeliu.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自刘泽个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Ze Liu personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自刘泽个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Ze Liu personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://zeliu98.github.io/images/zeliu.jpg"
         },
@@ -40218,7 +40423,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+        "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg"
       ],
       "videos": [],
@@ -40228,7 +40433,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://nlp.stanford.edu/~jpennin/images/photo.jpeg": {
+      "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg": {
         "caption": {
           "zh": "杰弗里·彭宁顿肖像",
           "en": "Jeffrey Pennington portrait"
@@ -40237,16 +40442,21 @@ const milestones = [
           "zh": "GloVe 主要作者。",
           "en": "Lead author of GloVe."
         },
+        "sourceName": {
+          "zh": "Stanford NLP",
+          "en": "Stanford NLP"
+        },
+        "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自Stanford NLP；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Stanford NLP; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-glove-global-vectors-for-word-representation",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自Stanford NLP；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Stanford NLP; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
         },
@@ -40719,7 +40929,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
+        "resources/images/external/ai100-2014-conditional-gan/conditional-gan-paper-first-page.jpg",
         "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg"
       ],
       "videos": [],
@@ -40729,29 +40939,34 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg": {
+      "resources/images/external/ai100-2014-conditional-gan/conditional-gan-paper-first-page.jpg": {
         "caption": {
-          "zh": "人物资料图",
-          "en": "Person reference image"
+          "zh": "Conditional GAN 论文首页",
+          "en": "Conditional GAN paper first page"
         },
         "subcaption": {
-          "zh": "人物身份及其与 Conditional GAN 的关系仍需核验。",
-          "en": "The person's identity and relationship to Conditional GAN still require verification."
+          "zh": "梅赫迪·米尔扎与西蒙·奥辛德罗提出条件生成对抗网络的论文首页。",
+          "en": "First page of Mehdi Mirza and Simon Osindero's paper introducing conditional GANs."
         },
+        "sourceName": {
+          "zh": "arXiv",
+          "en": "arXiv"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1411.1784",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。",
+          "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only."
         },
         "sourceId": "source-conditional-generative-adversarial-nets",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。",
+            "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only."
           },
-          "sourceUrl": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg"
+          "sourceUrl": "https://arxiv.org/pdf/1411.1784"
         },
-        "role": "supporting-image",
+        "role": "paper-page",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg": {
@@ -41720,7 +41935,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://leon.bottou.org/_media/bottou_75.jpg",
+        "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg"
       ],
       "videos": [],
@@ -41730,7 +41945,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://leon.bottou.org/_media/bottou_75.jpg": {
+      "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait.jpg": {
         "caption": {
           "zh": "莱昂·博图肖像",
           "en": "Leon Bottou portrait"
@@ -41739,16 +41954,21 @@ const milestones = [
           "zh": "Wasserstein GAN 共同作者。",
           "en": "Co-author of Wasserstein GAN."
         },
+        "sourceName": {
+          "zh": "莱昂·博图个人网站",
+          "en": "Leon Bottou personal website"
+        },
+        "sourceUrl": "https://leon.bottou.org/_media/bottou_75.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自莱昂·博图个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Leon Bottou personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-wasserstein-generative-adversarial-networks",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自莱昂·博图个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Leon Bottou personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://leon.bottou.org/_media/bottou_75.jpg"
         },
@@ -42221,7 +42441,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
+        "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg"
       ],
       "videos": [],
@@ -42231,7 +42451,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg": {
+      "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg": {
         "caption": {
           "zh": "朱俊彦肖像",
           "en": "Jun-Yan Zhu portrait"
@@ -42240,16 +42460,21 @@ const milestones = [
           "zh": "CycleGAN 主要作者。",
           "en": "Lead author of CycleGAN."
         },
+        "sourceName": {
+          "zh": "卡内基梅隆大学作者主页",
+          "en": "Carnegie Mellon author homepage"
+        },
+        "sourceUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自卡内基梅隆大学作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Carnegie Mellon author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自卡内基梅隆大学作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Carnegie Mellon author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg"
         },
@@ -42722,7 +42947,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+        "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg"
       ],
       "videos": [],
@@ -42732,7 +42957,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg": {
+      "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg": {
         "caption": {
           "zh": "菲利普·伊索拉肖像",
           "en": "Phillip Isola portrait"
@@ -42741,16 +42966,21 @@ const milestones = [
           "zh": "Pix2Pix 主要作者。",
           "en": "Lead author of Pix2Pix."
         },
+        "sourceName": {
+          "zh": "麻省理工学院作者主页",
+          "en": "MIT author homepage"
+        },
+        "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自麻省理工学院作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from MIT author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自麻省理工学院作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from MIT author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
         },
@@ -43223,7 +43453,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
+        "resources/images/external/ai100-2019-stylegan/tero-karras-portrait.png",
         "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg"
       ],
       "videos": [],
@@ -43233,7 +43463,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://research.nvidia.com/sites/default/files/person/tero-karras.png": {
+      "resources/images/external/ai100-2019-stylegan/tero-karras-portrait.png": {
         "caption": {
           "zh": "特罗·卡拉斯肖像",
           "en": "Tero Karras portrait"
@@ -43242,16 +43472,21 @@ const milestones = [
           "zh": "StyleGAN 主要作者。",
           "en": "Lead author of StyleGAN."
         },
+        "sourceName": {
+          "zh": "NVIDIA Research",
+          "en": "NVIDIA Research"
+        },
+        "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自NVIDIA Research；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from NVIDIA Research; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-a-style-based-generator-architecture-for-gans",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自NVIDIA Research；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from NVIDIA Research; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
         },
@@ -43724,7 +43959,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://dpkingma.com/files/portrait.jpg",
+        "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg"
       ],
       "videos": [],
@@ -43734,7 +43969,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://dpkingma.com/files/portrait.jpg": {
+      "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg": {
         "caption": {
           "zh": "迪德里克·金马肖像",
           "en": "Diederik Kingma portrait"
@@ -43743,16 +43978,21 @@ const milestones = [
           "zh": "变分自编码器共同作者。",
           "en": "Co-author of the variational autoencoder."
         },
+        "sourceName": {
+          "zh": "迪德里克·金马个人网站",
+          "en": "Diederik Kingma personal website"
+        },
+        "sourceUrl": "https://dpkingma.com/files/portrait.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自迪德里克·金马个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Diederik Kingma personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-auto-encoding-variational-bayes",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自迪德里克·金马个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Diederik Kingma personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://dpkingma.com/files/portrait.jpg"
         },
@@ -44225,7 +44465,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png",
+        "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
         "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg"
       ],
       "videos": [],
@@ -44235,7 +44475,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png": {
+      "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png": {
         "caption": {
           "zh": "雅沙·索尔-迪克斯坦肖像",
           "en": "Jascha Sohl-Dickstein portrait"
@@ -44244,16 +44484,21 @@ const milestones = [
           "zh": "扩散模型主要作者。",
           "en": "Lead author of the diffusion-model paper."
         },
+        "sourceName": {
+          "zh": "雅沙·索尔-迪克斯坦人物资料来源",
+          "en": "Jascha Sohl-Dickstein profile source"
+        },
+        "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自雅沙·索尔-迪克斯坦人物资料来源；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Jascha Sohl-Dickstein profile source; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自雅沙·索尔-迪克斯坦人物资料来源；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Jascha Sohl-Dickstein profile source; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png"
         },
@@ -44726,7 +44971,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2",
+        "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg"
       ],
       "videos": [],
@@ -44736,7 +44981,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2": {
+      "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg": {
         "caption": {
           "zh": "弗兰科·斯卡塞利肖像",
           "en": "Franco Scarselli portrait"
@@ -44745,18 +44990,23 @@ const milestones = [
           "zh": "图神经网络模型共同作者。",
           "en": "Co-author of the graph neural network model."
         },
-        "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "sourceName": {
+          "zh": "锡耶纳大学作者主页",
+          "en": "University of Siena author homepage"
         },
-        "sourceId": "source-the-graph-neural-network-model",
+        "sourceUrl": "https://www3.diism.unisi.it/~franco/",
+        "license": {
+          "zh": "本地副本来自锡耶纳大学作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from University of Siena author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
+        },
+        "sourceId": "source-franco-scarselli-homepage",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自锡耶纳大学作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from University of Siena author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
-          "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2"
+          "sourceUrl": "https://www3.diism.unisi.it/~franco/io.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -44861,12 +45111,27 @@ const milestones = [
           "url": "https://en.wikipedia.org/wiki/Graph_neural_network",
           "reliability": "reference-only",
           "sourceType": "reference-only"
+        },
+        {
+          "id": "source-franco-scarselli-homepage",
+          "type": {
+            "zh": "作者主页",
+            "en": "Author homepage"
+          },
+          "label": {
+            "zh": "弗兰科·斯卡塞利个人主页",
+            "en": "Franco Scarselli homepage"
+          },
+          "url": "https://www3.diism.unisi.it/~franco/",
+          "reliability": "primary",
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
         "source-the-graph-neural-network-model",
         "source-a-new-model-for-learning-in-graph-domains",
-        "source-graph-neural-network-overview"
+        "source-graph-neural-network-overview",
+        "source-franco-scarselli-homepage"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -45227,7 +45492,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://tkipf.github.io/images/photo.jpg",
+        "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg"
       ],
       "videos": [],
@@ -45237,7 +45502,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://tkipf.github.io/images/photo.jpg": {
+      "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg": {
         "caption": {
           "zh": "托马斯·基普夫肖像",
           "en": "Thomas Kipf portrait"
@@ -45246,16 +45511,21 @@ const milestones = [
           "zh": "GCN 主要作者。",
           "en": "Lead author of GCN."
         },
+        "sourceName": {
+          "zh": "托马斯·基普夫个人网站",
+          "en": "Thomas Kipf personal website"
+        },
+        "sourceUrl": "https://tkipf.github.io/images/photo.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自托马斯·基普夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Thomas Kipf personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自托马斯·基普夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Thomas Kipf personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
         },
@@ -45728,7 +45998,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1",
+        "resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg"
       ],
       "videos": [],
@@ -45738,7 +46008,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1": {
+      "resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg": {
         "caption": {
           "zh": "佩塔尔·韦利奇科维奇肖像",
           "en": "Petar Velickovic portrait"
@@ -45747,16 +46017,21 @@ const milestones = [
           "zh": "GAT 主要作者。",
           "en": "Lead author of GAT."
         },
+        "sourceName": {
+          "zh": "Google Scholar",
+          "en": "Google Scholar"
+        },
+        "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自Google Scholar；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Google Scholar; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-graph-attention-networks",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自Google Scholar；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Google Scholar; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1"
         },
@@ -46239,7 +46514,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://barretzoph.github.io/images/headshot.jpg",
+        "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg"
       ],
       "videos": [],
@@ -46249,7 +46524,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://barretzoph.github.io/images/headshot.jpg": {
+      "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg": {
         "caption": {
           "zh": "巴雷特·佐夫肖像",
           "en": "Barret Zoph portrait"
@@ -46258,16 +46533,21 @@ const milestones = [
           "zh": "神经架构搜索主要作者。",
           "en": "Lead author of neural architecture search."
         },
+        "sourceName": {
+          "zh": "巴雷特·佐夫个人网站",
+          "en": "Barret Zoph personal website"
+        },
+        "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自巴雷特·佐夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Barret Zoph personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-neural-architecture-search-with-reinforcement-learning",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自巴雷特·佐夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Barret Zoph personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg"
         },
@@ -46740,7 +47020,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
+        "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg"
       ],
       "videos": [],
@@ -46750,7 +47030,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg": {
+      "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg": {
         "caption": {
           "zh": "韩松肖像",
           "en": "Song Han portrait"
@@ -46759,16 +47039,21 @@ const milestones = [
           "zh": "Deep Compression 主要作者。",
           "en": "Lead author of Deep Compression."
         },
+        "sourceName": {
+          "zh": "韩松人物资料来源 CDN",
+          "en": "Song Han profile source CDN"
+        },
+        "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自韩松人物资料来源 CDN；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Song Han profile source CDN; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-deep-compression",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自韩松人物资料来源 CDN；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Song Han profile source CDN; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
         },
@@ -47751,7 +48036,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://tsungyilin.info/images/tsungyi.jpeg",
+        "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg"
       ],
       "videos": [],
@@ -47761,7 +48046,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://tsungyilin.info/images/tsungyi.jpeg": {
+      "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg": {
         "caption": {
           "zh": "林宗毅肖像",
           "en": "Tsung-Yi Lin portrait"
@@ -47770,16 +48055,21 @@ const milestones = [
           "zh": "MS COCO 主要作者。",
           "en": "Lead author of MS COCO."
         },
+        "sourceName": {
+          "zh": "林宗毅个人网站",
+          "en": "Tsung-Yi Lin personal website"
+        },
+        "sourceUrl": "https://tsungyilin.info/images/tsungyi.jpeg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自林宗毅个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Tsung-Yi Lin personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-microsoft-coco-common-objects-in-context",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自林宗毅个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Tsung-Yi Lin personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://tsungyilin.info/images/tsungyi.jpeg"
         },
@@ -48252,7 +48542,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+        "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg"
       ],
       "videos": [],
@@ -48262,7 +48552,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1": {
+      "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg": {
         "caption": {
           "zh": "克里斯托弗·沃特金斯肖像",
           "en": "Christopher Watkins portrait"
@@ -48271,16 +48561,21 @@ const milestones = [
           "zh": "Q-learning 主要作者。",
           "en": "Lead author of Q-learning."
         },
+        "sourceName": {
+          "zh": "Google Scholar",
+          "en": "Google Scholar"
+        },
+        "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自Google Scholar；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Google Scholar; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-learning-from-delayed-rewards",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自Google Scholar；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Google Scholar; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1"
         },
@@ -48753,7 +49048,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+        "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait.png",
         "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg"
       ],
       "videos": [],
@@ -48763,7 +49058,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png": {
+      "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait.png": {
         "caption": {
           "zh": "蒂莫西·利利克拉普肖像",
           "en": "Timothy Lillicrap portrait"
@@ -48772,16 +49067,21 @@ const milestones = [
           "zh": "DDPG 主要作者。",
           "en": "Lead author of DDPG."
         },
+        "sourceName": {
+          "zh": "Stanford Neurosciences",
+          "en": "Stanford Neurosciences"
+        },
+        "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Stanford Neurosciences; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Stanford Neurosciences; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
         },
@@ -49254,7 +49554,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+        "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg"
       ],
       "videos": [],
@@ -49264,7 +49564,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM": {
+      "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg": {
         "caption": {
           "zh": "安德鲁·巴托肖像",
           "en": "Andrew Barto portrait"
@@ -49273,16 +49573,21 @@ const milestones = [
           "zh": "Actor-Critic 共同作者。",
           "en": "Co-author of actor-critic learning."
         },
+        "sourceName": {
+          "zh": "马萨诸塞大学阿默斯特分校",
+          "en": "UMass Amherst"
+        },
+        "sourceUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自马萨诸塞大学阿默斯特分校；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from UMass Amherst; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自马萨诸塞大学阿默斯特分校；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from UMass Amherst; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM"
         },
@@ -52519,7 +52824,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
+        "resources/images/external/1989-cnn/yann-lecun-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
         "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
         "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
@@ -52546,7 +52851,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
+      "resources/images/external/1989-cnn/yann-lecun-portrait.jpg": {
         "caption": {
           "zh": "扬·勒昆肖像",
           "en": "Yann LeCun portrait"
@@ -52555,16 +52860,21 @@ const milestones = [
           "zh": "LeNet 主要研究者。",
           "en": "Lead researcher of LeNet."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-yann-lecun-s-home-page",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
         },
@@ -57280,7 +57590,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+        "resources/images/external/2020-alphafold/john-jumper-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
         "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
@@ -57315,7 +57625,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg": {
+      "resources/images/external/2020-alphafold/john-jumper-portrait.jpg": {
         "caption": {
           "zh": "约翰·江珀肖像",
           "en": "John Jumper portrait"
@@ -57324,16 +57634,21 @@ const milestones = [
           "zh": "AlphaFold2 主要研究者。",
           "en": "Lead researcher of AlphaFold2."
         },
+        "sourceName": {
+          "zh": "范德堡大学新闻",
+          "en": "Vanderbilt University News"
+        },
+        "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
         "sourceId": "source-deepmind-alphafold-page",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
         },
@@ -58852,8 +59167,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
+        "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
       ],
@@ -58866,7 +59181,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
+      "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
           "zh": "斯特雷奇跳棋程序显示画面",
           "en": "Strachey draughts program display"
@@ -58875,23 +59190,28 @@ const milestones = [
           "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
           "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-strachey-draughts-program-screenshot",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
         "role": "source-card",
         "type": "image"
       },
-      "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
+      "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
         "caption": {
           "zh": "标准跳棋棋盘",
           "en": "Standard checkers board"
@@ -58900,16 +59220,21 @@ const milestones = [
           "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
           "en": "The board environment handled by Strachey's program."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-checkers-board-photo",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
         },
@@ -60372,7 +60697,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+        "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
         "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
         "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg"
@@ -60386,7 +60711,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
+      "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg": {
         "caption": {
           "zh": "乔纳森·谢弗肖像",
           "en": "Jonathan Schaeffer portrait"
@@ -60395,16 +60720,21 @@ const milestones = [
           "zh": "Chinook 团队负责人。",
           "en": "Leader of the Chinook team."
         },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
         "license": {
-          "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-          "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
         "sourceId": "source-jonathan-schaeffer-portrait",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-            "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },

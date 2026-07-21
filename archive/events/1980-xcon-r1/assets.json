@@ -54,7 +54,7 @@
   {
     "id": "asset-1980-xcon-r1-lcm-dec-vax-11-780-5-01",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+    "path": "resources/images/external/1980-xcon-r1/dec-vax-11-780-computer.jpg",
     "role": "supporting-image",
     "caption": {
       "zh": "DEC VAX 11/780 计算机",
@@ -64,8 +64,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
     },
@@ -76,12 +76,17 @@
     "subcaption": {
       "zh": "XCON/R1 用于自动配置 VAX 计算机系统订单。",
       "en": "XCON/R1 automated the configuration of VAX computer orders."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
   },
   {
     "id": "asset-1980-xcon-r1-vax-11-780-cpu-backplane",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg",
+    "path": "resources/images/external/1980-xcon-r1/vax-11-780-cpu-backplane.jpg",
     "role": "supporting-image",
     "caption": {
       "zh": "VAX 11/780 CPU 背板",
@@ -91,8 +96,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
     },
@@ -103,6 +108,11 @@
     "subcaption": {
       "zh": "VAX 系统内部硬件组件资料照。",
       "en": "Reference photo of an internal VAX hardware component."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
   }
 ]

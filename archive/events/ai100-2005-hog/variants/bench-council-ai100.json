@@ -51,14 +51,15 @@
     }
   ],
   "assetIds": [
-    "asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde",
+    "asset-ai100-2005-hog-bill-triggs-portrait",
     "asset-2005-hog-descriptor-grid"
   ],
   "sourceIds": [
     "source-histograms-of-oriented-gradients-for-human-detection",
     "source-ieee-cvpr-paper-record",
     "source-histogram-of-oriented-gradients-overview",
-    "source-scikit-image-hog-example"
+    "source-scikit-image-hog-example",
+    "source-bill-triggs-lear-profile"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",

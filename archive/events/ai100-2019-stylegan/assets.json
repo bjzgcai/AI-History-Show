@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2019-stylegan-tero-karras",
     "type": "image",
-    "path": "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
+    "path": "resources/images/external/ai100-2019-stylegan/tero-karras-portrait.png",
     "role": "portrait",
     "caption": {
       "zh": "特罗·卡拉斯肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自NVIDIA Research；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from NVIDIA Research; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "StyleGAN 主要作者。",
       "en": "Lead author of StyleGAN."
-    }
+    },
+    "sourceName": {
+      "zh": "NVIDIA Research",
+      "en": "NVIDIA Research"
+    },
+    "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
   }
 ]

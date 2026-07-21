@@ -80,7 +80,7 @@
   {
     "id": "asset-1959-pandemonium-original-pande2",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
+    "path": "resources/images/external/1959-pandemonium/pandemonium-layered-recognition-architecture.jpg",
     "role": "architecture-explainer",
     "caption": {
       "zh": "Pandemonium 分层识别架构",
@@ -90,8 +90,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg"
     },
@@ -102,6 +102,11 @@
     "subcaption": {
       "zh": "数据魔、计算魔、认知魔和决策魔组成的分层结构。",
       "en": "Layered structure of data, computational, cognitive, and decision demons."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg"
   }
 ]

@@ -54,7 +54,7 @@
   {
     "id": "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "path": "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "吴恩达肖像",
@@ -64,8 +64,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
     },
@@ -76,12 +76,17 @@
     "subcaption": {
       "zh": "谱聚类形式化的重要贡献者。",
       "en": "Key contributor to spectral-clustering formulations."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
   },
   {
     "id": "asset-2000-spectral-clustering-6n-graf",
-    "type": "svg",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+    "type": "image",
+    "path": "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png",
     "role": "algorithm-explainer",
     "caption": {
       "zh": "谱聚类六节点图示",
@@ -91,8 +96,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
     },
@@ -103,6 +108,11 @@
     "subcaption": {
       "zh": "用于说明谱聚类中的图结构与连接关系。",
       "en": "Illustrates graph structure and connectivity in spectral clustering."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
   }
 ]

@@ -85,6 +85,12 @@ function toIdSet(items) {
     return new Set((Array.isArray(items) ? items : []).map((item) => item && item.id).filter(Boolean));
 }
 
+function toIdMap(items) {
+    return new Map(
+        (Array.isArray(items) ? items : []).filter((item) => item && item.id).map((item) => [item.id, item])
+    );
+}
+
 function checkUniqueIds(filePath, items, label) {
     if (!Array.isArray(items)) {
         addError(filePath, `${label} must be an array.`);
@@ -111,6 +117,10 @@ function checkUniqueIds(filePath, items, label) {
 function resolveAssetPath(assetPath) {
     if (!hasText(assetPath) || /^https?:\/\//i.test(assetPath)) return '';
     return path.resolve(ROOT, assetPath);
+}
+
+function isDisplayImageAsset(asset) {
+    return isObject(asset) && ['image', 'svg', 'gif'].includes(asset.type);
 }
 
 function validateClaims(eventDir, claims, sourceIds) {
@@ -174,7 +184,7 @@ function validateAssets(eventDir, assets, sourceIds) {
 
     for (const asset of assets) {
         if (!isObject(asset)) continue;
-        const isDisplayImage = ['image', 'svg', 'gif'].includes(asset.type);
+        const isDisplayImage = isDisplayImageAsset(asset);
         if (!hasText(asset.type)) addError(filePath, `asset ${asset.id || '<missing>'} is missing type.`);
         if (!hasText(asset.path)) {
             addError(filePath, `asset ${asset.id || '<missing>'} is missing path.`);
@@ -310,7 +320,7 @@ function validateVariantPapers(filePath, papers) {
     });
 }
 
-function validateVariant(eventDir, eventId, filePath, sourceIds, assetIds, claimIds, quizIds) {
+function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, quizIds) {
     const variant = readJson(filePath);
     if (!variant) return null;
     state.counts.variants += 1;
@@ -327,7 +337,12 @@ function validateVariant(eventDir, eventId, filePath, sourceIds, assetIds, claim
         if (!sourceIds.has(sourceId)) addError(filePath, `variant references missing sourceId: ${sourceId}`);
     }
     for (const assetId of variant.assetIds || []) {
-        if (!assetIds.has(assetId)) addError(filePath, `variant references missing assetId: ${assetId}`);
+        const asset = assetsById.get(assetId);
+        if (!asset) {
+            addError(filePath, `variant references missing assetId: ${assetId}`);
+        } else if (isDisplayImageAsset(asset) && /^https?:\/\//i.test(asset.path)) {
+            addError(filePath, `variant selects external image asset ${assetId}; localize it before runtime use.`);
+        }
     }
     for (const claimId of variant.claimIds || []) {
         if (!claimIds.has(claimId)) addError(filePath, `variant references missing claimId: ${claimId}`);
@@ -378,6 +393,7 @@ function validateEventDir(eventDir) {
     const claimIds = toIdSet(claims);
     const assets = readJson(path.join(eventDir, 'assets.json')) || [];
     const assetIds = validateAssets(eventDir, assets, sourceIds);
+    const assetsById = toIdMap(assets);
     const quizzes = readJson(path.join(eventDir, 'quizzes.json')) || [];
     const quizIds = validateQuizzes(eventDir, quizzes, sourceIds, assetIds);
 
@@ -393,11 +409,10 @@ function validateEventDir(eventDir) {
         if (variantFiles.length === 0) addWarning(variantsDir, 'Event has no variants.');
         for (const fileName of variantFiles) {
             const variant = validateVariant(
-                eventDir,
                 eventId,
                 path.join(variantsDir, fileName),
                 sourceIds,
-                assetIds,
+                assetsById,
                 claimIds,
                 quizIds
             );

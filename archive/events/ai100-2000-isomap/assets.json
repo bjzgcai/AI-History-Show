@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2000-isomap-tenenbaum-2019-profile-240",
     "type": "image",
-    "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
+    "path": "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "约书亚·特南鲍姆肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自麻省理工学院智能探索中心；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from MIT Quest for Intelligence; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "Isomap 主要作者。",
       "en": "Lead author of Isomap."
-    }
+    },
+    "sourceName": {
+      "zh": "麻省理工学院智能探索中心",
+      "en": "MIT Quest for Intelligence"
+    },
+    "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY"
   }
 ]

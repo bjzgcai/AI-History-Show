@@ -51,5 +51,37 @@
       "zh": "最近邻分类共同作者。",
       "en": "Co-author of nearest-neighbor classification."
     }
+  },
+  {
+    "id": "asset-ai100-1967-knn-thomas-cover-stanford",
+    "type": "image",
+    "path": "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "托马斯·科弗肖像",
+      "en": "Thomas Cover portrait"
+    },
+    "subcaption": {
+      "zh": "最近邻分类共同作者。",
+      "en": "Co-author of nearest-neighbor classification."
+    },
+    "sourceId": "source-thomas-cover-stanford-profile",
+    "sourceName": {
+      "zh": "Stanford 信息系统实验室",
+      "en": "Stanford Information Systems Laboratory"
+    },
+    "sourceUrl": "https://isl.stanford.edu/~cover/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "Stanford 人物主页照片，未注明许可；本地副本用于保证展览稳定显示。",
+        "en": "Stanford profile photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
+      },
+      "sourceUrl": "https://isl.stanford.edu/~cover/tc07small.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
   }
 ]
