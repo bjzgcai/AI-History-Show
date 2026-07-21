@@ -110,6 +110,35 @@ assert.deepEqual(normalizeEventData({ empty: '', missing: null, count: 2, correc
 });
 console.log('PASS analytics event data is normalized');
 
+const storylineScope = createScope();
+const storylineEvents = [];
+const storylineAnalytics = createAnalytics(storylineScope, {
+    provider: 'capture',
+    enabled: true,
+    context: { layout: 'single' }
+});
+storylineAnalytics.registerAdapter('capture', () => ({
+    init() {},
+    track(eventName, eventData) {
+        storylineEvents.push({ eventName, eventData });
+        return true;
+    }
+}));
+storylineAnalytics.startStorylineView({
+    storyline_id: 'unified-ai-history',
+    storyline_layout: 'ui-browser',
+    entry_source: 'default'
+});
+assert.equal(storylineEvents[0].eventName, 'storyline_view');
+assert.equal(storylineEvents[0].eventData.storyline_id, 'unified-ai-history');
+storylineAnalytics.markInteraction();
+storylineScope.advance(2400);
+storylineAnalytics.endStorylineView('switch');
+const storylineLeave = storylineEvents.find((event) => event.eventName === 'storyline_leave');
+assert.equal(storylineLeave.eventData.duration_seconds, 2);
+assert.equal(storylineLeave.eventData.leave_reason, 'switch');
+console.log('PASS storyline views record immediate entry and engaged duration');
+
 const root = path.join(__dirname, '..');
 for (const fileName of ['index.html', 'dual-screen.html']) {
     const html = fs.readFileSync(path.join(root, fileName), 'utf8');
@@ -123,9 +152,19 @@ for (const fileName of ['index.html', 'dual-screen.html']) {
 }
 
 const indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-for (const eventName of ['quiz_impression', 'quiz_answer', 'mobile_quiz_start', 'mobile_quiz_complete', 'qr_landing']) {
+for (const eventName of [
+    'quiz_impression',
+    'quiz_answer',
+    'mobile_quiz_start',
+    'mobile_quiz_complete',
+    'qr_landing',
+    'storyline_picker_open',
+    'storyline_switch'
+]) {
     assert.match(indexHtml, new RegExp(`['"]${eventName}['"]`), `index.html should emit ${eventName}`);
 }
+assert.match(indexHtml, /startAnalyticsStorylineView\(\s*activeStorylineId/);
+assert.match(indexHtml, /analyticsSource: 'picker'/);
 
 const analyticsConfigSource = fs.readFileSync(path.join(root, 'shared', 'analytics-config.js'), 'utf8');
 const umamiConfigSource = fs.readFileSync(path.join(root, 'shared', 'umami-config.js'), 'utf8');
