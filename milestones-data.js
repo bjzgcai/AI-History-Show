@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-20 03:23
+// 生成时间: 2026-07-21 08:34
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -144,12 +144,12 @@ const milestones = [
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
         "caption": {
-          "zh": "AlexNet 架构示意",
-          "en": "AlexNet architecture explainer"
+          "zh": "ImageNet 识别错误率演进图",
+          "en": "ImageNet recognition error-rate timeline"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "比较 AlexNet 前后代表性视觉模型的错误率与网络深度。",
+          "en": "Compares error rates and network depths before and after AlexNet."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图。",
@@ -163,17 +163,17 @@ const milestones = [
             "en": "Architecture reference image for exhibition explanation."
           }
         },
-        "role": "architecture-explainer",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
         "caption": {
-          "zh": "AlexNet 相关人物资料图",
-          "en": "AlexNet related figure image"
+          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
+          "en": "Computer History Museum AlexNet source-code release page"
         },
         "subcaption": {
-          "zh": "portrait",
-          "en": "portrait"
+          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
+          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
         },
         "license": {
           "zh": "历史资料图，需保留来源说明。",
@@ -187,17 +187,17 @@ const milestones = [
             "en": "Historical reference image; keep attribution."
           }
         },
-        "role": "portrait",
+        "role": "source-card",
         "type": "image"
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
         "caption": {
-          "zh": "AlexNet 架构细节图",
-          "en": "AlexNet architecture detail"
+          "zh": "AlexNet、VGG 与 GoogLeNet 架构对比",
+          "en": "AlexNet, VGG, and GoogLeNet architecture comparison"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "对比三种卷积网络的层级结构与深度。",
+          "en": "Compares the layer structures and depths of three convolutional networks."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图。",
@@ -696,12 +696,12 @@ const milestones = [
       },
       "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
         "caption": {
-          "zh": "Transformer 自注意力机制示意",
-          "en": "Transformer self-attention explainer"
+          "zh": "Transformer 自注意力机制",
+          "en": "Transformer self-attention mechanism"
         },
         "subcaption": {
-          "zh": "algorithm-explainer",
-          "en": "algorithm-explainer"
+          "zh": "本地重绘的 token 间注意力关系解释图。",
+          "en": "Locally redrawn explainer of attention relationships between tokens."
         },
         "license": {
           "zh": "根据论文方法本地重绘，不复制原论文图。",
@@ -720,12 +720,12 @@ const milestones = [
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
         "caption": {
-          "zh": "Transformer 架构示意",
-          "en": "Transformer architecture explainer"
+          "zh": "Transformer 自注意力计算",
+          "en": "Transformer self-attention computation"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "展示查询、键和值投影以及缩放点积注意力。",
+          "en": "Shows query, key, and value projections with scaled dot-product attention."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图。",
@@ -739,17 +739,17 @@ const milestones = [
             "en": "Architecture reference image for exhibition explanation."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "image"
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
         "caption": {
-          "zh": "Transformer 架构细节图",
-          "en": "Transformer architecture detail"
+          "zh": "Transformer 编码器—解码器架构",
+          "en": "Transformer encoder-decoder architecture"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "原论文中的编码器与解码器模块结构。",
+          "en": "Encoder and decoder module structure from the original paper."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
@@ -768,12 +768,12 @@ const milestones = [
       },
       "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
         "caption": {
-          "zh": "Transformer 论文页面资料",
-          "en": "Transformer paper page material"
+          "zh": "《Attention Is All You Need》论文首页",
+          "en": "Attention Is All You Need paper first page"
         },
         "subcaption": {
-          "zh": "paper-page",
-          "en": "paper-page"
+          "zh": "Transformer 原始论文的首页与摘要。",
+          "en": "First page and abstract of the original Transformer paper."
         },
         "license": {
           "zh": "论文页面资料引用，需保留来源说明。",
@@ -1249,12 +1249,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
-          "zh": "AlphaGo 与李世石比赛资料图",
-          "en": "AlphaGo and Lee Sedol match reference image"
+          "zh": "李世石肖像",
+          "en": "Lee Sedol portrait"
         },
         "subcaption": {
-          "zh": "team-photo",
-          "en": "team-photo"
+          "zh": "与 AlphaGo 进行五番棋对局的职业围棋棋手。",
+          "en": "Professional Go player who faced AlphaGo in the five-game match."
         },
         "license": {
           "zh": "历史资料图，需保留来源说明。",
@@ -1268,17 +1268,17 @@ const milestones = [
             "en": "Historical reference image; keep source attribution."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
-          "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
-          "en": "AlphaGo policy, value, and search workflow explainer"
+          "zh": "AlphaGo 策略、价值与搜索流程",
+          "en": "AlphaGo policy, value, and search workflow"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "展示策略网络、价值网络与蒙特卡洛树搜索的协作关系。",
+          "en": "Shows how policy networks, value networks, and Monte Carlo tree search work together."
         },
         "license": {
           "zh": "根据论文方法本地重绘，不复制原论文图。",
@@ -3363,8 +3363,8 @@ const milestones = [
         "zh": "RAND Corporation / 卡内基理工学院"
       },
       "country": {
-        "en": "Santa Monica and Pittsburgh, United States",
-        "zh": "美国，圣塔莫尼卡与匹兹堡"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         34.0195,
@@ -4243,8 +4243,8 @@ const milestones = [
         "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院"
       },
       "country": {
-        "en": "New York and Princeton, United States",
-        "zh": "美国，纽约与普林斯顿"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.7295,
@@ -4262,7 +4262,7 @@ const milestones = [
           "zh": "马丁·戴维斯"
         },
         "role": {
-          "en": "Co-developed Davis-Putnam and DPLL procedures",
+          "en": "DP/DPLL co-developer",
           "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
         },
         "avatar": "",
@@ -4275,7 +4275,7 @@ const milestones = [
           "zh": "希拉里·普特南"
         },
         "role": {
-          "en": "Co-authored the 1960 Davis-Putnam procedure",
+          "en": "1960 DP paper co-author",
           "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
         },
         "avatar": "",
@@ -4288,7 +4288,7 @@ const milestones = [
           "zh": "乔治·洛格曼"
         },
         "role": {
-          "en": "Co-authored the 1962 DPLL program paper",
+          "en": "1962 DPLL paper co-author",
           "zh": "共同撰写 1962 年 DPLL 程序论文"
         },
         "avatar": "",
@@ -4301,7 +4301,7 @@ const milestones = [
           "zh": "唐纳德·W·洛夫兰"
         },
         "role": {
-          "en": "Co-authored the 1962 DPLL program paper",
+          "en": "1962 DPLL paper co-author",
           "zh": "共同撰写 1962 年 DPLL 程序论文"
         },
         "avatar": "",
@@ -4709,8 +4709,8 @@ const milestones = [
         "zh": "阿姆斯特丹大学 / 多伦多大学"
       },
       "country": {
-        "en": "Amsterdam, Netherlands and Toronto, Canada",
-        "zh": "荷兰阿姆斯特丹与加拿大多伦多"
+        "en": "Netherlands and Canada",
+        "zh": "荷兰与加拿大"
       },
       "coordinates": [
         52.3558,
@@ -7173,7 +7173,7 @@ const milestones = [
           "zh": "弗拉基米尔·瓦普尼克"
         },
         "role": {
-          "en": "Co-developed optimal-margin classifiers and statistical learning theory",
+          "en": "SVM co-developer",
           "zh": "共同发展最优间隔分类器与统计学习理论"
         },
         "avatar": "",
@@ -7186,7 +7186,7 @@ const milestones = [
           "zh": "伯恩哈德·博泽尔"
         },
         "role": {
-          "en": "Co-author of the 1992 optimal-margin classifier paper",
+          "en": "1992 SVM paper co-author",
           "zh": "1992 年最优间隔分类器论文共同作者"
         },
         "avatar": "",
@@ -7199,7 +7199,7 @@ const milestones = [
           "zh": "伊莎贝尔·居永"
         },
         "role": {
-          "en": "Co-author of the 1992 optimal-margin classifier paper",
+          "en": "1992 SVM paper co-author",
           "zh": "1992 年最优间隔分类器论文共同作者"
         },
         "avatar": "",
@@ -7667,7 +7667,7 @@ const milestones = [
           "zh": "利奥·布雷曼"
         },
         "role": {
-          "en": "Co-author of the CART monograph",
+          "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
         "avatar": "",
@@ -7680,7 +7680,7 @@ const milestones = [
           "zh": "杰罗姆·弗里德曼"
         },
         "role": {
-          "en": "Co-author of the CART monograph",
+          "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
         "avatar": "",
@@ -7693,7 +7693,7 @@ const milestones = [
           "zh": "理查德·奥尔申"
         },
         "role": {
-          "en": "Co-author of the CART monograph",
+          "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
         "avatar": "",
@@ -7706,7 +7706,7 @@ const milestones = [
           "zh": "查尔斯·斯通"
         },
         "role": {
-          "en": "Co-author of the CART monograph",
+          "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
         "avatar": "",
@@ -8174,7 +8174,7 @@ const milestones = [
           "zh": "斯科特·柯克帕特里克"
         },
         "role": {
-          "en": "Co-author of the 1983 simulated annealing paper",
+          "en": "1983 paper co-author",
           "zh": "1983 年模拟退火论文共同作者"
         },
         "avatar": "",
@@ -8187,7 +8187,7 @@ const milestones = [
           "zh": "C·丹尼尔·格拉特 Jr."
         },
         "role": {
-          "en": "Co-author of the 1983 simulated annealing paper",
+          "en": "1983 paper co-author",
           "zh": "1983 年模拟退火论文共同作者"
         },
         "avatar": "",
@@ -8200,7 +8200,7 @@ const milestones = [
           "zh": "马里奥·P·维基"
         },
         "role": {
-          "en": "Co-author of the 1983 simulated annealing paper",
+          "en": "1983 paper co-author",
           "zh": "1983 年模拟退火论文共同作者"
         },
         "avatar": "",
@@ -9608,8 +9608,8 @@ const milestones = [
         "zh": "阿贡国家实验室 / 雪城大学"
       },
       "country": {
-        "en": "Illinois and New York, United States",
-        "zh": "美国伊利诺伊州与纽约州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         41.7181,
@@ -10083,8 +10083,8 @@ const milestones = [
         "zh": "艾克斯-马赛大学与爱丁堡大学"
       },
       "country": {
-        "en": "Marseille, France and Edinburgh, United Kingdom",
-        "zh": "法国马赛与英国爱丁堡"
+        "en": "France and United Kingdom",
+        "zh": "法国与英国"
       },
       "coordinates": [
         43.3047,
@@ -17387,12 +17387,12 @@ const milestones = [
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "弗兰克·罗森布拉特与感知机结构图",
+          "en": "Frank Rosenblatt and a perceptron diagram"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "人物照片与早期感知机结构示意的组合资料图。",
+          "en": "Composite reference image combining Rosenblatt and an early perceptron diagram."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -17406,17 +17406,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《感知机：大脑中信息存储与组织的概率模型》（第 1 页资料）",
+          "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain — page reference 1"
         },
         "subcaption": {
-          "zh": "《感知机：大脑中信息存储与组织的概率模型》",
-          "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -17435,12 +17435,12 @@ const milestones = [
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "感知机与连接主义资料图 1",
+          "en": "The Perceptron and Connectionism reference image 1"
         },
         "subcaption": {
-          "zh": "感知机与连接主义",
-          "en": "The Perceptron and Connectionism"
+          "zh": "与感知机与连接主义相关的历史图像资料。",
+          "en": "Historical image reference related to The Perceptron and Connectionism."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -17459,12 +17459,12 @@ const milestones = [
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "感知机与连接主义资料图 1",
+          "en": "The Perceptron and Connectionism reference image 1"
         },
         "subcaption": {
-          "zh": "感知机与连接主义",
-          "en": "The Perceptron and Connectionism"
+          "zh": "与感知机与连接主义相关的历史图像资料。",
+          "en": "Historical image reference related to The Perceptron and Connectionism."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -19734,8 +19734,8 @@ const milestones = [
         "zh": "IBM 托马斯·J·沃森 研究中心"
       },
       "country": {
-        "en": "New York, United States",
-        "zh": "美国纽约州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         41.2101,
@@ -19816,12 +19816,12 @@ const milestones = [
       },
       "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg": {
         "caption": {
-          "zh": "IBM Watson 外部参考图",
-          "en": "IBM Watson external reference image"
+          "zh": "IBM Watson《危险边缘！》演示",
+          "en": "IBM Watson Jeopardy! demonstration"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Watson 问答系统的公开演示界面。",
+          "en": "Public demonstration interface for the Watson question-answering system."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -19836,17 +19836,17 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg": {
         "caption": {
-          "zh": "IBM Watson 外部参考图",
-          "en": "IBM Watson external reference image"
+          "zh": "DeepQA 问答处理流程",
+          "en": "DeepQA question-answering pipeline"
         },
         "subcaption": {
-          "zh": "external-reference-diagram",
-          "en": "external-reference-diagram"
+          "zh": "从问题分析、候选答案生成到证据评分和最终排序的处理流程。",
+          "en": "Pipeline from question analysis and candidate generation to evidence scoring and final ranking."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -19861,7 +19861,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/DeepQA.svg"
         },
-        "role": "external-reference-diagram",
+        "role": "architecture-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg": {
@@ -20300,12 +20300,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
         "caption": {
-          "zh": "斯特雷奇跳棋程序外部参考图",
-          "en": "Strachey draughts program external reference image"
+          "zh": "斯特雷奇跳棋程序显示画面",
+          "en": "Strachey draughts program display"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
+          "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -20320,17 +20320,17 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
-        "role": "external-reference-image",
+        "role": "source-card",
         "type": "image"
       },
       "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
         "caption": {
-          "zh": "跳棋棋盘外部参考图",
-          "en": "Checkers board external reference image"
+          "zh": "标准跳棋棋盘",
+          "en": "Standard checkers board"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
+          "en": "The board environment handled by Strachey's program."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -20345,7 +20345,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -20808,12 +20808,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
         "caption": {
-          "zh": "乔纳森·谢弗外部参考图",
-          "en": "Jonathan Schaeffer external reference image"
+          "zh": "乔纳森·谢弗肖像",
+          "en": "Jonathan Schaeffer portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Chinook 团队负责人。",
+          "en": "Leader of the Chinook team."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -20828,7 +20828,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
@@ -21339,12 +21339,12 @@ const milestones = [
       },
       "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg": {
         "caption": {
-          "zh": "Pandemonium 感知架构 外部参考图",
-          "en": "Pandemonium external reference image"
+          "zh": "Pandemonium 分层识别架构",
+          "en": "Pandemonium layered recognition architecture"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "数据魔、计算魔、认知魔和决策魔组成的分层结构。",
+          "en": "Layered structure of data, computational, cognitive, and decision demons."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -21359,7 +21359,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg"
         },
-        "role": "external-reference-image",
+        "role": "architecture-explainer",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg": {
@@ -21859,12 +21859,12 @@ const milestones = [
       },
       "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png": {
         "caption": {
-          "zh": "Cyc 常识知识库 外部参考图",
-          "en": "Cyc external reference image"
+          "zh": "Cyc 项目相关标识",
+          "en": "Cyc-related project marks"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Cyc 知识库及相关项目使用的标识组合。",
+          "en": "A group of marks used by Cyc and related knowledge-base projects."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -21879,7 +21879,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg": {
@@ -22342,12 +22342,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg": {
         "caption": {
-          "zh": "XCON / R1 专家系统 外部参考图",
-          "en": "XCON-R1 external reference image"
+          "zh": "DEC VAX 11/780 计算机",
+          "en": "DEC VAX 11/780 computer"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "XCON/R1 用于自动配置 VAX 计算机系统订单。",
+          "en": "XCON/R1 automated the configuration of VAX computer orders."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -22362,17 +22362,17 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/LCM_-_DEC_VAX_11-780-5_-_01.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg": {
         "caption": {
-          "zh": "XCON / R1 专家系统 外部参考图",
-          "en": "XCON-R1 external reference image"
+          "zh": "VAX 11/780 CPU 背板",
+          "en": "VAX 11/780 CPU backplane"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "VAX 系统内部硬件组件资料照。",
+          "en": "Reference photo of an internal VAX hardware component."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -22387,7 +22387,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/VAX_11_780_CPU_Backplane.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg": {
@@ -22785,8 +22785,8 @@ const milestones = [
       }
     },
     "order": 460,
-    "year": "1957 / 1982",
-    "date": "1957 / 1982",
+    "year": "1957",
+    "date": "1957",
     "title": {
       "zh": "K-means 聚类",
       "en": "K-means"
@@ -22814,8 +22814,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
-      "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+      "zh": "<p>劳埃德于 1957 年在贝尔实验室形成这套方法，相关论文《PCM 中的最小二乘量化》直到 1982 年才正式发表。K-means 让无监督分组简单到成为默认工具；劳埃德方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
+      "en": "<p>Lloyd developed the method at Bell Labs in 1957; the related paper, <em>Least Squares Quantization in PCM</em>, was formally published in 1982. K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to the nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
     },
     "figures": [
       {
@@ -22850,12 +22850,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg": {
         "caption": {
-          "zh": "K-means 聚类 外部参考图",
-          "en": "K-means external reference image"
+          "zh": "贝尔实验室霍姆德尔园区",
+          "en": "Bell Labs Holmdel complex"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "斯图尔特·劳埃德提出量化方法时所在机构的历史建筑。",
+          "en": "Historic Bell Labs site associated with Stuart Lloyd's quantization work."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -22870,17 +22870,17 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg": {
         "caption": {
-          "zh": "K-means 聚类 外部参考图",
-          "en": "K-means external reference image"
+          "zh": "K-means 鸢尾花聚类结果",
+          "en": "K-means clustering of iris data"
         },
         "subcaption": {
-          "zh": "external-reference-diagram",
-          "en": "external-reference-diagram"
+          "zh": "颜色展示 K-means 得到的不同数据簇。",
+          "en": "Colors show the clusters produced by K-means."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -22895,7 +22895,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg"
         },
-        "role": "external-reference-diagram",
+        "role": "algorithm-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg": {
@@ -23058,8 +23058,8 @@ const milestones = [
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
-            "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+            "zh": "<p>劳埃德于 1957 年在贝尔实验室形成这套方法，相关论文《PCM 中的最小二乘量化》直到 1982 年才正式发表。K-means 让无监督分组简单到成为默认工具；劳埃德方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
+            "en": "<p>Lloyd developed the method at Bell Labs in 1957; the related paper, <em>Least Squares Quantization in PCM</em>, was formally published in 1982. K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to the nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
           },
           "sourceIds": [
             "source-least-squares-quantization-in-pcm",
@@ -23371,12 +23371,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg": {
         "caption": {
-          "zh": "DBSCAN 密度聚类 外部参考图",
-          "en": "DBSCAN external reference image"
+          "zh": "马丁·埃斯特肖像",
+          "en": "Martin Ester portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "DBSCAN 共同作者。",
+          "en": "Co-author of DBSCAN."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -23391,17 +23391,17 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg": {
         "caption": {
-          "zh": "DBSCAN 密度聚类 外部参考图",
-          "en": "DBSCAN external reference image"
+          "zh": "DBSCAN 密度聚类示意",
+          "en": "DBSCAN density-clustering diagram"
         },
         "subcaption": {
-          "zh": "external-reference-diagram",
-          "en": "external-reference-diagram"
+          "zh": "展示密度连通的数据簇与噪声点。",
+          "en": "Shows density-connected clusters and noise points."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -23416,7 +23416,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
         },
-        "role": "external-reference-diagram",
+        "role": "algorithm-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg": {
@@ -23892,12 +23892,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg": {
         "caption": {
-          "zh": "谱聚类 外部参考图",
-          "en": "Spectral Clustering external reference image"
+          "zh": "吴恩达肖像",
+          "en": "Andrew Ng portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "谱聚类形式化的重要贡献者。",
+          "en": "Key contributor to spectral-clustering formulations."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -23912,17 +23912,17 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg": {
         "caption": {
-          "zh": "谱聚类 外部参考图",
-          "en": "Spectral Clustering external reference image"
+          "zh": "谱聚类六节点图示",
+          "en": "Six-node spectral-clustering graph"
         },
         "subcaption": {
-          "zh": "external-reference-diagram",
-          "en": "external-reference-diagram"
+          "zh": "用于说明谱聚类中的图结构与连接关系。",
+          "en": "Illustrates graph structure and connectivity in spectral clustering."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -23937,7 +23937,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
         },
-        "role": "external-reference-diagram",
+        "role": "algorithm-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg": {
@@ -24409,12 +24409,12 @@ const milestones = [
     "imageMeta": {
       "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg": {
         "caption": {
-          "zh": "KNN 最近邻 外部参考图",
-          "en": "KNN external reference image"
+          "zh": "托马斯·科弗肖像",
+          "en": "Thomas Cover portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "最近邻分类共同作者。",
+          "en": "Co-author of nearest-neighbor classification."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -24429,7 +24429,7 @@ const milestones = [
           },
           "sourceUrl": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg": {
@@ -24896,12 +24896,12 @@ const milestones = [
     "imageMeta": {
       "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg": {
         "caption": {
-          "zh": "岭回归 外部参考图",
-          "en": "Ridge external reference image"
+          "zh": "阿瑟·霍尔与岭回归公式",
+          "en": "Arthur Hoerl and the ridge-regression formula"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "岭回归共同作者与 L2 惩罚项的组合资料图。",
+          "en": "Composite image of a ridge-regression co-author and the L2 penalty term."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -24916,7 +24916,7 @@ const milestones = [
           },
           "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg": {
@@ -25383,12 +25383,12 @@ const milestones = [
     "imageMeta": {
       "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280": {
         "caption": {
-          "zh": "HOG 方向梯度直方图 外部参考图",
-          "en": "HOG external reference image"
+          "zh": "HOG 作者资料图",
+          "en": "HOG author reference image"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "人物身份及其与 HOG 事件的关系仍需核验。",
+          "en": "The person's identity and relationship to the HOG event still require verification."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -25403,7 +25403,7 @@ const milestones = [
           },
           "sourceUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg": {
@@ -25870,12 +25870,12 @@ const milestones = [
     "imageMeta": {
       "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png": {
         "caption": {
-          "zh": "SURF 加速稳健特征 外部参考图",
-          "en": "SURF external reference image"
+          "zh": "赫伯特·贝肖像",
+          "en": "Herbert Bay portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "SURF 主要作者。",
+          "en": "Lead author of SURF."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -25890,7 +25890,7 @@ const milestones = [
           },
           "sourceUrl": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg": {
@@ -26357,12 +26357,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png": {
         "caption": {
-          "zh": "Kernel PCA 外部参考图",
-          "en": "Kernel PCA external reference image"
+          "zh": "伯恩哈德·舍尔科普夫肖像",
+          "en": "Bernhard Scholkopf portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Kernel PCA 共同作者。",
+          "en": "Co-author of Kernel PCA."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -26377,7 +26377,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bernhard_Sch%C3%B6lkopf.png"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg": {
@@ -26844,12 +26844,12 @@ const milestones = [
     "imageMeta": {
       "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj": {
         "caption": {
-          "zh": "非负矩阵分解 外部参考图",
-          "en": "NMF external reference image"
+          "zh": "H. 塞巴斯蒂安·承肖像",
+          "en": "H. Sebastian Seung portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "非负矩阵分解论文共同作者。",
+          "en": "Co-author of the non-negative matrix factorization paper."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -26864,7 +26864,7 @@ const milestones = [
           },
           "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg": {
@@ -27331,12 +27331,12 @@ const milestones = [
     "imageMeta": {
       "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY": {
         "caption": {
-          "zh": "Isomap 外部参考图",
-          "en": "Isomap external reference image"
+          "zh": "约书亚·特南鲍姆肖像",
+          "en": "Joshua Tenenbaum portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Isomap 主要作者。",
+          "en": "Lead author of Isomap."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -27351,7 +27351,7 @@ const milestones = [
           },
           "sourceUrl": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg": {
@@ -27818,12 +27818,12 @@ const milestones = [
     "imageMeta": {
       "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg": {
         "caption": {
-          "zh": "局部线性嵌入 外部参考图",
-          "en": "Locally Linear Embedding external reference image"
+          "zh": "萨姆·罗维斯肖像",
+          "en": "Sam Roweis portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "局部线性嵌入共同作者。",
+          "en": "Co-author of locally linear embedding."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -27838,7 +27838,7 @@ const milestones = [
           },
           "sourceUrl": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg": {
@@ -28305,12 +28305,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg": {
         "caption": {
-          "zh": "麦卡洛克-皮茨神经元 外部参考图",
-          "en": "McCulloch-Pitts Neuron external reference image"
+          "zh": "沃尔特·皮茨与黑板",
+          "en": "Walter Pitts at a blackboard"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "逻辑神经元模型共同作者，照片摄于 1954 年。",
+          "en": "Co-author of the logical neuron model, photographed in 1954."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -28325,7 +28325,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg": {
@@ -29265,12 +29265,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg": {
         "caption": {
-          "zh": "自组织映射 外部参考图",
-          "en": "Self-organizing Map external reference image"
+          "zh": "泰沃·科霍宁肖像",
+          "en": "Teuvo Kohonen portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "自组织映射提出者。",
+          "en": "Creator of self-organizing maps."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -29285,7 +29285,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg": {
@@ -30242,12 +30242,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
         "caption": {
-          "zh": "ReLU 外部参考图",
-          "en": "ReLU external reference image"
+          "zh": "约书亚·本吉奥肖像",
+          "en": "Yoshua Bengio portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "深度稀疏整流网络论文共同作者。",
+          "en": "Co-author of the deep sparse rectifier network paper."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -30262,7 +30262,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg": {
@@ -30720,12 +30720,12 @@ const milestones = [
     "imageMeta": {
       "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg": {
         "caption": {
-          "zh": "新认知机 外部参考图",
-          "en": "Neocognitron external reference image"
+          "zh": "福岛邦彦肖像",
+          "en": "Kunihiko Fukushima portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Neocognitron 提出者。",
+          "en": "Creator of the neocognitron."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -30740,7 +30740,7 @@ const milestones = [
           },
           "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg": {
@@ -31211,12 +31211,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
         "caption": {
-          "zh": "扬·勒昆外部参考图",
-          "en": "Yann LeCun external reference image"
+          "zh": "扬·勒昆肖像",
+          "en": "Yann LeCun portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "LeNet 主要研究者。",
+          "en": "Lead researcher of LeNet."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -31231,7 +31231,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg": {
@@ -31260,12 +31260,12 @@ const milestones = [
       },
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "扬·勒昆肖像",
+          "en": "Yann LeCun portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "LeNet 主要研究者。",
+          "en": "Lead researcher of LeNet."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -31279,17 +31279,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "扬·勒昆肖像",
+          "en": "Yann LeCun portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "LeNet 与卷积神经网络研究者。",
+          "en": "Researcher of LeNet and convolutional neural networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -31303,17 +31303,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "卷积神经网络结构图 1",
+          "en": "Convolutional Neural Networks structure diagram 1"
         },
         "subcaption": {
-          "zh": "卷积神经网络 架构图",
-          "en": "Convolutional Neural Networks"
+          "zh": "展示卷积神经网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Convolutional Neural Networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -31757,12 +31757,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg": {
         "caption": {
-          "zh": "神经语言模型 外部参考图",
-          "en": "Neural Language Model external reference image"
+          "zh": "约书亚·本吉奥肖像",
+          "en": "Yoshua Bengio portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "神经概率语言模型主要作者。",
+          "en": "Lead author of the neural probabilistic language model."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -31777,7 +31777,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg": {
@@ -32319,8 +32319,8 @@ const milestones = [
           "en": "Residual block"
         },
         "subcaption": {
-          "zh": "项目使用的架构图。",
-          "en": "Architecture visual used by the project."
+          "zh": "展示残差模块中的关键连接与信息传递方式。",
+          "en": "Shows the key connections and information flow in Residual block."
         },
         "license": {
           "zh": "本地原创 SVG 重绘；未复制来源图形。",
@@ -32435,12 +32435,12 @@ const milestones = [
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "ResNet结构图 2",
+          "en": "ResNet structure diagram 2"
         },
         "subcaption": {
-          "zh": "ResNet 架构图",
-          "en": "ResNet diagram"
+          "zh": "展示ResNet的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of ResNet."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -33424,8 +33424,8 @@ const milestones = [
           "en": "Dense connectivity"
         },
         "subcaption": {
-          "zh": "项目使用的架构图。",
-          "en": "Architecture visual used by the project."
+          "zh": "展示密集连接中的关键连接与信息传递方式。",
+          "en": "Shows the key connections and information flow in Dense connectivity."
         },
         "license": {
           "zh": "本地原创 SVG 重绘；未复制来源图形。",
@@ -33444,12 +33444,12 @@ const milestones = [
       },
       "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "黄高演讲资料照",
+          "en": "Gao Huang speaking"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "DenseNet 主要作者在学术活动中的照片。",
+          "en": "The lead author of DenseNet speaking at an academic event."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -33463,7 +33463,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "supporting-image",
         "type": "image"
       }
     },
@@ -33910,12 +33910,12 @@ const milestones = [
     "imageMeta": {
       "https://www.eml-munich.de/team/alexey-dosovitskiy.png": {
         "caption": {
-          "zh": "视觉 Transformer 外部参考图",
-          "en": "Vision Transformer external reference image"
+          "zh": "阿列克谢·多索维茨基肖像",
+          "en": "Alexey Dosovitskiy portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "视觉 Transformer 主要作者。",
+          "en": "Lead author of Vision Transformer."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -33930,7 +33930,7 @@ const milestones = [
           },
           "sourceUrl": "https://www.eml-munich.de/team/alexey-dosovitskiy.png"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg": {
@@ -34462,12 +34462,12 @@ const milestones = [
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "尤尔根·施密德胡伯肖像",
+          "en": "Jurgen Schmidhuber portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "LSTM 共同作者。",
+          "en": "Co-author of LSTM."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -34481,17 +34481,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "LSTM与门控机制结构图 1",
+          "en": "LSTM and Gating Mechanisms structure diagram 1"
         },
         "subcaption": {
-          "zh": "LSTM与门控机制 架构图",
-          "en": "LSTM and Gating Mechanisms"
+          "zh": "展示LSTM与门控机制的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of LSTM and Gating Mechanisms."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -34510,12 +34510,12 @@ const milestones = [
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "LSTM与门控机制结构图 2",
+          "en": "LSTM and Gating Mechanisms structure diagram 2"
         },
         "subcaption": {
-          "zh": "LSTM与门控机制 架构图",
-          "en": "LSTM and Gating Mechanisms"
+          "zh": "展示LSTM与门控机制的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of LSTM and Gating Mechanisms."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -35037,12 +35037,12 @@ const milestones = [
       },
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "GAN（生成对抗网路）结构图 1",
+          "en": "GANs: Generative Adversarial Networks structure diagram 1"
         },
         "subcaption": {
-          "zh": "GAN（生成对抗网路） 架构图",
-          "en": "GANs: Generative Adversarial Networks"
+          "zh": "展示GAN（生成对抗网路）的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of GANs: Generative Adversarial Networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -35579,12 +35579,12 @@ const milestones = [
       },
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "自回归模型和注意力机制结构图 1",
+          "en": "Autoregressive Models and Attention structure diagram 1"
         },
         "subcaption": {
-          "zh": "自回归模型和注意力机制 架构图",
-          "en": "Autoregressive Models and Attention diagram"
+          "zh": "展示自回归模型和注意力机制的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Autoregressive Models and Attention."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -35603,12 +35603,12 @@ const milestones = [
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "约书亚·本吉奥肖像",
+          "en": "Yoshua Bengio portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "神经注意力论文共同作者。",
+          "en": "Co-author of the neural attention paper."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -35622,7 +35622,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -36042,7 +36042,6 @@ const milestones = [
       "images": [
         "resources/images/figures/jacob-devlin.jpg",
         "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
-        "resources/images/2018-bert/people/2018-bert_people_03.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
       ],
@@ -36061,7 +36060,6 @@ const milestones = [
       "assetIds": [
         "asset-jacob-devlin",
         "asset-2018-bert-masked-lm",
-        "asset-2018-bert-people-03",
         "asset-2018-bert-architecture-01",
         "asset-2018-bert-architecture-02"
       ]
@@ -36115,38 +36113,14 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "svg"
       },
-      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
-        "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
-        },
-        "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-bert",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "team-photo",
-        "type": "image"
-      },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "BERT结构图 1",
+          "en": "BERT structure diagram 1"
         },
         "subcaption": {
-          "zh": "BERT 架构图",
-          "en": "BERT diagram"
+          "zh": "展示BERT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of BERT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -36165,12 +36139,12 @@ const milestones = [
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "BERT结构图 2",
+          "en": "BERT structure diagram 2"
         },
         "subcaption": {
-          "zh": "BERT 架构图",
-          "en": "BERT diagram"
+          "zh": "展示BERT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of BERT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -36606,8 +36580,7 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png",
-        "resources/images/2018-gpt/historical/2018-gpt_historical_01.png",
-        "resources/images/2018-gpt/people/2018-gpt_people_02.png"
+        "resources/images/2018-gpt/historical/2018-gpt_historical_01.png"
       ],
       "videos": [
         {
@@ -36626,8 +36599,7 @@ const milestones = [
         "asset-2018-gpt-next-token",
         "asset-2018-gpt-architecture-01",
         "asset-2018-gpt-architecture-02",
-        "asset-2018-gpt-historical-01",
-        "asset-2018-gpt-people-02"
+        "asset-2018-gpt-historical-01"
       ]
     },
     "imageMeta": {
@@ -36681,12 +36653,12 @@ const milestones = [
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "GPT结构图 1",
+          "en": "GPT structure diagram 1"
         },
         "subcaption": {
-          "zh": "GPT 架构图",
-          "en": "GPT diagram"
+          "zh": "展示GPT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of GPT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -36705,12 +36677,12 @@ const milestones = [
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "GPT结构图 2",
+          "en": "GPT structure diagram 2"
         },
         "subcaption": {
-          "zh": "GPT 架构图",
-          "en": "GPT diagram"
+          "zh": "展示GPT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of GPT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -36729,12 +36701,12 @@ const milestones = [
       },
       "resources/images/2018-gpt/historical/2018-gpt_historical_01.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "GPT资料图 1",
+          "en": "GPT reference image 1"
         },
         "subcaption": {
-          "zh": "GPT",
-          "en": "GPT"
+          "zh": "与GPT相关的历史图像资料。",
+          "en": "Historical image reference related to GPT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -36749,30 +36721,6 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
-      },
-      "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
-        "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
-        },
-        "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "team-photo",
         "type": "image"
       }
     },
@@ -37240,12 +37188,12 @@ const milestones = [
     "imageMeta": {
       "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg": {
         "caption": {
-          "zh": "John Jumper 外部参考图",
-          "en": "John Jumper external reference image"
+          "zh": "约翰·江珀肖像",
+          "en": "John Jumper portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "AlphaFold2 主要研究者。",
+          "en": "Lead researcher of AlphaFold2."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -37260,7 +37208,7 @@ const milestones = [
           },
           "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg": {
@@ -37289,12 +37237,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "AlphaFold: 蛋白质结构预测结构图 1",
+          "en": "AlphaFold: Protein Structure Prediction structure diagram 1"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测 架构图",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "展示AlphaFold: 蛋白质结构预测的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -37313,12 +37261,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "AlphaFold: 蛋白质结构预测资料图 1",
+          "en": "AlphaFold: Protein Structure Prediction reference image 1"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -37337,12 +37285,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "AlphaFold: 蛋白质结构预测结构图 2",
+          "en": "AlphaFold: Protein Structure Prediction structure diagram 2"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测 架构图",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "展示AlphaFold: 蛋白质结构预测的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -37361,12 +37309,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "AlphaFold: 蛋白质结构预测资料图 2",
+          "en": "AlphaFold: Protein Structure Prediction reference image 2"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -37385,12 +37333,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》（第 1 页资料）",
+          "en": "Highly accurate protein structure prediction with AlphaFold — page reference 1"
         },
         "subcaption": {
-          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
-          "en": "Highly accurate protein structure prediction with AlphaFold"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -37409,12 +37357,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "约翰·江珀肖像",
+          "en": "John Jumper portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "AlphaFold2 主要研究者。",
+          "en": "Lead researcher of AlphaFold2."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -37428,17 +37376,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "德米斯·哈萨比斯肖像",
+          "en": "Demis Hassabis portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "DeepMind 联合创始人与 AlphaFold 负责人。",
+          "en": "DeepMind co-founder and AlphaFold leader."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -37452,7 +37400,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -38355,12 +38303,12 @@ const milestones = [
     "imageMeta": {
       "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png": {
         "caption": {
-          "zh": "DALL-E 外部参考图",
-          "en": "DALL-E external reference image"
+          "zh": "阿迪蒂亚·拉梅什肖像",
+          "en": "Aditya Ramesh portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "DALL-E 主要作者与创建者。",
+          "en": "Lead author and creator of DALL-E."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -38375,7 +38323,7 @@ const milestones = [
           },
           "sourceUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg": {
@@ -38829,12 +38777,12 @@ const milestones = [
     "imageMeta": {
       "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg": {
         "caption": {
-          "zh": "Stable Diffusion 外部参考图",
-          "en": "Stable Diffusion external reference image"
+          "zh": "罗宾·罗姆巴赫肖像",
+          "en": "Robin Rombach portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "潜扩散模型主要作者。",
+          "en": "Lead author of latent diffusion models."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -38849,7 +38797,7 @@ const milestones = [
           },
           "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg": {
@@ -39307,12 +39255,12 @@ const milestones = [
     "imageMeta": {
       "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg": {
         "caption": {
-          "zh": "Segment Anything 外部参考图",
-          "en": "Segment Anything external reference image"
+          "zh": "亚历山大·基里洛夫肖像",
+          "en": "Alexander Kirillov portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Segment Anything 主要作者。",
+          "en": "Lead author of Segment Anything."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -39327,7 +39275,7 @@ const milestones = [
           },
           "sourceUrl": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg": {
@@ -39781,12 +39729,12 @@ const milestones = [
     "imageMeta": {
       "https://zeliu98.github.io/images/zeliu.jpg": {
         "caption": {
-          "zh": "Swin Transformer 外部参考图",
-          "en": "Swin Transformer external reference image"
+          "zh": "刘泽肖像",
+          "en": "Ze Liu portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Swin Transformer 主要作者。",
+          "en": "Lead author of Swin Transformer."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -39801,7 +39749,7 @@ const milestones = [
           },
           "sourceUrl": "https://zeliu98.github.io/images/zeliu.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg": {
@@ -40282,12 +40230,12 @@ const milestones = [
     "imageMeta": {
       "https://nlp.stanford.edu/~jpennin/images/photo.jpeg": {
         "caption": {
-          "zh": "GloVe 外部参考图",
-          "en": "GloVe external reference image"
+          "zh": "杰弗里·彭宁顿肖像",
+          "en": "Jeffrey Pennington portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "GloVe 主要作者。",
+          "en": "Lead author of GloVe."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -40302,7 +40250,7 @@ const milestones = [
           },
           "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg": {
@@ -40783,12 +40731,12 @@ const milestones = [
     "imageMeta": {
       "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg": {
         "caption": {
-          "zh": "Conditional GAN 外部参考图",
-          "en": "Conditional GAN external reference image"
+          "zh": "人物资料图",
+          "en": "Person reference image"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "人物身份及其与 Conditional GAN 的关系仍需核验。",
+          "en": "The person's identity and relationship to Conditional GAN still require verification."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -40803,7 +40751,7 @@ const milestones = [
           },
           "sourceUrl": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg": {
@@ -41784,12 +41732,12 @@ const milestones = [
     "imageMeta": {
       "https://leon.bottou.org/_media/bottou_75.jpg": {
         "caption": {
-          "zh": "Wasserstein GAN 外部参考图",
-          "en": "Wasserstein GAN external reference image"
+          "zh": "莱昂·博图肖像",
+          "en": "Leon Bottou portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Wasserstein GAN 共同作者。",
+          "en": "Co-author of Wasserstein GAN."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -41804,7 +41752,7 @@ const milestones = [
           },
           "sourceUrl": "https://leon.bottou.org/_media/bottou_75.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg": {
@@ -42285,12 +42233,12 @@ const milestones = [
     "imageMeta": {
       "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg": {
         "caption": {
-          "zh": "CycleGAN 外部参考图",
-          "en": "CycleGAN external reference image"
+          "zh": "朱俊彦肖像",
+          "en": "Jun-Yan Zhu portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "CycleGAN 主要作者。",
+          "en": "Lead author of CycleGAN."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -42305,7 +42253,7 @@ const milestones = [
           },
           "sourceUrl": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg": {
@@ -42786,12 +42734,12 @@ const milestones = [
     "imageMeta": {
       "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg": {
         "caption": {
-          "zh": "Pix2Pix 外部参考图",
-          "en": "Pix2Pix external reference image"
+          "zh": "菲利普·伊索拉肖像",
+          "en": "Phillip Isola portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Pix2Pix 主要作者。",
+          "en": "Lead author of Pix2Pix."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -42806,7 +42754,7 @@ const milestones = [
           },
           "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg": {
@@ -43287,12 +43235,12 @@ const milestones = [
     "imageMeta": {
       "https://research.nvidia.com/sites/default/files/person/tero-karras.png": {
         "caption": {
-          "zh": "StyleGAN 外部参考图",
-          "en": "StyleGAN external reference image"
+          "zh": "特罗·卡拉斯肖像",
+          "en": "Tero Karras portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "StyleGAN 主要作者。",
+          "en": "Lead author of StyleGAN."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -43307,7 +43255,7 @@ const milestones = [
           },
           "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg": {
@@ -43788,12 +43736,12 @@ const milestones = [
     "imageMeta": {
       "https://dpkingma.com/files/portrait.jpg": {
         "caption": {
-          "zh": "变分自编码器 外部参考图",
-          "en": "Variational Autoencoder external reference image"
+          "zh": "迪德里克·金马肖像",
+          "en": "Diederik Kingma portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "变分自编码器共同作者。",
+          "en": "Co-author of the variational autoencoder."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -43808,7 +43756,7 @@ const milestones = [
           },
           "sourceUrl": "https://dpkingma.com/files/portrait.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg": {
@@ -44289,12 +44237,12 @@ const milestones = [
     "imageMeta": {
       "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png": {
         "caption": {
-          "zh": "扩散模型 外部参考图",
-          "en": "Diffusion Model external reference image"
+          "zh": "雅沙·索尔-迪克斯坦肖像",
+          "en": "Jascha Sohl-Dickstein portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "扩散模型主要作者。",
+          "en": "Lead author of the diffusion-model paper."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -44309,7 +44257,7 @@ const milestones = [
           },
           "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg": {
@@ -44790,12 +44738,12 @@ const milestones = [
     "imageMeta": {
       "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2": {
         "caption": {
-          "zh": "图神经网络 外部参考图",
-          "en": "Graph Neural Network external reference image"
+          "zh": "弗兰科·斯卡塞利肖像",
+          "en": "Franco Scarselli portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "图神经网络模型共同作者。",
+          "en": "Co-author of the graph neural network model."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -44810,7 +44758,7 @@ const milestones = [
           },
           "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg": {
@@ -45291,12 +45239,12 @@ const milestones = [
     "imageMeta": {
       "https://tkipf.github.io/images/photo.jpg": {
         "caption": {
-          "zh": "GCN 外部参考图",
-          "en": "GCN external reference image"
+          "zh": "托马斯·基普夫肖像",
+          "en": "Thomas Kipf portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "GCN 主要作者。",
+          "en": "Lead author of GCN."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -45311,7 +45259,7 @@ const milestones = [
           },
           "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg": {
@@ -45792,12 +45740,12 @@ const milestones = [
     "imageMeta": {
       "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1": {
         "caption": {
-          "zh": "GAT 外部参考图",
-          "en": "GAT external reference image"
+          "zh": "佩塔尔·韦利奇科维奇肖像",
+          "en": "Petar Velickovic portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "GAT 主要作者。",
+          "en": "Lead author of GAT."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -45812,7 +45760,7 @@ const milestones = [
           },
           "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg": {
@@ -46303,12 +46251,12 @@ const milestones = [
     "imageMeta": {
       "https://barretzoph.github.io/images/headshot.jpg": {
         "caption": {
-          "zh": "神经架构搜索 外部参考图",
-          "en": "Neural Architecture Search external reference image"
+          "zh": "巴雷特·佐夫肖像",
+          "en": "Barret Zoph portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "神经架构搜索主要作者。",
+          "en": "Lead author of neural architecture search."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -46323,7 +46271,7 @@ const milestones = [
           },
           "sourceUrl": "https://barretzoph.github.io/images/headshot.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg": {
@@ -46804,12 +46752,12 @@ const milestones = [
     "imageMeta": {
       "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg": {
         "caption": {
-          "zh": "深度压缩 外部参考图",
-          "en": "Deep Compression external reference image"
+          "zh": "韩松肖像",
+          "en": "Song Han portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Deep Compression 主要作者。",
+          "en": "Lead author of Deep Compression."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -46824,7 +46772,7 @@ const milestones = [
           },
           "sourceUrl": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg": {
@@ -47815,12 +47763,12 @@ const milestones = [
     "imageMeta": {
       "https://tsungyilin.info/images/tsungyi.jpeg": {
         "caption": {
-          "zh": "MS COCO 外部参考图",
-          "en": "MS COCO external reference image"
+          "zh": "林宗毅肖像",
+          "en": "Tsung-Yi Lin portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "MS COCO 主要作者。",
+          "en": "Lead author of MS COCO."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -47835,7 +47783,7 @@ const milestones = [
           },
           "sourceUrl": "https://tsungyilin.info/images/tsungyi.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg": {
@@ -48316,12 +48264,12 @@ const milestones = [
     "imageMeta": {
       "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1": {
         "caption": {
-          "zh": "Q-Learning 外部参考图",
-          "en": "Q-Learning external reference image"
+          "zh": "克里斯托弗·沃特金斯肖像",
+          "en": "Christopher Watkins portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Q-learning 主要作者。",
+          "en": "Lead author of Q-learning."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -48336,7 +48284,7 @@ const milestones = [
           },
           "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg": {
@@ -48817,12 +48765,12 @@ const milestones = [
     "imageMeta": {
       "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png": {
         "caption": {
-          "zh": "DDPG 外部参考图",
-          "en": "DDPG external reference image"
+          "zh": "蒂莫西·利利克拉普肖像",
+          "en": "Timothy Lillicrap portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "DDPG 主要作者。",
+          "en": "Lead author of DDPG."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -48837,7 +48785,7 @@ const milestones = [
           },
           "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg": {
@@ -49318,12 +49266,12 @@ const milestones = [
     "imageMeta": {
       "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM": {
         "caption": {
-          "zh": "Actor-Critic 外部参考图",
-          "en": "Actor-Critic external reference image"
+          "zh": "安德鲁·巴托肖像",
+          "en": "Andrew Barto portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Actor-Critic 共同作者。",
+          "en": "Co-author of actor-critic learning."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -49338,7 +49286,7 @@ const milestones = [
           },
           "sourceUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg": {
@@ -49873,12 +49821,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
-        },
-        "subcaption": {
           "zh": "达特茅斯会议提议封面",
           "en": "Cover of the Dartmouth Conference Proposal"
+        },
+        "subcaption": {
+          "zh": "与达特茅斯会议提议封面相关的历史图像资料。",
+          "en": "Historical image reference related to Cover of the Dartmouth Conference Proposal."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -49897,12 +49845,12 @@ const milestones = [
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
-        },
-        "subcaption": {
           "zh": "达特茅斯会议发起人",
           "en": "Organizer of the Dartmouth Conference"
+        },
+        "subcaption": {
+          "zh": "与达特茅斯会议发起人相关的历史图像资料。",
+          "en": "Historical image reference related to Organizer of the Dartmouth Conference."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -49921,12 +49869,12 @@ const milestones = [
       },
       "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
-        },
-        "subcaption": {
           "zh": "达特茅斯会议 - AI正式诞生！",
           "en": "Dartmouth Workshop - AI Is Born!"
+        },
+        "subcaption": {
+          "zh": "与达特茅斯会议 - AI正式诞生！相关的历史图像资料。",
+          "en": "Historical image reference related to Dartmouth Workshop - AI Is Born!."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -50218,12 +50166,12 @@ const milestones = [
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
         "caption": {
-          "zh": "AlexNet 架构示意",
-          "en": "AlexNet architecture explainer"
+          "zh": "ImageNet 识别错误率演进图",
+          "en": "ImageNet recognition error-rate timeline"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "比较 AlexNet 前后代表性视觉模型的错误率与网络深度。",
+          "en": "Compares error rates and network depths before and after AlexNet."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图。",
@@ -50237,17 +50185,17 @@ const milestones = [
             "en": "Architecture reference image for exhibition explanation."
           }
         },
-        "role": "architecture-explainer",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
         "caption": {
-          "zh": "AlexNet 相关人物资料图",
-          "en": "AlexNet related figure image"
+          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
+          "en": "Computer History Museum AlexNet source-code release page"
         },
         "subcaption": {
-          "zh": "portrait",
-          "en": "portrait"
+          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
+          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
         },
         "license": {
           "zh": "历史资料图，需保留来源说明。",
@@ -50261,17 +50209,17 @@ const milestones = [
             "en": "Historical reference image; keep attribution."
           }
         },
-        "role": "portrait",
+        "role": "source-card",
         "type": "image"
       },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
         "caption": {
-          "zh": "AlexNet 架构细节图",
-          "en": "AlexNet architecture detail"
+          "zh": "AlexNet、VGG 与 GoogLeNet 架构对比",
+          "en": "AlexNet, VGG, and GoogLeNet architecture comparison"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "对比三种卷积网络的层级结构与深度。",
+          "en": "Compares the layer structures and depths of three convolutional networks."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图。",
@@ -50757,12 +50705,12 @@ const milestones = [
       },
       "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "弗兰克·罗森布拉特与感知机结构图",
+          "en": "Frank Rosenblatt and a perceptron diagram"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "人物照片与早期感知机结构示意的组合资料图。",
+          "en": "Composite reference image combining Rosenblatt and an early perceptron diagram."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -50776,17 +50724,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《感知机：大脑中信息存储与组织的概率模型》（第 1 页资料）",
+          "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain — page reference 1"
         },
         "subcaption": {
-          "zh": "《感知机：大脑中信息存储与组织的概率模型》",
-          "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -50805,12 +50753,12 @@ const milestones = [
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "感知机与连接主义资料图 1",
+          "en": "The Perceptron and Connectionism reference image 1"
         },
         "subcaption": {
-          "zh": "感知机与连接主义",
-          "en": "The Perceptron and Connectionism"
+          "zh": "与感知机与连接主义相关的历史图像资料。",
+          "en": "Historical image reference related to The Perceptron and Connectionism."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -50829,12 +50777,12 @@ const milestones = [
       },
       "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "感知机与连接主义资料图 1",
+          "en": "The Perceptron and Connectionism reference image 1"
         },
         "subcaption": {
-          "zh": "感知机与连接主义",
-          "en": "The Perceptron and Connectionism"
+          "zh": "与感知机与连接主义相关的历史图像资料。",
+          "en": "Historical image reference related to The Perceptron and Connectionism."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -51262,12 +51210,12 @@ const milestones = [
       },
       "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
         "caption": {
-          "zh": "Transformer 自注意力机制示意",
-          "en": "Transformer self-attention explainer"
+          "zh": "Transformer 自注意力机制",
+          "en": "Transformer self-attention mechanism"
         },
         "subcaption": {
-          "zh": "algorithm-explainer",
-          "en": "algorithm-explainer"
+          "zh": "本地重绘的 token 间注意力关系解释图。",
+          "en": "Locally redrawn explainer of attention relationships between tokens."
         },
         "license": {
           "zh": "根据论文方法本地重绘，不复制原论文图。",
@@ -51286,12 +51234,12 @@ const milestones = [
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
         "caption": {
-          "zh": "Transformer 架构示意",
-          "en": "Transformer architecture explainer"
+          "zh": "Transformer 自注意力计算",
+          "en": "Transformer self-attention computation"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "展示查询、键和值投影以及缩放点积注意力。",
+          "en": "Shows query, key, and value projections with scaled dot-product attention."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图。",
@@ -51305,17 +51253,17 @@ const milestones = [
             "en": "Architecture reference image for exhibition explanation."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "image"
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
         "caption": {
-          "zh": "Transformer 架构细节图",
-          "en": "Transformer architecture detail"
+          "zh": "Transformer 编码器—解码器架构",
+          "en": "Transformer encoder-decoder architecture"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "原论文中的编码器与解码器模块结构。",
+          "en": "Encoder and decoder module structure from the original paper."
         },
         "license": {
           "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
@@ -51334,12 +51282,12 @@ const milestones = [
       },
       "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
         "caption": {
-          "zh": "Transformer 论文页面资料",
-          "en": "Transformer paper page material"
+          "zh": "《Attention Is All You Need》论文首页",
+          "en": "Attention Is All You Need paper first page"
         },
         "subcaption": {
-          "zh": "paper-page",
-          "en": "paper-page"
+          "zh": "Transformer 原始论文的首页与摘要。",
+          "en": "First page and abstract of the original Transformer paper."
         },
         "license": {
           "zh": "论文页面资料引用，需保留来源说明。",
@@ -51750,12 +51698,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "马文·明斯基肖像",
+          "en": "Marvin Minsky portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "《感知器》共同作者。",
+          "en": "Co-author of Perceptrons."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -51774,12 +51722,12 @@ const milestones = [
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《感知机：计算几何学导论》（第 2 页资料）",
+          "en": "Perceptrons: An Introduction to Computational Geometry — page reference 2"
         },
         "subcaption": {
-          "zh": "《感知机：计算几何学导论》",
-          "en": "Perceptrons: An Introduction to Computational Geometry"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -51798,12 +51746,12 @@ const milestones = [
       },
       "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《感知机：计算几何学导论》（第 1 页资料）",
+          "en": "Perceptrons: An Introduction to Computational Geometry — page reference 1"
         },
         "subcaption": {
-          "zh": "《感知机：计算几何学导论》",
-          "en": "Perceptrons: An Introduction to Computational Geometry"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52023,7 +51971,6 @@ const milestones = [
         "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
-        "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
         "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
       ],
       "videos": [
@@ -52042,19 +51989,18 @@ const milestones = [
         "asset-1986-backpropagation-architecture01",
         "asset-1986-backpropagation-paper-01",
         "asset-1986-backpropagation-paper-02",
-        "asset-1986-backpropagation-paper-03",
         "asset-1986-backpropagation-papers-01"
       ]
     },
     "imageMeta": {
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "反向传播算法结构图",
+          "en": "Backpropagation Algorithm structure diagram"
         },
         "subcaption": {
-          "zh": "反向传播算法 架构图",
-          "en": "Backpropagation Algorithm Architecture Diagram"
+          "zh": "展示反向传播算法的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Backpropagation Algorithm."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52073,12 +52019,12 @@ const milestones = [
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "杰弗里·辛顿肖像",
+          "en": "Geoffrey Hinton portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "反向传播论文共同作者。",
+          "en": "Co-author of the backpropagation paper."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52092,17 +52038,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "戴维·鲁梅尔哈特肖像",
+          "en": "David Rumelhart portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "反向传播论文主要作者。",
+          "en": "Lead author of the backpropagation paper."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52116,41 +52062,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
-        "type": "image"
-      },
-      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png": {
-        "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
-        },
-        "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《通过反向传播误差来学习表征》（第 1 页资料）",
+          "en": "Learning representations by back-propagating errors — page reference 1"
         },
         "subcaption": {
-          "zh": "《通过反向传播误差来学习表征》",
-          "en": "Learning representations by back-propagating errors"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52377,12 +52299,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "循环神经网络结构图 1",
+          "en": "Recurrent Neural Networks structure diagram 1"
         },
         "subcaption": {
-          "zh": "循环神经网络 架构图",
-          "en": "Recurrent Neural Networks"
+          "zh": "展示循环神经网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Recurrent Neural Networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52401,12 +52323,12 @@ const milestones = [
       },
       "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "杰弗里·埃尔曼肖像",
+          "en": "Jeffrey Elman portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "简单循环网络提出者。",
+          "en": "Creator of the simple recurrent network."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52420,7 +52342,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -52626,12 +52548,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg": {
         "caption": {
-          "zh": "扬·勒昆外部参考图",
-          "en": "Yann LeCun external reference image"
+          "zh": "扬·勒昆肖像",
+          "en": "Yann LeCun portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "LeNet 主要研究者。",
+          "en": "Lead researcher of LeNet."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -52646,7 +52568,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg": {
@@ -52675,12 +52597,12 @@ const milestones = [
       },
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "扬·勒昆肖像",
+          "en": "Yann LeCun portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "LeNet 主要研究者。",
+          "en": "Lead researcher of LeNet."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52694,17 +52616,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1989-cnn/people/1989-cnn_people_02.jpg": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "扬·勒昆肖像",
+          "en": "Yann LeCun portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "LeNet 与卷积神经网络研究者。",
+          "en": "Researcher of LeNet and convolutional neural networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -52718,17 +52640,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "卷积神经网络结构图 1",
+          "en": "Convolutional Neural Networks structure diagram 1"
         },
         "subcaption": {
-          "zh": "卷积神经网络 架构图",
-          "en": "Convolutional Neural Networks"
+          "zh": "展示卷积神经网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Convolutional Neural Networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -53211,12 +53133,12 @@ const milestones = [
       },
       "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "尤尔根·施密德胡伯肖像",
+          "en": "Jurgen Schmidhuber portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "LSTM 共同作者。",
+          "en": "Co-author of LSTM."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -53230,17 +53152,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "LSTM与门控机制结构图 1",
+          "en": "LSTM and Gating Mechanisms structure diagram 1"
         },
         "subcaption": {
-          "zh": "LSTM与门控机制 架构图",
-          "en": "LSTM and Gating Mechanisms"
+          "zh": "展示LSTM与门控机制的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of LSTM and Gating Mechanisms."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -53259,12 +53181,12 @@ const milestones = [
       },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "LSTM与门控机制结构图 2",
+          "en": "LSTM and Gating Mechanisms structure diagram 2"
         },
         "subcaption": {
-          "zh": "LSTM与门控机制 架构图",
-          "en": "LSTM and Gating Mechanisms"
+          "zh": "展示LSTM与门控机制的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of LSTM and Gating Mechanisms."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -53697,12 +53619,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "高速网络结构图 1",
+          "en": "Highway Networks structure diagram 1"
         },
         "subcaption": {
-          "zh": "高速网络 架构图",
-          "en": "Highway Networks diagram"
+          "zh": "展示高速网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Highway Networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -53721,12 +53643,12 @@ const milestones = [
       },
       "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "尤尔根·施密德胡伯肖像",
+          "en": "Jurgen Schmidhuber portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "Highway Network 共同作者。",
+          "en": "Co-author of Highway Networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -53740,7 +53662,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -54003,12 +53925,12 @@ const milestones = [
       },
       "resources/images/2014-gan/architecture/2014-gan_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "GAN（生成对抗网路）结构图 1",
+          "en": "GANs: Generative Adversarial Networks structure diagram 1"
         },
         "subcaption": {
-          "zh": "GAN（生成对抗网路） 架构图",
-          "en": "GANs: Generative Adversarial Networks"
+          "zh": "展示GAN（生成对抗网路）的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of GANs: Generative Adversarial Networks."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -54506,12 +54428,12 @@ const milestones = [
       },
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "自回归模型和注意力机制结构图 1",
+          "en": "Autoregressive Models and Attention structure diagram 1"
         },
         "subcaption": {
-          "zh": "自回归模型和注意力机制 架构图",
-          "en": "Autoregressive Models and Attention diagram"
+          "zh": "展示自回归模型和注意力机制的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Autoregressive Models and Attention."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -54530,12 +54452,12 @@ const milestones = [
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "约书亚·本吉奥肖像",
+          "en": "Yoshua Bengio portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "神经注意力论文共同作者。",
+          "en": "Co-author of the neural attention paper."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -54549,7 +54471,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -55028,8 +54950,8 @@ const milestones = [
           "en": "Residual block"
         },
         "subcaption": {
-          "zh": "项目使用的架构图。",
-          "en": "Architecture visual used by the project."
+          "zh": "展示残差模块中的关键连接与信息传递方式。",
+          "en": "Shows the key connections and information flow in Residual block."
         },
         "license": {
           "zh": "本地原创 SVG 重绘；未复制来源图形。",
@@ -55144,12 +55066,12 @@ const milestones = [
       },
       "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "ResNet结构图 2",
+          "en": "ResNet structure diagram 2"
         },
         "subcaption": {
-          "zh": "ResNet 架构图",
-          "en": "ResNet diagram"
+          "zh": "展示ResNet的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of ResNet."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -55608,8 +55530,8 @@ const milestones = [
           "en": "Dense connectivity"
         },
         "subcaption": {
-          "zh": "项目使用的架构图。",
-          "en": "Architecture visual used by the project."
+          "zh": "展示密集连接中的关键连接与信息传递方式。",
+          "en": "Shows the key connections and information flow in Dense connectivity."
         },
         "license": {
           "zh": "本地原创 SVG 重绘；未复制来源图形。",
@@ -55628,12 +55550,12 @@ const milestones = [
       },
       "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "黄高演讲资料照",
+          "en": "Gao Huang speaking"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "DenseNet 主要作者在学术活动中的照片。",
+          "en": "The lead author of DenseNet speaking at an academic event."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -55647,7 +55569,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "supporting-image",
         "type": "image"
       }
     },
@@ -56032,7 +55954,6 @@ const milestones = [
       "images": [
         "resources/images/figures/jacob-devlin.jpg",
         "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
-        "resources/images/2018-bert/people/2018-bert_people_03.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
         "resources/images/2018-bert/architecture/2018-bert_architecture_02.png"
       ],
@@ -56051,7 +55972,6 @@ const milestones = [
       "assetIds": [
         "asset-jacob-devlin",
         "asset-2018-bert-masked-lm",
-        "asset-2018-bert-people-03",
         "asset-2018-bert-architecture-01",
         "asset-2018-bert-architecture-02"
       ]
@@ -56105,38 +56025,14 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "svg"
       },
-      "resources/images/2018-bert/people/2018-bert_people_03.jpg": {
-        "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
-        },
-        "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-bert",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "team-photo",
-        "type": "image"
-      },
       "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "BERT结构图 1",
+          "en": "BERT structure diagram 1"
         },
         "subcaption": {
-          "zh": "BERT 架构图",
-          "en": "BERT diagram"
+          "zh": "展示BERT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of BERT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -56155,12 +56051,12 @@ const milestones = [
       },
       "resources/images/2018-bert/architecture/2018-bert_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "BERT结构图 2",
+          "en": "BERT structure diagram 2"
         },
         "subcaption": {
-          "zh": "BERT 架构图",
-          "en": "BERT diagram"
+          "zh": "展示BERT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of BERT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -56557,8 +56453,7 @@ const milestones = [
         "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
         "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png",
-        "resources/images/2018-gpt/historical/2018-gpt_historical_01.png",
-        "resources/images/2018-gpt/people/2018-gpt_people_02.png"
+        "resources/images/2018-gpt/historical/2018-gpt_historical_01.png"
       ],
       "videos": [
         {
@@ -56577,8 +56472,7 @@ const milestones = [
         "asset-2018-gpt-next-token",
         "asset-2018-gpt-architecture-01",
         "asset-2018-gpt-architecture-02",
-        "asset-2018-gpt-historical-01",
-        "asset-2018-gpt-people-02"
+        "asset-2018-gpt-historical-01"
       ]
     },
     "imageMeta": {
@@ -56632,12 +56526,12 @@ const milestones = [
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "GPT结构图 1",
+          "en": "GPT structure diagram 1"
         },
         "subcaption": {
-          "zh": "GPT 架构图",
-          "en": "GPT diagram"
+          "zh": "展示GPT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of GPT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -56656,12 +56550,12 @@ const milestones = [
       },
       "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "GPT结构图 2",
+          "en": "GPT structure diagram 2"
         },
         "subcaption": {
-          "zh": "GPT 架构图",
-          "en": "GPT diagram"
+          "zh": "展示GPT的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of GPT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -56680,12 +56574,12 @@ const milestones = [
       },
       "resources/images/2018-gpt/historical/2018-gpt_historical_01.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "GPT资料图 1",
+          "en": "GPT reference image 1"
         },
         "subcaption": {
-          "zh": "GPT",
-          "en": "GPT"
+          "zh": "与GPT相关的历史图像资料。",
+          "en": "Historical image reference related to GPT."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -56700,30 +56594,6 @@ const milestones = [
           }
         },
         "role": "supporting-image",
-        "type": "image"
-      },
-      "resources/images/2018-gpt/people/2018-gpt_people_02.png": {
-        "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
-        },
-        "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-improving-language-understanding-by-generative-pre-training",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "team-photo",
         "type": "image"
       }
     },
@@ -57129,12 +56999,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "马克斯·泰格马克肖像",
+          "en": "Max Tegmark portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "AI Feynman 共同作者。",
+          "en": "Co-author of AI Feynman."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57153,12 +57023,12 @@ const milestones = [
       },
       "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "AI Feynman：自主科学规律发现结构图 1",
+          "en": "AI Feynman: Autonomous Discovery of Scientific Laws structure diagram 1"
         },
         "subcaption": {
-          "zh": "AI Feynman：自主科学规律发现 架构图",
-          "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+          "zh": "展示AI Feynman：自主科学规律发现的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of AI Feynman: Autonomous Discovery of Scientific Laws."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57177,12 +57047,12 @@ const milestones = [
       },
       "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《AI 费曼：受物理启发的符号回归方法》（第 1 页资料）",
+          "en": "AI Feynman: a physics-inspired method for symbolic regression — page reference 1"
         },
         "subcaption": {
-          "zh": "《AI 费曼：受物理启发的符号回归方法》",
-          "en": "AI Feynman: a physics-inspired method for symbolic regression"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57201,12 +57071,12 @@ const milestones = [
       },
       "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《AI 费曼：受物理启发的符号回归方法》（第 2 页资料）",
+          "en": "AI Feynman: a physics-inspired method for symbolic regression — page reference 2"
         },
         "subcaption": {
-          "zh": "《AI 费曼：受物理启发的符号回归方法》",
-          "en": "AI Feynman: a physics-inspired method for symbolic regression"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57447,12 +57317,12 @@ const milestones = [
     "imageMeta": {
       "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg": {
         "caption": {
-          "zh": "John Jumper 外部参考图",
-          "en": "John Jumper external reference image"
+          "zh": "约翰·江珀肖像",
+          "en": "John Jumper portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "AlphaFold2 主要研究者。",
+          "en": "Lead researcher of AlphaFold2."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -57467,7 +57337,7 @@ const milestones = [
           },
           "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg": {
@@ -57496,12 +57366,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "AlphaFold: 蛋白质结构预测结构图 1",
+          "en": "AlphaFold: Protein Structure Prediction structure diagram 1"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测 架构图",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "展示AlphaFold: 蛋白质结构预测的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57520,12 +57390,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "AlphaFold: 蛋白质结构预测资料图 1",
+          "en": "AlphaFold: Protein Structure Prediction reference image 1"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57544,12 +57414,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "AlphaFold: 蛋白质结构预测结构图 2",
+          "en": "AlphaFold: Protein Structure Prediction structure diagram 2"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测 架构图",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "展示AlphaFold: 蛋白质结构预测的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57568,12 +57438,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "AlphaFold: 蛋白质结构预测资料图 2",
+          "en": "AlphaFold: Protein Structure Prediction reference image 2"
         },
         "subcaption": {
-          "zh": "AlphaFold: 蛋白质结构预测",
-          "en": "AlphaFold: Protein Structure Prediction"
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57592,12 +57462,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》（第 1 页资料）",
+          "en": "Highly accurate protein structure prediction with AlphaFold — page reference 1"
         },
         "subcaption": {
-          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
-          "en": "Highly accurate protein structure prediction with AlphaFold"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57616,12 +57486,12 @@ const milestones = [
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "约翰·江珀肖像",
+          "en": "John Jumper portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "AlphaFold2 主要研究者。",
+          "en": "Lead researcher of AlphaFold2."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57635,17 +57505,17 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_02.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "德米斯·哈萨比斯肖像",
+          "en": "Demis Hassabis portrait"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "DeepMind 联合创始人与 AlphaFold 负责人。",
+          "en": "DeepMind co-founder and AlphaFold leader."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -57659,7 +57529,7 @@ const milestones = [
             "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -58089,12 +57959,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/2023-agents/historical/2023-agents_historical_02.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "智能体：LLM驱动的自主系统资料图 2",
+          "en": "Agents: LLM-Driven Autonomous Systems reference image 2"
         },
         "subcaption": {
-          "zh": "智能体：LLM驱动的自主系统",
-          "en": "Agents: LLM-Driven Autonomous Systems"
+          "zh": "与智能体：LLM驱动的自主系统相关的历史图像资料。",
+          "en": "Historical image reference related to Agents: LLM-Driven Autonomous Systems."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58113,12 +57983,12 @@ const milestones = [
       },
       "resources/images/2023-agents/historical/2023-agents_historical_03.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "智能体：LLM驱动的自主系统资料图 3",
+          "en": "Agents: LLM-Driven Autonomous Systems reference image 3"
         },
         "subcaption": {
-          "zh": "智能体：LLM驱动的自主系统",
-          "en": "Agents: LLM-Driven Autonomous Systems"
+          "zh": "与智能体：LLM驱动的自主系统相关的历史图像资料。",
+          "en": "Historical image reference related to Agents: LLM-Driven Autonomous Systems."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58137,12 +58007,12 @@ const milestones = [
       },
       "resources/images/2023-agents/historical/2023-agents_historical_04.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "智能体：LLM驱动的自主系统资料图 4",
+          "en": "Agents: LLM-Driven Autonomous Systems reference image 4"
         },
         "subcaption": {
-          "zh": "智能体：LLM驱动的自主系统",
-          "en": "Agents: LLM-Driven Autonomous Systems"
+          "zh": "与智能体：LLM驱动的自主系统相关的历史图像资料。",
+          "en": "Historical image reference related to Agents: LLM-Driven Autonomous Systems."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58381,12 +58251,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "AI科学家与自主实验室结构图 1",
+          "en": "AI Scientists and Autonomous Laboratories structure diagram 1"
         },
         "subcaption": {
-          "zh": "AI科学家与自主实验室 架构图",
-          "en": "AI Scientists and Autonomous Laboratories"
+          "zh": "展示AI科学家与自主实验室的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of AI Scientists and Autonomous Laboratories."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58405,12 +58275,12 @@ const milestones = [
       },
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "AI科学家与自主实验室结构图 2",
+          "en": "AI Scientists and Autonomous Laboratories structure diagram 2"
         },
         "subcaption": {
-          "zh": "AI科学家与自主实验室 架构图",
-          "en": "AI Scientists and Autonomous Laboratories"
+          "zh": "展示AI科学家与自主实验室的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of AI Scientists and Autonomous Laboratories."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58429,12 +58299,12 @@ const milestones = [
       },
       "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png": {
         "caption": {
-          "zh": "论文页面",
-          "en": "Paper page"
+          "zh": "《AI 科学家》（第 1 页资料）",
+          "en": "The AI Scientist — page reference 1"
         },
         "subcaption": {
-          "zh": "《AI 科学家》",
-          "en": "The AI Scientist"
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58453,12 +58323,12 @@ const milestones = [
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "伯克利 A-Lab 研究团队",
+          "en": "Berkeley A-Lab research team"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "自动化实验室研究人员在材料实验环境中工作。",
+          "en": "Automated-laboratory researchers working in a materials lab."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58477,12 +58347,12 @@ const milestones = [
       },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
         "caption": {
-          "zh": "人物肖像",
-          "en": "Portrait"
+          "zh": "Sakana AI 团队",
+          "en": "Sakana AI team"
         },
         "subcaption": {
-          "zh": "相关研究者照片",
-          "en": "Relevant researcher photo"
+          "zh": "AI Scientist 项目的开发团队资料照。",
+          "en": "Reference photo of the team developing the AI Scientist project."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58714,12 +58584,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "大语言模型百花齐放资料图 1",
+          "en": "A Flourishing Competition Among Large Language Models reference image 1"
         },
         "subcaption": {
-          "zh": "大语言模型百花齐放",
-          "en": "A Flourishing Competition Among Large Language Models"
+          "zh": "与大语言模型百花齐放相关的历史图像资料。",
+          "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58738,12 +58608,12 @@ const milestones = [
       },
       "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
         "caption": {
-          "zh": "结构示意",
-          "en": "Architecture"
+          "zh": "大语言模型百花齐放结构图 1",
+          "en": "A Flourishing Competition Among Large Language Models structure diagram 1"
         },
         "subcaption": {
-          "zh": "大语言模型百花齐放 架构图",
-          "en": "A Flourishing Competition Among Large Language Models"
+          "zh": "展示大语言模型百花齐放的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of A Flourishing Competition Among Large Language Models."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58762,12 +58632,12 @@ const milestones = [
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "大语言模型百花齐放资料图 2",
+          "en": "A Flourishing Competition Among Large Language Models reference image 2"
         },
         "subcaption": {
-          "zh": "大语言模型百花齐放",
-          "en": "A Flourishing Competition Among Large Language Models"
+          "zh": "与大语言模型百花齐放相关的历史图像资料。",
+          "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58786,12 +58656,12 @@ const milestones = [
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png": {
         "caption": {
-          "zh": "历史照片",
-          "en": "Historical photo"
+          "zh": "大语言模型百花齐放资料图 3",
+          "en": "A Flourishing Competition Among Large Language Models reference image 3"
         },
         "subcaption": {
-          "zh": "大语言模型百花齐放",
-          "en": "A Flourishing Competition Among Large Language Models"
+          "zh": "与大语言模型百花齐放相关的历史图像资料。",
+          "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -58998,12 +58868,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png": {
         "caption": {
-          "zh": "斯特雷奇跳棋程序外部参考图",
-          "en": "Strachey draughts program external reference image"
+          "zh": "斯特雷奇跳棋程序显示画面",
+          "en": "Strachey draughts program display"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
+          "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -59018,17 +58888,17 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
-        "role": "external-reference-image",
+        "role": "source-card",
         "type": "image"
       },
       "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg": {
         "caption": {
-          "zh": "跳棋棋盘外部参考图",
-          "en": "Checkers board external reference image"
+          "zh": "标准跳棋棋盘",
+          "en": "Standard checkers board"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
+          "en": "The board environment handled by Strachey's program."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -59043,7 +58913,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
         },
-        "role": "external-reference-image",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -59565,12 +59435,12 @@ const milestones = [
     "imageMeta": {
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
-          "zh": "AlphaGo 与李世石比赛资料图",
-          "en": "AlphaGo and Lee Sedol match reference image"
+          "zh": "李世石肖像",
+          "en": "Lee Sedol portrait"
         },
         "subcaption": {
-          "zh": "team-photo",
-          "en": "team-photo"
+          "zh": "与 AlphaGo 进行五番棋对局的职业围棋棋手。",
+          "en": "Professional Go player who faced AlphaGo in the five-game match."
         },
         "license": {
           "zh": "历史资料图，需保留来源说明。",
@@ -59584,17 +59454,17 @@ const milestones = [
             "en": "Historical reference image; keep source attribution."
           }
         },
-        "role": "team-photo",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
-          "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
-          "en": "AlphaGo policy, value, and search workflow explainer"
+          "zh": "AlphaGo 策略、价值与搜索流程",
+          "en": "AlphaGo policy, value, and search workflow"
         },
         "subcaption": {
-          "zh": "architecture-explainer",
-          "en": "architecture-explainer"
+          "zh": "展示策略网络、价值网络与蒙特卡洛树搜索的协作关系。",
+          "en": "Shows how policy networks, value networks, and Monte Carlo tree search work together."
         },
         "license": {
           "zh": "根据论文方法本地重绘，不复制原论文图。",
@@ -60518,12 +60388,12 @@ const milestones = [
     "imageMeta": {
       "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg": {
         "caption": {
-          "zh": "乔纳森·谢弗外部参考图",
-          "en": "Jonathan Schaeffer external reference image"
+          "zh": "乔纳森·谢弗肖像",
+          "en": "Jonathan Schaeffer portrait"
         },
         "subcaption": {
-          "zh": "external-reference-image",
-          "en": "external-reference-image"
+          "zh": "Chinook 团队负责人。",
+          "en": "Leader of the Chinook team."
         },
         "license": {
           "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
@@ -60538,7 +60408,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },
-        "role": "external-reference-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
