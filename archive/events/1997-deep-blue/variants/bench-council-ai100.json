@@ -127,8 +127,47 @@
         "zh": "默里·坎贝尔"
       },
       "role": {
-        "en": "Deep Blue team member",
-        "zh": "深蓝 团队成员"
+        "en": "Evaluation-function and search-strategy lead",
+        "zh": "评估函数与搜索策略负责人"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Feng-hsiung Hsu",
+        "zh": "许峰雄"
+      },
+      "role": {
+        "en": "Chief architect; custom VLSI and hardware design",
+        "zh": "首席架构师；定制 VLSI 与硬件设计"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "A. Joseph Hoane Jr.",
+        "zh": "约瑟夫·霍恩"
+      },
+      "role": {
+        "en": "Parallel-search software lead",
+        "zh": "并行搜索软件负责人"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Jerry Brody",
+        "zh": "杰里·布罗迪"
+      },
+      "role": {
+        "en": "Hardware integration and match operations",
+        "zh": "硬件集成与比赛现场运行"
       },
       "avatar": "",
       "avatarStyle": "",

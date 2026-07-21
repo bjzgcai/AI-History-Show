@@ -320,6 +320,23 @@ function validateVariantPapers(filePath, papers) {
     });
 }
 
+function validateVariantFigures(filePath, figures) {
+    if (figures === undefined) return;
+    if (!Array.isArray(figures)) {
+        addError(filePath, 'variant figures must be an array.');
+        return;
+    }
+
+    figures.forEach((figure, index) => {
+        if (!isObject(figure) || !hasText(figure.avatar)) return;
+        if (/^https?:\/\//i.test(figure.avatar)) {
+            addError(filePath, `figures[${index}].avatar must use a local file: ${figure.avatar}`);
+        } else if (!fs.existsSync(resolveAssetPath(figure.avatar))) {
+            addError(filePath, `figures[${index}].avatar does not exist: ${figure.avatar}`);
+        }
+    });
+}
+
 function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, quizIds) {
     const variant = readJson(filePath);
     if (!variant) return null;
@@ -351,6 +368,7 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
         addError(filePath, `variant references missing quizId: ${variant.quizId}`);
     }
     validateVariantPapers(filePath, variant.papers);
+    validateVariantFigures(filePath, variant.figures);
 
     if (Array.isArray(variant.commentarySections)) {
         variant.commentarySections.forEach((section, index) => {

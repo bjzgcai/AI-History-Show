@@ -4,6 +4,7 @@ const path = require('node:path');
 
 const indexPath = path.join(__dirname, '..', 'index.html');
 const source = fs.readFileSync(indexPath, 'utf8');
+const dualScreenSource = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 
 function assertContains(pattern, message) {
     const passed = typeof pattern === 'string' ? source.includes(pattern) : pattern.test(source);
@@ -152,4 +153,21 @@ const mobileRequirements = [
 
 for (const requirement of mobileRequirements) {
     assertContains(requirement.pattern, requirement.message);
+}
+
+for (const [entry, entrySource] of [
+    ['single-screen', source],
+    ['dual-screen', dualScreenSource]
+]) {
+    assert.equal(
+        entrySource.includes('portraitPool[index]'),
+        false,
+        `${entry} figures must not infer avatars from event images`
+    );
+    assert.match(
+        entrySource,
+        /function getFigureAvatarSource\(figure\)[\s\S]*?if \(figure && figure\.avatar\)[\s\S]*?return null;/,
+        `${entry} figures use only explicitly configured avatars`
+    );
+    console.log(`PASS ${entry} figures require explicit avatar data`);
 }

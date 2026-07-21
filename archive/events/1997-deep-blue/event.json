@@ -39,8 +39,32 @@
     {
       "figureId": "murray-campbell",
       "role": {
-        "zh": "深蓝 团队成员",
-        "en": "Deep Blue team member"
+        "zh": "评估函数与搜索策略负责人",
+        "en": "Evaluation-function and search-strategy lead"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "feng-hsiung-hsu",
+      "role": {
+        "zh": "首席架构师；设计定制 VLSI 芯片与硬件架构",
+        "en": "Chief architect; custom VLSI and hardware design"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "a-joseph-hoane-jr",
+      "role": {
+        "zh": "并行搜索软件总工程师",
+        "en": "Lead engineer for parallel-search software"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jerry-brody",
+      "role": {
+        "zh": "硬件集成与现场运行工程师",
+        "en": "Hardware integration and match-operations engineer"
       },
       "organizationIds": []
     }

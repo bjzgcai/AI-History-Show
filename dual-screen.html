@@ -2226,25 +2226,11 @@
             return words.slice(0, 2).map((item) => item[0].toUpperCase()).join('');
         }
 
-        function getFigureAvatarSource(figure, vm, portraitPool, index) {
+        function getFigureAvatarSource(figure) {
             if (figure && figure.avatar) {
                 return {
                     src: figure.avatar,
                     style: figure.avatarStyle || ''
-                };
-            }
-
-            if (portraitPool[index]) {
-                return {
-                    src: portraitPool[index],
-                    style: ''
-                };
-            }
-
-            if (vm && vm.year === 1956) {
-                return {
-                    src: 'resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg',
-                    style: 'object-position: 36% 30%; transform: scale(1.45);'
                 };
             }
 
@@ -3409,13 +3395,10 @@
                     name: vm.title || tx('aiHistoryEvent'),
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
                 }];
-            const hasFigureAvatars = figures.some((figure) => figure && figure.avatar);
-            const portraitPool = hasFigureAvatars ? [] : sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
-
             refs.figureRow.className = `figure-row count-${Math.min(4, figures.length)}`;
-            refs.figureRow.innerHTML = figures.map((figure, index) => `
+            refs.figureRow.innerHTML = figures.map((figure) => `
                 <article class="figure-chip">
-                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>
+                    <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
                         <div class="figure-name">${escapeHtml(figure.name || tx('keyFigure'))}</div>
                         <div class="figure-role">${escapeHtml(figure.role || tx('keyParticipant'))}</div>

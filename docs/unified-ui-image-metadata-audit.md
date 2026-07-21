@@ -4,7 +4,7 @@
 
 - 检查日期：2026-07-21
 - Archive 事件：128 个
-- Archive 图片、SVG 与 GIF 资产：339 个
+- Archive 图片、SVG 与 GIF 资产：340 个
 - 生成后的里程碑：146 个
 - 统一 UI 当前展示事件：109 个
 - 中英文页面检查：218 次
@@ -31,7 +31,7 @@
 
 | 事件 | 原显示 | 修正后标题 | 修正后说明 |
 | --- | --- | --- | --- |
-| ReLU | ReLU 外部参考图 / `external-reference-image` | 约书亚·本吉奥肖像 | 深度稀疏整流网络论文共同作者。 |
+| ReLU | ReLU 外部参考图 / `external-reference-image` | 福岛邦彦肖像 | 1969 年早期整流神经网络研究者。 |
 | AlexNet | AlexNet 相关人物资料图 | 计算机历史博物馆发布 AlexNet 源代码的页面截图 | 介绍 AlexNet 源代码公开的网页截图，不是人物肖像。 |
 | AlexNet | AlexNet 架构示意 | ImageNet 识别错误率演进图 | 比较 AlexNet 前后代表性视觉模型的错误率与网络深度。 |
 | AlphaGo | AlphaGo 与李世石比赛资料图 | 李世石肖像 | 与 AlphaGo 进行五番棋对局的职业围棋棋手。 |
