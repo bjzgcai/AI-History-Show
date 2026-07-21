@@ -40,7 +40,7 @@
       "figureId": "vladimir-vapnik",
       "role": {
         "zh": "共同发展最优间隔分类器与统计学习理论",
-        "en": "Co-developed optimal-margin classifiers and statistical learning theory"
+        "en": "SVM co-developer"
       },
       "organizationIds": []
     },
@@ -48,7 +48,7 @@
       "figureId": "bernhard-boser",
       "role": {
         "zh": "1992 年最优间隔分类器论文共同作者",
-        "en": "Co-author of the 1992 optimal-margin classifier paper"
+        "en": "1992 SVM paper co-author"
       },
       "organizationIds": []
     },
@@ -56,7 +56,7 @@
       "figureId": "isabelle-guyon",
       "role": {
         "zh": "1992 年最优间隔分类器论文共同作者",
-        "en": "Co-author of the 1992 optimal-margin classifier paper"
+        "en": "1992 SVM paper co-author"
       },
       "organizationIds": []
     }

@@ -90,7 +90,7 @@
         "zh": "马丁·戴维斯"
       },
       "role": {
-        "en": "Co-developed Davis-Putnam and DPLL procedures",
+        "en": "DP/DPLL co-developer",
         "zh": "共同提出 Davis-Putnam 与 DPLL 过程"
       },
       "avatar": "",
@@ -103,7 +103,7 @@
         "zh": "希拉里·普特南"
       },
       "role": {
-        "en": "Co-authored the 1960 Davis-Putnam procedure",
+        "en": "1960 DP paper co-author",
         "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
       },
       "avatar": "",
@@ -116,7 +116,7 @@
         "zh": "乔治·洛格曼"
       },
       "role": {
-        "en": "Co-authored the 1962 DPLL program paper",
+        "en": "1962 DPLL paper co-author",
         "zh": "共同撰写 1962 年 DPLL 程序论文"
       },
       "avatar": "",
@@ -129,7 +129,7 @@
         "zh": "唐纳德·W·洛夫兰"
       },
       "role": {
-        "en": "Co-authored the 1962 DPLL program paper",
+        "en": "1962 DPLL paper co-author",
         "zh": "共同撰写 1962 年 DPLL 程序论文"
       },
       "avatar": "",
@@ -271,8 +271,8 @@
       "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院"
     },
     "country": {
-      "en": "New York and Princeton, United States",
-      "zh": "美国，纽约与普林斯顿"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.7295,

@@ -16,8 +16,8 @@
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "<p>K-means 让无监督分组简单到成为默认工具。劳埃德 方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
-      "en": "<p>K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+      "zh": "<p>劳埃德于 1957 年在贝尔实验室形成这套方法，相关论文《PCM 中的最小二乘量化》直到 1982 年才正式发表。K-means 让无监督分组简单到成为默认工具；劳埃德方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
+      "en": "<p>Lloyd developed the method at Bell Labs in 1957; the related paper, <em>Least Squares Quantization in PCM</em>, was formally published in 1982. K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to the nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
     },
     "sourceIds": [
       "source-least-squares-quantization-in-pcm",
