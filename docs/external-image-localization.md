@@ -30,7 +30,8 @@
 | 2020-alphafold | 约翰·江珀肖像 | `resources/images/external/2020-alphafold/john-jumper-portrait.jpg` | [范德堡大学新闻](https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg) |
 | ai100-1943-mcculloch-pitts-neuron | 沃尔特·皮茨与黑板 | `resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg` | [维基共享资源](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg) |
 | ai100-1967-knn | 托马斯·科弗肖像 | `resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg` | [Stanford 信息系统实验室](https://isl.stanford.edu/~cover/) |
-| ai100-1969-relu | 约书亚·本吉奥肖像 | `resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg` | [维基共享资源](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg) |
+| ai100-1969-relu | 福岛邦彦肖像 | `resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg` | [C&C 奖官网](https://www.candc.or.jp/kensyo/2021/group_a.html) |
+| ai100-1969-relu | 约书亚·本吉奥肖像 | `resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg` | [维基共享资源](https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg) |
 | ai100-1970-ridge | 阿瑟·霍尔与岭回归公式 | `resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg` | [特拉华大学 UDaily](https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg) |
 | ai100-1980-neocognitron | 福岛邦彦肖像 | `resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg` | [C&C 奖官网](https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg) |
 | ai100-1982-som | 泰沃·科霍宁肖像 | `resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg` | [维基共享资源](https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg) |
@@ -63,3 +64,5 @@
 | ai100-2021-swin-transformer | 刘泽肖像 | `resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg` | [刘泽个人网站](https://zeliu98.github.io/images/zeliu.jpg) |
 | ai100-2022-stable-diffusion | 罗宾·罗姆巴赫肖像 | `resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg` | [Latent Labs](https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg) |
 | ai100-2023-segment-anything | 亚历山大·基里洛夫肖像 | `resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg` | [亚历山大·基里洛夫个人网站](https://alexander-kirillov.github.io/images/alexander_kirillov.jpg) |
+
+ReLU 事件同时展示福岛邦彦与约书亚·本吉奥的本地肖像，图片顺序为“福岛邦彦肖像 + ReLU 解释图 + 约书亚·本吉奥肖像”，确保福岛邦彦始终优先展示。

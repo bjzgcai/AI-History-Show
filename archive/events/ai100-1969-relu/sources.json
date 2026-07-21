@@ -1,5 +1,43 @@
 [
   {
+    "id": "source-fukushima-analog-threshold-elements",
+    "type": "paper",
+    "label": {
+      "zh": "原始论文",
+      "en": "Primary paper"
+    },
+    "title": {
+      "zh": "《基于多层模拟阈值元件网络的视觉特征提取》",
+      "en": "Visual Feature Extraction by a Multilayered Network of Analog Threshold Elements"
+    },
+    "url": "https://doi.org/10.1109/TSSC.1969.300225",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "福岛邦彦 1969 年关于多层模拟阈值元件网络的原始论文。",
+      "en": "Fukushima's 1969 primary paper on a multilayered network of analog threshold elements."
+    }
+  },
+  {
+    "id": "source-candc-2021-kunihiko-fukushima",
+    "type": "official-profile",
+    "label": {
+      "zh": "官方人物资料",
+      "en": "Official profile"
+    },
+    "title": {
+      "zh": "2021 年 C&C 奖：福岛邦彦博士",
+      "en": "2021 C&C Prize: Dr. Kunihiko Fukushima"
+    },
+    "url": "https://www.candc.or.jp/kensyo/2021/group_a.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "C&C 奖官网的人物介绍与肖像来源页。",
+      "en": "Official C&C Prize profile and portrait source page."
+    }
+  },
+  {
     "id": "source-deep-sparse-rectifier-neural-networks",
     "type": "paper",
     "label": {

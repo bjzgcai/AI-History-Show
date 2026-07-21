@@ -73,9 +73,23 @@ for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'e
                 `${eventEntry.name}/${variantFile} must not select external image asset ${assetId}`
             );
         }
+        for (const [index, figure] of (variant.figures || []).entries()) {
+            if (!figure || !figure.avatar) continue;
+            assert.doesNotMatch(
+                figure.avatar,
+                /^https?:\/\//i,
+                `${eventEntry.name}/${variantFile} figures[${index}] must use a local avatar`
+            );
+            assert.equal(
+                fs.existsSync(path.join(__dirname, '..', figure.avatar)),
+                true,
+                `${eventEntry.name}/${variantFile} figures[${index}] avatar must exist`
+            );
+        }
     }
 }
 console.log('PASS runtime variants select only local image assets');
+console.log('PASS runtime figure avatars are explicit local files');
 
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');

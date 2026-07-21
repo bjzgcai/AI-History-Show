@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-21 09:21
+// 生成时间: 2026-07-21 10:17
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -14923,8 +14923,47 @@ const milestones = [
           "zh": "默里·坎贝尔"
         },
         "role": {
-          "en": "Deep Blue team member",
-          "zh": "深蓝 团队成员"
+          "en": "Evaluation-function and search-strategy lead",
+          "zh": "评估函数与搜索策略负责人"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Feng-hsiung Hsu",
+          "zh": "许峰雄"
+        },
+        "role": {
+          "en": "Chief architect; custom VLSI and hardware design",
+          "zh": "首席架构师；定制 VLSI 与硬件设计"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "A. Joseph Hoane Jr.",
+          "zh": "约瑟夫·霍恩"
+        },
+        "role": {
+          "en": "Parallel-search software lead",
+          "zh": "并行搜索软件负责人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Jerry Brody",
+          "zh": "杰里·布罗迪"
+        },
+        "role": {
+          "en": "Hardware integration and match operations",
+          "zh": "硬件集成与比赛现场运行"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -30352,8 +30391,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>",
-      "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>"
+      "zh": "<p>1969 年，福岛邦彦在日本 NHK 广播科学研究实验室的多层神经网络研究中使用了后来被称为 ReLU 的整流响应，当时将相关单元称为“模拟阈值元件”。这一思路在当时没有成为主流训练方法，长期未被广泛采用。</p><p>到 2010—2011 年，维诺德·奈尔与杰弗里·辛顿，以及泽维尔·格洛罗、安托万·博尔德和约书亚·本吉奥等研究者通过系统实验重新验证了整流单元的价值。ReLU 的正半轴不饱和，有助于缓解深层网络中的梯度衰减；大量零输出可形成稀疏激活，max 运算也十分高效。此后它成为 CNN 等深度网络的标准选择，并被原始 Transformer 的前馈网络采用；今天部分模型也会改用 GELU 或门控激活函数。</p>",
+      "en": "<p>In 1969, Kunihiko Fukushima at Japan's NHK Broadcasting Science Research Laboratories used a rectifying response in a multilayer neural network, describing the related units as \"analog threshold elements.\" This is now recognized as an early use of what became known as ReLU, but the idea did not become a mainstream training method at the time and was not widely adopted for decades.</p><p>In 2010–2011, Vinod Nair and Geoffrey Hinton, followed by Xavier Glorot, Antoine Bordes, and Yoshua Bengio, systematically demonstrated the value of rectified units. ReLU's non-saturating positive branch supports gradient flow, exact-zero outputs encourage sparse activations, and its max operation is computationally inexpensive. It subsequently became a standard choice in CNNs and other deep networks and was used in the feed-forward layers of the original Transformer; many newer models also use alternatives such as GELU or gated activations.</p>"
     },
     "figures": [
       {
@@ -30365,7 +30404,7 @@ const milestones = [
           "en": "Early neural vision researcher",
           "zh": "早期神经视觉研究者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -30378,49 +30417,51 @@ const milestones = [
           "en": "Co-author of later deep rectifier analysis",
           "zh": "后续深度整流函数分析共同作者"
         },
-        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "avatar": "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
-        "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg"
+        "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
+        "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+        "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
-        "asset-1969-relu-activation"
+        "asset-ai100-1969-relu-kunihiko-fukushima-candc",
+        "asset-1969-relu-activation",
+        "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02"
       ]
     },
     "imageMeta": {
-      "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg": {
+      "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg": {
         "caption": {
-          "zh": "约书亚·本吉奥肖像",
-          "en": "Yoshua Bengio portrait"
+          "zh": "福岛邦彦肖像",
+          "en": "Kunihiko Fukushima portrait"
         },
         "subcaption": {
-          "zh": "深度稀疏整流网络论文共同作者。",
-          "en": "Co-author of the deep sparse rectifier network paper."
+          "zh": "1969 年早期整流神经网络研究者。",
+          "en": "Researcher behind the 1969 early rectified neural-network work."
         },
         "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
+          "zh": "C&C 奖官网",
+          "en": "C&C Prize website"
         },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
+        "sourceUrl": "https://www.candc.or.jp/kensyo/2021/group_a.html",
         "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          "zh": "本地副本来自 C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from the C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
-        "sourceId": "source-deep-sparse-rectifier-neural-networks",
+        "sourceId": "source-candc-2021-kunihiko-fukushima",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+            "zh": "本地副本来自 C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from the C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+          "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -30448,6 +30489,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg": {
+        "caption": {
+          "zh": "约书亚·本吉奥肖像",
+          "en": "Yoshua Bengio portrait"
+        },
+        "subcaption": {
+          "zh": "深度稀疏整流网络论文共同作者。",
+          "en": "Co-author of the deep sparse rectifier network paper."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-yoshua-bengio-profile-at-mila",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+        },
+        "role": "portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -30485,6 +30556,34 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-fukushima-analog-threshold-elements",
+          "type": {
+            "zh": "原始论文",
+            "en": "Primary paper"
+          },
+          "label": {
+            "zh": "《基于多层模拟阈值元件网络的视觉特征提取》",
+            "en": "Visual Feature Extraction by a Multilayered Network of Analog Threshold Elements"
+          },
+          "url": "https://doi.org/10.1109/TSSC.1969.300225",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-candc-2021-kunihiko-fukushima",
+          "type": {
+            "zh": "官方人物资料",
+            "en": "Official profile"
+          },
+          "label": {
+            "zh": "2021 年 C&C 奖：福岛邦彦博士",
+            "en": "2021 C&C Prize: Dr. Kunihiko Fukushima"
+          },
+          "url": "https://www.candc.or.jp/kensyo/2021/group_a.html",
+          "reliability": "primary",
+          "sourceType": "official-profile"
+        },
+        {
           "id": "source-deep-sparse-rectifier-neural-networks",
           "type": {
             "zh": "论文",
@@ -30513,20 +30612,6 @@ const milestones = [
           "sourceType": "paper"
         },
         {
-          "id": "source-rectifier-activation-overview",
-          "type": {
-            "zh": "背景",
-            "en": "Background"
-          },
-          "label": {
-            "zh": "整流激活函数概览",
-            "en": "Rectifier activation overview"
-          },
-          "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
-        },
-        {
           "id": "source-yoshua-bengio-profile-at-mila",
           "type": {
             "zh": "人物",
@@ -30542,9 +30627,10 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-fukushima-analog-threshold-elements",
+        "source-candc-2021-kunihiko-fukushima",
         "source-deep-sparse-rectifier-neural-networks",
         "source-rectified-linear-units-improve-restricted-boltzmann-machines",
-        "source-rectifier-activation-overview",
         "source-yoshua-bengio-profile-at-mila"
       ],
       "claimIds": [
@@ -30569,10 +30655,11 @@ const milestones = [
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。</p>",
-            "en": "<p>Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities.</p>"
+            "zh": "<p>1969 年，福岛邦彦在日本 NHK 广播科学研究实验室的多层神经网络研究中使用了后来被称为 ReLU 的整流响应，当时将相关单元称为“模拟阈值元件”。这一思路在当时没有成为主流训练方法，长期未被广泛采用。</p><p>到 2010—2011 年，维诺德·奈尔与杰弗里·辛顿，以及泽维尔·格洛罗、安托万·博尔德和约书亚·本吉奥等研究者通过系统实验重新验证了整流单元的价值。ReLU 的正半轴不饱和，有助于缓解深层网络中的梯度衰减；大量零输出可形成稀疏激活，max 运算也十分高效。此后它成为 CNN 等深度网络的标准选择，并被原始 Transformer 的前馈网络采用；今天部分模型也会改用 GELU 或门控激活函数。</p>",
+            "en": "<p>In 1969, Kunihiko Fukushima at Japan's NHK Broadcasting Science Research Laboratories used a rectifying response in a multilayer neural network, describing the related units as \"analog threshold elements.\" This is now recognized as an early use of what became known as ReLU, but the idea did not become a mainstream training method at the time and was not widely adopted for decades.</p><p>In 2010–2011, Vinod Nair and Geoffrey Hinton, followed by Xavier Glorot, Antoine Bordes, and Yoshua Bengio, systematically demonstrated the value of rectified units. ReLU's non-saturating positive branch supports gradient flow, exact-zero outputs encourage sparse activations, and its max operation is computationally inexpensive. It subsequently became a standard choice in CNNs and other deep networks and was used in the feed-forward layers of the original Transformer; many newer models also use alternatives such as GELU or gated activations.</p>"
           },
           "sourceIds": [
+            "source-fukushima-analog-threshold-elements",
             "source-deep-sparse-rectifier-neural-networks",
             "source-rectified-linear-units-improve-restricted-boltzmann-machines"
           ],
@@ -30695,10 +30782,12 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "整流线性激活可以追溯到早期神经视觉研究，后来成为深度网络的标准激活函数。它简单且不易饱和的形状，比许多早期压缩型非线性函数更有利于训练深层模型。",
-          "en": "Rectified linear activation traces through early neural vision work and later became a standard activation for deep networks. Its simple non-saturating shape helped train deeper models more effectively than many older squashing nonlinearities."
+          "zh": "1969 年，福岛邦彦在 NHK 的多层神经网络研究中使用了后来被称为 ReLU 的整流响应，但这一思路当时没有得到广泛采用。2010—2011 年的系统实验重新验证了整流单元在深层网络中的训练优势，并推动其成为常用激活函数。",
+          "en": "In 1969, Kunihiko Fukushima used a rectifying response in an NHK multilayer neural-network study, but the idea was not widely adopted at the time. Systematic experiments in 2010–2011 re-established the training advantages of rectified units and helped make them a standard activation choice."
         },
         "sourceIds": [
+          "source-fukushima-analog-threshold-elements",
+          "source-rectified-linear-units-improve-restricted-boltzmann-machines",
           "source-deep-sparse-rectifier-neural-networks"
         ]
       },
@@ -61762,8 +61851,47 @@ const milestones = [
           "zh": "默里·坎贝尔"
         },
         "role": {
-          "en": "Deep Blue team member",
-          "zh": "深蓝 团队成员"
+          "en": "Evaluation-function and search-strategy lead",
+          "zh": "评估函数与搜索策略负责人"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Feng-hsiung Hsu",
+          "zh": "许峰雄"
+        },
+        "role": {
+          "en": "Chief architect; custom VLSI and hardware design",
+          "zh": "首席架构师；定制 VLSI 与硬件设计"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "A. Joseph Hoane Jr.",
+          "zh": "约瑟夫·霍恩"
+        },
+        "role": {
+          "en": "Parallel-search software lead",
+          "zh": "并行搜索软件负责人"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Jerry Brody",
+          "zh": "杰里·布罗迪"
+        },
+        "role": {
+          "en": "Hardware integration and match operations",
+          "zh": "硬件集成与比赛现场运行"
         },
         "avatar": "",
         "avatarStyle": "",

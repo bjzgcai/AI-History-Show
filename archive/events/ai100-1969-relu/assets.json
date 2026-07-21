@@ -26,6 +26,38 @@
     "editable": true
   },
   {
+    "id": "asset-ai100-1969-relu-kunihiko-fukushima-candc",
+    "type": "image",
+    "path": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "福岛邦彦肖像",
+      "en": "Kunihiko Fukushima portrait"
+    },
+    "subcaption": {
+      "zh": "1969 年早期整流神经网络研究者。",
+      "en": "Researcher behind the 1969 early rectified neural-network work."
+    },
+    "sourceId": "source-candc-2021-kunihiko-fukushima",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "本地副本来自 C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from the C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+      },
+      "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true,
+    "sourceName": {
+      "zh": "C&C 奖官网",
+      "en": "C&C Prize website"
+    },
+    "sourceUrl": "https://www.candc.or.jp/kensyo/2021/group_a.html"
+  },
+  {
     "id": "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
     "type": "image",
     "path": "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
@@ -34,7 +66,7 @@
       "zh": "约书亚·本吉奥肖像",
       "en": "Yoshua Bengio portrait"
     },
-    "sourceId": "source-deep-sparse-rectifier-neural-networks",
+    "sourceId": "source-yoshua-bengio-profile-at-mila",
     "rights": {
       "status": "external-reference",
       "license": {
@@ -55,6 +87,6 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ICLR_2025_-_Yoshua_Bengio_02.jpg"
   }
 ]
