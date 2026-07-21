@@ -57,12 +57,12 @@
     "path": "resources/images/2014-gan/architecture/2014-gan_architecture_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "GAN（生成对抗网路）结构图 1",
+      "en": "GANs: Generative Adversarial Networks structure diagram 1"
     },
     "subcaption": {
-      "zh": "GAN（生成对抗网路） 架构图",
-      "en": "GANs: Generative Adversarial Networks"
+      "zh": "展示GAN（生成对抗网路）的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of GANs: Generative Adversarial Networks."
     },
     "sourceId": "source-generative-adversarial-nets",
     "rights": {

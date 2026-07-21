@@ -35,8 +35,8 @@
       "en": "Residual block"
     },
     "subcaption": {
-      "zh": "项目使用的架构图。",
-      "en": "Architecture visual used by the project."
+      "zh": "展示残差模块中的关键连接与信息传递方式。",
+      "en": "Shows the key connections and information flow in Residual block."
     },
     "sourceId": "source-deep-residual-learning-for-image-recognition",
     "rights": {
@@ -161,12 +161,12 @@
     "path": "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "ResNet结构图 2",
+      "en": "ResNet structure diagram 2"
     },
     "subcaption": {
-      "zh": "ResNet 架构图",
-      "en": "ResNet diagram"
+      "zh": "展示ResNet的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of ResNet."
     },
     "sourceId": "source-deep-residual-learning-for-image-recognition",
     "rights": {

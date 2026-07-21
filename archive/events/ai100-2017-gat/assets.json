@@ -29,10 +29,10 @@
     "id": "asset-ai100-2017-gat-citations",
     "type": "image",
     "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=kcTK_FAAAAAJ&citpid=1",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "GAT 外部参考图",
-      "en": "GAT external reference image"
+      "zh": "佩塔尔·韦利奇科维奇肖像",
+      "en": "Petar Velickovic portrait"
     },
     "sourceId": "source-graph-attention-networks",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "GAT 主要作者。",
+      "en": "Lead author of GAT."
+    }
   }
 ]

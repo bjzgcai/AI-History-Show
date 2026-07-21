@@ -29,10 +29,10 @@
     "id": "asset-alexnet-deep-portrait",
     "type": "image",
     "path": "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
-    "role": "portrait",
+    "role": "source-card",
     "caption": {
-      "zh": "AlexNet 相关人物资料图",
-      "en": "AlexNet related figure image"
+      "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
+      "en": "Computer History Museum AlexNet source-code release page"
     },
     "sourceId": "source-alexnet-neurips-paper",
     "rights": {
@@ -45,16 +45,20 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
+      "en": "Screenshot about the release of the AlexNet source code, not a portrait."
+    }
   },
   {
     "id": "asset-alexnet-architecture",
     "type": "image",
     "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
-    "role": "architecture-explainer",
+    "role": "supporting-image",
     "caption": {
-      "zh": "AlexNet 架构示意",
-      "en": "AlexNet architecture explainer"
+      "zh": "ImageNet 识别错误率演进图",
+      "en": "ImageNet recognition error-rate timeline"
     },
     "sourceId": "source-alexnet-neurips-paper",
     "rights": {
@@ -68,7 +72,11 @@
       "variant:deep-learning",
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "比较 AlexNet 前后代表性视觉模型的错误率与网络深度。",
+      "en": "Compares error rates and network depths before and after AlexNet."
+    }
   },
   {
     "id": "asset-alexnet-architecture-detail",
@@ -76,8 +84,8 @@
     "path": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "AlexNet 架构细节图",
-      "en": "AlexNet architecture detail"
+      "zh": "AlexNet、VGG 与 GoogLeNet 架构对比",
+      "en": "AlexNet, VGG, and GoogLeNet architecture comparison"
     },
     "sourceId": "source-alexnet-neurips-paper",
     "rights": {
@@ -91,6 +99,10 @@
       "variant:deep-learning",
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "对比三种卷积网络的层级结构与深度。",
+      "en": "Compares the layer structures and depths of three convolutional networks."
+    }
   }
 ]

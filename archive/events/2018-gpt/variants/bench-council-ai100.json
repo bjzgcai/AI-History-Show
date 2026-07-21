@@ -55,8 +55,7 @@
     "asset-2018-gpt-next-token",
     "asset-2018-gpt-architecture-01",
     "asset-2018-gpt-architecture-02",
-    "asset-2018-gpt-historical-01",
-    "asset-2018-gpt-people-02"
+    "asset-2018-gpt-historical-01"
   ],
   "sourceIds": [
     "source-improving-language-understanding-by-generative-pre-training",

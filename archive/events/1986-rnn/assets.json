@@ -5,12 +5,12 @@
     "path": "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "循环神经网络结构图 1",
+      "en": "Recurrent Neural Networks structure diagram 1"
     },
     "subcaption": {
-      "zh": "循环神经网络 架构图",
-      "en": "Recurrent Neural Networks"
+      "zh": "展示循环神经网络的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of Recurrent Neural Networks."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -29,14 +29,14 @@
     "id": "asset-1986-rnn-people-01",
     "type": "image",
     "path": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "杰弗里·埃尔曼肖像",
+      "en": "Jeffrey Elman portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "简单循环网络提出者。",
+      "en": "Creator of the simple recurrent network."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

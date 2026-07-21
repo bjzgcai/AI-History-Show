@@ -29,10 +29,10 @@
     "id": "asset-ai100-2006-surf-herbert-bay-gm",
     "type": "image",
     "path": "https://herbertbay.com/assets/img/Herbert%20Bay-GM.png",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "SURF 加速稳健特征 外部参考图",
-      "en": "SURF external reference image"
+      "zh": "赫伯特·贝肖像",
+      "en": "Herbert Bay portrait"
     },
     "sourceId": "source-surf-speeded-up-robust-features",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "SURF 主要作者。",
+      "en": "Lead author of SURF."
+    }
   }
 ]

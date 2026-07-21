@@ -29,10 +29,10 @@
     "id": "asset-ai100-1943-mcculloch-pitts-neuron-330px-1954-walter-pitts-and-a-blackboard",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1954_Walter_Pitts_and_a_blackboard.jpg/330px-1954_Walter_Pitts_and_a_blackboard.jpg",
-    "role": "external-reference-image",
+    "role": "supporting-image",
     "caption": {
-      "zh": "麦卡洛克-皮茨神经元 外部参考图",
-      "en": "McCulloch-Pitts Neuron external reference image"
+      "zh": "沃尔特·皮茨与黑板",
+      "en": "Walter Pitts at a blackboard"
     },
     "sourceId": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "逻辑神经元模型共同作者，照片摄于 1954 年。",
+      "en": "Co-author of the logical neuron model, photographed in 1954."
+    }
   }
 ]

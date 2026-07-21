@@ -81,10 +81,10 @@
     "id": "asset-1959-pandemonium-original-pande2",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Original_pande2.jpg",
-    "role": "external-reference-image",
+    "role": "architecture-explainer",
     "caption": {
-      "zh": "Pandemonium 感知架构 外部参考图",
-      "en": "Pandemonium external reference image"
+      "zh": "Pandemonium 分层识别架构",
+      "en": "Pandemonium layered recognition architecture"
     },
     "sourceId": "source-pandemonium-a-paradigm-for-learning",
     "rights": {
@@ -98,6 +98,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "数据魔、计算魔、认知魔和决策魔组成的分层结构。",
+      "en": "Layered structure of data, computational, cognitive, and decision demons."
+    }
   }
 ]

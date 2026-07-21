@@ -55,10 +55,10 @@
     "id": "asset-1951-strachey-draughts-program-external",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-    "role": "external-reference-image",
+    "role": "source-card",
     "caption": {
-      "zh": "斯特雷奇跳棋程序外部参考图",
-      "en": "Strachey draughts program external reference image"
+      "zh": "斯特雷奇跳棋程序显示画面",
+      "en": "Strachey draughts program display"
     },
     "sourceId": "source-strachey-draughts-program-screenshot",
     "rights": {
@@ -73,16 +73,20 @@
       "variant:bench-council-ai100",
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
+      "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
+    }
   },
   {
     "id": "asset-1951-strachey-draughts-checkers-board-external",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
-    "role": "external-reference-image",
+    "role": "supporting-image",
     "caption": {
-      "zh": "跳棋棋盘外部参考图",
-      "en": "Checkers board external reference image"
+      "zh": "标准跳棋棋盘",
+      "en": "Standard checkers board"
     },
     "sourceId": "source-checkers-board-photo",
     "rights": {
@@ -97,6 +101,10 @@
       "variant:bench-council-ai100",
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
+      "en": "The board environment handled by Strachey's program."
+    }
   }
 ]

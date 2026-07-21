@@ -5,12 +5,12 @@
     "path": "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "AI科学家与自主实验室结构图 1",
+      "en": "AI Scientists and Autonomous Laboratories structure diagram 1"
     },
     "subcaption": {
-      "zh": "AI科学家与自主实验室 架构图",
-      "en": "AI Scientists and Autonomous Laboratories"
+      "zh": "展示AI科学家与自主实验室的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of AI Scientists and Autonomous Laboratories."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -31,12 +31,12 @@
     "path": "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "AI科学家与自主实验室结构图 2",
+      "en": "AI Scientists and Autonomous Laboratories structure diagram 2"
     },
     "subcaption": {
-      "zh": "AI科学家与自主实验室 架构图",
-      "en": "AI Scientists and Autonomous Laboratories"
+      "zh": "展示AI科学家与自主实验室的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of AI Scientists and Autonomous Laboratories."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -57,12 +57,12 @@
     "path": "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《AI 科学家》（第 1 页资料）",
+      "en": "The AI Scientist — page reference 1"
     },
     "subcaption": {
-      "zh": "《AI 科学家》",
-      "en": "The AI Scientist"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
     "role": "team-photo",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "伯克利 A-Lab 研究团队",
+      "en": "Berkeley A-Lab research team"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "自动化实验室研究人员在材料实验环境中工作。",
+      "en": "Automated-laboratory researchers working in a materials lab."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -109,12 +109,12 @@
     "path": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
     "role": "team-photo",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "Sakana AI 团队",
+      "en": "Sakana AI team"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "AI Scientist 项目的开发团队资料照。",
+      "en": "Reference photo of the team developing the AI Scientist project."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

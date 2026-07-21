@@ -57,12 +57,12 @@
     "path": "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "自回归模型和注意力机制结构图 1",
+      "en": "Autoregressive Models and Attention structure diagram 1"
     },
     "subcaption": {
-      "zh": "自回归模型和注意力机制 架构图",
-      "en": "Autoregressive Models and Attention diagram"
+      "zh": "展示自回归模型和注意力机制的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of Autoregressive Models and Attention."
     },
     "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
     "rights": {
@@ -81,14 +81,14 @@
     "id": "asset-2014-attention-people-01",
     "type": "image",
     "path": "resources/images/2014-attention/people/2014-attention_people_01.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "约书亚·本吉奥肖像",
+      "en": "Yoshua Bengio portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "神经注意力论文共同作者。",
+      "en": "Co-author of the neural attention paper."
     },
     "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
     "rights": {

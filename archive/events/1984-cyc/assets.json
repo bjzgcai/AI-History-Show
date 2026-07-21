@@ -81,10 +81,10 @@
     "id": "asset-1984-cyc-cyc-projects-logos",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
-    "role": "external-reference-image",
+    "role": "supporting-image",
     "caption": {
-      "zh": "Cyc 常识知识库 外部参考图",
-      "en": "Cyc external reference image"
+      "zh": "Cyc 项目相关标识",
+      "en": "Cyc-related project marks"
     },
     "sourceId": "source-building-large-knowledge-based-systems",
     "rights": {
@@ -98,6 +98,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Cyc 知识库及相关项目使用的标识组合。",
+      "en": "A group of marks used by Cyc and related knowledge-base projects."
+    }
   }
 ]

@@ -29,10 +29,10 @@
     "id": "asset-ai100-2014-glove-photo",
     "type": "image",
     "path": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "GloVe 外部参考图",
-      "en": "GloVe external reference image"
+      "zh": "杰弗里·彭宁顿肖像",
+      "en": "Jeffrey Pennington portrait"
     },
     "sourceId": "source-glove-global-vectors-for-word-representation",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "GloVe 主要作者。",
+      "en": "Lead author of GloVe."
+    }
   }
 ]

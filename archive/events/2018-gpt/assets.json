@@ -57,12 +57,12 @@
     "path": "resources/images/2018-gpt/architecture/2018-gpt_architecture_01.jpg",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "GPT结构图 1",
+      "en": "GPT structure diagram 1"
     },
     "subcaption": {
-      "zh": "GPT 架构图",
-      "en": "GPT diagram"
+      "zh": "展示GPT的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of GPT."
     },
     "sourceId": "source-improving-language-understanding-by-generative-pre-training",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/2018-gpt/architecture/2018-gpt_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "GPT结构图 2",
+      "en": "GPT structure diagram 2"
     },
     "subcaption": {
-      "zh": "GPT 架构图",
-      "en": "GPT diagram"
+      "zh": "展示GPT的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of GPT."
     },
     "sourceId": "source-improving-language-understanding-by-generative-pre-training",
     "rights": {
@@ -109,12 +109,12 @@
     "path": "resources/images/2018-gpt/historical/2018-gpt_historical_01.png",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "GPT资料图 1",
+      "en": "GPT reference image 1"
     },
     "subcaption": {
-      "zh": "GPT",
-      "en": "GPT"
+      "zh": "与GPT相关的历史图像资料。",
+      "en": "Historical image reference related to GPT."
     },
     "sourceId": "source-improving-language-understanding-by-generative-pre-training",
     "rights": {
@@ -133,14 +133,14 @@
     "id": "asset-2018-gpt-people-02",
     "type": "image",
     "path": "resources/images/2018-gpt/people/2018-gpt_people_02.png",
-    "role": "team-photo",
+    "role": "source-card",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "Sam Altman 访谈画面",
+      "en": "Sam Altman interview frame"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "该画面晚于第一代 GPT 论文，当前不用于统一 UI 的事件图片。",
+      "en": "This frame postdates the first GPT paper and is not used as a unified UI event image."
     },
     "sourceId": "source-improving-language-understanding-by-generative-pre-training",
     "rights": {

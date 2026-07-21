@@ -55,7 +55,7 @@ function assetImageMeta(asset) {
     const rights = asset.rights || {};
     return {
         caption: localizePair(asset.caption),
-        subcaption: localizePair(asset.subcaption || { zh: asset.role || '', en: asset.role || '' }),
+        subcaption: localizePair(asset.subcaption),
         ...(asset.sourceName ? { sourceName: cloneForReview(asset.sourceName) } : {}),
         ...(asset.sourceUrl ? { sourceUrl: asset.sourceUrl } : {}),
         ...(rights.license ? { license: cloneForReview(rights.license) } : {}),

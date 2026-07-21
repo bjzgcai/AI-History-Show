@@ -81,10 +81,10 @@
     "id": "asset-1994-chinook-jonathan-schaeffer-external",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "乔纳森·谢弗外部参考图",
-      "en": "Jonathan Schaeffer external reference image"
+      "zh": "乔纳森·谢弗肖像",
+      "en": "Jonathan Schaeffer portrait"
     },
     "sourceId": "source-jonathan-schaeffer-portrait",
     "rights": {
@@ -99,6 +99,10 @@
       "variant:bench-council-ai100",
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Chinook 团队负责人。",
+      "en": "Leader of the Chinook team."
+    }
   }
 ]

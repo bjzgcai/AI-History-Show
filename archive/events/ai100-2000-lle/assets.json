@@ -29,10 +29,10 @@
     "id": "asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb",
     "type": "image",
     "path": "https://cs.nyu.edu/home/people/in_memoriam/samroweis/20010411-snowbird-dsc00680-h-thumb.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "局部线性嵌入 外部参考图",
-      "en": "Locally Linear Embedding external reference image"
+      "zh": "萨姆·罗维斯肖像",
+      "en": "Sam Roweis portrait"
     },
     "sourceId": "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "局部线性嵌入共同作者。",
+      "en": "Co-author of locally linear embedding."
+    }
   }
 ]

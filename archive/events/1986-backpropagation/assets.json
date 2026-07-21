@@ -5,12 +5,12 @@
     "path": "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "反向传播算法结构图",
+      "en": "Backpropagation Algorithm structure diagram"
     },
     "subcaption": {
-      "zh": "反向传播算法 架构图",
-      "en": "Backpropagation Algorithm Architecture Diagram"
+      "zh": "展示反向传播算法的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of Backpropagation Algorithm."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -29,14 +29,14 @@
     "id": "asset-1986-backpropagation-paper-01",
     "type": "image",
     "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "杰弗里·辛顿肖像",
+      "en": "Geoffrey Hinton portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "反向传播论文共同作者。",
+      "en": "Co-author of the backpropagation paper."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -55,14 +55,14 @@
     "id": "asset-1986-backpropagation-paper-02",
     "type": "image",
     "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "戴维·鲁梅尔哈特肖像",
+      "en": "David Rumelhart portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "反向传播论文主要作者。",
+      "en": "Lead author of the backpropagation paper."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -81,14 +81,14 @@
     "id": "asset-1986-backpropagation-paper-03",
     "type": "image",
     "path": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_03.png",
-    "role": "team-photo",
+    "role": "source-card",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "杰弗里·辛顿视频画面",
+      "en": "Geoffrey Hinton video frame"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "介绍现代神经网络历史的视频截图，当前不用于统一 UI。",
+      "en": "Video frame from a history of modern neural networks; this asset is not used in the unified UI."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -109,12 +109,12 @@
     "path": "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《通过反向传播误差来学习表征》（第 1 页资料）",
+      "en": "Learning representations by back-propagating errors — page reference 1"
     },
     "subcaption": {
-      "zh": "《通过反向传播误差来学习表征》",
-      "en": "Learning representations by back-propagating errors"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

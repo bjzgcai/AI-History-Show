@@ -29,10 +29,10 @@
     "id": "asset-ai100-2013-variational-autoencoder-portrait",
     "type": "image",
     "path": "https://dpkingma.com/files/portrait.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "变分自编码器 外部参考图",
-      "en": "Variational Autoencoder external reference image"
+      "zh": "迪德里克·金马肖像",
+      "en": "Diederik Kingma portrait"
     },
     "sourceId": "source-auto-encoding-variational-bayes",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "变分自编码器共同作者。",
+      "en": "Co-author of the variational autoencoder."
+    }
   }
 ]

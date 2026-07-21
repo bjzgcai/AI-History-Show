@@ -29,10 +29,10 @@
     "id": "asset-ai100-2016-nas-headshot",
     "type": "image",
     "path": "https://barretzoph.github.io/images/headshot.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "神经架构搜索 外部参考图",
-      "en": "Neural Architecture Search external reference image"
+      "zh": "巴雷特·佐夫肖像",
+      "en": "Barret Zoph portrait"
     },
     "sourceId": "source-neural-architecture-search-with-reinforcement-learning",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "神经架构搜索主要作者。",
+      "en": "Lead author of neural architecture search."
+    }
   }
 ]

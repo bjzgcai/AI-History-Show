@@ -29,10 +29,10 @@
     "id": "asset-ai100-2023-segment-anything-alexander-kirillov",
     "type": "image",
     "path": "https://alexander-kirillov.github.io/images/alexander_kirillov.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "Segment Anything 外部参考图",
-      "en": "Segment Anything external reference image"
+      "zh": "亚历山大·基里洛夫肖像",
+      "en": "Alexander Kirillov portrait"
     },
     "sourceId": "source-segment-anything",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Segment Anything 主要作者。",
+      "en": "Lead author of Segment Anything."
+    }
   }
 ]

@@ -5,12 +5,12 @@
     "path": "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "高速网络结构图 1",
+      "en": "Highway Networks structure diagram 1"
     },
     "subcaption": {
-      "zh": "高速网络 架构图",
-      "en": "Highway Networks diagram"
+      "zh": "展示高速网络的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of Highway Networks."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -29,14 +29,14 @@
     "id": "asset-2014-highway-network-people-01",
     "type": "image",
     "path": "resources/images/2014-highway-network/people/2014-highway-network_people_01.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "尤尔根·施密德胡伯肖像",
+      "en": "Jurgen Schmidhuber portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "Highway Network 共同作者。",
+      "en": "Co-author of Highway Networks."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

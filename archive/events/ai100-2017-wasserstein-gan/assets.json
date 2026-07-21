@@ -29,10 +29,10 @@
     "id": "asset-ai100-2017-wasserstein-gan-bottou-75",
     "type": "image",
     "path": "https://leon.bottou.org/_media/bottou_75.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "Wasserstein GAN 外部参考图",
-      "en": "Wasserstein GAN external reference image"
+      "zh": "莱昂·博图肖像",
+      "en": "Leon Bottou portrait"
     },
     "sourceId": "source-wasserstein-generative-adversarial-networks",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Wasserstein GAN 共同作者。",
+      "en": "Co-author of Wasserstein GAN."
+    }
   }
 ]

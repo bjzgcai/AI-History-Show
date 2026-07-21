@@ -29,10 +29,10 @@
     "id": "asset-ai100-2014-ms-coco-tsungyi",
     "type": "image",
     "path": "https://tsungyilin.info/images/tsungyi.jpeg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "MS COCO 外部参考图",
-      "en": "MS COCO external reference image"
+      "zh": "林宗毅肖像",
+      "en": "Tsung-Yi Lin portrait"
     },
     "sourceId": "source-microsoft-coco-common-objects-in-context",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "MS COCO 主要作者。",
+      "en": "Lead author of MS COCO."
+    }
   }
 ]

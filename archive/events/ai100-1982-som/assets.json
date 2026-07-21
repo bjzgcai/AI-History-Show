@@ -29,10 +29,10 @@
     "id": "asset-ai100-1982-som-teuvo-kohonen",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Teuvo-Kohonen.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "自组织映射 外部参考图",
-      "en": "Self-organizing Map external reference image"
+      "zh": "泰沃·科霍宁肖像",
+      "en": "Teuvo Kohonen portrait"
     },
     "sourceId": "source-self-organized-formation-of-topologically-correct-feature-maps",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "自组织映射提出者。",
+      "en": "Creator of self-organizing maps."
+    }
   }
 ]

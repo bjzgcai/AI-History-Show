@@ -35,8 +35,8 @@
       "en": "Dense connectivity"
     },
     "subcaption": {
-      "zh": "项目使用的架构图。",
-      "en": "Architecture visual used by the project."
+      "zh": "展示密集连接中的关键连接与信息传递方式。",
+      "en": "Shows the key connections and information flow in Dense connectivity."
     },
     "sourceId": "source-densely-connected-convolutional-networks",
     "rights": {
@@ -55,14 +55,14 @@
     "id": "asset-2016-densenet-people-02",
     "type": "image",
     "path": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
-    "role": "team-photo",
+    "role": "supporting-image",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "黄高演讲资料照",
+      "en": "Gao Huang speaking"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "DenseNet 主要作者在学术活动中的照片。",
+      "en": "The lead author of DenseNet speaking at an academic event."
     },
     "sourceId": "source-densely-connected-convolutional-networks",
     "rights": {
