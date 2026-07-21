@@ -99,6 +99,21 @@ assert.match(
     /function buildLocationText\(location\)[\s\S]*?return `\$\{name\}\$\{uiText\(', ', '，'\)\}\$\{country\}`;/,
     'location names and countries should flow naturally instead of being split by a forced line break'
 );
+assert.match(
+    indexHtml,
+    /function formatUiCountryName\(value\)[\s\S]*?replace\(\/\\bUnited States\\b\/g, 'US'\)/,
+    'unified UI addresses should abbreviate United States as US in English'
+);
+assert.match(
+    indexHtml,
+    /vm\.location = formatUiLocation\(vm\.location\)/,
+    'country abbreviation should be applied to the normalized UI view model only'
+);
+assert.match(
+    indexHtml,
+    /const rawCountry = String\(country && typeof country === 'object' \? country\.en : country \|\| ''\)\.trim\(\)/,
+    'region filtering should continue to read the canonical English country value'
+);
 assert.doesNotMatch(
     indexHtml,
     /function buildLocationHtml\(/,
@@ -111,8 +126,43 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /const map = \{[\s\S]*?raw\.resources && raw\.resources\.imageMeta[\s\S]*?\.\.\.\(raw\.imageMeta \|\| \{\}\)/,
+    'Archive image metadata should override legacy resource metadata in the unified UI'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /entry\.subcaption \|\| entry\.subtitle \|\| entry\.description \|\| entry\.role/,
+    'internal image roles should never be used as visible image descriptions'
+);
+assert.match(
+    indexHtml,
     /\.ui-avatar-name,[\s\S]*?\.ui-avatar-role\s*\{[\s\S]*?width:\s*max-content[\s\S]*?overflow:\s*visible[\s\S]*?text-overflow:\s*clip/,
     'desktop detail figure names and roles should use their content width without ellipsis'
+);
+assert.match(
+    indexHtml,
+    /const UI_DETAIL_FIGURE_LIMIT = 4;/,
+    'unified UI detail pages should define one four-figure limit'
+);
+assert.match(
+    indexHtml,
+    /function getUiDetailFigures\(vm\)[\s\S]*?slice\(0, UI_DETAIL_FIGURE_LIMIT\)/,
+    'unified UI detail pages should apply the shared figure limit in one helper'
+);
+assert.match(
+    indexHtml,
+    /class="ui-avatar-strip count-\$\{detailFigureCount\}"/,
+    'unified UI detail pages should expose their figure count to the layout'
+);
+assert.match(
+    indexHtml,
+    /buildUiAvatarHtml\(vm, detailFigures\)/,
+    'figure rendering and figure-count layout should use the same selected figures'
+);
+assert.match(
+    indexHtml,
+    /@media \(min-width: 1200px\)[\s\S]*?\.ui-avatar-strip\.count-4\s*\{[\s\S]*?grid-template-columns:\s*repeat\(4, minmax\(0, 1fr\)\)[\s\S]*?\.ui-avatar-strip\.count-4 \.ui-avatar-face\s*\{[\s\S]*?width:\s*72px/,
+    'desktop four-figure layouts should use a compact four-column grid'
 );
 assert.match(
     indexHtml,
@@ -165,6 +215,21 @@ assert.match(
     indexHtml,
     /class="ui-media-video-poster"/,
     'AI100 commentary media should display a visual poster before playback'
+);
+assert.match(
+    indexHtml,
+    /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?candidates\.filter\(\(url\) => url !== sideImageUrl\)/,
+    'detail image lists should exclude the image mounted in the right-side media panel'
+);
+assert.match(
+    indexHtml,
+    /function getUiPrimaryImage\(vm\)[\s\S]*?getUiImageCandidates\(vm\)\[0\]/,
+    'map and event-list thumbnails should keep using the complete image candidates'
+);
+assert.match(
+    indexHtml,
+    /const detailImageHtml = imageUrl[\s\S]*?\? `[\s\S]*?class="ui-detail-image"[\s\S]*?: '';/,
+    'detail pages should omit the left image area when every candidate is mounted on the right'
 );
 assert.match(
     indexHtml,

@@ -6636,6 +6636,40 @@
             object-fit: cover;
         }
 
+        @media (min-width: 1200px) {
+            .ui-avatar-strip.count-4 {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 16px;
+                overflow-x: visible;
+            }
+
+            .ui-avatar-strip.count-4 .ui-avatar {
+                min-width: 0;
+                grid-template-columns: 72px minmax(0, 1fr);
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            .ui-avatar-strip.count-4 .ui-avatar-face {
+                width: 72px;
+                height: 72px;
+                font-size: 15px;
+            }
+
+            .ui-avatar-strip.count-4 .ui-avatar-face span {
+                max-width: 60px;
+            }
+
+            .ui-avatar-strip.count-4 .ui-avatar-name,
+            .ui-avatar-strip.count-4 .ui-avatar-role {
+                width: auto;
+                max-width: 100%;
+                white-space: normal;
+                overflow-wrap: anywhere;
+            }
+        }
+
         .ui-detail-image {
             grid-column: 1;
             grid-row: 3 / 5;
@@ -10124,6 +10158,8 @@
                 entry: 'index'
             });
         }
+        const UI_DETAIL_FIGURE_LIMIT = 4;
+        const INTERNAL_IMAGE_DESCRIPTION_PATTERN = /^(?:external-reference-(?:image|diagram)|architecture-explainer|algorithm-explainer|team-photo|hero-image|supporting-image|source-card|paper-page)$/i;
         const STORYLINE_OPTIONS = [
             {
                 id: UNIFIED_STORYLINE_ID,
@@ -11287,6 +11323,19 @@
             };
         }
 
+        function formatUiCountryName(value) {
+            const text = String(value || '').trim();
+            return uiText(text.replace(/\bUnited States\b/g, 'US'), text);
+        }
+
+        function formatUiLocation(location) {
+            if (!location || typeof location !== 'object') return location;
+            return {
+                ...location,
+                country: formatUiCountryName(location.country)
+            };
+        }
+
         function getVm(index) {
             if (vmCache.has(index)) {
                 return vmCache.get(index);
@@ -11295,6 +11344,7 @@
             const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
                 ? window.MilestoneView.normalizeMilestone(milestoneList[index], index, milestoneList)
                 : buildFallbackVm(milestoneList[index], index);
+            vm.location = formatUiLocation(vm.location);
             vmCache.set(index, vm);
             return vm;
         }
@@ -11520,13 +11570,16 @@
 
         function getConfiguredImageMeta(vm, url) {
             const raw = vm && vm.raw ? vm.raw : {};
-            const map = raw && raw.resources && raw.resources.imageMeta ? raw.resources.imageMeta : (raw.imageMeta || null);
-            if (!map || typeof map !== 'object') return null;
+            const map = {
+                ...((raw.resources && raw.resources.imageMeta) || {}),
+                ...(raw.imageMeta || {})
+            };
             const entry = map[url];
             if (!entry || typeof entry !== 'object') return null;
 
             const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
-            const subcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || entry.role || '')).trim();
+            const rawSubcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || '')).trim();
+            const subcaption = INTERNAL_IMAGE_DESCRIPTION_PATTERN.test(rawSubcaption) ? '' : rawSubcaption;
             const source = String(entry.sourceUrl || entry.source || entry.url || '').trim();
             const license = localizeRightsNote(entry.license || '');
             const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
@@ -13982,7 +14035,7 @@
 
         function renderFigures(vm) {
             const figures = Array.isArray(vm.figures) && vm.figures.length > 0
-                ? vm.figures.slice(0, 4)
+                ? vm.figures.slice(0, UI_DETAIL_FIGURE_LIMIT)
                 : [{
                     name: vm.title || tx('aiHistoryEvent'),
                     role: buildLocationLine(vm.location) || tx('keyHistoricalFigure')
@@ -13990,7 +14043,7 @@
             const hasFigureAvatars = figures.some((figure) => figure && figure.avatar);
             const portraitPool = hasFigureAvatars ? [] : sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
 
-            refs.figureRow.className = `figure-row count-${Math.min(4, figures.length)}`;
+            refs.figureRow.className = `figure-row count-${Math.min(UI_DETAIL_FIGURE_LIMIT, figures.length)}`;
             refs.figureRow.innerHTML = figures.map((figure, index) => `
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index))}</div>
@@ -16587,10 +16640,10 @@
         }
 
         function getUiPrimaryImage(vm) {
-            return getUiDetailImages(vm)[0] || '';
+            return getUiImageCandidates(vm)[0] || '';
         }
 
-        function getUiDetailImages(vm) {
+        function getUiImageCandidates(vm) {
             const visualImages = buildBenchVisualItems(vm)
                 .filter((item) => item && item.type === 'image' && item.url)
                 .map((item) => item.url);
@@ -16601,6 +16654,12 @@
                 seen.add(url);
                 return true;
             });
+        }
+
+        function getUiDetailImages(vm) {
+            const candidates = getUiImageCandidates(vm);
+            const sideImageUrl = getUiMediaVisualImage(vm, candidates);
+            return sideImageUrl ? candidates.filter((url) => url !== sideImageUrl) : candidates;
         }
 
         function getUiPrimaryImageMeta(vm, imageUrl) {
@@ -16616,8 +16675,7 @@
             'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
         };
 
-        function getUiMediaVisualImage(vm) {
-            const images = getUiDetailImages(vm);
+        function getUiMediaVisualImage(vm, images = getUiImageCandidates(vm)) {
             const eventId = vm && (vm.id || (vm.raw && vm.raw.id)) || '';
             const overrideUrl = UI_MEDIA_VISUAL_OVERRIDES[eventId];
             if (overrideUrl && images.includes(overrideUrl)) return overrideUrl;
@@ -17371,10 +17429,16 @@
             resetPortraitScrollPosition();
         }
 
-        function buildUiAvatarHtml(vm) {
-            const figures = Array.isArray(vm.figures) && vm.figures.length
-                ? vm.figures.slice(0, 3)
+        function getUiDetailFigures(vm) {
+            const figures = Array.isArray(vm && vm.figures)
+                ? vm.figures.filter(Boolean).slice(0, UI_DETAIL_FIGURE_LIMIT)
+                : [];
+            return figures.length
+                ? figures
                 : [{ name: vm.title || tx('aiHistoryEvent'), role: buildLocationLine(vm.location) }];
+        }
+
+        function buildUiAvatarHtml(vm, figures = getUiDetailFigures(vm)) {
             const portraitPool = sortPhotosForDisplay(vm.photos).filter(isPortraitLikePhoto);
             return figures.map((figure, index) => {
                 const avatar = buildFigureAvatar(figure, getFigureAvatarSource(figure, vm, portraitPool, index));
@@ -17767,10 +17831,26 @@
             const yearText = String(vm.year || '');
             const detailYearText = yearText.replace(/\s*\/\s*/g, ' / ');
             const detailYearClass = detailYearText.length > 10 ? ' is-multiline' : '';
+            const detailFigures = getUiDetailFigures(vm);
+            const detailFigureCount = detailFigures.length;
             const locationLine = buildLocationLine(vm.location);
             const locationText = buildLocationText(vm.location);
             const imageCaptionTitle = imageMeta.name || title;
             const imageCaptionDetail = imageMeta.role || '';
+            const detailImageHtml = imageUrl
+                ? `
+                    <div class="ui-detail-image">
+                        <div class="ui-detail-image-stage${detailImageClass}">
+                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" draggable="false">
+                        </div>
+                        <div class="ui-detail-caption">
+                            <span class="ui-detail-caption-title">${escapeHtml(imageCaptionTitle)}</span>
+                            ${imageCaptionDetail ? `<span class="ui-detail-caption-detail">${escapeHtml(imageCaptionDetail)}</span>` : ''}
+                            ${buildUiDetailImagePagerHtml(detailImages)}
+                        </div>
+                    </div>
+                `
+                : '';
             refs.uiBrowserMain.innerHTML = `
                 <div class="ui-detail">
                     <section class="ui-detail-panel">
@@ -17786,18 +17866,9 @@
                                         <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>
-                                <div class="ui-avatar-strip">${buildUiAvatarHtml(vm)}</div>
+                                <div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>
                             </div>
-                            <div class="ui-detail-image">
-                                <div class="ui-detail-image-stage${detailImageClass}">
-                                    ${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" draggable="false">` : `<span>${escapeHtml(tx('archiveImage'))}</span>`}
-                                </div>
-                                <div class="ui-detail-caption">
-                                    <span class="ui-detail-caption-title">${escapeHtml(imageCaptionTitle)}</span>
-                                    ${imageCaptionDetail ? `<span class="ui-detail-caption-detail">${escapeHtml(imageCaptionDetail)}</span>` : ''}
-                                    ${buildUiDetailImagePagerHtml(detailImages)}
-                                </div>
-                            </div>
+                            ${detailImageHtml}
                         </div>
                         <div class="ui-detail-center">
                             <div class="ui-detail-description">${buildSummaryHtml(vm)}</div>

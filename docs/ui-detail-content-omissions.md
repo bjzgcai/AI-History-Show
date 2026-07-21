@@ -12,44 +12,28 @@
 
 ## 结论
 
-- 当前真正发生文字省略的内容只有地址。
-- 共 7 个事件、8 个语言版本的地址超过两行并触发省略。
-- 所有被省略的地址都保留了完整悬停提示，鼠标停留后可查看地址全称。
+- 当前检查范围内没有发生文字省略。
+- 地址中的城市和州级信息已收敛为国家级信息，英文地址中的 `United States` 在统一 UI 展示为 `US`。
+- 所有地址都能在两行以内完整显示，并继续保留完整悬停提示。
 - 人物姓名和角色当前没有发生文字裁切或省略。
-- 有 3 个英文事件的人物栏宽度超过可视区域，需要横向滚动，但人物文字本身完整保留。
+- 统一 UI 现在最多展示 4 位人物，当前所有四人事件都能完整渲染人物信息。
+- 桌面端四人布局使用紧凑四等分网格，当前所有四人事件的中英文人物栏都能同时完整展示，无需横向滚动。
 - 本次检查没有发现事件标题越界，也没有发现页面横向溢出。
 
 ## 地址省略明细
 
-地址采用自然连续排版，最多显示两行。下列地址实际需要三行或四行，因此在第二行末尾显示省略号。
+地址采用自然连续排版，最多显示两行。国家级精简并应用 `US` 展示缩写后，原先需要三行的 Davis-Putnam & DPLL 和 Temporal-Difference Update 英文地址都降为两行。当前没有地址显示省略号。
 
-| 事件 | 语言 | 完整地址 | 原始所需行数 | 悬停全称 |
-| --- | --- | --- | ---: | --- |
-| DP/DPLL 算法（`1960-davis-putnam-dpll`） | 中文 | 纽约大学 / 普林斯顿大学 / 伦斯勒理工学院，美国，纽约与普林斯顿 | 3 行 | 已保留 |
-| Logic Theorist（`1956-logic-theorist`） | 英文 | RAND Corporation / Carnegie Institute of Technology, Santa Monica and Pittsburgh, United States | 3 行 | 已保留 |
-| Davis-Putnam & DPLL（`1960-davis-putnam-dpll`） | 英文 | New York University / Princeton University / RPI, New York and Princeton, United States | 4 行 | 已保留 |
-| Resolution Method（`1965-resolution-method`） | 英文 | Argonne National Laboratory / Syracuse University, Illinois and New York, United States | 3 行 | 已保留 |
-| PROLOG（`1973-prolog`） | 英文 | Aix-Marseille University and University of Edinburgh, Marseille, France and Edinburgh, United Kingdom | 3 行 | 已保留 |
-| Temporal-Difference Update（`1988-td-update`） | 英文 | GTE Laboratories / University of Massachusetts lineage, United States and Canada | 3 行 | 已保留 |
-| IBM Watson（`2011-ibm-watson`） | 英文 | IBM Thomas J. Watson Research Center, New York, United States | 3 行 | 已保留 |
-| Adam Optimizer（`2014-adam`） | 英文 | University of Amsterdam / University of Toronto, Amsterdam, Netherlands and Toronto, Canada | 3 行 | 已保留 |
+## 人物栏展示情况
 
-除以上项目外，其余地址均能在两行以内完整显示，不会出现省略号。
+统一 UI 的人物上限已从 3 人调整为 4 人。桌面端检测到四人时，人物栏使用四等分网格、72 px 头像和更紧凑的卡片间距，角色文字在各自列内自然换行。
 
-## 人物栏溢出明细
-
-以下人物栏的总宽度超过当前可视宽度。页面通过横向滚动保留全部人物内容，没有对姓名或角色文字使用省略号。
-
-| 事件 | 语言 | 超出宽度 | 人物与角色 |
-| --- | --- | ---: | --- |
-| Davis-Putnam & DPLL（`1960-davis-putnam-dpll`） | 英文 | 204 px | Martin Davis：Co-developed Davis-Putnam and DPLL procedures；Hilary Putnam：Co-authored the 1960 Davis-Putnam procedure；George Logemann：Co-authored the 1962 DPLL program paper |
-| Simulated Annealing（`1983-simulated-annealing`） | 英文 | 236 px | Scott Kirkpatrick、C. Daniel Gelatt Jr.、Mario P. Vecchi：均显示完整姓名及论文作者角色 |
-| Support Vector Machines（`1992-svm`） | 英文 | 459 px | Vladimir Vapnik：Co-developed optimal-margin classifiers and statistical learning theory；Bernhard Boser、Isabelle Guyon：Co-author of the 1992 optimal-margin classifier paper |
+达特茅斯会议、DP/DPLL、CART、Faster R-CNN 和 ResNet 的中英文四人布局均已完成实际页面检查，横向溢出与人物卡越界均为 0。ResNet 在 AI100 与深度学习两条 storyline 中的结果相同。
 
 ## 分类说明
 
-- 地址：超过两行时才省略，完整地址通过鼠标悬停显示。
-- 人物：目前不省略文字；人物栏过宽时使用横向滚动。
+- 地址：当前均在两行以内完整显示，完整地址同时通过鼠标悬停提供。
+- 人物：最多展示 4 人，不省略文字；桌面端四人使用紧凑四列布局，移动端保持单列布局。
 - 标题：当前检查范围内全部完整显示，没有因地址或人物内容发生越界。
 
 本文件记录的是上述固定视口下的当前展示快照。后续如果调整字体、详情页列宽、人物角色文案或事件数据，应重新执行实际页面检查。
