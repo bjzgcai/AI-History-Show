@@ -54,7 +54,7 @@
   {
     "id": "asset-1957-kmeans-bell-labs-holmdel",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
+    "path": "resources/images/external/1957-kmeans/bell-labs-holmdel-complex.jpg",
     "role": "supporting-image",
     "caption": {
       "zh": "贝尔实验室霍姆德尔园区",
@@ -64,8 +64,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg"
     },
@@ -76,12 +76,17 @@
     "subcaption": {
       "zh": "斯图尔特·劳埃德提出量化方法时所在机构的历史建筑。",
       "en": "Historic Bell Labs site associated with Stuart Lloyd's quantization work."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg"
   },
   {
     "id": "asset-1957-kmeans-iris-flowers-clustering-kmeans",
-    "type": "svg",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
+    "type": "image",
+    "path": "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png",
     "role": "algorithm-explainer",
     "caption": {
       "zh": "K-means 鸢尾花聚类结果",
@@ -91,8 +96,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg"
     },
@@ -103,6 +108,11 @@
     "subcaption": {
       "zh": "颜色展示 K-means 得到的不同数据簇。",
       "en": "Colors show the clusters produced by K-means."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg"
   }
 ]

@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2014-glove-photo",
     "type": "image",
-    "path": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg",
+    "path": "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "杰弗里·彭宁顿肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自Stanford NLP；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Stanford NLP; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "GloVe 主要作者。",
       "en": "Lead author of GloVe."
-    }
+    },
+    "sourceName": {
+      "zh": "Stanford NLP",
+      "en": "Stanford NLP"
+    },
+    "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
   }
 ]

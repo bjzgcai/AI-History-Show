@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2021-dalle-b0fdc3694e0d34821c1a35fbe494cb9c",
     "type": "image",
-    "path": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
+    "path": "resources/images/external/ai100-2021-dalle/aditya-ramesh-portrait.png",
     "role": "portrait",
     "caption": {
       "zh": "阿迪蒂亚·拉梅什肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自北京智源人工智能研究院；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Beijing Academy of Artificial Intelligence; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "DALL-E 主要作者与创建者。",
       "en": "Lead author and creator of DALL-E."
-    }
+    },
+    "sourceName": {
+      "zh": "北京智源人工智能研究院",
+      "en": "Beijing Academy of Artificial Intelligence"
+    },
+    "sourceUrl": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png"
   }
 ]

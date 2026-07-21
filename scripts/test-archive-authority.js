@@ -54,6 +54,29 @@ for (const storylineFile of fs.readdirSync(path.join(__dirname, '..', 'archive',
 }
 console.log('PASS production compiler uses Archive-owned milestone identities');
 
+for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
+    if (!eventEntry.isDirectory()) continue;
+    const eventDir = path.join(__dirname, '..', 'archive', 'events', eventEntry.name);
+    const assets = JSON.parse(fs.readFileSync(path.join(eventDir, 'assets.json'), 'utf8'));
+    const assetsById = new Map(assets.map((asset) => [asset.id, asset]));
+    const variantsDir = path.join(eventDir, 'variants');
+
+    for (const variantFile of fs.readdirSync(variantsDir)) {
+        if (!variantFile.endsWith('.json')) continue;
+        const variant = JSON.parse(fs.readFileSync(path.join(variantsDir, variantFile), 'utf8'));
+        for (const assetId of variant.assetIds || []) {
+            const asset = assetsById.get(assetId);
+            if (!asset || !['image', 'svg', 'gif'].includes(asset.type)) continue;
+            assert.doesNotMatch(
+                asset.path,
+                /^https?:\/\//i,
+                `${eventEntry.name}/${variantFile} must not select external image asset ${assetId}`
+            );
+        }
+    }
+}
+console.log('PASS runtime variants select only local image assets');
+
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);

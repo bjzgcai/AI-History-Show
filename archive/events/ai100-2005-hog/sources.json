@@ -74,5 +74,24 @@
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
     }
+  },
+  {
+    "id": "source-bill-triggs-lear-profile",
+    "type": "profile",
+    "label": {
+      "zh": "作者主页",
+      "en": "Author profile"
+    },
+    "title": {
+      "zh": "比尔·特里格斯 INRIA/LEAR 作者主页",
+      "en": "Bill Triggs INRIA/LEAR author profile"
+    },
+    "url": "https://lear.inrialpes.fr/people/triggs/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "INRIA/LEAR 托管的比尔·特里格斯作者主页和肖像来源。",
+      "en": "Bill Triggs author profile and portrait source hosted by INRIA/LEAR."
+    }
   }
 ]

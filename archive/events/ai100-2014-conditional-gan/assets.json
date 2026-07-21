@@ -28,28 +28,33 @@
   {
     "id": "asset-ai100-2014-conditional-gan-flickportrait1",
     "type": "image",
-    "path": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
-    "role": "supporting-image",
+    "path": "resources/images/external/ai100-2014-conditional-gan/conditional-gan-paper-first-page.jpg",
+    "role": "paper-page",
     "caption": {
-      "zh": "人物资料图",
-      "en": "Person reference image"
+      "zh": "Conditional GAN 论文首页",
+      "en": "Conditional GAN paper first page"
     },
     "sourceId": "source-conditional-generative-adversarial-nets",
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。",
+        "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only."
       },
-      "sourceUrl": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg"
+      "sourceUrl": "https://arxiv.org/pdf/1411.1784"
     },
     "usage": [
       "variant:bench-council-ai100"
     ],
     "editable": true,
     "subcaption": {
-      "zh": "人物身份及其与 Conditional GAN 的关系仍需核验。",
-      "en": "The person's identity and relationship to Conditional GAN still require verification."
-    }
+      "zh": "梅赫迪·米尔扎与西蒙·奥辛德罗提出条件生成对抗网络的论文首页。",
+      "en": "First page of Mehdi Mirza and Simon Osindero's paper introducing conditional GANs."
+    },
+    "sourceName": {
+      "zh": "arXiv",
+      "en": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1411.1784"
   }
 ]

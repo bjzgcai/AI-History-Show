@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-1970-ridge-ai-ridge-regression-main",
     "type": "image",
-    "path": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
+    "path": "resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg",
     "role": "supporting-image",
     "caption": {
       "zh": "阿瑟·霍尔与岭回归公式",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自特拉华大学 UDaily；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from University of Delaware UDaily; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "岭回归共同作者与 L2 惩罚项的组合资料图。",
       "en": "Composite image of a ridge-regression co-author and the L2 penalty term."
-    }
+    },
+    "sourceName": {
+      "zh": "特拉华大学 UDaily",
+      "en": "University of Delaware UDaily"
+    },
+    "sourceUrl": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg"
   }
 ]

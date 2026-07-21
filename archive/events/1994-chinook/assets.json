@@ -80,7 +80,7 @@
   {
     "id": "asset-1994-chinook-jonathan-schaeffer-external",
     "type": "image",
-    "path": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg",
+    "path": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "乔纳森·谢弗肖像",
@@ -90,8 +90,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+        "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
       "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
     },
@@ -103,6 +103,11 @@
     "subcaption": {
       "zh": "Chinook 团队负责人。",
       "en": "Leader of the Chinook team."
-    }
+    },
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
   }
 ]

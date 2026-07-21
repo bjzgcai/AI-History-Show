@@ -210,7 +210,7 @@
   {
     "id": "asset-2020-alphafold-john-jumper-external",
     "type": "image",
-    "path": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
+    "path": "resources/images/external/2020-alphafold/john-jumper-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "约翰·江珀肖像",
@@ -220,8 +220,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自范德堡大学新闻；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Vanderbilt University News; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
     },
@@ -233,6 +233,11 @@
     "subcaption": {
       "zh": "AlphaFold2 主要研究者。",
       "en": "Lead researcher of AlphaFold2."
-    }
+    },
+    "sourceName": {
+      "zh": "范德堡大学新闻",
+      "en": "Vanderbilt University News"
+    },
+    "sourceUrl": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg"
   }
 ]

@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-1983-actor-critic-barto-andrew-square",
     "type": "image",
-    "path": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM",
+    "path": "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "安德鲁·巴托肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自马萨诸塞大学阿默斯特分校；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from UMass Amherst; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "Actor-Critic 共同作者。",
       "en": "Co-author of actor-critic learning."
-    }
+    },
+    "sourceName": {
+      "zh": "马萨诸塞大学阿默斯特分校",
+      "en": "UMass Amherst"
+    },
+    "sourceUrl": "https://www.cs.umass.edu/sites/g/files/ijdqth246/files/styles/1_1_l/public/2022-06/barto_andrew_square.jpeg?h=8a0e61cf&itok=eQK4U_MM"
   }
 ]

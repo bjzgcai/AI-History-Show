@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
     "type": "image",
-    "path": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+    "path": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "福岛邦彦肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "Neocognitron 提出者。",
       "en": "Creator of the neocognitron."
-    }
+    },
+    "sourceName": {
+      "zh": "C&C 奖官网",
+      "en": "C&C Prize website"
+    },
+    "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
   }
 ]

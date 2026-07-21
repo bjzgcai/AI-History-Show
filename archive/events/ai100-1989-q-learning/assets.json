@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-1989-q-learning-citations",
     "type": "image",
-    "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
+    "path": "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "克里斯托弗·沃特金斯肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自Google Scholar；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Google Scholar; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "Q-learning 主要作者。",
       "en": "Lead author of Q-learning."
-    }
+    },
+    "sourceName": {
+      "zh": "Google Scholar",
+      "en": "Google Scholar"
+    },
+    "sourceUrl": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1"
   }
 ]

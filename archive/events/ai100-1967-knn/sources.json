@@ -74,5 +74,24 @@
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
     }
+  },
+  {
+    "id": "source-thomas-cover-stanford-profile",
+    "type": "profile",
+    "label": {
+      "zh": "人物主页",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "托马斯·科弗 Stanford 人物主页",
+      "en": "Thomas Cover Stanford profile"
+    },
+    "url": "https://isl.stanford.edu/~cover/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Stanford 信息系统实验室托管的托马斯·科弗人物主页和肖像来源。",
+      "en": "Thomas Cover profile and portrait source hosted by Stanford's Information Systems Laboratory."
+    }
   }
 ]

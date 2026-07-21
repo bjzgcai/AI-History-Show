@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2017-pix2pix-photo-of-me-korea",
     "type": "image",
-    "path": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
+    "path": "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "菲利普·伊索拉肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自麻省理工学院作者主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from MIT author homepage; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "Pix2Pix 主要作者。",
       "en": "Lead author of Pix2Pix."
-    }
+    },
+    "sourceName": {
+      "zh": "麻省理工学院作者主页",
+      "en": "MIT author homepage"
+    },
+    "sourceUrl": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg"
   }
 ]

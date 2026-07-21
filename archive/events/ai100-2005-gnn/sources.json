@@ -55,5 +55,24 @@
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
     }
+  },
+  {
+    "id": "source-franco-scarselli-homepage",
+    "type": "profile",
+    "label": {
+      "zh": "作者主页",
+      "en": "Author homepage"
+    },
+    "title": {
+      "zh": "弗兰科·斯卡塞利个人主页",
+      "en": "Franco Scarselli homepage"
+    },
+    "url": "https://www3.diism.unisi.it/~franco/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "锡耶纳大学托管的作者主页和肖像来源。",
+      "en": "Author homepage and portrait source hosted by the University of Siena."
+    }
   }
 ]

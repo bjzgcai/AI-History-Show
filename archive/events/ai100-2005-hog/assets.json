@@ -51,5 +51,37 @@
       "zh": "人物身份及其与 HOG 事件的关系仍需核验。",
       "en": "The person's identity and relationship to the HOG event still require verification."
     }
+  },
+  {
+    "id": "asset-ai100-2005-hog-bill-triggs-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-2005-hog/bill-triggs-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "比尔·特里格斯肖像",
+      "en": "Bill Triggs portrait"
+    },
+    "subcaption": {
+      "zh": "HOG 论文共同作者。",
+      "en": "Co-author of the HOG paper."
+    },
+    "sourceId": "source-bill-triggs-lear-profile",
+    "sourceName": {
+      "zh": "INRIA/LEAR 作者主页",
+      "en": "INRIA/LEAR author homepage"
+    },
+    "sourceUrl": "https://lear.inrialpes.fr/people/triggs/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "INRIA/LEAR 作者主页照片，未注明许可；本地副本用于保证展览稳定显示。",
+        "en": "INRIA/LEAR author-page photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
+      },
+      "sourceUrl": "https://lear.inrialpes.fr/people/triggs/bill2.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
   }
 ]

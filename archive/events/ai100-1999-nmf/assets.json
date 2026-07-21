@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-1999-nmf-sebastian",
     "type": "image",
-    "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
+    "path": "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "H. 塞巴斯蒂安·承肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自普林斯顿神经科学研究所；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Princeton Neuroscience Institute; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "非负矩阵分解论文共同作者。",
       "en": "Co-author of the non-negative matrix factorization paper."
-    }
+    },
+    "sourceName": {
+      "zh": "普林斯顿神经科学研究所",
+      "en": "Princeton Neuroscience Institute"
+    },
+    "sourceUrl": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj"
   }
 ]

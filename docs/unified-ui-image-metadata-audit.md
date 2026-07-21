@@ -46,7 +46,7 @@
 - BERT 事件中与原始论文作者无直接关系的 Andrej Karpathy 人物资料卡。
 - 第一代 GPT 事件中时间较晚的 Sam Altman 访谈画面。
 
-KNN、HOG、Conditional GAN 与 DDPG 的外链人物或资料图当前仍参与展示，后续需要继续核验外链可用性和人物身份。
+KNN 与 HOG 已改用从 Stanford ISL 和 INRIA/LEAR 作者主页取得的本地人物图。GNN 已用锡耶纳大学作者主页的弗兰科·斯卡塞利肖像替换 Google Scholar 默认头像，Conditional GAN 已用论文首页替换身份未核实的人物图。其余当前展示图片也已统一下载到 `resources/images/external/<event-id>/`。
 
 ## 校验规则
 
@@ -66,7 +66,8 @@ Archive 校验现在要求所有图片、SVG 和 GIF：
 - 生成数据中缺失图片元数据：0。
 - 生成数据中内部或通用图片标签：0。
 - 统一 UI 图片元数据渲染检查问题：0。
+- 统一 UI 当前选中图片中的外链地址：0。
 
-外链图片的网络可用性不属于本次元数据结论，需在后续外网图片专项处理中继续校验。
+逐图本地路径、原始来源和存储规则见 `docs/external-image-localization.md`。
 
 后续新增或修改事件图片时，应直接填写图片实际呈现的对象以及图片与事件的关系，不要把来源状态、文件用途或内部枚举当作面向观众的标题和说明。

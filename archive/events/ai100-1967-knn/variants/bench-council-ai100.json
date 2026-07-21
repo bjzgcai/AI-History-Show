@@ -51,14 +51,15 @@
     }
   ],
   "assetIds": [
-    "asset-ai100-1967-knn-2012-04-12-obit-cover",
+    "asset-ai100-1967-knn-thomas-cover-stanford",
     "asset-1967-knn-neighbor-vote"
   ],
   "sourceIds": [
     "source-nearest-neighbor-pattern-classification",
     "source-stanford-hosted-paper-pdf",
     "source-k-nearest-neighbors-algorithm-overview",
-    "source-scikit-learn-nearest-neighbors-documentation"
+    "source-scikit-learn-nearest-neighbors-documentation",
+    "source-thomas-cover-stanford-profile"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",

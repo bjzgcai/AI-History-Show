@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2015-ddpg-timothy-lillicrap-1",
     "type": "image",
-    "path": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+    "path": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait.png",
     "role": "portrait",
     "caption": {
       "zh": "蒂莫西·利利克拉普肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Stanford Neurosciences; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "DDPG 主要作者。",
       "en": "Lead author of DDPG."
-    }
+    },
+    "sourceName": {
+      "zh": "Stanford Neurosciences",
+      "en": "Stanford Neurosciences"
+    },
+    "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
   }
 ]

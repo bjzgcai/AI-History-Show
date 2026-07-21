@@ -28,7 +28,7 @@
   {
     "id": "asset-ai100-2016-gcn-photo",
     "type": "image",
-    "path": "https://tkipf.github.io/images/photo.jpg",
+    "path": "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg",
     "role": "portrait",
     "caption": {
       "zh": "托马斯·基普夫肖像",
@@ -38,8 +38,8 @@
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
+        "zh": "本地副本来自托马斯·基普夫个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from Thomas Kipf personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
     },
@@ -50,6 +50,11 @@
     "subcaption": {
       "zh": "GCN 主要作者。",
       "en": "Lead author of GCN."
-    }
+    },
+    "sourceName": {
+      "zh": "托马斯·基普夫个人网站",
+      "en": "Thomas Kipf personal website"
+    },
+    "sourceUrl": "https://tkipf.github.io/images/photo.jpg"
   }
 ]
