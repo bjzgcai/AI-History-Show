@@ -29,10 +29,10 @@
     "id": "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
     "type": "image",
     "path": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "新认知机 外部参考图",
-      "en": "Neocognitron external reference image"
+      "zh": "福岛邦彦肖像",
+      "en": "Kunihiko Fukushima portrait"
     },
     "sourceId": "source-neocognitron",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Neocognitron 提出者。",
+      "en": "Creator of the neocognitron."
+    }
   }
 ]

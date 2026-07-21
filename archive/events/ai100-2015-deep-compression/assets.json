@@ -29,10 +29,10 @@
     "id": "asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan",
     "type": "image",
     "path": "https://cdn.prod.website-files.com/64f4d663be17b6544a586bac/6514db3bc943fa1c599d89d5_songhan.jpeg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "深度压缩 外部参考图",
-      "en": "Deep Compression external reference image"
+      "zh": "韩松肖像",
+      "en": "Song Han portrait"
     },
     "sourceId": "source-deep-compression",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Deep Compression 主要作者。",
+      "en": "Lead author of Deep Compression."
+    }
   }
 ]

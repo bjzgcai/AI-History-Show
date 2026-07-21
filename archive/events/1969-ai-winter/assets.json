@@ -5,12 +5,12 @@
     "path": "resources/images/1969-ai-winter/people/1969-ai-winter_papers_01.png",
     "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "马文·明斯基肖像",
+      "en": "Marvin Minsky portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "《感知器》共同作者。",
+      "en": "Co-author of Perceptrons."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -31,12 +31,12 @@
     "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_02.jpg",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《感知机：计算几何学导论》（第 2 页资料）",
+      "en": "Perceptrons: An Introduction to Computational Geometry — page reference 2"
     },
     "subcaption": {
-      "zh": "《感知机：计算几何学导论》",
-      "en": "Perceptrons: An Introduction to Computational Geometry"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -57,12 +57,12 @@
     "path": "resources/images/1969-ai-winter/papers/1969-ai-winter_papers_01.png",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《感知机：计算几何学导论》（第 1 页资料）",
+      "en": "Perceptrons: An Introduction to Computational Geometry — page reference 1"
     },
     "subcaption": {
-      "zh": "《感知机：计算几何学导论》",
-      "en": "Perceptrons: An Introduction to Computational Geometry"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

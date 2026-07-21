@@ -5,12 +5,12 @@
     "path": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
     "role": "hero-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
-    },
-    "subcaption": {
       "zh": "达特茅斯会议提议封面",
       "en": "Cover of the Dartmouth Conference Proposal"
+    },
+    "subcaption": {
+      "zh": "与达特茅斯会议提议封面相关的历史图像资料。",
+      "en": "Historical image reference related to Cover of the Dartmouth Conference Proposal."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -31,12 +31,12 @@
     "path": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
-    },
-    "subcaption": {
       "zh": "达特茅斯会议发起人",
       "en": "Organizer of the Dartmouth Conference"
+    },
+    "subcaption": {
+      "zh": "与达特茅斯会议发起人相关的历史图像资料。",
+      "en": "Historical image reference related to Organizer of the Dartmouth Conference."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -57,12 +57,12 @@
     "path": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
-    },
-    "subcaption": {
       "zh": "达特茅斯会议 - AI正式诞生！",
       "en": "Dartmouth Workshop - AI Is Born!"
+    },
+    "subcaption": {
+      "zh": "与达特茅斯会议 - AI正式诞生！相关的历史图像资料。",
+      "en": "Historical image reference related to Dartmouth Workshop - AI Is Born!."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

@@ -29,10 +29,10 @@
     "id": "asset-ai100-2005-gnn-citations",
     "type": "image",
     "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MdCY3T8AAAAJ&citpid=2",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "图神经网络 外部参考图",
-      "en": "Graph Neural Network external reference image"
+      "zh": "弗兰科·斯卡塞利肖像",
+      "en": "Franco Scarselli portrait"
     },
     "sourceId": "source-the-graph-neural-network-model",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "图神经网络模型共同作者。",
+      "en": "Co-author of the graph neural network model."
+    }
   }
 ]

@@ -29,10 +29,10 @@
     "id": "asset-ai100-2021-swin-transformer-zeliu",
     "type": "image",
     "path": "https://zeliu98.github.io/images/zeliu.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "Swin Transformer 外部参考图",
-      "en": "Swin Transformer external reference image"
+      "zh": "刘泽肖像",
+      "en": "Ze Liu portrait"
     },
     "sourceId": "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Swin Transformer 主要作者。",
+      "en": "Lead author of Swin Transformer."
+    }
   }
 ]

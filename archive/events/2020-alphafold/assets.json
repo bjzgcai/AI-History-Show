@@ -31,12 +31,12 @@
     "path": "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "AlphaFold: 蛋白质结构预测结构图 1",
+      "en": "AlphaFold: Protein Structure Prediction structure diagram 1"
     },
     "subcaption": {
-      "zh": "AlphaFold: 蛋白质结构预测 架构图",
-      "en": "AlphaFold: Protein Structure Prediction"
+      "zh": "展示AlphaFold: 蛋白质结构预测的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of AlphaFold: Protein Structure Prediction."
     },
     "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "rights": {
@@ -57,12 +57,12 @@
     "path": "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "AlphaFold: 蛋白质结构预测资料图 1",
+      "en": "AlphaFold: Protein Structure Prediction reference image 1"
     },
     "subcaption": {
-      "zh": "AlphaFold: 蛋白质结构预测",
-      "en": "AlphaFold: Protein Structure Prediction"
+      "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+      "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
     },
     "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "AlphaFold: 蛋白质结构预测结构图 2",
+      "en": "AlphaFold: Protein Structure Prediction structure diagram 2"
     },
     "subcaption": {
-      "zh": "AlphaFold: 蛋白质结构预测 架构图",
-      "en": "AlphaFold: Protein Structure Prediction"
+      "zh": "展示AlphaFold: 蛋白质结构预测的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of AlphaFold: Protein Structure Prediction."
     },
     "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "rights": {
@@ -109,12 +109,12 @@
     "path": "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "AlphaFold: 蛋白质结构预测资料图 2",
+      "en": "AlphaFold: Protein Structure Prediction reference image 2"
     },
     "subcaption": {
-      "zh": "AlphaFold: 蛋白质结构预测",
-      "en": "AlphaFold: Protein Structure Prediction"
+      "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+      "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
     },
     "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "rights": {
@@ -135,12 +135,12 @@
     "path": "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》（第 1 页资料）",
+      "en": "Highly accurate protein structure prediction with AlphaFold — page reference 1"
     },
     "subcaption": {
-      "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》",
-      "en": "Highly accurate protein structure prediction with AlphaFold"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "rights": {
@@ -159,14 +159,14 @@
     "id": "asset-2020-alphafold-people-01",
     "type": "image",
     "path": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "约翰·江珀肖像",
+      "en": "John Jumper portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "AlphaFold2 主要研究者。",
+      "en": "Lead researcher of AlphaFold2."
     },
     "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "rights": {
@@ -185,14 +185,14 @@
     "id": "asset-2020-alphafold-people-02",
     "type": "image",
     "path": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "德米斯·哈萨比斯肖像",
+      "en": "Demis Hassabis portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "DeepMind 联合创始人与 AlphaFold 负责人。",
+      "en": "DeepMind co-founder and AlphaFold leader."
     },
     "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "rights": {
@@ -211,10 +211,10 @@
     "id": "asset-2020-alphafold-john-jumper-external",
     "type": "image",
     "path": "https://news.vanderbilt.edu/files/65D9B6B4-58E1-4D68-A7F0-BA56D729EB5A_1_201_a-1143x1600.jpeg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "John Jumper 外部参考图",
-      "en": "John Jumper external reference image"
+      "zh": "约翰·江珀肖像",
+      "en": "John Jumper portrait"
     },
     "sourceId": "source-deepmind-alphafold-page",
     "rights": {
@@ -229,6 +229,10 @@
       "variant:deep-learning",
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "AlphaFold2 主要研究者。",
+      "en": "Lead researcher of AlphaFold2."
+    }
   }
 ]

@@ -29,10 +29,10 @@
     "id": "asset-ai100-2022-stable-diffusion-robin-update-5",
     "type": "image",
     "path": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "Stable Diffusion 外部参考图",
-      "en": "Stable Diffusion external reference image"
+      "zh": "罗宾·罗姆巴赫肖像",
+      "en": "Robin Rombach portrait"
     },
     "sourceId": "source-high-resolution-image-synthesis-with-latent-diffusion-models",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "潜扩散模型主要作者。",
+      "en": "Lead author of latent diffusion models."
+    }
   }
 ]

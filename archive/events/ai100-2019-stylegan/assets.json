@@ -29,10 +29,10 @@
     "id": "asset-ai100-2019-stylegan-tero-karras",
     "type": "image",
     "path": "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "StyleGAN 外部参考图",
-      "en": "StyleGAN external reference image"
+      "zh": "特罗·卡拉斯肖像",
+      "en": "Tero Karras portrait"
     },
     "sourceId": "source-a-style-based-generator-architecture-for-gans",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "StyleGAN 主要作者。",
+      "en": "Lead author of StyleGAN."
+    }
   }
 ]

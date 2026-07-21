@@ -55,10 +55,10 @@
     "id": "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "谱聚类 外部参考图",
-      "en": "Spectral Clustering external reference image"
+      "zh": "吴恩达肖像",
+      "en": "Andrew Ng portrait"
     },
     "sourceId": "source-normalized-cuts-and-image-segmentation",
     "rights": {
@@ -72,16 +72,20 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "谱聚类形式化的重要贡献者。",
+      "en": "Key contributor to spectral-clustering formulations."
+    }
   },
   {
     "id": "asset-2000-spectral-clustering-6n-graf",
     "type": "svg",
     "path": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
-    "role": "external-reference-diagram",
+    "role": "algorithm-explainer",
     "caption": {
-      "zh": "谱聚类 外部参考图",
-      "en": "Spectral Clustering external reference image"
+      "zh": "谱聚类六节点图示",
+      "en": "Six-node spectral-clustering graph"
     },
     "sourceId": "source-normalized-cuts-and-image-segmentation",
     "rights": {
@@ -95,6 +99,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "用于说明谱聚类中的图结构与连接关系。",
+      "en": "Illustrates graph structure and connectivity in spectral clustering."
+    }
   }
 ]

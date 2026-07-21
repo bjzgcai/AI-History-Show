@@ -29,10 +29,10 @@
     "id": "asset-ai100-1970-ridge-ai-ridge-regression-main",
     "type": "image",
     "path": "https://www.udel.edu/udaily/2021/august/big-data-ridge-regression/_jcr_content/udaily_Image.coreimg.jpeg/1634896375822/ai-ridge-regression-main.jpeg",
-    "role": "external-reference-image",
+    "role": "supporting-image",
     "caption": {
-      "zh": "岭回归 外部参考图",
-      "en": "Ridge external reference image"
+      "zh": "阿瑟·霍尔与岭回归公式",
+      "en": "Arthur Hoerl and the ridge-regression formula"
     },
     "sourceId": "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "岭回归共同作者与 L2 惩罚项的组合资料图。",
+      "en": "Composite image of a ridge-regression co-author and the L2 penalty term."
+    }
   }
 ]

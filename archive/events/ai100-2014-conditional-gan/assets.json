@@ -29,10 +29,10 @@
     "id": "asset-ai100-2014-conditional-gan-flickportrait1",
     "type": "image",
     "path": "https://kaptur.co/wp-content/uploads/2015/05/flickportrait1.jpg",
-    "role": "external-reference-image",
+    "role": "supporting-image",
     "caption": {
-      "zh": "Conditional GAN 外部参考图",
-      "en": "Conditional GAN external reference image"
+      "zh": "人物资料图",
+      "en": "Person reference image"
     },
     "sourceId": "source-conditional-generative-adversarial-nets",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "人物身份及其与 Conditional GAN 的关系仍需核验。",
+      "en": "The person's identity and relationship to Conditional GAN still require verification."
+    }
   }
 ]

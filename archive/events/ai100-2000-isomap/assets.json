@@ -29,10 +29,10 @@
     "id": "asset-ai100-2000-isomap-tenenbaum-2019-profile-240",
     "type": "image",
     "path": "https://sqi.mit.edu/system/files/styles/squared_portrait/private/2020-03/Tenenbaum_2019_profile-240.jpg?h=52119415&itok=YgkCjyFY",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "Isomap 外部参考图",
-      "en": "Isomap external reference image"
+      "zh": "约书亚·特南鲍姆肖像",
+      "en": "Joshua Tenenbaum portrait"
     },
     "sourceId": "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Isomap 主要作者。",
+      "en": "Lead author of Isomap."
+    }
   }
 ]

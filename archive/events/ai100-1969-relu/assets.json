@@ -29,10 +29,10 @@
     "id": "asset-ai100-1969-relu-330px-iclr-2025-yoshua-bengio-02",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "ReLU 外部参考图",
-      "en": "ReLU external reference image"
+      "zh": "约书亚·本吉奥肖像",
+      "en": "Yoshua Bengio portrait"
     },
     "sourceId": "source-deep-sparse-rectifier-neural-networks",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "深度稀疏整流网络论文共同作者。",
+      "en": "Co-author of the deep sparse rectifier network paper."
+    }
   }
 ]

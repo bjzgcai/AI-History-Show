@@ -174,6 +174,7 @@ function validateAssets(eventDir, assets, sourceIds) {
 
     for (const asset of assets) {
         if (!isObject(asset)) continue;
+        const isDisplayImage = ['image', 'svg', 'gif'].includes(asset.type);
         if (!hasText(asset.type)) addError(filePath, `asset ${asset.id || '<missing>'} is missing type.`);
         if (!hasText(asset.path)) {
             addError(filePath, `asset ${asset.id || '<missing>'} is missing path.`);
@@ -186,6 +187,47 @@ function validateAssets(eventDir, assets, sourceIds) {
         }
         if (!hasText(asset.role)) addError(filePath, `asset ${asset.id || '<missing>'} is missing role.`);
         checkLocalized(filePath, asset.caption, `asset ${asset.id || '<missing>'} caption`);
+        if (isDisplayImage) {
+            checkLocalized(filePath, asset.subcaption, `asset ${asset.id || '<missing>'} subcaption`);
+            if (/^external-reference-(?:image|diagram)$/i.test(String(asset.role || ''))) {
+                addError(
+                    filePath,
+                    `asset ${asset.id || '<missing>'} uses a source-status role instead of a semantic image role.`
+                );
+            }
+            const visibleImageText = [
+                asset.caption && asset.caption.zh,
+                asset.caption && asset.caption.en,
+                asset.subcaption && asset.subcaption.zh,
+                asset.subcaption && asset.subcaption.en
+            ].filter(Boolean);
+            const hasInternalLabel = visibleImageText.some((value) =>
+                /^(?:external-reference-(?:image|diagram)|architecture-explainer|algorithm-explainer|team-photo|hero-image|supporting-image|source-card|paper-page)$/i.test(
+                    String(value).trim()
+                )
+            );
+            const hasGenericReferenceCaption = visibleImageText.some((value) =>
+                /外部参考图|external reference image/i.test(String(value))
+            );
+            const hasGenericPortraitCaption = visibleImageText.some((value) =>
+                /^(?:人物肖像|Portrait|相关研究者照片|Relevant researcher photo)$/i.test(String(value).trim())
+            );
+            const hasGenericMediaCaption = visibleImageText.some((value) =>
+                /^(?:结构示意|Architecture|历史照片|Historical photo|论文页面|Paper page)$/i.test(String(value).trim())
+            );
+            const hasProjectOnlyDescription = visibleImageText.some((value) =>
+                /项目使用的架构图|Architecture visual used by the project/i.test(String(value))
+            );
+            if (
+                hasInternalLabel ||
+                hasGenericReferenceCaption ||
+                hasGenericPortraitCaption ||
+                hasGenericMediaCaption ||
+                hasProjectOnlyDescription
+            ) {
+                addError(filePath, `asset ${asset.id || '<missing>'} exposes an internal or generic image label.`);
+            }
+        }
 
         const ids = Array.isArray(asset.sourceIds) ? asset.sourceIds : asset.sourceId ? [asset.sourceId] : [];
         if (ids.length === 0) {

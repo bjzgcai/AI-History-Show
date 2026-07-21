@@ -29,10 +29,10 @@
     "id": "asset-ai100-1967-knn-2012-04-12-obit-cover",
     "type": "image",
     "path": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "KNN 最近邻 外部参考图",
-      "en": "KNN external reference image"
+      "zh": "托马斯·科弗肖像",
+      "en": "Thomas Cover portrait"
     },
     "sourceId": "source-nearest-neighbor-pattern-classification",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "最近邻分类共同作者。",
+      "en": "Co-author of nearest-neighbor classification."
+    }
   }
 ]

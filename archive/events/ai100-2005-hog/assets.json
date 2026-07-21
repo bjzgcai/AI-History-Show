@@ -29,10 +29,10 @@
     "id": "asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde",
     "type": "image",
     "path": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
-    "role": "external-reference-image",
+    "role": "supporting-image",
     "caption": {
-      "zh": "HOG 方向梯度直方图 外部参考图",
-      "en": "HOG external reference image"
+      "zh": "HOG 作者资料图",
+      "en": "HOG author reference image"
     },
     "sourceId": "source-histograms-of-oriented-gradients-for-human-detection",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "人物身份及其与 HOG 事件的关系仍需核验。",
+      "en": "The person's identity and relationship to the HOG event still require verification."
+    }
   }
 ]

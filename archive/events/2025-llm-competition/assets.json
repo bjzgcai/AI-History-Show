@@ -5,12 +5,12 @@
     "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
     "role": "hero-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "大语言模型百花齐放资料图 1",
+      "en": "A Flourishing Competition Among Large Language Models reference image 1"
     },
     "subcaption": {
-      "zh": "大语言模型百花齐放",
-      "en": "A Flourishing Competition Among Large Language Models"
+      "zh": "与大语言模型百花齐放相关的历史图像资料。",
+      "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -31,12 +31,12 @@
     "path": "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "大语言模型百花齐放结构图 1",
+      "en": "A Flourishing Competition Among Large Language Models structure diagram 1"
     },
     "subcaption": {
-      "zh": "大语言模型百花齐放 架构图",
-      "en": "A Flourishing Competition Among Large Language Models"
+      "zh": "展示大语言模型百花齐放的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of A Flourishing Competition Among Large Language Models."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -57,12 +57,12 @@
     "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "大语言模型百花齐放资料图 2",
+      "en": "A Flourishing Competition Among Large Language Models reference image 2"
     },
     "subcaption": {
-      "zh": "大语言模型百花齐放",
-      "en": "A Flourishing Competition Among Large Language Models"
+      "zh": "与大语言模型百花齐放相关的历史图像资料。",
+      "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "大语言模型百花齐放资料图 3",
+      "en": "A Flourishing Competition Among Large Language Models reference image 3"
     },
     "subcaption": {
-      "zh": "大语言模型百花齐放",
-      "en": "A Flourishing Competition Among Large Language Models"
+      "zh": "与大语言模型百花齐放相关的历史图像资料。",
+      "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

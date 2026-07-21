@@ -29,10 +29,10 @@
     "id": "asset-ai100-2021-dalle-b0fdc3694e0d34821c1a35fbe494cb9c",
     "type": "image",
     "path": "https://simg.baai.ac.cn/hubview/b0fdc3694e0d34821c1a35fbe494cb9c.png",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "DALL-E 外部参考图",
-      "en": "DALL-E external reference image"
+      "zh": "阿迪蒂亚·拉梅什肖像",
+      "en": "Aditya Ramesh portrait"
     },
     "sourceId": "source-zero-shot-text-to-image-generation",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "DALL-E 主要作者与创建者。",
+      "en": "Lead author and creator of DALL-E."
+    }
   }
 ]

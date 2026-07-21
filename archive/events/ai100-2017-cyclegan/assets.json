@@ -29,10 +29,10 @@
     "id": "asset-ai100-2017-cyclegan-portrait3-lr",
     "type": "image",
     "path": "https://www.cs.cmu.edu/~junyanz/imgs/portrait3_lr.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "CycleGAN 外部参考图",
-      "en": "CycleGAN external reference image"
+      "zh": "朱俊彦肖像",
+      "en": "Jun-Yan Zhu portrait"
     },
     "sourceId": "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "CycleGAN 主要作者。",
+      "en": "Lead author of CycleGAN."
+    }
   }
 ]

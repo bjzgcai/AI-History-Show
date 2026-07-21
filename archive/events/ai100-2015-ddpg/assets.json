@@ -29,10 +29,10 @@
     "id": "asset-ai100-2015-ddpg-timothy-lillicrap-1",
     "type": "image",
     "path": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "DDPG 外部参考图",
-      "en": "DDPG external reference image"
+      "zh": "蒂莫西·利利克拉普肖像",
+      "en": "Timothy Lillicrap portrait"
     },
     "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "DDPG 主要作者。",
+      "en": "Lead author of DDPG."
+    }
   }
 ]

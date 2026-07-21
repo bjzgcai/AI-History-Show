@@ -55,14 +55,14 @@
     "id": "asset-1997-lstm-people-01",
     "type": "image",
     "path": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "尤尔根·施密德胡伯肖像",
+      "en": "Jurgen Schmidhuber portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "LSTM 共同作者。",
+      "en": "Co-author of LSTM."
     },
     "sourceId": "source-long-short-term-memory",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "LSTM与门控机制结构图 1",
+      "en": "LSTM and Gating Mechanisms structure diagram 1"
     },
     "subcaption": {
-      "zh": "LSTM与门控机制 架构图",
-      "en": "LSTM and Gating Mechanisms"
+      "zh": "展示LSTM与门控机制的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of LSTM and Gating Mechanisms."
     },
     "sourceId": "source-long-short-term-memory",
     "rights": {
@@ -109,12 +109,12 @@
     "path": "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "LSTM与门控机制结构图 2",
+      "en": "LSTM and Gating Mechanisms structure diagram 2"
     },
     "subcaption": {
-      "zh": "LSTM与门控机制 架构图",
-      "en": "LSTM and Gating Mechanisms"
+      "zh": "展示LSTM与门控机制的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of LSTM and Gating Mechanisms."
     },
     "sourceId": "source-long-short-term-memory",
     "rights": {

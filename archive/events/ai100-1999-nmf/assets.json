@@ -29,10 +29,10 @@
     "id": "asset-ai100-1999-nmf-sebastian",
     "type": "image",
     "path": "https://pni.princeton.edu/sites/g/files/toruqf321/files/styles/3x4_750w_1000h/public/2023-08/sebastian.jpg?h=ad276dab&itok=TYfICucj",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "非负矩阵分解 外部参考图",
-      "en": "NMF external reference image"
+      "zh": "H. 塞巴斯蒂安·承肖像",
+      "en": "H. Sebastian Seung portrait"
     },
     "sourceId": "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "非负矩阵分解论文共同作者。",
+      "en": "Co-author of the non-negative matrix factorization paper."
+    }
   }
 ]

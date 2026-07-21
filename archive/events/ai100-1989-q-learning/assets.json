@@ -29,10 +29,10 @@
     "id": "asset-ai100-1989-q-learning-citations",
     "type": "image",
     "path": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=v8QhiOwAAAAJ&citpid=1",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "Q-Learning 外部参考图",
-      "en": "Q-Learning external reference image"
+      "zh": "克里斯托弗·沃特金斯肖像",
+      "en": "Christopher Watkins portrait"
     },
     "sourceId": "source-learning-from-delayed-rewards",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Q-learning 主要作者。",
+      "en": "Lead author of Q-learning."
+    }
   }
 ]

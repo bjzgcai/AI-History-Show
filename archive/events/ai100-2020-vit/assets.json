@@ -29,10 +29,10 @@
     "id": "asset-ai100-2020-vit-alexey-dosovitskiy",
     "type": "image",
     "path": "https://www.eml-munich.de/team/alexey-dosovitskiy.png",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "视觉 Transformer 外部参考图",
-      "en": "Vision Transformer external reference image"
+      "zh": "阿列克谢·多索维茨基肖像",
+      "en": "Alexey Dosovitskiy portrait"
     },
     "sourceId": "source-an-image-is-worth-16x16-words",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "视觉 Transformer 主要作者。",
+      "en": "Lead author of Vision Transformer."
+    }
   }
 ]

@@ -29,14 +29,14 @@
     "id": "asset-1989-cnn-people-01",
     "type": "image",
     "path": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "扬·勒昆肖像",
+      "en": "Yann LeCun portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "LeNet 主要研究者。",
+      "en": "Lead researcher of LeNet."
     },
     "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
     "rights": {
@@ -55,14 +55,14 @@
     "id": "asset-1989-cnn-people-02",
     "type": "image",
     "path": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "扬·勒昆肖像",
+      "en": "Yann LeCun portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "LeNet 与卷积神经网络研究者。",
+      "en": "Researcher of LeNet and convolutional neural networks."
     },
     "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "卷积神经网络结构图 1",
+      "en": "Convolutional Neural Networks structure diagram 1"
     },
     "subcaption": {
-      "zh": "卷积神经网络 架构图",
-      "en": "Convolutional Neural Networks"
+      "zh": "展示卷积神经网络的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of Convolutional Neural Networks."
     },
     "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
     "rights": {
@@ -107,10 +107,10 @@
     "id": "asset-1989-cnn-yann-lecun-external",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg/330px-Laura_Chaubard_%26_Yann_Le_Cun_-_2024_%2853814052697%29_%28cropped%29.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "扬·勒昆外部参考图",
-      "en": "Yann LeCun external reference image"
+      "zh": "扬·勒昆肖像",
+      "en": "Yann LeCun portrait"
     },
     "sourceId": "source-yann-lecun-s-home-page",
     "rights": {
@@ -125,6 +125,10 @@
       "variant:deep-learning",
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "LeNet 主要研究者。",
+      "en": "Lead researcher of LeNet."
+    }
   }
 ]

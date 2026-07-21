@@ -55,10 +55,10 @@
     "id": "asset-1957-kmeans-bell-labs-holmdel",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bell_Labs_Holmdel.jpg",
-    "role": "external-reference-image",
+    "role": "supporting-image",
     "caption": {
-      "zh": "K-means 聚类 外部参考图",
-      "en": "K-means external reference image"
+      "zh": "贝尔实验室霍姆德尔园区",
+      "en": "Bell Labs Holmdel complex"
     },
     "sourceId": "source-least-squares-quantization-in-pcm",
     "rights": {
@@ -72,16 +72,20 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "斯图尔特·劳埃德提出量化方法时所在机构的历史建筑。",
+      "en": "Historic Bell Labs site associated with Stuart Lloyd's quantization work."
+    }
   },
   {
     "id": "asset-1957-kmeans-iris-flowers-clustering-kmeans",
     "type": "svg",
     "path": "https://upload.wikimedia.org/wikipedia/commons/1/10/Iris_Flowers_Clustering_kMeans.svg",
-    "role": "external-reference-diagram",
+    "role": "algorithm-explainer",
     "caption": {
-      "zh": "K-means 聚类 外部参考图",
-      "en": "K-means external reference image"
+      "zh": "K-means 鸢尾花聚类结果",
+      "en": "K-means clustering of iris data"
     },
     "sourceId": "source-least-squares-quantization-in-pcm",
     "rights": {
@@ -95,6 +99,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "颜色展示 K-means 得到的不同数据簇。",
+      "en": "Colors show the clusters produced by K-means."
+    }
   }
 ]

@@ -81,14 +81,14 @@
     "id": "asset-1957-perceptron-people-01",
     "type": "image",
     "path": "resources/images/1957-perceptron/people/1957-perceptron_people_01.jpg",
-    "role": "team-photo",
+    "role": "supporting-image",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "弗兰克·罗森布拉特与感知机结构图",
+      "en": "Frank Rosenblatt and a perceptron diagram"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "人物照片与早期感知机结构示意的组合资料图。",
+      "en": "Composite reference image combining Rosenblatt and an early perceptron diagram."
     },
     "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
     "rights": {
@@ -109,12 +109,12 @@
     "path": "resources/images/1957-perceptron/papers/1957-perceptron_papers_01.png",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《感知机：大脑中信息存储与组织的概率模型》（第 1 页资料）",
+      "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain — page reference 1"
     },
     "subcaption": {
-      "zh": "《感知机：大脑中信息存储与组织的概率模型》",
-      "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
     "rights": {
@@ -135,12 +135,12 @@
     "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.jpg",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "感知机与连接主义资料图 1",
+      "en": "The Perceptron and Connectionism reference image 1"
     },
     "subcaption": {
-      "zh": "感知机与连接主义",
-      "en": "The Perceptron and Connectionism"
+      "zh": "与感知机与连接主义相关的历史图像资料。",
+      "en": "Historical image reference related to The Perceptron and Connectionism."
     },
     "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
     "rights": {
@@ -161,12 +161,12 @@
     "path": "resources/images/1957-perceptron/historical/1957-perceptron_historical_01.png",
     "role": "supporting-image",
     "caption": {
-      "zh": "历史照片",
-      "en": "Historical photo"
+      "zh": "感知机与连接主义资料图 1",
+      "en": "The Perceptron and Connectionism reference image 1"
     },
     "subcaption": {
-      "zh": "感知机与连接主义",
-      "en": "The Perceptron and Connectionism"
+      "zh": "与感知机与连接主义相关的历史图像资料。",
+      "en": "Historical image reference related to The Perceptron and Connectionism."
     },
     "sourceId": "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
     "rights": {

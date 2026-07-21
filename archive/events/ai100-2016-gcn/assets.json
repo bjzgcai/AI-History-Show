@@ -29,10 +29,10 @@
     "id": "asset-ai100-2016-gcn-photo",
     "type": "image",
     "path": "https://tkipf.github.io/images/photo.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "GCN 外部参考图",
-      "en": "GCN external reference image"
+      "zh": "托马斯·基普夫肖像",
+      "en": "Thomas Kipf portrait"
     },
     "sourceId": "source-semi-supervised-classification-with-graph-convolutional-networks",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "GCN 主要作者。",
+      "en": "Lead author of GCN."
+    }
   }
 ]

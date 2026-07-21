@@ -29,10 +29,10 @@
     "id": "asset-transformer-architecture",
     "type": "image",
     "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
-      "zh": "Transformer 架构示意",
-      "en": "Transformer architecture explainer"
+      "zh": "Transformer 自注意力计算",
+      "en": "Transformer self-attention computation"
     },
     "sourceId": "source-transformer-arxiv",
     "rights": {
@@ -45,7 +45,11 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "展示查询、键和值投影以及缩放点积注意力。",
+      "en": "Shows query, key, and value projections with scaled dot-product attention."
+    }
   },
   {
     "id": "asset-transformer-attention",
@@ -53,8 +57,8 @@
     "path": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
     "role": "algorithm-explainer",
     "caption": {
-      "zh": "Transformer 自注意力机制示意",
-      "en": "Transformer self-attention explainer"
+      "zh": "Transformer 自注意力机制",
+      "en": "Transformer self-attention mechanism"
     },
     "sourceId": "source-transformer-arxiv",
     "rights": {
@@ -68,7 +72,11 @@
       "variant:bench-council-ai100",
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "本地重绘的 token 间注意力关系解释图。",
+      "en": "Locally redrawn explainer of attention relationships between tokens."
+    }
   },
   {
     "id": "asset-transformer-paper-page",
@@ -76,8 +84,8 @@
     "path": "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
     "role": "paper-page",
     "caption": {
-      "zh": "Transformer 论文页面资料",
-      "en": "Transformer paper page material"
+      "zh": "《Attention Is All You Need》论文首页",
+      "en": "Attention Is All You Need paper first page"
     },
     "sourceId": "source-transformer-neurips",
     "rights": {
@@ -90,7 +98,11 @@
     "usage": [
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Transformer 原始论文的首页与摘要。",
+      "en": "First page and abstract of the original Transformer paper."
+    }
   },
   {
     "id": "asset-transformer-architecture-detail",
@@ -98,8 +110,8 @@
     "path": "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "Transformer 架构细节图",
-      "en": "Transformer architecture detail"
+      "zh": "Transformer 编码器—解码器架构",
+      "en": "Transformer encoder-decoder architecture"
     },
     "sourceId": "source-transformer-arxiv",
     "rights": {
@@ -113,6 +125,10 @@
       "variant:deep-learning",
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "原论文中的编码器与解码器模块结构。",
+      "en": "Encoder and decoder module structure from the original paper."
+    }
   }
 ]

@@ -55,10 +55,10 @@
     "id": "asset-1996-dbscan-sfu-professor-martin-ester-2019",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "DBSCAN 密度聚类 外部参考图",
-      "en": "DBSCAN external reference image"
+      "zh": "马丁·埃斯特肖像",
+      "en": "Martin Ester portrait"
     },
     "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
     "rights": {
@@ -72,16 +72,20 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "DBSCAN 共同作者。",
+      "en": "Co-author of DBSCAN."
+    }
   },
   {
     "id": "asset-1996-dbscan-dbscan-density-data",
     "type": "svg",
     "path": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
-    "role": "external-reference-diagram",
+    "role": "algorithm-explainer",
     "caption": {
-      "zh": "DBSCAN 密度聚类 外部参考图",
-      "en": "DBSCAN external reference image"
+      "zh": "DBSCAN 密度聚类示意",
+      "en": "DBSCAN density-clustering diagram"
     },
     "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
     "rights": {
@@ -95,6 +99,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "展示密度连通的数据簇与噪声点。",
+      "en": "Shows density-connected clusters and noise points."
+    }
   }
 ]

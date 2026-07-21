@@ -3,10 +3,10 @@
     "id": "asset-alphago-lee-sedol",
     "type": "image",
     "path": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-    "role": "team-photo",
+    "role": "portrait",
     "caption": {
-      "zh": "AlphaGo 与李世石比赛资料图",
-      "en": "AlphaGo and Lee Sedol match reference image"
+      "zh": "李世石肖像",
+      "en": "Lee Sedol portrait"
     },
     "sourceId": "source-deepmind-alphago-page",
     "rights": {
@@ -20,7 +20,11 @@
       "variant:bench-council-ai100",
       "variant:gaming-ai"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "与 AlphaGo 进行五番棋对局的职业围棋棋手。",
+      "en": "Professional Go player who faced AlphaGo in the five-game match."
+    }
   },
   {
     "id": "asset-alphago-policy-value-search",
@@ -28,8 +32,8 @@
     "path": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "AlphaGo 策略网络、价值网络与搜索流程示意",
-      "en": "AlphaGo policy, value, and search workflow explainer"
+      "zh": "AlphaGo 策略、价值与搜索流程",
+      "en": "AlphaGo policy, value, and search workflow"
     },
     "sourceId": "source-alphago-nature-paper",
     "rights": {
@@ -44,6 +48,10 @@
       "variant:gaming-ai",
       "variant:deep-learning"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "展示策略网络、价值网络与蒙特卡洛树搜索的协作关系。",
+      "en": "Shows how policy networks, value networks, and Monte Carlo tree search work together."
+    }
   }
 ]

@@ -5,12 +5,12 @@
     "path": "resources/images/2019-ai-feynman/people/2019-ai-feynman_people_01.png",
     "role": "portrait",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "马克斯·泰格马克肖像",
+      "en": "Max Tegmark portrait"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "AI Feynman 共同作者。",
+      "en": "Co-author of AI Feynman."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -31,12 +31,12 @@
     "path": "resources/images/2019-ai-feynman/architecture/2019-ai-feynman_historical_01.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "AI Feynman：自主科学规律发现结构图 1",
+      "en": "AI Feynman: Autonomous Discovery of Scientific Laws structure diagram 1"
     },
     "subcaption": {
-      "zh": "AI Feynman：自主科学规律发现 架构图",
-      "en": "AI Feynman: Autonomous Discovery of Scientific Laws"
+      "zh": "展示AI Feynman：自主科学规律发现的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of AI Feynman: Autonomous Discovery of Scientific Laws."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -57,12 +57,12 @@
     "path": "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_01.png",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《AI 费曼：受物理启发的符号回归方法》（第 1 页资料）",
+      "en": "AI Feynman: a physics-inspired method for symbolic regression — page reference 1"
     },
     "subcaption": {
-      "zh": "《AI 费曼：受物理启发的符号回归方法》",
-      "en": "AI Feynman: a physics-inspired method for symbolic regression"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/2019-ai-feynman/papers/2019-ai-feynman_papers_02.png",
     "role": "paper-page",
     "caption": {
-      "zh": "论文页面",
-      "en": "Paper page"
+      "zh": "《AI 费曼：受物理启发的符号回归方法》（第 2 页资料）",
+      "en": "AI Feynman: a physics-inspired method for symbolic regression — page reference 2"
     },
     "subcaption": {
-      "zh": "《AI 费曼：受物理启发的符号回归方法》",
-      "en": "AI Feynman: a physics-inspired method for symbolic regression"
+      "zh": "原论文页面或相关页面的图像资料。",
+      "en": "Image reference from the original paper or a related paper page."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

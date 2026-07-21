@@ -29,10 +29,10 @@
     "id": "asset-ai100-2017-pix2pix-photo-of-me-korea",
     "type": "image",
     "path": "https://web.mit.edu/phillipi/www/images/photo_of_me_korea.jpeg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "Pix2Pix 外部参考图",
-      "en": "Pix2Pix external reference image"
+      "zh": "菲利普·伊索拉肖像",
+      "en": "Phillip Isola portrait"
     },
     "sourceId": "source-image-to-image-translation-with-conditional-adversarial-networks",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "Pix2Pix 主要作者。",
+      "en": "Lead author of Pix2Pix."
+    }
   }
 ]

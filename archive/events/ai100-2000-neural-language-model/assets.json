@@ -29,10 +29,10 @@
     "id": "asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02",
     "type": "image",
     "path": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/ICLR_2025_-_Yoshua_Bengio_02.jpg/330px-ICLR_2025_-_Yoshua_Bengio_02.jpg",
-    "role": "external-reference-image",
+    "role": "portrait",
     "caption": {
-      "zh": "神经语言模型 外部参考图",
-      "en": "Neural Language Model external reference image"
+      "zh": "约书亚·本吉奥肖像",
+      "en": "Yoshua Bengio portrait"
     },
     "sourceId": "source-a-neural-probabilistic-language-model",
     "rights": {
@@ -46,6 +46,10 @@
     "usage": [
       "variant:bench-council-ai100"
     ],
-    "editable": true
+    "editable": true,
+    "subcaption": {
+      "zh": "神经概率语言模型主要作者。",
+      "en": "Lead author of the neural probabilistic language model."
+    }
   }
 ]

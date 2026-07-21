@@ -55,14 +55,14 @@
     "id": "asset-2018-bert-people-03",
     "type": "image",
     "path": "resources/images/2018-bert/people/2018-bert_people_03.jpg",
-    "role": "team-photo",
+    "role": "source-card",
     "caption": {
-      "zh": "人物肖像",
-      "en": "Portrait"
+      "zh": "Andrej Karpathy 人物资料卡",
+      "en": "Andrej Karpathy profile card"
     },
     "subcaption": {
-      "zh": "相关研究者照片",
-      "en": "Relevant researcher photo"
+      "zh": "该资料卡与 BERT 原始论文作者无直接关系，当前不用于统一 UI。",
+      "en": "This profile card is not directly related to the BERT paper authors and is not used in the unified UI."
     },
     "sourceId": "source-bert",
     "rights": {
@@ -83,12 +83,12 @@
     "path": "resources/images/2018-bert/architecture/2018-bert_architecture_01.jpg",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "BERT结构图 1",
+      "en": "BERT structure diagram 1"
     },
     "subcaption": {
-      "zh": "BERT 架构图",
-      "en": "BERT diagram"
+      "zh": "展示BERT的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of BERT."
     },
     "sourceId": "source-bert",
     "rights": {
@@ -109,12 +109,12 @@
     "path": "resources/images/2018-bert/architecture/2018-bert_architecture_02.png",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "结构示意",
-      "en": "Architecture"
+      "zh": "BERT结构图 2",
+      "en": "BERT structure diagram 2"
     },
     "subcaption": {
-      "zh": "BERT 架构图",
-      "en": "BERT diagram"
+      "zh": "展示BERT的关键组件、连接或信息流。",
+      "en": "Shows the key components, connections, or information flow of BERT."
     },
     "sourceId": "source-bert",
     "rights": {
