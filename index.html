@@ -6502,20 +6502,33 @@
             display: grid;
             grid-column: 1 / 3;
             grid-row: 1 / 3;
-            grid-template-columns: var(--ui-detail-year-column, 300px) 290px minmax(0, 1fr);
+            grid-template-columns: minmax(0, 1fr);
             grid-template-rows: 132px 98px;
-            column-gap: 36px;
             row-gap: 0;
             align-items: start;
             padding-top: 0;
         }
 
-        .ui-detail-hero.has-long-year {
-            --ui-detail-year-column: 395px;
+        .ui-detail-topline {
+            min-width: 0;
+            display: grid;
+            grid-column: 1;
+            grid-row: 1;
+            grid-template-columns: fit-content(829px) minmax(300px, 1fr);
+            column-gap: 67px;
+            align-items: start;
         }
 
-        .ui-detail-hero.has-extra-long-year {
-            --ui-detail-year-column: 520px;
+        .ui-detail-context {
+            width: max-content;
+            min-width: 564px;
+            max-width: 829px;
+            display: grid;
+            grid-column: 1;
+            grid-row: 1;
+            grid-template-columns: max-content minmax(0, 1fr);
+            column-gap: 36px;
+            align-items: start;
         }
 
         .ui-detail-year {
@@ -6538,34 +6551,46 @@
         .ui-detail-place {
             grid-column: 2;
             grid-row: 1;
+            min-width: 0;
             margin-top: 16px;
             color: var(--accent);
             font-size: 30px;
             font-weight: 900;
             line-height: 1.3;
+            width: auto;
+            max-width: none;
             max-height: 2.6em;
-            overflow: hidden;
             display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
-            width: 290px;
+            white-space: normal;
+            overflow-wrap: anywhere;
         }
 
         .ui-avatar-strip {
-            display: grid;
-            grid-column: 1 / 4;
+            display: flex;
+            grid-column: 1;
             grid-row: 2;
-            grid-template-columns: repeat(3, 232px);
             gap: 36px;
-            overflow: hidden;
+            min-width: 0;
+            overflow-x: auto;
+            overflow-y: visible;
             align-items: start;
             padding-top: 0;
+            scrollbar-width: none;
+        }
+
+        .ui-avatar-strip::-webkit-scrollbar {
+            display: none;
         }
 
         .ui-avatar {
-            min-width: 0;
+            flex: 0 0 auto;
+            min-width: max-content;
             display: grid;
-            grid-template-columns: 98px minmax(0, 1fr);
+            grid-template-columns: 98px max-content;
             align-items: center;
             gap: 18px;
             color: rgba(244, 239, 229, 0.42);
@@ -6598,9 +6623,10 @@
         .ui-avatar-name,
         .ui-avatar-role {
             display: block;
-            min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            width: max-content;
+            max-width: none;
+            overflow: visible;
+            text-overflow: clip;
             white-space: nowrap;
         }
 
@@ -6704,23 +6730,14 @@
         .ui-detail-heading {
             grid-column: 2;
             grid-row: 1;
+            min-width: 0;
+            width: 100%;
+            max-width: 100%;
             display: grid;
             align-content: start;
             gap: 0;
             padding-top: 12px;
-            padding-left: 229px;
-        }
-
-        .ui-detail-heading.is-location-overlap-risk {
-            padding-left: 260px;
-        }
-
-        .ui-detail-heading.has-long-year {
-            padding-left: 326px;
-        }
-
-        .ui-detail-heading.has-extra-long-year {
-            padding-left: 430px;
+            padding-left: 0;
         }
 
         .ui-detail-title {
@@ -6728,7 +6745,9 @@
             font-size: 30px;
             font-weight: 900;
             line-height: 1.2;
-            max-width: 340px;
+            min-width: 0;
+            max-width: 100%;
+            overflow-wrap: anywhere;
         }
 
         .ui-detail-meta-inline {
@@ -8163,16 +8182,30 @@
                 gap: 16px;
             }
 
-            .ui-detail-hero,
-            .ui-detail-hero.has-long-year,
-            .ui-detail-hero.has-extra-long-year {
+            .ui-detail-hero {
                 grid-column: auto;
                 grid-row: auto;
                 grid-template-columns: minmax(0, 1fr);
                 grid-template-rows: auto;
                 gap: 10px;
                 padding: 0;
-                --ui-detail-year-column: auto;
+            }
+
+            .ui-detail-topline {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto;
+                gap: 10px;
+            }
+
+            .ui-detail-context {
+                width: auto;
+                min-width: 0;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto;
+                gap: 10px;
             }
 
             .ui-detail-year,
@@ -8188,14 +8221,12 @@
                 grid-column: auto;
                 grid-row: auto;
                 width: auto;
-                max-height: none;
                 margin-top: 0;
                 font-size: clamp(20px, 6vw, 30px);
-                display: block;
-                overflow: visible;
             }
 
             .ui-avatar-strip {
+                display: grid;
                 grid-column: auto;
                 grid-row: auto;
                 grid-template-columns: minmax(0, 1fr);
@@ -8204,6 +8235,7 @@
             }
 
             .ui-avatar {
+                min-width: 0;
                 grid-template-columns: 72px minmax(0, 1fr);
                 gap: 12px;
             }
@@ -8215,8 +8247,11 @@
 
             .ui-avatar-name,
             .ui-avatar-role {
+                width: auto;
+                max-width: 100%;
                 white-space: normal;
                 overflow: visible;
+                overflow-wrap: anywhere;
             }
 
             .ui-detail-image {
@@ -8270,10 +8305,7 @@
                 background: var(--accent);
             }
 
-            .ui-detail-heading,
-            .ui-detail-heading.is-location-overlap-risk,
-            .ui-detail-heading.has-long-year,
-            .ui-detail-heading.has-extra-long-year {
+            .ui-detail-heading {
                 grid-column: auto;
                 grid-row: auto;
                 padding: 0;
@@ -9205,9 +9237,7 @@
                 gap: 16px;
             }
 
-            .ui-detail-hero,
-            .ui-detail-hero.has-long-year,
-            .ui-detail-hero.has-extra-long-year {
+            .ui-detail-hero {
                 grid-column: auto;
                 grid-row: auto;
                 display: grid;
@@ -9215,7 +9245,23 @@
                 grid-template-rows: auto;
                 gap: 10px;
                 padding: 0;
-                --ui-detail-year-column: auto;
+            }
+
+            .ui-detail-topline {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto;
+                gap: 10px;
+            }
+
+            .ui-detail-context {
+                width: auto;
+                min-width: 0;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto;
+                gap: 10px;
             }
 
             .ui-detail-year,
@@ -9232,10 +9278,7 @@
                 grid-column: auto;
                 grid-row: auto;
                 width: auto;
-                max-height: none;
                 margin-top: 0;
-                display: block;
-                overflow: visible;
                 font-size: clamp(20px, 6vw, 30px);
             }
 
@@ -9250,6 +9293,7 @@
             }
 
             .ui-avatar {
+                min-width: 0;
                 grid-template-columns: 72px minmax(0, 1fr);
                 gap: 12px;
             }
@@ -9261,9 +9305,12 @@
 
             .ui-avatar-name,
             .ui-avatar-role {
+                width: auto;
+                max-width: 100%;
                 white-space: normal;
                 overflow: visible;
                 text-overflow: clip;
+                overflow-wrap: anywhere;
             }
 
             .ui-detail-image {
@@ -9279,10 +9326,7 @@
                 aspect-ratio: 4 / 3;
             }
 
-            .ui-detail-heading,
-            .ui-detail-heading.is-location-overlap-risk,
-            .ui-detail-heading.has-long-year,
-            .ui-detail-heading.has-extra-long-year {
+            .ui-detail-heading {
                 grid-column: auto;
                 grid-row: auto;
                 padding: 0;
@@ -9646,9 +9690,7 @@
                 gap: 12px;
             }
 
-            .ui-detail-hero,
-            .ui-detail-hero.has-long-year,
-            .ui-detail-hero.has-extra-long-year {
+            .ui-detail-hero {
                 display: grid;
                 grid-template-columns: minmax(0, 1fr);
                 grid-template-rows: auto auto auto;
@@ -9752,7 +9794,7 @@
 </head>
 <body>
     <div class="stage-viewport">
-        <div class="single-stage" id="singleStage">
+        <div class="single-stage is-ui-browser" id="singleStage">
             <header class="stage-topbar">
                 <div class="brand-lockup">
                     <img
@@ -11342,28 +11384,15 @@
                 .join('  ');
         }
 
-        function buildLocationHtml(location) {
-            const name = escapeHtml(location && location.name ? location.name : '');
-            const country = escapeHtml(location && location.country ? location.country : '');
+        function buildLocationText(location) {
+            const name = location && location.name ? location.name : '';
+            const country = location && location.country ? location.country : '';
             if (name && country) {
-                return `${name}<br>${country}`;
+                return `${name}${uiText(', ', '，')}${country}`;
             }
             if (name) return name;
             if (country) return country;
             return tx('locationPending');
-        }
-
-        function shouldOffsetUiDetailHeading(yearText, location) {
-            const locationText = buildLocationLine(location).replace(/\s+/g, '');
-            const normalizedYear = String(yearText || '').replace(/\s+/g, '');
-            return locationText.length >= 18 || (normalizedYear.length >= 8 && locationText.length >= 12);
-        }
-
-        function getUiDetailLongYearClass(yearText) {
-            const normalized = String(yearText || '').replace(/\s+/g, '');
-            if (normalized.length >= 9) return ' has-extra-long-year';
-            if (normalized.length >= 8 || /[-/]/.test(String(yearText || ''))) return ' has-long-year';
-            return '';
         }
 
         function extractStageContext(vm) {
@@ -13944,7 +13973,9 @@
             const stageContext = extractStageContext(vm);
             refs.summaryKicker.textContent = stageContext.label;
             refs.summaryTitle.textContent = vm.title || '';
-            refs.summaryLocation.innerHTML = buildLocationHtml(vm.location);
+            const locationText = buildLocationText(vm.location);
+            refs.summaryLocation.textContent = locationText;
+            refs.summaryLocation.title = locationText;
             refs.summaryBody.innerHTML = buildSummaryHtml(vm);
             refs.storyYear.textContent = vm.year || '';
         }
@@ -14124,13 +14155,21 @@
 
         function getQuizItems(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
-            const rawQuizzes = Array.isArray(vm && vm.quizzes)
-                ? vm.quizzes
-                : Array.isArray(raw.quizzes)
-                  ? raw.quizzes
-                  : raw.quiz
-                    ? [raw.quiz]
-                    : [];
+            const vmQuizzes = Array.isArray(vm && vm.quizzes) ? vm.quizzes : [];
+            const milestoneQuizzes = Array.isArray(raw.quizzes) ? raw.quizzes : raw.quiz ? [raw.quiz] : [];
+            let rawQuizzes = vmQuizzes.length ? vmQuizzes : milestoneQuizzes;
+
+            if (!rawQuizzes.length && raw.archiveEventId) {
+                const eventQuizMilestone = allMilestones.find((milestone) => {
+                    if (!milestone || milestone.archiveEventId !== raw.archiveEventId) return false;
+                    return (Array.isArray(milestone.quizzes) && milestone.quizzes.length > 0) || Boolean(milestone.quiz);
+                });
+                if (eventQuizMilestone) {
+                    rawQuizzes = Array.isArray(eventQuizMilestone.quizzes)
+                        ? eventQuizMilestone.quizzes
+                        : [eventQuizMilestone.quiz];
+                }
+            }
 
             return rawQuizzes.map((quiz, quizIndex) => {
                 if (!quiz || typeof quiz !== 'object') return null;
@@ -14622,8 +14661,13 @@
         }
 
         function getCompletionQuizKey(vm) {
-            const rawId = vm && vm.raw && vm.raw.id ? vm.raw.id : '';
-            return rawId || `${activeStorylineId}:${currentIndex}`;
+            const raw = vm && vm.raw ? vm.raw : {};
+            return raw.archiveEventId || raw.id || `${activeStorylineId}:${currentIndex}`;
+        }
+
+        function getCompletionQuizViewKey(vm) {
+            const quizKey = getCompletionQuizKey(vm);
+            return quizKey ? `${activeStorylineId}:${quizKey}` : '';
         }
 
         function getCompletionQuizClock() {
@@ -14632,25 +14676,22 @@
                 : Date.now();
         }
 
+        function resetCompletionQuizView() {
+            completionQuizViewKey = '';
+            completionQuizViewStartedAt = 0;
+        }
+
         function markCompletionQuizView(vm) {
-            const quizKey = getCompletionQuizKey(vm);
-            if (quizKey === completionQuizViewKey) return;
-            completionQuizViewKey = quizKey;
+            const viewKey = getCompletionQuizViewKey(vm);
+            if (viewKey === completionQuizViewKey) return;
+            completionQuizViewKey = viewKey;
             completionQuizViewStartedAt = getCompletionQuizClock();
         }
 
         function hasCompletionQuizDwellElapsed(vm) {
-            const quizKey = getCompletionQuizKey(vm);
-            if (!quizKey) return false;
-            if (quizKey !== completionQuizViewKey) {
-                markCompletionQuizView(vm);
-                return false;
-            }
+            const viewKey = getCompletionQuizViewKey(vm);
+            if (!viewKey || viewKey !== completionQuizViewKey) return false;
             return getCompletionQuizClock() - completionQuizViewStartedAt >= COMPLETION_QUIZ_MIN_DWELL_MS;
-        }
-
-        function isTopAchievementStorylineActive() {
-            return activeStorylineId === 'bench-council-ai100';
         }
 
         function hasOpenQuizModal() {
@@ -14664,7 +14705,7 @@
             activeQuizMilestoneKey = getCompletionQuizKey(vm);
             pendingQuizAction = typeof onComplete === 'function' ? onComplete : null;
             refs.quizModalEyebrow.textContent = uiText('Review checkpoint', '浏览检查点');
-            refs.quizModalTitle.textContent = uiText('Before you move on', '进入下一个成就前');
+            refs.quizModalTitle.textContent = uiText('Before leaving this event', '离开当前事件前');
             refs.quizModalSubtitle.textContent = vm && vm.title
                 ? uiText(`You just finished: ${vm.title}`, `你刚浏览完：${vm.title}`)
                 : uiText('A quick question before continuing.', '继续前来一道快速问答。');
@@ -14768,10 +14809,11 @@
         }
 
         function maybeOpenCompletionQuiz(onComplete) {
-            if (!isTopAchievementStorylineActive()) return false;
+            if (isUiBrowserActive() && uiBrowserMode !== 'detail') return false;
             const vm = getVm(currentIndex);
+            const quizzes = getQuizItems(vm);
             const quizKey = getCompletionQuizKey(vm);
-            if (!quizKey || !hasCompletionQuizDwellElapsed(vm) || completedQuizMilestoneKeys.has(quizKey) || getQuizItems(vm).length === 0) {
+            if (!quizzes.length || !quizKey || !hasCompletionQuizDwellElapsed(vm) || completedQuizMilestoneKeys.has(quizKey)) {
                 return false;
             }
             return openCompletionQuiz(vm, onComplete);
@@ -16923,7 +16965,7 @@
                     <div class="ui-map-surface">
                         <div class="ui-map-geo-layer">
                             <div class="ui-map-dots" aria-hidden="true">${buildUiMapDots(events)}</div>
-                            ${UI_CONTINENTS.map((continent) => {
+                            ${UI_CONTINENTS.filter((continent) => (continentCounts.get(continent.id) || 0) > 0).map((continent) => {
                                 const count = continentCounts.get(continent.id) || 0;
                                 const active = uiSelectedContinent === continent.id ? ' active' : '';
                                 return `
@@ -17382,6 +17424,11 @@
 
         function returnFromUiDetail(options = {}) {
             if (!isUiBrowserActive() || uiBrowserMode !== 'detail') return false;
+            if (!options.skipCompletionQuiz && maybeOpenCompletionQuiz(() => {
+                returnFromUiDetail({ ...options, skipCompletionQuiz: true });
+            })) {
+                return true;
+            }
             if (options.preferHistory && !uiHistoryPopInProgress && isCurrentUiDetailHistoryEntry()) {
                 window.history.back();
                 return true;
@@ -17720,20 +17767,25 @@
             const yearText = String(vm.year || '');
             const detailYearText = yearText.replace(/\s*\/\s*/g, ' / ');
             const detailYearClass = detailYearText.length > 10 ? ' is-multiline' : '';
-            const longYearClass = getUiDetailLongYearClass(detailYearText);
             const locationLine = buildLocationLine(vm.location);
-            const detailHeadingClass = shouldOffsetUiDetailHeading(detailYearText, vm.location)
-                ? ' is-location-overlap-risk'
-                : '';
+            const locationText = buildLocationText(vm.location);
             const imageCaptionTitle = imageMeta.name || title;
             const imageCaptionDetail = imageMeta.role || '';
             refs.uiBrowserMain.innerHTML = `
                 <div class="ui-detail">
                     <section class="ui-detail-panel">
                         <div class="ui-detail-left">
-                            <div class="ui-detail-hero${longYearClass}">
-                                <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
-                                <div class="ui-detail-place">${buildLocationHtml(vm.location)}</div>
+                            <div class="ui-detail-hero">
+                                <div class="ui-detail-topline">
+                                    <div class="ui-detail-context">
+                                        <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
+                                        <div class="ui-detail-place" title="${escapeHtml(locationText)}">${escapeHtml(locationText)}</div>
+                                    </div>
+                                    <div class="ui-detail-heading">
+                                        <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                        <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
+                                    </div>
+                                </div>
                                 <div class="ui-avatar-strip">${buildUiAvatarHtml(vm)}</div>
                             </div>
                             <div class="ui-detail-image">
@@ -17748,10 +17800,6 @@
                             </div>
                         </div>
                         <div class="ui-detail-center">
-                            <div class="ui-detail-heading${detailHeadingClass}${longYearClass}">
-                                <div class="ui-detail-title">${escapeHtml(title)}</div>
-                                <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
-                            </div>
                             <div class="ui-detail-description">${buildSummaryHtml(vm)}</div>
                         </div>
                     </section>
@@ -17881,7 +17929,11 @@
                 eligible: analyticsOptions.eligible !== false
             });
             currentMilestoneViewedAt = Date.now();
-            markCompletionQuizView(vm);
+            if (isUiBrowserActive() && uiBrowserMode !== 'detail') {
+                resetCompletionQuizView();
+            } else {
+                markCompletionQuizView(vm);
+            }
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
             const branchTimelineActive = isBranchTimelineActive();
