@@ -138,6 +138,7 @@
         let config = normalizeConfig(initialConfig);
         let adapter = createNoopAdapter();
         let currentView = null;
+        let currentStorylineView = null;
         let hasInteraction = false;
         let sessionStarted = false;
         let lifecycleBound = false;
@@ -218,6 +219,7 @@
             engagementTimerId = scope.setTimeout(() => {
                 engagementTimerId = null;
                 pauseMilestoneView();
+                pauseStorylineView();
             }, config.engagementTimeoutMs);
         }
 
@@ -310,6 +312,57 @@
             resumeMilestoneView();
         }
 
+        function pauseStorylineView() {
+            if (!currentStorylineView || currentStorylineView.segmentStartedAt === null) return;
+            currentStorylineView.accumulatedMs = getViewDuration(currentStorylineView);
+            currentStorylineView.segmentStartedAt = null;
+        }
+
+        function resumeStorylineView() {
+            if (
+                !currentStorylineView ||
+                currentStorylineView.segmentStartedAt !== null ||
+                !hasInteraction ||
+                !isActivelyEngaged() ||
+                !isDocumentVisible()
+            )
+                return;
+            currentStorylineView.segmentStartedAt = now();
+        }
+
+        function endStorylineView(reason = 'change') {
+            if (!currentStorylineView) return;
+            pauseStorylineView();
+            send('storyline_leave', {
+                ...currentStorylineView.metadata,
+                duration_seconds: Math.max(0, Math.round(getViewDuration(currentStorylineView) / 1000)),
+                leave_reason: reason
+            });
+            currentStorylineView = null;
+        }
+
+        function startStorylineView(metadata, options = {}) {
+            if (!isEnabled()) return;
+            const normalizedMetadata = normalizeEventData(metadata);
+            const viewKey = [
+                normalizedMetadata.storyline_id || '',
+                normalizedMetadata.storyline_layout || '',
+                normalizedMetadata.layout || config.context.layout || ''
+            ].join(':');
+            if (currentStorylineView && currentStorylineView.key === viewKey) return;
+
+            endStorylineView(options.changeReason || 'change');
+            currentStorylineView = {
+                key: viewKey,
+                metadata: normalizedMetadata,
+                accumulatedMs: 0,
+                segmentStartedAt: null
+            };
+            send('storyline_view', normalizedMetadata);
+            if (options.eligible === false) return;
+            resumeStorylineView();
+        }
+
         function markInteraction() {
             if (!isEnabled()) return;
             const interactionAt = now();
@@ -329,19 +382,23 @@
             lastInteractionAt = interactionAt;
             scheduleEngagementPause();
             resumeMilestoneView();
+            resumeStorylineView();
         }
 
         function handleVisibilityChange() {
             if (isDocumentVisible()) {
                 resumeMilestoneView();
+                resumeStorylineView();
             } else {
                 pauseMilestoneView();
+                pauseStorylineView();
             }
         }
 
         function handlePageHide() {
             clearEngagementTimer();
             endMilestoneView('pagehide');
+            endStorylineView('pagehide');
             flush();
         }
 
@@ -408,6 +465,7 @@
         function destroy() {
             clearEngagementTimer();
             endMilestoneView('destroy');
+            endStorylineView('destroy');
             destroyed = true;
             queue.length = 0;
         }
@@ -416,13 +474,17 @@
             configure,
             destroy,
             endMilestoneView,
+            endStorylineView,
             flush,
             markInteraction,
             pauseMilestoneView,
+            pauseStorylineView,
             registerAdapter,
             resumeMilestoneView,
+            resumeStorylineView,
             setContext,
             startMilestoneView,
+            startStorylineView,
             track,
             trackOnce
         };

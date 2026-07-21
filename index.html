@@ -10985,7 +10985,7 @@
                     const storylineId = button.dataset.storylineId || '';
                     if (!storylineId || button.disabled) return;
                     closeStorylinePicker({ skipFocus: true });
-                    setActiveStoryline(storylineId, { updateUrl: true });
+                    setActiveStoryline(storylineId, { updateUrl: true, analyticsSource: 'picker' });
                 });
             });
         }
@@ -10995,6 +10995,10 @@
             closeAboutModal({ skipFocus: true });
             renderStorylinePickerOptions();
             refs.storylineModal.classList.remove('is-hidden');
+            trackAnalyticsEvent('storyline_picker_open', {
+                storyline_id: activeStorylineId,
+                option_count: STORYLINE_OPTIONS.filter((option) => hasStorylineMilestones(option.id)).length
+            });
             window.setTimeout(() => {
                 const activeButton = refs.storylineOptionGrid.querySelector('.storyline-option.active')
                     || refs.storylineOptionGrid.querySelector('.storyline-option:not(:disabled)');
@@ -11121,7 +11125,9 @@
                 return;
             }
 
-            if (storylineId !== activeStorylineId) {
+            const previousStorylineId = activeStorylineId;
+            const storylineChanged = storylineId !== previousStorylineId;
+            if (storylineChanged) {
                 activeRegionFilter = '';
             }
 
@@ -11129,6 +11135,15 @@
             if (!nextMilestones.length) {
                 renderStorylineSelect();
                 return;
+            }
+
+            if (storylineChanged) {
+                trackAnalyticsEvent('storyline_switch', {
+                    storyline_id: storylineId,
+                    from_storyline_id: previousStorylineId,
+                    to_storyline_id: storylineId,
+                    selection_source: options.analyticsSource || 'programmatic'
+                });
             }
 
             activeStorylineId = storylineId;
@@ -11146,6 +11161,9 @@
             renderStorylineSelect();
             if (options.updateUrl) {
                 updateStorylineUrl(activeStorylineId);
+            }
+            if (storylineChanged) {
+                startAnalyticsStorylineView(activeStorylineId, options.analyticsSource || 'programmatic');
             }
             renderPage(currentIndex);
             resetPortraitScrollPosition();
@@ -11259,6 +11277,24 @@
                 getAnalyticsMilestoneMetadata(vm, options.navigationSource),
                 { eligible: options.eligible !== false }
             );
+        }
+
+        function getStorylineAnalyticsMetadata(storylineId, entrySource = 'render') {
+            const option = getStorylineOption(storylineId);
+            return {
+                storyline_id: storylineId,
+                storyline_layout: option && option.layout ? option.layout : '',
+                storyline_name: option ? getStorylineLabel(option) : storylineId,
+                event_count: getStorylineMilestones(storylineId).length,
+                entry_source: entrySource,
+                layout: 'single'
+            };
+        }
+
+        function startAnalyticsStorylineView(storylineId, entrySource) {
+            if (!analytics || !storylineId) return;
+            analytics.setContext({ storyline_id: storylineId });
+            analytics.startStorylineView(getStorylineAnalyticsMetadata(storylineId, entrySource));
         }
 
         function trackAnalyticsEvent(eventName, eventData) {
@@ -18324,7 +18360,10 @@
             renderStorylineSelect();
             if (refs.storylineSelect) {
                 refs.storylineSelect.addEventListener('change', () => {
-                    setActiveStoryline(refs.storylineSelect.value, { updateUrl: true });
+                    setActiveStoryline(refs.storylineSelect.value, {
+                        updateUrl: true,
+                        analyticsSource: 'native_select'
+                    });
                 });
             }
             if (refs.storylineTrigger) refs.storylineTrigger.addEventListener('click', openStorylinePicker);
@@ -18433,6 +18472,10 @@
             initGlobe();
             initSwipeNavigation();
             initAutoHideScrollbars();
+            startAnalyticsStorylineView(
+                activeStorylineId,
+                requestedStorylineId && requestedStorylineId === activeStorylineId ? 'url' : 'default'
+            );
             renderPage(currentIndex);
             if (isMobileQuizRequest()) {
                 openMobileQuiz();
