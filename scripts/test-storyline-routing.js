@@ -71,6 +71,51 @@ console.log('PASS archive deep-learning detail lookup');
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 assert.match(
     indexHtml,
+    /class="single-stage is-ui-browser" id="singleStage"/,
+    'the default document should paint the unified UI shell before JavaScript initialization'
+);
+assert.match(
+    indexHtml,
+    /UI_CONTINENTS\.filter\(\(continent\) => \(continentCounts\.get\(continent\.id\) \|\| 0\) > 0\)\.map/,
+    'the event map should omit continent controls whose event count is zero'
+);
+assert.match(
+    indexHtml,
+    /\.ui-detail-topline\s*\{[\s\S]*?grid-template-columns:\s*fit-content\(829px\) minmax\(300px, 1fr\)[\s\S]*?column-gap:\s*67px[\s\S]*?\.ui-detail-context\s*\{[\s\S]*?min-width:\s*564px[\s\S]*?max-width:\s*829px/,
+    'desktop detail titles should start at the body column and move right only when the context requires it'
+);
+assert.match(
+    indexHtml,
+    /\.ui-detail-heading\s*\{[\s\S]*?grid-column:\s*2[\s\S]*?min-width:\s*0[\s\S]*?width:\s*100%[\s\S]*?max-width:\s*100%/,
+    'desktop detail titles should occupy the same second content column as the body copy without expanding that column'
+);
+assert.match(
+    indexHtml,
+    /\.ui-detail-place\s*\{[\s\S]*?width:\s*auto[\s\S]*?max-height:\s*2\.6em[\s\S]*?overflow:\s*hidden[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?-webkit-line-clamp:\s*2/,
+    'detail locations should use the available width and truncate only after two lines'
+);
+assert.match(
+    indexHtml,
+    /function buildLocationText\(location\)[\s\S]*?return `\$\{name\}\$\{uiText\(', ', '，'\)\}\$\{country\}`;/,
+    'location names and countries should flow naturally instead of being split by a forced line break'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /function buildLocationHtml\(/,
+    'plain location text should not pass through a redundant HTML rendering helper'
+);
+assert.match(
+    indexHtml,
+    /class="ui-detail-place" title="\$\{escapeHtml\(locationText\)\}"/,
+    'detail locations should expose their full value on hover'
+);
+assert.match(
+    indexHtml,
+    /\.ui-avatar-name,[\s\S]*?\.ui-avatar-role\s*\{[\s\S]*?width:\s*max-content[\s\S]*?overflow:\s*visible[\s\S]*?text-overflow:\s*clip/,
+    'desktop detail figure names and roles should use their content width without ellipsis'
+);
+assert.match(
+    indexHtml,
     /function updateStorylineUrl[\s\S]*?searchParams\.delete\('uiMode'\)[\s\S]*?searchParams\.delete\('event'\)/,
     'storyline changes should clear stale detail URL parameters'
 );
@@ -79,7 +124,37 @@ assert.match(
     /requestedUiMode === 'detail'[\s\S]*?isUiBrowserActive\(\)[\s\S]*?normalizedUrl\.searchParams\.delete\('uiMode'\)/,
     'initial detail URLs should only restore inside the UI browser and otherwise normalize themselves'
 );
-console.log('PASS storyline detail URL normalization');
+assert.doesNotMatch(
+    indexHtml,
+    /function isTopAchievementStorylineActive|activeStorylineId === 'bench-council-ai100'[\s\S]{0,300}maybeOpenCompletionQuiz/,
+    'completion quizzes should not be restricted to the AI100 storyline'
+);
+assert.match(
+    indexHtml,
+    /function maybeOpenCompletionQuiz\(onComplete\)[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?const quizzes = getQuizItems\(vm\)[\s\S]*?!quizzes\.length/,
+    'completion quizzes should depend on event quiz data and stay disabled on the unified map level'
+);
+assert.match(
+    indexHtml,
+    /function getQuizItems\(vm\)[\s\S]*?raw\.archiveEventId[\s\S]*?allMilestones\.find[\s\S]*?milestone\.archiveEventId !== raw\.archiveEventId/,
+    'quiz lookup should fall back to another storyline variant of the same archive event'
+);
+assert.match(
+    indexHtml,
+    /function returnFromUiDetail\(options = \{\}\)[\s\S]*?!options\.skipCompletionQuiz && maybeOpenCompletionQuiz[\s\S]*?returnFromUiDetail\(\{ \.\.\.options, skipCompletionQuiz: true \}\)/,
+    'leaving a unified event detail should pass through the completion quiz check'
+);
+assert.match(
+    indexHtml,
+    /const COMPLETION_QUIZ_MIN_DWELL_MS = 15 \* 1000[\s\S]*?function hasCompletionQuizDwellElapsed\(vm\)[\s\S]*?getCompletionQuizClock\(\) - completionQuizViewStartedAt >= COMPLETION_QUIZ_MIN_DWELL_MS/,
+    'completion quizzes should require at least 15 seconds in the current event detail session'
+);
+assert.match(
+    indexHtml,
+    /if \(isUiBrowserActive\(\) && uiBrowserMode !== 'detail'\) \{[\s\S]*?resetCompletionQuizView\(\)[\s\S]*?\} else \{[\s\S]*?markCompletionQuizView\(vm\)/,
+    'the unified map level should reset quiz dwell time while event details start it'
+);
+console.log('PASS unified UI boot state and storyline detail URL normalization');
 
 assert.match(
     indexHtml,
