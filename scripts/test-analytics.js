@@ -172,7 +172,12 @@ assert.match(umamiConfigSource, /websiteId: ['"][^'"]*['"]/);
 assert.match(umamiConfigSource, /https:\/\/museum\.bza\.edu\.cn\/umami\/script\.js/);
 assert.match(umamiConfigSource, /hostUrl: 'https:\/\/museum\.bza\.edu\.cn\/umami'/);
 
-const disabledConfigContext = vm.createContext({});
+const disabledConfigContext = vm.createContext({
+    AI_HISTORY_UMAMI_CONFIG: {
+        enabled: false,
+        websiteId: ''
+    }
+});
 vm.runInContext(umamiConfigSource, disabledConfigContext);
 vm.runInContext(analyticsConfigSource, disabledConfigContext);
 assert.equal(disabledConfigContext.AI_HISTORY_ANALYTICS_CONFIG.provider, 'none');
