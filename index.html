@@ -16641,6 +16641,7 @@
 
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
+            if (getMilestoneStorylineId(vm && vm.raw) === 'humanistic-cycle') return candidates;
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
             return sideImageUrl ? candidates.filter((url) => url !== sideImageUrl) : candidates;
         }
@@ -17701,11 +17702,12 @@
 
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
-            const mediaHtml = buildUiMediaHtml(vm);
+            const isHumanisticCycle = getMilestoneStorylineId(raw) === 'humanistic-cycle';
+            const mediaHtml = isHumanisticCycle ? '' : buildUiMediaHtml(vm);
             const mediaUsesConceptFallback = Boolean(mediaHtml && !vm.videoEmbedUrl && !mediaHtml.includes('ui-side-visual') && !mediaHtml.includes('ui-side-demo-visual'));
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
-                buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
+                isHumanisticCycle ? '' : buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
                 mediaUsesConceptFallback ? '' : buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
                 buildUiSideSectionHtml('ui-quote-card', uiText('Quote Summary', '引言摘要'), quoteSection ? buildUiSectionCardsHtml([quoteSection], { hiddenLabels: [tx('quoteExcerpt')] }) : ''),
                 buildUiSideSectionHtml('ui-commentary-card', uiText('Background', '背景解读'), buildUiSectionCardsHtml(getUiBackgroundSections(vm), { hiddenLabels: [tx('background')] }))
