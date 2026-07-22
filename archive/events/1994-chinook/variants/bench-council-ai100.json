@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
-    "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+    "zh": "<p>乔纳森·谢弗领导的阿尔伯塔大学团队开发 Chinook，把开局数据库、alpha-beta 搜索、人工设计的局面评估和逐步扩大的残局数据库结合起来。系统先达到世界冠军级竞技水平，再把重点转向系统枚举和证明标准跳棋的博弈结果。</p><p>2007 年团队报告跳棋被“弱求解”：从标准初始局面开始，在双方完美对弈时结果为和棋。证明依赖计算机生成的大规模搜索与残局知识，而不是单场比赛表现。Chinook 由此把游戏 AI 从击败强手推进到数学求解，也展示了软件、计算资源和长期项目积累如何共同完成超大搜索。</p>",
+    "en": "<p>Jonathan Schaeffer's University of Alberta team developed Chinook by combining opening databases, alpha-beta search, hand-designed position evaluation, and increasingly large endgame databases. The system first reached world-championship competitive strength and then shifted toward systematic enumeration and proof of the outcome of standard checkers.</p><p>In 2007, the team reported that checkers had been weakly solved: from the standard initial position, perfect play by both sides leads to a draw. The proof depended on large computer-generated searches and endgame knowledge, not the result of one match. Chinook therefore moved game AI from defeating strong opponents toward mathematical solution and showed how software, computation, and long-term project accumulation can conquer a vast search space.</p>"
   },
   "emphasis": [
     "batch-migration",

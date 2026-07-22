@@ -1,6 +1,6 @@
 # Archive Validation Report
 
-Generated: 2026-07-22T09:56:47.393Z
+Generated: 2026-07-22T10:56:16.639Z
 
 ## Summary
 
@@ -8,7 +8,7 @@ Generated: 2026-07-22T09:56:47.393Z
 - Storylines: 4
 - Variants: 147
 - Claims: 278
-- Sources: 454
+- Sources: 456
 - Assets: 342
 - Quizzes: 118
 - Errors: 0

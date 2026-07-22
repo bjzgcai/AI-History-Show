@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>",
-    "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>"
+    "zh": "<p>道格拉斯·莱纳特于 1984 年启动 Cyc，试图把人类日常推理依赖但通常不会写出的常识显式编码进计算机。知识工程师用 CycL 表示概念、关系、规则和例外，并用“微理论”把在不同时间、地点或假设下成立的知识分隔开。</p><p>Cyc 的目标不是只解决一个专家领域，而是建立可被多种应用调用的大型知识基础和推理引擎。长期人工编码成本、知识一致性和开放世界覆盖范围始终是挑战，但项目持续证明大规模本体、上下文和规则推理可以工程化，也成为符号 AI 与常识推理讨论的重要参照。</p>",
+    "en": "<p>Douglas Lenat launched Cyc in 1984 to encode explicitly the everyday common sense that people rely on but rarely state. Knowledge engineers used CycL to represent concepts, relations, rules, and exceptions, while “microtheories” separated knowledge that holds under different times, places, domains, or assumptions.</p><p>Rather than solving one expert domain, Cyc aimed to build a large knowledge base and inference engine reusable across applications. The cost of manual encoding, consistency across knowledge, and coverage of an open world remained persistent challenges. Even so, the project demonstrated that large ontologies, context management, and rule-based reasoning could be engineered at unusual scale and became a major reference point for symbolic AI and common-sense reasoning.</p>"
   },
   "emphasis": [
     "batch-migration",

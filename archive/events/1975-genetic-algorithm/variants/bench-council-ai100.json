@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>约翰·霍兰德在 1975 年的《自然与人工系统中的适应》中系统化了遗传算法框架。算法不沿着单一路径直接修改一个解，而是维护由编码候选方案组成的种群，依据适应度选择个体，再通过交叉和变异产生下一代。</p><p>这种群体搜索能同时探索多个区域，并在没有可用梯度、目标函数不规则或设计变量离散时寻找较优方案。遗传算法不是对生物进化的完整模拟，也不能保证快速找到全局最优解；它的长期价值在于把选择、重组和随机变异变成通用优化工具，并启发了更广泛的进化计算方法。</p>",
+    "en": "<p>John Holland systematized the genetic-algorithm framework in his 1975 book <em>Adaptation in Natural and Artificial Systems</em>. Rather than modifying one solution along a single path, a genetic algorithm maintains a population of encoded candidates, selects individuals according to fitness, and produces new generations through crossover and mutation.</p><p>Population-based search can explore several regions at once and is useful when gradients are unavailable, objectives are irregular, or design variables are discrete. Genetic algorithms are not complete simulations of biological evolution and do not guarantee rapid discovery of a global optimum. Their lasting value is turning selection, recombination, and stochastic variation into general optimization tools and inspiring the wider field of evolutionary computation.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"

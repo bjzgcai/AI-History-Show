@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>",
-    "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>"
+    "zh": "<p>Microsoft COCO 在 2014 年把视觉基准重点放在自然场景中的常见物体，而不是居中、背景简单的单个目标。数据集为同一图像中的多个实例提供类别、边界框和像素级分割，并加入图像字幕；物体经常较小、被遮挡，并与其他对象共同出现。</p><p>统一数据和评测推动目标检测、实例分割、关键点和字幕生成在共享生态中发展，也让模型必须理解“物体处于什么上下文”。COCO 的类别和图像仍不能代表全部视觉世界，标注规范也会影响比较结果；但其多任务、实例级设计成为现代视觉研究的重要基础设施。</p>",
+    "en": "<p>Microsoft COCO shifted visual benchmarking in 2014 toward common objects in natural scenes rather than single centered targets against simple backgrounds. The dataset annotates multiple instances in the same image with categories, bounding boxes, and pixel-level masks and also includes image captions. Objects are often small, occluded, and shown in interaction with other objects.</p><p>Common data and evaluation accelerated object detection, instance segmentation, keypoints, and captioning within one ecosystem and required models to reason about the context in which objects appear. COCO's categories and images still do not represent the entire visual world, and annotation conventions affect comparisons. Its multitask, instance-level design nevertheless became core infrastructure for modern computer vision.</p>"
   },
   "emphasis": [
     "batch-migration",

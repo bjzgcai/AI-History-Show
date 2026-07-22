@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>",
-    "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>"
+    "zh": "<p>韩松、毛巍和戴利提出 Deep Compression，用三阶段流水线缩小训练后的神经网络。首先剪除接近零或贡献较小的连接并重新训练；随后通过训练式量化让许多权重共享少量码本值；最后用 Huffman 编码压缩索引和量化参数。</p><p>论文表明 AlexNet、VGG 等大型模型可以显著减少存储和内存访问，同时基本保持准确率。真正加速仍取决于硬件和软件能否高效利用稀疏结构，但这项工作把模型大小、能耗和部署成本变成一等研究目标，并奠定剪枝与量化结合的边缘 AI 路线。</p>",
+    "en": "<p>Song Han, Huizi Mao, and William Dally introduced Deep Compression as a three-stage pipeline for reducing trained neural networks. It first prunes connections that are near zero or contribute little and retrains the network. Trained quantization then makes many weights share a small codebook of values, and Huffman coding compresses the resulting indices and parameters.</p><p>The paper showed that large models such as AlexNet and VGG could require far less storage and memory access while largely preserving accuracy. Actual speedups still depend on hardware and software that can exploit sparsity efficiently. The work nevertheless made model size, energy, and deployment cost first-class research objectives and established the influential combination of pruning and quantization for edge AI.</p>"
   },
   "emphasis": [
     "batch-migration",

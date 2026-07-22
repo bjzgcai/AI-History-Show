@@ -32,7 +32,7 @@
     },
     "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "secondary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."

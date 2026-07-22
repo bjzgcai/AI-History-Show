@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>",
-    "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>"
+    "zh": "<p>IBM Watson 为《危险边缘！》问答比赛构建 DeepQA 流水线：系统先分析包含双关、隐喻和类别提示的问题，生成多个候选答案，再从百科、词典、新闻和其他语料中寻找证据。数百种分析器分别评估时间、地理、文本匹配和来源可靠性等线索，机器学习模型据此合并分数并估计置信度。</p><p>2011 年 Watson 战胜两位顶尖冠军，证明开放域问答可以通过大规模并行证据排序和精细系统工程达到竞赛水平。它并非依靠单一理解模型，也不意味着具备通用常识；其长期影响在于展示候选生成、证据检索、答案评分与置信决策可以组成可审计的问答架构。</p>",
+    "en": "<p>IBM built Watson's DeepQA pipeline for the quiz show <em>Jeopardy!</em>. The system analyzed clues containing wordplay, metaphor, and category hints, generated many candidate answers, and searched encyclopedias, dictionaries, news, and other corpora for evidence. Hundreds of analyzers scored temporal, geographic, textual, and source-reliability signals, which machine-learning models combined into answer scores and confidence estimates.</p><p>Watson defeated two leading champions in 2011, showing that open-domain question answering could reach competition level through massively parallel evidence ranking and careful systems engineering. It did not depend on one general understanding model and did not possess broad common sense. Its lasting contribution was demonstrating an auditable architecture joining candidate generation, evidence retrieval, answer scoring, confidence, and action timing.</p>"
   },
   "emphasis": [
     "batch-migration",

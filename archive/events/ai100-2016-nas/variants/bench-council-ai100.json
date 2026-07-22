@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。</p>",
-    "en": "<p>Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.</p>"
+    "zh": "<p>佐普和勒在 2016 年把神经网络架构设计本身表述为强化学习问题。循环控制器依次生成层类型、连接和超参数，候选子网络经过训练后用验证集准确率形成奖励，再通过策略梯度更新控制器，使后续提案更可能包含有效结构。</p><p>早期 NAS 在图像和语言任务上发现有竞争力的架构，证明机器可以搜索部分原本依赖专家经验的设计空间，但每个候选都要训练，计算成本极高。后续研究发展权重共享、可微搜索和多目标优化。NAS 的长期影响在于把准确率、延迟、能耗等设计目标纳入自动优化。</p>",
+    "en": "<p>Barret Zoph and Quoc Le formulated neural-network architecture design itself as a reinforcement-learning problem in 2016. A recurrent controller generated layer types, connections, and hyperparameters sequentially. Candidate child networks were trained and scored by validation accuracy, which became a reward for policy-gradient updates that made promising structural choices more likely.</p><p>Early NAS discovered competitive architectures for vision and language tasks, showing that machines could search parts of a design space previously guided mainly by expert intuition. Training every candidate made the approach extraordinarily expensive. Later work developed weight sharing, differentiable search, and multi-objective optimization. NAS's lasting impact is treating accuracy, latency, energy, and related design goals as variables in an automated optimization process.</p>"
   },
   "emphasis": [
     "batch-migration",

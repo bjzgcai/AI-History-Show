@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>金马和巴在 2014 年提出 Adam，目标是在小批量、噪声大或梯度稀疏的训练条件下，提供计算与内存开销都较低的随机优化方法。Adam 为每个参数维护梯度的一阶矩和二阶矩指数移动平均，并在训练早期进行偏差校正，由此同时获得类似动量的方向积累和自适应步长。</p><p>这种更新规则易于实现，且通常能让新模型较快进入可用训练状态，因此成为深度学习框架中的常用默认选项。Adam 并非对所有任务都优于随机梯度下降，泛化表现也依赖学习率、正则化和调度策略；AdamW 等后续方法进一步改进了权重衰减的处理。</p>",
+    "en": "<p>Diederik Kingma and Jimmy Ba introduced Adam in 2014 as a computationally and memory-efficient stochastic optimizer for minibatch training, noisy objectives, and sparse gradients. Adam maintains exponential moving averages of each parameter's first and second gradient moments and corrects their early bias, combining momentum-like directional memory with adaptive step sizes.</p><p>The update is straightforward to implement and often brings a new model into a useful training regime quickly, so it became a common default in deep-learning frameworks. Adam is not universally better than stochastic gradient descent, and its generalization depends on learning rates, regularization, and schedules. Descendants such as AdamW refined how weight decay is applied.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"

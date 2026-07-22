@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
-    "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+    "zh": "<p>黄高等人在 2016 年公开 DenseNet，把密集块中的每一层与其后所有层直接连接。新层接收前面各层特征图的拼接，而不是只读取上一层输出；它只需产生少量新的特征通道，早期特征则可以被后续层反复复用。</p><p>这些短连接为梯度提供多条直接路径，缓解深层网络的优化困难，并在较少参数下获得有竞争力的准确率。特征拼接会增加显存访问和中间激活成本，因此不一定在所有硬件上最高效；但 DenseNet 把“保留并复用历史特征”推到极致，成为连接设计的重要参照。</p>",
+    "en": "<p>Gao Huang and colleagues released DenseNet in 2016, connecting every layer inside a dense block directly to all later layers. A new layer receives the concatenated feature maps of all preceding layers instead of only the previous output. It can produce a small number of new channels while later layers repeatedly reuse earlier features.</p><p>These short connections give gradients many direct routes, easing optimization in deep networks and delivering competitive accuracy with relatively few parameters. Concatenation can increase memory traffic and the cost of stored activations, so DenseNet is not the most efficient choice on every device. Its extreme commitment to preserving and reusing earlier features nevertheless became an important reference for connectivity design.</p>"
   },
   "emphasis": [
     "batch-migration",

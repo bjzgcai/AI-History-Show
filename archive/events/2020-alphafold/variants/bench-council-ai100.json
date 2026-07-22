@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
-    "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+    "zh": "<p>DeepMind 的 AlphaFold2 在 2020 年 CASP14 盲测中取得突破性精度，并于 2021 年论文中公开系统方法。模型联合处理多序列比对中的进化信息和氨基酸残基对关系，通过 Evoformer 的注意力更新两类表示，再由结构模块直接预测三维坐标并反复精修。</p><p>它使大量蛋白质能够在缺少实验结构时获得高质量预测，AlphaFold 数据库又把结果扩展到大规模开放资源，显著改变结构生物学的日常工作。预测仍不能替代实验验证，也不完整描述动态、配体和所有复合物状态；但它证明深度学习可以解决长期科学瓶颈并直接服务研究。</p>",
+    "en": "<p>DeepMind's AlphaFold2 achieved breakthrough accuracy in the blind CASP14 assessment in 2020, with the system described publicly in a 2021 paper. It jointly processes evolutionary information from multiple-sequence alignments and relationships between amino-acid residue pairs. Attention in the Evoformer updates both representations, and a structure module predicts three-dimensional coordinates with iterative refinement.</p><p>The system supplied high-quality predictions for many proteins lacking experimental structures, and the AlphaFold database expanded those results into a large open resource that changed everyday structural-biology work. Predictions do not replace experimental validation and do not fully represent dynamics, ligands, or every complex state. AlphaFold nevertheless demonstrated that deep learning could overcome a long-standing scientific bottleneck and directly support research.</p>"
   },
   "emphasis": [
     "batch-migration",

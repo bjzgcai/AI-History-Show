@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
-    "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+    "zh": "<p>理查德·萨顿在 1988 年系统化时序差分学习，让智能体能够在序列尚未结束时更新对未来回报的预测。TD 更新把当前价值估计向“即时奖励 + 下一状态的估计价值”移动，因此同时利用真实经验和已有预测进行自举，而不必像蒙特卡洛方法那样等待最终结果。</p><p>这种在线、逐步更新方式适合持续交互，并把动态规划与从样本学习连接起来。TD 误差后来成为 Q-learning、SARSA、actor-critic 和许多深度强化学习算法的核心信号。自举也可能传播估计偏差，与函数逼近和离策略学习结合时还会带来稳定性挑战。</p>",
+    "en": "<p>Richard Sutton systematized temporal-difference learning in 1988 so an agent could update predictions of future return before a sequence had ended. A TD update moves the current value estimate toward the immediate reward plus the estimated value of the next state, bootstrapping from both observed experience and an existing prediction rather than waiting for a final outcome as Monte Carlo methods do.</p><p>This online, step-by-step process suits continuing interaction and connects ideas from dynamic programming with learning from samples. The TD error later became a central signal in Q-learning, SARSA, actor-critic methods, and much of deep reinforcement learning. Bootstrapping can also propagate estimation error and creates important stability challenges when combined with function approximation and off-policy learning.</p>"
   },
   "emphasis": [
     "batch-migration",

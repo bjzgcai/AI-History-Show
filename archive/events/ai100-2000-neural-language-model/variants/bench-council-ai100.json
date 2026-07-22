@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>",
-    "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>"
+    "zh": "<p>本吉奥等人的神经概率语言模型把固定长度上下文中的每个词映射为可学习稠密向量，再由神经网络预测下一个词的概率。词向量与预测器共同训练，使在不同上下文中作用相似的词共享统计强度，而不必为每个 n-gram 组合单独保存计数。</p><p>这种分布式表示缓解了传统语言模型的数据稀疏问题，并把语言建模与表示学习直接连接起来。原始模型仍受固定上下文窗口和大词表 softmax 计算成本限制，但它为 Word2Vec、神经机器翻译和后来的 Transformer 语言模型建立了关键思想：词义可以在预测任务中学习为连续向量。</p>",
+    "en": "<p>Yoshua Bengio and colleagues' neural probabilistic language model mapped each word in a fixed-length context to a learned dense vector, then used a neural network to predict the probability of the next word. The embeddings and predictor were trained together, allowing words with similar roles across contexts to share statistical strength instead of storing a separate count for every n-gram combination.</p><p>This distributed representation reduced the data-sparsity problem of traditional language models and directly connected language modeling with representation learning. The original model still had a fixed context window and an expensive softmax over a large vocabulary. It nevertheless established a key idea for Word2Vec, neural machine translation, and later Transformer language models: word meaning can be learned as continuous vectors through a prediction task.</p>"
   },
   "emphasis": [
     "batch-migration",

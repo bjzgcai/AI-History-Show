@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-22 09:56
+// 生成时间: 2026-07-22 10:56
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -47,8 +47,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2012年，AlexNet 以巨大优势赢得 ImageNet，使深度卷积网络成为现代计算机视觉的中心。深度学习发展线强调数据、GPU 算力、ReLU、dropout 和工程规模共同发挥作用；AI100 资料则把这一事件锚定在 NeurIPS 论文与 ImageNet 挑战赛中，说明这个结果如何让整个领域看见规模化训练的力量。</p>",
-      "en": "<p>In 2012, AlexNet won ImageNet by a large margin and made deep convolutional networks the center of modern computer vision. The deep-learning storyline stresses the combined force of data, GPU computation, ReLU, dropout, and engineering scale; the AI100 account anchors the same event in the NeurIPS paper and the ImageNet challenge, where the result made scale visible to the whole field.</p>"
+      "zh": "<p>2012 年，AlexNet 以巨大优势赢得 ImageNet 图像分类挑战，使深度卷积网络成为计算机视觉无法忽视的方向。它的八个学习层在 GPU 上训练，并结合 ReLU 激活、数据增强、重叠池化和 dropout。单项技术并非全部首次出现，突破来自把它们组织成一个能在 ImageNet 规模上训练的完整系统。</p><p>这一结果推动视觉研究从手工设计特征转向直接从大规模标注数据中学习表示，也确立了持久的工程经验：数据、算力、架构、优化和正则化可以相互放大。后续网络很快超过 AlexNet 的精度，但 2012 年论文仍是规模化深度学习成为领域中心路线的标志。</p>",
+      "en": "<p>In 2012, AlexNet won the ImageNet classification challenge by a large margin and made deep convolutional networks impossible for computer vision researchers to ignore. Its eight learned layers were trained on GPUs with ReLU activations, data augmentation, overlapping pooling, and dropout. No single ingredient was entirely new; the breakthrough came from combining them at ImageNet scale in a system that could actually be trained.</p><p>The result shifted vision research away from hand-designed features toward representations learned directly from large labeled datasets. AlexNet also established a durable engineering lesson: advances in data, compute, architecture, optimization, and regularization can reinforce one another. Later networks quickly surpassed its accuracy, but the 2012 paper remains the event that made scaled deep learning the field's central program.</p>"
     },
     "figures": [
       {
@@ -614,8 +614,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>",
-      "en": "<p>In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems.</p>"
+      "zh": "<p>2017 年的 Transformer 用堆叠的多头自注意力和前馈模块替代循环序列处理。每个词元生成 query、key 和 value 表示，使模型能够并行衡量序列中不同位置的关系；位置编码则补充原本由循环结构携带的顺序信息。最初的编码器—解码器系统面向机器翻译，并通过更高的训练并行度取得强劲结果。</p><p>这一架构让注意力从附着在 RNN 上的辅助模块变成通用计算单元。可扩展的模块后来支撑 BERT、GPT 式语言模型、视觉 Transformer、多模态系统和许多智能体基础。专家通常把 Transformer 视为现代 AI 的定义性架构，同时也指出标准注意力处理超长序列时会带来较高计算开销。</p>",
+      "en": "<p>The 2017 Transformer replaced recurrent sequence processing with stacked multi-head self-attention and feed-forward blocks. Each token forms query, key, and value representations, allowing the model to weigh relationships across a sequence in parallel; positional encodings supply order information that recurrence previously carried. The original encoder-decoder system was designed for machine translation and achieved strong results with substantially more parallel training.</p><p>This architecture made attention a general computational primitive rather than an auxiliary component attached to an RNN. Its scalable blocks later supported BERT, GPT-style language models, vision transformers, multimodal systems, and many agent foundations. Experts generally regard the Transformer as a defining modern AI architecture, while recognizing that its standard attention mechanism can become expensive on very long sequences.</p>"
     },
     "figures": [
       {
@@ -1199,8 +1199,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>",
-      "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>"
+      "zh": "<p>AlphaGo 结合策略网络、价值网络、蒙特卡洛树搜索和强化学习。系统先从职业棋手棋谱中进行监督学习，再通过自我对弈改进策略，并让树搜索把学习到的直觉与显式前瞻结合起来。2016 年《自然》论文报告了它战胜欧洲冠军樊麾，随后以 4 比 1 战胜李世石的比赛让这项成果进入全球公众视野。</p><p>围棋的分支数量和战略跨度极大，长期难以依靠蛮力搜索解决。AlphaGo 证明学习得到的表示可以缩小搜索范围，并评估难以手工编码的局面。它更深远的遗产是神经评估、规划与自我对弈的组合，这一模式影响了后续游戏系统及更广泛的决策研究。</p>",
+      "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4–1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
     },
     "figures": [
       {
@@ -1651,8 +1651,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1950 年，艾伦·图灵把“机器能思考吗？”转化为基于文字对话的行为测试。这个测试让机器智能成为可以通过互动、证据和比较来评估的问题。它的影响至今仍体现在现代 AI 基准测试和人类判断评估中。</p>",
-      "en": "<p>In 1950, Alan Turing turned the question “Can machines think?” into a behavioral test based on typed conversation. The test made machine intelligence something that could be evaluated through interaction, evidence and comparison. Its influence still shows up in modern AI benchmarks and human-judgment evaluations.</p>"
+      "zh": "<p>1950 年，艾伦·图灵在《计算机器与智能》中没有直接为“思考”下定义，而是提出“模仿游戏”：一名评判者通过文字通道与隐藏的人类和机器交谈，再判断谁是谁。这个设计把难以解决的哲学争论转换成可观察、可比较的行为测试。</p><p>图灵测试的重要性不在于给智能提供唯一标准，而在于建立了一种评测思想：限制信息通道、隐藏系统身份，并让人类根据交互表现作出判断。现代研究通常不把它视为完整的智能测量，但人类评测、聊天机器人比较和对抗测试仍延续着这种方法论。</p>",
+      "en": "<p>In 1950, Alan Turing's <em>Computing Machinery and Intelligence</em> avoided defining “thinking” directly and proposed the imitation game instead. A judge communicated by text with a hidden human and machine, then tried to identify them. The design converted a difficult philosophical dispute into an observable comparison of behavior.</p><p>The Turing Test matters less as a single definition of intelligence than as an evaluation pattern: restrict the channel, conceal system identity, and ask people to judge performance through interaction. Modern researchers do not generally treat it as a complete intelligence measure, but human evaluation, chatbot comparison, and adversarial testing still inherit its methodological logic.</p>"
     },
     "figures": [
       {
@@ -2101,8 +2101,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>约翰·麦卡锡的 LISP 为符号 AI 提供了实用编程语言。它把代码和数据都表示为表结构，使递归式符号处理成为可执行的工程工具。这让它自然适合早期以符号、规则和“处理程序的程序”为核心的 AI 系统。</p>",
-      "en": "<p>John McCarthy's LISP gave symbolic AI a practical programming language. It treated code and data as list structures that could be created, transformed and evaluated recursively. That made it a natural tool for early AI systems built around symbols, rules and programs that manipulate programs.</p>"
+      "zh": "<p>约翰·麦卡锡在 1958 年开始设计 LISP，并在 1960 年论文中用 S 表达式和递归函数系统说明这种语言。列表既能表示程序操作的数据，也能表示程序本身；CONS、CAR、CDR、QUOTE、COND 与 EVAL 等少量原语，就能组合出复杂的符号处理过程。</p><p>这种“代码与数据采用同一种结构”的设计，使研究者可以灵活构造定理证明、规划、自然语言和知识表示程序，也推动了交互式开发、垃圾回收等编程实践。LISP 后来形成众多方言；即使 AI 工程转向其他语言，它仍深刻影响函数式编程和可编程符号系统。</p>",
+      "en": "<p>John McCarthy began designing LISP in 1958 and presented its system of S-expressions and recursive functions in a 1960 paper. Lists could represent both the data manipulated by a program and the program itself. A small set of primitives, including CONS, CAR, CDR, QUOTE, COND, and EVAL, could be composed into complex symbolic procedures.</p><p>This shared structure for code and data made it unusually flexible for theorem proving, planning, natural language, and knowledge-representation experiments. LISP also helped establish practices such as interactive development and automatic memory management. Although AI engineering later diversified into many languages, LISP's influence persists in functional programming and programmable symbolic systems.</p>"
     },
     "figures": [
       {
@@ -2513,8 +2513,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>计算复杂性理论让计算机科学能够按照求解所需资源来划分问题。库克 1971 年关于 NP 完全性的结果表明，许多困难问题具有共同结构：答案可以很快验证，但找到答案可能非常困难。它改变了研究者理解算法极限、密码学、优化和 AI 搜索的方式。</p>",
-      "en": "<p>Computational complexity theory gave computer science a language for classifying problems by the resources needed to solve them. Cook's 1971 NP-completeness result showed that many hard problems share a common structure: a solution can be checked quickly even when finding one may be infeasible. This changed how researchers reason about algorithms, limits, cryptography, optimization, and AI search.</p>"
+      "zh": "<p>斯蒂芬·库克在 1971 年证明布尔可满足性问题具有一种关键的普遍困难性：NP 中的每个问题都可以在多项式时间内归约到它。列昂尼德·列文也独立提出了相关结果。由此形成的 NP 完全性概念，不再把困难问题看成彼此孤立的案例，而是把它们组织成可以通过归约比较的整体。</p><p>这一区分对 AI 尤其重要，因为规划、调度、组合搜索和约束求解常会遇到 NP 完全或相关的高复杂度问题。NP 完全并不等于“绝对无法求解”，也没有证明 P 不等于 NP；它提醒工程师需要利用近似、启发式、特殊结构或指数搜索，而不能期待一种已知的通用高效算法。</p>",
+      "en": "<p>In 1971, Stephen Cook proved a crucial form of universal hardness for Boolean satisfiability: every problem in NP could be reduced to it in polynomial time. Leonid Levin independently developed a related result. The resulting idea of NP-completeness organized difficult problems into a common structure connected by reductions, rather than treating each one as an isolated obstacle.</p><p>The distinction is central to AI because planning, scheduling, combinatorial search, and constraint solving often encounter NP-complete or similarly demanding problems. NP-complete does not mean “impossible,” and it does not prove that P differs from NP. It tells engineers why approximation, heuristics, exploitable structure, and sometimes exponential search are necessary instead of expecting a known universal efficient algorithm.</p>"
     },
     "figures": [
       {
@@ -2956,8 +2956,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>VC 理论解释了为什么模型只用有限样本训练后，有时仍能在未见数据上表现可靠。瓦普尼克和切尔沃年基斯用 VC 维等概念把学习、概率和模型容量联系起来。它成为统计学习理论的基础，也深刻影响了机器学习对泛化能力的理解。</p>",
-      "en": "<p>VC theory explains why a model trained on limited examples can sometimes perform well on data it has never seen. Vapnik and Chervonenkis connected learning, probability, and model capacity through measures such as VC dimension. Their work became a foundation for statistical learning theory and shaped how machine learning thinks about generalization.</p>"
+      "zh": "<p>瓦普尼克与切尔沃年基斯在 1971 年把学习中的泛化问题写成严格数学问题：一个假设类别在有限样本上表现良好时，什么条件能保证它在未见数据上仍然可靠？VC 维通过考察模型能否对一组样本实现所有可能的二元划分，刻画假设类别的表达容量。</p><p>这套理论把模型复杂度、样本数量和泛化误差联系起来，为统计学习提供了统一语言。它说明训练误差低并不自动代表学到了可推广规律，也为结构风险最小化和支持向量机奠定基础。经典 VC 界对现代深度网络往往较保守，但容量与泛化之间的核心问题仍未过时。</p>",
+      "en": "<p>In 1971, Vladimir Vapnik and Alexey Chervonenkis gave generalization a rigorous mathematical form: when a hypothesis class performs well on a finite sample, what conditions support reliable performance on unseen data? VC dimension characterizes the capacity of a hypothesis class by asking whether it can realize every binary labeling of a set of examples.</p><p>The theory connected model complexity, sample size, and generalization error, giving statistical learning a common language. It showed why low training error alone does not guarantee a transferable rule and helped support structural risk minimization and support vector machines. Classical VC bounds can be conservative for modern deep networks, but the underlying question of capacity versus generalization remains fundamental.</p>"
     },
     "figures": [
       {
@@ -3396,8 +3396,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1956 年，艾伦·纽厄尔、赫伯特·A·西蒙和 J·C·肖 构建了 Logic Theorist，用来发现符号逻辑中的证明。它把定理证明视为由启发式规则引导的搜索问题，而不是穷举计算。这个系统成为自动推理、符号 AI 和信息加工认知观的重要里程碑。</p>",
-      "en": "<p>In 1956, Allen Newell, Herbert A. Simon, and J. C. Shaw built the Logic Theorist to discover proofs in symbolic logic. It treated theorem proving as a search problem guided by heuristics rather than exhaustive calculation. The system became a landmark for automated reasoning, symbolic AI, and the information-processing view of cognition.</p>"
+      "zh": "<p>1955 至 1956 年间，艾伦·纽厄尔、赫伯特·西蒙和 J·C·肖开发了 Logic Theorist，让计算机尝试证明《数学原理》中的命题。系统把公理、定理和变换规则表示为符号结构，再从目标出发搜索可能的证明路径，而不是只进行数值计算。</p><p>它的关键突破是使用启发式规则控制组合爆炸：优先探索更可能成功的变换，并放弃缺乏希望的分支。Logic Theorist 因而成为符号 AI、自动定理证明和认知建模的早期范例，展示了“推理”可以被组织成符号表示、搜索和选择组成的可执行过程。</p>",
+      "en": "<p>Between 1955 and 1956, Allen Newell, Herbert Simon, and J. C. Shaw developed Logic Theorist to prove propositions from <em>Principia Mathematica</em>. The system represented axioms, theorems, and transformation rules as symbolic structures, then searched backward from a goal for possible proof paths instead of performing only numerical calculation.</p><p>Its crucial step was using heuristics to manage combinatorial growth: explore transformations that appeared more promising and abandon unproductive branches. Logic Theorist became an early model for symbolic AI, automated theorem proving, and cognitive simulation, showing that “reasoning” could be implemented as an executable process combining representation, search, and selective choice.</p>"
     },
     "figures": [
       {
@@ -3852,8 +3852,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>王浩的定理证明工作表明，机器可以通过识别逻辑结构模式来证明许多定理，而不只是盲目枚举真值表。他 1960 年发表于 CACM 的论文和 1961 年 《贝尔系统技术期刊》 的续篇，把形式逻辑推进成一种可运行的证明搜索方法。它连接了早期符号 AI 演示与后来的自动定理证明器。</p>",
-      "en": "<p>Hao Wang's theorem-proving work showed that a machine could prove many logical theorems by recognizing structural patterns rather than blindly enumerating truth tables. His 1960 CACM paper and 1961 Bell System Technical Journal continuation helped turn formal logic into an executable proof-search discipline. It stands between early symbolic AI demonstrations and later automated theorem provers.</p>"
+      "zh": "<p>王浩在 1950 年代末研究如何让机器按照公式的逻辑形状自动构造证明，并在 1960、1961 年发表“通过模式识别证明定理”系列论文。算法把命题或谓词演算公式转换为规则可以识别的结构，再反复拆分、简化和检查分支是否满足闭合条件。</p><p>与任意枚举证明步骤相比，这种模式驱动的归约让大量操作成为确定性的结构变换，只在必要处保留搜索。王氏算法证明了形式逻辑可以高效转译为机器程序，是自动定理证明的重要早期成果，也为后来的证明过程、逻辑编程和 SAT 式推理提供了方法线索。</p>",
+      "en": "<p>In the late 1950s, Hao Wang investigated how a machine could construct proofs by following the logical form of formulas, publishing the two <em>Proving Theorems by Pattern Recognition</em> papers in 1960 and 1961. The procedures transformed propositional or predicate-calculus formulas into recognizable structures, then repeatedly split, simplified, and tested branches for closure.</p><p>Compared with arbitrary enumeration of proof steps, this pattern-guided reduction made many operations deterministic structural transformations and reserved search for the remaining choices. Wang's work demonstrated that formal logic could be translated into effective machine procedures, becoming an early milestone in automated theorem proving and a methodological precursor to later proof systems, logic programming, and SAT-style reasoning.</p>"
     },
     "figures": [
       {
@@ -4282,8 +4282,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Davis-Putnam 过程及其 DPLL 改进，把逻辑可满足性变成了自动推理中的实用搜索问题。Davis 和 Putnam 1960 年 《ACM 杂志》 论文把量词理论与可行证明过程联系起来，Davis、Logemann 和 Loveland 1962 年程序又用传播和回溯改进了 SAT 搜索。这条线索今天仍贯穿 SAT、SMT、规划、验证和约束求解系统。</p>",
-      "en": "<p>The Davis-Putnam procedure and its DPLL refinement made logical satisfiability a practical search problem for automated reasoning. Davis and Putnam's 1960 JACM paper connected quantification theory to feasible proof procedures, while Davis, Logemann, and Loveland's 1962 program refined SAT search with propagation and backtracking. The lineage still runs through modern SAT, SMT, planning, verification, and constraint-solving systems.</p>"
+      "zh": "<p>戴维斯与普特南在 1960 年提出面向量词理论和布尔可满足性问题的计算过程；1962 年，戴维斯、洛格曼和洛夫兰将其发展为后来称作 DPLL 的机器程序。前者通过消去变量变换子句集合，后者以分支搜索配合单元传播等简化规则判断公式是否可满足。</p><p>DPLL 把逻辑推理组织成一棵可剪枝的搜索树：选择变量赋值，传播由此被迫确定的结果，在出现矛盾时回溯。现代 SAT 求解器又加入子句学习、重启和更强启发式，但搜索与传播的基本框架仍源于这条路线，并广泛服务于验证、规划、配置和约束求解。</p>",
+      "en": "<p>Martin Davis and Hilary Putnam introduced a computational procedure for quantification theory and Boolean satisfiability in 1960. In 1962, Davis, George Logemann, and Donald Loveland developed the machine program later known as DPLL. The earlier method transformed clause sets through variable elimination, while DPLL combined branching search with simplifications such as unit propagation.</p><p>DPLL organized logical reasoning as a prunable search tree: choose a variable assignment, propagate consequences forced by it, and backtrack when a contradiction appears. Modern SAT solvers add clause learning, restarts, watched literals, and stronger heuristics, but their basic search-and-propagate structure descends from this work and remains important in verification, planning, configuration, and constraint solving.</p>"
     },
     "figures": [
       {
@@ -4751,8 +4751,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Adam 之所以成为现代深度学习的默认优化器之一，是因为它用梯度与梯度平方的滑动估计来为每个参数自适应调整步长。金马 与 巴 在 2014 年提出这一简单、高效的随机优化方法，用来处理噪声目标函数。它的影响延伸到几乎所有深度学习框架，并催生了 AdamW 等后续变体。</p>",
-      "en": "<p>Adam became one of the default optimizers of modern deep learning because it adapts each parameter step from running estimates of gradients and squared gradients. Kingma and Ba published it in 2014 as a simple, efficient stochastic optimization method that worked well across noisy objectives. Its influence is visible in nearly every deep-learning framework and in later variants such as AdamW.</p>"
+      "zh": "<p>金马和巴在 2014 年提出 Adam，目标是在小批量、噪声大或梯度稀疏的训练条件下，提供计算与内存开销都较低的随机优化方法。Adam 为每个参数维护梯度的一阶矩和二阶矩指数移动平均，并在训练早期进行偏差校正，由此同时获得类似动量的方向积累和自适应步长。</p><p>这种更新规则易于实现，且通常能让新模型较快进入可用训练状态，因此成为深度学习框架中的常用默认选项。Adam 并非对所有任务都优于随机梯度下降，泛化表现也依赖学习率、正则化和调度策略；AdamW 等后续方法进一步改进了权重衰减的处理。</p>",
+      "en": "<p>Diederik Kingma and Jimmy Ba introduced Adam in 2014 as a computationally and memory-efficient stochastic optimizer for minibatch training, noisy objectives, and sparse gradients. Adam maintains exponential moving averages of each parameter's first and second gradient moments and corrects their early bias, combining momentum-like directional memory with adaptive step sizes.</p><p>The update is straightforward to implement and often brings a new model into a useful training regime quickly, so it became a common default in deep-learning frameworks. Adam is not universally better than stochastic gradient descent, and its generalization depends on learning rates, regularization, and schedules. Descendants such as AdamW refined how weight decay is applied.</p>"
     },
     "figures": [
       {
@@ -5239,8 +5239,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>VGG 让卷积网络看起来像一种有纪律的架构语言：小卷积核、重复模块、阶段性池化，以及很深的层数。牛津团队 2014 年的工作并不是最快或最小的模型，却成为经典特征提取器和教学范例。它的清晰结构帮助研究者在残差连接和密集连接成为标准之前理解“深度”的价值。</p>",
-      "en": "<p>VGG made convolutional networks feel like a disciplined architecture language: small filters, repeated blocks, occasional pooling, and great depth. The 2014 Oxford work was not the fastest or smallest model, but it became a canonical feature extractor and teaching example. Its clarity helped later researchers reason about depth before residual and dense connections became standard.</p>"
+      "zh": "<p>西莫尼扬和齐瑟曼在 2014 年研究卷积网络深度对大规模图像识别的影响。VGG 用规则化方式反复堆叠 3×3 小卷积与池化层，构成 16 层和 19 层等配置；多个小卷积在扩大有效感受野的同时，引入更多非线性，又让整体架构保持一致。</p><p>VGG 在 ImageNet 评测中证明了系统增加深度的价值，其清晰结构和公开模型也使它成为广泛使用的特征提取器与迁移学习基线。它的参数量和计算成本较高，后来被残差网络等更高效架构取代，但“小卷积、深堆叠、统一模块”的设计思想持续影响视觉网络。</p>",
+      "en": "<p>Karen Simonyan and Andrew Zisserman studied the effect of convolutional-network depth on large-scale image recognition in 2014. VGG repeatedly stacked small 3×3 convolutions and pooling layers in a regular pattern, producing configurations such as VGG-16 and VGG-19. Several small convolutions enlarged the effective receptive field while adding nonlinearities and keeping the architecture uniform.</p><p>VGG's ImageNet results demonstrated the value of systematically increasing depth, while its clear structure and released models made it a widely used feature extractor and transfer-learning baseline. Its parameter count and computational cost are high, and more efficient residual architectures later displaced it at the frontier. The principles of small filters, deep stacks, and reusable modules nevertheless remained influential.</p>"
     },
     "figures": [
       {
@@ -5723,8 +5723,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>U-Net 最初面向生物医学图像分割，在这类任务中标注数据稀缺且边界细节重要。收缩路径汇聚上下文，扩张路径恢复分辨率，跳跃连接则把精细信息跨过 U 形结构传递过去。这个设计后来走出原始领域，成为分割、图像复原、扩散模型和密集预测的通用模板。</p>",
-      "en": "<p>U-Net was designed for biomedical image segmentation, where labeled data can be scarce and boundary detail matters. Its contracting path gathers context while the expanding path restores resolution, with skip connections carrying fine details across the U shape. The design escaped its original niche and became a general template for segmentation, restoration, diffusion models, and dense prediction.</p>"
+      "zh": "<p>U-Net 最初面向生物医学图像分割：标注样本通常有限，但输出必须精确对应每个像素和细小边界。网络的收缩路径通过卷积和下采样汇聚上下文，扩张路径逐步恢复空间分辨率；跨越 U 形结构的跳跃连接，把编码阶段的高分辨率特征直接与解码特征拼接。</p><p>原论文还利用强数据增强，使网络能从较少训练图像中学习。编码器—解码器与跳跃连接的组合同时保留“是什么”和“在哪里”，因此很快超出生物医学领域，成为语义分割、图像复原和密集预测的经典模板，并进一步影响扩散模型等生成系统的骨干设计。</p>",
+      "en": "<p>U-Net was created for biomedical image segmentation, where labeled examples are often scarce but outputs must align precisely with pixels and fine boundaries. Its contracting path gathers context through convolution and downsampling, while the expanding path restores spatial resolution. Skip connections across the U shape concatenate high-resolution encoder features directly with decoder features.</p><p>The original work also used strong data augmentation so the network could learn from relatively few annotated images. By preserving both “what” and “where,” the encoder-decoder design became a canonical template beyond biomedicine for semantic segmentation, image restoration, and dense prediction. Its skip-connected structure also influenced the backbones later used in diffusion and other generative models.</p>"
     },
     "figures": [
       {
@@ -6223,8 +6223,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>John 霍兰德 将一种搜索方式形式化：维护候选解种群，选择表现更好的个体，重组片段，并加入变异。遗传算法成为 AI 搜索、优化、复杂系统和人工生命之间持久的桥梁。它在历史上尤其重要，因为它把探索、变化和选择变成了可编程的设计原则。</p>",
-      "en": "<p>John Holland formalized a way to search by maintaining a population of candidates, selecting fitter variants, recombining pieces, and injecting mutation. Genetic algorithms became a durable bridge between AI search, optimization, complex systems, and artificial life. They are especially useful historically because they made exploration, variation, and selection into programmable design principles.</p>"
+      "zh": "<p>约翰·霍兰德在 1975 年的《自然与人工系统中的适应》中系统化了遗传算法框架。算法不沿着单一路径直接修改一个解，而是维护由编码候选方案组成的种群，依据适应度选择个体，再通过交叉和变异产生下一代。</p><p>这种群体搜索能同时探索多个区域，并在没有可用梯度、目标函数不规则或设计变量离散时寻找较优方案。遗传算法不是对生物进化的完整模拟，也不能保证快速找到全局最优解；它的长期价值在于把选择、重组和随机变异变成通用优化工具，并启发了更广泛的进化计算方法。</p>",
+      "en": "<p>John Holland systematized the genetic-algorithm framework in his 1975 book <em>Adaptation in Natural and Artificial Systems</em>. Rather than modifying one solution along a single path, a genetic algorithm maintains a population of encoded candidates, selects individuals according to fitness, and produces new generations through crossover and mutation.</p><p>Population-based search can explore several regions at once and is useful when gradients are unavailable, objectives are irregular, or design variables are discrete. Genetic algorithms are not complete simulations of biological evolution and do not guarantee rapid discovery of a global optimum. Their lasting value is turning selection, recombination, and stochastic variation into general optimization tools and inspiring the wider field of evolutionary computation.</p>"
     },
     "figures": [
       {
@@ -6374,7 +6374,7 @@ const milestones = [
           },
           "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
           "purpose": "background",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "book"
         },
         {
@@ -6389,7 +6389,7 @@ const milestones = [
           },
           "url": "https://deap.readthedocs.io/en/master/",
           "purpose": "implementation",
-          "reliability": "reference-only",
+          "reliability": "secondary",
           "sourceType": "documentation"
         },
         {
@@ -6404,7 +6404,7 @@ const milestones = [
           },
           "url": "https://cs.gmu.edu/~eclab/projects/ecj/",
           "purpose": "implementation",
-          "reliability": "reference-only",
+          "reliability": "secondary",
           "sourceType": "project-page"
         }
       ],
@@ -6697,8 +6697,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>",
-      "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>"
+      "zh": "<p>早期 R-CNN 系统先用外部算法生成候选区域，再让卷积网络逐个判断，候选框阶段成为速度和系统整合的瓶颈。Faster R-CNN 引入区域建议网络，在共享卷积特征图上滑动，用预设锚框预测哪些位置可能包含物体及其边界偏移，再把建议区域交给检测头分类和精修。</p><p>区域建议网络与检测器共享大部分计算，并可联合训练，使候选框生成也成为可学习过程。这个“建议区域 + 分类定位”的统一两阶段框架在精度上长期具有竞争力，也成为目标检测研究的重要参照；它清楚展示了速度、定位质量和端到端学习之间的工程权衡。</p>",
+      "en": "<p>Earlier R-CNN systems used an external algorithm to generate candidate regions before a convolutional network classified them, making proposal generation a speed and integration bottleneck. Faster R-CNN introduced a Region Proposal Network that slides over shared feature maps and uses anchor boxes to predict likely objects and boundary offsets. Proposed regions then pass to a detection head for classification and refinement.</p><p>The proposal network shares most computation with the detector and can be trained jointly, turning candidate generation into a learned component. This unified two-stage proposal-and-recognition framework remained highly competitive for accurate detection and became a standard research reference. It also made the tradeoff among speed, localization quality, and end-to-end learning easier to study.</p>"
     },
     "figures": [
       {
@@ -7211,8 +7211,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>",
-      "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>"
+      "zh": "<p>支持向量机把统计学习理论中的容量控制转化为实用分类器。它不只寻找能分开训练样本的边界，而是最大化边界与最近样本之间的间隔；这些决定边界的样本就是支持向量。软间隔允许少量违例，以在拟合训练数据和保持泛化能力之间取得平衡。</p><p>核函数进一步让算法在不显式计算高维坐标的情况下形成非线性边界，同时仍保持凸优化问题。SVM 在深度学习复兴前广泛用于文本、图像和生物信息任务，并把间隔、核方法和泛化理论连接起来。它对超大数据和复杂表征并非总是最高效，但仍是经典机器学习的重要基线。</p>",
+      "en": "<p>Support vector machines turned capacity control from statistical learning theory into a practical classifier. Rather than finding any boundary that separates the training examples, an SVM maximizes the margin to the nearest points, which become the support vectors. A soft margin permits selected violations so the model can balance training fit against generalization.</p><p>Kernel functions then allow nonlinear boundaries without explicitly constructing every coordinate of a high-dimensional feature space, while preserving a convex optimization problem. Before the deep-learning resurgence, SVMs were widely used in text, vision, and bioinformatics, connecting margin theory, kernels, and practical prediction. They are not always efficient for very large datasets or representation learning, but remain an important classical baseline.</p>"
     },
     "figures": [
       {
@@ -7708,8 +7708,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>",
-      "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>"
+      "zh": "<p>布雷曼、弗里德曼、奥尔申和斯通在 1984 年专著中系统化了分类与回归树。CART 递归选择变量和切分点，使子节点在类别或数值目标上更同质；先生成较大的二叉树，再用代价—复杂度剪枝和验证数据选择更简洁的子树。</p><p>最终模型可以沿 if-then 路径解释，同时自然表达非线性关系、变量交互和不同类型的输出。单棵树可能不稳定，也容易受数据扰动影响，但 CART 的划分与剪枝框架成为随机森林、梯度提升树和许多表格数据系统的基本单元，至今仍连接可解释性与预测能力。</p>",
+      "en": "<p>Leo Breiman, Jerome Friedman, Richard Olshen, and Charles Stone systematized classification and regression trees in their 1984 book. CART recursively chooses variables and split points that make child nodes more homogeneous for categorical or numeric targets. It grows a comparatively large binary tree, then uses cost-complexity pruning and validation data to select a simpler subtree.</p><p>The resulting model can be read as a sequence of if-then decisions while representing nonlinear relationships, interactions, and different output types. Individual trees can be unstable under small data changes, but CART's split-and-prune framework became the basic unit behind random forests, gradient-boosted trees, and many tabular-data systems, continuing to connect interpretability with predictive power.</p>"
     },
     "figures": [
       {
@@ -7895,7 +7895,7 @@ const milestones = [
           },
           "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
           "purpose": "background",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "book"
         },
         {
@@ -8756,8 +8756,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Lasso 为统计学家和机器学习实践者提供了一种构建稀疏线性模型的清晰方法。通过惩罚系数绝对值，它既正则化预测，又完成变量选择。其思想后来出现在稀疏建模、高维统计、压缩感知、生物信息学和可解释机器学习中。</p>",
-      "en": "<p>The lasso gave statisticians and machine-learning practitioners a clean way to build sparse linear models. By penalizing the absolute size of coefficients, it both regularizes predictions and performs variable selection. Its ideas now appear in sparse modeling, high-dimensional statistics, compressed sensing, bioinformatics, and interpretable ML.</p>"
+      "zh": "<p>罗伯特·蒂布希拉尼在 1996 年提出 Lasso，把回归误差与系数绝对值之和构成的 L1 惩罚结合起来。惩罚会同时收缩系数，并让其中一部分精确变为零，因此模型在拟合数据的同时完成变量选择；调节参数控制预测拟合与稀疏程度之间的平衡。</p><p>Lasso 把正则化、可解释性和高维建模连接成一种简单的凸优化方法，广泛影响基因组学、信号处理和透明预测模型。它在高度相关的变量之间可能选择不稳定，也不保证识别真实因果因素，但“通过惩罚获得稀疏结构”的思想成为现代统计学习的重要原则。</p>",
+      "en": "<p>Robert Tibshirani introduced the Lasso in 1996 by combining regression error with an L1 penalty on the absolute values of the coefficients. The penalty both shrinks coefficients and drives some exactly to zero, so the model performs variable selection while fitting the data. A tuning parameter controls the balance between predictive fit and sparsity.</p><p>The Lasso connected regularization, interpretability, and high-dimensional modeling in a comparatively simple convex optimization problem, influencing genomics, signal processing, and transparent prediction. Its selections can be unstable among strongly correlated variables, and selected features are not automatically causal. Even so, the principle of using a penalty to discover sparse structure became central to modern statistical learning.</p>"
     },
     "figures": [
       {
@@ -9231,8 +9231,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>",
-      "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>"
+      "zh": "<p>GoogLeNet 的 Inception 架构表明，加深网络不必只沿单一路径堆叠层。每个 Inception 模块并行使用不同尺寸的卷积和池化，让网络同时观察多种感受野，再拼接各分支输出；1×1 卷积先压缩通道，使这种多分支计算保持可承受。</p><p>该系统赢得 2014 年 ImageNet 挑战赛，并用全局平均池化等设计减少参数规模。Inception 把表示能力与计算预算作为同一个架构问题处理，影响了后续瓶颈层、多分支模块和高效网络设计。它也说明 CNN 的进步不仅来自“更深”，还来自如何组织每层内部的计算路径。</p>",
+      "en": "<p>GoogLeNet's Inception architecture showed that increasing depth did not require stacking layers along only one path. Each Inception module applies different convolution sizes and pooling in parallel, allowing the network to examine several receptive-field scales before concatenating the branch outputs. 1×1 convolutions reduce channel dimensions so this multi-branch computation remains affordable.</p><p>The system won the 2014 ImageNet challenge and used choices such as global average pooling to limit parameter growth. Inception treated representational power and computational budget as one architectural problem, influencing later bottleneck layers, multi-branch modules, and efficient network design. It demonstrated that CNN progress depended not only on becoming deeper, but also on organizing computation inside each block.</p>"
     },
     "figures": [
       {
@@ -9718,8 +9718,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>归结方法把一阶定理证明变成统一的反驳过程：把命题转为子句，否定目标，再推出矛盾。Robinson 将归结与合一结合起来，让自动证明器获得一种可系统实现的紧凑规则。它后来成为逻辑程序设计、SAT/SMT 谱系以及许多推理系统的基础。</p>",
-      "en": "<p>Resolution turned first-order theorem proving into a uniform refutation procedure: translate statements into clauses, negate the target, and derive a contradiction. Robinson combined resolution with unification, giving automated provers a compact rule that could be implemented systematically. It became a foundation for logic programming, SAT/SMT lineage, and many later reasoning systems.</p>"
+      "zh": "<p>J·艾伦·罗宾逊在 1965 年提出面向机器的一阶逻辑归结方法。证明时先把前提和被否定的结论转换为子句，再寻找含有互补文字的子句；合一算法计算使相关项匹配的变量替换，归结规则据此生成新子句，直到推出代表矛盾的空子句。</p><p>这种反驳式方法用一套统一规则取代许多专门推理步骤，并具备适合自动化的重要完备性性质。实际系统仍需要索引、搜索策略和启发式方法控制组合增长，但归结与合一成为自动定理证明、逻辑程序设计及后续 SAT/SMT 推理谱系的基础概念。</p>",
+      "en": "<p>J. Alan Robinson introduced a machine-oriented resolution method for first-order logic in 1965. A proof converts the premises and negated conclusion into clauses, then finds clauses containing complementary literals. Unification computes substitutions that make relevant terms match, allowing the resolution rule to derive a new clause until the empty clause represents a contradiction.</p><p>This refutation method replaced many specialized inference steps with a uniform rule and provided an important completeness property for automation. Practical systems still require indexing, search strategies, and heuristics to manage combinatorial growth, but resolution and unification became foundational concepts in automated theorem proving, logic programming, and later SAT/SMT reasoning lineages.</p>"
     },
     "figures": [
       {
@@ -10196,8 +10196,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>PROLOG 让逻辑变得可执行。程序员不再只写一步步过程，而是写事实与规则，再提出查询，由系统通过合一和回溯求解。它把定理证明、自然语言处理和知识表示连接成一种实用的符号 AI 工具。</p>",
-      "en": "<p>PROLOG made logic executable. Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking. The language joined theorem proving, natural-language work, and knowledge representation into a practical symbolic AI tool.</p>"
+      "zh": "<p>阿兰·科尔梅罗尔及其马赛团队在 1970 年代初开发 Prolog，并受到罗伯特·科瓦尔斯基逻辑程序设计思想的影响。程序由事实和规则组成，用户提出查询后，系统通过合一匹配变量，并沿规则建立证明；当路径失败时，它回溯到较早选择继续搜索。</p><p>这种声明式方式让程序员主要描述“哪些关系成立”，而把部分执行顺序交给推理引擎。Prolog 很快用于自然语言处理、专家系统、定理证明和知识表示，也暴露了搜索顺序和控制策略对实际性能的重要性。它证明逻辑不只是说明语言，也可以成为可运行的程序设计基础。</p>",
+      "en": "<p>Alain Colmerauer and his Marseille group developed Prolog in the early 1970s, influenced by Robert Kowalski's ideas about logic programming. A program consists of facts and rules. When a user poses a query, the system uses unification to match variables and constructs a proof through the rules; if a path fails, it backtracks to an earlier choice and continues searching.</p><p>This declarative style lets programmers describe primarily which relations hold while leaving part of the execution order to the inference engine. Prolog was soon used for natural-language processing, expert systems, theorem proving, and knowledge representation, while also revealing how strongly search order and control strategy affect performance. It demonstrated that logic could serve not only as a specification language but as an executable programming foundation.</p>"
     },
     "figures": [
       {
@@ -10360,7 +10360,7 @@ const milestones = [
           },
           "url": "https://doi.org/10.1145/155360.155362",
           "purpose": "alternate-access",
-          "reliability": "reference-only",
+          "reliability": "secondary",
           "sourceType": "paper-page"
         },
         {
@@ -10375,7 +10375,7 @@ const milestones = [
           },
           "url": "https://www.prolog-heritage.org/en/Prolog_50.html",
           "purpose": "historical-context",
-          "reliability": "reference-only",
+          "reliability": "secondary",
           "sourceType": "archive"
         },
         {
@@ -10687,8 +10687,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>ELIZA 展示了简单语言模式匹配在制造“对话感”方面能走多远。它的 DOCTOR 脚本会把用户短语改写成问题反射回来，机制很浅，却让互动令人印象深刻。它成为聊天机器人史和“机器拟人化”争论中的标志性案例。</p>",
-      "en": "<p>ELIZA showed how far simple language pattern matching could go in producing the feeling of conversation. Its DOCTOR script reflected user phrases back as questions, making the interaction memorable precisely because the mechanism was shallow. The program became a landmark in chatbot history and in debates about anthropomorphizing machines.</p>"
+      "zh": "<p>约瑟夫·魏岑鲍姆在 1960 年代中期开发 ELIZA，用脚本、关键词和模式匹配模拟文字对话。著名的 DOCTOR 脚本采用类似非指导式心理治疗师的回应方式：识别用户句式，替换人称或关键词，再把内容改写成追问，从而鼓励用户继续表达。</p><p>ELIZA 没有建立深层语义模型，也不真正理解心理治疗，但部分用户仍把理解和同理心投射到系统上。魏岑鲍姆把这种反应视为重要警示。ELIZA 因而既是聊天机器人先驱，也是研究“ELIZA 效应”的经典案例：流畅互动可能让人高估系统内部的理解程度。</p>",
+      "en": "<p>Joseph Weizenbaum developed ELIZA in the mid-1960s to simulate text conversation through scripts, keywords, and pattern matching. Its famous DOCTOR script imitated a nondirective psychotherapist: it recognized forms in a user's input, substituted pronouns or keywords, and transformed the material into reflective questions that encouraged the user to continue.</p><p>ELIZA built no deep semantic model and did not understand therapy, yet some users projected understanding and empathy onto it. Weizenbaum treated that response as an important warning. The program therefore became both a chatbot landmark and the classic example of the “ELIZA effect”: persuasive interaction can lead people to overestimate how much understanding exists inside a system.</p>"
     },
     "figures": [
       {
@@ -11165,8 +11165,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>",
-      "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>"
+      "zh": "<p>约翰·霍普菲尔德在 1982 年把相互连接的二值神经元描述为具有整体能量函数的动力系统。在对称连接和异步更新等条件下，每次更新都会降低或保持能量，因此网络最终落入稳定状态。训练过的模式可以成为能量地形中的吸引子。</p><p>当输入只包含残缺或带噪版本时，网络可能收敛到最接近的存储模式，从而实现内容寻址的联想记忆。容量有限、伪吸引子和局部极小值会限制表现，但这一框架把神经计算、统计物理、记忆和组合优化连接起来，并成为能量模型的重要历史基础。</p>",
+      "en": "<p>John Hopfield described a recurrent network of binary units as a dynamical system with a global energy function in 1982. Under conditions including symmetric connections and asynchronous updates, each update lowers or preserves the energy, so the network eventually settles into a stable state. Learned patterns can therefore become attractors in an energy landscape.</p><p>Given an incomplete or noisy version of a pattern, the network may converge to the closest stored memory, providing content-addressable associative recall. Limited capacity, spurious attractors, and local minima constrain its performance, but the framework connected neural computation with statistical physics, memory, and combinatorial optimization. It also became an important historical foundation for energy-based models.</p>"
     },
     "figures": [
       {
@@ -11640,8 +11640,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。</p>",
-      "en": "<p>Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.</p>"
+      "zh": "<p>Dropout 在训练时以设定概率随机屏蔽一部分神经元及其连接，使网络不能长期依赖固定的特征组合。每次小批量训练都相当于从同一参数集合中抽取一个不同的“变薄网络”；推理时使用完整网络并调整激活尺度，近似汇总许多子网络的预测。</p><p>这种简单机制减少特征之间的共同适应，在大型全连接网络中有效缓解过拟合，并成为深度学习的经典正则化方法。Dropout 的收益依赖架构、数据规模和归一化方式，在现代卷积或 Transformer 系统中通常与数据增强、权重衰减等方法配合使用，而不是固定的万能配方。</p>",
+      "en": "<p>Dropout randomly masks a chosen fraction of units and their connections during training, preventing a network from depending permanently on fixed combinations of features. Each minibatch effectively trains a different thinned network drawn from shared parameters. At inference time the full network is used with appropriately scaled activations, approximating an average over many subnetworks.</p><p>The simple mechanism reduced co-adaptation and helped control overfitting in large fully connected networks, becoming a classic deep-learning regularizer. Its benefit depends on architecture, dataset scale, and normalization choices. In modern convolutional and Transformer systems it is usually one element of a broader recipe that can also include augmentation, weight decay, and other regularization methods.</p>"
     },
     "figures": [
       {
@@ -12131,8 +12131,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。</p>",
-      "en": "<p>YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.</p>"
+      "zh": "<p>YOLO 将目标检测重新表述为从图像像素直接回归边界框和类别概率的单一网络任务。原始系统把图像划分为网格，每个单元在一次前向传播中预测候选框、置信度和类别，而不再先运行独立的区域建议算法再逐个分类。</p><p>统一流水线能够利用整张图的上下文，并显著提高检测速度，使实时目标检测成为主流工程目标。第一代 YOLO 在小物体和精确定位上存在局限，后续版本不断修改框表示、特征层和训练方法；但“单阶段、单次前向预测”的核心表述深刻影响了检测器设计和部署预期。</p>",
+      "en": "<p>YOLO reframed object detection as one neural-network task that regresses bounding boxes and class probabilities directly from image pixels. The original system divided an image into a grid, with each cell predicting candidate boxes, confidence, and classes in a single forward pass instead of running a separate region-proposal algorithm and classifying proposals one by one.</p><p>The unified pipeline could use context from the whole image and greatly increased detection speed, making real-time object detection a mainstream engineering goal. The first YOLO had limitations in precise localization and small-object detection, and later versions changed box representations, feature layers, and training recipes. Its central idea of single-stage, single-pass prediction nevertheless reshaped detector design and deployment expectations.</p>"
     },
     "figures": [
       {
@@ -12622,8 +12622,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。</p>",
-      "en": "<p>Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.</p>"
+      "zh": "<p>米科洛夫等人在 2013 年提出的 Word2Vec 用浅层神经目标高效学习大规模语料中的词表示。CBOW 根据周围词预测中心词，Skip-gram 则根据中心词预测上下文；负采样和高频词下采样进一步降低训练成本，使数亿乃至更多词元上的训练变得实用。</p><p>学习到的稠密向量把分布相似的词放到相近位置，一些语义和句法关系还会表现为方向和距离。这推动 NLP 从稀疏计数特征转向可复用的分布式表示。词向量仍会继承语料偏见，也难以表达一词多义和上下文变化，但它为后来的上下文化语言表示铺平道路。</p>",
+      "en": "<p>Word2Vec, introduced by Tomas Mikolov and colleagues in 2013, used shallow neural objectives to learn word representations efficiently from very large corpora. CBOW predicts a center word from its surrounding words, while Skip-gram predicts surrounding context from the center. Negative sampling and subsampling of frequent words further reduced the cost, making training on hundreds of millions or more tokens practical.</p><p>The resulting dense vectors place words with similar distributions near one another, and some semantic or syntactic relationships appear as directions and distances. This helped move NLP from sparse count features toward reusable distributed representations. Static embeddings still inherit corpus biases and struggle with polysemy and changing context, but they prepared the ground for later contextual language representations.</p>"
     },
     "figures": [
       {
@@ -12773,7 +12773,7 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1301.3781",
           "purpose": "alternate-access",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "paper-page"
         },
         {
@@ -12788,7 +12788,7 @@ const milestones = [
           },
           "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -13100,8 +13100,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。</p>",
-      "en": "<p>ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.</p>"
+      "zh": "<p>ImageNet 项目在 2009 年论文中提出以 WordNet 的概念层级组织大规模图像数据库，并通过网络收集与人工标注为每个概念配备大量实例。它把过去相对有限的数据集扩展到数百万张图像和成千上万个类别，使视觉算法能够在更接近真实世界多样性的范围内训练和比较。</p><p>随后建立的 ImageNet 大规模视觉识别挑战提供统一任务、训练集和评测指标，让算法进步能够连续追踪，也让 AlexNet 在 2012 年的突破清晰可见。ImageNet 证明数据规模和公开基准本身可以改变研究方向，同时也促使领域认真面对类别设计、标注偏差、数据许可和社会代表性问题。</p>",
+      "en": "<p>The 2009 ImageNet paper proposed a large image database organized through the concept hierarchy of WordNet, using web collection and human annotation to supply many examples for each concept. It expanded computer-vision data from comparatively limited collections to millions of images across thousands of categories, allowing algorithms to train and be compared over much greater visual diversity.</p><p>The later ImageNet Large Scale Visual Recognition Challenge supplied common tasks, training data, and metrics, making progress continuously measurable and AlexNet's 2012 breakthrough unmistakable. ImageNet demonstrated that dataset scale and a public benchmark could redirect an entire field. It also pushed researchers to confront category design, annotation bias, licensing, and social representation in large datasets.</p>"
     },
     "figures": [
       {
@@ -13591,8 +13591,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
-      "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+      "zh": "<p>DeepMind 的 DQN 把卷积神经网络与 Q-learning 结合起来，让智能体直接从 Atari 屏幕像素估计每个动作的长期价值。经验回放随机抽取过去的转移，减少连续样本之间的相关性；固定一段时间的目标网络为自举更新提供较稳定的学习目标。</p><p>同一套基本架构在多款游戏中从视觉输入学习策略，证明深度表示可以与强化学习共同工作，而不必为每个游戏手工设计状态特征。DQN 开启深度强化学习的重要浪潮，但仍存在样本效率低、训练不稳定和对奖励设计敏感等问题，后续研究围绕这些限制发展出大量改进。</p>",
+      "en": "<p>DeepMind's DQN combined a convolutional neural network with Q-learning so an agent could estimate the long-term value of actions directly from Atari screen pixels. Experience replay sampled past transitions in randomized order, reducing correlations between consecutive observations. A target network held parameters fixed for intervals, providing a more stable target for bootstrapped updates.</p><p>The same basic architecture learned policies across many games from visual input without hand-designing a separate state representation for each one. DQN became a major bridge from classical reinforcement learning to deep reinforcement learning. It still required large amounts of experience and could be unstable or sensitive to reward design, limitations that motivated a broad family of later improvements.</p>"
     },
     "figures": [
       {
@@ -13755,7 +13755,7 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1312.5602",
           "purpose": "alternate-access",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "paper-page"
         },
         {
@@ -13770,7 +13770,7 @@ const milestones = [
           },
           "url": "https://www.nature.com/articles/nature14236",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -14082,8 +14082,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>",
-      "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>"
+      "zh": "<p>潜在狄利克雷分配在 2003 年为主题模型建立了清晰的生成式概率框架。每篇文档被表示为多个主题的不同比例混合，每个主题又是词汇表上的概率分布；狄利克雷先验约束这些混合，而推断算法根据观察到的词反推隐藏主题和每个词的主题归属。</p><p>LDA 让研究者能够在没有逐篇主题标签的情况下探索大型文档集合，并成为概率图模型、变分推断和贝叶斯文本分析的经典教学案例。它采用词袋假设，忽略词序，主题也不一定自动对应人类概念，因此结果需要谨慎解释；但其“用隐藏变量解释可见文本”的方法影响深远。</p>",
+      "en": "<p>Latent Dirichlet Allocation gave topic modeling a clear generative probabilistic framework in 2003. Each document is represented as a different mixture of topics, and each topic is a probability distribution over the vocabulary. Dirichlet priors shape those mixtures, while inference algorithms work backward from observed words to estimate the hidden topics and each word's topic assignment.</p><p>LDA allowed researchers to explore large document collections without assigning a topic label to every text and became a standard teaching example for probabilistic graphical models, variational inference, and Bayesian text analysis. Its bag-of-words assumption ignores word order, and inferred topics do not automatically correspond to human concepts, so interpretation requires care. The broader method of explaining visible text through latent variables remained highly influential.</p>"
     },
     "figures": [
       {
@@ -14573,8 +14573,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>SHRDLU 展示了计算机可以围绕一个受限但丰富的积木世界进行对话。Winograd 把句法分析、规划、过程语义和小型世界模型结合起来，让自然语言命令转化为类似机器人操作的动作。它的力量来自紧密集成：语言之所以有效，是因为世界被限制并被明确表示。</p>",
-      "en": "<p>SHRDLU showed that a computer could carry on a constrained but surprisingly rich dialogue about a toy blocks world. Winograd combined parsing, planning, procedural semantics, and a small world model so natural-language commands could become robot-like actions. Its power came from tight integration: language worked because the world was limited and explicitly represented.</p>"
+      "zh": "<p>特里·维诺格拉德在 1968 至 1970 年间开发 SHRDLU，让用户用自然语言与一个虚拟积木世界交互。系统把句法分析、指代消解、过程语义、规划和世界模型紧密结合，能够执行“把红色金字塔放到方块上”之类命令，也能回答关于对象、动作和先前对话的问题。</p><p>SHRDLU 的连贯表现展示了语言理解与行动规划整合后的力量，但它依赖一个词汇、物体和规则都受到严格限制的微型世界。系统一旦离开这个封闭环境就难以扩展。它因此既是自然语言 AI 的经典成功，也是对领域边界的提醒：局部流畅不等于开放世界理解。</p>",
+      "en": "<p>Terry Winograd developed SHRDLU between 1968 and 1970 so users could interact in natural language with a virtual blocks world. The system tightly integrated parsing, reference resolution, procedural semantics, planning, and a world model. It could execute commands such as placing a red pyramid on a block and answer questions about objects, actions, and earlier parts of the conversation.</p><p>SHRDLU's coherent behavior demonstrated the power of joining language understanding with action planning, but it depended on a microworld whose vocabulary, objects, and rules were sharply constrained. The approach did not scale easily beyond that closed environment. It therefore remains both a classic success in natural-language AI and a warning about scope: local fluency is not the same as open-world understanding.</p>"
     },
     "figures": [
       {
@@ -14724,7 +14724,7 @@ const milestones = [
           },
           "url": "https://dspace.mit.edu/handle/1721.1/7095",
           "purpose": "core-evidence",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "thesis"
         },
         {
@@ -15047,8 +15047,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
-      "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+      "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。它利用并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片，每秒检查大量候选局面。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+      "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5–2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. It combined parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips to examine enormous numbers of candidate positions.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
     },
     "figures": [
       {
@@ -15226,6 +15226,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-deep-blue-system-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Deep Blue》",
+            "en": "Deep Blue"
+          },
+          "url": "https://doi.org/10.1016/S0004-3702(01)00129-1",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
           "id": "source-murray-campbell-ibm-research",
           "type": {
             "zh": "人物资料",
@@ -15272,6 +15287,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-deep-blue-system-paper",
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue"
@@ -15560,8 +15576,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>",
-      "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>"
+      "zh": "<p>马文·明斯基在 1974 年提出框架表示，把对典型对象、场景或事件的知识组织成结构化单元。一个框架包含描述属性的槽、常见情况下采用的默认值、槽之间的约束，以及在信息缺失或变化时触发的过程；新情境可以通过实例化和调整既有框架来理解。</p><p>这种方法强调知识不是互不相干的事实集合，而是带有预期和上下文的整体。框架影响了语义网络、脚本、专家系统和面向对象知识表示，也暴露出默认推理与例外处理的困难。它的核心遗产是让 AI 明确表示“通常会发生什么”，而不仅是记录确定事实。</p>",
+      "en": "<p>Marvin Minsky proposed frame representation in 1974 to organize knowledge about stereotyped objects, scenes, or events into structured units. A frame contains slots for attributes, default values used in ordinary cases, constraints among slots, and procedures triggered when information is missing or changes. A new situation can be interpreted by instantiating and modifying an existing frame.</p><p>The proposal treated knowledge not as an unrelated collection of facts but as a contextual whole containing expectations. Frames influenced semantic networks, scripts, expert systems, and object-oriented knowledge representation, while exposing difficult questions about defaults and exceptions. Their central legacy is the attempt to represent what normally happens, not only what is known with certainty.</p>"
     },
     "figures": [
       {
@@ -16034,8 +16050,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>",
-      "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>"
+      "zh": "<p>DENDRAL 于 1960 年代在斯坦福启动，目标是根据质谱等实验数据推断有机分子的可能结构。系统先依据化学约束生成候选结构，再用关于键断裂和谱峰的专家规则预测证据、排除不符合数据的候选，把庞大的组合搜索空间缩小到化学上合理的范围。</p><p>它没有依靠一套完全通用的推理规则，而是把化学家的专门知识编码进程序，展示了知识质量可以比通用搜索技巧更决定系统表现。DENDRAL 因此成为专家系统和知识工程的奠基项目，也推动 AI 从抽象演示走向可由领域专家检验的科学应用。</p>",
+      "en": "<p>DENDRAL began at Stanford in the 1960s to infer plausible organic molecular structures from experimental evidence such as mass spectra. The system generated candidate structures under chemical constraints, then used expert rules about bond fragmentation and spectral peaks to predict evidence and reject candidates inconsistent with the observations, reducing a huge combinatorial space to chemically meaningful possibilities.</p><p>Rather than relying on a completely general reasoning method, DENDRAL encoded specialized knowledge from chemists, demonstrating that the quality of domain knowledge could matter more than generic search technique. It became a founding project for expert systems and knowledge engineering and helped move AI from abstract demonstrations toward scientific applications whose outputs could be evaluated by domain experts.</p>"
     },
     "figures": [
       {
@@ -16505,8 +16521,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>",
-      "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>"
+      "zh": "<p>戴维·洛在 1999 年提出 SIFT，用尺度空间中的高斯差分寻找在不同图像大小下仍稳定的候选关键点，再为关键点分配主方向。算法把邻域内的梯度方向和强度汇总成局部描述子，使同一物体在缩放、旋转以及一定光照和视角变化下仍可匹配。</p><p>这些稀疏但有辨识力的特征让目标识别、图像拼接、定位和三维重建获得可靠的对应点，在深度学习主导视觉前成为标准工具。SIFT 并非对所有几何或外观变化都不变，计算成本也不低，但它建立了“检测稳定关键点并描述局部外观”的经典视觉流水线。</p>",
+      "en": "<p>David Lowe introduced SIFT in 1999 to find candidate keypoints that remain stable across image scales using differences of Gaussians in scale space, then assign each keypoint a dominant orientation. The method summarizes local gradient directions and magnitudes into a descriptor, allowing corresponding regions to be matched under changes in scale, rotation, and moderate illumination or viewpoint.</p><p>These sparse but distinctive features supplied reliable correspondences for object recognition, panorama stitching, localization, and 3D reconstruction, becoming a standard tool before deep learning dominated vision. SIFT is not invariant to every geometric or appearance change and can be computationally expensive, but it established the classic pipeline of detecting stable keypoints and describing local appearance.</p>"
     },
     "figures": [
       {
@@ -16976,8 +16992,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>",
-      "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>"
+      "zh": "<p>范德马滕和辛顿在 2008 年提出 t-SNE，把高维空间中样本之间的局部邻近关系转换为概率分布，再在二维或三维空间中寻找一组点，使其邻域概率尽量相似。低维空间采用重尾 Student t 分布，缓解早期方法把不同群体挤在一起的“拥挤问题”。</p><p>t-SNE 常能把图像、词向量或生物数据中的局部簇结构直观呈现，因此成为最常见的表示可视化工具之一。但图上的簇间距离、簇大小和空白区域不一定忠实反映全局结构，结果还受困惑度、初始化和随机性影响。它适合探索邻域，而不应被当作严格证明。</p>",
+      "en": "<p>Laurens van der Maaten and Geoffrey Hinton introduced t-SNE in 2008 by converting local neighborhood relationships among high-dimensional samples into probabilities, then finding a two- or three-dimensional arrangement with similar neighborhood probabilities. A heavy-tailed Student t distribution in the low-dimensional map reduces the “crowding problem” that caused earlier methods to compress distinct groups together.</p><p>t-SNE often makes local clusters in images, embeddings, or biological measurements visually apparent and became one of the most familiar representation-visualization tools. Distances between clusters, cluster sizes, and empty regions in the map do not necessarily preserve global structure, and results depend on perplexity, initialization, and randomness. It is best used to explore neighborhoods rather than as formal proof of distinct categories.</p>"
     },
     "figures": [
       {
@@ -17450,8 +17466,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
-      "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+      "zh": "<p>弗兰克·罗森布拉特在 1957 年技术报告和 1958 年论文中提出感知机，把一组输入通过可调权重连接到决策单元。训练时，模型根据分类错误增减权重，使决策边界逐步移动；康奈尔航空实验室随后制造 Mark I Perceptron，把部分连接实现为硬件并用于视觉模式实验。</p><p>感知机的重要性在于展示机器可以从标注样本中调整内部参数，而不必由程序员写出全部识别规则。单层感知机只能学习线性可分边界，无法解决 XOR 等问题，这些限制后来引发重要争论；但“加权求和、误差驱动更新和分布式单元”的基本模式成为神经网络历史的关键起点。</p>",
+      "en": "<p>Frank Rosenblatt introduced the perceptron in a 1957 technical report and a 1958 paper, connecting a set of inputs through adjustable weights to a decision unit. During training, the model increases or decreases weights in response to classification errors so the decision boundary moves toward a solution. Cornell Aeronautical Laboratory later built the Mark I Perceptron, implementing parts of the connections in hardware for visual-pattern experiments.</p><p>The perceptron demonstrated that a machine could adjust internal parameters from labeled examples instead of requiring a programmer to write every recognition rule. A single-layer perceptron can learn only linearly separable boundaries and cannot solve problems such as XOR, limitations that later shaped major debates. Its pattern of weighted sums, error-driven updates, and distributed units nevertheless became a crucial starting point for neural-network research.</p>"
     },
     "figures": [
       {
@@ -18036,8 +18052,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。辛顿 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>",
-      "en": "<p>Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.</p>"
+      "zh": "<p>辛顿、奥辛德罗和德在 2006 年提出深度置信网络的快速训练方法，回应当时深层神经网络难以直接优化的问题。训练从底层开始，把每相邻两层视为受限玻尔兹曼机，在无标签数据上逐层学习特征；堆叠完成后，再用生成式或监督目标对整个网络微调。</p><p>这种贪心逐层预训练为深层模型提供较好的参数起点，使数字识别和降维等任务取得有竞争力的结果，也让“深度学习”重新成为可实验的研究方向。后来 ReLU、更大数据、GPU 和改进初始化使纯监督训练更普遍，但 DBN 在深度学习复兴中的历史作用仍然关键。</p>",
+      "en": "<p>Geoffrey Hinton, Simon Osindero, and Yee-Whye Teh introduced a fast training method for deep belief networks in 2006, addressing the difficulty of directly optimizing deep neural networks at the time. Training starts at the bottom, treating each adjacent pair of layers as a restricted Boltzmann machine and learning features from unlabeled data layer by layer. The completed stack is then fine-tuned with a generative or supervised objective.</p><p>This greedy pretraining supplied deep models with a useful parameter initialization and produced competitive results in tasks such as digit recognition and dimensionality reduction, making “deep learning” experimentally credible again. ReLU activations, larger datasets, GPUs, and improved initialization later made fully supervised training more common, but DBNs retain a central historical role in the revival of deep architectures.</p>"
     },
     "figures": [
       {
@@ -18507,8 +18523,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
-      "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+      "zh": "<p>理查德·萨顿在 1988 年系统化时序差分学习，让智能体能够在序列尚未结束时更新对未来回报的预测。TD 更新把当前价值估计向“即时奖励 + 下一状态的估计价值”移动，因此同时利用真实经验和已有预测进行自举，而不必像蒙特卡洛方法那样等待最终结果。</p><p>这种在线、逐步更新方式适合持续交互，并把动态规划与从样本学习连接起来。TD 误差后来成为 Q-learning、SARSA、actor-critic 和许多深度强化学习算法的核心信号。自举也可能传播估计偏差，与函数逼近和离策略学习结合时还会带来稳定性挑战。</p>",
+      "en": "<p>Richard Sutton systematized temporal-difference learning in 1988 so an agent could update predictions of future return before a sequence had ended. A TD update moves the current value estimate toward the immediate reward plus the estimated value of the next state, bootstrapping from both observed experience and an existing prediction rather than waiting for a final outcome as Monte Carlo methods do.</p><p>This online, step-by-step process suits continuing interaction and connects ideas from dynamic programming with learning from samples. The TD error later became a central signal in Q-learning, SARSA, actor-critic methods, and much of deep reinforcement learning. Bootstrapping can also propagate estimation error and creates important stability challenges when combined with function approximation and off-policy learning.</p>"
     },
     "figures": [
       {
@@ -18978,8 +18994,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>贝叶斯网络为 AI 提供了一种紧凑的不确定推理语言。有向图编码变量之间的依赖关系，条件概率表量化证据如何改变信念。这个思想成为诊断、传感器融合、决策支持和后来的因果建模的核心。</p>",
-      "en": "<p>Bayesian networks gave AI a compact language for uncertain reasoning. A directed graph encodes dependencies among variables, while conditional probability tables quantify how evidence should change beliefs. The idea became central to diagnosis, sensor fusion, decision support, and later causal modeling.</p>"
+      "zh": "<p>贝叶斯网络用有向无环图表示随机变量及其条件依赖关系，每个节点只需给出在父节点条件下的概率分布。图结构由此把复杂联合概率分解为较小的局部因子，并通过条件独立关系说明哪些证据会影响哪些变量。</p><p>当新证据到来时，推断算法可以更新疾病诊断、故障原因或环境状态的后验概率；网络结构和参数也可由专家知识与数据共同获得。这种表示成为医学诊断、传感器融合和决策支持的重要工具。若要从图中作出因果解释，还必须加入超出普通概率关联的因果假设。</p>",
+      "en": "<p>A Bayesian network represents random variables and their conditional dependencies with a directed acyclic graph. Each node specifies a probability distribution conditioned only on its parents, factorizing a complex joint distribution into smaller local pieces. The graph also exposes conditional independencies, showing which evidence can influence which variables.</p><p>When evidence arrives, inference algorithms can update posterior probabilities for diagnoses, component failures, or environmental states; experts and data can both contribute to learning the structure and parameters. This representation became important in medical diagnosis, sensor fusion, and decision support. Interpreting the arrows causally, however, requires causal assumptions beyond ordinary probabilistic association.</p>"
     },
     "figures": [
       {
@@ -19452,8 +19468,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Otter 让高性能一阶定理证明成为 AI 与数理逻辑研究者可实际使用的工具。McCune 的系统结合归结、参数调解、项索引、权重控制和实用的 given-clause 搜索循环，成为探索大规模符号证明空间的主力工具。</p>",
-      "en": "<p>Otter made high-performance first-order theorem proving widely usable for AI and mathematical logic researchers. McCune's system combined resolution, paramodulation, term indexing, weighting, and a practical given-clause search loop, becoming a workhorse for exploring large symbolic proof spaces.</p>"
+      "zh": "<p>威廉·麦丘恩在阿贡国家实验室开发 OTTER，使一阶逻辑和等式推理的高性能自动证明成为研究者可实际使用的工具。系统结合归结、超归结和参数调解，并用项索引快速寻找可匹配公式；given-clause 循环则从待处理集合中逐步选择子句，生成新的推论。</p><p>用户可以通过权重、优先级和推理规则控制庞大证明空间中的搜索，使 OTTER 既适合逻辑实验，也能处理代数和组合数学问题。它体现了自动推理从单一算法走向成熟软件系统的阶段，并为 McCune 后续的 Prover9 等证明器积累了工程基础。</p>",
+      "en": "<p>William McCune developed OTTER at Argonne National Laboratory as a practical high-performance tool for automated reasoning in first-order logic with equality. It combined resolution, hyperresolution, and paramodulation, while term indexing rapidly found formulas that could match. A given-clause loop repeatedly selected a clause from the pending set and generated new consequences.</p><p>Users could guide the enormous proof space through weights, priorities, and inference settings, making OTTER useful both for logic experiments and for problems in algebra and combinatorial mathematics. It marked a stage when automated reasoning became a mature software-engineering discipline rather than a single proof rule and provided an engineering foundation for McCune's later systems such as Prover9.</p>"
     },
     "figures": [
       {
@@ -19621,7 +19637,7 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/cs/0310056",
           "purpose": "implementation",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "documentation"
         },
         {
@@ -19946,8 +19962,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>IBM Watson 证明开放域问答可以被工程化为大规模证据排序流水线。面向 Jeopardy!，DeepQA 生成候选答案，汇集多路信号，评分支持证据，并以足够快的速度与顶尖人类选手竞争。</p>",
-      "en": "<p>IBM Watson showed that open-domain question answering could be engineered as a large evidence-ranking pipeline. For Jeopardy!, DeepQA generated candidate answers, gathered many signals, scored supporting evidence, and answered quickly enough to compete with elite human players.</p>"
+      "zh": "<p>IBM Watson 为《危险边缘！》问答比赛构建 DeepQA 流水线：系统先分析包含双关、隐喻和类别提示的问题，生成多个候选答案，再从百科、词典、新闻和其他语料中寻找证据。数百种分析器分别评估时间、地理、文本匹配和来源可靠性等线索，机器学习模型据此合并分数并估计置信度。</p><p>2011 年 Watson 战胜两位顶尖冠军，证明开放域问答可以通过大规模并行证据排序和精细系统工程达到竞赛水平。它并非依靠单一理解模型，也不意味着具备通用常识；其长期影响在于展示候选生成、证据检索、答案评分与置信决策可以组成可审计的问答架构。</p>",
+      "en": "<p>IBM built Watson's DeepQA pipeline for the quiz show <em>Jeopardy!</em>. The system analyzed clues containing wordplay, metaphor, and category hints, generated many candidate answers, and searched encyclopedias, dictionaries, news, and other corpora for evidence. Hundreds of analyzers scored temporal, geographic, textual, and source-reliability signals, which machine-learning models combined into answer scores and confidence estimates.</p><p>Watson defeated two leading champions in 2011, showing that open-domain question answering could reach competition level through massively parallel evidence ranking and careful systems engineering. It did not depend on one general understanding model and did not possess broad common sense. Its lasting contribution was demonstrating an auditable architecture joining candidate generation, evidence retrieval, answer scoring, confidence, and action timing.</p>"
     },
     "figures": [
       {
@@ -20155,7 +20171,7 @@ const milestones = [
           },
           "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
           "purpose": "alternate-access",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper-page"
         },
         {
@@ -20481,8 +20497,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
-      "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+      "zh": "<p>克里斯托弗·斯特雷奇在 1951 年开始为 Pilot ACE 编写跳棋程序，随后把完整版本移植到曼彻斯特 Ferranti Mark I，并在 1952 年运行。程序需要编码棋盘、合法走法和吃子规则，搜索若干步后的局面，再用手工评估函数比较候选路线。</p><p>在计算机仍主要被理解为数值计算设备的时期，这项工作展示了存储程序机器也能处理符号状态、选择和策略。受限内存与速度使搜索深度很浅，程序也远非顶尖棋手，但它把博弈确立为早期 AI 的实验场，并推动剪枝、评估函数和人机交互程序的发展。</p>",
+      "en": "<p>Christopher Strachey began writing a draughts program for the Pilot ACE in 1951, then transferred a complete version to the Manchester Ferranti Mark I, where it ran in 1952. The program encoded the board, legal moves, and captures, searched several plies of future positions, and compared candidate lines with a hand-designed evaluation function.</p><p>At a time when computers were understood mainly as numerical calculators, the work showed that a stored-program machine could manipulate symbolic states, choices, and strategy. Severe memory and speed limits kept the search shallow, and the program was far from elite play, but it established games as an early AI testbed and advanced ideas about pruning, evaluation functions, and interactive programs.</p>"
     },
     "figures": [
       {
@@ -21003,8 +21019,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
-      "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+      "zh": "<p>乔纳森·谢弗领导的阿尔伯塔大学团队开发 Chinook，把开局数据库、alpha-beta 搜索、人工设计的局面评估和逐步扩大的残局数据库结合起来。系统先达到世界冠军级竞技水平，再把重点转向系统枚举和证明标准跳棋的博弈结果。</p><p>2007 年团队报告跳棋被“弱求解”：从标准初始局面开始，在双方完美对弈时结果为和棋。证明依赖计算机生成的大规模搜索与残局知识，而不是单场比赛表现。Chinook 由此把游戏 AI 从击败强手推进到数学求解，也展示了软件、计算资源和长期项目积累如何共同完成超大搜索。</p>",
+      "en": "<p>Jonathan Schaeffer's University of Alberta team developed Chinook by combining opening databases, alpha-beta search, hand-designed position evaluation, and increasingly large endgame databases. The system first reached world-championship competitive strength and then shifted toward systematic enumeration and proof of the outcome of standard checkers.</p><p>In 2007, the team reported that checkers had been weakly solved: from the standard initial position, perfect play by both sides leads to a draw. The proof depended on large computer-generated searches and endgame knowledge, not the result of one match. Chinook therefore moved game AI from defeating strong opponents toward mathematical solution and showed how software, computation, and long-term project accumulation can conquer a vast search space.</p>"
     },
     "figures": [
       {
@@ -21193,7 +21209,7 @@ const milestones = [
           },
           "url": "https://www.science.org/doi/10.1126/science.1144079",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -21519,8 +21535,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>",
-      "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>"
+      "zh": "<p>奥利弗·塞尔弗里奇在 1959 年用“群魔殿”描述一种分层模式识别系统。最底层的“图像魔鬼”接收输入，特征魔鬼寻找线条、角度等局部线索，认知魔鬼把这些线索组合成候选模式；最上层的决策者根据谁“喊得最响”选择识别结果。</p><p>这个拟人化隐喻强调复杂感知可以由许多简单、并行且相互竞争的单元产生，而不必依赖单一中央规则。原始系统仍较粗糙，但分层特征、分布式证据和竞争性决策的思想影响了后来的模式识别、黑板系统和集成方法，也预示了神经网络中的层级表示。</p>",
+      "en": "<p>Oliver Selfridge described Pandemonium in 1959 as a layered pattern-recognition system. “Image demons” receive the input, feature demons detect local evidence such as lines and angles, cognitive demons combine those features into candidate patterns, and a decision demon chooses the interpretation whose advocates “shout” most strongly.</p><p>The anthropomorphic metaphor emphasized that complex perception could emerge from many simple, parallel, competing units rather than one central rule. The original implementation was limited, but its hierarchy of features, distributed evidence, and competitive decision-making influenced later pattern recognition, blackboard systems, and ensemble methods. It also anticipated the broader idea of layered representations in neural computation.</p>"
     },
     "figures": [
       {
@@ -22035,8 +22051,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>",
-      "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>"
+      "zh": "<p>道格拉斯·莱纳特于 1984 年启动 Cyc，试图把人类日常推理依赖但通常不会写出的常识显式编码进计算机。知识工程师用 CycL 表示概念、关系、规则和例外，并用“微理论”把在不同时间、地点或假设下成立的知识分隔开。</p><p>Cyc 的目标不是只解决一个专家领域，而是建立可被多种应用调用的大型知识基础和推理引擎。长期人工编码成本、知识一致性和开放世界覆盖范围始终是挑战，但项目持续证明大规模本体、上下文和规则推理可以工程化，也成为符号 AI 与常识推理讨论的重要参照。</p>",
+      "en": "<p>Douglas Lenat launched Cyc in 1984 to encode explicitly the everyday common sense that people rely on but rarely state. Knowledge engineers used CycL to represent concepts, relations, rules, and exceptions, while “microtheories” separated knowledge that holds under different times, places, domains, or assumptions.</p><p>Rather than solving one expert domain, Cyc aimed to build a large knowledge base and inference engine reusable across applications. The cost of manual encoding, consistency across knowledge, and coverage of an open world remained persistent challenges. Even so, the project demonstrated that large ontologies, context management, and rule-based reasoning could be engineered at unusual scale and became a major reference point for symbolic AI and common-sense reasoning.</p>"
     },
     "figures": [
       {
@@ -22223,7 +22239,7 @@ const milestones = [
           },
           "url": "https://dl.acm.org/doi/book/10.5555/70571",
           "purpose": "background",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "book"
         },
         {
@@ -22238,7 +22254,7 @@ const milestones = [
           },
           "url": "https://dl.acm.org/doi/10.1145/122296.122308",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -22564,8 +22580,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>",
-      "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>"
+      "zh": "<p>约翰·麦克德莫特开发的 R1，后来称为 XCON，于 1980 年前后在数字设备公司用于配置 VAX 计算机订单。系统把组件兼容性、机柜布局、电源、线缆和客户需求写成产生式规则，再通过规则匹配逐步生成可制造的配置。</p><p>XCON 把专家系统从实验室演示推进到持续运行的工业流程，减少了人工配置中的遗漏与昂贵返工，也显示知识库必须随着产品变化长期维护。规则数量增长、例外积累和知识获取成本后来暴露出专家系统的工程负担，但它仍是 AI 创造可量化商业价值的早期标志。</p>",
+      "en": "<p>John McDermott's R1, later called XCON, was deployed around 1980 at Digital Equipment Corporation to configure orders for VAX computer systems. It represented component compatibility, cabinet layout, power, cabling, and customer requirements as production rules, then applied matching rules step by step to produce a configuration that could be manufactured.</p><p>XCON moved expert systems from laboratory demonstrations into a continuing industrial workflow, reducing omissions and expensive rework in manual configuration. It also showed that a knowledge base must be maintained as products change. Growing rule sets, accumulating exceptions, and the cost of knowledge acquisition later exposed the engineering burden of expert systems, but XCON remains an early landmark in measurable commercial value from AI.</p>"
     },
     "figures": [
       {
@@ -22760,7 +22776,7 @@ const milestones = [
           },
           "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
           "purpose": "alternate-access",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "paper-page"
         },
         {
@@ -23086,8 +23102,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>劳埃德于 1957 年在贝尔实验室形成这套方法，相关论文《PCM 中的最小二乘量化》直到 1982 年才正式发表。K-means 让无监督分组简单到成为默认工具；劳埃德方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
-      "en": "<p>Lloyd developed the method at Bell Labs in 1957; the related paper, <em>Least Squares Quantization in PCM</em>, was formally published in 1982. K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to the nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+      "zh": "<p>斯图尔特·劳埃德于 1957 年在贝尔实验室形成这套最小二乘量化方法，相关论文直到 1982 年才正式发表。给定簇数 k，算法在两个步骤间交替：把每个样本分配给最近中心，再把中心移动到所属样本的均值，持续降低簇内平方距离。</p><p>K-means 计算简单、结果直观，成为无监督学习、数据压缩和初始化中的默认工具之一。但它只能保证收敛到局部最优，结果依赖初始中心，也更适合尺度相近、近似球形的簇；异常值、特征缩放和预设 k 值都会影响解释。它的价值在于提供一个清晰可见的聚类优化循环。</p>",
+      "en": "<p>Stuart Lloyd developed this least-squares quantization method at Bell Labs in 1957, although the associated paper was not formally published until 1982. Given a number of clusters k, the algorithm alternates between assigning each sample to its nearest center and moving each center to the mean of its assigned samples, repeatedly reducing within-cluster squared distance.</p><p>K-means is computationally simple and easy to interpret, making it a default tool for unsupervised learning, data compression, and initialization. It guarantees only convergence to a local optimum, depends on the starting centers, and works best for clusters that are similarly scaled and roughly spherical. Outliers, feature scaling, and the predetermined value of k all affect the result. Its lasting strength is a transparent, visible optimization loop for clustering.</p>"
     },
     "figures": [
       {
@@ -23282,7 +23298,7 @@ const milestones = [
           },
           "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
           "purpose": "historical-context",
-          "reliability": "reference-only",
+          "reliability": "secondary",
           "sourceType": "article"
         },
         {
@@ -23608,8 +23624,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>",
-      "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>"
+      "zh": "<p>DBSCAN 用邻域密度而不是预设簇数定义聚类。若一个点在半径 ε 内至少拥有 MinPts 个邻居，它就是核心点；算法从核心点向密度可达的邻居扩展，将连接起来的高密度区域组成簇，并把无法归入任何簇的稀疏点标记为噪声。</p><p>这种定义可以发现弯曲或不规则形状的簇，并在聚类过程中显式处理异常点，特别适合空间数据。DBSCAN 对 ε、MinPts 和距离尺度较敏感，在不同区域密度差异很大或高维距离失去区分力时表现会下降。它仍是“以密度发现结构”的经典方法。</p>",
+      "en": "<p>DBSCAN defines clusters through neighborhood density instead of a predetermined number of groups. A point is a core point when at least MinPts neighbors lie within radius ε. The algorithm expands from core points through density-reachable neighbors, joining connected high-density regions into clusters and labeling sparse points that belong to none of them as noise.</p><p>This definition can discover curved or irregular cluster shapes and handles outliers explicitly during clustering, making it especially useful for spatial data. DBSCAN is sensitive to ε, MinPts, and feature scale, and it struggles when different regions have very different densities or when high-dimensional distances lose discrimination. It remains the classic demonstration that clusters can be defined by density rather than centroids.</p>"
     },
     "figures": [
       {
@@ -24143,8 +24159,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>",
-      "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>"
+      "zh": "<p>谱聚类把样本表示为相似度图：样本是节点，边权表示彼此接近程度。算法构造图拉普拉斯矩阵，并利用其若干特征向量把节点映射到低维空间；在这个空间中，原本缠绕或非凸的群体往往更容易被 k-means 等简单方法分开。</p><p>归一化切分等准则使算法同时考虑簇内连接与簇规模，避免只切下很小的孤立区域。谱方法能处理复杂几何结构，但结果依赖相似度图、核宽度和邻居选择，特征分解在大数据上也较昂贵。它建立了聚类、图划分和线性代数之间的重要桥梁。</p>",
+      "en": "<p>Spectral clustering represents samples as a similarity graph: samples are nodes and edge weights express proximity. The algorithm constructs a graph Laplacian and uses several of its eigenvectors to embed the nodes in a lower-dimensional space. Groups that are intertwined or nonconvex in the original coordinates can become separable there by a simple method such as k-means.</p><p>Criteria such as normalized cuts balance within-group connection against cluster size, avoiding solutions that merely detach tiny isolated regions. Spectral methods can capture complex geometry, but results depend on the similarity graph, kernel width, and neighborhood choices, while eigendecomposition can be expensive at large scale. The approach created an important bridge among clustering, graph partitioning, and linear algebra.</p>"
     },
     "figures": [
       {
@@ -24352,7 +24368,7 @@ const milestones = [
           },
           "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -24678,8 +24694,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>",
-      "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>"
+      "zh": "<p>科弗和哈特在 1967 年系统分析最近邻分类：面对新样本，算法不先拟合参数模型，而是在保存的训练集中寻找距离最近的已标注样本，并用其类别作出预测。k 近邻扩展则让多个邻居投票或按距离加权，从而降低单个样本噪声的影响。</p><p>这种“记住实例、查询时比较”的方法几乎没有训练成本，并能形成复杂的非线性决策边界，因此成为模式识别的持久基线。预测成本会随数据量增加，高维空间中的距离也可能失去意义；特征缩放、距离度量和 k 值选择都至关重要。它清楚体现了局部相似性学习的力量与限制。</p>",
+      "en": "<p>Thomas Cover and Peter Hart systematically analyzed nearest-neighbor classification in 1967. For a new sample, the method fits no parametric model in advance; it searches the stored training set for the closest labeled example and predicts its class. The k-nearest-neighbors extension lets several nearby examples vote or contribute with distance-based weights, reducing sensitivity to one noisy sample.</p><p>This “remember examples and compare at query time” strategy has almost no training cost and can form complex nonlinear decision boundaries, making it a durable pattern-recognition baseline. Prediction becomes more expensive as data grows, and distance can lose meaning in high dimensions. Feature scaling, the distance metric, and the choice of k are therefore crucial. The method clearly exposes both the power and limits of local similarity learning.</p>"
     },
     "figures": [
       {
@@ -25190,8 +25206,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>",
-      "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>"
+      "zh": "<p>霍尔和肯纳德在 1970 年提出岭回归，处理预测变量高度相关时普通最小二乘系数剧烈波动的问题。它在平方误差之外加入系数平方和构成的 L2 惩罚，等价于向正规方程对角线加入正数；解因此带有偏差，却能显著降低方差并改善预测稳定性。</p><p>正则化强度控制“贴合训练数据”和“保持较小系数”之间的权衡。岭回归通常保留全部变量，不像 Lasso 那样产生大量精确零系数，但在多重共线性和许多弱信号共同作用时很有效。它把有意引入偏差以换取泛化能力的思想带入现代统计学习。</p>",
+      "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression in 1970 to address the instability of ordinary least-squares coefficients when predictors are strongly correlated. It adds an L2 penalty on the squared coefficients to the fitting error, equivalently adding a positive value to the diagonal of the normal equations. The estimate becomes biased but can have much lower variance and more stable predictions.</p><p>A regularization parameter controls the tradeoff between fitting the training data and keeping coefficients small. Ridge regression generally retains all variables rather than creating many exact zeros as the Lasso does, but it is effective under multicollinearity and when many weak signals contribute together. It established the modern learning principle of accepting deliberate bias to improve generalization.</p>"
     },
     "figures": [
       {
@@ -25686,8 +25702,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>",
-      "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>"
+      "zh": "<p>达拉尔和特里格斯在 2005 年提出用于行人检测的方向梯度直方图。HOG 把图像窗口划分为小单元，统计每个单元内边缘梯度的方向分布，再在较大的块中归一化这些直方图，以降低光照和局部对比度变化的影响。</p><p>人体轮廓和局部形状由一组稳定的方向统计表示，配合线性支持向量机和滑动窗口即可完成检测。HOG 在深度卷积特征普及前成为行人检测和形状识别的重要基线。它依赖手工设计特征，对遮挡和大幅姿态变化仍有限，但清楚展示了局部梯度如何编码物体外形。</p>",
+      "en": "<p>Navneet Dalal and Bill Triggs introduced Histograms of Oriented Gradients for pedestrian detection in 2005. HOG divides an image window into small cells, counts the directions of local intensity gradients within each cell, and normalizes those histograms over larger blocks to reduce sensitivity to illumination and local contrast.</p><p>A person's outline and local shape become a stable collection of orientation statistics that can be classified with a linear support vector machine in a sliding-window detector. HOG became an important baseline for pedestrian detection and shape recognition before deep convolutional features. Its hand-designed representation remains limited under occlusion and large pose changes, but it clearly demonstrated how local gradients can encode object form.</p>"
     },
     "figures": [
       {
@@ -26198,8 +26214,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>",
-      "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>"
+      "zh": "<p>贝、图伊特拉尔斯和范古尔在 2006 年提出 SURF，目标是在保留尺度与旋转稳健性的同时提高局部特征计算速度。检测器用盒式滤波近似 Hessian 矩阵响应，并借助积分图以近似固定成本计算不同尺度的滤波；描述子则汇总关键点邻域中的 Haar 小波响应。</p><p>SURF 可以为图像匹配、目标识别和三维重建提供可重复的局部对应点，在许多场景中比 SIFT 更快。速度来自近似和紧凑表示，因此不同数据上的精度权衡并不相同。它代表手工局部特征时代对稳健性与实时性的系统优化。</p>",
+      "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF in 2006 to improve the speed of local features while retaining robustness to scale and rotation. Its detector approximates Hessian-matrix responses with box filters and uses integral images to evaluate filters at different scales efficiently. The descriptor summarizes Haar-wavelet responses around each keypoint.</p><p>SURF supplies repeatable local correspondences for image matching, object recognition, and 3D reconstruction and was faster than SIFT in many settings. Its speed comes from approximations and a compact representation, so the accuracy tradeoff varies across data. The method represents the hand-crafted local-feature era's systematic effort to balance robustness with real-time computation.</p>"
     },
     "figures": [
       {
@@ -26694,8 +26710,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>",
-      "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>"
+      "zh": "<p>舍尔科普夫、斯莫拉和穆勒把核技巧应用到主成分分析：先用核函数计算样本间相似度，等价于把数据映射到可能非常高维的特征空间，再对中心化核矩阵求特征向量，而无需显式写出该空间坐标。</p><p>普通 PCA 只能寻找原始坐标中的线性方向，Kernel PCA 则能把弯曲流形或非线性变化展开为主要成分，用于降维、去噪和特征提取。结果高度依赖核函数及其参数，计算和存储还会随样本数量增长；但它清楚展示了核方法如何把线性算法扩展到非线性结构。</p>",
+      "en": "<p>Bernhard Schölkopf, Alexander Smola, and Klaus-Robert Müller applied the kernel trick to principal component analysis. A kernel function first computes similarities among samples, equivalent to mapping the data into a potentially very high-dimensional feature space. Eigenvectors are then obtained from the centered kernel matrix without explicitly constructing coordinates in that space.</p><p>Ordinary PCA finds only linear directions in the original coordinates, while Kernel PCA can unfold curved manifolds or nonlinear variation into principal components for dimensionality reduction, denoising, and feature extraction. Results depend strongly on the kernel and its parameters, and computation and storage grow with the number of samples. The method clearly demonstrated how kernels could extend a linear algorithm to nonlinear structure.</p>"
     },
     "figures": [
       {
@@ -27190,8 +27206,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>",
-      "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>"
+      "zh": "<p>李和承在 1999 年展示非负矩阵分解如何把一个非负数据矩阵近似为两个较小非负矩阵的乘积。由于系数不能通过正负抵消来表达样本，重构只能把若干基础成分相加；在人脸实验中，这些成分常对应眼睛、鼻子等局部部件。</p><p>NMF 因此提供了与 PCA 整体正负基向量不同的“部件式”表示，并被用于文本主题、音频分离、生物数据和推荐系统。分解通常不唯一，优化可能停在局部解，部件也并非必然具有语义；但非负约束如何促进稀疏、可解释表示成为重要思想。</p>",
+      "en": "<p>Daniel Lee and H. Sebastian Seung showed in 1999 how non-negative matrix factorization approximates a non-negative data matrix as the product of two smaller non-negative matrices. Because coefficients cannot represent an example by canceling positive and negative components, reconstruction must add basis elements together. In face experiments, those elements often corresponded to local parts such as eyes or noses.</p><p>NMF therefore offered a “parts-based” representation unlike the holistic positive-and-negative directions of PCA and was applied to text topics, audio separation, biological data, and recommendation. A factorization is generally not unique, optimization can stop at local solutions, and learned parts are not guaranteed to have human meaning. Even so, the way non-negativity can encourage sparse, interpretable representation became influential.</p>"
     },
     "figures": [
       {
@@ -27686,8 +27702,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。</p>",
-      "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.</p>"
+      "zh": "<p>特南鲍姆、德席尔瓦和兰福德在 2000 年提出 Isomap，用于揭示嵌入高维空间中的低维非线性流形。算法先连接每个样本的近邻，形成图结构，再用图上的最短路径近似沿流形表面的测地距离，最后通过经典多维尺度分析寻找保持这些距离的低维坐标。</p><p>与只保持直线距离的线性降维不同，Isomap 能把“瑞士卷”等弯曲结构展开，并努力保存全局几何。若采样过稀、噪声形成错误捷径或流形含有复杂分支，邻居图会失真；但它把图搜索与几何嵌入结合起来，成为流形学习的代表方法。</p>",
+      "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap in 2000 to uncover low-dimensional nonlinear manifolds embedded in high-dimensional space. The algorithm first connects neighboring samples into a graph, uses shortest paths through that graph to approximate geodesic distances along the manifold, and then applies classical multidimensional scaling to find low-dimensional coordinates that preserve those distances.</p><p>Unlike linear reduction based on straight-line distances, Isomap can unfold curved structures such as the “Swiss roll” while attempting to preserve global geometry. Sparse sampling, noise-created shortcuts, or manifolds with complicated branches can distort the neighborhood graph. Even so, its combination of graph search and geometric embedding made it a representative method of manifold learning.</p>"
     },
     "figures": [
       {
@@ -28182,8 +28198,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>",
-      "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>"
+      "zh": "<p>罗维斯和索尔在 2000 年提出局部线性嵌入，假设非线性流形在足够小的邻域内可以近似为线性。算法先为每个样本寻找近邻，并计算一组重建权重，使该样本能由邻居线性组合得到；随后在低维空间中寻找坐标，尽量保持同一组重建权重。</p><p>LLE 不需要显式估计全局距离，也能把弯曲流形展开，同时保留局部邻域关系。它对邻居数量、噪声和采样密度较敏感，且新样本映射和全局几何解释并不直接。其核心贡献是把“局部可重建性”变成非线性降维原则，与 Isomap 共同推动流形学习。</p>",
+      "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding in 2000 with the assumption that a nonlinear manifold is approximately linear in sufficiently small neighborhoods. The algorithm finds neighbors for each sample and computes weights that reconstruct the sample as a linear combination of those neighbors. It then finds low-dimensional coordinates that preserve the same reconstruction weights.</p><p>LLE does not explicitly estimate global distances and can unfold curved manifolds while retaining local neighborhood relationships. It is sensitive to the number of neighbors, noise, and sampling density, and mapping new samples or interpreting global geometry is not automatic. Its central contribution was turning local reconstructability into a principle for nonlinear dimensionality reduction, helping establish manifold learning alongside Isomap.</p>"
     },
     "figures": [
       {
@@ -28678,8 +28694,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>",
-      "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>"
+      "zh": "<p>麦卡洛克和皮茨在 1943 年把神经元理想化为二值阈值单元：它接收兴奋或抑制输入，当满足规定条件时在下一时刻激活。通过连接多个单元，网络可以实现 AND、OR、NOT 等逻辑运算，并用反馈回路表示随时间持续的状态。</p><p>这个模型不是对真实神经元的完整生物描述，也没有学习权重的机制，但它首次以严格形式把神经活动、命题逻辑和可计算过程联系起来。其影响在于证明由简单单元构成的网络能够执行复杂逻辑，为自动机理论、认知模型和后来的人工神经网络提供共同概念起点。</p>",
+      "en": "<p>Warren McCulloch and Walter Pitts idealized a neuron in 1943 as a binary threshold unit. It receives excitatory or inhibitory inputs and becomes active at the next time step when specified conditions are met. By connecting multiple units, a network can implement logical operations such as AND, OR, and NOT, while feedback loops represent states that persist through time.</p><p>The model was neither a complete biological account of real neurons nor a learning system with adjustable weights. Its importance was formally connecting neural activity, propositional logic, and computable processes for the first time. It showed how networks of simple units could carry out complex logical operations and provided a shared conceptual starting point for automata theory, cognitive models, and later artificial neural networks.</p>"
     },
     "figures": [
       {
@@ -29174,8 +29190,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>",
-      "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>"
+      "zh": "<p>马文·明斯基和迪恩·埃德蒙兹在 1951 年建造 SNARC，即随机神经模拟强化计算机。机器用真空管、电机和模拟连接构成多个神经元式单元，模拟一只虚拟老鼠在迷宫中选择路径；当某条路径获得“奖励”时，相关连接的通过概率会被增强。</p><p>SNARC 规模很小，也不是现代数字神经网络，但它把随机决策、可变连接和强化信号组合成可运行硬件，展示行为能够通过经验逐渐改变。它是早期神经模拟与强化学习史上的重要实物案例，也反映了 AI 尚未定型时模拟电路、心理学和学习理论之间的紧密联系。</p>",
+      "en": "<p>Marvin Minsky and Dean Edmonds built SNARC, the Stochastic Neural Analog Reinforcement Calculator, in 1951. Using vacuum tubes, motors, and analog connections, the machine assembled neuron-like units that simulated a virtual rat choosing paths through a maze. When a path received a “reward,” the probability of transmission through associated connections increased.</p><p>SNARC was small and unlike a modern digital neural network, but it combined stochastic choice, modifiable connections, and reinforcement signals in working hardware, demonstrating that behavior could change through experience. It remains an important physical example in the early history of neural simulation and reinforcement learning and reflects the close interaction among analog electronics, psychology, and learning theory before AI had settled into distinct schools.</p>"
     },
     "figures": [
       {
@@ -29301,6 +29317,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-mit-minsky-history",
+          "type": {
+            "zh": "文章",
+            "en": "Article"
+          },
+          "label": {
+            "zh": "麻省理工学院：马文·明斯基与早期神经网络研究",
+            "en": "MIT: Marvin Minsky and Early Neural-Network Research"
+          },
+          "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+          "purpose": "core-evidence",
+          "reliability": "secondary",
+          "sourceType": "article"
+        },
+        {
           "id": "source-snarc-history-overview",
           "type": {
             "zh": "文章",
@@ -29362,6 +29393,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-mit-minsky-history",
         "source-snarc-history-overview",
         "source-history-of-ai-snarc-article",
         "source-stochastic-neural-analog-reinforcement-calculator-overview",
@@ -29664,8 +29696,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>",
-      "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>"
+      "zh": "<p>泰沃·科霍宁在 1982 年提出自组织映射，把一组输出单元排列成通常为二维的网格。每次输入到来时，系统寻找权重向量最接近输入的“获胜单元”，并同时把获胜者及其网格邻居的权重向输入方向移动；邻域范围随训练逐渐缩小。</p><p>这种竞争与协同更新使相似输入映射到相近位置，在降低维度的同时大致保持数据拓扑，因而适合聚类、探索和可视化。SOM 的地图形状和距离解释依赖训练参数，也可能扭曲高维结构，但它把无监督表示学习变成可观看的空间组织过程。</p>",
+      "en": "<p>Teuvo Kohonen introduced the self-organizing map in 1982 by arranging output units on a usually two-dimensional grid. For each input, the system finds the “winning unit” whose weight vector is closest, then moves both the winner and its grid neighbors toward the input. The neighborhood radius gradually shrinks during training.</p><p>This combination of competition and cooperation places similar inputs near one another, approximately preserving data topology while reducing dimension, which makes SOMs useful for clustering, exploration, and visualization. The map's shape and distances depend on training choices and may distort high-dimensional structure. Its lasting appeal is that unsupervised representation learning becomes a visible process of spatial self-organization.</p>"
     },
     "figures": [
       {
@@ -30147,8 +30179,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>",
-      "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>"
+      "zh": "<p>多层网络的误差梯度并非在单一年份突然出现。甘利俊一 1967 年的自适应模式分类研究已经讨论多层系统中的误差修正；到 1986 年，鲁梅尔哈特、辛顿和威廉姆斯清晰展示了如何用链式法则把输出误差逐层向后传播，并据此更新各层权重、学习内部表示。</p><p>反向传播本质上是高效计算复合函数梯度的方法，使大量参数能够共同接受端到端训练。它并不保证优化容易，深层网络仍会遇到梯度消失、局部几何和数据需求等问题；但与可微模型和梯度下降结合后，它成为现代神经网络训练的核心计算机制。</p>",
+      "en": "<p>The gradient method behind multilayer learning did not appear in a single year. Shunichi Amari's 1967 work on adaptive pattern classifiers already examined error correction in multilayer systems. In 1986, David Rumelhart, Geoffrey Hinton, and Ronald Williams clearly demonstrated how the chain rule could propagate output errors backward through layers, updating every set of weights and learning internal representations.</p><p>Backpropagation is fundamentally an efficient way to compute gradients through a composition of functions, allowing many parameters to be trained together end to end. It does not make optimization automatically easy: deep networks can still face vanishing gradients, difficult geometry, and large data requirements. Combined with differentiable models and gradient descent, however, it became the central computational mechanism of modern neural-network training.</p>"
     },
     "figures": [
       {
@@ -30300,7 +30332,7 @@ const milestones = [
           },
           "url": "https://doi.org/10.1109/PGEC.1967.264666",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -31192,8 +31224,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>",
-      "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>"
+      "zh": "<p>福岛邦彦在 1980 年提出 Neocognitron，构建受视觉皮层启发的层级自组织网络。S 细胞层从局部感受野中检测线段和更复杂特征，C 细胞层在邻近位置汇聚响应，使模式即使发生一定平移或形变也能被识别；多层交替逐步形成更抽象表示。</p><p>Neocognitron 尚未采用后来 CNN 中以反向传播端到端训练共享卷积核的标准方式，但它明确展示了局部连接、层级特征和空间容忍性可以组合成视觉识别系统。它连接了早期生物启发模型与 LeNet 等现代卷积网络，是 CNN 架构思想的重要先驱。</p>",
+      "en": "<p>Kunihiko Fukushima introduced the neocognitron in 1980 as a hierarchical self-organizing network inspired by visual cortex. S-cell layers detect lines and increasingly complex features within local receptive fields, while C-cell layers pool responses over nearby positions so patterns can still be recognized after limited shifts or deformation. Alternating layers gradually construct more abstract representations.</p><p>The neocognitron did not use the later CNN standard of end-to-end backpropagation through shared convolutional kernels. It nevertheless showed clearly that local connectivity, feature hierarchies, and spatial tolerance could be combined in a visual-recognition system. It became an important architectural precursor linking early biologically inspired models to LeNet and modern convolutional networks.</p>"
     },
     "figures": [
       {
@@ -31675,8 +31707,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
-      "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+      "zh": "<p>勒昆及合作者在 1989 年证明，用反向传播训练的卷积神经网络可以识别手写邮政编码。局部感受野只连接图像的小区域，共享权重让同一特征检测器在不同位置重复使用，逐层下采样则降低对微小位移的敏感性；整个系统从像素到类别共同训练。</p><p>后来形成的 LeNet-5 把卷积、子采样和分类器整合为文档识别流水线，并实际用于支票和邮政字符处理。这一技术路线以较少参数利用图像的空间结构，取代大量手工特征。它在 2012 年规模化 CNN 浪潮之前，已证明端到端卷积学习具有工程价值。</p>",
+      "en": "<p>Yann LeCun and colleagues showed in 1989 that a convolutional neural network trained with backpropagation could recognize handwritten ZIP codes. Local receptive fields connect only to small image regions, shared weights reuse the same feature detector across positions, and progressive subsampling reduces sensitivity to small shifts. The complete system is trained jointly from pixels to classes.</p><p>The later LeNet-5 architecture integrated convolution, subsampling, and classification into a document-recognition pipeline used for checks and postal characters. This line of work exploited image structure with relatively few parameters and replaced extensive hand-designed features. Long before the scaled CNN wave of 2012, it demonstrated that end-to-end convolutional learning could deliver practical engineering value.</p>"
     },
     "figures": [
       {
@@ -31910,7 +31942,7 @@ const milestones = [
           },
           "url": "https://yann.lecun.com/exdb/lenet/",
           "purpose": "background",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "project-page"
         },
         {
@@ -32247,8 +32279,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>神经概率语言模型用学习得到的分布式词表示和神经预测器取代稀疏的 n-gram 表。在 word2vec 和 Transformer 语言模型之前，它把语言建模与表示学习连接起来。</p>",
-      "en": "<p>Neural probabilistic language models replaced sparse n-gram tables with learned distributed word representations and a neural predictor. This helped connect language modeling to representation learning before word2vec and transformer LMs.</p>"
+      "zh": "<p>本吉奥等人的神经概率语言模型把固定长度上下文中的每个词映射为可学习稠密向量，再由神经网络预测下一个词的概率。词向量与预测器共同训练，使在不同上下文中作用相似的词共享统计强度，而不必为每个 n-gram 组合单独保存计数。</p><p>这种分布式表示缓解了传统语言模型的数据稀疏问题，并把语言建模与表示学习直接连接起来。原始模型仍受固定上下文窗口和大词表 softmax 计算成本限制，但它为 Word2Vec、神经机器翻译和后来的 Transformer 语言模型建立了关键思想：词义可以在预测任务中学习为连续向量。</p>",
+      "en": "<p>Yoshua Bengio and colleagues' neural probabilistic language model mapped each word in a fixed-length context to a learned dense vector, then used a neural network to predict the probability of the next word. The embeddings and predictor were trained together, allowing words with similar roles across contexts to share statistical strength instead of storing a separate count for every n-gram combination.</p><p>This distributed representation reduced the data-sparsity problem of traditional language models and directly connected language modeling with representation learning. The original model still had a fixed context window and an expensive softmax over a large vocabulary. It nevertheless established a key idea for Word2Vec, neural machine translation, and later Transformer language models: word meaning can be learned as continuous vectors through a prediction task.</p>"
     },
     "figures": [
       {
@@ -32730,8 +32762,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。</p>",
-      "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning at Microsoft Research Asia. ResNet used shortcut connections so very deep networks could learn residual refinements instead of full transformations, solving a practical training bottleneck and becoming a standard visual backbone. The fused version combines the deep-learning storyline's emphasis on engineering simplicity and trainability with the AI100 paper sources and residual-block explanation.</p>"
+      "zh": "<p>何恺明、张祥雨、任少卿和孙剑在 2015 年提出残差学习，解决网络加深后训练误差反而上升的“退化问题”。残差块不直接学习完整映射 H(x)，而是学习修正量 F(x)，再通过恒等快捷连接输出 F(x)+x；信息和梯度因此可以沿更直接路径穿过网络。</p><p>这一极简结构使 50、101、152 层等非常深的网络能够稳定训练，并在 ImageNet 和检测任务上取得突破。ResNet 随后成为视觉系统的常用骨干，也影响语音、语言和生成模型中的跳跃连接设计。它的重要性在于改变了深层架构的基本问题：每层不必重建全部表示，只需学习必要变化。</p>",
+      "en": "<p>Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning in 2015 to address the “degradation problem,” where adding layers could increase training error. A residual block does not learn the complete mapping H(x) directly; it learns a correction F(x) and adds an identity shortcut to output F(x)+x. Information and gradients can therefore travel through a more direct path.</p><p>This minimal structure made very deep networks such as 50-, 101-, and 152-layer models practical to train and produced major ImageNet and detection results. ResNet became a standard visual backbone and influenced skip connections in speech, language, and generative models. Its central lesson changed the architecture question: a layer need not rebuild the whole representation when it can learn only the necessary change.</p>"
     },
     "figures": [
       {
@@ -33387,8 +33419,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>",
-      "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>"
+      "zh": "<p>约菲和泽格迪在 2015 年提出批归一化，在训练时用小批量统计量对中间激活进行标准化，再通过可学习的缩放和偏移恢复网络需要的表示范围。推理阶段则使用训练期间积累的总体统计量，使输出不再依赖当前批次。</p><p>BatchNorm 让更高学习率和更深网络更容易优化，降低了对初始化的敏感性，并常带来一定正则化效果。原论文以减少“内部协变量偏移”解释作用机制，后续研究对这一解释提出修正；但它改变优化几何、稳定激活和加速训练的实际价值已被广泛验证。</p>",
+      "en": "<p>Sergey Ioffe and Christian Szegedy introduced batch normalization in 2015. During training it standardizes intermediate activations with mini-batch statistics, then restores the representational range needed by the network through learned scale and offset parameters. At inference time, accumulated population statistics replace dependence on the current batch.</p><p>BatchNorm made higher learning rates and deeper networks easier to optimize, reduced sensitivity to initialization, and often supplied a regularizing effect. The original paper explained it through reduced “internal covariate shift,” an interpretation that later research refined or challenged. Its practical value in changing optimization geometry, stabilizing activations, and accelerating training nevertheless became firmly established.</p>"
     },
     "figures": [
       {
@@ -33877,8 +33909,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
-      "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+      "zh": "<p>黄高等人在 2016 年公开 DenseNet，把密集块中的每一层与其后所有层直接连接。新层接收前面各层特征图的拼接，而不是只读取上一层输出；它只需产生少量新的特征通道，早期特征则可以被后续层反复复用。</p><p>这些短连接为梯度提供多条直接路径，缓解深层网络的优化困难，并在较少参数下获得有竞争力的准确率。特征拼接会增加显存访问和中间激活成本，因此不一定在所有硬件上最高效；但 DenseNet 把“保留并复用历史特征”推到极致，成为连接设计的重要参照。</p>",
+      "en": "<p>Gao Huang and colleagues released DenseNet in 2016, connecting every layer inside a dense block directly to all later layers. A new layer receives the concatenated feature maps of all preceding layers instead of only the previous output. It can produce a small number of new channels while later layers repeatedly reuse earlier features.</p><p>These short connections give gradients many direct routes, easing optimization in deep networks and delivering competitive accuracy with relatively few parameters. Concatenation can increase memory traffic and the cost of stored activations, so DenseNet is not the most efficient choice on every device. Its extreme commitment to preserving and reusing earlier features nevertheless became an important reference for connectivity design.</p>"
     },
     "figures": [
       {
@@ -34408,8 +34440,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>",
-      "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>"
+      "zh": "<p>Vision Transformer 把图像切成固定大小的 patch，将每个图像块线性投影为词元式向量，加入位置编码和分类词元后，直接送入标准 Transformer 编码器。与 CNN 不同，ViT 不在架构中强制使用局部卷积，而让自注意力从数据中学习图像块之间的全局关系。</p><p>原论文表明，在大规模预训练数据上，纯 Transformer 可以达到或超过强卷积网络，再迁移到常见视觉任务。ViT 对数据规模和训练配方较敏感，标准注意力成本也会随图像块数量平方增长；但它推动注意力架构进入主流视觉，并统一了语言、图像和多模态模型的设计语言。</p>",
+      "en": "<p>Vision Transformer divides an image into fixed-size patches, linearly projects each patch into a token-like vector, adds positional information and a classification token, and feeds the sequence into a standard Transformer encoder. Unlike a CNN, ViT does not enforce local convolution in its architecture; self-attention learns relationships among image patches from data, including long-range interactions.</p><p>The original work showed that with large-scale pretraining, a pure Transformer could match or exceed strong convolutional networks and then transfer to common vision tasks. ViT is sensitive to data scale and training recipes, and standard attention grows quadratically with the number of patches. It nevertheless moved attention into mainstream vision and helped unify the design language of text, image, and multimodal models.</p>"
     },
     "figures": [
       {
@@ -34904,8 +34936,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>",
-      "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant.</p>"
+      "zh": "<p>霍赫赖特和施密德胡伯在 1997 年提出 LSTM，缓解循环神经网络在长序列上梯度消失或爆炸的问题。核心记忆单元通过近似恒定的自连接让误差信号沿时间传播，输入门控制何时写入，输出门控制何时读取，从而把短期计算与较长期状态分开。</p><p>原始 LSTM 并不包含后来标准架构中的遗忘门；遗忘机制由后续工作加入，使网络可以主动清除旧状态。LSTM 及其变体曾广泛用于语音识别、翻译、手写识别和时间序列，在注意力模型占据主导前，使长距离序列学习成为实用技术，并确立门控信息流的设计范式。</p>",
+      "en": "<p>Sepp Hochreiter and Jürgen Schmidhuber introduced LSTM in 1997 to address vanishing or exploding gradients across long recurrent sequences. Its central memory cell uses an approximately constant self-connection so error signals can travel through time. An input gate controls when information is written, and an output gate controls when it is read, separating short-term computation from longer-lived state.</p><p>The original LSTM did not contain the forget gate found in later standard architectures; subsequent work added forgetting so the network could actively clear obsolete state. LSTM variants became widely used in speech recognition, translation, handwriting recognition, and time-series modeling. Before attention models became dominant, they made long-range sequence learning practical and established gated information flow as a durable design pattern.</p>"
     },
     "figures": [
       {
@@ -35487,8 +35519,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
-      "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+      "zh": "<p>古德费洛等人在 2014 年提出生成对抗网络，把生成建模写成两个神经网络的博弈。生成器把随机噪声转换为候选样本，判别器学习区分真实数据与生成结果；生成器则根据判别器反馈调整参数，目标是让生成分布逐渐接近真实分布。</p><p>GAN 不需要显式写出复杂概率密度，就能生成清晰图像，并迅速推动图像合成、表示学习和条件生成研究。训练可能出现不稳定、模式崩溃和评价困难，两个网络的平衡也很敏感。尽管扩散模型后来在许多生成任务中占据优势，GAN 建立的对抗学习框架仍深刻影响生成式 AI。</p>",
+      "en": "<p>Ian Goodfellow and colleagues introduced generative adversarial networks in 2014 by formulating generative modeling as a game between two neural networks. A generator transforms random noise into candidate samples, while a discriminator learns to distinguish real data from generated outputs. Feedback from the discriminator trains the generator to move its distribution closer to the real one.</p><p>GANs could produce sharp images without explicitly specifying a complicated probability density and rapidly advanced image synthesis, representation learning, and conditional generation. Training can be unstable, collapse to limited modes, and be difficult to evaluate, while the balance between the two networks is sensitive. Diffusion models later became stronger in many generation tasks, but the adversarial-learning framework established by GANs remains deeply influential.</p>"
     },
     "figures": [
       {
@@ -36018,8 +36050,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
-      "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+      "zh": "<p>巴赫达瑙、赵京贤和本吉奥在 2014 年改进神经机器翻译，解决编码器必须把整句压缩进单一固定向量的瓶颈。编码器为源句各位置生成表示，解码器每产生一个目标词，就计算与这些位置的匹配分数并归一化为权重，再用加权上下文决定输出。</p><p>这种可学习的“软对齐”让模型在翻译长句时动态关注不同词语，同时使对齐关系可以被观察。它最初仍运行在循环编码器—解码器之上，并不是后来的自注意力 Transformer；但它把内容相关的选择变成可微模块，为注意力成为现代序列模型的核心计算原语铺平道路。</p>",
+      "en": "<p>Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio improved neural machine translation in 2014 by removing the bottleneck that forced an encoder to compress an entire sentence into one fixed vector. The encoder produces a representation at each source position. For every target word, the decoder scores its match to those positions, normalizes the scores into weights, and uses the weighted context to produce the output.</p><p>This learned “soft alignment” lets the model attend dynamically to different words while translating long sentences and makes alignment patterns inspectable. The original method still sat on top of recurrent encoders and decoders and was not the later self-attention Transformer. It nevertheless turned content-dependent selection into a differentiable module and prepared attention to become a central computational primitive of modern sequence models.</p>"
     },
     "figures": [
       {
@@ -36584,8 +36616,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>",
-      "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line.</p>"
+      "zh": "<p>德夫林等人在 2018 年提出 BERT，用 Transformer 编码器从左右两侧上下文共同学习词语表示。预训练时，模型预测被随机遮盖的词元，并在原始版本中同时执行下一句预测；完成后，只需加入较小任务头并用标注数据微调，就能适配问答、文本分类和序列标注。</p><p>BERT 把“大规模无标签预训练 + 少量任务微调”变成 NLP 的标准范式，并在多项基准上显著提升表现。它主要学习理解型双向表示，并非像 GPT 那样按从左到右方式生成长文本。后续模型修改了预训练目标和规模，但 BERT 确立的上下文化编码器路线持续影响搜索、信息抽取和语言理解。</p>",
+      "en": "<p>Jacob Devlin and colleagues introduced BERT in 2018 as a Transformer encoder that learns each token from both left and right context. During pretraining it predicts randomly masked tokens and, in the original version, also performs next-sentence prediction. A comparatively small task head can then be added and the whole model fine-tuned with labeled data for question answering, classification, or sequence labeling.</p><p>BERT made “large-scale unlabeled pretraining plus limited task-specific fine-tuning” a standard NLP pattern and produced major gains across benchmarks. It primarily learns bidirectional representations for understanding tasks rather than generating long text from left to right like GPT. Later models changed the objectives and scale, but BERT's contextual encoder route continued to shape search, information extraction, and language understanding.</p>"
     },
     "figures": [
       {
@@ -37124,8 +37156,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>",
-      "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models.</p>"
+      "zh": "<p>OpenAI 团队在 2018 年提出第一代 GPT，先用 BooksCorpus 等无标签文本训练只看左侧上下文的 Transformer 解码器预测下一个词，再把通用语言表示用监督微调适配分类、问答和文本蕴含等任务。不同任务被转换成模型能够按统一序列接口处理的输入。</p><p>这项工作证明生成式语言建模可以成为通用预训练目标，减少每个 NLP 任务对大量标注数据和专用架构的依赖。首代 GPT 的规模和能力远小于后来的模型，也不是对话产品；但“解码器式预训练、任务适配并持续扩大数据与参数”的路线成为 GPT-2、GPT-3 及现代大语言模型的重要起点。</p>",
+      "en": "<p>OpenAI's first GPT, introduced in 2018, pretrained a Transformer decoder on unlabeled text such as BooksCorpus by predicting the next word from left context. The general language representation was then adapted with supervised fine-tuning to classification, question answering, and textual-entailment tasks, with different tasks transformed into a common sequence interface.</p><p>The work showed that generative language modeling could serve as a general pretraining objective, reducing dependence on large labeled datasets and specialized architectures for every NLP task. The first GPT was far smaller and less capable than later systems and was not a conversational product. Its route of decoder pretraining, task adaptation, and continued scaling of data and parameters nevertheless became the starting line for GPT-2, GPT-3, and modern large language models.</p>"
     },
     "figures": [
       {
@@ -37674,8 +37706,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
-      "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+      "zh": "<p>DeepMind 的 AlphaFold2 在 2020 年 CASP14 盲测中取得突破性精度，并于 2021 年论文中公开系统方法。模型联合处理多序列比对中的进化信息和氨基酸残基对关系，通过 Evoformer 的注意力更新两类表示，再由结构模块直接预测三维坐标并反复精修。</p><p>它使大量蛋白质能够在缺少实验结构时获得高质量预测，AlphaFold 数据库又把结果扩展到大规模开放资源，显著改变结构生物学的日常工作。预测仍不能替代实验验证，也不完整描述动态、配体和所有复合物状态；但它证明深度学习可以解决长期科学瓶颈并直接服务研究。</p>",
+      "en": "<p>DeepMind's AlphaFold2 achieved breakthrough accuracy in the blind CASP14 assessment in 2020, with the system described publicly in a 2021 paper. It jointly processes evolutionary information from multiple-sequence alignments and relationships between amino-acid residue pairs. Attention in the Evoformer updates both representations, and a structure module predicts three-dimensional coordinates with iterative refinement.</p><p>The system supplied high-quality predictions for many proteins lacking experimental structures, and the AlphaFold database expanded those results into a large open resource that changed everyday structural-biology work. Predictions do not replace experimental validation and do not fully represent dynamics, ligands, or every complex state. AlphaFold nevertheless demonstrated that deep learning could overcome a long-standing scientific bottleneck and directly support research.</p>"
     },
     "figures": [
       {
@@ -38041,7 +38073,7 @@ const milestones = [
           },
           "url": "https://alphafold.ebi.ac.uk/",
           "purpose": "dataset-access",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "dataset"
         },
         {
@@ -38363,8 +38395,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。</p>",
-      "en": "<p>OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.</p>"
+      "zh": "<p>OpenAI 在 2021 年提出 CLIP，用图像编码器和文本编码器分别处理网页规模的图文对。在一个训练批次中，模型提高正确图文配对的相似度，同时降低错误组合的相似度，从而把视觉概念和自然语言描述对齐到共享向量空间。</p><p>推理时，用户可以把类别名称写成文本提示，与图像向量比较，实现无需该数据集专门训练的零样本分类。CLIP 让自然语言成为可扩展视觉监督接口，也支撑后来的图像检索和生成模型。它会继承网络数据的偏见，对提示措辞和分布变化也可能敏感。</p>",
+      "en": "<p>OpenAI introduced CLIP in 2021 with separate image and text encoders trained on web-scale image-text pairs. Within each training batch, the model increases similarity for correct pairs and decreases it for mismatched combinations, aligning visual concepts and natural-language descriptions in a shared embedding space.</p><p>At inference time, class names can be written as text prompts and compared with an image vector, enabling zero-shot classification without training specifically on that labeled dataset. CLIP made natural language a scalable interface for visual supervision and later supported retrieval and generative models. It also inherits biases from web data and can be sensitive to prompt wording and distribution shifts.</p>"
     },
     "figures": [
       {
@@ -38840,8 +38872,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>",
-      "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>"
+      "zh": "<p>OpenAI 在 2021 年提出首代 DALL·E，先用离散变分自编码器把图像压缩为一串视觉词元，再让自回归 Transformer 联合建模文本词元和图像词元。给定描述后，模型逐步预测视觉序列，并由解码器还原为图像。</p><p>它展示了单一生成模型可以组合物体、属性、风格和空间关系，并在没有为每个概念单独训练的情况下响应新文本提示。首代 DALL·E 与后来采用扩散技术的版本架构不同，输出分辨率和一致性也有限；但它把开放式文生图带入公众视野，并推动语言控制视觉生成的研究。</p>",
+      "en": "<p>OpenAI introduced the first DALL·E in 2021. A discrete variational autoencoder first compressed images into sequences of visual tokens, and an autoregressive Transformer jointly modeled those image tokens with text tokens. Given a description, the model predicted the visual sequence step by step and decoded it back into an image.</p><p>The system showed that one generative model could combine objects, attributes, styles, and spatial relations while responding to text concepts not trained as separate tasks. The first DALL·E used a different architecture from later diffusion-based versions and had limited resolution and consistency. It nevertheless brought open-ended text-to-image generation into public view and accelerated research on language-controlled visual synthesis.</p>"
     },
     "figures": [
       {
@@ -39323,8 +39355,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。</p>",
-      "en": "<p>Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.</p>"
+      "zh": "<p>潜扩散模型先用自编码器把高分辨率图像压缩到较小潜空间，再训练 U-Net 逐步去除加入潜变量的噪声。文本编码通过交叉注意力调节去噪过程，使模型能够按提示生成图像；最终潜表示由解码器还原到像素空间，大幅降低直接在原图上扩散的计算成本。</p><p>2022 年 Stable Diffusion 的开放权重发布让这一方法进入广泛创作、研究和本地部署，促进微调、控制工具和生态扩展。它也放大了训练数据许可、艺术家权益、偏见和合成内容滥用等争议。其历史意义既在潜空间效率，也在开放发布如何改变生成模型的传播速度。</p>",
+      "en": "<p>Latent diffusion first compresses high-resolution images into a smaller latent space with an autoencoder, then trains a U-Net to remove noise from latent variables step by step. Text embeddings condition the denoising process through cross-attention, allowing prompts to guide image creation. A decoder finally returns the latent representation to pixels, greatly reducing the cost of diffusion directly over full-resolution images.</p><p>The 2022 release of Stable Diffusion weights brought this method into widespread creation, research, and local deployment, accelerating fine-tuning, control tools, and a broad ecosystem. It also intensified disputes over training-data licensing, artist rights, bias, and misuse of synthetic content. Its historical importance lies both in latent-space efficiency and in how an open release changed the speed at which generative models spread.</p>"
     },
     "figures": [
       {
@@ -39810,8 +39842,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Meta AI 提出 Segment Anything Model 和 SA-1B 数据集，使可提示的图像分割能够广泛复用。SAM 不再为每个领域单独训练分割器，而是响应点、框和掩码等提示。</p>",
-      "en": "<p>Meta AI introduced the Segment Anything Model and the SA-1B dataset to make promptable image segmentation broadly reusable. Instead of training a separate segmenter for every domain, SAM responds to points, boxes, and masks as prompts.</p>"
+      "zh": "<p>Meta AI 在 2023 年提出 Segment Anything Model，把图像分割设计成可提示的基础任务。大型图像编码器预先计算视觉表示，提示编码器接收点、框或已有掩码，轻量掩码解码器据此快速输出一个或多个候选区域，并处理提示可能对应多种合理分割的歧义。</p><p>团队还通过数据引擎构建 SA-1B 大规模掩码数据集，使模型能够在许多未专门训练的图像和任务上零样本迁移。SAM 不会自动理解每个区域的语义名称，专业领域也可能需要适配；但它把分割从固定类别预测转为交互式通用接口，改变了标注和视觉工具链。</p>",
+      "en": "<p>Meta AI introduced the Segment Anything Model in 2023 by treating image segmentation as a promptable foundation task. A large image encoder computes a reusable visual representation, a prompt encoder accepts points, boxes, or existing masks, and a lightweight mask decoder quickly returns one or more candidate regions, accounting for prompts that may have several reasonable interpretations.</p><p>The team also created the large SA-1B mask dataset through a data engine, enabling zero-shot transfer across many images and tasks not specifically used for training. SAM does not automatically provide semantic names for every region, and specialized domains may require adaptation. It nevertheless changed segmentation from fixed-category prediction into a general interactive interface for annotation and visual tools.</p>"
     },
     "figures": [
       {
@@ -40293,8 +40325,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>",
-      "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>"
+      "zh": "<p>Swin Transformer 把自注意力限制在局部窗口内，使计算量随图像大小近似线性增长；相邻层再把窗口位置平移，让原本分隔的区域能够交换信息。随着网络加深，patch 合并逐步降低分辨率、增加通道，形成类似 CNN 的层级多尺度特征图。</p><p>这种设计保留 Transformer 的注意力建模能力，又满足检测和分割对不同空间尺度的需求，使同一骨干能服务图像分类、目标检测和语义分割。局部窗口仍是一种架构先验，但它解决了全局注意力在高分辨率图像上的成本问题，推动 Transformer 成为通用视觉骨干。</p>",
+      "en": "<p>Swin Transformer restricts self-attention to local windows so computation grows approximately linearly with image size. Successive layers shift the window arrangement, allowing regions separated in one layer to exchange information in the next. As depth increases, patch merging reduces spatial resolution and increases channels, creating a hierarchy of multiscale feature maps similar to a CNN.</p><p>The design retains attention-based modeling while meeting the needs of detection and segmentation at different spatial scales, allowing one backbone to support classification, object detection, and semantic segmentation. Local windows remain an architectural prior, but they solve much of the cost of global attention on high-resolution images and helped make Transformers practical as general-purpose visual backbones.</p>"
     },
     "figures": [
       {
@@ -40802,8 +40834,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>",
-      "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>"
+      "zh": "<p>斯坦福团队在 2014 年提出 GloVe，从整个语料库的词共现矩阵学习向量。模型用加权最小二乘目标，使两个词向量的内积逼近其共现次数的对数，并强调共现概率比所携带的语义信息；高频与极低频组合通过权重函数得到平衡。</p><p>GloVe 把传统全局计数统计与稠密神经词向量连接起来，训练后可直接用于相似度、分类和其他 NLP 任务。它与 Word2Vec 一样属于静态表示，同一个词在所有上下文中只有一个向量，也会继承语料偏见；但其公开向量长期成为广泛使用的基线。</p>",
+      "en": "<p>The Stanford team introduced GloVe in 2014 to learn vectors from a corpus-wide word co-occurrence matrix. A weighted least-squares objective makes the dot product of two word vectors approximate the logarithm of their co-occurrence count, emphasizing semantic information carried by ratios of co-occurrence probabilities. A weighting function balances very frequent and very rare pairs.</p><p>GloVe connected traditional global count statistics with dense neural-style embeddings, producing vectors that could be reused for similarity, classification, and other NLP tasks. Like Word2Vec, it is a static representation: one word has the same vector in every context, and corpus biases remain embedded. Its openly distributed vectors nevertheless became a widely used and durable baseline.</p>"
     },
     "figures": [
       {
@@ -41311,8 +41343,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>",
-      "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>"
+      "zh": "<p>米尔扎和奥辛德罗在 2014 年把辅助信息 y 同时输入 GAN 的生成器和判别器。y 可以是类别标签、属性或其他条件：生成器学习在给定条件下产生样本，判别器则判断样本是否真实且与条件匹配，从而把无方向采样变成可控制生成。</p><p>原论文用类别控制数字生成，并探索图像与文本表示的条件关系。这个简单扩展成为后来文本到图像、标签到图像和属性编辑的重要基础。条件本身不能保证生成结果完全服从指令，训练仍会继承 GAN 的不稳定和模式覆盖问题，但它确立了“用外部信息控制生成分布”的通用框架。</p>",
+      "en": "<p>Mehdi Mirza and Simon Osindero introduced conditional GANs in 2014 by feeding auxiliary information y to both the generator and discriminator. The condition can be a class label, attribute, or other signal. The generator learns to produce a sample under that condition, while the discriminator judges whether the sample is both real and compatible with it, turning undirected sampling into controllable generation.</p><p>The original work demonstrated class-controlled digit generation and explored conditional relationships between image and text representations. This simple extension became foundational for text-to-image, label-to-image, and attribute-editing systems. A condition does not guarantee perfect instruction following, and training retains GAN instability and mode-coverage problems, but the work established a general framework for controlling a generated distribution with external information.</p>"
     },
     "figures": [
       {
@@ -41472,7 +41504,7 @@ const milestones = [
           },
           "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
           "purpose": "background",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         }
       ],
@@ -41820,8 +41852,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。</p>",
-      "en": "<p>DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.</p>"
+      "zh": "<p>拉德福德、梅茨和钦塔拉在 2015 年提出 DCGAN，为图像生成总结一组实用卷积架构规则：用步幅卷积和转置卷积替代手工池化，在多数层使用批归一化，减少全连接层，并分别采用 ReLU 与 Leaky ReLU 激活。这些选择显著提高了 GAN 训练的可重复性。</p><p>生成器学会从潜变量逐步构造空间图像，判别器则形成可迁移到分类任务的无监督视觉特征；潜空间还表现出一定可解释方向。DCGAN 仍会模式崩溃且只适合当时较低分辨率，但它把 GAN 从概念证明推进为可复用的深度卷积图像生成配方。</p>",
+      "en": "<p>Alec Radford, Luke Metz, and Soumith Chintala introduced DCGAN in 2015 with a practical set of convolutional architecture rules for image generation. Strided convolutions and transposed convolutions replace hand-designed pooling, batch normalization is used through much of the network, fully connected layers are reduced, and ReLU and Leaky ReLU activations are assigned to the generator and discriminator. These choices made GAN training substantially more reproducible.</p><p>The generator learned to construct spatial images progressively from latent variables, while the discriminator developed unsupervised visual features transferable to classification; the latent space also showed partly interpretable directions. DCGAN still suffered mode collapse and was limited to the resolutions of its time, but it moved GANs from a conceptual demonstration toward a reusable deep-convolutional recipe for image synthesis.</p>"
     },
     "figures": [
       {
@@ -42323,8 +42355,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。</p>",
-      "en": "<p>Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.</p>"
+      "zh": "<p>Wasserstein GAN 用最优传输中的 Earth Mover 距离重新解释生成分布与真实分布之间的差异。判别器被替换为输出实数分数的 critic，并必须满足 Lipschitz 约束；原论文通过权重裁剪近似这一约束，使生成器在分布几乎不重叠时仍能获得更有用的梯度。</p><p>critic 损失与样本质量的关系更连续，使训练过程更容易监控，并缓解部分不稳定和模式崩溃。权重裁剪本身可能限制模型能力，后续 WGAN-GP 用梯度惩罚改进约束。WGAN 的长期价值在于把生成训练问题与概率分布几何和最优传输连接起来。</p>",
+      "en": "<p>Wasserstein GAN reinterpreted the difference between generated and real distributions through the Earth Mover distance from optimal transport. The discriminator becomes a critic that outputs real-valued scores and must satisfy a Lipschitz constraint. The original paper approximated that constraint through weight clipping, allowing the generator to receive more useful gradients even when the two distributions barely overlap.</p><p>The critic loss varies more continuously with sample quality, making training easier to monitor and reducing some instability and mode collapse. Weight clipping can itself restrict model capacity, and the later WGAN-GP replaced it with a gradient penalty. WGAN's lasting contribution was connecting generative training with the geometry of probability distributions and optimal transport.</p>"
     },
     "figures": [
       {
@@ -42469,7 +42501,7 @@ const milestones = [
           },
           "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -42832,8 +42864,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>",
-      "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>"
+      "zh": "<p>CycleGAN 面向没有一一配对样本的图像域转换，例如只有一组马和另一组斑马照片。两个生成器分别学习 A→B 和 B→A，两个判别器要求转换结果看起来属于目标域；循环一致性损失则要求图像转换过去再返回后能够重建原始内容。</p><p>这使风格、季节和外观转换不再依赖昂贵的配对数据，并成为非配对图像翻译的代表框架。循环约束不能唯一确定正确映射，模型可能改变不应变化的语义或隐藏信息；因此它适合具有大致内容对应关系的域，而不是保证真实因果转换。</p>",
+      "en": "<p>CycleGAN addressed image-domain translation without one-to-one paired examples, such as separate collections of horse and zebra photographs. Two generators learn A→B and B→A mappings, while two discriminators require translated images to resemble the target domains. A cycle-consistency loss then requires an image translated to the other domain and back again to reconstruct its original content.</p><p>This made style, season, and appearance transfer possible without expensive paired data and became a representative framework for unpaired image translation. Cycle consistency does not uniquely determine the correct mapping, and a model may alter semantics that should remain fixed or hide information in its outputs. It is therefore useful when domains share approximate content, not a guarantee of truthful causal transformation.</p>"
     },
     "figures": [
       {
@@ -43341,8 +43373,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>",
-      "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>"
+      "zh": "<p>Pix2Pix 把边缘到照片、标签图到街景、地图到航拍图等任务统一为“给定输入图像生成对应输出”的条件 GAN。U-Net 生成器通过跳跃连接保留输入的空间结构，PatchGAN 判别器在局部图块上判断真实感；L1 重建损失约束整体内容，对抗损失补充清晰纹理。</p><p>这一组合减少了为每个图像转换任务手工设计损失和流水线的需要，并成为配对图像翻译的标准基线。它必须获得严格对齐的输入输出样本，输出也可能平均化或生成不可靠细节；但它清楚展示了监督学习与对抗生成如何共同控制结构和外观。</p>",
+      "en": "<p>Pix2Pix unified edges-to-photos, label maps-to-street scenes, maps-to-aerial images, and related tasks as conditional GAN problems that generate an output image from an input image. A U-Net generator preserves spatial structure through skip connections, while a PatchGAN discriminator judges realism over local patches. An L1 reconstruction loss constrains overall content and the adversarial loss supplies sharper texture.</p><p>The combination reduced the need to design a separate pipeline and objective for every image-translation task and became a standard paired-translation baseline. It requires strictly aligned input-output examples, and outputs may average possibilities or invent unreliable details. It nevertheless showed clearly how supervised reconstruction and adversarial generation can jointly control structure and appearance.</p>"
     },
     "figures": [
       {
@@ -43850,8 +43882,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>",
-      "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>"
+      "zh": "<p>NVIDIA 团队在 2019 年提出 StyleGAN，把随机潜变量先通过映射网络转换到中间风格空间，再用每层的风格参数调制图像合成过程。较早层控制姿态、脸型等粗尺度结构，较晚层影响颜色和细节；独立噪声输入则产生雀斑、发丝等随机微观变化。</p><p>这种设计减弱了潜变量因素之间的纠缠，使高质量人脸生成和属性编辑更可控，也推动“生成器内部表示可解释性”的研究。首代模型仍会产生水滴状伪影和不自然细节，后续 StyleGAN2/3 修正了多项问题；但分离映射空间与分层风格控制成为重要生成架构思想。</p>",
+      "en": "<p>NVIDIA researchers introduced StyleGAN in 2019 by passing a random latent vector through a mapping network into an intermediate style space, then using per-layer styles to modulate image synthesis. Early layers influence coarse structure such as pose and face shape, later layers control color and detail, and independent noise inputs create stochastic fine variations such as freckles or individual hairs.</p><p>The design reduced entanglement among latent factors, made high-quality face generation and attribute editing more controllable, and advanced research on interpretable generator representations. The first model still produced characteristic blob-like artifacts and unnatural details, which StyleGAN2 and StyleGAN3 later addressed. Separating a mapping space from hierarchical style control nevertheless became an important generative-architecture principle.</p>"
     },
     "figures": [
       {
@@ -44359,8 +44391,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>变分自编码器把神经网络与概率潜变量建模结合起来。它的编码器、解码器和重参数化技巧让可扩展生成式建模可以通过梯度下降实现。</p>",
-      "en": "<p>The variational autoencoder joined neural networks with probabilistic latent-variable modeling. Its encoder, decoder, and reparameterization trick made scalable generative modeling possible with gradient descent.</p>"
+      "zh": "<p>金马和威灵在 2013 年提出变分自编码器，把神经网络与概率潜变量模型连接起来。编码器不为输入输出单一点，而是估计潜变量分布的均值和方差；通过 z=μ+σε 的重参数化，随机采样可以写成可微计算，使梯度能够穿过潜变量训练编码器和解码器。</p><p>目标函数同时要求解码器重构数据，并用 KL 散度让潜分布接近简单先验，形成连续、可采样的表示空间。VAE 支撑生成、异常检测和表示学习，训练通常比 GAN 稳定，但像素级重构目标可能产生较平滑或模糊样本。其核心贡献是让大规模近似贝叶斯推断适配端到端神经训练。</p>",
+      "en": "<p>Diederik Kingma and Max Welling introduced the variational autoencoder in 2013, joining neural networks with probabilistic latent-variable models. The encoder does not output one point for an input; it estimates the mean and variance of a latent distribution. Through the reparameterization z=μ+σε, stochastic sampling becomes a differentiable computation, allowing gradients to train both encoder and decoder through the latent variable.</p><p>The objective asks the decoder to reconstruct data while a KL-divergence term keeps the latent distribution near a simple prior, creating a continuous space that can be sampled. VAEs support generation, anomaly detection, and representation learning and are often more stable to train than GANs, though pixel-level reconstruction can produce smooth or blurry samples. Their central contribution was making scalable approximate Bayesian inference compatible with end-to-end neural training.</p>"
     },
     "figures": [
       {
@@ -44868,8 +44900,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>",
-      "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>"
+      "zh": "<p>索尔-迪克斯坦等人在 2015 年把生成建模写成非平衡热力学过程：前向马尔可夫链逐步向数据加入微小噪声，直到接近简单分布；模型学习每一步的逆向转移，从噪声出发逐渐恢复样本。这个过程提供可计算的训练目标和概率解释。</p><p>2020 年的去噪扩散概率模型进一步简化训练，让神经网络直接预测噪声，并成为现代图像生成的重要基础。扩散模型通常覆盖数据模式较好、训练稳定，但采样需要许多连续去噪步骤，速度较慢。它的核心思想是把困难生成问题拆成一系列小型可学习逆过程。</p>",
+      "en": "<p>Jascha Sohl-Dickstein and colleagues formulated generative modeling as a nonequilibrium thermodynamic process in 2015. A forward Markov chain adds small amounts of noise to data until it approaches a simple distribution. A model learns each reverse transition so a sample can be reconstructed gradually from noise, providing a tractable training objective and probabilistic interpretation.</p><p>Denoising diffusion probabilistic models simplified the approach in 2020 by training a neural network to predict noise, becoming a major foundation for modern image generation. Diffusion models often cover data modes well and train stably, but sampling can be slow because it requires many sequential denoising steps. Their central idea is to decompose a difficult generation problem into a sequence of small learnable reverse processes.</p>"
     },
     "figures": [
       {
@@ -45014,7 +45046,7 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/2006.11239",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -45377,8 +45409,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>图神经网络把神经计算推广到包含节点、边和关系的数据。通过在图上反复传递消息，它们学习节点、边或整个结构的表示。</p>",
-      "en": "<p>Graph neural networks generalized neural computation to data with nodes, edges, and relations. By repeatedly passing messages over a graph, they learned representations for nodes, edges, or whole structures.</p>"
+      "zh": "<p>斯卡塞利等人的早期图神经网络模型把神经计算推广到任意图结构。每个节点根据自身特征、边信息和邻居状态反复更新表示，直到整个系统达到稳定点；输出函数再从这些状态预测节点、边或整张图的属性。</p><p>这种局部信息交换后来被概括为消息传递：同一组可学习规则能在不同大小和连接方式的图上复用，适用于分子、社交网络、知识图谱和物理系统。多轮传播可能让节点表示过度相似，模型表达能力也受聚合方式限制，但 GNN 建立了关系结构的通用学习框架。</p>",
+      "en": "<p>Franco Scarselli and colleagues' early graph neural-network model extended neural computation to arbitrary graph structures. Each node repeatedly updates its representation from its own features, edge information, and neighboring states until the system reaches a stable point. An output function then predicts properties of nodes, edges, or the entire graph from those states.</p><p>This local exchange was later generalized as message passing: the same learned rules can be reused across graphs of different sizes and connectivity, supporting molecules, social networks, knowledge graphs, and physical systems. Repeated propagation can make node representations overly similar, and expressive power depends on the aggregation rule. GNNs nevertheless established a general learning framework for relational structure.</p>"
     },
     "figures": [
       {
@@ -45523,7 +45555,7 @@ const milestones = [
           },
           "url": "https://ieeexplore.ieee.org/document/4700287",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -45902,8 +45934,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。</p>",
-      "en": "<p>GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.</p>"
+      "zh": "<p>基普夫和威灵在 2016 年提出简化图卷积网络，从谱图卷积的一阶近似得到实用更新规则。每一层把节点自身及其邻居的特征按归一化连接权重聚合，再通过共享线性变换和非线性激活，使标签信息和结构线索沿图传播。</p><p>GCN 能在只有少量节点带标签时联合利用全部图结构进行半监督分类，因简洁高效而成为图表示学习的标准基线。层数增加会导致过度平滑，远距离信息和异质关系也难以处理；但“归一化邻居聚合 + 可学习变换”的配方奠定了大量后续图模型。</p>",
+      "en": "<p>Thomas Kipf and Max Welling introduced the graph convolutional network in 2016 with a practical update derived from a first-order approximation to spectral graph convolution. Each layer aggregates a node's own features and those of its neighbors using normalized connection weights, then applies a shared linear transformation and nonlinearity so labels and structural information propagate across the graph.</p><p>GCN can use the full graph for semi-supervised classification even when only a small fraction of nodes are labeled, and its simplicity made it a standard graph-learning baseline. Greater depth can cause oversmoothing, while long-range information and heterogeneous relations remain difficult. Its recipe of normalized neighborhood aggregation followed by a learned transformation nevertheless founded a large family of later graph models.</p>"
     },
     "figures": [
       {
@@ -46411,8 +46443,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。</p>",
-      "en": "<p>GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.</p>"
+      "zh": "<p>图注意力网络在 2017 年用学习得到的注意力权重替代固定邻居聚合。对每个节点，模型比较其变换后表示与各邻居表示，计算归一化系数，再按不同权重汇总邻居信息；多头注意力可以并行学习多种关系模式并稳定训练。</p><p>GAT 不需要预先求图拉普拉斯特征分解，也能让不同邻居对当前节点产生不同影响，适合半监督节点分类和可变图结构。注意力权重不自动等于因果解释，密集邻域还会增加计算成本；但它把 Transformer 式的选择性聚合带入图神经网络。</p>",
+      "en": "<p>Graph Attention Networks replaced fixed neighborhood aggregation with learned attention weights in 2017. For each node, the model compares its transformed representation with those of its neighbors, computes normalized coefficients, and combines neighbor information with different weights. Multi-head attention learns several relation patterns in parallel and can stabilize training.</p><p>GAT requires no precomputed graph-Laplacian eigendecomposition and lets different neighbors influence a node unequally, making it useful for semi-supervised node classification and varying graph structures. Attention weights are not automatically causal explanations, and dense neighborhoods increase computation. The method nevertheless brought Transformer-like selective aggregation into graph neural networks.</p>"
     },
     "figures": [
       {
@@ -46930,8 +46962,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>神经架构搜索把模型设计本身视为优化问题。控制器提出架构，训练运行对其评分，奖励再引导下一批提案。</p>",
-      "en": "<p>Neural architecture search treated model design itself as an optimization problem. A controller proposed architectures, training runs scored them, and rewards guided the next proposals.</p>"
+      "zh": "<p>佐普和勒在 2016 年把神经网络架构设计本身表述为强化学习问题。循环控制器依次生成层类型、连接和超参数，候选子网络经过训练后用验证集准确率形成奖励，再通过策略梯度更新控制器，使后续提案更可能包含有效结构。</p><p>早期 NAS 在图像和语言任务上发现有竞争力的架构，证明机器可以搜索部分原本依赖专家经验的设计空间，但每个候选都要训练，计算成本极高。后续研究发展权重共享、可微搜索和多目标优化。NAS 的长期影响在于把准确率、延迟、能耗等设计目标纳入自动优化。</p>",
+      "en": "<p>Barret Zoph and Quoc Le formulated neural-network architecture design itself as a reinforcement-learning problem in 2016. A recurrent controller generated layer types, connections, and hyperparameters sequentially. Candidate child networks were trained and scored by validation accuracy, which became a reward for policy-gradient updates that made promising structural choices more likely.</p><p>Early NAS discovered competitive architectures for vision and language tasks, showing that machines could search parts of a design space previously guided mainly by expert intuition. Training every candidate made the approach extraordinarily expensive. Later work developed weight sharing, differentiable search, and multi-objective optimization. NAS's lasting impact is treating accuracy, latency, energy, and related design goals as variables in an automated optimization process.</p>"
     },
     "figures": [
       {
@@ -47091,7 +47123,7 @@ const milestones = [
           },
           "url": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html",
           "purpose": "background",
-          "reliability": "reference-only",
+          "reliability": "secondary",
           "sourceType": "article"
         }
       ],
@@ -47439,8 +47471,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>深度压缩表明，大型神经网络可以在几乎不损失准确率的情况下大幅缩小。三阶段流程移除冗余权重、共享量化数值，并对结果进行紧凑编码。</p>",
-      "en": "<p>Deep Compression showed that large neural networks could be dramatically reduced without losing much accuracy. The three-stage pipeline removed redundant weights, shared quantized values, and encoded the result compactly.</p>"
+      "zh": "<p>韩松、毛巍和戴利提出 Deep Compression，用三阶段流水线缩小训练后的神经网络。首先剪除接近零或贡献较小的连接并重新训练；随后通过训练式量化让许多权重共享少量码本值；最后用 Huffman 编码压缩索引和量化参数。</p><p>论文表明 AlexNet、VGG 等大型模型可以显著减少存储和内存访问，同时基本保持准确率。真正加速仍取决于硬件和软件能否高效利用稀疏结构，但这项工作把模型大小、能耗和部署成本变成一等研究目标，并奠定剪枝与量化结合的边缘 AI 路线。</p>",
+      "en": "<p>Song Han, Huizi Mao, and William Dally introduced Deep Compression as a three-stage pipeline for reducing trained neural networks. It first prunes connections that are near zero or contribute little and retrains the network. Trained quantization then makes many weights share a small codebook of values, and Huffman coding compresses the resulting indices and parameters.</p><p>The paper showed that large models such as AlexNet and VGG could require far less storage and memory access while largely preserving accuracy. Actual speedups still depend on hardware and software that can exploit sparsity efficiently. The work nevertheless made model size, energy, and deployment cost first-class research objectives and established the influential combination of pruning and quantization for edge AI.</p>"
     },
     "figures": [
       {
@@ -47958,8 +47990,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>",
-      "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>"
+      "zh": "<p>辛顿、维尼亚尔斯和迪恩在 2015 年系统化知识蒸馏，让较小学生模型学习大型教师或模型集成的行为。教师 logits 经较高温度 softmax 变成更平滑的概率分布，除了正确类别，还显示其他类别之间的相似性；学生同时匹配这些软目标和真实硬标签。</p><p>蒸馏可以在减少参数、延迟和部署成本的同时保留较多教师能力，并扩展到特征层、注意力和自蒸馏。学生上限受教师质量、数据覆盖和容量限制，也可能继承教师偏见与错误；但“把模型行为当作训练信号传给另一模型”成为高效 AI 的基础方法。</p>",
+      "en": "<p>Geoffrey Hinton, Oriol Vinyals, and Jeff Dean systematized knowledge distillation in 2015 so a smaller student model could learn the behavior of a large teacher or ensemble. A higher-temperature softmax turns teacher logits into a smoother probability distribution that reveals similarities among incorrect classes as well as the correct answer. The student learns from these soft targets together with hard labels.</p><p>Distillation can preserve much of a teacher's capability while reducing parameters, latency, and deployment cost and has expanded to intermediate features, attention, and self-distillation. The student's ceiling depends on teacher quality, data coverage, and capacity, and it can inherit teacher biases and errors. The broader idea of transferring model behavior as a training signal became foundational to efficient AI.</p>"
     },
     "figures": [
       {
@@ -48461,8 +48493,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>MS COCO 通过强调自然上下文中的物体、分割掩码、图像字幕和日常场景，改变了视觉识别基准。它在同一生态中支持检测、分割、字幕生成和关键点任务。</p>",
-      "en": "<p>MS COCO changed visual recognition benchmarks by emphasizing objects in natural context, segmentation masks, captions, and everyday scenes. It supported detection, segmentation, captioning, and keypoint tasks in a shared ecosystem.</p>"
+      "zh": "<p>Microsoft COCO 在 2014 年把视觉基准重点放在自然场景中的常见物体，而不是居中、背景简单的单个目标。数据集为同一图像中的多个实例提供类别、边界框和像素级分割，并加入图像字幕；物体经常较小、被遮挡，并与其他对象共同出现。</p><p>统一数据和评测推动目标检测、实例分割、关键点和字幕生成在共享生态中发展，也让模型必须理解“物体处于什么上下文”。COCO 的类别和图像仍不能代表全部视觉世界，标注规范也会影响比较结果；但其多任务、实例级设计成为现代视觉研究的重要基础设施。</p>",
+      "en": "<p>Microsoft COCO shifted visual benchmarking in 2014 toward common objects in natural scenes rather than single centered targets against simple backgrounds. The dataset annotates multiple instances in the same image with categories, bounding boxes, and pixel-level masks and also includes image captions. Objects are often small, occluded, and shown in interaction with other objects.</p><p>Common data and evaluation accelerated object detection, instance segmentation, keypoints, and captioning within one ecosystem and required models to reason about the context in which objects appear. COCO's categories and images still do not represent the entire visual world, and annotation conventions affect comparisons. Its multitask, instance-level design nevertheless became core infrastructure for modern computer vision.</p>"
     },
     "figures": [
       {
@@ -48607,7 +48639,7 @@ const milestones = [
           },
           "url": "https://cocodataset.org/",
           "purpose": "dataset-access",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "dataset"
         },
         {
@@ -48970,8 +49002,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>",
-      "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>"
+      "zh": "<p>克里斯·沃特金斯在 1989 年博士论文中提出 Q-learning，直接学习状态—动作价值 Q(s,a)。每次转移后，算法把当前估计向“即时奖励 + 下一状态最大 Q 值”更新，不需要已知环境模型；采取探索动作的行为策略可以与最终由 Q 值定义的贪心目标策略不同。</p><p>在有限表格环境、充分探索和合适学习率等条件下，Q-learning 可收敛到最优动作价值。它成为离策略强化学习的经典基础，并最终与深度网络结合形成 DQN。函数逼近、自举和离策略数据同时出现时可能不稳定，最大操作还会造成过估计，但其更新规则仍是强化学习的核心范式。</p>",
+      "en": "<p>Chris Watkins introduced Q-learning in his 1989 doctoral thesis to learn the state-action value Q(s,a) directly. After each transition, the algorithm moves the current estimate toward the immediate reward plus the maximum Q value in the next state, requiring no known model of the environment. The behavior policy used to explore can differ from the greedy target policy implied by the learned Q values.</p><p>In finite tabular settings with sufficient exploration and suitable learning rates, Q-learning can converge to optimal action values. It became the classic foundation for off-policy reinforcement learning and later combined with deep networks in DQN. Function approximation, bootstrapping, and off-policy data can create instability together, while the maximum operator can overestimate values. Its update rule nevertheless remains a central reinforcement-learning pattern.</p>"
     },
     "figures": [
       {
@@ -49101,7 +49133,7 @@ const milestones = [
           },
           "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
           "purpose": "core-evidence",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "thesis"
         },
         {
@@ -49116,7 +49148,7 @@ const milestones = [
           },
           "url": "https://link.springer.com/article/10.1007/BF00992698",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -50006,8 +50038,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>",
-      "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>"
+      "zh": "<p>巴托、萨顿和安德森在 1983 年的类神经自适应控制系统中，把学习分成行动者和评价者两个部分。Actor 根据状态选择动作并调整策略；Critic 学习预测未来强化信号，用连续步骤间的预测误差评价刚才的行为，为 Actor 提供比最终成败更及时的学习信号。</p><p>这种分工把策略搜索与价值估计结合起来，后来发展为现代策略梯度和优势 Actor-Critic 方法。Critic 可以降低纯策略梯度的方差，但自身偏差会误导 Actor，两个学习过程还可能相互不稳定。其持久影响在于确立“一个组件行动、另一个组件学习评价”的强化学习架构。</p>",
+      "en": "<p>Andrew Barto, Richard Sutton, and Charles Anderson divided learning into an actor and a critic in their 1983 neuronlike adaptive control system. The actor selects actions from the current state and adjusts the policy. The critic learns to predict future reinforcement and uses differences between successive predictions to evaluate recent behavior, supplying a more immediate learning signal than waiting for final success or failure.</p><p>This division joins policy search with value estimation and later developed into modern policy-gradient and advantage actor-critic methods. A critic can reduce the variance of pure policy gradients, but its bias can mislead the actor, and the two learning processes may destabilize each other. The enduring contribution is the architecture of one component acting while another learns how to evaluate those actions.</p>"
     },
     "figures": [
       {
@@ -50152,7 +50184,7 @@ const milestones = [
           },
           "url": "http://incompleteideas.net/book/the-book-2nd.html",
           "purpose": "background",
-          "reliability": "reference-only",
+          "reliability": "secondary",
           "sourceType": "book"
         },
         {
@@ -53692,7 +53724,7 @@ const milestones = [
           },
           "url": "https://yann.lecun.com/exdb/lenet/",
           "purpose": "background",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "project-page"
         },
         {
@@ -58667,7 +58699,7 @@ const milestones = [
           },
           "url": "https://alphafold.ebi.ac.uk/",
           "purpose": "dataset-access",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "dataset"
         },
         {
@@ -61830,7 +61862,7 @@ const milestones = [
           },
           "url": "https://www.science.org/doi/10.1126/science.1144079",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
@@ -63935,7 +63967,7 @@ const milestones = [
           },
           "url": "https://arxiv.org/abs/1312.5602",
           "purpose": "alternate-access",
-          "reliability": "reference-only",
+          "reliability": "primary",
           "sourceType": "paper-page"
         },
         {
@@ -63950,7 +63982,7 @@ const milestones = [
           },
           "url": "https://www.nature.com/articles/nature14236",
           "purpose": "core-evidence",
-          "reliability": "secondary",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {

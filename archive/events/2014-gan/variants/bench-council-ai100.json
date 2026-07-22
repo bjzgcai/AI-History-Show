@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
-    "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+    "zh": "<p>古德费洛等人在 2014 年提出生成对抗网络，把生成建模写成两个神经网络的博弈。生成器把随机噪声转换为候选样本，判别器学习区分真实数据与生成结果；生成器则根据判别器反馈调整参数，目标是让生成分布逐渐接近真实分布。</p><p>GAN 不需要显式写出复杂概率密度，就能生成清晰图像，并迅速推动图像合成、表示学习和条件生成研究。训练可能出现不稳定、模式崩溃和评价困难，两个网络的平衡也很敏感。尽管扩散模型后来在许多生成任务中占据优势，GAN 建立的对抗学习框架仍深刻影响生成式 AI。</p>",
+    "en": "<p>Ian Goodfellow and colleagues introduced generative adversarial networks in 2014 by formulating generative modeling as a game between two neural networks. A generator transforms random noise into candidate samples, while a discriminator learns to distinguish real data from generated outputs. Feedback from the discriminator trains the generator to move its distribution closer to the real one.</p><p>GANs could produce sharp images without explicitly specifying a complicated probability density and rapidly advanced image synthesis, representation learning, and conditional generation. Training can be unstable, collapse to limited modes, and be difficult to evaluate, while the balance between the two networks is sensitive. Diffusion models later became stronger in many generation tasks, but the adversarial-learning framework established by GANs remains deeply influential.</p>"
   },
   "emphasis": [
     "batch-migration",

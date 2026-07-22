@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>",
-    "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>"
+    "zh": "<p>约翰·霍普菲尔德在 1982 年把相互连接的二值神经元描述为具有整体能量函数的动力系统。在对称连接和异步更新等条件下，每次更新都会降低或保持能量，因此网络最终落入稳定状态。训练过的模式可以成为能量地形中的吸引子。</p><p>当输入只包含残缺或带噪版本时，网络可能收敛到最接近的存储模式，从而实现内容寻址的联想记忆。容量有限、伪吸引子和局部极小值会限制表现，但这一框架把神经计算、统计物理、记忆和组合优化连接起来，并成为能量模型的重要历史基础。</p>",
+    "en": "<p>John Hopfield described a recurrent network of binary units as a dynamical system with a global energy function in 1982. Under conditions including symmetric connections and asynchronous updates, each update lowers or preserves the energy, so the network eventually settles into a stable state. Learned patterns can therefore become attractors in an energy landscape.</p><p>Given an incomplete or noisy version of a pattern, the network may converge to the closest stored memory, providing content-addressable associative recall. Limited capacity, spurious attractors, and local minima constrain its performance, but the framework connected neural computation with statistical physics, memory, and combinatorial optimization. It also became an important historical foundation for energy-based models.</p>"
   },
   "emphasis": [
     "batch-migration",
