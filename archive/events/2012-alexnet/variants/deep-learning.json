@@ -32,8 +32,8 @@
     "claim-scale-recipe"
   ],
   "displayDescription": {
-    "en": "<p>In 2012, AlexNet won ImageNet by a large margin and made deep convolutional networks the center of modern computer vision. The deep-learning storyline stresses the combined force of data, GPU computation, ReLU, dropout, and engineering scale; the AI100 account anchors the same event in the NeurIPS paper and the ImageNet challenge, where the result made scale visible to the whole field.</p>",
-    "zh": "<p>2012年，AlexNet 以巨大优势赢得 ImageNet，使深度卷积网络成为现代计算机视觉的中心。深度学习发展线强调数据、GPU 算力、ReLU、dropout 和工程规模共同发挥作用；AI100 资料则把这一事件锚定在 NeurIPS 论文与 ImageNet 挑战赛中，说明这个结果如何让整个领域看见规模化训练的力量。</p>"
+    "en": "<p>In 2012, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton won the ImageNet Large Scale Visual Recognition Challenge with AlexNet. Their paper reported a 15.3 percent top-5 test error, far below the 26.2 percent achieved by the second-best entry, making the advantage of deep convolutional networks impossible to ignore on a common large-scale benchmark.</p><p>AlexNet trained roughly 60 million parameters on about 1.2 million images and combined GPUs, ReLU activations, data augmentation, and dropout. Its breakthrough was not one isolated formula, but a scalable system joining algorithms, data, compute, and implementation. Computer vision rapidly shifted from hand-engineered features toward end-to-end representation learning, making AlexNet a defining event in the deep-learning revival.</p>",
+    "zh": "<p>2012 年，亚历克斯·克里泽夫斯基、伊利亚·苏茨克维和杰弗里·辛顿用 AlexNet 赢得 ImageNet 大规模视觉识别挑战赛。论文报告的 top-5 测试错误率为 15.3%，明显低于第二名的 26.2%，让深度卷积网络的优势第一次在统一的大型基准上变得无法忽视。</p><p>AlexNet 在约 120 万张训练图像上训练约 6000 万个参数，并结合 GPU、ReLU、数据增强和 dropout。它的突破并非来自单一新公式，而是把算法、数据、算力和工程实现组织成可扩展系统。此后，计算机视觉迅速从手工特征转向端到端表示学习，AlexNet 也成为深度学习复兴的标志性节点。</p>"
   },
   "category": {
     "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",

@@ -11,8 +11,8 @@
     "en": "Genesis of AI"
   },
   "displayDescription": {
-    "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
-    "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+    "zh": "<p>1957 年，弗兰克·罗森布拉特在康奈尔航空实验室开展感知机研究，并在随后发表的论文中把它描述为一种受神经系统启发的信息存储与组织模型。感知机根据训练样本调整连接权重，使机器不必依赖人工编写的完整规则，也能学习把输入模式分到不同类别。</p><p>Mark I 感知机随后把这一思想做成带有感光输入和可调连接的实验装置。它的能力仍受单层线性分类边界限制，却首次以醒目的理论和硬件演示表明“机器可以从样本中学习”，由此成为连接主义、模式识别和后来神经网络研究的重要起点。</p>",
+    "en": "<p>Beginning in 1957, Frank Rosenblatt developed the perceptron at the Cornell Aeronautical Laboratory and later described it as a brain-inspired model for information storage and organization. By adjusting connection weights from training examples, a perceptron could learn to assign input patterns to categories without requiring a complete set of hand-written decision rules.</p><p>The Mark I Perceptron soon turned the idea into an experimental machine with a light-sensing input and adjustable connections. Its single-layer decision boundary was limited to linearly separable problems, but the project gave a striking theoretical and hardware demonstration that a machine could learn from examples. It became a foundational reference for connectionism, pattern recognition, and later neural-network research.</p>"
   },
   "emphasis": [
     "batch-migration",

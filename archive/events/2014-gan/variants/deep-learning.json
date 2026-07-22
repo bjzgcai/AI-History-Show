@@ -11,8 +11,8 @@
     "en": "Deep Learning and Unified Paradigms"
   },
   "displayDescription": {
-    "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
-    "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+    "zh": "<p>2014 年，伊恩·古德费洛及合作者提出生成对抗网络。生成器把随机噪声变成合成样本，判别器则学习区分真实数据与生成结果；两者在同一个极小极大目标中相互改进，使模型能够在不显式写出数据概率分布的情况下学习生成过程。</p><p>原论文证明，在理想条件下，这场博弈会在生成分布与真实分布一致时达到平衡。实际训练常面临不稳定、模式坍塌等困难，但 GAN 很快推动了高质量图像生成、图像翻译、超分辨率和表示学习，也把“用另一个网络提供学习信号”的对抗训练思想带入更广泛的机器学习研究。</p>",
+    "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks. A generator transformed random noise into synthetic samples, while a discriminator learned to distinguish generated outputs from real data. The two networks improved against each other through a shared minimax objective, allowing the system to learn a generative process without explicitly specifying the data probability distribution.</p><p>The paper showed that, under ideal conditions, the game reaches equilibrium when the generated and real distributions match. Practical training can be unstable and vulnerable to mode collapse, but GANs quickly advanced image synthesis, image translation, super-resolution, and representation learning. They also made adversarial training, in which one network supplies a learning signal to another, a major machine-learning paradigm.</p>"
   },
   "emphasis": [
     "batch-migration",

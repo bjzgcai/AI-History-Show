@@ -11,8 +11,8 @@
     "en": "Neural Networks and Connectionism"
   },
   "displayDescription": {
-    "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
-    "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+    "zh": "<p>1989 年，扬·勒昆及合作者发表手写邮政编码识别研究，证明带有局部连接和共享权重的多层网络可以用反向传播端到端训练。卷积层在图像不同位置重复使用同一组滤波器，既减少参数，也让模型能够识别平移后仍相似的笔画结构。</p><p>这条路线后来发展为 LeNet-5，并在银行支票和文档识别中得到实际应用。CNN 把特征提取与分类放进同一个学习系统，取代了大量手工设计视觉特征的步骤，为 AlexNet 之后的大规模图像识别奠定了直接的架构基础。</p>",
+    "en": "<p>In 1989, Yann LeCun and collaborators published a system for handwritten ZIP-code recognition, showing that a multilayer network with local connections and shared weights could be trained end to end with backpropagation. Convolutional layers reused the same filters across image locations, reducing the number of parameters while detecting similar strokes after small shifts.</p><p>This line of work later matured into LeNet-5 and practical systems for reading bank checks and other documents. CNNs placed feature extraction and classification inside one learned pipeline, reducing dependence on hand-engineered visual features. The architecture became the direct foundation for the large-scale image-recognition systems that followed AlexNet.</p>"
   },
   "emphasis": [
     "batch-migration",

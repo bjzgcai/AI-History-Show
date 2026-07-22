@@ -11,8 +11,8 @@
     "en": "Neural Networks and Connectionism"
   },
   "displayDescription": {
-    "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。",
-    "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks."
+    "zh": "<p>1986 年，戴维·鲁梅尔哈特、杰弗里·辛顿和罗纳德·威廉姆斯在 Nature 发表《通过误差反向传播学习表示》。论文说明如何计算输出误差对多层网络中各个权重的影响，再把误差信号逐层反向传递，用梯度下降同时调整输出层和隐藏层参数。</p><p>反向传播并非在 1986 年才首次出现，但这篇论文用清晰算法和实验展示了隐藏单元能够自行形成有用的内部表示，使多层神经网络训练成为可复现的方法。它重新激活了连接主义研究，并为后来卷积网络、循环网络和深度学习的大规模优化提供了共同的训练基础。</p>",
+    "en": "<p>In 1986, David Rumelhart, Geoffrey Hinton, and Ronald Williams published <em>Learning Representations by Back-Propagating Errors</em> in Nature. The paper explained how to calculate the contribution of each weight to an output error, propagate that signal backward through successive layers, and use gradient descent to adjust parameters in both the output and hidden layers.</p><p>Backpropagation had earlier precursors, but this paper gave the method a clear algorithmic presentation and experimental evidence that hidden units could learn useful internal representations. It helped revive connectionist research and established a common training foundation for later convolutional networks, recurrent networks, and large-scale deep learning.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -26,7 +26,8 @@
     "asset-1986-backpropagation-papers-01"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-nature-backpropagation-paper",
+    "source-hinton-backpropagation-pdf"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -44,7 +45,7 @@
         "en": "The key to backpropagation was not merely sending errors backward. It embedded every layer's parameters in a unified differentiable computation graph, making representation learning a genuinely trainable engineering process for the first time."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-nature-backpropagation-paper"
       ]
     },
     {
@@ -58,7 +59,8 @@
         "en": "Its foundation for the later deep-learning revival was to turn the question of what hidden layers can learn from a hand-design problem into a data-driven one. That step moved neural networks from conceptual models toward a scalable methodology."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-nature-backpropagation-paper",
+        "source-hinton-backpropagation-pdf"
       ]
     }
   ],

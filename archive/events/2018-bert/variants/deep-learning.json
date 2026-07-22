@@ -11,8 +11,8 @@
     "en": "Large Models and Scientific Intelligence"
   },
   "displayDescription": {
-    "zh": "<p>2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>",
-    "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line.</p>"
+    "zh": "<p>2018 年，Google 的雅各布·德夫林等人提出 BERT，即“双向 Transformer 编码器表示”。它随机遮盖输入中的部分词并要求模型恢复，同时在原始方案中加入下一句预测，使每一层表示都能同时利用左侧和右侧上下文。</p><p>预训练完成后，BERT 只需增加很小的任务输出层并微调整个模型，就能用于问答、自然语言推断、文本分类等任务。论文在 11 项 NLP 基准上刷新结果，推动行业从“为每个任务单独设计模型”转向“先在大规模文本上预训练，再面向任务微调”的统一范式。</p>",
+    "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, or Bidirectional Encoder Representations from Transformers. It randomly masked some input tokens and trained the model to recover them, while the original system also used next-sentence prediction. Every layer could therefore condition on both left and right context.</p><p>After pre-training, BERT needed only a small task-specific output layer and end-to-end fine-tuning for question answering, natural-language inference, classification, and other tasks. The paper reported new results across eleven NLP benchmarks. It accelerated the shift from designing a separate architecture for each task toward a unified pattern of large-scale language pre-training followed by task adaptation.</p>"
   },
   "emphasis": [
     "batch-migration",

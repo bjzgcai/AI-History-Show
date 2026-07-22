@@ -11,8 +11,8 @@
     "en": "Large Models and Scientific Intelligence"
   },
   "displayDescription": {
-    "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
-    "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+    "zh": "<p>到 2025 年，大语言模型竞争已不再由一项静态基准或单一模型定义。Chatbot Arena（后发展为 LMArena）让用户在不知道模型身份的情况下，对同一提示的两个回答进行成对选择，再用统计方法汇总偏好。这种公开、持续更新的人类评测，使闭源与开放权重模型家族能够在真实交互中并列比较。</p><p>竞争也从文本生成扩展到推理、多模态、代码、工具使用、响应延迟、成本与部署自由度。Stanford《2025 AI Index》记录了前沿性能继续提高、模型间差距缩小以及推理成本快速下降，但活榜单并非永久结论：结果会受到用户群体、提示分布、回答风格和评测方法影响。因此，这一节点更代表多条技术与产品路线同时竞逐，而不是宣布某个模型固定领先。</p>",
+    "en": "<p>By 2025, LLM competition was no longer defined by one static benchmark or one dominant model. Chatbot Arena, later developed as LMArena, showed users two anonymous answers to the same prompt, collected pairwise preferences, and aggregated them statistically. This live human evaluation allowed proprietary and open-weight model families to be compared through real interactions.</p><p>Competition broadened across reasoning, multimodality, coding, tool use, latency, cost, and deployment freedom. Stanford's <em>2025 AI Index</em> documented improving frontier performance, narrowing gaps, and sharply falling inference costs. Yet a live leaderboard is not a permanent verdict: results depend on its users, prompts, response style, and evaluation method. The milestone therefore marks several technical and product strategies competing at once, not a fixed winner.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -26,7 +26,9 @@
     "asset-2025-llm-competition-historical-03"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-chatbot-arena-paper",
+    "source-lmarena-official",
+    "source-stanford-ai-index-2025"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -44,7 +46,8 @@
         "en": "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-chatbot-arena-paper",
+        "source-lmarena-official"
       ]
     },
     {
@@ -58,7 +61,9 @@
         "en": "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-chatbot-arena-paper",
+        "source-lmarena-official",
+        "source-stanford-ai-index-2025"
       ]
     }
   ],

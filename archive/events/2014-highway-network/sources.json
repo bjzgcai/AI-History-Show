@@ -1,5 +1,45 @@
 [
   {
+    "id": "source-highway-networks-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《高速网络》",
+      "en": "Highway Networks"
+    },
+    "url": "https://arxiv.org/abs/1505.00387",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫和于尔根·施密德胡伯公开高速网络门控捷径结构的原始论文。",
+      "en": "The original paper by Rupesh Kumar Srivastava, Klaus Greff, and Juergen Schmidhuber introducing gated shortcut paths in Highway Networks."
+    },
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-resnet-follow-up-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《用于图像识别的深度残差学习》",
+      "en": "Deep Residual Learning for Image Recognition"
+    },
+    "url": "https://arxiv.org/abs/1512.03385",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "后续 ResNet 原论文，用于说明门控高速连接与恒等残差捷径之间的技术承接。",
+      "en": "The subsequent ResNet paper, included to document the transition from gated highway connections to identity residual shortcuts."
+    },
+    "label": {
+      "zh": "后续论文",
+      "en": "Follow-up paper"
+    },
+    "purpose": "follow-up"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {

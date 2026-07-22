@@ -1,5 +1,45 @@
 [
   {
+    "id": "source-perceptrons-book",
+    "type": "book",
+    "title": {
+      "zh": "《感知机：计算几何导论》",
+      "en": "Perceptrons: An Introduction to Computational Geometry"
+    },
+    "url": "https://doi.org/10.7551/mitpress/4943.001.0001",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "马文·明斯基与西摩·帕普特对感知机表示能力进行数学分析的原著。",
+      "en": "Marvin Minsky and Seymour Papert's original mathematical analysis of the representational capabilities of perceptrons."
+    },
+    "label": {
+      "zh": "图书",
+      "en": "Book"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-cornell-perceptron-retrospective",
+    "type": "news",
+    "title": {
+      "zh": "感知机比人工智能浪潮早了六十年",
+      "en": "Professor's Perceptron Paved the Way for AI, 60 Years Too Soon"
+    },
+    "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "康奈尔大学对感知机研究、公众预期和《Perceptrons》后续影响的历史回顾。",
+      "en": "Cornell University's retrospective on perceptron research, public expectations, and the later impact of Perceptrons."
+    },
+    "label": {
+      "zh": "新闻报道",
+      "en": "News report"
+    },
+    "purpose": "historical-context"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {
