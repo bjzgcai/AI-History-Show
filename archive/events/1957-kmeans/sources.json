@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "PCM 中的最小二乘量化",
+      "zh": "《PCM 中的最小二乘量化》",
       "en": "Least squares quantization in PCM"
     },
     "url": "https://doi.org/10.1109/TIT.1982.1056489",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-bell-labs-k-means-history-note",
-    "type": "reference-only",
+    "type": "article",
     "label": {
-      "zh": "历史资料",
-      "en": "History note"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "贝尔实验室 k-means 历史资料",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-scikit-learn-kmeans-documentation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "文档",
-      "en": "Documentation"
+      "zh": "官方文档",
+      "en": "Official documentation"
     },
     "title": {
       "zh": "scikit-learn KMeans 文档",
@@ -54,11 +56,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-iris-flowers-k-means-clustering-graphic",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

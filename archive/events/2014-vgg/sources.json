@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "用于大规模图像识别的超深卷积网络",
+      "zh": "《用于大规模图像识别的超深卷积网络》",
       "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
     },
     "url": "https://arxiv.org/abs/1409.1556",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-oxford-vgg-very-deep-convnets",
     "type": "project-page",
     "label": {
-      "zh": "项目",
-      "en": "Project"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "Oxford VGG Very Deep ConvNets",
@@ -35,17 +36,18 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-torchvision-vgg-model-family",
-    "type": "model-docs",
+    "type": "documentation",
     "label": {
       "zh": "模型文档",
-      "en": "Model docs"
+      "en": "Model documentation"
     },
     "title": {
-      "zh": "TorchVision VGG model family",
+      "zh": "TorchVision VGG 模型系列",
       "en": "TorchVision VGG model family"
     },
     "url": "https://pytorch.org/vision/stable/models/vgg.html",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

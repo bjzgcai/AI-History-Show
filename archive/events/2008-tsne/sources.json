@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "使用 t-SNE 可视化数据",
+      "zh": "《使用 t-SNE 可视化数据》",
       "en": "Visualizing Data using t-SNE"
     },
     "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
@@ -16,30 +16,32 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-laurens-van-der-maaten-homepage",
-    "type": "reference-only",
+    "type": "personal-page",
     "label": {
-      "zh": "作者页面",
-      "en": "Author page"
+      "zh": "个人主页",
+      "en": "Personal homepage"
     },
     "title": {
-      "zh": "劳伦斯·范德马滕 homepage",
-      "en": "Laurens van der Maaten homepage"
+      "zh": "劳伦斯·范德马滕个人主页",
+      "en": "Laurens van der Maaten personal homepage"
     },
     "url": "https://lvdmaaten.github.io/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-how-to-use-t-sne-effectively-distill",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
       "zh": "指南",
       "en": "Guide"
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

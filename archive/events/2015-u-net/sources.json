@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "U-Net：用于生物医学图像分割的卷积网络",
+      "zh": "《U-Net：用于生物医学图像分割的卷积网络》",
       "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation"
     },
     "url": "https://arxiv.org/abs/1505.04597",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-freiburg-u-net-release-page",
     "type": "project-page",
     "label": {
-      "zh": "项目",
-      "en": "Project"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "弗赖堡 U-Net 项目发布页",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-nnu-net-implementation-project",
     "type": "project-page",
     "label": {
-      "zh": "工具包",
-      "en": "Toolkit"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "nnU-Net 实现项目",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

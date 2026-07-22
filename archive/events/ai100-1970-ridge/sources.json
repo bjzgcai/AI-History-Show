@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-open-pdf-copy-of-the-technometrics-paper",
-    "type": "paper",
+    "type": "paper-file",
     "label": {
       "zh": "论文 PDF",
       "en": "Paper PDF"
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-ridge-regression-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "岭回归概览",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-scikit-learn-ridge-documentation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "文档",
-      "en": "Documentation"
+      "zh": "官方文档",
+      "en": "Official documentation"
     },
     "title": {
       "zh": "scikit-learn 岭回归文档",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

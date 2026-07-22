@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "最优间隔分类器的训练算法",
+      "zh": "《最优间隔分类器的训练算法》",
       "en": "A Training Algorithm for Optimal Margin Classifiers"
     },
     "url": "https://dl.acm.org/doi/10.1145/130385.130401",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-libsvm-project-page",
     "type": "project-page",
     "label": {
-      "zh": "工具包",
-      "en": "Toolkit"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "LIBSVM project page",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-scikit-learn-svc",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
       "zh": "模型文档",
-      "en": "Model docs"
+      "en": "Model documentation"
     },
     "title": {
       "zh": "scikit-learn SVC",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

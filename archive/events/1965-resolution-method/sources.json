@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "基于归结原理的机器导向逻辑",
+      "zh": "《基于归结原理的机器导向逻辑》",
       "en": "A Machine-Oriented Logic Based on the Resolution Principle"
     },
     "url": "https://doi.org/10.1145/321250.321253",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-journal-of-symbolic-logic-review-record",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "评述",
-      "en": "Review"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "Journal of Symbolic Logic review record",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-stanford-encyclopedia-automated-reasoning",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "斯坦福大学 Encyclopedia: Automated Reasoning",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

@@ -1,10 +1,10 @@
 [
   {
     "id": "source-science-paper",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "论文",
-      "en": "Paper"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
       "zh": "Science 论文",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-arxiv-preprint",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "预印本",
-      "en": "Preprint"
+      "zh": "预印本页面",
+      "en": "Preprint page"
     },
     "title": {
       "zh": "arXiv 预印本",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-deepmind-alphazero-blog",
-    "type": "official-page",
+    "type": "article",
     "label": {
-      "zh": "博客",
-      "en": "Blog"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "DeepMind AlphaZero 博客",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

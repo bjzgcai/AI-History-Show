@@ -4,10 +4,10 @@
     "type": "book",
     "label": {
       "zh": "专著",
-      "en": "Book"
+      "en": "Monograph"
     },
     "title": {
-      "zh": "构建大型知识系统",
+      "zh": "《构建大型知识系统》",
       "en": "Building Large Knowledge-Based Systems"
     },
     "url": "https://dl.acm.org/doi/book/10.5555/70571",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-the-evolution-of-cycl",
@@ -26,7 +27,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "CycL 的演化",
+      "zh": "《CycL 的演化》",
       "en": "The Evolution of CycL"
     },
     "url": "https://dl.acm.org/doi/10.1145/122296.122308",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-cyc",
     "type": "project-page",
     "label": {
-      "zh": "官方页面",
-      "en": "Official page"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "Cyc",
@@ -54,11 +56,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-cyc-projects-logo-image",
-    "type": "project-page",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

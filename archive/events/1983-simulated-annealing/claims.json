@@ -1,28 +1,42 @@
 [
   {
-    "id": "claim-legacy-achievement-summary",
+    "id": "claim-simulated-annealing-origin",
     "importance": "core",
     "text": {
-      "zh": "模拟退火 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "Simulated Annealing is an AI history milestone in the current legacy presentation."
+      "zh": "1983 年，柯克帕特里克、格拉特和维基在《科学》发表论文，把物理退火与 Metropolis 随机采样思想转化为组合优化框架。",
+      "en": "In 1983, Kirkpatrick, Gelatt, and Vecchi published a Science paper that turned physical annealing and Metropolis-style stochastic sampling into a combinatorial-optimization framework."
     },
     "sourceIds": [
       "source-optimization-by-simulated-annealing",
-      "source-scipy-dual-annealing"
+      "source-metropolis-fast-computing-machines"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
-    "id": "claim-legacy-description",
-    "importance": "context",
+    "id": "claim-simulated-annealing-mechanism",
+    "importance": "core",
     "text": {
-      "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>",
-      "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>"
+      "zh": "模拟退火始终接受更优候选，并以约 exp(-ΔE/T) 的概率接受较差候选；温度降低后，越过代价障碍的概率随之下降。",
+      "en": "Simulated annealing always accepts an improving candidate and accepts a worse one with probability approximately exp(-ΔE/T); as temperature falls, crossing a cost barrier becomes less likely."
     },
     "sourceIds": [
       "source-optimization-by-simulated-annealing",
+      "source-metropolis-fast-computing-machines",
       "source-scipy-dual-annealing"
     ],
-    "status": "needs-source"
+    "status": "verified"
+  },
+  {
+    "id": "claim-simulated-annealing-cooling-tradeoff",
+    "importance": "context",
+    "text": {
+      "zh": "足够缓慢的降温可获得渐近收敛性质，但工程实现通常采用更快的温度计划，在理论保证、解质量和运行时间之间折中。",
+      "en": "Sufficiently slow cooling can provide asymptotic convergence properties, but engineering implementations usually cool faster and trade theoretical guarantees against solution quality and runtime."
+    },
+    "sourceIds": [
+      "source-geman-geman-stochastic-relaxation",
+      "source-scipy-dual-annealing"
+    ],
+    "status": "verified"
   }
 ]

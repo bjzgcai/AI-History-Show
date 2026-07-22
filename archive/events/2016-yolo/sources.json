@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "你只看一次：统一的实时目标检测",
+      "zh": "《你只看一次：统一的实时目标检测》",
       "en": "You Only Look Once: Unified, Real-Time Object Detection"
     },
     "url": "https://arxiv.org/abs/1506.02640",
@@ -16,17 +16,18 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-cvpr-open-access-paper-page",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "开放论文",
-      "en": "Open access"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
-      "zh": "计算机视觉与模式识别会议 open-access paper page",
+      "zh": "CVPR 开放论文页面",
       "en": "CVPR open-access paper page"
     },
     "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-darknet-yolo-project-page",
     "type": "project-page",
     "label": {
-      "zh": "项目",
-      "en": "Project"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "Darknet YOLO project page",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

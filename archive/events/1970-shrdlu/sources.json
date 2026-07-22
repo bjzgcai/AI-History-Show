@@ -1,9 +1,9 @@
 [
   {
     "id": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
-    "type": "reference-only",
+    "type": "thesis",
     "label": {
-      "zh": "论文",
+      "zh": "学位论文",
       "en": "Thesis"
     },
     "title": {
@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-terry-winograd-stanford-computer-science",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
       "zh": "人物资料",
       "en": "Profile"
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-terry-winograd-oral-history-cbi",
-    "type": "reference-only",
+    "type": "archive",
     "label": {
-      "zh": "口述史",
-      "en": "Oral history"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "特里·维诺格拉德 oral history, CBI",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   }
 ]

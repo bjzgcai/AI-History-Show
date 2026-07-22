@@ -3,8 +3,8 @@
     "id": "source-chinook-project-home",
     "type": "project-page",
     "label": {
-      "zh": "官方页面",
-      "en": "Official page"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "Chinook 项目主页",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-checkers-is-solved",
@@ -26,7 +27,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "跳棋已被求解",
+      "zh": "《跳棋已被求解》",
       "en": "Checkers Is Solved"
     },
     "url": "https://www.science.org/doi/10.1126/science.1144079",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-chinook-publications",
-    "type": "reference-only",
+    "type": "paper-index",
     "label": {
-      "zh": "论文列表",
-      "en": "Publications"
+      "zh": "论文索引",
+      "en": "Paper index"
     },
     "title": {
       "zh": "Chinook 论文列表",
@@ -54,11 +56,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-jonathan-schaeffer-portrait",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

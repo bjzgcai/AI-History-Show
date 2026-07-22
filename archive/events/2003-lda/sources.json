@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "潜在狄利克雷分配",
+      "zh": "《潜在狄利克雷分配》",
       "en": "Latent Dirichlet Allocation"
     },
     "url": "https://jmlr.org/papers/v3/blei03a.html",
@@ -16,33 +16,35 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-david-m-blei-homepage",
-    "type": "reference-only",
+    "type": "personal-page",
     "label": {
-      "zh": "作者",
-      "en": "Author"
+      "zh": "个人主页",
+      "en": "Personal homepage"
     },
     "title": {
-      "zh": "戴维·M·布莱 homepage",
-      "en": "David M. Blei homepage"
+      "zh": "戴维·M·布莱个人主页",
+      "en": "David M. Blei personal homepage"
     },
     "url": "https://www.cs.columbia.edu/~blei/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-scikit-learn-latentdirichletallocation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "实现",
-      "en": "Implementation"
+      "zh": "模型文档",
+      "en": "Model documentation"
     },
     "title": {
       "zh": "scikit-learn LatentDirichletAllocation",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

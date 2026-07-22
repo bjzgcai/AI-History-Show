@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-cvpr-paper-page",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "会议论文",
-      "en": "Conference paper"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
       "zh": "CVPR 论文页面",
@@ -35,7 +36,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-compvis-latent-diffusion-repository",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-stability-ai-stable-diffusion-page",
     "type": "project-page",
     "label": {
-      "zh": "项目",
-      "en": "Project"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "Stability AI Stable Diffusion 页面",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

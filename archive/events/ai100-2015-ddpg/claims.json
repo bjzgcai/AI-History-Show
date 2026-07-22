@@ -16,12 +16,14 @@
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
-      "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+      "zh": "<p>2015 年，蒂莫西·利利克拉普等人在 DeepMind 提出 DDPG（深度确定性策略梯度），把确定性策略梯度与深度 actor-critic 网络结合，用于转向角、速度和力矩等连续动作。Actor 直接输出动作，critic 估计 Q(s,a)，并把动作方向上的价值梯度反向传给 actor，从而避免像 DQN 那样枚举有限的离散动作。</p><p>DDPG 是离策略算法，借用了 DQN 的经验回放和目标网络，并在探索阶段向 actor 动作加入噪声；论文还使用批归一化处理不同量纲的状态输入。它在多项模拟物理控制任务中展示了从低维状态甚至像素输入学习连续控制策略的能力，推动深度强化学习进入机器人式控制场景。DDPG 对超参数、价值过估计和探索策略较敏感，后续 TD3、SAC 等方法沿用 actor-critic 路线并提高了训练稳定性。</p>",
+      "en": "<p>In 2015, Timothy Lillicrap and colleagues at DeepMind introduced Deep Deterministic Policy Gradient (DDPG), combining deterministic policy gradients with deep actor-critic networks for continuous actions such as steering angles, velocities, and torques. The actor outputs an action directly, the critic estimates Q(s,a), and the action-value gradient is backpropagated into the actor, avoiding the need to enumerate a finite set of actions as DQN does.</p><p>DDPG is an off-policy algorithm that adopted experience replay and target networks from DQN, while adding noise to actor actions during exploration; the paper also used batch normalization for state variables with different scales. Across simulated physics tasks, it showed that continuous-control policies could be learned from low-dimensional states and even pixel inputs, helping extend deep reinforcement learning toward robotic-style control. DDPG is sensitive to hyperparameters, value overestimation, and exploration, so later methods such as TD3 and SAC retained the actor-critic direction while improving stability.</p>"
     },
     "sourceIds": [
       "source-continuous-control-with-deep-reinforcement-learning",
-      "source-iclr-openreview-record"
+      "source-iclr-openreview-record",
+      "source-deterministic-policy-gradient-algorithms",
+      "source-td3-function-approximation-error"
     ],
     "status": "needs-source"
   }

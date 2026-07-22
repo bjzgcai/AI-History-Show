@@ -1,24 +1,30 @@
 [
   {
     "id": "asset-1983-simulated-annealing-scott-kirkpatrick",
-    "type": "gif",
-    "path": "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
-    "role": "hero-image",
+    "type": "image",
+    "path": "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
+    "role": "portrait",
     "caption": {
-      "zh": "斯科特·柯克帕特里克 肖像",
+      "zh": "斯科特·柯克帕特里克肖像",
       "en": "Scott Kirkpatrick portrait"
     },
     "subcaption": {
-      "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。",
-      "en": "Workshop participant page photo for Scott Kirkpatrick."
+      "zh": "模拟退火论文第一作者。",
+      "en": "Lead author of the simulated annealing paper."
     },
-    "sourceId": "source-optimization-by-simulated-annealing",
+    "sourceId": "source-scott-kirkpatrick-huji-profile",
+    "sourceName": {
+      "zh": "耶路撒冷希伯来大学",
+      "en": "The Hebrew University of Jerusalem"
+    },
+    "sourceUrl": "https://www.cs.huji.ac.il/~kirk/",
     "rights": {
-      "status": "documented-in-legacy",
+      "status": "external-reference",
       "license": {
-        "zh": "Workshop profile photo; rights not stated.",
-        "en": "Workshop profile photo; rights not stated."
-      }
+        "zh": "本地副本来自耶路撒冷希伯来大学人物主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from the Hebrew University of Jerusalem profile; the source page does not state a repository-compatible license. Recheck before external redistribution."
+      },
+      "sourceUrl": "https://www.cs.huji.ac.il/~kirk/SKmugshot.jpg"
     },
     "usage": [
       "variant:bench-council-ai100"
@@ -35,14 +41,19 @@
       "en": "Energy landscape search"
     },
     "subcaption": {
-      "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
-      "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+      "zh": "高温阶段允许跨越局部能垒，降温后逐渐偏向低代价区域。",
+      "en": "High temperature permits barrier crossing; cooling gradually favors lower-cost regions."
     },
     "sourceId": "source-optimization-by-simulated-annealing",
+    "sourceName": {
+      "zh": "柯克帕特里克、格拉特与维基（1983）",
+      "en": "Kirkpatrick, Gelatt, and Vecchi (1983)"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
     "rights": {
-      "status": "documented-in-legacy",
+      "status": "original-local",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 解释图；未复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
@@ -61,14 +72,19 @@
       "en": "Temperature schedule"
     },
     "subcaption": {
-      "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
-      "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+      "zh": "温度计划控制搜索从广泛探索转向局部精修的速度。",
+      "en": "The temperature schedule controls how quickly search shifts from broad exploration to local refinement."
     },
     "sourceId": "source-optimization-by-simulated-annealing",
+    "sourceName": {
+      "zh": "柯克帕特里克、格拉特与维基（1983）",
+      "en": "Kirkpatrick, Gelatt, and Vecchi (1983)"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
     "rights": {
-      "status": "documented-in-legacy",
+      "status": "original-local",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 解释图；未复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },

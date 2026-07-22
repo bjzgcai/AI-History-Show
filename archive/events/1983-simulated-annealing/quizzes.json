@@ -26,14 +26,15 @@
     ],
     "answer": 0,
     "explanation": {
-      "zh": "早期探索允许以一定概率进行上坡移动；降温会逐渐让搜索更挑剔。",
-      "en": "Early exploration allows uphill moves with some probability; cooling gradually makes the search more selective."
+      "zh": "较差移动以约 exp(-ΔE/T) 的概率被接受；高温时概率较大，有助于跨越局部能垒，降温后搜索会逐渐稳定。",
+      "en": "A worse move is accepted with probability approximately exp(-ΔE/T); high temperature makes barrier crossing more likely, while cooling gradually stabilizes the search."
     },
     "sourceIds": [
-      "source-optimization-by-simulated-annealing"
+      "source-optimization-by-simulated-annealing",
+      "source-metropolis-fast-computing-machines"
     ],
     "assetIds": [
-      "asset-1983-simulated-annealing-scott-kirkpatrick"
+      "asset-1983-simulated-annealing-energy-landscape"
     ]
   }
 ]

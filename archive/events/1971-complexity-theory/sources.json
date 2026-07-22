@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "定理证明过程的复杂性",
+      "zh": "《定理证明过程的复杂性》",
       "en": "The Complexity of Theorem-Proving Procedures"
     },
     "url": "https://dl.acm.org/doi/10.1145/800157.805047",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-stephen-a-cook-acm-a-m-turing-award",
-    "type": "award",
+    "type": "profile",
     "label": {
-      "zh": "奖项",
-      "en": "Award"
+      "zh": "人物资料",
+      "en": "Profile"
     },
     "title": {
       "zh": "斯蒂芬·A·库克 ACM A.M. 图灵 Award",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-clay-mathematics-institute-p-vs-np",
-    "type": "problem",
+    "type": "official-page",
     "label": {
-      "zh": "难题",
-      "en": "Problem"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
       "zh": "克雷数学研究所 P 与 NP 问题",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

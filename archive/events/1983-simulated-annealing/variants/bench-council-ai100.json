@@ -11,12 +11,13 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>",
-    "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>"
+    "zh": "<p>1983 年，斯科特·柯克帕特里克、C·丹尼尔·格拉特 Jr. 和马里奥·P·维基把统计物理中的退火过程系统地转化为组合优化方法。算法始终接受更优解；面对代价增加量为 ΔE 的较差解时，则以约 exp(-ΔE/T) 的概率接受，从而在高温阶段越过局部最优，随后随温度降低逐渐转向精细搜索。</p><p>这一方法继承了 1953 年 Metropolis 等人提出的随机采样思想，并用“温度”和“降温计划”控制探索与收敛之间的平衡。理论研究表明，足够缓慢的降温可以带来渐近收敛性质，但实际系统通常采用更快的计划换取可接受的运行时间；这种权衡后来持续影响电路布局、调度、路径规划以及混合元启发式优化。</p>",
+    "en": "<p>In 1983, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi systematically turned the annealing process from statistical physics into a method for combinatorial optimization. The algorithm always accepts an improvement; for a worse candidate with cost increase ΔE, it accepts with probability approximately exp(-ΔE/T), allowing high-temperature search to cross local barriers before cooling shifts the process toward refinement.</p><p>The method adapted the stochastic sampling idea introduced by Metropolis and colleagues in 1953, using temperature and a cooling schedule to balance exploration against convergence. Theory showed that sufficiently slow cooling can provide asymptotic convergence properties, while practical systems usually cool faster to obtain useful answers in reasonable time; that tradeoff has continued to influence circuit placement, scheduling, routing, and hybrid metaheuristics.</p>"
   },
   "emphasis": [
-    "batch-migration",
-    "source-review-needed"
+    "metropolis-acceptance",
+    "cooling-schedule",
+    "combinatorial-optimization"
   ],
   "visual": "annealing",
   "visualModules": [
@@ -31,18 +32,18 @@
         "zh": "模拟退火优化"
       },
       "description": {
-        "en": "Original Science record for the physical annealing analogy applied to optimization.",
-        "zh": "《科学》原始记录：将物理退火类比用于优化问题。"
+        "en": "The 1983 primary paper connecting statistical mechanics with multivariate and combinatorial optimization.",
+        "zh": "1983 年原始论文，将统计力学与多变量、组合优化联系起来。"
       },
       "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
       "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
       "license": {
-        "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
-        "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+        "en": "Publisher record; access conditions are set by Science.",
+        "zh": "出版方论文记录，访问条件由《科学》网站规定。"
       },
       "usage": {
-        "en": "Literature reference link",
-        "zh": "文献参考链接"
+        "en": "Primary paper record",
+        "zh": "原始论文记录"
       },
       "action": {
         "en": "Open Science record",
@@ -52,17 +53,19 @@
   ],
   "assetIds": [
     "asset-1983-simulated-annealing-scott-kirkpatrick",
-    "asset-1983-simulated-annealing-energy-landscape",
-    "asset-1983-simulated-annealing-temperature-schedule"
+    "asset-1983-simulated-annealing-energy-landscape"
   ],
   "sourceIds": [
     "source-optimization-by-simulated-annealing",
+    "source-metropolis-fast-computing-machines",
+    "source-geman-geman-stochastic-relaxation",
     "source-scipy-dual-annealing",
-    "source-hedibert-course-pdf-mirror"
+    "source-scott-kirkpatrick-huji-profile"
   ],
   "claimIds": [
-    "claim-legacy-achievement-summary",
-    "claim-legacy-description"
+    "claim-simulated-annealing-origin",
+    "claim-simulated-annealing-mechanism",
+    "claim-simulated-annealing-cooling-tradeoff"
   ],
   "quizId": "1983-simulated-annealing-quiz-1",
   "commentarySections": [
@@ -73,11 +76,12 @@
         "en": "Historical Background"
       },
       "html": {
-        "zh": "许多 AI 与工程问题都有巨大搜索空间，贪心改进很容易卡住。模拟退火提供了一种有原则地进行受控“上坡”移动的方法。",
-        "en": "Many AI and engineering problems had enormous search spaces where greedy improvement got stuck. Simulated annealing offered a principled way to make controlled uphill moves."
+        "zh": "20 世纪 50 年代的 Metropolis 方法已经展示了如何按热平衡概率对物理状态进行随机采样，但它最初不是为工程优化提出的。1983 年的模拟退火论文把固体退火类比带入组合优化，使研究者能够用受控的“上坡”移动处理容易困住贪心搜索的巨大搜索空间。",
+        "en": "The Metropolis method of the 1950s had already shown how to sample physical states according to thermal probabilities, but it was not originally framed as an engineering optimizer. The 1983 simulated annealing paper carried the solid-annealing analogy into combinatorial optimization, giving researchers controlled uphill moves for search spaces that trap greedy improvement."
       },
       "sourceIds": [
-        "source-optimization-by-simulated-annealing"
+        "source-optimization-by-simulated-annealing",
+        "source-metropolis-fast-computing-machines"
       ]
     },
     {
@@ -87,11 +91,12 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。 关键机制是带降温计划的概率搜索，它把资料线索与可见的演示行为连接起来。",
-        "en": "At high temperature, the algorithm explores boldly. As the system cools, it increasingly commits to lower-cost states, imitating the settling of physical materials."
+        "zh": "算法无条件接受降低代价的候选，并以约 exp(-ΔE/T) 的概率接受代价更高的候选；因此同一个坏移动在高温时更可能通过。降温计划逐步降低这种容忍度，让搜索从跨越能垒的广泛探索转向低代价区域内的精细调整。",
+        "en": "The algorithm accepts every cost-reducing candidate and accepts a higher-cost candidate with probability approximately exp(-ΔE/T), so the same bad move is more likely to pass at high temperature. A cooling schedule gradually removes that tolerance, shifting search from broad barrier crossing to refinement inside lower-cost regions."
       },
       "sourceIds": [
-        "source-optimization-by-simulated-annealing"
+        "source-optimization-by-simulated-annealing",
+        "source-metropolis-fast-computing-machines"
       ]
     },
     {
@@ -101,19 +106,21 @@
         "en": "Long-Term Legacy"
       },
       "html": {
-        "zh": "专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法，而不是轻松获得全局最优的保证。它的长期影响在于降温隐喻被用于调度、路径规划、布局和其他困难组合搜索。",
-        "en": "Experts generally treat simulated annealing as a classic metaheuristic for escaping local optima, not as a guarantee of easy global optimization. Its long-term legacy is the cooling metaphor for scheduling, routing, placement, and other hard combinatorial searches."
+        "zh": "专家通常把模拟退火视为连接统计物理与现代元启发式优化的经典方法，而不是快速获得全局最优的保证。早期理论工作说明极慢降温可带来渐近收敛性质，工程实践则更重视在解质量和运行时间之间折中；这种思想至今仍见于调度、路径规划、电路布局和混合搜索。",
+        "en": "Experts generally treat simulated annealing as a classic bridge between statistical physics and modern metaheuristic optimization, not as a promise of quick global optimality. Early theory established asymptotic properties for very slow cooling, while engineering practice emphasizes the tradeoff between solution quality and runtime; the idea remains influential in scheduling, routing, circuit placement, and hybrid search."
       },
       "sourceIds": [
-        "source-optimization-by-simulated-annealing"
+        "source-optimization-by-simulated-annealing",
+        "source-geman-geman-stochastic-relaxation",
+        "source-scipy-dual-annealing"
       ]
     }
   ],
   "review": {
     "status": "draft",
     "notes": {
-      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
-      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+      "zh": "已补充技术机制、历史源流、收敛权衡、人物头像及图片来源。",
+      "en": "Technical mechanism, historical lineage, convergence tradeoff, portrait, and image provenance have been enriched."
     }
   },
   "category": {
@@ -127,10 +134,10 @@
         "zh": "斯科特·柯克帕特里克"
       },
       "role": {
-        "en": "1983 paper co-author",
-        "zh": "1983 年模拟退火论文共同作者"
+        "en": "Lead author and IBM researcher",
+        "zh": "模拟退火论文第一作者、IBM 研究员"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },
@@ -140,8 +147,8 @@
         "zh": "C·丹尼尔·格拉特 Jr."
       },
       "role": {
-        "en": "1983 paper co-author",
-        "zh": "1983 年模拟退火论文共同作者"
+        "en": "Co-author and IBM researcher",
+        "zh": "模拟退火论文共同作者、IBM 研究员"
       },
       "avatar": "",
       "avatarStyle": "",
@@ -153,8 +160,8 @@
         "zh": "马里奥·P·维基"
       },
       "role": {
-        "en": "1983 paper co-author",
-        "zh": "1983 年模拟退火论文共同作者"
+        "en": "Co-author and IBM researcher",
+        "zh": "模拟退火论文共同作者、IBM 研究员"
       },
       "avatar": "",
       "avatarStyle": "",
@@ -194,8 +201,8 @@
       "zh": "优化算法"
     },
     "method": {
-      "en": "Probabilistic search with a cooling schedule",
-      "zh": "带降温计划的概率搜索"
+      "en": "Metropolis acceptance with a cooling schedule",
+      "zh": "结合 Metropolis 接受准则与降温计划的概率搜索"
     },
     "artifact": {
       "en": "Simulated annealing algorithm",
@@ -206,8 +213,8 @@
       "zh": "《科学》 模拟退火优化论文"
     },
     "demo": {
-      "en": "Accept some worse moves early, cool over time",
-      "zh": "早期接受部分坏移动，逐步降温"
+      "en": "Accept worse moves with exp(-ΔE/T), then reduce T",
+      "zh": "按 exp(-ΔE/T) 接受较差移动，再逐步降低 T"
     },
     "keyConcepts": [
       {
@@ -216,8 +223,8 @@
           "zh": "温度"
         },
         "text": {
-          "en": "A temperature parameter controls how willing the algorithm is to accept worse moves.",
-          "zh": "温度参数控制算法接受较差移动的意愿。"
+          "en": "Temperature controls the probability of accepting a worse move; higher T makes barrier crossing more likely.",
+          "zh": "温度参数控制算法接受较差移动的概率；T 越高，越容易跨越能垒。"
         }
       },
       {
@@ -226,18 +233,18 @@
           "zh": "降温计划"
         },
         "text": {
-          "en": "The schedule gradually lowers temperature so the search shifts from exploration to refinement.",
-          "zh": "降温计划逐渐降低温度，使搜索从探索转向精修。"
+          "en": "The schedule lowers temperature, shifting search from broad exploration to local refinement and setting the quality-runtime tradeoff.",
+          "zh": "降温计划逐渐降低温度，使搜索从广泛探索转向局部精修，并决定质量与耗时的权衡。"
         }
       },
       {
         "label": {
-          "en": "Local Optima",
-          "zh": "局部最优"
+          "en": "Acceptance Rule",
+          "zh": "接受准则"
         },
         "text": {
-          "en": "Accepting occasional worse moves helps the search escape solutions that are good nearby but not globally best.",
-          "zh": "偶尔接受较差移动可以帮助搜索逃离局部看起来不错但全局并非最优的解。"
+          "en": "Improvements are accepted; a worse move of ΔE is accepted with probability approximately exp(-ΔE/T).",
+          "zh": "更优移动直接接受；代价增加 ΔE 的较差移动以约 exp(-ΔE/T) 的概率接受。"
         }
       }
     ],
@@ -257,7 +264,7 @@
     ],
     "relatedRegions": [
       {
-        "en": "United States",
+        "en": "US",
         "zh": "美国"
       }
     ],
@@ -267,8 +274,8 @@
         "zh": "高温探索"
       },
       {
-        "en": "Occasional uphill move",
-        "zh": "偶尔上坡移动"
+        "en": "Metropolis acceptance",
+        "zh": "Metropolis 概率接受"
       },
       {
         "en": "Cooling schedule",
@@ -287,18 +294,18 @@
           "zh": "模拟退火优化"
         },
         "description": {
-          "en": "Original Science record for the physical annealing analogy applied to optimization.",
-          "zh": "《科学》原始记录：将物理退火类比用于优化问题。"
+          "en": "The 1983 primary paper connecting statistical mechanics with multivariate and combinatorial optimization.",
+          "zh": "1983 年原始论文，将统计力学与多变量、组合优化联系起来。"
         },
         "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
         "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
         "license": {
-          "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
-          "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          "en": "Publisher record; access conditions are set by Science.",
+          "zh": "出版方论文记录，访问条件由《科学》网站规定。"
         },
         "usage": {
-          "en": "Literature reference link",
-          "zh": "文献参考链接"
+          "en": "Primary paper record",
+          "zh": "原始论文记录"
         },
         "action": {
           "en": "Open Science record",
@@ -309,12 +316,12 @@
   },
   "location": {
     "name": {
-      "en": "IBM Thomas J. Watson Research Center",
-      "zh": "IBM 托马斯·J·沃森 研究中心"
+      "en": "IBM Watson Research Center, Yorktown Heights",
+      "zh": "IBM 沃森研究中心，约克敦高地"
     },
     "country": {
-      "en": "Yorktown Heights, United States",
-      "zh": "美国约克敦高地"
+      "en": "US",
+      "zh": "美国"
     },
     "coordinates": [
       41.2107,

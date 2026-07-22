@@ -1,7 +1,7 @@
 [
   {
     "id": "source-histograms-of-oriented-gradients-for-human-detection",
-    "type": "paper",
+    "type": "paper-file",
     "label": {
       "zh": "论文 PDF",
       "en": "Paper PDF"
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-ieee-cvpr-paper-record",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "会议论文",
-      "en": "Conference paper"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
       "zh": "IEEE CVPR 论文记录",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-histogram-of-oriented-gradients-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "方向梯度直方图概览",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-scikit-image-hog-example",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "文档",
-      "en": "Documentation"
+      "zh": "示例文档",
+      "en": "Example documentation"
     },
     "title": {
       "zh": "scikit-image HOG 示例",
@@ -73,18 +76,19 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-bill-triggs-lear-profile",
-    "type": "profile",
+    "type": "personal-page",
     "label": {
-      "zh": "作者主页",
-      "en": "Author profile"
+      "zh": "个人主页",
+      "en": "Personal homepage"
     },
     "title": {
-      "zh": "比尔·特里格斯 INRIA/LEAR 作者主页",
-      "en": "Bill Triggs INRIA/LEAR author profile"
+      "zh": "比尔·特里格斯个人主页",
+      "en": "Bill Triggs personal homepage"
     },
     "url": "https://lear.inrialpes.fr/people/triggs/",
     "language": "en",
@@ -92,6 +96,7 @@
     "notes": {
       "zh": "INRIA/LEAR 托管的比尔·特里格斯作者主页和肖像来源。",
       "en": "Bill Triggs author profile and portrait source hosted by INRIA/LEAR."
-    }
+    },
+    "purpose": "biography"
   }
 ]

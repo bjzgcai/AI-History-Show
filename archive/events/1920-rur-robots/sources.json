@@ -3,8 +3,8 @@
     "id": "source-project-gutenberg-r-u-r-text",
     "type": "archive",
     "label": {
-      "zh": "档案文本",
-      "en": "Archive text"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "Project Gutenberg《R.U.R.》文本",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-1920-czech-edition-scan",
     "type": "archive",
     "label": {
-      "zh": "档案扫描",
-      "en": "Archive scan"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "1920 年捷克语版本扫描",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-r-u-r-publication-and-word-history-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "《R.U.R.》出版与词源背景",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-robot-etymology-background",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "机器人词源背景",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

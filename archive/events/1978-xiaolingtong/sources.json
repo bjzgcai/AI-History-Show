@@ -1,10 +1,10 @@
 [
   {
     "id": "source-little-smart-publication-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "《小灵通漫游未来》出版概览",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-ye-yonglie-biography",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "人物参考",
-      "en": "Biographical reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "叶永烈人物资料",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-science-fiction-encyclopedia-ye-yonglie",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "作者参考",
-      "en": "Author reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "《科幻百科全书》叶永烈条目",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-chinese-science-fiction-context",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "中国科幻语境",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

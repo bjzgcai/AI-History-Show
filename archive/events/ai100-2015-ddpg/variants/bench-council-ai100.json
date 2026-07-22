@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
-    "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+    "zh": "<p>2015 年，蒂莫西·利利克拉普等人在 DeepMind 提出 DDPG（深度确定性策略梯度），把确定性策略梯度与深度 actor-critic 网络结合，用于转向角、速度和力矩等连续动作。Actor 直接输出动作，critic 估计 Q(s,a)，并把动作方向上的价值梯度反向传给 actor，从而避免像 DQN 那样枚举有限的离散动作。</p><p>DDPG 是离策略算法，借用了 DQN 的经验回放和目标网络，并在探索阶段向 actor 动作加入噪声；论文还使用批归一化处理不同量纲的状态输入。它在多项模拟物理控制任务中展示了从低维状态甚至像素输入学习连续控制策略的能力，推动深度强化学习进入机器人式控制场景。DDPG 对超参数、价值过估计和探索策略较敏感，后续 TD3、SAC 等方法沿用 actor-critic 路线并提高了训练稳定性。</p>",
+    "en": "<p>In 2015, Timothy Lillicrap and colleagues at DeepMind introduced Deep Deterministic Policy Gradient (DDPG), combining deterministic policy gradients with deep actor-critic networks for continuous actions such as steering angles, velocities, and torques. The actor outputs an action directly, the critic estimates Q(s,a), and the action-value gradient is backpropagated into the actor, avoiding the need to enumerate a finite set of actions as DQN does.</p><p>DDPG is an off-policy algorithm that adopted experience replay and target networks from DQN, while adding noise to actor actions during exploration; the paper also used batch normalization for state variables with different scales. Across simulated physics tasks, it showed that continuous-control policies could be learned from low-dimensional states and even pixel inputs, helping extend deep reinforcement learning toward robotic-style control. DDPG is sensitive to hyperparameters, value overestimation, and exploration, so later methods such as TD3 and SAC retained the actor-critic direction while improving stability.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -31,8 +31,8 @@
         "zh": "使用深度强化学习进行连续控制"
       },
       "description": {
-        "en": "arXiv source card for DDPG.",
-        "zh": "arXiv 的DDPG资料卡片。"
+        "en": "The original DDPG paper, including the actor-critic method and continuous-control experiments.",
+        "zh": "DDPG 原始论文，介绍 actor-critic 方法及连续控制实验。"
       },
       "url": "https://arxiv.org/abs/1509.02971",
       "source": "https://arxiv.org/abs/1509.02971",
@@ -57,7 +57,9 @@
   "sourceIds": [
     "source-continuous-control-with-deep-reinforcement-learning",
     "source-iclr-openreview-record",
-    "source-deep-deterministic-policy-gradient-overview"
+    "source-deterministic-policy-gradient-algorithms",
+    "source-td3-function-approximation-error",
+    "source-timothy-lillicrap-stanford-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -72,10 +74,11 @@
         "en": "Historical Background"
       },
       "html": {
-        "zh": "DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。",
-        "en": "DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems."
+        "zh": "DQN 在 Atari 上证明了深度网络可以学习离散动作价值，但机器人控制常需要连续输出转向角、速度或力矩。2014 年的确定性策略梯度提供了理论基础，DDPG 随后把它与深度网络及 DQN 的稳定训练机制结合起来。",
+        "en": "DQN showed that deep networks could learn values for discrete Atari actions, but robotic control often requires continuous steering angles, velocities, or torques. Deterministic policy gradients supplied the theoretical basis in 2014, and DDPG then combined that idea with deep networks and DQN-style stabilization."
       },
       "sourceIds": [
+        "source-deterministic-policy-gradient-algorithms",
         "source-continuous-control-with-deep-reinforcement-learning"
       ]
     },
@@ -86,8 +89,8 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
-        "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+        "zh": "Actor 根据状态直接输出确定性连续动作，critic 评估 Q(s,a)，再通过动作梯度更新 actor。经验回放打散样本相关性，缓慢更新的目标 actor 与目标 critic 稳定学习，探索噪声则帮助智能体收集不同动作附近的经验。",
+        "en": "The actor maps a state directly to a deterministic continuous action, while the critic estimates Q(s,a) and supplies the action gradient used to update the actor. Experience replay breaks temporal correlations, slowly updated target actor and critic networks stabilize learning, and exploration noise gathers experience around different actions."
       },
       "sourceIds": [
         "source-continuous-control-with-deep-reinforcement-learning"
@@ -100,11 +103,12 @@
         "en": "Long-Term Legacy"
       },
       "html": {
-        "zh": "专家通常把 DDPG 视为早期连续控制深度强化学习的重要算法，尽管后续方法提高了稳定性。它的长期影响在于 actor-critic 模板影响了 TD3、SAC 和许多机器人智能体。",
-        "en": "Experts generally treat DDPG as an important early deep RL algorithm for continuous control, even though later methods improved stability. Its long-term legacy is the actor-critic template behind TD3, SAC, and many robotics agents."
+        "zh": "专家通常把 DDPG 视为把深度强化学习带入连续控制的重要早期基线，同时也把价值过估计、探索不足和超参数敏感等问题暴露得很清楚。TD3 通过双 critic 和延迟策略更新改善稳定性，SAC 则采用随机策略与熵正则化；二者都延续了 DDPG 推广的深度 actor-critic 路线。",
+        "en": "Experts generally treat DDPG as an important early baseline that brought deep reinforcement learning into continuous control while clearly exposing value overestimation, weak exploration, and hyperparameter sensitivity. TD3 improved stability with twin critics and delayed policy updates, while SAC used stochastic policies and entropy regularization; both continued the deep actor-critic direction popularized by DDPG."
       },
       "sourceIds": [
-        "source-continuous-control-with-deep-reinforcement-learning"
+        "source-continuous-control-with-deep-reinforcement-learning",
+        "source-td3-function-approximation-error"
       ]
     }
   ],
@@ -129,7 +133,7 @@
         "en": "DDPG lead author",
         "zh": "DDPG 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
       "avatarStyle": "",
       "figureType": "person"
     }
@@ -175,12 +179,12 @@
       "zh": "深度确定性策略梯度"
     },
     "material": {
-      "en": "ICLR paper and continuous-control benchmarks",
-      "zh": "ICLR 论文与连续控制基准"
+      "en": "DDPG paper, deterministic policy-gradient precursor, and TD3 follow-up",
+      "zh": "DDPG 论文、确定性策略梯度前序研究与 TD3 后续研究"
     },
     "demo": {
-      "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
-      "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+      "en": "Adjust the actor action and observe how critic values, replayed experience, and target-network updates shape the policy.",
+      "zh": "调整 actor 动作，观察 critic 价值、回放经验和目标网络更新如何共同塑造策略。"
     },
     "keyConcepts": [
       {
@@ -189,8 +193,8 @@
           "zh": "Actor"
         },
         "text": {
-          "en": "The policy outputs a continuous action.",
-          "zh": "策略输出连续动作。"
+          "en": "A deterministic policy maps each state directly to a continuous action.",
+          "zh": "确定性策略把每个状态直接映射为连续动作。"
         }
       },
       {
@@ -199,85 +203,67 @@
           "zh": "Critic"
         },
         "text": {
-          "en": "The value model supplies policy gradients.",
-          "zh": "价值模型提供策略梯度。"
+          "en": "The Q-network evaluates state-action pairs and supplies the action gradient used to improve the actor.",
+          "zh": "Q 网络评估状态—动作对，并提供用于改进 actor 的动作梯度。"
+        }
+      },
+      {
+        "label": {
+          "en": "Replay and Targets",
+          "zh": "经验回放与目标网络"
+        },
+        "text": {
+          "en": "Replay batches and slowly updated target networks reduce correlation and moving-target instability.",
+          "zh": "回放批次和缓慢更新的目标网络降低样本相关性与移动目标带来的不稳定。"
+        }
+      },
+      {
+        "label": {
+          "en": "Exploration Noise",
+          "zh": "探索噪声"
+        },
+        "text": {
+          "en": "Noise is added during data collection so a deterministic actor can explore nearby actions.",
+          "zh": "收集经验时向动作加入噪声，使确定性 actor 能探索邻近动作。"
         }
       }
     ],
     "relatedAchievements": [
       {
-        "en": {
-          "en": "Actor-Critic",
-          "zh": "Actor-Critic"
-        },
-        "zh": {
-          "en": "Actor-Critic",
-          "zh": "Actor-Critic"
-        }
+        "en": "Deterministic Policy Gradient",
+        "zh": "确定性策略梯度"
       },
       {
-        "en": {
-          "en": "Deep Q Network",
-          "zh": "深度 Q 网络"
-        },
-        "zh": {
-          "en": "Deep Q Network",
-          "zh": "深度 Q 网络"
-        }
+        "en": "Deep Q-Network",
+        "zh": "深度 Q 网络"
       },
       {
-        "en": {
-          "en": "Policy gradient theorem",
-          "zh": "策略梯度定理"
-        },
-        "zh": {
-          "en": "Policy gradient theorem",
-          "zh": "策略梯度定理"
-        }
+        "en": "TD3 and SAC",
+        "zh": "TD3 与 SAC"
       }
     ],
     "relatedRegions": [
       {
-        "en": {
-          "en": "United Kingdom",
-          "zh": "英国"
-        },
-        "zh": {
-          "en": "United Kingdom",
-          "zh": "英国"
-        }
+        "en": "United Kingdom",
+        "zh": "英国"
       }
     ],
     "demoSteps": [
       {
-        "en": {
-          "en": "Actor action",
-          "zh": "actor 动作"
-        },
-        "zh": {
-          "en": "Actor action",
-          "zh": "actor 动作"
-        }
+        "en": "State enters actor",
+        "zh": "状态输入 actor"
       },
       {
-        "en": {
-          "en": "Critic value",
-          "zh": "critic 价值"
-        },
-        "zh": {
-          "en": "Critic value",
-          "zh": "critic 价值"
-        }
+        "en": "Actor outputs continuous action",
+        "zh": "actor 输出连续动作"
       },
       {
-        "en": {
-          "en": "Policy update",
-          "zh": "策略更新"
-        },
-        "zh": {
-          "en": "Policy update",
-          "zh": "策略更新"
-        }
+        "en": "Critic evaluates Q(s,a)",
+        "zh": "critic 评估 Q(s,a)"
+      },
+      {
+        "en": "Replay batch updates networks",
+        "zh": "回放批次更新网络"
       }
     ],
     "demoImage": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
@@ -288,8 +274,8 @@
           "zh": "资料线索"
         },
         "text": {
-          "en": "ICLR paper and continuous-control benchmarks",
-          "zh": "ICLR 论文与连续控制基准"
+          "en": "The 2014 deterministic policy-gradient paper, the original DDPG paper, and the later TD3 diagnosis of value overestimation.",
+          "zh": "2014 年确定性策略梯度论文、DDPG 原论文，以及后来 TD3 对价值过估计问题的分析。"
         }
       },
       {
@@ -298,8 +284,8 @@
           "zh": "互动点"
         },
         "text": {
-          "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
-          "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+          "en": "Change the proposed action or exploration noise and compare the critic score before applying the policy update.",
+          "zh": "改变候选动作或探索噪声，对比策略更新前的 critic 评分变化。"
         }
       }
     ],
@@ -315,8 +301,8 @@
           "zh": "使用深度强化学习进行连续控制"
         },
         "description": {
-          "en": "arXiv source card for DDPG.",
-          "zh": "arXiv 的DDPG资料卡片。"
+          "en": "The original DDPG paper, including the actor-critic method and continuous-control experiments.",
+          "zh": "DDPG 原始论文，介绍 actor-critic 方法及连续控制实验。"
         },
         "url": "https://arxiv.org/abs/1509.02971",
         "source": "https://arxiv.org/abs/1509.02971",
@@ -337,12 +323,12 @@
   },
   "location": {
     "name": {
-      "en": "DeepMind",
-      "zh": "DeepMind"
+      "en": "DeepMind, London",
+      "zh": "DeepMind，伦敦"
     },
     "country": {
-      "en": "London, United Kingdom",
-      "zh": "英国伦敦"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       51.5072,

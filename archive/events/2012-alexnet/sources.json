@@ -22,11 +22,12 @@
     "notes": {
       "zh": "AlexNet 主论文页面。",
       "en": "Primary AlexNet paper page."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-alexnet-neurips-pdf",
-    "type": "paper",
+    "type": "paper-file",
     "label": {
       "zh": "论文 PDF",
       "en": "Paper PDF"
@@ -42,14 +43,15 @@
     "notes": {
       "zh": "AlexNet 论文 PDF。",
       "en": "AlexNet paper PDF."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-imagenet-challenge",
     "type": "official-page",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
       "zh": "ImageNet 大规模视觉识别挑战赛",
@@ -61,14 +63,15 @@
     "notes": {
       "zh": "ImageNet 大规模视觉识别挑战赛页面。",
       "en": "ImageNet Large Scale Visual Recognition Challenge page."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-alexnet-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Context"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "AlexNet 概览",
@@ -80,6 +83,7 @@
     "notes": {
       "zh": "AlexNet 概览补充资料。",
       "en": "Supplementary AlexNet overview reference."
-    }
+    },
+    "purpose": "background"
   }
 ]

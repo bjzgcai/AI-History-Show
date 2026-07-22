@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-21 10:17
+// 生成时间: 2026-07-22 08:09
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -260,6 +260,7 @@ const milestones = [
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -274,36 +275,39 @@ const milestones = [
             "en": "NeurIPS full paper PDF"
           },
           "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-imagenet-challenge",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
             "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "official-page"
         },
         {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "背景",
-            "en": "Context"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -836,50 +840,54 @@ const milestones = [
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "NeurIPS 论文页面",
             "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Google Research 出版页面",
             "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "official-page"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "回顾",
-            "en": "Retrospective"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "Google Research Transformer 博客",
             "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+          "purpose": "historical-context",
           "reliability": "secondary",
-          "sourceType": "official-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -1333,44 +1341,47 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "《自然》 2016 AlphaGo 论文",
             "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "博客",
-            "en": "Blog"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
             "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "official-page"
         },
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "API",
-            "en": "API"
+            "zh": "API 文档",
+            "en": "API documentation"
           },
           "label": {
             "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "code"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -1760,10 +1771,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "计算机器与智能",
+            "zh": "《计算机器与智能》",
             "en": "Computing Machinery and Intelligence"
           },
           "url": "https://academic.oup.com/mind/article/LIX/236/433/986238",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -1778,6 +1790,7 @@ const milestones = [
             "en": "Turing Digital Archive"
           },
           "url": "https://turingarchive.kings.cam.ac.uk/computing-machinery-and-intelligence",
+          "purpose": "historical-context",
           "reliability": "reference-only",
           "sourceType": "archive"
         },
@@ -1792,22 +1805,24 @@ const milestones = [
             "en": "Internet Archive digital preview"
           },
           "url": "https://archive.org/details/MIND--COMPUTING-MACHINERY-AND-INTELLIGENCE/mode/1up",
+          "purpose": "historical-context",
           "reliability": "reference-only",
           "sourceType": "archive"
         },
         {
           "id": "source-stanford-encyclopedia-of-philosophy",
           "type": {
-            "zh": "背景",
-            "en": "Context"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "斯坦福哲学百科全书",
             "en": "Stanford Encyclopedia of Philosophy"
           },
           "url": "https://plato.stanford.edu/archives/spr2020/entries/turing-test/",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "context"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -2206,10 +2221,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "符号表达式的递归函数",
+            "zh": "《符号表达式的递归函数》",
             "en": "Recursive Functions of Symbolic Expressions"
           },
           "url": "https://www-formal.stanford.edu/jmc/recursive.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -2224,22 +2240,24 @@ const milestones = [
             "en": "LISP I Programmer's Manual"
           },
           "url": "https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "manual"
+          "sourceType": "documentation"
         },
         {
           "id": "source-history-of-lisp",
           "type": {
-            "zh": "历史",
-            "en": "History"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "Lisp 史",
             "en": "History of Lisp"
           },
           "url": "https://www-formal.stanford.edu/jmc/history/lisp/lisp.html",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "history"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -2628,40 +2646,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "定理证明过程的复杂性",
+            "zh": "《定理证明过程的复杂性》",
             "en": "The Complexity of Theorem-Proving Procedures"
           },
           "url": "https://dl.acm.org/doi/10.1145/800157.805047",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-stephen-a-cook-acm-a-m-turing-award",
           "type": {
-            "zh": "奖项",
-            "en": "Award"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "斯蒂芬·A·库克 ACM A.M. 图灵 Award",
             "en": "Stephen A. Cook ACM A.M. Turing Award"
           },
           "url": "https://awards.acm.org/award_winners/cook_N991950",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "award"
+          "sourceType": "profile"
         },
         {
           "id": "source-clay-mathematics-institute-p-vs-np",
           "type": {
-            "zh": "难题",
-            "en": "Problem"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
             "zh": "克雷数学研究所 P 与 NP 问题",
             "en": "Clay Mathematics Institute P vs NP"
           },
           "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "problem"
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
@@ -3065,10 +3086,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "相对频率的一致收敛",
+            "zh": "《相对频率的一致收敛》",
             "en": "On the Uniform Convergence of Relative Frequencies"
           },
           "url": "https://epubs.siam.org/doi/10.1137/1116025",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -3079,26 +3101,28 @@ const milestones = [
             "en": "Book"
           },
           "label": {
-            "zh": "统计学习理论的本质",
+            "zh": "《统计学习理论的本质》",
             "en": "The Nature of Statistical Learning Theory"
           },
           "url": "https://link.springer.com/book/10.1007/978-1-4757-2440-0",
+          "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "book"
         },
         {
           "id": "source-an-overview-of-statistical-learning-theory",
           "type": {
-            "zh": "综述",
-            "en": "Overview"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "统计学习理论概览",
             "en": "An Overview of Statistical Learning Theory"
           },
           "url": "https://pubmed.ncbi.nlm.nih.gov/18252602/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "overview"
+          "sourceType": "paper-index"
         }
       ],
       "sourceIds": [
@@ -3518,10 +3542,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "逻辑理论机",
+            "zh": "《逻辑理论机》",
             "en": "The Logic Theory Machine"
           },
           "url": "https://books.google.com/books/about/The_Logic_Theory_Machine.html?id=n_OK4q5RP2YC",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -3536,22 +3561,24 @@ const milestones = [
             "en": "Carnegie Mellon University Archives"
           },
           "url": "https://findingaids.library.cmu.edu/repositories/2/archival_objects/22555",
+          "purpose": "historical-context",
           "reliability": "reference-only",
           "sourceType": "archive"
         },
         {
           "id": "source-allen-newell-acm-a-m-turing-award",
           "type": {
-            "zh": "奖项",
-            "en": "Award"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "艾伦·纽厄尔 ACM A.M. 图灵 Award",
             "en": "Allen Newell ACM A.M. Turing Award"
           },
           "url": "https://amturing.acm.org/award_winners/newell_3167755.cfm",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "award"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -3945,40 +3972,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "通过模式识别证明定理 I",
+            "zh": "《通过模式识别证明定理 I》",
             "en": "Proving theorems by pattern recognition I"
           },
           "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-proving-theorems-by-pattern-recognition-ii",
           "type": {
-            "zh": "档案",
-            "en": "Archive"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "通过模式识别证明定理（二）",
             "en": "Proving Theorems by Pattern Recognition - II"
           },
           "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/proving-theorems-by-pattern-recognition-ii/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "archive"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-rockefeller-university-digital-commons-wang-hao",
           "type": {
-            "zh": "照片",
-            "en": "Photo"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
             "zh": "Rockefeller University Digital Commons: 王浩, Hao",
             "en": "Rockefeller University Digital Commons: Wang, Hao"
           },
           "url": "https://digitalcommons.rockefeller.edu/faculty-members/109/",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "photo"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -4411,40 +4441,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "量词理论的计算过程",
+            "zh": "《量词理论的计算过程》",
             "en": "A Computing Procedure for Quantification Theory"
           },
           "url": "https://dl.acm.org/doi/10.1145/321033.321034",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-a-machine-program-for-theorem-proving",
           "type": {
-            "zh": "程序",
-            "en": "Program"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "用于定理证明的机器程序",
             "en": "A machine program for theorem-proving"
           },
           "url": "https://cacm.acm.org/research/a-machine-program-for-theorem-proving/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "program"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-wikimedia-commons-hilary-putnam",
           "type": {
-            "zh": "照片",
-            "en": "Photo"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
             "zh": "维基共享资源: 希拉里·普特南",
             "en": "Wikimedia Commons: Hilary Putnam"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Hilary_Putnam.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "photo"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -4874,40 +4907,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Adam：一种随机优化方法",
+            "zh": "《Adam：一种随机优化方法》",
             "en": "Adam: A Method for Stochastic Optimization"
           },
           "url": "https://arxiv.org/abs/1412.6980",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-pytorch-torch-optim-adam",
           "type": {
-            "zh": "Implementation",
-            "en": "Implementation"
+            "zh": "优化器文档",
+            "en": "Optimizer documentation"
           },
           "label": {
             "zh": "PyTorch torch.optim.Adam",
             "en": "PyTorch torch.optim.Adam"
           },
           "url": "https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "implementation"
+          "sourceType": "documentation"
         },
         {
           "id": "source-tensorflow-keras-adam-optimizer",
           "type": {
-            "zh": "Framework docs",
-            "en": "Framework docs"
+            "zh": "优化器文档",
+            "en": "Optimizer documentation"
           },
           "label": {
-            "zh": "TensorFlow Keras Adam optimizer",
+            "zh": "TensorFlow Keras Adam 优化器",
             "en": "TensorFlow Keras Adam optimizer"
           },
           "url": "https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "framework-docs"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -5359,24 +5395,26 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "用于大规模图像识别的超深卷积网络",
+            "zh": "《用于大规模图像识别的超深卷积网络》",
             "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
           },
           "url": "https://arxiv.org/abs/1409.1556",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-oxford-vgg-very-deep-convnets",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Oxford VGG Very Deep ConvNets",
             "en": "Oxford VGG Very Deep ConvNets"
           },
           "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
@@ -5384,15 +5422,16 @@ const milestones = [
           "id": "source-torchvision-vgg-model-family",
           "type": {
             "zh": "模型文档",
-            "en": "Model docs"
+            "en": "Model documentation"
           },
           "label": {
-            "zh": "TorchVision VGG model family",
+            "zh": "TorchVision VGG 模型系列",
             "en": "TorchVision VGG model family"
           },
           "url": "https://pytorch.org/vision/stable/models/vgg.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "model-docs"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -5856,38 +5895,41 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "U-Net：用于生物医学图像分割的卷积网络",
+            "zh": "《U-Net：用于生物医学图像分割的卷积网络》",
             "en": "U-Net: Convolutional Networks for Biomedical Image Segmentation"
           },
           "url": "https://arxiv.org/abs/1505.04597",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-freiburg-u-net-release-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "弗赖堡 U-Net 项目发布页",
             "en": "Freiburg U-Net release page"
           },
           "url": "https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
         {
           "id": "source-nnu-net-implementation-project",
           "type": {
-            "zh": "工具包",
-            "en": "Toolkit"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "nnU-Net 实现项目",
             "en": "nnU-Net implementation project"
           },
           "url": "https://github.com/MIC-DKFZ/nnUNet",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "project-page"
         }
@@ -6327,40 +6369,43 @@ const milestones = [
             "en": "Book"
           },
           "label": {
-            "zh": "自然系统与人工系统中的适应",
+            "zh": "《自然系统与人工系统中的适应》",
             "en": "Adaptation in Natural and Artificial Systems"
           },
           "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
+          "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "book"
         },
         {
           "id": "source-deap-evolutionary-computation-framework",
           "type": {
-            "zh": "工具包",
-            "en": "Toolkit"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "DEAP evolutionary computation framework",
             "en": "DEAP evolutionary computation framework"
           },
           "url": "https://deap.readthedocs.io/en/master/",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "toolkit"
+          "sourceType": "documentation"
         },
         {
           "id": "source-ecj-evolutionary-computation-system",
           "type": {
-            "zh": "工具包",
-            "en": "Toolkit"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "ECJ evolutionary computation system",
             "en": "ECJ evolutionary computation system"
           },
           "url": "https://cs.gmu.edu/~eclab/projects/ecj/",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "toolkit"
+          "sourceType": "project-page"
         }
       ],
       "sourceIds": [
@@ -6834,10 +6879,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测",
+            "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》",
             "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
           },
           "url": "https://arxiv.org/abs/1506.01497",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -6852,6 +6898,7 @@ const milestones = [
             "en": "ShaoqingRen/faster_rcnn"
           },
           "url": "https://github.com/ShaoqingRen/faster_rcnn",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         },
@@ -6859,15 +6906,16 @@ const milestones = [
           "id": "source-torchvision-faster-r-cnn-model",
           "type": {
             "zh": "模型文档",
-            "en": "Model docs"
+            "en": "Model documentation"
           },
           "label": {
             "zh": "TorchVision Faster R-CNN 模型",
             "en": "TorchVision Faster R-CNN model"
           },
           "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -7332,24 +7380,26 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "最优间隔分类器的训练算法",
+            "zh": "《最优间隔分类器的训练算法》",
             "en": "A Training Algorithm for Optimal Margin Classifiers"
           },
           "url": "https://dl.acm.org/doi/10.1145/130385.130401",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-libsvm-project-page",
           "type": {
-            "zh": "工具包",
-            "en": "Toolkit"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "LIBSVM project page",
             "en": "LIBSVM project page"
           },
           "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
@@ -7357,15 +7407,16 @@ const milestones = [
           "id": "source-scikit-learn-svc",
           "type": {
             "zh": "模型文档",
-            "en": "Model docs"
+            "en": "Model documentation"
           },
           "label": {
             "zh": "scikit-learn SVC",
             "en": "scikit-learn SVC"
           },
           "url": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -7839,10 +7890,11 @@ const milestones = [
             "en": "Book"
           },
           "label": {
-            "zh": "分类与回归树",
+            "zh": "《分类与回归树》",
             "en": "Classification and Regression Trees"
           },
           "url": "https://www.routledge.com/Classification-and-RegressionTrees/Breiman-Friedman-Stone-Olshen/p/book/9780412048418",
+          "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "book"
         },
@@ -7850,29 +7902,31 @@ const milestones = [
           "id": "source-scikit-learn-decisiontreeclassifier",
           "type": {
             "zh": "模型文档",
-            "en": "Model docs"
+            "en": "Model documentation"
           },
           "label": {
             "zh": "scikit-learn DecisionTreeClassifier",
             "en": "scikit-learn DecisionTreeClassifier"
           },
           "url": "https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-r-rpart-package",
           "type": {
-            "zh": "软件包",
-            "en": "Package"
+            "zh": "软件包文档",
+            "en": "Package documentation"
           },
           "label": {
             "zh": "R rpart package",
             "en": "R rpart package"
           },
           "url": "https://cran.r-project.org/web/packages/rpart/index.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -8151,12 +8205,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "IBM Thomas J. Watson Research Center",
-        "zh": "IBM 托马斯·J·沃森 研究中心"
+        "en": "IBM Watson Research Center, Yorktown Heights",
+        "zh": "IBM 沃森研究中心，约克敦高地"
       },
       "country": {
-        "en": "Yorktown Heights, United States",
-        "zh": "美国约克敦高地"
+        "en": "US",
+        "zh": "美国"
       },
       "coordinates": [
         41.2107,
@@ -8164,8 +8218,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>",
-      "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>"
+      "zh": "<p>1983 年，斯科特·柯克帕特里克、C·丹尼尔·格拉特 Jr. 和马里奥·P·维基把统计物理中的退火过程系统地转化为组合优化方法。算法始终接受更优解；面对代价增加量为 ΔE 的较差解时，则以约 exp(-ΔE/T) 的概率接受，从而在高温阶段越过局部最优，随后随温度降低逐渐转向精细搜索。</p><p>这一方法继承了 1953 年 Metropolis 等人提出的随机采样思想，并用“温度”和“降温计划”控制探索与收敛之间的平衡。理论研究表明，足够缓慢的降温可以带来渐近收敛性质，但实际系统通常采用更快的计划换取可接受的运行时间；这种权衡后来持续影响电路布局、调度、路径规划以及混合元启发式优化。</p>",
+      "en": "<p>In 1983, Scott Kirkpatrick, C. Daniel Gelatt Jr., and Mario P. Vecchi systematically turned the annealing process from statistical physics into a method for combinatorial optimization. The algorithm always accepts an improvement; for a worse candidate with cost increase ΔE, it accepts with probability approximately exp(-ΔE/T), allowing high-temperature search to cross local barriers before cooling shifts the process toward refinement.</p><p>The method adapted the stochastic sampling idea introduced by Metropolis and colleagues in 1953, using temperature and a cooling schedule to balance exploration against convergence. Theory showed that sufficiently slow cooling can provide asymptotic convergence properties, while practical systems usually cool faster to obtain useful answers in reasonable time; that tradeoff has continued to influence circuit placement, scheduling, routing, and hybrid metaheuristics.</p>"
     },
     "figures": [
       {
@@ -8174,10 +8228,10 @@ const milestones = [
           "zh": "斯科特·柯克帕特里克"
         },
         "role": {
-          "en": "1983 paper co-author",
-          "zh": "1983 年模拟退火论文共同作者"
+          "en": "Lead author and IBM researcher",
+          "zh": "模拟退火论文第一作者、IBM 研究员"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -8187,8 +8241,8 @@ const milestones = [
           "zh": "C·丹尼尔·格拉特 Jr."
         },
         "role": {
-          "en": "1983 paper co-author",
-          "zh": "1983 年模拟退火论文共同作者"
+          "en": "Co-author and IBM researcher",
+          "zh": "模拟退火论文共同作者、IBM 研究员"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -8200,8 +8254,8 @@ const milestones = [
           "zh": "马里奥·P·维基"
         },
         "role": {
-          "en": "1983 paper co-author",
-          "zh": "1983 年模拟退火论文共同作者"
+          "en": "Co-author and IBM researcher",
+          "zh": "模拟退火论文共同作者、IBM 研究员"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -8210,41 +8264,45 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif",
-        "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg",
-        "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg"
+        "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
+        "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg"
       ],
       "videos": [],
       "assetIds": [
         "asset-1983-simulated-annealing-scott-kirkpatrick",
-        "asset-1983-simulated-annealing-energy-landscape",
-        "asset-1983-simulated-annealing-temperature-schedule"
+        "asset-1983-simulated-annealing-energy-landscape"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1983-simulated-annealing_scott-kirkpatrick.gif": {
+      "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg": {
         "caption": {
-          "zh": "斯科特·柯克帕特里克 肖像",
+          "zh": "斯科特·柯克帕特里克肖像",
           "en": "Scott Kirkpatrick portrait"
         },
         "subcaption": {
-          "zh": "Collective Cognition Workshop 参与者页面中的 斯科特·柯克帕特里克 照片。",
-          "en": "Workshop participant page photo for Scott Kirkpatrick."
+          "zh": "模拟退火论文第一作者。",
+          "en": "Lead author of the simulated annealing paper."
         },
+        "sourceName": {
+          "zh": "耶路撒冷希伯来大学",
+          "en": "The Hebrew University of Jerusalem"
+        },
+        "sourceUrl": "https://www.cs.huji.ac.il/~kirk/",
         "license": {
-          "zh": "Workshop profile photo; rights not stated.",
-          "en": "Workshop profile photo; rights not stated."
+          "zh": "本地副本来自耶路撒冷希伯来大学人物主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from the Hebrew University of Jerusalem profile; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
-        "sourceId": "source-optimization-by-simulated-annealing",
+        "sourceId": "source-scott-kirkpatrick-huji-profile",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "external-reference",
           "license": {
-            "zh": "Workshop profile photo; rights not stated.",
-            "en": "Workshop profile photo; rights not stated."
-          }
+            "zh": "本地副本来自耶路撒冷希伯来大学人物主页；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from the Hebrew University of Jerusalem profile; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          },
+          "sourceUrl": "https://www.cs.huji.ac.il/~kirk/SKmugshot.jpg"
         },
-        "role": "hero-image",
-        "type": "gif"
+        "role": "portrait",
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg": {
         "caption": {
@@ -8252,42 +8310,23 @@ const milestones = [
           "en": "Energy landscape search"
         },
         "subcaption": {
-          "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
-          "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
+          "zh": "高温阶段允许跨越局部能垒，降温后逐渐偏向低代价区域。",
+          "en": "High temperature permits barrier crossing; cooling gradually favors lower-cost regions."
         },
+        "sourceName": {
+          "zh": "柯克帕特里克、格拉特与维基（1983）",
+          "en": "Kirkpatrick, Gelatt, and Vecchi (1983)"
+        },
+        "sourceUrl": "https://www.science.org/doi/10.1126/science.220.4598.671",
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 解释图；未复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-optimization-by-simulated-annealing",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "original-local",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
-      "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_temperature-schedule.svg": {
-        "caption": {
-          "zh": "温度计划",
-          "en": "Temperature schedule"
-        },
-        "subcaption": {
-          "zh": "模拟退火 的独立本地重画，依据相关来源材料制作。",
-          "en": "Distinct local redraw for Simulated Annealing, based on the related source material."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-optimization-by-simulated-annealing",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 解释图；未复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -8309,18 +8348,18 @@ const milestones = [
             "zh": "模拟退火优化"
           },
           "description": {
-            "en": "Original Science record for the physical annealing analogy applied to optimization.",
-            "zh": "《科学》原始记录：将物理退火类比用于优化问题。"
+            "en": "The 1983 primary paper connecting statistical mechanics with multivariate and combinatorial optimization.",
+            "zh": "1983 年原始论文，将统计力学与多变量、组合优化联系起来。"
           },
           "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "source": "https://www.science.org/doi/10.1126/science.220.4598.671",
           "license": {
-            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
-            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+            "en": "Publisher record; access conditions are set by Science.",
+            "zh": "出版方论文记录，访问条件由《科学》网站规定。"
           },
           "usage": {
-            "en": "Literature reference link",
-            "zh": "文献参考链接"
+            "en": "Primary paper record",
+            "zh": "原始论文记录"
           },
           "action": {
             "en": "Open Science record",
@@ -8336,10 +8375,41 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "模拟退火优化",
+            "zh": "《模拟退火优化》",
             "en": "Optimization by Simulated Annealing"
           },
           "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-metropolis-fast-computing-machines",
+          "type": {
+            "zh": "方法源流论文",
+            "en": "Foundational paper"
+          },
+          "label": {
+            "zh": "《用快速计算机进行状态方程计算》",
+            "en": "Equation of State Calculations by Fast Computing Machines"
+          },
+          "url": "https://doi.org/10.1063/1.1699114",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-geman-geman-stochastic-relaxation",
+          "type": {
+            "zh": "收敛研究论文",
+            "en": "Convergence paper"
+          },
+          "label": {
+            "zh": "《随机松弛、Gibbs 分布与图像的贝叶斯恢复》",
+            "en": "Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images"
+          },
+          "url": "https://doi.org/10.1109/TPAMI.1984.4767596",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -8347,79 +8417,99 @@ const milestones = [
           "id": "source-scipy-dual-annealing",
           "type": {
             "zh": "优化器文档",
-            "en": "Optimizer docs"
+            "en": "Optimizer documentation"
           },
           "label": {
             "zh": "SciPy dual_annealing",
             "en": "SciPy dual_annealing"
           },
           "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
-          "id": "source-hedibert-course-pdf-mirror",
+          "id": "source-scott-kirkpatrick-huji-profile",
           "type": {
-            "zh": "笔记本",
-            "en": "Notebook"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "Hedibert course PDF mirror",
-            "en": "Hedibert course PDF mirror"
+            "zh": "斯科特·柯克帕特里克个人主页",
+            "en": "Scott Kirkpatrick personal homepage"
           },
-          "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
-          "reliability": "reference-only",
-          "sourceType": "book"
+          "url": "https://www.cs.huji.ac.il/~kirk/",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
         "source-optimization-by-simulated-annealing",
+        "source-metropolis-fast-computing-machines",
+        "source-geman-geman-stochastic-relaxation",
         "source-scipy-dual-annealing",
-        "source-hedibert-course-pdf-mirror"
+        "source-scott-kirkpatrick-huji-profile"
       ],
       "claimIds": [
-        "claim-legacy-achievement-summary",
-        "claim-legacy-description"
+        "claim-simulated-annealing-origin",
+        "claim-simulated-annealing-mechanism",
+        "claim-simulated-annealing-cooling-tradeoff"
       ],
       "claims": [
         {
-          "id": "claim-legacy-achievement-summary",
+          "id": "claim-simulated-annealing-origin",
           "importance": "core",
           "text": {
-            "zh": "模拟退火 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Simulated Annealing is an AI history milestone in the current legacy presentation."
+            "zh": "1983 年，柯克帕特里克、格拉特和维基在《科学》发表论文，把物理退火与 Metropolis 随机采样思想转化为组合优化框架。",
+            "en": "In 1983, Kirkpatrick, Gelatt, and Vecchi published a Science paper that turned physical annealing and Metropolis-style stochastic sampling into a combinatorial-optimization framework."
           },
           "sourceIds": [
             "source-optimization-by-simulated-annealing",
-            "source-scipy-dual-annealing"
+            "source-metropolis-fast-computing-machines"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
-          "id": "claim-legacy-description",
-          "importance": "context",
+          "id": "claim-simulated-annealing-mechanism",
+          "importance": "core",
           "text": {
-            "zh": "<p>模拟退火借鉴冶金过程：温度高时，搜索可以接受较差移动以扩大探索；温度降低后，它变得更挑剔。柯克帕特里克、Gelatt 和 Vecchi 展示了这一思想如何处理困难优化问题。该方法成为连接物理、AI 搜索、运筹学和组合优化的经典桥梁。</p>",
-            "en": "<p>Simulated annealing borrows from metallurgy: when temperature is high, the search can accept worse moves and explore; as temperature cools, it becomes more selective. Kirkpatrick, Gelatt, and Vecchi showed how this idea could attack difficult optimization problems. The method became a classic bridge between physics, AI search, operations research, and combinatorial optimization.</p>"
+            "zh": "模拟退火始终接受更优候选，并以约 exp(-ΔE/T) 的概率接受较差候选；温度降低后，越过代价障碍的概率随之下降。",
+            "en": "Simulated annealing always accepts an improving candidate and accepts a worse one with probability approximately exp(-ΔE/T); as temperature falls, crossing a cost barrier becomes less likely."
           },
           "sourceIds": [
             "source-optimization-by-simulated-annealing",
+            "source-metropolis-fast-computing-machines",
             "source-scipy-dual-annealing"
           ],
-          "status": "needs-source"
+          "status": "verified"
+        },
+        {
+          "id": "claim-simulated-annealing-cooling-tradeoff",
+          "importance": "context",
+          "text": {
+            "zh": "足够缓慢的降温可获得渐近收敛性质，但工程实现通常采用更快的温度计划，在理论保证、解质量和运行时间之间折中。",
+            "en": "Sufficiently slow cooling can provide asymptotic convergence properties, but engineering implementations usually cool faster and trade theoretical guarantees against solution quality and runtime."
+          },
+          "sourceIds": [
+            "source-geman-geman-stochastic-relaxation",
+            "source-scipy-dual-annealing"
+          ],
+          "status": "verified"
         }
       ],
       "emphasis": [
-        "batch-migration",
-        "source-review-needed"
+        "metropolis-acceptance",
+        "cooling-schedule",
+        "combinatorial-optimization"
       ],
       "area": {
         "en": "Optimization",
         "zh": "优化算法"
       },
       "method": {
-        "en": "Probabilistic search with a cooling schedule",
-        "zh": "带降温计划的概率搜索"
+        "en": "Metropolis acceptance with a cooling schedule",
+        "zh": "结合 Metropolis 接受准则与降温计划的概率搜索"
       },
       "artifact": {
         "en": "Simulated annealing algorithm",
@@ -8430,8 +8520,8 @@ const milestones = [
         "zh": "《科学》 模拟退火优化论文"
       },
       "demo": {
-        "en": "Accept some worse moves early, cool over time",
-        "zh": "早期接受部分坏移动，逐步降温"
+        "en": "Accept worse moves with exp(-ΔE/T), then reduce T",
+        "zh": "按 exp(-ΔE/T) 接受较差移动，再逐步降低 T"
       },
       "keyConcepts": [
         {
@@ -8440,8 +8530,8 @@ const milestones = [
             "zh": "温度"
           },
           "text": {
-            "en": "A temperature parameter controls how willing the algorithm is to accept worse moves.",
-            "zh": "温度参数控制算法接受较差移动的意愿。"
+            "en": "Temperature controls the probability of accepting a worse move; higher T makes barrier crossing more likely.",
+            "zh": "温度参数控制算法接受较差移动的概率；T 越高，越容易跨越能垒。"
           }
         },
         {
@@ -8450,18 +8540,18 @@ const milestones = [
             "zh": "降温计划"
           },
           "text": {
-            "en": "The schedule gradually lowers temperature so the search shifts from exploration to refinement.",
-            "zh": "降温计划逐渐降低温度，使搜索从探索转向精修。"
+            "en": "The schedule lowers temperature, shifting search from broad exploration to local refinement and setting the quality-runtime tradeoff.",
+            "zh": "降温计划逐渐降低温度，使搜索从广泛探索转向局部精修，并决定质量与耗时的权衡。"
           }
         },
         {
           "label": {
-            "en": "Local Optima",
-            "zh": "局部最优"
+            "en": "Acceptance Rule",
+            "zh": "接受准则"
           },
           "text": {
-            "en": "Accepting occasional worse moves helps the search escape solutions that are good nearby but not globally best.",
-            "zh": "偶尔接受较差移动可以帮助搜索逃离局部看起来不错但全局并非最优的解。"
+            "en": "Improvements are accepted; a worse move of ΔE is accepted with probability approximately exp(-ΔE/T).",
+            "zh": "更优移动直接接受；代价增加 ΔE 的较差移动以约 exp(-ΔE/T) 的概率接受。"
           }
         }
       ],
@@ -8481,7 +8571,7 @@ const milestones = [
       ],
       "relatedRegions": [
         {
-          "en": "United States",
+          "en": "US",
           "zh": "美国"
         }
       ],
@@ -8491,8 +8581,8 @@ const milestones = [
           "zh": "高温探索"
         },
         {
-          "en": "Occasional uphill move",
-          "zh": "偶尔上坡移动"
+          "en": "Metropolis acceptance",
+          "zh": "Metropolis 概率接受"
         },
         {
           "en": "Cooling schedule",
@@ -8508,11 +8598,12 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "许多 AI 与工程问题都有巨大搜索空间，贪心改进很容易卡住。模拟退火提供了一种有原则地进行受控“上坡”移动的方法。",
-          "en": "Many AI and engineering problems had enormous search spaces where greedy improvement got stuck. Simulated annealing offered a principled way to make controlled uphill moves."
+          "zh": "20 世纪 50 年代的 Metropolis 方法已经展示了如何按热平衡概率对物理状态进行随机采样，但它最初不是为工程优化提出的。1983 年的模拟退火论文把固体退火类比带入组合优化，使研究者能够用受控的“上坡”移动处理容易困住贪心搜索的巨大搜索空间。",
+          "en": "The Metropolis method of the 1950s had already shown how to sample physical states according to thermal probabilities, but it was not originally framed as an engineering optimizer. The 1983 simulated annealing paper carried the solid-annealing analogy into combinatorial optimization, giving researchers controlled uphill moves for search spaces that trap greedy improvement."
         },
         "sourceIds": [
-          "source-optimization-by-simulated-annealing"
+          "source-optimization-by-simulated-annealing",
+          "source-metropolis-fast-computing-machines"
         ]
       },
       {
@@ -8522,11 +8613,12 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "高温时，算法大胆探索；系统降温后，它越来越倾向低成本状态，模仿物理材料的稳定过程。 关键机制是带降温计划的概率搜索，它把资料线索与可见的演示行为连接起来。",
-          "en": "At high temperature, the algorithm explores boldly. As the system cools, it increasingly commits to lower-cost states, imitating the settling of physical materials."
+          "zh": "算法无条件接受降低代价的候选，并以约 exp(-ΔE/T) 的概率接受代价更高的候选；因此同一个坏移动在高温时更可能通过。降温计划逐步降低这种容忍度，让搜索从跨越能垒的广泛探索转向低代价区域内的精细调整。",
+          "en": "The algorithm accepts every cost-reducing candidate and accepts a higher-cost candidate with probability approximately exp(-ΔE/T), so the same bad move is more likely to pass at high temperature. A cooling schedule gradually removes that tolerance, shifting search from broad barrier crossing to refinement inside lower-cost regions."
         },
         "sourceIds": [
-          "source-optimization-by-simulated-annealing"
+          "source-optimization-by-simulated-annealing",
+          "source-metropolis-fast-computing-machines"
         ]
       },
       {
@@ -8536,11 +8628,13 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把模拟退火视为用于跳出局部最优的经典元启发式方法，而不是轻松获得全局最优的保证。它的长期影响在于降温隐喻被用于调度、路径规划、布局和其他困难组合搜索。",
-          "en": "Experts generally treat simulated annealing as a classic metaheuristic for escaping local optima, not as a guarantee of easy global optimization. Its long-term legacy is the cooling metaphor for scheduling, routing, placement, and other hard combinatorial searches."
+          "zh": "专家通常把模拟退火视为连接统计物理与现代元启发式优化的经典方法，而不是快速获得全局最优的保证。早期理论工作说明极慢降温可带来渐近收敛性质，工程实践则更重视在解质量和运行时间之间折中；这种思想至今仍见于调度、路径规划、电路布局和混合搜索。",
+          "en": "Experts generally treat simulated annealing as a classic bridge between statistical physics and modern metaheuristic optimization, not as a promise of quick global optimality. Early theory established asymptotic properties for very slow cooling, while engineering practice emphasizes the tradeoff between solution quality and runtime; the idea remains influential in scheduling, routing, circuit placement, and hybrid search."
         },
         "sourceIds": [
-          "source-optimization-by-simulated-annealing"
+          "source-optimization-by-simulated-annealing",
+          "source-geman-geman-stochastic-relaxation",
+          "source-scipy-dual-annealing"
         ]
       }
     ],
@@ -8574,14 +8668,15 @@ const milestones = [
         "answerIndex": 0,
         "answer": 0,
         "explanation": {
-          "zh": "早期探索允许以一定概率进行上坡移动；降温会逐渐让搜索更挑剔。",
-          "en": "Early exploration allows uphill moves with some probability; cooling gradually makes the search more selective."
+          "zh": "较差移动以约 exp(-ΔE/T) 的概率被接受；高温时概率较大，有助于跨越局部能垒，降温后搜索会逐渐稳定。",
+          "en": "A worse move is accepted with probability approximately exp(-ΔE/T); high temperature makes barrier crossing more likely, while cooling gradually stabilizes the search."
         },
         "sourceIds": [
-          "source-optimization-by-simulated-annealing"
+          "source-optimization-by-simulated-annealing",
+          "source-metropolis-fast-computing-machines"
         ],
         "assetIds": [
-          "asset-1983-simulated-annealing-scott-kirkpatrick"
+          "asset-1983-simulated-annealing-energy-landscape"
         ]
       }
     ],
@@ -8804,10 +8899,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "通过 Lasso 进行回归收缩与选择",
+            "zh": "《通过 Lasso 进行回归收缩与选择》",
             "en": "Regression Shrinkage and Selection via the Lasso"
           },
           "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -8815,27 +8911,29 @@ const milestones = [
           "id": "source-scikit-learn-lasso",
           "type": {
             "zh": "模型文档",
-            "en": "Model docs"
+            "en": "Model documentation"
           },
           "label": {
             "zh": "scikit-learn Lasso",
             "en": "scikit-learn Lasso"
           },
           "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-glmnet-project",
           "type": {
-            "zh": "工具包",
-            "en": "Toolkit"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "glmnet project",
             "en": "glmnet project"
           },
           "url": "https://glmnet.stanford.edu/",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "project-page"
         }
@@ -9292,10 +9390,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "用卷积走得更深",
+            "zh": "《用卷积走得更深》",
             "en": "Going Deeper with Convolutions"
           },
           "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -9303,29 +9402,31 @@ const milestones = [
           "id": "source-torchvision-googlenet",
           "type": {
             "zh": "模型文档",
-            "en": "Model docs"
+            "en": "Model documentation"
           },
           "label": {
             "zh": "TorchVision GoogLeNet",
             "en": "TorchVision GoogLeNet"
           },
           "url": "https://pytorch.org/vision/stable/models/googlenet.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-tensorflow-keras-inceptionv3",
           "type": {
             "zh": "模型文档",
-            "en": "Model docs"
+            "en": "Model documentation"
           },
           "label": {
             "zh": "TensorFlow Keras InceptionV3",
             "en": "TensorFlow Keras InceptionV3"
           },
           "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -9763,40 +9864,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "基于归结原理的机器导向逻辑",
+            "zh": "《基于归结原理的机器导向逻辑》",
             "en": "A Machine-Oriented Logic Based on the Resolution Principle"
           },
           "url": "https://doi.org/10.1145/321250.321253",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-journal-of-symbolic-logic-review-record",
           "type": {
-            "zh": "评述",
-            "en": "Review"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Journal of Symbolic Logic review record",
             "en": "Journal of Symbolic Logic review record"
           },
           "url": "https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/j-a-robinson-a-machineoriented-logic-based-on-the-resolution-principle-journal-of-the-association-for-computing-machinery-vol-12-1965-pp-2341/65679C30B9D7D7763FFB700CA77B18B1",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-stanford-encyclopedia-automated-reasoning",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "斯坦福大学 Encyclopedia: Automated Reasoning",
             "en": "Stanford Encyclopedia: Automated Reasoning"
           },
           "url": "https://plato.stanford.edu/entries/reasoning-automated/",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -10247,16 +10351,17 @@ const milestones = [
         {
           "id": "source-the-birth-of-prolog",
           "type": {
-            "zh": "历史",
-            "en": "History"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Prolog 的诞生",
             "en": "The Birth of Prolog"
           },
           "url": "https://doi.org/10.1145/155360.155362",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-prolog-heritage",
@@ -10269,6 +10374,7 @@ const milestones = [
             "en": "Prolog Heritage"
           },
           "url": "https://www.prolog-heritage.org/en/Prolog_50.html",
+          "purpose": "historical-context",
           "reliability": "reference-only",
           "sourceType": "archive"
         },
@@ -10276,15 +10382,16 @@ const milestones = [
           "id": "source-swi-prolog-documentation",
           "type": {
             "zh": "语言文档",
-            "en": "Language docs"
+            "en": "Language documentation"
           },
           "label": {
-            "zh": "SWI-Prolog documentation",
+            "zh": "SWI-Prolog 文档",
             "en": "SWI-Prolog documentation"
           },
           "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -10722,30 +10829,32 @@ const milestones = [
         {
           "id": "source-eliza-cacm-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
-            "zh": "ELIZA CACM paper",
-            "en": "ELIZA CACM paper"
+            "zh": "ELIZA CACM 论文页面",
+            "en": "ELIZA CACM paper page"
           },
           "url": "https://doi.org/10.1145/365153.365168",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-mit-news-obituary-for-joseph-weizenbaum",
           "type": {
-            "zh": "机构",
-            "en": "Institution"
+            "zh": "讣告",
+            "en": "Obituary"
           },
           "label": {
             "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆",
             "en": "MIT News obituary for Joseph Weizenbaum"
           },
           "url": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         },
         {
           "id": "source-eliza-source-reconstruction-project",
@@ -10758,6 +10867,7 @@ const milestones = [
             "en": "ELIZA source reconstruction project"
           },
           "url": "https://sites.google.com/view/elizagen-org/",
+          "purpose": "historical-context",
           "reliability": "reference-only",
           "sourceType": "archive"
         }
@@ -11198,17 +11308,18 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "神经网络与物理系统",
+            "zh": "《神经网络与物理系统》",
             "en": "Neural Networks and Physical Systems"
           },
           "url": "https://doi.org/10.1073/pnas.79.8.2554",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-nobel-prize-john-j-hopfield-facts",
           "type": {
-            "zh": "人物",
+            "zh": "人物资料",
             "en": "Profile"
           },
           "label": {
@@ -11216,22 +11327,24 @@ const milestones = [
             "en": "Nobel Prize: John J. Hopfield facts"
           },
           "url": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         },
         {
           "id": "source-princeton-neuroscience-institute-profile",
           "type": {
-            "zh": "机构",
-            "en": "Institution"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "Princeton Neuroscience Institute profile",
             "en": "Princeton Neuroscience Institute profile"
           },
           "url": "https://pni.princeton.edu/people/john-j-hopfield",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -11686,40 +11799,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Dropout：防止神经网络过拟合的简单方法",
+            "zh": "《Dropout：防止神经网络过拟合的简单方法》",
             "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
           },
           "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-improving-neural-networks-by-preventing-co-adaptation",
           "type": {
-            "zh": "预印本",
-            "en": "Preprint"
+            "zh": "预印本页面",
+            "en": "Preprint page"
           },
           "label": {
             "zh": "Improving neural networks by preventing co-adaptation",
             "en": "Improving neural networks by preventing co-adaptation"
           },
           "url": "https://arxiv.org/abs/1207.0580",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-pytorch-torch-nn-dropout",
           "type": {
             "zh": "框架文档",
-            "en": "Framework docs"
+            "en": "Framework documentation"
           },
           "label": {
             "zh": "PyTorch torch.nn.Dropout",
             "en": "PyTorch torch.nn.Dropout"
           },
           "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -12174,38 +12290,41 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "你只看一次：统一的实时目标检测",
+            "zh": "《你只看一次：统一的实时目标检测》",
             "en": "You Only Look Once: Unified, Real-Time Object Detection"
           },
           "url": "https://arxiv.org/abs/1506.02640",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvpr-open-access-paper-page",
           "type": {
-            "zh": "开放论文",
-            "en": "Open access"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
-            "zh": "计算机视觉与模式识别会议 open-access paper page",
+            "zh": "CVPR 开放论文页面",
             "en": "CVPR open-access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-darknet-yolo-project-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Darknet YOLO project page",
             "en": "Darknet YOLO project page"
           },
           "url": "https://pjreddie.com/darknet/yolo/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         }
@@ -12645,16 +12764,17 @@ const milestones = [
         {
           "id": "source-efficient-estimation-of-word-representations-in-vector-space",
           "type": {
-            "zh": "预印本",
-            "en": "Preprint"
+            "zh": "预印本页面",
+            "en": "Preprint page"
           },
           "label": {
             "zh": "向量空间中词表示的高效估计",
             "en": "Efficient Estimation of Word Representations in Vector Space"
           },
           "url": "https://arxiv.org/abs/1301.3781",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
@@ -12663,24 +12783,26 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "词与短语的分布式表示及其组合性",
+            "zh": "《词与短语的分布式表示及其组合性》",
             "en": "Distributed Representations of Words and Phrases and their Compositionality"
           },
           "url": "https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-google-code-archive-word2vec",
           "type": {
-            "zh": "代码档案",
-            "en": "Code archive"
+            "zh": "代码",
+            "en": "Code"
           },
           "label": {
             "zh": "谷歌 代码 archive: word2vec",
             "en": "Google Code archive: word2vec"
           },
           "url": "https://code.google.com/archive/p/word2vec/",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -13137,31 +13259,33 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "ImageNet：大规模层级图像数据库",
+            "zh": "《ImageNet：大规模层级图像数据库》",
             "en": "ImageNet: A Large-Scale Hierarchical Image Database"
           },
           "url": "https://ieeexplore.ieee.org/document/5206848",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-imagenet-project-website",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "ImageNet project website",
             "en": "ImageNet project website"
           },
           "url": "https://www.image-net.org/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
         {
           "id": "source-stanford-profile-fei-fei-li",
           "type": {
-            "zh": "人物",
+            "zh": "人物资料",
             "en": "Profile"
           },
           "label": {
@@ -13169,8 +13293,9 @@ const milestones = [
             "en": "Stanford Profile: Fei-Fei Li"
           },
           "url": "https://profiles.stanford.edu/fei-fei-li",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -13621,16 +13746,17 @@ const milestones = [
         {
           "id": "source-playing-atari-with-deep-reinforcement-learning",
           "type": {
-            "zh": "预印本",
-            "en": "Preprint"
+            "zh": "预印本页面",
+            "en": "Preprint page"
           },
           "label": {
             "zh": "用深度强化学习玩 Atari",
             "en": "Playing Atari with Deep Reinforcement Learning"
           },
           "url": "https://arxiv.org/abs/1312.5602",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-human-level-control-through-deep-reinforcement-learning",
@@ -13639,26 +13765,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Human-level control through deep reinforcement learning",
+            "zh": "《通过深度强化学习实现人类水平控制》",
             "en": "Human-level control through deep reinforcement learning"
           },
           "url": "https://www.nature.com/articles/nature14236",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-google-deepmind-deep-reinforcement-learning",
           "type": {
-            "zh": "项目说明",
-            "en": "Project note"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "谷歌 DeepMind: Deep Reinforcement Learning",
             "en": "Google DeepMind: Deep Reinforcement Learning"
           },
           "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+          "purpose": "historical-context",
           "reliability": "secondary",
-          "sourceType": "project-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -14113,40 +14241,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "潜在狄利克雷分配",
+            "zh": "《潜在狄利克雷分配》",
             "en": "Latent Dirichlet Allocation"
           },
           "url": "https://jmlr.org/papers/v3/blei03a.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-david-m-blei-homepage",
           "type": {
-            "zh": "作者",
-            "en": "Author"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "戴维·M·布莱 homepage",
-            "en": "David M. Blei homepage"
+            "zh": "戴维·M·布莱个人主页",
+            "en": "David M. Blei personal homepage"
           },
           "url": "https://www.cs.columbia.edu/~blei/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         },
         {
           "id": "source-scikit-learn-latentdirichletallocation",
           "type": {
-            "zh": "实现",
-            "en": "Implementation"
+            "zh": "模型文档",
+            "en": "Model documentation"
           },
           "label": {
             "zh": "scikit-learn LatentDirichletAllocation",
             "en": "scikit-learn LatentDirichletAllocation"
           },
           "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -14584,7 +14715,7 @@ const milestones = [
         {
           "id": "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
           "type": {
-            "zh": "论文",
+            "zh": "学位论文",
             "en": "Thesis"
           },
           "label": {
@@ -14592,8 +14723,9 @@ const milestones = [
             "en": "Procedures as a Representation for Data in a Computer Program for Understanding Natural Language"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/7095",
+          "purpose": "core-evidence",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "thesis"
         },
         {
           "id": "source-terry-winograd-stanford-computer-science",
@@ -14606,22 +14738,24 @@ const milestones = [
             "en": "Terry Winograd, Stanford Computer Science"
           },
           "url": "https://www.cs.stanford.edu/people/terry-winograd",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         },
         {
           "id": "source-terry-winograd-oral-history-cbi",
           "type": {
-            "zh": "口述史",
-            "en": "Oral history"
+            "zh": "档案",
+            "en": "Archive"
           },
           "label": {
             "zh": "特里·维诺格拉德 oral history, CBI",
             "en": "Terry Winograd oral history, CBI"
           },
           "url": "https://hdl.handle.net/11299/107717",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
@@ -15102,36 +15236,39 @@ const milestones = [
             "en": "Murray Campbell, IBM Research"
           },
           "url": "https://research.ibm.com/people/murray-campbell",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         },
         {
           "id": "source-mastering-the-game-computer-history-museum",
           "type": {
-            "zh": "博物馆",
-            "en": "Museum"
+            "zh": "档案",
+            "en": "Archive"
           },
           "label": {
             "zh": "Mastering the Game, Computer History Museum",
             "en": "Mastering the Game, Computer History Museum"
           },
           "url": "https://www.computerhistory.org/chess/",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "archive"
         },
         {
           "id": "source-ibm100-deep-blue",
           "type": {
-            "zh": "官方历史资料",
-            "en": "Official history"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
             "zh": "IBM100: 深蓝",
             "en": "IBM100: Deep Blue"
           },
           "url": "https://www.ibm.com/history/deep-blue",
+          "purpose": "historical-context",
           "reliability": "secondary",
-          "sourceType": "project-page"
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
@@ -15569,40 +15706,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "表示知识的一种框架",
+            "zh": "《表示知识的一种框架》",
             "en": "A Framework for Representing Knowledge"
           },
           "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-marvin-minsky-obituary-mit-news",
           "type": {
-            "zh": "人物资料",
-            "en": "Profile"
+            "zh": "讣告",
+            "en": "Obituary"
           },
           "label": {
             "zh": "马文·明斯基讣告，麻省理工学院新闻",
             "en": "Marvin Minsky obituary, MIT News"
           },
           "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         },
         {
           "id": "source-frame-mit-ai-memo-bibliographic-record",
           "type": {
-            "zh": "参考资料",
-            "en": "Reference"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "框架论文：麻省理工学院 AI 备忘录书目记录",
             "en": "Frame, MIT AI memo bibliographic record"
           },
           "url": "https://dspace.mit.edu/handle/1721.1/6089",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-index"
         }
       ],
       "sourceIds": [
@@ -16037,40 +16177,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "人工智能在化学推断中的应用",
+            "zh": "《人工智能在化学推断中的应用》",
             "en": "Applications of Artificial Intelligence for Chemical Inference"
           },
           "url": "https://doi.org/10.1021/ci60034a002",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-acm-turing-award-profile-for-edward-feigenbaum",
           "type": {
-            "zh": "奖项资料",
-            "en": "Award"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "ACM 图灵 Award profile for 爱德华·费根鲍姆",
             "en": "ACM Turing Award profile for Edward Feigenbaum"
           },
           "url": "https://awards.acm.org/award-recipients/feigenbaum_4167235",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         },
         {
           "id": "source-stanford-knowledge-systems-laboratory-history",
           "type": {
-            "zh": "历史资料",
-            "en": "History"
+            "zh": "机构页面",
+            "en": "Institution page"
           },
           "label": {
             "zh": "斯坦福大学 Knowledge Systems Laboratory history",
             "en": "Stanford Knowledge Systems Laboratory history"
           },
           "url": "http://ksl-web.stanford.edu/",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
@@ -16505,26 +16648,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Object Recognition from Local Scale-Invariant Features",
+            "zh": "《基于局部尺度不变特征的物体识别》",
             "en": "Object Recognition from Local Scale-Invariant Features"
           },
           "url": "https://www.cs.ubc.ca/labs/lci/papers/docs1999/lowe-iccv99.pdf",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-distinctive-image-features-from-scale-invariant-keypoints",
           "type": {
-            "zh": "期刊论文",
-            "en": "Journal article"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "来自尺度不变关键点的区分性图像特征",
             "en": "Distinctive Image Features from Scale-Invariant Keypoints"
           },
           "url": "https://doi.org/10.1023/B:VISI.0000029664.99615.94",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-david-lowe-ubc-computer-science",
@@ -16537,8 +16682,9 @@ const milestones = [
             "en": "David Lowe, UBC Computer Science"
           },
           "url": "https://www.cs.ubc.ca/people/david-lowe",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -16976,26 +17122,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "使用 t-SNE 可视化数据",
+            "zh": "《使用 t-SNE 可视化数据》",
             "en": "Visualizing Data using t-SNE"
           },
           "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-laurens-van-der-maaten-homepage",
           "type": {
-            "zh": "作者页面",
-            "en": "Author page"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "劳伦斯·范德马滕 homepage",
-            "en": "Laurens van der Maaten homepage"
+            "zh": "劳伦斯·范德马滕个人主页",
+            "en": "Laurens van der Maaten personal homepage"
           },
           "url": "https://lvdmaaten.github.io/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         },
         {
           "id": "source-how-to-use-t-sne-effectively-distill",
@@ -17008,8 +17156,9 @@ const milestones = [
             "en": "How to Use t-SNE Effectively, Distill"
           },
           "url": "https://distill.pub/2016/misread-tsne/",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -17559,40 +17708,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "感知机：大脑中信息存储与组织的概率模型",
+            "zh": "《感知机：大脑中信息存储与组织的概率模型》",
             "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
           },
           "url": "https://doi.org/10.1037/h0042519",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cornell-chronicle-perceptron-retrospective",
           "type": {
-            "zh": "历史资料",
-            "en": "History"
+            "zh": "新闻报道",
+            "en": "News report"
           },
           "label": {
             "zh": "康奈尔大学 Chronicle perceptron retrospective",
             "en": "Cornell Chronicle perceptron retrospective"
           },
           "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         },
         {
           "id": "source-smithsonian-mark-i-perceptron-object-record",
           "type": {
-            "zh": "博物馆",
-            "en": "Museum"
+            "zh": "档案",
+            "en": "Archive"
           },
           "label": {
             "zh": "Smithsonian Mark I Perceptron object record",
             "en": "Smithsonian Mark I Perceptron object record"
           },
           "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
@@ -17929,7 +18081,7 @@ const milestones = [
           "zh": "University personal photo page; reuse rights not stated.",
           "en": "University personal photo page; reuse rights not stated."
         },
-        "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "sourceId": "source-geoffrey-hinton-photo-page",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
@@ -18027,40 +18179,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "A Fast Learning Algorithm for Deep Belief Nets",
+            "zh": "《深度信念网络的快速学习算法》",
             "en": "A Fast Learning Algorithm for Deep Belief Nets"
           },
           "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-reducing-the-dimensionality-of-data-with-neural-networks",
           "type": {
-            "zh": "《科学》 文章",
-            "en": "Science article"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Reducing the Dimensionality of Data with Neural Networks",
             "en": "Reducing the Dimensionality of Data with Neural Networks"
           },
           "url": "https://doi.org/10.1126/science.1127647",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-geoffrey-hinton-photo-page",
           "type": {
-            "zh": "人物资料",
-            "en": "Profile"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "杰弗里·辛顿 photo page",
-            "en": "Geoffrey Hinton photo page"
+            "zh": "杰弗里·辛顿个人主页",
+            "en": "Geoffrey Hinton personal homepage"
           },
           "url": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -18495,10 +18650,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Learning to Predict by the Methods of Temporal Differences",
+            "zh": "《利用时序差分方法学习预测》",
             "en": "Learning to Predict by the Methods of Temporal Differences"
           },
           "url": "https://doi.org/10.1007/BF00115009",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -18506,29 +18662,31 @@ const milestones = [
           "id": "source-richard-sutton-homepage",
           "type": {
             "zh": "个人主页",
-            "en": "Homepage"
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "理查德·萨顿 homepage",
-            "en": "Richard Sutton homepage"
+            "zh": "理查德·萨顿个人主页",
+            "en": "Richard Sutton personal homepage"
           },
           "url": "http://incompleteideas.net/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         },
         {
           "id": "source-acm-2024-turing-award-announcement",
           "type": {
-            "zh": "奖项资料",
-            "en": "Award"
+            "zh": "新闻报道",
+            "en": "News report"
           },
           "label": {
             "zh": "ACM 2024 图灵 Award announcement",
             "en": "ACM 2024 Turing Award announcement"
           },
           "url": "https://awards.acm.org/about/2024-turing",
+          "purpose": "contemporary-reporting",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         }
       ],
       "sourceIds": [
@@ -18966,10 +19124,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "贝叶斯网络",
+            "zh": "《贝叶斯网络》",
             "en": "Bayesian Networks"
           },
           "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -18977,15 +19136,16 @@ const milestones = [
           "id": "source-judea-pearl-homepage",
           "type": {
             "zh": "个人主页",
-            "en": "Homepage"
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "朱迪亚·珀尔 homepage",
-            "en": "Judea Pearl homepage"
+            "zh": "朱迪亚·珀尔个人主页",
+            "en": "Judea Pearl personal homepage"
           },
           "url": "https://bayes.cs.ucla.edu/home.htm",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         },
         {
           "id": "source-judea-pearl-ucla-samueli",
@@ -18998,8 +19158,9 @@ const milestones = [
             "en": "Judea Pearl, UCLA Samueli"
           },
           "url": "https://samueli.ucla.edu/judea-pearl/",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -19451,16 +19612,17 @@ const milestones = [
         {
           "id": "source-otter-3-3-reference-manual",
           "type": {
-            "zh": "参考文献",
-            "en": "Reference"
+            "zh": "手册",
+            "en": "Manual"
           },
           "label": {
             "zh": "OTTER 3.3 参考手册",
             "en": "OTTER 3.3 Reference Manual"
           },
           "url": "https://arxiv.org/abs/cs/0310056",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-a-spectrum-of-applications-of-automated-reasoning",
@@ -19469,10 +19631,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "自动推理应用谱系",
+            "zh": "《自动推理应用谱系》",
             "en": "A Spectrum of Applications of Automated Reasoning"
           },
           "url": "https://arxiv.org/abs/cs/0205078",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
@@ -19483,10 +19646,11 @@ const milestones = [
             "en": "Application paper"
           },
           "label": {
-            "zh": "使用自动推理工具检查临床指南",
+            "zh": "《使用自动推理工具检查临床指南》",
             "en": "Checking Clinical Guidelines using Automated Reasoning Tools"
           },
           "url": "https://arxiv.org/abs/0806.0250",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "paper"
         }
@@ -19971,26 +20135,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "沃森：超越《危险边缘！》",
+            "zh": "《沃森：超越《危险边缘！》》",
             "en": "Watson: Beyond Jeopardy!"
           },
           "url": "https://doi.org/10.1016/j.artint.2012.06.009",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-building-watson-an-overview-of-the-deepqa-project",
           "type": {
-            "zh": "综述",
-            "en": "Overview"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "构建沃森：DeepQA 项目概览",
             "en": "Building Watson: An Overview of the DeepQA Project"
           },
           "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2303",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "project-page"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-ibm-watson-system-photo",
@@ -20003,8 +20169,9 @@ const milestones = [
             "en": "IBM Watson system photo"
           },
           "url": "https://commons.wikimedia.org/wiki/File:IBMWatson.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         },
         {
           "id": "source-david-ferrucci-portrait",
@@ -20017,8 +20184,9 @@ const milestones = [
             "en": "David Ferrucci portrait"
           },
           "url": "https://commons.wikimedia.org/wiki/File:David_Ferrucci_speaks_at_TEDx_Binghamton_University.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -20489,10 +20657,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "逻辑或非数学程序",
+            "zh": "《逻辑或非数学程序》",
             "en": "Logical or non-mathematical programmes"
           },
           "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -20500,15 +20669,16 @@ const milestones = [
           "id": "source-computer-pioneers-christopher-strachey",
           "type": {
             "zh": "人物资料",
-            "en": "Biography"
+            "en": "Profile"
           },
           "label": {
             "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
             "en": "Computer Pioneers - Christopher Strachey"
           },
           "url": "https://history.computer.org/pioneers/strachey.html",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         },
         {
           "id": "source-strachey-draughts-program-screenshot",
@@ -20521,8 +20691,9 @@ const milestones = [
             "en": "Strachey draughts program screenshot"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         },
         {
           "id": "source-checkers-board-photo",
@@ -20535,8 +20706,9 @@ const milestones = [
             "en": "Checkers board photo"
           },
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -20997,14 +21169,15 @@ const milestones = [
         {
           "id": "source-chinook-project-home",
           "type": {
-            "zh": "官方页面",
-            "en": "Official page"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Chinook 项目主页",
             "en": "Chinook project home"
           },
           "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "project-page"
         },
@@ -21015,26 +21188,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "跳棋已被求解",
+            "zh": "《跳棋已被求解》",
             "en": "Checkers Is Solved"
           },
           "url": "https://www.science.org/doi/10.1126/science.1144079",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-chinook-publications",
           "type": {
-            "zh": "论文列表",
-            "en": "Publications"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "Chinook 论文列表",
             "en": "Chinook publications"
           },
           "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-index"
         },
         {
           "id": "source-jonathan-schaeffer-portrait",
@@ -21047,8 +21222,9 @@ const milestones = [
             "en": "Jonathan Schaeffer portrait"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -21513,10 +21689,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "群魔殿：一种学习范式",
+            "zh": "《群魔殿：一种学习范式》",
             "en": "Pandemonium: A Paradigm for Learning"
           },
           "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -21531,8 +21708,9 @@ const milestones = [
             "en": "Pandemonium architecture image"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Original_pande2.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         },
         {
           "id": "source-oliver-selfridge-portrait",
@@ -21545,13 +21723,14 @@ const milestones = [
             "en": "Oliver Selfridge portrait"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Oliver_Selfridge_at_BBN.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         },
         {
           "id": "source-oliver-selfridge-obituary-the-guardian",
           "type": {
-            "zh": "人物资料",
+            "zh": "讣告",
             "en": "Obituary"
           },
           "label": {
@@ -21559,8 +21738,9 @@ const milestones = [
             "en": "Oliver Selfridge obituary, The Guardian"
           },
           "url": "https://www.theguardian.com/technology/2008/dec/16/oliver-selfridge-obituary",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         }
       ],
       "sourceIds": [
@@ -22035,13 +22215,14 @@ const milestones = [
           "id": "source-building-large-knowledge-based-systems",
           "type": {
             "zh": "专著",
-            "en": "Book"
+            "en": "Monograph"
           },
           "label": {
-            "zh": "构建大型知识系统",
+            "zh": "《构建大型知识系统》",
             "en": "Building Large Knowledge-Based Systems"
           },
           "url": "https://dl.acm.org/doi/book/10.5555/70571",
+          "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "book"
         },
@@ -22052,24 +22233,26 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "CycL 的演化",
+            "zh": "《CycL 的演化》",
             "en": "The Evolution of CycL"
           },
           "url": "https://dl.acm.org/doi/10.1145/122296.122308",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-cyc",
           "type": {
-            "zh": "官方页面",
-            "en": "Official page"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Cyc",
             "en": "Cyc"
           },
           "url": "https://cyc.com/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
@@ -22084,8 +22267,9 @@ const milestones = [
             "en": "Cyc projects logo image"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Cyc_Projects_Logos.png",
+          "purpose": "image-provenance",
           "reliability": "secondary",
-          "sourceType": "project-page"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -22556,40 +22740,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "R1：计算机系统领域的专家",
+            "zh": "《R1：计算机系统领域的专家》",
             "en": "R1: An Expert in the Computer Systems Domain"
           },
           "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-r1-revisited-four-years-in-the-trenches",
           "type": {
-            "zh": "回顾",
-            "en": "Retrospective"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "重访 R1：一线四年",
             "en": "R1 Revisited: Four Years in the Trenches"
           },
           "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/445",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-xcon-overview",
           "type": {
-            "zh": "概览",
-            "en": "Overview"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "XCON 概览",
             "en": "XCON overview"
           },
           "url": "https://en.wikipedia.org/wiki/Xcon",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-dec-vax-11-780-photo",
@@ -22602,8 +22789,9 @@ const milestones = [
             "en": "DEC VAX-11/780 photo"
           },
           "url": "https://commons.wikimedia.org/wiki/File:LCM_-_DEC_VAX_11-780-5_-_01.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -23074,40 +23262,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "PCM 中的最小二乘量化",
+            "zh": "《PCM 中的最小二乘量化》",
             "en": "Least squares quantization in PCM"
           },
           "url": "https://doi.org/10.1109/TIT.1982.1056489",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-bell-labs-k-means-history-note",
           "type": {
-            "zh": "历史资料",
-            "en": "History note"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "贝尔实验室 k-means 历史资料",
             "en": "Bell Labs k-means history note"
           },
           "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/k-means-clustering/",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "article"
         },
         {
           "id": "source-scikit-learn-kmeans-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn KMeans 文档",
             "en": "scikit-learn KMeans documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-iris-flowers-k-means-clustering-graphic",
@@ -23120,8 +23311,9 @@ const milestones = [
             "en": "Iris Flowers k-means clustering graphic"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Iris_Flowers_Clustering_kMeans.svg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -23605,40 +23797,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "一种发现簇的基于密度的算法",
+            "zh": "《一种发现簇的基于密度的算法》",
             "en": "A density-based algorithm for discovering clusters"
           },
           "url": "https://dl.acm.org/doi/10.5555/3001460.3001507",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-dbscan-revisited-revisited",
           "type": {
-            "zh": "回顾",
-            "en": "Retrospective"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "再访 DBSCAN，再访",
             "en": "DBSCAN Revisited, Revisited"
           },
           "url": "https://doi.org/10.1145/3068335",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-scikit-learn-dbscan-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn DBSCAN 文档",
             "en": "scikit-learn DBSCAN documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/clustering.html#dbscan",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-martin-ester-portrait",
@@ -23651,8 +23846,9 @@ const milestones = [
             "en": "Martin Ester portrait"
           },
           "url": "https://commons.wikimedia.org/wiki/File:SFU_Professor_Martin_Ester_2019.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -24136,10 +24332,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "归一化切分与图像分割",
+            "zh": "《归一化切分与图像分割》",
             "en": "Normalized Cuts and Image Segmentation"
           },
           "url": "https://doi.org/10.1109/34.868688",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -24150,26 +24347,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "论谱聚类：分析与算法",
+            "zh": "《论谱聚类：分析与算法》",
             "en": "On Spectral Clustering: Analysis and an algorithm"
           },
           "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-scikit-learn-spectral-clustering-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn 谱聚类文档",
             "en": "scikit-learn spectral clustering documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/clustering.html#spectral-clustering",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-spectral-graph-illustration",
@@ -24182,8 +24381,9 @@ const milestones = [
             "en": "Spectral graph illustration"
           },
           "url": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -24621,6 +24821,7 @@ const milestones = [
             "en": "Nearest Neighbor Pattern Classification"
           },
           "url": "https://doi.org/10.1109/TIT.1967.1053964",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -24635,50 +24836,54 @@ const milestones = [
             "en": "Stanford-hosted paper PDF"
           },
           "url": "https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-k-nearest-neighbors-algorithm-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "k 近邻算法概览",
             "en": "k-nearest neighbors algorithm overview"
           },
           "url": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-scikit-learn-nearest-neighbors-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn 最近邻文档",
             "en": "scikit-learn nearest neighbors documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-thomas-cover-stanford-profile",
           "type": {
-            "zh": "人物主页",
-            "en": "Profile"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "托马斯·科弗 Stanford 人物主页",
-            "en": "Thomas Cover Stanford profile"
+            "zh": "托马斯·科弗个人主页",
+            "en": "Thomas Cover personal homepage"
           },
           "url": "https://isl.stanford.edu/~cover/",
+          "purpose": "biography",
           "reliability": "primary",
-          "sourceType": "profile"
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -25128,6 +25333,7 @@ const milestones = [
             "en": "Ridge Regression: Biased Estimation for Nonorthogonal Problems"
           },
           "url": "https://doi.org/10.1080/00401706.1970.10488634",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -25142,36 +25348,39 @@ const milestones = [
             "en": "Open PDF copy of the Technometrics paper"
           },
           "url": "https://homepages.math.uic.edu/~lreyzin/papers/ridge.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-ridge-regression-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "岭回归概览",
             "en": "Ridge regression overview"
           },
           "url": "https://en.wikipedia.org/wiki/Ridge_regression",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-scikit-learn-ridge-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn 岭回归文档",
             "en": "scikit-learn Ridge documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression-and-classification",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -25620,64 +25829,69 @@ const milestones = [
             "en": "Histograms of Oriented Gradients for Human Detection"
           },
           "url": "https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-ieee-cvpr-paper-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "IEEE CVPR 论文记录",
             "en": "IEEE CVPR paper record"
           },
           "url": "https://doi.org/10.1109/CVPR.2005.177",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-histogram-of-oriented-gradients-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "方向梯度直方图概览",
             "en": "Histogram of oriented gradients overview"
           },
           "url": "https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-scikit-image-hog-example",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "示例文档",
+            "en": "Example documentation"
           },
           "label": {
             "zh": "scikit-image HOG 示例",
             "en": "scikit-image HOG example"
           },
           "url": "https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_hog.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         },
         {
           "id": "source-bill-triggs-lear-profile",
           "type": {
-            "zh": "作者主页",
-            "en": "Author profile"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "比尔·特里格斯 INRIA/LEAR 作者主页",
-            "en": "Bill Triggs INRIA/LEAR author profile"
+            "zh": "比尔·特里格斯个人主页",
+            "en": "Bill Triggs personal homepage"
           },
           "url": "https://lear.inrialpes.fr/people/triggs/",
+          "purpose": "biography",
           "reliability": "primary",
-          "sourceType": "profile"
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -26127,6 +26341,7 @@ const milestones = [
             "en": "SURF: Speeded Up Robust Features"
           },
           "url": "https://doi.org/10.1007/11744023_32",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -26141,36 +26356,39 @@ const milestones = [
             "en": "ETH SURF paper PDF"
           },
           "url": "https://people.ee.ethz.ch/~surf/eccv06.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-original-surf-project-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "SURF 原始项目页",
             "en": "Original SURF project page"
           },
           "url": "https://people.ee.ethz.ch/~surf/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
         {
           "id": "source-surf-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "SURF 概览",
             "en": "SURF overview"
           },
           "url": "https://en.wikipedia.org/wiki/Speeded_up_robust_features",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -26619,22 +26837,24 @@ const milestones = [
             "en": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem"
           },
           "url": "https://doi.org/10.1162/089976698300017467",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-max-planck-publication-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "马克斯·普朗克出版页面",
             "en": "Max Planck publication page"
           },
           "url": "https://is.mpg.de/ei/publications/730",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-open-kernel-pca-pdf",
@@ -26647,22 +26867,24 @@ const milestones = [
             "en": "Open Kernel PCA PDF"
           },
           "url": "https://www.mlpack.org/papers/kpca.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-scikit-learn-kernelpca-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn KernelPCA 文档",
             "en": "scikit-learn KernelPCA documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -27111,50 +27333,54 @@ const milestones = [
             "en": "Learning the parts of objects by non-negative matrix factorization"
           },
           "url": "https://doi.org/10.1038/44565",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-nature-article-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Nature 文章页面",
             "en": "Nature article page"
           },
           "url": "https://www.nature.com/articles/44565",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-pubmed-record-for-the-nature-paper",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "Nature 论文 PubMed 记录",
             "en": "PubMed record for the Nature paper"
           },
           "url": "https://pubmed.ncbi.nlm.nih.gov/10548103/",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-index"
         },
         {
           "id": "source-scikit-learn-nmf-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn NMF 文档",
             "en": "scikit-learn NMF documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/decomposition.html#nmf",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -27603,50 +27829,54 @@ const milestones = [
             "en": "A Global Geometric Framework for Nonlinear Dimensionality Reduction"
           },
           "url": "https://doi.org/10.1126/science.290.5500.2319",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-science-article-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Science 文章页面",
             "en": "Science article page"
           },
           "url": "https://www.science.org/doi/10.1126/science.290.5500.2319",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-pubmed-record-for-isomap",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "Isomap 的 PubMed 记录",
             "en": "PubMed record for Isomap"
           },
           "url": "https://pubmed.ncbi.nlm.nih.gov/11125149/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-index"
         },
         {
           "id": "source-scikit-learn-isomap-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn Isomap 文档",
             "en": "scikit-learn Isomap documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/manifold.html#isomap",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -28095,50 +28325,54 @@ const milestones = [
             "en": "Nonlinear Dimensionality Reduction by Locally Linear Embedding"
           },
           "url": "https://doi.org/10.1126/science.290.5500.2323",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-science-article-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Science 文章页面",
             "en": "Science article page"
           },
           "url": "https://www.science.org/doi/10.1126/science.290.5500.2323",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-pubmed-record-for-lle",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "LLE 的 PubMed 记录",
             "en": "PubMed record for LLE"
           },
           "url": "https://pubmed.ncbi.nlm.nih.gov/11125150/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-index"
         },
         {
           "id": "source-scikit-learn-lle-documentation",
           "type": {
-            "zh": "文档",
-            "en": "Documentation"
+            "zh": "官方文档",
+            "en": "Official documentation"
           },
           "label": {
             "zh": "scikit-learn LLE 文档",
             "en": "scikit-learn LLE documentation"
           },
           "url": "https://scikit-learn.org/stable/modules/manifold.html#locally-linear-embedding",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -28587,36 +28821,39 @@ const milestones = [
             "en": "A Logical Calculus of Ideas Immanent in Nervous Activity"
           },
           "url": "https://doi.org/10.1007/BF02478259",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-mcculloch-pitts-neuron-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "麦卡洛克-皮茨神经元概览",
             "en": "McCulloch-Pitts neuron overview"
           },
           "url": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-history-of-information-entry",
           "type": {
-            "zh": "背景",
-            "en": "Context"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "History of Information 历史条目",
             "en": "History of Information entry"
           },
           "url": "https://www.historyofinformation.com/detail.php?id=634",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "article"
         },
         {
           "id": "source-walter-pitts-blackboard-photo",
@@ -28629,8 +28866,9 @@ const milestones = [
             "en": "Walter Pitts blackboard photo"
           },
           "url": "https://commons.wikimedia.org/wiki/File:1954_Walter_Pitts_and_a_blackboard.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -29065,58 +29303,62 @@ const milestones = [
         {
           "id": "source-snarc-history-overview",
           "type": {
-            "zh": "档案",
-            "en": "Archive"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "SNARC 历史概览",
             "en": "SNARC history overview"
           },
           "url": "https://history-computer.com/snarc/",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "archive"
+          "sourceType": "article"
         },
         {
           "id": "source-history-of-ai-snarc-article",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "History of AI 的 SNARC 文章",
             "en": "History of AI SNARC article"
           },
           "url": "https://historyof.ai/snarc/",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "article"
         },
         {
           "id": "source-stochastic-neural-analog-reinforcement-calculator-overview",
           "type": {
-            "zh": "背景",
-            "en": "Context"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "随机神经模拟强化计算机概览",
             "en": "Stochastic Neural Analog Reinforcement Calculator overview"
           },
           "url": "https://en.wikipedia.org/wiki/Stochastic_Neural_Analog_Reinforcement_Calculator",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-history-of-information-snarc-entry",
           "type": {
-            "zh": "回顾",
-            "en": "Retrospective"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "History of Information 的 SNARC 条目",
             "en": "History of Information SNARC entry"
           },
           "url": "https://www.historyofinformation.com/detail.php?id=3884",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -29552,6 +29794,7 @@ const milestones = [
             "en": "Self-organized formation of topologically correct feature maps"
           },
           "url": "https://doi.org/10.1007/BF00337288",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -29566,36 +29809,39 @@ const milestones = [
             "en": "Open SOM paper PDF"
           },
           "url": "https://tcosmo.github.io/assets/soms/doc/kohonen1982.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-self-organizing-map-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "自组织映射概览",
             "en": "Self-organizing map overview"
           },
           "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-essentials-of-the-self-organizing-map",
           "type": {
-            "zh": "回顾",
-            "en": "Retrospective"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "自组织映射要点回顾",
             "en": "Essentials of the self-organizing map"
           },
           "url": "https://doi.org/10.1016/j.neunet.2012.09.018",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         }
       ],
       "sourceIds": [
@@ -30038,6 +30284,7 @@ const milestones = [
             "en": "Learning representations by back-propagating errors"
           },
           "url": "https://doi.org/10.1038/323533a0",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -30052,6 +30299,7 @@ const milestones = [
             "en": "A Theory of Adaptive Pattern Classifiers"
           },
           "url": "https://doi.org/10.1109/PGEC.1967.264666",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
@@ -30066,22 +30314,24 @@ const milestones = [
             "en": "Hinton-hosted Nature back-propagation PDF"
           },
           "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-backpropagation-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "反向传播概览",
             "en": "Backpropagation overview"
           },
           "url": "https://en.wikipedia.org/wiki/Backpropagation",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -30566,22 +30816,24 @@ const milestones = [
             "en": "Visual Feature Extraction by a Multilayered Network of Analog Threshold Elements"
           },
           "url": "https://doi.org/10.1109/TSSC.1969.300225",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-candc-2021-kunihiko-fukushima",
           "type": {
-            "zh": "官方人物资料",
-            "en": "Official profile"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "2021 年 C&C 奖：福岛邦彦博士",
             "en": "2021 C&C Prize: Dr. Kunihiko Fukushima"
           },
           "url": "https://www.candc.or.jp/kensyo/2021/group_a.html",
+          "purpose": "biography",
           "reliability": "primary",
-          "sourceType": "official-profile"
+          "sourceType": "profile"
         },
         {
           "id": "source-deep-sparse-rectifier-neural-networks",
@@ -30594,6 +30846,7 @@ const milestones = [
             "en": "Deep Sparse Rectifier Neural Networks"
           },
           "url": "https://proceedings.mlr.press/v15/glorot11a.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -30608,22 +30861,24 @@ const milestones = [
             "en": "Rectified Linear Units Improve Restricted Boltzmann Machines"
           },
           "url": "https://www.cs.toronto.edu/~fritz/absps/reluICML.pdf",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-yoshua-bengio-profile-at-mila",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "Mila 的约书亚·本吉奥资料",
             "en": "Yoshua Bengio profile at Mila"
           },
           "url": "https://mila.quebec/en/directory/yoshua-bengio",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -31067,6 +31322,7 @@ const milestones = [
             "en": "Neocognitron"
           },
           "url": "https://doi.org/10.1007/BF00344251",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -31081,36 +31337,39 @@ const milestones = [
             "en": "Open Neocognitron PDF"
           },
           "url": "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-scholarpedia-neocognitron-article",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "Scholarpedia 的 Neocognitron 文章",
             "en": "Scholarpedia Neocognitron article"
           },
           "url": "https://www.scholarpedia.org/article/Neocognitron",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-semantic-scholar-paper-record",
           "type": {
-            "zh": "背景",
-            "en": "Context"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "Semantic Scholar 论文记录",
             "en": "Semantic Scholar paper record"
           },
           "url": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-index"
         }
       ],
       "sourceIds": [
@@ -31635,20 +31894,22 @@ const milestones = [
             "en": "Backpropagation Applied to Handwritten Zip Code Recognition"
           },
           "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-lenet-5-demos-and-documentation",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "LeNet-5 演示与文档",
             "en": "LeNet-5 demos and documentation"
           },
           "url": "https://yann.lecun.com/exdb/lenet/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
@@ -31663,22 +31924,24 @@ const milestones = [
             "en": "Gradient-Based Learning Applied to Document Recognition"
           },
           "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-yann-lecun-s-home-page",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "扬·勒昆主页",
-            "en": "Yann LeCun's home page"
+            "zh": "扬·勒昆个人主页",
+            "en": "Yann LeCun personal homepage"
           },
           "url": "https://yann.lecun.com/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -32114,6 +32377,7 @@ const milestones = [
             "en": "A Neural Probabilistic Language Model"
           },
           "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -32128,36 +32392,39 @@ const milestones = [
             "en": "JMLR full paper PDF"
           },
           "url": "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-dblp-record",
           "type": {
             "zh": "论文索引",
-            "en": "Publication index"
+            "en": "Paper index"
           },
           "label": {
             "zh": "DBLP 论文记录",
             "en": "DBLP record"
           },
           "url": "https://dblp.org/rec/journals/jmlr/BengioDVJ03",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-index"
         },
         {
           "id": "source-yoshua-bengio-profile-at-mila",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "Mila 的约书亚·本吉奥资料",
             "en": "Yoshua Bengio profile at Mila"
           },
           "url": "https://mila.quebec/en/directory/yoshua-bengio",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -32767,22 +33034,24 @@ const milestones = [
             "en": "Deep Residual Learning for Image Recognition"
           },
           "url": "https://arxiv.org/abs/1512.03385",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvf-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "CVF 开放论文页面",
             "en": "CVF Open Access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-cvpr-full-paper-pdf",
@@ -32795,22 +33064,24 @@ const milestones = [
             "en": "CVPR full paper PDF"
           },
           "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-kaiming-he-profile-at-mit-csail",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "MIT CSAIL 的何恺明资料",
-            "en": "Kaiming He profile at MIT CSAIL"
+            "zh": "何恺明个人主页",
+            "en": "Kaiming He personal homepage"
           },
           "url": "https://people.csail.mit.edu/kaiming/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -33253,36 +33524,39 @@ const milestones = [
             "en": "Batch Normalization"
           },
           "url": "https://proceedings.mlr.press/v37/ioffe15.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-batch-normalization-on-arxiv",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "arXiv 上的批归一化论文",
             "en": "Batch Normalization on arXiv"
           },
           "url": "https://arxiv.org/abs/1502.03167",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-research-publication-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Google Research 出版页面",
             "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/batch-normalization-accelerating-deep-network-training-by-reducing-internal-covariate-shift/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-research-archived-pdf",
@@ -33295,8 +33569,9 @@ const milestones = [
             "en": "Google Research archived PDF"
           },
           "url": "https://research.google.com/pubs/archive/43442.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         }
       ],
       "sourceIds": [
@@ -33776,22 +34051,24 @@ const milestones = [
             "en": "Densely Connected Convolutional Networks"
           },
           "url": "https://arxiv.org/abs/1608.06993",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvf-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "CVF 开放论文页面",
             "en": "CVF Open Access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-original-densenet-code-repository",
@@ -33804,22 +34081,24 @@ const milestones = [
             "en": "Original DenseNet code repository"
           },
           "url": "https://github.com/liuzhuang13/DenseNet",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         },
         {
           "id": "source-meta-ai-publication-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Meta AI 出版页面",
             "en": "Meta AI publication page"
           },
           "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         }
       ],
       "sourceIds": [
@@ -34272,22 +34551,24 @@ const milestones = [
             "en": "An Image is Worth 16x16 Words"
           },
           "url": "https://arxiv.org/abs/2010.11929",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-openreview-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR OpenReview 页面",
             "en": "ICLR OpenReview page"
           },
           "url": "https://openreview.net/forum?id=YicbFdNTTy",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-openreview-full-paper-pdf",
@@ -34300,22 +34581,24 @@ const milestones = [
             "en": "OpenReview full paper PDF"
           },
           "url": "https://openreview.net/pdf?id=YicbFdNTTy",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-google-research-publication-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Google Research 出版页面",
             "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         }
       ],
       "sourceIds": [
@@ -34847,6 +35130,7 @@ const milestones = [
             "en": "Long Short-Term Memory"
           },
           "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -34861,36 +35145,39 @@ const milestones = [
             "en": "Author-hosted LSTM paper PDF"
           },
           "url": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-lstm-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "LSTM 概览",
             "en": "LSTM overview"
           },
           "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-sepp-hochreiter-profile",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "塞普·霍赫赖特个人资料",
             "en": "Sepp Hochreiter profile"
           },
           "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -35374,50 +35661,54 @@ const milestones = [
             "en": "Generative Adversarial Nets"
           },
           "url": "https://arxiv.org/abs/1406.2661",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-neurips-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "NeurIPS 论文页面",
             "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-goodfellow-gan-tutorial",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "古德费洛 GAN 教程",
             "en": "Goodfellow GAN tutorial"
           },
           "url": "https://arxiv.org/abs/1701.00160",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-ian-goodfellow-profile",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "伊恩·古德费洛个人网站",
-            "en": "Ian Goodfellow profile"
+            "zh": "伊恩·古德费洛个人主页",
+            "en": "Ian Goodfellow personal homepage"
           },
           "url": "https://www.iangoodfellow.com/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -35940,50 +36231,54 @@ const milestones = [
             "en": "Neural Machine Translation by Jointly Learning to Align and Translate"
           },
           "url": "https://arxiv.org/abs/1409.0473",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-2015-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR 2015 论文页面",
             "en": "ICLR 2015 paper page"
           },
           "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-attention-mechanism-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "注意力机制概览",
             "en": "Attention mechanism overview"
           },
           "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-yoshua-bengio-lab-profile",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "约书亚·本吉奥 Mila 资料",
             "en": "Yoshua Bengio lab profile"
           },
           "url": "https://mila.quebec/en/person/yoshua-bengio/",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -36476,22 +36771,24 @@ const milestones = [
             "en": "BERT"
           },
           "url": "https://arxiv.org/abs/1810.04805",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-acl-anthology-bert-paper",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ACL Anthology BERT 论文",
             "en": "ACL Anthology BERT paper"
           },
           "url": "https://aclanthology.org/N19-1423/",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-research-bert-repository",
@@ -36504,22 +36801,24 @@ const milestones = [
             "en": "Google Research BERT repository"
           },
           "url": "https://github.com/google-research/bert",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         },
         {
           "id": "source-google-ai-bert-blog-post",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "Google AI BERT 博客",
             "en": "Google AI BERT blog post"
           },
           "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/",
+          "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "official-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -37038,57 +37337,45 @@ const milestones = [
             "en": "Improving Language Understanding by Generative Pre-Training"
           },
           "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-openai-language-unsupervised-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "OpenAI 无监督语言页面",
             "en": "OpenAI language unsupervised page"
           },
           "url": "https://openai.com/index/language-unsupervised/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "article"
         },
         {
           "id": "source-gpt-model-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "GPT 模型概览",
             "en": "GPT model overview"
           },
           "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
-        },
-        {
-          "id": "source-alec-radford-research-context",
-          "type": {
-            "zh": "人物",
-            "en": "People"
-          },
-          "label": {
-            "zh": "亚历克·拉德福德研究背景",
-            "en": "Alec Radford research context"
-          },
-          "url": "https://openai.com/research/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
         "source-improving-language-understanding-by-generative-pre-training",
         "source-openai-language-unsupervised-page",
-        "source-gpt-model-overview",
-        "source-alec-radford-research-context"
+        "source-gpt-model-overview"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -37723,22 +38010,24 @@ const milestones = [
             "en": "Highly accurate protein structure prediction with AlphaFold"
           },
           "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-deepmind-alphafold-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "DeepMind AlphaFold 页面",
             "en": "DeepMind AlphaFold page"
           },
           "url": "https://deepmind.google/technologies/alphafold/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "project-page"
         },
         {
           "id": "source-alphafold-protein-structure-database",
@@ -37751,8 +38040,9 @@ const milestones = [
             "en": "AlphaFold Protein Structure Database"
           },
           "url": "https://alphafold.ebi.ac.uk/",
+          "purpose": "dataset-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "dataset"
         },
         {
           "id": "source-alphafold-github-repository",
@@ -37765,6 +38055,7 @@ const milestones = [
             "en": "AlphaFold GitHub repository"
           },
           "url": "https://github.com/google-deepmind/alphafold",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -38196,36 +38487,39 @@ const milestones = [
             "en": "Learning Transferable Visual Models From Natural Language Supervision"
           },
           "url": "https://arxiv.org/abs/2103.00020",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-icml-clip-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICML CLIP 论文页面",
             "en": "ICML CLIP paper page"
           },
           "url": "https://proceedings.mlr.press/v139/radford21a.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-openai-clip-blog-post",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "OpenAI CLIP 博客",
             "en": "OpenAI CLIP blog post"
           },
           "url": "https://openai.com/index/clip/",
-          "reliability": "secondary",
-          "sourceType": "official-page"
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "article"
         },
         {
           "id": "source-openai-clip-github-repository",
@@ -38238,6 +38532,7 @@ const milestones = [
             "en": "OpenAI CLIP GitHub repository"
           },
           "url": "https://github.com/openai/CLIP",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -38675,50 +38970,54 @@ const milestones = [
             "en": "Zero-Shot Text-to-Image Generation"
           },
           "url": "https://arxiv.org/abs/2102.12092",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-icml-dall-e-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICML DALL-E 论文页面",
             "en": "ICML DALL-E paper page"
           },
           "url": "https://proceedings.mlr.press/v139/ramesh21a.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-openai-dall-e-blog-post",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "OpenAI DALL-E 博客",
             "en": "OpenAI DALL-E blog post"
           },
           "url": "https://openai.com/index/dall-e/",
-          "reliability": "secondary",
-          "sourceType": "official-page"
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "article"
         },
         {
           "id": "source-dall-e-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "DALL-E 概览",
             "en": "DALL-E overview"
           },
           "url": "https://en.wikipedia.org/wiki/DALL-E",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -39154,22 +39453,24 @@ const milestones = [
             "en": "High-Resolution Image Synthesis with Latent Diffusion Models"
           },
           "url": "https://arxiv.org/abs/2112.10752",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvpr-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "CVPR 论文页面",
             "en": "CVPR paper page"
           },
           "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-compvis-latent-diffusion-repository",
@@ -39182,20 +39483,22 @@ const milestones = [
             "en": "CompVis latent diffusion repository"
           },
           "url": "https://github.com/CompVis/latent-diffusion",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         },
         {
           "id": "source-stability-ai-stable-diffusion-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Stability AI Stable Diffusion 页面",
             "en": "Stability AI Stable Diffusion page"
           },
           "url": "https://stability.ai/stable-image",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         }
@@ -39637,34 +39940,37 @@ const milestones = [
             "en": "Segment Anything"
           },
           "url": "https://arxiv.org/abs/2304.02643",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iccv-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICCV 论文页面",
             "en": "ICCV paper page"
           },
           "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-segment-anything-project-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Segment Anything 项目页面",
             "en": "Segment Anything project page"
           },
           "url": "https://segment-anything.com/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
@@ -39679,6 +39985,7 @@ const milestones = [
             "en": "Segment Anything GitHub repository"
           },
           "url": "https://github.com/facebookresearch/segment-anything",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -40116,22 +40423,24 @@ const milestones = [
             "en": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows"
           },
           "url": "https://arxiv.org/abs/2103.14030",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iccv-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICCV 开放论文页面",
             "en": "ICCV open-access paper page"
           },
           "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-microsoft-swin-transformer-repository",
@@ -40144,6 +40453,7 @@ const milestones = [
             "en": "Microsoft Swin Transformer repository"
           },
           "url": "https://github.com/microsoft/Swin-Transformer",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -40622,20 +40932,22 @@ const milestones = [
             "en": "GloVe: Global Vectors for Word Representation"
           },
           "url": "https://aclanthology.org/D14-1162/",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-stanford-glove-project-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "斯坦福 GloVe 项目页面",
             "en": "Stanford GloVe project page"
           },
           "url": "https://nlp.stanford.edu/projects/glove/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
@@ -40650,8 +40962,9 @@ const milestones = [
             "en": "ACL Anthology PDF"
           },
           "url": "https://aclanthology.org/D14-1162.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         }
       ],
       "sourceIds": [
@@ -41128,22 +41441,24 @@ const milestones = [
             "en": "Conditional Generative Adversarial Nets"
           },
           "url": "https://arxiv.org/abs/1411.1784",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-generative-adversarial-network-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "生成对抗网络概览",
             "en": "Generative adversarial network overview"
           },
           "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-generative-adversarial-nets",
@@ -41156,6 +41471,7 @@ const milestones = [
             "en": "Generative Adversarial Nets"
           },
           "url": "https://proceedings.neurips.cc/paper/2014/hash/f033ed80deb0234979a61f95710dbe25-Abstract.html",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "paper"
         }
@@ -41628,36 +41944,39 @@ const milestones = [
             "en": "Unsupervised Representation Learning with Deep Convolutional GANs"
           },
           "url": "https://arxiv.org/abs/1511.06434",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-pytorch-dcgan-tutorial",
           "type": {
-            "zh": "代码",
-            "en": "Code"
+            "zh": "示例文档",
+            "en": "Example documentation"
           },
           "label": {
             "zh": "PyTorch DCGAN 教程",
             "en": "PyTorch DCGAN tutorial"
           },
           "url": "https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html",
+          "purpose": "implementation",
           "reliability": "secondary",
-          "sourceType": "code"
+          "sourceType": "documentation"
         },
         {
           "id": "source-dcgan-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "DCGAN 概览",
             "en": "DCGAN overview"
           },
           "url": "https://en.wikipedia.org/wiki/Deep_convolutional_generative_adversarial_network",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -42134,6 +42453,7 @@ const milestones = [
             "en": "Wasserstein Generative Adversarial Networks"
           },
           "url": "https://proceedings.mlr.press/v70/arjovsky17a.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -42148,22 +42468,24 @@ const milestones = [
             "en": "Improved Training of Wasserstein GANs"
           },
           "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-wasserstein-gan-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "Wasserstein GAN 概览",
             "en": "Wasserstein GAN overview"
           },
           "url": "https://en.wikipedia.org/wiki/Wasserstein_GAN",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -42640,34 +42962,37 @@ const milestones = [
             "en": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"
           },
           "url": "https://arxiv.org/abs/1703.10593",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iccv-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICCV 开放论文页面",
             "en": "ICCV open-access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_ICCV_2017/html/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-cyclegan-project-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "CycleGAN 项目页面",
             "en": "CycleGAN project page"
           },
           "url": "https://junyanz.github.io/CycleGAN/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         }
@@ -43146,34 +43471,37 @@ const milestones = [
             "en": "Image-to-Image Translation with Conditional Adversarial Networks"
           },
           "url": "https://arxiv.org/abs/1611.07004",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvpr-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "CVPR 开放论文页面",
             "en": "CVPR open-access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Isola_Image-To-Image_Translation_With_CVPR_2017_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-pix2pix-project-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Pix2Pix 项目页面",
             "en": "Pix2Pix project page"
           },
           "url": "https://phillipi.github.io/pix2pix/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         }
@@ -43652,22 +43980,24 @@ const milestones = [
             "en": "A Style-Based Generator Architecture for GANs"
           },
           "url": "https://arxiv.org/abs/1812.04948",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvpr-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "CVPR 开放论文页面",
             "en": "CVPR open-access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-nvidia-stylegan-repository",
@@ -43680,6 +44010,7 @@ const milestones = [
             "en": "NVIDIA StyleGAN repository"
           },
           "url": "https://github.com/NVlabs/stylegan",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -44158,36 +44489,39 @@ const milestones = [
             "en": "Auto-Encoding Variational Bayes"
           },
           "url": "https://arxiv.org/abs/1312.6114",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-paper-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR 论文记录",
             "en": "ICLR paper record"
           },
           "url": "https://openreview.net/forum?id=33X9fd2-9FyZd",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-variational-autoencoder-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "变分自编码器概览",
             "en": "Variational autoencoder overview"
           },
           "url": "https://en.wikipedia.org/wiki/Variational_autoencoder",
+          "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "code"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -44664,6 +44998,7 @@ const milestones = [
             "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics"
           },
           "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -44678,22 +45013,24 @@ const milestones = [
             "en": "Denoising Diffusion Probabilistic Models"
           },
           "url": "https://arxiv.org/abs/2006.11239",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-diffusion-model-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "扩散模型概览",
             "en": "Diffusion model overview"
           },
           "url": "https://en.wikipedia.org/wiki/Diffusion_model",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -45170,6 +45507,7 @@ const milestones = [
             "en": "The Graph Neural Network Model"
           },
           "url": "https://doi.org/10.1109/TNN.2008.2005605",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -45184,36 +45522,39 @@ const milestones = [
             "en": "A new model for learning in graph domains"
           },
           "url": "https://ieeexplore.ieee.org/document/4700287",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-graph-neural-network-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "图神经网络概览",
             "en": "Graph neural network overview"
           },
           "url": "https://en.wikipedia.org/wiki/Graph_neural_network",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-franco-scarselli-homepage",
           "type": {
-            "zh": "作者主页",
-            "en": "Author homepage"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
             "zh": "弗兰科·斯卡塞利个人主页",
-            "en": "Franco Scarselli homepage"
+            "en": "Franco Scarselli personal homepage"
           },
           "url": "https://www3.diism.unisi.it/~franco/",
+          "purpose": "biography",
           "reliability": "primary",
-          "sourceType": "profile"
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -45691,22 +46032,24 @@ const milestones = [
             "en": "Semi-Supervised Classification with Graph Convolutional Networks"
           },
           "url": "https://arxiv.org/abs/1609.02907",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-openreview-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR OpenReview 记录",
             "en": "ICLR OpenReview record"
           },
           "url": "https://openreview.net/forum?id=SJU4ayYgl",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-kipf-gcn-repository",
@@ -45719,6 +46062,7 @@ const milestones = [
             "en": "Kipf GCN repository"
           },
           "url": "https://github.com/tkipf/gcn",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -46197,22 +46541,24 @@ const milestones = [
             "en": "Graph Attention Networks"
           },
           "url": "https://arxiv.org/abs/1710.10903",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-openreview-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR OpenReview 记录",
             "en": "ICLR OpenReview record"
           },
           "url": "https://openreview.net/forum?id=rJXMpikCZ",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-original-gat-repository",
@@ -46225,6 +46571,7 @@ const milestones = [
             "en": "Original GAT repository"
           },
           "url": "https://github.com/PetarV-/GAT",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -46713,36 +47060,39 @@ const milestones = [
             "en": "Neural Architecture Search with Reinforcement Learning"
           },
           "url": "https://arxiv.org/abs/1611.01578",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-openreview-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR OpenReview 记录",
             "en": "ICLR OpenReview record"
           },
           "url": "https://openreview.net/forum?id=r1Ue8Hcxg",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-ai-automl-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "Google AI AutoML 概览",
             "en": "Google AI AutoML overview"
           },
           "url": "https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -47219,34 +47569,37 @@ const milestones = [
             "en": "Deep Compression"
           },
           "url": "https://arxiv.org/abs/1510.00149",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-openreview-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR OpenReview 记录",
             "en": "ICLR OpenReview record"
           },
           "url": "https://openreview.net/forum?id=n4Bp24yb5L",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-song-han-efficient-ai-research-page",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "韩松实验室深度压缩项目页面",
             "en": "Song Han efficient AI research page"
           },
           "url": "https://hanlab.mit.edu/projects/deep-compression",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         }
@@ -47729,36 +48082,39 @@ const milestones = [
             "en": "Distilling the Knowledge in a Neural Network"
           },
           "url": "https://arxiv.org/abs/1503.02531",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-knowledge-distillation-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "知识蒸馏概览",
             "en": "Knowledge distillation overview"
           },
           "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-geoffrey-hinton-profile",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "杰弗里·辛顿资料",
-            "en": "Geoffrey Hinton profile"
+            "zh": "杰弗里·辛顿个人主页",
+            "en": "Geoffrey Hinton personal homepage"
           },
           "url": "https://www.cs.toronto.edu/~hinton/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -48235,6 +48591,7 @@ const milestones = [
             "en": "Microsoft COCO: Common Objects in Context"
           },
           "url": "https://arxiv.org/abs/1405.0312",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -48249,22 +48606,24 @@ const milestones = [
             "en": "COCO dataset website"
           },
           "url": "https://cocodataset.org/",
+          "purpose": "dataset-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "dataset"
         },
         {
           "id": "source-eccv-springer-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ECCV Springer 记录",
             "en": "ECCV Springer record"
           },
           "url": "https://link.springer.com/chapter/10.1007/978-3-319-10602-1_48",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         }
       ],
       "sourceIds": [
@@ -48733,7 +49092,7 @@ const milestones = [
         {
           "id": "source-learning-from-delayed-rewards",
           "type": {
-            "zh": "博士论文",
+            "zh": "学位论文",
             "en": "Thesis"
           },
           "label": {
@@ -48741,8 +49100,9 @@ const milestones = [
             "en": "Learning from Delayed Rewards"
           },
           "url": "https://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf",
+          "purpose": "core-evidence",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "thesis"
         },
         {
           "id": "source-q-learning",
@@ -48755,22 +49115,24 @@ const milestones = [
             "en": "Q-learning"
           },
           "url": "https://link.springer.com/article/10.1007/BF00992698",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-q-learning-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "Q-learning 概览",
             "en": "Q-learning overview"
           },
           "url": "https://en.wikipedia.org/wiki/Q-learning",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -49104,12 +49466,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "DeepMind",
-        "zh": "DeepMind"
+        "en": "DeepMind, London",
+        "zh": "DeepMind，伦敦"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.5072,
@@ -49117,8 +49479,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
-      "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+      "zh": "<p>2015 年，蒂莫西·利利克拉普等人在 DeepMind 提出 DDPG（深度确定性策略梯度），把确定性策略梯度与深度 actor-critic 网络结合，用于转向角、速度和力矩等连续动作。Actor 直接输出动作，critic 估计 Q(s,a)，并把动作方向上的价值梯度反向传给 actor，从而避免像 DQN 那样枚举有限的离散动作。</p><p>DDPG 是离策略算法，借用了 DQN 的经验回放和目标网络，并在探索阶段向 actor 动作加入噪声；论文还使用批归一化处理不同量纲的状态输入。它在多项模拟物理控制任务中展示了从低维状态甚至像素输入学习连续控制策略的能力，推动深度强化学习进入机器人式控制场景。DDPG 对超参数、价值过估计和探索策略较敏感，后续 TD3、SAC 等方法沿用 actor-critic 路线并提高了训练稳定性。</p>",
+      "en": "<p>In 2015, Timothy Lillicrap and colleagues at DeepMind introduced Deep Deterministic Policy Gradient (DDPG), combining deterministic policy gradients with deep actor-critic networks for continuous actions such as steering angles, velocities, and torques. The actor outputs an action directly, the critic estimates Q(s,a), and the action-value gradient is backpropagated into the actor, avoiding the need to enumerate a finite set of actions as DQN does.</p><p>DDPG is an off-policy algorithm that adopted experience replay and target networks from DQN, while adding noise to actor actions during exploration; the paper also used batch normalization for state variables with different scales. Across simulated physics tasks, it showed that continuous-control policies could be learned from low-dimensional states and even pixel inputs, helping extend deep reinforcement learning toward robotic-style control. DDPG is sensitive to hyperparameters, value overestimation, and exploration, so later methods such as TD3 and SAC retained the actor-critic direction while improving stability.</p>"
     },
     "figures": [
       {
@@ -49130,14 +49492,14 @@ const milestones = [
           "en": "DDPG lead author",
           "zh": "DDPG 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait.png",
+        "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
         "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg"
       ],
       "videos": [],
@@ -49147,7 +49509,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait.png": {
+      "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png": {
         "caption": {
           "zh": "蒂莫西·利利克拉普肖像",
           "en": "Timothy Lillicrap portrait"
@@ -49157,19 +49519,19 @@ const milestones = [
           "en": "Lead author of DDPG."
         },
         "sourceName": {
-          "zh": "Stanford Neurosciences",
+          "zh": "斯坦福神经科学中心",
           "en": "Stanford Neurosciences"
         },
         "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
         "license": {
-          "zh": "本地副本来自Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "zh": "本地副本来自 Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
           "en": "Local copy from Stanford Neurosciences; the source page does not state a repository-compatible license. Recheck before external redistribution."
         },
-        "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
+        "sourceId": "source-timothy-lillicrap-stanford-portrait",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "本地副本来自Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "zh": "本地副本来自 Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
             "en": "Local copy from Stanford Neurosciences; the source page does not state a repository-compatible license. Recheck before external redistribution."
           },
           "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
@@ -49179,12 +49541,12 @@ const milestones = [
       },
       "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg": {
         "caption": {
-          "zh": "DDPG 解释图",
-          "en": "DDPG explainer"
+          "zh": "DDPG Actor-Critic 训练闭环",
+          "en": "DDPG actor-critic training loop"
         },
         "subcaption": {
-          "zh": "关于该成就流程的本地原创解释图。",
-          "en": "Original local explainer for the achievement flow."
+          "zh": "Actor 输出连续动作，critic 评估动作价值，经验回放与目标网络用于稳定更新。",
+          "en": "The actor outputs continuous actions, the critic evaluates them, and replay with target networks stabilizes updates."
         },
         "license": {
           "zh": "本地原创 SVG 重绘；未复制来源图形。",
@@ -49216,8 +49578,8 @@ const milestones = [
             "zh": "使用深度强化学习进行连续控制"
           },
           "description": {
-            "en": "arXiv source card for DDPG.",
-            "zh": "arXiv 的DDPG资料卡片。"
+            "en": "The original DDPG paper, including the actor-critic method and continuous-control experiments.",
+            "zh": "DDPG 原始论文，介绍 actor-critic 方法及连续控制实验。"
           },
           "url": "https://arxiv.org/abs/1509.02971",
           "source": "https://arxiv.org/abs/1509.02971",
@@ -49247,42 +49609,77 @@ const milestones = [
             "en": "Continuous Control with Deep Reinforcement Learning"
           },
           "url": "https://arxiv.org/abs/1509.02971",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-openreview-record",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR OpenReview 记录",
             "en": "ICLR OpenReview record"
           },
           "url": "https://openreview.net/forum?id=Rx4nmj8j6G",
+          "purpose": "alternate-access",
           "reliability": "secondary",
+          "sourceType": "paper-page"
+        },
+        {
+          "id": "source-deterministic-policy-gradient-algorithms",
+          "type": {
+            "zh": "前序论文",
+            "en": "Precursor paper"
+          },
+          "label": {
+            "zh": "《确定性策略梯度算法》",
+            "en": "Deterministic Policy Gradient Algorithms"
+          },
+          "url": "https://proceedings.mlr.press/v32/silver14.html",
+          "purpose": "precursor",
+          "reliability": "primary",
           "sourceType": "paper"
         },
         {
-          "id": "source-deep-deterministic-policy-gradient-overview",
+          "id": "source-td3-function-approximation-error",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "后续论文",
+            "en": "Follow-up paper"
           },
           "label": {
-            "zh": "深度确定性策略梯度概览",
-            "en": "Deep deterministic policy gradient overview"
+            "zh": "《解决 Actor-Critic 方法中的函数逼近误差》",
+            "en": "Addressing Function Approximation Error in Actor-Critic Methods"
           },
-          "url": "https://en.wikipedia.org/wiki/Deep_deterministic_policy_gradient",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "url": "https://proceedings.mlr.press/v80/fujimoto18a.html",
+          "purpose": "follow-up",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-timothy-lillicrap-stanford-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "斯坦福神经科学中心的蒂莫西·利利克拉普肖像",
+            "en": "Timothy Lillicrap portrait from Stanford Neurosciences"
+          },
+          "url": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-continuous-control-with-deep-reinforcement-learning",
         "source-iclr-openreview-record",
-        "source-deep-deterministic-policy-gradient-overview"
+        "source-deterministic-policy-gradient-algorithms",
+        "source-td3-function-approximation-error",
+        "source-timothy-lillicrap-stanford-portrait"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -49306,12 +49703,14 @@ const milestones = [
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。</p>",
-            "en": "<p>DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems.</p>"
+            "zh": "<p>2015 年，蒂莫西·利利克拉普等人在 DeepMind 提出 DDPG（深度确定性策略梯度），把确定性策略梯度与深度 actor-critic 网络结合，用于转向角、速度和力矩等连续动作。Actor 直接输出动作，critic 估计 Q(s,a)，并把动作方向上的价值梯度反向传给 actor，从而避免像 DQN 那样枚举有限的离散动作。</p><p>DDPG 是离策略算法，借用了 DQN 的经验回放和目标网络，并在探索阶段向 actor 动作加入噪声；论文还使用批归一化处理不同量纲的状态输入。它在多项模拟物理控制任务中展示了从低维状态甚至像素输入学习连续控制策略的能力，推动深度强化学习进入机器人式控制场景。DDPG 对超参数、价值过估计和探索策略较敏感，后续 TD3、SAC 等方法沿用 actor-critic 路线并提高了训练稳定性。</p>",
+            "en": "<p>In 2015, Timothy Lillicrap and colleagues at DeepMind introduced Deep Deterministic Policy Gradient (DDPG), combining deterministic policy gradients with deep actor-critic networks for continuous actions such as steering angles, velocities, and torques. The actor outputs an action directly, the critic estimates Q(s,a), and the action-value gradient is backpropagated into the actor, avoiding the need to enumerate a finite set of actions as DQN does.</p><p>DDPG is an off-policy algorithm that adopted experience replay and target networks from DQN, while adding noise to actor actions during exploration; the paper also used batch normalization for state variables with different scales. Across simulated physics tasks, it showed that continuous-control policies could be learned from low-dimensional states and even pixel inputs, helping extend deep reinforcement learning toward robotic-style control. DDPG is sensitive to hyperparameters, value overestimation, and exploration, so later methods such as TD3 and SAC retained the actor-critic direction while improving stability.</p>"
           },
           "sourceIds": [
             "source-continuous-control-with-deep-reinforcement-learning",
-            "source-iclr-openreview-record"
+            "source-iclr-openreview-record",
+            "source-deterministic-policy-gradient-algorithms",
+            "source-td3-function-approximation-error"
           ],
           "status": "needs-source"
         }
@@ -49333,12 +49732,12 @@ const milestones = [
         "zh": "深度确定性策略梯度"
       },
       "material": {
-        "en": "ICLR paper and continuous-control benchmarks",
-        "zh": "ICLR 论文与连续控制基准"
+        "en": "DDPG paper, deterministic policy-gradient precursor, and TD3 follow-up",
+        "zh": "DDPG 论文、确定性策略梯度前序研究与 TD3 后续研究"
       },
       "demo": {
-        "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
-        "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+        "en": "Adjust the actor action and observe how critic values, replayed experience, and target-network updates shape the policy.",
+        "zh": "调整 actor 动作，观察 critic 价值、回放经验和目标网络更新如何共同塑造策略。"
       },
       "keyConcepts": [
         {
@@ -49347,8 +49746,8 @@ const milestones = [
             "zh": "Actor"
           },
           "text": {
-            "en": "The policy outputs a continuous action.",
-            "zh": "策略输出连续动作。"
+            "en": "A deterministic policy maps each state directly to a continuous action.",
+            "zh": "确定性策略把每个状态直接映射为连续动作。"
           }
         },
         {
@@ -49357,85 +49756,67 @@ const milestones = [
             "zh": "Critic"
           },
           "text": {
-            "en": "The value model supplies policy gradients.",
-            "zh": "价值模型提供策略梯度。"
+            "en": "The Q-network evaluates state-action pairs and supplies the action gradient used to improve the actor.",
+            "zh": "Q 网络评估状态—动作对，并提供用于改进 actor 的动作梯度。"
+          }
+        },
+        {
+          "label": {
+            "en": "Replay and Targets",
+            "zh": "经验回放与目标网络"
+          },
+          "text": {
+            "en": "Replay batches and slowly updated target networks reduce correlation and moving-target instability.",
+            "zh": "回放批次和缓慢更新的目标网络降低样本相关性与移动目标带来的不稳定。"
+          }
+        },
+        {
+          "label": {
+            "en": "Exploration Noise",
+            "zh": "探索噪声"
+          },
+          "text": {
+            "en": "Noise is added during data collection so a deterministic actor can explore nearby actions.",
+            "zh": "收集经验时向动作加入噪声，使确定性 actor 能探索邻近动作。"
           }
         }
       ],
       "relatedAchievements": [
         {
-          "en": {
-            "en": "Actor-Critic",
-            "zh": "Actor-Critic"
-          },
-          "zh": {
-            "en": "Actor-Critic",
-            "zh": "Actor-Critic"
-          }
+          "en": "Deterministic Policy Gradient",
+          "zh": "确定性策略梯度"
         },
         {
-          "en": {
-            "en": "Deep Q Network",
-            "zh": "深度 Q 网络"
-          },
-          "zh": {
-            "en": "Deep Q Network",
-            "zh": "深度 Q 网络"
-          }
+          "en": "Deep Q-Network",
+          "zh": "深度 Q 网络"
         },
         {
-          "en": {
-            "en": "Policy gradient theorem",
-            "zh": "策略梯度定理"
-          },
-          "zh": {
-            "en": "Policy gradient theorem",
-            "zh": "策略梯度定理"
-          }
+          "en": "TD3 and SAC",
+          "zh": "TD3 与 SAC"
         }
       ],
       "relatedRegions": [
         {
-          "en": {
-            "en": "United Kingdom",
-            "zh": "英国"
-          },
-          "zh": {
-            "en": "United Kingdom",
-            "zh": "英国"
-          }
+          "en": "United Kingdom",
+          "zh": "英国"
         }
       ],
       "demoSteps": [
         {
-          "en": {
-            "en": "Actor action",
-            "zh": "actor 动作"
-          },
-          "zh": {
-            "en": "Actor action",
-            "zh": "actor 动作"
-          }
+          "en": "State enters actor",
+          "zh": "状态输入 actor"
         },
         {
-          "en": {
-            "en": "Critic value",
-            "zh": "critic 价值"
-          },
-          "zh": {
-            "en": "Critic value",
-            "zh": "critic 价值"
-          }
+          "en": "Actor outputs continuous action",
+          "zh": "actor 输出连续动作"
         },
         {
-          "en": {
-            "en": "Policy update",
-            "zh": "策略更新"
-          },
-          "zh": {
-            "en": "Policy update",
-            "zh": "策略更新"
-          }
+          "en": "Critic evaluates Q(s,a)",
+          "zh": "critic 评估 Q(s,a)"
+        },
+        {
+          "en": "Replay batch updates networks",
+          "zh": "回放批次更新网络"
         }
       ],
       "demoImage": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
@@ -49446,8 +49827,8 @@ const milestones = [
             "zh": "资料线索"
           },
           "text": {
-            "en": "ICLR paper and continuous-control benchmarks",
-            "zh": "ICLR 论文与连续控制基准"
+            "en": "The 2014 deterministic policy-gradient paper, the original DDPG paper, and the later TD3 diagnosis of value overestimation.",
+            "zh": "2014 年确定性策略梯度论文、DDPG 原论文，以及后来 TD3 对价值过估计问题的分析。"
           }
         },
         {
@@ -49456,8 +49837,8 @@ const milestones = [
             "zh": "互动点"
           },
           "text": {
-            "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor.",
-            "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。"
+            "en": "Change the proposed action or exploration noise and compare the critic score before applying the policy update.",
+            "zh": "改变候选动作或探索噪声，对比策略更新前的 critic 评分变化。"
           }
         }
       ]
@@ -49470,10 +49851,11 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "DDPG 将确定性策略梯度与深度 actor-critic 网络结合，用于连续动作空间。它帮助深度强化学习从离散 Atari 动作走向机器人式控制问题。",
-          "en": "DDPG combined deterministic policy gradients with deep actor-critic networks for continuous action spaces. It helped move deep reinforcement learning beyond discrete Atari actions into robotic-style control problems."
+          "zh": "DQN 在 Atari 上证明了深度网络可以学习离散动作价值，但机器人控制常需要连续输出转向角、速度或力矩。2014 年的确定性策略梯度提供了理论基础，DDPG 随后把它与深度网络及 DQN 的稳定训练机制结合起来。",
+          "en": "DQN showed that deep networks could learn values for discrete Atari actions, but robotic control often requires continuous steering angles, velocities, or torques. Deterministic policy gradients supplied the theoretical basis in 2014, and DDPG then combined that idea with deep networks and DQN-style stabilization."
         },
         "sourceIds": [
+          "source-deterministic-policy-gradient-algorithms",
           "source-continuous-control-with-deep-reinforcement-learning"
         ]
       },
@@ -49484,8 +49866,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "actor 提出连续动作，critic 估计其价值，来自 critic 的梯度更新 actor。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
-          "en": "The actor proposes a continuous action, the critic estimates its value, and gradients from the critic update the actor. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+          "zh": "Actor 根据状态直接输出确定性连续动作，critic 评估 Q(s,a)，再通过动作梯度更新 actor。经验回放打散样本相关性，缓慢更新的目标 actor 与目标 critic 稳定学习，探索噪声则帮助智能体收集不同动作附近的经验。",
+          "en": "The actor maps a state directly to a deterministic continuous action, while the critic estimates Q(s,a) and supplies the action gradient used to update the actor. Experience replay breaks temporal correlations, slowly updated target actor and critic networks stabilize learning, and exploration noise gathers experience around different actions."
         },
         "sourceIds": [
           "source-continuous-control-with-deep-reinforcement-learning"
@@ -49498,11 +49880,12 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把 DDPG 视为早期连续控制深度强化学习的重要算法，尽管后续方法提高了稳定性。它的长期影响在于 actor-critic 模板影响了 TD3、SAC 和许多机器人智能体。",
-          "en": "Experts generally treat DDPG as an important early deep RL algorithm for continuous control, even though later methods improved stability. Its long-term legacy is the actor-critic template behind TD3, SAC, and many robotics agents."
+          "zh": "专家通常把 DDPG 视为把深度强化学习带入连续控制的重要早期基线，同时也把价值过估计、探索不足和超参数敏感等问题暴露得很清楚。TD3 通过双 critic 和延迟策略更新改善稳定性，SAC 则采用随机策略与熵正则化；二者都延续了 DDPG 推广的深度 actor-critic 路线。",
+          "en": "Experts generally treat DDPG as an important early baseline that brought deep reinforcement learning into continuous control while clearly exposing value overestimation, weak exploration, and hyperparameter sensitivity. TD3 improved stability with twin critics and delayed policy updates, while SAC used stochastic policies and entropy regularization; both continued the deep actor-critic direction popularized by DDPG."
         },
         "sourceIds": [
-          "source-continuous-control-with-deep-reinforcement-learning"
+          "source-continuous-control-with-deep-reinforcement-learning",
+          "source-td3-function-approximation-error"
         ]
       }
     ],
@@ -49753,13 +50136,14 @@ const milestones = [
             "en": "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems"
           },
           "url": "https://doi.org/10.1109/TSMC.1983.6313077",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-reinforcement-learning-an-introduction",
           "type": {
-            "zh": "书籍",
+            "zh": "图书",
             "en": "Book"
           },
           "label": {
@@ -49767,22 +50151,24 @@ const milestones = [
             "en": "Reinforcement Learning: An Introduction"
           },
           "url": "http://incompleteideas.net/book/the-book-2nd.html",
+          "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "book"
         },
         {
           "id": "source-actor-critic-model-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "Actor-Critic 模型概览",
             "en": "Actor-critic model overview"
           },
           "url": "https://en.wikipedia.org/wiki/Actor-critic_model",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -50676,6 +51062,7 @@ const milestones = [
             "en": "ImageNet Classification with Deep Convolutional Neural Networks"
           },
           "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -50690,36 +51077,39 @@ const milestones = [
             "en": "NeurIPS full paper PDF"
           },
           "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-imagenet-challenge",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
             "zh": "ImageNet 大规模视觉识别挑战赛",
             "en": "ImageNet Large Scale Visual Recognition Challenge"
           },
           "url": "https://www.image-net.org/challenges/LSVRC/index.php",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "official-page"
         },
         {
           "id": "source-alexnet-overview",
           "type": {
-            "zh": "背景",
-            "en": "Context"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "AlexNet 概览",
             "en": "AlexNet overview"
           },
           "url": "https://en.wikipedia.org/wiki/AlexNet",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -51232,40 +51622,43 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "感知机：大脑中信息存储与组织的概率模型",
+            "zh": "《感知机：大脑中信息存储与组织的概率模型》",
             "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
           },
           "url": "https://doi.org/10.1037/h0042519",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cornell-chronicle-perceptron-retrospective",
           "type": {
-            "zh": "历史资料",
-            "en": "History"
+            "zh": "新闻报道",
+            "en": "News report"
           },
           "label": {
             "zh": "康奈尔大学 Chronicle perceptron retrospective",
             "en": "Cornell Chronicle perceptron retrospective"
           },
           "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         },
         {
           "id": "source-smithsonian-mark-i-perceptron-object-record",
           "type": {
-            "zh": "博物馆",
-            "en": "Museum"
+            "zh": "档案",
+            "en": "Archive"
           },
           "label": {
             "zh": "Smithsonian Mark I Perceptron object record",
             "en": "Smithsonian Mark I Perceptron object record"
           },
           "url": "https://www.si.edu/object/electronic-neural-network-mark-i-perceptron%3Anmah_334414",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
@@ -51744,50 +52137,54 @@ const milestones = [
             "en": "Attention Is All You Need"
           },
           "url": "https://arxiv.org/abs/1706.03762",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-transformer-neurips",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "NeurIPS 论文页面",
             "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-research-publication",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Google Research 出版页面",
             "en": "Google Research publication page"
           },
           "url": "https://research.google/pubs/attention-is-all-you-need/",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "official-page"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-transformer-blog",
           "type": {
-            "zh": "回顾",
-            "en": "Retrospective"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "Google Research Transformer 博客",
             "en": "Google Research Transformer blog post"
           },
           "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+          "purpose": "historical-context",
           "reliability": "secondary",
-          "sourceType": "official-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -53112,20 +53509,22 @@ const milestones = [
             "en": "Backpropagation Applied to Handwritten Zip Code Recognition"
           },
           "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-lenet-5-demos-and-documentation",
           "type": {
-            "zh": "项目",
-            "en": "Project"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "LeNet-5 演示与文档",
             "en": "LeNet-5 demos and documentation"
           },
           "url": "https://yann.lecun.com/exdb/lenet/",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "project-page"
         },
@@ -53140,22 +53539,24 @@ const milestones = [
             "en": "Gradient-Based Learning Applied to Document Recognition"
           },
           "url": "https://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-yann-lecun-s-home-page",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "扬·勒昆主页",
-            "en": "Yann LeCun's home page"
+            "zh": "扬·勒昆个人主页",
+            "en": "Yann LeCun personal homepage"
           },
           "url": "https://yann.lecun.com/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -53648,6 +54049,7 @@ const milestones = [
             "en": "Long Short-Term Memory"
           },
           "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -53662,36 +54064,39 @@ const milestones = [
             "en": "Author-hosted LSTM paper PDF"
           },
           "url": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-lstm-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "LSTM 概览",
             "en": "LSTM overview"
           },
           "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-sepp-hochreiter-profile",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "塞普·霍赫赖特个人资料",
             "en": "Sepp Hochreiter profile"
           },
           "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -54392,50 +54797,54 @@ const milestones = [
             "en": "Generative Adversarial Nets"
           },
           "url": "https://arxiv.org/abs/1406.2661",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-neurips-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "NeurIPS 论文页面",
             "en": "NeurIPS paper page"
           },
           "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-goodfellow-gan-tutorial",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "古德费洛 GAN 教程",
             "en": "Goodfellow GAN tutorial"
           },
           "url": "https://arxiv.org/abs/1701.00160",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-ian-goodfellow-profile",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "伊恩·古德费洛个人网站",
-            "en": "Ian Goodfellow profile"
+            "zh": "伊恩·古德费洛个人主页",
+            "en": "Ian Goodfellow personal homepage"
           },
           "url": "https://www.iangoodfellow.com/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -54919,50 +55328,54 @@ const milestones = [
             "en": "Neural Machine Translation by Jointly Learning to Align and Translate"
           },
           "url": "https://arxiv.org/abs/1409.0473",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-iclr-2015-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ICLR 2015 论文页面",
             "en": "ICLR 2015 paper page"
           },
           "url": "https://iclr.cc/archive/www/doku.php%3Fid=iclr2015:accepted-main.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-attention-mechanism-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "注意力机制概览",
             "en": "Attention mechanism overview"
           },
           "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         },
         {
           "id": "source-yoshua-bengio-lab-profile",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "人物资料",
+            "en": "Profile"
           },
           "label": {
             "zh": "约书亚·本吉奥 Mila 资料",
             "en": "Yoshua Bengio lab profile"
           },
           "url": "https://mila.quebec/en/person/yoshua-bengio/",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         }
       ],
       "sourceIds": [
@@ -55533,22 +55946,24 @@ const milestones = [
             "en": "Deep Residual Learning for Image Recognition"
           },
           "url": "https://arxiv.org/abs/1512.03385",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvf-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "CVF 开放论文页面",
             "en": "CVF Open Access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-cvpr-full-paper-pdf",
@@ -55561,22 +55976,24 @@ const milestones = [
             "en": "CVPR full paper PDF"
           },
           "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-kaiming-he-profile-at-mit-csail",
           "type": {
-            "zh": "人物",
-            "en": "People"
+            "zh": "个人主页",
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "MIT CSAIL 的何恺明资料",
-            "en": "Kaiming He profile at MIT CSAIL"
+            "zh": "何恺明个人主页",
+            "en": "Kaiming He personal homepage"
           },
           "url": "https://people.csail.mit.edu/kaiming/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
@@ -56017,22 +56434,24 @@ const milestones = [
             "en": "Densely Connected Convolutional Networks"
           },
           "url": "https://arxiv.org/abs/1608.06993",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-cvf-open-access-paper-page",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "CVF 开放论文页面",
             "en": "CVF Open Access paper page"
           },
           "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-original-densenet-code-repository",
@@ -56045,22 +56464,24 @@ const milestones = [
             "en": "Original DenseNet code repository"
           },
           "url": "https://github.com/liuzhuang13/DenseNet",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         },
         {
           "id": "source-meta-ai-publication-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "出版页面",
+            "en": "Publication page"
           },
           "label": {
             "zh": "Meta AI 出版页面",
             "en": "Meta AI publication page"
           },
           "url": "https://ai.meta.com/research/publications/densely-connected-convolutional-networks/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         }
       ],
       "sourceIds": [
@@ -56518,22 +56939,24 @@ const milestones = [
             "en": "BERT"
           },
           "url": "https://arxiv.org/abs/1810.04805",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-acl-anthology-bert-paper",
           "type": {
-            "zh": "会议论文",
-            "en": "Conference paper"
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
           },
           "label": {
             "zh": "ACL Anthology BERT 论文",
             "en": "ACL Anthology BERT paper"
           },
           "url": "https://aclanthology.org/N19-1423/",
+          "purpose": "alternate-access",
           "reliability": "secondary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-google-research-bert-repository",
@@ -56546,22 +56969,24 @@ const milestones = [
             "en": "Google Research BERT repository"
           },
           "url": "https://github.com/google-research/bert",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         },
         {
           "id": "source-google-ai-bert-blog-post",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "Google AI BERT 博客",
             "en": "Google AI BERT blog post"
           },
           "url": "https://research.google/blog/open-sourcing-bert-state-of-the-art-pre-training-for-natural-language-processing/",
+          "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "official-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -57041,57 +57466,45 @@ const milestones = [
             "en": "Improving Language Understanding by Generative Pre-Training"
           },
           "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-file"
         },
         {
           "id": "source-openai-language-unsupervised-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "OpenAI 无监督语言页面",
             "en": "OpenAI language unsupervised page"
           },
           "url": "https://openai.com/index/language-unsupervised/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "article"
         },
         {
           "id": "source-gpt-model-overview",
           "type": {
-            "zh": "背景",
-            "en": "Background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "GPT 模型概览",
             "en": "GPT model overview"
           },
           "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
-        },
-        {
-          "id": "source-alec-radford-research-context",
-          "type": {
-            "zh": "人物",
-            "en": "People"
-          },
-          "label": {
-            "zh": "亚历克·拉德福德研究背景",
-            "en": "Alec Radford research context"
-          },
-          "url": "https://openai.com/research/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
         "source-improving-language-understanding-by-generative-pre-training",
         "source-openai-language-unsupervised-page",
-        "source-gpt-model-overview",
-        "source-alec-radford-research-context"
+        "source-gpt-model-overview"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -57982,22 +58395,24 @@ const milestones = [
             "en": "Highly accurate protein structure prediction with AlphaFold"
           },
           "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
         {
           "id": "source-deepmind-alphafold-page",
           "type": {
-            "zh": "出版页",
-            "en": "Publication"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "DeepMind AlphaFold 页面",
             "en": "DeepMind AlphaFold page"
           },
           "url": "https://deepmind.google/technologies/alphafold/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "project-page"
         },
         {
           "id": "source-alphafold-protein-structure-database",
@@ -58010,8 +58425,9 @@ const milestones = [
             "en": "AlphaFold Protein Structure Database"
           },
           "url": "https://alphafold.ebi.ac.uk/",
+          "purpose": "dataset-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "dataset"
         },
         {
           "id": "source-alphafold-github-repository",
@@ -58024,6 +58440,7 @@ const milestones = [
             "en": "AlphaFold GitHub repository"
           },
           "url": "https://github.com/google-deepmind/alphafold",
+          "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
         }
@@ -59449,10 +59866,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "逻辑或非数学程序",
+            "zh": "《逻辑或非数学程序》",
             "en": "Logical or non-mathematical programmes"
           },
           "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -59460,15 +59878,16 @@ const milestones = [
           "id": "source-computer-pioneers-christopher-strachey",
           "type": {
             "zh": "人物资料",
-            "en": "Biography"
+            "en": "Profile"
           },
           "label": {
             "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
             "en": "Computer Pioneers - Christopher Strachey"
           },
           "url": "https://history.computer.org/pioneers/strachey.html",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         },
         {
           "id": "source-strachey-draughts-program-screenshot",
@@ -59481,8 +59900,9 @@ const milestones = [
             "en": "Strachey draughts program screenshot"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Christopher_Strachey%27s_Draughts_Program.png",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         },
         {
           "id": "source-checkers-board-photo",
@@ -59495,8 +59915,9 @@ const milestones = [
             "en": "Checkers board photo"
           },
           "url": "https://commons.wikimedia.org/wiki/File:CheckersStandard.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -59970,44 +60391,47 @@ const milestones = [
         {
           "id": "source-alphago-nature-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "《自然》 2016 AlphaGo 论文",
             "en": "Nature 2016 AlphaGo paper"
           },
           "url": "https://www.nature.com/articles/nature16961",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-deepmind-alphago-page",
           "type": {
-            "zh": "博客",
-            "en": "Blog"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
             "zh": "谷歌 DeepMind AlphaGo",
             "en": "Google DeepMind AlphaGo"
           },
           "url": "https://deepmind.google/research/alphago/",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "official-page"
         },
         {
           "id": "source-katago-analysis-engine",
           "type": {
-            "zh": "API",
-            "en": "API"
+            "zh": "API 文档",
+            "en": "API documentation"
           },
           "label": {
             "zh": "KataGo 分析引擎",
             "en": "KataGo Analysis Engine"
           },
           "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+          "purpose": "implementation",
           "reliability": "reference-only",
-          "sourceType": "code"
+          "sourceType": "documentation"
         }
       ],
       "sourceIds": [
@@ -60441,10 +60865,11 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Learning to Predict by the Methods of Temporal Differences",
+            "zh": "《利用时序差分方法学习预测》",
             "en": "Learning to Predict by the Methods of Temporal Differences"
           },
           "url": "https://doi.org/10.1007/BF00115009",
+          "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
         },
@@ -60452,29 +60877,31 @@ const milestones = [
           "id": "source-richard-sutton-homepage",
           "type": {
             "zh": "个人主页",
-            "en": "Homepage"
+            "en": "Personal homepage"
           },
           "label": {
-            "zh": "理查德·萨顿 homepage",
-            "en": "Richard Sutton homepage"
+            "zh": "理查德·萨顿个人主页",
+            "en": "Richard Sutton personal homepage"
           },
           "url": "http://incompleteideas.net/",
-          "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         },
         {
           "id": "source-acm-2024-turing-award-announcement",
           "type": {
-            "zh": "奖项资料",
-            "en": "Award"
+            "zh": "新闻报道",
+            "en": "News report"
           },
           "label": {
             "zh": "ACM 2024 图灵 Award announcement",
             "en": "ACM 2024 Turing Award announcement"
           },
           "url": "https://awards.acm.org/about/2024-turing",
+          "purpose": "contemporary-reporting",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         }
       ],
       "sourceIds": [
@@ -60969,14 +61396,15 @@ const milestones = [
         {
           "id": "source-chinook-project-home",
           "type": {
-            "zh": "官方页面",
-            "en": "Official page"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Chinook 项目主页",
             "en": "Chinook project home"
           },
           "url": "https://webdocs.cs.ualberta.ca/~chinook/index.php",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "project-page"
         },
@@ -60987,26 +61415,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "跳棋已被求解",
+            "zh": "《跳棋已被求解》",
             "en": "Checkers Is Solved"
           },
           "url": "https://www.science.org/doi/10.1126/science.1144079",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-chinook-publications",
           "type": {
-            "zh": "论文列表",
-            "en": "Publications"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "Chinook 论文列表",
             "en": "Chinook publications"
           },
           "url": "https://webdocs.cs.ualberta.ca/~chinook/publications/",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-index"
         },
         {
           "id": "source-jonathan-schaeffer-portrait",
@@ -61019,8 +61449,9 @@ const milestones = [
             "en": "Jonathan Schaeffer portrait"
           },
           "url": "https://commons.wikimedia.org/wiki/File:Jonathan_Schaeffer.jpg",
+          "purpose": "image-provenance",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
@@ -61418,30 +61849,32 @@ const milestones = [
         {
           "id": "source-logistello-homepage",
           "type": {
-            "zh": "官方页面",
-            "en": "Official page"
+            "zh": "项目页面",
+            "en": "Project page"
           },
           "label": {
             "zh": "Logistello 主页",
             "en": "Logistello homepage"
           },
           "url": "https://skatgame.net/mburo/log.html",
+          "purpose": "background",
           "reliability": "primary",
           "sourceType": "project-page"
         },
         {
           "id": "source-murakami-vs-logistello",
           "type": {
-            "zh": "对局报告",
-            "en": "Match report"
+            "zh": "报告",
+            "en": "Report"
           },
           "label": {
             "zh": "村上健对 Logistello",
             "en": "Murakami vs. Logistello"
           },
           "url": "https://skatgame.net/mburo/event.html",
+          "purpose": "reporting",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "report"
         },
         {
           "id": "source-statistical-feature-combination",
@@ -61450,26 +61883,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "统计特征组合论文",
+            "zh": "《统计特征组合》",
             "en": "Statistical Feature Combination"
           },
           "url": "https://arxiv.org/abs/cs/9512106",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-michael-buro-publications",
           "type": {
-            "zh": "论文列表",
-            "en": "Publication list"
+            "zh": "论文索引",
+            "en": "Paper index"
           },
           "label": {
             "zh": "迈克尔·布罗论文列表",
             "en": "Michael Buro publications"
           },
           "url": "https://skatgame.net/mburo/publications.html",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-index"
         }
       ],
       "sourceIds": [
@@ -62067,36 +62502,39 @@ const milestones = [
             "en": "Murray Campbell, IBM Research"
           },
           "url": "https://research.ibm.com/people/murray-campbell",
+          "purpose": "biography",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "profile"
         },
         {
           "id": "source-mastering-the-game-computer-history-museum",
           "type": {
-            "zh": "博物馆",
-            "en": "Museum"
+            "zh": "档案",
+            "en": "Archive"
           },
           "label": {
             "zh": "Mastering the Game, Computer History Museum",
             "en": "Mastering the Game, Computer History Museum"
           },
           "url": "https://www.computerhistory.org/chess/",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "archive"
         },
         {
           "id": "source-ibm100-deep-blue",
           "type": {
-            "zh": "官方历史资料",
-            "en": "Official history"
+            "zh": "官方页面",
+            "en": "Official page"
           },
           "label": {
             "zh": "IBM100: 深蓝",
             "en": "IBM100: Deep Blue"
           },
           "url": "https://www.ibm.com/history/deep-blue",
+          "purpose": "historical-context",
           "reliability": "secondary",
-          "sourceType": "project-page"
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
@@ -62491,14 +62929,15 @@ const milestones = [
         {
           "id": "source-icga-chinese-chess-page",
           "type": {
-            "zh": "赛事档案",
-            "en": "Tournament archive"
+            "zh": "档案",
+            "en": "Archive"
           },
           "label": {
             "zh": "ICGA 中国象棋页面",
             "en": "ICGA Chinese Chess page"
           },
           "url": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13",
+          "purpose": "historical-context",
           "reliability": "reference-only",
           "sourceType": "archive"
         },
@@ -62509,26 +62948,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "面向计算机中国象棋的比较训练",
+            "zh": "《面向计算机中国象棋的比较训练》",
             "en": "Comparison Training for Computer Chinese Chess"
           },
           "url": "https://arxiv.org/abs/1801.07411",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-xiangqi-overview",
           "type": {
-            "zh": "规则与背景",
-            "en": "Game rules / background"
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
           },
           "label": {
             "zh": "中国象棋概览",
             "en": "Xiangqi overview"
           },
           "url": "https://en.wikipedia.org/wiki/Xiangqi",
+          "purpose": "background",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "encyclopedia-entry"
         }
       ],
       "sourceIds": [
@@ -63075,16 +63516,17 @@ const milestones = [
         {
           "id": "source-playing-atari-with-deep-reinforcement-learning",
           "type": {
-            "zh": "预印本",
-            "en": "Preprint"
+            "zh": "预印本页面",
+            "en": "Preprint page"
           },
           "label": {
             "zh": "用深度强化学习玩 Atari",
             "en": "Playing Atari with Deep Reinforcement Learning"
           },
           "url": "https://arxiv.org/abs/1312.5602",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-human-level-control-through-deep-reinforcement-learning",
@@ -63093,26 +63535,28 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "Human-level control through deep reinforcement learning",
+            "zh": "《通过深度强化学习实现人类水平控制》",
             "en": "Human-level control through deep reinforcement learning"
           },
           "url": "https://www.nature.com/articles/nature14236",
+          "purpose": "core-evidence",
           "reliability": "secondary",
           "sourceType": "paper"
         },
         {
           "id": "source-google-deepmind-deep-reinforcement-learning",
           "type": {
-            "zh": "项目说明",
-            "en": "Project note"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "谷歌 DeepMind: Deep Reinforcement Learning",
             "en": "Google DeepMind: Deep Reinforcement Learning"
           },
           "url": "https://deepmind.google/discover/blog/deep-reinforcement-learning/",
+          "purpose": "historical-context",
           "reliability": "secondary",
-          "sourceType": "project-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -63548,44 +63992,47 @@ const milestones = [
         {
           "id": "source-science-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "Science 论文",
             "en": "Science paper"
           },
           "url": "https://www.science.org/doi/10.1126/science.aar6404",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-arxiv-preprint",
           "type": {
-            "zh": "预印本",
-            "en": "Preprint"
+            "zh": "预印本页面",
+            "en": "Preprint page"
           },
           "label": {
             "zh": "arXiv 预印本",
             "en": "arXiv preprint"
           },
           "url": "https://arxiv.org/abs/1712.01815",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-deepmind-alphazero-blog",
           "type": {
-            "zh": "博客",
-            "en": "Blog"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "DeepMind AlphaZero 博客",
             "en": "DeepMind AlphaZero blog"
           },
           "url": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
+          "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "official-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [
@@ -64092,16 +64539,17 @@ const milestones = [
         {
           "id": "source-science-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "Science 论文",
             "en": "Science paper"
           },
           "url": "https://www.science.org/doi/10.1126/science.aao1733",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-cmu-libratus-release",
@@ -64114,22 +64562,24 @@ const milestones = [
             "en": "CMU Libratus release"
           },
           "url": "https://www.cmu.edu/news/stories/archives/2017/january/AI-beats-poker-pros.html",
+          "purpose": "contemporary-reporting",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         },
         {
           "id": "source-safe-and-nested-subgame-solving",
           "type": {
-            "zh": "预印本",
-            "en": "Preprint"
+            "zh": "预印本页面",
+            "en": "Preprint page"
           },
           "label": {
             "zh": "安全嵌套子局求解论文",
             "en": "Safe and Nested Subgame Solving"
           },
           "url": "https://arxiv.org/abs/1705.02955",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         }
       ],
       "sourceIds": [
@@ -64616,16 +65066,17 @@ const milestones = [
         {
           "id": "source-science-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "Science 论文",
             "en": "Science paper"
           },
           "url": "https://www.science.org/doi/10.1126/science.aay2400",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-meta-ai-pluribus-report",
@@ -64638,8 +65089,9 @@ const milestones = [
             "en": "Meta AI Pluribus report"
           },
           "url": "https://ai.meta.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/",
+          "purpose": "contemporary-reporting",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         },
         {
           "id": "source-cmu-pluribus-release",
@@ -64652,8 +65104,9 @@ const milestones = [
             "en": "CMU Pluribus release"
           },
           "url": "https://www.cmu.edu/news/stories/archives/2019/july/ai-beats-pros-six-player-poker.html",
+          "purpose": "contemporary-reporting",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "news"
         }
       ],
       "sourceIds": [
@@ -65116,30 +65569,32 @@ const milestones = [
         {
           "id": "source-suphx-arxiv-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "Suphx arXiv 论文",
             "en": "Suphx arXiv paper"
           },
           "url": "https://arxiv.org/abs/2003.13590",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-arxiv-doi-page",
           "type": {
-            "zh": "DOI",
-            "en": "DOI"
+            "zh": "DOI 页面",
+            "en": "DOI page"
           },
           "label": {
             "zh": "arXiv DOI 页面",
             "en": "arXiv DOI page"
           },
           "url": "https://doi.org/10.48550/arXiv.2003.13590",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-building-a-computer-mahjong-player-via-deep-cnns",
@@ -65148,10 +65603,11 @@ const milestones = [
             "en": "Background paper"
           },
           "label": {
-            "zh": "用深度卷积网络构建麻将程序",
+            "zh": "《用深度卷积网络构建麻将程序》",
             "en": "Building a Computer Mahjong Player via Deep CNNs"
           },
           "url": "https://arxiv.org/abs/1906.02146",
+          "purpose": "background",
           "reliability": "secondary",
           "sourceType": "paper"
         }
@@ -65648,44 +66104,47 @@ const milestones = [
         {
           "id": "source-nature-paper",
           "type": {
-            "zh": "论文",
-            "en": "Paper"
+            "zh": "论文页面",
+            "en": "Paper page"
           },
           "label": {
             "zh": "Nature 论文",
             "en": "Nature paper"
           },
           "url": "https://www.nature.com/articles/s41586-020-03051-4",
+          "purpose": "alternate-access",
           "reliability": "primary",
-          "sourceType": "paper"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-arxiv-preprint",
           "type": {
-            "zh": "预印本",
-            "en": "Preprint"
+            "zh": "预印本页面",
+            "en": "Preprint page"
           },
           "label": {
             "zh": "arXiv 预印本",
             "en": "arXiv preprint"
           },
           "url": "https://arxiv.org/abs/1911.08265",
+          "purpose": "alternate-access",
           "reliability": "reference-only",
-          "sourceType": "reference-only"
+          "sourceType": "paper-page"
         },
         {
           "id": "source-deepmind-muzero-blog",
           "type": {
-            "zh": "博客",
-            "en": "Blog"
+            "zh": "文章",
+            "en": "Article"
           },
           "label": {
             "zh": "DeepMind MuZero 博客",
             "en": "DeepMind MuZero blog"
           },
           "url": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/",
+          "purpose": "background",
           "reliability": "secondary",
-          "sourceType": "official-page"
+          "sourceType": "article"
         }
       ],
       "sourceIds": [

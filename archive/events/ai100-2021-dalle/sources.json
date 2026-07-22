@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-icml-dall-e-paper-page",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "会议论文",
-      "en": "Conference paper"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
       "zh": "ICML DALL-E 论文页面",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-openai-dall-e-blog-post",
-    "type": "official-page",
+    "type": "article",
     "label": {
-      "zh": "出版页",
-      "en": "Publication"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "OpenAI DALL-E 博客",
@@ -50,18 +52,19 @@
     },
     "url": "https://openai.com/index/dall-e/",
     "language": "en",
-    "reliability": "secondary",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-dall-e-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "DALL-E 概览",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

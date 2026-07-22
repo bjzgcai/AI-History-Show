@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "Dropout：防止神经网络过拟合的简单方法",
+      "zh": "《Dropout：防止神经网络过拟合的简单方法》",
       "en": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
     },
     "url": "https://jmlr.org/papers/v15/srivastava14a.html",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-improving-neural-networks-by-preventing-co-adaptation",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "预印本",
-      "en": "Preprint"
+      "zh": "预印本页面",
+      "en": "Preprint page"
     },
     "title": {
       "zh": "Improving neural networks by preventing co-adaptation",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-pytorch-torch-nn-dropout",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
       "zh": "框架文档",
-      "en": "Framework docs"
+      "en": "Framework documentation"
     },
     "title": {
       "zh": "PyTorch torch.nn.Dropout",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

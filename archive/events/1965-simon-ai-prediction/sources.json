@@ -1,14 +1,14 @@
 [
   {
     "id": "source-open-library-book-metadata",
-    "type": "book",
+    "type": "book-index",
     "label": {
-      "zh": "图书元数据",
-      "en": "Book metadata"
+      "zh": "书目记录",
+      "en": "Bibliographic record"
     },
     "title": {
-      "zh": "Open Library 图书元数据",
-      "en": "Open Library book metadata"
+      "zh": "Open Library 书目记录",
+      "en": "Open Library bibliographic record"
     },
     "url": "https://openlibrary.org/works/OL1205034W",
     "language": "en",
@@ -16,18 +16,19 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-open-library-metadata-search-result",
-    "type": "reference-only",
+    "type": "book-index",
     "label": {
-      "zh": "书目核验",
-      "en": "Bibliographic verification"
+      "zh": "书目记录",
+      "en": "Bibliographic record"
     },
     "title": {
-      "zh": "Open Library 元数据检索结果",
-      "en": "Open Library metadata search result"
+      "zh": "Open Library 书目检索结果",
+      "en": "Open Library bibliographic search result"
     },
     "url": "https://openlibrary.org/search.json?title=The%20Shape%20of%20Automation%20for%20Men%20and%20Management&author=Herbert%20Simon",
     "language": "en",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-herbert-a-simon-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "人物参考",
-      "en": "Biographical reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "赫伯特·A·西蒙概览",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-nobel-prize-simon-facts",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
-      "zh": "机构人物资料",
-      "en": "Institutional profile"
+      "zh": "人物资料",
+      "en": "Profile"
     },
     "title": {
       "zh": "诺贝尔奖西蒙资料",
@@ -73,14 +76,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-progress-in-artificial-intelligence-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手史料",
-      "en": "Secondary history"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "人工智能进展概览",
@@ -92,6 +96,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   }
 ]

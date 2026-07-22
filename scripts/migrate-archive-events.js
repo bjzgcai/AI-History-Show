@@ -11,6 +11,13 @@ const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const STORYLINES_DIR = path.join(ROOT, 'archive', 'storylines');
 const REPORT_PATH = path.join(ROOT, 'reports', 'archive-migration-progress.md');
 const GENERATED_DATA = path.join(ROOT, 'milestones-data.js');
+const {
+    sourceLabel,
+    sourcePurpose,
+    sourceReliability,
+    sourceTitle,
+    sourceTypeFromLegacy
+} = require('./archive-source-normalizer.js');
 
 const FUSION_BY_AI100 = new Map(FUSIONS.map((fusion) => [fusion.ai100, fusion]));
 
@@ -98,24 +105,6 @@ function regionFromLocation(location) {
     );
 }
 
-function sourceType(source) {
-    const value = `${text(source && source.type, 'en')} ${text(source && source.label, 'en')}`.toLowerCase();
-    if (value.includes('paper') || value.includes('论文')) return 'paper';
-    if (value.includes('blog')) return 'official-page';
-    if (value.includes('code') || value.includes('github')) return 'code';
-    if (value.includes('book')) return 'book';
-    if (value.includes('video')) return 'video';
-    if (value.includes('archive')) return 'archive';
-    if (value.includes('official') || value.includes('project')) return 'project-page';
-    return 'reference-only';
-}
-
-function sourceReliability(index, type) {
-    if (index === 0 && ['paper', 'official-page', 'project-page'].includes(type)) return 'primary';
-    if (['paper', 'official-page', 'project-page', 'code'].includes(type)) return 'secondary';
-    return 'reference-only';
-}
-
 function assetRole(assetPath, index) {
     const value = String(assetPath || '').toLowerCase();
     if (value.includes('people') || value.includes('figures') || value.includes('portrait'))
@@ -139,11 +128,13 @@ function ensureSourceFallback(sources, legacyKey) {
     return [
         {
             id: 'source-legacy-event-record',
-            type: 'reference-only',
+            type: 'internal-record',
+            label: sourceLabel('internal-record'),
             title: localized(`Legacy event record for ${legacyKey}`),
             url: 'https://www.benchcouncil.org/',
             language: 'en',
-            reliability: 'reference-only',
+            purpose: sourcePurpose('internal-record'),
+            reliability: sourceReliability('internal-record'),
             notes: {
                 zh: '由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。',
                 en: 'Temporary source placeholder generated from the legacy event record; add primary papers or original sources later.'
@@ -158,17 +149,18 @@ function buildSources(milestone, legacyKey) {
     ).filter(Boolean);
     const seen = new Set();
     const sources = rawSources.map((source, index) => {
-        const label = localized(source.label || source.title || source.url || `Source ${index + 1}`);
-        const type = sourceType(source);
-        const id = uniqueId(`source-${slug(text(label, 'en') || text(label, 'zh'), `source-${index + 1}`)}`, seen);
+        const type = sourceTypeFromLegacy(source.type, source.label, source.title, source.url);
+        const title = sourceTitle(type, localized(source.title || source.label || source.url || `Source ${index + 1}`));
+        const id = uniqueId(`source-${slug(text(title, 'en') || text(title, 'zh'), `source-${index + 1}`)}`, seen);
         return {
             id,
             type,
-            label: localized(source.type || type, type),
-            title: label,
+            label: sourceLabel(type),
+            title,
             url: source.url || 'https://www.benchcouncil.org/',
             language: 'en',
-            reliability: source.reliability || sourceReliability(index, type),
+            purpose: sourcePurpose(type, index, source.type, source.label, source.title),
+            reliability: sourceReliability(type, index, source.reliability),
             notes: {
                 zh: '由 legacy generated milestone 的 achievement sources 迁移。',
                 en: 'Migrated from generated legacy milestone achievement sources.'

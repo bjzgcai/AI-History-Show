@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "贝叶斯网络",
+      "zh": "《贝叶斯网络》",
       "en": "Bayesian Networks"
     },
     "url": "https://ftp.cs.ucla.edu/pub/stat_ser/R246.pdf",
@@ -16,30 +16,32 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-judea-pearl-homepage",
-    "type": "reference-only",
+    "type": "personal-page",
     "label": {
       "zh": "个人主页",
-      "en": "Homepage"
+      "en": "Personal homepage"
     },
     "title": {
-      "zh": "朱迪亚·珀尔 homepage",
-      "en": "Judea Pearl homepage"
+      "zh": "朱迪亚·珀尔个人主页",
+      "en": "Judea Pearl personal homepage"
     },
     "url": "https://bayes.cs.ucla.edu/home.htm",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-judea-pearl-ucla-samueli",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
       "zh": "人物资料",
       "en": "Profile"
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

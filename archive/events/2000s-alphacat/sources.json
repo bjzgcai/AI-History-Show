@@ -3,8 +3,8 @@
     "id": "source-icga-chinese-chess-page",
     "type": "archive",
     "label": {
-      "zh": "赛事档案",
-      "en": "Tournament archive"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "ICGA 中国象棋页面",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-comparison-training-for-computer-chinese-chess",
@@ -26,7 +27,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "面向计算机中国象棋的比较训练",
+      "zh": "《面向计算机中国象棋的比较训练》",
       "en": "Comparison Training for Computer Chinese Chess"
     },
     "url": "https://arxiv.org/abs/1801.07411",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-xiangqi-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "规则与背景",
-      "en": "Game rules / background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "中国象棋概览",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

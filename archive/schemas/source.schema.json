@@ -5,22 +5,52 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "type", "title"],
+    "required": [
+      "id",
+      "type",
+      "label",
+      "title",
+      "purpose",
+      "reliability"
+    ],
     "properties": {
       "id": {
         "$ref": "shared.schema.json#/$defs/archiveId"
       },
       "type": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "internal-record",
+          "paper",
+          "paper-page",
+          "paper-file",
+          "paper-index",
+          "book",
+          "book-page",
+          "book-file",
+          "book-index",
+          "documentation",
+          "code",
+          "project-page",
+          "official-page",
+          "personal-page",
+          "profile",
+          "archive",
+          "article",
+          "news",
+          "report",
+          "encyclopedia-entry",
+          "image-source",
+          "dataset",
+          "statement",
+          "thesis"
+        ]
       },
       "label": {
-        "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
+        "$ref": "shared.schema.json#/$defs/localizedText"
       },
       "title": {
-        "oneOf": [
-          { "type": "string", "minLength": 1 },
-          { "$ref": "shared.schema.json#/$defs/localizedText" }
-        ]
+        "$ref": "shared.schema.json#/$defs/localizedText"
       },
       "authors": {
         "type": "array",
@@ -30,8 +60,12 @@
       },
       "year": {
         "oneOf": [
-          { "type": "integer" },
-          { "type": "string" }
+          {
+            "type": "integer"
+          },
+          {
+            "type": "string"
+          }
         ]
       },
       "url": {
@@ -46,9 +80,34 @@
       "language": {
         "type": "string"
       },
+      "purpose": {
+        "type": "string",
+        "enum": [
+          "core-evidence",
+          "precursor",
+          "follow-up",
+          "alternate-access",
+          "background",
+          "historical-context",
+          "biography",
+          "image-provenance",
+          "implementation",
+          "dataset-access",
+          "contemporary-reporting",
+          "official-statement",
+          "reporting",
+          "bibliographic-verification",
+          "migration-only"
+        ]
+      },
       "reliability": {
         "type": "string",
-        "enum": ["primary", "secondary", "tertiary", "reference-only"]
+        "enum": [
+          "primary",
+          "secondary",
+          "tertiary",
+          "reference-only"
+        ]
       },
       "notes": {
         "$ref": "shared.schema.json#/$defs/optionalLocalizedText"
@@ -58,9 +117,21 @@
       }
     },
     "anyOf": [
-      { "required": ["url"] },
-      { "required": ["doi"] },
-      { "required": ["archiveUrl"] }
+      {
+        "required": [
+          "url"
+        ]
+      },
+      {
+        "required": [
+          "doi"
+        ]
+      },
+      {
+        "required": [
+          "archiveUrl"
+        ]
+      }
     ],
     "additionalProperties": true
   }

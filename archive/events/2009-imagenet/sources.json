@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "ImageNet：大规模层级图像数据库",
+      "zh": "《ImageNet：大规模层级图像数据库》",
       "en": "ImageNet: A Large-Scale Hierarchical Image Database"
     },
     "url": "https://ieeexplore.ieee.org/document/5206848",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-imagenet-project-website",
     "type": "project-page",
     "label": {
-      "zh": "项目",
-      "en": "Project"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "ImageNet project website",
@@ -35,13 +36,14 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-stanford-profile-fei-fei-li",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
-      "zh": "人物",
+      "zh": "人物资料",
       "en": "Profile"
     },
     "title": {
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

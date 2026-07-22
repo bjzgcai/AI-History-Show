@@ -1,7 +1,7 @@
 [
   {
     "id": "source-guardian-on-musk-remarks",
-    "type": "reference-only",
+    "type": "news",
     "label": {
       "zh": "新闻报道",
       "en": "News report"
@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "contemporary-reporting"
   },
   {
     "id": "source-bbc-on-hawking-warning",
-    "type": "reference-only",
+    "type": "news",
     "label": {
       "zh": "新闻报道",
       "en": "News report"
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "contemporary-reporting"
   },
   {
     "id": "source-future-of-life-institute-open-letter",
-    "type": "reference-only",
+    "type": "statement",
     "label": {
-      "zh": "公开信",
-      "en": "Public letter"
+      "zh": "声明",
+      "en": "Statement"
     },
     "title": {
       "zh": "未来生命研究所公开信",
@@ -54,7 +56,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "official-statement"
   },
   {
     "id": "source-expert-ai-forecast-survey",
@@ -64,7 +67,7 @@
       "en": "Research paper"
     },
     "title": {
-      "zh": "AI 专家预测调查",
+      "zh": "《AI 专家预测调查》",
       "en": "Expert AI forecast survey"
     },
     "url": "https://arxiv.org/abs/1705.08807",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

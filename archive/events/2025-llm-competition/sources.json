@@ -1,7 +1,7 @@
 [
   {
     "id": "source-legacy-event-record",
-    "type": "reference-only",
+    "type": "internal-record",
     "title": {
       "zh": "Legacy event record for 2025-llm-competition",
       "en": "Legacy event record for 2025-llm-competition"
@@ -12,6 +12,11 @@
     "notes": {
       "zh": "由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。",
       "en": "Temporary source placeholder generated from the legacy event record; add primary papers or original sources later."
-    }
+    },
+    "label": {
+      "zh": "内部记录",
+      "en": "Internal record"
+    },
+    "purpose": "migration-only"
   }
 ]

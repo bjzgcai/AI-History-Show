@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-cvf-open-access-paper-page",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "会议论文",
-      "en": "Conference paper"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
       "zh": "CVF 开放论文页面",
@@ -35,11 +36,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-cvpr-full-paper-pdf",
-    "type": "paper",
+    "type": "paper-file",
     "label": {
       "zh": "论文 PDF",
       "en": "Paper PDF"
@@ -54,25 +56,27 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-kaiming-he-profile-at-mit-csail",
-    "type": "reference-only",
+    "type": "personal-page",
     "label": {
-      "zh": "人物",
-      "en": "People"
+      "zh": "个人主页",
+      "en": "Personal homepage"
     },
     "title": {
-      "zh": "MIT CSAIL 的何恺明资料",
-      "en": "Kaiming He profile at MIT CSAIL"
+      "zh": "何恺明个人主页",
+      "en": "Kaiming He personal homepage"
     },
     "url": "https://people.csail.mit.edu/kaiming/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

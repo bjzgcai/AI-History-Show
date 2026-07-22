@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "群魔殿：一种学习范式",
+      "zh": "《群魔殿：一种学习范式》",
       "en": "Pandemonium: A Paradigm for Learning"
     },
     "url": "https://doi.org/10.1007/978-1-4899-1221-6_4",
@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-pandemonium-architecture-image",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -35,11 +36,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   },
   {
     "id": "source-oliver-selfridge-portrait",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -54,13 +56,14 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   },
   {
     "id": "source-oliver-selfridge-obituary-the-guardian",
-    "type": "reference-only",
+    "type": "news",
     "label": {
-      "zh": "人物资料",
+      "zh": "讣告",
       "en": "Obituary"
     },
     "title": {
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

@@ -3,8 +3,8 @@
     "id": "source-astounding-march-1942-archive",
     "type": "archive",
     "label": {
-      "zh": "杂志档案",
-      "en": "Magazine archive"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "《惊奇科幻》1942 年 3 月号档案",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-asimov-online-three-laws-faq",
-    "type": "reference-only",
+    "type": "article",
     "label": {
-      "zh": "作者资料 FAQ",
-      "en": "Author FAQ"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "Asimov Online 三定律 FAQ",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-runaround-story-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "《转圈圈》故事概览",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-science-fiction-encyclopedia-asimov",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "作者参考",
-      "en": "Author reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "《科幻百科全书》阿西莫夫条目",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

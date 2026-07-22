@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "感知机：大脑中信息存储与组织的概率模型",
+      "zh": "《感知机：大脑中信息存储与组织的概率模型》",
       "en": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain"
     },
     "url": "https://doi.org/10.1037/h0042519",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-cornell-chronicle-perceptron-retrospective",
-    "type": "reference-only",
+    "type": "news",
     "label": {
-      "zh": "历史资料",
-      "en": "History"
+      "zh": "新闻报道",
+      "en": "News report"
     },
     "title": {
       "zh": "康奈尔大学 Chronicle perceptron retrospective",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-smithsonian-mark-i-perceptron-object-record",
-    "type": "reference-only",
+    "type": "archive",
     "label": {
-      "zh": "博物馆",
-      "en": "Museum"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "Smithsonian Mark I Perceptron object record",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   }
 ]

@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-iclr-openreview-record",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "会议论文",
-      "en": "Conference paper"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
       "zh": "ICLR OpenReview 记录",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-google-ai-automl-overview",
-    "type": "reference-only",
+    "type": "article",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "Google AI AutoML 概览",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

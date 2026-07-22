@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "通过 Lasso 进行回归收缩与选择",
+      "zh": "《通过 Lasso 进行回归收缩与选择》",
       "en": "Regression Shrinkage and Selection via the Lasso"
     },
     "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1996.tb02080.x",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-scikit-learn-lasso",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
       "zh": "模型文档",
-      "en": "Model docs"
+      "en": "Model documentation"
     },
     "title": {
       "zh": "scikit-learn Lasso",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-glmnet-project",
     "type": "project-page",
     "label": {
-      "zh": "工具包",
-      "en": "Toolkit"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "glmnet project",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]
