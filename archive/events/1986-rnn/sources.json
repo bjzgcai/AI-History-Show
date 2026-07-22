@@ -1,5 +1,45 @@
 [
   {
+    "id": "source-jordan-serial-order-report",
+    "type": "report",
+    "title": {
+      "zh": "《序列顺序：并行分布式处理方法》",
+      "en": "Serial Order: A Parallel Distributed Processing Approach"
+    },
+    "url": "https://cseweb.ucsd.edu/~gary/PAPER-SUGGESTIONS/jordan-TR-8604-1986.pdf",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "迈克尔·乔丹 1986 年关于输出反馈循环网络的技术报告。",
+      "en": "Michael Jordan's 1986 technical report on a recurrent network with feedback from the output state."
+    },
+    "label": {
+      "zh": "报告",
+      "en": "Report"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-elman-finding-structure-in-time",
+    "type": "paper",
+    "title": {
+      "zh": "《在时间中发现结构》",
+      "en": "Finding Structure in Time"
+    },
+    "url": "https://doi.org/10.1016/0010-0277(90)90002-E",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "杰弗里·埃尔曼 1990 年关于简单循环网络与上下文单元的论文。",
+      "en": "Jeffrey Elman's 1990 paper on simple recurrent networks and context units."
+    },
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "purpose": "follow-up"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {

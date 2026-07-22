@@ -3,24 +3,26 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "AI Feynman：自主科学规律发现 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "AI Feynman: Autonomous Discovery of Scientific Laws is an AI history milestone in the current legacy presentation."
+      "zh": "2019 年公开的 AI Feynman 将神经网络拟合、物理先验与符号搜索结合，用于从数据中恢复解析方程。",
+      "en": "AI Feynman, released in 2019, combined neural-network fitting, physics-inspired priors, and symbolic search to recover analytic equations from data."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-ai-feynman-science-advances",
+      "source-ai-feynman-arxiv"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
-      "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery."
+      "zh": "论文报告 AI Feynman 解出 100 个费曼讲义测试方程，并在更困难测试集上达到 90% 成功率，而对应基线为 15%。",
+      "en": "The paper reported that AI Feynman solved 100 Feynman Lectures test equations and reached a 90 percent success rate on a harder set, compared with a 15 percent baseline."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-ai-feynman-science-advances",
+      "source-ai-feynman-arxiv"
     ],
-    "status": "needs-source"
+    "status": "verified"
   }
 ]

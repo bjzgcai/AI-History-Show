@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-22 08:09
+// 生成时间: 2026-07-22 09:56
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -17761,27 +17761,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "感知机与连接主义 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "The Perceptron and Connectionism is an AI history milestone in the current legacy presentation."
+            "zh": "弗兰克·罗森布拉特从 1957 年起在康奈尔航空实验室发展感知机，并以 Mark I 感知机展示机器能够根据样本调整连接权重。",
+            "en": "Beginning in 1957, Frank Rosenblatt developed the perceptron at the Cornell Aeronautical Laboratory and demonstrated learning through adjustable connections in the Mark I Perceptron."
           },
           "sourceIds": [
             "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
             "source-cornell-chronicle-perceptron-retrospective"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
-            "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+            "zh": "感知机通过训练样本调整连接权重来学习线性分类边界，其理论与硬件演示成为连接主义、模式识别和后来神经网络研究的重要起点。",
+            "en": "The perceptron learned a linear classification boundary by adjusting connection weights from examples, and its theory and hardware demonstration became an important starting point for connectionism, pattern recognition, and later neural-network research."
           },
           "sourceIds": [
             "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
             "source-cornell-chronicle-perceptron-retrospective"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -31959,27 +31959,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "卷积神经网络与 LeNet 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Convolutional Networks and LeNet is an AI history milestone in the current legacy presentation."
+            "zh": "1989 年，扬·勒昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
+            "en": "In 1989, Yann LeCun and collaborators demonstrated convolutional networks trained by backpropagation for handwritten ZIP-code recognition."
           },
           "sourceIds": [
             "source-backpropagation-applied-to-handwritten-zip-code-recognition",
             "source-lenet-5-demos-and-documentation"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
-            "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+            "zh": "卷积网络通过局部连接和共享权重减少参数，并把特征提取与分类整合进一个端到端学习系统；这条路线后来发展为 LeNet-5。",
+            "en": "Convolutional networks reduced parameters through local connections and shared weights while combining feature extraction and classification in one end-to-end learning system; the line later matured into LeNet-5."
           },
           "sourceIds": [
             "source-backpropagation-applied-to-handwritten-zip-code-recognition",
             "source-lenet-5-demos-and-documentation"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -35195,27 +35195,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "LSTM 与门控记忆 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "LSTM and Gated Memory is an AI history milestone in the current legacy presentation."
+            "zh": "1997 年，塞普·霍赫赖特和于尔根·施密德胡伯提出 LSTM，以门控记忆单元改善循环网络中的长时依赖学习。",
+            "en": "In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced LSTM, using gated memory cells to improve long-range learning in recurrent networks."
           },
           "sourceIds": [
             "source-long-short-term-memory",
             "source-author-hosted-lstm-paper-pdf"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>",
-            "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant.</p>"
+            "zh": "原始 LSTM 使用记忆单元、输入门和输出门维持较稳定的误差信号；遗忘门由后续版本加入，使模型能够主动清除状态。",
+            "en": "The original LSTM used memory cells with input and output gates to preserve learning signals; a forget gate was introduced in a later version so the model could actively clear state."
           },
           "sourceIds": [
             "source-long-short-term-memory",
             "source-author-hosted-lstm-paper-pdf"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -38075,27 +38075,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "AlphaFold2 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "AlphaFold2 is an AI history milestone in the current legacy presentation."
+            "zh": "AlphaFold2 在 2020 年 CASP14 中显著提高蛋白质结构预测精度，并于 2021 年在 Nature 发表完整方法。",
+            "en": "AlphaFold2 substantially improved protein-structure prediction at CASP14 in 2020, with the complete method published in Nature in 2021."
           },
           "sourceIds": [
             "source-highly-accurate-protein-structure-prediction-with-alphafold",
             "source-deepmind-alphafold-page"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
-            "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+            "zh": "AlphaFold2 结合多序列比对、注意力表示和端到端三维结构优化，在许多目标上达到接近实验结构的预测精度。",
+            "en": "AlphaFold2 combined multiple-sequence alignments, attention-based representations, and end-to-end three-dimensional refinement to reach accuracy close to experimental structures for many targets."
           },
           "sourceIds": [
             "source-highly-accurate-protein-structure-prediction-with-alphafold",
             "source-deepmind-alphafold-page"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -50515,8 +50515,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（约翰·麦卡锡）、马文·明斯基（马文·明斯基）、克劳德·香农（克劳德·香农）、纳撒尼尔·罗切斯特（纳撒尼尔·罗切斯特） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"人工智能\" 这个名称",
-      "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field."
+      "zh": "<p>1955 年 8 月 31 日，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特和克劳德·香农共同提交《达特茅斯夏季人工智能研究项目提案》，计划在 1956 年夏季于达特茅斯学院开展一项为期两个月、约十人参加的研究。提案以一个鲜明的设想为起点：学习以及智能的其他特征，原则上都可以被精确描述，从而让机器加以模拟。它也使“人工智能”成为这项新研究计划的正式名称。</p><p>提案没有把人工智能限定为某一种算法，而是列出自动计算机、机器使用语言、神经网络、计算复杂度、自我改进、抽象，以及随机性与创造力等七类问题。1956 年的研讨并未立即产生统一理论或正式总结报告，但它把此前分散在逻辑、信息论、神经建模和计算机研究中的问题组织成一个共同议程。达特茅斯项目的重要性因此不仅在于一次会议，更在于它为后来数十年的 AI 研究建立了可以持续扩展的学科名称和问题框架。</p>",
+      "en": "<p>On August 31, 1955, John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon submitted <em>A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence</em>. It called for a two-month study of about ten participants at Dartmouth College in the summer of 1956. The proposal began from a bold conjecture: every aspect of learning or other feature of intelligence could, in principle, be described precisely enough for a machine to simulate it. It also established “artificial intelligence” as the formal name of this new research program.</p><p>The proposal did not define AI as a single algorithm. Instead, it set out seven areas of inquiry: automatic computers, machine use of language, neural networks, the complexity of computation, self-improvement, abstraction, and randomness and creativity. The 1956 workshop did not immediately produce a unified theory or a formal final report, but it organized questions previously scattered across logic, information theory, neural modeling, and computer research into a shared agenda. Its lasting importance lies not only in the meeting itself, but in providing a disciplinary name and an expandable framework for decades of AI research.</p>"
     },
     "figures": [
       {
@@ -50698,8 +50698,58 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-dartmouth-proposal",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "《达特茅斯夏季人工智能研究项目提案》",
+            "en": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence"
+          },
+          "url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-dartmouth-history",
+          "type": {
+            "zh": "机构页面",
+            "en": "Institution page"
+          },
+          "label": {
+            "zh": "人工智能在达特茅斯得名",
+            "en": "Artificial Intelligence (AI) Coined at Dartmouth"
+          },
+          "url": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth",
+          "purpose": "historical-context",
+          "reliability": "secondary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-ieee-dartmouth-workshop",
+          "type": {
+            "zh": "文章",
+            "en": "Article"
+          },
+          "label": {
+            "zh": "开启人工智能的思想聚会",
+            "en": "The Meeting of the Minds That Launched AI"
+          },
+          "url": "https://spectrum.ieee.org/dartmouth-ai-workshop",
+          "purpose": "historical-context",
+          "reliability": "secondary",
+          "sourceType": "article"
+        }
+      ],
+      "sourceIds": [
+        "source-dartmouth-proposal",
+        "source-dartmouth-history",
+        "source-ieee-dartmouth-workshop"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -50709,25 +50759,28 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "达特茅斯会议 - AI正式诞生！ 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Dartmouth Workshop - AI Is Born! is an AI history milestone in the current legacy presentation."
+            "zh": "1955 年的达特茅斯提案由约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特和克劳德·香农共同提出，计划于 1956 年夏季在达特茅斯学院开展为期两个月、约十人参与的人工智能研究。",
+            "en": "The 1955 Dartmouth proposal, authored by John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon, proposed a two-month artificial-intelligence study of about ten participants at Dartmouth College in the summer of 1956."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-dartmouth-proposal",
+            "source-dartmouth-history"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（约翰·麦卡锡）、马文·明斯基（马文·明斯基）、克劳德·香农（克劳德·香农）、纳撒尼尔·罗切斯特（纳撒尼尔·罗切斯特） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"人工智能\" 这个名称",
-            "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field."
+            "zh": "提案把人工智能建立在一个核心设想上：学习以及智能的其他特征原则上可以被精确描述，从而由机器模拟；它同时列出了语言、神经网络、计算复杂度、自我改进、抽象以及随机性与创造力等研究议题。",
+            "en": "The proposal rested artificial intelligence on a central conjecture: every aspect of learning or other feature of intelligence could in principle be described precisely enough for a machine to simulate it. It also identified research topics including language, neural networks, computational complexity, self-improvement, abstraction, and randomness and creativity."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-dartmouth-proposal",
+            "source-dartmouth-history",
+            "source-ieee-dartmouth-workshop"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -50747,7 +50800,8 @@ const milestones = [
           "en": "The Dartmouth project mattered not just as a summer workshop, but because it brought language, abstraction, learning, neural networks, and self-improvement into one research agenda for the first time, giving scattered lines of work a shared problem space."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-dartmouth-proposal",
+          "source-dartmouth-history"
         ]
       },
       {
@@ -50761,7 +50815,9 @@ const milestones = [
           "en": "The meeting did not immediately produce a unified theory, but it achieved something more durable: it turned \"artificial intelligence\" from a phrase in a proposal into a disciplinary label that could keep attracting researchers, funding, and public imagination."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-dartmouth-proposal",
+          "source-dartmouth-history",
+          "source-ieee-dartmouth-workshop"
         ]
       }
     ],
@@ -50849,8 +50905,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2012年，AlexNet 以巨大优势赢得 ImageNet，使深度卷积网络成为现代计算机视觉的中心。深度学习发展线强调数据、GPU 算力、ReLU、dropout 和工程规模共同发挥作用；AI100 资料则把这一事件锚定在 NeurIPS 论文与 ImageNet 挑战赛中，说明这个结果如何让整个领域看见规模化训练的力量。</p>",
-      "en": "<p>In 2012, AlexNet won ImageNet by a large margin and made deep convolutional networks the center of modern computer vision. The deep-learning storyline stresses the combined force of data, GPU computation, ReLU, dropout, and engineering scale; the AI100 account anchors the same event in the NeurIPS paper and the ImageNet challenge, where the result made scale visible to the whole field.</p>"
+      "zh": "<p>2012 年，亚历克斯·克里泽夫斯基、伊利亚·苏茨克维和杰弗里·辛顿用 AlexNet 赢得 ImageNet 大规模视觉识别挑战赛。论文报告的 top-5 测试错误率为 15.3%，明显低于第二名的 26.2%，让深度卷积网络的优势第一次在统一的大型基准上变得无法忽视。</p><p>AlexNet 在约 120 万张训练图像上训练约 6000 万个参数，并结合 GPU、ReLU、数据增强和 dropout。它的突破并非来自单一新公式，而是把算法、数据、算力和工程实现组织成可扩展系统。此后，计算机视觉迅速从手工特征转向端到端表示学习，AlexNet 也成为深度学习复兴的标志性节点。</p>",
+      "en": "<p>In 2012, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton won the ImageNet Large Scale Visual Recognition Challenge with AlexNet. Their paper reported a 15.3 percent top-5 test error, far below the 26.2 percent achieved by the second-best entry, making the advantage of deep convolutional networks impossible to ignore on a common large-scale benchmark.</p><p>AlexNet trained roughly 60 million parameters on about 1.2 million images and combined GPUs, ReLU activations, data augmentation, and dropout. Its breakthrough was not one isolated formula, but a scalable system joining algorithms, data, compute, and implementation. Computer vision rapidly shifted from hand-engineered features toward end-to-end representation learning, making AlexNet a defining event in the deep-learning revival.</p>"
     },
     "figures": [
       {
@@ -51364,8 +51420,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
-      "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+      "zh": "<p>1957 年，弗兰克·罗森布拉特在康奈尔航空实验室开展感知机研究，并在随后发表的论文中把它描述为一种受神经系统启发的信息存储与组织模型。感知机根据训练样本调整连接权重，使机器不必依赖人工编写的完整规则，也能学习把输入模式分到不同类别。</p><p>Mark I 感知机随后把这一思想做成带有感光输入和可调连接的实验装置。它的能力仍受单层线性分类边界限制，却首次以醒目的理论和硬件演示表明“机器可以从样本中学习”，由此成为连接主义、模式识别和后来神经网络研究的重要起点。</p>",
+      "en": "<p>Beginning in 1957, Frank Rosenblatt developed the perceptron at the Cornell Aeronautical Laboratory and later described it as a brain-inspired model for information storage and organization. By adjusting connection weights from training examples, a perceptron could learn to assign input patterns to categories without requiring a complete set of hand-written decision rules.</p><p>The Mark I Perceptron soon turned the idea into an experimental machine with a light-sensing input and adjustable connections. Its single-layer decision boundary was limited to linearly separable problems, but the project gave a striking theoretical and hardware demonstration that a machine could learn from examples. It became a foundational reference for connectionism, pattern recognition, and later neural-network research.</p>"
     },
     "figures": [
       {
@@ -51675,27 +51731,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "感知机与连接主义 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "The Perceptron and Connectionism is an AI history milestone in the current legacy presentation."
+            "zh": "弗兰克·罗森布拉特从 1957 年起在康奈尔航空实验室发展感知机，并以 Mark I 感知机展示机器能够根据样本调整连接权重。",
+            "en": "Beginning in 1957, Frank Rosenblatt developed the perceptron at the Cornell Aeronautical Laboratory and demonstrated learning through adjustable connections in the Mark I Perceptron."
           },
           "sourceIds": [
             "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
             "source-cornell-chronicle-perceptron-retrospective"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
-            "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+            "zh": "感知机通过训练样本调整连接权重来学习线性分类边界，其理论与硬件演示成为连接主义、模式识别和后来神经网络研究的重要起点。",
+            "en": "The perceptron learned a linear classification boundary by adjusting connection weights from examples, and its theory and hardware demonstration became an important starting point for connectionism, pattern recognition, and later neural-network research."
           },
           "sourceIds": [
             "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
             "source-cornell-chronicle-perceptron-retrospective"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -51911,8 +51967,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>",
-      "en": "<p>In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems.</p>"
+      "zh": "<p>2017 年，阿希什·瓦斯瓦尼等人在《Attention Is All You Need》中提出 Transformer。它用多头自注意力比较序列中不同位置的 query、key 和 value，并配合前馈网络、残差连接和位置编码，构成不依赖循环或卷积的编码器—解码器。</p><p>自注意力允许训练时并行处理整段序列，缩短远距离信息之间的计算路径。原论文在机器翻译基准上取得更高质量，同时显著减少训练成本。Transformer 随后成为 BERT、GPT、视觉 Transformer、多模态基础模型和现代生成式 AI 的共同架构基础。</p>",
+      "en": "<p>In 2017, Ashish Vaswani and colleagues introduced the Transformer in <em>Attention Is All You Need</em>. Multi-head self-attention compared queries, keys, and values across sequence positions, while feed-forward layers, residual connections, and positional encodings formed an encoder-decoder architecture without recurrence or convolution.</p><p>Self-attention allowed whole sequences to be processed in parallel during training and shortened the computational path between distant pieces of information. The original paper achieved stronger machine-translation quality with substantially lower training cost. The Transformer subsequently became the shared architectural foundation of BERT, GPT, vision transformers, multimodal foundation models, and modern generative AI.</p>"
     },
     "figures": [
       {
@@ -52444,8 +52500,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
-      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+      "zh": "<p>1969 年，马文·明斯基和西摩·帕普特出版《感知机：计算几何导论》，用严格分析说明一类单层感知机在连接范围和结构受到限制时，无法表示奇偶性、连通性等任务。后来常用 XOR 来概括这种线性不可分限制，但原书讨论的范围和假设比这一口号更具体。</p><p>这本书并没有证明所有多层神经网络都不可行；真正的困难是当时尚缺少有效训练隐藏层的方法，也缺少足够的计算资源和数据。它与早期承诺未兑现、研究资助转向等因素共同削弱了连接主义热潮，使神经网络在一段时期内退居边缘。把这一转折称为“AI 寒冬”时，应理解为多种技术与制度条件叠加的结果，而不是一本书单独终结了整个领域。</p>",
+      "en": "<p>In 1969, Marvin Minsky and Seymour Papert published <em>Perceptrons: An Introduction to Computational Geometry</em>. Their mathematical analysis showed that certain single-layer perceptrons, under specific restrictions on connectivity and receptive fields, could not represent tasks involving parity or connectedness. XOR later became the common shorthand for this problem of linear inseparability, although the book's arguments and assumptions were more specific.</p><p>The book did not prove that every multilayer neural network was impossible. The practical obstacle was that researchers still lacked an effective way to train hidden layers, along with sufficient computing power and data. Combined with unmet early promises and changes in research funding, these limitations weakened enthusiasm for connectionism. The resulting “AI winter” is therefore better understood as a convergence of technical and institutional factors, not as the consequence of one book alone.</p>"
     },
     "figures": [
       {
@@ -52562,8 +52618,42 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-perceptrons-book",
+          "type": {
+            "zh": "图书",
+            "en": "Book"
+          },
+          "label": {
+            "zh": "《感知机：计算几何导论》",
+            "en": "Perceptrons: An Introduction to Computational Geometry"
+          },
+          "url": "https://doi.org/10.7551/mitpress/4943.001.0001",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "book"
+        },
+        {
+          "id": "source-cornell-perceptron-retrospective",
+          "type": {
+            "zh": "新闻报道",
+            "en": "News report"
+          },
+          "label": {
+            "zh": "感知机比人工智能浪潮早了六十年",
+            "en": "Professor's Perceptron Paved the Way for AI, 60 Years Too Soon"
+          },
+          "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+          "purpose": "historical-context",
+          "reliability": "secondary",
+          "sourceType": "news"
+        }
+      ],
+      "sourceIds": [
+        "source-perceptrons-book",
+        "source-cornell-perceptron-retrospective"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -52573,25 +52663,26 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "第一次寒冬的到来 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "The First AI Winter Arrives is an AI history milestone in the current legacy presentation."
+            "zh": "1969 年，马文·明斯基和西摩·帕普特出版《感知机：计算几何导论》，分析了受限单层感知机无法表示的一类任务。",
+            "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, analyzing classes of tasks that restricted single-layer perceptrons could not represent."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-perceptrons-book"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
-            "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+            "zh": "《Perceptrons》揭示的表示限制，与隐藏层训练方法、算力和数据不足以及资助方向变化共同削弱了早期连接主义热潮；它并未证明所有多层神经网络都不可行。",
+            "en": "The representational limits described in Perceptrons combined with missing hidden-layer training methods, limited computing resources and data, and shifts in funding to weaken early connectionism; the book did not prove that all multilayer networks were impossible."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-perceptrons-book",
+            "source-cornell-perceptron-retrospective"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -52611,7 +52702,8 @@ const milestones = [
           "en": "What changed the field in Perceptrons was that it clarified exactly which tasks single-layer perceptrons could not solve. Researchers then shifted attention away from the neural-network boom toward approaches that were easier to formalize and prove."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-perceptrons-book",
+          "source-cornell-perceptron-retrospective"
         ]
       },
       {
@@ -52625,7 +52717,8 @@ const milestones = [
           "en": "The winter did not mean neural networks had failed forever. It meant their promise was revalued under the computing and algorithmic limits of the time. The later return of backpropagation, LSTM, and large-scale compute essentially filled in the missing training mechanisms and resources."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-perceptrons-book",
+          "source-cornell-perceptron-retrospective"
         ]
       }
     ],
@@ -52713,8 +52806,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。",
-      "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks."
+      "zh": "<p>1986 年，戴维·鲁梅尔哈特、杰弗里·辛顿和罗纳德·威廉姆斯在 Nature 发表《通过误差反向传播学习表示》。论文说明如何计算输出误差对多层网络中各个权重的影响，再把误差信号逐层反向传递，用梯度下降同时调整输出层和隐藏层参数。</p><p>反向传播并非在 1986 年才首次出现，但这篇论文用清晰算法和实验展示了隐藏单元能够自行形成有用的内部表示，使多层神经网络训练成为可复现的方法。它重新激活了连接主义研究，并为后来卷积网络、循环网络和深度学习的大规模优化提供了共同的训练基础。</p>",
+      "en": "<p>In 1986, David Rumelhart, Geoffrey Hinton, and Ronald Williams published <em>Learning Representations by Back-Propagating Errors</em> in Nature. The paper explained how to calculate the contribution of each weight to an output error, propagate that signal backward through successive layers, and use gradient descent to adjust parameters in both the output and hidden layers.</p><p>Backpropagation had earlier precursors, but this paper gave the method a clear algorithmic presentation and experimental evidence that hidden units could learn useful internal representations. It helped revive connectionist research and established a common training foundation for later convolutional networks, recurrent networks, and large-scale deep learning.</p>"
     },
     "figures": [
       {
@@ -52883,8 +52976,42 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-nature-backpropagation-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《通过误差反向传播学习表示》",
+            "en": "Learning Representations by Back-Propagating Errors"
+          },
+          "url": "https://doi.org/10.1038/323533a0",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-hinton-backpropagation-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "《通过误差反向传播学习表示》作者存档 PDF",
+            "en": "Author-Hosted PDF of Learning Representations by Back-Propagating Errors"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+          "purpose": "alternate-access",
+          "reliability": "secondary",
+          "sourceType": "paper-file"
+        }
+      ],
+      "sourceIds": [
+        "source-nature-backpropagation-paper",
+        "source-hinton-backpropagation-pdf"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -52894,25 +53021,26 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "反向传播算法 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Backpropagation is an AI history milestone in the current legacy presentation."
+            "zh": "1986 年，戴维·鲁梅尔哈特、杰弗里·辛顿和罗纳德·威廉姆斯发表论文，系统展示了用误差反向传播训练多层神经网络。",
+            "en": "In 1986, David Rumelhart, Geoffrey Hinton, and Ronald Williams published a systematic demonstration of training multilayer neural networks by backpropagating errors."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-nature-backpropagation-paper"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。",
-            "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks."
+            "zh": "该方法把输出误差的梯度逐层传回网络，使隐藏层权重能够从数据中学习内部表示，并成为后来深度神经网络的核心训练机制。",
+            "en": "The method propagated output-error gradients through successive layers so hidden-layer weights could learn internal representations from data, becoming a core training mechanism for later deep neural networks."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-nature-backpropagation-paper",
+            "source-hinton-backpropagation-pdf"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -52932,7 +53060,7 @@ const milestones = [
           "en": "The key to backpropagation was not merely sending errors backward. It embedded every layer's parameters in a unified differentiable computation graph, making representation learning a genuinely trainable engineering process for the first time."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-nature-backpropagation-paper"
         ]
       },
       {
@@ -52946,7 +53074,8 @@ const milestones = [
           "en": "Its foundation for the later deep-learning revival was to turn the question of what hidden layers can learn from a hand-design problem into a data-driven one. That step moved neural networks from conceptual models toward a scalable methodology."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-nature-backpropagation-paper",
+          "source-hinton-backpropagation-pdf"
         ]
       }
     ],
@@ -53034,8 +53163,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
-      "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling."
+      "zh": "<p>循环神经网络通过把先前时间步的状态反馈到网络中，使当前输出同时依赖当前输入和历史信息。1986 年，迈克尔·乔丹提出一种把输出状态反馈到上下文单元的序列网络，用内部状态帮助模型学习动作或符号的先后关系。</p><p>1990 年，杰弗里·埃尔曼进一步展示了把隐藏层状态复制到上下文单元的简单循环网络，并用它从连续序列中发现词汇和时间结构。因此，今天常说的 Jordan 网络与 Elman 网络并非同年提出，而是共同确立了早期 RNN 的两种典型反馈方式。这类模型打开了序列学习道路，也暴露了梯度在长时间跨度上传播困难的问题，随后推动了 LSTM 等门控结构的发展。</p>",
+      "en": "<p>Recurrent neural networks feed information from earlier time steps back into the network, allowing the current output to depend on both the present input and an internal history. In 1986, Michael Jordan proposed a sequential network that returned output state to context units, using this internal state to learn the ordering of actions or symbols.</p><p>In 1990, Jeffrey Elman demonstrated a simple recurrent network that copied hidden-layer state into context units and used it to discover lexical and temporal structure in continuous sequences. The Jordan and Elman networks were therefore not introduced in the same year; together they established two influential feedback patterns for early RNNs. They opened a path to sequence learning while also exposing the difficulty of carrying gradients across long spans, motivating later gated designs such as LSTM.</p>"
     },
     "figures": [
       {
@@ -53139,8 +53268,42 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-jordan-serial-order-report",
+          "type": {
+            "zh": "报告",
+            "en": "Report"
+          },
+          "label": {
+            "zh": "《序列顺序：并行分布式处理方法》",
+            "en": "Serial Order: A Parallel Distributed Processing Approach"
+          },
+          "url": "https://cseweb.ucsd.edu/~gary/PAPER-SUGGESTIONS/jordan-TR-8604-1986.pdf",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "report"
+        },
+        {
+          "id": "source-elman-finding-structure-in-time",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《在时间中发现结构》",
+            "en": "Finding Structure in Time"
+          },
+          "url": "https://doi.org/10.1016/0010-0277(90)90002-E",
+          "purpose": "follow-up",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-jordan-serial-order-report",
+        "source-elman-finding-structure-in-time"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -53150,25 +53313,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "循环神经网络 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Recurrent Neural Networks is an AI history milestone in the current legacy presentation."
+            "zh": "迈克尔·乔丹在 1986 年提出输出反馈网络，杰弗里·埃尔曼在 1990 年展示隐藏状态反馈网络，两者成为早期 RNN 的代表结构。",
+            "en": "Michael Jordan proposed an output-feedback network in 1986, and Jeffrey Elman demonstrated a hidden-state feedback network in 1990; both became representative early RNN architectures."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-jordan-serial-order-report",
+            "source-elman-finding-structure-in-time"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
-            "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling."
+            "zh": "早期 RNN 通过上下文单元保存先前状态，使网络能够学习序列结构，但长时间跨度上的梯度传播仍然困难。",
+            "en": "Early RNNs stored previous state in context units so the network could learn sequence structure, while gradient propagation across long time spans remained difficult."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-jordan-serial-order-report",
+            "source-elman-finding-structure-in-time"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -53188,7 +53353,8 @@ const milestones = [
           "en": "The breakthrough in early RNNs was putting historical state explicitly back inside the network. Context units let the model look beyond the current input and compress earlier time steps into an internal memory it could read repeatedly."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-jordan-serial-order-report",
+          "source-elman-finding-structure-in-time"
         ]
       },
       {
@@ -53202,7 +53368,8 @@ const milestones = [
           "en": "They also exposed a long-running problem: sequence modeling was an early idea, but without stable training mechanisms these models struggled to learn long-range dependencies. That line of work was only truly reconnected later through LSTM."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-jordan-serial-order-report",
+          "source-elman-finding-structure-in-time"
         ]
       }
     ],
@@ -53290,8 +53457,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
-      "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+      "zh": "<p>1989 年，扬·勒昆及合作者发表手写邮政编码识别研究，证明带有局部连接和共享权重的多层网络可以用反向传播端到端训练。卷积层在图像不同位置重复使用同一组滤波器，既减少参数，也让模型能够识别平移后仍相似的笔画结构。</p><p>这条路线后来发展为 LeNet-5，并在银行支票和文档识别中得到实际应用。CNN 把特征提取与分类放进同一个学习系统，取代了大量手工设计视觉特征的步骤，为 AlexNet 之后的大规模图像识别奠定了直接的架构基础。</p>",
+      "en": "<p>In 1989, Yann LeCun and collaborators published a system for handwritten ZIP-code recognition, showing that a multilayer network with local connections and shared weights could be trained end to end with backpropagation. Convolutional layers reused the same filters across image locations, reducing the number of parameters while detecting similar strokes after small shifts.</p><p>This line of work later matured into LeNet-5 and practical systems for reading bank checks and other documents. CNNs placed feature extraction and classification inside one learned pipeline, reducing dependence on hand-engineered visual features. The architecture became the direct foundation for the large-scale image-recognition systems that followed AlexNet.</p>"
     },
     "figures": [
       {
@@ -53574,27 +53741,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "卷积神经网络与 LeNet 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Convolutional Networks and LeNet is an AI history milestone in the current legacy presentation."
+            "zh": "1989 年，扬·勒昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
+            "en": "In 1989, Yann LeCun and collaborators demonstrated convolutional networks trained by backpropagation for handwritten ZIP-code recognition."
           },
           "sourceIds": [
             "source-backpropagation-applied-to-handwritten-zip-code-recognition",
             "source-lenet-5-demos-and-documentation"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
-            "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+            "zh": "卷积网络通过局部连接和共享权重减少参数，并把特征提取与分类整合进一个端到端学习系统；这条路线后来发展为 LeNet-5。",
+            "en": "Convolutional networks reduced parameters through local connections and shared weights while combining feature extraction and classification in one end-to-end learning system; the line later matured into LeNet-5."
           },
           "sourceIds": [
             "source-backpropagation-applied-to-handwritten-zip-code-recognition",
             "source-lenet-5-demos-and-documentation"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -53823,8 +53990,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>",
-      "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant.</p>"
+      "zh": "<p>1997 年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，针对普通循环网络在长序列训练中容易出现的梯度衰减问题。原始 LSTM 通过记忆单元、输入门和输出门控制信息写入与读取，并用近似恒定的误差通路让学习信号跨越更多时间步。</p><p>后续版本又加入遗忘门，使模型能够主动清除不再需要的状态。LSTM 因而成为语音识别、手写识别、机器翻译和时间序列建模的核心架构之一，也说明在注意力机制普及之前，门控状态可以有效延长神经网络的记忆范围。</p>",
+      "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the decay of learning signals in ordinary recurrent networks. The original LSTM used memory cells with input and output gates to control writing and reading, together with a nearly constant error path that allowed useful gradients to cross many more time steps.</p><p>Later variants added a forget gate so the network could actively discard obsolete state. LSTM consequently became a core architecture for speech recognition, handwriting recognition, machine translation, and time-series modeling. Before attention mechanisms became dominant, it showed that gated state could substantially extend the practical memory of a neural network.</p>"
     },
     "figures": [
       {
@@ -54114,27 +54281,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "LSTM 与门控记忆 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "LSTM and Gated Memory is an AI history milestone in the current legacy presentation."
+            "zh": "1997 年，塞普·霍赫赖特和于尔根·施密德胡伯提出 LSTM，以门控记忆单元改善循环网络中的长时依赖学习。",
+            "en": "In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced LSTM, using gated memory cells to improve long-range learning in recurrent networks."
           },
           "sourceIds": [
             "source-long-short-term-memory",
             "source-author-hosted-lstm-paper-pdf"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>",
-            "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant.</p>"
+            "zh": "原始 LSTM 使用记忆单元、输入门和输出门维持较稳定的误差信号；遗忘门由后续版本加入，使模型能够主动清除状态。",
+            "en": "The original LSTM used memory cells with input and output gates to preserve learning signals; a forget gate was introduced in a later version so the model could actively clear state."
           },
           "sourceIds": [
             "source-long-short-term-memory",
             "source-author-hosted-lstm-paper-pdf"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -54367,8 +54534,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-      "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+      "zh": "<p>2015 年公开的 Highway Networks 论文为普通前馈层增加变换门和通行门。网络可以选择对输入执行非线性变换，也可以让信息近似原样通过；这些门由数据学习，而不是由设计者固定，从而为梯度和特征提供跨越多层的直接路径。</p><p>作者展示了数百层、甚至实验中达到上千层的前馈网络可以用随机梯度下降训练。门控捷径增加了一定计算成本，却证明“让信息绕过不必要变换”能够解决深层优化困难。随后 ResNet 去掉可学习门控，采用更简洁的恒等快捷连接，把这一思路推向计算机视觉主流。</p>",
+      "en": "<p>The Highway Networks paper, publicly released in 2015, added transform and carry gates to ordinary feed-forward layers. A network could choose to apply a nonlinear transformation or allow information to pass through almost unchanged. These gates were learned from data, giving features and gradients direct routes across many layers.</p><p>The authors trained networks with hundreds of layers, and experiments extended to roughly one thousand layers, using stochastic gradient descent. Gated shortcuts added computational cost, but they demonstrated that bypassing unnecessary transformations could overcome deep optimization barriers. ResNet soon removed the learned gates and used simpler identity shortcuts, carrying the same information-flow principle into mainstream computer vision.</p>"
     },
     "figures": [
       {
@@ -54472,8 +54639,42 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-highway-networks-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《高速网络》",
+            "en": "Highway Networks"
+          },
+          "url": "https://arxiv.org/abs/1505.00387",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-resnet-follow-up-paper",
+          "type": {
+            "zh": "后续论文",
+            "en": "Follow-up paper"
+          },
+          "label": {
+            "zh": "《用于图像识别的深度残差学习》",
+            "en": "Deep Residual Learning for Image Recognition"
+          },
+          "url": "https://arxiv.org/abs/1512.03385",
+          "purpose": "follow-up",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-highway-networks-paper",
+        "source-resnet-follow-up-paper"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -54483,25 +54684,26 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "高速网络 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Highway Networks is an AI history milestone in the current legacy presentation."
+            "zh": "Highway Networks 通过可学习的变换门和通行门，为信息与梯度提供跨越深层网络的捷径。",
+            "en": "Highway Networks used learned transform and carry gates to create shortcuts for information and gradients across very deep networks."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-highway-networks-paper"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-            "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+            "zh": "2015 年公开的论文展示了数百层乃至约千层的 Highway Networks 可以训练，并为随后采用恒等快捷连接的 ResNet 提供了直接技术背景。",
+            "en": "The paper released in 2015 demonstrated trainable Highway Networks with hundreds and approximately one thousand layers, providing direct technical context for the identity shortcuts later used by ResNet."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-highway-networks-paper",
+            "source-resnet-follow-up-paper"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -54521,7 +54723,7 @@ const milestones = [
           "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-highway-networks-paper"
         ]
       },
       {
@@ -54535,7 +54737,8 @@ const milestones = [
           "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-highway-networks-paper",
+          "source-resnet-follow-up-paper"
         ]
       }
     ],
@@ -54623,8 +54826,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2014年，伊恩·古德费洛及合作者提出生成对抗网络，把生成器和判别器组织成双人学习过程。融合后的描述保留深度学习发展线中“对抗思想曾有更早先例”的历史线索，同时使用 AI100 的结构化解释说明 GAN 为什么成为图像生成、表示学习和对抗训练的标志性框架。</p>",
-      "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks as a two-player learning process between a generator and a discriminator. The fused account preserves the deep-learning timeline's note that adversarial ideas had earlier precursors, while using the AI100 structure to explain why GANs became a defining framework for image generation, representation learning, and adversarial training.</p>"
+      "zh": "<p>2014 年，伊恩·古德费洛及合作者提出生成对抗网络。生成器把随机噪声变成合成样本，判别器则学习区分真实数据与生成结果；两者在同一个极小极大目标中相互改进，使模型能够在不显式写出数据概率分布的情况下学习生成过程。</p><p>原论文证明，在理想条件下，这场博弈会在生成分布与真实分布一致时达到平衡。实际训练常面临不稳定、模式坍塌等困难，但 GAN 很快推动了高质量图像生成、图像翻译、超分辨率和表示学习，也把“用另一个网络提供学习信号”的对抗训练思想带入更广泛的机器学习研究。</p>",
+      "en": "<p>In 2014, Ian Goodfellow and collaborators introduced generative adversarial networks. A generator transformed random noise into synthetic samples, while a discriminator learned to distinguish generated outputs from real data. The two networks improved against each other through a shared minimax objective, allowing the system to learn a generative process without explicitly specifying the data probability distribution.</p><p>The paper showed that, under ideal conditions, the game reaches equilibrium when the generated and real distributions match. Practical training can be unstable and vulnerable to mode collapse, but GANs quickly advanced image synthesis, image translation, super-resolution, and representation learning. They also made adversarial training, in which one network supplies a learning signal to another, a major machine-learning paradigm.</p>"
     },
     "figures": [
       {
@@ -55115,8 +55318,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
-      "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+      "zh": "<p>2014 年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出用于神经机器翻译的注意力机制。传统编码器需要把整句源文本压缩成一个固定长度向量，而新方法让解码器在生成每个目标词时，为源句各位置计算不同权重并形成当前所需的上下文。</p><p>这种“边翻译、边对齐”的方式改善了长句处理，也让模型的关注位置可以被可视化。注意力最初服务于循环编码器—解码器，但它确立了一个更普遍的原则：模型应按当前任务动态选择相关信息。三年后，Transformer 将这一原则扩展为完全基于自注意力的序列架构。</p>",
+      "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism for neural machine translation. Earlier encoder-decoder systems compressed an entire source sentence into one fixed-length vector. Their method instead allowed the decoder, for every generated target word, to assign different weights to source positions and construct the context needed at that moment.</p><p>This process learned alignment while translating, improved the handling of longer sentences, and made the model's focus partly visible. Attention first operated inside a recurrent encoder-decoder, but it established a broader principle: a model should dynamically select relevant information for the current computation. Three years later, the Transformer expanded that principle into a sequence architecture based entirely on self-attention.</p>"
     },
     "figures": [
       {
@@ -55642,8 +55845,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。</p>",
-      "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning at Microsoft Research Asia. ResNet used shortcut connections so very deep networks could learn residual refinements instead of full transformations, solving a practical training bottleneck and becoming a standard visual backbone. The fused version combines the deep-learning storyline's emphasis on engineering simplicity and trainability with the AI100 paper sources and residual-block explanation.</p>"
+      "zh": "<p>2015 年，何恺明、张祥雨、任少卿和孙剑提出深度残差学习。他们观察到，普通网络加深后即使没有明显过拟合，训练误差也可能反而上升。ResNet 用恒等快捷连接绕过若干层，让这些层学习相对于输入的残差修正，而不是重新构造完整映射。</p><p>快捷连接几乎不增加参数，却显著改善了梯度传播和超深网络优化。论文中的 152 层 ResNet 在 ImageNet 上取得领先结果，并赢得 ILSVRC 2015 分类任务。残差块随后成为视觉、语音、语言和生成模型中的通用组件，证明简单的信息直通路径可以改变网络可训练深度。</p>",
+      "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced deep residual learning. They observed that making a conventional network deeper could increase training error even without obvious overfitting. ResNet inserted identity shortcut connections around groups of layers, asking those layers to learn a residual correction to the input rather than reconstructing a complete transformation.</p><p>The shortcuts added almost no parameters but substantially improved gradient flow and the optimization of very deep networks. A 152-layer ResNet achieved leading ImageNet results and won the ILSVRC 2015 classification task. Residual blocks soon became general components in vision, speech, language, and generative models, showing that simple information paths could change the trainable depth of neural systems.</p>"
     },
     "figures": [
       {
@@ -56260,8 +56463,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
-      "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+      "zh": "<p>2016 年，高华、刘壮、劳伦斯·范德马滕和基利安·温伯格公开 DenseNet。与残差网络相加特征不同，DenseNet 在一个密集块内把前面所有层的特征图拼接起来，作为下一层输入；具有 L 层的网络因此形成 L(L+1)/2 条直接连接。</p><p>这种设计让早期提取的边缘、纹理等特征可以被后续层反复利用，也为梯度提供更短的传播路径。论文实验显示，DenseNet 能以较少参数取得有竞争力的图像分类结果。它把“每层都能访问历史特征”发展成明确架构，成为特征复用与高效连接设计的重要范例。</p>",
+      "en": "<p>In 2016, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger released DenseNet. Unlike residual networks, which add feature maps, DenseNet concatenated the outputs of every earlier layer inside a dense block and supplied them to each later layer. A network with L layers therefore contained L(L+1)/2 direct connections.</p><p>The design allowed later layers to reuse edges, textures, and other features extracted earlier, while giving gradients shorter routes through the network. The paper showed competitive image-classification accuracy with relatively few parameters. DenseNet turned the idea that every layer should have access to the feature history into an explicit architecture and became an influential example of feature reuse and efficient connectivity.</p>"
     },
     "figures": [
       {
@@ -56752,8 +56955,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2018年，Google 的雅各布·德夫林及合作者提出 BERT，这是一种通过掩码语言建模和下一句预测预训练的双向 Transformer 编码器。融合后的页面保留深度学习发展线中“大规模预训练加微调重塑 NLP”的判断，同时采用 AI100 内容把事件聚焦在 BERT 本身，避免与 GPT 技术线混在一起。</p>",
-      "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, a bidirectional Transformer encoder pre-trained with masked language modeling and next-sentence prediction. The fused page keeps the deep-learning storyline's point that large-scale pre-training plus fine-tuning reshaped NLP, while using the AI100 content to focus the event on BERT rather than mixing it with the GPT line.</p>"
+      "zh": "<p>2018 年，Google 的雅各布·德夫林等人提出 BERT，即“双向 Transformer 编码器表示”。它随机遮盖输入中的部分词并要求模型恢复，同时在原始方案中加入下一句预测，使每一层表示都能同时利用左侧和右侧上下文。</p><p>预训练完成后，BERT 只需增加很小的任务输出层并微调整个模型，就能用于问答、自然语言推断、文本分类等任务。论文在 11 项 NLP 基准上刷新结果，推动行业从“为每个任务单独设计模型”转向“先在大规模文本上预训练，再面向任务微调”的统一范式。</p>",
+      "en": "<p>In 2018, Jacob Devlin and colleagues at Google introduced BERT, or Bidirectional Encoder Representations from Transformers. It randomly masked some input tokens and trained the model to recover them, while the original system also used next-sentence prediction. Every layer could therefore condition on both left and right context.</p><p>After pre-training, BERT needed only a small task-specific output layer and end-to-end fine-tuning for question answering, natural-language inference, classification, and other tasks. The paper reported new results across eleven NLP benchmarks. It accelerated the shift from designing a separate architecture for each task toward a unified pattern of large-scale language pre-training followed by task adaptation.</p>"
     },
     "figures": [
       {
@@ -57253,8 +57456,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>",
-      "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models.</p>"
+      "zh": "<p>2018 年，OpenAI 的亚历克·拉德福德等人提出生成式预训练 Transformer。模型先在大规模无标注文本上按照从左到右预测下一个词的目标训练，再用少量任务标注数据微调，从而把通用语言知识迁移到分类、问答、文本蕴含等不同任务。</p><p>论文使用以 Transformer 解码器为基础的统一架构，在 12 项任务中的多数项目上取得当时有竞争力的结果。GPT 证明生成式语言建模可以充当通用预训练目标，并开启了持续扩大模型、数据和计算规模的解码器路线，后来发展出 GPT-2、GPT-3 及现代大语言模型。</p>",
+      "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the Generative Pre-trained Transformer. The model first learned from large amounts of unlabeled text by predicting the next word from left to right, then transferred that general language knowledge to classification, question answering, textual entailment, and other tasks through supervised fine-tuning.</p><p>The paper used one Transformer-decoder-based architecture and reported competitive results on most of twelve evaluated tasks. GPT showed that generative language modeling could serve as a general pre-training objective. It opened the decoder-only scaling path in which models, data, and compute continued to grow, leading to GPT-2, GPT-3, and modern large language models.</p>"
     },
     "figures": [
       {
@@ -57764,8 +57967,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
-      "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery."
+      "zh": "<p>2019 年，西尔维乌-马里安·乌多雷斯库和马克斯·泰格马克公开 AI Feynman，用于从数值数据中寻找可读的符号方程。系统先用神经网络拟合数据，再检查可分性、对称性和量纲等物理线索，把高维问题拆成更简单的子问题，最后通过符号搜索恢复公式。</p><p>论文报告，AI Feynman 解出了测试集中全部 100 个《费曼物理学讲义》方程，而此前公开软件解出 71 个；在更困难的物理方程测试集上，成功率由基线的 15% 提升到 90%。它的重要性不只是提高预测精度，而是输出可由科学家检查和使用的解析表达式，展示了机器学习与科学先验结合进行规律发现的路径。</p>",
+      "en": "<p>In 2019, Silviu-Marian Udrescu and Max Tegmark released AI Feynman, a system for recovering human-readable symbolic equations from numerical data. It first used a neural network to fit the observations, then tested physics-inspired clues such as separability, symmetry, and dimensional structure. These clues decomposed difficult high-dimensional problems before a symbolic search reconstructed the formula.</p><p>The paper reported solving all 100 equations drawn from the Feynman Lectures test set, compared with 71 solved by earlier publicly available software. On a harder physics-based set, success rose from a 15 percent baseline to 90 percent. The significance was not merely predictive accuracy: AI Feynman returned analytic expressions that scientists could inspect and reuse, demonstrating a path for combining machine learning with scientific priors in law discovery.</p>"
     },
     "figures": [
       {
@@ -57908,8 +58111,42 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-ai-feynman-science-advances",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《AI Feynman：受物理启发的符号回归方法》",
+            "en": "AI Feynman: A Physics-Inspired Method for Symbolic Regression"
+          },
+          "url": "https://doi.org/10.1126/sciadv.aay2631",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-ai-feynman-arxiv",
+          "type": {
+            "zh": "预印本页面",
+            "en": "Preprint page"
+          },
+          "label": {
+            "zh": "AI Feynman 预印本页面",
+            "en": "AI Feynman Preprint Page"
+          },
+          "url": "https://arxiv.org/abs/1905.11481",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "sourceType": "paper-page"
+        }
+      ],
+      "sourceIds": [
+        "source-ai-feynman-science-advances",
+        "source-ai-feynman-arxiv"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -57919,25 +58156,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "AI Feynman：自主科学规律发现 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "AI Feynman: Autonomous Discovery of Scientific Laws is an AI history milestone in the current legacy presentation."
+            "zh": "2019 年公开的 AI Feynman 将神经网络拟合、物理先验与符号搜索结合，用于从数据中恢复解析方程。",
+            "en": "AI Feynman, released in 2019, combined neural-network fitting, physics-inspired priors, and symbolic search to recover analytic equations from data."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-ai-feynman-science-advances",
+            "source-ai-feynman-arxiv"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
-            "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery."
+            "zh": "论文报告 AI Feynman 解出 100 个费曼讲义测试方程，并在更困难测试集上达到 90% 成功率，而对应基线为 15%。",
+            "en": "The paper reported that AI Feynman solved 100 Feynman Lectures test equations and reached a 90 percent success rate on a harder set, compared with a 15 percent baseline."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-ai-feynman-science-advances",
+            "source-ai-feynman-arxiv"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -57957,7 +58196,8 @@ const milestones = [
           "en": "AI Feynman's approach is representative because it did not leave symbolic regression entirely to brute-force search. By adding physical priors such as symmetry and dimensional analysis, it narrowed the candidate space and moved machine formula discovery from toy problems toward reconstructing real laws."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-ai-feynman-science-advances",
+          "source-ai-feynman-arxiv"
         ]
       },
       {
@@ -57971,7 +58211,8 @@ const milestones = [
           "en": "The value of such systems lies in interpretability. Unlike black-box models that only return predictions, AI Feynman outputs human-readable equations, making it more like an intermediate discovery tool that can be handed to the scientific community."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-ai-feynman-science-advances",
+          "source-ai-feynman-arxiv"
         ]
       }
     ],
@@ -58059,8 +58300,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
-      "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+      "zh": "<p>2020 年，DeepMind 的 AlphaFold2 在第十四届蛋白质结构预测关键评估 CASP14 中取得突破。系统从氨基酸序列、多序列比对和模板信息出发，用注意力网络反复交换序列与残基对信息，再直接预测三维坐标及其可信度。</p><p>2021 年发表的 Nature 论文报告，AlphaFold2 在多数目标上达到接近实验结构的精度，显著缩小了计算预测与实验测定之间的差距。随后开放的代码和 AlphaFold 蛋白质结构数据库把大规模结构预测带入日常生物学研究，为蛋白功能分析、疾病研究和药物发现提供了新的计算起点，但预测结果仍需结合实验和生物学背景判断。</p>",
+      "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a breakthrough at the fourteenth Critical Assessment of Protein Structure Prediction, CASP14. Starting from an amino-acid sequence, multiple-sequence alignments, and available templates, attention-based networks repeatedly exchanged sequence and residue-pair information before directly predicting three-dimensional coordinates and confidence estimates.</p><p>The 2021 Nature paper reported accuracy close to experimental structures for many targets, sharply narrowing the gap between computational prediction and laboratory determination. The subsequent open-source code and AlphaFold Protein Structure Database brought large-scale prediction into everyday biological research, offering a new starting point for studying protein function, disease, and drug discovery. Predictions still require interpretation alongside experiments and biological context.</p>"
     },
     "figures": [
       {
@@ -58460,27 +58701,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "AlphaFold2 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "AlphaFold2 is an AI history milestone in the current legacy presentation."
+            "zh": "AlphaFold2 在 2020 年 CASP14 中显著提高蛋白质结构预测精度，并于 2021 年在 Nature 发表完整方法。",
+            "en": "AlphaFold2 substantially improved protein-structure prediction at CASP14 in 2020, with the complete method published in Nature in 2021."
           },
           "sourceIds": [
             "source-highly-accurate-protein-structure-prediction-with-alphafold",
             "source-deepmind-alphafold-page"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>2020年，DeepMind 的 AlphaFold2 在 CASP14 中取得重大突破，证明深度学习可以以改变日常生物学研究的精度预测蛋白质结构。融合后的页面结合了深度学习发展线对“困扰生物学界五十年难题”的强调，以及 AI100 对进化信号、基于注意力的表示和端到端结构优化的解释。</p>",
-            "en": "<p>In 2020, DeepMind's AlphaFold2 achieved a major breakthrough at CASP14, showing that deep learning could predict protein structures with a level of accuracy that changed everyday biological research. The fused page combines the deep-learning storyline's emphasis on a fifty-year scientific challenge with the AI100 account of evolutionary signals, attention-based representations, and end-to-end structure refinement.</p>"
+            "zh": "AlphaFold2 结合多序列比对、注意力表示和端到端三维结构优化，在许多目标上达到接近实验结构的预测精度。",
+            "en": "AlphaFold2 combined multiple-sequence alignments, attention-based representations, and end-to-end three-dimensional refinement to reach accuracy close to experimental structures for many targets."
           },
           "sourceIds": [
             "source-highly-accurate-protein-structure-prediction-with-alphafold",
             "source-deepmind-alphafold-page"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -58709,8 +58950,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
-      "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction."
+      "zh": "<p>2022 年提出、并在 2023 年广泛传播的 ReAct 方法，让语言模型交错生成推理步骤、具体行动和环境返回的观察结果。与只输出答案不同，模型可以查询知识库、调用工具，再根据新信息继续推理。Toolformer 等研究也展示了模型学习何时插入 API 调用的可能性。</p><p>由此形成的 LLM 智能体通常把模型置于循环控制中心，外接任务规划、记忆、工具和结果评估模块，把一次文本生成扩展为多步行动过程。它们推动了编程、检索、数据分析和软件自动化实验，但“自主”并不等于可靠：错误会在长链路中累积，工具权限、成本、评测和安全边界仍是实际部署的核心问题。</p>",
+      "en": "<p>ReAct, introduced in 2022 and widely adopted in 2023, allowed language models to interleave reasoning steps, concrete actions, and observations returned by an environment. Instead of producing only a final answer, a model could query a knowledge source or invoke a tool, then continue reasoning from the new information. Toolformer similarly explored how models could learn when to insert API calls.</p><p>LLM agents placed the model at the center of a control loop connected to planning, memory, tools, and result evaluation, extending one text generation into a multi-step process. They accelerated experiments in coding, retrieval, data analysis, and software automation. “Autonomous,” however, does not mean reliable: errors accumulate across long trajectories, and permissions, cost, evaluation, and security remain central deployment constraints.</p>"
     },
     "figures": [
       {
@@ -58853,8 +59094,58 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-react-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《ReAct：在语言模型中协同推理与行动》",
+            "en": "ReAct: Synergizing Reasoning and Acting in Language Models"
+          },
+          "url": "https://arxiv.org/abs/2210.03629",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-toolformer-paper",
+          "type": {
+            "zh": "相关论文",
+            "en": "Related paper"
+          },
+          "label": {
+            "zh": "《Toolformer：语言模型可以自学使用工具》",
+            "en": "Toolformer: Language Models Can Teach Themselves to Use Tools"
+          },
+          "url": "https://arxiv.org/abs/2302.04761",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-llm-agent-survey",
+          "type": {
+            "zh": "背景论文",
+            "en": "Background paper"
+          },
+          "label": {
+            "zh": "《大语言模型驱动的自主智能体综述》",
+            "en": "A Survey on Large Language Model Based Autonomous Agents"
+          },
+          "url": "https://arxiv.org/abs/2308.11432",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-react-paper",
+        "source-toolformer-paper",
+        "source-llm-agent-survey"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -58864,25 +59155,28 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "智能体：LLM驱动的自主系统 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Agents: LLM-Driven Autonomous Systems is an AI history milestone in the current legacy presentation."
+            "zh": "ReAct 和 Toolformer 等研究把语言模型与外部行动、观察和 API 调用连接起来，推动了 LLM 智能体的发展。",
+            "en": "Research such as ReAct and Toolformer connected language models with external actions, observations, and API calls, advancing LLM-based agents."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-react-paper",
+            "source-toolformer-paper"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
-            "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction."
+            "zh": "LLM 智能体通常由规划、记忆、工具调用和结果评估组成循环，但长链路错误、权限、成本与安全仍限制其可靠自主性。",
+            "en": "LLM agents commonly form loops around planning, memory, tool use, and result evaluation, while long-horizon errors, permissions, cost, and safety still limit reliable autonomy."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-react-paper",
+            "source-toolformer-paper",
+            "source-llm-agent-survey"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -58902,7 +59196,9 @@ const milestones = [
           "en": "The key change in contemporary agentic AI is not tool use by itself. Large language models began to act as the cognitive center for goal decomposition, state interpretation, action selection, and self-correction."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-react-paper",
+          "source-toolformer-paper",
+          "source-llm-agent-survey"
         ]
       },
       {
@@ -58916,7 +59212,9 @@ const milestones = [
           "en": "That turns agents from systems dependent on hand-written planners into open software forms whose behavior strategies can be rebuilt through prompts, memory, toolchains, and feedback loops. It also explains why agent products expanded so quickly after 2023."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-react-paper",
+          "source-toolformer-paper",
+          "source-llm-agent-survey"
         ]
       }
     ],
@@ -59010,8 +59308,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
-      "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."
+      "zh": "<p>2024 年，Sakana AI 等团队发布 AI Scientist 原型，把机器学习研究中的想法生成、代码修改、实验运行、结果可视化、论文撰写和自动评审串成一个循环。它展示的是特定计算研究流程的自动化实验，并不等同于论文已被真实学术会议接收，也不能替代独立复现和同行评议。</p><p>物理实验自动化则更早在 A-Lab 等系统中推进。2023 年 Nature 论文报告，A-Lab 把文献与计算数据库、机器学习、机器人设备和主动学习结合，在 17 天运行中成功合成 58 个目标中的 41 个新材料。两条路线共同表明，AI for Science 正从单步预测扩展到闭环工作流，但可靠性、实验验证、数据质量和责任归属仍决定这些系统能否产生可信科学成果。</p>",
+      "en": "<p>In 2024, Sakana AI and collaborators released the AI Scientist prototype, linking idea generation, code modification, experiment execution, visualization, manuscript writing, and automated review into a loop for machine-learning research. It demonstrated automation within a specific computational workflow; it did not mean that generated papers had been accepted by real conferences, nor could it replace independent replication and peer review.</p><p>Physical experimentation had already advanced through systems such as A-Lab. A 2023 Nature paper reported that A-Lab combined literature and computational databases, machine learning, robotic equipment, and active learning to synthesize 41 of 58 targeted novel materials during 17 days of operation. Together, these paths extended AI for Science from single predictions toward closed-loop workflows, while reliability, experimental validation, data quality, and accountability remained decisive.</p>"
     },
     "figures": [
       {
@@ -59193,8 +59491,58 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-ai-scientist-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《AI Scientist：迈向完全自动化、开放式科学发现》",
+            "en": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery"
+          },
+          "url": "https://arxiv.org/abs/2408.06292",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-sakana-ai-scientist-page",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "Sakana AI 的 AI Scientist 项目页面",
+            "en": "Sakana AI Scientist Project Page"
+          },
+          "url": "https://sakana.ai/ai-scientist/",
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-autonomous-materials-lab-paper",
+          "type": {
+            "zh": "相关论文",
+            "en": "Related paper"
+          },
+          "label": {
+            "zh": "《加速新材料合成的自主实验室》",
+            "en": "An Autonomous Laboratory for the Accelerated Synthesis of Novel Materials"
+          },
+          "url": "https://doi.org/10.1038/s41586-023-06734-w",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-ai-scientist-paper",
+        "source-sakana-ai-scientist-page",
+        "source-autonomous-materials-lab-paper"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -59204,25 +59552,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "AI科学家与自主实验室 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "AI Scientists and Autonomous Laboratories is an AI history milestone in the current legacy presentation."
+            "zh": "AI Scientist 将计算研究的多个步骤串成自动循环，A-Lab 则把机器学习与机器人实验连接到材料合成流程。",
+            "en": "The AI Scientist connected multiple computational research steps into an automated loop, while A-Lab linked machine learning and robotic experimentation for materials synthesis."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-ai-scientist-paper",
+            "source-autonomous-materials-lab-paper"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
-            "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."
+            "zh": "A-Lab 论文报告系统在 17 天运行中成功合成 58 个目标中的 41 个新材料；AI Scientist 仍是需要独立复现和真实同行评议的研究原型。",
+            "en": "The A-Lab paper reported successful synthesis of 41 of 58 targeted novel materials during 17 days of operation; the AI Scientist remained a research prototype requiring independent replication and real peer review."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-ai-scientist-paper",
+            "source-autonomous-materials-lab-paper"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -59242,7 +59592,9 @@ const milestones = [
           "en": "What is genuinely new in these systems is not that they can write paper paragraphs. It is that they connect hypothesis generation, workflow design, tool use, experiment execution, and result evaluation into a closed loop, beginning to automate the scientific research workflow."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-ai-scientist-paper",
+          "source-sakana-ai-scientist-page",
+          "source-autonomous-materials-lab-paper"
         ]
       },
       {
@@ -59256,7 +59608,9 @@ const milestones = [
           "en": "They also imply a shift in how AI for Science is evaluated. The key future question is not only whether a model can explain an image or sequence, but whether it can continually produce verifiable, reproducible experimental workflows and improve through feedback."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-ai-scientist-paper",
+          "source-sakana-ai-scientist-page",
+          "source-autonomous-materials-lab-paper"
         ]
       }
     ],
@@ -59358,8 +59712,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
-      "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+      "zh": "<p>到 2025 年，大语言模型竞争已不再由一项静态基准或单一模型定义。Chatbot Arena（后发展为 LMArena）让用户在不知道模型身份的情况下，对同一提示的两个回答进行成对选择，再用统计方法汇总偏好。这种公开、持续更新的人类评测，使闭源与开放权重模型家族能够在真实交互中并列比较。</p><p>竞争也从文本生成扩展到推理、多模态、代码、工具使用、响应延迟、成本与部署自由度。Stanford《2025 AI Index》记录了前沿性能继续提高、模型间差距缩小以及推理成本快速下降，但活榜单并非永久结论：结果会受到用户群体、提示分布、回答风格和评测方法影响。因此，这一节点更代表多条技术与产品路线同时竞逐，而不是宣布某个模型固定领先。</p>",
+      "en": "<p>By 2025, LLM competition was no longer defined by one static benchmark or one dominant model. Chatbot Arena, later developed as LMArena, showed users two anonymous answers to the same prompt, collected pairwise preferences, and aggregated them statistically. This live human evaluation allowed proprietary and open-weight model families to be compared through real interactions.</p><p>Competition broadened across reasoning, multimodality, coding, tool use, latency, cost, and deployment freedom. Stanford's <em>2025 AI Index</em> documented improving frontier performance, narrowing gaps, and sharply falling inference costs. Yet a live leaderboard is not a permanent verdict: results depend on its users, prompts, response style, and evaluation method. The milestone therefore marks several technical and product strategies competing at once, not a fixed winner.</p>"
     },
     "figures": [
       {
@@ -59502,8 +59856,58 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-chatbot-arena-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Chatbot Arena：基于人类偏好评估大语言模型的开放平台》",
+            "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
+          },
+          "url": "https://arxiv.org/abs/2403.04132",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-lmarena-official",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "LMArena 官方排行榜",
+            "en": "LMArena Official Leaderboard"
+          },
+          "url": "https://lmarena.ai/",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-stanford-ai-index-2025",
+          "type": {
+            "zh": "报告",
+            "en": "Report"
+          },
+          "label": {
+            "zh": "Stanford《2025 AI Index 报告》",
+            "en": "Stanford 2025 AI Index Report"
+          },
+          "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "report"
+        }
+      ],
+      "sourceIds": [
+        "source-chatbot-arena-paper",
+        "source-lmarena-official",
+        "source-stanford-ai-index-2025"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -59513,25 +59917,28 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "大语言模型百花齐放 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "A Flourishing Competition Among Large Language Models is an AI history milestone in the current legacy presentation."
+            "zh": "Chatbot Arena 通过匿名、成对的人类偏好比较和统计汇总，为不同大语言模型提供了持续更新的公开评测。",
+            "en": "Chatbot Arena provided continuously updated public evaluation of language models through anonymous pairwise human-preference comparisons and statistical aggregation."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-chatbot-arena-paper",
+            "source-lmarena-official"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
-            "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+            "zh": "到 2025 年，模型竞争已覆盖推理、多模态、代码、工具使用、成本与部署方式；人类偏好榜单会随用户、提示、模型和评测方法变化，不应被视为固定结论。",
+            "en": "By 2025, model competition spanned reasoning, multimodality, coding, tool use, cost, and deployment; human-preference rankings change with users, prompts, models, and evaluation methods rather than constituting permanent verdicts."
           },
           "sourceIds": [
-            "source-legacy-event-record"
+            "source-chatbot-arena-paper",
+            "source-lmarena-official",
+            "source-stanford-ai-index-2025"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -59551,7 +59958,8 @@ const milestones = [
           "en": "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-chatbot-arena-paper",
+          "source-lmarena-official"
         ]
       },
       {
@@ -59565,7 +59973,9 @@ const milestones = [
           "en": "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability."
         },
         "sourceIds": [
-          "source-legacy-event-record"
+          "source-chatbot-arena-paper",
+          "source-lmarena-official",
+          "source-stanford-ai-index-2025"
         ]
       }
     ],

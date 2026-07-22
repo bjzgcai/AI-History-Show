@@ -1,5 +1,65 @@
 [
   {
+    "id": "source-react-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《ReAct：在语言模型中协同推理与行动》",
+      "en": "ReAct: Synergizing Reasoning and Acting in Language Models"
+    },
+    "url": "https://arxiv.org/abs/2210.03629",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "提出让语言模型交错生成推理轨迹、行动和环境观察的代表性论文。",
+      "en": "The representative paper introducing interleaved reasoning traces, actions, and environmental observations for language models."
+    },
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-toolformer-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《Toolformer：语言模型可以自学使用工具》",
+      "en": "Toolformer: Language Models Can Teach Themselves to Use Tools"
+    },
+    "url": "https://arxiv.org/abs/2302.04761",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "展示语言模型学习何时以及如何调用外部 API 的原始论文。",
+      "en": "The original paper demonstrating how a language model can learn when and how to call external APIs."
+    },
+    "label": {
+      "zh": "相关论文",
+      "en": "Related paper"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-llm-agent-survey",
+    "type": "paper",
+    "title": {
+      "zh": "《大语言模型驱动的自主智能体综述》",
+      "en": "A Survey on Large Language Model Based Autonomous Agents"
+    },
+    "url": "https://arxiv.org/abs/2308.11432",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "梳理 LLM 智能体的规划、记忆、工具使用和评测框架。",
+      "en": "A survey organizing LLM-agent research around planning, memory, tool use, and evaluation."
+    },
+    "label": {
+      "zh": "背景论文",
+      "en": "Background paper"
+    },
+    "purpose": "background"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {
