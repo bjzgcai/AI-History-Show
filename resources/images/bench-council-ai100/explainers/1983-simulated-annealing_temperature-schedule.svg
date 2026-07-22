@@ -6,5 +6,5 @@
   <text x="90" y="120" fill="#f59e0b" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Temperature schedule</text>
   <text x="90" y="164" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">温度计划</text>
   <path d="M180 530 H1000 M180 530 V140" stroke="#94a3b8" stroke-width="5"/><path d="M200 170 C330 210 430 280 560 360 C690 435 820 490 980 515" fill="none" stroke="#60a5fa" stroke-width="12"/><text x="710" y="230" fill="#f8fafc" font-size="32">T decreases</text>
-  <text x="90" y="646" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Temperature · local redraw from source material</text>
+  <text x="90" y="646" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">The cooling schedule controls the exploration-to-refinement transition</text>
 </svg>

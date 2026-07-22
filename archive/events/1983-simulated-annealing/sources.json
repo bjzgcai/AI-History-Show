@@ -7,23 +7,64 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "模拟退火优化",
+      "zh": "《模拟退火优化》",
       "en": "Optimization by Simulated Annealing"
     },
     "url": "https://www.science.org/doi/10.1126/science.220.4598.671",
     "language": "en",
     "reliability": "primary",
     "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
-    }
+      "zh": "柯克帕特里克、格拉特和维基 1983 年发表的模拟退火原始论文。",
+      "en": "The 1983 primary paper on simulated annealing by Kirkpatrick, Gelatt, and Vecchi."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-metropolis-fast-computing-machines",
+    "type": "paper",
+    "label": {
+      "zh": "方法源流论文",
+      "en": "Foundational paper"
+    },
+    "title": {
+      "zh": "《用快速计算机进行状态方程计算》",
+      "en": "Equation of State Calculations by Fast Computing Machines"
+    },
+    "url": "https://doi.org/10.1063/1.1699114",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Metropolis 等人 1953 年提出随机接受机制的原始论文，模拟退火由此继承采样思想。",
+      "en": "The 1953 primary paper by Metropolis and colleagues that introduced the stochastic acceptance mechanism adapted by simulated annealing."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-geman-geman-stochastic-relaxation",
+    "type": "paper",
+    "label": {
+      "zh": "收敛研究论文",
+      "en": "Convergence paper"
+    },
+    "title": {
+      "zh": "《随机松弛、Gibbs 分布与图像的贝叶斯恢复》",
+      "en": "Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images"
+    },
+    "url": "https://doi.org/10.1109/TPAMI.1984.4767596",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Geman 与 Geman 1984 年关于退火式随机松弛和缓慢降温收敛条件的早期理论研究。",
+      "en": "Geman and Geman's 1984 early theoretical study of annealing-style stochastic relaxation and slow-cooling convergence conditions."
+    },
+    "purpose": "background"
   },
   {
     "id": "source-scipy-dual-annealing",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
       "zh": "优化器文档",
-      "en": "Optimizer docs"
+      "en": "Optimizer documentation"
     },
     "title": {
       "zh": "SciPy dual_annealing",
@@ -33,27 +74,49 @@
     "language": "en",
     "reliability": "reference-only",
     "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
-    }
+      "zh": "SciPy 官方文档，用于说明现代双重退火实现中的温度、重启与接受参数。",
+      "en": "Official SciPy documentation for temperature, restart, and acceptance parameters in a modern dual-annealing implementation."
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-hedibert-course-pdf-mirror",
-    "type": "book",
+    "type": "paper-file",
     "label": {
-      "zh": "笔记本",
-      "en": "Notebook"
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
     },
     "title": {
-      "zh": "Hedibert course PDF mirror",
-      "en": "Hedibert course PDF mirror"
+      "zh": "1983 年模拟退火论文 PDF 镜像",
+      "en": "1983 simulated annealing paper PDF mirror"
     },
     "url": "https://hedibert.org/wp-content/uploads/2013/12/1983KirkpatrickGelattVecchi.pdf",
     "language": "en",
     "reliability": "reference-only",
     "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
-    }
+      "zh": "课程站点保存的 1983 年论文 PDF 镜像，仅作辅助阅读。",
+      "en": "Course-site PDF mirror of the 1983 paper, retained for supplementary reading."
+    },
+    "purpose": "alternate-access"
+  },
+  {
+    "id": "source-scott-kirkpatrick-huji-profile",
+    "type": "personal-page",
+    "label": {
+      "zh": "个人主页",
+      "en": "Personal homepage"
+    },
+    "title": {
+      "zh": "斯科特·柯克帕特里克个人主页",
+      "en": "Scott Kirkpatrick personal homepage"
+    },
+    "url": "https://www.cs.huji.ac.il/~kirk/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "耶路撒冷希伯来大学计算机科学与工程学院托管的人物主页，也是本地肖像的来源页。",
+      "en": "Profile hosted by the Hebrew University of Jerusalem School of Computer Science and Engineering and the source page for the localized portrait."
+    },
+    "purpose": "biography"
   }
 ]

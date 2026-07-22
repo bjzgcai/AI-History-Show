@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "计算机器与智能",
+      "zh": "《计算机器与智能》",
       "en": "Computing Machinery and Intelligence"
     },
     "url": "https://academic.oup.com/mind/article/LIX/236/433/986238",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-turing-digital-archive",
@@ -35,7 +36,8 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-internet-archive-digital-preview",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-stanford-encyclopedia-of-philosophy",
-    "type": "context",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Context"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "斯坦福哲学百科全书",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

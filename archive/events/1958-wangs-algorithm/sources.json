@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "通过模式识别证明定理 I",
+      "zh": "《通过模式识别证明定理 I》",
       "en": "Proving theorems by pattern recognition I"
     },
     "url": "https://cacm.acm.org/research/proving-theorems-by-pattern-recognition-i/",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-proving-theorems-by-pattern-recognition-ii",
-    "type": "archive",
+    "type": "paper-page",
     "label": {
-      "zh": "档案",
-      "en": "Archive"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "通过模式识别证明定理（二）",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-rockefeller-university-digital-commons-wang-hao",
-    "type": "photo",
+    "type": "image-source",
     "label": {
-      "zh": "照片",
-      "en": "Photo"
+      "zh": "图片来源",
+      "en": "Image source"
     },
     "title": {
       "zh": "Rockefeller University Digital Commons: 王浩, Hao",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

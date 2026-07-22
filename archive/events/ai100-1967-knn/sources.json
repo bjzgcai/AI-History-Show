@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-stanford-hosted-paper-pdf",
-    "type": "paper",
+    "type": "paper-file",
     "label": {
       "zh": "论文 PDF",
       "en": "Paper PDF"
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-k-nearest-neighbors-algorithm-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "k 近邻算法概览",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-scikit-learn-nearest-neighbors-documentation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "文档",
-      "en": "Documentation"
+      "zh": "官方文档",
+      "en": "Official documentation"
     },
     "title": {
       "zh": "scikit-learn 最近邻文档",
@@ -73,18 +76,19 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-thomas-cover-stanford-profile",
-    "type": "profile",
+    "type": "personal-page",
     "label": {
-      "zh": "人物主页",
-      "en": "Profile"
+      "zh": "个人主页",
+      "en": "Personal homepage"
     },
     "title": {
-      "zh": "托马斯·科弗 Stanford 人物主页",
-      "en": "Thomas Cover Stanford profile"
+      "zh": "托马斯·科弗个人主页",
+      "en": "Thomas Cover personal homepage"
     },
     "url": "https://isl.stanford.edu/~cover/",
     "language": "en",
@@ -92,6 +96,7 @@
     "notes": {
       "zh": "Stanford 信息系统实验室托管的托马斯·科弗人物主页和肖像来源。",
       "en": "Thomas Cover profile and portrait source hosted by Stanford's Information Systems Laboratory."
-    }
+    },
+    "purpose": "biography"
   }
 ]

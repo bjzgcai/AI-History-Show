@@ -1,7 +1,7 @@
 [
   {
     "id": "source-improving-language-understanding-by-generative-pre-training",
-    "type": "paper",
+    "type": "paper-file",
     "label": {
       "zh": "论文 PDF",
       "en": "Paper PDF"
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-openai-language-unsupervised-page",
-    "type": "reference-only",
+    "type": "article",
     "label": {
-      "zh": "出版页",
-      "en": "Publication"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "OpenAI 无监督语言页面",
@@ -31,18 +32,19 @@
     },
     "url": "https://openai.com/index/language-unsupervised/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-gpt-model-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "GPT 模型概览",
@@ -54,25 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
-  },
-  {
-    "id": "source-alec-radford-research-context",
-    "type": "reference-only",
-    "label": {
-      "zh": "人物",
-      "en": "People"
     },
-    "title": {
-      "zh": "亚历克·拉德福德研究背景",
-      "en": "Alec Radford research context"
-    },
-    "url": "https://openai.com/research/",
-    "language": "en",
-    "reliability": "reference-only",
-    "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    "purpose": "background"
   }
 ]

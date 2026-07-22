@@ -7,7 +7,7 @@
       "en": "Book"
     },
     "title": {
-      "zh": "自然系统与人工系统中的适应",
+      "zh": "《自然系统与人工系统中的适应》",
       "en": "Adaptation in Natural and Artificial Systems"
     },
     "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-deap-evolutionary-computation-framework",
-    "type": "toolkit",
+    "type": "documentation",
     "label": {
-      "zh": "工具包",
-      "en": "Toolkit"
+      "zh": "官方文档",
+      "en": "Official documentation"
     },
     "title": {
       "zh": "DEAP evolutionary computation framework",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-ecj-evolutionary-computation-system",
-    "type": "toolkit",
+    "type": "project-page",
     "label": {
-      "zh": "工具包",
-      "en": "Toolkit"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "ECJ evolutionary computation system",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

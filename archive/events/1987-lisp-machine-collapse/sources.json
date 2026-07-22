@@ -1,10 +1,10 @@
 [
   {
     "id": "source-ai-winter-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手史料",
-      "en": "Secondary history"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "AI 寒冬概览",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-lisp-machine-history",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "技术史",
-      "en": "Technology history"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "Lisp 机历史",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-avoiding-another-ai-winter",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "专家文章",
-      "en": "Expert article"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "《避免另一场 AI 寒冬》",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-fifth-generation-project-context",
-    "type": "project-page",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手史料",
-      "en": "Secondary history"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "第五代计算机项目语境",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   }
 ]

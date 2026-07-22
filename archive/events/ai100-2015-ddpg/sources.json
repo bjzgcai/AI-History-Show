@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-iclr-openreview-record",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "会议论文",
-      "en": "Conference paper"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
       "zh": "ICLR OpenReview 记录",
@@ -35,14 +36,55 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
+  },
+  {
+    "id": "source-deterministic-policy-gradient-algorithms",
+    "type": "paper",
+    "label": {
+      "zh": "前序论文",
+      "en": "Precursor paper"
+    },
+    "title": {
+      "zh": "《确定性策略梯度算法》",
+      "en": "Deterministic Policy Gradient Algorithms"
+    },
+    "url": "https://proceedings.mlr.press/v32/silver14.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "2014 年提出确定性策略梯度理论与 actor-critic 算法的原始论文。",
+      "en": "The 2014 primary paper introducing deterministic policy-gradient theory and actor-critic algorithms."
+    },
+    "purpose": "precursor"
+  },
+  {
+    "id": "source-td3-function-approximation-error",
+    "type": "paper",
+    "label": {
+      "zh": "后续论文",
+      "en": "Follow-up paper"
+    },
+    "title": {
+      "zh": "《解决 Actor-Critic 方法中的函数逼近误差》",
+      "en": "Addressing Function Approximation Error in Actor-Critic Methods"
+    },
+    "url": "https://proceedings.mlr.press/v80/fujimoto18a.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "TD3 论文分析 DDPG 的价值过估计与训练不稳定问题，并提出双 critic 与延迟策略更新。",
+      "en": "The TD3 paper analyzes value overestimation and instability in DDPG and introduces twin critics and delayed policy updates."
+    },
+    "purpose": "follow-up"
   },
   {
     "id": "source-deep-deterministic-policy-gradient-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "深度确定性策略梯度概览",
@@ -54,6 +96,27 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-timothy-lillicrap-stanford-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "斯坦福神经科学中心的蒂莫西·利利克拉普肖像",
+      "en": "Timothy Lillicrap portrait from Stanford Neurosciences"
+    },
+    "url": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "斯坦福神经科学中心托管的肖像原图；来源页未注明与本仓库兼容的再利用许可。",
+      "en": "Portrait image hosted by Stanford Neurosciences; the source does not state a repository-compatible reuse license."
+    },
+    "purpose": "image-provenance"
   }
 ]

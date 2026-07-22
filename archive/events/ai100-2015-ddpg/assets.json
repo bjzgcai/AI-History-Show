@@ -5,12 +5,12 @@
     "path": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
     "role": "architecture-explainer",
     "caption": {
-      "zh": "DDPG 解释图",
-      "en": "DDPG explainer"
+      "zh": "DDPG Actor-Critic 训练闭环",
+      "en": "DDPG actor-critic training loop"
     },
     "subcaption": {
-      "zh": "关于该成就流程的本地原创解释图。",
-      "en": "Original local explainer for the achievement flow."
+      "zh": "Actor 输出连续动作，critic 评估动作价值，经验回放与目标网络用于稳定更新。",
+      "en": "The actor outputs continuous actions, the critic evaluates them, and replay with target networks stabilizes updates."
     },
     "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
     "rights": {
@@ -28,17 +28,17 @@
   {
     "id": "asset-ai100-2015-ddpg-timothy-lillicrap-1",
     "type": "image",
-    "path": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait.png",
+    "path": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
     "role": "portrait",
     "caption": {
       "zh": "蒂莫西·利利克拉普肖像",
       "en": "Timothy Lillicrap portrait"
     },
-    "sourceId": "source-continuous-control-with-deep-reinforcement-learning",
+    "sourceId": "source-timothy-lillicrap-stanford-portrait",
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "本地副本来自Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "zh": "本地副本来自 Stanford Neurosciences；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
         "en": "Local copy from Stanford Neurosciences; the source page does not state a repository-compatible license. Recheck before external redistribution."
       },
       "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"
@@ -52,7 +52,7 @@
       "en": "Lead author of DDPG."
     },
     "sourceName": {
-      "zh": "Stanford Neurosciences",
+      "zh": "斯坦福神经科学中心",
       "en": "Stanford Neurosciences"
     },
     "sourceUrl": "https://neuroscience.stanford.edu/sites/default/files/timothy_lillicrap_1.png"

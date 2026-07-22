@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-nature-article-page",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "出版页",
-      "en": "Publication"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "Nature 文章页面",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-pubmed-record-for-the-nature-paper",
-    "type": "paper",
+    "type": "paper-index",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "论文索引",
+      "en": "Paper index"
     },
     "title": {
       "zh": "Nature 论文 PubMed 记录",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-scikit-learn-nmf-documentation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "文档",
-      "en": "Documentation"
+      "zh": "官方文档",
+      "en": "Official documentation"
     },
     "title": {
       "zh": "scikit-learn NMF 文档",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

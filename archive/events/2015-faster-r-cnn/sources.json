@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "Faster R-CNN：通过区域建议网络迈向实时目标检测",
+      "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》",
       "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
     },
     "url": "https://arxiv.org/abs/1506.01497",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-shaoqingren-faster-rcnn",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-torchvision-faster-r-cnn-model",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
       "zh": "模型文档",
-      "en": "Model docs"
+      "en": "Model documentation"
     },
     "title": {
       "zh": "TorchVision Faster R-CNN 模型",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

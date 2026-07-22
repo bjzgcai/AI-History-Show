@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-science-article-page",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "出版页",
-      "en": "Publication"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "Science 文章页面",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-pubmed-record-for-isomap",
-    "type": "reference-only",
+    "type": "paper-index",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "论文索引",
+      "en": "Paper index"
     },
     "title": {
       "zh": "Isomap 的 PubMed 记录",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-scikit-learn-isomap-documentation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "文档",
-      "en": "Documentation"
+      "zh": "官方文档",
+      "en": "Official documentation"
     },
     "title": {
       "zh": "scikit-learn Isomap 文档",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

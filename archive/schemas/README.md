@@ -84,8 +84,11 @@ Core claims should always include at least one source.
 Each source requires:
 
 - `id`
-- `type`
-- `title`
+- `type`: what the source is; must use `archive/taxonomies/source-types.json`
+- `label`: bilingual display category compatible with the source type
+- `title`: bilingual source name
+- `purpose`: why the source is cited; must use `archive/taxonomies/source-purposes.json`
+- `reliability`: `primary`, `secondary`, `tertiary`, or `reference-only`
 - at least one of `url`, `doi`, or `archiveUrl`
 
 Recommended:
@@ -93,8 +96,20 @@ Recommended:
 - `authors`
 - `year`
 - `language`
-- `reliability`: `primary`, `secondary`, `tertiary`, or `reference-only`
 - `notes`
+
+Paper and documentation sources use these managed display categories:
+
+- `paper`: an actual paper title. The Chinese title uses `《》`; the English title stays in normal type.
+- `paper-page`: a publisher, conference, OpenReview, or other paper landing page.
+- `paper-file`: a direct paper PDF or archived paper file.
+- `paper-index`: a bibliographic index such as PubMed or Semantic Scholar.
+- `book`: an actual book or monograph title. The Chinese title uses `《》`.
+- `book-file`: a direct book PDF or archived book file.
+- `book-index`: a library catalog, metadata record, or bibliographic search result.
+- `documentation`: official, language, optimizer, model, framework, or example documentation.
+
+`label` describes the displayed source category, while `title` names the source. Do not use a relation-only label such as `Method lineage` for a paper; use a paper-aware pair such as `方法源流论文 / Foundational paper`.
 
 ### `assets.json`
 

@@ -1,14 +1,14 @@
 [
   {
     "id": "source-eliza-cacm-paper",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "论文",
-      "en": "Paper"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
-      "zh": "ELIZA CACM paper",
-      "en": "ELIZA CACM paper"
+      "zh": "ELIZA CACM 论文页面",
+      "en": "ELIZA CACM paper page"
     },
     "url": "https://doi.org/10.1145/365153.365168",
     "language": "en",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-mit-news-obituary-for-joseph-weizenbaum",
-    "type": "reference-only",
+    "type": "news",
     "label": {
-      "zh": "机构",
-      "en": "Institution"
+      "zh": "讣告",
+      "en": "Obituary"
     },
     "title": {
       "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆",
@@ -35,7 +36,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-eliza-source-reconstruction-project",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   }
 ]

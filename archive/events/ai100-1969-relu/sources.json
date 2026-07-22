@@ -16,14 +16,15 @@
     "notes": {
       "zh": "福岛邦彦 1969 年关于多层模拟阈值元件网络的原始论文。",
       "en": "Fukushima's 1969 primary paper on a multilayered network of analog threshold elements."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-candc-2021-kunihiko-fukushima",
-    "type": "official-profile",
+    "type": "profile",
     "label": {
-      "zh": "官方人物资料",
-      "en": "Official profile"
+      "zh": "人物资料",
+      "en": "Profile"
     },
     "title": {
       "zh": "2021 年 C&C 奖：福岛邦彦博士",
@@ -35,7 +36,8 @@
     "notes": {
       "zh": "C&C 奖官网的人物介绍与肖像来源页。",
       "en": "Official C&C Prize profile and portrait source page."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-deep-sparse-rectifier-neural-networks",
@@ -54,7 +56,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-rectified-linear-units-improve-restricted-boltzmann-machines",
@@ -73,14 +76,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-rectifier-activation-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "整流激活函数概览",
@@ -92,14 +96,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-yoshua-bengio-profile-at-mila",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
-      "zh": "人物",
-      "en": "People"
+      "zh": "人物资料",
+      "en": "Profile"
     },
     "title": {
       "zh": "Mila 的约书亚·本吉奥资料",
@@ -111,6 +116,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

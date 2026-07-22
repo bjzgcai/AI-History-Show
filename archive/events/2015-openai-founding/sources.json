@@ -3,8 +3,8 @@
     "id": "source-archived-openai-announcement",
     "type": "archive",
     "label": {
-      "zh": "归档公告",
-      "en": "Archived announcement"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "OpenAI 公告归档",
@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-wired-contemporary-coverage",
-    "type": "reference-only",
+    "type": "news",
     "label": {
       "zh": "新闻报道",
       "en": "News report"
@@ -35,11 +36,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "contemporary-reporting"
   },
   {
     "id": "source-bbc-contemporary-coverage",
-    "type": "reference-only",
+    "type": "news",
     "label": {
       "zh": "新闻报道",
       "en": "News report"
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "contemporary-reporting"
   },
   {
     "id": "source-openai-organization-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "OpenAI 组织概览",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

@@ -1,10 +1,10 @@
 [
   {
     "id": "source-suphx-arxiv-paper",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "论文",
-      "en": "Paper"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
       "zh": "Suphx arXiv 论文",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-arxiv-doi-page",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "DOI",
-      "en": "DOI"
+      "zh": "DOI 页面",
+      "en": "DOI page"
     },
     "title": {
       "zh": "arXiv DOI 页面",
@@ -35,7 +36,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-building-a-computer-mahjong-player-via-deep-cnns",
@@ -45,7 +47,7 @@
       "en": "Background paper"
     },
     "title": {
-      "zh": "用深度卷积网络构建麻将程序",
+      "zh": "《用深度卷积网络构建麻将程序》",
       "en": "Building a Computer Mahjong Player via Deep CNNs"
     },
     "url": "https://arxiv.org/abs/1906.02146",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

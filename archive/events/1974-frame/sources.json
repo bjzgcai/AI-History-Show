@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "表示知识的一种框架",
+      "zh": "《表示知识的一种框架》",
       "en": "A Framework for Representing Knowledge"
     },
     "url": "https://courses.media.mit.edu/2004spring/mas966/Minsky%201974%20Framework%20for%20knowledge.pdf",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-marvin-minsky-obituary-mit-news",
-    "type": "reference-only",
+    "type": "news",
     "label": {
-      "zh": "人物资料",
-      "en": "Profile"
+      "zh": "讣告",
+      "en": "Obituary"
     },
     "title": {
       "zh": "马文·明斯基讣告，麻省理工学院新闻",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-frame-mit-ai-memo-bibliographic-record",
-    "type": "reference-only",
+    "type": "paper-index",
     "label": {
-      "zh": "参考资料",
-      "en": "Reference"
+      "zh": "论文索引",
+      "en": "Paper index"
     },
     "title": {
       "zh": "框架论文：麻省理工学院 AI 备忘录书目记录",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   }
 ]

@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-a-new-model-for-learning-in-graph-domains",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-graph-neural-network-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "背景",
-      "en": "Background"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "图神经网络概览",
@@ -54,18 +56,19 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-franco-scarselli-homepage",
-    "type": "profile",
+    "type": "personal-page",
     "label": {
-      "zh": "作者主页",
-      "en": "Author homepage"
+      "zh": "个人主页",
+      "en": "Personal homepage"
     },
     "title": {
       "zh": "弗兰科·斯卡塞利个人主页",
-      "en": "Franco Scarselli homepage"
+      "en": "Franco Scarselli personal homepage"
     },
     "url": "https://www3.diism.unisi.it/~franco/",
     "language": "en",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "锡耶纳大学托管的作者主页和肖像来源。",
       "en": "Author homepage and portrait source hosted by the University of Siena."
-    }
+    },
+    "purpose": "biography"
   }
 ]

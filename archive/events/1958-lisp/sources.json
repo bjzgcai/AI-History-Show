@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "符号表达式的递归函数",
+      "zh": "《符号表达式的递归函数》",
       "en": "Recursive Functions of Symbolic Expressions"
     },
     "url": "https://www-formal.stanford.edu/jmc/recursive.html",
@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-lisp-i-programmer-s-manual",
-    "type": "manual",
+    "type": "documentation",
     "label": {
       "zh": "手册",
       "en": "Manual"
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-history-of-lisp",
-    "type": "history",
+    "type": "article",
     "label": {
-      "zh": "历史",
-      "en": "History"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "Lisp 史",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   }
 ]

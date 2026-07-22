@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-deepmind-alphafold-page",
-    "type": "reference-only",
+    "type": "project-page",
     "label": {
-      "zh": "出版页",
-      "en": "Publication"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "DeepMind AlphaFold 页面",
@@ -31,15 +32,16 @@
     },
     "url": "https://deepmind.google/technologies/alphafold/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-alphafold-protein-structure-database",
-    "type": "reference-only",
+    "type": "dataset",
     "label": {
       "zh": "数据集",
       "en": "Dataset"
@@ -54,7 +56,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "dataset-access"
   },
   {
     "id": "source-alphafold-github-repository",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

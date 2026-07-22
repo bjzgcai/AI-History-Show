@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "量词理论的计算过程",
+      "zh": "《量词理论的计算过程》",
       "en": "A Computing Procedure for Quantification Theory"
     },
     "url": "https://dl.acm.org/doi/10.1145/321033.321034",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-a-machine-program-for-theorem-proving",
-    "type": "program",
+    "type": "paper-page",
     "label": {
-      "zh": "程序",
-      "en": "Program"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "用于定理证明的机器程序",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-wikimedia-commons-hilary-putnam",
-    "type": "photo",
+    "type": "image-source",
     "label": {
-      "zh": "照片",
-      "en": "Photo"
+      "zh": "图片来源",
+      "en": "Image source"
     },
     "title": {
       "zh": "维基共享资源: 希拉里·普特南",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

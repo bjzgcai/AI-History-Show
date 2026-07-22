@@ -1,7 +1,7 @@
 [
   {
     "id": "source-lighthill-report-archive",
-    "type": "archive",
+    "type": "report",
     "label": {
       "zh": "报告",
       "en": "Report"
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "reporting"
   },
   {
     "id": "source-edinburgh-ai-history-perspective",
-    "type": "reference-only",
+    "type": "official-page",
     "label": {
-      "zh": "机构历史",
-      "en": "Institutional history"
+      "zh": "机构页面",
+      "en": "Institution page"
     },
     "title": {
       "zh": "爱丁堡 AI 历史回顾",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-edinburgh-freddy-robot-archive",
     "type": "archive",
     "label": {
-      "zh": "项目档案",
-      "en": "Project archive"
+      "zh": "档案",
+      "en": "Archive"
     },
     "title": {
       "zh": "爱丁堡 Freddy 机器人档案",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-ai-winter-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手史料",
-      "en": "Secondary history"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "AI 寒冬概览",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   }
 ]

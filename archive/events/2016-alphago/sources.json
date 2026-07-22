@@ -1,10 +1,10 @@
 [
   {
     "id": "source-alphago-nature-paper",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "论文",
-      "en": "Paper"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
       "zh": "《自然》 2016 AlphaGo 论文",
@@ -36,14 +36,15 @@
     "url": "https://www.nature.com/articles/nature16961",
     "doi": "10.1038/nature16961",
     "language": "en",
-    "reliability": "primary"
+    "reliability": "primary",
+    "purpose": "alternate-access"
   },
   {
     "id": "source-deepmind-alphago-page",
     "type": "official-page",
     "label": {
-      "zh": "博客",
-      "en": "Blog"
+      "zh": "官方页面",
+      "en": "Official page"
     },
     "title": {
       "zh": "谷歌 DeepMind AlphaGo",
@@ -51,14 +52,15 @@
     },
     "url": "https://deepmind.google/research/alphago/",
     "language": "en",
-    "reliability": "primary"
+    "reliability": "primary",
+    "purpose": "background"
   },
   {
     "id": "source-katago-analysis-engine",
-    "type": "code",
+    "type": "documentation",
     "label": {
-      "zh": "API",
-      "en": "API"
+      "zh": "API 文档",
+      "en": "API documentation"
     },
     "title": {
       "zh": "KataGo 分析引擎",
@@ -70,6 +72,7 @@
     "notes": {
       "zh": "用于未来互动演示参考，不是 AlphaGo 原始资料。",
       "en": "Reference for future interactive demos, not an original AlphaGo source."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

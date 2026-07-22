@@ -1,10 +1,10 @@
 [
   {
     "id": "source-official-statement-on-ai-risk",
-    "type": "project-page",
+    "type": "statement",
     "label": {
-      "zh": "官方声明",
-      "en": "Official statement"
+      "zh": "声明",
+      "en": "Statement"
     },
     "title": {
       "zh": "AI 风险声明官方页面",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "official-statement"
   },
   {
     "id": "source-managing-extreme-ai-risks",
@@ -26,7 +27,7 @@
       "en": "Research paper"
     },
     "title": {
-      "zh": "管理极端 AI 风险",
+      "zh": "《管理极端 AI 风险》",
       "en": "Managing extreme AI risks"
     },
     "url": "https://arxiv.org/abs/2310.17688",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-statement-on-ai-risk-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "AI 风险声明概览",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-center-for-ai-safety",
-    "type": "reference-only",
+    "type": "official-page",
     "label": {
-      "zh": "机构参考",
-      "en": "Institutional reference"
+      "zh": "机构页面",
+      "en": "Institution page"
     },
     "title": {
       "zh": "AI 安全中心",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

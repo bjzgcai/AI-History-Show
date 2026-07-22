@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "逻辑或非数学程序",
+      "zh": "《逻辑或非数学程序》",
       "en": "Logical or non-mathematical programmes"
     },
     "url": "https://dl.acm.org/doi/10.1145/1455270.1455277",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-computer-pioneers-christopher-strachey",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
       "zh": "人物资料",
-      "en": "Biography"
+      "en": "Profile"
     },
     "title": {
       "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
@@ -35,11 +36,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-strachey-draughts-program-screenshot",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -54,11 +56,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   },
   {
     "id": "source-checkers-board-photo",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

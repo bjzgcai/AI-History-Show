@@ -1,14 +1,14 @@
 [
   {
     "id": "source-open-library-book-metadata",
-    "type": "book",
+    "type": "book-index",
     "label": {
-      "zh": "图书元数据",
-      "en": "Book metadata"
+      "zh": "书目记录",
+      "en": "Bibliographic record"
     },
     "title": {
-      "zh": "Open Library 图书元数据",
-      "en": "Open Library book metadata"
+      "zh": "Open Library 书目记录",
+      "en": "Open Library bibliographic record"
     },
     "url": "https://openlibrary.org/works/OL4307570W",
     "language": "en",
@@ -16,18 +16,19 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-open-library-metadata-search-result",
-    "type": "reference-only",
+    "type": "book-index",
     "label": {
-      "zh": "书目核验",
-      "en": "Bibliographic verification"
+      "zh": "书目记录",
+      "en": "Bibliographic record"
     },
     "title": {
-      "zh": "Open Library 元数据检索结果",
-      "en": "Open Library metadata search result"
+      "zh": "Open Library 书目检索结果",
+      "en": "Open Library bibliographic search result"
     },
     "url": "https://openlibrary.org/search.json?title=The%20Human%20Use%20of%20Human%20Beings&author=Norbert%20Wiener",
     "language": "en",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "bibliographic-verification"
   },
   {
     "id": "source-cybernetics-background",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "二手参考",
-      "en": "Secondary reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "控制论背景",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-norbert-wiener-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "人物参考",
-      "en": "Biographical reference"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "诺伯特·维纳概览",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

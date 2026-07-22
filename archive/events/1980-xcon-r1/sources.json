@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "R1：计算机系统领域的专家",
+      "zh": "《R1：计算机系统领域的专家》",
       "en": "R1: An Expert in the Computer Systems Domain"
     },
     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/8022",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-r1-revisited-four-years-in-the-trenches",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "回顾",
-      "en": "Retrospective"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "重访 R1：一线四年",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-xcon-overview",
-    "type": "reference-only",
+    "type": "encyclopedia-entry",
     "label": {
-      "zh": "概览",
-      "en": "Overview"
+      "zh": "百科条目",
+      "en": "Encyclopedia entry"
     },
     "title": {
       "zh": "XCON 概览",
@@ -54,11 +56,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-dec-vax-11-780-photo",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

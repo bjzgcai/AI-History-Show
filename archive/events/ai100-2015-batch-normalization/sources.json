@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-batch-normalization-on-arxiv",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "论文",
-      "en": "Paper"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
       "zh": "arXiv 上的批归一化论文",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-google-research-publication-page",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "出版页",
-      "en": "Publication"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "Google Research 出版页面",
@@ -54,11 +56,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-google-research-archived-pdf",
-    "type": "paper",
+    "type": "paper-file",
     "label": {
       "zh": "论文 PDF",
       "en": "Paper PDF"
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   }
 ]

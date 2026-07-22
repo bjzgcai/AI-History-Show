@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "归一化切分与图像分割",
+      "zh": "《归一化切分与图像分割》",
       "en": "Normalized Cuts and Image Segmentation"
     },
     "url": "https://doi.org/10.1109/34.868688",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-on-spectral-clustering-analysis-and-an-algorithm",
@@ -26,7 +27,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "论谱聚类：分析与算法",
+      "zh": "《论谱聚类：分析与算法》",
       "en": "On Spectral Clustering: Analysis and an algorithm"
     },
     "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-scikit-learn-spectral-clustering-documentation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "文档",
-      "en": "Documentation"
+      "zh": "官方文档",
+      "en": "Official documentation"
     },
     "title": {
       "zh": "scikit-learn 谱聚类文档",
@@ -54,11 +56,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-spectral-graph-illustration",
-    "type": "reference-only",
+    "type": "image-source",
     "label": {
       "zh": "图片来源",
       "en": "Image source"
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "image-provenance"
   }
 ]

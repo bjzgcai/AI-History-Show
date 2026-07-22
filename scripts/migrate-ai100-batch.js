@@ -8,6 +8,13 @@ const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const events = require('../manage/events.js');
 const quizCatalog = require('../manage/quizzes.js');
+const {
+    sourceLabel,
+    sourcePurpose,
+    sourceReliability,
+    sourceTitle,
+    sourceTypeFromLegacy
+} = require('./archive-source-normalizer.js');
 
 const DEFAULT_KEYS = [
     '1950-turing-test',
@@ -58,24 +65,6 @@ function slug(value, fallback = 'item') {
     return raw || fallback;
 }
 
-function sourceType(rawType) {
-    const value = text(rawType, 'en').toLowerCase();
-    if (value.includes('paper') || value.includes('论文')) return 'paper';
-    if (value.includes('blog')) return 'official-page';
-    if (value.includes('api') || value.includes('code') || value.includes('github')) return 'code';
-    if (value.includes('book')) return 'book';
-    if (value.includes('video')) return 'video';
-    if (value.includes('archive')) return 'archive';
-    if (value.includes('project')) return 'project-page';
-    return value ? slug(value, 'other') : 'other';
-}
-
-function sourceReliability(index, type) {
-    if (index === 0 && (type === 'paper' || type === 'official-page')) return 'primary';
-    if (type === 'paper' || type === 'official-page' || type === 'project-page') return 'secondary';
-    return 'reference-only';
-}
-
 function assetRole(assetPath, index) {
     const p = assetPath.toLowerCase();
     if (p.includes('people') || p.includes('figures') || p.includes('portrait'))
@@ -108,16 +97,17 @@ function buildSources(key, ev) {
         (source) => source && source.url
     );
     const sources = rawSources.map((source, index) => {
-        const type = sourceType(source.type);
-        const title = localized(source.label || source.title || source.url, source.url);
+        const type = sourceTypeFromLegacy(source.type, source.label, source.title, source.url);
+        const title = sourceTitle(type, localized(source.title || source.label || source.url, source.url));
         return {
             id: `source-${slug(text(title, 'en') || text(title, 'zh') || `${key}-${index + 1}`, `source-${index + 1}`)}`,
             type,
-            label: localized(source.type || type, type),
+            label: sourceLabel(type),
             title,
             url: source.url,
             language: 'en',
-            reliability: sourceReliability(index, type),
+            purpose: sourcePurpose(type, index, source.type, source.label, source.title),
+            reliability: sourceReliability(type, index, source.reliability),
             notes: {
                 zh:
                     index === 0
@@ -134,11 +124,13 @@ function buildSources(key, ev) {
     if (sources.length === 0) {
         sources.push({
             id: 'source-legacy-ai100-notes',
-            type: 'reference-only',
+            type: 'internal-record',
+            label: sourceLabel('internal-record'),
             title: localized('Legacy BenchCouncil AI100 achievement notes'),
             url: 'https://www.benchcouncil.org/',
             language: 'en',
-            reliability: 'reference-only',
+            purpose: sourcePurpose('internal-record'),
+            reliability: sourceReliability('internal-record'),
             notes: {
                 zh: '临时来源占位，需要后续补充主论文或原始资料。',
                 en: 'Temporary source placeholder; primary paper or original material should be added later.'

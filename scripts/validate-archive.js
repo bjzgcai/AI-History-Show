@@ -9,9 +9,70 @@ const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
 const REPORT_PATH = path.join(ROOT, 'reports', 'archive-validation.md');
+const SOURCE_TYPE_TAXONOMY = require('../archive/taxonomies/source-types.json');
+const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.json');
 
 const REQUIRED_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
+const SOURCE_TYPE_IDS = new Set(SOURCE_TYPE_TAXONOMY.map((entry) => entry.id));
+const SOURCE_PURPOSE_IDS = new Set(SOURCE_PURPOSE_TAXONOMY.map((entry) => entry.id));
+const SOURCE_RELIABILITY_IDS = new Set(['primary', 'secondary', 'tertiary', 'reference-only']);
+
+const MANAGED_SOURCE_LABELS = {
+    paper: new Set([
+        '论文 / Paper',
+        '原始论文 / Primary paper',
+        '相关论文 / Related paper',
+        '前序论文 / Precursor paper',
+        '后续论文 / Follow-up paper',
+        '背景论文 / Background paper',
+        '应用论文 / Application paper',
+        '研究论文 / Research paper',
+        '会议论文 / Conference paper',
+        '方法源流论文 / Foundational paper',
+        '收敛研究论文 / Convergence paper'
+    ]),
+    'paper-page': new Set([
+        '论文页面 / Paper page',
+        '会议论文页面 / Conference paper page',
+        '出版页面 / Publication page',
+        '预印本页面 / Preprint page',
+        'DOI 页面 / DOI page'
+    ]),
+    'paper-file': new Set(['论文 PDF / Paper PDF']),
+    'paper-index': new Set(['论文索引 / Paper index']),
+    book: new Set(['图书 / Book', '专著 / Monograph']),
+    'book-page': new Set(['图书页面 / Book page']),
+    'book-file': new Set(['图书 PDF / Book PDF']),
+    'book-index': new Set(['书目记录 / Bibliographic record']),
+    documentation: new Set([
+        '官方文档 / Official documentation',
+        'API 文档 / API documentation',
+        '软件包文档 / Package documentation',
+        '手册 / Manual',
+        '指南 / Guide',
+        '语言文档 / Language documentation',
+        '优化器文档 / Optimizer documentation',
+        '模型文档 / Model documentation',
+        '框架文档 / Framework documentation',
+        '示例文档 / Example documentation'
+    ]),
+    code: new Set(['代码 / Code']),
+    'project-page': new Set(['项目页面 / Project page']),
+    'official-page': new Set(['官方页面 / Official page', '机构页面 / Institution page']),
+    'personal-page': new Set(['个人主页 / Personal homepage']),
+    profile: new Set(['人物资料 / Profile']),
+    archive: new Set(['档案 / Archive']),
+    article: new Set(['文章 / Article']),
+    news: new Set(['新闻报道 / News report', '讣告 / Obituary']),
+    report: new Set(['报告 / Report']),
+    'encyclopedia-entry': new Set(['百科条目 / Encyclopedia entry']),
+    'image-source': new Set(['图片来源 / Image source']),
+    dataset: new Set(['数据集 / Dataset']),
+    statement: new Set(['声明 / Statement']),
+    thesis: new Set(['学位论文 / Thesis']),
+    'internal-record': new Set(['内部记录 / Internal record'])
+};
 
 const state = {
     errors: [],
@@ -79,6 +140,11 @@ function checkLocalized(filePath, value, label, options = {}) {
         }
     }
     return ok;
+}
+
+function localizedPairKey(value) {
+    if (!isObject(value)) return '';
+    return `${String(value.zh || '').trim()} / ${String(value.en || '').trim()}`;
 }
 
 function toIdSet(items) {
@@ -161,12 +227,62 @@ function validateSources(eventDir, sources) {
 
     for (const source of sources) {
         if (!isObject(source)) continue;
-        if (!hasText(source.type)) addError(filePath, `source ${source.id || '<missing>'} is missing type.`);
+        if (!hasText(source.type)) {
+            addError(filePath, `source ${source.id || '<missing>'} is missing type.`);
+        } else if (!SOURCE_TYPE_IDS.has(source.type)) {
+            addError(filePath, `source ${source.id || '<missing>'} uses unknown source type: ${source.type}`);
+        }
         if (!hasText(source.title) && !isObject(source.title)) {
             addError(filePath, `source ${source.id || '<missing>'} is missing title.`);
         }
         if (!hasText(source.url) && !hasText(source.doi) && !hasText(source.archiveUrl)) {
             addError(filePath, `source ${source.id || '<missing>'} must include url, doi, or archiveUrl.`);
+        }
+
+        checkLocalized(filePath, source.label, `source ${source.id || '<missing>'} label`);
+        checkLocalized(filePath, source.title, `source ${source.id || '<missing>'} title`);
+
+        if (!hasText(source.purpose)) {
+            addError(filePath, `source ${source.id || '<missing>'} is missing purpose.`);
+        } else if (!SOURCE_PURPOSE_IDS.has(source.purpose)) {
+            addError(filePath, `source ${source.id || '<missing>'} uses unknown source purpose: ${source.purpose}`);
+        }
+
+        if (!hasText(source.reliability)) {
+            addError(filePath, `source ${source.id || '<missing>'} is missing reliability.`);
+        } else if (!SOURCE_RELIABILITY_IDS.has(source.reliability)) {
+            addError(filePath, `source ${source.id || '<missing>'} uses unknown reliability: ${source.reliability}`);
+        }
+
+        const allowedLabels = MANAGED_SOURCE_LABELS[source.type];
+        if (allowedLabels) {
+            const labelKey = localizedPairKey(source.label);
+            if (!allowedLabels.has(labelKey)) {
+                addError(
+                    filePath,
+                    `source ${source.id || '<missing>'} has unsupported ${source.type} label: ${labelKey || '<missing>'}`
+                );
+            }
+        }
+
+        if (source.type === 'paper' && isObject(source.title)) {
+            const chineseTitle = String(source.title.zh || '').trim();
+            if (!/^《.+》$/.test(chineseTitle)) {
+                addError(
+                    filePath,
+                    `source ${source.id || '<missing>'} Chinese paper title must use book-title marks: ${chineseTitle || '<missing>'}`
+                );
+            }
+        }
+
+        if (source.type === 'book' && isObject(source.title)) {
+            const chineseTitle = String(source.title.zh || '').trim();
+            if (!/^《.+》$/.test(chineseTitle)) {
+                addError(
+                    filePath,
+                    `source ${source.id || '<missing>'} Chinese book title must use book-title marks: ${chineseTitle || '<missing>'}`
+                );
+            }
         }
     }
 

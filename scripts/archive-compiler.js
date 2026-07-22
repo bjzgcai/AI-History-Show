@@ -46,6 +46,7 @@ function sourceDisplay(source) {
                 ? localizePair(source.title)
                 : localizePair({ zh: source.title || '', en: source.title || '' }),
         url: source.url || source.doi || source.archiveUrl || '',
+        purpose: source.purpose || '',
         reliability: source.reliability || '',
         sourceType: source.type || ''
     };

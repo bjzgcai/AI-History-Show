@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "神经网络与物理系统",
+      "zh": "《神经网络与物理系统》",
       "en": "Neural Networks and Physical Systems"
     },
     "url": "https://doi.org/10.1073/pnas.79.8.2554",
@@ -16,13 +16,14 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-nobel-prize-john-j-hopfield-facts",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
-      "zh": "人物",
+      "zh": "人物资料",
       "en": "Profile"
     },
     "title": {
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-princeton-neuroscience-institute-profile",
-    "type": "reference-only",
+    "type": "profile",
     "label": {
-      "zh": "机构",
-      "en": "Institution"
+      "zh": "人物资料",
+      "en": "Profile"
     },
     "title": {
       "zh": "Princeton Neuroscience Institute profile",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   }
 ]

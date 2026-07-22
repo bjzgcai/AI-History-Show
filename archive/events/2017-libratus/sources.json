@@ -1,10 +1,10 @@
 [
   {
     "id": "source-science-paper",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "论文",
-      "en": "Paper"
+      "zh": "论文页面",
+      "en": "Paper page"
     },
     "title": {
       "zh": "Science 论文",
@@ -16,11 +16,12 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-cmu-libratus-release",
-    "type": "reference-only",
+    "type": "news",
     "label": {
       "zh": "新闻报道",
       "en": "News report"
@@ -35,14 +36,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "contemporary-reporting"
   },
   {
     "id": "source-safe-and-nested-subgame-solving",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "预印本",
-      "en": "Preprint"
+      "zh": "预印本页面",
+      "en": "Preprint page"
     },
     "title": {
       "zh": "安全嵌套子局求解论文",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   }
 ]

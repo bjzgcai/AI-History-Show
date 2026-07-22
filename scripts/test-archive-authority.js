@@ -8,7 +8,17 @@ const path = require('node:path');
 
 const packageJson = require('../package.json');
 const { milestones } = require('../milestones-data.js');
+const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.json');
+const sourceSchema = require('../archive/schemas/source.schema.json');
+const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
 const { compileArchive } = require('./archive-compiler.js');
+const {
+    sourceLabel,
+    sourcePurpose,
+    sourceReliability,
+    sourceTitle,
+    sourceTypeFromLegacy
+} = require('./archive-source-normalizer.js');
 const { generateArchiveData, normalizeGeneratedTime, writeOutputsAtomically } = require('./generate-archive-data.js');
 
 function createTempDir() {
@@ -37,6 +47,85 @@ assert.equal(
     'node manage/generate.js',
     'the Legacy generator must require an explicit command'
 );
+
+assert.equal(sourceTypeFromLegacy('Personal homepage'), 'personal-page');
+assert.equal(sourceTypeFromLegacy('Open Library book metadata'), 'book-index');
+assert.equal(sourceTypeFromLegacy('Conference paper page'), 'paper-page');
+assert.equal(sourceTypeFromLegacy('Researcher portrait', 'Profile'), 'image-source');
+assert.equal(sourceTypeFromLegacy('Unknown web reference'), 'article');
+assert.equal(
+    sourceTypeFromLegacy(
+        'Manual',
+        '',
+        "LISP I Programmer's Manual",
+        'https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view'
+    ),
+    'documentation'
+);
+assert.equal(
+    sourceTypeFromLegacy('Report', '', 'Lighthill report', 'https://example.org/lighthill-report.pdf'),
+    'report'
+);
+assert.equal(
+    sourceTypeFromLegacy('Image source', '', 'Cyc project logo image', 'https://commons.wikimedia.org/logo.png'),
+    'image-source'
+);
+assert.deepEqual(sourceLabel('personal-page'), { zh: '个人主页', en: 'Personal homepage' });
+assert.deepEqual(sourceTitle('paper', { zh: '测试论文', en: 'Test Paper' }), {
+    zh: '《测试论文》',
+    en: 'Test Paper'
+});
+assert.equal(sourcePurpose('personal-page'), 'biography');
+assert.equal(sourcePurpose('internal-record'), 'migration-only');
+assert.equal(sourcePurpose('paper', 2, 'Precursor paper'), 'precursor');
+assert.equal(sourceReliability('personal-page', 0), 'primary');
+assert.equal(sourceReliability('documentation', 3), 'primary');
+assert.deepEqual(
+    new Set(sourceSchema.items.properties.type.enum),
+    new Set(sourceTypeTaxonomy.map((entry) => entry.id)),
+    'source schema type enum must match the managed taxonomy'
+);
+assert.deepEqual(
+    new Set(sourceSchema.items.properties.purpose.enum),
+    new Set(sourcePurposeTaxonomy.map((entry) => entry.id)),
+    'source schema purpose enum must match the managed taxonomy'
+);
+console.log('PASS legacy source migration uses the managed taxonomy');
+
+const sourceClassificationCases = [
+    ['2018-bert', 'source-google-ai-bert-blog-post', 'article', 'background'],
+    ['2018-gpt', 'source-openai-language-unsupervised-page', 'article', 'background'],
+    ['2020-alphafold', 'source-deepmind-alphafold-page', 'project-page', 'background'],
+    ['ai100-2021-clip', 'source-openai-clip-blog-post', 'article', 'background'],
+    ['ai100-2021-dalle', 'source-openai-dall-e-blog-post', 'article', 'background']
+];
+for (const [eventId, sourceId, expectedType, expectedPurpose] of sourceClassificationCases) {
+    const sources = require(`../archive/events/${eventId}/sources.json`);
+    const source = sources.find((entry) => entry.id === sourceId);
+    assert.ok(source, `${eventId} must retain source ${sourceId}`);
+    assert.equal(source.type, expectedType, `${eventId}/${sourceId} must keep its semantic source type`);
+    assert.equal(source.purpose, expectedPurpose, `${eventId}/${sourceId} must keep its citation purpose`);
+}
+assert.equal(
+    require('../archive/events/2018-gpt/sources.json').some(
+        (source) => source.id === 'source-alec-radford-research-context'
+    ),
+    false,
+    'the generic OpenAI research index must not be presented as Alec Radford biography evidence'
+);
+
+const ddpgSources = require('../archive/events/ai100-2015-ddpg/sources.json');
+const ddpgAssets = require('../archive/events/ai100-2015-ddpg/assets.json');
+const ddpgPortrait = ddpgAssets.find((asset) => asset.id === 'asset-ai100-2015-ddpg-timothy-lillicrap-1');
+const ddpgPortraitSource = ddpgSources.find((source) => source.id === ddpgPortrait.sourceId);
+assert.equal(ddpgPortraitSource.type, 'image-source');
+assert.equal(ddpgPortraitSource.url, ddpgPortrait.rights.sourceUrl);
+assert.match(ddpgPortrait.path, /-display\.png$/);
+assert.ok(
+    fs.statSync(path.join(__dirname, '..', ddpgPortrait.path)).size < 1024 * 1024,
+    'the display portrait should stay below 1 MiB'
+);
+console.log('PASS normalized source display and portrait provenance checks');
 
 const compilerSource = fs.readFileSync(path.join(__dirname, 'archive-compiler.js'), 'utf8');
 for (const legacyInput of ['manage/event-fusions.js', 'manage/events.js', 'manage/catalog.js']) {

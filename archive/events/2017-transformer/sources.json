@@ -23,14 +23,15 @@
     "year": 2017,
     "url": "https://arxiv.org/abs/1706.03762",
     "language": "en",
-    "reliability": "primary"
+    "reliability": "primary",
+    "purpose": "core-evidence"
   },
   {
     "id": "source-transformer-neurips",
-    "type": "paper",
+    "type": "paper-page",
     "label": {
-      "zh": "会议论文",
-      "en": "Conference paper"
+      "zh": "会议论文页面",
+      "en": "Conference paper page"
     },
     "title": {
       "zh": "NeurIPS 论文页面",
@@ -39,14 +40,15 @@
     "year": 2017,
     "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
     "language": "en",
-    "reliability": "primary"
+    "reliability": "primary",
+    "purpose": "alternate-access"
   },
   {
     "id": "source-google-research-publication",
-    "type": "official-page",
+    "type": "paper-page",
     "label": {
-      "zh": "出版页",
-      "en": "Publication"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "Google Research 出版页面",
@@ -54,14 +56,15 @@
     },
     "url": "https://research.google/pubs/attention-is-all-you-need/",
     "language": "en",
-    "reliability": "primary"
+    "reliability": "primary",
+    "purpose": "alternate-access"
   },
   {
     "id": "source-google-transformer-blog",
-    "type": "official-page",
+    "type": "article",
     "label": {
-      "zh": "回顾",
-      "en": "Retrospective"
+      "zh": "文章",
+      "en": "Article"
     },
     "title": {
       "zh": "Google Research Transformer 博客",
@@ -69,6 +72,7 @@
     },
     "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
     "language": "en",
-    "reliability": "secondary"
+    "reliability": "secondary",
+    "purpose": "historical-context"
   }
 ]

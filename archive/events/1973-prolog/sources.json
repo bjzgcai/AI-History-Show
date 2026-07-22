@@ -1,10 +1,10 @@
 [
   {
     "id": "source-the-birth-of-prolog",
-    "type": "reference-only",
+    "type": "paper-page",
     "label": {
-      "zh": "历史",
-      "en": "History"
+      "zh": "出版页面",
+      "en": "Publication page"
     },
     "title": {
       "zh": "Prolog 的诞生",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   },
   {
     "id": "source-prolog-heritage",
@@ -35,17 +36,18 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "historical-context"
   },
   {
     "id": "source-swi-prolog-documentation",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
       "zh": "语言文档",
-      "en": "Language docs"
+      "en": "Language documentation"
     },
     "title": {
-      "zh": "SWI-Prolog documentation",
+      "zh": "SWI-Prolog 文档",
       "en": "SWI-Prolog documentation"
     },
     "url": "https://www.swi-prolog.org/pldoc/doc_for?object=manual",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   }
 ]

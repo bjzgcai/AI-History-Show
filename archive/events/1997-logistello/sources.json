@@ -3,8 +3,8 @@
     "id": "source-logistello-homepage",
     "type": "project-page",
     "label": {
-      "zh": "官方页面",
-      "en": "Official page"
+      "zh": "项目页面",
+      "en": "Project page"
     },
     "title": {
       "zh": "Logistello 主页",
@@ -16,14 +16,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   },
   {
     "id": "source-murakami-vs-logistello",
-    "type": "reference-only",
+    "type": "report",
     "label": {
-      "zh": "对局报告",
-      "en": "Match report"
+      "zh": "报告",
+      "en": "Report"
     },
     "title": {
       "zh": "村上健对 Logistello",
@@ -35,7 +36,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "reporting"
   },
   {
     "id": "source-statistical-feature-combination",
@@ -45,7 +47,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "统计特征组合论文",
+      "zh": "《统计特征组合》",
       "en": "Statistical Feature Combination"
     },
     "url": "https://arxiv.org/abs/cs/9512106",
@@ -54,14 +56,15 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-michael-buro-publications",
-    "type": "reference-only",
+    "type": "paper-index",
     "label": {
-      "zh": "论文列表",
-      "en": "Publication list"
+      "zh": "论文索引",
+      "en": "Paper index"
     },
     "title": {
       "zh": "迈克尔·布罗论文列表",
@@ -73,6 +76,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "alternate-access"
   }
 ]

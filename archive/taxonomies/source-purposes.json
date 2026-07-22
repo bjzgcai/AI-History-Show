@@ -1,0 +1,17 @@
+[
+  { "id": "core-evidence", "label": { "zh": "核心证据", "en": "Core evidence" } },
+  { "id": "precursor", "label": { "zh": "前序研究", "en": "Precursor" } },
+  { "id": "follow-up", "label": { "zh": "后续研究", "en": "Follow-up" } },
+  { "id": "alternate-access", "label": { "zh": "替代访问入口", "en": "Alternate access" } },
+  { "id": "background", "label": { "zh": "背景资料", "en": "Background" } },
+  { "id": "historical-context", "label": { "zh": "历史语境", "en": "Historical context" } },
+  { "id": "biography", "label": { "zh": "人物资料", "en": "Biography" } },
+  { "id": "image-provenance", "label": { "zh": "图片溯源", "en": "Image provenance" } },
+  { "id": "implementation", "label": { "zh": "实现资料", "en": "Implementation" } },
+  { "id": "dataset-access", "label": { "zh": "数据访问", "en": "Dataset access" } },
+  { "id": "contemporary-reporting", "label": { "zh": "同期报道", "en": "Contemporary reporting" } },
+  { "id": "official-statement", "label": { "zh": "官方声明", "en": "Official statement" } },
+  { "id": "reporting", "label": { "zh": "报告记录", "en": "Reporting" } },
+  { "id": "bibliographic-verification", "label": { "zh": "书目核验", "en": "Bibliographic verification" } },
+  { "id": "migration-only", "label": { "zh": "仅用于迁移", "en": "Migration only" } }
+]

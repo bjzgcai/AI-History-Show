@@ -1,10 +1,10 @@
 [
   {
     "id": "source-otter-3-3-reference-manual",
-    "type": "reference-only",
+    "type": "documentation",
     "label": {
-      "zh": "参考文献",
-      "en": "Reference"
+      "zh": "手册",
+      "en": "Manual"
     },
     "title": {
       "zh": "OTTER 3.3 参考手册",
@@ -16,7 +16,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "implementation"
   },
   {
     "id": "source-a-spectrum-of-applications-of-automated-reasoning",
@@ -26,7 +27,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "自动推理应用谱系",
+      "zh": "《自动推理应用谱系》",
       "en": "A Spectrum of Applications of Automated Reasoning"
     },
     "url": "https://arxiv.org/abs/cs/0205078",
@@ -35,7 +36,8 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-checking-clinical-guidelines-using-automated-reasoning-tools",
@@ -45,7 +47,7 @@
       "en": "Application paper"
     },
     "title": {
-      "zh": "使用自动推理工具检查临床指南",
+      "zh": "《使用自动推理工具检查临床指南》",
       "en": "Checking Clinical Guidelines using Automated Reasoning Tools"
     },
     "url": "https://arxiv.org/abs/0806.0250",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "background"
   }
 ]

@@ -7,7 +7,7 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "Learning to Predict by the Methods of Temporal Differences",
+      "zh": "《利用时序差分方法学习预测》",
       "en": "Learning to Predict by the Methods of Temporal Differences"
     },
     "url": "https://doi.org/10.1007/BF00115009",
@@ -16,33 +16,35 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "core-evidence"
   },
   {
     "id": "source-richard-sutton-homepage",
-    "type": "reference-only",
+    "type": "personal-page",
     "label": {
       "zh": "个人主页",
-      "en": "Homepage"
+      "en": "Personal homepage"
     },
     "title": {
-      "zh": "理查德·萨顿 homepage",
-      "en": "Richard Sutton homepage"
+      "zh": "理查德·萨顿个人主页",
+      "en": "Richard Sutton personal homepage"
     },
     "url": "http://incompleteideas.net/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "biography"
   },
   {
     "id": "source-acm-2024-turing-award-announcement",
-    "type": "reference-only",
+    "type": "news",
     "label": {
-      "zh": "奖项资料",
-      "en": "Award"
+      "zh": "新闻报道",
+      "en": "News report"
     },
     "title": {
       "zh": "ACM 2024 图灵 Award announcement",
@@ -54,6 +56,7 @@
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
-    }
+    },
+    "purpose": "contemporary-reporting"
   }
 ]
