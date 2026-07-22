@@ -10195,7 +10195,7 @@
             },
             {
                 id: 'humanistic-cycle',
-                layout: 'branch-timeline',
+                layout: 'ui-browser',
                 label: {
                     en: 'Humanistic & Emotional Cycles of AI',
                     zh: 'AI 的人文与情绪周期'
@@ -17079,6 +17079,57 @@
             panel.style.setProperty('--ui-event-progress-width', `${progressWidth.toFixed(2)}px`);
         }
 
+        let pageWheelFallbackRaf = 0;
+        let pageWheelFallbackDelta = 0;
+        let pageWheelFallbackStart = 0;
+
+        function canNestedScrollerHandleWheel(target, deltaY) {
+            let element = target && target.nodeType === 1 ? target : target && target.parentElement;
+            while (element && element !== document.body && element !== document.documentElement) {
+                const style = window.getComputedStyle(element);
+                const scrollable = /^(auto|scroll|overlay)$/.test(style.overflowY)
+                    && element.scrollHeight > element.clientHeight + 1;
+                if (scrollable) {
+                    const maxScroll = element.scrollHeight - element.clientHeight;
+                    if ((deltaY < 0 && element.scrollTop > 1)
+                        || (deltaY > 0 && element.scrollTop < maxScroll - 1)) {
+                        return true;
+                    }
+                }
+                element = element.parentElement;
+            }
+            return false;
+        }
+
+        function handlePageWheelFallback(event) {
+            if (!event || event.ctrlKey || isBranchTimelineActive()) return;
+            const deltaX = Number.isFinite(event.deltaX) ? event.deltaX : 0;
+            let deltaY = Number.isFinite(event.deltaY) ? event.deltaY : 0;
+            if (!deltaY || Math.abs(deltaY) <= Math.abs(deltaX)) return;
+            if (event.deltaMode === 1) deltaY *= 16;
+            if (event.deltaMode === 2) deltaY *= window.innerHeight;
+
+            const target = event.target && event.target.nodeType === 1 ? event.target : event.target && event.target.parentElement;
+            if (target && target.closest('.photo-viewer, .quiz-modal:not(.is-hidden), .storyline-modal:not(.is-hidden), .about-modal:not(.is-hidden), .region-modal:not(.is-hidden), .mobile-quiz-app:not(.is-hidden)')) return;
+            if (canNestedScrollerHandleWheel(target, deltaY)) return;
+
+            const scrollingElement = document.scrollingElement || document.documentElement;
+            const maxScroll = Math.max(0, scrollingElement.scrollHeight - scrollingElement.clientHeight);
+            const currentScroll = scrollingElement.scrollTop;
+            if (!maxScroll || (deltaY < 0 && currentScroll <= 0) || (deltaY > 0 && currentScroll >= maxScroll - 1)) return;
+
+            pageWheelFallbackDelta += deltaY;
+            if (pageWheelFallbackRaf) return;
+            pageWheelFallbackStart = currentScroll;
+            pageWheelFallbackRaf = window.requestAnimationFrame(() => {
+                pageWheelFallbackRaf = 0;
+                const pendingDelta = pageWheelFallbackDelta;
+                pageWheelFallbackDelta = 0;
+                if (Math.abs(scrollingElement.scrollTop - pageWheelFallbackStart) >= 1) return;
+                window.scrollBy({ top: pendingDelta, left: 0, behavior: 'auto' });
+            });
+        }
+
         function getScrollCenterLeft(scroller, item) {
             if (!scroller || !item) return 0;
             return item.offsetLeft - (scroller.clientWidth - item.offsetWidth) / 2;
@@ -18524,6 +18575,7 @@
             document.addEventListener('pointermove', registerUserActivity, { passive: true });
             document.addEventListener('click', registerUserActivity, { passive: true });
             document.addEventListener('wheel', registerUserActivity, { passive: true });
+            document.addEventListener('wheel', handlePageWheelFallback, { passive: true });
             document.addEventListener('touchstart', registerUserActivity, { passive: true });
             document.addEventListener('touchmove', registerUserActivity, { passive: true });
             document.addEventListener('touchstart', handlePortraitEdgeTouchStart, { passive: true });
