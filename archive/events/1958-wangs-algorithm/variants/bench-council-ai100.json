@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>王浩在 1950 年代末研究如何让机器按照公式的逻辑形状自动构造证明，并在 1960、1961 年发表“通过模式识别证明定理”系列论文。算法把命题或谓词演算公式转换为规则可以识别的结构，再反复拆分、简化和检查分支是否满足闭合条件。</p><p>与任意枚举证明步骤相比，这种模式驱动的归约让大量操作成为确定性的结构变换，只在必要处保留搜索。王氏算法证明了形式逻辑可以高效转译为机器程序，是自动定理证明的重要早期成果，也为后来的证明过程、逻辑编程和 SAT 式推理提供了方法线索。</p>",
+    "en": "<p>In the late 1950s, Hao Wang investigated how a machine could construct proofs by following the logical form of formulas, publishing the two <em>Proving Theorems by Pattern Recognition</em> papers in 1960 and 1961. The procedures transformed propositional or predicate-calculus formulas into recognizable structures, then repeatedly split, simplified, and tested branches for closure.</p><p>Compared with arbitrary enumeration of proof steps, this pattern-guided reduction made many operations deterministic structural transformations and reserved search for the remaining choices. Wang's work demonstrated that formal logic could be translated into effective machine procedures, becoming an early milestone in automated theorem proving and a methodological precursor to later proof systems, logic programming, and SAT-style reasoning.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"

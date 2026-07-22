@@ -79,8 +79,8 @@
     }
   ],
   "displayDescription": {
-    "en": "<p>In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems.</p>",
-    "zh": "<p>2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>"
+    "en": "<p>The 2017 Transformer replaced recurrent sequence processing with stacked multi-head self-attention and feed-forward blocks. Each token forms query, key, and value representations, allowing the model to weigh relationships across a sequence in parallel; positional encodings supply order information that recurrence previously carried. The original encoder-decoder system was designed for machine translation and achieved strong results with substantially more parallel training.</p><p>This architecture made attention a general computational primitive rather than an auxiliary component attached to an RNN. Its scalable blocks later supported BERT, GPT-style language models, vision transformers, multimodal systems, and many agent foundations. Experts generally regard the Transformer as a defining modern AI architecture, while recognizing that its standard attention mechanism can become expensive on very long sequences.</p>",
+    "zh": "<p>2017 年的 Transformer 用堆叠的多头自注意力和前馈模块替代循环序列处理。每个词元生成 query、key 和 value 表示，使模型能够并行衡量序列中不同位置的关系；位置编码则补充原本由循环结构携带的顺序信息。最初的编码器—解码器系统面向机器翻译，并通过更高的训练并行度取得强劲结果。</p><p>这一架构让注意力从附着在 RNN 上的辅助模块变成通用计算单元。可扩展的模块后来支撑 BERT、GPT 式语言模型、视觉 Transformer、多模态系统和许多智能体基础。专家通常把 Transformer 视为现代 AI 的定义性架构，同时也指出标准注意力处理超长序列时会带来较高计算开销。</p>"
   },
   "category": {
     "en": "BenchCouncil AI100 Achievements",

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>纳夫尼特·达拉尔和比尔·特里格斯推广了用于人体检测的方向梯度直方图。该描述子在归一化单元中总结局部边缘方向，使行人检测在深度 CNN 特征占主导之前更加稳健。</p>",
-    "en": "<p>Navneet Dalal and Bill Triggs popularized Histograms of Oriented Gradients for human detection. The descriptor summarized local edge orientations over normalized cells, making pedestrian detection more robust before deep CNN features became dominant.</p>"
+    "zh": "<p>达拉尔和特里格斯在 2005 年提出用于行人检测的方向梯度直方图。HOG 把图像窗口划分为小单元，统计每个单元内边缘梯度的方向分布，再在较大的块中归一化这些直方图，以降低光照和局部对比度变化的影响。</p><p>人体轮廓和局部形状由一组稳定的方向统计表示，配合线性支持向量机和滑动窗口即可完成检测。HOG 在深度卷积特征普及前成为行人检测和形状识别的重要基线。它依赖手工设计特征，对遮挡和大幅姿态变化仍有限，但清楚展示了局部梯度如何编码物体外形。</p>",
+    "en": "<p>Navneet Dalal and Bill Triggs introduced Histograms of Oriented Gradients for pedestrian detection in 2005. HOG divides an image window into small cells, counts the directions of local intensity gradients within each cell, and normalizes those histograms over larger blocks to reduce sensitivity to illumination and local contrast.</p><p>A person's outline and local shape become a stable collection of orientation statistics that can be classified with a linear support vector machine in a sliding-window detector. HOG became an important baseline for pedestrian detection and shape recognition before deep convolutional features. Its hand-designed representation remains limited under occlusion and large pose changes, but it clearly demonstrated how local gradients can encode object form.</p>"
   },
   "emphasis": [
     "batch-migration",

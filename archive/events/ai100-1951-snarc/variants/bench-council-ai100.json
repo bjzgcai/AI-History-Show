@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>",
-    "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>"
+    "zh": "<p>马文·明斯基和迪恩·埃德蒙兹在 1951 年建造 SNARC，即随机神经模拟强化计算机。机器用真空管、电机和模拟连接构成多个神经元式单元，模拟一只虚拟老鼠在迷宫中选择路径；当某条路径获得“奖励”时，相关连接的通过概率会被增强。</p><p>SNARC 规模很小，也不是现代数字神经网络，但它把随机决策、可变连接和强化信号组合成可运行硬件，展示行为能够通过经验逐渐改变。它是早期神经模拟与强化学习史上的重要实物案例，也反映了 AI 尚未定型时模拟电路、心理学和学习理论之间的紧密联系。</p>",
+    "en": "<p>Marvin Minsky and Dean Edmonds built SNARC, the Stochastic Neural Analog Reinforcement Calculator, in 1951. Using vacuum tubes, motors, and analog connections, the machine assembled neuron-like units that simulated a virtual rat choosing paths through a maze. When a path received a “reward,” the probability of transmission through associated connections increased.</p><p>SNARC was small and unlike a modern digital neural network, but it combined stochastic choice, modifiable connections, and reinforcement signals in working hardware, demonstrating that behavior could change through experience. It remains an important physical example in the early history of neural simulation and reinforcement learning and reflects the close interaction among analog electronics, psychology, and learning theory before AI had settled into distinct schools.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -55,6 +55,7 @@
     "asset-1951-snarc-maze-reinforcement"
   ],
   "sourceIds": [
+    "source-mit-minsky-history",
     "source-snarc-history-overview",
     "source-history-of-ai-snarc-article",
     "source-stochastic-neural-analog-reinforcement-calculator-overview",

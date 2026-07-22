@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>泰沃·科霍宁提出自组织映射，这类自适应网络把输出单元排列成保持输入信号拓扑的映射。该方法把无监督竞争学习可视化为二维网格。</p>",
-    "en": "<p>Teuvo Kohonen introduced self-organizing maps as adaptive networks that arrange output units into topology-preserving maps of input signals. The method made unsupervised competitive learning visible as a two-dimensional grid.</p>"
+    "zh": "<p>泰沃·科霍宁在 1982 年提出自组织映射，把一组输出单元排列成通常为二维的网格。每次输入到来时，系统寻找权重向量最接近输入的“获胜单元”，并同时把获胜者及其网格邻居的权重向输入方向移动；邻域范围随训练逐渐缩小。</p><p>这种竞争与协同更新使相似输入映射到相近位置，在降低维度的同时大致保持数据拓扑，因而适合聚类、探索和可视化。SOM 的地图形状和距离解释依赖训练参数，也可能扭曲高维结构，但它把无监督表示学习变成可观看的空间组织过程。</p>",
+    "en": "<p>Teuvo Kohonen introduced the self-organizing map in 1982 by arranging output units on a usually two-dimensional grid. For each input, the system finds the “winning unit” whose weight vector is closest, then moves both the winner and its grid neighbors toward the input. The neighborhood radius gradually shrinks during training.</p><p>This combination of competition and cooperation places similar inputs near one another, approximately preserving data topology while reducing dimension, which makes SOMs useful for clustering, exploration, and visualization. The map's shape and distances depend on training choices and may distort high-dimensional structure. Its lasting appeal is that unsupervised representation learning becomes a visible process of spatial self-organization.</p>"
   },
   "emphasis": [
     "batch-migration",

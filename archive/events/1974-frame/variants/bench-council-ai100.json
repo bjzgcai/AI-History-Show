@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>框架提出了一种把典型情境表示为槽、默认值、预期和过程组合的方式。它不把知识看成孤立事实，而是组织“通常成立什么”和“接下来该检查什么”。它影响了语义网络、面向对象知识系统，以及 AI 系统建模上下文的方式。</p>",
-    "en": "<p>Frames proposed a way to represent stereotyped situations as structured bundles of slots, defaults, expectations, and procedures. Instead of treating knowledge as isolated facts, frames organize what is normally true and what to check next. They influenced semantic networks, object-oriented knowledge systems, and the way AI systems model context.</p>"
+    "zh": "<p>马文·明斯基在 1974 年提出框架表示，把对典型对象、场景或事件的知识组织成结构化单元。一个框架包含描述属性的槽、常见情况下采用的默认值、槽之间的约束，以及在信息缺失或变化时触发的过程；新情境可以通过实例化和调整既有框架来理解。</p><p>这种方法强调知识不是互不相干的事实集合，而是带有预期和上下文的整体。框架影响了语义网络、脚本、专家系统和面向对象知识表示，也暴露出默认推理与例外处理的困难。它的核心遗产是让 AI 明确表示“通常会发生什么”，而不仅是记录确定事实。</p>",
+    "en": "<p>Marvin Minsky proposed frame representation in 1974 to organize knowledge about stereotyped objects, scenes, or events into structured units. A frame contains slots for attributes, default values used in ordinary cases, constraints among slots, and procedures triggered when information is missing or changes. A new situation can be interpreted by instantiating and modifying an existing frame.</p><p>The proposal treated knowledge not as an unrelated collection of facts but as a contextual whole containing expectations. Frames influenced semantic networks, scripts, expert systems, and object-oriented knowledge representation, while exposing difficult questions about defaults and exceptions. Their central legacy is the attempt to represent what normally happens, not only what is known with certainty.</p>"
   },
   "emphasis": [
     "batch-migration",

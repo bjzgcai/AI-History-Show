@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>CycleGAN 让缺少配对样本时的图像转换成为可能。它结合对抗损失和循环一致性损失，使图像从一个域转换到另一个域再转回时仍保留内容。</p>",
-    "en": "<p>CycleGAN made image translation possible when paired examples were unavailable. It used adversarial losses plus a cycle-consistency loss so translating from one domain and back would preserve content.</p>"
+    "zh": "<p>CycleGAN 面向没有一一配对样本的图像域转换，例如只有一组马和另一组斑马照片。两个生成器分别学习 A→B 和 B→A，两个判别器要求转换结果看起来属于目标域；循环一致性损失则要求图像转换过去再返回后能够重建原始内容。</p><p>这使风格、季节和外观转换不再依赖昂贵的配对数据，并成为非配对图像翻译的代表框架。循环约束不能唯一确定正确映射，模型可能改变不应变化的语义或隐藏信息；因此它适合具有大致内容对应关系的域，而不是保证真实因果转换。</p>",
+    "en": "<p>CycleGAN addressed image-domain translation without one-to-one paired examples, such as separate collections of horse and zebra photographs. Two generators learn A→B and B→A mappings, while two discriminators require translated images to resemble the target domains. A cycle-consistency loss then requires an image translated to the other domain and back again to reconstruct its original content.</p><p>This made style, season, and appearance transfer possible without expensive paired data and became a representative framework for unpaired image translation. Cycle consistency does not uniquely determine the correct mapping, and a model may alter semantics that should remain fixed or hide information in its outputs. It is therefore useful when domains share approximate content, not a guarantee of truthful causal transformation.</p>"
   },
   "emphasis": [
     "batch-migration",

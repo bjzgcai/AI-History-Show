@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>XCON 把专家系统研究转化为可见的工业成功。它以产生式规则构建，根据客户需求、组件约束和装配知识配置 DEC VAX 计算机订单，在商业规模上减少昂贵的配置错误。</p>",
-    "en": "<p>XCON turned expert-system research into a visible industrial success. Built with production rules, it configured DEC VAX computer orders by matching customer requirements, component constraints, and assembly knowledge, reducing costly configuration errors at commercial scale.</p>"
+    "zh": "<p>约翰·麦克德莫特开发的 R1，后来称为 XCON，于 1980 年前后在数字设备公司用于配置 VAX 计算机订单。系统把组件兼容性、机柜布局、电源、线缆和客户需求写成产生式规则，再通过规则匹配逐步生成可制造的配置。</p><p>XCON 把专家系统从实验室演示推进到持续运行的工业流程，减少了人工配置中的遗漏与昂贵返工，也显示知识库必须随着产品变化长期维护。规则数量增长、例外积累和知识获取成本后来暴露出专家系统的工程负担，但它仍是 AI 创造可量化商业价值的早期标志。</p>",
+    "en": "<p>John McDermott's R1, later called XCON, was deployed around 1980 at Digital Equipment Corporation to configure orders for VAX computer systems. It represented component compatibility, cabinet layout, power, cabling, and customer requirements as production rules, then applied matching rules step by step to produce a configuration that could be manufactured.</p><p>XCON moved expert systems from laboratory demonstrations into a continuing industrial workflow, reducing omissions and expensive rework in manual configuration. It also showed that a knowledge base must be maintained as products change. Growing rule sets, accumulating exceptions, and the cost of knowledge acquisition later exposed the engineering burden of expert systems, but XCON remains an early landmark in measurable commercial value from AI.</p>"
   },
   "emphasis": [
     "batch-migration",

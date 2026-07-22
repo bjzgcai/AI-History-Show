@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-deep-blue-system-paper",
+    "type": "paper",
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "title": {
+      "zh": "《Deep Blue》",
+      "en": "Deep Blue"
+    },
+    "url": "https://doi.org/10.1016/S0004-3702(01)00129-1",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Deep Blue 团队对系统架构、搜索、硬件和比赛表现的同行评审技术论文。",
+      "en": "The Deep Blue team's peer-reviewed technical account of the system architecture, search, hardware, and match performance."
+    },
+    "purpose": "core-evidence"
+  },
+  {
     "id": "source-murray-campbell-ibm-research",
     "type": "profile",
     "label": {

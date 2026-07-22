@@ -32,7 +32,7 @@
     },
     "url": "http://incompleteideas.net/book/the-book-2nd.html",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "secondary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."

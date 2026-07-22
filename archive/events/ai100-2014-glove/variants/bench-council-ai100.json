@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>GloVe 通过拟合全局词共现概率的比值来学习词向量。它把基于计数的矩阵分解与神经嵌入实践连接起来，并成为广泛使用的基线表示。</p>",
-    "en": "<p>GloVe learned word vectors by fitting ratios of global word co-occurrence probabilities. It connected count-based matrix factorization with neural embedding practice and became a widely used baseline representation.</p>"
+    "zh": "<p>斯坦福团队在 2014 年提出 GloVe，从整个语料库的词共现矩阵学习向量。模型用加权最小二乘目标，使两个词向量的内积逼近其共现次数的对数，并强调共现概率比所携带的语义信息；高频与极低频组合通过权重函数得到平衡。</p><p>GloVe 把传统全局计数统计与稠密神经词向量连接起来，训练后可直接用于相似度、分类和其他 NLP 任务。它与 Word2Vec 一样属于静态表示，同一个词在所有上下文中只有一个向量，也会继承语料偏见；但其公开向量长期成为广泛使用的基线。</p>",
+    "en": "<p>The Stanford team introduced GloVe in 2014 to learn vectors from a corpus-wide word co-occurrence matrix. A weighted least-squares objective makes the dot product of two word vectors approximate the logarithm of their co-occurrence count, emphasizing semantic information carried by ratios of co-occurrence probabilities. A weighting function balances very frequent and very rare pairs.</p><p>GloVe connected traditional global count statistics with dense neural-style embeddings, producing vectors that could be reused for similarity, classification, and other NLP tasks. Like Word2Vec, it is a static representation: one word has the same vector in every context, and corpus biases remain embedded. Its openly distributed vectors nevertheless became a widely used and durable baseline.</p>"
   },
   "emphasis": [
     "batch-migration",

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>劳埃德于 1957 年在贝尔实验室形成这套方法，相关论文《PCM 中的最小二乘量化》直到 1982 年才正式发表。K-means 让无监督分组简单到成为默认工具；劳埃德方法在“把点分配给最近中心”和“把中心移动到所属点均值”之间交替，把聚类变成直观的优化循环。</p>",
-    "en": "<p>Lloyd developed the method at Bell Labs in 1957; the related paper, <em>Least Squares Quantization in PCM</em>, was formally published in 1982. K-means made unsupervised grouping simple enough to become a default tool. Lloyd's method alternates between assigning points to the nearest centers and moving centers to the mean of their assigned points, turning clustering into an intuitive optimization loop.</p>"
+    "zh": "<p>斯图尔特·劳埃德于 1957 年在贝尔实验室形成这套最小二乘量化方法，相关论文直到 1982 年才正式发表。给定簇数 k，算法在两个步骤间交替：把每个样本分配给最近中心，再把中心移动到所属样本的均值，持续降低簇内平方距离。</p><p>K-means 计算简单、结果直观，成为无监督学习、数据压缩和初始化中的默认工具之一。但它只能保证收敛到局部最优，结果依赖初始中心，也更适合尺度相近、近似球形的簇；异常值、特征缩放和预设 k 值都会影响解释。它的价值在于提供一个清晰可见的聚类优化循环。</p>",
+    "en": "<p>Stuart Lloyd developed this least-squares quantization method at Bell Labs in 1957, although the associated paper was not formally published until 1982. Given a number of clusters k, the algorithm alternates between assigning each sample to its nearest center and moving each center to the mean of its assigned samples, repeatedly reducing within-cluster squared distance.</p><p>K-means is computationally simple and easy to interpret, making it a default tool for unsupervised learning, data compression, and initialization. It guarantees only convergence to a local optimum, depends on the starting centers, and works best for clusters that are similarly scaled and roughly spherical. Outliers, feature scaling, and the predetermined value of k all affect the result. Its lasting strength is a transparent, visible optimization loop for clustering.</p>"
   },
   "emphasis": [
     "batch-migration",
