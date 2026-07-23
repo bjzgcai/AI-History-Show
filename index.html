@@ -6096,6 +6096,82 @@
             text-transform: uppercase;
         }
 
+        .ui-sentiment-tag {
+            --ui-sentiment: #d17376;
+            --ui-sentiment-soft: rgba(209, 115, 118, 0.14);
+            display: inline-flex;
+            align-items: center;
+            width: max-content;
+            max-width: 100%;
+            min-height: 24px;
+            border: 1px solid var(--ui-sentiment);
+            border-radius: 3px;
+            background: var(--ui-sentiment-soft);
+            color: var(--ui-sentiment);
+            padding: 3px 8px;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 12px;
+            font-weight: 850;
+            line-height: 1.25;
+            letter-spacing: 0;
+            text-transform: none;
+            white-space: normal;
+        }
+
+        .ui-sentiment-tag--hype {
+            --ui-sentiment: #d18a3c;
+            --ui-sentiment-soft: rgba(209, 138, 60, 0.14);
+        }
+
+        .ui-sentiment-tag--ethics {
+            --ui-sentiment: #9ec16f;
+            --ui-sentiment-soft: rgba(158, 193, 111, 0.14);
+        }
+
+        .ui-sentiment-tag--warning {
+            --ui-sentiment: #d6b35c;
+            --ui-sentiment-soft: rgba(214, 179, 92, 0.14);
+        }
+
+        .ui-sentiment-tag--optimism {
+            --ui-sentiment: #70c1a7;
+            --ui-sentiment-soft: rgba(112, 193, 167, 0.14);
+        }
+
+        .ui-sentiment-tag--cyberpunk {
+            --ui-sentiment: #ad8bd6;
+            --ui-sentiment-soft: rgba(173, 139, 214, 0.14);
+        }
+
+        .ui-sentiment-tag--dread {
+            --ui-sentiment: #c56f92;
+            --ui-sentiment-soft: rgba(197, 111, 146, 0.14);
+        }
+
+        .ui-sentiment-tag--defense {
+            --ui-sentiment: #73b5d6;
+            --ui-sentiment-soft: rgba(115, 181, 214, 0.14);
+        }
+
+        .ui-sentiment-tag--winter {
+            --ui-sentiment: #68a9c6;
+            --ui-sentiment-soft: rgba(104, 169, 198, 0.14);
+        }
+
+        .ui-event-title-row {
+            min-width: 0;
+            display: block;
+        }
+
+        .ui-event-title-row .ui-sentiment-tag {
+            margin-left: 8px;
+            vertical-align: 0.14em;
+        }
+
+        .ui-event-title-row .ui-event-title {
+            display: inline;
+        }
+
         .ui-level-one.is-year-mode .ui-event-meta,
         .ui-level-one.is-region-mode .ui-event-meta {
             order: 1;
@@ -6153,22 +6229,22 @@
             line-height: 1.12;
         }
 
-        .ui-level-one.is-year-mode .ui-event-title,
-        .ui-level-one.is-region-mode .ui-event-title {
+        .ui-level-one.is-year-mode .ui-event-title-row,
+        .ui-level-one.is-region-mode .ui-event-title-row {
             order: 2;
             align-self: start;
             margin-top: 30px;
+            min-height: 2.12em;
+            justify-self: center;
+            text-align: center;
+            width: min(100%, clamp(280px, 23.5vw, 460px));
+        }
+
+        .ui-level-one.is-year-mode .ui-event-title,
+        .ui-level-one.is-region-mode .ui-event-title {
             font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
             font-size: 25px;
             line-height: 1.2;
-            min-height: 2.12em;
-            display: -webkit-box;
-            overflow: hidden;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            text-align: center;
-            justify-self: center;
-            width: min(100%, clamp(280px, 23.5vw, 460px));
         }
 
         .ui-event-desc {
@@ -6772,6 +6848,20 @@
             gap: 0;
             padding-top: 12px;
             padding-left: 0;
+        }
+
+        .ui-detail-title-row {
+            min-width: 0;
+            display: block;
+        }
+
+        .ui-detail-title-row .ui-sentiment-tag {
+            margin-left: 10px;
+            vertical-align: 0.2em;
+        }
+
+        .ui-detail-title-row .ui-detail-title {
+            display: inline;
         }
 
         .ui-detail-title {
@@ -8148,8 +8238,8 @@
 
             .ui-level-one.is-year-mode .ui-event-meta,
             .ui-level-one.is-region-mode .ui-event-meta,
-            .ui-level-one.is-year-mode .ui-event-title,
-            .ui-level-one.is-region-mode .ui-event-title,
+            .ui-level-one.is-year-mode .ui-event-title-row,
+            .ui-level-one.is-region-mode .ui-event-title-row,
             .ui-level-one.is-year-mode .ui-event-caption,
             .ui-level-one.is-region-mode .ui-event-caption,
             .ui-level-one.is-year-mode .ui-event-image,
@@ -8158,11 +8248,16 @@
                 justify-self: stretch;
             }
 
+            .ui-level-one.is-year-mode .ui-event-title-row,
+            .ui-level-one.is-region-mode .ui-event-title-row {
+                margin-top: 10px;
+                min-height: 0;
+                text-align: left;
+            }
+
             .ui-level-one.is-year-mode .ui-event-title,
             .ui-level-one.is-region-mode .ui-event-title {
-                margin-top: 10px;
                 font-size: 21px;
-                min-height: 0;
                 text-align: left;
             }
 
@@ -9422,8 +9517,8 @@
                 order: 2;
             }
 
-            .ui-level-one.is-year-mode .ui-event-title,
-            .ui-level-one.is-region-mode .ui-event-title {
+            .ui-level-one.is-year-mode .ui-event-title-row,
+            .ui-level-one.is-region-mode .ui-event-title-row {
                 order: 3;
                 margin-top: 0;
             }
@@ -10169,8 +10264,8 @@
                     zh: 'AI 历史地图'
                 },
                 note: {
-                    en: 'Unified view from deep learning milestones and AI100 achievements',
-                    zh: '融合深度学习里程碑与 AI100 大事件'
+                    en: 'Unified view from technical milestones, AI100 achievements and humanistic events',
+                    zh: '融合技术里程碑、AI100 大事件与 AI 人文事件'
                 }
             },
             {
@@ -10261,7 +10356,8 @@
         function getCanonicalMilestoneSlug(milestone) {
             const id = String(milestone && milestone.id || '')
                 .replace(/^milestone-/, '')
-                .replace(/^ai100-/, '');
+                .replace(/^ai100-/, '')
+                .replace(/^humanistic-cycle-/, '');
             const aliases = {
                 '2020-alphafold2': '2020-alphafold',
                 '2014-neural-machine-translation-attention': '2014-attention',
@@ -10326,7 +10422,9 @@
             if (unifiedMilestoneCache) return unifiedMilestoneCache;
             const source = allMilestones.filter((item) => {
                 const storylineId = getMilestoneStorylineId(item);
-                return storylineId === DEEP_STORYLINE_ID || storylineId === 'bench-council-ai100';
+                return storylineId === DEEP_STORYLINE_ID
+                    || storylineId === 'bench-council-ai100'
+                    || storylineId === 'humanistic-cycle';
             });
             const bySlug = new Map();
             source.forEach((item) => {
@@ -10353,6 +10451,14 @@
             unifiedMilestoneCache = Array.from(bySlug.values())
                 .sort(compareMilestonesByTime);
             return unifiedMilestoneCache;
+        }
+
+        function isHumanisticMilestone(milestone) {
+            if (!milestone) return false;
+            if (getMilestoneStorylineId(milestone) === 'humanistic-cycle') return true;
+            if (milestone.archiveVariantId === 'humanistic-cycle') return true;
+            return Array.isArray(milestone.unifiedSourceIds)
+                && milestone.unifiedSourceIds.some((id) => String(id || '').startsWith('milestone-humanistic-cycle-'));
         }
         const getSearchParam = (name) => {
             try {
@@ -11554,14 +11660,22 @@
             return match[1] ? String(match[1] || '').trim() : stripHtml(match[2]);
         }
 
-        function getConfiguredImageMeta(vm, url) {
+        function getConfiguredImageMetaMap(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
-            const map = {
+            return {
                 ...((raw.resources && raw.resources.imageMeta) || {}),
                 ...(raw.imageMeta || {})
             };
-            const entry = map[url];
-            if (!entry || typeof entry !== 'object') return null;
+        }
+
+        function getConfiguredImageMetaEntry(vm, url) {
+            const entry = getConfiguredImageMetaMap(vm)[url];
+            return entry && typeof entry === 'object' ? entry : null;
+        }
+
+        function getConfiguredImageMeta(vm, url) {
+            const entry = getConfiguredImageMetaEntry(vm, url);
+            if (!entry) return null;
 
             const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
             const rawSubcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || '')).trim();
@@ -11571,6 +11685,14 @@
             const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
             if (!caption && !subcaption && !source && !license && !usage) return null;
             return { caption, subcaption, source, license, usage };
+        }
+
+        function isExplainerMedia(vm, url) {
+            const value = String(url || '').trim();
+            if (!value) return false;
+            const meta = getConfiguredImageMetaEntry(vm, value) || {};
+            const role = String(meta.role || '').trim();
+            return /(?:architecture|algorithm)-explainer/i.test(role) || /\/explainers\//i.test(value);
         }
 
         function buildArchivePhotoMeta(vm, url) {
@@ -12508,7 +12630,7 @@
 
         function buildBranchMilestoneElements(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
-            const isHumanisticCycle = getMilestoneStorylineId(raw) === 'humanistic-cycle';
+            const isHumanisticCycle = isHumanisticMilestone(raw);
             const groups = [
                 {
                     label: uiText('People', '\u4eba\u7269'),
@@ -16641,7 +16763,6 @@
 
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
-            if (getMilestoneStorylineId(vm && vm.raw) === 'humanistic-cycle') return candidates;
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
             return sideImageUrl ? candidates.filter((url) => url !== sideImageUrl) : candidates;
         }
@@ -16659,10 +16780,17 @@
             'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
         };
 
+        function findHumanisticExplainerImage(vm, images) {
+            if (!isHumanisticMilestone(vm && vm.raw)) return '';
+            return images.find((url) => isExplainerMedia(vm, url)) || '';
+        }
+
         function getUiMediaVisualImage(vm, images = getUiImageCandidates(vm)) {
             const eventId = vm && (vm.id || (vm.raw && vm.raw.id)) || '';
             const overrideUrl = UI_MEDIA_VISUAL_OVERRIDES[eventId];
             if (overrideUrl && images.includes(overrideUrl)) return overrideUrl;
+            const humanisticExplainer = findHumanisticExplainerImage(vm, images);
+            if (humanisticExplainer) return humanisticExplainer;
             const diagram = images.find((url) => isDiagramImage(url));
             if (diagram) return diagram;
             return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
@@ -17030,9 +17158,20 @@
             `;
         }
 
+        function buildUiSentimentTagHtml(raw) {
+            if (!isHumanisticMilestone(raw)) return '';
+            const sentiment = String(raw && raw.sentiment || '')
+                .toLowerCase()
+                .replace(/[^a-z0-9_-]/g, '');
+            const label = getAchievementField(raw, 'area', '');
+            if (!sentiment || !label) return '';
+            return `<span class="ui-sentiment-tag ui-sentiment-tag--${sentiment}">${escapeHtml(label)}</span>`;
+        }
+
         function buildUiEventCard(milestone) {
             const index = milestoneList.findIndex((item) => item.id === milestone.id);
             const vm = getVm(index);
+            const raw = vm.raw || {};
             const imageUrl = getUiPrimaryImage(vm);
             const imageMeta = getUiPrimaryImageMeta(vm, imageUrl);
             const title = vm.title || tx('aiHistoryEvent');
@@ -17041,6 +17180,7 @@
             const desc = stripHtml(vm.descriptionHtml || vm.descriptionText || vm.quoteHtml || '');
             const captionTitle = imageMeta.name || title;
             const captionDetail = imageMeta.role || '';
+            const sentimentTagHtml = buildUiSentimentTagHtml(raw);
             return `
                 <button class="ui-event-card" type="button" data-event-id="${escapeHtml(milestone.id)}">
                     <div class="ui-event-image">
@@ -17051,7 +17191,10 @@
                             <span class="ui-event-year">${escapeHtml(vm.year || '')}</span>
                             <span class="ui-event-location">${escapeHtml(locationText)}</span>
                         </div>
-                        <div class="ui-event-title">${escapeHtml(title)}</div>
+                        <div class="ui-event-title-row">
+                            <div class="ui-event-title">${escapeHtml(title)}</div>
+                            ${sentimentTagHtml}
+                        </div>
                         <div class="ui-event-desc">${escapeHtml(desc || tx('noAdditionalInfo'))}</div>
                         <div class="ui-event-caption">
                             <span class="ui-event-caption-title">${escapeHtml(captionTitle)}</span>
@@ -17594,9 +17737,9 @@
             return getAchievementKeyConcepts(raw);
         }
 
-        function buildUiMediaHtml(vm) {
+        function buildUiMediaHtml(vm, { forceStaticImage = false } = {}) {
             const raw = vm.raw || {};
-            if (vm.videoEmbedUrl) {
+            if (vm.videoEmbedUrl && !forceStaticImage) {
                 const posterUrl = getUiMediaVisualImage(vm);
                 const posterMeta = posterUrl ? buildArchivePhotoMeta(vm, posterUrl) : null;
                 const posterHtml = posterUrl
@@ -17702,12 +17845,15 @@
 
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
-            const isHumanisticCycle = getMilestoneStorylineId(raw) === 'humanistic-cycle';
-            const mediaHtml = isHumanisticCycle ? '' : buildUiMediaHtml(vm);
-            const mediaUsesConceptFallback = Boolean(mediaHtml && !vm.videoEmbedUrl && !mediaHtml.includes('ui-side-visual') && !mediaHtml.includes('ui-side-demo-visual'));
+            const isHumanisticCycle = isHumanisticMilestone(raw);
+            const mediaHtml = buildUiMediaHtml(vm, { forceStaticImage: isHumanisticCycle });
+            const mediaHasDedicatedVisual = mediaHtml.includes('ui-media-video')
+                || mediaHtml.includes('ui-side-visual')
+                || mediaHtml.includes('ui-side-demo-visual');
+            const mediaUsesConceptFallback = Boolean(mediaHtml && !mediaHasDedicatedVisual);
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
-                isHumanisticCycle ? '' : buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
+                buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
                 mediaUsesConceptFallback ? '' : buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
                 buildUiSideSectionHtml('ui-quote-card', uiText('Quote Summary', '引言摘要'), quoteSection ? buildUiSectionCardsHtml([quoteSection], { hiddenLabels: [tx('quoteExcerpt')] }) : ''),
                 buildUiSideSectionHtml('ui-commentary-card', uiText('Background', '背景解读'), buildUiSectionCardsHtml(getUiBackgroundSections(vm), { hiddenLabels: [tx('background')] }))
@@ -17872,6 +18018,7 @@
             const locationText = buildLocationText(vm.location);
             const imageCaptionTitle = imageMeta.name || title;
             const imageCaptionDetail = imageMeta.role || '';
+            const sentimentTagHtml = buildUiSentimentTagHtml(raw);
             const detailImageHtml = imageUrl
                 ? `
                     <div class="ui-detail-image">
@@ -17897,7 +18044,10 @@
                                         <div class="ui-detail-place" title="${escapeHtml(locationText)}">${escapeHtml(locationText)}</div>
                                     </div>
                                     <div class="ui-detail-heading">
-                                        <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                        <div class="ui-detail-title-row">
+                                            <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                            ${sentimentTagHtml}
+                                        </div>
                                         <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>

@@ -47,8 +47,17 @@
             }
         }
     ],
-    "assetIds": ["asset-1987-lisp-machine-collapse-market-shift"],
+    "assetIds": [
+        "asset-1987-lisp-machine-collapse-richard-greenblatt",
+        "asset-1987-lisp-machine-collapse-richard-stallman",
+        "asset-1987-lisp-machine-collapse-market-shift"
+    ],
     "sourceIds": [
+        "source-richard-greenblatt-portrait",
+        "source-richard-stallman-portrait",
+        "source-greenblatt-oral-history",
+        "source-stallman-lisp-experiences",
+        "source-gnu-initial-announcement",
         "source-ai-winter-overview",
         "source-lisp-machine-history",
         "source-avoiding-another-ai-winter",
@@ -191,6 +200,39 @@
             }
         ],
         "sources": [
+            {
+                "label": {
+                    "en": "Oral History of Richard Greenblatt",
+                    "zh": "理查德·格林布拉特口述史"
+                },
+                "type": {
+                    "en": "Oral history",
+                    "zh": "口述史"
+                },
+                "url": "https://www.computerhistory.org/collections/catalog/102658015"
+            },
+            {
+                "label": {
+                    "en": "My Lisp Experiences and the Development of GNU Emacs",
+                    "zh": "《我的 Lisp 经历与 GNU Emacs 的发展》"
+                },
+                "type": {
+                    "en": "First-person history",
+                    "zh": "一手回忆"
+                },
+                "url": "https://www.gnu.org/gnu/rms-lisp.html"
+            },
+            {
+                "label": {
+                    "en": "Initial GNU Project announcement",
+                    "zh": "GNU 工程最初公告"
+                },
+                "type": {
+                    "en": "Primary document",
+                    "zh": "原始文献"
+                },
+                "url": "https://www.gnu.org/gnu/initial-announcement.html"
+            },
             {
                 "label": {
                     "en": "AI winter overview",

@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
+const { milestones: generatedMilestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
 
 assert.equal(
     routing.normalizeStorylineId('deep-learning'),
@@ -48,6 +49,21 @@ assert.equal(
 );
 console.log('PASS milestone storyline resolution');
 
+const humanisticMilestones = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'humanistic-cycle'
+);
+assert.equal(humanisticMilestones.length, 12, 'the humanistic cycle should contain twelve events');
+humanisticMilestones.forEach((milestone) => {
+    const images = milestone.resources && Array.isArray(milestone.resources.images)
+        ? milestone.resources.images
+        : [];
+    assert.ok(
+        images.some((url) => /\/humanistic-cycle\/explainers\//.test(String(url || ''))),
+        `${milestone.archiveEventId || milestone.id} should provide an explainer for commentary media`
+    );
+});
+console.log('PASS humanistic commentary media coverage');
+
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
     { id: 'milestone-2017-transformer', storyline: { id: 'deep-learning' } },
@@ -73,6 +89,21 @@ assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
     'the default document should paint the unified UI shell before JavaScript initialization'
+);
+assert.match(
+    indexHtml,
+    /function isHumanisticMilestone\(milestone\)[\s\S]*?archiveVariantId === 'humanistic-cycle'[\s\S]*?milestone-humanistic-cycle-[\s\S]*?function buildUiSentimentTagHtml\(raw\)[\s\S]*?isHumanisticMilestone\(raw\)[\s\S]*?raw\.sentiment[\s\S]*?getAchievementField\(raw, 'area'/,
+    'humanistic UI browser cards should restore localized emotion labels with sentiment styling'
+);
+assert.match(
+    indexHtml,
+    /function buildUnifiedMilestones\(\)[\s\S]*?storylineId === DEEP_STORYLINE_ID[\s\S]*?storylineId === 'bench-council-ai100'[\s\S]*?storylineId === 'humanistic-cycle'/,
+    'the unified AI history map should include all humanistic cycle events'
+);
+assert.match(
+    indexHtml,
+    /class="ui-detail-title-row">[\s\S]*?class="ui-detail-title"[\s\S]*?\$\{sentimentTagHtml\}/,
+    'humanistic detail pages should place the emotion label directly after the event title'
 );
 assert.match(
     indexHtml,
@@ -126,7 +157,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /const map = \{[\s\S]*?raw\.resources && raw\.resources\.imageMeta[\s\S]*?\.\.\.\(raw\.imageMeta \|\| \{\}\)/,
+    /function getConfiguredImageMetaMap\(vm\)[\s\S]*?raw\.resources && raw\.resources\.imageMeta[\s\S]*?\.\.\.\(raw\.imageMeta \|\| \{\}\)/,
     'Archive image metadata should override legacy resource metadata in the unified UI'
 );
 assert.doesNotMatch(
@@ -220,6 +251,26 @@ assert.match(
     indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?candidates\.filter\(\(url\) => url !== sideImageUrl\)/,
     'detail image lists should exclude the image mounted in the right-side media panel'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /function getUiDetailImages\(vm\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)\) return candidates/,
+    'humanistic detail image lists should not retain the explainer mounted in the right-side media panel'
+);
+assert.match(
+    indexHtml,
+    /function getConfiguredImageMetaMap\(vm\)[\s\S]*?function getConfiguredImageMetaEntry\(vm, url\)[\s\S]*?function getConfiguredImageMeta\(vm, url\)/,
+    'image metadata consumers should share one normalized Archive metadata lookup'
+);
+assert.match(
+    indexHtml,
+    /function findHumanisticExplainerImage\(vm, images\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)[\s\S]*?images\.find\(\(url\) => isExplainerMedia\(vm, url\)\)[\s\S]*?function getUiMediaVisualImage\(vm,[\s\S]*?findHumanisticExplainerImage\(vm, images\)/,
+    'humanistic commentary media should prioritize the first explainer image'
+);
+assert.match(
+    indexHtml,
+    /const mediaHtml = buildUiMediaHtml\(vm, \{ forceStaticImage: isHumanisticCycle \}\)[\s\S]*?uiText\('Sources', '资料来源'\)[\s\S]*?uiText\('Commentary & Media', '评论与媒体'\)/,
+    'humanistic explainers should render as static commentary media directly after sources'
 );
 assert.match(
     indexHtml,
