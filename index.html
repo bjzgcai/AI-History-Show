@@ -6586,19 +6586,24 @@
         }
 
         .ui-detail-topline {
+            --ui-detail-context-base-width: 564px;
+            --ui-detail-context-max-width: 829px;
+            --ui-detail-title-min-width: 300px;
             min-width: 0;
             display: grid;
             grid-column: 1;
             grid-row: 1;
-            grid-template-columns: fit-content(829px) minmax(300px, 1fr);
+            grid-template-columns:
+                fit-content(var(--ui-detail-context-max-width))
+                minmax(var(--ui-detail-title-min-width), 1fr);
             column-gap: 67px;
             align-items: start;
         }
 
         .ui-detail-context {
-            width: max-content;
-            min-width: 564px;
-            max-width: 829px;
+            width: var(--ui-detail-context-width, max-content);
+            min-width: var(--ui-detail-context-base-width);
+            max-width: var(--ui-detail-context-max-width);
             display: grid;
             grid-column: 1;
             grid-row: 1;
@@ -6643,6 +6648,13 @@
             -webkit-line-clamp: 2;
             white-space: normal;
             overflow-wrap: anywhere;
+        }
+
+        .ui-detail-place.is-measuring {
+            display: block;
+            max-height: none;
+            overflow: visible;
+            -webkit-line-clamp: unset;
         }
 
         .ui-avatar-strip {
@@ -17992,6 +18004,76 @@
             `;
         }
 
+        function fitUiDetailLocation() {
+            if (!refs.uiBrowserMain) return;
+            const topLine = refs.uiBrowserMain.querySelector('.ui-detail-topline');
+            const context = refs.uiBrowserMain.querySelector('.ui-detail-context');
+            const place = refs.uiBrowserMain.querySelector('.ui-detail-place');
+            if (!topLine || !context || !place) return;
+
+            context.style.removeProperty('--ui-detail-context-width');
+            place.classList.remove('is-measuring');
+            if (!window.matchMedia('(min-width: 1200px)').matches) return;
+
+            const topLineStyle = window.getComputedStyle(topLine);
+            const readLayoutWidth = (property) => Number.parseFloat(topLineStyle.getPropertyValue(property)) || 0;
+            const baseContextWidth = readLayoutWidth('--ui-detail-context-base-width');
+            const contextWidthLimit = readLayoutWidth('--ui-detail-context-max-width');
+            const titleMinWidth = readLayoutWidth('--ui-detail-title-min-width');
+            const columnGap = Number.parseFloat(topLineStyle.columnGap) || 0;
+            if (!baseContextWidth || !contextWidthLimit || !titleMinWidth) return;
+
+            const availableContextWidth = topLine.clientWidth - columnGap - titleMinWidth;
+            const maxContextWidth = Math.max(
+                baseContextWidth,
+                Math.min(contextWidthLimit, availableContextWidth)
+            );
+            const applyContextWidth = (width) => {
+                context.style.setProperty('--ui-detail-context-width', `${Math.ceil(width)}px`);
+            };
+            const fitsInTwoLines = (width) => {
+                applyContextWidth(width);
+                place.classList.add('is-measuring');
+                const placeStyle = window.getComputedStyle(place);
+                const lineHeight = Number.parseFloat(placeStyle.lineHeight) || 0;
+                const fits = lineHeight > 0 && place.scrollHeight <= lineHeight * 2 + 1;
+                place.classList.remove('is-measuring');
+                return fits;
+            };
+
+            if (fitsInTwoLines(baseContextWidth)) return;
+            if (!fitsInTwoLines(maxContextWidth)) {
+                applyContextWidth(maxContextWidth);
+                return;
+            }
+
+            let low = baseContextWidth;
+            let high = maxContextWidth;
+            while (high - low > 1) {
+                const middle = (low + high) / 2;
+                if (fitsInTwoLines(middle)) {
+                    high = middle;
+                } else {
+                    low = middle;
+                }
+            }
+            applyContextWidth(high);
+        }
+
+        function scheduleUiDetailLocationFit() {
+            fitUiDetailLocation();
+            window.requestAnimationFrame(fitUiDetailLocation);
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(fitUiDetailLocation);
+            }
+        }
+
+        function refreshUiBrowserMeasurements() {
+            if (!refs.uiBrowserMain) return;
+            fitUiEventImages();
+            fitUiDetailLocation();
+        }
+
         function renderUiDetail() {
             ensureUiSelection();
             const vm = getVm(currentIndex);
@@ -18088,6 +18170,7 @@
             });
             bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
+            scheduleUiDetailLocationFit();
         }
 
         function renderUiBrowser() {
@@ -18711,14 +18794,14 @@
                 syncStageScale();
                 const eventList = refs.uiBrowserMain ? refs.uiBrowserMain.querySelector('.ui-event-list') : null;
                 if (eventList) updateUiEventProgress(eventList);
-                if (refs.uiBrowserMain) fitUiEventImages();
+                refreshUiBrowserMeasurements();
             }, 120));
             window.addEventListener('orientationchange', () => {
                 window.setTimeout(() => {
                     syncStageScale();
                     handleGlobeResize();
                     resetOrbitOverlay();
-                    if (refs.uiBrowserMain) fitUiEventImages();
+                    refreshUiBrowserMeasurements();
                 }, 180);
             }, { passive: true });
             window.addEventListener('beforeunload', clearIdleAdvanceTimer);
