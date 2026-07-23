@@ -1,6 +1,6 @@
 # Archive Validation Report
 
-Generated: 2026-07-23T06:59:29.908Z
+Generated: 2026-07-23T09:58:14.986Z
 
 ## Summary
 
@@ -8,8 +8,8 @@ Generated: 2026-07-23T06:59:29.908Z
 - Storylines: 4
 - Variants: 147
 - Claims: 278
-- Sources: 495
-- Assets: 374
+- Sources: 504
+- Assets: 380
 - Quizzes: 118
 - Errors: 0
 - Warnings: 0
@@ -518,6 +518,7 @@ None.
 - `resources/images/figures/kaiming-he.jpg` — 2015-resnet/asset-kaiming-he
 - `resources/images/figures/marvin-minsky.jpg` — ai100-1951-snarc/asset-marvin-minsky
 - `resources/images/figures/sepp-hochreiter.jpg` — 1997-lstm/asset-sepp-hochreiter
+- `resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg` — 1973-lighthill-report/asset-1973-lighthill-report-freddy-ii
 - `resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg` — 1920-rur-robots/asset-1920-rur-robots-labor-revolt
 - `resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg` — 1942-asimov-runaround/asset-1942-asimov-runaround-three-laws
 - `resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg` — 1950-wiener-human-use/asset-1950-wiener-human-use-feedback-warning
@@ -534,6 +535,11 @@ None.
 - `resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg` — 1942-asimov-runaround/asset-1942-asimov-runaround-isaac-asimov
 - `resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png` — 1950-wiener-human-use/asset-1950-wiener-human-use-norbert-wiener
 - `resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg` — 1968-hal-9000/asset-1968-hal-9000-stanley-kubrick
+- `resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg` — 1973-lighthill-report/asset-1973-lighthill-report-donald-michie
+- `resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg` — 1973-lighthill-report/asset-1973-lighthill-report-james-lighthill
 - `resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg` — 1978-xiaolingtong/asset-1978-xiaolingtong-ye-yonglie
 - `resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg` — 1984-neuromancer/asset-1984-neuromancer-william-gibson
+- `resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg` — 1987-lisp-machine-collapse/asset-1987-lisp-machine-collapse-richard-greenblatt
+- `resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg` — 1987-lisp-machine-collapse/asset-1987-lisp-machine-collapse-richard-stallman
+- `resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg` — 1973-lighthill-report/asset-1973-lighthill-report-royal-institution-theatre
 

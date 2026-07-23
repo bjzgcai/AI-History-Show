@@ -1,5 +1,69 @@
 [
   {
+    "id": "asset-1987-lisp-machine-collapse-richard-greenblatt",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "理查德·格林布拉特肖像",
+      "en": "Richard Greenblatt portrait"
+    },
+    "subcaption": {
+      "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人；照片摄于 2009 年。",
+      "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.; photographed in 2009."
+    },
+    "sourceId": "source-richard-greenblatt-portrait",
+    "sourceName": {
+      "zh": "Richard P. Gabriel / Wikimedia Commons",
+      "en": "Richard P. Gabriel / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+        "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+      },
+      "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1987-lisp-machine-collapse-richard-stallman",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
+    "role": "supporting-portrait",
+    "caption": {
+      "zh": "理查德·斯托曼肖像",
+      "en": "Richard Stallman portrait"
+    },
+    "subcaption": {
+      "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
+      "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
+    },
+    "sourceId": "source-richard-stallman-portrait",
+    "sourceName": {
+      "zh": "NicoBZH / Wikimedia Commons",
+      "en": "NicoBZH / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+        "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+      },
+      "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1987-lisp-machine-collapse-market-shift",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",

@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-23 06:59
+// 生成时间: 2026-07-23 09:58
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -53189,8 +53189,8 @@ const milestones = [
     "year": 1969,
     "date": "1969",
     "title": {
-      "zh": "第一次寒冬的到来",
-      "en": "The First AI Winter Arrives"
+      "zh": "《感知机》与连接主义退潮",
+      "en": "Perceptrons and the Retreat of Connectionism"
     },
     "subtitle": {
       "zh": "AI创世纪",
@@ -70547,7 +70547,22 @@ const milestones = [
           "zh": "《人工智能：总览》报告作者",
           "en": "Author of Artificial Intelligence: A General Survey"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "donald-michie",
+        "name": {
+          "zh": "唐纳德·米奇",
+          "en": "Donald Michie"
+        },
+        "role": {
+          "zh": "英国 AI 代表人物，公开反对莱特希尔报告",
+          "en": "British AI pioneer who publicly opposed the Lighthill Report"
+        },
+        "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -70555,9 +70570,133 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
+        "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg",
+        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg",
         "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg": {
+          "caption": {
+            "zh": "詹姆斯·莱特希尔爵士肖像",
+            "en": "Sir James Lighthill portrait"
+          },
+          "subcaption": {
+            "zh": "莱特希尔报告作者。",
+            "en": "Author of the Lighthill Report."
+          },
+          "sourceName": {
+            "zh": "Royal Society 传记肖像，经 MacTutor 收录",
+            "en": "Royal Society memoir portrait via MacTutor"
+          },
+          "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
+          "license": {
+            "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+            "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+          },
+          "sourceId": "source-mactutor-lighthill-portrait",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+              "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+            },
+            "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
+          "caption": {
+            "zh": "唐纳德·米奇肖像",
+            "en": "Donald Michie portrait"
+          },
+          "subcaption": {
+            "zh": "英国 AI 代表人物，公开反对莱特希尔报告。",
+            "en": "A leading figure in British AI who publicly opposed the Lighthill Report."
+          },
+          "sourceName": {
+            "zh": "爱丁堡大学 Donald Michie 档案 / Wikimedia Commons",
+            "en": "University of Edinburgh Donald Michie archive / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
+          "license": {
+            "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+            "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+          },
+          "sourceId": "source-donald-michie-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+              "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
+          },
+          "role": "supporting-portrait",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
+          "caption": {
+            "zh": "爱丁堡 Freddy II 机器人",
+            "en": "Edinburgh Freddy II robot"
+          },
+          "subcaption": {
+            "zh": "爱丁堡大学 AI 与机器人研究的代表成果；米奇在 1973 年 BBC 辩论中播放视频展示了 Freddy II。",
+            "en": "A representative Edinburgh AI and robotics achievement; Michie showed Freddy II by video during the 1973 BBC debate."
+          },
+          "sourceName": {
+            "zh": "爱丁堡大学 AIAI Freddy 项目档案",
+            "en": "University of Edinburgh AIAI Freddy project archive"
+          },
+          "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/",
+          "license": {
+            "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+            "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+          },
+          "sourceId": "source-edinburgh-freddy-robot-archive",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+              "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+            },
+            "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
+          },
+          "role": "historical-photo",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
+          "caption": {
+            "zh": "英国皇家研究院演讲厅",
+            "en": "Royal Institution Lecture Theatre"
+          },
+          "subcaption": {
+            "zh": "1973 年 BBC 莱特希尔争议辩论的举办场地；图片为 2017 年的现代资料照，并非辩论现场。",
+            "en": "Venue of the 1973 BBC Lighthill controversy debate; this is a modern 2017 reference photo, not an image of the debate itself."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+          },
+          "sourceId": "source-royal-institution-theatre-commons",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
+          },
+          "role": "venue-photo",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
           "caption": {
             "zh": "莱特希尔寒冬解释图",
@@ -70594,10 +70733,134 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1973-lighthill-report-james-lighthill",
+        "asset-1973-lighthill-report-donald-michie",
+        "asset-1973-lighthill-report-freddy-ii",
+        "asset-1973-lighthill-report-royal-institution-theatre",
         "asset-1973-lighthill-report-winter-filter"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg": {
+        "caption": {
+          "zh": "詹姆斯·莱特希尔爵士肖像",
+          "en": "Sir James Lighthill portrait"
+        },
+        "subcaption": {
+          "zh": "莱特希尔报告作者。",
+          "en": "Author of the Lighthill Report."
+        },
+        "sourceName": {
+          "zh": "Royal Society 传记肖像，经 MacTutor 收录",
+          "en": "Royal Society memoir portrait via MacTutor"
+        },
+        "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
+        "license": {
+          "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+          "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+        },
+        "sourceId": "source-mactutor-lighthill-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+            "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+          },
+          "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
+        "caption": {
+          "zh": "唐纳德·米奇肖像",
+          "en": "Donald Michie portrait"
+        },
+        "subcaption": {
+          "zh": "英国 AI 代表人物，公开反对莱特希尔报告。",
+          "en": "A leading figure in British AI who publicly opposed the Lighthill Report."
+        },
+        "sourceName": {
+          "zh": "爱丁堡大学 Donald Michie 档案 / Wikimedia Commons",
+          "en": "University of Edinburgh Donald Michie archive / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
+        "license": {
+          "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+          "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+        },
+        "sourceId": "source-donald-michie-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+            "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
+        "caption": {
+          "zh": "爱丁堡 Freddy II 机器人",
+          "en": "Edinburgh Freddy II robot"
+        },
+        "subcaption": {
+          "zh": "爱丁堡大学 AI 与机器人研究的代表成果；米奇在 1973 年 BBC 辩论中播放视频展示了 Freddy II。",
+          "en": "A representative Edinburgh AI and robotics achievement; Michie showed Freddy II by video during the 1973 BBC debate."
+        },
+        "sourceName": {
+          "zh": "爱丁堡大学 AIAI Freddy 项目档案",
+          "en": "University of Edinburgh AIAI Freddy project archive"
+        },
+        "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/",
+        "license": {
+          "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+          "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+        },
+        "sourceId": "source-edinburgh-freddy-robot-archive",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+            "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+          },
+          "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
+        },
+        "role": "historical-photo",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
+        "caption": {
+          "zh": "英国皇家研究院演讲厅",
+          "en": "Royal Institution Lecture Theatre"
+        },
+        "subcaption": {
+          "zh": "1973 年 BBC 莱特希尔争议辩论的举办场地；图片为 2017 年的现代资料照，并非辩论现场。",
+          "en": "Venue of the 1973 BBC Lighthill controversy debate; this is a modern 2017 reference photo, not an image of the debate itself."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+        },
+        "sourceId": "source-royal-institution-theatre-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
+        },
+        "role": "venue-photo",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
         "caption": {
           "zh": "莱特希尔寒冬解释图",
@@ -70712,6 +70975,10 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-mactutor-lighthill-portrait",
+        "source-donald-michie-portrait",
+        "source-lighthill-controversy-debate-archive",
+        "source-royal-institution-theatre-commons",
         "source-lighthill-report-archive",
         "source-edinburgh-ai-history-perspective",
         "source-edinburgh-freddy-robot-archive",
@@ -71840,16 +72107,31 @@ const milestones = [
     },
     "figures": [
       {
-        "id": "symbolics-lmi-and-expert-system-vendors",
+        "id": "richard-greenblatt",
         "name": {
-          "zh": "Symbolics、LMI 与专家系统厂商",
-          "en": "Symbolics, LMI and expert-system vendors"
+          "zh": "理查德·格林布拉特",
+          "en": "Richard Greenblatt"
         },
         "role": {
-          "zh": "AI 硬件与软件产业参与者",
-          "en": "AI hardware and software industry actors"
+          "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人",
+          "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc."
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "richard-stallman",
+        "name": {
+          "zh": "理查德·斯托曼",
+          "en": "Richard Stallman"
+        },
+        "role": {
+          "zh": "为共享的 Lisp Machine 系统重新实现 Symbolics 改进、后来发起 GNU 的 MIT 黑客",
+          "en": "MIT hacker who reimplemented Symbolics advances for the shared Lisp Machine system and later launched GNU"
+        },
+        "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -71857,9 +72139,71 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
         "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg": {
+          "caption": {
+            "zh": "理查德·格林布拉特肖像",
+            "en": "Richard Greenblatt portrait"
+          },
+          "subcaption": {
+            "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人；照片摄于 2009 年。",
+            "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.; photographed in 2009."
+          },
+          "sourceName": {
+            "zh": "Richard P. Gabriel / Wikimedia Commons",
+            "en": "Richard P. Gabriel / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+          },
+          "sourceId": "source-richard-greenblatt-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+            },
+            "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
+          "caption": {
+            "zh": "理查德·斯托曼肖像",
+            "en": "Richard Stallman portrait"
+          },
+          "subcaption": {
+            "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
+            "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
+          },
+          "sourceName": {
+            "zh": "NicoBZH / Wikimedia Commons",
+            "en": "NicoBZH / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+          "license": {
+            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+          },
+          "sourceId": "source-richard-stallman-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+            },
+            "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+          },
+          "role": "supporting-portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
           "caption": {
             "zh": "Lisp 机市场转移解释图",
@@ -71896,10 +72240,72 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1987-lisp-machine-collapse-richard-greenblatt",
+        "asset-1987-lisp-machine-collapse-richard-stallman",
         "asset-1987-lisp-machine-collapse-market-shift"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg": {
+        "caption": {
+          "zh": "理查德·格林布拉特肖像",
+          "en": "Richard Greenblatt portrait"
+        },
+        "subcaption": {
+          "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人；照片摄于 2009 年。",
+          "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.; photographed in 2009."
+        },
+        "sourceName": {
+          "zh": "Richard P. Gabriel / Wikimedia Commons",
+          "en": "Richard P. Gabriel / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+        },
+        "sourceId": "source-richard-greenblatt-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+          },
+          "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
+        "caption": {
+          "zh": "理查德·斯托曼肖像",
+          "en": "Richard Stallman portrait"
+        },
+        "subcaption": {
+          "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
+          "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
+        },
+        "sourceName": {
+          "zh": "NicoBZH / Wikimedia Commons",
+          "en": "NicoBZH / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+        },
+        "sourceId": "source-richard-stallman-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+          },
+          "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
         "caption": {
           "zh": "Lisp 机市场转移解释图",
@@ -71970,6 +72376,39 @@ const milestones = [
       "sources": [
         {
           "label": {
+            "en": "Oral History of Richard Greenblatt",
+            "zh": "理查德·格林布拉特口述史"
+          },
+          "type": {
+            "en": "Oral history",
+            "zh": "口述史"
+          },
+          "url": "https://www.computerhistory.org/collections/catalog/102658015"
+        },
+        {
+          "label": {
+            "en": "My Lisp Experiences and the Development of GNU Emacs",
+            "zh": "《我的 Lisp 经历与 GNU Emacs 的发展》"
+          },
+          "type": {
+            "en": "First-person history",
+            "zh": "一手回忆"
+          },
+          "url": "https://www.gnu.org/gnu/rms-lisp.html"
+        },
+        {
+          "label": {
+            "en": "Initial GNU Project announcement",
+            "zh": "GNU 工程最初公告"
+          },
+          "type": {
+            "en": "Primary document",
+            "zh": "原始文献"
+          },
+          "url": "https://www.gnu.org/gnu/initial-announcement.html"
+        },
+        {
+          "label": {
             "en": "AI winter overview",
             "zh": "AI 寒冬概览"
           },
@@ -72014,6 +72453,11 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-richard-greenblatt-portrait",
+        "source-richard-stallman-portrait",
+        "source-greenblatt-oral-history",
+        "source-stallman-lisp-experiences",
+        "source-gnu-initial-announcement",
         "source-ai-winter-overview",
         "source-lisp-machine-history",
         "source-avoiding-another-ai-winter",

@@ -1,5 +1,85 @@
 [
   {
+    "id": "source-mactutor-lighthill-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Royal Society 莱特希尔传记肖像",
+      "en": "Royal Society memoir portrait of James Lighthill"
+    },
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "MacTutor 将该图标注为 Royal Society obituary portrait，但其版权页说明图片原始来源未留存，无法保证权利状态。因此该图仅作低分辨率外部参考，公开发布前应取得授权或替换。",
+      "en": "MacTutor identifies this as a Royal Society obituary portrait, but its copyright page says original image provenance was not retained and rights cannot be guaranteed. It remains a low-resolution external reference pending permission or replacement before public release."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-donald-michie-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "Donald Michie 2003 年肖像",
+      "en": "Donald Michie portrait, 2003"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "原图来自爱丁堡大学 Donald Michie 个人档案，由 Austin Tate 教授维护；Wikimedia Commons 文件页确认 CC BY 4.0。",
+      "en": "The original comes from Donald Michie's University of Edinburgh archive curated by Professor Austin Tate; the Wikimedia Commons file page confirms CC BY 4.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-lighthill-controversy-debate-archive",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "1973 年 BBC 莱特希尔争议辩论档案",
+      "en": "1973 BBC Lighthill controversy debate archive"
+    },
+    "url": "https://www.aiai.ed.ac.uk/~dm/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "爱丁堡大学档案注明辩论于 1973 年 6 月在英国皇家研究院举行，参与者包括莱特希尔、米奇、理查德·格雷戈里和约翰·麦卡锡。",
+      "en": "The University of Edinburgh archive states that the debate took place at the Royal Institution in June 1973 with Lighthill, Michie, Richard Gregory and John McCarthy."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-royal-institution-theatre-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "英国皇家研究院演讲厅现代照片",
+      "en": "Modern photograph of the Royal Institution Lecture Theatre"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "AnaConvTrans 摄于 2017 年；Wikimedia Commons 文件页标注 CC BY-SA 4.0。该图仅说明场地，不是 1973 年辩论现场照。",
+      "en": "Photographed by AnaConvTrans in 2017 and licensed CC BY-SA 4.0 on Wikimedia Commons. This illustrates the venue and is not a photograph of the 1973 debate."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-lighthill-report-archive",
     "type": "report",
     "label": {
@@ -52,10 +132,10 @@
     },
     "url": "https://www.aiai.ed.ac.uk/project/freddy/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
+      "zh": "爱丁堡大学 AIAI 项目档案介绍 Freddy II，并说明米奇在 1973 年 BBC 莱特希尔争议辩论中通过视频展示该机器人；页面内容与图片采用 CC BY 4.0。",
+      "en": "The University of Edinburgh AIAI project archive documents Freddy II and states that Michie showed it by video during the 1973 BBC Lighthill controversy debate; page content and images are CC BY 4.0."
     },
     "purpose": "historical-context"
   },
