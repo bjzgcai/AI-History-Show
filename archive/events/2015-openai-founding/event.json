@@ -37,14 +37,59 @@
   ],
   "figures": [
     {
-      "figureId": "openai-founding-team",
+      "figureId": "sam-altman",
       "name": {
-        "en": "OpenAI founding team",
-        "zh": "OpenAI 创始团队"
+        "en": "Sam Altman",
+        "zh": "萨姆·奥尔特曼"
       },
       "role": {
-        "en": "Nonprofit AI research initiative announced in 2015",
-        "zh": "2015 年宣告成立的非营利 AI 研究计划"
+        "en": "OpenAI founding co-chair",
+        "zh": "OpenAI 创始联合主席"
+      },
+      "avatar": "resources/images/figures/authoritative/sam-altman.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "elon-musk",
+      "name": {
+        "en": "Elon Musk",
+        "zh": "埃隆·马斯克"
+      },
+      "role": {
+        "en": "OpenAI founding co-chair and early donor",
+        "zh": "OpenAI 创始联合主席与早期捐助者"
+      },
+      "avatar": "resources/images/figures/authoritative/elon-musk.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "ilya-sutskever",
+      "name": {
+        "en": "Ilya Sutskever",
+        "zh": "伊利亚·苏茨克维"
+      },
+      "role": {
+        "en": "Research director at OpenAI's founding",
+        "zh": "OpenAI 成立时的研究主管"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "greg-brockman",
+      "name": {
+        "en": "Greg Brockman",
+        "zh": "格雷格·布罗克曼"
+      },
+      "role": {
+        "en": "Chief technology officer at OpenAI's founding",
+        "zh": "OpenAI 成立时的首席技术官"
       },
       "avatar": "",
       "avatarStyle": "",

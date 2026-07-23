@@ -1,6 +1,6 @@
 # Archive Validation Report
 
-Generated: 2026-07-22T08:09:56.632Z
+Generated: 2026-07-23T03:45:27.730Z
 
 ## Summary
 
@@ -8,8 +8,8 @@ Generated: 2026-07-22T08:09:56.632Z
 - Storylines: 4
 - Variants: 147
 - Claims: 278
-- Sources: 432
-- Assets: 342
+- Sources: 470
+- Assets: 372
 - Quizzes: 118
 - Errors: 0
 - Warnings: 0
@@ -162,7 +162,6 @@ None.
 
 ## Asset references
 
-- `https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280` — ai100-2005-hog/asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde
 - `https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg` — ai100-1967-knn/asset-ai100-1967-knn-2012-04-12-obit-cover
 - `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_01.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-01
 - `resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg` — 1956-dartmouth/asset-1956-dartmouth-historical-02
@@ -195,7 +194,6 @@ None.
 - `resources/images/2014-attention/people/2014-attention_people_01.png` — 2014-attention/asset-2014-attention-people-01
 - `resources/images/2014-gan/architecture/2014-gan_architecture_01.png` — 2014-gan/asset-2014-gan-architecture-01
 - `resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png` — 2014-highway-network/asset-2014-highway-network-architecture-01
-- `resources/images/2014-highway-network/people/2014-highway-network_people_01.png` — 2014-highway-network/asset-2014-highway-network-people-01
 - `resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png` — 2015-resnet/asset-2015-resnet-architecture-01
 - `resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png` — 2015-resnet/asset-2015-resnet-architecture-02
 - `resources/images/2015-resnet/people/2015-resnet_people_01.png` — 2015-resnet/asset-2015-resnet-people-01
@@ -238,6 +236,8 @@ None.
 - `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png` — 2025-llm-competition/asset-2025-llm-competition-historical-01
 - `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png` — 2025-llm-competition/asset-2025-llm-competition-historical-02
 - `resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png` — 2025-llm-competition/asset-2025-llm-competition-historical-03
+- `resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg` — 2025-llm-competition/asset-2025-llm-competition-lianmin-zheng
+- `resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png` — 1966-eliza/asset-1966-eliza-ctss-system-diagram
 - `resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg` — ai100-1943-mcculloch-pitts-neuron/asset-1943-mcculloch-pitts-neuron-threshold-logic
 - `resources/images/bench-council-ai100/explainers/1950-turing-test_diagram.png` — 1950-turing-test/asset-1950-turing-test-diagram
 - `resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg` — ai100-1951-snarc/asset-1951-snarc-maze-reinforcement
@@ -383,8 +383,10 @@ None.
 - `resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg` — ai100-2021-swin-transformer/asset-2021-swin-transformer-shifted-windows
 - `resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg` — ai100-2022-stable-diffusion/asset-2022-stable-diffusion-latent-denoise
 - `resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg` — ai100-2023-segment-anything/asset-2023-segment-anything-prompt-mask
+- `resources/images/bench-council-ai100/papers/1966-eliza_original-source-page-9.jpg` — 1966-eliza/asset-1966-eliza-original-source-page-9
 - `resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg` — 1950-turing-test/asset-1950-turing-test-alan-turing
 - `resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg` — 1956-logic-theorist/asset-1956-logic-theorist-herbert-simon
+- `resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg` — 1965-simon-ai-prediction/asset-1965-simon-ai-prediction-herbert-simon
 - `resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg` — 1958-lisp/asset-1958-lisp-john-mccarthy
 - `resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg` — 1957-perceptron/asset-1958-rosenblatt-perceptron-frank-rosenblatt
 - `resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg` — 1958-wangs-algorithm/asset-1958-wangs-algorithm-hao-wang
@@ -392,7 +394,7 @@ None.
 - `resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg` — 1960-davis-putnam-dpll/asset-1960-davis-putnam-dpll-hilary-putnam
 - `resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg` — 1965-dendral/asset-1965-dendral-edward-feigenbaum
 - `resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg` — 1965-resolution-method/asset-1965-resolution-method-john-alan-robinson
-- `resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg` — 1966-eliza/asset-1966-eliza-joseph-weizenbaum
+- `resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg` — 1966-eliza/asset-1966-eliza-weizenbaum-rit-1982
 - `resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg` — 1970-shrdlu/asset-1970-shrdlu-terry-winograd
 - `resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg` — 1971-complexity-theory/asset-1971-complexity-theory-stephen-cook
 - `resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png` — 1971-vc-theory/asset-1971-vc-theory-vladimir-vapnik
@@ -425,6 +427,8 @@ None.
 - `resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg` — 2016-alphago/asset-alphago-lee-sedol
 - `resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg` — 2016-yolo/asset-2016-yolo-joseph-redmon
 - `resources/images/bench-council-ai100/source/1994-chinook_homepage.png` — 1994-chinook/asset-1994-chinook-homepage
+- `resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png` — 1966-eliza/asset-1966-eliza-conversation-reconstruction
+- `resources/images/bench-council-ai100/supporting/1966-eliza_weizenbaum-uszkoreit-2006.jpg` — 1966-eliza/asset-1966-eliza-weizenbaum-uszkoreit-2006
 - `resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg` — 1951-strachey-draughts/asset-1951-strachey-draughts-checkers-board-external
 - `resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png` — 1951-strachey-draughts/asset-1951-strachey-draughts-program-external
 - `resources/images/external/1957-kmeans/bell-labs-holmdel-complex.jpg` — 1957-kmeans/asset-1957-kmeans-bell-labs-holmdel
@@ -442,6 +446,8 @@ None.
 - `resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png` — 2000-spectral-clustering/asset-2000-spectral-clustering-6n-graf
 - `resources/images/external/2011-ibm-watson/deepqa-question-answering-pipeline.png` — 2011-ibm-watson/asset-2011-ibm-watson-deepqa
 - `resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg` — 2011-ibm-watson/asset-2011-ibm-watson-ibmwatson
+- `resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg` — 2014-highway-network/asset-2014-highway-network-people-01
+- `resources/images/external/2014-highway-network/klaus-greff-github.jpg` — 2014-highway-network/asset-2014-highway-network-klaus-greff
 - `resources/images/external/2020-alphafold/john-jumper-portrait.jpg` — 2020-alphafold/asset-2020-alphafold-john-jumper-external
 - `resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg` — ai100-1943-mcculloch-pitts-neuron/asset-ai100-1943-mcculloch-pitts-neuron-330px-1954-walter-pitts-and-a-blackboard
 - `resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg` — ai100-1967-knn/asset-ai100-1967-knn-thomas-cover-stanford
@@ -458,11 +464,14 @@ None.
 - `resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg` — ai100-2000-lle/asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb
 - `resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg` — ai100-2000-neural-language-model/asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02
 - `resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg` — ai100-2005-gnn/asset-ai100-2005-gnn-citations
-- `resources/images/external/ai100-2005-hog/bill-triggs-portrait.jpg` — ai100-2005-hog/asset-ai100-2005-hog-bill-triggs-portrait
+- `resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg` — ai100-2005-hog/asset-ai100-2005-hog-navneet-dalal-portrait
 - `resources/images/external/ai100-2006-surf/herbert-bay-portrait.png` — ai100-2006-surf/asset-ai100-2006-surf-herbert-bay-gm
 - `resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg` — ai100-2013-variational-autoencoder/asset-ai100-2013-variational-autoencoder-portrait
 - `resources/images/external/ai100-2014-conditional-gan/conditional-gan-paper-first-page.jpg` — ai100-2014-conditional-gan/asset-ai100-2014-conditional-gan-flickportrait1
+- `resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg` — ai100-2014-glove/asset-ai100-2014-glove-christopher-manning-commons
+- `resources/images/external/ai100-2014-glove/christopher-manning-stanford.jpg` — ai100-2014-glove/asset-ai100-2014-glove-christopher-manning-stanford
 - `resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg` — ai100-2014-glove/asset-ai100-2014-glove-photo
+- `resources/images/external/ai100-2014-glove/richard-socher-portrait.png` — ai100-2014-glove/asset-ai100-2014-glove-richard-socher-portrait
 - `resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg` — ai100-2014-ms-coco/asset-ai100-2014-ms-coco-tsungyi
 - `resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png` — ai100-2015-ddpg/asset-ai100-2015-ddpg-timothy-lillicrap-1
 - `resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg` — ai100-2015-deep-compression/asset-ai100-2015-deep-compression-6514db3bc943fa1c599d89d5-songhan
@@ -472,8 +481,9 @@ None.
 - `resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg` — ai100-2017-cyclegan/asset-ai100-2017-cyclegan-portrait3-lr
 - `resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg` — ai100-2017-gat/asset-ai100-2017-gat-citations
 - `resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg` — ai100-2017-pix2pix/asset-ai100-2017-pix2pix-photo-of-me-korea
-- `resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait.jpg` — ai100-2017-wasserstein-gan/asset-ai100-2017-wasserstein-gan-bottou-75
-- `resources/images/external/ai100-2019-stylegan/tero-karras-portrait.png` — ai100-2019-stylegan/asset-ai100-2019-stylegan-tero-karras
+- `resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg` — ai100-2017-wasserstein-gan/asset-ai100-2017-wasserstein-gan-leon-bottou-2025
+- `resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg` — ai100-2017-wasserstein-gan/asset-ai100-2017-wasserstein-gan-martin-arjovsky
+- `resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg` — ai100-2019-stylegan/asset-ai100-2019-stylegan-tero-karras
 - `resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png` — ai100-2020-vit/asset-ai100-2020-vit-alexey-dosovitskiy
 - `resources/images/external/ai100-2021-dalle/aditya-ramesh-portrait.png` — ai100-2021-dalle/asset-ai100-2021-dalle-b0fdc3694e0d34821c1a35fbe494cb9c
 - `resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg` — ai100-2021-swin-transformer/asset-ai100-2021-swin-transformer-zeliu
@@ -484,6 +494,20 @@ None.
 - `resources/images/figures/alec-radford.png` — ai100-2021-clip/asset-alec-radford
 - `resources/images/figures/alex-krizhevsky.jpg` — 2012-alexnet/asset-alexnet-portrait
 - `resources/images/figures/ashish-vaswani.jpg` — 2017-transformer/asset-transformer-portrait
+- `resources/images/figures/authoritative/dan-hendrycks.webp` — 2023-ai-risk-statement/asset-dan-hendrycks-cais-portrait
+- `resources/images/figures/authoritative/david-silver.jpg` — 2013-dqn/asset-david-silver-commons-portrait
+- `resources/images/figures/authoritative/david-silver.jpg` — 2016-alphago/asset-david-silver-commons-portrait
+- `resources/images/figures/authoritative/david-silver.jpg` — 2017-alphazero/asset-david-silver-commons-portrait
+- `resources/images/figures/authoritative/david-silver.jpg` — 2019-muzero/asset-david-silver-commons-portrait
+- `resources/images/figures/authoritative/elon-musk.jpg` — 2014-ai-existential-warnings/asset-elon-musk-commons-portrait
+- `resources/images/figures/authoritative/elon-musk.jpg` — 2015-openai-founding/asset-elon-musk-commons-portrait
+- `resources/images/figures/authoritative/michael-buro.jpg` — 1997-logistello/asset-michael-buro-university-portrait
+- `resources/images/figures/authoritative/noam-brown.jpg` — 2017-libratus/asset-noam-brown-official-portrait
+- `resources/images/figures/authoritative/noam-brown.jpg` — 2019-pluribus/asset-noam-brown-official-portrait
+- `resources/images/figures/authoritative/sam-altman.jpg` — 2015-openai-founding/asset-sam-altman-commons-portrait
+- `resources/images/figures/authoritative/stephen-hawking.jpg` — 2014-ai-existential-warnings/asset-stephen-hawking-commons-portrait
+- `resources/images/figures/authoritative/tuomas-sandholm.jpg` — 2017-libratus/asset-tuomas-sandholm-commons-portrait
+- `resources/images/figures/authoritative/tuomas-sandholm.jpg` — 2019-pluribus/asset-tuomas-sandholm-commons-portrait
 - `resources/images/figures/david-rumelhart.jpg` — ai100-1967-back-propagation/asset-david-rumelhart
 - `resources/images/figures/geoffrey-hinton.jpg` — 2014-attention/asset-geoffrey-hinton
 - `resources/images/figures/geoffrey-hinton.jpg` — ai100-2015-knowledge-distillation/asset-geoffrey-hinton
@@ -504,4 +528,10 @@ None.
 - `resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg` — 2014-ai-existential-warnings/asset-2014-ai-existential-warnings-public-risk
 - `resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg` — 2015-openai-founding/asset-2015-openai-founding-broad-benefit
 - `resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg` — 2023-ai-risk-statement/asset-2023-ai-risk-statement-global-priority
+- `resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg` — 1920-rur-robots/asset-1920-rur-robots-karel-capek
+- `resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg` — 1942-asimov-runaround/asset-1942-asimov-runaround-isaac-asimov
+- `resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png` — 1950-wiener-human-use/asset-1950-wiener-human-use-norbert-wiener
+- `resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg` — 1968-hal-9000/asset-1968-hal-9000-stanley-kubrick
+- `resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg` — 1978-xiaolingtong/asset-1978-xiaolingtong-ye-yonglie
+- `resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg` — 1984-neuromancer/asset-1984-neuromancer-william-gibson
 

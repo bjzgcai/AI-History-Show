@@ -1,82 +1,98 @@
 {
-  "id": "2015-faster-r-cnn",
-  "year": "2015",
-  "date": "2015",
-  "title": {
-    "zh": "Faster R-CNN",
-    "en": "Faster R-CNN"
-  },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
-  "description": {
-    "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>",
-    "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>"
-  },
-  "location": {
-    "regionId": "china",
-    "country": {
-      "zh": "中国北京",
-      "en": "Beijing, China"
+    "id": "2015-faster-r-cnn",
+    "year": "2015",
+    "date": "2015",
+    "title": {
+        "zh": "Faster R-CNN",
+        "en": "Faster R-CNN"
     },
-    "place": {
-      "zh": "微软亚洲研究院",
-      "en": "Microsoft Research Asia"
+    "summary": {
+        "zh": "AI 百大成就",
+        "en": "AI Top 100 Achievements"
     },
-    "coordinates": [
-      39.9042,
-      116.4074
-    ]
-  },
-  "topics": [
-    "bench-council-ai100"
-  ],
-  "achievementTypeIds": [
-    "ai100-achievement"
-  ],
-  "figures": [
-    {
-      "figureId": "shaoqing-ren",
-      "role": {
-        "zh": "Faster R-CNN 共同作者",
-        "en": "Co-author of Faster R-CNN"
-      },
-      "organizationIds": []
+    "description": {
+        "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>",
+        "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>"
     },
-    {
-      "figureId": "kaiming-he",
-      "role": {
-        "zh": "Faster R-CNN 共同作者",
-        "en": "Co-author of Faster R-CNN"
-      },
-      "organizationIds": []
+    "location": {
+        "regionId": "china",
+        "country": {
+            "zh": "中国北京",
+            "en": "Beijing, China"
+        },
+        "place": {
+            "zh": "微软亚洲研究院",
+            "en": "Microsoft Research Asia"
+        },
+        "coordinates": [39.9042, 116.4074]
     },
-    {
-      "figureId": "ross-girshick",
-      "role": {
-        "zh": "Faster R-CNN 共同作者",
-        "en": "Co-author of Faster R-CNN"
-      },
-      "organizationIds": []
-    },
-    {
-      "figureId": "jian-sun",
-      "role": {
-        "zh": "Faster R-CNN 共同作者",
-        "en": "Co-author of Faster R-CNN"
-      },
-      "organizationIds": []
+    "topics": ["bench-council-ai100"],
+    "achievementTypeIds": ["ai100-achievement"],
+    "figures": [
+        {
+            "figureId": "shaoqing-ren",
+            "name": {
+                "zh": "任少卿",
+                "en": "Shaoqing Ren"
+            },
+            "role": {
+                "zh": "Faster R-CNN 共同作者",
+                "en": "Co-author of Faster R-CNN"
+            },
+            "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+            "figureType": "person",
+            "organizationIds": []
+        },
+        {
+            "figureId": "kaiming-he",
+            "name": {
+                "zh": "何恺明",
+                "en": "Kaiming He"
+            },
+            "role": {
+                "zh": "Faster R-CNN 共同作者",
+                "en": "Co-author of Faster R-CNN"
+            },
+            "avatar": "resources/images/figures/kaiming-he.jpg",
+            "figureType": "person",
+            "organizationIds": []
+        },
+        {
+            "figureId": "ross-girshick",
+            "name": {
+                "zh": "罗斯·格希克",
+                "en": "Ross Girshick"
+            },
+            "role": {
+                "zh": "Faster R-CNN 共同作者",
+                "en": "Co-author of Faster R-CNN"
+            },
+            "figureType": "person",
+            "organizationIds": []
+        },
+        {
+            "figureId": "jian-sun",
+            "name": {
+                "zh": "孙剑",
+                "en": "Jian Sun"
+            },
+            "role": {
+                "zh": "Faster R-CNN 共同作者",
+                "en": "Co-author of Faster R-CNN"
+            },
+            "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+            "figureType": "person",
+            "organizationIds": []
+        }
+    ],
+    "organizations": [],
+    "canonical": true,
+    "relatedLegacyIds": [],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+            "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+        }
     }
-  ],
-  "organizations": [],
-  "canonical": true,
-  "relatedLegacyIds": [],
-  "review": {
-    "status": "draft",
-    "notes": {
-      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
-      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
-    }
-  }
 }

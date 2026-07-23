@@ -55,9 +55,10 @@
     "asset-2019-stylegan-style-modulation"
   ],
   "sourceIds": [
-    "source-a-style-based-generator-architecture-for-gans",
-    "source-cvpr-open-access-paper-page",
-    "source-nvidia-stylegan-repository"
+      "source-a-style-based-generator-architecture-for-gans",
+      "source-cvpr-open-access-paper-page",
+      "source-nvidia-stylegan-repository",
+      "source-tero-karras-github-profile"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -129,7 +130,7 @@
         "en": "StyleGAN lead author",
         "zh": "StyleGAN 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

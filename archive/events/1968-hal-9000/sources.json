@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-stanley-kubrick-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "斯坦利·库布里克 1949 年肖像",
+      "en": "1949 portrait of Stanley Kubrick"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Phillip Harrington；美国国会图书馆馆藏，Wikimedia Commons 标注为公有领域。",
+      "en": "Photographed by Phillip Harrington; Library of Congress collection and marked public domain on Wikimedia Commons."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-2001-film-overview",
     "type": "encyclopedia-entry",
     "label": {

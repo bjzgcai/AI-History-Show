@@ -30,10 +30,13 @@
       "en": "ELIZA’s DOCTOR script relied on pattern matching and response templates that made users continue supplying meaning."
     },
     "sourceIds": [
-      "source-eliza-cacm-paper"
+      "source-eliza-cacm-paper",
+      "source-original-eliza-mad-slip"
     ],
     "assetIds": [
-      "asset-1966-eliza-joseph-weizenbaum"
+      "asset-1966-eliza-original-source-page-9",
+      "asset-1966-eliza-ctss-system-diagram",
+      "asset-1966-eliza-conversation-reconstruction"
     ]
   }
 ]

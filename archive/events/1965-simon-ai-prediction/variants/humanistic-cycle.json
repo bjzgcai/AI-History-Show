@@ -47,8 +47,12 @@
             }
         }
     ],
-    "assetIds": ["asset-1965-simon-ai-prediction-hype-curve"],
+    "assetIds": [
+        "asset-1965-simon-ai-prediction-herbert-simon",
+        "asset-1965-simon-ai-prediction-hype-curve"
+    ],
     "sourceIds": [
+        "source-herbert-simon-commons-portrait",
         "source-open-library-book-metadata",
         "source-open-library-metadata-search-result",
         "source-herbert-a-simon-overview",

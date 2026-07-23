@@ -47,8 +47,9 @@
             }
         }
     ],
-    "assetIds": ["asset-1997-logistello-pattern-eval"],
+    "assetIds": ["asset-michael-buro-university-portrait", "asset-1997-logistello-pattern-eval"],
     "sourceIds": [
+        "source-michael-buro-university-profile",
         "source-logistello-homepage",
         "source-murakami-vs-logistello",
         "source-statistical-feature-combination",
@@ -115,7 +116,7 @@
                 "en": "Creator of Logistello",
                 "zh": "Logistello 创建者"
             },
-            "avatar": "",
+            "avatar": "resources/images/figures/authoritative/michael-buro.jpg",
             "avatarStyle": "",
             "figureType": "person"
         },

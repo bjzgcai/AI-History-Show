@@ -1,24 +1,30 @@
 [
   {
-    "id": "asset-1966-eliza-joseph-weizenbaum",
+    "id": "asset-1966-eliza-weizenbaum-rit-1982",
     "type": "image",
-    "path": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg",
-    "role": "hero-image",
+    "path": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
+    "role": "portrait",
     "caption": {
-      "zh": "约瑟夫·魏岑鲍姆 肖像",
+      "zh": "约瑟夫·魏岑鲍姆肖像",
       "en": "Joseph Weizenbaum portrait"
     },
     "subcaption": {
-      "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。",
-      "en": "MIT News portrait used in Weizenbaum’s obituary."
+      "zh": "ELIZA 创建者，摄于 1982 年。",
+      "en": "Creator of ELIZA, photographed in 1982."
     },
-    "sourceId": "source-eliza-cacm-paper",
+    "sourceId": "source-weizenbaum-rit-1982-portrait",
+    "sourceName": {
+      "zh": "罗切斯特理工学院档案 / Wikimedia Commons",
+      "en": "Rochester Institute of Technology archive / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg",
     "rights": {
-      "status": "documented-in-legacy",
+      "status": "public-domain",
       "license": {
-        "zh": "麻省理工学院 新闻 image; rights not stated.",
-        "en": "MIT News image; rights not stated."
-      }
+        "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+        "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg"
     },
     "usage": [
       "variant:bench-council-ai100"
@@ -48,6 +54,137 @@
     },
     "usage": [
       "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1966-eliza-weizenbaum-uszkoreit-2006",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/supporting/1966-eliza_weizenbaum-uszkoreit-2006.jpg",
+    "role": "historical-photo",
+    "caption": {
+      "zh": "约瑟夫·魏岑鲍姆与汉斯·乌斯科赖特",
+      "en": "Joseph Weizenbaum and Hans Uszkoreit"
+    },
+    "subcaption": {
+      "zh": "2006 年活动照片，展示晚年的魏岑鲍姆。",
+      "en": "A 2006 event photograph showing Weizenbaum later in life."
+    },
+    "sourceId": "source-weizenbaum-uszkoreit-2006-photo",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 2.0；使用时须保留文件页所列作者与许可信息。",
+        "en": "CC BY 2.0; retain the author and license attribution listed on the file page."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1966-eliza-original-source-page-9",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/papers/1966-eliza_original-source-page-9.jpg",
+    "role": "primary-source",
+    "caption": {
+      "zh": "ELIZA 原始 MAD-SLIP 源码",
+      "en": "Original ELIZA MAD-SLIP source"
+    },
+    "subcaption": {
+      "zh": "原始档案 PDF 第 9 页，主程序代码从此处开始。",
+      "en": "Page 9 of the archival PDF, where the main program listing begins."
+    },
+    "sourceId": "source-original-eliza-mad-slip",
+    "sourceName": {
+      "zh": "ELIZA 源码档案 / Wikimedia Commons",
+      "en": "ELIZA source archive / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ORIGINAL_ELIZA_IN_MAD_SLIP.pdf",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC0 1.0；展示图由同一档案 PDF 的第 9 页生成。",
+        "en": "CC0 1.0; the display image is rendered from page 9 of the same archival PDF."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ORIGINAL_ELIZA_IN_MAD_SLIP.pdf"
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "quiz:1966-eliza-quiz-1"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1966-eliza-ctss-system-diagram",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png",
+    "role": "historical-diagram",
+    "caption": {
+      "zh": "CTSS 7090/7094 系统结构图",
+      "en": "CTSS 7090/7094 system diagram"
+    },
+    "subcaption": {
+      "zh": "1963 年《CTSS 程序员指南》中的系统结构图。",
+      "en": "System diagram from the 1963 CTSS Programmer's Guide."
+    },
+    "sourceId": "source-ctss-programmers-guide-diagram",
+    "sourceName": {
+      "zh": "MIT 计算中心档案 / Wikimedia Commons",
+      "en": "MIT Computation Center archive / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+        "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "quiz:1966-eliza-quiz-1"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1966-eliza-conversation-reconstruction",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png",
+    "role": "historical-reconstruction",
+    "caption": {
+      "zh": "ELIZA 对话重建",
+      "en": "ELIZA conversation reconstruction"
+    },
+    "subcaption": {
+      "zh": "根据早期 ELIZA 交互记录重建的终端对话画面。",
+      "en": "A terminal-dialog reconstruction based on an early ELIZA interaction record."
+    },
+    "sourceId": "source-eliza-conversation-reconstruction",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+        "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "quiz:1966-eliza-quiz-1"
     ],
     "editable": true
   },

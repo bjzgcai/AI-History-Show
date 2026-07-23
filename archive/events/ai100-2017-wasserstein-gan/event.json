@@ -38,10 +38,30 @@
   "figures": [
     {
       "figureId": "martin-arjovsky",
+      "name": {
+        "zh": "马丁·阿尔乔夫斯基",
+        "en": "Martin Arjovsky"
+      },
       "role": {
         "zh": "Wasserstein GAN 主要作者",
         "en": "Wasserstein GAN lead author"
       },
+      "avatar": "resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "leon-bottou",
+      "name": {
+        "zh": "莱昂·博图",
+        "en": "Leon Bottou"
+      },
+      "role": {
+        "zh": "Wasserstein GAN 共同作者",
+        "en": "Wasserstein GAN co-author"
+      },
+      "avatar": "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

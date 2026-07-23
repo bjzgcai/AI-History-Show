@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-22 08:09
+// 生成时间: 2026-07-23 03:26
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -1212,7 +1212,7 @@ const milestones = [
           "en": "AlphaGo lead researcher",
           "zh": "AlphaGo 主要研究者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -1245,16 +1245,47 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-david-silver-commons-portrait",
         "asset-alphago-lee-sedol",
         "asset-alphago-policy-value-search"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
           "zh": "李世石肖像",
@@ -1339,6 +1370,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-alphago-nature-paper",
           "type": {
             "zh": "论文页面",
@@ -1385,6 +1431,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-david-silver-commons-portrait",
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
         "source-katago-analysis-engine"
@@ -1664,7 +1711,7 @@ const milestones = [
           "en": "Proposed the imitation game",
           "zh": "提出模仿游戏"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -2526,7 +2573,7 @@ const milestones = [
           "en": "Introduced NP-completeness",
           "zh": "提出 NP 完全性"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -2969,7 +3016,7 @@ const milestones = [
           "en": "Co-developed VC theory",
           "zh": "VC 理论共同创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -3422,7 +3469,7 @@ const milestones = [
           "en": "Logic Theorist co-creator",
           "zh": "Logic Theorist 共同创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -3865,7 +3912,7 @@ const milestones = [
           "en": "Developed pattern-recognition theorem-proving procedures",
           "zh": "提出基于模式识别的定理证明过程"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -4308,7 +4355,7 @@ const milestones = [
           "en": "1960 DP paper co-author",
           "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -4764,7 +4811,7 @@ const milestones = [
           "en": "Co-author of Adam",
           "zh": "Adam 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -5265,7 +5312,7 @@ const milestones = [
           "en": "Co-author and Visual Geometry Group lead",
           "zh": "共同作者，视觉几何组负责人"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -5736,7 +5783,7 @@ const milestones = [
           "en": "Co-author of U-Net",
           "zh": "U-Net 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -6236,7 +6283,7 @@ const milestones = [
           "en": "Developed the genetic algorithm framework",
           "zh": "提出遗传算法框架"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -6749,7 +6796,7 @@ const milestones = [
           "en": "Co-author of Faster R-CNN",
           "zh": "Faster R-CNN 共同作者"
         },
-        "avatar": "resources/images/figures/sun-jian.png",
+        "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -6775,18 +6822,27 @@ const milestones = [
         },
         "subcaption": {
           "zh": "Faster R-CNN 共同作者",
-          "en": "Portrait from Kaiming He's MIT-hosted personal page."
+          "en": "Co-author of Faster R-CNN"
         },
+        "sourceName": {
+          "zh": "MIT CSAIL",
+          "en": "MIT CSAIL"
+        },
+        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
         "license": {
-          "zh": "个人网站照片；未说明复用权利。",
-          "en": "Personal website photo; rights not stated."
+          "zh": "图片来自何恺明的 MIT 个人主页；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Image from Kaiming He's MIT personal homepage; redistribution rights are not stated and must be reviewed before publication."
         },
-        "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "usage": {
+          "zh": "用于展示 Faster R-CNN 共同作者何恺明。",
+          "en": "Used to present Faster R-CNN co-author Kaiming He."
+        },
+        "sourceId": "source-kaiming-he-profile-at-mit-csail",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "external-reference",
           "license": {
-            "zh": "个人网站照片；未说明复用权利。",
-            "en": "Personal website photo; rights not stated."
+            "zh": "图片来自何恺明的 MIT 个人主页；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Image from Kaiming He's MIT personal homepage; redistribution rights are not stated and must be reviewed before publication."
           }
         },
         "role": "hero-image",
@@ -6802,14 +6858,18 @@ const milestones = [
           "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘，不复制来源材料中的出版图形。",
           "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "usage": {
+          "zh": "用于解释区域建议网络如何生成候选框。",
+          "en": "Used to explain how the Region Proposal Network generates candidate boxes."
         },
         "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "local-redraw",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘，不复制来源材料中的出版图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -6826,14 +6886,18 @@ const milestones = [
           "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘，不复制来源材料中的出版图形。",
           "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "usage": {
+          "zh": "用于展示 Faster R-CNN 的分类与边界框输出。",
+          "en": "Used to show Faster R-CNN classification and bounding-box outputs."
         },
         "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "local-redraw",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘，不复制来源材料中的出版图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -6872,6 +6936,21 @@ const milestones = [
         }
       ],
       "sources": [
+        {
+          "id": "source-kaiming-he-profile-at-mit-csail",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "何恺明 MIT CSAIL 个人主页",
+            "en": "Kaiming He MIT CSAIL personal homepage"
+          },
+          "url": "https://people.csail.mit.edu/kaiming/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
         {
           "id": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
           "type": {
@@ -6919,6 +6998,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-kaiming-he-profile-at-mit-csail",
         "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
         "source-shaoqingren-faster-rcnn",
         "source-torchvision-faster-r-cnn-model"
@@ -7224,7 +7304,7 @@ const milestones = [
           "en": "SVM co-developer",
           "zh": "共同发展最优间隔分类器与统计学习理论"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -7250,7 +7330,7 @@ const milestones = [
           "en": "1992 SVM paper co-author",
           "zh": "1992 年最优间隔分类器论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -7721,7 +7801,7 @@ const milestones = [
           "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -8769,7 +8849,7 @@ const milestones = [
           "en": "Introduced the lasso method",
           "zh": "提出 Lasso 方法"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -9244,7 +9324,7 @@ const milestones = [
           "en": "Lead author of the GoogLeNet paper",
           "zh": "GoogLeNet 论文第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -9731,7 +9811,7 @@ const milestones = [
           "en": "Inventor of the resolution principle",
           "zh": "归结原理提出者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -10209,7 +10289,7 @@ const milestones = [
           "en": "Creator of the first Prolog implementation",
           "zh": "早期 Prolog 实现创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -10700,47 +10780,61 @@ const milestones = [
           "en": "Creator of ELIZA",
           "zh": "ELIZA 创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg",
+        "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
         "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg",
+        "resources/images/bench-council-ai100/supporting/1966-eliza_weizenbaum-uszkoreit-2006.jpg",
+        "resources/images/bench-council-ai100/papers/1966-eliza_original-source-page-9.jpg",
+        "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png",
+        "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png",
         "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1966-eliza-joseph-weizenbaum",
+        "asset-1966-eliza-weizenbaum-rit-1982",
         "asset-1966-eliza-doctor-script",
+        "asset-1966-eliza-weizenbaum-uszkoreit-2006",
+        "asset-1966-eliza-original-source-page-9",
+        "asset-1966-eliza-ctss-system-diagram",
+        "asset-1966-eliza-conversation-reconstruction",
         "asset-1966-eliza-terminal-dialog"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum.jpg": {
+      "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg": {
         "caption": {
-          "zh": "约瑟夫·魏岑鲍姆 肖像",
+          "zh": "约瑟夫·魏岑鲍姆肖像",
           "en": "Joseph Weizenbaum portrait"
         },
         "subcaption": {
-          "zh": "麻省理工学院 新闻 在 Weizenbaum 讣闻中使用的人物图。",
-          "en": "MIT News portrait used in Weizenbaum’s obituary."
+          "zh": "ELIZA 创建者，摄于 1982 年。",
+          "en": "Creator of ELIZA, photographed in 1982."
         },
+        "sourceName": {
+          "zh": "罗切斯特理工学院档案 / Wikimedia Commons",
+          "en": "Rochester Institute of Technology archive / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg",
         "license": {
-          "zh": "麻省理工学院 新闻 image; rights not stated.",
-          "en": "MIT News image; rights not stated."
+          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
         },
-        "sourceId": "source-eliza-cacm-paper",
+        "sourceId": "source-weizenbaum-rit-1982-portrait",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "public-domain",
           "license": {
-            "zh": "麻省理工学院 新闻 image; rights not stated.",
-            "en": "MIT News image; rights not stated."
-          }
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg"
         },
-        "role": "hero-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg": {
@@ -10766,6 +10860,126 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/supporting/1966-eliza_weizenbaum-uszkoreit-2006.jpg": {
+        "caption": {
+          "zh": "约瑟夫·魏岑鲍姆与汉斯·乌斯科赖特",
+          "en": "Joseph Weizenbaum and Hans Uszkoreit"
+        },
+        "subcaption": {
+          "zh": "2006 年活动照片，展示晚年的魏岑鲍姆。",
+          "en": "A 2006 event photograph showing Weizenbaum later in life."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg",
+        "license": {
+          "zh": "CC BY 2.0；使用时须保留文件页所列作者与许可信息。",
+          "en": "CC BY 2.0; retain the author and license attribution listed on the file page."
+        },
+        "sourceId": "source-weizenbaum-uszkoreit-2006-photo",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 2.0；使用时须保留文件页所列作者与许可信息。",
+            "en": "CC BY 2.0; retain the author and license attribution listed on the file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg"
+        },
+        "role": "historical-photo",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/papers/1966-eliza_original-source-page-9.jpg": {
+        "caption": {
+          "zh": "ELIZA 原始 MAD-SLIP 源码",
+          "en": "Original ELIZA MAD-SLIP source"
+        },
+        "subcaption": {
+          "zh": "原始档案 PDF 第 9 页，主程序代码从此处开始。",
+          "en": "Page 9 of the archival PDF, where the main program listing begins."
+        },
+        "sourceName": {
+          "zh": "ELIZA 源码档案 / Wikimedia Commons",
+          "en": "ELIZA source archive / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ORIGINAL_ELIZA_IN_MAD_SLIP.pdf",
+        "license": {
+          "zh": "CC0 1.0；展示图由同一档案 PDF 的第 9 页生成。",
+          "en": "CC0 1.0; the display image is rendered from page 9 of the same archival PDF."
+        },
+        "sourceId": "source-original-eliza-mad-slip",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC0 1.0；展示图由同一档案 PDF 的第 9 页生成。",
+            "en": "CC0 1.0; the display image is rendered from page 9 of the same archival PDF."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:ORIGINAL_ELIZA_IN_MAD_SLIP.pdf"
+        },
+        "role": "primary-source",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png": {
+        "caption": {
+          "zh": "CTSS 7090/7094 系统结构图",
+          "en": "CTSS 7090/7094 system diagram"
+        },
+        "subcaption": {
+          "zh": "1963 年《CTSS 程序员指南》中的系统结构图。",
+          "en": "System diagram from the 1963 CTSS Programmer's Guide."
+        },
+        "sourceName": {
+          "zh": "MIT 计算中心档案 / Wikimedia Commons",
+          "en": "MIT Computation Center archive / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png",
+        "license": {
+          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+        },
+        "sourceId": "source-ctss-programmers-guide-diagram",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png"
+        },
+        "role": "historical-diagram",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png": {
+        "caption": {
+          "zh": "ELIZA 对话重建",
+          "en": "ELIZA conversation reconstruction"
+        },
+        "subcaption": {
+          "zh": "根据早期 ELIZA 交互记录重建的终端对话画面。",
+          "en": "A terminal-dialog reconstruction based on an early ELIZA interaction record."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png",
+        "license": {
+          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+        },
+        "sourceId": "source-eliza-conversation-reconstruction",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png"
+        },
+        "role": "historical-reconstruction",
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg": {
         "caption": {
@@ -10842,19 +11056,79 @@ const milestones = [
           "sourceType": "paper-page"
         },
         {
-          "id": "source-mit-news-obituary-for-joseph-weizenbaum",
+          "id": "source-weizenbaum-rit-1982-portrait",
           "type": {
-            "zh": "讣告",
-            "en": "Obituary"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆",
-            "en": "MIT News obituary for Joseph Weizenbaum"
+            "zh": "1982 年约瑟夫·魏岑鲍姆肖像",
+            "en": "1982 portrait of Joseph Weizenbaum"
           },
-          "url": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+          "url": "https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg",
           "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-weizenbaum-uszkoreit-2006-photo",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "汉斯·乌斯科赖特与约瑟夫·魏岑鲍姆，2006 年",
+            "en": "Hans Uszkoreit and Joseph Weizenbaum, 2006"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-original-eliza-mad-slip",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "ELIZA 的原始 MAD-SLIP 源码",
+            "en": "Original ELIZA source code in MAD-SLIP"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:ORIGINAL_ELIZA_IN_MAD_SLIP.pdf",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "archive"
+        },
+        {
+          "id": "source-ctss-programmers-guide-diagram",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "《CTSS 程序员指南》图 1.1",
+            "en": "CTSS Programmer's Guide, Figure 1.1"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-eliza-conversation-reconstruction",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "ELIZA 对话重建",
+            "en": "ELIZA conversation reconstruction"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png",
+          "purpose": "historical-context",
           "reliability": "reference-only",
-          "sourceType": "news"
+          "sourceType": "image-source"
         },
         {
           "id": "source-eliza-source-reconstruction-project",
@@ -10874,7 +11148,11 @@ const milestones = [
       ],
       "sourceIds": [
         "source-eliza-cacm-paper",
-        "source-mit-news-obituary-for-joseph-weizenbaum",
+        "source-weizenbaum-rit-1982-portrait",
+        "source-weizenbaum-uszkoreit-2006-photo",
+        "source-original-eliza-mad-slip",
+        "source-ctss-programmers-guide-diagram",
+        "source-eliza-conversation-reconstruction",
         "source-eliza-source-reconstruction-project"
       ],
       "claimIds": [
@@ -10891,7 +11169,7 @@ const milestones = [
           },
           "sourceIds": [
             "source-eliza-cacm-paper",
-            "source-mit-news-obituary-for-joseph-weizenbaum"
+            "source-original-eliza-mad-slip"
           ],
           "status": "needs-source"
         },
@@ -10904,7 +11182,7 @@ const milestones = [
           },
           "sourceIds": [
             "source-eliza-cacm-paper",
-            "source-mit-news-obituary-for-joseph-weizenbaum"
+            "source-original-eliza-mad-slip"
           ],
           "status": "needs-source"
         }
@@ -11082,10 +11360,13 @@ const milestones = [
           "en": "ELIZA’s DOCTOR script relied on pattern matching and response templates that made users continue supplying meaning."
         },
         "sourceIds": [
-          "source-eliza-cacm-paper"
+          "source-eliza-cacm-paper",
+          "source-original-eliza-mad-slip"
         ],
         "assetIds": [
-          "asset-1966-eliza-joseph-weizenbaum"
+          "asset-1966-eliza-original-source-page-9",
+          "asset-1966-eliza-ctss-system-diagram",
+          "asset-1966-eliza-conversation-reconstruction"
         ]
       }
     ],
@@ -11178,7 +11459,7 @@ const milestones = [
           "en": "Inventor of Hopfield networks",
           "zh": "Hopfield 网络提出者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -11653,7 +11934,7 @@ const milestones = [
           "en": "First author of the JMLR dropout paper",
           "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -12144,7 +12425,7 @@ const milestones = [
           "en": "First author of YOLO",
           "zh": "YOLO 第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -12635,7 +12916,7 @@ const milestones = [
           "en": "Lead author of word2vec papers",
           "zh": "word2vec 论文主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -13113,7 +13394,7 @@ const milestones = [
           "en": "ImageNet project leader",
           "zh": "ImageNet 项目主要推动者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -13604,7 +13885,7 @@ const milestones = [
           "en": "First author of DQN work",
           "zh": "DQN 工作第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -13617,25 +13898,56 @@ const milestones = [
           "en": "DeepMind reinforcement learning researcher",
           "zh": "DeepMind 强化学习研究者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-david-silver-commons-portrait",
         "asset-2013-dqn-volodymyr-mnih",
         "asset-2013-dqn-replay-buffer",
         "asset-2013-dqn-q-control"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
         "caption": {
           "zh": "沃洛迪米尔·姆尼赫 肖像",
@@ -13744,6 +14056,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-playing-atari-with-deep-reinforcement-learning",
           "type": {
             "zh": "预印本页面",
@@ -13790,6 +14117,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-david-silver-commons-portrait",
         "source-playing-atari-with-deep-reinforcement-learning",
         "source-human-level-control-through-deep-reinforcement-learning",
         "source-google-deepmind-deep-reinforcement-learning"
@@ -14095,7 +14423,7 @@ const milestones = [
           "en": "First author of LDA",
           "zh": "LDA 第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -14586,7 +14914,7 @@ const milestones = [
           "en": "Creator of SHRDLU",
           "zh": "SHRDLU 创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -16047,7 +16375,7 @@ const milestones = [
           "en": "Leader in expert-system AI",
           "zh": "专家系统 AI 代表人物"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -16518,7 +16846,7 @@ const milestones = [
           "en": "Inventor of SIFT",
           "zh": "SIFT 发明者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -16989,7 +17317,7 @@ const milestones = [
           "en": "Co-author of t-SNE",
           "zh": "t-SNE 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -18520,7 +18848,7 @@ const milestones = [
           "en": "Author of temporal-difference learning",
           "zh": "时序差分学习提出者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -18991,7 +19319,7 @@ const milestones = [
           "en": "Pioneer of Bayesian networks and causal AI",
           "zh": "贝叶斯网络与因果 AI 先驱"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -21016,7 +21344,7 @@ const milestones = [
           "en": "Leader of the Chinook team",
           "zh": "Chinook 团队负责人"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -23621,7 +23949,7 @@ const milestones = [
           "en": "Co-author of DBSCAN",
           "zh": "DBSCAN 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -24691,7 +25019,7 @@ const milestones = [
           "en": "Co-author of nearest-neighbor classification",
           "zh": "最近邻分类共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -25696,10 +26024,10 @@ const milestones = [
           "zh": "纳夫尼特·达拉尔"
         },
         "role": {
-          "en": "Co-author of HOG",
-          "zh": "HOG 共同作者"
+          "en": "First author of HOG",
+          "zh": "HOG 第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -25719,42 +26047,42 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-2005-hog/bill-triggs-portrait.jpg",
+        "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-ai100-2005-hog-bill-triggs-portrait",
+        "asset-ai100-2005-hog-navneet-dalal-portrait",
         "asset-2005-hog-descriptor-grid"
       ]
     },
     "imageMeta": {
-      "resources/images/external/ai100-2005-hog/bill-triggs-portrait.jpg": {
+      "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg": {
         "caption": {
-          "zh": "比尔·特里格斯肖像",
-          "en": "Bill Triggs portrait"
+          "zh": "纳夫尼特·达拉尔肖像",
+          "en": "Navneet Dalal portrait"
         },
         "subcaption": {
-          "zh": "HOG 论文共同作者。",
-          "en": "Co-author of the HOG paper."
+          "zh": "HOG 第一作者。",
+          "en": "First author of HOG."
         },
         "sourceName": {
-          "zh": "INRIA/LEAR 作者主页",
-          "en": "INRIA/LEAR author homepage"
+          "zh": "纳夫尼特·达拉尔个人主页",
+          "en": "Navneet Dalal personal homepage"
         },
-        "sourceUrl": "https://lear.inrialpes.fr/people/triggs/",
+        "sourceUrl": "https://sites.google.com/view/navneetdalal/",
         "license": {
-          "zh": "INRIA/LEAR 作者主页照片，未注明许可；本地副本用于保证展览稳定显示。",
-          "en": "INRIA/LEAR author-page photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
+          "zh": "图片来自作者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the author's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
         },
-        "sourceId": "source-bill-triggs-lear-profile",
+        "sourceId": "source-navneet-dalal-personal-page",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "INRIA/LEAR 作者主页照片，未注明许可；本地副本用于保证展览稳定显示。",
-            "en": "INRIA/LEAR author-page photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
+            "zh": "图片来自作者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the author's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
           },
-          "sourceUrl": "https://lear.inrialpes.fr/people/triggs/bill2.jpg"
+          "sourceUrl": "https://sites.google.com/sitesv-images-rt/ACHe0d0ghjJG635BopferSOH-NCUfiIeUOaZtj9wAQZ5lVbhi_x46cCqe1aegqUA36mUQWjNApopHF40m24_YPV8an63u0_AW9SXRCiuCJJYBbpNnXpLgYv67Nfb_ws1xinbWRBWTY0x66jFHiprPQaUimaFEMxfNeyw72BP2kAFmBfR9-Lrk8JgvpQclKel55Zt0mOIvDbb8g=w1280"
         },
         "role": "portrait",
         "type": "image"
@@ -25879,16 +26207,16 @@ const milestones = [
           "sourceType": "documentation"
         },
         {
-          "id": "source-bill-triggs-lear-profile",
+          "id": "source-navneet-dalal-personal-page",
           "type": {
             "zh": "个人主页",
             "en": "Personal homepage"
           },
           "label": {
-            "zh": "比尔·特里格斯个人主页",
-            "en": "Bill Triggs personal homepage"
+            "zh": "纳夫尼特·达拉尔个人主页",
+            "en": "Navneet Dalal personal homepage"
           },
-          "url": "https://lear.inrialpes.fr/people/triggs/",
+          "url": "https://sites.google.com/view/navneetdalal/",
           "purpose": "biography",
           "reliability": "primary",
           "sourceType": "personal-page"
@@ -25899,7 +26227,7 @@ const milestones = [
         "source-ieee-cvpr-paper-record",
         "source-histogram-of-oriented-gradients-overview",
         "source-scikit-image-hog-example",
-        "source-bill-triggs-lear-profile"
+        "source-navneet-dalal-personal-page"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -26211,7 +26539,7 @@ const milestones = [
           "en": "Lead author of SURF",
           "zh": "SURF 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -26707,7 +27035,7 @@ const milestones = [
           "en": "Co-author of Kernel PCA",
           "zh": "Kernel PCA 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1997-kernel-pca/bernhard-scholkopf-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -27216,7 +27544,7 @@ const milestones = [
           "en": "Co-author of NMF",
           "zh": "NMF 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -27699,7 +28027,7 @@ const milestones = [
           "en": "Lead author of Isomap",
           "zh": "Isomap 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -28195,7 +28523,7 @@ const milestones = [
           "en": "Co-author of LLE",
           "zh": "LLE 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -28704,7 +29032,7 @@ const milestones = [
           "en": "Co-author of the logical neuron model",
           "zh": "逻辑神经元模型共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -28739,7 +29067,7 @@ const milestones = [
           "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
           "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
-        "sourceId": "source-a-logical-calculus-of-ideas-immanent-in-nervous-activity",
+        "sourceId": "source-walter-pitts-blackboard-photo",
         "rights": {
           "status": "external-reference",
           "license": {
@@ -29677,8 +30005,8 @@ const milestones = [
           "en": "Creator of self-organizing maps",
           "zh": "自组织映射提出者"
         },
-        "avatar": "",
-        "avatarStyle": "",
+        "avatar": "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
+        "avatarStyle": "object-position: 100% 50%; transform: scale(2.1); transform-origin: 86% 16%;",
         "figureType": "person"
       }
     ],
@@ -31205,7 +31533,7 @@ const milestones = [
           "en": "Creator of the neocognitron",
           "zh": "Neocognitron 提出者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -33413,7 +33741,7 @@ const milestones = [
           "en": "Co-author of Batch Normalization",
           "zh": "批归一化共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -34421,7 +34749,7 @@ const milestones = [
           "en": "Lead author of Vision Transformer",
           "zh": "视觉 Transformer 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -38853,7 +39181,7 @@ const milestones = [
           "en": "Lead author and creator of DALL-E",
           "zh": "DALL-E 主要作者与创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2021-dalle/aditya-ramesh-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -39336,7 +39664,7 @@ const milestones = [
           "en": "Lead author of latent diffusion models",
           "zh": "潜扩散模型主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -39823,7 +40151,7 @@ const milestones = [
           "en": "Lead author of Segment Anything",
           "zh": "Segment Anything 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2023-segment-anything/alexander-kirillov-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -40306,7 +40634,7 @@ const milestones = [
           "en": "Swin Transformer lead author",
           "zh": "Swin Transformer 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -40815,7 +41143,33 @@ const milestones = [
           "en": "GloVe lead author",
           "zh": "GloVe 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Christopher Manning",
+          "zh": "克里斯托弗·曼宁"
+        },
+        "role": {
+          "en": "GloVe co-author",
+          "zh": "GloVe 共同作者"
+        },
+        "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Richard Socher",
+          "zh": "理查德·索彻"
+        },
+        "role": {
+          "en": "GloVe co-author",
+          "zh": "GloVe 共同作者"
+        },
+        "avatar": "resources/images/external/ai100-2014-glove/richard-socher-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -40823,12 +41177,18 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
-        "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg"
+        "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+        "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+        "resources/images/external/ai100-2014-glove/christopher-manning-stanford.jpg",
+        "resources/images/external/ai100-2014-glove/richard-socher-portrait.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-ai100-2014-glove-photo",
-        "asset-2014-glove-cooccurrence"
+        "asset-2014-glove-cooccurrence",
+        "asset-ai100-2014-glove-christopher-manning-commons",
+        "asset-ai100-2014-glove-christopher-manning-stanford",
+        "asset-ai100-2014-glove-richard-socher-portrait"
       ]
     },
     "imageMeta": {
@@ -40885,6 +41245,96 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg": {
+        "caption": {
+          "zh": "克里斯托弗·曼宁肖像",
+          "en": "Christopher Manning portrait"
+        },
+        "subcaption": {
+          "zh": "GloVe 共同作者，2025 年资料照片。",
+          "en": "GloVe co-author, archival photograph from 2025."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+        },
+        "sourceId": "source-christopher-manning-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
+      "resources/images/external/ai100-2014-glove/christopher-manning-stanford.jpg": {
+        "caption": {
+          "zh": "克里斯托弗·曼宁斯坦福肖像",
+          "en": "Christopher Manning Stanford portrait"
+        },
+        "subcaption": {
+          "zh": "GloVe 共同作者的斯坦福官方资料照片。",
+          "en": "Stanford's official profile photograph of the GloVe co-author."
+        },
+        "sourceName": {
+          "zh": "斯坦福大学自然语言处理组",
+          "en": "Stanford Natural Language Processing Group"
+        },
+        "sourceUrl": "https://nlp.stanford.edu/~manning/",
+        "license": {
+          "zh": "图片来自斯坦福大学官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the official Stanford profile; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-christopher-manning-stanford-profile",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自斯坦福大学官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the official Stanford profile; redistribution rights are not stated and must be reviewed before publication."
+          },
+          "sourceUrl": "https://nlp.stanford.edu/~manning/images/Christopher_Manning_027_1154x1154.jpg"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
+      "resources/images/external/ai100-2014-glove/richard-socher-portrait.png": {
+        "caption": {
+          "zh": "理查德·索彻肖像",
+          "en": "Richard Socher portrait"
+        },
+        "subcaption": {
+          "zh": "GloVe 共同作者。",
+          "en": "Co-author of GloVe."
+        },
+        "sourceName": {
+          "zh": "世界经济论坛 / Wikimedia Commons",
+          "en": "World Economic Forum / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_Socher_(born_1983)_at_World_Economic_Forum_Annual_Meeting_2025.png",
+        "license": {
+          "zh": "CC BY 3.0；使用时须保留文件页所列作者与许可信息。",
+          "en": "CC BY 3.0; retain the author and license attribution listed on the file page."
+        },
+        "sourceId": "source-richard-socher-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 3.0；使用时须保留文件页所列作者与许可信息。",
+            "en": "CC BY 3.0; retain the author and license attribution listed on the file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_Socher_(born_1983)_at_World_Economic_Forum_Annual_Meeting_2025.png"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -40965,12 +41415,60 @@ const milestones = [
           "purpose": "alternate-access",
           "reliability": "secondary",
           "sourceType": "paper-file"
+        },
+        {
+          "id": "source-christopher-manning-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "克里斯托弗·曼宁资料照片",
+            "en": "Christopher Manning archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-christopher-manning-stanford-profile",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "克里斯托弗·曼宁斯坦福个人主页",
+            "en": "Christopher Manning Stanford profile"
+          },
+          "url": "https://nlp.stanford.edu/~manning/",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
+        {
+          "id": "source-richard-socher-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "理查德·索彻资料照片",
+            "en": "Richard Socher archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Richard_Socher_(born_1983)_at_World_Economic_Forum_Annual_Meeting_2025.png",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-glove-global-vectors-for-word-representation",
         "source-stanford-glove-project-page",
-        "source-acl-anthology-pdf"
+        "source-acl-anthology-pdf",
+        "source-christopher-manning-commons-portrait",
+        "source-christopher-manning-stanford-profile",
+        "source-richard-socher-commons-portrait"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -42336,49 +42834,64 @@ const milestones = [
           "en": "Wasserstein GAN lead author",
           "zh": "Wasserstein GAN 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Leon Bottou",
+          "zh": "莱昂·博图"
+        },
+        "role": {
+          "en": "Wasserstein GAN co-author",
+          "zh": "Wasserstein GAN 共同作者"
+        },
+        "avatar": "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait.jpg",
-        "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg"
+        "resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg",
+        "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
+        "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-ai100-2017-wasserstein-gan-bottou-75",
-        "asset-2017-wasserstein-gan-critic-distance"
+        "asset-ai100-2017-wasserstein-gan-martin-arjovsky",
+        "asset-2017-wasserstein-gan-critic-distance",
+        "asset-ai100-2017-wasserstein-gan-leon-bottou-2025"
       ]
     },
     "imageMeta": {
-      "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait.jpg": {
+      "resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg": {
         "caption": {
-          "zh": "莱昂·博图肖像",
-          "en": "Leon Bottou portrait"
+          "zh": "马丁·阿尔乔夫斯基肖像",
+          "en": "Martin Arjovsky portrait"
         },
         "subcaption": {
-          "zh": "Wasserstein GAN 共同作者。",
-          "en": "Co-author of Wasserstein GAN."
+          "zh": "Wasserstein GAN 第一作者。",
+          "en": "First author of Wasserstein GAN."
         },
         "sourceName": {
-          "zh": "莱昂·博图个人网站",
-          "en": "Leon Bottou personal website"
+          "zh": "马丁·阿尔乔夫斯基 GitHub 主页",
+          "en": "Martin Arjovsky GitHub profile"
         },
-        "sourceUrl": "https://leon.bottou.org/_media/bottou_75.jpg",
+        "sourceUrl": "https://github.com/martinarjovsky",
         "license": {
-          "zh": "本地副本来自莱昂·博图个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-          "en": "Local copy from Leon Bottou personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          "zh": "图片来自作者本人 GitHub 账号；页面未注明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the author's GitHub account; redistribution rights are not stated and must be reviewed before publication."
         },
-        "sourceId": "source-wasserstein-generative-adversarial-networks",
+        "sourceId": "source-martin-arjovsky-github-profile",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "本地副本来自莱昂·博图个人网站；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-            "en": "Local copy from Leon Bottou personal website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+            "zh": "图片来自作者本人 GitHub 账号；页面未注明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the author's GitHub account; redistribution rights are not stated and must be reviewed before publication."
           },
-          "sourceUrl": "https://leon.bottou.org/_media/bottou_75.jpg"
+          "sourceUrl": "https://avatars.githubusercontent.com/u/5272722?v=4&s=800"
         },
         "role": "portrait",
         "type": "image"
@@ -42406,6 +42919,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg": {
+        "caption": {
+          "zh": "莱昂·博图肖像",
+          "en": "Leon Bottou portrait"
+        },
+        "subcaption": {
+          "zh": "Wasserstein GAN 共同作者。",
+          "en": "Co-author of Wasserstein GAN."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_L%C3%A9on_Bottou_02.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+        },
+        "sourceId": "source-leon-bottou-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_L%C3%A9on_Bottou_02.jpg"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -42486,12 +43029,44 @@ const milestones = [
           "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "encyclopedia-entry"
+        },
+        {
+          "id": "source-martin-arjovsky-github-profile",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "马丁·阿尔乔夫斯基 GitHub 主页",
+            "en": "Martin Arjovsky GitHub profile"
+          },
+          "url": "https://github.com/martinarjovsky",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
+        {
+          "id": "source-leon-bottou-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "莱昂·博图资料照片",
+            "en": "Leon Bottou archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_L%C3%A9on_Bottou_02.jpg",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-wasserstein-generative-adversarial-networks",
         "source-improved-training-of-wasserstein-gans",
-        "source-wasserstein-gan-overview"
+        "source-wasserstein-gan-overview",
+        "source-martin-arjovsky-github-profile",
+        "source-leon-bottou-commons-portrait"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -42845,7 +43420,7 @@ const milestones = [
           "en": "CycleGAN lead author",
           "zh": "CycleGAN 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -43354,7 +43929,7 @@ const milestones = [
           "en": "Pix2Pix lead author",
           "zh": "Pix2Pix 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -43863,14 +44438,14 @@ const milestones = [
           "en": "StyleGAN lead author",
           "zh": "StyleGAN 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-2019-stylegan/tero-karras-portrait.png",
+        "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
         "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg"
       ],
       "videos": [],
@@ -43880,7 +44455,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/external/ai100-2019-stylegan/tero-karras-portrait.png": {
+      "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg": {
         "caption": {
           "zh": "特罗·卡拉斯肖像",
           "en": "Tero Karras portrait"
@@ -43890,22 +44465,22 @@ const milestones = [
           "en": "Lead author of StyleGAN."
         },
         "sourceName": {
-          "zh": "NVIDIA Research",
-          "en": "NVIDIA Research"
+          "zh": "特罗·卡拉斯 GitHub 主页",
+          "en": "Tero Karras GitHub profile"
         },
-        "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png",
+        "sourceUrl": "https://github.com/tkarras",
         "license": {
-          "zh": "本地副本来自NVIDIA Research；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-          "en": "Local copy from NVIDIA Research; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          "zh": "图片来自特罗·卡拉斯本人 GitHub 账号；页面未注明再分发许可，对外发布前需复核授权。",
+          "en": "Image from Tero Karras's GitHub account; redistribution rights are not stated and must be reviewed before publication."
         },
-        "sourceId": "source-a-style-based-generator-architecture-for-gans",
+        "sourceId": "source-tero-karras-github-profile",
         "rights": {
           "status": "external-reference",
           "license": {
-            "zh": "本地副本来自NVIDIA Research；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-            "en": "Local copy from NVIDIA Research; the source page does not state a repository-compatible license. Recheck before external redistribution."
+            "zh": "图片来自特罗·卡拉斯本人 GitHub 账号；页面未注明再分发许可，对外发布前需复核授权。",
+            "en": "Image from Tero Karras's GitHub account; redistribution rights are not stated and must be reviewed before publication."
           },
-          "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
+          "sourceUrl": "https://avatars.githubusercontent.com/u/3089181?v=4&s=800"
         },
         "role": "portrait",
         "type": "image"
@@ -44013,12 +44588,28 @@ const milestones = [
           "purpose": "implementation",
           "reliability": "secondary",
           "sourceType": "code"
+        },
+        {
+          "id": "source-tero-karras-github-profile",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "特罗·卡拉斯 GitHub 主页",
+            "en": "Tero Karras GitHub profile"
+          },
+          "url": "https://github.com/tkarras",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
         }
       ],
       "sourceIds": [
         "source-a-style-based-generator-architecture-for-gans",
         "source-cvpr-open-access-paper-page",
-        "source-nvidia-stylegan-repository"
+        "source-nvidia-stylegan-repository",
+        "source-tero-karras-github-profile"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -44372,7 +44963,7 @@ const milestones = [
           "en": "Variational autoencoder co-author",
           "zh": "变分自编码器共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -44881,7 +45472,7 @@ const milestones = [
           "en": "Diffusion model lead author",
           "zh": "扩散模型主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -45390,7 +45981,7 @@ const milestones = [
           "en": "Graph neural network co-author",
           "zh": "图神经网络共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -45915,7 +46506,7 @@ const milestones = [
           "en": "GCN lead author",
           "zh": "GCN 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -46424,7 +47015,7 @@ const milestones = [
           "en": "GAT lead author",
           "zh": "GAT 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -46943,7 +47534,7 @@ const milestones = [
           "en": "Neural architecture search lead author",
           "zh": "神经架构搜索主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -47452,7 +48043,7 @@ const milestones = [
           "en": "Deep Compression lead author",
           "zh": "Deep Compression 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -48474,7 +49065,7 @@ const milestones = [
           "en": "MS COCO lead author",
           "zh": "MS COCO 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -48983,7 +49574,7 @@ const milestones = [
           "en": "Q-learning lead author",
           "zh": "Q-learning 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -50019,7 +50610,7 @@ const milestones = [
           "en": "Actor-Critic co-author",
           "zh": "Actor-Critic 共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -53114,12 +53705,12 @@ const milestones = [
       },
       "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
         "caption": {
-          "zh": "杰弗里·埃尔曼肖像",
-          "en": "Jeffrey Elman portrait"
+          "zh": "迈克尔·I·乔丹肖像",
+          "en": "Michael I. Jordan portrait"
         },
         "subcaption": {
-          "zh": "简单循环网络提出者。",
-          "en": "Creator of the simple recurrent network."
+          "zh": "乔丹网络提出者。",
+          "en": "Creator of the Jordan network."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -54325,262 +54916,6 @@ const milestones = [
     }
   },
   {
-    "id": "milestone-2014-highway-network",
-    "archiveEventId": "2014-highway-network",
-    "archiveVariantId": "deep-learning",
-    "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive",
-    "storyline": {
-      "id": "deep-learning",
-      "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
-      }
-    },
-    "order": 90,
-    "year": 2014,
-    "date": "2014",
-    "title": {
-      "zh": "高速网络",
-      "en": "Highway Networks"
-    },
-    "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
-    },
-    "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
-    },
-    "location": {
-      "name": {
-        "en": "IDSIA",
-        "zh": "蒙特利尔大学"
-      },
-      "country": {
-        "en": "Switzerland",
-        "zh": "加拿大, 魁北克省"
-      },
-      "coordinates": [
-        45.5017,
-        -73.5673
-      ]
-    },
-    "description": {
-      "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-      "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Ian Goodfellow",
-          "zh": "伊恩·古德费洛"
-        },
-        "role": {
-          "en": "GAN inventor",
-          "zh": "GAN发明者"
-        },
-        "avatar": "resources/images/figures/ian-goodfellow.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Yoshua Bengio",
-          "zh": "约书亚·本吉奥"
-        },
-        "role": {
-          "en": "Proposer of Attention Mechanism ",
-          "zh": "注意力机制提出者"
-        },
-        "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
-        "avatarStyle": "",
-        "figureType": "person"
-      }
-    ],
-    "resources": {
-      "images": [
-        "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
-        "resources/images/2014-highway-network/people/2014-highway-network_people_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-          "title": "2014高速网络：深度学习中被遗忘的英雄",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
-      "assetIds": [
-        "asset-2014-highway-network-architecture-01",
-        "asset-2014-highway-network-people-01"
-      ]
-    },
-    "imageMeta": {
-      "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
-        "caption": {
-          "zh": "高速网络结构图 1",
-          "en": "Highway Networks structure diagram 1"
-        },
-        "subcaption": {
-          "zh": "展示高速网络的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of Highway Networks."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "image"
-      },
-      "resources/images/2014-highway-network/people/2014-highway-network_people_01.png": {
-        "caption": {
-          "zh": "尤尔根·施密德胡伯肖像",
-          "en": "Jurgen Schmidhuber portrait"
-        },
-        "subcaption": {
-          "zh": "Highway Network 共同作者。",
-          "en": "Co-author of Highway Networks."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      }
-    },
-    "achievement": {
-      "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
-      "claimIds": [
-        "claim-legacy-achievement-summary",
-        "claim-legacy-description"
-      ],
-      "claims": [
-        {
-          "id": "claim-legacy-achievement-summary",
-          "importance": "core",
-          "text": {
-            "zh": "高速网络 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Highway Networks is an AI history milestone in the current legacy presentation."
-          },
-          "sourceIds": [
-            "source-legacy-event-record"
-          ],
-          "status": "needs-source"
-        },
-        {
-          "id": "claim-legacy-description",
-          "importance": "context",
-          "text": {
-            "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-            "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
-          },
-          "sourceIds": [
-            "source-legacy-event-record"
-          ],
-          "status": "needs-source"
-        }
-      ],
-      "emphasis": [
-        "batch-migration",
-        "source-review-needed"
-      ]
-    },
-    "commentarySections": [
-      {
-        "id": "background",
-        "label": {
-          "zh": "背景解读",
-          "en": "Background"
-        },
-        "html": {
-          "zh": "Highway Network 的关键想法是给深层网络加入可学习的“通行门”：当某一层不必改写信息时，模型可以让信号近似原样穿过，从而把极深网络训练从“必须层层重写”改成“按需变换”。",
-          "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed."
-        },
-        "sourceIds": [
-          "source-legacy-event-record"
-        ]
-      },
-      {
-        "id": "context",
-        "label": {
-          "zh": "延展说明",
-          "en": "Context"
-        },
-        "html": {
-          "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。",
-          "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream."
-        },
-        "sourceIds": [
-          "source-legacy-event-record"
-        ]
-      }
-    ],
-    "analysis": null,
-    "quizzes": [],
-    "archive": {
-      "eventFile": "archive/events/2014-highway-network/event.json",
-      "variantFile": "archive/events/2014-highway-network/variants/deep-learning.json",
-      "presentationMode": "preserve-legacy"
-    },
-    "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-    "quote": {
-      "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
-      "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""
-    },
-    "quoteMeta": {
-      "speaker": {
-        "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
-        "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
-      },
-      "workTitle": {
-        "en": "Highway Networks",
-        "zh": "高速网络"
-      },
-      "workAuthors": {
-        "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
-        "zh": "Rupesh Kumar Srivastava、Klaus Greff、于尔根·施密德胡伯，arXiv，2015"
-      },
-      "sourceLabel": {
-        "en": "arXiv paper page",
-        "zh": "arXiv 论文页面"
-      },
-      "sourceUrl": "https://arxiv.org/abs/1505.00387"
-    },
-    "quotePage": {
-      "en": "arXiv paper: Highway Networks",
-      "zh": "arXiv 论文《高速网络》"
-    },
-    "quoteAttribution": {
-      "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
-      "zh": "《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯"
-    }
-  },
-  {
     "id": "milestone-2014-gan",
     "archiveEventId": "2014-gan",
     "archiveVariantId": "deep-learning",
@@ -54593,7 +54928,7 @@ const milestones = [
         "en": "Deep Learning"
       }
     },
-    "order": 100,
+    "order": 90,
     "year": 2014,
     "date": "2014",
     "title": {
@@ -55085,7 +55420,7 @@ const milestones = [
         "en": "Deep Learning"
       }
     },
-    "order": 110,
+    "order": 100,
     "year": 2014,
     "date": "2014",
     "title": {
@@ -55597,6 +55932,389 @@ const milestones = [
     "quoteAttribution": {
       "en": "<em>Neural Machine Translation by Jointly Learning to Align and Translate</em>, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, arXiv, 2014",
       "zh": "《通过联合学习对齐与翻译的神经机器翻译》, Dzmitry Bahdanau、Kyunghyun Cho、约书亚·本吉奥，arXiv，2014"
+    }
+  },
+  {
+    "id": "milestone-2014-highway-network",
+    "archiveEventId": "2014-highway-network",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "深度学习分支",
+        "en": "Deep Learning"
+      }
+    },
+    "order": 110,
+    "year": 2015,
+    "date": "2015-05",
+    "title": {
+      "zh": "高速网络",
+      "en": "Highway Networks"
+    },
+    "subtitle": {
+      "zh": "深度学习与范式归一",
+      "en": "Deep Learning and Unified Paradigms"
+    },
+    "category": {
+      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
+    },
+    "location": {
+      "name": {
+        "en": "Swiss AI Lab IDSIA",
+        "zh": "瑞士人工智能实验室 IDSIA"
+      },
+      "country": {
+        "en": "Switzerland",
+        "zh": "瑞士"
+      },
+      "coordinates": [
+        46.0037,
+        8.9511
+      ]
+    },
+    "description": {
+      "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
+      "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Rupesh Kumar Srivastava",
+          "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦"
+        },
+        "role": {
+          "en": "Lead author of Highway Networks",
+          "zh": "Highway Networks 第一作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Klaus Greff",
+          "zh": "克劳斯·格雷夫"
+        },
+        "role": {
+          "en": "Co-author of Highway Networks",
+          "zh": "Highway Networks 共同作者"
+        },
+        "avatar": "resources/images/external/2014-highway-network/klaus-greff-github.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Jürgen Schmidhuber",
+          "zh": "于尔根·施密德胡伯"
+        },
+        "role": {
+          "en": "Co-author of Highway Networks",
+          "zh": "Highway Networks 共同作者"
+        },
+        "avatar": "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
+        "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
+        "resources/images/external/2014-highway-network/klaus-greff-github.jpg"
+      ],
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+          "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+          "title": "2015高速网络：深度学习中被遗忘的英雄",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ],
+      "assetIds": [
+        "asset-2014-highway-network-architecture-01",
+        "asset-2014-highway-network-people-01",
+        "asset-2014-highway-network-klaus-greff"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
+        "caption": {
+          "zh": "高速网络结构图 1",
+          "en": "Highway Networks structure diagram 1"
+        },
+        "subcaption": {
+          "zh": "展示高速网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Highway Networks."
+        },
+        "license": {
+          "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "usage": {
+          "zh": "用于解释高速网络中的门控捷径与信息流。",
+          "en": "Used to explain gated shortcuts and information flow in Highway Networks."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg": {
+        "caption": {
+          "zh": "于尔根·施密德胡伯肖像",
+          "en": "Jürgen Schmidhuber portrait"
+        },
+        "subcaption": {
+          "zh": "Highway Network 共同作者。",
+          "en": "Co-author of Highway Networks."
+        },
+        "sourceName": {
+          "zh": "IDSIA 于尔根·施密德胡伯个人主页",
+          "en": "Jürgen Schmidhuber's IDSIA homepage"
+        },
+        "sourceUrl": "https://people.idsia.ch/~juergen/",
+        "license": {
+          "zh": "IDSIA 个人主页公开照片；页面未声明可再分发许可，外部发布前需核验使用权。",
+          "en": "Publicly accessible photo from the IDSIA homepage; no redistribution license is stated, so usage rights must be checked before external publication."
+        },
+        "usage": {
+          "zh": "用于识别 Highway Networks 共同作者于尔根·施密德胡伯。",
+          "en": "Used to identify Highway Networks co-author Jürgen Schmidhuber."
+        },
+        "sourceId": "source-juergen-schmidhuber-idsia",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "IDSIA 个人主页公开照片；页面未声明可再分发许可，外部发布前需核验使用权。",
+            "en": "Publicly accessible photo from the IDSIA homepage; no redistribution license is stated, so usage rights must be checked before external publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/external/2014-highway-network/klaus-greff-github.jpg": {
+        "caption": {
+          "zh": "克劳斯·格雷夫肖像",
+          "en": "Klaus Greff portrait"
+        },
+        "subcaption": {
+          "zh": "Highway Networks 共同作者。",
+          "en": "Co-author of Highway Networks."
+        },
+        "sourceName": {
+          "zh": "Klaus Greff 的 GitHub 个人资料",
+          "en": "Klaus Greff's GitHub profile"
+        },
+        "sourceUrl": "https://github.com/Qwlouse",
+        "license": {
+          "zh": "本人 GitHub 个人资料公开头像；页面未声明可再分发许可，外部发布前需核验使用权。",
+          "en": "Public profile image from the subject's GitHub account; no redistribution license is stated, so usage rights must be checked before external publication."
+        },
+        "usage": {
+          "zh": "用于识别 Highway Networks 共同作者克劳斯·格雷夫。",
+          "en": "Used to identify Highway Networks co-author Klaus Greff."
+        },
+        "sourceId": "source-klaus-greff-github",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本人 GitHub 个人资料公开头像；页面未声明可再分发许可，外部发布前需核验使用权。",
+            "en": "Public profile image from the subject's GitHub account; no redistribution license is stated, so usage rights must be checked before external publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "visualModules": [],
+      "sources": [
+        {
+          "id": "source-highway-networks-arxiv",
+          "type": {
+            "zh": "原始论文",
+            "en": "Primary paper"
+          },
+          "label": {
+            "zh": "《Highway Networks》",
+            "en": "Highway Networks"
+          },
+          "url": "https://arxiv.org/abs/1505.00387",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-klaus-greff-homepage",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "克劳斯·格雷夫个人主页",
+            "en": "Klaus Greff personal homepage"
+          },
+          "url": "https://qwlouse.github.io/",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
+        {
+          "id": "source-klaus-greff-github",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "Klaus Greff 的 GitHub 个人资料",
+            "en": "Klaus Greff's GitHub profile"
+          },
+          "url": "https://github.com/Qwlouse",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-juergen-schmidhuber-idsia",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "IDSIA 于尔根·施密德胡伯个人主页",
+            "en": "Jürgen Schmidhuber's IDSIA homepage"
+          },
+          "url": "https://people.idsia.ch/~juergen/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        }
+      ],
+      "sourceIds": [
+        "source-highway-networks-arxiv",
+        "source-klaus-greff-homepage",
+        "source-klaus-greff-github",
+        "source-juergen-schmidhuber-idsia"
+      ],
+      "claimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "高速网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Highway Networks is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-highway-networks-arxiv"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
+            "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+          },
+          "sourceIds": [
+            "source-highway-networks-arxiv"
+          ],
+          "status": "verified"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "background",
+        "label": {
+          "zh": "背景解读",
+          "en": "Background"
+        },
+        "html": {
+          "zh": "Highway Network 的关键想法是给深层网络加入可学习的“通行门”：当某一层不必改写信息时，模型可以让信号近似原样穿过，从而把极深网络训练从“必须层层重写”改成“按需变换”。",
+          "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed."
+        },
+        "sourceIds": [
+          "source-highway-networks-arxiv"
+        ]
+      },
+      {
+        "id": "context",
+        "label": {
+          "zh": "延展说明",
+          "en": "Context"
+        },
+        "html": {
+          "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。",
+          "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream."
+        },
+        "sourceIds": [
+          "source-highway-networks-arxiv"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/2014-highway-network/event.json",
+      "variantFile": "archive/events/2014-highway-network/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+    "quote": {
+      "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
+      "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""
+    },
+    "quoteMeta": {
+      "speaker": {
+        "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+        "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+      },
+      "workTitle": {
+        "en": "Highway Networks",
+        "zh": "高速网络"
+      },
+      "workAuthors": {
+        "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+        "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯，arXiv，2015"
+      },
+      "sourceLabel": {
+        "en": "arXiv paper page",
+        "zh": "arXiv 论文页面"
+      },
+      "sourceUrl": "https://arxiv.org/abs/1505.00387"
+    },
+    "quotePage": {
+      "en": "arXiv paper: Highway Networks",
+      "zh": "arXiv 论文《高速网络》"
+    },
+    "quoteAttribution": {
+      "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+      "zh": "《高速网络》，鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯，arXiv，2015"
     }
   },
   {
@@ -59023,7 +59741,7 @@ const milestones = [
           "en": "AI Scientist Developer",
           "zh": "AI Scientist开发者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -59364,6 +60082,19 @@ const milestones = [
     "figures": [
       {
         "name": {
+          "en": "Lianmin Zheng",
+          "zh": "郑廉民"
+        },
+        "role": {
+          "en": "Co-creator of Chatbot Arena / LMArena",
+          "zh": "Chatbot Arena / LMArena 共同创建者"
+        },
+        "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
           "en": "Research Institutions",
           "zh": "研究机构"
         },
@@ -59378,6 +60109,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
         "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
@@ -59396,6 +60128,7 @@ const milestones = [
         }
       ],
       "assetIds": [
+        "asset-2025-llm-competition-lianmin-zheng",
         "asset-2025-llm-competition-historical-01",
         "asset-2025-llm-competition-architecture-01",
         "asset-2025-llm-competition-historical-02",
@@ -59403,6 +60136,36 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg": {
+        "caption": {
+          "zh": "郑廉民肖像",
+          "en": "Lianmin Zheng portrait"
+        },
+        "subcaption": {
+          "zh": "Chatbot Arena / LMArena 共同创建者。",
+          "en": "Co-creator of Chatbot Arena / LMArena."
+        },
+        "sourceName": {
+          "zh": "郑廉民个人主页",
+          "en": "Lianmin Zheng personal homepage"
+        },
+        "sourceUrl": "https://lmzheng.net/",
+        "license": {
+          "zh": "图片来自研究者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the researcher's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-lianmin-zheng-personal-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自研究者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the researcher's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
+          },
+          "sourceUrl": "https://lmzheng.net/images/profile.jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
         "caption": {
           "zh": "大语言模型百花齐放资料图 1",
@@ -59502,8 +60265,42 @@ const milestones = [
     },
     "achievement": {
       "visualModules": [],
-      "sources": [],
-      "sourceIds": [],
+      "sources": [
+        {
+          "id": "source-lianmin-zheng-personal-page",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "郑廉民个人主页",
+            "en": "Lianmin Zheng personal homepage"
+          },
+          "url": "https://lmzheng.net/",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
+        {
+          "id": "source-lmsys-chatbot-arena-introduction",
+          "type": {
+            "zh": "文章",
+            "en": "Article"
+          },
+          "label": {
+            "zh": "Chatbot Arena：用 Elo 评分在真实环境中评测大语言模型",
+            "en": "Chatbot Arena: Benchmarking LLMs in the Wild with Elo Ratings"
+          },
+          "url": "https://www.lmsys.org/blog/2023-05-03-arena/",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "article"
+        }
+      ],
+      "sourceIds": [
+        "source-lianmin-zheng-personal-page",
+        "source-lmsys-chatbot-arena-introduction"
+      ],
       "claimIds": [
         "claim-legacy-achievement-summary",
         "claim-legacy-description"
@@ -60225,7 +61022,7 @@ const milestones = [
           "en": "AlphaGo lead researcher",
           "zh": "AlphaGo 主要研究者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -60258,16 +61055,47 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-david-silver-commons-portrait",
         "asset-alphago-lee-sedol",
         "asset-alphago-policy-value-search"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
           "zh": "李世石肖像",
@@ -60389,6 +61217,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-alphago-nature-paper",
           "type": {
             "zh": "论文页面",
@@ -60435,6 +61278,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-david-silver-commons-portrait",
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
         "source-katago-analysis-engine"
@@ -60698,7 +61542,7 @@ const milestones = [
           "en": "Author of temporal-difference learning",
           "zh": "时序差分学习提出者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -61206,7 +62050,7 @@ const milestones = [
           "en": "Leader of the Chinook team",
           "zh": "Chinook 团队负责人"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -61759,7 +62603,7 @@ const milestones = [
           "en": "Creator of Logistello",
           "zh": "Logistello 创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/michael-buro.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -61779,14 +62623,45 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/michael-buro.jpg",
         "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-michael-buro-university-portrait",
         "asset-1997-logistello-pattern-eval"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/michael-buro.jpg": {
+        "caption": {
+          "zh": "迈克尔·布罗肖像",
+          "en": "Michael Buro portrait"
+        },
+        "subcaption": {
+          "zh": "Logistello 创建者。",
+          "en": "Creator of Logistello."
+        },
+        "sourceName": {
+          "zh": "阿尔伯塔大学",
+          "en": "University of Alberta"
+        },
+        "sourceUrl": "https://webdocs.cs.ualberta.ca/~mburo/jpg/mburo.jpg",
+        "license": {
+          "zh": "图片来自大学托管的本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the university-hosted personal homepage; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-michael-buro-university-profile",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自大学托管的本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the university-hosted personal homepage; redistribution rights are not stated and must be reviewed before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
         "caption": {
           "zh": "Logistello 模式评估",
@@ -61846,6 +62721,21 @@ const milestones = [
         }
       ],
       "sources": [
+        {
+          "id": "source-michael-buro-university-profile",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "迈克尔·布罗阿尔伯塔大学主页",
+            "en": "Michael Buro University of Alberta homepage"
+          },
+          "url": "https://webdocs.cs.ualberta.ca/~mburo/",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
         {
           "id": "source-logistello-homepage",
           "type": {
@@ -61908,6 +62798,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-michael-buro-university-profile",
         "source-logistello-homepage",
         "source-murakami-vs-logistello",
         "source-statistical-feature-combination",
@@ -63337,7 +64228,7 @@ const milestones = [
           "en": "First author of DQN work",
           "zh": "DQN 工作第一作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -63350,25 +64241,56 @@ const milestones = [
           "en": "DeepMind reinforcement learning researcher",
           "zh": "DeepMind 强化学习研究者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-david-silver-commons-portrait",
         "asset-2013-dqn-volodymyr-mnih",
         "asset-2013-dqn-replay-buffer",
         "asset-2013-dqn-q-control"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
         "caption": {
           "zh": "沃洛迪米尔·姆尼赫 肖像",
@@ -63514,6 +64436,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-playing-atari-with-deep-reinforcement-learning",
           "type": {
             "zh": "预印本页面",
@@ -63560,6 +64497,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-david-silver-commons-portrait",
         "source-playing-atari-with-deep-reinforcement-learning",
         "source-human-level-control-through-deep-reinforcement-learning",
         "source-google-deepmind-deep-reinforcement-learning"
@@ -63865,7 +64803,7 @@ const milestones = [
           "en": "DeepMind reinforcement learning lead",
           "zh": "DeepMind 强化学习负责人"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -63885,14 +64823,45 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-david-silver-commons-portrait",
         "asset-2017-alphazero-self-play-loop"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
         "caption": {
           "zh": "AlphaZero 自我博弈循环",
@@ -63990,6 +64959,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-science-paper",
           "type": {
             "zh": "论文页面",
@@ -64036,6 +65020,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-david-silver-commons-portrait",
         "source-science-paper",
         "source-arxiv-preprint",
         "source-deepmind-alphazero-blog"
@@ -64412,7 +65397,7 @@ const milestones = [
           "en": "Libratus co-creator",
           "zh": "Libratus 共同创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -64425,21 +65410,83 @@ const milestones = [
           "en": "CMU professor and Libratus co-creator",
           "zh": "CMU 教授，Libratus 共同创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/noam-brown.jpg",
+        "resources/images/figures/authoritative/tuomas-sandholm.jpg",
         "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-noam-brown-official-portrait",
+        "asset-tuomas-sandholm-commons-portrait",
         "asset-2017-libratus-cfr-solving"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/noam-brown.jpg": {
+        "caption": {
+          "zh": "诺姆·布朗肖像",
+          "en": "Noam Brown portrait"
+        },
+        "subcaption": {
+          "zh": "Libratus 与 Pluribus 共同创建者。",
+          "en": "Co-creator of Libratus and Pluribus."
+        },
+        "sourceName": {
+          "zh": "诺姆·布朗个人主页",
+          "en": "Noam Brown personal homepage"
+        },
+        "sourceUrl": "https://noambrown.com/assets/img/profile-poker.jpg",
+        "license": {
+          "zh": "图片来自本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the subject's personal homepage; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-noam-brown-official-profile",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the subject's personal homepage; redistribution rights are not stated and must be reviewed before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/figures/authoritative/tuomas-sandholm.jpg": {
+        "caption": {
+          "zh": "托马斯·桑德霍姆肖像",
+          "en": "Tuomas Sandholm portrait"
+        },
+        "subcaption": {
+          "zh": "Libratus 与 Pluribus 共同创建者。",
+          "en": "Co-creator of Libratus and Pluribus."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Tuomas_Sandholm_01.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+        },
+        "sourceId": "source-tuomas-sandholm-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+          }
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg": {
         "caption": {
           "zh": "Libratus 子局求解",
@@ -64537,6 +65584,36 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-noam-brown-official-profile",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "诺姆·布朗个人主页",
+            "en": "Noam Brown personal homepage"
+          },
+          "url": "https://noambrown.com/",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
+        {
+          "id": "source-tuomas-sandholm-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "托马斯·桑德霍姆资料照片",
+            "en": "Tuomas Sandholm archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Tuomas_Sandholm_01.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-science-paper",
           "type": {
             "zh": "论文页面",
@@ -64583,6 +65660,8 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-noam-brown-official-profile",
+        "source-tuomas-sandholm-commons-portrait",
         "source-science-paper",
         "source-cmu-libratus-release",
         "source-safe-and-nested-subgame-solving"
@@ -64939,7 +66018,7 @@ const milestones = [
           "en": "Pluribus co-creator",
           "zh": "Pluribus 共同创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -64952,21 +66031,83 @@ const milestones = [
           "en": "Pluribus co-creator",
           "zh": "Pluribus 共同创建者"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/noam-brown.jpg",
+        "resources/images/figures/authoritative/tuomas-sandholm.jpg",
         "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-noam-brown-official-portrait",
+        "asset-tuomas-sandholm-commons-portrait",
         "asset-2019-pluribus-blueprint-search"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/noam-brown.jpg": {
+        "caption": {
+          "zh": "诺姆·布朗肖像",
+          "en": "Noam Brown portrait"
+        },
+        "subcaption": {
+          "zh": "Libratus 与 Pluribus 共同创建者。",
+          "en": "Co-creator of Libratus and Pluribus."
+        },
+        "sourceName": {
+          "zh": "诺姆·布朗个人主页",
+          "en": "Noam Brown personal homepage"
+        },
+        "sourceUrl": "https://noambrown.com/assets/img/profile-poker.jpg",
+        "license": {
+          "zh": "图片来自本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the subject's personal homepage; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-noam-brown-official-profile",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the subject's personal homepage; redistribution rights are not stated and must be reviewed before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/figures/authoritative/tuomas-sandholm.jpg": {
+        "caption": {
+          "zh": "托马斯·桑德霍姆肖像",
+          "en": "Tuomas Sandholm portrait"
+        },
+        "subcaption": {
+          "zh": "Libratus 与 Pluribus 共同创建者。",
+          "en": "Co-creator of Libratus and Pluribus."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Tuomas_Sandholm_01.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+        },
+        "sourceId": "source-tuomas-sandholm-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+          }
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg": {
         "caption": {
           "zh": "Pluribus 蓝图搜索",
@@ -65064,6 +66205,36 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-noam-brown-official-profile",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "诺姆·布朗个人主页",
+            "en": "Noam Brown personal homepage"
+          },
+          "url": "https://noambrown.com/",
+          "purpose": "biography",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        },
+        {
+          "id": "source-tuomas-sandholm-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "托马斯·桑德霍姆资料照片",
+            "en": "Tuomas Sandholm archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Tuomas_Sandholm_01.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-science-paper",
           "type": {
             "zh": "论文页面",
@@ -65110,6 +66281,8 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-noam-brown-official-profile",
+        "source-tuomas-sandholm-commons-portrait",
         "source-science-paper",
         "source-meta-ai-pluribus-report",
         "source-cmu-pluribus-release"
@@ -65990,21 +67163,52 @@ const milestones = [
           "en": "DeepMind reinforcement learning lead",
           "zh": "DeepMind 强化学习负责人"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/david-silver.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-david-silver-commons-portrait",
         "asset-2019-muzero-learned-model"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
         "caption": {
           "zh": "MuZero 学习模型",
@@ -66102,6 +67306,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-nature-paper",
           "type": {
             "zh": "论文页面",
@@ -66148,6 +67367,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-david-silver-commons-portrait",
         "source-nature-paper",
         "source-arxiv-preprint",
         "source-deepmind-muzero-blog"
@@ -66526,7 +67746,7 @@ const milestones = [
           "zh": "《罗素姆的万能机器人》作者",
           "en": "Playwright of R.U.R."
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -66534,9 +67754,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg",
         "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg": {
+          "caption": {
+            "zh": "卡雷尔·恰佩克肖像",
+            "en": "Karel Capek portrait"
+          },
+          "subcaption": {
+            "zh": "《罗素姆的万能机器人》作者。",
+            "en": "Playwright of R.U.R."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceId": "source-karel-capek-commons-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+              "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
           "caption": {
             "zh": "《R.U.R.》劳工反叛解释图",
@@ -66573,10 +67824,41 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1920-rur-robots-karel-capek",
         "asset-1920-rur-robots-labor-revolt"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg": {
+        "caption": {
+          "zh": "卡雷尔·恰佩克肖像",
+          "en": "Karel Capek portrait"
+        },
+        "subcaption": {
+          "zh": "《罗素姆的万能机器人》作者。",
+          "en": "Playwright of R.U.R."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg",
+        "license": {
+          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+        },
+        "sourceId": "source-karel-capek-commons-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg": {
         "caption": {
           "zh": "《R.U.R.》劳工反叛解释图",
@@ -66691,6 +67973,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-karel-capek-commons-portrait",
         "source-project-gutenberg-r-u-r-text",
         "source-1920-czech-edition-scan",
         "source-r-u-r-publication-and-word-history-overview",
@@ -66912,7 +68195,7 @@ const milestones = [
           "zh": "《转圈圈》作者",
           "en": "Author of Runaround"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -66935,9 +68218,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg",
         "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg": {
+          "caption": {
+            "zh": "艾萨克·阿西莫夫肖像",
+            "en": "Isaac Asimov portrait"
+          },
+          "subcaption": {
+            "zh": "《转圈圈》作者，机器人三定律的提出者。",
+            "en": "Author of Runaround and formulator of the Three Laws of Robotics."
+          },
+          "sourceName": {
+            "zh": "美国国会图书馆 / Wikimedia Commons",
+            "en": "Library of Congress / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
+          "license": {
+            "zh": "公有领域；摄影者 Phillip Leonian，照片来自《纽约世界电讯与太阳报》馆藏。",
+            "en": "Public domain; photographed by Phillip Leonian for the New York World-Telegram & Sun collection."
+          },
+          "sourceId": "source-isaac-asimov-commons-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域；摄影者 Phillip Leonian，照片来自《纽约世界电讯与太阳报》馆藏。",
+              "en": "Public domain; photographed by Phillip Leonian for the New York World-Telegram & Sun collection."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg": {
           "caption": {
             "zh": "《转圈圈》规则层级解释图",
@@ -66974,10 +68288,41 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1942-asimov-runaround-isaac-asimov",
         "asset-1942-asimov-runaround-three-laws"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg": {
+        "caption": {
+          "zh": "艾萨克·阿西莫夫肖像",
+          "en": "Isaac Asimov portrait"
+        },
+        "subcaption": {
+          "zh": "《转圈圈》作者，机器人三定律的提出者。",
+          "en": "Author of Runaround and formulator of the Three Laws of Robotics."
+        },
+        "sourceName": {
+          "zh": "美国国会图书馆 / Wikimedia Commons",
+          "en": "Library of Congress / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
+        "license": {
+          "zh": "公有领域；摄影者 Phillip Leonian，照片来自《纽约世界电讯与太阳报》馆藏。",
+          "en": "Public domain; photographed by Phillip Leonian for the New York World-Telegram & Sun collection."
+        },
+        "sourceId": "source-isaac-asimov-commons-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；摄影者 Phillip Leonian，照片来自《纽约世界电讯与太阳报》馆藏。",
+            "en": "Public domain; photographed by Phillip Leonian for the New York World-Telegram & Sun collection."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg": {
         "caption": {
           "zh": "《转圈圈》规则层级解释图",
@@ -67092,6 +68437,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-isaac-asimov-commons-portrait",
         "source-astounding-march-1942-archive",
         "source-asimov-online-three-laws-faq",
         "source-runaround-story-overview",
@@ -67313,7 +68659,7 @@ const milestones = [
           "zh": "控制论奠基者，《人有人的用处》作者",
           "en": "Cybernetics founder and author of The Human Use of Human Beings"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -67321,9 +68667,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png",
         "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png": {
+          "caption": {
+            "zh": "诺伯特·维纳肖像",
+            "en": "Norbert Wiener portrait"
+          },
+          "subcaption": {
+            "zh": "控制论奠基者，《人有人的用处》作者。",
+            "en": "Founder of cybernetics and author of The Human Use of Human Beings."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceId": "source-norbert-wiener-commons-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+              "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
           "caption": {
             "zh": "控制论反馈预警解释图",
@@ -67360,10 +68737,41 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1950-wiener-human-use-norbert-wiener",
         "asset-1950-wiener-human-use-feedback-warning"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png": {
+        "caption": {
+          "zh": "诺伯特·维纳肖像",
+          "en": "Norbert Wiener portrait"
+        },
+        "subcaption": {
+          "zh": "控制论奠基者，《人有人的用处》作者。",
+          "en": "Founder of cybernetics and author of The Human Use of Human Beings."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png",
+        "license": {
+          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+        },
+        "sourceId": "source-norbert-wiener-commons-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg": {
         "caption": {
           "zh": "控制论反馈预警解释图",
@@ -67478,6 +68886,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-norbert-wiener-commons-portrait",
         "source-open-library-book-metadata",
         "source-open-library-metadata-search-result",
         "source-cybernetics-background",
@@ -67699,7 +69108,7 @@ const milestones = [
           "zh": "AI 先驱，《人、管理与自动化的形态》作者",
           "en": "AI pioneer and author of The Shape of Automation"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -67707,9 +69116,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
         "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg"
       ],
       "imageMeta": {
+        "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg": {
+          "caption": {
+            "zh": "赫伯特·A·西蒙肖像",
+            "en": "Herbert A. Simon portrait"
+          },
+          "subcaption": {
+            "zh": "AI 先驱及《人、管理与自动化的形态》作者。",
+            "en": "AI pioneer and author of The Shape of Automation for Men and Management."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+          "license": {
+            "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
+            "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
+          },
+          "sourceId": "source-herbert-simon-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
+              "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
           "caption": {
             "zh": "狂热曲线解释图",
@@ -67746,10 +69186,41 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1965-simon-ai-prediction-herbert-simon",
         "asset-1965-simon-ai-prediction-hype-curve"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg": {
+        "caption": {
+          "zh": "赫伯特·A·西蒙肖像",
+          "en": "Herbert A. Simon portrait"
+        },
+        "subcaption": {
+          "zh": "AI 先驱及《人、管理与自动化的形态》作者。",
+          "en": "AI pioneer and author of The Shape of Automation for Men and Management."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+        "license": {
+          "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
+          "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
+        },
+        "sourceId": "source-herbert-simon-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
+            "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg": {
         "caption": {
           "zh": "狂热曲线解释图",
@@ -67875,6 +69346,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-herbert-simon-commons-portrait",
         "source-open-library-book-metadata",
         "source-open-library-metadata-search-result",
         "source-herbert-a-simon-overview",
@@ -68097,7 +69569,7 @@ const milestones = [
           "zh": "《2001：太空漫游》导演",
           "en": "Director of 2001: A Space Odyssey"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -68120,9 +69592,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
         "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg": {
+          "caption": {
+            "zh": "斯坦利·库布里克肖像",
+            "en": "Stanley Kubrick portrait"
+          },
+          "subcaption": {
+            "zh": "《2001：太空漫游》导演。",
+            "en": "Director of 2001: A Space Odyssey."
+          },
+          "sourceName": {
+            "zh": "美国国会图书馆 / Wikimedia Commons",
+            "en": "Library of Congress / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+          "license": {
+            "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+            "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+          },
+          "sourceId": "source-stanley-kubrick-commons-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+              "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
           "caption": {
             "zh": "HAL 职责冲突解释图",
@@ -68159,10 +69662,41 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1968-hal-9000-stanley-kubrick",
         "asset-1968-hal-9000-conflict"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg": {
+        "caption": {
+          "zh": "斯坦利·库布里克肖像",
+          "en": "Stanley Kubrick portrait"
+        },
+        "subcaption": {
+          "zh": "《2001：太空漫游》导演。",
+          "en": "Director of 2001: A Space Odyssey."
+        },
+        "sourceName": {
+          "zh": "美国国会图书馆 / Wikimedia Commons",
+          "en": "Library of Congress / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+        "license": {
+          "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+          "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+        },
+        "sourceId": "source-stanley-kubrick-commons-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+            "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg": {
         "caption": {
           "zh": "HAL 职责冲突解释图",
@@ -68277,6 +69811,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-stanley-kubrick-commons-portrait",
         "source-2001-film-overview",
         "source-hal-9000-overview",
         "source-2001-novel-context",
@@ -68902,7 +70437,7 @@ const milestones = [
           "zh": "《小灵通漫游未来》作者",
           "en": "Author of Little Smart Roaming the Future"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -68910,9 +70445,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg",
         "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg": {
+          "caption": {
+            "zh": "叶永烈肖像",
+            "en": "Ye Yonglie portrait"
+          },
+          "subcaption": {
+            "zh": "《小灵通漫游未来》作者，照片摄于 1963 年。",
+            "en": "Author of Little Smart Roaming the Future, photographed in 1963."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ye_Yonglie_in_1963_(cropped).jpg",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceId": "source-ye-yonglie-commons-portrait",
+          "rights": {
+            "status": "public-domain",
+            "license": {
+              "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+              "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ye_Yonglie_in_1963_(cropped).jpg"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg": {
           "caption": {
             "zh": "未来城市乐观想象解释图",
@@ -68949,10 +70515,41 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1978-xiaolingtong-ye-yonglie",
         "asset-1978-xiaolingtong-future-city"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg": {
+        "caption": {
+          "zh": "叶永烈肖像",
+          "en": "Ye Yonglie portrait"
+        },
+        "subcaption": {
+          "zh": "《小灵通漫游未来》作者，照片摄于 1963 年。",
+          "en": "Author of Little Smart Roaming the Future, photographed in 1963."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ye_Yonglie_in_1963_(cropped).jpg",
+        "license": {
+          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+        },
+        "sourceId": "source-ye-yonglie-commons-portrait",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ye_Yonglie_in_1963_(cropped).jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg": {
         "caption": {
           "zh": "未来城市乐观想象解释图",
@@ -69067,6 +70664,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-ye-yonglie-commons-portrait",
         "source-little-smart-publication-overview",
         "source-ye-yonglie-biography",
         "source-science-fiction-encyclopedia-ye-yonglie",
@@ -69288,7 +70886,7 @@ const milestones = [
           "zh": "《神经漫游者》作者",
           "en": "Author of Neuromancer"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -69296,9 +70894,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg",
         "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg": {
+          "caption": {
+            "zh": "威廉·吉布森肖像",
+            "en": "William Gibson portrait"
+          },
+          "subcaption": {
+            "zh": "《神经漫游者》作者。",
+            "en": "Author of Neuromancer."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg",
+          "license": {
+            "zh": "CC BY-SA 2.0，摄影者 Gonzo Bonzo；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0, photographed by Gonzo Bonzo; attribution and share-alike terms apply."
+          },
+          "sourceId": "source-william-gibson-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 2.0，摄影者 Gonzo Bonzo；使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 2.0, photographed by Gonzo Bonzo; attribution and share-alike terms apply."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg": {
           "caption": {
             "zh": "《神经漫游者》AI 限制解释图",
@@ -69335,10 +70964,41 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1984-neuromancer-william-gibson",
         "asset-1984-neuromancer-ai-containment"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg": {
+        "caption": {
+          "zh": "威廉·吉布森肖像",
+          "en": "William Gibson portrait"
+        },
+        "subcaption": {
+          "zh": "《神经漫游者》作者。",
+          "en": "Author of Neuromancer."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0，摄影者 Gonzo Bonzo；使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 2.0, photographed by Gonzo Bonzo; attribution and share-alike terms apply."
+        },
+        "sourceId": "source-william-gibson-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0，摄影者 Gonzo Bonzo；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0, photographed by Gonzo Bonzo; attribution and share-alike terms apply."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg": {
         "caption": {
           "zh": "《神经漫游者》AI 限制解释图",
@@ -69453,6 +71113,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-william-gibson-commons-portrait",
         "source-open-library-book-metadata",
         "source-open-library-metadata-search-result",
         "source-science-fiction-encyclopedia-gibson",
@@ -70060,7 +71721,7 @@ const milestones = [
           "zh": "2014 年 AI 风险公共讨论者",
           "en": "Public AI-risk commentator in 2014"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/elon-musk.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -70075,7 +71736,7 @@ const milestones = [
           "zh": "警示高级 AI 控制问题的科学家",
           "en": "Scientist warning about advanced AI control"
         },
-        "avatar": "",
+        "avatar": "resources/images/figures/authoritative/stephen-hawking.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -70083,9 +71744,69 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/elon-musk.jpg",
+        "resources/images/figures/authoritative/stephen-hawking.jpg",
         "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg"
       ],
       "imageMeta": {
+        "resources/images/figures/authoritative/elon-musk.jpg": {
+          "caption": {
+            "zh": "埃隆·马斯克肖像",
+            "en": "Elon Musk portrait"
+          },
+          "subcaption": {
+            "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+            "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          },
+          "sourceId": "source-elon-musk-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            }
+          },
+          "role": "portrait",
+          "type": "image"
+        },
+        "resources/images/figures/authoritative/stephen-hawking.jpg": {
+          "caption": {
+            "zh": "斯蒂芬·霍金肖像",
+            "en": "Stephen Hawking portrait"
+          },
+          "subcaption": {
+            "zh": "公开警示高级 AI 控制风险的科学家。",
+            "en": "Scientist who publicly warned about controlling advanced AI."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+          "license": {
+            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+          },
+          "sourceId": "source-stephen-hawking-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+            }
+          },
+          "role": "supporting-portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
           "caption": {
             "zh": "公共 AI 风险警告解释图",
@@ -70122,10 +71843,70 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-elon-musk-commons-portrait",
+        "asset-stephen-hawking-commons-portrait",
         "asset-2014-ai-existential-warnings-public-risk"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/elon-musk.jpg": {
+        "caption": {
+          "zh": "埃隆·马斯克肖像",
+          "en": "Elon Musk portrait"
+        },
+        "subcaption": {
+          "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+          "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+        "license": {
+          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+        },
+        "sourceId": "source-elon-musk-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/figures/authoritative/stephen-hawking.jpg": {
+        "caption": {
+          "zh": "斯蒂芬·霍金肖像",
+          "en": "Stephen Hawking portrait"
+        },
+        "subcaption": {
+          "zh": "公开警示高级 AI 控制风险的科学家。",
+          "en": "Scientist who publicly warned about controlling advanced AI."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+        },
+        "sourceId": "source-stephen-hawking-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+          }
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
         "caption": {
           "zh": "公共 AI 风险警告解释图",
@@ -70240,6 +72021,8 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-elon-musk-commons-portrait",
+        "source-stephen-hawking-commons-portrait",
         "source-guardian-on-musk-remarks",
         "source-bbc-on-hawking-warning",
         "source-future-of-life-institute-open-letter",
@@ -70452,14 +72235,59 @@ const milestones = [
     },
     "figures": [
       {
-        "id": "openai-founding-team",
+        "id": "sam-altman",
         "name": {
-          "zh": "OpenAI 创始团队",
-          "en": "OpenAI founding team"
+          "zh": "萨姆·奥尔特曼",
+          "en": "Sam Altman"
         },
         "role": {
-          "zh": "2015 年宣告成立的非营利 AI 研究计划",
-          "en": "Nonprofit AI research initiative announced in 2015"
+          "zh": "OpenAI 创始联合主席",
+          "en": "OpenAI founding co-chair"
+        },
+        "avatar": "resources/images/figures/authoritative/sam-altman.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "elon-musk",
+        "name": {
+          "zh": "埃隆·马斯克",
+          "en": "Elon Musk"
+        },
+        "role": {
+          "zh": "OpenAI 创始联合主席与早期捐助者",
+          "en": "OpenAI founding co-chair and early donor"
+        },
+        "avatar": "resources/images/figures/authoritative/elon-musk.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "ilya-sutskever",
+        "name": {
+          "zh": "伊利亚·苏茨克维",
+          "en": "Ilya Sutskever"
+        },
+        "role": {
+          "zh": "OpenAI 成立时的研究主管",
+          "en": "Research director at OpenAI's founding"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "greg-brockman",
+        "name": {
+          "zh": "格雷格·布罗克曼",
+          "en": "Greg Brockman"
+        },
+        "role": {
+          "zh": "OpenAI 成立时的首席技术官",
+          "en": "Chief technology officer at OpenAI's founding"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -70469,9 +72297,69 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/sam-altman.jpg",
+        "resources/images/figures/authoritative/elon-musk.jpg",
         "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg"
       ],
       "imageMeta": {
+        "resources/images/figures/authoritative/sam-altman.jpg": {
+          "caption": {
+            "zh": "萨姆·奥尔特曼肖像",
+            "en": "Sam Altman portrait"
+          },
+          "subcaption": {
+            "zh": "OpenAI 创始联合主席。",
+            "en": "OpenAI founding co-chair."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED_(cropped).jpg",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          },
+          "sourceId": "source-sam-altman-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            }
+          },
+          "role": "portrait",
+          "type": "image"
+        },
+        "resources/images/figures/authoritative/elon-musk.jpg": {
+          "caption": {
+            "zh": "埃隆·马斯克肖像",
+            "en": "Elon Musk portrait"
+          },
+          "subcaption": {
+            "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+            "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          },
+          "sourceId": "source-elon-musk-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            }
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
           "caption": {
             "zh": "广泛受益机构解释图",
@@ -70508,10 +72396,70 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-sam-altman-commons-portrait",
+        "asset-elon-musk-commons-portrait",
         "asset-2015-openai-founding-broad-benefit"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/sam-altman.jpg": {
+        "caption": {
+          "zh": "萨姆·奥尔特曼肖像",
+          "en": "Sam Altman portrait"
+        },
+        "subcaption": {
+          "zh": "OpenAI 创始联合主席。",
+          "en": "OpenAI founding co-chair."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED_(cropped).jpg",
+        "license": {
+          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+        },
+        "sourceId": "source-sam-altman-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/figures/authoritative/elon-musk.jpg": {
+        "caption": {
+          "zh": "埃隆·马斯克肖像",
+          "en": "Elon Musk portrait"
+        },
+        "subcaption": {
+          "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+          "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+        "license": {
+          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+        },
+        "sourceId": "source-elon-musk-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg": {
         "caption": {
           "zh": "广泛受益机构解释图",
@@ -70626,6 +72574,8 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-sam-altman-commons-portrait",
+        "source-elon-musk-commons-portrait",
         "source-archived-openai-announcement",
         "source-wired-contemporary-coverage",
         "source-bbc-contemporary-coverage",
@@ -70838,6 +72788,21 @@ const milestones = [
     },
     "figures": [
       {
+        "id": "dan-hendrycks",
+        "name": {
+          "zh": "丹·亨德里克斯",
+          "en": "Dan Hendrycks"
+        },
+        "role": {
+          "zh": "发布该声明的 AI 安全中心主任",
+          "en": "Director of the Center for AI Safety, which published the statement"
+        },
+        "avatar": "resources/images/figures/authoritative/dan-hendrycks.webp",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
         "id": "center-for-ai-safety",
         "name": {
           "zh": "AI 安全中心",
@@ -70849,15 +72814,90 @@ const milestones = [
         },
         "avatar": "",
         "avatarStyle": "",
+        "figureType": "organization",
+        "organizationIds": []
+      },
+      {
+        "id": "geoffrey-hinton",
+        "name": {
+          "zh": "杰弗里·辛顿",
+          "en": "Geoffrey Hinton"
+        },
+        "role": {
+          "zh": "主要签署人",
+          "en": "Prominent signatory"
+        },
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "yoshua-bengio",
+        "name": {
+          "zh": "约书亚·本吉奥",
+          "en": "Yoshua Bengio"
+        },
+        "role": {
+          "zh": "主要签署人",
+          "en": "Prominent signatory"
+        },
+        "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "demis-hassabis",
+        "name": {
+          "zh": "德米斯·哈萨比斯",
+          "en": "Demis Hassabis"
+        },
+        "role": {
+          "zh": "主要签署人",
+          "en": "Prominent signatory"
+        },
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
       }
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/dan-hendrycks.webp",
         "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg"
       ],
       "imageMeta": {
+        "resources/images/figures/authoritative/dan-hendrycks.webp": {
+          "caption": {
+            "zh": "丹·亨德里克斯肖像",
+            "en": "Dan Hendrycks portrait"
+          },
+          "subcaption": {
+            "zh": "发布 AI 风险声明的 AI 安全中心主任。",
+            "en": "Director of the Center for AI Safety, which published the Statement on AI Risk."
+          },
+          "sourceName": {
+            "zh": "AI 安全中心",
+            "en": "Center for AI Safety"
+          },
+          "sourceUrl": "https://www.safe.ai/",
+          "license": {
+            "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+          },
+          "sourceId": "source-cais-dan-hendrycks-profile",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
+              "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+            }
+          },
+          "role": "portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
           "caption": {
             "zh": "全球 AI 风险优先事项解释图",
@@ -70894,10 +72934,40 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-dan-hendrycks-cais-portrait",
         "asset-2023-ai-risk-statement-global-priority"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/dan-hendrycks.webp": {
+        "caption": {
+          "zh": "丹·亨德里克斯肖像",
+          "en": "Dan Hendrycks portrait"
+        },
+        "subcaption": {
+          "zh": "发布 AI 风险声明的 AI 安全中心主任。",
+          "en": "Director of the Center for AI Safety, which published the Statement on AI Risk."
+        },
+        "sourceName": {
+          "zh": "AI 安全中心",
+          "en": "Center for AI Safety"
+        },
+        "sourceUrl": "https://www.safe.ai/",
+        "license": {
+          "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-cais-dan-hendrycks-profile",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg": {
         "caption": {
           "zh": "全球 AI 风险优先事项解释图",
@@ -71012,6 +73082,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-cais-dan-hendrycks-profile",
         "source-official-statement-on-ai-risk",
         "source-managing-extreme-ai-risks",
         "source-statement-on-ai-risk-overview",

@@ -33,5 +33,36 @@
       "en": "Branch timeline visual",
       "zh": "分支时间线视觉图"
     }
+  },
+  {
+    "id": "asset-dan-hendrycks-cais-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/dan-hendrycks.webp",
+    "role": "portrait",
+    "caption": {
+      "zh": "丹·亨德里克斯肖像",
+      "en": "Dan Hendrycks portrait"
+    },
+    "subcaption": {
+      "zh": "发布 AI 风险声明的 AI 安全中心主任。",
+      "en": "Director of the Center for AI Safety, which published the Statement on AI Risk."
+    },
+    "sourceId": "source-cais-dan-hendrycks-profile",
+    "sourceName": {
+      "zh": "AI 安全中心",
+      "en": "Center for AI Safety"
+    },
+    "sourceUrl": "https://www.safe.ai/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自 AI 安全中心官网；页面未声明再分发许可，对外发布前需复核授权。",
+        "en": "Image from the Center for AI Safety official website; redistribution rights are not stated and must be reviewed before publication."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:humanistic-cycle"
+    ]
   }
 ]

@@ -58,5 +58,45 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "contemporary-reporting"
+  },
+  {
+    "id": "source-noam-brown-official-profile",
+    "type": "personal-page",
+    "label": {
+      "zh": "个人主页",
+      "en": "Personal homepage"
+    },
+    "title": {
+      "zh": "诺姆·布朗个人主页",
+      "en": "Noam Brown personal homepage"
+    },
+    "url": "https://noambrown.com/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "本人主页提供个人简介与头像；页面未声明图片再分发许可。",
+      "en": "The personal homepage provides the biography and portrait; image redistribution rights are not stated."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-tuomas-sandholm-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "托马斯·桑德霍姆资料照片",
+      "en": "Tuomas Sandholm archival portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Tuomas_Sandholm_01.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Xuthoria；Wikimedia Commons 文件页标注 CC BY-SA 4.0。",
+      "en": "Photograph by Xuthoria; the Wikimedia Commons file page identifies CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
   }
 ]

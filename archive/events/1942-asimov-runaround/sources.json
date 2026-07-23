@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-isaac-asimov-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "艾萨克·阿西莫夫肖像",
+      "en": "Isaac Asimov portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "美国国会图书馆馆藏，摄影者 Phillip Leonian；Wikimedia Commons 标注为公有领域。",
+      "en": "Library of Congress collection, photographed by Phillip Leonian; marked public domain on Wikimedia Commons."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-astounding-march-1942-archive",
     "type": "archive",
     "label": {

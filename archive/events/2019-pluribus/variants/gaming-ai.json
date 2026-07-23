@@ -84,8 +84,8 @@
             }
         }
     ],
-    "assetIds": ["asset-2019-pluribus-blueprint-search"],
-    "sourceIds": ["source-science-paper", "source-meta-ai-pluribus-report", "source-cmu-pluribus-release"],
+    "assetIds": ["asset-noam-brown-official-portrait", "asset-tuomas-sandholm-commons-portrait", "asset-2019-pluribus-blueprint-search"],
+    "sourceIds": ["source-noam-brown-official-profile", "source-tuomas-sandholm-commons-portrait", "source-science-paper", "source-meta-ai-pluribus-report", "source-cmu-pluribus-release"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2019-pluribus-quiz-1",
     "commentarySections": [
@@ -147,7 +147,7 @@
                 "en": "Pluribus co-creator",
                 "zh": "Pluribus 共同创建者"
             },
-            "avatar": "",
+            "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
             "avatarStyle": "",
             "figureType": "person"
         },
@@ -160,7 +160,7 @@
                 "en": "Pluribus co-creator",
                 "zh": "Pluribus 共同创建者"
             },
-            "avatar": "",
+            "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
             "avatarStyle": "",
             "figureType": "person"
         }

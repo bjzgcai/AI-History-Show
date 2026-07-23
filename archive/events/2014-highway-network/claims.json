@@ -1,26 +1,22 @@
 [
-  {
-    "id": "claim-legacy-achievement-summary",
-    "importance": "core",
-    "text": {
-      "zh": "高速网络 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "Highway Networks is an AI history milestone in the current legacy presentation."
+    {
+        "id": "claim-legacy-achievement-summary",
+        "importance": "core",
+        "text": {
+            "zh": "高速网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Highway Networks is an AI history milestone in the current legacy presentation."
+        },
+        "sourceIds": ["source-highway-networks-arxiv"],
+        "status": "verified"
     },
-    "sourceIds": [
-      "source-legacy-event-record"
-    ],
-    "status": "needs-source"
-  },
-  {
-    "id": "claim-legacy-description",
-    "importance": "context",
-    "text": {
-      "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-      "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
-    },
-    "sourceIds": [
-      "source-legacy-event-record"
-    ],
-    "status": "needs-source"
-  }
+    {
+        "id": "claim-legacy-description",
+        "importance": "context",
+        "text": {
+            "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
+            "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+        },
+        "sourceIds": ["source-highway-networks-arxiv"],
+        "status": "verified"
+    }
 ]

@@ -46,6 +46,7 @@
         "zh": "AlphaGo 主要研究者",
         "en": "AlphaGo lead researcher"
       },
+      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
       "organizationIds": [
         "deepmind"
       ]
@@ -56,6 +57,7 @@
         "zh": "DeepMind 联合创始人",
         "en": "DeepMind co-founder"
       },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
       "organizationIds": [
         "deepmind"
       ]

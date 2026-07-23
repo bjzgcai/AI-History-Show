@@ -47,8 +47,10 @@
             }
         }
     ],
-    "assetIds": ["asset-2014-ai-existential-warnings-public-risk"],
+    "assetIds": ["asset-elon-musk-commons-portrait", "asset-stephen-hawking-commons-portrait", "asset-2014-ai-existential-warnings-public-risk"],
     "sourceIds": [
+        "source-elon-musk-commons-portrait",
+        "source-stephen-hawking-commons-portrait",
         "source-guardian-on-musk-remarks",
         "source-bbc-on-hawking-warning",
         "source-future-of-life-institute-open-letter",

@@ -88,11 +88,13 @@
     }
   ],
   "assetIds": [
+    "asset-david-silver-commons-portrait",
     "asset-2013-dqn-volodymyr-mnih",
     "asset-2013-dqn-replay-buffer",
     "asset-2013-dqn-q-control"
   ],
   "sourceIds": [
+    "source-david-silver-commons-portrait",
     "source-playing-atari-with-deep-reinforcement-learning",
     "source-human-level-control-through-deep-reinforcement-learning",
     "source-google-deepmind-deep-reinforcement-learning"
@@ -167,7 +169,7 @@
         "en": "First author of DQN work",
         "zh": "DQN 工作第一作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },
@@ -180,7 +182,7 @@
         "en": "DeepMind reinforcement learning researcher",
         "zh": "DeepMind 强化学习研究者"
       },
-      "avatar": "",
+      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

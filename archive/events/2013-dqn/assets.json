@@ -76,5 +76,37 @@
       "variant:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-david-silver-commons-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/david-silver.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "大卫·席尔瓦肖像",
+      "en": "David Silver portrait"
+    },
+    "subcaption": {
+      "zh": "DeepMind 强化学习主要研究者。",
+      "en": "Leading DeepMind reinforcement-learning researcher."
+    },
+    "sourceId": "source-david-silver-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+        "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ]
   }
 ]

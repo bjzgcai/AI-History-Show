@@ -130,8 +130,8 @@
         "en": "Creator of self-organizing maps",
         "zh": "自组织映射提出者"
       },
-      "avatar": "",
-      "avatarStyle": "",
+      "avatar": "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
+      "avatarStyle": "object-position: 100% 50%; transform: scale(2.1); transform-origin: 86% 16%;",
       "figureType": "person"
     }
   ],

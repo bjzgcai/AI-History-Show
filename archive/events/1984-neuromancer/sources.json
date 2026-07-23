@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-william-gibson-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "威廉·吉布森肖像",
+      "en": "William Gibson portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Gonzo Bonzo；Wikimedia Commons 文件页标注 CC BY-SA 2.0。",
+      "en": "Photographed by Gonzo Bonzo; the Wikimedia Commons file page identifies CC BY-SA 2.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-open-library-book-metadata",
     "type": "book-index",
     "label": {

@@ -1,163 +1,167 @@
 {
-  "storylineId": "deep-learning",
-  "eventId": "2014-highway-network",
-  "presentationMode": "preserve-legacy",
-  "displayTitle": {
-    "zh": "高速网络",
-    "en": "Highway Networks"
-  },
-  "displaySummary": {
-    "zh": "深度学习与范式归一",
-    "en": "Deep Learning and Unified Paradigms"
-  },
-  "displayDescription": {
-    "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-    "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
-  },
-  "emphasis": [
-    "batch-migration",
-    "source-review-needed"
-  ],
-  "visualModules": [],
-  "assetIds": [
-    "asset-2014-highway-network-architecture-01",
-    "asset-2014-highway-network-people-01"
-  ],
-  "sourceIds": [
-    "source-legacy-event-record"
-  ],
-  "claimIds": [
-    "claim-legacy-achievement-summary",
-    "claim-legacy-description"
-  ],
-  "commentarySections": [
-    {
-      "id": "background",
-      "label": {
-        "zh": "背景解读",
-        "en": "Background"
-      },
-      "html": {
-        "zh": "Highway Network 的关键想法是给深层网络加入可学习的“通行门”：当某一层不必改写信息时，模型可以让信号近似原样穿过，从而把极深网络训练从“必须层层重写”改成“按需变换”。",
-        "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed."
-      },
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+    "storylineId": "deep-learning",
+    "eventId": "2014-highway-network",
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+        "zh": "高速网络",
+        "en": "Highway Networks"
     },
-    {
-      "id": "context",
-      "label": {
-        "zh": "延展说明",
-        "en": "Context"
-      },
-      "html": {
-        "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。",
-        "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream."
-      },
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+    "displaySummary": {
+        "zh": "深度学习与范式归一",
+        "en": "Deep Learning and Unified Paradigms"
+    },
+    "displayDescription": {
+        "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
+        "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visualModules": [],
+    "assetIds": [
+        "asset-2014-highway-network-architecture-01",
+        "asset-2014-highway-network-people-01",
+        "asset-2014-highway-network-klaus-greff"
+    ],
+    "sourceIds": [
+        "source-highway-networks-arxiv",
+        "source-klaus-greff-homepage",
+        "source-klaus-greff-github",
+        "source-juergen-schmidhuber-idsia"
+    ],
+    "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+    "commentarySections": [
+        {
+            "id": "background",
+            "label": {
+                "zh": "背景解读",
+                "en": "Background"
+            },
+            "html": {
+                "zh": "Highway Network 的关键想法是给深层网络加入可学习的“通行门”：当某一层不必改写信息时，模型可以让信号近似原样穿过，从而把极深网络训练从“必须层层重写”改成“按需变换”。",
+                "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed."
+            },
+            "sourceIds": ["source-highway-networks-arxiv"]
+        },
+        {
+            "id": "context",
+            "label": {
+                "zh": "延展说明",
+                "en": "Context"
+            },
+            "html": {
+                "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。",
+                "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream."
+            },
+            "sourceIds": ["source-highway-networks-arxiv"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
+    },
+    "category": {
+        "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+        "zh": "深度学习与范式归一（2010年代至2020年代）"
+    },
+    "figures": [
+        {
+            "name": {
+                "en": "Rupesh Kumar Srivastava",
+                "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦"
+            },
+            "role": {
+                "en": "Lead author of Highway Networks",
+                "zh": "Highway Networks 第一作者"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Klaus Greff",
+                "zh": "克劳斯·格雷夫"
+            },
+            "role": {
+                "en": "Co-author of Highway Networks",
+                "zh": "Highway Networks 共同作者"
+            },
+            "avatar": "resources/images/external/2014-highway-network/klaus-greff-github.jpg",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Jürgen Schmidhuber",
+                "zh": "于尔根·施密德胡伯"
+            },
+            "role": {
+                "en": "Co-author of Highway Networks",
+                "zh": "Highway Networks 共同作者"
+            },
+            "avatar": "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
+            "avatarStyle": "",
+            "figureType": "person"
+        }
+    ],
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+    "resources": {
+        "videos": [
+            {
+                "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+                "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+                "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
+                "title": "2015高速网络：深度学习中被遗忘的英雄",
+                "channel": "",
+                "duration": "",
+                "thumbnail": "",
+                "source": "Web"
+            }
+        ]
+    },
+    "quote": {
+        "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
+        "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""
+    },
+    "quoteMeta": {
+        "speaker": {
+            "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
+            "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
+        },
+        "workTitle": {
+            "en": "Highway Networks",
+            "zh": "高速网络"
+        },
+        "workAuthors": {
+            "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+            "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯，arXiv，2015"
+        },
+        "sourceLabel": {
+            "en": "arXiv paper page",
+            "zh": "arXiv 论文页面"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1505.00387"
+    },
+    "quotePage": {
+        "en": "arXiv paper: Highway Networks",
+        "zh": "arXiv 论文《高速网络》"
+    },
+    "quoteAttribution": {
+        "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
+        "zh": "《高速网络》，鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯，arXiv，2015"
+    },
+    "location": {
+        "name": {
+            "en": "Swiss AI Lab IDSIA",
+            "zh": "瑞士人工智能实验室 IDSIA"
+        },
+        "country": {
+            "en": "Switzerland",
+            "zh": "瑞士"
+        },
+        "coordinates": [46.0037, 8.9511]
     }
-  ],
-  "review": {
-    "status": "draft",
-    "notes": {
-      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
-      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
-    }
-  },
-  "category": {
-    "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-    "zh": "深度学习与范式归一（2010年代至2020年代）"
-  },
-  "figures": [
-    {
-      "name": {
-        "en": "Ian Goodfellow",
-        "zh": "伊恩·古德费洛"
-      },
-      "role": {
-        "en": "GAN inventor",
-        "zh": "GAN发明者"
-      },
-      "avatar": "resources/images/figures/ian-goodfellow.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Yoshua Bengio",
-        "zh": "约书亚·本吉奥"
-      },
-      "role": {
-        "en": "Proposer of Attention Mechanism ",
-        "zh": "注意力机制提出者"
-      },
-      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
-      "avatarStyle": "",
-      "figureType": "person"
-    }
-  ],
-  "photos": [],
-  "videoUrl": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-  "resources": {
-    "videos": [
-      {
-        "id": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-        "url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-        "embed_url": "https://media.sciencearena.cn/video/2014%E9%AB%98%E9%80%9F%E7%BD%91%E7%BB%9C%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%8B%B1%E9%9B%84.mp4",
-        "title": "2014高速网络：深度学习中被遗忘的英雄",
-        "channel": "",
-        "duration": "",
-        "thumbnail": "",
-        "source": "Web"
-      }
-    ]
-  },
-  "quote": {
-    "en": "\"Highway Networks used learned gates to regulate information flow, showing that very deep feedforward networks could be trained before residual networks became dominant.\"",
-    "zh": "\"高速网络用可学习的门控调节信息流，证明在残差网络成为主流之前，极深的前馈网络也可以被训练。\""
-  },
-  "quoteMeta": {
-    "speaker": {
-      "en": "Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber",
-      "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦、克劳斯·格雷夫、于尔根·施密德胡伯"
-    },
-    "workTitle": {
-      "en": "Highway Networks",
-      "zh": "高速网络"
-    },
-    "workAuthors": {
-      "en": "Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
-      "zh": "Rupesh Kumar Srivastava、Klaus Greff、于尔根·施密德胡伯，arXiv，2015"
-    },
-    "sourceLabel": {
-      "en": "arXiv paper page",
-      "zh": "arXiv 论文页面"
-    },
-    "sourceUrl": "https://arxiv.org/abs/1505.00387"
-  },
-  "quotePage": {
-    "en": "arXiv paper: Highway Networks",
-    "zh": "arXiv 论文《高速网络》"
-  },
-  "quoteAttribution": {
-    "en": "<em>Highway Networks</em>, Rupesh Kumar Srivastava, Klaus Greff, and Jürgen Schmidhuber, arXiv, 2015",
-    "zh": "《高速网络》，鲁佩什·斯里瓦斯塔瓦、克劳斯·格雷夫、尤尔根·施密德胡伯"
-  },
-  "location": {
-    "name": {
-      "en": "IDSIA",
-      "zh": "蒙特利尔大学"
-    },
-    "country": {
-      "en": "Switzerland",
-      "zh": "加拿大, 魁北克省"
-    },
-    "coordinates": [
-      45.5017,
-      -73.5673
-    ]
-  }
 }

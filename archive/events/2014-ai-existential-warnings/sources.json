@@ -78,5 +78,45 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "background"
+  },
+  {
+    "id": "source-elon-musk-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "埃隆·马斯克 2015 年资料照片",
+      "en": "Elon Musk archival portrait from 2015"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Steve Jurvetson；Wikimedia Commons 文件页标注 CC BY 2.0。",
+      "en": "Photograph by Steve Jurvetson; the Wikimedia Commons file page identifies CC BY 2.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-stephen-hawking-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "斯蒂芬·霍金资料照片",
+      "en": "Stephen Hawking archival portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Tanya Hart；Wikimedia Commons 文件页标注 CC BY-SA 2.0。",
+      "en": "Photograph by Tanya Hart; the Wikimedia Commons file page identifies CC BY-SA 2.0."
+    },
+    "purpose": "image-provenance"
   }
 ]

@@ -42,6 +42,7 @@
         "zh": "提出\"AI\"术语",
         "en": "Coined the term \"AI\""
       },
+      "avatar": "resources/images/figures/historical/john-mccarthy-1956-v2.png",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "认知科学家",
         "en": "Cognitive scientist"
       },
+      "avatar": "resources/images/figures/historical/marvin-minsky-1956-v2.png",
       "organizationIds": []
     },
     {
@@ -58,6 +60,7 @@
         "zh": "信息论创始人",
         "en": "Founder of information theory"
       },
+      "avatar": "resources/images/figures/historical/claude-shannon-1956-v2.png",
       "organizationIds": []
     },
     {
@@ -66,6 +69,7 @@
         "zh": "IBM 架构师",
         "en": "IBM architect"
       },
+      "avatar": "resources/images/figures/historical/nathaniel-rochester-1956-v2.png",
       "organizationIds": []
     }
   ],

@@ -1,5 +1,37 @@
 [
   {
+    "id": "asset-1965-simon-ai-prediction-herbert-simon",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "赫伯特·A·西蒙肖像",
+      "en": "Herbert A. Simon portrait"
+    },
+    "subcaption": {
+      "zh": "AI 先驱及《人、管理与自动化的形态》作者。",
+      "en": "AI pioneer and author of The Shape of Automation for Men and Management."
+    },
+    "sourceId": "source-herbert-simon-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 3.0 或 GFDL；摄影者 Richard Rappaport，Wikimedia VRT 已记录授权。",
+        "en": "CC BY 3.0 or GFDL; photograph by Richard Rappaport, with permission recorded by Wikimedia VRT."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1965-simon-ai-prediction-hype-curve",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg",
