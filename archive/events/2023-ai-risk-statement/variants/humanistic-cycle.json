@@ -47,8 +47,9 @@
             }
         }
     ],
-    "assetIds": ["asset-2023-ai-risk-statement-global-priority"],
+    "assetIds": ["asset-dan-hendrycks-cais-portrait", "asset-2023-ai-risk-statement-global-priority"],
     "sourceIds": [
+        "source-cais-dan-hendrycks-profile",
         "source-official-statement-on-ai-risk",
         "source-managing-extreme-ai-risks",
         "source-statement-on-ai-risk-overview",

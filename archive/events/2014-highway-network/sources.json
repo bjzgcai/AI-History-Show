@@ -1,22 +1,124 @@
 [
-  {
-    "id": "source-legacy-event-record",
-    "type": "internal-record",
-    "title": {
-      "zh": "Legacy event record for 2014-highway-network",
-      "en": "Legacy event record for 2014-highway-network"
+    {
+        "id": "source-legacy-event-record",
+        "type": "internal-record",
+        "title": {
+            "zh": "Legacy event record for 2014-highway-network",
+            "en": "Legacy event record for 2014-highway-network"
+        },
+        "url": "https://www.benchcouncil.org/",
+        "language": "en",
+        "reliability": "reference-only",
+        "notes": {
+            "zh": "由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。",
+            "en": "Temporary source placeholder generated from the legacy event record; add primary papers or original sources later."
+        },
+        "label": {
+            "zh": "内部记录",
+            "en": "Internal record"
+        },
+        "purpose": "migration-only"
     },
-    "url": "https://www.benchcouncil.org/",
-    "language": "en",
-    "reliability": "reference-only",
-    "notes": {
-      "zh": "由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。",
-      "en": "Temporary source placeholder generated from the legacy event record; add primary papers or original sources later."
+    {
+        "id": "source-highway-networks-paper",
+        "type": "paper",
+        "label": {
+            "zh": "原始论文",
+            "en": "Primary paper"
+        },
+        "title": {
+            "zh": "《Highway Networks》",
+            "en": "Highway Networks"
+        },
+        "authors": ["Rupesh Kumar Srivastava", "Klaus Greff", "Jürgen Schmidhuber"],
+        "year": 2015,
+        "url": "https://arxiv.org/abs/1505.00387",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "arXiv 原始论文页面列出三位作者，并说明高速网络通过门控捷径训练极深网络。",
+            "en": "The original arXiv paper page lists all three authors and describes training very deep networks with gated shortcut paths."
+        },
+        "purpose": "core-evidence"
     },
-    "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
+    {
+        "id": "source-klaus-greff-homepage",
+        "type": "personal-page",
+        "label": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+        },
+        "title": {
+            "zh": "克劳斯·格雷夫个人主页",
+            "en": "Klaus Greff personal homepage"
+        },
+        "url": "https://qwlouse.github.io/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "本人维护的个人主页，页面结构化数据和头像替代文字均标明 Klaus Greff。",
+            "en": "A self-maintained homepage whose structured data and portrait alt text identify Klaus Greff."
+        },
+        "purpose": "biography"
     },
-    "purpose": "migration-only"
-  }
+    {
+        "id": "source-klaus-greff-github",
+        "type": "image-source",
+        "label": {
+            "zh": "图片来源",
+            "en": "Image source"
+        },
+        "title": {
+            "zh": "Klaus Greff 的 GitHub 个人资料",
+            "en": "Klaus Greff's GitHub profile"
+        },
+        "url": "https://github.com/Qwlouse",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "该账号公开姓名为 Klaus Greff，并链接到其个人主页 qwlouse.github.io；头像用于本地人物卡片。",
+            "en": "The account names Klaus Greff and links to his personal homepage at qwlouse.github.io; its profile image is used for the local person card."
+        },
+        "purpose": "image-provenance"
+    },
+    {
+        "id": "source-juergen-schmidhuber-idsia",
+        "type": "personal-page",
+        "label": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+        },
+        "title": {
+            "zh": "IDSIA 于尔根·施密德胡伯个人主页",
+            "en": "Jürgen Schmidhuber's IDSIA homepage"
+        },
+        "url": "https://people.idsia.ch/~juergen/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "IDSIA 官方个人主页提供人物履历及 2017 年官方肖像链接。",
+            "en": "The official IDSIA personal page provides biographical information and links to the 2017 portrait used here."
+        },
+        "purpose": "image-provenance"
+    },
+    {
+        "id": "source-resnet-follow-up-paper",
+        "type": "paper",
+        "title": {
+            "zh": "《用于图像识别的深度残差学习》",
+            "en": "Deep Residual Learning for Image Recognition"
+        },
+        "url": "https://arxiv.org/abs/1512.03385",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "后续 ResNet 原论文，用于说明门控高速连接与恒等残差捷径之间的技术承接。",
+            "en": "The subsequent ResNet paper, included to document the transition from gated highway connections to identity residual shortcuts."
+        },
+        "label": {
+            "zh": "后续论文",
+            "en": "Follow-up paper"
+        },
+        "purpose": "follow-up"
+    }
 ]

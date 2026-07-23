@@ -3,24 +3,25 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "第一次寒冬的到来 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "The First AI Winter Arrives is an AI history milestone in the current legacy presentation."
+      "zh": "1969 年，马文·明斯基和西摩·帕普特出版《感知机：计算几何导论》，分析了受限单层感知机无法表示的一类任务。",
+      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, analyzing classes of tasks that restricted single-layer perceptrons could not represent."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-perceptrons-book"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
-      "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+      "zh": "《Perceptrons》揭示的表示限制，与隐藏层训练方法、算力和数据不足以及资助方向变化共同削弱了早期连接主义热潮；它并未证明所有多层神经网络都不可行。",
+      "en": "The representational limits described in Perceptrons combined with missing hidden-layer training methods, limited computing resources and data, and shifts in funding to weaken early connectionism; the book did not prove that all multilayer networks were impossible."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-perceptrons-book",
+      "source-cornell-perceptron-retrospective"
     ],
-    "status": "needs-source"
+    "status": "verified"
   }
 ]

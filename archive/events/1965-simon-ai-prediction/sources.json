@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-herbert-simon-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "赫伯特·A·西蒙肖像",
+      "en": "Herbert A. Simon portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Herbert_simon_red_complete.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Richard Rappaport；文件页提供 CC BY 3.0 或 GFDL 授权，并记录 Wikimedia VRT 许可。",
+      "en": "Photograph by Richard Rappaport; the file page provides CC BY 3.0 or GFDL terms and records Wikimedia VRT permission."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-open-library-book-metadata",
     "type": "book-index",
     "label": {

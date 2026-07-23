@@ -222,8 +222,8 @@ module.exports = {
     type: "person",
     status: "ready",
     wikipediaTitle: "",
-    avatar: "resources/images/figures/sun-jian.png",
-    note: "双语事件名映射，头像同孙剑。"
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+    note: "双语事件名映射，复用 ResNet 章节中已核验的孙剑头像。"
   },
   "黄高 (Gao Huang)": {
     type: "person",
@@ -251,8 +251,8 @@ module.exports = {
     type: "person",
     status: "ready",
     wikipediaTitle: "",
-    avatar: "resources/images/figures/sun-jian.png",
-    note: "沿用 ResNet 章节现有头像。"
+    avatar: "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+    note: "沿用 ResNet 章节中已核验的孙剑头像。"
   },
   "研究机构": {
     type: "team",

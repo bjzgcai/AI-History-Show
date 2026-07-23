@@ -11,6 +11,10 @@ manage/.backups/
 # Archive parity browser artifacts
 .tmp/
 
+# Generated event Markdown packs
+/pq/
+/pq-all.zip
+
 # OS
 .DS_Store
 Thumbs.db

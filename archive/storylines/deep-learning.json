@@ -78,25 +78,25 @@
             "milestoneId": "milestone-1997-lstm"
         },
         {
-            "eventId": "2014-highway-network",
-            "variant": "deep-learning",
-            "order": 90,
-            "enabled": true,
-            "milestoneId": "milestone-2014-highway-network"
-        },
-        {
             "eventId": "2014-gan",
             "variant": "deep-learning",
-            "order": 100,
+            "order": 90,
             "enabled": true,
             "milestoneId": "milestone-2014-gan"
         },
         {
             "eventId": "2014-attention",
             "variant": "deep-learning",
-            "order": 110,
+            "order": 100,
             "enabled": true,
             "milestoneId": "milestone-2014-attention"
+        },
+        {
+            "eventId": "2014-highway-network",
+            "variant": "deep-learning",
+            "order": 110,
+            "enabled": true,
+            "milestoneId": "milestone-2014-highway-network"
         },
         {
             "eventId": "2015-resnet",

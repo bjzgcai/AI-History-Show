@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>",
-    "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>"
+    "zh": "<p>福岛邦彦在 1980 年提出 Neocognitron，构建受视觉皮层启发的层级自组织网络。S 细胞层从局部感受野中检测线段和更复杂特征，C 细胞层在邻近位置汇聚响应，使模式即使发生一定平移或形变也能被识别；多层交替逐步形成更抽象表示。</p><p>Neocognitron 尚未采用后来 CNN 中以反向传播端到端训练共享卷积核的标准方式，但它明确展示了局部连接、层级特征和空间容忍性可以组合成视觉识别系统。它连接了早期生物启发模型与 LeNet 等现代卷积网络，是 CNN 架构思想的重要先驱。</p>",
+    "en": "<p>Kunihiko Fukushima introduced the neocognitron in 1980 as a hierarchical self-organizing network inspired by visual cortex. S-cell layers detect lines and increasingly complex features within local receptive fields, while C-cell layers pool responses over nearby positions so patterns can still be recognized after limited shifts or deformation. Alternating layers gradually construct more abstract representations.</p><p>The neocognitron did not use the later CNN standard of end-to-end backpropagation through shared convolutional kernels. It nevertheless showed clearly that local connectivity, feature hierarchies, and spatial tolerance could be combined in a visual-recognition system. It became an important architectural precursor linking early biologically inspired models to LeNet and modern convolutional networks.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Creator of the neocognitron",
         "zh": "Neocognitron 提出者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

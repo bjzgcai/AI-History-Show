@@ -31,12 +31,12 @@
     "path": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
     "role": "portrait",
     "caption": {
-      "zh": "杰弗里·埃尔曼肖像",
-      "en": "Jeffrey Elman portrait"
+      "zh": "迈克尔·I·乔丹肖像",
+      "en": "Michael I. Jordan portrait"
     },
     "subcaption": {
-      "zh": "简单循环网络提出者。",
-      "en": "Creator of the simple recurrent network."
+      "zh": "乔丹网络提出者。",
+      "en": "Creator of the Jordan network."
     },
     "sourceId": "source-legacy-event-record",
     "rights": {

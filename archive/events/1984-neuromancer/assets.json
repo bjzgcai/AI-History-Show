@@ -1,5 +1,37 @@
 [
   {
+    "id": "asset-1984-neuromancer-william-gibson",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1984-neuromancer_william-gibson.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "威廉·吉布森肖像",
+      "en": "William Gibson portrait"
+    },
+    "subcaption": {
+      "zh": "《神经漫游者》作者。",
+      "en": "Author of Neuromancer."
+    },
+    "sourceId": "source-william-gibson-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 2.0，摄影者 Gonzo Bonzo；使用时须署名并遵循相同方式共享。",
+        "en": "CC BY-SA 2.0, photographed by Gonzo Bonzo; attribution and share-alike terms apply."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Gibson_60th_birthday_portrait_(3x4_cropped).jpg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1984-neuromancer-ai-containment",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg",

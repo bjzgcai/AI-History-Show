@@ -1,0 +1,629 @@
+{
+  "generatedAt": "2026-07-23T01:21:22.714Z",
+  "reviewUrl": "http://127.0.0.1:8002/reports/svg-explainer-review/review.html",
+  "svgCount": 155,
+  "affectedSvgCount": 0,
+  "issueCounts": {},
+  "results": [
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1951-snarc_maze-reinforcement.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1956-logic-theorist_proof-search.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_sensor-grid.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1958-rosenblatt-perceptron_threshold.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1958-wangs-algorithm_pattern-proof.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_feature-votes.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1959-pandemonium_layered-recognition.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1965-dendral_mass-spectrum.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1965-dendral_rule-filter.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1965-resolution-method_unification-map.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1967-back-propagation_error-flow.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1967-knn_neighbor-vote.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1969-relu_activation.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1970-ridge_shrinkage.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_blocks-world.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1970-shrdlu_parser-plan.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1973-prolog_unification-trace.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1974-frame_inheritance.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_chromosome-crossover.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1975-genetic-algorithm_population-cycle.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1982-som_topology-map.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1983-actor-critic_two-paths.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1983-simulated-annealing_energy-landscape.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cart_pruning-curve.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cart_split-regions.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_dag.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1985-bayesian-network_message-pass.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1989-q-learning_bellman-update.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1996-lasso_coefficient-path.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-kernel-pca_eigenmap.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1999-sift_descriptor.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/1999-sift_scale-space.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-isomap_geodesic-map.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-lle_neighbor-reconstruction.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2003-lda_plate-model.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2003-lda_topic-simplex.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2005-gnn_message-passing.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2005-hog_descriptor-grid.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2006-surf_interest-points.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2008-tsne_cluster-map.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2008-tsne_neighbor-probabilities.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2013-vae_latent-sampling.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_skipgram-window.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2013-word2vec_vector-analogy.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-adam_loss-trajectory.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-adam_moment-traces.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-dropout_ensemble-average.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-dropout_random-mask.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-gan_adversarial-loop.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-ms-coco_context-dataset.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-batch-normalization_activation-scale.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-ddpg_actor-critic.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-deep-compression_prune-quantize-code.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-knowledge-distillation_teacher-student.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2015-u-net_u-shape-architecture.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2016-yolo_grid-detector.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2016-yolo_single-pass.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2017-cyclegan_cycle-consistency.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2017-gat_attention-neighbors.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2017-pix2pix_paired-translation.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2018-bert_masked-lm.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2018-gpt_next-token.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2019-stylegan_style-modulation.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2021-clip_contrastive-pairs.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2021-dalle_text-to-image.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2021-swin-transformer_shifted-windows.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2022-stable-diffusion_latent-denoise.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/bench-council-ai100/explainers/2023-segment-anything_prompt-mask.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1965-simon-ai-prediction_hype-curve.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1984-neuromancer_ai-containment.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg",
+      "issues": []
+    },
+    {
+      "path": "resources/images/humanistic-cycle/explainers/2023-ai-risk-statement_global-priority.svg",
+      "issues": []
+    }
+  ]
+}

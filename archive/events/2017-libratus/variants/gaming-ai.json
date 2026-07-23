@@ -84,8 +84,8 @@
             }
         }
     ],
-    "assetIds": ["asset-2017-libratus-cfr-solving"],
-    "sourceIds": ["source-science-paper", "source-cmu-libratus-release", "source-safe-and-nested-subgame-solving"],
+    "assetIds": ["asset-noam-brown-official-portrait", "asset-tuomas-sandholm-commons-portrait", "asset-2017-libratus-cfr-solving"],
+    "sourceIds": ["source-noam-brown-official-profile", "source-tuomas-sandholm-commons-portrait", "source-science-paper", "source-cmu-libratus-release", "source-safe-and-nested-subgame-solving"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2017-libratus-quiz-1",
     "commentarySections": [
@@ -147,7 +147,7 @@
                 "en": "Libratus co-creator",
                 "zh": "Libratus 共同创建者"
             },
-            "avatar": "",
+            "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
             "avatarStyle": "",
             "figureType": "person"
         },
@@ -160,7 +160,7 @@
                 "en": "CMU professor and Libratus co-creator",
                 "zh": "CMU 教授，Libratus 共同创建者"
             },
-            "avatar": "",
+            "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
             "avatarStyle": "",
             "figureType": "person"
         }

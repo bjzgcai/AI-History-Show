@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Actor-Critic 方法把强化学习分成负责行动的策略组件和负责评估的价值组件。该架构让行为可以借助学习得到的评价来改进，而不必等待完整回报。</p>",
-    "en": "<p>Actor-critic methods split reinforcement learning into a policy component that acts and a value component that evaluates. This architecture made it possible to improve behavior using learned criticism rather than waiting for full returns.</p>"
+    "zh": "<p>巴托、萨顿和安德森在 1983 年的类神经自适应控制系统中，把学习分成行动者和评价者两个部分。Actor 根据状态选择动作并调整策略；Critic 学习预测未来强化信号，用连续步骤间的预测误差评价刚才的行为，为 Actor 提供比最终成败更及时的学习信号。</p><p>这种分工把策略搜索与价值估计结合起来，后来发展为现代策略梯度和优势 Actor-Critic 方法。Critic 可以降低纯策略梯度的方差，但自身偏差会误导 Actor，两个学习过程还可能相互不稳定。其持久影响在于确立“一个组件行动、另一个组件学习评价”的强化学习架构。</p>",
+    "en": "<p>Andrew Barto, Richard Sutton, and Charles Anderson divided learning into an actor and a critic in their 1983 neuronlike adaptive control system. The actor selects actions from the current state and adjusts the policy. The critic learns to predict future reinforcement and uses differences between successive predictions to evaluate recent behavior, supplying a more immediate learning signal than waiting for final success or failure.</p><p>This division joins policy search with value estimation and later developed into modern policy-gradient and advantage actor-critic methods. A critic can reduce the variance of pure policy gradients, but its bias can mislead the actor, and the two learning processes may destabilize each other. The enduring contribution is the architecture of one component acting while another learns how to evaluate those actions.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -129,7 +129,7 @@
         "en": "Actor-Critic co-author",
         "zh": "Actor-Critic 共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

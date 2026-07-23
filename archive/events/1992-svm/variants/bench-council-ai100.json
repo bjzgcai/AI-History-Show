@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>支持向量机让统计学习理论变得可操作：选择能以最大间隔分开类别的边界，再用核函数在变换后的特征空间中实现线性分离。它在深度学习复兴之前长期是主流机器学习工具。SVM 将优雅理论、凸优化和实用分类器连接在一起。</p>",
-    "en": "<p>SVMs made statistical learning theory tangible: choose a boundary that separates classes with the largest margin, then use kernels to make linear separation possible in transformed feature spaces. The method became a dominant machine-learning tool before deep learning’s resurgence. It connected elegant theory, convex optimization, and practical classifiers.</p>"
+    "zh": "<p>支持向量机把统计学习理论中的容量控制转化为实用分类器。它不只寻找能分开训练样本的边界，而是最大化边界与最近样本之间的间隔；这些决定边界的样本就是支持向量。软间隔允许少量违例，以在拟合训练数据和保持泛化能力之间取得平衡。</p><p>核函数进一步让算法在不显式计算高维坐标的情况下形成非线性边界，同时仍保持凸优化问题。SVM 在深度学习复兴前广泛用于文本、图像和生物信息任务，并把间隔、核方法和泛化理论连接起来。它对超大数据和复杂表征并非总是最高效，但仍是经典机器学习的重要基线。</p>",
+    "en": "<p>Support vector machines turned capacity control from statistical learning theory into a practical classifier. Rather than finding any boundary that separates the training examples, an SVM maximizes the margin to the nearest points, which become the support vectors. A soft margin permits selected violations so the model can balance training fit against generalization.</p><p>Kernel functions then allow nonlinear boundaries without explicitly constructing every coordinate of a high-dimensional feature space, while preserving a convex optimization problem. Before the deep-learning resurgence, SVMs were widely used in text, vision, and bioinformatics, connecting margin theory, kernels, and practical prediction. They are not always efficient for very large datasets or representation learning, but remain an important classical baseline.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -127,7 +127,7 @@
         "en": "SVM co-developer",
         "zh": "共同发展最优间隔分类器与统计学习理论"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
       "avatarStyle": "",
       "figureType": "person"
     },
@@ -153,7 +153,7 @@
         "en": "1992 SVM paper co-author",
         "zh": "1992 年最优间隔分类器论文共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

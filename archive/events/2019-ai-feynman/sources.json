@@ -1,5 +1,45 @@
 [
   {
+    "id": "source-ai-feynman-science-advances",
+    "type": "paper",
+    "title": {
+      "zh": "《AI Feynman：受物理启发的符号回归方法》",
+      "en": "AI Feynman: A Physics-Inspired Method for Symbolic Regression"
+    },
+    "url": "https://doi.org/10.1126/sciadv.aay2631",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "西尔维乌-马里安·乌多雷斯库与马克斯·泰格马克发表于 Science Advances 的原始论文。",
+      "en": "The original Science Advances paper by Silviu-Marian Udrescu and Max Tegmark."
+    },
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-ai-feynman-arxiv",
+    "type": "paper-page",
+    "title": {
+      "zh": "AI Feynman 预印本页面",
+      "en": "AI Feynman Preprint Page"
+    },
+    "url": "https://arxiv.org/abs/1905.11481",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "2019 年公开的论文预印本与版本记录。",
+      "en": "The paper preprint and version record first made public in 2019."
+    },
+    "label": {
+      "zh": "预印本页面",
+      "en": "Preprint page"
+    },
+    "purpose": "alternate-access"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {

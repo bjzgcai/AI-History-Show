@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。</p>",
-    "en": "<p>Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.</p>"
+    "zh": "<p>潜扩散模型先用自编码器把高分辨率图像压缩到较小潜空间，再训练 U-Net 逐步去除加入潜变量的噪声。文本编码通过交叉注意力调节去噪过程，使模型能够按提示生成图像；最终潜表示由解码器还原到像素空间，大幅降低直接在原图上扩散的计算成本。</p><p>2022 年 Stable Diffusion 的开放权重发布让这一方法进入广泛创作、研究和本地部署，促进微调、控制工具和生态扩展。它也放大了训练数据许可、艺术家权益、偏见和合成内容滥用等争议。其历史意义既在潜空间效率，也在开放发布如何改变生成模型的传播速度。</p>",
+    "en": "<p>Latent diffusion first compresses high-resolution images into a smaller latent space with an autoencoder, then trains a U-Net to remove noise from latent variables step by step. Text embeddings condition the denoising process through cross-attention, allowing prompts to guide image creation. A decoder finally returns the latent representation to pixels, greatly reducing the cost of diffusion directly over full-resolution images.</p><p>The 2022 release of Stable Diffusion weights brought this method into widespread creation, research, and local deployment, accelerating fine-tuning, control tools, and a broad ecosystem. It also intensified disputes over training-data licensing, artist rights, bias, and misuse of synthetic content. Its historical importance lies both in latent-space efficiency and in how an open release changed the speed at which generative models spread.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Lead author of latent diffusion models",
         "zh": "潜扩散模型主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

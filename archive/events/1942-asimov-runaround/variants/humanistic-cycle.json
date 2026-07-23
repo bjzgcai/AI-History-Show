@@ -47,8 +47,12 @@
             }
         }
     ],
-    "assetIds": ["asset-1942-asimov-runaround-three-laws"],
+    "assetIds": [
+        "asset-1942-asimov-runaround-isaac-asimov",
+        "asset-1942-asimov-runaround-three-laws"
+    ],
     "sourceIds": [
+        "source-isaac-asimov-commons-portrait",
         "source-astounding-march-1942-archive",
         "source-asimov-online-three-laws-faq",
         "source-runaround-story-overview",

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>YOLO 把目标检测重新表述为单次回归问题。它不再先提候选区域再逐个分类，而是让一个网络从整张图一次性预测边界框和类别概率。这个思路让实时目标检测成为主流工程目标。</p>",
-    "en": "<p>YOLO reframed object detection as a single regression problem. Instead of proposing regions and classifying them separately, one network predicted bounding boxes and class probabilities from the whole image in one pass. The result made real-time object detection a mainstream engineering target.</p>"
+    "zh": "<p>YOLO 将目标检测重新表述为从图像像素直接回归边界框和类别概率的单一网络任务。原始系统把图像划分为网格，每个单元在一次前向传播中预测候选框、置信度和类别，而不再先运行独立的区域建议算法再逐个分类。</p><p>统一流水线能够利用整张图的上下文，并显著提高检测速度，使实时目标检测成为主流工程目标。第一代 YOLO 在小物体和精确定位上存在局限，后续版本不断修改框表示、特征层和训练方法；但“单阶段、单次前向预测”的核心表述深刻影响了检测器设计和部署预期。</p>",
+    "en": "<p>YOLO reframed object detection as one neural-network task that regresses bounding boxes and class probabilities directly from image pixels. The original system divided an image into a grid, with each cell predicting candidate boxes, confidence, and classes in a single forward pass instead of running a separate region-proposal algorithm and classifying proposals one by one.</p><p>The unified pipeline could use context from the whole image and greatly increased detection speed, making real-time object detection a mainstream engineering goal. The first YOLO had limitations in precise localization and small-object detection, and later versions changed box representations, feature layers, and training recipes. Its central idea of single-stage, single-pass prediction nevertheless reshaped detector design and deployment expectations.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "First author of YOLO",
         "zh": "YOLO 第一作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

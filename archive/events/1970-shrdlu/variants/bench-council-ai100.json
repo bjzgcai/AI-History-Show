@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>SHRDLU 展示了计算机可以围绕一个受限但丰富的积木世界进行对话。Winograd 把句法分析、规划、过程语义和小型世界模型结合起来，让自然语言命令转化为类似机器人操作的动作。它的力量来自紧密集成：语言之所以有效，是因为世界被限制并被明确表示。</p>",
-    "en": "<p>SHRDLU showed that a computer could carry on a constrained but surprisingly rich dialogue about a toy blocks world. Winograd combined parsing, planning, procedural semantics, and a small world model so natural-language commands could become robot-like actions. Its power came from tight integration: language worked because the world was limited and explicitly represented.</p>"
+    "zh": "<p>特里·维诺格拉德在 1968 至 1970 年间开发 SHRDLU，让用户用自然语言与一个虚拟积木世界交互。系统把句法分析、指代消解、过程语义、规划和世界模型紧密结合，能够执行“把红色金字塔放到方块上”之类命令，也能回答关于对象、动作和先前对话的问题。</p><p>SHRDLU 的连贯表现展示了语言理解与行动规划整合后的力量，但它依赖一个词汇、物体和规则都受到严格限制的微型世界。系统一旦离开这个封闭环境就难以扩展。它因此既是自然语言 AI 的经典成功，也是对领域边界的提醒：局部流畅不等于开放世界理解。</p>",
+    "en": "<p>Terry Winograd developed SHRDLU between 1968 and 1970 so users could interact in natural language with a virtual blocks world. The system tightly integrated parsing, reference resolution, procedural semantics, planning, and a world model. It could execute commands such as placing a red pyramid on a block and answer questions about objects, actions, and earlier parts of the conversation.</p><p>SHRDLU's coherent behavior demonstrated the power of joining language understanding with action planning, but it depended on a microworld whose vocabulary, objects, and rules were sharply constrained. The approach did not scale easily beyond that closed environment. It therefore remains both a classic success in natural-language AI and a warning about scope: local fluency is not the same as open-world understanding.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Creator of SHRDLU",
         "zh": "SHRDLU 创建者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

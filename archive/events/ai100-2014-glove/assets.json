@@ -56,5 +56,101 @@
       "en": "Stanford NLP"
     },
     "sourceUrl": "https://nlp.stanford.edu/~jpennin/images/photo.jpeg"
+  },
+  {
+    "id": "asset-ai100-2014-glove-christopher-manning-commons",
+    "type": "image",
+    "path": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+    "role": "supporting-portrait",
+    "caption": {
+      "zh": "克里斯托弗·曼宁肖像",
+      "en": "Christopher Manning portrait"
+    },
+    "subcaption": {
+      "zh": "GloVe 共同作者，2025 年资料照片。",
+      "en": "GloVe co-author, archival photograph from 2025."
+    },
+    "sourceId": "source-christopher-manning-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+        "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2014-glove-christopher-manning-stanford",
+    "type": "image",
+    "path": "resources/images/external/ai100-2014-glove/christopher-manning-stanford.jpg",
+    "role": "supporting-portrait",
+    "caption": {
+      "zh": "克里斯托弗·曼宁斯坦福肖像",
+      "en": "Christopher Manning Stanford portrait"
+    },
+    "subcaption": {
+      "zh": "GloVe 共同作者的斯坦福官方资料照片。",
+      "en": "Stanford's official profile photograph of the GloVe co-author."
+    },
+    "sourceId": "source-christopher-manning-stanford-profile",
+    "sourceName": {
+      "zh": "斯坦福大学自然语言处理组",
+      "en": "Stanford Natural Language Processing Group"
+    },
+    "sourceUrl": "https://nlp.stanford.edu/~manning/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自斯坦福大学官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+        "en": "Image from the official Stanford profile; redistribution rights are not stated and must be reviewed before publication."
+      },
+      "sourceUrl": "https://nlp.stanford.edu/~manning/images/Christopher_Manning_027_1154x1154.jpg"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-ai100-2014-glove-richard-socher-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-2014-glove/richard-socher-portrait.png",
+    "role": "supporting-portrait",
+    "caption": {
+      "zh": "理查德·索彻肖像",
+      "en": "Richard Socher portrait"
+    },
+    "subcaption": {
+      "zh": "GloVe 共同作者。",
+      "en": "Co-author of GloVe."
+    },
+    "sourceId": "source-richard-socher-commons-portrait",
+    "sourceName": {
+      "zh": "世界经济论坛 / Wikimedia Commons",
+      "en": "World Economic Forum / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_Socher_(born_1983)_at_World_Economic_Forum_Annual_Meeting_2025.png",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 3.0；使用时须保留文件页所列作者与许可信息。",
+        "en": "CC BY 3.0; retain the author and license attribution listed on the file page."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_Socher_(born_1983)_at_World_Economic_Forum_Annual_Meeting_2025.png"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
   }
 ]

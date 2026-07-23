@@ -12,7 +12,7 @@
       "zh": "关于该成就流程的本地原创解释图。",
       "en": "Original local explainer for the achievement flow."
     },
-    "sourceId": "source-the-graph-neural-network-model",
+    "sourceId": "source-a-new-model-for-learning-in-graph-domains",
     "rights": {
       "status": "documented-in-legacy",
       "license": {
@@ -24,6 +24,38 @@
       "variant:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-ai100-2005-gnn-marco-gori-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-2005-gnn/people/marco-gori-university-video-still.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "马尔科·戈里肖像",
+      "en": "Marco Gori portrait"
+    },
+    "subcaption": {
+      "zh": "2005 年图神经网络论文第一作者。",
+      "en": "First author of the 2005 graph neural network paper."
+    },
+    "sourceId": "source-marco-gori-university-video",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "本地副本来自锡耶纳大学官方 YouTube 频道的视频缩略图；来源未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+        "en": "Local copy from a video thumbnail on the official University of Siena YouTube channel; no repository-compatible license is stated. Recheck before external redistribution."
+      },
+      "sourceUrl": "https://www.youtube.com/watch?v=mnyz8r1GLG8"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true,
+    "sourceName": {
+      "zh": "锡耶纳大学官方 YouTube 频道",
+      "en": "Official University of Siena YouTube channel"
+    },
+    "sourceUrl": "https://www.youtube.com/watch?v=mnyz8r1GLG8"
   },
   {
     "id": "asset-ai100-2005-gnn-citations",
@@ -56,5 +88,37 @@
       "en": "University of Siena author homepage"
     },
     "sourceUrl": "https://www3.diism.unisi.it/~franco/"
+  },
+  {
+    "id": "asset-ai100-2005-gnn-unisi-paper-record",
+    "type": "image",
+    "path": "resources/images/external/ai100-2005-gnn/papers/2005-gnn-unisi-oai-record.png",
+    "role": "paper-record",
+    "caption": {
+      "zh": "2005 年图神经网络论文机构库记录",
+      "en": "University repository record for the 2005 GNN paper"
+    },
+    "subcaption": {
+      "zh": "锡耶纳大学 OAI 记录列出论文题名、三位作者、摘要和 IJCNN 2005 会议信息。",
+      "en": "The University of Siena OAI record lists the title, three authors, abstract, and IJCNN 2005 publication details."
+    },
+    "sourceId": "source-unisi-oai-2005-gnn-record",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "本地截图仅展示公开 OAI-PMH 书目元数据，不包含受限论文正文；保留来源说明。",
+        "en": "Local screenshot of public OAI-PMH bibliographic metadata only; it does not contain the restricted paper text. Keep source attribution."
+      },
+      "sourceUrl": "https://usiena-air.unisi.it/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:usiena-air.unisi.it:11365/19137"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true,
+    "sourceName": {
+      "zh": "锡耶纳大学 AIR 机构库",
+      "en": "University of Siena AIR repository"
+    },
+    "sourceUrl": "https://usiena-air.unisi.it/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:usiena-air.unisi.it:11365/19137"
   }
 ]

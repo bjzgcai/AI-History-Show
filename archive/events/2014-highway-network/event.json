@@ -1,66 +1,84 @@
 {
-  "id": "2014-highway-network",
-  "year": 2014,
-  "date": "2014",
-  "title": {
-    "zh": "高速网络",
-    "en": "Highway Networks"
-  },
-  "summary": {
-    "zh": "深度学习与范式归一",
-    "en": "Deep Learning and Unified Paradigms"
-  },
-  "description": {
-    "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-    "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
-  },
-  "location": {
-    "regionId": "canada",
-    "country": {
-      "zh": "加拿大, 魁北克省",
-      "en": "Switzerland"
+    "id": "2014-highway-network",
+    "year": 2015,
+    "date": "2015-05",
+    "title": {
+        "zh": "高速网络",
+        "en": "Highway Networks"
     },
-    "place": {
-      "zh": "蒙特利尔大学",
-      "en": "IDSIA"
+    "summary": {
+        "zh": "深度学习与范式归一",
+        "en": "Deep Learning and Unified Paradigms"
     },
-    "coordinates": [
-      45.5017,
-      -73.5673
-    ]
-  },
-  "topics": [
-    "deep-learning"
-  ],
-  "achievementTypeIds": [
-    "deep-learning"
-  ],
-  "figures": [
-    {
-      "figureId": "ian-goodfellow",
-      "role": {
-        "zh": "GAN发明者",
-        "en": "GAN inventor"
-      },
-      "organizationIds": []
+    "description": {
+        "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
+        "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
     },
-    {
-      "figureId": "yoshua-bengio",
-      "role": {
-        "zh": "注意力机制提出者",
-        "en": "Proposer of Attention Mechanism"
-      },
-      "organizationIds": []
+    "location": {
+        "regionId": "switzerland",
+        "country": {
+            "zh": "瑞士",
+            "en": "Switzerland"
+        },
+        "place": {
+            "zh": "瑞士人工智能实验室 IDSIA",
+            "en": "Swiss AI Lab IDSIA"
+        },
+        "coordinates": [46.0037, 8.9511]
+    },
+    "topics": ["deep-learning"],
+    "achievementTypeIds": ["deep-learning"],
+    "figures": [
+        {
+            "figureId": "rupesh-kumar-srivastava",
+            "name": {
+                "zh": "鲁佩什·库马尔·斯里瓦斯塔瓦",
+                "en": "Rupesh Kumar Srivastava"
+            },
+            "role": {
+                "zh": "Highway Networks 第一作者",
+                "en": "Lead author of Highway Networks"
+            },
+            "figureType": "person",
+            "organizationIds": []
+        },
+        {
+            "figureId": "klaus-greff",
+            "name": {
+                "zh": "克劳斯·格雷夫",
+                "en": "Klaus Greff"
+            },
+            "role": {
+                "zh": "Highway Networks 共同作者",
+                "en": "Co-author of Highway Networks"
+            },
+            "avatar": "resources/images/external/2014-highway-network/klaus-greff-github.jpg",
+            "figureType": "person",
+            "organizationIds": []
+        },
+        {
+            "figureId": "juergen-schmidhuber",
+            "name": {
+                "zh": "于尔根·施密德胡伯",
+                "en": "Jürgen Schmidhuber"
+            },
+            "role": {
+                "zh": "Highway Networks 共同作者",
+                "en": "Co-author of Highway Networks"
+            },
+            "avatar": "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
+            "figureType": "person",
+            "organizationIds": []
+        }
+    ],
+    "organizations": [],
+    "canonical": true,
+    "relatedLegacyIds": [],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
+            "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+        }
     }
-  ],
-  "organizations": [],
-  "canonical": true,
-  "relatedLegacyIds": [],
-  "review": {
-    "status": "draft",
-    "notes": {
-      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
-      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
-    }
-  }
 }

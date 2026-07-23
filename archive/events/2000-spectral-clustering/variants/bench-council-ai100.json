@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>谱聚类把分组重新表述为图问题。样本成为节点，相似度成为带权边，图矩阵的特征向量揭示低维结构，使原本困难的切分更容易分离。</p>",
-    "en": "<p>Spectral clustering reframed grouping as a graph problem. Points become nodes, similarities become weighted edges, and eigenvectors of graph matrices reveal low-dimensional structure where difficult cuts become easier to separate.</p>"
+    "zh": "<p>谱聚类把样本表示为相似度图：样本是节点，边权表示彼此接近程度。算法构造图拉普拉斯矩阵，并利用其若干特征向量把节点映射到低维空间；在这个空间中，原本缠绕或非凸的群体往往更容易被 k-means 等简单方法分开。</p><p>归一化切分等准则使算法同时考虑簇内连接与簇规模，避免只切下很小的孤立区域。谱方法能处理复杂几何结构，但结果依赖相似度图、核宽度和邻居选择，特征分解在大数据上也较昂贵。它建立了聚类、图划分和线性代数之间的重要桥梁。</p>",
+    "en": "<p>Spectral clustering represents samples as a similarity graph: samples are nodes and edge weights express proximity. The algorithm constructs a graph Laplacian and uses several of its eigenvectors to embed the nodes in a lower-dimensional space. Groups that are intertwined or nonconvex in the original coordinates can become separable there by a simple method such as k-means.</p><p>Criteria such as normalized cuts balance within-group connection against cluster size, avoiding solutions that merely detach tiny isolated regions. Spectral methods can capture complex geometry, but results depend on the similarity graph, kernel width, and neighborhood choices, while eigendecomposition can be expensive at large scale. The approach created an important bridge among clustering, graph partitioning, and linear algebra.</p>"
   },
   "emphasis": [
     "batch-migration",

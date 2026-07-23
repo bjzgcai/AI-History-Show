@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>约书亚·特南鲍姆、维恩·德席尔瓦和约翰·兰福德提出 Isomap 用于非线性降维。它构建邻居图，沿图估计测地距离，并嵌入数据以保持全局流形几何。</p>",
-    "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap for nonlinear dimensionality reduction. It builds a neighborhood graph, estimates geodesic distances along that graph, and embeds the data to preserve global manifold geometry.</p>"
+    "zh": "<p>特南鲍姆、德席尔瓦和兰福德在 2000 年提出 Isomap，用于揭示嵌入高维空间中的低维非线性流形。算法先连接每个样本的近邻，形成图结构，再用图上的最短路径近似沿流形表面的测地距离，最后通过经典多维尺度分析寻找保持这些距离的低维坐标。</p><p>与只保持直线距离的线性降维不同，Isomap 能把“瑞士卷”等弯曲结构展开，并努力保存全局几何。若采样过稀、噪声形成错误捷径或流形含有复杂分支，邻居图会失真；但它把图搜索与几何嵌入结合起来，成为流形学习的代表方法。</p>",
+    "en": "<p>Joshua Tenenbaum, Vin de Silva, and John Langford introduced Isomap in 2000 to uncover low-dimensional nonlinear manifolds embedded in high-dimensional space. The algorithm first connects neighboring samples into a graph, uses shortest paths through that graph to approximate geodesic distances along the manifold, and then applies classical multidimensional scaling to find low-dimensional coordinates that preserve those distances.</p><p>Unlike linear reduction based on straight-line distances, Isomap can unfold curved structures such as the “Swiss roll” while attempting to preserve global geometry. Sparse sampling, noise-created shortcuts, or manifolds with complicated branches can distort the neighborhood graph. Even so, its combination of graph search and geometric embedding made it a representative method of manifold learning.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Lead author of Isomap",
         "zh": "Isomap 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

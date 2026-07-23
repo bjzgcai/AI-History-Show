@@ -80,22 +80,22 @@
     "purpose": "implementation"
   },
   {
-    "id": "source-bill-triggs-lear-profile",
+    "id": "source-navneet-dalal-personal-page",
     "type": "personal-page",
     "label": {
       "zh": "个人主页",
       "en": "Personal homepage"
     },
     "title": {
-      "zh": "比尔·特里格斯个人主页",
-      "en": "Bill Triggs personal homepage"
+      "zh": "纳夫尼特·达拉尔个人主页",
+      "en": "Navneet Dalal personal homepage"
     },
-    "url": "https://lear.inrialpes.fr/people/triggs/",
+    "url": "https://sites.google.com/view/navneetdalal/",
     "language": "en",
     "reliability": "primary",
     "notes": {
-      "zh": "INRIA/LEAR 托管的比尔·特里格斯作者主页和肖像来源。",
-      "en": "Bill Triggs author profile and portrait source hosted by INRIA/LEAR."
+      "zh": "达拉尔的官方个人主页，包含其 HOG 研究经历和当前使用的肖像。",
+      "en": "Dalal's official personal homepage, including his HOG research background and current portrait."
     },
     "purpose": "biography"
   }

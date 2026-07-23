@@ -84,8 +84,8 @@
             }
         }
     ],
-    "assetIds": ["asset-2019-muzero-learned-model"],
-    "sourceIds": ["source-nature-paper", "source-arxiv-preprint", "source-deepmind-muzero-blog"],
+    "assetIds": ["asset-david-silver-commons-portrait", "asset-2019-muzero-learned-model"],
+    "sourceIds": ["source-david-silver-commons-portrait", "source-nature-paper", "source-arxiv-preprint", "source-deepmind-muzero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2019-muzero-quiz-1",
     "commentarySections": [
@@ -160,7 +160,7 @@
                 "en": "DeepMind reinforcement learning lead",
                 "zh": "DeepMind 强化学习负责人"
             },
-            "avatar": "",
+            "avatar": "resources/images/figures/authoritative/david-silver.jpg",
             "avatarStyle": "",
             "figureType": "person"
         }

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>CART 为决策树提供了持久的统计形式：递归划分数据、度量不纯度、生成树，再通过剪枝控制过拟合。该方法让模型可以解释为 if-then 路径，同时能处理非线性交互。它成为随机森林、梯度提升和现代树集成方法的基础。</p>",
-    "en": "<p>CART gave decision trees a durable statistical form: recursively split data, measure impurity, grow a tree, and prune it back to control overfitting. The method made models interpretable as if-then paths while still handling nonlinear interactions. It became a foundation for random forests, gradient boosting, and modern tree ensembles.</p>"
+    "zh": "<p>布雷曼、弗里德曼、奥尔申和斯通在 1984 年专著中系统化了分类与回归树。CART 递归选择变量和切分点，使子节点在类别或数值目标上更同质；先生成较大的二叉树，再用代价—复杂度剪枝和验证数据选择更简洁的子树。</p><p>最终模型可以沿 if-then 路径解释，同时自然表达非线性关系、变量交互和不同类型的输出。单棵树可能不稳定，也容易受数据扰动影响，但 CART 的划分与剪枝框架成为随机森林、梯度提升树和许多表格数据系统的基本单元，至今仍连接可解释性与预测能力。</p>",
+    "en": "<p>Leo Breiman, Jerome Friedman, Richard Olshen, and Charles Stone systematized classification and regression trees in their 1984 book. CART recursively chooses variables and split points that make child nodes more homogeneous for categorical or numeric targets. It grows a comparatively large binary tree, then uses cost-complexity pruning and validation data to select a simpler subtree.</p><p>The resulting model can be read as a sequence of if-then decisions while representing nonlinear relationships, interactions, and different output types. Individual trees can be unstable under small data changes, but CART's split-and-prune framework became the basic unit behind random forests, gradient-boosted trees, and many tabular-data systems, continuing to connect interpretability with predictive power.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -127,7 +127,7 @@
         "en": "CART monograph co-author",
         "zh": "CART 专著共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
       "avatarStyle": "",
       "figureType": "person"
     },

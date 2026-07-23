@@ -11,8 +11,8 @@
     "en": "Neural Networks and Connectionism"
   },
   "displayDescription": {
-    "zh": "循环神经网络（RNN）能够处理序列数据，通过引入循环连接保持对历史信息的记忆。1986年，埃尔曼和Jordan分别提出了简单循环神经网络和乔丹网络，引入上下文单元作为显式的\"短期记忆\"单元，开创了循环神经网络的先河。",
-    "en": "Recurrent neural networks process sequences by maintaining memory through recurrent connections. In 1986, Jeffrey Elman and Michael Jordan proposed influential recurrent architectures, establishing key foundations for later language and sequence modeling."
+    "zh": "<p>循环神经网络通过把先前时间步的状态反馈到网络中，使当前输出同时依赖当前输入和历史信息。1986 年，迈克尔·乔丹提出一种把输出状态反馈到上下文单元的序列网络，用内部状态帮助模型学习动作或符号的先后关系。</p><p>1990 年，杰弗里·埃尔曼进一步展示了把隐藏层状态复制到上下文单元的简单循环网络，并用它从连续序列中发现词汇和时间结构。因此，今天常说的 Jordan 网络与 Elman 网络并非同年提出，而是共同确立了早期 RNN 的两种典型反馈方式。这类模型打开了序列学习道路，也暴露了梯度在长时间跨度上传播困难的问题，随后推动了 LSTM 等门控结构的发展。</p>",
+    "en": "<p>Recurrent neural networks feed information from earlier time steps back into the network, allowing the current output to depend on both the present input and an internal history. In 1986, Michael Jordan proposed a sequential network that returned output state to context units, using this internal state to learn the ordering of actions or symbols.</p><p>In 1990, Jeffrey Elman demonstrated a simple recurrent network that copied hidden-layer state into context units and used it to discover lexical and temporal structure in continuous sequences. The Jordan and Elman networks were therefore not introduced in the same year; together they established two influential feedback patterns for early RNNs. They opened a path to sequence learning while also exposing the difficulty of carrying gradients across long spans, motivating later gated designs such as LSTM.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -24,7 +24,8 @@
     "asset-1986-rnn-people-01"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-jordan-serial-order-report",
+    "source-elman-finding-structure-in-time"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -42,7 +43,8 @@
         "en": "The breakthrough in early RNNs was putting historical state explicitly back inside the network. Context units let the model look beyond the current input and compress earlier time steps into an internal memory it could read repeatedly."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-jordan-serial-order-report",
+        "source-elman-finding-structure-in-time"
       ]
     },
     {
@@ -56,7 +58,8 @@
         "en": "They also exposed a long-running problem: sequence modeling was an early idea, but without stable training mechanisms these models struggled to learn long-range dependencies. That line of work was only truly reconnected later through LSTM."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-jordan-serial-order-report",
+        "source-elman-finding-structure-in-time"
       ]
     }
   ],

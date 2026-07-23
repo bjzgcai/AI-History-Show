@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>1955 至 1956 年间，艾伦·纽厄尔、赫伯特·西蒙和 J·C·肖开发了 Logic Theorist，让计算机尝试证明《数学原理》中的命题。系统把公理、定理和变换规则表示为符号结构，再从目标出发搜索可能的证明路径，而不是只进行数值计算。</p><p>它的关键突破是使用启发式规则控制组合爆炸：优先探索更可能成功的变换，并放弃缺乏希望的分支。Logic Theorist 因而成为符号 AI、自动定理证明和认知建模的早期范例，展示了“推理”可以被组织成符号表示、搜索和选择组成的可执行过程。</p>",
+    "en": "<p>Between 1955 and 1956, Allen Newell, Herbert Simon, and J. C. Shaw developed Logic Theorist to prove propositions from <em>Principia Mathematica</em>. The system represented axioms, theorems, and transformation rules as symbolic structures, then searched backward from a goal for possible proof paths instead of performing only numerical calculation.</p><p>Its crucial step was using heuristics to manage combinatorial growth: explore transformations that appeared more promising and abandon unproductive branches. Logic Theorist became an early model for symbolic AI, automated theorem proving, and cognitive simulation, showing that “reasoning” could be implemented as an executable process combining representation, search, and selective choice.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"
@@ -106,7 +110,7 @@
         "en": "Logic Theorist co-creator",
         "zh": "Logic Theorist 共同创建者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

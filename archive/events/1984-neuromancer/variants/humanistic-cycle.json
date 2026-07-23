@@ -47,8 +47,12 @@
             }
         }
     ],
-    "assetIds": ["asset-1984-neuromancer-ai-containment"],
+    "assetIds": [
+        "asset-1984-neuromancer-william-gibson",
+        "asset-1984-neuromancer-ai-containment"
+    ],
     "sourceIds": [
+        "source-william-gibson-commons-portrait",
         "source-open-library-book-metadata",
         "source-open-library-metadata-search-result",
         "source-science-fiction-encyclopedia-gibson",

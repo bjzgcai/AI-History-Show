@@ -42,6 +42,7 @@
         "zh": "GAN 主要作者",
         "en": "GAN lead author"
       },
+      "avatar": "resources/images/figures/ian-goodfellow.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "GAN 共同作者与导师",
         "en": "GAN co-author and advisor"
       },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
       "organizationIds": []
     }
   ],

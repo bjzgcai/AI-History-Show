@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>潜在狄利克雷分配为主题模型提供了清晰的概率形式。文档是主题的混合，主题是词的分布，推断过程估计生成可见文本的隐藏结构。LDA 成为探索性文本分析和概率机器学习教学中的标准模型。</p>",
-    "en": "<p>Latent Dirichlet Allocation gave topic modeling a clean probabilistic form. Documents are mixtures of topics, topics are distributions over words, and inference estimates the hidden structure that produced observed text. LDA became a standard model for exploratory text analysis and probabilistic machine learning education.</p>"
+    "zh": "<p>潜在狄利克雷分配在 2003 年为主题模型建立了清晰的生成式概率框架。每篇文档被表示为多个主题的不同比例混合，每个主题又是词汇表上的概率分布；狄利克雷先验约束这些混合，而推断算法根据观察到的词反推隐藏主题和每个词的主题归属。</p><p>LDA 让研究者能够在没有逐篇主题标签的情况下探索大型文档集合，并成为概率图模型、变分推断和贝叶斯文本分析的经典教学案例。它采用词袋假设，忽略词序，主题也不一定自动对应人类概念，因此结果需要谨慎解释；但其“用隐藏变量解释可见文本”的方法影响深远。</p>",
+    "en": "<p>Latent Dirichlet Allocation gave topic modeling a clear generative probabilistic framework in 2003. Each document is represented as a different mixture of topics, and each topic is a probability distribution over the vocabulary. Dirichlet priors shape those mixtures, while inference algorithms work backward from observed words to estimate the hidden topics and each word's topic assignment.</p><p>LDA allowed researchers to explore large document collections without assigning a topic label to every text and became a standard teaching example for probabilistic graphical models, variational inference, and Bayesian text analysis. Its bag-of-words assumption ignores word order, and inferred topics do not automatically correspond to human concepts, so interpretation requires care. The broader method of explaining visible text through latent variables remained highly influential.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "First author of LDA",
         "zh": "LDA 第一作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

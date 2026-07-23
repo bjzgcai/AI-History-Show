@@ -58,5 +58,25 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "implementation"
+  },
+  {
+    "id": "source-tero-karras-github-profile",
+    "type": "personal-page",
+    "label": {
+      "zh": "个人主页",
+      "en": "Personal homepage"
+    },
+    "title": {
+      "zh": "特罗·卡拉斯 GitHub 主页",
+      "en": "Tero Karras GitHub profile"
+    },
+    "url": "https://github.com/tkarras",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "作者本人账号，列出其姓名、NVIDIA 研究经历和 StyleGAN 相关代码仓库。",
+      "en": "The author's own account, listing his name, NVIDIA research affiliation, and StyleGAN-related repositories."
+    },
+    "purpose": "biography"
   }
 ]

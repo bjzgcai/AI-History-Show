@@ -1,17 +1,77 @@
 [
   {
+    "id": "source-dartmouth-proposal",
+    "type": "archive",
+    "title": {
+      "zh": "《达特茅斯夏季人工智能研究项目提案》",
+      "en": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence"
+    },
+    "url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "约翰·麦卡锡档案保存的 1955 年原始提案文本，列明项目组织者、研究设想与七项研究议题。",
+      "en": "The original 1955 proposal preserved in John McCarthy's archive, naming the organizers, central conjecture, and seven research topics."
+    },
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-dartmouth-history",
+    "type": "official-page",
+    "title": {
+      "zh": "人工智能在达特茅斯得名",
+      "en": "Artificial Intelligence (AI) Coined at Dartmouth"
+    },
+    "url": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "达特茅斯学院关于 1956 年夏季研究项目及其学科历史地位的官方档案页面。",
+      "en": "Dartmouth College's official history page on the 1956 summer research project and its place in the field's history."
+    },
+    "label": {
+      "zh": "机构页面",
+      "en": "Institution page"
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-ieee-dartmouth-workshop",
+    "type": "article",
+    "title": {
+      "zh": "开启人工智能的思想聚会",
+      "en": "The Meeting of the Minds That Launched AI"
+    },
+    "url": "https://spectrum.ieee.org/dartmouth-ai-workshop",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "IEEE Spectrum 对 1956 年研讨会参与者、现场活动和后续影响的历史梳理。",
+      "en": "An IEEE Spectrum historical account of the workshop's participants, activities, and later significance."
+    },
+    "label": {
+      "zh": "文章",
+      "en": "Article"
+    },
+    "purpose": "historical-context"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {
-      "zh": "Legacy event record for 1956-dartmouth",
+      "zh": "1956 年达特茅斯事件迁移记录",
       "en": "Legacy event record for 1956-dartmouth"
     },
     "url": "https://www.benchcouncil.org/",
     "language": "en",
     "reliability": "reference-only",
     "notes": {
-      "zh": "由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。",
-      "en": "Temporary source placeholder generated from the legacy event record; add primary papers or original sources later."
+      "zh": "仅保留用于既有图片资源的迁移溯源，不作为正文事实依据或页面展示来源。",
+      "en": "Retained only for migrated image provenance; it is not used as evidence for the body copy or as a displayed source."
     },
     "label": {
       "zh": "内部记录",

@@ -11,8 +11,8 @@
     "en": "Large Models and Scientific Intelligence"
   },
   "displayDescription": {
-    "zh": "<p>2018年，OpenAI 的亚历克·拉德福德及同事提出第一代生成式预训练 Transformer，在大规模无标注文本上训练解码器式语言模型，再适配下游任务。融合后的叙事保留深度学习发展线中 GPT 与 BERT 的对照，同时使用 AI100 结构解释 GPT 如何成为后来 GPT-2、GPT-3、ChatGPT 和现代大语言模型的解码器式规模化路线起点。</p>",
-    "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the first Generative Pre-trained Transformer, training a decoder-only language model on large unlabeled text and adapting it to downstream tasks. The fused account keeps the deep-learning storyline's contrast with BERT, but uses the AI100 structure to explain GPT as the beginning of the decoder-only scaling line that later led to GPT-2, GPT-3, ChatGPT, and modern language models.</p>"
+    "zh": "<p>2018 年，OpenAI 的亚历克·拉德福德等人提出生成式预训练 Transformer。模型先在大规模无标注文本上按照从左到右预测下一个词的目标训练，再用少量任务标注数据微调，从而把通用语言知识迁移到分类、问答、文本蕴含等不同任务。</p><p>论文使用以 Transformer 解码器为基础的统一架构，在 12 项任务中的多数项目上取得当时有竞争力的结果。GPT 证明生成式语言建模可以充当通用预训练目标，并开启了持续扩大模型、数据和计算规模的解码器路线，后来发展出 GPT-2、GPT-3 及现代大语言模型。</p>",
+    "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the Generative Pre-trained Transformer. The model first learned from large amounts of unlabeled text by predicting the next word from left to right, then transferred that general language knowledge to classification, question answering, textual entailment, and other tasks through supervised fine-tuning.</p><p>The paper used one Transformer-decoder-based architecture and reported competitive results on most of twelve evaluated tasks. GPT showed that generative language modeling could serve as a general pre-training objective. It opened the decoder-only scaling path in which models, data, and compute continued to grow, leading to GPT-2, GPT-3, and modern large language models.</p>"
   },
   "emphasis": [
     "batch-migration",

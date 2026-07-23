@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Q-learning 为强化学习提供了一个简单的离策略规则，用延迟奖励学习动作价值。它把收集经验的行为策略与由 Q 值隐含的贪心策略分开。</p>",
-    "en": "<p>Q-learning gave reinforcement learning a simple off-policy rule for learning action values from delayed rewards. It separates the behavior used to collect experience from the greedy policy implied by learned Q values.</p>"
+    "zh": "<p>克里斯·沃特金斯在 1989 年博士论文中提出 Q-learning，直接学习状态—动作价值 Q(s,a)。每次转移后，算法把当前估计向“即时奖励 + 下一状态最大 Q 值”更新，不需要已知环境模型；采取探索动作的行为策略可以与最终由 Q 值定义的贪心目标策略不同。</p><p>在有限表格环境、充分探索和合适学习率等条件下，Q-learning 可收敛到最优动作价值。它成为离策略强化学习的经典基础，并最终与深度网络结合形成 DQN。函数逼近、自举和离策略数据同时出现时可能不稳定，最大操作还会造成过估计，但其更新规则仍是强化学习的核心范式。</p>",
+    "en": "<p>Chris Watkins introduced Q-learning in his 1989 doctoral thesis to learn the state-action value Q(s,a) directly. After each transition, the algorithm moves the current estimate toward the immediate reward plus the maximum Q value in the next state, requiring no known model of the environment. The behavior policy used to explore can differ from the greedy target policy implied by the learned Q values.</p><p>In finite tabular settings with sufficient exploration and suitable learning rates, Q-learning can converge to optimal action values. It became the classic foundation for off-policy reinforcement learning and later combined with deep networks in DQN. Function approximation, bootstrapping, and off-policy data can create instability together, while the maximum operator can overestimate values. Its update rule nevertheless remains a central reinforcement-learning pattern.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -129,7 +129,7 @@
         "en": "Q-learning lead author",
         "zh": "Q-learning 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

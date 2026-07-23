@@ -11,7 +11,7 @@
     },
     "emphasis": ["deep-learning-expansion", "reinforcement-learning", "search-system"],
     "visual": "decision-system-demo",
-    "assetIds": ["asset-alphago-policy-value-search"],
-    "sourceIds": ["source-alphago-nature-paper"],
+    "assetIds": ["asset-david-silver-commons-portrait", "asset-alphago-policy-value-search"],
+    "sourceIds": ["source-david-silver-commons-portrait", "source-alphago-nature-paper"],
     "claimIds": ["claim-hybrid-policy-value-search", "claim-self-play-legacy"]
 }

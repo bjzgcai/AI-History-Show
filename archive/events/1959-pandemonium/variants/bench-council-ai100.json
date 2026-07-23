@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Pandemonium 把感知描述为简单特征检测器与高层模式识别器之间的分层竞争。它用带噪声的分布式投票隐喻，预示了后来的集成识别、黑板式系统和分层模式处理思想。</p>",
-    "en": "<p>Pandemonium described perception as a layered competition among simple feature detectors and higher-level pattern recognizers. Its noisy, distributed voting metaphor anticipated later ideas in ensemble recognition, blackboard-style systems, and layered pattern processing.</p>"
+    "zh": "<p>奥利弗·塞尔弗里奇在 1959 年用“群魔殿”描述一种分层模式识别系统。最底层的“图像魔鬼”接收输入，特征魔鬼寻找线条、角度等局部线索，认知魔鬼把这些线索组合成候选模式；最上层的决策者根据谁“喊得最响”选择识别结果。</p><p>这个拟人化隐喻强调复杂感知可以由许多简单、并行且相互竞争的单元产生，而不必依赖单一中央规则。原始系统仍较粗糙，但分层特征、分布式证据和竞争性决策的思想影响了后来的模式识别、黑板系统和集成方法，也预示了神经网络中的层级表示。</p>",
+    "en": "<p>Oliver Selfridge described Pandemonium in 1959 as a layered pattern-recognition system. “Image demons” receive the input, feature demons detect local evidence such as lines and angles, cognitive demons combine those features into candidate patterns, and a decision demon chooses the interpretation whose advocates “shout” most strongly.</p><p>The anthropomorphic metaphor emphasized that complex perception could emerge from many simple, parallel, competing units rather than one central rule. The original implementation was limited, but its hierarchy of features, distributed evidence, and competitive decision-making influenced later pattern recognition, blackboard systems, and ensemble methods. It also anticipated the broader idea of layered representations in neural computation.</p>"
   },
   "emphasis": [
     "batch-migration",

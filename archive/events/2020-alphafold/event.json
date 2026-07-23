@@ -42,6 +42,7 @@
         "zh": "AlphaFold2 主要研究者",
         "en": "AlphaFold2 lead researcher"
       },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "DeepMind 联合创始人与 AlphaFold 负责人",
         "en": "DeepMind co-founder and AlphaFold leader"
       },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
       "organizationIds": []
     }
   ],

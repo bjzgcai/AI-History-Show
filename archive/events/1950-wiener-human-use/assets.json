@@ -1,5 +1,37 @@
 [
   {
+    "id": "asset-1950-wiener-human-use-norbert-wiener",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1950-wiener-human-use_norbert-wiener.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "诺伯特·维纳肖像",
+      "en": "Norbert Wiener portrait"
+    },
+    "subcaption": {
+      "zh": "控制论奠基者，《人有人的用处》作者。",
+      "en": "Founder of cybernetics and author of The Human Use of Human Beings."
+    },
+    "sourceId": "source-norbert-wiener-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+        "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1950-wiener-human-use-feedback-warning",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1950-wiener-human-use_feedback-warning.svg",

@@ -1,166 +1,163 @@
 {
-  "storylineId": "deep-learning",
-  "eventId": "2025-llm-competition",
-  "presentationMode": "preserve-legacy",
-  "displayTitle": {
-    "zh": "大语言模型百花齐放",
-    "en": "A Flourishing Competition Among Large Language Models"
-  },
-  "displaySummary": {
-    "zh": "大模型与科学智能",
-    "en": "Large Models and Scientific Intelligence"
-  },
-  "displayDescription": {
-    "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
-    "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
-  },
-  "emphasis": [
-    "batch-migration",
-    "source-review-needed"
-  ],
-  "visualModules": [],
-  "assetIds": [
-    "asset-2025-llm-competition-historical-01",
-    "asset-2025-llm-competition-architecture-01",
-    "asset-2025-llm-competition-historical-02",
-    "asset-2025-llm-competition-historical-03"
-  ],
-  "sourceIds": [
-    "source-legacy-event-record"
-  ],
-  "claimIds": [
-    "claim-legacy-achievement-summary",
-    "claim-legacy-description"
-  ],
-  "commentarySections": [
-    {
-      "id": "background",
-      "label": {
-        "zh": "背景解读",
-        "en": "Background"
-      },
-      "html": {
-        "zh": "大模型竞争的可见化，越来越依赖“活榜单”而不是单次论文成绩：用户偏好投票、公开对战与频繁更新，让模型比较从实验室内部评测走向持续的公共观察。",
-        "en": "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation."
-      },
-      "sourceIds": [
+    "storylineId": "deep-learning",
+    "eventId": "2025-llm-competition",
+    "presentationMode": "preserve-legacy",
+    "displayTitle": {
+        "zh": "大语言模型百花齐放",
+        "en": "A Flourishing Competition Among Large Language Models"
+    },
+    "displaySummary": {
+        "zh": "大模型与科学智能",
+        "en": "Large Models and Scientific Intelligence"
+    },
+    "displayDescription": {
+        "zh": "<p>到 2025 年，大语言模型竞争已不再由一项静态基准或单一模型定义。Chatbot Arena（后发展为 LMArena）让用户在不知道模型身份的情况下，对同一提示的两个回答进行成对选择，再用统计方法汇总偏好。这种公开、持续更新的人类评测，使闭源与开放权重模型家族能够在真实交互中并列比较。</p><p>竞争也从文本生成扩展到推理、多模态、代码、工具使用、响应延迟、成本与部署自由度。Stanford《2025 AI Index》记录了前沿性能继续提高、模型间差距缩小以及推理成本快速下降，但活榜单并非永久结论：结果会受到用户群体、提示分布、回答风格和评测方法影响。因此，这一节点更代表多条技术与产品路线同时竞逐，而不是宣布某个模型固定领先。</p>",
+        "en": "<p>By 2025, LLM competition was no longer defined by one static benchmark or one dominant model. Chatbot Arena, later developed as LMArena, showed users two anonymous answers to the same prompt, collected pairwise preferences, and aggregated them statistically. This live human evaluation allowed proprietary and open-weight model families to be compared through real interactions.</p><p>Competition broadened across reasoning, multimodality, coding, tool use, latency, cost, and deployment freedom. Stanford's <em>2025 AI Index</em> documented improving frontier performance, narrowing gaps, and sharply falling inference costs. Yet a live leaderboard is not a permanent verdict: results depend on its users, prompts, response style, and evaluation method. The milestone therefore marks several technical and product strategies competing at once, not a fixed winner.</p>"
+    },
+    "emphasis": ["batch-migration", "source-review-needed"],
+    "visualModules": [],
+    "assetIds": [
+        "asset-2025-llm-competition-lianmin-zheng",
+        "asset-2025-llm-competition-historical-01",
+        "asset-2025-llm-competition-architecture-01",
+        "asset-2025-llm-competition-historical-02",
+        "asset-2025-llm-competition-historical-03"
+    ],
+    "sourceIds": [
+        "source-lianmin-zheng-personal-page",
+        "source-lmsys-chatbot-arena-introduction",
+        "source-chatbot-arena-paper",
+        "source-lmarena-official",
+        "source-stanford-ai-index-2025",
         "source-legacy-event-record"
-      ]
+    ],
+    "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
+    "commentarySections": [
+        {
+            "id": "background",
+            "label": {
+                "zh": "背景解读",
+                "en": "Background"
+            },
+            "html": {
+                "zh": "大模型竞争的可见化，越来越依赖“活榜单”而不是单次论文成绩：用户偏好投票、公开对战与频繁更新，让模型比较从实验室内部评测走向持续的公共观察。",
+                "en": "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation."
+            },
+            "sourceIds": ["source-chatbot-arena-paper", "source-lmarena-official"]
+        },
+        {
+            "id": "context",
+            "label": {
+                "zh": "延展说明",
+                "en": "Context"
+            },
+            "html": {
+                "zh": "这类排行榜的价值，不只在于告诉人们谁排第一，更在于暴露模型差异正在从“通用能力平均值”转向“风格、稳定性、推理链与工具化能力”的组合竞争。",
+                "en": "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability."
+            },
+            "sourceIds": ["source-chatbot-arena-paper", "source-lmarena-official", "source-stanford-ai-index-2025"]
+        }
+    ],
+    "review": {
+        "status": "draft",
+        "notes": {
+            "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
+            "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
+        }
     },
-    {
-      "id": "context",
-      "label": {
-        "zh": "延展说明",
-        "en": "Context"
-      },
-      "html": {
-        "zh": "这类排行榜的价值，不只在于告诉人们谁排第一，更在于暴露模型差异正在从“通用能力平均值”转向“风格、稳定性、推理链与工具化能力”的组合竞争。",
-        "en": "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability."
-      },
-      "sourceIds": [
-        "source-legacy-event-record"
-      ]
+    "category": {
+        "en": "Large Models and Scientific Intelligence",
+        "zh": "大模型与科学智能"
+    },
+    "figures": [
+        {
+            "name": {
+                "en": "Lianmin Zheng",
+                "zh": "郑廉民"
+            },
+            "role": {
+                "en": "Co-creator of Chatbot Arena / LMArena",
+                "zh": "Chatbot Arena / LMArena 共同创建者"
+            },
+            "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Research Institutions",
+                "zh": "研究机构"
+            },
+            "role": {
+                "en": "Leading-edge model R&D organization",
+                "zh": "前沿模型研发机构"
+            },
+            "avatar": "resources/images/figures/research-institution.png",
+            "avatarStyle": "",
+            "figureType": "team"
+        }
+    ],
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+    "resources": {
+        "videos": [
+            {
+                "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+                "url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+                "embed_url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
+                "title": "2025新AI竞技场：我们如何评判最强AI",
+                "channel": "",
+                "duration": "",
+                "thumbnail": "",
+                "source": "Web"
+            }
+        ]
+    },
+    "quote": {
+        "en": "\"Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.\"",
+        "zh": "\"Chatbot Arena 引入了面向语言模型的大规模人类偏好评测，使公开模型比较成为大语言模型生态中可见的一部分。\""
+    },
+    "quoteMeta": {
+        "speaker": {
+            "en": "Wei-Lin Chiang et al.",
+            "zh": "蒋维霖等"
+        },
+        "workTitle": {
+            "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+            "zh": "Chatbot Arena：基于人类偏好评估大语言模型的开放平台"
+        },
+        "workAuthors": {
+            "en": "LMSYS / LMArena team, arXiv, 2024",
+            "zh": "LMSYS / LMArena 团队，arXiv，2024"
+        },
+        "sourceLabel": {
+            "en": "Chatbot Arena arXiv paper page",
+            "zh": "Chatbot Arena arXiv 论文页面"
+        },
+        "sourceUrl": "https://arxiv.org/abs/2403.04132"
+    },
+    "quotePage": {
+        "en": "Chatbot Arena paper and LMArena public leaderboard",
+        "zh": "Chatbot Arena 论文与 LMArena 公开排行榜"
+    },
+    "quoteAttribution": {
+        "en": "<em>Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference</em>, LMSYS / LMArena team, arXiv, 2024",
+        "zh": "《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等"
+    },
+    "location": {
+        "name": {
+            "en": "Global AI Industry",
+            "zh": "全球研究"
+        },
+        "country": {
+            "en": "Global",
+            "zh": "美国 / 中国"
+        },
+        "coordinates": [
+            [37.7749, -122.4194],
+            [37.422, -122.0841],
+            [39.9042, 116.4074],
+            [30.2741, 120.1551]
+        ]
     }
-  ],
-  "review": {
-    "status": "draft",
-    "notes": {
-      "zh": "由 legacy generated milestone 批量生成的 variant；展示层默认不覆盖 legacy。",
-      "en": "Variant batch-generated from the generated legacy milestone; presentation does not override legacy by default."
-    }
-  },
-  "category": {
-    "en": "Large Models and Scientific Intelligence",
-    "zh": "大模型与科学智能"
-  },
-  "figures": [
-    {
-      "name": {
-        "en": "Research Institutions",
-        "zh": "研究机构"
-      },
-      "role": {
-        "en": "Leading-edge model R&D organization",
-        "zh": "前沿模型研发机构"
-      },
-      "avatar": "resources/images/figures/research-institution.png",
-      "avatarStyle": "",
-      "figureType": "team"
-    }
-  ],
-  "photos": [],
-  "videoUrl": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
-  "resources": {
-    "videos": [
-      {
-        "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
-        "url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
-        "embed_url": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
-        "title": "2025新AI竞技场：我们如何评判最强AI",
-        "channel": "",
-        "duration": "",
-        "thumbnail": "",
-        "source": "Web"
-      }
-    ]
-  },
-  "quote": {
-    "en": "\"Chatbot Arena introduced large-scale human-preference evaluation for language models, making public model comparison a visible part of the LLM ecosystem.\"",
-    "zh": "\"Chatbot Arena 引入了面向语言模型的大规模人类偏好评测，使公开模型比较成为大语言模型生态中可见的一部分。\""
-  },
-  "quoteMeta": {
-    "speaker": {
-      "en": "Wei-Lin Chiang et al.",
-      "zh": "蒋维霖等"
-    },
-    "workTitle": {
-      "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
-      "zh": "Chatbot Arena：基于人类偏好评估大语言模型的开放平台"
-    },
-    "workAuthors": {
-      "en": "LMSYS / LMArena team, arXiv, 2024",
-      "zh": "LMSYS / LMArena 团队，arXiv，2024"
-    },
-    "sourceLabel": {
-      "en": "Chatbot Arena arXiv paper page",
-      "zh": "Chatbot Arena arXiv 论文页面"
-    },
-    "sourceUrl": "https://arxiv.org/abs/2403.04132"
-  },
-  "quotePage": {
-    "en": "Chatbot Arena paper and LMArena public leaderboard",
-    "zh": "Chatbot Arena 论文与 LMArena 公开排行榜"
-  },
-  "quoteAttribution": {
-    "en": "<em>Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference</em>, LMSYS / LMArena team, arXiv, 2024",
-    "zh": "《Chatbot Arena：基于人类偏好的大语言模型开放评测平台》，蒋维霖等"
-  },
-  "location": {
-    "name": {
-      "en": "Global AI Industry",
-      "zh": "全球研究"
-    },
-    "country": {
-      "en": "Global",
-      "zh": "美国 / 中国"
-    },
-    "coordinates": [
-      [
-        37.7749,
-        -122.4194
-      ],
-      [
-        37.422,
-        -122.0841
-      ],
-      [
-        39.9042,
-        116.4074
-      ],
-      [
-        30.2741,
-        120.1551
-      ]
-    ]
-  }
 }

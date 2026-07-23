@@ -45,6 +45,7 @@
         "zh": "Transformer 论文共同作者",
         "en": "Transformer paper co-author"
       },
+      "avatar": "resources/images/figures/ashish-vaswani.jpg",
       "organizationIds": [
         "google-brain"
       ]

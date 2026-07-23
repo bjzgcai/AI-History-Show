@@ -47,8 +47,12 @@
             }
         }
     ],
-    "assetIds": ["asset-1920-rur-robots-labor-revolt"],
+    "assetIds": [
+        "asset-1920-rur-robots-karel-capek",
+        "asset-1920-rur-robots-labor-revolt"
+    ],
     "sourceIds": [
+        "source-karel-capek-commons-portrait",
         "source-project-gutenberg-r-u-r-text",
         "source-1920-czech-edition-scan",
         "source-r-u-r-publication-and-word-history-overview",

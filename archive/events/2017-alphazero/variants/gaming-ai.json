@@ -84,8 +84,8 @@
             }
         }
     ],
-    "assetIds": ["asset-2017-alphazero-self-play-loop"],
-    "sourceIds": ["source-science-paper", "source-arxiv-preprint", "source-deepmind-alphazero-blog"],
+    "assetIds": ["asset-david-silver-commons-portrait", "asset-2017-alphazero-self-play-loop"],
+    "sourceIds": ["source-david-silver-commons-portrait", "source-science-paper", "source-arxiv-preprint", "source-deepmind-alphazero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2017-alphazero-quiz-1",
     "commentarySections": [
@@ -147,7 +147,7 @@
                 "en": "DeepMind reinforcement learning lead",
                 "zh": "DeepMind 强化学习负责人"
             },
-            "avatar": "",
+            "avatar": "resources/images/figures/authoritative/david-silver.jpg",
             "avatarStyle": "",
             "figureType": "person"
         },

@@ -78,5 +78,25 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "alternate-access"
+  },
+  {
+    "id": "source-michael-buro-university-profile",
+    "type": "personal-page",
+    "label": {
+      "zh": "个人主页",
+      "en": "Personal homepage"
+    },
+    "title": {
+      "zh": "迈克尔·布罗阿尔伯塔大学主页",
+      "en": "Michael Buro University of Alberta homepage"
+    },
+    "url": "https://webdocs.cs.ualberta.ca/~mburo/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "阿尔伯塔大学托管的本人主页与头像；页面未声明图片再分发许可。",
+      "en": "University of Alberta-hosted personal homepage and portrait; image redistribution rights are not stated."
+    },
+    "purpose": "biography"
   }
 ]

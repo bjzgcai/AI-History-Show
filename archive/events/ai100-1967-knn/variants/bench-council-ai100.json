@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>托马斯·科弗和彼得·哈特形式化了最近邻模式分类，说明已标注样本如何通过局部距离支持非参数分类。这个结果使基于实例的学习成为模式识别和机器学习中的长期基线。</p>",
-    "en": "<p>Thomas Cover and Peter Hart formalized nearest-neighbor pattern classification, showing how labeled examples could support nonparametric classification by local proximity. The result made instance-based learning a durable baseline for pattern recognition and machine learning.</p>"
+    "zh": "<p>科弗和哈特在 1967 年系统分析最近邻分类：面对新样本，算法不先拟合参数模型，而是在保存的训练集中寻找距离最近的已标注样本，并用其类别作出预测。k 近邻扩展则让多个邻居投票或按距离加权，从而降低单个样本噪声的影响。</p><p>这种“记住实例、查询时比较”的方法几乎没有训练成本，并能形成复杂的非线性决策边界，因此成为模式识别的持久基线。预测成本会随数据量增加，高维空间中的距离也可能失去意义；特征缩放、距离度量和 k 值选择都至关重要。它清楚体现了局部相似性学习的力量与限制。</p>",
+    "en": "<p>Thomas Cover and Peter Hart systematically analyzed nearest-neighbor classification in 1967. For a new sample, the method fits no parametric model in advance; it searches the stored training set for the closest labeled example and predicts its class. The k-nearest-neighbors extension lets several nearby examples vote or contribute with distance-based weights, reducing sensitivity to one noisy sample.</p><p>This “remember examples and compare at query time” strategy has almost no training cost and can form complex nonlinear decision boundaries, making it a durable pattern-recognition baseline. Prediction becomes more expensive as data grows, and distance can lose meaning in high dimensions. Feature scaling, the distance metric, and the choice of k are therefore crucial. The method clearly exposes both the power and limits of local similarity learning.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -131,7 +131,7 @@
         "en": "Co-author of nearest-neighbor classification",
         "zh": "最近邻分类共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

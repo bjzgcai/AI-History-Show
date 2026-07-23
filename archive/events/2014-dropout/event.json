@@ -42,6 +42,7 @@
         "zh": "《机器学习研究杂志》 Dropout 论文第一作者",
         "en": "First author of the JMLR dropout paper"
       },
+      "avatar": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "共同作者，深度学习先驱",
         "en": "Co-author and deep learning pioneer"
       },
+      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
       "organizationIds": []
     }
   ],

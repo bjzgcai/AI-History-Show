@@ -42,6 +42,7 @@
         "zh": "DQN 工作第一作者",
         "en": "First author of DQN work"
       },
+      "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "DeepMind 强化学习研究者",
         "en": "DeepMind reinforcement learning researcher"
       },
+      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
       "organizationIds": []
     }
   ],

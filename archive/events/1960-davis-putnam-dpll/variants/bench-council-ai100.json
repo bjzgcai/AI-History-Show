@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>戴维斯与普特南在 1960 年提出面向量词理论和布尔可满足性问题的计算过程；1962 年，戴维斯、洛格曼和洛夫兰将其发展为后来称作 DPLL 的机器程序。前者通过消去变量变换子句集合，后者以分支搜索配合单元传播等简化规则判断公式是否可满足。</p><p>DPLL 把逻辑推理组织成一棵可剪枝的搜索树：选择变量赋值，传播由此被迫确定的结果，在出现矛盾时回溯。现代 SAT 求解器又加入子句学习、重启和更强启发式，但搜索与传播的基本框架仍源于这条路线，并广泛服务于验证、规划、配置和约束求解。</p>",
+    "en": "<p>Martin Davis and Hilary Putnam introduced a computational procedure for quantification theory and Boolean satisfiability in 1960. In 1962, Davis, George Logemann, and Donald Loveland developed the machine program later known as DPLL. The earlier method transformed clause sets through variable elimination, while DPLL combined branching search with simplifications such as unit propagation.</p><p>DPLL organized logical reasoning as a prunable search tree: choose a variable assignment, propagate consequences forced by it, and backtrack when a contradiction appears. Modern SAT solvers add clause learning, restarts, watched literals, and stronger heuristics, but their basic search-and-propagate structure descends from this work and remains important in verification, planning, configuration, and constraint solving.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"
@@ -106,7 +110,7 @@
         "en": "1960 DP paper co-author",
         "zh": "共同撰写 1960 年 Davis-Putnam 过程论文"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1960-davis-putnam-dpll_hilary-putnam.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

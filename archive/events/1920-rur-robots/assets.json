@@ -1,5 +1,37 @@
 [
   {
+    "id": "asset-1920-rur-robots-karel-capek",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1920-rur-robots_karel-capek.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "卡雷尔·恰佩克肖像",
+      "en": "Karel Capek portrait"
+    },
+    "subcaption": {
+      "zh": "《罗素姆的万能机器人》作者。",
+      "en": "Playwright of R.U.R."
+    },
+    "sourceId": "source-karel-capek-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+        "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_%C4%8Capek.jpg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1920-rur-robots-labor-revolt",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1920-rur-robots_labor-revolt.svg",

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>归结方法把一阶定理证明变成统一的反驳过程：把命题转为子句，否定目标，再推出矛盾。Robinson 将归结与合一结合起来，让自动证明器获得一种可系统实现的紧凑规则。它后来成为逻辑程序设计、SAT/SMT 谱系以及许多推理系统的基础。</p>",
-    "en": "<p>Resolution turned first-order theorem proving into a uniform refutation procedure: translate statements into clauses, negate the target, and derive a contradiction. Robinson combined resolution with unification, giving automated provers a compact rule that could be implemented systematically. It became a foundation for logic programming, SAT/SMT lineage, and many later reasoning systems.</p>"
+    "zh": "<p>J·艾伦·罗宾逊在 1965 年提出面向机器的一阶逻辑归结方法。证明时先把前提和被否定的结论转换为子句，再寻找含有互补文字的子句；合一算法计算使相关项匹配的变量替换，归结规则据此生成新子句，直到推出代表矛盾的空子句。</p><p>这种反驳式方法用一套统一规则取代许多专门推理步骤，并具备适合自动化的重要完备性性质。实际系统仍需要索引、搜索策略和启发式方法控制组合增长，但归结与合一成为自动定理证明、逻辑程序设计及后续 SAT/SMT 推理谱系的基础概念。</p>",
+    "en": "<p>J. Alan Robinson introduced a machine-oriented resolution method for first-order logic in 1965. A proof converts the premises and negated conclusion into clauses, then finds clauses containing complementary literals. Unification computes substitutions that make relevant terms match, allowing the resolution rule to derive a new clause until the empty clause represents a contradiction.</p><p>This refutation method replaced many specialized inference steps with a uniform rule and provided an important completeness property for automation. Practical systems still require indexing, search strategies, and heuristics to manage combinatorial growth, but resolution and unification became foundational concepts in automated theorem proving, logic programming, and later SAT/SMT reasoning lineages.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Inventor of the resolution principle",
         "zh": "归结原理提出者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

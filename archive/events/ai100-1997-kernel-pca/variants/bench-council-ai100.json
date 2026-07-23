@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>伯恩哈德·舍尔科普夫、亚历山大·斯莫拉和克劳斯-罗伯特·穆勒证明 PCA 可以通过隐式特征空间中的特征值问题进行核化。Kernel PCA 使非线性结构可以通过成对相似性来处理。</p>",
-    "en": "<p>Bernhard Scholkopf, Alexander Smola, and Klaus-Robert Muller showed that PCA could be kernelized by solving an eigenvalue problem in an implicit feature space. Kernel PCA made nonlinear structure accessible through pairwise similarities.</p>"
+    "zh": "<p>舍尔科普夫、斯莫拉和穆勒把核技巧应用到主成分分析：先用核函数计算样本间相似度，等价于把数据映射到可能非常高维的特征空间，再对中心化核矩阵求特征向量，而无需显式写出该空间坐标。</p><p>普通 PCA 只能寻找原始坐标中的线性方向，Kernel PCA 则能把弯曲流形或非线性变化展开为主要成分，用于降维、去噪和特征提取。结果高度依赖核函数及其参数，计算和存储还会随样本数量增长；但它清楚展示了核方法如何把线性算法扩展到非线性结构。</p>",
+    "en": "<p>Bernhard Schölkopf, Alexander Smola, and Klaus-Robert Müller applied the kernel trick to principal component analysis. A kernel function first computes similarities among samples, equivalent to mapping the data into a potentially very high-dimensional feature space. Eigenvectors are then obtained from the centered kernel matrix without explicitly constructing coordinates in that space.</p><p>Ordinary PCA finds only linear directions in the original coordinates, while Kernel PCA can unfold curved manifolds or nonlinear variation into principal components for dimensionality reduction, denoising, and feature extraction. Results depend strongly on the kernel and its parameters, and computation and storage grow with the number of samples. The method clearly demonstrated how kernels could extend a linear algorithm to nonlinear structure.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Co-author of Kernel PCA",
         "zh": "Kernel PCA 共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1997-kernel-pca/bernhard-scholkopf-portrait.png",
       "avatarStyle": "",
       "figureType": "person"
     },
