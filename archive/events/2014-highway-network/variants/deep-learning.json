@@ -11,8 +11,8 @@
         "en": "Deep Learning and Unified Paradigms"
     },
     "displayDescription": {
-        "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-        "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+        "zh": "<p>2015 年公开的 Highway Networks 论文为普通前馈层增加变换门和通行门。网络可以选择对输入执行非线性变换，也可以让信息近似原样通过；这些门由数据学习，而不是由设计者固定，从而为梯度和特征提供跨越多层的直接路径。</p><p>作者展示了数百层、甚至实验中达到上千层的前馈网络可以用随机梯度下降训练。门控捷径增加了一定计算成本，却证明“让信息绕过不必要变换”能够解决深层优化困难。随后 ResNet 去掉可学习门控，采用更简洁的恒等快捷连接，把这一思路推向计算机视觉主流。</p>",
+        "en": "<p>The Highway Networks paper, publicly released in 2015, added transform and carry gates to ordinary feed-forward layers. A network could choose to apply a nonlinear transformation or allow information to pass through almost unchanged. These gates were learned from data, giving features and gradients direct routes across many layers.</p><p>The authors trained networks with hundreds of layers, and experiments extended to roughly one thousand layers, using stochastic gradient descent. Gated shortcuts added computational cost, but they demonstrated that bypassing unnecessary transformations could overcome deep optimization barriers. ResNet soon removed the learned gates and used simpler identity shortcuts, carrying the same information-flow principle into mainstream computer vision.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visualModules": [],

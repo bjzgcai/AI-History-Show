@@ -1,122 +1,122 @@
 [
-  {
-    "id": "source-lianmin-zheng-personal-page",
-    "type": "personal-page",
-    "label": {
-      "zh": "个人主页",
-      "en": "Personal homepage"
+    {
+        "id": "source-lianmin-zheng-personal-page",
+        "type": "personal-page",
+        "label": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+        },
+        "title": {
+            "zh": "郑廉民个人主页",
+            "en": "Lianmin Zheng personal homepage"
+        },
+        "url": "https://lmzheng.net/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "研究者官方个人主页和肖像来源。",
+            "en": "The researcher's official personal homepage and portrait source."
+        },
+        "purpose": "biography"
     },
-    "title": {
-      "zh": "郑廉民个人主页",
-      "en": "Lianmin Zheng personal homepage"
+    {
+        "id": "source-lmsys-chatbot-arena-introduction",
+        "type": "article",
+        "label": {
+            "zh": "文章",
+            "en": "Article"
+        },
+        "title": {
+            "zh": "Chatbot Arena：用 Elo 评分在真实环境中评测大语言模型",
+            "en": "Chatbot Arena: Benchmarking LLMs in the Wild with Elo Ratings"
+        },
+        "url": "https://www.lmsys.org/blog/2023-05-03-arena/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "LMSYS 官方文章，列出郑廉民、应莹、蒋玮霖等 Chatbot Arena 初始作者并介绍平台机制。",
+            "en": "Official LMSYS article listing Lianmin Zheng, Ying Sheng, Wei-Lin Chiang, and the other initial Chatbot Arena authors while describing the platform."
+        },
+        "purpose": "core-evidence"
     },
-    "url": "https://lmzheng.net/",
-    "language": "en",
-    "reliability": "primary",
-    "notes": {
-      "zh": "研究者官方个人主页和肖像来源。",
-      "en": "The researcher's official personal homepage and portrait source."
+    {
+        "id": "source-legacy-event-record",
+        "type": "internal-record",
+        "title": {
+            "zh": "Legacy event record for 2025-llm-competition",
+            "en": "Legacy event record for 2025-llm-competition"
+        },
+        "url": "https://www.benchcouncil.org/",
+        "language": "en",
+        "reliability": "reference-only",
+        "notes": {
+            "zh": "由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。",
+            "en": "Temporary source placeholder generated from the legacy event record; add primary papers or original sources later."
+        },
+        "label": {
+            "zh": "内部记录",
+            "en": "Internal record"
+        },
+        "purpose": "migration-only"
     },
-    "purpose": "biography"
-  },
-  {
-    "id": "source-lmsys-chatbot-arena-introduction",
-    "type": "article",
-    "label": {
-      "zh": "文章",
-      "en": "Article"
+    {
+        "id": "source-chatbot-arena-paper",
+        "type": "paper",
+        "title": {
+            "zh": "《Chatbot Arena：基于人类偏好评估大语言模型的开放平台》",
+            "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
+        },
+        "url": "https://arxiv.org/abs/2403.04132",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "LMSYS 团队介绍匿名成对比较、众包投票、统计排名方法与平台数据的原始论文。",
+            "en": "The LMSYS team's original paper describing anonymous pairwise comparisons, crowdsourced voting, statistical ranking, and platform data."
+        },
+        "label": {
+            "zh": "论文",
+            "en": "Paper"
+        },
+        "purpose": "core-evidence"
     },
-    "title": {
-      "zh": "Chatbot Arena：用 Elo 评分在真实环境中评测大语言模型",
-      "en": "Chatbot Arena: Benchmarking LLMs in the Wild with Elo Ratings"
+    {
+        "id": "source-lmarena-official",
+        "type": "official-page",
+        "title": {
+            "zh": "LMArena 官方排行榜",
+            "en": "LMArena Official Leaderboard"
+        },
+        "url": "https://lmarena.ai/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "持续更新模型对战、用户偏好结果与分类排行榜的官方平台；排名会随新增投票和模型而变化。",
+            "en": "The official platform continuously updating model battles, preference results, and category leaderboards; rankings change as votes and models are added."
+        },
+        "label": {
+            "zh": "官方页面",
+            "en": "Official page"
+        },
+        "purpose": "core-evidence"
     },
-    "url": "https://www.lmsys.org/blog/2023-05-03-arena/",
-    "language": "en",
-    "reliability": "primary",
-    "notes": {
-      "zh": "LMSYS 官方文章，列出郑廉民、应莹、蒋玮霖等 Chatbot Arena 初始作者并介绍平台机制。",
-      "en": "Official LMSYS article listing Lianmin Zheng, Ying Sheng, Wei-Lin Chiang, and the other initial Chatbot Arena authors while describing the platform."
-    },
-    "purpose": "core-evidence"
-  },
-  {
-    "id": "source-legacy-event-record",
-    "type": "internal-record",
-    "title": {
-      "zh": "Legacy event record for 2025-llm-competition",
-      "en": "Legacy event record for 2025-llm-competition"
-    },
-    "url": "https://www.benchcouncil.org/",
-    "language": "en",
-    "reliability": "reference-only",
-    "notes": {
-      "zh": "由 legacy 事件记录生成的临时来源占位，需要后续补充主论文或原始资料。",
-      "en": "Temporary source placeholder generated from the legacy event record; add primary papers or original sources later."
-    },
-    "label": {
-      "zh": "内部记录",
-      "en": "Internal record"
-    },
-    "purpose": "migration-only"
-  },
-  {
-    "id": "source-chatbot-arena-paper",
-    "type": "paper",
-    "title": {
-      "zh": "《Chatbot Arena：基于人类偏好评估大语言模型的开放平台》",
-      "en": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
-    },
-    "url": "https://arxiv.org/abs/2403.04132",
-    "language": "en",
-    "reliability": "primary",
-    "notes": {
-      "zh": "LMSYS 团队介绍匿名成对比较、众包投票、统计排名方法与平台数据的原始论文。",
-      "en": "The LMSYS team's original paper describing anonymous pairwise comparisons, crowdsourced voting, statistical ranking, and platform data."
-    },
-    "label": {
-      "zh": "论文",
-      "en": "Paper"
-    },
-    "purpose": "core-evidence"
-  },
-  {
-    "id": "source-lmarena-official",
-    "type": "official-page",
-    "title": {
-      "zh": "LMArena 官方排行榜",
-      "en": "LMArena Official Leaderboard"
-    },
-    "url": "https://lmarena.ai/",
-    "language": "en",
-    "reliability": "primary",
-    "notes": {
-      "zh": "持续更新模型对战、用户偏好结果与分类排行榜的官方平台；排名会随新增投票和模型而变化。",
-      "en": "The official platform continuously updating model battles, preference results, and category leaderboards; rankings change as votes and models are added."
-    },
-    "label": {
-      "zh": "官方页面",
-      "en": "Official page"
-    },
-    "purpose": "core-evidence"
-  },
-  {
-    "id": "source-stanford-ai-index-2025",
-    "type": "report",
-    "title": {
-      "zh": "Stanford《2025 AI Index 报告》",
-      "en": "Stanford 2025 AI Index Report"
-    },
-    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
-    "language": "en",
-    "reliability": "secondary",
-    "notes": {
-      "zh": "Stanford HAI 汇总 2024 至 2025 年模型性能、开放与闭源模型差距、推理成本和产业趋势的年度报告。",
-      "en": "Stanford HAI's annual synthesis of model performance, open-versus-closed model gaps, inference costs, and industry trends through 2024 and 2025."
-    },
-    "label": {
-      "zh": "报告",
-      "en": "Report"
-    },
-    "purpose": "background"
-  }
+    {
+        "id": "source-stanford-ai-index-2025",
+        "type": "report",
+        "title": {
+            "zh": "Stanford《2025 AI Index 报告》",
+            "en": "Stanford 2025 AI Index Report"
+        },
+        "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+        "language": "en",
+        "reliability": "secondary",
+        "notes": {
+            "zh": "Stanford HAI 汇总 2024 至 2025 年模型性能、开放与闭源模型差距、推理成本和产业趋势的年度报告。",
+            "en": "Stanford HAI's annual synthesis of model performance, open-versus-closed model gaps, inference costs, and industry trends through 2024 and 2025."
+        },
+        "label": {
+            "zh": "报告",
+            "en": "Report"
+        },
+        "purpose": "background"
+    }
 ]
