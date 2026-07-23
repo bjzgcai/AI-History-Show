@@ -11,8 +11,8 @@
     "en": "Deep Learning and Unified Paradigms"
   },
   "displayDescription": {
-    "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
-    "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+    "zh": "<p>2014 年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥提出用于神经机器翻译的注意力机制。传统编码器需要把整句源文本压缩成一个固定长度向量，而新方法让解码器在生成每个目标词时，为源句各位置计算不同权重并形成当前所需的上下文。</p><p>这种“边翻译、边对齐”的方式改善了长句处理，也让模型的关注位置可以被可视化。注意力最初服务于循环编码器—解码器，但它确立了一个更普遍的原则：模型应按当前任务动态选择相关信息。三年后，Transformer 将这一原则扩展为完全基于自注意力的序列架构。</p>",
+    "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced an attention mechanism for neural machine translation. Earlier encoder-decoder systems compressed an entire source sentence into one fixed-length vector. Their method instead allowed the decoder, for every generated target word, to assign different weights to source positions and construct the context needed at that moment.</p><p>This process learned alignment while translating, improved the handling of longer sentences, and made the model's focus partly visible. Attention first operated inside a recurrent encoder-decoder, but it established a broader principle: a model should dynamically select relevant information for the current computation. Three years later, the Transformer expanded that principle into a sequence architecture based entirely on self-attention.</p>"
   },
   "emphasis": [
     "batch-migration",

@@ -11,8 +11,8 @@
     "en": "Genesis of AI"
   },
   "displayDescription": {
-    "zh": "1956 年夏天 在美国 达特茅斯学院 举行，由 约翰·麦卡锡（约翰·麦卡锡）、马文·明斯基（马文·明斯基）、克劳德·香农（克劳德·香农）、纳撒尼尔·罗切斯特（纳撒尼尔·罗切斯特） 等人发起。麦卡锡在会议筹备提案中首次正式使用了 \"人工智能\" 这个名称",
-    "en": "Held at Dartmouth College in the summer of 1956, this workshop was organized by John McCarthy, Marvin Minsky, Claude Shannon, Nathaniel Rochester and others. McCarthy formally introduced the term \"Artificial Intelligence\" in the proposal, marking the beginning of AI as a named research field."
+    "zh": "<p>1955 年 8 月 31 日，约翰·麦卡锡、马文·明斯基、纳撒尼尔·罗切斯特和克劳德·香农共同提交《达特茅斯夏季人工智能研究项目提案》，计划在 1956 年夏季于达特茅斯学院开展一项为期两个月、约十人参加的研究。提案以一个鲜明的设想为起点：学习以及智能的其他特征，原则上都可以被精确描述，从而让机器加以模拟。它也使“人工智能”成为这项新研究计划的正式名称。</p><p>提案没有把人工智能限定为某一种算法，而是列出自动计算机、机器使用语言、神经网络、计算复杂度、自我改进、抽象，以及随机性与创造力等七类问题。1956 年的研讨并未立即产生统一理论或正式总结报告，但它把此前分散在逻辑、信息论、神经建模和计算机研究中的问题组织成一个共同议程。达特茅斯项目的重要性因此不仅在于一次会议，更在于它为后来数十年的 AI 研究建立了可以持续扩展的学科名称和问题框架。</p>",
+    "en": "<p>On August 31, 1955, John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon submitted <em>A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence</em>. It called for a two-month study of about ten participants at Dartmouth College in the summer of 1956. The proposal began from a bold conjecture: every aspect of learning or other feature of intelligence could, in principle, be described precisely enough for a machine to simulate it. It also established “artificial intelligence” as the formal name of this new research program.</p><p>The proposal did not define AI as a single algorithm. Instead, it set out seven areas of inquiry: automatic computers, machine use of language, neural networks, the complexity of computation, self-improvement, abstraction, and randomness and creativity. The 1956 workshop did not immediately produce a unified theory or a formal final report, but it organized questions previously scattered across logic, information theory, neural modeling, and computer research into a shared agenda. Its lasting importance lies not only in the meeting itself, but in providing a disciplinary name and an expandable framework for decades of AI research.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -26,7 +26,9 @@
     "asset-1956-dartmouth-school"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-dartmouth-proposal",
+    "source-dartmouth-history",
+    "source-ieee-dartmouth-workshop"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -44,7 +46,8 @@
         "en": "The Dartmouth project mattered not just as a summer workshop, but because it brought language, abstraction, learning, neural networks, and self-improvement into one research agenda for the first time, giving scattered lines of work a shared problem space."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-dartmouth-proposal",
+        "source-dartmouth-history"
       ]
     },
     {
@@ -58,7 +61,9 @@
         "en": "The meeting did not immediately produce a unified theory, but it achieved something more durable: it turned \"artificial intelligence\" from a phrase in a proposal into a disciplinary label that could keep attracting researchers, funding, and public imagination."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-dartmouth-proposal",
+        "source-dartmouth-history",
+        "source-ieee-dartmouth-workshop"
       ]
     }
   ],

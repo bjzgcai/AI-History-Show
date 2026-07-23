@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>DCGAN 为稳定的 GAN 图像生成提供了实用的卷积架构规则。它还展示了无标签学习到的判别器特征可以迁移到识别任务。</p>",
-    "en": "<p>DCGAN supplied practical convolutional architecture rules for stable GAN image generation. It also showed that discriminator features learned without labels could transfer to recognition tasks.</p>"
+    "zh": "<p>拉德福德、梅茨和钦塔拉在 2015 年提出 DCGAN，为图像生成总结一组实用卷积架构规则：用步幅卷积和转置卷积替代手工池化，在多数层使用批归一化，减少全连接层，并分别采用 ReLU 与 Leaky ReLU 激活。这些选择显著提高了 GAN 训练的可重复性。</p><p>生成器学会从潜变量逐步构造空间图像，判别器则形成可迁移到分类任务的无监督视觉特征；潜空间还表现出一定可解释方向。DCGAN 仍会模式崩溃且只适合当时较低分辨率，但它把 GAN 从概念证明推进为可复用的深度卷积图像生成配方。</p>",
+    "en": "<p>Alec Radford, Luke Metz, and Soumith Chintala introduced DCGAN in 2015 with a practical set of convolutional architecture rules for image generation. Strided convolutions and transposed convolutions replace hand-designed pooling, batch normalization is used through much of the network, fully connected layers are reduced, and ReLU and Leaky ReLU activations are assigned to the generator and discriminator. These choices made GAN training substantially more reproducible.</p><p>The generator learned to construct spatial images progressively from latent variables, while the discriminator developed unsupervised visual features transferable to classification; the latent space also showed partly interpretable directions. DCGAN still suffered mode collapse and was limited to the resolutions of its time, but it moved GANs from a conceptual demonstration toward a reusable deep-convolutional recipe for image synthesis.</p>"
   },
   "emphasis": [
     "batch-migration",

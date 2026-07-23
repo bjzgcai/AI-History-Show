@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>反向传播来自自适应控制和神经网络研究的多条线索，其中甘利俊一的自适应模式分类器以及 1986 年鲁梅尔哈特-辛顿-威廉姆斯论文成为核心参考。该方法能高效计算分层网络中的梯度。</p>",
-    "en": "<p>Back-propagation developed through several strands of adaptive control and neural-network research, with Shunichi Amari's adaptive pattern classifiers and the 1986 Rumelhart-Hinton-Williams paper becoming central references. The method efficiently computes gradients through layered networks.</p>"
+    "zh": "<p>多层网络的误差梯度并非在单一年份突然出现。甘利俊一 1967 年的自适应模式分类研究已经讨论多层系统中的误差修正；到 1986 年，鲁梅尔哈特、辛顿和威廉姆斯清晰展示了如何用链式法则把输出误差逐层向后传播，并据此更新各层权重、学习内部表示。</p><p>反向传播本质上是高效计算复合函数梯度的方法，使大量参数能够共同接受端到端训练。它并不保证优化容易，深层网络仍会遇到梯度消失、局部几何和数据需求等问题；但与可微模型和梯度下降结合后，它成为现代神经网络训练的核心计算机制。</p>",
+    "en": "<p>The gradient method behind multilayer learning did not appear in a single year. Shunichi Amari's 1967 work on adaptive pattern classifiers already examined error correction in multilayer systems. In 1986, David Rumelhart, Geoffrey Hinton, and Ronald Williams clearly demonstrated how the chain rule could propagate output errors backward through layers, updating every set of weights and learning internal representations.</p><p>Backpropagation is fundamentally an efficient way to compute gradients through a composition of functions, allowing many parameters to be trained together end to end. It does not make optimization automatically easy: deep networks can still face vanishing gradients, difficult geometry, and large data requirements. Combined with differentiable models and gradient descent, however, it became the central computational mechanism of modern neural-network training.</p>"
   },
   "emphasis": [
     "batch-migration",

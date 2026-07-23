@@ -32,7 +32,7 @@
     },
     "url": "https://ieeexplore.ieee.org/document/4700287",
     "language": "en",
-    "reliability": "secondary",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."

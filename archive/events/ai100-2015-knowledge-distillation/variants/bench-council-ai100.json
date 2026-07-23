@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>知识蒸馏训练较小的学生模型去匹配较大教师模型的软化输出。软概率携带类别相似性信息，而硬标签不会显露这些信息。</p>",
-    "en": "<p>Knowledge distillation trains a smaller student model to match the softened outputs of a larger teacher. The soft probabilities carry class-similarity information that hard labels do not expose.</p>"
+    "zh": "<p>辛顿、维尼亚尔斯和迪恩在 2015 年系统化知识蒸馏，让较小学生模型学习大型教师或模型集成的行为。教师 logits 经较高温度 softmax 变成更平滑的概率分布，除了正确类别，还显示其他类别之间的相似性；学生同时匹配这些软目标和真实硬标签。</p><p>蒸馏可以在减少参数、延迟和部署成本的同时保留较多教师能力，并扩展到特征层、注意力和自蒸馏。学生上限受教师质量、数据覆盖和容量限制，也可能继承教师偏见与错误；但“把模型行为当作训练信号传给另一模型”成为高效 AI 的基础方法。</p>",
+    "en": "<p>Geoffrey Hinton, Oriol Vinyals, and Jeff Dean systematized knowledge distillation in 2015 so a smaller student model could learn the behavior of a large teacher or ensemble. A higher-temperature softmax turns teacher logits into a smoother probability distribution that reveals similarities among incorrect classes as well as the correct answer. The student learns from these soft targets together with hard labels.</p><p>Distillation can preserve much of a teacher's capability while reducing parameters, latency, and deployment cost and has expanded to intermediate features, attention, and self-distillation. The student's ceiling depends on teacher quality, data coverage, and capacity, and it can inherit teacher biases and errors. The broader idea of transferring model behavior as a training signal became foundational to efficient AI.</p>"
   },
   "emphasis": [
     "batch-migration",

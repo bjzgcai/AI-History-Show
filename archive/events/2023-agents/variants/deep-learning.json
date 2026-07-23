@@ -11,8 +11,8 @@
     "en": "Large Models and Scientific Intelligence"
   },
   "displayDescription": {
-    "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
-    "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction."
+    "zh": "<p>2022 年提出、并在 2023 年广泛传播的 ReAct 方法，让语言模型交错生成推理步骤、具体行动和环境返回的观察结果。与只输出答案不同，模型可以查询知识库、调用工具，再根据新信息继续推理。Toolformer 等研究也展示了模型学习何时插入 API 调用的可能性。</p><p>由此形成的 LLM 智能体通常把模型置于循环控制中心，外接任务规划、记忆、工具和结果评估模块，把一次文本生成扩展为多步行动过程。它们推动了编程、检索、数据分析和软件自动化实验，但“自主”并不等于可靠：错误会在长链路中累积，工具权限、成本、评测和安全边界仍是实际部署的核心问题。</p>",
+    "en": "<p>ReAct, introduced in 2022 and widely adopted in 2023, allowed language models to interleave reasoning steps, concrete actions, and observations returned by an environment. Instead of producing only a final answer, a model could query a knowledge source or invoke a tool, then continue reasoning from the new information. Toolformer similarly explored how models could learn when to insert API calls.</p><p>LLM agents placed the model at the center of a control loop connected to planning, memory, tools, and result evaluation, extending one text generation into a multi-step process. They accelerated experiments in coding, retrieval, data analysis, and software automation. “Autonomous,” however, does not mean reliable: errors accumulate across long trajectories, and permissions, cost, evaluation, and security remain central deployment constraints.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -25,7 +25,9 @@
     "asset-2023-agents-historical-04"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-react-paper",
+    "source-toolformer-paper",
+    "source-llm-agent-survey"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -43,7 +45,9 @@
         "en": "The key change in contemporary agentic AI is not tool use by itself. Large language models began to act as the cognitive center for goal decomposition, state interpretation, action selection, and self-correction."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-react-paper",
+        "source-toolformer-paper",
+        "source-llm-agent-survey"
       ]
     },
     {
@@ -57,7 +61,9 @@
         "en": "That turns agents from systems dependent on hand-written planners into open software forms whose behavior strategies can be rebuilt through prompts, memory, toolchains, and feedback loops. It also explains why agent products expanded so quickly after 2023."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-react-paper",
+        "source-toolformer-paper",
+        "source-llm-agent-survey"
       ]
     }
   ],

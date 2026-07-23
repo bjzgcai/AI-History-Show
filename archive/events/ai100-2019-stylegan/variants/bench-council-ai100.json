@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>StyleGAN 围绕学习得到的风格空间重新设计 GAN 生成器，用风格调制合成层。该架构生成了高质量人脸，也让潜空间编辑更容易解释。</p>",
-    "en": "<p>StyleGAN redesigned the GAN generator around a learned style space that modulates synthesis layers. The architecture produced high-quality faces and made latent-space editing more interpretable.</p>"
+    "zh": "<p>NVIDIA 团队在 2019 年提出 StyleGAN，把随机潜变量先通过映射网络转换到中间风格空间，再用每层的风格参数调制图像合成过程。较早层控制姿态、脸型等粗尺度结构，较晚层影响颜色和细节；独立噪声输入则产生雀斑、发丝等随机微观变化。</p><p>这种设计减弱了潜变量因素之间的纠缠，使高质量人脸生成和属性编辑更可控，也推动“生成器内部表示可解释性”的研究。首代模型仍会产生水滴状伪影和不自然细节，后续 StyleGAN2/3 修正了多项问题；但分离映射空间与分层风格控制成为重要生成架构思想。</p>",
+    "en": "<p>NVIDIA researchers introduced StyleGAN in 2019 by passing a random latent vector through a mapping network into an intermediate style space, then using per-layer styles to modulate image synthesis. Early layers influence coarse structure such as pose and face shape, later layers control color and detail, and independent noise inputs create stochastic fine variations such as freckles or individual hairs.</p><p>The design reduced entanglement among latent factors, made high-quality face generation and attribute editing more controllable, and advanced research on interpretable generator representations. The first model still produced characteristic blob-like artifacts and unnatural details, which StyleGAN2 and StyleGAN3 later addressed. Separating a mapping space from hierarchical style control nevertheless became an important generative-architecture principle.</p>"
   },
   "emphasis": [
     "batch-migration",

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>",
-    "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>"
+    "zh": "<p>麦卡洛克和皮茨在 1943 年把神经元理想化为二值阈值单元：它接收兴奋或抑制输入，当满足规定条件时在下一时刻激活。通过连接多个单元，网络可以实现 AND、OR、NOT 等逻辑运算，并用反馈回路表示随时间持续的状态。</p><p>这个模型不是对真实神经元的完整生物描述，也没有学习权重的机制，但它首次以严格形式把神经活动、命题逻辑和可计算过程联系起来。其影响在于证明由简单单元构成的网络能够执行复杂逻辑，为自动机理论、认知模型和后来的人工神经网络提供共同概念起点。</p>",
+    "en": "<p>Warren McCulloch and Walter Pitts idealized a neuron in 1943 as a binary threshold unit. It receives excitatory or inhibitory inputs and becomes active at the next time step when specified conditions are met. By connecting multiple units, a network can implement logical operations such as AND, OR, and NOT, while feedback loops represent states that persist through time.</p><p>The model was neither a complete biological account of real neurons nor a learning system with adjustable weights. Its importance was formally connecting neural activity, propositional logic, and computable processes for the first time. It showed how networks of simple units could carry out complex logical operations and provided a shared conceptual starting point for automata theory, cognitive models, and later artificial neural networks.</p>"
   },
   "emphasis": [
     "batch-migration",

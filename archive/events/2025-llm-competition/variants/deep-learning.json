@@ -29,6 +29,9 @@
   "sourceIds": [
     "source-lianmin-zheng-personal-page",
     "source-lmsys-chatbot-arena-introduction",
+    "source-chatbot-arena-paper",
+    "source-lmarena-official",
+    "source-stanford-ai-index-2025",
     "source-legacy-event-record"
   ],
   "claimIds": [
@@ -47,7 +50,8 @@
         "en": "The visible competition among large models increasingly depends on live leaderboards rather than one-time paper results. User preference votes, public battles, and frequent updates have moved model comparison from internal lab evaluation into continuous public observation."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-chatbot-arena-paper",
+        "source-lmarena-official"
       ]
     },
     {
@@ -61,7 +65,9 @@
         "en": "The value of these rankings is not just showing who is first. They reveal that model differences are shifting from average general capability toward combinations of style, stability, reasoning traces, and tool-use ability."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-chatbot-arena-paper",
+        "source-lmarena-official",
+        "source-stanford-ai-index-2025"
       ]
     }
   ],

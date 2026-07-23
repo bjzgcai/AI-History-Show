@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>瓦普尼克与切尔沃年基斯在 1971 年把学习中的泛化问题写成严格数学问题：一个假设类别在有限样本上表现良好时，什么条件能保证它在未见数据上仍然可靠？VC 维通过考察模型能否对一组样本实现所有可能的二元划分，刻画假设类别的表达容量。</p><p>这套理论把模型复杂度、样本数量和泛化误差联系起来，为统计学习提供了统一语言。它说明训练误差低并不自动代表学到了可推广规律，也为结构风险最小化和支持向量机奠定基础。经典 VC 界对现代深度网络往往较保守，但容量与泛化之间的核心问题仍未过时。</p>",
+    "en": "<p>In 1971, Vladimir Vapnik and Alexey Chervonenkis gave generalization a rigorous mathematical form: when a hypothesis class performs well on a finite sample, what conditions support reliable performance on unseen data? VC dimension characterizes the capacity of a hypothesis class by asking whether it can realize every binary labeling of a set of examples.</p><p>The theory connected model complexity, sample size, and generalization error, giving statistical learning a common language. It showed why low training error alone does not guarantee a transferable rule and helped support structural risk minimization and support vector machines. Classical VC bounds can be conservative for modern deep networks, but the underlying question of capacity versus generalization remains fundamental.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"

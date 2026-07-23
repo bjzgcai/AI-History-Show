@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>PROLOG 让逻辑变得可执行。程序员不再只写一步步过程，而是写事实与规则，再提出查询，由系统通过合一和回溯求解。它把定理证明、自然语言处理和知识表示连接成一种实用的符号 AI 工具。</p>",
-    "en": "<p>PROLOG made logic executable. Instead of writing step-by-step procedures, programmers wrote facts and rules, then asked queries that the system solved by unification and backtracking. The language joined theorem proving, natural-language work, and knowledge representation into a practical symbolic AI tool.</p>"
+    "zh": "<p>阿兰·科尔梅罗尔及其马赛团队在 1970 年代初开发 Prolog，并受到罗伯特·科瓦尔斯基逻辑程序设计思想的影响。程序由事实和规则组成，用户提出查询后，系统通过合一匹配变量，并沿规则建立证明；当路径失败时，它回溯到较早选择继续搜索。</p><p>这种声明式方式让程序员主要描述“哪些关系成立”，而把部分执行顺序交给推理引擎。Prolog 很快用于自然语言处理、专家系统、定理证明和知识表示，也暴露了搜索顺序和控制策略对实际性能的重要性。它证明逻辑不只是说明语言，也可以成为可运行的程序设计基础。</p>",
+    "en": "<p>Alain Colmerauer and his Marseille group developed Prolog in the early 1970s, influenced by Robert Kowalski's ideas about logic programming. A program consists of facts and rules. When a user poses a query, the system uses unification to match variables and constructs a proof through the rules; if a path fails, it backtracks to an earlier choice and continues searching.</p><p>This declarative style lets programmers describe primarily which relations hold while leaving part of the execution order to the inference engine. Prolog was soon used for natural-language processing, expert systems, theorem proving, and knowledge representation, while also revealing how strongly search order and control strategy affect performance. It demonstrated that logic could serve not only as a specification language but as an executable programming foundation.</p>"
   },
   "emphasis": [
     "batch-migration",

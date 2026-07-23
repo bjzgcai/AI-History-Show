@@ -11,8 +11,8 @@
     "en": "Deep Learning and Unified Paradigms"
   },
   "displayDescription": {
-    "zh": "<p>DenseNet 于2016年首次公开，在密集块中把每一层连接到后续所有层。深度学习发展线把它理解为让历史状态显式可见、最大化梯度路径的一种极端形式，AI100 条目则解释其实用机制：促进特征复用、增强传播，并提供比单纯加宽或加深网络更紧凑的方案。</p>",
-    "en": "<p>DenseNet was first publicly released in 2016 and connected each layer to every later layer inside a dense block. The deep-learning storyline frames it as an extreme form of visible historical state and gradient-path expansion, while the AI100 entry explains the practical mechanism: feature reuse, stronger propagation, and a compact alternative to simply making networks wider or deeper.</p>"
+    "zh": "<p>2016 年，高华、刘壮、劳伦斯·范德马滕和基利安·温伯格公开 DenseNet。与残差网络相加特征不同，DenseNet 在一个密集块内把前面所有层的特征图拼接起来，作为下一层输入；具有 L 层的网络因此形成 L(L+1)/2 条直接连接。</p><p>这种设计让早期提取的边缘、纹理等特征可以被后续层反复利用，也为梯度提供更短的传播路径。论文实验显示，DenseNet 能以较少参数取得有竞争力的图像分类结果。它把“每层都能访问历史特征”发展成明确架构，成为特征复用与高效连接设计的重要范例。</p>",
+    "en": "<p>In 2016, Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Weinberger released DenseNet. Unlike residual networks, which add feature maps, DenseNet concatenated the outputs of every earlier layer inside a dense block and supplied them to each later layer. A network with L layers therefore contained L(L+1)/2 direct connections.</p><p>The design allowed later layers to reuse edges, textures, and other features extracted earlier, while giving gradients shorter routes through the network. The paper showed competitive image-classification accuracy with relatively few parameters. DenseNet turned the idea that every layer should have access to the feature history into an explicit architecture and became an influential example of feature reuse and efficient connectivity.</p>"
   },
   "emphasis": [
     "batch-migration",

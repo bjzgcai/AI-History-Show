@@ -11,8 +11,8 @@
     "en": "Large Models and Scientific Intelligence"
   },
   "displayDescription": {
-    "zh": "2019年，麻省理工学院的Tegmark团队推出了AI Feynman。 利用神经网络作为\"直觉\"引导，结合了物理学中的对称性（对称性）和量纲分析（量纲分析）作为约束，使用符号回归（符号回归），从复杂噪声数据中成功\"重新发现\"了物理规律。 AI Feynman系统成功\"重新发现\"了100个费曼物理学讲义中的方程，而之前公开的软件只能解决其中的71个；对于一个更困难的基于物理的测试集，该系统也把成功比例从15%提升到了90%。",
-    "en": "In 2019, Max Tegmark’s team introduced AI Feynman, combining neural-network intuition with symmetry and dimensional analysis from physics. The system could rediscover symbolic equations from data and pointed toward AI-assisted scientific discovery."
+    "zh": "<p>2019 年，西尔维乌-马里安·乌多雷斯库和马克斯·泰格马克公开 AI Feynman，用于从数值数据中寻找可读的符号方程。系统先用神经网络拟合数据，再检查可分性、对称性和量纲等物理线索，把高维问题拆成更简单的子问题，最后通过符号搜索恢复公式。</p><p>论文报告，AI Feynman 解出了测试集中全部 100 个《费曼物理学讲义》方程，而此前公开软件解出 71 个；在更困难的物理方程测试集上，成功率由基线的 15% 提升到 90%。它的重要性不只是提高预测精度，而是输出可由科学家检查和使用的解析表达式，展示了机器学习与科学先验结合进行规律发现的路径。</p>",
+    "en": "<p>In 2019, Silviu-Marian Udrescu and Max Tegmark released AI Feynman, a system for recovering human-readable symbolic equations from numerical data. It first used a neural network to fit the observations, then tested physics-inspired clues such as separability, symmetry, and dimensional structure. These clues decomposed difficult high-dimensional problems before a symbolic search reconstructed the formula.</p><p>The paper reported solving all 100 equations drawn from the Feynman Lectures test set, compared with 71 solved by earlier publicly available software. On a harder physics-based set, success rose from a 15 percent baseline to 90 percent. The significance was not merely predictive accuracy: AI Feynman returned analytic expressions that scientists could inspect and reuse, demonstrating a path for combining machine learning with scientific priors in law discovery.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -26,7 +26,8 @@
     "asset-2019-ai-feynman-papers-02"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-ai-feynman-science-advances",
+    "source-ai-feynman-arxiv"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -44,7 +45,8 @@
         "en": "AI Feynman's approach is representative because it did not leave symbolic regression entirely to brute-force search. By adding physical priors such as symmetry and dimensional analysis, it narrowed the candidate space and moved machine formula discovery from toy problems toward reconstructing real laws."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-ai-feynman-science-advances",
+        "source-ai-feynman-arxiv"
       ]
     },
     {
@@ -58,7 +60,8 @@
         "en": "The value of such systems lies in interpretability. Unlike black-box models that only return predictions, AI Feynman outputs human-readable equations, making it more like an intermediate discovery tool that can be handed to the scientific community."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-ai-feynman-science-advances",
+        "source-ai-feynman-arxiv"
       ]
     }
   ],

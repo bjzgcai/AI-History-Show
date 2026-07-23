@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>斯蒂芬·库克在 1971 年证明布尔可满足性问题具有一种关键的普遍困难性：NP 中的每个问题都可以在多项式时间内归约到它。列昂尼德·列文也独立提出了相关结果。由此形成的 NP 完全性概念，不再把困难问题看成彼此孤立的案例，而是把它们组织成可以通过归约比较的整体。</p><p>这一区分对 AI 尤其重要，因为规划、调度、组合搜索和约束求解常会遇到 NP 完全或相关的高复杂度问题。NP 完全并不等于“绝对无法求解”，也没有证明 P 不等于 NP；它提醒工程师需要利用近似、启发式、特殊结构或指数搜索，而不能期待一种已知的通用高效算法。</p>",
+    "en": "<p>In 1971, Stephen Cook proved a crucial form of universal hardness for Boolean satisfiability: every problem in NP could be reduced to it in polynomial time. Leonid Levin independently developed a related result. The resulting idea of NP-completeness organized difficult problems into a common structure connected by reductions, rather than treating each one as an isolated obstacle.</p><p>The distinction is central to AI because planning, scheduling, combinatorial search, and constraint solving often encounter NP-complete or similarly demanding problems. NP-complete does not mean “impossible,” and it does not prove that P differs from NP. It tells engineers why approximation, heuristics, exploitable structure, and sometimes exponential search are necessary instead of expecting a known universal efficient algorithm.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"

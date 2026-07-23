@@ -12,7 +12,7 @@
     },
     "url": "https://arxiv.org/abs/1312.5602",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
@@ -32,7 +32,7 @@
     },
     "url": "https://www.nature.com/articles/nature14236",
     "language": "en",
-    "reliability": "secondary",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."

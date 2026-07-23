@@ -32,7 +32,7 @@
     },
     "url": "https://proceedings.neurips.cc/paper/2017/hash/892c3b1c6dccd52936e27cbd0ff683d6-Abstract.html",
     "language": "en",
-    "reliability": "secondary",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."

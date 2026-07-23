@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>约翰·麦卡锡在 1958 年开始设计 LISP，并在 1960 年论文中用 S 表达式和递归函数系统说明这种语言。列表既能表示程序操作的数据，也能表示程序本身；CONS、CAR、CDR、QUOTE、COND 与 EVAL 等少量原语，就能组合出复杂的符号处理过程。</p><p>这种“代码与数据采用同一种结构”的设计，使研究者可以灵活构造定理证明、规划、自然语言和知识表示程序，也推动了交互式开发、垃圾回收等编程实践。LISP 后来形成众多方言；即使 AI 工程转向其他语言，它仍深刻影响函数式编程和可编程符号系统。</p>",
+    "en": "<p>John McCarthy began designing LISP in 1958 and presented its system of S-expressions and recursive functions in a 1960 paper. Lists could represent both the data manipulated by a program and the program itself. A small set of primitives, including CONS, CAR, CDR, QUOTE, COND, and EVAL, could be composed into complex symbolic procedures.</p><p>This shared structure for code and data made it unusually flexible for theorem proving, planning, natural language, and knowledge-representation experiments. LISP also helped establish practices such as interactive development and automatic memory management. Although AI engineering later diversified into many languages, LISP's influence persists in functional programming and programmable symbolic systems.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"

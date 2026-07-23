@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>t-SNE 成为最具辨识度的高维数据可视化工具之一。它把成对邻域关系转为概率，再用重尾分布把点布置在低维图上。结果常能展示原始特征空间中难以看见的局部簇结构。</p>",
-    "en": "<p>t-SNE became one of the most recognizable tools for visualizing high-dimensional data. It converts pairwise neighborhood relationships into probabilities and then lays points out in a low-dimensional map with a heavy-tailed distribution. The result often reveals local clusters that are hard to see in raw feature space.</p>"
+    "zh": "<p>范德马滕和辛顿在 2008 年提出 t-SNE，把高维空间中样本之间的局部邻近关系转换为概率分布，再在二维或三维空间中寻找一组点，使其邻域概率尽量相似。低维空间采用重尾 Student t 分布，缓解早期方法把不同群体挤在一起的“拥挤问题”。</p><p>t-SNE 常能把图像、词向量或生物数据中的局部簇结构直观呈现，因此成为最常见的表示可视化工具之一。但图上的簇间距离、簇大小和空白区域不一定忠实反映全局结构，结果还受困惑度、初始化和随机性影响。它适合探索邻域，而不应被当作严格证明。</p>",
+    "en": "<p>Laurens van der Maaten and Geoffrey Hinton introduced t-SNE in 2008 by converting local neighborhood relationships among high-dimensional samples into probabilities, then finding a two- or three-dimensional arrangement with similar neighborhood probabilities. A heavy-tailed Student t distribution in the low-dimensional map reduces the “crowding problem” that caused earlier methods to compress distinct groups together.</p><p>t-SNE often makes local clusters in images, embeddings, or biological measurements visually apparent and became one of the most familiar representation-visualization tools. Distances between clusters, cluster sizes, and empty regions in the map do not necessarily preserve global structure, and results depend on perplexity, initialization, and randomness. It is best used to explore neighborhoods rather than as formal proof of distinct categories.</p>"
   },
   "emphasis": [
     "batch-migration",

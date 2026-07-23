@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>U-Net 最初面向生物医学图像分割，在这类任务中标注数据稀缺且边界细节重要。收缩路径汇聚上下文，扩张路径恢复分辨率，跳跃连接则把精细信息跨过 U 形结构传递过去。这个设计后来走出原始领域，成为分割、图像复原、扩散模型和密集预测的通用模板。</p>",
-    "en": "<p>U-Net was designed for biomedical image segmentation, where labeled data can be scarce and boundary detail matters. Its contracting path gathers context while the expanding path restores resolution, with skip connections carrying fine details across the U shape. The design escaped its original niche and became a general template for segmentation, restoration, diffusion models, and dense prediction.</p>"
+    "zh": "<p>U-Net 最初面向生物医学图像分割：标注样本通常有限，但输出必须精确对应每个像素和细小边界。网络的收缩路径通过卷积和下采样汇聚上下文，扩张路径逐步恢复空间分辨率；跨越 U 形结构的跳跃连接，把编码阶段的高分辨率特征直接与解码特征拼接。</p><p>原论文还利用强数据增强，使网络能从较少训练图像中学习。编码器—解码器与跳跃连接的组合同时保留“是什么”和“在哪里”，因此很快超出生物医学领域，成为语义分割、图像复原和密集预测的经典模板，并进一步影响扩散模型等生成系统的骨干设计。</p>",
+    "en": "<p>U-Net was created for biomedical image segmentation, where labeled examples are often scarce but outputs must align precisely with pixels and fine boundaries. Its contracting path gathers context through convolution and downsampling, while the expanding path restores spatial resolution. Skip connections across the U shape concatenate high-resolution encoder features directly with decoder features.</p><p>The original work also used strong data augmentation so the network could learn from relatively few annotated images. By preserving both “what” and “where,” the encoder-decoder design became a canonical template beyond biomedicine for semantic segmentation, image restoration, and dense prediction. Its skip-connected structure also influenced the backbones later used in diffusion and other generative models.</p>"
   },
   "emphasis": [
     "batch-migration",

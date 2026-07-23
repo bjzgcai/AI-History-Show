@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>GCN 提供了一个简单有效的层，用于同时从图结构和节点特征中学习。它成为半监督节点分类和图表示学习的标准基线。</p>",
-    "en": "<p>GCN provided a simple and effective layer for learning from graph structure and node features together. It became a standard baseline for semi-supervised node classification and graph representation learning.</p>"
+    "zh": "<p>基普夫和威灵在 2016 年提出简化图卷积网络，从谱图卷积的一阶近似得到实用更新规则。每一层把节点自身及其邻居的特征按归一化连接权重聚合，再通过共享线性变换和非线性激活，使标签信息和结构线索沿图传播。</p><p>GCN 能在只有少量节点带标签时联合利用全部图结构进行半监督分类，因简洁高效而成为图表示学习的标准基线。层数增加会导致过度平滑，远距离信息和异质关系也难以处理；但“归一化邻居聚合 + 可学习变换”的配方奠定了大量后续图模型。</p>",
+    "en": "<p>Thomas Kipf and Max Welling introduced the graph convolutional network in 2016 with a practical update derived from a first-order approximation to spectral graph convolution. Each layer aggregates a node's own features and those of its neighbors using normalized connection weights, then applies a shared linear transformation and nonlinearity so labels and structural information propagate across the graph.</p><p>GCN can use the full graph for semi-supervised classification even when only a small fraction of nodes are labeled, and its simplicity made it a standard graph-learning baseline. Greater depth can cause oversmoothing, while long-range information and heterogeneous relations remain difficult. Its recipe of normalized neighborhood aggregation followed by a learned transformation nevertheless founded a large family of later graph models.</p>"
   },
   "emphasis": [
     "batch-migration",

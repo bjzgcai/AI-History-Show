@@ -1,0 +1,298 @@
+[
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1943-mcculloch-pitts-neuron_threshold-logic.svg",
+    "candidateFile": "1943-mcculloch-pitts-neuron_threshold-logic.svg",
+    "issues": [
+      "Footer sentence extends beyond the 720-unit viewBox."
+    ],
+    "changes": [
+      "Wrap the explanation into two centered lines and reduce its font size."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1958-lisp_eval-flow.svg",
+    "candidateFile": "1958-lisp_eval-flow.svg",
+    "issues": [
+      "The input expression is too wide for its panel.",
+      "The footer sentence exceeds the viewBox."
+    ],
+    "changes": [
+      "Reduce the code label size.",
+      "Wrap the footer into two lines."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1960-davis-putnam-dpll_sat-search.svg",
+    "candidateFile": "1960-davis-putnam-dpll_sat-search.svg",
+    "issues": [
+      "The footer text exceeds its callout box."
+    ],
+    "changes": [
+      "Widen the callout and reduce the footer font slightly."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1965-resolution-method_clause-refutation.svg",
+    "candidateFile": "1965-resolution-method_clause-refutation.svg",
+    "issues": [
+      "The original diagram jumps from A or C to the empty clause without showing contradictory premises."
+    ],
+    "changes": [
+      "Replace it with an explicit two-step resolution refutation."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1971-complexity-theory_reduction-map.svg",
+    "candidateFile": "1971-complexity-theory_reduction-map.svg",
+    "issues": [
+      "General theorem proving is not necessarily an NP decision problem.",
+      "The footer overflows its box."
+    ],
+    "changes": [
+      "Use concrete NP decision problems and state the Cook-Levin relationship precisely."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1973-prolog_query-tree.svg",
+    "candidateFile": "1973-prolog_query-tree.svg",
+    "issues": [
+      "The recursive rule text exceeds its node."
+    ],
+    "changes": [
+      "Split the recursive rule over two lines and increase the node height."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1974-frame_slot-card.svg",
+    "candidateFile": "1974-frame_slot-card.svg",
+    "issues": [
+      "The heading collides with the card edge.",
+      "The restaurant-script example blurs frames with later script terminology."
+    ],
+    "changes": [
+      "Use a generic frame inheritance example with explicit defaults and overrides."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
+    "candidateFile": "1988-td-update_error-meter.svg",
+    "issues": [
+      "The TD-error label touches the meter circle."
+    ],
+    "changes": [
+      "Move the label lower and center it under the meter."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+    "candidateFile": "1989-lenet_zip-code-cnn.svg",
+    "issues": [
+      "The footer sentence extends beyond the viewBox."
+    ],
+    "changes": [
+      "Wrap and center the footer."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
+    "candidateFile": "1990-otter_given-clause.svg",
+    "issues": [
+      "The new-consequences label exceeds its node."
+    ],
+    "changes": [
+      "Reduce that label to fit the fixed card width."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1996-lasso_l1-constraint.svg",
+    "candidateFile": "1996-lasso_l1-constraint.svg",
+    "issues": [
+      "The rotated loss contour reaches into the subtitle area."
+    ],
+    "changes": [
+      "Move the geometry down while preserving the L1 corner contact."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
+    "candidateFile": "1997-lstm_gated-memory.svg",
+    "issues": [
+      "The diagram assigns a forget gate to the original 1997 LSTM architecture."
+    ],
+    "changes": [
+      "Show input gate, output gate and persistent cell state; explicitly note the later forget-gate addition."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/1999-nmf_parts-factorization.svg",
+    "candidateFile": "1999-nmf_parts-factorization.svg",
+    "issues": [
+      "The factorization omits a clearly identified basis matrix and can read as icons times weights."
+    ],
+    "changes": [
+      "Show the standard V approximately equals W times H relationship with nonnegative basis and coefficient matrices."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2000-neural-language-model_context-prediction.svg",
+    "candidateFile": "2000-neural-language-model_context-prediction.svg",
+    "issues": [
+      "The embeddings label crowds its panel.",
+      "The footer exceeds the viewBox."
+    ],
+    "changes": [
+      "Reduce the panel label size and wrap the footer."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
+    "candidateFile": "2013-dqn_replay-buffer.svg",
+    "issues": [
+      "The minibatch label is not centered and touches the node boundary."
+    ],
+    "changes": [
+      "Center the label and reduce its size slightly."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2014-conditional-gan_conditioned-generator.svg",
+    "candidateFile": "2014-conditional-gan_conditioned-generator.svg",
+    "issues": [
+      "The conditioned-sample label exceeds its result card."
+    ],
+    "changes": [
+      "Reduce the result label size."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2014-glove_cooccurrence.svg",
+    "candidateFile": "2014-glove_cooccurrence.svg",
+    "issues": [
+      "Two mechanism labels exceed their cards.",
+      "Weighted regression is less precise than the paper objective."
+    ],
+    "changes": [
+      "Use smaller labels and name the weighted least-squares objective."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
+    "candidateFile": "2014-vgg_depth-configurations.svg",
+    "issues": [
+      "Bars overlap the subtitle.",
+      "Five unlabeled bars do not map accurately to canonical VGG configurations."
+    ],
+    "changes": [
+      "Show VGG-11/13/16/19 with proportional weight-layer counts and labels."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2015-dcgan_conv-generator.svg",
+    "candidateFile": "2015-dcgan_conv-generator.svg",
+    "issues": [
+      "The mechanism label exceeds its card.",
+      "Deconvolution is ambiguous terminology."
+    ],
+    "changes": [
+      "Use a two-line transposed-convolution label."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2015-u-net_segmentation-mask.svg",
+    "candidateFile": "2015-u-net_segmentation-mask.svg",
+    "issues": [
+      "The image panels overlap the Chinese subtitle."
+    ],
+    "changes": [
+      "Move the panels and connector below the title band."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+    "candidateFile": "2016-alphago_policy-value-search.svg",
+    "issues": [
+      "Long labels overflow the network cards and footer.",
+      "A 9x9 schematic labels move 37, which can be mistaken for the historical 19x19 game position."
+    ],
+    "changes": [
+      "Use a schematic 19x19 board, remove the historical move claim, and shorten card labels."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2016-gcn_spectral-convolution.svg",
+    "candidateFile": "2016-gcn_spectral-convolution.svg",
+    "issues": [
+      "The normalized-neighbors label exceeds its mechanism card."
+    ],
+    "changes": [
+      "Reduce the mechanism label size."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2016-nas_controller-search.svg",
+    "candidateFile": "2016-nas_controller-search.svg",
+    "issues": [
+      "The sampled-architecture label exceeds its card."
+    ],
+    "changes": [
+      "Reduce the mechanism label size."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+    "candidateFile": "2017-transformer_self-attention.svg",
+    "issues": [
+      "The formula omits scaling by square root of key dimension and the multiplication by values."
+    ],
+    "changes": [
+      "Replace it with the complete scaled dot-product attention expression."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2017-wasserstein-gan_critic-distance.svg",
+    "candidateFile": "2017-wasserstein-gan_critic-distance.svg",
+    "issues": [
+      "The generated-distribution label overflows.",
+      "Critic distance can imply that the critic directly is a distance metric."
+    ],
+    "changes": [
+      "Wrap the output label and describe the mechanism as a critic score gap estimating Wasserstein distance."
+    ],
+    "promoted": true
+  },
+  {
+    "original": "resources/images/bench-council-ai100/explainers/2020-vit_patch-tokens.svg",
+    "candidateFile": "2020-vit_patch-tokens.svg",
+    "issues": [
+      "The footer sentence exceeds the viewBox."
+    ],
+    "changes": [
+      "Wrap and center the footer."
+    ],
+    "promoted": true
+  }
+]

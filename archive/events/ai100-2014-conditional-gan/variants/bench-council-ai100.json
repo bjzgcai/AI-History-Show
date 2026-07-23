@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Conditional GAN 把类别标签或其他辅助信息同时加入生成器和判别器。这让对抗生成从无方向的数据分布采样变成可控制生成。</p>",
-    "en": "<p>Conditional GAN added labels or other side information to both the generator and discriminator. This made adversarial generation controllable rather than only sampling from an undirected data distribution.</p>"
+    "zh": "<p>米尔扎和奥辛德罗在 2014 年把辅助信息 y 同时输入 GAN 的生成器和判别器。y 可以是类别标签、属性或其他条件：生成器学习在给定条件下产生样本，判别器则判断样本是否真实且与条件匹配，从而把无方向采样变成可控制生成。</p><p>原论文用类别控制数字生成，并探索图像与文本表示的条件关系。这个简单扩展成为后来文本到图像、标签到图像和属性编辑的重要基础。条件本身不能保证生成结果完全服从指令，训练仍会继承 GAN 的不稳定和模式覆盖问题，但它确立了“用外部信息控制生成分布”的通用框架。</p>",
+    "en": "<p>Mehdi Mirza and Simon Osindero introduced conditional GANs in 2014 by feeding auxiliary information y to both the generator and discriminator. The condition can be a class label, attribute, or other signal. The generator learns to produce a sample under that condition, while the discriminator judges whether the sample is both real and compatible with it, turning undirected sampling into controllable generation.</p><p>The original work demonstrated class-controlled digit generation and explored conditional relationships between image and text representations. This simple extension became foundational for text-to-image, label-to-image, and attribute-editing systems. A condition does not guarantee perfect instruction following, and training retains GAN instability and mode-coverage problems, but the work established a general framework for controlling a generated distribution with external information.</p>"
   },
   "emphasis": [
     "batch-migration",

@@ -12,7 +12,7 @@
     },
     "url": "https://dspace.mit.edu/handle/1721.1/7095",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."

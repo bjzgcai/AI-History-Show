@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Word2Vec 让词向量变得快速、实用且容易采用。Skip-gram 和 CBOW 模型学习出的向量空间中，语义和句法关系表现为几何结构。这些向量成为从计数式 NLP 走向神经语言表示的桥梁。</p>",
-    "en": "<p>Word2Vec made word embeddings fast, useful, and widely adoptable. Skip-gram and CBOW models learned vector spaces where semantic and syntactic relationships appeared as geometry. These vectors became a bridge from count-based NLP to neural language representation.</p>"
+    "zh": "<p>米科洛夫等人在 2013 年提出的 Word2Vec 用浅层神经目标高效学习大规模语料中的词表示。CBOW 根据周围词预测中心词，Skip-gram 则根据中心词预测上下文；负采样和高频词下采样进一步降低训练成本，使数亿乃至更多词元上的训练变得实用。</p><p>学习到的稠密向量把分布相似的词放到相近位置，一些语义和句法关系还会表现为方向和距离。这推动 NLP 从稀疏计数特征转向可复用的分布式表示。词向量仍会继承语料偏见，也难以表达一词多义和上下文变化，但它为后来的上下文化语言表示铺平道路。</p>",
+    "en": "<p>Word2Vec, introduced by Tomas Mikolov and colleagues in 2013, used shallow neural objectives to learn word representations efficiently from very large corpora. CBOW predicts a center word from its surrounding words, while Skip-gram predicts surrounding context from the center. Negative sampling and subsampling of frequent words further reduced the cost, making training on hundreds of millions or more tokens practical.</p><p>The resulting dense vectors place words with similar distributions near one another, and some semantic or syntactic relationships appear as directions and distances. This helped move NLP from sparse count features toward reusable distributed representations. Static embeddings still inherit corpus biases and struggle with polysemy and changing context, but they prepared the ground for later contextual language representations.</p>"
   },
   "emphasis": [
     "batch-migration",

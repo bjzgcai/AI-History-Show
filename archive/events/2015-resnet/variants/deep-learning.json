@@ -11,8 +11,8 @@
     "en": "Deep Learning and Unified Paradigms"
   },
   "displayDescription": {
-    "zh": "<p>2015年，微软亚洲研究院的何恺明、张祥雨、任少卿和孙剑提出残差学习。ResNet 通过快捷连接让很深的网络学习增量修正，而不是完整变换，解决了深层网络训练中的实际瓶颈，并成为视觉系统的常用骨干网络。融合后的版本结合了深度学习发展线对工程简洁性和可训练性的强调，以及 AI100 的论文来源和残差块解释。</p>",
-    "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning at Microsoft Research Asia. ResNet used shortcut connections so very deep networks could learn residual refinements instead of full transformations, solving a practical training bottleneck and becoming a standard visual backbone. The fused version combines the deep-learning storyline's emphasis on engineering simplicity and trainability with the AI100 paper sources and residual-block explanation.</p>"
+    "zh": "<p>2015 年，何恺明、张祥雨、任少卿和孙剑提出深度残差学习。他们观察到，普通网络加深后即使没有明显过拟合，训练误差也可能反而上升。ResNet 用恒等快捷连接绕过若干层，让这些层学习相对于输入的残差修正，而不是重新构造完整映射。</p><p>快捷连接几乎不增加参数，却显著改善了梯度传播和超深网络优化。论文中的 152 层 ResNet 在 ImageNet 上取得领先结果，并赢得 ILSVRC 2015 分类任务。残差块随后成为视觉、语音、语言和生成模型中的通用组件，证明简单的信息直通路径可以改变网络可训练深度。</p>",
+    "en": "<p>In 2015, Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced deep residual learning. They observed that making a conventional network deeper could increase training error even without obvious overfitting. ResNet inserted identity shortcut connections around groups of layers, asking those layers to learn a residual correction to the input rather than reconstructing a complete transformation.</p><p>The shortcuts added almost no parameters but substantially improved gradient flow and the optimization of very deep networks. A 152-layer ResNet achieved leading ImageNet results and won the ILSVRC 2015 classification task. Residual blocks soon became general components in vision, speech, language, and generative models, showing that simple information paths could change the trainable depth of neural systems.</p>"
   },
   "emphasis": [
     "batch-migration",

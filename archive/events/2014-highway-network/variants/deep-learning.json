@@ -22,7 +22,8 @@
         "asset-2014-highway-network-klaus-greff"
     ],
     "sourceIds": [
-        "source-highway-networks-arxiv",
+        "source-highway-networks-paper",
+        "source-resnet-follow-up-paper",
         "source-klaus-greff-homepage",
         "source-klaus-greff-github",
         "source-juergen-schmidhuber-idsia"
@@ -39,7 +40,7 @@
                 "zh": "Highway Network 的关键想法是给深层网络加入可学习的“通行门”：当某一层不必改写信息时，模型可以让信号近似原样穿过，从而把极深网络训练从“必须层层重写”改成“按需变换”。",
                 "en": "The key idea in Highway Networks was to add learnable carry gates to deep networks. When a layer did not need to rewrite information, the model could let signals pass through almost unchanged, turning very deep training from mandatory layer-by-layer rewriting into transformation only when needed."
             },
-            "sourceIds": ["source-highway-networks-arxiv"]
+            "sourceIds": ["source-highway-networks-paper"]
         },
         {
             "id": "context",
@@ -51,7 +52,7 @@
                 "zh": "它在深度学习史上的位置，像是一座桥：一边是门控思想对可训练性的修补，另一边是 ResNet 用更简洁 shortcut 结构把同样的优化直觉推向主流。",
                 "en": "Its place in deep-learning history is bridge-like: on one side, gating repaired trainability; on the other, ResNet used a simpler shortcut structure to carry the same optimization intuition into the mainstream."
             },
-            "sourceIds": ["source-highway-networks-arxiv"]
+            "sourceIds": ["source-highway-networks-paper", "source-resnet-follow-up-paper"]
         }
     ],
     "review": {

@@ -78,8 +78,8 @@
     }
   ],
   "displayDescription": {
-    "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>",
-    "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>"
+    "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4–1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>",
+    "zh": "<p>AlphaGo 结合策略网络、价值网络、蒙特卡洛树搜索和强化学习。系统先从职业棋手棋谱中进行监督学习，再通过自我对弈改进策略，并让树搜索把学习到的直觉与显式前瞻结合起来。2016 年《自然》论文报告了它战胜欧洲冠军樊麾，随后以 4 比 1 战胜李世石的比赛让这项成果进入全球公众视野。</p><p>围棋的分支数量和战略跨度极大，长期难以依靠蛮力搜索解决。AlphaGo 证明学习得到的表示可以缩小搜索范围，并评估难以手工编码的局面。它更深远的遗产是神经评估、规划与自我对弈的组合，这一模式影响了后续游戏系统及更广泛的决策研究。</p>"
   },
   "category": {
     "en": "BenchCouncil AI100 Achievements",

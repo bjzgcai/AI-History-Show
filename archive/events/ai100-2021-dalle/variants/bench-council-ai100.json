@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>OpenAI 提出 DALL-E，这是一种基于 Transformer、从文本描述生成图像的系统。它让文生图成为面向公众展示语言模型如何控制视觉合成的重要案例。</p>",
-    "en": "<p>OpenAI introduced DALL-E as a transformer-based system that generated images from text descriptions. It made text-to-image generation a public-facing demonstration of how language models could control visual synthesis.</p>"
+    "zh": "<p>OpenAI 在 2021 年提出首代 DALL·E，先用离散变分自编码器把图像压缩为一串视觉词元，再让自回归 Transformer 联合建模文本词元和图像词元。给定描述后，模型逐步预测视觉序列，并由解码器还原为图像。</p><p>它展示了单一生成模型可以组合物体、属性、风格和空间关系，并在没有为每个概念单独训练的情况下响应新文本提示。首代 DALL·E 与后来采用扩散技术的版本架构不同，输出分辨率和一致性也有限；但它把开放式文生图带入公众视野，并推动语言控制视觉生成的研究。</p>",
+    "en": "<p>OpenAI introduced the first DALL·E in 2021. A discrete variational autoencoder first compressed images into sequences of visual tokens, and an autoregressive Transformer jointly modeled those image tokens with text tokens. Given a description, the model predicted the visual sequence step by step and decoded it back into an image.</p><p>The system showed that one generative model could combine objects, attributes, styles, and spatial relations while responding to text concepts not trained as separate tasks. The first DALL·E used a different architecture from later diffusion-based versions and had limited resolution and consistency. It nevertheless brought open-ended text-to-image generation into public view and accelerated research on language-controlled visual synthesis.</p>"
   },
   "emphasis": [
     "batch-migration",

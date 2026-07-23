@@ -11,8 +11,8 @@
     "en": "Genesis of AI"
   },
   "displayDescription": {
-    "zh": "1969 年, 明斯基 出版《感知器: 计算几何简介》，论证感知机的局限： 单层神经网络无法解决线性不可分问题, 如异或门问题（同为0，异为1） 当时的计算机没有能力完成神经网络训练所需要的超大计算量 该结论使神经网络研究进入冰河期，此后的十几年，以神经网络为基础的连接主义研究长期无法得到政府资助。",
-    "en": "In 1969, Marvin Minsky and Seymour Papert published Perceptrons, showing limits of single-layer neural networks, including their inability to solve linearly inseparable problems such as XOR. Combined with limited computing power, the result cooled neural-network research for more than a decade."
+    "zh": "<p>1969 年，马文·明斯基和西摩·帕普特出版《感知机：计算几何导论》，用严格分析说明一类单层感知机在连接范围和结构受到限制时，无法表示奇偶性、连通性等任务。后来常用 XOR 来概括这种线性不可分限制，但原书讨论的范围和假设比这一口号更具体。</p><p>这本书并没有证明所有多层神经网络都不可行；真正的困难是当时尚缺少有效训练隐藏层的方法，也缺少足够的计算资源和数据。它与早期承诺未兑现、研究资助转向等因素共同削弱了连接主义热潮，使神经网络在一段时期内退居边缘。把这一转折称为“AI 寒冬”时，应理解为多种技术与制度条件叠加的结果，而不是一本书单独终结了整个领域。</p>",
+    "en": "<p>In 1969, Marvin Minsky and Seymour Papert published <em>Perceptrons: An Introduction to Computational Geometry</em>. Their mathematical analysis showed that certain single-layer perceptrons, under specific restrictions on connectivity and receptive fields, could not represent tasks involving parity or connectedness. XOR later became the common shorthand for this problem of linear inseparability, although the book's arguments and assumptions were more specific.</p><p>The book did not prove that every multilayer neural network was impossible. The practical obstacle was that researchers still lacked an effective way to train hidden layers, along with sufficient computing power and data. Combined with unmet early promises and changes in research funding, these limitations weakened enthusiasm for connectionism. The resulting “AI winter” is therefore better understood as a convergence of technical and institutional factors, not as the consequence of one book alone.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -25,7 +25,8 @@
     "asset-1969-ai-winter-papers-01-2"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-perceptrons-book",
+    "source-cornell-perceptron-retrospective"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -43,7 +44,8 @@
         "en": "What changed the field in Perceptrons was that it clarified exactly which tasks single-layer perceptrons could not solve. Researchers then shifted attention away from the neural-network boom toward approaches that were easier to formalize and prove."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-perceptrons-book",
+        "source-cornell-perceptron-retrospective"
       ]
     },
     {
@@ -57,7 +59,8 @@
         "en": "The winter did not mean neural networks had failed forever. It meant their promise was revalued under the computing and algorithmic limits of the time. The later return of backpropagation, LSTM, and large-scale compute essentially filled in the missing training mechanisms and resources."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-perceptrons-book",
+        "source-cornell-perceptron-retrospective"
       ]
     }
   ],

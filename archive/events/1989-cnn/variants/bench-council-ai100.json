@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
-    "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+    "zh": "<p>勒昆及合作者在 1989 年证明，用反向传播训练的卷积神经网络可以识别手写邮政编码。局部感受野只连接图像的小区域，共享权重让同一特征检测器在不同位置重复使用，逐层下采样则降低对微小位移的敏感性；整个系统从像素到类别共同训练。</p><p>后来形成的 LeNet-5 把卷积、子采样和分类器整合为文档识别流水线，并实际用于支票和邮政字符处理。这一技术路线以较少参数利用图像的空间结构，取代大量手工特征。它在 2012 年规模化 CNN 浪潮之前，已证明端到端卷积学习具有工程价值。</p>",
+    "en": "<p>Yann LeCun and colleagues showed in 1989 that a convolutional neural network trained with backpropagation could recognize handwritten ZIP codes. Local receptive fields connect only to small image regions, shared weights reuse the same feature detector across positions, and progressive subsampling reduces sensitivity to small shifts. The complete system is trained jointly from pixels to classes.</p><p>The later LeNet-5 architecture integrated convolution, subsampling, and classification into a document-recognition pipeline used for checks and postal characters. This line of work exploited image structure with relatively few parameters and replaced extensive hand-designed features. Long before the scaled CNN wave of 2012, it demonstrated that end-to-end convolutional learning could deliver practical engineering value.</p>"
   },
   "emphasis": [
     "batch-migration",

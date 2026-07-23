@@ -3,26 +3,26 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "卷积神经网络与 LeNet 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "Convolutional Networks and LeNet is an AI history milestone in the current legacy presentation."
+      "zh": "1989 年，扬·勒昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
+      "en": "In 1989, Yann LeCun and collaborators demonstrated convolutional networks trained by backpropagation for handwritten ZIP-code recognition."
     },
     "sourceIds": [
       "source-backpropagation-applied-to-handwritten-zip-code-recognition",
       "source-lenet-5-demos-and-documentation"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "<p>1989年，扬·勒昆及合作者证明，用反向传播训练的卷积神经网络可以识别手写邮编，把受视觉皮层启发的局部感受野和共享权重变成端到端感知系统。LeNet 是这条 CNN 技术线的代表性实现：卷积提取局部笔画，池化稳定特征，分类器把视觉流程连接到实际文档识别任务。</p>",
-      "en": "<p>In 1989, Yann LeCun and collaborators showed that convolutional networks trained with backpropagation could recognize handwritten ZIP codes, turning biologically inspired local receptive fields and shared weights into an end-to-end perception system. LeNet became the representative implementation of this CNN line: convolutions extracted local strokes, pooling stabilized features, and a classifier connected the visual pipeline to practical document recognition.</p>"
+      "zh": "卷积网络通过局部连接和共享权重减少参数，并把特征提取与分类整合进一个端到端学习系统；这条路线后来发展为 LeNet-5。",
+      "en": "Convolutional networks reduced parameters through local connections and shared weights while combining feature extraction and classification in one end-to-end learning system; the line later matured into LeNet-5."
     },
     "sourceIds": [
       "source-backpropagation-applied-to-handwritten-zip-code-recognition",
       "source-lenet-5-demos-and-documentation"
     ],
-    "status": "needs-source"
+    "status": "verified"
   }
 ]

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。</p>",
-    "en": "<p>ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.</p>"
+    "zh": "<p>ImageNet 项目在 2009 年论文中提出以 WordNet 的概念层级组织大规模图像数据库，并通过网络收集与人工标注为每个概念配备大量实例。它把过去相对有限的数据集扩展到数百万张图像和成千上万个类别，使视觉算法能够在更接近真实世界多样性的范围内训练和比较。</p><p>随后建立的 ImageNet 大规模视觉识别挑战提供统一任务、训练集和评测指标，让算法进步能够连续追踪，也让 AlexNet 在 2012 年的突破清晰可见。ImageNet 证明数据规模和公开基准本身可以改变研究方向，同时也促使领域认真面对类别设计、标注偏差、数据许可和社会代表性问题。</p>",
+    "en": "<p>The 2009 ImageNet paper proposed a large image database organized through the concept hierarchy of WordNet, using web collection and human annotation to supply many examples for each concept. It expanded computer-vision data from comparatively limited collections to millions of images across thousands of categories, allowing algorithms to train and be compared over much greater visual diversity.</p><p>The later ImageNet Large Scale Visual Recognition Challenge supplied common tasks, training data, and metrics, making progress continuously measurable and AlexNet's 2012 breakthrough unmistakable. ImageNet demonstrated that dataset scale and a public benchmark could redirect an entire field. It also pushed researchers to confront category design, annotation bias, licensing, and social representation in large datasets.</p>"
   },
   "emphasis": [
     "batch-migration",
