@@ -1,6 +1,6 @@
 # Archive Validation Report
 
-Generated: 2026-07-23T05:21:17.900Z
+Generated: 2026-07-23T06:59:29.908Z
 
 ## Summary
 
@@ -8,8 +8,8 @@ Generated: 2026-07-23T05:21:17.900Z
 - Storylines: 4
 - Variants: 147
 - Claims: 278
-- Sources: 493
-- Assets: 372
+- Sources: 495
+- Assets: 374
 - Quizzes: 118
 - Errors: 0
 - Warnings: 0
@@ -464,6 +464,8 @@ None.
 - `resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg` — ai100-2000-lle/asset-ai100-2000-lle-20010411-snowbird-dsc00680-h-thumb
 - `resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg` — ai100-2000-neural-language-model/asset-ai100-2000-neural-language-model-330px-iclr-2025-yoshua-bengio-02
 - `resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg` — ai100-2005-gnn/asset-ai100-2005-gnn-citations
+- `resources/images/external/ai100-2005-gnn/papers/2005-gnn-unisi-oai-record.png` — ai100-2005-gnn/asset-ai100-2005-gnn-unisi-paper-record
+- `resources/images/external/ai100-2005-gnn/people/marco-gori-university-video-still.jpg` — ai100-2005-gnn/asset-ai100-2005-gnn-marco-gori-portrait
 - `resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg` — ai100-2005-hog/asset-ai100-2005-hog-navneet-dalal-portrait
 - `resources/images/external/ai100-2006-surf/herbert-bay-portrait.png` — ai100-2006-surf/asset-ai100-2006-surf-herbert-bay-gm
 - `resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg` — ai100-2013-variational-autoencoder/asset-ai100-2013-variational-autoencoder-portrait
