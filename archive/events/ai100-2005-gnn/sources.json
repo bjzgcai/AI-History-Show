@@ -30,12 +30,12 @@
       "zh": "《一种用于图领域学习的新模型》",
       "en": "A new model for learning in graph domains"
     },
-    "url": "https://ieeexplore.ieee.org/document/4700287",
+    "url": "https://doi.org/10.1109/IJCNN.2005.1555942",
     "language": "en",
     "reliability": "primary",
     "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
+      "zh": "2005 年 IJCNN 原始会议论文，作者为马尔科·戈里、加布里埃莱·蒙法尔迪尼和弗兰科·斯卡塞利。",
+      "en": "Original IJCNN 2005 conference paper by Marco Gori, Gabriele Monfardini, and Franco Scarselli."
     },
     "purpose": "core-evidence"
   },
@@ -78,5 +78,45 @@
       "en": "Author homepage and portrait source hosted by the University of Siena."
     },
     "purpose": "biography"
+  },
+  {
+    "id": "source-marco-gori-university-video",
+    "type": "official-page",
+    "label": {
+      "zh": "官方页面",
+      "en": "Official page"
+    },
+    "title": {
+      "zh": "《从 AI 到 aI 转变的挑战》",
+      "en": "The challenges of the transition from Ai to aI"
+    },
+    "url": "https://www.youtube.com/watch?v=mnyz8r1GLG8",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "由锡耶纳大学官方 YouTube 频道发布，视频缩略图清楚标注并展示马尔科·戈里。",
+      "en": "Published by the official University of Siena YouTube channel; the video thumbnail clearly labels and depicts Marco Gori."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-unisi-oai-2005-gnn-record",
+    "type": "paper-index",
+    "label": {
+      "zh": "论文索引",
+      "en": "Paper index"
+    },
+    "title": {
+      "zh": "锡耶纳大学：《一种用于图领域学习的新模型》记录",
+      "en": "University of Siena record: A new model for learning in graph domains"
+    },
+    "url": "https://usiena-air.unisi.it/oai/request?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:usiena-air.unisi.it:11365/19137",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "公开 OAI-PMH 元数据确认三位作者、2005 年 IJCNN 会议信息、摘要、页码和受限访问状态。",
+      "en": "Public OAI-PMH metadata confirms the three authors, IJCNN 2005 venue, abstract, page range, and closed-access status."
+    },
+    "purpose": "core-evidence"
   }
 ]
