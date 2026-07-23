@@ -1,5 +1,37 @@
 [
   {
+    "id": "asset-1968-hal-9000-stanley-kubrick",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1968-hal-9000_stanley-kubrick.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "斯坦利·库布里克肖像",
+      "en": "Stanley Kubrick portrait"
+    },
+    "subcaption": {
+      "zh": "《2001：太空漫游》导演。",
+      "en": "Director of 2001: A Space Odyssey."
+    },
+    "sourceId": "source-stanley-kubrick-commons-portrait",
+    "sourceName": {
+      "zh": "美国国会图书馆 / Wikimedia Commons",
+      "en": "Library of Congress / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域；1949 年由 Phillip Harrington 拍摄，来源为美国国会图书馆馆藏。",
+        "en": "Public domain; photographed by Phillip Harrington in 1949 and sourced from the Library of Congress collection."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1968-hal-9000-conflict",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1968-hal-9000_conflict.svg",

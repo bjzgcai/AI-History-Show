@@ -45,6 +45,7 @@
         "zh": "AlexNet 主要作者",
         "en": "AlexNet lead author"
       },
+      "avatar": "resources/images/figures/historical/alex-krizhevsky-2013.png",
       "organizationIds": [
         "university-of-toronto"
       ]
@@ -65,6 +66,7 @@
         "zh": "AlexNet 共同作者与导师",
         "en": "AlexNet co-author and advisor"
       },
+      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
       "organizationIds": [
         "university-of-toronto"
       ]

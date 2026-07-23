@@ -50,14 +50,17 @@
       }
     }
   ],
-  "assetIds": [
-    "asset-ai100-2017-wasserstein-gan-bottou-75",
-    "asset-2017-wasserstein-gan-critic-distance"
+    "assetIds": [
+      "asset-ai100-2017-wasserstein-gan-martin-arjovsky",
+      "asset-2017-wasserstein-gan-critic-distance",
+      "asset-ai100-2017-wasserstein-gan-leon-bottou-2025"
   ],
   "sourceIds": [
     "source-wasserstein-generative-adversarial-networks",
     "source-improved-training-of-wasserstein-gans",
-    "source-wasserstein-gan-overview"
+      "source-wasserstein-gan-overview",
+      "source-martin-arjovsky-github-profile",
+      "source-leon-bottou-commons-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -120,19 +123,32 @@
     "zh": "BenchCouncil AI100 成就"
   },
   "figures": [
-    {
-      "name": {
-        "en": "Martin Arjovsky",
+      {
+        "name": {
+          "en": "Martin Arjovsky",
         "zh": "马丁·阿尔乔夫斯基"
       },
       "role": {
         "en": "Wasserstein GAN lead author",
         "zh": "Wasserstein GAN 主要作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
-    }
+      "avatar": "resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Leon Bottou",
+          "zh": "莱昂·博图"
+        },
+        "role": {
+          "en": "Wasserstein GAN co-author",
+          "zh": "Wasserstein GAN 共同作者"
+        },
+        "avatar": "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
   ],
   "photos": [],
   "videoUrl": "",

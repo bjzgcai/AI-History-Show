@@ -51,11 +51,26 @@
   ],
   "figures": [
     {
+      "figureId": "lianmin-zheng",
+      "name": {
+        "zh": "郑廉民",
+        "en": "Lianmin Zheng"
+      },
+      "role": {
+        "zh": "Chatbot Arena / LMArena 共同创建者",
+        "en": "Co-creator of Chatbot Arena / LMArena"
+      },
+      "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
       "figureId": "research-institutions",
       "role": {
         "zh": "前沿模型研发机构",
         "en": "Leading-edge model R&D organization"
       },
+      "avatar": "resources/images/figures/research-institution.png",
       "organizationIds": []
     }
   ],

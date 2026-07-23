@@ -58,5 +58,65 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "alternate-access"
+  },
+  {
+    "id": "source-christopher-manning-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "克里斯托弗·曼宁资料照片",
+      "en": "Christopher Manning archival portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Xuthoria；Wikimedia Commons 文件页标注 CC BY-SA 4.0。",
+      "en": "Photograph by Xuthoria; the Wikimedia Commons file page identifies CC BY-SA 4.0."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-christopher-manning-stanford-profile",
+    "type": "personal-page",
+    "label": {
+      "zh": "个人主页",
+      "en": "Personal homepage"
+    },
+    "title": {
+      "zh": "克里斯托弗·曼宁斯坦福个人主页",
+      "en": "Christopher Manning Stanford profile"
+    },
+    "url": "https://nlp.stanford.edu/~manning/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "斯坦福大学托管的官方个人主页和肖像来源。",
+      "en": "Official Stanford-hosted personal homepage and portrait source."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-richard-socher-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "理查德·索彻资料照片",
+      "en": "Richard Socher archival portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Richard_Socher_(born_1983)_at_World_Economic_Forum_Annual_Meeting_2025.png",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 CC BY 3.0。",
+      "en": "The Wikimedia Commons file page identifies CC BY 3.0."
+    },
+    "purpose": "biography"
   }
 ]

@@ -33,5 +33,67 @@
       "en": "Branch timeline visual",
       "zh": "分支时间线视觉图"
     }
+  },
+  {
+    "id": "asset-elon-musk-commons-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/elon-musk.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "埃隆·马斯克肖像",
+      "en": "Elon Musk portrait"
+    },
+    "subcaption": {
+      "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+      "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+    },
+    "sourceId": "source-elon-musk-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+        "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:humanistic-cycle"
+    ]
+  },
+  {
+    "id": "asset-stephen-hawking-commons-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/stephen-hawking.jpg",
+    "role": "supporting-portrait",
+    "caption": {
+      "zh": "斯蒂芬·霍金肖像",
+      "en": "Stephen Hawking portrait"
+    },
+    "subcaption": {
+      "zh": "公开警示高级 AI 控制风险的科学家。",
+      "en": "Scientist who publicly warned about controlling advanced AI."
+    },
+    "sourceId": "source-stephen-hawking-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+        "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:humanistic-cycle"
+    ]
   }
 ]

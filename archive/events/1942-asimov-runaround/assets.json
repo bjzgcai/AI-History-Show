@@ -1,5 +1,37 @@
 [
   {
+    "id": "asset-1942-asimov-runaround-isaac-asimov",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1942-asimov-runaround_isaac-asimov.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "艾萨克·阿西莫夫肖像",
+      "en": "Isaac Asimov portrait"
+    },
+    "subcaption": {
+      "zh": "《转圈圈》作者，机器人三定律的提出者。",
+      "en": "Author of Runaround and formulator of the Three Laws of Robotics."
+    },
+    "sourceId": "source-isaac-asimov-commons-portrait",
+    "sourceName": {
+      "zh": "美国国会图书馆 / Wikimedia Commons",
+      "en": "Library of Congress / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg",
+    "rights": {
+      "status": "public-domain",
+      "license": {
+        "zh": "公有领域；摄影者 Phillip Leonian，照片来自《纽约世界电讯与太阳报》馆藏。",
+        "en": "Public domain; photographed by Phillip Leonian for the New York World-Telegram & Sun collection."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaac.Asimov01.jpg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1942-asimov-runaround-three-laws",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1942-asimov-runaround_three-laws.svg",

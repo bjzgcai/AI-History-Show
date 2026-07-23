@@ -58,5 +58,45 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "background"
+  },
+  {
+    "id": "source-martin-arjovsky-github-profile",
+    "type": "personal-page",
+    "label": {
+      "zh": "个人主页",
+      "en": "Personal homepage"
+    },
+    "title": {
+      "zh": "马丁·阿尔乔夫斯基 GitHub 主页",
+      "en": "Martin Arjovsky GitHub profile"
+    },
+    "url": "https://github.com/martinarjovsky",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "作者本人账号；其原始 WassersteinGAN 代码仓库可用于核对身份。",
+      "en": "The author's own account; its original WassersteinGAN repository provides an identity cross-check."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-leon-bottou-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "莱昂·博图资料照片",
+      "en": "Leon Bottou archival portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_L%C3%A9on_Bottou_02.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Xuthoria；Wikimedia Commons 文件页标注 CC BY-SA 4.0。",
+      "en": "Photograph by Xuthoria; the Wikimedia Commons file page identifies CC BY-SA 4.0."
+    },
+    "purpose": "biography"
   }
 ]

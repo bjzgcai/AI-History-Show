@@ -50,14 +50,20 @@
       }
     }
   ],
-  "assetIds": [
-    "asset-ai100-2014-glove-photo",
-    "asset-2014-glove-cooccurrence"
+    "assetIds": [
+      "asset-ai100-2014-glove-photo",
+      "asset-2014-glove-cooccurrence",
+      "asset-ai100-2014-glove-christopher-manning-commons",
+      "asset-ai100-2014-glove-christopher-manning-stanford",
+      "asset-ai100-2014-glove-richard-socher-portrait"
   ],
   "sourceIds": [
     "source-glove-global-vectors-for-word-representation",
     "source-stanford-glove-project-page",
-    "source-acl-anthology-pdf"
+      "source-acl-anthology-pdf",
+      "source-christopher-manning-commons-portrait",
+      "source-christopher-manning-stanford-profile",
+      "source-richard-socher-commons-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -120,19 +126,45 @@
     "zh": "BenchCouncil AI100 成就"
   },
   "figures": [
-    {
-      "name": {
-        "en": "Jeffrey Pennington",
+      {
+        "name": {
+          "en": "Jeffrey Pennington",
         "zh": "杰弗里·彭宁顿"
       },
       "role": {
         "en": "GloVe lead author",
         "zh": "GloVe 主要作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
-    }
+      "avatar": "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Christopher Manning",
+          "zh": "克里斯托弗·曼宁"
+        },
+        "role": {
+          "en": "GloVe co-author",
+          "zh": "GloVe 共同作者"
+        },
+        "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Richard Socher",
+          "zh": "理查德·索彻"
+        },
+        "role": {
+          "en": "GloVe co-author",
+          "zh": "GloVe 共同作者"
+        },
+        "avatar": "resources/images/external/ai100-2014-glove/richard-socher-portrait.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
   ],
   "photos": [],
   "videoUrl": "",

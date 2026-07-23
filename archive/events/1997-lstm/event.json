@@ -42,6 +42,7 @@
         "zh": "LSTM 共同作者",
         "en": "LSTM co-author"
       },
+      "avatar": "resources/images/figures/sepp-hochreiter.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "LSTM 共同作者",
         "en": "LSTM co-author"
       },
+      "avatar": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
       "organizationIds": []
     }
   ],

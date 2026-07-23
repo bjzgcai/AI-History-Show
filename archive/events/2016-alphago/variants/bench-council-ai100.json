@@ -16,10 +16,12 @@
   ],
   "visual": "go",
   "assetIds": [
+    "asset-david-silver-commons-portrait",
     "asset-alphago-lee-sedol",
     "asset-alphago-policy-value-search"
   ],
   "sourceIds": [
+    "source-david-silver-commons-portrait",
     "source-alphago-nature-paper",
     "source-deepmind-alphago-page",
     "source-katago-analysis-engine"
@@ -93,7 +95,7 @@
         "en": "AlphaGo lead researcher",
         "zh": "AlphaGo 主要研究者"
       },
-      "avatar": "",
+      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

@@ -47,8 +47,12 @@
             }
         }
     ],
-    "assetIds": ["asset-1968-hal-9000-conflict"],
+    "assetIds": [
+        "asset-1968-hal-9000-stanley-kubrick",
+        "asset-1968-hal-9000-conflict"
+    ],
     "sourceIds": [
+        "source-stanley-kubrick-commons-portrait",
         "source-2001-film-overview",
         "source-hal-9000-overview",
         "source-2001-novel-context",

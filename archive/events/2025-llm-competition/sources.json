@@ -1,5 +1,45 @@
 [
   {
+    "id": "source-lianmin-zheng-personal-page",
+    "type": "personal-page",
+    "label": {
+      "zh": "个人主页",
+      "en": "Personal homepage"
+    },
+    "title": {
+      "zh": "郑廉民个人主页",
+      "en": "Lianmin Zheng personal homepage"
+    },
+    "url": "https://lmzheng.net/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "研究者官方个人主页和肖像来源。",
+      "en": "The researcher's official personal homepage and portrait source."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-lmsys-chatbot-arena-introduction",
+    "type": "article",
+    "label": {
+      "zh": "文章",
+      "en": "Article"
+    },
+    "title": {
+      "zh": "Chatbot Arena：用 Elo 评分在真实环境中评测大语言模型",
+      "en": "Chatbot Arena: Benchmarking LLMs in the Wild with Elo Ratings"
+    },
+    "url": "https://www.lmsys.org/blog/2023-05-03-arena/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "LMSYS 官方文章，列出郑廉民、应莹、蒋玮霖等 Chatbot Arena 初始作者并介绍平台机制。",
+      "en": "Official LMSYS article listing Lianmin Zheng, Ying Sheng, Wei-Lin Chiang, and the other initial Chatbot Arena authors while describing the platform."
+    },
+    "purpose": "core-evidence"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {

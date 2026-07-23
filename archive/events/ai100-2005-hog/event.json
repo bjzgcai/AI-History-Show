@@ -38,18 +38,29 @@
   "figures": [
     {
       "figureId": "navneet-dalal",
-      "role": {
-        "zh": "HOG 共同作者",
-        "en": "Co-author of HOG"
+      "name": {
+        "zh": "纳夫尼特·达拉尔",
+        "en": "Navneet Dalal"
       },
+      "role": {
+        "zh": "HOG 第一作者",
+        "en": "First author of HOG"
+      },
+      "avatar": "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
+      "figureType": "person",
       "organizationIds": []
     },
     {
       "figureId": "bill-triggs",
+      "name": {
+        "zh": "比尔·特里格斯",
+        "en": "Bill Triggs"
+      },
       "role": {
         "zh": "HOG 共同作者",
         "en": "Co-author of HOG"
       },
+      "figureType": "person",
       "organizationIds": []
     }
   ],

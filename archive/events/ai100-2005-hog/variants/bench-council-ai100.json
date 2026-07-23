@@ -50,16 +50,16 @@
       }
     }
   ],
-  "assetIds": [
-    "asset-ai100-2005-hog-bill-triggs-portrait",
-    "asset-2005-hog-descriptor-grid"
+    "assetIds": [
+      "asset-ai100-2005-hog-navneet-dalal-portrait",
+      "asset-2005-hog-descriptor-grid"
   ],
   "sourceIds": [
     "source-histograms-of-oriented-gradients-for-human-detection",
     "source-ieee-cvpr-paper-record",
     "source-histogram-of-oriented-gradients-overview",
     "source-scikit-image-hog-example",
-    "source-bill-triggs-lear-profile"
+      "source-navneet-dalal-personal-page"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -127,11 +127,11 @@
         "en": "Navneet Dalal",
         "zh": "纳夫尼特·达拉尔"
       },
-      "role": {
-        "en": "Co-author of HOG",
-        "zh": "HOG 共同作者"
+        "role": {
+          "en": "First author of HOG",
+          "zh": "HOG 第一作者"
       },
-      "avatar": "",
+        "avatar": "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

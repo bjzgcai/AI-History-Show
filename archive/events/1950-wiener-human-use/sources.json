@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-norbert-wiener-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "诺伯特·维纳肖像",
+      "en": "Norbert Wiener portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Norbert_Wiener.png",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注为公有领域。",
+      "en": "The Wikimedia Commons file page identifies the photograph as public domain."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-open-library-book-metadata",
     "type": "book-index",
     "label": {

@@ -42,6 +42,7 @@
         "zh": "LDA 第一作者",
         "en": "First author of LDA"
       },
+      "avatar": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "共同作者，概率机器学习研究者",
         "en": "Co-author and probabilistic ML researcher"
       },
+      "avatar": "resources/images/figures/michael-i-jordan.jpg",
       "organizationIds": []
     }
   ],

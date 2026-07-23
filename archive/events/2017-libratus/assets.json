@@ -24,5 +24,67 @@
       "variant:gaming-ai"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-noam-brown-official-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/noam-brown.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "诺姆·布朗肖像",
+      "en": "Noam Brown portrait"
+    },
+    "subcaption": {
+      "zh": "Libratus 与 Pluribus 共同创建者。",
+      "en": "Co-creator of Libratus and Pluribus."
+    },
+    "sourceId": "source-noam-brown-official-profile",
+    "sourceName": {
+      "zh": "诺姆·布朗个人主页",
+      "en": "Noam Brown personal homepage"
+    },
+    "sourceUrl": "https://noambrown.com/assets/img/profile-poker.jpg",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+        "en": "Image from the subject's personal homepage; redistribution rights are not stated and must be reviewed before publication."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:gaming-ai"
+    ]
+  },
+  {
+    "id": "asset-tuomas-sandholm-commons-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
+    "role": "supporting-portrait",
+    "caption": {
+      "zh": "托马斯·桑德霍姆肖像",
+      "en": "Tuomas Sandholm portrait"
+    },
+    "subcaption": {
+      "zh": "Libratus 与 Pluribus 共同创建者。",
+      "en": "Co-creator of Libratus and Pluribus."
+    },
+    "sourceId": "source-tuomas-sandholm-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Tuomas_Sandholm_01.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 4.0，摄影者 Xuthoria；使用时须署名并遵循相同方式共享。",
+        "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:gaming-ai"
+    ]
   }
 ]

@@ -20,24 +20,104 @@
     "purpose": "alternate-access"
   },
   {
-    "id": "source-mit-news-obituary-for-joseph-weizenbaum",
-    "type": "news",
+    "id": "source-weizenbaum-rit-1982-portrait",
+    "type": "image-source",
     "label": {
-      "zh": "讣告",
-      "en": "Obituary"
+      "zh": "图片来源",
+      "en": "Image source"
     },
     "title": {
-      "zh": "麻省理工学院 新闻 obituary for 约瑟夫·魏岑鲍姆",
-      "en": "MIT News obituary for Joseph Weizenbaum"
+      "zh": "1982 年约瑟夫·魏岑鲍姆肖像",
+      "en": "1982 portrait of Joseph Weizenbaum"
     },
-    "url": "https://news.mit.edu/2008/obit-weizenbaum-0310",
+    "url": "https://commons.wikimedia.org/wiki/File:Weizenbaum_1982.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "罗切斯特理工学院档案照片；Wikimedia Commons 标注为公有领域。",
+      "en": "Rochester Institute of Technology archival photograph; marked public domain on Wikimedia Commons."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-weizenbaum-uszkoreit-2006-photo",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "汉斯·乌斯科赖特与约瑟夫·魏岑鲍姆，2006 年",
+      "en": "Hans Uszkoreit and Joseph Weizenbaum, 2006"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Hans_Uszkoreit,_Joseph_Weizenbaum_(238430262).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页提供 CC BY 2.0 授权信息。",
+      "en": "The Wikimedia Commons file page provides CC BY 2.0 licensing information."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-original-eliza-mad-slip",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "ELIZA 的原始 MAD-SLIP 源码",
+      "en": "Original ELIZA source code in MAD-SLIP"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:ORIGINAL_ELIZA_IN_MAD_SLIP.pdf",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "17 页源码档案；展示图片取自第 9 页，主程序从该页开始。文件页标注 CC0 1.0。",
+      "en": "Seventeen-page source archive; the display image uses page 9, where the main program begins. The file page identifies CC0 1.0."
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-ctss-programmers-guide-diagram",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《CTSS 程序员指南》图 1.1",
+      "en": "CTSS Programmer's Guide, Figure 1.1"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "1963 年 CTSS 7090/7094 系统结构图；Wikimedia Commons 标注为公有领域。",
+      "en": "1963 CTSS 7090/7094 system diagram; marked public domain on Wikimedia Commons."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-eliza-conversation-reconstruction",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "ELIZA 对话重建",
+      "en": "ELIZA conversation reconstruction"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:ELIZA_conversation.png",
     "language": "en",
     "reliability": "reference-only",
     "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
+      "zh": "早期 ELIZA 终端对话的重建图；Wikimedia Commons 标注为公有领域。",
+      "en": "Reconstruction of an early ELIZA terminal conversation; marked public domain on Wikimedia Commons."
     },
-    "purpose": "biography"
+    "purpose": "historical-context"
   },
   {
     "id": "source-eliza-source-reconstruction-project",

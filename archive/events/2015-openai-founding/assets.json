@@ -33,5 +33,67 @@
       "en": "Branch timeline visual",
       "zh": "分支时间线视觉图"
     }
+  },
+  {
+    "id": "asset-sam-altman-commons-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/sam-altman.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "萨姆·奥尔特曼肖像",
+      "en": "Sam Altman portrait"
+    },
+    "subcaption": {
+      "zh": "OpenAI 创始联合主席。",
+      "en": "OpenAI founding co-chair."
+    },
+    "sourceId": "source-sam-altman-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED_(cropped).jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+        "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:humanistic-cycle"
+    ]
+  },
+  {
+    "id": "asset-elon-musk-commons-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/elon-musk.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "埃隆·马斯克肖像",
+      "en": "Elon Musk portrait"
+    },
+    "subcaption": {
+      "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+      "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+    },
+    "sourceId": "source-elon-musk-commons-portrait",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+        "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:humanistic-cycle"
+    ]
   }
 ]

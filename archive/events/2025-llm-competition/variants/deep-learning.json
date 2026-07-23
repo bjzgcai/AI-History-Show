@@ -20,12 +20,15 @@
   ],
   "visualModules": [],
   "assetIds": [
+    "asset-2025-llm-competition-lianmin-zheng",
     "asset-2025-llm-competition-historical-01",
     "asset-2025-llm-competition-architecture-01",
     "asset-2025-llm-competition-historical-02",
     "asset-2025-llm-competition-historical-03"
   ],
   "sourceIds": [
+    "source-lianmin-zheng-personal-page",
+    "source-lmsys-chatbot-arena-introduction",
     "source-legacy-event-record"
   ],
   "claimIds": [
@@ -74,6 +77,19 @@
     "zh": "大模型与科学智能"
   },
   "figures": [
+    {
+      "name": {
+        "en": "Lianmin Zheng",
+        "zh": "郑廉民"
+      },
+      "role": {
+        "en": "Co-creator of Chatbot Arena / LMArena",
+        "zh": "Chatbot Arena / LMArena 共同创建者"
+      },
+      "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
     {
       "name": {
         "en": "Research Institutions",

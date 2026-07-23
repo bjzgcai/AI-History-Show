@@ -42,6 +42,7 @@
         "zh": "DeepMind 强化学习负责人",
         "en": "DeepMind reinforcement learning lead"
       },
+      "avatar": "resources/images/figures/authoritative/david-silver.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "DeepMind 联合创始人",
         "en": "DeepMind co-founder"
       },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
       "organizationIds": []
     }
   ],
