@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-23 05:18
+// 生成时间: 2026-07-23 05:21
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -6744,8 +6744,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>",
-      "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>"
+      "zh": "<p>早期 R-CNN 系统先用外部算法生成候选区域，再让卷积网络逐个判断，候选框阶段成为速度和系统整合的瓶颈。Faster R-CNN 引入区域建议网络，在共享卷积特征图上滑动，用预设锚框预测哪些位置可能包含物体及其边界偏移，再把建议区域交给检测头分类和精修。</p><p>区域建议网络与检测器共享大部分计算，并可联合训练，使候选框生成也成为可学习过程。这个“建议区域 + 分类定位”的统一两阶段框架在精度上长期具有竞争力，也成为目标检测研究的重要参照；它清楚展示了速度、定位质量和端到端学习之间的工程权衡。</p>",
+      "en": "<p>Earlier R-CNN systems used an external algorithm to generate candidate regions before a convolutional network classified them, making proposal generation a speed and integration bottleneck. Faster R-CNN introduced a Region Proposal Network that slides over shared feature maps and uses anchor boxes to predict likely objects and boundary offsets. Proposed regions then pass to a detection head for classification and refinement.</p><p>The proposal network shares most computation with the detector and can be trained jointly, turning candidate generation into a learned component. This unified two-stage proposal-and-recognition framework remained highly competitive for accurate detection and became a standard research reference. It also made the tradeoff among speed, localization quality, and end-to-end learning easier to study.</p>"
     },
     "figures": [
       {
@@ -56176,8 +56176,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-      "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
+      "zh": "<p>2015 年公开的 Highway Networks 论文为普通前馈层增加变换门和通行门。网络可以选择对输入执行非线性变换，也可以让信息近似原样通过；这些门由数据学习，而不是由设计者固定，从而为梯度和特征提供跨越多层的直接路径。</p><p>作者展示了数百层、甚至实验中达到上千层的前馈网络可以用随机梯度下降训练。门控捷径增加了一定计算成本，却证明“让信息绕过不必要变换”能够解决深层优化困难。随后 ResNet 去掉可学习门控，采用更简洁的恒等快捷连接，把这一思路推向计算机视觉主流。</p>",
+      "en": "<p>The Highway Networks paper, publicly released in 2015, added transform and carry gates to ordinary feed-forward layers. A network could choose to apply a nonlinear transformation or allow information to pass through almost unchanged. These gates were learned from data, giving features and gradients direct routes across many layers.</p><p>The authors trained networks with hundreds of layers, and experiments extended to roughly one thousand layers, using stochastic gradient descent. Gated shortcuts added computational cost, but they demonstrated that bypassing unnecessary transformations could overcome deep optimization barriers. ResNet soon removed the learned gates and used simpler identity shortcuts, carrying the same information-flow principle into mainstream computer vision.</p>"
     },
     "figures": [
       {
@@ -60444,8 +60444,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
-      "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+      "zh": "<p>到 2025 年，大语言模型竞争已不再由一项静态基准或单一模型定义。Chatbot Arena（后发展为 LMArena）让用户在不知道模型身份的情况下，对同一提示的两个回答进行成对选择，再用统计方法汇总偏好。这种公开、持续更新的人类评测，使闭源与开放权重模型家族能够在真实交互中并列比较。</p><p>竞争也从文本生成扩展到推理、多模态、代码、工具使用、响应延迟、成本与部署自由度。Stanford《2025 AI Index》记录了前沿性能继续提高、模型间差距缩小以及推理成本快速下降，但活榜单并非永久结论：结果会受到用户群体、提示分布、回答风格和评测方法影响。因此，这一节点更代表多条技术与产品路线同时竞逐，而不是宣布某个模型固定领先。</p>",
+      "en": "<p>By 2025, LLM competition was no longer defined by one static benchmark or one dominant model. Chatbot Arena, later developed as LMArena, showed users two anonymous answers to the same prompt, collected pairwise preferences, and aggregated them statistically. This live human evaluation allowed proprietary and open-weight model families to be compared through real interactions.</p><p>Competition broadened across reasoning, multimodality, coding, tool use, latency, cost, and deployment freedom. Stanford's <em>2025 AI Index</em> documented improving frontier performance, narrowing gaps, and sharply falling inference costs. Yet a live leaderboard is not a permanent verdict: results depend on its users, prompts, response style, and evaluation method. The milestone therefore marks several technical and product strategies competing at once, not a fixed winner.</p>"
     },
     "figures": [
       {

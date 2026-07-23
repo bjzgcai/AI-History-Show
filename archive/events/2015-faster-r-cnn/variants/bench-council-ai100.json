@@ -11,8 +11,8 @@
         "en": "AI Top 100 Achievements"
     },
     "displayDescription": {
-        "zh": "<p>早期 R-CNN 系统依赖外部候选区域算法，在特征提取与检测之间形成瓶颈。Faster R-CNN 引入区域建议网络，与检测器共享卷积特征。这个统一的两阶段流水线成为高精度目标检测的标准参照。</p>",
-        "en": "<p>Earlier R-CNN systems depended on external region proposal algorithms, creating a bottleneck between feature extraction and detection. Faster R-CNN introduced a Region Proposal Network that shares convolutional features with the detector. This unified two-stage pipeline became a standard reference point for accurate object detection.</p>"
+        "zh": "<p>早期 R-CNN 系统先用外部算法生成候选区域，再让卷积网络逐个判断，候选框阶段成为速度和系统整合的瓶颈。Faster R-CNN 引入区域建议网络，在共享卷积特征图上滑动，用预设锚框预测哪些位置可能包含物体及其边界偏移，再把建议区域交给检测头分类和精修。</p><p>区域建议网络与检测器共享大部分计算，并可联合训练，使候选框生成也成为可学习过程。这个“建议区域 + 分类定位”的统一两阶段框架在精度上长期具有竞争力，也成为目标检测研究的重要参照；它清楚展示了速度、定位质量和端到端学习之间的工程权衡。</p>",
+        "en": "<p>Earlier R-CNN systems used an external algorithm to generate candidate regions before a convolutional network classified them, making proposal generation a speed and integration bottleneck. Faster R-CNN introduced a Region Proposal Network that slides over shared feature maps and uses anchor boxes to predict likely objects and boundary offsets. Proposed regions then pass to a detection head for classification and refinement.</p><p>The proposal network shares most computation with the detector and can be trained jointly, turning candidate generation into a learned component. This unified two-stage proposal-and-recognition framework remained highly competitive for accurate detection and became a standard research reference. It also made the tradeoff among speed, localization quality, and end-to-end learning easier to study.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "detector",
