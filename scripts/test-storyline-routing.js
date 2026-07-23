@@ -112,7 +112,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /\.ui-detail-topline\s*\{[\s\S]*?grid-template-columns:\s*fit-content\(829px\) minmax\(300px, 1fr\)[\s\S]*?column-gap:\s*67px[\s\S]*?\.ui-detail-context\s*\{[\s\S]*?min-width:\s*564px[\s\S]*?max-width:\s*829px/,
+    /\.ui-detail-topline\s*\{[\s\S]*?--ui-detail-context-base-width:\s*564px[\s\S]*?--ui-detail-context-max-width:\s*829px[\s\S]*?--ui-detail-title-min-width:\s*300px[\s\S]*?grid-template-columns:[\s\S]*?fit-content\(var\(--ui-detail-context-max-width\)\)[\s\S]*?minmax\(var\(--ui-detail-title-min-width\), 1fr\)[\s\S]*?\.ui-detail-context\s*\{[\s\S]*?width:\s*var\(--ui-detail-context-width, max-content\)[\s\S]*?min-width:\s*var\(--ui-detail-context-base-width\)[\s\S]*?max-width:\s*var\(--ui-detail-context-max-width\)/,
     'desktop detail titles should start at the body column and move right only when the context requires it'
 );
 assert.match(
@@ -124,6 +124,21 @@ assert.match(
     indexHtml,
     /\.ui-detail-place\s*\{[\s\S]*?width:\s*auto[\s\S]*?max-height:\s*2\.6em[\s\S]*?overflow:\s*hidden[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?-webkit-line-clamp:\s*2/,
     'detail locations should use the available width and truncate only after two lines'
+);
+assert.match(
+    indexHtml,
+    /function fitUiDetailLocation\(\)[\s\S]*?readLayoutWidth\('--ui-detail-context-base-width'\)[\s\S]*?readLayoutWidth\('--ui-detail-context-max-width'\)[\s\S]*?readLayoutWidth\('--ui-detail-title-min-width'\)[\s\S]*?fitsInTwoLines[\s\S]*?while \(high - low > 1\)/,
+    'desktop detail locations should use their base width first and grow only enough to fit within two lines'
+);
+assert.match(
+    indexHtml,
+    /function refreshUiBrowserMeasurements\(\)[\s\S]*?fitUiEventImages\(\)[\s\S]*?fitUiDetailLocation\(\)[\s\S]*?window\.addEventListener\('resize'[\s\S]*?refreshUiBrowserMeasurements\(\)[\s\S]*?window\.addEventListener\('orientationchange'[\s\S]*?refreshUiBrowserMeasurements\(\)/,
+    'responsive UI measurements should share one refresh path'
+);
+assert.match(
+    indexHtml,
+    /function scheduleUiDetailLocationFit\(\)[\s\S]*?requestAnimationFrame\(fitUiDetailLocation\)[\s\S]*?document\.fonts\.ready\.then\(fitUiDetailLocation\)[\s\S]*?function renderUiDetail\(\)[\s\S]*?scheduleUiDetailLocationFit\(\)/,
+    'detail location wrapping should be recalculated after rendering and after fonts load'
 );
 assert.match(
     indexHtml,
