@@ -42,6 +42,7 @@
         "zh": "Pluribus 共同创建者",
         "en": "Pluribus co-creator"
       },
+      "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "Pluribus 共同创建者",
         "en": "Pluribus co-creator"
       },
+      "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
       "organizationIds": []
     }
   ],

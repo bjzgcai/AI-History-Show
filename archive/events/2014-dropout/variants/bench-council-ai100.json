@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Dropout 通过在训练中随机移除神经元，让大型神经网络更不容易过拟合。每个小批量近似训练一个变薄的网络，测试时预测则近似集成。这个思想后来成为深度学习工具包里的标准正则化方法。</p>",
-    "en": "<p>Dropout made overfitting less dangerous in large neural networks by randomly removing units during training. Each minibatch effectively trains a thinned network, while test-time prediction approximates an ensemble. The idea became a standard regularizer across deep learning toolkits.</p>"
+    "zh": "<p>Dropout 在训练时以设定概率随机屏蔽一部分神经元及其连接，使网络不能长期依赖固定的特征组合。每次小批量训练都相当于从同一参数集合中抽取一个不同的“变薄网络”；推理时使用完整网络并调整激活尺度，近似汇总许多子网络的预测。</p><p>这种简单机制减少特征之间的共同适应，在大型全连接网络中有效缓解过拟合，并成为深度学习的经典正则化方法。Dropout 的收益依赖架构、数据规模和归一化方式，在现代卷积或 Transformer 系统中通常与数据增强、权重衰减等方法配合使用，而不是固定的万能配方。</p>",
+    "en": "<p>Dropout randomly masks a chosen fraction of units and their connections during training, preventing a network from depending permanently on fixed combinations of features. Each minibatch effectively trains a different thinned network drawn from shared parameters. At inference time the full network is used with appropriately scaled activations, approximating an average over many subnetworks.</p><p>The simple mechanism reduced co-adaptation and helped control overfitting in large fully connected networks, becoming a classic deep-learning regularizer. Its benefit depends on architecture, dataset scale, and normalization choices. In modern convolutional and Transformer systems it is usually one element of a broader recipe that can also include augmentation, weight decay, and other regularization methods.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "First author of the JMLR dropout paper",
         "zh": "《机器学习研究杂志》 Dropout 论文第一作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

@@ -24,5 +24,36 @@
       "variant:gaming-ai"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-michael-buro-university-portrait",
+    "type": "image",
+    "path": "resources/images/figures/authoritative/michael-buro.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "迈克尔·布罗肖像",
+      "en": "Michael Buro portrait"
+    },
+    "subcaption": {
+      "zh": "Logistello 创建者。",
+      "en": "Creator of Logistello."
+    },
+    "sourceId": "source-michael-buro-university-profile",
+    "sourceName": {
+      "zh": "阿尔伯塔大学",
+      "en": "University of Alberta"
+    },
+    "sourceUrl": "https://webdocs.cs.ualberta.ca/~mburo/jpg/mburo.jpg",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自大学托管的本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+        "en": "Image from the university-hosted personal homepage; redistribution rights are not stated and must be reviewed before publication."
+      }
+    },
+    "editable": true,
+    "usage": [
+      "variant:gaming-ai"
+    ]
   }
 ]

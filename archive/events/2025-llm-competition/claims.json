@@ -3,24 +3,27 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "大语言模型百花齐放 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "A Flourishing Competition Among Large Language Models is an AI history milestone in the current legacy presentation."
+      "zh": "Chatbot Arena 通过匿名、成对的人类偏好比较和统计汇总，为不同大语言模型提供了持续更新的公开评测。",
+      "en": "Chatbot Arena provided continuously updated public evaluation of language models through anonymous pairwise human-preference comparisons and statistical aggregation."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-chatbot-arena-paper",
+      "source-lmarena-official"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "到 2025 年，大语言模型进入了广泛竞争的阶段。LMArena 等公开排行榜反映出不同模型家族的快速进步，推理能力、多模态能力、工具使用和部署效率都在持续提升。",
-      "en": "By 2025, large language models had entered a period of broad competition. Public leaderboards such as LMArena reflected rapid progress across model families, with advances in reasoning, multimodality, tool use and deployment efficiency."
+      "zh": "到 2025 年，模型竞争已覆盖推理、多模态、代码、工具使用、成本与部署方式；人类偏好榜单会随用户、提示、模型和评测方法变化，不应被视为固定结论。",
+      "en": "By 2025, model competition spanned reasoning, multimodality, coding, tool use, cost, and deployment; human-preference rankings change with users, prompts, models, and evaluation methods rather than constituting permanent verdicts."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-chatbot-arena-paper",
+      "source-lmarena-official",
+      "source-stanford-ai-index-2025"
     ],
-    "status": "needs-source"
+    "status": "verified"
   }
 ]

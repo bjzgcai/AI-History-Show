@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>阿瑟·霍尔和罗伯特·肯纳德提出岭回归，用有偏估计处理预测变量非正交时不稳定的最小二乘问题。向正规方程对角线加入小的正数，可以降低系数估计的方差。</p>",
-    "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression as a biased estimation method for unstable least-squares problems with nonorthogonal predictors. Adding a small positive value to the diagonal of the normal equations made coefficient estimates less variable.</p>"
+    "zh": "<p>霍尔和肯纳德在 1970 年提出岭回归，处理预测变量高度相关时普通最小二乘系数剧烈波动的问题。它在平方误差之外加入系数平方和构成的 L2 惩罚，等价于向正规方程对角线加入正数；解因此带有偏差，却能显著降低方差并改善预测稳定性。</p><p>正则化强度控制“贴合训练数据”和“保持较小系数”之间的权衡。岭回归通常保留全部变量，不像 Lasso 那样产生大量精确零系数，但在多重共线性和许多弱信号共同作用时很有效。它把有意引入偏差以换取泛化能力的思想带入现代统计学习。</p>",
+    "en": "<p>Arthur Hoerl and Robert Kennard introduced ridge regression in 1970 to address the instability of ordinary least-squares coefficients when predictors are strongly correlated. It adds an L2 penalty on the squared coefficients to the fitting error, equivalently adding a positive value to the diagonal of the normal equations. The estimate becomes biased but can have much lower variance and more stable predictions.</p><p>A regularization parameter controls the tradeoff between fitting the training data and keeping coefficients small. Ridge regression generally retains all variables rather than creating many exact zeros as the Lasso does, but it is effective under multicollinearity and when many weak signals contribute together. It established the modern learning principle of accepting deliberate bias to improve generalization.</p>"
   },
   "emphasis": [
     "batch-migration",

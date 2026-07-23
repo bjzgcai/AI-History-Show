@@ -38,10 +38,16 @@
   "figures": [
     {
       "figureId": "tero-karras",
+      "name": {
+        "zh": "特罗·卡拉斯",
+        "en": "Tero Karras"
+      },
       "role": {
         "zh": "StyleGAN 主要作者",
         "en": "StyleGAN lead author"
       },
+      "avatar": "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

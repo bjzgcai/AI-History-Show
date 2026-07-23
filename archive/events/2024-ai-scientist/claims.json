@@ -3,24 +3,26 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "AI科学家与自主实验室 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "AI Scientists and Autonomous Laboratories is an AI history milestone in the current legacy presentation."
+      "zh": "AI Scientist 将计算研究的多个步骤串成自动循环，A-Lab 则把机器学习与机器人实验连接到材料合成流程。",
+      "en": "The AI Scientist connected multiple computational research steps into an automated loop, while A-Lab linked machine learning and robotic experimentation for materials synthesis."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-ai-scientist-paper",
+      "source-autonomous-materials-lab-paper"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
-      "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."
+      "zh": "A-Lab 论文报告系统在 17 天运行中成功合成 58 个目标中的 41 个新材料；AI Scientist 仍是需要独立复现和真实同行评议的研究原型。",
+      "en": "The A-Lab paper reported successful synthesis of 41 of 58 targeted novel materials during 17 days of operation; the AI Scientist remained a research prototype requiring independent replication and real peer review."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-ai-scientist-paper",
+      "source-autonomous-materials-lab-paper"
     ],
-    "status": "needs-source"
+    "status": "verified"
   }
 ]

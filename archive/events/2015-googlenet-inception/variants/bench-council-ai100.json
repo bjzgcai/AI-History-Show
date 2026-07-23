@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>",
-    "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>"
+    "zh": "<p>GoogLeNet 的 Inception 架构表明，加深网络不必只沿单一路径堆叠层。每个 Inception 模块并行使用不同尺寸的卷积和池化，让网络同时观察多种感受野，再拼接各分支输出；1×1 卷积先压缩通道，使这种多分支计算保持可承受。</p><p>该系统赢得 2014 年 ImageNet 挑战赛，并用全局平均池化等设计减少参数规模。Inception 把表示能力与计算预算作为同一个架构问题处理，影响了后续瓶颈层、多分支模块和高效网络设计。它也说明 CNN 的进步不仅来自“更深”，还来自如何组织每层内部的计算路径。</p>",
+    "en": "<p>GoogLeNet's Inception architecture showed that increasing depth did not require stacking layers along only one path. Each Inception module applies different convolution sizes and pooling in parallel, allowing the network to examine several receptive-field scales before concatenating the branch outputs. 1×1 convolutions reduce channel dimensions so this multi-branch computation remains affordable.</p><p>The system won the 2014 ImageNet challenge and used choices such as global average pooling to limit parameter growth. Inception treated representational power and computational budget as one architectural problem, influencing later bottleneck layers, multi-branch modules, and efficient network design. It demonstrated that CNN progress depended not only on becoming deeper, but also on organizing computation inside each block.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Lead author of the GoogLeNet paper",
         "zh": "GoogLeNet 论文第一作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

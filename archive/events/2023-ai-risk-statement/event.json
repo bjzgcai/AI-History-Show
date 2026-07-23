@@ -37,6 +37,21 @@
   ],
   "figures": [
     {
+      "figureId": "dan-hendrycks",
+      "name": {
+        "en": "Dan Hendrycks",
+        "zh": "丹·亨德里克斯"
+      },
+      "role": {
+        "en": "Director of the Center for AI Safety, which published the statement",
+        "zh": "发布该声明的 AI 安全中心主任"
+      },
+      "avatar": "resources/images/figures/authoritative/dan-hendrycks.webp",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
       "figureId": "center-for-ai-safety",
       "name": {
         "en": "Center for AI Safety",
@@ -47,6 +62,51 @@
         "zh": "AI 风险声明发布机构"
       },
       "avatar": "",
+      "avatarStyle": "",
+      "figureType": "organization",
+      "organizationIds": []
+    },
+    {
+      "figureId": "geoffrey-hinton",
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Prominent signatory",
+        "zh": "主要签署人"
+      },
+      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "yoshua-bengio",
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Prominent signatory",
+        "zh": "主要签署人"
+      },
+      "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "demis-hassabis",
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "德米斯·哈萨比斯"
+      },
+      "role": {
+        "en": "Prominent signatory",
+        "zh": "主要签署人"
+      },
+      "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

@@ -47,8 +47,12 @@
             }
         }
     ],
-    "assetIds": ["asset-1978-xiaolingtong-future-city"],
+    "assetIds": [
+        "asset-1978-xiaolingtong-ye-yonglie",
+        "asset-1978-xiaolingtong-future-city"
+    ],
     "sourceIds": [
+        "source-ye-yonglie-commons-portrait",
         "source-little-smart-publication-overview",
         "source-ye-yonglie-biography",
         "source-science-fiction-encyclopedia-ye-yonglie",

@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>西莫尼扬和齐瑟曼在 2014 年研究卷积网络深度对大规模图像识别的影响。VGG 用规则化方式反复堆叠 3×3 小卷积与池化层，构成 16 层和 19 层等配置；多个小卷积在扩大有效感受野的同时，引入更多非线性，又让整体架构保持一致。</p><p>VGG 在 ImageNet 评测中证明了系统增加深度的价值，其清晰结构和公开模型也使它成为广泛使用的特征提取器与迁移学习基线。它的参数量和计算成本较高，后来被残差网络等更高效架构取代，但“小卷积、深堆叠、统一模块”的设计思想持续影响视觉网络。</p>",
+    "en": "<p>Karen Simonyan and Andrew Zisserman studied the effect of convolutional-network depth on large-scale image recognition in 2014. VGG repeatedly stacked small 3×3 convolutions and pooling layers in a regular pattern, producing configurations such as VGG-16 and VGG-19. Several small convolutions enlarged the effective receptive field while adding nonlinearities and keeping the architecture uniform.</p><p>VGG's ImageNet results demonstrated the value of systematically increasing depth, while its clear structure and released models made it a widely used feature extractor and transfer-learning baseline. Its parameter count and computational cost are high, and more efficient residual architectures later displaced it at the frontier. The principles of small filters, deep stacks, and reusable modules nevertheless remained influential.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"
@@ -107,7 +111,7 @@
         "en": "Co-author and Visual Geometry Group lead",
         "zh": "共同作者，视觉几何组负责人"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

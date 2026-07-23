@@ -42,6 +42,7 @@
         "zh": "Libratus 共同创建者",
         "en": "Libratus co-creator"
       },
+      "avatar": "resources/images/figures/authoritative/noam-brown.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "CMU 教授，Libratus 共同创建者",
         "en": "CMU professor and Libratus co-creator"
       },
+      "avatar": "resources/images/figures/authoritative/tuomas-sandholm.jpg",
       "organizationIds": []
     }
   ],

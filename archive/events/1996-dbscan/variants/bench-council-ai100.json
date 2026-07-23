@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>DBSCAN 改变聚类方式：它询问数据哪里足够密集，而不是预先指定有多少簇。它从核心点生长簇，连接密度可达邻域，并把稀疏点标为噪声，因此适合不规则空间模式。</p>",
-    "en": "<p>DBSCAN changed clustering by asking where data are dense rather than how many clusters should be declared in advance. It grows clusters from core points, connects density-reachable neighborhoods, and labels sparse points as noise, making it useful for irregular spatial patterns.</p>"
+    "zh": "<p>DBSCAN 用邻域密度而不是预设簇数定义聚类。若一个点在半径 ε 内至少拥有 MinPts 个邻居，它就是核心点；算法从核心点向密度可达的邻居扩展，将连接起来的高密度区域组成簇，并把无法归入任何簇的稀疏点标记为噪声。</p><p>这种定义可以发现弯曲或不规则形状的簇，并在聚类过程中显式处理异常点，特别适合空间数据。DBSCAN 对 ε、MinPts 和距离尺度较敏感，在不同区域密度差异很大或高维距离失去区分力时表现会下降。它仍是“以密度发现结构”的经典方法。</p>",
+    "en": "<p>DBSCAN defines clusters through neighborhood density instead of a predetermined number of groups. A point is a core point when at least MinPts neighbors lie within radius ε. The algorithm expands from core points through density-reachable neighbors, joining connected high-density regions into clusters and labeling sparse points that belong to none of them as noise.</p><p>This definition can discover curved or irregular cluster shapes and handles outliers explicitly during clustering, making it especially useful for spatial data. DBSCAN is sensitive to ε, MinPts, and feature scale, and it struggles when different regions have very different densities or when high-dimensional distances lose discrimination. It remains the classic demonstration that clusters can be defined by density rather than centroids.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -124,7 +124,7 @@
         "en": "Co-author of DBSCAN",
         "zh": "DBSCAN 共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

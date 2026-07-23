@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>萨姆·罗维斯和劳伦斯·索尔提出局部线性嵌入，这是一种保持局部重建权重的非线性降维算法。LLE 不直接建模全局距离，而是保持每个点可由邻居局部重建。</p>",
-    "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding as a nonlinear dimensionality-reduction algorithm that preserves local reconstruction weights. Instead of modeling global distances directly, LLE keeps each point locally reconstructable from its neighbors.</p>"
+    "zh": "<p>罗维斯和索尔在 2000 年提出局部线性嵌入，假设非线性流形在足够小的邻域内可以近似为线性。算法先为每个样本寻找近邻，并计算一组重建权重，使该样本能由邻居线性组合得到；随后在低维空间中寻找坐标，尽量保持同一组重建权重。</p><p>LLE 不需要显式估计全局距离，也能把弯曲流形展开，同时保留局部邻域关系。它对邻居数量、噪声和采样密度较敏感，且新样本映射和全局几何解释并不直接。其核心贡献是把“局部可重建性”变成非线性降维原则，与 Isomap 共同推动流形学习。</p>",
+    "en": "<p>Sam Roweis and Lawrence Saul introduced locally linear embedding in 2000 with the assumption that a nonlinear manifold is approximately linear in sufficiently small neighborhoods. The algorithm finds neighbors for each sample and computes weights that reconstruct the sample as a linear combination of those neighbors. It then finds low-dimensional coordinates that preserve the same reconstruction weights.</p><p>LLE does not explicitly estimate global distances and can unfold curved manifolds while retaining local neighborhood relationships. It is sensitive to the number of neighbors, noise, and sampling density, and mapping new samples or interpreting global geometry is not automatic. Its central contribution was turning local reconstructability into a principle for nonlinear dimensionality reduction, helping establish manifold learning alongside Isomap.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Co-author of LLE",
         "zh": "LLE 共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
-    "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+    "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。它利用并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片，每秒检查大量候选局面。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+    "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5–2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. It combined parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips to examine enormous numbers of candidate positions.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -56,6 +56,7 @@
     "asset-1997-deep-blue-chip-board"
   ],
   "sourceIds": [
+    "source-deep-blue-system-paper",
     "source-murray-campbell-ibm-research",
     "source-mastering-the-game-computer-history-museum",
     "source-ibm100-deep-blue"

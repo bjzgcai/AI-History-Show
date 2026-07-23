@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>GAT 用对邻居的学习型注意力替代固定图聚合权重。这让每个节点能够决定哪些邻居对自身表示最重要。</p>",
-    "en": "<p>GAT replaced fixed graph aggregation weights with learned attention over neighbors. This let each node decide which neighbors mattered most for its representation.</p>"
+    "zh": "<p>图注意力网络在 2017 年用学习得到的注意力权重替代固定邻居聚合。对每个节点，模型比较其变换后表示与各邻居表示，计算归一化系数，再按不同权重汇总邻居信息；多头注意力可以并行学习多种关系模式并稳定训练。</p><p>GAT 不需要预先求图拉普拉斯特征分解，也能让不同邻居对当前节点产生不同影响，适合半监督节点分类和可变图结构。注意力权重不自动等于因果解释，密集邻域还会增加计算成本；但它把 Transformer 式的选择性聚合带入图神经网络。</p>",
+    "en": "<p>Graph Attention Networks replaced fixed neighborhood aggregation with learned attention weights in 2017. For each node, the model compares its transformed representation with those of its neighbors, computes normalized coefficients, and combines neighbor information with different weights. Multi-head attention learns several relation patterns in parallel and can stabilize training.</p><p>GAT requires no precomputed graph-Laplacian eigendecomposition and lets different neighbors influence a node unequally, making it useful for semi-supervised node classification and varying graph structures. Attention weights are not automatically causal explanations, and dense neighborhoods increase computation. The method nevertheless brought Transformer-like selective aggregation into graph neural networks.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -129,7 +129,7 @@
         "en": "GAT lead author",
         "zh": "GAT 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

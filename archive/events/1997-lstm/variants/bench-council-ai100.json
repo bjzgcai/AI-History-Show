@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>1997年，塞普·霍赫赖特和于尔根·施密德胡伯提出长短期记忆网络，用来缓解循环神经网络中的梯度消失问题。融合后的叙事把深度学习时间线强调的长距离信息流，与 AI100 对输入门、输出门和遗忘门的解释连接起来，说明门控记忆如何在注意力模型占据主导前，让序列学习变得实用。</p>",
-    "en": "<p>In 1997, Sepp Hochreiter and Juergen Schmidhuber introduced long short-term memory to address the vanishing-gradient problem in recurrent neural networks. The fused story connects the deep-learning timeline's emphasis on long-range information flow with the AI100 account of input, output, and forget gates, showing how gated memory made sequence learning practical before attention-based models became dominant.</p>"
+    "zh": "<p>霍赫赖特和施密德胡伯在 1997 年提出 LSTM，缓解循环神经网络在长序列上梯度消失或爆炸的问题。核心记忆单元通过近似恒定的自连接让误差信号沿时间传播，输入门控制何时写入，输出门控制何时读取，从而把短期计算与较长期状态分开。</p><p>原始 LSTM 并不包含后来标准架构中的遗忘门；遗忘机制由后续工作加入，使网络可以主动清除旧状态。LSTM 及其变体曾广泛用于语音识别、翻译、手写识别和时间序列，在注意力模型占据主导前，使长距离序列学习成为实用技术，并确立门控信息流的设计范式。</p>",
+    "en": "<p>Sepp Hochreiter and Jürgen Schmidhuber introduced LSTM in 1997 to address vanishing or exploding gradients across long recurrent sequences. Its central memory cell uses an approximately constant self-connection so error signals can travel through time. An input gate controls when information is written, and an output gate controls when it is read, separating short-term computation from longer-lived state.</p><p>The original LSTM did not contain the forget gate found in later standard architectures; subsequent work added forgetting so the network could actively clear obsolete state. LSTM variants became widely used in speech recognition, translation, handwriting recognition, and time-series modeling. Before attention models became dominant, they made long-range sequence learning practical and established gated information flow as a durable design pattern.</p>"
   },
   "emphasis": [
     "batch-migration",

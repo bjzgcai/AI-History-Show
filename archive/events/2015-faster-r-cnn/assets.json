@@ -1,80 +1,91 @@
 [
-  {
-    "id": "asset-2015-faster-r-cnn-kaiming-he",
-    "type": "image",
-    "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-    "role": "hero-image",
-    "caption": {
-      "zh": "何恺明肖像",
-      "en": "Kaiming He portrait"
+    {
+        "id": "asset-2015-faster-r-cnn-kaiming-he",
+        "type": "image",
+        "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+        "role": "hero-image",
+        "caption": {
+            "zh": "何恺明肖像",
+            "en": "Kaiming He portrait"
+        },
+        "subcaption": {
+            "zh": "Faster R-CNN 共同作者",
+            "en": "Co-author of Faster R-CNN"
+        },
+        "sourceId": "source-kaiming-he-profile-at-mit-csail",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "zh": "图片来自何恺明的 MIT 个人主页；页面未声明再分发许可，对外发布前需复核授权。",
+                "en": "Image from Kaiming He's MIT personal homepage; redistribution rights are not stated and must be reviewed before publication."
+            }
+        },
+        "displayUsage": {
+            "zh": "用于展示 Faster R-CNN 共同作者何恺明。",
+            "en": "Used to present Faster R-CNN co-author Kaiming He."
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true,
+        "sourceName": {
+            "zh": "MIT CSAIL",
+            "en": "MIT CSAIL"
+        },
+        "sourceUrl": "https://people.csail.mit.edu/kaiming/"
     },
-    "subcaption": {
-      "zh": "Faster R-CNN 共同作者",
-      "en": "Portrait from Kaiming He's MIT-hosted personal page."
+    {
+        "id": "asset-2015-faster-r-cnn-rpn-pipeline",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "zh": "区域建议网络",
+            "en": "Region proposal network"
+        },
+        "subcaption": {
+            "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
+            "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
+        },
+        "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "rights": {
+            "status": "local-redraw",
+            "license": {
+                "zh": "本地原创 SVG 重绘，不复制来源材料中的出版图形。",
+                "en": "Original local SVG redraw; source figures are not copied."
+            }
+        },
+        "displayUsage": {
+            "zh": "用于解释区域建议网络如何生成候选框。",
+            "en": "Used to explain how the Region Proposal Network generates candidate boxes."
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true
     },
-    "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "zh": "个人网站照片；未说明复用权利。",
-        "en": "Personal website photo; rights not stated."
-      }
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-2015-faster-r-cnn-rpn-pipeline",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_rpn-pipeline.svg",
-    "role": "architecture-explainer",
-    "caption": {
-      "zh": "区域建议网络",
-      "en": "Region proposal network"
-    },
-    "subcaption": {
-      "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
-      "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
-    },
-    "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
-        "en": "Original local SVG redraw; source figures are not copied."
-      }
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  },
-  {
-    "id": "asset-2015-faster-r-cnn-detection-output",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg",
-    "role": "architecture-explainer",
-    "caption": {
-      "zh": "检测输出框",
-      "en": "Detection output boxes"
-    },
-    "subcaption": {
-      "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
-      "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
-    },
-    "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
-    "rights": {
-      "status": "documented-in-legacy",
-      "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
-        "en": "Original local SVG redraw; source figures are not copied."
-      }
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true
-  }
+    {
+        "id": "asset-2015-faster-r-cnn-detection-output",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/2015-faster-r-cnn_detection-output.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "zh": "检测输出框",
+            "en": "Detection output boxes"
+        },
+        "subcaption": {
+            "zh": "Faster R-CNN 的独立本地重画，依据相关来源材料制作。",
+            "en": "Distinct local redraw for Faster R-CNN, based on the related source material."
+        },
+        "sourceId": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "rights": {
+            "status": "local-redraw",
+            "license": {
+                "zh": "本地原创 SVG 重绘，不复制来源材料中的出版图形。",
+                "en": "Original local SVG redraw; source figures are not copied."
+            }
+        },
+        "displayUsage": {
+            "zh": "用于展示 Faster R-CNN 的分类与边界框输出。",
+            "en": "Used to show Faster R-CNN classification and bounding-box outputs."
+        },
+        "usage": ["variant:bench-council-ai100"],
+        "editable": true
+    }
 ]

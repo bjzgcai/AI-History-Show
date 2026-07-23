@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
-    "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+    "zh": "<p>克里斯托弗·斯特雷奇在 1951 年开始为 Pilot ACE 编写跳棋程序，随后把完整版本移植到曼彻斯特 Ferranti Mark I，并在 1952 年运行。程序需要编码棋盘、合法走法和吃子规则，搜索若干步后的局面，再用手工评估函数比较候选路线。</p><p>在计算机仍主要被理解为数值计算设备的时期，这项工作展示了存储程序机器也能处理符号状态、选择和策略。受限内存与速度使搜索深度很浅，程序也远非顶尖棋手，但它把博弈确立为早期 AI 的实验场，并推动剪枝、评估函数和人机交互程序的发展。</p>",
+    "en": "<p>Christopher Strachey began writing a draughts program for the Pilot ACE in 1951, then transferred a complete version to the Manchester Ferranti Mark I, where it ran in 1952. The program encoded the board, legal moves, and captures, searched several plies of future positions, and compared candidate lines with a hand-designed evaluation function.</p><p>At a time when computers were understood mainly as numerical calculators, the work showed that a stored-program machine could manipulate symbolic states, choices, and strategy. Severe memory and speed limits kept the search shallow, and the program was far from elite play, but it established games as an early AI testbed and advanced ideas about pruning, evaluation functions, and interactive programs.</p>"
   },
   "emphasis": [
     "batch-migration",

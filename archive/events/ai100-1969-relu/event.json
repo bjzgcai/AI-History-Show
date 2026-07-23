@@ -42,6 +42,7 @@
         "zh": "早期神经视觉研究者",
         "en": "Early neural vision researcher"
       },
+      "avatar": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "后续深度整流函数分析共同作者",
         "en": "Co-author of later deep rectifier analysis"
       },
+      "avatar": "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
       "organizationIds": []
     }
   ],

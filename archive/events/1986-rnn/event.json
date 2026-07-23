@@ -42,6 +42,7 @@
         "zh": "简单循环神经网络提出者",
         "en": "The creator of Simple RNN"
       },
+      "avatar": "resources/images/figures/jeffrey-elman.jpg",
       "organizationIds": []
     },
     {
@@ -50,6 +51,7 @@
         "zh": "乔丹网络提出者",
         "en": "The creator of Jordan Network"
       },
+      "avatar": "resources/images/figures/michael-i-jordan.jpg",
       "organizationIds": []
     }
   ],

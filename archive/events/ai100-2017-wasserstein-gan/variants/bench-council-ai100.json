@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Wasserstein GAN 用受最优传输启发的距离替代原始 GAN 散度。critic 目标让训练行为更容易解释，也帮助诊断模式坍塌和收敛问题。</p>",
-    "en": "<p>Wasserstein GAN replaced the original GAN divergence with a distance inspired by optimal transport. The critic objective made training behavior easier to interpret and helped diagnose mode collapse and convergence problems.</p>"
+    "zh": "<p>Wasserstein GAN 用最优传输中的 Earth Mover 距离重新解释生成分布与真实分布之间的差异。判别器被替换为输出实数分数的 critic，并必须满足 Lipschitz 约束；原论文通过权重裁剪近似这一约束，使生成器在分布几乎不重叠时仍能获得更有用的梯度。</p><p>critic 损失与样本质量的关系更连续，使训练过程更容易监控，并缓解部分不稳定和模式崩溃。权重裁剪本身可能限制模型能力，后续 WGAN-GP 用梯度惩罚改进约束。WGAN 的长期价值在于把生成训练问题与概率分布几何和最优传输连接起来。</p>",
+    "en": "<p>Wasserstein GAN reinterpreted the difference between generated and real distributions through the Earth Mover distance from optimal transport. The discriminator becomes a critic that outputs real-valued scores and must satisfy a Lipschitz constraint. The original paper approximated that constraint through weight clipping, allowing the generator to receive more useful gradients even when the two distributions barely overlap.</p><p>The critic loss varies more continuously with sample quality, making training easier to monitor and reducing some instability and mode collapse. Weight clipping can itself restrict model capacity, and the later WGAN-GP replaced it with a gradient penalty. WGAN's lasting contribution was connecting generative training with the geometry of probability distributions and optimal transport.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -50,14 +50,17 @@
       }
     }
   ],
-  "assetIds": [
-    "asset-ai100-2017-wasserstein-gan-bottou-75",
-    "asset-2017-wasserstein-gan-critic-distance"
+    "assetIds": [
+      "asset-ai100-2017-wasserstein-gan-martin-arjovsky",
+      "asset-2017-wasserstein-gan-critic-distance",
+      "asset-ai100-2017-wasserstein-gan-leon-bottou-2025"
   ],
   "sourceIds": [
     "source-wasserstein-generative-adversarial-networks",
     "source-improved-training-of-wasserstein-gans",
-    "source-wasserstein-gan-overview"
+      "source-wasserstein-gan-overview",
+      "source-martin-arjovsky-github-profile",
+      "source-leon-bottou-commons-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -120,19 +123,32 @@
     "zh": "BenchCouncil AI100 成就"
   },
   "figures": [
-    {
-      "name": {
-        "en": "Martin Arjovsky",
+      {
+        "name": {
+          "en": "Martin Arjovsky",
         "zh": "马丁·阿尔乔夫斯基"
       },
       "role": {
         "en": "Wasserstein GAN lead author",
         "zh": "Wasserstein GAN 主要作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
-    }
+      "avatar": "resources/images/external/ai100-2017-wasserstein-gan/martin-arjovsky-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Leon Bottou",
+          "zh": "莱昂·博图"
+        },
+        "role": {
+          "en": "Wasserstein GAN co-author",
+          "zh": "Wasserstein GAN 共同作者"
+        },
+        "avatar": "resources/images/external/ai100-2017-wasserstein-gan/leon-bottou-portrait-2025.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
   ],
   "photos": [],
   "videoUrl": "",

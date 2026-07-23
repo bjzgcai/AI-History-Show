@@ -12,7 +12,7 @@
     },
     "url": "https://arxiv.org/abs/1312.5602",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
@@ -32,7 +32,7 @@
     },
     "url": "https://www.nature.com/articles/nature14236",
     "language": "en",
-    "reliability": "secondary",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
       "en": "Migrated from generated legacy milestone achievement sources."
@@ -58,5 +58,25 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "historical-context"
+  },
+  {
+    "id": "source-david-silver-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "大卫·席尔瓦资料照片",
+      "en": "David Silver archival portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Wikimedia Commons 文件页标注 CC BY-SA 2.0。",
+      "en": "The Wikimedia Commons file page identifies CC BY-SA 2.0."
+    },
+    "purpose": "image-provenance"
   }
 ]

@@ -1,26 +1,22 @@
 [
-  {
-    "id": "claim-legacy-achievement-summary",
-    "importance": "core",
-    "text": {
-      "zh": "高速网络 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "Highway Networks is an AI history milestone in the current legacy presentation."
+    {
+        "id": "claim-legacy-achievement-summary",
+        "importance": "core",
+        "text": {
+            "zh": "Highway Networks 通过可学习的变换门和通行门，为信息与梯度提供跨越深层网络的捷径。",
+            "en": "Highway Networks used learned transform and carry gates to create shortcuts for information and gradients across very deep networks."
+        },
+        "sourceIds": ["source-highway-networks-paper"],
+        "status": "verified"
     },
-    "sourceIds": [
-      "source-legacy-event-record"
-    ],
-    "status": "needs-source"
-  },
-  {
-    "id": "claim-legacy-description",
-    "importance": "context",
-    "text": {
-      "zh": "高速网络 引入了带有门控机制的捷径路径，使信息能够在非常深的神经网络中有效传递。它们证明了拥有数百甚至上千层的神经网络也可以被成功训练，为后来的残差网络奠定了基础。",
-      "en": "Highway Networks introduced gated shortcut paths that allowed information to pass through very deep neural networks. They demonstrated that networks with hundreds or even thousands of layers could be trained, preparing the ground for later residual architectures."
-    },
-    "sourceIds": [
-      "source-legacy-event-record"
-    ],
-    "status": "needs-source"
-  }
+    {
+        "id": "claim-legacy-description",
+        "importance": "context",
+        "text": {
+            "zh": "2015 年公开的论文展示了数百层乃至约千层的 Highway Networks 可以训练，并为随后采用恒等快捷连接的 ResNet 提供了直接技术背景。",
+            "en": "The paper released in 2015 demonstrated trainable Highway Networks with hundreds and approximately one thousand layers, providing direct technical context for the identity shortcuts later used by ResNet."
+        },
+        "sourceIds": ["source-highway-networks-paper", "source-resnet-follow-up-paper"],
+        "status": "verified"
+    }
 ]

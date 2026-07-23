@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>视觉 Transformer 表明，纯 Transformer 可以把图像块当作令牌来进行图像分类。它推动注意力架构从语言领域进入主流计算机视觉。</p>",
-    "en": "<p>Vision Transformer showed that a pure transformer could classify images by treating image patches as tokens. It helped move attention architectures from language into mainstream computer vision.</p>"
+    "zh": "<p>Vision Transformer 把图像切成固定大小的 patch，将每个图像块线性投影为词元式向量，加入位置编码和分类词元后，直接送入标准 Transformer 编码器。与 CNN 不同，ViT 不在架构中强制使用局部卷积，而让自注意力从数据中学习图像块之间的全局关系。</p><p>原论文表明，在大规模预训练数据上，纯 Transformer 可以达到或超过强卷积网络，再迁移到常见视觉任务。ViT 对数据规模和训练配方较敏感，标准注意力成本也会随图像块数量平方增长；但它推动注意力架构进入主流视觉，并统一了语言、图像和多模态模型的设计语言。</p>",
+    "en": "<p>Vision Transformer divides an image into fixed-size patches, linearly projects each patch into a token-like vector, adds positional information and a classification token, and feeds the sequence into a standard Transformer encoder. Unlike a CNN, ViT does not enforce local convolution in its architecture; self-attention learns relationships among image patches from data, including long-range interactions.</p><p>The original work showed that with large-scale pretraining, a pure Transformer could match or exceed strong convolutional networks and then transfer to common vision tasks. ViT is sensitive to data scale and training recipes, and standard attention grows quadratically with the number of patches. It nevertheless moved attention into mainstream vision and helped unify the design language of text, image, and multimodal models.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Lead author of Vision Transformer",
         "zh": "视觉 Transformer 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png",
       "avatarStyle": "",
       "figureType": "person"
     },

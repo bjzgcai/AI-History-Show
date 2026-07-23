@@ -78,5 +78,25 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "background"
+  },
+  {
+    "id": "source-cais-dan-hendrycks-profile",
+    "type": "official-page",
+    "label": {
+      "zh": "机构页面",
+      "en": "Institution page"
+    },
+    "title": {
+      "zh": "AI 安全中心：丹·亨德里克斯",
+      "en": "Center for AI Safety: Dan Hendrycks"
+    },
+    "url": "https://www.safe.ai/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "AI 安全中心官网将 Dan Hendrycks 列为主任，并提供头像；页面未声明图片再分发许可。",
+      "en": "The Center for AI Safety website identifies Dan Hendrycks as director and provides the portrait; image redistribution rights are not stated."
+    },
+    "purpose": "biography"
   }
 ]

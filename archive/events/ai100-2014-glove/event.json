@@ -38,10 +38,44 @@
   "figures": [
     {
       "figureId": "jeffrey-pennington",
+      "name": {
+        "zh": "杰弗里·彭宁顿",
+        "en": "Jeffrey Pennington"
+      },
       "role": {
         "zh": "GloVe 主要作者",
         "en": "GloVe lead author"
       },
+      "avatar": "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "christopher-manning",
+      "name": {
+        "zh": "克里斯托弗·曼宁",
+        "en": "Christopher Manning"
+      },
+      "role": {
+        "zh": "GloVe 共同作者",
+        "en": "GloVe co-author"
+      },
+      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "richard-socher",
+      "name": {
+        "zh": "理查德·索彻",
+        "en": "Richard Socher"
+      },
+      "role": {
+        "zh": "GloVe 共同作者",
+        "en": "GloVe co-author"
+      },
+      "avatar": "resources/images/external/ai100-2014-glove/richard-socher-portrait.png",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

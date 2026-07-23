@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>赫伯特·贝、蒂娜·图伊特拉尔斯和卢克·范古尔提出 SURF，作为更快速的尺度与旋转不变局部特征检测器和描述子。它使用积分图和近似 Hessian 响应，让稳健匹配更高效。</p>",
-    "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF as a faster scale- and rotation-invariant local feature detector and descriptor. It used integral images and approximated Hessian responses to make robust matching more efficient.</p>"
+    "zh": "<p>贝、图伊特拉尔斯和范古尔在 2006 年提出 SURF，目标是在保留尺度与旋转稳健性的同时提高局部特征计算速度。检测器用盒式滤波近似 Hessian 矩阵响应，并借助积分图以近似固定成本计算不同尺度的滤波；描述子则汇总关键点邻域中的 Haar 小波响应。</p><p>SURF 可以为图像匹配、目标识别和三维重建提供可重复的局部对应点，在许多场景中比 SIFT 更快。速度来自近似和紧凑表示，因此不同数据上的精度权衡并不相同。它代表手工局部特征时代对稳健性与实时性的系统优化。</p>",
+    "en": "<p>Herbert Bay, Tinne Tuytelaars, and Luc Van Gool introduced SURF in 2006 to improve the speed of local features while retaining robustness to scale and rotation. Its detector approximates Hessian-matrix responses with box filters and uses integral images to evaluate filters at different scales efficiently. The descriptor summarizes Haar-wavelet responses around each keypoint.</p><p>SURF supplies repeatable local correspondences for image matching, object recognition, and 3D reconstruction and was faster than SIFT in many settings. Its speed comes from approximations and a compact representation, so the accuracy tradeoff varies across data. The method represents the hand-crafted local-feature era's systematic effort to balance robustness with real-time computation.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -130,7 +130,7 @@
         "en": "Lead author of SURF",
         "zh": "SURF 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
       "avatarStyle": "",
       "figureType": "person"
     },

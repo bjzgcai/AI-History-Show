@@ -26,58 +26,31 @@
     "editable": true
   },
   {
-    "id": "asset-ai100-2005-hog-aa5abuavsnuzofxpn4bs7spfwrmladfwu9cqs2-olpw1wlwxl3be8lde",
+    "id": "asset-ai100-2005-hog-navneet-dalal-portrait",
     "type": "image",
-    "path": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280",
-    "role": "supporting-image",
-    "caption": {
-      "zh": "HOG 作者资料图",
-      "en": "HOG author reference image"
-    },
-    "sourceId": "source-histograms-of-oriented-gradients-for-human-detection",
-    "rights": {
-      "status": "external-reference",
-      "license": {
-        "zh": "外部引用图片，未复制到本仓库；正式发布或本地化前需逐张核验授权。",
-        "en": "External reference image, not copied into this repository; verify rights before publication or localization."
-      },
-      "sourceUrl": "https://lh3.googleusercontent.com/sitesv/AA5AbUAVsnuZoFxPN4Bs7sPfwrmlADfwu9cqS2-OlPW1wlwXl3be8LdERgbctU0mPu4okRGiMSiqf20hncx55rU6GFXfNRJ_h9IKYFvQjvODI9hBxSukBv-D6Q5deU6-iP4Q400hUEfDVxN5tUH_Pr-iVaCS6bpwHD3iXLftPPD64JqDdkOdJwvrMz-DTUNQXNnGZ7HbCXeiPg=w1280"
-    },
-    "usage": [
-      "variant:bench-council-ai100"
-    ],
-    "editable": true,
-    "subcaption": {
-      "zh": "人物身份及其与 HOG 事件的关系仍需核验。",
-      "en": "The person's identity and relationship to the HOG event still require verification."
-    }
-  },
-  {
-    "id": "asset-ai100-2005-hog-bill-triggs-portrait",
-    "type": "image",
-    "path": "resources/images/external/ai100-2005-hog/bill-triggs-portrait.jpg",
+    "path": "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
     "role": "portrait",
     "caption": {
-      "zh": "比尔·特里格斯肖像",
-      "en": "Bill Triggs portrait"
+      "zh": "纳夫尼特·达拉尔肖像",
+      "en": "Navneet Dalal portrait"
     },
     "subcaption": {
-      "zh": "HOG 论文共同作者。",
-      "en": "Co-author of the HOG paper."
+      "zh": "HOG 第一作者。",
+      "en": "First author of HOG."
     },
-    "sourceId": "source-bill-triggs-lear-profile",
+    "sourceId": "source-navneet-dalal-personal-page",
     "sourceName": {
-      "zh": "INRIA/LEAR 作者主页",
-      "en": "INRIA/LEAR author homepage"
+      "zh": "纳夫尼特·达拉尔个人主页",
+      "en": "Navneet Dalal personal homepage"
     },
-    "sourceUrl": "https://lear.inrialpes.fr/people/triggs/",
+    "sourceUrl": "https://sites.google.com/view/navneetdalal/",
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "INRIA/LEAR 作者主页照片，未注明许可；本地副本用于保证展览稳定显示。",
-        "en": "INRIA/LEAR author-page photo; rights are not stated. A local copy is retained for reliable exhibit rendering."
+        "zh": "图片来自作者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+        "en": "Image from the author's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
       },
-      "sourceUrl": "https://lear.inrialpes.fr/people/triggs/bill2.jpg"
+      "sourceUrl": "https://sites.google.com/sitesv-images-rt/ACHe0d0ghjJG635BopferSOH-NCUfiIeUOaZtj9wAQZ5lVbhi_x46cCqe1aegqUA36mUQWjNApopHF40m24_YPV8an63u0_AW9SXRCiuCJJYBbpNnXpLgYv67Nfb_ws1xinbWRBWTY0x66jFHiprPQaUimaFEMxfNeyw72BP2kAFmBfR9-Lrk8JgvpQclKel55Zt0mOIvDbb8g=w1280"
     },
     "usage": [
       "variant:bench-council-ai100"

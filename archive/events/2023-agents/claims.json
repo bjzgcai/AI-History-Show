@@ -3,24 +3,27 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "智能体：LLM驱动的自主系统 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "Agents: LLM-Driven Autonomous Systems is an AI history milestone in the current legacy presentation."
+      "zh": "ReAct 和 Toolformer 等研究把语言模型与外部行动、观察和 API 调用连接起来，推动了 LLM 智能体的发展。",
+      "en": "Research such as ReAct and Toolformer connected language models with external actions, observations, and API calls, advancing LLM-based agents."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-react-paper",
+      "source-toolformer-paper"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "基于超大规模预训练基座模型，结合端到端强化学习后训练，配合超长链路推理、自主规划及调用高级工具，并将这种智能体的能力内化回基座大模型之中。当代智能体（智能体式 AI）引入大语言模型作为\"认知引擎\"，不同于过去依赖静态规划库的系统，基于LLM的智能体可以利用自发产生的推理链（如思维链）来分解目标、修改计划并动态决定何时调用外部API。这种演变实现了从\"预定义算法\"到\"自主适应行为\"的跨越。",
-      "en": "Modern AI agents combine large pretrained foundation models, post-training, long-horizon reasoning, autonomous planning and tool use. Agent systems extend language models from text generation toward systems that can plan, act and improve through interaction."
+      "zh": "LLM 智能体通常由规划、记忆、工具调用和结果评估组成循环，但长链路错误、权限、成本与安全仍限制其可靠自主性。",
+      "en": "LLM agents commonly form loops around planning, memory, tool use, and result evaluation, while long-horizon errors, permissions, cost, and safety still limit reliable autonomy."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-react-paper",
+      "source-toolformer-paper",
+      "source-llm-agent-survey"
     ],
-    "status": "needs-source"
+    "status": "verified"
   }
 ]

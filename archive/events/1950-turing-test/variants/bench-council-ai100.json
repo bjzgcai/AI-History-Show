@@ -9,6 +9,10 @@
     "en": "AI Top 100 Achievements",
     "zh": "AI 百大成就"
   },
+  "displayDescription": {
+    "zh": "<p>1950 年，艾伦·图灵在《计算机器与智能》中没有直接为“思考”下定义，而是提出“模仿游戏”：一名评判者通过文字通道与隐藏的人类和机器交谈，再判断谁是谁。这个设计把难以解决的哲学争论转换成可观察、可比较的行为测试。</p><p>图灵测试的重要性不在于给智能提供唯一标准，而在于建立了一种评测思想：限制信息通道、隐藏系统身份，并让人类根据交互表现作出判断。现代研究通常不把它视为完整的智能测量，但人类评测、聊天机器人比较和对抗测试仍延续着这种方法论。</p>",
+    "en": "<p>In 1950, Alan Turing's <em>Computing Machinery and Intelligence</em> avoided defining “thinking” directly and proposed the imitation game instead. A judge communicated by text with a hidden human and machine, then tried to identify them. The design converted a difficult philosophical dispute into an observable comparison of behavior.</p><p>The Turing Test matters less as a single definition of intelligence than as an evaluation pattern: restrict the channel, conceal system identity, and ask people to judge performance through interaction. Modern researchers do not generally treat it as a complete intelligence measure, but human evaluation, chatbot comparison, and adversarial testing still inherit its methodological logic.</p>"
+  },
   "emphasis": [
     "ai100-batch-migration",
     "source-review-needed"
@@ -94,7 +98,7 @@
         "en": "Proposed the imitation game",
         "zh": "提出模仿游戏"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

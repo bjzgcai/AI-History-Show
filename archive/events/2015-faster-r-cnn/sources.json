@@ -1,62 +1,82 @@
 [
-  {
-    "id": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
-    "type": "paper",
-    "label": {
-      "zh": "论文",
-      "en": "Paper"
+    {
+        "id": "source-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks",
+        "type": "paper",
+        "label": {
+            "zh": "论文",
+            "en": "Paper"
+        },
+        "title": {
+            "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》",
+            "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
+        },
+        "url": "https://arxiv.org/abs/1506.01497",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+            "en": "Migrated from generated legacy milestone achievement sources."
+        },
+        "purpose": "core-evidence"
     },
-    "title": {
-      "zh": "《Faster R-CNN：通过区域建议网络迈向实时目标检测》",
-      "en": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks"
+    {
+        "id": "source-shaoqingren-faster-rcnn",
+        "type": "code",
+        "label": {
+            "zh": "代码",
+            "en": "Code"
+        },
+        "title": {
+            "zh": "任少卿/faster_rcnn",
+            "en": "ShaoqingRen/faster_rcnn"
+        },
+        "url": "https://github.com/ShaoqingRen/faster_rcnn",
+        "language": "en",
+        "reliability": "secondary",
+        "notes": {
+            "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+            "en": "Migrated from generated legacy milestone achievement sources."
+        },
+        "purpose": "implementation"
     },
-    "url": "https://arxiv.org/abs/1506.01497",
-    "language": "en",
-    "reliability": "primary",
-    "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
+    {
+        "id": "source-torchvision-faster-r-cnn-model",
+        "type": "documentation",
+        "label": {
+            "zh": "模型文档",
+            "en": "Model documentation"
+        },
+        "title": {
+            "zh": "TorchVision Faster R-CNN 模型",
+            "en": "TorchVision Faster R-CNN model"
+        },
+        "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+        "language": "en",
+        "reliability": "reference-only",
+        "notes": {
+            "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+            "en": "Migrated from generated legacy milestone achievement sources."
+        },
+        "purpose": "implementation"
     },
-    "purpose": "core-evidence"
-  },
-  {
-    "id": "source-shaoqingren-faster-rcnn",
-    "type": "code",
-    "label": {
-      "zh": "代码",
-      "en": "Code"
-    },
-    "title": {
-      "zh": "任少卿/faster_rcnn",
-      "en": "ShaoqingRen/faster_rcnn"
-    },
-    "url": "https://github.com/ShaoqingRen/faster_rcnn",
-    "language": "en",
-    "reliability": "secondary",
-    "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
-    },
-    "purpose": "implementation"
-  },
-  {
-    "id": "source-torchvision-faster-r-cnn-model",
-    "type": "documentation",
-    "label": {
-      "zh": "模型文档",
-      "en": "Model documentation"
-    },
-    "title": {
-      "zh": "TorchVision Faster R-CNN 模型",
-      "en": "TorchVision Faster R-CNN model"
-    },
-    "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
-    "language": "en",
-    "reliability": "reference-only",
-    "notes": {
-      "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
-      "en": "Migrated from generated legacy milestone achievement sources."
-    },
-    "purpose": "implementation"
-  }
+    {
+        "id": "source-kaiming-he-profile-at-mit-csail",
+        "type": "personal-page",
+        "label": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+        },
+        "title": {
+            "zh": "何恺明 MIT CSAIL 个人主页",
+            "en": "Kaiming He MIT CSAIL personal homepage"
+        },
+        "url": "https://people.csail.mit.edu/kaiming/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "MIT 托管的何恺明个人主页与肖像来源。",
+            "en": "MIT-hosted personal homepage and portrait source for Kaiming He."
+        },
+        "purpose": "image-provenance"
+    }
 ]

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>丹尼尔·李和 H. 塞巴斯蒂安·承表明，非负矩阵分解可以学习人脸的可加部件和文本的语义特征。因子保持非负的约束鼓励形成可解释的部件表示。</p>",
-    "en": "<p>Daniel Lee and H. Sebastian Seung showed that non-negative matrix factorization can learn additive parts of faces and semantic features of text. The constraint that factors remain nonnegative encouraged interpretable parts-based representations.</p>"
+    "zh": "<p>李和承在 1999 年展示非负矩阵分解如何把一个非负数据矩阵近似为两个较小非负矩阵的乘积。由于系数不能通过正负抵消来表达样本，重构只能把若干基础成分相加；在人脸实验中，这些成分常对应眼睛、鼻子等局部部件。</p><p>NMF 因此提供了与 PCA 整体正负基向量不同的“部件式”表示，并被用于文本主题、音频分离、生物数据和推荐系统。分解通常不唯一，优化可能停在局部解，部件也并非必然具有语义；但非负约束如何促进稀疏、可解释表示成为重要思想。</p>",
+    "en": "<p>Daniel Lee and H. Sebastian Seung showed in 1999 how non-negative matrix factorization approximates a non-negative data matrix as the product of two smaller non-negative matrices. Because coefficients cannot represent an example by canceling positive and negative components, reconstruction must add basis elements together. In face experiments, those elements often corresponded to local parts such as eyes or noses.</p><p>NMF therefore offered a “parts-based” representation unlike the holistic positive-and-negative directions of PCA and was applied to text topics, audio separation, biological data, and recommendation. A factorization is generally not unique, optimization can stop at local solutions, and learned parts are not guaranteed to have human meaning. Even so, the way non-negativity can encourage sparse, interpretable representation became influential.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -143,7 +143,7 @@
         "en": "Co-author of NMF",
         "zh": "NMF 共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

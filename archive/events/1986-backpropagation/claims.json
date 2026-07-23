@@ -3,24 +3,25 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "反向传播算法 是当前 legacy 展示中的一个 AI 历史节点。",
-      "en": "Backpropagation is an AI history milestone in the current legacy presentation."
+      "zh": "1986 年，戴维·鲁梅尔哈特、杰弗里·辛顿和罗纳德·威廉姆斯发表论文，系统展示了用误差反向传播训练多层神经网络。",
+      "en": "In 1986, David Rumelhart, Geoffrey Hinton, and Ronald Williams published a systematic demonstration of training multilayer neural networks by backpropagating errors."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-nature-backpropagation-paper"
     ],
-    "status": "needs-source"
+    "status": "verified"
   },
   {
     "id": "claim-legacy-description",
     "importance": "context",
     "text": {
-      "zh": "神经网络的复兴与反向传播算法密切相关。 1986年， 鲁梅尔哈特、辛顿和 威廉姆斯发表了著名的《通过误差反向传播学习表示》一文，使反向传播算法能受到关注，并推动了多层神经网络的普及。",
-      "en": "The revival of neural networks was closely tied to backpropagation. In 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published <i>Learning representations by back-propagating errors</i>, bringing practical attention to training multilayer neural networks."
+      "zh": "该方法把输出误差的梯度逐层传回网络，使隐藏层权重能够从数据中学习内部表示，并成为后来深度神经网络的核心训练机制。",
+      "en": "The method propagated output-error gradients through successive layers so hidden-layer weights could learn internal representations from data, becoming a core training mechanism for later deep neural networks."
     },
     "sourceIds": [
-      "source-legacy-event-record"
+      "source-nature-backpropagation-paper",
+      "source-hinton-backpropagation-pdf"
     ],
-    "status": "needs-source"
+    "status": "verified"
   }
 ]

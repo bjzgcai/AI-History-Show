@@ -11,8 +11,8 @@
     "en": "Large Models and Scientific Intelligence"
   },
   "displayDescription": {
-    "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
-    "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."
+    "zh": "<p>2024 年，Sakana AI 等团队发布 AI Scientist 原型，把机器学习研究中的想法生成、代码修改、实验运行、结果可视化、论文撰写和自动评审串成一个循环。它展示的是特定计算研究流程的自动化实验，并不等同于论文已被真实学术会议接收，也不能替代独立复现和同行评议。</p><p>物理实验自动化则更早在 A-Lab 等系统中推进。2023 年 Nature 论文报告，A-Lab 把文献与计算数据库、机器学习、机器人设备和主动学习结合，在 17 天运行中成功合成 58 个目标中的 41 个新材料。两条路线共同表明，AI for Science 正从单步预测扩展到闭环工作流，但可靠性、实验验证、数据质量和责任归属仍决定这些系统能否产生可信科学成果。</p>",
+    "en": "<p>In 2024, Sakana AI and collaborators released the AI Scientist prototype, linking idea generation, code modification, experiment execution, visualization, manuscript writing, and automated review into a loop for machine-learning research. It demonstrated automation within a specific computational workflow; it did not mean that generated papers had been accepted by real conferences, nor could it replace independent replication and peer review.</p><p>Physical experimentation had already advanced through systems such as A-Lab. A 2023 Nature paper reported that A-Lab combined literature and computational databases, machine learning, robotic equipment, and active learning to synthesize 41 of 58 targeted novel materials during 17 days of operation. Together, these paths extended AI for Science from single predictions toward closed-loop workflows, while reliability, experimental validation, data quality, and accountability remained decisive.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -27,7 +27,9 @@
     "asset-2024-ai-scientist-people-02"
   ],
   "sourceIds": [
-    "source-legacy-event-record"
+    "source-ai-scientist-paper",
+    "source-sakana-ai-scientist-page",
+    "source-autonomous-materials-lab-paper"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -45,7 +47,9 @@
         "en": "What is genuinely new in these systems is not that they can write paper paragraphs. It is that they connect hypothesis generation, workflow design, tool use, experiment execution, and result evaluation into a closed loop, beginning to automate the scientific research workflow."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-ai-scientist-paper",
+        "source-sakana-ai-scientist-page",
+        "source-autonomous-materials-lab-paper"
       ]
     },
     {
@@ -59,7 +63,9 @@
         "en": "They also imply a shift in how AI for Science is evaluated. The key future question is not only whether a model can explain an image or sequence, but whether it can continually produce verifiable, reproducible experimental workflows and improve through feedback."
       },
       "sourceIds": [
-        "source-legacy-event-record"
+        "source-ai-scientist-paper",
+        "source-sakana-ai-scientist-page",
+        "source-autonomous-materials-lab-paper"
       ]
     }
   ],
@@ -84,7 +90,7 @@
         "en": "AI Scientist Developer",
         "zh": "AI Scientist开发者"
       },
-      "avatar": "",
+      "avatar": "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
       "avatarStyle": "",
       "figureType": "person"
     },

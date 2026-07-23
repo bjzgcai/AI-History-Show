@@ -78,5 +78,45 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "background"
+  },
+  {
+    "id": "source-sam-altman-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "萨姆·奥尔特曼资料照片",
+      "en": "Sam Altman archival portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED_(cropped).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Steve Jurvetson；Wikimedia Commons 文件页标注 CC BY 2.0。",
+      "en": "Photograph by Steve Jurvetson; the Wikimedia Commons file page identifies CC BY 2.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-elon-musk-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "埃隆·马斯克 2015 年资料照片",
+      "en": "Elon Musk archival portrait from 2015"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Steve Jurvetson；Wikimedia Commons 文件页标注 CC BY 2.0。",
+      "en": "Photograph by Steve Jurvetson; the Wikimedia Commons file page identifies CC BY 2.0."
+    },
+    "purpose": "image-provenance"
   }
 ]

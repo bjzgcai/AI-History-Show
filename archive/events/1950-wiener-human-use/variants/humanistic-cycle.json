@@ -47,8 +47,12 @@
             }
         }
     ],
-    "assetIds": ["asset-1950-wiener-human-use-feedback-warning"],
+    "assetIds": [
+        "asset-1950-wiener-human-use-norbert-wiener",
+        "asset-1950-wiener-human-use-feedback-warning"
+    ],
     "sourceIds": [
+        "source-norbert-wiener-commons-portrait",
         "source-open-library-book-metadata",
         "source-open-library-metadata-search-result",
         "source-cybernetics-background",

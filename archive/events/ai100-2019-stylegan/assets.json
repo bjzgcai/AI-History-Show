@@ -28,20 +28,20 @@
   {
     "id": "asset-ai100-2019-stylegan-tero-karras",
     "type": "image",
-    "path": "resources/images/external/ai100-2019-stylegan/tero-karras-portrait.png",
+    "path": "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
     "role": "portrait",
     "caption": {
       "zh": "特罗·卡拉斯肖像",
       "en": "Tero Karras portrait"
     },
-    "sourceId": "source-a-style-based-generator-architecture-for-gans",
+    "sourceId": "source-tero-karras-github-profile",
     "rights": {
       "status": "external-reference",
       "license": {
-        "zh": "本地副本来自NVIDIA Research；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
-        "en": "Local copy from NVIDIA Research; the source page does not state a repository-compatible license. Recheck before external redistribution."
+        "zh": "图片来自特罗·卡拉斯本人 GitHub 账号；页面未注明再分发许可，对外发布前需复核授权。",
+        "en": "Image from Tero Karras's GitHub account; redistribution rights are not stated and must be reviewed before publication."
       },
-      "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
+      "sourceUrl": "https://avatars.githubusercontent.com/u/3089181?v=4&s=800"
     },
     "usage": [
       "variant:bench-council-ai100"
@@ -52,9 +52,9 @@
       "en": "Lead author of StyleGAN."
     },
     "sourceName": {
-      "zh": "NVIDIA Research",
-      "en": "NVIDIA Research"
+      "zh": "特罗·卡拉斯 GitHub 主页",
+      "en": "Tero Karras GitHub profile"
     },
-    "sourceUrl": "https://research.nvidia.com/sites/default/files/person/tero-karras.png"
+    "sourceUrl": "https://github.com/tkarras"
   }
 ]

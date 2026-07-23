@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>SIFT 为计算机视觉提供了一种稳健寻找和描述局部图像特征的方法。它检测在尺度、旋转和光照变化下仍稳定的关键点，并把周围梯度模式编码为描述子。在深度学习占据主导前，SIFT 是目标识别、全景拼接和三维重建的常用工具。</p>",
-    "en": "<p>SIFT gave computer vision a robust way to find and describe local image features. It detects keypoints that survive changes in scale, rotation, and illumination, then encodes the surrounding gradient pattern as a descriptor. Before deep learning dominance, SIFT became a workhorse for object recognition, panorama stitching, and 3D reconstruction.</p>"
+    "zh": "<p>戴维·洛在 1999 年提出 SIFT，用尺度空间中的高斯差分寻找在不同图像大小下仍稳定的候选关键点，再为关键点分配主方向。算法把邻域内的梯度方向和强度汇总成局部描述子，使同一物体在缩放、旋转以及一定光照和视角变化下仍可匹配。</p><p>这些稀疏但有辨识力的特征让目标识别、图像拼接、定位和三维重建获得可靠的对应点，在深度学习主导视觉前成为标准工具。SIFT 并非对所有几何或外观变化都不变，计算成本也不低，但它建立了“检测稳定关键点并描述局部外观”的经典视觉流水线。</p>",
+    "en": "<p>David Lowe introduced SIFT in 1999 to find candidate keypoints that remain stable across image scales using differences of Gaussians in scale space, then assign each keypoint a dominant orientation. The method summarizes local gradient directions and magnitudes into a descriptor, allowing corresponding regions to be matched under changes in scale, rotation, and moderate illumination or viewpoint.</p><p>These sparse but distinctive features supplied reliable correspondences for object recognition, panorama stitching, localization, and 3D reconstruction, becoming a standard tool before deep learning dominated vision. SIFT is not invariant to every geometric or appearance change and can be computationally expensive, but it established the classic pipeline of detecting stable keypoints and describing local appearance.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -127,7 +127,7 @@
         "en": "Inventor of SIFT",
         "zh": "SIFT 发明者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>",
-    "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>"
+    "zh": "<p>Pix2Pix 把边缘到照片、标签图到街景、地图到航拍图等任务统一为“给定输入图像生成对应输出”的条件 GAN。U-Net 生成器通过跳跃连接保留输入的空间结构，PatchGAN 判别器在局部图块上判断真实感；L1 重建损失约束整体内容，对抗损失补充清晰纹理。</p><p>这一组合减少了为每个图像转换任务手工设计损失和流水线的需要，并成为配对图像翻译的标准基线。它必须获得严格对齐的输入输出样本，输出也可能平均化或生成不可靠细节；但它清楚展示了监督学习与对抗生成如何共同控制结构和外观。</p>",
+    "en": "<p>Pix2Pix unified edges-to-photos, label maps-to-street scenes, maps-to-aerial images, and related tasks as conditional GAN problems that generate an output image from an input image. A U-Net generator preserves spatial structure through skip connections, while a PatchGAN discriminator judges realism over local patches. An L1 reconstruction loss constrains overall content and the adversarial loss supplies sharper texture.</p><p>The combination reduced the need to design a separate pipeline and objective for every image-translation task and became a standard paired-translation baseline. It requires strictly aligned input-output examples, and outputs may average possibilities or invent unreliable details. It nevertheless showed clearly how supervised reconstruction and adversarial generation can jointly control structure and appearance.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -129,7 +129,7 @@
         "en": "Pix2Pix lead author",
         "zh": "Pix2Pix 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

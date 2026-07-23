@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Otter 让高性能一阶定理证明成为 AI 与数理逻辑研究者可实际使用的工具。McCune 的系统结合归结、参数调解、项索引、权重控制和实用的 given-clause 搜索循环，成为探索大规模符号证明空间的主力工具。</p>",
-    "en": "<p>Otter made high-performance first-order theorem proving widely usable for AI and mathematical logic researchers. McCune's system combined resolution, paramodulation, term indexing, weighting, and a practical given-clause search loop, becoming a workhorse for exploring large symbolic proof spaces.</p>"
+    "zh": "<p>威廉·麦丘恩在阿贡国家实验室开发 OTTER，使一阶逻辑和等式推理的高性能自动证明成为研究者可实际使用的工具。系统结合归结、超归结和参数调解，并用项索引快速寻找可匹配公式；given-clause 循环则从待处理集合中逐步选择子句，生成新的推论。</p><p>用户可以通过权重、优先级和推理规则控制庞大证明空间中的搜索，使 OTTER 既适合逻辑实验，也能处理代数和组合数学问题。它体现了自动推理从单一算法走向成熟软件系统的阶段，并为 McCune 后续的 Prover9 等证明器积累了工程基础。</p>",
+    "en": "<p>William McCune developed OTTER at Argonne National Laboratory as a practical high-performance tool for automated reasoning in first-order logic with equality. It combined resolution, hyperresolution, and paramodulation, while term indexing rapidly found formulas that could match. A given-clause loop repeatedly selected a clause from the pending set and generated new consequences.</p><p>Users could guide the enormous proof space through weights, priorities, and inference settings, making OTTER useful both for logic experiments and for problems in algebra and combinatorial mathematics. It marked a stage when automated reasoning became a mature software-engineering discipline rather than a single proof rule and provided an engineering foundation for McCune's later systems such as Prover9.</p>"
   },
   "emphasis": [
     "batch-migration",

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>图神经网络把神经计算推广到包含节点、边和关系的数据。通过在图上反复传递消息，它们学习节点、边或整个结构的表示。</p>",
-    "en": "<p>Graph neural networks generalized neural computation to data with nodes, edges, and relations. By repeatedly passing messages over a graph, they learned representations for nodes, edges, or whole structures.</p>"
+    "zh": "<p>马尔科·戈里、加布里埃莱·蒙法尔迪尼和弗兰科·斯卡塞利在 2005 年提出一种可直接处理图结构的神经模型。每个节点根据自身特征、边信息和邻居状态反复更新表示，直到整个系统达到稳定点；输出函数再从这些状态预测节点、边或整张图的属性。</p><p>这种局部信息交换后来被概括为消息传递：同一组可学习规则能在不同大小和连接方式的图上复用，适用于分子、社交网络、知识图谱和物理系统。多轮传播可能让节点表示过度相似，模型表达能力也受聚合方式限制，但 GNN 建立了关系结构的通用学习框架。</p>",
+    "en": "<p>Marco Gori, Gabriele Monfardini, and Franco Scarselli proposed a neural model in 2005 that could directly process graph structures. Each node repeatedly updates its representation from its own features, edge information, and neighboring states until the system reaches a stable point. An output function then predicts properties of nodes, edges, or the entire graph from those states.</p><p>This local exchange was later generalized as message passing: the same learned rules can be reused across graphs of different sizes and connectivity, supporting molecules, social networks, knowledge graphs, and physical systems. Repeated propagation can make node representations overly similar, and expressive power depends on the aggregation rule. GNNs nevertheless established a general learning framework for relational structure.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -27,15 +27,15 @@
         "zh": "IEEE Xplore"
       },
       "title": {
-        "en": "The Graph Neural Network Model",
-        "zh": "图神经网络模型"
+        "en": "A new model for learning in graph domains",
+        "zh": "一种用于图领域学习的新模型"
       },
       "description": {
-        "en": "IEEE Xplore source card for Graph Neural Network.",
-        "zh": "IEEE Xplore 的图神经网络资料卡片。"
+        "en": "DOI record for the original IJCNN 2005 paper by Marco Gori, Gabriele Monfardini, and Franco Scarselli.",
+        "zh": "马尔科·戈里、加布里埃莱·蒙法尔迪尼和弗兰科·斯卡塞利在 IJCNN 2005 发表的原始论文 DOI 记录。"
       },
-      "url": "https://doi.org/10.1109/TNN.2008.2005605",
-      "source": "https://doi.org/10.1109/TNN.2008.2005605",
+      "url": "https://doi.org/10.1109/IJCNN.2005.1555942",
+      "source": "https://doi.org/10.1109/IJCNN.2005.1555942",
       "license": {
         "en": "Reference link only; local explainers are original redraws.",
         "zh": "仅作为参考链接；本地解释图为原创重绘。"
@@ -51,14 +51,17 @@
     }
   ],
   "assetIds": [
-    "asset-ai100-2005-gnn-citations",
-    "asset-2005-gnn-message-passing"
+    "asset-ai100-2005-gnn-marco-gori-portrait",
+    "asset-2005-gnn-message-passing",
+    "asset-ai100-2005-gnn-unisi-paper-record"
   ],
   "sourceIds": [
     "source-the-graph-neural-network-model",
     "source-a-new-model-for-learning-in-graph-domains",
     "source-graph-neural-network-overview",
-    "source-franco-scarselli-homepage"
+    "source-franco-scarselli-homepage",
+    "source-marco-gori-university-video",
+    "source-unisi-oai-2005-gnn-record"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -77,7 +80,8 @@
         "en": "Graph neural networks generalized neural computation to data with nodes, edges, and relations. By repeatedly passing messages over a graph, they learned representations for nodes, edges, or whole structures."
       },
       "sourceIds": [
-        "source-the-graph-neural-network-model"
+        "source-a-new-model-for-learning-in-graph-domains",
+        "source-unisi-oai-2005-gnn-record"
       ]
     },
     {
@@ -91,7 +95,7 @@
         "en": "Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
       },
       "sourceIds": [
-        "source-the-graph-neural-network-model"
+        "source-a-new-model-for-learning-in-graph-domains"
       ]
     },
     {
@@ -105,7 +109,8 @@
         "en": "Experts generally treat GNNs as the foundational deep-learning framework for relational data. Its long-term legacy is message passing, now used in chemistry, recommender systems, knowledge graphs, and scientific modeling."
       },
       "sourceIds": [
-        "source-the-graph-neural-network-model"
+        "source-the-graph-neural-network-model",
+        "source-a-new-model-for-learning-in-graph-domains"
       ]
     }
   ],
@@ -123,14 +128,40 @@
   "figures": [
     {
       "name": {
+        "en": "Marco Gori",
+        "zh": "马尔科·戈里"
+      },
+      "role": {
+        "en": "First author of the 2005 graph neural network paper",
+        "zh": "2005 年图神经网络论文第一作者"
+      },
+      "avatar": "resources/images/external/ai100-2005-gnn/people/marco-gori-university-video-still.jpg",
+      "avatarStyle": "transform: scale(1.75); transform-origin: 43% 35%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Gabriele Monfardini",
+        "zh": "加布里埃莱·蒙法尔迪尼"
+      },
+      "role": {
+        "en": "Co-author of the 2005 graph neural network paper",
+        "zh": "2005 年图神经网络论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
         "en": "Franco Scarselli",
         "zh": "弗兰科·斯卡塞利"
       },
       "role": {
-        "en": "Graph neural network co-author",
-        "zh": "图神经网络共同作者"
+        "en": "Co-author of the 2005 graph neural network paper",
+        "zh": "2005 年图神经网络论文共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }
@@ -144,23 +175,23 @@
   "quoteMeta": {
     "speaker": "",
     "workTitle": {
-      "en": "The Graph Neural Network Model",
-      "zh": "图神经网络模型"
+      "en": "A new model for learning in graph domains",
+      "zh": "一种用于图领域学习的新模型"
     },
     "workAuthors": {
-      "en": "Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
-      "zh": "弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
+      "en": "Marco Gori, Gabriele Monfardini, and Franco Scarselli, IJCNN 2005",
+      "zh": "马尔科·戈里、加布里埃莱·蒙法尔迪尼、弗兰科·斯卡塞利，IJCNN 2005"
     },
     "sourceLabel": "",
-    "sourceUrl": "https://doi.org/10.1109/TNN.2008.2005605"
+    "sourceUrl": "https://doi.org/10.1109/IJCNN.2005.1555942"
   },
   "quotePage": {
     "en": "BenchCouncil AI100 achievement entry",
     "zh": "BenchCouncil AI100 成就条目"
   },
   "quoteAttribution": {
-    "en": "<em>The Graph Neural Network Model</em>, Franco Scarselli et al., IEEE Transactions on Neural Networks, 2009",
-    "zh": "《图神经网络模型》, 弗兰科·斯卡塞利等，《IEEE Transactions on Neural Networks》，2009"
+    "en": "<em>A new model for learning in graph domains</em>, Marco Gori, Gabriele Monfardini, and Franco Scarselli, IJCNN 2005",
+    "zh": "《一种用于图领域学习的新模型》，马尔科·戈里、加布里埃莱·蒙法尔迪尼、弗兰科·斯卡塞利，IJCNN 2005"
   },
   "achievement": {
     "area": {
@@ -176,8 +207,8 @@
       "zh": "图神经网络模型"
     },
     "material": {
-      "en": "IEEE Transactions paper",
-      "zh": "IEEE Transactions 论文"
+      "en": "IJCNN 2005 conference paper",
+      "zh": "IJCNN 2005 会议论文"
     },
     "demo": {
       "en": "Each node gathers messages from its neighbors, updates its hidden state, and shares the new state in the next round.",
@@ -289,8 +320,8 @@
           "zh": "资料线索"
         },
         "text": {
-          "en": "IEEE Transactions paper",
-          "zh": "IEEE Transactions 论文"
+          "en": "IJCNN 2005 paper and University of Siena repository record",
+          "zh": "IJCNN 2005 论文与锡耶纳大学机构库记录"
         }
       },
       {
@@ -312,15 +343,15 @@
           "zh": "IEEE Xplore"
         },
         "title": {
-          "en": "The Graph Neural Network Model",
-          "zh": "图神经网络模型"
+          "en": "A new model for learning in graph domains",
+          "zh": "一种用于图领域学习的新模型"
         },
         "description": {
-          "en": "IEEE Xplore source card for Graph Neural Network.",
-          "zh": "IEEE Xplore 的图神经网络资料卡片。"
+          "en": "DOI record for the original IJCNN 2005 paper by Marco Gori, Gabriele Monfardini, and Franco Scarselli.",
+          "zh": "马尔科·戈里、加布里埃莱·蒙法尔迪尼和弗兰科·斯卡塞利在 IJCNN 2005 发表的原始论文 DOI 记录。"
         },
-        "url": "https://doi.org/10.1109/TNN.2008.2005605",
-        "source": "https://doi.org/10.1109/TNN.2008.2005605",
+        "url": "https://doi.org/10.1109/IJCNN.2005.1555942",
+        "source": "https://doi.org/10.1109/IJCNN.2005.1555942",
         "license": {
           "en": "Reference link only; local explainers are original redraws.",
           "zh": "仅作为参考链接；本地解释图为原创重绘。"
@@ -339,11 +370,11 @@
   "location": {
     "name": {
       "en": "University of Siena",
-      "zh": "University of Siena"
+      "zh": "锡耶纳大学"
     },
     "country": {
-      "en": "Siena, Italy",
-      "zh": "Siena, Italy"
+      "en": "Italy",
+      "zh": "意大利"
     },
     "coordinates": [
       43.3188,
