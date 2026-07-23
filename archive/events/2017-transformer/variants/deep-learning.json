@@ -33,8 +33,8 @@
     "claim-foundation-model-legacy"
   ],
   "displayDescription": {
-    "en": "<p>In 2017, the Transformer replaced recurrent sequence processing with stacked self-attention and feed-forward modules. The deep-learning storyline highlights the architectural shift away from recurrence and convolution, while the AI100 materials explain the scalable query-key-value mechanism that later powered BERT, GPT, multimodal foundation models, and many agent systems.</p>",
-    "zh": "<p>2017年，Transformer 用堆叠的自注意力和前馈模块替代循环序列处理。深度学习发展线强调它摆脱循环和卷积的架构转向，AI100 资料则解释可扩展的 query-key-value 机制如何进一步支撑 BERT、GPT、多模态基础模型和许多智能体系统。</p>"
+    "en": "<p>In 2017, Ashish Vaswani and colleagues introduced the Transformer in <em>Attention Is All You Need</em>. Multi-head self-attention compared queries, keys, and values across sequence positions, while feed-forward layers, residual connections, and positional encodings formed an encoder-decoder architecture without recurrence or convolution.</p><p>Self-attention allowed whole sequences to be processed in parallel during training and shortened the computational path between distant pieces of information. The original paper achieved stronger machine-translation quality with substantially lower training cost. The Transformer subsequently became the shared architectural foundation of BERT, GPT, vision transformers, multimodal foundation models, and modern generative AI.</p>",
+    "zh": "<p>2017 年，阿希什·瓦斯瓦尼等人在《Attention Is All You Need》中提出 Transformer。它用多头自注意力比较序列中不同位置的 query、key 和 value，并配合前馈网络、残差连接和位置编码，构成不依赖循环或卷积的编码器—解码器。</p><p>自注意力允许训练时并行处理整段序列，缩短远距离信息之间的计算路径。原论文在机器翻译基准上取得更高质量，同时显著减少训练成本。Transformer 随后成为 BERT、GPT、视觉 Transformer、多模态基础模型和现代生成式 AI 的共同架构基础。</p>"
   },
   "category": {
     "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",

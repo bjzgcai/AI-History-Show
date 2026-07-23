@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-mit-minsky-history",
+    "type": "article",
+    "label": {
+      "zh": "文章",
+      "en": "Article"
+    },
+    "title": {
+      "zh": "麻省理工学院：马文·明斯基与早期神经网络研究",
+      "en": "MIT: Marvin Minsky and Early Neural-Network Research"
+    },
+    "url": "https://news.mit.edu/2016/marvin-minsky-obituary-0125",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "麻省理工学院对明斯基研究生涯及其早期神经网络工作的机构回顾。",
+      "en": "MIT's institutional retrospective on Minsky's career and early neural-network work."
+    },
+    "purpose": "core-evidence"
+  },
+  {
     "id": "source-snarc-history-overview",
     "type": "article",
     "label": {

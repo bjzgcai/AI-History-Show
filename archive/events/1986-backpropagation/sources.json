@@ -1,5 +1,45 @@
 [
   {
+    "id": "source-nature-backpropagation-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《通过误差反向传播学习表示》",
+      "en": "Learning Representations by Back-Propagating Errors"
+    },
+    "url": "https://doi.org/10.1038/323533a0",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "鲁梅尔哈特、辛顿和威廉姆斯发表于 Nature 的 1986 年原始论文。",
+      "en": "The original 1986 Nature paper by David Rumelhart, Geoffrey Hinton, and Ronald Williams."
+    },
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-hinton-backpropagation-pdf",
+    "type": "paper-file",
+    "title": {
+      "zh": "《通过误差反向传播学习表示》作者存档 PDF",
+      "en": "Author-Hosted PDF of Learning Representations by Back-Propagating Errors"
+    },
+    "url": "https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "杰弗里·辛顿在多伦多大学主页提供的论文 PDF。",
+      "en": "A copy of the paper hosted on Geoffrey Hinton's University of Toronto page."
+    },
+    "label": {
+      "zh": "论文 PDF",
+      "en": "Paper PDF"
+    },
+    "purpose": "alternate-access"
+  },
+  {
     "id": "source-legacy-event-record",
     "type": "internal-record",
     "title": {

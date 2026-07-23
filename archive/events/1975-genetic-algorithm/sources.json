@@ -12,7 +12,7 @@
     },
     "url": "https://mitpress.mit.edu/9780262581110/adaptation-in-natural-and-artificial-systems/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "primary",
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的主要来源。",
       "en": "Primary source migrated from legacy AI100 achievement sources."
@@ -32,7 +32,7 @@
     },
     "url": "https://deap.readthedocs.io/en/master/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "secondary",
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."
@@ -52,7 +52,7 @@
     },
     "url": "https://cs.gmu.edu/~eclab/projects/ecj/",
     "language": "en",
-    "reliability": "reference-only",
+    "reliability": "secondary",
     "notes": {
       "zh": "由 legacy AI100 achievement sources 迁移的补充来源。",
       "en": "Supplementary source migrated from legacy AI100 achievement sources."

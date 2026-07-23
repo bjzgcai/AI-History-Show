@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
-    "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+    "zh": "<p>DeepMind 的 DQN 把卷积神经网络与 Q-learning 结合起来，让智能体直接从 Atari 屏幕像素估计每个动作的长期价值。经验回放随机抽取过去的转移，减少连续样本之间的相关性；固定一段时间的目标网络为自举更新提供较稳定的学习目标。</p><p>同一套基本架构在多款游戏中从视觉输入学习策略，证明深度表示可以与强化学习共同工作，而不必为每个游戏手工设计状态特征。DQN 开启深度强化学习的重要浪潮，但仍存在样本效率低、训练不稳定和对奖励设计敏感等问题，后续研究围绕这些限制发展出大量改进。</p>",
+    "en": "<p>DeepMind's DQN combined a convolutional neural network with Q-learning so an agent could estimate the long-term value of actions directly from Atari screen pixels. Experience replay sampled past transitions in randomized order, reducing correlations between consecutive observations. A target network held parameters fixed for intervals, providing a more stable target for bootstrapped updates.</p><p>The same basic architecture learned policies across many games from visual input without hand-designing a separate state representation for each one. DQN became a major bridge from classical reinforcement learning to deep reinforcement learning. It still required large amounts of experience and could be unstable or sensitive to reward design, limitations that motivated a broad family of later improvements.</p>"
   },
   "emphasis": [
     "batch-migration",

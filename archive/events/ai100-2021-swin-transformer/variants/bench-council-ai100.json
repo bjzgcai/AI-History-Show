@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>Swin Transformer 通过构建层级特征图并把自注意力限制在移位局部窗口内，把 Transformer 适配到密集视觉任务。这让 Transformer 骨干网络更适合需要多尺度特征的分类、检测和分割工作。</p>",
-    "en": "<p>Swin Transformer adapted transformers to dense vision by building hierarchical feature maps and limiting self-attention to shifted local windows. This made transformer backbones practical for classification, detection, and segmentation workloads that need multi-scale features.</p>"
+    "zh": "<p>Swin Transformer 把自注意力限制在局部窗口内，使计算量随图像大小近似线性增长；相邻层再把窗口位置平移，让原本分隔的区域能够交换信息。随着网络加深，patch 合并逐步降低分辨率、增加通道，形成类似 CNN 的层级多尺度特征图。</p><p>这种设计保留 Transformer 的注意力建模能力，又满足检测和分割对不同空间尺度的需求，使同一骨干能服务图像分类、目标检测和语义分割。局部窗口仍是一种架构先验，但它解决了全局注意力在高分辨率图像上的成本问题，推动 Transformer 成为通用视觉骨干。</p>",
+    "en": "<p>Swin Transformer restricts self-attention to local windows so computation grows approximately linearly with image size. Successive layers shift the window arrangement, allowing regions separated in one layer to exchange information in the next. As depth increases, patch merging reduces spatial resolution and increases channels, creating a hierarchy of multiscale feature maps similar to a CNN.</p><p>The design retains attention-based modeling while meeting the needs of detection and segmentation at different spatial scales, allowing one backbone to support classification, object detection, and semantic segmentation. Local windows remain an architectural prior, but they solve much of the cost of global attention on high-resolution images and helped make Transformers practical as general-purpose visual backbones.</p>"
   },
   "emphasis": [
     "batch-migration",

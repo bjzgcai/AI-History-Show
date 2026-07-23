@@ -20,7 +20,7 @@
         "purpose": "migration-only"
     },
     {
-        "id": "source-highway-networks-arxiv",
+        "id": "source-highway-networks-paper",
         "type": "paper",
         "label": {
             "zh": "原始论文",
@@ -100,5 +100,25 @@
             "en": "The official IDSIA personal page provides biographical information and links to the 2017 portrait used here."
         },
         "purpose": "image-provenance"
+    },
+    {
+        "id": "source-resnet-follow-up-paper",
+        "type": "paper",
+        "title": {
+            "zh": "《用于图像识别的深度残差学习》",
+            "en": "Deep Residual Learning for Image Recognition"
+        },
+        "url": "https://arxiv.org/abs/1512.03385",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "后续 ResNet 原论文，用于说明门控高速连接与恒等残差捷径之间的技术承接。",
+            "en": "The subsequent ResNet paper, included to document the transition from gated highway connections to identity residual shortcuts."
+        },
+        "label": {
+            "zh": "后续论文",
+            "en": "Follow-up paper"
+        },
+        "purpose": "follow-up"
     }
 ]

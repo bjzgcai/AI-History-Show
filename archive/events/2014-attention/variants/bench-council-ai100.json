@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>2014年，兹米特里·巴赫达瑙、赵京贤和约书亚·本吉奥在神经机器翻译中引入注意力机制，让解码器能够回看源句中的不同位置，而不是把整句压缩成一个固定向量。融合后的事件既把注意力作为编码器-解码器翻译的突破，也把它呈现为通向 Transformer 式 AI 的概念桥梁。</p>",
-    "en": "<p>In 2014, Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio introduced attention for neural machine translation, letting the decoder look back at different source positions instead of compressing a whole sentence into one fixed vector. This fused event presents attention as both a breakthrough for encoder-decoder translation and the conceptual bridge that later made token-to-token relevance central to Transformer-style AI.</p>"
+    "zh": "<p>巴赫达瑙、赵京贤和本吉奥在 2014 年改进神经机器翻译，解决编码器必须把整句压缩进单一固定向量的瓶颈。编码器为源句各位置生成表示，解码器每产生一个目标词，就计算与这些位置的匹配分数并归一化为权重，再用加权上下文决定输出。</p><p>这种可学习的“软对齐”让模型在翻译长句时动态关注不同词语，同时使对齐关系可以被观察。它最初仍运行在循环编码器—解码器之上，并不是后来的自注意力 Transformer；但它把内容相关的选择变成可微模块，为注意力成为现代序列模型的核心计算原语铺平道路。</p>",
+    "en": "<p>Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio improved neural machine translation in 2014 by removing the bottleneck that forced an encoder to compress an entire sentence into one fixed vector. The encoder produces a representation at each source position. For every target word, the decoder scores its match to those positions, normalizes the scores into weights, and uses the weighted context to produce the output.</p><p>This learned “soft alignment” lets the model attend dynamically to different words while translating long sentences and makes alignment patterns inspectable. The original method still sat on top of recurrent encoders and decoders and was not the later self-attention Transformer. It nevertheless turned content-dependent selection into a differentiable module and prepared attention to become a central computational primitive of modern sequence models.</p>"
   },
   "emphasis": [
     "batch-migration",

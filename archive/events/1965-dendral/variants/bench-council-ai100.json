@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>DENDRAL 是最早展示领域知识能让 AI 具有实际用途的专家系统之一。它把搜索与专家化学规则结合起来，根据质谱证据推断分子结构。这个项目把注意力从单纯通用推理转向富知识系统。</p>",
-    "en": "<p>DENDRAL was one of the first expert systems to show that domain knowledge could make AI practically useful. It helped infer molecular structures from mass-spectrometry evidence by combining search with expert chemical rules. The project shifted attention from general reasoning alone to knowledge-rich systems.</p>"
+    "zh": "<p>DENDRAL 于 1960 年代在斯坦福启动，目标是根据质谱等实验数据推断有机分子的可能结构。系统先依据化学约束生成候选结构，再用关于键断裂和谱峰的专家规则预测证据、排除不符合数据的候选，把庞大的组合搜索空间缩小到化学上合理的范围。</p><p>它没有依靠一套完全通用的推理规则，而是把化学家的专门知识编码进程序，展示了知识质量可以比通用搜索技巧更决定系统表现。DENDRAL 因此成为专家系统和知识工程的奠基项目，也推动 AI 从抽象演示走向可由领域专家检验的科学应用。</p>",
+    "en": "<p>DENDRAL began at Stanford in the 1960s to infer plausible organic molecular structures from experimental evidence such as mass spectra. The system generated candidate structures under chemical constraints, then used expert rules about bond fragmentation and spectral peaks to predict evidence and reject candidates inconsistent with the observations, reducing a huge combinatorial space to chemically meaningful possibilities.</p><p>Rather than relying on a completely general reasoning method, DENDRAL encoded specialized knowledge from chemists, demonstrating that the quality of domain knowledge could matter more than generic search technique. It became a founding project for expert systems and knowledge engineering and helped move AI from abstract demonstrations toward scientific applications whose outputs could be evaluated by domain experts.</p>"
   },
   "emphasis": [
     "batch-migration",

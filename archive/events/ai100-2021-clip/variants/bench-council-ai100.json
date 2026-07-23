@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>OpenAI 提出 CLIP，这是一种在网页规模图文对上进行对比学习的模型。它通过共享嵌入空间连接视觉和语言，并实现了很强的零样本图像分类能力。</p>",
-    "en": "<p>OpenAI introduced CLIP as a contrastive model trained on image-text pairs collected at web scale. It connected vision and language through a shared embedding space and enabled strong zero-shot image classification.</p>"
+    "zh": "<p>OpenAI 在 2021 年提出 CLIP，用图像编码器和文本编码器分别处理网页规模的图文对。在一个训练批次中，模型提高正确图文配对的相似度，同时降低错误组合的相似度，从而把视觉概念和自然语言描述对齐到共享向量空间。</p><p>推理时，用户可以把类别名称写成文本提示，与图像向量比较，实现无需该数据集专门训练的零样本分类。CLIP 让自然语言成为可扩展视觉监督接口，也支撑后来的图像检索和生成模型。它会继承网络数据的偏见，对提示措辞和分布变化也可能敏感。</p>",
+    "en": "<p>OpenAI introduced CLIP in 2021 with separate image and text encoders trained on web-scale image-text pairs. Within each training batch, the model increases similarity for correct pairs and decreases it for mismatched combinations, aligning visual concepts and natural-language descriptions in a shared embedding space.</p><p>At inference time, class names can be written as text prompts and compared with an image vector, enabling zero-shot classification without training specifically on that labeled dataset. CLIP made natural language a scalable interface for visual supervision and later supported retrieval and generative models. It also inherits biases from web data and can be sensitive to prompt wording and distribution shifts.</p>"
   },
   "emphasis": [
     "batch-migration",

@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>",
-    "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>"
+    "zh": "<p>索尔-迪克斯坦等人在 2015 年把生成建模写成非平衡热力学过程：前向马尔可夫链逐步向数据加入微小噪声，直到接近简单分布；模型学习每一步的逆向转移，从噪声出发逐渐恢复样本。这个过程提供可计算的训练目标和概率解释。</p><p>2020 年的去噪扩散概率模型进一步简化训练，让神经网络直接预测噪声，并成为现代图像生成的重要基础。扩散模型通常覆盖数据模式较好、训练稳定，但采样需要许多连续去噪步骤，速度较慢。它的核心思想是把困难生成问题拆成一系列小型可学习逆过程。</p>",
+    "en": "<p>Jascha Sohl-Dickstein and colleagues formulated generative modeling as a nonequilibrium thermodynamic process in 2015. A forward Markov chain adds small amounts of noise to data until it approaches a simple distribution. A model learns each reverse transition so a sample can be reconstructed gradually from noise, providing a tractable training objective and probabilistic interpretation.</p><p>Denoising diffusion probabilistic models simplified the approach in 2020 by training a neural network to predict noise, becoming a major foundation for modern image generation. Diffusion models often cover data modes well and train stably, but sampling can be slow because it requires many sequential denoising steps. Their central idea is to decompose a difficult generation problem into a sequence of small learnable reverse processes.</p>"
   },
   "emphasis": [
     "batch-migration",

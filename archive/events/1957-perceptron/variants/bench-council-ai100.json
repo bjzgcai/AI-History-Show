@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>1957 年，美国心理学家弗兰克·罗森布拉特（Frank Rosenblatt）在技术报告《The Perceptron: A Perceiving and Recognizing Automaton》中首次提出感知机（Perceptron）模型，这是人工神经网络发展史上的第一个可学习神经网络模型，标志着机器学习开始从符号推理迈向数据驱动学习，为现代深度学习的发展奠定了基础。</p>",
-    "en": "<p>In 1957, American psychologist Frank Rosenblatt introduced the Perceptron in his technical report The Perceptron: A Perceiving and Recognizing Automaton. Widely regarded as the first trainable artificial neural network, the Perceptron marked the beginning of data-driven machine learning and laid the theoretical foundation for the development of modern deep learning.</p>"
+    "zh": "<p>弗兰克·罗森布拉特在 1957 年技术报告和 1958 年论文中提出感知机，把一组输入通过可调权重连接到决策单元。训练时，模型根据分类错误增减权重，使决策边界逐步移动；康奈尔航空实验室随后制造 Mark I Perceptron，把部分连接实现为硬件并用于视觉模式实验。</p><p>感知机的重要性在于展示机器可以从标注样本中调整内部参数，而不必由程序员写出全部识别规则。单层感知机只能学习线性可分边界，无法解决 XOR 等问题，这些限制后来引发重要争论；但“加权求和、误差驱动更新和分布式单元”的基本模式成为神经网络历史的关键起点。</p>",
+    "en": "<p>Frank Rosenblatt introduced the perceptron in a 1957 technical report and a 1958 paper, connecting a set of inputs through adjustable weights to a decision unit. During training, the model increases or decreases weights in response to classification errors so the decision boundary moves toward a solution. Cornell Aeronautical Laboratory later built the Mark I Perceptron, implementing parts of the connections in hardware for visual-pattern experiments.</p><p>The perceptron demonstrated that a machine could adjust internal parameters from labeled examples instead of requiring a programmer to write every recognition rule. A single-layer perceptron can learn only linearly separable boundaries and cannot solve problems such as XOR, limitations that later shaped major debates. Its pattern of weighted sums, error-driven updates, and distributed units nevertheless became a crucial starting point for neural-network research.</p>"
   },
   "emphasis": [
     "batch-migration",

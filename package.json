@@ -47,6 +47,10 @@
         "audit:ai100-accuracy": "node scripts/audit-ai100-accuracy.js",
         "audit:figures": "node scripts/audit-event-figures.js",
         "audit:figures:check": "node scripts/audit-event-figures.js --check",
+        "audit:svg-explainers": "node scripts/audit-svg-explainers.js",
+        "audit:svg-geometry": "node scripts/run-svg-geometry-audit.js",
+        "build:svg-explainer-candidates": "node scripts/build-svg-explainer-candidates.js",
+        "promote:svg-explainer-candidates": "node scripts/promote-svg-explainer-candidates.js",
         "validate:deployment": "npm run validate:archive && npm run generate && npm run build:static && npm test && npm run validate:startup"
     },
     "devDependencies": {

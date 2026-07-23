@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "displayDescription": {
-    "zh": "<p>批归一化通过在小批量学习中归一化中间激活值来稳定深度网络训练。它让更高学习率和更深网络在实践中更容易使用。</p>",
-    "en": "<p>Batch normalization stabilized deep-network training by normalizing intermediate activations during mini-batch learning. It made higher learning rates and deeper networks easier to use in practice.</p>"
+    "zh": "<p>约菲和泽格迪在 2015 年提出批归一化，在训练时用小批量统计量对中间激活进行标准化，再通过可学习的缩放和偏移恢复网络需要的表示范围。推理阶段则使用训练期间积累的总体统计量，使输出不再依赖当前批次。</p><p>BatchNorm 让更高学习率和更深网络更容易优化，降低了对初始化的敏感性，并常带来一定正则化效果。原论文以减少“内部协变量偏移”解释作用机制，后续研究对这一解释提出修正；但它改变优化几何、稳定激活和加速训练的实际价值已被广泛验证。</p>",
+    "en": "<p>Sergey Ioffe and Christian Szegedy introduced batch normalization in 2015. During training it standardizes intermediate activations with mini-batch statistics, then restores the representational range needed by the network through learned scale and offset parameters. At inference time, accumulated population statistics replace dependence on the current batch.</p><p>BatchNorm made higher learning rates and deeper networks easier to optimize, reduced sensitivity to initialization, and often supplied a regularizing effect. The original paper explained it through reduced “internal covariate shift,” an interpretation that later research refined or challenged. Its practical value in changing optimization geometry, stabilizing activations, and accelerating training nevertheless became firmly established.</p>"
   },
   "emphasis": [
     "batch-migration",
