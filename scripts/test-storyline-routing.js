@@ -83,11 +83,22 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
     'the default document should paint the unified UI shell before JavaScript initialization'
+);
+assert.match(
+    i18nSource,
+    /aiHistoryMode:\s*'人工智能历史'/,
+    'the Chinese mode label should use the full localized name'
+);
+assert.match(
+    indexHtml,
+    /data-i18n="aiHistoryMode">人工智能历史<\/span>/,
+    'the initial UI shell should match the localized Chinese mode label before JavaScript initializes'
 );
 assert.match(
     indexHtml,

@@ -18,6 +18,10 @@ const mobileRequirements = [
         message: 'mobile touch target token is defined'
     },
     {
+        pattern: /--mode-chip-width:\s*150px/,
+        message: 'the localized AI history label keeps a stable width with room for Chinese text'
+    },
+    {
         pattern: /@media\s*\(max-width:\s*1199px\)/,
         message: 'tablet and mobile responsive breakpoint exists'
     },
