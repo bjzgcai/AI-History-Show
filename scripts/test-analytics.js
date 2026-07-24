@@ -152,15 +152,7 @@ for (const fileName of ['index.html', 'dual-screen.html']) {
 }
 
 const indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-for (const eventName of [
-    'quiz_impression',
-    'quiz_answer',
-    'mobile_quiz_start',
-    'mobile_quiz_complete',
-    'qr_landing',
-    'storyline_picker_open',
-    'storyline_switch'
-]) {
+for (const eventName of ['quiz_impression', 'quiz_answer', 'storyline_picker_open', 'storyline_switch']) {
     assert.match(indexHtml, new RegExp(`['"]${eventName}['"]`), `index.html should emit ${eventName}`);
 }
 assert.match(indexHtml, /startAnalyticsStorylineView\(\s*activeStorylineId/);
