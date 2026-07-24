@@ -62,6 +62,22 @@ humanisticMilestones.forEach((milestone) => {
 });
 console.log('PASS humanistic commentary media coverage');
 
+const gamingMilestones = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'gaming-ai'
+);
+assert.equal(gamingMilestones.length, 13, 'the gaming AI storyline should contain thirteen events');
+gamingMilestones.forEach((milestone) => {
+    assert.ok(
+        milestone.achievement && milestone.achievement.visual,
+        `${milestone.archiveEventId || milestone.id} should provide a unified UI visual`
+    );
+    assert.ok(
+        Array.isArray(milestone.quizzes) && milestone.quizzes.length > 0,
+        `${milestone.archiveEventId || milestone.id} should provide a detail checkpoint quiz`
+    );
+});
+console.log('PASS gaming AI unified UI content coverage');
+
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
     { id: 'milestone-2017-transformer', storyline: { id: 'deep-learning' } },
@@ -89,6 +105,16 @@ assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
     'the default document should paint the unified UI shell before JavaScript initialization'
+);
+assert.match(
+    indexHtml,
+    /id: 'gaming-ai',[\s\S]*?layout: 'ui-browser'/,
+    'the gaming AI storyline should use the same UI browser as the other public storylines'
+);
+assert.match(
+    indexHtml,
+    /UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN[\s\S]*?sample-go-game[\s\S]*?function getUiGameEvolutionModule/,
+    'the unified gaming UI should not expose the shared sample game as event-specific playback'
 );
 assert.match(
     i18nSource,
@@ -289,7 +315,7 @@ console.log('PASS PQ-only quiz course entrance');
 
 assert.match(
     indexHtml,
-    /const shouldUseVideo = isDirectVideoMedia\(videoUrl\)[\s\S]*?canLoadBranchVideo/,
+    /const shouldUseVideo = isDirectVideoMedia\(videoUrl\)[\s\S]*?canLoadGameEvolutionVideo/,
     'game evolution images such as GIF files should not be rendered through a video element'
 );
 assert.match(
