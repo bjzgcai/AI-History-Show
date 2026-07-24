@@ -2021,9 +2021,13 @@
         }
 
         .mode-chip {
+            --mode-chip-width: 138px;
             justify-self: end;
             display: inline-flex;
             align-items: center;
+            justify-content: flex-end;
+            width: var(--mode-chip-width);
+            min-width: var(--mode-chip-width);
             order: 3;
             color: rgba(244, 239, 229, 0.54);
             font-size: 18px;
@@ -10230,8 +10234,8 @@
         const POP_QUIZ_MOBILE_QUERY_VALUE = 'mobile';
         const POP_QUIZ_MOBILE_QUESTION_COUNT = 10;
         const POP_QUIZ_MOBILE_CAMPAIGN = 'ai100-pop-quiz-v2';
-        const POP_QUIZ_MOBILE_PUBLIC_URL = 'https://bjzgcai.github.io/AI-History-Show/?storyline=bench-council-ai100&quiz=mobile';
-        const POP_QUIZ_MOBILE_QR_URL = 'resources/images/ui/ai100-pop-quiz-qr-v2.svg?v=20260608';
+        const POP_QUIZ_MOBILE_PUBLIC_URL = 'https://museum.bza.edu.cn/ai-history/?storyline=bench-council-ai100&quiz=mobile';
+        const POP_QUIZ_MOBILE_QR_URL = 'resources/images/ui/ai100-pop-quiz-qr-v2.svg?v=20260724';
         const COMPLETION_QUIZ_MIN_DWELL_MS = 15 * 1000;
         const GLOBE_TEXTURE_URLS = {
             water: `resources/textures/earth-water.png?v=${GLOBE_TEXTURE_VERSION}`,
@@ -18251,13 +18255,13 @@
             observer.observe(document.body, { childList: true });
         }
 
-        function renderPage(index, analyticsOptions = {}) {
+        function renderPage(index, renderOptions = {}) {
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
             syncUiBrowserCurrentIndex();
             const vm = getVm(currentIndex);
             startAnalyticsMilestoneView(vm, {
-                navigationSource: analyticsOptions.navigationSource || 'render',
-                eligible: analyticsOptions.eligible !== false
+                navigationSource: renderOptions.navigationSource || 'render',
+                eligible: renderOptions.eligible !== false
             });
             currentMilestoneViewedAt = Date.now();
             if (isUiBrowserActive() && uiBrowserMode !== 'detail') {
@@ -18265,7 +18269,9 @@
             } else {
                 markCompletionQuizView(vm);
             }
-            currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            if (!renderOptions.preserveArchiveIndex) {
+                currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            }
             applyStaticTranslations();
             const branchTimelineActive = isBranchTimelineActive();
             const humanisticCycleActive = branchTimelineActive && activeStorylineId === 'humanistic-cycle';
@@ -18848,7 +18854,7 @@
                 vmCache.clear();
                 renderStorylineSelect();
                 renderAboutModal();
-                renderPage(currentIndex);
+                renderPage(currentIndex, { preserveArchiveIndex: true });
                 if (mobileQuizState) renderMobileQuizState();
             });
 
