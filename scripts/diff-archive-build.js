@@ -6,7 +6,7 @@ const path = require('node:path');
 const { buildArchivePreview } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const REPORT_PATH = path.join(ROOT, 'reports', 'archive-build-diff.md');
+const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-build-diff.md');
 const SNAPSHOT_PATH = path.join(ROOT, '.tmp', 'archive-review', 'archive-review-snapshot.json');
 const GENERATED_DATA = path.join(ROOT, 'milestones-data.js');
 

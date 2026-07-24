@@ -181,7 +181,7 @@ theta = -lng * (Math.PI / 180)
 - `npm run build:static` 将展示页、两份运行时数据、`shared/`、`resources/`、所需 `public/` 资源和 `.nojekyll` 组装到 `.tmp/static-site/`。
 - Docker presentation stage 与 `.github/workflows/pages.yml` 都只发布这个 allowlist 静态包。
 - GitHub Pages 工作流会先校验 Archive、生成数据、运行质量门禁并构建 `.tmp/static-site`，再从 `main` 部署。
-- `archive/` 源 JSON、`manage/`、Legacy 数据、`reports/`、`research/` 和 `scripts/` 不进入 Pages/Docker presentation 发布物。
+- `archive/` 源 JSON、`manage/`、Legacy 数据、`research/`、`scripts/` 和 `.tmp/` review 产物不进入 Pages/Docker presentation 发布物。
 
 ### 注意事项
 

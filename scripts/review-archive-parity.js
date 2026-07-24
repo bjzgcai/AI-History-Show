@@ -283,9 +283,7 @@ async function main() {
     const runId = new Date().toISOString().replace(/[:.]/g, '-');
     const runOutput = path.join(OUTPUT_ROOT, runId);
     fs.mkdirSync(runOutput, { recursive: true });
-    const legacy = require(
-        path.join(ROOT, 'reports', 'archive-parity', 'data', 'milestones-data-legacy.js')
-    ).milestones;
+    const legacy = require(path.join(OUTPUT_ROOT, 'data', 'milestones-data-legacy.js')).milestones;
     const specs = makeSpecs(legacy);
     const chrome = await launchChrome(runOutput);
     const results = [];

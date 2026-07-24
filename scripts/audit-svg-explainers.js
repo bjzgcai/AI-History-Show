@@ -8,7 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
-const OUTPUT_DIR = path.join(ROOT, 'reports', 'svg-explainer-review');
+const OUTPUT_DIR = path.join(ROOT, '.tmp', 'archive-reports', 'svg-explainer-review');
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -330,7 +330,7 @@ function buildReviewHtml(entries) {
     for (const [index, entry] of entries.entries()) {
       const article = document.createElement('article');
       const eventNames = [...new Set(entry.usages.map((usage) => usage.eventId))].join(', ');
-      article.innerHTML = '<div class="media"><object type="image/svg+xml" data="../../' + entry.path + '"></object></div>' +
+      article.innerHTML = '<div class="media"><object type="image/svg+xml" data="../../../' + entry.path + '"></object></div>' +
         '<div class="meta"><h2>' + (index + 1) + '. ' + entry.path.split('/').pop() + '</h2>' +
         '<p>' + eventNames + '</p><p class="muted">' + entry.sourceIds.join(', ') + '</p><p class="issues">等待检测</p></div>';
       grid.appendChild(article);

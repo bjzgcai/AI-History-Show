@@ -50,11 +50,9 @@ Do not edit generated display data by hand:
 milestones-data.js
 milestones-data-default.js
 .tmp/archive-*/**
-reports/archive-*.md
-reports/archive-*.json
 ```
 
-Heavy rebuildable review data is written under `.tmp/archive-*` and is not tracked. Retained Markdown reports summarize long-lived audit conclusions. After Archive source edits, validate and regenerate with:
+Rebuildable reports and review data are written under `.tmp/archive-reports/` and related `.tmp/archive-*` directories. They are not tracked. After Archive source edits, validate and regenerate with:
 
 ```bash
 npm run validate:archive
@@ -66,26 +64,7 @@ npm run diff:archive
 
 ## Current migration status
 
-Current archive coverage is tracked in:
-
-```text
-reports/archive-migration-progress.md
-reports/archive-build-diff.md
-reports/history/archive-refactor-completion-audit.md
-```
-
-As of the latest audit:
-
-```text
-Archive event directories: 116
-Catalog/storyline migration targets: 134
-Archive overlay: 134 applied, 0 skipped, 0 errors
-Unexpected presentation changes: 0
-Duplicate preview target ids: 0
-Generated ids missing archive preview: 0
-```
-
-The count difference is intentional: some canonical archive events have multiple storyline variants and therefore map to more than one generated display milestone.
+The structural migration is complete for all current display targets. Run `npm run validate:archive`, `npm run generate`, and `npm test` for the current state. Historical migration reports remain available through Git history rather than as tracked generated files.
 
 ## Canonical events and variants
 

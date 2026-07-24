@@ -53,7 +53,7 @@ flowchart TD
     EVENTS["archive/events/*/"]
     RESOURCES["resources/"]
     VALIDATE["npm run validate:archive<br/>scripts/validate-archive.js"]
-    VALIDATION_REPORT["reports/archive-validation.md"]
+    VALIDATION_REPORT[".tmp/archive-reports/archive-validation.md"]
     GENERATE["npm run generate<br/>scripts/generate-archive-data.js"]
     COMPILER["scripts/archive-compiler.js"]
     PRIMARY["milestones-data.js"]
@@ -196,9 +196,10 @@ milestones-data-default.js
 |---|---|---|
 | 内容权威 | `archive/**` | 长期跟踪，人工编辑入口 |
 | 正式 runtime | `milestones-data*.js` | 长期跟踪，只能由 generator 更新 |
-| 当前摘要报告 | `reports/*.md` | 按命令刷新，保留长期可读结论 |
-| 机器工作集 | `.tmp/archive-reports/`、`.tmp/archive-review/` 等 | 可重建，不跟踪 |
-| 阶段历史 | `reports/history/` | 保留迁移计划、基线与阶段验收背景 |
+| 自动报告与机器工作集 | `.tmp/archive-reports/`、`.tmp/archive-review/` 等 | 可重建，不跟踪 |
+| 人工研究与审阅结论 | `research/` | 长期跟踪，人工维护 |
+
+Archive 迁移期的阶段报告已从当前工作树移除，仍可通过 Git 历史查阅。
 
 `resources/` 继续按 append-only 规则管理。资源报告中的“未引用”只表示没有找到某类静态引用，不构成删除授权。
 

@@ -6,10 +6,9 @@ const path = require('node:path');
 
 const ROOT = path.join(__dirname, '..');
 const EVENTS_DIR = path.join(ROOT, 'archive', 'events');
-const REPORT_DIR = path.join(ROOT, 'reports');
 const MACHINE_REPORT_DIR = path.join(ROOT, '.tmp', 'archive-reports');
 const REPORT_JSON = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.json');
-const REPORT_MD = path.join(REPORT_DIR, 'event-figure-audit.md');
+const REPORT_MD = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.md');
 const writeReports = !process.argv.includes('--check');
 const legacyAvatars = require('../manage/figure-avatars.js');
 
@@ -394,7 +393,6 @@ const report = {
 };
 
 if (writeReports) {
-    fs.mkdirSync(REPORT_DIR, { recursive: true });
     fs.mkdirSync(MACHINE_REPORT_DIR, { recursive: true });
     fs.writeFileSync(REPORT_JSON, `${JSON.stringify(report, null, 2)}\n`);
     fs.writeFileSync(REPORT_MD, renderReport(items, avatarConflicts));

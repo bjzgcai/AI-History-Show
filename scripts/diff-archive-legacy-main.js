@@ -10,7 +10,7 @@ const LEGACY_PATH = process.argv[2]
     ? path.resolve(process.argv[2])
     : path.join(ROOT, '.tmp', 'archive-parity', 'data', 'milestones-data-legacy.js');
 const ARCHIVE_PATH = process.argv[3] ? path.resolve(process.argv[3]) : path.join(ROOT, 'milestones-data.js');
-const REPORT_PATH = path.join(ROOT, 'reports', 'archive-legacy-main-diff.md');
+const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-legacy-main-diff.md');
 const JSON_REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-legacy-main-diff.json');
 const VIEW_SCRIPT = fs.readFileSync(path.join(ROOT, 'shared', 'milestone-view.js'), 'utf8');
 

@@ -5,6 +5,7 @@ This directory supports the AI History Museum / AI Top 100 Achievements research
 - `achievements.json`: structured BenchCouncil AI100 list generated from the source page.
 - `achievements.md`: human-readable copy of the list.
 - `prompt-template.md`: reusable research prompt for each achievement.
+- `manual-review-guide.md`: retained human review checklist derived from the AI100 accuracy audit.
 - `pages/`: one directory per achievement, named `$number.$achievement-name-slug/`.
 - `pages/*/index.md`: the achievement research page.
 - `pages/*/index.zh.md`: Chinese version of the achievement research page when available.

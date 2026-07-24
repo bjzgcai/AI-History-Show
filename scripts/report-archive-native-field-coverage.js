@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
-const REPORT_PATH = path.join(ROOT, 'reports', 'archive-native-field-coverage.md');
+const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-native-field-coverage.md');
 const FRONTEND_FILES = ['index.html', 'dual-screen.html', 'shared/milestone-view.js'];
 
 const FIELD_GROUPS = [

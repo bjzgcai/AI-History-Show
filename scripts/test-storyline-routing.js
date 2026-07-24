@@ -54,9 +54,7 @@ const humanisticMilestones = generatedMilestones.filter(
 );
 assert.equal(humanisticMilestones.length, 12, 'the humanistic cycle should contain twelve events');
 humanisticMilestones.forEach((milestone) => {
-    const images = milestone.resources && Array.isArray(milestone.resources.images)
-        ? milestone.resources.images
-        : [];
+    const images = milestone.resources && Array.isArray(milestone.resources.images) ? milestone.resources.images : [];
     assert.ok(
         images.some((url) => /\/humanistic-cycle\/explainers\//.test(String(url || ''))),
         `${milestone.archiveEventId || milestone.id} should provide an explainer for commentary media`
