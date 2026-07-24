@@ -7,7 +7,7 @@ const { buildArchivePreview } = require('./archive-compiler.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUTPUT_PATH = path.join(ROOT, '.tmp', 'archive-build', 'archive-build-preview.json');
-const SUMMARY_PATH = path.join(ROOT, 'reports', 'archive-build-preview.md');
+const SUMMARY_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-build-preview.md');
 
 function writeSummary(output) {
     const lines = [];
@@ -39,6 +39,7 @@ function writeSummary(output) {
         output.errors.forEach((error) => lines.push(`- \`${error.storylineId}\`: ${error.message}`));
     }
     lines.push('');
+    fs.mkdirSync(path.dirname(SUMMARY_PATH), { recursive: true });
     fs.writeFileSync(SUMMARY_PATH, `${lines.join('\n')}\n`);
 }
 

@@ -126,7 +126,7 @@ npm run build:static
 # 输出：.tmp/static-site/
 ```
 
-发布包只包含正式页面、两份 runtime data、`shared/`、`resources/`、页面依赖的 `public/` 字体和 `.nojekyll`。它不会公开 `archive/`、`manage/`、`reports/`、`research/`、`scripts/`、Legacy 数据或内部 review 产物。
+发布包只包含正式页面、两份 runtime data、`shared/`、`resources/`、页面依赖的 `public/` 字体和 `.nojekyll`。它不会公开 `archive/`、`manage/`、`research/`、`scripts/`、Legacy 数据或 `.tmp/` 内部 review 产物。
 
 ## 国际化
 

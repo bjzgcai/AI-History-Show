@@ -248,7 +248,7 @@ npm run audit:legacy-data
 它会生成：
 
 ```text
-reports/legacy-data-audit.md
+.tmp/archive-reports/legacy-data-audit.md
 ```
 
 当前检查内容包括：

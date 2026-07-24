@@ -8,7 +8,7 @@ const { FUSIONS } = require('../manage/event-fusions.js');
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const OUT_JSON = path.join(ROOT, '.tmp', 'archive-reports', 'archive-fusion-variant-map.json');
-const OUT_MD = path.join(ROOT, 'reports', 'archive-fusion-variant-map.md');
+const OUT_MD = path.join(ROOT, '.tmp', 'archive-reports', 'archive-fusion-variant-map.md');
 
 function existsEvent(id) {
     return fs.existsSync(path.join(ARCHIVE_EVENTS, id, 'event.json'));

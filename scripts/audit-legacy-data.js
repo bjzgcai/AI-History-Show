@@ -7,7 +7,7 @@ const { buildArchivePreview } = require('./archive-compiler.js');
 const { FUSIONS } = require('../manage/event-fusions.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const REPORT_PATH = path.join(ROOT, 'reports', 'legacy-data-audit.md');
+const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'legacy-data-audit.md');
 
 function requireFresh(relativePath) {
     const fullPath = path.join(ROOT, relativePath);

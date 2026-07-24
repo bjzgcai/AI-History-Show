@@ -9,7 +9,7 @@ const { FUSIONS, getFusionCanonical } = require('../manage/event-fusions.js');
 const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const STORYLINES_DIR = path.join(ROOT, 'archive', 'storylines');
-const REPORT_PATH = path.join(ROOT, 'reports', 'archive-migration-progress.md');
+const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-migration-progress.md');
 const GENERATED_DATA = path.join(ROOT, 'milestones-data.js');
 const {
     sourceLabel,

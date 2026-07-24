@@ -14,14 +14,13 @@ const {
 } = require('../shared/utils.js');
 
 const STORYLINE_ID = 'bench-council-ai100';
-const REPORT_DIR = path.join(__dirname, '..', 'reports');
 const MACHINE_OUT_DIR = path.join(__dirname, '..', '.tmp', 'archive-reports');
 const OUT_JSON = path.join(MACHINE_OUT_DIR, 'ai100-accuracy-audit.json');
-const OUT_MD = path.join(REPORT_DIR, 'ai100-accuracy-audit.md');
+const OUT_MD = path.join(MACHINE_OUT_DIR, 'ai100-accuracy-audit.md');
 const OUT_WEAK_JSON = path.join(MACHINE_OUT_DIR, 'ai100-weak-claims-review.json');
-const OUT_WEAK_MD = path.join(REPORT_DIR, 'ai100-weak-claims-review.md');
+const OUT_WEAK_MD = path.join(MACHINE_OUT_DIR, 'ai100-weak-claims-review.md');
 const OUT_RISK_JSON = path.join(MACHINE_OUT_DIR, 'ai100-risk-claims.json');
-const OUT_RISK_MD = path.join(REPORT_DIR, 'ai100-risk-claims.md');
+const OUT_RISK_MD = path.join(MACHINE_OUT_DIR, 'ai100-risk-claims.md');
 const STRICT = process.argv.includes('--strict');
 
 const REQUIRED_CONTEXT_LABELS = new Set(['Historical Background', 'Core Idea', 'Long-Term Legacy']);
@@ -392,7 +391,6 @@ const audit = {
     items
 };
 
-fs.mkdirSync(REPORT_DIR, { recursive: true });
 fs.mkdirSync(MACHINE_OUT_DIR, { recursive: true });
 const riskClaims = claimReportItems(audit).filter((claim) => claim.risk);
 const weakClaims = riskClaims.filter((claim) => claim.manualReview);
