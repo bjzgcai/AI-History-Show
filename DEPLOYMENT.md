@@ -122,7 +122,7 @@ globalScope.AI_HISTORY_UMAMI_CONFIG = {
 
 当前采集地址已配置为 `https://museum.bza.edu.cn/umami/script.js`，数据发送到 `https://museum.bza.edu.cn/umami/api/send`。内网管理面板和 Docker 服务地址不进入前端配置。`websiteId` 缺失、Umami 服务不可达或脚本被浏览器拦截时，统计模块会静默降级，不阻塞展示页面。
 
-当前自定义事件包括 `session_start`、`storyline_view`、`storyline_leave`、`storyline_switch`、`storyline_picker_open`、`milestone_view`、`milestone_leave`、`quiz_impression`、`quiz_answer`、`mobile_quiz_start`、`mobile_quiz_complete` 和 `qr_landing`。故事线进入会立即记录，故事线停留时间只累计页面可见且观众活跃的时间。事件浏览需累计至少 1 秒可见时间；连续 60 秒没有人工操作会暂停停留计时，30 分钟没有操作后再次互动会开始新会话。大屏自动轮播不会直接产生有效事件浏览，除非观众随后发生真实操作。
+当前自定义事件包括 `session_start`、`storyline_view`、`storyline_leave`、`storyline_switch`、`storyline_picker_open`、`milestone_view`、`milestone_leave`、`quiz_impression` 和 `quiz_answer`。故事线进入会立即记录，故事线停留时间只累计页面可见且观众活跃的时间。事件浏览需累计至少 1 秒可见时间；连续 60 秒没有人工操作会暂停停留计时，30 分钟没有操作后再次互动会开始新会话。大屏自动轮播不会直接产生有效事件浏览，除非观众随后发生真实操作。
 
 ### 方案对比
 

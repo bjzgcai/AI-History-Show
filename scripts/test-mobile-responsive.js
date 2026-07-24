@@ -50,6 +50,11 @@ const mobileRequirements = [
         message: 'quiz material and challenge areas can stack'
     },
     {
+        pattern:
+            /\.quick-quiz-pq-entry\s*\{[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)\s+132px[\s\S]*?@media\s*\(max-width:\s*600px\)[\s\S]*?\.quick-quiz-pq-entry,[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)/,
+        message: 'the PQ course entrance stacks its copy and mini program code on small phones'
+    },
+    {
         pattern: 'MOBILE_GLOBE_PIXEL_RATIO_CAP',
         message: 'mobile globe pixel ratio cap is configured'
     },
