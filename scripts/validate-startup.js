@@ -4,7 +4,6 @@
 const assert = require('node:assert/strict');
 const { spawn } = require('node:child_process');
 const { once } = require('node:events');
-const { LEGACY_WRITE_ROUTES } = require('../manage/authority-boundary.js');
 
 const HOST = '127.0.0.1';
 
@@ -93,13 +92,33 @@ async function validateAdminServer() {
     try {
         const admin = await waitForHttp(`http://${HOST}:${port}/admin`);
         const adminHtml = await admin.text();
-        assert.match(adminHtml, /Legacy 内容查看（只读）/);
-        assert.doesNotMatch(adminHtml, /POST.*\/api\/(?:events|catalog|generate)/);
+        assert.match(adminHtml, /Archive Entity Editor/);
+        assert.match(adminHtml, /Storylines/);
+        assert.equal(admin.headers.get('access-control-allow-origin'), null);
 
-        const archiveAdmin = await waitForHttp(`http://${HOST}:${port}/archive-admin`);
-        const archiveAdminHtml = await archiveAdmin.text();
-        assert.match(archiveAdminHtml, /Archive Entity Editor/);
-        assert.match(archiveAdminHtml, /Storylines/);
+        const adminHead = await fetch(`http://${HOST}:${port}/admin`, { method: 'HEAD' });
+        assert.equal(adminHead.status, 200);
+        assert.equal(await adminHead.text(), '');
+
+        const crossOriginPreflight = await fetch(`http://${HOST}:${port}/api/archive/file`, {
+            method: 'OPTIONS',
+            headers: {
+                Origin: 'https://example.com',
+                'Access-Control-Request-Method': 'POST'
+            }
+        });
+        assert.equal(crossOriginPreflight.status, 405);
+        assert.equal(crossOriginPreflight.headers.get('access-control-allow-origin'), null);
+
+        const crossOriginWrite = await fetch(`http://${HOST}:${port}/api/archive/storyline`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/plain',
+                Origin: 'https://example.com'
+            },
+            body: JSON.stringify({ storylineId: 'humanistic-cycle', data: { id: 'humanistic-cycle' } })
+        });
+        assert.equal(crossOriginWrite.status, 403);
 
         const archiveEvents = await waitForHttp(`http://${HOST}:${port}/api/archive/events`);
         const archiveEventList = await archiveEvents.json();
@@ -114,6 +133,12 @@ async function validateAdminServer() {
         );
         const storylineData = await storylineResponse.json();
         assert.equal(storylineData.data.id, 'humanistic-cycle');
+
+        const eventFileResponse = await waitForHttp(
+            `http://${HOST}:${port}/api/archive/file?eventId=1956-dartmouth&file=event.json`
+        );
+        const eventFileData = await eventFileResponse.json();
+        assert.equal(eventFileData.data.id, '1956-dartmouth');
 
         const invalidStorylineData = await fetch(`http://${HOST}:${port}/api/archive/storyline`, {
             method: 'POST',
@@ -134,21 +159,36 @@ async function validateAdminServer() {
         assert.equal(mismatchedStoryline.status, 400);
         assert.match((await mismatchedStoryline.json()).error, /data\.id must match storylineId/i);
 
+        const oversizedWrite = await fetch(`http://${HOST}:${port}/api/archive/storyline`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                storylineId: 'humanistic-cycle',
+                data: { id: 'humanistic-cycle', padding: 'x'.repeat(5 * 1024 * 1024) }
+            })
+        });
+        assert.equal(oversizedWrite.status, 413);
+
         const traversal = await fetch(
             `http://${HOST}:${port}/api/archive/storyline?storylineId=${encodeURIComponent('../package')}`
         );
         assert.equal(traversal.status, 400);
         assert.match((await traversal.json()).error, /Invalid archive storylineId|path traversal/i);
 
-        const legacyWrite = await fetch(`http://${HOST}:${port}/api/generate`, { method: 'POST' });
-        assert.equal(legacyWrite.status, 403);
-        assert.match((await legacyWrite.json()).error, /Legacy admin is read-only/);
-        assert.ok(LEGACY_WRITE_ROUTES.has('POST /api/generate'));
+        for (const [method, pathname] of [
+            ['GET', '/archive-admin'],
+            ['GET', '/api/events'],
+            ['POST', '/api/events'],
+            ['POST', '/api/generate']
+        ]) {
+            const retiredRoute = await fetch(`http://${HOST}:${port}${pathname}`, { method });
+            assert.equal(retiredRoute.status, 404, `${method} ${pathname} must be retired`);
+        }
 
         const resource = await waitForHttp(`http://${HOST}:${port}/resources/images/ui/brand.png`);
         assert.equal(resource.headers.get('content-type'), 'image/png');
 
-        console.log('PASS admin authority boundary startup validation');
+        console.log('PASS Archive-only admin startup validation');
     } finally {
         await stopProcess(child);
     }

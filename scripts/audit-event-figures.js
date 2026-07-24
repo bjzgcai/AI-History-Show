@@ -10,7 +10,6 @@ const MACHINE_REPORT_DIR = path.join(ROOT, '.tmp', 'archive-reports');
 const REPORT_JSON = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.json');
 const REPORT_MD = path.join(MACHINE_REPORT_DIR, 'event-figure-audit.md');
 const writeReports = !process.argv.includes('--check');
-const legacyAvatars = require('../manage/figure-avatars.js');
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -99,7 +98,6 @@ function resolveFigure(eventFigure, variantFigures, index) {
     const avatar = (typeof eventFigure === 'object' && eventFigure.avatar) || variantFigure.avatar || '';
     const figureType =
         (typeof eventFigure === 'object' && eventFigure.figureType) || variantFigure.figureType || 'person';
-    const legacy = legacyAvatars[nameEn] || legacyAvatars[nameZh] || null;
     return {
         figureId,
         name: { en: nameEn, zh: nameZh },
@@ -109,9 +107,7 @@ function resolveFigure(eventFigure, variantFigures, index) {
         },
         figureType,
         avatar,
-        avatarExists: localFileExists(avatar),
-        legacyAvatar: legacy && localFileExists(legacy.avatar) ? legacy.avatar : '',
-        legacyStatus: legacy ? legacy.status || '' : ''
+        avatarExists: localFileExists(avatar)
     };
 }
 
@@ -143,7 +139,6 @@ function auditEvent(eventId) {
     }));
     const brokenFigureAvatars = figures.filter((figure) => figure.avatar && !figure.avatarExists);
     const figuresWithoutAvatar = figures.filter((figure) => !figure.avatarExists);
-    const reusableLegacyAvatars = figuresWithoutAvatar.filter((figure) => figure.legacyAvatar);
 
     const canonicalNames = new Set(
         figures.flatMap((figure) => [normalizeName(figure.name.en), normalizeName(figure.name.zh)]).filter(Boolean)
@@ -170,8 +165,6 @@ function auditEvent(eventId) {
         issues.push(`${variantOnlyNames.length} variant figure name(s) are absent from canonical event facts`);
     if (unselectedPortraits.length > 0)
         issues.push(`${unselectedPortraits.length} portrait asset(s) are not selected by a variant`);
-    if (reusableLegacyAvatars.length > 0)
-        issues.push(`${reusableLegacyAvatars.length} local legacy avatar candidate(s) can be reused`);
     const reusableSelectedPortraits = figures.filter(
         (figure) => !figure.avatarExists && figure.matchingSelectedPortraits.length > 0
     );

@@ -12,13 +12,6 @@ const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.jso
 const sourceSchema = require('../archive/schemas/source.schema.json');
 const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
 const { compileArchive } = require('./archive-compiler.js');
-const {
-    sourceLabel,
-    sourcePurpose,
-    sourceReliability,
-    sourceTitle,
-    sourceTypeFromLegacy
-} = require('./archive-source-normalizer.js');
 const { generateArchiveData, normalizeGeneratedTime, writeOutputsAtomically } = require('./generate-archive-data.js');
 
 function createTempDir() {
@@ -42,44 +35,50 @@ assert.equal(
     'node scripts/generate-archive-data.js',
     'the default generator must use Archive data'
 );
-assert.equal(
-    packageJson.scripts['generate:legacy'],
-    'node manage/generate.js',
-    'the Legacy generator must require an explicit command'
-);
+const retiredScripts = [
+    'generate:legacy',
+    'generate:parity',
+    'diff:parity',
+    'review:parity',
+    'serve:parity',
+    'build:archive',
+    'diff:archive',
+    'review:archive',
+    'preview:archive-data',
+    'generate:archive-native-preview',
+    'migrate:archive-presentation',
+    'diff:archive-preview',
+    'diff:archive-native',
+    'diff:archive-legacy-main',
+    'report:archive-native-fields',
+    'audit:legacy-data',
+    'migrate:ai100-batch',
+    'migrate:archive',
+    'map:archive-fusions'
+];
+for (const script of retiredScripts) {
+    assert.equal(packageJson.scripts[script], undefined, `${script} must be retired`);
+}
 
-assert.equal(sourceTypeFromLegacy('Personal homepage'), 'personal-page');
-assert.equal(sourceTypeFromLegacy('Open Library book metadata'), 'book-index');
-assert.equal(sourceTypeFromLegacy('Conference paper page'), 'paper-page');
-assert.equal(sourceTypeFromLegacy('Researcher portrait', 'Profile'), 'image-source');
-assert.equal(sourceTypeFromLegacy('Unknown web reference'), 'article');
+const retiredFiles = [
+    'archive-parity-compare.html',
+    'manage/archive-admin.html',
+    'manage/catalog.js',
+    'manage/events.js',
+    'manage/event-fusions.js',
+    'manage/generate.js',
+    'scripts/archive-source-normalizer.js',
+    'scripts/build-archive.js',
+    'scripts/migrate-archive-events.js'
+];
+for (const retiredFile of retiredFiles) {
+    assert.equal(fs.existsSync(path.join(__dirname, '..', retiredFile)), false, `${retiredFile} must be removed`);
+}
 assert.equal(
-    sourceTypeFromLegacy(
-        'Manual',
-        '',
-        "LISP I Programmer's Manual",
-        'https://www.softwarepreservation.org/projects/LISP/book/LISP%20I%20Programmers%20Manual.pdf/view'
-    ),
-    'documentation'
+    fs.existsSync(path.join(__dirname, '..', 'manage/admin.html')),
+    true,
+    'Archive admin page must use admin.html'
 );
-assert.equal(
-    sourceTypeFromLegacy('Report', '', 'Lighthill report', 'https://example.org/lighthill-report.pdf'),
-    'report'
-);
-assert.equal(
-    sourceTypeFromLegacy('Image source', '', 'Cyc project logo image', 'https://commons.wikimedia.org/logo.png'),
-    'image-source'
-);
-assert.deepEqual(sourceLabel('personal-page'), { zh: '个人主页', en: 'Personal homepage' });
-assert.deepEqual(sourceTitle('paper', { zh: '测试论文', en: 'Test Paper' }), {
-    zh: '《测试论文》',
-    en: 'Test Paper'
-});
-assert.equal(sourcePurpose('personal-page'), 'biography');
-assert.equal(sourcePurpose('internal-record'), 'migration-only');
-assert.equal(sourcePurpose('paper', 2, 'Precursor paper'), 'precursor');
-assert.equal(sourceReliability('personal-page', 0), 'primary');
-assert.equal(sourceReliability('documentation', 3), 'primary');
 assert.deepEqual(
     new Set(sourceSchema.items.properties.type.enum),
     new Set(sourceTypeTaxonomy.map((entry) => entry.id)),
@@ -90,7 +89,7 @@ assert.deepEqual(
     new Set(sourcePurposeTaxonomy.map((entry) => entry.id)),
     'source schema purpose enum must match the managed taxonomy'
 );
-console.log('PASS legacy source migration uses the managed taxonomy');
+console.log('PASS Legacy command and source files are retired');
 
 const sourceClassificationCases = [
     ['2018-bert', 'source-google-ai-bert-blog-post', 'article', 'background'],

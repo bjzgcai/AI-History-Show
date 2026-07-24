@@ -37,7 +37,7 @@ npm run quality
 
 # Run the content management server locally
 npm run start:admin
-# Open http://localhost:3001/archive-admin
+# Open http://localhost:3001/admin
 ```
 
 Containerized preview:
@@ -156,7 +156,7 @@ Archive JSON is the production source of truth. Start the local management servi
 
 ```bash
 npm run start:admin
-# Open http://localhost:3001/archive-admin
+# Open http://localhost:3001/admin
 ```
 
 Edit `archive/events/<event-id>/*.json` and `archive/storylines/*.json` in the Archive editor, run validation, then regenerate the runtime files:
@@ -173,12 +173,6 @@ npm run validate:archive
 npm run generate
 ```
 
-The legacy editor at `http://localhost:3001/admin` is retained as a read-only reference. Its write, restore, image mutation, and generation endpoints return HTTP 403. The former compatible generator remains available only for comparison or rollback:
-
-```bash
-npm run generate:legacy
-```
-
 Do not hand-edit `milestones-data.js` or `milestones-data-default.js`.
 
 Pages and the Docker presentation image share the same allowlisted release bundle:
@@ -188,23 +182,15 @@ npm run build:static
 # Output: .tmp/static-site/
 ```
 
-The bundle contains the presentation pages, runtime data, `shared/`, `resources/`, required `public/` assets, and `.nojekyll`; it excludes Archive source JSON, management tools, Legacy data, reports, research files, and scripts.
+The bundle contains the presentation pages, runtime data, `shared/`, browser-required `resources/`, required `public/` assets, and `.nojekyll`. It excludes Archive source JSON, management tools, reports, research files, scripts, and retired candidate/video metadata helpers.
 
 For the complete entity graph, compile sequence, failure safeguards, and deployment boundary, see [`docs/archive-data-flow.md`](docs/archive-data-flow.md). For the Archive entity layout and source/asset relationships, see [`archive/README.md`](archive/README.md). For retained browser resources, see [`docs/archive-resources-retention.md`](docs/archive-resources-retention.md).
 
 ---
 
-### Legacy compatibility reference
+### Retired Legacy tooling
 
-The files under `manage/`—including `catalog.js`, `events.js`, the extra-event helpers, quizzes, avatars, and `generate.js`—describe the former compatible content system. They remain available for:
-
-- `npm run generate:legacy` rollback/comparison output;
-- parity reports that compare Legacy and Archive rendering;
-- migration and audit scripts that still map old event IDs into Archive entities.
-
-They are **not production authoring inputs**. Do not use `/admin` or edit these files expecting `npm run generate` to consume the changes. Current storyline membership and order live in `archive/storylines/*.json`; event facts, assets, sources, quizzes, and presentation variants live in `archive/events/<event-id>/`.
-
-The `/admin` page exposes this Legacy dataset as a read-only reference. Its mutation endpoints are blocked by the server. Retained Legacy files remain available only for an explicit rollback/comparison period and for migration tools; the production Archive compiler no longer reads `manage/event-fusions.js` for milestone identities.
+The former Legacy editor, generator, data modules, parity pages, and migration/comparison scripts have been removed. `/admin` now serves the Archive editor; the old `/archive-admin`, `/api/events`, `/api/catalog`, and `/api/generate` routes return HTTP 404. Historical implementations remain available through Git history; current content work must use Archive JSON and `/admin`.
 
 ---
 
@@ -222,14 +208,9 @@ AI-History-Show/
 │   ├── storylines/               # Storyline membership, variants, enablement, and order
 │   └── events/                   # Canonical event JSON, evidence, assets, quizzes, and variants
 │
-├── manage/                      # Local content tools and retained Legacy compatibility data
-│   ├── archive-admin.html        # Writable Archive JSON editor
-│   ├── admin.html                # Read-only Legacy viewer
-│   ├── server.js                 # Local Archive/Legacy management server
-│   ├── authority-boundary.js     # Legacy mutation route boundary
-│   ├── catalog.js                # Retained Legacy catalog
-│   ├── events.js                 # Retained Legacy event content
-│   └── generate.js               # Explicit Legacy comparison/rollback generator
+├── manage/                      # Local Archive content tools
+│   ├── admin.html                # Writable Archive JSON editor
+│   └── server.js                 # Archive-only local management server
 │
 ├── shared/                      # Shared frontend logic across single/dual screen
 │   ├── i18n.js                  # Bilingual dictionary and runtime locale switching
@@ -238,7 +219,7 @@ AI-History-Show/
 │   ├── swipe-navigation.js      # Touch swipe paging
 │   └── utils.js
 │
-├── scripts/                     # Generation, validation, migration, and reporting scripts
+├── scripts/                     # Generation, validation, testing, and audit scripts
 │   ├── generate-archive-data.js # Default Archive-native generator
 │   ├── archive-compiler.js       # Archive storyline/event compiler
 │   ├── test-archive-authority.js

@@ -15,7 +15,7 @@ npm run start:static
 # 固定监听 127.0.0.1:8000 的展厅演示服务
 npm run start:demo
 
-# 本地 Archive 内容管理：http://localhost:3001/archive-admin
+# 本地 Archive 内容管理：http://localhost:3001/admin
 npm run start:admin
 
 # 完整质量与部署验证
@@ -51,7 +51,7 @@ resources/                 ┘                              ├─→ milestones
 
 推荐流程：
 
-1. 运行 `npm run start:admin`，打开 `http://localhost:3001/archive-admin`。
+1. 运行 `npm run start:admin`，打开 `http://localhost:3001/admin`。
 2. 在 Events 中编辑事件 bundle，或在 Storylines 中编辑成员、variant、启用状态、顺序和 `milestoneId`。
 3. 在编辑器中运行 validation，或执行 `npm run validate:archive`。
 4. 执行 `npm run generate` 更新两份正式运行时数据。
@@ -73,17 +73,9 @@ archive/storylines/*.json
 
 Archive compiler 从这些文件解析 storyline ref、variant、来源、资源、quiz 和展示 ID，不读取 Legacy event/catalog/fusion metadata 作为生产输入。完整的实体关系、编译展开、失败保护和部署流见 [Archive 数据流与内容权威边界](docs/archive-data-flow.md)。
 
-### Legacy 兼容边界
+### Legacy 工具已退役
 
-`http://localhost:3001/admin` 是 **Legacy 只读参考页**，保存、恢复、图片写入和生成端点都会返回 HTTP 403。`manage/events.js`、`manage/catalog.js`、`manage/quizzes.js`、`manage/event-fusions.js` 等文件仅保留用于显式 rollback、comparison、migration 和离线 parity 工具，不是生产写作输入。
-
-旧生成器只能通过显式命令运行：
-
-```bash
-npm run generate:legacy
-```
-
-运行该命令可能临时改写两份 runtime data；完成比较后应再次执行 `npm run generate` 恢复 Archive 正式输出。
+旧 Legacy 页面、数据模块、生成器、parity 页面以及迁移/对比脚本均已删除。`/admin` 现在是 Archive 管理入口；旧 `/archive-admin`、`/api/events`、`/api/catalog`、`/api/generate` 等路由返回 HTTP 404。历史实现需要时可从 Git 历史查阅。
 
 ## Storylines
 
@@ -112,7 +104,7 @@ http://localhost:8000/index.html?storyline=humanistic-cycle
 - 强制双屏：`?layout=dual`
 - 语言选择保存在 `localStorage` 的 `ai-history-locale` 键中
 
-正式页面始终加载 `milestones-data.js`，失败时回退到同步生成的 `milestones-data-default.js`。Archive preview/parity 数据只由显式 CLI 工具生成到 `.tmp/`，不会通过正式页面 query 参数切换。
+正式页面始终加载 `milestones-data.js`，失败时回退到同步生成的 `milestones-data-default.js`。页面不支持通过 query 参数切换到其他数据源。
 
 Windows 双屏、Edge app/kiosk、Intel/NVIDIA 合屏和 DisplayFusion 限制见 [DEPLOYMENT.md](DEPLOYMENT.md)。移动端支持范围见 [docs/mobile-responsive-support.md](docs/mobile-responsive-support.md)。
 
@@ -126,7 +118,7 @@ npm run build:static
 # 输出：.tmp/static-site/
 ```
 
-发布包只包含正式页面、两份 runtime data、`shared/`、`resources/`、页面依赖的 `public/` 字体和 `.nojekyll`。它不会公开 `archive/`、`manage/`、`research/`、`scripts/`、Legacy 数据或 `.tmp/` 内部 review 产物。
+发布包只包含正式页面、两份 runtime data、`shared/`、浏览器实际需要的 `resources/`、页面依赖的 `public/` 字体和 `.nojekyll`。它不会公开 `archive/`、`manage/`、`research/`、`scripts/`、候选资料/视频 metadata helper 或 `.tmp/` 内部产物。
 
 ## 国际化
 
@@ -155,17 +147,14 @@ npm run validate:ai100-quizzes
 npm run audit:ai100-accuracy
 ```
 
-常用 Archive 离线审计：
+常用 Archive 审计：
 
 ```bash
-npm run audit:legacy-data
-npm run generate:parity
-npm run diff:parity
-npm run preview:archive-data
-npm run diff:archive-preview
+npm run report:assets
+npm run audit:figures
+npm run audit:svg-explainers
+npm run audit:svg-geometry
 ```
-
-重型 preview、parity 和 review 工作集生成到被忽略的 `.tmp/archive-*`；版本库只保留脚本、正式 runtime data 和有长期价值的摘要报告。
 
 ## 目录结构
 
@@ -179,14 +168,12 @@ AI-History-Show/
 │   ├── storylines/               # 成员、variant、顺序、启用状态、展示 ID
 │   └── events/                   # 事实、claims、sources、assets、quizzes、variants
 ├── manage/
-│   ├── archive-admin.html         # 可写 Archive JSON 编辑器
-│   ├── admin.html                 # Legacy 只读查看器
-│   ├── server.js                 # 本地管理服务
-│   └── *.js                      # 保留的 Legacy 兼容/迁移数据与工具
+│   ├── admin.html                 # 可写 Archive JSON 编辑器
+│   └── server.js                 # Archive-only 本地管理服务
 ├── shared/                       # 页面共用 JS
 ├── resources/                    # 浏览器加载的图片、论文、视频等资源
 ├── public/                       # 页面直接引用的公共文件和字体
-├── scripts/                      # 生成、验证、测试、迁移和报告脚本
+├── scripts/                      # 生成、验证、测试和审计脚本
 ├── .github/workflows/            # Quality、deployment、Pages 工作流
 └── DEPLOYMENT.md                 # 部署与展厅运行指南
 ```

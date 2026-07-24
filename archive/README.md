@@ -1,16 +1,14 @@
 # AI History Archive
 
-## Current production boundary (2026-07-17)
+## Current production boundary
 
 Archive JSON is the production authority. `npm run generate` compiles `archive/storylines/*.json` and `archive/events/*` directly; milestone identities are owned by storyline refs, and the production compiler does not read Legacy event, catalog, or fusion metadata.
 
-The official pages no longer support an Archive preview query switch. Explicit preview, native, parity, and review commands remain offline comparison tools and write their heavy JS/JSON/HTML working files under ignored `.tmp/archive-*` directories. Pages and Docker publish only `.tmp/static-site`.
+The Legacy editor, generator, data modules, parity pages, and migration/comparison scripts have been retired. The official pages load only the generated production runtime data. Pages and Docker publish only `.tmp/static-site`.
 
-The current entity graph, compilation sequence, failure safeguards, Legacy isolation, and deployment flow are documented in [`docs/archive-data-flow.md`](../docs/archive-data-flow.md).
+The current entity graph, compilation sequence, failure safeguards, and deployment flow are documented in [`docs/archive-data-flow.md`](../docs/archive-data-flow.md).
 
-Use `/archive-admin` to edit both event bundles and existing storylines, then validate and regenerate. `/admin` and `npm run generate:legacy` are retained only for read-only reference, rollback, comparison, and migration.
-
-The archive is now the default generated-display authority. Every current display target is represented by an archive event or canonical event variant; the legacy-compatible generator is retained temporarily for comparison and rollback.
+Use `/admin` to edit both event bundles and existing storylines, then validate and regenerate. Historical Legacy implementations are available through Git history only.
 
 ## Directory roles
 
@@ -49,17 +47,15 @@ Do not edit generated display data by hand:
 ```text
 milestones-data.js
 milestones-data-default.js
-.tmp/archive-*/**
+.tmp/**
 ```
 
-Rebuildable reports and review data are written under `.tmp/archive-reports/` and related `.tmp/archive-*` directories. They are not tracked. After Archive source edits, validate and regenerate with:
+Rebuildable reports and review data are written under `.tmp/`. They are not tracked. After Archive source edits, validate and regenerate with:
 
 ```bash
 npm run validate:archive
-npm run build:archive
 npm run generate
-npm run review:archive
-npm run diff:archive
+npm run quality
 ```
 
 ## Current migration status
@@ -78,7 +74,7 @@ A canonical event stores stable facts, claims, sources, and reusable assets. A s
 
 Variants should not copy or contradict canonical facts, core claims, or primary sources.
 
-## Presentation safety during migration
+## Presentation modes
 
 Archive variants default to:
 
@@ -86,7 +82,7 @@ Archive variants default to:
 "presentationMode": "preserve-legacy"
 ```
 
-In this mode, archive overlay attaches archive metadata without changing existing user-visible presentation fields such as title, subtitle, description, images, sources, visual modules, commentary, analysis, or quizzes.
+The historical `preserve-legacy` name remains in migrated Archive records for compatibility with the current compiler. It does not read any external Legacy data; all emitted presentation fields still come from the Archive event and variant.
 
 Archive metadata is attached under fields such as:
 
@@ -109,20 +105,7 @@ A variant may set:
 "presentationMode": "archive"
 ```
 
-only when changing the generated presentation is intentional. `npm run diff:archive` treats unintentional presentation changes as failures.
-
-## Offline Archive presentation comparison
-
-For explicit local comparison, generate separate data under `.tmp/archive-preview/`:
-
-```bash
-npm run preview:archive-data
-npm run diff:archive-preview
-npm run generate:archive-native-preview
-npm run diff:archive-native
-```
-
-These commands do not alter the data source selected by `index.html` or `dual-screen.html`. Use the generated files with dedicated local analysis tooling; `?archivePreview=1` is intentionally ignored by official pages.
+only when changing the generated presentation is intentional. Validate and regenerate after any mode change.
 
 ## Storyline refs
 
@@ -136,48 +119,28 @@ Storyline event refs can be disabled:
 }
 ```
 
-Disabled refs are skipped by archive preview and overlay. Use this for archive variants that exist for future narrative work but do not yet have a legacy/display target.
+Disabled refs are skipped by the compiler. Use this for archive variants that exist for future narrative work but should not appear in the current display.
 
-## Legacy source boundary
+## Retired Legacy boundary
 
-The default `npm run generate` path now reads Archive storylines and event bundles and writes both runtime milestone files. The former compatible path remains available as:
+The default `npm run generate` path reads Archive storylines and event bundles and writes both runtime milestone files. The following former paths are intentionally absent:
 
-```bash
-npm run generate:legacy
-```
+- `/archive-admin` and Legacy management APIs;
+- Legacy `manage/*.js` content data and generator;
+- parity/review pages and comparison servers;
+- one-time Archive migration and Legacy diff scripts.
 
-The Legacy management page at `/admin` is read-only after the cutover. Use `/archive-admin` to edit and validate Archive JSON. Legacy files remain in the repository for comparison, rollback, and unfinished tooling migration:
-
-- `manage/events.js`
-- `manage/ai100-extra-events.js`
-- `manage/gaming-extra-events.js`
-- `manage/catalog.js`
-- `manage/quizzes.js`
-- `manage/figure-avatars.js`
-- `manage/event-fusions.js`
-- `manage/event-fusion-assets.js`
-- `resources/quote-candidates.js`
-- `resources/research-candidates.js`
-- `resources/videos/*.json`
-
-Do not delete these files until the comparison period ends and remaining Archive compiler/Admin dependencies are removed.
+Use Git history for forensic reference. Do not restore these paths as an alternate production content authority.
 
 ## Archive-native generation
 
-Archive-native generation can now emit the complete current frontend milestone presentation shape without using `milestones-data.js` as a scaffold:
+Archive-native generation emits the complete current frontend milestone presentation shape:
 
 ```bash
 npm run generate:archive
-npm run generate:archive-native-preview
-npm run diff:archive-native
-npm run report:archive-native-fields
 ```
 
-`generate:archive` writes `milestones-data.js` and `milestones-data-default.js`; the preview command writes the separate review artifact. The one-time migration command used to copy remaining legacy presentation enrichments into storyline variants is:
-
-```bash
-npm run migrate:archive-presentation
-```
+`generate:archive` writes `milestones-data.js` and `milestones-data-default.js`.
 
 Variant-owned presentation fields include quote formatting, figure cards, video metadata, achievement auxiliary fields, commentary, analysis, and quizzes. Canonical facts remain in `event.json`; sources, claims, assets, and quizzes remain in their dedicated event files.
 
@@ -188,5 +151,5 @@ The structural archive migration is complete for current display targets. Remain
 - Review batch-generated claims and `needs-source` entries.
 - Improve primary/secondary source quality for AI100 events.
 - Review asset rights and duplicate resource usage.
-- Continue structured-form improvements for `/archive-admin` beyond its current event/storyline JSON editing workflow.
-- Gradually retire retained Legacy source responsibilities after the rollback/comparison period; production compilation is already independent of `manage/event-fusions.js`.
+- Continue structured-form improvements for `/admin` beyond its current event/storyline JSON editing workflow.
+- Continue removing historical migration wording from content records when those records receive substantive editorial review.

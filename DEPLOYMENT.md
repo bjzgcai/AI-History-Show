@@ -2,7 +2,7 @@
 
 本项目包含两个独立部分：
 - **展示页**（`index.html`）：纯静态 HTML5，任何静态文件服务器均可运行
-- **内容管理服务**（`manage/server.js`）：Node.js 服务，用于编辑 Archive JSON；Legacy 数据仅提供只读参考，**仅需在有编辑需求时运行**
+- **内容管理服务**（`manage/server.js`）：Archive-only Node.js 服务，用于编辑和校验 Archive JSON，**仅需在有编辑需求时运行**
 
 ---
 
@@ -25,7 +25,7 @@ npm run start:static
 # 展厅本机演示服务，固定使用 127.0.0.1:8000
 npm run start:demo
 
-# Archive 内容管理服务，默认入口 http://localhost:3001/archive-admin
+# Archive 内容管理服务，默认入口 http://localhost:3001/admin
 npm run start:admin
 ```
 
@@ -35,6 +35,8 @@ npm run start:admin
 PORT=8080 npm run start:static
 PORT=3002 npm run start:admin
 ```
+
+管理服务默认只监听 `127.0.0.1`。确需在受保护内网监听其他网卡时，显式设置 `HOST`；Docker admin stage 已配置为容器内监听 `0.0.0.0`。
 
 ### Docker 单容器预览
 
@@ -75,11 +77,10 @@ docker compose --profile admin up --build
 
 ```text
 展示页：http://localhost:8000/
-管理后台：http://localhost:3001/archive-admin
-Legacy 只读参考：http://localhost:3001/admin
+管理后台：http://localhost:3001/admin
 ```
 
-Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此 Archive 编辑器保存的 `archive/events/*` 与 `archive/storylines/*` JSON，以及随后通过 `npm run generate` 产生的运行时数据，会同步写回本地工作区。Legacy `manage/events.js` / `manage/catalog.js` 不再是生产编辑目标。
+Compose 中的 `admin` 服务会把当前项目目录挂载到容器的 `/app`，因此 Archive 编辑器保存的 `archive/events/*` 与 `archive/storylines/*` JSON，以及随后通过 `npm run generate` 产生的运行时数据，会同步写回本地工作区。
 
 > **安全提示**：`admin` 服务无认证保护，只能用于本机、内网或受保护环境。不要把 `3001` 直接暴露到公网。
 
@@ -139,7 +140,7 @@ globalScope.AI_HISTORY_UMAMI_CONFIG = {
 
 **第一步：上传文件到服务器**
 
-在本地生成最小静态发布包，再只同步该目录（不上传 Archive 源、管理端、Legacy 数据和内部报告）：
+在本地生成最小静态发布包，再只同步该目录（不上传 Archive 源、管理端、候选资料 helper 和内部报告）：
 
 ```bash
 cd /path/to/AI-History-Show
@@ -403,9 +404,9 @@ Edge `kiosk` 模式：
 
 ## 四、内容管理服务部署（manage/server.js）
 
-`server.js` 提供本地内容管理服务（端口 3001）。生产内容权威已经切换到 Archive：使用 `/archive-admin` 编辑 `archive/events/*` JSON，并运行 `npm run validate:archive` 与 `npm run generate` 生成 `milestones-data.js`。旧 `/admin` 仅保留为 Legacy 数据只读查看器，服务端会拒绝其保存、恢复、图片写入和生成请求。**Nginx 无需重启，生成后刷新展示页即可生效**。
+`server.js` 提供 Archive-only 本地内容管理服务（端口 3001）：使用 `/admin` 编辑 `archive/events/*` 与 `archive/storylines/*` JSON，并运行 `npm run validate:archive` 与 `npm run generate` 生成 `milestones-data.js`。旧 `/archive-admin` 与 Legacy API 已退役并返回 HTTP 404。**Nginx 无需重启，生成后刷新展示页即可生效**。
 
-> `/archive-admin` 当前是原始 JSON 编辑器；保存后应先运行 Archive validation，再生成运行时数据。
+> `/admin` 当前是原始 JSON 编辑器；保存后应先运行 Archive validation，再生成运行时数据。
 > **安全原则：不要将 3001 端口直接暴露到公网**，推荐通过 SSH 隧道访问。
 
 ### 第一步：确认 Node.js 已安装（v22+）
@@ -461,7 +462,7 @@ pm2 stop ai-admin     # 停止
 ssh -L 3001:localhost:3001 root@你的服务器IP
 ```
 
-然后在本地浏览器访问 `http://localhost:3001/archive-admin`，流量走加密 SSH 通道。Legacy 只读参考仍位于 `/admin`。
+然后在本地浏览器访问 `http://localhost:3001/admin`，流量走加密 SSH 通道。
 
 > 每次需要编辑内容时建立隧道，编辑完断开即可。
 
@@ -482,14 +483,16 @@ sudo htpasswd -c /etc/nginx/.htpasswd admin
 **在 Nginx 配置中追加（放在 `server {}` 块内）：**
 
 ```nginx
-location /archive-admin {
+location /admin {
     proxy_pass http://localhost:3001;
+    proxy_set_header Host $http_host;
     auth_basic "管理后台";
     auth_basic_user_file /etc/nginx/.htpasswd;
 }
 
 location /api/ {
     proxy_pass http://localhost:3001;
+    proxy_set_header Host $http_host;
     auth_basic "管理后台";
     auth_basic_user_file /etc/nginx/.htpasswd;
 }
@@ -499,7 +502,7 @@ location /api/ {
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
-访问地址：`http://你的域名/archive-admin`（安全组**只需开放 80/443，不开放 3001**）。
+访问地址：`http://你的域名/admin`（安全组**只需开放 80/443，不开放 3001**）。
 
 ---
 
@@ -523,8 +526,8 @@ docker build -t ai-history-show:ci .
 
 **内容管理服务：**
 
-- [ ] `http://localhost:3001/archive-admin`（或反代地址）可正常打开
+- [ ] `http://localhost:3001/admin`（或反代地址）可正常打开
 - [ ] Archive 事件和 JSON 文件列表可加载
 - [ ] 保存 Archive JSON 后，页面内 validation 可通过
 - [ ] 运行 `npm run generate` 后刷新展示页，内容已更新
-- [ ] `http://localhost:3001/admin` 显示 Legacy 只读说明，且不提供保存或生成操作
+- [ ] `http://localhost:3001/archive-admin` 返回 HTTP 404

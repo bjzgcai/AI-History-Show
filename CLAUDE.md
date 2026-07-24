@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Install dependencies: `npm ci` (Node.js >= 22; CI currently uses Node 22/24).
 - Preview the static exhibition: `npm run start:static` then open `http://localhost:8000`.
 - Fixed local demo server: `npm run start:demo` (binds `127.0.0.1:8000`).
-- Run the local admin/content editor: `npm run start:admin` then open `http://localhost:3001/archive-admin` (`/admin` is the Legacy read-only viewer).
+- Run the local admin/content editor: `npm run start:admin` then open `http://localhost:3001/admin`.
 - Regenerate exhibition data after content edits: `npm run generate`.
 - Lint: `npm run lint`.
 - Format check: `npm run format:check`; apply formatting with `npm run format`.
@@ -15,8 +15,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Run a single current test script: `node scripts/test-layout-router.js` or `node scripts/test-swipe-navigation.js`.
 - Full quality gate: `npm run quality` (lint + format check + tests).
 - Startup/deployment validation: `npm run validate:startup` or `npm run validate:deployment`.
-- Archive workflow: `npm run validate:archive`, `npm run build:archive`, `npm run generate`, `npm run review:archive`, `npm run diff:archive`.
-- Archive migration/reporting: `npm run migrate:archive` (default AI100; use `node scripts/migrate-archive-events.js --mode=core|gaming|all` for other groups), `npm run report:assets`, `npm run map:archive-fusions`.
+- Archive workflow: `npm run validate:archive`, `npm run generate`, `npm run quality`, `npm run validate:deployment`.
+- Archive reporting: `npm run report:assets`, `npm run audit:figures`, `npm run audit:svg-explainers`, `npm run audit:svg-geometry`.
 - AI100 content validation/audit: `npm run validate:ai100-context`, `npm run validate:ai100-quizzes`, `npm run audit:ai100-accuracy`.
 - Container preview: `docker build -t ai-history-show .` then `docker run --rm -p 8000:8000 ai-history-show`.
 - Docker Compose presentation: `docker compose up --build presentation`; include admin with `docker compose --profile admin up --build`.
@@ -63,15 +63,15 @@ index.html / dual-screen.html
 - `archive/storylines/*.json` controls storyline membership, variant selection, enablement, and order.
 - Canonical facts, evidence, assets, quizzes, and storyline-specific presentation live under `archive/events/<event-id>/`.
 - `scripts/archive-compiler.js` resolves each storyline reference, selects variant-owned source/claim/asset/quiz IDs, and emits the frontend milestone shape.
-- `npm run generate` and `npm run generate:archive` both use the Archive-native generator. `npm run generate:legacy` retains the former compatible generator for comparison and rollback only.
-- `manage/event-fusions.js` remains only for the explicit Legacy generator, migration, and parity tooling. The production Archive compiler gets stable milestone IDs from `archive/storylines/*.json`.
-- `manage/events.js`, `manage/catalog.js`, legacy helper files, and `resources/quote-candidates.js`, `resources/research-candidates.js`, and `resources/videos/*.json` remain for rollback and unfinished tooling migration; they are not production generation inputs.
+- `npm run generate` and `npm run generate:archive` both use the Archive-native generator.
+- The Legacy editor, generator, data modules, parity pages, and migration/comparison scripts are retired. Historical implementations are available through Git history only.
+- `resources/quote-candidates.js`, `resources/research-candidates.js`, and `resources/videos/*.json` remain in the append-only resource tree but are excluded from the static release bundle.
 - `milestones-data.js` and `milestones-data-default.js` are generated outputs. Regenerate them with `npm run generate` after Archive source changes.
 
 ### Content management server
 
-- `manage/server.js` serves the read-only Legacy viewer at `/admin`, the Archive JSON editor at `/archive-admin`, static assets, and Archive read/write/validation APIs.
-- Legacy mutation endpoints (`POST /api/events`, catalog/image/event-init writes, restore, and `POST /api/generate`) return HTTP 403 after the Archive authority cutover.
+- `manage/server.js` serves the Archive JSON editor at `/admin`, Archive read/write/validation APIs, and referenced `resources/` assets.
+- Retired routes such as `/archive-admin`, `/api/events`, and `/api/generate` return HTTP 404.
 - Archive editing uses `GET/POST /api/archive/file` and `POST /api/archive/validate`. Generate runtime data with `npm run generate` after validation.
 - The admin server has no authentication and is intended for local/protected use only; do not expose port 3001 publicly.
 
