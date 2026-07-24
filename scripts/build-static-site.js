@@ -14,6 +14,7 @@ const RETIRED_RESOURCE_METADATA = new Set([
     'resources/research-candidates.js',
     'resources/videos/urls.txt'
 ]);
+const OMITTED_STATIC_FILES = new Set(['public/fonts/oppo-sans/OPPO Sans 4.0.ttf']);
 const FORBIDDEN_TOP_LEVEL = new Set([
     'archive',
     'manage',
@@ -32,8 +33,9 @@ function copyRequired(source, destination, options = {}) {
     fs.cpSync(source, destination, { recursive: true, ...options });
 }
 
-function includeStaticResource(source) {
+function includeStaticFile(source) {
     const relativePath = path.relative(ROOT, source).split(path.sep).join('/');
+    if (OMITTED_STATIC_FILES.has(relativePath)) return false;
     if (RETIRED_RESOURCE_METADATA.has(relativePath)) return false;
     if (/^resources\/videos\/[^/]+\.json$/.test(relativePath)) return false;
     return true;
@@ -48,9 +50,10 @@ function validateBundle() {
         assert.equal(FORBIDDEN_TOP_LEVEL.has(name), false, `Forbidden path entered static bundle: ${name}`);
     }
 
-    assert.ok(
+    assert.equal(
         fs.existsSync(path.join(OUTPUT, 'public', 'fonts', 'oppo-sans', 'OPPO Sans 4.0.ttf')),
-        'Bundle is missing the local OPPO Sans font'
+        false,
+        'The oversized OPPO Sans TTF must not enter the static bundle'
     );
     assert.ok(
         fs.existsSync(path.join(OUTPUT, 'shared', 'milestone-view.js')),
@@ -82,7 +85,7 @@ function validateBundle() {
         const html = fs.readFileSync(path.join(OUTPUT, htmlFile), 'utf8');
         assert.match(html, /milestones-data\.js/);
         assert.doesNotMatch(html, /milestones-data-archive-preview\.js/);
-        if (htmlFile === 'index.html') assert.match(html, /public\/fonts\/oppo-sans\/OPPO Sans 4\.0\.ttf/);
+        assert.doesNotMatch(html, /public\/fonts\/oppo-sans\/OPPO Sans 4\.0\.ttf/);
     }
 
     delete require.cache[require.resolve(path.join(OUTPUT, 'milestones-data.js'))];
@@ -99,7 +102,7 @@ fs.rmSync(OUTPUT, { recursive: true, force: true });
 fs.mkdirSync(OUTPUT, { recursive: true });
 for (const file of ROOT_FILES) copyRequired(path.join(ROOT, file), path.join(OUTPUT, file));
 for (const directory of DIRECTORIES) {
-    const options = directory === 'resources' ? { filter: includeStaticResource } : {};
+    const options = directory === 'resources' || directory === 'public' ? { filter: includeStaticFile } : {};
     copyRequired(path.join(ROOT, directory), path.join(OUTPUT, directory), options);
 }
 validateBundle();
