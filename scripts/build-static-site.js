@@ -9,6 +9,11 @@ const ROOT = path.resolve(__dirname, '..');
 const OUTPUT = path.join(ROOT, '.tmp', 'static-site');
 const ROOT_FILES = ['.nojekyll', 'index.html', 'dual-screen.html', 'milestones-data.js', 'milestones-data-default.js'];
 const DIRECTORIES = ['shared', 'resources', 'public'];
+const RETIRED_RESOURCE_METADATA = new Set([
+    'resources/quote-candidates.js',
+    'resources/research-candidates.js',
+    'resources/videos/urls.txt'
+]);
 const FORBIDDEN_TOP_LEVEL = new Set([
     'archive',
     'manage',
@@ -22,9 +27,16 @@ const FORBIDDEN_TOP_LEVEL = new Set([
     'archive-review.html'
 ]);
 
-function copyRequired(source, destination) {
+function copyRequired(source, destination, options = {}) {
     assert.ok(fs.existsSync(source), `Required static input is missing: ${path.relative(ROOT, source)}`);
-    fs.cpSync(source, destination, { recursive: true });
+    fs.cpSync(source, destination, { recursive: true, ...options });
+}
+
+function includeStaticResource(source) {
+    const relativePath = path.relative(ROOT, source).split(path.sep).join('/');
+    if (RETIRED_RESOURCE_METADATA.has(relativePath)) return false;
+    if (/^resources\/videos\/[^/]+\.json$/.test(relativePath)) return false;
+    return true;
 }
 
 function validateBundle() {
@@ -57,6 +69,14 @@ function validateBundle() {
         fs.existsSync(path.join(OUTPUT, 'resources', 'images', 'ui', 'brand.png')),
         'Bundle is missing the brand image'
     );
+    for (const relativePath of RETIRED_RESOURCE_METADATA) {
+        assert.equal(fs.existsSync(path.join(OUTPUT, relativePath)), false, `${relativePath} must not be published`);
+    }
+    assert.equal(
+        fs.readdirSync(path.join(OUTPUT, 'resources', 'videos')).some((file) => file.endsWith('.json')),
+        false,
+        'Legacy video metadata must not be published'
+    );
 
     for (const htmlFile of ['index.html', 'dual-screen.html']) {
         const html = fs.readFileSync(path.join(OUTPUT, htmlFile), 'utf8');
@@ -78,7 +98,10 @@ function validateBundle() {
 fs.rmSync(OUTPUT, { recursive: true, force: true });
 fs.mkdirSync(OUTPUT, { recursive: true });
 for (const file of ROOT_FILES) copyRequired(path.join(ROOT, file), path.join(OUTPUT, file));
-for (const directory of DIRECTORIES) copyRequired(path.join(ROOT, directory), path.join(OUTPUT, directory));
+for (const directory of DIRECTORIES) {
+    const options = directory === 'resources' ? { filter: includeStaticResource } : {};
+    copyRequired(path.join(ROOT, directory), path.join(OUTPUT, directory), options);
+}
 validateBundle();
 
 console.log(`Static site bundle: ${path.relative(ROOT, OUTPUT)}`);

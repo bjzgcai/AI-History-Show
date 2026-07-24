@@ -25,11 +25,9 @@ AI-History-Show/
 │   ├── papers/                   # 页面使用的本地论文资料
 │   └── videos/                   # 视频与视频元数据（append-only）
 ├── manage/
-│   ├── archive-admin.html        # 可写 Archive JSON 编辑器
-│   ├── admin.html                # Legacy 只读查看器
-│   ├── server.js                 # 本地内容管理服务
-│   └── *.js                      # Legacy rollback/comparison/migration 文件
-├── scripts/                      # 生成、验证、测试、迁移与报告脚本
+│   ├── admin.html                # 可写 Archive JSON 编辑器
+│   └── server.js                 # Archive-only 本地内容管理服务
+├── scripts/                      # 生成、验证、测试与审计脚本
 ├── DEPLOYMENT.md                # 部署指南
 └── AGENTS.md                    # 本文档
 ```
@@ -39,7 +37,7 @@ AI-History-Show/
 Archive JSON 是生产内容权威：
 
 ```bash
-# 可选：启动本地编辑器并打开 http://localhost:3001/archive-admin
+# 可选：启动本地编辑器并打开 http://localhost:3001/admin
 npm run start:admin
 
 # 编辑 archive/events/<event-id>/* 和 archive/storylines/*.json 后
@@ -48,9 +46,7 @@ npm run generate
 # → 同步生成 milestones-data.js 与 milestones-data-default.js
 ```
 
-`/archive-admin` 是可写的 Archive 编辑入口；`/admin` 是 Legacy 只读参考页。Legacy 保存、恢复、图片写入和生成 API 在生产权威切换后返回 HTTP 403。
-
-`manage/catalog.js`、`manage/events.js`、`manage/event-fusions.js` 与 `manage/generate.js` 是 Legacy rollback/comparison/migration 文件，不是默认生产写作链路。只有显式运行 `npm run generate:legacy` 才会使用旧生成器；完成比较后应再次执行 `npm run generate` 恢复正式 Archive 输出。
+`/admin` 是唯一管理入口。旧 `/archive-admin`、Legacy 数据模块、生成器、parity 与迁移/对比工具已经退役；旧管理 API 返回 HTTP 404。需要追溯旧实现时使用 Git 历史，不恢复为当前写作链路。
 
 ### Archive 事件结构
 
@@ -169,11 +165,11 @@ theta = -lng * (Math.PI / 180)
 
 ### 管理后台（manage/server.js）
 
-- `GET /archive-admin` — Archive JSON 编辑器，可编辑 event bundles 与已有 storylines
-- `GET /admin` — Legacy 只读参考页
+- `GET /admin` — Archive JSON 编辑器，可编辑 event bundles 与已有 storylines
 - `GET/POST /api/archive/file` — 读取或保存 Archive JSON
+- `GET/POST /api/archive/storyline` — 读取或保存已有 storyline JSON
 - `POST /api/archive/validate` — 运行 Archive 校验
-- Legacy mutation endpoints（包括 `POST /api/events` 与 `POST /api/generate`）返回 HTTP 403
+- 已退役的 Legacy 页面与 API 返回 HTTP 404
 - 管理服务没有身份验证，只能用于本机、内网或受保护环境，不得直接暴露端口 3001
 
 ### 静态发布边界
@@ -181,7 +177,7 @@ theta = -lng * (Math.PI / 180)
 - `npm run build:static` 将展示页、两份运行时数据、`shared/`、`resources/`、所需 `public/` 资源和 `.nojekyll` 组装到 `.tmp/static-site/`。
 - Docker presentation stage 与 `.github/workflows/pages.yml` 都只发布这个 allowlist 静态包。
 - GitHub Pages 工作流会先校验 Archive、生成数据、运行质量门禁并构建 `.tmp/static-site`，再从 `main` 部署。
-- `archive/` 源 JSON、`manage/`、Legacy 数据、`research/`、`scripts/` 和 `.tmp/` review 产物不进入 Pages/Docker presentation 发布物。
+- `archive/` 源 JSON、`manage/`、`research/`、`scripts/`、候选资料/视频 metadata helper 和 `.tmp/` 产物不进入 Pages/Docker presentation 发布物。
 
 ### 注意事项
 

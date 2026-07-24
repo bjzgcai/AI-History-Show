@@ -3,141 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 展览 · Legacy 内容查看</title>
+  <title>Archive Entity Editor</title>
   <style>
-    :root { color-scheme:dark; --bg:#0d1117; --panel:#161b22; --line:#30363d; --text:#e6edf3; --muted:#8b949e; --accent:#f68900; --danger:#ffb4ad; }
+    :root { color-scheme: dark; --bg:#101114; --panel:#181a20; --line:#30343d; --text:#f2efe7; --muted:#a9adba; --accent:#f68900; --ok:#3fb950; --bad:#f85149; }
     * { box-sizing:border-box; }
     body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    a { color:inherit; }
-    header { min-height:58px; padding:12px 18px; border-bottom:1px solid var(--line); background:var(--panel); display:flex; align-items:center; justify-content:space-between; gap:16px; }
-    h1 { margin:0; font-size:17px; }
-    .archive-link { border:1px solid var(--accent); border-radius:8px; padding:7px 10px; color:var(--accent); text-decoration:none; white-space:nowrap; }
-    .banner { padding:10px 18px; background:rgba(248,81,73,.14); color:var(--danger); border-bottom:1px solid rgba(248,81,73,.45); font-weight:600; }
-    .layout { display:grid; grid-template-columns:320px minmax(0,1fr); min-height:calc(100vh - 101px); }
-    aside { border-right:1px solid var(--line); background:var(--panel); padding:14px; overflow:auto; }
-    main { min-width:0; padding:22px; overflow:auto; }
-    input { width:100%; margin-bottom:12px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--text); padding:9px 10px; font:inherit; }
-    button { width:100%; margin:3px 0; border:1px solid transparent; border-radius:7px; background:transparent; color:var(--text); padding:8px 10px; text-align:left; cursor:pointer; }
-    button:hover, button.active { border-color:var(--accent); background:rgba(246,137,0,.08); }
-    .section-title { margin:14px 8px 5px; color:var(--muted); font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
-    .event-key, .muted { color:var(--muted); }
-    .event-key { display:block; font-size:11px; }
-    .card { max-width:1100px; border:1px solid var(--line); border-radius:12px; background:var(--panel); padding:18px; }
-    .card h2 { margin:0 0 4px; }
-    .metadata { display:flex; flex-wrap:wrap; gap:8px 16px; margin:10px 0 18px; color:var(--muted); }
-    dl { display:grid; grid-template-columns:150px minmax(0,1fr); gap:8px 14px; margin:0; }
-    dt { color:var(--muted); }
-    dd { min-width:0; margin:0; overflow-wrap:anywhere; }
-    pre { margin:18px 0 0; padding:14px; max-height:45vh; overflow:auto; border:1px solid var(--line); border-radius:8px; background:var(--bg); font:12px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; white-space:pre-wrap; }
-    .empty { color:var(--muted); padding:24px; text-align:center; }
-    @media (max-width:760px) { .layout { grid-template-columns:1fr; } aside { border-right:0; border-bottom:1px solid var(--line); max-height:42vh; } dl { grid-template-columns:1fr; } }
+    header { padding:18px 22px; border-bottom:1px solid var(--line); background:#14161b; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    h1 { margin:0; font-size:22px; }
+    main { display:grid; grid-template-columns:320px 1fr; min-height:calc(100vh - 68px); }
+    aside { border-right:1px solid var(--line); padding:16px; overflow:auto; }
+    section { padding:16px; min-width:0; }
+    button, select { background:#222631; color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:inherit; cursor:pointer; }
+    button:hover { border-color:var(--accent); }
+    .entity { display:block; width:100%; text-align:left; margin:4px 0; }
+    .entity.active { border-color:var(--accent); color:var(--accent); }
+    .toolbar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; align-items:center; }
+    textarea { width:100%; min-height:68vh; resize:vertical; background:#0d0e11; color:#f2efe7; border:1px solid var(--line); border-radius:12px; padding:14px; font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; tab-size:2; }
+    .status { color:var(--muted); margin-left:auto; }
+    .status.ok { color:var(--ok); } .status.bad { color:var(--bad); }
+    pre { background:#0d0e11; border:1px solid var(--line); border-radius:12px; padding:12px; overflow:auto; max-height:240px; }
+    .muted { color:var(--muted); }
   </style>
 </head>
 <body>
 <header>
-  <h1>AI 展览 · Legacy 内容查看（只读）</h1>
-  <a class="archive-link" href="/archive-admin">打开 Archive Entity Editor</a>
+  <div>
+    <h1>Archive Entity Editor</h1>
+    <div class="muted">Edit Archive event bundles and storylines. Save, validate here, then run <code>npm run generate</code>.</div>
+  </div>
+  <button id="validateBtn">Run validation</button>
 </header>
-<div class="banner">
-  Legacy 管理页只用于兼容数据参考，不再提供保存、恢复、上传或生成操作。生产内容请在 Archive 中编辑、校验并生成。
-</div>
-<div class="layout">
+<main>
   <aside>
-    <input id="eventSearch" type="search" placeholder="搜索 Legacy 事件…" aria-label="搜索 Legacy 事件">
-    <div id="eventList"><div class="empty">加载中…</div></div>
+    <div class="toolbar">
+      <select id="entityType"><option value="events">Events</option><option value="storylines">Storylines</option></select>
+      <button id="refreshBtn">Refresh</button>
+    </div>
+    <div id="entityList"></div>
   </aside>
-  <main id="main"><div class="empty">请选择一个 Legacy 事件查看。</div></main>
-</div>
+  <section>
+    <div class="toolbar">
+      <strong id="currentEntity">No entity selected</strong>
+      <select id="fileSelect"></select>
+      <button id="loadBtn">Load</button>
+      <button id="saveBtn">Save</button>
+      <span id="status" class="status"></span>
+    </div>
+    <textarea id="editor" spellcheck="false" placeholder="Select an Archive event or storyline..."></textarea>
+    <h3>Validation output</h3>
+    <pre id="validationOutput">Not run yet.</pre>
+  </section>
+</main>
 <script>
-'use strict';
-
-const state = { catalog:null, events:null, selected:'' };
-const eventList = document.getElementById('eventList');
-const main = document.getElementById('main');
-const search = document.getElementById('eventSearch');
-
-function localized(value, locale='zh') {
-  if (value == null) return '';
-  if (typeof value === 'object' && !Array.isArray(value)) return String(value[locale] || value.en || value.zh || '');
-  return String(value);
+const state = { type: 'events', entities: [], entityId: '', file: '' };
+const entityType = document.getElementById('entityType');
+const entityList = document.getElementById('entityList');
+const fileSelect = document.getElementById('fileSelect');
+const editor = document.getElementById('editor');
+const statusEl = document.getElementById('status');
+const currentEntity = document.getElementById('currentEntity');
+const validationOutput = document.getElementById('validationOutput');
+function setStatus(text, cls='') { statusEl.textContent = text; statusEl.className = 'status ' + cls; }
+async function api(url, options) {
+  const res = await fetch(url, options);
+  const data = await res.json();
+  if (!res.ok || data.error) throw new Error(data.error || res.statusText);
+  return data;
 }
-
 function escapeHtml(value) {
-  return String(value == null ? '' : value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
+  return String(value).replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[char]);
 }
-
-function orderedGroups() {
-  const seen = new Set();
-  const groups = [];
-  for (const category of state.catalog.categories || []) {
-    const keys = (category.events || []).filter(key => state.events[key] && !seen.has(key));
-    keys.forEach(key => seen.add(key));
-    if (keys.length) groups.push({ name:localized(category.name), keys });
-  }
-  const remaining = Object.keys(state.events).filter(key => !seen.has(key));
-  if (remaining.length) groups.push({ name:'未列入 Legacy catalog', keys:remaining });
-  return groups;
-}
-
-function renderList() {
-  const query = search.value.trim().toLowerCase();
-  const html = orderedGroups().map(group => {
-    const buttons = group.keys.map(key => {
-      const event = state.events[key] || {};
-      const title = localized(event.title) || key;
-      const haystack = `${key} ${title} ${localized(event.title, 'en')}`.toLowerCase();
-      if (query && !haystack.includes(query)) return '';
-      return `<button data-key="${escapeHtml(key)}" class="${state.selected === key ? 'active' : ''}"><span>${escapeHtml(title)}</span><span class="event-key">${escapeHtml(key)}</span></button>`;
-    }).join('');
-    return buttons ? `<div class="section-title">${escapeHtml(group.name)}</div>${buttons}` : '';
+function renderEntities() {
+  entityList.innerHTML = state.entities.map(entity => {
+    const id = typeof entity === 'string' ? entity : entity.id;
+    const detail = typeof entity === 'string' ? 'storyline JSON' : `${entity.files.length} files · ${entity.variants.length} variants`;
+    return `<button class="entity${id===state.entityId?' active':''}" data-id="${escapeHtml(id)}">${escapeHtml(id)}<br><span class="muted">${escapeHtml(detail)}</span></button>`;
   }).join('');
-  eventList.innerHTML = html || '<div class="empty">没有匹配事件。</div>';
 }
-
-function renderEvent(key) {
-  const event = state.events[key];
-  if (!event) return;
-  state.selected = key;
-  const location = event.location || {};
-  const figures = Array.isArray(event.figures)
-    ? event.figures.map(item => localized(item && item.name) || localized(item)).filter(Boolean).join('、')
-    : '';
-  main.innerHTML = `<article class="card">
-    <h2>${escapeHtml(localized(event.title) || key)}</h2>
-    <div class="muted">${escapeHtml(localized(event.title, 'en'))}</div>
-    <div class="metadata"><span>Key: ${escapeHtml(key)}</span><span>年份: ${escapeHtml(event.year || '')}</span></div>
-    <dl>
-      <dt>地点</dt><dd>${escapeHtml(localized(location.name))}</dd>
-      <dt>国家/地区</dt><dd>${escapeHtml(localized(location.country))}</dd>
-      <dt>坐标</dt><dd>${escapeHtml(Array.isArray(location.coordinates) ? location.coordinates.join(', ') : '')}</dd>
-      <dt>人物</dt><dd>${escapeHtml(figures)}</dd>
-      <dt>中文描述</dt><dd>${escapeHtml(localized(event.description))}</dd>
-      <dt>English description</dt><dd>${escapeHtml(localized(event.description, 'en'))}</dd>
-    </dl>
-    <pre>${escapeHtml(JSON.stringify(event, null, 2))}</pre>
-  </article>`;
-  renderList();
+async function refresh() {
+  state.entities = await api(`/api/archive/${state.type}`);
+  renderEntities();
 }
-
-async function load() {
-  const [catalogResponse, eventsResponse] = await Promise.all([fetch('/api/catalog'), fetch('/api/events')]);
-  if (!catalogResponse.ok || !eventsResponse.ok) throw new Error('Legacy reference data could not be loaded.');
-  state.catalog = await catalogResponse.json();
-  state.events = await eventsResponse.json();
-  renderList();
+function selectEntity(id) {
+  state.entityId = id;
+  currentEntity.textContent = `${state.type === 'events' ? 'Event' : 'Storyline'}: ${id}`;
+  if (state.type === 'events') {
+    const entity = state.entities.find(item => item.id === id);
+    const files = entity ? entity.files : [];
+    fileSelect.hidden = false;
+    fileSelect.innerHTML = files.map(file => `<option value="${file}">${file}</option>`).join('');
+    state.file = files[0] || '';
+  } else {
+    fileSelect.hidden = true;
+    fileSelect.innerHTML = '';
+    state.file = '';
+  }
+  renderEntities();
 }
-
-eventList.addEventListener('click', event => {
-  const button = event.target.closest('button[data-key]');
-  if (button) renderEvent(button.dataset.key);
-});
-search.addEventListener('input', renderList);
-load().catch(error => { main.innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`; });
+async function loadEntity() {
+  if (!state.entityId) { setStatus('Select an entity first', 'bad'); return; }
+  if (state.type === 'events' && !fileSelect.value) { setStatus('Select an event file first', 'bad'); return; }
+  const url = state.type === 'events'
+    ? `/api/archive/file?eventId=${encodeURIComponent(state.entityId)}&file=${encodeURIComponent(fileSelect.value)}`
+    : `/api/archive/storyline?storylineId=${encodeURIComponent(state.entityId)}`;
+  if (state.type === 'events') state.file = fileSelect.value;
+  const data = await api(url);
+  editor.value = JSON.stringify(data.data, null, 2);
+  setStatus(`Loaded ${state.file || state.entityId}`, 'ok');
+}
+async function saveEntity() {
+  if (!state.entityId) { setStatus('Select an entity first', 'bad'); return; }
+  if (state.type === 'events' && !state.file) { setStatus('Select an event file first', 'bad'); return; }
+  let parsed;
+  try { parsed = JSON.parse(editor.value); }
+  catch (error) { setStatus('Invalid JSON: ' + error.message, 'bad'); return; }
+  const body = state.type === 'events'
+    ? { eventId: state.entityId, file: state.file, data: parsed }
+    : { storylineId: state.entityId, data: parsed };
+  const url = state.type === 'events' ? '/api/archive/file' : '/api/archive/storyline';
+  await api(url, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+  setStatus(`Saved ${state.file || state.entityId}; run validation, then npm run generate`, 'ok');
+}
+async function validate() {
+  validationOutput.textContent = 'Running...';
+  const data = await api('/api/archive/validate', { method:'POST' });
+  validationOutput.textContent = [data.stdout, data.stderr].filter(Boolean).join('\n') || `exitCode=${data.exitCode}`;
+  setStatus(data.ok ? 'Validation passed' : 'Validation failed', data.ok ? 'ok' : 'bad');
+}
+entityList.addEventListener('click', event => { const btn = event.target.closest('button[data-id]'); if (btn) { selectEntity(btn.dataset.id); loadEntity().catch(err => setStatus(err.message, 'bad')); } });
+entityType.addEventListener('change', () => { state.type = entityType.value; state.entityId = ''; state.file = ''; currentEntity.textContent = 'No entity selected'; editor.value = ''; refresh().catch(err => setStatus(err.message, 'bad')); });
+fileSelect.addEventListener('change', () => { state.file = fileSelect.value; });
+document.getElementById('refreshBtn').addEventListener('click', () => refresh().catch(err => setStatus(err.message, 'bad')));
+document.getElementById('loadBtn').addEventListener('click', () => loadEntity().catch(err => setStatus(err.message, 'bad')));
+document.getElementById('saveBtn').addEventListener('click', () => saveEntity().catch(err => setStatus(err.message, 'bad')));
+document.getElementById('validateBtn').addEventListener('click', () => validate().catch(err => setStatus(err.message, 'bad')));
+refresh().catch(err => setStatus(err.message, 'bad'));
 </script>
 </body>
 </html>

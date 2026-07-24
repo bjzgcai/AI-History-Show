@@ -1,6 +1,6 @@
 # Archive Figures
 
-This directory will contain shared figure records and aliases.
+This directory is reserved for future shared figure records and aliases.
 
 Planned files:
 
@@ -9,4 +9,4 @@ archive/figures/figures.json
 archive/figures/aliases.json
 ```
 
-The current legacy source is `manage/figure-avatars.js`. Migration will happen after the first event samples prove the archive shape.
+Current figure facts live in each event's `event.json`; presentation overrides and avatar paths may live in storyline variants. `npm run audit:figures` checks the Archive records directly. The retired Legacy avatar registry is available only through Git history.
