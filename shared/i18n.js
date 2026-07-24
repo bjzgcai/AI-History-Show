@@ -68,7 +68,7 @@
                 appTitleSingle: 'AI 历史回顾展览 - 单屏模式',
                 appTitleDual: 'AI 历史回顾展览 - 双屏模式',
                 aiHistory: 'AI 历史',
-                aiHistoryMode: 'AI历史',
+                aiHistoryMode: '人工智能历史',
                 aiHistoryReview: 'AI 历史回顾',
                 switchLanguageToEnglish: '切换到英文',
                 switchLanguageToChinese: '切换到中文',
