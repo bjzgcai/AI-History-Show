@@ -83,10 +83,22 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
+const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
     'the default document should paint the unified UI shell before JavaScript initialization'
+);
+assert.match(
+    i18nSource,
+    /aiHistoryMode:\s*'人工智能历史'/,
+    'the Chinese mode label should use the full localized name'
+);
+assert.match(
+    indexHtml,
+    /data-i18n="aiHistoryMode">人工智能历史<\/span>/,
+    'the initial UI shell should match the localized Chinese mode label before JavaScript initializes'
 );
 assert.match(
     indexHtml,
@@ -249,6 +261,31 @@ assert.match(
     'the unified map level should reset quiz dwell time while event details start it'
 );
 console.log('PASS unified UI boot state and storyline detail URL normalization');
+
+assert.equal(fs.existsSync(pqMiniProgramQrPath), true, 'the PQ mini program code should be restored');
+const pqMiniProgramQr = fs.readFileSync(pqMiniProgramQrPath);
+assert.equal(
+    pqMiniProgramQr.subarray(0, 8).toString('hex'),
+    '89504e470d0a1a0a',
+    'the PQ mini program code should be a PNG'
+);
+assert.ok(pqMiniProgramQr.length > 100_000, 'the PQ mini program code should contain the full scannable asset');
+assert.match(
+    indexHtml,
+    /const PQ_MINI_PROGRAM_QR_URL = 'resources\/pq\.png\?v=20260724';/,
+    'the quiz entry should reference the restored PQ mini program code'
+);
+assert.match(
+    indexHtml,
+    /function buildPqCourseEntry\(\)[\s\S]*?uiText\('PQ AI literacy course', 'PQ AI 通识课'\)[\s\S]*?class="quick-quiz-pq-qr-frame"[\s\S]*?PQ_MINI_PROGRAM_QR_URL/,
+    'the quiz panel should expose the bilingual PQ mini program course entrance'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /POP_QUIZ_MOBILE|mobileQuizApp|mobile-quiz-app|quiz=mobile|mobile_quiz_start|mobile_quiz_complete|qr_landing|10-question mobile challenge|10 题手机挑战|claim a souvenir|领取纪念品|ai100-pop-quiz-qr-v2/,
+    'the retired mobile challenge page, route, analytics, entry, and souvenir copy should not remain in the presentation'
+);
+console.log('PASS PQ-only quiz course entrance');
 
 assert.match(
     indexHtml,

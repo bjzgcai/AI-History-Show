@@ -2,9 +2,9 @@
 
 本文档汇总当前项目中 Quiz 的数据结构、跨 Storyline 复用规则、展示触发条件和维护方式。
 
-## 1. Quiz 的两种使用场景
+## 1. Quiz 展示与课程入口
 
-当前页面包含两套用途不同的 Quiz 体验。
+当前页面包含事件浏览检查点，并在检查点中提供 PQ AI 通识课入口。
 
 ### 1.1 事件浏览检查点
 
@@ -12,11 +12,11 @@
 
 这套逻辑按事件是否存在有效 Quiz 决定，不再限制为 AI100 Storyline。统一 UI、深度学习、AI100 及其他包含事件 Quiz 的 Storyline 共用同一套事件级判断规则。
 
-### 1.2 AI100 手机端 10 题挑战
+### 1.2 PQ AI 通识课入口
 
-页面中的二维码和 `?quiz=mobile` 入口属于独立的手机端挑战。目前它仍从 `bench-council-ai100` Storyline 中抽取 10 道题，用于集中答题和成绩展示。
+事件浏览检查点的问答区下方显示 PQ AI 通识课微信小程序码。观众使用微信扫码后进入外部小程序课程；网页本身不承载该课程的集中答题、成绩或礼物兑换流程。
 
-该入口与“离开事件详情时弹出一道题”的浏览检查点不是同一套触发逻辑。
+旧 `?quiz=mobile` 手机挑战页面、网页二维码入口和相关埋点已经退役。带有旧参数的地址只按普通展览地址加载，不再进入独立答题页面。
 
 ## 2. Archive 数据结构
 
@@ -115,7 +115,7 @@ Quiz 完成或跳过后，当前页面会话内不会再次为同一 `archiveEve
 浏览检查点弹窗由左右两部分组成：
 
 - 左侧：当前事件的相关图片、资料卡片和来源链接。
-- 右侧：一道随机排列选项的快速问答、回答反馈和解释。
+- 右侧：一道随机排列选项的快速问答、回答反馈和解释，以及 PQ AI 通识课微信小程序入口。
 
 选项显示时会随机排序，同时同步调整正确答案索引。源数据中的固定选项顺序不会直接决定观众看到的顺序。
 
@@ -169,6 +169,7 @@ npm test
 - `index.html` 中的 `getCompletionQuizKey`：用 `archiveEventId` 标识同一事件。
 - `index.html` 中的 `hasCompletionQuizDwellElapsed`：15 秒详情停留判断。
 - `index.html` 中的 `maybeOpenCompletionQuiz`：统一的 Quiz 展示资格判断。
+- `index.html` 中的 `buildPqCourseEntry`：PQ AI 通识课小程序码入口。
 - `index.html` 中的 `returnFromUiDetail`：统一 UI 离开详情时的触发入口。
 - `scripts/test-storyline-routing.js`：Storyline、统一 UI 和 Quiz 触发规则的回归断言。
 
@@ -180,3 +181,5 @@ npm test
 - 重新进入 AlexNet 详情并停留超过 15 秒后返回：弹出 AlexNet Quiz。
 - 跳过 Quiz 返回地图后切换年份：不再弹出 Quiz。
 - 深度学习事件可以按相同 `archiveEventId` 复用 AI100 中已有的 Quiz。
+- 旧 `?quiz=mobile` 参数不会打开独立手机挑战页。
+- 桌面与手机布局中只显示 PQ AI 通识课小程序码，不显示网页挑战或礼物文案。
