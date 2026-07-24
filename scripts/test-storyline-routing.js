@@ -83,6 +83,10 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+const mobileQuizQrSvg = fs.readFileSync(
+    path.join(__dirname, '..', 'resources', 'images', 'ui', 'ai100-pop-quiz-qr-v2.svg'),
+    'utf8'
+);
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
@@ -249,6 +253,23 @@ assert.match(
     'the unified map level should reset quiz dwell time while event details start it'
 );
 console.log('PASS unified UI boot state and storyline detail URL normalization');
+
+assert.match(
+    indexHtml,
+    /const POP_QUIZ_MOBILE_PUBLIC_URL = 'https:\/\/museum\.bza\.edu\.cn\/ai-history\/\?storyline=bench-council-ai100&quiz=mobile';/,
+    'the mobile quiz fallback should use the museum deployment'
+);
+assert.match(
+    mobileQuizQrSvg,
+    /https:\/\/museum\.bza\.edu\.cn\/ai-history\/\?storyline=bench-council-ai100&amp;quiz=mobile/,
+    'the static mobile quiz QR should encode the museum deployment'
+);
+assert.doesNotMatch(
+    `${indexHtml}\n${mobileQuizQrSvg}`,
+    /bjzgcai\.github\.io\/AI-History-Show/,
+    'mobile quiz entry points should not fall back to the retired GitHub Pages URL'
+);
+console.log('PASS mobile quiz deployment URL');
 
 assert.match(
     indexHtml,
