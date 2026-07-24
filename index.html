@@ -5812,6 +5812,43 @@
             background: transparent;
         }
 
+        .ui-level-one.is-year-mode .ui-event-image.has-demo,
+        .ui-level-one.is-region-mode .ui-event-image.has-demo {
+            border: 1px solid rgba(244, 239, 229, 0.18);
+            background: #080808;
+            padding: 14px;
+        }
+
+        .ui-event-image.has-demo .bench-paper-demo {
+            width: 100%;
+            min-height: 0;
+            display: block;
+        }
+
+        .ui-event-image.has-demo .bench-paper-notes,
+        .ui-event-image.has-demo .bench-go-notes {
+            display: none;
+        }
+
+        .ui-event-image.has-demo .bench-paper-svg {
+            width: 100%;
+            height: auto;
+            min-height: 0;
+            aspect-ratio: 520 / 250;
+            display: block;
+        }
+
+        .ui-event-image.has-demo .bench-go-layout {
+            width: 100%;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            place-items: center;
+        }
+
+        .ui-event-image.has-demo .bench-go-board {
+            width: min(100%, 250px);
+        }
+
         .ui-event-image span {
             color: rgba(244, 239, 229, 0.45);
             font-size: 12px;
@@ -7433,7 +7470,7 @@
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
         }
 
-        .branch-video-panel {
+        .game-evolution-panel {
             width: min(1080px, calc(100vw - 72px));
             max-height: min(86vh, 760px);
             display: grid;
@@ -7441,8 +7478,8 @@
             gap: 14px;
         }
 
-        .branch-video-player,
-        .branch-video-fallback {
+        .game-evolution-player,
+        .game-evolution-fallback {
             width: 100%;
             max-height: calc(86vh - 90px);
             border: 1px solid rgba(246, 137, 0, 0.28);
@@ -7452,7 +7489,7 @@
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
         }
 
-        .branch-video-meta {
+        .game-evolution-meta {
             display: grid;
             gap: 4px;
             color: rgba(244, 239, 229, 0.76);
@@ -7463,7 +7500,7 @@
             text-align: center;
         }
 
-        .branch-video-meta strong {
+        .game-evolution-meta strong {
             color: var(--accent);
             font-size: 15px;
             font-weight: 900;
@@ -10008,10 +10045,14 @@
             },
             {
                 id: 'gaming-ai',
-                layout: 'branch-timeline',
+                layout: 'ui-browser',
                 label: {
                     en: 'AI in Board & Tabletop Games',
                     zh: 'AI 在棋牌与博弈论的演进'
+                },
+                note: {
+                    en: '1951-2019, from board search and evaluation to self-play and learned planning',
+                    zh: '1951 至 2019 年，从棋盘搜索与评估到自我对弈和学习型规划'
                 }
             },
             {
@@ -10185,6 +10226,12 @@
             if (milestone.archiveVariantId === 'humanistic-cycle') return true;
             return Array.isArray(milestone.unifiedSourceIds)
                 && milestone.unifiedSourceIds.some((id) => String(id || '').startsWith('milestone-humanistic-cycle-'));
+        }
+
+        function isGamingMilestone(milestone) {
+            if (!milestone) return false;
+            if (getMilestoneStorylineId(milestone) === 'gaming-ai') return true;
+            return milestone.archiveVariantId === 'gaming-ai';
         }
         const getSearchParam = (name) => {
             try {
@@ -12653,7 +12700,7 @@
             return `${value}${separator}_restart=${Date.now()}`;
         }
 
-        async function canLoadBranchVideo(url, hasFallback) {
+        async function canLoadGameEvolutionVideo(url, hasFallback) {
             const value = String(url || '').trim();
             if (!value) return false;
             if (!hasFallback) return true;
@@ -12678,11 +12725,12 @@
             }
         }
 
-        async function openBranchGameEvolutionVideo(vm) {
+        async function openGameEvolutionVideo(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
             const module = getAchievementGameEvolutionModule(raw);
             if (!module) return;
 
+            const returnFocus = document.activeElement;
             const title = module.title || vm.title || uiText('Game evolution video', '棋局演化视频');
             const videoUrl = String(module.url || '').trim();
             const fallbackUrl = String(module.fallbackUrl || '').trim();
@@ -12690,7 +12738,7 @@
             const playableImage = fallbackUrl || poster;
             const fallbackImageUrl = appendPlaybackRestartToken(playableImage);
             const shouldUseVideo = isDirectVideoMedia(videoUrl)
-                && await canLoadBranchVideo(videoUrl, Boolean(playableImage));
+                && await canLoadGameEvolutionVideo(videoUrl, Boolean(playableImage));
             const sourceSgf = String(module.sourceSgf || '').trim();
             const generator = String(module.generator || '').trim();
             const sourceLine = sourceSgf
@@ -12701,13 +12749,16 @@
                 : '';
 
             const viewer = document.createElement('div');
-            viewer.className = 'photo-viewer branch-video-viewer';
+            viewer.className = 'photo-viewer game-evolution-viewer';
+            viewer.setAttribute('role', 'dialog');
+            viewer.setAttribute('aria-modal', 'true');
+            viewer.setAttribute('aria-label', title);
             viewer.innerHTML = `
-                <button class="close-viewer" type="button">×</button>
-                <div class="branch-video-panel">
-                    ${shouldUseVideo ? `<video class="branch-video-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
-                    ${fallbackImageUrl ? `<img class="branch-video-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}"${shouldUseVideo ? ' hidden' : ''}>` : ''}
-                    <div class="branch-video-meta">
+                <button class="close-viewer" type="button" aria-label="${escapeHtml(tx('close'))}">×</button>
+                <div class="game-evolution-panel">
+                    ${shouldUseVideo ? `<video class="game-evolution-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
+                    ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}"${shouldUseVideo ? ' hidden' : ''}>` : ''}
+                    <div class="game-evolution-meta">
                         <strong>${escapeHtml(title)}</strong>
                         <span>${escapeHtml(sourceLine)}</span>
                         ${generatorLine ? `<span>${escapeHtml(generatorLine)}</span>` : ''}
@@ -12716,8 +12767,9 @@
             `;
             document.body.appendChild(viewer);
 
-            const video = viewer.querySelector('.branch-video-player');
-            const fallback = viewer.querySelector('.branch-video-fallback');
+            const closeButton = viewer.querySelector('.close-viewer');
+            const video = viewer.querySelector('.game-evolution-player');
+            const fallback = viewer.querySelector('.game-evolution-fallback');
             if (video && fallback) {
                 video.addEventListener('error', () => {
                     video.hidden = true;
@@ -12741,9 +12793,12 @@
             const closeViewer = () => {
                 if (video && typeof video.pause === 'function') video.pause();
                 viewer.remove();
+                if (returnFocus && typeof returnFocus.focus === 'function') {
+                    returnFocus.focus();
+                }
             };
 
-            viewer.querySelector('.close-viewer').onclick = closeViewer;
+            closeButton.onclick = closeViewer;
             viewer.addEventListener('click', (event) => {
                 if (event.target === viewer) closeViewer();
             });
@@ -12752,6 +12807,7 @@
                 if (event.key === 'Escape') closeViewer();
             };
             document.addEventListener('keydown', handleKey);
+            closeButton.focus();
             const observer = new MutationObserver(() => {
                 if (!document.body.contains(viewer)) {
                     document.removeEventListener('keydown', handleKey);
@@ -12809,7 +12865,7 @@
                     event.stopPropagation();
                     const index = Number(button.dataset.branchVideoIndex || -1);
                     if (!Number.isInteger(index) || index < 0) return;
-                    openBranchGameEvolutionVideo(getVm(index));
+                    openGameEvolutionVideo(getVm(index));
                 });
             });
         }
@@ -16202,8 +16258,11 @@
                 .filter((item) => item && item.type === 'image' && item.url)
                 .map((item) => item.url);
             const photos = sortPhotosForDisplay(vm.photos);
+            const configuredDemoImage = isGamingMilestone(vm && vm.raw)
+                ? String(vm.raw && vm.raw.achievement && vm.raw.achievement.demoImage || '').trim()
+                : '';
             const seen = new Set();
-            return [...visualImages, ...photos].map((url) => String(url || '').trim()).filter((url) => {
+            return [...visualImages, ...photos, configuredDemoImage].map((url) => String(url || '').trim()).filter((url) => {
                 if (!url || seen.has(url)) return false;
                 seen.add(url);
                 return true;
@@ -16630,10 +16689,13 @@
             const captionTitle = imageMeta.name || title;
             const captionDetail = imageMeta.role || '';
             const sentimentTagHtml = buildUiSentimentTagHtml(raw);
+            const demoVisualHtml = !imageUrl && isGamingMilestone(raw)
+                ? buildAchievementDemoVisualHtml(raw)
+                : '';
             return `
                 <button class="ui-event-card" type="button" data-event-id="${escapeHtml(milestone.id)}">
-                    <div class="ui-event-image">
-                        ${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}">` : `<span>${escapeHtml(tx('archiveImage'))}</span>`}
+                    <div class="ui-event-image${demoVisualHtml ? ' has-demo' : ''}"${demoVisualHtml ? ' aria-hidden="true"' : ''}>
+                        ${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}">` : demoVisualHtml || `<span>${escapeHtml(tx('archiveImage'))}</span>`}
                     </div>
                     <div class="ui-event-copy">
                         <div class="ui-event-meta">
@@ -17186,8 +17248,62 @@
             return getAchievementKeyConcepts(raw);
         }
 
+        const UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN = /(?:^|\/)sample-go-game\.gif(?:[?#]|$)/i;
+
+        function getUiGameEvolutionModule(raw) {
+            const module = getAchievementGameEvolutionModule(raw);
+            if (!module) return null;
+            if (UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN.test(module.url)) {
+                return null;
+            }
+            return module;
+        }
+
+        function buildUiGameEvolutionHtml(vm, module) {
+            const title = module.title || vm.title || uiText('Game evolution clip', '棋局演化短片');
+            const description = module.description || uiText(
+                'Replay the curated game-state sequence.',
+                '重放策展棋局状态序列。'
+            );
+            const posterUrl = module.poster || getUiMediaVisualImage(vm);
+            const posterHtml = posterUrl
+                ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(title)}">`
+                : '';
+            return `
+                <button class="ui-media-video" type="button" data-ui-game-evolution="true" aria-label="${escapeHtml(title)}">
+                    ${posterHtml}
+                    <span class="ui-media-video-play">${escapeHtml(uiText('Replay', '重放'))}</span>
+                    <span class="ui-media-video-quote">${escapeHtml(description)}</span>
+                    <span class="ui-media-video-time">
+                        <span>${escapeHtml(uiText('Game record', '棋谱'))}</span>
+                        <span>${escapeHtml(module.duration || uiText('Interactive', '可交互'))}</span>
+                    </span>
+                </button>
+            `;
+        }
+
+        function buildUiDemoVisualHtml(raw, demoVisualHtml) {
+            if (!stripHtml(demoVisualHtml)) return '';
+            const caption = getAchievementField(
+                raw,
+                'demo',
+                getAchievementField(raw, 'artifact', tx('archiveImage'))
+            );
+            return `
+                <div class="ui-side-demo-visual">
+                    ${demoVisualHtml}
+                    <div class="ui-side-visual-caption">${escapeHtml(caption)}</div>
+                </div>
+            `;
+        }
+
         function buildUiMediaHtml(vm, { forceStaticImage = false } = {}) {
             const raw = vm.raw || {};
+            const gameEvolutionModule = getUiGameEvolutionModule(raw);
+            if (gameEvolutionModule && !forceStaticImage) {
+                return buildUiGameEvolutionHtml(vm, gameEvolutionModule);
+            }
+
             if (vm.videoEmbedUrl && !forceStaticImage) {
                 const posterUrl = getUiMediaVisualImage(vm);
                 const posterMeta = posterUrl ? buildArchivePhotoMeta(vm, posterUrl) : null;
@@ -17213,20 +17329,16 @@
                 return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
             }
 
+            const demoVisualHtml = buildAchievementDemoVisualHtml(raw);
+            const demoMediaHtml = buildUiDemoVisualHtml(raw, demoVisualHtml);
+            if (demoMediaHtml && isGamingMilestone(raw)) return demoMediaHtml;
+
             const fallbackConceptHtml = buildUiConceptFeatureCardsHtml(getUiFallbackConceptSections(raw));
             if (fallbackConceptHtml) {
                 return fallbackConceptHtml;
             }
 
-            const demoVisualHtml = buildAchievementDemoVisualHtml(raw);
-            if (stripHtml(demoVisualHtml)) {
-                return `
-                    <div class="ui-side-demo-visual">
-                        ${demoVisualHtml}
-                        <div class="ui-side-visual-caption">${escapeHtml(getAchievementField(raw, 'demo', getAchievementField(raw, 'artifact', tx('archiveImage'))))}</div>
-                    </div>
-                `;
-            }
+            if (demoMediaHtml) return demoMediaHtml;
 
             return '';
         }
@@ -17604,6 +17716,9 @@
                         }
                     }
                 }, { once: true });
+            });
+            refs.uiBrowserMain.querySelectorAll('[data-ui-game-evolution]').forEach((button) => {
+                button.addEventListener('click', () => openGameEvolutionVideo(vm));
             });
             bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
