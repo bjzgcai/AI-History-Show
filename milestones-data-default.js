@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 09:18
+// 生成时间: 2026-07-27 10:16
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -15381,6 +15381,19 @@ const milestones = [
     "figures": [
       {
         "name": {
+          "en": "Feng-hsiung Hsu",
+          "zh": "许峰雄"
+        },
+        "role": {
+          "en": "Chief architect; custom VLSI and hardware design",
+          "zh": "首席架构师；定制 VLSI 与硬件设计"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
           "en": "Murray Campbell",
           "zh": "默里·坎贝尔"
         },
@@ -15394,14 +15407,27 @@ const milestones = [
       },
       {
         "name": {
-          "en": "Garry Kasparov",
-          "zh": "加里·卡斯帕罗夫"
+          "en": "A. Joseph Hoane Jr.",
+          "zh": "约瑟夫·霍恩"
         },
         "role": {
-          "en": "Reigning world champion in the 1997 match",
-          "zh": "1997 年人机对抗中的卫冕世界冠军"
+          "en": "Parallel-search software lead",
+          "zh": "并行搜索软件负责人"
         },
-        "avatar": "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Jerry Brody",
+          "zh": "杰里·布罗迪"
+        },
+        "role": {
+          "en": "Hardware integration and match operations",
+          "zh": "硬件集成与比赛现场运行"
+        },
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -15409,14 +15435,12 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
-        "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
       ],
       "videos": [],
       "assetIds": [
         "asset-1997-deep-blue-murray-campbell",
-        "asset-1997-deep-blue-garry-kasparov",
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board"
       ]
@@ -15444,35 +15468,6 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg": {
-        "caption": {
-          "zh": "加里·卡斯帕罗夫肖像",
-          "en": "Garry Kasparov portrait"
-        },
-        "subcaption": {
-          "zh": "1997 年 Deep Blue 人机对抗中的卫冕世界冠军。",
-          "en": "Reigning world champion in the 1997 Deep Blue match."
-        },
-        "sourceName": {
-          "zh": "荷兰国家档案馆 / 维基共享资源",
-          "en": "Nationaal Archief / Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
-        "license": {
-          "zh": "CC0；来源文件页标记为可自由使用。",
-          "en": "CC0; the source file page marks the image for unrestricted reuse."
-        },
-        "sourceId": "source-garry-kasparov-commons-portrait",
-        "rights": {
-          "status": "cleared",
-          "license": {
-            "zh": "CC0；来源文件页标记为可自由使用。",
-            "en": "CC0; the source file page marks the image for unrestricted reuse."
-          }
-        },
-        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
@@ -15617,29 +15612,13 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "secondary",
           "sourceType": "official-page"
-        },
-        {
-          "id": "source-garry-kasparov-commons-portrait",
-          "type": {
-            "zh": "图片来源",
-            "en": "Image source"
-          },
-          "label": {
-            "zh": "加里·卡斯帕罗夫新闻发布会肖像",
-            "en": "Garry Kasparov press-conference portrait"
-          },
-          "url": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-deep-blue-system-paper",
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
-        "source-ibm100-deep-blue",
-        "source-garry-kasparov-commons-portrait"
+        "source-ibm100-deep-blue"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -63731,10 +63710,23 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。默里·坎贝尔、许峰雄等核心成员把并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片整合成一套高性能系统。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
-      "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5-2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. Core team members including Murray Campbell and Feng-hsiung Hsu integrated parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips into a high-performance system.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
+      "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。许峰雄、默里·坎贝尔等核心成员把并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片整合成一套高性能系统。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+      "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5-2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. Core team members including Feng-hsiung Hsu and Murray Campbell integrated parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips into a high-performance system.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
     },
     "figures": [
+      {
+        "name": {
+          "en": "Feng-hsiung Hsu",
+          "zh": "许峰雄"
+        },
+        "role": {
+          "en": "Chief architect; custom VLSI and hardware design",
+          "zh": "首席架构师；定制 VLSI 与硬件设计"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
       {
         "name": {
           "en": "Murray Campbell",
@@ -63750,14 +63742,27 @@ const milestones = [
       },
       {
         "name": {
-          "en": "Garry Kasparov",
-          "zh": "加里·卡斯帕罗夫"
+          "en": "A. Joseph Hoane Jr.",
+          "zh": "约瑟夫·霍恩"
         },
         "role": {
-          "en": "Reigning world champion in the 1997 match",
-          "zh": "1997 年人机对抗中的卫冕世界冠军"
+          "en": "Parallel-search software lead",
+          "zh": "并行搜索软件负责人"
         },
-        "avatar": "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Jerry Brody",
+          "zh": "杰里·布罗迪"
+        },
+        "role": {
+          "en": "Hardware integration and match operations",
+          "zh": "硬件集成与比赛现场运行"
+        },
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -63766,7 +63771,6 @@ const milestones = [
       "images": [
         "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif",
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
-        "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
       ],
@@ -63774,7 +63778,6 @@ const milestones = [
       "assetIds": [
         "asset-1997-deep-blue-game-6-animation",
         "asset-1997-deep-blue-murray-campbell",
-        "asset-1997-deep-blue-garry-kasparov",
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board"
       ]
@@ -63835,35 +63838,6 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg": {
-        "caption": {
-          "zh": "加里·卡斯帕罗夫肖像",
-          "en": "Garry Kasparov portrait"
-        },
-        "subcaption": {
-          "zh": "1997 年 Deep Blue 人机对抗中的卫冕世界冠军。",
-          "en": "Reigning world champion in the 1997 Deep Blue match."
-        },
-        "sourceName": {
-          "zh": "荷兰国家档案馆 / 维基共享资源",
-          "en": "Nationaal Archief / Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
-        "license": {
-          "zh": "CC0；来源文件页标记为可自由使用。",
-          "en": "CC0; the source file page marks the image for unrestricted reuse."
-        },
-        "sourceId": "source-garry-kasparov-commons-portrait",
-        "rights": {
-          "status": "cleared",
-          "license": {
-            "zh": "CC0；来源文件页标记为可自由使用。",
-            "en": "CC0; the source file page marks the image for unrestricted reuse."
-          }
-        },
-        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg": {
@@ -63995,21 +63969,6 @@ const milestones = [
           "sourceType": "official-page"
         },
         {
-          "id": "source-garry-kasparov-commons-portrait",
-          "type": {
-            "zh": "图片来源",
-            "en": "Image source"
-          },
-          "label": {
-            "zh": "加里·卡斯帕罗夫新闻发布会肖像",
-            "en": "Garry Kasparov press-conference portrait"
-          },
-          "url": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
-        },
-        {
           "id": "source-deep-blue-game-6-commons",
           "type": {
             "zh": "图片来源",
@@ -64029,7 +63988,6 @@ const milestones = [
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue",
-        "source-garry-kasparov-commons-portrait",
         "source-deep-blue-game-6-commons"
       ],
       "claimIds": [

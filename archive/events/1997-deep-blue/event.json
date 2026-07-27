@@ -11,8 +11,8 @@
     "en": "AI Top 100 Achievements"
   },
   "description": {
-    "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。默里·坎贝尔、许峰雄等核心成员把并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片整合成一套高性能系统。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
-    "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5-2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. Core team members including Murray Campbell and Feng-hsiung Hsu integrated parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips into a high-performance system.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
+    "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。许峰雄、默里·坎贝尔等核心成员把并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片整合成一套高性能系统。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+    "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5-2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. Core team members including Feng-hsiung Hsu and Murray Campbell integrated parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips into a high-performance system.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
   },
   "location": {
     "regionId": "usa",
@@ -37,6 +37,14 @@
   ],
   "figures": [
     {
+      "figureId": "feng-hsiung-hsu",
+      "role": {
+        "zh": "首席架构师；设计定制 VLSI 芯片与硬件架构",
+        "en": "Chief architect; custom VLSI and hardware design"
+      },
+      "organizationIds": []
+    },
+    {
       "figureId": "murray-campbell",
       "role": {
         "zh": "评估函数与搜索策略负责人",
@@ -46,12 +54,19 @@
       "organizationIds": []
     },
     {
-      "figureId": "garry-kasparov",
+      "figureId": "a-joseph-hoane-jr",
       "role": {
-        "zh": "1997 年人机对抗中的卫冕世界冠军",
-        "en": "Reigning world champion in the 1997 match"
+        "zh": "并行搜索软件总工程师",
+        "en": "Lead engineer for parallel-search software"
       },
-      "avatar": "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
+      "organizationIds": []
+    },
+    {
+      "figureId": "jerry-brody",
+      "role": {
+        "zh": "硬件集成与现场运行工程师",
+        "en": "Hardware integration and match-operations engineer"
+      },
       "organizationIds": []
     }
   ],
