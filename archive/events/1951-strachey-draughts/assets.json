@@ -1,31 +1,5 @@
 [
   {
-    "id": "asset-1951-strachey-draughts-profile-card",
-    "type": "svg",
-    "path": "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
-    "role": "profile-illustration",
-    "caption": {
-      "zh": "克里斯托弗·斯特雷奇人物资料卡",
-      "en": "Christopher Strachey profile illustration"
-    },
-    "subcaption": {
-      "zh": "斯特雷奇与早期跳棋程序的本地原创资料图；不是历史照片。",
-      "en": "Original local profile graphic connecting Strachey with his early draughts program; not a historical photograph."
-    },
-    "sourceId": "source-computer-pioneers-christopher-strachey",
-    "rights": {
-      "status": "original-local",
-      "license": {
-        "zh": "本地原创 SVG 人物资料图；依据公开传记事实制作，不复制来源肖像。",
-        "en": "Original local SVG profile graphic based on public biographical facts; no source portrait is copied."
-      }
-    },
-    "usage": [
-      "variant:gaming-ai"
-    ],
-    "editable": true
-  },
-  {
     "id": "asset-1951-strachey-draughts-board-search",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",

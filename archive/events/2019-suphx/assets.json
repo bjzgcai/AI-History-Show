@@ -1,5 +1,107 @@
 [
   {
+    "id": "asset-2019-suphx-tie-yan-liu",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "刘铁岩肖像",
+      "en": "Tie-Yan Liu portrait"
+    },
+    "subcaption": {
+      "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员。",
+      "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia."
+    },
+    "sourceId": "source-tie-yan-liu-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 项目主要负责人之一刘铁岩。",
+      "en": "Used to present Tie-Yan Liu, one of the principal leaders of Suphx."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-hsiao-wuen-hon",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "洪小文肖像",
+      "en": "Hsiao-Wuen Hon portrait"
+    },
+    "subcaption": {
+      "zh": "微软全球资深副总裁、Suphx 项目最高负责人。",
+      "en": "Microsoft global senior vice president and executive leader of the Suphx project."
+    },
+    "sourceId": "source-hsiao-wuen-hon-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 项目最高负责人洪小文。",
+      "en": "Used to present Hsiao-Wuen Hon, executive leader of the Suphx project."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-tao-qin",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "秦涛肖像",
+      "en": "Tao Qin portrait"
+    },
+    "subcaption": {
+      "zh": "Suphx 论文重要作者。",
+      "en": "Key author of the Suphx paper."
+    },
+    "sourceId": "source-tao-qin-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 论文重要作者秦涛。",
+      "en": "Used to present Tao Qin, a key author of the Suphx paper."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-2019-suphx-guoqing-liu",
     "type": "image",
     "path": "resources/images/external/2019-suphx/guoqing-liu-portrait.jpg",

@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 02:26
+// 生成时间: 2026-07-27 03:12
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -21031,21 +21031,6 @@ const milestones = [
           "sourceType": "paper"
         },
         {
-          "id": "source-computer-pioneers-christopher-strachey",
-          "type": {
-            "zh": "人物资料",
-            "en": "Profile"
-          },
-          "label": {
-            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
-            "en": "Computer Pioneers - Christopher Strachey"
-          },
-          "url": "https://history.computer.org/pioneers/strachey.html",
-          "purpose": "biography",
-          "reliability": "reference-only",
-          "sourceType": "profile"
-        },
-        {
           "id": "source-strachey-draughts-program-screenshot",
           "type": {
             "zh": "图片来源",
@@ -21078,7 +21063,6 @@ const milestones = [
       ],
       "sourceIds": [
         "source-logical-or-non-mathematical-programmes",
-        "source-computer-pioneers-christopher-strachey",
         "source-strachey-draughts-program-screenshot",
         "source-checkers-board-photo"
       ],
@@ -60998,14 +60982,13 @@ const milestones = [
           "en": "Developer of the early draughts program",
           "zh": "早期跳棋程序开发者"
         },
-        "avatar": "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
@@ -61013,7 +60996,6 @@ const milestones = [
       ],
       "videos": [],
       "assetIds": [
-        "asset-1951-strachey-draughts-profile-card",
         "asset-1951-strachey-draughts-program-external",
         "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
@@ -61021,30 +61003,6 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg": {
-        "caption": {
-          "zh": "克里斯托弗·斯特雷奇人物资料卡",
-          "en": "Christopher Strachey profile illustration"
-        },
-        "subcaption": {
-          "zh": "斯特雷奇与早期跳棋程序的本地原创资料图；不是历史照片。",
-          "en": "Original local profile graphic connecting Strachey with his early draughts program; not a historical photograph."
-        },
-        "license": {
-          "zh": "本地原创 SVG 人物资料图；依据公开传记事实制作，不复制来源肖像。",
-          "en": "Original local SVG profile graphic based on public biographical facts; no source portrait is copied."
-        },
-        "sourceId": "source-computer-pioneers-christopher-strachey",
-        "rights": {
-          "status": "original-local",
-          "license": {
-            "zh": "本地原创 SVG 人物资料图；依据公开传记事实制作，不复制来源肖像。",
-            "en": "Original local SVG profile graphic based on public biographical facts; no source portrait is copied."
-          }
-        },
-        "role": "profile-illustration",
-        "type": "svg"
-      },
       "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
           "zh": "斯特雷奇跳棋程序显示画面",
@@ -61233,21 +61191,6 @@ const milestones = [
           "sourceType": "paper"
         },
         {
-          "id": "source-computer-pioneers-christopher-strachey",
-          "type": {
-            "zh": "人物资料",
-            "en": "Profile"
-          },
-          "label": {
-            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
-            "en": "Computer Pioneers - Christopher Strachey"
-          },
-          "url": "https://history.computer.org/pioneers/strachey.html",
-          "purpose": "biography",
-          "reliability": "reference-only",
-          "sourceType": "profile"
-        },
-        {
           "id": "source-strachey-draughts-program-screenshot",
           "type": {
             "zh": "图片来源",
@@ -61280,7 +61223,6 @@ const milestones = [
       ],
       "sourceIds": [
         "source-logical-or-non-mathematical-programmes",
-        "source-computer-pioneers-christopher-strachey",
         "source-strachey-draughts-program-screenshot",
         "source-checkers-board-photo"
       ],
@@ -64313,7 +64255,7 @@ const milestones = [
           "en": "Coauthor of the xiangqi comparison-training paper",
           "zh": "中国象棋比较训练论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/2000s-alphacat/i-chen-wu-avatar.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -64333,14 +64275,48 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/2000s-alphacat/i-chen-wu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2000s-alphacat-i-chen-wu-portrait",
         "asset-2000s-alphacat-xiangqi-search"
       ]
     },
     "imageMeta": {
+      "resources/images/external/2000s-alphacat/i-chen-wu-portrait.jpg": {
+        "caption": {
+          "zh": "吴毅成肖像",
+          "en": "I-Chen Wu portrait"
+        },
+        "subcaption": {
+          "zh": "《面向计算机中国象棋的比较训练》通讯作者",
+          "en": "Corresponding author of Comparison Training for Computer Chinese Chess"
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于展示中国象棋比较训练论文通讯作者吴毅成。",
+          "en": "Used to present I-Chen Wu, corresponding author of the xiangqi comparison-training paper."
+        },
+        "sourceId": "source-i-chen-wu-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg": {
         "caption": {
           "zh": "中国象棋搜索几何",
@@ -65402,16 +65378,31 @@ const milestones = [
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Julian Schrittwieser",
+          "zh": "朱利安·施里特维泽"
+        },
+        "role": {
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+        },
+        "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "resources": {
       "images": [
         "resources/images/figures/authoritative/david-silver.jpg",
+        "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg"
       ],
       "videos": [],
       "assetIds": [
         "asset-david-silver-commons-portrait",
+        "asset-2017-alphazero-julian-schrittwieser",
         "asset-2017-alphazero-self-play-loop"
       ]
     },
@@ -65440,6 +65431,38 @@ const milestones = [
           "license": {
             "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
             "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg": {
+        "caption": {
+          "zh": "朱利安·施里特维泽肖像",
+          "en": "Julian Schrittwieser portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一。",
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper."
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于展示 AlphaZero 后续技术路线中的 MuZero 共同第一作者朱利安·施里特维泽。",
+          "en": "Used to present Julian Schrittwieser, one of MuZero's first authors in the post-AlphaZero research lineage."
+        },
+        "sourceId": "source-julian-schrittwieser-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
           }
         },
         "role": "portrait",
@@ -67209,106 +67232,172 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>微软亚洲研究院团队开发的 Suphx 把深度强化学习带入日本麻将：四名玩家只能看到部分牌面，还要面对随机摸牌、复杂计分和跨多局的风险权衡。李俊杰、刘国庆、赵立、秦涛、刘铁岩等作者把监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配组合成一套完整训练流程。</p><p>论文报告 Suphx 在天凤平台的稳定段位超过 99.99% 的注册玩家，并在与顶尖人类牌手的比较中表现出更稳定的长期收益。它把游戏 AI 的试验场从完全信息棋盘推进到多人、随机、隐藏信息环境，说明强策略不仅要选择高收益动作，也要学习何时防守、何时承担不确定性。</p>",
-      "en": "<p>Microsoft Research Asia's Suphx brought deep reinforcement learning to Japanese mahjong, where four players see only partial information while coping with stochastic draws, complex scoring, and risk tradeoffs that unfold across many hands. Authors including Junjie Li, Guoqing Liu, Li Zhao, Tao Qin, and Tie-Yan Liu combined supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation into a complete training pipeline.</p><p>The paper reported that Suphx achieved a stable rank above 99.99% of officially ranked Tenhou players and produced more consistent long-term results than most top human players. It moved game AI beyond perfect-information boards into multiplayer, stochastic, hidden-information settings where a strong policy must learn not only which action has value, but when to defend and when to accept uncertainty.</p>"
+      "zh": "<p>微软亚洲研究院团队开发的 Suphx 把深度强化学习带入日本麻将：四名玩家只能看到部分牌面，还要面对随机摸牌、复杂计分和跨多局的风险权衡。李俊杰、秦涛、刘铁岩、洪小文等作者与项目负责人把监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配组合成一套完整训练流程。</p><p>论文报告 Suphx 在天凤平台的稳定段位超过 99.99% 的注册玩家，并在与顶尖人类牌手的比较中表现出更稳定的长期收益。它把游戏 AI 的试验场从完全信息棋盘推进到多人、随机、隐藏信息环境，说明强策略不仅要选择高收益动作，也要学习何时防守、何时承担不确定性。</p>",
+      "en": "<p>Microsoft Research Asia's Suphx brought deep reinforcement learning to Japanese mahjong, where four players see only partial information while coping with stochastic draws, complex scoring, and risk tradeoffs that unfold across many hands. Authors and project leaders including Junjie Li, Tao Qin, Tie-Yan Liu, and Hsiao-Wuen Hon combined supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation into a complete training pipeline.</p><p>The paper reported that Suphx achieved a stable rank above 99.99% of officially ranked Tenhou players and produced more consistent long-term results than most top human players. It moved game AI beyond perfect-information boards into multiplayer, stochastic, hidden-information settings where a strong policy must learn not only which action has value, but when to defend and when to accept uncertainty.</p>"
     },
     "figures": [
       {
         "name": {
-          "en": "Guoqing Liu",
-          "zh": "刘国庆"
+          "en": "Tie-Yan Liu",
+          "zh": "刘铁岩"
         },
         "role": {
-          "en": "Suphx coauthor and Microsoft Research senior researcher",
-          "zh": "Suphx 论文共同作者、微软研究院高级研究员"
+          "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia",
+          "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员"
         },
-        "avatar": "resources/images/external/2019-suphx/guoqing-liu-portrait.jpg",
+        "avatar": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
         "name": {
-          "en": "Li Zhao",
-          "zh": "赵立"
+          "en": "Hsiao-Wuen Hon",
+          "zh": "洪小文"
         },
         "role": {
-          "en": "Suphx coauthor and Microsoft Research principal researcher",
-          "zh": "Suphx 论文共同作者、微软研究院首席研究员"
+          "en": "Microsoft global senior vice president and executive leader of the Suphx project",
+          "zh": "微软全球资深副总裁、Suphx 项目最高负责人"
         },
-        "avatar": "resources/images/external/2019-suphx/li-zhao-portrait.jpg",
+        "avatar": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Junjie Li",
+          "zh": "李俊杰"
+        },
+        "role": {
+          "en": "First author of the Suphx paper",
+          "zh": "Suphx 论文第一作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Tao Qin",
+          "zh": "秦涛"
+        },
+        "role": {
+          "en": "Key author of the Suphx paper",
+          "zh": "Suphx 论文重要作者"
+        },
+        "avatar": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/external/2019-suphx/guoqing-liu-portrait.jpg",
-        "resources/images/external/2019-suphx/li-zhao-portrait.jpg",
+        "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+        "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+        "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
         "resources/images/external/2019-suphx/suphx-logo.png",
         "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2019-suphx-guoqing-liu",
-        "asset-2019-suphx-li-zhao",
+        "asset-2019-suphx-tie-yan-liu",
+        "asset-2019-suphx-hsiao-wuen-hon",
+        "asset-2019-suphx-tao-qin",
         "asset-2019-suphx-project-logo",
         "asset-2019-suphx-mahjong-policy"
       ]
     },
     "imageMeta": {
-      "resources/images/external/2019-suphx/guoqing-liu-portrait.jpg": {
+      "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg": {
         "caption": {
-          "zh": "刘国庆肖像",
-          "en": "Guoqing Liu portrait"
+          "zh": "刘铁岩肖像",
+          "en": "Tie-Yan Liu portrait"
         },
         "subcaption": {
-          "zh": "Suphx 论文共同作者、微软研究院高级研究员。",
-          "en": "Suphx coauthor and Microsoft Research senior researcher."
+          "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员。",
+          "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia."
         },
         "sourceName": {
-          "zh": "微软研究院",
-          "en": "Microsoft Research"
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
         },
-        "sourceUrl": "https://www.microsoft.com/en-us/research/people/guoqingliu/",
         "license": {
-          "zh": "图片来自微软研究院官方人物页；页面未声明再分发许可，对外发布前需复核授权。",
-          "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
         },
-        "sourceId": "source-guoqing-liu-microsoft-profile",
+        "usage": {
+          "zh": "用于展示 Suphx 项目主要负责人之一刘铁岩。",
+          "en": "Used to present Tie-Yan Liu, one of the principal leaders of Suphx."
+        },
+        "sourceId": "source-tie-yan-liu-user-provided-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "user-provided",
           "license": {
-            "zh": "图片来自微软研究院官方人物页；页面未声明再分发许可，对外发布前需复核授权。",
-            "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
           }
         },
         "role": "portrait",
         "type": "image"
       },
-      "resources/images/external/2019-suphx/li-zhao-portrait.jpg": {
+      "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg": {
         "caption": {
-          "zh": "赵立肖像",
-          "en": "Li Zhao portrait"
+          "zh": "洪小文肖像",
+          "en": "Hsiao-Wuen Hon portrait"
         },
         "subcaption": {
-          "zh": "Suphx 论文共同作者、微软研究院首席研究员。",
-          "en": "Suphx coauthor and Microsoft Research principal researcher."
+          "zh": "微软全球资深副总裁、Suphx 项目最高负责人。",
+          "en": "Microsoft global senior vice president and executive leader of the Suphx project."
         },
         "sourceName": {
-          "zh": "微软研究院",
-          "en": "Microsoft Research"
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
         },
-        "sourceUrl": "https://www.microsoft.com/en-us/research/people/lizo/",
         "license": {
-          "zh": "图片来自微软研究院官方人物页；页面未声明再分发许可，对外发布前需复核授权。",
-          "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
         },
-        "sourceId": "source-li-zhao-microsoft-profile",
+        "usage": {
+          "zh": "用于展示 Suphx 项目最高负责人洪小文。",
+          "en": "Used to present Hsiao-Wuen Hon, executive leader of the Suphx project."
+        },
+        "sourceId": "source-hsiao-wuen-hon-user-provided-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "user-provided",
           "license": {
-            "zh": "图片来自微软研究院官方人物页；页面未声明再分发许可，对外发布前需复核授权。",
-            "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/external/2019-suphx/tao-qin-portrait.jpg": {
+        "caption": {
+          "zh": "秦涛肖像",
+          "en": "Tao Qin portrait"
+        },
+        "subcaption": {
+          "zh": "Suphx 论文重要作者。",
+          "en": "Key author of the Suphx paper."
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于展示 Suphx 论文重要作者秦涛。",
+          "en": "Used to present Tao Qin, a key author of the Suphx paper."
+        },
+        "sourceId": "source-tao-qin-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
           }
         },
         "role": "portrait",
@@ -67461,45 +67550,13 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "primary",
           "sourceType": "official-page"
-        },
-        {
-          "id": "source-guoqing-liu-microsoft-profile",
-          "type": {
-            "zh": "人物资料",
-            "en": "Profile"
-          },
-          "label": {
-            "zh": "刘国庆，微软研究院",
-            "en": "Guoqing Liu, Microsoft Research"
-          },
-          "url": "https://www.microsoft.com/en-us/research/people/guoqingliu/",
-          "purpose": "biography",
-          "reliability": "primary",
-          "sourceType": "profile"
-        },
-        {
-          "id": "source-li-zhao-microsoft-profile",
-          "type": {
-            "zh": "人物资料",
-            "en": "Profile"
-          },
-          "label": {
-            "zh": "赵立，微软研究院",
-            "en": "Li Zhao, Microsoft Research"
-          },
-          "url": "https://www.microsoft.com/en-us/research/people/lizo/",
-          "purpose": "biography",
-          "reliability": "primary",
-          "sourceType": "profile"
         }
       ],
       "sourceIds": [
         "source-suphx-arxiv-paper",
         "source-arxiv-doi-page",
         "source-building-a-computer-mahjong-player-via-deep-cnns",
-        "source-microsoft-suphx-project",
-        "source-guoqing-liu-microsoft-profile",
-        "source-li-zhao-microsoft-profile"
+        "source-microsoft-suphx-project"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -67763,7 +67820,7 @@ const milestones = [
         },
         "authors": {
           "en": "Junjie Li, Sotetsu Koyamada, Qiwei Ye, Guoqing Liu, Chao Wang, Ruihan Yang, Li Zhao, Tao Qin, Tie-Yan Liu, Hsiao-Wuen Hon",
-          "zh": "Junjie Li、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
+          "zh": "李俊杰、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
         },
         "journal": {
           "en": "arXiv",
@@ -67787,7 +67844,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Junjie Li et al., arXiv, 2020",
-        "zh": "Junjie Li 等，arXiv，2020"
+        "zh": "李俊杰等，arXiv，2020"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/2003.13590"
@@ -67798,7 +67855,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Suphx: Mastering Mahjong with Deep Reinforcement Learning</em>, Junjie Li et al., arXiv, 2020",
-      "zh": "《Suphx：用深度强化学习掌握麻将》, Junjie Li 等，arXiv，2020"
+      "zh": "《Suphx：用深度强化学习掌握麻将》, 李俊杰等，arXiv，2020"
     },
     "quoteLabel": {
       "en": "Paper cue",

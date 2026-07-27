@@ -47,7 +47,10 @@
             }
         }
     ],
-    "assetIds": ["asset-2000s-alphacat-xiangqi-search"],
+    "assetIds": [
+        "asset-2000s-alphacat-i-chen-wu-portrait",
+        "asset-2000s-alphacat-xiangqi-search"
+    ],
     "sourceIds": [
         "source-icga-chinese-chess-page",
         "source-comparison-training-for-computer-chinese-chess",
@@ -114,7 +117,7 @@
                 "en": "Coauthor of the xiangqi comparison-training paper",
                 "zh": "中国象棋比较训练论文共同作者"
             },
-            "avatar": "",
+            "avatar": "resources/images/external/2000s-alphacat/i-chen-wu-avatar.jpg",
             "avatarStyle": "",
             "figureType": "person"
         },

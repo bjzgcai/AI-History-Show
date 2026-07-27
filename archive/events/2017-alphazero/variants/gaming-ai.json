@@ -84,7 +84,11 @@
             }
         }
     ],
-    "assetIds": ["asset-david-silver-commons-portrait", "asset-2017-alphazero-self-play-loop"],
+    "assetIds": [
+        "asset-david-silver-commons-portrait",
+        "asset-2017-alphazero-julian-schrittwieser",
+        "asset-2017-alphazero-self-play-loop"
+    ],
     "sourceIds": ["source-david-silver-commons-portrait", "source-science-paper", "source-arxiv-preprint", "source-deepmind-alphazero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2017-alphazero-quiz-1",
@@ -161,6 +165,19 @@
                 "zh": "DeepMind 联合创始人"
             },
             "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Julian Schrittwieser",
+                "zh": "朱利安·施里特维泽"
+            },
+            "role": {
+                "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
+                "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+            },
+            "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
             "avatarStyle": "",
             "figureType": "person"
         }
