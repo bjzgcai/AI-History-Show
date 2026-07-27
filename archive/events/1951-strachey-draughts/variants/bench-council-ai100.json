@@ -43,6 +43,7 @@
     }
   ],
   "assetIds": [
+    "asset-1951-strachey-draughts-christopher-strachey-portrait",
     "asset-1951-strachey-draughts-program-external",
     "asset-1951-strachey-draughts-checkers-board-external",
     "asset-1951-strachey-draughts-board-search",
@@ -123,7 +124,7 @@
         "en": "Developer of the early draughts program",
         "zh": "早期跳棋程序开发者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

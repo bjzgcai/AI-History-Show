@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 04:25
+// 生成时间: 2026-07-27 06:02
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -20859,13 +20859,14 @@ const milestones = [
           "en": "Developer of the early draughts program",
           "zh": "早期跳棋程序开发者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
@@ -20873,6 +20874,7 @@ const milestones = [
       ],
       "videos": [],
       "assetIds": [
+        "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-program-external",
         "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
@@ -20880,6 +20882,40 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg": {
+        "caption": {
+          "zh": "克里斯托弗·斯特雷奇肖像",
+          "en": "Christopher Strachey portrait"
+        },
+        "subcaption": {
+          "zh": "早期跳棋程序开发者",
+          "en": "Developer of the early draughts program"
+        },
+        "sourceName": {
+          "zh": "IEEE Computer Society Computer Pioneers 档案",
+          "en": "IEEE Computer Society Computer Pioneers archive"
+        },
+        "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+        "license": {
+          "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+          "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+        },
+        "usage": {
+          "zh": "用于展示克里斯托弗·斯特雷奇与早期跳棋程序的关系。",
+          "en": "Used to present Christopher Strachey's connection to the early draughts program."
+        },
+        "sourceId": "source-computer-pioneers-christopher-strachey",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+            "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+          },
+          "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
           "zh": "斯特雷奇跳棋程序显示画面",
@@ -60982,13 +61018,14 @@ const milestones = [
           "en": "Developer of the early draughts program",
           "zh": "早期跳棋程序开发者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
@@ -60996,6 +61033,7 @@ const milestones = [
       ],
       "videos": [],
       "assetIds": [
+        "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-program-external",
         "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
@@ -61003,6 +61041,40 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg": {
+        "caption": {
+          "zh": "克里斯托弗·斯特雷奇肖像",
+          "en": "Christopher Strachey portrait"
+        },
+        "subcaption": {
+          "zh": "早期跳棋程序开发者",
+          "en": "Developer of the early draughts program"
+        },
+        "sourceName": {
+          "zh": "IEEE Computer Society Computer Pioneers 档案",
+          "en": "IEEE Computer Society Computer Pioneers archive"
+        },
+        "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+        "license": {
+          "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+          "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+        },
+        "usage": {
+          "zh": "用于展示克里斯托弗·斯特雷奇与早期跳棋程序的关系。",
+          "en": "Used to present Christopher Strachey's connection to the early draughts program."
+        },
+        "sourceId": "source-computer-pioneers-christopher-strachey",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+            "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+          },
+          "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
           "zh": "斯特雷奇跳棋程序显示画面",
