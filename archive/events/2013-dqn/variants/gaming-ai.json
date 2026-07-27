@@ -51,10 +51,9 @@
     }
   ],
   "assetIds": [
-    "asset-2013-dqn-breakout-paper-frame",
+    "asset-2013-dqn-replay-buffer",
     "asset-david-silver-commons-portrait",
     "asset-2013-dqn-volodymyr-mnih",
-    "asset-2013-dqn-replay-buffer",
     "asset-2013-dqn-q-control"
   ],
   "sourceIds": [

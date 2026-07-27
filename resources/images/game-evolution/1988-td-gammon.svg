@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
-  <title id="title">TD-Gammon value update animation / TD-Gammon 价值更新动画</title>
-  <desc id="desc">Backgammon checkers move while a temporal-difference value trace updates.</desc>
+  <title id="title">Temporal-difference learning with later TD-Gammon application / 时序差分学习与后来的 TD-Gammon 应用</title>
+  <desc id="desc">The 1988 temporal-difference method is illustrated through its later application in TD-Gammon.</desc>
   <style>
     text { font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif; letter-spacing: 0; }
     .brand { fill: #f5efe5; font-size: 28px; font-weight: 700; }
@@ -18,9 +18,10 @@
   </style>
   <rect width="960" height="600" fill="#090a0c"/>
   <rect x="24" y="24" width="912" height="552" rx="6" class="frame"/>
-  <text x="58" y="72" class="brand">TD-GAMMON</text>
-  <text x="58" y="98" class="cue">TEMPORAL DIFFERENCE · 1988</text>
+  <text x="58" y="72" class="brand">TD LEARNING</text>
+  <text x="58" y="98" class="cue">FOUNDATIONAL METHOD · 1988</text>
   <rect x="58" y="116" width="844" height="1" fill="#34383f"/>
+  <text x="92" y="140" class="cue">LATER APPLICATION · TD-GAMMON</text>
   <rect x="92" y="150" width="720" height="390" rx="8" fill="#3c2922" stroke="#caa875" stroke-width="4"/>
   <path d="M110 170 L162 170 L136 345 Z" fill="#d2b17d" opacity=".92"/><path d="M110 520 L162 520 L136 345 Z" fill="#d2b17d" opacity=".92"/><path d="M167 170 L219 170 L193 345 Z" fill="#854b3e" opacity=".92"/><path d="M167 520 L219 520 L193 345 Z" fill="#854b3e" opacity=".92"/><path d="M224 170 L276 170 L250 345 Z" fill="#d2b17d" opacity=".92"/><path d="M224 520 L276 520 L250 345 Z" fill="#d2b17d" opacity=".92"/><path d="M281 170 L333 170 L307 345 Z" fill="#854b3e" opacity=".92"/><path d="M281 520 L333 520 L307 345 Z" fill="#854b3e" opacity=".92"/><path d="M338 170 L390 170 L364 345 Z" fill="#d2b17d" opacity=".92"/><path d="M338 520 L390 520 L364 345 Z" fill="#d2b17d" opacity=".92"/><path d="M395 170 L447 170 L421 345 Z" fill="#854b3e" opacity=".92"/><path d="M395 520 L447 520 L421 345 Z" fill="#854b3e" opacity=".92"/><path d="M452 170 L504 170 L478 345 Z" fill="#d2b17d" opacity=".92"/><path d="M452 520 L504 520 L478 345 Z" fill="#d2b17d" opacity=".92"/><path d="M509 170 L561 170 L535 345 Z" fill="#854b3e" opacity=".92"/><path d="M509 520 L561 520 L535 345 Z" fill="#854b3e" opacity=".92"/><path d="M566 170 L618 170 L592 345 Z" fill="#d2b17d" opacity=".92"/><path d="M566 520 L618 520 L592 345 Z" fill="#d2b17d" opacity=".92"/><path d="M623 170 L675 170 L649 345 Z" fill="#854b3e" opacity=".92"/><path d="M623 520 L675 520 L649 345 Z" fill="#854b3e" opacity=".92"/><path d="M680 170 L732 170 L706 345 Z" fill="#d2b17d" opacity=".92"/><path d="M680 520 L732 520 L706 345 Z" fill="#d2b17d" opacity=".92"/><path d="M737 170 L789 170 L763 345 Z" fill="#854b3e" opacity=".92"/><path d="M737 520 L789 520 L763 345 Z" fill="#854b3e" opacity=".92"/>
   <g fill="#f2e6cf" stroke="#8c765c" stroke-width="3">

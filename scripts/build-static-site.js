@@ -15,6 +15,13 @@ const RETIRED_RESOURCE_METADATA = new Set([
     'resources/videos/urls.txt'
 ]);
 const OMITTED_STATIC_FILES = new Set(['public/fonts/oppo-sans/OPPO Sans 4.0.ttf']);
+const RIGHTS_REVIEW_STATIC_FILES = new Set([
+    'resources/images/external/1997-logistello/logistello-game-1-positions.png',
+    'resources/images/external/2013-dqn/dqn-breakout-paper-frame.png',
+    'resources/images/external/2017-alphazero/alphazero-three-games-official.jpg',
+    'resources/images/external/2019-muzero/muzero-games-official.jpg',
+    'resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png'
+]);
 const FORBIDDEN_TOP_LEVEL = new Set([
     'archive',
     'manage',
@@ -36,6 +43,7 @@ function copyRequired(source, destination, options = {}) {
 function includeStaticFile(source) {
     const relativePath = path.relative(ROOT, source).split(path.sep).join('/');
     if (OMITTED_STATIC_FILES.has(relativePath)) return false;
+    if (RIGHTS_REVIEW_STATIC_FILES.has(relativePath)) return false;
     if (RETIRED_RESOURCE_METADATA.has(relativePath)) return false;
     if (/^resources\/videos\/[^/]+\.json$/.test(relativePath)) return false;
     return true;
@@ -75,6 +83,13 @@ function validateBundle() {
     for (const relativePath of RETIRED_RESOURCE_METADATA) {
         assert.equal(fs.existsSync(path.join(OUTPUT, relativePath)), false, `${relativePath} must not be published`);
     }
+    for (const relativePath of RIGHTS_REVIEW_STATIC_FILES) {
+        assert.equal(
+            fs.existsSync(path.join(OUTPUT, relativePath)),
+            false,
+            `${relativePath} requires a rights review and must not be published`
+        );
+    }
     assert.equal(
         fs.readdirSync(path.join(OUTPUT, 'resources', 'videos')).some((file) => file.endsWith('.json')),
         false,
@@ -96,6 +111,14 @@ function validateBundle() {
             (milestone) => milestone.archiveEventId && milestone.archiveVariantId && milestone.sourceKind === 'archive'
         )
     );
+    const serializedRuntime = JSON.stringify(runtime);
+    for (const relativePath of RIGHTS_REVIEW_STATIC_FILES) {
+        assert.equal(
+            serializedRuntime.includes(relativePath),
+            false,
+            `${relativePath} must not be referenced by runtime data`
+        );
+    }
 }
 
 fs.rmSync(OUTPUT, { recursive: true, force: true });

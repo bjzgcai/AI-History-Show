@@ -325,7 +325,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?candidates\.filter\(\(url\) => url !== sideImageUrl\)/,
+    /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should exclude the image mounted in the right-side media panel'
 );
 assert.doesNotMatch(
