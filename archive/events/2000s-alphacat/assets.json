@@ -1,5 +1,39 @@
 [
   {
+    "id": "asset-2000s-alphacat-i-chen-wu-portrait",
+    "type": "image",
+    "path": "resources/images/external/2000s-alphacat/i-chen-wu-portrait.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "吴毅成肖像",
+      "en": "I-Chen Wu portrait"
+    },
+    "subcaption": {
+      "zh": "《面向计算机中国象棋的比较训练》通讯作者",
+      "en": "Corresponding author of Comparison Training for Computer Chinese Chess"
+    },
+    "sourceId": "source-i-chen-wu-user-provided-portrait",
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示中国象棋比较训练论文通讯作者吴毅成。",
+      "en": "Used to present I-Chen Wu, corresponding author of the xiangqi comparison-training paper."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true,
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    }
+  },
+  {
     "id": "asset-2000s-alphacat-xiangqi-search",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg",

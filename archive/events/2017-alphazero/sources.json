@@ -78,5 +78,25 @@
       "en": "The Wikimedia Commons file page identifies CC BY-SA 2.0."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-julian-schrittwieser-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "朱利安·施里特维泽肖像（用户提供）",
+      "en": "Julian Schrittwieser portrait (user provided)"
+    },
+    "url": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 AlphaZero 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the AlphaZero event."
+    },
+    "purpose": "image-provenance"
   }
 ]

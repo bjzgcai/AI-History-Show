@@ -80,6 +80,66 @@
     "purpose": "historical-context"
   },
   {
+    "id": "source-tie-yan-liu-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "刘铁岩肖像（用户提供）",
+      "en": "Tie-Yan Liu portrait (user provided)"
+    },
+    "url": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 Suphx 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the Suphx event."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-hsiao-wuen-hon-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "洪小文肖像（用户提供）",
+      "en": "Hsiao-Wuen Hon portrait (user provided)"
+    },
+    "url": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 Suphx 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the Suphx event."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-tao-qin-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "秦涛肖像（用户提供）",
+      "en": "Tao Qin portrait (user provided)"
+    },
+    "url": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 Suphx 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the Suphx event."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-guoqing-liu-microsoft-profile",
     "type": "profile",
     "label": {

@@ -11,8 +11,8 @@
         "en": "Game AI as a Testbed for Search, Learning and Planning"
     },
     "displayDescription": {
-        "zh": "<p>微软亚洲研究院团队开发的 Suphx 把深度强化学习带入日本麻将：四名玩家只能看到部分牌面，还要面对随机摸牌、复杂计分和跨多局的风险权衡。李俊杰、刘国庆、赵立、秦涛、刘铁岩等作者把监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配组合成一套完整训练流程。</p><p>论文报告 Suphx 在天凤平台的稳定段位超过 99.99% 的注册玩家，并在与顶尖人类牌手的比较中表现出更稳定的长期收益。它把游戏 AI 的试验场从完全信息棋盘推进到多人、随机、隐藏信息环境，说明强策略不仅要选择高收益动作，也要学习何时防守、何时承担不确定性。</p>",
-        "en": "<p>Microsoft Research Asia's Suphx brought deep reinforcement learning to Japanese mahjong, where four players see only partial information while coping with stochastic draws, complex scoring, and risk tradeoffs that unfold across many hands. Authors including Junjie Li, Guoqing Liu, Li Zhao, Tao Qin, and Tie-Yan Liu combined supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation into a complete training pipeline.</p><p>The paper reported that Suphx achieved a stable rank above 99.99% of officially ranked Tenhou players and produced more consistent long-term results than most top human players. It moved game AI beyond perfect-information boards into multiplayer, stochastic, hidden-information settings where a strong policy must learn not only which action has value, but when to defend and when to accept uncertainty.</p>"
+        "zh": "<p>微软亚洲研究院团队开发的 Suphx 把深度强化学习带入日本麻将：四名玩家只能看到部分牌面，还要面对随机摸牌、复杂计分和跨多局的风险权衡。李俊杰、秦涛、刘铁岩、洪小文等作者与项目负责人把监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配组合成一套完整训练流程。</p><p>论文报告 Suphx 在天凤平台的稳定段位超过 99.99% 的注册玩家，并在与顶尖人类牌手的比较中表现出更稳定的长期收益。它把游戏 AI 的试验场从完全信息棋盘推进到多人、随机、隐藏信息环境，说明强策略不仅要选择高收益动作，也要学习何时防守、何时承担不确定性。</p>",
+        "en": "<p>Microsoft Research Asia's Suphx brought deep reinforcement learning to Japanese mahjong, where four players see only partial information while coping with stochastic draws, complex scoring, and risk tradeoffs that unfold across many hands. Authors and project leaders including Junjie Li, Tao Qin, Tie-Yan Liu, and Hsiao-Wuen Hon combined supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation into a complete training pipeline.</p><p>The paper reported that Suphx achieved a stable rank above 99.99% of officially ranked Tenhou players and produced more consistent long-term results than most top human players. It moved game AI beyond perfect-information boards into multiplayer, stochastic, hidden-information settings where a strong policy must learn not only which action has value, but when to defend and when to accept uncertainty.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "configuredPaper",
@@ -48,8 +48,9 @@
         }
     ],
     "assetIds": [
-        "asset-2019-suphx-guoqing-liu",
-        "asset-2019-suphx-li-zhao",
+        "asset-2019-suphx-tie-yan-liu",
+        "asset-2019-suphx-hsiao-wuen-hon",
+        "asset-2019-suphx-tao-qin",
         "asset-2019-suphx-project-logo",
         "asset-2019-suphx-mahjong-policy"
     ],
@@ -57,9 +58,7 @@
         "source-suphx-arxiv-paper",
         "source-arxiv-doi-page",
         "source-building-a-computer-mahjong-player-via-deep-cnns",
-        "source-microsoft-suphx-project",
-        "source-guoqing-liu-microsoft-profile",
-        "source-li-zhao-microsoft-profile"
+        "source-microsoft-suphx-project"
     ],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2019-suphx-quiz-1",
@@ -115,27 +114,53 @@
     "figures": [
         {
             "name": {
-                "en": "Guoqing Liu",
-                "zh": "刘国庆"
+                "en": "Tie-Yan Liu",
+                "zh": "刘铁岩"
             },
             "role": {
-                "en": "Suphx coauthor and Microsoft Research senior researcher",
-                "zh": "Suphx 论文共同作者、微软研究院高级研究员"
+                "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia",
+                "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员"
             },
-            "avatar": "resources/images/external/2019-suphx/guoqing-liu-portrait.jpg",
+            "avatar": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
             "avatarStyle": "",
             "figureType": "person"
         },
         {
             "name": {
-                "en": "Li Zhao",
-                "zh": "赵立"
+                "en": "Hsiao-Wuen Hon",
+                "zh": "洪小文"
             },
             "role": {
-                "en": "Suphx coauthor and Microsoft Research principal researcher",
-                "zh": "Suphx 论文共同作者、微软研究院首席研究员"
+                "en": "Microsoft global senior vice president and executive leader of the Suphx project",
+                "zh": "微软全球资深副总裁、Suphx 项目最高负责人"
             },
-            "avatar": "resources/images/external/2019-suphx/li-zhao-portrait.jpg",
+            "avatar": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Junjie Li",
+                "zh": "李俊杰"
+            },
+            "role": {
+                "en": "First author of the Suphx paper",
+                "zh": "Suphx 论文第一作者"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Tao Qin",
+                "zh": "秦涛"
+            },
+            "role": {
+                "en": "Key author of the Suphx paper",
+                "zh": "Suphx 论文重要作者"
+            },
+            "avatar": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
             "avatarStyle": "",
             "figureType": "person"
         }
@@ -154,7 +179,7 @@
         },
         "workAuthors": {
             "en": "Junjie Li et al., arXiv, 2020",
-            "zh": "Junjie Li 等，arXiv，2020"
+            "zh": "李俊杰等，arXiv，2020"
         },
         "sourceLabel": "",
         "sourceUrl": "https://arxiv.org/abs/2003.13590"
@@ -165,7 +190,7 @@
     },
     "quoteAttribution": {
         "en": "<em>Suphx: Mastering Mahjong with Deep Reinforcement Learning</em>, Junjie Li et al., arXiv, 2020",
-        "zh": "《Suphx：用深度强化学习掌握麻将》, Junjie Li 等，arXiv，2020"
+        "zh": "《Suphx：用深度强化学习掌握麻将》, 李俊杰等，arXiv，2020"
     },
     "quoteLabel": {
         "en": "Paper cue",
@@ -351,7 +376,7 @@
             },
             "authors": {
                 "en": "Junjie Li, Sotetsu Koyamada, Qiwei Ye, Guoqing Liu, Chao Wang, Ruihan Yang, Li Zhao, Tao Qin, Tie-Yan Liu, Hsiao-Wuen Hon",
-                "zh": "Junjie Li、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
+                "zh": "李俊杰、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
             },
             "journal": {
                 "en": "arXiv",
