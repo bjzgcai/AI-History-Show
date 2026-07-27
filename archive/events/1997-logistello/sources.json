@@ -47,8 +47,8 @@
       "en": "Paper"
     },
     "title": {
-      "zh": "《统计特征组合》",
-      "en": "Statistical Feature Combination"
+      "zh": "《用于棋局评估的统计特征组合》",
+      "en": "Statistical Feature Combination for the Evaluation of Game Positions"
     },
     "url": "https://arxiv.org/abs/cs/9512106",
     "language": "en",

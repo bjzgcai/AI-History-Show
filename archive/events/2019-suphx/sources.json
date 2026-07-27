@@ -7,8 +7,8 @@
       "en": "Paper page"
     },
     "title": {
-      "zh": "Suphx arXiv 论文",
-      "en": "Suphx arXiv paper"
+      "zh": "《Suphx：用深度强化学习掌握麻将》",
+      "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
     },
     "url": "https://arxiv.org/abs/2003.13590",
     "language": "en",
@@ -27,8 +27,8 @@
       "en": "DOI page"
     },
     "title": {
-      "zh": "arXiv DOI 页面",
-      "en": "arXiv DOI page"
+      "zh": "《Suphx：用深度强化学习掌握麻将》",
+      "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
     },
     "url": "https://doi.org/10.48550/arXiv.2003.13590",
     "language": "en",

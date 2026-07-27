@@ -350,6 +350,16 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /function getAchievementSources\(rawMilestone\)[\s\S]*?type: uiText\('Paper', '论文'\)[\s\S]*?const seenTitles = new Set\(\)[\s\S]*?titleKeys\.some\(\(key\) => seenTitles\.has\(key\)\)/,
+    'achievement sources should use compact paper types and deduplicate alternate links by normalized title'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /uiText\(`Paper · \$\{journal\}`, `论文 · \$\{journal\}`\)/,
+    'achievement source type labels should not include long journal or submission details'
+);
+assert.match(
+    indexHtml,
     /function getUiPrimaryImage\(vm\)[\s\S]*?getUiImageCandidates\(vm\)\[0\]/,
     'map and event-list thumbnails should keep using the complete image candidates'
 );

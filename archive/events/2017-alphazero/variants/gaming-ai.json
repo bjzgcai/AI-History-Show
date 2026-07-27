@@ -196,7 +196,7 @@
         },
         "workAuthors": {
             "en": "David Silver et al., Science, 2018",
-            "zh": "David Silver 等，Science，2018"
+            "zh": "大卫·席尔瓦等，《科学》，2018"
         },
         "sourceLabel": "",
         "sourceUrl": "https://www.science.org/doi/10.1126/science.aar6404"
@@ -207,7 +207,7 @@
     },
     "quoteAttribution": {
         "en": "<em>A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play</em>, David Silver et al., Science, 2018",
-        "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》, David Silver 等，Science，2018"
+        "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》，大卫·席尔瓦等，《科学》，2018"
     },
     "quoteLabel": {
         "en": "Paper cue",
@@ -426,7 +426,7 @@
             },
             "authors": {
                 "en": "David Silver et al.",
-                "zh": "David Silver 等"
+                "zh": "大卫·席尔瓦等"
             },
             "journal": {
                 "en": "arXiv",
@@ -442,7 +442,7 @@
             },
             "authors": {
                 "en": "David Silver et al.",
-                "zh": "David Silver 等"
+                "zh": "大卫·席尔瓦等"
             },
             "journal": {
                 "en": "Science",

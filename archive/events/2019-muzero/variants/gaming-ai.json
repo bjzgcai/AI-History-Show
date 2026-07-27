@@ -11,7 +11,7 @@
         "en": "Game AI as a Testbed for Search, Learning and Planning"
     },
     "displayDescription": {
-        "zh": "<p>朱利安·施里特维泽、戴维·席尔瓦等 DeepMind 研究者提出 MuZero，让智能体在没有预先获得环境动力学或完整规则模拟器的情况下学习规划。系统把观察编码成隐藏状态，再分别学习状态表示、动作后的动态变化，以及搜索真正需要的奖励、策略和价值预测，并用蒙特卡洛树搜索选择行动。</p><p>MuZero 在围棋、国际象棋和将棋中达到与 AlphaZero 相当的超人水平，同时在 57 款 Atari 游戏上取得当时领先表现。它的重要性在于把“学习世界模型”和“用搜索规划”连接起来：模型不必重建所有像素细节，只需保留对决策有用的结构。</p>",
+        "zh": "<p>朱利安·施里特维泽、大卫·席尔瓦等 DeepMind 研究者提出 MuZero，让智能体在没有预先获得环境动力学或完整规则模拟器的情况下学习规划。系统把观察编码成隐藏状态，再分别学习状态表示、动作后的动态变化，以及搜索真正需要的奖励、策略和价值预测，并用蒙特卡洛树搜索选择行动。</p><p>MuZero 在围棋、国际象棋和将棋中达到与 AlphaZero 相当的超人水平，同时在 57 款 Atari 游戏上取得当时领先表现。它的重要性在于把“学习世界模型”和“用搜索规划”连接起来：模型不必重建所有像素细节，只需保留对决策有用的结构。</p>",
         "en": "<p>DeepMind researchers including Julian Schrittwieser and David Silver introduced MuZero so an agent could learn to plan without being given the environment dynamics or a complete rule simulator in advance. The system encoded observations into a hidden state, learned representation and transition functions, and predicted the reward, policy, and value quantities needed by Monte Carlo tree search.</p><p>MuZero matched AlphaZero's superhuman performance in Go, chess, and shogi while achieving then-leading results across 57 Atari games. Its significance is the connection between learning a world model and planning with search: the model does not need to reconstruct every pixel-level detail, only the structure that matters for decisions.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
