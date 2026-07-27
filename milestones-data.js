@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 10:16
+// 生成时间: 2026-07-27 10:44
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -15388,8 +15388,8 @@ const milestones = [
           "en": "Chief architect; custom VLSI and hardware design",
           "zh": "首席架构师；定制 VLSI 与硬件设计"
         },
-        "avatar": "",
-        "avatarStyle": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+        "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
         "figureType": "person"
       },
       {
@@ -15434,37 +15434,46 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1997-deep-blue-murray-campbell",
+        "asset-1997-deep-blue-feng-hsiung-hsu",
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg": {
         "caption": {
-          "zh": "默里·坎贝尔肖像",
-          "en": "Murray Campbell portrait"
+          "zh": "许峰雄肖像",
+          "en": "Feng-hsiung Hsu portrait"
         },
         "subcaption": {
-          "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
-          "en": "Portrait from IBM Research profile."
+          "zh": "Deep Blue 首席架构师与硬件设计者。",
+          "en": "Deep Blue chief architect and hardware designer."
         },
+        "sourceName": {
+          "zh": "IBM 档案馆 / 计算机历史博物馆",
+          "en": "IBM Archives / Computer History Museum"
+        },
+        "sourceUrl": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
         "license": {
-          "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
-          "en": "IBM Research profile image; reuse rights not stated."
+          "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+          "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
         },
-        "sourceId": "source-murray-campbell-ibm-research",
+        "usage": {
+          "zh": "作为许峰雄的人物肖像及头像来源。",
+          "en": "Used as the portrait and avatar source for Feng-hsiung Hsu."
+        },
+        "sourceId": "source-feng-hsiung-hsu-chm-portrait",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "user-provided",
           "license": {
-            "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
-            "en": "IBM Research profile image; reuse rights not stated."
+            "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+            "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
           }
         },
         "role": "hero-image",
@@ -15569,6 +15578,21 @@ const milestones = [
           "sourceType": "paper"
         },
         {
+          "id": "source-feng-hsiung-hsu-chm-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "许峰雄肖像，计算机历史博物馆",
+            "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-murray-campbell-ibm-research",
           "type": {
             "zh": "人物资料",
@@ -15616,6 +15640,7 @@ const milestones = [
       ],
       "sourceIds": [
         "source-deep-blue-system-paper",
+        "source-feng-hsiung-hsu-chm-portrait",
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue"
@@ -63723,8 +63748,8 @@ const milestones = [
           "en": "Chief architect; custom VLSI and hardware design",
           "zh": "首席架构师；定制 VLSI 与硬件设计"
         },
-        "avatar": "",
-        "avatarStyle": "",
+        "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+        "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
         "figureType": "person"
       },
       {
@@ -63770,6 +63795,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif",
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
@@ -63777,6 +63803,7 @@ const milestones = [
       "videos": [],
       "assetIds": [
         "asset-1997-deep-blue-game-6-animation",
+        "asset-1997-deep-blue-feng-hsiung-hsu",
         "asset-1997-deep-blue-murray-campbell",
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board"
@@ -63815,6 +63842,39 @@ const milestones = [
         },
         "role": "game-record-animation",
         "type": "gif"
+      },
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg": {
+        "caption": {
+          "zh": "许峰雄肖像",
+          "en": "Feng-hsiung Hsu portrait"
+        },
+        "subcaption": {
+          "zh": "Deep Blue 首席架构师与硬件设计者。",
+          "en": "Deep Blue chief architect and hardware designer."
+        },
+        "sourceName": {
+          "zh": "IBM 档案馆 / 计算机历史博物馆",
+          "en": "IBM Archives / Computer History Museum"
+        },
+        "sourceUrl": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+        "license": {
+          "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+          "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
+        },
+        "usage": {
+          "zh": "作为许峰雄的人物肖像及头像来源。",
+          "en": "Used as the portrait and avatar source for Feng-hsiung Hsu."
+        },
+        "sourceId": "source-feng-hsiung-hsu-chm-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+            "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
       },
       "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
         "caption": {
@@ -63924,6 +63984,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-feng-hsiung-hsu-chm-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "许峰雄肖像，计算机历史博物馆",
+            "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-murray-campbell-ibm-research",
           "type": {
             "zh": "人物资料",
@@ -63985,6 +64060,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-feng-hsiung-hsu-chm-portrait",
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue",

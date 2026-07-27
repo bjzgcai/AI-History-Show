@@ -42,6 +42,8 @@
         "zh": "首席架构师；设计定制 VLSI 芯片与硬件架构",
         "en": "Chief architect; custom VLSI and hardware design"
       },
+      "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+      "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
       "organizationIds": []
     },
     {

@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-feng-hsiung-hsu-chm-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "许峰雄肖像，计算机历史博物馆",
+      "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
+    },
+    "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "CHM 页面将照片标注为 1997 年许峰雄肖像，来源为 IBM 档案馆。页面未声明开放再利用许可；依用户明确指示用于本项目。",
+      "en": "The CHM page identifies the image as a 1997 portrait of Feng-Hsiung Hsu and credits IBM Archives. No open reuse license is stated; the image is included at the user's explicit direction."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-deep-blue-system-paper",
     "type": "paper",
     "label": {

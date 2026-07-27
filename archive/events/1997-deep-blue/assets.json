@@ -1,5 +1,42 @@
 [
   {
+    "id": "asset-1997-deep-blue-feng-hsiung-hsu",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "许峰雄肖像",
+      "en": "Feng-hsiung Hsu portrait"
+    },
+    "subcaption": {
+      "zh": "Deep Blue 首席架构师与硬件设计者。",
+      "en": "Deep Blue chief architect and hardware designer."
+    },
+    "sourceId": "source-feng-hsiung-hsu-chm-portrait",
+    "sourceName": {
+      "zh": "IBM 档案馆 / 计算机历史博物馆",
+      "en": "IBM Archives / Computer History Museum"
+    },
+    "sourceUrl": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+    "rights": {
+      "status": "user-directed-use",
+      "license": {
+        "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+        "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为许峰雄的人物肖像及头像来源。",
+      "en": "Used as the portrait and avatar source for Feng-hsiung Hsu."
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai",
+      "figure-avatar:feng-hsiung-hsu"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1997-deep-blue-murray-campbell",
     "type": "image",
     "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
