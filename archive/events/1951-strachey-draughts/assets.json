@@ -1,5 +1,42 @@
 [
   {
+    "id": "asset-1951-strachey-draughts-christopher-strachey-portrait",
+    "type": "image",
+    "path": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "克里斯托弗·斯特雷奇肖像",
+      "en": "Christopher Strachey portrait"
+    },
+    "subcaption": {
+      "zh": "早期跳棋程序开发者",
+      "en": "Developer of the early draughts program"
+    },
+    "sourceId": "source-computer-pioneers-christopher-strachey",
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+        "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+      },
+      "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
+    },
+    "displayUsage": {
+      "zh": "用于展示克里斯托弗·斯特雷奇与早期跳棋程序的关系。",
+      "en": "Used to present Christopher Strachey's connection to the early draughts program."
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ],
+    "editable": true,
+    "sourceName": {
+      "zh": "IEEE Computer Society Computer Pioneers 档案",
+      "en": "IEEE Computer Society Computer Pioneers archive"
+    },
+    "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
+  },
+  {
     "id": "asset-1951-strachey-draughts-board-search",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
