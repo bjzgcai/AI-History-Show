@@ -108,5 +108,40 @@
       "variant:bench-council-ai100",
       "variant:gaming-ai"
     ]
+  },
+  {
+    "id": "asset-2013-dqn-breakout-paper-frame",
+    "type": "image",
+    "path": "resources/images/external/2013-dqn/dqn-breakout-paper-frame.png",
+    "role": "gameplay-image",
+    "caption": {
+      "zh": "DQN 论文中的 Breakout 游戏帧",
+      "en": "Breakout frame from the DQN paper"
+    },
+    "subcaption": {
+      "zh": "《Playing Atari with Deep Reinforcement Learning》图 1 使用的实际 Atari 游戏画面。",
+      "en": "Actual Atari gameplay image used in Figure 1 of Playing Atari with Deep Reinforcement Learning."
+    },
+    "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+    "sourceName": {
+      "zh": "arXiv 论文",
+      "en": "arXiv paper"
+    },
+    "sourceUrl": "https://ar5iv.labs.arxiv.org/html/1312.5602#S1.F1",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "来自论文图 1 的 Atari 游戏帧，用于研究史引用；公开再分发前需复核论文与游戏画面的权利。",
+        "en": "Atari gameplay frame from Figure 1 of the paper, used as a research-history reference; review paper and game-image rights before redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于直观展示 DQN 接收的像素游戏状态。",
+      "en": "Used to show the pixel-based game state received by DQN."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

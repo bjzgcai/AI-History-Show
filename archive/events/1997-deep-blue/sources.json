@@ -98,5 +98,25 @@
       "en": "Nationaal Archief photograph provided by Wikimedia Commons under CC0."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-deep-blue-game-6-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局动画",
+      "en": "Deep Blue versus Kasparov, 1997 Game 6 animation"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "维基共享资源文件页标注 CC0，制作者为 Morn。",
+      "en": "The Wikimedia Commons file page identifies the work as CC0 and credits Morn."
+    },
+    "purpose": "image-provenance"
   }
 ]

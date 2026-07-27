@@ -40,48 +40,11 @@
         "en": "Open Science record",
         "zh": "打开 《科学》 记录"
       }
-    },
-    {
-      "type": "gameEvolutionVideo",
-      "site": {
-        "en": "Game evolution clip",
-        "zh": "棋局演化短片"
-      },
-      "title": {
-        "en": "Chinook game evolution",
-        "zh": "Chinook 棋局演化"
-      },
-      "description": {
-        "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-        "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-      },
-      "url": "resources/videos/game-evolution/sample-go-game.gif",
-      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-      "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-      "sourceSgf": "examples/sgf/sample-go-game.sgf",
-      "generator": "scripts/sgf_to_video.py",
-      "duration": {
-        "en": "about 1 min",
-        "zh": "约 1 分钟"
-      },
-      "fps": "30",
-      "license": {
-        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-      },
-      "usage": {
-        "en": "Playable game-state evolution module",
-        "zh": "可播放的棋局状态演化模块"
-      },
-      "action": {
-        "en": "Play evolution clip",
-        "zh": "播放演化短片"
-      }
     }
   ],
   "assetIds": [
-    "asset-1994-chinook-jonathan-schaeffer-external",
     "asset-1994-chinook-homepage",
+    "asset-1994-chinook-jonathan-schaeffer-external",
     "asset-1994-chinook-endgame-database",
     "asset-1994-chinook-perfect-play"
   ],
@@ -302,43 +265,6 @@
         "action": {
           "en": "Open Science record",
           "zh": "打开 《科学》 记录"
-        }
-      },
-      {
-        "type": "gameEvolutionVideo",
-        "site": {
-          "en": "Game evolution clip",
-          "zh": "棋局演化短片"
-        },
-        "title": {
-          "en": "Chinook game evolution",
-          "zh": "Chinook 棋局演化"
-        },
-        "description": {
-          "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-          "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-        },
-        "url": "resources/videos/game-evolution/sample-go-game.gif",
-        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-        "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-        "sourceSgf": "examples/sgf/sample-go-game.sgf",
-        "generator": "scripts/sgf_to_video.py",
-        "duration": {
-          "en": "about 1 min",
-          "zh": "约 1 分钟"
-        },
-        "fps": "30",
-        "license": {
-          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-        },
-        "usage": {
-          "en": "Playable game-state evolution module",
-          "zh": "可播放的棋局状态演化模块"
-        },
-        "action": {
-          "en": "Play evolution clip",
-          "zh": "播放演化短片"
         }
       }
     ]

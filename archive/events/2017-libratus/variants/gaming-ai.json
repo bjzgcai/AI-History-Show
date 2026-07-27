@@ -45,43 +45,6 @@
                 "en": "Source card for the gaming AI branch",
                 "zh": "AI 棋牌分支的资料卡片"
             }
-        },
-        {
-            "type": "gameEvolutionVideo",
-            "site": {
-                "en": "Game evolution clip",
-                "zh": "棋局演化短片"
-            },
-            "title": {
-                "en": "Libratus game evolution",
-                "zh": "Libratus 棋局演化"
-            },
-            "description": {
-                "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
-                "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
-            },
-            "url": "resources/videos/game-evolution/sample-go-game.gif",
-            "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-            "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
-            "sourceSgf": "examples/sgf/sample-go-game.sgf",
-            "generator": "scripts/sgf_to_video.py",
-            "duration": {
-                "en": "about 1 min",
-                "zh": "约 1 分钟"
-            },
-            "fps": "30",
-            "license": {
-                "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-            },
-            "usage": {
-                "en": "Playable game-state evolution module",
-                "zh": "可播放的棋局状态演化模块"
-            },
-            "action": {
-                "en": "Play evolution clip",
-                "zh": "播放演化短片"
-            }
         }
     ],
     "assetIds": ["asset-noam-brown-official-portrait", "asset-tuomas-sandholm-commons-portrait", "asset-2017-libratus-cfr-solving"],
@@ -331,43 +294,6 @@
                 "usage": {
                     "en": "Source card for the gaming AI branch",
                     "zh": "AI 棋牌分支的资料卡片"
-                }
-            },
-            {
-                "type": "gameEvolutionVideo",
-                "site": {
-                    "en": "Game evolution clip",
-                    "zh": "棋局演化短片"
-                },
-                "title": {
-                    "en": "Libratus game evolution",
-                    "zh": "Libratus 棋局演化"
-                },
-                "description": {
-                    "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
-                    "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
-                },
-                "url": "resources/videos/game-evolution/sample-go-game.gif",
-                "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-                "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
-                "sourceSgf": "examples/sgf/sample-go-game.sgf",
-                "generator": "scripts/sgf_to_video.py",
-                "duration": {
-                    "en": "about 1 min",
-                    "zh": "约 1 分钟"
-                },
-                "fps": "30",
-                "license": {
-                    "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                    "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-                },
-                "usage": {
-                    "en": "Playable game-state evolution module",
-                    "zh": "可播放的棋局状态演化模块"
-                },
-                "action": {
-                    "en": "Play evolution clip",
-                    "zh": "播放演化短片"
                 }
             }
         ]

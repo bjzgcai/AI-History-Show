@@ -45,46 +45,10 @@
                 "en": "Source card for the gaming AI branch",
                 "zh": "AI 棋牌分支的资料卡片"
             }
-        },
-        {
-            "type": "gameEvolutionVideo",
-            "site": {
-                "en": "Game evolution clip",
-                "zh": "棋局演化短片"
-            },
-            "title": {
-                "en": "AlphaZero game evolution",
-                "zh": "AlphaZero 棋局演化"
-            },
-            "description": {
-                "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-                "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-            },
-            "url": "resources/videos/game-evolution/sample-go-game.gif",
-            "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-            "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-            "sourceSgf": "examples/sgf/sample-go-game.sgf",
-            "generator": "scripts/sgf_to_video.py",
-            "duration": {
-                "en": "about 1 min",
-                "zh": "约 1 分钟"
-            },
-            "fps": "30",
-            "license": {
-                "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-            },
-            "usage": {
-                "en": "Playable game-state evolution module",
-                "zh": "可播放的棋局状态演化模块"
-            },
-            "action": {
-                "en": "Play evolution clip",
-                "zh": "播放演化短片"
-            }
         }
     ],
     "assetIds": [
+        "asset-2017-alphazero-three-games-official",
         "asset-david-silver-commons-portrait",
         "asset-2017-alphazero-julian-schrittwieser",
         "asset-2017-alphazero-self-play-loop"
@@ -352,43 +316,6 @@
                 "usage": {
                     "en": "Source card for the gaming AI branch",
                     "zh": "AI 棋牌分支的资料卡片"
-                }
-            },
-            {
-                "type": "gameEvolutionVideo",
-                "site": {
-                    "en": "Game evolution clip",
-                    "zh": "棋局演化短片"
-                },
-                "title": {
-                    "en": "AlphaZero game evolution",
-                    "zh": "AlphaZero 棋局演化"
-                },
-                "description": {
-                    "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-                    "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-                },
-                "url": "resources/videos/game-evolution/sample-go-game.gif",
-                "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-                "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-                "sourceSgf": "examples/sgf/sample-go-game.sgf",
-                "generator": "scripts/sgf_to_video.py",
-                "duration": {
-                    "en": "about 1 min",
-                    "zh": "约 1 分钟"
-                },
-                "fps": "30",
-                "license": {
-                    "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                    "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-                },
-                "usage": {
-                    "en": "Playable game-state evolution module",
-                    "zh": "可播放的棋局状态演化模块"
-                },
-                "action": {
-                    "en": "Play evolution clip",
-                    "zh": "播放演化短片"
                 }
             }
         ]

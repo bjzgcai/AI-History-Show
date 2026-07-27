@@ -11458,6 +11458,14 @@
             return /(?:architecture|algorithm)-explainer/i.test(role) || /\/explainers\//i.test(value);
         }
 
+        function isGameplayMedia(vm, url) {
+            const value = String(url || '').trim();
+            if (!value) return false;
+            const meta = getConfiguredImageMetaEntry(vm, value) || {};
+            const role = String(meta.role || '').trim();
+            return /(?:game-(?:record|analysis|comparison)(?:-image|-animation)?|gameplay(?:-image)?)/i.test(role);
+        }
+
         function buildArchivePhotoMeta(vm, url) {
             const value = String(url || '').trim();
             if (!value) return { name: '', role: '' };
@@ -16307,6 +16315,10 @@
             if (overrideUrl && images.includes(overrideUrl)) return overrideUrl;
             const humanisticExplainer = findHumanisticExplainerImage(vm, images);
             if (humanisticExplainer) return humanisticExplainer;
+            if (isGamingMilestone(vm && vm.raw)) {
+                const gameplayImage = images.find((url) => isGameplayMedia(vm, url));
+                if (gameplayImage) return gameplayImage;
+            }
             const diagram = images.find((url) => isDiagramImage(url));
             if (diagram) return diagram;
             return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';

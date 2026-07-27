@@ -92,7 +92,7 @@
     "id": "asset-1951-strachey-draughts-program-external",
     "type": "image",
     "path": "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
-    "role": "source-card",
+    "role": "game-record-image",
     "caption": {
       "zh": "斯特雷奇跳棋程序显示画面",
       "en": "Strachey draughts program display"

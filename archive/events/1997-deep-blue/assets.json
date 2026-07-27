@@ -109,5 +109,40 @@
       "variant:bench-council-ai100"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-1997-deep-blue-game-6-animation",
+    "type": "gif",
+    "path": "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif",
+    "role": "game-record-animation",
+    "caption": {
+      "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局",
+      "en": "Deep Blue versus Kasparov, 1997 Game 6"
+    },
+    "subcaption": {
+      "zh": "逐手重放深蓝赢得重赛的决定局。",
+      "en": "Move-by-move replay of the decisive game in Deep Blue's rematch victory."
+    },
+    "sourceId": "source-deep-blue-game-6-commons",
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC0 公共领域贡献；制作者为 Morn。",
+        "en": "CC0 public-domain dedication; created by Morn."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 1997 年深蓝对卡斯帕罗夫第 6 局的实际走子过程。",
+      "en": "Used to show the actual move sequence of Deep Blue versus Kasparov, Game 6, in 1997."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

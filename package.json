@@ -10,6 +10,8 @@
         "start:demo": "node scripts/static-server.js --host 127.0.0.1 --port 8000",
         "generate": "node scripts/generate-archive-data.js",
         "generate:archive": "node scripts/generate-archive-data.js",
+        "generate:gaming-media": "node scripts/generate-gaming-media.mjs",
+        "generate:logistello-gif": "node scripts/generate-logistello-game-gif.mjs",
         "generate:event-pack": "node scripts/generate-event-markdown-pack.js",
         "generate:event-pack:images": "node scripts/generate-event-markdown-pack.js --download-remote",
         "build:static": "node scripts/build-static-site.js",

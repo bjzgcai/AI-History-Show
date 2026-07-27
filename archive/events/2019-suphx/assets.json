@@ -219,5 +219,40 @@
       "variant:gaming-ai"
     ],
     "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-safe-tile-paper-figure",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png",
+    "role": "game-analysis-image",
+    "caption": {
+      "zh": "Suphx 保留安全牌的实际牌局案例",
+      "en": "Suphx keeping a safe tile in an actual game"
+    },
+    "subcaption": {
+      "zh": "论文图 13 展示 Suphx 为平衡未来进攻与防守而保留安全牌。",
+      "en": "Figure 13 shows Suphx keeping a safe tile to balance future attack and defense."
+    },
+    "sourceId": "source-suphx-arxiv-paper",
+    "sourceName": {
+      "zh": "Suphx 论文",
+      "en": "Suphx paper"
+    },
+    "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2003.13590#S5.F13",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "来自 Suphx 论文图 13，用于论文案例引用；arXiv 页面未声明该图的独立再利用许可，对外发布前需复核授权。",
+        "en": "Figure 13 from the Suphx paper, used as a paper case-study reference; arXiv states no separate image reuse license, so rights must be reviewed before external publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 在真实牌局中的攻守权衡，不依赖已失效的中文报道页。",
+      "en": "Used to show Suphx's attack-defense tradeoff in a real game without relying on the unavailable Chinese news page."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]
