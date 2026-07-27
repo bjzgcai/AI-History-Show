@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 03:12
+// 生成时间: 2026-07-27 04:25
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -1641,7 +1641,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "戴维·席尔瓦等, 《自然》, 2016"
+        "zh": "大卫·席尔瓦等, 《自然》, 2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -1652,7 +1652,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等, 《自然》, 2016"
     }
   },
   {
@@ -13892,7 +13892,7 @@ const milestones = [
       {
         "name": {
           "en": "David Silver",
-          "zh": "戴维·席尔瓦"
+          "zh": "大卫·席尔瓦"
         },
         "role": {
           "en": "DeepMind reinforcement learning researcher",
@@ -61989,7 +61989,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "戴维·席尔瓦等, 《自然》, 2016"
+        "zh": "大卫·席尔瓦等, 《自然》, 2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -62000,7 +62000,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等, 《自然》, 2016"
     }
   },
   {
@@ -63277,8 +63277,8 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "《统计特征组合》",
-            "en": "Statistical Feature Combination"
+            "zh": "《用于棋局评估的统计特征组合》",
+            "en": "Statistical Feature Combination for the Evaluation of Game Positions"
           },
           "url": "https://arxiv.org/abs/cs/9512106",
           "purpose": "core-evidence",
@@ -64794,7 +64794,7 @@ const milestones = [
       {
         "name": {
           "en": "David Silver",
-          "zh": "戴维·席尔瓦"
+          "zh": "大卫·席尔瓦"
         },
         "role": {
           "en": "DeepMind reinforcement learning researcher",
@@ -65586,8 +65586,8 @@ const milestones = [
             "en": "Paper page"
           },
           "label": {
-            "zh": "Science 论文",
-            "en": "Science paper"
+            "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》",
+            "en": "A General Reinforcement Learning Algorithm That Masters Chess, Shogi, and Go Through Self-Play"
           },
           "url": "https://www.science.org/doi/10.1126/science.aar6404",
           "purpose": "alternate-access",
@@ -65601,8 +65601,8 @@ const milestones = [
             "en": "Preprint page"
           },
           "label": {
-            "zh": "arXiv 预印本",
-            "en": "arXiv preprint"
+            "zh": "《用通用强化学习算法通过自我博弈掌握国际象棋与将棋》",
+            "en": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"
           },
           "url": "https://arxiv.org/abs/1712.01815",
           "purpose": "alternate-access",
@@ -65889,7 +65889,7 @@ const milestones = [
         },
         "authors": {
           "en": "David Silver et al.",
-          "zh": "David Silver 等"
+          "zh": "大卫·席尔瓦等"
         },
         "journal": {
           "en": "arXiv",
@@ -65905,7 +65905,7 @@ const milestones = [
         },
         "authors": {
           "en": "David Silver et al.",
-          "zh": "David Silver 等"
+          "zh": "大卫·席尔瓦等"
         },
         "journal": {
           "en": "Science",
@@ -65929,7 +65929,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Science, 2018",
-        "zh": "David Silver 等，Science，2018"
+        "zh": "大卫·席尔瓦等，《科学》，2018"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.science.org/doi/10.1126/science.aar6404"
@@ -65940,7 +65940,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play</em>, David Silver et al., Science, 2018",
-      "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》, David Silver 等，Science，2018"
+      "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》，大卫·席尔瓦等，《科学》，2018"
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -67498,8 +67498,8 @@ const milestones = [
             "en": "Paper page"
           },
           "label": {
-            "zh": "Suphx arXiv 论文",
-            "en": "Suphx arXiv paper"
+            "zh": "《Suphx：用深度强化学习掌握麻将》",
+            "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
           },
           "url": "https://arxiv.org/abs/2003.13590",
           "purpose": "alternate-access",
@@ -67513,8 +67513,8 @@ const milestones = [
             "en": "DOI page"
           },
           "label": {
-            "zh": "arXiv DOI 页面",
-            "en": "arXiv DOI page"
+            "zh": "《Suphx：用深度强化学习掌握麻将》",
+            "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
           },
           "url": "https://doi.org/10.48550/arXiv.2003.13590",
           "purpose": "alternate-access",
@@ -67905,7 +67905,7 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>朱利安·施里特维泽、戴维·席尔瓦等 DeepMind 研究者提出 MuZero，让智能体在没有预先获得环境动力学或完整规则模拟器的情况下学习规划。系统把观察编码成隐藏状态，再分别学习状态表示、动作后的动态变化，以及搜索真正需要的奖励、策略和价值预测，并用蒙特卡洛树搜索选择行动。</p><p>MuZero 在围棋、国际象棋和将棋中达到与 AlphaZero 相当的超人水平，同时在 57 款 Atari 游戏上取得当时领先表现。它的重要性在于把“学习世界模型”和“用搜索规划”连接起来：模型不必重建所有像素细节，只需保留对决策有用的结构。</p>",
+      "zh": "<p>朱利安·施里特维泽、大卫·席尔瓦等 DeepMind 研究者提出 MuZero，让智能体在没有预先获得环境动力学或完整规则模拟器的情况下学习规划。系统把观察编码成隐藏状态，再分别学习状态表示、动作后的动态变化，以及搜索真正需要的奖励、策略和价值预测，并用蒙特卡洛树搜索选择行动。</p><p>MuZero 在围棋、国际象棋和将棋中达到与 AlphaZero 相当的超人水平，同时在 57 款 Atari 游戏上取得当时领先表现。它的重要性在于把“学习世界模型”和“用搜索规划”连接起来：模型不必重建所有像素细节，只需保留对决策有用的结构。</p>",
       "en": "<p>DeepMind researchers including Julian Schrittwieser and David Silver introduced MuZero so an agent could learn to plan without being given the environment dynamics or a complete rule simulator in advance. The system encoded observations into a hidden state, learned representation and transition functions, and predicted the reward, policy, and value quantities needed by Monte Carlo tree search.</p><p>MuZero matched AlphaZero's superhuman performance in Go, chess, and shogi while achieving then-leading results across 57 Atari games. Its significance is the connection between learning a world model and planning with search: the model does not need to reconstruct every pixel-level detail, only the structure that matters for decisions.</p>"
     },
     "figures": [
@@ -68095,8 +68095,8 @@ const milestones = [
             "en": "Paper page"
           },
           "label": {
-            "zh": "Nature 论文",
-            "en": "Nature paper"
+            "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》",
+            "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
           },
           "url": "https://www.nature.com/articles/s41586-020-03051-4",
           "purpose": "alternate-access",
@@ -68110,8 +68110,8 @@ const milestones = [
             "en": "Preprint page"
           },
           "label": {
-            "zh": "arXiv 预印本",
-            "en": "arXiv preprint"
+            "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》",
+            "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
           },
           "url": "https://arxiv.org/abs/1911.08265",
           "purpose": "alternate-access",

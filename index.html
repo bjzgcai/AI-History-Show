@@ -14576,13 +14576,8 @@
         function getAchievementSources(rawMilestone) {
             const papers = rawMilestone && Array.isArray(rawMilestone.papers)
                 ? rawMilestone.papers.map((paper) => {
-                    const rawJournal = paper && paper.journal;
-                    const journalFallback = rawJournal && typeof rawJournal === 'object'
-                        ? rawJournal.en || rawJournal.zh || ''
-                        : rawJournal;
-                    const journal = String(lx(rawJournal) || journalFallback || '').trim();
                     return {
-                        type: journal ? uiText(`Paper · ${journal}`, `论文 · ${journal}`) : uiText('Paper', '论文'),
+                        type: uiText('Paper', '论文'),
                         label: paper.title,
                         url: paper.url
                     };
@@ -14592,10 +14587,23 @@
                 ? rawMilestone.achievement.sources
                 : [];
             const seenUrls = new Set();
+            const seenTitles = new Set();
+            const normalizeTitle = (value) => String(value || '')
+                .normalize('NFKC')
+                .toLowerCase()
+                .replace(/[\s《》〈〉“”‘’"'`·:：,，.。!?！？()（）[\]【】{}\-–—_/\\]+/g, '');
+            const getTitleKeys = (label) => {
+                const values = label && typeof label === 'object'
+                    ? [label.zh, label.en]
+                    : [label];
+                return values.map(normalizeTitle).filter(Boolean);
+            };
             return [...papers, ...sources].filter((source) => {
                 if (!source || !source.url || !lx(source.label)) return false;
-                if (seenUrls.has(source.url)) return false;
+                const titleKeys = getTitleKeys(source.label);
+                if (seenUrls.has(source.url) || titleKeys.some((key) => seenTitles.has(key))) return false;
                 seenUrls.add(source.url);
+                titleKeys.forEach((key) => seenTitles.add(key));
                 return true;
             });
         }

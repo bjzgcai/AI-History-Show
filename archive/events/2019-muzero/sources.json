@@ -7,8 +7,8 @@
       "en": "Paper page"
     },
     "title": {
-      "zh": "Nature 论文",
-      "en": "Nature paper"
+      "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》",
+      "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
     },
     "url": "https://www.nature.com/articles/s41586-020-03051-4",
     "language": "en",
@@ -27,8 +27,8 @@
       "en": "Preprint page"
     },
     "title": {
-      "zh": "arXiv 预印本",
-      "en": "arXiv preprint"
+      "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》",
+      "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
     },
     "url": "https://arxiv.org/abs/1911.08265",
     "language": "en",

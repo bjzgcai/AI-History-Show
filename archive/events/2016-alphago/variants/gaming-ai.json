@@ -95,7 +95,7 @@
     },
     "workAuthors": {
       "en": "David Silver et al., Nature, 2016",
-      "zh": "戴维·席尔瓦等, 《自然》, 2016"
+      "zh": "大卫·席尔瓦等, 《自然》, 2016"
     },
     "sourceLabel": "",
     "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -106,7 +106,7 @@
   },
   "quoteAttribution": {
     "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-    "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+    "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等, 《自然》, 2016"
   },
   "achievement": {
     "area": {
