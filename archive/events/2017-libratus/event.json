@@ -11,8 +11,8 @@
     "en": "Game AI as a Testbed for Search, Learning and Planning"
   },
   "description": {
-    "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>",
-    "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day of play, proving that game AI could move beyond perfect-information boards.</p>"
+    "zh": "<p>2017 年，卡内基梅隆大学的 Libratus 在持续 20 天、约 12 万手的一对一无限注德州扑克比赛中战胜四位顶尖职业牌手。扑克中的暗牌、随机发牌、诈唬与连续下注让程序无法像国际象棋那样直接看到完整状态，也无法简单枚举全部行动历史。</p><p>诺姆·布朗和托马斯·桑德霍姆把系统分成三个相互配合的部分：赛前计算整体蓝图策略，对局时实时求解关键子局，赛后再自动发现并修补潜在弱点。Libratus 证明均衡推理、抽象和局部重求解能够扩展到超大规模不完全信息博弈，也把游戏 AI 的代表性场景从公开棋盘推进到隐藏信息与对手建模。</p>",
+    "en": "<p>In 2017, Carnegie Mellon University's Libratus defeated four elite professionals over a 20-day, roughly 120,000-hand heads-up no-limit Texas hold'em match. Private cards, random deals, bluffing, and continuous bet sizes meant the program could not observe the full state as it would in chess or simply enumerate every possible history.</p><p>Noam Brown and Tuomas Sandholm organized the system around three cooperating parts: an overall blueprint strategy computed before play, real-time solving of strategically important subgames, and an automated process that found and repaired potential weaknesses after each day. Libratus showed that equilibrium reasoning, abstraction, and local re-solving could scale to a vast imperfect-information game, moving landmark game AI beyond fully visible boards.</p>"
   },
   "location": {
     "regionId": "usa",

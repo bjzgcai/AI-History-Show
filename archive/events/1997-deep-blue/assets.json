@@ -5,23 +5,56 @@
     "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
     "role": "hero-image",
     "caption": {
-      "zh": "默里·坎贝尔 肖像",
+      "zh": "默里·坎贝尔肖像",
       "en": "Murray Campbell portrait"
     },
     "subcaption": {
-      "zh": "来自 IBM 研究院 人物资料页的人物图。",
+      "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
       "en": "Portrait from IBM Research profile."
     },
     "sourceId": "source-murray-campbell-ibm-research",
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "IBM 研究院 profile image; reuse rights not stated.",
+        "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
         "en": "IBM Research profile image; reuse rights not stated."
       }
     },
     "usage": [
-      "variant:bench-council-ai100"
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-deep-blue-garry-kasparov",
+    "type": "image",
+    "path": "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "加里·卡斯帕罗夫肖像",
+      "en": "Garry Kasparov portrait"
+    },
+    "subcaption": {
+      "zh": "1997 年 Deep Blue 人机对抗中的卫冕世界冠军。",
+      "en": "Reigning world champion in the 1997 Deep Blue match."
+    },
+    "sourceId": "source-garry-kasparov-commons-portrait",
+    "sourceName": {
+      "zh": "荷兰国家档案馆 / 维基共享资源",
+      "en": "Nationaal Archief / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
+    "rights": {
+      "status": "cleared",
+      "license": {
+        "zh": "CC0；来源文件页标记为可自由使用。",
+        "en": "CC0; the source file page marks the image for unrestricted reuse."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
     ],
     "editable": true
   },
@@ -42,7 +75,7 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
@@ -68,7 +101,7 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },

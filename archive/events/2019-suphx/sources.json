@@ -58,5 +58,65 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "background"
+  },
+  {
+    "id": "source-microsoft-suphx-project",
+    "type": "official-page",
+    "label": {
+      "zh": "机构页面",
+      "en": "Institution page"
+    },
+    "title": {
+      "zh": "Suphx：微软研究院麻将 AI 项目",
+      "en": "Suphx: Microsoft Research mahjong AI project"
+    },
+    "url": "https://www.microsoft.com/en-us/research/project/suphx-mastering-mahjong-with-deep-reinforcement-learning/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "官方项目页列出项目简介、论文、成员与项目标识。",
+      "en": "Official project page listing the project overview, publication, people, and identity image."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-guoqing-liu-microsoft-profile",
+    "type": "profile",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "刘国庆，微软研究院",
+      "en": "Guoqing Liu, Microsoft Research"
+    },
+    "url": "https://www.microsoft.com/en-us/research/people/guoqingliu/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "微软研究院官方人物页，并被 Suphx 官方项目成员页列出。",
+      "en": "Official Microsoft Research profile, also listed on the Suphx project people page."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-li-zhao-microsoft-profile",
+    "type": "profile",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "赵立，微软研究院",
+      "en": "Li Zhao, Microsoft Research"
+    },
+    "url": "https://www.microsoft.com/en-us/research/people/lizo/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "微软研究院官方人物页，并被 Suphx 官方项目成员页列出。",
+      "en": "Official Microsoft Research profile, also listed on the Suphx project people page."
+    },
+    "purpose": "biography"
   }
 ]
