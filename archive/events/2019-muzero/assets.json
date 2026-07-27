@@ -55,5 +55,40 @@
     "usage": [
       "variant:gaming-ai"
     ]
+  },
+  {
+    "id": "asset-2019-muzero-games-official",
+    "type": "image",
+    "path": "resources/images/external/2019-muzero/muzero-games-official.jpg",
+    "role": "game-comparison-image",
+    "caption": {
+      "zh": "MuZero 跨棋类与 Atari 游戏",
+      "en": "MuZero across board games and Atari"
+    },
+    "subcaption": {
+      "zh": "Google DeepMind 官方文章使用的 MuZero 游戏主题图。",
+      "en": "Official MuZero game visual from the Google DeepMind article."
+    },
+    "sourceId": "source-deepmind-muzero-blog",
+    "sourceName": {
+      "zh": "Google DeepMind",
+      "en": "Google DeepMind"
+    },
+    "sourceUrl": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
+        "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 MuZero 同时覆盖棋类规划与 Atari 控制任务。",
+      "en": "Used to show MuZero spanning board-game planning and Atari control."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

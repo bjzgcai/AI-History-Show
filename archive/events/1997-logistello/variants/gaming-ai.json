@@ -47,13 +47,18 @@
             }
         }
     ],
-    "assetIds": ["asset-michael-buro-university-portrait", "asset-1997-logistello-pattern-eval"],
+    "assetIds": [
+        "asset-1997-logistello-game-1-positions",
+        "asset-michael-buro-university-portrait",
+        "asset-1997-logistello-pattern-eval"
+    ],
     "sourceIds": [
         "source-michael-buro-university-profile",
         "source-logistello-homepage",
         "source-murakami-vs-logistello",
         "source-statistical-feature-combination",
-        "source-michael-buro-publications"
+        "source-michael-buro-publications",
+        "source-logistello-game-1-positions"
     ],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "1997-logistello-quiz-1",

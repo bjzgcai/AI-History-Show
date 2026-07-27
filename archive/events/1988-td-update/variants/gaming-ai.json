@@ -45,46 +45,10 @@
         "en": "Open DOI record",
         "zh": "打开 DOI 记录"
       }
-    },
-    {
-      "type": "gameEvolutionVideo",
-      "site": {
-        "en": "Game evolution clip",
-        "zh": "棋局演化短片"
-      },
-      "title": {
-        "en": "TD-Gammon trajectory game evolution",
-        "zh": "TD-Gammon 轨迹 棋局演化"
-      },
-      "description": {
-        "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-        "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-      },
-      "url": "resources/videos/game-evolution/sample-go-game.gif",
-      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-      "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-      "sourceSgf": "examples/sgf/sample-go-game.sgf",
-      "generator": "scripts/sgf_to_video.py",
-      "duration": {
-        "en": "about 1 min",
-        "zh": "约 1 分钟"
-      },
-      "fps": "30",
-      "license": {
-        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-      },
-      "usage": {
-        "en": "Playable game-state evolution module",
-        "zh": "可播放的棋局状态演化模块"
-      },
-      "action": {
-        "en": "Play evolution clip",
-        "zh": "播放演化短片"
-      }
     }
   ],
   "assetIds": [
+    "asset-1988-td-update-td-gammon-media",
     "asset-1988-td-update-richard-sutton",
     "asset-1988-td-update-value-timeline",
     "asset-1988-td-update-error-meter"
@@ -308,43 +272,6 @@
         "action": {
           "en": "Open DOI record",
           "zh": "打开 DOI 记录"
-        }
-      },
-      {
-        "type": "gameEvolutionVideo",
-        "site": {
-          "en": "Game evolution clip",
-          "zh": "棋局演化短片"
-        },
-        "title": {
-          "en": "TD-Gammon trajectory game evolution",
-          "zh": "TD-Gammon 轨迹 棋局演化"
-        },
-        "description": {
-          "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-          "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-        },
-        "url": "resources/videos/game-evolution/sample-go-game.gif",
-        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-        "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-        "sourceSgf": "examples/sgf/sample-go-game.sgf",
-        "generator": "scripts/sgf_to_video.py",
-        "duration": {
-          "en": "about 1 min",
-          "zh": "约 1 分钟"
-        },
-        "fps": "30",
-        "license": {
-          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-        },
-        "usage": {
-          "en": "Playable game-state evolution module",
-          "zh": "可播放的棋局状态演化模块"
-        },
-        "action": {
-          "en": "Play evolution clip",
-          "zh": "播放演化短片"
         }
       }
     ]

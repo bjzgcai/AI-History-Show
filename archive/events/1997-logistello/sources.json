@@ -98,5 +98,25 @@
       "en": "University of Alberta-hosted personal homepage and portrait; image redistribution rights are not stated."
     },
     "purpose": "biography"
+  },
+  {
+    "id": "source-logistello-game-1-positions",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "村上健对 Logistello 第 1 局逐步局面",
+      "en": "Takeshi Murakami versus Logistello, Game 1 positions"
+    },
+    "url": "https://skatgame.net/mburo/match/board1.all.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Logistello 官方比赛档案中的逐手棋盘页面。",
+      "en": "Move-by-move board page in the official Logistello match archive."
+    },
+    "purpose": "image-provenance"
   }
 ]

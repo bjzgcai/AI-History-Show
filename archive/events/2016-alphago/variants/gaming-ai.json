@@ -17,6 +17,7 @@
   ],
   "visual": "go",
   "assetIds": [
+    "asset-2016-alphago-game-4-photo",
     "asset-david-silver-commons-portrait",
     "asset-alphago-lee-sedol",
     "asset-alphago-policy-value-search"
@@ -25,7 +26,8 @@
     "source-david-silver-commons-portrait",
     "source-alphago-nature-paper",
     "source-deepmind-alphago-page",
-    "source-katago-analysis-engine"
+    "source-katago-analysis-engine",
+    "source-alphago-game-4-commons"
   ],
   "claimIds": [
     "claim-hybrid-policy-value-search",
@@ -187,43 +189,6 @@
         "action": {
           "en": "Open Nature paper",
           "zh": "打开 《自然》 论文"
-        }
-      },
-      {
-        "type": "gameEvolutionVideo",
-        "site": {
-          "en": "Game evolution clip",
-          "zh": "棋局演化短片"
-        },
-        "title": {
-          "en": "AlphaGo game evolution",
-          "zh": "AlphaGo 棋局演化"
-        },
-        "description": {
-          "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
-          "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
-        },
-        "url": "resources/videos/game-evolution/sample-go-game.gif",
-        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-        "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-        "sourceSgf": "examples/sgf/sample-go-game.sgf",
-        "generator": "scripts/sgf_to_video.py",
-        "duration": {
-          "en": "about 1 min",
-          "zh": "约 1 分钟"
-        },
-        "fps": "30",
-        "license": {
-          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-        },
-        "usage": {
-          "en": "Playable game-state evolution module",
-          "zh": "可播放的棋局状态演化模块"
-        },
-        "action": {
-          "en": "Play evolution clip",
-          "zh": "播放演化短片"
         }
       }
     ]

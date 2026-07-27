@@ -3,7 +3,7 @@
     "id": "asset-1994-chinook-homepage",
     "type": "image",
     "path": "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
-    "role": "hero-image",
+    "role": "game-record-image",
     "caption": {
       "zh": "Chinook 官方项目页面",
       "en": "Chinook official project page"

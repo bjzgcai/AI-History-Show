@@ -48,46 +48,10 @@
         "en": "Open article record",
         "zh": "打开论文记录"
       }
-    },
-    {
-      "type": "gameEvolutionVideo",
-      "site": {
-        "en": "Game evolution clip",
-        "zh": "棋局演化短片"
-      },
-      "title": {
-        "en": "Deep Blue game evolution",
-        "zh": "深蓝 棋局演化"
-      },
-      "description": {
-        "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-        "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-      },
-      "url": "resources/videos/game-evolution/sample-go-game.gif",
-      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-      "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-      "sourceSgf": "examples/sgf/sample-go-game.sgf",
-      "generator": "scripts/sgf_to_video.py",
-      "duration": {
-        "en": "about 1 min",
-        "zh": "约 1 分钟"
-      },
-      "fps": "30",
-      "license": {
-        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-      },
-      "usage": {
-        "en": "Playable game-state evolution module",
-        "zh": "可播放的棋局状态演化模块"
-      },
-      "action": {
-        "en": "Play evolution clip",
-        "zh": "播放演化短片"
-      }
     }
   ],
   "assetIds": [
+    "asset-1997-deep-blue-game-6-animation",
     "asset-1997-deep-blue-murray-campbell",
     "asset-1997-deep-blue-garry-kasparov",
     "asset-1997-deep-blue-search-tree",
@@ -97,7 +61,8 @@
     "source-murray-campbell-ibm-research",
     "source-mastering-the-game-computer-history-museum",
     "source-ibm100-deep-blue",
-    "source-garry-kasparov-commons-portrait"
+    "source-garry-kasparov-commons-portrait",
+    "source-deep-blue-game-6-commons"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -329,43 +294,6 @@
         "action": {
           "en": "Open article record",
           "zh": "打开论文记录"
-        }
-      },
-      {
-        "type": "gameEvolutionVideo",
-        "site": {
-          "en": "Game evolution clip",
-          "zh": "棋局演化短片"
-        },
-        "title": {
-          "en": "Deep Blue game evolution",
-          "zh": "深蓝 棋局演化"
-        },
-        "description": {
-          "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-          "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-        },
-        "url": "resources/videos/game-evolution/sample-go-game.gif",
-        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-        "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-        "sourceSgf": "examples/sgf/sample-go-game.sgf",
-        "generator": "scripts/sgf_to_video.py",
-        "duration": {
-          "en": "about 1 min",
-          "zh": "约 1 分钟"
-        },
-        "fps": "30",
-        "license": {
-          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-        },
-        "usage": {
-          "en": "Playable game-state evolution module",
-          "zh": "可播放的棋局状态演化模块"
-        },
-        "action": {
-          "en": "Play evolution clip",
-          "zh": "播放演化短片"
         }
       }
     ]

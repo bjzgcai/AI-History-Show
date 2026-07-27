@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 06:02
+// 生成时间: 2026-07-27 08:18
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -20943,7 +20943,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
-        "role": "source-card",
+        "role": "game-record-image",
         "type": "image"
       },
       "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
@@ -21473,7 +21473,7 @@ const milestones = [
             "en": "Source page screenshot for citation preview; rights remain with the source site."
           }
         },
-        "role": "hero-image",
+        "role": "game-record-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
@@ -61025,22 +61025,52 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
+        "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-program-external",
+        "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
         "asset-1951-strachey-draughts-program-flow"
       ]
     },
     "imageMeta": {
+      "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
+        "caption": {
+          "zh": "斯特雷奇跳棋程序显示画面",
+          "en": "Strachey draughts program display"
+        },
+        "subcaption": {
+          "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
+          "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-strachey-draughts-program-screenshot",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
+        },
+        "role": "game-record-image",
+        "type": "image"
+      },
       "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg": {
         "caption": {
           "zh": "克里斯托弗·斯特雷奇肖像",
@@ -61073,36 +61103,6 @@ const milestones = [
           "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
         },
         "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
-        "caption": {
-          "zh": "斯特雷奇跳棋程序显示画面",
-          "en": "Strachey draughts program display"
-        },
-        "subcaption": {
-          "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
-          "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-        "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-        },
-        "sourceId": "source-strachey-draughts-program-screenshot",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
-        },
-        "role": "source-card",
         "type": "image"
       },
       "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
@@ -61206,43 +61206,6 @@ const milestones = [
           "action": {
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Strachey's draughts game evolution",
-            "zh": "斯特雷奇跳棋 棋局演化"
-          },
-          "description": {
-            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
-            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -61630,18 +61593,53 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg",
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2016-alphago-game-4-photo",
         "asset-david-silver-commons-portrait",
         "asset-alphago-lee-sedol",
         "asset-alphago-policy-value-search"
       ]
     },
     "imageMeta": {
+      "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
+        "caption": {
+          "zh": "李世石对 AlphaGo 第 4 局",
+          "en": "Lee Sedol versus AlphaGo, Game 4"
+        },
+        "subcaption": {
+          "zh": "2016 年首尔人机大战第 4 局的实际棋盘。",
+          "en": "The actual board during Game 4 of the 2016 Seoul match."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+        },
+        "usage": {
+          "zh": "用于展示李世石在第 4 局击败 AlphaGo 的实际对局场景。",
+          "en": "Used to show the actual game in which Lee Sedol defeated AlphaGo."
+        },
+        "sourceId": "source-alphago-game-4-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -61751,43 +61749,6 @@ const milestones = [
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "AlphaGo game evolution",
-            "zh": "AlphaGo 棋局演化"
-          },
-          "description": {
-            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
-            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -61850,13 +61811,29 @@ const milestones = [
           "purpose": "implementation",
           "reliability": "reference-only",
           "sourceType": "documentation"
+        },
+        {
+          "id": "source-alphago-game-4-commons",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "李世石对 AlphaGo 第 4 局棋盘照片",
+            "en": "Lee Sedol versus AlphaGo, Game 4 board photograph"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-david-silver-commons-portrait",
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
-        "source-katago-analysis-engine"
+        "source-katago-analysis-engine",
+        "source-alphago-game-4-commons"
       ],
       "claimIds": [
         "claim-hybrid-policy-value-search",
@@ -62138,18 +62115,52 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/game-evolution/1988-td-gammon.svg",
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-1988-td-update-td-gammon-media",
         "asset-1988-td-update-richard-sutton",
         "asset-1988-td-update-value-timeline",
         "asset-1988-td-update-error-meter"
       ]
     },
     "imageMeta": {
+      "resources/images/game-evolution/1988-td-gammon.svg": {
+        "caption": {
+          "zh": "TD-Gammon 的时序差分价值更新",
+          "en": "Temporal-difference value updates in TD-Gammon"
+        },
+        "subcaption": {
+          "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",
+          "en": "Backgammon state changes, dice rolls, and a value trace illustrate how TD learning updates predictions during play."
+        },
+        "sourceName": {
+          "zh": "本项目原创解释图",
+          "en": "Original exhibition explainer"
+        },
+        "license": {
+          "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+          "en": "Original local SVG explainer; no paper or match imagery is copied."
+        },
+        "usage": {
+          "zh": "用于 1988 年时序差分更新事件的评论与媒体区，展示该方法在 TD-Gammon 棋局中的后续应用。",
+          "en": "Used in the 1988 Temporal-Difference Update commentary and media panel to show the method's later application in TD-Gammon."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+            "en": "Original local SVG explainer; no paper or match imagery is copied."
+          }
+        },
+        "role": "game-analysis-image",
+        "type": "svg"
+      },
       "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
         "caption": {
           "zh": "理查德·萨顿 肖像",
@@ -62250,43 +62261,6 @@ const milestones = [
           "action": {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "TD-Gammon trajectory game evolution",
-            "zh": "TD-Gammon 轨迹 棋局演化"
-          },
-          "description": {
-            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -62646,20 +62620,44 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
+        "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
         "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1994-chinook-jonathan-schaeffer-external",
         "asset-1994-chinook-homepage",
+        "asset-1994-chinook-jonathan-schaeffer-external",
         "asset-1994-chinook-endgame-database",
         "asset-1994-chinook-perfect-play"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
+        "caption": {
+          "zh": "Chinook 官方项目页面",
+          "en": "Chinook official project page"
+        },
+        "subcaption": {
+          "zh": "引用来源页面截图：Chinook project home。",
+          "en": "Screenshot of the cited source page: Chinook project home."
+        },
+        "license": {
+          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+          "en": "Source page screenshot for citation preview; rights remain with the source site."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+            "en": "Source page screenshot for citation preview; rights remain with the source site."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image"
+      },
       "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg": {
         "caption": {
           "zh": "乔纳森·谢弗肖像",
@@ -62688,30 +62686,6 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
-        "caption": {
-          "zh": "Chinook 官方项目页面",
-          "en": "Chinook official project page"
-        },
-        "subcaption": {
-          "zh": "引用来源页面截图：Chinook project home。",
-          "en": "Screenshot of the cited source page: Chinook project home."
-        },
-        "license": {
-          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
-          "en": "Source page screenshot for citation preview; rights remain with the source site."
-        },
-        "sourceId": "source-chinook-project-home",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
-            "en": "Source page screenshot for citation preview; rights remain with the source site."
-          }
-        },
-        "role": "hero-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
@@ -62785,43 +62759,6 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Chinook game evolution",
-            "zh": "Chinook 棋局演化"
-          },
-          "description": {
-            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -63199,16 +63136,51 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif",
         "resources/images/figures/authoritative/michael-buro.jpg",
         "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-1997-logistello-game-1-positions",
         "asset-michael-buro-university-portrait",
         "asset-1997-logistello-pattern-eval"
       ]
     },
     "imageMeta": {
+      "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif": {
+        "caption": {
+          "zh": "Logistello 对村上健第 1 局逐手局面",
+          "en": "Logistello versus Takeshi Murakami, Game 1 positions"
+        },
+        "subcaption": {
+          "zh": "根据 Logistello 官方比赛页截图生成，循环展示截图中前 25 个完整黑白棋局面。",
+          "en": "Generated from the official Logistello match-page screenshot, looping through its first 25 complete Othello positions."
+        },
+        "sourceName": {
+          "zh": "Logistello 官方比赛档案",
+          "en": "Official Logistello match archive"
+        },
+        "sourceUrl": "https://skatgame.net/mburo/match/board1.all.html",
+        "license": {
+          "zh": "由官方逐步棋谱页的本地截图裁帧生成；原页未声明独立再利用许可，对外再分发前需复核授权。",
+          "en": "Generated by cropping frames from a local screenshot of the official move-by-move page; the page states no separate reuse license, so redistribution rights must be reviewed."
+        },
+        "usage": {
+          "zh": "用于动画展示 Logistello 对世界冠军村上健第 1 局截图中可完整提取的前 25 个局面。",
+          "en": "Used to animate the first 25 complete positions extractable from the screenshot of Logistello's first game against world champion Takeshi Murakami."
+        },
+        "sourceId": "source-logistello-game-1-positions",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "由官方逐步棋谱页的本地截图裁帧生成；原页未声明独立再利用许可，对外再分发前需复核授权。",
+            "en": "Generated by cropping frames from a local screenshot of the official move-by-move page; the page states no separate reuse license, so redistribution rights must be reviewed."
+          }
+        },
+        "role": "game-record-animation",
+        "type": "gif"
+      },
       "resources/images/figures/authoritative/michael-buro.jpg": {
         "caption": {
           "zh": "迈克尔·布罗肖像",
@@ -63371,6 +63343,21 @@ const milestones = [
           "purpose": "alternate-access",
           "reliability": "reference-only",
           "sourceType": "paper-index"
+        },
+        {
+          "id": "source-logistello-game-1-positions",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "村上健对 Logistello 第 1 局逐步局面",
+            "en": "Takeshi Murakami versus Logistello, Game 1 positions"
+          },
+          "url": "https://skatgame.net/mburo/match/board1.all.html",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
@@ -63378,7 +63365,8 @@ const milestones = [
         "source-logistello-homepage",
         "source-murakami-vs-logistello",
         "source-statistical-feature-combination",
-        "source-michael-buro-publications"
+        "source-michael-buro-publications",
+        "source-logistello-game-1-positions"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -63776,6 +63764,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif",
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
@@ -63783,6 +63772,7 @@ const milestones = [
       ],
       "videos": [],
       "assetIds": [
+        "asset-1997-deep-blue-game-6-animation",
         "asset-1997-deep-blue-murray-campbell",
         "asset-1997-deep-blue-garry-kasparov",
         "asset-1997-deep-blue-search-tree",
@@ -63790,6 +63780,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif": {
+        "caption": {
+          "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局",
+          "en": "Deep Blue versus Kasparov, 1997 Game 6"
+        },
+        "subcaption": {
+          "zh": "逐手重放深蓝赢得重赛的决定局。",
+          "en": "Move-by-move replay of the decisive game in Deep Blue's rematch victory."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+        "license": {
+          "zh": "CC0 公共领域贡献；制作者为 Morn。",
+          "en": "CC0 public-domain dedication; created by Morn."
+        },
+        "usage": {
+          "zh": "用于展示 1997 年深蓝对卡斯帕罗夫第 6 局的实际走子过程。",
+          "en": "Used to show the actual move sequence of Deep Blue versus Kasparov, Game 6, in 1997."
+        },
+        "sourceId": "source-deep-blue-game-6-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC0 公共领域贡献；制作者为 Morn。",
+            "en": "CC0 public-domain dedication; created by Morn."
+          }
+        },
+        "role": "game-record-animation",
+        "type": "gif"
+      },
       "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
         "caption": {
           "zh": "默里·坎贝尔肖像",
@@ -63923,43 +63946,6 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Deep Blue game evolution",
-            "zh": "深蓝 棋局演化"
-          },
-          "description": {
-            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -64022,13 +64008,29 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-deep-blue-game-6-commons",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局动画",
+            "en": "Deep Blue versus Kasparov, 1997 Game 6 animation"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue",
-        "source-garry-kasparov-commons-portrait"
+        "source-garry-kasparov-commons-portrait",
+        "source-deep-blue-game-6-commons"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -64879,6 +64881,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/2013-dqn/dqn-breakout-paper-frame.png",
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
@@ -64886,6 +64889,7 @@ const milestones = [
       ],
       "videos": [],
       "assetIds": [
+        "asset-2013-dqn-breakout-paper-frame",
         "asset-david-silver-commons-portrait",
         "asset-2013-dqn-volodymyr-mnih",
         "asset-2013-dqn-replay-buffer",
@@ -64893,6 +64897,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/external/2013-dqn/dqn-breakout-paper-frame.png": {
+        "caption": {
+          "zh": "DQN 论文中的 Breakout 游戏帧",
+          "en": "Breakout frame from the DQN paper"
+        },
+        "subcaption": {
+          "zh": "《Playing Atari with Deep Reinforcement Learning》图 1 使用的实际 Atari 游戏画面。",
+          "en": "Actual Atari gameplay image used in Figure 1 of Playing Atari with Deep Reinforcement Learning."
+        },
+        "sourceName": {
+          "zh": "arXiv 论文",
+          "en": "arXiv paper"
+        },
+        "sourceUrl": "https://ar5iv.labs.arxiv.org/html/1312.5602#S1.F1",
+        "license": {
+          "zh": "来自论文图 1 的 Atari 游戏帧，用于研究史引用；公开再分发前需复核论文与游戏画面的权利。",
+          "en": "Atari gameplay frame from Figure 1 of the paper, used as a research-history reference; review paper and game-image rights before redistribution."
+        },
+        "usage": {
+          "zh": "用于直观展示 DQN 接收的像素游戏状态。",
+          "en": "Used to show the pixel-based game state received by DQN."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "来自论文图 1 的 Atari 游戏帧，用于研究史引用；公开再分发前需复核论文与游戏画面的权利。",
+            "en": "Atari gameplay frame from Figure 1 of the paper, used as a research-history reference; review paper and game-image rights before redistribution."
+          }
+        },
+        "role": "gameplay-image",
+        "type": "image"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -65025,43 +65062,6 @@ const milestones = [
           "action": {
             "en": "Open preprint",
             "zh": "打开预印本"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "DQN game evolution",
-            "zh": "DQN 棋局演化"
-          },
-          "description": {
-            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
-            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -65467,18 +65467,53 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/2017-alphazero/alphazero-three-games-official.jpg",
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2017-alphazero-three-games-official",
         "asset-david-silver-commons-portrait",
         "asset-2017-alphazero-julian-schrittwieser",
         "asset-2017-alphazero-self-play-loop"
       ]
     },
     "imageMeta": {
+      "resources/images/external/2017-alphazero/alphazero-three-games-official.jpg": {
+        "caption": {
+          "zh": "AlphaZero 的国际象棋、将棋与围棋对比",
+          "en": "AlphaZero across chess, shogi, and Go"
+        },
+        "subcaption": {
+          "zh": "DeepMind 官方图对比 AlphaZero 在三类棋局中的对手与胜负结果。",
+          "en": "Official DeepMind graphic comparing AlphaZero's opponents and results across three games."
+        },
+        "sourceName": {
+          "zh": "Google DeepMind",
+          "en": "Google DeepMind"
+        },
+        "sourceUrl": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
+        "license": {
+          "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
+          "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+        },
+        "usage": {
+          "zh": "用于展示 AlphaZero 在国际象棋、将棋和围棋上的统一能力。",
+          "en": "Used to show AlphaZero's unified performance across chess, shogi, and Go."
+        },
+        "sourceId": "source-deepmind-alphazero-blog",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
+            "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+          }
+        },
+        "role": "game-comparison-image",
+        "type": "image"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -65595,43 +65630,6 @@ const milestones = [
           "usage": {
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "AlphaZero game evolution",
-            "zh": "AlphaZero 棋局演化"
-          },
-          "description": {
-            "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-            "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -66221,43 +66219,6 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Libratus game evolution",
-            "zh": "Libratus 棋局演化"
-          },
-          "description": {
-            "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
-            "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -66842,43 +66803,6 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Pluribus game evolution",
-            "zh": "Pluribus 棋局演化"
-          },
-          "description": {
-            "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
-            "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -67363,6 +67287,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png",
         "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
         "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
         "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
@@ -67371,6 +67296,7 @@ const milestones = [
       ],
       "videos": [],
       "assetIds": [
+        "asset-2019-suphx-safe-tile-paper-figure",
         "asset-2019-suphx-tie-yan-liu",
         "asset-2019-suphx-hsiao-wuen-hon",
         "asset-2019-suphx-tao-qin",
@@ -67379,6 +67305,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png": {
+        "caption": {
+          "zh": "Suphx 保留安全牌的实际牌局案例",
+          "en": "Suphx keeping a safe tile in an actual game"
+        },
+        "subcaption": {
+          "zh": "论文图 13 展示 Suphx 为平衡未来进攻与防守而保留安全牌。",
+          "en": "Figure 13 shows Suphx keeping a safe tile to balance future attack and defense."
+        },
+        "sourceName": {
+          "zh": "Suphx 论文",
+          "en": "Suphx paper"
+        },
+        "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2003.13590#S5.F13",
+        "license": {
+          "zh": "来自 Suphx 论文图 13，用于论文案例引用；arXiv 页面未声明该图的独立再利用许可，对外发布前需复核授权。",
+          "en": "Figure 13 from the Suphx paper, used as a paper case-study reference; arXiv states no separate image reuse license, so rights must be reviewed before external publication."
+        },
+        "usage": {
+          "zh": "用于展示 Suphx 在真实牌局中的攻守权衡，不依赖已失效的中文报道页。",
+          "en": "Used to show Suphx's attack-defense tradeoff in a real game without relying on the unavailable Chinese news page."
+        },
+        "sourceId": "source-suphx-arxiv-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "来自 Suphx 论文图 13，用于论文案例引用；arXiv 页面未声明该图的独立再利用许可，对外发布前需复核授权。",
+            "en": "Figure 13 from the Suphx paper, used as a paper case-study reference; arXiv states no separate image reuse license, so rights must be reviewed before external publication."
+          }
+        },
+        "role": "game-analysis-image",
+        "type": "image"
+      },
       "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg": {
         "caption": {
           "zh": "刘铁岩肖像",
@@ -68010,16 +67969,51 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/2019-muzero/muzero-games-official.jpg",
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2019-muzero-games-official",
         "asset-david-silver-commons-portrait",
         "asset-2019-muzero-learned-model"
       ]
     },
     "imageMeta": {
+      "resources/images/external/2019-muzero/muzero-games-official.jpg": {
+        "caption": {
+          "zh": "MuZero 跨棋类与 Atari 游戏",
+          "en": "MuZero across board games and Atari"
+        },
+        "subcaption": {
+          "zh": "Google DeepMind 官方文章使用的 MuZero 游戏主题图。",
+          "en": "Official MuZero game visual from the Google DeepMind article."
+        },
+        "sourceName": {
+          "zh": "Google DeepMind",
+          "en": "Google DeepMind"
+        },
+        "sourceUrl": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/",
+        "license": {
+          "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
+          "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+        },
+        "usage": {
+          "zh": "用于展示 MuZero 同时覆盖棋类规划与 Atari 控制任务。",
+          "en": "Used to show MuZero spanning board-game planning and Atari control."
+        },
+        "sourceId": "source-deepmind-muzero-blog",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
+            "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+          }
+        },
+        "role": "game-comparison-image",
+        "type": "image"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -68104,43 +68098,6 @@ const milestones = [
           "usage": {
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "MuZero game evolution",
-            "zh": "MuZero 棋局演化"
-          },
-          "description": {
-            "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-            "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],

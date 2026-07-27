@@ -45,46 +45,13 @@
                 "en": "Source card for the gaming AI branch",
                 "zh": "AI 棋牌分支的资料卡片"
             }
-        },
-        {
-            "type": "gameEvolutionVideo",
-            "site": {
-                "en": "Game evolution clip",
-                "zh": "棋局演化短片"
-            },
-            "title": {
-                "en": "MuZero game evolution",
-                "zh": "MuZero 棋局演化"
-            },
-            "description": {
-                "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-                "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-            },
-            "url": "resources/videos/game-evolution/sample-go-game.gif",
-            "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-            "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-            "sourceSgf": "examples/sgf/sample-go-game.sgf",
-            "generator": "scripts/sgf_to_video.py",
-            "duration": {
-                "en": "about 1 min",
-                "zh": "约 1 分钟"
-            },
-            "fps": "30",
-            "license": {
-                "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-            },
-            "usage": {
-                "en": "Playable game-state evolution module",
-                "zh": "可播放的棋局状态演化模块"
-            },
-            "action": {
-                "en": "Play evolution clip",
-                "zh": "播放演化短片"
-            }
         }
     ],
-    "assetIds": ["asset-david-silver-commons-portrait", "asset-2019-muzero-learned-model"],
+    "assetIds": [
+        "asset-2019-muzero-games-official",
+        "asset-david-silver-commons-portrait",
+        "asset-2019-muzero-learned-model"
+    ],
     "sourceIds": ["source-david-silver-commons-portrait", "source-nature-paper", "source-arxiv-preprint", "source-deepmind-muzero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2019-muzero-quiz-1",
@@ -335,43 +302,6 @@
                 "usage": {
                     "en": "Source card for the gaming AI branch",
                     "zh": "AI 棋牌分支的资料卡片"
-                }
-            },
-            {
-                "type": "gameEvolutionVideo",
-                "site": {
-                    "en": "Game evolution clip",
-                    "zh": "棋局演化短片"
-                },
-                "title": {
-                    "en": "MuZero game evolution",
-                    "zh": "MuZero 棋局演化"
-                },
-                "description": {
-                    "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-                    "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-                },
-                "url": "resources/videos/game-evolution/sample-go-game.gif",
-                "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-                "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-                "sourceSgf": "examples/sgf/sample-go-game.sgf",
-                "generator": "scripts/sgf_to_video.py",
-                "duration": {
-                    "en": "about 1 min",
-                    "zh": "约 1 分钟"
-                },
-                "fps": "30",
-                "license": {
-                    "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                    "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-                },
-                "usage": {
-                    "en": "Playable game-state evolution module",
-                    "zh": "可播放的棋局状态演化模块"
-                },
-                "action": {
-                    "en": "Play evolution clip",
-                    "zh": "播放演化短片"
                 }
             }
         ]
