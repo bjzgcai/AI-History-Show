@@ -15,6 +15,9 @@ manage/.backups/
 /pq/
 /pq-all.zip
 
+# Local candidate media assets
+/local-assets/
+
 # OS
 .DS_Store
 Thumbs.db
