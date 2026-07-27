@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 08:18
+// 生成时间: 2026-07-27 09:18
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -62131,8 +62131,8 @@ const milestones = [
     "imageMeta": {
       "resources/images/game-evolution/1988-td-gammon.svg": {
         "caption": {
-          "zh": "TD-Gammon 的时序差分价值更新",
-          "en": "Temporal-difference value updates in TD-Gammon"
+          "zh": "时序差分学习与后来的 TD-Gammon",
+          "en": "Temporal-difference learning and the later TD-Gammon"
         },
         "subcaption": {
           "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",
@@ -63137,14 +63137,14 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif",
-        "resources/images/figures/authoritative/michael-buro.jpg",
-        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg"
+        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
+        "resources/images/figures/authoritative/michael-buro.jpg"
       ],
       "videos": [],
       "assetIds": [
         "asset-1997-logistello-game-1-positions",
-        "asset-michael-buro-university-portrait",
-        "asset-1997-logistello-pattern-eval"
+        "asset-1997-logistello-pattern-eval",
+        "asset-michael-buro-university-portrait"
       ]
     },
     "imageMeta": {
@@ -63181,6 +63181,30 @@ const milestones = [
         "role": "game-record-animation",
         "type": "gif"
       },
+      "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
+        "caption": {
+          "zh": "Logistello 模式评估",
+          "en": "Logistello pattern evaluation"
+        },
+        "subcaption": {
+          "zh": "学习型黑白棋评估的原创解释图。",
+          "en": "Original explainer for learned Othello evaluation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-logistello-homepage",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/figures/authoritative/michael-buro.jpg": {
         "caption": {
           "zh": "迈克尔·布罗肖像",
@@ -63209,30 +63233,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
-        "caption": {
-          "zh": "Logistello 模式评估",
-          "en": "Logistello pattern evaluation"
-        },
-        "subcaption": {
-          "zh": "学习型黑白棋评估的原创解释图。",
-          "en": "Original explainer for learned Othello evaluation."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-logistello-homepage",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -64881,54 +64881,43 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/2013-dqn/dqn-breakout-paper-frame.png",
+        "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-        "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2013-dqn-breakout-paper-frame",
+        "asset-2013-dqn-replay-buffer",
         "asset-david-silver-commons-portrait",
         "asset-2013-dqn-volodymyr-mnih",
-        "asset-2013-dqn-replay-buffer",
         "asset-2013-dqn-q-control"
       ]
     },
     "imageMeta": {
-      "resources/images/external/2013-dqn/dqn-breakout-paper-frame.png": {
+      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
         "caption": {
-          "zh": "DQN 论文中的 Breakout 游戏帧",
-          "en": "Breakout frame from the DQN paper"
+          "zh": "经验回放池",
+          "en": "Replay buffer"
         },
         "subcaption": {
-          "zh": "《Playing Atari with Deep Reinforcement Learning》图 1 使用的实际 Atari 游戏画面。",
-          "en": "Actual Atari gameplay image used in Figure 1 of Playing Atari with Deep Reinforcement Learning."
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Q Network, based on the listed source material."
         },
-        "sourceName": {
-          "zh": "arXiv 论文",
-          "en": "arXiv paper"
-        },
-        "sourceUrl": "https://ar5iv.labs.arxiv.org/html/1312.5602#S1.F1",
         "license": {
-          "zh": "来自论文图 1 的 Atari 游戏帧，用于研究史引用；公开再分发前需复核论文与游戏画面的权利。",
-          "en": "Atari gameplay frame from Figure 1 of the paper, used as a research-history reference; review paper and game-image rights before redistribution."
-        },
-        "usage": {
-          "zh": "用于直观展示 DQN 接收的像素游戏状态。",
-          "en": "Used to show the pixel-based game state received by DQN."
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
-          "status": "external-reference",
+          "status": "documented-in-legacy",
           "license": {
-            "zh": "来自论文图 1 的 Atari 游戏帧，用于研究史引用；公开再分发前需复核论文与游戏画面的权利。",
-            "en": "Atari gameplay frame from Figure 1 of the paper, used as a research-history reference; review paper and game-image rights before redistribution."
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "gameplay-image",
-        "type": "image"
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
@@ -64982,30 +64971,6 @@ const milestones = [
         },
         "role": "hero-image",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
-        "caption": {
-          "zh": "经验回放池",
-          "en": "Replay buffer"
-        },
-        "subcaption": {
-          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
-          "en": "Local redraw for Deep Q Network, based on the listed source material."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
         "caption": {
@@ -65467,52 +65432,41 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/2017-alphazero/alphazero-three-games-official.jpg",
+        "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg",
         "resources/images/figures/authoritative/david-silver.jpg",
-        "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
-        "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg"
+        "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2017-alphazero-three-games-official",
+        "asset-2017-alphazero-self-play-loop",
         "asset-david-silver-commons-portrait",
-        "asset-2017-alphazero-julian-schrittwieser",
-        "asset-2017-alphazero-self-play-loop"
+        "asset-2017-alphazero-julian-schrittwieser"
       ]
     },
     "imageMeta": {
-      "resources/images/external/2017-alphazero/alphazero-three-games-official.jpg": {
+      "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
         "caption": {
-          "zh": "AlphaZero 的国际象棋、将棋与围棋对比",
-          "en": "AlphaZero across chess, shogi, and Go"
+          "zh": "AlphaZero 自我博弈循环",
+          "en": "AlphaZero self-play loop"
         },
         "subcaption": {
-          "zh": "DeepMind 官方图对比 AlphaZero 在三类棋局中的对手与胜负结果。",
-          "en": "Official DeepMind graphic comparing AlphaZero's opponents and results across three games."
+          "zh": "策略-价值自我博弈的原创解释图。",
+          "en": "Original explainer for policy-value self-play."
         },
-        "sourceName": {
-          "zh": "Google DeepMind",
-          "en": "Google DeepMind"
-        },
-        "sourceUrl": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
         "license": {
-          "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
-          "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
-        "usage": {
-          "zh": "用于展示 AlphaZero 在国际象棋、将棋和围棋上的统一能力。",
-          "en": "Used to show AlphaZero's unified performance across chess, shogi, and Go."
-        },
-        "sourceId": "source-deepmind-alphazero-blog",
+        "sourceId": "source-science-paper",
         "rights": {
-          "status": "external-reference",
+          "status": "documented-in-legacy",
           "license": {
-            "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
-            "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "game-comparison-image",
-        "type": "image"
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
@@ -65574,30 +65528,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
-        "caption": {
-          "zh": "AlphaZero 自我博弈循环",
-          "en": "AlphaZero self-play loop"
-        },
-        "subcaption": {
-          "zh": "策略-价值自我博弈的原创解释图。",
-          "en": "Original explainer for policy-value self-play."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-science-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -67287,56 +67217,45 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png",
+        "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
         "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
         "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
         "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
-        "resources/images/external/2019-suphx/suphx-logo.png",
-        "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg"
+        "resources/images/external/2019-suphx/suphx-logo.png"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2019-suphx-safe-tile-paper-figure",
+        "asset-2019-suphx-mahjong-policy",
         "asset-2019-suphx-tie-yan-liu",
         "asset-2019-suphx-hsiao-wuen-hon",
         "asset-2019-suphx-tao-qin",
-        "asset-2019-suphx-project-logo",
-        "asset-2019-suphx-mahjong-policy"
+        "asset-2019-suphx-project-logo"
       ]
     },
     "imageMeta": {
-      "resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png": {
+      "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg": {
         "caption": {
-          "zh": "Suphx 保留安全牌的实际牌局案例",
-          "en": "Suphx keeping a safe tile in an actual game"
+          "zh": "Suphx 麻将策略循环",
+          "en": "Suphx mahjong policy loop"
         },
         "subcaption": {
-          "zh": "论文图 13 展示 Suphx 为平衡未来进攻与防守而保留安全牌。",
-          "en": "Figure 13 shows Suphx keeping a safe tile to balance future attack and defense."
+          "zh": "隐藏信息麻将 AI 的原创解释图。",
+          "en": "Original explainer for hidden-information mahjong AI."
         },
-        "sourceName": {
-          "zh": "Suphx 论文",
-          "en": "Suphx paper"
-        },
-        "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2003.13590#S5.F13",
         "license": {
-          "zh": "来自 Suphx 论文图 13，用于论文案例引用；arXiv 页面未声明该图的独立再利用许可，对外发布前需复核授权。",
-          "en": "Figure 13 from the Suphx paper, used as a paper case-study reference; arXiv states no separate image reuse license, so rights must be reviewed before external publication."
-        },
-        "usage": {
-          "zh": "用于展示 Suphx 在真实牌局中的攻守权衡，不依赖已失效的中文报道页。",
-          "en": "Used to show Suphx's attack-defense tradeoff in a real game without relying on the unavailable Chinese news page."
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-suphx-arxiv-paper",
         "rights": {
-          "status": "external-reference",
+          "status": "documented-in-legacy",
           "license": {
-            "zh": "来自 Suphx 论文图 13，用于论文案例引用；arXiv 页面未声明该图的独立再利用许可，对外发布前需复核授权。",
-            "en": "Figure 13 from the Suphx paper, used as a paper case-study reference; arXiv states no separate image reuse license, so rights must be reviewed before external publication."
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "game-analysis-image",
-        "type": "image"
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg": {
         "caption": {
@@ -67462,30 +67381,6 @@ const milestones = [
         },
         "role": "project-identity",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg": {
-        "caption": {
-          "zh": "Suphx 麻将策略循环",
-          "en": "Suphx mahjong policy loop"
-        },
-        "subcaption": {
-          "zh": "隐藏信息麻将 AI 的原创解释图。",
-          "en": "Original explainer for hidden-information mahjong AI."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-suphx-arxiv-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -67969,50 +67864,39 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/2019-muzero/muzero-games-official.jpg",
-        "resources/images/figures/authoritative/david-silver.jpg",
-        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
+        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg",
+        "resources/images/figures/authoritative/david-silver.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2019-muzero-games-official",
-        "asset-david-silver-commons-portrait",
-        "asset-2019-muzero-learned-model"
+        "asset-2019-muzero-learned-model",
+        "asset-david-silver-commons-portrait"
       ]
     },
     "imageMeta": {
-      "resources/images/external/2019-muzero/muzero-games-official.jpg": {
+      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
         "caption": {
-          "zh": "MuZero 跨棋类与 Atari 游戏",
-          "en": "MuZero across board games and Atari"
+          "zh": "MuZero 学习模型",
+          "en": "MuZero learned model"
         },
         "subcaption": {
-          "zh": "Google DeepMind 官方文章使用的 MuZero 游戏主题图。",
-          "en": "Official MuZero game visual from the Google DeepMind article."
+          "zh": "潜在模型规划的原创解释图。",
+          "en": "Original explainer for latent-model planning."
         },
-        "sourceName": {
-          "zh": "Google DeepMind",
-          "en": "Google DeepMind"
-        },
-        "sourceUrl": "https://deepmind.google/discover/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules/",
         "license": {
-          "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
-          "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
         },
-        "usage": {
-          "zh": "用于展示 MuZero 同时覆盖棋类规划与 Atari 控制任务。",
-          "en": "Used to show MuZero spanning board-game planning and Atari control."
-        },
-        "sourceId": "source-deepmind-muzero-blog",
+        "sourceId": "source-nature-paper",
         "rights": {
-          "status": "external-reference",
+          "status": "documented-in-legacy",
           "license": {
-            "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
-            "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "game-comparison-image",
-        "type": "image"
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
@@ -68042,30 +67926,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
-        "caption": {
-          "zh": "MuZero 学习模型",
-          "en": "MuZero learned model"
-        },
-        "subcaption": {
-          "zh": "潜在模型规划的原创解释图。",
-          "en": "Original explainer for latent-model planning."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-nature-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {

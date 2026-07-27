@@ -48,10 +48,9 @@
         }
     ],
     "assetIds": [
-        "asset-2017-alphazero-three-games-official",
+        "asset-2017-alphazero-self-play-loop",
         "asset-david-silver-commons-portrait",
-        "asset-2017-alphazero-julian-schrittwieser",
-        "asset-2017-alphazero-self-play-loop"
+        "asset-2017-alphazero-julian-schrittwieser"
     ],
     "sourceIds": ["source-david-silver-commons-portrait", "source-science-paper", "source-arxiv-preprint", "source-deepmind-alphazero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],

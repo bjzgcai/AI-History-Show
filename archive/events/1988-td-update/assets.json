@@ -83,8 +83,8 @@
     "path": "resources/images/game-evolution/1988-td-gammon.svg",
     "role": "game-analysis-image",
     "caption": {
-      "zh": "TD-Gammon 的时序差分价值更新",
-      "en": "Temporal-difference value updates in TD-Gammon"
+      "zh": "时序差分学习与后来的 TD-Gammon",
+      "en": "Temporal-difference learning and the later TD-Gammon"
     },
     "subcaption": {
       "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",

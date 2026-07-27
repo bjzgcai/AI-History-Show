@@ -9977,6 +9977,7 @@
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
+    <script src="shared/gaming-media-selection.js"></script>
     <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -11456,14 +11457,6 @@
             const meta = getConfiguredImageMetaEntry(vm, value) || {};
             const role = String(meta.role || '').trim();
             return /(?:architecture|algorithm)-explainer/i.test(role) || /\/explainers\//i.test(value);
-        }
-
-        function isGameplayMedia(vm, url) {
-            const value = String(url || '').trim();
-            if (!value) return false;
-            const meta = getConfiguredImageMetaEntry(vm, value) || {};
-            const role = String(meta.role || '').trim();
-            return /(?:game-(?:record|analysis|comparison)(?:-image|-animation)?|gameplay(?:-image)?)/i.test(role);
         }
 
         function buildArchivePhotoMeta(vm, url) {
@@ -16288,7 +16281,7 @@
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
-            return sideImageUrl ? candidates.filter((url) => url !== sideImageUrl) : candidates;
+            return window.GamingMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
         }
 
         function getUiPrimaryImageMeta(vm, imageUrl) {
@@ -16316,7 +16309,10 @@
             const humanisticExplainer = findHumanisticExplainerImage(vm, images);
             if (humanisticExplainer) return humanisticExplainer;
             if (isGamingMilestone(vm && vm.raw)) {
-                const gameplayImage = images.find((url) => isGameplayMedia(vm, url));
+                const gameplayImage = window.GamingMediaSelection.findGameplayMedia(images, (url) => {
+                    const meta = getConfiguredImageMetaEntry(vm, url) || {};
+                    return meta.role;
+                });
                 if (gameplayImage) return gameplayImage;
             }
             const diagram = images.find((url) => isDiagramImage(url));

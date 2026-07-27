@@ -143,9 +143,10 @@ function buildTdGammon() {
         triangles += `<path d="M${x} 520 L${x + 52} 520 L${x + 26} 345 Z" fill="${fill}" opacity=".92"/>`;
     }
     return svgDocument(
-        'TD-Gammon value update animation / TD-Gammon 价值更新动画',
-        'Backgammon checkers move while a temporal-difference value trace updates.',
-        `${header('TD-GAMMON', 'TEMPORAL DIFFERENCE · 1988')}
+        'Temporal-difference learning with later TD-Gammon application / 时序差分学习与后来的 TD-Gammon 应用',
+        'The 1988 temporal-difference method is illustrated through its later application in TD-Gammon.',
+        `${header('TD LEARNING', 'FOUNDATIONAL METHOD · 1988')}
+  <text x="92" y="140" class="cue">LATER APPLICATION · TD-GAMMON</text>
   <rect x="92" y="150" width="720" height="390" rx="8" fill="#3c2922" stroke="#caa875" stroke-width="4"/>
   ${triangles}
   <g fill="#f2e6cf" stroke="#8c765c" stroke-width="3">
