@@ -52,6 +52,7 @@
   ],
   "assetIds": [
     "asset-1997-deep-blue-murray-campbell",
+    "asset-1997-deep-blue-garry-kasparov",
     "asset-1997-deep-blue-search-tree",
     "asset-1997-deep-blue-chip-board"
   ],
@@ -59,7 +60,8 @@
     "source-deep-blue-system-paper",
     "source-murray-campbell-ibm-research",
     "source-mastering-the-game-computer-history-museum",
-    "source-ibm100-deep-blue"
+    "source-ibm100-deep-blue",
+    "source-garry-kasparov-commons-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -137,40 +139,14 @@
     },
     {
       "name": {
-        "en": "Feng-hsiung Hsu",
-        "zh": "许峰雄"
+        "en": "Garry Kasparov",
+        "zh": "加里·卡斯帕罗夫"
       },
       "role": {
-        "en": "Chief architect; custom VLSI and hardware design",
-        "zh": "首席架构师；定制 VLSI 与硬件设计"
+        "en": "Reigning world champion in the 1997 match",
+        "zh": "1997 年人机对抗中的卫冕世界冠军"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "A. Joseph Hoane Jr.",
-        "zh": "约瑟夫·霍恩"
-      },
-      "role": {
-        "en": "Parallel-search software lead",
-        "zh": "并行搜索软件负责人"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Jerry Brody",
-        "zh": "杰里·布罗迪"
-      },
-      "role": {
-        "en": "Hardware integration and match operations",
-        "zh": "硬件集成与比赛现场运行"
-      },
-      "avatar": "",
+      "avatar": "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

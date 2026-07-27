@@ -78,5 +78,25 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "historical-context"
+  },
+  {
+    "id": "source-garry-kasparov-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "加里·卡斯帕罗夫新闻发布会肖像",
+      "en": "Garry Kasparov press-conference portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "荷兰国家档案馆照片，由维基共享资源以 CC0 提供。",
+      "en": "Nationaal Archief photograph provided by Wikimedia Commons under CC0."
+    },
+    "purpose": "image-provenance"
   }
 ]

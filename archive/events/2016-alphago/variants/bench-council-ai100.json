@@ -114,14 +114,14 @@
     },
     {
       "name": {
-        "en": "Aja Huang",
-        "zh": "黄士杰"
+        "en": "Lee Sedol",
+        "zh": "李世石"
       },
       "role": {
-        "en": "AlphaGo researcher",
-        "zh": "AlphaGo 研究者"
+        "en": "Go world champion in the landmark 2016 match",
+        "zh": "2016 年里程碑对局中的围棋世界冠军"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

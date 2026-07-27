@@ -3,16 +3,16 @@
     "eventId": "2000s-alphacat",
     "presentationMode": "preserve-legacy",
     "displayTitle": {
-        "zh": "中国象棋引擎与 AlphaCat",
-        "en": "Chinese Chess Engines and AlphaCat"
+        "zh": "中国象棋引擎：搜索与学习型评估",
+        "en": "Chinese Chess Engines: Search and Learned Evaluation"
     },
     "displaySummary": {
         "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
         "en": "Game AI as a Testbed for Search, Learning and Planning"
     },
     "displayDescription": {
-        "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
-        "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+        "zh": "<p>ICGA 赛事档案记录了 1989 至 2013 年间 16 届计算机奥林匹克中国象棋比赛和 38 个参赛程序，其中包括 Acer Chinese Chess、ELP、XQMASTER、NEUChess、Intella 与 Shiga。中国象棋中的炮架、九宫、楚河汉界、长将长捉和高度战术化攻杀，使引擎必须重新设计棋盘表示、走法生成、搜索延伸和局面评估，而不能简单照搬国际象棋程序。</p><p>2018 年曾文杰、陈日章、吴毅成和魏廷翰进一步用比较训练自动调整评估函数权重；论文报告自动训练权重对手工权重取得 86.58% 胜率。这个节点因此展示了中国象棋 AI 从领域化 alpha-beta 搜索和开局知识，逐步走向以数据自动调校评估参数的演进。</p>",
+        "en": "<p>The ICGA archive records 16 Computer Olympiad Chinese Chess tournaments and 38 participating programs between 1989 and 2013, including Acer Chinese Chess, ELP, XQMASTER, NEUChess, Intella, and Shiga. Cannons, palaces, rivers, repetition rules, and highly tactical attacks forced xiangqi engines to redesign board representation, move generation, search extensions, and evaluation rather than simply copy Western chess programs.</p><p>In 2018, Wen-Jie Tseng, Jr-Chang Chen, I-Chen Wu, and Tinghan Wei advanced the line with comparison training for automatic evaluation-weight tuning; their paper reported an 86.58% win rate for automatically trained weights against hand-tuned weights. The event therefore traces a transition from domain-specific alpha-beta search and opening knowledge toward data-driven evaluation tuning.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "configuredPaper",
@@ -107,12 +107,12 @@
     "figures": [
         {
             "name": {
-                "en": "Xiangqi engine teams",
-                "zh": "中国象棋引擎团队"
+                "en": "I-Chen Wu",
+                "zh": "吴毅成"
             },
             "role": {
-                "en": "Programmers behind ICGA Chinese Chess entrants",
-                "zh": "ICGA 中国象棋项目参赛程序背后的开发者"
+                "en": "Coauthor of the xiangqi comparison-training paper",
+                "zh": "中国象棋比较训练论文共同作者"
             },
             "avatar": "",
             "avatarStyle": "",
@@ -120,16 +120,16 @@
         },
         {
             "name": {
-                "en": "AlphaCat",
-                "zh": "AlphaCat"
+                "en": "ICGA Chinese Chess programs",
+                "zh": "ICGA 中国象棋程序谱系"
             },
             "role": {
-                "en": "Representative system requested by the issue",
-                "zh": "issue 指定的代表性系统"
+                "en": "Competition lineage spanning 1989-2013",
+                "zh": "覆盖 1989 至 2013 年的竞赛程序谱系"
             },
             "avatar": "",
             "avatarStyle": "",
-            "figureType": "person"
+            "figureType": "system"
         }
     ],
     "photos": [],
@@ -152,8 +152,8 @@
         "sourceUrl": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13"
     },
     "quotePage": {
-        "en": "Gaming AI branch: Chinese Chess / AlphaCat",
-        "zh": "AI 棋牌分支：中国象棋 / AlphaCat"
+        "en": "Gaming AI branch: Chinese Chess engines",
+        "zh": "AI 棋牌分支：中国象棋引擎"
     },
     "quoteAttribution": {
         "en": "<em>ICGA Tournaments: Chinese Chess</em>, International Computer Games Association tournament archive",
@@ -173,8 +173,8 @@
             "zh": "领域化极大极小搜索与调校评估"
         },
         "artifact": {
-            "en": "AlphaCat-style xiangqi engine lineage",
-            "zh": "AlphaCat 式中国象棋引擎谱系"
+            "en": "ICGA xiangqi engine lineage and comparison-trained evaluation",
+            "zh": "ICGA 中国象棋引擎谱系与比较训练评估"
         },
         "material": {
             "en": "ICGA tournament archive and Chinese-chess evaluation research",
@@ -312,8 +312,8 @@
     },
     "analysis": {
         "what": {
-            "en": "The 2000s Chinese-chess line shows how game AI adapted chess-engine ideas to xiangqi, including issue-requested AlphaCat as a representative system.",
-            "zh": "2000 年代中国象棋路线展示了游戏 AI 如何把象棋引擎思想迁移到中国象棋，并以 issue 指定的 AlphaCat 作为代表系统。"
+            "en": "The Chinese Chess line shows how game AI adapted chess-engine ideas to xiangqi and later used comparison training to tune evaluation weights from data.",
+            "zh": "中国象棋路线展示了游戏 AI 如何把国际象棋引擎思想适配到中国象棋，并进一步通过比较训练从数据中调校评估权重。"
         },
         "how": {
             "en": "Engines used compact board representations, legal-move tables, alpha-beta or minimax search, opening books, tactical extensions, and evaluation weights for asymmetric pieces and attack pressure.",

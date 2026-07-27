@@ -11,8 +11,8 @@
     "en": "Game AI as a Testbed for Search, Learning and Planning"
   },
   "displayDescription": {
-    "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
-    "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+    "zh": "<p>克里斯托弗·斯特雷奇在 1951 年开始为 Pilot ACE 编写跳棋程序，随后把完整版本移植到曼彻斯特 Ferranti Mark I，并在 1952 年运行。程序需要编码棋盘、合法走法和吃子规则，搜索若干步后的局面，再用手工评估函数比较候选路线。</p><p>在计算机仍主要被理解为数值计算设备的时期，这项工作展示了存储程序机器也能处理符号状态、选择和策略。受限内存与速度使搜索深度很浅，程序也远非顶尖棋手，但它把博弈确立为早期 AI 的实验场，并推动剪枝、评估函数和人机交互程序的发展。</p>",
+    "en": "<p>Christopher Strachey began writing a draughts program for the Pilot ACE in 1951, then transferred a complete version to the Manchester Ferranti Mark I, where it ran in 1952. The program encoded the board, legal moves, and captures, searched several plies of future positions, and compared candidate lines with a hand-designed evaluation function.</p><p>At a time when computers were understood mainly as numerical calculators, the work showed that a stored-program machine could manipulate symbolic states, choices, and strategy. Severe memory and speed limits kept the search shallow, and the program was far from elite play, but it established games as an early AI testbed and advanced ideas about pruning, evaluation functions, and interactive programs.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -80,6 +80,7 @@
     }
   ],
   "assetIds": [
+    "asset-1951-strachey-draughts-profile-card",
     "asset-1951-strachey-draughts-program-external",
     "asset-1951-strachey-draughts-checkers-board-external",
     "asset-1951-strachey-draughts-board-search",
@@ -104,8 +105,8 @@
         "en": "Historical Background"
       },
       "html": {
-        "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。",
-        "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools."
+        "zh": "在 1950 年代早期，电子计算机主要被视为数值计算设备，内存容量和编程工具也极其有限。在这种条件下实现跳棋，意味着机器必须表示棋盘、生成合法走法并在有限资源内比较候选行动。",
+        "en": "In the early 1950s, electronic computers were still understood mainly as numerical calculating machines, with extremely limited memory and fragile programming tools. Implementing draughts under those conditions required a machine to represent a board, generate legal moves, and compare candidate actions within tight resource limits."
       },
       "sourceIds": [
         "source-logical-or-non-mathematical-programmes"
@@ -118,8 +119,8 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。",
-        "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script."
+        "zh": "程序把合法走法生成、局面评估和有限前瞻组合起来，使机器能够根据当前棋盘选择行动，而不是只回放预先写好的脚本。这个结构已经包含后来许多博弈程序反复使用的基本循环：生成、搜索、评估和选择。",
+        "en": "The program combined legal-move generation, position evaluation, and limited lookahead so the machine could choose an action from the current board rather than merely replay a script. That structure already contained the recurring loop of later game programs: generate, search, evaluate, and select."
       },
       "sourceIds": [
         "source-logical-or-non-mathematical-programmes"
@@ -161,7 +162,7 @@
         "en": "Developer of the early draughts program",
         "zh": "早期跳棋程序开发者"
       },
-      "avatar": "",
+      "avatar": "resources/images/bench-council-ai100/photos/1951-strachey-draughts_christopher-strachey-profile.svg",
       "avatarStyle": "",
       "figureType": "person"
     }
