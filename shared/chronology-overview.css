@@ -545,7 +545,7 @@
     }
 
     .chronology-overview {
-        --chrono-storyline-height: 40px;
+        --chrono-storyline-height: 45px;
         --chrono-density-height: 60px;
     }
 
@@ -557,8 +557,15 @@
     }
 
     .chrono-storyline-segment {
+        min-height: 44px;
         gap: 6px;
         padding: 0 12px;
+        scroll-snap-align: start;
+    }
+
+    .chrono-storyline-strip {
+        scroll-snap-type: x proximity;
+        overscroll-behavior-x: contain;
     }
 
     .chrono-storyline-segment strong {
@@ -588,13 +595,13 @@
     .chrono-density-cursor {
         height: 44px;
     }
+
+    .chrono-scroll {
+        touch-action: pan-x pan-y;
+    }
 }
 
 @media (max-width: 700px) {
-    .chrono-storyline-segment {
-        min-height: 40px;
-    }
-
     .chrono-card-copy {
         gap: 2px;
         padding: 5px 10px 5px 12px;
@@ -611,6 +618,95 @@
 
     .chrono-density-label {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 700px) and (max-height: 760px) {
+    .single-stage.is-ui-browser:not(.is-ui-detail) {
+        height: auto;
+        min-height: 100dvh;
+        overflow: visible;
+    }
+
+    .single-stage.is-ui-browser:not(.is-ui-detail) .stage-grid {
+        height: 700px;
+        min-height: 700px;
+    }
+}
+
+@media (min-height: 601px) and (max-height: 700px) and (max-width: 932px) and (orientation: landscape) {
+    .single-stage.is-ui-browser:not(.is-ui-detail) {
+        height: auto;
+        min-height: 100dvh;
+        overflow: visible;
+    }
+
+    .single-stage.is-ui-browser:not(.is-ui-detail) .stage-grid {
+        min-height: 560px;
+    }
+}
+
+@media (max-width: 932px) and (max-height: 600px) and (orientation: landscape) {
+    .single-stage.is-ui-browser:not(.is-ui-detail) {
+        height: auto;
+        min-height: 100dvh;
+        overflow: visible;
+    }
+
+    .single-stage.is-ui-browser:not(.is-ui-detail) .stage-grid {
+        height: 520px;
+        min-height: 520px;
+    }
+
+    .chronology-overview {
+        --chrono-storyline-height: 45px;
+        --chrono-density-height: 44px;
+    }
+
+    .chrono-storyline-segment {
+        min-height: 44px;
+        padding-inline: 10px;
+    }
+
+    .chrono-card-copy {
+        gap: 2px;
+        padding: 5px 9px 5px 11px;
+    }
+
+    .chrono-card-year {
+        padding: 2px 5px;
+        font-size: 9px;
+    }
+
+    .chrono-card-title {
+        font-size: 13px;
+        line-height: 1.16;
+    }
+
+    .chrono-card-meta {
+        margin-top: 2px;
+        font-size: 9.5px;
+    }
+
+    .chrono-density {
+        gap: 8px;
+        padding-inline: 8px;
+    }
+
+    .chrono-density-label {
+        font-size: 9px;
+    }
+
+    .chrono-density-navigator {
+        min-height: 36px;
+    }
+
+    .chrono-density-navigator svg {
+        height: 36px;
+    }
+
+    .chrono-density-cursor {
+        height: 32px;
     }
 }
 

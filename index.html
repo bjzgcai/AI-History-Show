@@ -8604,13 +8604,16 @@
 
         @media (max-width: 600px) {
             html,
-            body,
+            body {
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
             .stage-viewport,
             .single-stage,
             .single-stage.is-ui-browser,
             .single-stage.is-ui-browser.is-ui-detail {
-                overflow-y: auto;
-                -webkit-overflow-scrolling: touch;
+                overflow-y: visible;
             }
 
             .single-stage.is-ui-browser.is-ui-detail .ui-browser,
@@ -8623,6 +8626,11 @@
                 max-height: none !important;
                 overflow-y: visible !important;
                 -webkit-overflow-scrolling: touch;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .ui-browser,
+            .single-stage.is-ui-browser.is-ui-detail .ui-browser-main {
+                overflow-x: clip;
             }
 
             .single-stage.is-ui-browser.is-ui-detail .ui-browser {
@@ -8745,7 +8753,7 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260727">
+    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260728">
 </head>
 <body>
     <div class="stage-viewport">
@@ -9016,7 +9024,7 @@
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
-    <script src="shared/chronology-overview.js?v=20260727"></script>
+    <script src="shared/chronology-overview.js?v=20260728b"></script>
     <script src="shared/gaming-media-selection.js"></script>
     <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
@@ -9275,6 +9283,9 @@
         let uiDetailImageEventId = '';
         let uiDetailImageAutoplayTimer = 0;
         let uiHistoryPopInProgress = false;
+        let uiReturnHistoryInProgress = false;
+        let uiReturnHistoryFallbackTimer = 0;
+        const UI_HISTORY_RETURN_FALLBACK_MS = 800;
         let chronologyOverview = null;
 
         let currentIndex = 0;
@@ -9835,26 +9846,45 @@
             return url;
         }
 
-        function getUiHistoryState(mode, eventId = '') {
+        function getUiHistoryState(mode, eventId = '', options = {}) {
             return {
                 aiHistoryUi: {
                     storylineId: activeStorylineId,
                     mode,
-                    eventId
+                    eventId,
+                    fromOverview: mode === 'detail' && Boolean(options.fromOverview)
                 }
             };
         }
 
-        function isCurrentUiDetailHistoryEntry() {
+        function getCurrentUiHistoryState() {
             const state = window.history && window.history.state;
-            return Boolean(state && state.aiHistoryUi && state.aiHistoryUi.mode === 'detail');
+            return state && state.aiHistoryUi ? state.aiHistoryUi : null;
+        }
+
+        function isCurrentUiDetailHistoryEntry(eventId = '') {
+            const uiState = getCurrentUiHistoryState();
+            if (!uiState || uiState.mode !== 'detail') return false;
+            return !eventId || uiState.eventId === eventId;
+        }
+
+        function canReturnToUiOverviewWithHistory() {
+            const uiState = getCurrentUiHistoryState();
+            return Boolean(uiState && uiState.mode === 'detail' && uiState.fromOverview);
         }
 
         function pushUiDetailHistoryEntry() {
             if (!window.history || !window.location || !isUiBrowserActive() || uiBrowserMode !== 'detail' || !uiSelectedEventId) return;
             try {
+                if (isCurrentUiDetailHistoryEntry(uiSelectedEventId)) return;
+                const overviewUrl = buildUiBrowserUrl('overview');
+                window.history.replaceState(getUiHistoryState('overview'), '', overviewUrl);
                 const url = buildUiBrowserUrl('detail', uiSelectedEventId);
-                window.history.pushState(getUiHistoryState('detail', uiSelectedEventId), '', url);
+                window.history.pushState(
+                    getUiHistoryState('detail', uiSelectedEventId, { fromOverview: true }),
+                    '',
+                    url
+                );
             } catch (_) {}
         }
 
@@ -9869,8 +9899,15 @@
         function replaceUiDetailHistoryEntry() {
             if (!window.history || !window.location || !isUiBrowserActive() || uiBrowserMode !== 'detail' || !uiSelectedEventId) return;
             try {
+                const currentUiState = getCurrentUiHistoryState();
                 const url = buildUiBrowserUrl('detail', uiSelectedEventId);
-                window.history.replaceState(getUiHistoryState('detail', uiSelectedEventId), '', url);
+                window.history.replaceState(
+                    getUiHistoryState('detail', uiSelectedEventId, {
+                        fromOverview: Boolean(currentUiState && currentUiState.fromOverview)
+                    }),
+                    '',
+                    url
+                );
             } catch (_) {}
         }
 
@@ -15281,6 +15318,26 @@
             window.setTimeout(update, 320);
         }
 
+        function renderUiOverviewState() {
+            clearUiDetailImageAutoplay();
+            uiBrowserMode = 'overview';
+            uiSelectedEventId = '';
+            uiDetailImageIndex = 0;
+            renderPage(currentIndex);
+            resetPortraitScrollPosition();
+        }
+
+        function clearUiReturnHistoryFallback() {
+            if (!uiReturnHistoryFallbackTimer) return;
+            window.clearTimeout(uiReturnHistoryFallbackTimer);
+            uiReturnHistoryFallbackTimer = 0;
+        }
+
+        function finishUiHistoryReturn() {
+            uiReturnHistoryInProgress = false;
+            clearUiReturnHistoryFallback();
+        }
+
         function returnFromUiDetail(options = {}) {
             if (!isUiBrowserActive() || uiBrowserMode !== 'detail') return false;
             clearUiDetailImageAutoplay();
@@ -15289,14 +15346,23 @@
             })) {
                 return true;
             }
-            if (options.preferHistory && !uiHistoryPopInProgress && isCurrentUiDetailHistoryEntry()) {
+            if (
+                options.preferHistory &&
+                !uiHistoryPopInProgress &&
+                canReturnToUiOverviewWithHistory()
+            ) {
+                uiReturnHistoryInProgress = true;
+                renderUiOverviewState();
+                clearUiReturnHistoryFallback();
+                uiReturnHistoryFallbackTimer = window.setTimeout(() => {
+                    if (!uiReturnHistoryInProgress) return;
+                    finishUiHistoryReturn();
+                    replaceUiLevelHistoryEntry();
+                }, UI_HISTORY_RETURN_FALLBACK_MS);
                 window.history.back();
                 return true;
             }
-            uiBrowserMode = 'overview';
-            uiSelectedEventId = '';
-            renderPage(currentIndex);
-            resetPortraitScrollPosition();
+            renderUiOverviewState();
             if (options.updateHistory !== false) {
                 replaceUiLevelHistoryEntry();
             }
@@ -15308,6 +15374,15 @@
             const uiState = event && event.state && event.state.aiHistoryUi ? event.state.aiHistoryUi : null;
             uiHistoryPopInProgress = true;
             try {
+                if (uiReturnHistoryInProgress) {
+                    if (uiState && uiState.mode === 'detail' && uiState.fromOverview) {
+                        window.history.back();
+                        return;
+                    }
+                    finishUiHistoryReturn();
+                    renderUiOverviewState();
+                    return;
+                }
                 if (uiState && uiState.mode === 'detail' && uiState.eventId) {
                     const nextIndex = findMilestoneIndexByEventId(uiState.eventId);
                     if (nextIndex >= 0) {
@@ -15320,11 +15395,7 @@
                     }
                 }
 
-                uiBrowserMode = 'overview';
-                uiSelectedEventId = '';
-                uiDetailImageIndex = 0;
-                renderPage(currentIndex);
-                resetPortraitScrollPosition();
+                renderUiOverviewState();
             } finally {
                 uiHistoryPopInProgress = false;
             }
@@ -15940,6 +16011,7 @@
             if (!window.ChronologyOverview) return;
             if (!chronologyOverview) {
                 chronologyOverview = window.ChronologyOverview.create(refs.uiBrowserMain, {
+                    isActive: () => isUiBrowserActive() && uiBrowserMode === 'overview',
                     onOpenMilestone: openChronologyMilestone,
                     onFilterChange: (storylineId) => {
                         chronologyFilterStorylineId = storylineId;
@@ -16697,6 +16769,13 @@
                 requestedStorylineId && requestedStorylineId === activeStorylineId ? 'url' : 'default'
             );
             renderPage(currentIndex);
+            if (window.history && 'scrollRestoration' in window.history) {
+                window.history.scrollRestoration = 'manual';
+            }
+            if (isUiBrowserActive()) {
+                if (uiBrowserMode === 'detail') replaceUiDetailHistoryEntry();
+                else replaceUiLevelHistoryEntry();
+            }
             restartIdleAdvanceTimer();
         }
     </script>
