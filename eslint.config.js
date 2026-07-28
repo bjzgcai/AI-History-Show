@@ -44,9 +44,6 @@ module.exports = [
             'milestones-data*.js',
             'index.html',
             'dual-screen.html',
-            'manage/admin.html',
-            'manage/events.js',
-            'manage/figure-avatars.js',
             'resources/quote-candidates.js',
             'resources/research-candidates.js'
         ]

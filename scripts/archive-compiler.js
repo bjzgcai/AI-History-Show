@@ -8,6 +8,10 @@ function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+function cloneJson(value) {
+    return JSON.parse(JSON.stringify(value));
+}
+
 function fileExists(filePath) {
     return fs.existsSync(filePath);
 }
@@ -57,10 +61,10 @@ function assetImageMeta(asset) {
     return {
         caption: localizePair(asset.caption),
         subcaption: localizePair(asset.subcaption),
-        ...(asset.sourceName ? { sourceName: cloneForReview(asset.sourceName) } : {}),
+        ...(asset.sourceName ? { sourceName: cloneJson(asset.sourceName) } : {}),
         ...(asset.sourceUrl ? { sourceUrl: asset.sourceUrl } : {}),
-        ...(rights.license ? { license: cloneForReview(rights.license) } : {}),
-        ...(asset.displayUsage ? { usage: cloneForReview(asset.displayUsage) } : {}),
+        ...(rights.license ? { license: cloneJson(rights.license) } : {}),
+        ...(asset.displayUsage ? { usage: cloneJson(asset.displayUsage) } : {}),
         sourceId: asset.sourceId || (Array.isArray(asset.sourceIds) ? asset.sourceIds[0] : ''),
         rights,
         role: asset.role || '',
@@ -245,16 +249,16 @@ function applyVariantPresentation(milestone, variant) {
         'branch'
     ];
     for (const field of directFields) {
-        if (variant[field] !== undefined) milestone[field] = cloneForReview(variant[field]);
+        if (variant[field] !== undefined) milestone[field] = cloneJson(variant[field]);
     }
 
     if (variant.resources && Array.isArray(variant.resources.videos)) {
-        milestone.resources.videos = cloneForReview(variant.resources.videos);
+        milestone.resources.videos = cloneJson(variant.resources.videos);
     }
     if (variant.achievement && typeof variant.achievement === 'object' && !Array.isArray(variant.achievement)) {
         milestone.achievement = {
             ...milestone.achievement,
-            ...cloneForReview(variant.achievement)
+            ...cloneJson(variant.achievement)
         };
     }
 
@@ -297,168 +301,6 @@ function compileArchive(root) {
     };
 }
 
-function mergeLocalizedPatch(targetValue, patchValue) {
-    if (!patchValue || typeof patchValue !== 'object' || Array.isArray(patchValue)) return targetValue;
-    return {
-        ...(targetValue && typeof targetValue === 'object' && !Array.isArray(targetValue) ? targetValue : {}),
-        ...patchValue
-    };
-}
-
-function cloneForReview(value) {
-    return JSON.parse(JSON.stringify(value));
-}
-
-function applyArchiveMetadata(target, preview) {
-    target.archive = preview.archive;
-    target.archiveEventId = preview.archiveEventId;
-    target.archiveVariantId = preview.archiveVariantId;
-    target.archivePresentationMode = preview.archivePresentationMode || 'preserve-legacy';
-    target.sourceKind = 'archive+legacy';
-
-    target.resources = target.resources || {};
-    target.resources.archiveAssetIds = preview.resources.assetIds;
-
-    target.imageMeta = {
-        ...(target.imageMeta || {}),
-        ...preview.imageMeta
-    };
-
-    target.achievement = target.achievement || {};
-    target.achievement.archiveSources = preview.achievement.sources;
-    target.achievement.archiveSourceIds = preview.achievement.sourceIds;
-    target.achievement.archiveClaims = preview.achievement.claims;
-    target.achievement.archiveClaimIds = preview.achievement.claimIds;
-    target.achievement.archiveEmphasis = preview.achievement.emphasis;
-}
-
-function applyArchivePresentation(target, preview) {
-    target.title = mergeLocalizedPatch(target.title, preview.title);
-    target.subtitle = mergeLocalizedPatch(target.subtitle, preview.subtitle);
-    target.description = mergeLocalizedPatch(target.description, preview.description);
-    if (Array.isArray(preview.papers)) target.papers = cloneForReview(preview.papers);
-
-    target.resources = target.resources || {};
-    target.resources.images = preview.resources.images;
-
-    target.achievement = target.achievement || {};
-    target.achievement.sources = preview.achievement.sources;
-    target.achievement.sourceIds = preview.achievement.sourceIds;
-    if (preview.achievement.visual) target.achievement.visual = preview.achievement.visual;
-    if (Array.isArray(preview.achievement.visualModules) && preview.achievement.visualModules.length > 0) {
-        target.achievement.visualModules = preview.achievement.visualModules;
-    }
-
-    if (preview.commentarySections.length > 0) target.commentarySections = preview.commentarySections;
-    if (preview.analysis) target.analysis = preview.analysis;
-    if (preview.quizzes.length > 0) target.quizzes = preview.quizzes;
-}
-
-function applyArchivePreviewToMilestone(target, preview, options = {}) {
-    applyArchiveMetadata(target, preview);
-    const presentationMode = options.forceArchivePresentation
-        ? 'archive'
-        : preview.archivePresentationMode || 'preserve-legacy';
-    if (presentationMode === 'archive') {
-        applyArchivePresentation(target, preview);
-    }
-}
-
-function buildEffectiveArchivePreview(legacySnapshot, preview, options = {}) {
-    const effective = cloneForReview(legacySnapshot);
-    applyArchivePreviewToMilestone(effective, preview, options);
-    effective.sourceKind = 'archive-preview-effective';
-    return effective;
-}
-
-function applyArchiveOverlays(milestones, options = {}) {
-    const root = options.root || path.resolve(__dirname, '..');
-    const forceArchivePresentation = options.forceArchivePresentation === true;
-    const preview = compileArchive(root);
-    const applied = [];
-    const skipped = [];
-    const reviewRows = [];
-
-    for (const item of preview.milestones) {
-        if (!item.id || item.id.startsWith('archive-preview-')) {
-            const skippedItem = {
-                archiveEventId: item.archiveEventId,
-                archiveVariantId: item.archiveVariantId,
-                reason: 'no legacy id'
-            };
-            skipped.push(skippedItem);
-            reviewRows.push({
-                id: item.id,
-                archiveEventId: item.archiveEventId,
-                archiveVariantId: item.archiveVariantId,
-                storylineId: item.storyline.id,
-                status: 'skipped',
-                reason: skippedItem.reason,
-                archivePresentationMode: item.archivePresentationMode,
-                legacy: null,
-                archivePreview: cloneForReview(item),
-                rawArchivePreview: cloneForReview(item),
-                final: null
-            });
-            continue;
-        }
-        const target = milestones.find((milestone) => milestone.id === item.id);
-        if (!target) {
-            const skippedItem = {
-                id: item.id,
-                archiveEventId: item.archiveEventId,
-                archiveVariantId: item.archiveVariantId,
-                reason: 'legacy milestone not found'
-            };
-            skipped.push(skippedItem);
-            reviewRows.push({
-                id: item.id,
-                archiveEventId: item.archiveEventId,
-                archiveVariantId: item.archiveVariantId,
-                storylineId: item.storyline.id,
-                status: 'skipped',
-                reason: skippedItem.reason,
-                archivePresentationMode: item.archivePresentationMode,
-                legacy: null,
-                archivePreview: cloneForReview(item),
-                rawArchivePreview: cloneForReview(item),
-                final: null
-            });
-            continue;
-        }
-        const legacySnapshot = cloneForReview(target);
-        const effectiveArchivePreview = buildEffectiveArchivePreview(legacySnapshot, item, {
-            forceArchivePresentation
-        });
-        applyArchivePreviewToMilestone(target, item, { forceArchivePresentation });
-        const finalSnapshot = cloneForReview(target);
-        applied.push({
-            id: item.id,
-            archiveEventId: item.archiveEventId,
-            archiveVariantId: item.archiveVariantId,
-            storylineId: item.storyline.id
-        });
-        reviewRows.push({
-            id: item.id,
-            archiveEventId: item.archiveEventId,
-            archiveVariantId: item.archiveVariantId,
-            archivePresentationMode: item.archivePresentationMode,
-            storylineId: item.storyline.id,
-            status: 'applied',
-            reason: '',
-            legacy: legacySnapshot,
-            archivePreview: effectiveArchivePreview,
-            rawArchivePreview: cloneForReview(item),
-            final: finalSnapshot
-        });
-    }
-
-    return { applied, skipped, errors: preview.errors, preview, reviewRows };
-}
-
 module.exports = {
-    applyArchivePreviewToMilestone,
-    applyArchiveOverlays,
-    buildArchivePreview: compileArchive,
     compileArchive
 };

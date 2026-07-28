@@ -55,5 +55,74 @@
     "usage": [
       "variant:gaming-ai"
     ]
+  },
+  {
+    "id": "asset-2017-alphazero-julian-schrittwieser",
+    "type": "image",
+    "path": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "朱利安·施里特维泽肖像",
+      "en": "Julian Schrittwieser portrait"
+    },
+    "subcaption": {
+      "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一。",
+      "en": "DeepMind research scientist and one of the first authors of the MuZero paper."
+    },
+    "sourceId": "source-julian-schrittwieser-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 AlphaZero 后续技术路线中的 MuZero 共同第一作者朱利安·施里特维泽。",
+      "en": "Used to present Julian Schrittwieser, one of MuZero's first authors in the post-AlphaZero research lineage."
+    },
+    "editable": true,
+    "usage": [
+      "variant:gaming-ai"
+    ]
+  },
+  {
+    "id": "asset-2017-alphazero-three-games-official",
+    "type": "image",
+    "path": "resources/images/external/2017-alphazero/alphazero-three-games-official.jpg",
+    "role": "game-comparison-image",
+    "caption": {
+      "zh": "AlphaZero 的国际象棋、将棋与围棋对比",
+      "en": "AlphaZero across chess, shogi, and Go"
+    },
+    "subcaption": {
+      "zh": "DeepMind 官方图对比 AlphaZero 在三类棋局中的对手与胜负结果。",
+      "en": "Official DeepMind graphic comparing AlphaZero's opponents and results across three games."
+    },
+    "sourceId": "source-deepmind-alphazero-blog",
+    "sourceName": {
+      "zh": "Google DeepMind",
+      "en": "Google DeepMind"
+    },
+    "sourceUrl": "https://deepmind.google/discover/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自 Google DeepMind 官方文章；页面未声明独立再利用许可，对外发布前需复核授权。",
+        "en": "Image from the official Google DeepMind article; no separate reuse license is stated, so rights must be reviewed before external publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 AlphaZero 在国际象棋、将棋和围棋上的统一能力。",
+      "en": "Used to show AlphaZero's unified performance across chess, shogi, and Go."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

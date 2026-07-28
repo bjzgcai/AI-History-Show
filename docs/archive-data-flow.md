@@ -1,6 +1,6 @@
 # Archive 数据流与内容权威边界
 
-> 当前状态：2026-07-17。本文描述当前生产链路；迁移期的 overlay、preview 和 Legacy-first 流程仅作为离线比较或历史记录保留。
+> 当前状态：2026-07-24。本文描述 Archive-only 生产链路；Legacy 编辑器、生成器、数据模块和迁移/对比工具已退役，历史实现仅通过 Git 历史保留。
 
 ## 1. 内容实体关系
 
@@ -47,13 +47,13 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    EDITOR["/archive-admin<br/>Archive JSON 编辑器"]
+    EDITOR["/admin<br/>Archive JSON 编辑器"]
     DIRECT["直接编辑 Archive JSON"]
     STORYLINES["archive/storylines/*.json"]
     EVENTS["archive/events/*/"]
     RESOURCES["resources/"]
     VALIDATE["npm run validate:archive<br/>scripts/validate-archive.js"]
-    VALIDATION_REPORT["reports/archive-validation.md"]
+    VALIDATION_REPORT[".tmp/archive-reports/archive-validation.md"]
     GENERATE["npm run generate<br/>scripts/generate-archive-data.js"]
     COMPILER["scripts/archive-compiler.js"]
     PRIMARY["milestones-data.js"]
@@ -99,7 +99,7 @@ flowchart TD
 推荐编辑顺序：
 
 ```bash
-npm run start:admin       # 打开 http://localhost:3001/archive-admin
+npm run start:admin       # 打开 http://localhost:3001/admin
 npm run validate:archive
 npm run generate
 npm run quality
@@ -140,33 +140,24 @@ sequenceDiagram
 - `commentarySections`、`analysis`、`quizzes`；
 - `archiveEventId`、`archiveVariantId`、`sourceKind: "archive"` 等 provenance。
 
-当前 production compiler 不使用 Legacy milestone 作为 scaffold，也不从 Legacy fusion metadata 推导正式 milestone ID。
+当前 production compiler 只读取 Archive JSON，不使用历史 milestone 作为 scaffold，也不从已退役的数据模块推导正式 milestone ID。
 
-## 4. Production 与 Legacy 隔离边界
+## 4. Archive-only 边界
 
 ```mermaid
 flowchart LR
-    subgraph Production["生产权威路径"]
-        A["Archive JSON"] --> C["Archive compiler"] --> R["正式 runtime data"] --> F["single / dual / static bundle"]
-    end
-
-    subgraph Offline["显式离线兼容路径"]
-        L["manage/events.js 等 Legacy 数据"] --> LG["npm run generate:legacy"]
-        LG --> P["rollback / comparison / parity / migration / audit"]
-        P --> TMP[".tmp/archive-*/"]
-    end
-
-    L -.->|禁止作为生产输入| C
-    TMP -.->|不由正式页面加载| F
+    A["Archive JSON"] --> C["Archive compiler"] --> R["正式 runtime data"] --> F["single / dual / static bundle"]
+    M["/admin"] --> A
+    H["Git 历史中的 Legacy 实现"] -.->|只用于追溯，不可执行| A
 ```
 
 边界约束：
 
 - 默认 `npm run generate` 只编译 Archive storyline 和 event bundle。
-- `/archive-admin` 是可写内容入口；`/admin` 是 Legacy 只读参考页。
-- Legacy mutation API 在 authority cutover 后返回 HTTP 403。
-- `npm run generate:legacy` 可能临时覆盖两份 runtime data；比较结束后必须重新运行 `npm run generate`。
-- preview、native、parity、review 和机器报告工作集写入被忽略的 `.tmp/archive-*`，不会进入 Pages/Docker 静态包。
+- `/admin` 是唯一管理入口；旧 `/archive-admin` 与 Legacy API 返回 HTTP 404。
+- Legacy 数据模块、生成器、parity 页面和一次性迁移/对比脚本不再存在于工作树。
+- 可重建报告写入被忽略的 `.tmp/`，不会进入 Pages/Docker 静态包。
+- `resources/` 中保留的候选资料和视频 metadata 遵守 append-only 约束，但不进入静态发布包。
 
 ## 5. 失败保护与生成物规则
 
@@ -196,9 +187,10 @@ milestones-data-default.js
 |---|---|---|
 | 内容权威 | `archive/**` | 长期跟踪，人工编辑入口 |
 | 正式 runtime | `milestones-data*.js` | 长期跟踪，只能由 generator 更新 |
-| 当前摘要报告 | `reports/*.md` | 按命令刷新，保留长期可读结论 |
-| 机器工作集 | `.tmp/archive-reports/`、`.tmp/archive-review/` 等 | 可重建，不跟踪 |
-| 阶段历史 | `reports/history/` | 保留迁移计划、基线与阶段验收背景 |
+| 自动报告与机器工作集 | `.tmp/archive-reports/`、`.tmp/archive-review/` 等 | 可重建，不跟踪 |
+| 人工研究与审阅结论 | `research/` | 长期跟踪，人工维护 |
+
+Archive 迁移期的阶段报告已从当前工作树移除，仍可通过 Git 历史查阅。
 
 `resources/` 继续按 append-only 规则管理。资源报告中的“未引用”只表示没有找到某类静态引用，不构成删除授权。
 
@@ -207,6 +199,6 @@ milestones-data-default.js
 - `scripts/archive-compiler.js`：加载 storyline、event bundle、variant，并生成 milestone。
 - `scripts/generate-archive-data.js`：处理编译错误和两份 runtime data 的原子同步写入。
 - `scripts/validate-archive.js`：验证结构、引用、双语字段和资源路径。
-- `manage/archive-admin.html`、`manage/server.js`：Archive JSON 编辑、保存和校验 API。
+- `manage/admin.html`、`manage/server.js`：Archive JSON 编辑、保存和校验 API。
 - `scripts/test-archive-authority.js`：固定 Archive authority、稳定 ID、provenance 和输出保护边界。
 - `scripts/build-static-site.js`：构建 Pages 与 Docker 共用的最小静态发布包。

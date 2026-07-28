@@ -42,7 +42,7 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
@@ -68,12 +68,46 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
     "usage": [
       "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1988-td-update-td-gammon-media",
+    "type": "svg",
+    "path": "resources/images/game-evolution/1988-td-gammon.svg",
+    "role": "game-analysis-image",
+    "caption": {
+      "zh": "时序差分学习与后来的 TD-Gammon",
+      "en": "Temporal-difference learning and the later TD-Gammon"
+    },
+    "subcaption": {
+      "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",
+      "en": "Backgammon state changes, dice rolls, and a value trace illustrate how TD learning updates predictions during play."
+    },
+    "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+    "sourceName": {
+      "zh": "本项目原创解释图",
+      "en": "Original exhibition explainer"
+    },
+    "rights": {
+      "status": "local-original",
+      "license": {
+        "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+        "en": "Original local SVG explainer; no paper or match imagery is copied."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于 1988 年时序差分更新事件的评论与媒体区，展示该方法在 TD-Gammon 棋局中的后续应用。",
+      "en": "Used in the 1988 Temporal-Difference Update commentary and media panel to show the method's later application in TD-Gammon."
+    },
+    "usage": [
+      "variant:gaming-ai"
     ],
     "editable": true
   }

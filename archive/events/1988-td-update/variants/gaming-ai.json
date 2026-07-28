@@ -11,8 +11,8 @@
     "en": "Game AI as a Testbed for Search, Learning and Planning"
   },
   "displayDescription": {
-    "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
-    "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+    "zh": "<p>理查德·萨顿在 1988 年系统化时序差分学习，让智能体能够在序列尚未结束时更新对未来回报的预测。TD 更新把当前价值估计向“即时奖励 + 下一状态的估计价值”移动，因此同时利用真实经验和已有预测进行自举，而不必像蒙特卡洛方法那样等待最终结果。</p><p>这种在线、逐步更新方式适合持续交互，并把动态规划与从样本学习连接起来。TD 误差后来成为 Q-learning、SARSA、actor-critic 和许多深度强化学习算法的核心信号。自举也可能传播估计偏差，与函数逼近和离策略学习结合时还会带来稳定性挑战。</p>",
+    "en": "<p>Richard Sutton systematized temporal-difference learning in 1988 so an agent could update predictions of future return before a sequence had ended. A TD update moves the current value estimate toward the immediate reward plus the estimated value of the next state, bootstrapping from both observed experience and an existing prediction rather than waiting for a final outcome as Monte Carlo methods do.</p><p>This online, step-by-step process suits continuing interaction and connects ideas from dynamic programming with learning from samples. The TD error later became a central signal in Q-learning, SARSA, actor-critic methods, and much of deep reinforcement learning. Bootstrapping can also propagate estimation error and creates important stability challenges when combined with function approximation and off-policy learning.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -45,46 +45,10 @@
         "en": "Open DOI record",
         "zh": "打开 DOI 记录"
       }
-    },
-    {
-      "type": "gameEvolutionVideo",
-      "site": {
-        "en": "Game evolution clip",
-        "zh": "棋局演化短片"
-      },
-      "title": {
-        "en": "TD-Gammon trajectory game evolution",
-        "zh": "TD-Gammon 轨迹 棋局演化"
-      },
-      "description": {
-        "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-        "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-      },
-      "url": "resources/videos/game-evolution/sample-go-game.gif",
-      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-      "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-      "sourceSgf": "examples/sgf/sample-go-game.sgf",
-      "generator": "scripts/sgf_to_video.py",
-      "duration": {
-        "en": "about 1 min",
-        "zh": "约 1 分钟"
-      },
-      "fps": "30",
-      "license": {
-        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-      },
-      "usage": {
-        "en": "Playable game-state evolution module",
-        "zh": "可播放的棋局状态演化模块"
-      },
-      "action": {
-        "en": "Play evolution clip",
-        "zh": "播放演化短片"
-      }
     }
   ],
   "assetIds": [
+    "asset-1988-td-update-td-gammon-media",
     "asset-1988-td-update-richard-sutton",
     "asset-1988-td-update-value-timeline",
     "asset-1988-td-update-error-meter"
@@ -107,8 +71,8 @@
         "en": "Historical Background"
       },
       "html": {
-        "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。",
-        "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended."
+        "zh": "从延迟奖励中学习，需要在整段交互结束前判断哪些状态和动作应当获得信用。时序差分学习把这种信用分配变成逐步更新，使预测能够随新经验即时修正。",
+        "en": "Learning from delayed rewards requires assigning credit to states and actions before an entire interaction has ended. Temporal-difference learning turned that problem into incremental updates, allowing predictions to change as new experience arrives."
       },
       "sourceIds": [
         "source-learning-to-predict-by-the-methods-of-temporal-differences"
@@ -121,8 +85,8 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。",
-        "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target."
+        "zh": "TD 比较当前预测与“即时奖励加下一步预测”形成的一步目标，再把当前价值向该目标推进。这个自举机制不必等待最终胜负，因此特别适合连续对局和在线控制。",
+        "en": "TD compares the current prediction with a one-step target formed from the immediate reward plus the next prediction, then moves the current value toward it. This bootstrapping mechanism does not wait for a final outcome, making it well suited to continuing games and online control."
       },
       "sourceIds": [
         "source-learning-to-predict-by-the-methods-of-temporal-differences"
@@ -308,43 +272,6 @@
         "action": {
           "en": "Open DOI record",
           "zh": "打开 DOI 记录"
-        }
-      },
-      {
-        "type": "gameEvolutionVideo",
-        "site": {
-          "en": "Game evolution clip",
-          "zh": "棋局演化短片"
-        },
-        "title": {
-          "en": "TD-Gammon trajectory game evolution",
-          "zh": "TD-Gammon 轨迹 棋局演化"
-        },
-        "description": {
-          "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-          "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-        },
-        "url": "resources/videos/game-evolution/sample-go-game.gif",
-        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-        "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-        "sourceSgf": "examples/sgf/sample-go-game.sgf",
-        "generator": "scripts/sgf_to_video.py",
-        "duration": {
-          "en": "about 1 min",
-          "zh": "约 1 分钟"
-        },
-        "fps": "30",
-        "license": {
-          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-        },
-        "usage": {
-          "en": "Playable game-state evolution module",
-          "zh": "可播放的棋局状态演化模块"
-        },
-        "action": {
-          "en": "Play evolution clip",
-          "zh": "播放演化短片"
         }
       }
     ]

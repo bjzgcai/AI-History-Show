@@ -37,16 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "symbolics-lmi-and-expert-system-vendors",
+      "figureId": "richard-greenblatt",
       "name": {
-        "en": "Symbolics, LMI and expert-system vendors",
-        "zh": "Symbolics、LMI 与专家系统厂商"
+        "en": "Richard Greenblatt",
+        "zh": "理查德·格林布拉特"
       },
       "role": {
-        "en": "AI hardware and software industry actors",
-        "zh": "AI 硬件与软件产业参与者"
+        "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.",
+        "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人"
       },
-      "avatar": "",
+      "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "richard-stallman",
+      "name": {
+        "en": "Richard Stallman",
+        "zh": "理查德·斯托曼"
+      },
+      "role": {
+        "en": "MIT hacker who reimplemented Symbolics advances for the shared Lisp Machine system and later launched GNU",
+        "zh": "为共享的 Lisp Machine 系统重新实现 Symbolics 改进、后来发起 GNU 的 MIT 黑客"
+      },
+      "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

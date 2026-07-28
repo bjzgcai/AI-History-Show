@@ -9,6 +9,19 @@ const ROOT = path.resolve(__dirname, '..');
 const OUTPUT = path.join(ROOT, '.tmp', 'static-site');
 const ROOT_FILES = ['.nojekyll', 'index.html', 'dual-screen.html', 'milestones-data.js', 'milestones-data-default.js'];
 const DIRECTORIES = ['shared', 'resources', 'public'];
+const RETIRED_RESOURCE_METADATA = new Set([
+    'resources/quote-candidates.js',
+    'resources/research-candidates.js',
+    'resources/videos/urls.txt'
+]);
+const OMITTED_STATIC_FILES = new Set(['public/fonts/oppo-sans/OPPO Sans 4.0.ttf']);
+const RIGHTS_REVIEW_STATIC_FILES = new Set([
+    'resources/images/external/1997-logistello/logistello-game-1-positions.png',
+    'resources/images/external/2013-dqn/dqn-breakout-paper-frame.png',
+    'resources/images/external/2017-alphazero/alphazero-three-games-official.jpg',
+    'resources/images/external/2019-muzero/muzero-games-official.jpg',
+    'resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png'
+]);
 const FORBIDDEN_TOP_LEVEL = new Set([
     'archive',
     'manage',
@@ -22,9 +35,18 @@ const FORBIDDEN_TOP_LEVEL = new Set([
     'archive-review.html'
 ]);
 
-function copyRequired(source, destination) {
+function copyRequired(source, destination, options = {}) {
     assert.ok(fs.existsSync(source), `Required static input is missing: ${path.relative(ROOT, source)}`);
-    fs.cpSync(source, destination, { recursive: true });
+    fs.cpSync(source, destination, { recursive: true, ...options });
+}
+
+function includeStaticFile(source) {
+    const relativePath = path.relative(ROOT, source).split(path.sep).join('/');
+    if (OMITTED_STATIC_FILES.has(relativePath)) return false;
+    if (RIGHTS_REVIEW_STATIC_FILES.has(relativePath)) return false;
+    if (RETIRED_RESOURCE_METADATA.has(relativePath)) return false;
+    if (/^resources\/videos\/[^/]+\.json$/.test(relativePath)) return false;
+    return true;
 }
 
 function validateBundle() {
@@ -36,9 +58,10 @@ function validateBundle() {
         assert.equal(FORBIDDEN_TOP_LEVEL.has(name), false, `Forbidden path entered static bundle: ${name}`);
     }
 
-    assert.ok(
+    assert.equal(
         fs.existsSync(path.join(OUTPUT, 'public', 'fonts', 'oppo-sans', 'OPPO Sans 4.0.ttf')),
-        'Bundle is missing the local OPPO Sans font'
+        false,
+        'The oversized OPPO Sans TTF must not enter the static bundle'
     );
     assert.ok(
         fs.existsSync(path.join(OUTPUT, 'shared', 'milestone-view.js')),
@@ -65,12 +88,27 @@ function validateBundle() {
         fs.existsSync(path.join(OUTPUT, 'resources', 'images', 'ui', 'brand.png')),
         'Bundle is missing the brand image'
     );
+    for (const relativePath of RETIRED_RESOURCE_METADATA) {
+        assert.equal(fs.existsSync(path.join(OUTPUT, relativePath)), false, `${relativePath} must not be published`);
+    }
+    for (const relativePath of RIGHTS_REVIEW_STATIC_FILES) {
+        assert.equal(
+            fs.existsSync(path.join(OUTPUT, relativePath)),
+            false,
+            `${relativePath} requires a rights review and must not be published`
+        );
+    }
+    assert.equal(
+        fs.readdirSync(path.join(OUTPUT, 'resources', 'videos')).some((file) => file.endsWith('.json')),
+        false,
+        'Legacy video metadata must not be published'
+    );
 
     for (const htmlFile of ['index.html', 'dual-screen.html']) {
         const html = fs.readFileSync(path.join(OUTPUT, htmlFile), 'utf8');
         assert.match(html, /milestones-data\.js/);
         assert.doesNotMatch(html, /milestones-data-archive-preview\.js/);
-        if (htmlFile === 'index.html') assert.match(html, /public\/fonts\/oppo-sans\/OPPO Sans 4\.0\.ttf/);
+        assert.doesNotMatch(html, /public\/fonts\/oppo-sans\/OPPO Sans 4\.0\.ttf/);
     }
 
     delete require.cache[require.resolve(path.join(OUTPUT, 'milestones-data.js'))];
@@ -81,12 +119,23 @@ function validateBundle() {
             (milestone) => milestone.archiveEventId && milestone.archiveVariantId && milestone.sourceKind === 'archive'
         )
     );
+    const serializedRuntime = JSON.stringify(runtime);
+    for (const relativePath of RIGHTS_REVIEW_STATIC_FILES) {
+        assert.equal(
+            serializedRuntime.includes(relativePath),
+            false,
+            `${relativePath} must not be referenced by runtime data`
+        );
+    }
 }
 
 fs.rmSync(OUTPUT, { recursive: true, force: true });
 fs.mkdirSync(OUTPUT, { recursive: true });
 for (const file of ROOT_FILES) copyRequired(path.join(ROOT, file), path.join(OUTPUT, file));
-for (const directory of DIRECTORIES) copyRequired(path.join(ROOT, directory), path.join(OUTPUT, directory));
+for (const directory of DIRECTORIES) {
+    const options = directory === 'resources' || directory === 'public' ? { filter: includeStaticFile } : {};
+    copyRequired(path.join(ROOT, directory), path.join(OUTPUT, directory), options);
+}
 validateBundle();
 
 console.log(`Static site bundle: ${path.relative(ROOT, OUTPUT)}`);

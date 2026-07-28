@@ -94,5 +94,25 @@
       "en": "The Wikimedia Commons file page identifies CC BY-SA 2.0."
     },
     "purpose": "image-provenance"
+  },
+  {
+    "id": "source-alphago-game-4-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "李世石对 AlphaGo 第 4 局棋盘照片",
+      "en": "Lee Sedol versus AlphaGo, Game 4 board photograph"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "摄影者 Wesalius；维基共享资源文件页标注 CC BY-SA 4.0。",
+      "en": "Photograph by Wesalius; the Wikimedia Commons file page identifies the work as CC BY-SA 4.0."
+    },
+    "purpose": "image-provenance"
   }
 ]

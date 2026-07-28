@@ -3,7 +3,7 @@
     "id": "asset-1994-chinook-homepage",
     "type": "image",
     "path": "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
-    "role": "hero-image",
+    "role": "game-record-image",
     "caption": {
       "zh": "Chinook 官方项目页面",
       "en": "Chinook official project page"
@@ -16,7 +16,7 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+        "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
         "en": "Source page screenshot for citation preview; rights remain with the source site."
       }
     },
@@ -42,7 +42,7 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
@@ -68,7 +68,7 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },

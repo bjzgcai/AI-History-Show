@@ -11,8 +11,8 @@
         "en": "Game AI as a Testbed for Search, Learning and Planning"
     },
     "displayDescription": {
-        "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>",
-        "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>"
+        "zh": "<p>朱利安·施里特维泽、大卫·席尔瓦等 DeepMind 研究者提出 MuZero，让智能体在没有预先获得环境动力学或完整规则模拟器的情况下学习规划。系统把观察编码成隐藏状态，再分别学习状态表示、动作后的动态变化，以及搜索真正需要的奖励、策略和价值预测，并用蒙特卡洛树搜索选择行动。</p><p>MuZero 在围棋、国际象棋和将棋中达到与 AlphaZero 相当的超人水平，同时在 57 款 Atari 游戏上取得当时领先表现。它的重要性在于把“学习世界模型”和“用搜索规划”连接起来：模型不必重建所有像素细节，只需保留对决策有用的结构。</p>",
+        "en": "<p>DeepMind researchers including Julian Schrittwieser and David Silver introduced MuZero so an agent could learn to plan without being given the environment dynamics or a complete rule simulator in advance. The system encoded observations into a hidden state, learned representation and transition functions, and predicted the reward, policy, and value quantities needed by Monte Carlo tree search.</p><p>MuZero matched AlphaZero's superhuman performance in Go, chess, and shogi while achieving then-leading results across 57 Atari games. Its significance is the connection between learning a world model and planning with search: the model does not need to reconstruct every pixel-level detail, only the structure that matters for decisions.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "configuredPaper",
@@ -45,46 +45,12 @@
                 "en": "Source card for the gaming AI branch",
                 "zh": "AI 棋牌分支的资料卡片"
             }
-        },
-        {
-            "type": "gameEvolutionVideo",
-            "site": {
-                "en": "Game evolution clip",
-                "zh": "棋局演化短片"
-            },
-            "title": {
-                "en": "MuZero game evolution",
-                "zh": "MuZero 棋局演化"
-            },
-            "description": {
-                "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-                "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-            },
-            "url": "resources/videos/game-evolution/sample-go-game.gif",
-            "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-            "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-            "sourceSgf": "examples/sgf/sample-go-game.sgf",
-            "generator": "scripts/sgf_to_video.py",
-            "duration": {
-                "en": "about 1 min",
-                "zh": "约 1 分钟"
-            },
-            "fps": "30",
-            "license": {
-                "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-            },
-            "usage": {
-                "en": "Playable game-state evolution module",
-                "zh": "可播放的棋局状态演化模块"
-            },
-            "action": {
-                "en": "Play evolution clip",
-                "zh": "播放演化短片"
-            }
         }
     ],
-    "assetIds": ["asset-david-silver-commons-portrait", "asset-2019-muzero-learned-model"],
+    "assetIds": [
+        "asset-2019-muzero-learned-model",
+        "asset-david-silver-commons-portrait"
+    ],
     "sourceIds": ["source-david-silver-commons-portrait", "source-nature-paper", "source-arxiv-preprint", "source-deepmind-muzero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2019-muzero-quiz-1",
@@ -140,14 +106,14 @@
     "figures": [
         {
             "name": {
-                "en": "Julian Schrittwieser",
-                "zh": "朱利安·施里特维泽"
+                "en": "Demis Hassabis",
+                "zh": "德米斯·哈萨比斯"
             },
             "role": {
-                "en": "MuZero first author",
-                "zh": "MuZero 第一作者"
+                "en": "DeepMind co-founder and MuZero coauthor",
+                "zh": "DeepMind 联合创始人、MuZero 论文共同作者"
             },
-            "avatar": "",
+            "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
             "avatarStyle": "",
             "figureType": "person"
         },
@@ -335,43 +301,6 @@
                 "usage": {
                     "en": "Source card for the gaming AI branch",
                     "zh": "AI 棋牌分支的资料卡片"
-                }
-            },
-            {
-                "type": "gameEvolutionVideo",
-                "site": {
-                    "en": "Game evolution clip",
-                    "zh": "棋局演化短片"
-                },
-                "title": {
-                    "en": "MuZero game evolution",
-                    "zh": "MuZero 棋局演化"
-                },
-                "description": {
-                    "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-                    "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-                },
-                "url": "resources/videos/game-evolution/sample-go-game.gif",
-                "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-                "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-                "sourceSgf": "examples/sgf/sample-go-game.sgf",
-                "generator": "scripts/sgf_to_video.py",
-                "duration": {
-                    "en": "about 1 min",
-                    "zh": "约 1 分钟"
-                },
-                "fps": "30",
-                "license": {
-                    "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                    "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-                },
-                "usage": {
-                    "en": "Playable game-state evolution module",
-                    "zh": "可播放的棋局状态演化模块"
-                },
-                "action": {
-                    "en": "Play evolution clip",
-                    "zh": "播放演化短片"
                 }
             }
         ]

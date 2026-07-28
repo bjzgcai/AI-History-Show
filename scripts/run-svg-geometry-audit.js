@@ -6,8 +6,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUTPUT_DIR = path.join(ROOT, 'reports', 'svg-explainer-review');
-const REVIEW_URL = process.env.SVG_REVIEW_URL || 'http://127.0.0.1:8002/reports/svg-explainer-review/review.html';
+const OUTPUT_DIR = path.join(ROOT, '.tmp', 'archive-reports', 'svg-explainer-review');
+const REVIEW_URL =
+    process.env.SVG_REVIEW_URL || 'http://127.0.0.1:8002/.tmp/archive-reports/svg-explainer-review/review.html';
 const OUTPUT_NAME = process.env.SVG_GEOMETRY_OUTPUT_NAME || 'geometry.json';
 const CHROME = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 

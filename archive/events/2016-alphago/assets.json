@@ -86,5 +86,40 @@
       "variant:deep-learning",
       "variant:gaming-ai"
     ]
+  },
+  {
+    "id": "asset-2016-alphago-game-4-photo",
+    "type": "image",
+    "path": "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg",
+    "role": "game-record-image",
+    "caption": {
+      "zh": "李世石对 AlphaGo 第 4 局",
+      "en": "Lee Sedol versus AlphaGo, Game 4"
+    },
+    "subcaption": {
+      "zh": "2016 年首尔人机大战第 4 局的实际棋盘。",
+      "en": "The actual board during Game 4 of the 2016 Seoul match."
+    },
+    "sourceId": "source-alphago-game-4-commons",
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+        "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示李世石在第 4 局击败 AlphaGo 的实际对局场景。",
+      "en": "Used to show the actual game in which Lee Sedol defeated AlphaGo."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
   }
 ]

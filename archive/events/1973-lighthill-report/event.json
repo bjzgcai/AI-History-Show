@@ -46,7 +46,22 @@
         "en": "Author of Artificial Intelligence: A General Survey",
         "zh": "《人工智能：总览》报告作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "donald-michie",
+      "name": {
+        "en": "Donald Michie",
+        "zh": "唐纳德·米奇"
+      },
+      "role": {
+        "en": "British AI pioneer who publicly opposed the Lighthill Report",
+        "zh": "英国 AI 代表人物，公开反对莱特希尔报告"
+      },
+      "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

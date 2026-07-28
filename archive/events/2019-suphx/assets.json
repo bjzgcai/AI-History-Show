@@ -1,5 +1,200 @@
 [
   {
+    "id": "asset-2019-suphx-tie-yan-liu",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "刘铁岩肖像",
+      "en": "Tie-Yan Liu portrait"
+    },
+    "subcaption": {
+      "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员。",
+      "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia."
+    },
+    "sourceId": "source-tie-yan-liu-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 项目主要负责人之一刘铁岩。",
+      "en": "Used to present Tie-Yan Liu, one of the principal leaders of Suphx."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-hsiao-wuen-hon",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "洪小文肖像",
+      "en": "Hsiao-Wuen Hon portrait"
+    },
+    "subcaption": {
+      "zh": "微软全球资深副总裁、Suphx 项目最高负责人。",
+      "en": "Microsoft global senior vice president and executive leader of the Suphx project."
+    },
+    "sourceId": "source-hsiao-wuen-hon-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 项目最高负责人洪小文。",
+      "en": "Used to present Hsiao-Wuen Hon, executive leader of the Suphx project."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-tao-qin",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "秦涛肖像",
+      "en": "Tao Qin portrait"
+    },
+    "subcaption": {
+      "zh": "Suphx 论文重要作者。",
+      "en": "Key author of the Suphx paper."
+    },
+    "sourceId": "source-tao-qin-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
+    "rights": {
+      "status": "user-provided",
+      "license": {
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 论文重要作者秦涛。",
+      "en": "Used to present Tao Qin, a key author of the Suphx paper."
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-guoqing-liu",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/guoqing-liu-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "刘国庆肖像",
+      "en": "Guoqing Liu portrait"
+    },
+    "subcaption": {
+      "zh": "Suphx 论文共同作者、微软研究院高级研究员。",
+      "en": "Suphx coauthor and Microsoft Research senior researcher."
+    },
+    "sourceId": "source-guoqing-liu-microsoft-profile",
+    "sourceName": {
+      "zh": "微软研究院",
+      "en": "Microsoft Research"
+    },
+    "sourceUrl": "https://www.microsoft.com/en-us/research/people/guoqingliu/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自微软研究院官方人物页；页面未声明再分发许可，对外发布前需复核授权。",
+        "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-li-zhao",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/li-zhao-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "赵立肖像",
+      "en": "Li Zhao portrait"
+    },
+    "subcaption": {
+      "zh": "Suphx 论文共同作者、微软研究院首席研究员。",
+      "en": "Suphx coauthor and Microsoft Research principal researcher."
+    },
+    "sourceId": "source-li-zhao-microsoft-profile",
+    "sourceName": {
+      "zh": "微软研究院",
+      "en": "Microsoft Research"
+    },
+    "sourceUrl": "https://www.microsoft.com/en-us/research/people/lizo/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "图片来自微软研究院官方人物页；页面未声明再分发许可，对外发布前需复核授权。",
+        "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-project-logo",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/suphx-logo.png",
+    "role": "project-identity",
+    "caption": {
+      "zh": "Suphx 项目标识",
+      "en": "Suphx project identity"
+    },
+    "subcaption": {
+      "zh": "微软研究院 Suphx 官方项目页使用的麻将 AI 标识。",
+      "en": "Mahjong AI identity used on the official Microsoft Research Suphx project page."
+    },
+    "sourceId": "source-microsoft-suphx-project",
+    "sourceName": {
+      "zh": "微软研究院",
+      "en": "Microsoft Research"
+    },
+    "sourceUrl": "https://www.microsoft.com/en-us/research/project/suphx-mastering-mahjong-with-deep-reinforcement-learning/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "项目标识来自微软研究院官方项目页；页面未声明再分发许可，对外发布前需复核授权。",
+        "en": "Project identity from the official Microsoft Research page; redistribution rights are not stated and must be reviewed before external publication."
+      }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-2019-suphx-mahjong-policy",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
@@ -19,6 +214,41 @@
         "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
+    },
+    "usage": [
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2019-suphx-safe-tile-paper-figure",
+    "type": "image",
+    "path": "resources/images/external/2019-suphx/suphx-safe-tile-paper-figure.png",
+    "role": "game-analysis-image",
+    "caption": {
+      "zh": "Suphx 保留安全牌的实际牌局案例",
+      "en": "Suphx keeping a safe tile in an actual game"
+    },
+    "subcaption": {
+      "zh": "论文图 13 展示 Suphx 为平衡未来进攻与防守而保留安全牌。",
+      "en": "Figure 13 shows Suphx keeping a safe tile to balance future attack and defense."
+    },
+    "sourceId": "source-suphx-arxiv-paper",
+    "sourceName": {
+      "zh": "Suphx 论文",
+      "en": "Suphx paper"
+    },
+    "sourceUrl": "https://ar5iv.labs.arxiv.org/html/2003.13590#S5.F13",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "来自 Suphx 论文图 13，用于论文案例引用；arXiv 页面未声明该图的独立再利用许可，对外发布前需复核授权。",
+        "en": "Figure 13 from the Suphx paper, used as a paper case-study reference; arXiv states no separate image reuse license, so rights must be reviewed before external publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 Suphx 在真实牌局中的攻守权衡，不依赖已失效的中文报道页。",
+      "en": "Used to show Suphx's attack-defense tradeoff in a real game without relying on the unavailable Chinese news page."
     },
     "usage": [
       "variant:gaming-ai"

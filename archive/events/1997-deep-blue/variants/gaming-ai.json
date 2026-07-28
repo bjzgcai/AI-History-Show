@@ -11,8 +11,8 @@
     "en": "Game AI as a Testbed for Search, Learning and Planning"
   },
   "displayDescription": {
-    "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
-    "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+    "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。许峰雄、默里·坎贝尔等核心成员把并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片整合成一套高性能系统。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+    "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5-2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. Core team members including Feng-hsiung Hsu and Murray Campbell integrated parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips into a high-performance system.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -48,54 +48,21 @@
         "en": "Open article record",
         "zh": "打开论文记录"
       }
-    },
-    {
-      "type": "gameEvolutionVideo",
-      "site": {
-        "en": "Game evolution clip",
-        "zh": "棋局演化短片"
-      },
-      "title": {
-        "en": "Deep Blue game evolution",
-        "zh": "深蓝 棋局演化"
-      },
-      "description": {
-        "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-        "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-      },
-      "url": "resources/videos/game-evolution/sample-go-game.gif",
-      "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-      "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-      "sourceSgf": "examples/sgf/sample-go-game.sgf",
-      "generator": "scripts/sgf_to_video.py",
-      "duration": {
-        "en": "about 1 min",
-        "zh": "约 1 分钟"
-      },
-      "fps": "30",
-      "license": {
-        "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-        "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-      },
-      "usage": {
-        "en": "Playable game-state evolution module",
-        "zh": "可播放的棋局状态演化模块"
-      },
-      "action": {
-        "en": "Play evolution clip",
-        "zh": "播放演化短片"
-      }
     }
   ],
   "assetIds": [
+    "asset-1997-deep-blue-game-6-animation",
+    "asset-1997-deep-blue-feng-hsiung-hsu",
     "asset-1997-deep-blue-murray-campbell",
     "asset-1997-deep-blue-search-tree",
     "asset-1997-deep-blue-chip-board"
   ],
   "sourceIds": [
+    "source-feng-hsiung-hsu-chm-portrait",
     "source-murray-campbell-ibm-research",
     "source-mastering-the-game-computer-history-museum",
-    "source-ibm100-deep-blue"
+    "source-ibm100-deep-blue",
+    "source-deep-blue-game-6-commons"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -110,8 +77,8 @@
         "en": "Historical Background"
       },
       "html": {
-        "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。深蓝 把这条路线带到全球舞台。",
-        "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage."
+        "zh": "计算机国际象棋经过数十年发展，逐步依靠更深搜索、更精细的局面评估和专用硬件逼近顶尖人类水平。1997 年与卡斯帕罗夫的六局比赛，把这条长期技术路线第一次带到全球公众面前。",
+        "en": "Computer chess advanced over several decades through deeper search, more refined position evaluation, and increasingly specialized hardware. The six-game match against Garry Kasparov in 1997 brought that long technical lineage before a global public audience."
       },
       "sourceIds": [
         "source-murray-campbell-ibm-research"
@@ -124,8 +91,8 @@
         "en": "Core Idea"
       },
       "html": {
-        "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。",
-        "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge."
+        "zh": "Deep Blue 用并行 alpha-beta 搜索检查大量候选走法，通过剪枝跳过不可能改变决策的分支，再用包含棋类专家知识的评估函数给局面打分。定制国际象棋芯片、开局库和残局知识共同提高搜索速度与判断质量。",
+        "en": "Deep Blue examined many candidate moves with parallel alpha-beta search, pruning branches that could no longer change the decision and scoring positions with an evaluation function informed by chess expertise. Custom chess chips, opening books, and endgame knowledge jointly increased both search speed and decision quality."
       },
       "sourceIds": [
         "source-murray-campbell-ibm-research"
@@ -160,6 +127,19 @@
   "figures": [
     {
       "name": {
+        "en": "Feng-hsiung Hsu",
+        "zh": "许峰雄"
+      },
+      "role": {
+        "en": "Chief architect; custom VLSI and hardware design",
+        "zh": "首席架构师；定制 VLSI 与硬件设计"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+      "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
         "en": "Murray Campbell",
         "zh": "默里·坎贝尔"
       },
@@ -168,19 +148,6 @@
         "zh": "评估函数与搜索策略负责人"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Feng-hsiung Hsu",
-        "zh": "许峰雄"
-      },
-      "role": {
-        "en": "Chief architect; custom VLSI and hardware design",
-        "zh": "首席架构师；定制 VLSI 与硬件设计"
-      },
-      "avatar": "",
       "avatarStyle": "",
       "figureType": "person"
     },
@@ -353,43 +320,6 @@
         "action": {
           "en": "Open article record",
           "zh": "打开论文记录"
-        }
-      },
-      {
-        "type": "gameEvolutionVideo",
-        "site": {
-          "en": "Game evolution clip",
-          "zh": "棋局演化短片"
-        },
-        "title": {
-          "en": "Deep Blue game evolution",
-          "zh": "深蓝 棋局演化"
-        },
-        "description": {
-          "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-          "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-        },
-        "url": "resources/videos/game-evolution/sample-go-game.gif",
-        "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-        "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-        "sourceSgf": "examples/sgf/sample-go-game.sgf",
-        "generator": "scripts/sgf_to_video.py",
-        "duration": {
-          "en": "about 1 min",
-          "zh": "约 1 分钟"
-        },
-        "fps": "30",
-        "license": {
-          "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-          "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-        },
-        "usage": {
-          "en": "Playable game-state evolution module",
-          "zh": "可播放的棋局状态演化模块"
-        },
-        "action": {
-          "en": "Play evolution clip",
-          "zh": "播放演化短片"
         }
       }
     ]

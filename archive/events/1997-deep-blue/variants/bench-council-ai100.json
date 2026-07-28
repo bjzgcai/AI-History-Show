@@ -51,12 +51,14 @@
     }
   ],
   "assetIds": [
-    "asset-1997-deep-blue-murray-campbell",
+    "asset-1997-deep-blue-feng-hsiung-hsu",
     "asset-1997-deep-blue-search-tree",
+    "asset-1997-deep-blue-murray-campbell",
     "asset-1997-deep-blue-chip-board"
   ],
   "sourceIds": [
     "source-deep-blue-system-paper",
+    "source-feng-hsiung-hsu-chm-portrait",
     "source-murray-campbell-ibm-research",
     "source-mastering-the-game-computer-history-museum",
     "source-ibm100-deep-blue"
@@ -124,6 +126,19 @@
   "figures": [
     {
       "name": {
+        "en": "Feng-hsiung Hsu",
+        "zh": "许峰雄"
+      },
+      "role": {
+        "en": "Chief architect; custom VLSI and hardware design",
+        "zh": "首席架构师；定制 VLSI 与硬件设计"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+      "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
+      "figureType": "person"
+    },
+    {
+      "name": {
         "en": "Murray Campbell",
         "zh": "默里·坎贝尔"
       },
@@ -132,19 +147,6 @@
         "zh": "评估函数与搜索策略负责人"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Feng-hsiung Hsu",
-        "zh": "许峰雄"
-      },
-      "role": {
-        "en": "Chief architect; custom VLSI and hardware design",
-        "zh": "首席架构师；定制 VLSI 与硬件设计"
-      },
-      "avatar": "",
       "avatarStyle": "",
       "figureType": "person"
     },
