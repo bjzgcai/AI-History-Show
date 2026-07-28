@@ -365,9 +365,7 @@
     }
 
     function getPrimaryImage(milestone, resolveImage) {
-        const resolvedImage = typeof resolveImage === 'function'
-            ? String(resolveImage(milestone) || '').trim()
-            : '';
+        const resolvedImage = typeof resolveImage === 'function' ? String(resolveImage(milestone) || '').trim() : '';
         if (resolvedImage) return resolvedImage;
         const images =
             milestone && milestone.resources && Array.isArray(milestone.resources.images)
