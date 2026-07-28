@@ -512,6 +512,26 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /function buildUiEventEdgeButtonsHtml\(\)[\s\S]*?uiText\('Previous event', '上一个事件'\)[\s\S]*?uiText\('Next event', '下一个事件'\)[\s\S]*?data-ui-event-step="-1"[\s\S]*?data-ui-event-step="1"[\s\S]*?function bindUiEventEdgeNavigation\(root\)[\s\S]*?analyticsSource: 'event-edge'/,
+    'detail pages should expose previous and next event edge buttons'
+);
+assert.match(
+    indexHtml,
+    /\.ui-event-edge\s*\{[\s\S]*?--ui-event-triangle-block:\s*12px[\s\S]*?top:\s*44px[\s\S]*?bottom:\s*72px[\s\S]*?\.ui-event-edge::before\s*\{[\s\S]*?border-top:\s*var\(--ui-event-triangle-block\) solid transparent[\s\S]*?\.ui-event-edge\.is-prev::before\s*\{[\s\S]*?border-right:\s*var\(--ui-event-triangle-inline\) solid currentColor[\s\S]*?\.ui-event-edge:disabled\s*\{[\s\S]*?display:\s*none/,
+    'event edge controls should remain visible as compact triangles within tall side targets'
+);
+assert.match(
+    indexHtml,
+    /function bindUiEventEdgeNavigation\(root\)[\s\S]*?querySelectorAll\('\[data-ui-event-step\]'\)[\s\S]*?navigate\(eventStep > 0 \? 'next' : 'prev'[\s\S]*?bindUiEventEdgeNavigation\(refs\.uiBrowserMain\)/,
+    'event edge triangles should navigate immediately when clicked'
+);
+assert.match(
+    indexHtml,
+    /function shouldRunIdleAutoAdvance\(\)[\s\S]*?return !isUiBrowserActive\(\) \|\| uiBrowserMode === 'detail'[\s\S]*?function handleIdleAutoAdvance\(\)[\s\S]*?if \(!shouldRunIdleAutoAdvance\(\)\)[\s\S]*?function restartIdleAdvanceTimer\(\)[\s\S]*?if \(!shouldRunIdleAutoAdvance\(\)\) return/,
+    'chronology overview should never idle-advance into an event detail'
+);
+assert.match(
+    indexHtml,
     /function bindUiDetailImageAutoplayPause\(imageStage, imageCount\)[\s\S]*?mouseenter[\s\S]*?mouseleave[\s\S]*?focusin[\s\S]*?focusout[\s\S]*?function renderUiDetail\(\)[\s\S]*?bindUiDetailImageAutoplayPause[\s\S]*?scheduleUiDetailImageAutoplay\(\)[\s\S]*?visibilitychange[\s\S]*?document\.hidden\) clearUiDetailImageAutoplay/,
     'detail image autoplay should pause for navigation controls and when the document is hidden'
 );
