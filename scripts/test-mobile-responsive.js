@@ -38,6 +38,10 @@ const mobileRequirements = [
         message: 'UI browser main area leaves fixed desktop positioning on mobile'
     },
     {
+        pattern: /shared\/chronology-overview\.css/,
+        message: 'the responsive chronology overview stylesheet is loaded'
+    },
+    {
         pattern: /\.ui-detail[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)/,
         message: 'detail page can collapse to a single readable column'
     },
@@ -151,12 +155,23 @@ const mobileRequirements = [
         message: 'opening a phone detail page creates a browser history entry'
     },
     {
-        pattern: /function handleUiBrowserHistoryPop\(event\)[\s\S]*?returnFromUiDetail\(\{ updateHistory: false \}\)/,
-        message: 'browser back returns from phone detail page to the map page'
+        pattern:
+            /function handleUiBrowserHistoryPop\(event\)[\s\S]*?uiBrowserMode = 'overview'[\s\S]*?renderPage\(currentIndex\)/,
+        message: 'browser back returns from phone detail page to the chronology overview'
     },
     {
         pattern: /window\.addEventListener\('popstate', handleUiBrowserHistoryPop\)/,
         message: 'browser history popstate is bound for mobile detail navigation'
+    },
+    {
+        pattern:
+            /function handlePageWheelFallback\(event\)[\s\S]*?canNestedScrollerHandleWheel\(target, deltaY\)[\s\S]*?document\.addEventListener\('wheel', handlePageWheelFallback/,
+        message: 'the page wheel fallback is defined before it is bound'
+    },
+    {
+        pattern:
+            /function fitAvatarFallbackLabels\(root = refs\.uiBrowserMain\)[\s\S]*?lineCounts\[lineCounts\.length - 1\] !== 1[\s\S]*?classList\.add\('is-squeezed'\)[\s\S]*?--avatar-fallback-scale/,
+        message: 'single-character fallback avatar orphans are centered on one squeezed line'
     }
 ];
 
