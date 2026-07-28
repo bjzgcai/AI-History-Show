@@ -99,12 +99,124 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
+const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
     'the default document should paint the unified UI shell before JavaScript initialization'
+);
+assert.match(
+    indexHtml,
+    /shared\/chronology-overview\.js/,
+    'the default UI shell should load the production chronology overview module'
+);
+assert.match(
+    indexHtml,
+    /class="ui-back-button"[^>]*aria-label="返回">返回<\/button>/,
+    'event details should expose a visible text back action before JavaScript initializes'
+);
+assert.match(
+    indexHtml,
+    /\.ui-back-button\s*\{[\s\S]*?min-width:\s*124px[\s\S]*?height:\s*42px[\s\S]*?background:\s*var\(--accent\)[\s\S]*?font-size:\s*17px/,
+    'the desktop event-detail back action should use a prominent text-button treatment'
+);
+assert.match(
+    indexHtml,
+    /@media \(min-width:\s*1200px\)[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.ui-browser-main\s*\{[\s\S]*?height:\s*878px/,
+    'desktop event details should leave a separate gap above the back action'
+);
+assert.match(
+    indexHtml,
+    /\.single-stage\.is-ui-browser\.is-ui-detail \.ui-back-button\s*\{[\s\S]*?position:\s*fixed[\s\S]*?min-width:\s*112px[\s\S]*?height:\s*var\(--touch-target\)/,
+    'the mobile event-detail back action should remain prominent and touchable'
+);
+assert.match(
+    indexHtml,
+    /const backLabel = uiText\('Back', '返回'\);[\s\S]*?uiBackButton\.textContent = backLabel[\s\S]*?setAttribute\('aria-label', backLabel\)/,
+    'the visible back action should follow the current page language'
+);
+assert.match(
+    indexHtml,
+    /unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(allMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
+    'the default overview should merge storyline variants by canonical Archive event'
+);
+assert.match(
+    indexHtml,
+    /function getDetailMilestone\(index\)[\s\S]*?findMilestoneById\(uiSelectedEventId\)[\s\S]*?getCanonicalEventId\(selectedMilestone\) === getCanonicalEventId\(defaultMilestone\)/,
+    'detail rendering should resolve the exact variant selected from a canonical card'
+);
+assert.match(
+    indexHtml,
+    /window\.ChronologyOverview\.create\(refs\.uiBrowserMain,[\s\S]*?onOpenMilestone:\s*openChronologyMilestone/,
+    'the chronology overview should open milestones through the existing detail renderer'
+);
+assert.match(
+    indexHtml,
+    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*buildUnifiedMilestones\(\)/,
+    'the overview should retain the complete canonical filters while restoring the selected storyline'
+);
+assert.match(
+    indexHtml,
+    /function openChronologyMilestone\(eventId\)[\s\S]*?detailMilestones = getChronologyVisibleMilestones\(\)[\s\S]*?milestoneList = detailMilestones/,
+    'opening a chronology card should use the active filter only for detail navigation'
+);
+assert.match(
+    indexHtml,
+    /function getStorylineSelectorStorylineId\(\)[\s\S]*?uiBrowserMode === 'detail'[\s\S]*?getChronologyOptionStorylineId\(chronologyFilterStorylineId\)[\s\S]*?const selectedStorylineId = getStorylineSelectorStorylineId\(\)[\s\S]*?option\.id === selectedStorylineId/,
+    'detail storyline controls should reflect the filter used to enter the event'
+);
+assert.match(
+    indexHtml,
+    /function navigate\(direction, options = \{\}\)[\s\S]*?currentIndex \+ 1, milestoneList\.length - 1[\s\S]*?uiSelectedEventId = milestoneList\[nextIndex\]/,
+    'detail arrow navigation should stay within the filtered milestone list'
+);
+assert.match(
+    indexHtml,
+    /function jumpTo\(index[\s\S]*?uiSelectedEventId = milestoneList\[index\]\.id[\s\S]*?replaceUiDetailHistoryEntry\(\)/,
+    'detail arrow navigation should update the current event URL without adding another history entry'
+);
+assert.doesNotMatch(
+    chronologySource,
+    /class="chrono-toolbar"/,
+    'the chronology overview should not duplicate storyline controls in a separate toolbar'
+);
+assert.match(
+    chronologySource,
+    /const filters = \[[\s\S]*?id: 'all'[\s\S]*?class="chrono-storyline-strip"[\s\S]*?\$\{filters/,
+    'the single storyline strip should begin with an all-events filter'
+);
+assert.match(
+    chronologySource,
+    /selectMilestonesByStoryline\(getCanonicalMilestones\(\), state\.storylineId\)[\s\S]*?class="chrono-card-memberships"/,
+    'storyline filters should select their variant while multi-storyline cards expose membership markers'
+);
+assert.match(
+    chronologyCss,
+    /\.chrono-card-strip i[\s\S]*?flex:\s*1[\s\S]*?\.chrono-card-memberships i[\s\S]*?background:\s*var\(--membership-color\)/,
+    'multi-storyline cards should use segmented color strips and visible membership dots'
+);
+assert.match(
+    chronologyCss,
+    /\.chrono-card-media\.is-portrait::before\s*\{[\s\S]*?background-image:\s*var\(--portrait-backdrop-image[\s\S]*?background-size:\s*cover[\s\S]*?\.chrono-card-media\.is-portrait img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?object-position:\s*center top[\s\S]*?\.chrono-card-media\.is-portrait\.is-cover-safe img\s*\{[\s\S]*?object-fit:\s*cover[\s\S]*?\.chrono-event-card:hover \.chrono-card-media\.is-portrait img,[\s\S]*?transform:\s*none/,
+    'portrait cards should fill their backdrop while preserving the complete foreground head'
+);
+assert.match(
+    chronologySource,
+    /function canPortraitCoverWithoutVerticalCrop\([\s\S]*?safeImageWidth \/ safeImageHeight >= safeFrameWidth \/ safeFrameHeight[\s\S]*?function observeImages\(scroller\)[\s\S]*?--portrait-backdrop-image[\s\S]*?classList\.toggle\([\s\S]*?'is-cover-safe'/,
+    'portrait fit should be selected after the image dimensions are available'
+);
+assert.match(
+    chronologyCss,
+    /\.single-stage\.is-ui-browser:not\(\.is-ui-detail\) \.storyline-trigger\s*\{[\s\S]*?display:\s*none/,
+    'the redundant top-right storyline selector should stay hidden on the chronology overview'
+);
+assert.match(
+    indexHtml,
+    /renderTimeline\(vm\);[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?document\.title = `\$\{tx\('appTitleSingle'\)\} - \$\{getStorylineLabel\(getActiveStorylineOption\(\)\)/,
+    'the chronology overview should use its storyline title instead of retaining the last event title'
 );
 assert.match(
     indexHtml,
@@ -133,18 +245,13 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function buildUnifiedMilestones\(\)[\s\S]*?storylineId === DEEP_STORYLINE_ID[\s\S]*?storylineId === 'bench-council-ai100'[\s\S]*?storylineId === 'humanistic-cycle'/,
-    'the unified AI history map should include all humanistic cycle events'
+    /const AI_HISTORY_MAP_VARIANT_PRIORITY = \[[\s\S]*?'bench-council-ai100'[\s\S]*?DEEP_STORYLINE_ID[\s\S]*?'gaming-ai'[\s\S]*?'humanistic-cycle'[\s\S]*?\]/,
+    'the unified chronology should include all four public storylines'
 );
 assert.match(
     indexHtml,
     /class="ui-detail-title-row">[\s\S]*?class="ui-detail-title"[\s\S]*?\$\{sentimentTagHtml\}/,
     'humanistic detail pages should place the emotion label directly after the event title'
-);
-assert.match(
-    indexHtml,
-    /UI_CONTINENTS\.filter\(\(continent\) => \(continentCounts\.get\(continent\.id\) \|\| 0\) > 0\)\.map/,
-    'the event map should omit continent controls whose event count is zero'
 );
 assert.match(
     indexHtml,
@@ -264,7 +371,7 @@ assert.doesNotMatch(
 assert.match(
     indexHtml,
     /function maybeOpenCompletionQuiz\(onComplete\)[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?const quizzes = getQuizItems\(vm\)[\s\S]*?!quizzes\.length/,
-    'completion quizzes should depend on event quiz data and stay disabled on the unified map level'
+    'completion quizzes should depend on event quiz data and stay disabled on the chronology overview'
 );
 assert.match(
     indexHtml,
@@ -284,7 +391,7 @@ assert.match(
 assert.match(
     indexHtml,
     /if \(isUiBrowserActive\(\) && uiBrowserMode !== 'detail'\) \{[\s\S]*?resetCompletionQuizView\(\)[\s\S]*?\} else \{[\s\S]*?markCompletionQuizView\(vm\)/,
-    'the unified map level should reset quiz dwell time while event details start it'
+    'the chronology overview should reset quiz dwell time while event details start it'
 );
 console.log('PASS unified UI boot state and storyline detail URL normalization');
 
@@ -325,8 +432,23 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /\.ui-media-video-poster\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?\.ui-media-video video,[\s\S]*?object-fit:\s*contain/,
+    'commentary images and direct videos should scale to fit without cropping'
+);
+assert.match(
+    indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should exclude the image mounted in the right-side media panel'
+);
+assert.match(
+    indexHtml,
+    /function getChronologyCardImage\(milestone\)[\s\S]*?UI_CHRONOLOGY_IMAGE_OVERRIDES[\s\S]*?getUiDetailImages\(vm\)\[0\]/,
+    'overview cards should use the first image from the matching detail-page image collection unless overridden'
+);
+assert.match(
+    indexHtml,
+    /chronologyOverview\.update\(\{[\s\S]*?resolveCardImage: getChronologyCardImage/,
+    'the chronology overview should receive the shared detail-image resolver'
 );
 assert.doesNotMatch(
     indexHtml,
@@ -360,13 +482,58 @@ assert.doesNotMatch(
 );
 assert.match(
     indexHtml,
-    /function getUiPrimaryImage\(vm\)[\s\S]*?getUiImageCandidates\(vm\)\[0\]/,
-    'map and event-list thumbnails should keep using the complete image candidates'
+    /const detailImageHtml = imageUrl[\s\S]*?\? `[\s\S]*?class="ui-detail-image"[\s\S]*?: '';/,
+    'detail pages should omit the left image area when every candidate is mounted on the right'
 );
 assert.match(
     indexHtml,
-    /const detailImageHtml = imageUrl[\s\S]*?\? `[\s\S]*?class="ui-detail-image"[\s\S]*?: '';/,
-    'detail pages should omit the left image area when every candidate is mounted on the right'
+    /const UI_DETAIL_IMAGE_AUTOPLAY_MS = 3 \* 1000;[\s\S]*?function scheduleUiDetailImageAutoplay\(\)[\s\S]*?document\.hidden[\s\S]*?prefers-reduced-motion: reduce[\s\S]*?window\.setTimeout[\s\S]*?setUiDetailImageIndex\(uiDetailImageIndex \+ 1, activeImages\)/,
+    'detail image collections should advance every three seconds while the page is visible'
+);
+assert.match(
+    indexHtml,
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.textContent[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /function bindUiDetailImageSwipe|UI_DETAIL_IMAGE_SWIPE_THRESHOLD|UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO/,
+    'detail image navigation should not retain drag or swipe handling'
+);
+assert.match(
+    indexHtml,
+    /function buildUiDetailImageEdgeButtonsHtml\(detailImages\)[\s\S]*?data-ui-image-step="-1"[\s\S]*?上一张图片[\s\S]*?data-ui-image-step="1"[\s\S]*?下一张图片[\s\S]*?querySelectorAll\('\[data-ui-image-step\]'\)[\s\S]*?setUiDetailImageIndex\(uiDetailImageIndex \+ imageStep, detailImages\)/,
+    'multi-image details should expose previous and next edge buttons'
+);
+assert.match(
+    indexHtml,
+    /\.ui-detail-image-edge\s*\{[\s\S]*?opacity:\s*0[\s\S]*?pointer-events:\s*none[\s\S]*?\.ui-detail-image-stage:hover \.ui-detail-image-edge,[\s\S]*?opacity:\s*1[\s\S]*?@media \(hover:\s*none\)[\s\S]*?\.ui-detail-image-edge\s*\{[\s\S]*?opacity:\s*1/,
+    'image edge buttons should appear on desktop hover and remain visible on touch devices'
+);
+assert.match(
+    indexHtml,
+    /function buildUiEventEdgeButtonsHtml\(\)[\s\S]*?uiText\('Previous event', '上一个事件'\)[\s\S]*?uiText\('Next event', '下一个事件'\)[\s\S]*?data-ui-event-step="-1"[\s\S]*?data-ui-event-step="1"[\s\S]*?function bindUiEventEdgeNavigation\(root\)[\s\S]*?analyticsSource: 'event-edge'/,
+    'detail pages should expose previous and next event edge buttons'
+);
+assert.match(
+    indexHtml,
+    /\.ui-event-edge\s*\{[\s\S]*?--ui-event-triangle-block:\s*12px[\s\S]*?top:\s*44px[\s\S]*?bottom:\s*72px[\s\S]*?\.ui-event-edge::before\s*\{[\s\S]*?border-top:\s*var\(--ui-event-triangle-block\) solid transparent[\s\S]*?\.ui-event-edge\.is-prev::before\s*\{[\s\S]*?border-right:\s*var\(--ui-event-triangle-inline\) solid currentColor[\s\S]*?\.ui-event-edge:disabled\s*\{[\s\S]*?display:\s*none/,
+    'event edge controls should remain visible as compact triangles within tall side targets'
+);
+assert.match(
+    indexHtml,
+    /function bindUiEventEdgeNavigation\(root\)[\s\S]*?querySelectorAll\('\[data-ui-event-step\]'\)[\s\S]*?navigate\(eventStep > 0 \? 'next' : 'prev'[\s\S]*?bindUiEventEdgeNavigation\(refs\.uiBrowserMain\)/,
+    'event edge triangles should navigate immediately when clicked'
+);
+assert.match(
+    indexHtml,
+    /function shouldRunIdleAutoAdvance\(\)[\s\S]*?return !isUiBrowserActive\(\) \|\| uiBrowserMode === 'detail'[\s\S]*?function handleIdleAutoAdvance\(\)[\s\S]*?if \(!shouldRunIdleAutoAdvance\(\)\)[\s\S]*?function restartIdleAdvanceTimer\(\)[\s\S]*?if \(!shouldRunIdleAutoAdvance\(\)\) return/,
+    'chronology overview should never idle-advance into an event detail'
+);
+assert.match(
+    indexHtml,
+    /function bindUiDetailImageAutoplayPause\(imageStage, imageCount\)[\s\S]*?mouseenter[\s\S]*?mouseleave[\s\S]*?focusin[\s\S]*?focusout[\s\S]*?function renderUiDetail\(\)[\s\S]*?bindUiDetailImageAutoplayPause[\s\S]*?scheduleUiDetailImageAutoplay\(\)[\s\S]*?visibilitychange[\s\S]*?document\.hidden\) clearUiDetailImageAutoplay/,
+    'detail image autoplay should pause for navigation controls and when the document is hidden'
 );
 assert.match(
     indexHtml,

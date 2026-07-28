@@ -1,0 +1,627 @@
+.single-stage.is-ui-browser:not(.is-ui-detail) .stage-kicker {
+    display: none;
+}
+
+.single-stage.is-ui-browser:not(.is-ui-detail) .stage-grid {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.single-stage.is-ui-browser:not(.is-ui-detail) .ui-browser {
+    display: block;
+    top: 0;
+    bottom: 0;
+}
+
+.single-stage.is-ui-browser:not(.is-ui-detail) .ui-browser-main {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    min-height: 0;
+}
+
+.single-stage.is-ui-browser:not(.is-ui-detail) .storyline-trigger {
+    display: none;
+}
+
+.chronology-overview {
+    --chrono-line: rgba(244, 239, 229, 0.13);
+    --chrono-muted: rgba(244, 239, 229, 0.4);
+    --chrono-media-bg: #8f918e;
+    --chrono-storyline-height: 48px;
+    --chrono-density-height: 72px;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    display: grid;
+    grid-template-rows: var(--chrono-storyline-height) minmax(0, 1fr) var(--chrono-density-height);
+    overflow: hidden;
+    background: #020202;
+    border-top: 1px solid rgba(244, 239, 229, 0.05);
+}
+
+.chrono-storyline-strip {
+    min-width: 0;
+    height: var(--chrono-storyline-height);
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid var(--chrono-line);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.chrono-storyline-strip::-webkit-scrollbar {
+    display: none;
+}
+
+.chrono-storyline-segment {
+    flex: none;
+    min-width: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    border-right: 1px solid rgba(244, 239, 229, 0.06);
+    background: linear-gradient(90deg, color-mix(in srgb, var(--story-color) 8%, transparent), transparent);
+    color: var(--chrono-muted);
+    padding: 0 18px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.chrono-storyline-segment:hover,
+.chrono-storyline-segment:focus-visible,
+.chrono-storyline-segment.is-active {
+    background: color-mix(in srgb, var(--story-color) 10%, transparent);
+    outline: none;
+}
+
+.chrono-storyline-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--story-color);
+    box-shadow: 0 0 6px color-mix(in srgb, var(--story-color) 80%, transparent);
+}
+
+.chrono-storyline-all-mark {
+    width: 24px;
+    height: 8px;
+    flex: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    overflow: hidden;
+    border-radius: 1px;
+    box-shadow: 0 0 6px rgba(232, 227, 218, 0.24);
+}
+
+.chrono-storyline-all-mark i {
+    min-width: 0;
+}
+
+.chrono-storyline-segment strong {
+    color: var(--story-color);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.chrono-storyline-segment span:not(.chrono-storyline-dot, .chrono-storyline-all-mark) {
+    font:
+        500 11px/1 'SF Mono',
+        'Fira Code',
+        ui-monospace,
+        monospace;
+}
+
+.chrono-canvas {
+    position: relative;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.chrono-scroll {
+    position: absolute;
+    inset: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: grab;
+    scrollbar-color: rgba(246, 137, 0, 0.34) transparent;
+    scrollbar-width: thin;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+}
+
+.chrono-scroll:focus-visible {
+    outline: 1px solid rgba(246, 137, 0, 0.7);
+    outline-offset: -1px;
+}
+
+.chrono-scroll.is-dragging {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.chrono-scroll::-webkit-scrollbar {
+    height: 5px;
+}
+
+.chrono-scroll::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgba(246, 137, 0, 0.34);
+}
+
+.chrono-inner {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.chrono-axis {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.chrono-axis-glow {
+    stroke: rgba(244, 239, 229, 0.08);
+    stroke-width: 9;
+    filter: blur(3px);
+}
+
+.chrono-axis-line {
+    stroke: rgba(244, 239, 229, 0.28);
+    stroke-width: 1;
+}
+
+.chrono-connector {
+    fill: none;
+    stroke-width: 0.8;
+    stroke-opacity: 0.42;
+    stroke-dasharray: 2 5;
+    transition: opacity 0.2s ease;
+}
+
+.chrono-connector.is-multi-storyline {
+    stroke-opacity: 0.58;
+    stroke-dasharray: 1 4;
+}
+
+.chrono-year-halo {
+    fill: rgba(246, 137, 0, 0.12);
+}
+
+.chrono-year-node {
+    fill: #f68900;
+    filter: drop-shadow(0 0 6px rgba(246, 137, 0, 0.9));
+}
+
+.chrono-year-label,
+.chrono-gap-label {
+    position: absolute;
+    transform: translateX(-50%);
+    color: rgba(244, 239, 229, 0.68);
+    font:
+        750 11px/1 'SF Mono',
+        'Fira Code',
+        ui-monospace,
+        monospace;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.chrono-gap-label {
+    color: rgba(244, 239, 229, 0.28);
+    font-size: 8px;
+    transform: translate(-50%, -50%);
+}
+
+.chrono-event-card {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    border: 1px solid rgba(244, 239, 229, 0.13);
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(8, 8, 8, 0.88);
+    color: #f4efe5;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.48);
+    transition:
+        transform 0.24s ease,
+        border-color 0.24s ease,
+        box-shadow 0.24s ease,
+        opacity 0.24s ease;
+}
+
+.chrono-event-card:hover,
+.chrono-event-card:focus-visible,
+.chrono-event-card.is-selected {
+    z-index: 5;
+    border-color: color-mix(in srgb, var(--story-color) 72%, white 10%);
+    outline: none;
+    transform: translateY(-4px);
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.62),
+        0 0 12px color-mix(in srgb, var(--story-color) 46%, transparent);
+}
+
+.chrono-card-strip {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    display: flex;
+    flex-direction: column;
+    background: var(--story-color);
+    box-shadow: 0 0 7px var(--story-color);
+}
+
+.chrono-card-strip i {
+    min-height: 0;
+    flex: 1;
+}
+
+.chrono-card-memberships {
+    position: absolute;
+    z-index: 4;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 4px;
+    pointer-events: none;
+}
+
+.chrono-card-memberships i {
+    width: 7px;
+    height: 7px;
+    flex: none;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    border-radius: 50%;
+    background: var(--membership-color);
+    box-shadow:
+        0 0 0 2px rgba(0, 0, 0, 0.72),
+        0 0 7px color-mix(in srgb, var(--membership-color) 64%, transparent);
+}
+
+.chrono-card-media {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    display: block;
+    margin-left: 3px;
+    overflow: hidden;
+    background: var(--chrono-media-bg);
+}
+
+.chrono-card-media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    filter: grayscale(58%) contrast(1.06) brightness(0.78);
+    transition:
+        filter 0.24s ease,
+        transform 0.24s ease;
+}
+
+.chrono-card-media.is-portrait {
+    background: var(--chrono-media-bg);
+}
+
+.chrono-card-media.is-portrait::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    inset: -10px;
+    background-image: var(--portrait-backdrop-image, none);
+    background-position: center top;
+    background-size: cover;
+    filter: grayscale(45%) brightness(0.48) blur(10px);
+    transform: scale(1.08);
+}
+
+.chrono-card-media.is-portrait img {
+    position: relative;
+    z-index: 1;
+    object-fit: contain;
+    object-position: center top;
+}
+
+.chrono-card-media.is-portrait.is-cover-safe::before {
+    display: none;
+}
+
+.chrono-card-media.is-portrait.is-cover-safe img {
+    object-fit: cover;
+}
+
+.chrono-event-card:hover .chrono-card-media img,
+.chrono-event-card:focus-visible .chrono-card-media img {
+    filter: grayscale(0%) contrast(1.02) brightness(0.94);
+    transform: scale(1.035);
+}
+
+.chrono-event-card:hover .chrono-card-media.is-portrait img,
+.chrono-event-card:focus-visible .chrono-card-media.is-portrait img {
+    transform: none;
+}
+
+.chrono-card-placeholder {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: radial-gradient(
+        circle,
+        color-mix(in srgb, var(--story-color) 70%, transparent) 0 2px,
+        transparent 2.5px
+    );
+    background-size: 20px 20px;
+    opacity: 0.45;
+}
+
+.chrono-card-copy {
+    min-width: 0;
+    min-height: 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-content: end;
+    gap: 3px;
+    padding: 7px 11px 7px 13px;
+}
+
+.chrono-card-year {
+    justify-self: start;
+    border-radius: 2px;
+    background: var(--story-color);
+    color: #050505;
+    padding: 2px 6px;
+    font:
+        800 11px/1 'SF Mono',
+        'Fira Code',
+        ui-monospace,
+        monospace;
+}
+
+.chrono-card-title {
+    min-width: 0;
+    display: -webkit-box;
+    overflow: hidden;
+    color: #f4efe5;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.22;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.chrono-card-meta {
+    display: -webkit-box;
+    overflow: hidden;
+    color: rgba(244, 239, 229, 0.34);
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 1.2;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.chrono-density {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid var(--chrono-line);
+    padding: 0 16px;
+    background: rgba(2, 2, 2, 0.94);
+}
+
+.chrono-density-label {
+    flex: none;
+    display: grid;
+    gap: 1px;
+    color: #fff;
+    font:
+        750 12px/1.08 'SF Mono',
+        'Fira Code',
+        ui-monospace,
+        monospace;
+    text-align: center;
+}
+
+.chrono-density-legend {
+    flex: none;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-content: center;
+    column-gap: 16px;
+    row-gap: 6px;
+}
+
+.chrono-density-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.15;
+    white-space: nowrap;
+}
+
+.chrono-density-legend i {
+    width: 9px;
+    height: 3px;
+    flex: none;
+    display: inline-block;
+    background: var(--density-story-color);
+}
+
+.chrono-density-legend span.is-muted i {
+    background: var(--chrono-muted);
+}
+
+.chrono-density-navigator {
+    position: relative;
+    min-width: 0;
+    height: auto;
+    min-height: 56px;
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.chrono-density-navigator:focus-visible {
+    outline: 1px solid rgba(244, 239, 229, 0.52);
+    outline-offset: -2px;
+}
+
+.chrono-density-navigator svg {
+    width: 100%;
+    height: 56px;
+    display: block;
+    overflow: visible;
+}
+
+.chrono-density-cursor {
+    position: absolute;
+    top: 50%;
+    left: var(--density-position, 0%);
+    width: 1px;
+    height: 50px;
+    pointer-events: none;
+    background: rgba(244, 239, 229, 0.82);
+    box-shadow: 0 0 5px rgba(244, 239, 229, 0.4);
+    transform: translate(-0.5px, -50%);
+}
+
+.chrono-density-cursor::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #f4efe5;
+    content: '';
+    transform: translate(-50%, -50%);
+}
+
+.chrono-empty {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: var(--chrono-muted);
+    font-size: 14px;
+}
+
+@media (max-width: 1199px) {
+    .single-stage.is-ui-browser:not(.is-ui-detail) {
+        height: 100dvh;
+        min-height: 100dvh;
+        overflow: hidden;
+        grid-template-rows: auto minmax(0, 1fr);
+    }
+
+    .single-stage.is-ui-browser:not(.is-ui-detail) .stage-grid {
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    .single-stage.is-ui-browser:not(.is-ui-detail) .ui-browser,
+    .single-stage.is-ui-browser:not(.is-ui-detail) .ui-browser-main {
+        position: absolute;
+        inset: 0;
+        height: auto;
+        min-height: 0;
+    }
+
+    .chronology-overview {
+        --chrono-storyline-height: 40px;
+        --chrono-density-height: 60px;
+    }
+
+    .single-stage.is-ui-browser:not(.is-ui-detail) .topbar-actions {
+        width: auto;
+        grid-template-columns: repeat(2, var(--touch-target));
+        justify-self: end;
+        justify-content: end;
+    }
+
+    .chrono-storyline-segment {
+        gap: 6px;
+        padding: 0 12px;
+    }
+
+    .chrono-storyline-segment strong {
+        font-size: 12.5px;
+    }
+
+    .chrono-storyline-segment span:not(.chrono-storyline-dot, .chrono-storyline-all-mark) {
+        font-size: 10px;
+    }
+
+    .chrono-density {
+        padding: 0 8px;
+    }
+
+    .chrono-density-legend {
+        display: none;
+    }
+
+    .chrono-density-navigator {
+        min-height: 48px;
+    }
+
+    .chrono-density-navigator svg {
+        height: 48px;
+    }
+
+    .chrono-density-cursor {
+        height: 44px;
+    }
+}
+
+@media (max-width: 700px) {
+    .chrono-storyline-segment {
+        min-height: 40px;
+    }
+
+    .chrono-card-copy {
+        gap: 2px;
+        padding: 5px 10px 5px 12px;
+    }
+
+    .chrono-card-title {
+        font-size: 14px;
+    }
+
+    .chrono-card-meta {
+        margin-top: 3px;
+        font-size: 10.5px;
+    }
+
+    .chrono-density-label {
+        font-size: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chrono-event-card,
+    .chrono-card-media img {
+        transition: none;
+    }
+
+    .chrono-event-card:hover,
+    .chrono-event-card:focus-visible {
+        transform: none;
+    }
+}
