@@ -5594,6 +5594,71 @@
             user-select: none;
         }
 
+        .ui-detail-image-edge {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            bottom: 0;
+            width: min(20%, 96px);
+            padding: 0 12px;
+            border: none;
+            background: transparent;
+            color: rgba(244, 239, 229, 0.92);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.18s ease;
+        }
+
+        .ui-detail-image-edge.is-prev {
+            left: 0;
+            justify-content: flex-start;
+        }
+
+        .ui-detail-image-edge.is-next {
+            right: 0;
+            justify-content: flex-end;
+        }
+
+        .ui-detail-image-edge span {
+            width: 42px;
+            height: 72px;
+            border: 1px solid rgba(244, 239, 229, 0.46);
+            border-radius: 3px;
+            background: rgba(0, 0, 0, 0.68);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1;
+            transition:
+                background 0.18s ease,
+                border-color 0.18s ease,
+                color 0.18s ease,
+                transform 0.18s ease;
+        }
+
+        .ui-detail-image-stage:hover .ui-detail-image-edge,
+        .ui-detail-image-stage:focus-within .ui-detail-image-edge {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .ui-detail-image-edge:hover span,
+        .ui-detail-image-edge:focus-visible span {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: #090705;
+            transform: scale(1.04);
+        }
+
+        .ui-detail-image-edge:focus-visible {
+            outline: none;
+        }
+
         .ui-detail-image-stage.is-diagram {
             background: rgba(255, 255, 255, 0.92);
         }
@@ -5604,6 +5669,33 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+            opacity: 1;
+            transition: opacity 0.2s ease;
+        }
+
+        .ui-detail-image-stage img.is-changing {
+            opacity: 0.18;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .ui-detail-image-stage img {
+                transition: none;
+            }
+        }
+
+        @media (hover: none) {
+            .ui-detail-image-edge {
+                width: 64px;
+                padding: 0 8px;
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .ui-detail-image-edge span {
+                width: 36px;
+                height: 56px;
+                font-size: 30px;
+            }
         }
 
         .ui-detail-image-nav {
@@ -9087,6 +9179,7 @@
         let chronologyFilterStorylineId = getChronologyFilterStorylineId(activeStorylineId);
         let uiDetailImageIndex = 0;
         let uiDetailImageEventId = '';
+        let uiDetailImageAutoplayTimer = 0;
         let uiHistoryPopInProgress = false;
         let chronologyOverview = null;
 
@@ -14986,8 +15079,7 @@
         };
         const UI_CHRONOLOGY_IMAGE_OVERRIDES = {};
         const uiChronologyImageCache = new Map();
-        const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
-        const UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO = 1.35;
+        const UI_DETAIL_IMAGE_AUTOPLAY_MS = 3 * 1000;
 
         function findHumanisticExplainerImage(vm, images) {
             if (!isHumanisticMilestone(vm && vm.raw)) return '';
@@ -15097,6 +15189,7 @@
 
         function returnFromUiDetail(options = {}) {
             if (!isUiBrowserActive() || uiBrowserMode !== 'detail') return false;
+            clearUiDetailImageAutoplay();
             if (!options.skipCompletionQuiz && maybeOpenCompletionQuiz(() => {
                 returnFromUiDetail({ ...options, skipCompletionQuiz: true });
             })) {
@@ -15343,119 +15436,116 @@
             ].join('');
         }
 
-        function setUiDetailImageIndex(nextImageIndex, imageCount) {
-            if (!Number.isFinite(nextImageIndex) || !imageCount) return false;
-            const normalizedIndex = (nextImageIndex + imageCount) % imageCount;
-            if (normalizedIndex === uiDetailImageIndex) return false;
-            uiDetailImageIndex = normalizedIndex;
-            renderUiDetail();
+        function clearUiDetailImageAutoplay() {
+            if (!uiDetailImageAutoplayTimer) return;
+            window.clearTimeout(uiDetailImageAutoplayTimer);
+            uiDetailImageAutoplayTimer = 0;
+        }
+
+        function getActiveUiDetailImages() {
+            if (!isUiBrowserActive() || uiBrowserMode !== 'detail') return [];
+            return getUiDetailImages(getVm(currentIndex));
+        }
+
+        function scheduleUiDetailImageAutoplay() {
+            clearUiDetailImageAutoplay();
+            if (document.hidden || !isUiBrowserActive() || uiBrowserMode !== 'detail') return;
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            const imageStage = refs.uiBrowserMain && refs.uiBrowserMain.querySelector('.ui-detail-image-stage');
+            if (imageStage && (imageStage.matches(':hover') || imageStage.contains(document.activeElement))) return;
+            const detailImages = getActiveUiDetailImages();
+            if (detailImages.length <= 1) return;
+            uiDetailImageAutoplayTimer = window.setTimeout(() => {
+                uiDetailImageAutoplayTimer = 0;
+                const activeImages = getActiveUiDetailImages();
+                if (activeImages.length <= 1) return;
+                setUiDetailImageIndex(uiDetailImageIndex + 1, activeImages);
+            }, UI_DETAIL_IMAGE_AUTOPLAY_MS);
+        }
+
+        function updateUiDetailImageView(vm, detailImages) {
+            const imageRoot = refs.uiBrowserMain && refs.uiBrowserMain.querySelector('.ui-detail-image');
+            const imageStage = imageRoot && imageRoot.querySelector('.ui-detail-image-stage');
+            const image = imageStage && imageStage.querySelector('img');
+            const imageUrl = detailImages[uiDetailImageIndex] || '';
+            if (!imageRoot || !imageStage || !image || !imageUrl) return false;
+
+            const imageMeta = getUiPrimaryImageMeta(vm, imageUrl);
+            const imageCaptionTitle = imageMeta.name || vm.title || tx('aiHistoryEvent');
+            const imageCaptionDetail = imageMeta.role || '';
+            const captionTitle = imageRoot.querySelector('.ui-detail-caption-title');
+            const captionDetail = imageRoot.querySelector('.ui-detail-caption-detail');
+            const expectedIndex = String(uiDetailImageIndex);
+            let expectedSrc = '';
+            const revealImage = () => {
+                if (image.dataset.uiActiveImageIndex !== expectedIndex || image.src !== expectedSrc) return;
+                image.classList.remove('is-changing');
+                image.onload = null;
+                image.onerror = null;
+            };
+
+            image.classList.add('is-changing');
+            image.dataset.uiActiveImageIndex = expectedIndex;
+            image.onload = revealImage;
+            image.onerror = revealImage;
+            image.src = imageUrl;
+            expectedSrc = image.src;
+            image.alt = vm.title || tx('aiHistoryEvent');
+            imageStage.classList.toggle('is-diagram', isDiagramImage(imageUrl));
+            if (image.complete && image.naturalWidth) window.requestAnimationFrame(revealImage);
+
+            if (captionTitle) captionTitle.textContent = imageCaptionTitle;
+            if (captionDetail) {
+                captionDetail.textContent = imageCaptionDetail;
+                captionDetail.hidden = !imageCaptionDetail;
+            }
+            imageRoot.querySelectorAll('[data-ui-image-index]').forEach((button, index) => {
+                const active = index === uiDetailImageIndex;
+                button.classList.toggle('active', active);
+                if (active) button.setAttribute('aria-current', 'true');
+                else button.removeAttribute('aria-current');
+            });
             return true;
         }
 
-        function bindUiDetailImageSwipe(imageRoot, imageCount) {
-            if (!imageRoot || imageCount <= 1) return;
-            let gesture = null;
-
-            const startGesture = (pointerId, clientX, clientY) => {
-                gesture = {
-                    pointerId,
-                    startX: clientX,
-                    startY: clientY,
-                    active: false
-                };
-            };
-
-            const updateGesture = (clientX, clientY) => {
-                if (!gesture) return false;
-                const dx = clientX - gesture.startX;
-                const dy = clientY - gesture.startY;
-                if (!gesture.active && Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy) * UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO) {
-                    gesture.active = true;
-                }
-                return gesture.active;
-            };
-
-            const finishGesture = (clientX, clientY) => {
-                if (!gesture) return false;
-                const dx = clientX - gesture.startX;
-                const dy = clientY - gesture.startY;
-                const shouldFlip = Math.abs(dx) >= UI_DETAIL_IMAGE_SWIPE_THRESHOLD
-                    && Math.abs(dx) > Math.abs(dy) * UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO;
-                const nextIndex = dx < 0 ? uiDetailImageIndex + 1 : uiDetailImageIndex - 1;
-                gesture = null;
-                if (!shouldFlip) return false;
-                setUiDetailImageIndex(nextIndex, imageCount);
+        function setUiDetailImageIndex(nextImageIndex, detailImages = getActiveUiDetailImages()) {
+            const imageCount = detailImages.length;
+            if (!Number.isFinite(nextImageIndex) || !imageCount) return false;
+            const normalizedIndex = (nextImageIndex + imageCount) % imageCount;
+            if (normalizedIndex === uiDetailImageIndex) {
+                scheduleUiDetailImageAutoplay();
+                return false;
+            }
+            uiDetailImageIndex = normalizedIndex;
+            const vm = getVm(currentIndex);
+            if (!updateUiDetailImageView(vm, detailImages)) {
+                renderUiDetail();
                 return true;
-            };
+            }
+            scheduleUiDetailImageAutoplay();
+            return true;
+        }
 
-            imageRoot.addEventListener('dragstart', (event) => {
-                event.preventDefault();
+        function bindUiDetailImageAutoplayPause(imageStage, imageCount) {
+            if (!imageStage || imageCount <= 1) return;
+            imageStage.addEventListener('mouseenter', clearUiDetailImageAutoplay);
+            imageStage.addEventListener('mouseleave', scheduleUiDetailImageAutoplay);
+            imageStage.addEventListener('focusin', clearUiDetailImageAutoplay);
+            imageStage.addEventListener('focusout', (event) => {
+                if (!imageStage.contains(event.relatedTarget)) scheduleUiDetailImageAutoplay();
             });
+        }
 
-            imageRoot.addEventListener('pointerdown', (event) => {
-                if (event.button !== undefined && event.button !== 0) return;
-                startGesture(event.pointerId, event.clientX, event.clientY);
-            });
-
-            imageRoot.addEventListener('pointermove', (event) => {
-                if (!gesture || event.pointerId !== gesture.pointerId) return;
-                const isActive = updateGesture(event.clientX, event.clientY);
-                if (isActive && typeof imageRoot.setPointerCapture === 'function') {
-                    try {
-                        imageRoot.setPointerCapture(event.pointerId);
-                    } catch (_) {}
-                }
-                if (!isActive) return;
-                event.stopPropagation();
-                if (event.cancelable) event.preventDefault();
-            });
-
-            const finishPointerSwipe = (event) => {
-                if (!gesture || event.pointerId !== gesture.pointerId) return;
-                const wasActive = gesture.active;
-                const didFlip = finishGesture(event.clientX, event.clientY);
-                if (didFlip || wasActive) {
-                    event.stopPropagation();
-                    if (event.cancelable) event.preventDefault();
-                }
-                if (wasActive && typeof imageRoot.releasePointerCapture === 'function') {
-                    try {
-                        imageRoot.releasePointerCapture(event.pointerId);
-                    } catch (_) {}
-                }
-            };
-
-            imageRoot.addEventListener('pointerup', finishPointerSwipe);
-            imageRoot.addEventListener('pointercancel', () => {
-                gesture = null;
-            });
-
-            imageRoot.addEventListener('touchstart', (event) => {
-                const touch = event.touches && event.touches[0];
-                if (!touch) return;
-                startGesture(touch.identifier, touch.clientX, touch.clientY);
-            }, { passive: true });
-
-            imageRoot.addEventListener('touchmove', (event) => {
-                const touch = event.touches && event.touches[0];
-                if (!touch || !gesture || touch.identifier !== gesture.pointerId) return;
-                if (!updateGesture(touch.clientX, touch.clientY)) return;
-                event.stopPropagation();
-                if (event.cancelable) event.preventDefault();
-            }, { passive: false });
-
-            imageRoot.addEventListener('touchend', (event) => {
-                const touch = Array.from(event.changedTouches || []).find((item) => gesture && item.identifier === gesture.pointerId);
-                if (!touch) return;
-                if (finishGesture(touch.clientX, touch.clientY)) {
-                    event.stopPropagation();
-                    if (event.cancelable) event.preventDefault();
-                }
-            }, { passive: false });
-
-            imageRoot.addEventListener('touchcancel', () => {
-                gesture = null;
-            }, { passive: true });
+        function buildUiDetailImageEdgeButtonsHtml(detailImages) {
+            if (!Array.isArray(detailImages) || detailImages.length <= 1) return '';
+            return `
+                <button class="ui-detail-image-edge is-prev" type="button" data-ui-image-step="-1" aria-label="${escapeHtml(uiText('Previous image', '上一张图片'))}">
+                    <span aria-hidden="true">‹</span>
+                </button>
+                <button class="ui-detail-image-edge is-next" type="button" data-ui-image-step="1" aria-label="${escapeHtml(uiText('Next image', '下一张图片'))}">
+                    <span aria-hidden="true">›</span>
+                </button>
+            `;
         }
 
         function buildUiDetailImagePagerHtml(detailImages) {
@@ -15596,6 +15686,7 @@
         }
 
         function renderUiDetail() {
+            clearUiDetailImageAutoplay();
             ensureUiSelection();
             const vm = getVm(currentIndex);
             const raw = vm.raw || {};
@@ -15626,11 +15717,12 @@
                 ? `
                     <div class="ui-detail-image">
                         <div class="ui-detail-image-stage${detailImageClass}">
-                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" draggable="false">
+                            <img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}" data-ui-active-image-index="${uiDetailImageIndex}" draggable="false">
+                            ${buildUiDetailImageEdgeButtonsHtml(detailImages)}
                         </div>
                         <div class="ui-detail-caption">
                             <span class="ui-detail-caption-title">${escapeHtml(imageCaptionTitle)}</span>
-                            ${imageCaptionDetail ? `<span class="ui-detail-caption-detail">${escapeHtml(imageCaptionDetail)}</span>` : ''}
+                            <span class="ui-detail-caption-detail"${imageCaptionDetail ? '' : ' hidden'}>${escapeHtml(imageCaptionDetail)}</span>
                             ${buildUiDetailImagePagerHtml(detailImages)}
                         </div>
                     </div>
@@ -15670,7 +15762,13 @@
             refs.uiBrowserMain.querySelectorAll('[data-ui-image-index]').forEach((button) => {
                 button.addEventListener('click', () => {
                     const nextImageIndex = Number(button.dataset.uiImageIndex);
-                    setUiDetailImageIndex(nextImageIndex, detailImages.length);
+                    setUiDetailImageIndex(nextImageIndex, detailImages);
+                });
+            });
+            refs.uiBrowserMain.querySelectorAll('[data-ui-image-step]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const imageStep = Number(button.dataset.uiImageStep);
+                    setUiDetailImageIndex(uiDetailImageIndex + imageStep, detailImages);
                 });
             });
             refs.uiBrowserMain.querySelectorAll('[data-ui-media-video]').forEach((button) => {
@@ -15692,10 +15790,14 @@
             refs.uiBrowserMain.querySelectorAll('[data-ui-game-evolution]').forEach((button) => {
                 button.addEventListener('click', () => openGameEvolutionVideo(vm));
             });
-            bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
+            bindUiDetailImageAutoplayPause(
+                refs.uiBrowserMain.querySelector('.ui-detail-image-stage'),
+                detailImages.length
+            );
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
             scheduleUiDetailLocationFit();
             scheduleAvatarFallbackFit();
+            scheduleUiDetailImageAutoplay();
         }
 
         function openChronologyMilestone(eventId) {
@@ -15718,6 +15820,7 @@
         }
 
         function renderChronologyOverview() {
+            clearUiDetailImageAutoplay();
             if (!window.ChronologyOverview) return;
             if (!chronologyOverview) {
                 chronologyOverview = window.ChronologyOverview.create(refs.uiBrowserMain, {
@@ -15835,6 +15938,7 @@
         function renderPage(index, renderOptions = {}) {
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
             if (isUiBrowserActive()) ensureUiSelection();
+            if (!isUiBrowserActive() || uiBrowserMode !== 'detail') clearUiDetailImageAutoplay();
             const vm = getVm(currentIndex);
             startAnalyticsMilestoneView(vm, {
                 navigationSource: renderOptions.navigationSource || 'render',
@@ -16407,7 +16511,12 @@
                 }, 180);
             }, { passive: true });
             window.addEventListener('beforeunload', clearIdleAdvanceTimer);
+            window.addEventListener('beforeunload', clearUiDetailImageAutoplay);
             window.addEventListener('popstate', handleUiBrowserHistoryPop);
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) clearUiDetailImageAutoplay();
+                else scheduleUiDetailImageAutoplay();
+            });
             document.addEventListener('pointerdown', registerUserActivity, { passive: true });
             document.addEventListener('pointermove', registerUserActivity, { passive: true });
             document.addEventListener('click', registerUserActivity, { passive: true });
