@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-27 10:44
+// 生成时间: 2026-07-28 09:22
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -15436,12 +15436,14 @@ const milestones = [
       "images": [
         "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
       ],
       "videos": [],
       "assetIds": [
         "asset-1997-deep-blue-feng-hsiung-hsu",
         "asset-1997-deep-blue-search-tree",
+        "asset-1997-deep-blue-murray-campbell",
         "asset-1997-deep-blue-chip-board"
       ]
     },
@@ -15470,7 +15472,7 @@ const milestones = [
         },
         "sourceId": "source-feng-hsiung-hsu-chm-portrait",
         "rights": {
-          "status": "user-provided",
+          "status": "user-directed-use",
           "license": {
             "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
             "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
@@ -15502,6 +15504,30 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+        "caption": {
+          "zh": "默里·坎贝尔肖像",
+          "en": "Murray Campbell portrait"
+        },
+        "subcaption": {
+          "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
+          "en": "Portrait from IBM Research profile."
+        },
+        "license": {
+          "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
+          "en": "IBM Research profile image; reuse rights not stated."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
+            "en": "IBM Research profile image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
         "caption": {
@@ -56339,7 +56365,7 @@ const milestones = [
           "en": "Co-author of Highway Networks",
           "zh": "Highway Networks 共同作者"
         },
-        "avatar": "resources/images/external/2014-highway-network/klaus-greff-github.jpg",
+        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -56360,8 +56386,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
-        "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
-        "resources/images/external/2014-highway-network/klaus-greff-github.jpg"
+        "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg"
       ],
       "videos": [
         {
@@ -56377,8 +56402,7 @@ const milestones = [
       ],
       "assetIds": [
         "asset-2014-highway-network-architecture-01",
-        "asset-2014-highway-network-people-01",
-        "asset-2014-highway-network-klaus-greff"
+        "asset-2014-highway-network-people-01"
       ]
     },
     "imageMeta": {
@@ -56442,39 +56466,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/external/2014-highway-network/klaus-greff-github.jpg": {
-        "caption": {
-          "zh": "克劳斯·格雷夫肖像",
-          "en": "Klaus Greff portrait"
-        },
-        "subcaption": {
-          "zh": "Highway Networks 共同作者。",
-          "en": "Co-author of Highway Networks."
-        },
-        "sourceName": {
-          "zh": "Klaus Greff 的 GitHub 个人资料",
-          "en": "Klaus Greff's GitHub profile"
-        },
-        "sourceUrl": "https://github.com/Qwlouse",
-        "license": {
-          "zh": "本人 GitHub 个人资料公开头像；页面未声明可再分发许可，外部发布前需核验使用权。",
-          "en": "Public profile image from the subject's GitHub account; no redistribution license is stated, so usage rights must be checked before external publication."
-        },
-        "usage": {
-          "zh": "用于识别 Highway Networks 共同作者克劳斯·格雷夫。",
-          "en": "Used to identify Highway Networks co-author Klaus Greff."
-        },
-        "sourceId": "source-klaus-greff-github",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本人 GitHub 个人资料公开头像；页面未声明可再分发许可，外部发布前需核验使用权。",
-            "en": "Public profile image from the subject's GitHub account; no redistribution license is stated, so usage rights must be checked before external publication."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
       }
     },
     "achievement": {
@@ -56526,21 +56517,6 @@ const milestones = [
           "sourceType": "personal-page"
         },
         {
-          "id": "source-klaus-greff-github",
-          "type": {
-            "zh": "图片来源",
-            "en": "Image source"
-          },
-          "label": {
-            "zh": "Klaus Greff 的 GitHub 个人资料",
-            "en": "Klaus Greff's GitHub profile"
-          },
-          "url": "https://github.com/Qwlouse",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
-        },
-        {
           "id": "source-juergen-schmidhuber-idsia",
           "type": {
             "zh": "个人主页",
@@ -56560,7 +56536,6 @@ const milestones = [
         "source-highway-networks-paper",
         "source-resnet-follow-up-paper",
         "source-klaus-greff-homepage",
-        "source-klaus-greff-github",
         "source-juergen-schmidhuber-idsia"
       ],
       "claimIds": [
@@ -63867,7 +63842,7 @@ const milestones = [
         },
         "sourceId": "source-feng-hsiung-hsu-chm-portrait",
         "rights": {
-          "status": "user-provided",
+          "status": "user-directed-use",
           "license": {
             "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
             "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
