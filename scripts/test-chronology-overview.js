@@ -245,6 +245,68 @@ assert.ok(
 );
 console.log('PASS chronology cards expose larger desktop and compact dimensions');
 
+const shortLandscapeViewport = overview.getOverviewViewport(
+    { clientWidth: 800, clientHeight: 520 },
+    { innerWidth: 800, innerHeight: 520 }
+);
+assert.equal(shortLandscapeViewport.mode, 'shortLandscape', 'short phone landscape should use its compact layout mode');
+assert.equal(
+    shortLandscapeViewport.timelineHeight,
+    431,
+    'short phone landscape should reserve compact filter and density chrome'
+);
+const shortLandscapeLayout = overview.buildTimelineLayout(canonicalMilestones, {
+    mode: shortLandscapeViewport.mode,
+    viewportWidth: shortLandscapeViewport.width,
+    viewportHeight: shortLandscapeViewport.timelineHeight,
+    localize
+});
+assert.deepEqual(
+    [shortLandscapeLayout.cardWidth, shortLandscapeLayout.cardHeight],
+    [196, 170],
+    'short phone landscape should use smaller cards that retain the complete information hierarchy'
+);
+assert.ok(
+    shortLandscapeLayout.cards.every(
+        (card) => card.y >= 0 && card.y + shortLandscapeLayout.cardHeight <= shortLandscapeViewport.timelineHeight
+    ),
+    'short phone landscape should keep both card rows inside the visible timeline canvas'
+);
+console.log('PASS chronology short landscape keeps both card rows visible');
+
+const tallLandscapeViewport = overview.getOverviewViewport(
+    { clientWidth: 800, clientHeight: 560 },
+    { innerWidth: 800, innerHeight: 700 }
+);
+assert.equal(
+    tallLandscapeViewport.mode,
+    'mediumLandscape',
+    'medium-height landscape should use a layout sized for its available canvas'
+);
+assert.equal(
+    tallLandscapeViewport.timelineHeight,
+    455,
+    'tall landscape should reserve the same responsive chrome height as its CSS media query'
+);
+const tallLandscapeLayout = overview.buildTimelineLayout(canonicalMilestones, {
+    mode: tallLandscapeViewport.mode,
+    viewportWidth: tallLandscapeViewport.width,
+    viewportHeight: tallLandscapeViewport.timelineHeight,
+    localize
+});
+assert.deepEqual(
+    [tallLandscapeLayout.cardWidth, tallLandscapeLayout.cardHeight],
+    [212, 180],
+    'medium-height landscape should retain larger cards than the shortest phone layout'
+);
+assert.ok(
+    tallLandscapeLayout.cards.every(
+        (card) => card.y >= 0 && card.y + tallLandscapeLayout.cardHeight <= tallLandscapeViewport.timelineHeight
+    ),
+    'medium-height landscape should keep both card rows inside the visible timeline canvas'
+);
+console.log('PASS chronology medium landscape stays aligned with CSS media queries');
+
 const explicitPortrait = milestones.find((item) => item.id === 'milestone-ai100-2012-alexnet');
 const inferredPortrait = milestones.find((item) => item.id === 'milestone-1950-turing-test');
 const namedPersonPhoto = milestones.find((item) => item.id === 'milestone-ai100-1943-mcculloch-pitts-neuron');
