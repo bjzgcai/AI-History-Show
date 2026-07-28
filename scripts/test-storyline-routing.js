@@ -69,6 +69,8 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
+const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
@@ -76,8 +78,78 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /UI_CONTINENTS\.filter\(\(continent\) => \(continentCounts\.get\(continent\.id\) \|\| 0\) > 0\)\.map/,
-    'the event map should omit continent controls whose event count is zero'
+    /shared\/chronology-overview\.js/,
+    'the default UI shell should load the production chronology overview module'
+);
+assert.match(
+    indexHtml,
+    /unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(allMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
+    'the default overview should merge storyline variants by canonical Archive event'
+);
+assert.match(
+    indexHtml,
+    /function getDetailMilestone\(index\)[\s\S]*?findMilestoneById\(uiSelectedEventId\)[\s\S]*?getCanonicalEventId\(selectedMilestone\) === getCanonicalEventId\(defaultMilestone\)/,
+    'detail rendering should resolve the exact variant selected from a canonical card'
+);
+assert.match(
+    indexHtml,
+    /window\.ChronologyOverview\.create\(refs\.uiBrowserMain,[\s\S]*?onOpenMilestone:\s*openChronologyMilestone/,
+    'the chronology overview should open milestones through the existing detail renderer'
+);
+assert.match(
+    indexHtml,
+    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*buildUnifiedMilestones\(\)/,
+    'the overview should retain the complete canonical filters while restoring the selected storyline'
+);
+assert.match(
+    indexHtml,
+    /function openChronologyMilestone\(eventId\)[\s\S]*?detailMilestones = getChronologyVisibleMilestones\(\)[\s\S]*?milestoneList = detailMilestones/,
+    'opening a chronology card should use the active filter only for detail navigation'
+);
+assert.match(
+    indexHtml,
+    /function getStorylineSelectorStorylineId\(\)[\s\S]*?uiBrowserMode === 'detail'[\s\S]*?getChronologyOptionStorylineId\(chronologyFilterStorylineId\)[\s\S]*?const selectedStorylineId = getStorylineSelectorStorylineId\(\)[\s\S]*?option\.id === selectedStorylineId/,
+    'detail storyline controls should reflect the filter used to enter the event'
+);
+assert.match(
+    indexHtml,
+    /function navigate\(direction, options = \{\}\)[\s\S]*?currentIndex \+ 1, milestoneList\.length - 1[\s\S]*?uiSelectedEventId = milestoneList\[nextIndex\]/,
+    'detail arrow navigation should stay within the filtered milestone list'
+);
+assert.match(
+    indexHtml,
+    /function jumpTo\(index[\s\S]*?uiSelectedEventId = milestoneList\[index\]\.id[\s\S]*?replaceUiDetailHistoryEntry\(\)/,
+    'detail arrow navigation should update the current event URL without adding another history entry'
+);
+assert.doesNotMatch(
+    chronologySource,
+    /class="chrono-toolbar"/,
+    'the chronology overview should not duplicate storyline controls in a separate toolbar'
+);
+assert.match(
+    chronologySource,
+    /const filters = \[[\s\S]*?id: 'all'[\s\S]*?class="chrono-storyline-strip"[\s\S]*?\$\{filters/,
+    'the single storyline strip should begin with an all-events filter'
+);
+assert.match(
+    chronologySource,
+    /selectMilestonesByStoryline\(getCanonicalMilestones\(\), state\.storylineId\)[\s\S]*?class="chrono-card-memberships"/,
+    'storyline filters should select their variant while multi-storyline cards expose membership markers'
+);
+assert.match(
+    chronologyCss,
+    /\.chrono-card-strip i[\s\S]*?flex:\s*1[\s\S]*?\.chrono-card-memberships i[\s\S]*?background:\s*var\(--membership-color\)/,
+    'multi-storyline cards should use segmented color strips and visible membership dots'
+);
+assert.match(
+    chronologyCss,
+    /\.single-stage\.is-ui-browser:not\(\.is-ui-detail\) \.storyline-trigger\s*\{[\s\S]*?display:\s*none/,
+    'the redundant top-right storyline selector should stay hidden on the chronology overview'
+);
+assert.match(
+    indexHtml,
+    /renderTimeline\(vm\);[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?document\.title = `\$\{tx\('appTitleSingle'\)\} - \$\{getStorylineLabel\(getActiveStorylineOption\(\)\)/,
+    'the chronology overview should use its storyline title instead of retaining the last event title'
 );
 assert.match(
     indexHtml,
@@ -182,7 +254,7 @@ assert.doesNotMatch(
 assert.match(
     indexHtml,
     /function maybeOpenCompletionQuiz\(onComplete\)[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?const quizzes = getQuizItems\(vm\)[\s\S]*?!quizzes\.length/,
-    'completion quizzes should depend on event quiz data and stay disabled on the unified map level'
+    'completion quizzes should depend on event quiz data and stay disabled on the chronology overview'
 );
 assert.match(
     indexHtml,
@@ -202,7 +274,7 @@ assert.match(
 assert.match(
     indexHtml,
     /if \(isUiBrowserActive\(\) && uiBrowserMode !== 'detail'\) \{[\s\S]*?resetCompletionQuizView\(\)[\s\S]*?\} else \{[\s\S]*?markCompletionQuizView\(vm\)/,
-    'the unified map level should reset quiz dwell time while event details start it'
+    'the chronology overview should reset quiz dwell time while event details start it'
 );
 console.log('PASS unified UI boot state and storyline detail URL normalization');
 
@@ -220,11 +292,6 @@ assert.match(
     indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?candidates\.filter\(\(url\) => url !== sideImageUrl\)/,
     'detail image lists should exclude the image mounted in the right-side media panel'
-);
-assert.match(
-    indexHtml,
-    /function getUiPrimaryImage\(vm\)[\s\S]*?getUiImageCandidates\(vm\)\[0\]/,
-    'map and event-list thumbnails should keep using the complete image candidates'
 );
 assert.match(
     indexHtml,

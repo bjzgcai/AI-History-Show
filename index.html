@@ -5458,8 +5458,7 @@
             display: none;
             grid-column: 1 / -1;
             min-height: 0;
-            grid-template-rows: minmax(0, 1fr) 56px;
-            gap: 12px;
+            grid-template-rows: minmax(0, 1fr);
         }
 
         .single-stage.is-ui-browser .stage-grid {
@@ -5557,16 +5556,6 @@
             height: 900px;
         }
 
-        .ui-level-one {
-            height: 825px;
-            min-height: 0;
-            display: grid;
-            grid-template-columns: minmax(520px, 0.48fr) minmax(0, 1fr);
-            gap: 14px;
-        }
-
-        .ui-map-panel,
-        .ui-event-panel,
         .ui-detail-panel,
         .ui-side-panel,
         .ui-info-card,
@@ -5581,890 +5570,12 @@
             box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.024);
         }
 
-        .ui-map-panel,
-        .ui-event-panel {
-            position: relative;
-            min-height: 0;
-            overflow: hidden;
-            padding: 22px 24px;
-            display: grid;
-            grid-template-rows: auto minmax(0, 1fr);
-            gap: 16px;
-        }
-
-        .ui-level-one.is-year-mode .ui-map-panel,
-        .ui-level-one.is-region-mode .ui-map-panel,
-        .ui-level-one.is-year-mode .ui-event-panel {
-            padding: 16px;
-        }
-
-        .ui-level-one.is-year-mode .ui-map-panel,
-        .ui-level-one.is-region-mode .ui-map-panel {
-            grid-template-rows: auto 154px minmax(0, 1fr) 278px;
-            gap: 8px;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-panel,
-        .ui-level-one.is-region-mode .ui-event-panel {
-            position: relative;
-            grid-template-rows: minmax(0, 1fr);
-            gap: 10px;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-panel::before,
-        .ui-level-one.is-year-mode .ui-event-panel::after,
-        .ui-level-one.is-region-mode .ui-event-panel::before,
-        .ui-level-one.is-region-mode .ui-event-panel::after {
-            content: "";
-            position: absolute;
-            left: 16px;
-            bottom: 16px;
-            height: 3px;
-            border-radius: 999px;
-            pointer-events: none;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-panel::before,
-        .ui-level-one.is-region-mode .ui-event-panel::before {
-            right: 16px;
-            background: rgba(244, 239, 229, 0.14);
-        }
-
-        .ui-level-one.is-year-mode .ui-event-panel::after,
-        .ui-level-one.is-region-mode .ui-event-panel::after {
-            left: calc(16px + var(--ui-event-progress-left, 0px));
-            width: var(--ui-event-progress-width, min(42%, 520px));
-            background: var(--accent);
-            box-shadow: 0 0 16px rgba(246, 137, 0, 0.18);
-        }
-
-        .ui-level-one.is-year-mode .ui-event-panel-heading,
-        .ui-level-one.is-region-mode .ui-event-panel-heading {
-            display: none;
-        }
-
-        .ui-map-heading {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
-            align-items: start;
-            gap: 18px;
-        }
-
-        .ui-map-year {
-            color: var(--accent);
-            font-family: "Gotham", "Arial Narrow", "OPPOSans", sans-serif;
-            font-size: 64px;
-            font-weight: 900;
-            line-height: 0.98;
-            letter-spacing: 0;
-        }
-
-        .ui-map-mode {
-            color: var(--accent);
-            font-size: 26px;
-            font-weight: 900;
-            line-height: 1;
-            padding-top: 12px;
-        }
-
-        .ui-level-one.is-region-mode .ui-map-year {
-            font-family: "OPPOSans", "PingFang SC", sans-serif;
-            font-size: 56px;
-        }
-
         .ui-section-kicker {
             color: var(--accent);
             font-size: 13px;
             font-weight: 900;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-        }
-
-        .ui-section-title {
-            margin-top: 6px;
-            color: rgba(255, 255, 255, 0.96);
-            font-size: 30px;
-            font-weight: 900;
-            line-height: 1.08;
-            letter-spacing: 0;
-        }
-
-        .ui-section-note {
-            margin-top: 8px;
-            color: rgba(244, 239, 229, 0.58);
-            font-size: 13px;
-            font-weight: 750;
-            line-height: 1.35;
-        }
-
-        .ui-map-surface {
-            position: relative;
-            z-index: 1;
-            min-height: 0;
-            border: none;
-            border-radius: 4px;
-            overflow: hidden;
-            background: transparent;
-        }
-
-        .ui-map-geo-layer {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 100%;
-            height: calc(100% - 16px);
-            transform: translate(-50%, -50%);
-            transform-origin: center center;
-            z-index: 2;
-        }
-
-        .ui-map-dots {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .ui-map-routes {
-            position: absolute;
-            inset: 0;
-            z-index: 3;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .ui-map-route {
-            fill: none;
-            stroke: rgba(246, 137, 0, 0.42);
-            stroke-width: 1.15;
-            stroke-dasharray: 3 5;
-            vector-effect: non-scaling-stroke;
-        }
-
-        .ui-map-callout-zone {
-            position: relative;
-            z-index: 3;
-            min-height: 0;
-            overflow: hidden;
-            scrollbar-width: none;
-        }
-
-        .ui-level-one.is-year-mode .ui-map-callout-zone:last-child,
-        .ui-level-one.is-region-mode .ui-map-callout-zone:last-child {
-            align-self: end;
-            width: 100%;
-        }
-
-        .ui-map-callout-zone::-webkit-scrollbar {
-            display: none;
-        }
-
-        .ui-map-callout-lines {
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            overflow: visible;
-            pointer-events: none;
-        }
-
-        .ui-map-callout-line {
-            fill: none;
-            stroke: rgba(246, 137, 0, 0.48);
-            stroke-width: 1.1;
-            stroke-dasharray: 3 5;
-            vector-effect: non-scaling-stroke;
-        }
-
-        .ui-map-callout {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            border: none;
-            background: transparent;
-            color: rgba(244, 239, 229, 0.82);
-            padding: 0;
-            display: grid;
-            grid-template-columns: 8px minmax(0, 1fr);
-            gap: 7px;
-            text-align: left;
-            font: inherit;
-            cursor: pointer;
-        }
-
-        .ui-map-callout-strip {
-            position: relative;
-            z-index: 2;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            grid-auto-rows: 34px;
-            column-gap: 14px;
-            row-gap: 6px;
-            align-items: start;
-            padding: 0 0 4px;
-        }
-
-        .ui-level-one.is-year-mode .ui-map-callout-zone:last-child .ui-map-callout-strip,
-        .ui-level-one.is-region-mode .ui-map-callout-zone:last-child .ui-map-callout-strip {
-            align-content: end;
-        }
-
-        .ui-map-callout-dot {
-            width: 7px;
-            height: 7px;
-            margin-top: 4px;
-            border-radius: 1px;
-            background: var(--accent);
-        }
-
-        .ui-map-callout-text {
-            min-width: 0;
-            display: grid;
-            gap: 2px;
-            font-size: 11px;
-            font-weight: 800;
-            line-height: 1.22;
-        }
-
-        .ui-map-callout-text strong {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 12px;
-            font-weight: 900;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .ui-map-callout-text span {
-            color: rgba(244, 239, 229, 0.62);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .ui-map-callout-count {
-            color: var(--accent);
-            font-weight: 900;
-        }
-
-        .ui-map-dot {
-            position: absolute;
-            width: 1.62%;
-            aspect-ratio: 1;
-            border-radius: 1px;
-            background: rgb(65, 66, 66);
-            transform: translate(-50%, -50%);
-        }
-
-        .ui-map-dot.active {
-            background: var(--accent);
-            box-shadow: 0 0 8px rgba(246, 137, 0, 0.24);
-        }
-
-        .ui-continent-button {
-            position: absolute;
-            z-index: 2;
-            border: 1px solid transparent;
-            border-radius: 6px;
-            background: transparent;
-            color: rgba(244, 239, 229, 0.86);
-            padding: 10px 12px;
-            display: grid;
-            gap: 4px;
-            min-width: 0;
-            min-height: 0;
-            text-align: left;
-            cursor: pointer;
-            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-        }
-
-        .ui-continent-button:hover,
-        .ui-continent-button.active {
-            transform: none;
-            border-color: rgba(246, 137, 0, 0.76);
-            background: rgba(246, 137, 0, 0.08);
-        }
-
-        .ui-level-one.is-year-mode .ui-continent-name,
-        .ui-level-one.is-year-mode .ui-continent-count {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            clip: rect(0 0 0 0);
-            white-space: nowrap;
-        }
-
-        .ui-level-one.is-year-mode .ui-map-routes {
-            display: none;
-        }
-
-        .ui-continent-name {
-            color: rgba(255, 255, 255, 0.94);
-            font-size: 16px;
-            font-weight: 900;
-        }
-
-        .ui-continent-count {
-            color: var(--accent);
-            font-size: 12px;
-            font-weight: 850;
-        }
-
-        .ui-map-pin {
-            position: absolute;
-            z-index: 4;
-            border: none;
-            background: transparent;
-            color: rgba(244, 239, 229, 0.84);
-            padding: 0;
-            display: block;
-            width: 18px;
-            height: 18px;
-            text-align: left;
-            font: inherit;
-            cursor: pointer;
-            transform: translate(-50%, -50%);
-        }
-
-        .ui-map-pin-dot {
-            display: none;
-        }
-
-        .ui-map-pin-label {
-            display: none;
-        }
-
-        .ui-map-pin-label strong {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 12px;
-            font-weight: 900;
-        }
-
-        .ui-event-list {
-            min-height: 0;
-            overflow: auto;
-            display: grid;
-            align-content: start;
-            gap: 12px;
-            padding-right: 4px;
-            scrollbar-width: thin;
-            scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-        }
-
-        .ui-level-one.is-year-mode .ui-event-list,
-        .ui-level-one.is-region-mode .ui-event-list {
-            grid-auto-flow: column;
-            grid-auto-columns: calc((100% - 32px) / 3);
-            grid-template-columns: none;
-            align-content: stretch;
-            align-items: stretch;
-            gap: 16px;
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding: 0 0 34px;
-            cursor: grab;
-            touch-action: pan-x;
-        }
-
-        .ui-level-one.is-single-event .ui-event-list {
-            grid-auto-columns: calc((100% - 32px) / 3);
-            justify-content: center;
-            cursor: default;
-        }
-
-        .ui-event-card {
-            min-height: 176px;
-            border: 1px solid rgba(244, 239, 229, 0.11);
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.032);
-            color: inherit;
-            padding: 12px;
-            display: grid;
-            grid-template-columns: 190px minmax(0, 1fr);
-            gap: 14px;
-            text-align: left;
-            cursor: pointer;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-card,
-        .ui-level-one.is-region-mode .ui-event-card {
-            min-width: 0;
-            min-height: 0;
-            border: none;
-            border-radius: 4px;
-            background: transparent;
-            padding: 0;
-            grid-template-columns: 1fr;
-            grid-template-rows:
-                auto
-                auto
-                136px
-                296px
-                clamp(112px, 12.2vh, 136px)
-                auto;
-            align-content: start;
-            gap: 0;
-        }
-
-        .ui-event-card:hover,
-        .ui-event-card:focus-visible {
-            border-color: rgba(246, 137, 0, 0.72);
-            outline: none;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-card:hover .ui-event-title,
-        .ui-level-one.is-year-mode .ui-event-card:focus-visible .ui-event-title,
-        .ui-level-one.is-region-mode .ui-event-card:hover .ui-event-title,
-        .ui-level-one.is-region-mode .ui-event-card:focus-visible .ui-event-title {
-            color: var(--accent);
-        }
-
-        .ui-event-image {
-            min-width: 0;
-            min-height: 0;
-            border-radius: 6px;
-            overflow: hidden;
-            background: rgba(255, 255, 255, 0.05);
-            display: grid;
-            place-items: center;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-image,
-        .ui-level-one.is-region-mode .ui-event-image {
-            --ui-event-image-frame: clamp(8px, 0.85vw, 13px);
-            grid-row: 4;
-            order: initial;
-            width: min(100%, clamp(280px, 23.5vw, 460px));
-            height: 296px;
-            aspect-ratio: auto;
-            border-radius: 0;
-            border: none;
-            background: rgba(244, 239, 229, 0.96);
-            border: var(--ui-event-image-frame) solid rgba(244, 239, 229, 0.98);
-            align-self: start;
-            justify-self: center;
-            align-items: center;
-            justify-items: center;
-            overflow: hidden;
-        }
-
-        .ui-event-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-image img,
-        .ui-level-one.is-region-mode .ui-event-image img {
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 100%;
-            box-sizing: border-box;
-            border: none;
-            object-fit: contain;
-            background: transparent;
-        }
-
-        .ui-event-image span {
-            color: rgba(244, 239, 229, 0.45);
-            font-size: 12px;
-            font-weight: 850;
-        }
-
-        .ui-event-copy {
-            min-width: 0;
-            display: grid;
-            align-content: start;
-            gap: 9px;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-copy,
-        .ui-level-one.is-region-mode .ui-event-copy {
-            display: contents;
-        }
-
-        .ui-event-meta {
-            color: var(--accent);
-            font-size: 12px;
-            font-weight: 850;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-meta,
-        .ui-level-one.is-region-mode .ui-event-meta {
-            order: 1;
-            align-self: start;
-            color: var(--accent);
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
-            font-size: 15px;
-            line-height: 1.18;
-            letter-spacing: 0;
-            text-transform: none;
-            display: grid;
-            align-content: start;
-            gap: 2px;
-            min-width: 0;
-            overflow: hidden;
-            justify-self: center;
-            text-align: center;
-            width: min(100%, clamp(280px, 23.5vw, 460px));
-        }
-
-        .ui-event-year {
-            flex: 0 0 auto;
-            font-family: "Gotham", "Arial Narrow", "OPPOSans", sans-serif;
-            font-weight: 900;
-        }
-
-        .ui-event-location {
-            min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            font-weight: 900;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-year,
-        .ui-level-one.is-region-mode .ui-event-year {
-            font-size: 42px;
-            line-height: 1.12;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-location,
-        .ui-level-one.is-region-mode .ui-event-location {
-            font-size: 15px;
-            line-height: 1.18;
-            white-space: nowrap;
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .ui-event-title {
-            color: rgba(255, 255, 255, 0.95);
-            font-size: 22px;
-            font-weight: 900;
-            line-height: 1.12;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-title,
-        .ui-level-one.is-region-mode .ui-event-title {
-            order: 2;
-            align-self: start;
-            margin-top: 30px;
-            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
-            font-size: 25px;
-            line-height: 1.2;
-            min-height: 2.12em;
-            display: -webkit-box;
-            overflow: hidden;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            text-align: center;
-            justify-self: center;
-            width: min(100%, clamp(280px, 23.5vw, 460px));
-        }
-
-        .ui-event-desc {
-            color: rgba(244, 239, 229, 0.72);
-            font-size: 14px;
-            font-weight: 650;
-            line-height: 1.42;
-            display: -webkit-box;
-            overflow: hidden;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-desc,
-        .ui-level-one.is-region-mode .ui-event-desc {
-            display: none;
-            order: 5;
-            color: rgba(244, 239, 229, 0.68);
-            font-size: 13px;
-            line-height: 1.42;
-            -webkit-line-clamp: 3;
-        }
-
-        .ui-event-caption {
-            order: 4;
-            color: rgba(244, 239, 229, 0.78);
-            font-size: 13px;
-            font-weight: 700;
-            line-height: 1.45;
-        }
-
-        .ui-level-one.is-year-mode .ui-event-caption,
-        .ui-level-one.is-region-mode .ui-event-caption {
-            grid-row: 6;
-            align-self: start;
-            justify-self: center;
-            margin-top: 0;
-            padding-bottom: 0;
-            color: rgba(244, 239, 229, 0.82);
-            font-size: clamp(11px, 0.73vw, 15px);
-            line-height: 1.4;
-            display: grid;
-            gap: clamp(5px, 0.68vh, 8px);
-            overflow: hidden;
-            align-content: start;
-            text-align: center;
-            width: min(100%, clamp(280px, 23.5vw, 460px));
-        }
-
-        .ui-event-caption-title,
-        .ui-event-caption-detail {
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .ui-event-caption-title {
-            white-space: nowrap;
-        }
-
-        .ui-event-caption-detail {
-            color: rgba(244, 239, 229, 0.72);
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-        }
-
-        .ui-browser-timeline {
-            min-height: 0;
-            position: relative;
-            border-top: 1px solid rgba(244, 239, 229, 0.08);
-            padding: 8px 0 0;
-            display: block;
-            align-content: start;
-            overflow: visible;
-        }
-
-        .single-stage.is-ui-browser .ui-browser-timeline {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 56px;
-            z-index: 5;
-        }
-
-        .single-stage.is-ui-browser.is-ui-detail .ui-browser-timeline {
-            display: none;
-            border-top: none;
-        }
-
-        .ui-browser-timeline::before,
-        .ui-browser-timeline::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            z-index: 3;
-            width: 42px;
-            pointer-events: none;
-        }
-
-        .ui-browser-timeline::before {
-            left: 0;
-            background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-        }
-
-        .ui-browser-timeline::after {
-            right: 0;
-            background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-        }
-
-        .ui-timeline-nav {
-            position: absolute;
-            top: 21px;
-            z-index: 4;
-            width: 18px;
-            height: 22px;
-            border: none;
-            background: transparent;
-            padding: 0;
-            cursor: pointer;
-        }
-
-        .ui-timeline-nav::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            width: 0;
-            height: 0;
-            border-top: 7px solid transparent;
-            border-bottom: 7px solid transparent;
-            opacity: 0.82;
-            transform: translateY(-50%);
-            transition: opacity 0.2s ease, border-color 0.2s ease;
-        }
-
-        .ui-timeline-nav:hover::before,
-        .ui-timeline-nav:focus-visible::before {
-            opacity: 1;
-        }
-
-        .ui-timeline-nav:focus-visible {
-            outline: 1px solid rgba(246, 137, 0, 0.72);
-            outline-offset: 2px;
-        }
-
-        .ui-timeline-nav:disabled {
-            cursor: default;
-            opacity: 0.32;
-        }
-
-        .ui-timeline-nav:disabled::before {
-            opacity: 0.5;
-        }
-
-        .ui-timeline-nav.prev {
-            left: 0;
-        }
-
-        .ui-timeline-nav.next {
-            right: 0;
-        }
-
-        .ui-timeline-nav.prev::before {
-            left: 0;
-            border-right: 13px solid var(--accent);
-        }
-
-        .ui-timeline-nav.next::before {
-            right: 0;
-            border-left: 13px solid var(--accent);
-        }
-
-        .ui-timeline-label {
-            display: flex;
-            justify-content: space-between;
-            color: rgba(244, 239, 229, 0.62);
-            font-size: 12px;
-            font-weight: 850;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .single-stage.is-ui-browser .ui-timeline-label {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            clip: rect(0 0 0 0);
-            white-space: nowrap;
-        }
-
-        .ui-year-track {
-            --ui-year-tick-width: 74px;
-            position: relative;
-            height: 50px;
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: var(--ui-year-tick-width);
-            align-items: end;
-            gap: 0;
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding: 0 42px 2px;
-            scrollbar-width: none;
-            cursor: grab;
-            touch-action: pan-x;
-        }
-
-        .ui-year-track.is-dragging,
-        .ui-level-one .ui-event-list.is-dragging {
-            cursor: grabbing;
-            user-select: none;
-        }
-
-        .ui-year-track::-webkit-scrollbar,
-        .ui-level-one.is-year-mode .ui-event-list::-webkit-scrollbar {
-            display: none;
-        }
-
-        .ui-year-track::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: auto;
-            top: 22px;
-            width: calc(var(--ui-year-count, 1) * var(--ui-year-tick-width) + 84px);
-            height: 3.5px;
-            background: repeating-linear-gradient(
-                90deg,
-                rgba(255, 255, 255, 0.42) 0 1px,
-                transparent 1px 12px
-            );
-            opacity: 0.56;
-            pointer-events: none;
-        }
-
-        .ui-year-tick {
-            position: relative;
-            z-index: 1;
-            border: none;
-            background: transparent;
-            color: rgba(244, 239, 229, 0.5);
-            min-width: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 4.5px;
-            cursor: pointer;
-        }
-
-        .ui-year-tick::before {
-            content: "";
-            width: 1px;
-            height: 14.15px;
-            background: rgba(255, 255, 255, 0.62);
-            transition: height 0.25s ease, background 0.25s ease, opacity 0.25s ease;
-        }
-
-        .ui-year-tick span {
-            color: #797a7a;
-            font-family: "Gotham", "Arial Narrow", "PingFang SC", sans-serif;
-            font-size: 11.5px;
-            font-weight: 700;
-            line-height: 1;
-            letter-spacing: 0.02em;
-            transform-origin: center bottom;
-            transition: color 0.25s ease, font-size 0.25s ease;
-            white-space: nowrap;
-        }
-
-        .ui-year-tick.active::before,
-        .ui-year-tick.highlight::before,
-        .ui-year-tick:hover::before {
-            background: var(--accent);
-        }
-
-        .ui-year-tick.active span {
-            color: var(--accent);
-            font-size: 18px;
-        }
-
-        .ui-year-tick.active::after {
-            display: none;
-        }
-
-        .ui-year-tick.highlight span,
-        .ui-year-tick:hover span {
-            color: rgba(255, 255, 255, 0.92);
-        }
-
-        .ui-year-tick.highlight span {
-            color: var(--accent);
         }
 
         .ui-detail {
@@ -7214,19 +6325,9 @@
         }
 
         @media (max-width: 980px) {
-            .ui-browser {
-                grid-template-rows: minmax(0, 1fr) 82px;
-            }
-
-            .ui-level-one,
             .ui-detail {
                 grid-template-columns: 1fr;
                 overflow: auto;
-            }
-
-            .ui-event-card {
-                grid-template-columns: 120px minmax(0, 1fr);
-                min-height: 132px;
             }
 
             .ui-detail {
@@ -7766,8 +6867,6 @@
             .bench-map-item,
             .quick-quiz-option,
             .mobile-quiz-option,
-            .ui-event-card,
-            .ui-year-tick,
             .timeline-tick,
             .ui-detail-image-nav {
                 min-height: var(--touch-target);
@@ -7821,8 +6920,6 @@
             }
 
             .panel-shell,
-            .ui-map-panel,
-            .ui-event-panel,
             .ui-detail-panel,
             .ui-side-panel,
             .bench-map-panel,
@@ -8045,15 +7142,10 @@
                 bottom: auto;
                 display: grid;
                 grid-template-columns: minmax(0, 1fr);
-                grid-template-rows: minmax(0, 1fr) auto;
-                gap: 12px;
+                grid-template-rows: minmax(0, 1fr);
                 min-width: 0;
                 max-width: 100%;
                 overflow-x: hidden;
-            }
-
-            .single-stage.is-ui-browser.is-ui-detail .ui-browser {
-                grid-template-rows: minmax(0, 1fr);
             }
 
             .single-stage.is-ui-browser .ui-browser-main {
@@ -8068,130 +7160,6 @@
                 max-width: 100%;
                 justify-self: stretch;
                 overflow-x: hidden;
-            }
-
-            .single-stage.is-ui-browser .ui-browser-timeline {
-                position: sticky;
-                left: auto;
-                right: auto;
-                bottom: 0;
-                height: auto;
-                min-height: 56px;
-                padding-top: 8px;
-                background: #000;
-            }
-
-            .ui-level-one {
-                height: auto;
-                min-height: 0;
-                min-width: 0;
-                width: 100%;
-                max-width: 100%;
-                grid-template-columns: minmax(0, 1fr);
-                gap: 14px;
-                overflow-x: hidden;
-            }
-
-            .ui-level-one.is-year-mode .ui-map-panel,
-            .ui-level-one.is-region-mode .ui-map-panel {
-                grid-template-rows: auto minmax(220px, 42vh) auto;
-                gap: 12px;
-            }
-
-            .ui-map-panel,
-            .ui-event-panel {
-                min-width: 0;
-                width: 100%;
-                max-width: 100%;
-                padding: 16px;
-                overflow: visible;
-            }
-
-            .ui-map-callout-zone:last-child {
-                display: none;
-            }
-
-            .ui-map-callout-strip {
-                grid-template-columns: minmax(0, 1fr);
-                grid-auto-rows: auto;
-                gap: 8px;
-            }
-
-            .ui-map-callout {
-                min-height: 36px;
-            }
-
-            .ui-map-year,
-            .ui-level-one.is-region-mode .ui-map-year {
-                font-size: clamp(36px, 10vw, 56px);
-            }
-
-            .ui-map-mode {
-                font-size: 18px;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-list,
-            .ui-level-one.is-region-mode .ui-event-list {
-                grid-auto-columns: minmax(240px, 82vw);
-                gap: 14px;
-                padding-bottom: 12px;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-card,
-            .ui-level-one.is-region-mode .ui-event-card {
-                grid-template-rows: auto auto minmax(180px, 34vh) auto;
-                min-height: 0;
-                padding: 12px;
-                border: 1px solid rgba(244, 239, 229, 0.11);
-                background: rgba(255, 255, 255, 0.032);
-            }
-
-            .ui-level-one.is-year-mode .ui-event-meta,
-            .ui-level-one.is-region-mode .ui-event-meta,
-            .ui-level-one.is-year-mode .ui-event-title,
-            .ui-level-one.is-region-mode .ui-event-title,
-            .ui-level-one.is-year-mode .ui-event-caption,
-            .ui-level-one.is-region-mode .ui-event-caption,
-            .ui-level-one.is-year-mode .ui-event-image,
-            .ui-level-one.is-region-mode .ui-event-image {
-                width: 100%;
-                justify-self: stretch;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-title,
-            .ui-level-one.is-region-mode .ui-event-title {
-                margin-top: 10px;
-                font-size: 21px;
-                min-height: 0;
-                text-align: left;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-meta,
-            .ui-level-one.is-region-mode .ui-event-meta {
-                text-align: left;
-                justify-self: stretch;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-image,
-            .ui-level-one.is-region-mode .ui-event-image {
-                grid-row: auto;
-                height: auto;
-                min-height: 180px;
-                aspect-ratio: 4 / 3;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-caption,
-            .ui-level-one.is-region-mode .ui-event-caption {
-                grid-row: auto;
-                margin-top: 10px;
-                text-align: left;
-                font-size: 13px;
-            }
-
-            .ui-year-track {
-                --ui-year-tick-width: 64px;
-                min-height: 54px;
-                padding-inline: 34px;
             }
 
             .ui-detail {
@@ -8637,15 +7605,6 @@
                 grid-column: 1 / -1;
             }
 
-            .ui-level-one {
-                grid-template-columns: minmax(300px, 0.86fr) minmax(0, 1.14fr);
-            }
-
-            .ui-level-one.is-year-mode .ui-event-list,
-            .ui-level-one.is-region-mode .ui-event-list {
-                grid-auto-columns: minmax(280px, 46vw);
-            }
-
             .ui-detail {
                 grid-template-columns: minmax(0, 1fr);
             }
@@ -8689,8 +7648,6 @@
             .hero-panel,
             .story-panel,
             .media-panel,
-            .ui-map-panel,
-            .ui-event-panel,
             .ui-detail-panel,
             .ui-side-panel,
             .bench-map-panel,
@@ -8706,14 +7663,8 @@
                 font-size: 12px;
             }
 
-            .ui-level-one.is-year-mode .ui-event-list,
-            .ui-level-one.is-region-mode .ui-event-list,
             .timeline-track.achievement-map-track {
                 grid-auto-columns: minmax(248px, 86vw);
-            }
-
-            .ui-map-surface {
-                min-height: 230px;
             }
 
             .ui-detail-image-stage {
@@ -9216,34 +8167,12 @@
             }
 
             .single-stage.is-ui-browser .ui-browser-main,
-            .ui-level-one,
-            .ui-map-panel,
-            .ui-event-panel,
             .ui-detail,
             .ui-detail-panel,
             .ui-side-panel {
                 min-width: 0;
                 width: 100%;
                 max-width: 100%;
-            }
-
-            .ui-level-one {
-                grid-template-columns: minmax(0, 1fr);
-                overflow-x: hidden;
-            }
-
-            .ui-level-one.is-year-mode .ui-map-panel,
-            .ui-level-one.is-region-mode .ui-map-panel {
-                grid-template-rows: auto auto minmax(210px, 30vh);
-                gap: 8px;
-            }
-
-            .ui-map-surface {
-                min-height: 210px;
-            }
-
-            .ui-map-geo-layer {
-                height: 100%;
             }
 
             .ui-detail {
@@ -9389,57 +8318,10 @@
                 display: none;
             }
 
-            .timeline-track,
-            .ui-year-track,
-            .ui-level-one.is-year-mode .ui-event-list,
-            .ui-level-one.is-region-mode .ui-event-list {
+            .timeline-track {
                 touch-action: pan-x pan-y;
                 overscroll-behavior-x: contain;
                 overscroll-behavior-y: auto;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-list,
-            .ui-level-one.is-region-mode .ui-event-list {
-                align-items: start;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-card,
-            .ui-level-one.is-region-mode .ui-event-card {
-                grid-template-rows: auto auto auto auto;
-                align-content: start;
-                gap: 12px;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-image,
-            .ui-level-one.is-region-mode .ui-event-image {
-                grid-row: auto;
-                order: 1;
-                margin-bottom: 0;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-meta,
-            .ui-level-one.is-region-mode .ui-event-meta {
-                order: 2;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-title,
-            .ui-level-one.is-region-mode .ui-event-title {
-                order: 3;
-                margin-top: 0;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-desc,
-            .ui-level-one.is-region-mode .ui-event-desc {
-                display: none;
-            }
-
-            .ui-level-one.is-year-mode .ui-event-caption,
-            .ui-level-one.is-region-mode .ui-event-caption {
-                grid-row: auto;
-                order: 4;
-                margin-top: 10px;
-                padding-top: 12px;
-                border-top: 1px solid rgba(244, 239, 229, 0.12);
             }
         }
 
@@ -9825,6 +8707,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="shared/chronology-overview.css?v=20260727">
 </head>
 <body>
     <div class="stage-viewport">
@@ -10000,7 +8883,6 @@
 
                 <section class="ui-browser" id="uiBrowser" aria-live="polite">
                     <div class="ui-browser-main" id="uiBrowserMain"></div>
-                    <div class="ui-browser-timeline" id="uiBrowserTimeline"></div>
                 </section>
             </main>
 
@@ -10114,6 +8996,7 @@
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
+    <script src="shared/chronology-overview.js?v=20260727"></script>
     <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -10151,6 +9034,12 @@
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
+        const AI_HISTORY_MAP_VARIANT_PRIORITY = [
+            'bench-council-ai100',
+            DEEP_STORYLINE_ID,
+            'gaming-ai',
+            'humanistic-cycle'
+        ];
         const analytics = window.AIHistoryAnalytics || null;
         if (analytics) {
             analytics.setContext({
@@ -10169,8 +9058,8 @@
                     zh: 'AI 历史地图'
                 },
                 note: {
-                    en: 'Unified view from deep learning milestones and AI100 achievements',
-                    zh: '融合深度学习里程碑与 AI100 大事件'
+                    en: 'Canonical AI history map combining all storylines without duplicate events',
+                    zh: '汇总全部故事线的 AI 历史地图，相同事件仅展示一次'
                 }
             },
             {
@@ -10227,10 +9116,6 @@
         const hasStorylineMilestones = (storylineId) => getStorylineMilestones(storylineId).length > 0;
         let unifiedMilestoneCache = null;
 
-        function cloneData(value) {
-            return value == null ? value : JSON.parse(JSON.stringify(value));
-        }
-
         function normalizeKeyText(value) {
             const raw = typeof value === 'object'
                 ? [value.en, value.zh].filter(Boolean).join(' ')
@@ -10258,102 +9143,68 @@
             return safeYearA - safeYearB || normalizeKeyText(a && a.title).localeCompare(normalizeKeyText(b && b.title));
         }
 
-        function getCanonicalMilestoneSlug(milestone) {
-            const id = String(milestone && milestone.id || '')
-                .replace(/^milestone-/, '')
-                .replace(/^ai100-/, '');
-            const aliases = {
-                '2020-alphafold2': '2020-alphafold',
-                '2014-neural-machine-translation-attention': '2014-attention',
-                '1958-rosenblatt-perceptron': '1957-perceptron',
-                '1989-lenet': '1989-cnn',
-                '2017-densenet': '2016-densenet'
-            };
-            if (aliases[id]) return aliases[id];
-            if (id) return id;
-            return `${milestone && milestone.year || ''}-${normalizeKeyText(milestone && milestone.title)}`;
-        }
-
-        function mergeUniqueArray(primary, secondary, getKey = (item) => JSON.stringify(item)) {
-            const result = Array.isArray(primary) ? cloneData(primary) : [];
-            const seen = new Set(result.map(getKey));
-            (Array.isArray(secondary) ? secondary : []).forEach((item) => {
-                const key = getKey(item);
-                if (seen.has(key)) return;
-                seen.add(key);
-                result.push(cloneData(item));
-            });
-            return result;
-        }
-
-        function mergeResources(primary, secondary) {
-            const left = primary && typeof primary === 'object' ? cloneData(primary) : {};
-            const right = secondary && typeof secondary === 'object' ? secondary : {};
-            left.images = mergeUniqueArray(left.images, right.images, (item) => String(item || ''));
-            left.videos = mergeUniqueArray(left.videos, right.videos, (item) => String((item && (item.url || item.id || item.embed_url)) || item || ''));
-            left.imageMeta = { ...(right.imageMeta || {}), ...(left.imageMeta || {}) };
-            return left;
-        }
-
-        function mergeAchievement(primary, secondary) {
-            const left = primary && typeof primary === 'object' ? cloneData(primary) : {};
-            const right = secondary && typeof secondary === 'object' ? secondary : {};
-            Object.keys(right).forEach((key) => {
-                if (Array.isArray(right[key])) {
-                    left[key] = mergeUniqueArray(left[key], right[key], (item) => normalizeKeyText(item && (item.label || item.title || item.name || item.url || item)));
-                } else if (left[key] == null || left[key] === '') {
-                    left[key] = cloneData(right[key]);
-                }
-            });
-            return left;
-        }
-
-        function mergeMilestone(primary, secondary) {
-            const merged = cloneData(primary);
-            merged.mergedFrom = mergeUniqueArray(primary.mergedFrom, [secondary.id || secondary.key || ''], String).filter(Boolean);
-            merged.photos = mergeUniqueArray(primary.photos, secondary.photos, String);
-            merged.resources = mergeResources(primary.resources, secondary.resources);
-            merged.figures = mergeUniqueArray(primary.figures, secondary.figures, (figure) => normalizeKeyText(figure && figure.name));
-            merged.quizzes = mergeUniqueArray(primary.quizzes, secondary.quizzes, (quiz) => normalizeKeyText(quiz && quiz.question));
-            merged.achievement = mergeAchievement(primary.achievement, secondary.achievement);
-            if (!merged.quote && secondary.quote) merged.quote = cloneData(secondary.quote);
-            if (!merged.quoteAttribution && secondary.quoteAttribution) merged.quoteAttribution = cloneData(secondary.quoteAttribution);
-            if (!merged.quoteMeta && secondary.quoteMeta) merged.quoteMeta = cloneData(secondary.quoteMeta);
-            return merged;
-        }
-
         function buildUnifiedMilestones() {
             if (unifiedMilestoneCache) return unifiedMilestoneCache;
-            const source = allMilestones.filter((item) => {
-                const storylineId = getMilestoneStorylineId(item);
-                return storylineId === DEEP_STORYLINE_ID || storylineId === 'bench-council-ai100';
+            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(allMilestones, {
+                storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY,
+                localize: lx
             });
-            const bySlug = new Map();
-            source.forEach((item) => {
-                const slug = getCanonicalMilestoneSlug(item);
-                const current = bySlug.get(slug);
-                if (!current) {
-                    const cloned = cloneData(item);
-                    cloned.storyline = {
-                        id: UNIFIED_STORYLINE_ID,
-                        name: {
-                            en: 'AI History Map',
-                            zh: 'AI 历史地图'
-                        }
-                    };
-                    cloned.unifiedSourceIds = [item.id || slug];
-                    bySlug.set(slug, cloned);
-                    return;
-                }
-                const merged = mergeMilestone(current, item);
-                merged.storyline = current.storyline;
-                merged.unifiedSourceIds = mergeUniqueArray(current.unifiedSourceIds, [item.id || slug], String);
-                bySlug.set(slug, merged);
-            });
-            unifiedMilestoneCache = Array.from(bySlug.values())
-                .sort(compareMilestonesByTime);
             return unifiedMilestoneCache;
         }
+
+        function findMilestoneById(eventId) {
+            return allMilestones.find((item) => item && item.id === eventId) || null;
+        }
+
+        function getCanonicalEventId(milestone) {
+            return String((milestone && (milestone.canonicalEventId || milestone.archiveEventId || milestone.id)) || '');
+        }
+
+        function findMilestoneIndexByEventId(eventId, source = milestoneList) {
+            const exactIndex = source.findIndex((item) => item && item.id === eventId);
+            if (exactIndex >= 0) return exactIndex;
+            const selectedMilestone = findMilestoneById(eventId);
+            if (!selectedMilestone) return -1;
+            const canonicalEventId = getCanonicalEventId(selectedMilestone);
+            return source.findIndex((item) => getCanonicalEventId(item) === canonicalEventId);
+        }
+
+        function getDetailMilestone(index) {
+            const defaultMilestone = milestoneList[index];
+            if (!isUiBrowserActive() || uiBrowserMode !== 'detail' || !uiSelectedEventId) return defaultMilestone;
+            const selectedMilestone = findMilestoneById(uiSelectedEventId);
+            if (!selectedMilestone) return defaultMilestone;
+            return getCanonicalEventId(selectedMilestone) === getCanonicalEventId(defaultMilestone)
+                ? selectedMilestone
+                : defaultMilestone;
+        }
+
+        function getChronologyFilterStorylineId(storylineId) {
+            if (storylineId === DEEP_STORYLINE_ID) return 'deep-learning';
+            if (storylineId === 'bench-council-ai100') return storylineId;
+            return 'all';
+        }
+
+        function getChronologyOptionStorylineId(storylineId) {
+            if (storylineId === 'deep-learning') return DEEP_STORYLINE_ID;
+            if (!storylineId || storylineId === 'all') return UNIFIED_STORYLINE_ID;
+            return storylineId;
+        }
+
+        function getStorylineSelectorStorylineId() {
+            if (isUiBrowserActive() && uiBrowserMode === 'detail') {
+                return getChronologyOptionStorylineId(chronologyFilterStorylineId);
+            }
+            return activeStorylineId;
+        }
+
+        function getChronologyVisibleMilestones() {
+            return window.ChronologyOverview.selectMilestonesByStoryline(
+                buildUnifiedMilestones(),
+                chronologyFilterStorylineId
+            );
+        }
+
         const getSearchParam = (name) => {
             try {
                 return new URLSearchParams(window.location.search).get(name) || '';
@@ -10374,27 +9225,22 @@
             : getFallbackStorylineId();
         let milestoneList = getStorylineMilestones(activeStorylineId);
         let activeRegionFilter = '';
-        let uiBrowserMode = 'year';
-        let uiSelectedYear = null;
-        let uiSelectedContinent = '';
-        let uiSelectedLocationKey = '';
-        let uiSelectedLocationEventIds = [];
+        let uiBrowserMode = 'overview';
         let uiSelectedEventId = '';
+        let chronologyFilterStorylineId = getChronologyFilterStorylineId(activeStorylineId);
         let uiDetailImageIndex = 0;
         let uiDetailImageEventId = '';
         let uiHistoryPopInProgress = false;
+        let chronologyOverview = null;
 
         let currentIndex = 0;
         const requestedUiMode = getRequestedUiMode();
         const requestedEventId = getRequestedEventId();
-        const requestedIndex = requestedEventId
-            ? milestoneList.findIndex((item) => item && item.id === requestedEventId)
-            : -1;
+        const requestedIndex = requestedEventId ? findMilestoneIndexByEventId(requestedEventId) : -1;
         if (requestedUiMode === 'detail' && requestedIndex >= 0 && isUiBrowserActive()) {
             currentIndex = requestedIndex;
             uiBrowserMode = 'detail';
             uiSelectedEventId = requestedEventId;
-            uiSelectedYear = getMilestoneSortYear(milestoneList[requestedIndex]) || uiSelectedYear;
         } else if (requestedUiMode || requestedEventId) {
             try {
                 const normalizedUrl = new URL(window.location.href);
@@ -10517,7 +9363,6 @@
             benchEvidenceList: document.getElementById('benchEvidenceList'),
             uiBrowser: document.getElementById('uiBrowser'),
             uiBrowserMain: document.getElementById('uiBrowserMain'),
-            uiBrowserTimeline: document.getElementById('uiBrowserTimeline'),
             quizModal: document.getElementById('quizModal'),
             quizModalClose: document.getElementById('quizModalClose'),
             quizModalEyebrow: document.getElementById('quizModalEyebrow'),
@@ -10986,8 +9831,17 @@
             } catch (_) {}
         }
 
+        function replaceUiDetailHistoryEntry() {
+            if (!window.history || !window.location || !isUiBrowserActive() || uiBrowserMode !== 'detail' || !uiSelectedEventId) return;
+            try {
+                const url = buildUiBrowserUrl('detail', uiSelectedEventId);
+                window.history.replaceState(getUiHistoryState('detail', uiSelectedEventId), '', url);
+            } catch (_) {}
+        }
+
         function renderStorylineSelect() {
-            const activeOption = getActiveStorylineOption();
+            const selectedStorylineId = getStorylineSelectorStorylineId();
+            const activeOption = getStorylineOption(selectedStorylineId);
             const activeCount = activeOption ? getStorylineMilestones(activeOption.id).length : 0;
             const activeStatus = getStorylineStatus(activeOption, activeCount);
             if (refs.storylineTrigger) {
@@ -11008,7 +9862,7 @@
             refs.storylineSelect.innerHTML = STORYLINE_OPTIONS.map((option) => {
                 const count = getStorylineMilestones(option.id).length;
                 const disabled = count <= 0 ? ' disabled' : '';
-                const selected = option.id === activeStorylineId ? ' selected' : '';
+                const selected = option.id === selectedStorylineId ? ' selected' : '';
                 const label = getStorylineLabel(option);
                 const suffix = ` (${getStorylineStatus(option, count)})`;
                 return `<option value="${escapeHtml(option.id)}"${selected}${disabled}>${escapeHtml(label + suffix)}</option>`;
@@ -11030,6 +9884,7 @@
 
         function renderStorylinePickerOptions() {
             if (!refs.storylineOptionGrid) return;
+            const selectedStorylineId = getStorylineSelectorStorylineId();
 
             if (refs.storylineModalEyebrow) refs.storylineModalEyebrow.textContent = uiText('Storyline', '故事线');
             if (refs.storylineModalTitle) refs.storylineModalTitle.textContent = uiText('Choose a Storyline', '选择故事线');
@@ -11043,7 +9898,7 @@
             refs.storylineOptionGrid.innerHTML = STORYLINE_OPTIONS.map((option) => {
                 const count = getStorylineMilestones(option.id).length;
                 const disabled = count <= 0 ? ' disabled' : '';
-                const active = option.id === activeStorylineId ? ' active' : '';
+                const active = option.id === selectedStorylineId ? ' active' : '';
                 const label = getStorylineLabel(option);
                 const status = getStorylineStatus(option, count);
                 const note = getStorylineNote(option);
@@ -11226,13 +10081,12 @@
 
             activeStorylineId = storylineId;
             milestoneList = nextMilestones;
+            if ((getStorylineOption(storylineId) || {}).layout === 'ui-browser') {
+                chronologyFilterStorylineId = getChronologyFilterStorylineId(storylineId);
+            }
             currentIndex = 0;
             currentArchiveIndex = 0;
-            uiBrowserMode = 'year';
-            uiSelectedYear = null;
-            uiSelectedContinent = '';
-            uiSelectedLocationKey = '';
-            uiSelectedLocationEventIds = [];
+            uiBrowserMode = 'overview';
             uiSelectedEventId = '';
             vmCache.clear();
             resetInlineMedia();
@@ -11337,15 +10191,17 @@
         }
 
         function getVm(index) {
-            if (vmCache.has(index)) {
-                return vmCache.get(index);
+            const milestone = getDetailMilestone(index);
+            const cacheKey = `${index}:${milestone && milestone.id ? milestone.id : ''}`;
+            if (vmCache.has(cacheKey)) {
+                return vmCache.get(cacheKey);
             }
 
             const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
-                ? window.MilestoneView.normalizeMilestone(milestoneList[index], index, milestoneList)
-                : buildFallbackVm(milestoneList[index], index);
+                ? window.MilestoneView.normalizeMilestone(milestone, index, milestoneList)
+                : buildFallbackVm(milestone, index);
             vm.location = formatUiLocation(vm.location);
-            vmCache.set(index, vm);
+            vmCache.set(cacheKey, vm);
             return vm;
         }
 
@@ -16463,167 +15319,15 @@
             renderBenchEvidence(vm);
         }
 
-        const UI_CONTINENTS = [
-            { id: 'asia', en: 'Asia', zh: '亚洲', left: 64, top: 20, width: 33, height: 38 },
-            { id: 'europe', en: 'Europe', zh: '欧洲', left: 44, top: 18, width: 19, height: 21 },
-            { id: 'north-america', en: 'North America', zh: '北美洲', left: 1, top: 24, width: 43, height: 34 },
-            { id: 'south-america', en: 'South America', zh: '南美洲', left: 26, top: 58, width: 19, height: 38 },
-            { id: 'oceania', en: 'Oceania', zh: '大洋洲', left: 76, top: 64, width: 21, height: 30 },
-            { id: 'africa', en: 'Africa', zh: '非洲', left: 45, top: 39, width: 19, height: 35 }
-        ];
-
-        const UI_COUNTRY_TO_CONTINENT = [
-            [/United States|Canada|Mexico|美国|加拿大|墨西哥/i, 'north-america'],
-            [/United Kingdom|Germany|France|Netherlands|Russia|Finland|Switzerland|Italy|Oxford|London|Manchester|Siena|英国|德国|法国|荷兰|俄罗斯|芬兰|瑞士|意大利|欧洲/i, 'europe'],
-            [/China|Japan|Beijing|中国|日本|北京|亚洲/i, 'asia'],
-            [/Australia|New Zealand|澳大利亚|新西兰|大洋洲/i, 'oceania'],
-            [/Brazil|Argentina|Chile|南美|巴西|阿根廷|智利/i, 'south-america'],
-            [/Africa|South Africa|非洲|南非/i, 'africa']
-        ];
-
-        const UI_GLOBAL_LOCATION_PATTERN = /Global|全球|多个机构|多机构/i;
-        const UI_COORDINATE_CONTINENT_BOUNDS = [
-            { id: 'north-america', lat: [5, 83], lng: [[-170, -50]] },
-            { id: 'south-america', lat: [-60, 15], lng: [[-90, -30]] },
-            { id: 'europe', lat: [35, 72], lng: [[-25, 45]] },
-            { id: 'africa', lat: [-35, 38], lng: [[-20, 55]] },
-            { id: 'oceania', lat: [-50, 0], lng: [[110, 180], [-180, -120]] },
-            { id: 'asia', lat: [-10, 80], lng: [[45, 180]] }
-        ];
-
-        function getUiContinent(continentId) {
-            return UI_CONTINENTS.find((item) => item.id === continentId) || UI_CONTINENTS[0];
-        }
-
-        function getUiContinentLabel(continentId) {
-            const item = getUiContinent(continentId);
-            return uiText(item.en, item.zh);
-        }
-
-        function getUiLocationText(value) {
-            const localized = lx(value);
-            if (localized && typeof localized === 'object') {
-                return String(localized.en || localized.zh || '').trim();
-            }
-            return String(localized || '').trim();
-        }
-
-        function getMilestoneLocationSearchText(milestone) {
-            const location = milestone && milestone.location ? milestone.location : {};
-            const relatedRegions = milestone && milestone.achievement && Array.isArray(milestone.achievement.relatedRegions)
-                ? milestone.achievement.relatedRegions
-                : [];
-            return [location.country, location.name, ...relatedRegions]
-                .map(getUiLocationText)
-                .filter(Boolean)
-                .join(' ');
-        }
-
-        function getFirstValidUiCoordinatePair(coordinates) {
-            if (!Array.isArray(coordinates)) return null;
-            if (coordinates.length >= 2 && !Array.isArray(coordinates[0])) {
-                const lat = Number(coordinates[0]);
-                const lng = Number(coordinates[1]);
-                return Number.isFinite(lat) && Number.isFinite(lng) && !(lat === 0 && lng === 0) ? [lat, lng] : null;
-            }
-            for (const item of coordinates) {
-                const pair = getFirstValidUiCoordinatePair(item);
-                if (pair) return pair;
-            }
-            return null;
-        }
-
-        function isUiCoordinateInBounds(lat, lng, bounds) {
-            const [minLat, maxLat] = bounds.lat;
-            return lat >= minLat
-                && lat <= maxLat
-                && bounds.lng.some(([minLng, maxLng]) => lng >= minLng && lng <= maxLng);
-        }
-
-        function getUiContinentIdFromCoordinates(coordinates) {
-            const pair = getFirstValidUiCoordinatePair(coordinates);
-            if (!pair) return '';
-            const [lat, lng] = pair;
-            const match = UI_COORDINATE_CONTINENT_BOUNDS.find((bounds) => isUiCoordinateInBounds(lat, lng, bounds));
-            return match ? match.id : '';
-        }
-
-        function getMilestoneContinentId(milestone) {
-            const location = milestone && milestone.location ? milestone.location : {};
-            const raw = getMilestoneLocationSearchText(milestone);
-            const coordinateContinent = getUiContinentIdFromCoordinates(location.coordinates);
-            if (UI_GLOBAL_LOCATION_PATTERN.test(raw) && coordinateContinent) return coordinateContinent;
-            const match = UI_COUNTRY_TO_CONTINENT.find(([pattern]) => pattern.test(raw));
-            return match ? match[1] : coordinateContinent || 'asia';
-        }
-
-        function getUiYears() {
-            return Array.from(new Set(milestoneList.map(getMilestoneSortYear).filter((year) => Number.isFinite(year))))
-                .sort((a, b) => a - b);
-        }
-
-        function getDefaultUiYear(years) {
-            return years[0];
-        }
-
         function ensureUiSelection() {
-            const years = getUiYears();
-            if (!years.length) return;
-            if (!uiSelectedYear || !years.includes(Number(uiSelectedYear))) {
-                uiSelectedYear = getDefaultUiYear(years);
+            if (uiBrowserMode !== 'detail') return;
+            const detailIndex = findMilestoneIndexByEventId(uiSelectedEventId);
+            if (detailIndex < 0) {
+                uiBrowserMode = 'overview';
+                uiSelectedEventId = '';
+                return;
             }
-            if (uiBrowserMode === 'detail') {
-                const detailIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
-                if (detailIndex < 0) {
-                    uiBrowserMode = 'year';
-                    uiSelectedEventId = '';
-                } else {
-                    currentIndex = detailIndex;
-                }
-            }
-            if (uiBrowserMode === 'location' && !getUiLocationGroupEvents(uiSelectedLocationKey).length) {
-                uiBrowserMode = 'year';
-                uiSelectedLocationKey = '';
-                uiSelectedLocationEventIds = [];
-            }
-        }
-
-        function getUiEventsForCurrentMode() {
-            ensureUiSelection();
-            if (uiBrowserMode === 'region' && uiSelectedContinent) {
-                return milestoneList.filter((item) => getMilestoneContinentId(item) === uiSelectedContinent);
-            }
-            if (uiBrowserMode === 'location' && uiSelectedLocationKey) {
-                return getUiLocationGroupEvents(uiSelectedLocationKey, uiSelectedLocationEventIds);
-            }
-            return milestoneList.filter((item) => getMilestoneSortYear(item) === Number(uiSelectedYear));
-        }
-
-        function syncUiCurrentIndexToEvents(events) {
-            const current = milestoneList[currentIndex];
-            if (current && events.some((item) => item.id === current.id)) return;
-            const firstEvent = events[0] || milestoneList[0];
-            if (!firstEvent) return;
-            currentIndex = Math.max(0, milestoneList.findIndex((item) => item.id === firstEvent.id));
-        }
-
-        function syncUiBrowserCurrentIndex() {
-            if (!isUiBrowserActive()) return;
-            ensureUiSelection();
-            if (uiBrowserMode === 'detail') return;
-            const events = getUiEventsForCurrentMode();
-            syncUiCurrentIndexToEvents(events);
-        }
-
-        function getUiYearHighlightSet() {
-            const events = (uiBrowserMode === 'region' && uiSelectedContinent) || (uiBrowserMode === 'location' && uiSelectedLocationKey)
-                ? getUiEventsForCurrentMode()
-                : [];
-            return new Set(events.map(getMilestoneSortYear).filter((year) => Number.isFinite(year)));
-        }
-
-        function getUiPrimaryImage(vm) {
-            return getUiImageCandidates(vm)[0] || '';
+            currentIndex = detailIndex;
         }
 
         function getUiImageCandidates(vm) {
@@ -16657,6 +15361,8 @@
         const UI_MEDIA_VISUAL_OVERRIDES = {
             'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
         };
+        const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
+        const UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO = 1.35;
 
         function getUiMediaVisualImage(vm, images = getUiImageCandidates(vm)) {
             const eventId = vm && (vm.id || (vm.raw && vm.raw.id)) || '';
@@ -16665,743 +15371,6 @@
             const diagram = images.find((url) => isDiagramImage(url));
             if (diagram) return diagram;
             return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
-        }
-
-        const UI_MAP_DOT_GRID = {
-            columns: 45,
-            rows: 23,
-            leftPaddingPct: 3.05,
-            topPaddingPct: 1.59,
-            stepXPct: 2.24,
-            stepYPct: 4.4,
-            rowsMask: [
-                [[15, 16]],
-                [[10, 13], [15, 19], [22, 22], [28, 28], [32, 33]],
-                [[7, 7], [9, 11], [13, 18], [22, 23], [29, 29], [33, 34]],
-                [[6, 7], [9, 9], [11, 11], [14, 18], [27, 30], [32, 36], [38, 38]],
-                [[1, 3], [5, 12], [15, 18], [24, 25], [28, 28], [30, 42]],
-                [[0, 13], [15, 19], [23, 44]],
-                [[0, 9], [12, 13], [15, 16], [22, 23], [25, 43]],
-                [[1, 1], [5, 14], [20, 39], [41, 42]],
-                [[6, 14], [21, 39], [41, 41]],
-                [[6, 12], [20, 24], [26, 26], [28, 37], [40, 40]],
-                [[6, 11], [20, 20], [25, 38], [42, 42]],
-                [[7, 9], [11, 11], [20, 37], [41, 41]],
-                [[8, 9], [11, 12], [19, 28], [30, 36]],
-                [[10, 10], [12, 12], [19, 27], [30, 31], [33, 34], [37, 37]],
-                [[11, 14], [20, 27], [31, 31], [33, 33]],
-                [[11, 16], [22, 26], [34, 35], [38, 39]],
-                [[11, 16], [23, 26], [38, 38]],
-                [[12, 16], [23, 25], [27, 28], [36, 39]],
-                [[13, 15], [23, 26], [28, 28], [35, 40]],
-                [[13, 14], [23, 24], [35, 39], [42, 42]],
-                [[12, 13], [24, 24], [34, 34], [38, 39], [42, 42]],
-                [[12, 13], [41, 41]],
-                [[12, 12]]
-            ]
-        };
-
-        const UI_MAP_DOTS = UI_MAP_DOT_GRID.rowsMask.flatMap((segments, row) => {
-            const points = [];
-            segments.forEach(([start, end]) => {
-                for (let col = start; col <= end; col += 1) {
-                    points.push({
-                        col,
-                        row,
-                        x: UI_MAP_DOT_GRID.leftPaddingPct + col * UI_MAP_DOT_GRID.stepXPct,
-                        y: UI_MAP_DOT_GRID.topPaddingPct + row * UI_MAP_DOT_GRID.stepYPct
-                    });
-                }
-            });
-            return points;
-        });
-
-        const UI_CONTINENT_PIN_FALLBACKS = {
-            asia: { left: 75, top: 38 },
-            europe: { left: 54, top: 31 },
-            'north-america': { left: 25, top: 36 },
-            'south-america': { left: 35, top: 68 },
-            oceania: { left: 86, top: 74 },
-            africa: { left: 57, top: 55 }
-        };
-
-        function projectCoordinatesToUiMap(coordinates) {
-            const pair = getFirstValidUiCoordinatePair(coordinates);
-            if (!pair) return null;
-            const [lat, lng] = pair;
-            const left = ((lng + 180) / 360) * 100;
-            const mercatorLat = Math.max(-70, Math.min(80, lat));
-            const latRad = mercatorLat * Math.PI / 180;
-            const mercator = Math.log(Math.tan(Math.PI / 4 + latRad / 2));
-            const top = (1 - (mercator + Math.PI) / (2 * Math.PI)) * 100;
-            return {
-                left: Math.max(0, Math.min(100, left)),
-                top: Math.max(0, Math.min(100, top))
-            };
-        }
-
-        function getNearestUiMapDot(point, usedKeys) {
-            if (!point || !UI_MAP_DOTS.length) return null;
-            let best = null;
-            let bestDistance = Infinity;
-            UI_MAP_DOTS.forEach((dot) => {
-                const key = `${dot.col}:${dot.row}`;
-                if (usedKeys && usedKeys.has(key)) return;
-                const distance = Math.hypot(point.left - dot.x, (point.top - dot.y) * 0.78);
-                if (distance < bestDistance) {
-                    bestDistance = distance;
-                    best = dot;
-                }
-            });
-            return best;
-        }
-
-        function getUiMapLocationKey(milestone, point) {
-            const location = milestone && milestone.location ? milestone.location : {};
-            const coordinates = Array.isArray(location.coordinates) ? location.coordinates : [];
-            if (coordinates.length >= 2 && Number.isFinite(Number(coordinates[0])) && Number.isFinite(Number(coordinates[1]))) {
-                return `${Number(coordinates[0]).toFixed(2)}:${Number(coordinates[1]).toFixed(2)}`;
-            }
-            return [
-                lx(location.country) || '',
-                lx(location.name) || '',
-                point ? `${Math.round(point.left)}:${Math.round(point.top)}` : ''
-            ].join('|');
-        }
-
-        function getUiMapPinPosition(milestone, index) {
-            const continent = getUiContinent(getMilestoneContinentId(milestone));
-            const fallback = UI_CONTINENT_PIN_FALLBACKS[continent.id] || {
-                left: continent.left + continent.width / 2,
-                top: continent.top + continent.height / 2
-            };
-            return projectCoordinatesToUiMap(milestone && milestone.location ? milestone.location.coordinates : null) || fallback;
-        }
-
-        function getUiMapDotAssignments(events) {
-            const eventDots = [];
-            const usedKeys = new Set();
-            const locationDots = new Map();
-            const dotLocationKeys = new Map();
-            events.forEach((event) => {
-                const target = getUiMapPinPosition(event);
-                const locationKey = getUiMapLocationKey(event, target);
-                if (locationDots.has(locationKey)) {
-                    const existingDot = locationDots.get(locationKey);
-                    dotLocationKeys.set(`${existingDot.col}:${existingDot.row}`, locationKey);
-                    eventDots.push(existingDot);
-                    return;
-                }
-                const dot = getNearestUiMapDot(target, usedKeys) || getNearestUiMapDot(target, null);
-                if (!dot) return;
-                const key = `${dot.col}:${dot.row}`;
-                usedKeys.add(key);
-                locationDots.set(locationKey, dot);
-                dotLocationKeys.set(key, locationKey);
-                eventDots.push(dot);
-            });
-            return {
-                eventDots,
-                activeDots: Array.from(new Map(eventDots.map((dot) => [`${dot.col}:${dot.row}`, dot])).values()),
-                dotLocationKeys
-            };
-        }
-
-        function getUiMapActiveDots(events) {
-            return getUiMapDotAssignments(events).activeDots;
-        }
-
-        function getUiMapEventPoints(events) {
-            const { eventDots } = getUiMapDotAssignments(events);
-            return events.map((event, index) => {
-                const dot = eventDots[index] || getNearestUiMapDot(getUiMapPinPosition(event), null) || getUiMapPinPosition(event);
-                return { left: dot.x, top: dot.y };
-            });
-        }
-
-        function buildUiMapDots(events) {
-            const { activeDots, dotLocationKeys } = getUiMapDotAssignments(events);
-            const activeKeys = new Set(activeDots.map((point) => `${point.col}:${point.row}`));
-            return UI_MAP_DOTS.map((point) => {
-                const key = `${point.col}:${point.row}`;
-                const active = activeKeys.has(key);
-                const locationKey = active ? dotLocationKeys.get(key) || '' : '';
-                const dataAttr = locationKey ? ` data-location-key="${escapeHtml(locationKey)}"` : '';
-                return `<span class="ui-map-dot${active ? ' active' : ''}"${dataAttr} style="left:${point.x.toFixed(1)}%;top:${point.y.toFixed(1)}%"></span>`;
-            }).join('');
-        }
-
-        function buildUiMapRoutes(events) {
-            if (uiBrowserMode === 'region') return '';
-            const points = getUiMapEventPoints(events);
-            if (points.length < 2) return '';
-            return points.slice(1).map((point, index) => {
-                const previous = points[index];
-                const cx = (previous.left + point.left) / 2;
-                const cy = Math.min(previous.top, point.top) - 10 - (index % 2) * 6;
-                const path = `M ${previous.left.toFixed(1)} ${previous.top.toFixed(1)} Q ${cx.toFixed(1)} ${cy.toFixed(1)} ${point.left.toFixed(1)} ${point.top.toFixed(1)}`;
-                return `<path class="ui-map-route" d="${path}"></path>`;
-            }).join('');
-        }
-
-        const UI_MAP_CALLOUT_TOP_LIMIT = 12;
-        const UI_MAP_CALLOUT_BOTTOM_LIMIT = 21;
-        const UI_MAP_CALLOUT_TOTAL_LIMIT = UI_MAP_CALLOUT_TOP_LIMIT + UI_MAP_CALLOUT_BOTTOM_LIMIT;
-        const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
-        const UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO = 1.35;
-
-        function getUiMapFeaturedCallouts(events) {
-            const points = getUiMapEventPoints(events);
-            const grouped = new Map();
-            events.forEach((event, index) => {
-                const point = points[index] || getUiMapPinPosition(event);
-                const key = getUiMapLocationKey(event, getUiMapPinPosition(event));
-                if (!grouped.has(key)) {
-                    grouped.set(key, {
-                        event,
-                        events: [],
-                        point,
-                        locationKey: key,
-                        originalIndex: index
-                    });
-                }
-                const group = grouped.get(key);
-                group.events.push(event);
-                if (index < group.originalIndex) {
-                    group.event = event;
-                    group.point = point;
-                    group.originalIndex = index;
-                }
-            });
-            return Array.from(grouped.values()).map((group) => ({
-                ...group,
-                count: group.events.length
-            })).sort((a, b) => {
-                const leftDiff = Number(a.point && a.point.left || 0) - Number(b.point && b.point.left || 0);
-                return leftDiff || a.originalIndex - b.originalIndex;
-            }).slice(0, UI_MAP_CALLOUT_TOTAL_LIMIT);
-        }
-
-        function getUiMapCalloutGridStyle(index, placement) {
-            const columnCount = 3;
-            if (placement !== 'bottom') {
-                return `grid-column:${index % columnCount + 1};grid-row:${Math.floor(index / columnCount) + 1};`;
-            }
-            const bottomIndex = index - UI_MAP_CALLOUT_TOP_LIMIT;
-            return `grid-column:${bottomIndex % columnCount + 1};grid-row:${Math.floor(bottomIndex / columnCount) + 1};`;
-        }
-
-        function buildUiMapCallouts(events, placement) {
-            const callouts = getUiMapFeaturedCallouts(events);
-            const isBottom = placement === 'bottom';
-            const offset = isBottom ? UI_MAP_CALLOUT_TOP_LIMIT : 0;
-            const visible = isBottom
-                ? callouts.slice(UI_MAP_CALLOUT_TOP_LIMIT)
-                : callouts.slice(0, UI_MAP_CALLOUT_TOP_LIMIT);
-            return visible.map(({ event, events: groupedEvents, count, locationKey }, index) => {
-                const absoluteIndex = offset + index;
-                const vm = getVm(milestoneList.findIndex((item) => item.id === event.id));
-                const locationName = vm.location && vm.location.name ? vm.location.name : (vm.title || tx('aiHistoryEvent'));
-                const locationCountry = vm.location && vm.location.country ? vm.location.country : getUiContinentLabel(getMilestoneContinentId(event));
-                const countHtml = count > 1 ? ` <span class="ui-map-callout-count">×${escapeHtml(count)}</span>` : '';
-                const eventIds = (groupedEvents || [event]).map((item) => item && item.id).filter(Boolean).join(',');
-                return `
-                    <button class="ui-map-callout" type="button" data-event-id="${escapeHtml(event.id)}" data-event-ids="${escapeHtml(eventIds)}" data-location-key="${escapeHtml(locationKey || '')}" style="${getUiMapCalloutGridStyle(absoluteIndex, placement)}">
-                        <span class="ui-map-callout-dot"></span>
-                        <span class="ui-map-callout-text">
-                            <strong>${escapeHtml(locationName)}</strong>
-                            <span>${escapeHtml(locationCountry)}${countHtml}</span>
-                        </span>
-                    </button>
-                `;
-            }).join('');
-        }
-
-        function getUiLocationGroupEvents(locationKey, eventIds = []) {
-            const selectedIds = Array.isArray(eventIds) ? eventIds.filter(Boolean) : [];
-            if (selectedIds.length) {
-                const selectedSet = new Set(selectedIds);
-                return milestoneList.filter((item) => selectedSet.has(item.id));
-            }
-            if (!locationKey) return [];
-            return milestoneList.filter((item) => getUiMapLocationKey(item, getUiMapPinPosition(item)) === locationKey);
-        }
-
-        function getUiLocationGroupLabel(locationKey) {
-            const event = getUiLocationGroupEvents(locationKey)[0];
-            if (!event) return uiText('Location', '地址');
-            const vm = getVm(milestoneList.findIndex((item) => item.id === event.id));
-            return vm.location && vm.location.name ? vm.location.name : (vm.title || uiText('Location', '地址'));
-        }
-
-        function getElementCenterRelativeTo(element, containerRect) {
-            if (!element || !containerRect) return null;
-            const rect = element.getBoundingClientRect();
-            return {
-                x: rect.left + rect.width / 2 - containerRect.left,
-                y: rect.top + rect.height / 2 - containerRect.top
-            };
-        }
-
-        function syncUiMapCalloutLines() {
-            const panel = refs.uiBrowserMain.querySelector('.ui-map-panel');
-            const svg = panel ? panel.querySelector('.ui-map-callout-lines') : null;
-            if (!panel || !svg) return;
-
-            const panelRect = panel.getBoundingClientRect();
-            const callouts = Array.from(panel.querySelectorAll('.ui-map-callout'));
-            const pinsByEventId = new Map(Array.from(panel.querySelectorAll('.ui-map-pin')).map((pin) => [pin.dataset.eventId || '', pin]));
-            const dotsByLocationKey = new Map(Array.from(panel.querySelectorAll('.ui-map-dot.active')).map((dot) => [dot.dataset.locationKey || '', dot]));
-            const paths = callouts.map((callout) => {
-                const eventId = callout.dataset.eventId || '';
-                const locationKey = callout.dataset.locationKey || '';
-                const start = getElementCenterRelativeTo(dotsByLocationKey.get(locationKey) || pinsByEventId.get(eventId), panelRect);
-                const end = getElementCenterRelativeTo(callout.querySelector('.ui-map-callout-dot'), panelRect);
-                if (!start || !end) return '';
-                const dx = end.x - start.x;
-                const dy = end.y - start.y;
-                const length = Math.hypot(dx, dy);
-                const bend = Math.min(126, Math.max(46, length * 0.22));
-                const normalX = length ? -dy / length : 0;
-                const normalY = length ? dx / length : -1;
-                const side = end.x < start.x ? -1 : 1;
-                const controlX = start.x + dx * 0.52 + normalX * bend * side;
-                const controlY = start.y + dy * 0.52 + normalY * bend * side;
-                return `<path class="ui-map-callout-line" d="M ${start.x.toFixed(1)} ${start.y.toFixed(1)} Q ${controlX.toFixed(1)} ${controlY.toFixed(1)} ${end.x.toFixed(1)} ${end.y.toFixed(1)}"></path>`;
-            }).join('');
-
-            svg.setAttribute('viewBox', `0 0 ${Math.max(1, panelRect.width).toFixed(1)} ${Math.max(1, panelRect.height).toFixed(1)}`);
-            svg.innerHTML = paths;
-        }
-
-        function buildUiLevelOneMap(events, activeLabel, continentCounts) {
-            const eventPoints = getUiMapEventPoints(events);
-            const mapPins = events.map((event, index) => {
-                const point = eventPoints[index] || getUiMapPinPosition(event);
-                const vm = getVm(milestoneList.findIndex((item) => item.id === event.id));
-                const locationName = vm.location && vm.location.name ? vm.location.name : (vm.title || tx('aiHistoryEvent'));
-                const locationCountry = vm.location && vm.location.country ? vm.location.country : getUiContinentLabel(getMilestoneContinentId(event));
-                return `
-                    <button class="ui-map-pin is-offset-${index % 4}" type="button" data-event-id="${escapeHtml(event.id)}" style="left:${point.left}%;top:${point.top}%">
-                        <span class="ui-map-pin-dot"></span>
-                        <span class="ui-map-pin-label">
-                            <strong>${escapeHtml(locationName)}</strong>
-                            <span>${escapeHtml(locationCountry)}</span>
-                        </span>
-                    </button>
-                `;
-            }).join('');
-            return `
-                <section class="ui-map-panel">
-                    <div class="ui-map-heading">
-                        <div class="ui-map-year">${escapeHtml(activeLabel)}</div>
-                        <div class="ui-map-mode">${escapeHtml(uiBrowserMode === 'region' ? uiText('Region', '地区') : uiBrowserMode === 'location' ? uiText('Location', '地址') : uiText('Year', '年份'))}</div>
-                    </div>
-                    <svg class="ui-map-callout-lines" aria-hidden="true"></svg>
-                    <div class="ui-map-callout-zone">
-                        <div class="ui-map-callout-strip">
-                            ${buildUiMapCallouts(events, 'top')}
-                        </div>
-                    </div>
-                    <div class="ui-map-surface">
-                        <div class="ui-map-geo-layer">
-                            <div class="ui-map-dots" aria-hidden="true">${buildUiMapDots(events)}</div>
-                            ${UI_CONTINENTS.filter((continent) => (continentCounts.get(continent.id) || 0) > 0).map((continent) => {
-                                const count = continentCounts.get(continent.id) || 0;
-                                const active = uiSelectedContinent === continent.id ? ' active' : '';
-                                return `
-                                    <button class="ui-continent-button${active}" type="button" data-continent="${continent.id}" style="left:${continent.left}%;top:${continent.top}%;width:${continent.width}%;height:${continent.height}%">
-                                        <span class="ui-continent-name">${escapeHtml(uiText(continent.en, continent.zh))}</span>
-                                        <span class="ui-continent-count">${escapeHtml(uiText(`${count} events`, `${count} 个事件`))}</span>
-                                    </button>
-                                `;
-                            }).join('')}
-                            ${mapPins}
-                        </div>
-                        <svg class="ui-map-routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${buildUiMapRoutes(events)}</svg>
-                    </div>
-                    <div class="ui-map-callout-zone">
-                        <div class="ui-map-callout-strip">
-                            ${buildUiMapCallouts(events, 'bottom')}
-                        </div>
-                    </div>
-                </section>
-            `;
-        }
-
-        function buildUiEventCard(milestone) {
-            const index = milestoneList.findIndex((item) => item.id === milestone.id);
-            const vm = getVm(index);
-            const imageUrl = getUiPrimaryImage(vm);
-            const imageMeta = getUiPrimaryImageMeta(vm, imageUrl);
-            const title = vm.title || tx('aiHistoryEvent');
-            const location = buildLocationLine(vm.location);
-            const locationText = location || '';
-            const desc = stripHtml(vm.descriptionHtml || vm.descriptionText || vm.quoteHtml || '');
-            const captionTitle = imageMeta.name || title;
-            const captionDetail = imageMeta.role || '';
-            return `
-                <button class="ui-event-card" type="button" data-event-id="${escapeHtml(milestone.id)}">
-                    <div class="ui-event-image">
-                        ${imageUrl ? `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(title)}">` : `<span>${escapeHtml(tx('archiveImage'))}</span>`}
-                    </div>
-                    <div class="ui-event-copy">
-                        <div class="ui-event-meta">
-                            <span class="ui-event-year">${escapeHtml(vm.year || '')}</span>
-                            <span class="ui-event-location">${escapeHtml(locationText)}</span>
-                        </div>
-                        <div class="ui-event-title">${escapeHtml(title)}</div>
-                        <div class="ui-event-desc">${escapeHtml(desc || tx('noAdditionalInfo'))}</div>
-                        <div class="ui-event-caption">
-                            <span class="ui-event-caption-title">${escapeHtml(captionTitle)}</span>
-                            ${captionDetail ? `<span class="ui-event-caption-detail">${escapeHtml(captionDetail)}</span>` : ''}
-                        </div>
-                    </div>
-                </button>
-            `;
-        }
-
-        function updateUiEventProgress(eventList) {
-            const panel = eventList ? eventList.closest('.ui-event-panel') : null;
-            if (!panel || !eventList) return;
-            const trackWidth = Math.max(0, panel.clientWidth - 32);
-            const totalWidth = eventList.scrollWidth;
-            const visibleWidth = eventList.clientWidth;
-            if (!trackWidth || !totalWidth || totalWidth <= visibleWidth + 1) {
-                panel.style.setProperty('--ui-event-progress-left', '0px');
-                panel.style.setProperty('--ui-event-progress-width', `${trackWidth}px`);
-                return;
-            }
-            const maxScroll = Math.max(1, totalWidth - visibleWidth);
-            const progressWidth = Math.max(trackWidth * (visibleWidth / totalWidth), 56);
-            const progressLeft = (trackWidth - progressWidth) * (eventList.scrollLeft / maxScroll);
-            panel.style.setProperty('--ui-event-progress-left', `${progressLeft.toFixed(2)}px`);
-            panel.style.setProperty('--ui-event-progress-width', `${progressWidth.toFixed(2)}px`);
-        }
-
-        function getScrollCenterLeft(scroller, item) {
-            if (!scroller || !item) return 0;
-            return item.offsetLeft - (scroller.clientWidth - item.offsetWidth) / 2;
-        }
-
-        function scrollElementIntoHorizontalCenter(scroller, item, behavior = 'smooth') {
-            if (!scroller || !item) return;
-            const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
-            const left = Math.max(0, Math.min(maxScroll, getScrollCenterLeft(scroller, item)));
-            if (Math.abs(scroller.scrollLeft - left) < 1) return;
-            scroller.scrollTo({ left, behavior });
-        }
-
-        function bindHorizontalDragScroll(scroller, options = {}) {
-            if (!scroller || scroller.dataset.dragScrollBound === 'true') return;
-            scroller.dataset.dragScrollBound = 'true';
-            const dragThreshold = Number(options.threshold || 5);
-            let dragState = null;
-
-            const finishDrag = () => {
-                if (!dragState) return;
-                const wasDragging = dragState.dragging;
-                dragState = null;
-                scroller.classList.remove('is-dragging');
-                scroller.dataset.dragMoved = wasDragging ? 'true' : '';
-                if (wasDragging) {
-                    window.setTimeout(() => {
-                        scroller.dataset.dragMoved = '';
-                    }, 120);
-                }
-            };
-
-            scroller.addEventListener('pointerdown', (event) => {
-                if (event.button !== undefined && event.button !== 0) return;
-                if (scroller.scrollWidth <= scroller.clientWidth + 1) return;
-                dragState = {
-                    pointerId: event.pointerId,
-                    startX: event.clientX,
-                    startLeft: scroller.scrollLeft,
-                    dragging: false
-                };
-                scroller.dataset.dragMoved = '';
-            });
-
-            scroller.addEventListener('pointermove', (event) => {
-                if (!dragState || event.pointerId !== dragState.pointerId) return;
-                const dx = event.clientX - dragState.startX;
-                if (!dragState.dragging && Math.abs(dx) >= dragThreshold) {
-                    dragState.dragging = true;
-                    scroller.classList.add('is-dragging');
-                    if (typeof scroller.setPointerCapture === 'function') {
-                        try {
-                            scroller.setPointerCapture(event.pointerId);
-                        } catch (_) {}
-                    }
-                }
-                if (!dragState.dragging) return;
-                scroller.scrollLeft = dragState.startLeft - dx;
-                if (event.cancelable) event.preventDefault();
-                if (typeof options.onDrag === 'function') options.onDrag(scroller);
-            });
-
-            scroller.addEventListener('pointerup', finishDrag);
-            scroller.addEventListener('pointercancel', finishDrag);
-            scroller.addEventListener('lostpointercapture', finishDrag);
-            scroller.addEventListener('click', (event) => {
-                if (scroller.dataset.dragMoved !== 'true') return;
-                event.preventDefault();
-                event.stopPropagation();
-                scroller.dataset.dragMoved = '';
-            }, true);
-        }
-
-        function syncUiTimelineToSelectedYear(behavior = 'smooth') {
-            const track = refs.uiBrowserTimeline.querySelector('.ui-year-track');
-            if (!track) return;
-            const activeTick = track.querySelector('.ui-year-tick.active')
-                || track.querySelector('.ui-year-tick.highlight')
-                || track.querySelector('.ui-year-tick');
-            scrollElementIntoHorizontalCenter(track, activeTick, behavior);
-            requestAnimationFrame(updateUiTimelineNavState);
-        }
-
-        function updateUiTimelineNavState() {
-            const track = refs.uiBrowserTimeline.querySelector('.ui-year-track');
-            const prevButton = refs.uiBrowserTimeline.querySelector('[data-ui-timeline-nav="prev"]');
-            const nextButton = refs.uiBrowserTimeline.querySelector('[data-ui-timeline-nav="next"]');
-            if (!track || !prevButton || !nextButton) return;
-            const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
-            prevButton.disabled = track.scrollLeft <= 1;
-            nextButton.disabled = track.scrollLeft >= maxScroll - 1;
-        }
-
-        function scrollUiTimeline(direction) {
-            const track = refs.uiBrowserTimeline.querySelector('.ui-year-track');
-            if (!track) return;
-            const delta = Math.max(track.clientWidth * 0.62, 360);
-            track.scrollBy({
-                left: direction === 'prev' ? -delta : delta,
-                behavior: 'smooth'
-            });
-        }
-
-        function getUiEventCardAtScrollAnchor(eventList) {
-            if (!eventList) return null;
-            const cards = Array.from(eventList.querySelectorAll('.ui-event-card'));
-            if (!cards.length) return null;
-            const anchor = eventList.scrollLeft + Math.min(eventList.clientWidth * 0.5, eventList.clientWidth - 1);
-            return cards.reduce((closest, card) => {
-                const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-                const distance = Math.abs(cardCenter - anchor);
-                return !closest || distance < closest.distance ? { card, distance } : closest;
-            }, null).card;
-        }
-
-        function syncUiSelectionFromEventScroll(eventList) {
-            if (!eventList || uiBrowserMode !== 'region') return;
-            const card = getUiEventCardAtScrollAnchor(eventList);
-            if (!card) return;
-            const eventId = card.dataset.eventId || '';
-            const milestone = milestoneList.find((item) => item.id === eventId);
-            const year = milestone ? getMilestoneSortYear(milestone) : NaN;
-            if (!Number.isFinite(year) || Number(uiSelectedYear) === year) return;
-            uiSelectedYear = year;
-            renderUiTimeline();
-        }
-
-        function bindUiEventProgress() {
-            const eventList = refs.uiBrowserMain.querySelector('.ui-event-list');
-            if (!eventList) return;
-            const update = () => updateUiEventProgress(eventList);
-            let syncTimer = null;
-            update();
-            requestAnimationFrame(update);
-            bindHorizontalDragScroll(eventList, { onDrag: update });
-            eventList.addEventListener('scroll', () => {
-                update();
-                if (syncTimer) window.clearTimeout(syncTimer);
-                syncTimer = window.setTimeout(() => {
-                    syncTimer = null;
-                    syncUiSelectionFromEventScroll(eventList);
-                }, 80);
-            }, { passive: true });
-        }
-
-        function fitUiEventImage(image) {
-            const frame = image && image.closest ? image.closest('.ui-event-image') : null;
-            if (!frame || !image.naturalWidth || !image.naturalHeight) return;
-            const maxWidth = frame.clientWidth;
-            const maxHeight = frame.clientHeight;
-            if (!maxWidth || !maxHeight) return;
-
-            const imageRatio = image.naturalWidth / image.naturalHeight;
-            const frameRatio = maxWidth / maxHeight;
-            let width;
-            let height;
-            if (imageRatio >= frameRatio) {
-                width = maxWidth;
-                height = maxWidth / imageRatio;
-            } else {
-                height = maxHeight;
-                width = maxHeight * imageRatio;
-            }
-
-            image.style.width = `${Math.min(maxWidth, width).toFixed(2)}px`;
-            image.style.height = `${Math.min(maxHeight, height).toFixed(2)}px`;
-        }
-
-        function fitUiEventImages() {
-            refs.uiBrowserMain.querySelectorAll('.ui-level-one .ui-event-image img').forEach((image) => {
-                if (image.complete) {
-                    fitUiEventImage(image);
-                } else {
-                    image.addEventListener('load', () => fitUiEventImage(image), { once: true });
-                }
-            });
-        }
-
-        function renderUiTimeline() {
-            const years = getUiYears();
-            const highlights = getUiYearHighlightSet();
-            const label = uiBrowserMode === 'region' && uiSelectedContinent
-                ? uiText('Highlighted years in selected region', '高亮所选地区涉及年份')
-                : uiBrowserMode === 'location' && uiSelectedLocationKey
-                ? uiText('Highlighted years at selected location', '高亮所选地址涉及年份')
-                : uiText('Years with events', '存在事件的年份');
-            refs.uiBrowserTimeline.innerHTML = `
-                <div class="ui-timeline-label">
-                    <span>${escapeHtml(label)}</span>
-                    <span>${escapeHtml(uiText(`${years.length} years`, `${years.length} 个年份`))}</span>
-                </div>
-                <button class="ui-timeline-nav prev" type="button" data-ui-timeline-nav="prev" aria-label="${escapeHtml(uiText('Previous years', '上一组年份'))}"></button>
-                <div class="ui-year-track" style="--ui-year-count:${years.length};">
-                    ${years.map((year) => {
-                        const active = Number(uiSelectedYear) === year ? ' active' : '';
-                        const highlight = highlights.has(year) ? ' highlight' : '';
-                        return `<button class="ui-year-tick${active}${highlight}" type="button" data-year="${year}"><span>${year}</span></button>`;
-                    }).join('')}
-                </div>
-                <button class="ui-timeline-nav next" type="button" data-ui-timeline-nav="next" aria-label="${escapeHtml(uiText('Next years', '下一组年份'))}"></button>
-            `;
-            const yearTrack = refs.uiBrowserTimeline.querySelector('.ui-year-track');
-            bindHorizontalDragScroll(yearTrack, { onDrag: updateUiTimelineNavState });
-            yearTrack.addEventListener('scroll', updateUiTimelineNavState, { passive: true });
-            refs.uiBrowserTimeline.querySelectorAll('[data-ui-timeline-nav]').forEach((button) => {
-                button.addEventListener('click', () => scrollUiTimeline(button.dataset.uiTimelineNav));
-            });
-            refs.uiBrowserTimeline.querySelectorAll('.ui-year-tick').forEach((button) => {
-                button.addEventListener('click', () => {
-                    uiBrowserMode = 'year';
-                    uiSelectedYear = Number(button.dataset.year);
-                    uiSelectedContinent = '';
-                    uiSelectedLocationKey = '';
-                    uiSelectedLocationEventIds = [];
-                    uiSelectedEventId = '';
-                    currentIndex = Math.max(0, milestoneList.findIndex((item) => getMilestoneSortYear(item) === uiSelectedYear));
-                    renderPage(currentIndex);
-                });
-            });
-            updateUiTimelineNavState();
-            requestAnimationFrame(() => syncUiTimelineToSelectedYear('auto'));
-        }
-
-        function renderUiLevelOne() {
-            ensureUiSelection();
-            const events = getUiEventsForCurrentMode();
-            syncUiCurrentIndexToEvents(events);
-            const continentCounts = new Map();
-            milestoneList.forEach((item) => {
-                const continentId = getMilestoneContinentId(item);
-                continentCounts.set(continentId, (continentCounts.get(continentId) || 0) + 1);
-            });
-            const activeLabel = uiBrowserMode === 'region' && uiSelectedContinent
-                ? getUiContinentLabel(uiSelectedContinent)
-                : uiBrowserMode === 'location' && uiSelectedLocationKey
-                ? getUiLocationGroupLabel(uiSelectedLocationKey)
-                : String(uiSelectedYear || '');
-            const levelOneModeClass = uiBrowserMode === 'region' || uiBrowserMode === 'location' ? 'is-region-mode' : 'is-year-mode';
-            const eventKicker = uiBrowserMode === 'region'
-                ? uiText('Region events', '地区事件')
-                : uiBrowserMode === 'location'
-                ? uiText('Location events', '地址事件')
-                : uiText('Year events', '年份事件');
-            refs.uiBrowserMain.innerHTML = `
-                <div class="ui-level-one ${levelOneModeClass}${events.length === 1 ? ' is-single-event' : ''}">
-                    ${buildUiLevelOneMap(events, activeLabel, continentCounts)}
-                    <section class="ui-event-panel">
-                        <div class="ui-event-panel-heading">
-                            <div class="ui-section-kicker">${escapeHtml(eventKicker)}</div>
-                            <div class="ui-section-title">${escapeHtml(activeLabel)}</div>
-                            <div class="ui-section-note">${escapeHtml(uiText(`Showing ${events.length} events.`, `共 ${events.length} 个事件；默认展示区域容纳 3 个，更多内容可滚动。`))}</div>
-                        </div>
-                        <div class="ui-event-list">
-                            ${events.map(buildUiEventCard).join('')}
-                        </div>
-                    </section>
-                </div>
-            `;
-            refs.uiBrowserMain.querySelectorAll('.ui-continent-button').forEach((button) => {
-                button.addEventListener('click', () => {
-                    uiBrowserMode = 'region';
-                    uiSelectedContinent = button.dataset.continent || '';
-                    uiSelectedLocationKey = '';
-                    uiSelectedLocationEventIds = [];
-                    uiSelectedEventId = '';
-                    const nextEvents = getUiEventsForCurrentMode();
-                    currentIndex = nextEvents[0] ? milestoneList.findIndex((item) => item.id === nextEvents[0].id) : 0;
-                    uiSelectedYear = nextEvents[0] ? getMilestoneSortYear(nextEvents[0]) || uiSelectedYear : uiSelectedYear;
-                    renderPage(currentIndex);
-                });
-            });
-            refs.uiBrowserMain.querySelectorAll('.ui-map-callout').forEach((button) => {
-                button.addEventListener('click', () => {
-                    const locationKey = button.dataset.locationKey || '';
-                    const groupedEventIds = (button.dataset.eventIds || '')
-                        .split(',')
-                        .map((id) => id.trim())
-                        .filter(Boolean);
-                    const groupedEvents = getUiLocationGroupEvents(locationKey, groupedEventIds);
-                    if (groupedEvents.length > 1) {
-                        uiBrowserMode = 'location';
-                        uiSelectedLocationKey = locationKey;
-                        uiSelectedLocationEventIds = groupedEvents.map((item) => item.id);
-                        uiSelectedContinent = '';
-                        uiSelectedEventId = '';
-                        const firstEvent = groupedEvents[0];
-                        currentIndex = milestoneList.findIndex((item) => item.id === firstEvent.id);
-                        uiSelectedYear = getMilestoneSortYear(firstEvent) || uiSelectedYear;
-                        renderPage(currentIndex >= 0 ? currentIndex : 0);
-                        return;
-                    }
-
-                    uiBrowserMode = 'detail';
-                    uiSelectedLocationKey = '';
-                    uiSelectedLocationEventIds = [];
-                    uiSelectedEventId = groupedEvents[0] ? groupedEvents[0].id : (button.dataset.eventId || '');
-                    uiDetailImageIndex = 0;
-                    const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
-                    currentIndex = nextIndex >= 0 ? nextIndex : currentIndex;
-                    uiSelectedYear = milestoneList[currentIndex] ? getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear : uiSelectedYear;
-                    renderUiDetailFromSelection({ pushHistory: true });
-                });
-            });
-            refs.uiBrowserMain.querySelectorAll('.ui-event-card, .ui-map-pin').forEach((button) => {
-                button.addEventListener('click', () => {
-                    const shouldKeepLocationContext = uiBrowserMode === 'location';
-                    uiBrowserMode = 'detail';
-                    if (!shouldKeepLocationContext) {
-                        uiSelectedLocationKey = '';
-                        uiSelectedLocationEventIds = [];
-                    }
-                    uiSelectedEventId = button.dataset.eventId || '';
-                    uiDetailImageIndex = 0;
-                    const nextIndex = milestoneList.findIndex((item) => item.id === uiSelectedEventId);
-                    currentIndex = nextIndex >= 0 ? nextIndex : currentIndex;
-                    uiSelectedYear = milestoneList[currentIndex] ? getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear : uiSelectedYear;
-                    renderUiDetailFromSelection({ pushHistory: true });
-                });
-            });
-            bindUiEventProgress();
-            fitUiEventImages();
-            requestAnimationFrame(fitUiEventImages);
-            requestAnimationFrame(syncUiMapCalloutLines);
         }
 
         function renderUiDetailFromSelection(options = {}) {
@@ -17479,7 +15448,7 @@
                 window.history.back();
                 return true;
             }
-            uiBrowserMode = uiSelectedLocationKey ? 'location' : uiSelectedContinent ? 'region' : 'year';
+            uiBrowserMode = 'overview';
             uiSelectedEventId = '';
             renderPage(currentIndex);
             resetPortraitScrollPosition();
@@ -17495,21 +15464,22 @@
             uiHistoryPopInProgress = true;
             try {
                 if (uiState && uiState.mode === 'detail' && uiState.eventId) {
-                    const nextIndex = milestoneList.findIndex((item) => item && item.id === uiState.eventId);
+                    const nextIndex = findMilestoneIndexByEventId(uiState.eventId);
                     if (nextIndex >= 0) {
                         uiBrowserMode = 'detail';
                         uiSelectedEventId = uiState.eventId;
                         currentIndex = nextIndex;
-                        uiSelectedYear = getMilestoneSortYear(milestoneList[nextIndex]) || uiSelectedYear;
                         uiDetailImageIndex = 0;
                         renderUiDetailFromSelection();
                         return;
                     }
                 }
 
-                if (uiBrowserMode === 'detail') {
-                    returnFromUiDetail({ updateHistory: false });
-                }
+                uiBrowserMode = 'overview';
+                uiSelectedEventId = '';
+                uiDetailImageIndex = 0;
+                renderPage(currentIndex);
+                resetPortraitScrollPosition();
             } finally {
                 uiHistoryPopInProgress = false;
             }
@@ -17887,20 +15857,67 @@
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
         }
 
-        function renderUiBrowser() {
-            if (!refs.uiBrowser || !refs.uiBrowserMain || !refs.uiBrowserTimeline) return;
-            ensureUiSelection();
-            if (uiBrowserMode === 'detail' && milestoneList[currentIndex]) {
-                uiSelectedYear = getMilestoneSortYear(milestoneList[currentIndex]) || uiSelectedYear;
+        function openChronologyMilestone(eventId) {
+            const selectedMilestone = findMilestoneById(eventId);
+            const detailMilestones = getChronologyVisibleMilestones();
+            const nextIndex = findMilestoneIndexByEventId(eventId, detailMilestones);
+            if (nextIndex < 0) return;
+            milestoneList = detailMilestones;
+            currentIndex = nextIndex;
+            uiBrowserMode = 'detail';
+            uiSelectedEventId = eventId;
+            uiDetailImageIndex = 0;
+            trackAnalyticsEvent('overview_event_open', {
+                event_id: eventId,
+                storyline_id: selectedMilestone && selectedMilestone.storyline
+                    ? selectedMilestone.storyline.id
+                    : ''
+            });
+            renderUiDetailFromSelection({ pushHistory: true });
+        }
+
+        function renderChronologyOverview() {
+            if (!window.ChronologyOverview) return;
+            if (!chronologyOverview) {
+                chronologyOverview = window.ChronologyOverview.create(refs.uiBrowserMain, {
+                    onOpenMilestone: openChronologyMilestone,
+                    onFilterChange: (storylineId) => {
+                        chronologyFilterStorylineId = storylineId;
+                        trackAnalyticsEvent('overview_storyline_filter', {
+                            storyline_id: storylineId,
+                            active_storyline_id: activeStorylineId
+                        });
+                    }
+                });
             }
+            chronologyOverview.setState({ storylineId: chronologyFilterStorylineId });
+            chronologyOverview.update({
+                milestones: buildUnifiedMilestones(),
+                selectedEventId: uiSelectedEventId,
+                localize: lx,
+                locale: window.I18n && typeof window.I18n.getLocale === 'function'
+                    ? window.I18n.getLocale()
+                    : window.currentLocale,
+                labels: {
+                    title: uiText('AI History', '人工智能历史'),
+                    all: uiText('All', '全部'),
+                    storylineFilter: uiText('Storyline filter', '故事线筛选'),
+                    eventDensity: uiText('Event density', '事件密度'),
+                    noResults: uiText('No matching events', '没有匹配的事件'),
+                    openEvent: uiText('Open event', '打开事件'),
+                    storylines: uiText('Storylines', '所属故事线'),
+                    timelineLabel: uiText('Chronological AI history timeline', '人工智能历史时间轴')
+                }
+            });
+        }
+
+        function renderUiBrowser() {
+            if (!refs.uiBrowser || !refs.uiBrowserMain) return;
+            ensureUiSelection();
             if (uiBrowserMode === 'detail') {
                 renderUiDetail();
-                refs.uiBrowserTimeline.innerHTML = '';
-                refs.uiBrowserTimeline.hidden = true;
             } else {
-                refs.uiBrowserTimeline.hidden = false;
-                renderUiLevelOne();
-                renderUiTimeline();
+                renderChronologyOverview();
             }
         }
 
@@ -17975,7 +15992,7 @@
 
         function renderPage(index, analyticsOptions = {}) {
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
-            syncUiBrowserCurrentIndex();
+            if (isUiBrowserActive()) ensureUiSelection();
             const vm = getVm(currentIndex);
             startAnalyticsMilestoneView(vm, {
                 navigationSource: analyticsOptions.navigationSource || 'render',
@@ -17989,6 +16006,7 @@
             }
             currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
             applyStaticTranslations();
+            renderStorylineSelect();
             const branchTimelineActive = isBranchTimelineActive();
             const humanisticCycleActive = branchTimelineActive && activeStorylineId === 'humanistic-cycle';
             document.documentElement.classList.toggle('branch-timeline-active', branchTimelineActive);
@@ -18040,7 +16058,11 @@
                 bindPhotoClicks();
             }
             renderTimeline(vm);
-            document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
+            if (isUiBrowserActive() && uiBrowserMode !== 'detail') {
+                document.title = `${tx('appTitleSingle')} - ${getStorylineLabel(getActiveStorylineOption()) || uiText('AI History', '人工智能历史')}`;
+            } else {
+                document.title = `${tx('appTitleSingle')} - ${vm.year} ${vm.title}`;
+            }
             preloadAdjacentAssets(currentIndex);
         }
 
@@ -18335,10 +16357,7 @@
             if (isUiBrowserActive() && milestoneList[index]) {
                 uiBrowserMode = 'detail';
                 uiSelectedEventId = milestoneList[index].id;
-                uiSelectedYear = getMilestoneSortYear(milestoneList[index]) || uiSelectedYear;
-                uiSelectedContinent = '';
-                uiSelectedLocationKey = '';
-                uiSelectedLocationEventIds = [];
+                replaceUiDetailHistoryEntry();
             }
             renderPage(currentIndex, {
                 navigationSource: analyticsSource,
@@ -18354,20 +16373,7 @@
         function navigate(direction, options = {}) {
             if (milestoneList.length <= 1) return;
             if (isUiBrowserActive() && uiBrowserMode !== 'detail') {
-                const years = getUiYears();
-                const currentYearIndex = Math.max(0, years.indexOf(Number(uiSelectedYear)));
-                const nextYearIndex = direction === 'next'
-                    ? Math.min(currentYearIndex + 1, years.length - 1)
-                    : Math.max(currentYearIndex - 1, 0);
-                uiBrowserMode = 'year';
-                uiSelectedYear = years[nextYearIndex] || uiSelectedYear;
-                uiSelectedContinent = '';
-                uiSelectedLocationKey = '';
-                uiSelectedLocationEventIds = [];
-                uiSelectedEventId = '';
-                currentIndex = Math.max(0, milestoneList.findIndex((item) => getMilestoneSortYear(item) === Number(uiSelectedYear)));
-                renderPage(currentIndex);
-                resetPortraitScrollPosition();
+                if (chronologyOverview) chronologyOverview.scroll(direction === 'next' ? 'next' : 'prev');
                 return;
             }
             const nextIndex = direction === 'next'
@@ -18376,10 +16382,6 @@
             if (isUiBrowserActive()) {
                 uiBrowserMode = 'detail';
                 uiSelectedEventId = milestoneList[nextIndex] ? milestoneList[nextIndex].id : uiSelectedEventId;
-                uiSelectedYear = milestoneList[nextIndex] ? getMilestoneSortYear(milestoneList[nextIndex]) : uiSelectedYear;
-                uiSelectedContinent = '';
-                uiSelectedLocationKey = '';
-                uiSelectedLocationEventIds = [];
             }
             jumpTo(nextIndex, options);
         }
@@ -18506,16 +16508,12 @@
 
             window.addEventListener('resize', debounce(() => {
                 syncStageScale();
-                const eventList = refs.uiBrowserMain ? refs.uiBrowserMain.querySelector('.ui-event-list') : null;
-                if (eventList) updateUiEventProgress(eventList);
-                if (refs.uiBrowserMain) fitUiEventImages();
             }, 120));
             window.addEventListener('orientationchange', () => {
                 window.setTimeout(() => {
                     syncStageScale();
                     handleGlobeResize();
                     resetOrbitOverlay();
-                    if (refs.uiBrowserMain) fitUiEventImages();
                 }, 180);
             }, { passive: true });
             window.addEventListener('beforeunload', clearIdleAdvanceTimer);
@@ -18561,6 +16559,7 @@
                     }
                     return;
                 }
+                if (event.target && event.target.closest && event.target.closest('.chronology-overview')) return;
                 if (event.key === 'ArrowRight') navigate('next');
                 if (event.key === 'ArrowLeft') navigate('prev');
             });

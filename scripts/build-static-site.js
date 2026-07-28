@@ -44,6 +44,14 @@ function validateBundle() {
         fs.existsSync(path.join(OUTPUT, 'shared', 'milestone-view.js')),
         'Bundle is missing shared/milestone-view.js'
     );
+    assert.ok(
+        fs.existsSync(path.join(OUTPUT, 'shared', 'chronology-overview.js')),
+        'Bundle is missing shared/chronology-overview.js'
+    );
+    assert.ok(
+        fs.existsSync(path.join(OUTPUT, 'shared', 'chronology-overview.css')),
+        'Bundle is missing shared/chronology-overview.css'
+    );
     assert.ok(fs.existsSync(path.join(OUTPUT, 'shared', 'analytics.js')), 'Bundle is missing shared/analytics.js');
     assert.ok(
         fs.existsSync(path.join(OUTPUT, 'shared', 'analytics-config.js')),
