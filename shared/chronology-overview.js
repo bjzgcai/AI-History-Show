@@ -417,6 +417,15 @@
         return PORTRAIT_HINT_PATTERN.test(metadataText) || imageNamesPerson(milestone, imageUrl, meta.caption);
     }
 
+    function canPortraitCoverWithoutVerticalCrop(imageWidth, imageHeight, frameWidth, frameHeight) {
+        const safeImageWidth = Number(imageWidth) || 0;
+        const safeImageHeight = Number(imageHeight) || 0;
+        const safeFrameWidth = Number(frameWidth) || 0;
+        const safeFrameHeight = Number(frameHeight) || 0;
+        if (!safeImageWidth || !safeImageHeight || !safeFrameWidth || !safeFrameHeight) return false;
+        return safeImageWidth / safeImageHeight >= safeFrameWidth / safeFrameHeight;
+    }
+
     function buildDensityPaths(milestones, summaries, storylineId = 'all') {
         const activeSummaries =
             storylineId === 'all' ? summaries : summaries.filter((summary) => summary.id === storylineId);
@@ -699,11 +708,34 @@
         function observeImages(scroller) {
             const images = Array.from(root.querySelectorAll('img[data-src]'));
             if (!images.length) return;
+
+            const loadImage = (image) => {
+                const media = image.closest('.chrono-card-media.is-portrait');
+                const imageUrl = image.dataset.src;
+                image.src = imageUrl;
+                if (media && imageUrl) {
+                    const escapedUrl = image.src.replace(/["\\]/g, '\\$&');
+                    media.style.setProperty('--portrait-backdrop-image', `url("${escapedUrl}")`);
+                }
+                const updatePortraitFit = () => {
+                    if (!media) return;
+                    media.classList.toggle(
+                        'is-cover-safe',
+                        canPortraitCoverWithoutVerticalCrop(
+                            image.naturalWidth,
+                            image.naturalHeight,
+                            media.clientWidth,
+                            media.clientHeight
+                        )
+                    );
+                };
+                image.addEventListener('load', updatePortraitFit, { once: true });
+                delete image.dataset.src;
+                if (image.complete && image.naturalWidth) updatePortraitFit();
+            };
+
             if (typeof globalScope.IntersectionObserver !== 'function') {
-                images.forEach((image) => {
-                    image.src = image.dataset.src;
-                    delete image.dataset.src;
-                });
+                images.forEach(loadImage);
                 return;
             }
             imageObserver = new globalScope.IntersectionObserver(
@@ -711,8 +743,7 @@
                     entries.forEach((entry) => {
                         if (!entry.isIntersecting) return;
                         const image = entry.target;
-                        image.src = image.dataset.src;
-                        delete image.dataset.src;
+                        loadImage(image);
                         observer.unobserve(image);
                     });
                 },
@@ -891,6 +922,7 @@
         getSortYear,
         getStorylineId,
         getStorylineMemberships,
+        canPortraitCoverWithoutVerticalCrop,
         isPortraitImage,
         selectMilestonesByStoryline,
         selectMilestoneVariant,
