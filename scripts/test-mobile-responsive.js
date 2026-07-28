@@ -5,9 +5,11 @@ const path = require('node:path');
 const indexPath = path.join(__dirname, '..', 'index.html');
 const source = fs.readFileSync(indexPath, 'utf8');
 const dualScreenSource = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
+const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
+const chronologyScriptSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 
-function assertContains(pattern, message) {
-    const passed = typeof pattern === 'string' ? source.includes(pattern) : pattern.test(source);
+function assertContains(pattern, message, haystack = source) {
+    const passed = typeof pattern === 'string' ? haystack.includes(pattern) : pattern.test(haystack);
     assert.equal(passed, true, message);
     console.log(`PASS ${message}`);
 }
@@ -40,6 +42,29 @@ const mobileRequirements = [
     {
         pattern: /shared\/chronology-overview\.css/,
         message: 'the responsive chronology overview stylesheet is loaded'
+    },
+    {
+        pattern:
+            /@media\s*\(max-width:\s*700px\) and \(max-height:\s*760px\)[\s\S]*?\.single-stage\.is-ui-browser:not\(\.is-ui-detail\)[\s\S]*?overflow:\s*visible[\s\S]*?\.stage-grid[\s\S]*?min-height:\s*700px/,
+        haystack: chronologySource,
+        message: 'short portrait chronology pages grow vertically instead of clipping cards'
+    },
+    {
+        pattern:
+            /@media\s*\(max-width:\s*932px\) and \(max-height:\s*600px\) and \(orientation:\s*landscape\)[\s\S]*?\.stage-grid[\s\S]*?min-height:\s*520px/,
+        haystack: chronologySource,
+        message: 'short landscape chronology pages keep full cards visible'
+    },
+    {
+        pattern:
+            /@media\s*\(min-height:\s*601px\) and \(max-height:\s*700px\) and \(max-width:\s*932px\) and \(orientation:\s*landscape\)[\s\S]*?\.stage-grid[\s\S]*?min-height:\s*560px/,
+        haystack: chronologySource,
+        message: 'medium-height landscape chronology pages reserve enough room for both card rows'
+    },
+    {
+        pattern: /@media\s*\(max-width:\s*1199px\)[\s\S]*?\.chrono-scroll\s*\{[\s\S]*?touch-action:\s*pan-x pan-y/,
+        haystack: chronologySource,
+        message: 'responsive chronology scrolling preserves vertical page gestures'
     },
     {
         pattern: /\.ui-detail[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)/,
@@ -156,7 +181,42 @@ const mobileRequirements = [
     },
     {
         pattern:
-            /function handleUiBrowserHistoryPop\(event\)[\s\S]*?uiBrowserMode = 'overview'[\s\S]*?renderPage\(currentIndex\)/,
+            /function pushUiDetailHistoryEntry\(\)[\s\S]*?isCurrentUiDetailHistoryEntry\(uiSelectedEventId\)[\s\S]*?replaceState\(getUiHistoryState\('overview'\)[\s\S]*?fromOverview: true/,
+        message: 'detail history entries are deduplicated and retain an overview return target'
+    },
+    {
+        pattern:
+            /function renderUiOverviewState\(\)[\s\S]*?uiBrowserMode = 'overview'[\s\S]*?uiSelectedEventId = ''[\s\S]*?uiDetailImageIndex = 0[\s\S]*?renderPage\(currentIndex\)/,
+        message: 'overview rendering resets detail state through one shared helper'
+    },
+    {
+        pattern:
+            /function returnFromUiDetail\(options = \{\}\)[\s\S]*?canReturnToUiOverviewWithHistory\(\)[\s\S]*?uiReturnHistoryInProgress = true[\s\S]*?renderUiOverviewState\(\)[\s\S]*?window\.history\.back\(\)/,
+        message: 'the detail back button switches to the overview immediately with one activation'
+    },
+    {
+        pattern:
+            /if \(uiReturnHistoryInProgress\)[\s\S]*?uiState\.mode === 'detail' && uiState\.fromOverview[\s\S]*?window\.history\.back\(\)/,
+        message: 'the detail back button skips duplicate detail history entries automatically'
+    },
+    {
+        pattern:
+            /@media\s*\(max-width:\s*600px\)[\s\S]*?html,[\s\S]*?body\s*\{[\s\S]*?overflow-y:\s*auto[\s\S]*?\.stage-viewport,[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail\s*\{[\s\S]*?overflow-y:\s*visible[\s\S]*?overflow-x:\s*clip/,
+        message: 'phone detail pages use one document scroll container without hidden nested scrollers'
+    },
+    {
+        pattern:
+            /function isActive\(\)[\s\S]*?config\.isActive\(\)[\s\S]*?function render\(\)\s*\{[\s\S]*?if \(!isActive\(\)\) return;[\s\S]*?function handleResize\(\)[\s\S]*?if \(isActive\(\)\) render\(\)/,
+        haystack: chronologyScriptSource,
+        message: 'inactive chronology resize callbacks cannot overwrite the mobile detail view'
+    },
+    {
+        pattern:
+            /ChronologyOverview\.create\(refs\.uiBrowserMain,\s*\{[\s\S]*?isActive:\s*\(\) => isUiBrowserActive\(\) && uiBrowserMode === 'overview'/,
+        message: 'the chronology renderer is active only while the overview is visible'
+    },
+    {
+        pattern: /function handleUiBrowserHistoryPop\(event\)[\s\S]*?renderUiOverviewState\(\)/,
         message: 'browser back returns from phone detail page to the chronology overview'
     },
     {
@@ -176,7 +236,7 @@ const mobileRequirements = [
 ];
 
 for (const requirement of mobileRequirements) {
-    assertContains(requirement.pattern, requirement.message);
+    assertContains(requirement.pattern, requirement.message, requirement.haystack);
 }
 
 for (const [entry, entrySource] of [

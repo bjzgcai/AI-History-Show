@@ -12,11 +12,17 @@
     const PORTRAIT_EXCLUSION_PATTERN = /not a portrait|不是人物肖像/i;
     const NON_PHOTO_ROLE_PATTERN = /architecture|paper-page/i;
     const ALL_EVENTS_COLOR = '#e8e3da';
-    const COMPACT_BREAKPOINT = 700;
-    const RESPONSIVE_BREAKPOINT = 1199;
+    const VIEWPORT_BREAKPOINTS = {
+        compactWidth: 700,
+        responsiveWidth: 1199,
+        shortLandscapeWidth: 932,
+        shortLandscapeHeight: 600,
+        mediumLandscapeHeight: 700
+    };
     const OVERVIEW_CHROME_HEIGHT = {
         default: 48 + 72,
-        responsive: 40 + 60
+        responsive: 45 + 60,
+        shortLandscape: 45 + 44
     };
     const TIMELINE_LAYOUT_MODES = {
         default: {
@@ -38,6 +44,26 @@
             axisGap: 44,
             minimumHeight: 480,
             staggerPattern: [0, 22, 8, 30, 14]
+        },
+        mediumLandscape: {
+            cardWidth: 212,
+            cardHeight: 180,
+            cardGap: 12,
+            edgePadding: 28,
+            minimumGroupWidth: 242,
+            axisGap: 22,
+            minimumHeight: 455,
+            staggerPattern: [0, 10, 4, 18, 8]
+        },
+        shortLandscape: {
+            cardWidth: 196,
+            cardHeight: 170,
+            cardGap: 12,
+            edgePadding: 28,
+            minimumGroupWidth: 226,
+            axisGap: 24,
+            minimumHeight: 432,
+            staggerPattern: [0, 12, 5, 18, 8]
         }
     };
     const TIMELINE_LANE_COUNT = 1;
@@ -201,7 +227,8 @@
     }
 
     function buildTimelineLayout(milestones, options = {}) {
-        const compact = Boolean(options.compact);
+        const requestedMode = String(options.mode || '');
+        const mode = TIMELINE_LAYOUT_MODES[requestedMode] ? requestedMode : options.compact ? 'compact' : 'default';
         const {
             cardWidth,
             cardHeight,
@@ -211,7 +238,7 @@
             axisGap,
             minimumHeight,
             staggerPattern
-        } = TIMELINE_LAYOUT_MODES[compact ? 'compact' : 'default'];
+        } = TIMELINE_LAYOUT_MODES[mode];
         const maxStagger = Math.max(...staggerPattern);
         const availableHeight = Math.max(0, Number(options.viewportHeight) || 0);
         const sorted = [...(milestones || [])].sort((a, b) => compareMilestones(a, b, options.localize));
@@ -318,16 +345,32 @@
     }
 
     function getOverviewViewport(root, scope) {
-        const width = root.clientWidth || scope.innerWidth || 0;
-        const height = root.clientHeight || scope.innerHeight || 0;
-        const responsive = width <= RESPONSIVE_BREAKPOINT;
+        const viewportWidth = scope.innerWidth || root.clientWidth || 0;
+        const viewportHeight = scope.innerHeight || root.clientHeight || 0;
+        const width = root.clientWidth || viewportWidth;
+        const height = root.clientHeight || viewportHeight;
+        const responsive = viewportWidth <= VIEWPORT_BREAKPOINTS.responsiveWidth;
+        const landscape = viewportWidth > viewportHeight;
+        const narrowLandscape = viewportWidth <= VIEWPORT_BREAKPOINTS.shortLandscapeWidth && landscape;
+        const shortLandscape = narrowLandscape && viewportHeight <= VIEWPORT_BREAKPOINTS.shortLandscapeHeight;
+        const mediumLandscape = narrowLandscape && viewportHeight <= VIEWPORT_BREAKPOINTS.mediumLandscapeHeight;
+        const mode = shortLandscape
+            ? 'shortLandscape'
+            : mediumLandscape
+              ? 'mediumLandscape'
+              : viewportWidth <= VIEWPORT_BREAKPOINTS.compactWidth
+                ? 'compact'
+                : 'default';
+        const chromeHeight = shortLandscape
+            ? OVERVIEW_CHROME_HEIGHT.shortLandscape
+            : responsive
+              ? OVERVIEW_CHROME_HEIGHT.responsive
+              : OVERVIEW_CHROME_HEIGHT.default;
         return {
             width,
-            compact: width <= COMPACT_BREAKPOINT,
-            timelineHeight: Math.max(
-                0,
-                height - (responsive ? OVERVIEW_CHROME_HEIGHT.responsive : OVERVIEW_CHROME_HEIGHT.default)
-            )
+            compact: mode !== 'default',
+            mode,
+            timelineHeight: Math.max(0, height - chromeHeight)
         };
     }
 
@@ -504,6 +547,10 @@
             );
         }
 
+        function isActive() {
+            return typeof config.isActive !== 'function' || config.isActive();
+        }
+
         function getMembershipDetails(milestone, summaryById) {
             const memberships = getStorylineMemberships(milestone);
             const visibleMemberships =
@@ -599,6 +646,7 @@
         }
 
         function render() {
+            if (!isActive()) return;
             const oldScroller = root.querySelector('.chrono-scroll');
             if (oldScroller) state.scrollLeft = oldScroller.scrollLeft;
             if (imageObserver) imageObserver.disconnect();
@@ -612,7 +660,7 @@
             const summaryById = new Map(summaries.map((summary) => [summary.id, summary]));
             const viewport = getOverviewViewport(root, globalScope);
             const layout = buildTimelineLayout(visibleMilestones, {
-                compact: viewport.compact,
+                mode: viewport.mode,
                 viewportWidth: viewport.width,
                 viewportHeight: viewport.timelineHeight,
                 localize
@@ -885,7 +933,9 @@
 
         function handleResize() {
             globalScope.clearTimeout(resizeTimer);
-            resizeTimer = globalScope.setTimeout(() => render(), 120);
+            resizeTimer = globalScope.setTimeout(() => {
+                if (isActive()) render();
+            }, 120);
         }
 
         function destroy() {
@@ -916,6 +966,7 @@
         getDensityTargetYear,
         getMilestoneVariants,
         getNearestVisibleYear,
+        getOverviewViewport,
         getPrimaryImage,
         getSortYear,
         getStorylineId,
