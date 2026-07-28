@@ -5348,6 +5348,79 @@
             gap: 14px;
         }
 
+        .ui-event-edge {
+            --ui-event-triangle-block: 12px;
+            --ui-event-triangle-inline: 18px;
+            position: absolute;
+            z-index: 24;
+            top: 44px;
+            bottom: 72px;
+            width: 72px;
+            padding: 0;
+            border: none;
+            background: transparent;
+            color: rgba(244, 239, 229, 0.76);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            touch-action: manipulation;
+            transition: color 0.18s ease;
+        }
+
+        .ui-event-edge.is-prev {
+            left: -34px;
+            justify-content: flex-start;
+        }
+
+        .ui-event-edge.is-next {
+            right: -34px;
+            justify-content: flex-end;
+        }
+
+        .ui-event-edge::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: var(--ui-event-triangle-block) solid transparent;
+            border-bottom: var(--ui-event-triangle-block) solid transparent;
+            filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.72));
+            transition: transform 0.18s ease;
+        }
+
+        .ui-event-edge.is-prev::before {
+            border-right: var(--ui-event-triangle-inline) solid currentColor;
+        }
+
+        .ui-event-edge.is-next::before {
+            border-left: var(--ui-event-triangle-inline) solid currentColor;
+        }
+
+        .ui-event-edge:hover,
+        .ui-event-edge:focus-visible {
+            color: var(--accent);
+            outline: none;
+        }
+
+        .ui-event-edge:hover::before,
+        .ui-event-edge:focus-visible::before {
+            transform: scale(1.16);
+        }
+
+        .ui-event-edge:focus-visible {
+            box-shadow: inset 0 0 0 2px var(--accent);
+        }
+
+        .ui-event-edge:disabled {
+            display: none;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .ui-event-edge,
+            .ui-event-edge::before {
+                transition: none;
+            }
+        }
+
         .ui-detail-panel,
         .ui-side-panel {
             min-height: 0;
@@ -7112,6 +7185,27 @@
                 grid-template-columns: minmax(0, 1fr);
                 gap: 16px;
                 overflow: visible;
+            }
+
+            .ui-event-edge {
+                --ui-event-triangle-block: 10px;
+                --ui-event-triangle-inline: 15px;
+                position: fixed;
+                top: 50%;
+                bottom: auto;
+                width: 44px;
+                height: 144px;
+                transform: translateY(-50%);
+            }
+
+            .ui-event-edge.is-prev {
+                left: 0;
+                justify-content: flex-start;
+            }
+
+            .ui-event-edge.is-next {
+                right: 0;
+                justify-content: flex-end;
             }
 
             .ui-detail-panel {
@@ -15565,6 +15659,26 @@
             `;
         }
 
+        function buildUiEventEdgeButtonsHtml() {
+            if (milestoneList.length <= 1) return '';
+            const previousLabel = uiText('Previous event', '上一个事件');
+            const nextLabel = uiText('Next event', '下一个事件');
+            return `
+                <button class="ui-event-edge is-prev" type="button" data-ui-event-step="-1" aria-label="${escapeHtml(previousLabel)}" title="${escapeHtml(previousLabel)}" ${currentIndex <= 0 ? 'disabled' : ''}></button>
+                <button class="ui-event-edge is-next" type="button" data-ui-event-step="1" aria-label="${escapeHtml(nextLabel)}" title="${escapeHtml(nextLabel)}" ${currentIndex >= milestoneList.length - 1 ? 'disabled' : ''}></button>
+            `;
+        }
+
+        function bindUiEventEdgeNavigation(root) {
+            if (!root) return;
+            root.querySelectorAll('[data-ui-event-step]').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const eventStep = Number(button.dataset.uiEventStep);
+                    navigate(eventStep > 0 ? 'next' : 'prev', { analyticsSource: 'event-edge' });
+                });
+            });
+        }
+
         function fitUiDetailLocation() {
             if (!refs.uiBrowserMain) return;
             const topLine = refs.uiBrowserMain.querySelector('.ui-detail-topline');
@@ -15730,6 +15844,7 @@
                 : '';
             refs.uiBrowserMain.innerHTML = `
                 <div class="ui-detail">
+                    ${buildUiEventEdgeButtonsHtml()}
                     <section class="ui-detail-panel">
                         <div class="ui-detail-left">
                             <div class="ui-detail-hero">
@@ -15771,6 +15886,7 @@
                     setUiDetailImageIndex(uiDetailImageIndex + imageStep, detailImages);
                 });
             });
+            bindUiEventEdgeNavigation(refs.uiBrowserMain);
             refs.uiBrowserMain.querySelectorAll('[data-ui-media-video]').forEach((button) => {
                 button.addEventListener('click', () => {
                     const videoUrl = button.dataset.uiMediaVideo || '';
@@ -16380,8 +16496,13 @@
             }
         }
 
+        function shouldRunIdleAutoAdvance() {
+            if (milestoneList.length <= 1) return false;
+            return !isUiBrowserActive() || uiBrowserMode === 'detail';
+        }
+
         function handleIdleAutoAdvance() {
-            if (milestoneList.length <= 1) {
+            if (!shouldRunIdleAutoAdvance()) {
                 clearIdleAdvanceTimer();
                 return;
             }
@@ -16394,7 +16515,7 @@
 
         function restartIdleAdvanceTimer() {
             clearIdleAdvanceTimer();
-            if (milestoneList.length <= 1) return;
+            if (!shouldRunIdleAutoAdvance()) return;
             idleAdvanceTimer = window.setTimeout(handleIdleAutoAdvance, IDLE_AUTO_ADVANCE_MS);
         }
 
