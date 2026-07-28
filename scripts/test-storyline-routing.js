@@ -397,8 +397,23 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /\.ui-media-video-poster\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?\.ui-media-video video,[\s\S]*?object-fit:\s*contain/,
+    'commentary images and direct videos should scale to fit without cropping'
+);
+assert.match(
+    indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should exclude the image mounted in the right-side media panel'
+);
+assert.match(
+    indexHtml,
+    /function getChronologyCardImage\(milestone\)[\s\S]*?UI_CHRONOLOGY_IMAGE_OVERRIDES[\s\S]*?getUiDetailImages\(vm\)\[0\]/,
+    'overview cards should use the first image from the matching detail-page image collection unless overridden'
+);
+assert.match(
+    indexHtml,
+    /chronologyOverview\.update\(\{[\s\S]*?resolveCardImage: getChronologyCardImage/,
+    'the chronology overview should receive the shared detail-image resolver'
 );
 assert.doesNotMatch(
     indexHtml,

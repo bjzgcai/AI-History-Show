@@ -364,7 +364,11 @@
             .join('');
     }
 
-    function getPrimaryImage(milestone) {
+    function getPrimaryImage(milestone, resolveImage) {
+        const resolvedImage = typeof resolveImage === 'function'
+            ? String(resolveImage(milestone) || '').trim()
+            : '';
+        if (resolvedImage) return resolvedImage;
         const images =
             milestone && milestone.resources && Array.isArray(milestone.resources.images)
                 ? milestone.resources.images
@@ -520,7 +524,7 @@
             ]
                 .filter(Boolean)
                 .join(' · ');
-            const imageUrl = getPrimaryImage(milestone);
+            const imageUrl = getPrimaryImage(milestone, config.resolveCardImage);
             const imageAlt = getImageAlt(milestone, imageUrl, localize);
             const portraitImage = isPortraitImage(milestone, imageUrl);
             const selected = config.selectedEventId && config.selectedEventId === milestone.id;
@@ -883,6 +887,7 @@
         getDensityTargetYear,
         getMilestoneVariants,
         getNearestVisibleYear,
+        getPrimaryImage,
         getSortYear,
         getStorylineId,
         getStorylineMemberships,

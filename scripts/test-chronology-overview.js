@@ -57,6 +57,21 @@ assert.equal(
 );
 console.log('PASS chronology canonical events remove duplicate cards and preserve variants');
 
+const fallbackImageMilestone = {
+    resources: { images: ['detail-first.png', 'detail-second.png'] }
+};
+assert.equal(
+    overview.getPrimaryImage(fallbackImageMilestone),
+    'detail-first.png',
+    'overview cards should retain the first resource image when no detail-image resolver is configured'
+);
+assert.equal(
+    overview.getPrimaryImage(fallbackImageMilestone, () => 'resolved-detail-first.png'),
+    'resolved-detail-first.png',
+    'overview cards should prefer the image selected by the detail-image resolver'
+);
+console.log('PASS chronology cards support detail-first image resolution');
+
 const summaries = overview.summarizeStorylines(canonicalMilestones, localize);
 assert.deepEqual(
     summaries.map(({ id, count }) => ({ id, count })),
