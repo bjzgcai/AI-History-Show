@@ -1,6 +1,9 @@
 # Claude Code workspace
 .claude/
 
+# Local browser review artifacts
+.playwright-cli/
+
 # Node.js
 node_modules/
 *.log
@@ -18,6 +21,11 @@ manage/.backups/
 # Local candidate media assets
 /local-assets/
 
+# Local design and reference exports
+/designs/
+/人工智能历史网页代码文件/
+
 # OS
 .DS_Store
+._*
 Thumbs.db
