@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Temporal-difference learning with later TD-Gammon application / 时序差分学习与后来的 TD-Gammon 应用</title>
+  <desc id="desc">The 1988 temporal-difference method is illustrated through its later application in TD-Gammon.</desc>
+  <style>
+    text { font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif; letter-spacing: 0; }
+    .brand { fill: #f5efe5; font-size: 28px; font-weight: 700; }
+    .cue { fill: #b7afa4; font-size: 15px; font-weight: 700; }
+    .frame { fill: #111316; stroke: #363b43; stroke-width: 2; }
+    .accent { fill: #36b7a8; stroke: #36b7a8; }
+    .scan { animation: scan 6s linear infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .blink { animation: blink 4s steps(1, end) infinite; }
+    @keyframes scan { from { transform: translateX(-180px); } to { transform: translateX(980px); } }
+    @keyframes pulse { 0%, 100% { opacity: .45; transform: scale(.92); } 50% { opacity: 1; transform: scale(1.08); } }
+    @keyframes blink { 0%, 24% { opacity: .25; } 25%, 49% { opacity: 1; } 50%, 74% { opacity: .45; } 75%, 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .scan, .pulse, .blink { animation: none; } }
+  </style>
+  <rect width="960" height="600" fill="#090a0c"/>
+  <rect x="24" y="24" width="912" height="552" rx="6" class="frame"/>
+  <text x="58" y="72" class="brand">TD LEARNING</text>
+  <text x="58" y="98" class="cue">FOUNDATIONAL METHOD · 1988</text>
+  <rect x="58" y="116" width="844" height="1" fill="#34383f"/>
+  <text x="92" y="140" class="cue">LATER APPLICATION · TD-GAMMON</text>
+  <rect x="92" y="150" width="720" height="390" rx="8" fill="#3c2922" stroke="#caa875" stroke-width="4"/>
+  <path d="M110 170 L162 170 L136 345 Z" fill="#d2b17d" opacity=".92"/><path d="M110 520 L162 520 L136 345 Z" fill="#d2b17d" opacity=".92"/><path d="M167 170 L219 170 L193 345 Z" fill="#854b3e" opacity=".92"/><path d="M167 520 L219 520 L193 345 Z" fill="#854b3e" opacity=".92"/><path d="M224 170 L276 170 L250 345 Z" fill="#d2b17d" opacity=".92"/><path d="M224 520 L276 520 L250 345 Z" fill="#d2b17d" opacity=".92"/><path d="M281 170 L333 170 L307 345 Z" fill="#854b3e" opacity=".92"/><path d="M281 520 L333 520 L307 345 Z" fill="#854b3e" opacity=".92"/><path d="M338 170 L390 170 L364 345 Z" fill="#d2b17d" opacity=".92"/><path d="M338 520 L390 520 L364 345 Z" fill="#d2b17d" opacity=".92"/><path d="M395 170 L447 170 L421 345 Z" fill="#854b3e" opacity=".92"/><path d="M395 520 L447 520 L421 345 Z" fill="#854b3e" opacity=".92"/><path d="M452 170 L504 170 L478 345 Z" fill="#d2b17d" opacity=".92"/><path d="M452 520 L504 520 L478 345 Z" fill="#d2b17d" opacity=".92"/><path d="M509 170 L561 170 L535 345 Z" fill="#854b3e" opacity=".92"/><path d="M509 520 L561 520 L535 345 Z" fill="#854b3e" opacity=".92"/><path d="M566 170 L618 170 L592 345 Z" fill="#d2b17d" opacity=".92"/><path d="M566 520 L618 520 L592 345 Z" fill="#d2b17d" opacity=".92"/><path d="M623 170 L675 170 L649 345 Z" fill="#854b3e" opacity=".92"/><path d="M623 520 L675 520 L649 345 Z" fill="#854b3e" opacity=".92"/><path d="M680 170 L732 170 L706 345 Z" fill="#d2b17d" opacity=".92"/><path d="M680 520 L732 520 L706 345 Z" fill="#d2b17d" opacity=".92"/><path d="M737 170 L789 170 L763 345 Z" fill="#854b3e" opacity=".92"/><path d="M737 520 L789 520 L763 345 Z" fill="#854b3e" opacity=".92"/>
+  <g fill="#f2e6cf" stroke="#8c765c" stroke-width="3">
+    <circle cx="164" cy="198" r="22"/><circle cx="164" cy="238" r="22"/><circle cx="278" cy="492" r="22"/>
+    <circle cx="278" cy="452" r="22"/><circle cx="620" cy="198" r="22"/>
+  </g>
+  <g fill="#22262d" stroke="#090a0c" stroke-width="3">
+    <circle cx="734" cy="492" r="22"/><circle cx="734" cy="452" r="22"/><circle cx="506" cy="198" r="22"/>
+  </g>
+  <circle cx="506" cy="238" r="22" fill="#22262d" stroke="#090a0c" stroke-width="3">
+    <animate attributeName="cx" values="506;449;392;506" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="238;452;492;238" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(835 185)">
+    <rect width="74" height="74" rx="8" fill="#f3eee4"/><circle cx="20" cy="20" r="5" fill="#22262d"/><circle cx="54" cy="54" r="5" fill="#22262d"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 872 222;180 872 222;360 872 222" dur="2s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  <text x="832" y="325" class="cue">V(t)</text>
+  <polyline points="832,485 850,455 868,468 886,390 904,414" fill="none" stroke="#36b7a8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="904" cy="414" r="8" fill="#36b7a8" class="pulse"/>
+</svg>

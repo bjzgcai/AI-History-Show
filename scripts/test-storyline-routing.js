@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
+const { milestones: generatedMilestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
 
 assert.equal(
     routing.normalizeStorylineId('deep-learning'),
@@ -48,6 +49,35 @@ assert.equal(
 );
 console.log('PASS milestone storyline resolution');
 
+const humanisticMilestones = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'humanistic-cycle'
+);
+assert.equal(humanisticMilestones.length, 12, 'the humanistic cycle should contain twelve events');
+humanisticMilestones.forEach((milestone) => {
+    const images = milestone.resources && Array.isArray(milestone.resources.images) ? milestone.resources.images : [];
+    assert.ok(
+        images.some((url) => /\/humanistic-cycle\/explainers\//.test(String(url || ''))),
+        `${milestone.archiveEventId || milestone.id} should provide an explainer for commentary media`
+    );
+});
+console.log('PASS humanistic commentary media coverage');
+
+const gamingMilestones = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'gaming-ai'
+);
+assert.equal(gamingMilestones.length, 13, 'the gaming AI storyline should contain thirteen events');
+gamingMilestones.forEach((milestone) => {
+    assert.ok(
+        milestone.achievement && milestone.achievement.visual,
+        `${milestone.archiveEventId || milestone.id} should provide a unified UI visual`
+    );
+    assert.ok(
+        Array.isArray(milestone.quizzes) && milestone.quizzes.length > 0,
+        `${milestone.archiveEventId || milestone.id} should provide a detail checkpoint quiz`
+    );
+});
+console.log('PASS gaming AI unified UI content coverage');
+
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
     { id: 'milestone-2017-transformer', storyline: { id: 'deep-learning' } },
@@ -71,6 +101,8 @@ console.log('PASS archive deep-learning detail lookup');
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
+const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
+const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
@@ -153,7 +185,42 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /\.ui-detail-topline\s*\{[\s\S]*?grid-template-columns:\s*fit-content\(829px\) minmax\(300px, 1fr\)[\s\S]*?column-gap:\s*67px[\s\S]*?\.ui-detail-context\s*\{[\s\S]*?min-width:\s*564px[\s\S]*?max-width:\s*829px/,
+    /id: 'gaming-ai',[\s\S]*?layout: 'ui-browser'/,
+    'the gaming AI storyline should use the same UI browser as the other public storylines'
+);
+assert.match(
+    indexHtml,
+    /UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN[\s\S]*?sample-go-game[\s\S]*?function getUiGameEvolutionModule/,
+    'the unified gaming UI should not expose the shared sample game as event-specific playback'
+);
+assert.match(
+    i18nSource,
+    /aiHistoryMode:\s*'人工智能历史'/,
+    'the Chinese mode label should use the full localized name'
+);
+assert.match(
+    indexHtml,
+    /data-i18n="aiHistoryMode">人工智能历史<\/span>/,
+    'the initial UI shell should match the localized Chinese mode label before JavaScript initializes'
+);
+assert.match(
+    indexHtml,
+    /function isHumanisticMilestone\(milestone\)[\s\S]*?archiveVariantId === 'humanistic-cycle'[\s\S]*?milestone-humanistic-cycle-[\s\S]*?function buildUiSentimentTagHtml\(raw\)[\s\S]*?isHumanisticMilestone\(raw\)[\s\S]*?raw\.sentiment[\s\S]*?getAchievementField\(raw, 'area'/,
+    'humanistic UI browser cards should restore localized emotion labels with sentiment styling'
+);
+assert.match(
+    indexHtml,
+    /const AI_HISTORY_MAP_VARIANT_PRIORITY = \[[\s\S]*?'bench-council-ai100'[\s\S]*?DEEP_STORYLINE_ID[\s\S]*?'gaming-ai'[\s\S]*?'humanistic-cycle'[\s\S]*?\]/,
+    'the unified chronology should include all four public storylines'
+);
+assert.match(
+    indexHtml,
+    /class="ui-detail-title-row">[\s\S]*?class="ui-detail-title"[\s\S]*?\$\{sentimentTagHtml\}/,
+    'humanistic detail pages should place the emotion label directly after the event title'
+);
+assert.match(
+    indexHtml,
+    /\.ui-detail-topline\s*\{[\s\S]*?--ui-detail-context-base-width:\s*564px[\s\S]*?--ui-detail-context-max-width:\s*829px[\s\S]*?--ui-detail-title-min-width:\s*300px[\s\S]*?grid-template-columns:[\s\S]*?fit-content\(var\(--ui-detail-context-max-width\)\)[\s\S]*?minmax\(var\(--ui-detail-title-min-width\), 1fr\)[\s\S]*?\.ui-detail-context\s*\{[\s\S]*?width:\s*var\(--ui-detail-context-width, max-content\)[\s\S]*?min-width:\s*var\(--ui-detail-context-base-width\)[\s\S]*?max-width:\s*var\(--ui-detail-context-max-width\)/,
     'desktop detail titles should start at the body column and move right only when the context requires it'
 );
 assert.match(
@@ -165,6 +232,21 @@ assert.match(
     indexHtml,
     /\.ui-detail-place\s*\{[\s\S]*?width:\s*auto[\s\S]*?max-height:\s*2\.6em[\s\S]*?overflow:\s*hidden[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?-webkit-line-clamp:\s*2/,
     'detail locations should use the available width and truncate only after two lines'
+);
+assert.match(
+    indexHtml,
+    /function fitUiDetailLocation\(\)[\s\S]*?readLayoutWidth\('--ui-detail-context-base-width'\)[\s\S]*?readLayoutWidth\('--ui-detail-context-max-width'\)[\s\S]*?readLayoutWidth\('--ui-detail-title-min-width'\)[\s\S]*?fitsInTwoLines[\s\S]*?while \(high - low > 1\)/,
+    'desktop detail locations should use their base width first and grow only enough to fit within two lines'
+);
+assert.match(
+    indexHtml,
+    /function refreshUiBrowserMeasurements\(\)[\s\S]*?fitUiEventImages\(\)[\s\S]*?fitUiDetailLocation\(\)[\s\S]*?window\.addEventListener\('resize'[\s\S]*?refreshUiBrowserMeasurements\(\)[\s\S]*?window\.addEventListener\('orientationchange'[\s\S]*?refreshUiBrowserMeasurements\(\)/,
+    'responsive UI measurements should share one refresh path'
+);
+assert.match(
+    indexHtml,
+    /function scheduleUiDetailLocationFit\(\)[\s\S]*?requestAnimationFrame\(fitUiDetailLocation\)[\s\S]*?document\.fonts\.ready\.then\(fitUiDetailLocation\)[\s\S]*?function renderUiDetail\(\)[\s\S]*?scheduleUiDetailLocationFit\(\)/,
+    'detail location wrapping should be recalculated after rendering and after fonts load'
 );
 assert.match(
     indexHtml,
@@ -198,7 +280,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /const map = \{[\s\S]*?raw\.resources && raw\.resources\.imageMeta[\s\S]*?\.\.\.\(raw\.imageMeta \|\| \{\}\)/,
+    /function getConfiguredImageMetaMap\(vm\)[\s\S]*?raw\.resources && raw\.resources\.imageMeta[\s\S]*?\.\.\.\(raw\.imageMeta \|\| \{\}\)/,
     'Archive image metadata should override legacy resource metadata in the unified UI'
 );
 assert.doesNotMatch(
@@ -278,9 +360,34 @@ assert.match(
 );
 console.log('PASS unified UI boot state and storyline detail URL normalization');
 
+assert.equal(fs.existsSync(pqMiniProgramQrPath), true, 'the PQ mini program code should be restored');
+const pqMiniProgramQr = fs.readFileSync(pqMiniProgramQrPath);
+assert.equal(
+    pqMiniProgramQr.subarray(0, 8).toString('hex'),
+    '89504e470d0a1a0a',
+    'the PQ mini program code should be a PNG'
+);
+assert.ok(pqMiniProgramQr.length > 100_000, 'the PQ mini program code should contain the full scannable asset');
 assert.match(
     indexHtml,
-    /const shouldUseVideo = isDirectVideoMedia\(videoUrl\)[\s\S]*?canLoadBranchVideo/,
+    /const PQ_MINI_PROGRAM_QR_URL = 'resources\/pq\.png\?v=20260724';/,
+    'the quiz entry should reference the restored PQ mini program code'
+);
+assert.match(
+    indexHtml,
+    /function buildPqCourseEntry\(\)[\s\S]*?uiText\('PQ AI literacy course', 'PQ AI 通识课'\)[\s\S]*?class="quick-quiz-pq-qr-frame"[\s\S]*?PQ_MINI_PROGRAM_QR_URL/,
+    'the quiz panel should expose the bilingual PQ mini program course entrance'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /POP_QUIZ_MOBILE|mobileQuizApp|mobile-quiz-app|quiz=mobile|mobile_quiz_start|mobile_quiz_complete|qr_landing|10-question mobile challenge|10 题手机挑战|claim a souvenir|领取纪念品|ai100-pop-quiz-qr-v2/,
+    'the retired mobile challenge page, route, analytics, entry, and souvenir copy should not remain in the presentation'
+);
+console.log('PASS PQ-only quiz course entrance');
+
+assert.match(
+    indexHtml,
+    /const shouldUseVideo = isDirectVideoMedia\(videoUrl\)[\s\S]*?canLoadGameEvolutionVideo/,
     'game evolution images such as GIF files should not be rendered through a video element'
 );
 assert.match(
@@ -290,8 +397,38 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?candidates\.filter\(\(url\) => url !== sideImageUrl\)/,
+    /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should exclude the image mounted in the right-side media panel'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /function getUiDetailImages\(vm\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)\) return candidates/,
+    'humanistic detail image lists should not retain the explainer mounted in the right-side media panel'
+);
+assert.match(
+    indexHtml,
+    /function getConfiguredImageMetaMap\(vm\)[\s\S]*?function getConfiguredImageMetaEntry\(vm, url\)[\s\S]*?function getConfiguredImageMeta\(vm, url\)/,
+    'image metadata consumers should share one normalized Archive metadata lookup'
+);
+assert.match(
+    indexHtml,
+    /function findHumanisticExplainerImage\(vm, images\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)[\s\S]*?images\.find\(\(url\) => isExplainerMedia\(vm, url\)\)[\s\S]*?function getUiMediaVisualImage\(vm,[\s\S]*?findHumanisticExplainerImage\(vm, images\)/,
+    'humanistic commentary media should prioritize the first explainer image'
+);
+assert.match(
+    indexHtml,
+    /const mediaHtml = buildUiMediaHtml\(vm, \{ forceStaticImage: isHumanisticCycle \}\)[\s\S]*?uiText\('Sources', '资料来源'\)[\s\S]*?uiText\('Commentary & Media', '评论与媒体'\)/,
+    'humanistic explainers should render as static commentary media directly after sources'
+);
+assert.match(
+    indexHtml,
+    /function getAchievementSources\(rawMilestone\)[\s\S]*?type: uiText\('Paper', '论文'\)[\s\S]*?const seenTitles = new Set\(\)[\s\S]*?titleKeys\.some\(\(key\) => seenTitles\.has\(key\)\)/,
+    'achievement sources should use compact paper types and deduplicate alternate links by normalized title'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /uiText\(`Paper · \$\{journal\}`, `论文 · \$\{journal\}`\)/,
+    'achievement source type labels should not include long journal or submission details'
 );
 assert.match(
     indexHtml,

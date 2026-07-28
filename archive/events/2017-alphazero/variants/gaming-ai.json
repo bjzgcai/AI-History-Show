@@ -11,8 +11,8 @@
         "en": "Game AI as a Testbed for Search, Learning and Planning"
     },
     "displayDescription": {
-        "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>",
-        "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>"
+        "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以从随机下法起步，仅凭围棋、国际象棋和将棋的规则学习出超强棋力。神经网络同时预测走法概率和局面价值，蒙特卡洛树搜索利用这些预测选择更强行动，再把搜索改进后的自我对局作为下一轮训练数据。</p><p>与依赖人类棋谱、手工评估函数和开局库的传统程序相比，AlphaZero 把三个游戏统一到“策略-价值网络 + 搜索 + 自我博弈”的循环中。它仍需要准确的规则与可模拟环境，并不是无需先验的通用智能；但它清晰展示了同一学习框架如何跨越多种完全信息棋盘游戏，并直接影响 MuZero 等后续规划系统。</p>",
+        "en": "<p>AlphaZero showed that one self-play reinforcement-learning system could start from random play and learn superhuman performance using only the rules of Go, chess, and shogi. A neural network predicted both move probabilities and position values, Monte Carlo tree search used those predictions to choose stronger actions, and the improved self-play games became training data for the next iteration.</p><p>Unlike traditional programs built around human game records, handcrafted evaluation functions, and opening books, AlphaZero unified three games around a policy-value network, search, and self-play loop. It still required exact rules and a simulatable environment, so it was not prior-free general intelligence; nevertheless, it offered a clear cross-game learning recipe and directly influenced later planning systems such as MuZero.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "configuredPaper",
@@ -45,46 +45,13 @@
                 "en": "Source card for the gaming AI branch",
                 "zh": "AI 棋牌分支的资料卡片"
             }
-        },
-        {
-            "type": "gameEvolutionVideo",
-            "site": {
-                "en": "Game evolution clip",
-                "zh": "棋局演化短片"
-            },
-            "title": {
-                "en": "AlphaZero game evolution",
-                "zh": "AlphaZero 棋局演化"
-            },
-            "description": {
-                "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-                "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-            },
-            "url": "resources/videos/game-evolution/sample-go-game.gif",
-            "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-            "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-            "sourceSgf": "examples/sgf/sample-go-game.sgf",
-            "generator": "scripts/sgf_to_video.py",
-            "duration": {
-                "en": "about 1 min",
-                "zh": "约 1 分钟"
-            },
-            "fps": "30",
-            "license": {
-                "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-            },
-            "usage": {
-                "en": "Playable game-state evolution module",
-                "zh": "可播放的棋局状态演化模块"
-            },
-            "action": {
-                "en": "Play evolution clip",
-                "zh": "播放演化短片"
-            }
         }
     ],
-    "assetIds": ["asset-david-silver-commons-portrait", "asset-2017-alphazero-self-play-loop"],
+    "assetIds": [
+        "asset-2017-alphazero-self-play-loop",
+        "asset-david-silver-commons-portrait",
+        "asset-2017-alphazero-julian-schrittwieser"
+    ],
     "sourceIds": ["source-david-silver-commons-portrait", "source-science-paper", "source-arxiv-preprint", "source-deepmind-alphazero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2017-alphazero-quiz-1",
@@ -163,6 +130,19 @@
             "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
             "avatarStyle": "",
             "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Julian Schrittwieser",
+                "zh": "朱利安·施里特维泽"
+            },
+            "role": {
+                "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
+                "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+            },
+            "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
+            "avatarStyle": "",
+            "figureType": "person"
         }
     ],
     "photos": [],
@@ -179,7 +159,7 @@
         },
         "workAuthors": {
             "en": "David Silver et al., Science, 2018",
-            "zh": "David Silver 等，Science，2018"
+            "zh": "大卫·席尔瓦等，《科学》，2018"
         },
         "sourceLabel": "",
         "sourceUrl": "https://www.science.org/doi/10.1126/science.aar6404"
@@ -190,7 +170,7 @@
     },
     "quoteAttribution": {
         "en": "<em>A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play</em>, David Silver et al., Science, 2018",
-        "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》, David Silver 等，Science，2018"
+        "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》，大卫·席尔瓦等，《科学》，2018"
     },
     "quoteLabel": {
         "en": "Paper cue",
@@ -336,43 +316,6 @@
                     "en": "Source card for the gaming AI branch",
                     "zh": "AI 棋牌分支的资料卡片"
                 }
-            },
-            {
-                "type": "gameEvolutionVideo",
-                "site": {
-                    "en": "Game evolution clip",
-                    "zh": "棋局演化短片"
-                },
-                "title": {
-                    "en": "AlphaZero game evolution",
-                    "zh": "AlphaZero 棋局演化"
-                },
-                "description": {
-                    "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-                    "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-                },
-                "url": "resources/videos/game-evolution/sample-go-game.gif",
-                "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-                "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-                "sourceSgf": "examples/sgf/sample-go-game.sgf",
-                "generator": "scripts/sgf_to_video.py",
-                "duration": {
-                    "en": "about 1 min",
-                    "zh": "约 1 分钟"
-                },
-                "fps": "30",
-                "license": {
-                    "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                    "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-                },
-                "usage": {
-                    "en": "Playable game-state evolution module",
-                    "zh": "可播放的棋局状态演化模块"
-                },
-                "action": {
-                    "en": "Play evolution clip",
-                    "zh": "播放演化短片"
-                }
             }
         ]
     },
@@ -409,7 +352,7 @@
             },
             "authors": {
                 "en": "David Silver et al.",
-                "zh": "David Silver 等"
+                "zh": "大卫·席尔瓦等"
             },
             "journal": {
                 "en": "arXiv",
@@ -425,7 +368,7 @@
             },
             "authors": {
                 "en": "David Silver et al.",
-                "zh": "David Silver 等"
+                "zh": "大卫·席尔瓦等"
             },
             "journal": {
                 "en": "Science",

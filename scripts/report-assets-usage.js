@@ -8,7 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_EVENTS = path.join(ROOT, 'archive', 'events');
 const RESOURCE_ROOTS = ['resources', 'research', 'examples'];
 const OUT_JSON = path.join(ROOT, '.tmp', 'archive-reports', 'assets-usage.json');
-const OUT_MD = path.join(ROOT, 'reports', 'assets-usage.md');
+const OUT_MD = path.join(ROOT, '.tmp', 'archive-reports', 'assets-usage.md');
 const EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.pdf', '.mp4', '.json', '.sgf']);
 
 function rel(filePath) {

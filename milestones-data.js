@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-23 06:59
+// 生成时间: 2026-07-28 05:54
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -1231,14 +1231,14 @@ const milestones = [
       },
       {
         "name": {
-          "en": "Aja Huang",
-          "zh": "黄士杰"
+          "en": "Lee Sedol",
+          "zh": "李世石"
         },
         "role": {
-          "en": "AlphaGo researcher",
-          "zh": "AlphaGo 研究者"
+          "en": "Go world champion in the landmark 2016 match",
+          "zh": "2016 年里程碑对局中的围棋世界冠军"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -1641,7 +1641,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "戴维·席尔瓦等, 《自然》, 2016"
+        "zh": "大卫·席尔瓦等, 《自然》, 2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -1652,7 +1652,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等, 《自然》, 2016"
     }
   },
   {
@@ -13892,7 +13892,7 @@ const milestones = [
       {
         "name": {
           "en": "David Silver",
-          "zh": "戴维·席尔瓦"
+          "zh": "大卫·席尔瓦"
         },
         "role": {
           "en": "DeepMind reinforcement learning researcher",
@@ -13982,14 +13982,14 @@ const milestones = [
           "en": "Local redraw for Deep Q Network, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -14006,14 +14006,14 @@ const milestones = [
           "en": "Local redraw for Deep Q Network, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -15381,6 +15381,19 @@ const milestones = [
     "figures": [
       {
         "name": {
+          "en": "Feng-hsiung Hsu",
+          "zh": "许峰雄"
+        },
+        "role": {
+          "en": "Chief architect; custom VLSI and hardware design",
+          "zh": "首席架构师；定制 VLSI 与硬件设计"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+        "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
+        "figureType": "person"
+      },
+      {
+        "name": {
           "en": "Murray Campbell",
           "zh": "默里·坎贝尔"
         },
@@ -15389,19 +15402,6 @@ const milestones = [
           "zh": "评估函数与搜索策略负责人"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Feng-hsiung Hsu",
-          "zh": "许峰雄"
-        },
-        "role": {
-          "en": "Chief architect; custom VLSI and hardware design",
-          "zh": "首席架构师；定制 VLSI 与硬件设计"
-        },
-        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -15434,37 +15434,48 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1997-deep-blue-murray-campbell",
+        "asset-1997-deep-blue-feng-hsiung-hsu",
         "asset-1997-deep-blue-search-tree",
+        "asset-1997-deep-blue-murray-campbell",
         "asset-1997-deep-blue-chip-board"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg": {
         "caption": {
-          "zh": "默里·坎贝尔 肖像",
-          "en": "Murray Campbell portrait"
+          "zh": "许峰雄肖像",
+          "en": "Feng-hsiung Hsu portrait"
         },
         "subcaption": {
-          "zh": "来自 IBM 研究院 人物资料页的人物图。",
-          "en": "Portrait from IBM Research profile."
+          "zh": "Deep Blue 首席架构师与硬件设计者。",
+          "en": "Deep Blue chief architect and hardware designer."
         },
+        "sourceName": {
+          "zh": "IBM 档案馆 / 计算机历史博物馆",
+          "en": "IBM Archives / Computer History Museum"
+        },
+        "sourceUrl": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
         "license": {
-          "zh": "IBM 研究院 profile image; reuse rights not stated.",
-          "en": "IBM Research profile image; reuse rights not stated."
+          "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+          "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
         },
-        "sourceId": "source-murray-campbell-ibm-research",
+        "usage": {
+          "zh": "作为许峰雄的人物肖像及头像来源。",
+          "en": "Used as the portrait and avatar source for Feng-hsiung Hsu."
+        },
+        "sourceId": "source-feng-hsiung-hsu-chm-portrait",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "user-directed-use",
           "license": {
-            "zh": "IBM 研究院 profile image; reuse rights not stated.",
-            "en": "IBM Research profile image; reuse rights not stated."
+            "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+            "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
           }
         },
         "role": "hero-image",
@@ -15480,19 +15491,43 @@ const milestones = [
           "en": "Local redraw for Deep Blue, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+        "caption": {
+          "zh": "默里·坎贝尔肖像",
+          "en": "Murray Campbell portrait"
+        },
+        "subcaption": {
+          "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
+          "en": "Portrait from IBM Research profile."
+        },
+        "license": {
+          "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
+          "en": "IBM Research profile image; reuse rights not stated."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
+            "en": "IBM Research profile image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg": {
         "caption": {
@@ -15504,14 +15539,14 @@ const milestones = [
           "en": "Local redraw for Deep Blue, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -15569,6 +15604,21 @@ const milestones = [
           "sourceType": "paper"
         },
         {
+          "id": "source-feng-hsiung-hsu-chm-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "许峰雄肖像，计算机历史博物馆",
+            "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-murray-campbell-ibm-research",
           "type": {
             "zh": "人物资料",
@@ -15616,6 +15666,7 @@ const milestones = [
       ],
       "sourceIds": [
         "source-deep-blue-system-paper",
+        "source-feng-hsiung-hsu-chm-portrait",
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
         "source-ibm100-deep-blue"
@@ -18917,14 +18968,14 @@ const milestones = [
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -18941,14 +18992,14 @@ const milestones = [
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -20838,13 +20889,14 @@ const milestones = [
           "en": "Developer of the early draughts program",
           "zh": "早期跳棋程序开发者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
@@ -20852,6 +20904,7 @@ const milestones = [
       ],
       "videos": [],
       "assetIds": [
+        "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-program-external",
         "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
@@ -20859,6 +20912,40 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg": {
+        "caption": {
+          "zh": "克里斯托弗·斯特雷奇肖像",
+          "en": "Christopher Strachey portrait"
+        },
+        "subcaption": {
+          "zh": "早期跳棋程序开发者",
+          "en": "Developer of the early draughts program"
+        },
+        "sourceName": {
+          "zh": "IEEE Computer Society Computer Pioneers 档案",
+          "en": "IEEE Computer Society Computer Pioneers archive"
+        },
+        "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+        "license": {
+          "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+          "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+        },
+        "usage": {
+          "zh": "用于展示克里斯托弗·斯特雷奇与早期跳棋程序的关系。",
+          "en": "Used to present Christopher Strachey's connection to the early draughts program."
+        },
+        "sourceId": "source-computer-pioneers-christopher-strachey",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+            "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+          },
+          "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
           "zh": "斯特雷奇跳棋程序显示画面",
@@ -20886,7 +20973,7 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
-        "role": "source-card",
+        "role": "game-record-image",
         "type": "image"
       },
       "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
@@ -20929,14 +21016,14 @@ const milestones = [
           "en": "Original local explainer based on Logical or non-mathematical programmes."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -20953,14 +21040,14 @@ const milestones = [
           "en": "Original local explainer based on Logical or non-mathematical programmes."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -21010,21 +21097,6 @@ const milestones = [
           "sourceType": "paper"
         },
         {
-          "id": "source-computer-pioneers-christopher-strachey",
-          "type": {
-            "zh": "人物资料",
-            "en": "Profile"
-          },
-          "label": {
-            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
-            "en": "Computer Pioneers - Christopher Strachey"
-          },
-          "url": "https://history.computer.org/pioneers/strachey.html",
-          "purpose": "biography",
-          "reliability": "reference-only",
-          "sourceType": "profile"
-        },
-        {
           "id": "source-strachey-draughts-program-screenshot",
           "type": {
             "zh": "图片来源",
@@ -21057,7 +21129,6 @@ const milestones = [
       ],
       "sourceIds": [
         "source-logical-or-non-mathematical-programmes",
-        "source-computer-pioneers-christopher-strachey",
         "source-strachey-draughts-program-screenshot",
         "source-checkers-board-photo"
       ],
@@ -21421,18 +21492,18 @@ const milestones = [
           "en": "Screenshot of the cited source page: Chinook project home."
         },
         "license": {
-          "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
           "en": "Source page screenshot for citation preview; rights remain with the source site."
         },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Source page screenshot for citation preview; rights remain with the source site.",
+            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
             "en": "Source page screenshot for citation preview; rights remain with the source site."
           }
         },
-        "role": "hero-image",
+        "role": "game-record-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
@@ -21445,14 +21516,14 @@ const milestones = [
           "en": "Original local explainer based on Checkers Is Solved."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -21469,14 +21540,14 @@ const milestones = [
           "en": "Original local explainer based on Checkers Is Solved."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -53189,8 +53260,8 @@ const milestones = [
     "year": 1969,
     "date": "1969",
     "title": {
-      "zh": "第一次寒冬的到来",
-      "en": "The First AI Winter Arrives"
+      "zh": "《感知机》与连接主义退潮",
+      "en": "Perceptrons and the Retreat of Connectionism"
     },
     "subtitle": {
       "zh": "AI创世纪",
@@ -60964,8 +61035,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>克里斯托弗·斯特雷奇 的跳棋程序证明存储程序计算机不只会做数值计算。它表示棋盘局面、生成走法、评估备选方案，并在早期英国计算机上尝试策略性对弈，使游戏成为 AI 最早的公开试验场之一。</p>",
-      "en": "<p>Christopher Strachey's draughts program showed that stored-program computers could do more than numerical calculation. It represented board positions, generated moves, evaluated alternatives, and attempted strategic play on early British computers, making game playing one of AI's first public testbeds.</p>"
+      "zh": "<p>克里斯托弗·斯特雷奇在 1951 年开始为 Pilot ACE 编写跳棋程序，随后把完整版本移植到曼彻斯特 Ferranti Mark I，并在 1952 年运行。程序需要编码棋盘、合法走法和吃子规则，搜索若干步后的局面，再用手工评估函数比较候选路线。</p><p>在计算机仍主要被理解为数值计算设备的时期，这项工作展示了存储程序机器也能处理符号状态、选择和策略。受限内存与速度使搜索深度很浅，程序也远非顶尖棋手，但它把博弈确立为早期 AI 的实验场，并推动剪枝、评估函数和人机交互程序的发展。</p>",
+      "en": "<p>Christopher Strachey began writing a draughts program for the Pilot ACE in 1951, then transferred a complete version to the Manchester Ferranti Mark I, where it ran in 1952. The program encoded the board, legal moves, and captures, searched several plies of future positions, and compared candidate lines with a hand-designed evaluation function.</p><p>At a time when computers were understood mainly as numerical calculators, the work showed that a stored-program machine could manipulate symbolic states, choices, and strategy. Severe memory and speed limits kept the search shallow, and the program was far from elite play, but it established games as an early AI testbed and advanced ideas about pruning, evaluation functions, and interactive programs.</p>"
     },
     "figures": [
       {
@@ -60977,7 +61048,7 @@ const milestones = [
           "en": "Developer of the early draughts program",
           "zh": "早期跳棋程序开发者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
@@ -60985,6 +61056,7 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
+        "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
         "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
@@ -60992,6 +61064,7 @@ const milestones = [
       "videos": [],
       "assetIds": [
         "asset-1951-strachey-draughts-program-external",
+        "asset-1951-strachey-draughts-christopher-strachey-portrait",
         "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
         "asset-1951-strachey-draughts-program-flow"
@@ -61025,7 +61098,41 @@ const milestones = [
           },
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
         },
-        "role": "source-card",
+        "role": "game-record-image",
+        "type": "image"
+      },
+      "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg": {
+        "caption": {
+          "zh": "克里斯托弗·斯特雷奇肖像",
+          "en": "Christopher Strachey portrait"
+        },
+        "subcaption": {
+          "zh": "早期跳棋程序开发者",
+          "en": "Developer of the early draughts program"
+        },
+        "sourceName": {
+          "zh": "IEEE Computer Society Computer Pioneers 档案",
+          "en": "IEEE Computer Society Computer Pioneers archive"
+        },
+        "sourceUrl": "https://history.computer.org/pioneers/strachey.html",
+        "license": {
+          "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+          "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+        },
+        "usage": {
+          "zh": "用于展示克里斯托弗·斯特雷奇与早期跳棋程序的关系。",
+          "en": "Used to present Christopher Strachey's connection to the early draughts program."
+        },
+        "sourceId": "source-computer-pioneers-christopher-strachey",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；IEEE Computer Society 的 Computer Pioneers 档案页刊载同一照片，但未标明独立再利用许可，对外再分发前应复核授权范围。",
+            "en": "Provided by the user for exhibition use in this project; the IEEE Computer Society Computer Pioneers archive reproduces the same photograph without a separate reuse license, so redistribution rights should be confirmed before external reuse."
+          },
+          "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
+        },
+        "role": "hero-image",
         "type": "image"
       },
       "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
@@ -61068,14 +61175,14 @@ const milestones = [
           "en": "Original local explainer based on Logical or non-mathematical programmes."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -61092,14 +61199,14 @@ const milestones = [
           "en": "Original local explainer based on Logical or non-mathematical programmes."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-logical-or-non-mathematical-programmes",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -61130,43 +61237,6 @@ const milestones = [
             "en": "Open ACM record",
             "zh": "打开 ACM 记录"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Strachey's draughts game evolution",
-            "zh": "斯特雷奇跳棋 棋局演化"
-          },
-          "description": {
-            "en": "Fast draughts-board evolution slot from legal move generation into an evaluated choice.",
-            "zh": "从合法走法生成推进到评估选择的跳棋棋盘快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -61184,21 +61254,6 @@ const milestones = [
           "purpose": "core-evidence",
           "reliability": "primary",
           "sourceType": "paper"
-        },
-        {
-          "id": "source-computer-pioneers-christopher-strachey",
-          "type": {
-            "zh": "人物资料",
-            "en": "Profile"
-          },
-          "label": {
-            "zh": "Computer Pioneers - 克里斯托弗·斯特雷奇",
-            "en": "Computer Pioneers - Christopher Strachey"
-          },
-          "url": "https://history.computer.org/pioneers/strachey.html",
-          "purpose": "biography",
-          "reliability": "reference-only",
-          "sourceType": "profile"
         },
         {
           "id": "source-strachey-draughts-program-screenshot",
@@ -61233,7 +61288,6 @@ const milestones = [
       ],
       "sourceIds": [
         "source-logical-or-non-mathematical-programmes",
-        "source-computer-pioneers-christopher-strachey",
         "source-strachey-draughts-program-screenshot",
         "source-checkers-board-photo"
       ],
@@ -61370,8 +61424,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "在 1950 年代早期，运行一个非数值游戏程序会把极小内存和脆弱编程工具推到极限。",
-          "en": "In the early 1950s, running a non-numerical game program stretched tiny memories and fragile programming tools."
+          "zh": "在 1950 年代早期，电子计算机主要被视为数值计算设备，内存容量和编程工具也极其有限。在这种条件下实现跳棋，意味着机器必须表示棋盘、生成合法走法并在有限资源内比较候选行动。",
+          "en": "In the early 1950s, electronic computers were still understood mainly as numerical calculating machines, with extremely limited memory and fragile programming tools. Implementing draughts under those conditions required a machine to represent a board, generate legal moves, and compare candidate actions within tight resource limits."
         },
         "sourceIds": [
           "source-logical-or-non-mathematical-programmes"
@@ -61384,8 +61438,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "该程序编码合法走法和棋盘评估，使机器能够选择行动，而不是只回放脚本。",
-          "en": "The program encoded legal moves and board evaluation so the machine could choose actions rather than merely replay a script."
+          "zh": "程序把合法走法生成、局面评估和有限前瞻组合起来，使机器能够根据当前棋盘选择行动，而不是只回放预先写好的脚本。这个结构已经包含后来许多博弈程序反复使用的基本循环：生成、搜索、评估和选择。",
+          "en": "The program combined legal-move generation, position evaluation, and limited lookahead so the machine could choose an action from the current board rather than merely replay a script. That structure already contained the recurring loop of later game programs: generate, search, evaluate, and select."
         },
         "sourceIds": [
           "source-logical-or-non-mathematical-programmes"
@@ -61523,8 +61577,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>AlphaGo 结合深度神经网络、蒙特卡洛树搜索和自我对弈强化学习。2016 年与李世石的对局让 AI 的战略能力被全球观众看见。它证明 AI 可以在一个长期被认为难以靠蛮力搜索解决的领域中学习直觉与规划。</p>",
-      "en": "<p>AlphaGo combined deep neural networks, Monte Carlo tree search and reinforcement learning through self-play. Its 2016 match against Lee Sedol made AI's strategic progress visible to a global audience. The system showed that AI could learn both intuition and planning in a domain long considered too complex for brute-force search.</p>"
+      "zh": "<p>AlphaGo 结合策略网络、价值网络、蒙特卡洛树搜索和强化学习。系统先从职业棋手棋谱中进行监督学习，再通过自我对弈改进策略，并让树搜索把学习到的直觉与显式前瞻结合起来。2016 年《自然》论文报告了它战胜欧洲冠军樊麾，随后以 4 比 1 战胜李世石的比赛让这项成果进入全球公众视野。</p><p>围棋的分支数量和战略跨度极大，长期难以依靠蛮力搜索解决。AlphaGo 证明学习得到的表示可以缩小搜索范围，并评估难以手工编码的局面。它更深远的遗产是神经评估、规划与自我对弈的组合，这一模式影响了后续游戏系统及更广泛的决策研究。</p>",
+      "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4-1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
     },
     "figures": [
       {
@@ -61555,32 +61609,67 @@ const milestones = [
       },
       {
         "name": {
-          "en": "Aja Huang",
-          "zh": "黄士杰"
+          "en": "Lee Sedol",
+          "zh": "李世石"
         },
         "role": {
-          "en": "AlphaGo researcher",
-          "zh": "AlphaGo 研究者"
+          "en": "Go world champion in the landmark 2016 match",
+          "zh": "2016 年里程碑对局中的围棋世界冠军"
         },
-        "avatar": "",
+        "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg",
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
         "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2016-alphago-game-4-photo",
         "asset-david-silver-commons-portrait",
         "asset-alphago-lee-sedol",
         "asset-alphago-policy-value-search"
       ]
     },
     "imageMeta": {
+      "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
+        "caption": {
+          "zh": "李世石对 AlphaGo 第 4 局",
+          "en": "Lee Sedol versus AlphaGo, Game 4"
+        },
+        "subcaption": {
+          "zh": "2016 年首尔人机大战第 4 局的实际棋盘。",
+          "en": "The actual board during Game 4 of the 2016 Seoul match."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+        },
+        "usage": {
+          "zh": "用于展示李世石在第 4 局击败 AlphaGo 的实际对局场景。",
+          "en": "Used to show the actual game in which Lee Sedol defeated AlphaGo."
+        },
+        "sourceId": "source-alphago-game-4-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -61690,43 +61779,6 @@ const milestones = [
             "en": "Open Nature paper",
             "zh": "打开 《自然》 论文"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "AlphaGo game evolution",
-            "zh": "AlphaGo 棋局演化"
-          },
-          "description": {
-            "en": "SGF-ready fast replay slot styled after AlphaGo move-by-move viewers.",
-            "zh": "面向 SGF 的快速回放槽位，呈现类似 AlphaGo 逐手棋局查看器的演化节奏。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -61789,13 +61841,29 @@ const milestones = [
           "purpose": "implementation",
           "reliability": "reference-only",
           "sourceType": "documentation"
+        },
+        {
+          "id": "source-alphago-game-4-commons",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "李世石对 AlphaGo 第 4 局棋盘照片",
+            "en": "Lee Sedol versus AlphaGo, Game 4 board photograph"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-david-silver-commons-portrait",
         "source-alphago-nature-paper",
         "source-deepmind-alphago-page",
-        "source-katago-analysis-engine"
+        "source-katago-analysis-engine",
+        "source-alphago-game-4-commons"
       ],
       "claimIds": [
         "claim-hybrid-policy-value-search",
@@ -61900,26 +61968,36 @@ const milestones = [
     },
     "commentarySections": [
       {
+        "id": "historical-background",
         "label": {
-          "en": "Published Paper",
-          "zh": "论文材料"
+          "en": "Historical Background",
+          "zh": "历史背景"
         },
         "html": {
-          "en": "The Nature paper explains the hybrid design: policy networks narrow the search, value networks evaluate board positions, and Monte Carlo tree search chooses moves. AlphaGo Zero later showed how self-play could remove the need for expert game data.",
-          "zh": "《自然》 论文解释了它的混合设计：策略网络缩小搜索范围，价值网络评估棋盘局面，蒙特卡洛树搜索选择落子。后来的 AlphaGo Zero 进一步展示了自我对弈如何减少对专家棋谱的依赖。"
-        }
+          "en": "Go had long resisted brute-force game programs because its branching factor is enormous and the value of a position can remain strategically uncertain for many moves. AlphaGo's 2016 match victory over Lee Sedol made learned evaluation and search a public demonstration of machine capability, not only a laboratory result.",
+          "zh": "围棋的分支数量极大，局面价值又可能在很多手之后才显现，因此长期难以用蛮力搜索突破。2016 年 AlphaGo 战胜李世石，使学习型评估与搜索不再只是实验室成果，而成为全球公众理解机器能力的标志性事件。"
+        },
+        "sourceIds": [
+          "source-alphago-nature-paper",
+          "source-deepmind-alphago-page"
+        ]
       },
       {
+        "id": "core-idea",
         "label": {
-          "en": "Blog / API Materials",
-          "zh": "博客 / API 材料"
+          "en": "Core Idea",
+          "zh": "核心思想"
         },
         "html": {
-          "en": "DeepMind's AlphaGo pages and AlphaGo Zero blog are good narrative sources. For a modern interactive demo, KataGo's analysis engine API and public SGF game records can show win-rate shifts, policy suggestions and search variations around famous moves.",
-          "zh": "DeepMind 的 AlphaGo 页面和 AlphaGo Zero 博客适合做叙事材料。若要做现代交互演示，可结合 KataGo 分析引擎 API 与公开 SGF 棋谱，展示名局附近的胜率变化、策略建议和搜索分支。"
-        }
+          "en": "A policy network narrows the enormous move space, a value network estimates which positions are promising, and Monte Carlo tree search converts those learned predictions into explicit lookahead. Supervised learning from expert games supplied the initial policy, while reinforcement learning through self-play made it stronger.",
+          "zh": "策略网络缩小庞大的候选落子空间，价值网络估计哪些局面更有希望，蒙特卡洛树搜索再把这些学习到的预测转化为显式前瞻。系统先从职业棋谱进行监督学习获得初始策略，再通过自我对弈强化学习继续提升。"
+        },
+        "sourceIds": [
+          "source-alphago-nature-paper"
+        ]
       },
       {
+        "id": "long-term-legacy",
         "label": {
           "en": "Long-Term Legacy",
           "zh": "长期影响"
@@ -61927,7 +62005,11 @@ const milestones = [
         "html": {
           "en": "Experts generally treat AlphaGo as a landmark demonstration that deep learning, search, and reinforcement learning could surpass elite human intuition in a complex domain. Its long-term legacy is the self-play and neural search pattern that shaped later game AI, planning systems, and public expectations for AI breakthroughs.",
           "zh": "专家通常把 AlphaGo 视为标志性展示，说明深度学习、搜索和强化学习可以在复杂领域超越顶尖人类直觉。它的长期影响在于自我对弈和神经搜索模式影响了后来的游戏 AI、规划系统以及公众对 AI 突破的期待。"
-        }
+        },
+        "sourceIds": [
+          "source-alphago-nature-paper",
+          "source-deepmind-alphago-page"
+        ]
       }
     ],
     "analysis": null,
@@ -61986,7 +62068,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Nature, 2016",
-        "zh": "戴维·席尔瓦等, 《自然》, 2016"
+        "zh": "大卫·席尔瓦等, 《自然》, 2016"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.nature.com/articles/nature16961"
@@ -61997,7 +62079,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Mastering the Game of Go with Deep Neural Networks and Tree Search</em>, David Silver et al., Nature, 2016",
-      "zh": "《用深度神经网络和树搜索掌握围棋》, 戴维·席尔瓦等, 《自然》, 2016"
+      "zh": "《用深度神经网络和树搜索掌握围棋》, 大卫·席尔瓦等, 《自然》, 2016"
     }
   },
   {
@@ -62043,8 +62125,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>时序差分学习为强化学习提供了一种从经验中学习预测的紧凑方法。TD 方法不必等到最终结果，而是用下一步奖励和下一步预测来更新价值估计。这种自举思想支撑了 TD-Gammon、Q-learning 和 actor-critic 等后续算法。</p>",
-      "en": "<p>Temporal-difference learning gave reinforcement learning a compact way to learn predictions from experience. Instead of waiting for a final outcome, TD methods update value estimates using the next reward and the next prediction. This bootstrapping idea sits behind many later algorithms, including TD-Gammon, Q-learning, and actor-critic methods.</p>"
+      "zh": "<p>理查德·萨顿在 1988 年系统化时序差分学习，让智能体能够在序列尚未结束时更新对未来回报的预测。TD 更新把当前价值估计向“即时奖励 + 下一状态的估计价值”移动，因此同时利用真实经验和已有预测进行自举，而不必像蒙特卡洛方法那样等待最终结果。</p><p>这种在线、逐步更新方式适合持续交互，并把动态规划与从样本学习连接起来。TD 误差后来成为 Q-learning、SARSA、actor-critic 和许多深度强化学习算法的核心信号。自举也可能传播估计偏差，与函数逼近和离策略学习结合时还会带来稳定性挑战。</p>",
+      "en": "<p>Richard Sutton systematized temporal-difference learning in 1988 so an agent could update predictions of future return before a sequence had ended. A TD update moves the current value estimate toward the immediate reward plus the estimated value of the next state, bootstrapping from both observed experience and an existing prediction rather than waiting for a final outcome as Monte Carlo methods do.</p><p>This online, step-by-step process suits continuing interaction and connects ideas from dynamic programming with learning from samples. The TD error later became a central signal in Q-learning, SARSA, actor-critic methods, and much of deep reinforcement learning. Bootstrapping can also propagate estimation error and creates important stability challenges when combined with function approximation and off-policy learning.</p>"
     },
     "figures": [
       {
@@ -62063,18 +62145,52 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/game-evolution/1988-td-gammon.svg",
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-1988-td-update-td-gammon-media",
         "asset-1988-td-update-richard-sutton",
         "asset-1988-td-update-value-timeline",
         "asset-1988-td-update-error-meter"
       ]
     },
     "imageMeta": {
+      "resources/images/game-evolution/1988-td-gammon.svg": {
+        "caption": {
+          "zh": "时序差分学习与后来的 TD-Gammon",
+          "en": "Temporal-difference learning and the later TD-Gammon"
+        },
+        "subcaption": {
+          "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",
+          "en": "Backgammon state changes, dice rolls, and a value trace illustrate how TD learning updates predictions during play."
+        },
+        "sourceName": {
+          "zh": "本项目原创解释图",
+          "en": "Original exhibition explainer"
+        },
+        "license": {
+          "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+          "en": "Original local SVG explainer; no paper or match imagery is copied."
+        },
+        "usage": {
+          "zh": "用于 1988 年时序差分更新事件的评论与媒体区，展示该方法在 TD-Gammon 棋局中的后续应用。",
+          "en": "Used in the 1988 Temporal-Difference Update commentary and media panel to show the method's later application in TD-Gammon."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+            "en": "Original local SVG explainer; no paper or match imagery is copied."
+          }
+        },
+        "role": "game-analysis-image",
+        "type": "svg"
+      },
       "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
         "caption": {
           "zh": "理查德·萨顿 肖像",
@@ -62109,14 +62225,14 @@ const milestones = [
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -62133,14 +62249,14 @@ const milestones = [
           "en": "Local redraw for Temporal-Difference Update, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -62175,43 +62291,6 @@ const milestones = [
           "action": {
             "en": "Open DOI record",
             "zh": "打开 DOI 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "TD-Gammon trajectory game evolution",
-            "zh": "TD-Gammon 轨迹 棋局演化"
-          },
-          "description": {
-            "en": "Fast board-trajectory slot for showing value estimates changing across delayed rewards.",
-            "zh": "用于展示延迟奖励中价值估计变化的棋盘轨迹快速播放槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1988-td-update_td-gammon-trajectory.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -62398,8 +62477,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "从延迟奖励中学习需要一种在整个回合结束前分配信用的方法。",
-          "en": "Learning from delayed rewards required a way to assign credit before the entire episode ended."
+          "zh": "从延迟奖励中学习，需要在整段交互结束前判断哪些状态和动作应当获得信用。时序差分学习把这种信用分配变成逐步更新，使预测能够随新经验即时修正。",
+          "en": "Learning from delayed rewards requires assigning credit to states and actions before an entire interaction has ended. Temporal-difference learning turned that problem into incremental updates, allowing predictions to change as new experience arrives."
         },
         "sourceIds": [
           "source-learning-to-predict-by-the-methods-of-temporal-differences"
@@ -62412,8 +62491,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "TD 比较当前预测与“奖励加下一步预测”，再把当前价值向该目标推进。",
-          "en": "TD compares the current prediction with a reward plus the next prediction, then nudges the current value toward that target."
+          "zh": "TD 比较当前预测与“即时奖励加下一步预测”形成的一步目标，再把当前价值向该目标推进。这个自举机制不必等待最终胜负，因此特别适合连续对局和在线控制。",
+          "en": "TD compares the current prediction with a one-step target formed from the immediate reward plus the next prediction, then moves the current value toward it. This bootstrapping mechanism does not wait for a final outcome, making it well suited to continuing games and online control."
         },
         "sourceIds": [
           "source-learning-to-predict-by-the-methods-of-temporal-differences"
@@ -62551,8 +62630,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Chinook 把游戏 AI 从竞技对弈推进到数学求解。阿尔伯塔大学团队结合开局库、深层 alpha-beta 搜索、专家评估和庞大残局数据库，最终证明跳棋在完美对弈下结果为和棋。</p>",
-      "en": "<p>Chinook pushed game AI from competitive play toward mathematical solution. The University of Alberta team combined opening books, deep alpha-beta search, expert evaluation, and enormous endgame databases, eventually proving that perfect play in checkers leads to a draw.</p>"
+      "zh": "<p>乔纳森·谢弗领导的阿尔伯塔大学团队开发 Chinook，把开局数据库、alpha-beta 搜索、人工设计的局面评估和逐步扩大的残局数据库结合起来。系统先达到世界冠军级竞技水平，再把重点转向系统枚举和证明标准跳棋的博弈结果。</p><p>2007 年团队报告跳棋被“弱求解”：从标准初始局面开始，在双方完美对弈时结果为和棋。证明依赖计算机生成的大规模搜索与残局知识，而不是单场比赛表现。Chinook 由此把游戏 AI 从击败强手推进到数学求解，也展示了软件、计算资源和长期项目积累如何共同完成超大搜索。</p>",
+      "en": "<p>Jonathan Schaeffer's University of Alberta team developed Chinook by combining opening databases, alpha-beta search, hand-designed position evaluation, and increasingly large endgame databases. The system first reached world-championship competitive strength and then shifted toward systematic enumeration and proof of the outcome of standard checkers.</p><p>In 2007, the team reported that checkers had been weakly solved: from the standard initial position, perfect play by both sides leads to a draw. The proof depended on large computer-generated searches and endgame knowledge, not the result of one match. Chinook therefore moved game AI from defeating strong opponents toward mathematical solution and showed how software, computation, and long-term project accumulation can conquer a vast search space.</p>"
     },
     "figures": [
       {
@@ -62571,20 +62650,44 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
+        "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
         "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1994-chinook-jonathan-schaeffer-external",
         "asset-1994-chinook-homepage",
+        "asset-1994-chinook-jonathan-schaeffer-external",
         "asset-1994-chinook-endgame-database",
         "asset-1994-chinook-perfect-play"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
+        "caption": {
+          "zh": "Chinook 官方项目页面",
+          "en": "Chinook official project page"
+        },
+        "subcaption": {
+          "zh": "引用来源页面截图：Chinook project home。",
+          "en": "Screenshot of the cited source page: Chinook project home."
+        },
+        "license": {
+          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+          "en": "Source page screenshot for citation preview; rights remain with the source site."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+            "en": "Source page screenshot for citation preview; rights remain with the source site."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image"
+      },
       "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg": {
         "caption": {
           "zh": "乔纳森·谢弗肖像",
@@ -62615,30 +62718,6 @@ const milestones = [
         "role": "portrait",
         "type": "image"
       },
-      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
-        "caption": {
-          "zh": "Chinook 官方项目页面",
-          "en": "Chinook official project page"
-        },
-        "subcaption": {
-          "zh": "引用来源页面截图：Chinook project home。",
-          "en": "Screenshot of the cited source page: Chinook project home."
-        },
-        "license": {
-          "zh": "Source page screenshot for citation preview; rights remain with the source site.",
-          "en": "Source page screenshot for citation preview; rights remain with the source site."
-        },
-        "sourceId": "source-chinook-project-home",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Source page screenshot for citation preview; rights remain with the source site.",
-            "en": "Source page screenshot for citation preview; rights remain with the source site."
-          }
-        },
-        "role": "hero-image",
-        "type": "image"
-      },
       "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
         "caption": {
           "zh": "残局数据库表",
@@ -62649,14 +62728,14 @@ const milestones = [
           "en": "Original local explainer based on Checkers Is Solved."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -62673,14 +62752,14 @@ const milestones = [
           "en": "Original local explainer based on Checkers Is Solved."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-chinook-project-home",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -62710,43 +62789,6 @@ const milestones = [
           "action": {
             "en": "Open Science record",
             "zh": "打开 《科学》 记录"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Chinook game evolution",
-            "zh": "Chinook 棋局演化"
-          },
-          "description": {
-            "en": "Fast checkers evolution slot connecting opening search to solved endgame-table evidence.",
-            "zh": "连接开局搜索与已求解残局表证据的跳棋快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -62951,8 +62993,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "跳棋足够复杂，可以挑战搜索算法；同时结构足够明确，适合长期构建残局数据库。",
-          "en": "Checkers was complex enough to challenge search algorithms but structured enough for decades of endgame database construction."
+          "zh": "跳棋足够复杂，可以挑战当时的搜索算法；同时规则和状态空间又足够明确，适合长期构建残局数据库。Chinook 因而成为连接竞技程序与形式化游戏求解的理想试验场。",
+          "en": "Checkers was complex enough to challenge contemporary search algorithms, yet structured enough for decades of endgame-database construction. That made Chinook an unusually productive bridge between competitive game programs and formal game solving."
         },
         "sourceIds": [
           "source-chinook-project-home"
@@ -62965,8 +63007,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "Chinook 将前向搜索与已求解残局表结合，使程序能把当前选择连接到被证明的终局结果。",
-          "en": "Chinook paired forward search with solved endgame tables, letting the program connect current choices to proven late-game outcomes."
+          "zh": "Chinook 将开局知识、alpha-beta 前向搜索、人工局面评估与已求解残局表结合，使当前选择能够连接到被证明的终局结果。随着残局数据库不断扩大，未知搜索空间被逐步压缩，最终形成从初始局面到和棋结论的证明链。",
+          "en": "Chinook combined opening knowledge, alpha-beta forward search, hand-built position evaluation, and solved endgame tables so current choices could connect to proven late-game outcomes. As the databases expanded, the unknown search space contracted until the team could establish a proof chain from the initial position to a draw."
         },
         "sourceIds": [
           "source-chinook-project-home"
@@ -63104,8 +63146,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Logistello 在 1997 年黑白棋对局中以 6 比 0 击败世界冠军村上健。Michael Buro 将选择性博弈树搜索、基于棋盘模式的评估、统计特征学习、开局库学习和强残局求解结合起来，说明学习得到的评估函数可以在紧凑棋盘游戏中超过手工启发式规则。</p>",
-      "en": "<p>Logistello defeated world champion Takeshi Murakami 6-0 in a 1997 Othello match. Michael Buro combined selective game-tree search, pattern-based evaluation, statistical feature learning, opening-book learning, and strong endgame solving, showing that learned evaluation could outperform hand-crafted heuristics in a compact board game.</p>"
+      "zh": "<p>迈克尔·布罗开发的 Logistello 在 1997 年六局黑白棋对抗中以 6 比 0 击败世界冠军村上健。系统把选择性博弈树搜索、按棋局阶段变化的棋盘模式评估、统计特征学习、开局库学习和精确残局求解组合起来，使搜索能够区分表面棋子数量相近、战略价值却完全不同的局面。</p><p>Logistello 的意义不只是一场胜利。它展示了学习得到的评估参数可以与经典 alpha-beta 搜索协同工作，成为从手工启发式博弈程序走向数据驱动评估的重要桥梁，也为后来神经网络价值函数辅助搜索提供了清晰的历史先例。</p>",
+      "en": "<p>Michael Buro's Logistello defeated world champion Takeshi Murakami 6-0 in a six-game Othello match in 1997. The system combined selective game-tree search, phase-dependent board-pattern evaluation, statistical feature learning, opening-book learning, and exact endgame solving so that search could distinguish positions with similar disc counts but very different strategic value.</p><p>Logistello mattered beyond the match result. It showed that learned evaluation parameters could work in concert with classical alpha-beta search, forming an important bridge from handcrafted game heuristics to data-driven evaluation and a clear historical precedent for later search systems guided by neural value estimates.</p>"
     },
     "figures": [
       {
@@ -63120,33 +63162,79 @@ const milestones = [
         "avatar": "resources/images/figures/authoritative/michael-buro.jpg",
         "avatarStyle": "",
         "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Takeshi Murakami",
-          "zh": "村上健"
-        },
-        "role": {
-          "en": "World Othello champion in the 1997 match",
-          "zh": "1997 年对局中的黑白棋世界冠军"
-        },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/figures/authoritative/michael-buro.jpg",
-        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg"
+        "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif",
+        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
+        "resources/images/figures/authoritative/michael-buro.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-michael-buro-university-portrait",
-        "asset-1997-logistello-pattern-eval"
+        "asset-1997-logistello-game-1-positions",
+        "asset-1997-logistello-pattern-eval",
+        "asset-michael-buro-university-portrait"
       ]
     },
     "imageMeta": {
+      "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif": {
+        "caption": {
+          "zh": "Logistello 对村上健第 1 局逐手局面",
+          "en": "Logistello versus Takeshi Murakami, Game 1 positions"
+        },
+        "subcaption": {
+          "zh": "根据 Logistello 官方比赛页截图生成，循环展示截图中前 25 个完整黑白棋局面。",
+          "en": "Generated from the official Logistello match-page screenshot, looping through its first 25 complete Othello positions."
+        },
+        "sourceName": {
+          "zh": "Logistello 官方比赛档案",
+          "en": "Official Logistello match archive"
+        },
+        "sourceUrl": "https://skatgame.net/mburo/match/board1.all.html",
+        "license": {
+          "zh": "由官方逐步棋谱页的本地截图裁帧生成；原页未声明独立再利用许可，对外再分发前需复核授权。",
+          "en": "Generated by cropping frames from a local screenshot of the official move-by-move page; the page states no separate reuse license, so redistribution rights must be reviewed."
+        },
+        "usage": {
+          "zh": "用于动画展示 Logistello 对世界冠军村上健第 1 局截图中可完整提取的前 25 个局面。",
+          "en": "Used to animate the first 25 complete positions extractable from the screenshot of Logistello's first game against world champion Takeshi Murakami."
+        },
+        "sourceId": "source-logistello-game-1-positions",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "由官方逐步棋谱页的本地截图裁帧生成；原页未声明独立再利用许可，对外再分发前需复核授权。",
+            "en": "Generated by cropping frames from a local screenshot of the official move-by-move page; the page states no separate reuse license, so redistribution rights must be reviewed."
+          }
+        },
+        "role": "game-record-animation",
+        "type": "gif"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
+        "caption": {
+          "zh": "Logistello 模式评估",
+          "en": "Logistello pattern evaluation"
+        },
+        "subcaption": {
+          "zh": "学习型黑白棋评估的原创解释图。",
+          "en": "Original explainer for learned Othello evaluation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-logistello-homepage",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/figures/authoritative/michael-buro.jpg": {
         "caption": {
           "zh": "迈克尔·布罗肖像",
@@ -63175,30 +63263,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
-        "caption": {
-          "zh": "Logistello 模式评估",
-          "en": "Logistello pattern evaluation"
-        },
-        "subcaption": {
-          "zh": "学习型黑白棋评估的原创解释图。",
-          "en": "Original explainer for learned Othello evaluation."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-logistello-homepage",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -63287,8 +63351,8 @@ const milestones = [
             "en": "Paper"
           },
           "label": {
-            "zh": "《统计特征组合》",
-            "en": "Statistical Feature Combination"
+            "zh": "《用于棋局评估的统计特征组合》",
+            "en": "Statistical Feature Combination for the Evaluation of Game Positions"
           },
           "url": "https://arxiv.org/abs/cs/9512106",
           "purpose": "core-evidence",
@@ -63309,6 +63373,21 @@ const milestones = [
           "purpose": "alternate-access",
           "reliability": "reference-only",
           "sourceType": "paper-index"
+        },
+        {
+          "id": "source-logistello-game-1-positions",
+          "type": {
+            "zh": "档案",
+            "en": "Archive"
+          },
+          "label": {
+            "zh": "村上健对 Logistello 第 1 局逐步局面",
+            "en": "Takeshi Murakami versus Logistello, Game 1 positions"
+          },
+          "url": "https://skatgame.net/mburo/match/board1.all.html",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "archive"
         }
       ],
       "sourceIds": [
@@ -63316,7 +63395,8 @@ const milestones = [
         "source-logistello-homepage",
         "source-murakami-vs-logistello",
         "source-statistical-feature-combination",
-        "source-michael-buro-publications"
+        "source-michael-buro-publications",
+        "source-logistello-game-1-positions"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -63681,10 +63761,23 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>深蓝 成为第一个在正式比赛中击败卫冕世界冠军的计算机系统。它结合了强力 alpha-beta 搜索、国际象棋专用评估、开局/残局知识和定制 VLSI 硬件。这是一个公众转折点：AI 可以在高度符号化的游戏中击败顶尖人类专家。</p>",
-      "en": "<p>Deep Blue became the first computer system to defeat the reigning world chess champion in a regulation match. The achievement mixed brute-force alpha-beta search, chess-specific evaluation, opening/endgame knowledge, and custom VLSI hardware. It marked a public turning point: AI could beat elite human expertise in a highly symbolic game.</p>"
+      "zh": "<p>IBM 的 Deep Blue 在 1997 年六局比赛中以 3.5 比 2.5 击败卫冕世界冠军加里·卡斯帕罗夫，成为首个在标准比赛条件下战胜现任国际象棋世界冠军的计算机系统。许峰雄、默里·坎贝尔等核心成员把并行 alpha-beta 搜索、国际象棋专用评估函数、开局库、残局知识和定制芯片整合成一套高性能系统。</p><p>Deep Blue 的成功来自搜索规模、硬件和专家知识的系统工程，而不是像现代系统那样从自我对弈中学习通用表征。它并不意味着获得一般智能，却成为公众理解机器能力的重要转折点，并展示了在规则明确的复杂领域中，计算、启发式搜索和领域知识可以共同超过顶尖人类表现。</p>",
+      "en": "<p>IBM's Deep Blue defeated reigning world champion Garry Kasparov by 3.5-2.5 in a six-game match in 1997, becoming the first computer system to defeat a sitting chess world champion under standard match conditions. Core team members including Feng-hsiung Hsu and Murray Campbell integrated parallel alpha-beta search, chess-specific evaluation functions, opening books, endgame knowledge, and custom chips into a high-performance system.</p><p>Deep Blue's strength came from systems engineering across search scale, hardware, and expert knowledge, not from learning general representations through self-play in the modern sense. It did not constitute general intelligence, but it became a major public turning point and showed how computation, heuristic search, and domain knowledge could jointly exceed elite human performance in a complex, precisely defined field.</p>"
     },
     "figures": [
+      {
+        "name": {
+          "en": "Feng-hsiung Hsu",
+          "zh": "许峰雄"
+        },
+        "role": {
+          "en": "Chief architect; custom VLSI and hardware design",
+          "zh": "首席架构师；定制 VLSI 与硬件设计"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+        "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
+        "figureType": "person"
+      },
       {
         "name": {
           "en": "Murray Campbell",
@@ -63695,19 +63788,6 @@ const milestones = [
           "zh": "评估函数与搜索策略负责人"
         },
         "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Feng-hsiung Hsu",
-          "zh": "许峰雄"
-        },
-        "role": {
-          "en": "Chief architect; custom VLSI and hardware design",
-          "zh": "首席架构师；定制 VLSI 与硬件设计"
-        },
-        "avatar": "",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -63740,36 +63820,106 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif",
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
         "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-1997-deep-blue-game-6-animation",
+        "asset-1997-deep-blue-feng-hsiung-hsu",
         "asset-1997-deep-blue-murray-campbell",
         "asset-1997-deep-blue-search-tree",
         "asset-1997-deep-blue-chip-board"
       ]
     },
     "imageMeta": {
+      "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif": {
+        "caption": {
+          "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局",
+          "en": "Deep Blue versus Kasparov, 1997 Game 6"
+        },
+        "subcaption": {
+          "zh": "逐手重放深蓝赢得重赛的决定局。",
+          "en": "Move-by-move replay of the decisive game in Deep Blue's rematch victory."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+        "license": {
+          "zh": "CC0 公共领域贡献；制作者为 Morn。",
+          "en": "CC0 public-domain dedication; created by Morn."
+        },
+        "usage": {
+          "zh": "用于展示 1997 年深蓝对卡斯帕罗夫第 6 局的实际走子过程。",
+          "en": "Used to show the actual move sequence of Deep Blue versus Kasparov, Game 6, in 1997."
+        },
+        "sourceId": "source-deep-blue-game-6-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC0 公共领域贡献；制作者为 Morn。",
+            "en": "CC0 public-domain dedication; created by Morn."
+          }
+        },
+        "role": "game-record-animation",
+        "type": "gif"
+      },
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg": {
+        "caption": {
+          "zh": "许峰雄肖像",
+          "en": "Feng-hsiung Hsu portrait"
+        },
+        "subcaption": {
+          "zh": "Deep Blue 首席架构师与硬件设计者。",
+          "en": "Deep Blue chief architect and hardware designer."
+        },
+        "sourceName": {
+          "zh": "IBM 档案馆 / 计算机历史博物馆",
+          "en": "IBM Archives / Computer History Museum"
+        },
+        "sourceUrl": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+        "license": {
+          "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+          "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
+        },
+        "usage": {
+          "zh": "作为许峰雄的人物肖像及头像来源。",
+          "en": "Used as the portrait and avatar source for Feng-hsiung Hsu."
+        },
+        "sourceId": "source-feng-hsiung-hsu-chm-portrait",
+        "rights": {
+          "status": "user-directed-use",
+          "license": {
+            "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+            "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
         "caption": {
-          "zh": "默里·坎贝尔 肖像",
+          "zh": "默里·坎贝尔肖像",
           "en": "Murray Campbell portrait"
         },
         "subcaption": {
-          "zh": "来自 IBM 研究院 人物资料页的人物图。",
+          "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
           "en": "Portrait from IBM Research profile."
         },
         "license": {
-          "zh": "IBM 研究院 profile image; reuse rights not stated.",
+          "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
           "en": "IBM Research profile image; reuse rights not stated."
         },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "IBM 研究院 profile image; reuse rights not stated.",
+            "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
             "en": "IBM Research profile image; reuse rights not stated."
           }
         },
@@ -63786,14 +63936,14 @@ const milestones = [
           "en": "Local redraw for Deep Blue, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -63810,14 +63960,14 @@ const milestones = [
           "en": "Local redraw for Deep Blue, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-murray-campbell-ibm-research",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -63856,46 +64006,24 @@ const milestones = [
             "en": "Open article record",
             "zh": "打开论文记录"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Deep Blue game evolution",
-            "zh": "深蓝 棋局演化"
-          },
-          "description": {
-            "en": "Fast chess-position evolution slot from opening choices into a search-critical phase.",
-            "zh": "从开局选择推进到搜索关键阶段的国际象棋局面快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
+        {
+          "id": "source-feng-hsiung-hsu-chm-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "许峰雄肖像，计算机历史博物馆",
+            "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
+          },
+          "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
         {
           "id": "source-murray-campbell-ibm-research",
           "type": {
@@ -63940,12 +64068,29 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "secondary",
           "sourceType": "official-page"
+        },
+        {
+          "id": "source-deep-blue-game-6-commons",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局动画",
+            "en": "Deep Blue versus Kasparov, 1997 Game 6 animation"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
+        "source-feng-hsiung-hsu-chm-portrait",
         "source-murray-campbell-ibm-research",
         "source-mastering-the-game-computer-history-museum",
-        "source-ibm100-deep-blue"
+        "source-ibm100-deep-blue",
+        "source-deep-blue-game-6-commons"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -64078,8 +64223,8 @@ const milestones = [
           "en": "Historical Background"
         },
         "html": {
-          "zh": "计算机国际象棋几十年来依靠搜索、评估和硬件进步。深蓝 把这条路线带到全球舞台。",
-          "en": "Computer chess had advanced for decades through better search, evaluation, and hardware. Deep Blue made that lineage visible on a global stage."
+          "zh": "计算机国际象棋经过数十年发展，逐步依靠更深搜索、更精细的局面评估和专用硬件逼近顶尖人类水平。1997 年与卡斯帕罗夫的六局比赛，把这条长期技术路线第一次带到全球公众面前。",
+          "en": "Computer chess advanced over several decades through deeper search, more refined position evaluation, and increasingly specialized hardware. The six-game match against Garry Kasparov in 1997 brought that long technical lineage before a global public audience."
         },
         "sourceIds": [
           "source-murray-campbell-ibm-research"
@@ -64092,8 +64237,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "机器深入搜索候选走法，剪掉劣势分支，并用棋类知识给局面打分。",
-          "en": "The machine searched many candidate moves deeply, pruning losing branches and scoring positions with chess knowledge."
+          "zh": "Deep Blue 用并行 alpha-beta 搜索检查大量候选走法，通过剪枝跳过不可能改变决策的分支，再用包含棋类专家知识的评估函数给局面打分。定制国际象棋芯片、开局库和残局知识共同提高搜索速度与判断质量。",
+          "en": "Deep Blue examined many candidate moves with parallel alpha-beta search, pruning branches that could no longer change the decision and scoring positions with an evaluation function informed by chess expertise. Custom chess chips, opening books, and endgame knowledge jointly increased both search speed and decision quality."
         },
         "sourceIds": [
           "source-murray-campbell-ibm-research"
@@ -64202,11 +64347,11 @@ const milestones = [
       }
     },
     "order": 60,
-    "year": "2000s",
-    "date": "2000s",
+    "year": "1989-2018",
+    "date": "1989-2018",
     "title": {
-      "zh": "中国象棋引擎与 AlphaCat",
-      "en": "Chinese Chess Engines and AlphaCat"
+      "zh": "中国象棋引擎：搜索与学习型评估",
+      "en": "Chinese Chess Engines: Search and Learned Evaluation"
     },
     "subtitle": {
       "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
@@ -64231,47 +64376,81 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
-      "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+      "zh": "<p>ICGA 赛事档案记录了 1989 至 2013 年间 16 届计算机奥林匹克中国象棋比赛和 38 个参赛程序，其中包括 Acer Chinese Chess、ELP、XQMASTER、NEUChess、Intella 与 Shiga。中国象棋中的炮架、九宫、楚河汉界、长将长捉和高度战术化攻杀，使引擎必须重新设计棋盘表示、走法生成、搜索延伸和局面评估，而不能简单照搬国际象棋程序。</p><p>2018 年曾文杰、陈日章、吴毅成和魏廷翰进一步用比较训练自动调整评估函数权重；论文报告自动训练权重对手工权重取得 86.58% 胜率。这个节点因此展示了中国象棋 AI 从领域化 alpha-beta 搜索和开局知识，逐步走向以数据自动调校评估参数的演进。</p>",
+      "en": "<p>The ICGA archive records 16 Computer Olympiad Chinese Chess tournaments and 38 participating programs between 1989 and 2013, including Acer Chinese Chess, ELP, XQMASTER, NEUChess, Intella, and Shiga. Cannons, palaces, rivers, repetition rules, and highly tactical attacks forced xiangqi engines to redesign board representation, move generation, search extensions, and evaluation rather than simply copy Western chess programs.</p><p>In 2018, Wen-Jie Tseng, Jr-Chang Chen, I-Chen Wu, and Tinghan Wei advanced the line with comparison training for automatic evaluation-weight tuning; their paper reported an 86.58% win rate for automatically trained weights against hand-tuned weights. The event therefore traces a transition from domain-specific alpha-beta search and opening knowledge toward data-driven evaluation tuning.</p>"
     },
     "figures": [
       {
         "name": {
-          "en": "Xiangqi engine teams",
-          "zh": "中国象棋引擎团队"
+          "en": "I-Chen Wu",
+          "zh": "吴毅成"
         },
         "role": {
-          "en": "Programmers behind ICGA Chinese Chess entrants",
-          "zh": "ICGA 中国象棋项目参赛程序背后的开发者"
+          "en": "Coauthor of the xiangqi comparison-training paper",
+          "zh": "中国象棋比较训练论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/2000s-alphacat/i-chen-wu-avatar.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
       {
         "name": {
-          "en": "AlphaCat",
-          "zh": "AlphaCat"
+          "en": "ICGA Chinese Chess programs",
+          "zh": "ICGA 中国象棋程序谱系"
         },
         "role": {
-          "en": "Representative system requested by the issue",
-          "zh": "issue 指定的代表性系统"
+          "en": "Competition lineage spanning 1989-2013",
+          "zh": "覆盖 1989 至 2013 年的竞赛程序谱系"
         },
         "avatar": "",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "system"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/external/2000s-alphacat/i-chen-wu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2000s-alphacat-i-chen-wu-portrait",
         "asset-2000s-alphacat-xiangqi-search"
       ]
     },
     "imageMeta": {
+      "resources/images/external/2000s-alphacat/i-chen-wu-portrait.jpg": {
+        "caption": {
+          "zh": "吴毅成肖像",
+          "en": "I-Chen Wu portrait"
+        },
+        "subcaption": {
+          "zh": "《面向计算机中国象棋的比较训练》通讯作者",
+          "en": "Corresponding author of Comparison Training for Computer Chinese Chess"
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于展示中国象棋比较训练论文通讯作者吴毅成。",
+          "en": "Used to present I-Chen Wu, corresponding author of the xiangqi comparison-training paper."
+        },
+        "sourceId": "source-i-chen-wu-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2000s-alphacat_xiangqi-search.svg": {
         "caption": {
           "zh": "中国象棋搜索几何",
@@ -64391,27 +64570,27 @@ const milestones = [
           "id": "claim-legacy-achievement-summary",
           "importance": "core",
           "text": {
-            "zh": "中国象棋引擎与 AlphaCat 是当前 legacy 展示中的一个 AI 历史节点。",
-            "en": "Chinese Chess Engines and AlphaCat is an AI history milestone in the current legacy presentation."
+            "zh": "ICGA 档案记录了 1989 至 2013 年的中国象棋程序竞赛谱系，而 2018 年的比较训练研究展示了评估权重从手工调校走向自动学习。",
+            "en": "The ICGA archive documents a Chinese Chess program competition lineage from 1989 to 2013, while 2018 comparison-training research shows evaluation weights moving from manual tuning toward automatic learning."
           },
           "sourceIds": [
             "source-icga-chinese-chess-page",
             "source-comparison-training-for-computer-chinese-chess"
           ],
-          "status": "needs-source"
+          "status": "verified"
         },
         {
           "id": "claim-legacy-description",
           "importance": "context",
           "text": {
-            "zh": "<p>中国象棋让游戏 AI 面对非对称兵种、炮、九宫、楚河汉界、长将长捉规则以及高度战术化的攻杀。issue 中要求的 AlphaCat 在这里作为 2000 年代象棋引擎浪潮的一部分呈现：极大极小搜索、位棋盘或紧凑棋盘编码、开局知识和调校评估函数，是通向强棋力的主要实践路线。</p>",
-            "en": "<p>Chinese chess made game AI confront asymmetric pieces, cannons, palaces, rivers, repetition rules, and very tactical attacking play. The issue-requested AlphaCat entry is represented here as part of the broader 2000s xiangqi-engine wave, where minimax search, bitboards or compact board encodings, opening knowledge, and tuned evaluation functions became the practical path to strong play.</p>"
+            "zh": "<p>ICGA 赛事档案记录了 1989 至 2013 年间 16 届计算机奥林匹克中国象棋比赛和 38 个参赛程序。2018 年的比较训练论文进一步报告，自动训练的评估权重对手工权重取得 86.58% 胜率，展示了中国象棋 AI 从领域化搜索向学习型评估演进。</p>",
+            "en": "<p>The ICGA archive records 16 Computer Olympiad Chinese Chess tournaments and 38 participating programs from 1989 to 2013. A 2018 comparison-training paper further reported an 86.58% win rate for automatically trained evaluation weights against hand-tuned weights, illustrating a transition from domain-specific search toward learned evaluation.</p>"
           },
           "sourceIds": [
             "source-icga-chinese-chess-page",
             "source-comparison-training-for-computer-chinese-chess"
           ],
-          "status": "needs-source"
+          "status": "verified"
         }
       ],
       "emphasis": [
@@ -64427,8 +64606,8 @@ const milestones = [
         "zh": "领域化极大极小搜索与调校评估"
       },
       "artifact": {
-        "en": "AlphaCat-style xiangqi engine lineage",
-        "zh": "AlphaCat 式中国象棋引擎谱系"
+        "en": "ICGA xiangqi engine lineage and comparison-trained evaluation",
+        "zh": "ICGA 中国象棋引擎谱系与比较训练评估"
       },
       "material": {
         "en": "ICGA tournament archive and Chinese-chess evaluation research",
@@ -64579,8 +64758,8 @@ const milestones = [
     ],
     "analysis": {
       "what": {
-        "en": "The 2000s Chinese-chess line shows how game AI adapted chess-engine ideas to xiangqi, including issue-requested AlphaCat as a representative system.",
-        "zh": "2000 年代中国象棋路线展示了游戏 AI 如何把象棋引擎思想迁移到中国象棋，并以 issue 指定的 AlphaCat 作为代表系统。"
+        "en": "The Chinese Chess line shows how game AI adapted chess-engine ideas to xiangqi and later used comparison training to tune evaluation weights from data.",
+        "zh": "中国象棋路线展示了游戏 AI 如何把国际象棋引擎思想适配到中国象棋，并进一步通过比较训练从数据中调校评估权重。"
       },
       "how": {
         "en": "Engines used compact board representations, legal-move tables, alpha-beta or minimax search, opening books, tactical extensions, and evaluation weights for asymmetric pieces and attack pressure.",
@@ -64674,8 +64853,8 @@ const milestones = [
       "sourceUrl": "https://www.game-ai-forum.org/icga-tournaments/game.php?id=13"
     },
     "quotePage": {
-      "en": "Gaming AI branch: Chinese Chess / AlphaCat",
-      "zh": "AI 棋牌分支：中国象棋 / AlphaCat"
+      "en": "Gaming AI branch: Chinese Chess engines",
+      "zh": "AI 棋牌分支：中国象棋引擎"
     },
     "quoteAttribution": {
       "en": "<em>ICGA Tournaments: Chinese Chess</em>, International Computer Games Association tournament archive",
@@ -64729,8 +64908,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>DQN 把深度神经网络与强化学习结合起来，让 Atari 成为标志性基准。智能体用经验回放和目标网络直接从像素学习价值函数，在多款游戏上取得强表现。它成为经典强化学习走向深度强化学习的关键桥梁。</p>",
-      "en": "<p>DQN joined deep neural networks with reinforcement learning and made Atari a landmark benchmark. The agent learned values directly from pixels using experience replay and a target network, reaching strong performance across multiple games. It became a central bridge from classic RL to deep RL.</p>"
+      "zh": "<p>DeepMind 的 DQN 把卷积神经网络与 Q-learning 结合起来，让智能体直接从 Atari 屏幕像素估计每个动作的长期价值。经验回放随机抽取过去的转移，减少连续样本之间的相关性；固定一段时间的目标网络为自举更新提供较稳定的学习目标。</p><p>同一套基本架构在多款游戏中从视觉输入学习策略，证明深度表示可以与强化学习共同工作，而不必为每个游戏手工设计状态特征。DQN 开启深度强化学习的重要浪潮，但仍存在样本效率低、训练不稳定和对奖励设计敏感等问题，后续研究围绕这些限制发展出大量改进。</p>",
+      "en": "<p>DeepMind's DQN combined a convolutional neural network with Q-learning so an agent could estimate the long-term value of actions directly from Atari screen pixels. Experience replay sampled past transitions in randomized order, reducing correlations between consecutive observations. A target network held parameters fixed for intervals, providing a more stable target for bootstrapped updates.</p><p>The same basic architecture learned policies across many games from visual input without hand-designing a separate state representation for each one. DQN became a major bridge from classical reinforcement learning to deep reinforcement learning. It still required large amounts of experience and could be unstable or sensitive to reward design, limitations that motivated a broad family of later improvements.</p>"
     },
     "figures": [
       {
@@ -64749,7 +64928,7 @@ const milestones = [
       {
         "name": {
           "en": "David Silver",
-          "zh": "戴维·席尔瓦"
+          "zh": "大卫·席尔瓦"
         },
         "role": {
           "en": "DeepMind reinforcement learning researcher",
@@ -64762,20 +64941,44 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-        "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
         "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2013-dqn-replay-buffer",
         "asset-david-silver-commons-portrait",
         "asset-2013-dqn-volodymyr-mnih",
-        "asset-2013-dqn-replay-buffer",
         "asset-2013-dqn-q-control"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
+        "caption": {
+          "zh": "经验回放池",
+          "en": "Replay buffer"
+        },
+        "subcaption": {
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -64829,30 +65032,6 @@ const milestones = [
         "role": "hero-image",
         "type": "image"
       },
-      "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
-        "caption": {
-          "zh": "经验回放池",
-          "en": "Replay buffer"
-        },
-        "subcaption": {
-          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
-          "en": "Local redraw for Deep Q Network, based on the listed source material."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
       "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
         "caption": {
           "zh": "Q 值控制循环",
@@ -64863,14 +65042,14 @@ const milestones = [
           "en": "Local redraw for Deep Q Network, based on the listed source material."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -64908,43 +65087,6 @@ const milestones = [
           "action": {
             "en": "Open preprint",
             "zh": "打开预印本"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "DQN game evolution",
-            "zh": "DQN 棋局演化"
-          },
-          "description": {
-            "en": "Fast rollout slot for an Atari state trajectory, showing pixels, actions and replayed transitions.",
-            "zh": "Atari 状态轨迹的快速播放槽位，展示像素、动作与被回放的转移。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2013-dqn_atari-control-loop.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -65165,8 +65307,8 @@ const milestones = [
           "en": "Core Idea"
         },
         "html": {
-          "zh": "经验回放打破近期经验的相关性，目标网络则稳定价值更新。",
-          "en": "Experience replay breaks correlations in recent experience, while a target network stabilizes value updates."
+          "zh": "经验回放随机重用过去的状态转移，打破连续经验之间的相关性；目标网络则在一段时间内固定学习目标，减轻自举更新的震荡。卷积网络由此可以把像素表示、动作选择和长期回报估计连接成一个端到端控制循环。",
+          "en": "Experience replay randomly reuses past transitions to break correlations between consecutive observations, while a target network holds the learning target fixed for intervals and reduces oscillation in bootstrapped updates. The convolutional network can therefore connect pixel representation, action selection, and long-term return estimation in an end-to-end control loop."
         },
         "sourceIds": [
           "source-playing-atari-with-deep-reinforcement-learning"
@@ -65304,8 +65446,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以仅凭游戏规则掌握围棋、国际象棋和将棋。它用神经网络的策略-价值学习和蒙特卡洛树搜索取代人工评估函数与开局库，让棋牌游戏 AI 从单一游戏程序走向通用方法。</p>",
-      "en": "<p>AlphaZero showed that one self-play reinforcement learning system could master Go, chess, and shogi from game rules alone. It replaced handcrafted evaluation and opening books with neural policy-value learning plus Monte Carlo tree search, turning board-game AI into a general recipe rather than a single-game program.</p>"
+      "zh": "<p>AlphaZero 展示了同一套自我博弈强化学习系统可以从随机下法起步，仅凭围棋、国际象棋和将棋的规则学习出超强棋力。神经网络同时预测走法概率和局面价值，蒙特卡洛树搜索利用这些预测选择更强行动，再把搜索改进后的自我对局作为下一轮训练数据。</p><p>与依赖人类棋谱、手工评估函数和开局库的传统程序相比，AlphaZero 把三个游戏统一到“策略-价值网络 + 搜索 + 自我博弈”的循环中。它仍需要准确的规则与可模拟环境，并不是无需先验的通用智能；但它清晰展示了同一学习框架如何跨越多种完全信息棋盘游戏，并直接影响 MuZero 等后续规划系统。</p>",
+      "en": "<p>AlphaZero showed that one self-play reinforcement-learning system could start from random play and learn superhuman performance using only the rules of Go, chess, and shogi. A neural network predicted both move probabilities and position values, Monte Carlo tree search used those predictions to choose stronger actions, and the improved self-play games became training data for the next iteration.</p><p>Unlike traditional programs built around human game records, handcrafted evaluation functions, and opening books, AlphaZero unified three games around a policy-value network, search, and self-play loop. It still required exact rules and a simulatable environment, so it was not prior-free general intelligence; nevertheless, it offered a clear cross-game learning recipe and directly influenced later planning systems such as MuZero.</p>"
     },
     "figures": [
       {
@@ -65333,20 +65475,59 @@ const milestones = [
         "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Julian Schrittwieser",
+          "zh": "朱利安·施里特维泽"
+        },
+        "role": {
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+        },
+        "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "resources": {
       "images": [
+        "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg",
         "resources/images/figures/authoritative/david-silver.jpg",
-        "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg"
+        "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-2017-alphazero-self-play-loop",
         "asset-david-silver-commons-portrait",
-        "asset-2017-alphazero-self-play-loop"
+        "asset-2017-alphazero-julian-schrittwieser"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
+        "caption": {
+          "zh": "AlphaZero 自我博弈循环",
+          "en": "AlphaZero self-play loop"
+        },
+        "subcaption": {
+          "zh": "策略-价值自我博弈的原创解释图。",
+          "en": "Original explainer for policy-value self-play."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-science-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -65376,29 +65557,37 @@ const milestones = [
         "role": "portrait",
         "type": "image"
       },
-      "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
+      "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg": {
         "caption": {
-          "zh": "AlphaZero 自我博弈循环",
-          "en": "AlphaZero self-play loop"
+          "zh": "朱利安·施里特维泽肖像",
+          "en": "Julian Schrittwieser portrait"
         },
         "subcaption": {
-          "zh": "策略-价值自我博弈的原创解释图。",
-          "en": "Original explainer for policy-value self-play."
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一。",
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper."
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
         },
         "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
         },
-        "sourceId": "source-science-paper",
+        "usage": {
+          "zh": "用于展示 AlphaZero 后续技术路线中的 MuZero 共同第一作者朱利安·施里特维泽。",
+          "en": "Used to present Julian Schrittwieser, one of MuZero's first authors in the post-AlphaZero research lineage."
+        },
+        "sourceId": "source-julian-schrittwieser-user-provided-portrait",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "user-provided",
           "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
           }
         },
-        "role": "architecture-explainer",
-        "type": "svg"
+        "role": "portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -65432,43 +65621,6 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "AlphaZero game evolution",
-            "zh": "AlphaZero 棋局演化"
-          },
-          "description": {
-            "en": "Fast self-play evolution slot for Go, chess and shogi trajectories produced from game records.",
-            "zh": "面向围棋、国际象棋和将棋棋谱的自我博弈快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -65494,8 +65646,8 @@ const milestones = [
             "en": "Paper page"
           },
           "label": {
-            "zh": "Science 论文",
-            "en": "Science paper"
+            "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》",
+            "en": "A General Reinforcement Learning Algorithm That Masters Chess, Shogi, and Go Through Self-Play"
           },
           "url": "https://www.science.org/doi/10.1126/science.aar6404",
           "purpose": "alternate-access",
@@ -65509,8 +65661,8 @@ const milestones = [
             "en": "Preprint page"
           },
           "label": {
-            "zh": "arXiv 预印本",
-            "en": "arXiv preprint"
+            "zh": "《用通用强化学习算法通过自我博弈掌握国际象棋与将棋》",
+            "en": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"
           },
           "url": "https://arxiv.org/abs/1712.01815",
           "purpose": "alternate-access",
@@ -65797,7 +65949,7 @@ const milestones = [
         },
         "authors": {
           "en": "David Silver et al.",
-          "zh": "David Silver 等"
+          "zh": "大卫·席尔瓦等"
         },
         "journal": {
           "en": "arXiv",
@@ -65813,7 +65965,7 @@ const milestones = [
         },
         "authors": {
           "en": "David Silver et al.",
-          "zh": "David Silver 等"
+          "zh": "大卫·席尔瓦等"
         },
         "journal": {
           "en": "Science",
@@ -65837,7 +65989,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "David Silver et al., Science, 2018",
-        "zh": "David Silver 等，Science，2018"
+        "zh": "大卫·席尔瓦等，《科学》，2018"
       },
       "sourceLabel": "",
       "sourceUrl": "https://www.science.org/doi/10.1126/science.aar6404"
@@ -65848,7 +66000,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play</em>, David Silver et al., Science, 2018",
-      "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》, David Silver 等，Science，2018"
+      "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》，大卫·席尔瓦等，《科学》，2018"
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -65898,8 +66050,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Libratus 在一对一无限注德州扑克中击败顶尖职业牌手，而这类游戏包含隐藏信息和巨大的决策空间。它结合抽象博弈求解、实时残局求解和每日赛后自我改进，证明游戏 AI 可以走出完全信息棋盘。</p>",
-      "en": "<p>Libratus defeated top professionals in heads-up no-limit Texas hold'em, a game with hidden information and enormous decision spaces. It combined abstract game solving, real-time endgame solving, and self-improvement after each day of play, proving that game AI could move beyond perfect-information boards.</p>"
+      "zh": "<p>2017 年，卡内基梅隆大学的 Libratus 在持续 20 天、约 12 万手的一对一无限注德州扑克比赛中战胜四位顶尖职业牌手。扑克中的暗牌、随机发牌、诈唬与连续下注让程序无法像国际象棋那样直接看到完整状态，也无法简单枚举全部行动历史。</p><p>诺姆·布朗和托马斯·桑德霍姆把系统分成三个相互配合的部分：赛前计算整体蓝图策略，对局时实时求解关键子局，赛后再自动发现并修补潜在弱点。Libratus 证明均衡推理、抽象和局部重求解能够扩展到超大规模不完全信息博弈，也把游戏 AI 的代表性场景从公开棋盘推进到隐藏信息与对手建模。</p>",
+      "en": "<p>In 2017, Carnegie Mellon University's Libratus defeated four elite professionals over a 20-day, roughly 120,000-hand heads-up no-limit Texas hold'em match. Private cards, random deals, bluffing, and continuous bet sizes meant the program could not observe the full state as it would in chess or simply enumerate every possible history.</p><p>Noam Brown and Tuomas Sandholm organized the system around three cooperating parts: an overall blueprint strategy computed before play, real-time solving of strategically important subgames, and an automated process that found and repaired potential weaknesses after each day. Libratus showed that equilibrium reasoning, abstraction, and local re-solving could scale to a vast imperfect-information game, moving landmark game AI beyond fully visible boards.</p>"
     },
     "figures": [
       {
@@ -66056,43 +66208,6 @@ const milestones = [
           "usage": {
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Libratus game evolution",
-            "zh": "Libratus 棋局演化"
-          },
-          "description": {
-            "en": "Fast poker-hand evolution slot from private cards to subgame refinement.",
-            "zh": "从暗牌局面推进到子局细化的扑克手牌快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2017-libratus_poker-evolution.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -66519,8 +66634,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它使用紧凑蓝图策略与有限前瞻搜索，同时处理多个对手，把游戏 AI 推向无法只靠单一对手模型的多人场景。</p>",
-      "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used a compact blueprint strategy plus limited-lookahead search to handle several opponents at once, moving game AI toward multiplayer settings where no single opponent model is enough.</p>"
+      "zh": "<p>2019 年，Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克，并在两种实验设置中持续战胜职业牌手。多人牌局同时包含私人信息、随机性、临时合作与不断变化的激励，不能直接沿用两人零和博弈中较清晰的均衡求解假设。</p><p>诺姆·布朗和托马斯·桑德霍姆让系统先通过自我博弈学习紧凑的蓝图策略，再在实际决策时用有限前瞻搜索细化行动，而不是实时求解整个六人游戏。Pluribus 由此展示了“蓝图 + 搜索”如何在计算可控的条件下处理多人不完全信息，也为谈判、拍卖和多智能体决策等更广泛问题提供了方法参照。</p>",
+      "en": "<p>In 2019, Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em and consistently defeated professionals in two experimental formats. Multiplayer poker combines private information and chance with shifting incentives and temporary alignments, so it does not inherit the relatively clean equilibrium assumptions of a two-player zero-sum game.</p><p>Noam Brown and Tuomas Sandholm trained a compact blueprint strategy through self-play, then refined decisions during play with limited-lookahead search instead of attempting to solve the entire six-player game in real time. Pluribus showed how a blueprint-plus-search design could handle multiplayer imperfect information within practical computational limits and offered a reference point for broader work on negotiation, auctions, and multi-agent decision-making.</p>"
     },
     "figures": [
       {
@@ -66677,43 +66792,6 @@ const milestones = [
           "usage": {
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
-          }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "Pluribus game evolution",
-            "zh": "Pluribus 棋局演化"
-          },
-          "description": {
-            "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
-            "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
           }
         }
       ],
@@ -67140,17 +67218,43 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>Suphx 将深度强化学习带入日本麻将，这是一种四人不完全信息游戏，包含隐藏牌、随机摸牌、复杂计分和长期风险权衡。它使用监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配，在天凤平台达到超过绝大多数注册段位玩家的水平。</p>",
-      "en": "<p>Suphx brought deep reinforcement learning to Japanese mahjong, a four-player imperfect-information game with hidden tiles, stochastic draws, complex scoring, and long-horizon risk tradeoffs. It used supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation to reach a level above most ranked Tenhou players.</p>"
+      "zh": "<p>微软亚洲研究院团队开发的 Suphx 把深度强化学习带入日本麻将：四名玩家只能看到部分牌面，还要面对随机摸牌、复杂计分和跨多局的风险权衡。李俊杰、秦涛、刘铁岩、洪小文等作者与项目负责人把监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配组合成一套完整训练流程。</p><p>论文报告 Suphx 在天凤平台的稳定段位超过 99.99% 的注册玩家，并在与顶尖人类牌手的比较中表现出更稳定的长期收益。它把游戏 AI 的试验场从完全信息棋盘推进到多人、随机、隐藏信息环境，说明强策略不仅要选择高收益动作，也要学习何时防守、何时承担不确定性。</p>",
+      "en": "<p>Microsoft Research Asia's Suphx brought deep reinforcement learning to Japanese mahjong, where four players see only partial information while coping with stochastic draws, complex scoring, and risk tradeoffs that unfold across many hands. Authors and project leaders including Junjie Li, Tao Qin, Tie-Yan Liu, and Hsiao-Wuen Hon combined supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation into a complete training pipeline.</p><p>The paper reported that Suphx achieved a stable rank above 99.99% of officially ranked Tenhou players and produced more consistent long-term results than most top human players. It moved game AI beyond perfect-information boards into multiplayer, stochastic, hidden-information settings where a strong policy must learn not only which action has value, but when to defend and when to accept uncertainty.</p>"
     },
     "figures": [
+      {
+        "name": {
+          "en": "Tie-Yan Liu",
+          "zh": "刘铁岩"
+        },
+        "role": {
+          "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia",
+          "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员"
+        },
+        "avatar": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Hsiao-Wuen Hon",
+          "zh": "洪小文"
+        },
+        "role": {
+          "en": "Microsoft global senior vice president and executive leader of the Suphx project",
+          "zh": "微软全球资深副总裁、Suphx 项目最高负责人"
+        },
+        "avatar": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
       {
         "name": {
           "en": "Junjie Li",
           "zh": "李俊杰"
         },
         "role": {
-          "en": "Suphx paper first author",
+          "en": "First author of the Suphx paper",
           "zh": "Suphx 论文第一作者"
         },
         "avatar": "",
@@ -67163,34 +67267,29 @@ const milestones = [
           "zh": "秦涛"
         },
         "role": {
-          "en": "Microsoft Research Asia researcher",
-          "zh": "微软亚洲研究院研究员"
+          "en": "Key author of the Suphx paper",
+          "zh": "Suphx 论文重要作者"
         },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Tie-Yan Liu",
-          "zh": "刘铁岩"
-        },
-        "role": {
-          "en": "Microsoft Research Asia research leader",
-          "zh": "微软亚洲研究院研究负责人"
-        },
-        "avatar": "",
+        "avatar": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg"
+        "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
+        "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+        "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+        "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
+        "resources/images/external/2019-suphx/suphx-logo.png"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2019-suphx-mahjong-policy"
+        "asset-2019-suphx-mahjong-policy",
+        "asset-2019-suphx-tie-yan-liu",
+        "asset-2019-suphx-hsiao-wuen-hon",
+        "asset-2019-suphx-tao-qin",
+        "asset-2019-suphx-project-logo"
       ]
     },
     "imageMeta": {
@@ -67217,6 +67316,131 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg": {
+        "caption": {
+          "zh": "刘铁岩肖像",
+          "en": "Tie-Yan Liu portrait"
+        },
+        "subcaption": {
+          "zh": "Suphx 项目主要负责人之一、微软亚洲研究院首席研究员。",
+          "en": "One of the principal leaders of Suphx and a principal researcher at Microsoft Research Asia."
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于展示 Suphx 项目主要负责人之一刘铁岩。",
+          "en": "Used to present Tie-Yan Liu, one of the principal leaders of Suphx."
+        },
+        "sourceId": "source-tie-yan-liu-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg": {
+        "caption": {
+          "zh": "洪小文肖像",
+          "en": "Hsiao-Wuen Hon portrait"
+        },
+        "subcaption": {
+          "zh": "微软全球资深副总裁、Suphx 项目最高负责人。",
+          "en": "Microsoft global senior vice president and executive leader of the Suphx project."
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于展示 Suphx 项目最高负责人洪小文。",
+          "en": "Used to present Hsiao-Wuen Hon, executive leader of the Suphx project."
+        },
+        "sourceId": "source-hsiao-wuen-hon-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/external/2019-suphx/tao-qin-portrait.jpg": {
+        "caption": {
+          "zh": "秦涛肖像",
+          "en": "Tao Qin portrait"
+        },
+        "subcaption": {
+          "zh": "Suphx 论文重要作者。",
+          "en": "Key author of the Suphx paper."
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于展示 Suphx 论文重要作者秦涛。",
+          "en": "Used to present Tao Qin, a key author of the Suphx paper."
+        },
+        "sourceId": "source-tao-qin-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/external/2019-suphx/suphx-logo.png": {
+        "caption": {
+          "zh": "Suphx 项目标识",
+          "en": "Suphx project identity"
+        },
+        "subcaption": {
+          "zh": "微软研究院 Suphx 官方项目页使用的麻将 AI 标识。",
+          "en": "Mahjong AI identity used on the official Microsoft Research Suphx project page."
+        },
+        "sourceName": {
+          "zh": "微软研究院",
+          "en": "Microsoft Research"
+        },
+        "sourceUrl": "https://www.microsoft.com/en-us/research/project/suphx-mastering-mahjong-with-deep-reinforcement-learning/",
+        "license": {
+          "zh": "项目标识来自微软研究院官方项目页；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Project identity from the official Microsoft Research page; redistribution rights are not stated and must be reviewed before external publication."
+        },
+        "sourceId": "source-microsoft-suphx-project",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "项目标识来自微软研究院官方项目页；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Project identity from the official Microsoft Research page; redistribution rights are not stated and must be reviewed before external publication."
+          }
+        },
+        "role": "project-identity",
+        "type": "image"
       }
     },
     "achievement": {
@@ -67260,8 +67484,8 @@ const milestones = [
             "en": "Paper page"
           },
           "label": {
-            "zh": "Suphx arXiv 论文",
-            "en": "Suphx arXiv paper"
+            "zh": "《Suphx：用深度强化学习掌握麻将》",
+            "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
           },
           "url": "https://arxiv.org/abs/2003.13590",
           "purpose": "alternate-access",
@@ -67275,8 +67499,8 @@ const milestones = [
             "en": "DOI page"
           },
           "label": {
-            "zh": "arXiv DOI 页面",
-            "en": "arXiv DOI page"
+            "zh": "《Suphx：用深度强化学习掌握麻将》",
+            "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
           },
           "url": "https://doi.org/10.48550/arXiv.2003.13590",
           "purpose": "alternate-access",
@@ -67297,12 +67521,28 @@ const milestones = [
           "purpose": "background",
           "reliability": "secondary",
           "sourceType": "paper"
+        },
+        {
+          "id": "source-microsoft-suphx-project",
+          "type": {
+            "zh": "机构页面",
+            "en": "Institution page"
+          },
+          "label": {
+            "zh": "Suphx：微软研究院麻将 AI 项目",
+            "en": "Suphx: Microsoft Research mahjong AI project"
+          },
+          "url": "https://www.microsoft.com/en-us/research/project/suphx-mastering-mahjong-with-deep-reinforcement-learning/",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
         "source-suphx-arxiv-paper",
         "source-arxiv-doi-page",
-        "source-building-a-computer-mahjong-player-via-deep-cnns"
+        "source-building-a-computer-mahjong-player-via-deep-cnns",
+        "source-microsoft-suphx-project"
       ],
       "claimIds": [
         "claim-legacy-achievement-summary",
@@ -67566,7 +67806,7 @@ const milestones = [
         },
         "authors": {
           "en": "Junjie Li, Sotetsu Koyamada, Qiwei Ye, Guoqing Liu, Chao Wang, Ruihan Yang, Li Zhao, Tao Qin, Tie-Yan Liu, Hsiao-Wuen Hon",
-          "zh": "Junjie Li、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
+          "zh": "李俊杰、Sotetsu Koyamada、叶启威、刘国庆、王超、杨睿涵、赵立、秦涛、刘铁岩、洪小文"
         },
         "journal": {
           "en": "arXiv",
@@ -67590,7 +67830,7 @@ const milestones = [
       },
       "workAuthors": {
         "en": "Junjie Li et al., arXiv, 2020",
-        "zh": "Junjie Li 等，arXiv，2020"
+        "zh": "李俊杰等，arXiv，2020"
       },
       "sourceLabel": "",
       "sourceUrl": "https://arxiv.org/abs/2003.13590"
@@ -67601,7 +67841,7 @@ const milestones = [
     },
     "quoteAttribution": {
       "en": "<em>Suphx: Mastering Mahjong with Deep Reinforcement Learning</em>, Junjie Li et al., arXiv, 2020",
-      "zh": "《Suphx：用深度强化学习掌握麻将》, Junjie Li 等，arXiv，2020"
+      "zh": "《Suphx：用深度强化学习掌握麻将》, 李俊杰等，arXiv，2020"
     },
     "quoteLabel": {
       "en": "Paper cue",
@@ -67651,20 +67891,20 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>MuZero 学会在没有显式环境规则的情况下进行规划。它只学习搜索所需的紧凑内部模型：策略、价值和奖励。在棋类游戏与 Atari 中，它把 AlphaZero 式规划和从经验中学习模型连接起来。</p>",
-      "en": "<p>MuZero learned to plan without being given the exact rules of the environment. It built a compact internal model only for the quantities needed by search: policy, value, and reward. In board games and Atari, it linked AlphaZero-style planning with model learning from experience.</p>"
+      "zh": "<p>朱利安·施里特维泽、大卫·席尔瓦等 DeepMind 研究者提出 MuZero，让智能体在没有预先获得环境动力学或完整规则模拟器的情况下学习规划。系统把观察编码成隐藏状态，再分别学习状态表示、动作后的动态变化，以及搜索真正需要的奖励、策略和价值预测，并用蒙特卡洛树搜索选择行动。</p><p>MuZero 在围棋、国际象棋和将棋中达到与 AlphaZero 相当的超人水平，同时在 57 款 Atari 游戏上取得当时领先表现。它的重要性在于把“学习世界模型”和“用搜索规划”连接起来：模型不必重建所有像素细节，只需保留对决策有用的结构。</p>",
+      "en": "<p>DeepMind researchers including Julian Schrittwieser and David Silver introduced MuZero so an agent could learn to plan without being given the environment dynamics or a complete rule simulator in advance. The system encoded observations into a hidden state, learned representation and transition functions, and predicted the reward, policy, and value quantities needed by Monte Carlo tree search.</p><p>MuZero matched AlphaZero's superhuman performance in Go, chess, and shogi while achieving then-leading results across 57 Atari games. Its significance is the connection between learning a world model and planning with search: the model does not need to reconstruct every pixel-level detail, only the structure that matters for decisions.</p>"
     },
     "figures": [
       {
         "name": {
-          "en": "Julian Schrittwieser",
-          "zh": "朱利安·施里特维泽"
+          "en": "Demis Hassabis",
+          "zh": "德米斯·哈萨比斯"
         },
         "role": {
-          "en": "MuZero first author",
-          "zh": "MuZero 第一作者"
+          "en": "DeepMind co-founder and MuZero coauthor",
+          "zh": "DeepMind 联合创始人、MuZero 论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -67684,16 +67924,40 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/figures/authoritative/david-silver.jpg",
-        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
+        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg",
+        "resources/images/figures/authoritative/david-silver.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-david-silver-commons-portrait",
-        "asset-2019-muzero-learned-model"
+        "asset-2019-muzero-learned-model",
+        "asset-david-silver-commons-portrait"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
+        "caption": {
+          "zh": "MuZero 学习模型",
+          "en": "MuZero learned model"
+        },
+        "subcaption": {
+          "zh": "潜在模型规划的原创解释图。",
+          "en": "Original explainer for latent-model planning."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-nature-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -67722,30 +67986,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
-        "caption": {
-          "zh": "MuZero 学习模型",
-          "en": "MuZero learned model"
-        },
-        "subcaption": {
-          "zh": "潜在模型规划的原创解释图。",
-          "en": "Original explainer for latent-model planning."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-nature-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -67779,43 +68019,6 @@ const milestones = [
             "en": "Source card for the gaming AI branch",
             "zh": "AI 棋牌分支的资料卡片"
           }
-        },
-        {
-          "type": "gameEvolutionVideo",
-          "site": {
-            "en": "Game evolution clip",
-            "zh": "棋局演化短片"
-          },
-          "title": {
-            "en": "MuZero game evolution",
-            "zh": "MuZero 棋局演化"
-          },
-          "description": {
-            "en": "Fast rollout slot for learned-model planning across Go, chess, shogi and Atari states.",
-            "zh": "面向围棋、国际象棋、将棋与 Atari 状态的学习模型规划快速演化槽位。"
-          },
-          "url": "resources/videos/game-evolution/sample-go-game.gif",
-          "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-          "poster": "resources/images/bench-council-ai100/explainers/2019-muzero_game-evolution.svg",
-          "sourceSgf": "examples/sgf/sample-go-game.sgf",
-          "generator": "scripts/sgf_to_video.py",
-          "duration": {
-            "en": "about 1 min",
-            "zh": "约 1 分钟"
-          },
-          "fps": "30",
-          "license": {
-            "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-            "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-          },
-          "usage": {
-            "en": "Playable game-state evolution module",
-            "zh": "可播放的棋局状态演化模块"
-          },
-          "action": {
-            "en": "Play evolution clip",
-            "zh": "播放演化短片"
-          }
         }
       ],
       "sources": [
@@ -67841,8 +68044,8 @@ const milestones = [
             "en": "Paper page"
           },
           "label": {
-            "zh": "Nature 论文",
-            "en": "Nature paper"
+            "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》",
+            "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
           },
           "url": "https://www.nature.com/articles/s41586-020-03051-4",
           "purpose": "alternate-access",
@@ -67856,8 +68059,8 @@ const milestones = [
             "en": "Preprint page"
           },
           "label": {
-            "zh": "arXiv 预印本",
-            "en": "arXiv preprint"
+            "zh": "《通过学习模型进行规划以掌握 Atari、围棋、国际象棋和将棋》",
+            "en": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"
           },
           "url": "https://arxiv.org/abs/1911.08265",
           "purpose": "alternate-access",
@@ -70547,7 +70750,22 @@ const milestones = [
           "zh": "《人工智能：总览》报告作者",
           "en": "Author of Artificial Intelligence: A General Survey"
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "donald-michie",
+        "name": {
+          "zh": "唐纳德·米奇",
+          "en": "Donald Michie"
+        },
+        "role": {
+          "zh": "英国 AI 代表人物，公开反对莱特希尔报告",
+          "en": "British AI pioneer who publicly opposed the Lighthill Report"
+        },
+        "avatar": "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -70555,9 +70773,133 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
+        "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg",
+        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg",
         "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg": {
+          "caption": {
+            "zh": "詹姆斯·莱特希尔爵士肖像",
+            "en": "Sir James Lighthill portrait"
+          },
+          "subcaption": {
+            "zh": "莱特希尔报告作者。",
+            "en": "Author of the Lighthill Report."
+          },
+          "sourceName": {
+            "zh": "Royal Society 传记肖像，经 MacTutor 收录",
+            "en": "Royal Society memoir portrait via MacTutor"
+          },
+          "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
+          "license": {
+            "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+            "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+          },
+          "sourceId": "source-mactutor-lighthill-portrait",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+              "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+            },
+            "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
+          "caption": {
+            "zh": "唐纳德·米奇肖像",
+            "en": "Donald Michie portrait"
+          },
+          "subcaption": {
+            "zh": "英国 AI 代表人物，公开反对莱特希尔报告。",
+            "en": "A leading figure in British AI who publicly opposed the Lighthill Report."
+          },
+          "sourceName": {
+            "zh": "爱丁堡大学 Donald Michie 档案 / Wikimedia Commons",
+            "en": "University of Edinburgh Donald Michie archive / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
+          "license": {
+            "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+            "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+          },
+          "sourceId": "source-donald-michie-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+              "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
+          },
+          "role": "supporting-portrait",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
+          "caption": {
+            "zh": "爱丁堡 Freddy II 机器人",
+            "en": "Edinburgh Freddy II robot"
+          },
+          "subcaption": {
+            "zh": "爱丁堡大学 AI 与机器人研究的代表成果；米奇在 1973 年 BBC 辩论中播放视频展示了 Freddy II。",
+            "en": "A representative Edinburgh AI and robotics achievement; Michie showed Freddy II by video during the 1973 BBC debate."
+          },
+          "sourceName": {
+            "zh": "爱丁堡大学 AIAI Freddy 项目档案",
+            "en": "University of Edinburgh AIAI Freddy project archive"
+          },
+          "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/",
+          "license": {
+            "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+            "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+          },
+          "sourceId": "source-edinburgh-freddy-robot-archive",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+              "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+            },
+            "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
+          },
+          "role": "historical-photo",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
+          "caption": {
+            "zh": "英国皇家研究院演讲厅",
+            "en": "Royal Institution Lecture Theatre"
+          },
+          "subcaption": {
+            "zh": "1973 年 BBC 莱特希尔争议辩论的举办场地；图片为 2017 年的现代资料照，并非辩论现场。",
+            "en": "Venue of the 1973 BBC Lighthill controversy debate; this is a modern 2017 reference photo, not an image of the debate itself."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+          },
+          "sourceId": "source-royal-institution-theatre-commons",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+            },
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
+          },
+          "role": "venue-photo",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
           "caption": {
             "zh": "莱特希尔寒冬解释图",
@@ -70594,10 +70936,134 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1973-lighthill-report-james-lighthill",
+        "asset-1973-lighthill-report-donald-michie",
+        "asset-1973-lighthill-report-freddy-ii",
+        "asset-1973-lighthill-report-royal-institution-theatre",
         "asset-1973-lighthill-report-winter-filter"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg": {
+        "caption": {
+          "zh": "詹姆斯·莱特希尔爵士肖像",
+          "en": "Sir James Lighthill portrait"
+        },
+        "subcaption": {
+          "zh": "莱特希尔报告作者。",
+          "en": "Author of the Lighthill Report."
+        },
+        "sourceName": {
+          "zh": "Royal Society 传记肖像，经 MacTutor 收录",
+          "en": "Royal Society memoir portrait via MacTutor"
+        },
+        "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
+        "license": {
+          "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+          "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+        },
+        "sourceId": "source-mactutor-lighthill-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+            "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+          },
+          "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
+        "caption": {
+          "zh": "唐纳德·米奇肖像",
+          "en": "Donald Michie portrait"
+        },
+        "subcaption": {
+          "zh": "英国 AI 代表人物，公开反对莱特希尔报告。",
+          "en": "A leading figure in British AI who publicly opposed the Lighthill Report."
+        },
+        "sourceName": {
+          "zh": "爱丁堡大学 Donald Michie 档案 / Wikimedia Commons",
+          "en": "University of Edinburgh Donald Michie archive / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
+        "license": {
+          "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+          "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+        },
+        "sourceId": "source-donald-michie-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+            "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg": {
+        "caption": {
+          "zh": "爱丁堡 Freddy II 机器人",
+          "en": "Edinburgh Freddy II robot"
+        },
+        "subcaption": {
+          "zh": "爱丁堡大学 AI 与机器人研究的代表成果；米奇在 1973 年 BBC 辩论中播放视频展示了 Freddy II。",
+          "en": "A representative Edinburgh AI and robotics achievement; Michie showed Freddy II by video during the 1973 BBC debate."
+        },
+        "sourceName": {
+          "zh": "爱丁堡大学 AIAI Freddy 项目档案",
+          "en": "University of Edinburgh AIAI Freddy project archive"
+        },
+        "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/",
+        "license": {
+          "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+          "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+        },
+        "sourceId": "source-edinburgh-freddy-robot-archive",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+            "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+          },
+          "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
+        },
+        "role": "historical-photo",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg": {
+        "caption": {
+          "zh": "英国皇家研究院演讲厅",
+          "en": "Royal Institution Lecture Theatre"
+        },
+        "subcaption": {
+          "zh": "1973 年 BBC 莱特希尔争议辩论的举办场地；图片为 2017 年的现代资料照，并非辩论现场。",
+          "en": "Venue of the 1973 BBC Lighthill controversy debate; this is a modern 2017 reference photo, not an image of the debate itself."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+        },
+        "sourceId": "source-royal-institution-theatre-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
+        },
+        "role": "venue-photo",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
         "caption": {
           "zh": "莱特希尔寒冬解释图",
@@ -70712,6 +71178,10 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-mactutor-lighthill-portrait",
+        "source-donald-michie-portrait",
+        "source-lighthill-controversy-debate-archive",
+        "source-royal-institution-theatre-commons",
         "source-lighthill-report-archive",
         "source-edinburgh-ai-history-perspective",
         "source-edinburgh-freddy-robot-archive",
@@ -71840,16 +72310,31 @@ const milestones = [
     },
     "figures": [
       {
-        "id": "symbolics-lmi-and-expert-system-vendors",
+        "id": "richard-greenblatt",
         "name": {
-          "zh": "Symbolics、LMI 与专家系统厂商",
-          "en": "Symbolics, LMI and expert-system vendors"
+          "zh": "理查德·格林布拉特",
+          "en": "Richard Greenblatt"
         },
         "role": {
-          "zh": "AI 硬件与软件产业参与者",
-          "en": "AI hardware and software industry actors"
+          "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人",
+          "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc."
         },
-        "avatar": "",
+        "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "richard-stallman",
+        "name": {
+          "zh": "理查德·斯托曼",
+          "en": "Richard Stallman"
+        },
+        "role": {
+          "zh": "为共享的 Lisp Machine 系统重新实现 Symbolics 改进、后来发起 GNU 的 MIT 黑客",
+          "en": "MIT hacker who reimplemented Symbolics advances for the shared Lisp Machine system and later launched GNU"
+        },
+        "avatar": "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -71857,9 +72342,71 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
         "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg"
       ],
       "imageMeta": {
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg": {
+          "caption": {
+            "zh": "理查德·格林布拉特肖像",
+            "en": "Richard Greenblatt portrait"
+          },
+          "subcaption": {
+            "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人；照片摄于 2009 年。",
+            "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.; photographed in 2009."
+          },
+          "sourceName": {
+            "zh": "Richard P. Gabriel / Wikimedia Commons",
+            "en": "Richard P. Gabriel / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+          "license": {
+            "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+          },
+          "sourceId": "source-richard-greenblatt-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+            },
+            "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+          },
+          "role": "portrait",
+          "type": "image"
+        },
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
+          "caption": {
+            "zh": "理查德·斯托曼肖像",
+            "en": "Richard Stallman portrait"
+          },
+          "subcaption": {
+            "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
+            "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
+          },
+          "sourceName": {
+            "zh": "NicoBZH / Wikimedia Commons",
+            "en": "NicoBZH / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+          "license": {
+            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+          },
+          "sourceId": "source-richard-stallman-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+            },
+            "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+          },
+          "role": "supporting-portrait",
+          "type": "image"
+        },
         "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
           "caption": {
             "zh": "Lisp 机市场转移解释图",
@@ -71896,10 +72443,72 @@ const milestones = [
       },
       "videos": [],
       "assetIds": [
+        "asset-1987-lisp-machine-collapse-richard-greenblatt",
+        "asset-1987-lisp-machine-collapse-richard-stallman",
         "asset-1987-lisp-machine-collapse-market-shift"
       ]
     },
     "imageMeta": {
+      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg": {
+        "caption": {
+          "zh": "理查德·格林布拉特肖像",
+          "en": "Richard Greenblatt portrait"
+        },
+        "subcaption": {
+          "zh": "MIT Lisp Machine 先驱、Lisp Machines, Inc. 创始人；照片摄于 2009 年。",
+          "en": "MIT Lisp Machine pioneer and founder of Lisp Machines, Inc.; photographed in 2009."
+        },
+        "sourceName": {
+          "zh": "Richard P. Gabriel / Wikimedia Commons",
+          "en": "Richard P. Gabriel / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+        },
+        "sourceId": "source-richard-greenblatt-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；Richard P. Gabriel 摄于 2009 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photographed by Richard P. Gabriel in 2009, with attribution and share-alike terms required."
+          },
+          "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
+        "caption": {
+          "zh": "理查德·斯托曼肖像",
+          "en": "Richard Stallman portrait"
+        },
+        "subcaption": {
+          "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
+          "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
+        },
+        "sourceName": {
+          "zh": "NicoBZH / Wikimedia Commons",
+          "en": "NicoBZH / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+        },
+        "sourceId": "source-richard-stallman-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+          },
+          "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
+      },
       "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
         "caption": {
           "zh": "Lisp 机市场转移解释图",
@@ -71970,6 +72579,39 @@ const milestones = [
       "sources": [
         {
           "label": {
+            "en": "Oral History of Richard Greenblatt",
+            "zh": "理查德·格林布拉特口述史"
+          },
+          "type": {
+            "en": "Oral history",
+            "zh": "口述史"
+          },
+          "url": "https://www.computerhistory.org/collections/catalog/102658015"
+        },
+        {
+          "label": {
+            "en": "My Lisp Experiences and the Development of GNU Emacs",
+            "zh": "《我的 Lisp 经历与 GNU Emacs 的发展》"
+          },
+          "type": {
+            "en": "First-person history",
+            "zh": "一手回忆"
+          },
+          "url": "https://www.gnu.org/gnu/rms-lisp.html"
+        },
+        {
+          "label": {
+            "en": "Initial GNU Project announcement",
+            "zh": "GNU 工程最初公告"
+          },
+          "type": {
+            "en": "Primary document",
+            "zh": "原始文献"
+          },
+          "url": "https://www.gnu.org/gnu/initial-announcement.html"
+        },
+        {
+          "label": {
             "en": "AI winter overview",
             "zh": "AI 寒冬概览"
           },
@@ -72014,6 +72656,11 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-richard-greenblatt-portrait",
+        "source-richard-stallman-portrait",
+        "source-greenblatt-oral-history",
+        "source-stallman-lisp-experiences",
+        "source-gnu-initial-announcement",
         "source-ai-winter-overview",
         "source-lisp-machine-history",
         "source-avoiding-another-ai-winter",

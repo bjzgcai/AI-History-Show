@@ -1,5 +1,105 @@
 [
   {
+    "id": "source-richard-greenblatt-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "理查德·格林布拉特 2009 年肖像",
+      "en": "Richard Greenblatt portrait, 2009"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Greenblattrpg-6cropped.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Richard P. Gabriel 摄于 2009 年；Wikimedia Commons 文件页确认采用 CC BY-SA 4.0。该图是后期资料照，不是 1987 年市场崩盘现场照片。",
+      "en": "Photographed by Richard P. Gabriel in 2009 and licensed CC BY-SA 4.0 on Wikimedia Commons. This is a later portrait, not a photograph of the 1987 market collapse."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-richard-stallman-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "理查德·斯托曼 2008 年资料照",
+      "en": "Richard Stallman reference portrait, 2008"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "NicoBZH 摄于 2008 年；Wikimedia Commons 文件页确认采用 CC BY-SA 2.0。该图是后期资料照，不是 1987 年现场照片。",
+      "en": "Photographed by NicoBZH in 2008 and licensed CC BY-SA 2.0 on Wikimedia Commons. This is a later reference portrait, not a photograph from 1987."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-greenblatt-oral-history",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "理查德·格林布拉特口述史",
+      "en": "Oral History of Richard Greenblatt"
+    },
+    "url": "https://www.computerhistory.org/collections/catalog/102658015",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "美国计算机历史博物馆的口述史记录，涵盖格林布拉特在 MIT AI Lab、Lisp Machine 开发和 Lisp Machines, Inc. 创立中的经历。",
+      "en": "Computer History Museum oral history covering Greenblatt's work at the MIT AI Lab, Lisp Machine development and the founding of Lisp Machines, Inc."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-stallman-lisp-experiences",
+    "type": "article",
+    "label": {
+      "zh": "文章",
+      "en": "Article"
+    },
+    "title": {
+      "zh": "《我的 Lisp 经历与 GNU Emacs 的发展》",
+      "en": "My Lisp Experiences and the Development of GNU Emacs"
+    },
+    "url": "https://www.gnu.org/gnu/rms-lisp.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "斯托曼回顾 MIT Lisp Machine 社群、Symbolics 分裂，以及他为 MIT 系统重新实现 Symbolics 改进的经历。",
+      "en": "Stallman's account of the MIT Lisp Machine community, the Symbolics split and his reimplementation of Symbolics advances for the MIT system."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-gnu-initial-announcement",
+    "type": "statement",
+    "label": {
+      "zh": "声明",
+      "en": "Statement"
+    },
+    "title": {
+      "zh": "GNU 工程最初公告",
+      "en": "Initial GNU Project announcement"
+    },
+    "url": "https://www.gnu.org/gnu/initial-announcement.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "斯托曼于 1983 年发布的 GNU 工程最初公告，用于说明 Lisp Machine 争议之后自由软件路线的发展。",
+      "en": "Stallman's 1983 initial announcement of the GNU Project, documenting the free-software path that followed the Lisp Machine dispute."
+    },
+    "purpose": "historical-context"
+  },
+  {
     "id": "source-ai-winter-overview",
     "type": "encyclopedia-entry",
     "label": {

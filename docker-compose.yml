@@ -16,8 +16,9 @@ services:
             context: .
             target: admin
         ports:
-            - '3001:3001'
+            - '127.0.0.1:3001:3001'
         environment:
+            HOST: 0.0.0.0
             PORT: 3001
         command: node manage/server.js
         volumes:

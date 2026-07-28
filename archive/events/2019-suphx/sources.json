@@ -7,8 +7,8 @@
       "en": "Paper page"
     },
     "title": {
-      "zh": "Suphx arXiv 论文",
-      "en": "Suphx arXiv paper"
+      "zh": "《Suphx：用深度强化学习掌握麻将》",
+      "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
     },
     "url": "https://arxiv.org/abs/2003.13590",
     "language": "en",
@@ -27,8 +27,8 @@
       "en": "DOI page"
     },
     "title": {
-      "zh": "arXiv DOI 页面",
-      "en": "arXiv DOI page"
+      "zh": "《Suphx：用深度强化学习掌握麻将》",
+      "en": "Suphx: Mastering Mahjong with Deep Reinforcement Learning"
     },
     "url": "https://doi.org/10.48550/arXiv.2003.13590",
     "language": "en",
@@ -58,5 +58,125 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "background"
+  },
+  {
+    "id": "source-microsoft-suphx-project",
+    "type": "official-page",
+    "label": {
+      "zh": "机构页面",
+      "en": "Institution page"
+    },
+    "title": {
+      "zh": "Suphx：微软研究院麻将 AI 项目",
+      "en": "Suphx: Microsoft Research mahjong AI project"
+    },
+    "url": "https://www.microsoft.com/en-us/research/project/suphx-mastering-mahjong-with-deep-reinforcement-learning/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "官方项目页列出项目简介、论文、成员与项目标识。",
+      "en": "Official project page listing the project overview, publication, people, and identity image."
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-tie-yan-liu-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "刘铁岩肖像（用户提供）",
+      "en": "Tie-Yan Liu portrait (user provided)"
+    },
+    "url": "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 Suphx 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the Suphx event."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-hsiao-wuen-hon-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "洪小文肖像（用户提供）",
+      "en": "Hsiao-Wuen Hon portrait (user provided)"
+    },
+    "url": "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 Suphx 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the Suphx event."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-tao-qin-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "秦涛肖像（用户提供）",
+      "en": "Tao Qin portrait (user provided)"
+    },
+    "url": "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 Suphx 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the Suphx event."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-guoqing-liu-microsoft-profile",
+    "type": "profile",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "刘国庆，微软研究院",
+      "en": "Guoqing Liu, Microsoft Research"
+    },
+    "url": "https://www.microsoft.com/en-us/research/people/guoqingliu/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "微软研究院官方人物页，并被 Suphx 官方项目成员页列出。",
+      "en": "Official Microsoft Research profile, also listed on the Suphx project people page."
+    },
+    "purpose": "biography"
+  },
+  {
+    "id": "source-li-zhao-microsoft-profile",
+    "type": "profile",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "赵立，微软研究院",
+      "en": "Li Zhao, Microsoft Research"
+    },
+    "url": "https://www.microsoft.com/en-us/research/people/lizo/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "微软研究院官方人物页，并被 Suphx 官方项目成员页列出。",
+      "en": "Official Microsoft Research profile, also listed on the Suphx project people page."
+    },
+    "purpose": "biography"
   }
 ]

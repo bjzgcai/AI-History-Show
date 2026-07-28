@@ -1,27 +1,97 @@
 [
   {
+    "id": "asset-1997-deep-blue-feng-hsiung-hsu",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "许峰雄肖像",
+      "en": "Feng-hsiung Hsu portrait"
+    },
+    "subcaption": {
+      "zh": "Deep Blue 首席架构师与硬件设计者。",
+      "en": "Deep Blue chief architect and hardware designer."
+    },
+    "sourceId": "source-feng-hsiung-hsu-chm-portrait",
+    "sourceName": {
+      "zh": "IBM 档案馆 / 计算机历史博物馆",
+      "en": "IBM Archives / Computer History Museum"
+    },
+    "sourceUrl": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+    "rights": {
+      "status": "user-directed-use",
+      "license": {
+        "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
+        "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "作为许峰雄的人物肖像及头像来源。",
+      "en": "Used as the portrait and avatar source for Feng-hsiung Hsu."
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai",
+      "figure-avatar:feng-hsiung-hsu"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1997-deep-blue-murray-campbell",
     "type": "image",
     "path": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
     "role": "hero-image",
     "caption": {
-      "zh": "默里·坎贝尔 肖像",
+      "zh": "默里·坎贝尔肖像",
       "en": "Murray Campbell portrait"
     },
     "subcaption": {
-      "zh": "来自 IBM 研究院 人物资料页的人物图。",
+      "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
       "en": "Portrait from IBM Research profile."
     },
     "sourceId": "source-murray-campbell-ibm-research",
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "IBM 研究院 profile image; reuse rights not stated.",
+        "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
         "en": "IBM Research profile image; reuse rights not stated."
       }
     },
     "usage": [
-      "variant:bench-council-ai100"
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-deep-blue-garry-kasparov",
+    "type": "image",
+    "path": "resources/images/external/1997-deep-blue/garry-kasparov-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "加里·卡斯帕罗夫肖像",
+      "en": "Garry Kasparov portrait"
+    },
+    "subcaption": {
+      "zh": "1997 年 Deep Blue 人机对抗中的卫冕世界冠军。",
+      "en": "Reigning world champion in the 1997 Deep Blue match."
+    },
+    "sourceId": "source-garry-kasparov-commons-portrait",
+    "sourceName": {
+      "zh": "荷兰国家档案馆 / 维基共享资源",
+      "en": "Nationaal Archief / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
+    "rights": {
+      "status": "cleared",
+      "license": {
+        "zh": "CC0；来源文件页标记为可自由使用。",
+        "en": "CC0; the source file page marks the image for unrestricted reuse."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:gaming-ai"
     ],
     "editable": true
   },
@@ -42,7 +112,7 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
@@ -68,12 +138,47 @@
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；不复制来源图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
     "usage": [
       "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1997-deep-blue-game-6-animation",
+    "type": "gif",
+    "path": "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif",
+    "role": "game-record-animation",
+    "caption": {
+      "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局",
+      "en": "Deep Blue versus Kasparov, 1997 Game 6"
+    },
+    "subcaption": {
+      "zh": "逐手重放深蓝赢得重赛的决定局。",
+      "en": "Move-by-move replay of the decisive game in Deep Blue's rematch victory."
+    },
+    "sourceId": "source-deep-blue-game-6-commons",
+    "sourceName": {
+      "zh": "维基共享资源",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC0 公共领域贡献；制作者为 Morn。",
+        "en": "CC0 public-domain dedication; created by Morn."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于展示 1997 年深蓝对卡斯帕罗夫第 6 局的实际走子过程。",
+      "en": "Used to show the actual move sequence of Deep Blue versus Kasparov, Game 6, in 1997."
+    },
+    "usage": [
+      "variant:gaming-ai"
     ],
     "editable": true
   }

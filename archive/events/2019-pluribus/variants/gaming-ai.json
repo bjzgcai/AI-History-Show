@@ -11,8 +11,8 @@
         "en": "Game AI as a Testbed for Search, Learning and Planning"
     },
     "displayDescription": {
-        "zh": "<p>Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克。它使用紧凑蓝图策略与有限前瞻搜索，同时处理多个对手，把游戏 AI 推向无法只靠单一对手模型的多人场景。</p>",
-        "en": "<p>Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em. It used a compact blueprint strategy plus limited-lookahead search to handle several opponents at once, moving game AI toward multiplayer settings where no single opponent model is enough.</p>"
+        "zh": "<p>2019 年，Pluribus 将扑克 AI 从一对一扩展到六人无限注德州扑克，并在两种实验设置中持续战胜职业牌手。多人牌局同时包含私人信息、随机性、临时合作与不断变化的激励，不能直接沿用两人零和博弈中较清晰的均衡求解假设。</p><p>诺姆·布朗和托马斯·桑德霍姆让系统先通过自我博弈学习紧凑的蓝图策略，再在实际决策时用有限前瞻搜索细化行动，而不是实时求解整个六人游戏。Pluribus 由此展示了“蓝图 + 搜索”如何在计算可控的条件下处理多人不完全信息，也为谈判、拍卖和多智能体决策等更广泛问题提供了方法参照。</p>",
+        "en": "<p>In 2019, Pluribus extended poker AI from heads-up play to six-player no-limit Texas hold'em and consistently defeated professionals in two experimental formats. Multiplayer poker combines private information and chance with shifting incentives and temporary alignments, so it does not inherit the relatively clean equilibrium assumptions of a two-player zero-sum game.</p><p>Noam Brown and Tuomas Sandholm trained a compact blueprint strategy through self-play, then refined decisions during play with limited-lookahead search instead of attempting to solve the entire six-player game in real time. Pluribus showed how a blueprint-plus-search design could handle multiplayer imperfect information within practical computational limits and offered a reference point for broader work on negotiation, auctions, and multi-agent decision-making.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "configuredPaper",
@@ -44,43 +44,6 @@
             "usage": {
                 "en": "Source card for the gaming AI branch",
                 "zh": "AI 棋牌分支的资料卡片"
-            }
-        },
-        {
-            "type": "gameEvolutionVideo",
-            "site": {
-                "en": "Game evolution clip",
-                "zh": "棋局演化短片"
-            },
-            "title": {
-                "en": "Pluribus game evolution",
-                "zh": "Pluribus 棋局演化"
-            },
-            "description": {
-                "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
-                "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
-            },
-            "url": "resources/videos/game-evolution/sample-go-game.gif",
-            "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-            "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
-            "sourceSgf": "examples/sgf/sample-go-game.sgf",
-            "generator": "scripts/sgf_to_video.py",
-            "duration": {
-                "en": "about 1 min",
-                "zh": "约 1 分钟"
-            },
-            "fps": "30",
-            "license": {
-                "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-            },
-            "usage": {
-                "en": "Playable game-state evolution module",
-                "zh": "可播放的棋局状态演化模块"
-            },
-            "action": {
-                "en": "Play evolution clip",
-                "zh": "播放演化短片"
             }
         }
     ],
@@ -331,43 +294,6 @@
                 "usage": {
                     "en": "Source card for the gaming AI branch",
                     "zh": "AI 棋牌分支的资料卡片"
-                }
-            },
-            {
-                "type": "gameEvolutionVideo",
-                "site": {
-                    "en": "Game evolution clip",
-                    "zh": "棋局演化短片"
-                },
-                "title": {
-                    "en": "Pluribus game evolution",
-                    "zh": "Pluribus 棋局演化"
-                },
-                "description": {
-                    "en": "Fast multiplayer poker evolution slot showing several opponents acting around one blueprint strategy.",
-                    "zh": "展示多个对手围绕同一蓝图策略行动的多人扑克快速演化槽位。"
-                },
-                "url": "resources/videos/game-evolution/sample-go-game.gif",
-                "fallbackUrl": "resources/videos/game-evolution/sample-go-game.gif",
-                "poster": "resources/images/bench-council-ai100/explainers/2019-pluribus_poker-evolution.svg",
-                "sourceSgf": "examples/sgf/sample-go-game.sgf",
-                "generator": "scripts/sgf_to_video.py",
-                "duration": {
-                    "en": "about 1 min",
-                    "zh": "约 1 分钟"
-                },
-                "fps": "30",
-                "license": {
-                    "en": "Locally generated exhibition clip from curated game-state data; no external broadcast footage is reused.",
-                    "zh": "由策展棋局状态数据本地生成的展览短片；不复用外部转播画面。"
-                },
-                "usage": {
-                    "en": "Playable game-state evolution module",
-                    "zh": "可播放的棋局状态演化模块"
-                },
-                "action": {
-                    "en": "Play evolution clip",
-                    "zh": "播放演化短片"
                 }
             }
         ]

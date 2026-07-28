@@ -8,7 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ARCHIVE_DIR = path.join(ROOT, 'archive');
 const EVENTS_DIR = path.join(ARCHIVE_DIR, 'events');
 const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
-const REPORT_PATH = path.join(ROOT, 'reports', 'archive-validation.md');
+const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-validation.md');
 const SOURCE_TYPE_TAXONOMY = require('../archive/taxonomies/source-types.json');
 const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.json');
 

@@ -7,8 +7,8 @@
       "en": "Paper page"
     },
     "title": {
-      "zh": "Science 论文",
-      "en": "Science paper"
+      "zh": "《通过自我博弈掌握国际象棋、将棋和围棋的通用强化学习算法》",
+      "en": "A General Reinforcement Learning Algorithm That Masters Chess, Shogi, and Go Through Self-Play"
     },
     "url": "https://www.science.org/doi/10.1126/science.aar6404",
     "language": "en",
@@ -27,8 +27,8 @@
       "en": "Preprint page"
     },
     "title": {
-      "zh": "arXiv 预印本",
-      "en": "arXiv preprint"
+      "zh": "《用通用强化学习算法通过自我博弈掌握国际象棋与将棋》",
+      "en": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"
     },
     "url": "https://arxiv.org/abs/1712.01815",
     "language": "en",
@@ -76,6 +76,26 @@
     "notes": {
       "zh": "Wikimedia Commons 文件页标注 CC BY-SA 2.0。",
       "en": "The Wikimedia Commons file page identifies CC BY-SA 2.0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-julian-schrittwieser-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "朱利安·施里特维泽肖像（用户提供）",
+      "en": "Julian Schrittwieser portrait (user provided)"
+    },
+    "url": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 AlphaZero 事件的人物头像与肖像展示。",
+      "en": "The user supplied this photograph for the figure avatar and portrait display in the AlphaZero event."
     },
     "purpose": "image-provenance"
   }

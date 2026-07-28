@@ -47,8 +47,18 @@
             }
         }
     ],
-    "assetIds": ["asset-1973-lighthill-report-winter-filter"],
+    "assetIds": [
+        "asset-1973-lighthill-report-james-lighthill",
+        "asset-1973-lighthill-report-donald-michie",
+        "asset-1973-lighthill-report-freddy-ii",
+        "asset-1973-lighthill-report-royal-institution-theatre",
+        "asset-1973-lighthill-report-winter-filter"
+    ],
     "sourceIds": [
+        "source-mactutor-lighthill-portrait",
+        "source-donald-michie-portrait",
+        "source-lighthill-controversy-debate-archive",
+        "source-royal-institution-theatre-commons",
         "source-lighthill-report-archive",
         "source-edinburgh-ai-history-perspective",
         "source-edinburgh-freddy-robot-archive",

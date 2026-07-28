@@ -3670,13 +3670,15 @@
             observer.observe(document.body, { childList: true });
         }
 
-        function renderPage(index, analyticsOptions = {}) {
+        function renderPage(index, renderOptions = {}) {
             const vm = getVm(index);
             startAnalyticsMilestoneView(vm, {
-                navigationSource: analyticsOptions.navigationSource || 'render',
-                eligible: analyticsOptions.eligible !== false
+                navigationSource: renderOptions.navigationSource || 'render',
+                eligible: renderOptions.eligible !== false
             });
-            currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            if (!renderOptions.preserveArchiveIndex) {
+                currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            }
             applyStaticTranslations();
             renderLeft(vm);
             renderTimeline(vm);
@@ -3961,7 +3963,7 @@
 
         window.addEventListener('languageChanged', () => {
             vmCache.clear();
-            renderPage(currentIndex);
+            renderPage(currentIndex, { preserveArchiveIndex: true });
         });
 
         syncStageScale();

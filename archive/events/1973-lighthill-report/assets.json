@@ -1,5 +1,133 @@
 [
   {
+    "id": "asset-1973-lighthill-report-james-lighthill",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "詹姆斯·莱特希尔爵士肖像",
+      "en": "Sir James Lighthill portrait"
+    },
+    "subcaption": {
+      "zh": "莱特希尔报告作者。",
+      "en": "Author of the Lighthill Report."
+    },
+    "sourceId": "source-mactutor-lighthill-portrait",
+    "sourceName": {
+      "zh": "Royal Society 传记肖像，经 MacTutor 收录",
+      "en": "Royal Society memoir portrait via MacTutor"
+    },
+    "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Biographies/Lighthill/pictdisplay/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "未发现开放复用许可。MacTutor 说明其未保留图片原始来源，无法保证版权状态；当前仅作为低分辨率人物资料参考，公开发布前应取得授权或替换。",
+        "en": "No open reuse license was identified. MacTutor states that it did not retain the images' original provenance and cannot guarantee their copyright status; this low-resolution portrait is a biographical reference pending permission or replacement before public release."
+      },
+      "sourceUrl": "https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-1973-lighthill-report-donald-michie",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
+    "role": "supporting-portrait",
+    "caption": {
+      "zh": "唐纳德·米奇肖像",
+      "en": "Donald Michie portrait"
+    },
+    "subcaption": {
+      "zh": "英国 AI 代表人物，公开反对莱特希尔报告。",
+      "en": "A leading figure in British AI who publicly opposed the Lighthill Report."
+    },
+    "sourceId": "source-donald-michie-portrait",
+    "sourceName": {
+      "zh": "爱丁堡大学 Donald Michie 档案 / Wikimedia Commons",
+      "en": "University of Edinburgh Donald Michie archive / Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 4.0；爱丁堡大学 Donald Michie 档案由 Austin Tate 教授维护，使用时须保留署名。",
+        "en": "CC BY 4.0; the University of Edinburgh Donald Michie archive is curated by Professor Austin Tate, and attribution is required."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donald-Michie-2003.jpg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1973-lighthill-report-freddy-ii",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg",
+    "role": "historical-photo",
+    "caption": {
+      "zh": "爱丁堡 Freddy II 机器人",
+      "en": "Edinburgh Freddy II robot"
+    },
+    "subcaption": {
+      "zh": "爱丁堡大学 AI 与机器人研究的代表成果；米奇在 1973 年 BBC 辩论中播放视频展示了 Freddy II。",
+      "en": "A representative Edinburgh AI and robotics achievement; Michie showed Freddy II by video during the 1973 BBC debate."
+    },
+    "sourceId": "source-edinburgh-freddy-robot-archive",
+    "sourceName": {
+      "zh": "爱丁堡大学 AIAI Freddy 项目档案",
+      "en": "University of Edinburgh AIAI Freddy project archive"
+    },
+    "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY 4.0；AIAI Freddy 项目页明确声明页面内容与图片采用该许可。",
+        "en": "CC BY 4.0; the AIAI Freddy project page explicitly licenses its page content and images under these terms."
+      },
+      "sourceUrl": "https://www.aiai.ed.ac.uk/project/freddy/"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1973-lighthill-report-royal-institution-theatre",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg",
+    "role": "venue-photo",
+    "caption": {
+      "zh": "英国皇家研究院演讲厅",
+      "en": "Royal Institution Lecture Theatre"
+    },
+    "subcaption": {
+      "zh": "1973 年 BBC 莱特希尔争议辩论的举办场地；图片为 2017 年的现代资料照，并非辩论现场。",
+      "en": "Venue of the 1973 BBC Lighthill controversy debate; this is a modern 2017 reference photo, not an image of the debate itself."
+    },
+    "sourceId": "source-royal-institution-theatre-commons",
+    "sourceName": {
+      "zh": "Wikimedia Commons",
+      "en": "Wikimedia Commons"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg",
+    "rights": {
+      "status": "licensed",
+      "license": {
+        "zh": "CC BY-SA 4.0；AnaConvTrans 摄于 2017 年，使用时须署名并遵循相同方式共享。",
+        "en": "CC BY-SA 4.0; photographed by AnaConvTrans in 2017, with attribution and share-alike terms required."
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Institution_Lecture_Theatre.jpg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1973-lighthill-report-winter-filter",
     "type": "svg",
     "path": "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",

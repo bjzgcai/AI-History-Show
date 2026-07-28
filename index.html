@@ -6,14 +6,6 @@
     <title>AI 历史回顾展览 - 单屏模式</title>
     <script src="shared/layout-router.js"></script>
     <style>
-        @font-face {
-            font-family: "OPPOSans";
-            src: url("./public/fonts/oppo-sans/OPPO Sans 4.0.ttf") format("truetype");
-            font-weight: 100 900;
-            font-style: normal;
-            font-display: swap;
-        }
-
         :root {
             --screen-width: 1920px;
             --screen-height: 1080px;
@@ -2029,9 +2021,13 @@
         }
 
         .mode-chip {
+            --mode-chip-width: 150px;
             justify-self: end;
             display: inline-flex;
             align-items: center;
+            justify-content: flex-end;
+            width: var(--mode-chip-width);
+            min-width: var(--mode-chip-width);
             order: 3;
             color: rgba(244, 239, 229, 0.54);
             font-size: 18px;
@@ -3344,22 +3340,23 @@
             font-weight: 600;
         }
 
-        .quick-quiz-mobile-entry {
+        .quick-quiz-pq-entry {
             border-top: 1px solid rgba(244, 239, 229, 0.11);
             padding-top: 10px;
+            min-width: 0;
             display: grid;
             grid-template-columns: minmax(0, 1fr) 132px;
             align-items: center;
             gap: 12px;
         }
 
-        .quick-quiz-mobile-copy {
+        .quick-quiz-pq-copy {
             min-width: 0;
             display: grid;
             gap: 4px;
         }
 
-        .quick-quiz-mobile-kicker {
+        .quick-quiz-pq-kicker {
             color: var(--accent);
             font-size: 10px;
             font-weight: 850;
@@ -3367,268 +3364,35 @@
             text-transform: uppercase;
         }
 
-        .quick-quiz-mobile-title {
+        .quick-quiz-pq-title {
             color: rgba(255, 255, 255, 0.92);
             font-size: 13px;
             font-weight: 850;
             line-height: 1.2;
         }
 
-        .quick-quiz-mobile-note {
+        .quick-quiz-pq-note {
             color: rgba(244, 239, 229, 0.66);
             font-size: 12px;
             font-weight: 650;
             line-height: 1.3;
         }
 
-        .quick-quiz-mobile-qr-link {
+        .quick-quiz-pq-qr-frame {
             width: 132px;
             display: block;
+            justify-self: center;
             line-height: 0;
         }
 
-        .quick-quiz-mobile-qr {
-            width: 132px;
+        .quick-quiz-pq-qr {
+            width: 100%;
             aspect-ratio: 1;
             border-radius: 6px;
             background: #fff;
             padding: 7px;
             display: block;
             box-shadow: 0 0 0 1px rgba(244, 239, 229, 0.12);
-        }
-
-        body.mobile-quiz-active .stage-viewport {
-            visibility: hidden;
-        }
-
-        .mobile-quiz-app {
-            position: fixed;
-            inset: 0;
-            z-index: 90;
-            overflow-y: auto;
-            background:
-                linear-gradient(180deg, rgba(246, 137, 0, 0.13), transparent 260px),
-                #080806;
-            color: var(--text);
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .mobile-quiz-app.is-hidden {
-            display: none;
-        }
-
-        .mobile-quiz-shell {
-            width: min(720px, 100%);
-            min-height: 100%;
-            margin: 0 auto;
-            padding: 24px 18px 34px;
-            display: grid;
-            align-content: start;
-            gap: 18px;
-        }
-
-        .mobile-quiz-header {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
-            align-items: start;
-            gap: 14px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid rgba(244, 239, 229, 0.14);
-        }
-
-        .mobile-quiz-eyebrow {
-            color: var(--accent);
-            font-size: 12px;
-            font-weight: 900;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .mobile-quiz-title {
-            margin-top: 5px;
-            color: #fff;
-            font-size: 28px;
-            font-weight: 900;
-            line-height: 1.1;
-            letter-spacing: 0;
-        }
-
-        .mobile-quiz-subtitle {
-            margin-top: 8px;
-            color: rgba(244, 239, 229, 0.7);
-            font-size: 14px;
-            font-weight: 650;
-            line-height: 1.45;
-        }
-
-        .mobile-quiz-score {
-            min-width: 78px;
-            min-height: 46px;
-            border: 1px solid rgba(246, 137, 0, 0.54);
-            border-radius: 6px;
-            background: rgba(246, 137, 0, 0.13);
-            color: #fff;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: 900;
-        }
-
-        .mobile-quiz-list {
-            display: grid;
-            gap: 14px;
-        }
-
-        .mobile-quiz-card {
-            border: 1px solid rgba(244, 239, 229, 0.13);
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.055);
-            padding: 15px;
-            display: grid;
-            gap: 12px;
-        }
-
-        .mobile-quiz-card.is-answered {
-            border-color: rgba(244, 239, 229, 0.22);
-        }
-
-        .mobile-quiz-card-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            color: rgba(244, 239, 229, 0.55);
-            font-size: 11px;
-            font-weight: 850;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-        }
-
-        .mobile-quiz-source {
-            min-width: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .mobile-quiz-question {
-            color: rgba(255, 255, 255, 0.94);
-            font-size: 17px;
-            font-weight: 850;
-            line-height: 1.35;
-        }
-
-        .mobile-quiz-options {
-            display: grid;
-            gap: 9px;
-        }
-
-        .mobile-quiz-option {
-            min-height: 48px;
-            border: 1px solid rgba(244, 239, 229, 0.15);
-            border-radius: 6px;
-            background: rgba(0, 0, 0, 0.18);
-            color: rgba(255, 255, 255, 0.88);
-            padding: 10px 12px;
-            display: grid;
-            grid-template-columns: 26px minmax(0, 1fr);
-            gap: 10px;
-            align-items: center;
-            text-align: left;
-            font-size: 14px;
-            font-weight: 750;
-            line-height: 1.35;
-            cursor: pointer;
-        }
-
-        .mobile-quiz-option:disabled {
-            cursor: default;
-        }
-
-        .mobile-quiz-option.is-correct-answer {
-            border-color: rgba(52, 211, 153, 0.78);
-            background: rgba(16, 185, 129, 0.18);
-            color: #ecfdf5;
-        }
-
-        .mobile-quiz-option.is-wrong-answer {
-            border-color: rgba(248, 113, 113, 0.78);
-            background: rgba(185, 28, 28, 0.2);
-            color: #fff1f2;
-        }
-
-        .mobile-quiz-index {
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            background: rgba(244, 239, 229, 0.12);
-            color: rgba(255, 255, 255, 0.72);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 900;
-        }
-
-        .mobile-quiz-feedback {
-            color: rgba(244, 239, 229, 0.72);
-            font-size: 13px;
-            font-weight: 650;
-            line-height: 1.45;
-        }
-
-        .mobile-quiz-feedback strong {
-            color: #fff;
-        }
-
-        .mobile-quiz-result {
-            border: 1px solid rgba(246, 137, 0, 0.48);
-            border-radius: 8px;
-            background: rgba(246, 137, 0, 0.14);
-            padding: 15px;
-            display: grid;
-            gap: 5px;
-        }
-
-        .mobile-quiz-result strong {
-            color: #fff;
-            font-size: 20px;
-            line-height: 1.2;
-        }
-
-        .mobile-quiz-result span {
-            color: rgba(244, 239, 229, 0.78);
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 1.4;
-        }
-
-        .mobile-quiz-actions {
-            position: sticky;
-            bottom: 0;
-            padding: 12px 0 0;
-            background: linear-gradient(180deg, transparent, #080806 18px, #080806);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        .mobile-quiz-button {
-            min-height: 46px;
-            border: 1px solid rgba(244, 239, 229, 0.2);
-            border-radius: 6px;
-            background: rgba(255, 255, 255, 0.06);
-            color: rgba(255, 255, 255, 0.82);
-            font-size: 14px;
-            font-weight: 850;
-            cursor: pointer;
-        }
-
-        .mobile-quiz-button.primary {
-            border-color: rgba(246, 137, 0, 0.78);
-            background: var(--accent);
-            color: #111;
         }
 
         .quiz-modal {
@@ -3855,27 +3619,25 @@
             font-size: 14px;
         }
 
-        .quiz-modal-body .quick-quiz-mobile-entry {
-            grid-template-columns: minmax(0, 1fr) 168px;
-            gap: 14px;
+        .quiz-modal-body .quick-quiz-pq-entry {
+            grid-template-columns: minmax(0, 1fr) 152px;
             padding-top: 14px;
         }
 
-        .quiz-modal-body .quick-quiz-mobile-title {
+        .quiz-modal-body .quick-quiz-pq-title {
             font-size: 15px;
         }
 
-        .quiz-modal-body .quick-quiz-mobile-note {
+        .quiz-modal-body .quick-quiz-pq-note {
             font-size: 13px;
         }
 
-        .quiz-modal-body .quick-quiz-mobile-qr {
-            width: 168px;
-            padding: 8px;
+        .quiz-modal-body .quick-quiz-pq-qr-frame {
+            width: 152px;
         }
 
-        .quiz-modal-body .quick-quiz-mobile-qr-link {
-            width: 168px;
+        .quiz-modal-body .quick-quiz-pq-qr {
+            padding: 8px;
         }
 
         .quiz-modal-actions {
@@ -4419,32 +4181,12 @@
                 --quiz-material-image-height: 150px;
             }
 
-            .quiz-modal-body .quick-quiz-mobile-entry {
+            .quiz-modal-body .quick-quiz-pq-entry {
                 grid-template-columns: minmax(0, 1fr) 128px;
             }
 
-            .quiz-modal-body .quick-quiz-mobile-qr {
+            .quiz-modal-body .quick-quiz-pq-qr-frame {
                 width: 128px;
-            }
-
-            .quiz-modal-body .quick-quiz-mobile-qr-link {
-                width: 128px;
-            }
-
-            .mobile-quiz-shell {
-                padding: 20px 14px 28px;
-            }
-
-            .mobile-quiz-title {
-                font-size: 24px;
-            }
-
-            .mobile-quiz-header {
-                grid-template-columns: minmax(0, 1fr);
-            }
-
-            .mobile-quiz-score {
-                justify-self: start;
             }
 
             .region-modal {
@@ -5621,19 +5363,24 @@
         }
 
         .ui-detail-topline {
+            --ui-detail-context-base-width: 564px;
+            --ui-detail-context-max-width: 829px;
+            --ui-detail-title-min-width: 300px;
             min-width: 0;
             display: grid;
             grid-column: 1;
             grid-row: 1;
-            grid-template-columns: fit-content(829px) minmax(300px, 1fr);
+            grid-template-columns:
+                fit-content(var(--ui-detail-context-max-width))
+                minmax(var(--ui-detail-title-min-width), 1fr);
             column-gap: 67px;
             align-items: start;
         }
 
         .ui-detail-context {
-            width: max-content;
-            min-width: 564px;
-            max-width: 829px;
+            width: var(--ui-detail-context-width, max-content);
+            min-width: var(--ui-detail-context-base-width);
+            max-width: var(--ui-detail-context-max-width);
             display: grid;
             grid-column: 1;
             grid-row: 1;
@@ -5678,6 +5425,13 @@
             -webkit-line-clamp: 2;
             white-space: normal;
             overflow-wrap: anywhere;
+        }
+
+        .ui-detail-place.is-measuring {
+            display: block;
+            max-height: none;
+            overflow: visible;
+            -webkit-line-clamp: unset;
         }
 
         .ui-avatar-strip {
@@ -5814,8 +5568,8 @@
         .ui-detail-image-stage img {
             max-width: 100%;
             max-height: 100%;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
             object-fit: contain;
         }
 
@@ -5883,6 +5637,20 @@
             gap: 0;
             padding-top: 12px;
             padding-left: 0;
+        }
+
+        .ui-detail-title-row {
+            min-width: 0;
+            display: block;
+        }
+
+        .ui-detail-title-row .ui-sentiment-tag {
+            margin-left: 10px;
+            vertical-align: 0.2em;
+        }
+
+        .ui-detail-title-row .ui-detail-title {
+            display: inline;
         }
 
         .ui-detail-title {
@@ -6690,7 +6458,7 @@
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
         }
 
-        .branch-video-panel {
+        .game-evolution-panel {
             width: min(1080px, calc(100vw - 72px));
             max-height: min(86vh, 760px);
             display: grid;
@@ -6698,8 +6466,8 @@
             gap: 14px;
         }
 
-        .branch-video-player,
-        .branch-video-fallback {
+        .game-evolution-player,
+        .game-evolution-fallback {
             width: 100%;
             max-height: calc(86vh - 90px);
             border: 1px solid rgba(246, 137, 0, 0.28);
@@ -6709,7 +6477,7 @@
             box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
         }
 
-        .branch-video-meta {
+        .game-evolution-meta {
             display: grid;
             gap: 4px;
             color: rgba(244, 239, 229, 0.76);
@@ -6720,7 +6488,7 @@
             text-align: center;
         }
 
-        .branch-video-meta strong {
+        .game-evolution-meta strong {
             color: var(--accent);
             font-size: 15px;
             font-weight: 900;
@@ -6858,7 +6626,6 @@
             .nav-button,
             .ui-back-button,
             .quiz-modal-button,
-            .mobile-quiz-button,
             .region-modal-close,
             .storyline-modal-close,
             .about-modal-close,
@@ -6867,6 +6634,8 @@
             .bench-map-item,
             .quick-quiz-option,
             .mobile-quiz-option,
+            .ui-event-card,
+            .ui-year-tick,
             .timeline-tick,
             .ui-detail-image-nav {
                 min-height: var(--touch-target);
@@ -7561,15 +7330,13 @@
                 grid-template-columns: minmax(0, 1fr);
             }
 
-            .quick-quiz-option,
-            .mobile-quiz-option {
+            .quick-quiz-option {
                 grid-template-columns: 28px minmax(0, 1fr);
                 padding: 11px 12px;
                 overflow-wrap: anywhere;
             }
 
-            .quick-quiz-index,
-            .mobile-quiz-index {
+            .quick-quiz-index {
                 width: 28px;
                 height: 28px;
             }
@@ -7683,13 +7450,14 @@
                 padding: 20px 16px;
             }
 
-            .quiz-modal-body .quick-quiz-mobile-entry {
+            .quick-quiz-pq-entry,
+            .quiz-modal-body .quick-quiz-pq-entry {
                 grid-template-columns: minmax(0, 1fr);
             }
 
-            .quiz-modal-body .quick-quiz-mobile-qr,
-            .quiz-modal-body .quick-quiz-mobile-qr-link {
-                width: min(144px, 46vw);
+            .quick-quiz-pq-qr-frame,
+            .quiz-modal-body .quick-quiz-pq-qr-frame {
+                width: min(144px, 100%);
             }
         }
 
@@ -8132,9 +7900,7 @@
             .nav-button,
             .ui-back-button,
             .quick-quiz-option,
-            .mobile-quiz-option,
-            .quiz-modal-button,
-            .mobile-quiz-button {
+            .quiz-modal-button {
                 min-height: var(--touch-target);
             }
 
@@ -8735,7 +8501,7 @@
                     </button>
                     <button class="about-trigger" id="aboutTrigger" type="button" aria-haspopup="dialog" aria-controls="aboutModal">ABOUT</button>
                     <div class="mode-chip">
-                        <span class="mode-chip-label" data-i18n="aiHistoryMode">AI历史</span>
+                        <span class="mode-chip-label" data-i18n="aiHistoryMode">人工智能历史</span>
                     </div>
                 </div>
             </header>
@@ -8971,24 +8737,6 @@
         </div>
     </div>
 
-    <main class="mobile-quiz-app is-hidden" id="mobileQuizApp" aria-live="polite">
-        <div class="mobile-quiz-shell">
-            <header class="mobile-quiz-header">
-                <div>
-                    <div class="mobile-quiz-eyebrow" id="mobileQuizEyebrow">AI100 快速问答</div>
-                    <h1 class="mobile-quiz-title" id="mobileQuizTitle"></h1>
-                    <div class="mobile-quiz-subtitle" id="mobileQuizSubtitle"></div>
-                </div>
-                <div class="mobile-quiz-score" id="mobileQuizScore">0/10</div>
-            </header>
-            <section class="mobile-quiz-list" id="mobileQuizList"></section>
-            <div class="mobile-quiz-actions">
-                <button class="mobile-quiz-button" id="mobileQuizReset" type="button"></button>
-                <button class="mobile-quiz-button primary" id="mobileQuizExit" type="button"></button>
-            </div>
-        </div>
-    </main>
-
     <script>
         function _loadDefaultMilestones() {
             document.write('<script src="milestones-data-default.js?v=20260613-gaming-ai-images"><\/script>');
@@ -8997,6 +8745,7 @@
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
     <script src="shared/chronology-overview.js?v=20260727"></script>
+    <script src="shared/gaming-media-selection.js"></script>
     <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -9010,12 +8759,7 @@
         const SCREEN_HEIGHT = 1080;
         const GLOBE_TEXTURE_VERSION = '20260413c';
         const FIGMA_GLOBE_ASSET_URL = `resources/images/figma-globe.png?v=${GLOBE_TEXTURE_VERSION}`;
-        const POP_QUIZ_MOBILE_STORYLINE_ID = 'bench-council-ai100';
-        const POP_QUIZ_MOBILE_QUERY_VALUE = 'mobile';
-        const POP_QUIZ_MOBILE_QUESTION_COUNT = 10;
-        const POP_QUIZ_MOBILE_CAMPAIGN = 'ai100-pop-quiz-v2';
-        const POP_QUIZ_MOBILE_PUBLIC_URL = 'https://bjzgcai.github.io/AI-History-Show/?storyline=bench-council-ai100&quiz=mobile';
-        const POP_QUIZ_MOBILE_QR_URL = 'resources/images/ui/ai100-pop-quiz-qr-v2.svg?v=20260608';
+        const PQ_MINI_PROGRAM_QR_URL = 'resources/pq.png?v=20260724';
         const COMPLETION_QUIZ_MIN_DWELL_MS = 15 * 1000;
         const GLOBE_TEXTURE_URLS = {
             water: `resources/textures/earth-water.png?v=${GLOBE_TEXTURE_VERSION}`,
@@ -9027,7 +8771,7 @@
         const PORTRAIT_EDGE_NAV_MIN_Y = 90;
         const PORTRAIT_EDGE_NAV_TOLERANCE = 24;
         const PORTRAIT_EDGE_POINTER_SUPPRESSION_MS = 800;
-        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .about-modal, .about-trigger, .region-modal, .mobile-quiz-app, iframe, .storyline-select, .ui-detail-image-stage';
+        const PORTRAIT_EDGE_IGNORE_SELECTOR = '.photo-viewer, .quiz-modal, .storyline-modal, .storyline-trigger, .about-modal, .about-trigger, .region-modal, iframe, .storyline-select, .ui-detail-image-stage';
         const IDLE_AUTO_ADVANCE_MS = 5 * 60 * 1000;
         const MOBILE_GLOBE_PIXEL_RATIO_CAP = 1.5;
         const TABLET_GLOBE_PIXEL_RATIO_CAP = 1.75;
@@ -9076,15 +8820,19 @@
             },
             {
                 id: 'gaming-ai',
-                layout: 'branch-timeline',
+                layout: 'ui-browser',
                 label: {
                     en: 'AI in Board & Tabletop Games',
                     zh: 'AI 在棋牌与博弈论的演进'
+                },
+                note: {
+                    en: '1951-2019, from board search and evaluation to self-play and learned planning',
+                    zh: '1951 至 2019 年，从棋盘搜索与评估到自我对弈和学习型规划'
                 }
             },
             {
                 id: 'humanistic-cycle',
-                layout: 'branch-timeline',
+                layout: 'ui-browser',
                 label: {
                     en: 'Humanistic & Emotional Cycles of AI',
                     zh: 'AI 的人文与情绪周期'
@@ -9205,6 +8953,30 @@
             );
         }
 
+        function isHumanisticMilestone(milestone) {
+            if (!milestone) return false;
+            if (getMilestoneStorylineId(milestone) === 'humanistic-cycle') return true;
+            if (milestone.archiveVariantId === 'humanistic-cycle') return true;
+            return Array.isArray(milestone.unifiedSourceIds)
+                && milestone.unifiedSourceIds.some((id) => String(id || '').startsWith('milestone-humanistic-cycle-'));
+        }
+
+        function isGamingMilestone(milestone) {
+            if (!milestone) return false;
+            if (getMilestoneStorylineId(milestone) === 'gaming-ai') return true;
+            return milestone.archiveVariantId === 'gaming-ai';
+        }
+
+        function buildUiSentimentTagHtml(raw) {
+            if (!isHumanisticMilestone(raw)) return '';
+            const sentiment = String(raw && raw.sentiment || '')
+                .toLowerCase()
+                .replace(/[^a-z0-9_-]/g, '');
+            const label = getAchievementField(raw, 'area', '');
+            if (!sentiment || !label) return '';
+            return `<span class="ui-sentiment-tag ui-sentiment-tag--${sentiment}">${escapeHtml(label)}</span>`;
+        }
+
         const getSearchParam = (name) => {
             try {
                 return new URLSearchParams(window.location.search).get(name) || '';
@@ -9213,7 +8985,6 @@
             }
         };
         const getRequestedStorylineId = () => StorylineRouting.normalizeStorylineId(getSearchParam('storyline'));
-        const getRequestedQuizMode = () => getSearchParam('quiz');
         const getRequestedUiMode = () => getSearchParam('uiMode');
         const getRequestedEventId = () => getSearchParam('event');
         const getFallbackStorylineId = () => hasStorylineMilestones(DEFAULT_STORYLINE_ID)
@@ -9252,7 +9023,6 @@
         let currentArchiveIndex = 0;
         let activeQuizMilestoneKey = '';
         let pendingQuizAction = null;
-        let mobileQuizState = null;
         let idleAdvanceTimer = null;
         let completionQuizViewKey = '';
         let completionQuizViewStartedAt = 0;
@@ -9377,15 +9147,7 @@
             regionModalEyebrow: document.getElementById('regionModalEyebrow'),
             regionModalTitle: document.getElementById('regionModalTitle'),
             regionModalSubtitle: document.getElementById('regionModalSubtitle'),
-            regionOptionGrid: document.getElementById('regionOptionGrid'),
-            mobileQuizApp: document.getElementById('mobileQuizApp'),
-            mobileQuizEyebrow: document.getElementById('mobileQuizEyebrow'),
-            mobileQuizTitle: document.getElementById('mobileQuizTitle'),
-            mobileQuizSubtitle: document.getElementById('mobileQuizSubtitle'),
-            mobileQuizScore: document.getElementById('mobileQuizScore'),
-            mobileQuizList: document.getElementById('mobileQuizList'),
-            mobileQuizReset: document.getElementById('mobileQuizReset'),
-            mobileQuizExit: document.getElementById('mobileQuizExit')
+            regionOptionGrid: document.getElementById('regionOptionGrid')
         };
 
         const ABOUT_REPOSITORY_URL = 'https://github.com/bjzgcai/AI-History-Show';
@@ -10410,14 +10172,22 @@
             return match[1] ? String(match[1] || '').trim() : stripHtml(match[2]);
         }
 
-        function getConfiguredImageMeta(vm, url) {
+        function getConfiguredImageMetaMap(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
-            const map = {
+            return {
                 ...((raw.resources && raw.resources.imageMeta) || {}),
                 ...(raw.imageMeta || {})
             };
-            const entry = map[url];
-            if (!entry || typeof entry !== 'object') return null;
+        }
+
+        function getConfiguredImageMetaEntry(vm, url) {
+            const entry = getConfiguredImageMetaMap(vm)[url];
+            return entry && typeof entry === 'object' ? entry : null;
+        }
+
+        function getConfiguredImageMeta(vm, url) {
+            const entry = getConfiguredImageMetaEntry(vm, url);
+            if (!entry) return null;
 
             const caption = String(lx(entry.caption || entry.title || entry.name || '')).trim();
             const rawSubcaption = String(lx(entry.subcaption || entry.subtitle || entry.description || '')).trim();
@@ -10427,6 +10197,14 @@
             const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
             if (!caption && !subcaption && !source && !license && !usage) return null;
             return { caption, subcaption, source, license, usage };
+        }
+
+        function isExplainerMedia(vm, url) {
+            const value = String(url || '').trim();
+            if (!value) return false;
+            const meta = getConfiguredImageMetaEntry(vm, value) || {};
+            const role = String(meta.role || '').trim();
+            return /(?:architecture|algorithm)-explainer/i.test(role) || /\/explainers\//i.test(value);
         }
 
         function buildArchivePhotoMeta(vm, url) {
@@ -11364,7 +11142,7 @@
 
         function buildBranchMilestoneElements(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
-            const isHumanisticCycle = getMilestoneStorylineId(raw) === 'humanistic-cycle';
+            const isHumanisticCycle = isHumanisticMilestone(raw);
             const groups = [
                 {
                     label: uiText('People', '\u4eba\u7269'),
@@ -11671,7 +11449,7 @@
             return `${value}${separator}_restart=${Date.now()}`;
         }
 
-        async function canLoadBranchVideo(url, hasFallback) {
+        async function canLoadGameEvolutionVideo(url, hasFallback) {
             const value = String(url || '').trim();
             if (!value) return false;
             if (!hasFallback) return true;
@@ -11696,11 +11474,12 @@
             }
         }
 
-        async function openBranchGameEvolutionVideo(vm) {
+        async function openGameEvolutionVideo(vm) {
             const raw = vm && vm.raw ? vm.raw : {};
             const module = getAchievementGameEvolutionModule(raw);
             if (!module) return;
 
+            const returnFocus = document.activeElement;
             const title = module.title || vm.title || uiText('Game evolution video', '棋局演化视频');
             const videoUrl = String(module.url || '').trim();
             const fallbackUrl = String(module.fallbackUrl || '').trim();
@@ -11708,7 +11487,7 @@
             const playableImage = fallbackUrl || poster;
             const fallbackImageUrl = appendPlaybackRestartToken(playableImage);
             const shouldUseVideo = isDirectVideoMedia(videoUrl)
-                && await canLoadBranchVideo(videoUrl, Boolean(playableImage));
+                && await canLoadGameEvolutionVideo(videoUrl, Boolean(playableImage));
             const sourceSgf = String(module.sourceSgf || '').trim();
             const generator = String(module.generator || '').trim();
             const sourceLine = sourceSgf
@@ -11719,13 +11498,16 @@
                 : '';
 
             const viewer = document.createElement('div');
-            viewer.className = 'photo-viewer branch-video-viewer';
+            viewer.className = 'photo-viewer game-evolution-viewer';
+            viewer.setAttribute('role', 'dialog');
+            viewer.setAttribute('aria-modal', 'true');
+            viewer.setAttribute('aria-label', title);
             viewer.innerHTML = `
-                <button class="close-viewer" type="button">×</button>
-                <div class="branch-video-panel">
-                    ${shouldUseVideo ? `<video class="branch-video-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
-                    ${fallbackImageUrl ? `<img class="branch-video-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}"${shouldUseVideo ? ' hidden' : ''}>` : ''}
-                    <div class="branch-video-meta">
+                <button class="close-viewer" type="button" aria-label="${escapeHtml(tx('close'))}">×</button>
+                <div class="game-evolution-panel">
+                    ${shouldUseVideo ? `<video class="game-evolution-player" src="${escapeHtml(videoUrl)}" controls autoplay muted loop playsinline preload="metadata"></video>` : ''}
+                    ${fallbackImageUrl ? `<img class="game-evolution-fallback" src="${escapeHtml(fallbackImageUrl)}" alt="${escapeHtml(title)}"${shouldUseVideo ? ' hidden' : ''}>` : ''}
+                    <div class="game-evolution-meta">
                         <strong>${escapeHtml(title)}</strong>
                         <span>${escapeHtml(sourceLine)}</span>
                         ${generatorLine ? `<span>${escapeHtml(generatorLine)}</span>` : ''}
@@ -11734,8 +11516,9 @@
             `;
             document.body.appendChild(viewer);
 
-            const video = viewer.querySelector('.branch-video-player');
-            const fallback = viewer.querySelector('.branch-video-fallback');
+            const closeButton = viewer.querySelector('.close-viewer');
+            const video = viewer.querySelector('.game-evolution-player');
+            const fallback = viewer.querySelector('.game-evolution-fallback');
             if (video && fallback) {
                 video.addEventListener('error', () => {
                     video.hidden = true;
@@ -11759,9 +11542,12 @@
             const closeViewer = () => {
                 if (video && typeof video.pause === 'function') video.pause();
                 viewer.remove();
+                if (returnFocus && typeof returnFocus.focus === 'function') {
+                    returnFocus.focus();
+                }
             };
 
-            viewer.querySelector('.close-viewer').onclick = closeViewer;
+            closeButton.onclick = closeViewer;
             viewer.addEventListener('click', (event) => {
                 if (event.target === viewer) closeViewer();
             });
@@ -11770,6 +11556,7 @@
                 if (event.key === 'Escape') closeViewer();
             };
             document.addEventListener('keydown', handleKey);
+            closeButton.focus();
             const observer = new MutationObserver(() => {
                 if (!document.body.contains(viewer)) {
                     document.removeEventListener('keydown', handleKey);
@@ -11827,7 +11614,7 @@
                     event.stopPropagation();
                     const index = Number(button.dataset.branchVideoIndex || -1);
                     if (!Number.isInteger(index) || index < 0) return;
-                    openBranchGameEvolutionVideo(getVm(index));
+                    openGameEvolutionVideo(getVm(index));
                 });
             });
         }
@@ -13158,49 +12945,27 @@
             };
         }
 
-        function buildMobileQuizTargetUrl() {
-            try {
-                const url = new URL(window.location.href);
-                if (url.protocol !== 'http:' && url.protocol !== 'https:') {
-                    return POP_QUIZ_MOBILE_PUBLIC_URL;
-                }
-                if (/dual-screen\.html$/i.test(url.pathname)) {
-                    url.pathname = url.pathname.replace(/dual-screen\.html$/i, 'index.html');
-                }
-                url.hash = '';
-                url.searchParams.delete('layout');
-                url.searchParams.set('storyline', POP_QUIZ_MOBILE_STORYLINE_ID);
-                url.searchParams.set('quiz', POP_QUIZ_MOBILE_QUERY_VALUE);
-                url.searchParams.set('source', 'screen_link');
-                url.searchParams.set('campaign', POP_QUIZ_MOBILE_CAMPAIGN);
-                return url.href;
-            } catch (_) {
-                return POP_QUIZ_MOBILE_PUBLIC_URL;
-            }
-        }
-
-        function buildQuizMobileEntry() {
-            const title = uiText('10-question mobile challenge', '10 题手机挑战');
-            const note = uiText(
-                'Scan to enter the mobile pop-quiz. Your score can be used to claim a souvenir.',
-                '扫码进入 10 题手机端快速问答，凭成绩领取纪念品。'
+        function buildPqCourseEntry() {
+            const pqTitle = uiText('PQ AI literacy course', 'PQ AI 通识课');
+            const pqNote = uiText(
+                'Scan with WeChat to open the PQ AI literacy course.',
+                '使用微信扫码进入 PQ AI 通识课。'
             );
-            const qrAlt = uiText(
-                'QR code for the 10-question mobile pop-quiz mini program',
-                '10 题手机端快速问答小程序二维码'
+            const pqQrAlt = uiText(
+                'WeChat mini program code for the PQ AI literacy course',
+                'PQ AI 通识课微信小程序码'
             );
-            const targetUrl = buildMobileQuizTargetUrl();
 
             return `
-                <div class="quick-quiz-mobile-entry">
-                    <div class="quick-quiz-mobile-copy">
-                        <span class="quick-quiz-mobile-kicker">${escapeHtml(uiText('Mini program', '小程序入口'))}</span>
-                        <span class="quick-quiz-mobile-title">${escapeHtml(title)}</span>
-                        <span class="quick-quiz-mobile-note">${escapeHtml(note)}</span>
+                <div class="quick-quiz-pq-entry">
+                    <div class="quick-quiz-pq-copy">
+                        <span class="quick-quiz-pq-kicker">${escapeHtml(uiText('WeChat mini program', '微信小程序'))}</span>
+                        <span class="quick-quiz-pq-title">${escapeHtml(pqTitle)}</span>
+                        <span class="quick-quiz-pq-note">${escapeHtml(pqNote)}</span>
                     </div>
-                    <a class="quick-quiz-mobile-qr-link" href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer">
-                        <img class="quick-quiz-mobile-qr" src="${escapeHtml(POP_QUIZ_MOBILE_QR_URL)}" alt="${escapeHtml(qrAlt)}">
-                    </a>
+                    <span class="quick-quiz-pq-qr-frame">
+                        <img class="quick-quiz-pq-qr" src="${escapeHtml(PQ_MINI_PROGRAM_QR_URL)}" alt="${escapeHtml(pqQrAlt)}">
+                    </span>
                 </div>
             `;
         }
@@ -13229,257 +12994,12 @@
                     `).join('')}
                 </div>
                 <div class="quick-quiz-feedback" aria-live="polite"></div>
-                ${buildQuizMobileEntry()}
+                ${buildPqCourseEntry()}
             `;
 
             container.querySelectorAll('.quick-quiz-option').forEach((button) => {
                 button.addEventListener('click', () => applyQuizAnswer(container, displayQuiz, Number(button.dataset.answerIndex)));
             });
-        }
-
-        function isMobileQuizRequest() {
-            return getRequestedQuizMode().toLowerCase() === POP_QUIZ_MOBILE_QUERY_VALUE;
-        }
-
-        function buildMobileQuizItems() {
-            const sourceMilestones = getStorylineMilestones(POP_QUIZ_MOBILE_STORYLINE_ID);
-            return sourceMilestones.map((milestone, index) => {
-                const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
-                    ? window.MilestoneView.normalizeMilestone(milestone, index, sourceMilestones)
-                    : buildFallbackVm(milestone, index);
-                const quiz = getQuizItems(vm)[0];
-                if (!quiz) return null;
-                return {
-                    ...shuffleQuizOptions(quiz),
-                    sourceTitle: vm.title || '',
-                    sourceYear: vm.year || '',
-                    sourceMilestoneId: vm.raw && vm.raw.id ? vm.raw.id : '',
-                    sourceArchiveEventId: vm.raw && vm.raw.archiveEventId ? vm.raw.archiveEventId : '',
-                    selectedIndex: null
-                };
-            }).filter(Boolean).slice(0, POP_QUIZ_MOBILE_QUESTION_COUNT);
-        }
-
-        function getMobileQuizCampaign() {
-            return getSearchParam('campaign') || POP_QUIZ_MOBILE_CAMPAIGN;
-        }
-
-        function trackMobileQuizLanding() {
-            if (!analytics || !isMobileQuizRequest()) return;
-            const source = getSearchParam('source');
-            if (source && source !== 'qr') return;
-            analytics.trackOnce(
-                `qr-landing:${getMobileQuizCampaign()}`,
-                'qr_landing',
-                {
-                    campaign: getMobileQuizCampaign(),
-                    source: source || 'legacy_qr_url',
-                    storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID
-                }
-            );
-        }
-
-        function trackMobileQuizStart(restarted) {
-            if (!mobileQuizState) return;
-            trackAnalyticsEvent('mobile_quiz_start', {
-                campaign: getMobileQuizCampaign(),
-                storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
-                attempt: mobileQuizState.attempt,
-                restarted: Boolean(restarted),
-                quiz_count: mobileQuizState.items.length
-            });
-        }
-
-        function trackMobileQuizImpressions() {
-            if (!mobileQuizState) return;
-            mobileQuizState.items.forEach((item) => {
-                if (mobileQuizState.impressedQuizIds.has(item.id)) return;
-                mobileQuizState.impressedQuizIds.add(item.id);
-                trackAnalyticsEvent('quiz_impression', {
-                    quiz_id: item.id,
-                    milestone_id: item.sourceMilestoneId,
-                    archive_event_id: item.sourceArchiveEventId,
-                    storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
-                    surface: 'mobile'
-                });
-            });
-        }
-
-        function trackMobileQuizCompletion() {
-            if (!mobileQuizState || mobileQuizState.completionTracked) return;
-            const score = getMobileQuizScore();
-            if (!score.total || score.answered !== score.total) return;
-            mobileQuizState.completionTracked = true;
-            trackAnalyticsEvent('mobile_quiz_complete', {
-                campaign: getMobileQuizCampaign(),
-                storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
-                attempt: mobileQuizState.attempt,
-                answered: score.answered,
-                correct: score.correct,
-                total: score.total
-            });
-        }
-
-        function getMobileQuizScore() {
-            const items = mobileQuizState && Array.isArray(mobileQuizState.items) ? mobileQuizState.items : [];
-            const answered = items.filter((item) => Number.isInteger(item.selectedIndex)).length;
-            const correct = items.filter((item) => item.selectedIndex === item.answerIndex).length;
-            return { answered, correct, total: items.length };
-        }
-
-        function renderMobileQuizScore() {
-            if (!refs.mobileQuizScore) return;
-            const score = getMobileQuizScore();
-            refs.mobileQuizScore.textContent = `${score.correct}/${score.total || POP_QUIZ_MOBILE_QUESTION_COUNT}`;
-        }
-
-        function renderMobileQuizState() {
-            if (!refs.mobileQuizApp || !refs.mobileQuizList || !mobileQuizState) return;
-
-            const items = mobileQuizState.items;
-            const optionLabels = ['A', 'B', 'C', 'D', 'E'];
-            const score = getMobileQuizScore();
-            trackMobileQuizImpressions();
-
-            refs.mobileQuizEyebrow.textContent = uiText('AI100 Pop Quiz', 'AI100 快速问答');
-            refs.mobileQuizTitle.textContent = uiText('10-question mobile challenge', '10 题手机挑战');
-            refs.mobileQuizSubtitle.textContent = uiText(
-                'Answer on your phone. Show the final score to claim a souvenir.',
-                '请在手机端答题，完成后凭最终成绩领取纪念品。'
-            );
-            refs.mobileQuizReset.textContent = uiText('Restart', '重新答题');
-            refs.mobileQuizExit.textContent = uiText('Back to Show', '返回展览');
-            renderMobileQuizScore();
-
-            if (!items.length) {
-                refs.mobileQuizList.innerHTML = `<div class="mobile-quiz-result"><strong>${escapeHtml(uiText('No quiz data', '暂无问答数据'))}</strong><span>${escapeHtml(uiText('Please check AI100 quiz content.', '请检查 AI100 问答内容。'))}</span></div>`;
-                return;
-            }
-
-            const resultHtml = score.answered === score.total
-                ? `<div class="mobile-quiz-result"><strong>${escapeHtml(uiText(`Final score: ${score.correct}/${score.total}`, `最终成绩：${score.correct}/${score.total}`))}</strong><span>${escapeHtml(uiText('Keep this screen open for the souvenir checkpoint.', '请保留此页面用于纪念品领取核验。'))}</span></div>`
-                : '';
-
-            refs.mobileQuizList.innerHTML = items.map((item, questionIndex) => {
-                const answered = Number.isInteger(item.selectedIndex);
-                const source = [item.sourceYear, item.sourceTitle].filter(Boolean).join(' · ');
-                const feedback = answered
-                    ? item.selectedIndex === item.answerIndex
-                        ? uiText('Correct', '答对了')
-                        : uiText(`Answer: ${item.options[item.answerIndex] || ''}`, `正确答案：${item.options[item.answerIndex] || ''}`)
-                    : '';
-
-                return `
-                    <article class="mobile-quiz-card${answered ? ' is-answered' : ''}" data-question-index="${questionIndex}">
-                        <div class="mobile-quiz-card-top">
-                            <span>${escapeHtml(uiText(`Question ${questionIndex + 1}`, `第 ${questionIndex + 1} 题`))}</span>
-                            <span class="mobile-quiz-source">${escapeHtml(source)}</span>
-                        </div>
-                        <div class="mobile-quiz-question">${escapeHtml(item.question)}</div>
-                        <div class="mobile-quiz-options" role="group" aria-label="${escapeHtml(uiText('Mobile quiz options', '手机问答选项'))}">
-                            ${item.options.map((option, optionIndex) => {
-                                const isSelected = item.selectedIndex === optionIndex;
-                                const isCorrect = answered && optionIndex === item.answerIndex;
-                                const isWrong = answered && isSelected && optionIndex !== item.answerIndex;
-                                const stateClass = [
-                                    isCorrect ? 'is-correct-answer' : '',
-                                    isWrong ? 'is-wrong-answer' : ''
-                                ].filter(Boolean).join(' ');
-                                return `
-                                    <button class="mobile-quiz-option ${stateClass}" type="button" data-question-index="${questionIndex}" data-option-index="${optionIndex}"${answered ? ' disabled' : ''}>
-                                        <span class="mobile-quiz-index">${escapeHtml(optionLabels[optionIndex] || String(optionIndex + 1))}</span>
-                                        <span>${escapeHtml(option)}</span>
-                                    </button>
-                                `;
-                            }).join('')}
-                        </div>
-                        ${feedback ? `<div class="mobile-quiz-feedback"><strong>${escapeHtml(feedback)}</strong>${item.explanation ? `<br>${escapeHtml(item.explanation)}` : ''}</div>` : ''}
-                    </article>
-                `;
-            }).join('') + resultHtml;
-
-            refs.mobileQuizList.querySelectorAll('.mobile-quiz-option:not(:disabled)').forEach((button) => {
-                button.addEventListener('click', () => {
-                    answerMobileQuiz(
-                        Number(button.dataset.questionIndex),
-                        Number(button.dataset.optionIndex)
-                    );
-                });
-            });
-        }
-
-        function openMobileQuiz() {
-            if (!refs.mobileQuizApp) return;
-            clearIdleAdvanceTimer();
-            closeQuizModal();
-            closeRegionPicker();
-            if (analytics) analytics.endMilestoneView('mobile_quiz');
-            mobileQuizState = {
-                items: buildMobileQuizItems(),
-                attempt: 1,
-                completionTracked: false,
-                impressedQuizIds: new Set()
-            };
-            trackMobileQuizLanding();
-            trackMobileQuizStart(false);
-            document.body.classList.add('mobile-quiz-active');
-            refs.mobileQuizApp.classList.remove('is-hidden');
-            renderMobileQuizState();
-            refs.mobileQuizApp.scrollTop = 0;
-        }
-
-        function answerMobileQuiz(questionIndex, optionIndex) {
-            const items = mobileQuizState && Array.isArray(mobileQuizState.items) ? mobileQuizState.items : [];
-            const item = items[questionIndex];
-            if (!item || Number.isInteger(item.selectedIndex)) return;
-            item.selectedIndex = optionIndex;
-            trackAnalyticsEvent('quiz_answer', {
-                quiz_id: item.id,
-                milestone_id: item.sourceMilestoneId,
-                archive_event_id: item.sourceArchiveEventId,
-                storyline_id: POP_QUIZ_MOBILE_STORYLINE_ID,
-                surface: 'mobile',
-                correct: item.selectedIndex === item.answerIndex,
-                attempt: mobileQuizState.attempt
-            });
-            trackMobileQuizCompletion();
-            renderMobileQuizState();
-        }
-
-        function resetMobileQuiz() {
-            if (!mobileQuizState) {
-                openMobileQuiz();
-                return;
-            }
-            mobileQuizState.items = buildMobileQuizItems();
-            mobileQuizState.attempt += 1;
-            mobileQuizState.completionTracked = false;
-            mobileQuizState.impressedQuizIds = new Set();
-            trackMobileQuizStart(true);
-            renderMobileQuizState();
-            if (refs.mobileQuizApp) refs.mobileQuizApp.scrollTop = 0;
-        }
-
-        function closeMobileQuiz() {
-            if (!refs.mobileQuizApp) return;
-            refs.mobileQuizApp.classList.add('is-hidden');
-            document.body.classList.remove('mobile-quiz-active');
-            mobileQuizState = null;
-
-            try {
-                const url = new URL(window.location.href);
-                url.searchParams.delete('quiz');
-                url.searchParams.delete('source');
-                url.searchParams.delete('campaign');
-                window.history.replaceState(null, '', url);
-            } catch (_) {}
-
-            startAnalyticsMilestoneView(getVm(currentIndex), { navigationSource: 'mobile_quiz_exit' });
-            restartIdleAdvanceTimer();
-        }
-
-        function hasOpenMobileQuiz() {
-            return Boolean(refs.mobileQuizApp && !refs.mobileQuizApp.classList.contains('is-hidden'));
         }
 
         function scoreQuizMaterial(item) {
@@ -13805,13 +13325,8 @@
         function getAchievementSources(rawMilestone) {
             const papers = rawMilestone && Array.isArray(rawMilestone.papers)
                 ? rawMilestone.papers.map((paper) => {
-                    const rawJournal = paper && paper.journal;
-                    const journalFallback = rawJournal && typeof rawJournal === 'object'
-                        ? rawJournal.en || rawJournal.zh || ''
-                        : rawJournal;
-                    const journal = String(lx(rawJournal) || journalFallback || '').trim();
                     return {
-                        type: journal ? uiText(`Paper · ${journal}`, `论文 · ${journal}`) : uiText('Paper', '论文'),
+                        type: uiText('Paper', '论文'),
                         label: paper.title,
                         url: paper.url
                     };
@@ -13821,10 +13336,23 @@
                 ? rawMilestone.achievement.sources
                 : [];
             const seenUrls = new Set();
+            const seenTitles = new Set();
+            const normalizeTitle = (value) => String(value || '')
+                .normalize('NFKC')
+                .toLowerCase()
+                .replace(/[\s《》〈〉“”‘’"'`·:：,，.。!?！？()（）[\]【】{}\-–—_/\\]+/g, '');
+            const getTitleKeys = (label) => {
+                const values = label && typeof label === 'object'
+                    ? [label.zh, label.en]
+                    : [label];
+                return values.map(normalizeTitle).filter(Boolean);
+            };
             return [...papers, ...sources].filter((source) => {
                 if (!source || !source.url || !lx(source.label)) return false;
-                if (seenUrls.has(source.url)) return false;
+                const titleKeys = getTitleKeys(source.label);
+                if (seenUrls.has(source.url) || titleKeys.some((key) => seenTitles.has(key))) return false;
                 seenUrls.add(source.url);
+                titleKeys.forEach((key) => seenTitles.add(key));
                 return true;
             });
         }
@@ -15335,8 +14863,11 @@
                 .filter((item) => item && item.type === 'image' && item.url)
                 .map((item) => item.url);
             const photos = sortPhotosForDisplay(vm.photos);
+            const configuredDemoImage = isGamingMilestone(vm && vm.raw)
+                ? String(vm.raw && vm.raw.achievement && vm.raw.achievement.demoImage || '').trim()
+                : '';
             const seen = new Set();
-            return [...visualImages, ...photos].map((url) => String(url || '').trim()).filter((url) => {
+            return [...visualImages, ...photos, configuredDemoImage].map((url) => String(url || '').trim()).filter((url) => {
                 if (!url || seen.has(url)) return false;
                 seen.add(url);
                 return true;
@@ -15346,7 +14877,7 @@
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
-            return sideImageUrl ? candidates.filter((url) => url !== sideImageUrl) : candidates;
+            return window.GamingMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
         }
 
         function getUiPrimaryImageMeta(vm, imageUrl) {
@@ -15364,10 +14895,24 @@
         const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
         const UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO = 1.35;
 
+        function findHumanisticExplainerImage(vm, images) {
+            if (!isHumanisticMilestone(vm && vm.raw)) return '';
+            return images.find((url) => isExplainerMedia(vm, url)) || '';
+        }
+
         function getUiMediaVisualImage(vm, images = getUiImageCandidates(vm)) {
             const eventId = vm && (vm.id || (vm.raw && vm.raw.id)) || '';
             const overrideUrl = UI_MEDIA_VISUAL_OVERRIDES[eventId];
             if (overrideUrl && images.includes(overrideUrl)) return overrideUrl;
+            const humanisticExplainer = findHumanisticExplainerImage(vm, images);
+            if (humanisticExplainer) return humanisticExplainer;
+            if (isGamingMilestone(vm && vm.raw)) {
+                const gameplayImage = window.GamingMediaSelection.findGameplayMedia(images, (url) => {
+                    const meta = getConfiguredImageMetaEntry(vm, url) || {};
+                    return meta.role;
+                });
+                if (gameplayImage) return gameplayImage;
+            }
             const diagram = images.find((url) => isDiagramImage(url));
             if (diagram) return diagram;
             return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
@@ -15512,9 +15057,63 @@
             return getAchievementKeyConcepts(raw);
         }
 
-        function buildUiMediaHtml(vm) {
+        const UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN = /(?:^|\/)sample-go-game\.gif(?:[?#]|$)/i;
+
+        function getUiGameEvolutionModule(raw) {
+            const module = getAchievementGameEvolutionModule(raw);
+            if (!module) return null;
+            if (UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN.test(module.url)) {
+                return null;
+            }
+            return module;
+        }
+
+        function buildUiGameEvolutionHtml(vm, module) {
+            const title = module.title || vm.title || uiText('Game evolution clip', '棋局演化短片');
+            const description = module.description || uiText(
+                'Replay the curated game-state sequence.',
+                '重放策展棋局状态序列。'
+            );
+            const posterUrl = module.poster || getUiMediaVisualImage(vm);
+            const posterHtml = posterUrl
+                ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(title)}">`
+                : '';
+            return `
+                <button class="ui-media-video" type="button" data-ui-game-evolution="true" aria-label="${escapeHtml(title)}">
+                    ${posterHtml}
+                    <span class="ui-media-video-play">${escapeHtml(uiText('Replay', '重放'))}</span>
+                    <span class="ui-media-video-quote">${escapeHtml(description)}</span>
+                    <span class="ui-media-video-time">
+                        <span>${escapeHtml(uiText('Game record', '棋谱'))}</span>
+                        <span>${escapeHtml(module.duration || uiText('Interactive', '可交互'))}</span>
+                    </span>
+                </button>
+            `;
+        }
+
+        function buildUiDemoVisualHtml(raw, demoVisualHtml) {
+            if (!stripHtml(demoVisualHtml)) return '';
+            const caption = getAchievementField(
+                raw,
+                'demo',
+                getAchievementField(raw, 'artifact', tx('archiveImage'))
+            );
+            return `
+                <div class="ui-side-demo-visual">
+                    ${demoVisualHtml}
+                    <div class="ui-side-visual-caption">${escapeHtml(caption)}</div>
+                </div>
+            `;
+        }
+
+        function buildUiMediaHtml(vm, { forceStaticImage = false } = {}) {
             const raw = vm.raw || {};
-            if (vm.videoEmbedUrl) {
+            const gameEvolutionModule = getUiGameEvolutionModule(raw);
+            if (gameEvolutionModule && !forceStaticImage) {
+                return buildUiGameEvolutionHtml(vm, gameEvolutionModule);
+            }
+
+            if (vm.videoEmbedUrl && !forceStaticImage) {
                 const posterUrl = getUiMediaVisualImage(vm);
                 const posterMeta = posterUrl ? buildArchivePhotoMeta(vm, posterUrl) : null;
                 const posterHtml = posterUrl
@@ -15539,20 +15138,16 @@
                 return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
             }
 
+            const demoVisualHtml = buildAchievementDemoVisualHtml(raw);
+            const demoMediaHtml = buildUiDemoVisualHtml(raw, demoVisualHtml);
+            if (demoMediaHtml && isGamingMilestone(raw)) return demoMediaHtml;
+
             const fallbackConceptHtml = buildUiConceptFeatureCardsHtml(getUiFallbackConceptSections(raw));
             if (fallbackConceptHtml) {
                 return fallbackConceptHtml;
             }
 
-            const demoVisualHtml = buildAchievementDemoVisualHtml(raw);
-            if (stripHtml(demoVisualHtml)) {
-                return `
-                    <div class="ui-side-demo-visual">
-                        ${demoVisualHtml}
-                        <div class="ui-side-visual-caption">${escapeHtml(getAchievementField(raw, 'demo', getAchievementField(raw, 'artifact', tx('archiveImage'))))}</div>
-                    </div>
-                `;
-            }
+            if (demoMediaHtml) return demoMediaHtml;
 
             return '';
         }
@@ -15620,8 +15215,12 @@
 
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
-            const mediaHtml = buildUiMediaHtml(vm);
-            const mediaUsesConceptFallback = Boolean(mediaHtml && !vm.videoEmbedUrl && !mediaHtml.includes('ui-side-visual') && !mediaHtml.includes('ui-side-demo-visual'));
+            const isHumanisticCycle = isHumanisticMilestone(raw);
+            const mediaHtml = buildUiMediaHtml(vm, { forceStaticImage: isHumanisticCycle });
+            const mediaHasDedicatedVisual = mediaHtml.includes('ui-media-video')
+                || mediaHtml.includes('ui-side-visual')
+                || mediaHtml.includes('ui-side-demo-visual');
+            const mediaUsesConceptFallback = Boolean(mediaHtml && !mediaHasDedicatedVisual);
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
                 buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
@@ -15763,6 +15362,76 @@
             `;
         }
 
+        function fitUiDetailLocation() {
+            if (!refs.uiBrowserMain) return;
+            const topLine = refs.uiBrowserMain.querySelector('.ui-detail-topline');
+            const context = refs.uiBrowserMain.querySelector('.ui-detail-context');
+            const place = refs.uiBrowserMain.querySelector('.ui-detail-place');
+            if (!topLine || !context || !place) return;
+
+            context.style.removeProperty('--ui-detail-context-width');
+            place.classList.remove('is-measuring');
+            if (!window.matchMedia('(min-width: 1200px)').matches) return;
+
+            const topLineStyle = window.getComputedStyle(topLine);
+            const readLayoutWidth = (property) => Number.parseFloat(topLineStyle.getPropertyValue(property)) || 0;
+            const baseContextWidth = readLayoutWidth('--ui-detail-context-base-width');
+            const contextWidthLimit = readLayoutWidth('--ui-detail-context-max-width');
+            const titleMinWidth = readLayoutWidth('--ui-detail-title-min-width');
+            const columnGap = Number.parseFloat(topLineStyle.columnGap) || 0;
+            if (!baseContextWidth || !contextWidthLimit || !titleMinWidth) return;
+
+            const availableContextWidth = topLine.clientWidth - columnGap - titleMinWidth;
+            const maxContextWidth = Math.max(
+                baseContextWidth,
+                Math.min(contextWidthLimit, availableContextWidth)
+            );
+            const applyContextWidth = (width) => {
+                context.style.setProperty('--ui-detail-context-width', `${Math.ceil(width)}px`);
+            };
+            const fitsInTwoLines = (width) => {
+                applyContextWidth(width);
+                place.classList.add('is-measuring');
+                const placeStyle = window.getComputedStyle(place);
+                const lineHeight = Number.parseFloat(placeStyle.lineHeight) || 0;
+                const fits = lineHeight > 0 && place.scrollHeight <= lineHeight * 2 + 1;
+                place.classList.remove('is-measuring');
+                return fits;
+            };
+
+            if (fitsInTwoLines(baseContextWidth)) return;
+            if (!fitsInTwoLines(maxContextWidth)) {
+                applyContextWidth(maxContextWidth);
+                return;
+            }
+
+            let low = baseContextWidth;
+            let high = maxContextWidth;
+            while (high - low > 1) {
+                const middle = (low + high) / 2;
+                if (fitsInTwoLines(middle)) {
+                    high = middle;
+                } else {
+                    low = middle;
+                }
+            }
+            applyContextWidth(high);
+        }
+
+        function scheduleUiDetailLocationFit() {
+            fitUiDetailLocation();
+            window.requestAnimationFrame(fitUiDetailLocation);
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(fitUiDetailLocation);
+            }
+        }
+
+        function refreshUiBrowserMeasurements() {
+            if (!refs.uiBrowserMain) return;
+            fitUiEventImages();
+            fitUiDetailLocation();
+        }
+
         function renderUiDetail() {
             ensureUiSelection();
             const vm = getVm(currentIndex);
@@ -15789,6 +15458,7 @@
             const locationText = buildLocationText(vm.location);
             const imageCaptionTitle = imageMeta.name || title;
             const imageCaptionDetail = imageMeta.role || '';
+            const sentimentTagHtml = buildUiSentimentTagHtml(raw);
             const detailImageHtml = imageUrl
                 ? `
                     <div class="ui-detail-image">
@@ -15814,7 +15484,10 @@
                                         <div class="ui-detail-place" title="${escapeHtml(locationText)}">${escapeHtml(locationText)}</div>
                                     </div>
                                     <div class="ui-detail-heading">
-                                        <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                        <div class="ui-detail-title-row">
+                                            <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                            ${sentimentTagHtml}
+                                        </div>
                                         <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>
@@ -15853,8 +15526,12 @@
                     }
                 }, { once: true });
             });
+            refs.uiBrowserMain.querySelectorAll('[data-ui-game-evolution]').forEach((button) => {
+                button.addEventListener('click', () => openGameEvolutionVideo(vm));
+            });
             bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
+            scheduleUiDetailLocationFit();
         }
 
         function openChronologyMilestone(eventId) {
@@ -15990,13 +15667,13 @@
             observer.observe(document.body, { childList: true });
         }
 
-        function renderPage(index, analyticsOptions = {}) {
+        function renderPage(index, renderOptions = {}) {
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
             if (isUiBrowserActive()) ensureUiSelection();
             const vm = getVm(currentIndex);
             startAnalyticsMilestoneView(vm, {
-                navigationSource: analyticsOptions.navigationSource || 'render',
-                eligible: analyticsOptions.eligible !== false
+                navigationSource: renderOptions.navigationSource || 'render',
+                eligible: renderOptions.eligible !== false
             });
             currentMilestoneViewedAt = Date.now();
             if (isUiBrowserActive() && uiBrowserMode !== 'detail') {
@@ -16004,7 +15681,9 @@
             } else {
                 markCompletionQuizView(vm);
             }
-            currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            if (!renderOptions.preserveArchiveIndex) {
+                currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+            }
             applyStaticTranslations();
             renderStorylineSelect();
             const branchTimelineActive = isBranchTimelineActive();
@@ -16433,10 +16112,6 @@
         }
 
         function handleIdleAutoAdvance() {
-            if (hasOpenMobileQuiz()) {
-                clearIdleAdvanceTimer();
-                return;
-            }
             if (milestoneList.length <= 1) {
                 clearIdleAdvanceTimer();
                 return;
@@ -16457,7 +16132,6 @@
         function registerUserActivity(event) {
             if (event && event.isTrusted === false) return;
             if (analytics) analytics.markInteraction();
-            if (hasOpenMobileQuiz()) return;
             restartIdleAdvanceTimer();
         }
 
@@ -16497,8 +16171,6 @@
             if (refs.quizModalContinue) refs.quizModalContinue.addEventListener('click', () => {
                 if (!refs.quizModalContinue.disabled) completeQuizModal();
             });
-            if (refs.mobileQuizReset) refs.mobileQuizReset.addEventListener('click', resetMobileQuiz);
-            if (refs.mobileQuizExit) refs.mobileQuizExit.addEventListener('click', closeMobileQuiz);
             if (refs.regionModalClose) refs.regionModalClose.addEventListener('click', closeRegionPicker);
             if (refs.regionModal) {
                 refs.regionModal.addEventListener('click', (event) => {
@@ -16508,12 +16180,14 @@
 
             window.addEventListener('resize', debounce(() => {
                 syncStageScale();
+                refreshUiBrowserMeasurements();
             }, 120));
             window.addEventListener('orientationchange', () => {
                 window.setTimeout(() => {
                     syncStageScale();
                     handleGlobeResize();
                     resetOrbitOverlay();
+                    refreshUiBrowserMeasurements();
                 }, 180);
             }, { passive: true });
             window.addEventListener('beforeunload', clearIdleAdvanceTimer);
@@ -16522,6 +16196,7 @@
             document.addEventListener('pointermove', registerUserActivity, { passive: true });
             document.addEventListener('click', registerUserActivity, { passive: true });
             document.addEventListener('wheel', registerUserActivity, { passive: true });
+            document.addEventListener('wheel', handlePageWheelFallback, { passive: true });
             document.addEventListener('touchstart', registerUserActivity, { passive: true });
             document.addEventListener('touchmove', registerUserActivity, { passive: true });
             document.addEventListener('touchstart', handlePortraitEdgeTouchStart, { passive: true });
@@ -16535,10 +16210,6 @@
 
             document.addEventListener('keydown', (event) => {
                 registerUserActivity(event);
-                if (hasOpenMobileQuiz()) {
-                    if (event.key === 'Escape') closeMobileQuiz();
-                    return;
-                }
                 if (hasOpenPhotoViewer()) return;
                 if (hasOpenStorylinePicker()) {
                     if (event.key === 'Escape') closeStorylinePicker();
@@ -16568,8 +16239,7 @@
                 vmCache.clear();
                 renderStorylineSelect();
                 renderAboutModal();
-                renderPage(currentIndex);
-                if (mobileQuizState) renderMobileQuizState();
+                renderPage(currentIndex, { preserveArchiveIndex: true });
             });
 
             syncStageScale();
@@ -16581,12 +16251,7 @@
                 requestedStorylineId && requestedStorylineId === activeStorylineId ? 'url' : 'default'
             );
             renderPage(currentIndex);
-            if (isMobileQuizRequest()) {
-                openMobileQuiz();
-            }
-            if (!mobileQuizState) {
-                restartIdleAdvanceTimer();
-            }
+            restartIdleAdvanceTimer();
         }
     </script>
 </body>

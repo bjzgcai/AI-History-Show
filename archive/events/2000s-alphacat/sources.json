@@ -40,6 +40,26 @@
     "purpose": "core-evidence"
   },
   {
+    "id": "source-i-chen-wu-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "吴毅成肖像（用户提供）",
+      "en": "I-Chen Wu portrait (user provided)"
+    },
+    "url": "resources/images/external/2000s-alphacat/i-chen-wu-portrait.jpg",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于“中国象棋引擎：搜索与学习型评估”事件的头像与肖像展示。",
+      "en": "The user supplied this photograph for the avatar and portrait displays in the Chinese Chess Engines event."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-xiangqi-overview",
     "type": "encyclopedia-entry",
     "label": {

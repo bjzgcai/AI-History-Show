@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-feng-hsiung-hsu-chm-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "许峰雄肖像，计算机历史博物馆",
+      "en": "Feng-Hsiung Hsu portrait, Computer History Museum"
+    },
+    "url": "https://www.computerhistory.org/chess/stl-431614f673cbf/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "CHM 页面将照片标注为 1997 年许峰雄肖像，来源为 IBM 档案馆。页面未声明开放再利用许可；依用户明确指示用于本项目。",
+      "en": "The CHM page identifies the image as a 1997 portrait of Feng-Hsiung Hsu and credits IBM Archives. No open reuse license is stated; the image is included at the user's explicit direction."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-deep-blue-system-paper",
     "type": "paper",
     "label": {
@@ -78,5 +98,45 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "historical-context"
+  },
+  {
+    "id": "source-garry-kasparov-commons-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "加里·卡斯帕罗夫新闻发布会肖像",
+      "en": "Garry Kasparov press-conference portrait"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Persconferentie_Grandmasters_Association_Garri_Kasparov,_Bestanddeelnr_934-1636.jpg",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "荷兰国家档案馆照片，由维基共享资源以 CC0 提供。",
+      "en": "Nationaal Archief photograph provided by Wikimedia Commons under CC0."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-deep-blue-game-6-commons",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局动画",
+      "en": "Deep Blue versus Kasparov, 1997 Game 6 animation"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "维基共享资源文件页标注 CC0，制作者为 Morn。",
+      "en": "The Wikimedia Commons file page identifies the work as CC0 and credits Morn."
+    },
+    "purpose": "image-provenance"
   }
 ]
