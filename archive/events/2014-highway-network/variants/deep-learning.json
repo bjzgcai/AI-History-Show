@@ -18,14 +18,12 @@
     "visualModules": [],
     "assetIds": [
         "asset-2014-highway-network-architecture-01",
-        "asset-2014-highway-network-people-01",
-        "asset-2014-highway-network-klaus-greff"
+        "asset-2014-highway-network-people-01"
     ],
     "sourceIds": [
         "source-highway-networks-paper",
         "source-resnet-follow-up-paper",
         "source-klaus-greff-homepage",
-        "source-klaus-greff-github",
         "source-juergen-schmidhuber-idsia"
     ],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
@@ -89,7 +87,7 @@
                 "en": "Co-author of Highway Networks",
                 "zh": "Highway Networks 共同作者"
             },
-            "avatar": "resources/images/external/2014-highway-network/klaus-greff-github.jpg",
+            "avatar": "",
             "avatarStyle": "",
             "figureType": "person"
         },
