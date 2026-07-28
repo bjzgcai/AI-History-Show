@@ -115,6 +115,31 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /class="ui-back-button"[^>]*aria-label="返回">返回<\/button>/,
+    'event details should expose a visible text back action before JavaScript initializes'
+);
+assert.match(
+    indexHtml,
+    /\.ui-back-button\s*\{[\s\S]*?min-width:\s*124px[\s\S]*?height:\s*42px[\s\S]*?background:\s*var\(--accent\)[\s\S]*?font-size:\s*17px/,
+    'the desktop event-detail back action should use a prominent text-button treatment'
+);
+assert.match(
+    indexHtml,
+    /@media \(min-width:\s*1200px\)[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.ui-browser-main\s*\{[\s\S]*?height:\s*878px/,
+    'desktop event details should leave a separate gap above the back action'
+);
+assert.match(
+    indexHtml,
+    /\.single-stage\.is-ui-browser\.is-ui-detail \.ui-back-button\s*\{[\s\S]*?position:\s*fixed[\s\S]*?min-width:\s*112px[\s\S]*?height:\s*var\(--touch-target\)/,
+    'the mobile event-detail back action should remain prominent and touchable'
+);
+assert.match(
+    indexHtml,
+    /const backLabel = uiText\('Back', '返回'\);[\s\S]*?uiBackButton\.textContent = backLabel[\s\S]*?setAttribute\('aria-label', backLabel\)/,
+    'the visible back action should follow the current page language'
+);
+assert.match(
+    indexHtml,
     /unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(allMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
     'the default overview should merge storyline variants by canonical Archive event'
 );
@@ -172,6 +197,16 @@ assert.match(
     chronologyCss,
     /\.chrono-card-strip i[\s\S]*?flex:\s*1[\s\S]*?\.chrono-card-memberships i[\s\S]*?background:\s*var\(--membership-color\)/,
     'multi-storyline cards should use segmented color strips and visible membership dots'
+);
+assert.match(
+    chronologyCss,
+    /\.chrono-card-media\.is-portrait::before\s*\{[\s\S]*?background-image:\s*var\(--portrait-backdrop-image[\s\S]*?background-size:\s*cover[\s\S]*?\.chrono-card-media\.is-portrait img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?object-position:\s*center top[\s\S]*?\.chrono-card-media\.is-portrait\.is-cover-safe img\s*\{[\s\S]*?object-fit:\s*cover[\s\S]*?\.chrono-event-card:hover \.chrono-card-media\.is-portrait img,[\s\S]*?transform:\s*none/,
+    'portrait cards should fill their backdrop while preserving the complete foreground head'
+);
+assert.match(
+    chronologySource,
+    /function canPortraitCoverWithoutVerticalCrop\([\s\S]*?safeImageWidth \/ safeImageHeight >= safeFrameWidth \/ safeFrameHeight[\s\S]*?function observeImages\(scroller\)[\s\S]*?--portrait-backdrop-image[\s\S]*?classList\.toggle\([\s\S]*?'is-cover-safe'/,
+    'portrait fit should be selected after the image dimensions are available'
 );
 assert.match(
     chronologyCss,

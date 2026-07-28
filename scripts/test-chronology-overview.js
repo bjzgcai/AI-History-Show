@@ -269,6 +269,16 @@ assert.equal(
     false,
     'architecture images should keep the standard cover treatment'
 );
+assert.equal(
+    overview.canPortraitCoverWithoutVerticalCrop(800, 1067, 259, 176),
+    false,
+    'portrait-oriented images should retain contain fitting to preserve the complete head'
+);
+assert.equal(
+    overview.canPortraitCoverWithoutVerticalCrop(1190, 795, 259, 176),
+    true,
+    'wide person images should use cover when the full image height remains visible'
+);
 console.log('PASS chronology portraits use metadata-aware face-preserving media');
 
 console.log('All chronology overview checks passed.');
