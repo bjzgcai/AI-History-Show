@@ -3984,15 +3984,34 @@
             right: 14px;
             width: 38px;
             height: 38px;
+            padding: 0;
             border-radius: 50%;
             border: 1px solid rgba(244, 239, 229, 0.2);
             background: rgba(0, 0, 0, 0.32);
             color: rgba(244, 239, 229, 0.72);
-            font-size: 24px;
-            line-height: 1;
+            display: grid;
+            place-items: center;
             cursor: pointer;
             touch-action: manipulation;
             z-index: 2;
+        }
+
+        .about-modal-close::before,
+        .about-modal-close::after {
+            content: '';
+            grid-area: 1 / 1;
+            width: 14px;
+            height: 2px;
+            border-radius: 999px;
+            background: currentColor;
+        }
+
+        .about-modal-close::before {
+            transform: rotate(45deg);
+        }
+
+        .about-modal-close::after {
+            transform: rotate(-45deg);
         }
 
         .about-modal-close:hover,
@@ -5485,6 +5504,20 @@
             overflow-wrap: anywhere;
         }
 
+        .ui-avatar-strip .ui-avatar .ui-avatar-face > .figure-avatar-fallback {
+            width: calc(100% - 8px);
+            max-width: calc(100% - 8px);
+            text-align: center;
+        }
+
+        .ui-avatar-strip .ui-avatar .ui-avatar-face > .figure-avatar-fallback.is-squeezed {
+            width: max-content;
+            max-width: none;
+            white-space: nowrap;
+            transform: scaleX(var(--avatar-fallback-scale, 1));
+            transform-origin: center;
+        }
+
         .ui-avatar-name,
         .ui-avatar-role {
             display: block;
@@ -5860,7 +5893,9 @@
             width: 100%;
             height: 100%;
             display: block;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: center;
+            background: #050505;
             opacity: 0.56;
             filter: saturate(0.72) contrast(1.08);
         }
@@ -5885,6 +5920,13 @@
             height: 100%;
             border: 0;
             display: block;
+        }
+
+        .ui-media-video video,
+        video.ui-media-video-media {
+            object-fit: contain;
+            object-position: center;
+            background: #050505;
         }
 
         .ui-media-video-play {
@@ -6008,9 +6050,12 @@
 
         .ui-side-visual-stage img {
             display: block;
-            width: 100%;
+            width: auto;
             height: auto;
+            max-width: 100%;
+            max-height: 100%;
             object-fit: contain;
+            object-position: center;
         }
 
         .ui-side-visual-caption {
@@ -6640,6 +6685,11 @@
             .ui-detail-image-nav {
                 min-height: var(--touch-target);
                 touch-action: manipulation;
+            }
+
+            .about-modal-close {
+                width: var(--touch-target);
+                height: var(--touch-target);
             }
 
             .storyline-trigger,
@@ -8693,7 +8743,7 @@
 
     <div class="about-modal is-hidden" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle">
         <div class="about-modal-shell">
-            <button class="about-modal-close" id="aboutModalClose" type="button" aria-label="关闭">×</button>
+            <button class="about-modal-close" id="aboutModalClose" type="button" aria-label="关闭"></button>
             <aside class="about-nav-panel">
                 <div>
                     <div class="about-modal-eyebrow" id="aboutModalEyebrow">ABOUT</div>
@@ -10114,7 +10164,8 @@
                 const styleAttr = avatarSource.style ? ` style="${avatarSource.style}"` : '';
                 return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || tx('keyFigure'))}"${styleAttr}>`;
             }
-            return `<span>${escapeHtml(initials(figure.name))}</span>`;
+            const fallbackLabel = initials(figure.name);
+            return `<span class="figure-avatar-fallback">${escapeHtml(fallbackLabel)}</span>`;
         }
 
         function isPortraitLikePhoto(url) {
@@ -14892,6 +14943,8 @@
         const UI_MEDIA_VISUAL_OVERRIDES = {
             'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
         };
+        const UI_CHRONOLOGY_IMAGE_OVERRIDES = {};
+        const uiChronologyImageCache = new Map();
         const UI_DETAIL_IMAGE_SWIPE_THRESHOLD = 45;
         const UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO = 1.35;
 
@@ -14916,6 +14969,25 @@
             const diagram = images.find((url) => isDiagramImage(url));
             if (diagram) return diagram;
             return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
+        }
+
+        function getChronologyCardImage(milestone) {
+            const eventId = milestone && milestone.id ? milestone.id : '';
+            const canonicalEventId = getCanonicalEventId(milestone);
+            const overrideUrl = UI_CHRONOLOGY_IMAGE_OVERRIDES[eventId]
+                || UI_CHRONOLOGY_IMAGE_OVERRIDES[canonicalEventId];
+            if (overrideUrl) return overrideUrl;
+            const cacheKey = eventId || canonicalEventId;
+            if (cacheKey && uiChronologyImageCache.has(cacheKey)) {
+                return uiChronologyImageCache.get(cacheKey);
+            }
+
+            const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
+                ? window.MilestoneView.normalizeMilestone(milestone, 0, [milestone])
+                : buildFallbackVm(milestone, 0);
+            const imageUrl = getUiDetailImages(vm)[0] || '';
+            if (cacheKey) uiChronologyImageCache.set(cacheKey, imageUrl);
+            return imageUrl;
         }
 
         function renderUiDetailFromSelection(options = {}) {
@@ -15426,10 +15498,60 @@
             }
         }
 
+        function getAvatarFallbackLineCounts(label) {
+            const textNode = label && label.firstChild;
+            if (!textNode || textNode.nodeType !== Node.TEXT_NODE) return [];
+            const lineCounts = new Map();
+            const value = textNode.nodeValue || '';
+            for (let offset = 0; offset < value.length;) {
+                const codePoint = value.codePointAt(offset);
+                const characterLength = codePoint > 0xffff ? 2 : 1;
+                const character = value.slice(offset, offset + characterLength);
+                const range = document.createRange();
+                range.setStart(textNode, offset);
+                range.setEnd(textNode, offset + characterLength);
+                const rect = range.getBoundingClientRect();
+                if (rect.width > 0 && rect.height > 0 && character.trim()) {
+                    const lineKey = Math.round(rect.top);
+                    lineCounts.set(lineKey, (lineCounts.get(lineKey) || 0) + 1);
+                }
+                offset += characterLength;
+            }
+            return Array.from(lineCounts.entries())
+                .sort((a, b) => a[0] - b[0])
+                .map((entry) => entry[1]);
+        }
+
+        function fitAvatarFallbackLabels(root = refs.uiBrowserMain) {
+            if (!root) return;
+            root.querySelectorAll('.ui-avatar-face > .figure-avatar-fallback').forEach((label) => {
+                label.classList.remove('is-squeezed');
+                label.style.removeProperty('--avatar-fallback-scale');
+                const lineCounts = getAvatarFallbackLineCounts(label);
+                if (lineCounts.length < 2 || lineCounts[lineCounts.length - 1] !== 1) return;
+
+                label.classList.add('is-squeezed');
+                const face = label.parentElement;
+                const availableWidth = Math.max(1, face.clientWidth - 8);
+                const naturalWidth = Math.max(1, label.scrollWidth);
+                const scale = Math.max(0.72, Math.min(1, availableWidth / naturalWidth));
+                label.style.setProperty('--avatar-fallback-scale', scale.toFixed(3));
+            });
+        }
+
+        function scheduleAvatarFallbackFit() {
+            fitAvatarFallbackLabels();
+            window.requestAnimationFrame(() => fitAvatarFallbackLabels());
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(() => fitAvatarFallbackLabels());
+            }
+        }
+
         function refreshUiBrowserMeasurements() {
             if (!refs.uiBrowserMain) return;
-            fitUiEventImages();
+            if (typeof fitUiEventImages === 'function') fitUiEventImages();
             fitUiDetailLocation();
+            fitAvatarFallbackLabels();
         }
 
         function renderUiDetail() {
@@ -15532,6 +15654,7 @@
             bindUiDetailImageSwipe(refs.uiBrowserMain.querySelector('.ui-detail-image'), detailImages.length);
             bindUiSidePanelScrollProgress(refs.uiBrowserMain.querySelector('.ui-side-panel'));
             scheduleUiDetailLocationFit();
+            scheduleAvatarFallbackFit();
         }
 
         function openChronologyMilestone(eventId) {
@@ -15571,6 +15694,7 @@
             chronologyOverview.update({
                 milestones: buildUnifiedMilestones(),
                 selectedEventId: uiSelectedEventId,
+                resolveCardImage: getChronologyCardImage,
                 localize: lx,
                 locale: window.I18n && typeof window.I18n.getLocale === 'function'
                     ? window.I18n.getLocale()
@@ -16133,6 +16257,57 @@
             if (event && event.isTrusted === false) return;
             if (analytics) analytics.markInteraction();
             restartIdleAdvanceTimer();
+        }
+
+        let pageWheelFallbackRaf = 0;
+        let pageWheelFallbackDelta = 0;
+        let pageWheelFallbackStart = 0;
+
+        function canNestedScrollerHandleWheel(target, deltaY) {
+            let element = target && target.nodeType === 1 ? target : target && target.parentElement;
+            while (element && element !== document.body && element !== document.documentElement) {
+                const style = window.getComputedStyle(element);
+                const scrollable = /^(auto|scroll|overlay)$/.test(style.overflowY)
+                    && element.scrollHeight > element.clientHeight + 1;
+                if (scrollable) {
+                    const maxScroll = element.scrollHeight - element.clientHeight;
+                    if ((deltaY < 0 && element.scrollTop > 1)
+                        || (deltaY > 0 && element.scrollTop < maxScroll - 1)) {
+                        return true;
+                    }
+                }
+                element = element.parentElement;
+            }
+            return false;
+        }
+
+        function handlePageWheelFallback(event) {
+            if (!event || event.ctrlKey || isBranchTimelineActive()) return;
+            const deltaX = Number.isFinite(event.deltaX) ? event.deltaX : 0;
+            let deltaY = Number.isFinite(event.deltaY) ? event.deltaY : 0;
+            if (!deltaY || Math.abs(deltaY) <= Math.abs(deltaX)) return;
+            if (event.deltaMode === 1) deltaY *= 16;
+            if (event.deltaMode === 2) deltaY *= window.innerHeight;
+
+            const target = event.target && event.target.nodeType === 1 ? event.target : event.target && event.target.parentElement;
+            if (target && target.closest('.photo-viewer, .quiz-modal:not(.is-hidden), .storyline-modal:not(.is-hidden), .about-modal:not(.is-hidden), .region-modal:not(.is-hidden)')) return;
+            if (canNestedScrollerHandleWheel(target, deltaY)) return;
+
+            const scrollingElement = document.scrollingElement || document.documentElement;
+            const maxScroll = Math.max(0, scrollingElement.scrollHeight - scrollingElement.clientHeight);
+            const currentScroll = scrollingElement.scrollTop;
+            if (!maxScroll || (deltaY < 0 && currentScroll <= 0) || (deltaY > 0 && currentScroll >= maxScroll - 1)) return;
+
+            pageWheelFallbackDelta += deltaY;
+            if (pageWheelFallbackRaf) return;
+            pageWheelFallbackStart = currentScroll;
+            pageWheelFallbackRaf = window.requestAnimationFrame(() => {
+                pageWheelFallbackRaf = 0;
+                const pendingDelta = pageWheelFallbackDelta;
+                pageWheelFallbackDelta = 0;
+                if (Math.abs(scrollingElement.scrollTop - pageWheelFallbackStart) >= 1) return;
+                window.scrollBy({ top: pendingDelta, left: 0, behavior: 'auto' });
+            });
         }
 
         if (!milestoneList.length) {

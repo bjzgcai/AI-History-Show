@@ -162,6 +162,16 @@ const mobileRequirements = [
     {
         pattern: /window\.addEventListener\('popstate', handleUiBrowserHistoryPop\)/,
         message: 'browser history popstate is bound for mobile detail navigation'
+    },
+    {
+        pattern:
+            /function handlePageWheelFallback\(event\)[\s\S]*?canNestedScrollerHandleWheel\(target, deltaY\)[\s\S]*?document\.addEventListener\('wheel', handlePageWheelFallback/,
+        message: 'the page wheel fallback is defined before it is bound'
+    },
+    {
+        pattern:
+            /function fitAvatarFallbackLabels\(root = refs\.uiBrowserMain\)[\s\S]*?lineCounts\[lineCounts\.length - 1\] !== 1[\s\S]*?classList\.add\('is-squeezed'\)[\s\S]*?--avatar-fallback-scale/,
+        message: 'single-character fallback avatar orphans are centered on one squeezed line'
     }
 ];
 
