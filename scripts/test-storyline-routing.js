@@ -487,6 +487,36 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /const UI_DETAIL_IMAGE_AUTOPLAY_MS = 3 \* 1000;[\s\S]*?function scheduleUiDetailImageAutoplay\(\)[\s\S]*?document\.hidden[\s\S]*?prefers-reduced-motion: reduce[\s\S]*?window\.setTimeout[\s\S]*?setUiDetailImageIndex\(uiDetailImageIndex \+ 1, activeImages\)/,
+    'detail image collections should advance every three seconds while the page is visible'
+);
+assert.match(
+    indexHtml,
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.textContent[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /function bindUiDetailImageSwipe|UI_DETAIL_IMAGE_SWIPE_THRESHOLD|UI_DETAIL_IMAGE_SWIPE_AXIS_RATIO/,
+    'detail image navigation should not retain drag or swipe handling'
+);
+assert.match(
+    indexHtml,
+    /function buildUiDetailImageEdgeButtonsHtml\(detailImages\)[\s\S]*?data-ui-image-step="-1"[\s\S]*?上一张图片[\s\S]*?data-ui-image-step="1"[\s\S]*?下一张图片[\s\S]*?querySelectorAll\('\[data-ui-image-step\]'\)[\s\S]*?setUiDetailImageIndex\(uiDetailImageIndex \+ imageStep, detailImages\)/,
+    'multi-image details should expose previous and next edge buttons'
+);
+assert.match(
+    indexHtml,
+    /\.ui-detail-image-edge\s*\{[\s\S]*?opacity:\s*0[\s\S]*?pointer-events:\s*none[\s\S]*?\.ui-detail-image-stage:hover \.ui-detail-image-edge,[\s\S]*?opacity:\s*1[\s\S]*?@media \(hover:\s*none\)[\s\S]*?\.ui-detail-image-edge\s*\{[\s\S]*?opacity:\s*1/,
+    'image edge buttons should appear on desktop hover and remain visible on touch devices'
+);
+assert.match(
+    indexHtml,
+    /function bindUiDetailImageAutoplayPause\(imageStage, imageCount\)[\s\S]*?mouseenter[\s\S]*?mouseleave[\s\S]*?focusin[\s\S]*?focusout[\s\S]*?function renderUiDetail\(\)[\s\S]*?bindUiDetailImageAutoplayPause[\s\S]*?scheduleUiDetailImageAutoplay\(\)[\s\S]*?visibilitychange[\s\S]*?document\.hidden\) clearUiDetailImageAutoplay/,
+    'detail image autoplay should pause for navigation controls and when the document is hidden'
+);
+assert.match(
+    indexHtml,
     /const player = button\.querySelector\('video'\)[\s\S]*?const playback = player\.play\(\)/,
     'direct AI100 commentary videos should start playback from the user click'
 );
