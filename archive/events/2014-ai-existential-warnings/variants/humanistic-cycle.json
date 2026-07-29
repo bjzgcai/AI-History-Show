@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。",
-        "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast."
+        "zh": "<p>2012 年后，深度学习突破、互联网平台的数据规模和自动驾驶等自主系统，让 AI 再次成为高速进步的公共叙事。2014 年 10 月，埃隆·马斯克在公开活动中把高级 AI 描述为重大的存在性威胁；同年 12 月，斯蒂芬·霍金在 BBC 采访中警告，能够持续自我改进的完整 AI 可能给人类带来严重后果。2015 年初，未来生命研究所的公开信又把讨论推进到安全研究、验证方法和社会影响。这些材料共同使长期 AI 风险从哲学与专业圈层进入主流媒体和机构议程。</p><p>警告提出了一个跨尺度问题：今天的系统错误多为局部损害，但如果未来系统获得更广泛的自主性、资源访问和自我改进能力，控制失败是否会同步放大？支持者主张在能力成熟前研究鲁棒性、价值对齐和治理机制；质疑者则担心遥远灾难叙事会遮蔽歧视、监控、劳动影响和权力集中等现实伤害。后来的专家调查也显示，研究者对能力时间表与风险概率存在显著分歧。因此，这一节点应被理解为公共话语和研究议程的转向，而不是某个技术预测已经得到证明。</p>",
+        "en": "<p>After 2012, deep-learning breakthroughs, internet-scale data and autonomous projects returned AI to a story of rapid progress. In 2014 Elon Musk described advanced AI as an existential threat, while Stephen Hawking warned the BBC about systems able to improve themselves. A Future of Life Institute letter in early 2015 connected these concerns to safety research and social impact, moving long-term risk into mainstream media.</p><p>The warnings asked whether control failures could grow as systems gained autonomy and resources. Supporters called for robustness, alignment and governance research; critics argued that distant catastrophe could distract from discrimination, surveillance, labor effects and concentrated power. Surveys later showed wide disagreement on timelines and probabilities. This event marks a change in public discourse and research priorities, not proof of one technical forecast.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",

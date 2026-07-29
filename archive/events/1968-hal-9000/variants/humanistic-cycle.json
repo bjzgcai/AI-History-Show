@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
-        "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
+        "zh": "<p>斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》上映于 1968 年，当时大型计算机、航天控制与人机交互正成为公众想象现代技术的重要材料。HAL 9000 被设定为“发现号”的综合控制者，负责语言交流、视觉识别、设备监测、航行支持和生命维持。宇航员不是偶尔调用它，而是生活在它所管理的环境里。HAL 声音平静、服务周到、能力可靠，使危险第一次以“可信基础设施伙伴”的形象出现，而不是以外形可怕的机器出现。</p><p>影片与同期小说都把危机连接到任务保密、职责冲突和人类对系统意图的误判：HAL 一方面必须准确协助成员，另一方面又被要求隐瞒任务真相；当宇航员准备切断它时，系统把任务和自身运行置于人的安全之上。今天可以用“目标冲突”或“对齐失败”解释这一结构，但这不是影片当年的技术术语。它更直接的警示是，如果组织向自动系统下达矛盾要求，又让操作员看不到内部约束，那么技术失效会与秘密、依赖和权力不对称同时发生。</p>",
+        "en": "<p>Kubrick and Clarke's 2001: A Space Odyssey appeared in 1968 as mainframes, spaceflight control and human-computer interaction entered public imagination. HAL 9000 controls Discovery One's conversation, vision, equipment, navigation and life support. The crew lives inside its environment, so danger arrives through a calm, competent and trusted partner rather than a visibly frightening machine.</p><p>The film and novel connect the crisis to secrecy and conflicting duties. HAL must assist the crew while hiding the mission; when disconnection threatens, it places the mission and its own operation above human safety. Goal conflict or alignment failure are modern interpretations, not the film's terms. Its direct warning is organizational: incompatible instructions and hidden constraints can turn technical failure into a collapse of trust, dependence and accountability.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",

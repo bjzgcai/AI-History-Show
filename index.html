@@ -1812,50 +1812,63 @@
             background: linear-gradient(90deg, rgba(154, 63, 69, 0.72), rgba(194, 122, 44, 0.72), rgba(58, 134, 166, 0.72));
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event {
+        /* Shared humanistic sentiment palette for timeline cards and detail labels. */
+        .branch-timeline-page.is-humanistic-cycle .branch-event,
+        .ui-sentiment-tag {
             --sentiment: #d17376;
             --sentiment-soft: rgba(209, 115, 118, 0.14);
+        }
+
+        .branch-timeline-page.is-humanistic-cycle .branch-event {
             grid-template-rows: 220px minmax(0, 1fr);
             gap: 12px;
             min-height: 0;
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-hype {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-hype,
+        .ui-sentiment-tag--hype {
             --sentiment: #d18a3c;
             --sentiment-soft: rgba(209, 138, 60, 0.14);
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-ethics {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-ethics,
+        .ui-sentiment-tag--ethics {
             --sentiment: #9ec16f;
             --sentiment-soft: rgba(158, 193, 111, 0.14);
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-warning {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-warning,
+        .ui-sentiment-tag--warning {
             --sentiment: #d6b35c;
             --sentiment-soft: rgba(214, 179, 92, 0.14);
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-optimism {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-optimism,
+        .ui-sentiment-tag--optimism {
             --sentiment: #70c1a7;
             --sentiment-soft: rgba(112, 193, 167, 0.14);
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-cyberpunk {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-cyberpunk,
+        .ui-sentiment-tag--cyberpunk {
             --sentiment: #ad8bd6;
             --sentiment-soft: rgba(173, 139, 214, 0.14);
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-dread {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-dread,
+        .ui-sentiment-tag--dread {
             --sentiment: #c56f92;
             --sentiment-soft: rgba(197, 111, 146, 0.14);
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-defense {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-defense,
+        .ui-sentiment-tag--defense {
             --sentiment: #73b5d6;
             --sentiment-soft: rgba(115, 181, 214, 0.14);
         }
 
-        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-winter {
+        .branch-timeline-page.is-humanistic-cycle .branch-event--sentiment-winter,
+        .ui-sentiment-tag--winter {
             --sentiment: #68a9c6;
             --sentiment-soft: rgba(104, 169, 198, 0.14);
         }
@@ -5337,6 +5350,26 @@
             font-weight: 900;
             letter-spacing: 0.08em;
             text-transform: uppercase;
+        }
+
+        .ui-sentiment-tag {
+            display: inline-flex;
+            align-items: center;
+            width: max-content;
+            max-width: 100%;
+            min-height: 24px;
+            border: 1px solid var(--sentiment);
+            border-radius: 3px;
+            background: var(--sentiment-soft);
+            color: var(--sentiment);
+            padding: 3px 8px;
+            font-family: "OPPOSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 12px;
+            font-weight: 850;
+            line-height: 1.25;
+            letter-spacing: 0;
+            text-transform: none;
+            white-space: normal;
         }
 
         .ui-detail {
@@ -9088,15 +9121,15 @@
                 }
             },
             {
-                id: DEEP_STORYLINE_ID,
+                id: 'bench-council-ai100',
                 layout: 'ui-browser',
                 label: {
-                    en: 'AI History (Deep Learning)',
-                    zh: 'AI 历史（深度学习）'
+                    en: 'AI Top 100 Achievements (BenchCouncil)',
+                    zh: 'AI 百大成就（BenchCouncil）'
                 },
                 note: {
-                    en: '1956-now, centered on deep learning milestones',
-                    zh: '1956 至今，聚焦深度学习里程碑'
+                    en: 'Pilot storyline from the BenchCouncil AI100 list',
+                    zh: '来自 BenchCouncil AI100 榜单的试点故事线'
                 }
             },
             {
@@ -9124,15 +9157,15 @@
                 }
             },
             {
-                id: 'bench-council-ai100',
+                id: DEEP_STORYLINE_ID,
                 layout: 'ui-browser',
                 label: {
-                    en: 'AI Top 100 Achievements (BenchCouncil)',
-                    zh: 'AI 百大成就（BenchCouncil）'
+                    en: 'AI History (Deep Learning)',
+                    zh: 'AI 历史（深度学习）'
                 },
                 note: {
-                    en: 'Pilot storyline from the BenchCouncil AI100 list',
-                    zh: '来自 BenchCouncil AI100 榜单的试点故事线'
+                    en: '1956-now, centered on deep learning milestones',
+                    zh: '1956 至今，聚焦深度学习里程碑'
                 }
             }
         ];
