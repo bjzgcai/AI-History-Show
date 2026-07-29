@@ -160,6 +160,26 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?AI_HISTORY_MAP_VARIANT_PRIORITY\.includes\(normalizedStorylineId\)/,
+    'all configured chronology storylines should map back to their matching overview filter'
+);
+assert.match(
+    indexHtml,
+    /const CHRONOLOGY_FILTER_PARAM = 'storylineFilter'[\s\S]*?function syncChronologyFilterUrl\(url\)[\s\S]*?searchParams\.set\(CHRONOLOGY_FILTER_PARAM, chronologyFilterStorylineId\)[\s\S]*?function getUiHistoryState[\s\S]*?storylineFilterId: chronologyFilterStorylineId/,
+    'chronology filters should persist in detail URLs and browser history state'
+);
+assert.match(
+    indexHtml,
+    /function handleUiBrowserHistoryPop\(event\)[\s\S]*?uiState\.storylineFilterId[\s\S]*?getChronologyVisibleMilestones\(\)[\s\S]*?findMilestoneIndexByEventId\(uiState\.eventId, detailMilestones\)/,
+    'browser history should restore the filter before rebuilding detail navigation'
+);
+assert.match(
+    indexHtml,
+    /function setChronologyFilterStorylineId\(storylineId, options = \{\}\)[\s\S]*?getChronologyFilterStorylineId\(storylineId\)[\s\S]*?options\.replaceHistory[\s\S]*?replaceUiLevelHistoryEntry\(\)[\s\S]*?onFilterChange: \(storylineId\) => \{[\s\S]*?setChronologyFilterStorylineId\(storylineId, \{ replaceHistory: true \}\)/,
+    'overview filter changes should update the current URL and history entry'
+);
+assert.match(
+    indexHtml,
     /function openChronologyMilestone\(eventId\)[\s\S]*?detailMilestones = getChronologyVisibleMilestones\(\)[\s\S]*?milestoneList = detailMilestones/,
     'opening a chronology card should use the active filter only for detail navigation'
 );
@@ -390,7 +410,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /if \(isUiBrowserActive\(\) && uiBrowserMode !== 'detail'\) \{[\s\S]*?resetCompletionQuizView\(\)[\s\S]*?\} else \{[\s\S]*?markCompletionQuizView\(vm\)/,
+    /const uiBrowserActive = isUiBrowserActive\(\)[\s\S]*?const isChronologyOverview = uiBrowserActive && uiBrowserMode !== 'detail'[\s\S]*?if \(isChronologyOverview\) \{[\s\S]*?resetCompletionQuizView\(\)[\s\S]*?\} else \{[\s\S]*?markCompletionQuizView\(vm\)/,
     'the chronology overview should reset quiz dwell time while event details start it'
 );
 console.log('PASS unified UI boot state and storyline detail URL normalization');
