@@ -366,17 +366,17 @@
         function markInteraction() {
             if (!isEnabled()) return;
             const interactionAt = now();
-            const sessionExpired =
-                lastInteractionAt === null || interactionAt - lastInteractionAt >= config.sessionTimeoutMs;
+            const isFirstInteraction = lastInteractionAt === null;
+            const sessionExpired = !isFirstInteraction && interactionAt - lastInteractionAt >= config.sessionTimeoutMs;
             if (!hasInteraction) {
                 hasInteraction = true;
             }
             if (!sessionStarted || sessionExpired) {
                 sessionStarted = true;
-                sessionId = createSessionId(scope);
+                if (sessionExpired) sessionId = createSessionId(scope);
                 send('session_start', {
                     entry_path: scope.location ? scope.location.pathname : '',
-                    session_reason: lastInteractionAt === null ? 'first_interaction' : 'inactivity_timeout'
+                    session_reason: isFirstInteraction ? 'first_interaction' : 'inactivity_timeout'
                 });
             }
             lastInteractionAt = interactionAt;

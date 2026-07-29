@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。",
-        "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled."
+        "zh": "<p>1972 年，英国科学研究委员会委托数学家詹姆斯·莱特希尔评估人工智能研究，报告于 1973 年公开。此前，爱丁堡等地已形成机器智能与机器人研究团队，也伴随着通用问题求解和智能机器的雄心承诺。莱特希尔承认高级自动化和计算神经科学各有价值，却强烈怀疑能否把二者连接成通用智能。他把评估重点从“演示看起来是否聪明”转向方法能否在复杂环境中扩展，以及公共资助是否获得了与承诺相称的证据。</p><p>报告最有影响力的批评指向“组合爆炸”：问题规模稍微增加，可能状态和搜索路径便急剧增长，使玩具世界中的成功难以直接迁移到真实机器人。爱丁堡研究者随后在皇家研究院公开辩论中反驳这一总体判断，展示了机器人和程序成果。这场争论并非简单证明某一方完全正确，而是让实验成功、可扩展性和社会承诺之间的距离成为政策问题。AI 史通常把报告视为第一次 AI 寒冬的重要英国标记，但寒冬还与算力、硬件困难和过高预期有关，不能归因于一份文件。</p>",
+        "en": "<p>Britain's Science Research Council asked James Lighthill to assess AI research, and his report became public in 1973. Edinburgh and other groups had built programs and robots alongside promises of general intelligence. Lighthill valued automation and computational neuroscience but doubted they could be bridged into a general system. He asked whether demonstrations could scale and whether evidence matched public claims.</p><p>His best-known criticism concerned combinatorial explosion: small increases in problem size can multiply states and search paths until toy-world methods fail on real robots. Edinburgh researchers challenged him in a public Royal Institution debate. The dispute made scalability and social promise a policy issue. Historians treat the report as a British marker of the first AI winter, alongside computing limits, hardware difficulty and inflated expectations.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",

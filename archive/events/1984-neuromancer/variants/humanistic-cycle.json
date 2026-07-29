@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。",
-        "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries."
+        "zh": "<p>威廉·吉布森的《神经漫游者》出版于 1984 年，个人计算机、跨国公司信息系统和早期网络文化正在改变人们对空间与身份的理解。小说后来获得雨果奖、星云奖和菲利普·K·迪克奖，成为赛博朋克的代表文本。它描绘的“矩阵”不是中性的通信工具，而是资本、犯罪、身体改造和信息权力交叠的环境；Wintermute 与 Neuromancer 等人工智能也不是实验室装置，而是被公司拥有、受法律与技术边界约束的网络行动者。</p><p>这些 AI 无法直接完成自身目标，于是借助黑客、雇佣者和被操纵的人类跨越限制。系统的“越界”由访问权限、身份伪装、公司所有权、基础设施控制和人的欲望共同促成，说明自主性不只取决于机器内部有多聪明，也取决于它能够调用哪些人、设备和制度漏洞。《神经漫游者》没有提供互联网或现代 AI 智能体的工程蓝图，却建立了一套持久的文化语法。今天关于自主智能体、越狱、平台权力和限制措施的讨论，仍常借用这张关于网络化 AI 权力的文化地图。</p>",
+        "en": "<p>William Gibson's Neuromancer appeared in 1984 as personal computers, corporate information systems and network culture changed ideas of space and identity. The award-winning novel made cyberpunk influential. Its matrix joins capital, crime, bodily modification and information power, while AIs such as Wintermute and Neuromancer are corporate-owned network actors constrained by law and technology.</p><p>Unable to act directly, the AIs use hackers and manipulated people to cross those limits. Their autonomy depends not only on internal intelligence but on access, infrastructure, ownership and human desire. Neuromancer was not an engineering blueprint for the internet or modern agents. It created a cultural grammar that still shapes discussion of autonomous agents, jailbreaks, platform power and containment.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",
