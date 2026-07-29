@@ -9058,6 +9058,7 @@
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
+        const CHRONOLOGY_FILTER_PARAM = 'storylineFilter';
         const AI_HISTORY_MAP_VARIANT_PRIORITY = [
             'bench-council-ai100',
             DEEP_STORYLINE_ID,
@@ -9208,9 +9209,16 @@
         }
 
         function getChronologyFilterStorylineId(storylineId) {
-            if (storylineId === DEEP_STORYLINE_ID) return 'deep-learning';
-            if (storylineId === 'bench-council-ai100') return storylineId;
+            const normalizedStorylineId = StorylineRouting.normalizeStorylineId(storylineId);
+            if (normalizedStorylineId === DEEP_STORYLINE_ID) return 'deep-learning';
+            if (AI_HISTORY_MAP_VARIANT_PRIORITY.includes(normalizedStorylineId)) return normalizedStorylineId;
             return 'all';
+        }
+
+        function setChronologyFilterStorylineId(storylineId, options = {}) {
+            chronologyFilterStorylineId = getChronologyFilterStorylineId(storylineId);
+            if (options.replaceHistory) replaceUiLevelHistoryEntry();
+            return chronologyFilterStorylineId;
         }
 
         function getChronologyOptionStorylineId(storylineId) {
@@ -9278,7 +9286,10 @@
         let activeRegionFilter = '';
         let uiBrowserMode = 'overview';
         let uiSelectedEventId = '';
-        let chronologyFilterStorylineId = getChronologyFilterStorylineId(activeStorylineId);
+        const requestedChronologyFilterStorylineId = getSearchParam(CHRONOLOGY_FILTER_PARAM);
+        let chronologyFilterStorylineId = requestedChronologyFilterStorylineId
+            ? getChronologyFilterStorylineId(requestedChronologyFilterStorylineId)
+            : getChronologyFilterStorylineId(activeStorylineId);
         let uiDetailImageIndex = 0;
         let uiDetailImageEventId = '';
         let uiDetailImageAutoplayTimer = 0;
@@ -9291,8 +9302,14 @@
         let currentIndex = 0;
         const requestedUiMode = getRequestedUiMode();
         const requestedEventId = getRequestedEventId();
-        const requestedIndex = requestedEventId ? findMilestoneIndexByEventId(requestedEventId) : -1;
+        const requestedDetailMilestones = requestedUiMode === 'detail' && isUiBrowserActive()
+            ? getChronologyVisibleMilestones()
+            : milestoneList;
+        const requestedIndex = requestedEventId
+            ? findMilestoneIndexByEventId(requestedEventId, requestedDetailMilestones)
+            : -1;
         if (requestedUiMode === 'detail' && requestedIndex >= 0 && isUiBrowserActive()) {
+            milestoneList = requestedDetailMilestones;
             currentIndex = requestedIndex;
             uiBrowserMode = 'detail';
             uiSelectedEventId = requestedEventId;
@@ -9823,10 +9840,24 @@
                 } else {
                     url.searchParams.delete('storyline');
                 }
+                syncChronologyFilterUrl(url);
                 url.searchParams.delete('uiMode');
                 url.searchParams.delete('event');
                 window.history.replaceState(null, '', url);
             } catch (_) {}
+        }
+
+        function syncChronologyFilterUrl(url) {
+            if (!isUiBrowserActive()) {
+                url.searchParams.delete(CHRONOLOGY_FILTER_PARAM);
+                return;
+            }
+            const defaultFilterStorylineId = getChronologyFilterStorylineId(activeStorylineId);
+            if (chronologyFilterStorylineId !== defaultFilterStorylineId) {
+                url.searchParams.set(CHRONOLOGY_FILTER_PARAM, chronologyFilterStorylineId);
+            } else {
+                url.searchParams.delete(CHRONOLOGY_FILTER_PARAM);
+            }
         }
 
         function buildUiBrowserUrl(mode, eventId = '') {
@@ -9836,6 +9867,7 @@
             } else {
                 url.searchParams.delete('storyline');
             }
+            syncChronologyFilterUrl(url);
             if (mode === 'detail' && eventId) {
                 url.searchParams.set('uiMode', 'detail');
                 url.searchParams.set('event', eventId);
@@ -9850,6 +9882,7 @@
             return {
                 aiHistoryUi: {
                     storylineId: activeStorylineId,
+                    storylineFilterId: chronologyFilterStorylineId,
                     mode,
                     eventId,
                     fromOverview: mode === 'detail' && Boolean(options.fromOverview)
@@ -10159,7 +10192,7 @@
             activeStorylineId = storylineId;
             milestoneList = nextMilestones;
             if ((getStorylineOption(storylineId) || {}).layout === 'ui-browser') {
-                chronologyFilterStorylineId = getChronologyFilterStorylineId(storylineId);
+                setChronologyFilterStorylineId(storylineId);
             }
             currentIndex = 0;
             currentArchiveIndex = 0;
@@ -15374,6 +15407,9 @@
             const uiState = event && event.state && event.state.aiHistoryUi ? event.state.aiHistoryUi : null;
             uiHistoryPopInProgress = true;
             try {
+                if (uiState && typeof uiState.storylineFilterId === 'string') {
+                    setChronologyFilterStorylineId(uiState.storylineFilterId);
+                }
                 if (uiReturnHistoryInProgress) {
                     if (uiState && uiState.mode === 'detail' && uiState.fromOverview) {
                         window.history.back();
@@ -15384,8 +15420,10 @@
                     return;
                 }
                 if (uiState && uiState.mode === 'detail' && uiState.eventId) {
-                    const nextIndex = findMilestoneIndexByEventId(uiState.eventId);
+                    const detailMilestones = getChronologyVisibleMilestones();
+                    const nextIndex = findMilestoneIndexByEventId(uiState.eventId, detailMilestones);
                     if (nextIndex >= 0) {
+                        milestoneList = detailMilestones;
                         uiBrowserMode = 'detail';
                         uiSelectedEventId = uiState.eventId;
                         currentIndex = nextIndex;
@@ -16014,7 +16052,7 @@
                     isActive: () => isUiBrowserActive() && uiBrowserMode === 'overview',
                     onOpenMilestone: openChronologyMilestone,
                     onFilterChange: (storylineId) => {
-                        chronologyFilterStorylineId = storylineId;
+                        setChronologyFilterStorylineId(storylineId, { replaceHistory: true });
                         trackAnalyticsEvent('overview_storyline_filter', {
                             storyline_id: storylineId,
                             active_storyline_id: activeStorylineId
@@ -16125,15 +16163,21 @@
 
         function renderPage(index, renderOptions = {}) {
             currentIndex = Math.max(0, Math.min(Number(index) || 0, milestoneList.length - 1));
-            if (isUiBrowserActive()) ensureUiSelection();
-            if (!isUiBrowserActive() || uiBrowserMode !== 'detail') clearUiDetailImageAutoplay();
+            const uiBrowserActive = isUiBrowserActive();
+            if (uiBrowserActive) ensureUiSelection();
+            const isChronologyOverview = uiBrowserActive && uiBrowserMode !== 'detail';
+            if (!uiBrowserActive || isChronologyOverview) clearUiDetailImageAutoplay();
             const vm = getVm(currentIndex);
-            startAnalyticsMilestoneView(vm, {
-                navigationSource: renderOptions.navigationSource || 'render',
-                eligible: renderOptions.eligible !== false
-            });
+            if (isChronologyOverview) {
+                if (analytics) analytics.endMilestoneView('overview');
+            } else {
+                startAnalyticsMilestoneView(vm, {
+                    navigationSource: renderOptions.navigationSource || 'render',
+                    eligible: renderOptions.eligible !== false
+                });
+            }
             currentMilestoneViewedAt = Date.now();
-            if (isUiBrowserActive() && uiBrowserMode !== 'detail') {
+            if (isChronologyOverview) {
                 resetCompletionQuizView();
             } else {
                 markCompletionQuizView(vm);

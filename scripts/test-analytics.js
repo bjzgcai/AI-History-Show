@@ -134,10 +134,13 @@ assert.equal(storylineEvents[0].eventData.storyline_id, 'unified-ai-history');
 storylineAnalytics.markInteraction();
 storylineScope.advance(2400);
 storylineAnalytics.endStorylineView('switch');
+const storylineSession = storylineEvents.find((event) => event.eventName === 'session_start');
 const storylineLeave = storylineEvents.find((event) => event.eventName === 'storyline_leave');
+assert.equal(storylineEvents[0].eventData.session_id, storylineSession.eventData.session_id);
+assert.equal(storylineLeave.eventData.session_id, storylineSession.eventData.session_id);
 assert.equal(storylineLeave.eventData.duration_seconds, 2);
 assert.equal(storylineLeave.eventData.leave_reason, 'switch');
-console.log('PASS storyline views record immediate entry and engaged duration');
+console.log('PASS storyline views keep one session ID and record engaged duration');
 
 const root = path.join(__dirname, '..');
 for (const fileName of ['index.html', 'dual-screen.html']) {
@@ -157,6 +160,11 @@ for (const eventName of ['quiz_impression', 'quiz_answer', 'storyline_picker_ope
 }
 assert.match(indexHtml, /startAnalyticsStorylineView\(\s*activeStorylineId/);
 assert.match(indexHtml, /analyticsSource: 'picker'/);
+assert.match(
+    indexHtml,
+    /const uiBrowserActive = isUiBrowserActive\(\)[\s\S]*const isChronologyOverview = uiBrowserActive && uiBrowserMode !== ['"]detail['"][\s\S]*if \(isChronologyOverview\) \{[\s\S]*analytics\.endMilestoneView\(['"]overview['"]\);[\s\S]*\} else \{[\s\S]*startAnalyticsMilestoneView/,
+    'index.html should not count chronology overview dwell time as a milestone view'
+);
 
 const analyticsConfigSource = fs.readFileSync(path.join(root, 'shared', 'analytics-config.js'), 'utf8');
 const umamiConfigSource = fs.readFileSync(path.join(root, 'shared', 'umami-config.js'), 'utf8');
