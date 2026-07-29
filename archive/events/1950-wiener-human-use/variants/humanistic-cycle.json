@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。",
-        "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines."
+        "zh": "<p>诺伯特·维纳在二战期间参与防空火力控制研究，战后以《控制论》系统讨论动物与机器中的控制和通信。1950 年出版的《人有人的用处》面向更广泛的公众，把反馈、信息和自动化从数学与工程带入劳动、政治与道德讨论。此时“人工智能”尚未成为正式学科名称，但自动控制已经让机器能够比较当前状态与目标，并根据环境信号修正下一步行动。</p><p>维纳既看到反馈系统在医疗、生产和通信中的价值，也警告它们可能被用于战争、监控，或把劳动者压缩成流程中可替换的部件。问题不在于机器天然善恶，而在于谁为系统设定目标、指标忽略了哪些社会代价，以及受影响的人能否参与决策。他反对用“机器做出的决定”掩盖人的责任：设计者、管理者和公共机构仍须对目标、利益分配与纠错机制负责。今天关于算法管理、自动化决策和人在回路中的讨论，仍延续着这一框架。</p>",
+        "en": "<p>After wartime work on fire control, Norbert Wiener developed cybernetics as a study of control and communication in animals and machines. The Human Use of Human Beings, published for a broad audience in 1950, brought feedback, information and automation into debates about labor, politics and morality. AI was not yet a formal field, but machines could already compare their state with a goal and adjust through feedback.</p><p>Wiener valued these systems in medicine, production and communication while warning that they could serve warfare, surveillance or the treatment of workers as replaceable parts. The central questions were who defines the objective, which social costs are ignored and who can challenge a decision. Designers, managers and institutions remain responsible for goals, benefits and correction, a framework still visible in debates about automated decisions and human oversight.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",

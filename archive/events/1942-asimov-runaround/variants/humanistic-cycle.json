@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。",
-        "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language."
+        "zh": "<p>艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月的《惊奇科幻》，是机器人三定律首次完整同场出现的故事。阿西莫夫有意摆脱“机器天生邪恶、必然反叛”的单一叙事，把机器人写成由人类设计、受行为规则约束的工程产品。故事中的机器人斯必迪在水星任务里不断绕圈，并不是突然产生恶意，而是安全、服从命令与自我保护等不同职责的优先级在特定环境下形成了僵局。</p><p>这使机器人安全第一次以通俗形式呈现为规则设计和失效诊断问题：原则在抽象层面看似清楚，进入真实情境后却会因为信息不足、风险强度、命令措辞和规则冲突而产生意外行为。人类操作员必须从机器的行动反推它受到的约束。三定律并不是可以直接写入现实机器的工程规范，因为“伤害”“人类”和“命令”都需要被感知、解释和计算；但它留下了持久直觉：安全不能只依赖能力，设计者还必须处理优先级、边界案例与责任归属。</p>",
+        "en": "<p>Isaac Asimov's Runaround appeared in the March 1942 issue of Astounding Science Fiction and is the first story where the Three Laws of Robotics appear together. Instead of treating robots as inherently evil, Asimov presented them as engineered products constrained by human rules. On Mercury, Speedy runs in circles because ranked duties involving safety, obedience and self-preservation have entered a deadlock.</p><p>The story makes robot safety a problem of rule design and failure diagnosis. Clear principles can produce unexpected behavior when information is incomplete, danger varies or constraints conflict, so operators must infer hidden priorities from the machine's actions. The Three Laws cannot simply be installed in real robots: harm, human and command still require interpretation. Their durable insight is that safety also depends on priorities, edge cases and responsibility.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",

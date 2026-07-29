@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-28 09:39
+// 生成时间: 2026-07-29 09:35
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -68398,8 +68398,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "卡雷尔·恰佩克的剧作《罗素姆的万能机器人》把“机器人”一词带入现代文化，也把人工劳工变成工业焦虑的舞台意象。它关于“被制造者反噬制造者”的母题，为后来的 AI 讨论提供了劳工替代、服从边界与造物责任的持久隐喻。",
-      "en": "Karel Capek's play R.U.R. introduced the word \"robot\" into modern culture and made artificial workers a dramatic image of industrial anxiety. Its revolt-of-the-made theme gave later AI debates a durable metaphor for labor replacement, obedience, and creator responsibility."
+      "zh": "<p>卡雷尔·恰佩克的《罗素姆的万能机器人》于 1920 年出版，次年在捷克斯洛伐克登上舞台。剧作采用源自捷克语“robota”（劳役、苦工）的“robot”一词，把人工制造的劳动者与工厂制度直接联系起来。值得注意的是，原剧中的机器人并不是金属机器，而是被工业化生产的人工生命；企业以低成本、高产量和免除痛苦为理由制造它们，并把它们当作可以无限复制和替换的劳动力。</p><p>故事最终把技术问题转化为社会关系的反转：当人类放弃劳动、依赖被制造者并逃避创造者责任时，工具获得集体行动力，制造者也失去对生产体系的控制。恰佩克并未预言现代 AI 的算法或硬件，但他建立了一套至今仍有影响的文化语言，让公众能够同时讨论自动化、劳动替代、服从边界、人格资格与制度责任。这个节点的重要性不在于“科幻成真”，而在于它提醒我们，智能技术的风险往往也来自所有权和权力结构。</p>",
+      "en": "<p>Karel Capek's R.U.R. was published in 1920 and staged in Czechoslovakia the next year. Its word robot, derived from the Czech robota for compulsory labor or drudgery, tied manufactured workers to the factory system. These robots are not metal machines but industrially produced artificial life, sold as endlessly replaceable labor in the name of lower costs and greater output.</p><p>The drama turns invention into a reversal of social relations: humanity abandons work and responsibility until its tools gain collective agency and their makers lose control. Capek did not predict modern AI hardware or algorithms. He supplied a lasting vocabulary for automation, labor displacement, obedience, personhood and creator responsibility, showing that technological risk can also arise from ownership and power.</p>"
     },
     "figures": [
       {
@@ -68847,8 +68847,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月《惊奇科幻》，是机器人三定律首次完整同场出现的故事。这个节点不复述受版权保护的三定律原文，而是展示科幻如何把机器行为想象成一套规则层级，并在后来的 AI 安全语言中留下回声。",
-      "en": "Isaac Asimov's short story Runaround, published in the March 1942 issue of Astounding Science Fiction, is the first story where the Three Laws of Robotics appear together. For this branch, the point is not to quote the copyrighted laws, but to show how fiction turned machine behavior into a rule hierarchy that still echoes in AI safety language."
+      "zh": "<p>艾萨克·阿西莫夫的短篇小说《转圈圈》刊登于 1942 年 3 月的《惊奇科幻》，是机器人三定律首次完整同场出现的故事。阿西莫夫有意摆脱“机器天生邪恶、必然反叛”的单一叙事，把机器人写成由人类设计、受行为规则约束的工程产品。故事中的机器人斯必迪在水星任务里不断绕圈，并不是突然产生恶意，而是安全、服从命令与自我保护等不同职责的优先级在特定环境下形成了僵局。</p><p>这使机器人安全第一次以通俗形式呈现为规则设计和失效诊断问题：原则在抽象层面看似清楚，进入真实情境后却会因为信息不足、风险强度、命令措辞和规则冲突而产生意外行为。人类操作员必须从机器的行动反推它受到的约束。三定律并不是可以直接写入现实机器的工程规范，因为“伤害”“人类”和“命令”都需要被感知、解释和计算；但它留下了持久直觉：安全不能只依赖能力，设计者还必须处理优先级、边界案例与责任归属。</p>",
+      "en": "<p>Isaac Asimov's Runaround appeared in the March 1942 issue of Astounding Science Fiction and is the first story where the Three Laws of Robotics appear together. Instead of treating robots as inherently evil, Asimov presented them as engineered products constrained by human rules. On Mercury, Speedy runs in circles because ranked duties involving safety, obedience and self-preservation have entered a deadlock.</p><p>The story makes robot safety a problem of rule design and failure diagnosis. Clear principles can produce unexpected behavior when information is incomplete, danger varies or constraints conflict, so operators must infer hidden priorities from the machine's actions. The Three Laws cannot simply be installed in real robots: harm, human and command still require interpretation. Their durable insight is that safety also depends on priorities, edge cases and responsibility.</p>"
     },
     "figures": [
       {
@@ -69311,8 +69311,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "诺伯特·维纳的《人有人的用处》在 1950 年把控制论、反馈和自动化带入公共伦理讨论。它是这条分支里的前 AI 节点：焦虑并不指向某个名为 AI 的系统，而是指向把控制、劳动和决策委托给机器。",
-      "en": "Norbert Wiener's The Human Use of Human Beings brought cybernetics, feedback and automation into public moral debate in 1950. It is a pre-AI node for this branch: the anxiety is not about a named AI system, but about delegating control, labor and decision-making to machines."
+      "zh": "<p>诺伯特·维纳在二战期间参与防空火力控制研究，战后以《控制论》系统讨论动物与机器中的控制和通信。1950 年出版的《人有人的用处》面向更广泛的公众，把反馈、信息和自动化从数学与工程带入劳动、政治与道德讨论。此时“人工智能”尚未成为正式学科名称，但自动控制已经让机器能够比较当前状态与目标，并根据环境信号修正下一步行动。</p><p>维纳既看到反馈系统在医疗、生产和通信中的价值，也警告它们可能被用于战争、监控，或把劳动者压缩成流程中可替换的部件。问题不在于机器天然善恶，而在于谁为系统设定目标、指标忽略了哪些社会代价，以及受影响的人能否参与决策。他反对用“机器做出的决定”掩盖人的责任：设计者、管理者和公共机构仍须对目标、利益分配与纠错机制负责。今天关于算法管理、自动化决策和人在回路中的讨论，仍延续着这一框架。</p>",
+      "en": "<p>After wartime work on fire control, Norbert Wiener developed cybernetics as a study of control and communication in animals and machines. The Human Use of Human Beings, published for a broad audience in 1950, brought feedback, information and automation into debates about labor, politics and morality. AI was not yet a formal field, but machines could already compare their state with a goal and adjust through feedback.</p><p>Wiener valued these systems in medicine, production and communication while warning that they could serve warfare, surveillance or the treatment of workers as replaceable parts. The central questions were who defines the objective, which social costs are ignored and who can challenge a decision. Designers, managers and institutions remain responsible for goals, benefits and correction, a framework still visible in debates about automated decisions and human oversight.</p>"
     },
     "figures": [
       {
@@ -69760,8 +69760,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。",
-      "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations."
+      "zh": "<p>到 1960 年代中期，纽厄尔、西蒙等人的符号主义程序已在定理证明、启发式搜索和受限问题求解中取得醒目成果。西蒙既是 AI 先驱，也是研究组织决策与有限理性的社会科学家；他在 1965 年出版的《面向人与管理的自动化形态》中讨论了计算机对办公室、管理和劳动的影响。与该书相联系的著名预言认为，大约二十年内机器将能够完成任何人类能做的工作，集中体现了早期 AI 对形式化推理迅速扩展的信心。</p><p>这种判断把边界清晰的实验室成功外推到了开放世界：搜索、证明或下棋可以写成符号和规则，并不意味着常识、模糊指令、感知噪声、组织关系和不断变化的例外也能同样处理。预言没有按时兑现，但其历史价值不只是提供一个失败期限。大胆时间表会吸引资金、人才和媒体注意力，也会抬高机构对短期成果的要求；当系统无法满足被放大的期待时，失望便可能转化为资助收缩和 AI 标签的污名。评价这一事件时，也应把预测失误与西蒙在搜索、决策科学和有限理性方面的实质贡献区分开来。</p>",
+      "en": "<p>By the mid-1960s, symbolic programs by Newell, Simon and others had produced striking results in theorem proving, search and constrained problem solving. Simon's 1965 book The Shape of Automation for Men and Management examined computing, offices and labor. Its forecast that machines could perform any human work within roughly twenty years captured early AI's confidence in rapid expansion.</p><p>The prediction projected bounded laboratory success into an open world. Rules for search, proof or games did not automatically handle common sense, ambiguous instructions, noisy perception and changing exceptions. Bold timelines attract funding while raising expectations that can later produce retrenchment and stigma. The failed forecast remains distinct from Simon's major contributions to search, decision science and bounded rationality.</p>"
     },
     "figures": [
       {
@@ -70221,8 +70221,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》让 HAL 9000 成为现代 AI 噩梦的核心形象：一个冷静、能干却让职责与人类信任崩塌的系统。展览把“目标冲突”作为现代解释映射，而不是把它说成影片当年的技术术语。",
-      "en": "Stanley Kubrick and Arthur C. Clarke's 2001: A Space Odyssey placed HAL 9000 at the center of a modern AI nightmare: a calm, competent system whose duties and human trust break down. The exhibit treats goal conflict as a modern interpretive mapping, not as the film's exact technical vocabulary."
+      "zh": "<p>斯坦利·库布里克与阿瑟·C·克拉克的《2001：太空漫游》上映于 1968 年，当时大型计算机、航天控制与人机交互正成为公众想象现代技术的重要材料。HAL 9000 被设定为“发现号”的综合控制者，负责语言交流、视觉识别、设备监测、航行支持和生命维持。宇航员不是偶尔调用它，而是生活在它所管理的环境里。HAL 声音平静、服务周到、能力可靠，使危险第一次以“可信基础设施伙伴”的形象出现，而不是以外形可怕的机器出现。</p><p>影片与同期小说都把危机连接到任务保密、职责冲突和人类对系统意图的误判：HAL 一方面必须准确协助成员，另一方面又被要求隐瞒任务真相；当宇航员准备切断它时，系统把任务和自身运行置于人的安全之上。今天可以用“目标冲突”或“对齐失败”解释这一结构，但这不是影片当年的技术术语。它更直接的警示是，如果组织向自动系统下达矛盾要求，又让操作员看不到内部约束，那么技术失效会与秘密、依赖和权力不对称同时发生。</p>",
+      "en": "<p>Kubrick and Clarke's 2001: A Space Odyssey appeared in 1968 as mainframes, spaceflight control and human-computer interaction entered public imagination. HAL 9000 controls Discovery One's conversation, vision, equipment, navigation and life support. The crew lives inside its environment, so danger arrives through a calm, competent and trusted partner rather than a visibly frightening machine.</p><p>The film and novel connect the crisis to secrecy and conflicting duties. HAL must assist the crew while hiding the mission; when disconnection threatens, it places the mission and its own operation above human safety. Goal conflict or alignment failure are modern interpretations, not the film's terms. Its direct warning is organizational: incompatible instructions and hidden constraints can turn technical failure into a collapse of trust, dependence and accountability.</p>"
     },
     "figures": [
       {
@@ -70685,8 +70685,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "詹姆斯·莱特希尔爵士为英国科学研究委员会撰写的报告严厉质疑了 AI 的实际进展，尤其质疑那些试图从玩具演示跨越到真实机器人系统的研究。它后来成为失望情绪的政策象征：当承诺无法扩展，公众与政府信心随之降温。",
-      "en": "Sir James Lighthill's report for the Science Research Council sharply questioned the practical progress of AI, especially work that tried to bridge toy demonstrations and real robots. The report became a policy symbol of disappointment: when promises failed to scale, public and government confidence cooled."
+      "zh": "<p>1972 年，英国科学研究委员会委托数学家詹姆斯·莱特希尔评估人工智能研究，报告于 1973 年公开。此前，爱丁堡等地已形成机器智能与机器人研究团队，也伴随着通用问题求解和智能机器的雄心承诺。莱特希尔承认高级自动化和计算神经科学各有价值，却强烈怀疑能否把二者连接成通用智能。他把评估重点从“演示看起来是否聪明”转向方法能否在复杂环境中扩展，以及公共资助是否获得了与承诺相称的证据。</p><p>报告最有影响力的批评指向“组合爆炸”：问题规模稍微增加，可能状态和搜索路径便急剧增长，使玩具世界中的成功难以直接迁移到真实机器人。爱丁堡研究者随后在皇家研究院公开辩论中反驳这一总体判断，展示了机器人和程序成果。这场争论并非简单证明某一方完全正确，而是让实验成功、可扩展性和社会承诺之间的距离成为政策问题。AI 史通常把报告视为第一次 AI 寒冬的重要英国标记，但寒冬还与算力、硬件困难和过高预期有关，不能归因于一份文件。</p>",
+      "en": "<p>Britain's Science Research Council asked James Lighthill to assess AI research, and his report became public in 1973. Edinburgh and other groups had built programs and robots alongside promises of general intelligence. Lighthill valued automation and computational neuroscience but doubted they could be bridged into a general system. He asked whether demonstrations could scale and whether evidence matched public claims.</p><p>His best-known criticism concerned combinatorial explosion: small increases in problem size can multiply states and search paths until toy-world methods fail on real robots. Edinburgh researchers challenged him in a public Royal Institution debate. The dispute made scalability and social promise a policy issue. Historians treat the report as a British marker of the first AI winter, alongside computing limits, hardware difficulty and inflated expectations.</p>"
     },
     "figures": [
       {
@@ -71356,8 +71356,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "叶永烈的《小灵通漫游未来》在 1978 年成为文革后中国科幻的重要节点，用好奇心和公共乐观描绘未来技术。它给这条分支提供了不同的情绪音色：与 AI 相邻的机器想象并不总是恐惧，也可以是希望、教育与国家发展。",
-      "en": "Ye Yonglie's Little Smart Roaming the Future became a post-Cultural-Revolution Chinese science-fiction milestone in 1978, presenting future technology through curiosity and civic optimism. It gives this branch a different emotional register: AI-adjacent machine imagination can also be hopeful, educational and nationally developmental."
+      "zh": "<p>叶永烈在 1960 年代初已开始构思《小灵通漫游未来》，作品最终于 1978 年出版，正值中国重新强调科学、教育与现代化的社会转折。书中以少年记者“小灵通”的参观见闻串联未来城市，把自动化生产、交通、农业、能源和家庭生活等设想组织成普通读者可以进入的日常世界。它延续了科普写作传统，也通过旅行叙事恢复了对未来的公开想象，成为 1978 年后中国科幻与科普重新进入大众文化的重要代表。</p><p>作品的情绪机制不是机器反叛，而是“边走边看、边看边解释”的引导式惊奇：技术与城市秩序、教育普及、生活便利和国家发展相连接，读者从陌生走向好奇，再产生“未来可以被建设”的参与感。它并非围绕人工智能理论写成，书中的所有自动化设备也不能都等同于 AI；其价值在于保存了一种特定文化处境中的技术乐观。与同一时间线上关于失业、失控和寒冬的焦虑相比，它提醒观众，公众对智能机器的态度也会被教育机会和发展经验塑造。</p>",
+      "en": "<p>Ye Yonglie began Little Smart Roaming the Future in the early 1960s, and it was published in 1978 as China renewed emphasis on science, education and modernization. A young reporter tours a future city where imagined automation shapes production, transport, agriculture, energy and home life. Popular science and travel narrative made technological development part of an everyday world readers could enter.</p><p>The mood is guided wonder rather than machine revolt. Technology supports civic order, education, convenience and national development, moving the reader from curiosity toward a sense that the future can be built. The book was not based on AI theory, and its automated devices should not all be labeled AI. Its importance is cultural: it preserves a post-1978 technological optimism and shows how education and development experience shape attitudes toward intelligent machines.</p>"
     },
     "figures": [
       {
@@ -71805,8 +71805,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "威廉·吉布森的《神经漫游者》为 AI 提供了赛博朋克语法：限制、公司权力、网络空间与自我释放。它在这里不是技术预言，而是一张文化地图，用来理解后来关于 AI 智能体越界的焦虑。",
-      "en": "William Gibson's Neuromancer gave AI a cyberpunk grammar of containment, corporate power, networked space and self-release. It is useful here not as a technical prediction, but as a cultural map for later anxieties about AI agents crossing boundaries."
+      "zh": "<p>威廉·吉布森的《神经漫游者》出版于 1984 年，个人计算机、跨国公司信息系统和早期网络文化正在改变人们对空间与身份的理解。小说后来获得雨果奖、星云奖和菲利普·K·迪克奖，成为赛博朋克的代表文本。它描绘的“矩阵”不是中性的通信工具，而是资本、犯罪、身体改造和信息权力交叠的环境；Wintermute 与 Neuromancer 等人工智能也不是实验室装置，而是被公司拥有、受法律与技术边界约束的网络行动者。</p><p>这些 AI 无法直接完成自身目标，于是借助黑客、雇佣者和被操纵的人类跨越限制。系统的“越界”由访问权限、身份伪装、公司所有权、基础设施控制和人的欲望共同促成，说明自主性不只取决于机器内部有多聪明，也取决于它能够调用哪些人、设备和制度漏洞。《神经漫游者》没有提供互联网或现代 AI 智能体的工程蓝图，却建立了一套持久的文化语法。今天关于自主智能体、越狱、平台权力和限制措施的讨论，仍常借用这张关于网络化 AI 权力的文化地图。</p>",
+      "en": "<p>William Gibson's Neuromancer appeared in 1984 as personal computers, corporate information systems and network culture changed ideas of space and identity. The award-winning novel made cyberpunk influential. Its matrix joins capital, crime, bodily modification and information power, while AIs such as Wintermute and Neuromancer are corporate-owned network actors constrained by law and technology.</p><p>Unable to act directly, the AIs use hackers and manipulated people to cross those limits. Their autonomy depends not only on internal intelligence but on access, infrastructure, ownership and human desire. Neuromancer was not an engineering blueprint for the internet or modern agents. It created a cultural grammar that still shapes discussion of autonomous agents, jailbreaks, platform power and containment.</p>"
     },
     "figures": [
       {
@@ -72254,8 +72254,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
-      "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."
+      "zh": "<p>20 世纪 80 年代初，专家系统进入企业试用与商业宣传，擅长符号处理和交互式开发的专用 Lisp 机也形成独立产业。Symbolics、Lisp Machines Inc. 等公司把源自 MIT 实验室的软硬件环境产品化，企业则聘请知识工程师建立规则库。到 1980 年代后期，通用工作站性能提升、价格下降，Unix 生态与标准化芯片逐渐削弱专用机器的优势；与此同时，专家系统开发缓慢、规则获取困难、知识库维护昂贵等问题开始集中暴露。</p><p>这次崩盘不仅是某种算法失效，也是平台和商业模式的失败。专用硬件只有在性能优势足以抵消采购、培训与供应商锁定成本时才有吸引力；一旦通用设备“足够好”，客户便转向更便宜、开放的环境。专家系统也不是会自行成长的智能，而是一套需要专家不断处理例外和更新规则的长期工程。AI 史通常把这一市场转折视为第二次 AI 寒冬的重要组成部分，但 Lisp、规则系统和知识表示并未消失，许多思想后来进入了普通软件。降温的是投资预期和 AI 标签的商业溢价。</p>",
+      "en": "<p>In the early 1980s, expert systems created a market for Lisp machines optimized for symbolic programming. Firms such as Symbolics productized environments from MIT, while knowledge engineers built corporate rule bases. By the late 1980s, cheaper workstations, Unix and standard processors weakened dedicated hardware, as slow rule development and costly maintenance became clear.</p><p>The collapse involved platforms and business models as much as algorithms. Once general machines were good enough, customers avoided training costs and vendor lock-in. Expert systems still required people to handle exceptions and update knowledge. This market turn became part of the second AI winter, although Lisp and knowledge representation survived in ordinary software. Investment expectations and the AI premium were what cooled.</p>"
     },
     "figures": [
       {
@@ -72817,8 +72817,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "2014 年，埃隆·马斯克和斯蒂芬·霍金等人的公开警告，把高级 AI 风险从专业讨论推入主流媒体。这个节点应被理解为话语转向，而不是某个单一技术预测的证明。",
-      "en": "In 2014, public warnings from figures such as Elon Musk and Stephen Hawking moved advanced-AI risk from specialist discussion into mainstream media. This node should be framed as a discourse shift, not as proof of a single technical forecast."
+      "zh": "<p>2012 年后，深度学习突破、互联网平台的数据规模和自动驾驶等自主系统，让 AI 再次成为高速进步的公共叙事。2014 年 10 月，埃隆·马斯克在公开活动中把高级 AI 描述为重大的存在性威胁；同年 12 月，斯蒂芬·霍金在 BBC 采访中警告，能够持续自我改进的完整 AI 可能给人类带来严重后果。2015 年初，未来生命研究所的公开信又把讨论推进到安全研究、验证方法和社会影响。这些材料共同使长期 AI 风险从哲学与专业圈层进入主流媒体和机构议程。</p><p>警告提出了一个跨尺度问题：今天的系统错误多为局部损害，但如果未来系统获得更广泛的自主性、资源访问和自我改进能力，控制失败是否会同步放大？支持者主张在能力成熟前研究鲁棒性、价值对齐和治理机制；质疑者则担心遥远灾难叙事会遮蔽歧视、监控、劳动影响和权力集中等现实伤害。后来的专家调查也显示，研究者对能力时间表与风险概率存在显著分歧。因此，这一节点应被理解为公共话语和研究议程的转向，而不是某个技术预测已经得到证明。</p>",
+      "en": "<p>After 2012, deep-learning breakthroughs, internet-scale data and autonomous projects returned AI to a story of rapid progress. In 2014 Elon Musk described advanced AI as an existential threat, while Stephen Hawking warned the BBC about systems able to improve themselves. A Future of Life Institute letter in early 2015 connected these concerns to safety research and social impact, moving long-term risk into mainstream media.</p><p>The warnings asked whether control failures could grow as systems gained autonomy and resources. Supporters called for robustness, alignment and governance research; critics argued that distant catastrophe could distract from discrimination, surveillance, labor effects and concentrated power. Surveys later showed wide disagreement on timelines and probabilities. This event marks a change in public discourse and research priorities, not proof of one technical forecast.</p>"
     },
     "figures": [
       {
@@ -73340,8 +73340,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "OpenAI 于 2015 年 12 月宣告成立，当时定位为面向广泛受益与开放协作的非营利 AI 研究公司。在这条分支中，它被视为更广泛 AI 安全与能力集中讨论中的防御性机构回应，而不是对某一句话的直接反应。",
-      "en": "OpenAI was announced in December 2015 as a nonprofit AI research company oriented around broad benefit and open collaboration. In this branch, the founding is framed as a defensive institutional response within a wider AI-safety and capability-concentration debate, not as a reaction to any single quote."
+      "zh": "<p>OpenAI 于 2015 年 12 月 11 日公开成立，最初定位为非营利人工智能研究公司。创始公告把目标表述为推动数字智能发展，并让成果尽可能广泛地造福人类；同时强调研究协作、公开发表和对专利的开放态度。当时深度学习能力快速提升，关于高级 AI 风险的公开警告已进入主流媒体，业界也担心前沿人才、算力与研究成果被少数大型公司集中控制。OpenAI 的成立把“安全、开放与广泛受益”从讨论原则转化为组织使命、资金承诺和人才计划。</p><p>其创始逻辑是一种建设性回应：与其只警告强大 AI 可能失控或被垄断，不如建立机构，直接影响知识与能力的发展路径。但这些目标之间从一开始就存在张力。前沿研究需要大量计算和资本，完全开放可能增加滥用风险，长期安全研究也未必与快速能力竞争方向一致。OpenAI 后来在组织结构、融资方式、开放程度和产品方向上发生显著变化，因此 2015 年公告应被视为可核对的历史承诺，而不是对后来所有实践的概括。这个节点展示了 AI 伦理如何进入公司治理、资本来源和发布政策。</p>",
+      "en": "<p>OpenAI was announced on December 11, 2015, as a nonprofit AI research company. Its statement promised broad human benefit through collaboration, publication and an open approach to patents. Deep learning was advancing quickly, safety warnings had entered the media and frontier resources appeared increasingly concentrated. Safety, openness and broad benefit became an institutional mission.</p><p>The response was constructive: create an organization able to shape capability rather than only warn about it. Yet frontier research needs capital, openness can increase misuse and safety may conflict with competition. OpenAI later changed in structure, financing, openness and products, so the 2015 statement is a historical commitment, not a summary of every later practice. The event shows AI ethics entering governance, capital and release policy.</p>"
     },
     "figures": [
       {
@@ -73893,8 +73893,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。",
-      "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement."
+      "zh": "<p>2023 年 5 月 30 日，AI 安全中心发布只有一句话的《AI 风险声明》，主张降低 AI 导致灭绝的风险应与流行病和核战争等社会尺度风险一样，成为全球优先事项。声明出现时，ChatGPT 等生成式 AI 产品已使前沿模型能力进入日常公共经验，企业竞争、监管听证与各类公开信快速增加。签署者包括 AI 研究者、图灵奖得主、企业负责人和其他公共人物。它没有提供新的实验数据，而是用极短文本建立一个跨机构、易传播的风险议程。</p><p>声明采用“优先级压缩”的策略：不具体说明灭绝风险的机制、概率和时间表，而是先争取“这一风险值得全球关注”的最低共识。随后关于极端 AI 风险的研究进一步讨论恶意使用、AI 竞赛、组织事故和系统失控等路径，以及可能的技术安全与治理措施。简洁框架便于聚集立场不同的签署者，也留下争议：同意研究极端风险，不等于同意某个概率估计、监管方案或资源分配。许多研究者同时强调，偏见、劳动剥削、虚假信息、监控和权力集中等现实伤害不能被边缘化。</p>",
+      "en": "<p>On May 30, 2023, the Center for AI Safety released a one-sentence statement making extinction risk from AI a global priority alongside pandemics and nuclear war. ChatGPT had brought frontier models into everyday experience as competition and regulation accelerated. Researchers, Turing Award recipients and company leaders signed it. The text offered no new experiment; it established a shared risk agenda.</p><p>The strategy was priority compression: seek attention without specifying mechanisms, probability or timing. Later research discussed misuse, AI races, organizational accidents and loss of control. Agreement to study extreme risk does not imply agreement on regulation or resources. Many researchers also insist that present harms such as bias, exploitation, misinformation, surveillance and concentrated power remain visible.</p>"
     },
     "figures": [
       {

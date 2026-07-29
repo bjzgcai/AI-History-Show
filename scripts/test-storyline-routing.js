@@ -160,6 +160,26 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?AI_HISTORY_MAP_VARIANT_PRIORITY\.includes\(normalizedStorylineId\)/,
+    'all configured chronology storylines should map back to their matching overview filter'
+);
+assert.match(
+    indexHtml,
+    /const CHRONOLOGY_FILTER_PARAM = 'storylineFilter'[\s\S]*?function syncChronologyFilterUrl\(url\)[\s\S]*?searchParams\.set\(CHRONOLOGY_FILTER_PARAM, chronologyFilterStorylineId\)[\s\S]*?function getUiHistoryState[\s\S]*?storylineFilterId: chronologyFilterStorylineId/,
+    'chronology filters should persist in detail URLs and browser history state'
+);
+assert.match(
+    indexHtml,
+    /function handleUiBrowserHistoryPop\(event\)[\s\S]*?uiState\.storylineFilterId[\s\S]*?getChronologyVisibleMilestones\(\)[\s\S]*?findMilestoneIndexByEventId\(uiState\.eventId, detailMilestones\)/,
+    'browser history should restore the filter before rebuilding detail navigation'
+);
+assert.match(
+    indexHtml,
+    /function setChronologyFilterStorylineId\(storylineId, options = \{\}\)[\s\S]*?getChronologyFilterStorylineId\(storylineId\)[\s\S]*?options\.replaceHistory[\s\S]*?replaceUiLevelHistoryEntry\(\)[\s\S]*?onFilterChange: \(storylineId\) => \{[\s\S]*?setChronologyFilterStorylineId\(storylineId, \{ replaceHistory: true \}\)/,
+    'overview filter changes should update the current URL and history entry'
+);
+assert.match(
+    indexHtml,
     /function openChronologyMilestone\(eventId\)[\s\S]*?detailMilestones = getChronologyVisibleMilestones\(\)[\s\S]*?milestoneList = detailMilestones/,
     'opening a chronology card should use the active filter only for detail navigation'
 );
@@ -250,9 +270,33 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
+    'the storyline selector should place AI100 where the deep-learning option previously appeared'
+);
+assert.match(
+    indexHtml,
     /class="ui-detail-title-row">[\s\S]*?class="ui-detail-title"[\s\S]*?\$\{sentimentTagHtml\}/,
     'humanistic detail pages should place the emotion label directly after the event title'
 );
+assert.match(
+    indexHtml,
+    /\.branch-timeline-page\.is-humanistic-cycle \.branch-event,\s*\.ui-sentiment-tag\s*\{[\s\S]*?--sentiment:[\s\S]*?--sentiment-soft:/,
+    'humanistic timeline cards and detail labels should share one default sentiment palette'
+);
+assert.match(
+    indexHtml,
+    /\.ui-sentiment-tag\s*\{[\s\S]*?border:\s*1px solid var\(--sentiment\)[\s\S]*?background:\s*var\(--sentiment-soft\)[\s\S]*?color:\s*var\(--sentiment\)/,
+    'humanistic emotion labels should retain their bordered sentiment background'
+);
+for (const sentiment of ['hype', 'ethics', 'warning', 'optimism', 'cyberpunk', 'dread', 'defense', 'winter']) {
+    assert.match(
+        indexHtml,
+        new RegExp(
+            `\\.branch-timeline-page\\.is-humanistic-cycle \\.branch-event--sentiment-${sentiment},\\s*\\.ui-sentiment-tag--${sentiment}\\s*\\{`
+        ),
+        `humanistic ${sentiment} cards and labels should share the same sentiment palette`
+    );
+}
 assert.match(
     indexHtml,
     /\.ui-detail-topline\s*\{[\s\S]*?--ui-detail-context-base-width:\s*564px[\s\S]*?--ui-detail-context-max-width:\s*829px[\s\S]*?--ui-detail-title-min-width:\s*300px[\s\S]*?grid-template-columns:[\s\S]*?fit-content\(var\(--ui-detail-context-max-width\)\)[\s\S]*?minmax\(var\(--ui-detail-title-min-width\), 1fr\)[\s\S]*?\.ui-detail-context\s*\{[\s\S]*?width:\s*var\(--ui-detail-context-width, max-content\)[\s\S]*?min-width:\s*var\(--ui-detail-context-base-width\)[\s\S]*?max-width:\s*var\(--ui-detail-context-max-width\)/,
@@ -390,7 +434,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /if \(isUiBrowserActive\(\) && uiBrowserMode !== 'detail'\) \{[\s\S]*?resetCompletionQuizView\(\)[\s\S]*?\} else \{[\s\S]*?markCompletionQuizView\(vm\)/,
+    /const uiBrowserActive = isUiBrowserActive\(\)[\s\S]*?const isChronologyOverview = uiBrowserActive && uiBrowserMode !== 'detail'[\s\S]*?if \(isChronologyOverview\) \{[\s\S]*?resetCompletionQuizView\(\)[\s\S]*?\} else \{[\s\S]*?markCompletionQuizView\(vm\)/,
     'the chronology overview should reset quiz dwell time while event details start it'
 );
 console.log('PASS unified UI boot state and storyline detail URL normalization');

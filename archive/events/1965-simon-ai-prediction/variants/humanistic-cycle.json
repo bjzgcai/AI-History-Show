@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "赫伯特·西蒙 1965 年关于自动化的著作后来与一个著名的大胆 AI 预言联系在一起：大约二十年内，机器将能够完成任何人类能做的工作。这个预言浓缩了早期符号主义 AI 的高度自信：游戏、证明和实验室任务中的成功，推动了远超现实能力的社会期待。",
-        "en": "Herbert A. Simon's 1965 automation writings became associated with a famously bold AI forecast: within roughly twenty years, machines would be able to do any work a human can do. The prediction captures the high-confidence atmosphere of early symbolic AI, when success in games, proofs and laboratory tasks encouraged sweeping expectations."
+        "zh": "<p>到 1960 年代中期，纽厄尔、西蒙等人的符号主义程序已在定理证明、启发式搜索和受限问题求解中取得醒目成果。西蒙既是 AI 先驱，也是研究组织决策与有限理性的社会科学家；他在 1965 年出版的《面向人与管理的自动化形态》中讨论了计算机对办公室、管理和劳动的影响。与该书相联系的著名预言认为，大约二十年内机器将能够完成任何人类能做的工作，集中体现了早期 AI 对形式化推理迅速扩展的信心。</p><p>这种判断把边界清晰的实验室成功外推到了开放世界：搜索、证明或下棋可以写成符号和规则，并不意味着常识、模糊指令、感知噪声、组织关系和不断变化的例外也能同样处理。预言没有按时兑现，但其历史价值不只是提供一个失败期限。大胆时间表会吸引资金、人才和媒体注意力，也会抬高机构对短期成果的要求；当系统无法满足被放大的期待时，失望便可能转化为资助收缩和 AI 标签的污名。评价这一事件时，也应把预测失误与西蒙在搜索、决策科学和有限理性方面的实质贡献区分开来。</p>",
+        "en": "<p>By the mid-1960s, symbolic programs by Newell, Simon and others had produced striking results in theorem proving, search and constrained problem solving. Simon's 1965 book The Shape of Automation for Men and Management examined computing, offices and labor. Its forecast that machines could perform any human work within roughly twenty years captured early AI's confidence in rapid expansion.</p><p>The prediction projected bounded laboratory success into an open world. Rules for search, proof or games did not automatically handle common sense, ambiguous instructions, noisy perception and changing exceptions. Bold timelines attract funding while raising expectations that can later produce retrenchment and stigma. The failed forecast remains distinct from Simon's major contributions to search, decision science and bounded rationality.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",

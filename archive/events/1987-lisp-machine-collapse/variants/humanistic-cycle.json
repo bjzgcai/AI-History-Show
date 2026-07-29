@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
-        "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."
+        "zh": "<p>20 世纪 80 年代初，专家系统进入企业试用与商业宣传，擅长符号处理和交互式开发的专用 Lisp 机也形成独立产业。Symbolics、Lisp Machines Inc. 等公司把源自 MIT 实验室的软硬件环境产品化，企业则聘请知识工程师建立规则库。到 1980 年代后期，通用工作站性能提升、价格下降，Unix 生态与标准化芯片逐渐削弱专用机器的优势；与此同时，专家系统开发缓慢、规则获取困难、知识库维护昂贵等问题开始集中暴露。</p><p>这次崩盘不仅是某种算法失效，也是平台和商业模式的失败。专用硬件只有在性能优势足以抵消采购、培训与供应商锁定成本时才有吸引力；一旦通用设备“足够好”，客户便转向更便宜、开放的环境。专家系统也不是会自行成长的智能，而是一套需要专家不断处理例外和更新规则的长期工程。AI 史通常把这一市场转折视为第二次 AI 寒冬的重要组成部分，但 Lisp、规则系统和知识表示并未消失，许多思想后来进入了普通软件。降温的是投资预期和 AI 标签的商业溢价。</p>",
+        "en": "<p>In the early 1980s, expert systems created a market for Lisp machines optimized for symbolic programming. Firms such as Symbolics productized environments from MIT, while knowledge engineers built corporate rule bases. By the late 1980s, cheaper workstations, Unix and standard processors weakened dedicated hardware, as slow rule development and costly maintenance became clear.</p><p>The collapse involved platforms and business models as much as algorithms. Once general machines were good enough, customers avoided training costs and vendor lock-in. Expert systems still required people to handle exceptions and update knowledge. This market turn became part of the second AI winter, although Lisp and knowledge representation survived in ordinary software. Investment expectations and the AI premium were what cooled.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",

@@ -11,8 +11,8 @@
         "en": "Sci-Fi Prophecy, Hype and AI Winters"
     },
     "displayDescription": {
-        "zh": "AI 安全中心 2023 年发布的 AI 风险声明，把降低 AI 灭绝风险表述为全球优先事项。这个事件标志着公共情绪周期中的新高点：关于高级 AI 的担忧被压缩成一则简短的共识式声明。",
-        "en": "The Center for AI Safety's 2023 Statement on AI Risk framed mitigation of extinction risk from AI as a global priority. The event marks a new peak in the public emotional cycle: advanced-AI concern was compressed into a short consensus-style statement."
+        "zh": "<p>2023 年 5 月 30 日，AI 安全中心发布只有一句话的《AI 风险声明》，主张降低 AI 导致灭绝的风险应与流行病和核战争等社会尺度风险一样，成为全球优先事项。声明出现时，ChatGPT 等生成式 AI 产品已使前沿模型能力进入日常公共经验，企业竞争、监管听证与各类公开信快速增加。签署者包括 AI 研究者、图灵奖得主、企业负责人和其他公共人物。它没有提供新的实验数据，而是用极短文本建立一个跨机构、易传播的风险议程。</p><p>声明采用“优先级压缩”的策略：不具体说明灭绝风险的机制、概率和时间表，而是先争取“这一风险值得全球关注”的最低共识。随后关于极端 AI 风险的研究进一步讨论恶意使用、AI 竞赛、组织事故和系统失控等路径，以及可能的技术安全与治理措施。简洁框架便于聚集立场不同的签署者，也留下争议：同意研究极端风险，不等于同意某个概率估计、监管方案或资源分配。许多研究者同时强调，偏见、劳动剥削、虚假信息、监控和权力集中等现实伤害不能被边缘化。</p>",
+        "en": "<p>On May 30, 2023, the Center for AI Safety released a one-sentence statement making extinction risk from AI a global priority alongside pandemics and nuclear war. ChatGPT had brought frontier models into everyday experience as competition and regulation accelerated. Researchers, Turing Award recipients and company leaders signed it. The text offered no new experiment; it established a shared risk agenda.</p><p>The strategy was priority compression: seek attention without specifying mechanisms, probability or timing. Later research discussed misuse, AI races, organizational accidents and loss of control. Agreement to study extreme risk does not imply agreement on regulation or resources. Many researchers also insist that present harms such as bias, exploitation, misinformation, surveillance and concentrated power remain visible.</p>"
     },
     "emphasis": ["batch-migration", "source-review-needed"],
     "visual": "humanistic",
