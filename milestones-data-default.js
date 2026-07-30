@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-30 06:56
+// 生成时间: 2026-07-30 08:06
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 165, errors 0
 
@@ -34,12 +34,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Manchester",
+        "en": "Manchester University",
         "zh": "曼彻斯特大学"
       },
       "country": {
-        "en": "Manchester, United Kingdom",
-        "zh": "英国，曼彻斯特"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         53.4668,
@@ -489,8 +489,8 @@ const milestones = [
         "zh": "多伦多大学"
       },
       "country": {
-        "en": "Toronto, Canada",
-        "zh": "加拿大，多伦多"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         43.6629,
@@ -929,12 +929,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Institute of Control Sciences, Moscow",
+        "en": "Institute of Control Sciences Moscow",
         "zh": "莫斯科控制科学研究所"
       },
       "country": {
-        "en": "Moscow, Russia",
-        "zh": "俄罗斯，莫斯科"
+        "en": "Russia",
+        "zh": "俄罗斯"
       },
       "coordinates": [
         55.7558,
@@ -1392,8 +1392,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "RAND Corporation / Carnegie Institute of Technology",
-        "zh": "RAND Corporation / 卡内基理工学院"
+        "en": "Carnegie Mellon University",
+        "zh": "卡内基梅隆大学"
       },
       "country": {
         "en": "United States",
@@ -1850,12 +1850,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Bell Telephone Laboratories",
-        "zh": "贝尔电话实验室"
+        "en": "Bell Lab",
+        "zh": "贝尔实验室"
       },
       "country": {
-        "en": "Murray Hill, United States",
-        "zh": "美国，新泽西州默里山"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.6843,
@@ -2281,8 +2281,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "New York University / Princeton University / RPI",
-        "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院"
+        "en": "Rensselaer Polytechnic Institute, Princeton University, New York University",
+        "zh": "伦斯勒理工学院、普林斯顿大学、纽约大学"
       },
       "country": {
         "en": "United States",
@@ -2753,8 +2753,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Argonne National Laboratory / Syracuse University",
-        "zh": "阿贡国家实验室 / 雪城大学"
+        "en": "Argonne National Laboratory",
+        "zh": "阿贡国家实验室"
       },
       "country": {
         "en": "United States",
@@ -3236,8 +3236,8 @@ const milestones = [
         "zh": "阿贡国家实验室"
       },
       "country": {
-        "en": "Illinois, United States",
-        "zh": "美国伊利诺伊州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         41.7106,
@@ -3731,8 +3731,8 @@ const milestones = [
         "zh": "麻省理工学院"
       },
       "country": {
-        "en": "MA, United States",
-        "zh": "美国，马萨诸塞州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.3601,
@@ -4140,12 +4140,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Aix-Marseille University and University of Edinburgh",
-        "zh": "艾克斯-马赛大学与爱丁堡大学"
+        "en": "University of Edinburgh",
+        "zh": "爱丁堡大学"
       },
       "country": {
-        "en": "France and United Kingdom",
-        "zh": "法国与英国"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         43.3047,
@@ -4633,12 +4633,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "MIT Artificial Intelligence Laboratory",
-        "zh": "麻省理工学院 人工智能实验室"
+        "en": "MIT",
+        "zh": "麻省理工学院"
       },
       "country": {
-        "en": "Massachusetts, United States",
-        "zh": "美国马萨诸塞州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.3601,
@@ -5313,12 +5313,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "MIT Artificial Intelligence Laboratory",
-        "zh": "麻省理工学院 人工智能实验室"
+        "en": "MIT",
+        "zh": "麻省理工学院"
       },
       "country": {
-        "en": "Massachusetts, United States",
-        "zh": "美国马萨诸塞州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.3601,
@@ -5788,8 +5788,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "IBM Thomas J. Watson Research Center",
-        "zh": "IBM 托马斯·J·沃森 研究中心"
+        "en": "IBM",
+        "zh": "IBM"
       },
       "country": {
         "en": "United States",
@@ -6324,12 +6324,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "National Physical Laboratory",
-        "zh": "英国国家物理实验室"
+        "en": "National Research Development Corporation",
+        "zh": "英国国家研究开发公司"
       },
       "country": {
-        "en": "Teddington, United Kingdom",
-        "zh": "英国特丁顿"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.4245,
@@ -6887,8 +6887,8 @@ const milestones = [
         "zh": "阿尔伯塔大学"
       },
       "country": {
-        "en": "Alberta, Canada",
-        "zh": "加拿大阿尔伯塔省"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         53.5232,
@@ -7400,12 +7400,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "IBM Research",
-        "zh": "IBM 研究院"
+        "en": "IBM",
+        "zh": "IBM"
       },
       "country": {
-        "en": "New York, United States",
-        "zh": "美国纽约州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         41.2108,
@@ -7984,12 +7984,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "MIT Lincoln Laboratory",
-        "zh": "麻省理工学院 林肯实验室"
+        "en": "MIT",
+        "zh": "麻省理工学院"
       },
       "country": {
-        "en": "Massachusetts, United States",
-        "zh": "美国马萨诸塞州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.4595,
@@ -8501,12 +8501,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "MIT Artificial Intelligence Laboratory",
-        "zh": "麻省理工学院 人工智能实验室"
+        "en": "MIT",
+        "zh": "麻省理工学院"
       },
       "country": {
-        "en": "Massachusetts, United States",
-        "zh": "美国马萨诸塞州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.3601,
@@ -8976,12 +8976,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Microelectronics and Computer Technology Corporation",
+        "en": "MCC",
         "zh": "微电子与计算机技术公司（MCC）"
       },
       "country": {
-        "en": "Texas, United States",
-        "zh": "美国得克萨斯州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         30.2672,
@@ -9510,8 +9510,8 @@ const milestones = [
         "zh": "斯坦福大学"
       },
       "country": {
-        "en": "California, United States",
-        "zh": "美国加利福尼亚州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.4275,
@@ -10020,12 +10020,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Carnegie Mellon University",
+        "en": "CMU",
         "zh": "卡内基梅隆大学"
       },
       "country": {
-        "en": "Pennsylvania, United States",
-        "zh": "美国宾夕法尼亚州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.4433,
@@ -10543,12 +10543,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Bell Labs",
+        "en": "Bell Lab",
         "zh": "贝尔实验室"
       },
       "country": {
-        "en": "New Jersey, United States",
-        "zh": "美国新泽西州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.6843,
@@ -11070,8 +11070,8 @@ const milestones = [
         "zh": "慕尼黑大学"
       },
       "country": {
-        "en": "Munich, Germany",
-        "zh": "德国慕尼黑"
+        "en": "Germany",
+        "zh": "德国"
       },
       "coordinates": [
         48.1508,
@@ -11616,12 +11616,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of California, Berkeley",
-        "zh": "加州大学伯克利分校"
+        "en": "University of Pennsylvania, U.C. Berkeley, Hebrew University",
+        "zh": "宾夕法尼亚大学、加州大学伯克利分校、耶路撒冷希伯来大学"
       },
       "country": {
-        "en": "California, United States",
-        "zh": "美国加利福尼亚州"
+        "en": "United States, Israel",
+        "zh": "美国、以色列"
       },
       "coordinates": [
         37.8719,
@@ -12201,12 +12201,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Stanford University",
-        "zh": "斯坦福大学"
+        "en": "Stanford University, Stanford Research Institute",
+        "zh": "斯坦福大学、斯坦福研究院"
       },
       "country": {
-        "en": "Stanford, United States",
-        "zh": "美国斯坦福"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.4275,
@@ -12719,8 +12719,8 @@ const milestones = [
         "zh": "特拉华大学"
       },
       "country": {
-        "en": "Newark, United States",
-        "zh": "美国纽瓦克"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         39.6779,
@@ -13213,12 +13213,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Bell Laboratories",
+        "en": "Bell Lab",
         "zh": "贝尔实验室"
       },
       "country": {
-        "en": "Murray Hill, United States",
-        "zh": "美国默里山"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.6843,
@@ -13779,8 +13779,8 @@ const milestones = [
         "zh": "多伦多大学"
       },
       "country": {
-        "en": "Toronto, Canada",
-        "zh": "加拿大多伦多"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         43.6629,
@@ -14255,8 +14255,8 @@ const milestones = [
         "zh": "不列颠哥伦比亚大学"
       },
       "country": {
-        "en": "British Columbia, Canada",
-        "zh": "加拿大不列颠哥伦比亚省"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         49.2606,
@@ -14724,11 +14724,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "INRIA",
-        "zh": "INRIA"
+        "zh": "法国国家信息与自动化研究所（INRIA）"
       },
       "country": {
-        "en": "Grenoble, France",
-        "zh": "法国格勒诺布尔"
+        "en": "France",
+        "zh": "法国"
       },
       "coordinates": [
         45.1938,
@@ -15241,8 +15241,8 @@ const milestones = [
         "zh": "苏黎世联邦理工学院"
       },
       "country": {
-        "en": "Zurich, Switzerland",
-        "zh": "瑞士苏黎世"
+        "en": "Switzerland",
+        "zh": "瑞士"
       },
       "coordinates": [
         47.3763,
@@ -15752,8 +15752,8 @@ const milestones = [
         "zh": "马克斯·普朗克生物控制论研究所"
       },
       "country": {
-        "en": "Tuebingen, Germany",
-        "zh": "德国图宾根"
+        "en": "Germany",
+        "zh": "德国"
       },
       "coordinates": [
         48.5216,
@@ -16246,12 +16246,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Bell Labs and MIT",
-        "zh": "贝尔实验室与 MIT"
+        "en": "Bell Lab, MIT",
+        "zh": "贝尔实验室、麻省理工学院"
       },
       "country": {
-        "en": "New Jersey and Cambridge, United States",
-        "zh": "美国新泽西州与剑桥"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.6843,
@@ -16748,8 +16748,8 @@ const milestones = [
         "zh": "斯坦福大学"
       },
       "country": {
-        "en": "Stanford, United States",
-        "zh": "美国斯坦福"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.4275,
@@ -17241,12 +17241,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "AT&T Labs",
-        "zh": "AT&T 实验室"
+        "en": "AT&T Labs, University College London",
+        "zh": "AT&T 实验室、伦敦大学学院"
       },
       "country": {
-        "en": "Florham Park, United States",
-        "zh": "美国弗洛勒姆帕克"
+        "en": "United States, United Kingdom",
+        "zh": "美国、英国"
       },
       "coordinates": [
         40.7879,
@@ -17739,12 +17739,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Tilburg University / University of Toronto",
-        "zh": "蒂尔堡大学 / 多伦多大学"
+        "en": "Tilburg University, University of Toronto",
+        "zh": "蒂尔堡大学、多伦多大学"
       },
       "country": {
-        "en": "Netherlands and Canada",
-        "zh": "荷兰与加拿大"
+        "en": "Netherlands, Canada",
+        "zh": "荷兰、加拿大"
       },
       "coordinates": [
         51.5633,
@@ -18232,8 +18232,8 @@ const milestones = [
         "zh": "伊利诺伊大学芝加哥分校"
       },
       "country": {
-        "en": "Chicago, United States",
-        "zh": "美国芝加哥"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         41.8719,
@@ -18730,8 +18730,8 @@ const milestones = [
         "zh": "普林斯顿大学"
       },
       "country": {
-        "en": "Princeton, United States",
-        "zh": "美国普林斯顿"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.3431,
@@ -19249,12 +19249,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Cornell Aeronautical Laboratory",
-        "zh": "康奈尔航空实验室"
+        "en": "Cornell University",
+        "zh": "康奈尔大学"
       },
       "country": {
-        "en": "New York, United States",
-        "zh": "美国纽约州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.8864,
@@ -19840,8 +19840,8 @@ const milestones = [
         "zh": "加州理工学院"
       },
       "country": {
-        "en": "California, United States",
-        "zh": "美国加利福尼亚州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         34.1377,
@@ -20316,8 +20316,8 @@ const milestones = [
         "zh": "赫尔辛基理工大学"
       },
       "country": {
-        "en": "Espoo, Finland",
-        "zh": "芬兰埃斯波"
+        "en": "Finland",
+        "zh": "芬兰"
       },
       "coordinates": [
         60.1841,
@@ -20796,12 +20796,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Toronto",
-        "zh": "多伦多大学"
+        "en": "University of Toronto, National University of Singapore",
+        "zh": "多伦多大学、新加坡国立大学"
       },
       "country": {
-        "en": "Ontario, Canada",
-        "zh": "加拿大安大略省"
+        "en": "Canada, Singapore",
+        "zh": "加拿大、新加坡"
       },
       "coordinates": [
         43.6629,
@@ -21296,12 +21296,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Kyushu University and UC San Diego",
-        "zh": "九州大学与加州大学圣迭戈分校"
+        "en": "Kyushu University, UC San Diego, CMU",
+        "zh": "九州大学、加州大学圣迭戈分校、卡内基梅隆大学"
       },
       "country": {
-        "en": "Fukuoka and San Diego",
-        "zh": "福冈与圣迭戈"
+        "en": "Japan, United States",
+        "zh": "日本、美国"
       },
       "coordinates": [
         32.8731,
@@ -21806,12 +21806,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "NHK Broadcasting Science Research Laboratories",
-        "zh": "NHK 广播科学研究实验室"
+        "en": "NHK Broadcasting Science Research Laboratories, University of Montreal",
+        "zh": "日本放送协会广播科学研究实验室、蒙特利尔大学"
       },
       "country": {
-        "en": "Tokyo, Japan",
-        "zh": "日本东京"
+        "en": "Japan, Canada",
+        "zh": "日本、加拿大"
       },
       "coordinates": [
         35.6762,
@@ -22373,12 +22373,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Amsterdam / University of Toronto",
-        "zh": "阿姆斯特丹大学 / 多伦多大学"
+        "en": "OpenAI, University of Toronto",
+        "zh": "OpenAI、多伦多大学"
       },
       "country": {
-        "en": "Netherlands and Canada",
-        "zh": "荷兰与加拿大"
+        "en": "United States, Canada",
+        "zh": "美国、加拿大"
       },
       "coordinates": [
         52.3558,
@@ -22867,8 +22867,8 @@ const milestones = [
         "zh": "多伦多大学"
       },
       "country": {
-        "en": "Toronto, Canada",
-        "zh": "加拿大多伦多"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         43.6629,
@@ -23373,8 +23373,8 @@ const milestones = [
         "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.422,
@@ -23862,11 +23862,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "NHK Broadcasting Science Research Laboratories",
-        "zh": "NHK 广播科学研究实验室"
+        "zh": "日本放送协会广播科学研究实验室"
       },
       "country": {
-        "en": "Tokyo, Japan",
-        "zh": "日本东京"
+        "en": "Japan",
+        "zh": "日本"
       },
       "coordinates": [
         35.6762,
@@ -24349,8 +24349,8 @@ const milestones = [
         "zh": "贝尔实验室"
       },
       "country": {
-        "en": "New Jersey, United States",
-        "zh": "美国新泽西州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.684,
@@ -24922,8 +24922,8 @@ const milestones = [
         "zh": "多伦多大学"
       },
       "country": {
-        "en": "Toronto, Canada",
-        "zh": "加拿大多伦多"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         43.6629,
@@ -25497,12 +25497,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Visual Geometry Group, University of Oxford",
-        "zh": "牛津大学视觉几何组"
+        "en": "University of Oxford",
+        "zh": "牛津大学"
       },
       "country": {
-        "en": "Oxford, United Kingdom",
-        "zh": "英国牛津"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.7548,
@@ -25984,11 +25984,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google",
-        "zh": "谷歌"
+        "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.422,
@@ -26485,12 +26485,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Microsoft Research Asia",
+        "en": "Microsoft Research (Asia)",
         "zh": "微软亚洲研究院"
       },
       "country": {
-        "en": "Beijing, China",
-        "zh": "中国北京"
+        "en": "China",
+        "zh": "中国"
       },
       "coordinates": [
         39.9042,
@@ -27144,12 +27144,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Cornell University",
-        "zh": "康奈尔大学"
+        "en": "Cornell University, Tsinghua University, Facebook AI Research",
+        "zh": "康奈尔大学、清华大学、Facebook 人工智能研究院"
       },
       "country": {
-        "en": "Ithaca, United States",
-        "zh": "美国伊萨卡"
+        "en": "United States, China",
+        "zh": "美国、中国"
       },
       "coordinates": [
         42.4534,
@@ -27691,8 +27691,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Google, United States",
-        "zh": "Google，美国"
+        "en": "Google",
+        "zh": "Google"
       },
       "country": {
         "en": "United States",
@@ -28230,12 +28230,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Momenta and University of Oxford",
-        "zh": "Momenta 与牛津大学"
+        "en": "Momenta, University of Oxford",
+        "zh": "Momenta、牛津大学"
       },
       "country": {
-        "en": "China and United Kingdom",
-        "zh": "中国与英国"
+        "en": "China, United Kingdom",
+        "zh": "中国、英国"
       },
       "coordinates": [
         31.2304,
@@ -28769,8 +28769,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "UC Berkeley, United States",
-        "zh": "加州大学伯克利分校，美国"
+        "en": "UC Berkeley",
+        "zh": "加州大学伯克利分校"
       },
       "country": {
         "en": "United States",
@@ -29310,8 +29310,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Microsoft Research, United States",
-        "zh": "微软研究院，美国"
+        "en": "Microsoft Research",
+        "zh": "微软研究院"
       },
       "country": {
         "en": "United States",
@@ -29836,12 +29836,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Microsoft Research Asia",
+        "en": "Microsoft Research (Asia)",
         "zh": "微软亚洲研究院"
       },
       "country": {
-        "en": "Beijing, China",
-        "zh": "中国北京"
+        "en": "China",
+        "zh": "中国"
       },
       "coordinates": [
         39.9042,
@@ -30432,8 +30432,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Facebook AI Research, United States",
-        "zh": "Facebook AI Research，美国"
+        "en": "Facebook",
+        "zh": "Facebook"
       },
       "country": {
         "en": "United States",
@@ -30958,8 +30958,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Facebook AI Research and Cornell University",
-        "zh": "Facebook AI Research 与康奈尔大学"
+        "en": "Facebook, Cornell University",
+        "zh": "Facebook、康奈尔大学"
       },
       "country": {
         "en": "United States",
@@ -31497,12 +31497,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Washington / Allen Institute for AI",
-        "zh": "华盛顿大学 / Allen Institute for AI"
+        "en": "University of Washington, Allen Institute for AI, Facebook AI Research",
+        "zh": "华盛顿大学、艾伦人工智能研究所、Facebook 人工智能研究院"
       },
       "country": {
-        "en": "Seattle, United States",
-        "zh": "美国西雅图"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         47.6553,
@@ -31990,8 +31990,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "UNC Chapel Hill and partner labs",
-        "zh": "北卡罗来纳大学教堂山分校及合作实验室"
+        "en": "UNC Chapel Hill, Zoox, Google, University of Michigan",
+        "zh": "北卡罗来纳大学教堂山分校、Zoox、Google、密歇根大学"
       },
       "country": {
         "en": "United States",
@@ -32529,8 +32529,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "UC Berkeley, United States",
-        "zh": "加州大学伯克利分校，美国"
+        "en": "UC Berkeley",
+        "zh": "加州大学伯克利分校"
       },
       "country": {
         "en": "United States",
@@ -33086,8 +33086,8 @@ const milestones = [
         "zh": "弗赖堡大学"
       },
       "country": {
-        "en": "Freiburg, Germany",
-        "zh": "德国弗赖堡"
+        "en": "Germany",
+        "zh": "德国"
       },
       "coordinates": [
         47.999,
@@ -33584,12 +33584,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Technical University of Munich",
-        "zh": "慕尼黑工业大学"
+        "en": "Technical University of Munich, IDSIA",
+        "zh": "慕尼黑工业大学、瑞士人工智能实验室（IDSIA）"
       },
       "country": {
-        "en": "Munich, Germany",
-        "zh": "德国慕尼黑"
+        "en": "Germany, Switzerland",
+        "zh": "德国、瑞士"
       },
       "coordinates": [
         48.1496,
@@ -34169,12 +34169,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Montreal and Google",
-        "zh": "蒙特利尔大学与 Google"
+        "en": "University of Montreal, Jacobs University, University of Maine, Google",
+        "zh": "蒙特利尔大学、雅各布大学、缅因大学、Google"
       },
       "country": {
-        "en": "Canada and United States",
-        "zh": "加拿大与美国"
+        "en": "Canada, Germany, France, United States",
+        "zh": "加拿大、德国、法国、美国"
       },
       "coordinates": [
         45.5019,
@@ -34722,12 +34722,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Montreal",
-        "zh": "蒙特利尔大学"
+        "en": "Jacobs University Bremen, University of Montreal, Stanford University, University of Toronto",
+        "zh": "不来梅雅各布大学、蒙特利尔大学、斯坦福大学、多伦多大学"
       },
       "country": {
-        "en": "Montreal, Canada",
-        "zh": "加拿大蒙特利尔"
+        "en": "Germany, Canada, United States",
+        "zh": "德国、加拿大、美国"
       },
       "coordinates": [
         45.5056,
@@ -35333,12 +35333,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Google Brain",
-        "zh": "Google Brain"
+        "en": "Google, University of Toronto",
+        "zh": "Google、多伦多大学"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States, Canada",
+        "zh": "美国、加拿大"
       },
       "coordinates": [
         37.422,
@@ -35994,8 +35994,8 @@ const milestones = [
         "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.422,
@@ -36549,8 +36549,8 @@ const milestones = [
         "zh": "OpenAI"
       },
       "country": {
-        "en": "San Francisco, United States",
-        "zh": "美国旧金山"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.7749,
@@ -37194,12 +37194,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Google Research",
-        "zh": "Google 研究院"
+        "en": "Google",
+        "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.422,
@@ -37761,12 +37761,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Microsoft Research Asia",
-        "zh": "微软亚洲研究院"
+        "en": "Microsoft Research Asia, University of Science and Technology of China, Xian Jiaotong University, Tsinghua University",
+        "zh": "微软亚洲研究院、中国科学技术大学、西安交通大学、清华大学"
       },
       "country": {
-        "en": "Beijing, China",
-        "zh": "中国北京"
+        "en": "China",
+        "zh": "中国"
       },
       "coordinates": [
         39.9042,
@@ -38317,8 +38317,8 @@ const milestones = [
         "zh": "蒙特利尔大学"
       },
       "country": {
-        "en": "Montreal, Canada",
-        "zh": "加拿大蒙特利尔"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         45.5019,
@@ -38797,12 +38797,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Google Brain",
-        "zh": "谷歌大脑"
+        "en": "Google",
+        "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.422,
@@ -39294,8 +39294,8 @@ const milestones = [
         "zh": "斯坦福大学"
       },
       "country": {
-        "en": "Stanford, United States",
-        "zh": "美国斯坦福"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.4275,
@@ -39975,8 +39975,8 @@ const milestones = [
         "zh": "蒙特利尔大学"
       },
       "country": {
-        "en": "Montreal, Canada",
-        "zh": "加拿大蒙特利尔"
+        "en": "Canada",
+        "zh": "加拿大"
       },
       "coordinates": [
         45.5056,
@@ -40504,12 +40504,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Montreal",
-        "zh": "蒙特利尔大学"
+        "en": "University of Montreal, Yahoo",
+        "zh": "蒙特利尔大学、Yahoo"
       },
       "country": {
-        "en": "Montreal, Canada",
-        "zh": "加拿大蒙特利尔"
+        "en": "Canada, United States",
+        "zh": "加拿大、美国"
       },
       "coordinates": [
         45.5019,
@@ -41028,12 +41028,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Facebook AI Research",
-        "zh": "Facebook AI Research"
+        "en": "indico Research, Facebook",
+        "zh": "indico 研究院、Facebook"
       },
       "country": {
-        "en": "New York, United States",
-        "zh": "New York, United States"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.7128,
@@ -41546,12 +41546,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Courant Institute and Facebook AI Research",
-        "zh": "Courant Institute and Facebook AI Research"
+        "en": "Courant Institute of Mathematical Sciences, Facebook",
+        "zh": "纽约大学柯朗数学科学研究所、Facebook"
       },
       "country": {
-        "en": "New York, United States",
-        "zh": "New York, United States"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.7295,
@@ -42135,11 +42135,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "UC Berkeley",
-        "zh": "UC Berkeley"
+        "zh": "加州大学伯克利分校"
       },
       "country": {
-        "en": "Berkeley, United States",
-        "zh": "Berkeley, United States"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.8715,
@@ -42673,11 +42673,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "UC Berkeley",
-        "zh": "UC Berkeley"
+        "zh": "加州大学伯克利分校"
       },
       "country": {
-        "en": "Berkeley, United States",
-        "zh": "Berkeley, United States"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.8715,
@@ -43200,8 +43200,8 @@ const milestones = [
         "zh": "NVIDIA"
       },
       "country": {
-        "en": "Santa Clara, United States",
-        "zh": "Santa Clara, United States"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.3541,
@@ -43737,11 +43737,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "University of Amsterdam",
-        "zh": "University of Amsterdam"
+        "zh": "阿姆斯特丹大学"
       },
       "country": {
-        "en": "Amsterdam, Netherlands",
-        "zh": "Amsterdam, Netherlands"
+        "en": "Netherlands",
+        "zh": "荷兰"
       },
       "coordinates": [
         52.3676,
@@ -44260,12 +44260,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Stanford University",
-        "zh": "斯坦福大学"
+        "en": "Stanford University, UC Berkeley",
+        "zh": "斯坦福大学、加州大学伯克利分校"
       },
       "country": {
-        "en": "Stanford, United States",
-        "zh": "美国斯坦福"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.4275,
@@ -44812,12 +44812,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Siena",
-        "zh": "锡耶纳大学"
+        "en": "University of Siena, Hong Kong Baptist University, University of Wollongong",
+        "zh": "锡耶纳大学、香港浸会大学、伍伦贡大学"
       },
       "country": {
-        "en": "Italy",
-        "zh": "意大利"
+        "en": "Italy, China, Australia",
+        "zh": "意大利、中国、澳大利亚"
       },
       "coordinates": [
         43.3188,
@@ -45432,11 +45432,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "University of Amsterdam",
-        "zh": "University of Amsterdam"
+        "zh": "阿姆斯特丹大学"
       },
       "country": {
-        "en": "Amsterdam, Netherlands",
-        "zh": "Amsterdam, Netherlands"
+        "en": "Netherlands",
+        "zh": "荷兰"
       },
       "coordinates": [
         52.3676,
@@ -45955,12 +45955,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Cambridge",
-        "zh": "University of Cambridge"
+        "en": "University of Cambridge, Montreal Institute for Learning Algorithms",
+        "zh": "剑桥大学、蒙特利尔学习算法研究所（MILA）"
       },
       "country": {
-        "en": "Cambridge, United Kingdom",
-        "zh": "Cambridge, United Kingdom"
+        "en": "United Kingdom, Canada",
+        "zh": "英国、加拿大"
       },
       "coordinates": [
         52.2053,
@@ -46489,12 +46489,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Google Brain",
-        "zh": "Google Brain"
+        "en": "Google",
+        "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.3861,
@@ -47013,12 +47013,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Stanford University",
-        "zh": "斯坦福大学"
+        "en": "Stanford University, Tsinghua University, NVIDIA",
+        "zh": "斯坦福大学、清华大学、NVIDIA"
       },
       "country": {
-        "en": "Stanford, United States",
-        "zh": "美国斯坦福"
+        "en": "United States, China",
+        "zh": "美国、中国"
       },
       "coordinates": [
         37.4275,
@@ -47551,8 +47551,8 @@ const milestones = [
         "zh": "Google"
       },
       "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.3861,
@@ -48079,12 +48079,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Princeton University / Stanford University",
-        "zh": "普林斯顿大学 / 斯坦福大学"
+        "en": "Princeton University, Stanford University, University of Michigan, MIT, UNC Chapel Hill",
+        "zh": "普林斯顿大学、斯坦福大学、密歇根大学、麻省理工学院、北卡罗来纳大学教堂山分校"
       },
       "country": {
-        "en": "New Jersey and California, United States",
-        "zh": "美国新泽西州与加利福尼亚州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         40.3431,
@@ -48586,12 +48586,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Microsoft Research",
-        "zh": "Microsoft Research"
+        "en": "Cornell NYC Tech, Toyota Technological Institute, Facebook, Microsoft, Brown University, California Institute of Technology, University of California at Irvine",
+        "zh": "康奈尔纽约科技校区、丰田工业大学芝加哥分校、Facebook、Microsoft、布朗大学、加州理工学院、加州大学欧文分校"
       },
       "country": {
-        "en": "Redmond, United States",
-        "zh": "Redmond, United States"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         47.674,
@@ -49110,12 +49110,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "GTE Laboratories / University of Massachusetts lineage",
-        "zh": "GTE 实验室 / 麻省大学学术谱系"
+        "en": "GTE Laboratories Incorporated",
+        "zh": "GTE 实验室"
       },
       "country": {
-        "en": "United States and Canada",
-        "zh": "美国与加拿大"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.3732,
@@ -49582,12 +49582,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "King's College Cambridge",
-        "zh": "King's College Cambridge"
+        "en": "King's College, University of Edinburgh",
+        "zh": "剑桥大学国王学院、爱丁堡大学"
       },
       "country": {
-        "en": "Cambridge, United Kingdom",
-        "zh": "Cambridge, United Kingdom"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         52.2043,
@@ -50106,12 +50106,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "DeepMind",
-        "zh": "DeepMind"
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.523,
@@ -50674,8 +50674,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "DeepMind, London",
-        "zh": "DeepMind，伦敦"
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
       },
       "country": {
         "en": "United Kingdom",
@@ -51231,11 +51231,11 @@ const milestones = [
     "location": {
       "name": {
         "en": "Google DeepMind",
-        "zh": "谷歌 DeepMind"
+        "zh": "Google DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国，伦敦"
+        "en": "United Kingdom, United States",
+        "zh": "英国、美国"
       },
       "coordinates": [
         51.5074,
@@ -51779,8 +51779,8 @@ const milestones = [
         "zh": "DeepMind"
       },
       "country": {
-        "en": "London, United Kingdom",
-        "zh": "英国伦敦"
+        "en": "United Kingdom",
+        "zh": "英国"
       },
       "coordinates": [
         51.5072,
@@ -52466,12 +52466,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Massachusetts Amherst",
-        "zh": "University of Massachusetts Amherst"
+        "en": "University of Massachusetts, Amherst",
+        "zh": "马萨诸塞大学阿默斯特分校"
       },
       "country": {
-        "en": "Amherst, United States",
-        "zh": "Amherst, United States"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.3868,
@@ -52990,12 +52990,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "DeepMind, United Kingdom",
-        "zh": "DeepMind，英国"
+        "en": "DeepMind, University of Montreal",
+        "zh": "DeepMind、蒙特利尔大学"
       },
       "country": {
-        "en": "United Kingdom",
-        "zh": "英国"
+        "en": "United Kingdom, Canada",
+        "zh": "英国、加拿大"
       },
       "coordinates": [
         51.5072,
@@ -53515,8 +53515,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Cambridge, United Kingdom",
-        "zh": "剑桥大学，英国"
+        "en": "University of Cambridge",
+        "zh": "剑桥大学"
       },
       "country": {
         "en": "United Kingdom",
@@ -54054,8 +54054,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Northeastern University, United States",
-        "zh": "东北大学，美国"
+        "en": "Northeastern University",
+        "zh": "东北大学"
       },
       "country": {
         "en": "United States",
@@ -54565,8 +54565,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "AT&T Labs, United States",
-        "zh": "AT&T 实验室，美国"
+        "en": "AT&T Labs",
+        "zh": "AT&T 实验室"
       },
       "country": {
         "en": "United States",
@@ -55090,12 +55090,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of California, Berkeley",
-        "zh": "加州大学伯克利分校"
+        "en": "UC Berkeley, Stanford University",
+        "zh": "加州大学伯克利分校、斯坦福大学"
       },
       "country": {
-        "en": "Berkeley, United States",
-        "zh": "美国伯克利"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.8715,
@@ -55602,8 +55602,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "New South Wales Institute of Technology, Australia",
-        "zh": "新南威尔士理工学院，澳大利亚"
+        "en": "New South Wales Institute of Technology",
+        "zh": "新南威尔士理工学院"
       },
       "country": {
         "en": "Australia",
@@ -56127,8 +56127,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "New South Wales Institute of Technology, Australia",
-        "zh": "新南威尔士理工学院，澳大利亚"
+        "en": "New South Wales Institute of Technology",
+        "zh": "新南威尔士理工学院"
       },
       "country": {
         "en": "Australia",
@@ -56652,8 +56652,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "UC Berkeley, United States",
-        "zh": "加州大学伯克利分校，美国"
+        "en": "UC Berkeley",
+        "zh": "加州大学伯克利分校"
       },
       "country": {
         "en": "United States",
@@ -57163,8 +57163,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Bell Labs and UC Berkeley, United States",
-        "zh": "贝尔实验室与加州大学伯克利分校，美国"
+        "en": "Bell Labs, UC Berkeley",
+        "zh": "贝尔实验室、加州大学伯克利分校"
       },
       "country": {
         "en": "United States",
@@ -57688,8 +57688,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "MIT, United States",
-        "zh": "麻省理工学院，美国"
+        "en": "MIT",
+        "zh": "麻省理工学院"
       },
       "country": {
         "en": "United States",
@@ -58213,8 +58213,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Bell Labs, United States",
-        "zh": "贝尔实验室，美国"
+        "en": "Bell Lab",
+        "zh": "贝尔实验室"
       },
       "country": {
         "en": "United States",
@@ -58752,8 +58752,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Stanford University, United States",
-        "zh": "斯坦福大学，美国"
+        "en": "Stanford University",
+        "zh": "斯坦福大学"
       },
       "country": {
         "en": "United States",
@@ -59277,8 +59277,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Washington, United States",
-        "zh": "华盛顿大学，美国"
+        "en": "University of Washington",
+        "zh": "华盛顿大学"
       },
       "country": {
         "en": "United States",
@@ -59816,12 +59816,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "Microsoft Research Asia and Peking University",
-        "zh": "微软亚洲研究院与北京大学"
+        "en": "Microsoft, Peking University",
+        "zh": "Microsoft、北京大学"
       },
       "country": {
-        "en": "China",
-        "zh": "中国"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         39.9042,
@@ -60345,8 +60345,8 @@ const milestones = [
         "zh": "加州大学洛杉矶分校"
       },
       "country": {
-        "en": "California, United States",
-        "zh": "美国加利福尼亚州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         34.0689,
@@ -60816,12 +60816,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "UC Berkeley / Stanford University",
-        "zh": "加州大学伯克利分校 / 斯坦福大学"
+        "en": "UC Berkeley, Stanford University",
+        "zh": "加州大学伯克利分校、斯坦福大学"
       },
       "country": {
-        "en": "California, United States",
-        "zh": "美国加利福尼亚州"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         37.8715,
@@ -61309,8 +61309,8 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Pennsylvania and partner labs",
-        "zh": "宾夕法尼亚大学及合作实验室"
+        "en": "MIT, University of Pennsylvania",
+        "zh": "麻省理工学院、宾夕法尼亚大学"
       },
       "country": {
         "en": "United States",
@@ -61848,12 +61848,12 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "University of Michigan",
-        "zh": "密歇根大学"
+        "en": "University of Michigan, Ann Arbor",
+        "zh": "密歇根大学安娜堡分校"
       },
       "country": {
-        "en": "Ann Arbor, United States",
-        "zh": "美国安娜堡"
+        "en": "United States",
+        "zh": "美国"
       },
       "coordinates": [
         42.278,
@@ -62323,11 +62323,11 @@ const milestones = [
     },
     "location": {
       "name": {
-        "en": "IBM Watson Research Center, Yorktown Heights",
-        "zh": "IBM 沃森研究中心，约克敦高地"
+        "en": "IBM",
+        "zh": "IBM"
       },
       "country": {
-        "en": "US",
+        "en": "United States",
         "zh": "美国"
       },
       "coordinates": [

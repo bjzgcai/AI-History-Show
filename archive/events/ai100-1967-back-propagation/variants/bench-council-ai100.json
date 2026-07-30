@@ -329,12 +329,12 @@
   },
   "location": {
     "name": {
-      "en": "Kyushu University and UC San Diego",
-      "zh": "九州大学与加州大学圣迭戈分校"
+      "en": "Kyushu University, UC San Diego, CMU",
+      "zh": "九州大学、加州大学圣迭戈分校、卡内基梅隆大学"
     },
     "country": {
-      "en": "Fukuoka and San Diego",
-      "zh": "福冈与圣迭戈"
+      "en": "Japan, United States",
+      "zh": "日本、美国"
     },
     "coordinates": [
       32.8731,

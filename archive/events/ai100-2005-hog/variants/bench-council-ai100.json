@@ -313,11 +313,11 @@
   "location": {
     "name": {
       "en": "INRIA",
-      "zh": "INRIA"
+      "zh": "法国国家信息与自动化研究所（INRIA）"
     },
     "country": {
-      "en": "Grenoble, France",
-      "zh": "法国格勒诺布尔"
+      "en": "France",
+      "zh": "法国"
     },
     "coordinates": [
       45.1938,

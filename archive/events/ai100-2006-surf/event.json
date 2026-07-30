@@ -17,12 +17,12 @@
   "location": {
     "regionId": "switzerland",
     "country": {
-      "zh": "瑞士苏黎世",
-      "en": "Zurich, Switzerland"
+      "en": "Switzerland",
+      "zh": "瑞士"
     },
     "place": {
-      "zh": "苏黎世联邦理工学院",
-      "en": "ETH Zurich"
+      "en": "ETH Zurich",
+      "zh": "苏黎世联邦理工学院"
     },
     "coordinates": [
       47.3763,

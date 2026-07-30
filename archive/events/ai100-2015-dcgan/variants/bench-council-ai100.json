@@ -352,12 +352,12 @@
   },
   "location": {
     "name": {
-      "en": "Facebook AI Research",
-      "zh": "Facebook AI Research"
+      "en": "indico Research, Facebook",
+      "zh": "indico 研究院、Facebook"
     },
     "country": {
-      "en": "New York, United States",
-      "zh": "New York, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.7128,

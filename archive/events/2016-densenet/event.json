@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国伊萨卡",
-      "en": "Ithaca, United States"
+      "en": "United States, China",
+      "zh": "美国、中国"
     },
     "place": {
-      "zh": "康奈尔大学",
-      "en": "Cornell University"
+      "en": "Cornell University, Tsinghua University, Facebook AI Research",
+      "zh": "康奈尔大学、清华大学、Facebook 人工智能研究院"
     },
     "coordinates": [
       42.4534,

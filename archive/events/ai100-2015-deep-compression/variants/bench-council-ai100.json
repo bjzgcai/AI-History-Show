@@ -362,12 +362,12 @@
   },
   "location": {
     "name": {
-      "en": "Stanford University",
-      "zh": "斯坦福大学"
+      "en": "Stanford University, Tsinghua University, NVIDIA",
+      "zh": "斯坦福大学、清华大学、NVIDIA"
     },
     "country": {
-      "en": "Stanford, United States",
-      "zh": "美国斯坦福"
+      "en": "United States, China",
+      "zh": "美国、中国"
     },
     "coordinates": [
       37.4275,

@@ -332,15 +332,10 @@ assert.match(
     /function buildLocationText\(location\)[\s\S]*?return `\$\{name\}\$\{uiText\(', ', '，'\)\}\$\{country\}`;/,
     'location names and countries should flow naturally instead of being split by a forced line break'
 );
-assert.match(
+assert.doesNotMatch(
     indexHtml,
-    /function formatUiCountryName\(value\)[\s\S]*?replace\(\/\\bUnited States\\b\/g, 'US'\)/,
-    'unified UI addresses should abbreviate United States as US in English'
-);
-assert.match(
-    indexHtml,
-    /vm\.location = formatUiLocation\(vm\.location\)/,
-    'country abbreviation should be applied to the normalized UI view model only'
+    /replace\(\/\\bUnited States\\b\/g, 'US'\)/,
+    'unified UI addresses should preserve complete English country names'
 );
 assert.match(
     indexHtml,
@@ -352,10 +347,20 @@ assert.doesNotMatch(
     /function buildLocationHtml\(/,
     'plain location text should not pass through a redundant HTML rendering helper'
 );
+assert.doesNotMatch(
+    indexHtml,
+    /class="ui-detail-place"[^>]*\stitle=/,
+    'detail locations should not duplicate the custom tooltip with a native title'
+);
 assert.match(
     indexHtml,
-    /class="ui-detail-place" title="\$\{escapeHtml\(locationText\)\}"/,
-    'detail locations should expose their full value on hover'
+    /function syncUiDetailLocationTooltip\(place, shell\)[\s\S]*?scrollHeight > place\.clientHeight[\s\S]*?has-truncated-address[\s\S]*?aria-describedby/,
+    'detail locations should enable their tooltip only when the visible address is truncated'
+);
+assert.match(
+    indexHtml,
+    /ui-detail-place-shell\.has-truncated-address:hover \.ui-detail-place-tooltip,[\s\S]*?focus-within \.ui-detail-place-tooltip[\s\S]*?visibility:\s*visible/,
+    'truncated detail addresses should reveal the complete address on hover or keyboard focus'
 );
 assert.match(
     indexHtml,

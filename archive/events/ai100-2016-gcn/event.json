@@ -17,12 +17,12 @@
   "location": {
     "regionId": "amsterdam-netherlands",
     "country": {
-      "zh": "Amsterdam, Netherlands",
-      "en": "Amsterdam, Netherlands"
+      "en": "Netherlands",
+      "zh": "荷兰"
     },
     "place": {
-      "zh": "University of Amsterdam",
-      "en": "University of Amsterdam"
+      "en": "University of Amsterdam",
+      "zh": "阿姆斯特丹大学"
     },
     "coordinates": [
       52.3676,

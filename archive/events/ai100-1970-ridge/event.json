@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国纽瓦克",
-      "en": "Newark, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "特拉华大学",
-      "en": "University of Delaware"
+      "en": "University of Delaware",
+      "zh": "特拉华大学"
     },
     "coordinates": [
       39.6779,

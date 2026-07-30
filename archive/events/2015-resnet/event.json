@@ -17,12 +17,12 @@
   "location": {
     "regionId": "china",
     "country": {
-      "zh": "中国北京",
-      "en": "Beijing, China"
+      "en": "China",
+      "zh": "中国"
     },
     "place": {
-      "zh": "微软亚洲研究院",
-      "en": "Microsoft Research Asia"
+      "en": "Microsoft Research (Asia)",
+      "zh": "微软亚洲研究院"
     },
     "coordinates": [
       39.9042,

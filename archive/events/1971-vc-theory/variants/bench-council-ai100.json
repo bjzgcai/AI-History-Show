@@ -245,12 +245,12 @@
   },
   "location": {
     "name": {
-      "en": "Institute of Control Sciences, Moscow",
+      "en": "Institute of Control Sciences Moscow",
       "zh": "莫斯科控制科学研究所"
     },
     "country": {
-      "en": "Moscow, Russia",
-      "zh": "俄罗斯，莫斯科"
+      "en": "Russia",
+      "zh": "俄罗斯"
     },
     "coordinates": [
       55.7558,

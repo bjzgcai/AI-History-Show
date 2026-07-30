@@ -306,12 +306,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Toronto",
-      "zh": "多伦多大学"
+      "en": "University of Toronto, National University of Singapore",
+      "zh": "多伦多大学、新加坡国立大学"
     },
     "country": {
-      "en": "Ontario, Canada",
-      "zh": "加拿大安大略省"
+      "en": "Canada, Singapore",
+      "zh": "加拿大、新加坡"
     },
     "coordinates": [
       43.6629,

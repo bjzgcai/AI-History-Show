@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "Berkeley, United States",
-      "en": "Berkeley, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "UC Berkeley",
-      "en": "UC Berkeley"
+      "en": "UC Berkeley",
+      "zh": "加州大学伯克利分校"
     },
     "coordinates": [
       37.8715,

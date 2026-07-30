@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大蒙特利尔",
-      "en": "Montreal, Canada"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "place": {
-      "zh": "蒙特利尔大学",
-      "en": "University of Montreal"
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
     },
     "coordinates": [
       45.5019,

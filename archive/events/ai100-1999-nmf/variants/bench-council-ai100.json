@@ -311,12 +311,12 @@
   },
   "location": {
     "name": {
-      "en": "Bell Labs and MIT",
-      "zh": "贝尔实验室与 MIT"
+      "en": "Bell Lab, MIT",
+      "zh": "贝尔实验室、麻省理工学院"
     },
     "country": {
-      "en": "New Jersey and Cambridge, United States",
-      "zh": "美国新泽西州与剑桥"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.6843,

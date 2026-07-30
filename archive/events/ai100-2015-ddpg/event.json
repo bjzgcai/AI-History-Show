@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国",
-      "en": "United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "DeepMind，伦敦",
-      "en": "DeepMind, London"
+      "en": "Google DeepMind",
+      "zh": "Google DeepMind"
     },
     "coordinates": [
       51.5072,

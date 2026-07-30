@@ -318,11 +318,11 @@
   },
   "location": {
     "name": {
-      "en": "IBM Watson Research Center, Yorktown Heights",
-      "zh": "IBM 沃森研究中心，约克敦高地"
+      "en": "IBM",
+      "zh": "IBM"
     },
     "country": {
-      "en": "US",
+      "en": "United States",
       "zh": "美国"
     },
     "coordinates": [

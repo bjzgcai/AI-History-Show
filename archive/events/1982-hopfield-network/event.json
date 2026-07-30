@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国加利福尼亚州",
-      "en": "California, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "加州理工学院",
-      "en": "California Institute of Technology"
+      "en": "California Institute of Technology",
+      "zh": "加州理工学院"
     },
     "coordinates": [
       34.1377,

@@ -332,12 +332,12 @@
   },
   "location": {
     "name": {
-      "en": "DeepMind",
-      "zh": "DeepMind"
+      "en": "Google DeepMind",
+      "zh": "Google DeepMind"
     },
     "country": {
-      "en": "London, United Kingdom",
-      "zh": "英国伦敦"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       51.523,

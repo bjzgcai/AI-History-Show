@@ -17,12 +17,12 @@
   "location": {
     "regionId": "germany",
     "country": {
-      "zh": "德国弗赖堡",
-      "en": "Freiburg, Germany"
+      "en": "Germany",
+      "zh": "德国"
     },
     "place": {
-      "zh": "弗赖堡大学",
-      "en": "University of Freiburg"
+      "en": "University of Freiburg",
+      "zh": "弗赖堡大学"
     },
     "coordinates": [
       47.999,

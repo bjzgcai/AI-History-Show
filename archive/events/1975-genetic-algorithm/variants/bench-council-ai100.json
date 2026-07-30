@@ -252,12 +252,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Michigan",
-      "zh": "密歇根大学"
+      "en": "University of Michigan, Ann Arbor",
+      "zh": "密歇根大学安娜堡分校"
     },
     "country": {
-      "en": "Ann Arbor, United States",
-      "zh": "美国安娜堡"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.278,

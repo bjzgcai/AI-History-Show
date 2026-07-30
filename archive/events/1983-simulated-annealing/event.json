@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国",
-      "en": "US"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "IBM 沃森研究中心，约克敦高地",
-      "en": "IBM Watson Research Center, Yorktown Heights"
+      "en": "IBM",
+      "zh": "IBM"
     },
     "coordinates": [
       41.2107,

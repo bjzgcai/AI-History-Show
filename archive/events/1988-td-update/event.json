@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国与加拿大",
-      "en": "United States and Canada"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "GTE 实验室 / 麻省大学学术谱系",
-      "en": "GTE Laboratories / University of Massachusetts lineage"
+      "en": "GTE Laboratories Incorporated",
+      "zh": "GTE 实验室"
     },
     "coordinates": [
       42.3732,

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国弗洛勒姆帕克",
-      "en": "Florham Park, United States"
+      "en": "United States, United Kingdom",
+      "zh": "美国、英国"
     },
     "place": {
-      "zh": "AT&T 实验室",
-      "en": "AT&T Labs"
+      "en": "AT&T Labs, University College London",
+      "zh": "AT&T 实验室、伦敦大学学院"
     },
     "coordinates": [
       40.7879,

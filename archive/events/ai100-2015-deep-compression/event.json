@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国斯坦福",
-      "en": "Stanford, United States"
+      "en": "United States, China",
+      "zh": "美国、中国"
     },
     "place": {
-      "zh": "斯坦福大学",
-      "en": "Stanford University"
+      "en": "Stanford University, Tsinghua University, NVIDIA",
+      "zh": "斯坦福大学、清华大学、NVIDIA"
     },
     "coordinates": [
       37.4275,

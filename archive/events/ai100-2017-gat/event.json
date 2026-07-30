@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "Cambridge, United Kingdom",
-      "en": "Cambridge, United Kingdom"
+      "en": "United Kingdom, Canada",
+      "zh": "英国、加拿大"
     },
     "place": {
-      "zh": "University of Cambridge",
-      "en": "University of Cambridge"
+      "en": "University of Cambridge, Montreal Institute for Learning Algorithms",
+      "zh": "剑桥大学、蒙特利尔学习算法研究所（MILA）"
     },
     "coordinates": [
       52.2053,

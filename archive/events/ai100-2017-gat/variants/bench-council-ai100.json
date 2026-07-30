@@ -362,12 +362,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Cambridge",
-      "zh": "University of Cambridge"
+      "en": "University of Cambridge, Montreal Institute for Learning Algorithms",
+      "zh": "剑桥大学、蒙特利尔学习算法研究所（MILA）"
     },
     "country": {
-      "en": "Cambridge, United Kingdom",
-      "zh": "Cambridge, United Kingdom"
+      "en": "United Kingdom, Canada",
+      "zh": "英国、加拿大"
     },
     "coordinates": [
       52.2053,

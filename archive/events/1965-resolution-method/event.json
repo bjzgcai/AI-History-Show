@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国",
-      "en": "United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "阿贡国家实验室 / 雪城大学",
-      "en": "Argonne National Laboratory / Syracuse University"
+      "en": "Argonne National Laboratory",
+      "zh": "阿贡国家实验室"
     },
     "coordinates": [
       41.7181,

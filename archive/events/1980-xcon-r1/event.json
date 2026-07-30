@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国宾夕法尼亚州",
-      "en": "Pennsylvania, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "卡内基梅隆大学",
-      "en": "Carnegie Mellon University"
+      "en": "CMU",
+      "zh": "卡内基梅隆大学"
     },
     "coordinates": [
       40.4433,

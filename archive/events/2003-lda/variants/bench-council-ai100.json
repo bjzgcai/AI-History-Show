@@ -302,12 +302,12 @@
   },
   "location": {
     "name": {
-      "en": "UC Berkeley / Stanford University",
-      "zh": "加州大学伯克利分校 / 斯坦福大学"
+      "en": "UC Berkeley, Stanford University",
+      "zh": "加州大学伯克利分校、斯坦福大学"
     },
     "country": {
-      "en": "California, United States",
-      "zh": "美国加利福尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.8715,

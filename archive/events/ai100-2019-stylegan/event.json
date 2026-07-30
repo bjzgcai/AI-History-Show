@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "Santa Clara, United States",
-      "en": "Santa Clara, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "NVIDIA",
-      "en": "NVIDIA"
+      "en": "NVIDIA",
+      "zh": "NVIDIA"
     },
     "coordinates": [
       37.3541,

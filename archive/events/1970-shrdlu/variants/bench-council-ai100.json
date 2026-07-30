@@ -284,12 +284,12 @@
   },
   "location": {
     "name": {
-      "en": "MIT Artificial Intelligence Laboratory",
-      "zh": "麻省理工学院 人工智能实验室"
+      "en": "MIT",
+      "zh": "麻省理工学院"
     },
     "country": {
-      "en": "Massachusetts, United States",
-      "zh": "美国马萨诸塞州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.3601,

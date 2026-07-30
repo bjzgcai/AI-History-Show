@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国新泽西州与剑桥",
-      "en": "New Jersey and Cambridge, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "贝尔实验室与 MIT",
-      "en": "Bell Labs and MIT"
+      "en": "Bell Lab, MIT",
+      "zh": "贝尔实验室、麻省理工学院"
     },
     "coordinates": [
       40.6843,

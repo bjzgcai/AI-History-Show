@@ -17,12 +17,12 @@
   "location": {
     "regionId": "moscow-russia",
     "country": {
-      "zh": "俄罗斯，莫斯科",
-      "en": "Moscow, Russia"
+      "en": "Russia",
+      "zh": "俄罗斯"
     },
     "place": {
-      "zh": "莫斯科控制科学研究所",
-      "en": "Institute of Control Sciences, Moscow"
+      "en": "Institute of Control Sciences Moscow",
+      "zh": "莫斯科控制科学研究所"
     },
     "coordinates": [
       55.7558,

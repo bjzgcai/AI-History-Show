@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国马萨诸塞州",
-      "en": "Massachusetts, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "麻省理工学院 林肯实验室",
-      "en": "MIT Lincoln Laboratory"
+      "en": "MIT",
+      "zh": "麻省理工学院"
     },
     "coordinates": [
       42.4595,

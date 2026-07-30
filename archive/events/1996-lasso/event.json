@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大多伦多",
-      "en": "Toronto, Canada"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "place": {
-      "zh": "多伦多大学",
-      "en": "University of Toronto"
+      "en": "University of Toronto",
+      "zh": "多伦多大学"
     },
     "coordinates": [
       43.6629,

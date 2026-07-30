@@ -325,12 +325,12 @@
     },
     "location": {
         "name": {
-            "en": "Microsoft Research Asia",
+            "en": "Microsoft Research (Asia)",
             "zh": "微软亚洲研究院"
         },
         "country": {
-            "en": "Beijing, China",
-            "zh": "中国北京"
+            "en": "China",
+            "zh": "中国"
         },
         "coordinates": [
             39.9042,

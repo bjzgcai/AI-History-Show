@@ -285,12 +285,12 @@
   },
   "location": {
     "name": {
-      "en": "Microelectronics and Computer Technology Corporation",
+      "en": "MCC",
       "zh": "微电子与计算机技术公司（MCC）"
     },
     "country": {
-      "en": "Texas, United States",
-      "zh": "美国得克萨斯州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       30.2672,

@@ -273,12 +273,12 @@
   },
   "location": {
     "name": {
-      "en": "National Physical Laboratory",
-      "zh": "英国国家物理实验室"
+      "en": "National Research Development Corporation",
+      "zh": "英国国家研究开发公司"
     },
     "country": {
-      "en": "Teddington, United Kingdom",
-      "zh": "英国特丁顿"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       51.4245,

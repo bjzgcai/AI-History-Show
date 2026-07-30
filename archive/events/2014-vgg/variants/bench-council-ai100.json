@@ -263,12 +263,12 @@
   },
   "location": {
     "name": {
-      "en": "Visual Geometry Group, University of Oxford",
-      "zh": "牛津大学视觉几何组"
+      "en": "University of Oxford",
+      "zh": "牛津大学"
     },
     "country": {
-      "en": "Oxford, United Kingdom",
-      "zh": "英国牛津"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       51.7548,

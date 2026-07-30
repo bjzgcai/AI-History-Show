@@ -17,12 +17,12 @@
   "location": {
     "regionId": "france",
     "country": {
-      "zh": "法国格勒诺布尔",
-      "en": "Grenoble, France"
+      "en": "France",
+      "zh": "法国"
     },
     "place": {
-      "zh": "INRIA",
-      "en": "INRIA"
+      "en": "INRIA",
+      "zh": "法国国家信息与自动化研究所（INRIA）"
     },
     "coordinates": [
       45.1938,

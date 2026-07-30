@@ -284,11 +284,11 @@
   "location": {
     "name": {
       "en": "Google DeepMind",
-      "zh": "谷歌 DeepMind"
+      "zh": "Google DeepMind"
     },
     "country": {
-      "en": "London, United Kingdom",
-      "zh": "英国，伦敦"
+      "en": "United Kingdom, United States",
+      "zh": "英国、美国"
     },
     "coordinates": [
       51.5074,

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国牛津",
-      "en": "Oxford, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "牛津大学视觉几何组",
-      "en": "Visual Geometry Group, University of Oxford"
+      "en": "University of Oxford",
+      "zh": "牛津大学"
     },
     "coordinates": [
       51.7548,

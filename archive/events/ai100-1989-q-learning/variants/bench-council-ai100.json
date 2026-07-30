@@ -352,12 +352,12 @@
   },
   "location": {
     "name": {
-      "en": "King's College Cambridge",
-      "zh": "King's College Cambridge"
+      "en": "King's College, University of Edinburgh",
+      "zh": "剑桥大学国王学院、爱丁堡大学"
     },
     "country": {
-      "en": "Cambridge, United Kingdom",
-      "zh": "Cambridge, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       52.2043,

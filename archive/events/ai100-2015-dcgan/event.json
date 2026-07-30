@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "New York, United States",
-      "en": "New York, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "Facebook AI Research",
-      "en": "Facebook AI Research"
+      "en": "indico Research, Facebook",
+      "zh": "indico 研究院、Facebook"
     },
     "coordinates": [
       40.7128,

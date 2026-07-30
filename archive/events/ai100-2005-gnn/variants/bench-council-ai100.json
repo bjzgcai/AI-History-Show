@@ -371,12 +371,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Siena",
-      "zh": "锡耶纳大学"
+      "en": "University of Siena, Hong Kong Baptist University, University of Wollongong",
+      "zh": "锡耶纳大学、香港浸会大学、伍伦贡大学"
     },
     "country": {
-      "en": "Italy",
-      "zh": "意大利"
+      "en": "Italy, China, Australia",
+      "zh": "意大利、中国、澳大利亚"
     },
     "coordinates": [
       43.3188,

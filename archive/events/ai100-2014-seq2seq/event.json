@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "en": "Canada and United States",
-      "zh": "加拿大与美国"
+      "en": "Canada, Germany, France, United States",
+      "zh": "加拿大、德国、法国、美国"
     },
     "place": {
-      "en": "University of Montreal and Google",
-      "zh": "蒙特利尔大学与 Google"
+      "en": "University of Montreal, Jacobs University, University of Maine, Google",
+      "zh": "蒙特利尔大学、雅各布大学、缅因大学、Google"
     },
     "coordinates": [
       45.5019,

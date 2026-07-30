@@ -352,12 +352,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Montreal",
-      "zh": "蒙特利尔大学"
+      "en": "University of Montreal, Yahoo",
+      "zh": "蒙特利尔大学、Yahoo"
     },
     "country": {
-      "en": "Montreal, Canada",
-      "zh": "加拿大蒙特利尔"
+      "en": "Canada, United States",
+      "zh": "加拿大、美国"
     },
     "coordinates": [
       45.5019,
