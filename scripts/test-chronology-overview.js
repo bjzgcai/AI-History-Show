@@ -45,6 +45,23 @@ assert.equal(
     null,
     'a storyline filter should omit events outside that storyline'
 );
+const canonicalAlphaFold = canonicalMilestones.find((item) => item.archiveEventId === '2020-alphafold');
+assert.ok(canonicalAlphaFold, 'the canonical AlphaFold event should exist');
+assert.deepEqual(
+    canonicalAlphaFold.title,
+    { zh: 'AlphaFold', en: 'AlphaFold' },
+    'the all-events view should prefer the AI100 title for overlapping events'
+);
+assert.deepEqual(
+    overview.selectMilestoneVariant(canonicalAlphaFold, 'bench-council-ai100').title,
+    { zh: 'AlphaFold', en: 'AlphaFold' },
+    'the AI100 filter should retain the AI100 title'
+);
+assert.deepEqual(
+    overview.selectMilestoneVariant(canonicalAlphaFold, 'deep-learning').title,
+    { zh: 'AlphaFold2', en: 'AlphaFold2' },
+    'an individual storyline filter should display that storyline title'
+);
 assert.equal(
     overview.selectMilestonesByStoryline(canonicalMilestones, 'deep-learning').length,
     21,

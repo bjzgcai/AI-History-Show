@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-30 08:06
+// 生成时间: 2026-07-30 09:06
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 165, errors 0
 
@@ -51762,8 +51762,8 @@ const milestones = [
     "year": 2020,
     "date": "2020",
     "title": {
-      "zh": "AlphaFold2",
-      "en": "AlphaFold2"
+      "zh": "AlphaFold",
+      "en": "AlphaFold"
     },
     "subtitle": {
       "zh": "AI 百大成就",
