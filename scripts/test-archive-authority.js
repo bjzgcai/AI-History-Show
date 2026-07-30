@@ -192,6 +192,31 @@ assert.deepEqual(
 console.log('PASS production compiler emits Archive provenance');
 
 assert.equal(milestones.length, 165, 'Archive runtime should contain all four storylines and 165 milestones');
+const ai100AlphaFold = milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '2020-alphafold' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'bench-council-ai100'
+);
+const deepLearningAlphaFold = milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '2020-alphafold' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'deep-learning'
+);
+assert.ok(ai100AlphaFold, 'AI100 should contain the shared AlphaFold event');
+assert.ok(deepLearningAlphaFold, 'deep learning should contain the shared AlphaFold event');
+assert.deepEqual(
+    ai100AlphaFold.title,
+    { zh: 'AlphaFold', en: 'AlphaFold' },
+    'AI100 should use the canonical BenchCouncil AlphaFold title'
+);
+assert.deepEqual(
+    deepLearningAlphaFold.title,
+    { zh: 'AlphaFold2', en: 'AlphaFold2' },
+    'deep learning should retain the generation-specific AlphaFold2 title'
+);
+console.log('PASS AlphaFold titles stay specific to their storyline');
 const humanisticMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'humanistic-cycle'
 );
