@@ -55,10 +55,10 @@
     "asset-1967-back-propagation-error-flow"
   ],
   "sourceIds": [
-    "source-learning-representations-by-back-propagating-errors",
     "source-a-theory-of-adaptive-pattern-classifiers",
     "source-hinton-hosted-nature-back-propagation-pdf",
-    "source-backpropagation-overview"
+    "source-backpropagation-overview",
+    "source-learning-representations-by-back-propagating-errors"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -123,7 +123,7 @@
   "figures": [
     {
       "name": {
-        "en": "Shunichi Amari",
+        "en": "Shun'ichi Amari",
         "zh": "甘利俊一"
       },
       "role": {
@@ -132,7 +132,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -145,7 +146,22 @@
       },
       "avatar": "resources/images/figures/david-rumelhart.jpg",
       "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Ronald Williams",
+        "zh": "罗纳德·威廉姆斯"
+      },
+      "role": {
+        "en": "Backpropagation co-author",
+        "zh": "BP算法共同作者"
+      },
+      "avatar": "resources/images/figures/ronald-williams.jpg",
+      "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

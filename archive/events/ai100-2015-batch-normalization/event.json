@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "sergey-ioffe",
-      "role": {
-        "zh": "批归一化共同作者",
-        "en": "Co-author of Batch Normalization"
+      "name": {
+        "en": "Sergey Ioffe",
+        "zh": "谢尔盖·约费"
       },
+      "role": {
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "christian-szegedy",
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
       "role": {
-        "zh": "批归一化共同作者",
-        "en": "Co-author of Batch Normalization"
+        "en": "Co-author of Batch Normalization",
+        "zh": "批归一化共同作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

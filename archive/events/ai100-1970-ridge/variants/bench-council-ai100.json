@@ -55,10 +55,10 @@
     "asset-1970-ridge-shrinkage"
   ],
   "sourceIds": [
-    "source-ridge-regression-biased-estimation-for-nonorthogonal-problems",
     "source-open-pdf-copy-of-the-technometrics-paper",
     "source-ridge-regression-overview",
-    "source-scikit-learn-ridge-documentation"
+    "source-scikit-learn-ridge-documentation",
+    "source-ridge-regression-biased-estimation-for-nonorthogonal-problems"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -130,9 +130,10 @@
         "en": "Co-author of ridge regression",
         "zh": "岭回归共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1970-ridge/arthur-hoerl-and-the-ridge-regression-formula.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -145,7 +146,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

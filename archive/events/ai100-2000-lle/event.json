@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "sam-roweis",
+      "name": {
+        "en": "Sam Roweis",
+        "zh": "萨姆·罗维斯"
+      },
       "role": {
-        "zh": "LLE 共同作者",
-        "en": "Co-author of LLE"
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
       },
       "avatar": "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "lawrence-saul",
-      "role": {
-        "zh": "LLE 共同作者",
-        "en": "Co-author of LLE"
+      "name": {
+        "en": "Lawrence Saul",
+        "zh": "劳伦斯·索尔"
       },
+      "role": {
+        "en": "Co-author of LLE",
+        "zh": "LLE 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

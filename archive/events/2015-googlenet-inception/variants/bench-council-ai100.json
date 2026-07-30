@@ -56,9 +56,9 @@
     "asset-2015-googlenet-inception-bottleneck"
   ],
   "sourceIds": [
-    "source-going-deeper-with-convolutions",
     "source-torchvision-googlenet",
-    "source-tensorflow-keras-inceptionv3"
+    "source-tensorflow-keras-inceptionv3",
+    "source-going-deeper-with-convolutions"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,22 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Vincent Vanhoucke",
+        "zh": "文森特·范霍克"
+      },
+      "role": {
+        "en": "GooleNet (Inception) co-author",
+        "zh": "GooleNet (Inception) 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {

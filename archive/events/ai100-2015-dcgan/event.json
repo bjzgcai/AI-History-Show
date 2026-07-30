@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "alec-radford",
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
       "role": {
-        "zh": "DCGAN 主要作者",
-        "en": "DCGAN lead author"
+        "en": "DCGAN lead author",
+        "zh": "DCGAN 主要作者"
       },
       "avatar": "resources/images/figures/alec-radford.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Soumith Chintala",
+        "zh": "苏米特·钦塔拉"
+      },
+      "role": {
+        "en": "DCGAN co-author",
+        "zh": "DCGAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

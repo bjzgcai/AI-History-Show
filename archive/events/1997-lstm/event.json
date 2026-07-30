@@ -37,21 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "sepp-hochreiter",
+      "name": {
+        "en": "Sepp Hochreiter",
+        "zh": "塞普·霍赫赖特"
+      },
       "role": {
-        "zh": "LSTM 共同作者",
-        "en": "LSTM co-author"
+        "en": "LSTM co-author",
+        "zh": "LSTM 共同作者"
       },
       "avatar": "resources/images/figures/sepp-hochreiter.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "j-rgen-schmidhuber",
+      "name": {
+        "en": "Juergen Schmidhuber",
+        "zh": "尤尔根·施密德胡伯"
+      },
       "role": {
-        "zh": "LSTM 共同作者",
-        "en": "LSTM co-author"
+        "en": "LSTM co-author",
+        "zh": "LSTM 共同作者"
       },
       "avatar": "resources/images/1997-lstm/people/1997-lstm_people_01.png",
+      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 42%;",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

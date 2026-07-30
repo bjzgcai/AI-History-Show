@@ -139,12 +139,13 @@
       },
       "avatar": "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "C. Daniel Gelatt Jr.",
-        "zh": "C·丹尼尔·格拉特 Jr."
+        "en": "Mario Vecchi",
+        "zh": "马里奥·P·维基"
       },
       "role": {
         "en": "Co-author and IBM researcher",
@@ -152,12 +153,13 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "Mario P. Vecchi",
-        "zh": "马里奥·P·维基"
+        "en": "C. Daniel Gelatt Jr.",
+        "zh": "C·丹尼尔·格拉特 Jr."
       },
       "role": {
         "en": "Co-author and IBM researcher",

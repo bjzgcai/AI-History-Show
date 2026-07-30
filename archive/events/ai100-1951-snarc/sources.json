@@ -98,5 +98,25 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "historical-context"
+  },
+  {
+    "id": "source-marvin-minsky-papers-archive",
+    "type": "archive",
+    "label": {
+      "zh": "档案",
+      "en": "Archive"
+    },
+    "title": {
+      "zh": "麻省理工学院档案馆：马文·明斯基论文档案",
+      "en": "MIT Archives: Marvin Minsky papers"
+    },
+    "url": "https://archivesspace.mit.edu/repositories/2/resources/594",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "马文·明斯基研究档案的机构级目录记录，为 SNARC 早期工作提供原始档案入口。",
+      "en": "Institutional finding aid for Marvin Minsky's research papers, providing a primary archival entry point for the early SNARC work."
+    },
+    "purpose": "core-evidence"
   }
 ]

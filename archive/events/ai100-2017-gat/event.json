@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "petar-velickovic",
+      "name": {
+        "en": "Petar Velickovic",
+        "zh": "佩塔尔·韦利奇科维奇"
+      },
       "role": {
-        "zh": "GAT 主要作者",
-        "en": "GAT lead author"
+        "en": "GAT lead author",
+        "zh": "GAT 主要作者"
       },
       "avatar": "resources/images/external/ai100-2017-gat/petar-velickovic-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

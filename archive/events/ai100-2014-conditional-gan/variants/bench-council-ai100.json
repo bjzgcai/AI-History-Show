@@ -55,9 +55,9 @@
     "asset-2014-conditional-gan-conditioned-generator"
   ],
   "sourceIds": [
-    "source-conditional-generative-adversarial-nets",
     "source-generative-adversarial-network-overview",
-    "source-generative-adversarial-nets"
+    "source-generative-adversarial-nets",
+    "source-conditional-generative-adversarial-nets"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Simon Osindero",
+        "zh": "西蒙·奥辛德罗"
+      },
+      "role": {
+        "en": "Conditional GAN co-author",
+        "zh": "Conditional GAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

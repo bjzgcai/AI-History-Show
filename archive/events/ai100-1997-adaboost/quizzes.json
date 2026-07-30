@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1997-adaboost-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "Which examples receive more weight in the next AdaBoost round?",
+      "zh": "AdaBoost 下一轮会提高哪些样本的权重？"
+    },
+    "options": [
+      {
+        "en": "Previously misclassified examples",
+        "zh": "此前被误分类的样本"
+      },
+      {
+        "en": "Only the easiest examples",
+        "zh": "仅最容易的样本"
+      },
+      {
+        "en": "Examples never seen by the model",
+        "zh": "模型从未见过的样本"
+      },
+      {
+        "en": "All examples equally forever",
+        "zh": "所有样本始终等权"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "After each weak classifier, AdaBoost increases the weights of misclassified examples and decreases the weights of correctly classified ones. The final prediction is a weighted vote whose coefficients depend on each learner’s accuracy.",
+      "zh": "每训练一个弱分类器后，AdaBoost 提高误分类样本权重，降低正确分类样本权重。最终预测是加权投票，各学习器系数取决于其准确性。"
+    },
+    "sourceIds": [
+      "source-1997-adaboost-primary"
+    ],
+    "assetIds": [
+      "asset-1997-adaboost-explainer"
+    ]
+  }
+]

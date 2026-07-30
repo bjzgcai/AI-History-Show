@@ -55,10 +55,10 @@
     "asset-2006-surf-interest-points"
   ],
   "sourceIds": [
-    "source-surf-speeded-up-robust-features",
     "source-eth-surf-paper-pdf",
     "source-original-surf-project-page",
-    "source-surf-overview"
+    "source-surf-overview",
+    "source-surf-speeded-up-robust-features"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,22 @@
       },
       "avatar": "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Andreas Ess",
+        "zh": "安德烈亚斯·埃斯"
+      },
+      "role": {
+        "en": "SURF co-author",
+        "zh": "SURF 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {

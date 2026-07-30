@@ -1066,6 +1066,10 @@
             line-height: 1.18;
         }
 
+        .no-orphan-tail {
+            white-space: nowrap;
+        }
+
         .archive-stage {
             position: absolute;
             left: 23px;
@@ -1973,6 +1977,14 @@
                 .replace(/'/g, '&#39;');
         }
 
+        function escapeHtmlWithCjkTail(value) {
+            const text = String(value == null ? '' : value);
+            const match = text.match(/([\u3400-\u9fff]{2}[，。！？；：、）》】」』”’]*)$/u);
+            if (!match) return escapeHtml(text);
+            const tail = match[1];
+            return `${escapeHtml(text.slice(0, -tail.length))}<span class="no-orphan-tail">${escapeHtml(tail)}</span>`;
+        }
+
         function debounce(func, wait) {
             let timeout;
             return function executedFunction(...args) {
@@ -2197,8 +2209,8 @@
         }
 
         function buildLocationHtml(location) {
-            const name = escapeHtml(location && location.name ? location.name : '');
-            const country = escapeHtml(location && location.country ? location.country : '');
+            const name = escapeHtmlWithCjkTail(location && location.name ? location.name : '');
+            const country = escapeHtmlWithCjkTail(location && location.country ? location.country : '');
             if (name && country) {
                 return `${name}<br>${country}`;
             }
@@ -3352,7 +3364,7 @@
             refs.heroYear.textContent = vm.year || '';
             refs.leftBottomYear.textContent = vm.year || '';
             refs.ghostYears.innerHTML = yearsAfter.map((year) => `<span>${year}</span>`).join('');
-            refs.summaryTitle.textContent = vm.title || '';
+            refs.summaryTitle.innerHTML = escapeHtmlWithCjkTail(vm.title || '');
             refs.summaryLocation.innerHTML = buildLocationHtml(vm.location);
             refs.summaryBody.innerHTML = buildSummaryHtml(vm);
 
@@ -3400,8 +3412,8 @@
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
-                        <div class="figure-name">${escapeHtml(figure.name || tx('keyFigure'))}</div>
-                        <div class="figure-role">${escapeHtml(figure.role || tx('keyParticipant'))}</div>
+                        <div class="figure-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</div>
+                        <div class="figure-role">${escapeHtmlWithCjkTail(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
             `).join('');
@@ -3472,12 +3484,12 @@
             refs.archiveFocusButton.dataset.photoIndex = String(currentArchiveIndex);
             refs.archiveFocusButton.classList.toggle('is-empty', !hasPhotos);
             refs.archiveFocusButton.disabled = !hasPhotos;
-            refs.archivePrevCaption.textContent = prevMeta.name;
-            refs.archivePrevSubcaption.textContent = prevMeta.role;
-            refs.archiveCaption.textContent = activeMeta.name;
-            refs.archiveSubcaption.textContent = activeMeta.role;
-            refs.archiveNextCaption.textContent = nextMeta.name;
-            refs.archiveNextSubcaption.textContent = nextMeta.role;
+            refs.archivePrevCaption.innerHTML = escapeHtmlWithCjkTail(prevMeta.name);
+            refs.archivePrevSubcaption.innerHTML = escapeHtmlWithCjkTail(prevMeta.role);
+            refs.archiveCaption.innerHTML = escapeHtmlWithCjkTail(activeMeta.name);
+            refs.archiveSubcaption.innerHTML = escapeHtmlWithCjkTail(activeMeta.role);
+            refs.archiveNextCaption.innerHTML = escapeHtmlWithCjkTail(nextMeta.name);
+            refs.archiveNextSubcaption.innerHTML = escapeHtmlWithCjkTail(nextMeta.role);
 
             refs.archiveDots.innerHTML = safePhotos.map((_, index) => `
                 <button class="archive-dot ${index === currentArchiveIndex ? 'active' : ''}" type="button" data-index="${index}"></button>

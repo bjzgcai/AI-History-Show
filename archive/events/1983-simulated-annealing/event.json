@@ -37,29 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "scott-kirkpatrick",
+      "name": {
+        "en": "Scott Kirkpatrick",
+        "zh": "斯科特·柯克帕特里克"
+      },
       "role": {
-        "zh": "模拟退火论文第一作者、IBM 研究员",
-        "en": "Lead author and IBM researcher"
+        "en": "Lead author and IBM researcher",
+        "zh": "模拟退火论文第一作者、IBM 研究员"
       },
       "avatar": "resources/images/external/1983-simulated-annealing/scott-kirkpatrick-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "c-daniel-gelatt-jr",
-      "role": {
-        "zh": "模拟退火论文共同作者、IBM 研究员",
-        "en": "Co-author and IBM researcher"
+      "name": {
+        "en": "Mario Vecchi",
+        "zh": "马里奥·P·维基"
       },
+      "role": {
+        "en": "Co-author and IBM researcher",
+        "zh": "模拟退火论文共同作者、IBM 研究员"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "mario-p-vecchi",
-      "role": {
-        "zh": "模拟退火论文共同作者、IBM 研究员",
-        "en": "Co-author and IBM researcher"
+      "name": {
+        "en": "C. Daniel Gelatt Jr.",
+        "zh": "C·丹尼尔·格拉特 Jr."
       },
-      "organizationIds": []
+      "role": {
+        "en": "Co-author and IBM researcher",
+        "zh": "模拟退火论文共同作者、IBM 研究员"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

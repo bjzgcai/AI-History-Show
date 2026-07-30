@@ -55,9 +55,9 @@
     "asset-2014-ms-coco-context-dataset"
   ],
   "sourceIds": [
-    "source-microsoft-coco-common-objects-in-context",
     "source-coco-dataset-website",
-    "source-eccv-springer-record"
+    "source-eccv-springer-record",
+    "source-microsoft-coco-common-objects-in-context"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Piotr Dollar",
+        "zh": "彼得·多拉尔"
+      },
+      "role": {
+        "en": "MS COCO co-author",
+        "zh": "MS COCO 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

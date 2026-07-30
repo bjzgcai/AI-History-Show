@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2018-squeeze-excitation-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What does an SE block learn to reweight?",
+      "zh": "SE 模块学习重新加权什么？"
+    },
+    "options": [
+      {
+        "en": "Feature channels",
+        "zh": "特征通道"
+      },
+      {
+        "en": "Training examples",
+        "zh": "训练样本"
+      },
+      {
+        "en": "Image coordinates only",
+        "zh": "仅图像坐标"
+      },
+      {
+        "en": "The number of classes",
+        "zh": "类别数量"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "A squeeze operation summarizes each channel globally, and a small excitation network predicts channel-wise gates. Multiplying those gates back into the feature map lets the network amplify informative channels and suppress weaker ones.",
+      "zh": "挤压操作对每个通道进行全局汇总，小型激励网络再预测逐通道门控权重。把这些权重乘回特征图后，网络可以增强有用通道并抑制较弱通道。"
+    },
+    "sourceIds": [
+      "source-2018-squeeze-excitation-primary"
+    ],
+    "assetIds": [
+      "asset-2018-squeeze-excitation-explainer"
+    ]
+  }
+]

@@ -23,10 +23,10 @@
     "asset-transformer-paper-page"
   ],
   "sourceIds": [
-    "source-transformer-arxiv",
     "source-transformer-neurips",
     "source-google-research-publication",
-    "source-google-transformer-blog"
+    "source-google-transformer-blog",
+    "source-transformer-arxiv"
   ],
   "claimIds": [
     "claim-attention-only-architecture",
@@ -98,7 +98,8 @@
       },
       "avatar": "resources/images/figures/ashish-vaswani.jpg",
       "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -111,7 +112,78 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Niki Parmar",
+        "zh": "妮基·帕尔马"
+      },
+      "role": {
+        "en": "Transformer co-author",
+        "zh": "Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jakob Uszkoreit",
+        "zh": "雅各布·乌斯科雷特"
+      },
+      "role": {
+        "en": "Transformer co-author",
+        "zh": "Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Llion Jones",
+        "zh": "利昂·琼斯"
+      },
+      "role": {
+        "en": "Transformer co-author",
+        "zh": "Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Aidan Gomez",
+        "zh": "艾丹·戈麦斯"
+      },
+      "role": {
+        "en": "Transformer co-author",
+        "zh": "Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Lukasz Kaiser",
+        "zh": "卢卡什·凯泽"
+      },
+      "role": {
+        "en": "Transformer co-author",
+        "zh": "Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

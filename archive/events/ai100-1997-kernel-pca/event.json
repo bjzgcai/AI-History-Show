@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "bernhard-scholkopf",
+      "name": {
+        "en": "Bernhard Schölkopf",
+        "zh": "伯恩哈德·舍尔科普夫"
+      },
       "role": {
-        "zh": "Kernel PCA 共同作者",
-        "en": "Co-author of Kernel PCA"
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
       },
       "avatar": "resources/images/external/ai100-1997-kernel-pca/bernhard-scholkopf-portrait.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "klaus-robert-muller",
-      "role": {
-        "zh": "Kernel PCA 共同作者",
-        "en": "Co-author of Kernel PCA"
+      "name": {
+        "en": "Klaus-Robert Muller",
+        "zh": "克劳斯-罗伯特·穆勒"
       },
+      "role": {
+        "en": "Co-author of Kernel PCA",
+        "zh": "Kernel PCA 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

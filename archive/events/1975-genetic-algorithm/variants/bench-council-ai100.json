@@ -24,9 +24,9 @@
     "asset-1975-genetic-algorithm-chromosome-crossover"
   ],
   "sourceIds": [
-    "source-adaptation-in-natural-and-artificial-systems",
     "source-deap-evolutionary-computation-framework",
-    "source-ecj-evolutionary-computation-system"
+    "source-ecj-evolutionary-computation-system",
+    "source-adaptation-in-natural-and-artificial-systems"
   ],
   "claimIds": [
     "claim-ai100-achievement",
@@ -91,7 +91,7 @@
   "figures": [
     {
       "name": {
-        "en": "John H. Holland",
+        "en": "John Holland",
         "zh": "约翰·H·霍兰德"
       },
       "role": {
@@ -100,7 +100,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

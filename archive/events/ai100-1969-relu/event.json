@@ -37,21 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "kunihiko-fukushima",
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
       "role": {
-        "zh": "早期神经视觉研究者",
-        "en": "Early neural vision researcher"
+        "en": "Early neural vision researcher",
+        "zh": "早期神经视觉研究者"
       },
       "avatar": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "yoshua-bengio",
+      "name": {
+        "en": "Xavier Glorot",
+        "zh": "泽维尔·格洛罗"
+      },
       "role": {
-        "zh": "后续深度整流函数分析共同作者",
-        "en": "Co-author of later deep rectifier analysis"
+        "en": "ReLU co-author",
+        "zh": "ReLU 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Co-author of later deep rectifier analysis",
+        "zh": "后续深度整流函数分析共同作者"
       },
       "avatar": "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

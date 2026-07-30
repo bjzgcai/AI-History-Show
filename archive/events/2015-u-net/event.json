@@ -37,29 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "olaf-ronneberger",
+      "name": {
+        "en": "Olaf Ronneberger",
+        "zh": "奥拉夫·龙讷贝格"
+      },
       "role": {
-        "zh": "U-Net 共同作者",
-        "en": "Co-author of U-Net"
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2015-u-net_olaf-ronneberger.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "philipp-fischer",
-      "role": {
-        "zh": "U-Net 共同作者",
-        "en": "Co-author of U-Net"
+      "name": {
+        "en": "Thomas Brox",
+        "zh": "托马斯·布洛克斯"
       },
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "thomas-brox",
-      "role": {
-        "zh": "U-Net 共同作者",
-        "en": "Co-author of U-Net"
+      "name": {
+        "en": "Philipp Fischer",
+        "zh": "菲利普·菲舍尔"
       },
-      "organizationIds": []
+      "role": {
+        "en": "Co-author of U-Net",
+        "zh": "U-Net 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

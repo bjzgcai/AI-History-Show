@@ -1,0 +1,333 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1990-boosting",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "en": "Boosting",
+    "zh": "Boosting 提升法"
+  },
+  "displaySummary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "displayDescription": {
+    "en": "<p>Learning theory asked whether a procedure that performs only slightly better than chance could be transformed into a highly accurate learner. Schapire proved that weak and strong learnability are equivalent under the boosting framework.</p><p>Boosting repeatedly invokes a weak learner on reweighted or resampled data and combines the resulting hypotheses. Later rounds focus on examples that earlier hypotheses handled poorly. Experts generally regard the weak-to-strong result as the theoretical foundation of boosting. It opened a major line of ensemble learning that led to AdaBoost, gradient boosting, XGBoost, and LightGBM.</p>",
+    "zh": "<p>学习理论提出：一个只比随机猜测略好的学习过程，能否被转化为高精度学习器。Schapire 在 Boosting 框架下证明了弱可学习与强可学习的等价性。</p><p>Boosting 在重新加权或重采样的数据上反复调用弱学习器，并组合得到的多个假设。后续轮次重点关注此前假设处理不好的样本。专家通常把“由弱变强”的结果视为 Boosting 的理论基础。它开启了重要的集成学习路线，后来发展出 AdaBoost、梯度提升、XGBoost 和 LightGBM。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-canonical-2026-07-30",
+    "source-reviewed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Primary publication",
+        "zh": "主论文"
+      },
+      "title": {
+        "en": "The Strength of Weak Learnability",
+        "zh": "弱可学习性的能力"
+      },
+      "description": {
+        "en": "Primary source for the BenchCouncil-listed Boosting achievement.",
+        "zh": "BenchCouncil 主表中Boosting 提升法成就的主要资料。"
+      },
+      "url": "https://doi.org/10.1007/BF00116037",
+      "source": "https://doi.org/10.1007/BF00116037",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1990-boosting-portrait",
+    "asset-1990-boosting-explainer"
+  ],
+  "sourceIds": [
+    "source-1990-boosting-primary",
+    "source-1990-boosting-secondary",
+    "source-benchcouncil-ai100-catalog",
+    "source-1990-boosting-portrait"
+  ],
+  "claimIds": [
+    "claim-1990-boosting-membership",
+    "claim-1990-boosting-description"
+  ],
+  "quizId": "ai100-1990-boosting-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Learning theory asked whether a procedure that performs only slightly better than chance could be transformed into a highly accurate learner. Schapire proved that weak and strong learnability are equivalent under the boosting framework.",
+        "zh": "学习理论提出：一个只比随机猜测略好的学习过程，能否被转化为高精度学习器。Schapire 在 Boosting 框架下证明了弱可学习与强可学习的等价性。"
+      },
+      "sourceIds": [
+        "source-1990-boosting-primary",
+        "source-benchcouncil-ai100-catalog"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Boosting repeatedly invokes a weak learner on reweighted or resampled data and combines the resulting hypotheses. Later rounds focus on examples that earlier hypotheses handled poorly.",
+        "zh": "Boosting 在重新加权或重采样的数据上反复调用弱学习器，并组合得到的多个假设。后续轮次重点关注此前假设处理不好的样本。"
+      },
+      "sourceIds": [
+        "source-1990-boosting-primary"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally regard the weak-to-strong result as the theoretical foundation of boosting. It opened a major line of ensemble learning that led to AdaBoost, gradient boosting, XGBoost, and LightGBM.",
+        "zh": "专家通常把“由弱变强”的结果视为 Boosting 的理论基础。它开启了重要的集成学习路线，后来发展出 AdaBoost、梯度提升、XGBoost 和 LightGBM。"
+      },
+      "sourceIds": [
+        "source-1990-boosting-primary",
+        "source-1990-boosting-secondary"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Robert Schapire",
+        "zh": "罗伯特·沙皮尔"
+      },
+      "role": {
+        "en": "Boost lead author",
+        "zh": "Boost 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "leo-breiman",
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
+      "role": {
+        "en": "Related ensemble-learning pioneer",
+        "zh": "相关集成学习先驱"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "“The Strength of Weak Learnability”",
+    "zh": "“弱可学习性的能力”"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "The Strength of Weak Learnability",
+      "zh": "弱可学习性的能力"
+    },
+    "workAuthors": {
+      "en": "See primary publication record",
+      "zh": "见主论文记录"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1007/BF00116037"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>The Strength of Weak Learnability</em>",
+    "zh": "《弱可学习性的能力》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Decision Trees and Ensemble Learning",
+      "zh": "决策树与集成学习"
+    },
+    "method": {
+      "en": "Sequentially combine weak hypotheses into a strong learner",
+      "zh": "顺序组合弱假设形成强学习器"
+    },
+    "artifact": {
+      "en": "Weak-to-strong learning framework",
+      "zh": "弱学习器到强学习器框架"
+    },
+    "material": {
+      "en": "The Strength of Weak Learnability, companion source, and BenchCouncil catalog record",
+      "zh": "《弱可学习性的能力》、配套资料与 BenchCouncil 清单记录"
+    },
+    "demo": {
+      "en": "Follow the four stages and compare how changing one stage affects the final weak-to-strong learning framework.",
+      "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的弱学习器到强学习器框架。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Stage 1",
+          "zh": "阶段 1"
+        },
+        "text": {
+          "en": "Weak learner",
+          "zh": "弱学习器"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 2",
+          "zh": "阶段 2"
+        },
+        "text": {
+          "en": "Focus on errors",
+          "zh": "关注错误样本"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 3",
+          "zh": "阶段 3"
+        },
+        "text": {
+          "en": "Train next hypothesis",
+          "zh": "训练下一假设"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 4",
+          "zh": "阶段 4"
+        },
+        "text": {
+          "en": "Combine hypotheses",
+          "zh": "组合多个假设"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Weak learner",
+        "zh": "弱学习器"
+      },
+      {
+        "en": "Focus on errors",
+        "zh": "关注错误样本"
+      },
+      {
+        "en": "Train next hypothesis",
+        "zh": "训练下一假设"
+      },
+      {
+        "en": "Combine hypotheses",
+        "zh": "组合多个假设"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "BenchCouncil lists Boosting and cites The Strength of Weak Learnability as a defining publication.",
+          "zh": "BenchCouncil 将Boosting 提升法列入主表，并把《弱可学习性的能力》作为代表性资料。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+          "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "The Strength of Weak Learnability",
+          "zh": "弱可学习性的能力"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Boosting achievement.",
+          "zh": "BenchCouncil 主表中Boosting 提升法成就的主要资料。"
+        },
+        "url": "https://doi.org/10.1007/BF00116037",
+        "source": "https://doi.org/10.1007/BF00116037",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "MIT, United States",
+      "zh": "麻省理工学院，美国"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      42.3601,
+      -71.0942
+    ]
+  }
+}

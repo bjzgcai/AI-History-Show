@@ -56,9 +56,9 @@
     "asset-1965-resolution-method-unification-map"
   ],
   "sourceIds": [
-    "source-a-machine-oriented-logic-based-on-the-resolution-principle",
     "source-journal-of-symbolic-logic-review-record",
-    "source-stanford-encyclopedia-automated-reasoning"
+    "source-stanford-encyclopedia-automated-reasoning",
+    "source-a-machine-oriented-logic-based-on-the-resolution-principle"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -123,7 +123,7 @@
   "figures": [
     {
       "name": {
-        "en": "John Alan Robinson",
+        "en": "John Robinson",
         "zh": "约翰·艾伦·罗宾逊"
       },
       "role": {
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

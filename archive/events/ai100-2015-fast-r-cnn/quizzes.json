@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2015-fast-r-cnn-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "How does Fast R-CNN avoid repeated convolution?",
+      "zh": "Fast R-CNN 如何避免重复卷积？"
+    },
+    "options": [
+      {
+        "en": "It shares one feature map across proposals",
+        "zh": "它让所有候选区域共享一张特征图"
+      },
+      {
+        "en": "It removes region proposals",
+        "zh": "它移除区域候选"
+      },
+      {
+        "en": "It uses no neural network",
+        "zh": "它不使用神经网络"
+      },
+      {
+        "en": "It predicts only one object",
+        "zh": "它只预测一个物体"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "The image is processed once into a feature map, and RoI pooling extracts fixed-size features for each proposal. A single network jointly predicts class probabilities and refined bounding boxes.",
+      "zh": "图像只需处理一次得到特征图，RoI 池化再为每个候选区域提取固定尺寸特征。单个网络联合预测类别概率和修正后的边界框。"
+    },
+    "sourceIds": [
+      "source-2015-fast-r-cnn-primary"
+    ],
+    "assetIds": [
+      "asset-2015-fast-r-cnn-explainer"
+    ]
+  }
+]

@@ -58,9 +58,9 @@
     "asset-2018-gpt-historical-01"
   ],
   "sourceIds": [
-    "source-improving-language-understanding-by-generative-pre-training",
     "source-openai-language-unsupervised-page",
-    "source-gpt-model-overview"
+    "source-gpt-model-overview",
+    "source-improving-language-understanding-by-generative-pre-training"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -134,7 +134,106 @@
       },
       "avatar": "resources/images/figures/alec-radford.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Ilya Sutskever",
+        "zh": "伊利亚·苏茨克维"
+      },
+      "role": {
+        "en": "AlexNet co-author",
+        "zh": "AlexNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jeffrey Wu",
+        "zh": "杰弗里·吴"
+      },
+      "role": {
+        "en": "GPT co-author",
+        "zh": "GPT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Dario Amodei",
+        "zh": "达里奥·阿莫代"
+      },
+      "role": {
+        "en": "GPT co-author",
+        "zh": "GPT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Tom Brown",
+        "zh": "汤姆·布朗"
+      },
+      "role": {
+        "en": "GPT co-author",
+        "zh": "GPT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Benjamin Mann",
+        "zh": "本杰明·曼"
+      },
+      "role": {
+        "en": "GPT co-author",
+        "zh": "GPT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Nick Ryder",
+        "zh": "尼克·赖德"
+      },
+      "role": {
+        "en": "GPT co-author",
+        "zh": "GPT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Melanie Subbiah",
+        "zh": "梅拉妮·苏比亚"
+      },
+      "role": {
+        "en": "GPT co-author",
+        "zh": "GPT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

@@ -37,21 +37,101 @@
   ],
   "figures": [
     {
-      "figureId": "alexey-dosovitskiy",
+      "name": {
+        "en": "Alexey Dosovitskiy",
+        "zh": "阿列克谢·多索维茨基"
+      },
       "role": {
-        "zh": "视觉 Transformer 主要作者",
-        "en": "Lead author of Vision Transformer"
+        "en": "Lead author of Vision Transformer",
+        "zh": "视觉 Transformer 主要作者"
       },
       "avatar": "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "google-research",
-      "role": {
-        "zh": "研究机构",
-        "en": "Research organization"
+      "name": {
+        "en": "Lucas Beyer",
+        "zh": "卢卡斯·拜尔"
       },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Alexander Kolesnikov",
+        "zh": "亚历山大·科列斯尼科夫"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Dirk Weissenborn",
+        "zh": "德克·魏森博恩"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Xiaohua Zhai",
+        "zh": "翟晓华"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Neil Houlsby",
+        "zh": "尼尔·霍尔斯比"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Google Research",
+        "zh": "Google 研究院"
+      },
+      "role": {
+        "en": "Research organization",
+        "zh": "研究机构"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

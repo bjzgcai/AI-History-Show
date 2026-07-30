@@ -1,0 +1,82 @@
+[
+    {
+        "id": "source-1992-reinforce-primary",
+        "type": "paper",
+        "label": {
+            "en": "Primary paper",
+            "zh": "原始论文"
+        },
+        "title": {
+            "en": "Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning",
+            "zh": "《用于连接主义强化学习的简单统计梯度跟随算法》"
+        },
+        "url": "https://doi.org/10.1007/BF00992696",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Primary publication identified by the BenchCouncil AI100 table.",
+            "zh": "BenchCouncil AI100 表格列出的主论文。"
+        },
+        "purpose": "core-evidence"
+    },
+    {
+        "id": "source-1992-reinforce-secondary",
+        "type": "paper-page",
+        "label": {
+            "en": "Publication page",
+            "zh": "出版页面"
+        },
+        "title": {
+            "en": "Springer publication page",
+            "zh": "Springer 出版页面"
+        },
+        "url": "https://link.springer.com/article/10.1007/BF00992696",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Publisher, proceedings, repository, or companion publication page.",
+            "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+        },
+        "purpose": "alternate-access"
+    },
+    {
+        "id": "source-benchcouncil-ai100-catalog",
+        "type": "official-page",
+        "label": {
+            "en": "Official page",
+            "zh": "官方页面"
+        },
+        "title": {
+            "en": "BenchCouncil AI100: Top AI Achievements",
+            "zh": "BenchCouncil AI100：人工智能杰出成果"
+        },
+        "url": "https://www.benchcouncil.org/evaluation/ai/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Official membership source for the canonical AI100 storyline.",
+            "zh": "canonical AI100 分支的官方成员依据。"
+        },
+        "purpose": "historical-context"
+    },
+    {
+        "id": "source-1992-reinforce-portrait",
+        "type": "image-source",
+        "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+        },
+        "title": {
+            "en": "Ronald Williams related portrait source",
+            "zh": "罗纳德·威廉姆斯相关肖像来源"
+        },
+        "url": "https://www.khoury.northeastern.edu/people/ronald-williams/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "External reference portrait; redistribution rights should be rechecked with the source institution.",
+            "zh": "外部参考肖像；对外再分发前应向来源机构复核授权。"
+        },
+        "purpose": "image-provenance"
+    }
+]

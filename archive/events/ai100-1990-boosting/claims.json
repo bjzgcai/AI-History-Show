@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-1990-boosting-membership",
+    "importance": "core",
+    "text": {
+      "en": "Boosting is listed in the BenchCouncil long-term AI100 table.",
+      "zh": "Boosting 提升法列入 BenchCouncil 长期 AI100 主表。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-1990-boosting-description",
+    "importance": "core",
+    "text": {
+      "en": "<p>Learning theory asked whether a procedure that performs only slightly better than chance could be transformed into a highly accurate learner. Schapire proved that weak and strong learnability are equivalent under the boosting framework.</p><p>Boosting repeatedly invokes a weak learner on reweighted or resampled data and combines the resulting hypotheses. Later rounds focus on examples that earlier hypotheses handled poorly. Experts generally regard the weak-to-strong result as the theoretical foundation of boosting. It opened a major line of ensemble learning that led to AdaBoost, gradient boosting, XGBoost, and LightGBM.</p>",
+      "zh": "<p>学习理论提出：一个只比随机猜测略好的学习过程，能否被转化为高精度学习器。Schapire 在 Boosting 框架下证明了弱可学习与强可学习的等价性。</p><p>Boosting 在重新加权或重采样的数据上反复调用弱学习器，并组合得到的多个假设。后续轮次重点关注此前假设处理不好的样本。专家通常把“由弱变强”的结果视为 Boosting 的理论基础。它开启了重要的集成学习路线，后来发展出 AdaBoost、梯度提升、XGBoost 和 LightGBM。</p>"
+    },
+    "sourceIds": [
+      "source-1990-boosting-primary",
+      "source-1990-boosting-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "id": "ai100-1999-policy-gradient",
+  "year": 1999,
+  "date": "1999",
+  "title": {
+    "en": "Policy Gradient Theorem",
+    "zh": "策略梯度定理"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Policy-based reinforcement learning needed a rigorous expression for how long-run performance changes with policy parameters. The policy gradient theorem supplied that expression without requiring derivatives of the environment dynamics.</p><p>The performance gradient can be written as an expectation of action-value estimates multiplied by the policy score. Actor-critic methods use a learned critic to estimate that value while the actor follows the resulting gradient. Experts generally treat the policy gradient theorem as the mathematical backbone of modern actor-critic and policy-optimization algorithms. PPO, natural policy gradients, deterministic policy gradients, and many RLHF methods inherit its structure.</p>",
+    "zh": "<p>基于策略的强化学习需要一个严格公式，说明长期性能如何随策略参数变化。策略梯度定理给出了这一表达式，而且不需要对环境动力学求导。</p><p>性能梯度可以写成动作价值估计与策略得分乘积的期望。Actor-critic 方法用学习到的 critic 估计价值，actor 则沿该梯度更新。专家通常把策略梯度定理视为现代 actor-critic 和策略优化算法的数学骨架。PPO、自然策略梯度、确定性策略梯度以及许多 RLHF 方法都继承了这一结构。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "AT&T Labs, United States",
+      "zh": "AT&T 实验室，美国"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4013
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "richard-sutton",
+      "name": {
+        "en": "Richard Sutton",
+        "zh": "理查德·萨顿"
+      },
+      "role": {
+        "en": "Policy-gradient theorem co-author",
+        "zh": "策略梯度定理共同作者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yishay Mansour",
+        "zh": "伊沙伊·曼苏尔"
+      },
+      "role": {
+        "en": "Policy gradient theorem co-author",
+        "zh": "Policy gradient theorem 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

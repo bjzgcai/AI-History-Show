@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1996-bagging-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What varies across models in a bagged ensemble?",
+      "zh": "Bagging 集成中的各个模型主要哪里不同？"
+    },
+    "options": [
+      {
+        "en": "They train on different bootstrap samples",
+        "zh": "它们训练于不同的自助样本"
+      },
+      {
+        "en": "They use different class names only",
+        "zh": "它们只使用不同类别名"
+      },
+      {
+        "en": "They see no data",
+        "zh": "它们不看数据"
+      },
+      {
+        "en": "They share one fixed prediction",
+        "zh": "它们共享一个固定预测"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Multiple bootstrap samples are drawn from the training set, one predictor is fitted to each sample, and their outputs are averaged or voted. Aggregation reduces variance while preserving the strength of the base learner.",
+      "zh": "从训练集抽取多个自助样本，为每个样本训练一个预测器，再对输出进行平均或投票。聚合在保留基学习器能力的同时降低方差。"
+    },
+    "sourceIds": [
+      "source-1996-bagging-primary"
+    ],
+    "assetIds": [
+      "asset-1996-bagging-explainer"
+    ]
+  }
+]

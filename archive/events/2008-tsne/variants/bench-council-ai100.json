@@ -56,9 +56,9 @@
     "asset-2008-tsne-cluster-map"
   ],
   "sourceIds": [
-    "source-visualizing-data-using-t-sne",
     "source-laurens-van-der-maaten-homepage",
-    "source-how-to-use-t-sne-effectively-distill"
+    "source-how-to-use-t-sne-effectively-distill",
+    "source-visualizing-data-using-t-sne"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,22 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Pioneer of deep learning",
+        "zh": "深度学习之父"
+      },
+      "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+      "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

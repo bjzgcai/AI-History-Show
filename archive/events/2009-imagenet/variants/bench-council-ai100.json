@@ -56,9 +56,9 @@
     "asset-2009-imagenet-benchmark"
   ],
   "sourceIds": [
-    "source-imagenet-a-large-scale-hierarchical-image-database",
     "source-imagenet-project-website",
-    "source-stanford-profile-fei-fei-li"
+    "source-stanford-profile-fei-fei-li",
+    "source-imagenet-a-large-scale-hierarchical-image-database"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -123,19 +123,6 @@
   "figures": [
     {
       "name": {
-        "en": "Fei-Fei Li",
-        "zh": "李飞飞"
-      },
-      "role": {
-        "en": "ImageNet project leader",
-        "zh": "ImageNet 项目主要推动者"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
         "en": "Jia Deng",
         "zh": "邓嘉"
       },
@@ -145,7 +132,36 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Li Fei-Fei",
+        "zh": "李飞飞"
+      },
+      "role": {
+        "en": "ImageNet project leader",
+        "zh": "ImageNet 项目主要推动者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Olga Russakovsky",
+        "zh": "奥尔加·鲁萨科夫斯基"
+      },
+      "role": {
+        "en": "ImageNet co-author",
+        "zh": "ImageNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

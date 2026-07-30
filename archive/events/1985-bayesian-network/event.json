@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "judea-pearl",
+      "name": {
+        "en": "Judea Pearl",
+        "zh": "朱迪亚·珀尔"
+      },
       "role": {
-        "zh": "贝叶斯网络与因果 AI 先驱",
-        "en": "Pioneer of Bayesian networks and causal AI"
+        "en": "Pioneer of Bayesian networks and causal AI",
+        "zh": "贝叶斯网络与因果 AI 先驱"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

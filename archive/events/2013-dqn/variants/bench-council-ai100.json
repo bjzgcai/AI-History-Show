@@ -51,16 +51,16 @@
     }
   ],
   "assetIds": [
-    "asset-david-silver-commons-portrait",
     "asset-2013-dqn-volodymyr-mnih",
     "asset-2013-dqn-replay-buffer",
-    "asset-2013-dqn-q-control"
+    "asset-2013-dqn-q-control",
+    "asset-david-silver-commons-portrait"
   ],
   "sourceIds": [
     "source-david-silver-commons-portrait",
-    "source-playing-atari-with-deep-reinforcement-learning",
     "source-human-level-control-through-deep-reinforcement-learning",
-    "source-google-deepmind-deep-reinforcement-learning"
+    "source-google-deepmind-deep-reinforcement-learning",
+    "source-playing-atari-with-deep-reinforcement-learning"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -134,7 +134,36 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Martin Riedmiller",
+        "zh": "马丁·里德米勒"
+      },
+      "role": {
+        "en": "Deep Q Network co-author",
+        "zh": "Deep Q Network 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Koray Kavukcuoglu",
+        "zh": "科雷·卡武克丘奥卢"
+      },
+      "role": {
+        "en": "Deep Q Network co-author",
+        "zh": "Deep Q Network 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -147,7 +176,8 @@
       },
       "avatar": "resources/images/figures/authoritative/david-silver.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

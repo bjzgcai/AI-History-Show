@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "alan-turing",
+      "name": {
+        "en": "Alan Turing",
+        "zh": "艾伦·图灵"
+      },
       "role": {
-        "zh": "提出模仿游戏",
-        "en": "Proposed the imitation game"
+        "en": "Proposed the imitation game",
+        "zh": "提出模仿游戏"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

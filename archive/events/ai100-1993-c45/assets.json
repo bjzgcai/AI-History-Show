@@ -1,0 +1,73 @@
+[
+    {
+        "id": "asset-1993-c45-portrait",
+        "type": "gif",
+        "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "role": "portrait",
+        "caption": {
+            "en": "Leo Breiman portrait",
+            "zh": "利奥·布雷曼肖像"
+        },
+        "subcaption": {
+            "en": "Related decision-tree pioneer",
+            "zh": "相关决策树先驱"
+        },
+        "sourceId": "source-1993-c45-portrait",
+        "sourceName": {
+            "en": "University of York Portraits of Statisticians",
+            "zh": "约克大学统计学家肖像档案"
+        },
+        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
+                "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            },
+            "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+        },
+        "displayUsage": {
+            "en": "Related figure for the C4.5 achievement page",
+            "zh": "用于C4.5 决策树成就页面的相关人物展示"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    },
+    {
+        "id": "asset-1993-c45-explainer",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/1993-1993-c45_process.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "en": "C4.5 process explainer",
+            "zh": "C4.5 决策树流程解释图"
+        },
+        "subcaption": {
+            "en": "Gain-ratio splits with missing-value handling and pruning",
+            "zh": "增益率划分、缺失值处理与剪枝"
+        },
+        "sourceId": "source-1993-c45-primary",
+        "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://www.sciencedirect.com/book/9781558602380/c45",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "en": "Original local SVG redraw; source figures are not copied.",
+                "zh": "本地原创 SVG 重绘；未复制来源图形。"
+            }
+        },
+        "displayUsage": {
+            "en": "Architecture and process explainer",
+            "zh": "架构与流程解释图"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    }
+]

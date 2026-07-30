@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "robert-tibshirani",
+      "name": {
+        "en": "Robert Tibshirani",
+        "zh": "罗伯特·蒂布希拉尼"
+      },
       "role": {
-        "zh": "提出 Lasso 方法",
-        "en": "Introduced the lasso method"
+        "en": "Introduced the lasso method",
+        "zh": "提出 Lasso 方法"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

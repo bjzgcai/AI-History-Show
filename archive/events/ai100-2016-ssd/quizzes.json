@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2016-ssd-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "Why is SSD called a single-shot detector?",
+      "zh": "为什么 SSD 被称为单次检测器？"
+    },
+    "options": [
+      {
+        "en": "It predicts boxes and classes in one network pass",
+        "zh": "它在一次网络前向中预测边界框和类别"
+      },
+      {
+        "en": "It sees only one training image",
+        "zh": "它只看一张训练图像"
+      },
+      {
+        "en": "It detects only one class",
+        "zh": "它只检测一个类别"
+      },
+      {
+        "en": "It uses one pixel per object",
+        "zh": "每个物体只用一个像素"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Several feature maps at different resolutions predict scores and offsets for default boxes of multiple shapes. High-resolution maps capture small objects, while deeper maps cover larger receptive fields.",
+      "zh": "不同分辨率的多张特征图针对多种形状的默认框预测类别分数和位置偏移。高分辨率特征图负责小物体，深层特征图则覆盖更大的感受野。"
+    },
+    "sourceIds": [
+      "source-2016-ssd-primary"
+    ],
+    "assetIds": [
+      "asset-2016-ssd-explainer"
+    ]
+  }
+]

@@ -56,9 +56,9 @@
     "asset-2014-dropout-ensemble-average"
   ],
   "sourceIds": [
-    "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting",
     "source-improving-neural-networks-by-preventing-co-adaptation",
-    "source-pytorch-torch-nn-dropout"
+    "source-pytorch-torch-nn-dropout",
+    "source-dropout-a-simple-way-to-prevent-neural-networks-from-overfitting"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,22 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2014-dropout_nitish-srivastava.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Ruslan Salakhutdinov",
+        "zh": "鲁斯兰·萨拉赫特迪诺夫"
+      },
+      "role": {
+        "en": "Dropout co-author",
+        "zh": "Dropout 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {

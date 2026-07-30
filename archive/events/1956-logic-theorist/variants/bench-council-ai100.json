@@ -23,9 +23,9 @@
     "asset-1956-logic-theorist-proof-search"
   ],
   "sourceIds": [
-    "source-the-logic-theory-machine",
     "source-carnegie-mellon-university-archives",
-    "source-allen-newell-acm-a-m-turing-award"
+    "source-allen-newell-acm-a-m-turing-award",
+    "source-the-logic-theory-machine"
   ],
   "claimIds": [
     "claim-ai100-achievement",
@@ -99,11 +99,12 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "Herbert A. Simon",
+        "en": "Herbert Simon",
         "zh": "赫伯特·A·西蒙"
       },
       "role": {
@@ -112,7 +113,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1956-logic-theorist_herbert-simon.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {

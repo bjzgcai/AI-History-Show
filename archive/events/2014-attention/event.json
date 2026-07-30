@@ -37,29 +37,88 @@
   ],
   "figures": [
     {
-      "figureId": "dzmitry-bahdanau",
-      "role": {
-        "zh": "神经注意力论文主要作者",
-        "en": "Lead author of neural attention paper"
+      "name": {
+        "en": "Dzmitry Bahdanau",
+        "zh": "兹米特里·巴赫达瑙"
       },
+      "role": {
+        "en": "Lead author of neural attention paper",
+        "zh": "神经注意力论文主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "kyunghyun-cho",
-      "role": {
-        "zh": "神经注意力论文共同作者",
-        "en": "Neural attention paper co-author"
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
       },
-      "organizationIds": []
-    },
-    {
-      "figureId": "yoshua-bengio",
       "role": {
-        "zh": "神经注意力论文共同作者",
-        "en": "Neural attention paper co-author"
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
       },
       "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Minh-Thang Luong",
+        "zh": "明唐·梁"
+      },
+      "role": {
+        "en": "Attention co-author",
+        "zh": "Attention 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "christopher-manning",
+      "name": {
+        "en": "Christopher Manning",
+        "zh": "克里斯托弗·曼宁"
+      },
+      "role": {
+        "en": "Related statistical NLP researcher",
+        "zh": "相关统计自然语言处理研究者"
+      },
+      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kelvin Xu",
+        "zh": "徐凯文"
+      },
+      "role": {
+        "en": "Attention co-author",
+        "zh": "Attention 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

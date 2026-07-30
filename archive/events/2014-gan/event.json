@@ -37,21 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "ian-goodfellow",
+      "name": {
+        "en": "Ian Goodfellow",
+        "zh": "伊恩·古德费洛"
+      },
       "role": {
-        "zh": "GAN 主要作者",
-        "en": "GAN lead author"
+        "en": "GAN lead author",
+        "zh": "GAN 主要作者"
       },
       "avatar": "resources/images/figures/ian-goodfellow.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "yoshua-bengio",
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
       "role": {
-        "zh": "GAN 共同作者与导师",
-        "en": "GAN co-author and advisor"
+        "en": "GAN co-author and advisor",
+        "zh": "GAN 共同作者与导师"
       },
       "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

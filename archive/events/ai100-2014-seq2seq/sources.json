@@ -1,0 +1,82 @@
+[
+    {
+        "id": "source-2014-seq2seq-primary",
+        "type": "paper",
+        "label": {
+            "en": "Primary paper",
+            "zh": "原始论文"
+        },
+        "title": {
+            "en": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+            "zh": "《使用 RNN 编码器—解码器学习短语表示》"
+        },
+        "url": "https://arxiv.org/abs/1406.1078",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Primary publication identified by the BenchCouncil AI100 table.",
+            "zh": "BenchCouncil AI100 表格列出的主论文。"
+        },
+        "purpose": "core-evidence"
+    },
+    {
+        "id": "source-2014-seq2seq-secondary",
+        "type": "paper-page",
+        "label": {
+            "en": "Publication page",
+            "zh": "出版页面"
+        },
+        "title": {
+            "en": "Sequence to Sequence Learning with Neural Networks",
+            "zh": "《使用神经网络进行序列到序列学习》"
+        },
+        "url": "https://arxiv.org/abs/1409.3215",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Publisher, proceedings, repository, or companion publication page.",
+            "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+        },
+        "purpose": "alternate-access"
+    },
+    {
+        "id": "source-benchcouncil-ai100-catalog",
+        "type": "official-page",
+        "label": {
+            "en": "Official page",
+            "zh": "官方页面"
+        },
+        "title": {
+            "en": "BenchCouncil AI100: Top AI Achievements",
+            "zh": "BenchCouncil AI100：人工智能杰出成果"
+        },
+        "url": "https://www.benchcouncil.org/evaluation/ai/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Official membership source for the canonical AI100 storyline.",
+            "zh": "canonical AI100 分支的官方成员依据。"
+        },
+        "purpose": "historical-context"
+    },
+    {
+        "id": "source-2014-seq2seq-portrait",
+        "type": "image-source",
+        "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+        },
+        "title": {
+            "en": "Yoshua Bengio related portrait source",
+            "zh": "约书亚·本吉奥相关肖像来源"
+        },
+        "url": "https://mila.quebec/en/directory/yoshua-bengio",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Local reference copy with attribution to the linked profile and original file page.",
+            "zh": "本地参考副本；使用时保留所链接资料页与原文件页署名。"
+        },
+        "purpose": "image-provenance"
+    }
+]

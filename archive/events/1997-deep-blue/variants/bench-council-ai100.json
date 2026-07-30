@@ -53,15 +53,15 @@
   "assetIds": [
     "asset-1997-deep-blue-feng-hsiung-hsu",
     "asset-1997-deep-blue-search-tree",
-    "asset-1997-deep-blue-murray-campbell",
-    "asset-1997-deep-blue-chip-board"
+    "asset-1997-deep-blue-chip-board",
+    "asset-1997-deep-blue-murray-campbell"
   ],
   "sourceIds": [
     "source-deep-blue-system-paper",
-    "source-feng-hsiung-hsu-chm-portrait",
     "source-murray-campbell-ibm-research",
     "source-mastering-the-game-computer-history-museum",
-    "source-ibm100-deep-blue"
+    "source-ibm100-deep-blue",
+    "source-feng-hsiung-hsu-chm-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -135,7 +135,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
       "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -148,11 +149,12 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "A. Joseph Hoane Jr.",
+        "en": "Arthur Hoane",
         "zh": "约瑟夫·霍恩"
       },
       "role": {
@@ -161,7 +163,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -174,7 +177,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

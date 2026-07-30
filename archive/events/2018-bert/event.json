@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "jacob-devlin",
+      "name": {
+        "en": "Jacob Devlin",
+        "zh": "雅各布·德夫林"
+      },
       "role": {
-        "zh": "BERT 主要作者",
-        "en": "BERT lead author"
+        "en": "BERT lead author",
+        "zh": "BERT 主要作者"
       },
       "avatar": "resources/images/figures/jacob-devlin.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kristina Toutanova",
+        "zh": "克里斯蒂娜·图塔诺娃"
+      },
+      "role": {
+        "en": "BERT co-author",
+        "zh": "BERT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

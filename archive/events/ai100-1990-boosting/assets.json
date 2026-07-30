@@ -1,0 +1,73 @@
+[
+    {
+        "id": "asset-1990-boosting-portrait",
+        "type": "gif",
+        "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "role": "portrait",
+        "caption": {
+            "en": "Leo Breiman portrait",
+            "zh": "利奥·布雷曼肖像"
+        },
+        "subcaption": {
+            "en": "Related ensemble-learning pioneer",
+            "zh": "相关集成学习先驱"
+        },
+        "sourceId": "source-1990-boosting-portrait",
+        "sourceName": {
+            "en": "University of York Portraits of Statisticians",
+            "zh": "约克大学统计学家肖像档案"
+        },
+        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
+                "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            },
+            "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+        },
+        "displayUsage": {
+            "en": "Related figure for the Boosting achievement page",
+            "zh": "用于Boosting 提升法成就页面的相关人物展示"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    },
+    {
+        "id": "asset-1990-boosting-explainer",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "en": "Boosting process explainer",
+            "zh": "Boosting 提升法流程解释图"
+        },
+        "subcaption": {
+            "en": "Sequentially combine weak hypotheses into a strong learner",
+            "zh": "顺序组合弱假设形成强学习器"
+        },
+        "sourceId": "source-1990-boosting-primary",
+        "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://doi.org/10.1007/BF00116037",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "en": "Original local SVG redraw; source figures are not copied.",
+                "zh": "本地原创 SVG 重绘；未复制来源图形。"
+            }
+        },
+        "displayUsage": {
+            "en": "Architecture and process explainer",
+            "zh": "架构与流程解释图"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    }
+]

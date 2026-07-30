@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2016-a3c-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What makes A3C asynchronous?",
+      "zh": "A3C 的“异步”体现在哪里？"
+    },
+    "options": [
+      {
+        "en": "Multiple workers update shared parameters in parallel",
+        "zh": "多个工作智能体并行更新共享参数"
+      },
+      {
+        "en": "It never observes rewards",
+        "zh": "它从不观察奖励"
+      },
+      {
+        "en": "It uses only one fixed action",
+        "zh": "它只使用一个固定动作"
+      },
+      {
+        "en": "It trains after deployment only",
+        "zh": "它只在部署后训练"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Multiple worker agents interact with separate environment copies and asynchronously update shared actor and critic parameters. Advantage estimates reduce variance by comparing observed returns with the critic baseline.",
+      "zh": "多个工作智能体与各自的环境副本交互，并异步更新共享的 actor 与 critic 参数。优势估计把观测回报与 critic 基线比较，从而降低方差。"
+    },
+    "sourceIds": [
+      "source-2016-a3c-primary"
+    ],
+    "assetIds": [
+      "asset-2016-a3c-explainer"
+    ]
+  }
+]

@@ -1,0 +1,347 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2001-crf",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "en": "Conditional Random Fields",
+    "zh": "条件随机场"
+  },
+  "displaySummary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "displayDescription": {
+    "en": "<p>Sequence labeling systems such as hidden Markov models modeled how observations were generated, which made overlapping and long-range input features awkward to use. Conditional Random Fields instead modeled the label sequence directly given the observed sequence.</p><p>A CRF assigns a globally normalized conditional probability to an entire label sequence using feature functions over observations and neighboring labels. Dynamic programming supports exact inference and training for linear-chain models. Experts generally regard CRFs as a foundational discriminative model for structured prediction. They became standard for named-entity recognition, part-of-speech tagging, segmentation, and hybrid neural-CRF systems.</p>",
+    "zh": "<p>隐马尔可夫模型等序列标注系统需要建模观测如何生成，因此难以灵活使用重叠特征和长距离输入特征。条件随机场改为在给定观测序列的条件下直接建模标签序列。</p><p>CRF 使用观测和相邻标签上的特征函数，为整条标签序列分配全局归一化的条件概率。在线性链模型中，动态规划支持精确推断和训练。专家通常把 CRF 视为结构化预测的基础判别模型。它曾成为命名实体识别、词性标注、序列分割以及神经网络—CRF 混合系统的标准方法。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-canonical-2026-07-30",
+    "source-reviewed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Primary publication",
+        "zh": "主论文"
+      },
+      "title": {
+        "en": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data",
+        "zh": "条件随机场：用于序列分割与标注的概率模型"
+      },
+      "description": {
+        "en": "Primary source for the BenchCouncil-listed Conditional Random Fields achievement.",
+        "zh": "BenchCouncil 主表中条件随机场成就的主要资料。"
+      },
+      "url": "https://repository.upenn.edu/cis_papers/159/",
+      "source": "https://repository.upenn.edu/cis_papers/159/",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2001-crf-portrait",
+    "asset-2001-crf-explainer"
+  ],
+  "sourceIds": [
+    "source-2001-crf-primary",
+    "source-2001-crf-secondary",
+    "source-benchcouncil-ai100-catalog",
+    "source-2001-crf-portrait"
+  ],
+  "claimIds": [
+    "claim-2001-crf-membership",
+    "claim-2001-crf-description"
+  ],
+  "quizId": "ai100-2001-crf-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Sequence labeling systems such as hidden Markov models modeled how observations were generated, which made overlapping and long-range input features awkward to use. Conditional Random Fields instead modeled the label sequence directly given the observed sequence.",
+        "zh": "隐马尔可夫模型等序列标注系统需要建模观测如何生成，因此难以灵活使用重叠特征和长距离输入特征。条件随机场改为在给定观测序列的条件下直接建模标签序列。"
+      },
+      "sourceIds": [
+        "source-2001-crf-primary",
+        "source-benchcouncil-ai100-catalog"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A CRF assigns a globally normalized conditional probability to an entire label sequence using feature functions over observations and neighboring labels. Dynamic programming supports exact inference and training for linear-chain models.",
+        "zh": "CRF 使用观测和相邻标签上的特征函数，为整条标签序列分配全局归一化的条件概率。在线性链模型中，动态规划支持精确推断和训练。"
+      },
+      "sourceIds": [
+        "source-2001-crf-primary"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally regard CRFs as a foundational discriminative model for structured prediction. They became standard for named-entity recognition, part-of-speech tagging, segmentation, and hybrid neural-CRF systems.",
+        "zh": "专家通常把 CRF 视为结构化预测的基础判别模型。它曾成为命名实体识别、词性标注、序列分割以及神经网络—CRF 混合系统的标准方法。"
+      },
+      "sourceIds": [
+        "source-2001-crf-primary",
+        "source-2001-crf-secondary"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "John Lafferty",
+        "zh": "约翰·拉弗蒂"
+      },
+      "role": {
+        "en": "CRF lead author",
+        "zh": "CRF 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Fernando Pereira",
+        "zh": "费尔南多·佩雷拉"
+      },
+      "role": {
+        "en": "CRF co-author",
+        "zh": "CRF 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "christopher-manning",
+      "name": {
+        "en": "Christopher Manning",
+        "zh": "克里斯托弗·曼宁"
+      },
+      "role": {
+        "en": "Related statistical NLP researcher",
+        "zh": "相关统计自然语言处理研究者"
+      },
+      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "“Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data”",
+    "zh": "“条件随机场：用于序列分割与标注的概率模型”"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data",
+      "zh": "条件随机场：用于序列分割与标注的概率模型"
+    },
+    "workAuthors": {
+      "en": "See primary publication record",
+      "zh": "见主论文记录"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://repository.upenn.edu/cis_papers/159/"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data</em>",
+    "zh": "《条件随机场：用于序列分割与标注的概率模型》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Probabilistic Graphical Model",
+      "zh": "概率图模型"
+    },
+    "method": {
+      "en": "Globally normalized conditional sequence modeling",
+      "zh": "全局归一化的条件序列建模"
+    },
+    "artifact": {
+      "en": "Linear-chain conditional random field",
+      "zh": "线性链条件随机场"
+    },
+    "material": {
+      "en": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data, companion source, and BenchCouncil catalog record",
+      "zh": "《条件随机场：用于序列分割与标注的概率模型》、配套资料与 BenchCouncil 清单记录"
+    },
+    "demo": {
+      "en": "Follow the four stages and compare how changing one stage affects the final linear-chain conditional random field.",
+      "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的线性链条件随机场。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Stage 1",
+          "zh": "阶段 1"
+        },
+        "text": {
+          "en": "Observed sequence",
+          "zh": "观测序列"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 2",
+          "zh": "阶段 2"
+        },
+        "text": {
+          "en": "Feature functions",
+          "zh": "特征函数"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 3",
+          "zh": "阶段 3"
+        },
+        "text": {
+          "en": "Global sequence score",
+          "zh": "全局序列得分"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 4",
+          "zh": "阶段 4"
+        },
+        "text": {
+          "en": "Best label sequence",
+          "zh": "最佳标签序列"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Observed sequence",
+        "zh": "观测序列"
+      },
+      {
+        "en": "Feature functions",
+        "zh": "特征函数"
+      },
+      {
+        "en": "Global sequence score",
+        "zh": "全局序列得分"
+      },
+      {
+        "en": "Best label sequence",
+        "zh": "最佳标签序列"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2001-2001-crf_process.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "BenchCouncil lists Conditional Random Fields and cites Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data as a defining publication.",
+          "zh": "BenchCouncil 将条件随机场列入主表，并把《条件随机场：用于序列分割与标注的概率模型》作为代表性资料。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+          "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data",
+          "zh": "条件随机场：用于序列分割与标注的概率模型"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Conditional Random Fields achievement.",
+          "zh": "BenchCouncil 主表中条件随机场成就的主要资料。"
+        },
+        "url": "https://repository.upenn.edu/cis_papers/159/",
+        "source": "https://repository.upenn.edu/cis_papers/159/",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Pennsylvania and partner labs",
+      "zh": "宾夕法尼亚大学及合作实验室"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      39.9522,
+      -75.1932
+    ]
+  }
+}

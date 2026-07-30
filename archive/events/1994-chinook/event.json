@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "jonathan-schaeffer",
+      "name": {
+        "en": "Jonathan Schaeffer",
+        "zh": "乔纳森·谢弗"
+      },
       "role": {
-        "zh": "Chinook 团队负责人",
-        "en": "Leader of the Chinook team"
+        "en": "Leader of the Chinook team",
+        "zh": "Chinook 团队负责人"
       },
       "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

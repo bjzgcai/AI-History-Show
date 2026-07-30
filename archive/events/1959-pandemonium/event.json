@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "oliver-selfridge",
+      "name": {
+        "en": "Oliver Selfridge",
+        "zh": "奥利弗·塞尔弗里奇"
+      },
       "role": {
-        "zh": "Pandemonium 架构提出者",
-        "en": "Author of the Pandemonium architecture"
+        "en": "Author of the Pandemonium architecture",
+        "zh": "Pandemonium 架构提出者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

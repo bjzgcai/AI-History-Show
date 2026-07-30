@@ -23,9 +23,9 @@
     "asset-1971-complexity-theory-reduction-map"
   ],
   "sourceIds": [
-    "source-the-complexity-of-theorem-proving-procedures",
     "source-stephen-a-cook-acm-a-m-turing-award",
-    "source-clay-mathematics-institute-p-vs-np"
+    "source-clay-mathematics-institute-p-vs-np",
+    "source-the-complexity-of-theorem-proving-procedures"
   ],
   "claimIds": [
     "claim-ai100-achievement",
@@ -90,7 +90,7 @@
   "figures": [
     {
       "name": {
-        "en": "Stephen A. Cook",
+        "en": "Stephen Cook",
         "zh": "斯蒂芬·A·库克"
       },
       "role": {
@@ -99,7 +99,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1971-complexity-theory_stephen-cook.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {

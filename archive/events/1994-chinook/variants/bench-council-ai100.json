@@ -126,7 +126,8 @@
       },
       "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

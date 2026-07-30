@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1990-boosting-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What is the central promise of boosting?",
+      "zh": "Boosting 的核心目标是什么？"
+    },
+    "options": [
+      {
+        "en": "Combine weak learners into a strong learner",
+        "zh": "把弱学习器组合成强学习器"
+      },
+      {
+        "en": "Replace labels with images",
+        "zh": "用图像替换标签"
+      },
+      {
+        "en": "Remove all training rounds",
+        "zh": "移除所有训练轮次"
+      },
+      {
+        "en": "Use only one perfect rule",
+        "zh": "只使用一条完美规则"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Boosting repeatedly invokes a weak learner on reweighted or resampled data and combines the resulting hypotheses. Later rounds focus on examples that earlier hypotheses handled poorly.",
+      "zh": "Boosting 在重新加权或重采样的数据上反复调用弱学习器，并组合得到的多个假设。后续轮次重点关注此前假设处理不好的样本。"
+    },
+    "sourceIds": [
+      "source-1990-boosting-primary"
+    ],
+    "assetIds": [
+      "asset-1990-boosting-explainer"
+    ]
+  }
+]

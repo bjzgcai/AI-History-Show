@@ -1,0 +1,93 @@
+{
+  "id": "ai100-2016-xgboost",
+  "year": 2016,
+  "date": "2016",
+  "title": {
+    "en": "XGBoost",
+    "zh": "XGBoost"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Gradient-boosted trees were highly accurate, but large datasets and sparse features exposed systems bottlenecks. XGBoost combined a regularized objective with an engineering design built for scalable parallel and out-of-core learning.</p><p>The system uses second-order gradient statistics, regularized tree scoring, sparsity-aware split finding, column blocks, and cache-conscious computation. These choices make boosted trees efficient across machines and data formats. Experts generally regard XGBoost as the system that made gradient-boosted trees a default high-performance tool for tabular prediction. Its open-source ecosystem and competition success drove broad industrial adoption.</p>",
+    "zh": "<p>梯度提升树精度很高，但大规模数据和稀疏特征暴露出系统瓶颈。XGBoost 把正则化目标与面向并行和外存学习的工程设计结合起来。</p><p>系统使用二阶梯度统计、正则化树评分、稀疏感知划分搜索、列块和缓存友好计算。这些设计使提升树能在不同机器和数据格式上高效运行。专家通常把 XGBoost 视为使梯度提升树成为表格预测默认高性能工具的关键系统。其开源生态和竞赛表现推动了广泛工业应用。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "University of Washington, United States",
+      "zh": "华盛顿大学，美国"
+    },
+    "coordinates": [
+      47.6553,
+      -122.3035
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "Tianqi Chen",
+        "zh": "陈天奇"
+      },
+      "role": {
+        "en": "XGBoost lead author",
+        "zh": "XGBoost 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Carlos Guestrin",
+        "zh": "卡洛斯·格斯特林"
+      },
+      "role": {
+        "en": "XGBoost co-author",
+        "zh": "XGBoost 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "leo-breiman",
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
+      "role": {
+        "en": "Tree-ensemble lineage pioneer",
+        "zh": "树集成技术谱系先驱"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

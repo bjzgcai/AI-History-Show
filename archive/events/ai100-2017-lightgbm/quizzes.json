@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2017-lightgbm-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What does LightGBM bundle to reduce dimensionality?",
+      "zh": "LightGBM 通过捆绑什么来降低维度？"
+    },
+    "options": [
+      {
+        "en": "Mutually exclusive sparse features",
+        "zh": "互斥的稀疏特征"
+      },
+      {
+        "en": "All class labels",
+        "zh": "所有类别标签"
+      },
+      {
+        "en": "Complete decision trees",
+        "zh": "完整决策树"
+      },
+      {
+        "en": "Every training epoch",
+        "zh": "每个训练轮次"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Gradient-based one-side sampling keeps examples with large gradients while sampling small-gradient examples, and exclusive feature bundling combines mutually exclusive sparse features. Leaf-wise tree growth further concentrates capacity on the split with the largest loss reduction.",
+      "zh": "基于梯度的单边采样保留大梯度样本并抽样小梯度样本，互斥特征捆绑则合并不会同时出现的稀疏特征。按叶生长的策略进一步把容量集中到损失下降最大的划分。"
+    },
+    "sourceIds": [
+      "source-2017-lightgbm-primary"
+    ],
+    "assetIds": [
+      "asset-2017-lightgbm-explainer"
+    ]
+  }
+]

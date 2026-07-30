@@ -24,7 +24,9 @@
             "zh": "用于展示 Faster R-CNN 共同作者何恺明。",
             "en": "Used to present Faster R-CNN co-author Kaiming He."
         },
-        "usage": ["variant:bench-council-ai100"],
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
         "editable": true,
         "sourceName": {
             "zh": "MIT CSAIL",
@@ -57,7 +59,9 @@
             "zh": "用于解释区域建议网络如何生成候选框。",
             "en": "Used to explain how the Region Proposal Network generates candidate boxes."
         },
-        "usage": ["variant:bench-council-ai100"],
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
         "editable": true
     },
     {
@@ -85,7 +89,40 @@
             "zh": "用于展示 Faster R-CNN 的分类与边界框输出。",
             "en": "Used to show Faster R-CNN classification and bounding-box outputs."
         },
-        "usage": ["variant:bench-council-ai100"],
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
         "editable": true
+    },
+    {
+        "id": "asset-ai100-contributor-shaoqing-ren",
+        "type": "image",
+        "path": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+        "role": "portrait",
+        "caption": {
+            "en": "Shaoqing Ren portrait",
+            "zh": "任少卿肖像"
+        },
+        "subcaption": {
+            "en": "Co-author of Faster R-CNN",
+            "zh": "Faster R-CNN 共同作者"
+        },
+        "sourceId": "source-ai100-contributor-shaoqing-ren",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "zh": "Migrated from legacy media metadata; verify rights before publication.",
+                "en": "Migrated from legacy media metadata; verify rights before publication."
+            }
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true,
+        "sourceUrl": "https://arxiv.org/abs/1512.03385",
+        "displayUsage": {
+            "en": "Contributor portrait for the Faster r-cnn achievement page",
+            "zh": "用于Faster r-cnn成就页面的人物肖像"
+        }
     }
 ]

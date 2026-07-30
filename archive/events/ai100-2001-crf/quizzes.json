@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2001-crf-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What does a linear-chain CRF predict jointly?",
+      "zh": "线性链 CRF 联合预测什么？"
+    },
+    "options": [
+      {
+        "en": "An entire label sequence",
+        "zh": "整条标签序列"
+      },
+      {
+        "en": "Only one isolated pixel",
+        "zh": "仅一个孤立像素"
+      },
+      {
+        "en": "Only a database row",
+        "zh": "仅一行数据库记录"
+      },
+      {
+        "en": "A fixed tree depth",
+        "zh": "固定树深度"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "A CRF assigns a globally normalized conditional probability to an entire label sequence using feature functions over observations and neighboring labels. Dynamic programming supports exact inference and training for linear-chain models.",
+      "zh": "CRF 使用观测和相邻标签上的特征函数，为整条标签序列分配全局归一化的条件概率。在线性链模型中，动态规划支持精确推断和训练。"
+    },
+    "sourceIds": [
+      "source-2001-crf-primary"
+    ],
+    "assetIds": [
+      "asset-2001-crf-explainer"
+    ]
+  }
+]

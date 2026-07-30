@@ -37,21 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "joshua-tenenbaum",
+      "name": {
+        "en": "Joshua Tenenbaum",
+        "zh": "约书亚·特南鲍姆"
+      },
       "role": {
-        "zh": "Isomap 主要作者",
-        "en": "Lead author of Isomap"
+        "en": "Lead author of Isomap",
+        "zh": "Isomap 主要作者"
       },
       "avatar": "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "john-langford",
-      "role": {
-        "zh": "Co-author of Isomap",
-        "en": "Co-author of Isomap"
+      "name": {
+        "en": "John Langford",
+        "zh": "约翰·兰福德"
       },
-      "organizationIds": []
+      "role": {
+        "en": "Co-author of Isomap",
+        "zh": "Co-author of Isomap"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

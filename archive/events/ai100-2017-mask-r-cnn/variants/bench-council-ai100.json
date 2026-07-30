@@ -1,0 +1,334 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2017-mask-r-cnn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "en": "Mask R-CNN",
+    "zh": "Mask R-CNN"
+  },
+  "displaySummary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "displayDescription": {
+    "en": "<p>Detection systems could locate objects with boxes, while semantic segmentation assigned labels to pixels without separating individual instances. Mask R-CNN unified these needs by extending a strong two-stage detector with an instance-mask branch.</p><p>A parallel mask head predicts a binary mask for every detected instance, while classification and box regression remain separate tasks. RoIAlign avoids the coordinate quantization of RoI pooling and preserves pixel-level alignment. Experts generally regard Mask R-CNN as a canonical instance-segmentation framework and a versatile base for pose, keypoint, and dense prediction tasks. RoIAlign also became a widely reused alignment technique.</p>",
+    "zh": "<p>检测系统可以用边界框定位物体，语义分割则给像素赋予类别，却不能区分同类的不同实例。Mask R-CNN 在强大的两阶段检测器上增加实例掩码分支，把两类需求统一起来。</p><p>并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。专家通常把 Mask R-CNN 视为实例分割的经典框架，并把它作为姿态、关键点和稠密预测任务的通用基础。RoIAlign 也成为被广泛复用的对齐技术。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-canonical-2026-07-30",
+    "source-reviewed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Primary publication",
+        "zh": "主论文"
+      },
+      "title": {
+        "en": "Mask R-CNN",
+        "zh": "Mask R-CNN"
+      },
+      "description": {
+        "en": "Primary source for the BenchCouncil-listed Mask R-CNN achievement.",
+        "zh": "BenchCouncil 主表中Mask R-CNN成就的主要资料。"
+      },
+      "url": "https://arxiv.org/abs/1703.06870",
+      "source": "https://arxiv.org/abs/1703.06870",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2017-mask-r-cnn-portrait",
+    "asset-2017-mask-r-cnn-explainer"
+  ],
+  "sourceIds": [
+    "source-2017-mask-r-cnn-primary",
+    "source-2017-mask-r-cnn-secondary",
+    "source-benchcouncil-ai100-catalog",
+    "source-2017-mask-r-cnn-portrait"
+  ],
+  "claimIds": [
+    "claim-2017-mask-r-cnn-membership",
+    "claim-2017-mask-r-cnn-description"
+  ],
+  "quizId": "ai100-2017-mask-r-cnn-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Detection systems could locate objects with boxes, while semantic segmentation assigned labels to pixels without separating individual instances. Mask R-CNN unified these needs by extending a strong two-stage detector with an instance-mask branch.",
+        "zh": "检测系统可以用边界框定位物体，语义分割则给像素赋予类别，却不能区分同类的不同实例。Mask R-CNN 在强大的两阶段检测器上增加实例掩码分支，把两类需求统一起来。"
+      },
+      "sourceIds": [
+        "source-2017-mask-r-cnn-primary",
+        "source-benchcouncil-ai100-catalog"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A parallel mask head predicts a binary mask for every detected instance, while classification and box regression remain separate tasks. RoIAlign avoids the coordinate quantization of RoI pooling and preserves pixel-level alignment.",
+        "zh": "并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。"
+      },
+      "sourceIds": [
+        "source-2017-mask-r-cnn-primary"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally regard Mask R-CNN as a canonical instance-segmentation framework and a versatile base for pose, keypoint, and dense prediction tasks. RoIAlign also became a widely reused alignment technique.",
+        "zh": "专家通常把 Mask R-CNN 视为实例分割的经典框架，并把它作为姿态、关键点和稠密预测任务的通用基础。RoIAlign 也成为被广泛复用的对齐技术。"
+      },
+      "sourceIds": [
+        "source-2017-mask-r-cnn-primary",
+        "source-2017-mask-r-cnn-secondary"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "figureId": "kaiming-he",
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
+      },
+      "role": {
+        "en": "Mask R-CNN lead author",
+        "zh": "Mask R-CNN 主要作者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "ross-girshick",
+      "name": {
+        "en": "Ross Girshick",
+        "zh": "罗斯·格希克"
+      },
+      "role": {
+        "zh": "Faster R-CNN 共同作者",
+        "en": "Co-author of Faster R-CNN"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "“Mask R-CNN”",
+    "zh": "“Mask R-CNN”"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Mask R-CNN",
+      "zh": "Mask R-CNN"
+    },
+    "workAuthors": {
+      "en": "See primary publication record",
+      "zh": "见主论文记录"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1703.06870"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Mask R-CNN</em>",
+    "zh": "《Mask R-CNN》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Detection and Segmentation",
+      "zh": "检测与分割"
+    },
+    "method": {
+      "en": "Parallel detection and mask heads with RoIAlign",
+      "zh": "RoIAlign 与并行检测、掩码分支"
+    },
+    "artifact": {
+      "en": "Instance segmentation framework",
+      "zh": "实例分割框架"
+    },
+    "material": {
+      "en": "Mask R-CNN, companion source, and BenchCouncil catalog record",
+      "zh": "《Mask R-CNN》、配套资料与 BenchCouncil 清单记录"
+    },
+    "demo": {
+      "en": "Follow the four stages and compare how changing one stage affects the final instance segmentation framework.",
+      "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的实例分割框架。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Stage 1",
+          "zh": "阶段 1"
+        },
+        "text": {
+          "en": "Feature pyramid",
+          "zh": "特征金字塔"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 2",
+          "zh": "阶段 2"
+        },
+        "text": {
+          "en": "Region proposals",
+          "zh": "区域候选"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 3",
+          "zh": "阶段 3"
+        },
+        "text": {
+          "en": "RoIAlign",
+          "zh": "RoIAlign"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 4",
+          "zh": "阶段 4"
+        },
+        "text": {
+          "en": "Box, class, and mask",
+          "zh": "边界框、类别与掩码"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Feature pyramid",
+        "zh": "特征金字塔"
+      },
+      {
+        "en": "Region proposals",
+        "zh": "区域候选"
+      },
+      {
+        "en": "RoIAlign",
+        "zh": "RoIAlign"
+      },
+      {
+        "en": "Box, class, and mask",
+        "zh": "边界框、类别与掩码"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2017-2017-mask-r-cnn_process.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "BenchCouncil lists Mask R-CNN and cites Mask R-CNN as a defining publication.",
+          "zh": "BenchCouncil 将Mask R-CNN列入主表，并把《Mask R-CNN》作为代表性资料。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+          "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Mask R-CNN",
+          "zh": "Mask R-CNN"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Mask R-CNN achievement.",
+          "zh": "BenchCouncil 主表中Mask R-CNN成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1703.06870",
+        "source": "https://arxiv.org/abs/1703.06870",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Facebook AI Research, United States",
+      "zh": "Facebook AI Research，美国"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      37.4848,
+      -122.1484
+    ]
+  }
+}

@@ -37,40 +37,58 @@
   ],
   "figures": [
     {
-      "figureId": "kaiming-he",
-      "role": {
-        "zh": "ResNet 第一作者",
-        "en": "ResNet lead author"
+      "name": {
+        "en": "Kaiming He",
+        "zh": "何恺明"
       },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+      "role": {
+        "en": "ResNet lead author",
+        "zh": "ResNet 第一作者"
+      },
+      "avatar": "resources/images/figures/kaiming-he.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "xiangyu-zhang",
-      "role": {
-        "zh": "ResNet 共同作者",
-        "en": "ResNet co-author"
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
       },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
-      "organizationIds": []
-    },
-    {
-      "figureId": "shaoqing-ren",
       "role": {
-        "zh": "ResNet 共同作者",
-        "en": "ResNet co-author"
-      },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
-      "organizationIds": []
-    },
-    {
-      "figureId": "jian-sun",
-      "role": {
-        "zh": "ResNet 共同作者与通讯作者",
-        "en": "ResNet co-author and corresponding author"
+        "en": "ResNet co-author and corresponding author",
+        "zh": "ResNet 共同作者与通讯作者"
       },
       "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Xiangyu Zhang",
+        "zh": "张祥雨"
+      },
+      "role": {
+        "en": "ResNet co-author",
+        "zh": "ResNet 共同作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_03.png",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
+        "en": "Shaoqing Ren",
+        "zh": "任少卿"
+      },
+      "role": {
+        "en": "ResNet co-author",
+        "zh": "ResNet 共同作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "marvin-minsky",
-      "role": {
-        "zh": "框架表示思想提出者",
-        "en": "Author of the frame representation proposal"
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
       },
-      "avatar": "resources/images/figures/marvin-minsky.jpg",
+      "role": {
+        "en": "Author of the frame representation proposal",
+        "zh": "框架表示思想提出者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

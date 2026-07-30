@@ -53,9 +53,9 @@
     "asset-1984-cart-pruning-curve"
   ],
   "sourceIds": [
-    "source-classification-and-regression-trees",
     "source-scikit-learn-decisiontreeclassifier",
-    "source-r-rpart-package"
+    "source-r-rpart-package",
+    "source-classification-and-regression-trees"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -129,12 +129,13 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "Jerome Friedman",
-        "zh": "杰罗姆·弗里德曼"
+        "en": "Richard olshen",
+        "zh": "理查德·奥尔申"
       },
       "role": {
         "en": "CART monograph co-author",
@@ -142,12 +143,13 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "Richard Olshen",
-        "zh": "理查德·奥尔申"
+        "en": "Jerome Friedman",
+        "zh": "杰罗姆·弗里德曼"
       },
       "role": {
         "en": "CART monograph co-author",
