@@ -318,12 +318,12 @@
   },
   "location": {
     "name": {
-      "en": "Microsoft Research Asia and Peking University",
-      "zh": "微软亚洲研究院与北京大学"
+      "en": "Microsoft, Peking University",
+      "zh": "Microsoft、北京大学"
     },
     "country": {
-      "en": "China",
-      "zh": "中国"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       39.9042,

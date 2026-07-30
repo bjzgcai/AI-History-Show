@@ -380,12 +380,12 @@
   },
   "location": {
     "name": {
-      "en": "Stanford University",
-      "zh": "斯坦福大学"
+      "en": "Stanford University, UC Berkeley",
+      "zh": "斯坦福大学、加州大学伯克利分校"
     },
     "country": {
-      "en": "Stanford, United States",
-      "zh": "美国斯坦福"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.4275,

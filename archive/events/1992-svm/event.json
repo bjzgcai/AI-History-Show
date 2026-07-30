@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国默里山",
-      "en": "Murray Hill, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "贝尔实验室",
-      "en": "Bell Laboratories"
+      "en": "Bell Lab",
+      "zh": "贝尔实验室"
     },
     "coordinates": [
       40.6843,

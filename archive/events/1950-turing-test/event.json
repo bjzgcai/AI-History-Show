@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国，曼彻斯特",
-      "en": "Manchester, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "曼彻斯特大学",
-      "en": "University of Manchester"
+      "en": "Manchester University",
+      "zh": "曼彻斯特大学"
     },
     "coordinates": [
       53.4668,

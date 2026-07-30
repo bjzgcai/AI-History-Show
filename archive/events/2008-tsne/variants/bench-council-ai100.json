@@ -298,12 +298,12 @@
   },
   "location": {
     "name": {
-      "en": "Tilburg University / University of Toronto",
-      "zh": "蒂尔堡大学 / 多伦多大学"
+      "en": "Tilburg University, University of Toronto",
+      "zh": "蒂尔堡大学、多伦多大学"
     },
     "country": {
-      "en": "Netherlands and Canada",
-      "zh": "荷兰与加拿大"
+      "en": "Netherlands, Canada",
+      "zh": "荷兰、加拿大"
     },
     "coordinates": [
       51.5633,

@@ -267,12 +267,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Amsterdam / University of Toronto",
-      "zh": "阿姆斯特丹大学 / 多伦多大学"
+      "en": "OpenAI, University of Toronto",
+      "zh": "OpenAI、多伦多大学"
     },
     "country": {
-      "en": "Netherlands and Canada",
-      "zh": "荷兰与加拿大"
+      "en": "United States, Canada",
+      "zh": "美国、加拿大"
     },
     "coordinates": [
       52.3558,

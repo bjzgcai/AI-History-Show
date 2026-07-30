@@ -238,12 +238,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Manchester",
+      "en": "Manchester University",
       "zh": "曼彻斯特大学"
     },
     "country": {
-      "en": "Manchester, United Kingdom",
-      "zh": "英国，曼彻斯特"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       53.4668,

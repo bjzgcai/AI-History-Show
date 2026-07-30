@@ -318,12 +318,12 @@
   },
   "location": {
     "name": {
-      "en": "DeepMind, United Kingdom",
-      "zh": "DeepMind，英国"
+      "en": "DeepMind, University of Montreal",
+      "zh": "DeepMind、蒙特利尔大学"
     },
     "country": {
-      "en": "United Kingdom",
-      "zh": "英国"
+      "en": "United Kingdom, Canada",
+      "zh": "英国、加拿大"
     },
     "coordinates": [
       51.5072,

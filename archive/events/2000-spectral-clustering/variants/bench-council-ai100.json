@@ -319,12 +319,12 @@
   },
   "location": {
     "name": {
-      "en": "University of California, Berkeley",
-      "zh": "加州大学伯克利分校"
+      "en": "University of Pennsylvania, U.C. Berkeley, Hebrew University",
+      "zh": "宾夕法尼亚大学、加州大学伯克利分校、耶路撒冷希伯来大学"
     },
     "country": {
-      "en": "California, United States",
-      "zh": "美国加利福尼亚州"
+      "en": "United States, Israel",
+      "zh": "美国、以色列"
     },
     "coordinates": [
       37.8719,

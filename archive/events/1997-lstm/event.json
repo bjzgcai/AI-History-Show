@@ -17,12 +17,12 @@
   "location": {
     "regionId": "germany",
     "country": {
-      "zh": "德国慕尼黑",
-      "en": "Munich, Germany"
+      "en": "Germany, Switzerland",
+      "zh": "德国、瑞士"
     },
     "place": {
-      "zh": "慕尼黑工业大学",
-      "en": "Technical University of Munich"
+      "en": "Technical University of Munich, IDSIA",
+      "zh": "慕尼黑工业大学、瑞士人工智能实验室（IDSIA）"
     },
     "coordinates": [
       48.1496,

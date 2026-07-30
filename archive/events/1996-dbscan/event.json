@@ -17,12 +17,12 @@
   "location": {
     "regionId": "germany",
     "country": {
-      "zh": "德国慕尼黑",
-      "en": "Munich, Germany"
+      "en": "Germany",
+      "zh": "德国"
     },
     "place": {
-      "zh": "慕尼黑大学",
-      "en": "University of Munich"
+      "en": "University of Munich",
+      "zh": "慕尼黑大学"
     },
     "coordinates": [
       48.1508,

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国",
-      "en": "United States"
+      "en": "United States, Canada",
+      "zh": "美国、加拿大"
     },
     "place": {
-      "zh": "Google Brain",
-      "en": "Google Brain"
+      "en": "Google, University of Toronto",
+      "zh": "Google、多伦多大学"
     },
     "coordinates": [
       37.422,

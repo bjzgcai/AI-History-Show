@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大蒙特利尔",
-      "en": "Montreal, Canada"
+      "en": "Germany, Canada, United States",
+      "zh": "德国、加拿大、美国"
     },
     "place": {
-      "zh": "蒙特利尔大学",
-      "en": "University of Montreal"
+      "en": "Jacobs University Bremen, University of Montreal, Stanford University, University of Toronto",
+      "zh": "不来梅雅各布大学、蒙特利尔大学、斯坦福大学、多伦多大学"
     },
     "coordinates": [
       45.5056,

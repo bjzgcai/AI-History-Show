@@ -5535,11 +5535,16 @@
             white-space: nowrap;
         }
 
-        .ui-detail-place {
+        .ui-detail-place-shell {
+            position: relative;
             grid-column: 2;
             grid-row: 1;
             min-width: 0;
             margin-top: 16px;
+        }
+
+        .ui-detail-place {
+            min-width: 0;
             color: var(--accent);
             font-size: 30px;
             font-weight: 900;
@@ -5554,6 +5559,42 @@
             -webkit-line-clamp: 2;
             white-space: normal;
             overflow-wrap: anywhere;
+        }
+
+        .ui-detail-place-shell.has-truncated-address .ui-detail-place {
+            cursor: help;
+        }
+
+        .ui-detail-place-tooltip {
+            position: absolute;
+            z-index: 80;
+            top: calc(100% + 10px);
+            left: 0;
+            width: max-content;
+            max-width: min(520px, calc(100vw - 40px));
+            padding: 9px 12px;
+            border: 1px solid rgba(246, 137, 0, 0.5);
+            border-radius: 6px;
+            background: rgba(14, 16, 20, 0.98);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 14px;
+            font-weight: 650;
+            line-height: 1.45;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 120ms ease, transform 120ms ease, visibility 120ms ease;
+            pointer-events: none;
+        }
+
+        .ui-detail-place-shell.has-truncated-address:hover .ui-detail-place-tooltip,
+        .ui-detail-place-shell.has-truncated-address:focus-within .ui-detail-place-tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
         }
 
         .ui-detail-place.is-measuring {
@@ -7295,11 +7336,14 @@
                 overflow-wrap: anywhere;
             }
 
-            .ui-detail-place {
+            .ui-detail-place-shell {
                 grid-column: auto;
                 grid-row: auto;
-                width: auto;
                 margin-top: 0;
+            }
+
+            .ui-detail-place {
+                width: auto;
                 font-size: clamp(20px, 6vw, 30px);
             }
 
@@ -8312,11 +8356,14 @@
                 overflow-wrap: anywhere;
             }
 
-            .ui-detail-place {
+            .ui-detail-place-shell {
                 grid-column: auto;
                 grid-row: auto;
-                width: auto;
                 margin-top: 0;
+            }
+
+            .ui-detail-place {
+                width: auto;
                 font-size: clamp(20px, 6vw, 30px);
             }
 
@@ -10332,19 +10379,6 @@
             };
         }
 
-        function formatUiCountryName(value) {
-            const text = String(value || '').trim();
-            return uiText(text.replace(/\bUnited States\b/g, 'US'), text);
-        }
-
-        function formatUiLocation(location) {
-            if (!location || typeof location !== 'object') return location;
-            return {
-                ...location,
-                country: formatUiCountryName(location.country)
-            };
-        }
-
         function getVm(index) {
             const milestone = getDetailMilestone(index);
             const cacheKey = `${index}:${milestone && milestone.id ? milestone.id : ''}`;
@@ -10355,7 +10389,6 @@
             const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
                 ? window.MilestoneView.normalizeMilestone(milestone, index, milestoneList)
                 : buildFallbackVm(milestone, index);
-            vm.location = formatUiLocation(vm.location);
             vmCache.set(cacheKey, vm);
             return vm;
         }
@@ -15786,60 +15819,80 @@
             });
         }
 
+        function syncUiDetailLocationTooltip(place, shell) {
+            if (!place || !shell) return;
+            const tooltip = shell.querySelector('.ui-detail-place-tooltip');
+            const isTruncated = place.scrollHeight > place.clientHeight + 1 || place.scrollWidth > place.clientWidth + 1;
+            shell.classList.toggle('has-truncated-address', isTruncated);
+            if (isTruncated && tooltip) {
+                place.tabIndex = 0;
+                place.setAttribute('aria-describedby', tooltip.id);
+            } else {
+                place.removeAttribute('tabindex');
+                place.removeAttribute('aria-describedby');
+            }
+        }
+
         function fitUiDetailLocation() {
             if (!refs.uiBrowserMain) return;
             const topLine = refs.uiBrowserMain.querySelector('.ui-detail-topline');
             const context = refs.uiBrowserMain.querySelector('.ui-detail-context');
+            const shell = refs.uiBrowserMain.querySelector('.ui-detail-place-shell');
             const place = refs.uiBrowserMain.querySelector('.ui-detail-place');
-            if (!topLine || !context || !place) return;
+            if (!topLine || !context || !shell || !place) return;
 
             context.style.removeProperty('--ui-detail-context-width');
             place.classList.remove('is-measuring');
-            if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
-            const topLineStyle = window.getComputedStyle(topLine);
-            const readLayoutWidth = (property) => Number.parseFloat(topLineStyle.getPropertyValue(property)) || 0;
-            const baseContextWidth = readLayoutWidth('--ui-detail-context-base-width');
-            const contextWidthLimit = readLayoutWidth('--ui-detail-context-max-width');
-            const titleMinWidth = readLayoutWidth('--ui-detail-title-min-width');
-            const columnGap = Number.parseFloat(topLineStyle.columnGap) || 0;
-            if (!baseContextWidth || !contextWidthLimit || !titleMinWidth) return;
+            if (window.matchMedia('(min-width: 1200px)').matches) {
+                const topLineStyle = window.getComputedStyle(topLine);
+                const readLayoutWidth = (property) =>
+                    Number.parseFloat(topLineStyle.getPropertyValue(property)) || 0;
+                const baseContextWidth = readLayoutWidth('--ui-detail-context-base-width');
+                const contextWidthLimit = readLayoutWidth('--ui-detail-context-max-width');
+                const titleMinWidth = readLayoutWidth('--ui-detail-title-min-width');
+                const columnGap = Number.parseFloat(topLineStyle.columnGap) || 0;
 
-            const availableContextWidth = topLine.clientWidth - columnGap - titleMinWidth;
-            const maxContextWidth = Math.max(
-                baseContextWidth,
-                Math.min(contextWidthLimit, availableContextWidth)
-            );
-            const applyContextWidth = (width) => {
-                context.style.setProperty('--ui-detail-context-width', `${Math.ceil(width)}px`);
-            };
-            const fitsInTwoLines = (width) => {
-                applyContextWidth(width);
-                place.classList.add('is-measuring');
-                const placeStyle = window.getComputedStyle(place);
-                const lineHeight = Number.parseFloat(placeStyle.lineHeight) || 0;
-                const fits = lineHeight > 0 && place.scrollHeight <= lineHeight * 2 + 1;
-                place.classList.remove('is-measuring');
-                return fits;
-            };
+                if (baseContextWidth && contextWidthLimit && titleMinWidth) {
+                    const availableContextWidth = topLine.clientWidth - columnGap - titleMinWidth;
+                    const maxContextWidth = Math.max(
+                        baseContextWidth,
+                        Math.min(contextWidthLimit, availableContextWidth)
+                    );
+                    const applyContextWidth = (width) => {
+                        context.style.setProperty('--ui-detail-context-width', `${Math.ceil(width)}px`);
+                    };
+                    const fitsInTwoLines = (width) => {
+                        applyContextWidth(width);
+                        place.classList.add('is-measuring');
+                        const placeStyle = window.getComputedStyle(place);
+                        const lineHeight = Number.parseFloat(placeStyle.lineHeight) || 0;
+                        const fits = lineHeight > 0 && place.scrollHeight <= lineHeight * 2 + 1;
+                        place.classList.remove('is-measuring');
+                        return fits;
+                    };
 
-            if (fitsInTwoLines(baseContextWidth)) return;
-            if (!fitsInTwoLines(maxContextWidth)) {
-                applyContextWidth(maxContextWidth);
-                return;
-            }
-
-            let low = baseContextWidth;
-            let high = maxContextWidth;
-            while (high - low > 1) {
-                const middle = (low + high) / 2;
-                if (fitsInTwoLines(middle)) {
-                    high = middle;
-                } else {
-                    low = middle;
+                    if (!fitsInTwoLines(baseContextWidth)) {
+                        if (!fitsInTwoLines(maxContextWidth)) {
+                            applyContextWidth(maxContextWidth);
+                        } else {
+                            let low = baseContextWidth;
+                            let high = maxContextWidth;
+                            while (high - low > 1) {
+                                const middle = (low + high) / 2;
+                                if (fitsInTwoLines(middle)) {
+                                    high = middle;
+                                } else {
+                                    low = middle;
+                                }
+                            }
+                            applyContextWidth(high);
+                        }
+                    }
                 }
             }
-            applyContextWidth(high);
+
+            window.requestAnimationFrame(() => syncUiDetailLocationTooltip(place, shell));
         }
 
         function scheduleUiDetailLocationFit() {
@@ -15958,7 +16011,10 @@
                                 <div class="ui-detail-topline">
                                     <div class="ui-detail-context">
                                         <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
-                                        <div class="ui-detail-place" title="${escapeHtml(locationText)}">${escapeHtmlWithCjkTail(locationText)}</div>
+                                        <div class="ui-detail-place-shell">
+                                            <div class="ui-detail-place">${escapeHtmlWithCjkTail(locationText)}</div>
+                                            <div class="ui-detail-place-tooltip" id="uiDetailLocationTooltip" role="tooltip">${escapeHtml(locationText)}</div>
+                                        </div>
                                     </div>
                                     <div class="ui-detail-heading">
                                         <div class="ui-detail-title-row">

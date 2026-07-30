@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大阿尔伯塔省",
-      "en": "Alberta, Canada"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "place": {
-      "zh": "阿尔伯塔大学",
-      "en": "University of Alberta"
+      "en": "University of Alberta",
+      "zh": "阿尔伯塔大学"
     },
     "coordinates": [
       53.5232,

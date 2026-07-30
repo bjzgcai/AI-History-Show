@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国西雅图",
-      "en": "Seattle, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "华盛顿大学 / Allen Institute for AI",
-      "en": "University of Washington / Allen Institute for AI"
+      "en": "University of Washington, Allen Institute for AI, Facebook AI Research",
+      "zh": "华盛顿大学、艾伦人工智能研究所、Facebook 人工智能研究院"
     },
     "coordinates": [
       47.6553,

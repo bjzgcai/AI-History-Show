@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "法国与英国",
-      "en": "France and United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "艾克斯-马赛大学与爱丁堡大学",
-      "en": "Aix-Marseille University and University of Edinburgh"
+      "en": "University of Edinburgh",
+      "zh": "爱丁堡大学"
     },
     "coordinates": [
       43.3047,

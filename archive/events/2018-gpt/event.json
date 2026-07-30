@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国旧金山",
-      "en": "San Francisco, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "OpenAI",
-      "en": "OpenAI"
+      "en": "OpenAI",
+      "zh": "OpenAI"
     },
     "coordinates": [
       37.7749,

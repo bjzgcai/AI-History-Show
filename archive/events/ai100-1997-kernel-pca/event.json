@@ -17,12 +17,12 @@
   "location": {
     "regionId": "germany",
     "country": {
-      "zh": "德国图宾根",
-      "en": "Tuebingen, Germany"
+      "en": "Germany",
+      "zh": "德国"
     },
     "place": {
-      "zh": "马克斯·普朗克生物控制论研究所",
-      "en": "Max Planck Institute for Biological Cybernetics"
+      "en": "Max Planck Institute for Biological Cybernetics",
+      "zh": "马克斯·普朗克生物控制论研究所"
     },
     "coordinates": [
       48.5216,

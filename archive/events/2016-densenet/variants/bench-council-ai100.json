@@ -344,12 +344,12 @@
   },
   "location": {
     "name": {
-      "en": "Cornell University",
-      "zh": "康奈尔大学"
+      "en": "Cornell University, Tsinghua University, Facebook AI Research",
+      "zh": "康奈尔大学、清华大学、Facebook 人工智能研究院"
     },
     "country": {
-      "en": "Ithaca, United States",
-      "zh": "美国伊萨卡"
+      "en": "United States, China",
+      "zh": "美国、中国"
     },
     "coordinates": [
       42.4534,

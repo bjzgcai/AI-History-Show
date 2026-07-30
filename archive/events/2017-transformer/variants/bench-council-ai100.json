@@ -365,12 +365,12 @@
   },
   "location": {
     "name": {
-      "en": "Google Brain",
-      "zh": "Google Brain"
+      "en": "Google, University of Toronto",
+      "zh": "Google、多伦多大学"
     },
     "country": {
-      "en": "Mountain View, United States",
-      "zh": "美国山景城"
+      "en": "United States, Canada",
+      "zh": "美国、加拿大"
     },
     "coordinates": [
       37.422,

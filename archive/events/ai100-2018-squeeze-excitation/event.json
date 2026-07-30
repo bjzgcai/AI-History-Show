@@ -17,12 +17,12 @@
   "location": {
     "regionId": "china",
     "country": {
-      "en": "China and United Kingdom",
-      "zh": "中国与英国"
+      "en": "China, United Kingdom",
+      "zh": "中国、英国"
     },
     "place": {
-      "en": "Momenta and University of Oxford",
-      "zh": "Momenta 与牛津大学"
+      "en": "Momenta, University of Oxford",
+      "zh": "Momenta、牛津大学"
     },
     "coordinates": [
       31.2304,

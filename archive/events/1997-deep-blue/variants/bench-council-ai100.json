@@ -329,12 +329,12 @@
   },
   "location": {
     "name": {
-      "en": "IBM Research",
-      "zh": "IBM 研究院"
+      "en": "IBM",
+      "zh": "IBM"
     },
     "country": {
-      "en": "New York, United States",
-      "zh": "美国纽约州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       41.2108,

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国纽约州",
-      "en": "New York, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "IBM 研究院",
-      "en": "IBM Research"
+      "en": "IBM",
+      "zh": "IBM"
     },
     "coordinates": [
       41.2108,

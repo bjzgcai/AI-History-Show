@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国",
-      "en": "United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "纽约大学 / 普林斯顿大学 / 伦斯勒理工学院",
-      "en": "New York University / Princeton University / RPI"
+      "en": "Rensselaer Polytechnic Institute, Princeton University, New York University",
+      "zh": "伦斯勒理工学院、普林斯顿大学、纽约大学"
     },
     "coordinates": [
       40.7295,

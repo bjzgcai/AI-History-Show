@@ -17,12 +17,12 @@
   "location": {
     "regionId": "espoo-finland",
     "country": {
-      "zh": "芬兰埃斯波",
-      "en": "Espoo, Finland"
+      "en": "Finland",
+      "zh": "芬兰"
     },
     "place": {
-      "zh": "赫尔辛基理工大学",
-      "en": "Helsinki University of Technology"
+      "en": "Helsinki University of Technology",
+      "zh": "赫尔辛基理工大学"
     },
     "coordinates": [
       60.1841,

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大不列颠哥伦比亚省",
-      "en": "British Columbia, Canada"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "place": {
-      "zh": "不列颠哥伦比亚大学",
-      "en": "University of British Columbia"
+      "en": "University of British Columbia",
+      "zh": "不列颠哥伦比亚大学"
     },
     "coordinates": [
       49.2606,

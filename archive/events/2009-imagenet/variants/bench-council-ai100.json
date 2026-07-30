@@ -316,12 +316,12 @@
   },
   "location": {
     "name": {
-      "en": "Princeton University / Stanford University",
-      "zh": "普林斯顿大学 / 斯坦福大学"
+      "en": "Princeton University, Stanford University, University of Michigan, MIT, UNC Chapel Hill",
+      "zh": "普林斯顿大学、斯坦福大学、密歇根大学、麻省理工学院、北卡罗来纳大学教堂山分校"
     },
     "country": {
-      "en": "New Jersey and California, United States",
-      "zh": "美国新泽西州与加利福尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.3431,

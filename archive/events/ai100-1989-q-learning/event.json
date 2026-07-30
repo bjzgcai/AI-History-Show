@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "Cambridge, United Kingdom",
-      "en": "Cambridge, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "King's College Cambridge",
-      "en": "King's College Cambridge"
+      "en": "King's College, University of Edinburgh",
+      "zh": "剑桥大学国王学院、爱丁堡大学"
     },
     "coordinates": [
       52.2043,

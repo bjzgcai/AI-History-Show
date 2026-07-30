@@ -17,12 +17,12 @@
   "location": {
     "regionId": "japan",
     "country": {
-      "zh": "日本东京",
-      "en": "Tokyo, Japan"
+      "en": "Japan",
+      "zh": "日本"
     },
     "place": {
-      "zh": "NHK 广播科学研究实验室",
-      "en": "NHK Broadcasting Science Research Laboratories"
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "日本放送协会广播科学研究实验室"
     },
     "coordinates": [
       35.6762,

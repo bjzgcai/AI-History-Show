@@ -352,12 +352,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Massachusetts Amherst",
-      "zh": "University of Massachusetts Amherst"
+      "en": "University of Massachusetts, Amherst",
+      "zh": "马萨诸塞大学阿默斯特分校"
     },
     "country": {
-      "en": "Amherst, United States",
-      "zh": "Amherst, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.3868,

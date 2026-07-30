@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "福冈与圣迭戈",
-      "en": "Fukuoka and San Diego"
+      "en": "Japan, United States",
+      "zh": "日本、美国"
     },
     "place": {
-      "zh": "九州大学与加州大学圣迭戈分校",
-      "en": "Kyushu University and UC San Diego"
+      "en": "Kyushu University, UC San Diego, CMU",
+      "zh": "九州大学、加州大学圣迭戈分校、卡内基梅隆大学"
     },
     "coordinates": [
       32.8731,

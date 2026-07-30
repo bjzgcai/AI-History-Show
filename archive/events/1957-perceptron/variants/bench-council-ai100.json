@@ -296,12 +296,12 @@
   },
   "location": {
     "name": {
-      "en": "Cornell Aeronautical Laboratory",
-      "zh": "康奈尔航空实验室"
+      "en": "Cornell University",
+      "zh": "康奈尔大学"
     },
     "country": {
-      "en": "New York, United States",
-      "zh": "美国纽约州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.8864,

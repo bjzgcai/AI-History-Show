@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "荷兰与加拿大",
-      "en": "Netherlands and Canada"
+      "en": "Netherlands, Canada",
+      "zh": "荷兰、加拿大"
     },
     "place": {
-      "zh": "蒂尔堡大学 / 多伦多大学",
-      "en": "Tilburg University / University of Toronto"
+      "en": "Tilburg University, University of Toronto",
+      "zh": "蒂尔堡大学、多伦多大学"
     },
     "coordinates": [
       51.5633,
