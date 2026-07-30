@@ -484,15 +484,10 @@ assert.match(
     /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should exclude the image mounted in the right-side media panel'
 );
-assert.match(
+assert.doesNotMatch(
     indexHtml,
-    /function getChronologyCardImage\(milestone\)[\s\S]*?UI_CHRONOLOGY_IMAGE_OVERRIDES[\s\S]*?getUiDetailImages\(vm\)\[0\]/,
-    'overview cards should use the first image from the matching detail-page image collection unless overridden'
-);
-assert.match(
-    indexHtml,
-    /chronologyOverview\.update\(\{[\s\S]*?resolveCardImage: getChronologyCardImage/,
-    'the chronology overview should receive the shared detail-image resolver'
+    /UI_CHRONOLOGY_IMAGE_OVERRIDES|getChronologyCardImage|resolveCardImage/,
+    'overview cards should read generated Archive image configuration without index.html overrides'
 );
 assert.doesNotMatch(
     indexHtml,

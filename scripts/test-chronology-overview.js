@@ -57,20 +57,103 @@ assert.equal(
 );
 console.log('PASS chronology canonical events remove duplicate cards and preserve variants');
 
+const spectralClustering = milestones.find((item) => item.id === 'milestone-2000-spectral-clustering');
+assert.deepEqual(
+    spectralClustering.title,
+    {
+        zh: '归一化切分与谱聚类',
+        en: 'Normalized Cuts and Spectral Clustering'
+    },
+    'the AI100 spectral-clustering event should retain its normalized-cuts framing'
+);
+assert.deepEqual(
+    spectralClustering.figures.map((figure) => figure.name.en),
+    ['Jianbo Shi', 'Jitendra Malik', 'Andrew Ng', 'Yair Weiss'],
+    'the AI100 spectral-clustering event should expose four individual core contributors'
+);
+assert.equal(
+    spectralClustering.imageMeta[
+        'resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg'
+    ].sourceId,
+    'source-on-spectral-clustering-analysis-and-an-algorithm',
+    'the spectral embedding explainer should cite the 2001 spectral-clustering paper'
+);
+assert.equal(
+    spectralClustering.imageMeta['resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg'].sourceId,
+    'source-andrew-ng-wikimedia-portrait',
+    'the Andrew Ng portrait should cite its Wikimedia Commons file page'
+);
+assert.equal(
+    spectralClustering.imageMeta[
+        'resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png'
+    ].sourceId,
+    'source-spectral-graph-illustration',
+    'the six-node graph should cite its Wikimedia Commons source'
+);
+
+const llmCompetition = milestones.find((item) => item.id === 'milestone-2025-llm-competition');
+assert.deepEqual(
+    llmCompetition.figures.map((figure) => figure.name.zh),
+    ['研究机构', '郑廉民'],
+    'the 2025 LLM competition people list should place Lianmin Zheng after research institutions'
+);
+assert.equal(llmCompetition.figures[0].figureType, 'team', 'research institutions should remain a team figure');
+
 const fallbackImageMilestone = {
     resources: { images: ['detail-first.png', 'detail-second.png'] }
 };
+const configuredImageMilestone = {
+    resources: {
+        overviewImage: 'configured-overview.png',
+        images: ['detail-first.png', 'detail-second.png']
+    }
+};
+assert.equal(
+    overview.getPrimaryImage(configuredImageMilestone),
+    'configured-overview.png',
+    'overview cards should prefer the explicitly configured overview image'
+);
 assert.equal(
     overview.getPrimaryImage(fallbackImageMilestone),
     'detail-first.png',
-    'overview cards should retain the first resource image when no detail-image resolver is configured'
+    'overview cards should use the first resource image when no overview image is configured'
 );
-assert.equal(
-    overview.getPrimaryImage(fallbackImageMilestone, () => 'resolved-detail-first.png'),
-    'resolved-detail-first.png',
-    'overview cards should prefer the image selected by the detail-image resolver'
-);
-console.log('PASS chronology cards support detail-first image resolution');
+console.log('PASS chronology cards use configured images with first-image fallback');
+
+for (const [milestoneId, expectedImage] of [
+    ['milestone-1956-dartmouth', 'resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg'],
+    [
+        'milestone-1986-backpropagation',
+        'resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png'
+    ],
+    ['milestone-1992-svm', 'resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png'],
+    ['milestone-ai100-2012-alexnet', 'resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png'],
+    ['milestone-2012-alexnet', 'resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png'],
+    ['milestone-2016-alphago', 'resources/images/figures/authoritative/david-silver.jpg'],
+    [
+        'milestone-2025-llm-competition',
+        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png'
+    ]
+]) {
+    const milestone = milestones.find((item) => item.id === milestoneId);
+    assert.equal(milestone.resources.overviewImage, expectedImage, `${milestoneId} should compile its overview image`);
+    assert.equal(
+        milestone.resources.images[0],
+        expectedImage,
+        `${milestoneId} detail images should preserve the configured assetIds order`
+    );
+}
+console.log('PASS configured overview images and detail image order compile from Archive variants');
+
+for (const milestoneId of ['milestone-ai100-2012-alexnet', 'milestone-2012-alexnet']) {
+    const milestone = milestones.find((item) => item.id === milestoneId);
+    assert.equal(
+        milestone.figures[0].avatar,
+        'resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png',
+        `${milestoneId} should use the user-provided Alex Krizhevsky portrait as its figure avatar`
+    );
+}
+console.log('PASS AlexNet variants use the user-provided portrait consistently');
 
 const summaries = overview.summarizeStorylines(canonicalMilestones, localize);
 assert.deepEqual(
@@ -310,7 +393,13 @@ console.log('PASS chronology medium landscape stays aligned with CSS media queri
 const explicitPortrait = milestones.find((item) => item.id === 'milestone-ai100-2012-alexnet');
 const inferredPortrait = milestones.find((item) => item.id === 'milestone-1950-turing-test');
 const namedPersonPhoto = milestones.find((item) => item.id === 'milestone-ai100-1943-mcculloch-pitts-neuron');
-const architectureImage = milestones.find((item) => item.id === 'milestone-1986-backpropagation');
+const backpropagationMilestone = milestones.find((item) => item.id === 'milestone-1986-backpropagation');
+const backpropagationPortrait = 'resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png';
+const backpropagationArchitecture =
+    'resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png';
+const svmMilestone = milestones.find((item) => item.id === 'milestone-1992-svm');
+const vapnikPortrait = 'resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png';
+const vcTheoryMilestone = milestones.find((item) => item.id === 'milestone-1971-vc-theory');
 assert.equal(
     overview.isPortraitImage(explicitPortrait, explicitPortrait.resources.images[0]),
     true,
@@ -327,9 +416,39 @@ assert.equal(
     'person names in legacy photo metadata should enable face-preserving card media'
 );
 assert.equal(
-    overview.isPortraitImage(architectureImage, architectureImage.resources.images[0]),
+    backpropagationMilestone.resources.images[0],
+    backpropagationPortrait,
+    'the 1986 backpropagation detail view should lead with David Rumelhart'
+);
+assert.equal(
+    overview.isPortraitImage(backpropagationMilestone, backpropagationPortrait),
+    true,
+    'the David Rumelhart image should use face-preserving card media'
+);
+assert.equal(
+    overview.isPortraitImage(backpropagationMilestone, backpropagationArchitecture),
     false,
     'architecture images should keep the standard cover treatment'
+);
+assert.equal(
+    svmMilestone.resources.images[0],
+    vapnikPortrait,
+    'the 1992 SVM detail view should lead with Vladimir Vapnik'
+);
+assert.equal(
+    svmMilestone.imageMeta[vapnikPortrait].sourceId,
+    'source-vladimir-vapnik-simons-profile',
+    'the reused Vapnik portrait should retain its Simons Foundation provenance'
+);
+assert.equal(
+    vcTheoryMilestone.imageMeta[vapnikPortrait].sourceId,
+    'source-vladimir-vapnik-simons-profile',
+    'the original VC theory use should retain the same portrait provenance'
+);
+assert.equal(
+    overview.isPortraitImage(svmMilestone, vapnikPortrait),
+    true,
+    'the Vladimir Vapnik image should use face-preserving card media'
 );
 assert.equal(
     overview.canPortraitCoverWithoutVerticalCrop(800, 1067, 259, 176),

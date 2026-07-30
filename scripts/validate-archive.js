@@ -477,6 +477,16 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
             addError(filePath, `variant selects external image asset ${assetId}; localize it before runtime use.`);
         }
     }
+    if (variant.overviewImageAssetId) {
+        const overviewAsset = assetsById.get(variant.overviewImageAssetId);
+        if (!overviewAsset) {
+            addError(filePath, `variant references missing overviewImageAssetId: ${variant.overviewImageAssetId}`);
+        } else if (!(variant.assetIds || []).includes(variant.overviewImageAssetId)) {
+            addError(filePath, 'variant overviewImageAssetId must also appear in assetIds.');
+        } else if (!isDisplayImageAsset(overviewAsset)) {
+            addError(filePath, 'variant overviewImageAssetId must reference an image, SVG, or GIF asset.');
+        }
+    }
     for (const claimId of variant.claimIds || []) {
         if (!claimIds.has(claimId)) addError(filePath, `variant references missing claimId: ${claimId}`);
     }

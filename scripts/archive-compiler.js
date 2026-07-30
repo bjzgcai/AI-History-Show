@@ -137,6 +137,18 @@ function buildMilestone(root, storyline, ref) {
     const event = bundle.event;
 
     const selectedAssets = selectByIds(bundle.assets, variant.assetIds || []);
+    const assetsById = byId(bundle.assets);
+    const overviewImageAssetId = String(variant.overviewImageAssetId || '').trim();
+    const overviewImageAsset = overviewImageAssetId ? assetsById.get(overviewImageAssetId) : null;
+    if (overviewImageAssetId && !overviewImageAsset) {
+        throw new Error(`Missing overview image asset: ${overviewImageAssetId}`);
+    }
+    if (overviewImageAsset && !(variant.assetIds || []).includes(overviewImageAssetId)) {
+        throw new Error(`Overview image asset must be selected in assetIds: ${overviewImageAssetId}`);
+    }
+    if (overviewImageAsset && !['image', 'svg', 'gif'].includes(overviewImageAsset.type)) {
+        throw new Error(`Overview image asset must be an image: ${overviewImageAssetId}`);
+    }
     const selectedSources = selectByIds(bundle.sources, variant.sourceIds || []);
     const displaySources = selectedSources.filter(isDisplaySource);
     const selectedClaims = selectByIds(bundle.claims, variant.claimIds || []);
@@ -181,6 +193,12 @@ function buildMilestone(root, storyline, ref) {
         figures: (event.figures || []).map(normalizeFigure),
         resources: {
             images: imageAssets.map((asset) => asset.path),
+            ...(overviewImageAsset
+                ? {
+                      overviewImage: overviewImageAsset.path,
+                      overviewImageAssetId
+                  }
+                : {}),
             ...(storyline.id === 'humanistic-cycle' ? { imageMeta } : {}),
             videos: selectedAssets
                 .filter((asset) => asset.type === 'video')
