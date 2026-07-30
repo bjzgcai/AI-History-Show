@@ -55,9 +55,9 @@
     "asset-2021-swin-transformer-shifted-windows"
   ],
   "sourceIds": [
-    "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows",
     "source-iccv-open-access-paper-page",
-    "source-microsoft-swin-transformer-repository"
+    "source-microsoft-swin-transformer-repository",
+    "source-swin-transformer-hierarchical-vision-transformer-using-shifted-windows"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,50 @@
       },
       "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yutong Lin",
+        "zh": "林宇通"
+      },
+      "role": {
+        "en": "Swin Transformer co-author",
+        "zh": "Swin Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yue Cao",
+        "zh": "曹越"
+      },
+      "role": {
+        "en": "Swin Transformer co-author",
+        "zh": "Swin Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Han Hu",
+        "zh": "胡瀚"
+      },
+      "role": {
+        "en": "Swin Transformer co-author",
+        "zh": "Swin Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

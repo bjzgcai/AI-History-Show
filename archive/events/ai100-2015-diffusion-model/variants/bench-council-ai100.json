@@ -55,9 +55,9 @@
     "asset-2015-diffusion-forward-reverse"
   ],
   "sourceIds": [
-    "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
     "source-denoising-diffusion-probabilistic-models",
-    "source-diffusion-model-overview"
+    "source-diffusion-model-overview",
+    "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,50 @@
       },
       "avatar": "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Surya Ganguli",
+        "zh": "苏里亚·甘古利"
+      },
+      "role": {
+        "en": "Diffusion Model co-author",
+        "zh": "Diffusion Model 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jonathan Ho",
+        "zh": "乔纳森·何"
+      },
+      "role": {
+        "en": "Diffusion Model co-author",
+        "zh": "Diffusion Model 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Pieter Abbee",
+        "zh": "彼得·阿比尔"
+      },
+      "role": {
+        "en": "Diffusion Model co-author",
+        "zh": "Diffusion Model 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

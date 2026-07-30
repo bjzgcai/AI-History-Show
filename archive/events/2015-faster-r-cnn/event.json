@@ -24,65 +24,71 @@
             "zh": "微软亚洲研究院",
             "en": "Microsoft Research Asia"
         },
-        "coordinates": [39.9042, 116.4074]
+        "coordinates": [
+            39.9042,
+            116.4074
+        ]
     },
-    "topics": ["bench-council-ai100"],
-    "achievementTypeIds": ["ai100-achievement"],
+    "topics": [
+        "bench-council-ai100"
+    ],
+    "achievementTypeIds": [
+        "ai100-achievement"
+    ],
     "figures": [
         {
-            "figureId": "shaoqing-ren",
             "name": {
-                "zh": "任少卿",
-                "en": "Shaoqing Ren"
+                "en": "Shaoqing Ren",
+                "zh": "任少卿"
             },
             "role": {
-                "zh": "Faster R-CNN 共同作者",
-                "en": "Co-author of Faster R-CNN"
+                "en": "Co-author of Faster R-CNN",
+                "zh": "Faster R-CNN 共同作者"
             },
             "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
+            "avatarStyle": "",
             "figureType": "person",
             "organizationIds": []
         },
         {
-            "figureId": "kaiming-he",
             "name": {
-                "zh": "何恺明",
-                "en": "Kaiming He"
+                "en": "Jian Sun",
+                "zh": "孙剑"
             },
             "role": {
-                "zh": "Faster R-CNN 共同作者",
-                "en": "Co-author of Faster R-CNN"
-            },
-            "avatar": "resources/images/figures/kaiming-he.jpg",
-            "figureType": "person",
-            "organizationIds": []
-        },
-        {
-            "figureId": "ross-girshick",
-            "name": {
-                "zh": "罗斯·格希克",
-                "en": "Ross Girshick"
-            },
-            "role": {
-                "zh": "Faster R-CNN 共同作者",
-                "en": "Co-author of Faster R-CNN"
-            },
-            "figureType": "person",
-            "organizationIds": []
-        },
-        {
-            "figureId": "jian-sun",
-            "name": {
-                "zh": "孙剑",
-                "en": "Jian Sun"
-            },
-            "role": {
-                "zh": "Faster R-CNN 共同作者",
-                "en": "Co-author of Faster R-CNN"
+                "en": "Co-author of Faster R-CNN",
+                "zh": "Faster R-CNN 共同作者"
             },
             "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+            "avatarStyle": "",
             "figureType": "person",
             "organizationIds": []
+        },
+        {
+            "name": {
+                "en": "Kaiming He",
+                "zh": "何恺明"
+            },
+            "role": {
+                "en": "Co-author of Faster R-CNN",
+                "zh": "Faster R-CNN 共同作者"
+            },
+            "avatar": "resources/images/figures/kaiming-he.jpg",
+            "avatarStyle": "",
+            "figureType": "person"
+        },
+        {
+            "name": {
+                "en": "Ross Girshick",
+                "zh": "罗斯·格希克"
+            },
+            "role": {
+                "en": "Co-author of Faster R-CNN",
+                "zh": "Faster R-CNN 共同作者"
+            },
+            "avatar": "",
+            "avatarStyle": "",
+            "figureType": "person"
         }
     ],
     "organizations": [],

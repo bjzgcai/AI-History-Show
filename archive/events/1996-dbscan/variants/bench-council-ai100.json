@@ -49,10 +49,10 @@
     "asset-1996-dbscan-noise-core-border"
   ],
   "sourceIds": [
-    "source-a-density-based-algorithm-for-discovering-clusters",
     "source-dbscan-revisited-revisited",
     "source-scikit-learn-dbscan-documentation",
-    "source-martin-ester-portrait"
+    "source-martin-ester-portrait",
+    "source-a-density-based-algorithm-for-discovering-clusters"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -126,7 +126,22 @@
       },
       "avatar": "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Xiaowei Xu",
+        "zh": "徐晓伟"
+      },
+      "role": {
+        "en": "DBSCAN co-author",
+        "zh": "DBSCAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {

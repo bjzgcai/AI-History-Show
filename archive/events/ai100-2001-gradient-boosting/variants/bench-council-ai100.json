@@ -1,0 +1,333 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2001-gradient-boosting",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "en": "Gradient Boosting",
+    "zh": "梯度提升"
+  },
+  "displaySummary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "displayDescription": {
+    "en": "<p>Boosting was often described through classification-specific reweighting rules. Friedman recast it as stage-wise function optimization, allowing the same idea to minimize many differentiable loss functions.</p><p>Each new weak learner fits the negative gradient, or pseudo-residual, of the current model’s loss. Adding that learner moves the ensemble toward lower loss in function space. Experts generally treat gradient boosting as the unifying optimization view behind modern boosted-tree systems. It became a dominant approach for structured data and enabled specialized implementations such as XGBoost and LightGBM.</p>",
+    "zh": "<p>Boosting 常被描述为分类任务特有的重加权规则。Friedman 把它重述为分阶段函数优化，使同一思想可以最小化多种可微损失函数。</p><p>每个新的弱学习器拟合当前模型损失的负梯度，也就是伪残差。把该学习器加入集成，相当于在函数空间中朝更低损失方向移动。专家通常把梯度提升视为现代提升树系统背后的统一优化视角。它成为结构化数据上的主导方法，并催生了 XGBoost、LightGBM 等专用实现。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-canonical-2026-07-30",
+    "source-reviewed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Primary publication",
+        "zh": "主论文"
+      },
+      "title": {
+        "en": "Greedy Function Approximation: A Gradient Boosting Machine",
+        "zh": "贪心函数逼近：梯度提升机"
+      },
+      "description": {
+        "en": "Primary source for the BenchCouncil-listed Gradient Boosting achievement.",
+        "zh": "BenchCouncil 主表中梯度提升成就的主要资料。"
+      },
+      "url": "https://doi.org/10.1214/aos/1013203451",
+      "source": "https://doi.org/10.1214/aos/1013203451",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2001-gradient-boosting-portrait",
+    "asset-2001-gradient-boosting-explainer"
+  ],
+  "sourceIds": [
+    "source-2001-gradient-boosting-primary",
+    "source-2001-gradient-boosting-secondary",
+    "source-benchcouncil-ai100-catalog",
+    "source-2001-gradient-boosting-portrait"
+  ],
+  "claimIds": [
+    "claim-2001-gradient-boosting-membership",
+    "claim-2001-gradient-boosting-description"
+  ],
+  "quizId": "ai100-2001-gradient-boosting-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Boosting was often described through classification-specific reweighting rules. Friedman recast it as stage-wise function optimization, allowing the same idea to minimize many differentiable loss functions.",
+        "zh": "Boosting 常被描述为分类任务特有的重加权规则。Friedman 把它重述为分阶段函数优化，使同一思想可以最小化多种可微损失函数。"
+      },
+      "sourceIds": [
+        "source-2001-gradient-boosting-primary",
+        "source-benchcouncil-ai100-catalog"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Each new weak learner fits the negative gradient, or pseudo-residual, of the current model’s loss. Adding that learner moves the ensemble toward lower loss in function space.",
+        "zh": "每个新的弱学习器拟合当前模型损失的负梯度，也就是伪残差。把该学习器加入集成，相当于在函数空间中朝更低损失方向移动。"
+      },
+      "sourceIds": [
+        "source-2001-gradient-boosting-primary"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat gradient boosting as the unifying optimization view behind modern boosted-tree systems. It became a dominant approach for structured data and enabled specialized implementations such as XGBoost and LightGBM.",
+        "zh": "专家通常把梯度提升视为现代提升树系统背后的统一优化视角。它成为结构化数据上的主导方法，并催生了 XGBoost、LightGBM 等专用实现。"
+      },
+      "sourceIds": [
+        "source-2001-gradient-boosting-primary",
+        "source-2001-gradient-boosting-secondary"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Jerome Friedman",
+        "zh": "杰罗姆·弗里德曼"
+      },
+      "role": {
+        "en": "CART monograph co-author",
+        "zh": "CART 专著共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "leo-breiman",
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
+      "role": {
+        "en": "Related tree-ensemble pioneer",
+        "zh": "相关树集成先驱"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "“Greedy Function Approximation: A Gradient Boosting Machine”",
+    "zh": "“贪心函数逼近：梯度提升机”"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Greedy Function Approximation: A Gradient Boosting Machine",
+      "zh": "贪心函数逼近：梯度提升机"
+    },
+    "workAuthors": {
+      "en": "See primary publication record",
+      "zh": "见主论文记录"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1214/aos/1013203451"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Greedy Function Approximation: A Gradient Boosting Machine</em>",
+    "zh": "《贪心函数逼近：梯度提升机》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Decision Trees and Ensemble Learning",
+      "zh": "决策树与集成学习"
+    },
+    "method": {
+      "en": "Stage-wise fitting of loss gradients",
+      "zh": "分阶段拟合损失梯度"
+    },
+    "artifact": {
+      "en": "Gradient boosted additive model",
+      "zh": "梯度提升加性模型"
+    },
+    "material": {
+      "en": "Greedy Function Approximation: A Gradient Boosting Machine, companion source, and BenchCouncil catalog record",
+      "zh": "《贪心函数逼近：梯度提升机》、配套资料与 BenchCouncil 清单记录"
+    },
+    "demo": {
+      "en": "Follow the four stages and compare how changing one stage affects the final gradient boosted additive model.",
+      "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的梯度提升加性模型。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Stage 1",
+          "zh": "阶段 1"
+        },
+        "text": {
+          "en": "Current ensemble",
+          "zh": "当前集成模型"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 2",
+          "zh": "阶段 2"
+        },
+        "text": {
+          "en": "Compute pseudo-residuals",
+          "zh": "计算伪残差"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 3",
+          "zh": "阶段 3"
+        },
+        "text": {
+          "en": "Fit weak learner",
+          "zh": "拟合弱学习器"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 4",
+          "zh": "阶段 4"
+        },
+        "text": {
+          "en": "Add corrective function",
+          "zh": "加入修正函数"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Current ensemble",
+        "zh": "当前集成模型"
+      },
+      {
+        "en": "Compute pseudo-residuals",
+        "zh": "计算伪残差"
+      },
+      {
+        "en": "Fit weak learner",
+        "zh": "拟合弱学习器"
+      },
+      {
+        "en": "Add corrective function",
+        "zh": "加入修正函数"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2001-2001-gradient-boosting_process.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "BenchCouncil lists Gradient Boosting and cites Greedy Function Approximation: A Gradient Boosting Machine as a defining publication.",
+          "zh": "BenchCouncil 将梯度提升列入主表，并把《贪心函数逼近：梯度提升机》作为代表性资料。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+          "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Greedy Function Approximation: A Gradient Boosting Machine",
+          "zh": "贪心函数逼近：梯度提升机"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Gradient Boosting achievement.",
+          "zh": "BenchCouncil 主表中梯度提升成就的主要资料。"
+        },
+        "url": "https://doi.org/10.1214/aos/1013203451",
+        "source": "https://doi.org/10.1214/aos/1013203451",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "Stanford University, United States",
+      "zh": "斯坦福大学，美国"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  }
+}

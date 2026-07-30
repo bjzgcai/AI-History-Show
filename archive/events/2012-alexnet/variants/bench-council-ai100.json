@@ -30,8 +30,7 @@
     "source-alexnet-neurips-paper",
     "source-alexnet-neurips-pdf",
     "source-imagenet-challenge",
-    "source-alexnet-overview",
-    "source-alex-krizhevsky-user-provided-portrait"
+    "source-alexnet-overview"
   ],
   "claimIds": [
     "claim-imagenet-breakthrough",
@@ -99,7 +98,22 @@
       },
       "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "AlexNet co-author and advisor",
+        "zh": "AlexNet 共同作者与导师"
+      },
+      "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -111,19 +125,6 @@
         "zh": "AlexNet 共同作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Geoffrey Hinton",
-        "zh": "杰弗里·辛顿"
-      },
-      "role": {
-        "en": "AlexNet co-author and advisor",
-        "zh": "AlexNet 共同作者与导师"
-      },
-      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

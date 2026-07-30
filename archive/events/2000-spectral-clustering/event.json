@@ -37,51 +37,59 @@
   ],
   "figures": [
     {
-      "figureId": "jianbo-shi",
       "name": {
-        "zh": "史建波",
-        "en": "Jianbo Shi"
+        "en": "Jianbo Shi",
+        "zh": "史建波"
       },
       "role": {
-        "zh": "2000 年归一化切分论文共同作者",
-        "en": "Co-author of the 2000 normalized-cuts paper"
+        "en": "Co-author of the 2000 normalized-cuts paper",
+        "zh": "2000 年归一化切分论文共同作者"
       },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "jitendra-malik",
       "name": {
-        "zh": "吉滕德拉·马利克",
-        "en": "Jitendra Malik"
+        "en": "Jitendra Malik",
+        "zh": "吉滕德拉·马利克"
       },
       "role": {
-        "zh": "2000 年归一化切分论文共同作者",
-        "en": "Co-author of the 2000 normalized-cuts paper"
+        "en": "Co-author of the 2000 normalized-cuts paper",
+        "zh": "2000 年归一化切分论文共同作者"
       },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "andrew-ng",
       "name": {
-        "zh": "吴恩达",
-        "en": "Andrew Ng"
+        "en": "Andrew Ng",
+        "zh": "吴恩达"
       },
       "role": {
-        "zh": "2001 年谱聚类分析论文共同作者",
-        "en": "Co-author of the 2001 spectral-clustering analysis"
+        "en": "Co-author of the 2001 spectral-clustering analysis",
+        "zh": "2001 年谱聚类分析论文共同作者"
       },
+      "avatar": "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "yair-weiss",
       "name": {
-        "zh": "亚伊尔·魏斯",
-        "en": "Yair Weiss"
+        "en": "Yair Weiss",
+        "zh": "亚伊尔·魏斯"
       },
       "role": {
-        "zh": "2001 年谱聚类分析论文共同作者",
-        "en": "Co-author of the 2001 spectral-clustering analysis"
+        "en": "Co-author of the 2001 spectral-clustering analysis",
+        "zh": "2001 年谱聚类分析论文共同作者"
       },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

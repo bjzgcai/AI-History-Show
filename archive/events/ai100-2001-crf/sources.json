@@ -1,0 +1,82 @@
+[
+    {
+        "id": "source-2001-crf-primary",
+        "type": "paper",
+        "label": {
+            "en": "Primary paper",
+            "zh": "原始论文"
+        },
+        "title": {
+            "en": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data",
+            "zh": "《条件随机场：用于序列分割与标注的概率模型》"
+        },
+        "url": "https://repository.upenn.edu/cis_papers/159/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Primary publication identified by the BenchCouncil AI100 table.",
+            "zh": "BenchCouncil AI100 表格列出的主论文。"
+        },
+        "purpose": "core-evidence"
+    },
+    {
+        "id": "source-2001-crf-secondary",
+        "type": "paper-page",
+        "label": {
+            "en": "Publication page",
+            "zh": "出版页面"
+        },
+        "title": {
+            "en": "University-hosted paper PDF",
+            "zh": "大学托管论文 PDF"
+        },
+        "url": "https://repository.upenn.edu/cgi/viewcontent.cgi?article=1162&context=cis_papers",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Publisher, proceedings, repository, or companion publication page.",
+            "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+        },
+        "purpose": "alternate-access"
+    },
+    {
+        "id": "source-benchcouncil-ai100-catalog",
+        "type": "official-page",
+        "label": {
+            "en": "Official page",
+            "zh": "官方页面"
+        },
+        "title": {
+            "en": "BenchCouncil AI100: Top AI Achievements",
+            "zh": "BenchCouncil AI100：人工智能杰出成果"
+        },
+        "url": "https://www.benchcouncil.org/evaluation/ai/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Official membership source for the canonical AI100 storyline.",
+            "zh": "canonical AI100 分支的官方成员依据。"
+        },
+        "purpose": "historical-context"
+    },
+    {
+        "id": "source-2001-crf-portrait",
+        "type": "image-source",
+        "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+        },
+        "title": {
+            "en": "Christopher Manning related portrait source",
+            "zh": "克里斯托弗·曼宁相关肖像来源"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply.",
+            "zh": "CC BY-SA 4.0，摄影者 Xuthoria；须署名并以相同方式共享。"
+        },
+        "purpose": "image-provenance"
+    }
+]

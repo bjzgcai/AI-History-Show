@@ -52,8 +52,8 @@
     "source-normalized-cuts-and-image-segmentation",
     "source-on-spectral-clustering-analysis-and-an-algorithm",
     "source-scikit-learn-spectral-clustering-documentation",
-    "source-andrew-ng-wikimedia-portrait",
-    "source-spectral-graph-illustration"
+    "source-spectral-graph-illustration",
+    "source-andrew-ng-wikimedia-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -144,7 +145,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -157,7 +159,8 @@
       },
       "avatar": "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -170,7 +173,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

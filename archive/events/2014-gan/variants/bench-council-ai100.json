@@ -56,10 +56,10 @@
     "asset-2014-gan-architecture-01"
   ],
   "sourceIds": [
-    "source-generative-adversarial-nets",
     "source-neurips-paper-page",
     "source-goodfellow-gan-tutorial",
-    "source-ian-goodfellow-profile"
+    "source-ian-goodfellow-profile",
+    "source-generative-adversarial-nets"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -133,7 +133,8 @@
       },
       "avatar": "resources/images/figures/ian-goodfellow.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -146,7 +147,8 @@
       },
       "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

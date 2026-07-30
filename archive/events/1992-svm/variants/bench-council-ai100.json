@@ -51,14 +51,14 @@
   "assetIds": [
     "asset-1992-svm-vladimir-vapnik",
     "asset-1992-svm-max-margin",
-    "asset-1992-svm-isabelle-guyon",
-    "asset-1992-svm-kernel-lift"
+    "asset-1992-svm-kernel-lift",
+    "asset-1992-svm-isabelle-guyon"
   ],
   "sourceIds": [
-    "source-vladimir-vapnik-simons-profile",
     "source-a-training-algorithm-for-optimal-margin-classifiers",
     "source-libsvm-project-page",
-    "source-scikit-learn-svc"
+    "source-scikit-learn-svc",
+    "source-vladimir-vapnik-simons-profile"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -123,19 +123,6 @@
   "figures": [
     {
       "name": {
-        "en": "Vladimir Vapnik",
-        "zh": "弗拉基米尔·瓦普尼克"
-      },
-      "role": {
-        "en": "SVM co-developer",
-        "zh": "共同发展最优间隔分类器与统计学习理论"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
         "en": "Bernhard Boser",
         "zh": "伯恩哈德·博泽尔"
       },
@@ -145,7 +132,36 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Vladimir Vapnik",
+        "zh": "弗拉基米尔·瓦普尼克"
+      },
+      "role": {
+        "en": "SVM co-developer",
+        "zh": "共同发展最优间隔分类器与统计学习理论"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Corinna Cortes",
+        "zh": "科琳娜·科尔特斯"
+      },
+      "role": {
+        "en": "SVM co-author",
+        "zh": "SVM 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {

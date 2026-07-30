@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "john-alan-robinson",
+      "name": {
+        "en": "John Robinson",
+        "zh": "约翰·艾伦·罗宾逊"
+      },
       "role": {
-        "zh": "归结原理提出者",
-        "en": "Inventor of the resolution principle"
+        "en": "Inventor of the resolution principle",
+        "zh": "归结原理提出者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

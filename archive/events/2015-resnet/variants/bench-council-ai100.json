@@ -60,10 +60,10 @@
     "asset-2015-resnet-architecture-02"
   ],
   "sourceIds": [
-    "source-deep-residual-learning-for-image-recognition",
     "source-cvf-open-access-paper-page",
     "source-cvpr-full-paper-pdf",
-    "source-kaiming-he-profile-at-mit-csail"
+    "source-kaiming-he-profile-at-mit-csail",
+    "source-deep-residual-learning-for-image-recognition"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -135,9 +135,24 @@
         "en": "ResNet lead author",
         "zh": "ResNet 第一作者"
       },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_04.png",
+      "avatar": "resources/images/figures/kaiming-he.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jian Sun",
+        "zh": "孙剑"
+      },
+      "role": {
+        "en": "ResNet co-author and corresponding author",
+        "zh": "ResNet 共同作者与通讯作者"
+      },
+      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -162,19 +177,6 @@
         "zh": "ResNet 共同作者"
       },
       "avatar": "resources/images/2015-resnet/people/2015-resnet_people_02.png",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Jian Sun",
-        "zh": "孙剑"
-      },
-      "role": {
-        "en": "ResNet co-author and corresponding author",
-        "zh": "ResNet 共同作者与通讯作者"
-      },
-      "avatar": "resources/images/2015-resnet/people/2015-resnet_people_01.png",
       "avatarStyle": "",
       "figureType": "person"
     }

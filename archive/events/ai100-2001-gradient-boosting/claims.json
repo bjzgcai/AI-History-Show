@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-2001-gradient-boosting-membership",
+    "importance": "core",
+    "text": {
+      "en": "Gradient Boosting is listed in the BenchCouncil long-term AI100 table.",
+      "zh": "梯度提升列入 BenchCouncil 长期 AI100 主表。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-2001-gradient-boosting-description",
+    "importance": "core",
+    "text": {
+      "en": "<p>Boosting was often described through classification-specific reweighting rules. Friedman recast it as stage-wise function optimization, allowing the same idea to minimize many differentiable loss functions.</p><p>Each new weak learner fits the negative gradient, or pseudo-residual, of the current model’s loss. Adding that learner moves the ensemble toward lower loss in function space. Experts generally treat gradient boosting as the unifying optimization view behind modern boosted-tree systems. It became a dominant approach for structured data and enabled specialized implementations such as XGBoost and LightGBM.</p>",
+      "zh": "<p>Boosting 常被描述为分类任务特有的重加权规则。Friedman 把它重述为分阶段函数优化，使同一思想可以最小化多种可微损失函数。</p><p>每个新的弱学习器拟合当前模型损失的负梯度，也就是伪残差。把该学习器加入集成，相当于在函数空间中朝更低损失方向移动。专家通常把梯度提升视为现代提升树系统背后的统一优化视角。它成为结构化数据上的主导方法，并催生了 XGBoost、LightGBM 等专用实现。</p>"
+    },
+    "sourceIds": [
+      "source-2001-gradient-boosting-primary",
+      "source-2001-gradient-boosting-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  }
+]

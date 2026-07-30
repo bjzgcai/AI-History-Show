@@ -53,9 +53,9 @@
     "asset-1996-lasso-coefficient-path"
   ],
   "sourceIds": [
-    "source-regression-shrinkage-and-selection-via-the-lasso",
     "source-scikit-learn-lasso",
-    "source-glmnet-project"
+    "source-glmnet-project",
+    "source-regression-shrinkage-and-selection-via-the-lasso"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -129,7 +129,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1996-lasso_robert-tibshirani.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

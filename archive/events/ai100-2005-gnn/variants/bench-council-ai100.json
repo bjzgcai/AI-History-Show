@@ -60,8 +60,8 @@
     "source-a-new-model-for-learning-in-graph-domains",
     "source-graph-neural-network-overview",
     "source-franco-scarselli-homepage",
-    "source-marco-gori-university-video",
-    "source-unisi-oai-2005-gnn-record"
+    "source-unisi-oai-2005-gnn-record",
+    "source-marco-gori-university-video"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -137,20 +137,8 @@
       },
       "avatar": "resources/images/external/ai100-2005-gnn/people/marco-gori-university-video-still.jpg",
       "avatarStyle": "transform: scale(1.75); transform-origin: 43% 35%;",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Gabriele Monfardini",
-        "zh": "加布里埃莱·蒙法尔迪尼"
-      },
-      "role": {
-        "en": "Co-author of the 2005 graph neural network paper",
-        "zh": "2005 年图神经网络论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -162,6 +150,20 @@
         "zh": "2005 年图神经网络论文共同作者"
       },
       "avatar": "resources/images/external/ai100-2005-gnn/franco-scarselli-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Gabriele Monfardini",
+        "zh": "加布里埃莱·蒙法尔迪尼"
+      },
+      "role": {
+        "en": "Co-author of the 2005 graph neural network paper",
+        "zh": "2005 年图神经网络论文共同作者"
+      },
+      "avatar": "",
       "avatarStyle": "",
       "figureType": "person"
     }

@@ -1,0 +1,361 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2014-seq2seq",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "en": "Sequence-to-Sequence Learning",
+    "zh": "序列到序列学习"
+  },
+  "displaySummary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "displayDescription": {
+    "en": "<p>Earlier neural language systems often depended on task-specific pipelines and fixed windows. Encoder-decoder models offered a general way to map an input sequence of one length to an output sequence of another length.</p><p>An encoder reads the source sequence into a learned representation, and a decoder generates the target sequence token by token. Training maximizes the conditional probability of the output sequence given the input. Experts generally treat sequence-to-sequence learning as the architecture that made end-to-end neural translation practical before attention and Transformers. It also generalized to summarization, dialogue, parsing, and other structured generation tasks.</p>",
+    "zh": "<p>早期神经语言系统往往依赖任务专用流程和固定窗口。编码器—解码器模型提供了一种通用方法，可以把一个长度的输入序列映射为另一长度的输出序列。</p><p>编码器读取源序列并形成学习到的表示，解码器再逐词生成目标序列。训练目标是在给定输入的条件下最大化输出序列的条件概率。专家通常把序列到序列学习视为在注意力和 Transformer 之前推动端到端神经机器翻译走向实用的关键架构。它也扩展到摘要、对话、解析等结构化生成任务。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-canonical-2026-07-30",
+    "source-reviewed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Primary publication",
+        "zh": "主论文"
+      },
+      "title": {
+        "en": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+        "zh": "使用 RNN 编码器—解码器学习短语表示"
+      },
+      "description": {
+        "en": "Primary source for the BenchCouncil-listed Sequence-to-Sequence Learning achievement.",
+        "zh": "BenchCouncil 主表中序列到序列学习成就的主要资料。"
+      },
+      "url": "https://arxiv.org/abs/1406.1078",
+      "source": "https://arxiv.org/abs/1406.1078",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2014-seq2seq-portrait",
+    "asset-2014-seq2seq-explainer"
+  ],
+  "sourceIds": [
+    "source-2014-seq2seq-primary",
+    "source-2014-seq2seq-secondary",
+    "source-benchcouncil-ai100-catalog",
+    "source-2014-seq2seq-portrait"
+  ],
+  "claimIds": [
+    "claim-2014-seq2seq-membership",
+    "claim-2014-seq2seq-description"
+  ],
+  "quizId": "ai100-2014-seq2seq-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Earlier neural language systems often depended on task-specific pipelines and fixed windows. Encoder-decoder models offered a general way to map an input sequence of one length to an output sequence of another length.",
+        "zh": "早期神经语言系统往往依赖任务专用流程和固定窗口。编码器—解码器模型提供了一种通用方法，可以把一个长度的输入序列映射为另一长度的输出序列。"
+      },
+      "sourceIds": [
+        "source-2014-seq2seq-primary",
+        "source-benchcouncil-ai100-catalog"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "An encoder reads the source sequence into a learned representation, and a decoder generates the target sequence token by token. Training maximizes the conditional probability of the output sequence given the input.",
+        "zh": "编码器读取源序列并形成学习到的表示，解码器再逐词生成目标序列。训练目标是在给定输入的条件下最大化输出序列的条件概率。"
+      },
+      "sourceIds": [
+        "source-2014-seq2seq-primary"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat sequence-to-sequence learning as the architecture that made end-to-end neural translation practical before attention and Transformers. It also generalized to summarization, dialogue, parsing, and other structured generation tasks.",
+        "zh": "专家通常把序列到序列学习视为在注意力和 Transformer 之前推动端到端神经机器翻译走向实用的关键架构。它也扩展到摘要、对话、解析等结构化生成任务。"
+      },
+      "sourceIds": [
+        "source-2014-seq2seq-primary",
+        "source-2014-seq2seq-secondary"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "yoshua-bengio",
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "RNN encoder-decoder co-author",
+        "zh": "RNN 编码器—解码器共同作者"
+      },
+      "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Ilya Sutskever",
+        "zh": "伊利亚·苏茨克维"
+      },
+      "role": {
+        "en": "AlexNet co-author",
+        "zh": "AlexNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Quoc V. Le",
+        "zh": "黎国辉"
+      },
+      "role": {
+        "en": "Seq2Seq co-author",
+        "zh": "Seq2Seq 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "“Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation”",
+    "zh": "“使用 RNN 编码器—解码器学习短语表示”"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+      "zh": "使用 RNN 编码器—解码器学习短语表示"
+    },
+    "workAuthors": {
+      "en": "See primary publication record",
+      "zh": "见主论文记录"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1406.1078"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation</em>",
+    "zh": "《使用 RNN 编码器—解码器学习短语表示》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Neural Network",
+      "zh": "神经网络"
+    },
+    "method": {
+      "en": "Encoder-decoder recurrent sequence modeling",
+      "zh": "编码器—解码器循环序列建模"
+    },
+    "artifact": {
+      "en": "General sequence transduction architecture",
+      "zh": "通用序列转换架构"
+    },
+    "material": {
+      "en": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation, companion source, and BenchCouncil catalog record",
+      "zh": "《使用 RNN 编码器—解码器学习短语表示》、配套资料与 BenchCouncil 清单记录"
+    },
+    "demo": {
+      "en": "Follow the four stages and compare how changing one stage affects the final general sequence transduction architecture.",
+      "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的通用序列转换架构。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Stage 1",
+          "zh": "阶段 1"
+        },
+        "text": {
+          "en": "Source sequence",
+          "zh": "源序列"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 2",
+          "zh": "阶段 2"
+        },
+        "text": {
+          "en": "Encoder state",
+          "zh": "编码器状态"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 3",
+          "zh": "阶段 3"
+        },
+        "text": {
+          "en": "Decoder recurrence",
+          "zh": "解码器递归"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 4",
+          "zh": "阶段 4"
+        },
+        "text": {
+          "en": "Target sequence",
+          "zh": "目标序列"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "Canada and United States",
+        "zh": "加拿大与美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Source sequence",
+        "zh": "源序列"
+      },
+      {
+        "en": "Encoder state",
+        "zh": "编码器状态"
+      },
+      {
+        "en": "Decoder recurrence",
+        "zh": "解码器递归"
+      },
+      {
+        "en": "Target sequence",
+        "zh": "目标序列"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-2014-seq2seq_process.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "BenchCouncil lists Sequence-to-Sequence Learning and cites Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation as a defining publication.",
+          "zh": "BenchCouncil 将序列到序列学习列入主表，并把《使用 RNN 编码器—解码器学习短语表示》作为代表性资料。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+          "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+          "zh": "使用 RNN 编码器—解码器学习短语表示"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed Sequence-to-Sequence Learning achievement.",
+          "zh": "BenchCouncil 主表中序列到序列学习成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1406.1078",
+        "source": "https://arxiv.org/abs/1406.1078",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Montreal and Google",
+      "zh": "蒙特利尔大学与 Google"
+    },
+    "country": {
+      "en": "Canada and United States",
+      "zh": "加拿大与美国"
+    },
+    "coordinates": [
+      45.5019,
+      -73.5674
+    ]
+  }
+}

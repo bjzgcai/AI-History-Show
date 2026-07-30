@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "diederik-p-kingma",
+      "name": {
+        "en": "Diederik Kingma",
+        "zh": "迪德里克·P·金马"
+      },
       "role": {
-        "zh": "Adam 共同作者",
-        "en": "Co-author of Adam"
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "jimmy-ba",
-      "role": {
-        "zh": "Adam 共同作者",
-        "en": "Co-author of Adam"
+      "name": {
+        "en": "Jimmy Ba",
+        "zh": "吉米·巴"
       },
+      "role": {
+        "en": "Co-author of Adam",
+        "zh": "Adam 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

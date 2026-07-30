@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "alain-colmerauer",
+      "name": {
+        "en": "Alain Colmerauer",
+        "zh": "阿兰·科尔梅罗尔"
+      },
       "role": {
-        "zh": "早期 Prolog 实现创建者",
-        "en": "Creator of the first Prolog implementation"
+        "en": "Creator of the first Prolog implementation",
+        "zh": "早期 Prolog 实现创建者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "robert-kowalski",
-      "role": {
-        "zh": "逻辑程序设计理论贡献者",
-        "en": "Logic programming theorist"
+      "name": {
+        "en": "Robert Kowalski",
+        "zh": "罗伯特·科瓦尔斯基"
       },
+      "role": {
+        "en": "Logic programming theorist",
+        "zh": "逻辑程序设计理论贡献者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

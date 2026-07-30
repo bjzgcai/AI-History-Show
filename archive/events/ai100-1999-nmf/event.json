@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "daniel-lee",
-      "role": {
-        "zh": "NMF 共同作者",
-        "en": "Co-author of NMF"
+      "name": {
+        "en": "Daniel Lee",
+        "zh": "丹尼尔·李"
       },
+      "role": {
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "h-sebastian-seung",
+      "name": {
+        "en": "H Sebastian Seung",
+        "zh": "H. 塞巴斯蒂安·承"
+      },
       "role": {
-        "zh": "NMF 共同作者",
-        "en": "Co-author of NMF"
+        "en": "Co-author of NMF",
+        "zh": "NMF 共同作者"
       },
       "avatar": "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

@@ -56,9 +56,9 @@
     "asset-1974-frame-inheritance"
   ],
   "sourceIds": [
-    "source-a-framework-for-representing-knowledge",
     "source-marvin-minsky-obituary-mit-news",
-    "source-frame-mit-ai-memo-bibliographic-record"
+    "source-frame-mit-ai-memo-bibliographic-record",
+    "source-a-framework-for-representing-knowledge"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -130,9 +130,10 @@
         "en": "Author of the frame representation proposal",
         "zh": "框架表示思想提出者"
       },
-      "avatar": "resources/images/figures/marvin-minsky.jpg",
+      "avatar": "resources/images/bench-council-ai100/photos/1974-frame_marvin-minsky.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

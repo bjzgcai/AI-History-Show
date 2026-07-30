@@ -372,15 +372,15 @@ assert.match(
     /\.ui-avatar-name,[\s\S]*?\.ui-avatar-role\s*\{[\s\S]*?width:\s*max-content[\s\S]*?overflow:\s*visible[\s\S]*?text-overflow:\s*clip/,
     'desktop detail figure names and roles should use their content width without ellipsis'
 );
-assert.match(
+assert.doesNotMatch(
     indexHtml,
-    /const UI_DETAIL_FIGURE_LIMIT = 4;/,
-    'unified UI detail pages should define one four-figure limit'
+    /function getUiDetailFigures\(vm\)[\s\S]*?slice\(0, UI_DETAIL_FIGURE_LIMIT\)/,
+    'unified UI detail pages should preserve every configured figure'
 );
 assert.match(
     indexHtml,
-    /function getUiDetailFigures\(vm\)[\s\S]*?slice\(0, UI_DETAIL_FIGURE_LIMIT\)/,
-    'unified UI detail pages should apply the shared figure limit in one helper'
+    /function getUiDetailFigures\(vm\)[\s\S]*?vm\.figures\.filter\(Boolean\)/,
+    'unified UI detail pages should return the complete configured figure list'
 );
 assert.match(
     indexHtml,
@@ -531,7 +531,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.textContent[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
     'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
 );
 assert.doesNotMatch(

@@ -37,21 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "herbert-bay",
+      "name": {
+        "en": "Herbert Bay",
+        "zh": "赫伯特·贝"
+      },
       "role": {
-        "zh": "SURF 主要作者",
-        "en": "Lead author of SURF"
+        "en": "Lead author of SURF",
+        "zh": "SURF 主要作者"
       },
       "avatar": "resources/images/external/ai100-2006-surf/herbert-bay-portrait.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "tinne-tuytelaars",
-      "role": {
-        "zh": "Co-author of SURF",
-        "en": "Co-author of SURF"
+      "name": {
+        "en": "Andreas Ess",
+        "zh": "安德烈亚斯·埃斯"
       },
+      "role": {
+        "en": "SURF co-author",
+        "zh": "SURF 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Tinne Tuytelaars",
+        "zh": "蒂娜·图伊特拉尔斯"
+      },
+      "role": {
+        "en": "Co-author of SURF",
+        "zh": "Co-author of SURF"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

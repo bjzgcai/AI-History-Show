@@ -50,23 +50,23 @@
       }
     }
   ],
-    "assetIds": [
-      "asset-1966-eliza-weizenbaum-rit-1982",
-      "asset-1966-eliza-doctor-script",
-      "asset-1966-eliza-weizenbaum-uszkoreit-2006",
-      "asset-1966-eliza-original-source-page-9",
-      "asset-1966-eliza-ctss-system-diagram",
-      "asset-1966-eliza-conversation-reconstruction",
-      "asset-1966-eliza-terminal-dialog"
-    ],
-    "sourceIds": [
-      "source-eliza-cacm-paper",
-      "source-weizenbaum-rit-1982-portrait",
-      "source-weizenbaum-uszkoreit-2006-photo",
-      "source-original-eliza-mad-slip",
-      "source-ctss-programmers-guide-diagram",
-      "source-eliza-conversation-reconstruction",
-      "source-eliza-source-reconstruction-project"
+  "assetIds": [
+    "asset-1966-eliza-weizenbaum-rit-1982",
+    "asset-1966-eliza-doctor-script",
+    "asset-1966-eliza-weizenbaum-uszkoreit-2006",
+    "asset-1966-eliza-original-source-page-9",
+    "asset-1966-eliza-ctss-system-diagram",
+    "asset-1966-eliza-conversation-reconstruction",
+    "asset-1966-eliza-terminal-dialog"
+  ],
+  "sourceIds": [
+    "source-eliza-cacm-paper",
+    "source-weizenbaum-uszkoreit-2006-photo",
+    "source-original-eliza-mad-slip",
+    "source-ctss-programmers-guide-diagram",
+    "source-eliza-conversation-reconstruction",
+    "source-eliza-source-reconstruction-project",
+    "source-weizenbaum-rit-1982-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -138,9 +138,10 @@
         "en": "Creator of ELIZA",
         "zh": "ELIZA 创建者"
       },
-        "avatar": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
+      "avatar": "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

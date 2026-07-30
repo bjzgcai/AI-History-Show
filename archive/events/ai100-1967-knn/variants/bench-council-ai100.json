@@ -133,7 +133,8 @@
       },
       "avatar": "resources/images/external/ai100-1967-knn/thomas-cover-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -146,7 +147,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

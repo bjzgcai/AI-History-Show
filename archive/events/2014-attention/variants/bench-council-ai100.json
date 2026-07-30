@@ -51,16 +51,16 @@
     }
   ],
   "assetIds": [
-    "asset-geoffrey-hinton",
+    "asset-2014-attention-people-01",
     "asset-2014-attention-alignment",
     "asset-2014-attention-architecture-01",
-    "asset-2014-attention-people-01"
+    "asset-geoffrey-hinton"
   ],
   "sourceIds": [
-    "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
     "source-iclr-2015-paper-page",
     "source-attention-mechanism-overview",
-    "source-yoshua-bengio-lab-profile"
+    "source-yoshua-bengio-lab-profile",
+    "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -134,20 +134,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Kyunghyun Cho",
-        "zh": "赵京贤"
-      },
-      "role": {
-        "en": "Neural attention paper co-author",
-        "zh": "神经注意力论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -159,6 +147,63 @@
         "zh": "神经注意力论文共同作者"
       },
       "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Minh-Thang Luong",
+        "zh": "明唐·梁"
+      },
+      "role": {
+        "en": "Attention co-author",
+        "zh": "Attention 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "christopher-manning",
+      "name": {
+        "en": "Christopher Manning",
+        "zh": "克里斯托弗·曼宁"
+      },
+      "role": {
+        "en": "Related statistical NLP researcher",
+        "zh": "相关统计自然语言处理研究者"
+      },
+      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kelvin Xu",
+        "zh": "徐凯文"
+      },
+      "role": {
+        "en": "Attention co-author",
+        "zh": "Attention 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "",
       "avatarStyle": "",
       "figureType": "person"
     }

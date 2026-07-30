@@ -55,10 +55,10 @@
     "asset-1980-neocognitron-hierarchy"
   ],
   "sourceIds": [
-    "source-neocognitron",
     "source-open-neocognitron-pdf",
     "source-scholarpedia-neocognitron-article",
-    "source-semantic-scholar-paper-record"
+    "source-semantic-scholar-paper-record",
+    "source-neocognitron"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

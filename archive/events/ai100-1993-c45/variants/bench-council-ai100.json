@@ -1,0 +1,333 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-1993-c45",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "en": "C4.5",
+    "zh": "C4.5 决策树"
+  },
+  "displaySummary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "displayDescription": {
+    "en": "<p>ID3 demonstrated entropy-based tree induction but had practical limits with continuous values, missing data, and overgrown trees. C4.5 extended the method into a more complete and deployable learning system.</p><p>C4.5 uses gain ratio, handles continuous and missing attributes, and prunes branches after training to improve generalization. It can also convert a learned tree into a compact set of classification rules. Experts generally regard C4.5 as one of the most influential practical decision-tree systems. Its handling of data imperfections and pruning shaped later industrial tree implementations and interpretability practice.</p>",
+    "zh": "<p>ID3 证明了基于熵的决策树归纳有效，但在连续属性、缺失数据和树过度生长方面存在实际限制。C4.5 把这一方法扩展为更完整、更可部署的学习系统。</p><p>C4.5 使用增益率，能够处理连续属性和缺失属性，并在训练后剪枝以提升泛化能力。它还可以把学习到的树转换为紧凑的分类规则集合。专家通常把 C4.5 视为最具影响力的实用决策树系统之一。它对数据缺陷和剪枝的处理影响了后续工业树模型与可解释性实践。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-canonical-2026-07-30",
+    "source-reviewed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Publisher",
+        "zh": "出版社"
+      },
+      "title": {
+        "en": "C4.5: Programs for Machine Learning",
+        "zh": "C4.5：机器学习程序"
+      },
+      "description": {
+        "en": "Primary source for the BenchCouncil-listed C4.5 achievement.",
+        "zh": "BenchCouncil 主表中C4.5 决策树成就的主要资料。"
+      },
+      "url": "https://www.sciencedirect.com/book/9781558602380/c45",
+      "source": "https://www.sciencedirect.com/book/9781558602380/c45",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open book page",
+        "zh": "打开图书页面"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-1993-c45-portrait",
+    "asset-1993-c45-explainer"
+  ],
+  "sourceIds": [
+    "source-1993-c45-primary",
+    "source-1993-c45-secondary",
+    "source-benchcouncil-ai100-catalog",
+    "source-1993-c45-portrait"
+  ],
+  "claimIds": [
+    "claim-1993-c45-membership",
+    "claim-1993-c45-description"
+  ],
+  "quizId": "ai100-1993-c45-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "ID3 demonstrated entropy-based tree induction but had practical limits with continuous values, missing data, and overgrown trees. C4.5 extended the method into a more complete and deployable learning system.",
+        "zh": "ID3 证明了基于熵的决策树归纳有效，但在连续属性、缺失数据和树过度生长方面存在实际限制。C4.5 把这一方法扩展为更完整、更可部署的学习系统。"
+      },
+      "sourceIds": [
+        "source-1993-c45-primary",
+        "source-benchcouncil-ai100-catalog"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "C4.5 uses gain ratio, handles continuous and missing attributes, and prunes branches after training to improve generalization. It can also convert a learned tree into a compact set of classification rules.",
+        "zh": "C4.5 使用增益率，能够处理连续属性和缺失属性，并在训练后剪枝以提升泛化能力。它还可以把学习到的树转换为紧凑的分类规则集合。"
+      },
+      "sourceIds": [
+        "source-1993-c45-primary"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally regard C4.5 as one of the most influential practical decision-tree systems. Its handling of data imperfections and pruning shaped later industrial tree implementations and interpretability practice.",
+        "zh": "专家通常把 C4.5 视为最具影响力的实用决策树系统之一。它对数据缺陷和剪枝的处理影响了后续工业树模型与可解释性实践。"
+      },
+      "sourceIds": [
+        "source-1993-c45-primary",
+        "source-1993-c45-secondary"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Ross Quinlan",
+        "zh": "罗斯·昆兰"
+      },
+      "role": {
+        "en": "C4.5 lead author",
+        "zh": "C4.5 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "leo-breiman",
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
+      "role": {
+        "en": "Related decision-tree pioneer",
+        "zh": "相关决策树先驱"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "“C4.5: Programs for Machine Learning”",
+    "zh": "“C4.5：机器学习程序”"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "C4.5: Programs for Machine Learning",
+      "zh": "C4.5：机器学习程序"
+    },
+    "workAuthors": {
+      "en": "See primary publication record",
+      "zh": "见主论文记录"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://www.sciencedirect.com/book/9781558602380/c45"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>C4.5: Programs for Machine Learning</em>",
+    "zh": "《C4.5：机器学习程序》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Decision Trees and Ensemble Learning",
+      "zh": "决策树与集成学习"
+    },
+    "method": {
+      "en": "Gain-ratio splits with missing-value handling and pruning",
+      "zh": "增益率划分、缺失值处理与剪枝"
+    },
+    "artifact": {
+      "en": "Pruned practical decision tree",
+      "zh": "经剪枝的实用决策树"
+    },
+    "material": {
+      "en": "C4.5: Programs for Machine Learning, companion source, and BenchCouncil catalog record",
+      "zh": "《C4.5：机器学习程序》、配套资料与 BenchCouncil 清单记录"
+    },
+    "demo": {
+      "en": "Follow the four stages and compare how changing one stage affects the final pruned practical decision tree.",
+      "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的经剪枝的实用决策树。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Stage 1",
+          "zh": "阶段 1"
+        },
+        "text": {
+          "en": "Mixed training data",
+          "zh": "混合类型训练数据"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 2",
+          "zh": "阶段 2"
+        },
+        "text": {
+          "en": "Gain-ratio split",
+          "zh": "增益率划分"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 3",
+          "zh": "阶段 3"
+        },
+        "text": {
+          "en": "Grow tree",
+          "zh": "生长决策树"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 4",
+          "zh": "阶段 4"
+        },
+        "text": {
+          "en": "Prune and extract rules",
+          "zh": "剪枝并提取规则"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "Australia",
+        "zh": "澳大利亚"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Mixed training data",
+        "zh": "混合类型训练数据"
+      },
+      {
+        "en": "Gain-ratio split",
+        "zh": "增益率划分"
+      },
+      {
+        "en": "Grow tree",
+        "zh": "生长决策树"
+      },
+      {
+        "en": "Prune and extract rules",
+        "zh": "剪枝并提取规则"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/1993-1993-c45_process.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "BenchCouncil lists C4.5 and cites C4.5: Programs for Machine Learning as a defining publication.",
+          "zh": "BenchCouncil 将C4.5 决策树列入主表，并把《C4.5：机器学习程序》作为代表性资料。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+          "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Publisher",
+          "zh": "出版社"
+        },
+        "title": {
+          "en": "C4.5: Programs for Machine Learning",
+          "zh": "C4.5：机器学习程序"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed C4.5 achievement.",
+          "zh": "BenchCouncil 主表中C4.5 决策树成就的主要资料。"
+        },
+        "url": "https://www.sciencedirect.com/book/9781558602380/c45",
+        "source": "https://www.sciencedirect.com/book/9781558602380/c45",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open book page",
+          "zh": "打开图书页面"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "New South Wales Institute of Technology, Australia",
+      "zh": "新南威尔士理工学院，澳大利亚"
+    },
+    "country": {
+      "en": "Australia",
+      "zh": "澳大利亚"
+    },
+    "coordinates": [
+      -33.8688,
+      151.2093
+    ]
+  }
+}

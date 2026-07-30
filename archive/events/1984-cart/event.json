@@ -37,37 +37,58 @@
   ],
   "figures": [
     {
-      "figureId": "leo-breiman",
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
       "role": {
-        "zh": "CART 专著共同作者",
-        "en": "CART monograph co-author"
+        "en": "CART monograph co-author",
+        "zh": "CART 专著共同作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "jerome-friedman",
-      "role": {
-        "zh": "CART 专著共同作者",
-        "en": "CART monograph co-author"
+      "name": {
+        "en": "Richard olshen",
+        "zh": "理查德·奥尔申"
       },
+      "role": {
+        "en": "CART monograph co-author",
+        "zh": "CART 专著共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "richard-olshen",
-      "role": {
-        "zh": "CART 专著共同作者",
-        "en": "CART monograph co-author"
+      "name": {
+        "en": "Jerome Friedman",
+        "zh": "杰罗姆·弗里德曼"
       },
-      "organizationIds": []
+      "role": {
+        "en": "CART monograph co-author",
+        "zh": "CART 专著共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     },
     {
-      "figureId": "charles-stone",
-      "role": {
-        "zh": "CART 专著共同作者",
-        "en": "CART monograph co-author"
+      "name": {
+        "en": "Charles Stone",
+        "zh": "查尔斯·斯通"
       },
-      "organizationIds": []
+      "role": {
+        "en": "CART monograph co-author",
+        "zh": "CART 专著共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

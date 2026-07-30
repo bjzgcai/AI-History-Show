@@ -1,0 +1,65 @@
+{
+  "id": "ai100-1996-bagging",
+  "year": 1996,
+  "date": "1996",
+  "title": {
+    "en": "Bagging",
+    "zh": "Bagging 装袋法"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>High-variance learners such as deep decision trees could change sharply when the training sample changed slightly. Bagging proposed using resampling and aggregation to turn that instability into an advantage.</p><p>Multiple bootstrap samples are drawn from the training set, one predictor is fitted to each sample, and their outputs are averaged or voted. Aggregation reduces variance while preserving the strength of the base learner. Experts generally treat bagging as a foundational ensemble method and the conceptual base of random forests. Bootstrap aggregation remains a standard strategy for uncertainty reduction and robust prediction.</p>",
+    "zh": "<p>深决策树等高方差学习器会因训练样本的轻微变化而产生显著不同的模型。Bagging 提出通过重采样与聚合，把这种不稳定性转化为优势。</p><p>从训练集抽取多个自助样本，为每个样本训练一个预测器，再对输出进行平均或投票。聚合在保留基学习器能力的同时降低方差。专家通常把 Bagging 视为基础集成方法，也是随机森林的概念基础。自助聚合至今仍是降低不确定性和提升预测稳健性的标准策略。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "UC Berkeley, United States",
+      "zh": "加州大学伯克利分校，美国"
+    },
+    "coordinates": [
+      37.8719,
+      -122.2585
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "leo-breiman",
+      "name": {
+        "en": "Leo Breiman",
+        "zh": "利奥·布雷曼"
+      },
+      "role": {
+        "en": "Bagging author",
+        "zh": "Bagging 作者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

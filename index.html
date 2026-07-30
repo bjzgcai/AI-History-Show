@@ -5531,6 +5531,10 @@
             white-space: nowrap;
         }
 
+        .no-orphan-tail {
+            white-space: nowrap;
+        }
+
         .ui-detail-place {
             grid-column: 2;
             grid-row: 1;
@@ -9128,8 +9132,8 @@
                     zh: 'AI 百大成就（BenchCouncil）'
                 },
                 note: {
-                    en: 'Pilot storyline from the BenchCouncil AI100 list',
-                    zh: '来自 BenchCouncil AI100 榜单的试点故事线'
+                    en: 'Canonical storyline matching the BenchCouncil AI achievements table',
+                    zh: '严格对应 BenchCouncil AI 成果表的权威故事线'
                 }
             },
             {
@@ -9653,6 +9657,14 @@
                 .replace(/'/g, '&#39;');
         }
 
+        function escapeHtmlWithCjkTail(value) {
+            const text = String(value == null ? '' : value);
+            const match = text.match(/([\u3400-\u9fff]{2}[，。！？；：、）》】」』”’]*)$/u);
+            if (!match) return escapeHtml(text);
+            const tail = match[1];
+            return `${escapeHtml(text.slice(0, -tail.length))}<span class="no-orphan-tail">${escapeHtml(tail)}</span>`;
+        }
+
         function debounce(func, wait) {
             let timeout;
             return function executedFunction(...args) {
@@ -9836,7 +9848,7 @@
         function getStorylineStatus(option, count) {
             if (count <= 0) return uiText('planned', '规划中');
             if (option && option.id === 'bench-council-ai100') {
-                return uiText(`${count}/100 pilot`, `${count}/100 试点`);
+                return uiText(`${count} achievements`, `${count} 个成果`);
             }
             return uiText(`${count} events`, `${count} 个事件`);
         }
@@ -13010,9 +13022,9 @@
         function renderStory(vm) {
             const stageContext = extractStageContext(vm);
             refs.summaryKicker.textContent = stageContext.label;
-            refs.summaryTitle.textContent = vm.title || '';
+            refs.summaryTitle.innerHTML = escapeHtmlWithCjkTail(vm.title || '');
             const locationText = buildLocationText(vm.location);
-            refs.summaryLocation.textContent = locationText;
+            refs.summaryLocation.innerHTML = escapeHtmlWithCjkTail(locationText);
             refs.summaryLocation.title = locationText;
             refs.summaryBody.innerHTML = buildSummaryHtml(vm);
             refs.storyYear.textContent = vm.year || '';
@@ -13030,8 +13042,8 @@
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
-                        <div class="figure-name">${escapeHtml(figure.name || tx('keyFigure'))}</div>
-                        <div class="figure-role">${escapeHtml(figure.role || tx('keyParticipant'))}</div>
+                        <div class="figure-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</div>
+                        <div class="figure-role">${escapeHtmlWithCjkTail(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
             `).join('');
@@ -13085,12 +13097,12 @@
             refs.archiveFocusButton.dataset.photoIndex = String(currentArchiveIndex);
             refs.archiveFocusButton.classList.toggle('is-empty', !hasPhotos);
             refs.archiveFocusButton.disabled = !hasPhotos;
-            refs.archivePrevCaption.textContent = prevMeta.name;
-            refs.archivePrevSubcaption.textContent = prevMeta.role;
-            refs.archiveCaption.textContent = activeMeta.name;
-            refs.archiveSubcaption.textContent = activeMeta.role;
-            refs.archiveNextCaption.textContent = nextMeta.name;
-            refs.archiveNextSubcaption.textContent = nextMeta.role;
+            refs.archivePrevCaption.innerHTML = escapeHtmlWithCjkTail(prevMeta.name);
+            refs.archivePrevSubcaption.innerHTML = escapeHtmlWithCjkTail(prevMeta.role);
+            refs.archiveCaption.innerHTML = escapeHtmlWithCjkTail(activeMeta.name);
+            refs.archiveSubcaption.innerHTML = escapeHtmlWithCjkTail(activeMeta.role);
+            refs.archiveNextCaption.innerHTML = escapeHtmlWithCjkTail(nextMeta.name);
+            refs.archiveNextSubcaption.innerHTML = escapeHtmlWithCjkTail(nextMeta.role);
 
             refs.archiveDots.innerHTML = hasPhotos
                 ? safePhotos.map((_, index) => `<button class="archive-dot ${index === currentArchiveIndex ? 'active' : ''}" type="button" data-index="${index}"></button>`).join('')
@@ -15283,7 +15295,7 @@
 
         function getUiDetailFigures(vm) {
             const figures = Array.isArray(vm && vm.figures)
-                ? vm.figures.filter(Boolean).slice(0, UI_DETAIL_FIGURE_LIMIT)
+                ? vm.figures.filter(Boolean)
                 : [];
             return figures.length
                 ? figures
@@ -15297,8 +15309,8 @@
                     <div class="ui-avatar">
                         <div class="ui-avatar-face">${avatar}</div>
                         <div>
-                            <span class="ui-avatar-name">${escapeHtml(figure.name || tx('keyFigure'))}</span>
-                            ${figure.role ? `<span class="ui-avatar-role">${escapeHtml(figure.role)}</span>` : ''}
+                            <span class="ui-avatar-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</span>
+                            ${figure.role ? `<span class="ui-avatar-role">${escapeHtmlWithCjkTail(figure.role)}</span>` : ''}
                         </div>
                     </div>
                 `;
@@ -15683,9 +15695,9 @@
             imageStage.classList.toggle('is-diagram', isDiagramImage(imageUrl));
             if (image.complete && image.naturalWidth) window.requestAnimationFrame(revealImage);
 
-            if (captionTitle) captionTitle.textContent = imageCaptionTitle;
+            if (captionTitle) captionTitle.innerHTML = escapeHtmlWithCjkTail(imageCaptionTitle);
             if (captionDetail) {
-                captionDetail.textContent = imageCaptionDetail;
+                captionDetail.innerHTML = escapeHtmlWithCjkTail(imageCaptionDetail);
                 captionDetail.hidden = !imageCaptionDetail;
             }
             imageRoot.querySelectorAll('[data-ui-image-index]').forEach((button, index) => {
@@ -15930,8 +15942,8 @@
                             ${buildUiDetailImageEdgeButtonsHtml(detailImages)}
                         </div>
                         <div class="ui-detail-caption">
-                            <span class="ui-detail-caption-title">${escapeHtml(imageCaptionTitle)}</span>
-                            <span class="ui-detail-caption-detail"${imageCaptionDetail ? '' : ' hidden'}>${escapeHtml(imageCaptionDetail)}</span>
+                            <span class="ui-detail-caption-title">${escapeHtmlWithCjkTail(imageCaptionTitle)}</span>
+                            <span class="ui-detail-caption-detail"${imageCaptionDetail ? '' : ' hidden'}>${escapeHtmlWithCjkTail(imageCaptionDetail)}</span>
                             ${buildUiDetailImagePagerHtml(detailImages)}
                         </div>
                     </div>
@@ -15946,14 +15958,14 @@
                                 <div class="ui-detail-topline">
                                     <div class="ui-detail-context">
                                         <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
-                                        <div class="ui-detail-place" title="${escapeHtml(locationText)}">${escapeHtml(locationText)}</div>
+                                        <div class="ui-detail-place" title="${escapeHtml(locationText)}">${escapeHtmlWithCjkTail(locationText)}</div>
                                     </div>
                                     <div class="ui-detail-heading">
                                         <div class="ui-detail-title-row">
-                                            <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                            <div class="ui-detail-title">${escapeHtmlWithCjkTail(title)}</div>
                                             ${sentimentTagHtml}
                                         </div>
-                                        <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
+                                        <div class="ui-detail-meta-inline">${escapeHtmlWithCjkTail([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>
                                 <div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>

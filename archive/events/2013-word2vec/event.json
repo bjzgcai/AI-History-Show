@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "tomas-mikolov",
+      "name": {
+        "en": "Tomas Mikolov",
+        "zh": "托马斯·米科洛夫"
+      },
       "role": {
-        "zh": "word2vec 论文主要作者",
-        "en": "Lead author of word2vec papers"
+        "en": "Lead author of word2vec papers",
+        "zh": "word2vec 论文主要作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jeffrey Dean",
+        "zh": "杰弗里·迪恩"
+      },
+      "role": {
+        "en": "Word2vec co-author",
+        "zh": "Word2vec 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

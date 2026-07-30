@@ -1,0 +1,349 @@
+{
+  "storylineId": "bench-council-ai100",
+  "eventId": "ai100-2014-r-cnn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "en": "R-CNN",
+    "zh": "R-CNN"
+  },
+  "displaySummary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "displayDescription": {
+    "en": "<p>Object detection lagged behind image classification because a detector had to localize many possible objects as well as recognize them. R-CNN connected region proposals with features transferred from a large pretrained convolutional network.</p><p>The system generates candidate regions, warps each region to a fixed size, extracts CNN features, and classifies the regions with category-specific models. Bounding-box regression then refines the proposed locations. Experts generally treat R-CNN as the starting point of the modern region-based detector family. Its accuracy gains were decisive even though repeated CNN computation made the original pipeline slow and cumbersome.</p>",
+    "zh": "<p>目标检测落后于图像分类，因为检测器不仅要识别物体，还要在大量候选位置中完成定位。R-CNN 把区域候选与大型预训练卷积网络迁移得到的特征连接起来。</p><p>系统先生成候选区域，把每个区域缩放到固定尺寸，再提取 CNN 特征并用类别模型进行分类。最后通过边界框回归进一步修正候选位置。专家通常把 R-CNN 视为现代区域式检测器家族的起点。尽管原始流程需要重复运行 CNN、速度较慢且步骤繁琐，它带来的精度提升仍具有决定性意义。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-canonical-2026-07-30",
+    "source-reviewed"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Primary publication",
+        "zh": "主论文"
+      },
+      "title": {
+        "en": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation",
+        "zh": "用于精确目标检测与语义分割的丰富特征层次"
+      },
+      "description": {
+        "en": "Primary source for the BenchCouncil-listed R-CNN achievement.",
+        "zh": "BenchCouncil 主表中R-CNN成就的主要资料。"
+      },
+      "url": "https://arxiv.org/abs/1311.2524",
+      "source": "https://arxiv.org/abs/1311.2524",
+      "license": {
+        "en": "Reference link only; local explainers are original redraws.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘。"
+      },
+      "usage": {
+        "en": "Article / source reference",
+        "zh": "论文或资料来源"
+      },
+      "action": {
+        "en": "Open paper",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2014-r-cnn-portrait",
+    "asset-2014-r-cnn-explainer"
+  ],
+  "sourceIds": [
+    "source-2014-r-cnn-primary",
+    "source-2014-r-cnn-secondary",
+    "source-benchcouncil-ai100-catalog",
+    "source-2014-r-cnn-portrait"
+  ],
+  "claimIds": [
+    "claim-2014-r-cnn-membership",
+    "claim-2014-r-cnn-description"
+  ],
+  "quizId": "ai100-2014-r-cnn-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Object detection lagged behind image classification because a detector had to localize many possible objects as well as recognize them. R-CNN connected region proposals with features transferred from a large pretrained convolutional network.",
+        "zh": "目标检测落后于图像分类，因为检测器不仅要识别物体，还要在大量候选位置中完成定位。R-CNN 把区域候选与大型预训练卷积网络迁移得到的特征连接起来。"
+      },
+      "sourceIds": [
+        "source-2014-r-cnn-primary",
+        "source-benchcouncil-ai100-catalog"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The system generates candidate regions, warps each region to a fixed size, extracts CNN features, and classifies the regions with category-specific models. Bounding-box regression then refines the proposed locations.",
+        "zh": "系统先生成候选区域，把每个区域缩放到固定尺寸，再提取 CNN 特征并用类别模型进行分类。最后通过边界框回归进一步修正候选位置。"
+      },
+      "sourceIds": [
+        "source-2014-r-cnn-primary"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat R-CNN as the starting point of the modern region-based detector family. Its accuracy gains were decisive even though repeated CNN computation made the original pipeline slow and cumbersome.",
+        "zh": "专家通常把 R-CNN 视为现代区域式检测器家族的起点。尽管原始流程需要重复运行 CNN、速度较慢且步骤繁琐，它带来的精度提升仍具有决定性意义。"
+      },
+      "sourceIds": [
+        "source-2014-r-cnn-primary",
+        "source-2014-r-cnn-secondary"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 Achievements",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "figures": [
+    {
+      "figureId": "ross-girshick",
+      "name": {
+        "en": "Ross Girshick",
+        "zh": "罗斯·格希克"
+      },
+      "role": {
+        "zh": "Faster R-CNN 共同作者",
+        "en": "Co-author of Faster R-CNN"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "jitendra-malik",
+      "name": {
+        "en": "Jitendra Malik",
+        "zh": "吉滕德拉·马利克"
+      },
+      "role": {
+        "zh": "2000 年归一化切分论文共同作者",
+        "en": "Co-author of the 2000 normalized-cuts paper"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "tsung-yi-lin",
+      "name": {
+        "en": "Tsung-Yi Lin",
+        "zh": "林宗毅"
+      },
+      "role": {
+        "en": "Related object-detection researcher",
+        "zh": "相关目标检测研究者"
+      },
+      "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "“Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation”",
+    "zh": "“用于精确目标检测与语义分割的丰富特征层次”"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation",
+      "zh": "用于精确目标检测与语义分割的丰富特征层次"
+    },
+    "workAuthors": {
+      "en": "See primary publication record",
+      "zh": "见主论文记录"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/1311.2524"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 achievement entry",
+    "zh": "BenchCouncil AI100 成就条目"
+  },
+  "quoteAttribution": {
+    "en": "<em>Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation</em>",
+    "zh": "《用于精确目标检测与语义分割的丰富特征层次》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Object Detection",
+      "zh": "目标检测"
+    },
+    "method": {
+      "en": "Region proposals plus transferred CNN features",
+      "zh": "区域候选与迁移 CNN 特征"
+    },
+    "artifact": {
+      "en": "Region-based convolutional detector",
+      "zh": "区域式卷积检测器"
+    },
+    "material": {
+      "en": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation, companion source, and BenchCouncil catalog record",
+      "zh": "《用于精确目标检测与语义分割的丰富特征层次》、配套资料与 BenchCouncil 清单记录"
+    },
+    "demo": {
+      "en": "Follow the four stages and compare how changing one stage affects the final region-based convolutional detector.",
+      "zh": "沿四个阶段观察流程，并比较改变某一阶段如何影响最终的区域式卷积检测器。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Stage 1",
+          "zh": "阶段 1"
+        },
+        "text": {
+          "en": "Input image",
+          "zh": "输入图像"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 2",
+          "zh": "阶段 2"
+        },
+        "text": {
+          "en": "Region proposals",
+          "zh": "区域候选"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 3",
+          "zh": "阶段 3"
+        },
+        "text": {
+          "en": "CNN per region",
+          "zh": "逐区域 CNN"
+        }
+      },
+      {
+        "label": {
+          "en": "Stage 4",
+          "zh": "阶段 4"
+        },
+        "text": {
+          "en": "Class and box output",
+          "zh": "类别与边界框输出"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Input image",
+        "zh": "输入图像"
+      },
+      {
+        "en": "Region proposals",
+        "zh": "区域候选"
+      },
+      {
+        "en": "CNN per region",
+        "zh": "逐区域 CNN"
+      },
+      {
+        "en": "Class and box output",
+        "zh": "类别与边界框输出"
+      }
+    ],
+    "demoImage": "resources/images/bench-council-ai100/explainers/2014-2014-r-cnn_process.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "BenchCouncil lists R-CNN and cites Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation as a defining publication.",
+          "zh": "BenchCouncil 将R-CNN列入主表，并把《用于精确目标检测与语义分割的丰富特征层次》作为代表性资料。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Select a stage and explain what information is added, removed, or reweighted before the next stage.",
+          "zh": "选择一个阶段，说明进入下一阶段前哪些信息被加入、移除或重新加权。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation",
+          "zh": "用于精确目标检测与语义分割的丰富特征层次"
+        },
+        "description": {
+          "en": "Primary source for the BenchCouncil-listed R-CNN achievement.",
+          "zh": "BenchCouncil 主表中R-CNN成就的主要资料。"
+        },
+        "url": "https://arxiv.org/abs/1311.2524",
+        "source": "https://arxiv.org/abs/1311.2524",
+        "license": {
+          "en": "Reference link only; local explainers are original redraws.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Article / source reference",
+          "zh": "论文或资料来源"
+        },
+        "action": {
+          "en": "Open paper",
+          "zh": "打开论文"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "UC Berkeley, United States",
+      "zh": "加州大学伯克利分校，美国"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      37.8719,
+      -122.2585
+    ]
+  }
+}

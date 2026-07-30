@@ -37,20 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "shunichi-amari",
-      "role": {
-        "zh": "自适应神经学习早期贡献者",
-        "en": "Early contributor to adaptive neural learning"
+      "name": {
+        "en": "Shun'ichi Amari",
+        "zh": "甘利俊一"
       },
+      "role": {
+        "en": "Early contributor to adaptive neural learning",
+        "zh": "自适应神经学习早期贡献者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "david-rumelhart",
+      "name": {
+        "en": "David Rumelhart",
+        "zh": "大卫·鲁梅尔哈特"
+      },
       "role": {
-        "zh": "1986 年反向传播论文共同作者",
-        "en": "Co-author of the 1986 back-propagation paper"
+        "en": "Co-author of the 1986 back-propagation paper",
+        "zh": "1986 年反向传播论文共同作者"
       },
       "avatar": "resources/images/figures/david-rumelhart.jpg",
+      "avatarStyle": "transform: scale(1.28); transform-origin: 50% 35%;",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Ronald Williams",
+        "zh": "罗纳德·威廉姆斯"
+      },
+      "role": {
+        "en": "Backpropagation co-author",
+        "zh": "BP算法共同作者"
+      },
+      "avatar": "resources/images/figures/ronald-williams.jpg",
+      "avatarStyle": "transform: scale(1.16); transform-origin: 50% 36%;",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

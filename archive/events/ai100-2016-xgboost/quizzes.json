@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2016-xgboost-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What type of data is XGBoost especially known for handling well?",
+      "zh": "XGBoost 尤其以处理哪类数据见长？"
+    },
+    "options": [
+      {
+        "en": "Structured or tabular data",
+        "zh": "结构化或表格数据"
+      },
+      {
+        "en": "Only raw audio",
+        "zh": "仅原始音频"
+      },
+      {
+        "en": "Only handwritten proofs",
+        "zh": "仅手写证明"
+      },
+      {
+        "en": "Only 3D meshes",
+        "zh": "仅三维网格"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "The system uses second-order gradient statistics, regularized tree scoring, sparsity-aware split finding, column blocks, and cache-conscious computation. These choices make boosted trees efficient across machines and data formats.",
+      "zh": "系统使用二阶梯度统计、正则化树评分、稀疏感知划分搜索、列块和缓存友好计算。这些设计使提升树能在不同机器和数据格式上高效运行。"
+    },
+    "sourceIds": [
+      "source-2016-xgboost-primary"
+    ],
+    "assetIds": [
+      "asset-2016-xgboost-explainer"
+    ]
+  }
+]

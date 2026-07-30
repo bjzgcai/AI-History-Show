@@ -1,0 +1,82 @@
+[
+    {
+        "id": "source-2017-lightgbm-primary",
+        "type": "paper",
+        "label": {
+            "en": "Primary paper",
+            "zh": "原始论文"
+        },
+        "title": {
+            "en": "LightGBM: A Highly Efficient Gradient Boosting Decision Tree",
+            "zh": "《LightGBM：高效梯度提升决策树》"
+        },
+        "url": "https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Primary publication identified by the BenchCouncil AI100 table.",
+            "zh": "BenchCouncil AI100 表格列出的主论文。"
+        },
+        "purpose": "core-evidence"
+    },
+    {
+        "id": "source-2017-lightgbm-secondary",
+        "type": "paper-page",
+        "label": {
+            "en": "Publication page",
+            "zh": "出版页面"
+        },
+        "title": {
+            "en": "Microsoft LightGBM project repository",
+            "zh": "Microsoft LightGBM 项目仓库"
+        },
+        "url": "https://github.com/microsoft/LightGBM",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Publisher, proceedings, repository, or companion publication page.",
+            "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+        },
+        "purpose": "alternate-access"
+    },
+    {
+        "id": "source-benchcouncil-ai100-catalog",
+        "type": "official-page",
+        "label": {
+            "en": "Official page",
+            "zh": "官方页面"
+        },
+        "title": {
+            "en": "BenchCouncil AI100: Top AI Achievements",
+            "zh": "BenchCouncil AI100：人工智能杰出成果"
+        },
+        "url": "https://www.benchcouncil.org/evaluation/ai/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Official membership source for the canonical AI100 storyline.",
+            "zh": "canonical AI100 分支的官方成员依据。"
+        },
+        "purpose": "historical-context"
+    },
+    {
+        "id": "source-2017-lightgbm-portrait",
+        "type": "image-source",
+        "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+        },
+        "title": {
+            "en": "Tie-Yan Liu related portrait source",
+            "zh": "刘铁岩相关肖像来源"
+        },
+        "url": "https://www.microsoft.com/en-us/research/people/tyliu/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "User-provided local photograph for this exhibition; confirm the original rights scope before redistribution.",
+            "zh": "用户提供用于本项目展览的本地照片；对外再分发前需复核原始授权范围。"
+        },
+        "purpose": "image-provenance"
+    }
+]

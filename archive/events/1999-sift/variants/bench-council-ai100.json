@@ -53,9 +53,9 @@
     "asset-1999-sift-descriptor"
   ],
   "sourceIds": [
-    "source-object-recognition-from-local-scale-invariant-features",
     "source-distinctive-image-features-from-scale-invariant-keypoints",
-    "source-david-lowe-ubc-computer-science"
+    "source-david-lowe-ubc-computer-science",
+    "source-object-recognition-from-local-scale-invariant-features"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -129,7 +129,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1999-sift_david-lowe.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

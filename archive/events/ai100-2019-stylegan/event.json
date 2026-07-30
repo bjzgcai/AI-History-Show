@@ -37,16 +37,30 @@
   ],
   "figures": [
     {
-      "figureId": "tero-karras",
       "name": {
-        "zh": "特罗·卡拉斯",
-        "en": "Tero Karras"
+        "en": "Tero Karras",
+        "zh": "特罗·卡拉斯"
       },
       "role": {
-        "zh": "StyleGAN 主要作者",
-        "en": "StyleGAN lead author"
+        "en": "StyleGAN lead author",
+        "zh": "StyleGAN 主要作者"
       },
       "avatar": "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Timo Aila",
+        "zh": "蒂莫·艾拉"
+      },
+      "role": {
+        "en": "StyleGAN co-author",
+        "zh": "StyleGAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
     }

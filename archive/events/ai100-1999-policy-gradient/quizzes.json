@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1999-policy-gradient-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What does the policy gradient theorem avoid differentiating?",
+      "zh": "策略梯度定理避免对什么求导？"
+    },
+    "options": [
+      {
+        "en": "The environment dynamics",
+        "zh": "环境动力学"
+      },
+      {
+        "en": "The policy parameters",
+        "zh": "策略参数"
+      },
+      {
+        "en": "The action probabilities",
+        "zh": "动作概率"
+      },
+      {
+        "en": "The objective function",
+        "zh": "目标函数"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "The performance gradient can be written as an expectation of action-value estimates multiplied by the policy score. Actor-critic methods use a learned critic to estimate that value while the actor follows the resulting gradient.",
+      "zh": "性能梯度可以写成动作价值估计与策略得分乘积的期望。Actor-critic 方法用学习到的 critic 估计价值，actor 则沿该梯度更新。"
+    },
+    "sourceIds": [
+      "source-1999-policy-gradient-primary"
+    ],
+    "assetIds": [
+      "asset-1999-policy-gradient-explainer"
+    ]
+  }
+]

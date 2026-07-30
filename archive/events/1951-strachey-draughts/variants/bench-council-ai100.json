@@ -52,7 +52,8 @@
   "sourceIds": [
     "source-logical-or-non-mathematical-programmes",
     "source-strachey-draughts-program-screenshot",
-    "source-checkers-board-photo"
+    "source-checkers-board-photo",
+    "source-computer-pioneers-christopher-strachey"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -126,7 +127,8 @@
       },
       "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

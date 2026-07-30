@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2001-random-forests-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What extra randomness distinguishes random forests from plain bagging?",
+      "zh": "随机森林相比普通 Bagging 多了什么随机性？"
+    },
+    "options": [
+      {
+        "en": "A random subset of features at each split",
+        "zh": "每次划分随机选择一部分特征"
+      },
+      {
+        "en": "Random output labels after training",
+        "zh": "训练后随机输出标签"
+      },
+      {
+        "en": "Randomly deleting all trees",
+        "zh": "随机删除所有树"
+      },
+      {
+        "en": "Random image cropping only",
+        "zh": "仅随机裁剪图像"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Each tree is trained on a bootstrap sample and considers only a random subset of features at each node. Voting or averaging many decorrelated trees yields strong accuracy with little tuning.",
+      "zh": "每棵树使用自助样本训练，并在每个节点只考虑随机选取的一部分特征。对大量低相关树进行投票或平均，可以在较少调参的情况下获得强劲精度。"
+    },
+    "sourceIds": [
+      "source-2001-random-forests-primary"
+    ],
+    "assetIds": [
+      "asset-2001-random-forests-explainer"
+    ]
+  }
+]

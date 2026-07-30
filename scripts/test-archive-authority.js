@@ -182,7 +182,7 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 146);
+assert.equal(compiledArchive.milestones.length, 165);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -191,7 +191,7 @@ assert.deepEqual(
 );
 console.log('PASS production compiler emits Archive provenance');
 
-assert.equal(milestones.length, 146, 'Archive runtime should contain all four storylines and 146 milestones');
+assert.equal(milestones.length, 165, 'Archive runtime should contain all four storylines and 165 milestones');
 const humanisticMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'humanistic-cycle'
 );

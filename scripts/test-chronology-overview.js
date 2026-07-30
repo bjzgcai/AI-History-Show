@@ -10,13 +10,13 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 146, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(milestones.length, 165, 'the chronology overview should consume all generated Archive milestones');
 
 const canonicalMilestones = overview.buildCanonicalMilestones(milestones, {
     storylinePriority: ['bench-council-ai100', 'deep-learning', 'gaming-ai', 'humanistic-cycle'],
     localize
 });
-assert.equal(canonicalMilestones.length, 128, 'the all-events view should render one card per Archive event');
+assert.equal(canonicalMilestones.length, 147, 'the all-events view should render one card per routed Archive event');
 assert.equal(
     new Set(canonicalMilestones.map((item) => overview.getCanonicalEventId(item))).size,
     canonicalMilestones.length,
@@ -159,7 +159,7 @@ const summaries = overview.summarizeStorylines(canonicalMilestones, localize);
 assert.deepEqual(
     summaries.map(({ id, count }) => ({ id, count })),
     [
-        { id: 'bench-council-ai100', count: 100 },
+        { id: 'bench-council-ai100', count: 119 },
         { id: 'gaming-ai', count: 13 },
         { id: 'humanistic-cycle', count: 12 },
         { id: 'deep-learning', count: 21 }
@@ -248,11 +248,11 @@ assert.ok(
 );
 assert.ok(layout.width > 1920, 'the complete timeline should be horizontally scrollable');
 assert.ok(
-    layout.years.some((item) => item.year === 2014 && item.count === 10),
+    layout.years.some((item) => item.year === 2014 && item.count === 12),
     'deduplicated 2014 events should share one year node'
 );
 assert.ok(
-    layout.years.some((item) => item.year === 2015 && item.count === 11),
+    layout.years.some((item) => item.year === 2015 && item.count === 13),
     'deduplicated 2015 events should share one year node'
 );
 assert.equal(

@@ -55,9 +55,9 @@
     "asset-1983-actor-critic-two-paths"
   ],
   "sourceIds": [
-    "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems",
     "source-reinforcement-learning-an-introduction",
-    "source-actor-critic-model-overview"
+    "source-actor-critic-model-overview",
+    "source-neuronlike-adaptive-elements-that-can-solve-difficult-learning-control-problems"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Charles Anderson",
+        "zh": "查尔斯·安德森"
+      },
+      "role": {
+        "en": "Actor-Critic co-author",
+        "zh": "Actor-Critic 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

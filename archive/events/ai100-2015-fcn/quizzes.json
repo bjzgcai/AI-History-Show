@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2015-fcn-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What does an FCN output for semantic segmentation?",
+      "zh": "FCN 在语义分割中输出什么？"
+    },
+    "options": [
+      {
+        "en": "A class label for each pixel",
+        "zh": "每个像素的类别标签"
+      },
+      {
+        "en": "One label for the whole dataset",
+        "zh": "整个数据集的一个标签"
+      },
+      {
+        "en": "Only bounding boxes",
+        "zh": "仅边界框"
+      },
+      {
+        "en": "Only text captions",
+        "zh": "仅文本描述"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Fully connected layers are replaced by convolutions so arbitrary-size images produce spatial score maps. Learned upsampling and skip connections combine coarse semantic information with finer spatial detail.",
+      "zh": "全连接层被卷积层替代，使任意尺寸图像都能产生空间得分图。可学习上采样与跳跃连接把粗粒度语义信息和更细的空间细节结合起来。"
+    },
+    "sourceIds": [
+      "source-2015-fcn-primary"
+    ],
+    "assetIds": [
+      "asset-2015-fcn-explainer"
+    ]
+  }
+]

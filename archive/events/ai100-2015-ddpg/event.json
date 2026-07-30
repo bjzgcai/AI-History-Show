@@ -37,12 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "timothy-lillicrap",
+      "name": {
+        "en": "Timothy Lillicrap",
+        "zh": "蒂莫西·利利克拉普"
+      },
       "role": {
-        "zh": "DDPG 主要作者",
-        "en": "DDPG lead author"
+        "en": "DDPG lead author",
+        "zh": "DDPG 主要作者"
       },
       "avatar": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jonathan Hunt",
+        "zh": "乔纳森·亨特"
+      },
+      "role": {
+        "en": "DDPG co-author",
+        "zh": "DDPG 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Daan Wierstra",
+        "zh": "丹·维尔斯特拉"
+      },
+      "role": {
+        "en": "DDPG co-author",
+        "zh": "DDPG 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

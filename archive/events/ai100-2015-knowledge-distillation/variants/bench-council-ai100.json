@@ -55,9 +55,9 @@
     "asset-2015-knowledge-distillation-teacher-student"
   ],
   "sourceIds": [
-    "source-distilling-the-knowledge-in-a-neural-network",
     "source-knowledge-distillation-overview",
-    "source-geoffrey-hinton-profile"
+    "source-geoffrey-hinton-profile",
+    "source-distilling-the-knowledge-in-a-neural-network"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,36 @@
       },
       "avatar": "resources/images/figures/geoffrey-hinton.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Oriol Vinyals",
+        "zh": "奥里奥尔·维尼亚尔斯"
+      },
+      "role": {
+        "en": "knowledge distillation co-author",
+        "zh": "knowledge distillation 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jeff Dean",
+        "zh": "杰夫·迪恩"
+      },
+      "role": {
+        "en": "knowledge distillation co-author",
+        "zh": "knowledge distillation 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

@@ -56,9 +56,9 @@
     "asset-2013-word2vec-vector-analogy"
   ],
   "sourceIds": [
-    "source-efficient-estimation-of-word-representations-in-vector-space",
     "source-distributed-representations-of-words-and-phrases-and-their-compositionality",
-    "source-google-code-archive-word2vec"
+    "source-google-code-archive-word2vec",
+    "source-efficient-estimation-of-word-representations-in-vector-space"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,22 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2013-word2vec_tomas-mikolov.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jeffrey Dean",
+        "zh": "杰弗里·迪恩"
+      },
+      "role": {
+        "en": "Word2vec co-author",
+        "zh": "Word2vec 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

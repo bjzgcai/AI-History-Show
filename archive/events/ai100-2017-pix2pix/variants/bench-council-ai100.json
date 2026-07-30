@@ -55,9 +55,9 @@
     "asset-2017-pix2pix-paired-translation"
   ],
   "sourceIds": [
-    "source-image-to-image-translation-with-conditional-adversarial-networks",
     "source-cvpr-open-access-paper-page",
-    "source-pix2pix-project-page"
+    "source-pix2pix-project-page",
+    "source-image-to-image-translation-with-conditional-adversarial-networks"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Alexei Efros",
+        "zh": "阿列克谢·埃夫罗斯"
+      },
+      "role": {
+        "en": "Pix2Pix co-author",
+        "zh": "Pix2Pix 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],

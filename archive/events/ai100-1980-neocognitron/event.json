@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "kunihiko-fukushima",
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
       "role": {
-        "zh": "Neocognitron 提出者",
-        "en": "Creator of the neocognitron"
+        "en": "Creator of the neocognitron",
+        "zh": "Neocognitron 提出者"
       },
       "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

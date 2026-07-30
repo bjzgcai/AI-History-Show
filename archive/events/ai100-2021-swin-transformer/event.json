@@ -37,12 +37,59 @@
   ],
   "figures": [
     {
-      "figureId": "ze-liu",
+      "name": {
+        "en": "Ze Liu",
+        "zh": "刘泽"
+      },
       "role": {
-        "zh": "Swin Transformer 主要作者",
-        "en": "Swin Transformer lead author"
+        "en": "Swin Transformer lead author",
+        "zh": "Swin Transformer 主要作者"
       },
       "avatar": "resources/images/external/ai100-2021-swin-transformer/ze-liu-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yutong Lin",
+        "zh": "林宇通"
+      },
+      "role": {
+        "en": "Swin Transformer co-author",
+        "zh": "Swin Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yue Cao",
+        "zh": "曹越"
+      },
+      "role": {
+        "en": "Swin Transformer co-author",
+        "zh": "Swin Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Han Hu",
+        "zh": "胡瀚"
+      },
+      "role": {
+        "en": "Swin Transformer co-author",
+        "zh": "Swin Transformer 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],
