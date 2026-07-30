@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-vladimir-vapnik-simons-profile",
+    "type": "profile",
+    "label": {
+      "zh": "人物资料",
+      "en": "Profile"
+    },
+    "title": {
+      "zh": "弗拉基米尔·瓦普尼克人物页",
+      "en": "Vladimir Vapnik profile"
+    },
+    "url": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "西蒙斯基金会人物页，用于瓦普尼克肖像的来源与身份说明。",
+      "en": "Simons Foundation profile providing provenance and identity context for the Vladimir Vapnik portrait."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-on-the-uniform-convergence-of-relative-frequencies",
     "type": "paper",
     "label": {

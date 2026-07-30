@@ -9,14 +9,14 @@
       "en": "Normalized graph cut"
     },
     "subcaption": {
-      "zh": "依据 归一化切分与图像分割 制作的本地解释图。",
+      "zh": "依据《归一化切分与图像分割》制作的本地解释图。",
       "en": "Original local explainer based on Normalized Cuts and Image Segmentation."
     },
     "sourceId": "source-normalized-cuts-and-image-segmentation",
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘，不复制来源论文图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
@@ -35,14 +35,14 @@
       "en": "Eigenvector embedding"
     },
     "subcaption": {
-      "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。",
+      "zh": "依据《论谱聚类：分析与算法》制作的本地解释图。",
       "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm."
     },
-    "sourceId": "source-normalized-cuts-and-image-segmentation",
+    "sourceId": "source-on-spectral-clustering-analysis-and-an-algorithm",
     "rights": {
       "status": "documented-in-legacy",
       "license": {
-        "zh": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘，不复制来源论文图形。",
         "en": "Original local SVG redraw; source figures are not copied."
       }
     },
@@ -60,14 +60,14 @@
       "zh": "吴恩达肖像",
       "en": "Andrew Ng portrait"
     },
-    "sourceId": "source-normalized-cuts-and-image-segmentation",
+    "sourceId": "source-andrew-ng-wikimedia-portrait",
     "rights": {
       "status": "external-reference",
       "license": {
         "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
         "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
     },
     "usage": [
       "variant:bench-council-ai100"
@@ -81,7 +81,7 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
   },
   {
     "id": "asset-2000-spectral-clustering-6n-graf",
@@ -92,14 +92,14 @@
       "zh": "谱聚类六节点图示",
       "en": "Six-node spectral-clustering graph"
     },
-    "sourceId": "source-normalized-cuts-and-image-segmentation",
+    "sourceId": "source-spectral-graph-illustration",
     "rights": {
       "status": "external-reference",
       "license": {
         "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
         "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
       },
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
     },
     "usage": [
       "variant:bench-council-ai100"
@@ -113,6 +113,6 @@
       "zh": "维基共享资源",
       "en": "Wikimedia Commons"
     },
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
   }
 ]

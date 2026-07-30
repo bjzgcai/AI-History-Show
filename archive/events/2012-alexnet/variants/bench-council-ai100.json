@@ -25,11 +25,13 @@
     "asset-alexnet-deep-portrait",
     "asset-alexnet-architecture-detail"
   ],
+  "overviewImageAssetId": "asset-alexnet-portrait",
   "sourceIds": [
     "source-alexnet-neurips-paper",
     "source-alexnet-neurips-pdf",
     "source-imagenet-challenge",
-    "source-alexnet-overview"
+    "source-alexnet-overview",
+    "source-alex-krizhevsky-user-provided-portrait"
   ],
   "claimIds": [
     "claim-imagenet-breakthrough",
@@ -95,8 +97,8 @@
         "en": "AlexNet lead author",
         "zh": "AlexNet 主要作者"
       },
-      "avatar": "resources/images/figures/historical/alex-krizhevsky-2013.png",
-      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 47%;",
+      "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+      "avatarStyle": "",
       "figureType": "person"
     },
     {

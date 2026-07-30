@@ -15,10 +15,11 @@
     "mcts"
   ],
   "visual": "go",
+  "overviewImageAssetId": "asset-david-silver-commons-portrait",
   "assetIds": [
     "asset-david-silver-commons-portrait",
-    "asset-alphago-lee-sedol",
-    "asset-alphago-policy-value-search"
+    "asset-alphago-policy-value-search",
+    "asset-alphago-lee-sedol"
   ],
   "sourceIds": [
     "source-david-silver-commons-portrait",

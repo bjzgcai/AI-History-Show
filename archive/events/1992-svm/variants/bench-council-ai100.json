@@ -47,12 +47,15 @@
       }
     }
   ],
+  "overviewImageAssetId": "asset-1992-svm-vladimir-vapnik",
   "assetIds": [
-    "asset-1992-svm-isabelle-guyon",
+    "asset-1992-svm-vladimir-vapnik",
     "asset-1992-svm-max-margin",
+    "asset-1992-svm-isabelle-guyon",
     "asset-1992-svm-kernel-lift"
   ],
   "sourceIds": [
+    "source-vladimir-vapnik-simons-profile",
     "source-a-training-algorithm-for-optimal-margin-classifiers",
     "source-libsvm-project-page",
     "source-scikit-learn-svc"

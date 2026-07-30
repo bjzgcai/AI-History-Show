@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-29 09:35
+// 生成时间: 2026-07-30 03:38
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 146, errors 0
 
@@ -60,8 +60,8 @@ const milestones = [
           "en": "AlexNet lead author",
           "zh": "AlexNet 主要作者"
         },
-        "avatar": "resources/images/figures/historical/alex-krizhevsky-2013.png",
-        "avatarStyle": "transform: scale(1.08); transform-origin: 50% 47%;",
+        "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+        "avatarStyle": "",
         "figureType": "person"
       },
       {
@@ -93,11 +93,13 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/figures/alex-krizhevsky.jpg",
+        "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
         "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png"
       ],
+      "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+      "overviewImageAssetId": "asset-alexnet-portrait",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
@@ -118,7 +120,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/figures/alex-krizhevsky.jpg": {
+      "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png": {
         "caption": {
           "zh": "亚历克斯·克里热夫斯基肖像",
           "en": "Alex Krizhevsky portrait"
@@ -127,16 +129,24 @@ const milestones = [
           "zh": "AlexNet 主要作者",
           "en": "AlexNet lead author"
         },
-        "license": {
-          "zh": "历史人物资料图，保留来源说明。",
-          "en": "Historical figure reference image; keep attribution."
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
         },
-        "sourceId": "source-alexnet-neurips-paper",
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于 AlexNet 事件首图、首页缩略图与亚历克斯·克里热夫斯基人物头像。",
+          "en": "Used as the AlexNet lead image, homepage thumbnail, and Alex Krizhevsky figure avatar."
+        },
+        "sourceId": "source-alex-krizhevsky-user-provided-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "user-provided",
           "license": {
-            "zh": "历史人物资料图，保留来源说明。",
-            "en": "Historical figure reference image; keep attribution."
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
           }
         },
         "role": "portrait",
@@ -308,13 +318,29 @@ const milestones = [
           "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "encyclopedia-entry"
+        },
+        {
+          "id": "source-alex-krizhevsky-user-provided-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "亚历克斯·克里热夫斯基肖像（用户提供）",
+            "en": "Alex Krizhevsky portrait (user provided)"
+          },
+          "url": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-alexnet-neurips-paper",
         "source-alexnet-neurips-pdf",
         "source-imagenet-challenge",
-        "source-alexnet-overview"
+        "source-alexnet-overview",
+        "source-alex-krizhevsky-user-provided-portrait"
       ],
       "claimIds": [
         "claim-imagenet-breakthrough",
@@ -1246,14 +1272,16 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/authoritative/david-silver.jpg",
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
       ],
+      "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
+      "overviewImageAssetId": "asset-david-silver-commons-portrait",
       "videos": [],
       "assetIds": [
         "asset-david-silver-commons-portrait",
-        "asset-alphago-lee-sedol",
-        "asset-alphago-policy-value-search"
+        "asset-alphago-policy-value-search",
+        "asset-alphago-lee-sedol"
       ]
     },
     "imageMeta": {
@@ -1286,30 +1314,6 @@ const milestones = [
         "role": "portrait",
         "type": "image"
       },
-      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
-        "caption": {
-          "zh": "李世石肖像",
-          "en": "Lee Sedol portrait"
-        },
-        "subcaption": {
-          "zh": "与 AlphaGo 进行五番棋对局的职业围棋棋手。",
-          "en": "Professional Go player who faced AlphaGo in the five-game match."
-        },
-        "license": {
-          "zh": "历史资料图，需保留来源说明。",
-          "en": "Historical reference image; keep source attribution."
-        },
-        "sourceId": "source-deepmind-alphago-page",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "历史资料图，需保留来源说明。",
-            "en": "Historical reference image; keep source attribution."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
           "zh": "AlphaGo 策略、价值与搜索流程",
@@ -1333,6 +1337,30 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
+        "caption": {
+          "zh": "李世石肖像",
+          "en": "Lee Sedol portrait"
+        },
+        "subcaption": {
+          "zh": "与 AlphaGo 进行五番棋对局的职业围棋棋手。",
+          "en": "Professional Go player who faced AlphaGo in the five-game match."
+        },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep source attribution."
+        },
+        "sourceId": "source-deepmind-alphago-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep source attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -3055,11 +3083,16 @@ const milestones = [
           "zh": "西蒙斯基金会 人物页中的 弗拉基米尔·瓦普尼克 肖像。",
           "en": "Vladimir Vapnik profile portrait from the Simons Foundation."
         },
+        "sourceName": {
+          "zh": "西蒙斯基金会",
+          "en": "Simons Foundation"
+        },
+        "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
         "license": {
           "zh": "西蒙斯基金会 profile image; page does not state an open reuse license.",
           "en": "Simons Foundation profile image; page does not state an open reuse license."
         },
-        "sourceId": "source-on-the-uniform-convergence-of-relative-frequencies",
+        "sourceId": "source-vladimir-vapnik-simons-profile",
         "rights": {
           "status": "external-reference",
           "license": {
@@ -3067,7 +3100,7 @@ const milestones = [
             "en": "Simons Foundation profile image; page does not state an open reuse license."
           }
         },
-        "role": "source-card",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1971-vc-theory_generalization.svg": {
@@ -3127,6 +3160,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-vladimir-vapnik-simons-profile",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "弗拉基米尔·瓦普尼克人物页",
+            "en": "Vladimir Vapnik profile"
+          },
+          "url": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "profile"
+        },
+        {
           "id": "source-on-the-uniform-convergence-of-relative-frequencies",
           "type": {
             "zh": "论文",
@@ -3173,6 +3221,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-vladimir-vapnik-simons-profile",
         "source-on-the-uniform-convergence-of-relative-frequencies",
         "source-the-nature-of-statistical-learning-theory",
         "source-an-overview-of-statistical-learning-theory"
@@ -7337,40 +7386,49 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
+        "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
         "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg",
+        "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",
         "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg"
       ],
+      "overviewImage": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
+      "overviewImageAssetId": "asset-1992-svm-vladimir-vapnik",
       "videos": [],
       "assetIds": [
-        "asset-1992-svm-isabelle-guyon",
+        "asset-1992-svm-vladimir-vapnik",
         "asset-1992-svm-max-margin",
+        "asset-1992-svm-isabelle-guyon",
         "asset-1992-svm-kernel-lift"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
+      "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png": {
         "caption": {
-          "zh": "伊莎贝尔·居永 肖像",
-          "en": "Isabelle Guyon portrait"
+          "zh": "弗拉基米尔·瓦普尼克肖像",
+          "en": "Vladimir Vapnik portrait"
         },
         "subcaption": {
-          "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。",
-          "en": "University Paris-Saclay article image about Guyon and support vector machines."
+          "zh": "支持向量机共同开发者。",
+          "en": "SVM co-developer."
         },
+        "sourceName": {
+          "zh": "西蒙斯基金会",
+          "en": "Simons Foundation"
+        },
+        "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
         "license": {
-          "zh": "University news image; rights not stated.",
-          "en": "University news image; rights not stated."
+          "zh": "西蒙斯基金会人物页未声明开放复用许可；公开使用前应核对其媒体授权要求。",
+          "en": "The Simons Foundation profile does not state an open reuse license; consult its media permissions before public reuse."
         },
-        "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+        "sourceId": "source-vladimir-vapnik-simons-profile",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "external-reference",
           "license": {
-            "zh": "University news image; rights not stated.",
-            "en": "University news image; rights not stated."
+            "zh": "西蒙斯基金会人物页未声明开放复用许可；公开使用前应核对其媒体授权要求。",
+            "en": "The Simons Foundation profile does not state an open reuse license; consult its media permissions before public reuse."
           }
         },
-        "role": "hero-image",
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1992-svm_max-margin.svg": {
@@ -7396,6 +7454,30 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg": {
+        "caption": {
+          "zh": "伊莎贝尔·居永 肖像",
+          "en": "Isabelle Guyon portrait"
+        },
+        "subcaption": {
+          "zh": "巴黎-萨克雷大学 关于 Guyon 与支持向量机工作的文章配图。",
+          "en": "University Paris-Saclay article image about Guyon and support vector machines."
+        },
+        "license": {
+          "zh": "University news image; rights not stated.",
+          "en": "University news image; rights not stated."
+        },
+        "sourceId": "source-a-training-algorithm-for-optimal-margin-classifiers",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "University news image; rights not stated.",
+            "en": "University news image; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1992-svm_kernel-lift.svg": {
         "caption": {
@@ -7454,6 +7536,21 @@ const milestones = [
       ],
       "sources": [
         {
+          "id": "source-vladimir-vapnik-simons-profile",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "弗拉基米尔·瓦普尼克人物页",
+            "en": "Vladimir Vapnik profile"
+          },
+          "url": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+          "purpose": "image-provenance",
+          "reliability": "secondary",
+          "sourceType": "profile"
+        },
+        {
           "id": "source-a-training-algorithm-for-optimal-margin-classifiers",
           "type": {
             "zh": "论文",
@@ -7500,6 +7597,7 @@ const milestones = [
         }
       ],
       "sourceIds": [
+        "source-vladimir-vapnik-simons-profile",
         "source-a-training-algorithm-for-optimal-margin-classifiers",
         "source-libsvm-project-page",
         "source-scikit-learn-svc"
@@ -24532,8 +24630,8 @@ const milestones = [
     "year": "2000",
     "date": "2000",
     "title": {
-      "zh": "谱聚类",
-      "en": "Spectral Clustering"
+      "zh": "归一化切分与谱聚类",
+      "en": "Normalized Cuts and Spectral Clustering"
     },
     "subtitle": {
       "zh": "AI 百大成就",
@@ -24568,8 +24666,8 @@ const milestones = [
           "zh": "史建波"
         },
         "role": {
-          "en": "Co-author of normalized cuts",
-          "zh": "Normalized Cuts 共同作者"
+          "en": "Co-author of the 2000 normalized-cuts paper",
+          "zh": "2000 年归一化切分论文共同作者"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -24577,12 +24675,38 @@ const milestones = [
       },
       {
         "name": {
-          "en": "Jitendra Malik, Andrew Ng, Yair Weiss",
-          "zh": "吉滕德拉·马利克、吴恩达、亚伊尔·魏斯"
+          "en": "Jitendra Malik",
+          "zh": "吉滕德拉·马利克"
         },
         "role": {
-          "en": "Key contributors to spectral clustering formulations",
-          "zh": "谱聚类形式化的重要贡献者"
+          "en": "Co-author of the 2000 normalized-cuts paper",
+          "zh": "2000 年归一化切分论文共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Andrew Ng",
+          "zh": "吴恩达"
+        },
+        "role": {
+          "en": "Co-author of the 2001 spectral-clustering analysis",
+          "zh": "2001 年谱聚类分析论文共同作者"
+        },
+        "avatar": "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Yair Weiss",
+          "zh": "亚伊尔·魏斯"
+        },
+        "role": {
+          "en": "Co-author of the 2001 spectral-clustering analysis",
+          "zh": "2001 年谱聚类分析论文共同作者"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -24618,19 +24742,19 @@ const milestones = [
           "zh": "维基共享资源",
           "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
         "license": {
           "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
           "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
-        "sourceId": "source-normalized-cuts-and-image-segmentation",
+        "sourceId": "source-andrew-ng-wikimedia-portrait",
         "rights": {
           "status": "external-reference",
           "license": {
             "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
             "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -24648,19 +24772,19 @@ const milestones = [
           "zh": "维基共享资源",
           "en": "Wikimedia Commons"
         },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
         "license": {
           "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
           "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
         },
-        "sourceId": "source-normalized-cuts-and-image-segmentation",
+        "sourceId": "source-spectral-graph-illustration",
         "rights": {
           "status": "external-reference",
           "license": {
             "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
             "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
           },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg"
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
         },
         "role": "algorithm-explainer",
         "type": "image"
@@ -24671,18 +24795,18 @@ const milestones = [
           "en": "Normalized graph cut"
         },
         "subcaption": {
-          "zh": "依据 归一化切分与图像分割 制作的本地解释图。",
+          "zh": "依据《归一化切分与图像分割》制作的本地解释图。",
           "en": "Original local explainer based on Normalized Cuts and Image Segmentation."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘，不复制来源论文图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
         "sourceId": "source-normalized-cuts-and-image-segmentation",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘，不复制来源论文图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -24695,18 +24819,18 @@ const milestones = [
           "en": "Eigenvector embedding"
         },
         "subcaption": {
-          "zh": "依据 论谱聚类：分析与算法 制作的本地解释图。",
+          "zh": "依据《论谱聚类：分析与算法》制作的本地解释图。",
           "en": "Original local explainer based on On Spectral Clustering: Analysis and an algorithm."
         },
         "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘，不复制来源论文图形。",
           "en": "Original local SVG redraw; source figures are not copied."
         },
-        "sourceId": "source-normalized-cuts-and-image-segmentation",
+        "sourceId": "source-on-spectral-clustering-analysis-and-an-algorithm",
         "rights": {
           "status": "documented-in-legacy",
           "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘，不复制来源论文图形。",
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
@@ -24786,6 +24910,21 @@ const milestones = [
           "sourceType": "documentation"
         },
         {
+          "id": "source-andrew-ng-wikimedia-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "吴恩达在 TechCrunch Disrupt SF 2017",
+            "en": "Andrew Ng at TechCrunch Disrupt SF 2017"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+          "purpose": "image-provenance",
+          "reliability": "reference-only",
+          "sourceType": "image-source"
+        },
+        {
           "id": "source-spectral-graph-illustration",
           "type": {
             "zh": "图片来源",
@@ -24805,6 +24944,7 @@ const milestones = [
         "source-normalized-cuts-and-image-segmentation",
         "source-on-spectral-clustering-analysis-and-an-algorithm",
         "source-scikit-learn-spectral-clustering-documentation",
+        "source-andrew-ng-wikimedia-portrait",
         "source-spectral-graph-illustration"
       ],
       "claimIds": [
@@ -24944,7 +25084,8 @@ const milestones = [
           "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry. This context helps viewers place Spectral Clustering in the technical problems and research priorities of its time."
         },
         "sourceIds": [
-          "source-normalized-cuts-and-image-segmentation"
+          "source-normalized-cuts-and-image-segmentation",
+          "source-on-spectral-clustering-analysis-and-an-algorithm"
         ]
       },
       {
@@ -24958,7 +25099,8 @@ const milestones = [
           "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space. The key mechanism is Graph Laplacian eigenvector embedding, which links the source material to the visible demo behavior."
         },
         "sourceIds": [
-          "source-normalized-cuts-and-image-segmentation"
+          "source-normalized-cuts-and-image-segmentation",
+          "source-on-spectral-clustering-analysis-and-an-algorithm"
         ]
       },
       {
@@ -24972,7 +25114,9 @@ const milestones = [
           "en": "Experts generally treat spectral clustering as a major graph-based approach to grouping non-convex data. Its long-term legacy is the use of graph Laplacian eigenvectors to connect image segmentation, manifold learning, graph clustering, and modern graph data analysis."
         },
         "sourceIds": [
-          "source-normalized-cuts-and-image-segmentation"
+          "source-normalized-cuts-and-image-segmentation",
+          "source-on-spectral-clustering-analysis-and-an-algorithm",
+          "source-scikit-learn-spectral-clustering-documentation"
         ]
       }
     ],
@@ -25042,8 +25186,8 @@ const milestones = [
       "sourceUrl": "https://doi.org/10.1109/34.868688"
     },
     "quotePage": {
-      "en": "BenchCouncil AI100: Cluster, Classification, Regression / Spectral Clustering",
-      "zh": "BenchCouncil AI100：聚类、分类与回归 / 谱聚类"
+      "en": "BenchCouncil AI100: Normalized Cuts and Spectral Clustering",
+      "zh": "BenchCouncil AI100：归一化切分与谱聚类"
     },
     "quoteAttribution": {
       "en": "<em>Normalized Cuts and Image Segmentation</em>, Jianbo Shi and Jitendra Malik",
@@ -51365,6 +51509,8 @@ const milestones = [
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
       ],
+      "overviewImage": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
+      "overviewImageAssetId": "asset-1956-dartmouth-historical-02",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
@@ -51704,8 +51850,8 @@ const milestones = [
           "en": "AlexNet lead author",
           "zh": "AlexNet 主要作者"
         },
-        "avatar": "resources/images/figures/historical/alex-krizhevsky-2013.png",
-        "avatarStyle": "transform: scale(1.08); transform-origin: 50% 47%;",
+        "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+        "avatarStyle": "",
         "figureType": "person"
       },
       {
@@ -51737,11 +51883,13 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/figures/alex-krizhevsky.jpg",
+        "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
         "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png"
       ],
+      "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+      "overviewImageAssetId": "asset-alexnet-portrait",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
@@ -51762,7 +51910,7 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/figures/alex-krizhevsky.jpg": {
+      "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png": {
         "caption": {
           "zh": "亚历克斯·克里热夫斯基肖像",
           "en": "Alex Krizhevsky portrait"
@@ -51771,16 +51919,24 @@ const milestones = [
           "zh": "AlexNet 主要作者",
           "en": "AlexNet lead author"
         },
-        "license": {
-          "zh": "历史人物资料图，保留来源说明。",
-          "en": "Historical figure reference image; keep attribution."
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
         },
-        "sourceId": "source-alexnet-neurips-paper",
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于 AlexNet 事件首图、首页缩略图与亚历克斯·克里热夫斯基人物头像。",
+          "en": "Used as the AlexNet lead image, homepage thumbnail, and Alex Krizhevsky figure avatar."
+        },
+        "sourceId": "source-alex-krizhevsky-user-provided-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "user-provided",
           "license": {
-            "zh": "历史人物资料图，保留来源说明。",
-            "en": "Historical figure reference image; keep attribution."
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
           }
         },
         "role": "portrait",
@@ -51952,13 +52108,29 @@ const milestones = [
           "purpose": "background",
           "reliability": "reference-only",
           "sourceType": "encyclopedia-entry"
+        },
+        {
+          "id": "source-alex-krizhevsky-user-provided-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "亚历克斯·克里热夫斯基肖像（用户提供）",
+            "en": "Alex Krizhevsky portrait (user provided)"
+          },
+          "url": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-alexnet-neurips-paper",
         "source-alexnet-neurips-pdf",
         "source-imagenet-challenge",
-        "source-alexnet-overview"
+        "source-alexnet-overview",
+        "source-alex-krizhevsky-user-provided-portrait"
       ],
       "claimIds": [
         "claim-imagenet-breakthrough",
@@ -53638,11 +53810,13 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
         "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png",
         "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
-        "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
         "resources/images/1986-backpropagation/papers/1986-backpropagation_papers_01.png"
       ],
+      "overviewImage": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png",
+      "overviewImageAssetId": "asset-1986-backpropagation-paper-02",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/1986%EF%BC%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A4%8D%E5%85%B4%E4%B8%8E%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95_720p.mp4",
@@ -53656,13 +53830,37 @@ const milestones = [
         }
       ],
       "assetIds": [
+        "asset-1986-backpropagation-paper-02",
         "asset-1986-backpropagation-architecture01",
         "asset-1986-backpropagation-paper-01",
-        "asset-1986-backpropagation-paper-02",
         "asset-1986-backpropagation-papers-01"
       ]
     },
     "imageMeta": {
+      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
+        "caption": {
+          "zh": "戴维·鲁梅尔哈特肖像",
+          "en": "David Rumelhart portrait"
+        },
+        "subcaption": {
+          "zh": "反向传播论文主要作者。",
+          "en": "Lead author of the backpropagation paper."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/1986-backpropagation/architecture/1986-backpropagation_architecture01.png": {
         "caption": {
           "zh": "反向传播算法结构图",
@@ -53695,30 +53893,6 @@ const milestones = [
         "subcaption": {
           "zh": "反向传播论文共同作者。",
           "en": "Co-author of the backpropagation paper."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/1986-backpropagation/people/1986-backpropagation_paper_02.png": {
-        "caption": {
-          "zh": "戴维·鲁梅尔哈特肖像",
-          "en": "David Rumelhart portrait"
-        },
-        "subcaption": {
-          "zh": "反向传播论文主要作者。",
-          "en": "Lead author of the backpropagation paper."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -60562,19 +60736,6 @@ const milestones = [
     "figures": [
       {
         "name": {
-          "en": "Lianmin Zheng",
-          "zh": "郑廉民"
-        },
-        "role": {
-          "en": "Co-creator of Chatbot Arena / LMArena",
-          "zh": "Chatbot Arena / LMArena 共同创建者"
-        },
-        "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": {
           "en": "Research Institutions",
           "zh": "研究机构"
         },
@@ -60585,16 +60746,31 @@ const milestones = [
         "avatar": "resources/images/figures/research-institution.png",
         "avatarStyle": "",
         "figureType": "team"
+      },
+      {
+        "name": {
+          "en": "Lianmin Zheng",
+          "zh": "郑廉民"
+        },
+        "role": {
+          "en": "Co-creator of Chatbot Arena / LMArena",
+          "zh": "Chatbot Arena / LMArena 共同创建者"
+        },
+        "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+        "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
       ],
+      "overviewImage": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+      "overviewImageAssetId": "asset-2025-llm-competition-historical-01",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
@@ -60608,14 +60784,38 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-2025-llm-competition-lianmin-zheng",
         "asset-2025-llm-competition-historical-01",
+        "asset-2025-llm-competition-lianmin-zheng",
         "asset-2025-llm-competition-architecture-01",
         "asset-2025-llm-competition-historical-02",
         "asset-2025-llm-competition-historical-03"
       ]
     },
     "imageMeta": {
+      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
+        "caption": {
+          "zh": "大语言模型百花齐放资料图 1",
+          "en": "A Flourishing Competition Among Large Language Models reference image 1"
+        },
+        "subcaption": {
+          "zh": "与大语言模型百花齐放相关的历史图像资料。",
+          "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg": {
         "caption": {
           "zh": "郑廉民肖像",
@@ -60644,30 +60844,6 @@ const milestones = [
           "sourceUrl": "https://lmzheng.net/images/profile.jpg"
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
-        "caption": {
-          "zh": "大语言模型百花齐放资料图 1",
-          "en": "A Flourishing Competition Among Large Language Models reference image 1"
-        },
-        "subcaption": {
-          "zh": "与大语言模型百花齐放相关的历史图像资料。",
-          "en": "Historical image reference related to A Flourishing Competition Among Large Language Models."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "hero-image",
         "type": "image"
       },
       "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
@@ -61572,20 +61748,51 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg",
         "resources/images/figures/authoritative/david-silver.jpg",
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg"
+        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg",
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
       ],
+      "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
+      "overviewImageAssetId": "asset-david-silver-commons-portrait",
       "videos": [],
       "assetIds": [
-        "asset-2016-alphago-game-4-photo",
         "asset-david-silver-commons-portrait",
-        "asset-alphago-lee-sedol",
-        "asset-alphago-policy-value-search"
+        "asset-2016-alphago-game-4-photo",
+        "asset-alphago-policy-value-search",
+        "asset-alphago-lee-sedol"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
         "caption": {
           "zh": "李世石对 AlphaGo 第 4 局",
@@ -61619,34 +61826,29 @@ const milestones = [
         "role": "game-record-image",
         "type": "image"
       },
-      "resources/images/figures/authoritative/david-silver.jpg": {
+      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
         "caption": {
-          "zh": "大卫·席尔瓦肖像",
-          "en": "David Silver portrait"
+          "zh": "AlphaGo 策略、价值与搜索流程",
+          "en": "AlphaGo policy, value, and search workflow"
         },
         "subcaption": {
-          "zh": "DeepMind 强化学习主要研究者。",
-          "en": "Leading DeepMind reinforcement-learning researcher."
+          "zh": "展示策略网络、价值网络与蒙特卡洛树搜索的协作关系。",
+          "en": "Shows how policy networks, value networks, and Monte Carlo tree search work together."
         },
-        "sourceName": {
-          "zh": "Wikimedia Commons",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
         "license": {
-          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
-          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
         },
-        "sourceId": "source-david-silver-commons-portrait",
+        "sourceId": "source-alphago-nature-paper",
         "rights": {
-          "status": "licensed",
+          "status": "local-redraw",
           "license": {
-            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
-            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
           }
         },
-        "role": "portrait",
-        "type": "image"
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
         "caption": {
@@ -61671,30 +61873,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
-        "caption": {
-          "zh": "AlphaGo 策略、价值与搜索流程",
-          "en": "AlphaGo policy, value, and search workflow"
-        },
-        "subcaption": {
-          "zh": "展示策略网络、价值网络与蒙特卡洛树搜索的协作关系。",
-          "en": "Shows how policy networks, value networks, and Monte Carlo tree search work together."
-        },
-        "license": {
-          "zh": "根据论文方法本地重绘，不复制原论文图。",
-          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-        },
-        "sourceId": "source-alphago-nature-paper",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "根据论文方法本地重绘，不复制原论文图。",
-            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {

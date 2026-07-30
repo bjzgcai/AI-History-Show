@@ -407,9 +407,10 @@
             .join('');
     }
 
-    function getPrimaryImage(milestone, resolveImage) {
-        const resolvedImage = typeof resolveImage === 'function' ? String(resolveImage(milestone) || '').trim() : '';
-        if (resolvedImage) return resolvedImage;
+    function getPrimaryImage(milestone) {
+        const configuredImage =
+            milestone && milestone.resources ? String(milestone.resources.overviewImage || '').trim() : '';
+        if (configuredImage) return configuredImage;
         const images =
             milestone && milestone.resources && Array.isArray(milestone.resources.images)
                 ? milestone.resources.images
@@ -578,7 +579,7 @@
             ]
                 .filter(Boolean)
                 .join(' · ');
-            const imageUrl = getPrimaryImage(milestone, config.resolveCardImage);
+            const imageUrl = getPrimaryImage(milestone);
             const imageAlt = getImageAlt(milestone, imageUrl, localize);
             const portraitImage = isPortraitImage(milestone, imageUrl);
             const selected = config.selectedEventId && config.selectedEventId === milestone.id;

@@ -3,8 +3,8 @@
   "year": "2000",
   "date": "2000",
   "title": {
-    "zh": "谱聚类",
-    "en": "Spectral Clustering"
+    "zh": "归一化切分与谱聚类",
+    "en": "Normalized Cuts and Spectral Clustering"
   },
   "summary": {
     "zh": "AI 百大成就",
@@ -38,17 +38,49 @@
   "figures": [
     {
       "figureId": "jianbo-shi",
+      "name": {
+        "zh": "史建波",
+        "en": "Jianbo Shi"
+      },
       "role": {
-        "zh": "Normalized Cuts 共同作者",
-        "en": "Co-author of normalized cuts"
+        "zh": "2000 年归一化切分论文共同作者",
+        "en": "Co-author of the 2000 normalized-cuts paper"
       },
       "organizationIds": []
     },
     {
-      "figureId": "jitendra-malik-andrew-ng-yair-weiss",
+      "figureId": "jitendra-malik",
+      "name": {
+        "zh": "吉滕德拉·马利克",
+        "en": "Jitendra Malik"
+      },
       "role": {
-        "zh": "谱聚类形式化的重要贡献者",
-        "en": "Key contributors to spectral clustering formulations"
+        "zh": "2000 年归一化切分论文共同作者",
+        "en": "Co-author of the 2000 normalized-cuts paper"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "andrew-ng",
+      "name": {
+        "zh": "吴恩达",
+        "en": "Andrew Ng"
+      },
+      "role": {
+        "zh": "2001 年谱聚类分析论文共同作者",
+        "en": "Co-author of the 2001 spectral-clustering analysis"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "yair-weiss",
+      "name": {
+        "zh": "亚伊尔·魏斯",
+        "en": "Yair Weiss"
+      },
+      "role": {
+        "zh": "2001 年谱聚类分析论文共同作者",
+        "en": "Co-author of the 2001 spectral-clustering analysis"
       },
       "organizationIds": []
     }
