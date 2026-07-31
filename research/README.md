@@ -4,6 +4,7 @@ This directory contains human-maintained source dossiers, review notes, and rese
 
 - `ai100/` contains the BenchCouncil AI100 research workspace and manual review guide.
 - `humanistic-cycle/` contains source and image research for the humanistic storyline.
+- `connectionism-storyline/` contains the structured PPT extraction and review notes for the connectionism storyline.
 - `event-figure-research.md` records figure and portrait follow-up work.
 - `ppt-source-replacement-suggestions.md` retains the manually reviewed source replacement notes.
 

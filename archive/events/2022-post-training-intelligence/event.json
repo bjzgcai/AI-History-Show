@@ -1,0 +1,64 @@
+{
+  "id": "2022-post-training-intelligence",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "zh": "后训练提升智能",
+    "en": "Post-Training Improves Intelligence"
+  },
+  "summary": {
+    "zh": "基础模型、后训练与智能体",
+    "en": "Foundation Models, Post-Training, and Agents"
+  },
+  "description": {
+    "zh": "随着高质量预训练数据、训练试验成本和模型规模化收益逐渐形成瓶颈，研究重心开始从单纯扩大预训练转向预训练之后的能力塑形。指令微调、人类反馈强化学习以及面向推理过程的强化学习，让基础模型更会遵循任务、对齐偏好并在复杂问题中探索更长的解题路径。",
+    "en": "As high-quality pretraining data, experiment cost, and returns from scaling became more constraining, research attention shifted from simply enlarging pretraining toward shaping models after pretraining. Instruction tuning, reinforcement learning from feedback, and reinforcement learning for reasoning made foundation models better at following tasks, aligning with preferences, and exploring longer solution paths."
+  },
+  "location": {
+    "regionId": "global",
+    "country": {
+      "zh": "全球",
+      "en": "Global"
+    },
+    "place": {
+      "zh": "全球 AI 实验室",
+      "en": "Global AI Labs"
+    },
+    "coordinates": [
+      37.7749,
+      -122.4194
+    ]
+  },
+  "topics": [
+    "deep-learning"
+  ],
+  "achievementTypeIds": [
+    "deep-learning"
+  ],
+  "figures": [
+    {
+      "figureId": "research-institutions",
+      "name": {
+        "zh": "研究机构",
+        "en": "Research Institutions"
+      },
+      "role": {
+        "zh": "后训练方法与前沿模型研发机构",
+        "en": "Post-training methods and frontier model R&D organizations"
+      },
+      "avatar": "resources/images/figures/research-institution.png",
+      "figureType": "team",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "根据连接主义分支 PPT 梳理新增，用于替代独立规模定律候选事件，后续可继续细化指令微调、RLHF 与推理强化学习的边界。",
+      "en": "Added from the connectionism storyline review to replace a standalone scaling-laws candidate; instruction tuning, RLHF, and reasoning reinforcement learning can be further separated later if needed."
+    }
+  }
+}

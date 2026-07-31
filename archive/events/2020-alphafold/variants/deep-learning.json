@@ -3,8 +3,8 @@
   "eventId": "2020-alphafold",
   "presentationMode": "preserve-legacy",
   "displayTitle": {
-    "zh": "AlphaFold2",
-    "en": "AlphaFold2"
+    "zh": "AlphaFold",
+    "en": "AlphaFold"
   },
   "displaySummary": {
     "zh": "大模型与科学智能",
