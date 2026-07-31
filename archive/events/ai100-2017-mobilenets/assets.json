@@ -1,34 +1,70 @@
 [
     {
-        "id": "asset-2017-mobilenets-portrait",
+        "id": "asset-2017-mobilenets-paper-first-page",
         "type": "image",
-        "path": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-        "role": "portrait",
+        "path": "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
+        "role": "paper-page",
         "caption": {
-            "en": "Kaiming He portrait",
-            "zh": "何恺明肖像"
+            "en": "MobileNets paper first page",
+            "zh": "MobileNets 论文首页"
         },
         "subcaption": {
-            "en": "Related efficient-CNN researcher",
-            "zh": "相关高效卷积网络研究者"
+            "en": "First page of the original paper led by Andrew G. Howard",
+            "zh": "安德鲁·霍华德领衔的 MobileNets 原始论文首页"
         },
-        "sourceId": "source-2017-mobilenets-portrait",
+        "sourceId": "source-2017-mobilenets-primary",
         "sourceName": {
-            "en": "MIT CSAIL",
-            "zh": "MIT CSAIL"
+            "en": "arXiv",
+            "zh": "arXiv"
         },
-        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "sourceUrl": "https://arxiv.org/abs/1704.04861",
         "rights": {
             "status": "external-reference",
             "license": {
-                "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-                "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+                "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
+                "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
             },
-            "sourceUrl": "https://people.csail.mit.edu/kaiming/"
+            "sourceUrl": "https://arxiv.org/pdf/1704.04861"
         },
         "displayUsage": {
-            "en": "Related figure for the MobileNets achievement page",
-            "zh": "用于MobileNets成就页面的相关人物展示"
+            "en": "Primary MobileNets event image and overview thumbnail",
+            "zh": "MobileNets 事件首图与首页缩略图"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    },
+    {
+        "id": "asset-2017-mobilenets-applications",
+        "type": "image",
+        "path": "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png",
+        "role": "paper-figure",
+        "caption": {
+            "en": "MobileNets application scenarios",
+            "zh": "MobileNets 应用场景"
+        },
+        "subcaption": {
+            "en": "The original paper illustrates object detection, face attributes, fine-grained classification, and landmark recognition on mobile devices.",
+            "zh": "原论文展示了 MobileNets 在移动设备上的目标检测、人脸属性、细粒度分类与地标识别应用。"
+        },
+        "sourceId": "source-2017-mobilenets-primary",
+        "sourceName": {
+            "en": "arXiv",
+            "zh": "arXiv"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1704.04861",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "en": "Figure preview generated from the arXiv-hosted source package; embedded third-party image credits are retained in the figure.",
+                "zh": "根据 arXiv 托管源码包生成的论文插图预览；图中保留了第三方图片的原始署名。"
+            },
+            "sourceUrl": "https://arxiv.org/e-print/1704.04861"
+        },
+        "displayUsage": {
+            "en": "Second supporting image for the MobileNets achievement page",
+            "zh": "MobileNets 成就页面的第二张资料图片"
         },
         "usage": [
             "variant:bench-council-ai100"

@@ -45,7 +45,7 @@
         "en": "SSD lead author",
         "zh": "SSD 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -60,21 +60,6 @@
         "zh": "SSD 共同作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "kaiming-he",
-      "name": {
-        "en": "Kaiming He",
-        "zh": "何恺明"
-      },
-      "role": {
-        "en": "Related object-detection researcher",
-        "zh": "相关目标检测研究者"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

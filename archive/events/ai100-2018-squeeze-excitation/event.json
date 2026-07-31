@@ -45,7 +45,7 @@
         "en": "Squeeze-and-excitation lead author",
         "zh": "Squeeze-and-excitation 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -60,21 +60,6 @@
         "zh": "Squeeze-and-excitation 共同作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "kaiming-he",
-      "name": {
-        "en": "Kaiming He",
-        "zh": "何恺明"
-      },
-      "role": {
-        "en": "Related residual-network researcher",
-        "zh": "相关残差网络研究者"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

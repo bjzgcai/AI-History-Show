@@ -1,82 +1,62 @@
 [
-    {
-        "id": "source-1990-boosting-primary",
-        "type": "paper",
-        "label": {
-            "en": "Primary paper",
-            "zh": "原始论文"
-        },
-        "title": {
-            "en": "The Strength of Weak Learnability",
-            "zh": "《弱可学习性的能力》"
-        },
-        "url": "https://doi.org/10.1007/BF00116037",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "Primary publication identified by the BenchCouncil AI100 table.",
-            "zh": "BenchCouncil AI100 表格列出的主论文。"
-        },
-        "purpose": "core-evidence"
+  {
+    "id": "source-1990-boosting-primary",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
     },
-    {
-        "id": "source-1990-boosting-secondary",
-        "type": "paper-page",
-        "label": {
-            "en": "Publication page",
-            "zh": "出版页面"
-        },
-        "title": {
-            "en": "Springer publication page",
-            "zh": "Springer 出版页面"
-        },
-        "url": "https://link.springer.com/article/10.1007/BF00116037",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "Publisher, proceedings, repository, or companion publication page.",
-            "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
-        },
-        "purpose": "alternate-access"
+    "title": {
+      "en": "The Strength of Weak Learnability",
+      "zh": "《弱可学习性的能力》"
     },
-    {
-        "id": "source-benchcouncil-ai100-catalog",
-        "type": "official-page",
-        "label": {
-            "en": "Official page",
-            "zh": "官方页面"
-        },
-        "title": {
-            "en": "BenchCouncil AI100: Top AI Achievements",
-            "zh": "BenchCouncil AI100：人工智能杰出成果"
-        },
-        "url": "https://www.benchcouncil.org/evaluation/ai/",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "Official membership source for the canonical AI100 storyline.",
-            "zh": "canonical AI100 分支的官方成员依据。"
-        },
-        "purpose": "historical-context"
+    "url": "https://doi.org/10.1007/BF00116037",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication identified by the BenchCouncil AI100 table.",
+      "zh": "BenchCouncil AI100 表格列出的主论文。"
     },
-    {
-        "id": "source-1990-boosting-portrait",
-        "type": "image-source",
-        "label": {
-            "en": "Image source",
-            "zh": "图片来源"
-        },
-        "title": {
-            "en": "Leo Breiman related portrait source",
-            "zh": "利奥·布雷曼相关肖像来源"
-        },
-        "url": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-            "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
-        },
-        "purpose": "image-provenance"
-    }
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-1990-boosting-secondary",
+    "type": "paper-page",
+    "label": {
+      "en": "Publication page",
+      "zh": "出版页面"
+    },
+    "title": {
+      "en": "Springer publication page",
+      "zh": "Springer 出版页面"
+    },
+    "url": "https://link.springer.com/article/10.1007/BF00116037",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Publisher, proceedings, repository, or companion publication page.",
+      "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+    },
+    "purpose": "alternate-access"
+  },
+  {
+    "id": "source-benchcouncil-ai100-catalog",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "BenchCouncil AI100: Top AI Achievements",
+      "zh": "BenchCouncil AI100：人工智能杰出成果"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official membership source for the canonical AI100 storyline.",
+      "zh": "canonical AI100 分支的官方成员依据。"
+    },
+    "purpose": "historical-context"
+  }
 ]

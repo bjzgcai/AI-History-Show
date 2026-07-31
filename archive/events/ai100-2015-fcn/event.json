@@ -77,21 +77,6 @@
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
-    },
-    {
-      "figureId": "kaiming-he",
-      "name": {
-        "en": "Kaiming He",
-        "zh": "何恺明"
-      },
-      "role": {
-        "en": "Related dense-prediction researcher",
-        "zh": "相关稠密预测研究者"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
     }
   ],
   "organizations": [],

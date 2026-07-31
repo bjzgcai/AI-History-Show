@@ -46,22 +46,7 @@
         "zh": "Faster R-CNN 共同作者",
         "en": "Co-author of Faster R-CNN"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "kaiming-he",
-      "name": {
-        "en": "Kaiming He",
-        "zh": "何恺明"
-      },
-      "role": {
-        "en": "Related object-detection researcher",
-        "zh": "相关目标检测研究者"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+      "avatar": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

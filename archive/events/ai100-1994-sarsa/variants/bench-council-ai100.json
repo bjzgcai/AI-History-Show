@@ -57,8 +57,8 @@
   "sourceIds": [
     "source-1994-sarsa-primary",
     "source-1994-sarsa-secondary",
-    "source-benchcouncil-ai100-catalog",
-    "source-1994-sarsa-portrait"
+    "source-1994-sarsa-portrait",
+    "source-benchcouncil-ai100-catalog"
   ],
   "claimIds": [
     "claim-1994-sarsa-membership",
@@ -343,5 +343,6 @@
       52.2053,
       0.1218
     ]
-  }
+  },
+  "overviewImageAssetId": "asset-1994-sarsa-portrait"
 }

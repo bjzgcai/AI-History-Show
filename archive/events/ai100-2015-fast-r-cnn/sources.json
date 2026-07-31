@@ -1,82 +1,85 @@
 [
-    {
-        "id": "source-2015-fast-r-cnn-primary",
-        "type": "paper",
-        "label": {
-            "en": "Primary paper",
-            "zh": "原始论文"
-        },
-        "title": {
-            "en": "Fast R-CNN",
-            "zh": "《Fast R-CNN》"
-        },
-        "url": "https://arxiv.org/abs/1504.08083",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "Primary publication identified by the BenchCouncil AI100 table.",
-            "zh": "BenchCouncil AI100 表格列出的主论文。"
-        },
-        "purpose": "core-evidence"
+  {
+    "id": "source-2015-fast-r-cnn-primary",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
     },
-    {
-        "id": "source-2015-fast-r-cnn-secondary",
-        "type": "paper-page",
-        "label": {
-            "en": "Publication page",
-            "zh": "出版页面"
-        },
-        "title": {
-            "en": "ICCV 2015 open-access paper",
-            "zh": "ICCV 2015 开放论文页面"
-        },
-        "url": "https://openaccess.thecvf.com/content_iccv_2015/html/Girshick_Fast_R-CNN_ICCV_2015_paper.html",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "Publisher, proceedings, repository, or companion publication page.",
-            "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
-        },
-        "purpose": "alternate-access"
+    "title": {
+      "en": "Fast R-CNN",
+      "zh": "《Fast R-CNN》"
     },
-    {
-        "id": "source-benchcouncil-ai100-catalog",
-        "type": "official-page",
-        "label": {
-            "en": "Official page",
-            "zh": "官方页面"
-        },
-        "title": {
-            "en": "BenchCouncil AI100: Top AI Achievements",
-            "zh": "BenchCouncil AI100：人工智能杰出成果"
-        },
-        "url": "https://www.benchcouncil.org/evaluation/ai/",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "Official membership source for the canonical AI100 storyline.",
-            "zh": "canonical AI100 分支的官方成员依据。"
-        },
-        "purpose": "historical-context"
+    "url": "https://arxiv.org/abs/1504.08083",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication identified by the BenchCouncil AI100 table.",
+      "zh": "BenchCouncil AI100 表格列出的主论文。"
     },
-    {
-        "id": "source-2015-fast-r-cnn-portrait",
-        "type": "image-source",
-        "label": {
-            "en": "Image source",
-            "zh": "图片来源"
-        },
-        "title": {
-            "en": "Kaiming He related portrait source",
-            "zh": "何恺明相关肖像来源"
-        },
-        "url": "https://people.csail.mit.edu/kaiming/",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-            "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
-        },
-        "purpose": "image-provenance"
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-2015-fast-r-cnn-secondary",
+    "type": "paper-page",
+    "label": {
+      "en": "Publication page",
+      "zh": "出版页面"
+    },
+    "title": {
+      "en": "ICCV 2015 open-access paper",
+      "zh": "ICCV 2015 开放论文页面"
+    },
+    "url": "https://openaccess.thecvf.com/content_iccv_2015/html/Girshick_Fast_R-CNN_ICCV_2015_paper.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Publisher, proceedings, repository, or companion publication page.",
+      "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+    },
+    "purpose": "alternate-access"
+  },
+  {
+    "id": "source-benchcouncil-ai100-catalog",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "BenchCouncil AI100: Top AI Achievements",
+      "zh": "BenchCouncil AI100：人工智能杰出成果"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official membership source for the canonical AI100 storyline.",
+      "zh": "canonical AI100 分支的官方成员依据。"
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-2015-fast-r-cnn-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "en": "Ross Girshick portrait candidate",
+      "zh": "罗斯·格希克肖像候选"
+    },
+    "url": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "en": "Recovered from /private/tmp from prior manual portrait research. Original source URL and redistribution rights still need confirmation.",
+      "zh": "从 /private/tmp 中找回的先前人工肖像候选。原始网页来源与再分发授权仍需确认。"
+    },
+    "purpose": "image-provenance",
+    "review": {
+      "status": "needs-source"
     }
+  }
 ]

@@ -1,5 +1,40 @@
 [
   {
+    "id": "asset-1990-otter-manual-first-page",
+    "type": "svg",
+    "path": "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg",
+    "role": "paper-page",
+    "caption": {
+      "zh": "OTTER 3.3 参考手册首页",
+      "en": "OTTER 3.3 Reference Manual first page"
+    },
+    "subcaption": {
+      "zh": "威廉·麦丘恩 2003 年阿贡技术备忘录首页预览。",
+      "en": "First-page preview of William McCune's 2003 Argonne technical memorandum."
+    },
+    "sourceId": "source-otter-3-3-reference-manual",
+    "sourceName": {
+      "zh": "arXiv / 阿贡国家实验室技术备忘录",
+      "en": "arXiv / Argonne National Laboratory technical memorandum"
+    },
+    "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "根据用户提供的手册首页截图重建为本地 SVG，仅用于资料引用展示；对外再分发前应复核授权。",
+        "en": "Local SVG recreation from the user-provided manual first-page screenshot for reference display; redistribution rights should be reviewed before publication."
+      }
+    },
+    "displayUsage": {
+      "zh": "Otter 事件首图与首页缩略图",
+      "en": "Primary Otter event image and overview thumbnail"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1990-otter-input-clauses",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",

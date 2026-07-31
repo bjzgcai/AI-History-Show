@@ -46,7 +46,7 @@
         "zh": "Faster R-CNN 共同作者",
         "en": "Co-author of Faster R-CNN"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -62,21 +62,6 @@
         "en": "Co-author of the 2000 normalized-cuts paper"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "tsung-yi-lin",
-      "name": {
-        "en": "Tsung-Yi Lin",
-        "zh": "林宗毅"
-      },
-      "role": {
-        "en": "Related object-detection researcher",
-        "zh": "相关目标检测研究者"
-      },
-      "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
