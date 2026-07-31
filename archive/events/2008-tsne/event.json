@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "荷兰与加拿大",
-      "en": "Netherlands and Canada"
+      "en": "Netherlands, Canada",
+      "zh": "荷兰、加拿大"
     },
     "place": {
-      "zh": "蒂尔堡大学 / 多伦多大学",
-      "en": "Tilburg University / University of Toronto"
+      "en": "Tilburg University, University of Toronto",
+      "zh": "蒂尔堡大学、多伦多大学"
     },
     "coordinates": [
       51.5633,
@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "laurens-van-der-maaten",
+      "name": {
+        "en": "Laurens van der Maaten",
+        "zh": "劳伦斯·范德马滕"
+      },
       "role": {
-        "zh": "t-SNE 共同作者",
-        "en": "Co-author of t-SNE"
+        "en": "Co-author of t-SNE",
+        "zh": "t-SNE 共同作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2008-tsne_laurens-van-der-maaten.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Pioneer of deep learning",
+        "zh": "深度学习之父"
+      },
+      "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+      "avatarStyle": "transform: scale(1.24); transform-origin: 50% 42%;",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

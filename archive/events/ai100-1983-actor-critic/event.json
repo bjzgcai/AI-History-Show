@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "Amherst, United States",
-      "en": "Amherst, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "University of Massachusetts Amherst",
-      "en": "University of Massachusetts Amherst"
+      "en": "University of Massachusetts, Amherst",
+      "zh": "马萨诸塞大学阿默斯特分校"
     },
     "coordinates": [
       42.3868,
@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "andrew-barto",
+      "name": {
+        "en": "Andrew Barto",
+        "zh": "安德鲁·巴托"
+      },
       "role": {
-        "zh": "Actor-Critic 共同作者",
-        "en": "Actor-Critic co-author"
+        "en": "Actor-Critic co-author",
+        "zh": "Actor-Critic 共同作者"
       },
       "avatar": "resources/images/external/ai100-1983-actor-critic/andrew-barto-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Charles Anderson",
+        "zh": "查尔斯·安德森"
+      },
+      "role": {
+        "en": "Actor-Critic co-author",
+        "zh": "Actor-Critic 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

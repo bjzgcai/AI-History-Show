@@ -17,12 +17,12 @@
   "location": {
     "regionId": "moscow-russia",
     "country": {
-      "zh": "俄罗斯，莫斯科",
-      "en": "Moscow, Russia"
+      "en": "Russia",
+      "zh": "俄罗斯"
     },
     "place": {
-      "zh": "莫斯科控制科学研究所",
-      "en": "Institute of Control Sciences, Moscow"
+      "en": "Institute of Control Sciences Moscow",
+      "zh": "莫斯科控制科学研究所"
     },
     "coordinates": [
       55.7558,
@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "vladimir-n-vapnik",
+      "name": {
+        "en": "Vladimir Vapnik",
+        "zh": "弗拉基米尔·N·瓦普尼克"
+      },
       "role": {
-        "zh": "VC 理论共同创建者",
-        "en": "Co-developed VC theory"
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "alexey-ya-chervonenkis",
-      "role": {
-        "zh": "VC 理论共同创建者",
-        "en": "Co-developed VC theory"
+      "name": {
+        "en": "Alexey Chervonenkis",
+        "zh": "阿列克谢·雅·切尔沃年基斯"
       },
+      "role": {
+        "en": "Co-developed VC theory",
+        "zh": "VC 理论共同创建者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

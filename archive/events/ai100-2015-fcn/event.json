@@ -1,0 +1,92 @@
+{
+  "id": "ai100-2015-fcn",
+  "year": 2015,
+  "date": "2015",
+  "title": {
+    "en": "Fully Convolutional Networks",
+    "zh": "全卷积网络"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Classification CNNs produced one label for an image, while semantic segmentation required a label at every pixel. Fully Convolutional Networks showed how classification networks could be converted into end-to-end dense predictors.</p><p>Fully connected layers are replaced by convolutions so arbitrary-size images produce spatial score maps. Learned upsampling and skip connections combine coarse semantic information with finer spatial detail. Experts generally regard FCN as the template that established modern end-to-end semantic segmentation. Its conversion, upsampling, and skip-fusion ideas became foundations for U-Net, DeepLab, and many dense prediction systems.</p>",
+    "zh": "<p>分类 CNN 为整张图像输出一个标签，而语义分割要求每个像素都有标签。全卷积网络展示了如何把分类网络转换为端到端的稠密预测器。</p><p>全连接层被卷积层替代，使任意尺寸图像都能产生空间得分图。可学习上采样与跳跃连接把粗粒度语义信息和更细的空间细节结合起来。专家通常把 FCN 视为确立现代端到端语义分割范式的模板。其网络转换、上采样和跳跃融合思想成为 U-Net、DeepLab 及众多稠密预测系统的基础。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "UC Berkeley",
+      "zh": "加州大学伯克利分校"
+    },
+    "coordinates": [
+      37.8719,
+      -122.2585
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "Jonathan Long",
+        "zh": "乔纳森·朗"
+      },
+      "role": {
+        "en": "FCN lead author",
+        "zh": "FCN 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Evan Shelhamer",
+        "zh": "埃文·谢尔哈默"
+      },
+      "role": {
+        "en": "FCN co-author",
+        "zh": "FCN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Trevor Darrell",
+        "zh": "特雷弗·达雷尔"
+      },
+      "role": {
+        "en": "FCN co-author",
+        "zh": "FCN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

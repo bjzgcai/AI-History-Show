@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-2014-seq2seq-membership",
+    "importance": "core",
+    "text": {
+      "en": "Sequence-to-Sequence Learning is listed in the BenchCouncil long-term AI100 table.",
+      "zh": "序列到序列学习列入 BenchCouncil 长期 AI100 主表。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-2014-seq2seq-description",
+    "importance": "core",
+    "text": {
+      "en": "<p>Earlier neural language systems often depended on task-specific pipelines and fixed windows. Encoder-decoder models offered a general way to map an input sequence of one length to an output sequence of another length.</p><p>An encoder reads the source sequence into a learned representation, and a decoder generates the target sequence token by token. Training maximizes the conditional probability of the output sequence given the input. Experts generally treat sequence-to-sequence learning as the architecture that made end-to-end neural translation practical before attention and Transformers. It also generalized to summarization, dialogue, parsing, and other structured generation tasks.</p>",
+      "zh": "<p>早期神经语言系统往往依赖任务专用流程和固定窗口。编码器—解码器模型提供了一种通用方法，可以把一个长度的输入序列映射为另一长度的输出序列。</p><p>编码器读取源序列并形成学习到的表示，解码器再逐词生成目标序列。训练目标是在给定输入的条件下最大化输出序列的条件概率。专家通常把序列到序列学习视为在注意力和 Transformer 之前推动端到端神经机器翻译走向实用的关键架构。它也扩展到摘要、对话、解析等结构化生成任务。</p>"
+    },
+    "sourceIds": [
+      "source-2014-seq2seq-primary",
+      "source-2014-seq2seq-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  }
+]

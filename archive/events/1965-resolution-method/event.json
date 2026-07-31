@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国",
-      "en": "United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "阿贡国家实验室 / 雪城大学",
-      "en": "Argonne National Laboratory / Syracuse University"
+      "en": "Argonne National Laboratory",
+      "zh": "阿贡国家实验室"
     },
     "coordinates": [
       41.7181,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "john-alan-robinson",
+      "name": {
+        "en": "John Robinson",
+        "zh": "约翰·艾伦·罗宾逊"
+      },
       "role": {
-        "zh": "归结原理提出者",
-        "en": "Inventor of the resolution principle"
+        "en": "Inventor of the resolution principle",
+        "zh": "归结原理提出者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1965-resolution-method_john-alan-robinson.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

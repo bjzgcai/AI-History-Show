@@ -55,10 +55,10 @@
     "asset-1980-neocognitron-hierarchy"
   ],
   "sourceIds": [
-    "source-neocognitron",
     "source-open-neocognitron-pdf",
     "source-scholarpedia-neocognitron-article",
-    "source-semantic-scholar-paper-record"
+    "source-semantic-scholar-paper-record",
+    "source-neocognitron"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -297,11 +298,11 @@
   "location": {
     "name": {
       "en": "NHK Broadcasting Science Research Laboratories",
-      "zh": "NHK 广播科学研究实验室"
+      "zh": "日本放送协会广播科学研究实验室"
     },
     "country": {
-      "en": "Tokyo, Japan",
-      "zh": "日本东京"
+      "en": "Japan",
+      "zh": "日本"
     },
     "coordinates": [
       35.6762,

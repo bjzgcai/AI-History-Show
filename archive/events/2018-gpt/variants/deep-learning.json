@@ -7,12 +7,12 @@
     "en": "GPT"
   },
   "displaySummary": {
-    "zh": "大模型与科学智能",
-    "en": "Large Models and Scientific Intelligence"
+    "zh": "从生成式预训练到 ChatGPT",
+    "en": "From Generative Pretraining to ChatGPT"
   },
   "displayDescription": {
-    "zh": "<p>2018 年，OpenAI 的亚历克·拉德福德等人提出生成式预训练 Transformer。模型先在大规模无标注文本上按照从左到右预测下一个词的目标训练，再用少量任务标注数据微调，从而把通用语言知识迁移到分类、问答、文本蕴含等不同任务。</p><p>论文使用以 Transformer 解码器为基础的统一架构，在 12 项任务中的多数项目上取得当时有竞争力的结果。GPT 证明生成式语言建模可以充当通用预训练目标，并开启了持续扩大模型、数据和计算规模的解码器路线，后来发展出 GPT-2、GPT-3 及现代大语言模型。</p>",
-    "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the Generative Pre-trained Transformer. The model first learned from large amounts of unlabeled text by predicting the next word from left to right, then transferred that general language knowledge to classification, question answering, textual entailment, and other tasks through supervised fine-tuning.</p><p>The paper used one Transformer-decoder-based architecture and reported competitive results on most of twelve evaluated tasks. GPT showed that generative language modeling could serve as a general pre-training objective. It opened the decoder-only scaling path in which models, data, and compute continued to grow, leading to GPT-2, GPT-3, and modern large language models.</p>"
+    "zh": "<p>2018 年，OpenAI 的亚历克·拉德福德等人提出生成式预训练 Transformer。模型先在大规模无标注文本上按照从左到右预测下一个词的目标训练，再用少量任务标注数据微调，从而把通用语言知识迁移到分类、问答、文本蕴含等不同任务。</p><p>论文使用以 Transformer 解码器为基础的统一架构，在 12 项任务中的多数项目上取得当时有竞争力的结果。GPT 证明生成式语言建模可以充当通用预训练目标，并开启了持续扩大模型、数据和计算规模的解码器路线。GPT-2、GPT-3 延续了这条规模化路径，2022 年推出的 ChatGPT 又结合指令微调和基于人类反馈的后训练，把同一技术谱系转化为面向公众的对话系统。</p>",
+    "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the Generative Pre-trained Transformer. The model first learned from large amounts of unlabeled text by predicting the next word from left to right, then transferred that general language knowledge to classification, question answering, textual entailment, and other tasks through supervised fine-tuning.</p><p>The paper used one Transformer-decoder-based architecture and reported competitive results on most of twelve evaluated tasks. GPT showed that generative language modeling could serve as a general pre-training objective and opened the decoder-only scaling path for larger models, datasets, and compute. GPT-2 and GPT-3 continued that path; ChatGPT, released in 2022, combined the same model lineage with instruction tuning and human-feedback-based post-training to turn it into a public conversational system.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -102,8 +102,8 @@
         "en": "Long-Term Legacy"
       },
       "html": {
-        "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响在于生成式预训练配方把下一个令牌预测变成语言任务的通用接口。",
-        "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models. Its long-term legacy is the generative pre-training recipe that turned next-token prediction into a broad interface for language tasks."
+        "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响不仅在于把下一个令牌预测变成语言任务的通用接口，也在于这条路线经 GPT-2、GPT-3 和后训练方法延伸到 ChatGPT，使基础模型成为公众可以直接交互的系统。",
+        "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today's large language models. Its long-term legacy is not only turning next-token prediction into a broad interface for language tasks, but also extending through GPT-2, GPT-3, and post-training methods into ChatGPT, where foundation models became directly interactive public systems."
       },
       "sourceIds": [
         "source-improving-language-understanding-by-generative-pre-training"

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "source-1993-c45-primary",
+    "type": "book",
+    "label": {
+      "en": "Book",
+      "zh": "图书"
+    },
+    "title": {
+      "en": "C4.5: Programs for Machine Learning",
+      "zh": "《C4.5：机器学习程序》"
+    },
+    "url": "https://www.sciencedirect.com/book/9781558602380/c45",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication identified by the BenchCouncil AI100 table.",
+      "zh": "BenchCouncil AI100 表格列出的主论文。"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-1993-c45-secondary",
+    "type": "book-index",
+    "label": {
+      "en": "Bibliographic record",
+      "zh": "书目记录"
+    },
+    "title": {
+      "en": "WorldCat bibliographic record",
+      "zh": "WorldCat 书目记录"
+    },
+    "url": "https://search.worldcat.org/title/27172053",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Publisher, proceedings, repository, or companion publication page.",
+      "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+    },
+    "purpose": "alternate-access"
+  },
+  {
+    "id": "source-benchcouncil-ai100-catalog",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "BenchCouncil AI100: Top AI Achievements",
+      "zh": "BenchCouncil AI100：人工智能杰出成果"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official membership source for the canonical AI100 storyline.",
+      "zh": "canonical AI100 分支的官方成员依据。"
+    },
+    "purpose": "historical-context"
+  },
+  {
+    "id": "source-1993-c45-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "en": "Ross Quinlan portrait candidate",
+      "zh": "罗斯·昆兰肖像候选"
+    },
+    "url": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "en": "Recovered from /private/tmp from prior manual portrait research. Original source URL and redistribution rights still need confirmation.",
+      "zh": "从 /private/tmp 中找回的先前人工肖像候选。原始网页来源与再分发授权仍需确认。"
+    },
+    "purpose": "image-provenance",
+    "review": {
+      "status": "needs-source"
+    }
+  }
+]

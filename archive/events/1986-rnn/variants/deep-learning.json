@@ -20,8 +20,8 @@
   ],
   "visualModules": [],
   "assetIds": [
-    "asset-1986-rnn-architecture-01",
-    "asset-1986-rnn-people-01"
+    "asset-1986-rnn-people-01",
+    "asset-1986-rnn-architecture-01"
   ],
   "sourceIds": [
     "source-jordan-serial-order-report",
@@ -77,6 +77,19 @@
   "figures": [
     {
       "name": {
+        "en": "Michael I. Jordan",
+        "zh": "迈克尔·乔丹"
+      },
+      "role": {
+        "en": "The creator of Jordan Network",
+        "zh": "乔丹网络提出者"
+      },
+      "avatar": "resources/images/figures/michael-i-jordan.jpg",
+      "avatarStyle": "",
+      "figureType": "person"
+    },
+    {
+      "name": {
         "en": "Jeffrey Elman",
         "zh": "杰弗里·埃尔曼"
       },
@@ -85,19 +98,6 @@
         "zh": "简单循环神经网络提出者"
       },
       "avatar": "resources/images/figures/jeffrey-elman.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Michael Jordan",
-        "zh": "迈克尔·乔丹"
-      },
-      "role": {
-        "en": "The creator of Jordan Network",
-        "zh": "乔丹网络提出者"
-      },
-      "avatar": "resources/images/figures/michael-i-jordan.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }

@@ -3,8 +3,8 @@
   "eventId": "2000-spectral-clustering",
   "presentationMode": "preserve-legacy",
   "displayTitle": {
-    "zh": "谱聚类",
-    "en": "Spectral Clustering"
+    "zh": "归一化切分与谱聚类",
+    "en": "Normalized Cuts and Spectral Clustering"
   },
   "displaySummary": {
     "zh": "AI 百大成就",
@@ -52,7 +52,8 @@
     "source-normalized-cuts-and-image-segmentation",
     "source-on-spectral-clustering-analysis-and-an-algorithm",
     "source-scikit-learn-spectral-clustering-documentation",
-    "source-spectral-graph-illustration"
+    "source-spectral-graph-illustration",
+    "source-andrew-ng-wikimedia-portrait"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -71,7 +72,8 @@
         "en": "Image segmentation and data clustering needed methods that could separate non-convex groups without assuming spherical geometry. This context helps viewers place Spectral Clustering in the technical problems and research priorities of its time."
       },
       "sourceIds": [
-        "source-normalized-cuts-and-image-segmentation"
+        "source-normalized-cuts-and-image-segmentation",
+        "source-on-spectral-clustering-analysis-and-an-algorithm"
       ]
     },
     {
@@ -85,7 +87,8 @@
         "en": "The method builds an affinity graph, computes spectral embeddings from graph Laplacian eigenvectors, and clusters or cuts in that embedded space. The key mechanism is Graph Laplacian eigenvector embedding, which links the source material to the visible demo behavior."
       },
       "sourceIds": [
-        "source-normalized-cuts-and-image-segmentation"
+        "source-normalized-cuts-and-image-segmentation",
+        "source-on-spectral-clustering-analysis-and-an-algorithm"
       ]
     },
     {
@@ -99,7 +102,9 @@
         "en": "Experts generally treat spectral clustering as a major graph-based approach to grouping non-convex data. Its long-term legacy is the use of graph Laplacian eigenvectors to connect image segmentation, manifold learning, graph clustering, and modern graph data analysis."
       },
       "sourceIds": [
-        "source-normalized-cuts-and-image-segmentation"
+        "source-normalized-cuts-and-image-segmentation",
+        "source-on-spectral-clustering-analysis-and-an-algorithm",
+        "source-scikit-learn-spectral-clustering-documentation"
       ]
     }
   ],
@@ -121,25 +126,55 @@
         "zh": "史建波"
       },
       "role": {
-        "en": "Co-author of normalized cuts",
-        "zh": "Normalized Cuts 共同作者"
+        "en": "Co-author of the 2000 normalized-cuts paper",
+        "zh": "2000 年归一化切分论文共同作者"
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "Jitendra Malik, Andrew Ng, Yair Weiss",
-        "zh": "吉滕德拉·马利克、吴恩达、亚伊尔·魏斯"
+        "en": "Jitendra Malik",
+        "zh": "吉滕德拉·马利克"
       },
       "role": {
-        "en": "Key contributors to spectral clustering formulations",
-        "zh": "谱聚类形式化的重要贡献者"
+        "en": "Co-author of the 2000 normalized-cuts paper",
+        "zh": "2000 年归一化切分论文共同作者"
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Andrew Ng",
+        "zh": "吴恩达"
+      },
+      "role": {
+        "en": "Co-author of the 2001 spectral-clustering analysis",
+        "zh": "2001 年谱聚类分析论文共同作者"
+      },
+      "avatar": "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yair Weiss",
+        "zh": "亚伊尔·魏斯"
+      },
+      "role": {
+        "en": "Co-author of the 2001 spectral-clustering analysis",
+        "zh": "2001 年谱聚类分析论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -162,8 +197,8 @@
     "sourceUrl": "https://doi.org/10.1109/34.868688"
   },
   "quotePage": {
-    "en": "BenchCouncil AI100: Cluster, Classification, Regression / Spectral Clustering",
-    "zh": "BenchCouncil AI100：聚类、分类与回归 / 谱聚类"
+    "en": "BenchCouncil AI100: Normalized Cuts and Spectral Clustering",
+    "zh": "BenchCouncil AI100：归一化切分与谱聚类"
   },
   "quoteAttribution": {
     "en": "<em>Normalized Cuts and Image Segmentation</em>, Jianbo Shi and Jitendra Malik",
@@ -284,12 +319,12 @@
   },
   "location": {
     "name": {
-      "en": "University of California, Berkeley",
-      "zh": "加州大学伯克利分校"
+      "en": "University of Pennsylvania, U.C. Berkeley, Hebrew University",
+      "zh": "宾夕法尼亚大学、加州大学伯克利分校、耶路撒冷希伯来大学"
     },
     "country": {
-      "en": "California, United States",
-      "zh": "美国加利福尼亚州"
+      "en": "United States, Israel",
+      "zh": "美国、以色列"
     },
     "coordinates": [
       37.8719,

@@ -56,9 +56,9 @@
     "asset-1970-shrdlu-parser-plan"
   ],
   "sourceIds": [
-    "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-",
     "source-terry-winograd-stanford-computer-science",
-    "source-terry-winograd-oral-history-cbi"
+    "source-terry-winograd-oral-history-cbi",
+    "source-procedures-as-a-representation-for-data-in-a-computer-program-for-understanding-"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1970-shrdlu_terry-winograd.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -283,12 +284,12 @@
   },
   "location": {
     "name": {
-      "en": "MIT Artificial Intelligence Laboratory",
-      "zh": "麻省理工学院 人工智能实验室"
+      "en": "MIT",
+      "zh": "麻省理工学院"
     },
     "country": {
-      "en": "Massachusetts, United States",
-      "zh": "美国马萨诸塞州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.3601,

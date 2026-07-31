@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "Berkeley, United States",
-      "en": "Berkeley, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "UC Berkeley",
-      "en": "UC Berkeley"
+      "en": "UC Berkeley",
+      "zh": "加州大学伯克利分校"
     },
     "coordinates": [
       37.8715,
@@ -37,12 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "jun-yan-zhu",
+      "name": {
+        "en": "Jun-Yan Zhu",
+        "zh": "朱俊彦"
+      },
       "role": {
-        "zh": "CycleGAN 主要作者",
-        "en": "CycleGAN lead author"
+        "en": "CycleGAN lead author",
+        "zh": "CycleGAN 主要作者"
       },
       "avatar": "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Taesung Park",
+        "zh": "朴泰成"
+      },
+      "role": {
+        "en": "CycleGAN co-author",
+        "zh": "CycleGAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Alexei Efros",
+        "zh": "阿列克谢·埃夫罗斯"
+      },
+      "role": {
+        "en": "CycleGAN co-author",
+        "zh": "CycleGAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

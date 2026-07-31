@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国加利福尼亚州",
-      "en": "California, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "斯坦福大学",
-      "en": "Stanford University"
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
     },
     "coordinates": [
       37.4275,
@@ -37,12 +37,59 @@
   ],
   "figures": [
     {
-      "figureId": "edward-feigenbaum",
+      "name": {
+        "en": "Edward Feigenbaum",
+        "zh": "爱德华·费根鲍姆"
+      },
       "role": {
-        "zh": "专家系统 AI 代表人物",
-        "en": "Leader in expert-system AI"
+        "en": "Leader in expert-system AI",
+        "zh": "专家系统 AI 代表人物"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Bruce Buchanan",
+        "zh": "布鲁斯·布坎南"
+      },
+      "role": {
+        "en": "Dendral co-author",
+        "zh": "Dendral 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Joshua Lederberg",
+        "zh": "约书亚·莱德伯格"
+      },
+      "role": {
+        "en": "Dendral co-author",
+        "zh": "Dendral 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Carl Djerassi",
+        "zh": "卡尔·杰拉西"
+      },
+      "role": {
+        "en": "Dendral co-author",
+        "zh": "Dendral 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

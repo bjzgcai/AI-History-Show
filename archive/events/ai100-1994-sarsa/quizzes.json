@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1994-sarsa-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "Why is SARSA called on-policy?",
+      "zh": "为什么 SARSA 被称为同策略算法？"
+    },
+    "options": [
+      {
+        "en": "Its update uses the next action chosen by the behavior policy",
+        "zh": "更新使用行为策略实际选择的下一动作"
+      },
+      {
+        "en": "It ignores the behavior policy",
+        "zh": "它忽略行为策略"
+      },
+      {
+        "en": "It always chooses a random target",
+        "zh": "它总是随机选择目标"
+      },
+      {
+        "en": "It learns without actions",
+        "zh": "它不依赖动作学习"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "SARSA is on-policy: the next action used in the update is sampled from the same policy that generates behavior. This makes its value estimates reflect exploratory choices and can produce safer behavior than an off-policy greedy target.",
+      "zh": "SARSA 是同策略算法：更新中使用的下一动作来自生成行为的同一个策略。因此，其价值估计会反映探索选择，在某些任务中可比离策略的贪心目标产生更安全的行为。"
+    },
+    "sourceIds": [
+      "source-1994-sarsa-primary"
+    ],
+    "assetIds": [
+      "asset-1994-sarsa-explainer"
+    ]
+  }
+]

@@ -1,27 +1,71 @@
 [
   {
-    "id": "asset-geoffrey-hinton",
+    "id": "asset-2014-attention-bahdanau-portrait",
     "type": "image",
-    "path": "resources/images/figures/geoffrey-hinton.jpg",
+    "path": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
     "role": "portrait",
     "caption": {
-      "zh": "蒙特利尔深度学习研究背景图",
-      "en": "Montreal deep learning research context"
+      "zh": "兹米特里·巴赫达瑙肖像",
+      "en": "Dzmitry Bahdanau portrait"
     },
     "subcaption": {
-      "zh": "神经注意力研究的机构背景",
-      "en": "Institutional context for neural attention research"
+      "zh": "神经注意力论文主要作者",
+      "en": "Lead author of the neural attention paper"
     },
-    "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+    "sourceId": "source-dzmitry-bahdanau-mila-portrait",
+    "sourceName": {
+      "zh": "Mila 官方人物目录",
+      "en": "Mila official directory"
+    },
     "rights": {
-      "status": "documented-in-legacy",
+      "status": "external-reference",
       "license": {
-        "zh": "参考图片",
-        "en": "Reference image"
+        "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
+        "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
       }
     },
+    "displayUsage": {
+      "zh": "用于带注意力机制的神经机器翻译事件首图与兹米特里·巴赫达瑙人物头像。",
+      "en": "Used as the lead image and Dzmitry Bahdanau avatar for the Neural Machine Translation with Attention event."
+    },
     "usage": [
-      "variant:bench-council-ai100"
+      "variant:bench-council-ai100",
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2014-attention-cho-portrait",
+    "type": "image",
+    "path": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
+    "role": "portrait",
+    "caption": {
+      "zh": "赵京贤肖像",
+      "en": "Kyunghyun Cho portrait"
+    },
+    "subcaption": {
+      "zh": "神经注意力论文共同作者",
+      "en": "Co-author of the neural attention paper"
+    },
+    "sourceId": "source-kyunghyun-cho-nyu-courant-portrait",
+    "sourceName": {
+      "zh": "纽约大学库朗研究所官方档案",
+      "en": "NYU Courant official profile"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "纽约大学库朗研究所官方档案图片；文件元数据标注 NYU Photo Bureau © Gallo，对外再分发前应复核授权范围。",
+        "en": "Official NYU Courant profile image; file metadata credits NYU Photo Bureau © Gallo, so confirm rights before redistribution."
+      }
+    },
+    "displayUsage": {
+      "zh": "用于带注意力机制的神经机器翻译事件中的赵京贤人物头像与肖像展示。",
+      "en": "Used for Kyunghyun Cho's avatar and portrait in the Neural Machine Translation with Attention event."
+    },
+    "usage": [
+      "variant:bench-council-ai100",
+      "variant:deep-learning"
     ],
     "editable": true
   },

@@ -1,0 +1,78 @@
+{
+  "id": "ai100-2017-mobilenets",
+  "year": 2017,
+  "date": "2017",
+  "title": {
+    "en": "MobileNets",
+    "zh": "MobileNets"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Image classifiers were becoming more accurate, but their computation and memory costs made deployment on phones and embedded devices difficult. MobileNets reframed architecture design around latency and resource constraints rather than benchmark accuracy alone.</p><p>Depthwise separable convolution splits spatial filtering from channel mixing, sharply reducing multiply-add operations. MobileNetV2 added inverted residual blocks and linear bottlenecks so narrow mobile representations could retain useful information. Experts generally treat MobileNets as a foundational efficient-model family that made on-device vision a first-class research objective. Its design principles influenced later efficient CNNs, neural architecture search, and mobile inference systems.</p>",
+    "zh": "<p>图像分类器越来越准确，但计算量和内存开销使它们难以部署到手机和嵌入式设备。MobileNets 把架构设计目标从单纯追求基准精度转向同时考虑延迟与资源约束。</p><p>深度可分离卷积把空间滤波与通道混合拆开，从而显著减少乘加运算。MobileNetV2 又加入倒残差块和线性瓶颈，让狭窄的移动端表示保留更多有效信息。专家通常把 MobileNets 视为高效模型家族的奠基成果，使端侧视觉成为独立而重要的研究目标。其设计原则影响了后续高效 CNN、神经架构搜索与移动推理系统。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "coordinates": [
+      37.422,
+      -122.0841
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "Andrew Howard",
+        "zh": "安德鲁·霍华德"
+      },
+      "role": {
+        "en": "Mobilenets lead author",
+        "zh": "Mobilenets 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Mark Sandler",
+        "zh": "马克·桑德勒"
+      },
+      "role": {
+        "en": "Mobilenets co-author",
+        "zh": "Mobilenets 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

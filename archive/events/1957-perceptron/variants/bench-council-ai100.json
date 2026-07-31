@@ -57,9 +57,9 @@
     "asset-1957-perceptron-historical-01-2"
   ],
   "sourceIds": [
-    "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in",
     "source-cornell-chronicle-perceptron-retrospective",
-    "source-smithsonian-mark-i-perceptron-object-record"
+    "source-smithsonian-mark-i-perceptron-object-record",
+    "source-the-perceptron-a-probabilistic-model-for-information-storage-and-organization-in"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,9 +131,10 @@
         "en": "Inventor of the perceptron",
         "zh": "感知机发明者"
       },
-      "avatar": "resources/images/figures/frank-rosenblatt.png",
+      "avatar": "resources/images/bench-council-ai100/photos/1958-rosenblatt-perceptron_frank-rosenblatt.jpg",
       "avatarStyle": "transform: scale(1.18); transform-origin: 44% 38%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -295,12 +296,12 @@
   },
   "location": {
     "name": {
-      "en": "Cornell Aeronautical Laboratory",
-      "zh": "康奈尔航空实验室"
+      "en": "Cornell University",
+      "zh": "康奈尔大学"
     },
     "country": {
-      "en": "New York, United States",
-      "zh": "美国纽约州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.8864,

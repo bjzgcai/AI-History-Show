@@ -178,6 +178,7 @@ Variants may override display-level fields such as:
 - `visual`
 - `visualModules`
 - `assetIds`
+- `overviewImageAssetId` (optional homepage/chronology card image; must also appear in `assetIds`)
 - `sourceIds`
 - `claimIds`
 - `quizId`

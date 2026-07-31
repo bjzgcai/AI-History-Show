@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国",
-      "en": "United Kingdom"
+      "en": "United Kingdom, United States",
+      "zh": "英国、美国"
     },
     "place": {
-      "zh": "Google DeepMind",
-      "en": "Google DeepMind"
+      "en": "Google DeepMind",
+      "zh": "Google DeepMind"
     },
     "coordinates": [
       51.5074,
@@ -41,35 +41,87 @@
   ],
   "figures": [
     {
-      "figureId": "david-silver",
+      "name": {
+        "en": "David Silver",
+        "zh": "大卫·席尔瓦"
+      },
       "role": {
-        "zh": "AlphaGo 主要研究者",
-        "en": "AlphaGo lead researcher"
+        "en": "AlphaGo lead researcher",
+        "zh": "AlphaGo 主要研究者"
       },
       "avatar": "resources/images/figures/authoritative/david-silver.jpg",
-      "organizationIds": [
-        "deepmind"
-      ]
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
-      "figureId": "demis-hassabis",
+      "name": {
+        "en": "Aja Huang",
+        "zh": "黄士杰"
+      },
       "role": {
-        "zh": "DeepMind 联合创始人",
-        "en": "DeepMind co-founder"
+        "en": "AlphaGo co-author",
+        "zh": "AlphaGo 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "戴密斯·哈萨比斯"
+      },
+      "role": {
+        "en": "DeepMind co-founder",
+        "zh": "DeepMind 联合创始人"
       },
       "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
-      "organizationIds": [
-        "deepmind"
-      ]
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
-      "figureId": "lee-sedol",
+      "name": {
+        "en": "Julian Schrittwieser",
+        "zh": "朱利安·施里特维泽"
+      },
       "role": {
-        "zh": "2016 年里程碑对局中的围棋世界冠军",
-        "en": "Go world champion in the landmark 2016 match"
+        "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
+        "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Karen Simonyan",
+        "zh": "卡伦·西莫尼扬"
+      },
+      "role": {
+        "en": "Co-author of the VGG paper",
+        "zh": "VGG 论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Lee Sedol",
+        "zh": "李世石"
+      },
+      "role": {
+        "en": "Go world champion in the landmark 2016 match",
+        "zh": "2016 年里程碑对局中的围棋世界冠军"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
-      "organizationIds": []
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [

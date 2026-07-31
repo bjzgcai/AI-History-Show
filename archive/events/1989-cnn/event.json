@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国新泽西州",
-      "en": "New Jersey, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "贝尔实验室",
-      "en": "Bell Labs"
+      "en": "Bell Labs",
+      "zh": "贝尔实验室"
     },
     "coordinates": [
       40.684,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "yann-lecun",
-      "role": {
-        "zh": "LeNet 主要研究者",
-        "en": "LeNet lead researcher"
+      "name": {
+        "en": "Yann LeCun",
+        "zh": "扬·勒昆"
       },
-      "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+      "role": {
+        "en": "LeNet lead researcher",
+        "zh": "LeNet 主要研究者"
+      },
+      "avatar": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
+      "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

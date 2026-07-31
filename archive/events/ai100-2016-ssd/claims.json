@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-2016-ssd-membership",
+    "importance": "core",
+    "text": {
+      "en": "SSD is listed in the BenchCouncil long-term AI100 table.",
+      "zh": "SSD 单次多框检测器列入 BenchCouncil 长期 AI100 主表。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-2016-ssd-description",
+    "importance": "core",
+    "text": {
+      "en": "<p>Two-stage detectors were accurate but depended on a separate proposal phase. SSD pursued real-time detection by predicting object classes and box offsets directly from a single network pass.</p><p>Several feature maps at different resolutions predict scores and offsets for default boxes of multiple shapes. High-resolution maps capture small objects, while deeper maps cover larger receptive fields. Experts generally see SSD as an influential single-stage detector that made multiscale default-box prediction practical. Its speed-accuracy tradeoff shaped later real-time detection systems.</p>",
+      "zh": "<p>两阶段检测器精度很高，但依赖独立的候选区域阶段。SSD 通过单次网络前向直接预测物体类别和边界框偏移，追求实时检测。</p><p>不同分辨率的多张特征图针对多种形状的默认框预测类别分数和位置偏移。高分辨率特征图负责小物体，深层特征图则覆盖更大的感受野。专家通常认为 SSD 是具有重要影响的单阶段检测器，使多尺度默认框预测成为实用方案。它在速度与精度之间的权衡影响了后续实时检测系统。</p>"
+    },
+    "sourceIds": [
+      "source-2016-ssd-primary",
+      "source-2016-ssd-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  }
+]

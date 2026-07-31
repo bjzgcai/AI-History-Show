@@ -56,9 +56,9 @@
     "asset-1985-bayesian-network-message-pass"
   ],
   "sourceIds": [
-    "source-bayesian-networks",
     "source-judea-pearl-homepage",
-    "source-judea-pearl-ucla-samueli"
+    "source-judea-pearl-ucla-samueli",
+    "source-bayesian-networks"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1985-bayesian-network_judea-pearl.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -287,8 +288,8 @@
       "zh": "加州大学洛杉矶分校"
     },
     "country": {
-      "en": "California, United States",
-      "zh": "美国加利福尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       34.0689,

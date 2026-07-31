@@ -51,17 +51,17 @@
     }
   ],
   "assetIds": [
-    "asset-1989-cnn-yann-lecun-external",
-    "asset-1989-lenet-zip-code-cnn",
     "asset-1989-cnn-people-01",
-    "asset-1989-cnn-people-02",
-    "asset-1989-cnn-architecture-01"
+    "asset-1989-lenet-zip-code-cnn",
+    "asset-1989-cnn-architecture-01",
+    "asset-1989-cnn-yann-lecun-external",
+    "asset-1989-cnn-people-02"
   ],
   "sourceIds": [
-    "source-backpropagation-applied-to-handwritten-zip-code-recognition",
     "source-lenet-5-demos-and-documentation",
     "source-gradient-based-learning-applied-to-document-recognition",
-    "source-yann-lecun-s-home-page"
+    "source-yann-lecun-s-home-page",
+    "source-backpropagation-applied-to-handwritten-zip-code-recognition"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -133,9 +133,10 @@
         "en": "LeNet lead researcher",
         "zh": "LeNet 主要研究者"
       },
-      "avatar": "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
+      "avatar": "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
       "avatarStyle": "transform: scale(2.28); transform-origin: 52% 43%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -317,8 +318,8 @@
       "zh": "贝尔实验室"
     },
     "country": {
-      "en": "New Jersey, United States",
-      "zh": "美国新泽西州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.684,

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1992-reinforce-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What signal weights the REINFORCE policy update?",
+      "zh": "REINFORCE 用什么信号加权策略更新？"
+    },
+    "options": [
+      {
+        "en": "The sampled return",
+        "zh": "采样轨迹的回报"
+      },
+      {
+        "en": "Only the state dimension",
+        "zh": "仅状态维度"
+      },
+      {
+        "en": "The number of model layers",
+        "zh": "模型层数"
+      },
+      {
+        "en": "A fixed class label",
+        "zh": "固定类别标签"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "The algorithm increases the log-probability of sampled actions in proportion to the return they receive. This produces an unbiased policy-gradient estimate, although its variance can be high without baselines or other variance reduction.",
+      "zh": "算法按采样动作获得的回报大小，提高该动作对数概率。这样可得到无偏的策略梯度估计，但如果没有基线或其他降方差方法，估计方差可能很高。"
+    },
+    "sourceIds": [
+      "source-1992-reinforce-primary"
+    ],
+    "assetIds": [
+      "asset-1992-reinforce-explainer"
+    ]
+  }
+]

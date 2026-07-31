@@ -56,10 +56,11 @@
   ],
   "sourceIds": [
     "source-mit-minsky-history",
-    "source-snarc-history-overview",
     "source-history-of-ai-snarc-article",
     "source-stochastic-neural-analog-reinforcement-calculator-overview",
-    "source-history-of-information-snarc-entry"
+    "source-history-of-information-snarc-entry",
+    "source-marvin-minsky-papers-archive",
+    "source-snarc-history-overview"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -133,7 +134,8 @@
       },
       "avatar": "resources/images/figures/marvin-minsky.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -314,8 +316,8 @@
       "zh": "普林斯顿大学"
     },
     "country": {
-      "en": "Princeton, United States",
-      "zh": "美国普林斯顿"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.3431,

@@ -11,6 +11,7 @@ const STORYLINES_DIR = path.join(ARCHIVE_DIR, 'storylines');
 const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-validation.md');
 const SOURCE_TYPE_TAXONOMY = require('../archive/taxonomies/source-types.json');
 const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.json');
+const { auditArchive: auditEventFigureRules } = require('./event-figure-rules');
 
 const REQUIRED_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
@@ -80,6 +81,7 @@ const state = {
     events: [],
     storylines: [],
     assetRefs: [],
+    figureRules: [],
     counts: {
         events: 0,
         claims: 0,
@@ -477,6 +479,16 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
             addError(filePath, `variant selects external image asset ${assetId}; localize it before runtime use.`);
         }
     }
+    if (variant.overviewImageAssetId) {
+        const overviewAsset = assetsById.get(variant.overviewImageAssetId);
+        if (!overviewAsset) {
+            addError(filePath, `variant references missing overviewImageAssetId: ${variant.overviewImageAssetId}`);
+        } else if (!(variant.assetIds || []).includes(variant.overviewImageAssetId)) {
+            addError(filePath, 'variant overviewImageAssetId must also appear in assetIds.');
+        } else if (!isDisplayImageAsset(overviewAsset)) {
+            addError(filePath, 'variant overviewImageAssetId must reference an image, SVG, or GIF asset.');
+        }
+    }
     for (const claimId of variant.claimIds || []) {
         if (!claimIds.has(claimId)) addError(filePath, `variant references missing claimId: ${claimId}`);
     }
@@ -623,6 +635,13 @@ function validateStorylines(eventIds) {
     }
 }
 
+function validateEventFigureRules() {
+    state.figureRules = auditEventFigureRules(ROOT);
+    for (const result of state.figureRules) {
+        for (const issue of result.issues) addError(path.join(ROOT, result.file), issue);
+    }
+}
+
 function writeReport() {
     fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
 
@@ -642,6 +661,13 @@ function writeReport() {
     lines.push(`- Quizzes: ${state.counts.quizzes}`);
     lines.push(`- Errors: ${state.errors.length}`);
     lines.push(`- Warnings: ${state.warnings.length}`);
+    lines.push('');
+
+    lines.push('## Figure and Image Rules');
+    lines.push('');
+    lines.push(
+        'For every variant, the first image is the configured overview image when present, otherwise the first selected image asset; the overview default must therefore match the detail page first image. Detail image order must always remain the Archive order; an explicit overview image may intentionally change the homepage image only. A person image must identify the event primary figure; canonical BenchCouncil AI100 variants must preserve the BenchCouncil contributor prefix (with Chinese display names) and a person first image must identify one of those leading contributors. Non-person images are allowed as the first image.'
+    );
     lines.push('');
 
     lines.push('## Events');
@@ -701,6 +727,7 @@ function main() {
     }
 
     validateStorylines(new Set(state.events.map((event) => event.id)));
+    validateEventFigureRules();
     writeReport();
 
     console.log(`Archive validation report: ${rel(REPORT_PATH)}`);

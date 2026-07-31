@@ -1,0 +1,78 @@
+{
+  "id": "ai100-2016-ssd",
+  "year": 2016,
+  "date": "2016",
+  "title": {
+    "en": "SSD",
+    "zh": "SSD 单次多框检测器"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Two-stage detectors were accurate but depended on a separate proposal phase. SSD pursued real-time detection by predicting object classes and box offsets directly from a single network pass.</p><p>Several feature maps at different resolutions predict scores and offsets for default boxes of multiple shapes. High-resolution maps capture small objects, while deeper maps cover larger receptive fields. Experts generally see SSD as an influential single-stage detector that made multiscale default-box prediction practical. Its speed-accuracy tradeoff shaped later real-time detection systems.</p>",
+    "zh": "<p>两阶段检测器精度很高，但依赖独立的候选区域阶段。SSD 通过单次网络前向直接预测物体类别和边界框偏移，追求实时检测。</p><p>不同分辨率的多张特征图针对多种形状的默认框预测类别分数和位置偏移。高分辨率特征图负责小物体，深层特征图则覆盖更大的感受野。专家通常认为 SSD 是具有重要影响的单阶段检测器，使多尺度默认框预测成为实用方案。它在速度与精度之间的权衡影响了后续实时检测系统。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "UNC Chapel Hill, Zoox, Google, University of Michigan",
+      "zh": "北卡罗来纳大学教堂山分校、Zoox、Google、密歇根大学"
+    },
+    "coordinates": [
+      35.9049,
+      -79.0469
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "Wei Liu",
+        "zh": "刘威"
+      },
+      "role": {
+        "en": "SSD lead author",
+        "zh": "SSD 主要作者"
+      },
+      "avatar": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Alexander Berg",
+        "zh": "亚历山大·伯格"
+      },
+      "role": {
+        "en": "SSD co-author",
+        "zh": "SSD 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

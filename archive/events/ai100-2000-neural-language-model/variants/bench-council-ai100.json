@@ -55,10 +55,10 @@
     "asset-2000-neural-language-model-context-prediction"
   ],
   "sourceIds": [
-    "source-a-neural-probabilistic-language-model",
     "source-jmlr-full-paper-pdf",
     "source-dblp-record",
-    "source-yoshua-bengio-profile-at-mila"
+    "source-yoshua-bengio-profile-at-mila",
+    "source-a-neural-probabilistic-language-model"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -130,9 +130,10 @@
         "en": "Lead author of the neural probabilistic language model",
         "zh": "神经概率语言模型主要作者"
       },
-      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -300,8 +301,8 @@
       "zh": "蒙特利尔大学"
     },
     "country": {
-      "en": "Montreal, Canada",
-      "zh": "加拿大蒙特利尔"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "coordinates": [
       45.5019,

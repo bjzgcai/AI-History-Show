@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国宾夕法尼亚州",
-      "en": "Pennsylvania, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "卡内基梅隆大学",
-      "en": "Carnegie Mellon University"
+      "en": "CMU",
+      "zh": "卡内基梅隆大学"
     },
     "coordinates": [
       40.4433,
@@ -37,11 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "john-mcdermott",
-      "role": {
-        "zh": "R1/XCON 开发者",
-        "en": "Developer of R1/XCON"
+      "name": {
+        "en": "John McDermott",
+        "zh": "约翰·麦克德莫特"
       },
+      "role": {
+        "en": "Developer of R1/XCON",
+        "zh": "R1/XCON 开发者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

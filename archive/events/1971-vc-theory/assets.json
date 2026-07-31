@@ -3,7 +3,7 @@
     "id": "asset-1971-vc-theory-vladimir-vapnik",
     "type": "image",
     "path": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
-    "role": "source-card",
+    "role": "portrait",
     "caption": {
       "zh": "弗拉基米尔·瓦普尼克 肖像",
       "en": "Vladimir Vapnik portrait"
@@ -12,7 +12,12 @@
       "zh": "西蒙斯基金会 人物页中的 弗拉基米尔·瓦普尼克 肖像。",
       "en": "Vladimir Vapnik profile portrait from the Simons Foundation."
     },
-    "sourceId": "source-on-the-uniform-convergence-of-relative-frequencies",
+    "sourceId": "source-vladimir-vapnik-simons-profile",
+    "sourceName": {
+      "zh": "西蒙斯基金会",
+      "en": "Simons Foundation"
+    },
+    "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
     "rights": {
       "status": "external-reference",
       "license": {

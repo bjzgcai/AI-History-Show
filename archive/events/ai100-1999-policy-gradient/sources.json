@@ -1,0 +1,82 @@
+[
+    {
+        "id": "source-1999-policy-gradient-primary",
+        "type": "paper",
+        "label": {
+            "en": "Primary paper",
+            "zh": "原始论文"
+        },
+        "title": {
+            "en": "Policy Gradient Methods for Reinforcement Learning with Function Approximation",
+            "zh": "《带函数逼近的强化学习策略梯度方法》"
+        },
+        "url": "https://proceedings.neurips.cc/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Primary publication identified by the BenchCouncil AI100 table.",
+            "zh": "BenchCouncil AI100 表格列出的主论文。"
+        },
+        "purpose": "core-evidence"
+    },
+    {
+        "id": "source-1999-policy-gradient-secondary",
+        "type": "paper-page",
+        "label": {
+            "en": "Publication page",
+            "zh": "出版页面"
+        },
+        "title": {
+            "en": "NeurIPS paper PDF",
+            "zh": "NeurIPS 论文 PDF"
+        },
+        "url": "https://proceedings.neurips.cc/paper_files/paper/1999/file/464d828b85b0bed98e80ade0a5c43b0f-Paper.pdf",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Publisher, proceedings, repository, or companion publication page.",
+            "zh": "出版方、会议论文集、机构仓库或配套论文页面。"
+        },
+        "purpose": "alternate-access"
+    },
+    {
+        "id": "source-benchcouncil-ai100-catalog",
+        "type": "official-page",
+        "label": {
+            "en": "Official page",
+            "zh": "官方页面"
+        },
+        "title": {
+            "en": "BenchCouncil AI100: Top AI Achievements",
+            "zh": "BenchCouncil AI100：人工智能杰出成果"
+        },
+        "url": "https://www.benchcouncil.org/evaluation/ai/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "Official membership source for the canonical AI100 storyline.",
+            "zh": "canonical AI100 分支的官方成员依据。"
+        },
+        "purpose": "historical-context"
+    },
+    {
+        "id": "source-1999-policy-gradient-portrait",
+        "type": "image-source",
+        "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+        },
+        "title": {
+            "en": "Richard Sutton related portrait source",
+            "zh": "理查德·萨顿相关肖像来源"
+        },
+        "url": "http://incompleteideas.net/",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
+            "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
+        },
+        "purpose": "image-provenance"
+    }
+]

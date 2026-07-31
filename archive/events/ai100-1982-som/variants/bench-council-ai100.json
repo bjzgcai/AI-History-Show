@@ -55,10 +55,10 @@
     "asset-1982-som-topology-map"
   ],
   "sourceIds": [
-    "source-self-organized-formation-of-topologically-correct-feature-maps",
     "source-open-som-paper-pdf",
     "source-self-organizing-map-overview",
-    "source-essentials-of-the-self-organizing-map"
+    "source-essentials-of-the-self-organizing-map",
+    "source-self-organized-formation-of-topologically-correct-feature-maps"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
       "avatarStyle": "object-position: 100% 50%; transform: scale(2.1); transform-origin: 86% 16%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -300,8 +301,8 @@
       "zh": "赫尔辛基理工大学"
     },
     "country": {
-      "en": "Espoo, Finland",
-      "zh": "芬兰埃斯波"
+      "en": "Finland",
+      "zh": "芬兰"
     },
     "coordinates": [
       60.1841,

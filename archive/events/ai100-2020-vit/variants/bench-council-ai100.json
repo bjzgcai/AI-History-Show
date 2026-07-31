@@ -55,10 +55,10 @@
     "asset-2020-vit-patch-tokens"
   ],
   "sourceIds": [
-    "source-an-image-is-worth-16x16-words",
     "source-iclr-openreview-page",
     "source-openreview-full-paper-pdf",
-    "source-google-research-publication-page"
+    "source-google-research-publication-page",
+    "source-an-image-is-worth-16x16-words"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,78 @@
       },
       "avatar": "resources/images/external/ai100-2020-vit/alexey-dosovitskiy-portrait.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Lucas Beyer",
+        "zh": "卢卡斯·拜尔"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Alexander Kolesnikov",
+        "zh": "亚历山大·科列斯尼科夫"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Dirk Weissenborn",
+        "zh": "德克·魏森博恩"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Xiaohua Zhai",
+        "zh": "翟晓华"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Neil Houlsby",
+        "zh": "尼尔·霍尔斯比"
+      },
+      "role": {
+        "en": "ViT co-author",
+        "zh": "ViT 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -309,12 +380,12 @@
   },
   "location": {
     "name": {
-      "en": "Google Research",
-      "zh": "Google 研究院"
+      "en": "Google",
+      "zh": "Google"
     },
     "country": {
-      "en": "Mountain View, United States",
-      "zh": "美国山景城"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.422,

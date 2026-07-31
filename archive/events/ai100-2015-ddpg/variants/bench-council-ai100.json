@@ -135,7 +135,36 @@
       },
       "avatar": "resources/images/external/ai100-2015-ddpg/timothy-lillicrap-portrait-display.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Jonathan Hunt",
+        "zh": "乔纳森·亨特"
+      },
+      "role": {
+        "en": "DDPG co-author",
+        "zh": "DDPG 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Daan Wierstra",
+        "zh": "丹·维尔斯特拉"
+      },
+      "role": {
+        "en": "DDPG co-author",
+        "zh": "DDPG 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -323,8 +352,8 @@
   },
   "location": {
     "name": {
-      "en": "DeepMind, London",
-      "zh": "DeepMind，伦敦"
+      "en": "Google DeepMind",
+      "zh": "Google DeepMind"
     },
     "country": {
       "en": "United Kingdom",

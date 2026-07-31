@@ -113,7 +113,7 @@ function validateBundle() {
 
     delete require.cache[require.resolve(path.join(OUTPUT, 'milestones-data.js'))];
     const runtime = require(path.join(OUTPUT, 'milestones-data.js'));
-    assert.equal(runtime.milestones.length, 146);
+    assert.equal(runtime.milestones.length, 174);
     assert.ok(
         runtime.milestones.every(
             (milestone) => milestone.archiveEventId && milestone.archiveVariantId && milestone.sourceKind === 'archive'

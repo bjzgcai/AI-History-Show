@@ -1,0 +1,72 @@
+[
+  {
+    "id": "asset-1994-sarsa-portrait",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Richard Sutton portrait",
+      "zh": "理查德·萨顿肖像"
+    },
+    "subcaption": {
+      "en": "Related temporal-difference learning pioneer",
+      "zh": "相关时序差分学习先驱"
+    },
+    "sourceId": "source-1994-sarsa-portrait",
+    "sourceName": {
+      "en": "Richard Sutton personal website",
+      "zh": "理查德·萨顿个人网站"
+    },
+    "sourceUrl": "http://incompleteideas.net/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
+        "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
+      }
+    },
+    "displayUsage": {
+      "en": "Related researcher portrait",
+      "zh": "相关研究者肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1994-sarsa-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "SARSA process explainer",
+      "zh": "SARSA流程解释图"
+    },
+    "subcaption": {
+      "en": "On-policy temporal-difference control",
+      "zh": "同策略时序差分控制"
+    },
+    "sourceId": "source-1994-sarsa-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://www.cs.utexas.edu/~shivaram/readings/b2hd-RummeryNiranjan1994.html",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

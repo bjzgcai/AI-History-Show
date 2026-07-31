@@ -17,12 +17,12 @@
   "location": {
     "regionId": "germany",
     "country": {
-      "zh": "德国慕尼黑",
-      "en": "Munich, Germany"
+      "en": "Germany",
+      "zh": "德国"
     },
     "place": {
-      "zh": "慕尼黑大学",
-      "en": "University of Munich"
+      "en": "University of Munich",
+      "zh": "慕尼黑大学"
     },
     "coordinates": [
       48.1508,
@@ -37,21 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "martin-ester",
+      "name": {
+        "en": "Martin Ester",
+        "zh": "马丁·埃斯特"
+      },
       "role": {
-        "zh": "DBSCAN 共同作者",
-        "en": "Co-author of DBSCAN"
+        "en": "Co-author of DBSCAN",
+        "zh": "DBSCAN 共同作者"
       },
       "avatar": "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "hans-peter-kriegel-jorg-sander-xiaowei-xu",
-      "role": {
-        "zh": "DBSCAN 研究团队",
-        "en": "DBSCAN research team"
+      "name": {
+        "en": "Xiaowei Xu",
+        "zh": "徐晓伟"
       },
+      "role": {
+        "en": "DBSCAN co-author",
+        "zh": "DBSCAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Hans-Peter Kriegel, Jorg Sander, Xiaowei Xu",
+        "zh": "汉斯-彼得·克里格尔、约尔格·桑德、徐晓伟"
+      },
+      "role": {
+        "en": "DBSCAN research team",
+        "zh": "DBSCAN 研究团队"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

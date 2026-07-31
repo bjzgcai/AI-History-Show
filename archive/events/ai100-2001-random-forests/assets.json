@@ -1,0 +1,73 @@
+[
+    {
+        "id": "asset-2001-random-forests-portrait",
+        "type": "gif",
+        "path": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "role": "portrait",
+        "caption": {
+            "en": "Leo Breiman portrait",
+            "zh": "利奥·布雷曼肖像"
+        },
+        "subcaption": {
+            "en": "Random forests principal author",
+            "zh": "随机森林主要作者"
+        },
+        "sourceId": "source-2001-random-forests-portrait",
+        "sourceName": {
+            "en": "University of York Portraits of Statisticians",
+            "zh": "约克大学统计学家肖像档案"
+        },
+        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
+                "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            },
+            "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+        },
+        "displayUsage": {
+            "en": "Contributor portrait for the Random forests achievement page",
+            "zh": "用于Random forests成就页面的人物肖像"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    },
+    {
+        "id": "asset-2001-random-forests-explainer",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/2001-2001-random-forests_process.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "en": "Random Forests process explainer",
+            "zh": "随机森林流程解释图"
+        },
+        "subcaption": {
+            "en": "Bagged trees with random feature subsets",
+            "zh": "自助采样树与随机特征子集"
+        },
+        "sourceId": "source-2001-random-forests-primary",
+        "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://doi.org/10.1023/A:1010933404324",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "en": "Original local SVG redraw; source figures are not copied.",
+                "zh": "本地原创 SVG 重绘；未复制来源图形。"
+            }
+        },
+        "displayUsage": {
+            "en": "Architecture and process explainer",
+            "zh": "架构与流程解释图"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "source-instructgpt-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《用人类反馈训练语言模型遵循指令》",
+      "en": "Training language models to follow instructions with human feedback"
+    },
+    "url": "https://arxiv.org/abs/2203.02155",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "OpenAI InstructGPT 论文，系统说明监督微调、奖励模型和 PPO 强化学习如何把预训练语言模型转化为更能遵循指令的模型。",
+      "en": "The OpenAI InstructGPT paper describing how supervised fine-tuning, reward modeling, and PPO reinforcement learning turned pretrained language models into stronger instruction-following models."
+    },
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-flan-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《扩展指令微调语言模型》",
+      "en": "Scaling Instruction-Finetuned Language Models"
+    },
+    "url": "https://arxiv.org/abs/2210.11416",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "FLAN 论文，展示在大量任务和指令模板上微调可以提升模型对未见任务的泛化与指令遵循能力。",
+      "en": "The FLAN paper showing that fine-tuning on many tasks and instruction templates improves generalization and instruction following on unseen tasks."
+    },
+    "label": {
+      "zh": "相关论文",
+      "en": "Related paper"
+    },
+    "purpose": "core-evidence"
+  },
+  {
+    "id": "source-deepseek-r1-paper",
+    "type": "paper",
+    "title": {
+      "zh": "《DeepSeek-R1：通过强化学习激励大语言模型推理能力》",
+      "en": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+    },
+    "url": "https://arxiv.org/abs/2501.12948",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "DeepSeek-R1 技术报告，作为强化学习用于增强推理过程的代表性后续案例。",
+      "en": "The DeepSeek-R1 technical report, used here as a representative later case of reinforcement learning for stronger reasoning processes."
+    },
+    "label": {
+      "zh": "论文",
+      "en": "Paper"
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-stanford-ai-index-2025",
+    "type": "report",
+    "title": {
+      "zh": "Stanford《2025 AI Index 报告》",
+      "en": "Stanford 2025 AI Index Report"
+    },
+    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+    "language": "en",
+    "reliability": "secondary",
+    "notes": {
+      "zh": "Stanford HAI 年度报告，作为前沿模型性能、成本、开源与闭源差距及产业趋势的背景来源。",
+      "en": "Stanford HAI's annual report, used as background for frontier model performance, cost, open-versus-closed gaps, and industry trends."
+    },
+    "label": {
+      "zh": "报告",
+      "en": "Report"
+    },
+    "purpose": "background"
+  },
+  {
+    "id": "source-ppt-slide-43-instruction-tuning",
+    "type": "image-source",
+    "title": {
+      "zh": "PPT 第 43 页指令微调图来源",
+      "en": "PPT slide 43 instruction-tuning figure source"
+    },
+    "url": "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自用户提供的 PPT 第 43 页，用于补充指令微调流程图。",
+      "en": "Extracted from user-provided PPT slide 43 to supplement the instruction-tuning pipeline figure."
+    },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-ppt-slide-44-rlhf",
+    "type": "image-source",
+    "title": {
+      "zh": "PPT 第 44 页 RLHF 图来源",
+      "en": "PPT slide 44 RLHF figure source"
+    },
+    "url": "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来自用户提供的 PPT 第 44 页，用于补充 RLHF 回路图。",
+      "en": "Extracted from user-provided PPT slide 44 to supplement the RLHF feedback-loop figure."
+    },
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "purpose": "image-provenance"
+  }
+]

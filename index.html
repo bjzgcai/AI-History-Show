@@ -5531,11 +5531,20 @@
             white-space: nowrap;
         }
 
-        .ui-detail-place {
+        .no-orphan-tail {
+            white-space: nowrap;
+        }
+
+        .ui-detail-place-shell {
+            position: relative;
             grid-column: 2;
             grid-row: 1;
             min-width: 0;
             margin-top: 16px;
+        }
+
+        .ui-detail-place {
+            min-width: 0;
             color: var(--accent);
             font-size: 30px;
             font-weight: 900;
@@ -5550,6 +5559,42 @@
             -webkit-line-clamp: 2;
             white-space: normal;
             overflow-wrap: anywhere;
+        }
+
+        .ui-detail-place-shell.has-truncated-address .ui-detail-place {
+            cursor: help;
+        }
+
+        .ui-detail-place-tooltip {
+            position: absolute;
+            z-index: 80;
+            top: calc(100% + 10px);
+            left: 0;
+            width: max-content;
+            max-width: min(520px, calc(100vw - 40px));
+            padding: 9px 12px;
+            border: 1px solid rgba(246, 137, 0, 0.5);
+            border-radius: 6px;
+            background: rgba(14, 16, 20, 0.98);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
+            color: rgba(255, 255, 255, 0.94);
+            font-size: 14px;
+            font-weight: 650;
+            line-height: 1.45;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4px);
+            transition: opacity 120ms ease, transform 120ms ease, visibility 120ms ease;
+            pointer-events: none;
+        }
+
+        .ui-detail-place-shell.has-truncated-address:hover .ui-detail-place-tooltip,
+        .ui-detail-place-shell.has-truncated-address:focus-within .ui-detail-place-tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
         }
 
         .ui-detail-place.is-measuring {
@@ -7291,11 +7336,14 @@
                 overflow-wrap: anywhere;
             }
 
-            .ui-detail-place {
+            .ui-detail-place-shell {
                 grid-column: auto;
                 grid-row: auto;
-                width: auto;
                 margin-top: 0;
+            }
+
+            .ui-detail-place {
+                width: auto;
                 font-size: clamp(20px, 6vw, 30px);
             }
 
@@ -8308,11 +8356,14 @@
                 overflow-wrap: anywhere;
             }
 
-            .ui-detail-place {
+            .ui-detail-place-shell {
                 grid-column: auto;
                 grid-row: auto;
-                width: auto;
                 margin-top: 0;
+            }
+
+            .ui-detail-place {
+                width: auto;
                 font-size: clamp(20px, 6vw, 30px);
             }
 
@@ -9128,8 +9179,8 @@
                     zh: 'AI 百大成就（BenchCouncil）'
                 },
                 note: {
-                    en: 'Pilot storyline from the BenchCouncil AI100 list',
-                    zh: '来自 BenchCouncil AI100 榜单的试点故事线'
+                    en: 'Canonical storyline matching the BenchCouncil AI achievements table',
+                    zh: '严格对应 BenchCouncil AI 成果表的权威故事线'
                 }
             },
             {
@@ -9653,6 +9704,14 @@
                 .replace(/'/g, '&#39;');
         }
 
+        function escapeHtmlWithCjkTail(value) {
+            const text = String(value == null ? '' : value);
+            const match = text.match(/([\u3400-\u9fff]{2}[，。！？；：、）》】」』”’]*)$/u);
+            if (!match) return escapeHtml(text);
+            const tail = match[1];
+            return `${escapeHtml(text.slice(0, -tail.length))}<span class="no-orphan-tail">${escapeHtml(tail)}</span>`;
+        }
+
         function debounce(func, wait) {
             let timeout;
             return function executedFunction(...args) {
@@ -9836,7 +9895,7 @@
         function getStorylineStatus(option, count) {
             if (count <= 0) return uiText('planned', '规划中');
             if (option && option.id === 'bench-council-ai100') {
-                return uiText(`${count}/100 pilot`, `${count}/100 试点`);
+                return uiText(`${count} achievements`, `${count} 个成果`);
             }
             return uiText(`${count} events`, `${count} 个事件`);
         }
@@ -10320,19 +10379,6 @@
             };
         }
 
-        function formatUiCountryName(value) {
-            const text = String(value || '').trim();
-            return uiText(text.replace(/\bUnited States\b/g, 'US'), text);
-        }
-
-        function formatUiLocation(location) {
-            if (!location || typeof location !== 'object') return location;
-            return {
-                ...location,
-                country: formatUiCountryName(location.country)
-            };
-        }
-
         function getVm(index) {
             const milestone = getDetailMilestone(index);
             const cacheKey = `${index}:${milestone && milestone.id ? milestone.id : ''}`;
@@ -10343,7 +10389,6 @@
             const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
                 ? window.MilestoneView.normalizeMilestone(milestone, index, milestoneList)
                 : buildFallbackVm(milestone, index);
-            vm.location = formatUiLocation(vm.location);
             vmCache.set(cacheKey, vm);
             return vm;
         }
@@ -10405,7 +10450,7 @@
         function preloadMilestoneAssets(index) {
             if (index < 0 || index >= milestoneList.length) return;
             const vm = getVm(index);
-            sortPhotosForDisplay(vm.photos).slice(0, 20).forEach(preloadImage);
+            getPhotosForDisplay(vm.photos).slice(0, 20).forEach(preloadImage);
         }
 
         function preloadAdjacentAssets(index) {
@@ -10518,18 +10563,6 @@
 
         function isDocumentLikePhoto(url) {
             return /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(String(url || ''));
-        }
-
-        function choosePreferredArchiveIndex(photos) {
-            const safePhotos = Array.isArray(photos) ? photos.filter(Boolean) : [];
-            if (safePhotos.length <= 1) return 0;
-
-            const firstNonDocumentIndex = safePhotos.findIndex((url) => !isDocumentLikePhoto(url));
-            if (firstNonDocumentIndex > 0) {
-                return firstNonDocumentIndex;
-            }
-
-            return 0;
         }
 
         function buildArchiveFigureMeta(vm, index, fallbackName) {
@@ -10686,7 +10719,7 @@
         }
 
         function buildBenchVisualItems(vm) {
-            const photos = sortPhotosForDisplay(vm.photos).slice(0, 3).map((photo) => {
+            const photos = getPhotosForDisplay(vm.photos).slice(0, 3).map((photo) => {
                 const meta = buildArchivePhotoMeta(vm, photo);
                 const configured = getConfiguredImageMeta(vm, photo) || {};
                 return {
@@ -12077,22 +12110,8 @@
             return `${text} <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
         }
 
-        function scorePhoto(url) {
-            const value = String(url || '').toLowerCase();
-            if (!value) return -999;
-            if (value.includes('/historical/')) return 5;
-            if (value.includes('/people/')) return 4;
-            if (value.includes('/photos/')) return 4;
-            if (value.includes('/explainers/')) return 3;
-            if (value.includes('/architecture/')) return 2;
-            if (value.includes('/papers/')) return 1;
-            return 3;
-        }
-
-        function sortPhotosForDisplay(photos) {
-            return [...(photos || [])]
-                .filter(Boolean)
-                .sort((a, b) => scorePhoto(b) - scorePhoto(a));
+        function getPhotosForDisplay(photos) {
+            return [...(photos || [])].filter(Boolean);
         }
 
         function getOrbitViewportMetrics() {
@@ -13036,9 +13055,9 @@
         function renderStory(vm) {
             const stageContext = extractStageContext(vm);
             refs.summaryKicker.textContent = stageContext.label;
-            refs.summaryTitle.textContent = vm.title || '';
+            refs.summaryTitle.innerHTML = escapeHtmlWithCjkTail(vm.title || '');
             const locationText = buildLocationText(vm.location);
-            refs.summaryLocation.textContent = locationText;
+            refs.summaryLocation.innerHTML = escapeHtmlWithCjkTail(locationText);
             refs.summaryLocation.title = locationText;
             refs.summaryBody.innerHTML = buildSummaryHtml(vm);
             refs.storyYear.textContent = vm.year || '';
@@ -13056,8 +13075,8 @@
                 <article class="figure-chip">
                     <div class="figure-avatar">${buildFigureAvatar(figure, getFigureAvatarSource(figure))}</div>
                     <div class="figure-meta">
-                        <div class="figure-name">${escapeHtml(figure.name || tx('keyFigure'))}</div>
-                        <div class="figure-role">${escapeHtml(figure.role || tx('keyParticipant'))}</div>
+                        <div class="figure-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</div>
+                        <div class="figure-role">${escapeHtmlWithCjkTail(figure.role || tx('keyParticipant'))}</div>
                     </div>
                 </article>
             `).join('');
@@ -13074,7 +13093,7 @@
         }
 
         function renderArchive(vm) {
-            const photos = sortPhotosForDisplay(vm.photos);
+            const photos = getPhotosForDisplay(vm.photos);
             const hasPhotos = photos.length > 0;
             const safePhotos = hasPhotos ? photos : [''];
             currentArchiveIndex = Math.max(0, Math.min(currentArchiveIndex, safePhotos.length - 1));
@@ -13111,12 +13130,12 @@
             refs.archiveFocusButton.dataset.photoIndex = String(currentArchiveIndex);
             refs.archiveFocusButton.classList.toggle('is-empty', !hasPhotos);
             refs.archiveFocusButton.disabled = !hasPhotos;
-            refs.archivePrevCaption.textContent = prevMeta.name;
-            refs.archivePrevSubcaption.textContent = prevMeta.role;
-            refs.archiveCaption.textContent = activeMeta.name;
-            refs.archiveSubcaption.textContent = activeMeta.role;
-            refs.archiveNextCaption.textContent = nextMeta.name;
-            refs.archiveNextSubcaption.textContent = nextMeta.role;
+            refs.archivePrevCaption.innerHTML = escapeHtmlWithCjkTail(prevMeta.name);
+            refs.archivePrevSubcaption.innerHTML = escapeHtmlWithCjkTail(prevMeta.role);
+            refs.archiveCaption.innerHTML = escapeHtmlWithCjkTail(activeMeta.name);
+            refs.archiveSubcaption.innerHTML = escapeHtmlWithCjkTail(activeMeta.role);
+            refs.archiveNextCaption.innerHTML = escapeHtmlWithCjkTail(nextMeta.name);
+            refs.archiveNextSubcaption.innerHTML = escapeHtmlWithCjkTail(nextMeta.role);
 
             refs.archiveDots.innerHTML = hasPhotos
                 ? safePhotos.map((_, index) => `<button class="archive-dot ${index === currentArchiveIndex ? 'active' : ''}" type="button" data-index="${index}"></button>`).join('')
@@ -15041,7 +15060,7 @@
             const images = rawMilestone && rawMilestone.resources && Array.isArray(rawMilestone.resources.images)
                 ? rawMilestone.resources.images.filter(Boolean)
                 : [];
-            const heroImages = new Set(sortPhotosForDisplay(images).slice(0, 3));
+            const heroImages = new Set(getPhotosForDisplay(images).slice(0, 3));
             const configuredDemoImage = rawMilestone && rawMilestone.achievement
                 ? String(rawMilestone.achievement.demoImage || '').trim()
                 : '';
@@ -15244,7 +15263,7 @@
             const visualImages = buildBenchVisualItems(vm)
                 .filter((item) => item && item.type === 'image' && item.url)
                 .map((item) => item.url);
-            const photos = sortPhotosForDisplay(vm.photos);
+            const photos = getPhotosForDisplay(vm.photos);
             const configuredDemoImage = isGamingMilestone(vm && vm.raw)
                 ? String(vm.raw && vm.raw.achievement && vm.raw.achievement.demoImage || '').trim()
                 : '';
@@ -15259,6 +15278,11 @@
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
+            // The homepage/default image is always the first detail image unless an
+            // explicit overview override is configured. A side-panel visual may
+            // reuse that image, but must never remove it from the detail carousel.
+            const sideImageIndex = sideImageUrl ? candidates.indexOf(sideImageUrl) : -1;
+            if (sideImageIndex <= 0) return candidates;
             return window.GamingMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
         }
 
@@ -15268,14 +15292,19 @@
         }
 
         function isDiagramImage(url) {
-            return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(String(url || ''));
+            const value = String(url || '');
+            if (
+                isDocumentLikePhoto(value) &&
+                !/\/explainers\/|\/architecture\/|diagram|flow|pipeline/i.test(value)
+            ) {
+                return false;
+            }
+            return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(value);
         }
 
         const UI_MEDIA_VISUAL_OVERRIDES = {
             'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
         };
-        const UI_CHRONOLOGY_IMAGE_OVERRIDES = {};
-        const uiChronologyImageCache = new Map();
         const UI_DETAIL_IMAGE_AUTOPLAY_MS = 3 * 1000;
 
         function findHumanisticExplainerImage(vm, images) {
@@ -15301,25 +15330,6 @@
             return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
         }
 
-        function getChronologyCardImage(milestone) {
-            const eventId = milestone && milestone.id ? milestone.id : '';
-            const canonicalEventId = getCanonicalEventId(milestone);
-            const overrideUrl = UI_CHRONOLOGY_IMAGE_OVERRIDES[eventId]
-                || UI_CHRONOLOGY_IMAGE_OVERRIDES[canonicalEventId];
-            if (overrideUrl) return overrideUrl;
-            const cacheKey = eventId || canonicalEventId;
-            if (cacheKey && uiChronologyImageCache.has(cacheKey)) {
-                return uiChronologyImageCache.get(cacheKey);
-            }
-
-            const vm = window.MilestoneView && typeof window.MilestoneView.normalizeMilestone === 'function'
-                ? window.MilestoneView.normalizeMilestone(milestone, 0, [milestone])
-                : buildFallbackVm(milestone, 0);
-            const imageUrl = getUiDetailImages(vm)[0] || '';
-            if (cacheKey) uiChronologyImageCache.set(cacheKey, imageUrl);
-            return imageUrl;
-        }
-
         function renderUiDetailFromSelection(options = {}) {
             if (options.pushHistory && !uiHistoryPopInProgress) {
                 pushUiDetailHistoryEntry();
@@ -15330,7 +15340,7 @@
 
         function getUiDetailFigures(vm) {
             const figures = Array.isArray(vm && vm.figures)
-                ? vm.figures.filter(Boolean).slice(0, UI_DETAIL_FIGURE_LIMIT)
+                ? vm.figures.filter(Boolean)
                 : [];
             return figures.length
                 ? figures
@@ -15344,8 +15354,8 @@
                     <div class="ui-avatar">
                         <div class="ui-avatar-face">${avatar}</div>
                         <div>
-                            <span class="ui-avatar-name">${escapeHtml(figure.name || tx('keyFigure'))}</span>
-                            ${figure.role ? `<span class="ui-avatar-role">${escapeHtml(figure.role)}</span>` : ''}
+                            <span class="ui-avatar-name">${escapeHtmlWithCjkTail(figure.name || tx('keyFigure'))}</span>
+                            ${figure.role ? `<span class="ui-avatar-role">${escapeHtmlWithCjkTail(figure.role)}</span>` : ''}
                         </div>
                     </div>
                 `;
@@ -15730,9 +15740,9 @@
             imageStage.classList.toggle('is-diagram', isDiagramImage(imageUrl));
             if (image.complete && image.naturalWidth) window.requestAnimationFrame(revealImage);
 
-            if (captionTitle) captionTitle.textContent = imageCaptionTitle;
+            if (captionTitle) captionTitle.innerHTML = escapeHtmlWithCjkTail(imageCaptionTitle);
             if (captionDetail) {
-                captionDetail.textContent = imageCaptionDetail;
+                captionDetail.innerHTML = escapeHtmlWithCjkTail(imageCaptionDetail);
                 captionDetail.hidden = !imageCaptionDetail;
             }
             imageRoot.querySelectorAll('[data-ui-image-index]').forEach((button, index) => {
@@ -15821,60 +15831,80 @@
             });
         }
 
+        function syncUiDetailLocationTooltip(place, shell) {
+            if (!place || !shell) return;
+            const tooltip = shell.querySelector('.ui-detail-place-tooltip');
+            const isTruncated = place.scrollHeight > place.clientHeight + 1 || place.scrollWidth > place.clientWidth + 1;
+            shell.classList.toggle('has-truncated-address', isTruncated);
+            if (isTruncated && tooltip) {
+                place.tabIndex = 0;
+                place.setAttribute('aria-describedby', tooltip.id);
+            } else {
+                place.removeAttribute('tabindex');
+                place.removeAttribute('aria-describedby');
+            }
+        }
+
         function fitUiDetailLocation() {
             if (!refs.uiBrowserMain) return;
             const topLine = refs.uiBrowserMain.querySelector('.ui-detail-topline');
             const context = refs.uiBrowserMain.querySelector('.ui-detail-context');
+            const shell = refs.uiBrowserMain.querySelector('.ui-detail-place-shell');
             const place = refs.uiBrowserMain.querySelector('.ui-detail-place');
-            if (!topLine || !context || !place) return;
+            if (!topLine || !context || !shell || !place) return;
 
             context.style.removeProperty('--ui-detail-context-width');
             place.classList.remove('is-measuring');
-            if (!window.matchMedia('(min-width: 1200px)').matches) return;
 
-            const topLineStyle = window.getComputedStyle(topLine);
-            const readLayoutWidth = (property) => Number.parseFloat(topLineStyle.getPropertyValue(property)) || 0;
-            const baseContextWidth = readLayoutWidth('--ui-detail-context-base-width');
-            const contextWidthLimit = readLayoutWidth('--ui-detail-context-max-width');
-            const titleMinWidth = readLayoutWidth('--ui-detail-title-min-width');
-            const columnGap = Number.parseFloat(topLineStyle.columnGap) || 0;
-            if (!baseContextWidth || !contextWidthLimit || !titleMinWidth) return;
+            if (window.matchMedia('(min-width: 1200px)').matches) {
+                const topLineStyle = window.getComputedStyle(topLine);
+                const readLayoutWidth = (property) =>
+                    Number.parseFloat(topLineStyle.getPropertyValue(property)) || 0;
+                const baseContextWidth = readLayoutWidth('--ui-detail-context-base-width');
+                const contextWidthLimit = readLayoutWidth('--ui-detail-context-max-width');
+                const titleMinWidth = readLayoutWidth('--ui-detail-title-min-width');
+                const columnGap = Number.parseFloat(topLineStyle.columnGap) || 0;
 
-            const availableContextWidth = topLine.clientWidth - columnGap - titleMinWidth;
-            const maxContextWidth = Math.max(
-                baseContextWidth,
-                Math.min(contextWidthLimit, availableContextWidth)
-            );
-            const applyContextWidth = (width) => {
-                context.style.setProperty('--ui-detail-context-width', `${Math.ceil(width)}px`);
-            };
-            const fitsInTwoLines = (width) => {
-                applyContextWidth(width);
-                place.classList.add('is-measuring');
-                const placeStyle = window.getComputedStyle(place);
-                const lineHeight = Number.parseFloat(placeStyle.lineHeight) || 0;
-                const fits = lineHeight > 0 && place.scrollHeight <= lineHeight * 2 + 1;
-                place.classList.remove('is-measuring');
-                return fits;
-            };
+                if (baseContextWidth && contextWidthLimit && titleMinWidth) {
+                    const availableContextWidth = topLine.clientWidth - columnGap - titleMinWidth;
+                    const maxContextWidth = Math.max(
+                        baseContextWidth,
+                        Math.min(contextWidthLimit, availableContextWidth)
+                    );
+                    const applyContextWidth = (width) => {
+                        context.style.setProperty('--ui-detail-context-width', `${Math.ceil(width)}px`);
+                    };
+                    const fitsInTwoLines = (width) => {
+                        applyContextWidth(width);
+                        place.classList.add('is-measuring');
+                        const placeStyle = window.getComputedStyle(place);
+                        const lineHeight = Number.parseFloat(placeStyle.lineHeight) || 0;
+                        const fits = lineHeight > 0 && place.scrollHeight <= lineHeight * 2 + 1;
+                        place.classList.remove('is-measuring');
+                        return fits;
+                    };
 
-            if (fitsInTwoLines(baseContextWidth)) return;
-            if (!fitsInTwoLines(maxContextWidth)) {
-                applyContextWidth(maxContextWidth);
-                return;
-            }
-
-            let low = baseContextWidth;
-            let high = maxContextWidth;
-            while (high - low > 1) {
-                const middle = (low + high) / 2;
-                if (fitsInTwoLines(middle)) {
-                    high = middle;
-                } else {
-                    low = middle;
+                    if (!fitsInTwoLines(baseContextWidth)) {
+                        if (!fitsInTwoLines(maxContextWidth)) {
+                            applyContextWidth(maxContextWidth);
+                        } else {
+                            let low = baseContextWidth;
+                            let high = maxContextWidth;
+                            while (high - low > 1) {
+                                const middle = (low + high) / 2;
+                                if (fitsInTwoLines(middle)) {
+                                    high = middle;
+                                } else {
+                                    low = middle;
+                                }
+                            }
+                            applyContextWidth(high);
+                        }
+                    }
                 }
             }
-            applyContextWidth(high);
+
+            window.requestAnimationFrame(() => syncUiDetailLocationTooltip(place, shell));
         }
 
         function scheduleUiDetailLocationFit() {
@@ -15977,8 +16007,8 @@
                             ${buildUiDetailImageEdgeButtonsHtml(detailImages)}
                         </div>
                         <div class="ui-detail-caption">
-                            <span class="ui-detail-caption-title">${escapeHtml(imageCaptionTitle)}</span>
-                            <span class="ui-detail-caption-detail"${imageCaptionDetail ? '' : ' hidden'}>${escapeHtml(imageCaptionDetail)}</span>
+                            <span class="ui-detail-caption-title">${escapeHtmlWithCjkTail(imageCaptionTitle)}</span>
+                            <span class="ui-detail-caption-detail"${imageCaptionDetail ? '' : ' hidden'}>${escapeHtmlWithCjkTail(imageCaptionDetail)}</span>
                             ${buildUiDetailImagePagerHtml(detailImages)}
                         </div>
                     </div>
@@ -15993,14 +16023,17 @@
                                 <div class="ui-detail-topline">
                                     <div class="ui-detail-context">
                                         <div class="ui-detail-year${detailYearClass}">${escapeHtml(detailYearText)}</div>
-                                        <div class="ui-detail-place" title="${escapeHtml(locationText)}">${escapeHtml(locationText)}</div>
+                                        <div class="ui-detail-place-shell">
+                                            <div class="ui-detail-place">${escapeHtmlWithCjkTail(locationText)}</div>
+                                            <div class="ui-detail-place-tooltip" id="uiDetailLocationTooltip" role="tooltip">${escapeHtml(locationText)}</div>
+                                        </div>
                                     </div>
                                     <div class="ui-detail-heading">
                                         <div class="ui-detail-title-row">
-                                            <div class="ui-detail-title">${escapeHtml(title)}</div>
+                                            <div class="ui-detail-title">${escapeHtmlWithCjkTail(title)}</div>
                                             ${sentimentTagHtml}
                                         </div>
-                                        <div class="ui-detail-meta-inline">${escapeHtml([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
+                                        <div class="ui-detail-meta-inline">${escapeHtmlWithCjkTail([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>
                                 <div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>
@@ -16097,7 +16130,6 @@
             chronologyOverview.update({
                 milestones: buildUnifiedMilestones(),
                 selectedEventId: uiSelectedEventId,
-                resolveCardImage: getChronologyCardImage,
                 localize: lx,
                 locale: window.I18n && typeof window.I18n.getLocale === 'function'
                     ? window.I18n.getLocale()
@@ -16147,7 +16179,7 @@
 
         function openPhotoViewer(startIndex) {
             const vm = getVm(currentIndex);
-            const photos = sortPhotosForDisplay(vm.photos);
+            const photos = getPhotosForDisplay(vm.photos);
             if (!photos.length) return;
 
             let currentPhotoIndex = Math.max(0, Math.min(startIndex, photos.length - 1));
@@ -16216,7 +16248,7 @@
                 markCompletionQuizView(vm);
             }
             if (!renderOptions.preserveArchiveIndex) {
-                currentArchiveIndex = choosePreferredArchiveIndex(sortPhotosForDisplay(vm.photos));
+                currentArchiveIndex = 0;
             }
             applyStaticTranslations();
             renderStorylineSelect();

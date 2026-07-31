@@ -15,16 +15,17 @@
     "mcts"
   ],
   "visual": "go",
+  "overviewImageAssetId": "asset-david-silver-commons-portrait",
   "assetIds": [
     "asset-david-silver-commons-portrait",
-    "asset-alphago-lee-sedol",
-    "asset-alphago-policy-value-search"
+    "asset-alphago-policy-value-search",
+    "asset-alphago-lee-sedol"
   ],
   "sourceIds": [
-    "source-david-silver-commons-portrait",
     "source-alphago-nature-paper",
     "source-deepmind-alphago-page",
-    "source-katago-analysis-engine"
+    "source-katago-analysis-engine",
+    "source-david-silver-commons-portrait"
   ],
   "claimIds": [
     "claim-hybrid-policy-value-search",
@@ -97,7 +98,22 @@
       },
       "avatar": "resources/images/figures/authoritative/david-silver.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Aja Huang",
+        "zh": "黄士杰"
+      },
+      "role": {
+        "en": "AlphaGo co-author",
+        "zh": "AlphaGo 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -110,7 +126,36 @@
       },
       "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Julian Schrittwieser",
+        "zh": "朱利安·施里特维泽"
+      },
+      "role": {
+        "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
+        "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Karen Simonyan",
+        "zh": "卡伦·西莫尼扬"
+      },
+      "role": {
+        "en": "Co-author of the VGG paper",
+        "zh": "VGG 论文共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -239,11 +284,11 @@
   "location": {
     "name": {
       "en": "Google DeepMind",
-      "zh": "谷歌 DeepMind"
+      "zh": "Google DeepMind"
     },
     "country": {
-      "en": "London, United Kingdom",
-      "zh": "英国，伦敦"
+      "en": "United Kingdom, United States",
+      "zh": "英国、美国"
     },
     "coordinates": [
       51.5074,

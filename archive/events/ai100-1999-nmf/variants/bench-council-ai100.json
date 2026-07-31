@@ -55,10 +55,10 @@
     "asset-1999-nmf-parts-factorization"
   ],
   "sourceIds": [
-    "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization",
     "source-nature-article-page",
     "source-pubmed-record-for-the-nature-paper",
-    "source-scikit-learn-nmf-documentation"
+    "source-scikit-learn-nmf-documentation",
+    "source-learning-the-parts-of-objects-by-non-negative-matrix-factorization"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,11 +132,12 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
-        "en": "H. Sebastian Seung",
+        "en": "H Sebastian Seung",
         "zh": "H. 塞巴斯蒂安·承"
       },
       "role": {
@@ -145,7 +146,8 @@
       },
       "avatar": "resources/images/external/ai100-1999-nmf/h-sebastian-seung-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -309,12 +311,12 @@
   },
   "location": {
     "name": {
-      "en": "Bell Labs and MIT",
-      "zh": "贝尔实验室与 MIT"
+      "en": "Bell Lab, MIT",
+      "zh": "贝尔实验室、麻省理工学院"
     },
     "country": {
-      "en": "New Jersey and Cambridge, United States",
-      "zh": "美国新泽西州与剑桥"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.6843,

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国普林斯顿",
-      "en": "Princeton, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "普林斯顿大学",
-      "en": "Princeton University"
+      "en": "Princeton University",
+      "zh": "普林斯顿大学"
     },
     "coordinates": [
       40.3431,
@@ -37,21 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "marvin-minsky",
+      "name": {
+        "en": "Marvin Minsky",
+        "zh": "马文·明斯基"
+      },
       "role": {
-        "zh": "SNARC 共同建造者",
-        "en": "Co-builder of SNARC"
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
       },
       "avatar": "resources/images/figures/marvin-minsky.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "dean-edmonds",
-      "role": {
-        "zh": "SNARC 共同建造者",
-        "en": "Co-builder of SNARC"
+      "name": {
+        "en": "Dean Edmonds",
+        "zh": "迪恩·埃德蒙兹"
       },
-      "organizationIds": []
+      "role": {
+        "en": "Co-builder of SNARC",
+        "zh": "SNARC 共同建造者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

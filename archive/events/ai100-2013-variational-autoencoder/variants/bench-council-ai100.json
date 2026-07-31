@@ -55,9 +55,9 @@
     "asset-2013-vae-latent-sampling"
   ],
   "sourceIds": [
-    "source-auto-encoding-variational-bayes",
     "source-iclr-paper-record",
-    "source-variational-autoencoder-overview"
+    "source-variational-autoencoder-overview",
+    "source-auto-encoding-variational-bayes"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "resources/images/external/ai100-2013-variational-autoencoder/diederik-kingma-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Max Welling",
+        "zh": "马克斯·韦林"
+      },
+      "role": {
+        "en": "Variational autoencoder co-author",
+        "zh": "Variational autoencoder 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -338,11 +353,11 @@
   "location": {
     "name": {
       "en": "University of Amsterdam",
-      "zh": "University of Amsterdam"
+      "zh": "阿姆斯特丹大学"
     },
     "country": {
-      "en": "Amsterdam, Netherlands",
-      "zh": "Amsterdam, Netherlands"
+      "en": "Netherlands",
+      "zh": "荷兰"
     },
     "coordinates": [
       52.3676,

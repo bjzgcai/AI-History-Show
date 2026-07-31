@@ -1,0 +1,73 @@
+[
+  {
+    "id": "asset-2001-crf-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "John Lafferty portrait",
+      "zh": "约翰·拉弗蒂肖像"
+    },
+    "subcaption": {
+      "en": "CRF lead author",
+      "zh": "CRF 主要作者"
+    },
+    "sourceId": "source-2001-crf-portrait",
+    "sourceName": {
+      "en": "Prior portrait candidate",
+      "zh": "先前人工筛选肖像候选"
+    },
+    "sourceUrl": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
+    "rights": {
+      "status": "source-review-needed",
+      "license": {
+        "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+        "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
+      },
+      "sourceUrl": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg"
+    },
+    "displayUsage": {
+      "en": "Contributor portrait for the Conditional Random Fields achievement page",
+      "zh": "用于条件随机场成就页面的人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2001-crf-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2001-2001-crf_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "Conditional Random Fields process explainer",
+      "zh": "条件随机场流程解释图"
+    },
+    "subcaption": {
+      "en": "Globally normalized conditional sequence modeling",
+      "zh": "全局归一化的条件序列建模"
+    },
+    "sourceId": "source-2001-crf-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://repository.upenn.edu/cis_papers/159/",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

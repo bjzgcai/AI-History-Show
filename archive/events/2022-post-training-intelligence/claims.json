@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-post-training-shapes-foundation-models",
+    "importance": "core",
+    "text": {
+      "zh": "指令微调和基于反馈的强化学习把通用预训练语言模型塑造成更能遵循任务、符合人类偏好并适合对话使用的系统。",
+      "en": "Instruction tuning and reinforcement learning from feedback shaped general pretrained language models into systems that better follow tasks, match human preferences, and support dialogue use."
+    },
+    "sourceIds": [
+      "source-instructgpt-paper",
+      "source-flan-paper"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-reinforcement-learning-extends-reasoning",
+    "importance": "context",
+    "text": {
+      "zh": "在预训练边际收益受到数据与成本约束后，强化学习也被用于鼓励模型生成更长、更可检验的推理过程。",
+      "en": "After the marginal gains from pretraining became more constrained by data and cost, reinforcement learning was also used to encourage longer and more checkable reasoning processes."
+    },
+    "sourceIds": [
+      "source-deepseek-r1-paper",
+      "source-stanford-ai-index-2025"
+    ],
+    "status": "verified"
+  }
+]

@@ -85,5 +85,25 @@
       "en": "Supplementary AlexNet overview reference."
     },
     "purpose": "background"
+  },
+  {
+    "id": "source-alex-krizhevsky-user-provided-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "亚历克斯·克里热夫斯基肖像（用户提供）",
+      "en": "Alex Krizhevsky portrait (user provided)"
+    },
+    "url": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+    "language": "und",
+    "reliability": "primary",
+    "notes": {
+      "zh": "照片由用户在本次任务中提供，用于 AlexNet 事件的首图、首页缩略图与人物头像展示。",
+      "en": "The user supplied this photograph for the AlexNet event lead image, homepage thumbnail, and figure avatar."
+    },
+    "purpose": "image-provenance"
   }
 ]

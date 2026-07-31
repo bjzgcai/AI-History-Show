@@ -1,0 +1,78 @@
+{
+  "id": "ai100-2001-crf",
+  "year": 2001,
+  "date": "2001",
+  "title": {
+    "en": "Conditional Random Fields",
+    "zh": "条件随机场"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Sequence labeling systems such as hidden Markov models modeled how observations were generated, which made overlapping and long-range input features awkward to use. Conditional Random Fields instead modeled the label sequence directly given the observed sequence.</p><p>A CRF assigns a globally normalized conditional probability to an entire label sequence using feature functions over observations and neighboring labels. Dynamic programming supports exact inference and training for linear-chain models. Experts generally regard CRFs as a foundational discriminative model for structured prediction. They became standard for named-entity recognition, part-of-speech tagging, segmentation, and hybrid neural-CRF systems.</p>",
+    "zh": "<p>隐马尔可夫模型等序列标注系统需要建模观测如何生成，因此难以灵活使用重叠特征和长距离输入特征。条件随机场改为在给定观测序列的条件下直接建模标签序列。</p><p>CRF 使用观测和相邻标签上的特征函数，为整条标签序列分配全局归一化的条件概率。在线性链模型中，动态规划支持精确推断和训练。专家通常把 CRF 视为结构化预测的基础判别模型。它曾成为命名实体识别、词性标注、序列分割以及神经网络—CRF 混合系统的标准方法。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "MIT, University of Pennsylvania",
+      "zh": "麻省理工学院、宾夕法尼亚大学"
+    },
+    "coordinates": [
+      39.9522,
+      -75.1932
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "John Lafferty",
+        "zh": "约翰·拉弗蒂"
+      },
+      "role": {
+        "en": "CRF lead author",
+        "zh": "CRF 主要作者"
+      },
+      "avatar": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Fernando Pereira",
+        "zh": "费尔南多·佩雷拉"
+      },
+      "role": {
+        "en": "CRF co-author",
+        "zh": "CRF 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

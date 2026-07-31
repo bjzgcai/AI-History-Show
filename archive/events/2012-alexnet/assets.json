@@ -2,7 +2,7 @@
   {
     "id": "asset-alexnet-portrait",
     "type": "image",
-    "path": "resources/images/figures/alex-krizhevsky.jpg",
+    "path": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
     "role": "portrait",
     "caption": {
       "zh": "亚历克斯·克里热夫斯基肖像",
@@ -12,15 +12,24 @@
       "zh": "AlexNet 主要作者",
       "en": "AlexNet lead author"
     },
-    "sourceId": "source-alexnet-neurips-paper",
+    "sourceId": "source-alex-krizhevsky-user-provided-portrait",
+    "sourceName": {
+      "zh": "用户提供照片",
+      "en": "User-provided photograph"
+    },
     "rights": {
-      "status": "external-reference",
+      "status": "user-provided",
       "license": {
-        "zh": "历史人物资料图，保留来源说明。",
-        "en": "Historical figure reference image; keep attribution."
+        "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+        "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
       }
     },
+    "displayUsage": {
+      "zh": "用于 AlexNet 事件首图、首页缩略图与亚历克斯·克里热夫斯基人物头像。",
+      "en": "Used as the AlexNet lead image, homepage thumbnail, and Alex Krizhevsky figure avatar."
+    },
     "usage": [
+      "variant:deep-learning",
       "variant:bench-council-ai100"
     ],
     "editable": true

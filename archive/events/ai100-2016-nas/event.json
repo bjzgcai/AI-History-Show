@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国山景城",
-      "en": "Mountain View, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "Google Brain",
-      "en": "Google Brain"
+      "en": "Google",
+      "zh": "Google"
     },
     "coordinates": [
       37.3861,
@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "barret-zoph",
+      "name": {
+        "en": "Barret Zoph",
+        "zh": "巴雷特·佐夫"
+      },
       "role": {
-        "zh": "神经架构搜索主要作者",
-        "en": "Neural architecture search lead author"
+        "en": "Neural architecture search lead author",
+        "zh": "神经架构搜索主要作者"
       },
       "avatar": "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Quoc V. Le",
+        "zh": "黎国辉"
+      },
+      "role": {
+        "en": "NAS co-author",
+        "zh": "NAS 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

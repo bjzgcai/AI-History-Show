@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国，新泽西州默里山",
-      "en": "Murray Hill, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "贝尔电话实验室",
-      "en": "Bell Telephone Laboratories"
+      "en": "Bell Lab",
+      "zh": "贝尔实验室"
     },
     "coordinates": [
       40.6843,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "hao-wang",
+      "name": {
+        "en": "Hao Wang",
+        "zh": "王浩"
+      },
       "role": {
-        "zh": "提出基于模式识别的定理证明过程",
-        "en": "Developed pattern-recognition theorem-proving procedures"
+        "en": "Developed pattern-recognition theorem-proving procedures",
+        "zh": "提出基于模式识别的定理证明过程"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

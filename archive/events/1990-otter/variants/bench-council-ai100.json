@@ -43,11 +43,13 @@
     }
   ],
   "assetIds": [
+    "asset-1990-otter-manual-first-page",
     "asset-1990-otter-input-clauses",
     "asset-1990-otter-proof-trace",
     "asset-1990-otter-given-clause",
     "asset-1990-otter-clause-index"
   ],
+  "overviewImageAssetId": "asset-1990-otter-manual-first-page",
   "sourceIds": [
     "source-otter-3-3-reference-manual",
     "source-a-spectrum-of-applications-of-automated-reasoning",
@@ -125,7 +127,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -274,8 +277,8 @@
       "zh": "阿贡国家实验室"
     },
     "country": {
-      "en": "Illinois, United States",
-      "zh": "美国伊利诺伊州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       41.7106,

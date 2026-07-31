@@ -1,0 +1,73 @@
+[
+    {
+        "id": "asset-1999-policy-gradient-portrait",
+        "type": "image",
+        "path": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+        "role": "portrait",
+        "caption": {
+            "en": "Richard Sutton portrait",
+            "zh": "理查德·萨顿肖像"
+        },
+        "subcaption": {
+            "en": "Policy-gradient theorem co-author",
+            "zh": "策略梯度定理共同作者"
+        },
+        "sourceId": "source-1999-policy-gradient-portrait",
+        "sourceName": {
+            "en": "Richard Sutton personal website",
+            "zh": "理查德·萨顿个人网站"
+        },
+        "sourceUrl": "http://incompleteideas.net/",
+        "rights": {
+            "status": "external-reference",
+            "license": {
+                "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
+                "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
+            },
+            "sourceUrl": "http://incompleteideas.net/"
+        },
+        "displayUsage": {
+            "en": "Contributor portrait for the Policy gradient theorem achievement page",
+            "zh": "用于Policy gradient theorem成就页面的人物肖像"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    },
+    {
+        "id": "asset-1999-policy-gradient-explainer",
+        "type": "svg",
+        "path": "resources/images/bench-council-ai100/explainers/1999-1999-policy-gradient_process.svg",
+        "role": "architecture-explainer",
+        "caption": {
+            "en": "Policy Gradient Theorem process explainer",
+            "zh": "策略梯度定理流程解释图"
+        },
+        "subcaption": {
+            "en": "Expected action-value times policy score",
+            "zh": "动作价值与策略得分乘积的期望"
+        },
+        "sourceId": "source-1999-policy-gradient-primary",
+        "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://proceedings.neurips.cc/paper/1999/hash/464d828b85b0bed98e80ade0a5c43b0f-Abstract.html",
+        "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+                "en": "Original local SVG redraw; source figures are not copied.",
+                "zh": "本地原创 SVG 重绘；未复制来源图形。"
+            }
+        },
+        "displayUsage": {
+            "en": "Architecture and process explainer",
+            "zh": "架构与流程解释图"
+        },
+        "usage": [
+            "variant:bench-council-ai100"
+        ],
+        "editable": true
+    }
+]

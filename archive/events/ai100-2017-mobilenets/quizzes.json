@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2017-mobilenets-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What makes MobileNets computationally efficient?",
+      "zh": "MobileNets 为什么计算更高效？"
+    },
+    "options": [
+      {
+        "en": "They factor convolution into depthwise and pointwise operations",
+        "zh": "它把卷积分解为深度卷积和逐点卷积"
+      },
+      {
+        "en": "They enumerate every image patch",
+        "zh": "它枚举所有图像块"
+      },
+      {
+        "en": "They remove all nonlinearities",
+        "zh": "它移除所有非线性"
+      },
+      {
+        "en": "They require a larger input image",
+        "zh": "它要求更大的输入图像"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Depthwise separable convolution splits spatial filtering from channel mixing, sharply reducing multiply-add operations. MobileNetV2 added inverted residual blocks and linear bottlenecks so narrow mobile representations could retain useful information.",
+      "zh": "深度可分离卷积把空间滤波与通道混合拆开，从而显著减少乘加运算。MobileNetV2 又加入倒残差块和线性瓶颈，让狭窄的移动端表示保留更多有效信息。"
+    },
+    "sourceIds": [
+      "source-2017-mobilenets-primary"
+    ],
+    "assetIds": [
+      "asset-2017-mobilenets-explainer"
+    ]
+  }
+]

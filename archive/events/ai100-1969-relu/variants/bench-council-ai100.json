@@ -57,10 +57,10 @@
   ],
   "sourceIds": [
     "source-fukushima-analog-threshold-elements",
-    "source-candc-2021-kunihiko-fukushima",
     "source-deep-sparse-rectifier-neural-networks",
     "source-rectified-linear-units-improve-restricted-boltzmann-machines",
-    "source-yoshua-bengio-profile-at-mila"
+    "source-yoshua-bengio-profile-at-mila",
+    "source-candc-2021-kunihiko-fukushima"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -136,7 +136,22 @@
       },
       "avatar": "resources/images/external/ai100-1969-relu/kunihiko-fukushima-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Xavier Glorot",
+        "zh": "泽维尔·格洛罗"
+      },
+      "role": {
+        "en": "ReLU co-author",
+        "zh": "ReLU 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -149,7 +164,8 @@
       },
       "avatar": "resources/images/external/ai100-1969-relu/yoshua-bengio-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -317,12 +333,12 @@
   },
   "location": {
     "name": {
-      "en": "NHK Broadcasting Science Research Laboratories",
-      "zh": "NHK 广播科学研究实验室"
+      "en": "NHK Broadcasting Science Research Laboratories, University of Montreal",
+      "zh": "日本放送协会广播科学研究实验室、蒙特利尔大学"
     },
     "country": {
-      "en": "Tokyo, Japan",
-      "zh": "日本东京"
+      "en": "Japan, Canada",
+      "zh": "日本、加拿大"
     },
     "coordinates": [
       35.6762,

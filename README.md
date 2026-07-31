@@ -70,13 +70,13 @@ When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }`
 
 ## Storylines
 
-The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 146 Archive milestones across four source storylines, plus a unified map that merges deep-learning and AI100 records for browsing:
+The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 165 Archive milestones across four source storylines, plus a unified map that merges deep-learning and AI100 records for browsing:
 
 | Public view                     | Archive records | Notes                                                                                                                 |
 | ------------------------------- | --------------: | --------------------------------------------------------------------------------------------------------------------- |
 | AI History Map                  |    Derived view | Unified browser combining deep-learning milestones and AI100 achievements                                             |
 | AI History (Deep Learning)      |              21 | Technical timeline from early AI through neural networks, scaled learning, and modern architectures                   |
-| BenchCouncil AI100 achievements |             100 | Achievement-map layout with source cards, context sections, demos, and quizzes                                        |
+| BenchCouncil AI100 achievements |             119 | Canonical root-table membership with source cards, context sections, demos, and quizzes                               |
 | AI in Board & Tabletop Games    |              13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
 | Humanistic & emotional cycles   |              12 | Sci-fi prophecy, technology hype, AI winters, and risk debates                                                        |
 

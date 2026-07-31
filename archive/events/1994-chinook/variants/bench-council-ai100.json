@@ -126,7 +126,8 @@
       },
       "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -275,8 +276,8 @@
       "zh": "阿尔伯塔大学"
     },
     "country": {
-      "en": "Alberta, Canada",
-      "zh": "加拿大阿尔伯塔省"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "coordinates": [
       53.5232,

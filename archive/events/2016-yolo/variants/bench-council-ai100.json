@@ -56,9 +56,9 @@
     "asset-2016-yolo-single-pass"
   ],
   "sourceIds": [
-    "source-you-only-look-once-unified-real-time-object-detection",
     "source-cvpr-open-access-paper-page",
-    "source-darknet-yolo-project-page"
+    "source-darknet-yolo-project-page",
+    "source-you-only-look-once-unified-real-time-object-detection"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2016-yolo_joseph-redmon.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -145,7 +146,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -300,12 +302,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Washington / Allen Institute for AI",
-      "zh": "华盛顿大学 / Allen Institute for AI"
+      "en": "University of Washington, Allen Institute for AI, Facebook AI Research",
+      "zh": "华盛顿大学、艾伦人工智能研究所、Facebook 人工智能研究院"
     },
     "country": {
-      "en": "Seattle, United States",
-      "zh": "美国西雅图"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       47.6553,

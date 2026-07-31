@@ -1,0 +1,73 @@
+[
+  {
+    "id": "asset-2015-fast-r-cnn-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Ross Girshick portrait",
+      "zh": "罗斯·格希克肖像"
+    },
+    "subcaption": {
+      "en": "Fast R-CNN lead author",
+      "zh": "Fast R-CNN 主要作者"
+    },
+    "sourceId": "source-2015-fast-r-cnn-portrait",
+    "sourceName": {
+      "en": "Prior portrait candidate",
+      "zh": "先前人工筛选肖像候选"
+    },
+    "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
+    "rights": {
+      "status": "source-review-needed",
+      "license": {
+        "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+        "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
+      },
+      "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg"
+    },
+    "displayUsage": {
+      "en": "Contributor portrait for the Fast R-CNN achievement page",
+      "zh": "用于Fast R-CNN成就页面的人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-fast-r-cnn-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "Fast R-CNN process explainer",
+      "zh": "Fast R-CNN流程解释图"
+    },
+    "subcaption": {
+      "en": "Shared feature map with RoI pooling and joint prediction",
+      "zh": "共享特征图、RoI 池化与联合预测"
+    },
+    "sourceId": "source-2015-fast-r-cnn-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1504.08083",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

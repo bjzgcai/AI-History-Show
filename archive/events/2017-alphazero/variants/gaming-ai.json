@@ -48,8 +48,8 @@
         }
     ],
     "assetIds": [
-        "asset-2017-alphazero-self-play-loop",
         "asset-david-silver-commons-portrait",
+        "asset-2017-alphazero-self-play-loop",
         "asset-2017-alphazero-julian-schrittwieser"
     ],
     "sourceIds": ["source-david-silver-commons-portrait", "source-science-paper", "source-arxiv-preprint", "source-deepmind-alphazero-blog"],

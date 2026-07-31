@@ -1,0 +1,78 @@
+{
+  "id": "ai100-1997-adaboost",
+  "year": 1997,
+  "date": "1997",
+  "title": {
+    "en": "AdaBoost",
+    "zh": "AdaBoost 自适应提升"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Early boosting theory established that weak learners could be strengthened, but practical algorithms needed a simple way to choose and weight training examples. AdaBoost supplied an adaptive procedure driven by classification mistakes.</p><p>After each weak classifier, AdaBoost increases the weights of misclassified examples and decreases the weights of correctly classified ones. The final prediction is a weighted vote whose coefficients depend on each learner’s accuracy. Experts generally regard AdaBoost as the algorithm that made boosting practical and conceptually transparent. It shaped margin theory, cascade detectors, and later additive-model views of ensemble learning.</p>",
+    "zh": "<p>早期 Boosting 理论证明弱学习器可以被增强，但实用算法还需要一种简单方法选择并加权训练样本。AdaBoost 提供了由分类错误驱动的自适应过程。</p><p>每训练一个弱分类器后，AdaBoost 提高误分类样本权重，降低正确分类样本权重。最终预测是加权投票，各学习器系数取决于其准确性。专家通常把 AdaBoost 视为使 Boosting 走向实用且概念清晰的关键算法。它影响了间隔理论、级联检测器以及后来对集成学习的加性模型解释。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Bell Lab",
+      "zh": "贝尔实验室"
+    },
+    "coordinates": [
+      40.6843,
+      -74.4013
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "Yoav Freund",
+        "zh": "约阿夫·弗罗因德"
+      },
+      "role": {
+        "en": "Adaboost lead author",
+        "zh": "Adaboost 主要作者"
+      },
+      "avatar": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Robert Schapire",
+        "zh": "罗伯特·沙皮尔"
+      },
+      "role": {
+        "en": "Adaboost co-author",
+        "zh": "Adaboost 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

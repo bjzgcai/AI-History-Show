@@ -53,9 +53,9 @@
     "asset-1982-hopfield-network-memory-grid"
   ],
   "sourceIds": [
-    "source-neural-networks-and-physical-systems",
     "source-nobel-prize-john-j-hopfield-facts",
-    "source-princeton-neuroscience-institute-profile"
+    "source-princeton-neuroscience-institute-profile",
+    "source-neural-networks-and-physical-systems"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -120,7 +120,7 @@
   "figures": [
     {
       "name": {
-        "en": "John J. Hopfield",
+        "en": "John Hopfield",
         "zh": "约翰·J·霍普菲尔德"
       },
       "role": {
@@ -129,7 +129,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -285,8 +286,8 @@
       "zh": "加州理工学院"
     },
     "country": {
-      "en": "California, United States",
-      "zh": "美国加利福尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       34.1377,
