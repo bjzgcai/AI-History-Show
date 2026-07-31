@@ -51,16 +51,17 @@
     }
   ],
   "assetIds": [
-    "asset-geoffrey-hinton",
+    "asset-2014-attention-bahdanau-portrait",
     "asset-2014-attention-alignment",
-    "asset-2014-attention-architecture-01",
-    "asset-2014-attention-people-01"
+    "asset-2014-attention-cho-portrait",
+    "asset-2014-attention-people-01",
+    "asset-2014-attention-architecture-01"
   ],
   "sourceIds": [
-    "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
     "source-iclr-2015-paper-page",
     "source-attention-mechanism-overview",
-    "source-yoshua-bengio-lab-profile"
+    "source-yoshua-bengio-lab-profile",
+    "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,22 +133,10 @@
         "en": "Lead author of neural attention paper",
         "zh": "神经注意力论文主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
       "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Kyunghyun Cho",
-        "zh": "赵京贤"
-      },
-      "role": {
-        "en": "Neural attention paper co-author",
-        "zh": "神经注意力论文共同作者"
-      },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -160,7 +149,61 @@
       },
       "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Minh-Thang Luong",
+        "zh": "明唐·梁"
+      },
+      "role": {
+        "en": "Attention-related achievement contributor",
+        "zh": "注意力相关成就贡献者"
+      },
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Christopher Manning",
+        "zh": "克里斯托弗·曼宁"
+      },
+      "role": {
+        "en": "Attention-related achievement contributor",
+        "zh": "注意力相关成就贡献者"
+      },
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kelvin Xu",
+        "zh": "徐凯文"
+      },
+      "role": {
+        "en": "Attention-related achievement contributor",
+        "zh": "注意力相关成就贡献者"
+      },
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -338,12 +381,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Montreal",
-      "zh": "蒙特利尔大学"
+      "en": "Jacobs University Bremen, University of Montreal, Stanford University, University of Toronto",
+      "zh": "不来梅雅各布大学、蒙特利尔大学、斯坦福大学、多伦多大学"
     },
     "country": {
-      "en": "Montreal, Canada",
-      "zh": "加拿大蒙特利尔"
+      "en": "Germany, Canada, United States",
+      "zh": "德国、加拿大、美国"
     },
     "coordinates": [
       45.5056,

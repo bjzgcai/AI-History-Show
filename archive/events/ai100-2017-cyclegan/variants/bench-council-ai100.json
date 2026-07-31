@@ -55,9 +55,9 @@
     "asset-2017-cyclegan-cycle-consistency"
   ],
   "sourceIds": [
-    "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks",
     "source-iccv-open-access-paper-page",
-    "source-cyclegan-project-page"
+    "source-cyclegan-project-page",
+    "source-unpaired-image-to-image-translation-using-cycle-consistent-adversarial-networks"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,36 @@
       },
       "avatar": "resources/images/external/ai100-2017-cyclegan/jun-yan-zhu-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Taesung Park",
+        "zh": "朴泰成"
+      },
+      "role": {
+        "en": "CycleGAN co-author",
+        "zh": "CycleGAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Alexei Efros",
+        "zh": "阿列克谢·埃夫罗斯"
+      },
+      "role": {
+        "en": "CycleGAN co-author",
+        "zh": "CycleGAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -338,11 +367,11 @@
   "location": {
     "name": {
       "en": "UC Berkeley",
-      "zh": "UC Berkeley"
+      "zh": "加州大学伯克利分校"
     },
     "country": {
-      "en": "Berkeley, United States",
-      "zh": "Berkeley, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.8715,

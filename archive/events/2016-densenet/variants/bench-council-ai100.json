@@ -51,15 +51,15 @@
     }
   ],
   "assetIds": [
-    "asset-2016-densenet-people-01",
+    "asset-2016-densenet-people-02",
     "asset-2016-densenet-architecture-01",
-    "asset-2016-densenet-people-02"
+    "asset-2016-densenet-people-01"
   ],
   "sourceIds": [
-    "source-densely-connected-convolutional-networks",
     "source-cvf-open-access-paper-page",
     "source-original-densenet-code-repository",
-    "source-meta-ai-publication-page"
+    "source-meta-ai-publication-page",
+    "source-densely-connected-convolutional-networks"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -133,7 +133,8 @@
       },
       "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
       "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -146,7 +147,22 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kilian Weinberger",
+        "zh": "基利安·温伯格"
+      },
+      "role": {
+        "en": "DenseNet co-author",
+        "zh": "DenseNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -328,12 +344,12 @@
   },
   "location": {
     "name": {
-      "en": "Cornell University",
-      "zh": "康奈尔大学"
+      "en": "Cornell University, Tsinghua University, Facebook AI Research",
+      "zh": "康奈尔大学、清华大学、Facebook 人工智能研究院"
     },
     "country": {
-      "en": "Ithaca, United States",
-      "zh": "美国伊萨卡"
+      "en": "United States, China",
+      "zh": "美国、中国"
     },
     "coordinates": [
       42.4534,

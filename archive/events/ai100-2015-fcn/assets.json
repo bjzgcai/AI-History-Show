@@ -1,0 +1,73 @@
+[
+  {
+    "id": "asset-2015-fcn-paper-first-page",
+    "type": "image",
+    "path": "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png",
+    "role": "paper-page",
+    "caption": {
+      "en": "FCN paper first page",
+      "zh": "FCN 论文首页"
+    },
+    "subcaption": {
+      "en": "First page of the original paper by Jonathan Long, Evan Shelhamer, and Trevor Darrell",
+      "zh": "乔纳森·朗、埃文·谢尔哈默与特雷弗·达雷尔原始论文首页"
+    },
+    "sourceId": "source-2015-fcn-primary",
+    "sourceName": {
+      "en": "arXiv",
+      "zh": "arXiv"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1411.4038",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
+        "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
+      },
+      "sourceUrl": "https://arxiv.org/pdf/1411.4038"
+    },
+    "displayUsage": {
+      "en": "Primary FCN event image and overview thumbnail",
+      "zh": "FCN 事件首图与首页缩略图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2015-fcn-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "Fully Convolutional Networks process explainer",
+      "zh": "全卷积网络流程解释图"
+    },
+    "subcaption": {
+      "en": "Convolutional score maps with learned upsampling and skip fusion",
+      "zh": "卷积分数图、可学习上采样与跳跃融合"
+    },
+    "sourceId": "source-2015-fcn-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://arxiv.org/abs/1411.4038",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  }
+]

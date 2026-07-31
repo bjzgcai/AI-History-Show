@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国山景城",
-      "en": "Mountain View, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "谷歌",
-      "en": "Google"
+      "en": "Google",
+      "zh": "Google"
     },
     "coordinates": [
       37.422,
@@ -37,21 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "christian-szegedy",
+      "name": {
+        "en": "Christian Szegedy",
+        "zh": "克里斯蒂安·塞格迪"
+      },
       "role": {
-        "zh": "GoogLeNet 论文第一作者",
-        "en": "Lead author of the GoogLeNet paper"
+        "en": "Lead author of the GoogLeNet paper",
+        "zh": "GoogLeNet 论文第一作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "google-research-team",
-      "role": {
-        "zh": "开发 Inception 架构",
-        "en": "Developed the Inception architecture"
+      "name": {
+        "en": "Vincent Vanhoucke",
+        "zh": "文森特·范霍克"
       },
+      "role": {
+        "en": "GooleNet (Inception) co-author",
+        "zh": "GooleNet (Inception) 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Google research team",
+        "zh": "谷歌 研究团队"
+      },
+      "role": {
+        "en": "Developed the Inception architecture",
+        "zh": "开发 Inception 架构"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

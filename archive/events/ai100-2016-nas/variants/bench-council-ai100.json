@@ -55,9 +55,9 @@
     "asset-2016-nas-controller-search"
   ],
   "sourceIds": [
-    "source-neural-architecture-search-with-reinforcement-learning",
     "source-iclr-openreview-record",
-    "source-google-ai-automl-overview"
+    "source-google-ai-automl-overview",
+    "source-neural-architecture-search-with-reinforcement-learning"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "resources/images/external/ai100-2016-nas/barret-zoph-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Quoc V. Le",
+        "zh": "黎国辉"
+      },
+      "role": {
+        "en": "NAS co-author",
+        "zh": "NAS 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -337,12 +352,12 @@
   },
   "location": {
     "name": {
-      "en": "Google Brain",
-      "zh": "Google Brain"
+      "en": "Google",
+      "zh": "Google"
     },
     "country": {
-      "en": "Mountain View, United States",
-      "zh": "美国山景城"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.3861,

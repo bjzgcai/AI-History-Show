@@ -24,9 +24,9 @@
     "asset-2014-adam-loss-trajectory"
   ],
   "sourceIds": [
-    "source-adam-a-method-for-stochastic-optimization",
     "source-pytorch-torch-optim-adam",
-    "source-tensorflow-keras-adam-optimizer"
+    "source-tensorflow-keras-adam-optimizer",
+    "source-adam-a-method-for-stochastic-optimization"
   ],
   "claimIds": [
     "claim-ai100-achievement",
@@ -91,7 +91,7 @@
   "figures": [
     {
       "name": {
-        "en": "Diederik P. Kingma",
+        "en": "Diederik Kingma",
         "zh": "迪德里克·P·金马"
       },
       "role": {
@@ -100,7 +100,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2014-adam_diederik-kingma.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -113,7 +114,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -265,12 +267,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Amsterdam / University of Toronto",
-      "zh": "阿姆斯特丹大学 / 多伦多大学"
+      "en": "OpenAI, University of Toronto",
+      "zh": "OpenAI、多伦多大学"
     },
     "country": {
-      "en": "Netherlands and Canada",
-      "zh": "荷兰与加拿大"
+      "en": "United States, Canada",
+      "zh": "美国、加拿大"
     },
     "coordinates": [
       52.3558,

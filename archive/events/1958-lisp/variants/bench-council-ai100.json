@@ -23,9 +23,9 @@
     "asset-1958-lisp-eval-flow"
   ],
   "sourceIds": [
-    "source-recursive-functions-of-symbolic-expressions",
     "source-lisp-i-programmer-s-manual",
-    "source-history-of-lisp"
+    "source-history-of-lisp",
+    "source-recursive-functions-of-symbolic-expressions"
   ],
   "claimIds": [
     "claim-ai100-achievement",
@@ -97,9 +97,10 @@
         "en": "Designer of LISP",
         "zh": "LISP 设计者"
       },
-      "avatar": "resources/images/figures/historical/john-mccarthy-1956-v2.png",
+      "avatar": "resources/images/bench-council-ai100/photos/1958-lisp_john-mccarthy.jpg",
       "avatarStyle": "transform: scale(1.08); transform-origin: 50% 45%;",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -218,8 +219,8 @@
       "zh": "麻省理工学院"
     },
     "country": {
-      "en": "MA, United States",
-      "zh": "美国，马萨诸塞州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.3601,

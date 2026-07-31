@@ -3,8 +3,8 @@
   "year": 2020,
   "date": "2020",
   "title": {
-    "zh": "AlphaFold2",
-    "en": "AlphaFold2"
+    "zh": "AlphaFold",
+    "en": "AlphaFold"
   },
   "summary": {
     "zh": "AI 百大成就",
@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国伦敦",
-      "en": "London, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "DeepMind",
-      "en": "DeepMind"
+      "en": "DeepMind",
+      "zh": "DeepMind"
     },
     "coordinates": [
       51.5072,
@@ -37,21 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "john-jumper",
+      "name": {
+        "en": "John Jumper",
+        "zh": "约翰·江珀"
+      },
       "role": {
-        "zh": "AlphaFold2 主要研究者",
-        "en": "AlphaFold2 lead researcher"
+        "en": "AlphaFold2 lead researcher",
+        "zh": "AlphaFold2 主要研究者"
       },
       "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "demis-hassabis",
+      "name": {
+        "en": "Demis Hassabis",
+        "zh": "德米斯·哈萨比斯"
+      },
       "role": {
-        "zh": "DeepMind 联合创始人与 AlphaFold 负责人",
-        "en": "DeepMind co-founder and AlphaFold leader"
+        "en": "DeepMind co-founder and AlphaFold leader",
+        "zh": "DeepMind 联合创始人与 AlphaFold 负责人"
       },
       "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

@@ -55,10 +55,10 @@
     "asset-2000-lle-neighbor-reconstruction"
   ],
   "sourceIds": [
-    "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding",
     "source-science-article-page",
     "source-pubmed-record-for-lle",
-    "source-scikit-learn-lle-documentation"
+    "source-scikit-learn-lle-documentation",
+    "source-nonlinear-dimensionality-reduction-by-locally-linear-embedding"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/external/ai100-2000-lle/sam-roweis-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -145,7 +146,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -309,12 +311,12 @@
   },
   "location": {
     "name": {
-      "en": "AT&T Labs",
-      "zh": "AT&T 实验室"
+      "en": "AT&T Labs, University College London",
+      "zh": "AT&T 实验室、伦敦大学学院"
     },
     "country": {
-      "en": "Florham Park, United States",
-      "zh": "美国弗洛勒姆帕克"
+      "en": "United States, United Kingdom",
+      "zh": "美国、英国"
     },
     "coordinates": [
       40.7879,

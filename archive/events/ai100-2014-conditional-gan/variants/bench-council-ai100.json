@@ -55,9 +55,9 @@
     "asset-2014-conditional-gan-conditioned-generator"
   ],
   "sourceIds": [
-    "source-conditional-generative-adversarial-nets",
     "source-generative-adversarial-network-overview",
-    "source-generative-adversarial-nets"
+    "source-generative-adversarial-nets",
+    "source-conditional-generative-adversarial-nets"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Simon Osindero",
+        "zh": "西蒙·奥辛德罗"
+      },
+      "role": {
+        "en": "Conditional GAN co-author",
+        "zh": "Conditional GAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -337,12 +352,12 @@
   },
   "location": {
     "name": {
-      "en": "University of Montreal",
-      "zh": "蒙特利尔大学"
+      "en": "University of Montreal, Yahoo",
+      "zh": "蒙特利尔大学、Yahoo"
     },
     "country": {
-      "en": "Montreal, Canada",
-      "zh": "加拿大蒙特利尔"
+      "en": "Canada, United States",
+      "zh": "加拿大、美国"
     },
     "coordinates": [
       45.5019,

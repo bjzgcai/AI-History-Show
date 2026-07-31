@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2001-gradient-boosting-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What does each new learner fit in gradient boosting?",
+      "zh": "梯度提升中每个新学习器拟合什么？"
+    },
+    "options": [
+      {
+        "en": "The current loss gradient or pseudo-residual",
+        "zh": "当前损失梯度或伪残差"
+      },
+      {
+        "en": "The raw file name",
+        "zh": "原始文件名"
+      },
+      {
+        "en": "A random class dictionary",
+        "zh": "随机类别字典"
+      },
+      {
+        "en": "Only the model depth",
+        "zh": "仅模型深度"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Each new weak learner fits the negative gradient, or pseudo-residual, of the current model’s loss. Adding that learner moves the ensemble toward lower loss in function space.",
+      "zh": "每个新的弱学习器拟合当前模型损失的负梯度，也就是伪残差。把该学习器加入集成，相当于在函数空间中朝更低损失方向移动。"
+    },
+    "sourceIds": [
+      "source-2001-gradient-boosting-primary"
+    ],
+    "assetIds": [
+      "asset-2001-gradient-boosting-explainer"
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "id": "ai100-2001-gradient-boosting",
+  "year": 2001,
+  "date": "2001",
+  "title": {
+    "en": "Gradient Boosting",
+    "zh": "梯度提升"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Boosting was often described through classification-specific reweighting rules. Friedman recast it as stage-wise function optimization, allowing the same idea to minimize many differentiable loss functions.</p><p>Each new weak learner fits the negative gradient, or pseudo-residual, of the current model’s loss. Adding that learner moves the ensemble toward lower loss in function space. Experts generally treat gradient boosting as the unifying optimization view behind modern boosted-tree systems. It became a dominant approach for structured data and enabled specialized implementations such as XGBoost and LightGBM.</p>",
+    "zh": "<p>Boosting 常被描述为分类任务特有的重加权规则。Friedman 把它重述为分阶段函数优化，使同一思想可以最小化多种可微损失函数。</p><p>每个新的弱学习器拟合当前模型损失的负梯度，也就是伪残差。把该学习器加入集成，相当于在函数空间中朝更低损失方向移动。专家通常把梯度提升视为现代提升树系统背后的统一优化视角。它成为结构化数据上的主导方法，并催生了 XGBoost、LightGBM 等专用实现。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
+    },
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "Jerome Friedman",
+        "zh": "杰罗姆·弗里德曼"
+      },
+      "role": {
+        "en": "CART monograph co-author",
+        "zh": "CART 专著共同作者"
+      },
+      "avatar": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

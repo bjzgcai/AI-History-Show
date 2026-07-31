@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "Berkeley, United States",
-      "en": "Berkeley, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "UC Berkeley",
-      "en": "UC Berkeley"
+      "en": "UC Berkeley",
+      "zh": "加州大学伯克利分校"
     },
     "coordinates": [
       37.8715,
@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "phillip-isola",
+      "name": {
+        "en": "Phillip Isola",
+        "zh": "菲利普·伊索拉"
+      },
       "role": {
-        "zh": "Pix2Pix 主要作者",
-        "en": "Pix2Pix lead author"
+        "en": "Pix2Pix lead author",
+        "zh": "Pix2Pix 主要作者"
       },
       "avatar": "resources/images/external/ai100-2017-pix2pix/phillip-isola-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Alexei Efros",
+        "zh": "阿列克谢·埃夫罗斯"
+      },
+      "role": {
+        "en": "Pix2Pix co-author",
+        "zh": "Pix2Pix 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

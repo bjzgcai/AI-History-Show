@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国安娜堡",
-      "en": "Ann Arbor, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "密歇根大学",
-      "en": "University of Michigan"
+      "en": "University of Michigan, Ann Arbor",
+      "zh": "密歇根大学安娜堡分校"
     },
     "coordinates": [
       42.278,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "john-h-holland",
+      "name": {
+        "en": "John Holland",
+        "zh": "约翰·H·霍兰德"
+      },
       "role": {
-        "zh": "提出遗传算法框架",
-        "en": "Developed the genetic algorithm framework"
+        "en": "Developed the genetic algorithm framework",
+        "zh": "提出遗传算法框架"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1975-genetic-algorithm_john-henry-holland.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大阿尔伯塔省",
-      "en": "Alberta, Canada"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "place": {
-      "zh": "阿尔伯塔大学",
-      "en": "University of Alberta"
+      "en": "University of Alberta",
+      "zh": "阿尔伯塔大学"
     },
     "coordinates": [
       53.5232,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "jonathan-schaeffer",
+      "name": {
+        "en": "Jonathan Schaeffer",
+        "zh": "乔纳森·谢弗"
+      },
       "role": {
-        "zh": "Chinook 团队负责人",
-        "en": "Leader of the Chinook team"
+        "en": "Leader of the Chinook team",
+        "zh": "Chinook 团队负责人"
       },
       "avatar": "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

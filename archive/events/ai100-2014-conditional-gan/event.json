@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大蒙特利尔",
-      "en": "Montreal, Canada"
+      "en": "Canada, United States",
+      "zh": "加拿大、美国"
     },
     "place": {
-      "zh": "蒙特利尔大学",
-      "en": "University of Montreal"
+      "en": "University of Montreal, Yahoo",
+      "zh": "蒙特利尔大学、Yahoo"
     },
     "coordinates": [
       45.5019,
@@ -37,11 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "mehdi-mirza",
-      "role": {
-        "zh": "Conditional GAN 主要作者",
-        "en": "Conditional GAN lead author"
+      "name": {
+        "en": "Mehdi Mirza",
+        "zh": "迈赫迪·米尔扎"
       },
+      "role": {
+        "en": "Conditional GAN lead author",
+        "zh": "Conditional GAN 主要作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Simon Osindero",
+        "zh": "西蒙·奥辛德罗"
+      },
+      "role": {
+        "en": "Conditional GAN co-author",
+        "zh": "Conditional GAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

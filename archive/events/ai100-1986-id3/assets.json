@@ -1,0 +1,108 @@
+[
+  {
+    "id": "asset-1986-id3-portrait",
+    "type": "image",
+    "path": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Ross Quinlan portrait",
+      "zh": "罗斯·昆兰肖像"
+    },
+    "subcaption": {
+      "en": "ID3 lead author",
+      "zh": "ID3 主要作者"
+    },
+    "sourceId": "source-1986-id3-portrait",
+    "sourceName": {
+      "en": "Prior portrait candidate",
+      "zh": "先前人工筛选肖像候选"
+    },
+    "sourceUrl": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
+    "rights": {
+      "status": "source-review-needed",
+      "license": {
+        "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+        "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
+      },
+      "sourceUrl": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg"
+    },
+    "displayUsage": {
+      "en": "Contributor portrait for the ID3 achievement page",
+      "zh": "用于ID3 决策树成就页面的人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1986-id3-explainer",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "en": "ID3 process explainer",
+      "zh": "ID3 决策树流程解释图"
+    },
+    "subcaption": {
+      "en": "Greedy information-gain splitting",
+      "zh": "贪心信息增益划分"
+    },
+    "sourceId": "source-1986-id3-primary",
+    "sourceName": {
+      "en": "Local original SVG",
+      "zh": "本地原创 SVG"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00116251",
+    "rights": {
+      "status": "documented-in-legacy",
+      "license": {
+        "en": "Original local SVG redraw; source figures are not copied.",
+        "zh": "本地原创 SVG 重绘；未复制来源图形。"
+      }
+    },
+    "displayUsage": {
+      "en": "Architecture and process explainer",
+      "zh": "架构与流程解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-1986-id3-paper-figure-3",
+    "type": "image",
+    "path": "resources/images/external/ai100-1986-id3/id3-paper-figure-3-complex-decision-tree.png",
+    "role": "paper-figure",
+    "caption": {
+      "en": "Figure 3. A complex decision tree",
+      "zh": "图 3：复杂决策树"
+    },
+    "subcaption": {
+      "en": "A multi-level tree over temperature, outlook, windy, and humid attributes",
+      "zh": "围绕温度、天气、风力和湿度属性展开的多层决策树"
+    },
+    "sourceId": "source-1986-id3-primary",
+    "sourceName": {
+      "en": "J.R. Quinlan, Induction of Decision Trees",
+      "zh": "J.R. Quinlan《决策树归纳》"
+    },
+    "sourceUrl": "https://doi.org/10.1007/BF00116251",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Cropped from Figure 3 on p. 88 of the primary paper for research-history reference; publisher copyright applies and redistribution rights should be reviewed before external publication.",
+        "zh": "裁取自原始论文第 88 页图 3，用于人工智能史资料引用；图像受出版方版权保护，对外发布前需复核再分发授权。"
+      }
+    },
+    "displayUsage": {
+      "en": "Primary-paper figure showing a complex ID3 decision-tree example",
+      "zh": "用于展示 ID3 复杂决策树示例的主论文图"
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": false
+  }
+]

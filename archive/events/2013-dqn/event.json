@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国伦敦",
-      "en": "London, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "DeepMind",
-      "en": "DeepMind"
+      "en": "Google DeepMind",
+      "zh": "Google DeepMind"
     },
     "coordinates": [
       51.523,
@@ -37,21 +37,59 @@
   ],
   "figures": [
     {
-      "figureId": "volodymyr-mnih",
+      "name": {
+        "en": "Volodymyr Mnih",
+        "zh": "沃洛迪米尔·姆尼赫"
+      },
       "role": {
-        "zh": "DQN 工作第一作者",
-        "en": "First author of DQN work"
+        "en": "First author of DQN work",
+        "zh": "DQN 工作第一作者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "david-silver",
+      "name": {
+        "en": "Martin Riedmiller",
+        "zh": "马丁·里德米勒"
+      },
       "role": {
-        "zh": "DeepMind 强化学习研究者",
-        "en": "DeepMind reinforcement learning researcher"
+        "en": "Deep Q Network co-author",
+        "zh": "Deep Q Network 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Koray Kavukcuoglu",
+        "zh": "科雷·卡武克丘奥卢"
+      },
+      "role": {
+        "en": "Deep Q Network co-author",
+        "zh": "Deep Q Network 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "David Silver",
+        "zh": "大卫·席尔瓦"
+      },
+      "role": {
+        "en": "DeepMind reinforcement learning researcher",
+        "zh": "DeepMind 强化学习研究者"
       },
       "avatar": "resources/images/figures/authoritative/david-silver.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

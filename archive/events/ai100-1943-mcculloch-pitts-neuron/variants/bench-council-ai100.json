@@ -132,7 +132,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -145,7 +146,8 @@
       },
       "avatar": "resources/images/external/ai100-1943-mcculloch-pitts-neuron/walter-pitts-at-a-blackboard.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -313,8 +315,8 @@
       "zh": "伊利诺伊大学芝加哥分校"
     },
     "country": {
-      "en": "Chicago, United States",
-      "zh": "美国芝加哥"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       41.8719,

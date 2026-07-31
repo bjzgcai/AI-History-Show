@@ -49,10 +49,10 @@
     "asset-2011-ibm-watson-evidence-ranking"
   ],
   "sourceIds": [
-    "source-watson-beyond-jeopardy",
     "source-building-watson-an-overview-of-the-deepqa-project",
     "source-ibm-watson-system-photo",
-    "source-david-ferrucci-portrait"
+    "source-david-ferrucci-portrait",
+    "source-watson-beyond-jeopardy"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -126,7 +126,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -284,8 +285,8 @@
   },
   "location": {
     "name": {
-      "en": "IBM Thomas J. Watson Research Center",
-      "zh": "IBM 托马斯·J·沃森 研究中心"
+      "en": "IBM",
+      "zh": "IBM"
     },
     "country": {
       "en": "United States",

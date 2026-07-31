@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2017-mask-r-cnn-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What additional output does Mask R-CNN predict for each instance?",
+      "zh": "Mask R-CNN 为每个实例额外预测什么？"
+    },
+    "options": [
+      {
+        "en": "A pixel mask",
+        "zh": "像素掩码"
+      },
+      {
+        "en": "A language translation",
+        "zh": "语言翻译"
+      },
+      {
+        "en": "A database key",
+        "zh": "数据库键"
+      },
+      {
+        "en": "A sound waveform",
+        "zh": "声音波形"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "A parallel mask head predicts a binary mask for every detected instance, while classification and box regression remain separate tasks. RoIAlign avoids the coordinate quantization of RoI pooling and preserves pixel-level alignment.",
+      "zh": "并行的掩码头为每个检测实例预测二值掩码，分类与边界框回归仍作为独立任务。RoIAlign 避免 RoI 池化的坐标量化，保留像素级对齐。"
+    },
+    "sourceIds": [
+      "source-2017-mask-r-cnn-primary"
+    ],
+    "assetIds": [
+      "asset-2017-mask-r-cnn-explainer"
+    ]
+  }
+]

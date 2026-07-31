@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2014-r-cnn-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What is processed separately in the original R-CNN pipeline?",
+      "zh": "原始 R-CNN 流程中什么会被分别处理？"
+    },
+    "options": [
+      {
+        "en": "Each proposed region",
+        "zh": "每个候选区域"
+      },
+      {
+        "en": "Only the full image once",
+        "zh": "仅整张图像一次"
+      },
+      {
+        "en": "Only class labels",
+        "zh": "仅类别标签"
+      },
+      {
+        "en": "Only background pixels",
+        "zh": "仅背景像素"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "The system generates candidate regions, warps each region to a fixed size, extracts CNN features, and classifies the regions with category-specific models. Bounding-box regression then refines the proposed locations.",
+      "zh": "系统先生成候选区域，把每个区域缩放到固定尺寸，再提取 CNN 特征并用类别模型进行分类。最后通过边界框回归进一步修正候选位置。"
+    },
+    "sourceIds": [
+      "source-2014-r-cnn-primary"
+    ],
+    "assetIds": [
+      "asset-2014-r-cnn-explainer"
+    ]
+  }
+]

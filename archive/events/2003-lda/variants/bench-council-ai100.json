@@ -56,9 +56,9 @@
     "asset-2003-lda-plate-model"
   ],
   "sourceIds": [
-    "source-latent-dirichlet-allocation",
     "source-david-m-blei-homepage",
-    "source-scikit-learn-latentdirichletallocation"
+    "source-scikit-learn-latentdirichletallocation",
+    "source-latent-dirichlet-allocation"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2003-lda_david-blei.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -143,9 +144,10 @@
         "en": "Co-author and probabilistic ML researcher",
         "zh": "共同作者，概率机器学习研究者"
       },
-      "avatar": "resources/images/figures/michael-i-jordan.jpg",
+      "avatar": "resources/images/1986-rnn/people/1986-rnn_people_01.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -300,12 +302,12 @@
   },
   "location": {
     "name": {
-      "en": "UC Berkeley / Stanford University",
-      "zh": "加州大学伯克利分校 / 斯坦福大学"
+      "en": "UC Berkeley, Stanford University",
+      "zh": "加州大学伯克利分校、斯坦福大学"
     },
     "country": {
-      "en": "California, United States",
-      "zh": "美国加利福尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.8715,

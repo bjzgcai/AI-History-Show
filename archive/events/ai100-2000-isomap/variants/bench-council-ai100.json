@@ -55,10 +55,10 @@
     "asset-2000-isomap-geodesic-map"
   ],
   "sourceIds": [
-    "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction",
     "source-science-article-page",
     "source-pubmed-record-for-isomap",
-    "source-scikit-learn-isomap-documentation"
+    "source-scikit-learn-isomap-documentation",
+    "source-a-global-geometric-framework-for-nonlinear-dimensionality-reduction"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/external/ai100-2000-isomap/joshua-tenenbaum-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -313,8 +314,8 @@
       "zh": "斯坦福大学"
     },
     "country": {
-      "en": "Stanford, United States",
-      "zh": "美国斯坦福"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.4275,

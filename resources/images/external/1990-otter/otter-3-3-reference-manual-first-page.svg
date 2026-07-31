@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1400" viewBox="0 0 1040 1400" role="img" aria-labelledby="title desc">
+  <title id="title">OTTER 3.3 Reference Manual first page</title>
+  <desc id="desc">A local document-style recreation of the first page shown for William McCune's OTTER 3.3 Reference Manual.</desc>
+  <rect width="1040" height="1400" fill="#f8f7f3"/>
+  <rect x="46" y="46" width="948" height="1308" fill="#fffefa" stroke="#e7e1d8" stroke-width="2"/>
+  <g fill="#000" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="520" y="112" font-size="30">Argonne National Laboratory</text>
+    <text x="520" y="148" font-size="30">9700 South Cass Avenue</text>
+    <text x="520" y="184" font-size="30">Argonne, IL 60439</text>
+
+    <line x1="378" y1="278" x2="662" y2="278" stroke="#000" stroke-width="4"/>
+    <text x="520" y="331" font-size="28">ANL/MCS-TM-263</text>
+    <line x1="378" y1="370" x2="662" y2="370" stroke="#000" stroke-width="4"/>
+
+    <text x="520" y="640" font-size="42" font-weight="700">OTTER 3.3 Reference Manual</text>
+    <text x="520" y="737" font-size="28">by</text>
+    <text x="520" y="824" font-size="36" font-style="italic">William McCune</text>
+
+    <text x="520" y="1110" font-size="30">Mathematics and Computer Science Division</text>
+    <text x="520" y="1194" font-size="30">Technical Memorandum No. 263</text>
+    <text x="520" y="1370" font-size="30">August 2003</text>
+  </g>
+</svg>

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国特丁顿",
-      "en": "Teddington, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "英国国家物理实验室",
-      "en": "National Physical Laboratory"
+      "en": "National Research Development Corporation",
+      "zh": "英国国家研究开发公司"
     },
     "coordinates": [
       51.4245,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "christopher-strachey",
+      "name": {
+        "en": "Christopher Strachey",
+        "zh": "克里斯托弗·斯特雷奇"
+      },
       "role": {
-        "zh": "早期跳棋程序开发者",
-        "en": "Developer of the early draughts program"
+        "en": "Developer of the early draughts program",
+        "zh": "早期跳棋程序开发者"
       },
       "avatar": "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

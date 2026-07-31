@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1993-c45-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What practical feature did C4.5 add beyond ID3?",
+      "zh": "C4.5 相比 ID3 增加了哪项实用能力？"
+    },
+    "options": [
+      {
+        "en": "Tree pruning and continuous-value handling",
+        "zh": "树剪枝与连续值处理"
+      },
+      {
+        "en": "Image generation",
+        "zh": "图像生成"
+      },
+      {
+        "en": "Policy gradients",
+        "zh": "策略梯度"
+      },
+      {
+        "en": "Speech synthesis",
+        "zh": "语音合成"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "C4.5 uses gain ratio, handles continuous and missing attributes, and prunes branches after training to improve generalization. It can also convert a learned tree into a compact set of classification rules.",
+      "zh": "C4.5 使用增益率，能够处理连续属性和缺失属性，并在训练后剪枝以提升泛化能力。它还可以把学习到的树转换为紧凑的分类规则集合。"
+    },
+    "sourceIds": [
+      "source-1993-c45-primary"
+    ],
+    "assetIds": [
+      "asset-1993-c45-explainer"
+    ]
+  }
+]

@@ -23,9 +23,9 @@
     "asset-1958-wangs-algorithm-pattern-proof"
   ],
   "sourceIds": [
-    "source-proving-theorems-by-pattern-recognition-i",
     "source-proving-theorems-by-pattern-recognition-ii",
-    "source-rockefeller-university-digital-commons-wang-hao"
+    "source-rockefeller-university-digital-commons-wang-hao",
+    "source-proving-theorems-by-pattern-recognition-i"
   ],
   "claimIds": [
     "claim-ai100-achievement",
@@ -99,7 +99,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1958-wangs-algorithm_hao-wang.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -232,12 +233,12 @@
   },
   "location": {
     "name": {
-      "en": "Bell Telephone Laboratories",
-      "zh": "贝尔电话实验室"
+      "en": "Bell Lab",
+      "zh": "贝尔实验室"
     },
     "country": {
-      "en": "Murray Hill, United States",
-      "zh": "美国，新泽西州默里山"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.6843,

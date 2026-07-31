@@ -1,0 +1,2190 @@
+{
+  "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/",
+  "retrievedAt": "2026-07-30",
+  "pageLastModified": "2026-07-16T07:20:10Z",
+  "role": "canonical-long-term-ai100-membership",
+  "uniqueWorkCount": 119,
+  "expandedPublicationRowCount": 157,
+  "items": [
+    {
+      "area": "Theory",
+      "work": "Turing test",
+      "years": [
+        "1950"
+      ],
+      "publications": [
+        {
+          "title": "Computing machinery and intelligence",
+          "citation": "21510"
+        }
+      ],
+      "contributors": "Alan Turing",
+      "institution": "Manchester University",
+      "country": "UK",
+      "eventId": "1950-turing-test"
+    },
+    {
+      "area": "Theory",
+      "work": "Complexity theory",
+      "years": [
+        "1971"
+      ],
+      "publications": [
+        {
+          "title": "The Complexity of Theorem Proving Procedures",
+          "citation": "10695"
+        }
+      ],
+      "contributors": "Stephen Cook",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "eventId": "1971-complexity-theory"
+    },
+    {
+      "area": "Theory",
+      "work": "VC theory",
+      "years": [
+        "1960-1990"
+      ],
+      "publications": [
+        {
+          "title": "The nature of statistical learning theory",
+          "citation": "104601"
+        }
+      ],
+      "contributors": "Vladimir Vapnik, Alexey Chervonenkis",
+      "institution": "Institute of Control Sciences Moscow",
+      "country": "Russia",
+      "eventId": "1971-vc-theory"
+    },
+    {
+      "area": "Automated theorem proving",
+      "work": "Logic Theorist",
+      "years": [
+        "1956"
+      ],
+      "publications": [
+        {
+          "title": "The logic theory machine-a complex information processing system",
+          "citation": "1046"
+        }
+      ],
+      "contributors": "Allen Newell, Herbert Simon",
+      "institution": "Carnegie Mellon University",
+      "country": "USA",
+      "eventId": "1956-logic-theorist"
+    },
+    {
+      "area": "Automated theorem proving",
+      "work": "Wang's algorithm",
+      "years": [
+        "1958-1961"
+      ],
+      "publications": [
+        {
+          "title": "Proving theorems by pattern recognition I (1960)",
+          "citation": "173"
+        },
+        {
+          "title": "Proving theorems by pattern recognition II (1961)",
+          "citation": "1083"
+        },
+        {
+          "title": "Toward mechanical mathematics (1960)",
+          "citation": "456"
+        }
+      ],
+      "contributors": "Hao Wang",
+      "institution": "Bell Lab",
+      "country": "USA",
+      "eventId": "1958-wangs-algorithm"
+    },
+    {
+      "area": "Automated theorem proving",
+      "work": "Davis-Putnam algorithm & DPLL",
+      "years": [
+        "1960",
+        "1961"
+      ],
+      "publications": [
+        {
+          "title": "A Computing Procedure for Quantification Theory",
+          "citation": "4358"
+        },
+        {
+          "title": "A machine program for theorem-proving",
+          "citation": "4874"
+        }
+      ],
+      "contributors": "Martin Davis, Hilary Putnam, Donald Loveland",
+      "institution": "Rensselaer Polytechnic Institute, Princeton University, New York University",
+      "country": "USA",
+      "eventId": "1960-davis-putnam-dpll"
+    },
+    {
+      "area": "Automated theorem proving",
+      "work": "Resolution method",
+      "years": [
+        "1965"
+      ],
+      "publications": [
+        {
+          "title": "A machine-oriented logic based on the resolution principle",
+          "citation": "6573"
+        }
+      ],
+      "contributors": "John Robinson",
+      "institution": "Argonne Nalionrd Laboratory",
+      "country": "USA",
+      "eventId": "1965-resolution-method"
+    },
+    {
+      "area": "Automated theorem proving",
+      "work": "Otter",
+      "years": [
+        "1990s"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "William McCune",
+      "institution": "Argonne National Laboratory",
+      "country": "USA",
+      "eventId": "1990-otter"
+    },
+    {
+      "area": "Language",
+      "work": "LISP",
+      "years": [
+        "1958"
+      ],
+      "publications": [
+        {
+          "title": "Recursive functions of symbolic expressions and their computation by machin (1960)",
+          "citation": "2491"
+        }
+      ],
+      "contributors": "John McCarthy",
+      "institution": "MIT",
+      "country": "USA",
+      "eventId": "1958-lisp"
+    },
+    {
+      "area": "Language",
+      "work": "PROLOG",
+      "years": [
+        "1973"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "Alain Colmerauer, Robert Kowalski",
+      "institution": "University of Edinburgh",
+      "country": "UK",
+      "eventId": "1973-prolog"
+    },
+    {
+      "area": "ChatBot",
+      "work": "ELIZA",
+      "years": [
+        "1964-1967"
+      ],
+      "publications": [
+        {
+          "title": "ELIZA-a computer program for the study of natural language communication between man and machine",
+          "citation": "6890"
+        },
+        {
+          "title": "Computer power and human reason: From judgment to calculation",
+          "citation": "5214"
+        }
+      ],
+      "contributors": "Joseph Weizenbaum",
+      "institution": "MIT",
+      "country": "USA",
+      "eventId": "1966-eliza"
+    },
+    {
+      "area": "ChatBot",
+      "work": "SHRDLU",
+      "years": [
+        "1968-1970"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "Terry Winograd",
+      "institution": "MIT",
+      "country": "USA",
+      "eventId": "1970-shrdlu"
+    },
+    {
+      "area": "ChatBot",
+      "work": "IBM Watson",
+      "years": [
+        "2000"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "David Ferrucci",
+      "institution": "IBM",
+      "country": "USA",
+      "eventId": "2011-ibm-watson"
+    },
+    {
+      "area": "Game",
+      "work": "Christopher Strachey's Draughts",
+      "years": [
+        "1951"
+      ],
+      "publications": [
+        {
+          "title": "Logical or non-mathematical programmes",
+          "citation": "62"
+        }
+      ],
+      "contributors": "Christopher Strachey",
+      "institution": "National Research Development Corporation",
+      "country": "UK",
+      "eventId": "1951-strachey-draughts"
+    },
+    {
+      "area": "Game",
+      "work": "Chinook",
+      "years": [
+        "1989-2007"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "Jonathan Schaeffer",
+      "institution": "University of Alberta",
+      "country": "Canada",
+      "eventId": "1994-chinook"
+    },
+    {
+      "area": "Game",
+      "work": "Deep Blue",
+      "years": [
+        "1996"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "Feng-hsiung Hsu, Murray Campbell, Arthur Hoane, Jerry Brody",
+      "institution": "IBM",
+      "country": "USA",
+      "eventId": "1997-deep-blue"
+    },
+    {
+      "area": "Perception",
+      "work": "Pandemonium",
+      "years": [
+        "1959"
+      ],
+      "publications": [
+        {
+          "title": "Pandemonium: a paradigm for learning",
+          "citation": "1611"
+        }
+      ],
+      "contributors": "Oliver Selfridge",
+      "institution": "MIT",
+      "country": "USA",
+      "eventId": "1959-pandemonium"
+    },
+    {
+      "area": "Knowlege representation",
+      "work": "Frame",
+      "years": [
+        "1974"
+      ],
+      "publications": [
+        {
+          "title": "A Framework for Representing Knowledge",
+          "citation": "14989"
+        }
+      ],
+      "contributors": "Marvin Minsky",
+      "institution": "MIT",
+      "country": "USA",
+      "eventId": "1974-frame"
+    },
+    {
+      "area": "Knowlege representation",
+      "work": "Cyc",
+      "years": [
+        "1984"
+      ],
+      "publications": [
+        {
+          "title": "CYC: Using common sense knowledge to overcome brittleness and knowledge acquisition bottlenecks",
+          "citation": "560"
+        }
+      ],
+      "contributors": "Douglas Lenat",
+      "institution": "MCC",
+      "country": "USA",
+      "eventId": "1984-cyc"
+    },
+    {
+      "area": "Expert system",
+      "work": "Dendral",
+      "years": [
+        "1965"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "Edward Feigenbaum, Bruce Buchanan, Joshua Lederberg, Carl Djerassi",
+      "institution": "Stanford University",
+      "country": "USA",
+      "eventId": "1965-dendral"
+    },
+    {
+      "area": "Expert system",
+      "work": "XCON-R1",
+      "years": [
+        "1978"
+      ],
+      "publications": [
+        {
+          "title": "R1: A rule-based configurer of computer systems",
+          "citation": "1682"
+        }
+      ],
+      "contributors": "John McDermott",
+      "institution": "CMU",
+      "country": "USA",
+      "eventId": "1980-xcon-r1"
+    },
+    {
+      "area": "Cluster, Classification, Regression",
+      "work": "Kmeans",
+      "years": [
+        "1957"
+      ],
+      "publications": [
+        {
+          "title": "Least squares quantization in PCM (1982)",
+          "citation": "18533"
+        }
+      ],
+      "contributors": "Stuart Lloyd",
+      "institution": "Bell Lab",
+      "country": "USA",
+      "eventId": "1957-kmeans"
+    },
+    {
+      "area": "Cluster, Classification, Regression",
+      "work": "DBSCAN",
+      "years": [
+        "1996"
+      ],
+      "publications": [
+        {
+          "title": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+          "citation": "29901"
+        }
+      ],
+      "contributors": "Martin Ester, Xiaowei Xu",
+      "institution": "University of Munic",
+      "country": "Germany",
+      "eventId": "1996-dbscan"
+    },
+    {
+      "area": "Cluster, Classification, Regression",
+      "work": "Spectral clustering",
+      "years": [
+        "2000",
+        "2001"
+      ],
+      "publications": [
+        {
+          "title": "Normalized Cuts and Image Segmentation",
+          "citation": "19732"
+        },
+        {
+          "title": "On spectral clustering: Analysis and an algorithm",
+          "citation": "11945"
+        }
+      ],
+      "contributors": "Jianbo Shi, Jitendra Malik, Andrew Ng, Yair Weiss",
+      "institution": "University of Pennsylvania, U.C. Berkeley, Hebrew University",
+      "country": "USA, Israel",
+      "eventId": "2000-spectral-clustering"
+    },
+    {
+      "area": "Cluster, Classification, Regression",
+      "work": "KNN",
+      "years": [
+        "1967"
+      ],
+      "publications": [
+        {
+          "title": "Nearest neighbor pattern classification",
+          "citation": "17605"
+        }
+      ],
+      "contributors": "Thomas Cover, Peter Hart",
+      "institution": "University of Stanford, Stanford Research Institute",
+      "country": "USA",
+      "eventId": "ai100-1967-knn"
+    },
+    {
+      "area": "Cluster, Classification, Regression",
+      "work": "Ridge",
+      "years": [
+        "1970"
+      ],
+      "publications": [
+        {
+          "title": "Ridge regression: Biased estimation for nonorthogonal problems",
+          "citation": "15332"
+        }
+      ],
+      "contributors": "Arthur Hoerl, Robert Kennard",
+      "institution": "University of Delawar",
+      "country": "USA",
+      "eventId": "ai100-1970-ridge"
+    },
+    {
+      "area": "Cluster, Classification, Regression",
+      "work": "SVM",
+      "years": [
+        "1992",
+        "1995"
+      ],
+      "publications": [
+        {
+          "title": "A training algorithm for optimal margin classifiers",
+          "citation": "63346"
+        },
+        {
+          "title": "Support-vector networks",
+          "citation": "16549"
+        }
+      ],
+      "contributors": "Bernhard Boser, Vladimir Vapnik, Corinna Cortes",
+      "institution": "Bell Lab",
+      "country": "USA",
+      "eventId": "1992-svm"
+    },
+    {
+      "area": "Cluster, Classification, Regression",
+      "work": "Lasso",
+      "years": [
+        "1996"
+      ],
+      "publications": [
+        {
+          "title": "Regression shrinkage and selection via the lasso",
+          "citation": "55395"
+        }
+      ],
+      "contributors": "Robert Tibshirani",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "eventId": "1996-lasso"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "SIFT",
+      "years": [
+        "1999",
+        "2004"
+      ],
+      "publications": [
+        {
+          "title": "Object recognition from local scale-invariant features",
+          "citation": "24749"
+        },
+        {
+          "title": "Distinctive image features from scale-invariant keypoints",
+          "citation": "72302"
+        }
+      ],
+      "contributors": "David Lowe",
+      "institution": "University of British Columbia",
+      "country": "Canada",
+      "eventId": "1999-sift"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "HOG",
+      "years": [
+        "2005"
+      ],
+      "publications": [
+        {
+          "title": "Histograms of oriented gradients for human detection",
+          "citation": "43894"
+        }
+      ],
+      "contributors": "Navneet Dalal, Bill Triggs",
+      "institution": "INRIA",
+      "country": "France",
+      "eventId": "ai100-2005-hog"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "SURF",
+      "years": [
+        "2006"
+      ],
+      "publications": [
+        {
+          "title": "Surf: Speeded up robust features",
+          "citation": "36237"
+        }
+      ],
+      "contributors": "Herbert Bay, Andreas Ess",
+      "institution": "ETH Zurich",
+      "country": "Switzerland",
+      "eventId": "ai100-2006-surf"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "Kernel PCA",
+      "years": [
+        "1997",
+        "1998"
+      ],
+      "publications": [
+        {
+          "title": "Kernel principal component analysis",
+          "citation": "3193"
+        },
+        {
+          "title": "Nonlinear component analysis as a kernel eigenvalue problem",
+          "citation": "10615"
+        }
+      ],
+      "contributors": "Bernhard Schölkopf, Klaus-Robert Muller",
+      "institution": "Max Planck Institute for Biological Cybernetics",
+      "country": "Germany",
+      "eventId": "ai100-1997-kernel-pca"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "NMF",
+      "years": [
+        "1999",
+        "2000"
+      ],
+      "publications": [
+        {
+          "title": "Learning the parts of objects by non-negative matrix factorization",
+          "citation": "15562"
+        },
+        {
+          "title": "Algorithms for non-negative matrix factorization",
+          "citation": "11766"
+        }
+      ],
+      "contributors": "Daniel Lee, H Sebastian Seung",
+      "institution": "Bell Lab, MIT",
+      "country": "USA",
+      "eventId": "ai100-1999-nmf"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "Isomap",
+      "years": [
+        "2000"
+      ],
+      "publications": [
+        {
+          "title": "A global geometric framework for nonlinear dimensionality reduction",
+          "citation": "16447"
+        }
+      ],
+      "contributors": "Joshua Tenenbaum",
+      "institution": "Stanford University",
+      "country": "USA",
+      "eventId": "ai100-2000-isomap"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "Locally linear embedding",
+      "years": [
+        "2000"
+      ],
+      "publications": [
+        {
+          "title": "Nonlinear dimensionality reduction by locally linear embedding",
+          "citation": "18075"
+        }
+      ],
+      "contributors": "Sam Roweis, Lawrence Saul",
+      "institution": "AT&T Labs, University College London",
+      "country": "USA, UK",
+      "eventId": "ai100-2000-lle"
+    },
+    {
+      "area": "Dimension reduction , Feature extraction",
+      "work": "t-SNE",
+      "years": [
+        "2008"
+      ],
+      "publications": [
+        {
+          "title": "Visualizing data using t-SNE",
+          "citation": "38132"
+        }
+      ],
+      "contributors": "Laurens van der Maaten, Geoffrey Hinton",
+      "institution": "Tilburg University, University of Toronto",
+      "country": "Netherlands, Canada",
+      "eventId": "2008-tsne"
+    },
+    {
+      "area": "Neural Network",
+      "work": "McCulloch-Pitts neuron",
+      "years": [
+        "1943"
+      ],
+      "publications": [
+        {
+          "title": "logical calculus of the ideas immanent in nervous activity",
+          "citation": "28581"
+        }
+      ],
+      "contributors": "Warren McCulloch, Walter Pitts",
+      "institution": "University of Illinois at Chicago",
+      "country": "USA",
+      "eventId": "ai100-1943-mcculloch-pitts-neuron"
+    },
+    {
+      "area": "Neural Network",
+      "work": "SNARC",
+      "years": [
+        "1951"
+      ],
+      "publications": [
+
+      ],
+      "contributors": "Marvin Minsky",
+      "institution": "Princeton University",
+      "country": "USA",
+      "eventId": "ai100-1951-snarc"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Rosenblatt Perceptron",
+      "years": [
+        "1958",
+        "1962"
+      ],
+      "publications": [
+        {
+          "title": "The perceptron: a probabilistic model for information storage and organization in the brain",
+          "citation": "17938"
+        },
+        {
+          "title": "Principles of neurodynamics: Perceptrons and the theory of brain mechanisms",
+          "citation": "9677"
+        }
+      ],
+      "contributors": "Frank Rosenblatt",
+      "institution": "Cornell University",
+      "country": "USA",
+      "eventId": "1957-perceptron"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Hopfield network",
+      "years": [
+        "1982",
+        "1984",
+        "1985"
+      ],
+      "publications": [
+        {
+          "title": "Neural networks and physical systems with emergent collective computational abilities",
+          "citation": "26481"
+        },
+        {
+          "title": "Neurons with graded response have collective computational properties like those of two-state neurons",
+          "citation": "9293"
+        },
+        {
+          "title": "Neural computation of decisions in optimization problems",
+          "citation": "8723"
+        }
+      ],
+      "contributors": "John Hopfield",
+      "institution": "California Institute of Technology",
+      "country": "USA",
+      "eventId": "1982-hopfield-network"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Self-organizing map",
+      "years": [
+        "1982"
+      ],
+      "publications": [
+        {
+          "title": "Self-organized formation of topologically correct feature maps",
+          "citation": "13313"
+        }
+      ],
+      "contributors": "Teuvo Kohonen",
+      "institution": "Helsinki University of Technolog",
+      "country": "Finland",
+      "eventId": "ai100-1982-som"
+    },
+    {
+      "area": "Neural Network",
+      "work": "DBN",
+      "years": [
+        "2006"
+      ],
+      "publications": [
+        {
+          "title": "A fast learning algorithm for deep belief nets",
+          "citation": "20213"
+        },
+        {
+          "title": "Reducing the dimensionality of data with neural networks",
+          "citation": "21334"
+        }
+      ],
+      "contributors": "Geoffrey Hinton, Yee-Whye The, Ruslan Salakhutdinov",
+      "institution": "University of Toronto, National University of Singapore",
+      "country": "Canada, Singapore",
+      "eventId": "2006-dbn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Back-propagation",
+      "years": [
+        "1967",
+        "1986"
+      ],
+      "publications": [
+        {
+          "title": "A theory of adaptive pattern classifiers",
+          "citation": "767"
+        },
+        {
+          "title": "Learning representations by back-propagating errors",
+          "citation": "35330"
+        }
+      ],
+      "contributors": "Shun'ichi Amari, David Rumelhart, Ronald Williams",
+      "institution": "Kyushu University, UC San Diego, CMU",
+      "country": "Japan, USA",
+      "eventId": "ai100-1967-back-propagation"
+    },
+    {
+      "area": "Neural Network",
+      "work": "ReLU",
+      "years": [
+        "1969",
+        "2011"
+      ],
+      "publications": [
+        {
+          "title": "Visual feature extraction by a multilayered network of analog threshold elements",
+          "citation": "186"
+        },
+        {
+          "title": "Deep Sparse Rectifier Neural Networks",
+          "citation": "11109"
+        }
+      ],
+      "contributors": "Kunihiko Fukushima, Xavier Glorot, Yoshua Bengio",
+      "institution": "NHK Broadcasting Science Research Laboratories, University of Montreal",
+      "country": "Japan, Canada",
+      "eventId": "ai100-1969-relu"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Adam",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Adam: A method for stochastic optimization",
+          "citation": "162259"
+        }
+      ],
+      "contributors": "Diederik Kingma, Jimmy Ba",
+      "institution": "OpenAI, University of Toronto",
+      "country": "USA, Canada",
+      "eventId": "2014-adam"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Dropout",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Dropout: a simple way to prevent neural networks from overfitting",
+          "citation": "46447"
+        }
+      ],
+      "contributors": "Nitish Srivastava, Ruslan Salakhutdinov",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "eventId": "2014-dropout"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Batch Normalization",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+          "citation": "50391"
+        }
+      ],
+      "contributors": "Sergey Ioffe, Christian Szegedy",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "ai100-2015-batch-normalization"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Neocognitron",
+      "years": [
+        "1980"
+      ],
+      "publications": [
+        {
+          "title": "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
+          "citation": "8344"
+        }
+      ],
+      "contributors": "Kunihiko Fukushima",
+      "institution": "NHK Broadcasting Science Research Laboratories",
+      "country": "Japan",
+      "eventId": "ai100-1980-neocognitron"
+    },
+    {
+      "area": "Neural Network",
+      "work": "LeNet",
+      "years": [
+        "1989",
+        "1998"
+      ],
+      "publications": [
+        {
+          "title": "Backpropagation Applied to Handwritten Zip Code Recognition",
+          "citation": "15372"
+        },
+        {
+          "title": "Gradient-based learning applied to document recognition",
+          "citation": "59141"
+        }
+      ],
+      "contributors": "Yann LeCun",
+      "institution": "Bell Labl",
+      "country": "USA",
+      "eventId": "1989-cnn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "AlexNet",
+      "years": [
+        "2012"
+      ],
+      "publications": [
+        {
+          "title": "Imagenet classification with deep convolutional neural networks",
+          "citation": "142908"
+        }
+      ],
+      "contributors": "Alex Krizhevsky, Geoffrey Hinton",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "eventId": "2012-alexnet"
+    },
+    {
+      "area": "Neural Network",
+      "work": "VGG",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Very deep convolutional networks for large-scale image recognition",
+          "citation": "111338"
+        }
+      ],
+      "contributors": "Karen Simonyan, Andrew Zisserman",
+      "institution": "University of Oxford",
+      "country": "UK",
+      "eventId": "2014-vgg"
+    },
+    {
+      "area": "Neural Network",
+      "work": "GooleNet (Inception)",
+      "years": [
+        "2015",
+        "2016",
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Going deeper with convolutions",
+          "citation": "54115"
+        },
+        {
+          "title": "Rethinking the inception architecture for computer vision",
+          "citation": "29223"
+        },
+        {
+          "title": "Inception-v4, inception-resnet and the impact of residual connections on learning",
+          "citation": "15312"
+        }
+      ],
+      "contributors": "Christian Szegedy, Vincent Vanhoucke",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "2015-googlenet-inception"
+    },
+    {
+      "area": "Neural Network",
+      "work": "ResNet",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Deep Residual Learning for Image Recognition",
+          "citation": "188934"
+        }
+      ],
+      "contributors": "Kaiming He, Jian Sun",
+      "institution": "Microsoft Research (Asia)",
+      "country": "China",
+      "eventId": "2015-resnet"
+    },
+    {
+      "area": "Neural Network",
+      "work": "DenseNet",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Densely connected convolutional networks",
+          "citation": "39133"
+        }
+      ],
+      "contributors": "Gao Huang, Zhuang Liu, Kilian Weinberger",
+      "institution": "Cornell University, Tsinghua University, Facebook AI Research",
+      "country": "USA, China",
+      "eventId": "2016-densenet"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Mobilenets",
+      "years": [
+        "2017",
+        "2018"
+      ],
+      "publications": [
+        {
+          "title": "Mobilenets: Efficient convolutional neural networks for mobile vision applications",
+          "citation": "21737"
+        },
+        {
+          "title": "Mobilenetv2: Inverted residuals and linear bottlenecks",
+          "citation": "18118"
+        }
+      ],
+      "contributors": "Andrew Howard, Mark Sandler",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "ai100-2017-mobilenets"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Squeeze-and-excitation",
+      "years": [
+        "2018"
+      ],
+      "publications": [
+        {
+          "title": "Squeeze-and-excitation networks",
+          "citation": "25132"
+        }
+      ],
+      "contributors": "Jie Hu, Gang Sun",
+      "institution": "Momenta, University of Oxford",
+      "country": "China, UK",
+      "eventId": "ai100-2018-squeeze-excitation"
+    },
+    {
+      "area": "Neural Network",
+      "work": "R-cnn",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Rich feature hierarchies for accurate object detection and semantic segmentation",
+          "citation": "35745"
+        }
+      ],
+      "contributors": "Ross Girshick, Jitendra Malik",
+      "institution": "UC Berkeley",
+      "country": "USA",
+      "eventId": "ai100-2014-r-cnn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Fast r-cnn",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Fast R-CNN",
+          "citation": "30211"
+        }
+      ],
+      "contributors": "Ross Girshick",
+      "institution": "Microsoft Research",
+      "country": "USA",
+      "eventId": "ai100-2015-fast-r-cnn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Faster r-cnn",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Faster R-CNN: Towards real-time object detection with region proposal networks",
+          "citation": "65754"
+        }
+      ],
+      "contributors": "Shaoqing Ren, Jian Sun",
+      "institution": "Microsoft Research (Asia)",
+      "country": "China",
+      "eventId": "2015-faster-r-cnn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Mask r-cnn",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Mask R-CNN",
+          "citation": "30287"
+        }
+      ],
+      "contributors": "Kaiming He, Ross Girshick",
+      "institution": "Facebook",
+      "country": "USA",
+      "eventId": "ai100-2017-mask-r-cnn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "FPN (RetinaNet)",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Feature pyramid networks for object detection",
+          "citation": "22063"
+        },
+        {
+          "title": "Focal loss for dense object detection",
+          "citation": "24933"
+        }
+      ],
+      "contributors": "Tsung-Yi Lin, Serge Belongie, Piotr Dollar",
+      "institution": "Facebook, Cornell University",
+      "country": "USA",
+      "eventId": "ai100-2017-fpn-retinanet"
+    },
+    {
+      "area": "Neural Network",
+      "work": "YOLO",
+      "years": [
+        "2016",
+        "2017",
+        "2018"
+      ],
+      "publications": [
+        {
+          "title": "You only look once: Unified, real-time object detection",
+          "citation": "40287"
+        },
+        {
+          "title": "YOLO9000: Better, Faster, Stronger",
+          "citation": "18709"
+        },
+        {
+          "title": "Yolov3: An incremental improvement",
+          "citation": "23635"
+        }
+      ],
+      "contributors": "Joseph Redmon, Ali Farhadi",
+      "institution": "University of Washington, Allen Institute for AI, Facebook AI Research",
+      "country": "USA",
+      "eventId": "2016-yolo"
+    },
+    {
+      "area": "Neural Network",
+      "work": "SSD",
+      "years": [
+        "2016"
+      ],
+      "publications": [
+        {
+          "title": "Ssd: Single shot multibox detector",
+          "citation": "33293"
+        }
+      ],
+      "contributors": "Wei Liu, Alexander Berg",
+      "institution": "UNC Chapel Hill, Zoox , Google, University of Michigan",
+      "country": "USA",
+      "eventId": "ai100-2016-ssd"
+    },
+    {
+      "area": "Neural Network",
+      "work": "FCN",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Fully convolutional networks for semantic segmentation",
+          "citation": "43947"
+        }
+      ],
+      "contributors": "Jonathan Long, Evan Shelhamer, Trevor Darrell",
+      "institution": "UC Berkeley",
+      "country": "USA",
+      "eventId": "ai100-2015-fcn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "U-net",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "U-net: Convolutional networks for biomedical image segmentation",
+          "citation": "71959"
+        }
+      ],
+      "contributors": "Olaf Ronneberger, Thomas Brox",
+      "institution": "University of Freiburg",
+      "country": "Germany",
+      "eventId": "2015-u-net"
+    },
+    {
+      "area": "Neural Network",
+      "work": "LSTM",
+      "years": [
+        "1996"
+      ],
+      "publications": [
+        {
+          "title": "Long short-term memory",
+          "citation": "92138"
+        }
+      ],
+      "contributors": "Sepp Hochreiter, Juergen Schmidhuber",
+      "institution": "Technical University of Munich, IDSIA",
+      "country": "Germany, Switzerland",
+      "eventId": "1997-lstm"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Seq2Seq",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+          "citation": "26352"
+        },
+        {
+          "title": "Sequence to sequence learning with neural networks",
+          "citation": "23773"
+        }
+      ],
+      "contributors": "Kyunghyun Cho, Yoshua Bengio, Ilya Sutskever, Quoc V. Le",
+      "institution": "University of Montreal,Jacobs University, University of Maine, Google",
+      "country": "Canada, Germany, France, USA",
+      "eventId": "ai100-2014-seq2seq"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Attention",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Neural machine translation by jointly learning to align and translate",
+          "citation": "31310"
+        },
+        {
+          "title": "Effective approaches to attention-based neural machine translation",
+          "citation": "9632"
+        },
+        {
+          "title": "Show, attend and tell: Neural image caption generation with visual attention",
+          "citation": "11300"
+        }
+      ],
+      "contributors": "Dzmitry Bahdanau, Yoshua Bengio, Minh-Thang Luong, Christopher Manning, Kelvin Xu",
+      "institution": "Jacobs University Bremen, University of Montreal, Stanford University, University of Toronto",
+      "country": "Germany,Canada,USA",
+      "eventId": "2014-attention"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Transformer",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Attention is all you need",
+          "citation": "92865"
+        }
+      ],
+      "contributors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan Gomez, Lukasz Kaiser",
+      "institution": "Google, University of Toronto",
+      "country": "USA, Canada",
+      "eventId": "2017-transformer"
+    },
+    {
+      "area": "Neural Network",
+      "work": "BERT",
+      "years": [
+        "2018"
+      ],
+      "publications": [
+        {
+          "title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+          "citation": "80349"
+        }
+      ],
+      "contributors": "Jacob Devlin, Kristina Toutanova",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "2018-bert"
+    },
+    {
+      "area": "Neural Network",
+      "work": "GPT",
+      "years": [
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "publications": [
+        {
+          "title": "Improving Language Understanding by Generative Pre-Training",
+          "citation": "6822"
+        },
+        {
+          "title": "Language models are unsupervised multitask learners",
+          "citation": "7187"
+        },
+        {
+          "title": "Language models are few-shot learners",
+          "citation": "15443"
+        }
+      ],
+      "contributors": "Alec Radford, Ilya Sutskever, Jeffrey Wu, Dario Amodei, Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah",
+      "institution": "OpenAI",
+      "country": "USA",
+      "eventId": "2018-gpt"
+    },
+    {
+      "area": "Neural Network",
+      "work": "ViT",
+      "years": [
+        "2020"
+      ],
+      "publications": [
+        {
+          "title": "An image is worth 16x16 words: Transformers for image recognition at scale",
+          "citation": "22968"
+        }
+      ],
+      "contributors": "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Neil Houlsby",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "ai100-2020-vit"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Swin Transformer",
+      "years": [
+        "2021"
+      ],
+      "publications": [
+        {
+          "title": "Swin transformer: Hierarchical vision transformer using shifted windows",
+          "citation": "11034"
+        }
+      ],
+      "contributors": "Ze Liu, Yutong Lin, Yue Cao, Han Hu",
+      "institution": "Microsoft Research Asia, University of Science and Technology of China, Xian Jiaotong University, Tsinghua University",
+      "country": "China",
+      "eventId": "ai100-2021-swin-transformer"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Neural Language Model",
+      "years": [
+        "2000"
+      ],
+      "publications": [
+        {
+          "title": "A Neural probabilistic language model",
+          "citation": "10580"
+        }
+      ],
+      "contributors": "Yoshua Bengio",
+      "institution": "University of Montreal",
+      "country": "Canada",
+      "eventId": "ai100-2000-neural-language-model"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Word2vec",
+      "years": [
+        "2013"
+      ],
+      "publications": [
+        {
+          "title": "Distributed representations of words and phrases and their compositionality",
+          "citation": "40956"
+        },
+        {
+          "title": "Efficient estimation of word representations in vector space",
+          "citation": "37952"
+        }
+      ],
+      "contributors": "Tomas Mikolov, Jeffrey Dean",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "2013-word2vec"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Glove",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Glove: Global vectors for word representation",
+          "citation": "37136"
+        }
+      ],
+      "contributors": "Jeffrey Pennington, Christopher Manning",
+      "institution": "Stanford University",
+      "country": "USA",
+      "eventId": "ai100-2014-glove"
+    },
+    {
+      "area": "Neural Network",
+      "work": "GAN",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Generative adversarial nets",
+          "citation": "61187"
+        }
+      ],
+      "contributors": "Ian Goodfellow, Yoshua Bengio",
+      "institution": "University of Montreal",
+      "country": "Canada",
+      "eventId": "2014-gan"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Conditional GAN",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Conditional Generative adversarial nets",
+          "citation": "11325"
+        }
+      ],
+      "contributors": "Mehdi Mirza, Simon Osindero",
+      "institution": "University of Montreal, Yahoo",
+      "country": "Canada, USA",
+      "eventId": "ai100-2014-conditional-gan"
+    },
+    {
+      "area": "Neural Network",
+      "work": "DCGAN",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Unsupervised representation learning with deep convolutional generative adversarial networks",
+          "citation": "16008"
+        }
+      ],
+      "contributors": "Alec Radford, Soumith Chintala",
+      "institution": "indico Research , Facebook",
+      "country": "USA",
+      "eventId": "ai100-2015-dcgan"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Wassertein GAN",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Wasserstein generative adversarial networks",
+          "citation": "14158"
+        }
+      ],
+      "contributors": "Martin Arjovsky, Leon Bottou",
+      "institution": "Courant Institute of Mathematical Sciences, Facebook",
+      "country": "USA",
+      "eventId": "ai100-2017-wasserstein-gan"
+    },
+    {
+      "area": "Neural Network",
+      "work": "CycleGAN",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+          "citation": "19686"
+        }
+      ],
+      "contributors": "Jun-Yan Zhu, Taesung Park, Alexei Efros",
+      "institution": "UC Berkeley",
+      "country": "USA",
+      "eventId": "ai100-2017-cyclegan"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Pix2Pix",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Image-to-image translation with conditional adversarial networks",
+          "citation": "20017"
+        }
+      ],
+      "contributors": "Phillip Isola, Alexei Efros",
+      "institution": "UC Berkeley",
+      "country": "USA",
+      "eventId": "ai100-2017-pix2pix"
+    },
+    {
+      "area": "Neural Network",
+      "work": "StyleGAN",
+      "years": [
+        "2019",
+        "2020"
+      ],
+      "publications": [
+        {
+          "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+          "citation": "8469"
+        },
+        {
+          "title": "Analyzing and improving the image quality of stylegan",
+          "citation": "4523"
+        }
+      ],
+      "contributors": "Tero Karras, Timo Aila",
+      "institution": "NVIDIA",
+      "country": "USA",
+      "eventId": "ai100-2019-stylegan"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Variational autoencoder",
+      "years": [
+        "2013"
+      ],
+      "publications": [
+        {
+          "title": "Auto-Encoding Variational Bayes",
+          "citation": "31045"
+        }
+      ],
+      "contributors": "Diederik Kingma, Max Welling",
+      "institution": "University of Amsterdam",
+      "country": "Netherlands",
+      "eventId": "ai100-2013-variational-autoencoder"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Diffusion Model",
+      "years": [
+        "2015",
+        "2020"
+      ],
+      "publications": [
+        {
+          "title": "Deep unsupervised learning using nonequilibrium thermodynamics",
+          "citation": "2190"
+        },
+        {
+          "title": "Denoising diffusion probabilistic models",
+          "citation": "4136"
+        }
+      ],
+      "contributors": "Jascha Sohl-Dickstein, Surya Ganguli, Jonathan Ho, Pieter Abbee",
+      "institution": "Stanford University, UC Berkeley",
+      "country": "USA",
+      "eventId": "ai100-2015-diffusion-model"
+    },
+    {
+      "area": "Neural Network",
+      "work": "GNN",
+      "years": [
+        "2005",
+        "2008"
+      ],
+      "publications": [
+        {
+          "title": "A new model for learning in graph domains",
+          "citation": "1984"
+        },
+        {
+          "title": "The graph neural network model",
+          "citation": "6808"
+        }
+      ],
+      "contributors": "Marco Gori, Franco Scarselli",
+      "institution": "University of Sienna, Hong Kong Baptist University, University of Wollongong",
+      "country": "Italy, China, Australia",
+      "eventId": "ai100-2005-gnn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "GCN",
+      "years": [
+        "2016"
+      ],
+      "publications": [
+        {
+          "title": "Semi-supervised classification with graph convolutional networks",
+          "citation": "27798"
+        }
+      ],
+      "contributors": "Thomas Kipf, Max Welling",
+      "institution": "University of Amsterdam",
+      "country": "Netherlands",
+      "eventId": "ai100-2016-gcn"
+    },
+    {
+      "area": "Neural Network",
+      "work": "GAT",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Graph attention networks",
+          "citation": "11901"
+        }
+      ],
+      "contributors": "Petar Velickovic, Yoshua Bengio",
+      "institution": "University of Cambridge, Montreal Institute for Learning Algorithms",
+      "country": "UK, Canada",
+      "eventId": "ai100-2017-gat"
+    },
+    {
+      "area": "Neural Network",
+      "work": "NAS",
+      "years": [
+        "2016"
+      ],
+      "publications": [
+        {
+          "title": "Neural architecture search with reinforcement learning",
+          "citation": "5600"
+        }
+      ],
+      "contributors": "Barret Zoph, Quoc V. Le",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "ai100-2016-nas"
+    },
+    {
+      "area": "Neural Network",
+      "work": "Deep compression",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding",
+          "citation": "9166"
+        }
+      ],
+      "contributors": "Song Han, William Dally",
+      "institution": "Stanford University,Tsinghua University, NVIDIA",
+      "country": "USA, China",
+      "eventId": "ai100-2015-deep-compression"
+    },
+    {
+      "area": "Neural Network",
+      "work": "knowledge distillation",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Distilling the knowledge in a neural network",
+          "citation": "16181"
+        }
+      ],
+      "contributors": "Geoffrey Hinton, Oriol Vinyals, Jeff Dean",
+      "institution": "Google",
+      "country": "USA",
+      "eventId": "ai100-2015-knowledge-distillation"
+    },
+    {
+      "area": "Neural Network",
+      "work": "ImageNet",
+      "years": [
+        "2009",
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Imagenet: A large-scale hierarchical image database",
+          "citation": "58393"
+        },
+        {
+          "title": "Imagenet large scale visual recognition challenge",
+          "citation": "40459"
+        }
+      ],
+      "contributors": "Jia Deng, Li Fei-Fei, Olga Russakovsky",
+      "institution": "Princeton University, Stanford University, University of Michigan, MIT, UNC Chapel Hill",
+      "country": "USA",
+      "eventId": "2009-imagenet"
+    },
+    {
+      "area": "Neural Network",
+      "work": "MS COCO",
+      "years": [
+        "2014"
+      ],
+      "publications": [
+        {
+          "title": "Microsoft coco: Common objects in context",
+          "citation": "40062"
+        }
+      ],
+      "contributors": "Tsung-Yi Lin, Piotr Dollar",
+      "institution": "Cornell NYC Tech, Toyota Technological Institute, Facebook, Microsoft, Brown University, California Institute of Technology, University of California at Irvine",
+      "country": "USA",
+      "eventId": "ai100-2014-ms-coco"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "Temporal-difference update",
+      "years": [
+        "1988"
+      ],
+      "publications": [
+        {
+          "title": "Learning to predict by the methods of temporal differences",
+          "citation": "7556"
+        }
+      ],
+      "contributors": "Richard Sutton",
+      "institution": "GTE Laboratories Incorporated",
+      "country": "USA",
+      "eventId": "1988-td-update"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "Q Learning",
+      "years": [
+        "1989",
+        "1992"
+      ],
+      "publications": [
+        {
+          "title": "Learning from delayed rewards",
+          "citation": "9624"
+        },
+        {
+          "title": "Q-learning",
+          "citation": "18141"
+        }
+      ],
+      "contributors": "Christopher Watkins, Peter Dayan",
+      "institution": "King's College, University of Edinburgh",
+      "country": "UK",
+      "eventId": "ai100-1989-q-learning"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "Deep Q Network",
+      "years": [
+        "2013",
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Playing atari with deep reinforcement learning",
+          "citation": "13087"
+        },
+        {
+          "title": "Human-level control through deep reinforcement learning",
+          "citation": "26305"
+        }
+      ],
+      "contributors": "Volodymyr Mnih, Martin Riedmiller, Koray Kavukcuoglu, David Silver",
+      "institution": "Google DeepMind",
+      "country": "UK",
+      "eventId": "2013-dqn"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "DDPG",
+      "years": [
+        "2015"
+      ],
+      "publications": [
+        {
+          "title": "Continuous control with deep reinforcement learning",
+          "citation": "13697"
+        }
+      ],
+      "contributors": "Timothy Lillicrap, Jonathan Hunt, Daan Wierstra",
+      "institution": "Google DeepMind",
+      "country": "UK",
+      "eventId": "ai100-2015-ddpg"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "AlphaGo",
+      "years": [
+        "2016",
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Mastering the game of Go with deep neural networks and tree search",
+          "citation": "16937"
+        },
+        {
+          "title": "Mastering the game of go without human knowledge",
+          "citation": "9655"
+        }
+      ],
+      "contributors": "David Silver, Aja Huang, Demis Hassabis, Julian Schrittwieser, Karen Simonyan",
+      "institution": "Google DeepMind",
+      "country": "UK, USA",
+      "eventId": "2016-alphago"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "AlphaFold",
+      "years": [
+        "2021"
+      ],
+      "publications": [
+        {
+          "title": "Highly accurate protein structure prediction with AlphaFold",
+          "citation": "15446"
+        }
+      ],
+      "contributors": "John Jumper, Demis Hassabis",
+      "institution": "DeepMind",
+      "country": "UK",
+      "eventId": "2020-alphafold"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "Actor-Critic",
+      "years": [
+        "1983"
+      ],
+      "publications": [
+        {
+          "title": "Neuronlike adaptive elements that can solve difficult learning control problems",
+          "citation": "4855"
+        }
+      ],
+      "contributors": "Andrew Barto, Charles Anderson",
+      "institution": "University of Massachusetts, Amherst",
+      "country": "USA",
+      "eventId": "ai100-1983-actor-critic"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "A3C",
+      "years": [
+        "2016"
+      ],
+      "publications": [
+        {
+          "title": "Asynchronous methods for deep reinforcement learning",
+          "citation": "9697"
+        }
+      ],
+      "contributors": "Volodymyr Mnih, Koray Kavukcuoglu",
+      "institution": "DeepMind, University of Montreal",
+      "country": "UK, Canada",
+      "eventId": "ai100-2016-a3c"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "SARSA",
+      "years": [
+        "1994"
+      ],
+      "publications": [
+        {
+          "title": "Online Q-Learning using Connectionist Systems",
+          "citation": "2479"
+        }
+      ],
+      "contributors": "Gavin Rummery, Mahesan Niranjan",
+      "institution": "University of Cambridge",
+      "country": "UK",
+      "eventId": "ai100-1994-sarsa"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "Williams's REINFORCE",
+      "years": [
+        "1992"
+      ],
+      "publications": [
+        {
+          "title": "Simple statistical gradient-following algorithms for connectionist reinforcement learning",
+          "citation": "10190"
+        }
+      ],
+      "contributors": "Ronald Williams",
+      "institution": "Northeastern Universit",
+      "country": "USA",
+      "eventId": "ai100-1992-reinforce"
+    },
+    {
+      "area": "Reinforce learning",
+      "work": "Policy gradient theorem",
+      "years": [
+        "1999"
+      ],
+      "publications": [
+        {
+          "title": "Policy gradient methods for reinforcement learning with function approximation",
+          "citation": "7376"
+        }
+      ],
+      "contributors": "Richard Sutton, Yishay Mansour",
+      "institution": "AT&T Labs",
+      "country": "USA",
+      "eventId": "ai100-1999-policy-gradient"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "CART",
+      "years": [
+        "1984"
+      ],
+      "publications": [
+        {
+          "title": "Classification and regression trees",
+          "citation": "61639"
+        }
+      ],
+      "contributors": "Leo Breiman, Richard olshen",
+      "institution": "UC Berkeley, Stanford University",
+      "country": "USA",
+      "eventId": "1984-cart"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "ID3",
+      "years": [
+        "1986"
+      ],
+      "publications": [
+        {
+          "title": "Induction of decision trees",
+          "citation": "29557"
+        }
+      ],
+      "contributors": "Ross Quinlan",
+      "institution": "New South Wales Institute of Technology",
+      "country": "Australia",
+      "eventId": "ai100-1986-id3"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "C4.5",
+      "years": [
+        "1993"
+      ],
+      "publications": [
+        {
+          "title": "C4. 5: Programs for machine learning",
+          "citation": "43386"
+        }
+      ],
+      "contributors": "Ross Quinlan",
+      "institution": "New South Wales Institute of Technology",
+      "country": "Australia",
+      "eventId": "ai100-1993-c45"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "Bagging",
+      "years": [
+        "1996"
+      ],
+      "publications": [
+        {
+          "title": "Bagging predictors",
+          "citation": "34768"
+        }
+      ],
+      "contributors": "Leo Breiman",
+      "institution": "UC Berkeley",
+      "country": "USA",
+      "eventId": "ai100-1996-bagging"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "Random forests",
+      "years": [
+        "1995",
+        "2001"
+      ],
+      "publications": [
+        {
+          "title": "Random decision forests",
+          "citation": "8450"
+        },
+        {
+          "title": "Random forests",
+          "citation": "117057"
+        }
+      ],
+      "contributors": "Tin Kam Ho, Leo Breiman",
+      "institution": "Bell Labs, UC Berkeley",
+      "country": "USA",
+      "eventId": "ai100-2001-random-forests"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "Boost",
+      "years": [
+        "1990"
+      ],
+      "publications": [
+        {
+          "title": "The strength of weak learnability",
+          "citation": "6850"
+        }
+      ],
+      "contributors": "Robert Schapire",
+      "institution": "MIT",
+      "country": "USA",
+      "eventId": "ai100-1990-boosting"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "Adaboost",
+      "years": [
+        "1997"
+      ],
+      "publications": [
+        {
+          "title": "A decision-theoretic generalization of on-line learning and an application to boosting",
+          "citation": "26782"
+        }
+      ],
+      "contributors": "Yoav Freund, Robert Schapire",
+      "institution": "Bell Lab",
+      "country": "USA",
+      "eventId": "ai100-1997-adaboost"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "Gradient boosting",
+      "years": [
+        "2001",
+        "2002"
+      ],
+      "publications": [
+        {
+          "title": "Greedy function approximation: a gradient boosting machine",
+          "citation": "24147"
+        },
+        {
+          "title": "Stochastic gradient boosting",
+          "citation": "7595"
+        }
+      ],
+      "contributors": "Jerome Friedman",
+      "institution": "Stanford University",
+      "country": "USA",
+      "eventId": "ai100-2001-gradient-boosting"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "XGBoost",
+      "years": [
+        "2016"
+      ],
+      "publications": [
+        {
+          "title": "XGBoost: A Scalable Tree Boosting System",
+          "citation": "31647"
+        }
+      ],
+      "contributors": "Tianqi Chen, Carlos Guestrin",
+      "institution": "University of Washington",
+      "country": "USA",
+      "eventId": "ai100-2016-xgboost"
+    },
+    {
+      "area": "Desion Tree, Ensemble learning",
+      "work": "LightGBM",
+      "years": [
+        "2017"
+      ],
+      "publications": [
+        {
+          "title": "Lightgbm: A highly efficient gradient boosting decision tree",
+          "citation": "9460"
+        }
+      ],
+      "contributors": "Guolin Ke, Tie-Yan Liu",
+      "institution": "Microsoft, Peking University",
+      "country": "USA",
+      "eventId": "ai100-2017-lightgbm"
+    },
+    {
+      "area": "Probabilistic graphical model",
+      "work": "Bayesian network",
+      "years": [
+        "1982",
+        "1988"
+      ],
+      "publications": [
+        {
+          "title": "Reverend Bayes on inference engines: A distributed hierarchical approach",
+          "citation": "1303"
+        },
+        {
+          "title": "Probabilistic reasoning in intelligent systems: networks of plausible inference",
+          "citation": "32565"
+        }
+      ],
+      "contributors": "Judea Pearl",
+      "institution": "University of California, Los Angeles",
+      "country": "USA",
+      "eventId": "1985-bayesian-network"
+    },
+    {
+      "area": "Probabilistic graphical model",
+      "work": "LDA",
+      "years": [
+        "2003"
+      ],
+      "publications": [
+        {
+          "title": "Latent dirichlet allocation",
+          "citation": "49298"
+        }
+      ],
+      "contributors": "David Blei, Michael Jordan",
+      "institution": "UC Berkeley, Stanford University",
+      "country": "USA",
+      "eventId": "2003-lda"
+    },
+    {
+      "area": "Probabilistic graphical model",
+      "work": "CRF",
+      "years": [
+        "2001"
+      ],
+      "publications": [
+        {
+          "title": "Conditional random fields: Probabilistic models for segmenting and labeling sequence data",
+          "citation": "18044"
+        }
+      ],
+      "contributors": "John Lafferty, Fernando Pereira",
+      "institution": "MIT, University of Pennsylvania",
+      "country": "USA",
+      "eventId": "ai100-2001-crf"
+    },
+    {
+      "area": "Evolutionary algorithms",
+      "work": "Genetic Algorithm",
+      "years": [
+        "1975"
+      ],
+      "publications": [
+        {
+          "title": "Adaptation in natural and artificial systems: An introductory analysis with applications to biology, control, and artificial intelligence",
+          "citation": "80564"
+        }
+      ],
+      "contributors": "John Holland",
+      "institution": "University of Michigan, Ann Arbor",
+      "country": "USA",
+      "eventId": "1975-genetic-algorithm"
+    },
+    {
+      "area": "Evolutionary algorithms",
+      "work": "Simulated annealing",
+      "years": [
+        "1983"
+      ],
+      "publications": [
+        {
+          "title": "Optimization by simulated annealing",
+          "citation": "56687"
+        }
+      ],
+      "contributors": "Scott Kirkpatrick, Mario Vecchi",
+      "institution": "IBM",
+      "country": "USA",
+      "eventId": "1983-simulated-annealing"
+    }
+  ]
+}

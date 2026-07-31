@@ -16,11 +16,12 @@
     "game-record-evolution"
   ],
   "visual": "go",
+  "overviewImageAssetId": "asset-david-silver-commons-portrait",
   "assetIds": [
-    "asset-2016-alphago-game-4-photo",
     "asset-david-silver-commons-portrait",
-    "asset-alphago-lee-sedol",
-    "asset-alphago-policy-value-search"
+    "asset-2016-alphago-game-4-photo",
+    "asset-alphago-policy-value-search",
+    "asset-alphago-lee-sedol"
   ],
   "sourceIds": [
     "source-david-silver-commons-portrait",

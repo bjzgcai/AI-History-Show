@@ -78,5 +78,45 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "biography"
+  },
+  {
+    "id": "source-dzmitry-bahdanau-mila-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "兹米特里·巴赫达瑙肖像（Mila 官方目录）",
+      "en": "Dzmitry Bahdanau portrait (Mila official directory)"
+    },
+    "url": "https://mila.quebec/en/directory/dzmitry-bahdanau",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "Mila 官方人物目录将该图片明确标注为兹米特里·巴赫达瑙肖像；本地副本用于事件首图、肖像与人物头像展示。",
+      "en": "Mila's official directory explicitly labels this image as a portrait of Dzmitry Bahdanau; the local copy is used for the event lead image, portrait, and figure avatar."
+    },
+    "purpose": "image-provenance"
+  },
+  {
+    "id": "source-kyunghyun-cho-nyu-courant-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "赵京贤肖像（纽约大学库朗研究所官方档案）",
+      "en": "Kyunghyun Cho portrait (NYU Courant official profile)"
+    },
+    "url": "https://cims.nyu.edu/people/profiles/CHO_Kyunghyun.html",
+    "language": "en",
+    "reliability": "primary",
+    "notes": {
+      "zh": "纽约大学库朗研究所官方个人档案将该图片明确标注为赵京贤照片；本地副本用于事件肖像与人物头像展示。",
+      "en": "NYU Courant's official profile explicitly labels this image as a photograph of Kyunghyun Cho; the local copy is used for the event portrait and figure avatar."
+    },
+    "purpose": "image-provenance"
   }
 ]

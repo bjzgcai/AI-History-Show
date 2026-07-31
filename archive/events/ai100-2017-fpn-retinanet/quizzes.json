@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2017-fpn-retinanet-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What problem does focal loss address in RetinaNet?",
+      "zh": "焦点损失在 RetinaNet 中解决什么问题？"
+    },
+    "options": [
+      {
+        "en": "Too many easy background examples",
+        "zh": "简单背景样本过多"
+      },
+      {
+        "en": "Missing image colors",
+        "zh": "图像缺少颜色"
+      },
+      {
+        "en": "Slow text tokenization",
+        "zh": "文本分词过慢"
+      },
+      {
+        "en": "Lack of region proposals only",
+        "zh": "仅缺少区域候选"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "FPN combines a top-down pathway with lateral connections to build semantically strong maps at several resolutions. RetinaNet pairs that pyramid with focal loss, reducing the influence of easy negatives so hard detection examples drive learning.",
+      "zh": "FPN 通过自顶向下路径和横向连接，在多个分辨率上构建语义强的特征图。RetinaNet 将该金字塔与焦点损失结合，降低简单负样本的影响，让困难检测样本主导学习。"
+    },
+    "sourceIds": [
+      "source-2017-fpn-retinanet-primary"
+    ],
+    "assetIds": [
+      "asset-2017-fpn-retinanet-explainer"
+    ]
+  }
+]

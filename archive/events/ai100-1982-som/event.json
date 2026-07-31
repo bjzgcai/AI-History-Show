@@ -17,12 +17,12 @@
   "location": {
     "regionId": "espoo-finland",
     "country": {
-      "zh": "芬兰埃斯波",
-      "en": "Espoo, Finland"
+      "en": "Finland",
+      "zh": "芬兰"
     },
     "place": {
-      "zh": "赫尔辛基理工大学",
-      "en": "Helsinki University of Technology"
+      "en": "Helsinki University of Technology",
+      "zh": "赫尔辛基理工大学"
     },
     "coordinates": [
       60.1841,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "teuvo-kohonen",
+      "name": {
+        "en": "Teuvo Kohonen",
+        "zh": "泰沃·科霍宁"
+      },
       "role": {
-        "zh": "自组织映射提出者",
-        "en": "Creator of self-organizing maps"
+        "en": "Creator of self-organizing maps",
+        "zh": "自组织映射提出者"
       },
       "avatar": "resources/images/external/ai100-1982-som/teuvo-kohonen-portrait.jpg",
+      "avatarStyle": "object-position: 100% 50%; transform: scale(2.1); transform-origin: 86% 16%;",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大蒙特利尔",
-      "en": "Montreal, Canada"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "place": {
-      "zh": "蒙特利尔大学",
-      "en": "University of Montreal"
+      "en": "University of Montreal",
+      "zh": "蒙特利尔大学"
     },
     "coordinates": [
       45.5019,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "yoshua-bengio",
-      "role": {
-        "zh": "神经概率语言模型主要作者",
-        "en": "Lead author of the neural probabilistic language model"
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
       },
-      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "role": {
+        "en": "Lead author of the neural probabilistic language model",
+        "zh": "神经概率语言模型主要作者"
+      },
+      "avatar": "resources/images/external/ai100-2000-neural-language-model/yoshua-bengio-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

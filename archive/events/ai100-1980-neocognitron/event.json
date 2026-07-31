@@ -17,12 +17,12 @@
   "location": {
     "regionId": "japan",
     "country": {
-      "zh": "日本东京",
-      "en": "Tokyo, Japan"
+      "en": "Japan",
+      "zh": "日本"
     },
     "place": {
-      "zh": "NHK 广播科学研究实验室",
-      "en": "NHK Broadcasting Science Research Laboratories"
+      "en": "NHK Broadcasting Science Research Laboratories",
+      "zh": "日本放送协会广播科学研究实验室"
     },
     "coordinates": [
       35.6762,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "kunihiko-fukushima",
+      "name": {
+        "en": "Kunihiko Fukushima",
+        "zh": "福岛邦彦"
+      },
       "role": {
-        "zh": "Neocognitron 提出者",
-        "en": "Creator of the neocognitron"
+        "en": "Creator of the neocognitron",
+        "zh": "Neocognitron 提出者"
       },
       "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

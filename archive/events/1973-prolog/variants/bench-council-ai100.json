@@ -56,9 +56,9 @@
     "asset-1973-prolog-unification-trace"
   ],
   "sourceIds": [
-    "source-the-birth-of-prolog",
     "source-prolog-heritage",
-    "source-swi-prolog-documentation"
+    "source-swi-prolog-documentation",
+    "source-the-birth-of-prolog"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -145,7 +146,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -300,12 +302,12 @@
   },
   "location": {
     "name": {
-      "en": "Aix-Marseille University and University of Edinburgh",
-      "zh": "艾克斯-马赛大学与爱丁堡大学"
+      "en": "University of Edinburgh",
+      "zh": "爱丁堡大学"
     },
     "country": {
-      "en": "France and United Kingdom",
-      "zh": "法国与英国"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       43.3047,

@@ -49,10 +49,10 @@
     "asset-1957-kmeans-cluster-update"
   ],
   "sourceIds": [
-    "source-least-squares-quantization-in-pcm",
     "source-bell-labs-k-means-history-note",
     "source-scikit-learn-kmeans-documentation",
-    "source-iris-flowers-k-means-clustering-graphic"
+    "source-iris-flowers-k-means-clustering-graphic",
+    "source-least-squares-quantization-in-pcm"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -126,7 +126,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -271,12 +272,12 @@
   },
   "location": {
     "name": {
-      "en": "Bell Labs",
+      "en": "Bell Lab",
       "zh": "贝尔实验室"
     },
     "country": {
-      "en": "New Jersey, United States",
-      "zh": "美国新泽西州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.6843,

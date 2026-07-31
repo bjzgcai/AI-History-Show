@@ -55,9 +55,9 @@
     "asset-1989-q-learning-bellman-update"
   ],
   "sourceIds": [
-    "source-learning-from-delayed-rewards",
     "source-q-learning",
-    "source-q-learning-overview"
+    "source-q-learning-overview",
+    "source-learning-from-delayed-rewards"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "resources/images/external/ai100-1989-q-learning/christopher-watkins-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Peter Dayan",
+        "zh": "彼得·达扬"
+      },
+      "role": {
+        "en": "Q Learning co-author",
+        "zh": "Q Learning 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -337,12 +352,12 @@
   },
   "location": {
     "name": {
-      "en": "King's College Cambridge",
-      "zh": "King's College Cambridge"
+      "en": "King's College, University of Edinburgh",
+      "zh": "剑桥大学国王学院、爱丁堡大学"
     },
     "country": {
-      "en": "Cambridge, United Kingdom",
-      "zh": "Cambridge, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       52.2043,

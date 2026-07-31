@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "Redmond, United States",
-      "en": "Redmond, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "Microsoft Research",
-      "en": "Microsoft Research"
+      "en": "Cornell NYC Tech, Toyota Technological Institute, Facebook, Microsoft, Brown University, California Institute of Technology, University of California at Irvine",
+      "zh": "康奈尔纽约科技校区、丰田工业大学芝加哥分校、Facebook、Microsoft、布朗大学、加州理工学院、加州大学欧文分校"
     },
     "coordinates": [
       47.674,
@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "tsung-yi-lin",
+      "name": {
+        "en": "Tsung-Yi Lin",
+        "zh": "林宗毅"
+      },
       "role": {
-        "zh": "MS COCO 主要作者",
-        "en": "MS COCO lead author"
+        "en": "MS COCO lead author",
+        "zh": "MS COCO 主要作者"
       },
       "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Piotr Dollar",
+        "zh": "彼得·多拉尔"
+      },
+      "role": {
+        "en": "MS COCO co-author",
+        "zh": "MS COCO 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

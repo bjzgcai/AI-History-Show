@@ -1,5 +1,36 @@
 [
   {
+    "id": "asset-1992-svm-vladimir-vapnik",
+    "type": "image",
+    "path": "resources/images/bench-council-ai100/photos/1971-vc-theory_vladimir-vapnik.png",
+    "role": "portrait",
+    "caption": {
+      "zh": "弗拉基米尔·瓦普尼克肖像",
+      "en": "Vladimir Vapnik portrait"
+    },
+    "subcaption": {
+      "zh": "支持向量机共同开发者。",
+      "en": "SVM co-developer."
+    },
+    "sourceId": "source-vladimir-vapnik-simons-profile",
+    "sourceName": {
+      "zh": "西蒙斯基金会",
+      "en": "Simons Foundation"
+    },
+    "sourceUrl": "https://www.simonsfoundation.org/people/vladimir-vapnik/",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "西蒙斯基金会人物页未声明开放复用许可；公开使用前应核对其媒体授权要求。",
+        "en": "The Simons Foundation profile does not state an open reuse license; consult its media permissions before public reuse."
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1992-svm-isabelle-guyon",
     "type": "image",
     "path": "resources/images/bench-council-ai100/photos/1992-svm_isabelle-guyon.jpg",

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-1986-id3-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What criterion does ID3 use to choose a split?",
+      "zh": "ID3 用什么准则选择划分？"
+    },
+    "options": [
+      {
+        "en": "Information gain",
+        "zh": "信息增益"
+      },
+      {
+        "en": "Image resolution",
+        "zh": "图像分辨率"
+      },
+      {
+        "en": "Gradient norm only",
+        "zh": "仅梯度范数"
+      },
+      {
+        "en": "Random coordinates",
+        "zh": "随机坐标"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "At each node, ID3 selects the attribute that most reduces class entropy and splits the examples by its values. The process repeats until leaves are sufficiently pure or no useful attributes remain.",
+      "zh": "在每个节点，ID3 选择最能降低类别熵的属性，并按属性取值划分样本。该过程递归进行，直到叶节点足够纯或没有可用属性。"
+    },
+    "sourceIds": [
+      "source-1986-id3-primary"
+    ],
+    "assetIds": [
+      "asset-1986-id3-explainer"
+    ]
+  }
+]

@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国伊萨卡",
-      "en": "Ithaca, United States"
+      "en": "United States, China",
+      "zh": "美国、中国"
     },
     "place": {
-      "zh": "康奈尔大学",
-      "en": "Cornell University"
+      "en": "Cornell University, Tsinghua University, Facebook AI Research",
+      "zh": "康奈尔大学、清华大学、Facebook 人工智能研究院"
     },
     "coordinates": [
       42.4534,
@@ -37,20 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "gao-huang",
+      "name": {
+        "en": "Gao Huang",
+        "zh": "黄高"
+      },
       "role": {
-        "zh": "DenseNet 主要作者",
-        "en": "DenseNet lead author"
+        "en": "DenseNet lead author",
+        "zh": "DenseNet 主要作者"
       },
       "avatar": "resources/images/2016-densenet/people/2016-densenet_people_02.png",
+      "avatarStyle": "transform: scale(1.72); transform-origin: 46% 28%;",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "zhuang-liu",
-      "role": {
-        "zh": "DenseNet 共同作者",
-        "en": "DenseNet co-author"
+      "name": {
+        "en": "Zhuang Liu",
+        "zh": "刘壮"
       },
+      "role": {
+        "en": "DenseNet co-author",
+        "zh": "DenseNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kilian Weinberger",
+        "zh": "基利安·温伯格"
+      },
+      "role": {
+        "en": "DenseNet co-author",
+        "zh": "DenseNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

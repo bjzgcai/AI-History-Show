@@ -141,6 +141,14 @@ AI100 页面顶部必须像旧 achievement 一样有 3 个资料卡片：
 - 若影响启动或页面加载，运行 `npm run validate:startup`。
 - 不要手动编辑 `milestones-data.js`；它由生成脚本输出。
 
+#### 8. 人物与首图前置校验
+
+- 所有事件的每个变体都必须维护准确、可追溯的人物列表；变体中的主要人物应排在扩展人物之前。
+- 首图/首页图以 `overviewImageAssetId` 为准；未配置时必须与详情页第一张图片一致，即取 `assetIds` 中的第一张图片资源。展示层不得按人物、文件类型或媒体角色重新排序详情图片。
+- 首图如果是人物图，必须对应事件的主要人物；非人物图（论文页、架构图、历史资料、算法解释图等）可以作为首图。
+- canonical BenchCouncil AI100 事件必须把 BenchCouncil 根页面贡献者列表完整保留在人物列表前缀中，允许在其后适度扩展；人物显示名必须有真实中文名。
+- `npm run validate:archive` 与 `npm run audit:event-figure-rules` 是上述规则的前置校验。新增或修改人物、头像、资源顺序或 `overviewImageAssetId` 后必须先通过它们，再运行生成与其他质量门禁。
+
 ### 当前事件（5 分类，21 个）
 
 - **AI创世纪**: 1956-dartmouth, 1957-perceptron, 1969-ai-winter

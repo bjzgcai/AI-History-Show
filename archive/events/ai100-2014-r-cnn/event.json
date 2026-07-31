@@ -1,0 +1,80 @@
+{
+  "id": "ai100-2014-r-cnn",
+  "year": 2014,
+  "date": "2014",
+  "title": {
+    "en": "R-CNN",
+    "zh": "R-CNN"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Object detection lagged behind image classification because a detector had to localize many possible objects as well as recognize them. R-CNN connected region proposals with features transferred from a large pretrained convolutional network.</p><p>The system generates candidate regions, warps each region to a fixed size, extracts CNN features, and classifies the regions with category-specific models. Bounding-box regression then refines the proposed locations. Experts generally treat R-CNN as the starting point of the modern region-based detector family. Its accuracy gains were decisive even though repeated CNN computation made the original pipeline slow and cumbersome.</p>",
+    "zh": "<p>目标检测落后于图像分类，因为检测器不仅要识别物体，还要在大量候选位置中完成定位。R-CNN 把区域候选与大型预训练卷积网络迁移得到的特征连接起来。</p><p>系统先生成候选区域，把每个区域缩放到固定尺寸，再提取 CNN 特征并用类别模型进行分类。最后通过边界框回归进一步修正候选位置。专家通常把 R-CNN 视为现代区域式检测器家族的起点。尽管原始流程需要重复运行 CNN、速度较慢且步骤繁琐，它带来的精度提升仍具有决定性意义。</p>"
+  },
+  "location": {
+    "regionId": "usa",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "UC Berkeley",
+      "zh": "加州大学伯克利分校"
+    },
+    "coordinates": [
+      37.8719,
+      -122.2585
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "ross-girshick",
+      "name": {
+        "en": "Ross Girshick",
+        "zh": "罗斯·格希克"
+      },
+      "role": {
+        "zh": "Faster R-CNN 共同作者",
+        "en": "Co-author of Faster R-CNN"
+      },
+      "avatar": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "figureId": "jitendra-malik",
+      "name": {
+        "en": "Jitendra Malik",
+        "zh": "吉滕德拉·马利克"
+      },
+      "role": {
+        "zh": "2000 年归一化切分论文共同作者",
+        "en": "Co-author of the 2000 normalized-cuts paper"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

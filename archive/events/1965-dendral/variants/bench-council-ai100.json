@@ -53,9 +53,9 @@
     "asset-1965-dendral-rule-filter"
   ],
   "sourceIds": [
-    "source-applications-of-artificial-intelligence-for-chemical-inference",
     "source-acm-turing-award-profile-for-edward-feigenbaum",
-    "source-stanford-knowledge-systems-laboratory-history"
+    "source-stanford-knowledge-systems-laboratory-history",
+    "source-applications-of-artificial-intelligence-for-chemical-inference"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -129,7 +129,50 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1965-dendral_edward-feigenbaum.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Bruce Buchanan",
+        "zh": "布鲁斯·布坎南"
+      },
+      "role": {
+        "en": "Dendral co-author",
+        "zh": "Dendral 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Joshua Lederberg",
+        "zh": "约书亚·莱德伯格"
+      },
+      "role": {
+        "en": "Dendral co-author",
+        "zh": "Dendral 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Carl Djerassi",
+        "zh": "卡尔·杰拉西"
+      },
+      "role": {
+        "en": "Dendral co-author",
+        "zh": "Dendral 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -281,8 +324,8 @@
       "zh": "斯坦福大学"
     },
     "country": {
-      "en": "California, United States",
-      "zh": "美国加利福尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.4275,

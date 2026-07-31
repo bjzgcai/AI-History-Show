@@ -126,7 +126,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -271,12 +272,12 @@
   },
   "location": {
     "name": {
-      "en": "Carnegie Mellon University",
+      "en": "CMU",
       "zh": "卡内基梅隆大学"
     },
     "country": {
-      "en": "Pennsylvania, United States",
-      "zh": "美国宾夕法尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.4433,

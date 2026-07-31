@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "法国与英国",
-      "en": "France and United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "艾克斯-马赛大学与爱丁堡大学",
-      "en": "Aix-Marseille University and University of Edinburgh"
+      "en": "University of Edinburgh",
+      "zh": "爱丁堡大学"
     },
     "coordinates": [
       43.3047,
@@ -37,20 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "alain-colmerauer",
+      "name": {
+        "en": "Alain Colmerauer",
+        "zh": "阿兰·科尔梅罗尔"
+      },
       "role": {
-        "zh": "早期 Prolog 实现创建者",
-        "en": "Creator of the first Prolog implementation"
+        "en": "Creator of the first Prolog implementation",
+        "zh": "早期 Prolog 实现创建者"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1973-prolog_alain-colmerauer.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "robert-kowalski",
-      "role": {
-        "zh": "逻辑程序设计理论贡献者",
-        "en": "Logic programming theorist"
+      "name": {
+        "en": "Robert Kowalski",
+        "zh": "罗伯特·科瓦尔斯基"
       },
+      "role": {
+        "en": "Logic programming theorist",
+        "zh": "逻辑程序设计理论贡献者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

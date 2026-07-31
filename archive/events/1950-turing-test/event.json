@@ -17,12 +17,12 @@
   "location": {
     "regionId": "united-kingdom",
     "country": {
-      "zh": "英国，曼彻斯特",
-      "en": "Manchester, United Kingdom"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "place": {
-      "zh": "曼彻斯特大学",
-      "en": "University of Manchester"
+      "en": "Manchester University",
+      "zh": "曼彻斯特大学"
     },
     "coordinates": [
       53.4668,
@@ -37,12 +37,17 @@
   ],
   "figures": [
     {
-      "figureId": "alan-turing",
+      "name": {
+        "en": "Alan Turing",
+        "zh": "艾伦·图灵"
+      },
       "role": {
-        "zh": "提出模仿游戏",
-        "en": "Proposed the imitation game"
+        "en": "Proposed the imitation game",
+        "zh": "提出模仿游戏"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1950-turing-test_alan-turing.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

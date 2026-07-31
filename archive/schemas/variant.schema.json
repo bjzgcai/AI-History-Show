@@ -48,6 +48,10 @@
         "assetIds": {
             "$ref": "shared.schema.json#/$defs/assetIdList"
         },
+        "overviewImageAssetId": {
+            "$ref": "shared.schema.json#/$defs/archiveId",
+            "description": "Optional image asset used by the chronology overview card. It must also appear in assetIds."
+        },
         "sourceIds": {
             "$ref": "shared.schema.json#/$defs/sourceIdList"
         },

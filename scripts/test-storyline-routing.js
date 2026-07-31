@@ -99,6 +99,7 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
@@ -332,15 +333,10 @@ assert.match(
     /function buildLocationText\(location\)[\s\S]*?return `\$\{name\}\$\{uiText\(', ', '，'\)\}\$\{country\}`;/,
     'location names and countries should flow naturally instead of being split by a forced line break'
 );
-assert.match(
+assert.doesNotMatch(
     indexHtml,
-    /function formatUiCountryName\(value\)[\s\S]*?replace\(\/\\bUnited States\\b\/g, 'US'\)/,
-    'unified UI addresses should abbreviate United States as US in English'
-);
-assert.match(
-    indexHtml,
-    /vm\.location = formatUiLocation\(vm\.location\)/,
-    'country abbreviation should be applied to the normalized UI view model only'
+    /replace\(\/\\bUnited States\\b\/g, 'US'\)/,
+    'unified UI addresses should preserve complete English country names'
 );
 assert.match(
     indexHtml,
@@ -352,10 +348,20 @@ assert.doesNotMatch(
     /function buildLocationHtml\(/,
     'plain location text should not pass through a redundant HTML rendering helper'
 );
+assert.doesNotMatch(
+    indexHtml,
+    /class="ui-detail-place"[^>]*\stitle=/,
+    'detail locations should not duplicate the custom tooltip with a native title'
+);
 assert.match(
     indexHtml,
-    /class="ui-detail-place" title="\$\{escapeHtml\(locationText\)\}"/,
-    'detail locations should expose their full value on hover'
+    /function syncUiDetailLocationTooltip\(place, shell\)[\s\S]*?scrollHeight > place\.clientHeight[\s\S]*?has-truncated-address[\s\S]*?aria-describedby/,
+    'detail locations should enable their tooltip only when the visible address is truncated'
+);
+assert.match(
+    indexHtml,
+    /ui-detail-place-shell\.has-truncated-address:hover \.ui-detail-place-tooltip,[\s\S]*?focus-within \.ui-detail-place-tooltip[\s\S]*?visibility:\s*visible/,
+    'truncated detail addresses should reveal the complete address on hover or keyboard focus'
 );
 assert.match(
     indexHtml,
@@ -372,15 +378,15 @@ assert.match(
     /\.ui-avatar-name,[\s\S]*?\.ui-avatar-role\s*\{[\s\S]*?width:\s*max-content[\s\S]*?overflow:\s*visible[\s\S]*?text-overflow:\s*clip/,
     'desktop detail figure names and roles should use their content width without ellipsis'
 );
-assert.match(
+assert.doesNotMatch(
     indexHtml,
-    /const UI_DETAIL_FIGURE_LIMIT = 4;/,
-    'unified UI detail pages should define one four-figure limit'
+    /function getUiDetailFigures\(vm\)[\s\S]*?slice\(0, UI_DETAIL_FIGURE_LIMIT\)/,
+    'unified UI detail pages should preserve every configured figure'
 );
 assert.match(
     indexHtml,
-    /function getUiDetailFigures\(vm\)[\s\S]*?slice\(0, UI_DETAIL_FIGURE_LIMIT\)/,
-    'unified UI detail pages should apply the shared figure limit in one helper'
+    /function getUiDetailFigures\(vm\)[\s\S]*?vm\.figures\.filter\(Boolean\)/,
+    'unified UI detail pages should return the complete configured figure list'
 );
 assert.match(
     indexHtml,
@@ -481,19 +487,25 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
-    'detail image lists should exclude the image mounted in the right-side media panel'
+    /function getUiDetailImages\(vm\)[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
+    'detail image lists should preserve the first candidate while excluding a later side-panel image'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /UI_CHRONOLOGY_IMAGE_OVERRIDES|getChronologyCardImage|resolveCardImage/,
+    'overview cards should read generated Archive image configuration without index.html overrides'
 );
 assert.match(
-    indexHtml,
-    /function getChronologyCardImage\(milestone\)[\s\S]*?UI_CHRONOLOGY_IMAGE_OVERRIDES[\s\S]*?getUiDetailImages\(vm\)\[0\]/,
-    'overview cards should use the first image from the matching detail-page image collection unless overridden'
+    dualScreenHtml,
+    /function sortPhotosForDisplay\(photos\)[\s\S]*?return \[\.\.\.\(photos \|\| \[\]\)\]\.filter\(Boolean\);/,
+    'dual-screen detail images should preserve Archive resources.images order by default'
 );
-assert.match(
-    indexHtml,
-    /chronologyOverview\.update\(\{[\s\S]*?resolveCardImage: getChronologyCardImage/,
-    'the chronology overview should receive the shared detail-image resolver'
+assert.doesNotMatch(
+    dualScreenHtml,
+    /function sortPhotosForDisplay\(photos\)[\s\S]*?\.sort\(/,
+    'dual-screen detail images should not reorder Archive resources by media type'
 );
+console.log('PASS dual-screen detail images preserve Archive order');
 assert.doesNotMatch(
     indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)\) return candidates/,
@@ -536,7 +548,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.textContent[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
+    /function updateUiDetailImageView\(vm, detailImages\)[\s\S]*?image\.src = imageUrl[\s\S]*?captionTitle\.innerHTML = escapeHtmlWithCjkTail[\s\S]*?aria-current[\s\S]*?function setUiDetailImageIndex[\s\S]*?updateUiDetailImageView\(vm, detailImages\)[\s\S]*?scheduleUiDetailImageAutoplay\(\)/,
     'detail image changes should update the media, caption, and pager without rebuilding the full detail page'
 );
 assert.doesNotMatch(

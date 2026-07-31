@@ -49,10 +49,10 @@
     "asset-1959-pandemonium-layered-recognition"
   ],
   "sourceIds": [
-    "source-pandemonium-a-paradigm-for-learning",
     "source-pandemonium-architecture-image",
     "source-oliver-selfridge-portrait",
-    "source-oliver-selfridge-obituary-the-guardian"
+    "source-oliver-selfridge-obituary-the-guardian",
+    "source-pandemonium-a-paradigm-for-learning"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -126,7 +126,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/1959-pandemonium_oliver-selfridge.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -271,12 +272,12 @@
   },
   "location": {
     "name": {
-      "en": "MIT Lincoln Laboratory",
-      "zh": "麻省理工学院 林肯实验室"
+      "en": "MIT",
+      "zh": "麻省理工学院"
     },
     "country": {
-      "en": "Massachusetts, United States",
-      "zh": "美国马萨诸塞州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       42.4595,

@@ -10,6 +10,11 @@
       "zh": "《归一化切分与图像分割》",
       "en": "Normalized Cuts and Image Segmentation"
     },
+    "authors": [
+      "Jianbo Shi",
+      "Jitendra Malik"
+    ],
+    "year": 2000,
     "url": "https://doi.org/10.1109/34.868688",
     "language": "en",
     "reliability": "primary",
@@ -30,6 +35,12 @@
       "zh": "《论谱聚类：分析与算法》",
       "en": "On Spectral Clustering: Analysis and an algorithm"
     },
+    "authors": [
+      "Andrew Y. Ng",
+      "Michael I. Jordan",
+      "Yair Weiss"
+    ],
+    "year": 2001,
     "url": "https://proceedings.neurips.cc/paper/2001/hash/801272ee79cfde7fa5960571fee36b9b-Abstract.html",
     "language": "en",
     "reliability": "primary",
@@ -58,6 +69,26 @@
       "en": "Migrated from generated legacy milestone achievement sources."
     },
     "purpose": "implementation"
+  },
+  {
+    "id": "source-andrew-ng-wikimedia-portrait",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "吴恩达在 TechCrunch Disrupt SF 2017",
+      "en": "Andrew Ng at TechCrunch Disrupt SF 2017"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    "language": "en",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "吴恩达肖像的 Wikimedia Commons 文件页，包含作者署名与许可信息。",
+      "en": "Wikimedia Commons file page for the Andrew Ng portrait, including attribution and license information."
+    },
+    "purpose": "image-provenance"
   },
   {
     "id": "source-spectral-graph-illustration",

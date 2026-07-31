@@ -78,5 +78,25 @@
             "en": "MIT-hosted personal homepage and portrait source for Kaiming He."
         },
         "purpose": "image-provenance"
+    },
+    {
+        "id": "source-ai100-contributor-shaoqing-ren",
+        "type": "image-source",
+        "label": {
+            "en": "Image source",
+            "zh": "图片来源"
+        },
+        "title": {
+            "en": "Shaoqing Ren portrait source",
+            "zh": "任少卿肖像来源"
+        },
+        "url": "https://arxiv.org/abs/1512.03385",
+        "language": "en",
+        "reliability": "primary",
+        "notes": {
+            "zh": "由 legacy generated milestone 的 achievement sources 迁移。",
+            "en": "Migrated from generated legacy milestone achievement sources."
+        },
+        "purpose": "image-provenance"
     }
 ]

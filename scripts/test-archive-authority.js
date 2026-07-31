@@ -182,7 +182,7 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 146);
+assert.equal(compiledArchive.milestones.length, 174);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -191,7 +191,32 @@ assert.deepEqual(
 );
 console.log('PASS production compiler emits Archive provenance');
 
-assert.equal(milestones.length, 146, 'Archive runtime should contain all four storylines and 146 milestones');
+assert.equal(milestones.length, 174, 'Archive runtime should contain all four storylines and 174 milestones');
+const ai100AlphaFold = milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '2020-alphafold' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'bench-council-ai100'
+);
+const deepLearningAlphaFold = milestones.find(
+    (milestone) =>
+        milestone.archiveEventId === '2020-alphafold' &&
+        milestone.storyline &&
+        milestone.storyline.id === 'deep-learning'
+);
+assert.ok(ai100AlphaFold, 'AI100 should contain the shared AlphaFold event');
+assert.ok(deepLearningAlphaFold, 'deep learning should contain the shared AlphaFold event');
+assert.deepEqual(
+    ai100AlphaFold.title,
+    { zh: 'AlphaFold', en: 'AlphaFold' },
+    'AI100 should use the canonical BenchCouncil AlphaFold title'
+);
+assert.deepEqual(
+    deepLearningAlphaFold.title,
+    { zh: 'AlphaFold', en: 'AlphaFold' },
+    'deep learning should use the unified AlphaFold title'
+);
+console.log('PASS AlphaFold titles stay unified across storylines');
 const humanisticMilestones = milestones.filter(
     (milestone) => milestone.storyline && milestone.storyline.id === 'humanistic-cycle'
 );

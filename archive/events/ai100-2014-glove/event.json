@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国斯坦福",
-      "en": "Stanford, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "斯坦福大学",
-      "en": "Stanford University"
+      "en": "Stanford University",
+      "zh": "斯坦福大学"
     },
     "coordinates": [
       37.4275,
@@ -37,46 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "jeffrey-pennington",
       "name": {
-        "zh": "杰弗里·彭宁顿",
-        "en": "Jeffrey Pennington"
+        "en": "Jeffrey Pennington",
+        "zh": "杰弗里·彭宁顿"
       },
       "role": {
-        "zh": "GloVe 主要作者",
-        "en": "GloVe lead author"
+        "en": "GloVe lead author",
+        "zh": "GloVe 主要作者"
       },
       "avatar": "resources/images/external/ai100-2014-glove/jeffrey-pennington-portrait.jpg",
+      "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "christopher-manning",
       "name": {
-        "zh": "克里斯托弗·曼宁",
-        "en": "Christopher Manning"
+        "en": "Christopher Manning",
+        "zh": "克里斯托弗·曼宁"
       },
       "role": {
-        "zh": "GloVe 共同作者",
-        "en": "GloVe co-author"
+        "en": "GloVe co-author",
+        "zh": "GloVe 共同作者"
       },
       "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+      "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "richard-socher",
       "name": {
-        "zh": "理查德·索彻",
-        "en": "Richard Socher"
+        "en": "Richard Socher",
+        "zh": "理查德·索彻"
       },
       "role": {
-        "zh": "GloVe 共同作者",
-        "en": "GloVe co-author"
+        "en": "GloVe co-author",
+        "zh": "GloVe 共同作者"
       },
       "avatar": "resources/images/external/ai100-2014-glove/richard-socher-portrait.png",
-      "figureType": "person",
-      "organizationIds": []
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],

@@ -1,0 +1,64 @@
+{
+  "id": "ai100-1986-id3",
+  "year": 1986,
+  "date": "1986",
+  "title": {
+    "en": "ID3",
+    "zh": "ID3 决策树"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 Achievement",
+    "zh": "BenchCouncil AI100 成就"
+  },
+  "description": {
+    "en": "<p>Rule-based learning needed methods that could induce readable decision structures from examples rather than rely on hand-written rules. ID3 formalized a recursive tree-building procedure around information gain.</p><p>At each node, ID3 selects the attribute that most reduces class entropy and splits the examples by its values. The process repeats until leaves are sufficiently pure or no useful attributes remain. Experts generally regard ID3 as a foundational decision-tree induction algorithm and a major step toward interpretable machine learning. Its entropy-based splitting directly influenced C4.5 and later tree learners.</p>",
+    "zh": "<p>规则学习需要一种能从样本自动归纳可读决策结构的方法，而不是完全依赖手写规则。ID3 围绕信息增益形式化了递归建树过程。</p><p>在每个节点，ID3 选择最能降低类别熵的属性，并按属性取值划分样本。该过程递归进行，直到叶节点足够纯或没有可用属性。专家通常把 ID3 视为决策树归纳的奠基算法，也是可解释机器学习的重要一步。其基于熵的划分方式直接影响了 C4.5 和后续树模型。</p>"
+  },
+  "location": {
+    "regionId": "australia",
+    "country": {
+      "en": "Australia",
+      "zh": "澳大利亚"
+    },
+    "place": {
+      "en": "New South Wales Institute of Technology",
+      "zh": "新南威尔士理工学院"
+    },
+    "coordinates": [
+      -33.8688,
+      151.2093
+    ]
+  },
+  "topics": [
+    "bench-council-ai100"
+  ],
+  "achievementTypeIds": [
+    "ai100-achievement"
+  ],
+  "figures": [
+    {
+      "name": {
+        "en": "Ross Quinlan",
+        "zh": "罗斯·昆兰"
+      },
+      "role": {
+        "en": "ID3 lead author",
+        "zh": "ID3 主要作者"
+      },
+      "avatar": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": true,
+  "relatedLegacyIds": [],
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Added from the BenchCouncil long-term AI100 table snapshot retrieved on 2026-07-30.",
+      "zh": "依据 2026-07-30 获取的 BenchCouncil 长期 AI100 主表快照新增。"
+    }
+  }
+}

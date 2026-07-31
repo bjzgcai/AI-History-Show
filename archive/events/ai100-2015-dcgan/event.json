@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "New York, United States",
-      "en": "New York, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "Facebook AI Research",
-      "en": "Facebook AI Research"
+      "en": "indico Research, Facebook",
+      "zh": "indico 研究院、Facebook"
     },
     "coordinates": [
       40.7128,
@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "alec-radford",
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
       "role": {
-        "zh": "DCGAN 主要作者",
-        "en": "DCGAN lead author"
+        "en": "DCGAN lead author",
+        "zh": "DCGAN 主要作者"
       },
       "avatar": "resources/images/figures/alec-radford.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Soumith Chintala",
+        "zh": "苏米特·钦塔拉"
+      },
+      "role": {
+        "en": "DCGAN co-author",
+        "zh": "DCGAN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

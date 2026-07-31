@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-1993-c45-membership",
+    "importance": "core",
+    "text": {
+      "en": "C4.5 is listed in the BenchCouncil long-term AI100 table.",
+      "zh": "C4.5 决策树列入 BenchCouncil 长期 AI100 主表。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-1993-c45-description",
+    "importance": "core",
+    "text": {
+      "en": "<p>ID3 demonstrated entropy-based tree induction but had practical limits with continuous values, missing data, and overgrown trees. C4.5 extended the method into a more complete and deployable learning system.</p><p>C4.5 uses gain ratio, handles continuous and missing attributes, and prunes branches after training to improve generalization. It can also convert a learned tree into a compact set of classification rules. Experts generally regard C4.5 as one of the most influential practical decision-tree systems. Its handling of data imperfections and pruning shaped later industrial tree implementations and interpretability practice.</p>",
+      "zh": "<p>ID3 证明了基于熵的决策树归纳有效，但在连续属性、缺失数据和树过度生长方面存在实际限制。C4.5 把这一方法扩展为更完整、更可部署的学习系统。</p><p>C4.5 使用增益率，能够处理连续属性和缺失属性，并在训练后剪枝以提升泛化能力。它还可以把学习到的树转换为紧凑的分类规则集合。专家通常把 C4.5 视为最具影响力的实用决策树系统之一。它对数据缺陷和剪枝的处理影响了后续工业树模型与可解释性实践。</p>"
+    },
+    "sourceIds": [
+      "source-1993-c45-primary",
+      "source-1993-c45-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  }
+]

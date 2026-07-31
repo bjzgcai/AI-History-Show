@@ -56,9 +56,9 @@
     "asset-2009-imagenet-benchmark"
   ],
   "sourceIds": [
-    "source-imagenet-a-large-scale-hierarchical-image-database",
     "source-imagenet-project-website",
-    "source-stanford-profile-fei-fei-li"
+    "source-stanford-profile-fei-fei-li",
+    "source-imagenet-a-large-scale-hierarchical-image-database"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -123,19 +123,6 @@
   "figures": [
     {
       "name": {
-        "en": "Fei-Fei Li",
-        "zh": "李飞飞"
-      },
-      "role": {
-        "en": "ImageNet project leader",
-        "zh": "ImageNet 项目主要推动者"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
         "en": "Jia Deng",
         "zh": "邓嘉"
       },
@@ -145,7 +132,36 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Li Fei-Fei",
+        "zh": "李飞飞"
+      },
+      "role": {
+        "en": "ImageNet project leader",
+        "zh": "ImageNet 项目主要推动者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Olga Russakovsky",
+        "zh": "奥尔加·鲁萨科夫斯基"
+      },
+      "role": {
+        "en": "ImageNet co-author",
+        "zh": "ImageNet 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -300,12 +316,12 @@
   },
   "location": {
     "name": {
-      "en": "Princeton University / Stanford University",
-      "zh": "普林斯顿大学 / 斯坦福大学"
+      "en": "Princeton University, Stanford University, University of Michigan, MIT, UNC Chapel Hill",
+      "zh": "普林斯顿大学、斯坦福大学、密歇根大学、麻省理工学院、北卡罗来纳大学教堂山分校"
     },
     "country": {
-      "en": "New Jersey and California, United States",
-      "zh": "美国新泽西州与加利福尼亚州"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       40.3431,

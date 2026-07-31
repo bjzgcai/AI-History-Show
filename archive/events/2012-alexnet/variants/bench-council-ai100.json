@@ -25,6 +25,7 @@
     "asset-alexnet-deep-portrait",
     "asset-alexnet-architecture-detail"
   ],
+  "overviewImageAssetId": "asset-alexnet-portrait",
   "sourceIds": [
     "source-alexnet-neurips-paper",
     "source-alexnet-neurips-pdf",
@@ -95,9 +96,24 @@
         "en": "AlexNet lead author",
         "zh": "AlexNet 主要作者"
       },
-      "avatar": "resources/images/figures/historical/alex-krizhevsky-2013.png",
-      "avatarStyle": "transform: scale(1.08); transform-origin: 50% 47%;",
-      "figureType": "person"
+      "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "AlexNet co-author and advisor",
+        "zh": "AlexNet 共同作者与导师"
+      },
+      "avatar": "resources/images/1986-backpropagation/people/1986-backpropagation_paper_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -109,19 +125,6 @@
         "zh": "AlexNet 共同作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person"
-    },
-    {
-      "name": {
-        "en": "Geoffrey Hinton",
-        "zh": "杰弗里·辛顿"
-      },
-      "role": {
-        "en": "AlexNet co-author and advisor",
-        "zh": "AlexNet 共同作者与导师"
-      },
-      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
       "avatarStyle": "",
       "figureType": "person"
     }
@@ -305,8 +308,8 @@
       "zh": "多伦多大学"
     },
     "country": {
-      "en": "Toronto, Canada",
-      "zh": "加拿大多伦多"
+      "en": "Canada",
+      "zh": "加拿大"
     },
     "coordinates": [
       43.6629,

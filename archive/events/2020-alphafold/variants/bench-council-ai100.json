@@ -3,8 +3,8 @@
   "eventId": "2020-alphafold",
   "presentationMode": "preserve-legacy",
   "displayTitle": {
-    "zh": "AlphaFold2",
-    "en": "AlphaFold2"
+    "zh": "AlphaFold",
+    "en": "AlphaFold"
   },
   "displaySummary": {
     "zh": "AI 百大成就",
@@ -51,21 +51,21 @@
     }
   ],
   "assetIds": [
-    "asset-2020-alphafold-john-jumper-external",
+    "asset-2020-alphafold-people-01",
     "asset-2020-alphafold2-structure-pipeline",
     "asset-2020-alphafold-architecture-01",
     "asset-2020-alphafold-historical-01",
     "asset-2020-alphafold-architecture-02",
     "asset-2020-alphafold-historical-02",
     "asset-2020-alphafold-papers-01",
-    "asset-2020-alphafold-people-01",
+    "asset-2020-alphafold-john-jumper-external",
     "asset-2020-alphafold-people-02"
   ],
   "sourceIds": [
-    "source-highly-accurate-protein-structure-prediction-with-alphafold",
     "source-deepmind-alphafold-page",
     "source-alphafold-protein-structure-database",
-    "source-alphafold-github-repository"
+    "source-alphafold-github-repository",
+    "source-highly-accurate-protein-structure-prediction-with-alphafold"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -139,7 +139,8 @@
       },
       "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -152,7 +153,8 @@
       },
       "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -334,8 +336,8 @@
       "zh": "DeepMind"
     },
     "country": {
-      "en": "London, United Kingdom",
-      "zh": "英国伦敦"
+      "en": "United Kingdom",
+      "zh": "英国"
     },
     "coordinates": [
       51.5072,

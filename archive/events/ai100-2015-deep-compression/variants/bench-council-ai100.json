@@ -55,9 +55,9 @@
     "asset-2015-deep-compression-prune-quantize-code"
   ],
   "sourceIds": [
-    "source-deep-compression",
     "source-iclr-openreview-record",
-    "source-song-han-efficient-ai-research-page"
+    "source-song-han-efficient-ai-research-page",
+    "source-deep-compression"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -131,7 +131,22 @@
       },
       "avatar": "resources/images/external/ai100-2015-deep-compression/song-han-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "William Dally",
+        "zh": "威廉·达利"
+      },
+      "role": {
+        "en": "Deep compression co-author",
+        "zh": "Deep compression 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -347,12 +362,12 @@
   },
   "location": {
     "name": {
-      "en": "Stanford University",
-      "zh": "斯坦福大学"
+      "en": "Stanford University, Tsinghua University, NVIDIA",
+      "zh": "斯坦福大学、清华大学、NVIDIA"
     },
     "country": {
-      "en": "Stanford, United States",
-      "zh": "美国斯坦福"
+      "en": "United States, China",
+      "zh": "美国、中国"
     },
     "coordinates": [
       37.4275,

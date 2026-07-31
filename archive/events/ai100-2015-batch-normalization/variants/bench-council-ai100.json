@@ -55,10 +55,10 @@
     "asset-2015-batch-normalization-activation-scale"
   ],
   "sourceIds": [
-    "source-batch-normalization",
     "source-batch-normalization-on-arxiv",
     "source-google-research-publication-page",
-    "source-google-research-archived-pdf"
+    "source-google-research-archived-pdf",
+    "source-batch-normalization"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -132,7 +132,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -145,7 +146,8 @@
       },
       "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -313,8 +315,8 @@
       "zh": "Google"
     },
     "country": {
-      "en": "Mountain View, United States",
-      "zh": "美国山景城"
+      "en": "United States",
+      "zh": "美国"
     },
     "coordinates": [
       37.422,

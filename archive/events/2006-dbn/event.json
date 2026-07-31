@@ -17,12 +17,12 @@
   "location": {
     "regionId": "canada",
     "country": {
-      "zh": "加拿大安大略省",
-      "en": "Ontario, Canada"
+      "en": "Canada, Singapore",
+      "zh": "加拿大、新加坡"
     },
     "place": {
-      "zh": "多伦多大学",
-      "en": "University of Toronto"
+      "en": "University of Toronto, National University of Singapore",
+      "zh": "多伦多大学、新加坡国立大学"
     },
     "coordinates": [
       43.6629,
@@ -37,12 +37,45 @@
   ],
   "figures": [
     {
-      "figureId": "geoffrey-hinton",
-      "role": {
-        "zh": "深度置信网络学习共同作者",
-        "en": "Co-author of deep belief net learning"
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
       },
-      "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+      "role": {
+        "en": "Co-author of deep belief net learning",
+        "zh": "深度置信网络学习共同作者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yee-Whye The",
+        "zh": "义威·特"
+      },
+      "role": {
+        "en": "DBN co-author",
+        "zh": "DBN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Ruslan Salakhutdinov",
+        "zh": "鲁斯兰·萨拉赫特迪诺夫"
+      },
+      "role": {
+        "en": "DBN co-author",
+        "zh": "DBN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

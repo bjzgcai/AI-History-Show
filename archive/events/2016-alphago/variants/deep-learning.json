@@ -10,8 +10,61 @@
         "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
     },
     "emphasis": ["deep-learning-expansion", "reinforcement-learning", "search-system"],
-    "visual": "decision-system-demo",
-    "assetIds": ["asset-david-silver-commons-portrait", "asset-alphago-policy-value-search"],
-    "sourceIds": ["source-david-silver-commons-portrait", "source-alphago-nature-paper"],
-    "claimIds": ["claim-hybrid-policy-value-search", "claim-self-play-legacy"]
+    "visual": "go",
+    "overviewImageAssetId": "asset-david-silver-commons-portrait",
+    "assetIds": [
+        "asset-david-silver-commons-portrait",
+        "asset-alphago-policy-value-search",
+        "asset-alphago-lee-sedol"
+    ],
+    "sourceIds": [
+        "source-david-silver-commons-portrait",
+        "source-alphago-nature-paper",
+        "source-deepmind-alphago-page",
+        "source-katago-analysis-engine"
+    ],
+    "claimIds": [
+        "claim-hybrid-policy-value-search",
+        "claim-lee-sedol-match",
+        "claim-self-play-legacy"
+    ],
+    "quizId": "quiz-2016-alphago-ai100",
+    "commentarySections": [
+        {
+            "id": "historical-background",
+            "label": {
+                "zh": "历史背景",
+                "en": "Historical Background"
+            },
+            "html": {
+                "zh": "围棋长期被视为难以依靠蛮力搜索攻克的复杂决策任务，因为它具有巨大的分支数量和很长的战略跨度。AlphaGo 把深度神经网络与树搜索结合起来，使连接主义从感知和表示学习进一步进入规划与决策系统。",
+                "en": "Go had long been treated as a complex decision problem resistant to brute-force search because of its enormous branching factor and strategic horizon. AlphaGo combined deep neural networks with tree search, extending connectionism beyond perception and representation learning into planning and decision systems."
+            },
+            "sourceIds": ["source-alphago-nature-paper"]
+        },
+        {
+            "id": "core-idea",
+            "label": {
+                "zh": "核心思想",
+                "en": "Core Idea"
+            },
+            "html": {
+                "zh": "策略网络缩小候选落子范围，价值网络评估棋盘局面，蒙特卡洛树搜索负责显式前瞻，自我对弈则持续改进策略。它的关键不是单纯增加搜索量，而是让学习到的表示和评估能力引导搜索。",
+                "en": "Policy networks narrow candidate moves, the value network evaluates positions, Monte Carlo tree search provides explicit look-ahead, and self-play continually improves the policy. The key was not simply searching more, but using learned representations and evaluations to guide search."
+            },
+            "sourceIds": ["source-alphago-nature-paper", "source-deepmind-alphago-page"]
+        },
+        {
+            "id": "long-term-legacy",
+            "label": {
+                "zh": "长期影响",
+                "en": "Long-Term Legacy"
+            },
+            "html": {
+                "zh": "专家通常把 AlphaGo 视为深度学习、强化学习和搜索协同工作的标志性展示。它的长期影响在于证明连接主义系统可以把学习到的直觉与规划结合起来，并通过自我对弈扩展到难以手工编码的复杂决策任务。",
+                "en": "Experts generally treat AlphaGo as a landmark demonstration of deep learning, reinforcement learning, and search working together. Its long-term legacy is showing that connectionist systems can combine learned intuition with planning and use self-play to address complex decisions that are difficult to encode by hand."
+            },
+            "sourceIds": ["source-alphago-nature-paper", "source-deepmind-alphago-page"]
+        }
+    ]
 }

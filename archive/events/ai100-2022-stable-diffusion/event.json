@@ -30,7 +30,7 @@
     ]
   },
   "topics": [
-    "bench-council-ai100"
+    "bench-council-ai100-extension"
   ],
   "achievementTypeIds": [
     "ai100-achievement"
@@ -47,13 +47,13 @@
     }
   ],
   "organizations": [],
-  "canonical": true,
+  "canonical": false,
   "relatedLegacyIds": [],
   "review": {
-    "status": "draft",
+    "status": "reviewed",
     "notes": {
-      "zh": "由 legacy generated milestone 批量迁移，展示层默认 preserve-legacy，需后续人工细化 claims 与来源绑定。",
-      "en": "Batch migrated from generated legacy milestone; presentation defaults to preserve-legacy, with claims and source bindings needing later review."
+      "en": "Retained in Archive but excluded from the canonical long-term BenchCouncil AI100 storyline because it is not listed in the root-page achievement table retrieved on 2026-07-30.",
+      "zh": "保留在 Archive 中，但因未列入 2026-07-30 获取的 BenchCouncil 根页面长期成就主表，已从 canonical AI100 分支移出。"
     }
   }
 }

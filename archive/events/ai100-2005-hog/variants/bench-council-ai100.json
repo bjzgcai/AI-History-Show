@@ -50,16 +50,16 @@
       }
     }
   ],
-    "assetIds": [
-      "asset-ai100-2005-hog-navneet-dalal-portrait",
-      "asset-2005-hog-descriptor-grid"
+  "assetIds": [
+    "asset-ai100-2005-hog-navneet-dalal-portrait",
+    "asset-2005-hog-descriptor-grid"
   ],
   "sourceIds": [
     "source-histograms-of-oriented-gradients-for-human-detection",
     "source-ieee-cvpr-paper-record",
     "source-histogram-of-oriented-gradients-overview",
     "source-scikit-image-hog-example",
-      "source-navneet-dalal-personal-page"
+    "source-navneet-dalal-personal-page"
   ],
   "claimIds": [
     "claim-legacy-achievement-summary",
@@ -127,13 +127,14 @@
         "en": "Navneet Dalal",
         "zh": "纳夫尼特·达拉尔"
       },
-        "role": {
-          "en": "First author of HOG",
-          "zh": "HOG 第一作者"
+      "role": {
+        "en": "First author of HOG",
+        "zh": "HOG 第一作者"
       },
-        "avatar": "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
+      "avatar": "resources/images/external/ai100-2005-hog/navneet-dalal-portrait.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     },
     {
       "name": {
@@ -146,7 +147,8 @@
       },
       "avatar": "",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "photos": [],
@@ -311,11 +313,11 @@
   "location": {
     "name": {
       "en": "INRIA",
-      "zh": "INRIA"
+      "zh": "法国国家信息与自动化研究所（INRIA）"
     },
     "country": {
-      "en": "Grenoble, France",
-      "zh": "法国格勒诺布尔"
+      "en": "France",
+      "zh": "法国"
     },
     "coordinates": [
       45.1938,

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-2014-seq2seq-quiz-1",
+    "storylineId": "bench-council-ai100",
+    "question": {
+      "en": "What is the decoder responsible for in Seq2Seq?",
+      "zh": "Seq2Seq 中解码器负责什么？"
+    },
+    "options": [
+      {
+        "en": "Generating the output sequence",
+        "zh": "生成输出序列"
+      },
+      {
+        "en": "Selecting image regions",
+        "zh": "选择图像区域"
+      },
+      {
+        "en": "Clustering documents",
+        "zh": "聚类文档"
+      },
+      {
+        "en": "Pruning decision trees",
+        "zh": "剪枝决策树"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "An encoder reads the source sequence into a learned representation, and a decoder generates the target sequence token by token. Training maximizes the conditional probability of the output sequence given the input.",
+      "zh": "编码器读取源序列并形成学习到的表示，解码器再逐词生成目标序列。训练目标是在给定输入的条件下最大化输出序列的条件概率。"
+    },
+    "sourceIds": [
+      "source-2014-seq2seq-primary"
+    ],
+    "assetIds": [
+      "asset-2014-seq2seq-explainer"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "claim-1999-policy-gradient-membership",
+    "importance": "core",
+    "text": {
+      "en": "Policy Gradient Theorem is listed in the BenchCouncil long-term AI100 table.",
+      "zh": "策略梯度定理列入 BenchCouncil 长期 AI100 主表。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-1999-policy-gradient-description",
+    "importance": "core",
+    "text": {
+      "en": "<p>Policy-based reinforcement learning needed a rigorous expression for how long-run performance changes with policy parameters. The policy gradient theorem supplied that expression without requiring derivatives of the environment dynamics.</p><p>The performance gradient can be written as an expectation of action-value estimates multiplied by the policy score. Actor-critic methods use a learned critic to estimate that value while the actor follows the resulting gradient. Experts generally treat the policy gradient theorem as the mathematical backbone of modern actor-critic and policy-optimization algorithms. PPO, natural policy gradients, deterministic policy gradients, and many RLHF methods inherit its structure.</p>",
+      "zh": "<p>基于策略的强化学习需要一个严格公式，说明长期性能如何随策略参数变化。策略梯度定理给出了这一表达式，而且不需要对环境动力学求导。</p><p>性能梯度可以写成动作价值估计与策略得分乘积的期望。Actor-critic 方法用学习到的 critic 估计价值，actor 则沿该梯度更新。专家通常把策略梯度定理视为现代 actor-critic 和策略优化算法的数学骨架。PPO、自然策略梯度、确定性策略梯度以及许多 RLHF 方法都继承了这一结构。</p>"
+    },
+    "sourceIds": [
+      "source-1999-policy-gradient-primary",
+      "source-1999-policy-gradient-secondary",
+      "source-benchcouncil-ai100-catalog"
+    ],
+    "status": "verified"
+  }
+]

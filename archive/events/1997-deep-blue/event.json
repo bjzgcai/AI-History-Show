@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国纽约州",
-      "en": "New York, United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "IBM 研究院",
-      "en": "IBM Research"
+      "en": "IBM",
+      "zh": "IBM"
     },
     "coordinates": [
       41.2108,
@@ -37,38 +37,59 @@
   ],
   "figures": [
     {
-      "figureId": "feng-hsiung-hsu",
+      "name": {
+        "en": "Feng-hsiung Hsu",
+        "zh": "许峰雄"
+      },
       "role": {
-        "zh": "首席架构师；设计定制 VLSI 芯片与硬件架构",
-        "en": "Chief architect; custom VLSI and hardware design"
+        "en": "Chief architect; custom VLSI and hardware design",
+        "zh": "首席架构师；定制 VLSI 与硬件设计"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
       "avatarStyle": "object-position: 50% 20%; transform: scale(1.55); transform-origin: 50% 20%;",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "murray-campbell",
+      "name": {
+        "en": "Murray Campbell",
+        "zh": "默里·坎贝尔"
+      },
       "role": {
-        "zh": "评估函数与搜索策略负责人",
-        "en": "Evaluation-function and search-strategy lead"
+        "en": "Evaluation-function and search-strategy lead",
+        "zh": "评估函数与搜索策略负责人"
       },
       "avatar": "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "a-joseph-hoane-jr",
-      "role": {
-        "zh": "并行搜索软件总工程师",
-        "en": "Lead engineer for parallel-search software"
+      "name": {
+        "en": "Arthur Hoane",
+        "zh": "约瑟夫·霍恩"
       },
+      "role": {
+        "en": "Parallel-search software lead",
+        "zh": "并行搜索软件负责人"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "jerry-brody",
-      "role": {
-        "zh": "硬件集成与现场运行工程师",
-        "en": "Hardware integration and match-operations engineer"
+      "name": {
+        "en": "Jerry Brody",
+        "zh": "杰里·布罗迪"
       },
+      "role": {
+        "en": "Hardware integration and match operations",
+        "zh": "硬件集成与比赛现场运行"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

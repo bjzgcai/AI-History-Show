@@ -17,12 +17,12 @@
   "location": {
     "regionId": "amsterdam-netherlands",
     "country": {
-      "zh": "Amsterdam, Netherlands",
-      "en": "Amsterdam, Netherlands"
+      "en": "Netherlands",
+      "zh": "荷兰"
     },
     "place": {
-      "zh": "University of Amsterdam",
-      "en": "University of Amsterdam"
+      "en": "University of Amsterdam",
+      "zh": "阿姆斯特丹大学"
     },
     "coordinates": [
       52.3676,
@@ -37,12 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "thomas-kipf",
+      "name": {
+        "en": "Thomas Kipf",
+        "zh": "托马斯·基普夫"
+      },
       "role": {
-        "zh": "GCN 主要作者",
-        "en": "GCN lead author"
+        "en": "GCN lead author",
+        "zh": "GCN 主要作者"
       },
       "avatar": "resources/images/external/ai100-2016-gcn/thomas-kipf-portrait.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Max Welling",
+        "zh": "马克斯·韦林"
+      },
+      "role": {
+        "en": "GCN co-author",
+        "zh": "GCN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     }
   ],

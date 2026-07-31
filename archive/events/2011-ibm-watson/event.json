@@ -17,12 +17,12 @@
   "location": {
     "regionId": "usa",
     "country": {
-      "zh": "美国",
-      "en": "United States"
+      "en": "United States",
+      "zh": "美国"
     },
     "place": {
-      "zh": "IBM 托马斯·J·沃森 研究中心",
-      "en": "IBM Thomas J. Watson Research Center"
+      "en": "IBM",
+      "zh": "IBM"
     },
     "coordinates": [
       41.2101,
@@ -37,21 +37,31 @@
   ],
   "figures": [
     {
-      "figureId": "david-ferrucci",
+      "name": {
+        "en": "David Ferrucci",
+        "zh": "戴维·费鲁奇"
+      },
       "role": {
-        "zh": "Watson / DeepQA 团队负责人",
-        "en": "Principal investigator of the Watson / DeepQA team"
+        "en": "Principal investigator of the Watson / DeepQA team",
+        "zh": "Watson / DeepQA 团队负责人"
       },
       "avatar": "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "ibm-deepqa-team",
-      "role": {
-        "zh": "构建问答系统",
-        "en": "Built the question-answering system"
+      "name": {
+        "en": "IBM DeepQA team",
+        "zh": "IBM DeepQA 团队"
       },
-      "organizationIds": []
+      "role": {
+        "en": "Built the question-answering system",
+        "zh": "构建问答系统"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person"
     }
   ],
   "organizations": [],
