@@ -1,5 +1,25 @@
 [
   {
+    "id": "source-xiaolingtong-cover-wikipedia",
+    "type": "image-source",
+    "label": {
+      "zh": "图片来源",
+      "en": "Image source"
+    },
+    "title": {
+      "zh": "《小灵通漫游未来》1978 年初版封面",
+      "en": "Little Smart Roaming the Future 1978 first-edition cover"
+    },
+    "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5#/media/File:%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg",
+    "language": "zh",
+    "reliability": "reference-only",
+    "notes": {
+      "zh": "来源于中文维基百科媒体页；仓库内保留本地副本用于展览显示。",
+      "en": "Sourced from the Chinese Wikipedia media page; a local copy is retained in the repository for exhibit display."
+    },
+    "purpose": "image-provenance"
+  },
+  {
     "id": "source-ye-yonglie-commons-portrait",
     "type": "image-source",
     "label": {

@@ -1,5 +1,37 @@
 [
   {
+    "id": "asset-1978-xiaolingtong-cover",
+    "type": "image",
+    "path": "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg",
+    "role": "hero-image",
+    "caption": {
+      "zh": "《小灵通漫游未来》1978 年初版封面",
+      "en": "Little Smart Roaming the Future 1978 first-edition cover"
+    },
+    "subcaption": {
+      "zh": "书籍封面信息图，来源于中文维基百科媒体页。",
+      "en": "Book-cover reference image from the Chinese Wikipedia media page."
+    },
+    "sourceId": "source-xiaolingtong-cover-wikipedia",
+    "sourceName": {
+      "zh": "中文维基百科",
+      "en": "Chinese Wikipedia"
+    },
+    "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5#/media/File:%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg",
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
+        "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
+      },
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/zh/5/5a/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg"
+    },
+    "usage": [
+      "variant:humanistic-cycle"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1978-xiaolingtong-ye-yonglie",
     "type": "image",
     "path": "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg",

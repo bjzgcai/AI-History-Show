@@ -28,14 +28,14 @@
                 "zh": "《小灵通漫游未来》概览"
             },
             "description": {
-                "en": "Reference page used for publication context; no book cover or scan is reused locally.",
-                "zh": "用于核对出版语境的参考页面；本地不复用书封或扫描图。"
+                "en": "Reference page used for publication context; the book cover is localized separately as an image asset.",
+                "zh": "用于核对出版语境的参考页面；书封图已作为独立图片资产本地化接入。"
             },
             "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
             "source": "Chinese reference page",
             "license": {
-                "en": "Reference link only; local SVG is original.",
-                "zh": "仅作为参考链接；本地 SVG 为原创图。"
+                "en": "Reference link only; local SVG remains original and the cover image is separately localized.",
+                "zh": "仅作为参考链接；本地 SVG 为原创图，书封图另行本地化。"
             },
             "usage": {
                 "en": "Publication-context source",
@@ -48,10 +48,13 @@
         }
     ],
     "assetIds": [
+        "asset-1978-xiaolingtong-cover",
         "asset-1978-xiaolingtong-ye-yonglie",
         "asset-1978-xiaolingtong-future-city"
     ],
+    "overviewImageAssetId": "asset-1978-xiaolingtong-cover",
     "sourceIds": [
+        "source-xiaolingtong-cover-wikipedia",
         "source-ye-yonglie-commons-portrait",
         "source-little-smart-publication-overview",
         "source-ye-yonglie-biography",
@@ -175,14 +178,14 @@
                     "zh": "《小灵通漫游未来》概览"
                 },
                 "description": {
-                    "en": "Reference page used for publication context; no book cover or scan is reused locally.",
-                    "zh": "用于核对出版语境的参考页面；本地不复用书封或扫描图。"
+                    "en": "Reference page used for publication context; the book cover is localized separately as an image asset.",
+                    "zh": "用于核对出版语境的参考页面；书封图已作为独立图片资产本地化接入。"
                 },
                 "url": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5",
                 "source": "Chinese reference page",
                 "license": {
-                    "en": "Reference link only; local SVG is original.",
-                    "zh": "仅作为参考链接；本地 SVG 为原创图。"
+                    "en": "Reference link only; local SVG remains original and the cover image is separately localized.",
+                    "zh": "仅作为参考链接；本地 SVG 为原创图，书封图另行本地化。"
                 },
                 "usage": {
                     "en": "Publication-context source",
