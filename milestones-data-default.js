@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-31 08:04
+// 生成时间: 2026-07-31 09:46
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -28298,7 +28298,7 @@ const milestones = [
         },
         "role": {
           "en": "Squeeze-and-excitation lead author",
-          "zh": "Squeeze-and-excitation 主要作者"
+          "zh": "挤压与激励网络主要作者"
         },
         "avatar": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
         "avatarStyle": "",
@@ -28312,7 +28312,7 @@ const milestones = [
         },
         "role": {
           "en": "Squeeze-and-excitation co-author",
-          "zh": "Squeeze-and-excitation 共同作者"
+          "zh": "挤压与激励网络共同作者"
         },
         "avatar": "",
         "avatarStyle": "",
@@ -28338,7 +28338,7 @@ const milestones = [
           "en": "Jie Hu portrait"
         },
         "subcaption": {
-          "zh": "Squeeze-and-excitation 主要作者",
+          "zh": "挤压与激励网络主要作者",
           "en": "Squeeze-and-excitation lead author"
         },
         "sourceName": {
@@ -34703,7 +34703,7 @@ const milestones = [
           "en": "Lead author of neural attention paper",
           "zh": "神经注意力论文主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -34728,25 +34728,22 @@ const milestones = [
           "zh": "明唐·梁"
         },
         "role": {
-          "en": "Attention co-author",
-          "zh": "Attention 共同作者"
+          "en": "Attention-related achievement contributor",
+          "zh": "注意力相关成就贡献者"
         },
-        "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
       },
       {
-        "figureId": "christopher-manning",
         "name": {
           "en": "Christopher Manning",
           "zh": "克里斯托弗·曼宁"
         },
         "role": {
-          "en": "Related statistical NLP researcher",
-          "zh": "相关统计自然语言处理研究者"
+          "en": "Attention-related achievement contributor",
+          "zh": "注意力相关成就贡献者"
         },
-        "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -34757,10 +34754,9 @@ const milestones = [
           "zh": "徐凯文"
         },
         "role": {
-          "en": "Attention co-author",
-          "zh": "Attention 共同作者"
+          "en": "Attention-related achievement contributor",
+          "zh": "注意力相关成就贡献者"
         },
-        "avatar": "",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -34774,14 +34770,17 @@ const milestones = [
           "en": "Neural attention paper co-author",
           "zh": "神经注意力论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
-        "figureType": "person"
+        "figureType": "person",
+        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
+        "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+        "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "resources/images/2014-attention/people/2014-attention_people_01.png",
         "resources/images/2014-attention/architecture/2014-attention_architecture_01.png"
       ],
@@ -34798,12 +34797,46 @@ const milestones = [
         }
       ],
       "assetIds": [
+        "asset-2014-attention-bahdanau-portrait",
         "asset-2014-attention-alignment",
+        "asset-2014-attention-cho-portrait",
         "asset-2014-attention-people-01",
         "asset-2014-attention-architecture-01"
       ]
     },
     "imageMeta": {
+      "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg": {
+        "caption": {
+          "zh": "兹米特里·巴赫达瑙肖像",
+          "en": "Dzmitry Bahdanau portrait"
+        },
+        "subcaption": {
+          "zh": "神经注意力论文主要作者",
+          "en": "Lead author of the neural attention paper"
+        },
+        "sourceName": {
+          "zh": "Mila 官方人物目录",
+          "en": "Mila official directory"
+        },
+        "license": {
+          "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
+          "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
+        },
+        "usage": {
+          "zh": "用于带注意力机制的神经机器翻译事件首图与兹米特里·巴赫达瑙人物头像。",
+          "en": "Used as the lead image and Dzmitry Bahdanau avatar for the Neural Machine Translation with Attention event."
+        },
+        "sourceId": "source-dzmitry-bahdanau-mila-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
+            "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
         "caption": {
           "zh": "注意力对齐图",
@@ -34827,6 +34860,38 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg": {
+        "caption": {
+          "zh": "赵京贤肖像",
+          "en": "Kyunghyun Cho portrait"
+        },
+        "subcaption": {
+          "zh": "神经注意力论文共同作者",
+          "en": "Co-author of the neural attention paper"
+        },
+        "sourceName": {
+          "zh": "纽约大学库朗研究所官方档案",
+          "en": "NYU Courant official profile"
+        },
+        "license": {
+          "zh": "纽约大学库朗研究所官方档案图片；文件元数据标注 NYU Photo Bureau © Gallo，对外再分发前应复核授权范围。",
+          "en": "Official NYU Courant profile image; file metadata credits NYU Photo Bureau © Gallo, so confirm rights before redistribution."
+        },
+        "usage": {
+          "zh": "用于带注意力机制的神经机器翻译事件中的赵京贤人物头像与肖像展示。",
+          "en": "Used for Kyunghyun Cho's avatar and portrait in the Neural Machine Translation with Attention event."
+        },
+        "sourceId": "source-kyunghyun-cho-nyu-courant-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "纽约大学库朗研究所官方档案图片；文件元数据标注 NYU Photo Bureau © Gallo，对外再分发前应复核授权范围。",
+            "en": "Official NYU Courant profile image; file metadata credits NYU Photo Bureau © Gallo, so confirm rights before redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
         "caption": {
@@ -35195,7 +35260,8 @@ const milestones = [
           "source-neural-machine-translation-by-jointly-learning-to-align-and-translate"
         ],
         "assetIds": [
-          "asset-geoffrey-hinton"
+          "asset-2014-attention-bahdanau-portrait",
+          "asset-2014-attention-alignment"
         ]
       }
     ],
@@ -55567,12 +55633,14 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
-        "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg"
+        "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg",
+        "resources/images/external/ai100-1986-id3/id3-paper-figure-3-complex-decision-tree.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-1986-id3-portrait",
-        "asset-1986-id3-explainer"
+        "asset-1986-id3-explainer",
+        "asset-1986-id3-paper-figure-3"
       ]
     },
     "imageMeta": {
@@ -55642,6 +55710,39 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/ai100-1986-id3/id3-paper-figure-3-complex-decision-tree.png": {
+        "caption": {
+          "zh": "图 3：复杂决策树",
+          "en": "Figure 3. A complex decision tree"
+        },
+        "subcaption": {
+          "zh": "围绕温度、天气、风力和湿度属性展开的多层决策树",
+          "en": "A multi-level tree over temperature, outlook, windy, and humid attributes"
+        },
+        "sourceName": {
+          "en": "J.R. Quinlan, Induction of Decision Trees",
+          "zh": "J.R. Quinlan《决策树归纳》"
+        },
+        "sourceUrl": "https://doi.org/10.1007/BF00116251",
+        "license": {
+          "en": "Cropped from Figure 3 on p. 88 of the primary paper for research-history reference; publisher copyright applies and redistribution rights should be reviewed before external publication.",
+          "zh": "裁取自原始论文第 88 页图 3，用于人工智能史资料引用；图像受出版方版权保护，对外发布前需复核再分发授权。"
+        },
+        "usage": {
+          "en": "Primary-paper figure showing a complex ID3 decision-tree example",
+          "zh": "用于展示 ID3 复杂决策树示例的主论文图"
+        },
+        "sourceId": "source-1986-id3-primary",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "en": "Cropped from Figure 3 on p. 88 of the primary paper for research-history reference; publisher copyright applies and redistribution rights should be reviewed before external publication.",
+            "zh": "裁取自原始论文第 88 页图 3，用于人工智能史资料引用；图像受出版方版权保护，对外发布前需复核再分发授权。"
+          }
+        },
+        "role": "paper-figure",
+        "type": "image"
       }
     },
     "achievement": {
@@ -62751,8 +62852,8 @@ const milestones = [
         "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
         "resources/images/1956-dartmouth/historical/1956-dartmouth_school.png"
       ],
-      "overviewImage": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_02.jpg",
-      "overviewImageAssetId": "asset-1956-dartmouth-historical-02",
+      "overviewImage": "resources/images/1956-dartmouth/historical/1956-dartmouth_historical_04.jpg",
+      "overviewImageAssetId": "asset-1956-dartmouth-historical-04",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/1956%E5%B9%B4%EF%BC%9A%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AF%9E%E7%94%9F.mp4",
@@ -65257,6 +65358,19 @@ const milestones = [
     "figures": [
       {
         "name": {
+          "en": "Michael I. Jordan",
+          "zh": "迈克尔·乔丹"
+        },
+        "role": {
+          "en": "The creator of Jordan Network",
+          "zh": "乔丹网络提出者"
+        },
+        "avatar": "resources/images/figures/michael-i-jordan.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
           "en": "Jeffrey Elman",
           "zh": "杰弗里·埃尔曼"
         },
@@ -65267,25 +65381,12 @@ const milestones = [
         "avatar": "resources/images/figures/jeffrey-elman.jpg",
         "avatarStyle": "",
         "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Michael Jordan",
-          "zh": "迈克尔·乔丹"
-        },
-        "role": {
-          "en": "The creator of Jordan Network",
-          "zh": "乔丹网络提出者"
-        },
-        "avatar": "resources/images/figures/michael-i-jordan.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
       }
     ],
     "resources": {
       "images": [
-        "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png",
-        "resources/images/1986-rnn/people/1986-rnn_people_01.png"
+        "resources/images/1986-rnn/people/1986-rnn_people_01.png",
+        "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png"
       ],
       "videos": [
         {
@@ -65300,35 +65401,11 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-1986-rnn-architecture-01",
-        "asset-1986-rnn-people-01"
+        "asset-1986-rnn-people-01",
+        "asset-1986-rnn-architecture-01"
       ]
     },
     "imageMeta": {
-      "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png": {
-        "caption": {
-          "zh": "循环神经网络结构图 1",
-          "en": "Recurrent Neural Networks structure diagram 1"
-        },
-        "subcaption": {
-          "zh": "展示循环神经网络的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of Recurrent Neural Networks."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "image"
-      },
       "resources/images/1986-rnn/people/1986-rnn_people_01.png": {
         "caption": {
           "zh": "迈克尔·I·乔丹肖像",
@@ -65351,6 +65428,30 @@ const milestones = [
           }
         },
         "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/1986-rnn/architecture/1986-rnn_architecture_01.png": {
+        "caption": {
+          "zh": "循环神经网络结构图 1",
+          "en": "Recurrent Neural Networks structure diagram 1"
+        },
+        "subcaption": {
+          "zh": "展示循环神经网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Recurrent Neural Networks."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
         "type": "image"
       }
     },
@@ -69667,7 +69768,7 @@ const milestones = [
           "en": "Lead author of neural attention paper",
           "zh": "神经注意力论文主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -69680,7 +69781,7 @@ const milestones = [
           "en": "Neural attention paper co-author",
           "zh": "神经注意力论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -69702,6 +69803,8 @@ const milestones = [
       "images": [
         "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
         "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
+        "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
+        "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "resources/images/2014-attention/people/2014-attention_people_01.png"
       ],
       "overviewImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
@@ -69721,6 +69824,8 @@ const milestones = [
       "assetIds": [
         "asset-2014-attention-alignment",
         "asset-2014-attention-architecture-01",
+        "asset-2014-attention-bahdanau-portrait",
+        "asset-2014-attention-cho-portrait",
         "asset-2014-attention-people-01"
       ]
     },
@@ -69771,6 +69876,70 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg": {
+        "caption": {
+          "zh": "兹米特里·巴赫达瑙肖像",
+          "en": "Dzmitry Bahdanau portrait"
+        },
+        "subcaption": {
+          "zh": "神经注意力论文主要作者",
+          "en": "Lead author of the neural attention paper"
+        },
+        "sourceName": {
+          "zh": "Mila 官方人物目录",
+          "en": "Mila official directory"
+        },
+        "license": {
+          "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
+          "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
+        },
+        "usage": {
+          "zh": "用于带注意力机制的神经机器翻译事件首图与兹米特里·巴赫达瑙人物头像。",
+          "en": "Used as the lead image and Dzmitry Bahdanau avatar for the Neural Machine Translation with Attention event."
+        },
+        "sourceId": "source-dzmitry-bahdanau-mila-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
+            "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg": {
+        "caption": {
+          "zh": "赵京贤肖像",
+          "en": "Kyunghyun Cho portrait"
+        },
+        "subcaption": {
+          "zh": "神经注意力论文共同作者",
+          "en": "Co-author of the neural attention paper"
+        },
+        "sourceName": {
+          "zh": "纽约大学库朗研究所官方档案",
+          "en": "NYU Courant official profile"
+        },
+        "license": {
+          "zh": "纽约大学库朗研究所官方档案图片；文件元数据标注 NYU Photo Bureau © Gallo，对外再分发前应复核授权范围。",
+          "en": "Official NYU Courant profile image; file metadata credits NYU Photo Bureau © Gallo, so confirm rights before redistribution."
+        },
+        "usage": {
+          "zh": "用于带注意力机制的神经机器翻译事件中的赵京贤人物头像与肖像展示。",
+          "en": "Used for Kyunghyun Cho's avatar and portrait in the Neural Machine Translation with Attention event."
+        },
+        "sourceId": "source-kyunghyun-cho-nyu-courant-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "纽约大学库朗研究所官方档案图片；文件元数据标注 NYU Photo Bureau © Gallo，对外再分发前应复核授权范围。",
+            "en": "Official NYU Courant profile image; file metadata credits NYU Photo Bureau © Gallo, so confirm rights before redistribution."
+          }
+        },
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/2014-attention/people/2014-attention_people_01.png": {
@@ -75165,46 +75334,20 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
         "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png",
+        "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
         "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg",
         "resources/images/figures/research-institution.png"
       ],
-      "overviewImage": "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
-      "overviewImageAssetId": "asset-2022-post-training-pipeline",
       "videos": [],
       "assetIds": [
-        "asset-2022-post-training-pipeline",
         "asset-2022-post-training-instruction-tuning-ppt",
+        "asset-2022-post-training-pipeline",
         "asset-2022-post-training-rlhf-ppt",
         "asset-2022-post-training-research-institutions"
       ]
     },
     "imageMeta": {
-      "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg": {
-        "caption": {
-          "zh": "后训练流程图",
-          "en": "Post-training pipeline"
-        },
-        "subcaption": {
-          "zh": "展示预训练基座模型如何通过指令微调、偏好反馈和强化学习转化为更可用的智能系统。",
-          "en": "Shows how a pretrained foundation model is shaped by instruction tuning, preference feedback, and reinforcement learning into a more useful intelligent system."
-        },
-        "license": {
-          "zh": "本地原创示意图；用于解释论文和技术报告中的方法流程，不复制出版方图形。",
-          "en": "Local original explainer; it illustrates the method flow from papers and technical reports without copying publisher figures."
-        },
-        "sourceId": "source-instructgpt-paper",
-        "rights": {
-          "status": "local-original",
-          "license": {
-            "zh": "本地原创示意图；用于解释论文和技术报告中的方法流程，不复制出版方图形。",
-            "en": "Local original explainer; it illustrates the method flow from papers and technical reports without copying publisher figures."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
       "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png": {
         "caption": {
           "zh": "指令微调流程图",
@@ -75229,6 +75372,30 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "image"
+      },
+      "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg": {
+        "caption": {
+          "zh": "后训练流程图",
+          "en": "Post-training pipeline"
+        },
+        "subcaption": {
+          "zh": "展示预训练基座模型如何通过指令微调、偏好反馈和强化学习转化为更可用的智能系统。",
+          "en": "Shows how a pretrained foundation model is shaped by instruction tuning, preference feedback, and reinforcement learning into a more useful intelligent system."
+        },
+        "license": {
+          "zh": "本地原创示意图；用于解释论文和技术报告中的方法流程，不复制出版方图形。",
+          "en": "Local original explainer; it illustrates the method flow from papers and technical reports without copying publisher figures."
+        },
+        "sourceId": "source-instructgpt-paper",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "zh": "本地原创示意图；用于解释论文和技术报告中的方法流程，不复制出版方图形。",
+            "en": "Local original explainer; it illustrates the method flow from papers and technical reports without copying publisher figures."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg": {
         "caption": {
@@ -75942,11 +76109,11 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
         "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png",
         "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png",
         "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png",
-        "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
-        "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png"
+        "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png"
       ],
       "videos": [
         {
@@ -75961,14 +76128,38 @@ const milestones = [
         }
       ],
       "assetIds": [
+        "asset-2024-ai-scientist-people-02",
         "asset-2024-ai-scientist-architecture-01",
         "asset-2024-ai-scientist-architecture-02",
         "asset-2024-ai-scientist-papers-01",
-        "asset-2024-ai-scientist-people-01",
-        "asset-2024-ai-scientist-people-02"
+        "asset-2024-ai-scientist-people-01"
       ]
     },
     "imageMeta": {
+      "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
+        "caption": {
+          "zh": "Sakana AI 团队",
+          "en": "Sakana AI team"
+        },
+        "subcaption": {
+          "zh": "AI Scientist 项目的开发团队资料照。",
+          "en": "Reference photo of the team developing the AI Scientist project."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "team-photo",
+        "type": "image"
+      },
       "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png": {
         "caption": {
           "zh": "AI科学家与自主实验室结构图 1",
@@ -76049,30 +76240,6 @@ const milestones = [
         "subcaption": {
           "zh": "自动化实验室研究人员在材料实验环境中工作。",
           "en": "Automated-laboratory researchers working in a materials lab."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "team-photo",
-        "type": "image"
-      },
-      "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png": {
-        "caption": {
-          "zh": "Sakana AI 团队",
-          "en": "Sakana AI team"
-        },
-        "subcaption": {
-          "zh": "AI Scientist 项目的开发团队资料照。",
-          "en": "Reference photo of the team developing the AI Scientist project."
         },
         "license": {
           "zh": "Migrated from legacy media metadata; verify rights before publication.",
@@ -81202,42 +81369,18 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg",
         "resources/images/figures/authoritative/david-silver.jpg",
+        "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg",
         "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2017-alphazero-self-play-loop",
         "asset-david-silver-commons-portrait",
+        "asset-2017-alphazero-self-play-loop",
         "asset-2017-alphazero-julian-schrittwieser"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
-        "caption": {
-          "zh": "AlphaZero 自我博弈循环",
-          "en": "AlphaZero self-play loop"
-        },
-        "subcaption": {
-          "zh": "策略-价值自我博弈的原创解释图。",
-          "en": "Original explainer for policy-value self-play."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-science-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -81266,6 +81409,30 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-alphazero_self-play-loop.svg": {
+        "caption": {
+          "zh": "AlphaZero 自我博弈循环",
+          "en": "AlphaZero self-play loop"
+        },
+        "subcaption": {
+          "zh": "策略-价值自我博弈的原创解释图。",
+          "en": "Original explainer for policy-value self-play."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-science-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg": {
         "caption": {
@@ -82987,46 +83154,22 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
         "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg",
+        "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg",
         "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg",
         "resources/images/external/2019-suphx/tao-qin-portrait.jpg",
         "resources/images/external/2019-suphx/suphx-logo.png"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2019-suphx-mahjong-policy",
         "asset-2019-suphx-tie-yan-liu",
+        "asset-2019-suphx-mahjong-policy",
         "asset-2019-suphx-hsiao-wuen-hon",
         "asset-2019-suphx-tao-qin",
         "asset-2019-suphx-project-logo"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg": {
-        "caption": {
-          "zh": "Suphx 麻将策略循环",
-          "en": "Suphx mahjong policy loop"
-        },
-        "subcaption": {
-          "zh": "隐藏信息麻将 AI 的原创解释图。",
-          "en": "Original explainer for hidden-information mahjong AI."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-suphx-arxiv-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
       "resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg": {
         "caption": {
           "zh": "刘铁岩肖像",
@@ -83058,6 +83201,30 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2019-suphx_mahjong-policy.svg": {
+        "caption": {
+          "zh": "Suphx 麻将策略循环",
+          "en": "Suphx mahjong policy loop"
+        },
+        "subcaption": {
+          "zh": "隐藏信息麻将 AI 的原创解释图。",
+          "en": "Original explainer for hidden-information mahjong AI."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-suphx-arxiv-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/external/2019-suphx/hsiao-wuen-hon-portrait.jpg": {
         "caption": {

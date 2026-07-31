@@ -50,9 +50,55 @@
       }
     }
   ],
+  "figures": [
+    {
+      "name": {
+        "en": "Dzmitry Bahdanau",
+        "zh": "兹米特里·巴赫达瑙"
+      },
+      "role": {
+        "en": "Lead author of neural attention paper",
+        "zh": "神经注意力论文主要作者"
+      },
+      "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Kyunghyun Cho",
+        "zh": "赵京贤"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yoshua Bengio",
+        "zh": "约书亚·本吉奥"
+      },
+      "role": {
+        "en": "Neural attention paper co-author",
+        "zh": "神经注意力论文共同作者"
+      },
+      "avatar": "resources/images/2014-attention/people/2014-attention_people_01.png",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
   "assetIds": [
     "asset-2014-attention-alignment",
     "asset-2014-attention-architecture-01",
+    "asset-2014-attention-bahdanau-portrait",
+    "asset-2014-attention-cho-portrait",
     "asset-2014-attention-people-01"
   ],
   "sourceIds": [
@@ -130,7 +176,7 @@
         "en": "Lead author of neural attention paper",
         "zh": "神经注意力论文主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },
@@ -143,7 +189,7 @@
         "en": "Neural attention paper co-author",
         "zh": "神经注意力论文共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
       "avatarStyle": "",
       "figureType": "person"
     },

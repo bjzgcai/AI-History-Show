@@ -45,7 +45,7 @@
         "en": "Lead author of neural attention paper",
         "zh": "神经注意力论文主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -70,25 +70,22 @@
         "zh": "明唐·梁"
       },
       "role": {
-        "en": "Attention co-author",
-        "zh": "Attention 共同作者"
+        "en": "Attention-related achievement contributor",
+        "zh": "注意力相关成就贡献者"
       },
-      "avatar": "",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
     },
     {
-      "figureId": "christopher-manning",
       "name": {
         "en": "Christopher Manning",
         "zh": "克里斯托弗·曼宁"
       },
       "role": {
-        "en": "Related statistical NLP researcher",
-        "zh": "相关统计自然语言处理研究者"
+        "en": "Attention-related achievement contributor",
+        "zh": "注意力相关成就贡献者"
       },
-      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -99,10 +96,9 @@
         "zh": "徐凯文"
       },
       "role": {
-        "en": "Attention co-author",
-        "zh": "Attention 共同作者"
+        "en": "Attention-related achievement contributor",
+        "zh": "注意力相关成就贡献者"
       },
-      "avatar": "",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -116,9 +112,10 @@
         "en": "Neural attention paper co-author",
         "zh": "神经注意力论文共同作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
       "avatarStyle": "",
-      "figureType": "person"
+      "figureType": "person",
+      "organizationIds": []
     }
   ],
   "organizations": [],

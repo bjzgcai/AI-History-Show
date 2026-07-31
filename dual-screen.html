@@ -2257,23 +2257,8 @@
             return `<span>${escapeHtml(initials(figure.name))}</span>`;
         }
 
-        function isPortraitLikePhoto(url) {
-            return /\/people\/|portrait|headshot|avatar|人物|人像/i.test(String(url || ''));
-        }
-
-        function isDocumentLikePhoto(url) {
-            return /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(String(url || ''));
-        }
-
         function choosePreferredArchiveIndex(photos) {
-            const safePhotos = Array.isArray(photos) ? photos.filter(Boolean) : [];
-            if (safePhotos.length <= 1) return 0;
-
-            const firstNonDocumentIndex = safePhotos.findIndex((url) => !isDocumentLikePhoto(url));
-            if (firstNonDocumentIndex > 0) {
-                return firstNonDocumentIndex;
-            }
-
+            // The detail view starts with the first Archive image.
             return 0;
         }
 
@@ -2446,20 +2431,9 @@
             return `${text} <a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
         }
 
-        function scorePhoto(url) {
-            const value = String(url || '').toLowerCase();
-            if (!value) return -999;
-            if (value.includes('/historical/')) return 5;
-            if (value.includes('/people/')) return 4;
-            if (value.includes('/architecture/')) return 2;
-            if (value.includes('/papers/')) return 1;
-            return 3;
-        }
-
         function sortPhotosForDisplay(photos) {
-            return [...(photos || [])]
-                .filter(Boolean)
-                .sort((a, b) => scorePhoto(b) - scorePhoto(a));
+            // Keep detail-page order aligned with Archive resources.images.
+            return [...(photos || [])].filter(Boolean);
         }
 
         function clearIdleAdvanceTimer() {
