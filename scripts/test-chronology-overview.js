@@ -221,28 +221,61 @@ const rnnMilestone = milestones.find((item) => item.id === 'milestone-1986-rnn')
 const rnnPortrait = 'resources/images/1986-rnn/people/1986-rnn_people_01.png';
 assert.equal(rnnMilestone.resources.overviewImage, undefined, 'RNN should use the default first image');
 assert.equal(rnnMilestone.resources.images[0], rnnPortrait, 'RNN should list the Michael I. Jordan portrait first');
-assert.equal(overview.getPrimaryImage(rnnMilestone), rnnPortrait, 'RNN overview should use the Michael I. Jordan portrait');
+assert.equal(
+    overview.getPrimaryImage(rnnMilestone),
+    rnnPortrait,
+    'RNN overview should use the Michael I. Jordan portrait'
+);
 console.log('PASS RNN overview uses the first detail image by default');
 
 const highwayMilestone = milestones.find((item) => item.id === 'milestone-2014-highway-network');
 const highwayFirstImage = 'resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png';
-assert.equal(highwayMilestone.resources.overviewImage, undefined, 'Highway Networks should use the default first image');
-assert.equal(highwayMilestone.resources.images[0], highwayFirstImage, 'Highway Networks should preserve its first image');
-assert.equal(overview.getPrimaryImage(highwayMilestone), highwayFirstImage, 'Highway Networks overview should use its first image');
+assert.equal(
+    highwayMilestone.resources.overviewImage,
+    undefined,
+    'Highway Networks should use the default first image'
+);
+assert.equal(
+    highwayMilestone.resources.images[0],
+    highwayFirstImage,
+    'Highway Networks should preserve its first image'
+);
+assert.equal(
+    overview.getPrimaryImage(highwayMilestone),
+    highwayFirstImage,
+    'Highway Networks overview should use its first image'
+);
 console.log('PASS Highway Networks overview uses the first detail image by default');
 
 const postTraining = milestones.find((item) => item.id === 'milestone-2022-post-training-intelligence');
-const postTrainingFirstImage = 'resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png';
+const postTrainingFirstImage =
+    'resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png';
 assert.equal(postTraining.resources.overviewImage, undefined, 'post-training should use the default first image');
-assert.equal(postTraining.resources.images[0], postTrainingFirstImage, 'post-training should lead with its first detail image');
-assert.equal(overview.getPrimaryImage(postTraining), postTrainingFirstImage, 'post-training overview should use its first detail image');
+assert.equal(
+    postTraining.resources.images[0],
+    postTrainingFirstImage,
+    'post-training should lead with its first detail image'
+);
+assert.equal(
+    overview.getPrimaryImage(postTraining),
+    postTrainingFirstImage,
+    'post-training overview should use its first detail image'
+);
 console.log('PASS post-training overview uses the first detail image by default');
 
 const aiScientist = milestones.find((item) => item.id === 'milestone-2024-ai-scientist');
 const aiScientistFirstImage = 'resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png';
 assert.equal(aiScientist.resources.overviewImage, undefined, 'AI Scientist should use the default first image');
-assert.equal(aiScientist.resources.images[0], aiScientistFirstImage, 'AI Scientist should lead with the Sakana AI team image');
-assert.equal(overview.getPrimaryImage(aiScientist), aiScientistFirstImage, 'AI Scientist overview should use the Sakana AI team image');
+assert.equal(
+    aiScientist.resources.images[0],
+    aiScientistFirstImage,
+    'AI Scientist should lead with the Sakana AI team image'
+);
+assert.equal(
+    overview.getPrimaryImage(aiScientist),
+    aiScientistFirstImage,
+    'AI Scientist overview should use the Sakana AI team image'
+);
 console.log('PASS AI Scientist overview uses the Sakana AI team image by default');
 
 const squeezeExcitation = milestones.find((item) => item.id === 'milestone-ai100-2018-squeeze-excitation');
@@ -252,7 +285,8 @@ assert.deepEqual(
     'Squeeze-and-Excitation contributor roles should be localized in Chinese'
 );
 assert.equal(
-    squeezeExcitation.imageMeta['resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg'].subcaption.zh,
+    squeezeExcitation.imageMeta['resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg']
+        .subcaption.zh,
     '挤压与激励网络主要作者',
     'the Squeeze-and-Excitation portrait subcaption should be localized in Chinese'
 );
@@ -275,7 +309,9 @@ assert.deepEqual(
     attentionAvatars,
     'the deep-learning attention page should provide portraits for the original neural attention paper authors'
 );
-const ai100Attention = milestones.find((item) => item.id === 'milestone-ai100-2014-neural-machine-translation-attention');
+const ai100Attention = milestones.find(
+    (item) => item.id === 'milestone-ai100-2014-neural-machine-translation-attention'
+);
 assert.deepEqual(
     ai100Attention.figures.map((figure) => figure.name.en),
     ['Dzmitry Bahdanau', 'Yoshua Bengio', 'Minh-Thang Luong', 'Christopher Manning', 'Kelvin Xu', 'Kyunghyun Cho'],
