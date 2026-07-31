@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1500" role="img" aria-labelledby="title desc">
+  <title id="title">The Strength of Weak Learnability paper first page</title>
+  <desc id="desc">A paper-page preview for Robert E. Schapire's 1990 Machine Learning article.</desc>
+  <rect width="1600" height="1500" fill="#f8f8f5"/>
+  <g fill="#111" font-family="Times New Roman, Times, serif">
+    <text x="1110" y="104" font-size="28" font-weight="700">Machine Learning, 5, 197-227 (1990)</text>
+    <text x="520" y="142" font-size="27">© 1990 Kluwer Academic Publishers, Boston. Manufactured in The Netherlands.</text>
+
+    <text x="135" y="365" font-size="58" font-weight="700">The Strength of Weak Learnability</text>
+    <text x="138" y="450" font-size="30" font-weight="700">ROBERT E. SCHAPIRE</text>
+    <text x="138" y="486" font-size="29" font-style="italic">MIT Laboratory for Computer Science, 545 Technology Square, Cambridge, MA 02139</text>
+    <text x="1220" y="450" font-size="27">(rs@theory.lcs.mit.edu)</text>
+
+    <text x="138" y="555" font-size="30" font-weight="700">Abstract.</text>
+    <text x="262" y="555" font-size="30">This paper addresses the problem of improving the accuracy of an hypothesis output by a learning</text>
+    <text x="138" y="590" font-size="30">algorithm in the distribution-free (PAC) learning model. A concept class is </text>
+    <text x="940" y="590" font-size="30" font-style="italic">learnable</text>
+    <text x="1046" y="590" font-size="30"> (or strongly learnable) if,</text>
+    <text x="138" y="625" font-size="30">given access to a source of examples of the unknown concept, the learner with high probability is able to output</text>
+    <text x="138" y="660" font-size="30">an hypothesis that is correct on all but an arbitrarily small fraction of the instances. The concept class is </text>
+    <text x="1290" y="660" font-size="30" font-style="italic">weakly</text>
+    <text x="138" y="695" font-size="30" font-style="italic">learnable</text>
+    <text x="242" y="695" font-size="30"> if the learner can produce an hypothesis that performs only slightly better than random guessing. In</text>
+    <text x="138" y="730" font-size="30">this paper, it is shown that these two notions of learnability are equivalent.</text>
+    <text x="170" y="765" font-size="30">A method is described for converting a weak learning algorithm into one that achieves arbitrarily high accuracy.</text>
+    <text x="138" y="800" font-size="30">This construction may have practical applications as a tool for efficiently converting a mediocre learning algorithm</text>
+    <text x="138" y="835" font-size="30">into one that performs extremely well. In addition, the construction has some interesting theoretical consequences,</text>
+    <text x="138" y="870" font-size="30">including a set of general upper bounds on the complexity of any strong learning algorithm as a function of the</text>
+    <text x="138" y="905" font-size="30">allowed error ε.</text>
+
+    <text x="138" y="1005" font-size="30" font-weight="700">Keywords.</text>
+    <text x="270" y="1005" font-size="30">Machine learning, learning from examples, learnability theory, PAC learning, polynomial-time</text>
+    <text x="138" y="1040" font-size="30">identification.</text>
+
+    <text x="138" y="1142" font-size="40" font-weight="700">1. Introduction</text>
+    <text x="138" y="1235" font-size="32">Since Valiant's pioneering paper (1984), interest has flourished in the so-called </text>
+    <text x="1045" y="1235" font-size="32" font-style="italic">distribution-</text>
+    <text x="138" y="1275" font-size="32" font-style="italic">free</text>
+    <text x="190" y="1275" font-size="32"> or </text>
+    <text x="240" y="1275" font-size="32" font-style="italic">probably approximately correct</text>
+    <text x="625" y="1275" font-size="32"> (PAC) model of learning. In this model, the learner</text>
+    <text x="138" y="1315" font-size="32">tries to identify an unknown concept based on randomly chosen examples of the concept.</text>
+    <text x="138" y="1355" font-size="32">Examples are chosen according to a fixed but unknown and arbitrary distribution on the</text>
+    <text x="138" y="1395" font-size="32">space of instances. The learner's task is to find an hypothesis or prediction rule of his own</text>
+    <text x="138" y="1435" font-size="32">that correctly classifies new instances as positive or negative examples of the concept.</text>
+  </g>
+</svg>

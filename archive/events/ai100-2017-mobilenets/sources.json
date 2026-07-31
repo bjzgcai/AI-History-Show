@@ -58,25 +58,5 @@
             "zh": "canonical AI100 分支的官方成员依据。"
         },
         "purpose": "historical-context"
-    },
-    {
-        "id": "source-2017-mobilenets-portrait",
-        "type": "image-source",
-        "label": {
-            "en": "Image source",
-            "zh": "图片来源"
-        },
-        "title": {
-            "en": "Kaiming He related portrait source",
-            "zh": "何恺明相关肖像来源"
-        },
-        "url": "https://people.csail.mit.edu/kaiming/",
-        "language": "en",
-        "reliability": "primary",
-        "notes": {
-            "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-            "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
-        },
-        "purpose": "image-provenance"
     }
 ]

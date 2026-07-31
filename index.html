@@ -15287,7 +15287,14 @@
         }
 
         function isDiagramImage(url) {
-            return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(String(url || ''));
+            const value = String(url || '');
+            if (
+                isDocumentLikePhoto(value) &&
+                !/\/explainers\/|\/architecture\/|diagram|flow|pipeline/i.test(value)
+            ) {
+                return false;
+            }
+            return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(value);
         }
 
         const UI_MEDIA_VISUAL_OVERRIDES = {

@@ -125,7 +125,7 @@
         "en": "CRF lead author",
         "zh": "CRF 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -140,21 +140,6 @@
         "zh": "CRF 共同作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "christopher-manning",
-      "name": {
-        "en": "Christopher Manning",
-        "zh": "克里斯托弗·曼宁"
-      },
-      "role": {
-        "en": "Related statistical NLP researcher",
-        "zh": "相关统计自然语言处理研究者"
-      },
-      "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

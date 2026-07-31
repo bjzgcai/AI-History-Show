@@ -45,7 +45,7 @@
         "en": "Adaboost lead author",
         "zh": "Adaboost 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -60,21 +60,6 @@
         "zh": "Adaboost 共同作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "leo-breiman",
-      "name": {
-        "en": "Leo Breiman",
-        "zh": "利奥·布雷曼"
-      },
-      "role": {
-        "en": "Related ensemble-learning pioneer",
-        "zh": "相关集成学习先驱"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

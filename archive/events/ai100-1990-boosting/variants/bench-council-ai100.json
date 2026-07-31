@@ -51,14 +51,14 @@
     }
   ],
   "assetIds": [
-    "asset-1990-boosting-portrait",
+    "asset-1990-boosting-paper-first-page",
     "asset-1990-boosting-explainer"
   ],
+  "overviewImageAssetId": "asset-1990-boosting-paper-first-page",
   "sourceIds": [
     "source-1990-boosting-primary",
     "source-1990-boosting-secondary",
-    "source-benchcouncil-ai100-catalog",
-    "source-1990-boosting-portrait"
+    "source-benchcouncil-ai100-catalog"
   ],
   "claimIds": [
     "claim-1990-boosting-membership",
@@ -126,21 +126,6 @@
         "zh": "Boost 主要作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "leo-breiman",
-      "name": {
-        "en": "Leo Breiman",
-        "zh": "利奥·布雷曼"
-      },
-      "role": {
-        "en": "Related ensemble-learning pioneer",
-        "zh": "相关集成学习先驱"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

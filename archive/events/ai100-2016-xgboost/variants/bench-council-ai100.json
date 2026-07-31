@@ -125,7 +125,7 @@
         "en": "XGBoost lead author",
         "zh": "XGBoost 主要作者"
       },
-      "avatar": "",
+      "avatar": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []
@@ -140,21 +140,6 @@
         "zh": "XGBoost 共同作者"
       },
       "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "leo-breiman",
-      "name": {
-        "en": "Leo Breiman",
-        "zh": "利奥·布雷曼"
-      },
-      "role": {
-        "en": "Tree-ensemble lineage pioneer",
-        "zh": "树集成技术谱系先驱"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

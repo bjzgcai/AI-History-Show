@@ -125,22 +125,7 @@
         "en": "ID3 lead author",
         "zh": "ID3 主要作者"
       },
-      "avatar": "",
-      "avatarStyle": "",
-      "figureType": "person",
-      "organizationIds": []
-    },
-    {
-      "figureId": "leo-breiman",
-      "name": {
-        "en": "Leo Breiman",
-        "zh": "利奥·布雷曼"
-      },
-      "role": {
-        "en": "Related decision-tree pioneer",
-        "zh": "相关决策树先驱"
-      },
-      "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+      "avatar": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
       "avatarStyle": "",
       "figureType": "person",
       "organizationIds": []

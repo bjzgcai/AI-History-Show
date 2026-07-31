@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-31 03:09
+// 生成时间: 2026-07-31 08:04
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -3266,13 +3266,17 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg",
         "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
         "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
         "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
         "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg"
       ],
+      "overviewImage": "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg",
+      "overviewImageAssetId": "asset-1990-otter-manual-first-page",
       "videos": [],
       "assetIds": [
+        "asset-1990-otter-manual-first-page",
         "asset-1990-otter-input-clauses",
         "asset-1990-otter-proof-trace",
         "asset-1990-otter-given-clause",
@@ -3280,6 +3284,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
+      "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg": {
+        "caption": {
+          "zh": "OTTER 3.3 参考手册首页",
+          "en": "OTTER 3.3 Reference Manual first page"
+        },
+        "subcaption": {
+          "zh": "威廉·麦丘恩 2003 年阿贡技术备忘录首页预览。",
+          "en": "First-page preview of William McCune's 2003 Argonne technical memorandum."
+        },
+        "sourceName": {
+          "zh": "arXiv / 阿贡国家实验室技术备忘录",
+          "en": "arXiv / Argonne National Laboratory technical memorandum"
+        },
+        "sourceUrl": "https://arxiv.org/abs/cs/0310056",
+        "license": {
+          "zh": "根据用户提供的手册首页截图重建为本地 SVG，仅用于资料引用展示；对外再分发前应复核授权。",
+          "en": "Local SVG recreation from the user-provided manual first-page screenshot for reference display; redistribution rights should be reviewed before publication."
+        },
+        "usage": {
+          "zh": "Otter 事件首图与首页缩略图",
+          "en": "Primary Otter event image and overview thumbnail"
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "根据用户提供的手册首页截图重建为本地 SVG，仅用于资料引用展示；对外再分发前应复核授权。",
+            "en": "Local SVG recreation from the user-provided manual first-page screenshot for reference display; redistribution rights should be reviewed before publication."
+          }
+        },
+        "role": "paper-page",
+        "type": "svg"
+      },
       "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg": {
         "caption": {
           "zh": "Otter 输入子句",
@@ -27735,67 +27772,90 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "kaiming-he",
-        "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
-        },
-        "role": {
-          "en": "Related efficient-CNN researcher",
-          "zh": "相关高效卷积网络研究者"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+        "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
+        "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png",
         "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg"
       ],
+      "overviewImage": "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
+      "overviewImageAssetId": "asset-2017-mobilenets-paper-first-page",
       "videos": [],
       "assetIds": [
-        "asset-2017-mobilenets-portrait",
+        "asset-2017-mobilenets-paper-first-page",
+        "asset-2017-mobilenets-applications",
         "asset-2017-mobilenets-explainer"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
+      "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png": {
         "caption": {
-          "zh": "何恺明肖像",
-          "en": "Kaiming He portrait"
+          "zh": "MobileNets 论文首页",
+          "en": "MobileNets paper first page"
         },
         "subcaption": {
-          "zh": "相关高效卷积网络研究者",
-          "en": "Related efficient-CNN researcher"
+          "zh": "安德鲁·霍华德领衔的 MobileNets 原始论文首页",
+          "en": "First page of the original paper led by Andrew G. Howard"
         },
         "sourceName": {
-          "en": "MIT CSAIL",
-          "zh": "MIT CSAIL"
+          "en": "arXiv",
+          "zh": "arXiv"
         },
-        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "sourceUrl": "https://arxiv.org/abs/1704.04861",
         "license": {
-          "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-          "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+          "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
+          "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
         },
         "usage": {
-          "en": "Related figure for the MobileNets achievement page",
-          "zh": "用于MobileNets成就页面的相关人物展示"
+          "en": "Primary MobileNets event image and overview thumbnail",
+          "zh": "MobileNets 事件首图与首页缩略图"
         },
-        "sourceId": "source-2017-mobilenets-portrait",
+        "sourceId": "source-2017-mobilenets-primary",
         "rights": {
           "status": "external-reference",
           "license": {
-            "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-            "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+            "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
+            "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
           },
-          "sourceUrl": "https://people.csail.mit.edu/kaiming/"
+          "sourceUrl": "https://arxiv.org/pdf/1704.04861"
         },
-        "role": "portrait",
+        "role": "paper-page",
+        "type": "image"
+      },
+      "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png": {
+        "caption": {
+          "zh": "MobileNets 应用场景",
+          "en": "MobileNets application scenarios"
+        },
+        "subcaption": {
+          "zh": "原论文展示了 MobileNets 在移动设备上的目标检测、人脸属性、细粒度分类与地标识别应用。",
+          "en": "The original paper illustrates object detection, face attributes, fine-grained classification, and landmark recognition on mobile devices."
+        },
+        "sourceName": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1704.04861",
+        "license": {
+          "en": "Figure preview generated from the arXiv-hosted source package; embedded third-party image credits are retained in the figure.",
+          "zh": "根据 arXiv 托管源码包生成的论文插图预览；图中保留了第三方图片的原始署名。"
+        },
+        "usage": {
+          "en": "Second supporting image for the MobileNets achievement page",
+          "zh": "MobileNets 成就页面的第二张资料图片"
+        },
+        "sourceId": "source-2017-mobilenets-primary",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "en": "Figure preview generated from the arXiv-hosted source package; embedded third-party image credits are retained in the figure.",
+            "zh": "根据 arXiv 托管源码包生成的论文插图预览；图中保留了第三方图片的原始署名。"
+          },
+          "sourceUrl": "https://arxiv.org/e-print/1704.04861"
+        },
+        "role": "paper-figure",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg": {
@@ -27910,28 +27970,12 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "primary",
           "sourceType": "official-page"
-        },
-        {
-          "id": "source-2017-mobilenets-portrait",
-          "type": {
-            "en": "Image source",
-            "zh": "图片来源"
-          },
-          "label": {
-            "zh": "何恺明相关肖像来源",
-            "en": "Kaiming He related portrait source"
-          },
-          "url": "https://people.csail.mit.edu/kaiming/",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-2017-mobilenets-primary",
         "source-2017-mobilenets-secondary",
-        "source-benchcouncil-ai100-catalog",
-        "source-2017-mobilenets-portrait"
+        "source-benchcouncil-ai100-catalog"
       ],
       "claimIds": [
         "claim-2017-mobilenets-membership",
@@ -28256,7 +28300,7 @@ const milestones = [
           "en": "Squeeze-and-excitation lead author",
           "zh": "Squeeze-and-excitation 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -28274,26 +28318,11 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "kaiming-he",
-        "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
-        },
-        "role": {
-          "en": "Related residual-network researcher",
-          "zh": "相关残差网络研究者"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+        "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2018-2018-squeeze-excitation_process.svg"
       ],
       "videos": [],
@@ -28303,36 +28332,36 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
+      "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg": {
         "caption": {
-          "zh": "何恺明肖像",
-          "en": "Kaiming He portrait"
+          "zh": "胡杰肖像",
+          "en": "Jie Hu portrait"
         },
         "subcaption": {
-          "zh": "相关残差网络研究者",
-          "en": "Related residual-network researcher"
+          "zh": "Squeeze-and-excitation 主要作者",
+          "en": "Squeeze-and-excitation lead author"
         },
         "sourceName": {
-          "en": "MIT CSAIL",
-          "zh": "MIT CSAIL"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "sourceUrl": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
         "license": {
-          "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-          "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the Squeeze-and-Excitation Networks achievement page",
-          "zh": "用于挤压与激励网络成就页面的相关人物展示"
+          "en": "Contributor portrait for the Squeeze-and-Excitation Networks achievement page",
+          "zh": "用于挤压与激励网络成就页面的人物肖像"
         },
         "sourceId": "source-2018-squeeze-excitation-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-            "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://people.csail.mit.edu/kaiming/"
+          "sourceUrl": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -28453,16 +28482,16 @@ const milestones = [
         {
           "id": "source-2018-squeeze-excitation-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "何恺明相关肖像来源",
-            "en": "Kaiming He related portrait source"
+            "zh": "胡杰肖像候选",
+            "en": "Jie Hu portrait candidate"
           },
-          "url": "https://people.csail.mit.edu/kaiming/",
+          "url": "resources/images/external/ai100-2018-squeeze-excitation/jie-hu-portrait.jpg",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -28796,7 +28825,7 @@ const milestones = [
           "zh": "Faster R-CNN 共同作者",
           "en": "Co-author of Faster R-CNN"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -28815,26 +28844,11 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "tsung-yi-lin",
-        "name": {
-          "en": "Tsung-Yi Lin",
-          "zh": "林宗毅"
-        },
-        "role": {
-          "en": "Related object-detection researcher",
-          "zh": "相关目标检测研究者"
-        },
-        "avatar": "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg",
+        "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2014-2014-r-cnn_process.svg"
       ],
       "videos": [],
@@ -28844,36 +28858,36 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/external/ai100-2014-ms-coco/tsung-yi-lin-portrait.jpg": {
+      "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg": {
         "caption": {
-          "zh": "林宗毅肖像",
-          "en": "Tsung-Yi Lin portrait"
+          "zh": "罗斯·格希克肖像",
+          "en": "Ross Girshick portrait"
         },
         "subcaption": {
-          "zh": "相关目标检测研究者",
-          "en": "Related object-detection researcher"
+          "zh": "R-CNN 主要作者",
+          "en": "R-CNN lead author"
         },
         "sourceName": {
-          "en": "Tsung-Yi Lin personal website",
-          "zh": "林宗毅个人网站"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://tsungyilin.info/",
+        "sourceUrl": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
         "license": {
-          "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
-          "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the R-CNN achievement page",
-          "zh": "用于R-CNN成就页面的相关人物展示"
+          "en": "Contributor portrait for the R-CNN achievement page",
+          "zh": "用于R-CNN成就页面的人物肖像"
         },
         "sourceId": "source-2014-r-cnn-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
-            "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://tsungyilin.info/"
+          "sourceUrl": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -28994,16 +29008,16 @@ const milestones = [
         {
           "id": "source-2014-r-cnn-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "林宗毅相关肖像来源",
-            "en": "Tsung-Yi Lin related portrait source"
+            "zh": "罗斯·格希克肖像候选",
+            "en": "Ross Girshick portrait candidate"
           },
-          "url": "https://tsungyilin.info/",
+          "url": "resources/images/external/ai100-2014-r-cnn/ross-girshick-portrait.jpg",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -29337,22 +29351,7 @@ const milestones = [
           "zh": "Faster R-CNN 共同作者",
           "en": "Co-author of Faster R-CNN"
         },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
-      },
-      {
-        "figureId": "kaiming-he",
-        "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
-        },
-        "role": {
-          "en": "Related object-detection researcher",
-          "zh": "相关目标检测研究者"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+        "avatar": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -29360,7 +29359,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+        "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2015-2015-fast-r-cnn_process.svg"
       ],
       "videos": [],
@@ -29370,36 +29369,36 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
+      "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg": {
         "caption": {
-          "zh": "何恺明肖像",
-          "en": "Kaiming He portrait"
+          "zh": "罗斯·格希克肖像",
+          "en": "Ross Girshick portrait"
         },
         "subcaption": {
-          "zh": "相关目标检测研究者",
-          "en": "Related object-detection researcher"
+          "zh": "Fast R-CNN 主要作者",
+          "en": "Fast R-CNN lead author"
         },
         "sourceName": {
-          "en": "MIT CSAIL",
-          "zh": "MIT CSAIL"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
         "license": {
-          "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-          "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the Fast R-CNN achievement page",
-          "zh": "用于Fast R-CNN成就页面的相关人物展示"
+          "en": "Contributor portrait for the Fast R-CNN achievement page",
+          "zh": "用于Fast R-CNN成就页面的人物肖像"
         },
         "sourceId": "source-2015-fast-r-cnn-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-            "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://people.csail.mit.edu/kaiming/"
+          "sourceUrl": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -29520,16 +29519,16 @@ const milestones = [
         {
           "id": "source-2015-fast-r-cnn-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "何恺明相关肖像来源",
-            "en": "Kaiming He related portrait source"
+            "zh": "罗斯·格希克肖像候选",
+            "en": "Ross Girshick portrait candidate"
           },
-          "url": "https://people.csail.mit.edu/kaiming/",
+          "url": "resources/images/external/ai100-2015-fast-r-cnn/ross-girshick-portrait.jpg",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -32016,7 +32015,7 @@ const milestones = [
           "en": "SSD lead author",
           "zh": "SSD 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -32034,26 +32033,11 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "kaiming-he",
-        "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
-        },
-        "role": {
-          "en": "Related object-detection researcher",
-          "zh": "相关目标检测研究者"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+        "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
         "resources/images/bench-council-ai100/explainers/2016-2016-ssd_process.svg"
       ],
       "videos": [],
@@ -32063,36 +32047,36 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
+      "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png": {
         "caption": {
-          "zh": "何恺明肖像",
-          "en": "Kaiming He portrait"
+          "zh": "刘威肖像",
+          "en": "Wei Liu portrait"
         },
         "subcaption": {
-          "zh": "相关目标检测研究者",
-          "en": "Related object-detection researcher"
+          "zh": "SSD 主要作者",
+          "en": "SSD lead author"
         },
         "sourceName": {
-          "en": "MIT CSAIL",
-          "zh": "MIT CSAIL"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "sourceUrl": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
         "license": {
-          "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-          "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the SSD achievement page",
-          "zh": "用于SSD 单次多框检测器成就页面的相关人物展示"
+          "en": "Contributor portrait for the SSD achievement page",
+          "zh": "用于SSD 单次多框检测器成就页面的人物肖像"
         },
         "sourceId": "source-2016-ssd-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-            "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://people.csail.mit.edu/kaiming/"
+          "sourceUrl": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png"
         },
         "role": "portrait",
         "type": "image"
@@ -32213,16 +32197,16 @@ const milestones = [
         {
           "id": "source-2016-ssd-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "何恺明相关肖像来源",
-            "en": "Kaiming He related portrait source"
+            "zh": "刘威肖像候选",
+            "en": "Wei Liu portrait candidate"
           },
-          "url": "https://people.csail.mit.edu/kaiming/",
+          "url": "resources/images/external/ai100-2016-ssd/wei-liu-portrait.png",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -32587,67 +32571,54 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "kaiming-he",
-        "name": {
-          "en": "Kaiming He",
-          "zh": "何恺明"
-        },
-        "role": {
-          "en": "Related dense-prediction researcher",
-          "zh": "相关稠密预测研究者"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg",
+        "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png",
         "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg"
       ],
+      "overviewImage": "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png",
+      "overviewImageAssetId": "asset-2015-fcn-paper-first-page",
       "videos": [],
       "assetIds": [
-        "asset-2015-fcn-portrait",
+        "asset-2015-fcn-paper-first-page",
         "asset-2015-fcn-explainer"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/2015-faster-r-cnn_kaiming-he.jpg": {
+      "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png": {
         "caption": {
-          "zh": "何恺明肖像",
-          "en": "Kaiming He portrait"
+          "zh": "FCN 论文首页",
+          "en": "FCN paper first page"
         },
         "subcaption": {
-          "zh": "相关稠密预测研究者",
-          "en": "Related dense-prediction researcher"
+          "zh": "乔纳森·朗、埃文·谢尔哈默与特雷弗·达雷尔原始论文首页",
+          "en": "First page of the original paper by Jonathan Long, Evan Shelhamer, and Trevor Darrell"
         },
         "sourceName": {
-          "en": "MIT CSAIL",
-          "zh": "MIT CSAIL"
+          "en": "arXiv",
+          "zh": "arXiv"
         },
-        "sourceUrl": "https://people.csail.mit.edu/kaiming/",
+        "sourceUrl": "https://arxiv.org/abs/1411.4038",
         "license": {
-          "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-          "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+          "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
+          "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
         },
         "usage": {
-          "en": "Related figure for the Fully Convolutional Networks achievement page",
-          "zh": "用于全卷积网络成就页面的相关人物展示"
+          "en": "Primary FCN event image and overview thumbnail",
+          "zh": "FCN 事件首图与首页缩略图"
         },
-        "sourceId": "source-2015-fcn-portrait",
+        "sourceId": "source-2015-fcn-primary",
         "rights": {
           "status": "external-reference",
           "license": {
-            "en": "External reference image from the official MIT profile; redistribution rights should be rechecked.",
-            "zh": "来自 MIT 官方个人主页的外部参考图片；对外再分发前应复核授权。"
+            "en": "First-page preview generated from the arXiv-hosted manuscript for reference display only.",
+            "zh": "根据 arXiv 托管论文生成的首页预览，仅用于资料引用展示。"
           },
-          "sourceUrl": "https://people.csail.mit.edu/kaiming/"
+          "sourceUrl": "https://arxiv.org/pdf/1411.4038"
         },
-        "role": "portrait",
+        "role": "paper-page",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg": {
@@ -32762,28 +32733,12 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "primary",
           "sourceType": "official-page"
-        },
-        {
-          "id": "source-2015-fcn-portrait",
-          "type": {
-            "en": "Image source",
-            "zh": "图片来源"
-          },
-          "label": {
-            "zh": "何恺明相关肖像来源",
-            "en": "Kaiming He related portrait source"
-          },
-          "url": "https://people.csail.mit.edu/kaiming/",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-2015-fcn-primary",
         "source-2015-fcn-secondary",
-        "source-benchcouncil-ai100-catalog",
-        "source-2015-fcn-portrait"
+        "source-benchcouncil-ai100-catalog"
       ],
       "claimIds": [
         "claim-2015-fcn-membership",
@@ -34826,10 +34781,9 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2014-attention/people/2014-attention_people_01.png",
         "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
-        "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
-        "resources/images/figures/geoffrey-hinton.jpg"
+        "resources/images/2014-attention/people/2014-attention_people_01.png",
+        "resources/images/2014-attention/architecture/2014-attention_architecture_01.png"
       ],
       "videos": [
         {
@@ -34844,37 +34798,12 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-2014-attention-people-01",
         "asset-2014-attention-alignment",
-        "asset-2014-attention-architecture-01",
-        "asset-geoffrey-hinton"
+        "asset-2014-attention-people-01",
+        "asset-2014-attention-architecture-01"
       ]
     },
     "imageMeta": {
-      "resources/images/2014-attention/people/2014-attention_people_01.png": {
-        "caption": {
-          "zh": "约书亚·本吉奥肖像",
-          "en": "Yoshua Bengio portrait"
-        },
-        "subcaption": {
-          "zh": "神经注意力论文共同作者。",
-          "en": "Co-author of the neural attention paper."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
       "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
         "caption": {
           "zh": "注意力对齐图",
@@ -34899,6 +34828,30 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "svg"
       },
+      "resources/images/2014-attention/people/2014-attention_people_01.png": {
+        "caption": {
+          "zh": "约书亚·本吉奥肖像",
+          "en": "Yoshua Bengio portrait"
+        },
+        "subcaption": {
+          "zh": "神经注意力论文共同作者。",
+          "en": "Co-author of the neural attention paper."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
         "caption": {
           "zh": "自回归模型和注意力机制结构图 1",
@@ -34921,30 +34874,6 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
-      },
-      "resources/images/figures/geoffrey-hinton.jpg": {
-        "caption": {
-          "zh": "蒙特利尔深度学习研究背景图",
-          "en": "Montreal deep learning research context"
-        },
-        "subcaption": {
-          "zh": "神经注意力研究的机构背景",
-          "en": "Institutional context for neural attention research"
-        },
-        "license": {
-          "zh": "参考图片",
-          "en": "Reference image"
-        },
-        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "参考图片",
-            "en": "Reference image"
-          }
-        },
-        "role": "portrait",
         "type": "image"
       }
     },
@@ -53581,6 +53510,8 @@ const milestones = [
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg"
       ],
+      "overviewImage": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
+      "overviewImageAssetId": "asset-1994-sarsa-portrait",
       "videos": [],
       "assetIds": [
         "asset-1994-sarsa-portrait",
@@ -53603,21 +53534,20 @@ const milestones = [
         },
         "sourceUrl": "http://incompleteideas.net/",
         "license": {
-          "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
-          "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
+          "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
+          "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
         },
         "usage": {
-          "en": "Related figure for the SARSA achievement page",
-          "zh": "用于SARSA成就页面的相关人物展示"
+          "en": "Related researcher portrait",
+          "zh": "相关研究者肖像"
         },
         "sourceId": "source-1994-sarsa-portrait",
         "rights": {
           "status": "external-reference",
           "license": {
-            "en": "External reference image from the researcher website; redistribution rights should be rechecked.",
-            "zh": "来自研究者个人网站的外部参考图片；对外再分发前应复核授权。"
-          },
-          "sourceUrl": "http://incompleteideas.net/"
+            "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
+            "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
+          }
         },
         "role": "portrait",
         "type": "image"
@@ -53721,21 +53651,6 @@ const milestones = [
           "sourceType": "paper-page"
         },
         {
-          "id": "source-benchcouncil-ai100-catalog",
-          "type": {
-            "en": "Official page",
-            "zh": "官方页面"
-          },
-          "label": {
-            "zh": "BenchCouncil AI100：人工智能杰出成果",
-            "en": "BenchCouncil AI100: Top AI Achievements"
-          },
-          "url": "https://www.benchcouncil.org/evaluation/ai/",
-          "purpose": "historical-context",
-          "reliability": "primary",
-          "sourceType": "official-page"
-        },
-        {
           "id": "source-1994-sarsa-portrait",
           "type": {
             "en": "Image source",
@@ -53749,13 +53664,28 @@ const milestones = [
           "purpose": "image-provenance",
           "reliability": "primary",
           "sourceType": "image-source"
+        },
+        {
+          "id": "source-benchcouncil-ai100-catalog",
+          "type": {
+            "en": "Official page",
+            "zh": "官方页面"
+          },
+          "label": {
+            "zh": "BenchCouncil AI100：人工智能杰出成果",
+            "en": "BenchCouncil AI100: Top AI Achievements"
+          },
+          "url": "https://www.benchcouncil.org/evaluation/ai/",
+          "purpose": "historical-context",
+          "reliability": "primary",
+          "sourceType": "official-page"
         }
       ],
       "sourceIds": [
         "source-1994-sarsa-primary",
         "source-1994-sarsa-secondary",
-        "source-benchcouncil-ai100-catalog",
-        "source-1994-sarsa-portrait"
+        "source-1994-sarsa-portrait",
+        "source-benchcouncil-ai100-catalog"
       ],
       "claimIds": [
         "claim-1994-sarsa-membership",
@@ -55628,22 +55558,7 @@ const milestones = [
           "en": "ID3 lead author",
           "zh": "ID3 主要作者"
         },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
-      },
-      {
-        "figureId": "leo-breiman",
-        "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
-        },
-        "role": {
-          "en": "Related decision-tree pioneer",
-          "zh": "相关决策树先驱"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "avatar": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -55651,7 +55566,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg"
       ],
       "videos": [],
@@ -55661,39 +55576,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+      "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg": {
         "caption": {
-          "zh": "利奥·布雷曼肖像",
-          "en": "Leo Breiman portrait"
+          "zh": "罗斯·昆兰肖像",
+          "en": "Ross Quinlan portrait"
         },
         "subcaption": {
-          "zh": "相关决策树先驱",
-          "en": "Related decision-tree pioneer"
+          "zh": "ID3 主要作者",
+          "en": "ID3 lead author"
         },
         "sourceName": {
-          "en": "University of York Portraits of Statisticians",
-          "zh": "约克大学统计学家肖像档案"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "sourceUrl": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
         "license": {
-          "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-          "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the ID3 achievement page",
-          "zh": "用于ID3 决策树成就页面的相关人物展示"
+          "en": "Contributor portrait for the ID3 achievement page",
+          "zh": "用于ID3 决策树成就页面的人物肖像"
         },
         "sourceId": "source-1986-id3-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-            "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+          "sourceUrl": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg"
         },
         "role": "portrait",
-        "type": "gif"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1986-1986-id3_process.svg": {
         "caption": {
@@ -55811,16 +55726,16 @@ const milestones = [
         {
           "id": "source-1986-id3-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "利奥·布雷曼相关肖像来源",
-            "en": "Leo Breiman related portrait source"
+            "zh": "罗斯·昆兰肖像候选",
+            "en": "Ross Quinlan portrait candidate"
           },
-          "url": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+          "url": "resources/images/external/ai100-1986-id3/ross-quinlan-portrait.jpg",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -56153,22 +56068,7 @@ const milestones = [
           "en": "C4.5 lead author",
           "zh": "C4.5 主要作者"
         },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
-      },
-      {
-        "figureId": "leo-breiman",
-        "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
-        },
-        "role": {
-          "en": "Related decision-tree pioneer",
-          "zh": "相关决策树先驱"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "avatar": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -56176,7 +56076,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1993-1993-c45_process.svg"
       ],
       "videos": [],
@@ -56186,39 +56086,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+      "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg": {
         "caption": {
-          "zh": "利奥·布雷曼肖像",
-          "en": "Leo Breiman portrait"
+          "zh": "罗斯·昆兰肖像",
+          "en": "Ross Quinlan portrait"
         },
         "subcaption": {
-          "zh": "相关决策树先驱",
-          "en": "Related decision-tree pioneer"
+          "zh": "C4.5 主要作者",
+          "en": "C4.5 lead author"
         },
         "sourceName": {
-          "en": "University of York Portraits of Statisticians",
-          "zh": "约克大学统计学家肖像档案"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "sourceUrl": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg",
         "license": {
-          "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-          "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the C4.5 achievement page",
-          "zh": "用于C4.5 决策树成就页面的相关人物展示"
+          "en": "Contributor portrait for the C4.5 achievement page",
+          "zh": "用于C4.5 决策树成就页面的人物肖像"
         },
         "sourceId": "source-1993-c45-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-            "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+          "sourceUrl": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg"
         },
         "role": "portrait",
-        "type": "gif"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1993-1993-c45_process.svg": {
         "caption": {
@@ -56336,16 +56236,16 @@ const milestones = [
         {
           "id": "source-1993-c45-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "利奥·布雷曼相关肖像来源",
-            "en": "Leo Breiman related portrait source"
+            "zh": "罗斯·昆兰肖像候选",
+            "en": "Ross Quinlan portrait candidate"
           },
-          "url": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+          "url": "resources/images/external/ai100-1993-c45/ross-quinlan-portrait.jpg",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -57718,68 +57618,55 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "leo-breiman",
-        "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
-        },
-        "role": {
-          "en": "Related ensemble-learning pioneer",
-          "zh": "相关集成学习先驱"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg",
         "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg"
       ],
+      "overviewImage": "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg",
+      "overviewImageAssetId": "asset-1990-boosting-paper-first-page",
       "videos": [],
       "assetIds": [
-        "asset-1990-boosting-portrait",
+        "asset-1990-boosting-paper-first-page",
         "asset-1990-boosting-explainer"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+      "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg": {
         "caption": {
-          "zh": "利奥·布雷曼肖像",
-          "en": "Leo Breiman portrait"
+          "zh": "Boosting 论文首页",
+          "en": "Boosting paper first page"
         },
         "subcaption": {
-          "zh": "相关集成学习先驱",
-          "en": "Related ensemble-learning pioneer"
+          "zh": "罗伯特·沙皮尔 1990 年论文首页预览",
+          "en": "First-page preview of Robert E. Schapire's 1990 paper"
         },
         "sourceName": {
-          "en": "University of York Portraits of Statisticians",
-          "zh": "约克大学统计学家肖像档案"
+          "en": "Machine Learning / Kluwer Academic Publishers",
+          "zh": "Machine Learning / Kluwer Academic Publishers"
         },
-        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "sourceUrl": "https://doi.org/10.1007/BF00116037",
         "license": {
-          "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-          "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+          "en": "User-provided paper-page preview for reference display; publication rights should be reviewed before redistribution.",
+          "zh": "用户提供的论文首页预览，仅用于资料引用展示；对外再分发前应复核授权。"
         },
         "usage": {
-          "en": "Related figure for the Boosting achievement page",
-          "zh": "用于Boosting 提升法成就页面的相关人物展示"
+          "en": "Primary Boosting event image and overview thumbnail",
+          "zh": "Boosting 事件首图与首页缩略图"
         },
-        "sourceId": "source-1990-boosting-portrait",
+        "sourceId": "source-1990-boosting-primary",
         "rights": {
           "status": "external-reference",
           "license": {
-            "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-            "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            "en": "User-provided paper-page preview for reference display; publication rights should be reviewed before redistribution.",
+            "zh": "用户提供的论文首页预览，仅用于资料引用展示；对外再分发前应复核授权。"
           },
-          "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+          "sourceUrl": "https://doi.org/10.1007/BF00116037"
         },
-        "role": "portrait",
-        "type": "gif"
+        "role": "paper-page",
+        "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg": {
         "caption": {
@@ -57893,28 +57780,12 @@ const milestones = [
           "purpose": "historical-context",
           "reliability": "primary",
           "sourceType": "official-page"
-        },
-        {
-          "id": "source-1990-boosting-portrait",
-          "type": {
-            "en": "Image source",
-            "zh": "图片来源"
-          },
-          "label": {
-            "zh": "利奥·布雷曼相关肖像来源",
-            "en": "Leo Breiman related portrait source"
-          },
-          "url": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
         }
       ],
       "sourceIds": [
         "source-1990-boosting-primary",
         "source-1990-boosting-secondary",
-        "source-benchcouncil-ai100-catalog",
-        "source-1990-boosting-portrait"
+        "source-benchcouncil-ai100-catalog"
       ],
       "claimIds": [
         "claim-1990-boosting-membership",
@@ -58239,7 +58110,7 @@ const milestones = [
           "en": "Adaboost lead author",
           "zh": "Adaboost 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -58257,26 +58128,11 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "leo-breiman",
-        "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
-        },
-        "role": {
-          "en": "Related ensemble-learning pioneer",
-          "zh": "相关集成学习先驱"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
         "resources/images/bench-council-ai100/explainers/1997-1997-adaboost_process.svg"
       ],
       "videos": [],
@@ -58286,39 +58142,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+      "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png": {
         "caption": {
-          "zh": "利奥·布雷曼肖像",
-          "en": "Leo Breiman portrait"
+          "zh": "约阿夫·弗罗因德肖像",
+          "en": "Yoav Freund portrait"
         },
         "subcaption": {
-          "zh": "相关集成学习先驱",
-          "en": "Related ensemble-learning pioneer"
+          "zh": "AdaBoost 主要作者",
+          "en": "AdaBoost lead author"
         },
         "sourceName": {
-          "en": "University of York Portraits of Statisticians",
-          "zh": "约克大学统计学家肖像档案"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "sourceUrl": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
         "license": {
-          "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-          "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the AdaBoost achievement page",
-          "zh": "用于AdaBoost 自适应提升成就页面的相关人物展示"
+          "en": "Contributor portrait for the AdaBoost achievement page",
+          "zh": "用于AdaBoost 自适应提升成就页面的人物肖像"
         },
         "sourceId": "source-1997-adaboost-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-            "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+          "sourceUrl": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png"
         },
         "role": "portrait",
-        "type": "gif"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1997-1997-adaboost_process.svg": {
         "caption": {
@@ -58436,16 +58292,16 @@ const milestones = [
         {
           "id": "source-1997-adaboost-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "利奥·布雷曼相关肖像来源",
-            "en": "Leo Breiman related portrait source"
+            "zh": "约阿夫·弗罗因德肖像候选",
+            "en": "Yoav Freund portrait candidate"
           },
-          "url": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+          "url": "resources/images/external/ai100-1997-adaboost/yoav-freund-portrait.png",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -58778,22 +58634,7 @@ const milestones = [
           "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
-      },
-      {
-        "figureId": "leo-breiman",
-        "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
-        },
-        "role": {
-          "en": "Related tree-ensemble pioneer",
-          "zh": "相关树集成先驱"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "avatar": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -58801,7 +58642,7 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "resources/images/bench-council-ai100/explainers/2001-2001-gradient-boosting_process.svg"
       ],
       "videos": [],
@@ -58811,39 +58652,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+      "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png": {
         "caption": {
-          "zh": "利奥·布雷曼肖像",
-          "en": "Leo Breiman portrait"
+          "zh": "杰罗姆·弗里德曼肖像",
+          "en": "Jerome Friedman portrait"
         },
         "subcaption": {
-          "zh": "相关树集成先驱",
-          "en": "Related tree-ensemble pioneer"
+          "zh": "梯度提升主要作者",
+          "en": "Gradient boosting lead author"
         },
         "sourceName": {
-          "en": "University of York Portraits of Statisticians",
-          "zh": "约克大学统计学家肖像档案"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "sourceUrl": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "license": {
-          "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-          "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the Gradient Boosting achievement page",
-          "zh": "用于梯度提升成就页面的相关人物展示"
+          "en": "Contributor portrait for the Gradient boosting achievement page",
+          "zh": "用于梯度提升成就页面的人物肖像"
         },
         "sourceId": "source-2001-gradient-boosting-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-            "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+          "sourceUrl": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png"
         },
         "role": "portrait",
-        "type": "gif"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2001-2001-gradient-boosting_process.svg": {
         "caption": {
@@ -58961,16 +58802,16 @@ const milestones = [
         {
           "id": "source-2001-gradient-boosting-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "利奥·布雷曼相关肖像来源",
-            "en": "Leo Breiman related portrait source"
+            "zh": "杰罗姆·弗里德曼肖像候选",
+            "en": "Jerome Friedman portrait candidate"
           },
-          "url": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+          "url": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -59303,7 +59144,7 @@ const milestones = [
           "en": "XGBoost lead author",
           "zh": "XGBoost 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -59321,26 +59162,11 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "leo-breiman",
-        "name": {
-          "en": "Leo Breiman",
-          "zh": "利奥·布雷曼"
-        },
-        "role": {
-          "en": "Tree-ensemble lineage pioneer",
-          "zh": "树集成技术谱系先驱"
-        },
-        "avatar": "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif",
+        "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2016-2016-xgboost_process.svg"
       ],
       "videos": [],
@@ -59350,39 +59176,39 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1984-cart_leo-breiman.gif": {
+      "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg": {
         "caption": {
-          "zh": "利奥·布雷曼肖像",
-          "en": "Leo Breiman portrait"
+          "zh": "陈天奇肖像",
+          "en": "Tianqi Chen portrait"
         },
         "subcaption": {
-          "zh": "树集成技术谱系先驱",
-          "en": "Tree-ensemble lineage pioneer"
+          "zh": "XGBoost 主要作者",
+          "en": "XGBoost lead author"
         },
         "sourceName": {
-          "en": "University of York Portraits of Statisticians",
-          "zh": "约克大学统计学家肖像档案"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+        "sourceUrl": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
         "license": {
-          "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-          "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the XGBoost achievement page",
-          "zh": "用于XGBoost成就页面的相关人物展示"
+          "en": "Contributor portrait for the XGBoost achievement page",
+          "zh": "用于XGBoost成就页面的人物肖像"
         },
         "sourceId": "source-2016-xgboost-portrait",
         "rights": {
-          "status": "external-reference",
+          "status": "source-review-needed",
           "license": {
-            "en": "Archival reference image; reuse terms are not stated on the source page and should be rechecked.",
-            "zh": "档案参考图片；来源页未注明再利用条款，对外发布前应复核。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif"
+          "sourceUrl": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg"
         },
         "role": "portrait",
-        "type": "gif"
+        "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2016-2016-xgboost_process.svg": {
         "caption": {
@@ -59500,16 +59326,16 @@ const milestones = [
         {
           "id": "source-2016-xgboost-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "利奥·布雷曼相关肖像来源",
-            "en": "Leo Breiman related portrait source"
+            "zh": "陈天奇肖像候选",
+            "en": "Tianqi Chen portrait candidate"
           },
-          "url": "https://www.york.ac.uk/depts/maths/histstat/people/breiman.gif",
+          "url": "resources/images/external/ai100-2016-xgboost/tianqi-chen-portrait.jpg",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -61335,7 +61161,7 @@ const milestones = [
           "en": "CRF lead author",
           "zh": "CRF 主要作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -61353,26 +61179,11 @@ const milestones = [
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
-      },
-      {
-        "figureId": "christopher-manning",
-        "name": {
-          "en": "Christopher Manning",
-          "zh": "克里斯托弗·曼宁"
-        },
-        "role": {
-          "en": "Related statistical NLP researcher",
-          "zh": "相关统计自然语言处理研究者"
-        },
-        "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
-        "avatarStyle": "",
-        "figureType": "person",
-        "organizationIds": []
       }
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
+        "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2001-2001-crf_process.svg"
       ],
       "videos": [],
@@ -61382,36 +61193,36 @@ const milestones = [
       ]
     },
     "imageMeta": {
-      "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg": {
+      "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg": {
         "caption": {
-          "zh": "克里斯托弗·曼宁肖像",
-          "en": "Christopher Manning portrait"
+          "zh": "约翰·拉弗蒂肖像",
+          "en": "John Lafferty portrait"
         },
         "subcaption": {
-          "zh": "相关统计自然语言处理研究者",
-          "en": "Related statistical NLP researcher"
+          "zh": "CRF 主要作者",
+          "en": "CRF lead author"
         },
         "sourceName": {
-          "en": "Wikimedia Commons",
-          "zh": "Wikimedia Commons"
+          "en": "Prior portrait candidate",
+          "zh": "先前人工筛选肖像候选"
         },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg",
+        "sourceUrl": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
         "license": {
-          "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply.",
-          "zh": "CC BY-SA 4.0，摄影者 Xuthoria；须署名并以相同方式共享。"
+          "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+          "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
         },
         "usage": {
-          "en": "Related figure for the Conditional Random Fields achievement page",
-          "zh": "用于条件随机场成就页面的相关人物展示"
+          "en": "Contributor portrait for the Conditional Random Fields achievement page",
+          "zh": "用于条件随机场成就页面的人物肖像"
         },
         "sourceId": "source-2001-crf-portrait",
         "rights": {
-          "status": "licensed",
+          "status": "source-review-needed",
           "license": {
-            "en": "CC BY-SA 4.0, photograph by Xuthoria; attribution and share-alike terms apply.",
-            "zh": "CC BY-SA 4.0，摄影者 Xuthoria；须署名并以相同方式共享。"
+            "en": "Portrait candidate recovered from prior local research; original source and redistribution rights need confirmation before publication.",
+            "zh": "来自先前本地调研的肖像候选；发布前需确认原始来源与再分发授权。"
           },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg"
+          "sourceUrl": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg"
         },
         "role": "portrait",
         "type": "image"
@@ -61532,16 +61343,16 @@ const milestones = [
         {
           "id": "source-2001-crf-portrait",
           "type": {
-            "en": "Image source",
-            "zh": "图片来源"
+            "zh": "图片来源",
+            "en": "Image source"
           },
           "label": {
-            "zh": "克里斯托弗·曼宁相关肖像来源",
-            "en": "Christopher Manning related portrait source"
+            "zh": "约翰·拉弗蒂肖像候选",
+            "en": "John Lafferty portrait candidate"
           },
-          "url": "https://commons.wikimedia.org/wiki/File:SD_2025_-_Christopher_Manning_04_(cropped).jpg",
+          "url": "resources/images/external/ai100-2001-crf/john-lafferty-portrait.jpg",
           "purpose": "image-provenance",
-          "reliability": "primary",
+          "reliability": "reference-only",
           "sourceType": "image-source"
         }
       ],
@@ -69889,11 +69700,12 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/figures/geoffrey-hinton.jpg",
         "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
         "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
         "resources/images/2014-attention/people/2014-attention_people_01.png"
       ],
+      "overviewImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+      "overviewImageAssetId": "asset-2014-attention-alignment",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
@@ -69907,37 +69719,12 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-geoffrey-hinton",
         "asset-2014-attention-alignment",
         "asset-2014-attention-architecture-01",
         "asset-2014-attention-people-01"
       ]
     },
     "imageMeta": {
-      "resources/images/figures/geoffrey-hinton.jpg": {
-        "caption": {
-          "zh": "蒙特利尔深度学习研究背景图",
-          "en": "Montreal deep learning research context"
-        },
-        "subcaption": {
-          "zh": "神经注意力研究的机构背景",
-          "en": "Institutional context for neural attention research"
-        },
-        "license": {
-          "zh": "参考图片",
-          "en": "Reference image"
-        },
-        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "参考图片",
-            "en": "Reference image"
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
       "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
         "caption": {
           "zh": "注意力对齐图",
