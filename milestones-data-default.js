@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-31 09:46
+// 生成时间: 2026-07-31 10:23
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -53573,51 +53573,16 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
-        "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg"
+        "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg",
+        "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg"
       ],
-      "overviewImage": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
-      "overviewImageAssetId": "asset-1994-sarsa-portrait",
       "videos": [],
       "assetIds": [
-        "asset-1994-sarsa-portrait",
-        "asset-1994-sarsa-explainer"
+        "asset-1994-sarsa-explainer",
+        "asset-1994-sarsa-portrait"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
-        "caption": {
-          "zh": "理查德·萨顿肖像",
-          "en": "Richard Sutton portrait"
-        },
-        "subcaption": {
-          "zh": "相关时序差分学习先驱",
-          "en": "Related temporal-difference learning pioneer"
-        },
-        "sourceName": {
-          "en": "Richard Sutton personal website",
-          "zh": "理查德·萨顿个人网站"
-        },
-        "sourceUrl": "http://incompleteideas.net/",
-        "license": {
-          "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
-          "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
-        },
-        "usage": {
-          "en": "Related researcher portrait",
-          "zh": "相关研究者肖像"
-        },
-        "sourceId": "source-1994-sarsa-portrait",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
-            "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
       "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg": {
         "caption": {
           "zh": "SARSA流程解释图",
@@ -53650,6 +53615,39 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
+        "caption": {
+          "zh": "理查德·萨顿肖像",
+          "en": "Richard Sutton portrait"
+        },
+        "subcaption": {
+          "zh": "相关时序差分学习先驱",
+          "en": "Related temporal-difference learning pioneer"
+        },
+        "sourceName": {
+          "en": "Richard Sutton personal website",
+          "zh": "理查德·萨顿个人网站"
+        },
+        "sourceUrl": "http://incompleteideas.net/",
+        "license": {
+          "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
+          "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
+        },
+        "usage": {
+          "en": "Related researcher portrait",
+          "zh": "相关研究者肖像"
+        },
+        "sourceId": "source-1994-sarsa-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
+            "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
+          }
+        },
+        "role": "portrait",
+        "type": "image"
       }
     },
     "achievement": {

@@ -51,8 +51,8 @@
     }
   ],
   "assetIds": [
-    "asset-1994-sarsa-portrait",
-    "asset-1994-sarsa-explainer"
+    "asset-1994-sarsa-explainer",
+    "asset-1994-sarsa-portrait"
   ],
   "sourceIds": [
     "source-1994-sarsa-primary",
@@ -343,6 +343,5 @@
       52.2053,
       0.1218
     ]
-  },
-  "overviewImageAssetId": "asset-1994-sarsa-portrait"
+  }
 }
