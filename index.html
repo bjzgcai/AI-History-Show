@@ -15278,6 +15278,11 @@
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
+            // The homepage/default image is always the first detail image unless an
+            // explicit overview override is configured. A side-panel visual may
+            // reuse that image, but must never remove it from the detail carousel.
+            const sideImageIndex = sideImageUrl ? candidates.indexOf(sideImageUrl) : -1;
+            if (sideImageIndex <= 0) return candidates;
             return window.GamingMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
         }
 

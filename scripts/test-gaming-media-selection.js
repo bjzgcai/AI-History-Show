@@ -51,6 +51,22 @@ assert.equal(
 );
 console.log('PASS AlphaGo detail media leads with David Silver');
 
+const alphaZero = milestones.find((item) => item.id === 'milestone-gaming-ai-2017-alphazero');
+assert.equal(
+    alphaZero.resources.images[0],
+    'resources/images/figures/authoritative/david-silver.jpg',
+    'the AlphaZero detail image rail should lead with David Silver'
+);
+console.log('PASS AlphaZero detail media leads with David Silver');
+
+const suphx = milestones.find((item) => item.id === 'milestone-gaming-ai-2019-suphx');
+assert.equal(
+    suphx.resources.images[0],
+    'resources/images/external/2019-suphx/tie-yan-liu-portrait.jpg',
+    'the Suphx detail image rail should lead with Tie-Yan Liu'
+);
+console.log('PASS Suphx detail media leads with Tie-Yan Liu');
+
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 assert.match(indexHtml, /<script src="shared\/gaming-media-selection\.js"><\/script>/);
 assert.match(indexHtml, /GamingMediaSelection\.findGameplayMedia\(images/);

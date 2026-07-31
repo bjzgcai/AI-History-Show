@@ -99,6 +99,7 @@ assert.equal(
 console.log('PASS archive deep-learning detail lookup');
 
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+const dualScreenHtml = fs.readFileSync(path.join(__dirname, '..', 'dual-screen.html'), 'utf8');
 const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.js'), 'utf8');
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
@@ -486,14 +487,25 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?const candidates = getUiImageCandidates\(vm\)[\s\S]*?getUiMediaVisualImage\(vm, candidates\)[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
-    'detail image lists should exclude the image mounted in the right-side media panel'
+    /function getUiDetailImages\(vm\)[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
+    'detail image lists should preserve the first candidate while excluding a later side-panel image'
 );
 assert.doesNotMatch(
     indexHtml,
     /UI_CHRONOLOGY_IMAGE_OVERRIDES|getChronologyCardImage|resolveCardImage/,
     'overview cards should read generated Archive image configuration without index.html overrides'
 );
+assert.match(
+    dualScreenHtml,
+    /function sortPhotosForDisplay\(photos\)[\s\S]*?return \[\.\.\.\(photos \|\| \[\]\)\]\.filter\(Boolean\);/,
+    'dual-screen detail images should preserve Archive resources.images order by default'
+);
+assert.doesNotMatch(
+    dualScreenHtml,
+    /function sortPhotosForDisplay\(photos\)[\s\S]*?\.sort\(/,
+    'dual-screen detail images should not reorder Archive resources by media type'
+);
+console.log('PASS dual-screen detail images preserve Archive order');
 assert.doesNotMatch(
     indexHtml,
     /function getUiDetailImages\(vm\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)\) return candidates/,

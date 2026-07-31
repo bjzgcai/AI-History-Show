@@ -3,6 +3,7 @@
 
 const path = require('node:path');
 const { localized, namesMatch, readJson, splitContributors } = require('./ai100-contributors');
+const { isPersonAsset } = require('./event-figure-rules');
 
 const ROOT = path.resolve(__dirname, '..');
 const catalog = readJson(path.join(ROOT, 'research', 'benchcouncil-ai100', 'canonical-root-table-2026-07-30.json'));
@@ -12,6 +13,7 @@ const failures = [];
 let firstAuthorPortraits = 0;
 let fallbackPortraits = 0;
 let noOfficialPortraits = 0;
+let nonPersonFirstImages = 0;
 
 for (const item of catalog.items) {
     const ref = refs.get(item.eventId);
@@ -50,18 +52,42 @@ for (const item of catalog.items) {
     }
 
     const officialFigures = actual.slice(0, expected.length);
-    const selectedAsset = assetMap.get((variant.assetIds || [])[0]);
-    const portraitIndex = officialFigures.findIndex(
-        (figure) => figure && figure.avatar && assets.some((asset) => asset.path === figure.avatar)
+    const selectedAsset = assetMap.get(
+        variant.overviewImageAssetId ||
+            (variant.assetIds || []).find((assetId) => {
+                const asset = assetMap.get(assetId);
+                return asset && ['image', 'svg', 'gif'].includes(asset.type);
+            })
     );
-    if (portraitIndex < 0) {
-        noOfficialPortraits += 1;
+    if (!selectedAsset) {
+        failures.push(`${item.eventId}: first selected image is missing`);
         continue;
     }
-    if (!selectedAsset || selectedAsset.path !== officialFigures[portraitIndex].avatar) {
-        failures.push(
-            `${item.eventId}: first selected image must match the earliest listed contributor with a portrait`
+    if (!isPersonAsset(selectedAsset)) {
+        nonPersonFirstImages += 1;
+        continue;
+    }
+    const selectedCaptions = [localized(selectedAsset.caption, 'en'), localized(selectedAsset.caption, 'zh')];
+    const portraitIndex = officialFigures.findIndex((figure) => {
+        if (!figure) return false;
+        if (figure.avatar && figure.avatar === selectedAsset.path) return true;
+        return selectedCaptions.some((caption) =>
+            [localized(figure.name, 'en'), localized(figure.name, 'zh')].some(
+                (name) => name && caption.toLowerCase().includes(name.toLowerCase())
+            )
         );
+    });
+    if (portraitIndex < 0) {
+        failures.push(`${item.eventId}: first person image must match a BenchCouncil-listed contributor`);
+        continue;
+    }
+    if (
+        !officialFigures.some(
+            (figure) => figure && figure.avatar && assets.some((asset) => asset.path === figure.avatar)
+        )
+    ) {
+        noOfficialPortraits += 1;
+        continue;
     }
     if (portraitIndex === 0) firstAuthorPortraits += 1;
     else fallbackPortraits += 1;
@@ -74,6 +100,7 @@ if (failures.length) {
 } else {
     console.log(`PASS all ${catalog.items.length} AI100 figure lists preserve the BenchCouncil contributor prefix.`);
     console.log(`PASS ${firstAuthorPortraits} achievements lead with a first-listed contributor portrait.`);
-    console.log(`PASS ${fallbackPortraits} achievements use the earliest later listed contributor with a portrait.`);
+    console.log(`PASS ${fallbackPortraits} achievements use a later listed contributor portrait.`);
+    console.log(`PASS ${nonPersonFirstImages} achievements use an allowed non-person first image.`);
     console.log(`INFO ${noOfficialPortraits} achievements have no configured portrait for any listed contributor.`);
 }
