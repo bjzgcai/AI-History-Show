@@ -1,0 +1,322 @@
+{
+  "storylineId": "deep-learning",
+  "eventId": "2006-dbn",
+  "presentationMode": "preserve-legacy",
+  "displayTitle": {
+    "zh": "深度置信网络",
+    "en": "Deep Belief Network"
+  },
+  "displaySummary": {
+    "zh": "神经网络与连接主义的复兴",
+    "en": "Neural Networks and the Revival of Connectionism"
+  },
+  "displayDescription": {
+    "zh": "<p>辛顿、奥辛德罗和德在 2006 年提出深度置信网络的快速训练方法，回应当时深层神经网络难以直接优化的问题。训练从底层开始，把每相邻两层视为受限玻尔兹曼机，在无标签数据上逐层学习特征；堆叠完成后，再用生成式或监督目标对整个网络微调。</p><p>这种贪心逐层预训练为深层模型提供较好的参数起点，使数字识别和降维等任务取得有竞争力的结果，也让“深度学习”重新成为可实验的研究方向。后来 ReLU、更大数据、GPU 和改进初始化使纯监督训练更普遍，但 DBN 在深度学习复兴中的历史作用仍然关键。</p>",
+    "en": "<p>Geoffrey Hinton, Simon Osindero, and Yee-Whye Teh introduced a fast training method for deep belief networks in 2006, addressing the difficulty of directly optimizing deep neural networks at the time. Training starts at the bottom, treating each adjacent pair of layers as a restricted Boltzmann machine and learning features from unlabeled data layer by layer. The completed stack is then fine-tuned with a generative or supervised objective.</p><p>This greedy pretraining supplied deep models with a useful parameter initialization and produced competitive results in tasks such as digit recognition and dimensionality reduction, making “deep learning” experimentally credible again. ReLU activations, larger datasets, GPUs, and improved initialization later made fully supervised training more common, but DBNs retain a central historical role in the revival of deep architectures.</p>"
+  },
+  "emphasis": [
+    "connectionist-revival",
+    "layer-wise-pretraining",
+    "representation-learning"
+  ],
+  "visual": "dbn",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": "Neural Computation",
+      "title": {
+        "en": "Fast learning algorithm for deep belief nets",
+        "zh": "深度置信网络快速学习算法"
+      },
+      "description": {
+        "en": "Neural Computation paper record for deep belief nets.",
+        "zh": "深度置信网络 Neural Computation 论文记录。"
+      },
+      "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+      "license": {
+        "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+        "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+      },
+      "usage": {
+        "en": "Source material image / Literature reference",
+        "zh": "原始材料入口 / 文献参考"
+      },
+      "action": {
+        "en": "Open DOI record",
+        "zh": "打开 DOI 记录"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-2006-dbn-geoffrey-hinton",
+    "asset-2006-dbn-stacked-rbms",
+    "asset-2006-dbn-wake-finetune"
+  ],
+  "sourceIds": [
+    "source-a-fast-learning-algorithm-for-deep-belief-nets",
+    "source-reducing-the-dimensionality-of-data-with-neural-networks",
+    "source-geoffrey-hinton-photo-page"
+  ],
+  "claimIds": [
+    "claim-legacy-achievement-summary",
+    "claim-legacy-description"
+  ],
+  "quizId": "2006-dbn-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "zh": "历史背景",
+        "en": "Historical Background"
+      },
+      "html": {
+        "zh": "深层神经网络用普通监督训练很难优化。逐层预训练提供了一条实用路线。",
+        "en": "Deep neural networks were hard to optimize with ordinary supervised training. Layer-wise pretraining offered a practical route."
+      },
+      "sourceIds": [
+        "source-a-fast-learning-algorithm-for-deep-belief-nets"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "zh": "核心思想",
+        "en": "Core Idea"
+      },
+      "html": {
+        "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。 关键机制是逐层无监督预训练，它把资料线索与可见的演示行为连接起来。",
+        "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network. The key mechanism is Layer-wise unsupervised pretraining, which links the source material to the visible demo behavior."
+      },
+      "sourceIds": [
+        "source-a-fast-learning-algorithm-for-deep-belief-nets"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "zh": "长期影响",
+        "en": "Long-Term Legacy"
+      },
+      "html": {
+        "zh": "专家通常把深度置信网络视为 2012 年之前深度学习复兴中的关键一步。它的长期影响在于证明深层堆栈可以逐层训练，并在大规模 GPU 训练成为主流前重新打开了表示学习研究。",
+        "en": "Experts generally treat deep belief networks as a key step in the pre-2012 revival of deep learning. Their long-term legacy is showing that deep stacks could be trained layer by layer, helping reopen representation-learning research before large-scale GPU training took over."
+      },
+      "sourceIds": [
+        "source-a-fast-learning-algorithm-for-deep-belief-nets"
+      ]
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "notes": {
+      "zh": "复用既有 BenchCouncil AI100 事件资料，并针对“连接主义的兴衰与复兴”故事线调整阶段归属与叙事重点。",
+      "en": "Reuses the existing BenchCouncil AI100 event materials, with phase placement and emphasis adapted for the connectionism storyline."
+    }
+  },
+  "category": {
+    "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）",
+    "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "role": {
+        "en": "Co-author of deep belief net learning",
+        "zh": "深度置信网络学习共同作者"
+      },
+      "avatar": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Yee-Whye The",
+        "zh": "义威·特"
+      },
+      "role": {
+        "en": "DBN co-author",
+        "zh": "DBN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    },
+    {
+      "name": {
+        "en": "Ruslan Salakhutdinov",
+        "zh": "鲁斯兰·萨拉赫特迪诺夫"
+      },
+      "role": {
+        "en": "DBN co-author",
+        "zh": "DBN 共同作者"
+      },
+      "avatar": "",
+      "avatarStyle": "",
+      "figureType": "person",
+      "organizationIds": []
+    }
+  ],
+  "photos": [],
+  "videoUrl": "",
+  "quote": {
+    "en": "\"Layer-wise unsupervised pretraining\"",
+    "zh": "\"逐层无监督预训练\""
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Fast learning algorithm for deep belief nets",
+      "zh": "深度置信网络的快速学习算法"
+    },
+    "workAuthors": {
+      "en": "Geoffrey Hinton",
+      "zh": "杰弗里·辛顿"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100: Deep learning / Deep Belief Network",
+    "zh": "BenchCouncil AI100：深度学习 / 深度置信网络"
+  },
+  "quoteAttribution": {
+    "en": "<em>Fast learning algorithm for deep belief nets</em>, Geoffrey Hinton",
+    "zh": "《深度置信网络的快速学习算法》, 杰弗里·辛顿"
+  },
+  "achievement": {
+    "area": {
+      "en": "Deep learning",
+      "zh": "深度学习"
+    },
+    "method": {
+      "en": "Layer-wise unsupervised pretraining",
+      "zh": "逐层无监督预训练"
+    },
+    "artifact": {
+      "en": "Deep belief net training recipe",
+      "zh": "深度置信网络训练方案"
+    },
+    "material": {
+      "en": "Neural Computation paper and University of Toronto materials",
+      "zh": "Neural Computation 论文与多伦多大学资料"
+    },
+    "demo": {
+      "en": "Pretrain stacked RBMs before supervised fine-tuning",
+      "zh": "先预训练堆叠 RBM，再监督微调"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Restricted Boltzmann Machine",
+          "zh": "受限玻尔兹曼机"
+        },
+        "text": {
+          "en": "A two-layer generative model used for pretraining.",
+          "zh": "用于预训练的双层生成模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Greedy Layer Training",
+          "zh": "贪心逐层训练"
+        },
+        "text": {
+          "en": "Train one layer at a time before tuning the whole model.",
+          "zh": "先一次训练一层，再微调整体模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Fine-Tuning",
+          "zh": "微调"
+        },
+        "text": {
+          "en": "Supervised training adjusts the pretrained stack for a target task.",
+          "zh": "监督训练把预训练堆栈调整到目标任务。"
+        }
+      }
+    ],
+    "relatedAchievements": [
+      {
+        "en": "Back-propagation",
+        "zh": "反向传播"
+      },
+      {
+        "en": "Dropout",
+        "zh": "Dropout"
+      },
+      {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      }
+    ],
+    "relatedRegions": [
+      {
+        "en": "Ontario, Canada",
+        "zh": "加拿大安大略省"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Train RBM 1",
+        "zh": "训练 RBM 1"
+      },
+      {
+        "en": "Stack features",
+        "zh": "堆叠特征"
+      },
+      {
+        "en": "Fine-tune labels",
+        "zh": "标签微调"
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": "Neural Computation",
+        "title": {
+          "en": "Fast learning algorithm for deep belief nets",
+          "zh": "深度置信网络快速学习算法"
+        },
+        "description": {
+          "en": "Neural Computation paper record for deep belief nets.",
+          "zh": "深度置信网络 Neural Computation 论文记录。"
+        },
+        "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+        "license": {
+          "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+          "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+        },
+        "usage": {
+          "en": "Source material image / Literature reference",
+          "zh": "原始材料入口 / 文献参考"
+        },
+        "action": {
+          "en": "Open DOI record",
+          "zh": "打开 DOI 记录"
+        }
+      }
+    ]
+  },
+  "location": {
+    "name": {
+      "en": "University of Toronto, National University of Singapore",
+      "zh": "多伦多大学、新加坡国立大学"
+    },
+    "country": {
+      "en": "Canada, Singapore",
+      "zh": "加拿大、新加坡"
+    },
+    "coordinates": [
+      43.6629,
+      -79.3957
+    ]
+  }
+}

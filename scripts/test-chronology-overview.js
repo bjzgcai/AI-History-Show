@@ -10,13 +10,13 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 165, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(milestones.length, 174, 'the chronology overview should consume all generated Archive milestones');
 
 const canonicalMilestones = overview.buildCanonicalMilestones(milestones, {
     storylinePriority: ['bench-council-ai100', 'deep-learning', 'gaming-ai', 'humanistic-cycle'],
     localize
 });
-assert.equal(canonicalMilestones.length, 147, 'the all-events view should render one card per routed Archive event');
+assert.equal(canonicalMilestones.length, 148, 'the all-events view should render one card per routed Archive event');
 assert.equal(
     new Set(canonicalMilestones.map((item) => overview.getCanonicalEventId(item))).size,
     canonicalMilestones.length,
@@ -59,12 +59,12 @@ assert.deepEqual(
 );
 assert.deepEqual(
     overview.selectMilestoneVariant(canonicalAlphaFold, 'deep-learning').title,
-    { zh: 'AlphaFold2', en: 'AlphaFold2' },
-    'an individual storyline filter should display that storyline title'
+    { zh: 'AlphaFold', en: 'AlphaFold' },
+    'an individual storyline filter should display the unified AlphaFold title'
 );
 assert.equal(
     overview.selectMilestonesByStoryline(canonicalMilestones, 'deep-learning').length,
-    21,
+    30,
     'storyline selection should create a filtered detail-navigation list without shrinking the canonical source'
 );
 assert.equal(
@@ -73,6 +73,57 @@ assert.equal(
     'the all-events selection should retain the complete canonical source'
 );
 console.log('PASS chronology canonical events remove duplicate cards and preserve variants');
+
+const canonicalDbn = canonicalMilestones.find((item) => item.archiveEventId === '2006-dbn');
+assert.ok(canonicalDbn, 'the canonical DBN event should exist');
+assert.deepEqual(
+    overview.getStorylineMemberships(canonicalDbn).map((membership) => membership.id),
+    ['bench-council-ai100', 'deep-learning'],
+    'reused Archive events should retain both AI100 and connectionism memberships'
+);
+assert.equal(
+    overview.selectMilestoneVariant(canonicalDbn, 'deep-learning').id,
+    'milestone-deep-learning-2006-dbn',
+    'the connectionism filter should select the DBN deep-learning variant'
+);
+const canonicalNeocognitron = canonicalMilestones.find((item) => item.archiveEventId === 'ai100-1980-neocognitron');
+assert.deepEqual(
+    overview.getStorylineMemberships(canonicalNeocognitron).map((membership) => membership.id),
+    ['bench-council-ai100', 'deep-learning'],
+    'the reused Neocognitron event should retain both AI100 and connectionism memberships'
+);
+assert.equal(
+    overview.selectMilestoneVariant(canonicalNeocognitron, 'deep-learning').id,
+    'milestone-deep-learning-ai100-1980-neocognitron',
+    'the connectionism filter should select the Neocognitron reused variant'
+);
+const canonicalHopfield = canonicalMilestones.find((item) => item.archiveEventId === '1982-hopfield-network');
+assert.deepEqual(
+    overview.getStorylineMemberships(canonicalHopfield).map((membership) => membership.id),
+    ['bench-council-ai100', 'deep-learning'],
+    'the reused Hopfield event should retain both AI100 and connectionism memberships'
+);
+assert.equal(
+    overview.selectMilestoneVariant(canonicalHopfield, 'deep-learning').id,
+    'milestone-deep-learning-1982-hopfield-network',
+    'the connectionism filter should select the Hopfield reused variant'
+);
+const canonicalPostTraining = canonicalMilestones.find(
+    (item) => item.archiveEventId === '2022-post-training-intelligence'
+);
+assert.ok(canonicalPostTraining, 'the post-training intelligence event should exist');
+assert.equal(
+    overview.selectMilestoneVariant(canonicalPostTraining, 'deep-learning').id,
+    'milestone-2022-post-training-intelligence',
+    'the connectionism filter should include the post-training intelligence event'
+);
+const canonicalAlphaGo = canonicalMilestones.find((item) => item.archiveEventId === '2016-alphago');
+assert.equal(
+    overview.selectMilestoneVariant(canonicalAlphaGo, 'deep-learning').id,
+    'milestone-deep-learning-2016-alphago',
+    'the connectionism filter should include the enabled AlphaGo variant'
+);
+console.log('PASS reused Archive events expose connectionism variants');
 
 const spectralClustering = milestones.find((item) => item.id === 'milestone-2000-spectral-clustering');
 assert.deepEqual(
@@ -179,7 +230,7 @@ assert.deepEqual(
         { id: 'bench-council-ai100', count: 119 },
         { id: 'gaming-ai', count: 13 },
         { id: 'humanistic-cycle', count: 12 },
-        { id: 'deep-learning', count: 21 }
+        { id: 'deep-learning', count: 30 }
     ],
     'the overview should derive the four production storylines and their generated counts'
 );

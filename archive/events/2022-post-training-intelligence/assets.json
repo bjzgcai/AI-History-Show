@@ -1,0 +1,108 @@
+[
+  {
+    "id": "asset-2022-post-training-pipeline",
+    "type": "svg",
+    "path": "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "后训练流程图",
+      "en": "Post-training pipeline"
+    },
+    "subcaption": {
+      "zh": "展示预训练基座模型如何通过指令微调、偏好反馈和强化学习转化为更可用的智能系统。",
+      "en": "Shows how a pretrained foundation model is shaped by instruction tuning, preference feedback, and reinforcement learning into a more useful intelligent system."
+    },
+    "sourceId": "source-instructgpt-paper",
+    "rights": {
+      "status": "local-original",
+      "license": {
+        "zh": "本地原创示意图；用于解释论文和技术报告中的方法流程，不复制出版方图形。",
+        "en": "Local original explainer; it illustrates the method flow from papers and technical reports without copying publisher figures."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2022-post-training-instruction-tuning-ppt",
+    "type": "image",
+    "path": "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "指令微调流程图",
+      "en": "Instruction tuning pipeline"
+    },
+    "subcaption": {
+      "zh": "PPT 第 43 页提取图，展示从指令数据构造到监督微调的流程。",
+      "en": "Extracted from PPT slide 43, showing the flow from instruction dataset construction to supervised fine-tuning."
+    },
+    "sourceId": "source-ppt-slide-43-instruction-tuning",
+    "rights": {
+      "status": "extracted-from-user-provided-source",
+      "license": {
+        "zh": "来自用户提供的 PPT；仅用于本项目内容梳理与展示，发布前如需对外授权应复核原图来源。",
+        "en": "Extracted from a user-provided PPT; used for this project's content review and exhibit, with original figure rights to be reviewed before external redistribution."
+      },
+      "sourceUrl": "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png"
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2022-post-training-rlhf-ppt",
+    "type": "image",
+    "path": "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg",
+    "role": "architecture-explainer",
+    "caption": {
+      "zh": "人类反馈强化学习回路图",
+      "en": "RLHF feedback loop"
+    },
+    "subcaption": {
+      "zh": "PPT 第 44 页提取图，展示人类反馈、奖励预测器、强化学习算法与环境之间的关系。",
+      "en": "Extracted from PPT slide 44, showing the relationship among human feedback, a reward predictor, a reinforcement-learning algorithm, and the environment."
+    },
+    "sourceId": "source-ppt-slide-44-rlhf",
+    "rights": {
+      "status": "extracted-from-user-provided-source",
+      "license": {
+        "zh": "来自用户提供的 PPT；仅用于本项目内容梳理与展示，发布前如需对外授权应复核原图来源。",
+        "en": "Extracted from a user-provided PPT; used for this project's content review and exhibit, with original figure rights to be reviewed before external redistribution."
+      },
+      "sourceUrl": "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg"
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-2022-post-training-research-institutions",
+    "type": "image",
+    "path": "resources/images/figures/research-institution.png",
+    "role": "team-portrait",
+    "caption": {
+      "zh": "研究机构图标",
+      "en": "Research institutions icon"
+    },
+    "subcaption": {
+      "zh": "后训练方法由多个研究机构共同推动。",
+      "en": "Post-training methods were advanced by multiple research organizations."
+    },
+    "sourceId": "source-stanford-ai-index-2025",
+    "rights": {
+      "status": "local-asset",
+      "license": {
+        "zh": "项目本地通用机构图标。",
+        "en": "Project-local generic institution icon."
+      }
+    },
+    "usage": [
+      "variant:deep-learning"
+    ],
+    "editable": false
+  }
+]

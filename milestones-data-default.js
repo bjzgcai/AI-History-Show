@@ -1,7 +1,7 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-30 09:06
+// 生成时间: 2026-07-31 02:56
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
-// Archive native: storylines 4, milestones 165, errors 0
+// Archive native: storylines 4, milestones 174, errors 0
 
 const milestones = [
   {
@@ -62842,8 +62842,8 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
     "order": 10,
@@ -63226,547 +63226,6 @@ const milestones = [
     }
   },
   {
-    "id": "milestone-2012-alexnet",
-    "archiveEventId": "2012-alexnet",
-    "archiveVariantId": "deep-learning",
-    "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive",
-    "storyline": {
-      "id": "deep-learning",
-      "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
-      }
-    },
-    "order": 10,
-    "year": 2012,
-    "date": "2012",
-    "title": {
-      "zh": "AlexNet 与 ImageNet 突破",
-      "en": "AlexNet and the ImageNet Breakthrough"
-    },
-    "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
-    },
-    "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
-    },
-    "location": {
-      "name": {
-        "en": "University of Toronto",
-        "zh": "多伦多大学"
-      },
-      "country": {
-        "en": "Toronto, Canada",
-        "zh": "加拿大多伦多"
-      },
-      "coordinates": [
-        43.6629,
-        -79.3957
-      ]
-    },
-    "description": {
-      "zh": "<p>2012 年，亚历克斯·克里泽夫斯基、伊利亚·苏茨克维和杰弗里·辛顿用 AlexNet 赢得 ImageNet 大规模视觉识别挑战赛。论文报告的 top-5 测试错误率为 15.3%，明显低于第二名的 26.2%，让深度卷积网络的优势第一次在统一的大型基准上变得无法忽视。</p><p>AlexNet 在约 120 万张训练图像上训练约 6000 万个参数，并结合 GPU、ReLU、数据增强和 dropout。它的突破并非来自单一新公式，而是把算法、数据、算力和工程实现组织成可扩展系统。此后，计算机视觉迅速从手工特征转向端到端表示学习，AlexNet 也成为深度学习复兴的标志性节点。</p>",
-      "en": "<p>In 2012, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton won the ImageNet Large Scale Visual Recognition Challenge with AlexNet. Their paper reported a 15.3 percent top-5 test error, far below the 26.2 percent achieved by the second-best entry, making the advantage of deep convolutional networks impossible to ignore on a common large-scale benchmark.</p><p>AlexNet trained roughly 60 million parameters on about 1.2 million images and combined GPUs, ReLU activations, data augmentation, and dropout. Its breakthrough was not one isolated formula, but a scalable system joining algorithms, data, compute, and implementation. Computer vision rapidly shifted from hand-engineered features toward end-to-end representation learning, making AlexNet a defining event in the deep-learning revival.</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Alex Krizhevsky",
-          "zh": "亚历克斯·克里热夫斯基"
-        },
-        "role": {
-          "en": "AlexNet lead author",
-          "zh": "AlexNet 主要作者"
-        },
-        "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Ilya Sutskever",
-          "zh": "伊利亚·苏茨克维"
-        },
-        "role": {
-          "en": "AlexNet co-author",
-          "zh": "AlexNet 共同作者"
-        },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Geoffrey Hinton",
-          "zh": "杰弗里·辛顿"
-        },
-        "role": {
-          "en": "AlexNet co-author and advisor",
-          "zh": "AlexNet 共同作者与导师"
-        },
-        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
-        "avatarStyle": "",
-        "figureType": "person"
-      }
-    ],
-    "resources": {
-      "images": [
-        "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
-        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
-        "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
-        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png"
-      ],
-      "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
-      "overviewImageAssetId": "asset-alexnet-portrait",
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-          "title": "2012年ImageNet：引爆人工智能革命的一年",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
-      "assetIds": [
-        "asset-alexnet-portrait",
-        "asset-alexnet-architecture",
-        "asset-alexnet-deep-portrait",
-        "asset-alexnet-architecture-detail"
-      ]
-    },
-    "imageMeta": {
-      "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png": {
-        "caption": {
-          "zh": "亚历克斯·克里热夫斯基肖像",
-          "en": "Alex Krizhevsky portrait"
-        },
-        "subcaption": {
-          "zh": "AlexNet 主要作者",
-          "en": "AlexNet lead author"
-        },
-        "sourceName": {
-          "zh": "用户提供照片",
-          "en": "User-provided photograph"
-        },
-        "license": {
-          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
-          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
-        },
-        "usage": {
-          "zh": "用于 AlexNet 事件首图、首页缩略图与亚历克斯·克里热夫斯基人物头像。",
-          "en": "Used as the AlexNet lead image, homepage thumbnail, and Alex Krizhevsky figure avatar."
-        },
-        "sourceId": "source-alex-krizhevsky-user-provided-portrait",
-        "rights": {
-          "status": "user-provided",
-          "license": {
-            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
-            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
-        "caption": {
-          "zh": "ImageNet 识别错误率演进图",
-          "en": "ImageNet recognition error-rate timeline"
-        },
-        "subcaption": {
-          "zh": "比较 AlexNet 前后代表性视觉模型的错误率与网络深度。",
-          "en": "Compares error rates and network depths before and after AlexNet."
-        },
-        "license": {
-          "zh": "用于展陈解释的架构资料图。",
-          "en": "Architecture reference image for exhibition explanation."
-        },
-        "sourceId": "source-alexnet-neurips-paper",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "用于展陈解释的架构资料图。",
-            "en": "Architecture reference image for exhibition explanation."
-          }
-        },
-        "role": "supporting-image",
-        "type": "image"
-      },
-      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
-        "caption": {
-          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
-          "en": "Computer History Museum AlexNet source-code release page"
-        },
-        "subcaption": {
-          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
-          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
-        },
-        "license": {
-          "zh": "历史资料图，需保留来源说明。",
-          "en": "Historical reference image; keep attribution."
-        },
-        "sourceId": "source-alexnet-neurips-paper",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "历史资料图，需保留来源说明。",
-            "en": "Historical reference image; keep attribution."
-          }
-        },
-        "role": "source-card",
-        "type": "image"
-      },
-      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
-        "caption": {
-          "zh": "AlexNet、VGG 与 GoogLeNet 架构对比",
-          "en": "AlexNet, VGG, and GoogLeNet architecture comparison"
-        },
-        "subcaption": {
-          "zh": "对比三种卷积网络的层级结构与深度。",
-          "en": "Compares the layer structures and depths of three convolutional networks."
-        },
-        "license": {
-          "zh": "用于展陈解释的架构资料图。",
-          "en": "Architecture reference image for exhibition explanation."
-        },
-        "sourceId": "source-alexnet-neurips-paper",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "用于展陈解释的架构资料图。",
-            "en": "Architecture reference image for exhibition explanation."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "image"
-      }
-    },
-    "achievement": {
-      "visual": "alexnet",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "NeurIPS",
-            "zh": "NeurIPS"
-          },
-          "title": {
-            "en": "ImageNet Classification with Deep Convolutional Neural Networks",
-            "zh": "使用深度卷积神经网络进行 ImageNet 分类"
-          },
-          "description": {
-            "en": "Paper record for the AlexNet breakthrough.",
-            "zh": "AlexNet 突破性工作的论文记录。"
-          },
-          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
-          "source": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
-          "license": {
-            "en": "Reference link only; local explainers are original redraws.",
-            "zh": "仅作为参考链接；本地解释图为原创重绘。"
-          },
-          "usage": {
-            "en": "Article / source reference",
-            "zh": "论文或资料来源"
-          },
-          "action": {
-            "en": "Open article",
-            "zh": "打开文章"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "id": "source-alexnet-neurips-paper",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
-            "en": "ImageNet Classification with Deep Convolutional Neural Networks"
-          },
-          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
-          "id": "source-alexnet-neurips-pdf",
-          "type": {
-            "zh": "论文 PDF",
-            "en": "Paper PDF"
-          },
-          "label": {
-            "zh": "NeurIPS 完整论文 PDF",
-            "en": "NeurIPS full paper PDF"
-          },
-          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
-          "purpose": "alternate-access",
-          "reliability": "primary",
-          "sourceType": "paper-file"
-        },
-        {
-          "id": "source-imagenet-challenge",
-          "type": {
-            "zh": "官方页面",
-            "en": "Official page"
-          },
-          "label": {
-            "zh": "ImageNet 大规模视觉识别挑战赛",
-            "en": "ImageNet Large Scale Visual Recognition Challenge"
-          },
-          "url": "https://www.image-net.org/challenges/LSVRC/index.php",
-          "purpose": "background",
-          "reliability": "primary",
-          "sourceType": "official-page"
-        },
-        {
-          "id": "source-alexnet-overview",
-          "type": {
-            "zh": "百科条目",
-            "en": "Encyclopedia entry"
-          },
-          "label": {
-            "zh": "AlexNet 概览",
-            "en": "AlexNet overview"
-          },
-          "url": "https://en.wikipedia.org/wiki/AlexNet",
-          "purpose": "background",
-          "reliability": "reference-only",
-          "sourceType": "encyclopedia-entry"
-        },
-        {
-          "id": "source-alex-krizhevsky-user-provided-portrait",
-          "type": {
-            "zh": "图片来源",
-            "en": "Image source"
-          },
-          "label": {
-            "zh": "亚历克斯·克里热夫斯基肖像（用户提供）",
-            "en": "Alex Krizhevsky portrait (user provided)"
-          },
-          "url": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
-          "purpose": "image-provenance",
-          "reliability": "primary",
-          "sourceType": "image-source"
-        }
-      ],
-      "sourceIds": [
-        "source-alexnet-neurips-paper",
-        "source-alexnet-neurips-pdf",
-        "source-imagenet-challenge",
-        "source-alexnet-overview",
-        "source-alex-krizhevsky-user-provided-portrait"
-      ],
-      "claimIds": [
-        "claim-imagenet-breakthrough",
-        "claim-scale-recipe"
-      ],
-      "claims": [
-        {
-          "id": "claim-imagenet-breakthrough",
-          "importance": "core",
-          "text": {
-            "zh": "AlexNet 在 ImageNet 2012 中以深度卷积网络显著提升图像分类结果。",
-            "en": "AlexNet substantially improved image classification results with a deep convolutional network in ImageNet 2012."
-          },
-          "sourceIds": [
-            "source-alexnet-neurips-paper",
-            "source-imagenet-challenge"
-          ],
-          "status": "verified"
-        },
-        {
-          "id": "claim-scale-recipe",
-          "importance": "core",
-          "text": {
-            "zh": "AlexNet 的突破结合了 GPU 训练、ReLU、数据增强和 dropout 等规模化训练要素。",
-            "en": "AlexNet combined scaled training ingredients including GPUs, ReLU, data augmentation, and dropout."
-          },
-          "sourceIds": [
-            "source-alexnet-neurips-paper"
-          ],
-          "status": "verified"
-        }
-      ],
-      "emphasis": [
-        "deep-learning-breakthrough",
-        "computer-vision",
-        "scaled-training"
-      ],
-      "area": {
-        "en": "Neural Network",
-        "zh": "神经网络"
-      },
-      "method": {
-        "en": "GPU-trained deep convolutional network",
-        "zh": "GPU 训练的深度卷积网络"
-      },
-      "artifact": {
-        "en": "ImageNet-winning CNN",
-        "zh": "赢得 ImageNet 的卷积网络"
-      },
-      "material": {
-        "en": "NeurIPS paper",
-        "zh": "NeurIPS 论文"
-      },
-      "demo": {
-        "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
-        "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
-      },
-      "keyConcepts": [
-        {
-          "label": {
-            "en": "GPU Scale",
-            "zh": "GPU 规模化"
-          },
-          "text": {
-            "en": "Parallel GPU training made larger CNNs practical.",
-            "zh": "并行 GPU 训练让更大的 CNN 变得可行。"
-          }
-        },
-        {
-          "label": {
-            "en": "ImageNet Breakthrough",
-            "zh": "ImageNet 突破"
-          },
-          "text": {
-            "en": "The model sharply reduced classification error on ILSVRC.",
-            "zh": "该模型大幅降低了 ILSVRC 分类错误率。"
-          }
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "ImageNet",
-          "zh": "ImageNet"
-        },
-        {
-          "en": "VGG",
-          "zh": "VGG"
-        },
-        {
-          "en": "ResNet",
-          "zh": "ResNet"
-        }
-      ],
-      "relatedRegions": [
-        {
-          "en": "Canada",
-          "zh": "加拿大"
-        }
-      ],
-      "demoSteps": [
-        {
-          "en": "Images",
-          "zh": "图像"
-        },
-        {
-          "en": "Deep CNN",
-          "zh": "深度 CNN"
-        },
-        {
-          "en": "Classes",
-          "zh": "类别"
-        }
-      ],
-      "demoImage": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
-      "demoNotes": [
-        {
-          "label": {
-            "en": "Source cue",
-            "zh": "资料线索"
-          },
-          "text": {
-            "en": "NeurIPS paper",
-            "zh": "NeurIPS 论文"
-          }
-        },
-        {
-          "label": {
-            "en": "Interaction point",
-            "zh": "互动点"
-          },
-          "text": {
-            "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
-            "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
-          }
-        }
-      ]
-    },
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.",
-          "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
-          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research.",
-          "zh": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。"
-        }
-      }
-    ],
-    "analysis": null,
-    "quizzes": [],
-    "archive": {
-      "eventFile": "archive/events/2012-alexnet/event.json",
-      "variantFile": "archive/events/2012-alexnet/variants/deep-learning.json",
-      "presentationMode": "preserve-legacy"
-    },
-    "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
-    "quote": {
-      "en": "\"AlexNet showed that a large deep convolutional network, trained on ImageNet with GPUs and modern regularization, could dramatically improve large-scale visual recognition.\"",
-      "zh": "\"AlexNet 证明，利用 GPU、大规模 ImageNet 数据和现代正则化方法训练的大型深度卷积网络，可以显著提升大规模视觉识别效果。\""
-    },
-    "quoteMeta": {
-      "speaker": "",
-      "workTitle": {
-        "en": "ImageNet Classification with Deep Convolutional Neural Networks",
-        "zh": "使用深度卷积神经网络进行 ImageNet 分类"
-      },
-      "workAuthors": {
-        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
-        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
-      },
-      "sourceLabel": "",
-      "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
-    },
-    "quotePage": {
-      "en": "NeurIPS 2012 paper: ImageNet Classification with Deep Convolutional Neural Networks",
-      "zh": "NeurIPS 2012 论文《使用深度卷积神经网络进行 ImageNet 分类》"
-    },
-    "quoteAttribution": {
-      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
-      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
-    }
-  },
-  {
     "id": "milestone-1957-perceptron",
     "archiveEventId": "1957-perceptron",
     "archiveVariantId": "deep-learning",
@@ -63775,8 +63234,8 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
     "order": 20,
@@ -64314,539 +63773,6 @@ const milestones = [
     }
   },
   {
-    "id": "milestone-2017-transformer",
-    "archiveEventId": "2017-transformer",
-    "archiveVariantId": "deep-learning",
-    "archivePresentationMode": "preserve-legacy",
-    "sourceKind": "archive",
-    "storyline": {
-      "id": "deep-learning",
-      "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
-      }
-    },
-    "order": 20,
-    "year": 2017,
-    "date": "2017",
-    "title": {
-      "zh": "Transformer",
-      "en": "Transformer"
-    },
-    "subtitle": {
-      "zh": "深度学习与范式归一",
-      "en": "Deep Learning and Unified Paradigms"
-    },
-    "category": {
-      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
-      "zh": "深度学习与范式归一（2010年代至2020年代）"
-    },
-    "location": {
-      "name": {
-        "en": "Google Brain",
-        "zh": "Google Brain"
-      },
-      "country": {
-        "en": "Mountain View, United States",
-        "zh": "美国山景城"
-      },
-      "coordinates": [
-        37.422,
-        -122.0841
-      ]
-    },
-    "description": {
-      "zh": "<p>2017 年，阿希什·瓦斯瓦尼等人在《Attention Is All You Need》中提出 Transformer。它用多头自注意力比较序列中不同位置的 query、key 和 value，并配合前馈网络、残差连接和位置编码，构成不依赖循环或卷积的编码器—解码器。</p><p>自注意力允许训练时并行处理整段序列，缩短远距离信息之间的计算路径。原论文在机器翻译基准上取得更高质量，同时显著减少训练成本。Transformer 随后成为 BERT、GPT、视觉 Transformer、多模态基础模型和现代生成式 AI 的共同架构基础。</p>",
-      "en": "<p>In 2017, Ashish Vaswani and colleagues introduced the Transformer in <em>Attention Is All You Need</em>. Multi-head self-attention compared queries, keys, and values across sequence positions, while feed-forward layers, residual connections, and positional encodings formed an encoder-decoder architecture without recurrence or convolution.</p><p>Self-attention allowed whole sequences to be processed in parallel during training and shortened the computational path between distant pieces of information. The original paper achieved stronger machine-translation quality with substantially lower training cost. The Transformer subsequently became the shared architectural foundation of BERT, GPT, vision transformers, multimodal foundation models, and modern generative AI.</p>"
-    },
-    "figures": [
-      {
-        "name": {
-          "en": "Ashish Vaswani",
-          "zh": "阿希什·瓦斯瓦尼"
-        },
-        "role": {
-          "en": "Transformer lead author",
-          "zh": "Transformer 主要作者"
-        },
-        "avatar": "resources/images/figures/ashish-vaswani.jpg",
-        "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
-        "figureType": "person"
-      },
-      {
-        "name": {
-          "en": "Noam Shazeer",
-          "zh": "诺姆·沙泽尔"
-        },
-        "role": {
-          "en": "Transformer co-author",
-          "zh": "Transformer 共同作者"
-        },
-        "avatar": "",
-        "avatarStyle": "",
-        "figureType": "person"
-      }
-    ],
-    "resources": {
-      "images": [
-        "resources/images/figures/ashish-vaswani.jpg",
-        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
-        "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
-        "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
-        "resources/images/2017-transformer/papers/2017-transformer_papers_01.png"
-      ],
-      "videos": [
-        {
-          "id": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "embed_url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-          "title": "2017Transformer：改变AI的2017年论文",
-          "channel": "",
-          "duration": "",
-          "thumbnail": "",
-          "source": "Web"
-        }
-      ],
-      "assetIds": [
-        "asset-transformer-portrait",
-        "asset-transformer-attention",
-        "asset-transformer-architecture",
-        "asset-transformer-architecture-detail",
-        "asset-transformer-paper-page"
-      ]
-    },
-    "imageMeta": {
-      "resources/images/figures/ashish-vaswani.jpg": {
-        "caption": {
-          "zh": "阿希什·瓦斯瓦尼肖像",
-          "en": "Ashish Vaswani portrait"
-        },
-        "subcaption": {
-          "zh": "Transformer 论文共同作者",
-          "en": "Transformer paper co-author"
-        },
-        "license": {
-          "zh": "历史人物资料图，保留来源说明。",
-          "en": "Historical figure reference image; keep attribution."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "历史人物资料图，保留来源说明。",
-            "en": "Historical figure reference image; keep attribution."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
-        "caption": {
-          "zh": "Transformer 自注意力机制",
-          "en": "Transformer self-attention mechanism"
-        },
-        "subcaption": {
-          "zh": "本地重绘的 token 间注意力关系解释图。",
-          "en": "Locally redrawn explainer of attention relationships between tokens."
-        },
-        "license": {
-          "zh": "根据论文方法本地重绘，不复制原论文图。",
-          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "根据论文方法本地重绘，不复制原论文图。",
-            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-          }
-        },
-        "role": "algorithm-explainer",
-        "type": "svg"
-      },
-      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
-        "caption": {
-          "zh": "Transformer 自注意力计算",
-          "en": "Transformer self-attention computation"
-        },
-        "subcaption": {
-          "zh": "展示查询、键和值投影以及缩放点积注意力。",
-          "en": "Shows query, key, and value projections with scaled dot-product attention."
-        },
-        "license": {
-          "zh": "用于展陈解释的架构资料图。",
-          "en": "Architecture reference image for exhibition explanation."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "用于展陈解释的架构资料图。",
-            "en": "Architecture reference image for exhibition explanation."
-          }
-        },
-        "role": "algorithm-explainer",
-        "type": "image"
-      },
-      "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
-        "caption": {
-          "zh": "Transformer 编码器—解码器架构",
-          "en": "Transformer encoder-decoder architecture"
-        },
-        "subcaption": {
-          "zh": "原论文中的编码器与解码器模块结构。",
-          "en": "Encoder and decoder module structure from the original paper."
-        },
-        "license": {
-          "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
-          "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
-            "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "image"
-      },
-      "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
-        "caption": {
-          "zh": "《Attention Is All You Need》论文首页",
-          "en": "Attention Is All You Need paper first page"
-        },
-        "subcaption": {
-          "zh": "Transformer 原始论文的首页与摘要。",
-          "en": "First page and abstract of the original Transformer paper."
-        },
-        "license": {
-          "zh": "论文页面资料引用，需保留来源说明。",
-          "en": "Paper page reference; keep source attribution."
-        },
-        "sourceId": "source-transformer-neurips",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "论文页面资料引用，需保留来源说明。",
-            "en": "Paper page reference; keep source attribution."
-          }
-        },
-        "role": "paper-page",
-        "type": "image"
-      }
-    },
-    "achievement": {
-      "visual": "transformer",
-      "visualModules": [
-        {
-          "type": "archiveLink",
-          "site": {
-            "en": "arXiv",
-            "zh": "arXiv"
-          },
-          "title": {
-            "en": "Attention Is All You Need",
-            "zh": "Attention Is All You Need"
-          },
-          "description": {
-            "en": "Open paper for the Transformer architecture.",
-            "zh": "Transformer 架构的开放论文。"
-          },
-          "url": "https://arxiv.org/abs/1706.03762",
-          "source": "https://arxiv.org/abs/1706.03762",
-          "license": {
-            "en": "Reference link only; local explainers are original redraws.",
-            "zh": "仅作为参考链接；本地解释图为原创重绘。"
-          },
-          "usage": {
-            "en": "Article / source reference",
-            "zh": "论文或资料来源"
-          },
-          "action": {
-            "en": "Open paper",
-            "zh": "打开论文"
-          }
-        }
-      ],
-      "sources": [
-        {
-          "id": "source-transformer-arxiv",
-          "type": {
-            "zh": "论文",
-            "en": "Paper"
-          },
-          "label": {
-            "zh": "《Attention Is All You Need》",
-            "en": "Attention Is All You Need"
-          },
-          "url": "https://arxiv.org/abs/1706.03762",
-          "purpose": "core-evidence",
-          "reliability": "primary",
-          "sourceType": "paper"
-        },
-        {
-          "id": "source-transformer-neurips",
-          "type": {
-            "zh": "会议论文页面",
-            "en": "Conference paper page"
-          },
-          "label": {
-            "zh": "NeurIPS 论文页面",
-            "en": "NeurIPS paper page"
-          },
-          "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
-          "purpose": "alternate-access",
-          "reliability": "primary",
-          "sourceType": "paper-page"
-        },
-        {
-          "id": "source-google-research-publication",
-          "type": {
-            "zh": "出版页面",
-            "en": "Publication page"
-          },
-          "label": {
-            "zh": "Google Research 出版页面",
-            "en": "Google Research publication page"
-          },
-          "url": "https://research.google/pubs/attention-is-all-you-need/",
-          "purpose": "alternate-access",
-          "reliability": "primary",
-          "sourceType": "paper-page"
-        },
-        {
-          "id": "source-google-transformer-blog",
-          "type": {
-            "zh": "文章",
-            "en": "Article"
-          },
-          "label": {
-            "zh": "Google Research Transformer 博客",
-            "en": "Google Research Transformer blog post"
-          },
-          "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
-          "purpose": "historical-context",
-          "reliability": "secondary",
-          "sourceType": "article"
-        }
-      ],
-      "sourceIds": [
-        "source-transformer-arxiv",
-        "source-transformer-neurips",
-        "source-google-research-publication",
-        "source-google-transformer-blog"
-      ],
-      "claimIds": [
-        "claim-attention-only-architecture",
-        "claim-foundation-model-legacy"
-      ],
-      "claims": [
-        {
-          "id": "claim-attention-only-architecture",
-          "importance": "core",
-          "text": {
-            "zh": "Transformer 提出了一种完全基于注意力机制、去除循环和卷积的序列建模架构。",
-            "en": "The Transformer proposed a sequence modeling architecture based solely on attention mechanisms, dispensing with recurrence and convolutions."
-          },
-          "sourceIds": [
-            "source-transformer-arxiv",
-            "source-transformer-neurips"
-          ],
-          "status": "verified"
-        },
-        {
-          "id": "claim-foundation-model-legacy",
-          "importance": "context",
-          "text": {
-            "zh": "Transformer 架构成为 BERT、GPT 式语言模型和许多现代基础模型的重要基础。",
-            "en": "The Transformer architecture became a key foundation for BERT, GPT-style language models, and many modern foundation models."
-          },
-          "sourceIds": [
-            "source-google-transformer-blog",
-            "source-google-research-publication"
-          ],
-          "status": "verified"
-        }
-      ],
-      "emphasis": [
-        "attention",
-        "sequence-modeling",
-        "foundation-models"
-      ],
-      "area": {
-        "en": "Neural Network",
-        "zh": "神经网络"
-      },
-      "method": {
-        "en": "Self-attention sequence architecture",
-        "zh": "自注意力序列架构"
-      },
-      "artifact": {
-        "en": "Transformer architecture",
-        "zh": "Transformer 架构"
-      },
-      "material": {
-        "en": "NeurIPS paper",
-        "zh": "NeurIPS 论文"
-      },
-      "demo": {
-        "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
-        "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
-      },
-      "keyConcepts": [
-        {
-          "label": {
-            "en": "Self-attention",
-            "zh": "自注意力"
-          },
-          "text": {
-            "en": "Tokens exchange information through learned attention weights.",
-            "zh": "令牌通过学习到的注意力权重交换信息。"
-          }
-        },
-        {
-          "label": {
-            "en": "Parallel Training",
-            "zh": "并行训练"
-          },
-          "text": {
-            "en": "Sequence positions can be processed without recurrence.",
-            "zh": "序列位置无需循环即可处理。"
-          }
-        }
-      ],
-      "relatedAchievements": [
-        {
-          "en": "Attention",
-          "zh": "注意力机制"
-        },
-        {
-          "en": "BERT",
-          "zh": "BERT"
-        },
-        {
-          "en": "GPT",
-          "zh": "GPT"
-        }
-      ],
-      "relatedRegions": [
-        {
-          "en": "United States",
-          "zh": "美国"
-        },
-        {
-          "en": "Canada",
-          "zh": "加拿大"
-        }
-      ],
-      "demoSteps": [
-        {
-          "en": "Token embeddings",
-          "zh": "令牌嵌入"
-        },
-        {
-          "en": "Self-attention",
-          "zh": "自注意力"
-        },
-        {
-          "en": "Feed-forward stack",
-          "zh": "前馈堆栈"
-        }
-      ],
-      "demoImage": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
-      "demoNotes": [
-        {
-          "label": {
-            "en": "Source cue",
-            "zh": "资料线索"
-          },
-          "text": {
-            "en": "NeurIPS paper",
-            "zh": "NeurIPS 论文"
-          }
-        },
-        {
-          "label": {
-            "en": "Interaction point",
-            "zh": "互动点"
-          },
-          "text": {
-            "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
-            "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
-          }
-        }
-      ]
-    },
-    "commentarySections": [
-      {
-        "label": {
-          "en": "Historical Background",
-          "zh": "历史背景"
-        },
-        "html": {
-          "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
-          "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。"
-        }
-      },
-      {
-        "label": {
-          "en": "Core Idea",
-          "zh": "核心思想"
-        },
-        "html": {
-          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
-          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
-        }
-      },
-      {
-        "label": {
-          "en": "Long-Term Legacy",
-          "zh": "长期影响"
-        },
-        "html": {
-          "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research.",
-          "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。"
-        }
-      }
-    ],
-    "analysis": null,
-    "quizzes": [],
-    "archive": {
-      "eventFile": "archive/events/2017-transformer/event.json",
-      "variantFile": "archive/events/2017-transformer/variants/deep-learning.json",
-      "presentationMode": "preserve-legacy"
-    },
-    "photos": [],
-    "videoUrl": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
-    "quote": {
-      "en": "\"The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.\"",
-      "zh": "\"Transformer 用自注意力替代循环和卷积，形成了一种可扩展架构，并成为现代语言模型的基础。\""
-    },
-    "quoteMeta": {
-      "speaker": "",
-      "workTitle": {
-        "en": "Attention Is All You Need",
-        "zh": "注意力就是你所需要的一切"
-      },
-      "workAuthors": {
-        "en": "Ashish Vaswani et al., NeurIPS, 2017",
-        "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
-      },
-      "sourceLabel": "",
-      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
-    },
-    "quotePage": {
-      "en": "NeurIPS 2017 paper: Attention Is All You Need",
-      "zh": "NeurIPS 2017 论文《注意力就是你所需要的一切》"
-    },
-    "quoteAttribution": {
-      "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al., NeurIPS, 2017",
-      "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
-    }
-  },
-  {
     "id": "milestone-1969-ai-winter",
     "archiveEventId": "1969-ai-winter",
     "archiveVariantId": "deep-learning",
@@ -64855,8 +63781,8 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
     "order": 30,
@@ -65153,6 +64079,966 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-deep-learning-ai100-1980-neocognitron",
+    "archiveEventId": "ai100-1980-neocognitron",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 35,
+    "year": 1980,
+    "date": "1980",
+    "title": {
+      "zh": "新认知机",
+      "en": "Neocognitron"
+    },
+    "subtitle": {
+      "zh": "AI 百大成就",
+      "en": "AI Top 100 Achievements"
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "location": {
+      "name": {
+        "en": "NHK Broadcasting Science Research Laboratories",
+        "zh": "日本放送协会广播科学研究实验室"
+      },
+      "country": {
+        "en": "Japan",
+        "zh": "日本"
+      },
+      "coordinates": [
+        35.6762,
+        139.6503
+      ]
+    },
+    "description": {
+      "zh": "<p>福岛邦彦在 1980 年提出 Neocognitron，构建受视觉皮层启发的层级自组织网络。S 细胞层从局部感受野中检测线段和更复杂特征，C 细胞层在邻近位置汇聚响应，使模式即使发生一定平移或形变也能被识别；多层交替逐步形成更抽象表示。</p><p>Neocognitron 尚未采用后来 CNN 中以反向传播端到端训练共享卷积核的标准方式，但它明确展示了局部连接、层级特征和空间容忍性可以组合成视觉识别系统。它连接了早期生物启发模型与 LeNet 等现代卷积网络，是 CNN 架构思想的重要先驱。</p>",
+      "en": "<p>Kunihiko Fukushima introduced the neocognitron in 1980 as a hierarchical self-organizing network inspired by visual cortex. S-cell layers detect lines and increasingly complex features within local receptive fields, while C-cell layers pool responses over nearby positions so patterns can still be recognized after limited shifts or deformation. Alternating layers gradually construct more abstract representations.</p><p>The neocognitron did not use the later CNN standard of end-to-end backpropagation through shared convolutional kernels. It nevertheless showed clearly that local connectivity, feature hierarchies, and spatial tolerance could be combined in a visual-recognition system. It became an important architectural precursor linking early biologically inspired models to LeNet and modern convolutional networks.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Kunihiko Fukushima",
+          "zh": "福岛邦彦"
+        },
+        "role": {
+          "en": "Creator of the neocognitron",
+          "zh": "Neocognitron 提出者"
+        },
+        "avatar": "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg",
+        "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg"
+      ],
+      "videos": [],
+      "assetIds": [
+        "asset-ai100-1980-neocognitron-dr-kunihikofukushima",
+        "asset-1980-neocognitron-hierarchy"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/external/ai100-1980-neocognitron/kunihiko-fukushima-portrait.jpg": {
+        "caption": {
+          "zh": "福岛邦彦肖像",
+          "en": "Kunihiko Fukushima portrait"
+        },
+        "subcaption": {
+          "zh": "Neocognitron 提出者。",
+          "en": "Creator of the neocognitron."
+        },
+        "sourceName": {
+          "zh": "C&C 奖官网",
+          "en": "C&C Prize website"
+        },
+        "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg",
+        "license": {
+          "zh": "本地副本来自C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+        },
+        "sourceId": "source-neocognitron",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本来自C&C 奖官网；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from C&C Prize website; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          },
+          "sourceUrl": "https://www.candc.or.jp/kensyo/2021/images/Dr.KunihikoFukushima.jpg"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg": {
+        "caption": {
+          "zh": "层级视觉网络",
+          "en": "Hierarchical visual layers"
+        },
+        "subcaption": {
+          "zh": "关于 Neocognitron 层级结构的本地原创解释图。",
+          "en": "Original local explainer of neocognitron hierarchy."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-neocognitron",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "neocognitron",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "Springer",
+            "zh": "Springer"
+          },
+          "title": {
+            "en": "Neocognitron",
+            "zh": "新认知机"
+          },
+          "description": {
+            "en": "Primary paper record for the neocognitron.",
+            "zh": "Neocognitron 的主论文记录。"
+          },
+          "url": "https://doi.org/10.1007/BF00344251",
+          "source": "https://doi.org/10.1007/BF00344251",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-open-neocognitron-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "Neocognitron 开放 PDF",
+            "en": "Open Neocognitron PDF"
+          },
+          "url": "https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf",
+          "purpose": "alternate-access",
+          "reliability": "secondary",
+          "sourceType": "paper-file"
+        },
+        {
+          "id": "source-scholarpedia-neocognitron-article",
+          "type": {
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
+          },
+          "label": {
+            "zh": "Scholarpedia 的 Neocognitron 文章",
+            "en": "Scholarpedia Neocognitron article"
+          },
+          "url": "https://www.scholarpedia.org/article/Neocognitron",
+          "purpose": "background",
+          "reliability": "reference-only",
+          "sourceType": "encyclopedia-entry"
+        },
+        {
+          "id": "source-semantic-scholar-paper-record",
+          "type": {
+            "zh": "论文索引",
+            "en": "Paper index"
+          },
+          "label": {
+            "zh": "Semantic Scholar 论文记录",
+            "en": "Semantic Scholar paper record"
+          },
+          "url": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-self-organizing-neural-network-for-Fukushima/69e68bfaadf2dccff800158749f5a50fe82d173b",
+          "purpose": "alternate-access",
+          "reliability": "secondary",
+          "sourceType": "paper-index"
+        },
+        {
+          "id": "source-neocognitron",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Neocognitron》",
+            "en": "Neocognitron"
+          },
+          "url": "https://doi.org/10.1007/BF00344251",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-open-neocognitron-pdf",
+        "source-scholarpedia-neocognitron-article",
+        "source-semantic-scholar-paper-record",
+        "source-neocognitron"
+      ],
+      "claimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "新认知机 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Neocognitron is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neocognitron",
+            "source-open-neocognitron-pdf"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。</p>",
+            "en": "<p>Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks.</p>"
+          },
+          "sourceIds": [
+            "source-neocognitron",
+            "source-open-neocognitron-pdf"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Hierarchical shift-tolerant vision network",
+        "zh": "层级抗平移视觉网络"
+      },
+      "artifact": {
+        "en": "Neocognitron architecture",
+        "zh": "Neocognitron 架构"
+      },
+      "material": {
+        "en": "Biological Cybernetics paper",
+        "zh": "《Biological Cybernetics》论文"
+      },
+      "demo": {
+        "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
+        "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Hierarchical Vision",
+            "zh": "层级视觉"
+          },
+          "text": {
+            "en": "Simple features are composed into larger patterns.",
+            "zh": "简单特征组合成更大的模式。"
+          }
+        },
+        {
+          "label": {
+            "en": "Shift Tolerance",
+            "zh": "平移容忍"
+          },
+          "text": {
+            "en": "Later layers reduce sensitivity to position changes.",
+            "zh": "后续层降低对位置变化的敏感性。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "CNN",
+          "zh": "CNN"
+        },
+        {
+          "en": "LeNet",
+          "zh": "LeNet"
+        },
+        {
+          "en": "ReLU",
+          "zh": "ReLU"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Japan",
+          "zh": "日本"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Input pattern",
+          "zh": "输入图案"
+        },
+        {
+          "en": "Feature layers",
+          "zh": "特征层"
+        },
+        {
+          "en": "Stable category",
+          "zh": "稳定类别"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/1980-neocognitron_hierarchy.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "Biological Cybernetics paper",
+            "zh": "《Biological Cybernetics》论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence.",
+            "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。"
+          }
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "福岛邦彦提出 Neocognitron，这是一种用于抗平移视觉模式识别的层级自组织神经网络。它交替使用特征层和容忍层，预示了后来卷积神经网络中的核心思想。",
+          "en": "Kunihiko Fukushima proposed the neocognitron as a hierarchical self-organizing neural network for shift-tolerant visual pattern recognition. Its alternating feature and tolerance layers anticipated ideas that later became central to convolutional neural networks."
+        },
+        "sourceIds": [
+          "source-neocognitron"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "特征检测层和容忍层把平移后的图案转化为稳定的类别证据。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+          "en": "Feature-detecting layers and tolerance layers turn shifted patterns into stable category evidence. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+        },
+        "sourceIds": [
+          "source-neocognitron"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 Neocognitron 视为卷积视觉网络的重要先祖，尽管现代 CNN 使用不同训练流程。它的长期影响在于用于抗平移识别的层级特征与池化模式。",
+          "en": "Experts generally treat the neocognitron as a major ancestor of convolutional vision networks, even though modern CNNs use different training procedures. Its long-term legacy is the hierarchical feature-and-pooling pattern for shift-tolerant recognition."
+        },
+        "sourceIds": [
+          "source-neocognitron"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "ai100-1980-neocognitron-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "Neocognitron 预示了后来的哪类模型？",
+          "en": "What later family of models did the neocognitron anticipate?"
+        },
+        "options": [
+          {
+            "zh": "卷积视觉网络",
+            "en": "Convolutional vision networks"
+          },
+          {
+            "zh": "只有电子表格公式",
+            "en": "Spreadsheet formulas only"
+          },
+          {
+            "zh": "音频压缩编码",
+            "en": "Audio compression codecs"
+          },
+          {
+            "zh": "只有定理数据库",
+            "en": "A theorem database only"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "它的层级特征层和容忍层预示了 CNN 式视觉处理。",
+          "en": "Its hierarchical feature and tolerance layers foreshadowed CNN-style visual processing."
+        },
+        "sourceIds": [
+          "source-neocognitron"
+        ],
+        "assetIds": [
+          "asset-1980-neocognitron-hierarchy"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-1980-neocognitron/event.json",
+      "variantFile": "archive/events/ai100-1980-neocognitron/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position\"",
+      "zh": "\"一种不受位置平移影响的模式识别机制自组织神经网络模型\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position",
+        "zh": "Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型"
+      },
+      "workAuthors": {
+        "en": "Kunihiko Fukushima, Biological Cybernetics, 1980",
+        "zh": "福岛邦彦，《Biological Cybernetics》，1980"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1007/BF00344251"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position</em>, Kunihiko Fukushima, Biological Cybernetics, 1980",
+      "zh": "《Neocognitron：一种不受位置平移影响的模式识别机制自组织神经网络模型》, 福岛邦彦，《Biological Cybernetics》，1980"
+    }
+  },
+  {
+    "id": "milestone-deep-learning-1982-hopfield-network",
+    "archiveEventId": "1982-hopfield-network",
+    "archiveVariantId": "bench-council-ai100",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 38,
+    "year": "1982",
+    "date": "1982",
+    "title": {
+      "zh": "Hopfield 网络",
+      "en": "Hopfield Network"
+    },
+    "subtitle": {
+      "zh": "AI 百大成就",
+      "en": "AI Top 100 Achievements"
+    },
+    "category": {
+      "en": "BenchCouncil AI100 Achievements",
+      "zh": "BenchCouncil AI100 成就"
+    },
+    "location": {
+      "name": {
+        "en": "California Institute of Technology",
+        "zh": "加州理工学院"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        34.1377,
+        -118.1253
+      ]
+    },
+    "description": {
+      "zh": "<p>约翰·霍普菲尔德在 1982 年把相互连接的二值神经元描述为具有整体能量函数的动力系统。在对称连接和异步更新等条件下，每次更新都会降低或保持能量，因此网络最终落入稳定状态。训练过的模式可以成为能量地形中的吸引子。</p><p>当输入只包含残缺或带噪版本时，网络可能收敛到最接近的存储模式，从而实现内容寻址的联想记忆。容量有限、伪吸引子和局部极小值会限制表现，但这一框架把神经计算、统计物理、记忆和组合优化连接起来，并成为能量模型的重要历史基础。</p>",
+      "en": "<p>John Hopfield described a recurrent network of binary units as a dynamical system with a global energy function in 1982. Under conditions including symmetric connections and asynchronous updates, each update lowers or preserves the energy, so the network eventually settles into a stable state. Learned patterns can therefore become attractors in an energy landscape.</p><p>Given an incomplete or noisy version of a pattern, the network may converge to the closest stored memory, providing content-addressable associative recall. Limited capacity, spurious attractors, and local minima constrain its performance, but the framework connected neural computation with statistical physics, memory, and combinatorial optimization. It also became an important historical foundation for energy-based models.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "John Hopfield",
+          "zh": "约翰·J·霍普菲尔德"
+        },
+        "role": {
+          "en": "Inventor of Hopfield networks",
+          "zh": "Hopfield 网络提出者"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg",
+        "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg",
+        "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg"
+      ],
+      "videos": [],
+      "assetIds": [
+        "asset-1982-hopfield-network-john-hopfield",
+        "asset-1982-hopfield-network-energy-basin",
+        "asset-1982-hopfield-network-memory-grid"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/1982-hopfield-network_john-hopfield.jpg": {
+        "caption": {
+          "zh": "约翰·J·霍普菲尔德 肖像",
+          "en": "John J. Hopfield portrait"
+        },
+        "subcaption": {
+          "zh": "诺贝尔奖官网的 Hopfield 人物图。",
+          "en": "Nobel Prize profile portrait for Hopfield."
+        },
+        "license": {
+          "zh": "Nobel Prize image; rights not stated.",
+          "en": "Nobel Prize image; rights not stated."
+        },
+        "sourceId": "source-neural-networks-and-physical-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Nobel Prize image; rights not stated.",
+            "en": "Nobel Prize image; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_energy-basin.svg": {
+        "caption": {
+          "zh": "能量盆地",
+          "en": "Energy basin"
+        },
+        "subcaption": {
+          "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Hopfield Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-neural-networks-and-physical-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1982-hopfield-network_memory-grid.svg": {
+        "caption": {
+          "zh": "联想记忆网格",
+          "en": "Associative memory grid"
+        },
+        "subcaption": {
+          "zh": "Hopfield 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Hopfield Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-neural-networks-and-physical-systems",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "hopfield",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "PNAS",
+          "title": {
+            "en": "Hopfield network paper",
+            "zh": "Hopfield 网络论文"
+          },
+          "description": {
+            "en": "Primary source for recurrent associative memory; local images redraw energy and attractor dynamics.",
+            "zh": "递归联想记忆的原始来源；本地图重画能量与吸引子动力学。"
+          },
+          "url": "https://doi.org/10.1073/pnas.79.8.2554",
+          "source": "https://doi.org/10.1073/pnas.79.8.2554",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open PNAS DOI",
+            "zh": "打开 PNAS DOI"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-nobel-prize-john-j-hopfield-facts",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "Nobel Prize: 约翰·J·霍普菲尔德 facts",
+            "en": "Nobel Prize: John J. Hopfield facts"
+          },
+          "url": "https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/",
+          "purpose": "biography",
+          "reliability": "reference-only",
+          "sourceType": "profile"
+        },
+        {
+          "id": "source-princeton-neuroscience-institute-profile",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "Princeton Neuroscience Institute profile",
+            "en": "Princeton Neuroscience Institute profile"
+          },
+          "url": "https://pni.princeton.edu/people/john-j-hopfield",
+          "purpose": "biography",
+          "reliability": "reference-only",
+          "sourceType": "profile"
+        },
+        {
+          "id": "source-neural-networks-and-physical-systems",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《神经网络与物理系统》",
+            "en": "Neural Networks and Physical Systems"
+          },
+          "url": "https://doi.org/10.1073/pnas.79.8.2554",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-nobel-prize-john-j-hopfield-facts",
+        "source-princeton-neuroscience-institute-profile",
+        "source-neural-networks-and-physical-systems"
+      ],
+      "claimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "Hopfield 网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Hopfield Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-neural-networks-and-physical-systems",
+            "source-nobel-prize-john-j-hopfield-facts"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>Hopfield 网络把神经计算与物理学连接起来。一个模式可以作为能量地形中的吸引子被存储，带噪输入则会收敛回最接近的记忆。它把联想记忆、优化和神经动力学放进同一个概念框架。</p>",
+            "en": "<p>Hopfield networks connected neural computation with physics. A pattern could be stored as an attractor in an energy landscape, and a noisy input could settle back into the closest memory. This made associative memory, optimization, and neural dynamics part of the same conceptual frame.</p>"
+          },
+          "sourceIds": [
+            "source-neural-networks-and-physical-systems",
+            "source-nobel-prize-john-j-hopfield-facts"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "batch-migration",
+        "source-review-needed"
+      ],
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Attractor dynamics and energy minimization",
+        "zh": "吸引子动力学与能量最小化"
+      },
+      "artifact": {
+        "en": "Recurrent associative memory network",
+        "zh": "递归联想记忆网络"
+      },
+      "material": {
+        "en": "PNAS paper and Nobel Prize profile",
+        "zh": "PNAS 论文与诺贝尔奖人物资料"
+      },
+      "demo": {
+        "en": "Noisy pattern settles into a stored memory",
+        "zh": "带噪模式收敛到已存记忆"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Attractor",
+            "zh": "吸引子"
+          },
+          "text": {
+            "en": "A stored pattern is a stable state that nearby noisy patterns tend to approach.",
+            "zh": "已存模式是稳定状态，附近的带噪模式倾向于靠近它。"
+          }
+        },
+        {
+          "label": {
+            "en": "Energy Function",
+            "zh": "能量函数"
+          },
+          "text": {
+            "en": "The network changes state in a direction that lowers energy.",
+            "zh": "网络沿着降低能量的方向改变状态。"
+          }
+        },
+        {
+          "label": {
+            "en": "Associative Memory",
+            "zh": "联想记忆"
+          },
+          "text": {
+            "en": "Partial or corrupted inputs can recover a complete stored pattern.",
+            "zh": "部分或损坏输入可以恢复完整存储模式。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Boltzmann machines",
+          "zh": "玻尔兹曼机"
+        },
+        {
+          "en": "Energy-based models",
+          "zh": "能量模型"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Physics",
+          "zh": "物理学"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Attractor",
+          "zh": "吸引子"
+        },
+        {
+          "en": "Energy Function",
+          "zh": "能量函数"
+        },
+        {
+          "en": "Associative Memory",
+          "zh": "联想记忆"
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "在深度学习之前，研究者已经在追问大量简单单元如何集体计算。Hopfield 给这个问题提供了基于能量的表述。",
+          "en": "Before deep learning, researchers were already asking how large sets of simple units could compute collectively. Hopfield gave this question an energy-based formulation."
+        },
+        "sourceIds": [
+          "source-neural-networks-and-physical-systems"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "网络更新单元以降低能量函数，因此被存储的记忆会成为稳定吸引子。 关键机制是吸引子动力学与能量最小化，它把资料线索与可见的演示行为连接起来。",
+          "en": "The network updates units to reduce an energy function, so stored memories become stable attractors. The key mechanism is Attractor dynamics and energy minimization, which links the source material to the visible demo behavior."
+        },
+        "sourceIds": [
+          "source-neural-networks-and-physical-systems"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 Hopfield 网络视为基于能量的神经计算史中的核心成果。它的长期影响在于连接了记忆、优化、吸引子动力学和统计物理。",
+          "en": "Experts generally treat Hopfield networks as central to the history of energy-based neural computation. Their long-term legacy is the connection between memory, optimization, attractor dynamics, and statistical physics."
+        },
+        "sourceIds": [
+          "source-neural-networks-and-physical-systems"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "1982-hopfield-network-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "在 Hopfield 网络中，被存储的模式像什么？",
+          "en": "In a Hopfield network, what does a stored pattern act like?"
+        },
+        "options": [
+          {
+            "zh": "能量地形中的稳定吸引子",
+            "en": "A stable attractor in an energy landscape"
+          },
+          {
+            "zh": "固定 dropout 概率",
+            "en": "A fixed dropout probability"
+          },
+          {
+            "zh": "网页规模图像标签",
+            "en": "A web-scale image label"
+          },
+          {
+            "zh": "单次检测框",
+            "en": "A single-shot bounding box"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "Hopfield 网络把记忆存为稳定状态；带噪输入可以向这些状态收敛。",
+          "en": "Hopfield networks store memories as stable states; noisy inputs can relax toward those states."
+        },
+        "sourceIds": [
+          "source-neural-networks-and-physical-systems"
+        ],
+        "assetIds": [
+          "asset-1982-hopfield-network-john-hopfield"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/1982-hopfield-network/event.json",
+      "variantFile": "archive/events/1982-hopfield-network/variants/bench-council-ai100.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"neural networks and physical systems\"",
+      "zh": "\"神经网络与物理系统\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+        "zh": "具有涌现集体计算能力的神经网络与物理系统"
+      },
+      "workAuthors": {
+        "en": "John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+        "zh": "约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1073/pnas.79.8.2554"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / Hopfield network",
+      "zh": "BenchCouncil AI100：神经网络 / Hopfield 网络"
+    },
+    "quoteAttribution": {
+      "en": "<em>Neural Networks and Physical Systems with Emergent Collective Computational Abilities</em>, John J. Hopfield, Proceedings of the National Academy of Sciences, 1982",
+      "zh": "《具有涌现集体计算能力的神经网络与物理系统》, 约翰·J·霍普菲尔德, 《美国国家科学院院刊》, 1982"
+    }
+  },
+  {
     "id": "milestone-1986-backpropagation",
     "archiveEventId": "1986-backpropagation",
     "archiveVariantId": "deep-learning",
@@ -65161,8 +65047,8 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
     "order": 40,
@@ -65520,8 +65406,8 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
     "order": 50,
@@ -65814,8 +65700,8 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
     "order": 60,
@@ -66347,8 +66233,8 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
     "order": 70,
@@ -66883,6 +66769,2546 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-deep-learning-2006-dbn",
+    "archiveEventId": "2006-dbn",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 80,
+    "year": "2006",
+    "date": "2006",
+    "title": {
+      "zh": "深度置信网络",
+      "en": "Deep Belief Network"
+    },
+    "subtitle": {
+      "zh": "神经网络与连接主义的复兴",
+      "en": "Neural Networks and the Revival of Connectionism"
+    },
+    "category": {
+      "zh": "神经网络与连接主义的复兴（20世纪80年代至21世纪初）",
+      "en": "Neural Networks and the Revival of Connectionism (1980s-2000s)"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto, National University of Singapore",
+        "zh": "多伦多大学、新加坡国立大学"
+      },
+      "country": {
+        "en": "Canada, Singapore",
+        "zh": "加拿大、新加坡"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "zh": "<p>辛顿、奥辛德罗和德在 2006 年提出深度置信网络的快速训练方法，回应当时深层神经网络难以直接优化的问题。训练从底层开始，把每相邻两层视为受限玻尔兹曼机，在无标签数据上逐层学习特征；堆叠完成后，再用生成式或监督目标对整个网络微调。</p><p>这种贪心逐层预训练为深层模型提供较好的参数起点，使数字识别和降维等任务取得有竞争力的结果，也让“深度学习”重新成为可实验的研究方向。后来 ReLU、更大数据、GPU 和改进初始化使纯监督训练更普遍，但 DBN 在深度学习复兴中的历史作用仍然关键。</p>",
+      "en": "<p>Geoffrey Hinton, Simon Osindero, and Yee-Whye Teh introduced a fast training method for deep belief networks in 2006, addressing the difficulty of directly optimizing deep neural networks at the time. Training starts at the bottom, treating each adjacent pair of layers as a restricted Boltzmann machine and learning features from unlabeled data layer by layer. The completed stack is then fine-tuned with a generative or supervised objective.</p><p>This greedy pretraining supplied deep models with a useful parameter initialization and produced competitive results in tasks such as digit recognition and dimensionality reduction, making “deep learning” experimentally credible again. ReLU activations, larger datasets, GPUs, and improved initialization later made fully supervised training more common, but DBNs retain a central historical role in the revival of deep architectures.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿"
+        },
+        "role": {
+          "en": "Co-author of deep belief net learning",
+          "zh": "深度置信网络学习共同作者"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Yee-Whye The",
+          "zh": "义威·特"
+        },
+        "role": {
+          "en": "DBN co-author",
+          "zh": "DBN 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Ruslan Salakhutdinov",
+          "zh": "鲁斯兰·萨拉赫特迪诺夫"
+        },
+        "role": {
+          "en": "DBN co-author",
+          "zh": "DBN 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg",
+        "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg",
+        "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg"
+      ],
+      "videos": [],
+      "assetIds": [
+        "asset-2006-dbn-geoffrey-hinton",
+        "asset-2006-dbn-stacked-rbms",
+        "asset-2006-dbn-wake-finetune"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2006-dbn_geoffrey-hinton.jpg": {
+        "caption": {
+          "zh": "杰弗里·辛顿 肖像",
+          "en": "Geoffrey Hinton portrait"
+        },
+        "subcaption": {
+          "zh": "来自 辛顿 多伦多大学页面的人物图。",
+          "en": "Photo from Hinton's University of Toronto page."
+        },
+        "license": {
+          "zh": "University personal photo page; reuse rights not stated.",
+          "en": "University personal photo page; reuse rights not stated."
+        },
+        "sourceId": "source-geoffrey-hinton-photo-page",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "University personal photo page; reuse rights not stated.",
+            "en": "University personal photo page; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2006-dbn_stacked-rbms.svg": {
+        "caption": {
+          "zh": "堆叠 RBM 预训练",
+          "en": "Stacked RBM pretraining"
+        },
+        "subcaption": {
+          "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Belief Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2006-dbn_wake-finetune.svg": {
+        "caption": {
+          "zh": "预训练后微调",
+          "en": "Pretrain then fine-tune"
+        },
+        "subcaption": {
+          "zh": "深度置信网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Belief Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "dbn",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Neural Computation",
+          "title": {
+            "en": "Fast learning algorithm for deep belief nets",
+            "zh": "深度置信网络快速学习算法"
+          },
+          "description": {
+            "en": "Neural Computation paper record for deep belief nets.",
+            "zh": "深度置信网络 Neural Computation 论文记录。"
+          },
+          "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "source": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "license": {
+            "en": "Reference link only; local visual is redrawn and does not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地视觉图为重绘，不复用出版方图形。"
+          },
+          "usage": {
+            "en": "Source material image / Literature reference",
+            "zh": "原始材料入口 / 文献参考"
+          },
+          "action": {
+            "en": "Open DOI record",
+            "zh": "打开 DOI 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-a-fast-learning-algorithm-for-deep-belief-nets",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《深度信念网络的快速学习算法》",
+            "en": "A Fast Learning Algorithm for Deep Belief Nets"
+          },
+          "url": "https://doi.org/10.1162/neco.2006.18.7.1527",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-reducing-the-dimensionality-of-data-with-neural-networks",
+          "type": {
+            "zh": "出版页面",
+            "en": "Publication page"
+          },
+          "label": {
+            "zh": "Reducing the Dimensionality of Data with Neural Networks",
+            "en": "Reducing the Dimensionality of Data with Neural Networks"
+          },
+          "url": "https://doi.org/10.1126/science.1127647",
+          "purpose": "alternate-access",
+          "reliability": "reference-only",
+          "sourceType": "paper-page"
+        },
+        {
+          "id": "source-geoffrey-hinton-photo-page",
+          "type": {
+            "zh": "个人主页",
+            "en": "Personal homepage"
+          },
+          "label": {
+            "zh": "杰弗里·辛顿个人主页",
+            "en": "Geoffrey Hinton personal homepage"
+          },
+          "url": "https://www.cs.toronto.edu/~hinton/pages/photos.html",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "personal-page"
+        }
+      ],
+      "sourceIds": [
+        "source-a-fast-learning-algorithm-for-deep-belief-nets",
+        "source-reducing-the-dimensionality-of-data-with-neural-networks",
+        "source-geoffrey-hinton-photo-page"
+      ],
+      "claimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "深度置信网络 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Deep Belief Network is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-a-fast-learning-algorithm-for-deep-belief-nets",
+            "source-reducing-the-dimensionality-of-data-with-neural-networks"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>深度置信网络通过展示深层模型可以逐层训练，帮助复兴深度学习。辛顿 及合作者使用受限玻尔兹曼机进行无监督预训练，再对数字识别等任务微调网络。这项工作在 GPU 驱动的深度学习浪潮前，让深层架构重新显得可训练。</p>",
+            "en": "<p>Deep belief networks helped revive deep learning by showing how deep models could be trained layer by layer. Hinton and collaborators used unsupervised pretraining with restricted Boltzmann machines, then fine-tuned the network for tasks such as digit recognition. The work helped make deep architectures feel trainable again before the GPU-driven deep-learning wave.</p>"
+          },
+          "sourceIds": [
+            "source-a-fast-learning-algorithm-for-deep-belief-nets",
+            "source-reducing-the-dimensionality-of-data-with-neural-networks"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "connectionist-revival",
+        "layer-wise-pretraining",
+        "representation-learning"
+      ],
+      "area": {
+        "en": "Deep learning",
+        "zh": "深度学习"
+      },
+      "method": {
+        "en": "Layer-wise unsupervised pretraining",
+        "zh": "逐层无监督预训练"
+      },
+      "artifact": {
+        "en": "Deep belief net training recipe",
+        "zh": "深度置信网络训练方案"
+      },
+      "material": {
+        "en": "Neural Computation paper and University of Toronto materials",
+        "zh": "Neural Computation 论文与多伦多大学资料"
+      },
+      "demo": {
+        "en": "Pretrain stacked RBMs before supervised fine-tuning",
+        "zh": "先预训练堆叠 RBM，再监督微调"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Restricted Boltzmann Machine",
+            "zh": "受限玻尔兹曼机"
+          },
+          "text": {
+            "en": "A two-layer generative model used for pretraining.",
+            "zh": "用于预训练的双层生成模型。"
+          }
+        },
+        {
+          "label": {
+            "en": "Greedy Layer Training",
+            "zh": "贪心逐层训练"
+          },
+          "text": {
+            "en": "Train one layer at a time before tuning the whole model.",
+            "zh": "先一次训练一层，再微调整体模型。"
+          }
+        },
+        {
+          "label": {
+            "en": "Fine-Tuning",
+            "zh": "微调"
+          },
+          "text": {
+            "en": "Supervised training adjusts the pretrained stack for a target task.",
+            "zh": "监督训练把预训练堆栈调整到目标任务。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Back-propagation",
+          "zh": "反向传播"
+        },
+        {
+          "en": "Dropout",
+          "zh": "Dropout"
+        },
+        {
+          "en": "Deep learning",
+          "zh": "深度学习"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Ontario, Canada",
+          "zh": "加拿大安大略省"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Train RBM 1",
+          "zh": "训练 RBM 1"
+        },
+        {
+          "en": "Stack features",
+          "zh": "堆叠特征"
+        },
+        {
+          "en": "Fine-tune labels",
+          "zh": "标签微调"
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "深层神经网络用普通监督训练很难优化。逐层预训练提供了一条实用路线。",
+          "en": "Deep neural networks were hard to optimize with ordinary supervised training. Layer-wise pretraining offered a practical route."
+        },
+        "sourceIds": [
+          "source-a-fast-learning-algorithm-for-deep-belief-nets"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "每一层学习建模上一层的模式，从而为整个深层网络提供良好初始化。 关键机制是逐层无监督预训练，它把资料线索与可见的演示行为连接起来。",
+          "en": "Each layer learns to model patterns in the previous layer, creating a good initialization for the whole deep network. The key mechanism is Layer-wise unsupervised pretraining, which links the source material to the visible demo behavior."
+        },
+        "sourceIds": [
+          "source-a-fast-learning-algorithm-for-deep-belief-nets"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把深度置信网络视为 2012 年之前深度学习复兴中的关键一步。它的长期影响在于证明深层堆栈可以逐层训练，并在大规模 GPU 训练成为主流前重新打开了表示学习研究。",
+          "en": "Experts generally treat deep belief networks as a key step in the pre-2012 revival of deep learning. Their long-term legacy is showing that deep stacks could be trained layer by layer, helping reopen representation-learning research before large-scale GPU training took over."
+        },
+        "sourceIds": [
+          "source-a-fast-learning-algorithm-for-deep-belief-nets"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "2006-dbn-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "什么训练思想让早期深度置信网络变得实用？",
+          "en": "What training idea made early deep belief networks practical?"
+        },
+        "options": [
+          {
+            "zh": "贪心逐层预训练",
+            "en": "Greedy layer-wise pretraining"
+          },
+          {
+            "zh": "一次性国际象棋硬件搜索",
+            "en": "One-shot chess hardware search"
+          },
+          {
+            "zh": "仅框架槽继承",
+            "en": "Frame slot inheritance only"
+          },
+          {
+            "zh": "质谱分子过滤",
+            "en": "Mass-spectrum molecule filtering"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "DBN 逐层训练以获得有用表示，然后再针对任务微调。",
+          "en": "DBNs trained layers one at a time to obtain useful representations before task-specific fine-tuning."
+        },
+        "sourceIds": [
+          "source-a-fast-learning-algorithm-for-deep-belief-nets"
+        ],
+        "assetIds": [
+          "asset-2006-dbn-geoffrey-hinton"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/2006-dbn/event.json",
+      "variantFile": "archive/events/2006-dbn/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Layer-wise unsupervised pretraining\"",
+      "zh": "\"逐层无监督预训练\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Fast learning algorithm for deep belief nets",
+        "zh": "深度置信网络的快速学习算法"
+      },
+      "workAuthors": {
+        "en": "Geoffrey Hinton",
+        "zh": "杰弗里·辛顿"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://doi.org/10.1162/neco.2006.18.7.1527"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Deep learning / Deep Belief Network",
+      "zh": "BenchCouncil AI100：深度学习 / 深度置信网络"
+    },
+    "quoteAttribution": {
+      "en": "<em>Fast learning algorithm for deep belief nets</em>, Geoffrey Hinton",
+      "zh": "《深度置信网络的快速学习算法》, 杰弗里·辛顿"
+    }
+  },
+  {
+    "id": "milestone-deep-learning-2009-imagenet",
+    "archiveEventId": "2009-imagenet",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 90,
+    "year": "2009",
+    "date": "2009",
+    "title": {
+      "zh": "ImageNet",
+      "en": "ImageNet"
+    },
+    "subtitle": {
+      "zh": "深度学习与范式归一",
+      "en": "Deep Learning and Unified Paradigms"
+    },
+    "category": {
+      "zh": "深度学习与范式归一（2006-2017）",
+      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+    },
+    "location": {
+      "name": {
+        "en": "Princeton University, Stanford University, University of Michigan, MIT, UNC Chapel Hill",
+        "zh": "普林斯顿大学、斯坦福大学、密歇根大学、麻省理工学院、北卡罗来纳大学教堂山分校"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        40.3431,
+        -74.6551
+      ]
+    },
+    "description": {
+      "zh": "<p>ImageNet 项目在 2009 年论文中提出以 WordNet 的概念层级组织大规模图像数据库，并通过网络收集与人工标注为每个概念配备大量实例。它把过去相对有限的数据集扩展到数百万张图像和成千上万个类别，使视觉算法能够在更接近真实世界多样性的范围内训练和比较。</p><p>随后建立的 ImageNet 大规模视觉识别挑战提供统一任务、训练集和评测指标，让算法进步能够连续追踪，也让 AlexNet 在 2012 年的突破清晰可见。ImageNet 证明数据规模和公开基准本身可以改变研究方向，同时也促使领域认真面对类别设计、标注偏差、数据许可和社会代表性问题。</p>",
+      "en": "<p>The 2009 ImageNet paper proposed a large image database organized through the concept hierarchy of WordNet, using web collection and human annotation to supply many examples for each concept. It expanded computer-vision data from comparatively limited collections to millions of images across thousands of categories, allowing algorithms to train and be compared over much greater visual diversity.</p><p>The later ImageNet Large Scale Visual Recognition Challenge supplied common tasks, training data, and metrics, making progress continuously measurable and AlexNet's 2012 breakthrough unmistakable. ImageNet demonstrated that dataset scale and a public benchmark could redirect an entire field. It also pushed researchers to confront category design, annotation bias, licensing, and social representation in large datasets.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jia Deng",
+          "zh": "邓嘉"
+        },
+        "role": {
+          "en": "First author of ImageNet paper",
+          "zh": "ImageNet 论文第一作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Li Fei-Fei",
+          "zh": "李飞飞"
+        },
+        "role": {
+          "en": "ImageNet project leader",
+          "zh": "ImageNet 项目主要推动者"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Olga Russakovsky",
+          "zh": "奥尔加·鲁萨科夫斯基"
+        },
+        "role": {
+          "en": "ImageNet co-author",
+          "zh": "ImageNet 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg",
+        "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg",
+        "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg"
+      ],
+      "videos": [],
+      "assetIds": [
+        "asset-2009-imagenet-fei-fei-li",
+        "asset-2009-imagenet-hierarchy",
+        "asset-2009-imagenet-benchmark"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2009-imagenet_fei-fei-li.jpg": {
+        "caption": {
+          "zh": "李飞飞肖像",
+          "en": "Fei-Fei Li portrait"
+        },
+        "subcaption": {
+          "zh": "斯坦福个人资料库 中的李飞飞人物图。",
+          "en": "Stanford Profiles portrait for Fei-Fei Li."
+        },
+        "license": {
+          "zh": "Institution profile photo; rights not stated.",
+          "en": "Institution profile photo; rights not stated."
+        },
+        "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Institution profile photo; rights not stated.",
+            "en": "Institution profile photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_hierarchy.svg": {
+        "caption": {
+          "zh": "WordNet 层级",
+          "en": "WordNet hierarchy"
+        },
+        "subcaption": {
+          "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for ImageNet, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2009-imagenet_benchmark.svg": {
+        "caption": {
+          "zh": "ILSVRC 基准",
+          "en": "ILSVRC benchmark"
+        },
+        "subcaption": {
+          "zh": "ImageNet 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for ImageNet, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-imagenet-a-large-scale-hierarchical-image-database",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "imagenet",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "CVPR / IEEE",
+            "zh": "计算机视觉与模式识别会议 / IEEE"
+          },
+          "title": {
+            "en": "ImageNet paper",
+            "zh": "ImageNet 论文"
+          },
+          "description": {
+            "en": "Primary ImageNet paper; local visuals redraw hierarchy and benchmark signals.",
+            "zh": "ImageNet 原始论文；本地图重画层级和基准信号。"
+          },
+          "url": "https://ieeexplore.ieee.org/document/5206848",
+          "source": "https://ieeexplore.ieee.org/document/5206848",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not reuse publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复用出版方图形。"
+          },
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open IEEE record",
+            "zh": "打开 IEEE 记录"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-imagenet-project-website",
+          "type": {
+            "zh": "项目页面",
+            "en": "Project page"
+          },
+          "label": {
+            "zh": "ImageNet project website",
+            "en": "ImageNet project website"
+          },
+          "url": "https://www.image-net.org/",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-stanford-profile-fei-fei-li",
+          "type": {
+            "zh": "人物资料",
+            "en": "Profile"
+          },
+          "label": {
+            "zh": "斯坦福大学 Profile: Fei-Fei Li",
+            "en": "Stanford Profile: Fei-Fei Li"
+          },
+          "url": "https://profiles.stanford.edu/fei-fei-li",
+          "purpose": "biography",
+          "reliability": "reference-only",
+          "sourceType": "profile"
+        },
+        {
+          "id": "source-imagenet-a-large-scale-hierarchical-image-database",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《ImageNet：大规模层级图像数据库》",
+            "en": "ImageNet: A Large-Scale Hierarchical Image Database"
+          },
+          "url": "https://ieeexplore.ieee.org/document/5206848",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-imagenet-project-website",
+        "source-stanford-profile-fei-fei-li",
+        "source-imagenet-a-large-scale-hierarchical-image-database"
+      ],
+      "claimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "ImageNet 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "ImageNet is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-imagenet-a-large-scale-hierarchical-image-database",
+            "source-imagenet-project-website"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>ImageNet 通过把规模变成研究工具，改变了计算机视觉。它借助 WordNet 层级组织数百万张标注图像，并支撑 ImageNet 大规模视觉识别挑战。这个数据集和基准帮助 2012 年深度卷积网络的能力被清晰地看见。</p>",
+            "en": "<p>ImageNet changed computer vision by making scale a research instrument. It organized millions of labeled images through the WordNet hierarchy and powered the ImageNet Large Scale Visual Recognition Challenge. The dataset and benchmark helped reveal the power of deep convolutional networks in 2012.</p>"
+          },
+          "sourceIds": [
+            "source-imagenet-a-large-scale-hierarchical-image-database",
+            "source-imagenet-project-website"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "data-scale",
+        "benchmark-infrastructure",
+        "deep-learning-enabler"
+      ],
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Large-scale hierarchical image annotation",
+        "zh": "大规模层级图像标注"
+      },
+      "artifact": {
+        "en": "ImageNet dataset and ILSVRC benchmark",
+        "zh": "ImageNet 数据集与 ILSVRC 基准"
+      },
+      "material": {
+        "en": "CVPR paper, project site, and Stanford profile",
+        "zh": "计算机视觉与模式识别会议 论文、项目网站与 斯坦福大学 人物页"
+      },
+      "demo": {
+        "en": "Labels move from WordNet hierarchy to benchmark leaderboard",
+        "zh": "标签从 WordNet 层级走向基准排行榜"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Synset",
+            "zh": "Synset"
+          },
+          "text": {
+            "en": "A WordNet concept anchors each visual category.",
+            "zh": "每个视觉类别由一个 WordNet 概念锚定。"
+          }
+        },
+        {
+          "label": {
+            "en": "Scale",
+            "zh": "规模"
+          },
+          "text": {
+            "en": "Millions of labeled images changed what training and evaluation could measure.",
+            "zh": "数百万标注图像改变了训练和评测能衡量的东西。"
+          }
+        },
+        {
+          "label": {
+            "en": "Benchmark",
+            "zh": "基准"
+          },
+          "text": {
+            "en": "ILSVRC turned progress into a shared annual comparison.",
+            "zh": "ILSVRC 把进展变成共同年度比较。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Computer vision",
+          "zh": "计算机视觉"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Synset",
+          "zh": "Synset"
+        },
+        {
+          "en": "Scale",
+          "zh": "规模"
+        },
+        {
+          "en": "Benchmark",
+          "zh": "基准"
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "ImageNet 之前，视觉数据集更小且常常领域化。ImageNet 把通用目标识别变成数据规模挑战。",
+          "en": "Before ImageNet, vision datasets were smaller and often specialized. ImageNet made general object recognition a data-scale challenge."
+        },
+        "sourceIds": [
+          "source-imagenet-a-large-scale-hierarchical-image-database"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "它把图像标签连接到 WordNet synsets，使数据集组织本身也成为科学贡献。 关键机制是大规模层级图像标注，它把资料线索与可见的演示行为连接起来。",
+          "en": "Its hierarchy connected image labels to WordNet synsets, making dataset organization part of the scientific contribution. The key mechanism is Large-scale hierarchical image annotation, which links the source material to the visible demo behavior."
+        },
+        "sourceIds": [
+          "source-imagenet-a-large-scale-hierarchical-image-database"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 ImageNet 同时视为决定性基准和基准局限的提醒。它的长期影响在于展示了数据规模、标签、排行榜和算力压力如何重塑整个研究领域。",
+          "en": "Experts generally treat ImageNet as both a decisive benchmark and a reminder of benchmark limits. Its long-term legacy is showing how dataset scale, labels, leaderboards, and compute pressure can redirect an entire research field."
+        },
+        "sourceIds": [
+          "source-imagenet-a-large-scale-hierarchical-image-database"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "2009-imagenet-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "ImageNet 为什么对视觉深度学习如此重要？",
+          "en": "Why was ImageNet so important for deep learning in vision?"
+        },
+        "options": [
+          {
+            "zh": "它提供了大型共享标注数据集和基准",
+            "en": "It provided a large shared labeled dataset and benchmark"
+          },
+          {
+            "zh": "它用 Prolog 替换了所有神经网络",
+            "en": "It replaced every neural network with Prolog"
+          },
+          {
+            "zh": "它用归结证明所有子句",
+            "en": "It proved all clauses by resolution"
+          },
+          {
+            "zh": "它只优化词向量",
+            "en": "It only optimized word vectors"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "ImageNet 给研究者提供共同的大规模训练和评测环境，使模型进展更容易比较。",
+          "en": "ImageNet gave researchers a common large-scale training and evaluation setting, making model progress easier to compare."
+        },
+        "sourceIds": [
+          "source-imagenet-a-large-scale-hierarchical-image-database"
+        ],
+        "assetIds": [
+          "asset-2009-imagenet-fei-fei-li"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/2009-imagenet/event.json",
+      "variantFile": "archive/events/2009-imagenet/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"large-scale hierarchical image database\"",
+      "zh": "\"大规模层级图像数据库\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "ImageNet: A Large-Scale Hierarchical Image Database",
+        "zh": "ImageNet：大规模层级图像数据库"
+      },
+      "workAuthors": {
+        "en": "Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+        "zh": "邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://ieeexplore.ieee.org/document/5206848"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Neural Network / ImageNet",
+      "zh": "BenchCouncil AI100：神经网络 / ImageNet"
+    },
+    "quoteAttribution": {
+      "en": "<em>ImageNet: A Large-Scale Hierarchical Image Database</em>, Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, Li Fei-Fei, CVPR, 2009",
+      "zh": "《ImageNet：大规模层级图像数据库》, 邓佳、董伟、理查德·索彻、李丽佳、李凯、李飞飞, 计算机视觉与模式识别会议, 2009"
+    }
+  },
+  {
+    "id": "milestone-2012-alexnet",
+    "archiveEventId": "2012-alexnet",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 100,
+    "year": 2012,
+    "date": "2012",
+    "title": {
+      "zh": "AlexNet 与 ImageNet 突破",
+      "en": "AlexNet and the ImageNet Breakthrough"
+    },
+    "subtitle": {
+      "zh": "深度学习与范式归一",
+      "en": "Deep Learning and Unified Paradigms"
+    },
+    "category": {
+      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
+    },
+    "location": {
+      "name": {
+        "en": "University of Toronto",
+        "zh": "多伦多大学"
+      },
+      "country": {
+        "en": "Toronto, Canada",
+        "zh": "加拿大多伦多"
+      },
+      "coordinates": [
+        43.6629,
+        -79.3957
+      ]
+    },
+    "description": {
+      "zh": "<p>2012 年，亚历克斯·克里泽夫斯基、伊利亚·苏茨克维和杰弗里·辛顿用 AlexNet 赢得 ImageNet 大规模视觉识别挑战赛。论文报告的 top-5 测试错误率为 15.3%，明显低于第二名的 26.2%，让深度卷积网络的优势第一次在统一的大型基准上变得无法忽视。</p><p>AlexNet 在约 120 万张训练图像上训练约 6000 万个参数，并结合 GPU、ReLU、数据增强和 dropout。它的突破并非来自单一新公式，而是把算法、数据、算力和工程实现组织成可扩展系统。此后，计算机视觉迅速从手工特征转向端到端表示学习，AlexNet 也成为深度学习复兴的标志性节点。</p>",
+      "en": "<p>In 2012, Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton won the ImageNet Large Scale Visual Recognition Challenge with AlexNet. Their paper reported a 15.3 percent top-5 test error, far below the 26.2 percent achieved by the second-best entry, making the advantage of deep convolutional networks impossible to ignore on a common large-scale benchmark.</p><p>AlexNet trained roughly 60 million parameters on about 1.2 million images and combined GPUs, ReLU activations, data augmentation, and dropout. Its breakthrough was not one isolated formula, but a scalable system joining algorithms, data, compute, and implementation. Computer vision rapidly shifted from hand-engineered features toward end-to-end representation learning, making AlexNet a defining event in the deep-learning revival.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Alex Krizhevsky",
+          "zh": "亚历克斯·克里热夫斯基"
+        },
+        "role": {
+          "en": "AlexNet lead author",
+          "zh": "AlexNet 主要作者"
+        },
+        "avatar": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Ilya Sutskever",
+          "zh": "伊利亚·苏茨克维"
+        },
+        "role": {
+          "en": "AlexNet co-author",
+          "zh": "AlexNet 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Geoffrey Hinton",
+          "zh": "杰弗里·辛顿"
+        },
+        "role": {
+          "en": "AlexNet co-author and advisor",
+          "zh": "AlexNet 共同作者与导师"
+        },
+        "avatar": "resources/images/figures/geoffrey-hinton.jpg",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+        "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
+        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png"
+      ],
+      "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+      "overviewImageAssetId": "asset-alexnet-portrait",
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+          "url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+          "title": "2012年ImageNet：引爆人工智能革命的一年",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ],
+      "assetIds": [
+        "asset-alexnet-portrait",
+        "asset-alexnet-architecture",
+        "asset-alexnet-deep-portrait",
+        "asset-alexnet-architecture-detail"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png": {
+        "caption": {
+          "zh": "亚历克斯·克里热夫斯基肖像",
+          "en": "Alex Krizhevsky portrait"
+        },
+        "subcaption": {
+          "zh": "AlexNet 主要作者",
+          "en": "AlexNet lead author"
+        },
+        "sourceName": {
+          "zh": "用户提供照片",
+          "en": "User-provided photograph"
+        },
+        "license": {
+          "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+          "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+        },
+        "usage": {
+          "zh": "用于 AlexNet 事件首图、首页缩略图与亚历克斯·克里热夫斯基人物头像。",
+          "en": "Used as the AlexNet lead image, homepage thumbnail, and Alex Krizhevsky figure avatar."
+        },
+        "sourceId": "source-alex-krizhevsky-user-provided-portrait",
+        "rights": {
+          "status": "user-provided",
+          "license": {
+            "zh": "用户提供用于本项目展览展示；若对外再分发，请复核原始授权范围。",
+            "en": "Provided by the user for exhibition use in this project; confirm the original rights scope before further redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png": {
+        "caption": {
+          "zh": "ImageNet 识别错误率演进图",
+          "en": "ImageNet recognition error-rate timeline"
+        },
+        "subcaption": {
+          "zh": "比较 AlexNet 前后代表性视觉模型的错误率与网络深度。",
+          "en": "Compares error rates and network depths before and after AlexNet."
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
+        "caption": {
+          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
+          "en": "Computer History Museum AlexNet source-code release page"
+        },
+        "subcaption": {
+          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
+          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
+        },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep attribution."
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep attribution."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
+        "caption": {
+          "zh": "AlexNet、VGG 与 GoogLeNet 架构对比",
+          "en": "AlexNet, VGG, and GoogLeNet architecture comparison"
+        },
+        "subcaption": {
+          "zh": "对比三种卷积网络的层级结构与深度。",
+          "en": "Compares the layer structures and depths of three convolutional networks."
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "visual": "alexnet",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "NeurIPS",
+            "zh": "NeurIPS"
+          },
+          "title": {
+            "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+            "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+          },
+          "description": {
+            "en": "Paper record for the AlexNet breakthrough.",
+            "zh": "AlexNet 突破性工作的论文记录。"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "source": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open article",
+            "zh": "打开文章"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-alexnet-neurips-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《用深度卷积神经网络进行 ImageNet 分类》",
+            "en": "ImageNet Classification with Deep Convolutional Neural Networks"
+          },
+          "url": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-alexnet-neurips-pdf",
+          "type": {
+            "zh": "论文 PDF",
+            "en": "Paper PDF"
+          },
+          "label": {
+            "zh": "NeurIPS 完整论文 PDF",
+            "en": "NeurIPS full paper PDF"
+          },
+          "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "sourceType": "paper-file"
+        },
+        {
+          "id": "source-imagenet-challenge",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "ImageNet 大规模视觉识别挑战赛",
+            "en": "ImageNet Large Scale Visual Recognition Challenge"
+          },
+          "url": "https://www.image-net.org/challenges/LSVRC/index.php",
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-alexnet-overview",
+          "type": {
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
+          },
+          "label": {
+            "zh": "AlexNet 概览",
+            "en": "AlexNet overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/AlexNet",
+          "purpose": "background",
+          "reliability": "reference-only",
+          "sourceType": "encyclopedia-entry"
+        },
+        {
+          "id": "source-alex-krizhevsky-user-provided-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "亚历克斯·克里热夫斯基肖像（用户提供）",
+            "en": "Alex Krizhevsky portrait (user provided)"
+          },
+          "url": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-alexnet-neurips-paper",
+        "source-alexnet-neurips-pdf",
+        "source-imagenet-challenge",
+        "source-alexnet-overview",
+        "source-alex-krizhevsky-user-provided-portrait"
+      ],
+      "claimIds": [
+        "claim-imagenet-breakthrough",
+        "claim-scale-recipe"
+      ],
+      "claims": [
+        {
+          "id": "claim-imagenet-breakthrough",
+          "importance": "core",
+          "text": {
+            "zh": "AlexNet 在 ImageNet 2012 中以深度卷积网络显著提升图像分类结果。",
+            "en": "AlexNet substantially improved image classification results with a deep convolutional network in ImageNet 2012."
+          },
+          "sourceIds": [
+            "source-alexnet-neurips-paper",
+            "source-imagenet-challenge"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-scale-recipe",
+          "importance": "core",
+          "text": {
+            "zh": "AlexNet 的突破结合了 GPU 训练、ReLU、数据增强和 dropout 等规模化训练要素。",
+            "en": "AlexNet combined scaled training ingredients including GPUs, ReLU, data augmentation, and dropout."
+          },
+          "sourceIds": [
+            "source-alexnet-neurips-paper"
+          ],
+          "status": "verified"
+        }
+      ],
+      "emphasis": [
+        "deep-learning-breakthrough",
+        "computer-vision",
+        "scaled-training"
+      ],
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "GPU-trained deep convolutional network",
+        "zh": "GPU 训练的深度卷积网络"
+      },
+      "artifact": {
+        "en": "ImageNet-winning CNN",
+        "zh": "赢得 ImageNet 的卷积网络"
+      },
+      "material": {
+        "en": "NeurIPS paper",
+        "zh": "NeurIPS 论文"
+      },
+      "demo": {
+        "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
+        "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "GPU Scale",
+            "zh": "GPU 规模化"
+          },
+          "text": {
+            "en": "Parallel GPU training made larger CNNs practical.",
+            "zh": "并行 GPU 训练让更大的 CNN 变得可行。"
+          }
+        },
+        {
+          "label": {
+            "en": "ImageNet Breakthrough",
+            "zh": "ImageNet 突破"
+          },
+          "text": {
+            "en": "The model sharply reduced classification error on ILSVRC.",
+            "zh": "该模型大幅降低了 ILSVRC 分类错误率。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "ImageNet",
+          "zh": "ImageNet"
+        },
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Images",
+          "zh": "图像"
+        },
+        {
+          "en": "Deep CNN",
+          "zh": "深度 CNN"
+        },
+        {
+          "en": "Classes",
+          "zh": "类别"
+        }
+      ],
+      "demoImage": "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "NeurIPS paper",
+            "zh": "NeurIPS 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "A deep CNN transforms pixels through learned convolutional layers into object classes.",
+            "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。"
+          }
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "AlexNet made deep convolutional networks the center of modern computer vision by winning ImageNet 2012 with a large margin. GPU training, ReLU activations, data augmentation, and dropout made scale visible.",
+          "zh": "AlexNet 以巨大优势赢得 ImageNet 2012，使深度卷积网络成为现代计算机视觉的中心。GPU 训练、ReLU 激活、数据增强和 dropout 共同展示了规模化训练的力量。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "A deep CNN transforms pixels through learned convolutional layers into object classes. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "深度 CNN 通过学习得到的卷积层把像素转换为物体类别。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat AlexNet as the breakthrough that made deep learning unavoidable in computer vision. Its long-term legacy is the scale recipe of data, GPUs, deep CNNs, ReLU, augmentation, and regularization that reshaped vision research.",
+          "zh": "专家通常把 AlexNet 视为让深度学习在计算机视觉中无法被忽视的突破。它的长期影响在于数据、GPU、深度 CNN、ReLU、数据增强和正则化组成的规模化配方重塑了视觉研究。"
+        }
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/2012-alexnet/event.json",
+      "variantFile": "archive/events/2012-alexnet/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2012%E5%B9%B4ImageNet%EF%BC%9A%E5%BC%95%E7%88%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E7%9A%84%E4%B8%80%E5%B9%B4.mp4",
+    "quote": {
+      "en": "\"AlexNet showed that a large deep convolutional network, trained on ImageNet with GPUs and modern regularization, could dramatically improve large-scale visual recognition.\"",
+      "zh": "\"AlexNet 证明，利用 GPU、大规模 ImageNet 数据和现代正则化方法训练的大型深度卷积网络，可以显著提升大规模视觉识别效果。\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "zh": "使用深度卷积神经网络进行 ImageNet 分类"
+      },
+      "workAuthors": {
+        "en": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
+        "zh": "亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
+    },
+    "quotePage": {
+      "en": "NeurIPS 2012 paper: ImageNet Classification with Deep Convolutional Neural Networks",
+      "zh": "NeurIPS 2012 论文《使用深度卷积神经网络进行 ImageNet 分类》"
+    },
+    "quoteAttribution": {
+      "en": "<em>ImageNet Classification with Deep Convolutional Neural Networks</em>, Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton, NeurIPS, 2012",
+      "zh": "《使用深度卷积神经网络进行 ImageNet 分类》, 亚历克斯·克里热夫斯基、伊利亚·苏茨克维、杰弗里·辛顿，NeurIPS，2012"
+    }
+  },
+  {
+    "id": "milestone-deep-learning-2014-vgg",
+    "archiveEventId": "2014-vgg",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 110,
+    "year": "2014",
+    "date": "2014",
+    "title": {
+      "zh": "VGG 网络",
+      "en": "VGG Networks"
+    },
+    "subtitle": {
+      "zh": "深度学习与范式归一",
+      "en": "Deep Learning and Unified Paradigms"
+    },
+    "category": {
+      "zh": "深度学习与范式归一（2006-2017）",
+      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+    },
+    "location": {
+      "name": {
+        "en": "University of Oxford",
+        "zh": "牛津大学"
+      },
+      "country": {
+        "en": "United Kingdom",
+        "zh": "英国"
+      },
+      "coordinates": [
+        51.7548,
+        -1.2544
+      ]
+    },
+    "description": {
+      "zh": "<p>西莫尼扬和齐瑟曼在 2014 年研究卷积网络深度对大规模图像识别的影响。VGG 用规则化方式反复堆叠 3×3 小卷积与池化层，构成 16 层和 19 层等配置；多个小卷积在扩大有效感受野的同时，引入更多非线性，又让整体架构保持一致。</p><p>VGG 在 ImageNet 评测中证明了系统增加深度的价值，其清晰结构和公开模型也使它成为广泛使用的特征提取器与迁移学习基线。它的参数量和计算成本较高，后来被残差网络等更高效架构取代，但“小卷积、深堆叠、统一模块”的设计思想持续影响视觉网络。</p>",
+      "en": "<p>Karen Simonyan and Andrew Zisserman studied the effect of convolutional-network depth on large-scale image recognition in 2014. VGG repeatedly stacked small 3×3 convolutions and pooling layers in a regular pattern, producing configurations such as VGG-16 and VGG-19. Several small convolutions enlarged the effective receptive field while adding nonlinearities and keeping the architecture uniform.</p><p>VGG's ImageNet results demonstrated the value of systematically increasing depth, while its clear structure and released models made it a widely used feature extractor and transfer-learning baseline. Its parameter count and computational cost are high, and more efficient residual architectures later displaced it at the frontier. The principles of small filters, deep stacks, and reusable modules nevertheless remained influential.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Karen Simonyan",
+          "zh": "卡伦·西莫尼扬"
+        },
+        "role": {
+          "en": "Co-author of the VGG paper",
+          "zh": "VGG 论文共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Andrew Zisserman",
+          "zh": "安德鲁·齐瑟曼"
+        },
+        "role": {
+          "en": "Co-author and Visual Geometry Group lead",
+          "zh": "共同作者，视觉几何组负责人"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg",
+        "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg",
+        "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg"
+      ],
+      "videos": [],
+      "assetIds": [
+        "asset-2014-vgg-andrew-zisserman",
+        "asset-2014-vgg-depth-configurations",
+        "asset-2014-vgg-receptive-field"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2014-vgg_andrew-zisserman.jpg": {
+        "caption": {
+          "zh": "安德鲁·齐瑟曼 肖像",
+          "en": "Andrew Zisserman portrait"
+        },
+        "subcaption": {
+          "zh": "来自 ELLIS Oxford / 牛津大学页面的人物照片。",
+          "en": "Profile photo from the ELLIS Oxford / University of Oxford page."
+        },
+        "license": {
+          "zh": "Institution profile photo; rights not stated.",
+          "en": "Institution profile photo; rights not stated."
+        },
+        "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Institution profile photo; rights not stated.",
+            "en": "Institution profile photo; rights not stated."
+          }
+        },
+        "role": "source-card",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-vgg_depth-configurations.svg": {
+        "caption": {
+          "zh": "VGG 深度配置对比",
+          "en": "VGG depth comparison"
+        },
+        "subcaption": {
+          "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for VGG Networks, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2014-vgg_receptive-field.svg": {
+        "caption": {
+          "zh": "3x3 感受野累积",
+          "en": "3x3 receptive-field build-up"
+        },
+        "subcaption": {
+          "zh": "VGG 网络 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for VGG Networks, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "vgg",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": "Oxford VGG",
+          "title": {
+            "en": "Very Deep ConvNets project",
+            "zh": "超深卷积网络项目"
+          },
+          "description": {
+            "en": "Official VGG project page with model release notes and source material.",
+            "zh": "VGG 官方项目页，包含模型发布说明和相关资料。"
+          },
+          "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "source": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open project page",
+            "zh": "打开项目页面"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-oxford-vgg-very-deep-convnets",
+          "type": {
+            "zh": "项目页面",
+            "en": "Project page"
+          },
+          "label": {
+            "zh": "Oxford VGG Very Deep ConvNets",
+            "en": "Oxford VGG Very Deep ConvNets"
+          },
+          "url": "https://www.robots.ox.ac.uk/~vgg/research/very_deep/",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "project-page"
+        },
+        {
+          "id": "source-torchvision-vgg-model-family",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model documentation"
+          },
+          "label": {
+            "zh": "TorchVision VGG 模型系列",
+            "en": "TorchVision VGG model family"
+          },
+          "url": "https://pytorch.org/vision/stable/models/vgg.html",
+          "purpose": "implementation",
+          "reliability": "reference-only",
+          "sourceType": "documentation"
+        },
+        {
+          "id": "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《用于大规模图像识别的超深卷积网络》",
+            "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
+          },
+          "url": "https://arxiv.org/abs/1409.1556",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-oxford-vgg-very-deep-convnets",
+        "source-torchvision-vgg-model-family",
+        "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+      ],
+      "claimIds": [
+        "claim-ai100-achievement",
+        "claim-method-artifact"
+      ],
+      "claims": [
+        {
+          "id": "claim-ai100-achievement",
+          "importance": "core",
+          "text": {
+            "zh": "VGG 网络 是 BenchCouncil AI100 叙事中的一个 AI 历史成就节点。",
+            "en": "VGG Networks is an AI history achievement node in the BenchCouncil AI100 storyline."
+          },
+          "sourceIds": [
+            "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+            "source-oxford-vgg-very-deep-convnets"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-method-artifact",
+          "importance": "context",
+          "text": {
+            "zh": "VGG 网络 的技术线索包括「由 3x3 卷积堆叠出的很深网络」，代表性产物是「VGG-16 与 VGG-19 架构」。",
+            "en": "VGG Networks is described through the method \"Very deep stacks of 3x3 convolutions\" and the artifact \"VGG-16 and VGG-19 architectures\"."
+          },
+          "sourceIds": [
+            "source-very-deep-convolutional-networks-for-large-scale-image-recognition",
+            "source-oxford-vgg-very-deep-convnets"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "computer-vision",
+        "network-depth",
+        "architecture-lineage"
+      ],
+      "area": {
+        "en": "Computer Vision",
+        "zh": "计算机视觉"
+      },
+      "method": {
+        "en": "Very deep stacks of 3x3 convolutions",
+        "zh": "由 3x3 卷积堆叠出的很深网络"
+      },
+      "artifact": {
+        "en": "VGG-16 and VGG-19 architectures",
+        "zh": "VGG-16 与 VGG-19 架构"
+      },
+      "material": {
+        "en": "ImageNet recognition model",
+        "zh": "ImageNet 识别模型"
+      },
+      "demo": {
+        "en": "Depth through small filters",
+        "zh": "用小卷积核堆叠深度"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "3x3 Filters",
+            "zh": "3x3 卷积核"
+          },
+          "text": {
+            "en": "VGG repeatedly uses small filters, letting several layers build a larger effective receptive field while adding nonlinearities.",
+            "zh": "VGG 反复使用小卷积核，让多层组合出更大的有效感受野，同时插入更多非线性。"
+          }
+        },
+        {
+          "label": {
+            "en": "Network Depth",
+            "zh": "网络深度"
+          },
+          "text": {
+            "en": "The paper systematically increased depth and showed that deeper convolutional stacks improved large-scale recognition.",
+            "zh": "论文系统增加网络深度，并展示更深卷积堆叠能提升大规模识别。"
+          }
+        },
+        {
+          "label": {
+            "en": "Transfer Features",
+            "zh": "迁移特征"
+          },
+          "text": {
+            "en": "Pretrained VGG features became a common starting point for detection, segmentation, style transfer, and visualization.",
+            "zh": "预训练 VGG 特征后来成为检测、分割、风格迁移和可视化的常用起点。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "GoogLeNet / Inception",
+          "zh": "GoogLeNet / Inception"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United Kingdom",
+          "zh": "英国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "3x3 filters",
+          "zh": "3x3 卷积核"
+        },
+        {
+          "en": "16-19 weight layers",
+          "zh": "16-19 个权重层"
+        },
+        {
+          "en": "Released models",
+          "zh": "公开模型"
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "AlexNet 之后，研究者知道大型 CNN 能赢得 ImageNet，但架构设计空间仍然混乱。VGG 追问：如果谨慎增加深度，一个简单同质化设计能走多远？",
+          "en": "After AlexNet, the field knew that large CNNs could win ImageNet, but the design space was still messy. VGG asked how far a simple homogeneous design could go if depth was increased carefully."
+        },
+        "sourceIds": [
+          "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "VGG 不混用大量卷积核尺寸，而是按规则堆叠小卷积。网络因此变深，同时架构仍保持统一。",
+          "en": "Instead of mixing many filter sizes, VGG stacks small convolutions in a regular pattern. The network becomes deeper without turning the architecture into a collection of special cases."
+        },
+        "sourceIds": [
+          "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 VGG 视为重要参照架构，而不是最先进的部署选择。它的长期影响在于清晰性：即使新模型更高效，它仍适合讲解网络深度、预训练视觉特征和基线比较。",
+          "en": "Experts generally treat VGG as an important reference architecture, not a state-of-the-art deployment choice. Its long-term legacy is clarity: it still teaches depth, pretrained visual features, and baseline comparison even though newer models are more efficient."
+        },
+        "sourceIds": [
+          "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "quiz-2014-vgg-ai100",
+        "storylineId": "bench-council-ai100",
+        "question": {
+          "zh": "VGG 最著名的架构习惯是什么？",
+          "en": "What architectural habit is VGG best remembered for?"
+        },
+        "options": [
+          {
+            "zh": "堆叠大量小型 3x3 卷积层",
+            "en": "Stacking many small 3x3 convolutional layers"
+          },
+          {
+            "zh": "完全不使用卷积",
+            "en": "Using no convolution at all"
+          },
+          {
+            "zh": "只把图像换成文本 token",
+            "en": "Replacing images with text tokens only"
+          },
+          {
+            "zh": "训练单个决策树桩",
+            "en": "Training a single decision stump"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "VGG 把小卷积核的规则堆叠做成了强大且可复用的视觉架构。",
+          "en": "VGG made a very regular stack of small convolutions a strong and reusable computer-vision architecture."
+        },
+        "sourceIds": [
+          "source-very-deep-convolutional-networks-for-large-scale-image-recognition"
+        ],
+        "assetIds": [
+          "asset-2014-vgg-andrew-zisserman"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/2014-vgg/event.json",
+      "variantFile": "archive/events/2014-vgg/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"very deep convolutional networks\"",
+      "zh": "\"非常深的卷积网络\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+        "zh": "用于大规模图像识别的超深卷积网络"
+      },
+      "workAuthors": {
+        "en": "Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+        "zh": "卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://arxiv.org/abs/1409.1556"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Computer Vision / VGG",
+      "zh": "BenchCouncil AI100：计算机视觉 / VGG 网络"
+    },
+    "quoteAttribution": {
+      "en": "<em>Very Deep Convolutional Networks for Large-Scale Image Recognition</em>, Karen Simonyan and Andrew Zisserman, International Conference on Learning Representations, 2015",
+      "zh": "《用于大规模图像识别的超深卷积网络》, 卡伦·西莫尼扬、安德鲁·齐瑟曼, 国际学习表征会议, 2015"
+    }
+  },
+  {
+    "id": "milestone-deep-learning-2015-googlenet-inception",
+    "archiveEventId": "2015-googlenet-inception",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 120,
+    "year": "2014-2015",
+    "date": "2014-2015",
+    "title": {
+      "zh": "GoogLeNet / Inception",
+      "en": "GoogLeNet / Inception"
+    },
+    "subtitle": {
+      "zh": "深度学习与范式归一",
+      "en": "Deep Learning and Unified Paradigms"
+    },
+    "category": {
+      "zh": "深度学习与范式归一（2006-2017）",
+      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+    },
+    "location": {
+      "name": {
+        "en": "Google",
+        "zh": "Google"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "zh": "<p>GoogLeNet 的 Inception 架构表明，加深网络不必只沿单一路径堆叠层。每个 Inception 模块并行使用不同尺寸的卷积和池化，让网络同时观察多种感受野，再拼接各分支输出；1×1 卷积先压缩通道，使这种多分支计算保持可承受。</p><p>该系统赢得 2014 年 ImageNet 挑战赛，并用全局平均池化等设计减少参数规模。Inception 把表示能力与计算预算作为同一个架构问题处理，影响了后续瓶颈层、多分支模块和高效网络设计。它也说明 CNN 的进步不仅来自“更深”，还来自如何组织每层内部的计算路径。</p>",
+      "en": "<p>GoogLeNet's Inception architecture showed that increasing depth did not require stacking layers along only one path. Each Inception module applies different convolution sizes and pooling in parallel, allowing the network to examine several receptive-field scales before concatenating the branch outputs. 1×1 convolutions reduce channel dimensions so this multi-branch computation remains affordable.</p><p>The system won the 2014 ImageNet challenge and used choices such as global average pooling to limit parameter growth. Inception treated representational power and computational budget as one architectural problem, influencing later bottleneck layers, multi-branch modules, and efficient network design. It demonstrated that CNN progress depended not only on becoming deeper, but also on organizing computation inside each block.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Christian Szegedy",
+          "zh": "克里斯蒂安·塞格迪"
+        },
+        "role": {
+          "en": "Lead author of the GoogLeNet paper",
+          "zh": "GoogLeNet 论文第一作者"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Vincent Vanhoucke",
+          "zh": "文森特·范霍克"
+        },
+        "role": {
+          "en": "GooleNet (Inception) co-author",
+          "zh": "GooleNet (Inception) 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Google research team",
+          "zh": "谷歌 研究团队"
+        },
+        "role": {
+          "en": "Developed the Inception architecture",
+          "zh": "开发 Inception 架构"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg",
+        "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg",
+        "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg"
+      ],
+      "videos": [],
+      "assetIds": [
+        "asset-2015-googlenet-inception-christian-szegedy",
+        "asset-2015-googlenet-inception-parallel-branches",
+        "asset-2015-googlenet-inception-bottleneck"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2015-googlenet-inception_christian-szegedy.jpg": {
+        "caption": {
+          "zh": "克里斯蒂安·塞格迪 节目人物图",
+          "en": "Christian Szegedy episode portrait"
+        },
+        "subcaption": {
+          "zh": "TWIML 的 克里斯蒂安·塞格迪 节目封面；Szegedy 是 GoogLeNet/Inception 论文第一作者。",
+          "en": "TWIML episode art for Christian Szegedy, first author of the GoogLeNet/Inception paper."
+        },
+        "license": {
+          "zh": "Podcast episode artwork; rights not stated.",
+          "en": "Podcast episode artwork; rights not stated."
+        },
+        "sourceId": "source-going-deeper-with-convolutions",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Podcast episode artwork; rights not stated.",
+            "en": "Podcast episode artwork; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_parallel-branches.svg": {
+        "caption": {
+          "zh": "多分支 Inception 模块",
+          "en": "Multi-branch Inception module"
+        },
+        "subcaption": {
+          "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-going-deeper-with-convolutions",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-googlenet-inception_bottleneck.svg": {
+        "caption": {
+          "zh": "1x1 瓶颈降维",
+          "en": "1x1 bottleneck reduction"
+        },
+        "subcaption": {
+          "zh": "GoogLeNet / Inception 的独立本地重画，依据相关来源材料制作。",
+          "en": "Distinct local redraw for GoogLeNet / Inception, based on the related source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-going-deeper-with-convolutions",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "inception",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "CVF Open Access",
+            "zh": "CVF 开放访问"
+          },
+          "title": {
+            "en": "Going Deeper with Convolutions",
+            "zh": "用卷积走得更深"
+          },
+          "description": {
+            "en": "Open-access CVPR page for GoogLeNet and the Inception block.",
+            "zh": "CVPR 开放访问页面，介绍 GoogLeNet 与 Inception 模块。"
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "source": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "license": {
+            "en": "Reference link only; local images are redrawn and do not copy publisher figures.",
+            "zh": "仅作为参考链接；本地图片为重绘，不复制出版方图形。"
+          },
+          "usage": {
+            "en": "Literature reference link",
+            "zh": "文献参考链接"
+          },
+          "action": {
+            "en": "Open CVF paper",
+            "zh": "打开 CVF 论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-torchvision-googlenet",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model documentation"
+          },
+          "label": {
+            "zh": "TorchVision GoogLeNet",
+            "en": "TorchVision GoogLeNet"
+          },
+          "url": "https://pytorch.org/vision/stable/models/googlenet.html",
+          "purpose": "implementation",
+          "reliability": "reference-only",
+          "sourceType": "documentation"
+        },
+        {
+          "id": "source-tensorflow-keras-inceptionv3",
+          "type": {
+            "zh": "模型文档",
+            "en": "Model documentation"
+          },
+          "label": {
+            "zh": "TensorFlow Keras InceptionV3",
+            "en": "TensorFlow Keras InceptionV3"
+          },
+          "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications/InceptionV3",
+          "purpose": "implementation",
+          "reliability": "reference-only",
+          "sourceType": "documentation"
+        },
+        {
+          "id": "source-going-deeper-with-convolutions",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《用卷积走得更深》",
+            "en": "Going Deeper with Convolutions"
+          },
+          "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-torchvision-googlenet",
+        "source-tensorflow-keras-inceptionv3",
+        "source-going-deeper-with-convolutions"
+      ],
+      "claimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "GoogLeNet / Inception 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "GoogLeNet / Inception is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-going-deeper-with-convolutions",
+            "source-torchvision-googlenet"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>GoogLeNet 证明“深”不一定意味着简单串联层。它的 Inception 模块并行运行多种滤波器尺寸，再拼接输出，并用瓶颈层控制计算量。该架构赢得 ImageNet 2014，并影响了后来的高效模块化 CNN 设计。</p>",
+            "en": "<p>GoogLeNet showed that depth did not have to mean a simple chain of layers. Its Inception modules run several filter sizes in parallel, then concatenate the outputs, using bottlenecks to manage computation. The architecture won ImageNet 2014 and influenced later efficient, modular CNN design.</p>"
+          },
+          "sourceIds": [
+            "source-going-deeper-with-convolutions",
+            "source-torchvision-googlenet"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "computer-vision",
+        "multi-scale-features",
+        "efficient-depth"
+      ],
+      "area": {
+        "en": "Computer Vision",
+        "zh": "计算机视觉"
+      },
+      "method": {
+        "en": "Multi-scale Inception modules",
+        "zh": "多尺度 Inception 模块"
+      },
+      "artifact": {
+        "en": "GoogLeNet architecture",
+        "zh": "GoogLeNet 架构"
+      },
+      "material": {
+        "en": "CVPR paper and ImageNet-winning model",
+        "zh": "计算机视觉与模式识别会议 论文与 ImageNet 冠军模型"
+      },
+      "demo": {
+        "en": "Parallel filters, efficient depth",
+        "zh": "并行滤波器与高效深度"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Inception Module",
+            "zh": "Inception 模块"
+          },
+          "text": {
+            "en": "Several convolution and pooling paths run in parallel, letting the network capture patterns at multiple scales.",
+            "zh": "多个卷积与池化路径并行运行，让网络捕捉多尺度模式。"
+          }
+        },
+        {
+          "label": {
+            "en": "Bottleneck Layers",
+            "zh": "瓶颈层"
+          },
+          "text": {
+            "en": "1x1 convolutions reduce channel counts before expensive operations, improving computational efficiency.",
+            "zh": "1x1 卷积在昂贵操作前减少通道数，提高计算效率。"
+          }
+        },
+        {
+          "label": {
+            "en": "Parameter Efficiency",
+            "zh": "参数效率"
+          },
+          "text": {
+            "en": "The architecture increases depth and width while controlling memory and compute cost.",
+            "zh": "该架构在增加深度与宽度的同时控制内存和计算成本。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "VGG",
+          "zh": "VGG"
+        },
+        {
+          "en": "ResNet",
+          "zh": "ResNet"
+        },
+        {
+          "en": "AlexNet",
+          "zh": "AlexNet"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "1x1 bottleneck",
+          "zh": "1x1 瓶颈"
+        },
+        {
+          "en": "Parallel filters",
+          "zh": "并行滤波器"
+        },
+        {
+          "en": "Concatenate channels",
+          "zh": "拼接通道"
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "AlexNet 和 VGG 之后，CNN 变得更深也更耗算力。谷歌 团队探索如何提升表示能力，而不是简单放大每一层。",
+          "en": "After AlexNet and VGG, CNNs were becoming deeper and more compute-hungry. Google’s team explored how to increase representational power without simply scaling every layer."
+        },
+        "sourceIds": [
+          "source-going-deeper-with-convolutions"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "Inception 模块让网络同时使用多种感受野尺寸。1x1 瓶颈层让这种多分支设计在计算上可承受。",
+          "en": "An Inception module asks the network to choose among several receptive-field sizes at once. 1x1 bottlenecks keep this multi-branch design affordable."
+        },
+        "sourceIds": [
+          "source-going-deeper-with-convolutions"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 Inception 视为高效模块化 CNN 设计的里程碑。它的长期影响在于强调并行分支、瓶颈层和明确计算权衡，并影响了后来的模块设计与架构搜索。",
+          "en": "Experts generally treat Inception as a milestone in efficient modular CNN design. Its long-term legacy is the emphasis on parallel branches, bottlenecks, and explicit compute tradeoffs that influenced later block design and architecture search."
+        },
+        "sourceIds": [
+          "source-going-deeper-with-convolutions"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "2015-googlenet-inception-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "Inception 模块的关键思想是什么？",
+          "en": "What is the key idea of an Inception module?"
+        },
+        "options": [
+          {
+            "zh": "并行运行多个滤波路径并合并输出",
+            "en": "Run multiple filter paths in parallel and combine them"
+          },
+          {
+            "zh": "只使用一个像素作为输入",
+            "en": "Use only a single pixel as input"
+          },
+          {
+            "zh": "禁止模型使用卷积",
+            "en": "Ban convolution from the model"
+          },
+          {
+            "zh": "把每一层都变成决策树",
+            "en": "Make every layer a decision tree"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "Inception 模块结合并行卷积和池化路径，并常用 1x1 瓶颈层提高效率。",
+          "en": "Inception modules combine parallel convolution and pooling paths, often with 1x1 bottlenecks for efficiency."
+        },
+        "sourceIds": [
+          "source-going-deeper-with-convolutions"
+        ],
+        "assetIds": [
+          "asset-2015-googlenet-inception-christian-szegedy"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/2015-googlenet-inception/event.json",
+      "variantFile": "archive/events/2015-googlenet-inception/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"going deeper with convolutions\"",
+      "zh": "\"用卷积走得更深\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Going Deeper with Convolutions",
+        "zh": "用卷积走得更深"
+      },
+      "workAuthors": {
+        "en": "Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+        "zh": "克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Szegedy_Going_Deeper_With_2015_CVPR_paper.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100: Computer Vision / GoogLeNet",
+      "zh": "BenchCouncil AI100：计算机视觉 / GoogLeNet / Inception"
+    },
+    "quoteAttribution": {
+      "en": "<em>Going Deeper with Convolutions</em>, Christian Szegedy et al., IEEE Conference on Computer Vision and Pattern Recognition, 2015",
+      "zh": "《用卷积走得更深》, 克里斯蒂安·塞格迪等, IEEE 计算机视觉与模式识别会议, 2015"
+    }
+  },
+  {
     "id": "milestone-2014-gan",
     "archiveEventId": "2014-gan",
     "archiveVariantId": "deep-learning",
@@ -66891,11 +69317,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 90,
+    "order": 130,
     "year": 2014,
     "date": "2014",
     "title": {
@@ -67383,11 +69809,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 100,
+    "order": 140,
     "year": 2014,
     "date": "2014",
     "title": {
@@ -67910,11 +70336,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 110,
+    "order": 150,
     "year": 2015,
     "date": "2015-05",
     "title": {
@@ -68260,11 +70686,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 120,
+    "order": 160,
     "year": 2015,
     "date": "2015",
     "title": {
@@ -68870,6 +71296,559 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-deep-learning-ai100-2015-diffusion-model",
+    "archiveEventId": "ai100-2015-diffusion-model",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 170,
+    "year": 2015,
+    "date": "2015",
+    "title": {
+      "zh": "扩散模型",
+      "en": "Diffusion Model"
+    },
+    "subtitle": {
+      "zh": "深度学习与范式归一",
+      "en": "Deep Learning and Unified Paradigms"
+    },
+    "category": {
+      "zh": "深度学习与范式归一（2006-2017）",
+      "en": "Deep Learning and the Unification of Paradigms (2006-2017)"
+    },
+    "location": {
+      "name": {
+        "en": "Stanford University, UC Berkeley",
+        "zh": "斯坦福大学、加州大学伯克利分校"
+      },
+      "country": {
+        "en": "United States",
+        "zh": "美国"
+      },
+      "coordinates": [
+        37.4275,
+        -122.1697
+      ]
+    },
+    "description": {
+      "zh": "<p>索尔-迪克斯坦等人在 2015 年把生成建模写成非平衡热力学过程：前向马尔可夫链逐步向数据加入微小噪声，直到接近简单分布；模型学习每一步的逆向转移，从噪声出发逐渐恢复样本。这个过程提供可计算的训练目标和概率解释。</p><p>2020 年的去噪扩散概率模型进一步简化训练，让神经网络直接预测噪声，并成为现代图像生成的重要基础。扩散模型通常覆盖数据模式较好、训练稳定，但采样需要许多连续去噪步骤，速度较慢。它的核心思想是把困难生成问题拆成一系列小型可学习逆过程。</p>",
+      "en": "<p>Jascha Sohl-Dickstein and colleagues formulated generative modeling as a nonequilibrium thermodynamic process in 2015. A forward Markov chain adds small amounts of noise to data until it approaches a simple distribution. A model learns each reverse transition so a sample can be reconstructed gradually from noise, providing a tractable training objective and probabilistic interpretation.</p><p>Denoising diffusion probabilistic models simplified the approach in 2020 by training a neural network to predict noise, becoming a major foundation for modern image generation. Diffusion models often cover data modes well and train stably, but sampling can be slow because it requires many sequential denoising steps. Their central idea is to decompose a difficult generation problem into a sequence of small learnable reverse processes.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Jascha Sohl-Dickstein",
+          "zh": "雅沙·索尔-迪克斯坦"
+        },
+        "role": {
+          "en": "Diffusion model lead author",
+          "zh": "扩散模型主要作者"
+        },
+        "avatar": "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Surya Ganguli",
+          "zh": "苏里亚·甘古利"
+        },
+        "role": {
+          "en": "Diffusion Model co-author",
+          "zh": "Diffusion Model 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Jonathan Ho",
+          "zh": "乔纳森·何"
+        },
+        "role": {
+          "en": "Diffusion Model co-author",
+          "zh": "Diffusion Model 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "name": {
+          "en": "Pieter Abbee",
+          "zh": "彼得·阿比尔"
+        },
+        "role": {
+          "en": "Diffusion Model co-author",
+          "zh": "Diffusion Model 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png",
+        "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg"
+      ],
+      "videos": [],
+      "assetIds": [
+        "asset-ai100-2015-diffusion-model-jascha-profile",
+        "asset-2015-diffusion-forward-reverse"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/external/ai100-2015-diffusion-model/jascha-sohl-dickstein-portrait.png": {
+        "caption": {
+          "zh": "雅沙·索尔-迪克斯坦肖像",
+          "en": "Jascha Sohl-Dickstein portrait"
+        },
+        "subcaption": {
+          "zh": "扩散模型主要作者。",
+          "en": "Lead author of the diffusion-model paper."
+        },
+        "sourceName": {
+          "zh": "雅沙·索尔-迪克斯坦人物资料来源",
+          "en": "Jascha Sohl-Dickstein profile source"
+        },
+        "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png",
+        "license": {
+          "zh": "本地副本来自雅沙·索尔-迪克斯坦人物资料来源；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+          "en": "Local copy from Jascha Sohl-Dickstein profile source; the source page does not state a repository-compatible license. Recheck before external redistribution."
+        },
+        "sourceId": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本来自雅沙·索尔-迪克斯坦人物资料来源；来源页未注明与本仓库兼容的许可，对外再分发前需再次核验。",
+            "en": "Local copy from Jascha Sohl-Dickstein profile source; the source page does not state a repository-compatible license. Recheck before external redistribution."
+          },
+          "sourceUrl": "https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/Jascha_profile.png"
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg": {
+        "caption": {
+          "zh": "扩散模型 解释图",
+          "en": "Diffusion Model explainer"
+        },
+        "subcaption": {
+          "zh": "关于该成就流程的本地原创解释图。",
+          "en": "Original local explainer for the achievement flow."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；未复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；未复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      }
+    },
+    "achievement": {
+      "visual": "configuredPaper",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "PMLR",
+            "zh": "PMLR"
+          },
+          "title": {
+            "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+            "zh": "使用非平衡热力学进行深度无监督学习"
+          },
+          "description": {
+            "en": "PMLR source card for Diffusion Model.",
+            "zh": "PMLR 的扩散模型资料卡片。"
+          },
+          "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "source": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-denoising-diffusion-probabilistic-models",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《去噪扩散概率模型》",
+            "en": "Denoising Diffusion Probabilistic Models"
+          },
+          "url": "https://arxiv.org/abs/2006.11239",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-diffusion-model-overview",
+          "type": {
+            "zh": "百科条目",
+            "en": "Encyclopedia entry"
+          },
+          "label": {
+            "zh": "扩散模型概览",
+            "en": "Diffusion model overview"
+          },
+          "url": "https://en.wikipedia.org/wiki/Diffusion_model",
+          "purpose": "background",
+          "reliability": "reference-only",
+          "sourceType": "encyclopedia-entry"
+        },
+        {
+          "id": "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《使用非平衡热力学进行深度无监督学习》",
+            "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics"
+          },
+          "url": "https://proceedings.mlr.press/v37/sohl-dickstein15.html",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        }
+      ],
+      "sourceIds": [
+        "source-denoising-diffusion-probabilistic-models",
+        "source-diffusion-model-overview",
+        "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+      ],
+      "claimIds": [
+        "claim-legacy-achievement-summary",
+        "claim-legacy-description"
+      ],
+      "claims": [
+        {
+          "id": "claim-legacy-achievement-summary",
+          "importance": "core",
+          "text": {
+            "zh": "扩散模型 是当前 legacy 展示中的一个 AI 历史节点。",
+            "en": "Diffusion Model is an AI history milestone in the current legacy presentation."
+          },
+          "sourceIds": [
+            "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+            "source-denoising-diffusion-probabilistic-models"
+          ],
+          "status": "needs-source"
+        },
+        {
+          "id": "claim-legacy-description",
+          "importance": "context",
+          "text": {
+            "zh": "<p>扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。</p>",
+            "en": "<p>Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems.</p>"
+          },
+          "sourceIds": [
+            "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics",
+            "source-denoising-diffusion-probabilistic-models"
+          ],
+          "status": "needs-source"
+        }
+      ],
+      "emphasis": [
+        "generative-modeling",
+        "reverse-diffusion",
+        "historical-lineage"
+      ],
+      "area": {
+        "en": "Generative modeling",
+        "zh": "生成式建模"
+      },
+      "method": {
+        "en": "Forward noising and learned reverse denoising",
+        "zh": "正向加噪与学习型反向去噪"
+      },
+      "artifact": {
+        "en": "Nonequilibrium thermodynamics diffusion model",
+        "zh": "非平衡热力学扩散模型"
+      },
+      "material": {
+        "en": "ICML paper and later denoising diffusion work",
+        "zh": "ICML 论文与后续去噪扩散工作"
+      },
+      "demo": {
+        "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+        "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Forward Process",
+            "zh": "正向过程"
+          },
+          "text": {
+            "en": "Noise is added through many small steps.",
+            "zh": "噪声通过许多小步骤加入。"
+          }
+        },
+        {
+          "label": {
+            "en": "Reverse Process",
+            "zh": "反向过程"
+          },
+          "text": {
+            "en": "A model learns to denoise step by step.",
+            "zh": "模型学习逐步去噪。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          },
+          "zh": {
+            "en": "Stable Diffusion",
+            "zh": "Stable Diffusion"
+          }
+        },
+        {
+          "en": {
+            "en": "DALL-E",
+            "zh": "DALL-E"
+          },
+          "zh": {
+            "en": "DALL-E",
+            "zh": "DALL-E"
+          }
+        },
+        {
+          "en": {
+            "en": "Variational Autoencoder",
+            "zh": "变分自编码器"
+          },
+          "zh": {
+            "en": "Variational Autoencoder",
+            "zh": "变分自编码器"
+          }
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": {
+            "en": "United States",
+            "zh": "美国"
+          },
+          "zh": {
+            "en": "United States",
+            "zh": "美国"
+          }
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": {
+            "en": "Add noise",
+            "zh": "加入噪声"
+          },
+          "zh": {
+            "en": "Add noise",
+            "zh": "加入噪声"
+          }
+        },
+        {
+          "en": {
+            "en": "Learn reverse",
+            "zh": "学习反向过程"
+          },
+          "zh": {
+            "en": "Learn reverse",
+            "zh": "学习反向过程"
+          }
+        },
+        {
+          "en": {
+            "en": "Generate sample",
+            "zh": "生成样本"
+          },
+          "zh": {
+            "en": "Generate sample",
+            "zh": "生成样本"
+          }
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2015-diffusion_forward-reverse.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "ICML paper and later denoising diffusion work",
+            "zh": "ICML 论文与后续去噪扩散工作"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples.",
+            "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。"
+          }
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "扩散模型学习逆转逐步加噪过程。早期热力学形式成为后来的去噪扩散概率模型和现代文生图系统的基础。",
+          "en": "Diffusion models learn to reverse a gradual noising process. The early thermodynamic formulation became a foundation for later denoising diffusion probabilistic models and modern text-to-image systems."
+        },
+        "sourceIds": [
+          "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "训练中数据被逐步破坏成噪声，神经网络学习把噪声反向还原为样本的步骤。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。",
+          "en": "Data is slowly corrupted into noise during training, and a neural network learns the reverse steps that turn noise back into samples. The interactive demo focuses on the steps that connect the source material to the visible system behavior."
+        },
+        "sourceIds": [
+          "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把扩散模型视为 GAN 和 VAE 之后的主要生成模型家族之一。它的长期影响在于迭代去噪配方支撑了许多高质量图像、音频和视频生成器。",
+          "en": "Experts generally treat diffusion models as one of the major generative-model families after GANs and VAEs. Its long-term legacy is the iterative denoising recipe that powers many high-quality image, audio, and video generators."
+        },
+        "sourceIds": [
+          "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "ai100-2015-diffusion-model-quiz-1",
+        "storylineId": "",
+        "question": {
+          "zh": "扩散模型学习逆转什么？",
+          "en": "What does a diffusion model learn to reverse?"
+        },
+        "options": [
+          {
+            "zh": "逐步加噪过程",
+            "en": "A gradual noising process"
+          },
+          {
+            "zh": "数据库迁移",
+            "en": "A database migration"
+          },
+          {
+            "zh": "棋类赛程表",
+            "en": "A chess tournament bracket"
+          },
+          {
+            "zh": "只有字典排序",
+            "en": "Only a dictionary sort"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "扩散模型学习把噪声还原为样本的去噪步骤。",
+          "en": "Diffusion models learn denoising steps that turn noise back into samples."
+        },
+        "sourceIds": [
+          "source-deep-unsupervised-learning-using-nonequilibrium-thermodynamics"
+        ],
+        "assetIds": [
+          "asset-2015-diffusion-forward-reverse"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/ai100-2015-diffusion-model/event.json",
+      "variantFile": "archive/events/ai100-2015-diffusion-model/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Deep unsupervised learning using nonequilibrium thermodynamics\"",
+      "zh": "\"使用非平衡热力学进行深度无监督学习\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+        "zh": "使用非平衡热力学进行深度无监督学习"
+      },
+      "workAuthors": {
+        "en": "Jascha Sohl-Dickstein et al., ICML, 2015",
+        "zh": "雅沙·索尔-迪克斯坦等，ICML，2015"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://proceedings.mlr.press/v37/sohl-dickstein15.html"
+    },
+    "quotePage": {
+      "en": "BenchCouncil AI100 achievement entry",
+      "zh": "BenchCouncil AI100 成就条目"
+    },
+    "quoteAttribution": {
+      "en": "<em>Deep Unsupervised Learning using Nonequilibrium Thermodynamics</em>, Jascha Sohl-Dickstein et al., ICML, 2015",
+      "zh": "《使用非平衡热力学进行深度无监督学习》, 雅沙·索尔-迪克斯坦等，ICML，2015"
+    }
+  },
+  {
     "id": "milestone-2016-densenet",
     "archiveEventId": "2016-densenet",
     "archiveVariantId": "deep-learning",
@@ -68878,11 +71857,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 130,
+    "order": 180,
     "year": 2016,
     "date": "2016",
     "title": {
@@ -69362,6 +72341,986 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-deep-learning-2016-alphago",
+    "archiveEventId": "2016-alphago",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 190,
+    "year": 2016,
+    "date": "2016-03",
+    "title": {
+      "zh": "深度学习进入复杂决策系统",
+      "en": "Deep Learning Enters Complex Decision Systems"
+    },
+    "subtitle": {
+      "zh": "AlphaGo 展示了深度神经网络不仅能处理感知任务，也能通过搜索和强化学习参与复杂决策。",
+      "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
+    },
+    "category": {
+      "zh": "连接主义的兴衰与复兴：AI 七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+    },
+    "location": {
+      "name": {
+        "en": "Google DeepMind",
+        "zh": "Google DeepMind"
+      },
+      "country": {
+        "en": "United Kingdom, United States",
+        "zh": "英国、美国"
+      },
+      "regionId": "united-kingdom",
+      "coordinates": [
+        51.5074,
+        -0.1278
+      ]
+    },
+    "description": {
+      "zh": "<p>AlphaGo 结合策略网络、价值网络、蒙特卡洛树搜索和强化学习。系统先从职业棋手棋谱中进行监督学习，再通过自我对弈改进策略，并让树搜索把学习到的直觉与显式前瞻结合起来。2016 年《自然》论文报告了它战胜欧洲冠军樊麾，随后以 4 比 1 战胜李世石的比赛让这项成果进入全球公众视野。</p><p>围棋的分支数量和战略跨度极大，长期难以依靠蛮力搜索解决。AlphaGo 证明学习得到的表示可以缩小搜索范围，并评估难以手工编码的局面。它更深远的遗产是神经评估、规划与自我对弈的组合，这一模式影响了后续游戏系统及更广泛的决策研究。</p>",
+      "en": "<p>AlphaGo combined policy networks, a value network, Monte Carlo tree search, and reinforcement learning. Supervised learning from expert games first gave the policy network a strong starting point; self-play then improved move selection, while tree search joined learned intuition with explicit look-ahead. The 2016 Nature paper reported its victory over European champion Fan Hui, and its later 4-1 match win against Lee Sedol brought the achievement to a global audience.</p><p>Go had long resisted brute-force approaches because its branching factor and strategic horizon are enormous. AlphaGo showed that learned representations could narrow search and evaluate positions that were difficult to encode by hand. Its deeper legacy is the combination of neural evaluation, planning, and self-play, a pattern that influenced later game systems and research on decision-making beyond board games.</p>"
+    },
+    "figures": [
+      {
+        "id": "",
+        "name": {
+          "zh": "大卫·席尔瓦",
+          "en": "David Silver"
+        },
+        "role": {
+          "zh": "AlphaGo 主要研究者",
+          "en": "AlphaGo lead researcher"
+        },
+        "avatar": "resources/images/figures/authoritative/david-silver.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "",
+        "name": {
+          "zh": "黄士杰",
+          "en": "Aja Huang"
+        },
+        "role": {
+          "zh": "AlphaGo 共同作者",
+          "en": "AlphaGo co-author"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "",
+        "name": {
+          "zh": "戴密斯·哈萨比斯",
+          "en": "Demis Hassabis"
+        },
+        "role": {
+          "zh": "DeepMind 联合创始人",
+          "en": "DeepMind co-founder"
+        },
+        "avatar": "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "",
+        "name": {
+          "zh": "朱利安·施里特维泽",
+          "en": "Julian Schrittwieser"
+        },
+        "role": {
+          "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一",
+          "en": "DeepMind research scientist and one of the first authors of the MuZero paper"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "",
+        "name": {
+          "zh": "卡伦·西莫尼扬",
+          "en": "Karen Simonyan"
+        },
+        "role": {
+          "zh": "VGG 论文共同作者",
+          "en": "Co-author of the VGG paper"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      },
+      {
+        "id": "",
+        "name": {
+          "zh": "李世石",
+          "en": "Lee Sedol"
+        },
+        "role": {
+          "zh": "2016 年里程碑对局中的围棋世界冠军",
+          "en": "Go world champion in the landmark 2016 match"
+        },
+        "avatar": "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+        "avatarStyle": "",
+        "figureType": "person",
+        "organizationIds": []
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/authoritative/david-silver.jpg",
+        "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
+      ],
+      "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
+      "overviewImageAssetId": "asset-david-silver-commons-portrait",
+      "videos": [],
+      "assetIds": [
+        "asset-david-silver-commons-portrait",
+        "asset-alphago-policy-value-search",
+        "asset-alphago-lee-sedol"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/figures/authoritative/david-silver.jpg": {
+        "caption": {
+          "zh": "大卫·席尔瓦肖像",
+          "en": "David Silver portrait"
+        },
+        "subcaption": {
+          "zh": "DeepMind 强化学习主要研究者。",
+          "en": "Leading DeepMind reinforcement-learning researcher."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+          "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+        },
+        "sourceId": "source-david-silver-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；使用时须保留文件页所列作者、署名与相同方式共享条款。",
+            "en": "CC BY-SA 2.0; retain the author, attribution, and share-alike terms listed on the file page."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
+        "caption": {
+          "zh": "AlphaGo 策略、价值与搜索流程",
+          "en": "AlphaGo policy, value, and search workflow"
+        },
+        "subcaption": {
+          "zh": "展示策略网络、价值网络与蒙特卡洛树搜索的协作关系。",
+          "en": "Shows how policy networks, value networks, and Monte Carlo tree search work together."
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+        },
+        "sourceId": "source-alphago-nature-paper",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg": {
+        "caption": {
+          "zh": "李世石肖像",
+          "en": "Lee Sedol portrait"
+        },
+        "subcaption": {
+          "zh": "与 AlphaGo 进行五番棋对局的职业围棋棋手。",
+          "en": "Professional Go player who faced AlphaGo in the five-game match."
+        },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep source attribution."
+        },
+        "sourceId": "source-deepmind-alphago-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep source attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "visual": "go",
+      "visualModules": [],
+      "sources": [
+        {
+          "id": "source-david-silver-commons-portrait",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "大卫·席尔瓦资料照片",
+            "en": "David Silver archival portrait"
+          },
+          "url": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+          "purpose": "image-provenance",
+          "reliability": "primary",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-alphago-nature-paper",
+          "type": {
+            "zh": "论文页面",
+            "en": "Paper page"
+          },
+          "label": {
+            "zh": "《自然》 2016 AlphaGo 论文",
+            "en": "Nature 2016 AlphaGo paper"
+          },
+          "url": "https://www.nature.com/articles/nature16961",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "sourceType": "paper-page"
+        },
+        {
+          "id": "source-deepmind-alphago-page",
+          "type": {
+            "zh": "官方页面",
+            "en": "Official page"
+          },
+          "label": {
+            "zh": "谷歌 DeepMind AlphaGo",
+            "en": "Google DeepMind AlphaGo"
+          },
+          "url": "https://deepmind.google/research/alphago/",
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "official-page"
+        },
+        {
+          "id": "source-katago-analysis-engine",
+          "type": {
+            "zh": "API 文档",
+            "en": "API documentation"
+          },
+          "label": {
+            "zh": "KataGo 分析引擎",
+            "en": "KataGo Analysis Engine"
+          },
+          "url": "https://github.com/lightvector/KataGo/blob/master/docs/Analysis_Engine.md",
+          "purpose": "implementation",
+          "reliability": "reference-only",
+          "sourceType": "documentation"
+        }
+      ],
+      "sourceIds": [
+        "source-david-silver-commons-portrait",
+        "source-alphago-nature-paper",
+        "source-deepmind-alphago-page",
+        "source-katago-analysis-engine"
+      ],
+      "claimIds": [
+        "claim-hybrid-policy-value-search",
+        "claim-lee-sedol-match",
+        "claim-self-play-legacy"
+      ],
+      "claims": [
+        {
+          "id": "claim-hybrid-policy-value-search",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaGo 结合了策略网络、价值网络和蒙特卡洛树搜索。",
+            "en": "AlphaGo combined policy networks, value networks, and Monte Carlo tree search."
+          },
+          "sourceIds": [
+            "source-alphago-nature-paper"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-lee-sedol-match",
+          "importance": "core",
+          "text": {
+            "zh": "AlphaGo 在 2016 年与李世石的五番棋中获胜。",
+            "en": "AlphaGo won the five-game match against Lee Sedol in 2016."
+          },
+          "sourceIds": [
+            "source-deepmind-alphago-page"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-self-play-legacy",
+          "importance": "context",
+          "text": {
+            "zh": "AlphaGo 的神经搜索和自我对弈路线影响了后续 AlphaGo Zero、AlphaZero 和 MuZero 等系统。",
+            "en": "AlphaGo’s neural search and self-play pattern influenced later systems such as AlphaGo Zero, AlphaZero, and MuZero."
+          },
+          "sourceIds": [
+            "source-deepmind-alphago-page",
+            "source-alphago-nature-paper"
+          ],
+          "status": "verified"
+        }
+      ],
+      "emphasis": [
+        "deep-learning-expansion",
+        "reinforcement-learning",
+        "search-system"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "historical-background",
+        "label": {
+          "zh": "历史背景",
+          "en": "Historical Background"
+        },
+        "html": {
+          "zh": "围棋长期被视为难以依靠蛮力搜索攻克的复杂决策任务，因为它具有巨大的分支数量和很长的战略跨度。AlphaGo 把深度神经网络与树搜索结合起来，使连接主义从感知和表示学习进一步进入规划与决策系统。",
+          "en": "Go had long been treated as a complex decision problem resistant to brute-force search because of its enormous branching factor and strategic horizon. AlphaGo combined deep neural networks with tree search, extending connectionism beyond perception and representation learning into planning and decision systems."
+        },
+        "sourceIds": [
+          "source-alphago-nature-paper"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "策略网络缩小候选落子范围，价值网络评估棋盘局面，蒙特卡洛树搜索负责显式前瞻，自我对弈则持续改进策略。它的关键不是单纯增加搜索量，而是让学习到的表示和评估能力引导搜索。",
+          "en": "Policy networks narrow candidate moves, the value network evaluates positions, Monte Carlo tree search provides explicit look-ahead, and self-play continually improves the policy. The key was not simply searching more, but using learned representations and evaluations to guide search."
+        },
+        "sourceIds": [
+          "source-alphago-nature-paper",
+          "source-deepmind-alphago-page"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把 AlphaGo 视为深度学习、强化学习和搜索协同工作的标志性展示。它的长期影响在于证明连接主义系统可以把学习到的直觉与规划结合起来，并通过自我对弈扩展到难以手工编码的复杂决策任务。",
+          "en": "Experts generally treat AlphaGo as a landmark demonstration of deep learning, reinforcement learning, and search working together. Its long-term legacy is showing that connectionist systems can combine learned intuition with planning and use self-play to address complex decisions that are difficult to encode by hand."
+        },
+        "sourceIds": [
+          "source-alphago-nature-paper",
+          "source-deepmind-alphago-page"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [
+      {
+        "id": "quiz-2016-alphago-ai100",
+        "storylineId": "bench-council-ai100",
+        "question": {
+          "zh": "AlphaGo 不只是“搜得更多”。它学会了什么来引导搜索？",
+          "en": "AlphaGo did not just search harder. What did it learn to guide search?"
+        },
+        "options": [
+          {
+            "zh": "策略先验和价值估计",
+            "en": "Policy priors and value estimates"
+          },
+          {
+            "zh": "裁判的笔迹",
+            "en": "The referee's handwriting"
+          },
+          {
+            "zh": "只有棋盘颜色",
+            "en": "Only the board color"
+          },
+          {
+            "zh": "每盘棋固定第一手",
+            "en": "A fixed first move for every game"
+          }
+        ],
+        "answerIndex": 0,
+        "answer": 0,
+        "explanation": {
+          "zh": "策略网络缩小候选落子，价值网络评估局面，树搜索向前规划。",
+          "en": "Policy networks narrow candidate moves, value networks estimate positions, and tree search plans ahead."
+        },
+        "sourceIds": [
+          "source-alphago-nature-paper"
+        ],
+        "assetIds": [
+          "asset-alphago-policy-value-search"
+        ]
+      }
+    ],
+    "archive": {
+      "eventFile": "archive/events/2016-alphago/event.json",
+      "variantFile": "archive/events/2016-alphago/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    }
+  },
+  {
+    "id": "milestone-2017-transformer",
+    "archiveEventId": "2017-transformer",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 200,
+    "year": 2017,
+    "date": "2017",
+    "title": {
+      "zh": "Transformer",
+      "en": "Transformer"
+    },
+    "subtitle": {
+      "zh": "深度学习与范式归一",
+      "en": "Deep Learning and Unified Paradigms"
+    },
+    "category": {
+      "en": "Deep Learning and the Unification of Paradigms (2010s-2020s)",
+      "zh": "深度学习与范式归一（2010年代至2020年代）"
+    },
+    "location": {
+      "name": {
+        "en": "Google Brain",
+        "zh": "Google Brain"
+      },
+      "country": {
+        "en": "Mountain View, United States",
+        "zh": "美国山景城"
+      },
+      "coordinates": [
+        37.422,
+        -122.0841
+      ]
+    },
+    "description": {
+      "zh": "<p>2017 年，阿希什·瓦斯瓦尼等人在《Attention Is All You Need》中提出 Transformer。它用多头自注意力比较序列中不同位置的 query、key 和 value，并配合前馈网络、残差连接和位置编码，构成不依赖循环或卷积的编码器—解码器。</p><p>自注意力允许训练时并行处理整段序列，缩短远距离信息之间的计算路径。原论文在机器翻译基准上取得更高质量，同时显著减少训练成本。Transformer 随后成为 BERT、GPT、视觉 Transformer、多模态基础模型和现代生成式 AI 的共同架构基础。</p>",
+      "en": "<p>In 2017, Ashish Vaswani and colleagues introduced the Transformer in <em>Attention Is All You Need</em>. Multi-head self-attention compared queries, keys, and values across sequence positions, while feed-forward layers, residual connections, and positional encodings formed an encoder-decoder architecture without recurrence or convolution.</p><p>Self-attention allowed whole sequences to be processed in parallel during training and shortened the computational path between distant pieces of information. The original paper achieved stronger machine-translation quality with substantially lower training cost. The Transformer subsequently became the shared architectural foundation of BERT, GPT, vision transformers, multimodal foundation models, and modern generative AI.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Ashish Vaswani",
+          "zh": "阿希什·瓦斯瓦尼"
+        },
+        "role": {
+          "en": "Transformer lead author",
+          "zh": "Transformer 主要作者"
+        },
+        "avatar": "resources/images/figures/ashish-vaswani.jpg",
+        "avatarStyle": "transform: scale(2.05); transform-origin: 50% 33%;",
+        "figureType": "person"
+      },
+      {
+        "name": {
+          "en": "Noam Shazeer",
+          "zh": "诺姆·沙泽尔"
+        },
+        "role": {
+          "en": "Transformer co-author",
+          "zh": "Transformer 共同作者"
+        },
+        "avatar": "",
+        "avatarStyle": "",
+        "figureType": "person"
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/figures/ashish-vaswani.jpg",
+        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+        "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+        "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
+        "resources/images/2017-transformer/papers/2017-transformer_papers_01.png"
+      ],
+      "videos": [
+        {
+          "id": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+          "url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+          "embed_url": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+          "title": "2017Transformer：改变AI的2017年论文",
+          "channel": "",
+          "duration": "",
+          "thumbnail": "",
+          "source": "Web"
+        }
+      ],
+      "assetIds": [
+        "asset-transformer-portrait",
+        "asset-transformer-attention",
+        "asset-transformer-architecture",
+        "asset-transformer-architecture-detail",
+        "asset-transformer-paper-page"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/figures/ashish-vaswani.jpg": {
+        "caption": {
+          "zh": "阿希什·瓦斯瓦尼肖像",
+          "en": "Ashish Vaswani portrait"
+        },
+        "subcaption": {
+          "zh": "Transformer 论文共同作者",
+          "en": "Transformer paper co-author"
+        },
+        "license": {
+          "zh": "历史人物资料图，保留来源说明。",
+          "en": "Historical figure reference image; keep attribution."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史人物资料图，保留来源说明。",
+            "en": "Historical figure reference image; keep attribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
+        "caption": {
+          "zh": "Transformer 自注意力机制",
+          "en": "Transformer self-attention mechanism"
+        },
+        "subcaption": {
+          "zh": "本地重绘的 token 间注意力关系解释图。",
+          "en": "Locally redrawn explainer of attention relationships between tokens."
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
+        "caption": {
+          "zh": "Transformer 自注意力计算",
+          "en": "Transformer self-attention computation"
+        },
+        "subcaption": {
+          "zh": "展示查询、键和值投影以及缩放点积注意力。",
+          "en": "Shows query, key, and value projections with scaled dot-product attention."
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "image"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
+        "caption": {
+          "zh": "Transformer 编码器—解码器架构",
+          "en": "Transformer encoder-decoder architecture"
+        },
+        "subcaption": {
+          "zh": "原论文中的编码器与解码器模块结构。",
+          "en": "Encoder and decoder module structure from the original paper."
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
+          "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图，正式发布前需保留来源说明。",
+            "en": "Architecture reference image for exhibition explanation; keep source attribution before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2017-transformer/papers/2017-transformer_papers_01.png": {
+        "caption": {
+          "zh": "《Attention Is All You Need》论文首页",
+          "en": "Attention Is All You Need paper first page"
+        },
+        "subcaption": {
+          "zh": "Transformer 原始论文的首页与摘要。",
+          "en": "First page and abstract of the original Transformer paper."
+        },
+        "license": {
+          "zh": "论文页面资料引用，需保留来源说明。",
+          "en": "Paper page reference; keep source attribution."
+        },
+        "sourceId": "source-transformer-neurips",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "论文页面资料引用，需保留来源说明。",
+            "en": "Paper page reference; keep source attribution."
+          }
+        },
+        "role": "paper-page",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "visual": "transformer",
+      "visualModules": [
+        {
+          "type": "archiveLink",
+          "site": {
+            "en": "arXiv",
+            "zh": "arXiv"
+          },
+          "title": {
+            "en": "Attention Is All You Need",
+            "zh": "Attention Is All You Need"
+          },
+          "description": {
+            "en": "Open paper for the Transformer architecture.",
+            "zh": "Transformer 架构的开放论文。"
+          },
+          "url": "https://arxiv.org/abs/1706.03762",
+          "source": "https://arxiv.org/abs/1706.03762",
+          "license": {
+            "en": "Reference link only; local explainers are original redraws.",
+            "zh": "仅作为参考链接；本地解释图为原创重绘。"
+          },
+          "usage": {
+            "en": "Article / source reference",
+            "zh": "论文或资料来源"
+          },
+          "action": {
+            "en": "Open paper",
+            "zh": "打开论文"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "source-transformer-arxiv",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《Attention Is All You Need》",
+            "en": "Attention Is All You Need"
+          },
+          "url": "https://arxiv.org/abs/1706.03762",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-transformer-neurips",
+          "type": {
+            "zh": "会议论文页面",
+            "en": "Conference paper page"
+          },
+          "label": {
+            "zh": "NeurIPS 论文页面",
+            "en": "NeurIPS paper page"
+          },
+          "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "sourceType": "paper-page"
+        },
+        {
+          "id": "source-google-research-publication",
+          "type": {
+            "zh": "出版页面",
+            "en": "Publication page"
+          },
+          "label": {
+            "zh": "Google Research 出版页面",
+            "en": "Google Research publication page"
+          },
+          "url": "https://research.google/pubs/attention-is-all-you-need/",
+          "purpose": "alternate-access",
+          "reliability": "primary",
+          "sourceType": "paper-page"
+        },
+        {
+          "id": "source-google-transformer-blog",
+          "type": {
+            "zh": "文章",
+            "en": "Article"
+          },
+          "label": {
+            "zh": "Google Research Transformer 博客",
+            "en": "Google Research Transformer blog post"
+          },
+          "url": "https://research.google/blog/transformer-a-novel-neural-network-architecture-for-language-understanding/",
+          "purpose": "historical-context",
+          "reliability": "secondary",
+          "sourceType": "article"
+        }
+      ],
+      "sourceIds": [
+        "source-transformer-arxiv",
+        "source-transformer-neurips",
+        "source-google-research-publication",
+        "source-google-transformer-blog"
+      ],
+      "claimIds": [
+        "claim-attention-only-architecture",
+        "claim-foundation-model-legacy"
+      ],
+      "claims": [
+        {
+          "id": "claim-attention-only-architecture",
+          "importance": "core",
+          "text": {
+            "zh": "Transformer 提出了一种完全基于注意力机制、去除循环和卷积的序列建模架构。",
+            "en": "The Transformer proposed a sequence modeling architecture based solely on attention mechanisms, dispensing with recurrence and convolutions."
+          },
+          "sourceIds": [
+            "source-transformer-arxiv",
+            "source-transformer-neurips"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-foundation-model-legacy",
+          "importance": "context",
+          "text": {
+            "zh": "Transformer 架构成为 BERT、GPT 式语言模型和许多现代基础模型的重要基础。",
+            "en": "The Transformer architecture became a key foundation for BERT, GPT-style language models, and many modern foundation models."
+          },
+          "sourceIds": [
+            "source-google-transformer-blog",
+            "source-google-research-publication"
+          ],
+          "status": "verified"
+        }
+      ],
+      "emphasis": [
+        "attention",
+        "sequence-modeling",
+        "foundation-models"
+      ],
+      "area": {
+        "en": "Neural Network",
+        "zh": "神经网络"
+      },
+      "method": {
+        "en": "Self-attention sequence architecture",
+        "zh": "自注意力序列架构"
+      },
+      "artifact": {
+        "en": "Transformer architecture",
+        "zh": "Transformer 架构"
+      },
+      "material": {
+        "en": "NeurIPS paper",
+        "zh": "NeurIPS 论文"
+      },
+      "demo": {
+        "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+        "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+      },
+      "keyConcepts": [
+        {
+          "label": {
+            "en": "Self-attention",
+            "zh": "自注意力"
+          },
+          "text": {
+            "en": "Tokens exchange information through learned attention weights.",
+            "zh": "令牌通过学习到的注意力权重交换信息。"
+          }
+        },
+        {
+          "label": {
+            "en": "Parallel Training",
+            "zh": "并行训练"
+          },
+          "text": {
+            "en": "Sequence positions can be processed without recurrence.",
+            "zh": "序列位置无需循环即可处理。"
+          }
+        }
+      ],
+      "relatedAchievements": [
+        {
+          "en": "Attention",
+          "zh": "注意力机制"
+        },
+        {
+          "en": "BERT",
+          "zh": "BERT"
+        },
+        {
+          "en": "GPT",
+          "zh": "GPT"
+        }
+      ],
+      "relatedRegions": [
+        {
+          "en": "United States",
+          "zh": "美国"
+        },
+        {
+          "en": "Canada",
+          "zh": "加拿大"
+        }
+      ],
+      "demoSteps": [
+        {
+          "en": "Token embeddings",
+          "zh": "令牌嵌入"
+        },
+        {
+          "en": "Self-attention",
+          "zh": "自注意力"
+        },
+        {
+          "en": "Feed-forward stack",
+          "zh": "前馈堆栈"
+        }
+      ],
+      "demoImage": "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
+      "demoNotes": [
+        {
+          "label": {
+            "en": "Source cue",
+            "zh": "资料线索"
+          },
+          "text": {
+            "en": "NeurIPS paper",
+            "zh": "NeurIPS 论文"
+          }
+        },
+        {
+          "label": {
+            "en": "Interaction point",
+            "zh": "互动点"
+          },
+          "text": {
+            "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling.",
+            "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。"
+          }
+        }
+      ]
+    },
+    "commentarySections": [
+      {
+        "label": {
+          "en": "Historical Background",
+          "zh": "历史背景"
+        },
+        "html": {
+          "en": "The Transformer replaced recurrent sequence modeling with stacked self-attention and feed-forward blocks. Introduced for machine translation, it became the architecture behind BERT, GPT-style language models, multimodal foundation models, and many modern AI systems.",
+          "zh": "Transformer 用堆叠的自注意力和前馈模块替代循环序列建模。它最初用于机器翻译，后来成为 BERT、GPT 式语言模型、多模态基础模型以及许多现代 AI 系统背后的架构。"
+        }
+      },
+      {
+        "label": {
+          "en": "Core Idea",
+          "zh": "核心思想"
+        },
+        "html": {
+          "en": "Every token builds query-key-value attention links to other tokens, allowing parallel sequence modeling. The interactive demo focuses on the steps that connect the source material to the visible system behavior.",
+          "zh": "每个令牌与其他令牌建立 query-key-value 注意力连接，从而实现并行序列建模。 互动演示会突出这些步骤如何把资料线索与可见的系统行为连接起来。"
+        }
+      },
+      {
+        "label": {
+          "en": "Long-Term Legacy",
+          "zh": "长期影响"
+        },
+        "html": {
+          "en": "Experts generally treat the Transformer as one of the defining architectures of modern AI. Its long-term legacy is the scalable self-attention recipe that reorganized natural language processing, vision, speech, code, agents, and foundation-model research.",
+          "zh": "专家通常把 Transformer 视为现代 AI 的定义性架构之一。它的长期影响在于可扩展的自注意力配方重塑了自然语言处理、视觉、语音、代码、智能体和基础模型研究。"
+        }
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/2017-transformer/event.json",
+      "variantFile": "archive/events/2017-transformer/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "https://media.sciencearena.cn/video/2017Transformer%EF%BC%9A%E6%94%B9%E5%8F%98AI%E7%9A%842017%E5%B9%B4%E8%AE%BA%E6%96%87.mp4",
+    "quote": {
+      "en": "\"The Transformer replaced recurrence and convolution with self-attention, creating a scalable architecture that became the foundation for modern language models.\"",
+      "zh": "\"Transformer 用自注意力替代循环和卷积，形成了一种可扩展架构，并成为现代语言模型的基础。\""
+    },
+    "quoteMeta": {
+      "speaker": "",
+      "workTitle": {
+        "en": "Attention Is All You Need",
+        "zh": "注意力就是你所需要的一切"
+      },
+      "workAuthors": {
+        "en": "Ashish Vaswani et al., NeurIPS, 2017",
+        "zh": "阿希什·瓦斯瓦尼等，NeurIPS，2017"
+      },
+      "sourceLabel": "",
+      "sourceUrl": "https://papers.nips.cc/paper/7181-attention-is-all-you-need"
+    },
+    "quotePage": {
+      "en": "NeurIPS 2017 paper: Attention Is All You Need",
+      "zh": "NeurIPS 2017 论文《注意力就是你所需要的一切》"
+    },
+    "quoteAttribution": {
+      "en": "<em>Attention Is All You Need</em>, Ashish Vaswani et al., NeurIPS, 2017",
+      "zh": "《注意力就是你所需要的一切》, 阿希什·瓦斯瓦尼等，NeurIPS，2017"
+    }
+  },
+  {
     "id": "milestone-2018-bert",
     "archiveEventId": "2018-bert",
     "archiveVariantId": "deep-learning",
@@ -69370,11 +73329,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 150,
+    "order": 210,
     "year": 2018,
     "date": "2018",
     "title": {
@@ -69871,11 +73830,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 160,
+    "order": 220,
     "year": 2018,
     "date": "2018",
     "title": {
@@ -69883,8 +73842,8 @@ const milestones = [
       "en": "GPT"
     },
     "subtitle": {
-      "zh": "大模型与科学智能",
-      "en": "Large Models and Scientific Intelligence"
+      "zh": "从生成式预训练到 ChatGPT",
+      "en": "From Generative Pretraining to ChatGPT"
     },
     "category": {
       "en": "Large Models and Scientific Intelligence",
@@ -69905,8 +73864,8 @@ const milestones = [
       ]
     },
     "description": {
-      "zh": "<p>2018 年，OpenAI 的亚历克·拉德福德等人提出生成式预训练 Transformer。模型先在大规模无标注文本上按照从左到右预测下一个词的目标训练，再用少量任务标注数据微调，从而把通用语言知识迁移到分类、问答、文本蕴含等不同任务。</p><p>论文使用以 Transformer 解码器为基础的统一架构，在 12 项任务中的多数项目上取得当时有竞争力的结果。GPT 证明生成式语言建模可以充当通用预训练目标，并开启了持续扩大模型、数据和计算规模的解码器路线，后来发展出 GPT-2、GPT-3 及现代大语言模型。</p>",
-      "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the Generative Pre-trained Transformer. The model first learned from large amounts of unlabeled text by predicting the next word from left to right, then transferred that general language knowledge to classification, question answering, textual entailment, and other tasks through supervised fine-tuning.</p><p>The paper used one Transformer-decoder-based architecture and reported competitive results on most of twelve evaluated tasks. GPT showed that generative language modeling could serve as a general pre-training objective. It opened the decoder-only scaling path in which models, data, and compute continued to grow, leading to GPT-2, GPT-3, and modern large language models.</p>"
+      "zh": "<p>2018 年，OpenAI 的亚历克·拉德福德等人提出生成式预训练 Transformer。模型先在大规模无标注文本上按照从左到右预测下一个词的目标训练，再用少量任务标注数据微调，从而把通用语言知识迁移到分类、问答、文本蕴含等不同任务。</p><p>论文使用以 Transformer 解码器为基础的统一架构，在 12 项任务中的多数项目上取得当时有竞争力的结果。GPT 证明生成式语言建模可以充当通用预训练目标，并开启了持续扩大模型、数据和计算规模的解码器路线。GPT-2、GPT-3 延续了这条规模化路径，2022 年推出的 ChatGPT 又结合指令微调和基于人类反馈的后训练，把同一技术谱系转化为面向公众的对话系统。</p>",
+      "en": "<p>In 2018, Alec Radford and colleagues at OpenAI introduced the Generative Pre-trained Transformer. The model first learned from large amounts of unlabeled text by predicting the next word from left to right, then transferred that general language knowledge to classification, question answering, textual entailment, and other tasks through supervised fine-tuning.</p><p>The paper used one Transformer-decoder-based architecture and reported competitive results on most of twelve evaluated tasks. GPT showed that generative language modeling could serve as a general pre-training objective and opened the decoder-only scaling path for larger models, datasets, and compute. GPT-2 and GPT-3 continued that path; ChatGPT, released in 2022, combined the same model lineage with instruction tuning and human-feedback-based post-training to turn it into a public conversational system.</p>"
     },
     "figures": [
       {
@@ -70330,8 +74289,8 @@ const milestones = [
           "en": "Long-Term Legacy"
         },
         "html": {
-          "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响在于生成式预训练配方把下一个令牌预测变成语言任务的通用接口。",
-          "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today’s large language models. Its long-term legacy is the generative pre-training recipe that turned next-token prediction into a broad interface for language tasks."
+          "zh": "专家通常把 GPT 视为通向当今大语言模型的解码器式规模化路线起点。它的长期影响不仅在于把下一个令牌预测变成语言任务的通用接口，也在于这条路线经 GPT-2、GPT-3 和后训练方法延伸到 ChatGPT，使基础模型成为公众可以直接交互的系统。",
+          "en": "Experts generally treat GPT as the start of the decoder-only scaling line that led to today's large language models. Its long-term legacy is not only turning next-token prediction into a broad interface for language tasks, but also extending through GPT-2, GPT-3, and post-training methods into ChatGPT, where foundation models became directly interactive public systems."
         },
         "sourceIds": [
           "source-improving-language-understanding-by-generative-pre-training"
@@ -70382,11 +74341,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 170,
+    "order": 230,
     "year": 2019,
     "date": "2019",
     "title": {
@@ -70715,16 +74674,16 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 180,
+    "order": 240,
     "year": 2020,
     "date": "2020",
     "title": {
-      "zh": "AlphaFold2",
-      "en": "AlphaFold2"
+      "zh": "AlphaFold",
+      "en": "AlphaFold"
     },
     "subtitle": {
       "zh": "大模型与科学智能",
@@ -71357,6 +75316,412 @@ const milestones = [
     }
   },
   {
+    "id": "milestone-2022-post-training-intelligence",
+    "archiveEventId": "2022-post-training-intelligence",
+    "archiveVariantId": "deep-learning",
+    "archivePresentationMode": "preserve-legacy",
+    "sourceKind": "archive",
+    "storyline": {
+      "id": "deep-learning",
+      "name": {
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+      }
+    },
+    "order": 245,
+    "year": 2022,
+    "date": "2022",
+    "title": {
+      "zh": "后训练提升智能",
+      "en": "Post-Training Improves Intelligence"
+    },
+    "subtitle": {
+      "zh": "基础模型、后训练与智能体",
+      "en": "Foundation Models, Post-Training, and Agents"
+    },
+    "category": {
+      "en": "Foundation Models, Post-Training, and Agents",
+      "zh": "基础模型、后训练与智能体"
+    },
+    "location": {
+      "name": {
+        "en": "Global AI Labs",
+        "zh": "全球 AI 实验室"
+      },
+      "country": {
+        "en": "Global",
+        "zh": "全球"
+      },
+      "coordinates": [
+        37.7749,
+        -122.4194
+      ]
+    },
+    "description": {
+      "zh": "<p>大模型的能力并不只来自预训练阶段。随着高质量文本数据增长放缓、训练试验越来越昂贵，单纯扩大预训练开始面对更明显的边际收益问题。后训练由此成为基础模型走向可用智能系统的关键环节：模型先学会预测海量文本，再通过指令、偏好和任务反馈被塑造成更会回答问题、遵循约束、完成复杂任务的助手。</p><p>2022 年的 InstructGPT 论文把监督微调、奖励模型和 PPO 强化学习串成清晰流程，说明人类反馈可以显著改善指令遵循与可用性。FLAN 等工作则展示，大规模指令微调能提升模型对新任务的泛化。到 2024-2025 年，强化学习进一步被用于鼓励模型生成更长、更可验证的推理轨迹。因此，这一页承担的不是“规模定律”本身，而是解释预训练增益放缓后，智能提升为什么转向后训练、反馈和推理过程。</p>",
+      "en": "<p>Large-model capability does not come only from pretraining. As high-quality text data grew more slowly and training experiments became increasingly expensive, simply expanding pretraining faced clearer marginal-return limits. Post-training became the bridge from foundation models to usable intelligent systems: a model first learns to predict massive text, then is shaped by instructions, preferences, and task feedback into an assistant that follows constraints and completes complex tasks.</p><p>The 2022 InstructGPT paper linked supervised fine-tuning, reward modeling, and PPO reinforcement learning into a clear pipeline, showing that human feedback could substantially improve instruction following and usefulness. FLAN-style work showed that large-scale instruction tuning improves generalization to new tasks. By 2024-2025, reinforcement learning was also used to encourage longer and more verifiable reasoning traces. This page therefore does not treat scaling laws as a standalone event; it explains why, after pretraining gains slowed, capability growth shifted toward post-training, feedback, and reasoning processes.</p>"
+    },
+    "figures": [
+      {
+        "name": {
+          "en": "Research Institutions",
+          "zh": "研究机构"
+        },
+        "role": {
+          "en": "Post-training methods and frontier model R&D organizations",
+          "zh": "后训练方法与前沿模型研发机构"
+        },
+        "avatar": "resources/images/figures/research-institution.png",
+        "avatarStyle": "",
+        "figureType": "team"
+      }
+    ],
+    "resources": {
+      "images": [
+        "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
+        "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png",
+        "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg",
+        "resources/images/figures/research-institution.png"
+      ],
+      "overviewImage": "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
+      "overviewImageAssetId": "asset-2022-post-training-pipeline",
+      "videos": [],
+      "assetIds": [
+        "asset-2022-post-training-pipeline",
+        "asset-2022-post-training-instruction-tuning-ppt",
+        "asset-2022-post-training-rlhf-ppt",
+        "asset-2022-post-training-research-institutions"
+      ]
+    },
+    "imageMeta": {
+      "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg": {
+        "caption": {
+          "zh": "后训练流程图",
+          "en": "Post-training pipeline"
+        },
+        "subcaption": {
+          "zh": "展示预训练基座模型如何通过指令微调、偏好反馈和强化学习转化为更可用的智能系统。",
+          "en": "Shows how a pretrained foundation model is shaped by instruction tuning, preference feedback, and reinforcement learning into a more useful intelligent system."
+        },
+        "license": {
+          "zh": "本地原创示意图；用于解释论文和技术报告中的方法流程，不复制出版方图形。",
+          "en": "Local original explainer; it illustrates the method flow from papers and technical reports without copying publisher figures."
+        },
+        "sourceId": "source-instructgpt-paper",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "zh": "本地原创示意图；用于解释论文和技术报告中的方法流程，不复制出版方图形。",
+            "en": "Local original explainer; it illustrates the method flow from papers and technical reports without copying publisher figures."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png": {
+        "caption": {
+          "zh": "指令微调流程图",
+          "en": "Instruction tuning pipeline"
+        },
+        "subcaption": {
+          "zh": "PPT 第 43 页提取图，展示从指令数据构造到监督微调的流程。",
+          "en": "Extracted from PPT slide 43, showing the flow from instruction dataset construction to supervised fine-tuning."
+        },
+        "license": {
+          "zh": "来自用户提供的 PPT；仅用于本项目内容梳理与展示，发布前如需对外授权应复核原图来源。",
+          "en": "Extracted from a user-provided PPT; used for this project's content review and exhibit, with original figure rights to be reviewed before external redistribution."
+        },
+        "sourceId": "source-ppt-slide-43-instruction-tuning",
+        "rights": {
+          "status": "extracted-from-user-provided-source",
+          "license": {
+            "zh": "来自用户提供的 PPT；仅用于本项目内容梳理与展示，发布前如需对外授权应复核原图来源。",
+            "en": "Extracted from a user-provided PPT; used for this project's content review and exhibit, with original figure rights to be reviewed before external redistribution."
+          },
+          "sourceUrl": "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png"
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg": {
+        "caption": {
+          "zh": "人类反馈强化学习回路图",
+          "en": "RLHF feedback loop"
+        },
+        "subcaption": {
+          "zh": "PPT 第 44 页提取图，展示人类反馈、奖励预测器、强化学习算法与环境之间的关系。",
+          "en": "Extracted from PPT slide 44, showing the relationship among human feedback, a reward predictor, a reinforcement-learning algorithm, and the environment."
+        },
+        "license": {
+          "zh": "来自用户提供的 PPT；仅用于本项目内容梳理与展示，发布前如需对外授权应复核原图来源。",
+          "en": "Extracted from a user-provided PPT; used for this project's content review and exhibit, with original figure rights to be reviewed before external redistribution."
+        },
+        "sourceId": "source-ppt-slide-44-rlhf",
+        "rights": {
+          "status": "extracted-from-user-provided-source",
+          "license": {
+            "zh": "来自用户提供的 PPT；仅用于本项目内容梳理与展示，发布前如需对外授权应复核原图来源。",
+            "en": "Extracted from a user-provided PPT; used for this project's content review and exhibit, with original figure rights to be reviewed before external redistribution."
+          },
+          "sourceUrl": "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg"
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/figures/research-institution.png": {
+        "caption": {
+          "zh": "研究机构图标",
+          "en": "Research institutions icon"
+        },
+        "subcaption": {
+          "zh": "后训练方法由多个研究机构共同推动。",
+          "en": "Post-training methods were advanced by multiple research organizations."
+        },
+        "license": {
+          "zh": "项目本地通用机构图标。",
+          "en": "Project-local generic institution icon."
+        },
+        "sourceId": "source-stanford-ai-index-2025",
+        "rights": {
+          "status": "local-asset",
+          "license": {
+            "zh": "项目本地通用机构图标。",
+            "en": "Project-local generic institution icon."
+          }
+        },
+        "role": "team-portrait",
+        "type": "image"
+      }
+    },
+    "achievement": {
+      "visualModules": [],
+      "sources": [
+        {
+          "id": "source-instructgpt-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《用人类反馈训练语言模型遵循指令》",
+            "en": "Training language models to follow instructions with human feedback"
+          },
+          "url": "https://arxiv.org/abs/2203.02155",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-flan-paper",
+          "type": {
+            "zh": "相关论文",
+            "en": "Related paper"
+          },
+          "label": {
+            "zh": "《扩展指令微调语言模型》",
+            "en": "Scaling Instruction-Finetuned Language Models"
+          },
+          "url": "https://arxiv.org/abs/2210.11416",
+          "purpose": "core-evidence",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-deepseek-r1-paper",
+          "type": {
+            "zh": "论文",
+            "en": "Paper"
+          },
+          "label": {
+            "zh": "《DeepSeek-R1：通过强化学习激励大语言模型推理能力》",
+            "en": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+          },
+          "url": "https://arxiv.org/abs/2501.12948",
+          "purpose": "background",
+          "reliability": "primary",
+          "sourceType": "paper"
+        },
+        {
+          "id": "source-stanford-ai-index-2025",
+          "type": {
+            "zh": "报告",
+            "en": "Report"
+          },
+          "label": {
+            "zh": "Stanford《2025 AI Index 报告》",
+            "en": "Stanford 2025 AI Index Report"
+          },
+          "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+          "purpose": "background",
+          "reliability": "secondary",
+          "sourceType": "report"
+        },
+        {
+          "id": "source-ppt-slide-43-instruction-tuning",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "PPT 第 43 页指令微调图来源",
+            "en": "PPT slide 43 instruction-tuning figure source"
+          },
+          "url": "resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png",
+          "purpose": "image-provenance",
+          "reliability": "reference-only",
+          "sourceType": "image-source"
+        },
+        {
+          "id": "source-ppt-slide-44-rlhf",
+          "type": {
+            "zh": "图片来源",
+            "en": "Image source"
+          },
+          "label": {
+            "zh": "PPT 第 44 页 RLHF 图来源",
+            "en": "PPT slide 44 RLHF figure source"
+          },
+          "url": "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg",
+          "purpose": "image-provenance",
+          "reliability": "reference-only",
+          "sourceType": "image-source"
+        }
+      ],
+      "sourceIds": [
+        "source-instructgpt-paper",
+        "source-flan-paper",
+        "source-deepseek-r1-paper",
+        "source-stanford-ai-index-2025",
+        "source-ppt-slide-43-instruction-tuning",
+        "source-ppt-slide-44-rlhf"
+      ],
+      "claimIds": [
+        "claim-post-training-shapes-foundation-models",
+        "claim-reinforcement-learning-extends-reasoning"
+      ],
+      "claims": [
+        {
+          "id": "claim-post-training-shapes-foundation-models",
+          "importance": "core",
+          "text": {
+            "zh": "指令微调和基于反馈的强化学习把通用预训练语言模型塑造成更能遵循任务、符合人类偏好并适合对话使用的系统。",
+            "en": "Instruction tuning and reinforcement learning from feedback shaped general pretrained language models into systems that better follow tasks, match human preferences, and support dialogue use."
+          },
+          "sourceIds": [
+            "source-instructgpt-paper",
+            "source-flan-paper"
+          ],
+          "status": "verified"
+        },
+        {
+          "id": "claim-reinforcement-learning-extends-reasoning",
+          "importance": "context",
+          "text": {
+            "zh": "在预训练边际收益受到数据与成本约束后，强化学习也被用于鼓励模型生成更长、更可检验的推理过程。",
+            "en": "After the marginal gains from pretraining became more constrained by data and cost, reinforcement learning was also used to encourage longer and more checkable reasoning processes."
+          },
+          "sourceIds": [
+            "source-deepseek-r1-paper",
+            "source-stanford-ai-index-2025"
+          ],
+          "status": "verified"
+        }
+      ],
+      "emphasis": [
+        "connectionism-revival",
+        "foundation-models",
+        "post-training"
+      ]
+    },
+    "commentarySections": [
+      {
+        "id": "background",
+        "label": {
+          "zh": "背景解读",
+          "en": "Background"
+        },
+        "html": {
+          "zh": "预训练把大量世界知识和语言模式压入参数，但它不自动保证模型会按人类希望的方式回答、拒答、推理或调用工具。当前前沿模型的训练成本和高质量数据供给也让“继续堆预训练”变得更难单独解释能力提升。",
+          "en": "Pretraining stores broad language patterns and world knowledge in parameters, but it does not automatically make a model answer, refuse, reason, or use tools in the way people want. The cost of frontier training and the supply of high-quality data also make continued pretraining harder to use as the only explanation for capability gains."
+        },
+        "sourceIds": [
+          "source-stanford-ai-index-2025"
+        ]
+      },
+      {
+        "id": "core-idea",
+        "label": {
+          "zh": "核心思想",
+          "en": "Core Idea"
+        },
+        "html": {
+          "zh": "指令微调把任务格式和回答习惯教给模型；基于反馈的强化学习则把偏好、约束和可用性转化为训练信号。到了推理模型阶段，强化学习还可以奖励更长的探索过程，使模型在解题时形成可检查的中间步骤。",
+          "en": "Instruction tuning teaches the model task formats and response habits, while reinforcement learning from feedback turns preferences, constraints, and usefulness into training signals. In reasoning-model work, reinforcement learning can also reward longer exploration processes, giving the model more checkable intermediate steps while solving problems."
+        },
+        "sourceIds": [
+          "source-instructgpt-paper",
+          "source-flan-paper",
+          "source-deepseek-r1-paper"
+        ]
+      },
+      {
+        "id": "long-term-legacy",
+        "label": {
+          "zh": "长期影响",
+          "en": "Long-Term Legacy"
+        },
+        "html": {
+          "zh": "专家通常把后训练视为基础模型走向 ChatGPT 式产品和推理模型的关键分水岭。它把连接主义的规模化表示学习，推进为可通过反馈、任务和互动持续塑形的智能系统工程。",
+          "en": "Experts generally treat post-training as a key boundary between foundation models and ChatGPT-style products or reasoning models. It turns connectionist representation learning at scale into intelligent-system engineering that can be shaped by feedback, tasks, and interaction."
+        },
+        "sourceIds": [
+          "source-instructgpt-paper",
+          "source-deepseek-r1-paper"
+        ]
+      }
+    ],
+    "analysis": null,
+    "quizzes": [],
+    "archive": {
+      "eventFile": "archive/events/2022-post-training-intelligence/event.json",
+      "variantFile": "archive/events/2022-post-training-intelligence/variants/deep-learning.json",
+      "presentationMode": "preserve-legacy"
+    },
+    "photos": [],
+    "videoUrl": "",
+    "quote": {
+      "en": "\"Training language models to follow instructions with human feedback\"",
+      "zh": "\"用人类反馈训练语言模型遵循指令\""
+    },
+    "quoteMeta": {
+      "speaker": {
+        "en": "Long Ouyang et al.",
+        "zh": "欧阳龙等"
+      },
+      "workTitle": {
+        "en": "Training language models to follow instructions with human feedback",
+        "zh": "用人类反馈训练语言模型遵循指令"
+      },
+      "workAuthors": {
+        "en": "Long Ouyang et al., arXiv, 2022",
+        "zh": "欧阳龙等，arXiv，2022"
+      },
+      "sourceLabel": {
+        "en": "InstructGPT arXiv paper page",
+        "zh": "InstructGPT arXiv 论文页面"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2203.02155"
+    },
+    "quotePage": {
+      "en": "InstructGPT paper",
+      "zh": "InstructGPT 论文"
+    },
+    "quoteAttribution": {
+      "en": "<em>Training language models to follow instructions with human feedback</em>, Long Ouyang et al., arXiv, 2022",
+      "zh": "《用人类反馈训练语言模型遵循指令》，欧阳龙等，arXiv，2022"
+    }
+  },
+  {
     "id": "milestone-2023-agents",
     "archiveEventId": "2023-agents",
     "archiveVariantId": "deep-learning",
@@ -71365,11 +75730,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 190,
+    "order": 250,
     "year": 2023,
     "date": "2023",
     "title": {
@@ -71717,11 +76082,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 200,
+    "order": 260,
     "year": 2024,
     "date": "2024",
     "title": {
@@ -72113,11 +76478,11 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "深度学习分支",
-        "en": "Deep Learning"
+        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
-    "order": 210,
+    "order": 270,
     "year": 2025,
     "date": "2025",
     "title": {
