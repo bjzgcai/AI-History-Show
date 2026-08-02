@@ -229,7 +229,7 @@ assert.equal(
 console.log('PASS RNN overview uses the first detail image by default');
 
 const highwayMilestone = milestones.find((item) => item.id === 'milestone-2014-highway-network');
-const highwayFirstImage = 'resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png';
+const highwayFirstImage = 'resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg';
 assert.equal(
     highwayMilestone.resources.overviewImage,
     undefined,
@@ -238,14 +238,14 @@ assert.equal(
 assert.equal(
     highwayMilestone.resources.images[0],
     highwayFirstImage,
-    'Highway Networks should preserve its first image'
+    'Highway Networks should lead with the Jürgen Schmidhuber portrait'
 );
 assert.equal(
     overview.getPrimaryImage(highwayMilestone),
     highwayFirstImage,
-    'Highway Networks overview should use its first image'
+    'Highway Networks overview should use the Jürgen Schmidhuber portrait'
 );
-console.log('PASS Highway Networks overview uses the first detail image by default');
+console.log('PASS Highway Networks overview uses the Jürgen Schmidhuber portrait by default');
 
 const postTraining = milestones.find((item) => item.id === 'milestone-2022-post-training-intelligence');
 const postTrainingFirstImage =

@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-31 10:23
+// 生成时间: 2026-08-02 04:39
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -70370,8 +70370,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
-        "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg"
+        "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
+        "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png"
       ],
       "videos": [
         {
@@ -70386,39 +70386,11 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-2014-highway-network-architecture-01",
-        "asset-2014-highway-network-people-01"
+        "asset-2014-highway-network-people-01",
+        "asset-2014-highway-network-architecture-01"
       ]
     },
     "imageMeta": {
-      "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
-        "caption": {
-          "zh": "高速网络结构图 1",
-          "en": "Highway Networks structure diagram 1"
-        },
-        "subcaption": {
-          "zh": "展示高速网络的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of Highway Networks."
-        },
-        "license": {
-          "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "usage": {
-          "zh": "用于解释高速网络中的门控捷径与信息流。",
-          "en": "Used to explain gated shortcuts and information flow in Highway Networks."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "image"
-      },
       "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg": {
         "caption": {
           "zh": "于尔根·施密德胡伯肖像",
@@ -70450,6 +70422,34 @@ const milestones = [
           }
         },
         "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
+        "caption": {
+          "zh": "高速网络结构图 1",
+          "en": "Highway Networks structure diagram 1"
+        },
+        "subcaption": {
+          "zh": "展示高速网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Highway Networks."
+        },
+        "license": {
+          "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "usage": {
+          "zh": "用于解释高速网络中的门控捷径与信息流。",
+          "en": "Used to explain gated shortcuts and information flow in Highway Networks."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
         "type": "image"
       }
     },
@@ -83799,40 +83799,16 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg",
-        "resources/images/figures/authoritative/david-silver.jpg"
+        "resources/images/figures/authoritative/david-silver.jpg",
+        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2019-muzero-learned-model",
-        "asset-david-silver-commons-portrait"
+        "asset-david-silver-commons-portrait",
+        "asset-2019-muzero-learned-model"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
-        "caption": {
-          "zh": "MuZero 学习模型",
-          "en": "MuZero learned model"
-        },
-        "subcaption": {
-          "zh": "潜在模型规划的原创解释图。",
-          "en": "Original explainer for latent-model planning."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-nature-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -83861,6 +83837,30 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
+        "caption": {
+          "zh": "MuZero 学习模型",
+          "en": "MuZero learned model"
+        },
+        "subcaption": {
+          "zh": "潜在模型规划的原创解释图。",
+          "en": "Original explainer for latent-model planning."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-nature-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       }
     },
     "achievement": {
