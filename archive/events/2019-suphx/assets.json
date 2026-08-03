@@ -127,6 +127,15 @@
         "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
       }
     },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "curated-figure-scope",
+      "reason": {
+        "zh": "保留当前 Suphx 人物配置；该共同作者肖像仅作档案候选，不自动加入人物列表或详情图片。",
+        "en": "Preserve the current Suphx figure configuration. Keep this co-author portrait as an archival candidate and do not auto-add it to figures or detail images."
+      },
+      "reviewedAt": "2026-08-02"
+    },
     "usage": [
       "variant:gaming-ai"
     ],
@@ -157,6 +166,15 @@
         "zh": "图片来自微软研究院官方人物页；页面未声明再分发许可，对外发布前需复核授权。",
         "en": "Image from the official Microsoft Research profile; redistribution rights are not stated and must be reviewed before external publication."
       }
+    },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "curated-figure-scope",
+      "reason": {
+        "zh": "保留当前 Suphx 人物配置；该共同作者肖像仅作档案候选，不自动加入人物列表或详情图片。",
+        "en": "Preserve the current Suphx figure configuration. Keep this co-author portrait as an archival candidate and do not auto-add it to figures or detail images."
+      },
+      "reviewedAt": "2026-08-02"
     },
     "usage": [
       "variant:gaming-ai"

@@ -87,8 +87,17 @@
             }
         },
         "displayUsage": {
-            "zh": "用于识别 Highway Networks 共同作者克劳斯·格雷夫。",
-            "en": "Used to identify Highway Networks co-author Klaus Greff."
+            "zh": "候选肖像的构图与裁切显示不友好，暂不用于人物卡或详情图片；找到更合适的替代图后再复核。",
+            "en": "The candidate portrait has an unfriendly crop and composition for the UI. Keep it out of figure cards and detail images until a better replacement is reviewed."
+        },
+        "selectionReview": {
+            "status": "excluded-from-variants",
+            "reasonCode": "display-quality",
+            "reason": {
+                "zh": "构图与裁切显示不友好，不得自动加入详情图片列表。",
+                "en": "The crop and composition do not display well; do not auto-select this asset for detail images."
+            },
+            "reviewedAt": "2026-08-02"
         },
         "usage": ["variant:deep-learning"],
         "editable": true

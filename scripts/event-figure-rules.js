@@ -94,6 +94,10 @@ function isGroupPersonAsset(asset) {
     return /team|group|author group|researchers behind|团队|作者团队|研究团队|研究者群体/.test(text);
 }
 
+function isAssetSelectionExcluded(asset) {
+    return String(asset && asset.selectionReview && asset.selectionReview.status).trim() === 'excluded-from-variants';
+}
+
 function assetMatchesFigure(asset, figure) {
     if (!asset || !figure) return false;
     if (figure.avatar && figure.avatar === asset.path) return true;
@@ -151,6 +155,13 @@ function auditVariant({ eventId, event, variant, assets, catalog }) {
     const issues = [];
     const first = firstImageAsset(variant, assetsById);
     const ai100Contributors = variant.storylineId === STORYLINE_ID ? catalog.get(eventId) || [] : [];
+    const excludedAssetIds = (variant.assetIds || []).filter((assetId) =>
+        isAssetSelectionExcluded(assetsById.get(assetId))
+    );
+
+    if (excludedAssetIds.length > 0) {
+        issues.push(`selected assets are explicitly excluded from variants: ${excludedAssetIds.join(', ')}`);
+    }
 
     if (!first.asset) {
         issues.push('first image/home image is missing from selected assets');
@@ -235,6 +246,7 @@ function auditArchive(root) {
 module.exports = {
     auditArchive,
     auditVariant,
+    isAssetSelectionExcluded,
     isPersonAsset,
     isGroupPersonAsset
 };
