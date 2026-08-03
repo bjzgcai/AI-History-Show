@@ -217,6 +217,15 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
 }
 console.log('PASS configured overview images and detail image order compile from Archive variants');
 
+const sarsaMilestone = milestones.find((item) => item.id === 'milestone-ai100-1994-sarsa');
+assert.equal(sarsaMilestone.commentaryMedia.hidden, true, 'SARSA should hide its duplicate commentary media');
+assert.equal(
+    sarsaMilestone.resources.images[0],
+    'resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg',
+    'SARSA should keep its explainer in the detail image list'
+);
+console.log('PASS SARSA hides duplicate commentary media without removing the detail explainer');
+
 const rnnMilestone = milestones.find((item) => item.id === 'milestone-1986-rnn');
 const rnnPortrait = 'resources/images/1986-rnn/people/1986-rnn_people_01.png';
 assert.equal(rnnMilestone.resources.overviewImage, undefined, 'RNN should use the default first image');

@@ -15275,8 +15275,13 @@
             });
         }
 
+        function isUiCommentaryMediaHidden(raw) {
+            return Boolean(raw && raw.commentaryMedia && raw.commentaryMedia.hidden);
+        }
+
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
+            if (isUiCommentaryMediaHidden(vm && vm.raw)) return candidates;
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
             // The homepage/default image is always the first detail image unless an
             // explicit overview override is configured. A side-panel visual may
@@ -15668,7 +15673,10 @@
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
             const isHumanisticCycle = isHumanisticMilestone(raw);
-            const mediaHtml = buildUiMediaHtml(vm, { forceStaticImage: isHumanisticCycle });
+            const hideCommentaryMedia = isUiCommentaryMediaHidden(raw);
+            const mediaHtml = hideCommentaryMedia
+                ? ''
+                : buildUiMediaHtml(vm, { forceStaticImage: isHumanisticCycle });
             const mediaHasDedicatedVisual = mediaHtml.includes('ui-media-video')
                 || mediaHtml.includes('ui-side-visual')
                 || mediaHtml.includes('ui-side-demo-visual');

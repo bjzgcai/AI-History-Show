@@ -18,6 +18,9 @@
     "benchcouncil-canonical-2026-07-30",
     "source-reviewed"
   ],
+  "commentaryMedia": {
+    "hidden": true
+  },
   "visual": "configuredPaper",
   "visualModules": [
     {

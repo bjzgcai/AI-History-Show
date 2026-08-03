@@ -262,6 +262,7 @@ function applyVariantPresentation(milestone, variant) {
         'quoteAttribution',
         'quoteLabel',
         'sentiment',
+        'commentaryMedia',
         'realityLinks',
         'branchSummary',
         'branch'
