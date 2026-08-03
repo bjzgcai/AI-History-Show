@@ -48,8 +48,8 @@
         }
     ],
     "assetIds": [
-        "asset-2019-muzero-learned-model",
-        "asset-david-silver-commons-portrait"
+        "asset-david-silver-commons-portrait",
+        "asset-2019-muzero-learned-model"
     ],
     "sourceIds": ["source-david-silver-commons-portrait", "source-nature-paper", "source-arxiv-preprint", "source-deepmind-muzero-blog"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],

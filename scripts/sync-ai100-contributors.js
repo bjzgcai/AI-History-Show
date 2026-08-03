@@ -185,7 +185,9 @@ function syncItem(item, ref, registry) {
             ? { eventId: item.eventId, figure: localCandidate }
             : findFigureCandidate(name, registry, item.eventId);
         const figure = normalizeFigure(name, item.work, item.publications, candidate, index);
-        const portrait = findPortraitCandidate(name, registry, item.eventId);
+        const portrait = findPortraitCandidate(name, registry, item.eventId, {
+            allowExcludedFromVariants: true
+        });
         figure.avatar = portrait ? portrait.asset.path : '';
         return figure;
     });

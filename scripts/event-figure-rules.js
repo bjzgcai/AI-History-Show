@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const { namesMatch, splitContributors } = require('./ai100-contributors');
+const { isAssetSelectionExcluded } = require('./asset-selection-review');
 
 const STORYLINE_ID = 'bench-council-ai100';
 const CATALOG_PATH = path.join(
@@ -151,6 +152,13 @@ function auditVariant({ eventId, event, variant, assets, catalog }) {
     const issues = [];
     const first = firstImageAsset(variant, assetsById);
     const ai100Contributors = variant.storylineId === STORYLINE_ID ? catalog.get(eventId) || [] : [];
+    const excludedAssetIds = (variant.assetIds || []).filter((assetId) =>
+        isAssetSelectionExcluded(assetsById.get(assetId))
+    );
+
+    if (excludedAssetIds.length > 0) {
+        issues.push(`selected assets are explicitly excluded from variants: ${excludedAssetIds.join(', ')}`);
+    }
 
     if (!first.asset) {
         issues.push('first image/home image is missing from selected assets');
@@ -235,6 +243,7 @@ function auditArchive(root) {
 module.exports = {
     auditArchive,
     auditVariant,
+    isAssetSelectionExcluded,
     isPersonAsset,
     isGroupPersonAsset
 };

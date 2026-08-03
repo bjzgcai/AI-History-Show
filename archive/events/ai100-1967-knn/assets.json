@@ -43,6 +43,15 @@
       },
       "sourceUrl": "https://news.stanford.edu/__data/assets/image/0024/81078/2012-04-12-Obit-cover.jpeg"
     },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "historical-reference",
+      "reason": {
+        "zh": "重复的远程肖像引用；页面已经选择同一人物的本地图片，运行时不得重新选择此外链。",
+        "en": "Duplicate remote portrait reference. The page already selects a local image of the same person, so this external URL must not be selected at runtime."
+      },
+      "reviewedAt": "2026-08-02"
+    },
     "usage": [
       "variant:bench-council-ai100"
     ],
