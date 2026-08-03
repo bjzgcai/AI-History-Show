@@ -140,6 +140,41 @@ assert.ok(
     'a related-person first image should be rejected'
 );
 
+const nonPersonOverview = auditVariant({
+    eventId: 'test-event',
+    event: genericEvent,
+    variant: {
+        storylineId: 'test',
+        assetIds: ['primary', 'cover'],
+        overviewImageAssetId: 'cover'
+    },
+    assets: [
+        image('primary', 'portrait', 'Primary Person portrait', 'resources/images/primary.png'),
+        image('cover', 'hero-image', 'First-edition book cover', 'resources/images/book-cover.jpg')
+    ],
+    catalog: new Map()
+});
+assert.deepEqual(nonPersonOverview.issues, [], 'a non-person overview override should be allowed');
+
+const relatedPersonOverview = auditVariant({
+    eventId: 'test-event',
+    event: genericEvent,
+    variant: {
+        storylineId: 'test',
+        assetIds: ['primary', 'related'],
+        overviewImageAssetId: 'related'
+    },
+    assets: [
+        image('primary', 'portrait', 'Primary Person portrait', 'resources/images/primary.png'),
+        image('related', 'portrait', 'Related Person portrait', 'resources/images/related.png')
+    ],
+    catalog: new Map()
+});
+assert.ok(
+    relatedPersonOverview.issues.some((issue) => issue.includes('overviewImageAssetId must use the primary person')),
+    'a person overview override should still use the primary person'
+);
+
 const ai100Catalog = new Map([['ai100-1994-sarsa', ['Gavin Rummery', 'Mahesan Niranjan']]]);
 const ai100WrongOrder = auditVariant({
     eventId: 'ai100-1994-sarsa',
