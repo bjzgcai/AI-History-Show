@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const { namesMatch, splitContributors } = require('./ai100-contributors');
+const { isAssetSelectionExcluded } = require('./asset-selection-review');
 
 const STORYLINE_ID = 'bench-council-ai100';
 const CATALOG_PATH = path.join(
@@ -92,10 +93,6 @@ function isGroupPersonAsset(asset) {
         .join(' ')
         .toLowerCase();
     return /team|group|author group|researchers behind|团队|作者团队|研究团队|研究者群体/.test(text);
-}
-
-function isAssetSelectionExcluded(asset) {
-    return String(asset && asset.selectionReview && asset.selectionReview.status).trim() === 'excluded-from-variants';
 }
 
 function assetMatchesFigure(asset, figure) {

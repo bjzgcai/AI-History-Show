@@ -218,7 +218,7 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
 console.log('PASS configured overview images and detail image order compile from Archive variants');
 
 const sarsaMilestone = milestones.find((item) => item.id === 'milestone-ai100-1994-sarsa');
-assert.equal(sarsaMilestone.commentaryMedia.hidden, true, 'SARSA should hide its duplicate commentary media');
+assert.equal(sarsaMilestone.commentaryMedia.hideVisual, true, 'SARSA should hide its duplicate commentary visual');
 assert.equal(
     sarsaMilestone.resources.images[0],
     'resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg',

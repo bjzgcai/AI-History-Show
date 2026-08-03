@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-03 01:11
+// 生成时间: 2026-08-03 01:27
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -54019,7 +54019,7 @@ const milestones = [
       "zh": "《使用连接主义系统的在线 Q 学习》"
     },
     "commentaryMedia": {
-      "hidden": true
+      "hideVisual": true
     }
   },
   {
