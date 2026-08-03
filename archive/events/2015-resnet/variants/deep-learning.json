@@ -53,11 +53,11 @@
   "assetIds": [
     "asset-kaiming-he",
     "asset-2015-resnet-architecture-01",
+    "asset-2015-resnet-architecture-02",
     "asset-2015-resnet-people-04",
     "asset-2015-resnet-people-03",
     "asset-2015-resnet-people-02",
-    "asset-2015-resnet-people-01",
-    "asset-2015-resnet-architecture-02"
+    "asset-2015-resnet-people-01"
   ],
   "sourceIds": [
     "source-deep-residual-learning-for-image-recognition",

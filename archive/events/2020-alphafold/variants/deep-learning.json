@@ -54,12 +54,12 @@
     "asset-2020-alphafold-john-jumper-external",
     "asset-2020-alphafold2-structure-pipeline",
     "asset-2020-alphafold-architecture-01",
-    "asset-2020-alphafold-historical-01",
     "asset-2020-alphafold-architecture-02",
-    "asset-2020-alphafold-historical-02",
-    "asset-2020-alphafold-papers-01",
     "asset-2020-alphafold-people-01",
-    "asset-2020-alphafold-people-02"
+    "asset-2020-alphafold-people-02",
+    "asset-2020-alphafold-historical-01",
+    "asset-2020-alphafold-historical-02",
+    "asset-2020-alphafold-papers-01"
   ],
   "sourceIds": [
     "source-highly-accurate-protein-structure-prediction-with-alphafold",

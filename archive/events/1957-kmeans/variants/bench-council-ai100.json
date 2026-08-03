@@ -40,9 +40,9 @@
   ],
   "assetIds": [
     "asset-1957-kmeans-bell-labs-holmdel",
-    "asset-1957-kmeans-iris-flowers-clustering-kmeans",
     "asset-1957-kmeans-centroid-loop",
-    "asset-1957-kmeans-cluster-update"
+    "asset-1957-kmeans-cluster-update",
+    "asset-1957-kmeans-iris-flowers-clustering-kmeans"
   ],
   "sourceIds": [
     "source-bell-labs-k-means-history-note",

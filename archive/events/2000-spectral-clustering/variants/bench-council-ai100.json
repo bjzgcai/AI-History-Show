@@ -40,9 +40,9 @@
   ],
   "assetIds": [
     "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017",
-    "asset-2000-spectral-clustering-6n-graf",
     "asset-2000-spectral-clustering-graph-cut",
-    "asset-2000-spectral-clustering-eigen-map"
+    "asset-2000-spectral-clustering-eigen-map",
+    "asset-2000-spectral-clustering-6n-graf"
   ],
   "sourceIds": [
     "source-normalized-cuts-and-image-segmentation",

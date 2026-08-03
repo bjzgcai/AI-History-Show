@@ -3,7 +3,7 @@
     "id": "asset-1980-xcon-r1-rule-configurator",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_rule-configurator.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "规则式配置器",
       "en": "Rule-based configurator"
@@ -29,7 +29,7 @@
     "id": "asset-1980-xcon-r1-order-flow",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "计算机订单流程",
       "en": "Computer-order flow"

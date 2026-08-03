@@ -40,9 +40,9 @@
   ],
   "assetIds": [
     "asset-1996-dbscan-sfu-professor-martin-ester-2019",
-    "asset-1996-dbscan-dbscan-density-data",
     "asset-1996-dbscan-density-reachability",
-    "asset-1996-dbscan-noise-core-border"
+    "asset-1996-dbscan-noise-core-border",
+    "asset-1996-dbscan-dbscan-density-data"
   ],
   "sourceIds": [
     "source-dbscan-revisited-revisited",

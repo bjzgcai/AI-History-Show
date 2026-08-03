@@ -204,7 +204,7 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
     ['milestone-2016-alphago', 'resources/images/figures/authoritative/david-silver.jpg'],
     [
         'milestone-2025-llm-competition',
-        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png'
+        'resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg'
     ]
 ]) {
     const milestone = milestones.find((item) => item.id === milestoneId);
