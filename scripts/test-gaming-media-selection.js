@@ -75,6 +75,14 @@ assert.equal(
 );
 console.log('PASS MuZero detail media leads with David Silver');
 
+const logistello = milestones.find((item) => item.id === 'milestone-gaming-ai-1997-logistello');
+assert.equal(
+    logistello.resources.images[0],
+    'resources/images/figures/authoritative/michael-buro.jpg',
+    'the Logistello detail image rail should lead with Michael Buro'
+);
+console.log('PASS Logistello detail media leads with Michael Buro');
+
 const indexHtml = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 assert.match(indexHtml, /<script src="shared\/gaming-media-selection\.js"><\/script>/);
 assert.match(indexHtml, /GamingMediaSelection\.findGameplayMedia\(images/);

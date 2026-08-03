@@ -487,7 +487,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
+    /function getUiDetailImages\(vm\)[\s\S]*?if \(isUiCommentaryMediaHidden\(vm && vm\.raw\)\) return candidates[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should preserve the first candidate while excluding a later side-panel image'
 );
 assert.doesNotMatch(
@@ -523,8 +523,8 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /const mediaHtml = buildUiMediaHtml\(vm, \{ forceStaticImage: isHumanisticCycle \}\)[\s\S]*?uiText\('Sources', '资料来源'\)[\s\S]*?uiText\('Commentary & Media', '评论与媒体'\)/,
-    'humanistic explainers should render as static commentary media directly after sources'
+    /function isUiCommentaryMediaHidden\(raw\)[\s\S]*?const hideCommentaryMedia = isUiCommentaryMediaHidden\(raw\)[\s\S]*?const mediaHtml = hideCommentaryMedia[\s\S]*?: buildUiMediaHtml\(vm, \{ forceStaticImage: isHumanisticCycle \}\)[\s\S]*?uiText\('Sources', '资料来源'\)[\s\S]*?uiText\('Commentary & Media', '评论与媒体'\)/,
+    'event-level commentary media visibility should be honored before rendering the side panel'
 );
 assert.match(
     indexHtml,
