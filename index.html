@@ -15275,8 +15275,13 @@
             });
         }
 
+        function shouldHideUiCommentaryMediaVisual(raw) {
+            return Boolean(raw && raw.commentaryMedia && raw.commentaryMedia.hideVisual);
+        }
+
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
+            if (shouldHideUiCommentaryMediaVisual(vm && vm.raw)) return candidates;
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
             // The homepage/default image is always the first detail image unless an
             // explicit overview override is configured. A side-panel visual may
@@ -15558,7 +15563,7 @@
             `;
         }
 
-        function buildUiMediaHtml(vm, { forceStaticImage = false } = {}) {
+        function buildUiMediaHtml(vm, { forceStaticImage = false, hideVisual = false } = {}) {
             const raw = vm.raw || {};
             const gameEvolutionModule = getUiGameEvolutionModule(raw);
             if (gameEvolutionModule && !forceStaticImage) {
@@ -15566,7 +15571,7 @@
             }
 
             if (vm.videoEmbedUrl && !forceStaticImage) {
-                const posterUrl = getUiMediaVisualImage(vm);
+                const posterUrl = hideVisual ? '' : getUiMediaVisualImage(vm);
                 const posterMeta = posterUrl ? buildArchivePhotoMeta(vm, posterUrl) : null;
                 const posterHtml = posterUrl
                     ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(posterMeta && posterMeta.name || tx('archiveImage'))}">`
@@ -15583,6 +15588,8 @@
                     </button>
                 `;
             }
+
+            if (hideVisual) return '';
 
             const imageUrl = getUiMediaVisualImage(vm);
             if (imageUrl) {
@@ -15668,7 +15675,11 @@
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
             const isHumanisticCycle = isHumanisticMilestone(raw);
-            const mediaHtml = buildUiMediaHtml(vm, { forceStaticImage: isHumanisticCycle });
+            const hideCommentaryMediaVisual = shouldHideUiCommentaryMediaVisual(raw);
+            const mediaHtml = buildUiMediaHtml(vm, {
+                forceStaticImage: isHumanisticCycle,
+                hideVisual: hideCommentaryMediaVisual
+            });
             const mediaHasDedicatedVisual = mediaHtml.includes('ui-media-video')
                 || mediaHtml.includes('ui-side-visual')
                 || mediaHtml.includes('ui-side-demo-visual');

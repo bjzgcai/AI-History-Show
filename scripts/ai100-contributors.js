@@ -3,6 +3,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const { isAssetSelectionExcluded } = require('./asset-selection-review');
+
 const NAME_ALIASES = {
     'a joseph hoane jr': 'arthur hoane',
     'diederik p kingma': 'diederik kingma',
@@ -263,9 +265,11 @@ function getSourceUrl(entry) {
     ).trim();
 }
 
-function findPortraitCandidate(name, registry, preferredEventId) {
+function findPortraitCandidate(name, registry, preferredEventId, options = {}) {
+    const allowExcludedFromVariants = options.allowExcludedFromVariants === true;
     return registry.assets
         .filter((entry) => !String(entry.asset.id || '').startsWith('asset-ai100-contributor-'))
+        .filter((entry) => allowExcludedFromVariants || !isAssetSelectionExcluded(entry.asset))
         .filter((entry) => entry.personNames.some((personName) => namesMatch(name, personName)))
         .filter((entry) => isPortraitCandidateAsset(entry.asset, name))
         .filter((entry) => !/^https?:\/\//i.test(String(entry.asset.path || '')))

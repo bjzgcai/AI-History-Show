@@ -98,6 +98,15 @@
         "en": "Migrated from legacy media metadata; verify rights before publication."
       }
     },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "historical-reference",
+      "reason": {
+        "zh": "旧版视频截图，仅作历史资料保留；页面已有更合适的杰弗里·辛顿肖像，不应重复加入。",
+        "en": "Legacy video frame retained only as historical material. A more suitable Geoffrey Hinton portrait is already selected, so this asset should not be added."
+      },
+      "reviewedAt": "2026-08-02"
+    },
     "usage": [
       "variant:deep-learning"
     ],
