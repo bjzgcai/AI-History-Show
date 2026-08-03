@@ -6,6 +6,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const { auditVariant, isAssetSelectionExcluded } = require('./event-figure-rules');
+const { findPortraitCandidate } = require('./ai100-contributors');
+const { validateAssetSelectionReview } = require('./asset-selection-review');
+
+const root = path.join(__dirname, '..');
 
 function image(id, role, caption, path = `resources/images/${id}.png`) {
     return {
@@ -91,6 +95,48 @@ excludedPortrait.selectionReview = {
     reviewedAt: '2026-08-02'
 };
 assert.equal(isAssetSelectionExcluded(excludedPortrait), true, 'selection review should identify excluded assets');
+assert.deepEqual(validateAssetSelectionReview(excludedPortrait.selectionReview), []);
+assert.ok(
+    validateAssetSelectionReview({
+        status: 'excluded',
+        reasonCode: 'unknown',
+        reason: { en: '', zh: '' },
+        reviewedAt: '2026-02-30'
+    }).length >= 4,
+    'selection review schema should reject invalid status, reason, localization, and dates'
+);
+
+const excludedPortraitCandidate = image(
+    'excluded-sync-candidate',
+    'portrait',
+    'Primary Person portrait',
+    'resources/images/figures/authoritative/michael-buro.jpg'
+);
+excludedPortraitCandidate.selectionReview = excludedPortrait.selectionReview;
+const excludedPortraitRegistry = {
+    root,
+    figures: [],
+    assets: [
+        {
+            eventId: 'test-event',
+            asset: excludedPortraitCandidate,
+            source: null,
+            personNames: ['Primary Person']
+        }
+    ]
+};
+assert.equal(
+    findPortraitCandidate('Primary Person', excludedPortraitRegistry, 'test-event'),
+    undefined,
+    'variant portrait selection should ignore explicitly excluded assets by default'
+);
+assert.equal(
+    findPortraitCandidate('Primary Person', excludedPortraitRegistry, 'test-event', {
+        allowExcludedFromVariants: true
+    }).asset.id,
+    excludedPortraitCandidate.id,
+    'figure avatars may explicitly retain an excluded portrait while awaiting a replacement'
+);
 
 const excludedSelection = auditVariant({
     eventId: 'test-event',
@@ -117,7 +163,6 @@ const archiveExclusions = {
     ],
     '2014-highway-network': [['asset-2014-highway-network-klaus-greff', 'display-quality']]
 };
-const root = path.join(__dirname, '..');
 for (const [eventId, exclusions] of Object.entries(archiveExclusions)) {
     const eventDir = path.join(root, 'archive', 'events', eventId);
     const assets = JSON.parse(fs.readFileSync(path.join(eventDir, 'assets.json'), 'utf8'));
