@@ -501,22 +501,6 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
             addError(filePath, 'variant overviewImageAssetId must reference an image, SVG, or GIF asset.');
         }
     }
-    if (variant.commentaryMedia !== undefined) {
-        if (!isObject(variant.commentaryMedia)) {
-            addError(filePath, 'variant commentaryMedia must be an object.');
-        } else {
-            const unsupportedKeys = Object.keys(variant.commentaryMedia).filter((key) => key !== 'hideVisual');
-            if (unsupportedKeys.length > 0) {
-                addError(filePath, `variant commentaryMedia has unsupported fields: ${unsupportedKeys.join(', ')}.`);
-            }
-            if (
-                variant.commentaryMedia.hideVisual !== undefined &&
-                typeof variant.commentaryMedia.hideVisual !== 'boolean'
-            ) {
-                addError(filePath, 'variant commentaryMedia.hideVisual must be a boolean.');
-            }
-        }
-    }
     for (const claimId of variant.claimIds || []) {
         if (!claimIds.has(claimId)) addError(filePath, `variant references missing claimId: ${claimId}`);
     }

@@ -15115,13 +15115,8 @@
             });
         }
 
-        function shouldHideUiCommentaryMediaVisual(raw) {
-            return Boolean(raw && raw.commentaryMedia && raw.commentaryMedia.hideVisual);
-        }
-
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
-            if (shouldHideUiCommentaryMediaVisual(vm && vm.raw)) return candidates;
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
             return window.EventMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
         }
@@ -15326,9 +15321,7 @@
             `;
         }
 
-        function buildUiMediaHtml(vm, { hideVisual = false } = {}) {
-            if (hideVisual) return '';
-
+        function buildUiMediaHtml(vm) {
             const imageUrl = getUiMediaVisualImage(vm);
             if (!imageUrl) return '';
             const meta = buildArchivePhotoMeta(vm, imageUrl);
@@ -15398,10 +15391,7 @@
 
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
-            const hideCommentaryMediaVisual = shouldHideUiCommentaryMediaVisual(raw);
-            const mediaHtml = buildUiMediaHtml(vm, {
-                hideVisual: hideCommentaryMediaVisual
-            });
+            const mediaHtml = buildUiMediaHtml(vm);
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
                 buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),

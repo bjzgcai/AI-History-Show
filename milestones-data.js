@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-03 05:10
+// 生成时间: 2026-08-03 05:27
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -3337,120 +3337,24 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg",
         "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
         "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
         "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
-        "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
-        "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg"
+        "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg"
       ],
       "overviewImage": "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg",
       "overviewImageAssetId": "asset-1990-otter-manual-first-page",
       "videos": [],
       "assetIds": [
+        "asset-1990-otter-manual-first-page",
         "asset-1990-otter-input-clauses",
         "asset-1990-otter-proof-trace",
         "asset-1990-otter-given-clause",
-        "asset-1990-otter-clause-index",
-        "asset-1990-otter-manual-first-page"
+        "asset-1990-otter-clause-index"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg": {
-        "caption": {
-          "zh": "Otter 输入子句",
-          "en": "Otter input clauses"
-        },
-        "subcaption": {
-          "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。",
-          "en": "Original local explainer for turning assumptions and goals into Otter clause lists."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-otter-3-3-reference-manual",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
-      "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg": {
-        "caption": {
-          "zh": "Otter 证明轨迹",
-          "en": "Otter proof trace"
-        },
-        "subcaption": {
-          "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。",
-          "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-otter-3-3-reference-manual",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
-      "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg": {
-        "caption": {
-          "zh": "given-clause 证明循环",
-          "en": "Given-clause proof loop"
-        },
-        "subcaption": {
-          "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
-          "en": "Original local explainer based on OTTER 3.3 Reference Manual."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-otter-3-3-reference-manual",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
-      "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg": {
-        "caption": {
-          "zh": "子句索引地图",
-          "en": "Clause indexing map"
-        },
-        "subcaption": {
-          "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
-          "en": "Original local explainer based on OTTER 3.3 Reference Manual."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-otter-3-3-reference-manual",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
       "resources/images/external/1990-otter/otter-3-3-reference-manual-first-page.svg": {
         "caption": {
           "zh": "OTTER 3.3 参考手册首页",
@@ -3482,6 +3386,102 @@ const milestones = [
           }
         },
         "role": "paper-page",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg": {
+        "caption": {
+          "zh": "Otter 输入子句",
+          "en": "Otter input clauses"
+        },
+        "subcaption": {
+          "zh": "展示如何把假设与目标转成 Otter 子句列表的本地解释图。",
+          "en": "Original local explainer for turning assumptions and goals into Otter clause lists."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg": {
+        "caption": {
+          "zh": "Otter 证明轨迹",
+          "en": "Otter proof trace"
+        },
+        "subcaption": {
+          "zh": "展示 selected clause、归结、化简与矛盾闭合的本地解释图。",
+          "en": "Original local explainer for selected clauses, resolution, simplification, and contradiction."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg": {
+        "caption": {
+          "zh": "given-clause 证明循环",
+          "en": "Given-clause proof loop"
+        },
+        "subcaption": {
+          "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
+          "en": "Original local explainer based on OTTER 3.3 Reference Manual."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg": {
+        "caption": {
+          "zh": "子句索引地图",
+          "en": "Clause indexing map"
+        },
+        "subcaption": {
+          "zh": "依据 OTTER 3.3 参考手册 制作的本地解释图。",
+          "en": "Original local explainer based on OTTER 3.3 Reference Manual."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-otter-3-3-reference-manual",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "algorithm-explainer",
         "type": "svg"
       }
     },
@@ -53645,16 +53645,45 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg",
-        "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg"
+        "resources/images/bench-council-ai100/supporting/1994-sarsa-paper-record.svg",
+        "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1994-sarsa-explainer",
-        "asset-1994-sarsa-portrait"
+        "asset-1994-sarsa-paper-record",
+        "asset-1994-sarsa-explainer"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/supporting/1994-sarsa-paper-record.svg": {
+        "caption": {
+          "zh": "SARSA 主论文记录",
+          "en": "SARSA primary publication record"
+        },
+        "subcaption": {
+          "zh": "拉默里与尼兰詹 1994 年 SARSA 相关主论文的本地档案资料卡。",
+          "en": "Local archival card for Rummery and Niranjan's 1994 publication associated with SARSA."
+        },
+        "sourceName": {
+          "en": "Primary publication record",
+          "zh": "主论文记录"
+        },
+        "sourceUrl": "https://www.cs.utexas.edu/~shivaram/readings/b2hd-RummeryNiranjan1994.html",
+        "license": {
+          "en": "Local original bibliographic card; it does not reproduce the publication layout or figures.",
+          "zh": "本地原创书目资料卡；不复制论文版式或图形。"
+        },
+        "sourceId": "source-1994-sarsa-primary",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "en": "Local original bibliographic card; it does not reproduce the publication layout or figures.",
+            "zh": "本地原创书目资料卡；不复制论文版式或图形。"
+          }
+        },
+        "role": "paper-page",
+        "type": "svg"
+      },
       "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg": {
         "caption": {
           "zh": "SARSA流程解释图",
@@ -53685,41 +53714,8 @@ const milestones = [
             "zh": "本地原创 SVG 重绘；未复制来源图形。"
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
-      },
-      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
-        "caption": {
-          "zh": "理查德·萨顿肖像",
-          "en": "Richard Sutton portrait"
-        },
-        "subcaption": {
-          "zh": "相关时序差分学习先驱",
-          "en": "Related temporal-difference learning pioneer"
-        },
-        "sourceName": {
-          "en": "Richard Sutton personal website",
-          "zh": "理查德·萨顿个人网站"
-        },
-        "sourceUrl": "http://incompleteideas.net/",
-        "license": {
-          "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
-          "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
-        },
-        "usage": {
-          "en": "Related researcher portrait",
-          "zh": "相关研究者肖像"
-        },
-        "sourceId": "source-1994-sarsa-portrait",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
-            "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
-          }
-        },
-        "role": "portrait",
-        "type": "image"
       }
     },
     "achievement": {
@@ -54088,9 +54084,6 @@ const milestones = [
     "quoteAttribution": {
       "en": "<em>On-line Q-Learning Using Connectionist Systems</em>",
       "zh": "《使用连接主义系统的在线 Q 学习》"
-    },
-    "commentaryMedia": {
-      "hideVisual": true
     }
   },
   {
@@ -75412,6 +75405,8 @@ const milestones = [
         "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg",
         "resources/images/figures/research-institution.png"
       ],
+      "overviewImage": "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
+      "overviewImageAssetId": "asset-2022-post-training-pipeline",
       "videos": [],
       "assetIds": [
         "asset-2022-post-training-instruction-tuning-ppt",

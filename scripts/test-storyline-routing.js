@@ -505,7 +505,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?if \(shouldHideUiCommentaryMediaVisual\(vm && vm\.raw\)\) return candidates[\s\S]*?EventMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
+    /function getUiDetailImages\(vm\)[\s\S]*?EventMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should always exclude the side-panel architecture or explanation image'
 );
 assert.doesNotMatch(
@@ -539,10 +539,15 @@ assert.match(
     /function getUiMediaVisualImage\(vm, images = getUiImageCandidates\(vm\)\)[\s\S]*?EventMediaSelection\.findCommentaryMedia\(images/,
     'all storylines should use the same architecture and explanation media selector'
 );
+assert.doesNotMatch(
+    indexHtml,
+    /shouldHideUiCommentaryMediaVisual|commentaryMedia\.hideVisual|hideCommentaryMediaVisual/,
+    'the unified media path should not retain event-specific visual suppression'
+);
 assert.match(
     indexHtml,
-    /function shouldHideUiCommentaryMediaVisual\(raw\)[\s\S]*?function buildUiMediaHtml\(vm, \{ hideVisual = false \} = \{\}\)[\s\S]*?if \(hideVisual\) return ''[\s\S]*?if \(!imageUrl\) return ''[\s\S]*?hideVisual: hideCommentaryMediaVisual/,
-    'event-level visual suppression and missing structural media should omit the commentary media card'
+    /function buildUiMediaHtml\(vm\)[\s\S]*?if \(!imageUrl\) return ''/,
+    'missing structural media should omit the commentary media card'
 );
 assert.match(
     indexHtml,
