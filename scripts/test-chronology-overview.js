@@ -204,7 +204,8 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
     ['milestone-2016-alphago', 'resources/images/figures/authoritative/david-silver.jpg'],
     [
         'milestone-2025-llm-competition',
-        'resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg'
+        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png',
+        'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png'
     ]
 ]) {
     const milestone = milestones.find((item) => item.id === milestoneId);
@@ -216,6 +217,16 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
     );
 }
 console.log('PASS configured overview images and detail image order compile from Archive variants');
+
+assert.deepEqual(
+    llmCompetition.resources.images.slice(0, 3),
+    [
+        'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png',
+        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png',
+        'resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg'
+    ],
+    'the 2025 LLM competition Archive order should place its context portrait after the first event reference image'
+);
 
 const rnnMilestone = milestones.find((item) => item.id === 'milestone-1986-rnn');
 const rnnPortrait = 'resources/images/1986-rnn/people/1986-rnn_people_01.png';

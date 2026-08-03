@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-03 05:46
+// 生成时间: 2026-08-03 06:28
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -76571,8 +76571,8 @@ const milestones = [
           "zh": "郑廉民"
         },
         "role": {
-          "en": "Co-creator of Chatbot Arena / LMArena",
-          "zh": "Chatbot Arena / LMArena 共同创建者"
+          "en": "Context figure and co-creator of Chatbot Arena / LMArena",
+          "zh": "Chatbot Arena / LMArena 共同创建者（背景人物）"
         },
         "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "avatarStyle": "",
@@ -76581,14 +76581,14 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+        "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
       ],
-      "overviewImage": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
-      "overviewImageAssetId": "asset-2025-llm-competition-lianmin-zheng",
+      "overviewImage": "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
+      "overviewImageAssetId": "asset-2025-llm-competition-historical-01",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/2025%E6%96%B0AI%E7%AB%9E%E6%8A%80%E5%9C%BA%EF%BC%9A%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4%E6%9C%80%E5%BC%BAAI.mp4",
@@ -76602,44 +76602,14 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-2025-llm-competition-lianmin-zheng",
         "asset-2025-llm-competition-architecture-01",
         "asset-2025-llm-competition-historical-01",
+        "asset-2025-llm-competition-lianmin-zheng",
         "asset-2025-llm-competition-historical-02",
         "asset-2025-llm-competition-historical-03"
       ]
     },
     "imageMeta": {
-      "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg": {
-        "caption": {
-          "zh": "郑廉民肖像",
-          "en": "Lianmin Zheng portrait"
-        },
-        "subcaption": {
-          "zh": "Chatbot Arena / LMArena 共同创建者。",
-          "en": "Co-creator of Chatbot Arena / LMArena."
-        },
-        "sourceName": {
-          "zh": "郑廉民个人主页",
-          "en": "Lianmin Zheng personal homepage"
-        },
-        "sourceUrl": "https://lmzheng.net/",
-        "license": {
-          "zh": "图片来自研究者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
-          "en": "Image from the researcher's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
-        },
-        "sourceId": "source-lianmin-zheng-personal-page",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "图片来自研究者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
-            "en": "Image from the researcher's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
-          },
-          "sourceUrl": "https://lmzheng.net/images/profile.jpg"
-        },
-        "role": "portrait",
-        "type": "image"
-      },
       "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
         "caption": {
           "zh": "大语言模型百花齐放结构图 1",
@@ -76686,6 +76656,36 @@ const milestones = [
           }
         },
         "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg": {
+        "caption": {
+          "zh": "郑廉民肖像",
+          "en": "Lianmin Zheng portrait"
+        },
+        "subcaption": {
+          "zh": "Chatbot Arena / LMArena 共同创建者。",
+          "en": "Co-creator of Chatbot Arena / LMArena."
+        },
+        "sourceName": {
+          "zh": "郑廉民个人主页",
+          "en": "Lianmin Zheng personal homepage"
+        },
+        "sourceUrl": "https://lmzheng.net/",
+        "license": {
+          "zh": "图片来自研究者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the researcher's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-lianmin-zheng-personal-page",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自研究者官方个人主页；页面未注明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the researcher's official personal homepage; redistribution rights are not stated and must be reviewed before publication."
+          },
+          "sourceUrl": "https://lmzheng.net/images/profile.jpg"
+        },
+        "role": "portrait",
         "type": "image"
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
