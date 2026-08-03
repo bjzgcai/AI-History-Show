@@ -6,10 +6,6 @@
     "zh": "Suphx：深度强化学习麻将 AI",
     "en": "Suphx: Mahjong with Deep Reinforcement Learning"
   },
-  "summary": {
-    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-    "en": "Game AI as a Testbed for Search, Learning and Planning"
-  },
   "description": {
     "zh": "<p>微软亚洲研究院团队开发的 Suphx 把深度强化学习带入日本麻将：四名玩家只能看到部分牌面，还要面对随机摸牌、复杂计分和跨多局的风险权衡。李俊杰、秦涛、刘铁岩、洪小文等作者与项目负责人把监督预训练、自我对弈强化学习、全局奖励预测、oracle guiding 和运行时策略适配组合成一套完整训练流程。</p><p>论文报告 Suphx 在天凤平台的稳定段位超过 99.99% 的注册玩家，并在与顶尖人类牌手的比较中表现出更稳定的长期收益。它把游戏 AI 的试验场从完全信息棋盘推进到多人、随机、隐藏信息环境，说明强策略不仅要选择高收益动作，也要学习何时防守、何时承担不确定性。</p>",
     "en": "<p>Microsoft Research Asia's Suphx brought deep reinforcement learning to Japanese mahjong, where four players see only partial information while coping with stochastic draws, complex scoring, and risk tradeoffs that unfold across many hands. Authors and project leaders including Junjie Li, Tao Qin, Tie-Yan Liu, and Hsiao-Wuen Hon combined supervised pretraining, self-play reinforcement learning, global reward prediction, oracle guiding, and run-time policy adaptation into a complete training pipeline.</p><p>The paper reported that Suphx achieved a stable rank above 99.99% of officially ranked Tenhou players and produced more consistent long-term results than most top human players. It moved game AI beyond perfect-information boards into multiplayer, stochastic, hidden-information settings where a strong policy must learn not only which action has value, but when to defend and when to accept uncertainty.</p>"

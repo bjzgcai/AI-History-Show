@@ -6,10 +6,6 @@
     "en": "SARSA",
     "zh": "SARSA"
   },
-  "summary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "description": {
     "en": "<p>Temporal-difference control needed a practical way to learn while following an exploratory policy. The algorithm later named SARSA updated action values from the actual state-action-reward-state-action sequence experienced by the agent.</p><p>SARSA is on-policy: the next action used in the update is sampled from the same policy that generates behavior. This makes its value estimates reflect exploratory choices and can produce safer behavior than an off-policy greedy target. Experts generally treat SARSA as a canonical on-policy temporal-difference control algorithm and a standard contrast with Q-learning. That comparison clarifies how learning targets encode the policy an agent is evaluating.</p>",
     "zh": "<p>时序差分控制需要一种能在执行探索策略时持续学习的实用方法。后来被称为 SARSA 的算法，依据智能体实际经历的“状态—动作—奖励—下一状态—下一动作”序列更新动作价值。</p><p>SARSA 是同策略算法：更新中使用的下一动作来自生成行为的同一个策略。因此，其价值估计会反映探索选择，在某些任务中可比离策略的贪心目标产生更安全的行为。专家通常把 SARSA 视为经典的同策略时序差分控制算法，也是与 Q-learning 对照的标准案例。这一对比清楚说明了学习目标如何编码智能体正在评估的策略。</p>"

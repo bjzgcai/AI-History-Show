@@ -1,6 +1,6 @@
 # AI100 Research Workspace
 
-This directory supports the AI History Museum / AI Top 100 Achievements research pass.
+This directory supports the AI History Museum / Top AI Achievements research pass.
 
 - `achievements.json`: structured BenchCouncil AI100 list generated from the source page.
 - `achievements.md`: human-readable copy of the list.

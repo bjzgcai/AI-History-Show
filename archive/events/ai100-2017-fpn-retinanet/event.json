@@ -6,10 +6,6 @@
     "en": "FPN and RetinaNet",
     "zh": "FPN 与 RetinaNet"
   },
-  "summary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "description": {
     "en": "<p>Detectors needed features at multiple scales, but image pyramids were expensive and deep feature maps lost fine spatial detail. Dense one-stage detectors also suffered from extreme imbalance between easy background examples and rare foreground objects.</p><p>FPN combines a top-down pathway with lateral connections to build semantically strong maps at several resolutions. RetinaNet pairs that pyramid with focal loss, reducing the influence of easy negatives so hard detection examples drive learning. Experts generally treat FPN as a standard multiscale backbone and focal loss as a decisive fix for one-stage detector imbalance. Together they narrowed the accuracy gap between one-stage and two-stage detection.</p>",
     "zh": "<p>检测器需要多尺度特征，但图像金字塔计算昂贵，而深层特征图又会丢失细粒度空间信息。稠密单阶段检测器还面临大量简单背景样本与少量前景物体之间的严重不平衡。</p><p>FPN 通过自顶向下路径和横向连接，在多个分辨率上构建语义强的特征图。RetinaNet 将该金字塔与焦点损失结合，降低简单负样本的影响，让困难检测样本主导学习。专家通常把 FPN 视为标准多尺度骨干，并把焦点损失视为解决单阶段检测样本不平衡的关键方法。二者共同缩小了单阶段与两阶段检测器之间的精度差距。</p>"

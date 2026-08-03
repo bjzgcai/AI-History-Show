@@ -5,10 +5,6 @@
     "zh": "AlexNet 与 ImageNet 突破",
     "en": "AlexNet and the ImageNet Breakthrough"
   },
-  "displaySummary": {
-    "en": "AI Top 100 Achievements",
-    "zh": "AI 百大成就"
-  },
   "displayDescription": {
     "en": "<p>In 2012, AlexNet won the ImageNet classification challenge by a large margin and made deep convolutional networks impossible for computer vision researchers to ignore. Its eight learned layers were trained on GPUs with ReLU activations, data augmentation, overlapping pooling, and dropout. No single ingredient was entirely new; the breakthrough came from combining them at ImageNet scale in a system that could actually be trained.</p><p>The result shifted vision research away from hand-designed features toward representations learned directly from large labeled datasets. AlexNet also established a durable engineering lesson: advances in data, compute, architecture, optimization, and regularization can reinforce one another. Later networks quickly surpassed its accuracy, but the 2012 paper remains the event that made scaled deep learning the field's central program.</p>",
     "zh": "<p>2012 年，AlexNet 以巨大优势赢得 ImageNet 图像分类挑战，使深度卷积网络成为计算机视觉无法忽视的方向。它的八个学习层在 GPU 上训练，并结合 ReLU 激活、数据增强、重叠池化和 dropout。单项技术并非全部首次出现，突破来自把它们组织成一个能在 ImageNet 规模上训练的完整系统。</p><p>这一结果推动视觉研究从手工设计特征转向直接从大规模标注数据中学习表示，也确立了持久的工程经验：数据、算力、架构、优化和正则化可以相互放大。后续网络很快超过 AlexNet 的精度，但 2012 年论文仍是规模化深度学习成为领域中心路线的标志。</p>"
@@ -22,8 +18,8 @@
   "assetIds": [
     "asset-alexnet-portrait",
     "asset-alexnet-architecture",
-    "asset-alexnet-deep-portrait",
-    "asset-alexnet-architecture-detail"
+    "asset-alexnet-architecture-detail",
+    "asset-alexnet-deep-portrait"
   ],
   "overviewImageAssetId": "asset-alexnet-portrait",
   "sourceIds": [

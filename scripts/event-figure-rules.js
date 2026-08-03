@@ -5,6 +5,7 @@ const path = require('node:path');
 
 const { namesMatch, splitContributors } = require('./ai100-contributors');
 const { isAssetSelectionExcluded } = require('./asset-selection-review');
+const eventMediaSelection = require('../shared/event-media-selection');
 
 const STORYLINE_ID = 'bench-council-ai100';
 const CATALOG_PATH = path.join(
@@ -95,6 +96,20 @@ function isGroupPersonAsset(asset) {
     return /team|group|author group|researchers behind|团队|作者团队|研究团队|研究者群体/.test(text);
 }
 
+function isGenericOrganizationAsset(asset) {
+    const text = [
+        asset && asset.path,
+        localized(asset && asset.role, 'en'),
+        localized(asset && asset.role, 'zh'),
+        localized(asset && asset.caption, 'en'),
+        localized(asset && asset.caption, 'zh')
+    ]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase();
+    return /research-institution\.png|institution(?:s)? icon|organization icon|机构图标|组织图标/.test(text);
+}
+
 function assetMatchesFigure(asset, figure) {
     if (!asset || !figure) return false;
     if (figure.avatar && figure.avatar === asset.path) return true;
@@ -122,9 +137,95 @@ function isPrimaryFigure(figure, index) {
         .join(' ')
         .toLowerCase();
     if (/related|supporting|context|historian|commentator|相关|背景|辅助/.test(role)) return false;
-    return /lead|first author|project leader|creator|co-author|author|inventor|founder|principal|主要|第一作者|项目负责人|推动者|提出者|共同作者|作者|发明者|创始人/.test(
+    return /lead|first author|project leader|creator|co-author|author|co-developer|developer|inventor|founder|principal|主要|第一作者|项目负责人|推动者|提出者|共同作者|作者|共同开发|开发者|发明者|创始人/.test(
         role
     );
+}
+
+function findPrimaryPersonAsset(selectedAssets, figures) {
+    const primaryFigures = figures.filter((figure, index) => isPrimaryFigure(figure, index));
+    const matchedAsset = selectedAssets.find(
+        (asset) =>
+            !isGenericOrganizationAsset(asset) &&
+            primaryFigures.some(
+                (figure) =>
+                    (figure.avatar && figure.avatar === asset.path) ||
+                    ((isPersonAsset(asset) || asset.role === 'hero-image') && assetMatchesFigure(asset, figure))
+            )
+    );
+    if (matchedAsset) return matchedAsset;
+    return selectedAssets.find((asset) => !isGenericOrganizationAsset(asset) && isGroupPersonAsset(asset)) || null;
+}
+
+function isArchitectureAsset(asset) {
+    const role = String(asset && asset.role ? asset.role : '').trim();
+    const assetPath = String(asset && asset.path ? asset.path : '').trim();
+    if (eventMediaSelection.isExplanationRole(role)) return false;
+    return eventMediaSelection.isArchitectureRole(role) || /(?:^|\/)architecture(?:\/|$)/i.test(assetPath);
+}
+
+function isExplanationAsset(asset) {
+    const role = String(asset && asset.role ? asset.role : '').trim();
+    const assetPath = String(asset && asset.path ? asset.path : '').trim();
+    if (isArchitectureAsset(asset)) return false;
+    return (
+        eventMediaSelection.isExplanationRole(role) ||
+        /(?:^|\/)explainers(?:\/|$)|diagram|flow|pipeline/i.test(assetPath)
+    );
+}
+
+function isFigurePersonAsset(asset, figures) {
+    if (!asset || isGenericOrganizationAsset(asset)) return false;
+    return (Array.isArray(figures) ? figures : []).some(
+        (figure) =>
+            (figure.avatar && figure.avatar === asset.path) ||
+            ((isPersonAsset(asset) || asset.role === 'hero-image') && assetMatchesFigure(asset, figure))
+    );
+}
+
+function isSupportingFigurePersonAsset(asset, figures) {
+    if (!asset || isGenericOrganizationAsset(asset)) return false;
+    return (Array.isArray(figures) ? figures : []).some(
+        (figure, index) =>
+            !isPrimaryFigure(figure, index) &&
+            ((figure.avatar && figure.avatar === asset.path) ||
+                ((isPersonAsset(asset) || asset.role === 'hero-image') && assetMatchesFigure(asset, figure)))
+    );
+}
+
+function isPersonDisplayAsset(event, variant, asset) {
+    if (!asset || isGenericOrganizationAsset(asset)) return false;
+    const figures = mergeFigures(event && event.figures, variant && variant.figures);
+    return isPersonAsset(asset) || isFigurePersonAsset(asset, figures);
+}
+
+function orderVariantAssetIds(event, variant, assets) {
+    const assetsById = new Map((Array.isArray(assets) ? assets : []).map((asset) => [asset.id, asset]));
+    const entries = (Array.isArray(variant && variant.assetIds) ? variant.assetIds : []).map((assetId, index) => ({
+        assetId,
+        asset: assetsById.get(assetId) || null,
+        index
+    }));
+    const figures = mergeFigures(event && event.figures, variant && variant.figures);
+    const primaryAsset = findPrimaryPersonAsset(entries.map((entry) => entry.asset).filter(Boolean), figures);
+
+    const groupFor = (entry) => {
+        if (primaryAsset && entry.asset === primaryAsset) return 0;
+        if (isArchitectureAsset(entry.asset)) return 1;
+        if (isPersonAsset(entry.asset) || isFigurePersonAsset(entry.asset, figures)) {
+            return isSupportingFigurePersonAsset(entry.asset, figures) ? 3 : 2;
+        }
+        if (isExplanationAsset(entry.asset)) return 4;
+        return 3;
+    };
+
+    return {
+        assetIds: entries
+            .slice()
+            .sort((left, right) => groupFor(left) - groupFor(right) || left.index - right.index)
+            .map((entry) => entry.assetId),
+        primaryAssetId: primaryAsset ? primaryAsset.id : ''
+    };
 }
 
 function firstImageAsset(variant, assetsById) {
@@ -155,9 +256,26 @@ function auditVariant({ eventId, event, variant, assets, catalog }) {
     const excludedAssetIds = (variant.assetIds || []).filter((assetId) =>
         isAssetSelectionExcluded(assetsById.get(assetId))
     );
+    const orderedAssets = orderVariantAssetIds(event, variant, assets);
+    const overviewAsset = variant.overviewImageAssetId ? assetsById.get(variant.overviewImageAssetId) || null : null;
 
     if (excludedAssetIds.length > 0) {
         issues.push(`selected assets are explicitly excluded from variants: ${excludedAssetIds.join(', ')}`);
+    }
+
+    if (JSON.stringify(variant.assetIds || []) !== JSON.stringify(orderedAssets.assetIds)) {
+        issues.push(
+            `assetIds must follow primary person, architecture, other people, supporting media, and explanation order: ${orderedAssets.assetIds.join(', ')}`
+        );
+    }
+
+    if (
+        orderedAssets.primaryAssetId &&
+        variant.overviewImageAssetId &&
+        variant.overviewImageAssetId !== orderedAssets.primaryAssetId &&
+        isPersonDisplayAsset(event, variant, overviewAsset)
+    ) {
+        issues.push(`overviewImageAssetId must use the primary person asset: ${orderedAssets.primaryAssetId}`);
     }
 
     if (!first.asset) {
@@ -243,7 +361,16 @@ function auditArchive(root) {
 module.exports = {
     auditArchive,
     auditVariant,
+    assetMatchesFigure,
+    isArchitectureAsset,
     isAssetSelectionExcluded,
+    isExplanationAsset,
+    isFigurePersonAsset,
+    isGenericOrganizationAsset,
+    isPersonDisplayAsset,
     isPersonAsset,
-    isGroupPersonAsset
+    isGroupPersonAsset,
+    isPrimaryFigure,
+    mergeFigures,
+    orderVariantAssetIds
 };

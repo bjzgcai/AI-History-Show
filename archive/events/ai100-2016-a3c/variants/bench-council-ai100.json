@@ -6,10 +6,6 @@
     "en": "A3C",
     "zh": "A3C 异步优势演员—评论家"
   },
-  "displaySummary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "displayDescription": {
     "en": "<p>Deep reinforcement learning systems often relied on large replay buffers and specialized hardware to stabilize correlated experience. A3C explored whether many lightweight agents acting in parallel could provide diverse updates without replay.</p><p>Multiple worker agents interact with separate environment copies and asynchronously update shared actor and critic parameters. Advantage estimates reduce variance by comparing observed returns with the critic baseline. Experts generally view A3C as an influential demonstration that asynchronous actor-critic training could be simple, stable, and broadly applicable. It helped popularize advantage-based policy optimization and parallel environment sampling.</p>",
     "zh": "<p>深度强化学习系统常依赖大型经验回放缓冲区和专用硬件，以缓解经验相关性。A3C 探索了多个轻量智能体并行行动，是否能在不使用回放的情况下提供多样化更新。</p><p>多个工作智能体与各自的环境副本交互，并异步更新共享的 actor 与 critic 参数。优势估计把观测回报与 critic 基线比较，从而降低方差。专家通常认为 A3C 有力证明了异步 actor-critic 训练可以保持简单、稳定并适用于多类任务。它推动了基于优势函数的策略优化和并行环境采样。</p>"

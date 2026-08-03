@@ -6,10 +6,6 @@
     "zh": "AI科学家与自主实验室",
     "en": "AI Scientists and Autonomous Laboratories"
   },
-  "summary": {
-    "zh": "大模型与科学智能",
-    "en": "Large Models and Scientific Intelligence"
-  },
   "description": {
     "zh": "2024年，AI开始能够自主进行科学研究。Sakana AI的AI Scientist系统能完全自主生成论文并通过顶会评审，伯克利的A-Lab通过AI控制实验室自主完成材料合成实验，日处理量达人类的50-100倍，标志着AI for 《科学》进入新阶段。",
     "en": "By 2024, AI systems began automating parts of scientific research. Sakana AI’s AI Scientist explored autonomous paper generation, while Berkeley’s A-Lab used AI-guided laboratories to plan, run and analyze experiments."

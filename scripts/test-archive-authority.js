@@ -7,7 +7,7 @@ const os = require('node:os');
 const path = require('node:path');
 
 const packageJson = require('../package.json');
-const { milestones } = require('../milestones-data.js');
+const { archiveStorylines, milestones } = require('../milestones-data.js');
 const sourcePurposeTaxonomy = require('../archive/taxonomies/source-purposes.json');
 const sourceSchema = require('../archive/schemas/source.schema.json');
 const sourceTypeTaxonomy = require('../archive/taxonomies/source-types.json');
@@ -189,7 +189,40 @@ assert.deepEqual(
     compiledArchive.milestones.length,
     'compiled Archive milestone IDs must be unique'
 );
+assert.deepEqual(archiveStorylines, compiledArchive.storylines, 'generated storyline metadata should match Archive');
 console.log('PASS production compiler emits Archive provenance');
+
+for (const eventEntry of fs.readdirSync(path.join(__dirname, '..', 'archive', 'events'), { withFileTypes: true })) {
+    if (!eventEntry.isDirectory()) continue;
+    const eventDir = path.join(__dirname, '..', 'archive', 'events', eventEntry.name);
+    const event = JSON.parse(fs.readFileSync(path.join(eventDir, 'event.json'), 'utf8'));
+    const variantsDir = path.join(eventDir, 'variants');
+    const variants = fs
+        .readdirSync(variantsDir)
+        .filter((file) => file.endsWith('.json'))
+        .map((file) => JSON.parse(fs.readFileSync(path.join(variantsDir, file), 'utf8')));
+    const ai100Variant = variants.find((variant) => variant.storylineId === 'bench-council-ai100');
+    if (ai100Variant) {
+        assert.equal(
+            ai100Variant.displaySummary,
+            undefined,
+            `${eventEntry.name} should inherit the BenchCouncil storyline title instead of duplicating displaySummary`
+        );
+    }
+    if (event.summary) {
+        assert.equal(
+            variants.some(
+                (variant) =>
+                    variant.displaySummary &&
+                    variant.displaySummary.en === event.summary.en &&
+                    variant.displaySummary.zh === event.summary.zh
+            ),
+            false,
+            `${eventEntry.name} event.summary should not duplicate a variant displaySummary`
+        );
+    }
+}
+console.log('PASS storyline labels have one Archive authority');
 
 assert.equal(milestones.length, 294, 'Archive runtime should contain all five storylines and 294 milestones');
 const annualAi100Milestones = milestones.filter(
