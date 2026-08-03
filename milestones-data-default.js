@@ -1,7 +1,95 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-03 06:47
+// 生成时间: 2026-08-03 07:55
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 5, milestones 294, errors 0
+
+const archiveStorylines = [
+  {
+    "id": "bench-council-ai100-2022-2023",
+    "title": {
+      "zh": "AI100 年度成就（2022-2023）",
+      "en": "AI100 Annual Achievements (2022-2023)"
+    },
+    "subtitle": {
+      "zh": "BenchCouncil 发布的 120 条年度入选记录。",
+      "en": "The 120-row annual selection published by BenchCouncil."
+    },
+    "description": {
+      "zh": "本独立故事线保留 BenchCouncil AI100（2022-2023）年度表的官方顺序与字段，并有意与长期 canonical AI100 故事线分开。",
+      "en": "This standalone storyline preserves the official order and fields of the BenchCouncil AI100 (2022-2023) annual table. It is intentionally separate from the long-term canonical AI100 storyline."
+    },
+    "type": "achievement-map",
+    "events": 120
+  },
+  {
+    "id": "bench-council-ai100",
+    "title": {
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
+    },
+    "subtitle": {
+      "zh": "严格对应 BenchCouncil AI100 根页面长期主表的 canonical 成就分支。",
+      "en": "The canonical long-term achievement table published at the BenchCouncil AI100 root page."
+    },
+    "description": {
+      "zh": "本分支严格包含 2026-07-30 获取的 BenchCouncil 长期 AI100 主表中的 119 个唯一成果；年度候选列表单独处理。",
+      "en": "This storyline contains exactly the 119 unique works in the BenchCouncil long-term AI100 table retrieved on 2026-07-30; annual candidate lists are tracked separately."
+    },
+    "type": "achievement-map",
+    "events": 119
+  },
+  {
+    "id": "deep-learning",
+    "title": {
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+    },
+    "subtitle": {
+      "zh": "从达特茅斯会议、感知机与连接主义退潮，到深度学习、基础模型和科学智能，回顾人工智能七十年的技术演进。",
+      "en": "From the Dartmouth workshop, the perceptron, and connectionism's retreat to deep learning, foundation models, and scientific intelligence, this storyline traces seventy years of AI's technical evolution."
+    },
+    "description": {
+      "zh": "这条故事线以连接主义的兴起、退潮与复兴为主轴：从感知机和 AI 寒冬，到反向传播、CNN、RNN、LSTM、AlexNet、Transformer 与基础模型，再延伸至科学智能和自主系统。",
+      "en": "This storyline follows the rise, retreat, and revival of connectionism: from the perceptron and AI winter through backpropagation, CNNs, RNNs, LSTMs, AlexNet, Transformers, and foundation models, then onward to scientific intelligence and autonomous systems."
+    },
+    "type": "timeline",
+    "events": 30
+  },
+  {
+    "id": "gaming-ai",
+    "title": {
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
+    },
+    "subtitle": {
+      "zh": "从搜索、评估函数、自我对弈到学习型规划系统的博弈 AI 演进。",
+      "en": "The evolution of game AI from search, evaluation functions, and self-play to learned planning systems."
+    },
+    "description": {
+      "zh": "AI 棋牌分支强调博弈系统的技术谱系、棋局演化、搜索与学习的结合，以及 AlphaGo、AlphaZero、MuZero 等节点之间的关系。",
+      "en": "The gaming AI storyline emphasizes technical lineage, game-state evolution, the combination of search and learning, and relationships among milestones such as AlphaGo, AlphaZero, and MuZero."
+    },
+    "type": "branch-timeline",
+    "events": 13
+  },
+  {
+    "id": "humanistic-cycle",
+    "title": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "description": {
+      "zh": "",
+      "en": ""
+    },
+    "type": "branch-timeline",
+    "events": 12
+  }
+];
 
 const milestones = [
   {
@@ -59519,8 +59607,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 10,
@@ -59531,8 +59619,8 @@ const milestones = [
       "en": "Turing Test"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -59970,8 +60058,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 20,
@@ -59982,8 +60070,8 @@ const milestones = [
       "en": "NP-Completeness"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -60414,8 +60502,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 30,
@@ -60426,8 +60514,8 @@ const milestones = [
       "en": "VC Theory"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -60877,8 +60965,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 40,
@@ -60889,8 +60977,8 @@ const milestones = [
       "en": "Logic Theorist"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -61335,8 +61423,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 50,
@@ -61347,8 +61435,8 @@ const milestones = [
       "en": "Wang's Algorithm"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -61766,8 +61854,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 60,
@@ -61778,8 +61866,8 @@ const milestones = [
       "en": "Davis-Putnam & DPLL"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -62238,8 +62326,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 70,
@@ -62250,8 +62338,8 @@ const milestones = [
       "en": "Resolution Method"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -62717,8 +62805,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 80,
@@ -62729,8 +62817,8 @@ const milestones = [
       "en": "Otter"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -62844,7 +62932,7 @@ const milestones = [
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg": {
@@ -62868,7 +62956,7 @@ const milestones = [
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg": {
@@ -62892,7 +62980,7 @@ const milestones = [
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg": {
@@ -62916,7 +63004,7 @@ const milestones = [
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
       }
     },
@@ -63249,8 +63337,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 90,
@@ -63261,8 +63349,8 @@ const milestones = [
       "en": "LISP"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -63662,8 +63750,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 100,
@@ -63674,8 +63762,8 @@ const milestones = [
       "en": "PROLOG"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -64155,8 +64243,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 110,
@@ -64167,8 +64255,8 @@ const milestones = [
       "en": "ELIZA"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -64212,21 +64300,21 @@ const milestones = [
       "images": [
         "resources/images/bench-council-ai100/photos/1966-eliza_joseph-weizenbaum-rit-1982.jpg",
         "resources/images/bench-council-ai100/explainers/1966-eliza_doctor-script.svg",
+        "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png",
+        "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg",
         "resources/images/bench-council-ai100/supporting/1966-eliza_weizenbaum-uszkoreit-2006.jpg",
         "resources/images/bench-council-ai100/papers/1966-eliza_original-source-page-9.jpg",
-        "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png",
-        "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png",
-        "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg"
+        "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-1966-eliza-weizenbaum-rit-1982",
         "asset-1966-eliza-doctor-script",
+        "asset-1966-eliza-ctss-system-diagram",
+        "asset-1966-eliza-terminal-dialog",
         "asset-1966-eliza-weizenbaum-uszkoreit-2006",
         "asset-1966-eliza-original-source-page-9",
-        "asset-1966-eliza-ctss-system-diagram",
-        "asset-1966-eliza-conversation-reconstruction",
-        "asset-1966-eliza-terminal-dialog"
+        "asset-1966-eliza-conversation-reconstruction"
       ]
     },
     "imageMeta": {
@@ -64264,6 +64352,60 @@ const milestones = [
         "caption": {
           "zh": "DOCTOR 脚本改写",
           "en": "DOCTOR script rewrite"
+        },
+        "subcaption": {
+          "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for ELIZA, based on the listed source material."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-eliza-cacm-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png": {
+        "caption": {
+          "zh": "CTSS 7090/7094 系统结构图",
+          "en": "CTSS 7090/7094 system diagram"
+        },
+        "subcaption": {
+          "zh": "1963 年《CTSS 程序员指南》中的系统结构图。",
+          "en": "System diagram from the 1963 CTSS Programmer's Guide."
+        },
+        "sourceName": {
+          "zh": "MIT 计算中心档案 / Wikimedia Commons",
+          "en": "MIT Computation Center archive / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png",
+        "license": {
+          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+        },
+        "sourceId": "source-ctss-programmers-guide-diagram",
+        "rights": {
+          "status": "public-domain",
+          "license": {
+            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
+            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png"
+        },
+        "role": "historical-diagram",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg": {
+        "caption": {
+          "zh": "终端对话",
+          "en": "Terminal dialog"
         },
         "subcaption": {
           "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
@@ -64344,36 +64486,6 @@ const milestones = [
         "role": "primary-source",
         "type": "image"
       },
-      "resources/images/bench-council-ai100/architecture/1966-eliza_ctss-system-diagram.png": {
-        "caption": {
-          "zh": "CTSS 7090/7094 系统结构图",
-          "en": "CTSS 7090/7094 system diagram"
-        },
-        "subcaption": {
-          "zh": "1963 年《CTSS 程序员指南》中的系统结构图。",
-          "en": "System diagram from the 1963 CTSS Programmer's Guide."
-        },
-        "sourceName": {
-          "zh": "MIT 计算中心档案 / Wikimedia Commons",
-          "en": "MIT Computation Center archive / Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png",
-        "license": {
-          "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
-          "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
-        },
-        "sourceId": "source-ctss-programmers-guide-diagram",
-        "rights": {
-          "status": "public-domain",
-          "license": {
-            "zh": "公有领域；Wikimedia Commons 文件页标注为 Public Domain。",
-            "en": "Public domain; identified as Public Domain on the Wikimedia Commons file page."
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Compatible_time-sharing_system_A_programmer%27s_guide_-_Figure_1.1.png"
-        },
-        "role": "historical-diagram",
-        "type": "image"
-      },
       "resources/images/bench-council-ai100/supporting/1966-eliza_conversation-reconstruction.png": {
         "caption": {
           "zh": "ELIZA 对话重建",
@@ -64403,30 +64515,6 @@ const milestones = [
         },
         "role": "historical-reconstruction",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/1966-eliza_terminal-dialog.svg": {
-        "caption": {
-          "zh": "终端对话",
-          "en": "Terminal dialog"
-        },
-        "subcaption": {
-          "zh": "ELIZA 的本地重绘图，依据页面列出的来源材料制作。",
-          "en": "Local redraw for ELIZA, based on the listed source material."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-eliza-cacm-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -64835,8 +64923,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 120,
@@ -64847,8 +64935,8 @@ const milestones = [
       "en": "SHRDLU"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -65310,8 +65398,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 130,
@@ -65322,8 +65410,8 @@ const milestones = [
       "en": "IBM Watson"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -65379,16 +65467,16 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/2011-ibm-watson_david-ferrucci.jpg",
-        "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg",
         "resources/images/external/2011-ibm-watson/deepqa-question-answering-pipeline.png",
-        "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg"
+        "resources/images/bench-council-ai100/explainers/2011-ibm-watson_evidence-ranking.svg",
+        "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg"
       ],
       "videos": [],
       "assetIds": [
         "asset-2011-ibm-watson-david-ferrucci",
-        "asset-2011-ibm-watson-ibmwatson",
         "asset-2011-ibm-watson-deepqa",
-        "asset-2011-ibm-watson-evidence-ranking"
+        "asset-2011-ibm-watson-evidence-ranking",
+        "asset-2011-ibm-watson-ibmwatson"
       ]
     },
     "imageMeta": {
@@ -65414,36 +65502,6 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg": {
-        "caption": {
-          "zh": "IBM Watson《危险边缘！》演示",
-          "en": "IBM Watson Jeopardy! demonstration"
-        },
-        "subcaption": {
-          "zh": "Watson 问答系统的公开演示界面。",
-          "en": "Public demonstration interface for the Watson question-answering system."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
-        "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-        },
-        "sourceId": "source-watson-beyond-jeopardy",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
-        },
-        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/external/2011-ibm-watson/deepqa-question-answering-pipeline.png": {
@@ -65499,6 +65557,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/2011-ibm-watson/ibm-watson-jeopardy-demonstration.jpg": {
+        "caption": {
+          "zh": "IBM Watson《危险边缘！》演示",
+          "en": "IBM Watson Jeopardy! demonstration"
+        },
+        "subcaption": {
+          "zh": "Watson 问答系统的公开演示界面。",
+          "en": "Public demonstration interface for the Watson question-answering system."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-watson-beyond-jeopardy",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/IBMWatson.jpg"
+        },
+        "role": "supporting-image",
+        "type": "image"
       }
     },
     "achievement": {
@@ -65846,8 +65934,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 140,
@@ -65858,8 +65946,8 @@ const milestones = [
       "en": "Christopher Strachey's Draughts"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -65902,18 +65990,18 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
-        "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
-        "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
+        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+        "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
+        "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg"
       ],
       "videos": [],
       "assetIds": [
         "asset-1951-strachey-draughts-christopher-strachey-portrait",
-        "asset-1951-strachey-draughts-program-external",
-        "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
-        "asset-1951-strachey-draughts-program-flow"
+        "asset-1951-strachey-draughts-program-flow",
+        "asset-1951-strachey-draughts-program-external",
+        "asset-1951-strachey-draughts-checkers-board-external"
       ]
     },
     "imageMeta": {
@@ -65950,6 +66038,54 @@ const milestones = [
         },
         "role": "hero-image",
         "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
+        "caption": {
+          "zh": "跳棋棋盘搜索",
+          "en": "Draughts board search"
+        },
+        "subcaption": {
+          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+          "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-logical-or-non-mathematical-programmes",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg": {
+        "caption": {
+          "zh": "早期游戏程序流程",
+          "en": "Early game-program flow"
+        },
+        "subcaption": {
+          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
+          "en": "Original local explainer based on Logical or non-mathematical programmes."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-logical-or-non-mathematical-programmes",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
         "caption": {
@@ -66010,54 +66146,6 @@ const milestones = [
         },
         "role": "supporting-image",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
-        "caption": {
-          "zh": "跳棋棋盘搜索",
-          "en": "Draughts board search"
-        },
-        "subcaption": {
-          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
-          "en": "Original local explainer based on Logical or non-mathematical programmes."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-logical-or-non-mathematical-programmes",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
-      "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg": {
-        "caption": {
-          "zh": "早期游戏程序流程",
-          "en": "Early game-program flow"
-        },
-        "subcaption": {
-          "zh": "依据 逻辑或非数学程序 制作的本地解释图。",
-          "en": "Original local explainer based on Logical or non-mathematical programmes."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-logical-or-non-mathematical-programmes",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -66405,8 +66493,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 150,
@@ -66417,8 +66505,8 @@ const milestones = [
       "en": "Chinook"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -66461,16 +66549,16 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
-        "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
         "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
-        "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg"
+        "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+        "resources/images/bench-council-ai100/source/1994-chinook_homepage.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-1994-chinook-jonathan-schaeffer-external",
-        "asset-1994-chinook-homepage",
         "asset-1994-chinook-endgame-database",
-        "asset-1994-chinook-perfect-play"
+        "asset-1994-chinook-perfect-play",
+        "asset-1994-chinook-homepage"
       ]
     },
     "imageMeta": {
@@ -66502,30 +66590,6 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jonathan_Schaeffer.jpg"
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
-        "caption": {
-          "zh": "Chinook 官方项目页面",
-          "en": "Chinook official project page"
-        },
-        "subcaption": {
-          "zh": "引用来源页面截图：Chinook project home。",
-          "en": "Screenshot of the cited source page: Chinook project home."
-        },
-        "license": {
-          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
-          "en": "Source page screenshot for citation preview; rights remain with the source site."
-        },
-        "sourceId": "source-chinook-project-home",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
-            "en": "Source page screenshot for citation preview; rights remain with the source site."
-          }
-        },
-        "role": "game-record-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg": {
@@ -66575,6 +66639,30 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
+        "caption": {
+          "zh": "Chinook 官方项目页面",
+          "en": "Chinook official project page"
+        },
+        "subcaption": {
+          "zh": "引用来源页面截图：Chinook project home。",
+          "en": "Screenshot of the cited source page: Chinook project home."
+        },
+        "license": {
+          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+          "en": "Source page screenshot for citation preview; rights remain with the source site."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+            "en": "Source page screenshot for citation preview; rights remain with the source site."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image"
       }
     },
     "achievement": {
@@ -66922,8 +67010,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 160,
@@ -66934,8 +67022,8 @@ const milestones = [
       "en": "Deep Blue"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -67506,8 +67594,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 170,
@@ -67518,8 +67606,8 @@ const milestones = [
       "en": "Pandemonium"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -68023,8 +68111,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 180,
@@ -68035,8 +68123,8 @@ const milestones = [
       "en": "Frame"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -68498,8 +68586,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 190,
@@ -68510,8 +68598,8 @@ const milestones = [
       "en": "Cyc"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -68567,16 +68655,16 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/bench-council-ai100/photos/1984-cyc_douglas-lenat.jpg",
-        "resources/images/external/1984-cyc/cyc-related-project-marks.png",
         "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg",
-        "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg"
+        "resources/images/bench-council-ai100/explainers/1984-cyc_common-sense-rule.svg",
+        "resources/images/external/1984-cyc/cyc-related-project-marks.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-1984-cyc-douglas-lenat",
-        "asset-1984-cyc-cyc-projects-logos",
         "asset-1984-cyc-microtheories",
-        "asset-1984-cyc-common-sense-rule"
+        "asset-1984-cyc-common-sense-rule",
+        "asset-1984-cyc-cyc-projects-logos"
       ]
     },
     "imageMeta": {
@@ -68602,36 +68690,6 @@ const milestones = [
           }
         },
         "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/external/1984-cyc/cyc-related-project-marks.png": {
-        "caption": {
-          "zh": "Cyc 项目相关标识",
-          "en": "Cyc-related project marks"
-        },
-        "subcaption": {
-          "zh": "Cyc 知识库及相关项目使用的标识组合。",
-          "en": "A group of marks used by Cyc and related knowledge-base projects."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
-        "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-        },
-        "sourceId": "source-building-large-knowledge-based-systems",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"
-        },
-        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1984-cyc_microtheories.svg": {
@@ -68681,6 +68739,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/1984-cyc/cyc-related-project-marks.png": {
+        "caption": {
+          "zh": "Cyc 项目相关标识",
+          "en": "Cyc-related project marks"
+        },
+        "subcaption": {
+          "zh": "Cyc 知识库及相关项目使用的标识组合。",
+          "en": "A group of marks used by Cyc and related knowledge-base projects."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-building-large-knowledge-based-systems",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cyc_Projects_Logos.png"
+        },
+        "role": "supporting-image",
+        "type": "image"
       }
     },
     "achievement": {
@@ -69028,8 +69116,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 200,
@@ -69040,8 +69128,8 @@ const milestones = [
       "en": "DENDRAL"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -69542,8 +69630,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 210,
@@ -69554,8 +69642,8 @@ const milestones = [
       "en": "XCON-R1"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -69692,7 +69780,7 @@ const milestones = [
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
       },
       "resources/images/bench-council-ai100/explainers/1980-xcon-r1_order-flow.svg": {
@@ -69716,7 +69804,7 @@ const milestones = [
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
       }
     },
@@ -70065,8 +70153,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 220,
@@ -70077,8 +70165,8 @@ const milestones = [
       "en": "K-means"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -70121,16 +70209,16 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/1957-kmeans/bell-labs-holmdel-complex.jpg",
-        "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png",
         "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
-        "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg"
+        "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
+        "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-1957-kmeans-bell-labs-holmdel",
-        "asset-1957-kmeans-iris-flowers-clustering-kmeans",
         "asset-1957-kmeans-centroid-loop",
-        "asset-1957-kmeans-cluster-update"
+        "asset-1957-kmeans-cluster-update",
+        "asset-1957-kmeans-iris-flowers-clustering-kmeans"
       ]
     },
     "imageMeta": {
@@ -70164,6 +70252,54 @@ const milestones = [
         "role": "supporting-image",
         "type": "image"
       },
+      "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg": {
+        "caption": {
+          "zh": "质心分配循环",
+          "en": "Centroid assignment loop"
+        },
+        "subcaption": {
+          "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。",
+          "en": "Original local explainer based on Least squares quantization in PCM."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-least-squares-quantization-in-pcm",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg": {
+        "caption": {
+          "zh": "簇更新步骤",
+          "en": "Cluster update step"
+        },
+        "subcaption": {
+          "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。",
+          "en": "Original local explainer based on scikit-learn KMeans documentation."
+        },
+        "license": {
+          "zh": "Original local SVG redraw; source figures are not copied.",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-least-squares-quantization-in-pcm",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Original local SVG redraw; source figures are not copied.",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
+      },
       "resources/images/external/1957-kmeans/k-means-clustering-of-iris-data.png": {
         "caption": {
           "zh": "K-means 鸢尾花聚类结果",
@@ -70193,54 +70329,6 @@ const milestones = [
         },
         "role": "algorithm-explainer",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg": {
-        "caption": {
-          "zh": "质心分配循环",
-          "en": "Centroid assignment loop"
-        },
-        "subcaption": {
-          "zh": "依据 PCM 中的最小二乘量化 制作的本地解释图。",
-          "en": "Original local explainer based on Least squares quantization in PCM."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-least-squares-quantization-in-pcm",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
-      "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg": {
-        "caption": {
-          "zh": "簇更新步骤",
-          "en": "Cluster update step"
-        },
-        "subcaption": {
-          "zh": "依据 scikit-learn KMeans documentation 制作的本地解释图。",
-          "en": "Original local explainer based on scikit-learn KMeans documentation."
-        },
-        "license": {
-          "zh": "Original local SVG redraw; source figures are not copied.",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-least-squares-quantization-in-pcm",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Original local SVG redraw; source figures are not copied.",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -70588,8 +70676,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 230,
@@ -70600,8 +70688,8 @@ const milestones = [
       "en": "DBSCAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -70671,16 +70759,16 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/1996-dbscan/martin-ester-portrait.jpg",
-        "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png",
         "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg",
-        "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg"
+        "resources/images/bench-council-ai100/explainers/1996-dbscan_noise-core-border.svg",
+        "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-1996-dbscan-sfu-professor-martin-ester-2019",
-        "asset-1996-dbscan-dbscan-density-data",
         "asset-1996-dbscan-density-reachability",
-        "asset-1996-dbscan-noise-core-border"
+        "asset-1996-dbscan-noise-core-border",
+        "asset-1996-dbscan-dbscan-density-data"
       ]
     },
     "imageMeta": {
@@ -70712,36 +70800,6 @@ const milestones = [
           "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/SFU_Professor_Martin_Ester_2019.jpg"
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png": {
-        "caption": {
-          "zh": "DBSCAN 密度聚类示意",
-          "en": "DBSCAN density-clustering diagram"
-        },
-        "subcaption": {
-          "zh": "展示密度连通的数据簇与噪声点。",
-          "en": "Shows density-connected clusters and noise points."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
-        "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-        },
-        "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
-        },
-        "role": "algorithm-explainer",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1996-dbscan_density-reachability.svg": {
@@ -70791,6 +70849,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/1996-dbscan/dbscan-density-clustering-diagram.png": {
+        "caption": {
+          "zh": "DBSCAN 密度聚类示意",
+          "en": "DBSCAN density-clustering diagram"
+        },
+        "subcaption": {
+          "zh": "展示密度连通的数据簇与噪声点。",
+          "en": "Shows density-connected clusters and noise points."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-a-density-based-algorithm-for-discovering-clusters",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/DBSCAN-density-data.svg"
+        },
+        "role": "algorithm-explainer",
+        "type": "image"
       }
     },
     "achievement": {
@@ -71138,8 +71226,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 240,
@@ -71150,8 +71238,8 @@ const milestones = [
       "en": "Normalized Cuts and Spectral Clustering"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -71236,16 +71324,16 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/external/2000-spectral-clustering/andrew-ng-portrait.jpg",
-        "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png",
         "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg",
-        "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg"
+        "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_eigen-map.svg",
+        "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png"
       ],
       "videos": [],
       "assetIds": [
         "asset-2000-spectral-clustering-andrew-ng-at-techcrunch-disrupt-sf-2017",
-        "asset-2000-spectral-clustering-6n-graf",
         "asset-2000-spectral-clustering-graph-cut",
-        "asset-2000-spectral-clustering-eigen-map"
+        "asset-2000-spectral-clustering-eigen-map",
+        "asset-2000-spectral-clustering-6n-graf"
       ]
     },
     "imageMeta": {
@@ -71277,36 +71365,6 @@ const milestones = [
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg"
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png": {
-        "caption": {
-          "zh": "谱聚类六节点图示",
-          "en": "Six-node spectral-clustering graph"
-        },
-        "subcaption": {
-          "zh": "用于说明谱聚类中的图结构与连接关系。",
-          "en": "Illustrates graph structure and connectivity in spectral clustering."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
-        "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-        },
-        "sourceId": "source-spectral-graph-illustration",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
-        },
-        "role": "algorithm-explainer",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2000-spectral-clustering_graph-cut.svg": {
@@ -71356,6 +71414,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/2000-spectral-clustering/six-node-spectral-clustering-graph.png": {
+        "caption": {
+          "zh": "谱聚类六节点图示",
+          "en": "Six-node spectral-clustering graph"
+        },
+        "subcaption": {
+          "zh": "用于说明谱聚类中的图结构与连接关系。",
+          "en": "Illustrates graph structure and connectivity in spectral clustering."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-spectral-graph-illustration",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:6n-graf.svg"
+        },
+        "role": "algorithm-explainer",
+        "type": "image"
       }
     },
     "achievement": {
@@ -71723,8 +71811,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 250,
@@ -71735,8 +71823,8 @@ const milestones = [
       "en": "KNN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -72237,8 +72325,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 260,
@@ -72249,8 +72337,8 @@ const milestones = [
       "en": "Ridge"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -72735,8 +72823,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 270,
@@ -72747,8 +72835,8 @@ const milestones = [
       "en": "Support Vector Machines"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -73297,8 +73385,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 280,
@@ -73309,8 +73397,8 @@ const milestones = [
       "en": "Lasso"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -73773,8 +73861,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 290,
@@ -73785,8 +73873,8 @@ const milestones = [
       "en": "SIFT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -74245,8 +74333,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 300,
@@ -74257,8 +74345,8 @@ const milestones = [
       "en": "HOG"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -74759,8 +74847,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 310,
@@ -74771,8 +74859,8 @@ const milestones = [
       "en": "SURF"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -75270,8 +75358,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 320,
@@ -75282,8 +75370,8 @@ const milestones = [
       "en": "Kernel PCA"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -75768,8 +75856,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 330,
@@ -75780,8 +75868,8 @@ const milestones = [
       "en": "NMF"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -76266,8 +76354,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 340,
@@ -76278,8 +76366,8 @@ const milestones = [
       "en": "Isomap"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -76763,8 +76851,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 350,
@@ -76775,8 +76863,8 @@ const milestones = [
       "en": "Locally Linear Embedding"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -77261,8 +77349,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 360,
@@ -77273,8 +77361,8 @@ const milestones = [
       "en": "t-SNE"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -77750,8 +77838,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 370,
@@ -77762,8 +77850,8 @@ const milestones = [
       "en": "McCulloch-Pitts Neuron"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -78248,8 +78336,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 380,
@@ -78260,8 +78348,8 @@ const milestones = [
       "en": "SNARC"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -78771,8 +78859,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 390,
@@ -78783,8 +78871,8 @@ const milestones = [
       "en": "The Perceptron and Connectionism"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -79358,8 +79446,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 400,
@@ -79370,8 +79458,8 @@ const milestones = [
       "en": "Hopfield Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -79834,8 +79922,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 410,
@@ -79846,8 +79934,8 @@ const milestones = [
       "en": "Self-organizing Map"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -80318,8 +80406,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 420,
@@ -80330,8 +80418,8 @@ const milestones = [
       "en": "Deep Belief Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -80818,8 +80906,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 430,
@@ -80830,8 +80918,8 @@ const milestones = [
       "en": "Back-propagation"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -81328,8 +81416,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 440,
@@ -81340,8 +81428,8 @@ const milestones = [
       "en": "ReLU"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -81895,8 +81983,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 450,
@@ -81907,8 +81995,8 @@ const milestones = [
       "en": "Adam Optimizer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -82385,8 +82473,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 460,
@@ -82397,8 +82485,8 @@ const milestones = [
       "en": "Dropout"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -82891,8 +82979,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 470,
@@ -82903,8 +82991,8 @@ const milestones = [
       "en": "Batch Normalization"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -83383,8 +83471,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 480,
@@ -83395,8 +83483,8 @@ const milestones = [
       "en": "Neocognitron"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -83867,8 +83955,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 490,
@@ -83879,8 +83967,8 @@ const milestones = [
       "en": "Convolutional Networks and LeNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -84440,8 +84528,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 500,
@@ -84452,8 +84540,8 @@ const milestones = [
       "en": "AlexNet and the ImageNet Breakthrough"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -84524,8 +84612,8 @@ const milestones = [
       "images": [
         "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
-        "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
-        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png"
+        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png",
+        "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg"
       ],
       "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
       "overviewImageAssetId": "asset-alexnet-portrait",
@@ -84544,8 +84632,8 @@ const milestones = [
       "assetIds": [
         "asset-alexnet-portrait",
         "asset-alexnet-architecture",
-        "asset-alexnet-deep-portrait",
-        "asset-alexnet-architecture-detail"
+        "asset-alexnet-architecture-detail",
+        "asset-alexnet-deep-portrait"
       ]
     },
     "imageMeta": {
@@ -84605,30 +84693,6 @@ const milestones = [
         "role": "supporting-image",
         "type": "image"
       },
-      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
-        "caption": {
-          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
-          "en": "Computer History Museum AlexNet source-code release page"
-        },
-        "subcaption": {
-          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
-          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
-        },
-        "license": {
-          "zh": "历史资料图，需保留来源说明。",
-          "en": "Historical reference image; keep attribution."
-        },
-        "sourceId": "source-alexnet-neurips-paper",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "历史资料图，需保留来源说明。",
-            "en": "Historical reference image; keep attribution."
-          }
-        },
-        "role": "source-card",
-        "type": "image"
-      },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
         "caption": {
           "zh": "AlexNet、VGG 与 GoogLeNet 架构对比",
@@ -84651,6 +84715,30 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
+        "caption": {
+          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
+          "en": "Computer History Museum AlexNet source-code release page"
+        },
+        "subcaption": {
+          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
+          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
+        },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep attribution."
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep attribution."
+          }
+        },
+        "role": "source-card",
         "type": "image"
       }
     },
@@ -85019,8 +85107,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 510,
@@ -85031,8 +85119,8 @@ const milestones = [
       "en": "VGG Networks"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -85505,8 +85593,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 520,
@@ -85517,8 +85605,8 @@ const milestones = [
       "en": "GoogLeNet / Inception"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -86007,8 +86095,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 530,
@@ -86019,8 +86107,8 @@ const milestones = [
       "en": "ResNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -86104,11 +86192,11 @@ const milestones = [
       "images": [
         "resources/images/figures/kaiming-he.jpg",
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
         "resources/images/2015-resnet/people/2015-resnet_people_04.png",
         "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png"
+        "resources/images/2015-resnet/people/2015-resnet_people_01.png"
       ],
       "videos": [
         {
@@ -86125,11 +86213,11 @@ const milestones = [
       "assetIds": [
         "asset-kaiming-he",
         "asset-2015-resnet-architecture-01",
+        "asset-2015-resnet-architecture-02",
         "asset-2015-resnet-people-04",
         "asset-2015-resnet-people-03",
         "asset-2015-resnet-people-02",
-        "asset-2015-resnet-people-01",
-        "asset-2015-resnet-architecture-02"
+        "asset-2015-resnet-people-01"
       ]
     },
     "imageMeta": {
@@ -86176,6 +86264,30 @@ const milestones = [
           "license": {
             "zh": "本地原创 SVG 重绘；未复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
+        "caption": {
+          "zh": "ResNet结构图 2",
+          "en": "ResNet structure diagram 2"
+        },
+        "subcaption": {
+          "zh": "展示ResNet的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of ResNet."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
         "role": "architecture-explainer",
@@ -86275,30 +86387,6 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
-      },
-      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
-        "caption": {
-          "zh": "ResNet结构图 2",
-          "en": "ResNet structure diagram 2"
-        },
-        "subcaption": {
-          "zh": "展示ResNet的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of ResNet."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-deep-residual-learning-for-image-recognition",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
         "type": "image"
       }
     },
@@ -86666,8 +86754,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 540,
@@ -86678,8 +86766,8 @@ const milestones = [
       "en": "DenseNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -87213,8 +87301,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 550,
@@ -87225,8 +87313,8 @@ const milestones = [
       "en": "MobileNets"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -87282,20 +87370,53 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg",
         "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
-        "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png",
-        "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg"
+        "resources/images/external/ai100-2017-mobilenets/mobilenets-applications-figure.png"
       ],
       "overviewImage": "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png",
       "overviewImageAssetId": "asset-2017-mobilenets-paper-first-page",
       "videos": [],
       "assetIds": [
+        "asset-2017-mobilenets-explainer",
         "asset-2017-mobilenets-paper-first-page",
-        "asset-2017-mobilenets-applications",
-        "asset-2017-mobilenets-explainer"
+        "asset-2017-mobilenets-applications"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg": {
+        "caption": {
+          "zh": "MobileNets流程解释图",
+          "en": "MobileNets process explainer"
+        },
+        "subcaption": {
+          "zh": "深度可分离卷积与倒残差瓶颈",
+          "en": "Depthwise separable convolution and inverted residual bottlenecks"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1704.04861",
+        "license": {
+          "en": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；未复制来源图形。"
+        },
+        "usage": {
+          "en": "Architecture and process explainer",
+          "zh": "架构与流程解释图"
+        },
+        "sourceId": "source-2017-mobilenets-primary",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/external/ai100-2017-mobilenets/mobilenets-paper-first-page.png": {
         "caption": {
           "zh": "MobileNets 论文首页",
@@ -87363,39 +87484,6 @@ const milestones = [
         },
         "role": "paper-figure",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2017-2017-mobilenets_process.svg": {
-        "caption": {
-          "zh": "MobileNets流程解释图",
-          "en": "MobileNets process explainer"
-        },
-        "subcaption": {
-          "zh": "深度可分离卷积与倒残差瓶颈",
-          "en": "Depthwise separable convolution and inverted residual bottlenecks"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://arxiv.org/abs/1704.04861",
-        "license": {
-          "en": "Original local SVG redraw; source figures are not copied.",
-          "zh": "本地原创 SVG 重绘；未复制来源图形。"
-        },
-        "usage": {
-          "en": "Architecture and process explainer",
-          "zh": "架构与流程解释图"
-        },
-        "sourceId": "source-2017-mobilenets-primary",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "en": "Original local SVG redraw; source figures are not copied.",
-            "zh": "本地原创 SVG 重绘；未复制来源图形。"
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -87759,8 +87847,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 560,
@@ -87771,8 +87859,8 @@ const milestones = [
       "en": "Squeeze-and-Excitation Networks"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -88283,8 +88371,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 570,
@@ -88295,8 +88383,8 @@ const milestones = [
       "en": "R-CNN"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -88809,8 +88897,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 580,
@@ -88821,8 +88909,8 @@ const milestones = [
       "en": "Fast R-CNN"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -89320,8 +89408,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 590,
@@ -89332,8 +89420,8 @@ const milestones = [
       "en": "Faster R-CNN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -89916,8 +90004,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 600,
@@ -89928,8 +90016,8 @@ const milestones = [
       "en": "Mask R-CNN"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -90442,8 +90530,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 610,
@@ -90454,8 +90542,8 @@ const milestones = [
       "en": "FPN and RetinaNet"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -90981,8 +91069,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 620,
@@ -90993,8 +91081,8 @@ const milestones = [
       "en": "YOLO"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -91474,8 +91562,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 630,
@@ -91486,8 +91574,8 @@ const milestones = [
       "en": "SSD"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -91998,8 +92086,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 640,
@@ -92010,8 +92098,8 @@ const milestones = [
       "en": "Fully Convolutional Networks"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -92081,18 +92169,51 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png",
-        "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg"
+        "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg",
+        "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png"
       ],
       "overviewImage": "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png",
       "overviewImageAssetId": "asset-2015-fcn-paper-first-page",
       "videos": [],
       "assetIds": [
-        "asset-2015-fcn-paper-first-page",
-        "asset-2015-fcn-explainer"
+        "asset-2015-fcn-explainer",
+        "asset-2015-fcn-paper-first-page"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg": {
+        "caption": {
+          "zh": "全卷积网络流程解释图",
+          "en": "Fully Convolutional Networks process explainer"
+        },
+        "subcaption": {
+          "zh": "卷积分数图、可学习上采样与跳跃融合",
+          "en": "Convolutional score maps with learned upsampling and skip fusion"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://arxiv.org/abs/1411.4038",
+        "license": {
+          "en": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；未复制来源图形。"
+        },
+        "usage": {
+          "en": "Architecture and process explainer",
+          "zh": "架构与流程解释图"
+        },
+        "sourceId": "source-2015-fcn-primary",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/external/ai100-2015-fcn/fcn-paper-first-page.png": {
         "caption": {
           "zh": "FCN 论文首页",
@@ -92126,39 +92247,6 @@ const milestones = [
         },
         "role": "paper-page",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2015-2015-fcn_process.svg": {
-        "caption": {
-          "zh": "全卷积网络流程解释图",
-          "en": "Fully Convolutional Networks process explainer"
-        },
-        "subcaption": {
-          "zh": "卷积分数图、可学习上采样与跳跃融合",
-          "en": "Convolutional score maps with learned upsampling and skip fusion"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://arxiv.org/abs/1411.4038",
-        "license": {
-          "en": "Original local SVG redraw; source figures are not copied.",
-          "zh": "本地原创 SVG 重绘；未复制来源图形。"
-        },
-        "usage": {
-          "en": "Architecture and process explainer",
-          "zh": "架构与流程解释图"
-        },
-        "sourceId": "source-2015-fcn-primary",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "en": "Original local SVG redraw; source figures are not copied.",
-            "zh": "本地原创 SVG 重绘；未复制来源图形。"
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -92522,8 +92610,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 650,
@@ -92534,8 +92622,8 @@ const milestones = [
       "en": "U-Net"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -93024,8 +93112,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 660,
@@ -93036,8 +93124,8 @@ const milestones = [
       "en": "LSTM and Gated Memory"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -93609,8 +93697,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 670,
@@ -93621,8 +93709,8 @@ const milestones = [
       "en": "Sequence-to-Sequence Learning"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -94162,8 +94250,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 680,
@@ -94174,8 +94262,8 @@ const milestones = [
       "en": "Neural Machine Translation with Attention"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -94287,9 +94375,9 @@ const milestones = [
       "images": [
         "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
+        "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
         "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
-        "resources/images/2014-attention/people/2014-attention_people_01.png",
-        "resources/images/2014-attention/architecture/2014-attention_architecture_01.png"
+        "resources/images/2014-attention/people/2014-attention_people_01.png"
       ],
       "videos": [
         {
@@ -94306,9 +94394,9 @@ const milestones = [
       "assetIds": [
         "asset-2014-attention-bahdanau-portrait",
         "asset-2014-attention-alignment",
+        "asset-2014-attention-architecture-01",
         "asset-2014-attention-cho-portrait",
-        "asset-2014-attention-people-01",
-        "asset-2014-attention-architecture-01"
+        "asset-2014-attention-people-01"
       ]
     },
     "imageMeta": {
@@ -94368,6 +94456,30 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "svg"
       },
+      "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
+        "caption": {
+          "zh": "自回归模型和注意力机制结构图 1",
+          "en": "Autoregressive Models and Attention structure diagram 1"
+        },
+        "subcaption": {
+          "zh": "展示自回归模型和注意力机制的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Autoregressive Models and Attention."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
       "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg": {
         "caption": {
           "zh": "赵京贤肖像",
@@ -94422,30 +94534,6 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/2014-attention/architecture/2014-attention_architecture_01.png": {
-        "caption": {
-          "zh": "自回归模型和注意力机制结构图 1",
-          "en": "Autoregressive Models and Attention structure diagram 1"
-        },
-        "subcaption": {
-          "zh": "展示自回归模型和注意力机制的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of Autoregressive Models and Attention."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-neural-machine-translation-by-jointly-learning-to-align-and-translate",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
         "type": "image"
       }
     },
@@ -94814,8 +94902,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 690,
@@ -94826,8 +94914,8 @@ const milestones = [
       "en": "Transformer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -94954,10 +95042,10 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/ashish-vaswani.jpg",
-        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
-        "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
         "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
-        "resources/images/2017-transformer/papers/2017-transformer_papers_01.png"
+        "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
+        "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg"
       ],
       "videos": [
         {
@@ -94973,10 +95061,10 @@ const milestones = [
       ],
       "assetIds": [
         "asset-transformer-portrait",
-        "asset-transformer-attention",
-        "asset-transformer-architecture",
         "asset-transformer-architecture-detail",
-        "asset-transformer-paper-page"
+        "asset-transformer-paper-page",
+        "asset-transformer-architecture",
+        "asset-transformer-attention"
       ]
     },
     "imageMeta": {
@@ -95002,54 +95090,6 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
-        "caption": {
-          "zh": "Transformer 自注意力机制",
-          "en": "Transformer self-attention mechanism"
-        },
-        "subcaption": {
-          "zh": "本地重绘的 token 间注意力关系解释图。",
-          "en": "Locally redrawn explainer of attention relationships between tokens."
-        },
-        "license": {
-          "zh": "根据论文方法本地重绘，不复制原论文图。",
-          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "根据论文方法本地重绘，不复制原论文图。",
-            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-          }
-        },
-        "role": "algorithm-explainer",
-        "type": "svg"
-      },
-      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
-        "caption": {
-          "zh": "Transformer 自注意力计算",
-          "en": "Transformer self-attention computation"
-        },
-        "subcaption": {
-          "zh": "展示查询、键和值投影以及缩放点积注意力。",
-          "en": "Shows query, key, and value projections with scaled dot-product attention."
-        },
-        "license": {
-          "zh": "用于展陈解释的架构资料图。",
-          "en": "Architecture reference image for exhibition explanation."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "用于展陈解释的架构资料图。",
-            "en": "Architecture reference image for exhibition explanation."
-          }
-        },
-        "role": "algorithm-explainer",
         "type": "image"
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
@@ -95099,6 +95139,54 @@ const milestones = [
         },
         "role": "paper-page",
         "type": "image"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
+        "caption": {
+          "zh": "Transformer 自注意力计算",
+          "en": "Transformer self-attention computation"
+        },
+        "subcaption": {
+          "zh": "展示查询、键和值投影以及缩放点积注意力。",
+          "en": "Shows query, key, and value projections with scaled dot-product attention."
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
+        "caption": {
+          "zh": "Transformer 自注意力机制",
+          "en": "Transformer self-attention mechanism"
+        },
+        "subcaption": {
+          "zh": "本地重绘的 token 间注意力关系解释图。",
+          "en": "Locally redrawn explainer of attention relationships between tokens."
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
       }
     },
     "achievement": {
@@ -95471,8 +95559,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 700,
@@ -95483,8 +95571,8 @@ const milestones = [
       "en": "BERT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -96026,8 +96114,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 710,
@@ -96038,8 +96126,8 @@ const milestones = [
       "en": "GPT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -96675,8 +96763,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 720,
@@ -96687,8 +96775,8 @@ const milestones = [
       "en": "Vision Transformer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -97242,8 +97330,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 730,
@@ -97254,8 +97342,8 @@ const milestones = [
       "en": "Swin Transformer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -97794,8 +97882,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 740,
@@ -97806,8 +97894,8 @@ const milestones = [
       "en": "Neural Language Model"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -98278,8 +98366,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 750,
@@ -98290,8 +98378,8 @@ const milestones = [
       "en": "Word2Vec"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -98771,8 +98859,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 760,
@@ -98783,8 +98871,8 @@ const milestones = [
       "en": "GloVe"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -99452,8 +99540,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 770,
@@ -99464,8 +99552,8 @@ const milestones = [
       "en": "Generative Adversarial Networks"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -99985,8 +100073,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 780,
@@ -99997,8 +100085,8 @@ const milestones = [
       "en": "Conditional GAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -100115,7 +100203,7 @@ const milestones = [
             "en": "Original local SVG redraw; source figures are not copied."
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
       }
     },
@@ -100509,8 +100597,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 790,
@@ -100521,8 +100609,8 @@ const milestones = [
       "en": "DCGAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -101027,8 +101115,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 800,
@@ -101039,8 +101127,8 @@ const milestones = [
       "en": "Wasserstein GAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -101615,8 +101703,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 810,
@@ -101627,8 +101715,8 @@ const milestones = [
       "en": "CycleGAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -102153,8 +102241,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 820,
@@ -102165,8 +102253,8 @@ const milestones = [
       "en": "Pix2Pix"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -102677,8 +102765,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 830,
@@ -102689,8 +102777,8 @@ const milestones = [
       "en": "StyleGAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -103217,8 +103305,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 840,
@@ -103229,8 +103317,8 @@ const milestones = [
       "en": "Variational Autoencoder"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -103741,8 +103829,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 850,
@@ -103753,8 +103841,8 @@ const milestones = [
       "en": "Diffusion Model"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -104293,8 +104381,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 860,
@@ -104305,8 +104393,8 @@ const milestones = [
       "en": "Graph Neural Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -104912,8 +105000,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 870,
@@ -104924,8 +105012,8 @@ const milestones = [
       "en": "GCN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -105436,8 +105524,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 880,
@@ -105448,8 +105536,8 @@ const milestones = [
       "en": "GAT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -105970,8 +106058,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 890,
@@ -105982,8 +106070,8 @@ const milestones = [
       "en": "Neural Architecture Search"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -106494,8 +106582,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 900,
@@ -106506,8 +106594,8 @@ const milestones = [
       "en": "Deep Compression"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -107028,8 +107116,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 910,
@@ -107040,8 +107128,8 @@ const milestones = [
       "en": "Knowledge Distillation"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -107560,8 +107648,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 920,
@@ -107572,8 +107660,8 @@ const milestones = [
       "en": "ImageNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -108067,8 +108155,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 930,
@@ -108079,8 +108167,8 @@ const milestones = [
       "en": "MS COCO"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -108591,8 +108679,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 940,
@@ -108603,8 +108691,8 @@ const milestones = [
       "en": "Temporal-Difference Update"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -109063,8 +109151,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 950,
@@ -109075,8 +109163,8 @@ const milestones = [
       "en": "Q-Learning"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -109587,8 +109675,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 960,
@@ -109599,8 +109687,8 @@ const milestones = [
       "en": "Deep Q Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -110155,8 +110243,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 970,
@@ -110167,8 +110255,8 @@ const milestones = [
       "en": "DDPG"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -110711,8 +110799,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 980,
@@ -110723,8 +110811,8 @@ const milestones = [
       "en": "AlphaGo"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -111256,8 +111344,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 990,
@@ -111268,8 +111356,8 @@ const milestones = [
       "en": "AlphaFold"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -111328,12 +111416,12 @@ const milestones = [
         "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
         "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
-        "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png",
-        "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
-        "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png",
         "resources/images/external/2020-alphafold/john-jumper-portrait.jpg",
-        "resources/images/2020-alphafold/people/2020-alphafold_people_02.png"
+        "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
+        "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
+        "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png"
       ],
       "videos": [
         {
@@ -111351,12 +111439,12 @@ const milestones = [
         "asset-2020-alphafold-people-01",
         "asset-2020-alphafold2-structure-pipeline",
         "asset-2020-alphafold-architecture-01",
-        "asset-2020-alphafold-historical-01",
         "asset-2020-alphafold-architecture-02",
-        "asset-2020-alphafold-historical-02",
-        "asset-2020-alphafold-papers-01",
         "asset-2020-alphafold-john-jumper-external",
-        "asset-2020-alphafold-people-02"
+        "asset-2020-alphafold-people-02",
+        "asset-2020-alphafold-historical-01",
+        "asset-2020-alphafold-historical-02",
+        "asset-2020-alphafold-papers-01"
       ]
     },
     "imageMeta": {
@@ -111432,30 +111520,6 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "image"
       },
-      "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
-        "caption": {
-          "zh": "AlphaFold: 蛋白质结构预测资料图 1",
-          "en": "AlphaFold: Protein Structure Prediction reference image 1"
-        },
-        "subcaption": {
-          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
-          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "supporting-image",
-        "type": "image"
-      },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
         "caption": {
           "zh": "AlphaFold: 蛋白质结构预测结构图 2",
@@ -111478,54 +111542,6 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
-      },
-      "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
-        "caption": {
-          "zh": "AlphaFold: 蛋白质结构预测资料图 2",
-          "en": "AlphaFold: Protein Structure Prediction reference image 2"
-        },
-        "subcaption": {
-          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
-          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "supporting-image",
-        "type": "image"
-      },
-      "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
-        "caption": {
-          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》（第 1 页资料）",
-          "en": "Highly accurate protein structure prediction with AlphaFold — page reference 1"
-        },
-        "subcaption": {
-          "zh": "原论文页面或相关页面的图像资料。",
-          "en": "Image reference from the original paper or a related paper page."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "paper-page",
         "type": "image"
       },
       "resources/images/external/2020-alphafold/john-jumper-portrait.jpg": {
@@ -111580,6 +111596,78 @@ const milestones = [
           }
         },
         "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
+        "caption": {
+          "zh": "AlphaFold: 蛋白质结构预测资料图 1",
+          "en": "AlphaFold: Protein Structure Prediction reference image 1"
+        },
+        "subcaption": {
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
+        "caption": {
+          "zh": "AlphaFold: 蛋白质结构预测资料图 2",
+          "en": "AlphaFold: Protein Structure Prediction reference image 2"
+        },
+        "subcaption": {
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
+        "caption": {
+          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》（第 1 页资料）",
+          "en": "Highly accurate protein structure prediction with AlphaFold — page reference 1"
+        },
+        "subcaption": {
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
         "type": "image"
       }
     },
@@ -111947,8 +112035,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1000,
@@ -111959,8 +112047,8 @@ const milestones = [
       "en": "Actor-Critic"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -112471,8 +112559,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1010,
@@ -112483,8 +112571,8 @@ const milestones = [
       "en": "A3C"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -112996,8 +113084,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1020,
@@ -113008,8 +113096,8 @@ const milestones = [
       "en": "SARSA"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -113080,16 +113168,45 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg",
-        "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg"
+        "resources/images/bench-council-ai100/supporting/1994-sarsa-paper-record.svg",
+        "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1994-sarsa-explainer",
-        "asset-1994-sarsa-portrait"
+        "asset-1994-sarsa-paper-record",
+        "asset-1994-sarsa-explainer"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/supporting/1994-sarsa-paper-record.svg": {
+        "caption": {
+          "zh": "SARSA 主论文记录",
+          "en": "SARSA primary publication record"
+        },
+        "subcaption": {
+          "zh": "拉默里与尼兰詹 1994 年 SARSA 相关主论文的本地档案资料卡。",
+          "en": "Local archival card for Rummery and Niranjan's 1994 publication associated with SARSA."
+        },
+        "sourceName": {
+          "en": "Primary publication record",
+          "zh": "主论文记录"
+        },
+        "sourceUrl": "https://www.cs.utexas.edu/~shivaram/readings/b2hd-RummeryNiranjan1994.html",
+        "license": {
+          "en": "Local original bibliographic card; it does not reproduce the publication layout or figures.",
+          "zh": "本地原创书目资料卡；不复制论文版式或图形。"
+        },
+        "sourceId": "source-1994-sarsa-primary",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "en": "Local original bibliographic card; it does not reproduce the publication layout or figures.",
+            "zh": "本地原创书目资料卡；不复制论文版式或图形。"
+          }
+        },
+        "role": "paper-page",
+        "type": "svg"
+      },
       "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg": {
         "caption": {
           "zh": "SARSA流程解释图",
@@ -113120,41 +113237,8 @@ const milestones = [
             "zh": "本地原创 SVG 重绘；未复制来源图形。"
           }
         },
-        "role": "architecture-explainer",
+        "role": "algorithm-explainer",
         "type": "svg"
-      },
-      "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
-        "caption": {
-          "zh": "理查德·萨顿肖像",
-          "en": "Richard Sutton portrait"
-        },
-        "subcaption": {
-          "zh": "相关时序差分学习先驱",
-          "en": "Related temporal-difference learning pioneer"
-        },
-        "sourceName": {
-          "en": "Richard Sutton personal website",
-          "zh": "理查德·萨顿个人网站"
-        },
-        "sourceUrl": "http://incompleteideas.net/",
-        "license": {
-          "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
-          "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
-        },
-        "usage": {
-          "en": "Related researcher portrait",
-          "zh": "相关研究者肖像"
-        },
-        "sourceId": "source-1994-sarsa-portrait",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "en": "External portrait reference; redistribution rights should be rechecked before publication beyond this exhibit.",
-            "zh": "外部肖像参考；若在本展览之外再发布，应重新核验转载权利。"
-          }
-        },
-        "role": "portrait",
-        "type": "image"
       }
     },
     "achievement": {
@@ -113523,9 +113607,6 @@ const milestones = [
     "quoteAttribution": {
       "en": "<em>On-line Q-Learning Using Connectionist Systems</em>",
       "zh": "《使用连接主义系统的在线 Q 学习》"
-    },
-    "commentaryMedia": {
-      "hideVisual": true
     }
   },
   {
@@ -113537,8 +113618,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1030,
@@ -113549,8 +113630,8 @@ const milestones = [
       "en": "Williams's REINFORCE"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -114048,8 +114129,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1040,
@@ -114060,8 +114141,8 @@ const milestones = [
       "en": "Policy Gradient Theorem"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -114573,8 +114654,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1050,
@@ -114585,8 +114666,8 @@ const milestones = [
       "en": "CART"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -115085,8 +115166,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1060,
@@ -115097,8 +115178,8 @@ const milestones = [
       "en": "ID3"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -115630,8 +115711,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1070,
@@ -115642,8 +115723,8 @@ const milestones = [
       "en": "C4.5"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -116140,8 +116221,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1080,
@@ -116152,8 +116233,8 @@ const milestones = [
       "en": "Bagging"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -116651,8 +116732,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1090,
@@ -116663,8 +116744,8 @@ const milestones = [
       "en": "Random Forests"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -117176,8 +117257,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1100,
@@ -117188,8 +117269,8 @@ const milestones = [
       "en": "Boosting"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -117231,18 +117312,51 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg",
-        "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg"
+        "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg",
+        "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg"
       ],
       "overviewImage": "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg",
       "overviewImageAssetId": "asset-1990-boosting-paper-first-page",
       "videos": [],
       "assetIds": [
-        "asset-1990-boosting-paper-first-page",
-        "asset-1990-boosting-explainer"
+        "asset-1990-boosting-explainer",
+        "asset-1990-boosting-paper-first-page"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg": {
+        "caption": {
+          "zh": "Boosting 提升法流程解释图",
+          "en": "Boosting process explainer"
+        },
+        "subcaption": {
+          "zh": "顺序组合弱假设形成强学习器",
+          "en": "Sequentially combine weak hypotheses into a strong learner"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://doi.org/10.1007/BF00116037",
+        "license": {
+          "en": "Original local SVG redraw; source figures are not copied.",
+          "zh": "本地原创 SVG 重绘；未复制来源图形。"
+        },
+        "usage": {
+          "en": "Architecture and process explainer",
+          "zh": "架构与流程解释图"
+        },
+        "sourceId": "source-1990-boosting-primary",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "en": "Original local SVG redraw; source figures are not copied.",
+            "zh": "本地原创 SVG 重绘；未复制来源图形。"
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/external/ai100-1990-boosting/boosting-paper-first-page.svg": {
         "caption": {
           "zh": "Boosting 论文首页",
@@ -117275,39 +117389,6 @@ const milestones = [
           "sourceUrl": "https://doi.org/10.1007/BF00116037"
         },
         "role": "paper-page",
-        "type": "svg"
-      },
-      "resources/images/bench-council-ai100/explainers/1990-1990-boosting_process.svg": {
-        "caption": {
-          "zh": "Boosting 提升法流程解释图",
-          "en": "Boosting process explainer"
-        },
-        "subcaption": {
-          "zh": "顺序组合弱假设形成强学习器",
-          "en": "Sequentially combine weak hypotheses into a strong learner"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://doi.org/10.1007/BF00116037",
-        "license": {
-          "en": "Original local SVG redraw; source figures are not copied.",
-          "zh": "本地原创 SVG 重绘；未复制来源图形。"
-        },
-        "usage": {
-          "en": "Architecture and process explainer",
-          "zh": "架构与流程解释图"
-        },
-        "sourceId": "source-1990-boosting-primary",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "en": "Original local SVG redraw; source figures are not copied.",
-            "zh": "本地原创 SVG 重绘；未复制来源图形。"
-          }
-        },
-        "role": "architecture-explainer",
         "type": "svg"
       }
     },
@@ -117672,8 +117753,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1110,
@@ -117684,8 +117765,8 @@ const milestones = [
       "en": "AdaBoost"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -118196,8 +118277,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1120,
@@ -118208,8 +118289,8 @@ const milestones = [
       "en": "Gradient Boosting"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -118706,8 +118787,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1130,
@@ -118718,8 +118799,8 @@ const milestones = [
       "en": "XGBoost"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -119230,8 +119311,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1140,
@@ -119242,8 +119323,8 @@ const milestones = [
       "en": "LightGBM"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -119755,8 +119836,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1150,
@@ -119767,8 +119848,8 @@ const milestones = [
       "en": "Bayesian Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -120230,8 +120311,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1160,
@@ -120242,8 +120323,8 @@ const milestones = [
       "en": "Latent Dirichlet Allocation"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -120723,8 +120804,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1170,
@@ -120735,8 +120816,8 @@ const milestones = [
       "en": "Conditional Random Fields"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -121247,8 +121328,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1180,
@@ -121259,8 +121340,8 @@ const milestones = [
       "en": "Genetic Algorithms"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -121722,8 +121803,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1190,
@@ -121734,8 +121815,8 @@ const milestones = [
       "en": "Simulated Annealing"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -122262,7 +122343,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -122654,7 +122735,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -123201,7 +123282,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -123507,7 +123588,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -123519,8 +123600,8 @@ const milestones = [
       "en": "Neocognitron"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -123991,7 +124072,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -124003,8 +124084,8 @@ const milestones = [
       "en": "Hopfield Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -124467,7 +124548,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -124826,7 +124907,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -125120,7 +125201,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -125176,9 +125257,9 @@ const milestones = [
       "images": [
         "resources/images/external/1989-cnn/yann-lecun-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1989-lenet_zip-code-cnn.svg",
+        "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg",
         "resources/images/1989-cnn/people/1989-cnn_people_01.jpg",
-        "resources/images/1989-cnn/people/1989-cnn_people_02.jpg",
-        "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg"
+        "resources/images/1989-cnn/people/1989-cnn_people_02.jpg"
       ],
       "videos": [
         {
@@ -125195,9 +125276,9 @@ const milestones = [
       "assetIds": [
         "asset-1989-cnn-yann-lecun-external",
         "asset-1989-lenet-zip-code-cnn",
+        "asset-1989-cnn-architecture-01",
         "asset-1989-cnn-people-01",
-        "asset-1989-cnn-people-02",
-        "asset-1989-cnn-architecture-01"
+        "asset-1989-cnn-people-02"
       ]
     },
     "imageMeta": {
@@ -125255,6 +125336,30 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "svg"
       },
+      "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
+        "caption": {
+          "zh": "卷积神经网络结构图 1",
+          "en": "Convolutional Neural Networks structure diagram 1"
+        },
+        "subcaption": {
+          "zh": "展示卷积神经网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Convolutional Neural Networks."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
       "resources/images/1989-cnn/people/1989-cnn_people_01.jpg": {
         "caption": {
           "zh": "扬·勒昆肖像",
@@ -125301,30 +125406,6 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/1989-cnn/architecture/1989-cnn_architecture_01.jpg": {
-        "caption": {
-          "zh": "卷积神经网络结构图 1",
-          "en": "Convolutional Neural Networks structure diagram 1"
-        },
-        "subcaption": {
-          "zh": "展示卷积神经网络的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of Convolutional Neural Networks."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-backpropagation-applied-to-handwritten-zip-code-recognition",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
         "type": "image"
       }
     },
@@ -125653,7 +125734,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -125722,9 +125803,9 @@ const milestones = [
       "images": [
         "resources/images/figures/sepp-hochreiter.jpg",
         "resources/images/bench-council-ai100/explainers/1997-lstm_gated-memory.svg",
-        "resources/images/1997-lstm/people/1997-lstm_people_01.png",
         "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg",
-        "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png"
+        "resources/images/1997-lstm/architecture/1997-lstm_architecture_02.png",
+        "resources/images/1997-lstm/people/1997-lstm_people_01.png"
       ],
       "videos": [
         {
@@ -125741,9 +125822,9 @@ const milestones = [
       "assetIds": [
         "asset-sepp-hochreiter",
         "asset-1997-lstm-gated-memory",
-        "asset-1997-lstm-people-01",
         "asset-1997-lstm-architecture-01",
-        "asset-1997-lstm-architecture-02"
+        "asset-1997-lstm-architecture-02",
+        "asset-1997-lstm-people-01"
       ]
     },
     "imageMeta": {
@@ -125795,30 +125876,6 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "svg"
       },
-      "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
-        "caption": {
-          "zh": "尤尔根·施密德胡伯肖像",
-          "en": "Jurgen Schmidhuber portrait"
-        },
-        "subcaption": {
-          "zh": "LSTM 共同作者。",
-          "en": "Co-author of LSTM."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-long-short-term-memory",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
       "resources/images/1997-lstm/architecture/1997-lstm_architecture_01.jpg": {
         "caption": {
           "zh": "LSTM与门控机制结构图 1",
@@ -125865,6 +125922,30 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/1997-lstm/people/1997-lstm_people_01.png": {
+        "caption": {
+          "zh": "尤尔根·施密德胡伯肖像",
+          "en": "Jurgen Schmidhuber portrait"
+        },
+        "subcaption": {
+          "zh": "LSTM 共同作者。",
+          "en": "Co-author of LSTM."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-long-short-term-memory",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -126197,7 +126278,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -126698,7 +126779,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -127206,7 +127287,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -127288,8 +127369,8 @@ const milestones = [
       "images": [
         "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
         "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_01.png",
-        "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg",
-        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png"
+        "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png",
+        "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg"
       ],
       "overviewImage": "resources/images/2012-alexnet/people/alex-krizhevsky-user-provided.png",
       "overviewImageAssetId": "asset-alexnet-portrait",
@@ -127308,8 +127389,8 @@ const milestones = [
       "assetIds": [
         "asset-alexnet-portrait",
         "asset-alexnet-architecture",
-        "asset-alexnet-deep-portrait",
-        "asset-alexnet-architecture-detail"
+        "asset-alexnet-architecture-detail",
+        "asset-alexnet-deep-portrait"
       ]
     },
     "imageMeta": {
@@ -127369,30 +127450,6 @@ const milestones = [
         "role": "supporting-image",
         "type": "image"
       },
-      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
-        "caption": {
-          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
-          "en": "Computer History Museum AlexNet source-code release page"
-        },
-        "subcaption": {
-          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
-          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
-        },
-        "license": {
-          "zh": "历史资料图，需保留来源说明。",
-          "en": "Historical reference image; keep attribution."
-        },
-        "sourceId": "source-alexnet-neurips-paper",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "历史资料图，需保留来源说明。",
-            "en": "Historical reference image; keep attribution."
-          }
-        },
-        "role": "source-card",
-        "type": "image"
-      },
       "resources/images/2012-alexnet/architecture/2012-alexnet_architecture_02.png": {
         "caption": {
           "zh": "AlexNet、VGG 与 GoogLeNet 架构对比",
@@ -127415,6 +127472,30 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2012-alexnet/people/2012-alexnet_people_01.jpg": {
+        "caption": {
+          "zh": "计算机历史博物馆发布 AlexNet 源代码的页面截图",
+          "en": "Computer History Museum AlexNet source-code release page"
+        },
+        "subcaption": {
+          "zh": "介绍 AlexNet 源代码公开的网页截图，不是人物肖像。",
+          "en": "Screenshot about the release of the AlexNet source code, not a portrait."
+        },
+        "license": {
+          "zh": "历史资料图，需保留来源说明。",
+          "en": "Historical reference image; keep attribution."
+        },
+        "sourceId": "source-alexnet-neurips-paper",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "历史资料图，需保留来源说明。",
+            "en": "Historical reference image; keep attribution."
+          }
+        },
+        "role": "source-card",
         "type": "image"
       }
     },
@@ -127747,7 +127828,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -128234,7 +128315,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -128737,7 +128818,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -129229,7 +129310,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -129309,14 +129390,14 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
         "resources/images/2014-attention/architecture/2014-attention_architecture_01.png",
-        "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
         "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "resources/images/2014-attention/people/2014-attention_people_01.png"
       ],
-      "overviewImage": "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg",
-      "overviewImageAssetId": "asset-2014-attention-alignment",
+      "overviewImage": "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg",
+      "overviewImageAssetId": "asset-2014-attention-bahdanau-portrait",
       "videos": [
         {
           "id": "https://media.sciencearena.cn/video/2014%E7%8E%B0%E4%BB%A3AI%E7%9A%84%E7%AA%81%E7%A0%B4%EF%BC%9A%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6.mp4",
@@ -129330,14 +129411,46 @@ const milestones = [
         }
       ],
       "assetIds": [
+        "asset-2014-attention-bahdanau-portrait",
         "asset-2014-attention-alignment",
         "asset-2014-attention-architecture-01",
-        "asset-2014-attention-bahdanau-portrait",
         "asset-2014-attention-cho-portrait",
         "asset-2014-attention-people-01"
       ]
     },
     "imageMeta": {
+      "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg": {
+        "caption": {
+          "zh": "兹米特里·巴赫达瑙肖像",
+          "en": "Dzmitry Bahdanau portrait"
+        },
+        "subcaption": {
+          "zh": "神经注意力论文主要作者",
+          "en": "Lead author of the neural attention paper"
+        },
+        "sourceName": {
+          "zh": "Mila 官方人物目录",
+          "en": "Mila official directory"
+        },
+        "license": {
+          "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
+          "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
+        },
+        "usage": {
+          "zh": "用于带注意力机制的神经机器翻译事件首图与兹米特里·巴赫达瑙人物头像。",
+          "en": "Used as the lead image and Dzmitry Bahdanau avatar for the Neural Machine Translation with Attention event."
+        },
+        "sourceId": "source-dzmitry-bahdanau-mila-portrait",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
+            "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2014-attention_alignment.svg": {
         "caption": {
           "zh": "注意力对齐图",
@@ -129384,38 +129497,6 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
-      },
-      "resources/images/2014-attention/people/dzmitry-bahdanau-mila.jpg": {
-        "caption": {
-          "zh": "兹米特里·巴赫达瑙肖像",
-          "en": "Dzmitry Bahdanau portrait"
-        },
-        "subcaption": {
-          "zh": "神经注意力论文主要作者",
-          "en": "Lead author of the neural attention paper"
-        },
-        "sourceName": {
-          "zh": "Mila 官方人物目录",
-          "en": "Mila official directory"
-        },
-        "license": {
-          "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
-          "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
-        },
-        "usage": {
-          "zh": "用于带注意力机制的神经机器翻译事件首图与兹米特里·巴赫达瑙人物头像。",
-          "en": "Used as the lead image and Dzmitry Bahdanau avatar for the Neural Machine Translation with Attention event."
-        },
-        "sourceId": "source-dzmitry-bahdanau-mila-portrait",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Mila 官方人物目录图片；页面未标注开放许可，对外再分发前应复核授权范围。",
-            "en": "Image from Mila's official directory; no open license is stated, so confirm rights before redistribution."
-          }
-        },
-        "role": "portrait",
         "type": "image"
       },
       "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg": {
@@ -129800,7 +129881,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -130150,7 +130231,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -130245,11 +130326,11 @@ const milestones = [
       "images": [
         "resources/images/figures/kaiming-he.jpg",
         "resources/images/2015-resnet/architecture/2015-resnet_architecture_01.png",
+        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png",
         "resources/images/2015-resnet/people/2015-resnet_people_04.png",
         "resources/images/2015-resnet/people/2015-resnet_people_03.png",
         "resources/images/2015-resnet/people/2015-resnet_people_02.png",
-        "resources/images/2015-resnet/people/2015-resnet_people_01.png",
-        "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png"
+        "resources/images/2015-resnet/people/2015-resnet_people_01.png"
       ],
       "videos": [
         {
@@ -130266,11 +130347,11 @@ const milestones = [
       "assetIds": [
         "asset-kaiming-he",
         "asset-2015-resnet-architecture-01",
+        "asset-2015-resnet-architecture-02",
         "asset-2015-resnet-people-04",
         "asset-2015-resnet-people-03",
         "asset-2015-resnet-people-02",
-        "asset-2015-resnet-people-01",
-        "asset-2015-resnet-architecture-02"
+        "asset-2015-resnet-people-01"
       ]
     },
     "imageMeta": {
@@ -130317,6 +130398,30 @@ const milestones = [
           "license": {
             "zh": "本地原创 SVG 重绘；未复制来源图形。",
             "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
+      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
+        "caption": {
+          "zh": "ResNet结构图 2",
+          "en": "ResNet structure diagram 2"
+        },
+        "subcaption": {
+          "zh": "展示ResNet的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of ResNet."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-deep-residual-learning-for-image-recognition",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
         "role": "architecture-explainer",
@@ -130416,30 +130521,6 @@ const milestones = [
           }
         },
         "role": "team-photo",
-        "type": "image"
-      },
-      "resources/images/2015-resnet/architecture/2015-resnet_architecture_02.png": {
-        "caption": {
-          "zh": "ResNet结构图 2",
-          "en": "ResNet structure diagram 2"
-        },
-        "subcaption": {
-          "zh": "展示ResNet的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of ResNet."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-deep-residual-learning-for-image-recognition",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
         "type": "image"
       }
     },
@@ -130768,7 +130849,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -131321,7 +131402,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -131388,9 +131469,9 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2016-densenet/people/2016-densenet_people_01.png",
+        "resources/images/2016-densenet/people/2016-densenet_people_02.png",
         "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png",
-        "resources/images/2016-densenet/people/2016-densenet_people_02.png"
+        "resources/images/2016-densenet/people/2016-densenet_people_01.png"
       ],
       "videos": [
         {
@@ -131405,34 +131486,34 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-2016-densenet-people-01",
+        "asset-2016-densenet-people-02",
         "asset-2016-densenet-architecture-01",
-        "asset-2016-densenet-people-02"
+        "asset-2016-densenet-people-01"
       ]
     },
     "imageMeta": {
-      "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
+      "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
         "caption": {
-          "zh": "DenseNet 作者团队",
-          "en": "DenseNet author group"
+          "zh": "黄高演讲资料照",
+          "en": "Gao Huang speaking"
         },
         "subcaption": {
-          "zh": "DenseNet 背后的研究者。",
-          "en": "Researchers behind DenseNet."
+          "zh": "DenseNet 主要作者在学术活动中的照片。",
+          "en": "The lead author of DenseNet speaking at an academic event."
         },
         "license": {
-          "zh": "参考图片",
-          "en": "Reference image"
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
         },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
-          "status": "documented-in-legacy",
+          "status": "external-reference",
           "license": {
-            "zh": "参考图片",
-            "en": "Reference image"
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
           }
         },
-        "role": "portrait",
+        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/2016-densenet/architecture/2016-densenet_architecture_01.png": {
@@ -131459,28 +131540,28 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "image"
       },
-      "resources/images/2016-densenet/people/2016-densenet_people_02.png": {
+      "resources/images/2016-densenet/people/2016-densenet_people_01.png": {
         "caption": {
-          "zh": "黄高演讲资料照",
-          "en": "Gao Huang speaking"
+          "zh": "DenseNet 作者团队",
+          "en": "DenseNet author group"
         },
         "subcaption": {
-          "zh": "DenseNet 主要作者在学术活动中的照片。",
-          "en": "The lead author of DenseNet speaking at an academic event."
+          "zh": "DenseNet 背后的研究者。",
+          "en": "Researchers behind DenseNet."
         },
         "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
+          "zh": "参考图片",
+          "en": "Reference image"
         },
         "sourceId": "source-densely-connected-convolutional-networks",
         "rights": {
-          "status": "external-reference",
+          "status": "documented-in-legacy",
           "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
+            "zh": "参考图片",
+            "en": "Reference image"
           }
         },
-        "role": "supporting-image",
+        "role": "portrait",
         "type": "image"
       }
     },
@@ -131813,7 +131894,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -131829,7 +131910,7 @@ const milestones = [
       "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
     },
     "category": {
-      "zh": "连接主义的兴衰与复兴：AI 七十年",
+      "zh": "连接主义的兴衰与复兴：AI七十年",
       "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "location": {
@@ -132260,7 +132341,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -132328,10 +132409,10 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/ashish-vaswani.jpg",
-        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg",
-        "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
         "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png",
-        "resources/images/2017-transformer/papers/2017-transformer_papers_01.png"
+        "resources/images/2017-transformer/papers/2017-transformer_papers_01.png",
+        "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png",
+        "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg"
       ],
       "videos": [
         {
@@ -132347,10 +132428,10 @@ const milestones = [
       ],
       "assetIds": [
         "asset-transformer-portrait",
-        "asset-transformer-attention",
-        "asset-transformer-architecture",
         "asset-transformer-architecture-detail",
-        "asset-transformer-paper-page"
+        "asset-transformer-paper-page",
+        "asset-transformer-architecture",
+        "asset-transformer-attention"
       ]
     },
     "imageMeta": {
@@ -132376,54 +132457,6 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
-        "caption": {
-          "zh": "Transformer 自注意力机制",
-          "en": "Transformer self-attention mechanism"
-        },
-        "subcaption": {
-          "zh": "本地重绘的 token 间注意力关系解释图。",
-          "en": "Locally redrawn explainer of attention relationships between tokens."
-        },
-        "license": {
-          "zh": "根据论文方法本地重绘，不复制原论文图。",
-          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "根据论文方法本地重绘，不复制原论文图。",
-            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
-          }
-        },
-        "role": "algorithm-explainer",
-        "type": "svg"
-      },
-      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
-        "caption": {
-          "zh": "Transformer 自注意力计算",
-          "en": "Transformer self-attention computation"
-        },
-        "subcaption": {
-          "zh": "展示查询、键和值投影以及缩放点积注意力。",
-          "en": "Shows query, key, and value projections with scaled dot-product attention."
-        },
-        "license": {
-          "zh": "用于展陈解释的架构资料图。",
-          "en": "Architecture reference image for exhibition explanation."
-        },
-        "sourceId": "source-transformer-arxiv",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "用于展陈解释的架构资料图。",
-            "en": "Architecture reference image for exhibition explanation."
-          }
-        },
-        "role": "algorithm-explainer",
         "type": "image"
       },
       "resources/images/2017-transformer/architecture/2017-transformer_architecture_02.png": {
@@ -132473,6 +132506,54 @@ const milestones = [
         },
         "role": "paper-page",
         "type": "image"
+      },
+      "resources/images/2017-transformer/architecture/2017-transformer_architecture_01.png": {
+        "caption": {
+          "zh": "Transformer 自注意力计算",
+          "en": "Transformer self-attention computation"
+        },
+        "subcaption": {
+          "zh": "展示查询、键和值投影以及缩放点积注意力。",
+          "en": "Shows query, key, and value projections with scaled dot-product attention."
+        },
+        "license": {
+          "zh": "用于展陈解释的架构资料图。",
+          "en": "Architecture reference image for exhibition explanation."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "用于展陈解释的架构资料图。",
+            "en": "Architecture reference image for exhibition explanation."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2017-transformer_self-attention.svg": {
+        "caption": {
+          "zh": "Transformer 自注意力机制",
+          "en": "Transformer self-attention mechanism"
+        },
+        "subcaption": {
+          "zh": "本地重绘的 token 间注意力关系解释图。",
+          "en": "Locally redrawn explainer of attention relationships between tokens."
+        },
+        "license": {
+          "zh": "根据论文方法本地重绘，不复制原论文图。",
+          "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+        },
+        "sourceId": "source-transformer-arxiv",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "根据论文方法本地重绘，不复制原论文图。",
+            "en": "Locally redrawn from the paper method; does not copy the original paper figure."
+          }
+        },
+        "role": "algorithm-explainer",
+        "type": "svg"
       }
     },
     "achievement": {
@@ -132793,7 +132874,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -133294,7 +133375,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -133805,7 +133886,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -134138,7 +134219,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -134208,12 +134289,12 @@ const milestones = [
         "resources/images/external/2020-alphafold/john-jumper-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/2020-alphafold2_structure-pipeline.svg",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_01.png",
-        "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
         "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png",
-        "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
-        "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png",
         "resources/images/2020-alphafold/people/2020-alphafold_people_01.png",
-        "resources/images/2020-alphafold/people/2020-alphafold_people_02.png"
+        "resources/images/2020-alphafold/people/2020-alphafold_people_02.png",
+        "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg",
+        "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png",
+        "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png"
       ],
       "videos": [
         {
@@ -134231,12 +134312,12 @@ const milestones = [
         "asset-2020-alphafold-john-jumper-external",
         "asset-2020-alphafold2-structure-pipeline",
         "asset-2020-alphafold-architecture-01",
-        "asset-2020-alphafold-historical-01",
         "asset-2020-alphafold-architecture-02",
-        "asset-2020-alphafold-historical-02",
-        "asset-2020-alphafold-papers-01",
         "asset-2020-alphafold-people-01",
-        "asset-2020-alphafold-people-02"
+        "asset-2020-alphafold-people-02",
+        "asset-2020-alphafold-historical-01",
+        "asset-2020-alphafold-historical-02",
+        "asset-2020-alphafold-papers-01"
       ]
     },
     "imageMeta": {
@@ -134318,30 +134399,6 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "image"
       },
-      "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
-        "caption": {
-          "zh": "AlphaFold: 蛋白质结构预测资料图 1",
-          "en": "AlphaFold: Protein Structure Prediction reference image 1"
-        },
-        "subcaption": {
-          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
-          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "supporting-image",
-        "type": "image"
-      },
       "resources/images/2020-alphafold/architecture/2020-alphafold_architecture_02.png": {
         "caption": {
           "zh": "AlphaFold: 蛋白质结构预测结构图 2",
@@ -134364,54 +134421,6 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
-        "type": "image"
-      },
-      "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
-        "caption": {
-          "zh": "AlphaFold: 蛋白质结构预测资料图 2",
-          "en": "AlphaFold: Protein Structure Prediction reference image 2"
-        },
-        "subcaption": {
-          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
-          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "supporting-image",
-        "type": "image"
-      },
-      "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
-        "caption": {
-          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》（第 1 页资料）",
-          "en": "Highly accurate protein structure prediction with AlphaFold — page reference 1"
-        },
-        "subcaption": {
-          "zh": "原论文页面或相关页面的图像资料。",
-          "en": "Image reference from the original paper or a related paper page."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "paper-page",
         "type": "image"
       },
       "resources/images/2020-alphafold/people/2020-alphafold_people_01.png": {
@@ -134460,6 +134469,78 @@ const milestones = [
           }
         },
         "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_01.jpg": {
+        "caption": {
+          "zh": "AlphaFold: 蛋白质结构预测资料图 1",
+          "en": "AlphaFold: Protein Structure Prediction reference image 1"
+        },
+        "subcaption": {
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/historical/2020-alphafold_historical_02.png": {
+        "caption": {
+          "zh": "AlphaFold: 蛋白质结构预测资料图 2",
+          "en": "AlphaFold: Protein Structure Prediction reference image 2"
+        },
+        "subcaption": {
+          "zh": "与AlphaFold: 蛋白质结构预测相关的历史图像资料。",
+          "en": "Historical image reference related to AlphaFold: Protein Structure Prediction."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "supporting-image",
+        "type": "image"
+      },
+      "resources/images/2020-alphafold/papers/2020-alphafold_papers_01.png": {
+        "caption": {
+          "zh": "《使用 AlphaFold 进行高精度蛋白质结构预测》（第 1 页资料）",
+          "en": "Highly accurate protein structure prediction with AlphaFold — page reference 1"
+        },
+        "subcaption": {
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-highly-accurate-protein-structure-prediction-with-alphafold",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
         "type": "image"
       }
     },
@@ -134788,7 +134869,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -134847,6 +134928,8 @@ const milestones = [
         "resources/images/2022-post-training-intelligence/architecture/rlhf-feedback-loop.jpeg",
         "resources/images/figures/research-institution.png"
       ],
+      "overviewImage": "resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg",
+      "overviewImageAssetId": "asset-2022-post-training-pipeline",
       "videos": [],
       "assetIds": [
         "asset-2022-post-training-instruction-tuning-ppt",
@@ -135192,7 +135275,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -135544,7 +135627,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -135620,8 +135703,8 @@ const milestones = [
         "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png",
         "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_01.png",
         "resources/images/2024-ai-scientist/architecture/2024-ai-scientist_architecture_02.png",
-        "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png",
-        "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png"
+        "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png",
+        "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png"
       ],
       "videos": [
         {
@@ -135639,8 +135722,8 @@ const milestones = [
         "asset-2024-ai-scientist-people-02",
         "asset-2024-ai-scientist-architecture-01",
         "asset-2024-ai-scientist-architecture-02",
-        "asset-2024-ai-scientist-papers-01",
-        "asset-2024-ai-scientist-people-01"
+        "asset-2024-ai-scientist-people-01",
+        "asset-2024-ai-scientist-papers-01"
       ]
     },
     "imageMeta": {
@@ -135716,30 +135799,6 @@ const milestones = [
         "role": "architecture-explainer",
         "type": "image"
       },
-      "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png": {
-        "caption": {
-          "zh": "《AI 科学家》（第 1 页资料）",
-          "en": "The AI Scientist — page reference 1"
-        },
-        "subcaption": {
-          "zh": "原论文页面或相关页面的图像资料。",
-          "en": "Image reference from the original paper or a related paper page."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "paper-page",
-        "type": "image"
-      },
       "resources/images/2024-ai-scientist/people/2024-ai-scientist_people_01.png": {
         "caption": {
           "zh": "伯克利 A-Lab 研究团队",
@@ -135762,6 +135821,30 @@ const milestones = [
           }
         },
         "role": "team-photo",
+        "type": "image"
+      },
+      "resources/images/2024-ai-scientist/papers/2024-ai-scientist_papers_01.png": {
+        "caption": {
+          "zh": "《AI 科学家》（第 1 页资料）",
+          "en": "The AI Scientist — page reference 1"
+        },
+        "subcaption": {
+          "zh": "原论文页面或相关页面的图像资料。",
+          "en": "Image reference from the original paper or a related paper page."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "paper-page",
         "type": "image"
       }
     },
@@ -135940,7 +136023,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -136011,8 +136094,8 @@ const milestones = [
           "zh": "郑廉民"
         },
         "role": {
-          "en": "Co-creator of Chatbot Arena / LMArena",
-          "zh": "Chatbot Arena / LMArena 共同创建者"
+          "en": "Context figure and co-creator of Chatbot Arena / LMArena",
+          "zh": "Chatbot Arena / LMArena 共同创建者（背景人物）"
         },
         "avatar": "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
         "avatarStyle": "",
@@ -136021,9 +136104,9 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png",
         "resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg",
-        "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png",
         "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_03.png"
       ],
@@ -136042,14 +136125,38 @@ const milestones = [
         }
       ],
       "assetIds": [
+        "asset-2025-llm-competition-architecture-01",
         "asset-2025-llm-competition-historical-01",
         "asset-2025-llm-competition-lianmin-zheng",
-        "asset-2025-llm-competition-architecture-01",
         "asset-2025-llm-competition-historical-02",
         "asset-2025-llm-competition-historical-03"
       ]
     },
     "imageMeta": {
+      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
+        "caption": {
+          "zh": "大语言模型百花齐放结构图 1",
+          "en": "A Flourishing Competition Among Large Language Models structure diagram 1"
+        },
+        "subcaption": {
+          "zh": "展示大语言模型百花齐放的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of A Flourishing Competition Among Large Language Models."
+        },
+        "license": {
+          "zh": "Migrated from legacy media metadata; verify rights before publication.",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "Migrated from legacy media metadata; verify rights before publication.",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "image"
+      },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png": {
         "caption": {
           "zh": "大语言模型百花齐放资料图 1",
@@ -136102,30 +136209,6 @@ const milestones = [
           "sourceUrl": "https://lmzheng.net/images/profile.jpg"
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png": {
-        "caption": {
-          "zh": "大语言模型百花齐放结构图 1",
-          "en": "A Flourishing Competition Among Large Language Models structure diagram 1"
-        },
-        "subcaption": {
-          "zh": "展示大语言模型百花齐放的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of A Flourishing Competition Among Large Language Models."
-        },
-        "license": {
-          "zh": "Migrated from legacy media metadata; verify rights before publication.",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "Migrated from legacy media metadata; verify rights before publication.",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
         "type": "image"
       },
       "resources/images/2025-llm-competition/historical/2025-llm-competition_historical_02.png": {
@@ -136438,52 +136521,22 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
         "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg",
-        "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg",
         "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg",
-        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg"
+        "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_program-flow.svg",
+        "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png",
+        "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1951-strachey-draughts-program-external",
         "asset-1951-strachey-draughts-christopher-strachey-portrait",
-        "asset-1951-strachey-draughts-checkers-board-external",
         "asset-1951-strachey-draughts-board-search",
-        "asset-1951-strachey-draughts-program-flow"
+        "asset-1951-strachey-draughts-program-flow",
+        "asset-1951-strachey-draughts-program-external",
+        "asset-1951-strachey-draughts-checkers-board-external"
       ]
     },
     "imageMeta": {
-      "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
-        "caption": {
-          "zh": "斯特雷奇跳棋程序显示画面",
-          "en": "Strachey draughts program display"
-        },
-        "subcaption": {
-          "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
-          "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
-        "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-        },
-        "sourceId": "source-strachey-draughts-program-screenshot",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
-        },
-        "role": "game-record-image",
-        "type": "image"
-      },
       "resources/images/external/1951-strachey-draughts/christopher-strachey-portrait.jpg": {
         "caption": {
           "zh": "克里斯托弗·斯特雷奇肖像",
@@ -136516,36 +136569,6 @@ const milestones = [
           "sourceUrl": "https://history.computer.org/pioneers/strachey.html"
         },
         "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
-        "caption": {
-          "zh": "标准跳棋棋盘",
-          "en": "Standard checkers board"
-        },
-        "subcaption": {
-          "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
-          "en": "The board environment handled by Strachey's program."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
-        "license": {
-          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-        },
-        "sourceId": "source-checkers-board-photo",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
-            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
-          },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
-        },
-        "role": "supporting-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/1951-strachey-draughts_board-search.svg": {
@@ -136595,6 +136618,66 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/external/1951-strachey-draughts/strachey-draughts-program-display.png": {
+        "caption": {
+          "zh": "斯特雷奇跳棋程序显示画面",
+          "en": "Strachey draughts program display"
+        },
+        "subcaption": {
+          "zh": "早期程序使用点阵字符表示跳棋棋盘与棋子。",
+          "en": "Dot-matrix display of the board and pieces used by Strachey's early draughts program."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-strachey-draughts-program-screenshot",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Christopher_Strachey%27s_Draughts_Program.png"
+        },
+        "role": "game-record-image",
+        "type": "image"
+      },
+      "resources/images/external/1951-strachey-draughts/standard-checkers-board.jpg": {
+        "caption": {
+          "zh": "标准跳棋棋盘",
+          "en": "Standard checkers board"
+        },
+        "subcaption": {
+          "zh": "用于说明斯特雷奇程序所处理的棋盘环境。",
+          "en": "The board environment handled by Strachey's program."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg",
+        "license": {
+          "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+          "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+        },
+        "sourceId": "source-checkers-board-photo",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "本地副本下载自维基共享资源；对外再分发时应按对应文件页保留作者署名与原始许可。",
+            "en": "Local copy downloaded from Wikimedia Commons; external redistribution must retain the author attribution and license shown on the corresponding file page."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/CheckersStandard.jpg"
+        },
+        "role": "supporting-image",
+        "type": "image"
       }
     },
     "achievement": {
@@ -137007,18 +137090,18 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/authoritative/david-silver.jpg",
-        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg",
         "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg",
-        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg"
+        "resources/images/bench-council-ai100/photos/2016-alphago_lee-sedol.jpg",
+        "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg"
       ],
       "overviewImage": "resources/images/figures/authoritative/david-silver.jpg",
       "overviewImageAssetId": "asset-david-silver-commons-portrait",
       "videos": [],
       "assetIds": [
         "asset-david-silver-commons-portrait",
-        "asset-2016-alphago-game-4-photo",
         "asset-alphago-policy-value-search",
-        "asset-alphago-lee-sedol"
+        "asset-alphago-lee-sedol",
+        "asset-2016-alphago-game-4-photo"
       ]
     },
     "imageMeta": {
@@ -137049,39 +137132,6 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
-        "caption": {
-          "zh": "李世石对 AlphaGo 第 4 局",
-          "en": "Lee Sedol versus AlphaGo, Game 4"
-        },
-        "subcaption": {
-          "zh": "2016 年首尔人机大战第 4 局的实际棋盘。",
-          "en": "The actual board during Game 4 of the 2016 Seoul match."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
-        "license": {
-          "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
-          "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
-        },
-        "usage": {
-          "zh": "用于展示李世石在第 4 局击败 AlphaGo 的实际对局场景。",
-          "en": "Used to show the actual game in which Lee Sedol defeated AlphaGo."
-        },
-        "sourceId": "source-alphago-game-4-commons",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
-            "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
-          }
-        },
-        "role": "game-record-image",
         "type": "image"
       },
       "resources/images/bench-council-ai100/explainers/2016-alphago_policy-value-search.svg": {
@@ -137130,6 +137180,39 @@ const milestones = [
           }
         },
         "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/external/2016-alphago/lee-sedol-alphago-game-4.jpg": {
+        "caption": {
+          "zh": "李世石对 AlphaGo 第 4 局",
+          "en": "Lee Sedol versus AlphaGo, Game 4"
+        },
+        "subcaption": {
+          "zh": "2016 年首尔人机大战第 4 局的实际棋盘。",
+          "en": "The actual board during Game 4 of the 2016 Seoul match."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lee_Sedol_(B)_vs_AlphaGo_(W)_-_Game_4.jpg",
+        "license": {
+          "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+          "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+        },
+        "usage": {
+          "zh": "用于展示李世石在第 4 局击败 AlphaGo 的实际对局场景。",
+          "en": "Used to show the actual game in which Lee Sedol defeated AlphaGo."
+        },
+        "sourceId": "source-alphago-game-4-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 4.0；摄影者 Wesalius，须保留署名并遵循相同方式共享。",
+            "en": "CC BY-SA 4.0; photograph by Wesalius. Attribution and share-alike terms apply."
+          }
+        },
+        "role": "game-record-image",
         "type": "image"
       }
     },
@@ -137530,52 +137613,20 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/game-evolution/1988-td-gammon.svg",
         "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
         "resources/images/bench-council-ai100/explainers/1988-td-update_value-timeline.svg",
-        "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg"
+        "resources/images/bench-council-ai100/explainers/1988-td-update_error-meter.svg",
+        "resources/images/game-evolution/1988-td-gammon.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1988-td-update-td-gammon-media",
         "asset-1988-td-update-richard-sutton",
         "asset-1988-td-update-value-timeline",
-        "asset-1988-td-update-error-meter"
+        "asset-1988-td-update-error-meter",
+        "asset-1988-td-update-td-gammon-media"
       ]
     },
     "imageMeta": {
-      "resources/images/game-evolution/1988-td-gammon.svg": {
-        "caption": {
-          "zh": "时序差分学习与后来的 TD-Gammon",
-          "en": "Temporal-difference learning and the later TD-Gammon"
-        },
-        "subcaption": {
-          "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",
-          "en": "Backgammon state changes, dice rolls, and a value trace illustrate how TD learning updates predictions during play."
-        },
-        "sourceName": {
-          "zh": "本项目原创解释图",
-          "en": "Original exhibition explainer"
-        },
-        "license": {
-          "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
-          "en": "Original local SVG explainer; no paper or match imagery is copied."
-        },
-        "usage": {
-          "zh": "用于 1988 年时序差分更新事件的评论与媒体区，展示该方法在 TD-Gammon 棋局中的后续应用。",
-          "en": "Used in the 1988 Temporal-Difference Update commentary and media panel to show the method's later application in TD-Gammon."
-        },
-        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
-        "rights": {
-          "status": "local-original",
-          "license": {
-            "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
-            "en": "Original local SVG explainer; no paper or match imagery is copied."
-          }
-        },
-        "role": "game-analysis-image",
-        "type": "svg"
-      },
       "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg": {
         "caption": {
           "zh": "理查德·萨顿 肖像",
@@ -137646,6 +137697,38 @@ const milestones = [
           }
         },
         "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/game-evolution/1988-td-gammon.svg": {
+        "caption": {
+          "zh": "时序差分学习与后来的 TD-Gammon",
+          "en": "Temporal-difference learning and the later TD-Gammon"
+        },
+        "subcaption": {
+          "zh": "以双陆棋状态变化、随机掷骰和价值曲线解释 TD 学习如何随对局逐步更新预测。",
+          "en": "Backgammon state changes, dice rolls, and a value trace illustrate how TD learning updates predictions during play."
+        },
+        "sourceName": {
+          "zh": "本项目原创解释图",
+          "en": "Original exhibition explainer"
+        },
+        "license": {
+          "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+          "en": "Original local SVG explainer; no paper or match imagery is copied."
+        },
+        "usage": {
+          "zh": "用于 1988 年时序差分更新事件的评论与媒体区，展示该方法在 TD-Gammon 棋局中的后续应用。",
+          "en": "Used in the 1988 Temporal-Difference Update commentary and media panel to show the method's later application in TD-Gammon."
+        },
+        "sourceId": "source-learning-to-predict-by-the-methods-of-temporal-differences",
+        "rights": {
+          "status": "local-original",
+          "license": {
+            "zh": "本地原创 SVG 解释图；未复制论文或比赛图像。",
+            "en": "Original local SVG explainer; no paper or match imagery is copied."
+          }
+        },
+        "role": "game-analysis-image",
         "type": "svg"
       }
     },
@@ -138035,44 +138118,20 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/source/1994-chinook_homepage.png",
         "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg",
         "resources/images/bench-council-ai100/explainers/1994-chinook_endgame-database.svg",
-        "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg"
+        "resources/images/bench-council-ai100/explainers/1994-chinook_perfect-play.svg",
+        "resources/images/bench-council-ai100/source/1994-chinook_homepage.png"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1994-chinook-homepage",
         "asset-1994-chinook-jonathan-schaeffer-external",
         "asset-1994-chinook-endgame-database",
-        "asset-1994-chinook-perfect-play"
+        "asset-1994-chinook-perfect-play",
+        "asset-1994-chinook-homepage"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
-        "caption": {
-          "zh": "Chinook 官方项目页面",
-          "en": "Chinook official project page"
-        },
-        "subcaption": {
-          "zh": "引用来源页面截图：Chinook project home。",
-          "en": "Screenshot of the cited source page: Chinook project home."
-        },
-        "license": {
-          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
-          "en": "Source page screenshot for citation preview; rights remain with the source site."
-        },
-        "sourceId": "source-chinook-project-home",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
-            "en": "Source page screenshot for citation preview; rights remain with the source site."
-          }
-        },
-        "role": "game-record-image",
-        "type": "image"
-      },
       "resources/images/external/1994-chinook/jonathan-schaeffer-portrait.jpg": {
         "caption": {
           "zh": "乔纳森·谢弗肖像",
@@ -138150,6 +138209,30 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/source/1994-chinook_homepage.png": {
+        "caption": {
+          "zh": "Chinook 官方项目页面",
+          "en": "Chinook official project page"
+        },
+        "subcaption": {
+          "zh": "引用来源页面截图：Chinook project home。",
+          "en": "Screenshot of the cited source page: Chinook project home."
+        },
+        "license": {
+          "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+          "en": "Source page screenshot for citation preview; rights remain with the source site."
+        },
+        "sourceId": "source-chinook-project-home",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "用于来源引用预览的网页截图；相关权利仍归来源网站所有。",
+            "en": "Source page screenshot for citation preview; rights remain with the source site."
+          }
+        },
+        "role": "game-record-image",
+        "type": "image"
       }
     },
     "achievement": {
@@ -138552,14 +138635,14 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/authoritative/michael-buro.jpg",
-        "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif",
-        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg"
+        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
+        "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif"
       ],
       "videos": [],
       "assetIds": [
         "asset-michael-buro-university-portrait",
-        "asset-1997-logistello-game-1-positions",
-        "asset-1997-logistello-pattern-eval"
+        "asset-1997-logistello-pattern-eval",
+        "asset-1997-logistello-game-1-positions"
       ]
     },
     "imageMeta": {
@@ -138591,6 +138674,30 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
+        "caption": {
+          "zh": "Logistello 模式评估",
+          "en": "Logistello pattern evaluation"
+        },
+        "subcaption": {
+          "zh": "学习型黑白棋评估的原创解释图。",
+          "en": "Original explainer for learned Othello evaluation."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-logistello-homepage",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif": {
         "caption": {
@@ -138624,30 +138731,6 @@ const milestones = [
         },
         "role": "game-record-animation",
         "type": "gif"
-      },
-      "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg": {
-        "caption": {
-          "zh": "Logistello 模式评估",
-          "en": "Logistello pattern evaluation"
-        },
-        "subcaption": {
-          "zh": "学习型黑白棋评估的原创解释图。",
-          "en": "Original explainer for learned Othello evaluation."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-logistello-homepage",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -139205,55 +139288,22 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif",
         "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg",
-        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
         "resources/images/bench-council-ai100/explainers/1997-deep-blue_search-tree.svg",
-        "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg"
+        "resources/images/bench-council-ai100/explainers/1997-deep-blue_chip-board.svg",
+        "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg",
+        "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif"
       ],
       "videos": [],
       "assetIds": [
-        "asset-1997-deep-blue-game-6-animation",
         "asset-1997-deep-blue-feng-hsiung-hsu",
-        "asset-1997-deep-blue-murray-campbell",
         "asset-1997-deep-blue-search-tree",
-        "asset-1997-deep-blue-chip-board"
+        "asset-1997-deep-blue-chip-board",
+        "asset-1997-deep-blue-murray-campbell",
+        "asset-1997-deep-blue-game-6-animation"
       ]
     },
     "imageMeta": {
-      "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif": {
-        "caption": {
-          "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局",
-          "en": "Deep Blue versus Kasparov, 1997 Game 6"
-        },
-        "subcaption": {
-          "zh": "逐手重放深蓝赢得重赛的决定局。",
-          "en": "Move-by-move replay of the decisive game in Deep Blue's rematch victory."
-        },
-        "sourceName": {
-          "zh": "维基共享资源",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
-        "license": {
-          "zh": "CC0 公共领域贡献；制作者为 Morn。",
-          "en": "CC0 public-domain dedication; created by Morn."
-        },
-        "usage": {
-          "zh": "用于展示 1997 年深蓝对卡斯帕罗夫第 6 局的实际走子过程。",
-          "en": "Used to show the actual move sequence of Deep Blue versus Kasparov, Game 6, in 1997."
-        },
-        "sourceId": "source-deep-blue-game-6-commons",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC0 公共领域贡献；制作者为 Morn。",
-            "en": "CC0 public-domain dedication; created by Morn."
-          }
-        },
-        "role": "game-record-animation",
-        "type": "gif"
-      },
       "resources/images/bench-council-ai100/photos/1997-deep-blue_feng-hsiung-hsu.jpg": {
         "caption": {
           "zh": "许峰雄肖像",
@@ -139282,30 +139332,6 @@ const milestones = [
           "license": {
             "zh": "图片由 IBM 档案馆提供，CHM 页面未声明开放再利用许可；依用户明确指示用于本项目，外部商业发布前仍应复核授权。",
             "en": "Courtesy of IBM Archives; the CHM page does not state an open reuse license. Included at the user's explicit direction; permission should still be reviewed before external commercial publication."
-          }
-        },
-        "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
-        "caption": {
-          "zh": "默里·坎贝尔肖像",
-          "en": "Murray Campbell portrait"
-        },
-        "subcaption": {
-          "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
-          "en": "Portrait from IBM Research profile."
-        },
-        "license": {
-          "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
-          "en": "IBM Research profile image; reuse rights not stated."
-        },
-        "sourceId": "source-murray-campbell-ibm-research",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
-            "en": "IBM Research profile image; reuse rights not stated."
           }
         },
         "role": "hero-image",
@@ -139358,6 +139384,63 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/bench-council-ai100/photos/1997-deep-blue_murray-campbell.jpg": {
+        "caption": {
+          "zh": "默里·坎贝尔肖像",
+          "en": "Murray Campbell portrait"
+        },
+        "subcaption": {
+          "zh": "Deep Blue 核心研究者、评估函数与搜索策略负责人。",
+          "en": "Portrait from IBM Research profile."
+        },
+        "license": {
+          "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
+          "en": "IBM Research profile image; reuse rights not stated."
+        },
+        "sourceId": "source-murray-campbell-ibm-research",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "图片来自 IBM 研究院人物页；页面未声明再分发许可。",
+            "en": "IBM Research profile image; reuse rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
+      "resources/images/external/1997-deep-blue/deep-blue-kasparov-1997-game-6.gif": {
+        "caption": {
+          "zh": "深蓝对卡斯帕罗夫 1997 年第 6 局",
+          "en": "Deep Blue versus Kasparov, 1997 Game 6"
+        },
+        "subcaption": {
+          "zh": "逐手重放深蓝赢得重赛的决定局。",
+          "en": "Move-by-move replay of the decisive game in Deep Blue's rematch victory."
+        },
+        "sourceName": {
+          "zh": "维基共享资源",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_Blue_versus_Kasparov,_1997,_Game_6.gif",
+        "license": {
+          "zh": "CC0 公共领域贡献；制作者为 Morn。",
+          "en": "CC0 public-domain dedication; created by Morn."
+        },
+        "usage": {
+          "zh": "用于展示 1997 年深蓝对卡斯帕罗夫第 6 局的实际走子过程。",
+          "en": "Used to show the actual move sequence of Deep Blue versus Kasparov, Game 6, in 1997."
+        },
+        "sourceId": "source-deep-blue-game-6-commons",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC0 公共领域贡献；制作者为 Morn。",
+            "en": "CC0 public-domain dedication; created by Morn."
+          }
+        },
+        "role": "game-record-animation",
+        "type": "gif"
       }
     },
     "achievement": {
@@ -140326,24 +140409,72 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
-        "resources/images/figures/authoritative/david-silver.jpg",
         "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg",
-        "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg"
+        "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg",
+        "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg",
+        "resources/images/figures/authoritative/david-silver.jpg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2013-dqn-replay-buffer",
-        "asset-david-silver-commons-portrait",
         "asset-2013-dqn-volodymyr-mnih",
-        "asset-2013-dqn-q-control"
+        "asset-2013-dqn-replay-buffer",
+        "asset-2013-dqn-q-control",
+        "asset-david-silver-commons-portrait"
       ]
     },
     "imageMeta": {
+      "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
+        "caption": {
+          "zh": "沃洛迪米尔·姆尼赫 肖像",
+          "en": "Volodymyr Mnih portrait"
+        },
+        "subcaption": {
+          "zh": "来自 Mnih 多伦多大学托管个人页的人物图。",
+          "en": "Portrait from Mnih’s University of Toronto-hosted personal page."
+        },
+        "license": {
+          "zh": "Personal website photo; rights not stated.",
+          "en": "Personal website photo; rights not stated."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "Personal website photo; rights not stated.",
+            "en": "Personal website photo; rights not stated."
+          }
+        },
+        "role": "hero-image",
+        "type": "image"
+      },
       "resources/images/bench-council-ai100/explainers/2013-dqn_replay-buffer.svg": {
         "caption": {
           "zh": "经验回放池",
           "en": "Replay buffer"
+        },
+        "subcaption": {
+          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
+          "en": "Local redraw for Deep Q Network, based on the listed source material."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
+      "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
+        "caption": {
+          "zh": "Q 值控制循环",
+          "en": "Q-value control loop"
         },
         "subcaption": {
           "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
@@ -140392,54 +140523,6 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/photos/2013-dqn_volodymyr-mnih.jpg": {
-        "caption": {
-          "zh": "沃洛迪米尔·姆尼赫 肖像",
-          "en": "Volodymyr Mnih portrait"
-        },
-        "subcaption": {
-          "zh": "来自 Mnih 多伦多大学托管个人页的人物图。",
-          "en": "Portrait from Mnih’s University of Toronto-hosted personal page."
-        },
-        "license": {
-          "zh": "Personal website photo; rights not stated.",
-          "en": "Personal website photo; rights not stated."
-        },
-        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "Personal website photo; rights not stated.",
-            "en": "Personal website photo; rights not stated."
-          }
-        },
-        "role": "hero-image",
-        "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2013-dqn_q-control.svg": {
-        "caption": {
-          "zh": "Q 值控制循环",
-          "en": "Q-value control loop"
-        },
-        "subcaption": {
-          "zh": "深度 Q 网络 的本地重绘图，依据页面列出的来源材料制作。",
-          "en": "Local redraw for Deep Q Network, based on the listed source material."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-playing-atari-with-deep-reinforcement-learning",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -141469,14 +141552,14 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/authoritative/noam-brown.jpg",
-        "resources/images/figures/authoritative/tuomas-sandholm.jpg",
-        "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg"
+        "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg",
+        "resources/images/figures/authoritative/tuomas-sandholm.jpg"
       ],
       "videos": [],
       "assetIds": [
         "asset-noam-brown-official-portrait",
-        "asset-tuomas-sandholm-commons-portrait",
-        "asset-2017-libratus-cfr-solving"
+        "asset-2017-libratus-cfr-solving",
+        "asset-tuomas-sandholm-commons-portrait"
       ]
     },
     "imageMeta": {
@@ -141509,6 +141592,30 @@ const milestones = [
         "role": "portrait",
         "type": "image"
       },
+      "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg": {
+        "caption": {
+          "zh": "Libratus 子局求解",
+          "en": "Libratus subgame solving"
+        },
+        "subcaption": {
+          "zh": "不完全信息扑克搜索的原创解释图。",
+          "en": "Original explainer for imperfect-information poker search."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-science-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/figures/authoritative/tuomas-sandholm.jpg": {
         "caption": {
           "zh": "托马斯·桑德霍姆肖像",
@@ -141537,30 +141644,6 @@ const milestones = [
         },
         "role": "supporting-portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2017-libratus_cfr-solving.svg": {
-        "caption": {
-          "zh": "Libratus 子局求解",
-          "en": "Libratus subgame solving"
-        },
-        "subcaption": {
-          "zh": "不完全信息扑克搜索的原创解释图。",
-          "en": "Original explainer for imperfect-information poker search."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-science-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -142053,14 +142136,14 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/authoritative/noam-brown.jpg",
-        "resources/images/figures/authoritative/tuomas-sandholm.jpg",
-        "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg"
+        "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg",
+        "resources/images/figures/authoritative/tuomas-sandholm.jpg"
       ],
       "videos": [],
       "assetIds": [
         "asset-noam-brown-official-portrait",
-        "asset-tuomas-sandholm-commons-portrait",
-        "asset-2019-pluribus-blueprint-search"
+        "asset-2019-pluribus-blueprint-search",
+        "asset-tuomas-sandholm-commons-portrait"
       ]
     },
     "imageMeta": {
@@ -142093,6 +142176,30 @@ const milestones = [
         "role": "portrait",
         "type": "image"
       },
+      "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg": {
+        "caption": {
+          "zh": "Pluribus 蓝图搜索",
+          "en": "Pluribus blueprint search"
+        },
+        "subcaption": {
+          "zh": "多人扑克推理的原创解释图。",
+          "en": "Original explainer for multiplayer poker reasoning."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-science-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
+      },
       "resources/images/figures/authoritative/tuomas-sandholm.jpg": {
         "caption": {
           "zh": "托马斯·桑德霍姆肖像",
@@ -142121,30 +142228,6 @@ const milestones = [
         },
         "role": "supporting-portrait",
         "type": "image"
-      },
-      "resources/images/bench-council-ai100/explainers/2019-pluribus_blueprint-search.svg": {
-        "caption": {
-          "zh": "Pluribus 蓝图搜索",
-          "en": "Pluribus blueprint search"
-        },
-        "subcaption": {
-          "zh": "多人扑克推理的原创解释图。",
-          "en": "Original explainer for multiplayer poker reasoning."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-science-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -146159,10 +146242,10 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg",
+        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg",
         "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg",
         "resources/images/humanistic-cycle/artifacts/1973-lighthill-report_freddy-ii.jpg",
-        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg",
-        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg"
+        "resources/images/humanistic-cycle/places/1973-lighthill-report_royal-institution-theatre.jpg"
       ],
       "imageMeta": {
         "resources/images/humanistic-cycle/people/1973-lighthill-report_james-lighthill-royal-society.jpg": {
@@ -146194,6 +146277,39 @@ const milestones = [
           },
           "role": "portrait",
           "type": "image"
+        },
+        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
+          "caption": {
+            "zh": "莱特希尔寒冬解释图",
+            "en": "Lighthill winter explainer"
+          },
+          "subcaption": {
+            "zh": "为期待崩塌重绘的原创图",
+            "en": "Original diagram for expectation collapse"
+          },
+          "sourceName": {
+            "en": "Local original SVG",
+            "zh": "本地原创 SVG"
+          },
+          "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          },
+          "usage": {
+            "en": "Branch timeline visual",
+            "zh": "分支时间线视觉图"
+          },
+          "sourceId": "source-lighthill-report-archive",
+          "rights": {
+            "status": "documented-in-legacy",
+            "license": {
+              "zh": "原创重绘解释图；来源仅作参考链接。",
+              "en": "Original redrawn explainer; reference links only."
+            }
+          },
+          "role": "architecture-explainer",
+          "type": "svg"
         },
         "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
           "caption": {
@@ -146284,48 +146400,15 @@ const milestones = [
           },
           "role": "venue-photo",
           "type": "image"
-        },
-        "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
-          "caption": {
-            "zh": "莱特希尔寒冬解释图",
-            "en": "Lighthill winter explainer"
-          },
-          "subcaption": {
-            "zh": "为期待崩塌重绘的原创图",
-            "en": "Original diagram for expectation collapse"
-          },
-          "sourceName": {
-            "en": "Local original SVG",
-            "zh": "本地原创 SVG"
-          },
-          "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          },
-          "usage": {
-            "en": "Branch timeline visual",
-            "zh": "分支时间线视觉图"
-          },
-          "sourceId": "source-lighthill-report-archive",
-          "rights": {
-            "status": "documented-in-legacy",
-            "license": {
-              "zh": "原创重绘解释图；来源仅作参考链接。",
-              "en": "Original redrawn explainer; reference links only."
-            }
-          },
-          "role": "architecture-explainer",
-          "type": "svg"
         }
       },
       "videos": [],
       "assetIds": [
         "asset-1973-lighthill-report-james-lighthill",
+        "asset-1973-lighthill-report-winter-filter",
         "asset-1973-lighthill-report-donald-michie",
         "asset-1973-lighthill-report-freddy-ii",
-        "asset-1973-lighthill-report-royal-institution-theatre",
-        "asset-1973-lighthill-report-winter-filter"
+        "asset-1973-lighthill-report-royal-institution-theatre"
       ]
     },
     "imageMeta": {
@@ -146358,6 +146441,39 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
+      },
+      "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
+        "caption": {
+          "zh": "莱特希尔寒冬解释图",
+          "en": "Lighthill winter explainer"
+        },
+        "subcaption": {
+          "zh": "为期待崩塌重绘的原创图",
+          "en": "Original diagram for expectation collapse"
+        },
+        "sourceName": {
+          "en": "Local original SVG",
+          "zh": "本地原创 SVG"
+        },
+        "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
+        "license": {
+          "zh": "原创重绘解释图；来源仅作参考链接。",
+          "en": "Original redrawn explainer; reference links only."
+        },
+        "usage": {
+          "en": "Branch timeline visual",
+          "zh": "分支时间线视觉图"
+        },
+        "sourceId": "source-lighthill-report-archive",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "原创重绘解释图；来源仅作参考链接。",
+            "en": "Original redrawn explainer; reference links only."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       },
       "resources/images/humanistic-cycle/people/1973-lighthill-report_donald-michie.jpg": {
         "caption": {
@@ -146448,39 +146564,6 @@ const milestones = [
         },
         "role": "venue-photo",
         "type": "image"
-      },
-      "resources/images/humanistic-cycle/explainers/1973-lighthill-report_winter-filter.svg": {
-        "caption": {
-          "zh": "莱特希尔寒冬解释图",
-          "en": "Lighthill winter explainer"
-        },
-        "subcaption": {
-          "zh": "为期待崩塌重绘的原创图",
-          "en": "Original diagram for expectation collapse"
-        },
-        "sourceName": {
-          "en": "Local original SVG",
-          "zh": "本地原创 SVG"
-        },
-        "sourceUrl": "https://www.chilton-computing.org.uk/inf/literature/reports/lighthill_report/p001.htm",
-        "license": {
-          "zh": "原创重绘解释图；来源仅作参考链接。",
-          "en": "Original redrawn explainer; reference links only."
-        },
-        "usage": {
-          "en": "Branch timeline visual",
-          "zh": "分支时间线视觉图"
-        },
-        "sourceId": "source-lighthill-report-archive",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "原创重绘解释图；来源仅作参考链接。",
-            "en": "Original redrawn explainer; reference links only."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
       }
     },
     "achievement": {
@@ -146814,43 +146897,13 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg",
         "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg",
-        "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg"
+        "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg",
+        "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg"
       ],
       "overviewImage": "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg",
       "overviewImageAssetId": "asset-1978-xiaolingtong-cover",
       "imageMeta": {
-        "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg": {
-          "caption": {
-            "zh": "《小灵通漫游未来》1978 年初版封面",
-            "en": "Little Smart Roaming the Future 1978 first-edition cover"
-          },
-          "subcaption": {
-            "zh": "书籍封面信息图，来源于中文维基百科媒体页。",
-            "en": "Book-cover reference image from the Chinese Wikipedia media page."
-          },
-          "sourceName": {
-            "zh": "中文维基百科",
-            "en": "Chinese Wikipedia"
-          },
-          "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5#/media/File:%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg",
-          "license": {
-            "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
-            "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
-          },
-          "sourceId": "source-xiaolingtong-cover-wikipedia",
-          "rights": {
-            "status": "external-reference",
-            "license": {
-              "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
-              "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
-            },
-            "sourceUrl": "https://upload.wikimedia.org/wikipedia/zh/5/5a/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg"
-          },
-          "role": "hero-image",
-          "type": "image"
-        },
         "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg": {
           "caption": {
             "zh": "叶永烈肖像",
@@ -146913,46 +146966,46 @@ const milestones = [
           },
           "role": "architecture-explainer",
           "type": "svg"
-        }
-      },
-      "videos": [],
-      "assetIds": [
-        "asset-1978-xiaolingtong-cover",
-        "asset-1978-xiaolingtong-ye-yonglie",
-        "asset-1978-xiaolingtong-future-city"
-      ]
-    },
-    "imageMeta": {
-      "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg": {
-        "caption": {
-          "zh": "《小灵通漫游未来》1978 年初版封面",
-          "en": "Little Smart Roaming the Future 1978 first-edition cover"
         },
-        "subcaption": {
-          "zh": "书籍封面信息图，来源于中文维基百科媒体页。",
-          "en": "Book-cover reference image from the Chinese Wikipedia media page."
-        },
-        "sourceName": {
-          "zh": "中文维基百科",
-          "en": "Chinese Wikipedia"
-        },
-        "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5#/media/File:%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg",
-        "license": {
-          "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
-          "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
-        },
-        "sourceId": "source-xiaolingtong-cover-wikipedia",
-        "rights": {
-          "status": "external-reference",
+        "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg": {
+          "caption": {
+            "zh": "《小灵通漫游未来》1978 年初版封面",
+            "en": "Little Smart Roaming the Future 1978 first-edition cover"
+          },
+          "subcaption": {
+            "zh": "书籍封面信息图，来源于中文维基百科媒体页。",
+            "en": "Book-cover reference image from the Chinese Wikipedia media page."
+          },
+          "sourceName": {
+            "zh": "中文维基百科",
+            "en": "Chinese Wikipedia"
+          },
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5#/media/File:%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg",
           "license": {
             "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
             "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
           },
-          "sourceUrl": "https://upload.wikimedia.org/wikipedia/zh/5/5a/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg"
-        },
-        "role": "hero-image",
-        "type": "image"
+          "sourceId": "source-xiaolingtong-cover-wikipedia",
+          "rights": {
+            "status": "external-reference",
+            "license": {
+              "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
+              "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
+            },
+            "sourceUrl": "https://upload.wikimedia.org/wikipedia/zh/5/5a/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg"
+          },
+          "role": "hero-image",
+          "type": "image"
+        }
       },
+      "videos": [],
+      "assetIds": [
+        "asset-1978-xiaolingtong-ye-yonglie",
+        "asset-1978-xiaolingtong-future-city",
+        "asset-1978-xiaolingtong-cover"
+      ]
+    },
+    "imageMeta": {
       "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg": {
         "caption": {
           "zh": "叶永烈肖像",
@@ -147015,6 +147068,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg": {
+        "caption": {
+          "zh": "《小灵通漫游未来》1978 年初版封面",
+          "en": "Little Smart Roaming the Future 1978 first-edition cover"
+        },
+        "subcaption": {
+          "zh": "书籍封面信息图，来源于中文维基百科媒体页。",
+          "en": "Book-cover reference image from the Chinese Wikipedia media page."
+        },
+        "sourceName": {
+          "zh": "中文维基百科",
+          "en": "Chinese Wikipedia"
+        },
+        "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A5#/media/File:%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg",
+        "license": {
+          "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
+          "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
+        },
+        "sourceId": "source-xiaolingtong-cover-wikipedia",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "中文维基百科媒体页引用图，仓库内保留本地副本用于稳定展示；正式再分发前仍需按原页面进一步核验授权。",
+            "en": "Referenced from the Chinese Wikipedia media page; a local copy is kept here for stable display, and reuse rights should still be verified against the source page before redistribution."
+          },
+          "sourceUrl": "https://upload.wikimedia.org/wikipedia/zh/5/5a/%E5%B0%8F%E7%81%B5%E9%80%9A%E6%BC%AB%E6%B8%B8%E6%9C%AA%E6%9D%A51978%E5%88%9D%E7%89%88.jpeg"
+        },
+        "role": "hero-image",
+        "type": "image"
       }
     },
     "achievement": {
@@ -147793,8 +147876,8 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg",
-        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg",
-        "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg"
+        "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg",
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg"
       ],
       "imageMeta": {
         "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-greenblatt.jpg": {
@@ -147825,36 +147908,6 @@ const milestones = [
             "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
           },
           "role": "portrait",
-          "type": "image"
-        },
-        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
-          "caption": {
-            "zh": "理查德·斯托曼肖像",
-            "en": "Richard Stallman portrait"
-          },
-          "subcaption": {
-            "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
-            "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
-          },
-          "sourceName": {
-            "zh": "NicoBZH / Wikimedia Commons",
-            "en": "NicoBZH / Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
-          "license": {
-            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-          },
-          "sourceId": "source-richard-stallman-portrait",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-              "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-            },
-            "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
-          },
-          "role": "supporting-portrait",
           "type": "image"
         },
         "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
@@ -147889,13 +147942,43 @@ const milestones = [
           },
           "role": "architecture-explainer",
           "type": "svg"
+        },
+        "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
+          "caption": {
+            "zh": "理查德·斯托曼肖像",
+            "en": "Richard Stallman portrait"
+          },
+          "subcaption": {
+            "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
+            "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
+          },
+          "sourceName": {
+            "zh": "NicoBZH / Wikimedia Commons",
+            "en": "NicoBZH / Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+          "license": {
+            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+          },
+          "sourceId": "source-richard-stallman-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+            },
+            "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+          },
+          "role": "supporting-portrait",
+          "type": "image"
         }
       },
       "videos": [],
       "assetIds": [
         "asset-1987-lisp-machine-collapse-richard-greenblatt",
-        "asset-1987-lisp-machine-collapse-richard-stallman",
-        "asset-1987-lisp-machine-collapse-market-shift"
+        "asset-1987-lisp-machine-collapse-market-shift",
+        "asset-1987-lisp-machine-collapse-richard-stallman"
       ]
     },
     "imageMeta": {
@@ -147927,36 +148010,6 @@ const milestones = [
           "sourceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
-        "caption": {
-          "zh": "理查德·斯托曼肖像",
-          "en": "Richard Stallman portrait"
-        },
-        "subcaption": {
-          "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
-          "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
-        },
-        "sourceName": {
-          "zh": "NicoBZH / Wikimedia Commons",
-          "en": "NicoBZH / Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
-        "license": {
-          "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-          "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-        },
-        "sourceId": "source-richard-stallman-portrait",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
-          },
-          "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
-        },
-        "role": "supporting-portrait",
         "type": "image"
       },
       "resources/images/humanistic-cycle/explainers/1987-lisp-machine-collapse_market-shift.svg": {
@@ -147991,6 +148044,36 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/humanistic-cycle/people/1987-lisp-machine-collapse_richard-stallman.jpg": {
+        "caption": {
+          "zh": "理查德·斯托曼肖像",
+          "en": "Richard Stallman portrait"
+        },
+        "subcaption": {
+          "zh": "Lisp Machine 软件分裂的重要参与者，后来发起 GNU；照片摄于 2008 年，并非 1987 年现场照。",
+          "en": "A key participant in the Lisp Machine software split who later launched GNU; photographed in 2008, not at the 1987 event."
+        },
+        "sourceName": {
+          "zh": "NicoBZH / Wikimedia Commons",
+          "en": "NicoBZH / Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NicoBZH_-_Richard_Stallman_(by-sa)_(10).jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+        },
+        "sourceId": "source-richard-stallman-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0；NicoBZH 摄于 2008 年，使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0; photographed by NicoBZH in 2008, with attribution and share-alike terms required."
+          },
+          "sourceUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+        },
+        "role": "supporting-portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -148356,8 +148439,8 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/authoritative/elon-musk.jpg",
-        "resources/images/figures/authoritative/stephen-hawking.jpg",
-        "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg"
+        "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg",
+        "resources/images/figures/authoritative/stephen-hawking.jpg"
       ],
       "imageMeta": {
         "resources/images/figures/authoritative/elon-musk.jpg": {
@@ -148387,35 +148470,6 @@ const milestones = [
             }
           },
           "role": "portrait",
-          "type": "image"
-        },
-        "resources/images/figures/authoritative/stephen-hawking.jpg": {
-          "caption": {
-            "zh": "斯蒂芬·霍金肖像",
-            "en": "Stephen Hawking portrait"
-          },
-          "subcaption": {
-            "zh": "公开警示高级 AI 控制风险的科学家。",
-            "en": "Scientist who publicly warned about controlling advanced AI."
-          },
-          "sourceName": {
-            "zh": "Wikimedia Commons",
-            "en": "Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
-          "license": {
-            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
-          },
-          "sourceId": "source-stephen-hawking-commons-portrait",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-              "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
-            }
-          },
-          "role": "supporting-portrait",
           "type": "image"
         },
         "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
@@ -148450,13 +148504,42 @@ const milestones = [
           },
           "role": "architecture-explainer",
           "type": "svg"
+        },
+        "resources/images/figures/authoritative/stephen-hawking.jpg": {
+          "caption": {
+            "zh": "斯蒂芬·霍金肖像",
+            "en": "Stephen Hawking portrait"
+          },
+          "subcaption": {
+            "zh": "公开警示高级 AI 控制风险的科学家。",
+            "en": "Scientist who publicly warned about controlling advanced AI."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+          "license": {
+            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+          },
+          "sourceId": "source-stephen-hawking-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+              "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+            }
+          },
+          "role": "supporting-portrait",
+          "type": "image"
         }
       },
       "videos": [],
       "assetIds": [
         "asset-elon-musk-commons-portrait",
-        "asset-stephen-hawking-commons-portrait",
-        "asset-2014-ai-existential-warnings-public-risk"
+        "asset-2014-ai-existential-warnings-public-risk",
+        "asset-stephen-hawking-commons-portrait"
       ]
     },
     "imageMeta": {
@@ -148487,35 +148570,6 @@ const milestones = [
           }
         },
         "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/figures/authoritative/stephen-hawking.jpg": {
-        "caption": {
-          "zh": "斯蒂芬·霍金肖像",
-          "en": "Stephen Hawking portrait"
-        },
-        "subcaption": {
-          "zh": "公开警示高级 AI 控制风险的科学家。",
-          "en": "Scientist who publicly warned about controlling advanced AI."
-        },
-        "sourceName": {
-          "zh": "Wikimedia Commons",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
-        "license": {
-          "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-          "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
-        },
-        "sourceId": "source-stephen-hawking-commons-portrait",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
-            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
-          }
-        },
-        "role": "supporting-portrait",
         "type": "image"
       },
       "resources/images/humanistic-cycle/explainers/2014-ai-existential-warnings_public-risk.svg": {
@@ -148550,6 +148604,35 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/figures/authoritative/stephen-hawking.jpg": {
+        "caption": {
+          "zh": "斯蒂芬·霍金肖像",
+          "en": "Stephen Hawking portrait"
+        },
+        "subcaption": {
+          "zh": "公开警示高级 AI 控制风险的科学家。",
+          "en": "Scientist who publicly warned about controlling advanced AI."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relative_time_(2886233692)_(Stephen_Hawking_cropped).jpg",
+        "license": {
+          "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+          "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+        },
+        "sourceId": "source-stephen-hawking-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY-SA 2.0，摄影者 Tanya Hart；使用时须署名并遵循相同方式共享。",
+            "en": "CC BY-SA 2.0, photograph by Tanya Hart; attribution and share-alike terms apply."
+          }
+        },
+        "role": "supporting-portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -148909,8 +148992,8 @@ const milestones = [
     "resources": {
       "images": [
         "resources/images/figures/authoritative/sam-altman.jpg",
-        "resources/images/figures/authoritative/elon-musk.jpg",
-        "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg"
+        "resources/images/humanistic-cycle/explainers/2015-openai-founding_broad-benefit.svg",
+        "resources/images/figures/authoritative/elon-musk.jpg"
       ],
       "imageMeta": {
         "resources/images/figures/authoritative/sam-altman.jpg": {
@@ -148932,35 +149015,6 @@ const milestones = [
             "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
           },
           "sourceId": "source-sam-altman-commons-portrait",
-          "rights": {
-            "status": "licensed",
-            "license": {
-              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
-            }
-          },
-          "role": "portrait",
-          "type": "image"
-        },
-        "resources/images/figures/authoritative/elon-musk.jpg": {
-          "caption": {
-            "zh": "埃隆·马斯克肖像",
-            "en": "Elon Musk portrait"
-          },
-          "subcaption": {
-            "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
-            "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
-          },
-          "sourceName": {
-            "zh": "Wikimedia Commons",
-            "en": "Wikimedia Commons"
-          },
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
-          "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
-          },
-          "sourceId": "source-elon-musk-commons-portrait",
           "rights": {
             "status": "licensed",
             "license": {
@@ -149003,13 +149057,42 @@ const milestones = [
           },
           "role": "architecture-explainer",
           "type": "svg"
+        },
+        "resources/images/figures/authoritative/elon-musk.jpg": {
+          "caption": {
+            "zh": "埃隆·马斯克肖像",
+            "en": "Elon Musk portrait"
+          },
+          "subcaption": {
+            "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+            "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+          },
+          "sourceName": {
+            "zh": "Wikimedia Commons",
+            "en": "Wikimedia Commons"
+          },
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          },
+          "sourceId": "source-elon-musk-commons-portrait",
+          "rights": {
+            "status": "licensed",
+            "license": {
+              "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+              "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+            }
+          },
+          "role": "portrait",
+          "type": "image"
         }
       },
       "videos": [],
       "assetIds": [
         "asset-sam-altman-commons-portrait",
-        "asset-elon-musk-commons-portrait",
-        "asset-2015-openai-founding-broad-benefit"
+        "asset-2015-openai-founding-broad-benefit",
+        "asset-elon-musk-commons-portrait"
       ]
     },
     "imageMeta": {
@@ -149032,35 +149115,6 @@ const milestones = [
           "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
         },
         "sourceId": "source-sam-altman-commons-portrait",
-        "rights": {
-          "status": "licensed",
-          "license": {
-            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
-      },
-      "resources/images/figures/authoritative/elon-musk.jpg": {
-        "caption": {
-          "zh": "埃隆·马斯克肖像",
-          "en": "Elon Musk portrait"
-        },
-        "subcaption": {
-          "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
-          "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
-        },
-        "sourceName": {
-          "zh": "Wikimedia Commons",
-          "en": "Wikimedia Commons"
-        },
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
-        "license": {
-          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
-          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
-        },
-        "sourceId": "source-elon-musk-commons-portrait",
         "rights": {
           "status": "licensed",
           "license": {
@@ -149103,6 +149157,35 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
+      },
+      "resources/images/figures/authoritative/elon-musk.jpg": {
+        "caption": {
+          "zh": "埃隆·马斯克肖像",
+          "en": "Elon Musk portrait"
+        },
+        "subcaption": {
+          "zh": "2014 年 AI 风险公共讨论者与 OpenAI 创始联合主席。",
+          "en": "Public AI-risk commentator in 2014 and OpenAI founding co-chair."
+        },
+        "sourceName": {
+          "zh": "Wikimedia Commons",
+          "en": "Wikimedia Commons"
+        },
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+        "license": {
+          "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+          "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+        },
+        "sourceId": "source-elon-musk-commons-portrait",
+        "rights": {
+          "status": "licensed",
+          "license": {
+            "zh": "CC BY 2.0，摄影者 Steve Jurvetson；使用时须署名。",
+            "en": "CC BY 2.0, photograph by Steve Jurvetson; attribution is required."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
       }
     },
     "achievement": {
@@ -149861,5 +149944,5 @@ const milestones = [
 
 // 导出（兼容 Node.js require）
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { milestones };
+  module.exports = { archiveStorylines, milestones };
 }

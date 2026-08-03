@@ -228,7 +228,8 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
     ['milestone-2016-alphago', 'resources/images/figures/authoritative/david-silver.jpg'],
     [
         'milestone-2025-llm-competition',
-        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png'
+        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png',
+        'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png'
     ]
 ]) {
     const milestone = milestones.find((item) => item.id === milestoneId);
@@ -241,14 +242,15 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
 }
 console.log('PASS configured overview images and detail image order compile from Archive variants');
 
-const sarsaMilestone = milestones.find((item) => item.id === 'milestone-ai100-1994-sarsa');
-assert.equal(sarsaMilestone.commentaryMedia.hideVisual, true, 'SARSA should hide its duplicate commentary visual');
-assert.equal(
-    sarsaMilestone.resources.images[0],
-    'resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg',
-    'SARSA should keep its explainer in the detail image list'
+assert.deepEqual(
+    llmCompetition.resources.images.slice(0, 3),
+    [
+        'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png',
+        'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png',
+        'resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg'
+    ],
+    'the 2025 LLM competition Archive order should place its context portrait after the first event reference image'
 );
-console.log('PASS SARSA hides duplicate commentary media without removing the detail explainer');
 
 const rnnMilestone = milestones.find((item) => item.id === 'milestone-1986-rnn');
 const rnnPortrait = 'resources/images/1986-rnn/people/1986-rnn_people_01.png';
@@ -281,20 +283,26 @@ assert.equal(
 console.log('PASS Highway Networks overview uses the Jürgen Schmidhuber portrait by default');
 
 const postTraining = milestones.find((item) => item.id === 'milestone-2022-post-training-intelligence');
-const postTrainingFirstImage =
+const postTrainingArchiveFirstImage =
     'resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png';
-assert.equal(postTraining.resources.overviewImage, undefined, 'post-training should use the default first image');
+const postTrainingOverviewImage =
+    'resources/images/2022-post-training-intelligence/architecture/post-training-pipeline.svg';
+assert.equal(
+    postTraining.resources.overviewImage,
+    postTrainingOverviewImage,
+    'post-training should explicitly align its overview with the first displayed detail image'
+);
 assert.equal(
     postTraining.resources.images[0],
-    postTrainingFirstImage,
-    'post-training should lead with its first detail image'
+    postTrainingArchiveFirstImage,
+    'post-training should retain the instruction-tuning diagram first for commentary media selection'
 );
 assert.equal(
     overview.getPrimaryImage(postTraining),
-    postTrainingFirstImage,
-    'post-training overview should use its first detail image'
+    postTrainingOverviewImage,
+    'post-training overview should use the post-training pipeline shown first in detail'
 );
-console.log('PASS post-training overview uses the first detail image by default');
+console.log('PASS post-training overview matches the first displayed detail image');
 
 const aiScientist = milestones.find((item) => item.id === 'milestone-2024-ai-scientist');
 const aiScientistFirstImage = 'resources/images/2024-ai-scientist/people/2024-ai-scientist_people_02.png';

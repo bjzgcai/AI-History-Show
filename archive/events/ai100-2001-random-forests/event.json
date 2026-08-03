@@ -6,10 +6,6 @@
     "en": "Random Forests",
     "zh": "随机森林"
   },
-  "summary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "description": {
     "en": "<p>Bagging reduced tree variance, but strongly correlated trees still made similar errors. Random forests introduced additional randomness at each split so the ensemble would contain stronger diversity.</p><p>Each tree is trained on a bootstrap sample and considers only a random subset of features at each node. Voting or averaging many decorrelated trees yields strong accuracy with little tuning. Experts generally regard random forests as one of the most durable general-purpose machine-learning methods. They remain competitive on structured data and provide useful tools for feature importance, proximity, and uncertainty analysis.</p>",
     "zh": "<p>Bagging 降低了决策树方差，但高度相关的树仍容易犯相似错误。随机森林在每次划分时加入额外随机性，使集成内部具有更强多样性。</p><p>每棵树使用自助样本训练，并在每个节点只考虑随机选取的一部分特征。对大量低相关树进行投票或平均，可以在较少调参的情况下获得强劲精度。专家通常把随机森林视为最持久的通用机器学习方法之一。它在结构化数据上仍具有竞争力，并提供特征重要性、样本邻近性和不确定性分析工具。</p>"

@@ -3,7 +3,30 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
-const { milestones: generatedMilestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+const { archiveStorylines, milestones: generatedMilestones } = require(
+    path.join(__dirname, '..', 'milestones-data.js')
+);
+
+assert.equal(archiveStorylines.length, 5, 'generated runtime should expose all Archive storyline definitions');
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
+    { zh: 'AI 顶尖成就（BenchCouncil）', en: 'Top AI Achievements (BenchCouncil)' },
+    'the generated BenchCouncil storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'deep-learning').title,
+    {
+        zh: '连接主义的兴衰与复兴：AI七十年',
+        en: 'The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI'
+    },
+    'the generated connectionism storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023').title,
+    { zh: 'AI100 年度成就（2022-2023）', en: 'AI100 Annual Achievements (2022-2023)' },
+    'the generated annual AI100 storyline title should come from Archive'
+);
+console.log('PASS generated storyline definitions');
 
 assert.equal(
     routing.normalizeStorylineId('deep-learning'),
@@ -133,6 +156,21 @@ const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'c
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
+assert.match(
+    indexHtml,
+    /const archiveStorylineDefinitions = typeof archiveStorylines[\s\S]*?const archiveStorylineById = new Map/,
+    'the storyline selector should consume generated Archive storyline definitions'
+);
+assert.match(
+    indexHtml,
+    /function getStorylineLabel\(option\)[\s\S]*?definition && definition\.title/,
+    'storyline selector labels should resolve from Archive metadata'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /en: 'Top AI Achievements \(BenchCouncil\)'/,
+    'the BenchCouncil storyline title should not be duplicated in index.html'
+);
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,
@@ -282,11 +320,6 @@ assert.match(
     indexHtml,
     /id: 'gaming-ai',[\s\S]*?layout: 'ui-browser'/,
     'the gaming AI storyline should use the same UI browser as the other public storylines'
-);
-assert.match(
-    indexHtml,
-    /UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN[\s\S]*?sample-go-game[\s\S]*?function getUiGameEvolutionModule/,
-    'the unified gaming UI should not expose the shared sample game as event-specific playback'
 );
 assert.match(
     i18nSource,
@@ -536,18 +569,8 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /class="ui-media-video-poster"/,
-    'AI100 commentary media should display a visual poster before playback'
-);
-assert.match(
-    indexHtml,
-    /\.ui-media-video-poster\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?\.ui-media-video video,[\s\S]*?object-fit:\s*contain/,
-    'commentary images and direct videos should scale to fit without cropping'
-);
-assert.match(
-    indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?if \(shouldHideUiCommentaryMediaVisual\(vm && vm\.raw\)\) return candidates[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
-    'detail image lists should preserve the first candidate while excluding a later side-panel image'
+    /function getUiDetailImages\(vm\)[\s\S]*?EventMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
+    'detail image lists should always exclude the side-panel architecture or explanation image'
 );
 assert.doesNotMatch(
     indexHtml,
@@ -577,13 +600,18 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function findHumanisticExplainerImage\(vm, images\)[\s\S]*?isHumanisticMilestone\(vm && vm\.raw\)[\s\S]*?images\.find\(\(url\) => isExplainerMedia\(vm, url\)\)[\s\S]*?function getUiMediaVisualImage\(vm,[\s\S]*?findHumanisticExplainerImage\(vm, images\)/,
-    'humanistic commentary media should prioritize the first explainer image'
+    /function getUiMediaVisualImage\(vm, images = getUiImageCandidates\(vm\)\)[\s\S]*?EventMediaSelection\.findCommentaryMedia\(images/,
+    'all storylines should use the same architecture and explanation media selector'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /shouldHideUiCommentaryMediaVisual|commentaryMedia\.hideVisual|hideCommentaryMediaVisual/,
+    'the unified media path should not retain event-specific visual suppression'
 );
 assert.match(
     indexHtml,
-    /function shouldHideUiCommentaryMediaVisual\(raw\)[\s\S]*?function buildUiMediaHtml\(vm, \{ forceStaticImage = false, hideVisual = false \} = \{\}\)[\s\S]*?if \(vm\.videoEmbedUrl && !forceStaticImage\)[\s\S]*?const posterUrl = hideVisual \? '' : getUiMediaVisualImage\(vm\)[\s\S]*?if \(hideVisual\) return ''[\s\S]*?const hideCommentaryMediaVisual = shouldHideUiCommentaryMediaVisual\(raw\)[\s\S]*?hideVisual: hideCommentaryMediaVisual/,
-    'event-level visual suppression should retain video rendering while hiding duplicate static media'
+    /function buildUiMediaHtml\(vm\)[\s\S]*?if \(!imageUrl\) return ''/,
+    'missing structural media should omit the commentary media card'
 );
 assert.match(
     indexHtml,
@@ -650,10 +678,10 @@ assert.match(
     /function bindUiDetailImageAutoplayPause\(imageStage, imageCount\)[\s\S]*?mouseenter[\s\S]*?mouseleave[\s\S]*?focusin[\s\S]*?focusout[\s\S]*?function renderUiDetail\(\)[\s\S]*?bindUiDetailImageAutoplayPause[\s\S]*?scheduleUiDetailImageAutoplay\(\)[\s\S]*?visibilitychange[\s\S]*?document\.hidden\) clearUiDetailImageAutoplay/,
     'detail image autoplay should pause for navigation controls and when the document is hidden'
 );
-assert.match(
+assert.doesNotMatch(
     indexHtml,
-    /const player = button\.querySelector\('video'\)[\s\S]*?const playback = player\.play\(\)/,
-    'direct AI100 commentary videos should start playback from the user click'
+    /data-ui-media-video|data-ui-game-evolution|ui-side-demo-visual/,
+    'the unified detail sidebar should not retain legacy video or demo fallbacks'
 );
 console.log('PASS Pages media rendering safeguards');
 

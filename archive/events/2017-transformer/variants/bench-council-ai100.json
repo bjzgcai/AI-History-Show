@@ -5,10 +5,6 @@
     "zh": "Transformer",
     "en": "Transformer"
   },
-  "displaySummary": {
-    "en": "AI Top 100 Achievements",
-    "zh": "AI 百大成就"
-  },
   "emphasis": [
     "research-breakthrough",
     "paper-source",
@@ -17,10 +13,10 @@
   "visual": "transformer",
   "assetIds": [
     "asset-transformer-portrait",
-    "asset-transformer-attention",
-    "asset-transformer-architecture",
     "asset-transformer-architecture-detail",
-    "asset-transformer-paper-page"
+    "asset-transformer-paper-page",
+    "asset-transformer-architecture",
+    "asset-transformer-attention"
   ],
   "sourceIds": [
     "source-transformer-neurips",

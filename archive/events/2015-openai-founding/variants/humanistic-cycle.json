@@ -47,7 +47,7 @@
             }
         }
     ],
-    "assetIds": ["asset-sam-altman-commons-portrait", "asset-elon-musk-commons-portrait", "asset-2015-openai-founding-broad-benefit"],
+    "assetIds": ["asset-sam-altman-commons-portrait","asset-2015-openai-founding-broad-benefit","asset-elon-musk-commons-portrait"],
     "sourceIds": [
         "source-sam-altman-commons-portrait",
         "source-elon-musk-commons-portrait",

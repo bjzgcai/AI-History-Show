@@ -54,9 +54,12 @@ Required:
 - `year`
 - `title`
 
+Optional:
+
+- `summary` (event-specific synopsis only; do not repeat a storyline title or category label)
+
 Recommended for migrated events:
 
-- `summary`
 - `description`
 - `location.regionId` or `location.country`
 - `location.coordinates` when the event has a meaningful map location
@@ -172,7 +175,7 @@ Each variant requires:
 Variants may override display-level fields such as:
 
 - `displayTitle`
-- `displaySummary`
+- `displaySummary` (storyline-specific subtitle; omit it when it would only repeat the storyline title)
 - `displayDescription`
 - `emphasis`
 - `visual`

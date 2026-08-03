@@ -6,10 +6,6 @@
     "zh": "中国象棋引擎：搜索与学习型评估",
     "en": "Chinese Chess Engines: Search and Learned Evaluation"
   },
-  "summary": {
-    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-    "en": "Game AI as a Testbed for Search, Learning and Planning"
-  },
   "description": {
     "zh": "<p>ICGA 赛事档案记录了 1989 至 2013 年间 16 届计算机奥林匹克中国象棋比赛和 38 个参赛程序，其中包括 Acer Chinese Chess、ELP、XQMASTER、NEUChess、Intella 与 Shiga。中国象棋中的炮架、九宫、楚河汉界、长将长捉和高度战术化攻杀，使引擎必须重新设计棋盘表示、走法生成、搜索延伸和局面评估，而不能简单照搬国际象棋程序。</p><p>2018 年曾文杰、陈日章、吴毅成和魏廷翰进一步用比较训练自动调整评估函数权重；论文报告自动训练权重对手工权重取得 86.58% 胜率。这个节点因此展示了中国象棋 AI 从领域化 alpha-beta 搜索和开局知识，逐步走向以数据自动调校评估参数的演进。</p>",
     "en": "<p>The ICGA archive records 16 Computer Olympiad Chinese Chess tournaments and 38 participating programs between 1989 and 2013, including Acer Chinese Chess, ELP, XQMASTER, NEUChess, Intella, and Shiga. Cannons, palaces, rivers, repetition rules, and highly tactical attacks forced xiangqi engines to redesign board representation, move generation, search extensions, and evaluation rather than simply copy Western chess programs.</p><p>In 2018, Wen-Jie Tseng, Jr-Chang Chen, I-Chen Wu, and Tinghan Wei advanced the line with comparison training for automatic evaluation-weight tuning; their paper reported an 86.58% win rate for automatically trained weights against hand-tuned weights. The event therefore traces a transition from domain-specific alpha-beta search and opening knowledge toward data-driven evaluation tuning.</p>"
