@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh.md)
 
-An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. It supports Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and presents deep-learning history, BenchCouncil AI100 achievements, gaming AI, and the humanistic and emotional cycles surrounding AI.
+An interactive frontend application designed for exhibition-hall large-screen displays, showcasing key milestones in the history of artificial intelligence. It supports Chinese and English (with an in-page language switch), adapts automatically between single-screen, mobile, and dual-screen layouts, and presents The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI, Top AI Achievements (BenchCouncil), gaming AI, and the humanistic and emotional cycles surrounding AI.
 
 ## Repositories
 
@@ -70,13 +70,13 @@ When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }`
 
 ## Storylines
 
-The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 165 Archive milestones across four source storylines, plus a unified map that merges deep-learning and AI100 records for browsing:
+The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 174 Archive milestones across four source storylines, plus a unified map that merges deep-learning and AI100 records for browsing:
 
 | Public view                     | Archive records | Notes                                                                                                                 |
 | ------------------------------- | --------------: | --------------------------------------------------------------------------------------------------------------------- |
 | AI History Map                  |    Derived view | Unified browser combining deep-learning milestones and AI100 achievements                                             |
-| AI History (Deep Learning)      |              21 | Technical timeline from early AI through neural networks, scaled learning, and modern architectures                   |
-| BenchCouncil AI100 achievements |             119 | Canonical root-table membership with source cards, context sections, demos, and quizzes                               |
+| The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI | 30 | Technical timeline from early AI through neural networks, scaled learning, and modern architectures            |
+| Top AI Achievements (BenchCouncil) |          119 | Canonical root-table membership with source cards, context sections, demos, and quizzes                               |
 | AI in Board & Tabletop Games    |              13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
 | Humanistic & emotional cycles   |              12 | Sci-fi prophecy, technology hype, AI winters, and risk debates                                                        |
 
@@ -245,7 +245,7 @@ AI-History-Show/
 - **3D globe**: Three.js rendering, auto-locates to the geographic coordinates of the current event
 - **Bilingual UI**: Switch between Chinese and English at any time; the choice persists across sessions
 - **Page navigation**: Buttons or keyboard arrows (`←` / `→`)
-- **Storyline selector**: Dialog-based selector for the unified history map, deep-learning history, AI100, gaming AI, and the humanistic cycle
+- **Storyline selector**: Dialog-based selector for the unified history map, the connectionism storyline, AI100, gaming AI, and the humanistic cycle
 - **AI100 achievement map**: Region filtering, source cards, paper-style demos, and grounded quizzes
 - **Gaming AI branch**: Horizontal timeline with game-record/evolution modules and branch-specific source cards
 - **Humanistic cycle**: Cultural counter-timeline connecting science fiction, hype, AI winters, ethics, and risk debates

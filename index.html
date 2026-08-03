@@ -2126,6 +2126,32 @@
             stroke-linejoin: round;
         }
 
+        @media (min-width: 1200px) {
+            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger {
+                width: min(620px, 48vw);
+                min-height: 48px;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-copy {
+                align-items: center;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-label {
+                display: -webkit-box;
+                overflow: hidden;
+                line-height: 1.18;
+                overflow-wrap: anywhere;
+                text-overflow: clip;
+                white-space: normal;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+
+            .single-stage.is-ui-browser.is-ui-detail .storyline-trigger-status {
+                flex: 0 0 auto;
+            }
+        }
+
         .about-trigger {
             width: 94px;
             min-height: 28px;
@@ -8244,6 +8270,17 @@
         }
 
         @media (max-width: 1199px) {
+            .storyline-trigger-label {
+                display: -webkit-box;
+                overflow: hidden;
+                line-height: 1.2;
+                overflow-wrap: anywhere;
+                text-overflow: clip;
+                white-space: normal;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+
             .storyline-trigger,
             .single-stage.is-ui-browser .storyline-trigger,
             .single-stage.is-branch-timeline .storyline-trigger,
@@ -9103,14 +9140,14 @@
 
     <script>
         function _loadDefaultMilestones() {
-            document.write('<script src="milestones-data-default.js?v=20260613-gaming-ai-images"><\/script>');
+            document.write('<script src="milestones-data-default.js?v=20260803-storyline-metadata"><\/script>');
         }
     </script>
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
     <script src="shared/chronology-overview.js?v=20260728b"></script>
     <script src="shared/gaming-media-selection.js"></script>
-    <script src="milestones-data.js?v=20260613-gaming-ai-images" onerror="_loadDefaultMilestones()"></script>
+    <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
     <script src="shared/umami-config.js"></script>
@@ -9173,53 +9210,28 @@
             },
             {
                 id: 'bench-council-ai100',
-                layout: 'ui-browser',
-                label: {
-                    en: 'AI Top 100 Achievements (BenchCouncil)',
-                    zh: 'AI 百大成就（BenchCouncil）'
-                },
-                note: {
-                    en: 'Canonical storyline matching the BenchCouncil AI achievements table',
-                    zh: '严格对应 BenchCouncil AI 成果表的权威故事线'
-                }
+                layout: 'ui-browser'
             },
             {
                 id: 'gaming-ai',
-                layout: 'ui-browser',
-                label: {
-                    en: 'AI in Board & Tabletop Games',
-                    zh: 'AI 在棋牌与博弈论的演进'
-                },
-                note: {
-                    en: '1951-2019, from board search and evaluation to self-play and learned planning',
-                    zh: '1951 至 2019 年，从棋盘搜索与评估到自我对弈和学习型规划'
-                }
+                layout: 'ui-browser'
             },
             {
                 id: 'humanistic-cycle',
-                layout: 'ui-browser',
-                label: {
-                    en: 'Humanistic & Emotional Cycles of AI',
-                    zh: 'AI 的人文与情绪周期'
-                },
-                note: {
-                    en: 'Sci-fi prophecy, hype and AI winters as a cultural counterpoint to technical milestones',
-                    zh: '以科幻预言、技术狂热与 AI 寒冬，对照技术里程碑背后的人类想象'
-                }
+                layout: 'ui-browser'
             },
             {
                 id: DEEP_STORYLINE_ID,
-                layout: 'ui-browser',
-                label: {
-                    en: 'AI History (Deep Learning)',
-                    zh: 'AI 历史（深度学习）'
-                },
-                note: {
-                    en: '1956-now, centered on deep learning milestones',
-                    zh: '1956 至今，聚焦深度学习里程碑'
-                }
+                layout: 'ui-browser'
             }
         ];
+        const archiveStorylineDefinitions = typeof archiveStorylines !== 'undefined' && Array.isArray(archiveStorylines)
+            ? archiveStorylines
+            : [];
+        const archiveStorylineById = new Map(archiveStorylineDefinitions.map((storyline) => [
+            StorylineRouting.normalizeStorylineId(storyline && storyline.id),
+            storyline
+        ]));
         const allMilestones = typeof milestones !== 'undefined' && Array.isArray(milestones) ? milestones : [];
         const getMilestoneStorylineId = (milestone) => StorylineRouting.getMilestoneStorylineId(milestone, DEEP_STORYLINE_ID);
         const getStorylineMilestones = (storylineId) => (storylineId === UNIFIED_STORYLINE_ID
@@ -9555,12 +9567,12 @@
                 ],
                 bullets: [
                     {
-                        en: 'AI history timeline: builds an overall path from the Turing Test and the Dartmouth Workshop to deep learning and the large model era.',
-                        zh: 'AI 历史主线：按时间顺序串联图灵测试、达特茅斯会议、感知机、专家系统、深度学习和大模型时代，帮助观众建立整体脉络。'
+                        en: 'The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI traces the path from the perceptron and AI winters to deep learning, foundation models, and scientific intelligence.',
+                        zh: '连接主义的兴衰与复兴：AI七十年：从感知机与 AI 寒冬，到深度学习、基础模型和科学智能，帮助观众理解连接主义七十年的技术演进。'
                     },
                     {
                         en: 'Top AI achievements: organizes important algorithms, systems, papers, and applications, with maps, images, sources, and concise interpretation.',
-                        zh: 'AI 百大成就：整理重要算法、系统、论文和应用案例，并为每个成就补充地图位置、图片、资料来源和解释文本。'
+                        zh: 'AI 顶尖成就：整理重要算法、系统、论文和应用案例，并为每个成就补充地图位置、图片、资料来源和解释文本。'
                     },
                     {
                         en: 'Thematic storylines: expands into focused topics such as AI for Science, AI in games, AI and education, and AI, society, and ethics.',
@@ -9885,11 +9897,13 @@
         }
 
         function getStorylineLabel(option) {
-            return String(lx(option && option.label) || (option && option.id) || '').trim();
+            const definition = option ? archiveStorylineById.get(option.id) : null;
+            return String(lx((definition && definition.title) || (option && option.label)) || (option && option.id) || '').trim();
         }
 
         function getStorylineNote(option) {
-            return String(lx(option && option.note) || '').trim();
+            const definition = option ? archiveStorylineById.get(option.id) : null;
+            return String(lx((definition && definition.subtitle) || (option && option.note)) || '').trim();
         }
 
         function getStorylineStatus(option, count) {

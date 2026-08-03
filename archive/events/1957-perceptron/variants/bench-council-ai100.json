@@ -6,10 +6,6 @@
     "zh": "感知机与连接主义",
     "en": "The Perceptron and Connectionism"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>弗兰克·罗森布拉特在 1957 年技术报告和 1958 年论文中提出感知机，把一组输入通过可调权重连接到决策单元。训练时，模型根据分类错误增减权重，使决策边界逐步移动；康奈尔航空实验室随后制造 Mark I Perceptron，把部分连接实现为硬件并用于视觉模式实验。</p><p>感知机的重要性在于展示机器可以从标注样本中调整内部参数，而不必由程序员写出全部识别规则。单层感知机只能学习线性可分边界，无法解决 XOR 等问题，这些限制后来引发重要争论；但“加权求和、误差驱动更新和分布式单元”的基本模式成为神经网络历史的关键起点。</p>",
     "en": "<p>Frank Rosenblatt introduced the perceptron in a 1957 technical report and a 1958 paper, connecting a set of inputs through adjustable weights to a decision unit. During training, the model increases or decreases weights in response to classification errors so the decision boundary moves toward a solution. Cornell Aeronautical Laboratory later built the Mark I Perceptron, implementing parts of the connections in hardware for visual-pattern experiments.</p><p>The perceptron demonstrated that a machine could adjust internal parameters from labeled examples instead of requiring a programmer to write every recognition rule. A single-layer perceptron can learn only linearly separable boundaries and cannot solve problems such as XOR, limitations that later shaped major debates. Its pattern of weighted sums, error-driven updates, and distributed units nevertheless became a crucial starting point for neural-network research.</p>"

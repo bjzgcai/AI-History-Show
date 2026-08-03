@@ -6,10 +6,6 @@
     "en": "Fully Convolutional Networks",
     "zh": "全卷积网络"
   },
-  "displaySummary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "displayDescription": {
     "en": "<p>Classification CNNs produced one label for an image, while semantic segmentation required a label at every pixel. Fully Convolutional Networks showed how classification networks could be converted into end-to-end dense predictors.</p><p>Fully connected layers are replaced by convolutions so arbitrary-size images produce spatial score maps. Learned upsampling and skip connections combine coarse semantic information with finer spatial detail. Experts generally regard FCN as the template that established modern end-to-end semantic segmentation. Its conversion, upsampling, and skip-fusion ideas became foundations for U-Net, DeepLab, and many dense prediction systems.</p>",
     "zh": "<p>分类 CNN 为整张图像输出一个标签，而语义分割要求每个像素都有标签。全卷积网络展示了如何把分类网络转换为端到端的稠密预测器。</p><p>全连接层被卷积层替代，使任意尺寸图像都能产生空间得分图。可学习上采样与跳跃连接把粗粒度语义信息和更细的空间细节结合起来。专家通常把 FCN 视为确立现代端到端语义分割范式的模板。其网络转换、上采样和跳跃融合思想成为 U-Net、DeepLab 及众多稠密预测系统的基础。</p>"

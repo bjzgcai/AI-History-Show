@@ -6,10 +6,6 @@
     "en": "LightGBM",
     "zh": "LightGBM"
   },
-  "displaySummary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "displayDescription": {
     "en": "<p>Large feature spaces and millions of examples made conventional gradient-boosted trees expensive to train. LightGBM targeted those bottlenecks with sampling and feature-compression techniques designed for distributed learning.</p><p>Gradient-based one-side sampling keeps examples with large gradients while sampling small-gradient examples, and exclusive feature bundling combines mutually exclusive sparse features. Leaf-wise tree growth further concentrates capacity on the split with the largest loss reduction. Experts generally regard LightGBM as a major production-grade boosted-tree system for large and sparse tabular datasets. Its efficiency made gradient boosting accessible in ranking, recommendation, finance, and many data-science pipelines.</p>",
     "zh": "<p>大规模特征空间和数百万样本使传统梯度提升树训练成本很高。LightGBM 通过面向分布式学习的采样和特征压缩技术解决这些瓶颈。</p><p>基于梯度的单边采样保留大梯度样本并抽样小梯度样本，互斥特征捆绑则合并不会同时出现的稀疏特征。按叶生长的策略进一步把容量集中到损失下降最大的划分。专家通常把 LightGBM 视为面向大规模稀疏表格数据的重要生产级提升树系统。其效率让梯度提升广泛进入排序、推荐、金融和数据科学流程。</p>"

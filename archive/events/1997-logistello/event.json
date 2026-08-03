@@ -6,10 +6,6 @@
     "zh": "Logistello：黑白棋评估函数学习",
     "en": "Logistello: Learning Evaluation for Othello"
   },
-  "summary": {
-    "zh": "以棋牌游戏为试验场：搜索、学习与规划的演进",
-    "en": "Game AI as a Testbed for Search, Learning and Planning"
-  },
   "description": {
     "zh": "<p>迈克尔·布罗开发的 Logistello 在 1997 年六局黑白棋对抗中以 6 比 0 击败世界冠军村上健。系统把选择性博弈树搜索、按棋局阶段变化的棋盘模式评估、统计特征学习、开局库学习和精确残局求解组合起来，使搜索能够区分表面棋子数量相近、战略价值却完全不同的局面。</p><p>Logistello 的意义不只是一场胜利。它展示了学习得到的评估参数可以与经典 alpha-beta 搜索协同工作，成为从手工启发式博弈程序走向数据驱动评估的重要桥梁，也为后来神经网络价值函数辅助搜索提供了清晰的历史先例。</p>",
     "en": "<p>Michael Buro's Logistello defeated world champion Takeshi Murakami 6-0 in a six-game Othello match in 1997. The system combined selective game-tree search, phase-dependent board-pattern evaluation, statistical feature learning, opening-book learning, and exact endgame solving so that search could distinguish positions with similar disc counts but very different strategic value.</p><p>Logistello mattered beyond the match result. It showed that learned evaluation parameters could work in concert with classical alpha-beta search, forming an important bridge from handcrafted game heuristics to data-driven evaluation and a clear historical precedent for later search systems guided by neural value estimates.</p>"
