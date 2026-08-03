@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "SayCan is row 117 of the BenchCouncil AI100 (2022-2023) annual table in the Robots area.",
+      "zh": "SayCan 是 BenchCouncil AI100（2022-2023）年度表第 117 行，所属领域为“机器人”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates SayCan with “Do As I Can, Not As I Say: Grounding Language in Robotic Affordances”.",
+      "zh": "年度表把 SayCan 与论文《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is blank.",
+      "zh": "“主要人物”字段为空。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

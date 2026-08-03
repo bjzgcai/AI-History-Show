@@ -1,0 +1,85 @@
+{
+  "id": "ai100-annual-2022-2023-084-imagen",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "Imagen",
+    "zh": "Imagen"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in Diffusion Model Application",
+    "zh": "BenchCouncil AI100（2022-2023）扩散模型应用年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists Imagen in the Diffusion Model Application area of its AI100 (2022-2023) annual table. It associates the work with the publication “Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding”. The page names Chitwan Saharia, William Chan, Mohammad Norouzi as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“扩散模型应用”领域列出 Imagen。该条目关联论文《Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding》。页面把 Chitwan Saharia（官方页拼写）、William Chan（官方页拼写）、Mohammad Norouzi（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "canada",
+    "country": {
+      "en": "Canada",
+      "zh": "加拿大"
+    },
+    "place": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "coordinates": [
+      56.1304,
+      -106.3468
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "chitwan-saharia",
+      "name": {
+        "en": "Chitwan Saharia",
+        "zh": "Chitwan Saharia（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Imagen in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Imagen 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "william-chan",
+      "name": {
+        "en": "William Chan",
+        "zh": "William Chan（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Imagen in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Imagen 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "mohammad-norouzi",
+      "name": {
+        "en": "Mohammad Norouzi",
+        "zh": "Mohammad Norouzi（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Imagen in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Imagen 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 84 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 84 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

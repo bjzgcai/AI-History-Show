@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Language Models as Zero-Shot Planners is row 72 of the BenchCouncil AI100 (2022-2023) annual table in the Evaluation Analysis area.",
+      "zh": "Language Models as Zero-Shot Planners 是 BenchCouncil AI100（2022-2023）年度表第 72 行，所属领域为“评测与分析”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Language Models as Zero-Shot Planners with “Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents”.",
+      "zh": "年度表把 Language Models as Zero-Shot Planners 与论文《Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Wenlong Huang, Deepak Pathak, Igor Mordatch”.",
+      "zh": "“主要人物”字段依次列出 Wenlong Huang（官方页拼写）、Deepak Pathak（官方页拼写）、Igor Mordatch（官方页拼写）；官方英文原文为“Wenlong Huang, Deepak Pathak, Igor Mordatch”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

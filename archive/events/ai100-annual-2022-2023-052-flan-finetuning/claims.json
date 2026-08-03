@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Flan finetuning is row 52 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "Flan finetuning 是 BenchCouncil AI100（2022-2023）年度表第 52 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Flan finetuning with “Scaling instruction-finetuned language models”.",
+      "zh": "年度表把 Flan finetuning 与论文《Scaling instruction-finetuned language models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Hyung Won Chung, Le Hou, Shayne Longpre, Jason Wei”.",
+      "zh": "“主要人物”字段依次列出 Hyung Won Chung（官方页拼写）、Le Hou（官方页拼写）、Shayne Longpre（官方页拼写）、Jason Wei（官方页拼写）；官方英文原文为“Hyung Won Chung, Le Hou, Shayne Longpre, Jason Wei”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

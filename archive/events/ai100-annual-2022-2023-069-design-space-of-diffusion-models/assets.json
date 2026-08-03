@@ -1,0 +1,85 @@
+[
+  {
+    "id": "asset-annual-069-design-space-of-diffusion-models-portrait-tero-karras",
+    "type": "image",
+    "path": "resources/images/external/ai100-2019-stylegan/tero-karras-github.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Tero Karras portrait",
+      "zh": "特罗·卡拉斯肖像"
+    },
+    "subcaption": {
+      "en": "Main contributor listed by the BenchCouncil annual table",
+      "zh": "BenchCouncil 年度表列出的主要人物"
+    },
+    "sourceId": "source-annual-069-design-space-of-diffusion-models-portrait-tero-karras",
+    "sourceName": {
+      "en": "Tero Karras GitHub profile",
+      "zh": "特罗·卡拉斯 GitHub 主页"
+    },
+    "sourceUrl": "https://github.com/tkarras",
+    "sourceReliability": "primary-account-source",
+    "provenanceNotes": {
+      "en": "Exact contributor-name match. The avatar comes from the researcher's own GitHub account.",
+      "zh": "人物姓名精确匹配，头像来自研究者本人 GitHub 账号。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The GitHub profile does not state redistribution rights; retain the source note and recheck before external redistribution.",
+        "zh": "GitHub 主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+      },
+      "attribution": ""
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-069-design-space-of-diffusion-models-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-069-design-space-of-diffusion-models_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "Design space of diffusion models annual evidence map",
+      "zh": "Design space of diffusion models 年度证据图"
+    },
+    "subcaption": {
+      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
+      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "sourceName": {
+      "en": "BenchCouncil and publication metadata",
+      "zh": "BenchCouncil 与论文元数据"
+    },
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Annual record explainer",
+      "zh": "年度记录解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  }
+]

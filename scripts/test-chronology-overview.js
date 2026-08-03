@@ -10,9 +10,33 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 174, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(milestones.length, 294, 'the chronology overview should consume all generated Archive milestones');
 
-const canonicalMilestones = overview.buildCanonicalMilestones(milestones, {
+const annualMilestones = milestones.filter(
+    (milestone) => overview.getStorylineId(milestone) === 'bench-council-ai100-2022-2023'
+);
+assert.equal(annualMilestones.length, 120, 'the annual AI100 storyline should remain available as a standalone view');
+assert.equal(
+    overview.selectMilestonesByStoryline(annualMilestones, 'bench-council-ai100-2022-2023').length,
+    120,
+    'a standalone storyline dataset should be directly filterable without canonical wrappers'
+);
+const annualLayout = overview.buildTimelineLayout(annualMilestones, {
+    preserveSourceOrder: true,
+    sequenceLabel: '2022-2023'
+});
+assert.equal(
+    annualLayout.cards[0].milestone.title.en,
+    'Swin Transformer V2',
+    'annual layout should start at official row 1'
+);
+assert.equal(annualLayout.cards.at(-1).milestone.title.en, 'OSTrack', 'annual layout should end at official row 120');
+assert.equal(annualLayout.years[0].label, '2022-2023', 'annual layout should label its official sequence');
+const unifiedSourceMilestones = milestones.filter(
+    (milestone) => overview.getStorylineId(milestone) !== 'bench-council-ai100-2022-2023'
+);
+
+const canonicalMilestones = overview.buildCanonicalMilestones(unifiedSourceMilestones, {
     storylinePriority: ['bench-council-ai100', 'deep-learning', 'gaming-ai', 'humanistic-cycle'],
     localize
 });

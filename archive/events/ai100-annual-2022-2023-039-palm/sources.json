@@ -1,0 +1,93 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "paper-page",
+    "label": {
+      "en": "Paper page",
+      "zh": "论文页面"
+    },
+    "title": {
+      "en": "PaLM: Scaling Language Modeling with Pathways",
+      "zh": "《PaLM: Scaling Language Modeling with Pathways》"
+    },
+    "authors": [
+      "Aakanksha Chowdhery",
+      "Sharan Narang",
+      "Jacob Devlin",
+      "Kathy Meier-Hellstern",
+      "Douglas Eck",
+      "Jeff Dean",
+      "Slav Petrov",
+      "Noah Fiedel"
+    ],
+    "year": 2022,
+    "url": "https://doi.org/10.48550/arxiv.2204.02311",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
+      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for PaLM: Scaling Language Modeling with Pathways",
+      "zh": "PaLM: Scaling Language Modeling with Pathways 的 OpenAlex 文献记录"
+    },
+    "url": "https://openalex.org/W4224308101",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
+      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-039-palm-portrait-jeff-dean",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Jeff Dean portrait source",
+      "zh": "杰夫·迪恩人物图片来源"
+    },
+    "url": "https://commons.wikimedia.org/wiki/File:Jeff_Dean_in_2025_x.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Exact name and research-description match in Wikidata; employer match: Digital Equipment Corporation, Compaq, Google. Wikimedia file-page license metadata was present. Reliability: secondary-identity-with-affiliation-match. Usage note: CC BY-SA 4.0",
+      "zh": "Wikidata 中姓名与研究者描述匹配，任职机构匹配：Digital Equipment Corporation、Compaq、Google。维基共享资源文件页包含明确许可元数据。 可靠性：secondary-identity-with-affiliation-match。使用备注：CC BY-SA 4.0"
+    }
+  }
+]

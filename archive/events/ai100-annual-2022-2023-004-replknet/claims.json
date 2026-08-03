@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "RepLKNet is row 4 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "RepLKNet 是 BenchCouncil AI100（2022-2023）年度表第 4 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates RepLKNet with “Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs”.",
+      "zh": "年度表把 RepLKNet 与论文《Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Xiaohan Ding,Xiangyu Zhang”.",
+      "zh": "“主要人物”字段依次列出 Xiaohan Ding（官方页拼写）、张祥雨；官方英文原文为“Xiaohan Ding,Xiangyu Zhang”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

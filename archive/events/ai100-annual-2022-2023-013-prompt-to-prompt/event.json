@@ -1,0 +1,73 @@
+{
+  "id": "ai100-annual-2022-2023-013-prompt-to-prompt",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "Prompt-to-Prompt",
+    "zh": "Prompt-to-Prompt"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in Vision",
+    "zh": "BenchCouncil AI100（2022-2023）视觉年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists Prompt-to-Prompt in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Prompt-to-prompt image editing with cross attention control”. The page names Amir Hertz, Daniel Cohen-Or as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 Prompt-to-Prompt。该条目关联论文《Prompt-to-prompt image editing with cross attention control》。页面把 Amir Hertz（官方页拼写）、Daniel Cohen-Or（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States, Israel",
+      "zh": "美国、以色列"
+    },
+    "place": {
+      "en": "Google, Tel Aviv University",
+      "zh": "Google、Tel Aviv University"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "amir-hertz",
+      "name": {
+        "en": "Amir Hertz",
+        "zh": "Amir Hertz（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Prompt-to-Prompt in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Prompt-to-Prompt 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "daniel-cohen-or",
+      "name": {
+        "en": "Daniel Cohen-Or",
+        "zh": "Daniel Cohen-Or（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Prompt-to-Prompt in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Prompt-to-Prompt 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 13 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 13 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

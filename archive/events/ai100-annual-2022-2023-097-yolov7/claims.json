@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "YOLOv7 is row 97 of the BenchCouncil AI100 (2022-2023) annual table in the Detection Segmentation area.",
+      "zh": "YOLOv7 是 BenchCouncil AI100（2022-2023）年度表第 97 行，所属领域为“检测与分割”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates YOLOv7 with “YOLOv7: Trainable Bag-of-Freebies Sets New State-of-the-Art for Real-Time Object Detectors”.",
+      "zh": "年度表把 YOLOv7 与论文《YOLOv7: Trainable Bag-of-Freebies Sets New State-of-the-Art for Real-Time Object Detectors》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Chien-Yao Wang, Hong-Yuan Mark Liao”.",
+      "zh": "“主要人物”字段依次列出 Chien-Yao Wang（官方页拼写）、Hong-Yuan Mark Liao（官方页拼写）；官方英文原文为“Chien-Yao Wang, Hong-Yuan Mark Liao”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

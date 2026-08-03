@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "InstructGPT is row 48 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "InstructGPT 是 BenchCouncil AI100（2022-2023）年度表第 48 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates InstructGPT with “Training language models to follow instructions with human feedback”.",
+      "zh": "年度表把 InstructGPT 与论文《Training language models to follow instructions with human feedback》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe”.",
+      "zh": "“主要人物”字段依次列出 Long Ouyang（官方页拼写）、Jeff Wu（官方页拼写）、Xu Jiang（官方页拼写）、Diogo Almeida（官方页拼写）、Carroll L. Wainwright（官方页拼写）、Pamela Mishkin（官方页拼写）、Paul Christiano（官方页拼写）、Jan Leike（官方页拼写）、Ryan Lowe（官方页拼写）；官方英文原文为“Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-105-dn-detr-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which area does the BenchCouncil annual table assign to DN-DETR?",
+      "zh": "BenchCouncil 年度表把 DN-DETR 归入哪个领域？"
+    },
+    "options": [
+      {
+        "en": "Detection Segmentation",
+        "zh": "检测与分割"
+      },
+      {
+        "en": "Vision",
+        "zh": "视觉"
+      },
+      {
+        "en": "Video",
+        "zh": "视频"
+      },
+      {
+        "en": "Speech",
+        "zh": "语音"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "DN-DETR appears in the Detection Segmentation area of the official annual table.",
+      "zh": "DN-DETR 位于官方年度表的“检测与分割”领域。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "assetIds": [
+      "asset-annual-105-dn-detr-record"
+    ]
+  }
+]

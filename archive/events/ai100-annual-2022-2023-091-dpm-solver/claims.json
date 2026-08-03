@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Dpm-solver is row 91 of the BenchCouncil AI100 (2022-2023) annual table in the Diffusion Model Application area.",
+      "zh": "Dpm-solver 是 BenchCouncil AI100（2022-2023）年度表第 91 行，所属领域为“扩散模型应用”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Dpm-solver with “Dpm-solver: A fast ode solver for diffusion probabilistic model sampling in around 10 steps”.",
+      "zh": "年度表把 Dpm-solver 与论文《Dpm-solver: A fast ode solver for diffusion probabilistic model sampling in around 10 steps》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Cheng Lu, Jianfei Chen, Jun Zhu”.",
+      "zh": "“主要人物”字段依次列出 Cheng Lu（官方页拼写）、Jianfei Chen（官方页拼写）、Jun Zhu（官方页拼写）；官方英文原文为“Cheng Lu, Jianfei Chen, Jun Zhu”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

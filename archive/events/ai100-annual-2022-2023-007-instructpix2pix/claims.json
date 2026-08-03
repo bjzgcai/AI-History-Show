@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Instructpix2pix is row 7 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "Instructpix2pix 是 BenchCouncil AI100（2022-2023）年度表第 7 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Instructpix2pix with “Instructpix2pix: Learning to follow image editing instructions”.",
+      "zh": "年度表把 Instructpix2pix 与论文《Instructpix2pix: Learning to follow image editing instructions》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Tim Brooks, Aleksander Holynski, Alexei A. Efros”.",
+      "zh": "“主要人物”字段依次列出 Tim Brooks（官方页拼写）、Aleksander Holynski（官方页拼写）、Alexei A. Efros（官方页拼写）；官方英文原文为“Tim Brooks, Aleksander Holynski, Alexei A. Efros”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

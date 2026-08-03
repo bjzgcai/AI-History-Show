@@ -1,0 +1,87 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "paper-page",
+    "label": {
+      "en": "Paper page",
+      "zh": "论文页面"
+    },
+    "title": {
+      "en": "Elucidating the design space of diffusion-based generative models",
+      "zh": "《Elucidating the design space of diffusion-based generative models》"
+    },
+    "authors": [
+      "Tero Karras",
+      "Samuli Laine"
+    ],
+    "year": 2022,
+    "url": "https://doi.org/10.48550/arxiv.2206.00364",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Publication or official work page resolved from the exact title in the BenchCouncil annual table.",
+      "zh": "依据 BenchCouncil 年度表中的准确标题解析出的论文或官方项目页面。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for Elucidating the design space of diffusion-based generative models",
+      "zh": "Elucidating the design space of diffusion-based generative models 的 OpenAlex 文献记录"
+    },
+    "url": "https://openalex.org/W4281969232",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
+      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  },
+  {
+    "id": "source-annual-069-design-space-of-diffusion-models-portrait-tero-karras",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Tero Karras portrait source",
+      "zh": "特罗·卡拉斯人物图片来源"
+    },
+    "url": "https://github.com/tkarras",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "Exact contributor-name match. The avatar comes from the researcher's own GitHub account. Reliability: primary-account-source. Usage note: The GitHub profile does not state redistribution rights; retain the source note and recheck before external redistribution.",
+      "zh": "人物姓名精确匹配，头像来自研究者本人 GitHub 账号。 可靠性：primary-account-source。使用备注：GitHub 主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+    }
+  }
+]

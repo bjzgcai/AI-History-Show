@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-110-esmfold-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which area does the BenchCouncil annual table assign to ESMFold?",
+      "zh": "BenchCouncil 年度表把 ESMFold 归入哪个领域？"
+    },
+    "options": [
+      {
+        "en": "AI4Science",
+        "zh": "AI for Science"
+      },
+      {
+        "en": "Vision",
+        "zh": "视觉"
+      },
+      {
+        "en": "Video",
+        "zh": "视频"
+      },
+      {
+        "en": "Speech",
+        "zh": "语音"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "ESMFold appears in the AI4Science area of the official annual table.",
+      "zh": "ESMFold 位于官方年度表的“AI for Science”领域。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "assetIds": [
+      "asset-annual-110-esmfold-record"
+    ]
+  }
+]

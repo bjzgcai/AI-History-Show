@@ -1,0 +1,329 @@
+{
+  "storylineId": "bench-council-ai100-2022-2023",
+  "eventId": "ai100-annual-2022-2023-088-ediffi",
+  "presentationMode": "archive",
+  "displayTitle": {
+    "en": "eDiffi",
+    "zh": "eDiffi"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Diffusion Model Application",
+    "zh": "AI100（2022-2023）· 扩散模型应用"
+  },
+  "displayDescription": {
+    "en": "<p>BenchCouncil lists eDiffi in the Diffusion Model Application area of its AI100 (2022-2023) annual table. It associates the work with the publication “eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers”. The page names Yogesh Balaji, Ming-Yu Liu as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“扩散模型应用”领域列出 eDiffi。该条目关联论文《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》。页面把 Yogesh Balaji（官方页拼写）、Ming-Yu Liu（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-annual-2022-2023",
+    "official-row-88"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "Primary publication",
+        "zh": "主论文"
+      },
+      "title": {
+        "en": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+        "zh": "《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》"
+      },
+      "description": {
+        "en": "Publication associated with this work by the BenchCouncil annual table.",
+        "zh": "BenchCouncil 年度表为该成果关联的论文。"
+      },
+      "url": "https://scholar.google.com/scholar?q=%22eDiffi%3A%20Text-to-Image%20Diffusion%20Models%20with%20an%20Ensemble%20of%20Expert%20Denoisers%22",
+      "source": "https://scholar.google.com/scholar?q=%22eDiffi%3A%20Text-to-Image%20Diffusion%20Models%20with%20an%20Ensemble%20of%20Expert%20Denoisers%22",
+      "license": {
+        "en": "Reference link only; local visuals are original redraws.",
+        "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+      },
+      "usage": {
+        "en": "Publication and evidence reference",
+        "zh": "论文与证据参考"
+      },
+      "action": {
+        "en": "Open publication",
+        "zh": "打开论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-annual-088-ediffi-record"
+  ],
+  "overviewImageAssetId": "asset-annual-088-ediffi-record",
+  "sourceIds": [
+    "source-primary-record",
+    "source-openalex-record",
+    "source-benchcouncil-annual"
+  ],
+  "claimIds": [
+    "claim-annual-membership",
+    "claim-publication-record",
+    "claim-contributor-record"
+  ],
+  "quizId": "ai100-annual-2022-2023-088-ediffi-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "BenchCouncil published this row as part of its AI100 (2022-2023) annual selection in the Diffusion Model Application area. The annual list captures a time-bounded view of prominent recent work rather than the membership of the long-term AI100 table.",
+        "zh": "BenchCouncil 把该行发布在 AI100（2022-2023）年度入选表的“扩散模型应用”领域中。年度表记录的是当时对近期代表性工作的阶段性观察，不等同于长期 AI100 主表成员。"
+      },
+      "sourceIds": [
+        "source-benchcouncil-annual"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The official work name is eDiffi, linked by the table to “eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers”. Yogesh Balaji, Ming-Yu Liu are preserved in the same order as the Main Contributors cell. The institution field is NVIDIA.",
+        "zh": "官方成果名称为 eDiffi，表格将其关联到论文《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》。Yogesh Balaji（官方页拼写）、Ming-Yu Liu（官方页拼写） 按“主要人物”单元格中的相同顺序显示。官方英文拼写与顺序保存在年度记录中，机构字段为 NVIDIA。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-benchcouncil-annual"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts should treat this record as evidence of BenchCouncil's 2022-2023 annual assessment, not as a permanent consensus ranking. Its lasting archival value is the exact preservation of the work name, publication link, contributor field, institution, country, citation value, and source order.",
+        "zh": "专家应把本记录视为 BenchCouncil 对 2022-2023 年度成果的阶段性评价证据，而不是永久共识排名。它的长期档案价值在于准确保留成果名称、论文线索、人物字段、机构、国家、引用数与来源顺序。"
+      },
+      "sourceIds": [
+        "source-benchcouncil-annual"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 (2022-2023)",
+    "zh": "BenchCouncil AI100（2022-2023）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Yogesh Balaji",
+        "zh": "Yogesh Balaji（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for eDiffi in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 eDiffi 主要人物"
+      },
+      "figureType": "person",
+      "avatar": ""
+    },
+    {
+      "name": {
+        "en": "Ming-Yu Liu",
+        "zh": "Ming-Yu Liu（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for eDiffi in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 eDiffi 主要人物"
+      },
+      "figureType": "person",
+      "avatar": ""
+    }
+  ],
+  "quote": {
+    "en": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+    "zh": "《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+      "zh": "《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》"
+    },
+    "workAuthors": {
+      "en": "Yogesh Balaji, Ming-Yu Liu",
+      "zh": "Yogesh Balaji（官方页拼写）、Ming-Yu Liu（官方页拼写）"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://scholar.google.com/scholar?q=%22eDiffi%3A%20Text-to-Image%20Diffusion%20Models%20with%20an%20Ensemble%20of%20Expert%20Denoisers%22"
+  },
+  "quotePage": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry",
+    "zh": "BenchCouncil AI100（2022-2023）年度条目"
+  },
+  "quoteAttribution": {
+    "en": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+    "zh": "《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》"
+  },
+  "achievement": {
+    "area": {
+      "en": "Diffusion Model Application",
+      "zh": "扩散模型应用"
+    },
+    "method": {
+      "en": "Annual selection record",
+      "zh": "年度入选记录"
+    },
+    "artifact": {
+      "en": "eDiffi",
+      "zh": "eDiffi"
+    },
+    "material": {
+      "en": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+      "zh": "《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》与官方年度行"
+    },
+    "demo": {
+      "en": "Trace the official row from eDiffi to its publication, contributor field, institution, and country.",
+      "zh": "沿官方行查看 eDiffi 如何关联到论文、主要人物字段、机构与国家。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Official Work",
+          "zh": "官方成果名称"
+        },
+        "text": {
+          "en": "eDiffi",
+          "zh": "eDiffi"
+        }
+      },
+      {
+        "label": {
+          "en": "Main Contributors",
+          "zh": "主要人物"
+        },
+        "text": {
+          "en": "Yogesh Balaji, Ming-Yu Liu",
+          "zh": "Yogesh Balaji（官方页拼写）、Ming-Yu Liu（官方页拼写）"
+        }
+      },
+      {
+        "label": {
+          "en": "Institution",
+          "zh": "机构"
+        },
+        "text": {
+          "en": "NVIDIA",
+          "zh": "NVIDIA"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Official work",
+        "zh": "官方成果名称"
+      },
+      {
+        "en": "Publication record",
+        "zh": "论文记录"
+      },
+      {
+        "en": "Contributors and institution",
+        "zh": "主要人物与机构"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-088-ediffi_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Source cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+          "zh": "《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》与 BenchCouncil 年度行"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace the official row from eDiffi to its publication, contributor field, institution, and country.",
+          "zh": "沿官方行查看 eDiffi 如何关联到论文、主要人物字段、机构与国家。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "Primary publication",
+          "zh": "主论文"
+        },
+        "title": {
+          "en": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+          "zh": "《eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers》"
+        },
+        "description": {
+          "en": "Publication associated with this work by the BenchCouncil annual table.",
+          "zh": "BenchCouncil 年度表为该成果关联的论文。"
+        },
+        "url": "https://scholar.google.com/scholar?q=%22eDiffi%3A%20Text-to-Image%20Diffusion%20Models%20with%20an%20Ensemble%20of%20Expert%20Denoisers%22",
+        "source": "https://scholar.google.com/scholar?q=%22eDiffi%3A%20Text-to-Image%20Diffusion%20Models%20with%20an%20Ensemble%20of%20Expert%20Denoisers%22",
+        "license": {
+          "en": "Reference link only; local visuals are original redraws.",
+          "zh": "仅作为参考链接；本地视觉图为原创重绘。"
+        },
+        "usage": {
+          "en": "Publication and evidence reference",
+          "zh": "论文与证据参考"
+        },
+        "action": {
+          "en": "Open publication",
+          "zh": "打开论文"
+        }
+      }
+    ],
+    "annualRecord": {
+      "officialOrder": 88,
+      "area": "Diffusion Model Application",
+      "work": "eDiffi",
+      "publication": "eDiffi: Text-to-Image Diffusion Models with an Ensemble of Expert Denoisers",
+      "citation": "213",
+      "contributors": "Yogesh Balaji, Ming-Yu Liu",
+      "institution": "NVIDIA",
+      "country": "USA",
+      "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+    }
+  },
+  "location": {
+    "name": {
+      "en": "NVIDIA",
+      "zh": "NVIDIA"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Generated from official annual row 88; source spellings and blank fields are intentionally preserved.",
+      "zh": "依据官方年度表第 88 行生成；有意保留来源拼写与空白字段。"
+    }
+  }
+}

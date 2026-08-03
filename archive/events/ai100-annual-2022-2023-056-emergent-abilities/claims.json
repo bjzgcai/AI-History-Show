@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Emergent abilities is row 56 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "Emergent abilities 是 BenchCouncil AI100（2022-2023）年度表第 56 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Emergent abilities with “Emergent Abilities of Large Language Models”.",
+      "zh": "年度表把 Emergent abilities 与论文《Emergent Abilities of Large Language Models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Jason Wei, William Fedus”.",
+      "zh": "“主要人物”字段依次列出 Jason Wei（官方页拼写）、William Fedus（官方页拼写）；官方英文原文为“Jason Wei, William Fedus”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

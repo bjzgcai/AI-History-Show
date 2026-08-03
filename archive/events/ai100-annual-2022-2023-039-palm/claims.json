@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "PaLM is row 39 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "PaLM 是 BenchCouncil AI100（2022-2023）年度表第 39 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates PaLM with “PaLM: Scaling Language Modeling with Pathways”.",
+      "zh": "年度表把 PaLM 与论文《PaLM: Scaling Language Modeling with Pathways》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel”.",
+      "zh": "“主要人物”字段依次列出 Aakanksha Chowdhery（官方页拼写）、Sharan Narang（官方页拼写）、雅各布·德夫林、Kathy Meier-Hellstern（官方页拼写）、Douglas Eck（官方页拼写）、杰夫·迪恩、Slav Petrov（官方页拼写）、Noah Fiedel（官方页拼写）；官方英文原文为“Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, Noah Fiedel”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

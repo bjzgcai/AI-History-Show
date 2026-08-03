@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Flamingo is row 54 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "Flamingo 是 BenchCouncil AI100（2022-2023）年度表第 54 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Flamingo with “Flamingo: a visual language model for few-shot learning”.",
+      "zh": "年度表把 Flamingo 与论文《Flamingo: a visual language model for few-shot learning》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Karen Simonyan”.",
+      "zh": "“主要人物”字段依次列出 Jean-Baptiste Alayrac（官方页拼写）、Jeff Donahue（官方页拼写）、Pauline Luc（官方页拼写）、Antoine Miech（官方页拼写）、卡伦·西莫尼扬；官方英文原文为“Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Karen Simonyan”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

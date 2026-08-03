@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Model soups is row 118 of the BenchCouncil AI100 (2022-2023) annual table in the Ensemble area.",
+      "zh": "Model soups 是 BenchCouncil AI100（2022-2023）年度表第 118 行，所属领域为“集成学习”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Model soups with “Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time”.",
+      "zh": "年度表把 Model soups 与论文《Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Mitchell Wortsman, Yair Carmon, Simon Kornblith, Ludwig Schmidt”.",
+      "zh": "“主要人物”字段依次列出 Mitchell Wortsman（官方页拼写）、Yair Carmon（官方页拼写）、Simon Kornblith（官方页拼写）、Ludwig Schmidt（官方页拼写）；官方英文原文为“Mitchell Wortsman, Yair Carmon, Simon Kornblith, Ludwig Schmidt”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

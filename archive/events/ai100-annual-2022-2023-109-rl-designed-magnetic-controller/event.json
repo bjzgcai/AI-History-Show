@@ -1,0 +1,109 @@
+{
+  "id": "ai100-annual-2022-2023-109-rl-designed-magnetic-controller",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "RL-designed magnetic controller",
+    "zh": "RL-designed magnetic controller"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in AI4Science",
+    "zh": "BenchCouncil AI100（2022-2023）AI for Science年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists RL-designed magnetic controller in the AI4Science area of its AI100 (2022-2023) annual table. It associates the work with the publication “Magnetic control of tokamak plasmas through deep reinforcement learning”. The page names Jonas Degrave, Federico Felici, Jonas Buchli, Michael Neunert, Brendan Tracey as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“AI for Science”领域列出 RL-designed magnetic controller。该条目关联论文《Magnetic control of tokamak plasmas through deep reinforcement learning》。页面把 Jonas Degrave（官方页拼写）、Federico Felici（官方页拼写）、Jonas Buchli（官方页拼写）、Michael Neunert（官方页拼写）、Brendan Tracey（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "united-kingdom",
+    "country": {
+      "en": "United Kingdom, Switzerland",
+      "zh": "英国、瑞士"
+    },
+    "place": {
+      "en": "DeepMind, EPFL",
+      "zh": "DeepMind、EPFL"
+    },
+    "coordinates": [
+      55.3781,
+      -3.436
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "jonas-degrave",
+      "name": {
+        "en": "Jonas Degrave",
+        "zh": "Jonas Degrave（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for RL-designed magnetic controller in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 RL-designed magnetic controller 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "federico-felici",
+      "name": {
+        "en": "Federico Felici",
+        "zh": "Federico Felici（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for RL-designed magnetic controller in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 RL-designed magnetic controller 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jonas-buchli",
+      "name": {
+        "en": "Jonas Buchli",
+        "zh": "Jonas Buchli（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for RL-designed magnetic controller in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 RL-designed magnetic controller 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "michael-neunert",
+      "name": {
+        "en": "Michael Neunert",
+        "zh": "Michael Neunert（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for RL-designed magnetic controller in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 RL-designed magnetic controller 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "brendan-tracey",
+      "name": {
+        "en": "Brendan Tracey",
+        "zh": "Brendan Tracey（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for RL-designed magnetic controller in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 RL-designed magnetic controller 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 109 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 109 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

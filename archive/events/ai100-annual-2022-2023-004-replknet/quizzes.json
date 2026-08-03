@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-004-replknet-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which area does the BenchCouncil annual table assign to RepLKNet?",
+      "zh": "BenchCouncil 年度表把 RepLKNet 归入哪个领域？"
+    },
+    "options": [
+      {
+        "en": "Vision",
+        "zh": "视觉"
+      },
+      {
+        "en": "Video",
+        "zh": "视频"
+      },
+      {
+        "en": "Speech",
+        "zh": "语音"
+      },
+      {
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "RepLKNet appears in the Vision area of the official annual table.",
+      "zh": "RepLKNet 位于官方年度表的“视觉”领域。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "assetIds": [
+      "asset-annual-004-replknet-record"
+    ]
+  }
+]

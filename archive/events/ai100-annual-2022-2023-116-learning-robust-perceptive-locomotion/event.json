@@ -1,0 +1,61 @@
+{
+  "id": "ai100-annual-2022-2023-116-learning-robust-perceptive-locomotion",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "Learning robust perceptive locomotion",
+    "zh": "Learning robust perceptive locomotion"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in Robots",
+    "zh": "BenchCouncil AI100（2022-2023）机器人年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists Learning robust perceptive locomotion in the Robots area of its AI100 (2022-2023) annual table. It associates the work with the publication “Learning robust perceptive locomotion for quadrupedal robots in the wild”. The page names Takahiro Miki as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“机器人”领域列出 Learning robust perceptive locomotion。该条目关联论文《Learning robust perceptive locomotion for quadrupedal robots in the wild》。页面把 Takahiro Miki（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "switzerland",
+    "country": {
+      "en": "Switzerland, South Korea, United States",
+      "zh": "瑞士、韩国、美国"
+    },
+    "place": {
+      "en": "ETH Zurich, KAIST, Intel",
+      "zh": "ETH Zurich、KAIST、Intel"
+    },
+    "coordinates": [
+      46.8182,
+      8.2275
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "takahiro-miki",
+      "name": {
+        "en": "Takahiro Miki",
+        "zh": "Takahiro Miki（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Learning robust perceptive locomotion in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Learning robust perceptive locomotion 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 116 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 116 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

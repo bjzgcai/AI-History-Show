@@ -182,7 +182,7 @@ console.log('PASS runtime figure avatars are explicit local files');
 const compiledArchive = compileArchive(path.join(__dirname, '..'));
 assert.equal(compiledArchive.source, 'archive');
 assert.equal(compiledArchive.errors.length, 0);
-assert.equal(compiledArchive.milestones.length, 174);
+assert.equal(compiledArchive.milestones.length, 294);
 assert.ok(compiledArchive.milestones.every((milestone) => milestone.sourceKind === 'archive'));
 assert.deepEqual(
     new Set(compiledArchive.milestones.map((milestone) => milestone.id)).size,
@@ -191,7 +191,14 @@ assert.deepEqual(
 );
 console.log('PASS production compiler emits Archive provenance');
 
-assert.equal(milestones.length, 174, 'Archive runtime should contain all four storylines and 174 milestones');
+assert.equal(milestones.length, 294, 'Archive runtime should contain all five storylines and 294 milestones');
+const annualAi100Milestones = milestones.filter(
+    (milestone) => milestone.storyline && milestone.storyline.id === 'bench-council-ai100-2022-2023'
+);
+assert.equal(annualAi100Milestones.length, 120, 'Archive runtime should contain all 120 annual AI100 entries');
+assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2');
+assert.equal(annualAi100Milestones[119].title.en, 'OSTrack');
+console.log('PASS annual AI100 storyline preserves the official 120-row boundary');
 const ai100AlphaFold = milestones.find(
     (milestone) =>
         milestone.archiveEventId === '2020-alphafold' &&

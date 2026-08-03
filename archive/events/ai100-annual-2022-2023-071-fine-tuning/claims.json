@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Fine-Tuning is row 71 of the BenchCouncil AI100 (2022-2023) annual table in the Evaluation Analysis area.",
+      "zh": "Fine-Tuning 是 BenchCouncil AI100（2022-2023）年度表第 71 行，所属领域为“评测与分析”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Fine-Tuning with “Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution”.",
+      "zh": "年度表把 Fine-Tuning 与论文《Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Ananya Kumar, Percy Liang”.",
+      "zh": "“主要人物”字段依次列出 Ananya Kumar（官方页拼写）、Percy Liang（官方页拼写）；官方英文原文为“Ananya Kumar, Percy Liang”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

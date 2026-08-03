@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Swin Transformer V2 is row 1 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "Swin Transformer V2 是 BenchCouncil AI100（2022-2023）年度表第 1 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Swin Transformer V2 with “Swin Transformer V2: Scaling Up Capacity and Resolution”.",
+      "zh": "年度表把 Swin Transformer V2 与论文《Swin Transformer V2: Scaling Up Capacity and Resolution》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Ze Liu, Han Hu”.",
+      "zh": "“主要人物”字段依次列出 刘泽、胡瀚；官方英文原文为“Ze Liu, Han Hu”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

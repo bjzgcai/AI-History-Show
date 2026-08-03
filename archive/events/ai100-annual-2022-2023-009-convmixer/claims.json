@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "ConvMixer is row 9 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "ConvMixer 是 BenchCouncil AI100（2022-2023）年度表第 9 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates ConvMixer with “Patches Are All You Need?”.",
+      "zh": "年度表把 ConvMixer 与论文《Patches Are All You Need?》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Asher Trockman, J. Zico Kolter”.",
+      "zh": "“主要人物”字段依次列出 Asher Trockman（官方页拼写）、J. Zico Kolter（官方页拼写）；官方英文原文为“Asher Trockman, J. Zico Kolter”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

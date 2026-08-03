@@ -1,0 +1,85 @@
+{
+  "id": "ai100-annual-2022-2023-050-gpt-neox-20b",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "GPT-NeoX-20B",
+    "zh": "GPT-NeoX-20B"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in LLM",
+    "zh": "BenchCouncil AI100（2022-2023）大语言模型年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists GPT-NeoX-20B in the LLM area of its AI100 (2022-2023) annual table. It associates the work with the publication “GPT-NeoX-20B: An Open-Source Autoregressive Language Model”. The page names Sid Black, Stella Biderman, Eric Hallahan as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“大语言模型”领域列出 GPT-NeoX-20B。该条目关联论文《GPT-NeoX-20B: An Open-Source Autoregressive Language Model》。页面把 Sid Black（官方页拼写）、Stella Biderman（官方页拼写）、Eric Hallahan（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Eleuther AI",
+      "zh": "Eleuther AI"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "sid-black",
+      "name": {
+        "en": "Sid Black",
+        "zh": "Sid Black（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for GPT-NeoX-20B in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 GPT-NeoX-20B 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "stella-biderman",
+      "name": {
+        "en": "Stella Biderman",
+        "zh": "Stella Biderman（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for GPT-NeoX-20B in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 GPT-NeoX-20B 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "eric-hallahan",
+      "name": {
+        "en": "Eric Hallahan",
+        "zh": "Eric Hallahan（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for GPT-NeoX-20B in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 GPT-NeoX-20B 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 50 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 50 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

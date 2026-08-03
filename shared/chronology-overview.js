@@ -3,9 +3,10 @@
 
     const DEFAULT_STORYLINE_STYLES = {
         'bench-council-ai100': { color: '#ff8833', order: 1 },
-        'gaming-ai': { color: '#33b0ff', order: 2 },
-        'humanistic-cycle': { color: '#44dd88', order: 3 },
-        'deep-learning': { color: '#b088ff', order: 4 }
+        'bench-council-ai100-2022-2023': { color: '#2fb6a2', order: 2 },
+        'gaming-ai': { color: '#33b0ff', order: 3 },
+        'humanistic-cycle': { color: '#44dd88', order: 4 },
+        'deep-learning': { color: '#b088ff', order: 5 }
     };
     const PORTRAIT_HINT_PATTERN =
         /\bportrait\b|\/people\/|(?:^|[_/-])portrait(?:[._/-]|$)|人物(?:肖像|照片|图|资料)?|肖像/i;
@@ -176,7 +177,8 @@
 
     function selectMilestoneVariant(milestone, storylineId) {
         if (!storylineId || storylineId === 'all') return milestone;
-        const variant = milestone && milestone.storylineVariants && milestone.storylineVariants[storylineId];
+        const configuredVariant = milestone && milestone.storylineVariants && milestone.storylineVariants[storylineId];
+        const variant = configuredVariant || (getStorylineId(milestone) === storylineId ? milestone : null);
         if (!variant) return null;
         return {
             ...variant,
@@ -241,19 +243,33 @@
         } = TIMELINE_LAYOUT_MODES[mode];
         const maxStagger = Math.max(...staggerPattern);
         const availableHeight = Math.max(0, Number(options.viewportHeight) || 0);
-        const sorted = [...(milestones || [])].sort((a, b) => compareMilestones(a, b, options.localize));
+        const sorted = [...(milestones || [])].sort((a, b) => {
+            if (options.preserveSourceOrder) {
+                return Number((a && a.order) || 0) - Number((b && b.order) || 0);
+            }
+            return compareMilestones(a, b, options.localize);
+        });
         const groups = [];
         const groupMap = new Map();
 
-        for (const milestone of sorted) {
-            const year = getSortYear(milestone);
-            if (!Number.isFinite(year)) continue;
-            if (!groupMap.has(year)) {
-                const group = { year, milestones: [] };
-                groupMap.set(year, group);
-                groups.push(group);
+        if (options.preserveSourceOrder && sorted.length) {
+            const sourceYears = sorted.map(getSortYear).filter(Number.isFinite);
+            groups.push({
+                year: sourceYears.length ? Math.min(...sourceYears) : 0,
+                label: String(options.sequenceLabel || ''),
+                milestones: sorted
+            });
+        } else {
+            for (const milestone of sorted) {
+                const year = getSortYear(milestone);
+                if (!Number.isFinite(year)) continue;
+                if (!groupMap.has(year)) {
+                    const group = { year, milestones: [] };
+                    groupMap.set(year, group);
+                    groups.push(group);
+                }
+                groupMap.get(year).milestones.push(milestone);
             }
-            groupMap.get(year).milestones.push(milestone);
         }
 
         let cursor = edgePadding;
@@ -289,7 +305,7 @@
                 cards.push({ milestone, year: group.year, yearX, x, side, staggerIndex });
             });
 
-            years.push({ year: group.year, x: yearX, count: group.milestones.length });
+            years.push({ year: group.year, label: group.label || '', x: yearX, count: group.milestones.length });
             cursor += groupWidth;
             previousYear = group.year;
         }
@@ -664,7 +680,9 @@
                 mode: viewport.mode,
                 viewportWidth: viewport.width,
                 viewportHeight: viewport.timelineHeight,
-                localize
+                localize,
+                preserveSourceOrder: Boolean(config.preserveSourceOrder),
+                sequenceLabel: config.sequenceLabel
             });
             const text = labels();
             const filters = [
@@ -704,7 +722,7 @@
                                 <div class="chrono-inner" style="width:${layout.width}px;height:${layout.height}px;--chrono-card-width:${layout.cardWidth}px;--chrono-card-height:${layout.cardHeight}px">
                                     <svg class="chrono-axis" width="${layout.width}" height="${layout.height}" viewBox="0 0 ${layout.width} ${layout.height}" aria-hidden="true">${renderSvg(layout, summaryById)}</svg>
                                     <div class="chrono-year-labels" aria-hidden="true">
-                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${year.year}</span>`).join('')}
+                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${escapeHtml(year.label || year.year)}</span>`).join('')}
                                         ${layout.gaps.map((gap) => `<span class="chrono-gap-label" style="left:${gap.x}px;top:${layout.axisY - 5}px">≈${gap.years}y</span>`).join('')}
                                     </div>
                                     ${layout.cards.map((card) => renderCard(card, summaryById, layout, text)).join('')}

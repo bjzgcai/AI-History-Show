@@ -9141,6 +9141,7 @@
         const TABLET_GLOBE_PIXEL_RATIO_CAP = 1.75;
         const UNIFIED_STORYLINE_ID = 'unified-ai-history';
         const DEEP_STORYLINE_ID = StorylineRouting.DEEP_STORYLINE_ID;
+        const ANNUAL_AI100_STORYLINE_ID = 'bench-council-ai100-2022-2023';
         const DEFAULT_STORYLINE_ID = UNIFIED_STORYLINE_ID;
         const CHRONOLOGY_FILTER_PARAM = 'storylineFilter';
         const AI_HISTORY_MAP_VARIANT_PRIORITY = [
@@ -9149,6 +9150,15 @@
             'gaming-ai',
             'humanistic-cycle'
         ];
+        const CHRONOLOGY_FILTER_STORYLINE_IDS = new Set([
+            ...AI_HISTORY_MAP_VARIANT_PRIORITY,
+            ANNUAL_AI100_STORYLINE_ID
+        ]);
+        const UNIFIED_STORYLINE_EXCLUSIONS = new Set([ANNUAL_AI100_STORYLINE_ID]);
+        const ACHIEVEMENT_STORYLINE_IDS = new Set([
+            'bench-council-ai100',
+            ANNUAL_AI100_STORYLINE_ID
+        ]);
         const analytics = window.AIHistoryAnalytics || null;
         if (analytics) {
             analytics.setContext({
@@ -9167,8 +9177,8 @@
                     zh: 'AI 历史地图'
                 },
                 note: {
-                    en: 'Canonical AI history map combining all storylines without duplicate events',
-                    zh: '汇总全部故事线的 AI 历史地图，相同事件仅展示一次'
+                    en: 'Canonical AI history map combining the long-term storylines without duplicate events',
+                    zh: '汇总长期故事线的 AI 历史地图，相同事件仅展示一次'
                 }
             },
             {
@@ -9181,6 +9191,18 @@
                 note: {
                     en: 'Canonical storyline matching the BenchCouncil AI achievements table',
                     zh: '严格对应 BenchCouncil AI 成果表的权威故事线'
+                }
+            },
+            {
+                id: ANNUAL_AI100_STORYLINE_ID,
+                layout: 'ui-browser',
+                label: {
+                    en: 'AI100 Annual Achievements (2022-2023)',
+                    zh: 'AI100 年度成就（2022-2023）'
+                },
+                note: {
+                    en: 'The standalone 120-row annual selection in official BenchCouncil order',
+                    zh: '按 BenchCouncil 官方顺序展示 120 条独立年度入选记录'
                 }
             },
             {
@@ -9258,7 +9280,10 @@
 
         function buildUnifiedMilestones() {
             if (unifiedMilestoneCache) return unifiedMilestoneCache;
-            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(allMilestones, {
+            const unifiedSourceMilestones = allMilestones.filter(
+                (milestone) => !UNIFIED_STORYLINE_EXCLUSIONS.has(getMilestoneStorylineId(milestone))
+            );
+            unifiedMilestoneCache = window.ChronologyOverview.buildCanonicalMilestones(unifiedSourceMilestones, {
                 storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY,
                 localize: lx
             });
@@ -9295,7 +9320,7 @@
         function getChronologyFilterStorylineId(storylineId) {
             const normalizedStorylineId = StorylineRouting.normalizeStorylineId(storylineId);
             if (normalizedStorylineId === DEEP_STORYLINE_ID) return 'deep-learning';
-            if (AI_HISTORY_MAP_VARIANT_PRIORITY.includes(normalizedStorylineId)) return normalizedStorylineId;
+            if (CHRONOLOGY_FILTER_STORYLINE_IDS.has(normalizedStorylineId)) return normalizedStorylineId;
             return 'all';
         }
 
@@ -9319,10 +9344,19 @@
         }
 
         function getChronologyVisibleMilestones() {
+            if (chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID) {
+                return getStorylineMilestones(ANNUAL_AI100_STORYLINE_ID);
+            }
             return window.ChronologyOverview.selectMilestonesByStoryline(
                 buildUnifiedMilestones(),
                 chronologyFilterStorylineId
             );
+        }
+
+        function getChronologyOverviewMilestones() {
+            return chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID
+                ? getStorylineMilestones(ANNUAL_AI100_STORYLINE_ID)
+                : buildUnifiedMilestones();
         }
 
         function isHumanisticMilestone(milestone) {
@@ -9792,7 +9826,13 @@
             'France',
             'Japan',
             'Finland',
-            'Switzerland'
+            'Switzerland',
+            'Australia',
+            'Belgium',
+            'Denmark',
+            'Israel',
+            'Singapore',
+            'South Korea'
         ];
 
         const ACHIEVEMENT_REGION_LABELS = {
@@ -9806,7 +9846,13 @@
             France: '法国',
             Japan: '日本',
             Finland: '芬兰',
-            Switzerland: '瑞士'
+            Switzerland: '瑞士',
+            Australia: '澳大利亚',
+            Belgium: '比利时',
+            Denmark: '丹麦',
+            Israel: '以色列',
+            Singapore: '新加坡',
+            'South Korea': '韩国'
         };
 
         function uiText(en, zh) {
@@ -9848,7 +9894,7 @@
 
         function getVisibleStorylineMilestones(storylineId) {
             const source = getStorylineMilestones(storylineId);
-            if (!activeRegionFilter || storylineId !== 'bench-council-ai100') return source;
+            if (!activeRegionFilter || !ACHIEVEMENT_STORYLINE_IDS.has(storylineId)) return source;
             return source.filter((milestone) => getMilestoneRegions(milestone).includes(activeRegionFilter));
         }
 
@@ -9894,7 +9940,7 @@
 
         function getStorylineStatus(option, count) {
             if (count <= 0) return uiText('planned', '规划中');
-            if (option && option.id === 'bench-council-ai100') {
+            if (option && ACHIEVEMENT_STORYLINE_IDS.has(option.id)) {
                 return uiText(`${count} achievements`, `${count} 个成果`);
             }
             return uiText(`${count} events`, `${count} 个事件`);
@@ -10515,13 +10561,14 @@
             const raw = String(name || '').trim();
             if (!raw) return 'AI';
             const localizedName = raw.replace(/\s+/g, ' ');
-            const dividerMatch = localizedName.match(/^([^·・.．。]+)/);
-            const firstPart = String(dividerMatch && dividerMatch[1] ? dividerMatch[1] : localizedName).trim();
-            if (/[\u3400-\u9fff]/.test(localizedName)) {
-                return firstPart || localizedName;
+            const avatarName = localizedName.replace(/\s*[（(][^()（）]*[)）]\s*$/, '').trim() || localizedName;
+            const dividerMatch = avatarName.match(/^([^·・.．。]+)/);
+            const firstPart = String(dividerMatch && dividerMatch[1] ? dividerMatch[1] : avatarName).trim();
+            if (/[\u3400-\u9fff]/.test(avatarName)) {
+                return firstPart || avatarName;
             }
             const words = firstPart.split(/\s+/).filter(Boolean);
-            return String(words[0] || firstPart || localizedName).toUpperCase();
+            return String(words[0] || firstPart || avatarName).toUpperCase();
         }
 
         function getFigureAvatarSource(figure) {
@@ -16047,7 +16094,7 @@
                                         <div class="ui-detail-meta-inline">${escapeHtmlWithCjkTail([locationLine, getAchievementField(raw, 'method', '')].filter(Boolean).join(' · '))}</div>
                                     </div>
                                 </div>
-                                <div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>
+                                ${detailFigureCount ? `<div class="ui-avatar-strip count-${detailFigureCount}">${buildUiAvatarHtml(vm, detailFigures)}</div>` : ''}
                             </div>
                             ${detailImageHtml}
                         </div>
@@ -16139,7 +16186,9 @@
             }
             chronologyOverview.setState({ storylineId: chronologyFilterStorylineId });
             chronologyOverview.update({
-                milestones: buildUnifiedMilestones(),
+                milestones: getChronologyOverviewMilestones(),
+                preserveSourceOrder: chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID,
+                sequenceLabel: chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID ? '2022-2023' : '',
                 selectedEventId: uiSelectedEventId,
                 localize: lx,
                 locale: window.I18n && typeof window.I18n.getLocale === 'function'

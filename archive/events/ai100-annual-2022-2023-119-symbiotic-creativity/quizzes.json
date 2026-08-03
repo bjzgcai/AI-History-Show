@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-119-symbiotic-creativity-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which area does the BenchCouncil annual table assign to Symbiotic Creativity?",
+      "zh": "BenchCouncil 年度表把 Symbiotic Creativity 归入哪个领域？"
+    },
+    "options": [
+      {
+        "en": "AI4Others",
+        "zh": "AI 其他应用"
+      },
+      {
+        "en": "Vision",
+        "zh": "视觉"
+      },
+      {
+        "en": "Video",
+        "zh": "视频"
+      },
+      {
+        "en": "Speech",
+        "zh": "语音"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Symbiotic Creativity appears in the AI4Others area of the official annual table.",
+      "zh": "Symbiotic Creativity 位于官方年度表的“AI 其他应用”领域。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "assetIds": [
+      "asset-annual-119-symbiotic-creativity-record"
+    ]
+  }
+]

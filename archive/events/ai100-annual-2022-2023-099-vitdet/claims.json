@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "ViTDet is row 99 of the BenchCouncil AI100 (2022-2023) annual table in the Detection Segmentation area.",
+      "zh": "ViTDet 是 BenchCouncil AI100（2022-2023）年度表第 99 行，所属领域为“检测与分割”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates ViTDet with “Exploring Plain Vision Transformer Backbones for Object Detection”.",
+      "zh": "年度表把 ViTDet 与论文《Exploring Plain Vision Transformer Backbones for Object Detection》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Yanghao Li, Ross Girshick, Kaiming He”.",
+      "zh": "“主要人物”字段依次列出 Yanghao Li（官方页拼写）、罗斯·格希克、何恺明；官方英文原文为“Yanghao Li, Ross Girshick, Kaiming He”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Simmim is row 2 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "Simmim 是 BenchCouncil AI100（2022-2023）年度表第 2 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Simmim with “Simmim: A simple framework for masked image modeling”.",
+      "zh": "年度表把 Simmim 与论文《Simmim: A simple framework for masked image modeling》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu”.",
+      "zh": "“主要人物”字段依次列出 Zhenda Xie（官方页拼写）、Zheng Zhang（官方页拼写）、曹越、胡瀚；官方英文原文为“Zhenda Xie, Zheng Zhang, Yue Cao, Han Hu”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

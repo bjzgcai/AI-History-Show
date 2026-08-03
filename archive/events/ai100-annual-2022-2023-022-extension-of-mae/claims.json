@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Extension of MAE is row 22 of the BenchCouncil AI100 (2022-2023) annual table in the Video area.",
+      "zh": "Extension of MAE 是 BenchCouncil AI100（2022-2023）年度表第 22 行，所属领域为“视频”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Extension of MAE with “Masked Autoencoders As Spatiotemporal Learners”.",
+      "zh": "年度表把 Extension of MAE 与论文《Masked Autoencoders As Spatiotemporal Learners》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Christoph Feichtenhofer, Haoqi Fan, Kaiming He”.",
+      "zh": "“主要人物”字段依次列出 Christoph Feichtenhofer（官方页拼写）、Haoqi Fan（官方页拼写）、何恺明；官方英文原文为“Christoph Feichtenhofer, Haoqi Fan, Kaiming He”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

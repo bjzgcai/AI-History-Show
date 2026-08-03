@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-022-extension-of-mae-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which area does the BenchCouncil annual table assign to Extension of MAE?",
+      "zh": "BenchCouncil 年度表把 Extension of MAE 归入哪个领域？"
+    },
+    "options": [
+      {
+        "en": "Video",
+        "zh": "视频"
+      },
+      {
+        "en": "Vision",
+        "zh": "视觉"
+      },
+      {
+        "en": "Speech",
+        "zh": "语音"
+      },
+      {
+        "en": "Multimodal",
+        "zh": "多模态"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Extension of MAE appears in the Video area of the official annual table.",
+      "zh": "Extension of MAE 位于官方年度表的“视频”领域。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "assetIds": [
+      "asset-annual-022-extension-of-mae-record"
+    ]
+  }
+]
