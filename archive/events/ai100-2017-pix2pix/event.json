@@ -6,10 +6,6 @@
     "zh": "Pix2Pix",
     "en": "Pix2Pix"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>Pix2Pix 表明，只要有配对的输入输出样本，许多图像转换任务都可以共享一个条件 GAN 框架。它让边缘到照片、地图到航拍图、标签到场景看起来像同一类学习问题的不同变体。</p>",
     "en": "<p>Pix2Pix showed that many image translation tasks could share one conditional GAN framework when paired input-output examples were available. It made edges-to-photos, maps-to-aerial images, and labels-to-scenes feel like variations of the same learning problem.</p>"

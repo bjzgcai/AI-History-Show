@@ -6,10 +6,6 @@
     "zh": "Cyc 常识知识库",
     "en": "Cyc"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>Cyc 追求一个大胆的符号 AI 设想：常识可以被显式表示为大规模本体与规则库。其知识工程师编码概念、关系、微理论和推理规则，使软件能够超越狭窄专家系统领域进行推理。</p>",
     "en": "<p>Cyc pursued an audacious symbolic-AI premise: common sense can be represented explicitly as a large ontology and rule base. Its knowledge engineers encoded concepts, relations, microtheories, and inference rules so software could reason beyond narrow expert-system domains.</p>"

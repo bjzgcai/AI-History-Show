@@ -15,7 +15,7 @@
   "storyline": {
     "id": "deep-learning",
     "title": {
-      "zh": "连接主义的兴衰与复兴：AI 七十年",
+      "zh": "连接主义的兴衰与复兴：AI七十年",
       "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "thesis": "演示文稿以连接主义为主轴，将人工智能七十年解释为感知机带来的兴起、理论与资源限制导致的退潮、反向传播和神经网络架构推动的复兴，以及连接主义向基础模型、智能体和科学智能的扩展。",

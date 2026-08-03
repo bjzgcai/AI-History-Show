@@ -160,7 +160,7 @@ function buildMilestone(root, storyline, ref) {
     for (const asset of imageAssets) imageMeta[asset.path] = assetImageMeta(asset);
 
     const title = pickLocalized(variant.displayTitle, event.title);
-    const summary = pickLocalized(variant.displaySummary, event.summary);
+    const subtitle = pickLocalized(variant.displaySubtitle, variant.displaySummary || storyline.title);
     const description = pickLocalized(variant.displayDescription, event.description || event.summary);
 
     const milestone = {
@@ -177,7 +177,7 @@ function buildMilestone(root, storyline, ref) {
         year: event.year,
         date: event.date || '',
         title,
-        subtitle: pickLocalized(variant.displaySubtitle, summary),
+        subtitle,
         category: localizePair(storyline.title),
         location: {
             name: (event.location && (event.location.place || event.location.name)) || { zh: '', en: '' },
@@ -311,9 +311,11 @@ function compileArchive(root) {
         },
         storylines: storylines.map((storyline) => ({
             id: storyline.id,
-            title: storyline.title,
+            title: localizePair(storyline.title),
+            subtitle: localizePair(storyline.subtitle),
+            description: localizePair(storyline.description),
             type: storyline.type,
-            events: (storyline.events || []).length
+            events: (storyline.events || []).filter((ref) => ref && ref.enabled !== false).length
         })),
         milestones,
         errors
