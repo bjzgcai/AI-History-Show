@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-03 05:27
+// 生成时间: 2026-08-03 05:46
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -87378,8 +87378,8 @@ const milestones = [
         "resources/images/humanistic-cycle/explainers/1978-xiaolingtong_future-city.svg",
         "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg"
       ],
-      "overviewImage": "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg",
-      "overviewImageAssetId": "asset-1978-xiaolingtong-ye-yonglie",
+      "overviewImage": "resources/images/humanistic-cycle/artifacts/1978-xiaolingtong_cover.jpeg",
+      "overviewImageAssetId": "asset-1978-xiaolingtong-cover",
       "imageMeta": {
         "resources/images/humanistic-cycle/people/1978-xiaolingtong_ye-yonglie.jpg": {
           "caption": {

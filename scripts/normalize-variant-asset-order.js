@@ -4,7 +4,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const { orderVariantAssetIds } = require('./event-figure-rules');
+const { isPersonDisplayAsset, orderVariantAssetIds } = require('./event-figure-rules');
 
 const ROOT = path.resolve(__dirname, '..');
 const EVENTS_DIR = path.join(ROOT, 'archive', 'events');
@@ -80,11 +80,16 @@ for (const eventId of fs.readdirSync(EVENTS_DIR).sort()) {
         const filePath = path.join(variantsDir, fileName);
         const variant = readJson(filePath);
         const ordered = orderVariantAssetIds(event, variant, assets);
+        const assetsById = new Map(assets.map((asset) => [asset.id, asset]));
+        const overviewAsset = variant.overviewImageAssetId
+            ? assetsById.get(variant.overviewImageAssetId) || null
+            : null;
         const assetOrderChanged = JSON.stringify(variant.assetIds || []) !== JSON.stringify(ordered.assetIds);
         const overviewChanged = Boolean(
             ordered.primaryAssetId &&
             variant.overviewImageAssetId &&
-            variant.overviewImageAssetId !== ordered.primaryAssetId
+            variant.overviewImageAssetId !== ordered.primaryAssetId &&
+            isPersonDisplayAsset(event, variant, overviewAsset)
         );
         if (!assetOrderChanged && !overviewChanged) continue;
 
