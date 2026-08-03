@@ -17,13 +17,13 @@
     "emphasis": ["batch-migration", "source-review-needed"],
     "visualModules": [],
     "assetIds": [
-        "asset-2025-llm-competition-historical-01",
         "asset-2025-llm-competition-lianmin-zheng",
         "asset-2025-llm-competition-architecture-01",
+        "asset-2025-llm-competition-historical-01",
         "asset-2025-llm-competition-historical-02",
         "asset-2025-llm-competition-historical-03"
     ],
-    "overviewImageAssetId": "asset-2025-llm-competition-historical-01",
+    "overviewImageAssetId": "asset-2025-llm-competition-lianmin-zheng",
     "sourceIds": [
         "source-lianmin-zheng-personal-page",
         "source-lmsys-chatbot-arena-introduction",

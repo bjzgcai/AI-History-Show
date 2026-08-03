@@ -14,9 +14,6 @@
     "benchcouncil-canonical-2026-07-30",
     "source-reviewed"
   ],
-  "commentaryMedia": {
-    "hideVisual": true
-  },
   "visual": "configuredPaper",
   "visualModules": [
     {
@@ -50,8 +47,8 @@
     }
   ],
   "assetIds": [
-    "asset-1994-sarsa-explainer",
-    "asset-1994-sarsa-portrait"
+    "asset-1994-sarsa-paper-record",
+    "asset-1994-sarsa-explainer"
   ],
   "sourceIds": [
     "source-1994-sarsa-primary",

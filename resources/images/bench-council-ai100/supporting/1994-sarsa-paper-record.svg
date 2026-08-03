@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1400" viewBox="0 0 1040 1400" role="img" aria-labelledby="title desc">
+  <title id="title">SARSA primary publication record</title>
+  <desc id="desc">A local original bibliographic card for On-line Q-Learning Using Connectionist Systems by Gavin Rummery and Mahesan Niranjan.</desc>
+  <rect width="1040" height="1400" fill="#f3f0e8"/>
+  <rect x="52" y="52" width="936" height="1296" fill="#fffef9" stroke="#d6d0c3" stroke-width="2"/>
+  <g fill="#171717" font-family="Georgia, 'Times New Roman', serif">
+    <text x="112" y="150" font-size="28" letter-spacing="2">PRIMARY PUBLICATION RECORD</text>
+    <line x1="112" y1="188" x2="928" y2="188" stroke="#171717" stroke-width="3"/>
+
+    <text x="112" y="366" font-size="58" font-weight="700">On-line Q-Learning</text>
+    <text x="112" y="438" font-size="58" font-weight="700">Using Connectionist</text>
+    <text x="112" y="510" font-size="58" font-weight="700">Systems</text>
+
+    <text x="112" y="650" font-size="31">Gavin Rummery</text>
+    <text x="112" y="700" font-size="31">Mahesan Niranjan</text>
+
+    <rect x="112" y="824" width="816" height="216" fill="#f0eee7" stroke="#c8c2b5" stroke-width="2"/>
+    <text x="152" y="900" font-size="27">Associated achievement</text>
+    <text x="152" y="970" font-size="46" font-weight="700">SARSA</text>
+
+    <line x1="112" y1="1160" x2="928" y2="1160" stroke="#171717" stroke-width="2"/>
+    <text x="112" y="1236" font-size="28">Publication year: 1994</text>
+    <text x="112" y="1292" font-size="24">Local archival card · Source-linked bibliographic display</text>
+  </g>
+</svg>

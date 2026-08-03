@@ -3,7 +3,7 @@
     "id": "asset-1957-kmeans-centroid-loop",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_centroid-loop.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "质心分配循环",
       "en": "Centroid assignment loop"
@@ -29,7 +29,7 @@
     "id": "asset-1957-kmeans-cluster-update",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1957-kmeans_cluster-update.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "簇更新步骤",
       "en": "Cluster update step"

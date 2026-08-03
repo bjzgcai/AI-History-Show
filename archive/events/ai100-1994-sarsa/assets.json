@@ -1,5 +1,36 @@
 [
   {
+    "id": "asset-1994-sarsa-paper-record",
+    "type": "svg",
+    "path": "resources/images/bench-council-ai100/supporting/1994-sarsa-paper-record.svg",
+    "role": "paper-page",
+    "caption": {
+      "en": "SARSA primary publication record",
+      "zh": "SARSA 主论文记录"
+    },
+    "subcaption": {
+      "en": "Local archival card for Rummery and Niranjan's 1994 publication associated with SARSA.",
+      "zh": "拉默里与尼兰詹 1994 年 SARSA 相关主论文的本地档案资料卡。"
+    },
+    "sourceId": "source-1994-sarsa-primary",
+    "sourceName": {
+      "en": "Primary publication record",
+      "zh": "主论文记录"
+    },
+    "sourceUrl": "https://www.cs.utexas.edu/~shivaram/readings/b2hd-RummeryNiranjan1994.html",
+    "rights": {
+      "status": "local-original",
+      "license": {
+        "en": "Local original bibliographic card; it does not reproduce the publication layout or figures.",
+        "zh": "本地原创书目资料卡；不复制论文版式或图形。"
+      }
+    },
+    "usage": [
+      "variant:bench-council-ai100"
+    ],
+    "editable": true
+  },
+  {
     "id": "asset-1994-sarsa-portrait",
     "type": "image",
     "path": "resources/images/bench-council-ai100/photos/1988-td-update_richard-sutton.jpg",
@@ -38,7 +69,7 @@
     "id": "asset-1994-sarsa-explainer",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "en": "SARSA process explainer",
       "zh": "SARSA流程解释图"

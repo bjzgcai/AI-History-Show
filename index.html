@@ -6143,113 +6143,6 @@
             font-weight: 800;
         }
 
-        .ui-media-video {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 530 / 298;
-            border: 1px solid rgba(244, 239, 229, 0.48);
-            border-radius: 0;
-            overflow: hidden;
-            background: #050505;
-            color: inherit;
-            padding: 0;
-            display: block;
-            cursor: pointer;
-            font: inherit;
-        }
-
-        .ui-media-video-poster {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: contain;
-            object-position: center;
-            background: #050505;
-            opacity: 0.56;
-            filter: saturate(0.72) contrast(1.08);
-        }
-
-        .ui-media-video::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: 2;
-            pointer-events: none;
-            background:
-                linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 14%, transparent 86%, rgba(255, 255, 255, 0.025)),
-                repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.032) 0 1px, transparent 1px 4px);
-            mix-blend-mode: screen;
-            opacity: 0.48;
-        }
-
-        .ui-media-video iframe,
-        .ui-media-video video,
-        .ui-media-video-media {
-            width: 100%;
-            height: 100%;
-            border: 0;
-            display: block;
-        }
-
-        .ui-media-video video,
-        video.ui-media-video-media {
-            object-fit: contain;
-            object-position: center;
-            background: #050505;
-        }
-
-        .ui-media-video-play {
-            position: absolute;
-            left: 36px;
-            top: 16px;
-            z-index: 3;
-            color: rgba(244, 239, 229, 0.42);
-            font-family: "Courier New", "SFMono-Regular", monospace;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-        }
-
-        .ui-media-video-play::after {
-            content: "▸";
-            margin-left: 8px;
-        }
-
-        .ui-media-video-quote {
-            position: absolute;
-            left: 36px;
-            right: 36px;
-            bottom: 54px;
-            z-index: 3;
-            color: #d99a00;
-            font-family: "Courier New", "SFMono-Regular", monospace;
-            font-size: 14px;
-            font-weight: 800;
-            line-height: 1.18;
-            text-align: left;
-            display: -webkit-box;
-            overflow: hidden;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4;
-        }
-
-        .ui-media-video-time {
-            position: absolute;
-            left: 36px;
-            right: 36px;
-            bottom: 18px;
-            z-index: 3;
-            display: flex;
-            justify-content: space-between;
-            color: rgba(244, 239, 229, 0.42);
-            font-family: "Courier New", "SFMono-Regular", monospace;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-        }
-
         .ui-explainer-grid {
             display: grid;
             gap: 22px;
@@ -6332,39 +6225,6 @@
             font-size: 18px;
             font-weight: 500;
             line-height: 1.35;
-        }
-
-        .ui-side-demo-visual {
-            display: grid;
-            gap: 10px;
-        }
-
-        .ui-side-demo-visual .bench-paper-demo {
-            display: block;
-            min-height: 0;
-        }
-
-        .ui-side-demo-visual .bench-paper-notes,
-        .ui-side-demo-visual .bench-go-notes {
-            display: none;
-        }
-
-        .ui-side-demo-visual .bench-paper-svg {
-            width: 100%;
-            height: auto;
-            min-height: 0;
-            aspect-ratio: 520 / 250;
-            display: block;
-        }
-
-        .ui-side-demo-visual .bench-paper-image-demo {
-            aspect-ratio: auto;
-        }
-
-        .ui-side-demo-visual .bench-go-layout,
-        .ui-side-demo-visual .bench-transcript-grid,
-        .ui-side-demo-visual .bench-code-flow {
-            min-height: 0;
         }
 
         .ui-back-button {
@@ -7583,19 +7443,9 @@
                 grid-template-columns: minmax(0, 1fr);
             }
 
-            .ui-side-demo-visual .bench-paper-demo,
             .bench-paper-demo {
                 display: grid;
                 grid-template-columns: minmax(0, 1fr);
-            }
-
-            .ui-side-demo-visual .bench-paper-notes,
-            .ui-side-demo-visual .bench-go-notes {
-                display: grid;
-            }
-
-            .ui-side-demo-visual .bench-paper-svg {
-                aspect-ratio: 4 / 3;
             }
 
             .single-stage.is-ui-browser.is-ui-detail .ui-back-button {
@@ -9146,7 +8996,7 @@
     <script src="shared/i18n.js"></script>
     <script src="shared/storyline-routing.js"></script>
     <script src="shared/chronology-overview.js?v=20260728b"></script>
-    <script src="shared/gaming-media-selection.js"></script>
+    <script src="shared/event-media-selection.js"></script>
     <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -10562,19 +10412,6 @@
             return /\/people\/|portrait|headshot|avatar|人物|人像/i.test(String(url || ''));
         }
 
-        function isPortraitLikeMedia(vm, url) {
-            const value = String(url || '');
-            if (!value) return false;
-            if (isPortraitLikePhoto(value)) return true;
-            const meta = getConfiguredImageMeta(vm, value);
-            const metaText = [
-                meta && meta.caption,
-                meta && meta.subcaption,
-                meta && meta.usage
-            ].filter(Boolean).join(' ');
-            return /portrait|person|figure photo|researcher photo|historical figure|人物|人像|肖像/i.test(metaText);
-        }
-
         function isDocumentLikePhoto(url) {
             return /proposal|paper|document|page|sheet|scan|manuscript|report|doc|论文|提案|文稿|手稿/i.test(String(url || ''));
         }
@@ -10626,14 +10463,6 @@
             const usage = String(lx(entry.usage || entry.recommendedUse || '')).trim();
             if (!caption && !subcaption && !source && !license && !usage) return null;
             return { caption, subcaption, source, license, usage };
-        }
-
-        function isExplainerMedia(vm, url) {
-            const value = String(url || '').trim();
-            if (!value) return false;
-            const meta = getConfiguredImageMetaEntry(vm, value) || {};
-            const role = String(meta.role || '').trim();
-            return /(?:architecture|algorithm)-explainer/i.test(role) || /\/explainers\//i.test(value);
         }
 
         function buildArchivePhotoMeta(vm, url) {
@@ -15274,35 +15103,22 @@
         }
 
         function getUiImageCandidates(vm) {
-            const visualImages = buildBenchVisualItems(vm)
-                .filter((item) => item && item.type === 'image' && item.url)
-                .map((item) => item.url);
             const photos = getPhotosForDisplay(vm.photos);
             const configuredDemoImage = isGamingMilestone(vm && vm.raw)
                 ? String(vm.raw && vm.raw.achievement && vm.raw.achievement.demoImage || '').trim()
                 : '';
             const seen = new Set();
-            return [...visualImages, ...photos, configuredDemoImage].map((url) => String(url || '').trim()).filter((url) => {
+            return [...photos, configuredDemoImage].map((url) => String(url || '').trim()).filter((url) => {
                 if (!url || seen.has(url)) return false;
                 seen.add(url);
                 return true;
             });
         }
 
-        function shouldHideUiCommentaryMediaVisual(raw) {
-            return Boolean(raw && raw.commentaryMedia && raw.commentaryMedia.hideVisual);
-        }
-
         function getUiDetailImages(vm) {
             const candidates = getUiImageCandidates(vm);
-            if (shouldHideUiCommentaryMediaVisual(vm && vm.raw)) return candidates;
             const sideImageUrl = getUiMediaVisualImage(vm, candidates);
-            // The homepage/default image is always the first detail image unless an
-            // explicit overview override is configured. A side-panel visual may
-            // reuse that image, but must never remove it from the detail carousel.
-            const sideImageIndex = sideImageUrl ? candidates.indexOf(sideImageUrl) : -1;
-            if (sideImageIndex <= 0) return candidates;
-            return window.GamingMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
+            return window.EventMediaSelection.excludeSelectedMedia(candidates, sideImageUrl);
         }
 
         function getUiPrimaryImageMeta(vm, imageUrl) {
@@ -15321,32 +15137,13 @@
             return /\/explainers\/|\/architecture\/|diagram|flow|pipeline|svg/i.test(value);
         }
 
-        const UI_MEDIA_VISUAL_OVERRIDES = {
-            'milestone-1990-otter': 'resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg'
-        };
         const UI_DETAIL_IMAGE_AUTOPLAY_MS = 3 * 1000;
 
-        function findHumanisticExplainerImage(vm, images) {
-            if (!isHumanisticMilestone(vm && vm.raw)) return '';
-            return images.find((url) => isExplainerMedia(vm, url)) || '';
-        }
-
         function getUiMediaVisualImage(vm, images = getUiImageCandidates(vm)) {
-            const eventId = vm && (vm.id || (vm.raw && vm.raw.id)) || '';
-            const overrideUrl = UI_MEDIA_VISUAL_OVERRIDES[eventId];
-            if (overrideUrl && images.includes(overrideUrl)) return overrideUrl;
-            const humanisticExplainer = findHumanisticExplainerImage(vm, images);
-            if (humanisticExplainer) return humanisticExplainer;
-            if (isGamingMilestone(vm && vm.raw)) {
-                const gameplayImage = window.GamingMediaSelection.findGameplayMedia(images, (url) => {
-                    const meta = getConfiguredImageMetaEntry(vm, url) || {};
-                    return meta.role;
-                });
-                if (gameplayImage) return gameplayImage;
-            }
-            const diagram = images.find((url) => isDiagramImage(url));
-            if (diagram) return diagram;
-            return images.find((url) => !isPortraitLikeMedia(vm, url)) || '';
+            return window.EventMediaSelection.findCommentaryMedia(images, (url) => {
+                const meta = getConfiguredImageMetaEntry(vm, url) || {};
+                return meta.role;
+            });
         }
 
         function renderUiDetailFromSelection(options = {}) {
@@ -15524,105 +15321,11 @@
             `;
         }
 
-        function getUiFallbackConceptSections(raw) {
-            return getAchievementKeyConcepts(raw);
-        }
-
-        const UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN = /(?:^|\/)sample-go-game\.gif(?:[?#]|$)/i;
-
-        function getUiGameEvolutionModule(raw) {
-            const module = getAchievementGameEvolutionModule(raw);
-            if (!module) return null;
-            if (UI_GAME_EVOLUTION_PLACEHOLDER_PATTERN.test(module.url)) {
-                return null;
-            }
-            return module;
-        }
-
-        function buildUiGameEvolutionHtml(vm, module) {
-            const title = module.title || vm.title || uiText('Game evolution clip', '棋局演化短片');
-            const description = module.description || uiText(
-                'Replay the curated game-state sequence.',
-                '重放策展棋局状态序列。'
-            );
-            const posterUrl = module.poster || getUiMediaVisualImage(vm);
-            const posterHtml = posterUrl
-                ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(title)}">`
-                : '';
-            return `
-                <button class="ui-media-video" type="button" data-ui-game-evolution="true" aria-label="${escapeHtml(title)}">
-                    ${posterHtml}
-                    <span class="ui-media-video-play">${escapeHtml(uiText('Replay', '重放'))}</span>
-                    <span class="ui-media-video-quote">${escapeHtml(description)}</span>
-                    <span class="ui-media-video-time">
-                        <span>${escapeHtml(uiText('Game record', '棋谱'))}</span>
-                        <span>${escapeHtml(module.duration || uiText('Interactive', '可交互'))}</span>
-                    </span>
-                </button>
-            `;
-        }
-
-        function buildUiDemoVisualHtml(raw, demoVisualHtml) {
-            if (!stripHtml(demoVisualHtml)) return '';
-            const caption = getAchievementField(
-                raw,
-                'demo',
-                getAchievementField(raw, 'artifact', tx('archiveImage'))
-            );
-            return `
-                <div class="ui-side-demo-visual">
-                    ${demoVisualHtml}
-                    <div class="ui-side-visual-caption">${escapeHtml(caption)}</div>
-                </div>
-            `;
-        }
-
-        function buildUiMediaHtml(vm, { forceStaticImage = false, hideVisual = false } = {}) {
-            const raw = vm.raw || {};
-            const gameEvolutionModule = getUiGameEvolutionModule(raw);
-            if (gameEvolutionModule && !forceStaticImage) {
-                return buildUiGameEvolutionHtml(vm, gameEvolutionModule);
-            }
-
-            if (vm.videoEmbedUrl && !forceStaticImage) {
-                const posterUrl = hideVisual ? '' : getUiMediaVisualImage(vm);
-                const posterMeta = posterUrl ? buildArchivePhotoMeta(vm, posterUrl) : null;
-                const posterHtml = posterUrl
-                    ? `<img class="ui-media-video-poster" src="${escapeHtml(posterUrl)}" alt="${escapeHtml(posterMeta && posterMeta.name || tx('archiveImage'))}">`
-                    : '';
-                return `
-                    <button class="ui-media-video" type="button" data-ui-media-video="${escapeHtml(vm.videoEmbedUrl)}" aria-label="${escapeHtml(tx('playVideo'))}">
-                        ${posterHtml}
-                        <span class="ui-media-video-play">PLAY</span>
-                        <span class="ui-media-video-quote">${escapeHtml(extractVideoQuote(vm))}</span>
-                        <span class="ui-media-video-time">
-                            <span>SP</span>
-                            <span>00:00:${String((currentIndex % 57) + 3).padStart(2, '0')}</span>
-                        </span>
-                    </button>
-                `;
-            }
-
-            if (hideVisual) return '';
-
+        function buildUiMediaHtml(vm) {
             const imageUrl = getUiMediaVisualImage(vm);
-            if (imageUrl) {
-                const meta = buildArchivePhotoMeta(vm, imageUrl);
-                return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
-            }
-
-            const demoVisualHtml = buildAchievementDemoVisualHtml(raw);
-            const demoMediaHtml = buildUiDemoVisualHtml(raw, demoVisualHtml);
-            if (demoMediaHtml && isGamingMilestone(raw)) return demoMediaHtml;
-
-            const fallbackConceptHtml = buildUiConceptFeatureCardsHtml(getUiFallbackConceptSections(raw));
-            if (fallbackConceptHtml) {
-                return fallbackConceptHtml;
-            }
-
-            if (demoMediaHtml) return demoMediaHtml;
-
-            return '';
+            if (!imageUrl) return '';
+            const meta = buildArchivePhotoMeta(vm, imageUrl);
+            return `<div class="ui-side-visual"><div class="ui-side-visual-stage"><img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(meta.name || tx('archiveImage'))}"></div><div class="ui-side-visual-caption">${escapeHtml(meta.name || meta.role || tx('archiveImage'))}</div></div>`;
         }
 
         function buildUiConceptsHtml(vm) {
@@ -15688,20 +15391,11 @@
 
         function buildUiSidePanelHtml(raw, vm) {
             const quoteSection = getUiQuoteSummarySection(vm);
-            const isHumanisticCycle = isHumanisticMilestone(raw);
-            const hideCommentaryMediaVisual = shouldHideUiCommentaryMediaVisual(raw);
-            const mediaHtml = buildUiMediaHtml(vm, {
-                forceStaticImage: isHumanisticCycle,
-                hideVisual: hideCommentaryMediaVisual
-            });
-            const mediaHasDedicatedVisual = mediaHtml.includes('ui-media-video')
-                || mediaHtml.includes('ui-side-visual')
-                || mediaHtml.includes('ui-side-demo-visual');
-            const mediaUsesConceptFallback = Boolean(mediaHtml && !mediaHasDedicatedVisual);
+            const mediaHtml = buildUiMediaHtml(vm);
             return [
                 buildUiSideSectionHtml('ui-info-card', uiText('Sources', '资料来源'), buildUiSourcesHtml(raw, vm)),
                 buildUiSideSectionHtml('ui-media-card', uiText('Commentary & Media', '评论与媒体'), mediaHtml),
-                mediaUsesConceptFallback ? '' : buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
+                buildUiSideSectionHtml('ui-concepts-card', uiText('Key Concepts', '关键概念'), buildUiConceptsHtml(vm)),
                 buildUiSideSectionHtml('ui-quote-card', uiText('Quote Summary', '引言摘要'), quoteSection ? buildUiSectionCardsHtml([quoteSection], { hiddenLabels: [tx('quoteExcerpt')] }) : ''),
                 buildUiSideSectionHtml('ui-commentary-card', uiText('Background', '背景解读'), buildUiSectionCardsHtml(getUiBackgroundSections(vm), { hiddenLabels: [tx('background')] }))
             ].join('');
@@ -16087,25 +15781,6 @@
                 });
             });
             bindUiEventEdgeNavigation(refs.uiBrowserMain);
-            refs.uiBrowserMain.querySelectorAll('[data-ui-media-video]').forEach((button) => {
-                button.addEventListener('click', () => {
-                    const videoUrl = button.dataset.uiMediaVideo || '';
-                    const media = isDirectVideoMedia(videoUrl)
-                        ? `<video class="ui-media-video-media" controls autoplay playsinline preload="metadata" src="${escapeHtml(videoUrl)}"></video>`
-                        : `<iframe class="ui-media-video-media" src="${escapeHtml(videoUrl)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-                    button.innerHTML = media;
-                    const player = button.querySelector('video');
-                    if (player && typeof player.play === 'function') {
-                        const playback = player.play();
-                        if (playback && typeof playback.catch === 'function') {
-                            playback.catch(() => {});
-                        }
-                    }
-                }, { once: true });
-            });
-            refs.uiBrowserMain.querySelectorAll('[data-ui-game-evolution]').forEach((button) => {
-                button.addEventListener('click', () => openGameEvolutionVideo(vm));
-            });
             bindUiDetailImageAutoplayPause(
                 refs.uiBrowserMain.querySelector('.ui-detail-image-stage'),
                 detailImages.length
