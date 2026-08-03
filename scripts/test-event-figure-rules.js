@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const { auditVariant, isAssetSelectionExcluded } = require('./event-figure-rules');
+const { auditVariant, isAssetSelectionExcluded, orderVariantAssetIds } = require('./event-figure-rules');
 const { findPortraitCandidate } = require('./ai100-contributors');
 const { validateAssetSelectionReview } = require('./asset-selection-review');
 
@@ -54,6 +54,79 @@ const primaryPortrait = auditVariant({
     catalog: new Map()
 });
 assert.deepEqual(primaryPortrait.issues, [], 'a primary-person first image should be allowed');
+
+const orderedAssets = [
+    image('primary', 'portrait', 'Primary Person portrait', 'resources/images/primary.png'),
+    image('architecture', 'architecture-explainer', 'System architecture'),
+    image('related', 'supporting-portrait', 'Related Person portrait', 'resources/images/related.png'),
+    image('source', 'paper-page', 'Source page'),
+    image('explanation', 'algorithm-explainer', 'Algorithm explanation')
+];
+const unorderedVariant = {
+    storylineId: 'test',
+    assetIds: ['source', 'related', 'explanation', 'architecture', 'primary']
+};
+assert.deepEqual(orderVariantAssetIds(genericEvent, unorderedVariant, orderedAssets).assetIds, [
+    'primary',
+    'architecture',
+    'related',
+    'source',
+    'explanation'
+]);
+assert.deepEqual(
+    orderVariantAssetIds(
+        genericEvent,
+        { storylineId: 'test', assetIds: ['explanation-in-architecture', 'architecture', 'primary'] },
+        [
+            image('primary', 'portrait', 'Primary Person portrait', 'resources/images/primary.png'),
+            image('architecture', 'architecture-explainer', 'System architecture'),
+            image(
+                'explanation-in-architecture',
+                'algorithm-explainer',
+                'Algorithm explanation',
+                'resources/images/example/architecture/algorithm.png'
+            )
+        ]
+    ).assetIds,
+    ['primary', 'architecture', 'explanation-in-architecture'],
+    'an explicit explanation role should take precedence over an architecture-like path'
+);
+const unorderedAudit = auditVariant({
+    eventId: 'test-event',
+    event: genericEvent,
+    variant: unorderedVariant,
+    assets: orderedAssets,
+    catalog: new Map()
+});
+assert.ok(
+    unorderedAudit.issues.some((issue) => issue.includes('assetIds must follow primary person')),
+    'variant validation should enforce the global image order'
+);
+
+const institutionIcon = image(
+    'institution',
+    'team-portrait',
+    'Research institutions icon',
+    'resources/images/figures/research-institution.png'
+);
+const institutionEvent = {
+    figures: [
+        {
+            name: { en: 'Research Institutions', zh: '研究机构' },
+            role: { en: 'Research organizations', zh: '研究机构' },
+            avatar: institutionIcon.path,
+            figureType: 'team'
+        }
+    ]
+};
+assert.deepEqual(
+    orderVariantAssetIds(institutionEvent, { storylineId: 'test', assetIds: ['institution', 'architecture'] }, [
+        institutionIcon,
+        image('architecture', 'architecture-explainer', 'System architecture')
+    ]).assetIds,
+    ['architecture', 'institution'],
+    'a generic institution icon should not be promoted ahead of a structural image as a primary person'
+);
 
 const relatedPortrait = auditVariant({
     eventId: 'test-event',

@@ -47,7 +47,7 @@
             }
         }
     ],
-    "assetIds": ["asset-elon-musk-commons-portrait", "asset-stephen-hawking-commons-portrait", "asset-2014-ai-existential-warnings-public-risk"],
+    "assetIds": ["asset-elon-musk-commons-portrait","asset-2014-ai-existential-warnings-public-risk","asset-stephen-hawking-commons-portrait"],
     "sourceIds": [
         "source-elon-musk-commons-portrait",
         "source-stephen-hawking-commons-portrait",

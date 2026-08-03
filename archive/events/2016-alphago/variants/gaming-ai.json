@@ -19,9 +19,9 @@
   "overviewImageAssetId": "asset-david-silver-commons-portrait",
   "assetIds": [
     "asset-david-silver-commons-portrait",
-    "asset-2016-alphago-game-4-photo",
     "asset-alphago-policy-value-search",
-    "asset-alphago-lee-sedol"
+    "asset-alphago-lee-sedol",
+    "asset-2016-alphago-game-4-photo"
   ],
   "sourceIds": [
     "source-david-silver-commons-portrait",

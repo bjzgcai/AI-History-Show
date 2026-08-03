@@ -39,11 +39,11 @@
     }
   ],
   "assetIds": [
-    "asset-1990-otter-manual-first-page",
     "asset-1990-otter-input-clauses",
     "asset-1990-otter-proof-trace",
     "asset-1990-otter-given-clause",
-    "asset-1990-otter-clause-index"
+    "asset-1990-otter-clause-index",
+    "asset-1990-otter-manual-first-page"
   ],
   "overviewImageAssetId": "asset-1990-otter-manual-first-page",
   "sourceIds": [
