@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-02 04:39
+// 生成时间: 2026-08-02 09:35
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -34150,7 +34150,7 @@ const milestones = [
           "en": "Neural attention paper co-author",
           "zh": "神经注意力论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -34744,6 +34744,7 @@ const milestones = [
           "en": "Attention-related achievement contributor",
           "zh": "注意力相关成就贡献者"
         },
+        "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -51293,7 +51294,7 @@ const milestones = [
           "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
           "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -55138,7 +55139,7 @@ const milestones = [
           "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -72397,7 +72398,7 @@ const milestones = [
           "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一",
           "en": "DeepMind research scientist and one of the first authors of the MuZero paper"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
