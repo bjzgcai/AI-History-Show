@@ -66,13 +66,11 @@ const unorderedVariant = {
     storylineId: 'test',
     assetIds: ['source', 'related', 'explanation', 'architecture', 'primary']
 };
-assert.deepEqual(orderVariantAssetIds(genericEvent, unorderedVariant, orderedAssets).assetIds, [
-    'primary',
-    'architecture',
-    'related',
-    'source',
-    'explanation'
-]);
+assert.deepEqual(
+    orderVariantAssetIds(genericEvent, unorderedVariant, orderedAssets).assetIds,
+    ['primary', 'architecture', 'source', 'related', 'explanation'],
+    'a related person should stay with supporting media instead of being promoted as a core figure'
+);
 assert.deepEqual(
     orderVariantAssetIds(
         genericEvent,

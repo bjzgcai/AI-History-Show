@@ -183,6 +183,16 @@ function isFigurePersonAsset(asset, figures) {
     );
 }
 
+function isSupportingFigurePersonAsset(asset, figures) {
+    if (!asset || isGenericOrganizationAsset(asset)) return false;
+    return (Array.isArray(figures) ? figures : []).some(
+        (figure, index) =>
+            !isPrimaryFigure(figure, index) &&
+            ((figure.avatar && figure.avatar === asset.path) ||
+                ((isPersonAsset(asset) || asset.role === 'hero-image') && assetMatchesFigure(asset, figure)))
+    );
+}
+
 function isPersonDisplayAsset(event, variant, asset) {
     if (!asset || isGenericOrganizationAsset(asset)) return false;
     const figures = mergeFigures(event && event.figures, variant && variant.figures);
@@ -202,7 +212,9 @@ function orderVariantAssetIds(event, variant, assets) {
     const groupFor = (entry) => {
         if (primaryAsset && entry.asset === primaryAsset) return 0;
         if (isArchitectureAsset(entry.asset)) return 1;
-        if (isPersonAsset(entry.asset) || isFigurePersonAsset(entry.asset, figures)) return 2;
+        if (isPersonAsset(entry.asset) || isFigurePersonAsset(entry.asset, figures)) {
+            return isSupportingFigurePersonAsset(entry.asset, figures) ? 3 : 2;
+        }
         if (isExplanationAsset(entry.asset)) return 4;
         return 3;
     };
