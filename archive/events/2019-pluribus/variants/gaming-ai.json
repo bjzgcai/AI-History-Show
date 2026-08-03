@@ -47,7 +47,7 @@
             }
         }
     ],
-    "assetIds": ["asset-noam-brown-official-portrait", "asset-tuomas-sandholm-commons-portrait", "asset-2019-pluribus-blueprint-search"],
+    "assetIds": ["asset-noam-brown-official-portrait","asset-2019-pluribus-blueprint-search","asset-tuomas-sandholm-commons-portrait"],
     "sourceIds": ["source-noam-brown-official-profile", "source-tuomas-sandholm-commons-portrait", "source-science-paper", "source-meta-ai-pluribus-report", "source-cmu-pluribus-release"],
     "claimIds": ["claim-legacy-achievement-summary", "claim-legacy-description"],
     "quizId": "2019-pluribus-quiz-1",

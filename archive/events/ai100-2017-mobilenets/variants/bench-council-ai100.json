@@ -47,9 +47,9 @@
     }
   ],
   "assetIds": [
+    "asset-2017-mobilenets-explainer",
     "asset-2017-mobilenets-paper-first-page",
-    "asset-2017-mobilenets-applications",
-    "asset-2017-mobilenets-explainer"
+    "asset-2017-mobilenets-applications"
   ],
   "overviewImageAssetId": "asset-2017-mobilenets-paper-first-page",
   "sourceIds": [

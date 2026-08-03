@@ -40,9 +40,9 @@
   ],
   "assetIds": [
     "asset-1984-cyc-douglas-lenat",
-    "asset-1984-cyc-cyc-projects-logos",
     "asset-1984-cyc-microtheories",
-    "asset-1984-cyc-common-sense-rule"
+    "asset-1984-cyc-common-sense-rule",
+    "asset-1984-cyc-cyc-projects-logos"
   ],
   "sourceIds": [
     "source-the-evolution-of-cycl",

@@ -49,11 +49,11 @@
   "assetIds": [
     "asset-1966-eliza-weizenbaum-rit-1982",
     "asset-1966-eliza-doctor-script",
+    "asset-1966-eliza-ctss-system-diagram",
+    "asset-1966-eliza-terminal-dialog",
     "asset-1966-eliza-weizenbaum-uszkoreit-2006",
     "asset-1966-eliza-original-source-page-9",
-    "asset-1966-eliza-ctss-system-diagram",
-    "asset-1966-eliza-conversation-reconstruction",
-    "asset-1966-eliza-terminal-dialog"
+    "asset-1966-eliza-conversation-reconstruction"
   ],
   "sourceIds": [
     "source-eliza-cacm-paper",

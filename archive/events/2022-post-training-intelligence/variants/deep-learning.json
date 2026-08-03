@@ -26,6 +26,7 @@
     "asset-2022-post-training-rlhf-ppt",
     "asset-2022-post-training-research-institutions"
   ],
+  "overviewImageAssetId": "asset-2022-post-training-pipeline",
   "sourceIds": [
     "source-instructgpt-paper",
     "source-flan-paper",
