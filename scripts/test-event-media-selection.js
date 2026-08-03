@@ -86,6 +86,12 @@ const expectedEvents = {
         archiveFirst: 'resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png',
         media: 'resources/images/2022-post-training-intelligence/architecture/instruction-tuning-pipeline.png'
     },
+    'milestone-2025-llm-competition': {
+        first: 'resources/images/2025-llm-competition/historical/2025-llm-competition_historical_01.png',
+        second: 'resources/images/2025-llm-competition/people/2025-llm-competition_lianmin-zheng.jpg',
+        archiveFirst: 'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png',
+        media: 'resources/images/2025-llm-competition/architecture/2025-llm-competition_architecture_01.png'
+    },
     'milestone-ai100-1994-sarsa': {
         first: 'resources/images/bench-council-ai100/supporting/1994-sarsa-paper-record.svg',
         media: 'resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg'
@@ -109,6 +115,13 @@ for (const [milestoneId, expected] of Object.entries(expectedEvents)) {
     assert.equal(commentaryImage, expected.media, `${milestoneId} should use its first structural image as media`);
     assert.equal(detailImages.includes(commentaryImage), false, `${milestoneId} should not duplicate commentary media`);
     assert.equal(detailImages[0], expected.first, `${milestoneId} should preserve its intended first detail image`);
+    if (expected.second) {
+        assert.equal(
+            detailImages[1],
+            expected.second,
+            `${milestoneId} should preserve its intended second detail image`
+        );
+    }
     assert.equal(
         milestone.resources.overviewImage || images[0],
         expected.first,
