@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Detic is row 106 of the BenchCouncil AI100 (2022-2023) annual table in the Detection Segmentation area.",
+      "zh": "Detic 是 BenchCouncil AI100（2022-2023）年度表第 106 行，所属领域为“检测与分割”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Detic with “Detecting Twenty-thousand Classes using Image-level Supervision”.",
+      "zh": "年度表把 Detic 与论文《Detecting Twenty-thousand Classes using Image-level Supervision》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Xingyi Zhou, Ishan Misra”.",
+      "zh": "“主要人物”字段依次列出 Xingyi Zhou（官方页拼写）、Ishan Misra（官方页拼写）；官方英文原文为“Xingyi Zhou, Ishan Misra”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

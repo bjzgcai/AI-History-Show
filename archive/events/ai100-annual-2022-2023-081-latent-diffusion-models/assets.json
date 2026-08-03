@@ -1,0 +1,44 @@
+[
+  {
+    "id": "asset-annual-081-latent-diffusion-models-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "Latent Diffusion Models annual evidence map",
+      "zh": "Latent Diffusion Models 年度证据图"
+    },
+    "subcaption": {
+      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
+      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "sourceName": {
+      "en": "BenchCouncil and publication metadata",
+      "zh": "BenchCouncil 与论文元数据"
+    },
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Annual record explainer",
+      "zh": "年度记录解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  }
+]

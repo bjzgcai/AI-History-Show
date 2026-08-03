@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "LaMDA is row 47 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "LaMDA 是 BenchCouncil AI100（2022-2023）年度表第 47 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates LaMDA with “LaMDA: Language Models for Dialog Applications”.",
+      "zh": "年度表把 LaMDA 与论文《LaMDA: Language Models for Dialog Applications》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Romal Thoppilan, Quoc Le”.",
+      "zh": "“主要人物”字段依次列出 Romal Thoppilan（官方页拼写）、Quoc Le（官方页拼写）；官方英文原文为“Romal Thoppilan, Quoc Le”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

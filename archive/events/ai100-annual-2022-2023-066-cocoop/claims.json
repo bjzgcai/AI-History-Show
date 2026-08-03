@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "CoCoOP is row 66 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "CoCoOP 是 BenchCouncil AI100（2022-2023）年度表第 66 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates CoCoOP with “Conditional Prompt Learning for Vision-Language Models”.",
+      "zh": "年度表把 CoCoOP 与论文《Conditional Prompt Learning for Vision-Language Models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Kaiyang Zhou, Ziwei Liu”.",
+      "zh": "“主要人物”字段依次列出 Kaiyang Zhou（官方页拼写）、Ziwei Liu（官方页拼写）；官方英文原文为“Kaiyang Zhou, Ziwei Liu”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

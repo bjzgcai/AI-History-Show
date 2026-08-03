@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-066-cocoop-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which area does the BenchCouncil annual table assign to CoCoOP?",
+      "zh": "BenchCouncil 年度表把 CoCoOP 归入哪个领域？"
+    },
+    "options": [
+      {
+        "en": "LLM",
+        "zh": "大语言模型"
+      },
+      {
+        "en": "Vision",
+        "zh": "视觉"
+      },
+      {
+        "en": "Video",
+        "zh": "视频"
+      },
+      {
+        "en": "Speech",
+        "zh": "语音"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "CoCoOP appears in the LLM area of the official annual table.",
+      "zh": "CoCoOP 位于官方年度表的“大语言模型”领域。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "assetIds": [
+      "asset-annual-066-cocoop-record"
+    ]
+  }
+]

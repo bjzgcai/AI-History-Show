@@ -1,0 +1,86 @@
+{
+  "id": "ai100-annual-2022-2023-024-whisper",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "Whisper",
+    "zh": "Whisper"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in Speech",
+    "zh": "BenchCouncil AI100（2022-2023）语音年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists Whisper in the Speech area of its AI100 (2022-2023) annual table. It associates the work with the publication “Robust Speech Recognition via Large-Scale Weak Supervision”. The page names Alec Radford, Jong Wook Kim, Ilya Sutskever as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“语音”领域列出 Whisper。该条目关联论文《Robust Speech Recognition via Large-Scale Weak Supervision》。页面把 亚历克·拉德福德、Jong Wook Kim（官方页拼写）、伊利亚·苏茨克维 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "alec-radford",
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "Main contributor for Whisper in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Whisper 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jong-wook-kim",
+      "name": {
+        "en": "Jong Wook Kim",
+        "zh": "Jong Wook Kim（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Whisper in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Whisper 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "ilya-sutskever",
+      "name": {
+        "en": "Ilya Sutskever",
+        "zh": "伊利亚·苏茨克维"
+      },
+      "role": {
+        "en": "Main contributor for Whisper in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Whisper 主要人物"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg"
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 24 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 24 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

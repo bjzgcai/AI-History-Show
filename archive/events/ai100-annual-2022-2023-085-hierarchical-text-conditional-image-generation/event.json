@@ -1,0 +1,109 @@
+{
+  "id": "ai100-annual-2022-2023-085-hierarchical-text-conditional-image-generation",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "Hierarchical Text-Conditional Image Generation",
+    "zh": "Hierarchical Text-Conditional Image Generation"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in Diffusion Model Application",
+    "zh": "BenchCouncil AI100（2022-2023）扩散模型应用年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists Hierarchical Text-Conditional Image Generation in the Diffusion Model Application area of its AI100 (2022-2023) annual table. It associates the work with the publication “Hierarchical Text-Conditional Image Generation with CLIP Latents”. The page names Aditya Ramesh, Prafulla Dhariwal, Alex Nichol, Casey Chu, Mark Chen as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“扩散模型应用”领域列出 Hierarchical Text-Conditional Image Generation。该条目关联论文《Hierarchical Text-Conditional Image Generation with CLIP Latents》。页面把 阿迪蒂亚·拉梅什、Prafulla Dhariwal（官方页拼写）、Alex Nichol（官方页拼写）、Casey Chu（官方页拼写）、Mark Chen（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "aditya-ramesh",
+      "name": {
+        "en": "Aditya Ramesh",
+        "zh": "阿迪蒂亚·拉梅什"
+      },
+      "role": {
+        "en": "Main contributor for Hierarchical Text-Conditional Image Generation in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Hierarchical Text-Conditional Image Generation 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "prafulla-dhariwal",
+      "name": {
+        "en": "Prafulla Dhariwal",
+        "zh": "Prafulla Dhariwal（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Hierarchical Text-Conditional Image Generation in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Hierarchical Text-Conditional Image Generation 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "alex-nichol",
+      "name": {
+        "en": "Alex Nichol",
+        "zh": "Alex Nichol（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Hierarchical Text-Conditional Image Generation in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Hierarchical Text-Conditional Image Generation 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "casey-chu",
+      "name": {
+        "en": "Casey Chu",
+        "zh": "Casey Chu（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Hierarchical Text-Conditional Image Generation in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Hierarchical Text-Conditional Image Generation 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "mark-chen",
+      "name": {
+        "en": "Mark Chen",
+        "zh": "Mark Chen（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for Hierarchical Text-Conditional Image Generation in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 Hierarchical Text-Conditional Image Generation 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 85 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 85 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

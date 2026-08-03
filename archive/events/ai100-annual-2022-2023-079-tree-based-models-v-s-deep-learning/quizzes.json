@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-079-tree-based-models-v-s-deep-learning-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which area does the BenchCouncil annual table assign to Tree-based models v.s. deep learning?",
+      "zh": "BenchCouncil 年度表把 Tree-based models v.s. deep learning 归入哪个领域？"
+    },
+    "options": [
+      {
+        "en": "Evaluation Analysis",
+        "zh": "评测与分析"
+      },
+      {
+        "en": "Vision",
+        "zh": "视觉"
+      },
+      {
+        "en": "Video",
+        "zh": "视频"
+      },
+      {
+        "en": "Speech",
+        "zh": "语音"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Tree-based models v.s. deep learning appears in the Evaluation Analysis area of the official annual table.",
+      "zh": "Tree-based models v.s. deep learning 位于官方年度表的“评测与分析”领域。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "assetIds": [
+      "asset-annual-079-tree-based-models-v-s-deep-learning-record"
+    ]
+  }
+]

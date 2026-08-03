@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "SignalP 6.0 is row 107 of the BenchCouncil AI100 (2022-2023) annual table in the AI4Science area.",
+      "zh": "SignalP 6.0 是 BenchCouncil AI100（2022-2023）年度表第 107 行，所属领域为“AI for Science”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates SignalP 6.0 with “SignalP 6.0 predicts all five types of signal peptides using protein language models”.",
+      "zh": "年度表把 SignalP 6.0 与论文《SignalP 6.0 predicts all five types of signal peptides using protein language models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Felix Teufel, Henrik Nielsen”.",
+      "zh": "“主要人物”字段依次列出 Felix Teufel（官方页拼写）、Henrik Nielsen（官方页拼写）；官方英文原文为“Felix Teufel, Henrik Nielsen”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

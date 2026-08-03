@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Diffusion-LM is row 92 of the BenchCouncil AI100 (2022-2023) annual table in the Diffusion Model Application area.",
+      "zh": "Diffusion-LM 是 BenchCouncil AI100（2022-2023）年度表第 92 行，所属领域为“扩散模型应用”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Diffusion-LM with “Diffusion-LM Improves Controllable Text Generation”.",
+      "zh": "年度表把 Diffusion-LM 与论文《Diffusion-LM Improves Controllable Text Generation》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Xiang Lisa Li, Tatsunori B. Hashimoto”.",
+      "zh": "“主要人物”字段依次列出 Xiang Lisa Li（官方页拼写）、Tatsunori B. Hashimoto（官方页拼写）；官方英文原文为“Xiang Lisa Li, Tatsunori B. Hashimoto”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

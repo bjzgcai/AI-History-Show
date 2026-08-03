@@ -1,0 +1,205 @@
+{
+  "id": "ai100-annual-2022-2023-098-yolov6",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "YOLOv6",
+    "zh": "YOLOv6"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in Detection Segmentation",
+    "zh": "BenchCouncil AI100（2022-2023）检测与分割年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists YOLOv6 in the Detection Segmentation area of its AI100 (2022-2023) annual table. It associates the work with the publication “YOLOv6: A single-stage object detection framework for industrial applications”. The page names Chuyi Li, Lulu Li, Hongliang Jiang, Kaiheng Weng, Yifei Geng, Liang Li, Zaidan Ke, Qingyuan Li, Meng Cheng, Weiqiang Nie, Yiduo Li, Bo Zhang, Xiaoming Xu as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“检测与分割”领域列出 YOLOv6。该条目关联论文《YOLOv6: A single-stage object detection framework for industrial applications》。页面把 Chuyi Li（官方页拼写）、Lulu Li（官方页拼写）、Hongliang Jiang（官方页拼写）、Kaiheng Weng（官方页拼写）、Yifei Geng（官方页拼写）、Liang Li（官方页拼写）、Zaidan Ke（官方页拼写）、Qingyuan Li（官方页拼写）、Meng Cheng（官方页拼写）、Weiqiang Nie（官方页拼写）、Yiduo Li（官方页拼写）、Bo Zhang（官方页拼写）、Xiaoming Xu（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "china",
+    "country": {
+      "en": "China",
+      "zh": "中国"
+    },
+    "place": {
+      "en": "Meituan",
+      "zh": "Meituan"
+    },
+    "coordinates": [
+      35.8617,
+      104.1954
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "chuyi-li",
+      "name": {
+        "en": "Chuyi Li",
+        "zh": "Chuyi Li（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "lulu-li",
+      "name": {
+        "en": "Lulu Li",
+        "zh": "Lulu Li（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "hongliang-jiang",
+      "name": {
+        "en": "Hongliang Jiang",
+        "zh": "Hongliang Jiang（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "kaiheng-weng",
+      "name": {
+        "en": "Kaiheng Weng",
+        "zh": "Kaiheng Weng（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "yifei-geng",
+      "name": {
+        "en": "Yifei Geng",
+        "zh": "Yifei Geng（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "liang-li",
+      "name": {
+        "en": "Liang Li",
+        "zh": "Liang Li（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "zaidan-ke",
+      "name": {
+        "en": "Zaidan Ke",
+        "zh": "Zaidan Ke（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "qingyuan-li",
+      "name": {
+        "en": "Qingyuan Li",
+        "zh": "Qingyuan Li（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "meng-cheng",
+      "name": {
+        "en": "Meng Cheng",
+        "zh": "Meng Cheng（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "weiqiang-nie",
+      "name": {
+        "en": "Weiqiang Nie",
+        "zh": "Weiqiang Nie（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "yiduo-li",
+      "name": {
+        "en": "Yiduo Li",
+        "zh": "Yiduo Li（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "bo-zhang",
+      "name": {
+        "en": "Bo Zhang",
+        "zh": "Bo Zhang（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "xiaoming-xu",
+      "name": {
+        "en": "Xiaoming Xu",
+        "zh": "Xiaoming Xu（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for YOLOv6 in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 YOLOv6 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 98 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 98 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Hierarchical Text-Conditional Image Generation is row 85 of the BenchCouncil AI100 (2022-2023) annual table in the Diffusion Model Application area.",
+      "zh": "Hierarchical Text-Conditional Image Generation 是 BenchCouncil AI100（2022-2023）年度表第 85 行，所属领域为“扩散模型应用”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Hierarchical Text-Conditional Image Generation with “Hierarchical Text-Conditional Image Generation with CLIP Latents”.",
+      "zh": "年度表把 Hierarchical Text-Conditional Image Generation 与论文《Hierarchical Text-Conditional Image Generation with CLIP Latents》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Aditya Ramesh, Prafulla Dhariwal, Alex Nichol, Casey Chu, Mark Chen”.",
+      "zh": "“主要人物”字段依次列出 阿迪蒂亚·拉梅什、Prafulla Dhariwal（官方页拼写）、Alex Nichol（官方页拼写）、Casey Chu（官方页拼写）、Mark Chen（官方页拼写）；官方英文原文为“Aditya Ramesh, Prafulla Dhariwal, Alex Nichol, Casey Chu, Mark Chen”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

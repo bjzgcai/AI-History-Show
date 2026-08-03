@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Whisper is row 24 of the BenchCouncil AI100 (2022-2023) annual table in the Speech area.",
+      "zh": "Whisper 是 BenchCouncil AI100（2022-2023）年度表第 24 行，所属领域为“语音”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Whisper with “Robust Speech Recognition via Large-Scale Weak Supervision”.",
+      "zh": "年度表把 Whisper 与论文《Robust Speech Recognition via Large-Scale Weak Supervision》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Alec Radford, Jong Wook Kim, Ilya Sutskever”.",
+      "zh": "“主要人物”字段依次列出 亚历克·拉德福德、Jong Wook Kim（官方页拼写）、伊利亚·苏茨克维；官方英文原文为“Alec Radford, Jong Wook Kim, Ilya Sutskever”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

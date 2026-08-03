@@ -1,0 +1,67 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation",
+      "zh": "《DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation》"
+    },
+    "authors": [
+      "Nataniel Ruiz",
+      "Kfir Aberman"
+    ],
+    "year": 2023,
+    "url": "https://scholar.google.com/scholar?q=%22DreamBooth%3A%20Fine%20Tuning%20Text-to-Image%20Diffusion%20Models%20for%20Subject-Driven%20Generation%22",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "reference-only",
+    "notes": {
+      "en": "Exact-title search retained transparently because the public metadata API did not return a verified landing page during this sync.",
+      "zh": "公共元数据 API 在本次同步中未返回可核验落地页，因此透明保留精确标题检索链接。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation",
+      "zh": "DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation 的 OpenAlex 文献记录"
+    },
+    "url": "https://api.openalex.org/works?search=DreamBooth%3A%20Fine%20Tuning%20Text-to-Image%20Diffusion%20Models%20for%20Subject-Driven%20Generation",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Authority for annual membership, official work name, order, contributors, institution, country, and citation field.",
+      "zh": "年度成员、官方成果名称、顺序、主要人物、机构、国家与引用数字段的权威依据。"
+    }
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "asset-annual-039-palm-portrait-jeff-dean",
+    "type": "image",
+    "path": "resources/images/benchcouncil-ai100-annual/portraits/jeff-dean.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Jeff Dean portrait",
+      "zh": "杰夫·迪恩肖像"
+    },
+    "subcaption": {
+      "en": "Main contributor listed by the BenchCouncil annual table",
+      "zh": "BenchCouncil 年度表列出的主要人物"
+    },
+    "sourceId": "source-annual-039-palm-portrait-jeff-dean",
+    "sourceName": {
+      "en": "Wikimedia Commons",
+      "zh": "维基共享资源"
+    },
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeff_Dean_in_2025_x.jpg",
+    "sourceReliability": "secondary-identity-with-affiliation-match",
+    "provenanceNotes": {
+      "en": "Exact name and research-description match in Wikidata; employer match: Digital Equipment Corporation, Compaq, Google. Wikimedia file-page license metadata was present.",
+      "zh": "Wikidata 中姓名与研究者描述匹配，任职机构匹配：Digital Equipment Corporation、Compaq、Google。维基共享资源文件页包含明确许可元数据。"
+    },
+    "rights": {
+      "status": "licensed-wikimedia",
+      "license": {
+        "en": "CC BY-SA 4.0",
+        "zh": "CC BY-SA 4.0"
+      },
+      "attribution": "Cmichel67"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-039-palm-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-039-palm_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "PaLM annual evidence map",
+      "zh": "PaLM 年度证据图"
+    },
+    "subcaption": {
+      "en": "Original local explainer connecting the official work, area, publication, citation, and country fields.",
+      "zh": "连接官方成果名称、领域、论文、引用数与国家字段的本地原创解释图。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "sourceName": {
+      "en": "BenchCouncil and publication metadata",
+      "zh": "BenchCouncil 与论文元数据"
+    },
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Annual record explainer",
+      "zh": "年度记录解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  }
+]

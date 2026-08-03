@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "LLaVA is row 63 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "LLaVA 是 BenchCouncil AI100（2022-2023）年度表第 63 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates LLaVA with “Visual instruction tuning”.",
+      "zh": "年度表把 LLaVA 与论文《Visual instruction tuning》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Haotian Liu, Chunyuan Li, Yong Jae Lee”.",
+      "zh": "“主要人物”字段依次列出 Haotian Liu（官方页拼写）、Chunyuan Li（官方页拼写）、Yong Jae Lee（官方页拼写）；官方英文原文为“Haotian Liu, Chunyuan Li, Yong Jae Lee”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

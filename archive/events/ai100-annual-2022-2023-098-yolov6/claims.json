@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "YOLOv6 is row 98 of the BenchCouncil AI100 (2022-2023) annual table in the Detection Segmentation area.",
+      "zh": "YOLOv6 是 BenchCouncil AI100（2022-2023）年度表第 98 行，所属领域为“检测与分割”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates YOLOv6 with “YOLOv6: A single-stage object detection framework for industrial applications”.",
+      "zh": "年度表把 YOLOv6 与论文《YOLOv6: A single-stage object detection framework for industrial applications》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Chuyi Li, Lulu Li, Hongliang Jiang, Kaiheng Weng, Yifei Geng, Liang Li, Zaidan Ke, Qingyuan Li, Meng Cheng, Weiqiang Nie, Yiduo Li, Bo Zhang, Xiaoming Xu”.",
+      "zh": "“主要人物”字段依次列出 Chuyi Li（官方页拼写）、Lulu Li（官方页拼写）、Hongliang Jiang（官方页拼写）、Kaiheng Weng（官方页拼写）、Yifei Geng（官方页拼写）、Liang Li（官方页拼写）、Zaidan Ke（官方页拼写）、Qingyuan Li（官方页拼写）、Meng Cheng（官方页拼写）、Weiqiang Nie（官方页拼写）、Yiduo Li（官方页拼写）、Bo Zhang（官方页拼写）、Xiaoming Xu（官方页拼写）；官方英文原文为“Chuyi Li, Lulu Li, Hongliang Jiang, Kaiheng Weng, Yifei Geng, Liang Li, Zaidan Ke, Qingyuan Li, Meng Cheng, Weiqiang Nie, Yiduo Li, Bo Zhang, Xiaoming Xu”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

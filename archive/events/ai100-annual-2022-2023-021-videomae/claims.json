@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "VideoMAE is row 21 of the BenchCouncil AI100 (2022-2023) annual table in the Video area.",
+      "zh": "VideoMAE 是 BenchCouncil AI100（2022-2023）年度表第 21 行，所属领域为“视频”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates VideoMAE with “VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training”.",
+      "zh": "年度表把 VideoMAE 与论文《VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Zhan Tong, Limin Wang”.",
+      "zh": "“主要人物”字段依次列出 Zhan Tong（官方页拼写）、Limin Wang（官方页拼写）；官方英文原文为“Zhan Tong, Limin Wang”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Tree-based models v.s. deep learning is row 79 of the BenchCouncil AI100 (2022-2023) annual table in the Evaluation Analysis area.",
+      "zh": "Tree-based models v.s. deep learning 是 BenchCouncil AI100（2022-2023）年度表第 79 行，所属领域为“评测与分析”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Tree-based models v.s. deep learning with “Why do tree-based models still outperform deep learning on tabular data?”.",
+      "zh": "年度表把 Tree-based models v.s. deep learning 与论文《Why do tree-based models still outperform deep learning on tabular data?》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Leo Grinsztajn, Gael Varoquaux”.",
+      "zh": "“主要人物”字段依次列出 Leo Grinsztajn（官方页拼写）、Gael Varoquaux（官方页拼写）；官方英文原文为“Leo Grinsztajn, Gael Varoquaux”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

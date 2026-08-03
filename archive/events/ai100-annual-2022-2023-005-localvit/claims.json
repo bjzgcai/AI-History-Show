@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "LocalViT is row 5 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "LocalViT 是 BenchCouncil AI100（2022-2023）年度表第 5 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates LocalViT with “Localvit: Bringing locality to vision transformers”.",
+      "zh": "年度表把 LocalViT 与论文《Localvit: Bringing locality to vision transformers》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Yawei Li, Luc Van Gool”.",
+      "zh": "“主要人物”字段依次列出 Yawei Li（官方页拼写）、Luc Van Gool（官方页拼写）；官方英文原文为“Yawei Li, Luc Van Gool”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Latent Diffusion Models is row 81 of the BenchCouncil AI100 (2022-2023) annual table in the Diffusion Model Application area.",
+      "zh": "Latent Diffusion Models 是 BenchCouncil AI100（2022-2023）年度表第 81 行，所属领域为“扩散模型应用”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Latent Diffusion Models with “High-Resolution Image Synthesis with Latent Diffusion Models”.",
+      "zh": "年度表把 Latent Diffusion Models 与论文《High-Resolution Image Synthesis with Latent Diffusion Models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Robin Rombach, Andreas Blattmann, Bjorn Ommer”.",
+      "zh": "“主要人物”字段依次列出 罗宾·罗姆巴赫、Andreas Blattmann（官方页拼写）、Bjorn Ommer（官方页拼写）；官方英文原文为“Robin Rombach, Andreas Blattmann, Bjorn Ommer”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

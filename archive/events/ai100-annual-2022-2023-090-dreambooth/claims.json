@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "DreamBooth is row 90 of the BenchCouncil AI100 (2022-2023) annual table in the Diffusion Model Application area.",
+      "zh": "DreamBooth 是 BenchCouncil AI100（2022-2023）年度表第 90 行，所属领域为“扩散模型应用”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates DreamBooth with “DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation”.",
+      "zh": "年度表把 DreamBooth 与论文《DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Nataniel Ruiz, Kfir Aberman”.",
+      "zh": "“主要人物”字段依次列出 Nataniel Ruiz（官方页拼写）、Kfir Aberman（官方页拼写）；官方英文原文为“Nataniel Ruiz, Kfir Aberman”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

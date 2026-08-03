@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "OFA is row 31 of the BenchCouncil AI100 (2022-2023) annual table in the Multimodal area.",
+      "zh": "OFA 是 BenchCouncil AI100（2022-2023）年度表第 31 行，所属领域为“多模态”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates OFA with “OFA: Unifying Architectures, Tasks, and Modalities Through a Simple Sequence-to-Sequence Learning Framework”.",
+      "zh": "年度表把 OFA 与论文《OFA: Unifying Architectures, Tasks, and Modalities Through a Simple Sequence-to-Sequence Learning Framework》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Peng Wang, Chang Zhou”.",
+      "zh": "“主要人物”字段依次列出 Peng Wang（官方页拼写）、Chang Zhou（官方页拼写）；官方英文原文为“Peng Wang, Chang Zhou”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

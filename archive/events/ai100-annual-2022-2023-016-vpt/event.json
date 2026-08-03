@@ -1,0 +1,85 @@
+{
+  "id": "ai100-annual-2022-2023-016-vpt",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "VPT",
+    "zh": "VPT"
+  },
+  "summary": {
+    "en": "BenchCouncil AI100 (2022-2023) annual entry in Vision",
+    "zh": "BenchCouncil AI100（2022-2023）视觉年度条目"
+  },
+  "description": {
+    "en": "<p>BenchCouncil lists VPT in the Vision area of its AI100 (2022-2023) annual table. It associates the work with the publication “Visual Prompt Tuning”. The page names Menglin Jia, Luming Tang, Ser-Nam Lim as the main contributors.</p><p>This Archive record preserves the official row order, citation value, institution, and country fields. It represents the annual 2022-2023 selection and remains separate from the long-term canonical AI100 storyline.</p>",
+    "zh": "<p>BenchCouncil 在 AI100（2022-2023）年度表的“视觉”领域列出 VPT。该条目关联论文《Visual Prompt Tuning》。页面把 Menglin Jia（官方页拼写）、Luming Tang（官方页拼写）、Ser-Nam Lim（官方页拼写） 列为主要人物。</p><p>本 Archive 记录保留官方行序、引用数、机构和国家字段。它表示 2022-2023 年度入选记录，与长期 canonical AI100 故事线分开维护。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States, Denmark",
+      "zh": "美国、丹麦"
+    },
+    "place": {
+      "en": "Cornell University, Meta, University of Copenhagen",
+      "zh": "Cornell University、Meta、University of Copenhagen"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "menglin-jia",
+      "name": {
+        "en": "Menglin Jia",
+        "zh": "Menglin Jia（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for VPT in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 VPT 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "luming-tang",
+      "name": {
+        "en": "Luming Tang",
+        "zh": "Luming Tang（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for VPT in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 VPT 主要人物"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "ser-nam-lim",
+      "name": {
+        "en": "Ser-Nam Lim",
+        "zh": "Ser-Nam Lim（官方页拼写）"
+      },
+      "role": {
+        "en": "Main contributor for VPT in the BenchCouncil annual table",
+        "zh": "BenchCouncil 年度表列出的 VPT 主要人物"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Synchronized from BenchCouncil annual row 16 on 2026-08-03; official field spelling and contributor order are preserved.",
+      "zh": "于 2026-08-03 从 BenchCouncil 年度表第 16 行同步；保留官方字段拼写与主要人物顺序。"
+    }
+  }
+}

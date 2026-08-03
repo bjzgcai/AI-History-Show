@@ -78,6 +78,35 @@ gamingMilestones.forEach((milestone) => {
 });
 console.log('PASS gaming AI unified UI content coverage');
 
+const annualAi100Milestones = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'bench-council-ai100-2022-2023'
+);
+assert.equal(
+    annualAi100Milestones.length,
+    120,
+    'the BenchCouncil 2022-2023 annual storyline should contain 120 events'
+);
+assert.equal(annualAi100Milestones[0].title.en, 'Swin Transformer V2', 'the annual storyline should retain row 1');
+assert.equal(annualAi100Milestones.at(-1).title.en, 'OSTrack', 'the annual storyline should retain row 120');
+assert.deepEqual(
+    annualAi100Milestones[0].figures.map((figure) => figure.name.en),
+    ['Ze Liu', 'Han Hu'],
+    'annual milestones should preserve the complete official contributor order'
+);
+assert.equal(annualAi100Milestones[0].figures[0].avatar.endsWith('ze-liu-portrait.jpg'), true);
+assert.equal(annualAi100Milestones[0].figures[1].avatar, '');
+assert.deepEqual(
+    annualAi100Milestones[1].figures.map((figure) => figure.name.en),
+    ['Zhenda Xie', 'Zheng Zhang', 'Yue Cao', 'Han Hu'],
+    'annual milestones should retain contributor information when no portrait is available'
+);
+assert.equal(
+    annualAi100Milestones[1].figures.every((figure) => figure.avatar === ''),
+    true,
+    'contributors without a verified portrait should remain text-only'
+);
+console.log('PASS BenchCouncil annual storyline order');
+
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
     { id: 'milestone-2017-transformer', storyline: { id: 'deep-learning' } },
@@ -141,7 +170,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(allMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
+    /unifiedSourceMilestones = allMilestones\.filter[\s\S]*?unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(unifiedSourceMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
     'the default overview should merge storyline variants by canonical Archive event'
 );
 assert.match(
@@ -156,13 +185,23 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*buildUnifiedMilestones\(\)/,
-    'the overview should retain the complete canonical filters while restoring the selected storyline'
+    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*getChronologyOverviewMilestones\(\)/,
+    'the overview should restore the selected storyline against its matching dataset'
 );
 assert.match(
     indexHtml,
-    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?AI_HISTORY_MAP_VARIANT_PRIORITY\.includes\(normalizedStorylineId\)/,
+    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?CHRONOLOGY_FILTER_STORYLINE_IDS\.has\(normalizedStorylineId\)/,
     'all configured chronology storylines should map back to their matching overview filter'
+);
+assert.match(
+    indexHtml,
+    /let chronologyFilterStorylineId = requestedChronologyFilterStorylineId[\s\S]*?getChronologyFilterStorylineId\(activeStorylineId\)/,
+    'a storyline URL should initialize the chronology filter from the active storyline'
+);
+assert.match(
+    indexHtml,
+    /function getChronologyOverviewMilestones\(\)[\s\S]*?chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID[\s\S]*?getStorylineMilestones\(ANNUAL_AI100_STORYLINE_ID\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: chronologyFilterStorylineId === ANNUAL_AI100_STORYLINE_ID/,
+    'the annual storyline should supply its own 120-row dataset to the overview in official order'
 );
 assert.match(
     indexHtml,
@@ -267,12 +306,17 @@ assert.match(
 assert.match(
     indexHtml,
     /const AI_HISTORY_MAP_VARIANT_PRIORITY = \[[\s\S]*?'bench-council-ai100'[\s\S]*?DEEP_STORYLINE_ID[\s\S]*?'gaming-ai'[\s\S]*?'humanistic-cycle'[\s\S]*?\]/,
-    'the unified chronology should include all four public storylines'
+    'the unified chronology should include the four long-term public storylines'
 );
 assert.match(
     indexHtml,
-    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
-    'the storyline selector should place AI100 where the deep-learning option previously appeared'
+    /const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(\[ANNUAL_AI100_STORYLINE_ID\]\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
+    'the annual AI100 snapshot should remain separate from the unified long-term chronology'
+);
+assert.match(
+    indexHtml,
+    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
+    'the storyline selector should expose canonical and annual AI100 as separate views'
 );
 assert.match(
     indexHtml,
@@ -397,6 +441,21 @@ assert.match(
     indexHtml,
     /buildUiAvatarHtml\(vm, detailFigures\)/,
     'figure rendering and figure-count layout should use the same selected figures'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /function getUiDetailFigures\(vm\)[\s\S]*?figures\.filter\(\(figure\) => Boolean\(getFigureAvatarSource\(figure\)\)\)/,
+    'detail pages should not hide contributor information when a verified portrait is unavailable'
+);
+assert.match(
+    indexHtml,
+    /function initials\(name\)[\s\S]*?localizedName\.replace\(\/\\s\*\[（\(\]\[\^\(\)（）\]\*\[\)）\]\\s\*\$\/[\s\S]*?toUpperCase\(\)/,
+    'text avatars should omit parenthetical source qualifiers while preserving the full visible person name'
+);
+assert.match(
+    indexHtml,
+    /detailFigureCount \? `<div class="ui-avatar-strip count-\$\{detailFigureCount\}">\$\{buildUiAvatarHtml\(vm, detailFigures\)\}<\/div>` : ''/,
+    'events without contributor information should not render an empty person-card strip'
 );
 assert.match(
     indexHtml,

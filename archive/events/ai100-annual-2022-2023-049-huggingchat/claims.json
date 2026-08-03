@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "HuggingChat is row 49 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "HuggingChat 是 BenchCouncil AI100（2022-2023）年度表第 49 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table leaves the publication field blank for HuggingChat.",
+      "zh": "年度表中 HuggingChat 的论文标题字段为空。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is blank.",
+      "zh": "“主要人物”字段为空。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

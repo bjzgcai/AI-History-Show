@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Scaling ViT is row 3 of the BenchCouncil AI100 (2022-2023) annual table in the Vision area.",
+      "zh": "Scaling ViT 是 BenchCouncil AI100（2022-2023）年度表第 3 行，所属领域为“视觉”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Scaling ViT with “Scaling vision transformers”.",
+      "zh": "年度表把 Scaling ViT 与论文《Scaling vision transformers》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Xiaohua Zhai, Alexander Kolesnikov,Lucas Beyer”.",
+      "zh": "“主要人物”字段依次列出 翟晓华、亚历山大·科列斯尼科夫、卢卡斯·拜尔；官方英文原文为“Xiaohua Zhai, Alexander Kolesnikov,Lucas Beyer”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

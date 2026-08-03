@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Palm 2 is row 38 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "Palm 2 是 BenchCouncil AI100（2022-2023）年度表第 38 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Palm 2 with “Palm 2 technical report”.",
+      "zh": "年度表把 Palm 2 与论文《Palm 2 technical report》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is blank.",
+      "zh": "“主要人物”字段为空。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Evaluation of chatgpt is row 78 of the BenchCouncil AI100 (2022-2023) annual table in the Evaluation Analysis area.",
+      "zh": "Evaluation of chatgpt 是 BenchCouncil AI100（2022-2023）年度表第 78 行，所属领域为“评测与分析”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Evaluation of chatgpt with “A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity”.",
+      "zh": "年度表把 Evaluation of chatgpt 与论文《A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Yejin Bang, Pascale Fung”.",
+      "zh": "“主要人物”字段依次列出 Yejin Bang（官方页拼写）、Pascale Fung（官方页拼写）；官方英文原文为“Yejin Bang, Pascale Fung”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

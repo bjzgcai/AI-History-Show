@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Scratchpad is row 44 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "Scratchpad 是 BenchCouncil AI100（2022-2023）年度表第 44 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Scratchpad with “Show your work: Scratchpads for intermediate computation with language models”.",
+      "zh": "年度表把 Scratchpad 与论文《Show your work: Scratchpads for intermediate computation with language models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Maxwell Nye, Augustus Odena”.",
+      "zh": "“主要人物”字段依次列出 Maxwell Nye（官方页拼写）、Augustus Odena（官方页拼写）；官方英文原文为“Maxwell Nye, Augustus Odena”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

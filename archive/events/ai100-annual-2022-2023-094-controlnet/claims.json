@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "ControlNet is row 94 of the BenchCouncil AI100 (2022-2023) annual table in the Diffusion Model Application area.",
+      "zh": "ControlNet 是 BenchCouncil AI100（2022-2023）年度表第 94 行，所属领域为“扩散模型应用”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates ControlNet with “Adding conditional control to text-to-image diffusion models”.",
+      "zh": "年度表把 ControlNet 与论文《Adding conditional control to text-to-image diffusion models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Lvmin Zhang, Maneesh Agrawala”.",
+      "zh": "“主要人物”字段依次列出 Lvmin Zhang（官方页拼写）、Maneesh Agrawala（官方页拼写）；官方英文原文为“Lvmin Zhang, Maneesh Agrawala”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

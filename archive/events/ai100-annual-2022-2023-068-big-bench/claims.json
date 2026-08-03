@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "BIG-bench is row 68 of the BenchCouncil AI100 (2022-2023) annual table in the Evaluation Analysis area.",
+      "zh": "BIG-bench 是 BenchCouncil AI100（2022-2023）年度表第 68 行，所属领域为“评测与分析”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates BIG-bench with “Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models”.",
+      "zh": "年度表把 BIG-bench 与论文《Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is blank.",
+      "zh": "“主要人物”字段为空。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Bytetrack is row 104 of the BenchCouncil AI100 (2022-2023) annual table in the Detection Segmentation area.",
+      "zh": "Bytetrack 是 BenchCouncil AI100（2022-2023）年度表第 104 行，所属领域为“检测与分割”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Bytetrack with “Bytetrack: Multi-object tracking by associating every detection box”.",
+      "zh": "年度表把 Bytetrack 与论文《Bytetrack: Multi-object tracking by associating every detection box》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Yifu Zhang, Xinggang Wang”.",
+      "zh": "“主要人物”字段依次列出 Yifu Zhang（官方页拼写）、Xinggang Wang（官方页拼写）；官方英文原文为“Yifu Zhang, Xinggang Wang”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]

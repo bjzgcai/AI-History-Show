@@ -1,0 +1,39 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Quantifying Memorization is row 80 of the BenchCouncil AI100 (2022-2023) annual table in the Evaluation Analysis area.",
+      "zh": "Quantifying Memorization 是 BenchCouncil AI100（2022-2023）年度表第 80 行，所属领域为“评测与分析”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Quantifying Memorization with “Quantifying Memorization Across Neural Language Models”.",
+      "zh": "年度表把 Quantifying Memorization 与论文《Quantifying Memorization Across Neural Language Models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Nicholas Carlini, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian Tramer, Chiyuan Zhang”.",
+      "zh": "“主要人物”字段依次列出 Nicholas Carlini（官方页拼写）、Daphne Ippolito（官方页拼写）、Matthew Jagielski（官方页拼写）、Katherine Lee（官方页拼写）、Florian Tramer（官方页拼写）、Chiyuan Zhang（官方页拼写）；官方英文原文为“Nicholas Carlini, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian Tramer, Chiyuan Zhang”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  }
+]
