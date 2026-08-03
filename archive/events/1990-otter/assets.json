@@ -38,7 +38,7 @@
     "id": "asset-1990-otter-input-clauses",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1990-otter_input-clauses.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "Otter 输入子句",
       "en": "Otter input clauses"
@@ -64,7 +64,7 @@
     "id": "asset-1990-otter-proof-trace",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1990-otter_proof-trace.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "Otter 证明轨迹",
       "en": "Otter proof trace"
@@ -90,7 +90,7 @@
     "id": "asset-1990-otter-given-clause",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1990-otter_given-clause.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "given-clause 证明循环",
       "en": "Given-clause proof loop"
@@ -116,7 +116,7 @@
     "id": "asset-1990-otter-clause-index",
     "type": "svg",
     "path": "resources/images/bench-council-ai100/explainers/1990-otter_clause-index.svg",
-    "role": "architecture-explainer",
+    "role": "algorithm-explainer",
     "caption": {
       "zh": "子句索引地图",
       "en": "Clause indexing map"
