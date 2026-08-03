@@ -6,10 +6,6 @@
     "zh": "生成对抗网络",
     "en": "Generative Adversarial Networks"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>古德费洛等人在 2014 年提出生成对抗网络，把生成建模写成两个神经网络的博弈。生成器把随机噪声转换为候选样本，判别器学习区分真实数据与生成结果；生成器则根据判别器反馈调整参数，目标是让生成分布逐渐接近真实分布。</p><p>GAN 不需要显式写出复杂概率密度，就能生成清晰图像，并迅速推动图像合成、表示学习和条件生成研究。训练可能出现不稳定、模式崩溃和评价困难，两个网络的平衡也很敏感。尽管扩散模型后来在许多生成任务中占据优势，GAN 建立的对抗学习框架仍深刻影响生成式 AI。</p>",
     "en": "<p>Ian Goodfellow and colleagues introduced generative adversarial networks in 2014 by formulating generative modeling as a game between two neural networks. A generator transforms random noise into candidate samples, while a discriminator learns to distinguish real data from generated outputs. Feedback from the discriminator trains the generator to move its distribution closer to the real one.</p><p>GANs could produce sharp images without explicitly specifying a complicated probability density and rapidly advanced image synthesis, representation learning, and conditional generation. Training can be unstable, collapse to limited modes, and be difficult to evaluate, while the balance between the two networks is sensitive. Diffusion models later became stronger in many generation tasks, but the adversarial-learning framework established by GANs remains deeply influential.</p>"

@@ -6,10 +6,6 @@
     "zh": "Stable Diffusion",
     "en": "Stable Diffusion"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>Stable Diffusion 通过在压缩潜空间中进行文本条件去噪生成图像，使潜扩散模型广泛流行。它的开放发布加速了创作工具、研究复用，也引发了关于生成媒体的讨论。</p>",
     "en": "<p>Stable Diffusion popularized latent diffusion by generating images through denoising in a compressed latent space conditioned on text. Its open release accelerated creative tools, research reuse, and debate about generative media.</p>"

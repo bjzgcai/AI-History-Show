@@ -6,10 +6,6 @@
     "zh": "深度置信网络",
     "en": "Deep Belief Network"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>辛顿、奥辛德罗和德在 2006 年提出深度置信网络的快速训练方法，回应当时深层神经网络难以直接优化的问题。训练从底层开始，把每相邻两层视为受限玻尔兹曼机，在无标签数据上逐层学习特征；堆叠完成后，再用生成式或监督目标对整个网络微调。</p><p>这种贪心逐层预训练为深层模型提供较好的参数起点，使数字识别和降维等任务取得有竞争力的结果，也让“深度学习”重新成为可实验的研究方向。后来 ReLU、更大数据、GPU 和改进初始化使纯监督训练更普遍，但 DBN 在深度学习复兴中的历史作用仍然关键。</p>",
     "en": "<p>Geoffrey Hinton, Simon Osindero, and Yee-Whye Teh introduced a fast training method for deep belief networks in 2006, addressing the difficulty of directly optimizing deep neural networks at the time. Training starts at the bottom, treating each adjacent pair of layers as a restricted Boltzmann machine and learning features from unlabeled data layer by layer. The completed stack is then fine-tuned with a generative or supervised objective.</p><p>This greedy pretraining supplied deep models with a useful parameter initialization and produced competitive results in tasks such as digit recognition and dimensionality reduction, making “deep learning” experimentally credible again. ReLU activations, larger datasets, GPUs, and improved initialization later made fully supervised training more common, but DBNs retain a central historical role in the revival of deep architectures.</p>"

@@ -6,10 +6,6 @@
     "zh": "Lisp 机市场崩盘",
     "en": "The Lisp Machine Market Collapse"
   },
-  "summary": {
-    "zh": "科幻预言、技术狂热与 AI 寒冬",
-    "en": "Sci-Fi Prophecy, Hype and AI Winters"
-  },
   "description": {
     "zh": "到 1987 年，专用 Lisp 机与专家系统基础设施市场开始崩塌，因为更便宜的通用工作站追了上来。在情绪周期中，这是商业侧的寒冬：围绕专家系统建立的期待，撞上了维护成本、脆弱知识工程与硬件商品化。",
     "en": "By 1987, the market for specialized Lisp machines and expert-system infrastructure was collapsing as cheaper general-purpose workstations caught up. In the emotional cycle, this is the business-side winter: expectations built around expert systems met maintenance cost, brittle knowledge engineering and hardware commoditization."

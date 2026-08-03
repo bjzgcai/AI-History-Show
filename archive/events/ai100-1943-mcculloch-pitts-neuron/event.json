@@ -6,10 +6,6 @@
     "zh": "麦卡洛克-皮茨神经元",
     "en": "McCulloch-Pitts Neuron"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>沃伦·麦卡洛克和沃尔特·皮茨提出了简化的逻辑神经元，展示阈值单元网络如何计算逻辑函数。它成为神经生理学、逻辑、计算以及后来的人工神经网络之间的概念桥梁。</p>",
     "en": "<p>Warren McCulloch and Walter Pitts proposed a simplified logical neuron, showing how networks of threshold units could compute logical functions. It became a conceptual bridge between neurophysiology, logic, computation, and later artificial neural networks.</p>"

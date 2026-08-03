@@ -6,10 +6,6 @@
     "zh": "SNARC",
     "en": "SNARC"
   },
-  "summary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "description": {
     "zh": "<p>SNARC 是马文·明斯基和迪恩·埃德蒙兹建造的早期随机神经模拟强化计算机。它用模拟突触和奖励驱动行为来建模老鼠学习迷宫的过程。</p>",
     "en": "<p>SNARC was an early stochastic neural analog reinforcement calculator built by Marvin Minsky and Dean Edmonds. It used simulated synapses and reward-driven behavior to model a rat learning a maze.</p>"

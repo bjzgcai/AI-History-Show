@@ -1,6 +1,6 @@
 你是一名 AI 历史学者、科技记者和博物馆策展人。
 
-请针对以下 AI Achievement 进行深入研究，并生成一个适用于 AI History Museum / AI Top 100 Achievements 网站的完整展厅页面数据。
+请针对以下 AI Achievement 进行深入研究，并生成一个适用于 AI History Museum / Top AI Achievements 网站的完整展厅页面数据。
 
 Achievement:
 {{Achievement Name}}

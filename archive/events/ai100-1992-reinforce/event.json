@@ -6,10 +6,6 @@
     "en": "Williams's REINFORCE",
     "zh": "Williams 的 REINFORCE"
   },
-  "summary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "description": {
     "en": "<p>Reinforcement-learning agents needed a direct way to improve stochastic policies from delayed rewards without differentiating through the environment. Williams developed a family of likelihood-ratio updates that became known as REINFORCE.</p><p>The algorithm increases the log-probability of sampled actions in proportion to the return they receive. This produces an unbiased policy-gradient estimate, although its variance can be high without baselines or other variance reduction. Experts generally regard REINFORCE as the foundational Monte Carlo policy-gradient algorithm. Modern policy optimization, language-model reinforcement learning, and differentiable sampling methods still build on its score-function estimator.</p>",
     "zh": "<p>强化学习智能体需要一种无需对环境求导、仅依据延迟奖励就能直接改进随机策略的方法。Williams 提出了一组似然比更新算法，后来统称为 REINFORCE。</p><p>算法按采样动作获得的回报大小，提高该动作对数概率。这样可得到无偏的策略梯度估计，但如果没有基线或其他降方差方法，估计方差可能很高。专家通常把 REINFORCE 视为蒙特卡洛策略梯度的奠基算法。现代策略优化、语言模型强化学习和可微采样方法仍建立在其得分函数估计器之上。</p>"
