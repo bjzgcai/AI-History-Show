@@ -1,7 +1,78 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-07-31 10:23
+// 生成时间: 2026-08-03 03:06
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
+
+const archiveStorylines = [
+  {
+    "id": "bench-council-ai100",
+    "title": {
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
+    },
+    "subtitle": {
+      "zh": "严格对应 BenchCouncil AI100 根页面长期主表的 canonical 成就分支。",
+      "en": "The canonical long-term achievement table published at the BenchCouncil AI100 root page."
+    },
+    "description": {
+      "zh": "本分支严格包含 2026-07-30 获取的 BenchCouncil 长期 AI100 主表中的 119 个唯一成果；年度候选列表单独处理。",
+      "en": "This storyline contains exactly the 119 unique works in the BenchCouncil long-term AI100 table retrieved on 2026-07-30; annual candidate lists are tracked separately."
+    },
+    "type": "achievement-map",
+    "events": 119
+  },
+  {
+    "id": "deep-learning",
+    "title": {
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
+    },
+    "subtitle": {
+      "zh": "从达特茅斯会议、感知机与连接主义退潮，到深度学习、基础模型和科学智能，回顾人工智能七十年的技术演进。",
+      "en": "From the Dartmouth workshop, the perceptron, and connectionism's retreat to deep learning, foundation models, and scientific intelligence, this storyline traces seventy years of AI's technical evolution."
+    },
+    "description": {
+      "zh": "这条故事线以连接主义的兴起、退潮与复兴为主轴：从感知机和 AI 寒冬，到反向传播、CNN、RNN、LSTM、AlexNet、Transformer 与基础模型，再延伸至科学智能和自主系统。",
+      "en": "This storyline follows the rise, retreat, and revival of connectionism: from the perceptron and AI winter through backpropagation, CNNs, RNNs, LSTMs, AlexNet, Transformers, and foundation models, then onward to scientific intelligence and autonomous systems."
+    },
+    "type": "timeline",
+    "events": 30
+  },
+  {
+    "id": "gaming-ai",
+    "title": {
+      "zh": "AI 在棋牌与博弈论的演进",
+      "en": "AI in Board & Tabletop Games"
+    },
+    "subtitle": {
+      "zh": "从搜索、评估函数、自我对弈到学习型规划系统的博弈 AI 演进。",
+      "en": "The evolution of game AI from search, evaluation functions, and self-play to learned planning systems."
+    },
+    "description": {
+      "zh": "AI 棋牌分支强调博弈系统的技术谱系、棋局演化、搜索与学习的结合，以及 AlphaGo、AlphaZero、MuZero 等节点之间的关系。",
+      "en": "The gaming AI storyline emphasizes technical lineage, game-state evolution, the combination of search and learning, and relationships among milestones such as AlphaGo, AlphaZero, and MuZero."
+    },
+    "type": "branch-timeline",
+    "events": 13
+  },
+  {
+    "id": "humanistic-cycle",
+    "title": {
+      "zh": "AI 的人文与情绪周期",
+      "en": "Humanistic & Emotional Cycles of AI"
+    },
+    "subtitle": {
+      "zh": "科幻预言、技术狂热与 AI 寒冬",
+      "en": "Sci-Fi Prophecy, Hype and AI Winters"
+    },
+    "description": {
+      "zh": "",
+      "en": ""
+    },
+    "type": "branch-timeline",
+    "events": 12
+  }
+];
 
 const milestones = [
   {
@@ -13,8 +84,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 10,
@@ -25,8 +96,8 @@ const milestones = [
       "en": "Turing Test"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -464,8 +535,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 20,
@@ -476,8 +547,8 @@ const milestones = [
       "en": "NP-Completeness"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -908,8 +979,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 30,
@@ -920,8 +991,8 @@ const milestones = [
       "en": "VC Theory"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -1371,8 +1442,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 40,
@@ -1383,8 +1454,8 @@ const milestones = [
       "en": "Logic Theorist"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -1829,8 +1900,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 50,
@@ -1841,8 +1912,8 @@ const milestones = [
       "en": "Wang's Algorithm"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -2260,8 +2331,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 60,
@@ -2272,8 +2343,8 @@ const milestones = [
       "en": "Davis-Putnam & DPLL"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -2732,8 +2803,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 70,
@@ -2744,8 +2815,8 @@ const milestones = [
       "en": "Resolution Method"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -3211,8 +3282,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 80,
@@ -3223,8 +3294,8 @@ const milestones = [
       "en": "Otter"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -3743,8 +3814,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 90,
@@ -3755,8 +3826,8 @@ const milestones = [
       "en": "LISP"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -4156,8 +4227,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 100,
@@ -4168,8 +4239,8 @@ const milestones = [
       "en": "PROLOG"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -4649,8 +4720,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 110,
@@ -4661,8 +4732,8 @@ const milestones = [
       "en": "ELIZA"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -5329,8 +5400,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 120,
@@ -5341,8 +5412,8 @@ const milestones = [
       "en": "SHRDLU"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -5804,8 +5875,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 130,
@@ -5816,8 +5887,8 @@ const milestones = [
       "en": "IBM Watson"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -6340,8 +6411,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 140,
@@ -6352,8 +6423,8 @@ const milestones = [
       "en": "Christopher Strachey's Draughts"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -6899,8 +6970,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 150,
@@ -6911,8 +6982,8 @@ const milestones = [
       "en": "Chinook"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -7416,8 +7487,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 160,
@@ -7428,8 +7499,8 @@ const milestones = [
       "en": "Deep Blue"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -8000,8 +8071,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 170,
@@ -8012,8 +8083,8 @@ const milestones = [
       "en": "Pandemonium"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -8517,8 +8588,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 180,
@@ -8529,8 +8600,8 @@ const milestones = [
       "en": "Frame"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -8992,8 +9063,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 190,
@@ -9004,8 +9075,8 @@ const milestones = [
       "en": "Cyc"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -9522,8 +9593,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 200,
@@ -9534,8 +9605,8 @@ const milestones = [
       "en": "DENDRAL"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -10036,8 +10107,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 210,
@@ -10048,8 +10119,8 @@ const milestones = [
       "en": "XCON-R1"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -10559,8 +10630,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 220,
@@ -10571,8 +10642,8 @@ const milestones = [
       "en": "K-means"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -11082,8 +11153,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 230,
@@ -11094,8 +11165,8 @@ const milestones = [
       "en": "DBSCAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -11632,8 +11703,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 240,
@@ -11644,8 +11715,8 @@ const milestones = [
       "en": "Normalized Cuts and Spectral Clustering"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -12217,8 +12288,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 250,
@@ -12229,8 +12300,8 @@ const milestones = [
       "en": "KNN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -12731,8 +12802,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 260,
@@ -12743,8 +12814,8 @@ const milestones = [
       "en": "Ridge"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -13229,8 +13300,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 270,
@@ -13241,8 +13312,8 @@ const milestones = [
       "en": "Support Vector Machines"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -13791,8 +13862,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 280,
@@ -13803,8 +13874,8 @@ const milestones = [
       "en": "Lasso"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -14267,8 +14338,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 290,
@@ -14279,8 +14350,8 @@ const milestones = [
       "en": "SIFT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -14739,8 +14810,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 300,
@@ -14751,8 +14822,8 @@ const milestones = [
       "en": "HOG"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -15253,8 +15324,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 310,
@@ -15265,8 +15336,8 @@ const milestones = [
       "en": "SURF"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -15764,8 +15835,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 320,
@@ -15776,8 +15847,8 @@ const milestones = [
       "en": "Kernel PCA"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -16262,8 +16333,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 330,
@@ -16274,8 +16345,8 @@ const milestones = [
       "en": "NMF"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -16760,8 +16831,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 340,
@@ -16772,8 +16843,8 @@ const milestones = [
       "en": "Isomap"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -17257,8 +17328,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 350,
@@ -17269,8 +17340,8 @@ const milestones = [
       "en": "Locally Linear Embedding"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -17755,8 +17826,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 360,
@@ -17767,8 +17838,8 @@ const milestones = [
       "en": "t-SNE"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -18244,8 +18315,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 370,
@@ -18256,8 +18327,8 @@ const milestones = [
       "en": "McCulloch-Pitts Neuron"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -18742,8 +18813,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 380,
@@ -18754,8 +18825,8 @@ const milestones = [
       "en": "SNARC"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -19265,8 +19336,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 390,
@@ -19277,8 +19348,8 @@ const milestones = [
       "en": "The Perceptron and Connectionism"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -19852,8 +19923,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 400,
@@ -19864,8 +19935,8 @@ const milestones = [
       "en": "Hopfield Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -20328,8 +20399,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 410,
@@ -20340,8 +20411,8 @@ const milestones = [
       "en": "Self-organizing Map"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -20812,8 +20883,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 420,
@@ -20824,8 +20895,8 @@ const milestones = [
       "en": "Deep Belief Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -21312,8 +21383,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 430,
@@ -21324,8 +21395,8 @@ const milestones = [
       "en": "Back-propagation"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -21822,8 +21893,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 440,
@@ -21834,8 +21905,8 @@ const milestones = [
       "en": "ReLU"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -22389,8 +22460,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 450,
@@ -22401,8 +22472,8 @@ const milestones = [
       "en": "Adam Optimizer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -22879,8 +22950,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 460,
@@ -22891,8 +22962,8 @@ const milestones = [
       "en": "Dropout"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -23385,8 +23456,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 470,
@@ -23397,8 +23468,8 @@ const milestones = [
       "en": "Batch Normalization"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -23877,8 +23948,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 480,
@@ -23889,8 +23960,8 @@ const milestones = [
       "en": "Neocognitron"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -24361,8 +24432,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 490,
@@ -24373,8 +24444,8 @@ const milestones = [
       "en": "Convolutional Networks and LeNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -24934,8 +25005,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 500,
@@ -24946,8 +25017,8 @@ const milestones = [
       "en": "AlexNet and the ImageNet Breakthrough"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -25513,8 +25584,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 510,
@@ -25525,8 +25596,8 @@ const milestones = [
       "en": "VGG Networks"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -25999,8 +26070,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 520,
@@ -26011,8 +26082,8 @@ const milestones = [
       "en": "GoogLeNet / Inception"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -26501,8 +26572,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 530,
@@ -26513,8 +26584,8 @@ const milestones = [
       "en": "ResNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -27160,8 +27231,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 540,
@@ -27172,8 +27243,8 @@ const milestones = [
       "en": "DenseNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -27707,8 +27778,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 550,
@@ -27719,8 +27790,8 @@ const milestones = [
       "en": "MobileNets"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -28253,8 +28324,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 560,
@@ -28265,8 +28336,8 @@ const milestones = [
       "en": "Squeeze-and-Excitation Networks"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -28777,8 +28848,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 570,
@@ -28789,8 +28860,8 @@ const milestones = [
       "en": "R-CNN"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -29303,8 +29374,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 580,
@@ -29315,8 +29386,8 @@ const milestones = [
       "en": "Fast R-CNN"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -29814,8 +29885,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 590,
@@ -29826,8 +29897,8 @@ const milestones = [
       "en": "Faster R-CNN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -30410,8 +30481,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 600,
@@ -30422,8 +30493,8 @@ const milestones = [
       "en": "Mask R-CNN"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -30936,8 +31007,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 610,
@@ -30948,8 +31019,8 @@ const milestones = [
       "en": "FPN and RetinaNet"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -31475,8 +31546,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 620,
@@ -31487,8 +31558,8 @@ const milestones = [
       "en": "YOLO"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -31968,8 +32039,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 630,
@@ -31980,8 +32051,8 @@ const milestones = [
       "en": "SSD"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -32492,8 +32563,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 640,
@@ -32504,8 +32575,8 @@ const milestones = [
       "en": "Fully Convolutional Networks"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -33016,8 +33087,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 650,
@@ -33028,8 +33099,8 @@ const milestones = [
       "en": "U-Net"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -33518,8 +33589,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 660,
@@ -33530,8 +33601,8 @@ const milestones = [
       "en": "LSTM and Gated Memory"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -34103,8 +34174,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 670,
@@ -34115,8 +34186,8 @@ const milestones = [
       "en": "Sequence-to-Sequence Learning"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -34656,8 +34727,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 680,
@@ -34668,8 +34739,8 @@ const milestones = [
       "en": "Neural Machine Translation with Attention"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -35307,8 +35378,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 690,
@@ -35319,8 +35390,8 @@ const milestones = [
       "en": "Transformer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -35964,8 +36035,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 700,
@@ -35976,8 +36047,8 @@ const milestones = [
       "en": "BERT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -36519,8 +36590,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 710,
@@ -36531,8 +36602,8 @@ const milestones = [
       "en": "GPT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -37168,8 +37239,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 720,
@@ -37180,8 +37251,8 @@ const milestones = [
       "en": "Vision Transformer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -37735,8 +37806,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 730,
@@ -37747,8 +37818,8 @@ const milestones = [
       "en": "Swin Transformer"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -38287,8 +38358,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 740,
@@ -38299,8 +38370,8 @@ const milestones = [
       "en": "Neural Language Model"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -38771,8 +38842,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 750,
@@ -38783,8 +38854,8 @@ const milestones = [
       "en": "Word2Vec"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -39264,8 +39335,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 760,
@@ -39276,8 +39347,8 @@ const milestones = [
       "en": "GloVe"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -39945,8 +40016,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 770,
@@ -39957,8 +40028,8 @@ const milestones = [
       "en": "Generative Adversarial Networks"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -40478,8 +40549,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 780,
@@ -40490,8 +40561,8 @@ const milestones = [
       "en": "Conditional GAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -41002,8 +41073,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 790,
@@ -41014,8 +41085,8 @@ const milestones = [
       "en": "DCGAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -41520,8 +41591,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 800,
@@ -41532,8 +41603,8 @@ const milestones = [
       "en": "Wasserstein GAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -42108,8 +42179,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 810,
@@ -42120,8 +42191,8 @@ const milestones = [
       "en": "CycleGAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -42646,8 +42717,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 820,
@@ -42658,8 +42729,8 @@ const milestones = [
       "en": "Pix2Pix"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -43170,8 +43241,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 830,
@@ -43182,8 +43253,8 @@ const milestones = [
       "en": "StyleGAN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -43710,8 +43781,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 840,
@@ -43722,8 +43793,8 @@ const milestones = [
       "en": "Variational Autoencoder"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -44234,8 +44305,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 850,
@@ -44246,8 +44317,8 @@ const milestones = [
       "en": "Diffusion Model"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -44786,8 +44857,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 860,
@@ -44798,8 +44869,8 @@ const milestones = [
       "en": "Graph Neural Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -45405,8 +45476,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 870,
@@ -45417,8 +45488,8 @@ const milestones = [
       "en": "GCN"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -45929,8 +46000,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 880,
@@ -45941,8 +46012,8 @@ const milestones = [
       "en": "GAT"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -46463,8 +46534,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 890,
@@ -46475,8 +46546,8 @@ const milestones = [
       "en": "Neural Architecture Search"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -46987,8 +47058,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 900,
@@ -46999,8 +47070,8 @@ const milestones = [
       "en": "Deep Compression"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -47521,8 +47592,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 910,
@@ -47533,8 +47604,8 @@ const milestones = [
       "en": "Knowledge Distillation"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -48053,8 +48124,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 920,
@@ -48065,8 +48136,8 @@ const milestones = [
       "en": "ImageNet"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -48560,8 +48631,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 930,
@@ -48572,8 +48643,8 @@ const milestones = [
       "en": "MS COCO"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -49084,8 +49155,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 940,
@@ -49096,8 +49167,8 @@ const milestones = [
       "en": "Temporal-Difference Update"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -49556,8 +49627,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 950,
@@ -49568,8 +49639,8 @@ const milestones = [
       "en": "Q-Learning"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -50080,8 +50151,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 960,
@@ -50092,8 +50163,8 @@ const milestones = [
       "en": "Deep Q Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -50648,8 +50719,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 970,
@@ -50660,8 +50731,8 @@ const milestones = [
       "en": "DDPG"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -51204,8 +51275,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 980,
@@ -51216,8 +51287,8 @@ const milestones = [
       "en": "AlphaGo"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -51749,8 +51820,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 990,
@@ -51761,8 +51832,8 @@ const milestones = [
       "en": "AlphaFold"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -52440,8 +52511,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1000,
@@ -52452,8 +52523,8 @@ const milestones = [
       "en": "Actor-Critic"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -52964,8 +53035,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1010,
@@ -52976,8 +53047,8 @@ const milestones = [
       "en": "A3C"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -53489,8 +53560,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1020,
@@ -53501,8 +53572,8 @@ const milestones = [
       "en": "SARSA"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -54027,8 +54098,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1030,
@@ -54039,8 +54110,8 @@ const milestones = [
       "en": "Williams's REINFORCE"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -54538,8 +54609,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1040,
@@ -54550,8 +54621,8 @@ const milestones = [
       "en": "Policy Gradient Theorem"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -55063,8 +55134,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1050,
@@ -55075,8 +55146,8 @@ const milestones = [
       "en": "CART"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -55575,8 +55646,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1060,
@@ -55587,8 +55658,8 @@ const milestones = [
       "en": "ID3"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -56120,8 +56191,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1070,
@@ -56132,8 +56203,8 @@ const milestones = [
       "en": "C4.5"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -56630,8 +56701,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1080,
@@ -56642,8 +56713,8 @@ const milestones = [
       "en": "Bagging"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -57141,8 +57212,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1090,
@@ -57153,8 +57224,8 @@ const milestones = [
       "en": "Random Forests"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -57666,8 +57737,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1100,
@@ -57678,8 +57749,8 @@ const milestones = [
       "en": "Boosting"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -58162,8 +58233,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1110,
@@ -58174,8 +58245,8 @@ const milestones = [
       "en": "AdaBoost"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -58686,8 +58757,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1120,
@@ -58698,8 +58769,8 @@ const milestones = [
       "en": "Gradient Boosting"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -59196,8 +59267,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1130,
@@ -59208,8 +59279,8 @@ const milestones = [
       "en": "XGBoost"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -59720,8 +59791,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1140,
@@ -59732,8 +59803,8 @@ const milestones = [
       "en": "LightGBM"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -60245,8 +60316,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1150,
@@ -60257,8 +60328,8 @@ const milestones = [
       "en": "Bayesian Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -60720,8 +60791,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1160,
@@ -60732,8 +60803,8 @@ const milestones = [
       "en": "Latent Dirichlet Allocation"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -61213,8 +61284,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1170,
@@ -61225,8 +61296,8 @@ const milestones = [
       "en": "Conditional Random Fields"
     },
     "subtitle": {
-      "zh": "BenchCouncil AI100 成就",
-      "en": "BenchCouncil AI100 Achievement"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -61737,8 +61808,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1180,
@@ -61749,8 +61820,8 @@ const milestones = [
       "en": "Genetic Algorithms"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -62212,8 +62283,8 @@ const milestones = [
     "storyline": {
       "id": "bench-council-ai100",
       "name": {
-        "zh": "AI 百大成就（BenchCouncil）",
-        "en": "AI Top 100 Achievements (BenchCouncil)"
+        "zh": "AI 顶尖成就（BenchCouncil）",
+        "en": "Top AI Achievements (BenchCouncil)"
       }
     },
     "order": 1190,
@@ -62224,8 +62295,8 @@ const milestones = [
       "en": "Simulated Annealing"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "AI 顶尖成就（BenchCouncil）",
+      "en": "Top AI Achievements (BenchCouncil)"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -62752,7 +62823,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -63144,7 +63215,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -63691,7 +63762,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -63997,7 +64068,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -64009,8 +64080,8 @@ const milestones = [
       "en": "Neocognitron"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -64481,7 +64552,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -64493,8 +64564,8 @@ const milestones = [
       "en": "Hopfield Network"
     },
     "subtitle": {
-      "zh": "AI 百大成就",
-      "en": "AI Top 100 Achievements"
+      "zh": "连接主义的兴衰与复兴：AI七十年",
+      "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "category": {
       "en": "BenchCouncil AI100 Achievements",
@@ -64957,7 +65028,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -65316,7 +65387,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -65610,7 +65681,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -66143,7 +66214,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -66687,7 +66758,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -67188,7 +67259,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -67696,7 +67767,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -68237,7 +68308,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -68724,7 +68795,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -69227,7 +69298,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -69719,7 +69790,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -70290,7 +70361,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -70640,7 +70711,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -71258,7 +71329,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -71811,7 +71882,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -72303,7 +72374,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -72319,7 +72390,7 @@ const milestones = [
       "en": "AlphaGo showed that deep neural networks could go beyond perception and contribute to complex decision-making through search and reinforcement learning."
     },
     "category": {
-      "zh": "连接主义的兴衰与复兴：AI 七十年",
+      "zh": "连接主义的兴衰与复兴：AI七十年",
       "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
     },
     "location": {
@@ -72750,7 +72821,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -73283,7 +73354,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -73784,7 +73855,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -74295,7 +74366,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -74628,7 +74699,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -75278,7 +75349,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -75682,7 +75753,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -76034,7 +76105,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -76430,7 +76501,7 @@ const milestones = [
     "storyline": {
       "id": "deep-learning",
       "name": {
-        "zh": "连接主义的兴衰与复兴：AI 七十年",
+        "zh": "连接主义的兴衰与复兴：AI七十年",
         "en": "The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI"
       }
     },
@@ -90351,5 +90422,5 @@ const milestones = [
 
 // 导出（兼容 Node.js require）
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { milestones };
+  module.exports = { archiveStorylines, milestones };
 }

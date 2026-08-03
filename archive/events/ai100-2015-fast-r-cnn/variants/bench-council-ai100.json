@@ -6,10 +6,6 @@
     "en": "Fast R-CNN",
     "zh": "Fast R-CNN"
   },
-  "displaySummary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "displayDescription": {
     "en": "<p>R-CNN achieved strong detection accuracy but ran a convolutional network independently for thousands of proposed regions. Fast R-CNN reorganized the computation so the expensive convolutional backbone was shared across the whole image.</p><p>The image is processed once into a feature map, and RoI pooling extracts fixed-size features for each proposal. A single network jointly predicts class probabilities and refined bounding boxes. Experts generally view Fast R-CNN as the key efficiency bridge between R-CNN and fully integrated proposal networks. Its shared features and joint loss became standard design patterns in two-stage detectors.</p>",
     "zh": "<p>R-CNN 的检测精度很高，但需要对数千个候选区域分别运行卷积网络。Fast R-CNN 重新组织计算，让昂贵的卷积骨干能够在整张图像上共享。</p><p>图像只需处理一次得到特征图，RoI 池化再为每个候选区域提取固定尺寸特征。单个网络联合预测类别概率和修正后的边界框。专家通常把 Fast R-CNN 视为连接 R-CNN 与完整区域候选网络的关键效率桥梁。共享特征和联合损失后来成为两阶段检测器的标准设计。</p>"

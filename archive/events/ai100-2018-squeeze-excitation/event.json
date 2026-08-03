@@ -6,10 +6,6 @@
     "en": "Squeeze-and-Excitation Networks",
     "zh": "挤压与激励网络"
   },
-  "summary": {
-    "en": "BenchCouncil AI100 Achievement",
-    "zh": "BenchCouncil AI100 成就"
-  },
   "description": {
     "en": "<p>Convolutional networks usually treated channels as a fixed stack even though different channels carry different semantic signals. Squeeze-and-Excitation networks asked whether a model could learn to recalibrate those channels for each input.</p><p>A squeeze operation summarizes each channel globally, and a small excitation network predicts channel-wise gates. Multiplying those gates back into the feature map lets the network amplify informative channels and suppress weaker ones. Experts generally regard channel attention as a simple but durable architectural idea, and SE blocks became a common addition to CNN backbones. The work also helped establish attention as a mechanism that could operate beyond sequence models.</p>",
     "zh": "<p>传统卷积网络通常把通道视为固定堆叠，但不同通道承载的语义信号并不相同。挤压与激励网络提出，模型是否可以针对每个输入动态重标定各通道的重要性。</p><p>挤压操作对每个通道进行全局汇总，小型激励网络再预测逐通道门控权重。把这些权重乘回特征图后，网络可以增强有用通道并抑制较弱通道。专家通常认为通道注意力是一种简单而持久的架构思想，SE 模块后来成为 CNN 骨干网络中的常见组件。该成果也推动了“注意力不仅适用于序列模型”的认识。</p>"

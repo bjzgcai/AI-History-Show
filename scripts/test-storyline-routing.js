@@ -3,7 +3,23 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
-const { milestones: generatedMilestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+const { archiveStorylines, milestones: generatedMilestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+
+assert.equal(archiveStorylines.length, 4, 'generated runtime should expose all Archive storyline definitions');
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
+    { zh: 'AI 顶尖成就（BenchCouncil）', en: 'Top AI Achievements (BenchCouncil)' },
+    'the generated BenchCouncil storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'deep-learning').title,
+    {
+        zh: '连接主义的兴衰与复兴：AI七十年',
+        en: 'The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI'
+    },
+    'the generated connectionism storyline title should come from Archive'
+);
+console.log('PASS generated storyline definitions');
 
 assert.equal(
     routing.normalizeStorylineId('deep-learning'),
@@ -104,6 +120,21 @@ const chronologySource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'c
 const chronologyCss = fs.readFileSync(path.join(__dirname, '..', 'shared', 'chronology-overview.css'), 'utf8');
 const i18nSource = fs.readFileSync(path.join(__dirname, '..', 'shared', 'i18n.js'), 'utf8');
 const pqMiniProgramQrPath = path.join(__dirname, '..', 'resources', 'pq.png');
+assert.match(
+    indexHtml,
+    /const archiveStorylineDefinitions = typeof archiveStorylines[\s\S]*?const archiveStorylineById = new Map/,
+    'the storyline selector should consume generated Archive storyline definitions'
+);
+assert.match(
+    indexHtml,
+    /function getStorylineLabel\(option\)[\s\S]*?definition && definition\.title/,
+    'storyline selector labels should resolve from Archive metadata'
+);
+assert.doesNotMatch(
+    indexHtml,
+    /en: 'Top AI Achievements \(BenchCouncil\)'/,
+    'the BenchCouncil storyline title should not be duplicated in index.html'
+);
 assert.match(
     indexHtml,
     /class="single-stage is-ui-browser" id="singleStage"/,

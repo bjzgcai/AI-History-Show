@@ -6,10 +6,6 @@
     "zh": "ResNet",
     "en": "ResNet"
   },
-  "displaySummary": {
-    "zh": "AI 百大成就",
-    "en": "AI Top 100 Achievements"
-  },
   "displayDescription": {
     "zh": "<p>何恺明、张祥雨、任少卿和孙剑在 2015 年提出残差学习，解决网络加深后训练误差反而上升的“退化问题”。残差块不直接学习完整映射 H(x)，而是学习修正量 F(x)，再通过恒等快捷连接输出 F(x)+x；信息和梯度因此可以沿更直接路径穿过网络。</p><p>这一极简结构使 50、101、152 层等非常深的网络能够稳定训练，并在 ImageNet 和检测任务上取得突破。ResNet 随后成为视觉系统的常用骨干，也影响语音、语言和生成模型中的跳跃连接设计。它的重要性在于改变了深层架构的基本问题：每层不必重建全部表示，只需学习必要变化。</p>",
     "en": "<p>Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun introduced residual learning in 2015 to address the “degradation problem,” where adding layers could increase training error. A residual block does not learn the complete mapping H(x) directly; it learns a correction F(x) and adds an identity shortcut to output F(x)+x. Information and gradients can therefore travel through a more direct path.</p><p>This minimal structure made very deep networks such as 50-, 101-, and 152-layer models practical to train and produced major ImageNet and detection results. ResNet became a standard visual backbone and influenced skip connections in speech, language, and generative models. Its central lesson changed the architecture question: a layer need not rebuild the whole representation when it can learn only the necessary change.</p>"

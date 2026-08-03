@@ -127,6 +127,11 @@ function hasText(value) {
     return typeof value === 'string' && value.trim().length > 0;
 }
 
+function localizedValuesEqual(left, right) {
+    if (!isObject(left) || !isObject(right)) return false;
+    return LOCALIZED_REQUIRED_KEYS.every((key) => String(left[key] || '').trim() === String(right[key] || '').trim());
+}
+
 function checkLocalized(filePath, value, label, options = {}) {
     const required = options.required !== false;
     if (!isObject(value)) {
@@ -467,6 +472,9 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
     if (variant.storylineId !== variantId) {
         addWarning(filePath, `variant storylineId (${variant.storylineId}) differs from file name (${variantId}).`);
     }
+    if (variant.storylineId === 'bench-council-ai100' && variant.displaySummary) {
+        addError(filePath, 'BenchCouncil AI100 displaySummary must be omitted; the storyline title is inherited.');
+    }
 
     for (const sourceId of variant.sourceIds || []) {
         if (!sourceIds.has(sourceId)) addError(filePath, `variant references missing sourceId: ${sourceId}`);
@@ -510,7 +518,13 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
         });
     }
 
-    return { id: variantId, file: rel(filePath), eventId, storylineId: variant.storylineId };
+    return {
+        id: variantId,
+        file: rel(filePath),
+        eventId,
+        storylineId: variant.storylineId,
+        displaySummary: variant.displaySummary
+    };
 }
 
 function validateEventDir(eventDir) {
@@ -564,6 +578,10 @@ function validateEventDir(eventDir) {
             );
             if (variant) variants.push(variant);
         }
+    }
+
+    if (event.summary && variants.some((variant) => localizedValuesEqual(event.summary, variant.displaySummary))) {
+        addError(eventFile, 'event.summary must describe the event, not duplicate a variant displaySummary.');
     }
 
     state.events.push({ id: eventId, file: rel(eventFile), variants });
