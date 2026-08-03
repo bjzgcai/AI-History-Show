@@ -72,6 +72,15 @@
         "en": "Migrated from legacy media metadata; verify rights before publication."
       }
     },
+    "selectionReview": {
+      "status": "excluded-from-variants",
+      "reasonCode": "historical-reference",
+      "reason": {
+        "zh": "Andrej Karpathy 不是 BERT 原始论文作者，该旧人物资料卡与事件主要人物无直接关系，不应加入页面。",
+        "en": "Andrej Karpathy is not an author of the original BERT paper. This legacy profile card is not directly related to the event's principal figures and should not be selected."
+      },
+      "reviewedAt": "2026-08-02"
+    },
     "usage": [
       "variant:bench-council-ai100"
     ],

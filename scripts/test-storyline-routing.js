@@ -3,7 +3,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const routing = require(path.join(__dirname, '..', 'shared', 'storyline-routing.js'));
-const { archiveStorylines, milestones: generatedMilestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+const { archiveStorylines, milestones: generatedMilestones } = require(
+    path.join(__dirname, '..', 'milestones-data.js')
+);
 
 assert.equal(archiveStorylines.length, 4, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
@@ -518,7 +520,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /function getUiDetailImages\(vm\)[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
+    /function getUiDetailImages\(vm\)[\s\S]*?if \(shouldHideUiCommentaryMediaVisual\(vm && vm\.raw\)\) return candidates[\s\S]*?const sideImageIndex = sideImageUrl \? candidates\.indexOf\(sideImageUrl\) : -1[\s\S]*?if \(sideImageIndex <= 0\) return candidates[\s\S]*?GamingMediaSelection\.excludeSelectedMedia\(candidates, sideImageUrl\)/,
     'detail image lists should preserve the first candidate while excluding a later side-panel image'
 );
 assert.doesNotMatch(
@@ -554,8 +556,8 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /const mediaHtml = buildUiMediaHtml\(vm, \{ forceStaticImage: isHumanisticCycle \}\)[\s\S]*?uiText\('Sources', '资料来源'\)[\s\S]*?uiText\('Commentary & Media', '评论与媒体'\)/,
-    'humanistic explainers should render as static commentary media directly after sources'
+    /function shouldHideUiCommentaryMediaVisual\(raw\)[\s\S]*?function buildUiMediaHtml\(vm, \{ forceStaticImage = false, hideVisual = false \} = \{\}\)[\s\S]*?if \(vm\.videoEmbedUrl && !forceStaticImage\)[\s\S]*?const posterUrl = hideVisual \? '' : getUiMediaVisualImage\(vm\)[\s\S]*?if \(hideVisual\) return ''[\s\S]*?const hideCommentaryMediaVisual = shouldHideUiCommentaryMediaVisual\(raw\)[\s\S]*?hideVisual: hideCommentaryMediaVisual/,
+    'event-level visual suppression should retain video rendering while hiding duplicate static media'
 );
 assert.match(
     indexHtml,

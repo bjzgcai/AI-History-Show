@@ -12,6 +12,7 @@ const REPORT_PATH = path.join(ROOT, '.tmp', 'archive-reports', 'archive-validati
 const SOURCE_TYPE_TAXONOMY = require('../archive/taxonomies/source-types.json');
 const SOURCE_PURPOSE_TAXONOMY = require('../archive/taxonomies/source-purposes.json');
 const { auditArchive: auditEventFigureRules } = require('./event-figure-rules');
+const { validateAssetSelectionReview } = require('./asset-selection-review');
 
 const REQUIRED_EVENT_FILES = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 const LOCALIZED_REQUIRED_KEYS = ['zh', 'en'];
@@ -307,6 +308,9 @@ function validateAssets(eventDir, assets, sourceIds) {
 
     for (const asset of assets) {
         if (!isObject(asset)) continue;
+        for (const issue of validateAssetSelectionReview(asset.selectionReview)) {
+            addError(filePath, `asset ${asset.id || '<missing>'} selectionReview ${issue}.`);
+        }
         const isDisplayImage = isDisplayImageAsset(asset);
         if (!hasText(asset.type)) addError(filePath, `asset ${asset.id || '<missing>'} is missing type.`);
         if (!hasText(asset.path)) {
@@ -495,6 +499,22 @@ function validateVariant(eventId, filePath, sourceIds, assetsById, claimIds, qui
             addError(filePath, 'variant overviewImageAssetId must also appear in assetIds.');
         } else if (!isDisplayImageAsset(overviewAsset)) {
             addError(filePath, 'variant overviewImageAssetId must reference an image, SVG, or GIF asset.');
+        }
+    }
+    if (variant.commentaryMedia !== undefined) {
+        if (!isObject(variant.commentaryMedia)) {
+            addError(filePath, 'variant commentaryMedia must be an object.');
+        } else {
+            const unsupportedKeys = Object.keys(variant.commentaryMedia).filter((key) => key !== 'hideVisual');
+            if (unsupportedKeys.length > 0) {
+                addError(filePath, `variant commentaryMedia has unsupported fields: ${unsupportedKeys.join(', ')}.`);
+            }
+            if (
+                variant.commentaryMedia.hideVisual !== undefined &&
+                typeof variant.commentaryMedia.hideVisual !== 'boolean'
+            ) {
+                addError(filePath, 'variant commentaryMedia.hideVisual must be a boolean.');
+            }
         }
     }
     for (const claimId of variant.claimIds || []) {

@@ -217,6 +217,15 @@ for (const [milestoneId, expectedImage, expectedFirstImage = expectedImage] of [
 }
 console.log('PASS configured overview images and detail image order compile from Archive variants');
 
+const sarsaMilestone = milestones.find((item) => item.id === 'milestone-ai100-1994-sarsa');
+assert.equal(sarsaMilestone.commentaryMedia.hideVisual, true, 'SARSA should hide its duplicate commentary visual');
+assert.equal(
+    sarsaMilestone.resources.images[0],
+    'resources/images/bench-council-ai100/explainers/1994-1994-sarsa_process.svg',
+    'SARSA should keep its explainer in the detail image list'
+);
+console.log('PASS SARSA hides duplicate commentary media without removing the detail explainer');
+
 const rnnMilestone = milestones.find((item) => item.id === 'milestone-1986-rnn');
 const rnnPortrait = 'resources/images/1986-rnn/people/1986-rnn_people_01.png';
 assert.equal(rnnMilestone.resources.overviewImage, undefined, 'RNN should use the default first image');
@@ -229,7 +238,7 @@ assert.equal(
 console.log('PASS RNN overview uses the first detail image by default');
 
 const highwayMilestone = milestones.find((item) => item.id === 'milestone-2014-highway-network');
-const highwayFirstImage = 'resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png';
+const highwayFirstImage = 'resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg';
 assert.equal(
     highwayMilestone.resources.overviewImage,
     undefined,
@@ -238,14 +247,14 @@ assert.equal(
 assert.equal(
     highwayMilestone.resources.images[0],
     highwayFirstImage,
-    'Highway Networks should preserve its first image'
+    'Highway Networks should lead with the Jürgen Schmidhuber portrait'
 );
 assert.equal(
     overview.getPrimaryImage(highwayMilestone),
     highwayFirstImage,
-    'Highway Networks overview should use its first image'
+    'Highway Networks overview should use the Jürgen Schmidhuber portrait'
 );
-console.log('PASS Highway Networks overview uses the first detail image by default');
+console.log('PASS Highway Networks overview uses the Jürgen Schmidhuber portrait by default');
 
 const postTraining = milestones.find((item) => item.id === 'milestone-2022-post-training-intelligence');
 const postTrainingFirstImage =

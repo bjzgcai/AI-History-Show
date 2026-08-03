@@ -1,5 +1,5 @@
 // AI 历史里程碑数据 archive-native（由脚本自动生成，请勿手动编辑）
-// 生成时间: 2026-08-03 03:06
+// 生成时间: 2026-08-03 03:23
 // 数据来源: archive/storylines/* + archive/events/*，不读取 legacy milestones 作为 scaffold
 // Archive native: storylines 4, milestones 174, errors 0
 
@@ -34221,7 +34221,7 @@ const milestones = [
           "en": "Neural attention paper co-author",
           "zh": "神经注意力论文共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/2014-attention/people/kyunghyun-cho-nyu-courant.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -34815,6 +34815,7 @@ const milestones = [
           "en": "Attention-related achievement contributor",
           "zh": "注意力相关成就贡献者"
         },
+        "avatar": "resources/images/external/ai100-2014-glove/christopher-manning-commons.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -51364,7 +51365,7 @@ const milestones = [
           "en": "DeepMind research scientist and one of the first authors of the MuZero paper",
           "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -54087,6 +54088,9 @@ const milestones = [
     "quoteAttribution": {
       "en": "<em>On-line Q-Learning Using Connectionist Systems</em>",
       "zh": "《使用连接主义系统的在线 Q 学习》"
+    },
+    "commentaryMedia": {
+      "hideVisual": true
     }
   },
   {
@@ -55209,7 +55213,7 @@ const milestones = [
           "en": "CART monograph co-author",
           "zh": "CART 专著共同作者"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/ai100-2001-gradient-boosting/jerome-friedman-portrait.png",
         "avatarStyle": "",
         "figureType": "person"
       },
@@ -70441,8 +70445,8 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png",
-        "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg"
+        "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg",
+        "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png"
       ],
       "videos": [
         {
@@ -70457,39 +70461,11 @@ const milestones = [
         }
       ],
       "assetIds": [
-        "asset-2014-highway-network-architecture-01",
-        "asset-2014-highway-network-people-01"
+        "asset-2014-highway-network-people-01",
+        "asset-2014-highway-network-architecture-01"
       ]
     },
     "imageMeta": {
-      "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
-        "caption": {
-          "zh": "高速网络结构图 1",
-          "en": "Highway Networks structure diagram 1"
-        },
-        "subcaption": {
-          "zh": "展示高速网络的关键组件、连接或信息流。",
-          "en": "Shows the key components, connections, or information flow of Highway Networks."
-        },
-        "license": {
-          "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
-          "en": "Migrated from legacy media metadata; verify rights before publication."
-        },
-        "usage": {
-          "zh": "用于解释高速网络中的门控捷径与信息流。",
-          "en": "Used to explain gated shortcuts and information flow in Highway Networks."
-        },
-        "sourceId": "source-legacy-event-record",
-        "rights": {
-          "status": "local-redraw",
-          "license": {
-            "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
-            "en": "Migrated from legacy media metadata; verify rights before publication."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "image"
-      },
       "resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg": {
         "caption": {
           "zh": "于尔根·施密德胡伯肖像",
@@ -70521,6 +70497,34 @@ const milestones = [
           }
         },
         "role": "portrait",
+        "type": "image"
+      },
+      "resources/images/2014-highway-network/architecture/2014-highway-network_architecture_01.png": {
+        "caption": {
+          "zh": "高速网络结构图 1",
+          "en": "Highway Networks structure diagram 1"
+        },
+        "subcaption": {
+          "zh": "展示高速网络的关键组件、连接或信息流。",
+          "en": "Shows the key components, connections, or information flow of Highway Networks."
+        },
+        "license": {
+          "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
+          "en": "Migrated from legacy media metadata; verify rights before publication."
+        },
+        "usage": {
+          "zh": "用于解释高速网络中的门控捷径与信息流。",
+          "en": "Used to explain gated shortcuts and information flow in Highway Networks."
+        },
+        "sourceId": "source-legacy-event-record",
+        "rights": {
+          "status": "local-redraw",
+          "license": {
+            "zh": "由旧版媒体资料迁移的本地重绘；发布前仍需复核来源记录。",
+            "en": "Migrated from legacy media metadata; verify rights before publication."
+          }
+        },
+        "role": "architecture-explainer",
         "type": "image"
       }
     },
@@ -72468,7 +72472,7 @@ const milestones = [
           "zh": "DeepMind 研究科学家、MuZero 论文共同第一作者之一",
           "en": "DeepMind research scientist and one of the first authors of the MuZero paper"
         },
-        "avatar": "",
+        "avatar": "resources/images/external/2017-alphazero/julian-schrittwieser-portrait.jpg",
         "avatarStyle": "",
         "figureType": "person",
         "organizationIds": []
@@ -79112,18 +79116,47 @@ const milestones = [
     ],
     "resources": {
       "images": [
+        "resources/images/figures/authoritative/michael-buro.jpg",
         "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif",
-        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg",
-        "resources/images/figures/authoritative/michael-buro.jpg"
+        "resources/images/bench-council-ai100/explainers/1997-logistello_pattern-eval.svg"
       ],
       "videos": [],
       "assetIds": [
+        "asset-michael-buro-university-portrait",
         "asset-1997-logistello-game-1-positions",
-        "asset-1997-logistello-pattern-eval",
-        "asset-michael-buro-university-portrait"
+        "asset-1997-logistello-pattern-eval"
       ]
     },
     "imageMeta": {
+      "resources/images/figures/authoritative/michael-buro.jpg": {
+        "caption": {
+          "zh": "迈克尔·布罗肖像",
+          "en": "Michael Buro portrait"
+        },
+        "subcaption": {
+          "zh": "Logistello 创建者。",
+          "en": "Creator of Logistello."
+        },
+        "sourceName": {
+          "zh": "阿尔伯塔大学",
+          "en": "University of Alberta"
+        },
+        "sourceUrl": "https://webdocs.cs.ualberta.ca/~mburo/jpg/mburo.jpg",
+        "license": {
+          "zh": "图片来自大学托管的本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+          "en": "Image from the university-hosted personal homepage; redistribution rights are not stated and must be reviewed before publication."
+        },
+        "sourceId": "source-michael-buro-university-profile",
+        "rights": {
+          "status": "external-reference",
+          "license": {
+            "zh": "图片来自大学托管的本人主页；页面未声明再分发许可，对外发布前需复核授权。",
+            "en": "Image from the university-hosted personal homepage; redistribution rights are not stated and must be reviewed before publication."
+          }
+        },
+        "role": "portrait",
+        "type": "image"
+      },
       "resources/images/external/1997-logistello/logistello-game-1-first-25-positions.gif": {
         "caption": {
           "zh": "Logistello 对村上健第 1 局逐手局面",
@@ -79180,35 +79213,6 @@ const milestones = [
         },
         "role": "architecture-explainer",
         "type": "svg"
-      },
-      "resources/images/figures/authoritative/michael-buro.jpg": {
-        "caption": {
-          "zh": "迈克尔·布罗肖像",
-          "en": "Michael Buro portrait"
-        },
-        "subcaption": {
-          "zh": "Logistello 创建者。",
-          "en": "Creator of Logistello."
-        },
-        "sourceName": {
-          "zh": "阿尔伯塔大学",
-          "en": "University of Alberta"
-        },
-        "sourceUrl": "https://webdocs.cs.ualberta.ca/~mburo/jpg/mburo.jpg",
-        "license": {
-          "zh": "图片来自大学托管的本人主页；页面未声明再分发许可，对外发布前需复核授权。",
-          "en": "Image from the university-hosted personal homepage; redistribution rights are not stated and must be reviewed before publication."
-        },
-        "sourceId": "source-michael-buro-university-profile",
-        "rights": {
-          "status": "external-reference",
-          "license": {
-            "zh": "图片来自大学托管的本人主页；页面未声明再分发许可，对外发布前需复核授权。",
-            "en": "Image from the university-hosted personal homepage; redistribution rights are not stated and must be reviewed before publication."
-          }
-        },
-        "role": "portrait",
-        "type": "image"
       }
     },
     "achievement": {
@@ -83870,40 +83874,16 @@ const milestones = [
     ],
     "resources": {
       "images": [
-        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg",
-        "resources/images/figures/authoritative/david-silver.jpg"
+        "resources/images/figures/authoritative/david-silver.jpg",
+        "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg"
       ],
       "videos": [],
       "assetIds": [
-        "asset-2019-muzero-learned-model",
-        "asset-david-silver-commons-portrait"
+        "asset-david-silver-commons-portrait",
+        "asset-2019-muzero-learned-model"
       ]
     },
     "imageMeta": {
-      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
-        "caption": {
-          "zh": "MuZero 学习模型",
-          "en": "MuZero learned model"
-        },
-        "subcaption": {
-          "zh": "潜在模型规划的原创解释图。",
-          "en": "Original explainer for latent-model planning."
-        },
-        "license": {
-          "zh": "本地原创 SVG 重绘；不复制来源图形。",
-          "en": "Original local SVG redraw; source figures are not copied."
-        },
-        "sourceId": "source-nature-paper",
-        "rights": {
-          "status": "documented-in-legacy",
-          "license": {
-            "zh": "本地原创 SVG 重绘；不复制来源图形。",
-            "en": "Original local SVG redraw; source figures are not copied."
-          }
-        },
-        "role": "architecture-explainer",
-        "type": "svg"
-      },
       "resources/images/figures/authoritative/david-silver.jpg": {
         "caption": {
           "zh": "大卫·席尔瓦肖像",
@@ -83932,6 +83912,30 @@ const milestones = [
         },
         "role": "portrait",
         "type": "image"
+      },
+      "resources/images/bench-council-ai100/explainers/2019-muzero_learned-model.svg": {
+        "caption": {
+          "zh": "MuZero 学习模型",
+          "en": "MuZero learned model"
+        },
+        "subcaption": {
+          "zh": "潜在模型规划的原创解释图。",
+          "en": "Original explainer for latent-model planning."
+        },
+        "license": {
+          "zh": "本地原创 SVG 重绘；不复制来源图形。",
+          "en": "Original local SVG redraw; source figures are not copied."
+        },
+        "sourceId": "source-nature-paper",
+        "rights": {
+          "status": "documented-in-legacy",
+          "license": {
+            "zh": "本地原创 SVG 重绘；不复制来源图形。",
+            "en": "Original local SVG redraw; source figures are not copied."
+          }
+        },
+        "role": "architecture-explainer",
+        "type": "svg"
       }
     },
     "achievement": {

@@ -4,6 +4,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const { isAssetSelectionExcluded } = require('./event-figure-rules');
+
 const ROOT = path.join(__dirname, '..');
 const EVENTS_DIR = path.join(ROOT, 'archive', 'events');
 const MACHINE_REPORT_DIR = path.join(ROOT, '.tmp', 'archive-reports');
@@ -130,7 +132,12 @@ function auditEvent(eventId) {
     const portraitAssets = assets.filter((asset) => isPortraitAsset(asset, figures));
     const selectedAssetIds = new Set(variants.flatMap(({ data }) => data.assetIds || []));
     const selectedPortraits = portraitAssets.filter((asset) => selectedAssetIds.has(asset.id));
-    const unselectedPortraits = portraitAssets.filter((asset) => !selectedAssetIds.has(asset.id));
+    const excludedPortraits = portraitAssets.filter(
+        (asset) => !selectedAssetIds.has(asset.id) && isAssetSelectionExcluded(asset)
+    );
+    const unselectedPortraits = portraitAssets.filter(
+        (asset) => !selectedAssetIds.has(asset.id) && !isAssetSelectionExcluded(asset)
+    );
     figures = figures.map((figure) => ({
         ...figure,
         matchingSelectedPortraits: selectedPortraits
@@ -180,6 +187,12 @@ function auditEvent(eventId) {
         portraitAssets: portraitAssets.map((asset) => ({ id: asset.id, path: asset.path, role: asset.role || '' })),
         selectedPortraits: selectedPortraits.map((asset) => ({ id: asset.id, path: asset.path })),
         unselectedPortraits: unselectedPortraits.map((asset) => ({ id: asset.id, path: asset.path })),
+        excludedPortraits: excludedPortraits.map((asset) => ({
+            id: asset.id,
+            path: asset.path,
+            reasonCode: asset.selectionReview.reasonCode || '',
+            reason: asset.selectionReview.reason || {}
+        })),
         variantOnlyNames,
         issues
     };
@@ -285,6 +298,9 @@ function renderReport(items, avatarConflicts) {
             item.figures.filter((figure) => !figure.avatarExists && figure.reusableCrossEventAvatars.length > 0).length,
         0
     );
+    const excludedPortraits = items.flatMap((item) =>
+        item.excludedPortraits.map((asset) => ({ eventId: item.eventId, ...asset }))
+    );
     const lines = [
         '# Event Figure and Portrait Audit',
         '',
@@ -299,6 +315,7 @@ function renderReport(items, avatarConflicts) {
         `- Events with canonical/variant figure drift: ${variantDrift.length}`,
         `- Events without a person-type figure: ${withoutPerson.length}`,
         `- Missing figures with reusable cross-event avatars: ${reusableCrossEventAvatars}`,
+        `- Portrait assets intentionally excluded from variants: ${excludedPortraits.length}`,
         `- Avatar files assigned to different people: ${avatarConflicts.length}`,
         '',
         '## Worklist',
@@ -315,6 +332,16 @@ function renderReport(items, avatarConflicts) {
         lines.push(
             `| ${item.eventId} / ${escapeTable(item.title.en)} | ${item.year || ''} | ${escapeTable(figureNames || 'none')} | ${item.selectedPortraits.length} | ${escapeTable(item.issues.join('; ') || 'ready for manual fact review')} |`
         );
+    }
+
+    if (excludedPortraits.length > 0) {
+        lines.push('', '## Intentionally Excluded Portrait Assets', '');
+        lines.push('| Event | Asset | Reason |', '| --- | --- | --- |');
+        for (const asset of excludedPortraits) {
+            lines.push(
+                `| ${asset.eventId} | ${escapeTable(asset.id)} | ${escapeTable(localized(asset.reason, 'en') || asset.reasonCode)} |`
+            );
+        }
     }
 
     if (avatarConflicts.length > 0) {
@@ -379,6 +406,7 @@ const report = {
                     .length,
             0
         ),
+        intentionallyExcludedPortraitAssets: items.reduce((count, item) => count + item.excludedPortraits.length, 0),
         avatarConflicts: avatarConflicts.length
     },
     avatarConflicts,
