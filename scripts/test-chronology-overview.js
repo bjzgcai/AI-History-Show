@@ -1,4 +1,5 @@
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
 const path = require('node:path');
 
 const overview = require(path.join(__dirname, '..', 'shared', 'chronology-overview.js'));
@@ -9,6 +10,13 @@ const localize = (value) => {
     if (typeof value !== 'object' || Array.isArray(value)) return String(value);
     return String(value.zh ?? value.en ?? '');
 };
+
+const readJsonFiles = (directory) =>
+    fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+        const entryPath = path.join(directory, entry.name);
+        if (entry.isDirectory()) return readJsonFiles(entryPath);
+        return entry.name.endsWith('.json') ? [fs.readFileSync(entryPath, 'utf8')] : [];
+    });
 
 assert.equal(milestones.length, 214, 'the chronology overview should consume all generated Archive milestones');
 
@@ -256,12 +264,68 @@ const rnnMilestone = milestones.find((item) => item.id === 'milestone-1986-rnn')
 const rnnPortrait = 'resources/images/1986-rnn/people/1986-rnn_people_01.png';
 assert.equal(rnnMilestone.resources.overviewImage, undefined, 'RNN should use the default first image');
 assert.equal(rnnMilestone.resources.images[0], rnnPortrait, 'RNN should list the Michael I. Jordan portrait first');
+assert.deepEqual(
+    rnnMilestone.figures[0].name,
+    { en: 'Michael I. Jordan', zh: '迈克尔·I·乔丹' },
+    'RNN should use Michael I. Jordan consistently in both display languages'
+);
 assert.equal(
     overview.getPrimaryImage(rnnMilestone),
     rnnPortrait,
     'RNN overview should use the Michael I. Jordan portrait'
 );
 console.log('PASS RNN overview uses the first detail image by default');
+
+const ldaMilestone = milestones.find((item) => item.id === 'milestone-2003-lda');
+const michaelJordan = ldaMilestone.figures.find((figure) => figure.name.en === 'Michael I. Jordan');
+assert.ok(michaelJordan, 'LDA should identify Michael I. Jordan with his middle initial');
+assert.equal(michaelJordan.name.zh, '迈克尔·I·乔丹', 'LDA should localize Michael I. Jordan consistently');
+
+const michaelJordanArchiveFiles = [
+    'archive/events/1986-rnn/event.json',
+    'archive/events/1986-rnn/claims.json',
+    'archive/events/1986-rnn/sources.json',
+    'archive/events/1986-rnn/assets.json',
+    'archive/events/1986-rnn/variants/deep-learning.json',
+    'archive/events/2003-lda/event.json',
+    'archive/events/2003-lda/variants/bench-council-ai100.json'
+];
+for (const relativeFile of michaelJordanArchiveFiles) {
+    const content = fs.readFileSync(path.join(__dirname, '..', relativeFile), 'utf8');
+    assert.match(content, /Michael I\. Jordan/, `${relativeFile} should use Michael I. Jordan`);
+    assert.match(content, /迈克尔·I·乔丹/, `${relativeFile} should use 迈克尔·I·乔丹`);
+    assert.doesNotMatch(content, /Michael Jordan/, `${relativeFile} should not omit Jordan's middle initial`);
+    assert.doesNotMatch(content, /迈克尔·乔丹/, `${relativeFile} should not omit Jordan's middle initial in Chinese`);
+}
+
+const michaelJordanArchiveContent = ['1986-rnn', '2003-lda']
+    .flatMap((eventId) => readJsonFiles(path.join(__dirname, '..', 'archive', 'events', eventId)))
+    .join('\n');
+assert.doesNotMatch(
+    michaelJordanArchiveContent,
+    /Michael Jordan|迈克尔·乔丹/,
+    'the complete RNN and LDA Archive bundles should not retain legacy Michael Jordan names'
+);
+
+for (const milestone of [rnnMilestone, ldaMilestone]) {
+    const content = JSON.stringify(milestone);
+    assert.match(
+        content,
+        /Michael I\. Jordan/,
+        `${milestone.id} should include Michael I. Jordan in generated content`
+    );
+    assert.match(content, /迈克尔·I·乔丹/, `${milestone.id} should include 迈克尔·I·乔丹 in generated content`);
+    assert.doesNotMatch(content, /Michael Jordan|迈克尔·乔丹/, `${milestone.id} should not retain legacy names`);
+}
+console.log('PASS Michael I. Jordan is consistent across Archive sections and generated milestone content');
+
+for (const milestoneId of ['milestone-1989-cnn', 'milestone-ai100-1989-lenet']) {
+    const milestone = milestones.find((item) => item.id === milestoneId);
+    const serializedMilestone = JSON.stringify(milestone);
+    assert.equal(milestone.figures[0].name.zh, '杨立昆', `${milestoneId} should use Yang Likun in Chinese`);
+    assert.match(serializedMilestone, /杨立昆/, `${milestoneId} should include the preferred Chinese name`);
+    assert.doesNotMatch(serializedMilestone, /扬·勒昆|勒昆/, `${milestoneId} should not retain older Chinese names`);
+}
 
 const highwayMilestone = milestones.find((item) => item.id === 'milestone-2014-highway-network');
 const highwayFirstImage = 'resources/images/external/2014-highway-network/juergen-schmidhuber-idsia-2017.jpg';

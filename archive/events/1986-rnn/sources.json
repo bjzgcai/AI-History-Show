@@ -10,8 +10,8 @@
     "language": "en",
     "reliability": "primary",
     "notes": {
-      "zh": "迈克尔·乔丹 1986 年关于输出反馈循环网络的技术报告。",
-      "en": "Michael Jordan's 1986 technical report on a recurrent network with feedback from the output state."
+      "zh": "迈克尔·I·乔丹 1986 年关于输出反馈循环网络的技术报告。",
+      "en": "Michael I. Jordan's 1986 technical report on a recurrent network with feedback from the output state."
     },
     "label": {
       "zh": "报告",
