@@ -67,6 +67,10 @@ const mobileRequirements = [
         message: 'responsive chronology scrolling preserves vertical page gestures'
     },
     {
+        pattern: /@media\s*\(max-width:\s*1199px\)[\s\S]*?html,[\s\S]*?body\s*\{[\s\S]*?overscroll-behavior-y:\s*auto/,
+        message: 'responsive document scrolling keeps the native vertical touch chain open'
+    },
+    {
         pattern: /\.ui-detail[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)/,
         message: 'detail page can collapse to a single readable column'
     },
