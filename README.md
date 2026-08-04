@@ -70,14 +70,14 @@ When authoring content, use bilingual objects such as `{ zh: "...", en: "..." }`
 
 ## Storylines
 
-The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 294 Archive milestones across five source storylines. The unified map merges the four long-term storylines; the 2022-2023 annual AI100 snapshot remains a separate view so its 120 same-era rows do not overwhelm the main chronology:
+The single-screen entry includes a storyline selector dialog in the top bar. The generated runtime contains 214 Archive milestones across five source storylines. The unified map merges the four long-term storylines; the 2022-2023 AI100 view retains only the twenty curated annual highlights:
 
 | Public view                     | Archive records | Notes                                                                                                                 |
 | ------------------------------- | --------------: | --------------------------------------------------------------------------------------------------------------------- |
 | AI History Map                  |    Derived view | Unified browser combining deep-learning milestones and AI100 achievements                                             |
 | The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI | 30 | Technical timeline from early AI through neural networks, scaled learning, and modern architectures            |
-| Top AI Achievements (BenchCouncil) |          119 | Canonical root-table membership with source cards, context sections, demos, and quizzes                               |
-| AI100 annual achievements       |             120 | Official BenchCouncil 2022-2023 annual order, fields, contributors, institutions, sources, demos, and quizzes         |
+| Top AI Achievements (BenchCouncil) |          139 | 119 canonical root-table achievements plus twenty curated 2022-2023 highlights                                      |
+| AI100 annual highlights         |              20 | Ten selected turning points from 2022 and ten from 2023, with sources, demos, and quizzes                            |
 | AI in Board & Tabletop Games    |              13 | Horizontal branch timeline covering search, learned evaluation, self-play, poker, mahjong, and learned-model planning |
 | Humanistic & emotional cycles   |              12 | Sci-fi prophecy, technology hype, AI winters, and risk debates                                                        |
 

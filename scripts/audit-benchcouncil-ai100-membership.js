@@ -6,12 +6,7 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', 'bench-council-ai100.json');
-const HIGHLIGHTS_STORYLINE_PATH = path.join(
-    ROOT,
-    'archive',
-    'storylines',
-    'bench-council-ai100-2022-2023-highlights.json'
-);
+const ANNUAL_STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', 'bench-council-ai100-2022-2023.json');
 const CATALOG_PATH = path.join(ROOT, 'research', 'benchcouncil-ai100', 'canonical-root-table-2026-07-30.json');
 const EXCLUDED_EVENT_IDS = [
     'ai100-2021-clip',
@@ -31,11 +26,9 @@ function diff(left, right) {
 
 const catalog = readJson(CATALOG_PATH);
 const storyline = readJson(STORYLINE_PATH);
-const highlightsStoryline = readJson(HIGHLIGHTS_STORYLINE_PATH);
+const annualStoryline = readJson(ANNUAL_STORYLINE_PATH);
 const canonicalEventIds = catalog.items.map((item) => item.eventId);
-const highlightEventIds = highlightsStoryline.events
-    .filter((item) => item.enabled !== false)
-    .map((item) => item.eventId);
+const highlightEventIds = annualStoryline.events.filter((item) => item.enabled !== false).map((item) => item.eventId);
 const expected = [...canonicalEventIds, ...highlightEventIds];
 const actual = storyline.events.filter((item) => item.enabled !== false).map((item) => item.eventId);
 const missing = diff(expected, actual);

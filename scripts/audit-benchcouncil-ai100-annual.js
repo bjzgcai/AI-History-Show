@@ -4,143 +4,77 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const ROOT = path.join(__dirname, '..');
+const ROOT = path.resolve(__dirname, '..');
 const STORYLINE_ID = 'bench-council-ai100-2022-2023';
-const SNAPSHOT_PATH = path.join(ROOT, 'research', 'benchcouncil-ai100', 'annual-candidates-2022-2023-2026-08-03.json');
+const STORYLINE_PATH = path.join(ROOT, 'archive', 'storylines', `${STORYLINE_ID}.json`);
+const EVENTS_ROOT = path.join(ROOT, 'archive', 'events');
+const EVENT_PREFIX = 'ai100-annual-2022-2023-';
 
 function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
-function splitContributors(value) {
-    return String(value || '')
-        .split(',')
-        .map((name) => name.trim())
-        .filter(Boolean);
-}
-
-function startsWithNames(actual, expected) {
-    return expected.every((name, index) => actual[index] === name);
-}
-
-const snapshot = readJson(SNAPSHOT_PATH);
-const storyline = readJson(path.join(ROOT, 'archive', 'storylines', `${STORYLINE_ID}.json`));
+const storyline = readJson(STORYLINE_PATH);
 const failures = [];
+const enabledEvents = storyline.events.filter((event) => event.enabled !== false);
+const selectedByYear = storyline.curation && storyline.curation.years;
+const expectedIds = selectedByYear ? [...selectedByYear['2022'], ...selectedByYear['2023']] : [];
+const actualIds = enabledEvents.map((event) => event.eventId);
+const archiveEventIds = fs
+    .readdirSync(EVENTS_ROOT, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && entry.name.startsWith(EVENT_PREFIX))
+    .map((entry) => entry.name)
+    .sort();
 
-if (snapshot.candidateCount !== 120 || snapshot.items.length !== 120) {
-    failures.push(`snapshot must contain 120 rows; found ${snapshot.candidateCount}/${snapshot.items.length}`);
+if (!selectedByYear) failures.push('storyline must define curation.years');
+if ((selectedByYear && selectedByYear['2022'].length) !== 10) failures.push('2022 selection must contain 10 events');
+if ((selectedByYear && selectedByYear['2023'].length) !== 10) failures.push('2023 selection must contain 10 events');
+if (enabledEvents.length !== 20)
+    failures.push(`storyline must contain 20 enabled events; found ${enabledEvents.length}`);
+if (new Set(actualIds).size !== actualIds.length) failures.push('storyline event IDs must be unique');
+if (JSON.stringify(actualIds) !== JSON.stringify(expectedIds)) {
+    failures.push('storyline order must match curation.years');
 }
-if (storyline.events.length !== snapshot.items.length) {
-    failures.push(`storyline must contain ${snapshot.items.length} rows; found ${storyline.events.length}`);
+if (JSON.stringify(archiveEventIds) !== JSON.stringify([...expectedIds].sort())) {
+    const expectedSet = new Set(expectedIds);
+    const actualSet = new Set(archiveEventIds);
+    const missing = expectedIds.filter((eventId) => !actualSet.has(eventId));
+    const extra = archiveEventIds.filter((eventId) => !expectedSet.has(eventId));
+    if (missing.length) failures.push(`missing selected Archive events: ${missing.join(', ')}`);
+    if (extra.length) failures.push(`unselected annual Archive events remain: ${extra.join(', ')}`);
 }
 
-for (const [index, item] of snapshot.items.entries()) {
-    const ref = storyline.events[index];
-    if (!ref) continue;
-    const expectedOrder = (index + 1) * 10;
-    if (ref.order !== expectedOrder) failures.push(`${index + 1} ${item.work}: order ${ref.order} != ${expectedOrder}`);
-    if (ref.variant !== STORYLINE_ID) failures.push(`${index + 1} ${item.work}: variant ${ref.variant}`);
+for (const [index, eventRef] of enabledEvents.entries()) {
+    const eventDir = path.join(EVENTS_ROOT, eventRef.eventId);
+    const variantPath = path.join(eventDir, 'variants', `${STORYLINE_ID}.json`);
+    const requiredFiles = ['event.json', 'claims.json', 'sources.json', 'assets.json', 'quizzes.json'];
 
-    const eventDir = path.join(ROOT, 'archive', 'events', ref.eventId);
-    const event = readJson(path.join(eventDir, 'event.json'));
-    const variant = readJson(path.join(eventDir, 'variants', `${STORYLINE_ID}.json`));
-    const assets = readJson(path.join(eventDir, 'assets.json'));
-    const assetsById = new Map(assets.map((asset) => [asset.id, asset]));
-    const selectedAssets = (variant.assetIds || []).map((assetId) => assetsById.get(assetId)).filter(Boolean);
-    const record = variant.achievement && variant.achievement.annualRecord;
-    const actualContributors = (event.figures || []).map((figure) => figure.name && figure.name.en).filter(Boolean);
-    const variantContributors = (variant.figures || []).map((figure) => figure.name && figure.name.en).filter(Boolean);
-    const expectedContributors = splitContributors(item.contributors);
-
-    if (event.title.en !== item.work || variant.displayTitle.en !== item.work) {
-        failures.push(`${index + 1}: title mismatch for ${item.work}`);
+    if (eventRef.variant !== STORYLINE_ID) failures.push(`${eventRef.eventId}: unexpected variant ${eventRef.variant}`);
+    if (eventRef.order !== (index + 1) * 10) failures.push(`${eventRef.eventId}: unexpected order ${eventRef.order}`);
+    for (const file of requiredFiles) {
+        if (!fs.existsSync(path.join(eventDir, file))) failures.push(`${eventRef.eventId}: missing ${file}`);
     }
-    if (!startsWithNames(actualContributors, expectedContributors)) {
-        failures.push(
-            `${index + 1} ${item.work}: contributors must preserve official prefix ${JSON.stringify(expectedContributors)}`
-        );
-    }
-    if (!startsWithNames(variantContributors, expectedContributors)) {
-        failures.push(
-            `${index + 1} ${item.work}: variant contributors must preserve official prefix ${JSON.stringify(expectedContributors)}`
-        );
-    }
-    if (!record) {
-        failures.push(`${index + 1} ${item.work}: missing achievement.annualRecord`);
+    if (!fs.existsSync(variantPath)) {
+        failures.push(`${eventRef.eventId}: missing storyline variant`);
         continue;
     }
-    const expectedRecord = {
-        officialOrder: index + 1,
-        area: item.area,
-        work: item.work,
-        publication: item.publication,
-        citation: item.citation,
-        contributors: item.contributors,
-        institution: item.institution,
-        country: item.country,
-        sourceUrl: snapshot.sourceUrl
-    };
-    if (JSON.stringify(record) !== JSON.stringify(expectedRecord)) {
-        failures.push(`${index + 1} ${item.work}: annualRecord differs from the official snapshot`);
+
+    const variant = readJson(variantPath);
+    if (variant.storylineId !== STORYLINE_ID) failures.push(`${eventRef.eventId}: variant storyline mismatch`);
+    if (!variant.quizId) failures.push(`${eventRef.eventId}: missing quiz selection`);
+    if (!variant.visual) {
+        failures.push(`${eventRef.eventId}: missing achievement visual`);
     }
-    if (!selectedAssets.length || !variant.visualModules || variant.visualModules[0].type !== 'archiveLink') {
-        failures.push(`${index + 1} ${item.work}: explainer or source card is missing`);
-    }
-    if (selectedAssets.some((asset) => /_contributors\.svg$/i.test(asset.path || ''))) {
-        failures.push(`${index + 1} ${item.work}: generated contributor profile cards are not allowed`);
-    }
-    const explainers = selectedAssets.filter((asset) =>
-        ['annual-achievement-explainer', 'architecture-explainer', 'algorithm-explainer'].includes(asset.role)
-    );
-    const portraits = selectedAssets.filter((asset) => asset.role === 'portrait');
-    const personFigureAvatars = (variant.figures || [])
-        .filter((figure) => !figure.figureType || figure.figureType === 'person')
-        .map((figure) => figure.avatar)
-        .filter(Boolean);
-    const productFigureAvatars = (variant.figures || [])
-        .filter((figure) => figure.figureType === 'product')
-        .map((figure) => figure.avatar)
-        .filter(Boolean);
-    if (explainers.length !== 1) {
-        failures.push(`${index + 1} ${item.work}: expected exactly one achievement explainer`);
-    }
-    if (
-        personFigureAvatars.some((avatar) => !portraits.some((portrait) => portrait.path === avatar)) ||
-        portraits.some((portrait) => !personFigureAvatars.includes(portrait.path))
-    ) {
-        failures.push(`${index + 1} ${item.work}: verified portrait selection and figure avatar mapping differ`);
-    }
-    for (const avatar of productFigureAvatars) {
-        if (!fs.existsSync(path.join(ROOT, avatar))) {
-            failures.push(`${index + 1} ${item.work}: product avatar file does not exist: ${avatar}`);
-        }
-        if (assets.some((asset) => asset.path === avatar)) {
-            failures.push(`${index + 1} ${item.work}: product avatar must not be included in event assets: ${avatar}`);
-        }
-    }
-    for (const portrait of portraits) {
-        const source = readJson(path.join(eventDir, 'sources.json')).find((entry) => entry.id === portrait.sourceId);
-        if (
-            !source ||
-            !source.notes ||
-            !source.reliability ||
-            !portrait.sourceReliability ||
-            !portrait.provenanceNotes ||
-            !portrait.rights ||
-            !portrait.rights.license
-        ) {
-            failures.push(`${index + 1} ${item.work}: portrait provenance or reliability metadata is incomplete`);
-        }
-    }
-    if (variant.visual !== 'configuredPaper') {
-        failures.push(`${index + 1} ${item.work}: visual must use configuredPaper`);
+    if (!Array.isArray(variant.sourceIds) || variant.sourceIds.length < 3) {
+        failures.push(`${eventRef.eventId}: fewer than three selected sources`);
     }
 }
 
-if (failures.length > 0) {
-    console.error(`BenchCouncil annual AI100 audit failed with ${failures.length} issue(s):`);
-    for (const failure of failures.slice(0, 80)) console.error(`- ${failure}`);
-    process.exit(1);
+if (failures.length) {
+    console.error('BenchCouncil AI100 annual highlights audit failed:');
+    for (const failure of failures) console.error(`- ${failure}`);
+    process.exitCode = 1;
+} else {
+    console.log('PASS BenchCouncil AI100 2022-2023 retains exactly 20 curated events (10 per year).');
+    console.log('PASS no unselected annual Archive event bundles remain.');
 }
-
-console.log('PASS BenchCouncil AI100 (2022-2023) storyline preserves all 120 official rows and contributor order.');

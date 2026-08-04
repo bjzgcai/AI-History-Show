@@ -1,17 +1,66 @@
 {
   "id": "bench-council-ai100-2022-2023",
   "title": {
-    "en": "AI100 Annual Achievements (2022-2023)",
-    "zh": "AI100 年度成就（2022-2023）"
+    "en": "AI100 Annual Highlights (2022-2023)",
+    "zh": "AI100 年度精选（2022-2023）"
   },
   "subtitle": {
-    "en": "The 120-row annual selection published by BenchCouncil.",
-    "zh": "BenchCouncil 发布的 120 条年度入选记录。"
+    "en": "Twenty turning points selected from the BenchCouncil 2022-2023 annual list.",
+    "zh": "从 BenchCouncil 2022-2023 年度榜单中精选的 20 个技术转折点。"
   },
   "type": "achievement-map",
   "description": {
-    "en": "This standalone storyline preserves the official order and fields of the BenchCouncil AI100 (2022-2023) annual table. It is intentionally separate from the long-term canonical AI100 storyline.",
-    "zh": "本独立故事线保留 BenchCouncil AI100（2022-2023）年度表的官方顺序与字段，并有意与长期 canonical AI100 故事线分开。"
+    "en": "This storyline retains ten selected achievements from 2022 and ten from 2023. The selection emphasizes historical turning points, continuity with the long-term AI100 map, field coverage, explainability, and reliable primary sources.",
+    "zh": "本故事线保留 2022 年与 2023 年各 10 项精选成就，重点考虑历史转折意义、与长期 AI100 图谱的延续关系、领域覆盖、可解释展示价值和可靠的一手来源。"
+  },
+  "curation": {
+    "maximumEventsPerYear": 10,
+    "selectionCriteria": {
+      "en": [
+        "Historical or technical turning-point value",
+        "Continuity with the long-term BenchCouncil AI100 storyline",
+        "Coverage across major AI fields",
+        "Suitability for interactive explanation",
+        "Availability of reliable primary sources"
+      ],
+      "zh": [
+        "具有历史或技术转折意义",
+        "能够衔接长期 BenchCouncil AI100 故事线",
+        "覆盖主要人工智能领域",
+        "适合进行互动解释",
+        "具备可靠的一手来源"
+      ]
+    },
+    "years": {
+      "2022": [
+        "ai100-annual-2022-2023-001-swin-transformer-v2",
+        "ai100-annual-2022-2023-002-simmim",
+        "ai100-annual-2022-2023-024-whisper",
+        "ai100-annual-2022-2023-039-palm",
+        "ai100-annual-2022-2023-048-instructgpt",
+        "ai100-annual-2022-2023-059-chain-of-thought-prompting",
+        "ai100-annual-2022-2023-058-chatgpt",
+        "ai100-annual-2022-2023-081-latent-diffusion-models",
+        "ai100-annual-2022-2023-114-alphatensor",
+        "ai100-annual-2022-2023-117-saycan"
+      ],
+      "2023": [
+        "ai100-annual-2022-2023-035-llama",
+        "ai100-annual-2022-2023-051-gpt-4",
+        "ai100-annual-2022-2023-057-claude",
+        "ai100-annual-2022-2023-028-blip-2",
+        "ai100-annual-2022-2023-063-llava",
+        "ai100-annual-2022-2023-037-palm-e",
+        "ai100-annual-2022-2023-094-controlnet",
+        "ai100-annual-2022-2023-101-segment-anything",
+        "ai100-annual-2022-2023-087-gen2",
+        "ai100-annual-2022-2023-110-esmfold"
+      ]
+    },
+    "source": {
+      "en": "BenchCouncil AI100 2022-2023 annual list",
+      "zh": "BenchCouncil AI100 2022-2023 年度榜单"
+    }
   },
   "events": [
     {
@@ -19,847 +68,147 @@
       "variant": "bench-council-ai100-2022-2023",
       "order": 10,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-001-swin-transformer-v2"
+      "milestoneId": "milestone-ai100-highlights-2022-swin-transformer-v2"
     },
     {
       "eventId": "ai100-annual-2022-2023-002-simmim",
       "variant": "bench-council-ai100-2022-2023",
       "order": 20,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-002-simmim"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-003-scaling-vit",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 30,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-003-scaling-vit"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-004-replknet",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 40,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-004-replknet"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-005-localvit",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 50,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-005-localvit"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-006-lama",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 60,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-006-lama"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-007-instructpix2pix",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 70,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-007-instructpix2pix"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-008-convnexts",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 80,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-008-convnexts"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-009-convmixer",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 90,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-009-convmixer"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-010-cmt",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 100,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-010-cmt"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-011-block-nerf",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 110,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-011-block-nerf"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-012-bevformer",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 120,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-012-bevformer"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-013-prompt-to-prompt",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 130,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-013-prompt-to-prompt"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-014-tensorf",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 140,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-014-tensorf"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-015-alternet",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 150,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-015-alternet"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-016-vpt",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 160,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-016-vpt"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-017-van",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 170,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-017-van"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-018-maskfeat",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 180,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-018-maskfeat"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-019-gfp-gan",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 190,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-019-gfp-gan"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-020-multiresolution-hash-encoding",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 200,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-020-multiresolution-hash-encoding"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-021-videomae",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 210,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-021-videomae"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-022-extension-of-mae",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 220,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-022-extension-of-mae"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-023-make-a-video",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 230,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-023-make-a-video"
+      "milestoneId": "milestone-ai100-highlights-2022-simmim"
     },
     {
       "eventId": "ai100-annual-2022-2023-024-whisper",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 240,
+      "order": 30,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-024-whisper"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-025-textual-inversions",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 250,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-025-textual-inversions"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-026-make-a-scene",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 260,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-026-make-a-scene"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-027-magic3d",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 270,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-027-magic3d"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-028-blip-2",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 280,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-028-blip-2"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-029-blip",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 290,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-029-blip"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-030-parti",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 300,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-030-parti"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-031-ofa",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 310,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-031-ofa"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-032-gato",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 320,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-032-gato"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-033-data2vec",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 330,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-033-data2vec"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-034-laion-5b",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 340,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-034-laion-5b"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-035-llama",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 350,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-035-llama"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-036-self-consistency",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 360,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-036-self-consistency"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-037-palm-e",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 370,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-037-palm-e"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-038-palm-2",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 380,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-038-palm-2"
+      "milestoneId": "milestone-ai100-highlights-2022-whisper"
     },
     {
       "eventId": "ai100-annual-2022-2023-039-palm",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 390,
+      "order": 40,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-039-palm"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-040-opt",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 400,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-040-opt"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-041-mt-nlg",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 410,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-041-mt-nlg"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-042-llama-2",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 420,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-042-llama-2"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-043-zero-shot-cot",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 430,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-043-zero-shot-cot"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-044-scratchpad",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 440,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-044-scratchpad"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-045-minerva",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 450,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-045-minerva"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-046-least-to-most-prompting",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 460,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-046-least-to-most-prompting"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-047-lamda",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 470,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-047-lamda"
+      "milestoneId": "milestone-ai100-highlights-2022-palm"
     },
     {
       "eventId": "ai100-annual-2022-2023-048-instructgpt",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 480,
+      "order": 50,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-048-instructgpt"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-049-huggingchat",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 490,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-049-huggingchat"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-050-gpt-neox-20b",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 500,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-050-gpt-neox-20b"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-051-gpt-4",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 510,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-051-gpt-4"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-052-flan-finetuning",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 520,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-052-flan-finetuning"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-053-flan",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 530,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-053-flan"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-054-flamingo",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 540,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-054-flamingo"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-055-ernie-bot",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 550,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-055-ernie-bot"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-056-emergent-abilities",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 560,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-056-emergent-abilities"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-057-claude",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 570,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-057-claude"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-058-chatgpt",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 580,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-058-chatgpt"
+      "milestoneId": "milestone-ai100-highlights-2022-instructgpt"
     },
     {
       "eventId": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 590,
+      "order": 60,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-059-chain-of-thought-prompting"
+      "milestoneId": "milestone-ai100-highlights-2022-chain-of-thought-prompting"
     },
     {
-      "eventId": "ai100-annual-2022-2023-060-bloom",
+      "eventId": "ai100-annual-2022-2023-058-chatgpt",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 600,
+      "order": 70,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-060-bloom"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-061-bard",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 610,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-061-bard"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-062-pali",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 620,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-062-pali"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-063-llava",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 630,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-063-llava"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-064-inner-monologue",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 640,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-064-inner-monologue"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-065-constitutional-ai",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 650,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-065-constitutional-ai"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-066-cocoop",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 660,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-066-cocoop"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-067-polycoder",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 670,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-067-polycoder"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-068-big-bench",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 680,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-068-big-bench"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-069-design-space-of-diffusion-models",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 690,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-069-design-space-of-diffusion-models"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-070-role-of-demonstrations",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 700,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-070-role-of-demonstrations"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-071-fine-tuning",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 710,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-071-fine-tuning"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-072-language-models-as-zero-shot-planners",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 720,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-072-language-models-as-zero-shot-planners"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-073-experiments-with-gpt-4",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 730,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-073-experiments-with-gpt-4"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-074-deep-learning-for-tabular-data",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 740,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-074-deep-learning-for-tabular-data"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-075-analysis-with-gpt-3",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 750,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-075-analysis-with-gpt-3"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-076-gpts-are-gpts",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 760,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-076-gpts-are-gpts"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-077-vision-transformers-are-robust-learners",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 770,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-077-vision-transformers-are-robust-learners"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-078-evaluation-of-chatgpt",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 780,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-078-evaluation-of-chatgpt"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-079-tree-based-models-v-s-deep-learning",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 790,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-079-tree-based-models-v-s-deep-learning"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-080-quantifying-memorization",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 800,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-080-quantifying-memorization"
+      "milestoneId": "milestone-ai100-highlights-2022-chatgpt"
     },
     {
       "eventId": "ai100-annual-2022-2023-081-latent-diffusion-models",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 810,
+      "order": 80,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-081-latent-diffusion-models"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-082-imagic",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 820,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-082-imagic"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-083-imagen-video",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 830,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-083-imagen-video"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-084-imagen",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 840,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-084-imagen"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-085-hierarchical-text-conditional-image-generation",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 850,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-085-hierarchical-text-conditional-image-generation"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-086-geodiff",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 860,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-086-geodiff"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-087-gen2",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 870,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-087-gen2"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-088-ediffi",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 880,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-088-ediffi"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-089-dreamfusion",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 890,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-089-dreamfusion"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-090-dreambooth",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 900,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-090-dreambooth"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-091-dpm-solver",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 910,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-091-dpm-solver"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-092-diffusion-lm",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 920,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-092-diffusion-lm"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-093-ddrm",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 930,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-093-ddrm"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-094-controlnet",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 940,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-094-controlnet"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-095-classifier-free-guidance",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 950,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-095-classifier-free-guidance"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-096-card",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 960,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-096-card"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-097-yolov7",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 970,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-097-yolov7"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-098-yolov6",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 980,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-098-yolov6"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-099-vitdet",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 990,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-099-vitdet"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-100-swin-unetr",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1000,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-100-swin-unetr"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-101-segment-anything",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1010,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-101-segment-anything"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-102-petr",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1020,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-102-petr"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-103-dino",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1030,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-103-dino"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-104-bytetrack",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1040,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-104-bytetrack"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-105-dn-detr",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1050,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-105-dn-detr"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-106-detic",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1060,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-106-detic"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-107-signalp-6-0",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1070,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-107-signalp-6-0"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-108-galactica",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1080,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-108-galactica"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-109-rl-designed-magnetic-controller",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1090,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-109-rl-designed-magnetic-controller"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-110-esmfold",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1100,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-110-esmfold"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-111-edm",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1110,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-111-edm"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-112-colabfold",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1120,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-112-colabfold"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-113-alphafold-db",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1130,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-113-alphafold-db"
+      "milestoneId": "milestone-ai100-highlights-2022-latent-diffusion-models"
     },
     {
       "eventId": "ai100-annual-2022-2023-114-alphatensor",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 1140,
+      "order": 90,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-114-alphatensor"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-115-alphacode",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1150,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-115-alphacode"
-    },
-    {
-      "eventId": "ai100-annual-2022-2023-116-learning-robust-perceptive-locomotion",
-      "variant": "bench-council-ai100-2022-2023",
-      "order": 1160,
-      "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-116-learning-robust-perceptive-locomotion"
+      "milestoneId": "milestone-ai100-highlights-2022-alphatensor"
     },
     {
       "eventId": "ai100-annual-2022-2023-117-saycan",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 1170,
+      "order": 100,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-117-saycan"
+      "milestoneId": "milestone-ai100-highlights-2022-saycan"
     },
     {
-      "eventId": "ai100-annual-2022-2023-118-model-soups",
+      "eventId": "ai100-annual-2022-2023-035-llama",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 1180,
+      "order": 110,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-118-model-soups"
+      "milestoneId": "milestone-ai100-highlights-2023-llama"
     },
     {
-      "eventId": "ai100-annual-2022-2023-119-symbiotic-creativity",
+      "eventId": "ai100-annual-2022-2023-051-gpt-4",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 1190,
+      "order": 120,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-119-symbiotic-creativity"
+      "milestoneId": "milestone-ai100-highlights-2023-gpt-4"
     },
     {
-      "eventId": "ai100-annual-2022-2023-120-ostrack",
+      "eventId": "ai100-annual-2022-2023-057-claude",
       "variant": "bench-council-ai100-2022-2023",
-      "order": 1200,
+      "order": 130,
       "enabled": true,
-      "milestoneId": "milestone-ai100-annual-2022-2023-120-ostrack"
+      "milestoneId": "milestone-ai100-highlights-2023-claude"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-028-blip-2",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 140,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-highlights-2023-blip-2"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-063-llava",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 150,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-highlights-2023-llava"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-037-palm-e",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 160,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-highlights-2023-palm-e"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-094-controlnet",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 170,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-highlights-2023-controlnet"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-101-segment-anything",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 180,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-highlights-2023-segment-anything"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-087-gen2",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 190,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-highlights-2023-gen2"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-110-esmfold",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 200,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-highlights-2023-esmfold"
     }
   ],
   "review": {
     "status": "reviewed",
     "notes": {
-      "en": "Synchronized from the official annual page and verified against the 2026-08-03 HTML snapshot.",
-      "zh": "从官方年度页同步，并与 2026-08-03 的 HTML 快照核对。"
+      "en": "The production storyline retains only the twenty curated achievements. Claude is included in the 2023 selection; LLaMA 2 is omitted to avoid duplicating the LLaMA open-model turning point.",
+      "zh": "生产故事线仅保留 20 项精选成就。2023 年精选包含 Claude；为避免与 LLaMA 的开放模型转折意义重复，不再选入 LLaMA 2。"
     }
   }
 }
