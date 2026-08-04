@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const path = require('node:path');
 
 const overview = require(path.join(__dirname, '..', 'shared', 'chronology-overview.js'));
-const { milestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+const { archiveStorylines, milestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
 
 const localize = (value) => {
     if (value == null) return '';
@@ -389,7 +389,7 @@ for (const milestoneId of ['milestone-ai100-2012-alexnet', 'milestone-2012-alexn
 }
 console.log('PASS AlexNet variants use the user-provided portrait consistently');
 
-const summaries = overview.summarizeStorylines(canonicalMilestones, localize);
+const summaries = overview.summarizeStorylines(canonicalMilestones, localize, undefined, archiveStorylines);
 assert.deepEqual(
     summaries.map(({ id, count }) => ({ id, count })),
     [
@@ -399,6 +399,11 @@ assert.deepEqual(
         { id: 'deep-learning', count: 30 }
     ],
     'the overview should derive the four production storylines and their generated counts'
+);
+assert.equal(
+    summaries.find(({ id }) => id === 'bench-council-ai100').subtitle,
+    '119 项长期主表成就 + 20 项 2022–2023 年度精选',
+    'the overview should expose the localized Archive storyline subtitle'
 );
 assert.deepEqual(
     summaries.map(({ id, color }) => ({ id, color })),
