@@ -1,0 +1,171 @@
+{
+  "id": "ai100-annual-2022-2023-048-instructgpt",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "InstructGPT",
+    "zh": "InstructGPT"
+  },
+  "summary": {
+    "en": "A three-stage RLHF pipeline that aligned language-model behavior with written instructions and human preferences",
+    "zh": "通过三阶段 RLHF 流程让语言模型行为对齐书面指令与人类偏好"
+  },
+  "description": {
+    "en": "<p>InstructGPT addressed a mismatch between next-token prediction and what users actually ask a model to do. OpenAI collected demonstrations and preference comparisons, then used supervised fine-tuning, reward modeling and reinforcement learning to tune GPT-3 models toward helpful instruction following.</p><p>Human evaluators preferred the 1.3-billion-parameter InstructGPT model over the 175-billion-parameter GPT-3 baseline on the studied prompt distribution. The result made RLHF a practical recipe for post-training general-purpose language models.</p>",
+    "zh": "<p>InstructGPT 针对下一个 token 预测目标与用户实际要求之间的错位。OpenAI 收集示范答案和偏好比较，再通过监督微调、奖励模型与强化学习，让 GPT-3 模型更好地遵循有帮助的指令。</p><p>在研究使用的提示分布上，人类评估者更偏好 13 亿参数的 InstructGPT，而不是 1,750 亿参数的 GPT-3 基线。这一结果使 RLHF 成为通用语言模型后训练的实用范式。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "long-ouyang",
+      "name": {
+        "en": "Long Ouyang",
+        "zh": "欧阳龙"
+      },
+      "role": {
+        "en": "First author of the InstructGPT paper",
+        "zh": "InstructGPT 论文第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jeff-wu",
+      "name": {
+        "en": "Jeff Wu",
+        "zh": "杰夫·吴"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg"
+    },
+    {
+      "figureId": "xu-jiang",
+      "name": {
+        "en": "Xu Jiang",
+        "zh": "徐江"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "diogo-almeida",
+      "name": {
+        "en": "Diogo Almeida",
+        "zh": "迪奥戈·阿尔梅达"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "carroll-l-wainwright",
+      "name": {
+        "en": "Carroll L. Wainwright",
+        "zh": "卡罗尔·L·温赖特"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "pamela-mishkin",
+      "name": {
+        "en": "Pamela Mishkin",
+        "zh": "帕梅拉·米什金"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "paul-christiano",
+      "name": {
+        "en": "Paul Christiano",
+        "zh": "保罗·克里斯蒂亚诺"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jan-leike",
+      "name": {
+        "en": "Jan Leike",
+        "zh": "扬·莱克"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "ryan-lowe",
+      "name": {
+        "en": "Ryan Lowe",
+        "zh": "瑞安·洛"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "john-schulman",
+      "name": {
+        "en": "John Schulman",
+        "zh": "约翰·舒尔曼"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png"
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-024-whisper-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What is the main source of Whisper's broad speech robustness?",
+      "zh": "Whisper 广泛语音稳健性的主要来源是什么？"
+    },
+    "options": [
+      {
+        "en": "Large, diverse weakly supervised audio",
+        "zh": "大规模、多样化的弱监督音频"
+      },
+      {
+        "en": "A single clean English benchmark",
+        "zh": "单一干净英语基准"
+      },
+      {
+        "en": "Only synthetic voices",
+        "zh": "只使用合成语音"
+      },
+      {
+        "en": "A rule-based pronunciation dictionary",
+        "zh": "基于规则的发音词典"
+      }
+    ],
+    "explanation": {
+      "en": "Whisper was trained on 680,000 hours of diverse multilingual and multitask weakly supervised audio.",
+      "zh": "Whisper 使用 68 万小时多样化、多语种、多任务弱监督音频训练。"
+    },
+    "sourceIds": [
+      "source-whisper-paper"
+    ],
+    "answer": 0,
+    "assetIds": [
+      "asset-annual-024-whisper-record"
+    ]
+  }
+]

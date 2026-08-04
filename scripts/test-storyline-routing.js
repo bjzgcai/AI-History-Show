@@ -7,11 +7,19 @@ const { archiveStorylines, milestones: generatedMilestones } = require(
     path.join(__dirname, '..', 'milestones-data.js')
 );
 
-assert.equal(archiveStorylines.length, 4, 'generated runtime should expose all Archive storyline definitions');
+assert.equal(archiveStorylines.length, 5, 'generated runtime should expose all Archive storyline definitions');
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').title,
-    { zh: 'AI 顶尖成就（BenchCouncil）', en: 'Top AI Achievements (BenchCouncil)' },
+    { zh: 'AI 顶尖成就图谱（BenchCouncil）', en: 'AI Achievement Map (BenchCouncil)' },
     'the generated BenchCouncil storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100').subtitle,
+    {
+        zh: '119 项长期主表成就 + 20 项 2022–2023 年度精选',
+        en: '119 long-term main-table achievements + 20 selected achievements from 2022–2023'
+    },
+    'the generated BenchCouncil storyline subtitle should describe the long-term table and annual highlights'
 );
 assert.deepEqual(
     archiveStorylines.find((storyline) => storyline.id === 'deep-learning').title,
@@ -20,6 +28,11 @@ assert.deepEqual(
         en: 'The Rise, Retreat, and Revival of Connectionism: Seventy Years of AI'
     },
     'the generated connectionism storyline title should come from Archive'
+);
+assert.deepEqual(
+    archiveStorylines.find((storyline) => storyline.id === 'bench-council-ai100-2022-2023').title,
+    { zh: 'AI100 年度精选（2022-2023）', en: 'AI100 Annual Highlights (2022-2023)' },
+    'the generated annual AI100 storyline title should come from Archive'
 );
 console.log('PASS generated storyline definitions');
 
@@ -95,6 +108,57 @@ gamingMilestones.forEach((milestone) => {
     );
 });
 console.log('PASS gaming AI unified UI content coverage');
+
+const annualAi100Milestones = generatedMilestones.filter(
+    (milestone) => routing.getMilestoneStorylineId(milestone) === 'bench-council-ai100-2022-2023'
+);
+assert.equal(
+    annualAi100Milestones.length,
+    20,
+    'the BenchCouncil 2022-2023 annual storyline should contain 20 curated events'
+);
+assert.equal(
+    annualAi100Milestones[0].title.en,
+    'Swin Transformer V2',
+    'the annual selection should start with Swin Transformer V2'
+);
+assert.equal(annualAi100Milestones.at(-1).title.en, 'ESMFold', 'the annual selection should end with ESMFold');
+assert.deepEqual(
+    annualAi100Milestones[0].figures.map((figure) => figure.name.en),
+    ['Ze Liu', 'Han Hu'],
+    'annual milestones should preserve the complete official contributor order'
+);
+assert.equal(annualAi100Milestones[0].figures[0].avatar.endsWith('ze-liu-portrait.jpg'), true);
+assert.equal(annualAi100Milestones[0].figures[1].avatar.endsWith('han-hu-portrait.jpg'), true);
+assert.deepEqual(
+    annualAi100Milestones[1].figures.map((figure) => figure.name.en),
+    ['Zhenda Xie', 'Zheng Zhang', 'Yue Cao', 'Han Hu'],
+    'annual milestones should preserve the complete SimMIM contributor order'
+);
+assert.equal(
+    annualAi100Milestones[1].figures.filter((figure) => figure.avatar).length,
+    2,
+    'an annual event should expose every verified contributor portrait'
+);
+assert.equal(
+    annualAi100Milestones[1].figures.slice(0, 2).every((figure) => figure.avatar === ''),
+    true,
+    'contributors without the selected portrait should remain text-only'
+);
+assert.equal(annualAi100Milestones[1].figures[2].avatar.endsWith('yue-cao-portrait.jpeg'), true);
+assert.equal(annualAi100Milestones[1].figures[3].avatar.endsWith('han-hu-portrait.jpg'), true);
+assert.equal(
+    annualAi100Milestones.filter((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-057-claude')
+        .length,
+    1,
+    'the 2023 selection should include Claude'
+);
+assert.equal(
+    annualAi100Milestones.some((milestone) => milestone.archiveEventId === 'ai100-annual-2022-2023-042-llama-2'),
+    false,
+    'the annual selection should omit LLaMA 2 to avoid duplicating the LLaMA turning point'
+);
+console.log('PASS BenchCouncil annual highlights selection and contributor order');
 
 const archiveMilestones = [
     { id: 'milestone-1956-dartmouth', storyline: { id: 'deep-learning' } },
@@ -174,7 +238,7 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(allMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
+    /unifiedSourceMilestones = allMilestones\.filter[\s\S]*?unifiedMilestoneCache = window\.ChronologyOverview\.buildCanonicalMilestones\(unifiedSourceMilestones,[\s\S]*?storylinePriority: AI_HISTORY_MAP_VARIANT_PRIORITY/,
     'the default overview should merge storyline variants by canonical Archive event'
 );
 assert.match(
@@ -189,13 +253,23 @@ assert.match(
 );
 assert.match(
     indexHtml,
-    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*buildUnifiedMilestones\(\)/,
-    'the overview should retain the complete canonical filters while restoring the selected storyline'
+    /chronologyOverview\.setState\(\{ storylineId: chronologyFilterStorylineId \}\);[\s\S]*?chronologyOverview\.update\(\{[\s\S]*?milestones:\s*getChronologyOverviewMilestones\(\)/,
+    'the overview should restore the selected storyline against its matching dataset'
 );
 assert.match(
     indexHtml,
-    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?AI_HISTORY_MAP_VARIANT_PRIORITY\.includes\(normalizedStorylineId\)/,
+    /function getChronologyFilterStorylineId\(storylineId\)[\s\S]*?normalizeStorylineId\(storylineId\)[\s\S]*?CHRONOLOGY_FILTER_STORYLINE_IDS\.has\(normalizedStorylineId\)/,
     'all configured chronology storylines should map back to their matching overview filter'
+);
+assert.match(
+    indexHtml,
+    /let chronologyFilterStorylineId = requestedChronologyFilterStorylineId[\s\S]*?getChronologyFilterStorylineId\(activeStorylineId\)/,
+    'a storyline URL should initialize the chronology filter from the active storyline'
+);
+assert.match(
+    indexHtml,
+    /function getChronologyOverviewMilestones\(\)[\s\S]*?STANDALONE_AI100_STORYLINE_IDS\.has\(chronologyFilterStorylineId\)[\s\S]*?getStorylineMilestones\(chronologyFilterStorylineId\)[\s\S]*?milestones: getChronologyOverviewMilestones\(\)[\s\S]*?preserveSourceOrder: preserveStandaloneOrder/,
+    'the annual highlights storyline should supply its own dataset in configured order'
 );
 assert.match(
     indexHtml,
@@ -269,6 +343,36 @@ assert.match(
 );
 assert.match(
     indexHtml,
+    /\.single-stage\.is-ui-browser\.is-ui-detail \.storyline-trigger\s*\{[\s\S]*?display:\s*none[\s\S]*?\.single-stage\.is-ui-browser\.is-ui-detail \.storyline-context\s*\{[\s\S]*?display:\s*flex/,
+    'the detail view should replace the storyline selector with a static storyline label'
+);
+assert.match(
+    chronologySource,
+    /config\.storylines[\s\S]*?class="chrono-storyline-title-row"[\s\S]*?<strong data-overflow-title="\$\{escapeHtml\(filter\.name\)\}"[\s\S]*?class="chrono-storyline-subtitle" data-overflow-title="\$\{escapeHtml\(filter\.subtitle\)\}"/,
+    'the chronology storyline list should render Archive subtitles below storyline titles'
+);
+assert.match(
+    chronologySource,
+    /aria-label="\$\{escapeHtml\(\[filter\.name, filter\.subtitle\]\.filter\(Boolean\)\.join\(': '\)\)\}"/,
+    'storyline filters should expose their complete title and subtitle to assistive technology'
+);
+assert.match(
+    chronologySource,
+    /function createOverflowTooltipController\(root, scope\)[\s\S]*?function show\(element\)[\s\S]*?classList\.add\('is-visible'\)[\s\S]*?function sync\(\)[\s\S]*?scrollWidth > element\.clientWidth \+ 1[\s\S]*?classList\.toggle\('has-overflow-tooltip',[\s\S]*?root\.addEventListener\('pointerover',[\s\S]*?overflowTooltipController\.sync\(\);/,
+    'truncated storyline labels should use the delegated custom hover tooltip controller'
+);
+assert.match(
+    chronologyCss,
+    /\.chrono-storyline-subtitle\s*\{[\s\S]*?display:\s*block[\s\S]*?width:\s*0[\s\S]*?min-width:\s*100%[\s\S]*?text-overflow:\s*ellipsis[\s\S]*?\.chrono-overflow-tooltip\.is-visible\s*\{[\s\S]*?visibility:\s*visible/,
+    'storyline subtitles should fill the title column without affecting item width and reveal the custom tooltip quickly'
+);
+assert.doesNotMatch(
+    chronologyCss,
+    /\.chrono-storyline-subtitle\s*\{[^}]*max-width/,
+    'storyline subtitles should not truncate before the available content width is exhausted'
+);
+assert.match(
+    indexHtml,
     /renderTimeline\(vm\);[\s\S]*?isUiBrowserActive\(\) && uiBrowserMode !== 'detail'[\s\S]*?document\.title = `\$\{tx\('appTitleSingle'\)\} - \$\{getStorylineLabel\(getActiveStorylineOption\(\)\)/,
     'the chronology overview should use its storyline title instead of retaining the last event title'
 );
@@ -295,12 +399,17 @@ assert.match(
 assert.match(
     indexHtml,
     /const AI_HISTORY_MAP_VARIANT_PRIORITY = \[[\s\S]*?'bench-council-ai100'[\s\S]*?DEEP_STORYLINE_ID[\s\S]*?'gaming-ai'[\s\S]*?'humanistic-cycle'[\s\S]*?\]/,
-    'the unified chronology should include all four public storylines'
+    'the unified chronology should include the four long-term public storylines'
 );
 assert.match(
     indexHtml,
-    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
-    'the storyline selector should place AI100 where the deep-learning option previously appeared'
+    /const STANDALONE_AI100_STORYLINE_IDS = new Set\(\[ANNUAL_AI100_STORYLINE_ID\]\)[\s\S]*?const UNIFIED_STORYLINE_EXCLUSIONS = new Set\(STANDALONE_AI100_STORYLINE_IDS\)[\s\S]*?unifiedSourceMilestones = allMilestones\.filter/,
+    'the annual highlights storyline should remain separate from the unified long-term chronology'
+);
+assert.match(
+    indexHtml,
+    /const STORYLINE_OPTIONS = \[[\s\S]*?id: UNIFIED_STORYLINE_ID[\s\S]*?id: 'bench-council-ai100'[\s\S]*?id: ANNUAL_AI100_STORYLINE_ID[\s\S]*?id: 'gaming-ai'[\s\S]*?id: 'humanistic-cycle'[\s\S]*?id: DEEP_STORYLINE_ID[\s\S]*?\];/,
+    'the storyline selector should expose one curated annual AI100 view'
 );
 assert.match(
     indexHtml,
@@ -426,10 +535,35 @@ assert.match(
     /buildUiAvatarHtml\(vm, detailFigures\)/,
     'figure rendering and figure-count layout should use the same selected figures'
 );
+assert.doesNotMatch(
+    indexHtml,
+    /function getUiDetailFigures\(vm\)[\s\S]*?figures\.filter\(\(figure\) => Boolean\(getFigureAvatarSource\(figure\)\)\)/,
+    'detail pages should not hide contributor information when a verified portrait is unavailable'
+);
+assert.match(
+    indexHtml,
+    /function initials\(name\)[\s\S]*?localizedName\.replace\(\/\\s\*\[（\(\]\[\^\(\)（）\]\*\[\)）\]\\s\*\$\/[\s\S]*?toUpperCase\(\)/,
+    'text avatars should omit parenthetical source qualifiers while preserving the full visible person name'
+);
+assert.match(
+    indexHtml,
+    /detailFigureCount \? `<div class="ui-avatar-strip count-\$\{detailFigureCount\}">\$\{buildUiAvatarHtml\(vm, detailFigures\)\}<\/div>` : ''/,
+    'events without contributor information should not render an empty person-card strip'
+);
 assert.match(
     indexHtml,
     /@media \(min-width: 1200px\)[\s\S]*?\.ui-avatar-strip\.count-4\s*\{[\s\S]*?grid-template-columns:\s*repeat\(4, minmax\(0, 1fr\)\)[\s\S]*?\.ui-avatar-strip\.count-4 \.ui-avatar-face\s*\{[\s\S]*?width:\s*72px/,
     'desktop four-figure layouts should use a compact four-column grid'
+);
+assert.match(
+    indexHtml,
+    /\.ui-avatar-face\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function buildUiAvatarHtml[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
+    'single-screen product avatars should contain complete logos inside the circular frame'
+);
+assert.match(
+    dualScreenHtml,
+    /\.figure-avatar\.is-product img\s*\{[\s\S]*?object-fit:\s*contain[\s\S]*?function renderFigures[\s\S]*?figure\.figureType === 'product' \? ' is-product' : ''/,
+    'dual-screen product avatars should contain complete logos inside the circular frame'
 );
 assert.match(
     indexHtml,

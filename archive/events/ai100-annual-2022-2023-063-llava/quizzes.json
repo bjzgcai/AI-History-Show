@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-063-llava-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What connects LLaVA’s vision encoder to its language model?",
+      "zh": "什么组件连接 LLaVA 的视觉编码器与语言模型？"
+    },
+    "options": [
+      {
+        "en": "A learned projection layer",
+        "zh": "可学习投影层"
+      },
+      {
+        "en": "A physical camera cable",
+        "zh": "实体相机线缆"
+      },
+      {
+        "en": "A search-engine index only",
+        "zh": "只有搜索引擎索引"
+      },
+      {
+        "en": "A recurrent robot controller",
+        "zh": "循环机器人控制器"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "LLaVA maps CLIP visual features into the language model’s embedding space through a learned projection.",
+      "zh": "LLaVA 通过可学习投影，把 CLIP 视觉特征映射到语言模型的嵌入空间。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "assetIds": [
+      "asset-annual-063-llava-record"
+    ]
+  }
+]

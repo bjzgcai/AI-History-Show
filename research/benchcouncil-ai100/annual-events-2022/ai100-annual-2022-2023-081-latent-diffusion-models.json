@@ -1,0 +1,669 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-081-latent-diffusion-models",
+  "status": "complete",
+  "officialOrder": 81,
+  "work": "Latent Diffusion Models",
+  "official": {
+    "area": "Diffusion Model Application",
+    "publication": "High-Resolution Image Synthesis with Latent Diffusion Models",
+    "citation": "3361",
+    "contributors": "Robin Rombach, Andreas Blattmann, Bjorn Ommer",
+    "institution": "Ludwig Maximilian University of Munich IWR, Heidelberg University, Runway",
+    "country": "Germany",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "A compute-efficient diffusion framework that generates high-resolution images in a learned latent space",
+    "zh": "在学习到的潜空间中高效生成高分辨率图像的扩散框架"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · High-resolution generation in latent space",
+    "zh": "AI100（2022-2023）· 潜空间高分辨率生成"
+  },
+  "description": {
+    "en": "<p>Latent Diffusion Models moved the expensive denoising process from pixel space into the compressed latent space of a pretrained autoencoder. This preserved perceptual detail while reducing the spatial and computational burden of diffusion training and sampling.</p><p>Cross-attention made the same framework conditionable on text, bounding boxes, semantic maps and other inputs. The balance of quality, flexibility and efficiency became the technical foundation for widely used systems including Stable Diffusion.</p>",
+    "zh": "<p>潜扩散模型把昂贵的去噪过程从像素空间移到预训练自编码器的压缩潜空间。这样既保留感知细节，又降低扩散训练与采样的空间尺寸和计算负担。</p><p>交叉注意力使同一框架能够接受文本、边界框、语义图等条件。质量、灵活性与效率之间的平衡，使它成为 Stable Diffusion 等广泛使用系统的技术基础。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Robin Rombach",
+        "zh": "罗宾·罗姆巴赫"
+      },
+      "role": {
+        "en": "First author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Robin Rombach in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出罗宾·罗姆巴赫，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected-existing",
+        "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+        "imageUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+        "reliability": "secondary-identity-source",
+        "rights": "The source page does not state a repository-compatible license; recheck before external redistribution."
+      }
+    },
+    {
+      "name": {
+        "en": "Andreas Blattmann",
+        "zh": "安德烈亚斯·布拉特曼"
+      },
+      "role": {
+        "en": "Co-author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Andreas Blattmann in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出安德烈亚斯·布拉特曼，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected-supplementary",
+        "sourceUrl": "https://ommer-lab.com/people/",
+        "imageUrl": "https://ommer-lab.com/wp-content/uploads/2021/10/andreas-e1634826309758.jpg",
+        "path": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg",
+        "reliability": "official-lab-profile",
+        "rights": "The official lab page does not state an open image license; retained as an external reference with attribution."
+      }
+    },
+    {
+      "name": {
+        "en": "Bjorn Ommer",
+        "zh": "比约恩·奥默"
+      },
+      "role": {
+        "en": "Co-author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Bjorn Ommer in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出比约恩·奥默，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected-supplementary",
+        "sourceUrl": "https://ommer-lab.com/people/",
+        "imageUrl": "https://ommer-lab.com/wp-content/uploads/2021/09/Bjorn-1-e1631807002890.jpg",
+        "path": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg",
+        "reliability": "official-lab-profile",
+        "rights": "The official lab page does not state an open image license; retained as an external reference with attribution."
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Robin Rombach",
+    "image": {
+      "path": "resources/images/external/ai100-2022-stable-diffusion/robin-rombach-portrait.jpg",
+      "sourceName": {
+        "en": "Latent Labs",
+        "zh": "Latent Labs"
+      },
+      "sourceUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+      "imageUrl": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+      "license": {
+        "en": "The source page does not state a repository-compatible license; recheck before external redistribution.",
+        "zh": "来源页未声明与本仓库兼容的许可；对外再分发前需再次核验。"
+      },
+      "reliability": "secondary-identity-source",
+      "usageStatus": "external-reference",
+      "notes": {
+        "en": "The image is published by Latent Labs with Robin Rombach's name and role.",
+        "zh": "图片由 Latent Labs 发布，并明确标注罗宾·罗姆巴赫的姓名与身份。"
+      },
+      "identityChecks": [
+        "exact-name",
+        "research-role-match",
+        "source-caption-match"
+      ]
+    }
+  },
+  "sourceOverrides": {
+    "source-primary-record": {
+      "notes": {
+        "en": "Primary publication or official project record used for the central technical claims.",
+        "zh": "用于核心技术主张的主论文或官方项目记录。"
+      }
+    },
+    "source-benchcouncil-annual": {
+      "notes": {
+        "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+        "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-ldm-paper",
+      "type": "paper",
+      "label": {
+        "en": "Primary paper",
+        "zh": "原始论文"
+      },
+      "title": {
+        "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+        "zh": "《High-Resolution Image Synthesis with Latent Diffusion Models》"
+      },
+      "url": "https://arxiv.org/abs/2112.10752",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary paper for the latent-space diffusion architecture, cross-attention conditioning and evaluations.",
+        "zh": "用于核对潜空间扩散架构、交叉注意力条件控制与评测的原始论文。"
+      }
+    },
+    {
+      "id": "source-ldm-code",
+      "type": "code",
+      "label": {
+        "en": "Code",
+        "zh": "代码"
+      },
+      "title": {
+        "en": "CompVis latent diffusion repository",
+        "zh": "CompVis 潜扩散代码仓库"
+      },
+      "url": "https://github.com/CompVis/latent-diffusion",
+      "language": "en",
+      "purpose": "implementation",
+      "reliability": "primary",
+      "notes": {
+        "en": "Official implementation repository linked by the authors.",
+        "zh": "作者团队发布的官方实现仓库。"
+      }
+    },
+    {
+      "id": "source-ldm-portrait-andreas-blattmann",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "Andreas Blattmann portrait on the Ommer Lab people page",
+        "zh": "Ommer Lab 人物页中的安德烈亚斯·布拉特曼肖像"
+      },
+      "url": "https://ommer-lab.com/people/",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The official lab page places the portrait beside Andreas Blattmann's name.",
+        "zh": "实验室官方页面将肖像展示在安德烈亚斯·布拉特曼姓名旁。"
+      }
+    },
+    {
+      "id": "source-ldm-portrait-bjorn-ommer",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "Bjorn Ommer portrait on the Ommer Lab people page",
+        "zh": "Ommer Lab 人物页中的比约恩·奥默肖像"
+      },
+      "url": "https://ommer-lab.com/people/",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The official lab page identifies Bjorn Ommer as professor and displays the portrait.",
+        "zh": "实验室官方页面标明比约恩·奥默的教授身份并展示该肖像。"
+      }
+    },
+    {
+      "id": "source-ldm-official-project-images",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "Latent Diffusion Models figures on the official project page",
+        "zh": "潜扩散模型官方项目页论文配图"
+      },
+      "url": "https://ommer-lab.com/research/latent-diffusion-models/",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The authors' project page republishes and captions Figure 2 on perceptual and semantic compression.",
+        "zh": "作者官方项目页展示并解释关于感知压缩与语义压缩的 Figure 2。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-core-method",
+      "importance": "core",
+      "text": {
+        "en": "Latent Diffusion Models uses perceptual compression followed by conditional diffusion in latent space.",
+        "zh": "Latent Diffusion Models 采用感知压缩后在潜空间进行条件扩散。"
+      },
+      "sourceIds": [
+        "source-ldm-paper",
+        "source-primary-record"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-historical-significance",
+      "importance": "display",
+      "text": {
+        "en": "Experts generally treat latent diffusion as the efficiency breakthrough that made high-quality text-to-image generation broadly deployable. Its architecture became central to Stable Diffusion and to a large ecosystem of conditioning, editing and personalization methods.",
+        "zh": "专家通常把潜扩散视为让高质量文生图得以广泛部署的效率突破。其架构成为 Stable Diffusion 以及大量条件控制、编辑和个性化方法的核心。"
+      },
+      "sourceIds": [
+        "source-ldm-paper"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Pixel-space diffusion models produced strong images but spent substantial computation repeatedly denoising every pixel. The latent diffusion work asked whether perceptual compression could remove redundant detail before the generative process begins.",
+        "zh": "像素空间扩散模型能够生成高质量图像，但反复对每个像素去噪会消耗大量算力。潜扩散研究追问：能否在生成开始前通过感知压缩去除冗余细节。"
+      },
+      "sourceIds": [
+        "source-ldm-paper",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "A pretrained autoencoder maps images into a lower-dimensional latent representation, where a U-Net learns the diffusion process. Cross-attention injects text or spatial conditions, and the decoder maps the denoised latent back to pixels.",
+        "zh": "预训练自编码器把图像映射到更低维的潜表示，U-Net 在其中学习扩散过程。交叉注意力注入文本或空间条件，解码器再把去噪后的潜表示还原为像素。"
+      },
+      "sourceIds": [
+        "source-ldm-paper",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat latent diffusion as the efficiency breakthrough that made high-quality text-to-image generation broadly deployable. Its architecture became central to Stable Diffusion and to a large ecosystem of conditioning, editing and personalization methods.",
+        "zh": "专家通常把潜扩散视为让高质量文生图得以广泛部署的效率突破。其架构成为 Stable Diffusion 以及大量条件控制、编辑和个性化方法的核心。"
+      },
+      "sourceIds": [
+        "source-ldm-paper",
+        "source-primary-record"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "CVPR Open Access",
+      "zh": "CVPR 开放论文页"
+    },
+    "title": {
+      "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "zh": "《High-Resolution Image Synthesis with Latent Diffusion Models》"
+    },
+    "description": {
+      "en": "The conference record provides the paper, abstract, supplementary material and implementation link.",
+      "zh": "会议论文页提供论文、摘要、补充材料与实现入口。"
+    },
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+    "action": {
+      "en": "Open CVPR paper page",
+      "zh": "打开 CVPR 论文页"
+    },
+    "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘。"
+    },
+    "usage": {
+      "en": "Technical, historical and interaction reference",
+      "zh": "技术、历史与互动说明参考"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2022/assets/ai100-annual-2022-2023-081-latent-diffusion-models.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "Latent Diffusion Models process explainer",
+      "zh": "Latent Diffusion Models 流程解释图"
+    },
+    "subcaption": {
+      "en": "Perceptual compression followed by conditional diffusion in latent space",
+      "zh": "感知压缩后在潜空间进行条件扩散"
+    },
+    "sourceIds": [
+      "source-ldm-paper",
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Primary publication and original local synthesis",
+      "zh": "主论文与本地原创整理"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2112.10752",
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "Diffusion Model Application",
+      "zh": "扩散模型应用"
+    },
+    "method": {
+      "en": "Perceptual compression followed by conditional diffusion in latent space",
+      "zh": "感知压缩后在潜空间进行条件扩散"
+    },
+    "artifact": {
+      "en": "A flexible high-resolution latent diffusion framework",
+      "zh": "灵活的高分辨率潜扩散框架"
+    },
+    "material": {
+      "en": "Autoencoder latents, U-Net denoising and cross-attention conditions",
+      "zh": "自编码器潜表示、U-Net 去噪与交叉注意力条件"
+    },
+    "demo": {
+      "en": "Trace a text condition into the latent U-Net, then compare the smaller latent grid with the final high-resolution image.",
+      "zh": "追踪文本条件如何进入潜空间 U-Net，再比较较小的潜网格与最终高分辨率图像。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Compression",
+          "zh": "压缩"
+        },
+        "text": {
+          "en": "Autoencoder removes imperceptible detail",
+          "zh": "自编码器去除难以感知的细节"
+        }
+      },
+      {
+        "label": {
+          "en": "Latent denoising",
+          "zh": "潜空间去噪"
+        },
+        "text": {
+          "en": "Diffusion runs on a smaller representation",
+          "zh": "扩散在更小的表示上运行"
+        }
+      },
+      {
+        "label": {
+          "en": "Conditioning",
+          "zh": "条件控制"
+        },
+        "text": {
+          "en": "Cross-attention connects text or spatial inputs",
+          "zh": "交叉注意力连接文本或空间输入"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "Germany",
+        "zh": "德国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Encode image to latent",
+        "zh": "把图像编码到潜空间"
+      },
+      {
+        "en": "Denoise with conditioned U-Net",
+        "zh": "使用条件 U-Net 去噪"
+      },
+      {
+        "en": "Decode latent to pixels",
+        "zh": "把潜表示解码为像素"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Evidence cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "The architecture separates perceptual compression from semantic generation and adds cross-attention for flexible conditioning.",
+          "zh": "架构把感知压缩与语义生成分开，并通过交叉注意力实现灵活条件控制。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace a text condition into the latent U-Net, then compare the smaller latent grid with the final high-resolution image.",
+          "zh": "追踪文本条件如何进入潜空间 U-Net，再比较较小的潜网格与最终高分辨率图像。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "CVPR Open Access",
+          "zh": "CVPR 开放论文页"
+        },
+        "title": {
+          "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "zh": "《High-Resolution Image Synthesis with Latent Diffusion Models》"
+        },
+        "description": {
+          "en": "The conference record provides the paper, abstract, supplementary material and implementation link.",
+          "zh": "会议论文页提供论文、摘要、补充材料与实现入口。"
+        },
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+        "action": {
+          "en": "Open CVPR paper page",
+          "zh": "打开 CVPR 论文页"
+        },
+        "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "Where does a latent diffusion model perform most denoising steps?",
+      "zh": "潜扩散模型主要在哪里执行去噪步骤？"
+    },
+    "options": [
+      {
+        "en": "In a compressed latent space",
+        "zh": "在压缩后的潜空间中"
+      },
+      {
+        "en": "Directly on every original pixel only",
+        "zh": "只在所有原始像素上直接进行"
+      },
+      {
+        "en": "Inside a search index",
+        "zh": "在搜索索引中"
+      },
+      {
+        "en": "On robot motor commands",
+        "zh": "在机器人电机指令上"
+      }
+    ],
+    "explanation": {
+      "en": "The autoencoder first compresses images, so diffusion can run on a smaller latent representation.",
+      "zh": "自编码器先压缩图像，因此扩散过程可以在更小的潜表示上运行。"
+    },
+    "sourceIds": [
+      "source-ldm-paper"
+    ],
+    "answer": 0
+  },
+  "reviewNotes": {
+    "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+    "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-081-latent-diffusion-models-portrait-andreas-blattmann",
+      "type": "image",
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/andreas-blattmann.jpg",
+      "role": "portrait",
+      "caption": {
+        "zh": "安德烈亚斯·布拉特曼肖像",
+        "en": "Andreas Blattmann portrait"
+      },
+      "subcaption": {
+        "en": "Co-author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文共同作者"
+      },
+      "sourceId": "source-ldm-portrait-andreas-blattmann",
+      "sourceName": {
+        "en": "Computer Vision & Learning Group, LMU Munich",
+        "zh": "慕尼黑大学计算机视觉与学习组"
+      },
+      "sourceUrl": "https://ommer-lab.com/wp-content/uploads/2021/10/andreas-e1634826309758.jpg",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "The official lab page does not state an open image license.",
+          "zh": "实验室官方页面未声明图片的开放许可。"
+        },
+        "attribution": "Computer Vision & Learning Group, LMU Munich"
+      },
+      "displayUsage": {
+        "en": "Verified contributor portrait",
+        "zh": "已核验的主要人物肖像"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    },
+    {
+      "id": "asset-annual-081-latent-diffusion-models-portrait-bjorn-ommer",
+      "type": "image",
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/bjorn-ommer.jpg",
+      "role": "portrait",
+      "caption": {
+        "zh": "比约恩·奥默肖像",
+        "en": "Bjorn Ommer portrait"
+      },
+      "subcaption": {
+        "en": "Co-author of the Latent Diffusion Models paper",
+        "zh": "Latent Diffusion Models 论文共同作者"
+      },
+      "sourceId": "source-ldm-portrait-bjorn-ommer",
+      "sourceName": {
+        "en": "Computer Vision & Learning Group, LMU Munich",
+        "zh": "慕尼黑大学计算机视觉与学习组"
+      },
+      "sourceUrl": "https://ommer-lab.com/wp-content/uploads/2021/09/Bjorn-1-e1631807002890.jpg",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "The official lab page does not state an open image license.",
+          "zh": "实验室官方页面未声明图片的开放许可。"
+        },
+        "attribution": "Computer Vision & Learning Group, LMU Munich"
+      },
+      "displayUsage": {
+        "en": "Verified contributor portrait",
+        "zh": "已核验的主要人物肖像"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    },
+    {
+      "id": "asset-annual-081-latent-diffusion-models-perceptual-compression",
+      "type": "image",
+      "path": "resources/images/benchcouncil-ai100-annual/annual-081-latent-diffusion-models-perceptual-compression.png",
+      "role": "research-result",
+      "caption": {
+        "zh": "潜扩散中的感知压缩与语义压缩",
+        "en": "Perceptual and semantic compression in latent diffusion"
+      },
+      "subcaption": {
+        "zh": "作者官方 LDM 项目页展示的论文 Figure 2",
+        "en": "Figure 2 from the authors' official LDM project page"
+      },
+      "sourceId": "source-ldm-official-project-images",
+      "sourceName": {
+        "en": "Computer Vision & Learning Group, LMU Munich",
+        "zh": "慕尼黑大学计算机视觉与学习组"
+      },
+      "sourceUrl": "https://ommer-lab.com/wp-content/uploads/2022/08/article-Figure2-1.png",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Paper figure reproduced from the authors' official project page; no separate image license is stated.",
+          "zh": "图片来自作者官方项目页展示的论文图；页面未另行声明图片许可。"
+        },
+        "attribution": "Rombach et al.; Computer Vision & Learning Group, LMU Munich"
+      },
+      "displayUsage": {
+        "en": "Primary-paper concept figure",
+        "zh": "主论文概念图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-081-latent-diffusion-models-portrait-robin-rombach",
+    "asset-annual-081-latent-diffusion-models-portrait-andreas-blattmann",
+    "asset-annual-081-latent-diffusion-models-portrait-bjorn-ommer",
+    "asset-annual-081-latent-diffusion-models-perceptual-compression",
+    "asset-annual-081-latent-diffusion-models-record"
+  ],
+  "overviewImageAssetId": "asset-annual-081-latent-diffusion-models-portrait-robin-rombach"
+}

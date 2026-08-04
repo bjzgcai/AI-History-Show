@@ -1,17 +1,17 @@
 {
   "id": "bench-council-ai100",
   "title": {
-    "zh": "AI 顶尖成就（BenchCouncil）",
-    "en": "Top AI Achievements (BenchCouncil)"
+    "zh": "AI 顶尖成就图谱（BenchCouncil）",
+    "en": "AI Achievement Map (BenchCouncil)"
   },
   "subtitle": {
-    "en": "The canonical long-term achievement table published at the BenchCouncil AI100 root page.",
-    "zh": "严格对应 BenchCouncil AI100 根页面长期主表的 canonical 成就分支。"
+    "en": "119 long-term main-table achievements + 20 selected achievements from 2022–2023",
+    "zh": "119 项长期主表成就 + 20 项 2022–2023 年度精选"
   },
   "type": "achievement-map",
   "description": {
-    "en": "This storyline contains exactly the 119 unique works in the BenchCouncil long-term AI100 table retrieved on 2026-07-30; annual candidate lists are tracked separately.",
-    "zh": "本分支严格包含 2026-07-30 获取的 BenchCouncil 长期 AI100 主表中的 119 个唯一成果；年度候选列表单独处理。"
+    "en": "This storyline combines the 119 unique works in the BenchCouncil long-term AI100 table retrieved on 2026-07-30 with twenty selected achievements from the 2022-2023 annual table.",
+    "zh": "本故事线汇集 2026-07-30 获取的 BenchCouncil 长期 AI100 主表中的 119 个唯一成果，并加入从 2022–2023 年度表中精选的 20 项成就。"
   },
   "events": [
     {
@@ -846,13 +846,153 @@
       "order": 1190,
       "enabled": true,
       "milestoneId": "milestone-1983-simulated-annealing"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-001-swin-transformer-v2",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1200,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-swin-transformer-v2"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-002-simmim",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1210,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-simmim"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-024-whisper",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1220,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-whisper"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-039-palm",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1230,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-palm"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-048-instructgpt",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1240,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-instructgpt"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-059-chain-of-thought-prompting",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1250,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-chain-of-thought-prompting"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-058-chatgpt",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1260,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-chatgpt"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-081-latent-diffusion-models",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1270,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-latent-diffusion-models"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-114-alphatensor",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1280,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-alphatensor"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-117-saycan",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1290,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2022-saycan"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-035-llama",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1300,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-llama"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-051-gpt-4",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1310,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-gpt-4"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-057-claude",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1320,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-claude"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-028-blip-2",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1330,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-blip-2"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-063-llava",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1340,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-llava"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-037-palm-e",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1350,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-palm-e"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-094-controlnet",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1360,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-controlnet"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-101-segment-anything",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1370,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-segment-anything"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-087-gen2",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1380,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-gen2"
+    },
+    {
+      "eventId": "ai100-annual-2022-2023-110-esmfold",
+      "variant": "bench-council-ai100-2022-2023",
+      "order": 1390,
+      "enabled": true,
+      "milestoneId": "milestone-ai100-map-2023-esmfold"
     }
   ],
   "review": {
-    "status": "draft",
+    "status": "reviewed",
     "notes": {
-      "zh": "Step 2 初版，仅引用 Step 3 计划迁移的样例事件。",
-      "en": "Step 2 draft that only references the sample events planned for Step 3."
+      "zh": "完整保留 BenchCouncil 长期主表的 119 项成就，并在其后加入 2022 与 2023 年各 10 项年度精选。",
+      "en": "Preserves all 119 achievements from the BenchCouncil long-term table and appends ten selected annual achievements from each of 2022 and 2023."
     }
   }
 }

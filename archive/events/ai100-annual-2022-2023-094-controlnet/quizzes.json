@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-094-controlnet-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Why are ControlNet’s connecting convolutions initialized to zero?",
+      "zh": "为什么 ControlNet 的连接卷积初始化为零？"
+    },
+    "options": [
+      {
+        "en": "To avoid disturbing the pretrained model at the start",
+        "zh": "避免在训练开始时扰动预训练模型"
+      },
+      {
+        "en": "To delete all image information",
+        "zh": "删除所有图像信息"
+      },
+      {
+        "en": "To disable training forever",
+        "zh": "永久禁用训练"
+      },
+      {
+        "en": "To convert images into audio",
+        "zh": "把图像转换为音频"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "Zero initialization makes the added branch initially contribute nothing, then learn useful control signals during training.",
+      "zh": "零初始化让新增分支一开始不产生影响，再在训练中逐步学习有用的控制信号。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-arxiv-paper"
+    ],
+    "assetIds": [
+      "asset-annual-094-controlnet-record"
+    ]
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "id": "source-primary-record",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "zh": "《High-Resolution Image Synthesis with Latent Diffusion Models》"
+    },
+    "authors": [
+      "Robin Rombach",
+      "Andreas Blattmann",
+      "Bjorn Ommer"
+    ],
+    "year": 2022,
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary publication or official project record used for the central technical claims.",
+      "zh": "用于核心技术主张的主论文或官方项目记录。"
+    }
+  },
+  {
+    "id": "source-openalex-record",
+    "type": "paper-index",
+    "label": {
+      "en": "Paper index",
+      "zh": "论文索引"
+    },
+    "title": {
+      "en": "OpenAlex record for High-Resolution Image Synthesis with Latent Diffusion Models",
+      "zh": "High-Resolution Image Synthesis with Latent Diffusion Models 的 OpenAlex 文献记录"
+    },
+    "url": "https://api.openalex.org/works?search=High-Resolution%20Image%20Synthesis%20with%20Latent%20Diffusion%20Models",
+    "language": "en",
+    "purpose": "bibliographic-verification",
+    "reliability": "secondary",
+    "notes": {
+      "en": "Bibliographic metadata used to verify the publication year and landing page.",
+      "zh": "用于核对出版年份与落地页面的书目元数据。"
+    }
+  },
+  {
+    "id": "source-benchcouncil-annual",
+    "type": "official-page",
+    "label": {
+      "en": "Official page",
+      "zh": "官方页面"
+    },
+    "title": {
+      "en": "AI100: Top 100 AI achievements (2022-2023)",
+      "zh": "AI100：人工智能百大成就（2022-2023）"
+    },
+    "url": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+      "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+    }
+  },
+  {
+    "id": "source-annual-081-latent-diffusion-models-portrait-robin-rombach",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Robin Rombach portrait source",
+      "zh": "罗宾·罗姆巴赫人物图片来源"
+    },
+    "url": "https://www.latentlabs.com/wp-content/uploads/2025/02/Robin-update-5.jpg",
+    "language": "und",
+    "purpose": "image-provenance",
+    "reliability": "secondary",
+    "notes": {
+      "en": "The image is published by Latent Labs with Robin Rombach's name and role. Reliability: secondary-identity-source. Usage note: The source page does not state a repository-compatible license; recheck before external redistribution.",
+      "zh": "图片由 Latent Labs 发布，并明确标注罗宾·罗姆巴赫的姓名与身份。 可靠性：secondary-identity-source。使用备注：来源页未声明与本仓库兼容的许可；对外再分发前需再次核验。"
+    }
+  },
+  {
+    "id": "source-ldm-paper",
+    "type": "paper",
+    "label": {
+      "en": "Primary paper",
+      "zh": "原始论文"
+    },
+    "title": {
+      "en": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "zh": "《High-Resolution Image Synthesis with Latent Diffusion Models》"
+    },
+    "url": "https://arxiv.org/abs/2112.10752",
+    "language": "en",
+    "purpose": "core-evidence",
+    "reliability": "primary",
+    "notes": {
+      "en": "Primary paper for the latent-space diffusion architecture, cross-attention conditioning and evaluations.",
+      "zh": "用于核对潜空间扩散架构、交叉注意力条件控制与评测的原始论文。"
+    }
+  },
+  {
+    "id": "source-ldm-code",
+    "type": "code",
+    "label": {
+      "en": "Code",
+      "zh": "代码"
+    },
+    "title": {
+      "en": "CompVis latent diffusion repository",
+      "zh": "CompVis 潜扩散代码仓库"
+    },
+    "url": "https://github.com/CompVis/latent-diffusion",
+    "language": "en",
+    "purpose": "implementation",
+    "reliability": "primary",
+    "notes": {
+      "en": "Official implementation repository linked by the authors.",
+      "zh": "作者团队发布的官方实现仓库。"
+    }
+  },
+  {
+    "id": "source-ldm-portrait-andreas-blattmann",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Andreas Blattmann portrait on the Ommer Lab people page",
+      "zh": "Ommer Lab 人物页中的安德烈亚斯·布拉特曼肖像"
+    },
+    "url": "https://ommer-lab.com/people/",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The official lab page places the portrait beside Andreas Blattmann's name.",
+      "zh": "实验室官方页面将肖像展示在安德烈亚斯·布拉特曼姓名旁。"
+    }
+  },
+  {
+    "id": "source-ldm-portrait-bjorn-ommer",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Bjorn Ommer portrait on the Ommer Lab people page",
+      "zh": "Ommer Lab 人物页中的比约恩·奥默肖像"
+    },
+    "url": "https://ommer-lab.com/people/",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The official lab page identifies Bjorn Ommer as professor and displays the portrait.",
+      "zh": "实验室官方页面标明比约恩·奥默的教授身份并展示该肖像。"
+    }
+  },
+  {
+    "id": "source-ldm-official-project-images",
+    "type": "image-source",
+    "label": {
+      "en": "Image source",
+      "zh": "图片来源"
+    },
+    "title": {
+      "en": "Latent Diffusion Models figures on the official project page",
+      "zh": "潜扩散模型官方项目页论文配图"
+    },
+    "url": "https://ommer-lab.com/research/latent-diffusion-models/",
+    "language": "en",
+    "purpose": "image-provenance",
+    "reliability": "primary",
+    "notes": {
+      "en": "The authors' project page republishes and captions Figure 2 on perceptual and semantic compression.",
+      "zh": "作者官方项目页展示并解释关于感知压缩与语义压缩的 Figure 2。"
+    }
+  }
+]

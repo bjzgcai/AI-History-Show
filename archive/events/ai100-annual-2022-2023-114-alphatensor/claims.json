@@ -1,0 +1,64 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "AlphaTensor is row 114 of the BenchCouncil AI100 (2022-2023) annual table in the AI4Others area.",
+      "zh": "AlphaTensor 是 BenchCouncil AI100（2022-2023）年度表第 114 行，所属领域为“AI 其他应用”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates AlphaTensor with “Discovering faster matrix multiplication algorithms with reinforcement learning”.",
+      "zh": "年度表把 AlphaTensor 与论文《Discovering faster matrix multiplication algorithms with reinforcement learning》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli”.",
+      "zh": "“主要人物”字段依次列出 侯赛因·法兹、马泰·巴洛格、黄士杰、托马斯·于贝尔、贝尔纳迪诺·罗梅拉-帕雷德斯、普什米特·科利；官方英文原文为“Alhussein Fawzi, Matej Balog, Aja Huang, Thomas Hubert, Bernardino Romera-Paredes, Pushmeet Kohli”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-core-method",
+    "importance": "core",
+    "text": {
+      "en": "AlphaTensor uses alphazero-style search over tensor decompositions.",
+      "zh": "AlphaTensor 采用在张量分解空间中进行 AlphaZero 式搜索。"
+    },
+    "sourceIds": [
+      "source-alphatensor-deepmind",
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-historical-significance",
+    "importance": "display",
+    "text": {
+      "en": "Experts generally treat AlphaTensor as a landmark for AI-assisted algorithm discovery because the output is an explicit, verifiable algorithm. It broadened the AlphaZero paradigm from board games to mathematical search and inspired later work on optimizing low-level computation.",
+      "zh": "专家通常把 AlphaTensor 视为 AI 辅助算法发现的里程碑，因为其输出是明确且可验证的算法。它把 AlphaZero 范式从棋类扩展到数学搜索，并推动了后续底层计算优化研究。"
+    },
+    "sourceIds": [
+      "source-alphatensor-deepmind"
+    ],
+    "status": "verified"
+  }
+]

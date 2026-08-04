@@ -1,0 +1,377 @@
+{
+  "storylineId": "bench-council-ai100-2022-2023",
+  "eventId": "ai100-annual-2022-2023-035-llama",
+  "presentationMode": "archive",
+  "displayTitle": {
+    "en": "LLaMa",
+    "zh": "LLaMa"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Open foundation language models",
+    "zh": "AI100（2022-2023）· 开放基础语言模型"
+  },
+  "displayDescription": {
+    "en": "<p>LLaMA introduced a family of 7B to 65B parameter foundation language models trained on publicly available datasets. The work emphasized that smaller models trained on more tokens could deliver strong inference-time efficiency and competitive benchmark performance.</p><p>The release gave researchers access to capable base models at several scales and accelerated work on adaptation, quantization and instruction tuning.</p>",
+    "zh": "<p>LLaMA 推出一组参数规模从 70 亿到 650 亿的基础语言模型，并在公开可用数据集上训练。该工作强调：让较小模型看到更多训练 token，可以兼顾较强基准表现与更高推理效率。</p><p>这次发布让研究者能够在多个规模上使用有能力的基础模型，并加速了适配、量化和指令微调研究。</p>"
+  },
+  "emphasis": [
+    "benchcouncil-annual-2022-2023",
+    "official-row-35"
+  ],
+  "visual": "configuredPaper",
+  "visualModules": [
+    {
+      "type": "archiveLink",
+      "site": {
+        "en": "arXiv",
+        "zh": "arXiv"
+      },
+      "title": {
+        "en": "LLaMA: Open and Efficient Foundation Language Models",
+        "zh": "《LLaMA: Open and Efficient Foundation Language Models》"
+      },
+      "description": {
+        "en": "The primary paper documents the model family, public-data mixture, token budgets and benchmark comparisons.",
+        "zh": "主论文记录模型系列、公开数据混合、token 预算与基准比较。"
+      },
+      "url": "https://arxiv.org/abs/2302.13971",
+      "source": "https://arxiv.org/abs/2302.13971",
+      "license": {
+        "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+        "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+      },
+      "usage": {
+        "en": "Primary technical or official release evidence",
+        "zh": "主要技术或官方发布证据"
+      },
+      "action": {
+        "en": "Open LLaMA paper",
+        "zh": "打开 LLaMA 论文"
+      }
+    }
+  ],
+  "assetIds": [
+    "asset-annual-035-llama-portrait-edouard-grave",
+    "asset-annual-035-llama-official-release-image",
+    "asset-annual-035-llama-record"
+  ],
+  "overviewImageAssetId": "asset-annual-035-llama-portrait-edouard-grave",
+  "sourceIds": [
+    "source-primary-record",
+    "source-openalex-record",
+    "source-benchcouncil-annual",
+    "source-annual-035-llama-portrait-edouard-grave",
+    "source-meta-announcement",
+    "source-llama-repository",
+    "source-edouard-github-profile",
+    "source-llama-official-image"
+  ],
+  "claimIds": [
+    "claim-annual-membership",
+    "claim-publication-record",
+    "claim-contributor-record",
+    "claim-model-family",
+    "claim-public-data"
+  ],
+  "quizId": "ai100-annual-2022-2023-035-llama-quiz-1",
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Frontier language models were becoming larger and less accessible, while scaling-law research showed that parameter count alone did not determine compute-efficient training. LLaMA explored how smaller base models trained on more tokens could remain capable while being less expensive to run.",
+        "zh": "前沿语言模型不断变大且越来越难以获取，而缩放规律研究表明，参数量并不是计算高效训练的唯一决定因素。LLaMA 探索了较小基础模型在更多 token 上训练后，如何保持能力并降低运行成本。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The team trained decoder-only transformers at four sizes using a large mixture of publicly available text and code. More training tokens were allocated to the smaller models, making the 7B and 13B variants practical research targets rather than merely reduced versions of the largest model.",
+        "zh": "团队使用大规模公开文本与代码混合数据，训练了四种规模的纯解码器 Transformer。较小模型获得更多训练 token，使 70 亿和 130 亿参数版本成为实用研究对象，而不只是最大模型的缩小版。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat the first LLaMA release as a turning point for research on adaptable foundation models outside a small set of hosted APIs. Its compact checkpoints catalyzed instruction tuning, low-rank adaptation, quantization and a broad open-model ecosystem, even though the original weights were released under research-oriented access terms.",
+        "zh": "专家通常把第一代 LLaMA 视为可适配基础模型研究走出少数托管 API 的转折点。它的紧凑检查点催生了指令微调、低秩适配、量化和广泛的开放模型生态，尽管原始权重采用面向研究的访问条款。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    }
+  ],
+  "category": {
+    "en": "BenchCouncil AI100 (2022-2023)",
+    "zh": "BenchCouncil AI100（2022-2023）"
+  },
+  "figures": [
+    {
+      "name": {
+        "en": "Hugo Touvron",
+        "zh": "雨果·图夫龙"
+      },
+      "role": {
+        "en": "First author of the LLaMA paper",
+        "zh": "LLaMA 论文第一作者"
+      },
+      "figureType": "person",
+      "avatar": ""
+    },
+    {
+      "name": {
+        "en": "Thibaut Lavril",
+        "zh": "蒂博·拉夫里尔"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "figureType": "person",
+      "avatar": ""
+    },
+    {
+      "name": {
+        "en": "Gautier Izacard",
+        "zh": "戈蒂耶·伊扎卡尔"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "figureType": "person",
+      "avatar": ""
+    },
+    {
+      "name": {
+        "en": "Edouard Grave",
+        "zh": "爱德华·格拉夫"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "figureType": "person",
+      "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg"
+    },
+    {
+      "name": {
+        "en": "Guillaume Lample",
+        "zh": "纪尧姆·朗普勒"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "figureType": "person",
+      "avatar": ""
+    }
+  ],
+  "quote": {
+    "en": "Llama: Open and efficient foundation language models",
+    "zh": "《Llama: Open and efficient foundation language models》"
+  },
+  "quoteMeta": {
+    "speaker": "",
+    "workTitle": {
+      "en": "Llama: Open and efficient foundation language models",
+      "zh": "《Llama: Open and efficient foundation language models》"
+    },
+    "workAuthors": {
+      "en": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Edouard Grave, Guillaume Lample",
+      "zh": "雨果·图夫龙、蒂博·拉夫里尔、戈蒂耶·伊扎卡尔、爱德华·格拉夫、纪尧姆·朗普勒"
+    },
+    "sourceLabel": "",
+    "sourceUrl": "https://arxiv.org/abs/2302.13971"
+  },
+  "quotePage": {
+    "en": "Primary publication record",
+    "zh": "原始论文记录"
+  },
+  "quoteAttribution": {
+    "en": "Llama: Open and efficient foundation language models",
+    "zh": "《Llama: Open and efficient foundation language models》"
+  },
+  "achievement": {
+    "area": {
+      "en": "LLM",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Compute-aware training of several decoder-only model scales",
+      "zh": "面向计算效率训练多种规模的纯解码器模型"
+    },
+    "artifact": {
+      "en": "The first LLaMA foundation model family",
+      "zh": "第一代 LLaMA 基础模型系列"
+    },
+    "material": {
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+    },
+    "demo": {
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Model Family",
+          "zh": "模型系列"
+        },
+        "text": {
+          "en": "Four sizes from 7B to 65B parameters",
+          "zh": "四种规模，从 70 亿到 650 亿参数"
+        }
+      },
+      {
+        "label": {
+          "en": "Training Data",
+          "zh": "训练数据"
+        },
+        "text": {
+          "en": "A mixture of publicly available text and code",
+          "zh": "公开可用文本与代码的混合数据"
+        }
+      },
+      {
+        "label": {
+          "en": "Efficiency",
+          "zh": "效率"
+        },
+        "text": {
+          "en": "Smaller models receive more training tokens",
+          "zh": "较小模型获得更多训练 token"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Public text and code",
+        "zh": "公开文本与代码"
+      },
+      {
+        "en": "7B / 13B / 33B / 65B",
+        "zh": "70亿 / 130亿 / 330亿 / 650亿"
+      },
+      {
+        "en": "Extended token training",
+        "zh": "增加训练 token"
+      },
+      {
+        "en": "Efficient base models",
+        "zh": "高效基础模型"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-035-llama_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Technical cue",
+          "zh": "技术线索"
+        },
+        "text": {
+          "en": "More training tokens make smaller foundation models useful at inference time",
+          "zh": "这张图以四个阶段解释：公开文本与代码、70亿 / 130亿 / 330亿 / 650亿、增加训练 token、高效基础模型。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "arXiv",
+          "zh": "arXiv"
+        },
+        "title": {
+          "en": "LLaMA: Open and Efficient Foundation Language Models",
+          "zh": "《LLaMA: Open and Efficient Foundation Language Models》"
+        },
+        "description": {
+          "en": "The primary paper documents the model family, public-data mixture, token budgets and benchmark comparisons.",
+          "zh": "主论文记录模型系列、公开数据混合、token 预算与基准比较。"
+        },
+        "url": "https://arxiv.org/abs/2302.13971",
+        "source": "https://arxiv.org/abs/2302.13971",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open LLaMA paper",
+          "zh": "打开 LLaMA 论文"
+        }
+      }
+    ],
+    "annualRecord": {
+      "officialOrder": 35,
+      "area": "LLM",
+      "work": "LLaMa",
+      "publication": "Llama: Open and efficient foundation language models",
+      "citation": "1891",
+      "contributors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Edouard Grave, Guillaume Lample",
+      "institution": "Meta",
+      "country": "USA",
+      "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+    }
+  },
+  "location": {
+    "name": {
+      "en": "Meta",
+      "zh": "Meta"
+    },
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Generated from official annual row 35; source spellings and blank fields are intentionally preserved.",
+      "zh": "依据官方年度表第 35 行生成；有意保留来源拼写与空白字段。"
+    }
+  }
+}

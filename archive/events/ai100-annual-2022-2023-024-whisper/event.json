@@ -1,0 +1,86 @@
+{
+  "id": "ai100-annual-2022-2023-024-whisper",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "Whisper",
+    "zh": "Whisper"
+  },
+  "summary": {
+    "en": "A robust multilingual speech recognizer trained on 680,000 hours of weakly supervised audio",
+    "zh": "使用 68 万小时弱监督音频训练的稳健多语种语音识别系统"
+  },
+  "description": {
+    "en": "<p>Whisper reframed speech recognition as a scale-and-diversity problem. OpenAI trained an encoder-decoder Transformer on 680,000 hours of multilingual and multitask audio gathered with weak supervision, avoiding dependence on a narrowly curated benchmark corpus.</p><p>The model performs transcription, translation, language identification and timestamp prediction through a shared token interface. Its zero-shot robustness across datasets made a practical case for broad web-scale supervision in speech systems.</p>",
+    "zh": "<p>Whisper 把语音识别重新表述为规模与数据多样性问题。OpenAI 使用 68 万小时多语种、多任务弱监督音频训练编码器-解码器 Transformer，降低了对狭窄人工整理基准语料的依赖。</p><p>模型通过统一的 token 接口完成转写、翻译、语言识别和时间戳预测。它在多个数据集上的零样本稳健性，证明了大规模网络弱监督对实用语音系统的价值。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "alec-radford",
+      "name": {
+        "en": "Alec Radford",
+        "zh": "亚历克·拉德福德"
+      },
+      "role": {
+        "en": "First author of the Whisper paper",
+        "zh": "Whisper 论文第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "jong-wook-kim",
+      "name": {
+        "en": "Jong Wook Kim",
+        "zh": "金钟旭"
+      },
+      "role": {
+        "en": "Co-author of the Whisper paper",
+        "zh": "Whisper 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "ilya-sutskever",
+      "name": {
+        "en": "Ilya Sutskever",
+        "zh": "伊利亚·苏茨克维"
+      },
+      "role": {
+        "en": "Co-author of the Whisper paper",
+        "zh": "Whisper 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/ilya-sutskever.jpg"
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+    }
+  }
+}

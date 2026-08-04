@@ -1,0 +1,62 @@
+{
+  "id": "ai100-annual-2022-2023-117-saycan",
+  "year": 2022,
+  "date": "2022",
+  "title": {
+    "en": "SayCan",
+    "zh": "SayCan"
+  },
+  "summary": {
+    "en": "A robot-planning method that combines language-model usefulness with learned affordance scores",
+    "zh": "把语言模型的任务相关性与学习到的可供性评分结合起来的机器人规划方法"
+  },
+  "description": {
+    "en": "<p>SayCan connected a large language model's broad semantic knowledge with a robot's learned ability to execute concrete skills. For each possible action, the language model estimates how useful it is for the instruction while an affordance model estimates whether the robot can successfully perform it in the current scene.</p><p>Multiplying these scores selects steps that are both meaningful and feasible, allowing a mobile manipulator to carry out long-horizon household instructions. The approach became an influential template for grounding language-model planning in embodied feedback.</p>",
+    "zh": "<p>SayCan 把大语言模型的广泛语义知识与机器人执行具体技能的学习能力连接起来。对每个候选动作，语言模型判断它对当前指令是否有用，可供性模型则判断机器人在当前场景中能否成功执行。</p><p>将两类评分相乘，可以选择既有意义又可执行的步骤，使移动操作机器人完成长时程家务指令。该方法成为用具身反馈约束语言模型规划的重要范式。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Google",
+      "zh": "Google"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "chelsea-finn",
+      "name": {
+        "en": "Chelsea Finn",
+        "zh": "切尔西·芬恩"
+      },
+      "role": {
+        "en": "Co-author of the SayCan paper",
+        "zh": "SayCan 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/benchcouncil-ai100-annual/portraits/chelsea-finn.jpg"
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+      "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+    }
+  }
+}

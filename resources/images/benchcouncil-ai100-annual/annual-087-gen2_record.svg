@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Gen-2 documented conditioning modes</title>
+  <desc id="desc">Release inputs and outputs; generation internals were not publicly specified. Runway documented multiple conditioning modes, but did not publish a reproducible Gen-2 architecture. Keep the prompt fixed, switch the visual reference and compare motion, composition and style.</desc>
+  <rect width="960" height="560" fill="#0d1722"/>
+  <text x="48" y="52" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="28" font-weight="700"><tspan x="48" dy="0">Gen-2 documented conditioning modes</tspan></text>
+  <text x="48" y="82" fill="#a9bdd0" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="48" dy="0">Release inputs and outputs; generation internals were not publicly specified</tspan></text>
+  <g>
+  <rect x="48" y="126" width="198" height="176" rx="8" fill="#173d51" stroke="#62b7d7" stroke-width="2"/>
+  <text x="66" y="155" fill="#62b7d7" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="66" dy="0">STEP 1</tspan></text>
+  <text x="66" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="66" dy="0">Text prompt</tspan></text>
+  <text x="66" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="66" dy="0">Describe motion and</tspan><tspan x="66" dy="18">appearance</tspan></text>
+  <path d="M246 214 H252" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M240 205 L252 214 L240 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="270" y="126" width="198" height="176" rx="8" fill="#254631" stroke="#79c58c" stroke-width="2"/>
+  <text x="288" y="155" fill="#79c58c" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="288" dy="0">STEP 2</tspan></text>
+  <text x="288" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="288" dy="0">Optional visual</tspan><tspan x="288" dy="22">reference</tspan></text>
+  <text x="288" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="288" dy="0">Image or source video</tspan></text>
+  <path d="M468 214 H474" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M462 205 L474 214 L462 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="492" y="126" width="198" height="176" rx="8" fill="#55401f" stroke="#e0aa59" stroke-width="2"/>
+  <text x="510" y="155" fill="#e0aa59" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="510" dy="0">STEP 3</tspan></text>
+  <text x="510" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="510" dy="0">Video generation</tspan><tspan x="510" dy="22">system</tspan></text>
+  <text x="510" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="510" dy="0">Internal architecture</tspan><tspan x="510" dy="18">undisclosed</tspan></text>
+  <path d="M690 214 H696" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M684 205 L696 214 L684 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="714" y="126" width="198" height="176" rx="8" fill="#563246" stroke="#ce86a6" stroke-width="2"/>
+  <text x="732" y="155" fill="#ce86a6" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="732" dy="0">STEP 4</tspan></text>
+  <text x="732" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="732" dy="0">Generated video clip</tspan></text>
+  <text x="732" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="732" dy="0">Conditioned moving</tspan><tspan x="732" dy="18">frames</tspan></text>
+
+</g>
+  <rect x="48" y="336" width="864" height="82" rx="8" fill="#132635" stroke="#315267" stroke-width="1.5"/>
+  <text x="68" y="363" fill="#7cc0df" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="68" dy="0">EVIDENCE BOUNDARY</tspan></text>
+  <text x="68" y="390" fill="#d9e5ee" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="68" dy="0">Runway documented multiple conditioning modes, but did not publish a reproducible Gen-2</tspan><tspan x="68" dy="19">architecture.</tspan></text>
+  <rect x="48" y="438" width="864" height="78" rx="8" fill="#132635" stroke="#315267" stroke-width="1.5"/>
+  <text x="68" y="465" fill="#86d19b" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="68" dy="0">INTERACTION</tspan></text>
+  <text x="68" y="492" fill="#d9e5ee" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="68" dy="0">Keep the prompt fixed, switch the visual reference and compare motion, composition and style.</tspan></text>
+  <text x="912" y="542" text-anchor="end" fill="#7890a3" font-family="Arial, sans-serif" font-size="10">Original local redraw · 2026-08-03</text>
+</svg>

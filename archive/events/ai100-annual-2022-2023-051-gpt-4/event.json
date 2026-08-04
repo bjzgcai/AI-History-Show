@@ -1,0 +1,63 @@
+{
+  "id": "ai100-annual-2022-2023-051-gpt-4",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "GPT-4",
+    "zh": "GPT-4"
+  },
+  "summary": {
+    "en": "A large multimodal model released with expanded capability and safety evaluation",
+    "zh": "具备扩展能力与安全评测的大型多模态模型"
+  },
+  "description": {
+    "en": "<p>GPT-4 was introduced as a large multimodal model that accepts image and text inputs and produces text outputs. OpenAI reported broad improvements over GPT-3.5 on professional and academic benchmarks while emphasizing that the model still hallucinates, has a limited context window and can make reasoning errors.</p><p>The release paired capability evaluation with a technical report and system card describing adversarial testing, expert feedback and post-training safety work. This combined treatment of capability and risk made the GPT-4 release an important reference point for later frontier-model evaluations.</p>",
+    "zh": "<p>GPT-4 被介绍为能够接收图像与文本输入、生成文本输出的大型多模态模型。OpenAI 报告它在专业与学术基准上普遍超过 GPT-3.5，同时强调模型仍会产生幻觉、上下文窗口有限，并可能出现推理错误。</p><p>这次发布同时提供技术报告与系统卡，说明对抗测试、专家反馈和后训练安全工作。这种同时呈现能力与风险的发布方式，使 GPT-4 成为后来前沿模型评测的重要参照点。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "OpenAI",
+      "zh": "OpenAI"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "openai-company",
+      "name": {
+        "en": "OpenAI",
+        "zh": "OpenAI"
+      },
+      "role": {
+        "en": "Company behind GPT-4 and ChatGPT",
+        "zh": "GPT-4 与 ChatGPT 的开发公司"
+      },
+      "figureType": "product",
+      "avatar": "resources/images/benchcouncil-ai100-annual/chatgpt-logo.png",
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed event-specific research on 2026-08-03 and expanded company-context research after copyright restrictions were relaxed. The exact BenchCouncil title, order, institution, country and blank contributor/publication fields remain preserved. Sam Altman is verified as OpenAI's founding co-chair and GPT-4-era CEO, and Greg Brockman as an OpenAI cofounder and public GPT-4 demonstrator; both are recorded only as related company figures, not GPT-4 authors or BenchCouncil official contributors. Their clear TED portraits are documented but not selected because the official contributor field is blank. The OpenAI logo candidate is sourced through a Commons mirror that identifies OpenAI as source and author, marks the text logo public domain for copyright purposes and warns that trademark restrictions remain. The package retains one original explainer and selectedPortrait remains null.",
+      "zh": "于 2026-08-03 完成事件专项研究，并在放宽版权限制后扩展公司背景检索。BenchCouncil 的准确标题、顺序、机构、国家以及空人物/空论文字段均保持不变。现已核验山姆·奥特曼是 OpenAI 创立时的联合主席和 GPT-4 发布时期 CEO，格雷格·布罗克曼是 OpenAI 联合创始人并曾公开演示 GPT-4；两人只作为公司相关人物记录，不称为 GPT-4 作者或 BenchCouncil 官方贡献者。两张清晰 TED 肖像均已记录，但因官方人物字段为空而不选用。OpenAI 标识候选来自 Commons 镜像；文件页将 OpenAI 标为来源和作者，按文字标识说明其版权层面属于公有领域，同时警告仍受商标限制。本事件仍只使用一张原创解释图，selectedPortrait 保持 null。"
+    }
+  }
+}

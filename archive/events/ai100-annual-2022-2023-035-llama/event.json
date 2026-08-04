@@ -1,0 +1,110 @@
+{
+  "id": "ai100-annual-2022-2023-035-llama",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "LLaMa",
+    "zh": "LLaMa"
+  },
+  "summary": {
+    "en": "A family of efficient foundation language models trained on publicly available data",
+    "zh": "在公开可用数据上训练的高效基础语言模型系列"
+  },
+  "description": {
+    "en": "<p>LLaMA introduced a family of 7B to 65B parameter foundation language models trained on publicly available datasets. The work emphasized that smaller models trained on more tokens could deliver strong inference-time efficiency and competitive benchmark performance.</p><p>The release gave researchers access to capable base models at several scales and accelerated work on adaptation, quantization and instruction tuning.</p>",
+    "zh": "<p>LLaMA 推出一组参数规模从 70 亿到 650 亿的基础语言模型，并在公开可用数据集上训练。该工作强调：让较小模型看到更多训练 token，可以兼顾较强基准表现与更高推理效率。</p><p>这次发布让研究者能够在多个规模上使用有能力的基础模型，并加速了适配、量化和指令微调研究。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Meta",
+      "zh": "Meta"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "hugo-touvron",
+      "name": {
+        "en": "Hugo Touvron",
+        "zh": "雨果·图夫龙"
+      },
+      "role": {
+        "en": "First author of the LLaMA paper",
+        "zh": "LLaMA 论文第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "thibaut-lavril",
+      "name": {
+        "en": "Thibaut Lavril",
+        "zh": "蒂博·拉夫里尔"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "gautier-izacard",
+      "name": {
+        "en": "Gautier Izacard",
+        "zh": "戈蒂耶·伊扎卡尔"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "edouard-grave",
+      "name": {
+        "en": "Edouard Grave",
+        "zh": "爱德华·格拉夫"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2023-llama/edouard-grave.jpg"
+    },
+    {
+      "figureId": "guillaume-lample",
+      "name": {
+        "en": "Guillaume Lample",
+        "zh": "纪尧姆·朗普勒"
+      },
+      "role": {
+        "en": "Co-author of the LLaMA paper",
+        "zh": "LLaMA 论文共同作者"
+      },
+      "organizationIds": []
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and no portrait was selected because no candidate met the identity and usage-context threshold.",
+      "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，没有候选同时满足身份与使用语境门槛，因此不选用肖像。"
+    }
+  }
+}

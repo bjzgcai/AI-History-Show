@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-081-latent-diffusion-models-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Where does a latent diffusion model perform most denoising steps?",
+      "zh": "潜扩散模型主要在哪里执行去噪步骤？"
+    },
+    "options": [
+      {
+        "en": "In a compressed latent space",
+        "zh": "在压缩后的潜空间中"
+      },
+      {
+        "en": "Directly on every original pixel only",
+        "zh": "只在所有原始像素上直接进行"
+      },
+      {
+        "en": "Inside a search index",
+        "zh": "在搜索索引中"
+      },
+      {
+        "en": "On robot motor commands",
+        "zh": "在机器人电机指令上"
+      }
+    ],
+    "explanation": {
+      "en": "The autoencoder first compresses images, so diffusion can run on a smaller latent representation.",
+      "zh": "自编码器先压缩图像，因此扩散过程可以在更小的潜表示上运行。"
+    },
+    "sourceIds": [
+      "source-ldm-paper"
+    ],
+    "answer": 0,
+    "assetIds": [
+      "asset-annual-081-latent-diffusion-models-record"
+    ]
+  }
+]

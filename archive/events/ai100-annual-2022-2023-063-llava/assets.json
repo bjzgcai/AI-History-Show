@@ -1,0 +1,126 @@
+[
+  {
+    "id": "asset-annual-063-llava-portrait-haotian-liu",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-llava/haotian-liu.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Haotian Liu portrait",
+      "zh": "刘昊天肖像"
+    },
+    "subcaption": {
+      "en": "First author of the LLaVA paper",
+      "zh": "LLaVA 论文第一作者"
+    },
+    "sourceId": "source-annual-063-llava-portrait-haotian-liu",
+    "sourceName": {
+      "en": "Haotian Liu academic homepage",
+      "zh": "刘昊天学术主页"
+    },
+    "sourceUrl": "https://hliu.cc/",
+    "sourceReliability": "primary-identity-source",
+    "provenanceNotes": {
+      "en": "The portrait appears on Haotian Liu’s own homepage beside his identity, LLaVA project history and University of Wisconsin-Madison Ph.D. record.",
+      "zh": "该肖像展示在刘昊天本人主页中，与其身份、LLaVA 项目经历和威斯康星大学麦迪逊分校博士经历同时出现。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "attribution": "Haotian Liu academic homepage"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-063-llava-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-063-llava_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "LLaVA visual instruction tuning",
+      "zh": "LLaVA 视觉指令微调"
+    },
+    "subcaption": {
+      "en": "Align visual features, then teach the combined model to follow image-grounded instructions",
+      "zh": "对齐视觉特征，再训练组合模型遵循图像相关指令"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "Visual Instruction Tuning",
+      "zh": "《视觉指令微调》"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2304.08485",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-063-llava-official-architecture",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-llava/llava-official-architecture.png",
+    "role": "historical-diagram",
+    "caption": {
+      "en": "LLaVA vision-language architecture",
+      "zh": "LLaVA 视觉语言架构图"
+    },
+    "subcaption": {
+      "en": "A learned projection maps vision-encoder features into the language model alongside instruction tokens.",
+      "zh": "学习得到的投影层把视觉编码特征映射到语言模型，并与指令 token 一起输入。"
+    },
+    "sourceId": "source-llava-official-architecture",
+    "sourceName": {
+      "en": "LLaVA official project page",
+      "zh": "LLaVA 官方项目页"
+    },
+    "sourceUrl": "https://llava-vl.github.io/",
+    "imageUrl": "https://llava-vl.github.io/images/llava_arch.png",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "Liu et al., LLaVA project"
+    },
+    "displayUsage": {
+      "en": "Official project architecture",
+      "zh": "官方项目架构图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

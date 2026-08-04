@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-037-palm-e",
+  "status": "complete",
+  "officialOrder": 37,
+  "work": "PaLM-E",
+  "official": {
+    "area": "LLM",
+    "publication": "Palm-e: An embodied multimodal language model",
+    "citation": "304",
+    "contributors": "Danny Driess, Pete Florence",
+    "institution": "Google, TU Berlin",
+    "country": "Germany",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "An embodied multimodal language model that connects sensor observations to language reasoning",
+    "zh": "把传感器观察连接到语言推理的具身多模态语言模型"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Embodied multimodal reasoning",
+    "zh": "AI100（2022-2023）· 具身多模态推理"
+  },
+  "description": {
+    "en": "<p>PaLM-E extends a pretrained language model with continuous observations from vision and robotic sensors. Encoded images, robot states and other measurements are inserted into the same sequence as text, allowing one model to answer visual questions, describe scenes and support embodied planning.</p><p>The study shows positive transfer between robotics, vision-language and language tasks as the model scales, rather than treating each robot task as an isolated policy.</p>",
+    "zh": "<p>PaLM-E 把视觉与机器人传感器的连续观察接入预训练语言模型。编码后的图像、机器人状态和其他测量值与文本进入同一序列，使一个模型能够回答视觉问题、描述场景并支持具身规划。</p><p>研究显示，随着模型扩展，机器人、视觉语言与纯语言任务之间会产生正向迁移，而不是把每个机器人任务都视为孤立策略。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Danny Driess",
+        "zh": "丹尼·德里斯"
+      },
+      "role": {
+        "en": "First author of the PaLM-E paper",
+        "zh": "PaLM-E 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Danny Driess at position 1 in the official contributor prefix, and the primary paper lists the same person among its authors.",
+          "zh": "BenchCouncil 在官方人物前缀第 1 位列出丹尼·德里斯，主论文作者表也包含同一人物。"
+        }
+      },
+      "portraitSearch": {
+        "status": "no-reliable-candidate",
+        "reliability": "primary-publication-identity-confirmed-no-displayable-portrait",
+        "rights": "No image is selected. The paper and official project evidence confirm identity, but no candidate was retained with both a reliable identity match and sufficient usage context.",
+        "candidates": []
+      }
+    },
+    {
+      "name": {
+        "en": "Pete Florence",
+        "zh": "皮特·弗洛伦斯"
+      },
+      "role": {
+        "en": "Co-author of the PaLM-E paper",
+        "zh": "PaLM-E 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-benchcouncil-annual",
+          "source-primary-record",
+          "source-pete-florence-profile"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Pete Florence at position 2 in the official contributor prefix, and the primary paper lists the same person among its authors. The researcher-controlled profile independently matches the identity and event history.",
+          "zh": "BenchCouncil 在官方人物前缀第 2 位列出皮特·弗洛伦斯，主论文作者表也包含同一人物。研究者本人维护的主页进一步匹配其身份与成果经历。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected",
+        "sourceUrl": "https://www.peteflorence.com/",
+        "imageUrl": "https://www.peteflorence.com/img/pete-crop-compressed.jpg",
+        "reliability": "primary-identity-source",
+        "rights": "The researcher-controlled or institution-hosted page publishes the matching image but states no redistribution license; the local copy is retained as an attributed external reference.",
+        "candidates": [
+          {
+            "imageUrl": "https://www.peteflorence.com/img/pete-crop-compressed.jpg",
+            "decision": "selected",
+            "notes": "The portrait appears beside Pete Florence’s name, biography and Google research history on his own homepage."
+          }
+        ]
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Pete Florence",
+    "image": {
+      "path": "resources/images/external/ai100-2023-palm-e/pete-florence.jpg",
+      "sourceName": {
+        "en": "Pete Florence personal homepage",
+        "zh": "皮特·弗洛伦斯个人主页"
+      },
+      "sourceUrl": "https://www.peteflorence.com/",
+      "imageUrl": "https://www.peteflorence.com/img/pete-crop-compressed.jpg",
+      "reliability": "primary-identity-source",
+      "usageStatus": "external-reference",
+      "license": {
+        "en": "The source does not state redistribution rights; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "notes": {
+        "en": "The portrait appears beside Pete Florence’s name, biography and Google research history on his own homepage.",
+        "zh": "该肖像在皮特·弗洛伦斯本人主页中与姓名、简介和 Google 研究经历同时出现。"
+      },
+      "attribution": "Pete Florence personal homepage",
+      "identityChecks": [
+        "exact-contributor-name",
+        "event-authorship-matches",
+        "official-affiliation-history-matches"
+      ]
+    }
+  },
+  "sourceOverrides": {
+    "source-primary-record": {
+      "type": "paper",
+      "label": {
+        "en": "Primary paper",
+        "zh": "原始论文"
+      },
+      "title": {
+        "en": "PaLM-E: An Embodied Multimodal Language Model",
+        "zh": "《PaLM-E：具身多模态语言模型》"
+      },
+      "authors": [
+        "Danny Driess",
+        "Fei Xia",
+        "Mehdi S. M. Sajjadi",
+        "Corey Lynch",
+        "Aakanksha Chowdhery",
+        "Brian Ichter",
+        "Ayzaan Wahid",
+        "Jonathan Tompson",
+        "Quan Vuong",
+        "Tianhe Yu",
+        "Wenlong Huang",
+        "Yevgen Chebotar",
+        "Pierre Sermanet",
+        "Daniel Duckworth",
+        "Sergey Levine",
+        "Vincent Vanhoucke",
+        "Karol Hausman",
+        "Marc Toussaint",
+        "Klaus Greff",
+        "Andy Zeng",
+        "Igor Mordatch",
+        "Pete Florence"
+      ],
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.03378",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary paper used to verify authorship, multimodal tokenization, embodied tasks and scaling results.",
+        "zh": "用于核对作者、多模态 token 化、具身任务与扩展结果的主论文。"
+      }
+    },
+    "source-openalex-record": {
+      "notes": {
+        "en": "Bibliographic metadata is retained only as a secondary cross-check; technical and identity claims use primary records.",
+        "zh": "书目元数据仅作为辅助交叉核对；技术与人物主张使用原始记录。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-palm-e-project",
+      "type": "project-page",
+      "label": {
+        "en": "Project page",
+        "zh": "项目页面"
+      },
+      "title": {
+        "en": "PaLM-E project page",
+        "zh": "PaLM-E 项目页面"
+      },
+      "url": "https://palm-e.github.io/",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Research-team project page with the paper, task videos and model overview.",
+        "zh": "研究团队项目页，提供论文、任务视频与模型概览。"
+      }
+    },
+    {
+      "id": "source-pete-florence-profile",
+      "type": "personal-page",
+      "label": {
+        "en": "Personal homepage",
+        "zh": "个人主页"
+      },
+      "title": {
+        "en": "Pete Florence personal homepage",
+        "zh": "皮特·弗洛伦斯个人主页"
+      },
+      "url": "https://www.peteflorence.com/",
+      "language": "en",
+      "purpose": "biography",
+      "reliability": "primary",
+      "notes": {
+        "en": "Researcher-controlled page that identifies Pete Florence, records his Google DeepMind role, announces PaLM-E and displays the selected portrait. No redistribution license is stated.",
+        "zh": "研究者本人维护的页面，确认皮特·弗洛伦斯身份与 Google DeepMind 经历，发布 PaLM-E 动态并展示所选肖像；页面未声明再分发许可。"
+      }
+    },
+    {
+      "id": "source-palm-e-figure-1",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "PaLM-E Figure 1: embodied multimodal model overview",
+        "zh": "PaLM-E Figure 1：具身多模态模型总览"
+      },
+      "url": "https://ar5iv.labs.arxiv.org/html/2303.03378/assets/x2.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "Paper-rendered Figure 1 combines mobile manipulation, task-and-motion planning, tabletop manipulation, visual question answering and the multimodal-token path into PaLM. It is the most representative commonly used overview screenshot, but the existing original local explainer remains the single selected explanatory image; the HTML rendering states no separate redistribution license.",
+        "zh": "论文 HTML 渲染的 Figure 1 汇集移动操作、任务与运动规划、桌面操作、视觉问答，以及多模态 token 进入 PaLM 的路径，是最具代表性的常用总览截图。页面仍只选用现有本地原创解释图；HTML 渲染未为该图单独声明再分发许可。"
+      }
+    },
+    {
+      "id": "source-palm-e-official-approach",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "PaLM-E official approach diagram",
+        "zh": "PaLM-E 官方方法图"
+      },
+      "url": "https://palm-e.github.io/img/approach.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The official PaLM-E project page publishes the selected multimodal-token and control-output method diagram.",
+        "zh": "PaLM-E 官方项目页发布了所选的多模态 token 注入与控制输出方法图。"
+      }
+    },
+    {
+      "id": "source-palm-e-official-teaser",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "PaLM-E official task overview",
+        "zh": "PaLM-E 官方任务概览图"
+      },
+      "url": "https://palm-e.github.io/img/palm-e-teaser.png",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "The official project page publishes the selected overview of robotics, visual-language and language-only tasks.",
+        "zh": "官方项目页发布了所选的机器人、视觉语言和纯语言任务概览图。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-multimodal-sentence",
+      "importance": "core",
+      "text": {
+        "en": "PaLM-E maps continuous sensor observations into embeddings that are interleaved with text tokens for a pretrained language model.",
+        "zh": "PaLM-E 把连续传感器观察映射为嵌入，并与文本 token 交错输入预训练语言模型。"
+      },
+      "sourceIds": [
+        "source-primary-record",
+        "source-palm-e-project"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-positive-transfer",
+      "importance": "core",
+      "text": {
+        "en": "The paper reports positive transfer across embodied, vision-language and language tasks as model scale increases.",
+        "zh": "论文报告随着模型规模增加，具身、视觉语言与语言任务之间出现正向迁移。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Robotic learning systems often used task-specific policies, while large language models showed broad transfer across textual tasks. PaLM-E asked whether sensor observations could enter a language model directly so that embodied tasks share the same general-purpose reasoning substrate.",
+        "zh": "机器人学习系统往往使用任务专属策略，而大语言模型已经展示跨文本任务的广泛迁移。PaLM-E 追问：能否把传感器观察直接送入语言模型，让具身任务共享同一个通用推理基础。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "Images and robot states are encoded as continuous embeddings and placed into a multimodal sentence alongside ordinary text tokens. The language model then predicts text that can express answers, plans or high-level decisions, while joint training mixes robotics data with vision-language and language tasks.",
+        "zh": "图像与机器人状态被编码为连续嵌入，并与普通文本 token 一起组成多模态句子。语言模型随后预测文本形式的答案、计划或高层决策，联合训练则混合机器人、视觉语言和纯语言任务。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat PaLM-E as an early large-scale bridge between embodied AI and multimodal language modeling. Its formulation influenced later vision-language-action systems by showing that robot observations and general web-scale knowledge can coexist inside one sequence model.",
+        "zh": "专家通常把 PaLM-E 视为具身 AI 与多模态语言建模之间较早的大规模桥梁。它证明机器人观察与网络规模通用知识可以共存于同一个序列模型中，并影响了后来的视觉语言动作系统。"
+      },
+      "sourceIds": [
+        "source-primary-record"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "PaLM-E Project",
+      "zh": "PaLM-E Project"
+    },
+    "title": {
+      "en": "PaLM-E: An Embodied Multimodal Language Model",
+      "zh": "《PaLM-E: An Embodied Multimodal Language Model》"
+    },
+    "description": {
+      "en": "The research-team project page links the paper and shows how visual and robotic observations become inputs to one language model.",
+      "zh": "研究团队项目页链接论文，并展示视觉与机器人观察如何成为同一语言模型的输入。"
+    },
+    "url": "https://palm-e.github.io/",
+    "source": "https://palm-e.github.io/",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+    },
+    "usage": {
+      "en": "Primary technical or official release evidence",
+      "zh": "主要技术或官方发布证据"
+    },
+    "action": {
+      "en": "Open PaLM-E project",
+      "zh": "打开 PaLM-E 项目页面"
+    }
+  },
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2023/assets/ai100-annual-2022-2023-037-palm-e.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "PaLM-E multimodal sentence",
+      "zh": "PaLM-E 多模态序列"
+    },
+    "subcaption": {
+      "en": "Encode robot observations and text into one sequence model",
+      "zh": "把机器人观测与文本编码到同一个序列模型中"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "PaLM-E: An Embodied Multimodal Language Model",
+      "zh": "《PaLM-E：具身多模态语言模型》"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2303.03378",
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "LLM",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Injecting embodied sensor embeddings into a pretrained language model",
+      "zh": "把具身传感器嵌入注入预训练语言模型"
+    },
+    "artifact": {
+      "en": "PaLM-E embodied multimodal model",
+      "zh": "PaLM-E 具身多模态模型"
+    },
+    "material": {
+      "en": "Primary publication or official release evidence, implementation materials and the original local explainer",
+      "zh": "主论文或官方发布证据、实现材料与本地原创解释图"
+    },
+    "demo": {
+      "en": "Follow the four-stage path and compare what enters, what is learned and what the system produces.",
+      "zh": "沿四阶段路径观察输入、学习内容与系统输出。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Observations",
+          "zh": "观察"
+        },
+        "text": {
+          "en": "Images and robot states become continuous tokens",
+          "zh": "图像与机器人状态变为连续 token"
+        }
+      },
+      {
+        "label": {
+          "en": "Shared Backbone",
+          "zh": "共享主干"
+        },
+        "text": {
+          "en": "One language model spans several task families",
+          "zh": "一个语言模型覆盖多类任务"
+        }
+      },
+      {
+        "label": {
+          "en": "Transfer",
+          "zh": "迁移"
+        },
+        "text": {
+          "en": "Robotics benefits from vision-language and language data",
+          "zh": "机器人任务受益于视觉语言和语言数据"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "Germany",
+        "zh": "德国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Camera and robot state",
+        "zh": "相机与机器人状态"
+      },
+      {
+        "en": "Continuous embeddings",
+        "zh": "连续嵌入"
+      },
+      {
+        "en": "PaLM language backbone",
+        "zh": "PaLM 语言主干"
+      },
+      {
+        "en": "Answer or action plan",
+        "zh": "答案或动作计划"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-037-palm-e_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Technical cue",
+          "zh": "技术线索"
+        },
+        "text": {
+          "en": "Encode robot observations and text into one sequence model",
+          "zh": "这张图以四个阶段解释：相机与机器人状态、连续嵌入、PaLM 语言主干、答案或动作计划。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Trace the arrows, then identify which stage reuses a pretrained component and which stage learns new information.",
+          "zh": "沿箭头逐步查看，并判断哪个阶段复用预训练组件、哪个阶段学习新信息。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "PaLM-E Project",
+          "zh": "PaLM-E Project"
+        },
+        "title": {
+          "en": "PaLM-E: An Embodied Multimodal Language Model",
+          "zh": "《PaLM-E: An Embodied Multimodal Language Model》"
+        },
+        "description": {
+          "en": "The research-team project page links the paper and shows how visual and robotic observations become inputs to one language model.",
+          "zh": "研究团队项目页链接论文，并展示视觉与机器人观察如何成为同一语言模型的输入。"
+        },
+        "url": "https://palm-e.github.io/",
+        "source": "https://palm-e.github.io/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw and does not copy a published figure.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘，不复制已发表图形。"
+        },
+        "usage": {
+          "en": "Primary technical or official release evidence",
+          "zh": "主要技术或官方发布证据"
+        },
+        "action": {
+          "en": "Open PaLM-E project",
+          "zh": "打开 PaLM-E 项目页面"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "How does PaLM-E present robot observations to its language model?",
+      "zh": "PaLM-E 如何把机器人观察交给语言模型？"
+    },
+    "options": [
+      {
+        "en": "As continuous embeddings mixed with text tokens",
+        "zh": "作为与文本 token 混合的连续嵌入"
+      },
+      {
+        "en": "As a separate handwritten rule book",
+        "zh": "作为独立的手写规则册"
+      },
+      {
+        "en": "Only as final reward numbers",
+        "zh": "只作为最终奖励数值"
+      },
+      {
+        "en": "By deleting the text input",
+        "zh": "通过删除文本输入"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "PaLM-E encodes images and robot states into continuous embeddings placed in the same sequence as text.",
+      "zh": "PaLM-E 把图像和机器人状态编码为连续嵌入，并与文本放入同一序列。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ]
+  },
+  "reviewNotes": {
+    "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and one identity-matched, attributed external-reference image was selected.",
+    "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，选择一张身份匹配且保留署名的外部参考图片。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-037-palm-e-official-approach",
+      "type": "image",
+      "path": "resources/images/external/ai100-2023-palm-e/palm-e-official-approach.png",
+      "role": "historical-diagram",
+      "caption": {
+        "en": "PaLM-E multimodal token and control path",
+        "zh": "PaLM-E 多模态 token 与控制路径"
+      },
+      "subcaption": {
+        "en": "Continuous sensor embeddings and image tokens enter PaLM alongside text, producing language or robot-control outputs.",
+        "zh": "连续传感器嵌入与图像 token 和文本一起进入 PaLM，输出语言结果或机器人控制指令。"
+      },
+      "sourceId": "source-palm-e-official-approach",
+      "sourceName": {
+        "en": "PaLM-E official project page",
+        "zh": "PaLM-E 官方项目页"
+      },
+      "sourceUrl": "https://palm-e.github.io/",
+      "imageUrl": "https://palm-e.github.io/img/approach.png",
+      "sourceReliability": "primary-paper-or-official-project-image",
+      "provenanceNotes": {
+        "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+        "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+      },
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+          "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+        },
+        "attribution": "Driess et al., PaLM-E project"
+      },
+      "displayUsage": {
+        "en": "Official method diagram",
+        "zh": "官方方法图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    },
+    {
+      "id": "asset-annual-037-palm-e-official-teaser",
+      "type": "image",
+      "path": "resources/images/external/ai100-2023-palm-e/palm-e-official-teaser.png",
+      "role": "supporting-image",
+      "caption": {
+        "en": "PaLM-E embodied and visual-language tasks",
+        "zh": "PaLM-E 具身与视觉语言任务"
+      },
+      "subcaption": {
+        "en": "The project overview connects mobile manipulation, planning, visual question answering and language-only tasks.",
+        "zh": "项目概览连接移动操作、任务规划、视觉问答与纯语言任务。"
+      },
+      "sourceId": "source-palm-e-official-teaser",
+      "sourceName": {
+        "en": "PaLM-E official project page",
+        "zh": "PaLM-E 官方项目页"
+      },
+      "sourceUrl": "https://palm-e.github.io/",
+      "imageUrl": "https://palm-e.github.io/img/palm-e-teaser.png",
+      "sourceReliability": "primary-paper-or-official-project-image",
+      "provenanceNotes": {
+        "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+        "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+      },
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+          "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+        },
+        "attribution": "Driess et al., PaLM-E project"
+      },
+      "displayUsage": {
+        "en": "Official task overview",
+        "zh": "官方任务概览图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-037-palm-e-portrait-pete-florence",
+    "asset-annual-037-palm-e-official-approach",
+    "asset-annual-037-palm-e-official-teaser",
+    "asset-annual-037-palm-e-record"
+  ],
+  "overviewImageAssetId": "asset-annual-037-palm-e-portrait-pete-florence"
+}
