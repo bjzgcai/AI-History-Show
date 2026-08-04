@@ -1,0 +1,64 @@
+[
+  {
+    "id": "claim-annual-membership",
+    "importance": "core",
+    "text": {
+      "en": "Chain-of-Thought Prompting is row 59 of the BenchCouncil AI100 (2022-2023) annual table in the LLM area.",
+      "zh": "Chain-of-Thought Prompting 是 BenchCouncil AI100（2022-2023）年度表第 59 行，所属领域为“大语言模型”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-publication-record",
+    "importance": "display",
+    "text": {
+      "en": "The annual table associates Chain-of-Thought Prompting with “Chain of Thought Prompting Elicits Reasoning in Large Language Models”.",
+      "zh": "年度表把 Chain-of-Thought Prompting 与论文《Chain of Thought Prompting Elicits Reasoning in Large Language Models》关联。"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-contributor-record",
+    "importance": "display",
+    "text": {
+      "en": "The Main Contributors field is “Jason Wei, Denny Zhou”.",
+      "zh": "“主要人物”字段依次列出 杰森·魏、丹尼·周；官方英文原文为“Jason Wei, Denny Zhou”。"
+    },
+    "sourceIds": [
+      "source-benchcouncil-annual"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-core-method",
+    "importance": "core",
+    "text": {
+      "en": "Chain-of-Thought Prompting uses few-shot demonstrations with intermediate natural-language reasoning.",
+      "zh": "Chain-of-Thought Prompting 采用包含自然语言中间推理的少样本示范。"
+    },
+    "sourceIds": [
+      "source-cot-paper",
+      "source-primary-record"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "claim-historical-significance",
+    "importance": "display",
+    "text": {
+      "en": "Experts generally treat chain-of-thought prompting as a foundational interface for eliciting reasoning from large models, while cautioning that fluent rationales are not guaranteed to be faithful explanations. The method directly motivated self-consistency and many later reasoning-time strategies.",
+      "zh": "专家通常把思维链提示视为激发大模型推理能力的基础接口，同时提醒流畅的推理文字不一定忠实反映模型内部原因。该方法直接推动了自洽性以及许多后续推理时策略。"
+    },
+    "sourceIds": [
+      "source-cot-paper"
+    ],
+    "status": "verified"
+  }
+]

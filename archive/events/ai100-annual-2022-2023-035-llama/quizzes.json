@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-035-llama-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What training choice helped make smaller LLaMA models competitive?",
+      "zh": "哪项训练选择帮助较小的 LLaMA 模型保持竞争力？"
+    },
+    "options": [
+      {
+        "en": "Training them on more tokens",
+        "zh": "让它们在更多 token 上训练"
+      },
+      {
+        "en": "Replacing text with only images",
+        "zh": "只用图像替代文本"
+      },
+      {
+        "en": "Removing all attention layers",
+        "zh": "移除所有注意力层"
+      },
+      {
+        "en": "Using no pretraining data",
+        "zh": "不使用预训练数据"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "LLaMA emphasized that smaller models can be strong and efficient when trained on substantially more tokens.",
+      "zh": "LLaMA 强调，较小模型在更多 token 上充分训练后，可以兼顾能力与效率。"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "assetIds": [
+      "asset-annual-035-llama-record"
+    ]
+  }
+]

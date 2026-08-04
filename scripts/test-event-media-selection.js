@@ -30,6 +30,8 @@ assert.equal(
     'game records should not become commentary media even when their path looks structural'
 );
 assert.equal(selection.isCommentaryMediaCandidate('flow.svg', 'algorithm-explainer'), true);
+assert.equal(selection.isCommentaryMediaCandidate('paper-architecture.png', 'architecture-diagram'), true);
+assert.equal(selection.isCommentaryMediaCandidate('annual-record.svg', 'annual-achievement-explainer'), true);
 assert.equal(
     selection.findCommentaryMedia(['portrait.jpg'], () => 'portrait'),
     ''

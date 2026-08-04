@@ -3,9 +3,10 @@
 
     const DEFAULT_STORYLINE_STYLES = {
         'bench-council-ai100': { color: '#ff8833', order: 1 },
-        'gaming-ai': { color: '#33b0ff', order: 2 },
-        'humanistic-cycle': { color: '#44dd88', order: 3 },
-        'deep-learning': { color: '#b088ff', order: 4 }
+        'bench-council-ai100-2022-2023': { color: '#e6b84a', order: 2 },
+        'gaming-ai': { color: '#33b0ff', order: 3 },
+        'humanistic-cycle': { color: '#44dd88', order: 4 },
+        'deep-learning': { color: '#b088ff', order: 5 }
     };
     const PORTRAIT_HINT_PATTERN =
         /\bportrait\b|\/people\/|(?:^|[_/-])portrait(?:[._/-]|$)|人物(?:肖像|照片|图|资料)?|肖像/i;
@@ -179,7 +180,8 @@
 
     function selectMilestoneVariant(milestone, storylineId) {
         if (!storylineId || storylineId === 'all') return milestone;
-        const variant = milestone && milestone.storylineVariants && milestone.storylineVariants[storylineId];
+        const configuredVariant = milestone && milestone.storylineVariants && milestone.storylineVariants[storylineId];
+        const variant = configuredVariant || (getStorylineId(milestone) === storylineId ? milestone : null);
         if (!variant) return null;
         return {
             ...variant,
@@ -194,7 +196,18 @@
         return (milestones || []).map((milestone) => selectMilestoneVariant(milestone, storylineId)).filter(Boolean);
     }
 
-    function summarizeStorylines(milestones, localize = localizeFallback, styles = DEFAULT_STORYLINE_STYLES) {
+    function summarizeStorylines(
+        milestones,
+        localize = localizeFallback,
+        styles = DEFAULT_STORYLINE_STYLES,
+        storylineDefinitions = []
+    ) {
+        const definitionsById = new Map(
+            (Array.isArray(storylineDefinitions) ? storylineDefinitions : []).map((definition) => [
+                definition.id,
+                definition
+            ])
+        );
         const summaries = new Map();
         for (const canonicalMilestone of milestones || []) {
             for (const milestone of getMilestoneVariants(canonicalMilestone)) {
@@ -203,9 +216,11 @@
                 const year = getSortYear(milestone);
                 const storyline =
                     milestone.storyline && typeof milestone.storyline === 'object' ? milestone.storyline : {};
+                const definition = definitionsById.get(id) || {};
                 const summary = summaries.get(id) || {
                     id,
                     name: localize(storyline.name) || id,
+                    subtitle: localize(definition.subtitle || storyline.subtitle),
                     count: 0,
                     minYear: Number.POSITIVE_INFINITY,
                     maxYear: Number.NEGATIVE_INFINITY,
@@ -244,19 +259,33 @@
         } = TIMELINE_LAYOUT_MODES[mode];
         const maxStagger = Math.max(...staggerPattern);
         const availableHeight = Math.max(0, Number(options.viewportHeight) || 0);
-        const sorted = [...(milestones || [])].sort((a, b) => compareMilestones(a, b, options.localize));
+        const sorted = [...(milestones || [])].sort((a, b) => {
+            if (options.preserveSourceOrder) {
+                return Number((a && a.order) || 0) - Number((b && b.order) || 0);
+            }
+            return compareMilestones(a, b, options.localize);
+        });
         const groups = [];
         const groupMap = new Map();
 
-        for (const milestone of sorted) {
-            const year = getSortYear(milestone);
-            if (!Number.isFinite(year)) continue;
-            if (!groupMap.has(year)) {
-                const group = { year, milestones: [] };
-                groupMap.set(year, group);
-                groups.push(group);
+        if (options.preserveSourceOrder && sorted.length) {
+            const sourceYears = sorted.map(getSortYear).filter(Number.isFinite);
+            groups.push({
+                year: sourceYears.length ? Math.min(...sourceYears) : 0,
+                label: String(options.sequenceLabel || ''),
+                milestones: sorted
+            });
+        } else {
+            for (const milestone of sorted) {
+                const year = getSortYear(milestone);
+                if (!Number.isFinite(year)) continue;
+                if (!groupMap.has(year)) {
+                    const group = { year, milestones: [] };
+                    groupMap.set(year, group);
+                    groups.push(group);
+                }
+                groupMap.get(year).milestones.push(milestone);
             }
-            groupMap.get(year).milestones.push(milestone);
         }
 
         let cursor = edgePadding;
@@ -292,7 +321,7 @@
                 cards.push({ milestone, year: group.year, yearX, x, side, staggerIndex });
             });
 
-            years.push({ year: group.year, x: yearX, count: group.milestones.length });
+            years.push({ year: group.year, label: group.label || '', x: yearX, count: group.milestones.length });
             cursor += groupWidth;
             previousYear = group.year;
         }
@@ -550,6 +579,93 @@
             .join('');
     }
 
+    function createOverflowTooltipController(root, scope) {
+        let tooltip = null;
+        let activeTarget = null;
+        const documentRef = root.ownerDocument;
+
+        function hide() {
+            activeTarget = null;
+            if (tooltip) tooltip.classList.remove('is-visible');
+        }
+
+        function position(element) {
+            if (!tooltip || typeof element.getBoundingClientRect !== 'function') return;
+            const anchor = element.getBoundingClientRect();
+            const tooltipRect = tooltip.getBoundingClientRect();
+            const viewportWidth = Math.max(0, scope.innerWidth || 0);
+            const viewportHeight = Math.max(0, scope.innerHeight || 0);
+            const edge = 12;
+            const gap = 6;
+            const maxLeft = Math.max(edge, viewportWidth - tooltipRect.width - edge);
+            const left = Math.min(Math.max(anchor.left, edge), maxLeft);
+            const below = anchor.bottom + gap;
+            const top =
+                below + tooltipRect.height <= viewportHeight - edge
+                    ? below
+                    : Math.max(edge, anchor.top - tooltipRect.height - gap);
+            tooltip.style.left = `${Math.round(left)}px`;
+            tooltip.style.top = `${Math.round(top)}px`;
+        }
+
+        function show(element) {
+            if (!element.classList.contains('has-overflow-tooltip')) return;
+            const fullText = String(element.dataset.overflowTitle || '').trim();
+            if (!fullText || !documentRef || !documentRef.body) return;
+            if (!tooltip) {
+                tooltip = documentRef.createElement('div');
+                tooltip.className = 'chrono-overflow-tooltip';
+                tooltip.setAttribute('role', 'tooltip');
+                documentRef.body.appendChild(tooltip);
+            }
+            activeTarget = element;
+            tooltip.textContent = fullText;
+            tooltip.classList.add('is-visible');
+            position(element);
+        }
+
+        function getTarget(node) {
+            if (!node || typeof node.closest !== 'function') return null;
+            const element = node.closest('[data-overflow-title].has-overflow-tooltip');
+            return element && root.contains(element) ? element : null;
+        }
+
+        function handlePointerOver(event) {
+            const element = getTarget(event.target);
+            if (element && element !== activeTarget) show(element);
+        }
+
+        function handlePointerOut(event) {
+            if (!activeTarget) return;
+            if (event.relatedTarget && activeTarget.contains(event.relatedTarget)) return;
+            hide();
+        }
+
+        function sync() {
+            hide();
+            root.querySelectorAll('[data-overflow-title]').forEach((element) => {
+                const fullText = String(element.dataset.overflowTitle || '').trim();
+                const isTruncated =
+                    element.scrollWidth > element.clientWidth + 1 || element.scrollHeight > element.clientHeight + 1;
+                element.removeAttribute('title');
+                element.classList.toggle('has-overflow-tooltip', Boolean(fullText && isTruncated));
+            });
+        }
+
+        function destroy() {
+            root.removeEventListener('pointerover', handlePointerOver);
+            root.removeEventListener('pointerout', handlePointerOut);
+            if (tooltip) tooltip.remove();
+            tooltip = null;
+            activeTarget = null;
+        }
+
+        root.addEventListener('pointerover', handlePointerOver);
+        root.addEventListener('pointerout', handlePointerOut);
+
+        return { sync, hide, destroy };
+    }
+
     function create(root, initialConfig = {}) {
         if (!root) throw new Error('ChronologyOverview requires a root element.');
         let config = initialConfig;
@@ -557,6 +673,7 @@
         let imageObserver = null;
         let resizeTimer = 0;
         let suppressedCardClick = { eventId: '', until: 0 };
+        const overflowTooltipController = createOverflowTooltipController(root, globalScope);
 
         const localize = (value) => {
             if (typeof config.localize === 'function') return String(config.localize(value) || '');
@@ -587,7 +704,8 @@
             return summarizeStorylines(
                 getCanonicalMilestones(),
                 localize,
-                config.storylineStyles || DEFAULT_STORYLINE_STYLES
+                config.storylineStyles || DEFAULT_STORYLINE_STYLES,
+                config.storylines
             );
         }
 
@@ -707,11 +825,19 @@
                 mode: viewport.mode,
                 viewportWidth: viewport.width,
                 viewportHeight: viewport.timelineHeight,
-                localize
+                localize,
+                preserveSourceOrder: Boolean(config.preserveSourceOrder),
+                sequenceLabel: config.sequenceLabel
             });
             const text = labels();
             const filters = [
-                { id: 'all', name: text.all, count: getCanonicalMilestones().length, color: ALL_EVENTS_COLOR },
+                {
+                    id: 'all',
+                    name: text.all,
+                    subtitle: '',
+                    count: getCanonicalMilestones().length,
+                    color: ALL_EVENTS_COLOR
+                },
                 ...summaries
             ];
 
@@ -721,19 +847,27 @@
                         ${filters
                             .map(
                                 (filter) => `
-                            <button class="chrono-storyline-segment${state.storylineId === filter.id ? ' is-active' : ''}" type="button"
-                                data-filter-id="${escapeHtml(filter.id)}" style="--story-color:${filter.color}" aria-pressed="${state.storylineId === filter.id ? 'true' : 'false'}">
+                            <button class="chrono-storyline-segment${filter.id === 'all' ? ' is-all' : ''}${state.storylineId === filter.id ? ' is-active' : ''}" type="button"
+                                data-filter-id="${escapeHtml(filter.id)}" style="--story-color:${filter.color}" aria-pressed="${state.storylineId === filter.id ? 'true' : 'false'}"
+                                aria-label="${escapeHtml([filter.name, filter.subtitle].filter(Boolean).join(': '))}">
                                 ${
                                     filter.id === 'all'
                                         ? `<span class="chrono-storyline-all-mark" aria-hidden="true">${summaries.map((summary) => `<i style="background:${summary.color}"></i>`).join('')}</span>`
                                         : '<span class="chrono-storyline-dot" aria-hidden="true"></span>'
                                 }
-                                <strong>${escapeHtml(filter.name)}</strong>
-                                ${
-                                    filter.id === 'all'
-                                        ? `<span>${filter.count}</span>`
-                                        : `<span>${filter.minYear}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${filter.maxYear}` : ''}</span><span>${filter.count}</span>`
-                                }
+                                <span class="chrono-storyline-copy">
+                                    <span class="chrono-storyline-title-row">
+                                        <strong data-overflow-title="${escapeHtml(filter.name)}">${escapeHtml(filter.name)}</strong>
+                                        <span class="chrono-storyline-metrics">
+                                            ${
+                                                filter.id === 'all'
+                                                    ? `<span>${filter.count}</span>`
+                                                    : `<span>${filter.minYear}${filter.maxYear && filter.maxYear !== filter.minYear ? `–${filter.maxYear}` : ''}</span><span>${filter.count}</span>`
+                                            }
+                                        </span>
+                                    </span>
+                                    ${filter.subtitle ? `<span class="chrono-storyline-subtitle" data-overflow-title="${escapeHtml(filter.subtitle)}">${escapeHtml(filter.subtitle)}</span>` : ''}
+                                </span>
                             </button>
                         `
                             )
@@ -747,7 +881,7 @@
                                 <div class="chrono-inner" style="width:${layout.width}px;height:${layout.height}px;--chrono-card-width:${layout.cardWidth}px;--chrono-card-height:${layout.cardHeight}px">
                                     <svg class="chrono-axis" width="${layout.width}" height="${layout.height}" viewBox="0 0 ${layout.width} ${layout.height}" aria-hidden="true">${renderSvg(layout, summaryById)}</svg>
                                     <div class="chrono-year-labels" aria-hidden="true">
-                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${year.year}</span>`).join('')}
+                                        ${layout.years.map((year) => `<span class="chrono-year-label" style="left:${year.x}px;top:${layout.axisY + 16}px">${escapeHtml(year.label || year.year)}</span>`).join('')}
                                         ${layout.gaps.map((gap) => `<span class="chrono-gap-label" style="left:${gap.x}px;top:${layout.axisY - 5}px">≈${gap.years}y</span>`).join('')}
                                     </div>
                                     ${layout.cards.map((card) => renderCard(card, summaryById, layout, text)).join('')}
@@ -782,6 +916,7 @@
                 </section>
             `;
 
+            overflowTooltipController.sync();
             const scroller = root.querySelector('.chrono-scroll');
             if (scroller) {
                 scroller.scrollLeft = Math.min(
@@ -1041,6 +1176,7 @@
         }
 
         function handleResize() {
+            overflowTooltipController.hide();
             globalScope.clearTimeout(resizeTimer);
             resizeTimer = globalScope.setTimeout(() => {
                 if (isActive()) render();
@@ -1050,6 +1186,7 @@
         function destroy() {
             if (imageObserver) imageObserver.disconnect();
             globalScope.clearTimeout(resizeTimer);
+            overflowTooltipController.destroy();
             if (globalScope && typeof globalScope.removeEventListener === 'function') {
                 globalScope.removeEventListener('resize', handleResize);
             }

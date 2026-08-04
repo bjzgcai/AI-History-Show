@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-002-simmim-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "What does SimMIM's lightweight prediction head reconstruct at masked positions?",
+      "zh": "SimMIM 的轻量预测头在被遮挡位置重建什么？"
+    },
+    "options": [
+      {
+        "en": "Raw RGB pixel values",
+        "zh": "原始 RGB 像素值"
+      },
+      {
+        "en": "Only class labels",
+        "zh": "仅类别标签"
+      },
+      {
+        "en": "Text captions",
+        "zh": "文本描述"
+      },
+      {
+        "en": "3D camera poses",
+        "zh": "三维相机位姿"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "SimMIM directly regresses the raw RGB values of masked pixels with a lightweight linear head.",
+      "zh": "SimMIM 使用轻量线性预测头直接回归被遮挡像素的原始 RGB 值。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
+    ],
+    "assetIds": [
+      "asset-annual-002-simmim-record"
+    ]
+  }
+]

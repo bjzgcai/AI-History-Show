@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const path = require('node:path');
 
 const overview = require(path.join(__dirname, '..', 'shared', 'chronology-overview.js'));
-const { milestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
+const { archiveStorylines, milestones } = require(path.join(__dirname, '..', 'milestones-data.js'));
 
 const localize = (value) => {
     if (value == null) return '';
@@ -10,13 +10,37 @@ const localize = (value) => {
     return String(value.zh ?? value.en ?? '');
 };
 
-assert.equal(milestones.length, 174, 'the chronology overview should consume all generated Archive milestones');
+assert.equal(milestones.length, 214, 'the chronology overview should consume all generated Archive milestones');
 
-const canonicalMilestones = overview.buildCanonicalMilestones(milestones, {
+const annualMilestones = milestones.filter(
+    (milestone) => overview.getStorylineId(milestone) === 'bench-council-ai100-2022-2023'
+);
+assert.equal(annualMilestones.length, 20, 'the annual AI100 highlights should remain available as a standalone view');
+assert.equal(
+    overview.selectMilestonesByStoryline(annualMilestones, 'bench-council-ai100-2022-2023').length,
+    20,
+    'a standalone storyline dataset should be directly filterable without canonical wrappers'
+);
+const annualLayout = overview.buildTimelineLayout(annualMilestones, {
+    preserveSourceOrder: true,
+    sequenceLabel: '2022-2023'
+});
+assert.equal(
+    annualLayout.cards[0].milestone.title.en,
+    'Swin Transformer V2',
+    'annual layout should start with the first curated event'
+);
+assert.equal(annualLayout.cards.at(-1).milestone.title.en, 'ESMFold', 'annual layout should end with ESMFold');
+assert.equal(annualLayout.years[0].label, '2022-2023', 'annual layout should label its curated sequence');
+const unifiedSourceMilestones = milestones.filter(
+    (milestone) => overview.getStorylineId(milestone) !== 'bench-council-ai100-2022-2023'
+);
+
+const canonicalMilestones = overview.buildCanonicalMilestones(unifiedSourceMilestones, {
     storylinePriority: ['bench-council-ai100', 'deep-learning', 'gaming-ai', 'humanistic-cycle'],
     localize
 });
-assert.equal(canonicalMilestones.length, 148, 'the all-events view should render one card per routed Archive event');
+assert.equal(canonicalMilestones.length, 168, 'the all-events view should render one card per routed Archive event');
 assert.equal(
     new Set(canonicalMilestones.map((item) => overview.getCanonicalEventId(item))).size,
     canonicalMilestones.length,
@@ -362,16 +386,21 @@ for (const milestoneId of ['milestone-ai100-2012-alexnet', 'milestone-2012-alexn
 }
 console.log('PASS AlexNet variants use the user-provided portrait consistently');
 
-const summaries = overview.summarizeStorylines(canonicalMilestones, localize);
+const summaries = overview.summarizeStorylines(canonicalMilestones, localize, undefined, archiveStorylines);
 assert.deepEqual(
     summaries.map(({ id, count }) => ({ id, count })),
     [
-        { id: 'bench-council-ai100', count: 119 },
+        { id: 'bench-council-ai100', count: 139 },
         { id: 'gaming-ai', count: 13 },
         { id: 'humanistic-cycle', count: 12 },
         { id: 'deep-learning', count: 30 }
     ],
     'the overview should derive the four production storylines and their generated counts'
+);
+assert.equal(
+    summaries.find(({ id }) => id === 'bench-council-ai100').subtitle,
+    '119 项长期主表成就 + 20 项 2022–2023 年度精选',
+    'the overview should expose the localized Archive storyline subtitle'
 );
 assert.deepEqual(
     summaries.map(({ id, color }) => ({ id, color })),

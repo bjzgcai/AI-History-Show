@@ -1,0 +1,127 @@
+[
+  {
+    "id": "asset-annual-110-esmfold-portrait-brian-hie",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-esmfold/brian-hie.jpg",
+    "role": "portrait",
+    "caption": {
+      "en": "Brian Hie portrait",
+      "zh": "布赖恩·希肖像"
+    },
+    "subcaption": {
+      "en": "Co-author of the ESMFold paper",
+      "zh": "ESMFold 论文共同作者"
+    },
+    "sourceId": "source-annual-110-esmfold-portrait-brian-hie",
+    "sourceName": {
+      "en": "Stanford Profiles",
+      "zh": "斯坦福人物资料"
+    },
+    "sourceUrl": "https://profiles.stanford.edu/brian-hie",
+    "sourceReliability": "official-university-profile",
+    "provenanceNotes": {
+      "en": "Stanford's official profile publishes the headshot and records Brian Hie's prior Meta AI visiting-researcher role, matching the ESMFold paper identity.",
+      "zh": "斯坦福官方人物页发布该头像，并记录布赖恩·希曾任 Meta AI 访问研究员，与 ESMFold 论文身份相符。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "The source states no redistribution license; retain attribution and recheck before redistribution outside this project.",
+        "zh": "来源未声明再分发许可；必须保留署名，并在项目外再分发前重新核查。"
+      },
+      "attribution": "Stanford Profiles"
+    },
+    "displayUsage": {
+      "en": "Verified contributor portrait",
+      "zh": "已核验的主要人物肖像"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  },
+  {
+    "id": "asset-annual-110-esmfold-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-110-esmfold_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "ESMFold single-sequence path",
+      "zh": "ESMFold 单序列预测路径"
+    },
+    "subcaption": {
+      "en": "Use protein language representations to predict a 3D structure without an MSA search",
+      "zh": "使用蛋白质语言模型表示预测三维结构，无需 MSA 搜索"
+    },
+    "sourceIds": [
+      "source-primary-record",
+      "source-biorxiv-preprint"
+    ],
+    "sourceName": {
+      "en": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+      "zh": "《使用语言模型进行进化尺度的原子级蛋白质结构预测》"
+    },
+    "sourceUrl": "https://www.science.org/doi/10.1126/science.ade2574",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-110-esmfold-paper-figure-2",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-esmfold/esmfold-paper-figure-2.jpg",
+    "role": "historical-diagram",
+    "caption": {
+      "en": "ESMFold architecture and ablation results",
+      "zh": "ESMFold 架构与消融结果"
+    },
+    "subcaption": {
+      "en": "Figure 2 traces a single protein sequence through ESM-2, the folding trunk and structure module, then reports component ablations.",
+      "zh": "论文 Figure 2 展示单条蛋白质序列经过 ESM-2、折叠主干与结构模块的路径，并给出组件消融结果。"
+    },
+    "sourceId": "source-esmfold-figure-2",
+    "sourceName": {
+      "en": "ESMFold bioRxiv preprint",
+      "zh": "ESMFold bioRxiv 预印本"
+    },
+    "sourceUrl": "https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1",
+    "imageUrl": "https://www.biorxiv.org/content/biorxiv/early/2022/07/21/2022.07.20.500902/F2.large.jpg",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "Lin et al., ESMFold preprint (2022), Figure 2"
+    },
+    "displayUsage": {
+      "en": "Primary-paper architecture and evidence figure",
+      "zh": "主论文架构与证据图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

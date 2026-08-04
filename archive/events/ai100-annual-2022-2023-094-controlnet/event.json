@@ -1,0 +1,74 @@
+{
+  "id": "ai100-annual-2022-2023-094-controlnet",
+  "year": 2023,
+  "date": "2023",
+  "title": {
+    "en": "ControlNet",
+    "zh": "ControlNet"
+  },
+  "summary": {
+    "en": "Spatial conditioning for pretrained text-to-image diffusion models",
+    "zh": "为预训练文生图扩散模型加入空间条件控制"
+  },
+  "description": {
+    "en": "<p>ControlNet adds spatial conditioning to a pretrained text-to-image diffusion model without discarding the original model’s learned capability. A trainable copy of the encoder is connected to a locked backbone through zero-initialized convolution layers, allowing edge maps, depth, pose, segmentation and other controls to guide generation.</p><p>The zero-convolution design starts with no disturbance to the pretrained network and gradually learns how much control information to inject.</p>",
+    "zh": "<p>ControlNet 在不丢弃原有生成能力的前提下，为预训练文生图扩散模型加入空间条件。一个可训练的编码器副本通过零初始化卷积连接到锁定主干，使边缘、深度、姿态、分割等控制信号能够引导生成。</p><p>零卷积设计在训练开始时不会扰动预训练网络，随后逐步学习应注入多少控制信息。</p>"
+  },
+  "location": {
+    "regionId": "united-states",
+    "country": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "place": {
+      "en": "Stanford University",
+      "zh": "Stanford University"
+    },
+    "coordinates": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "topics": [
+    "bench-council-ai100-annual-2022-2023"
+  ],
+  "achievementTypeIds": [
+    "ai100-annual-achievement"
+  ],
+  "figures": [
+    {
+      "figureId": "lvmin-zhang",
+      "name": {
+        "en": "Lvmin Zhang",
+        "zh": "张吕敏"
+      },
+      "role": {
+        "en": "First author of the ControlNet paper",
+        "zh": "ControlNet 论文第一作者"
+      },
+      "organizationIds": []
+    },
+    {
+      "figureId": "maneesh-agrawala",
+      "name": {
+        "en": "Maneesh Agrawala",
+        "zh": "马尼什·阿格拉瓦拉"
+      },
+      "role": {
+        "en": "Co-author of the ControlNet paper",
+        "zh": "ControlNet 论文共同作者"
+      },
+      "organizationIds": [],
+      "avatar": "resources/images/external/ai100-2023-controlnet/maneesh-agrawala.jpg"
+    }
+  ],
+  "organizations": [],
+  "canonical": false,
+  "review": {
+    "status": "reviewed",
+    "notes": {
+      "en": "Completed event-specific research on 2026-08-03. The exact BenchCouncil title, order, contributor prefix, institution, country and blank official fields were preserved. All listed people were checked against primary authorship evidence; portrait searches were completed and one identity-matched, attributed external-reference image was selected.",
+      "zh": "于 2026-08-03 完成事件专项研究。准确保留 BenchCouncil 的标题、顺序、人物前缀、机构、国家与官方空字段。所有列出人物均通过原始作者证据核对；肖像检索已完成，选择一张身份匹配且保留署名的外部参考图片。"
+    }
+  }
+}

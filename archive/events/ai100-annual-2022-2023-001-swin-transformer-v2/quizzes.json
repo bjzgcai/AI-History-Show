@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ai100-annual-2022-2023-001-swin-transformer-v2-quiz-1",
+    "storylineId": "bench-council-ai100-2022-2023",
+    "question": {
+      "en": "Which Swin Transformer V2 technique helps transfer a model from smaller pretraining windows to larger high-resolution windows?",
+      "zh": "Swin Transformer V2 中哪项技术帮助模型从较小预训练窗口迁移到更大的高分辨率窗口？"
+    },
+    "options": [
+      {
+        "en": "Log-spaced continuous position bias",
+        "zh": "对数间隔连续位置偏置"
+      },
+      {
+        "en": "A larger labeled image set only",
+        "zh": "仅增加标注图像数量"
+      },
+      {
+        "en": "Removing all attention layers",
+        "zh": "移除全部注意力层"
+      },
+      {
+        "en": "Replacing images with text tokens",
+        "zh": "用文本词元替换图像"
+      }
+    ],
+    "answer": 0,
+    "explanation": {
+      "en": "The log-spaced continuous position bias is designed to transfer spatial relationships across window sizes and resolutions.",
+      "zh": "对数间隔连续位置偏置用于在不同窗口大小与分辨率之间迁移空间关系。"
+    },
+    "sourceIds": [
+      "source-cvf-paper-page",
+      "source-microsoft-research-publication"
+    ],
+    "assetIds": [
+      "asset-annual-001-swin-transformer-v2-record"
+    ]
+  }
+]

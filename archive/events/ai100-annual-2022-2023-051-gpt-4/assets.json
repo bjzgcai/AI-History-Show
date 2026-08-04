@@ -1,0 +1,85 @@
+[
+  {
+    "id": "asset-annual-051-gpt-4-record",
+    "type": "svg",
+    "path": "resources/images/benchcouncil-ai100-annual/annual-051-gpt-4_record.svg",
+    "role": "annual-achievement-explainer",
+    "caption": {
+      "en": "GPT-4 evidence path",
+      "zh": "GPT-4 公开证据路径"
+    },
+    "subcaption": {
+      "en": "Separate the public capability evidence from undisclosed implementation details",
+      "zh": "区分公开的能力证据与未披露的实现细节"
+    },
+    "sourceIds": [
+      "source-primary-record"
+    ],
+    "sourceName": {
+      "en": "GPT-4 research release",
+      "zh": "GPT-4 研究发布页"
+    },
+    "sourceUrl": "https://openai.com/index/gpt-4-research/",
+    "rights": {
+      "status": "original-redraw",
+      "license": {
+        "en": "Original local SVG; source figures are not copied.",
+        "zh": "本地原创 SVG；未复制来源图形。"
+      },
+      "usage": {
+        "en": "Display and educational use in this project.",
+        "zh": "用于本项目展示与教育用途。"
+      }
+    },
+    "displayUsage": {
+      "en": "Original achievement explainer",
+      "zh": "原创成就解释图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": true
+  },
+  {
+    "id": "asset-annual-051-gpt-4-paper-exam-performance",
+    "type": "image",
+    "path": "resources/images/external/ai100-2023-gpt-4/gpt-4-technical-report-exam-performance.jpg",
+    "role": "paper-figure",
+    "caption": {
+      "en": "GPT-4 performance across academic and professional exams",
+      "zh": "GPT-4 在学术与职业考试中的表现"
+    },
+    "subcaption": {
+      "en": "Figure 4 compares GPT-4 and GPT-3.5 percentiles while making no claim about the undisclosed model architecture.",
+      "zh": "技术报告 Figure 4 比较 GPT-4 与 GPT-3.5 的考试百分位，但不涉及未公开的模型架构。"
+    },
+    "sourceId": "source-gpt4-figure-4",
+    "sourceName": {
+      "en": "GPT-4 Technical Report",
+      "zh": "《GPT-4 技术报告》"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2303.08774",
+    "imageUrl": "https://ar5iv.labs.arxiv.org/html/2303.08774/assets/x4.png",
+    "sourceReliability": "primary-paper-or-official-project-image",
+    "provenanceNotes": {
+      "en": "Downloaded from the named primary paper, official project repository or official release page and retained with direct source attribution.",
+      "zh": "图片下载自主论文、官方项目仓库或官方发布页，并保留直接来源标注。"
+    },
+    "rights": {
+      "status": "external-reference",
+      "license": {
+        "en": "Primary-source reference image displayed with attribution under the project's relaxed reference-image policy.",
+        "zh": "主来源参考图片；依据项目放宽后的参考图片策略展示，并保留完整来源标注。"
+      },
+      "attribution": "OpenAI, GPT-4 Technical Report (2023), Figure 4"
+    },
+    "displayUsage": {
+      "en": "Primary-report evaluation figure",
+      "zh": "技术报告评测图"
+    },
+    "usage": [
+      "variant:bench-council-ai100-2022-2023"
+    ],
+    "editable": false
+  }
+]

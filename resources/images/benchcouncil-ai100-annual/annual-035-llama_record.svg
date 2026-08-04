@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">LLaMA scaling recipe</title>
+  <desc id="desc">Training-compute policy, not a new secret block architecture. The paper discloses scales, token budgets and data policy; it does not claim a novel internal block. Compare parameter count and token budget: which choice shifts training cost versus inference cost?</desc>
+  <rect width="960" height="560" fill="#0d1722"/>
+  <text x="48" y="52" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="28" font-weight="700"><tspan x="48" dy="0">LLaMA scaling recipe</tspan></text>
+  <text x="48" y="82" fill="#a9bdd0" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="48" dy="0">Training-compute policy, not a new secret block architecture</tspan></text>
+  <g>
+  <rect x="48" y="126" width="198" height="176" rx="8" fill="#173d51" stroke="#62b7d7" stroke-width="2"/>
+  <text x="66" y="155" fill="#62b7d7" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="66" dy="0">STEP 1</tspan></text>
+  <text x="66" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="66" dy="0">Public text + code</tspan></text>
+  <text x="66" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="66" dy="0">Curated public-data</tspan><tspan x="66" dy="18">mixture</tspan></text>
+  <path d="M246 214 H252" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M240 205 L252 214 L240 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="270" y="126" width="198" height="176" rx="8" fill="#254631" stroke="#79c58c" stroke-width="2"/>
+  <text x="288" y="155" fill="#79c58c" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="288" dy="0">STEP 2</tspan></text>
+  <text x="288" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="288" dy="0">7B / 13B / 33B / 65B</tspan></text>
+  <text x="288" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="288" dy="0">One Transformer model</tspan><tspan x="288" dy="18">family</tspan></text>
+  <path d="M468 214 H474" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M462 205 L474 214 L462 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="492" y="126" width="198" height="176" rx="8" fill="#55401f" stroke="#e0aa59" stroke-width="2"/>
+  <text x="510" y="155" fill="#e0aa59" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="510" dy="0">STEP 3</tspan></text>
+  <text x="510" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="510" dy="0">More training tokens</tspan></text>
+  <text x="510" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="510" dy="0">Smaller models kept</tspan><tspan x="510" dy="18">improving</tspan></text>
+  <path d="M690 214 H696" stroke="#d8e5ef" stroke-width="4" fill="none"/><path d="M684 205 L696 214 L684 223" stroke="#d8e5ef" stroke-width="4" fill="none"/>
+</g>
+<g>
+  <rect x="714" y="126" width="198" height="176" rx="8" fill="#563246" stroke="#ce86a6" stroke-width="2"/>
+  <text x="732" y="155" fill="#ce86a6" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="732" dy="0">STEP 4</tspan></text>
+  <text x="732" y="192" fill="#f5f8fb" font-family="Arial, sans-serif" font-size="18" font-weight="700"><tspan x="732" dy="0">Efficient base models</tspan></text>
+  <text x="732" y="254" fill="#c8d6e2" font-family="Arial, sans-serif" font-size="14" font-weight="400"><tspan x="732" dy="0">Better inference-time</tspan><tspan x="732" dy="18">tradeoff</tspan></text>
+
+</g>
+  <rect x="48" y="336" width="864" height="82" rx="8" fill="#132635" stroke="#315267" stroke-width="1.5"/>
+  <text x="68" y="363" fill="#7cc0df" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="68" dy="0">EVIDENCE BOUNDARY</tspan></text>
+  <text x="68" y="390" fill="#d9e5ee" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="68" dy="0">The paper discloses scales, token budgets and data policy; it does not claim a novel internal</tspan><tspan x="68" dy="19">block.</tspan></text>
+  <rect x="48" y="438" width="864" height="78" rx="8" fill="#132635" stroke="#315267" stroke-width="1.5"/>
+  <text x="68" y="465" fill="#86d19b" font-family="Arial, sans-serif" font-size="12" font-weight="700"><tspan x="68" dy="0">INTERACTION</tspan></text>
+  <text x="68" y="492" fill="#d9e5ee" font-family="Arial, sans-serif" font-size="15" font-weight="400"><tspan x="68" dy="0">Compare parameter count and token budget: which choice shifts training cost versus inference</tspan><tspan x="68" dy="19">cost?</tspan></text>
+  <text x="912" y="542" text-anchor="end" fill="#7890a3" font-family="Arial, sans-serif" font-size="10">Original local redraw · 2026-08-03</text>
+</svg>

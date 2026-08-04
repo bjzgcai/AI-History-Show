@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 1,
+  "eventId": "ai100-annual-2022-2023-048-instructgpt",
+  "status": "complete",
+  "officialOrder": 48,
+  "work": "InstructGPT",
+  "official": {
+    "area": "LLM",
+    "publication": "Training language models to follow instructions with human feedback",
+    "citation": "2840",
+    "contributors": "Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Paul Christiano, Jan Leike, Ryan Lowe",
+    "institution": "OpenAI",
+    "country": "USA",
+    "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html"
+  },
+  "summary": {
+    "en": "A three-stage RLHF pipeline that aligned language-model behavior with written instructions and human preferences",
+    "zh": "通过三阶段 RLHF 流程让语言模型行为对齐书面指令与人类偏好"
+  },
+  "displaySummary": {
+    "en": "AI100 (2022-2023) · Instruction following with human feedback",
+    "zh": "AI100（2022-2023）· 基于人类反馈的指令遵循"
+  },
+  "description": {
+    "en": "<p>InstructGPT addressed a mismatch between next-token prediction and what users actually ask a model to do. OpenAI collected demonstrations and preference comparisons, then used supervised fine-tuning, reward modeling and reinforcement learning to tune GPT-3 models toward helpful instruction following.</p><p>Human evaluators preferred the 1.3-billion-parameter InstructGPT model over the 175-billion-parameter GPT-3 baseline on the studied prompt distribution. The result made RLHF a practical recipe for post-training general-purpose language models.</p>",
+    "zh": "<p>InstructGPT 针对下一个 token 预测目标与用户实际要求之间的错位。OpenAI 收集示范答案和偏好比较，再通过监督微调、奖励模型与强化学习，让 GPT-3 模型更好地遵循有帮助的指令。</p><p>在研究使用的提示分布上，人类评估者更偏好 13 亿参数的 InstructGPT，而不是 1,750 亿参数的 GPT-3 基线。这一结果使 RLHF 成为通用语言模型后训练的实用范式。</p>"
+  },
+  "people": [
+    {
+      "name": {
+        "en": "Long Ouyang",
+        "zh": "欧阳龙"
+      },
+      "role": {
+        "en": "First author of the InstructGPT paper",
+        "zh": "InstructGPT 论文第一作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Long Ouyang in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出欧阳龙，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "candidate-not-selected",
+        "sourceUrl": "https://github.com/longouyang",
+        "imageUrl": "https://avatars.githubusercontent.com/u/14802?v=4",
+        "reliability": "Exact-name GitHub profile links to zx.gd, matching the website and OpenAI researcher identity recorded by Wikidata; the primary paper confirms authorship.",
+        "rights": "The GitHub profile image has no stated redistribution license and is tightly cropped at low resolution, so it is recorded but not selected."
+      }
+    },
+    {
+      "name": {
+        "en": "Jeff Wu",
+        "zh": "杰夫·吴"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual",
+          "source-jeff-wu-personal-homepage",
+          "source-jeff-wu-wikidata"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Jeff Wu second in the official contributor field, and the primary publication confirms the same author identity and work association. His personal homepage publishes the selected photograph, its linked GitHub account uses the same name and website, and Wikidata identifies that website with an AI researcher profile.",
+          "zh": "BenchCouncil 官方人物字段第二位列出杰夫·吴，主论文作者表确认了同一人物及其与该成果的关系。他的个人主页发布了当前选用的照片；主页关联的 GitHub 账户使用相同姓名与网址，Wikidata 也把该网址关联到 AI 研究者人物记录。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected-existing",
+        "sourceUrl": "https://www.wuthejeff.com/",
+        "imageUrl": "https://www.wuthejeff.com/assets/images/jeffwu/main.jpg",
+        "reliability": "primary-identity-source with linked GitHub, Wikidata and primary-paper cross-checks",
+        "rights": "The personal homepage does not state redistribution rights; retain attribution and recheck before external redistribution."
+      }
+    },
+    {
+      "name": {
+        "en": "Xu Jiang",
+        "zh": "徐江"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Xu Jiang in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出徐江，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Diogo Almeida",
+        "zh": "迪奥戈·阿尔梅达"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Diogo Almeida in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出迪奥戈·阿尔梅达，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Carroll L. Wainwright",
+        "zh": "卡罗尔·L·温赖特"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Carroll L. Wainwright in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出卡罗尔·L·温赖特，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Pamela Mishkin",
+        "zh": "帕梅拉·米什金"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Pamela Mishkin in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出帕梅拉·米什金，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Paul Christiano",
+        "zh": "保罗·克里斯蒂亚诺"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Paul Christiano in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出保罗·克里斯蒂亚诺，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "candidate-not-selected",
+        "sourceUrl": "https://paulfchristiano.com/",
+        "imageUrl": "https://paulfchristiano.com/wp-content/uploads/2026/01/websiteheadshot.png",
+        "reliability": "Primary personal homepage explicitly identifies Paul Christiano and states that he led the language-model alignment team at OpenAI; the primary paper confirms authorship.",
+        "rights": "The personal homepage publishes a high-quality headshot but states no redistribution license. It is recorded as a candidate, while the event displays the higher-ranked official contributor Jeff Wu."
+      }
+    },
+    {
+      "name": {
+        "en": "Jan Leike",
+        "zh": "扬·莱克"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Jan Leike in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出扬·莱克，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "Ryan Lowe",
+        "zh": "瑞安·洛"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-primary-record",
+          "source-benchcouncil-annual"
+        ],
+        "notes": {
+          "en": "BenchCouncil lists Ryan Lowe in the official contributor field, and the primary publication confirms the same author identity and work association.",
+          "zh": "BenchCouncil 官方人物字段列出瑞安·洛，主论文作者表确认了同一人物及其与该成果的关系。"
+        }
+      },
+      "portraitSearch": {
+        "status": "searched-no-selected-asset",
+        "sourceUrl": "https://www.benchcouncil.org/evaluation/ai/annual.html",
+        "reliability": "identity-confirmed-by-primary-publication; no sufficiently reusable portrait selected",
+        "rights": "No portrait is displayed; candidate identity and redistribution rights were not both strong enough for selection."
+      }
+    },
+    {
+      "name": {
+        "en": "John Schulman",
+        "zh": "约翰·舒尔曼"
+      },
+      "role": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "verification": {
+        "status": "confirmed",
+        "sourceIds": [
+          "source-instructgpt-paper",
+          "source-annual-048-instructgpt-portrait-john-schulman"
+        ],
+        "notes": {
+          "en": "John Schulman is not part of the nine-name BenchCouncil contributor prefix, so he is appended after those official figures. The primary paper confirms his authorship, while MIT Technology Review independently identifies him as an OpenAI reinforcement-learning researcher.",
+          "zh": "约翰·舒尔曼不在 BenchCouncil 官方九人人物前缀中，因此排在这些官方人物之后。主论文确认其作者身份，《麻省理工科技评论》则独立确认其为 OpenAI 强化学习研究者。"
+        }
+      },
+      "portraitSearch": {
+        "status": "selected-supplemental",
+        "path": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png",
+        "sourceUrl": "https://www.technologyreview.com/innovator/john-schulman/",
+        "imageUrl": "https://wp.technologyreview.com/wp-content/uploads/2018/06/tr35-john-schulman-bw-5.png",
+        "reliability": "MIT Technology Review publishes the portrait on a named profile and identifies John Schulman as an OpenAI research scientist; the primary paper confirms his InstructGPT authorship.",
+        "rights": "MIT Technology Review states no open redistribution license for the portrait. Keep it as an attributed external reference and recheck before public redistribution."
+      }
+    }
+  ],
+  "selectedPortrait": {
+    "personName": "Jeff Wu",
+    "image": {
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/jeff-wu.jpg",
+      "sourceName": {
+        "en": "Jeff Wu personal website",
+        "zh": "杰夫·吴个人网站"
+      },
+      "sourceUrl": "https://www.wuthejeff.com/",
+      "imageUrl": "https://www.wuthejeff.com/assets/images/jeffwu/main.jpg",
+      "license": {
+        "en": "The personal homepage does not state redistribution rights; retain the source note and recheck before external redistribution.",
+        "zh": "个人主页未声明再分发许可；必须保留来源备注，对外再分发前需再次核验。"
+      },
+      "reliability": "primary-identity-source",
+      "usageStatus": "external-reference",
+      "notes": {
+        "en": "The selected 2048 x 1365 photograph is published directly on Jeff Wu's personal homepage. The linked GitHub account uses the same name and website; Wikidata identifies the website with an AI researcher profile, and the InstructGPT paper confirms Jeff Wu as an author.",
+        "zh": "当前选用的 2048 x 1365 照片直接发布在杰夫·吴个人主页。主页关联的 GitHub 账户使用相同姓名与网址；Wikidata 将该网址关联到 AI 研究者人物记录，InstructGPT 论文则确认杰夫·吴为作者。"
+      },
+      "identityChecks": [
+        "exact-contributor-name",
+        "primary-personal-homepage",
+        "linked-github-identity",
+        "wikidata-researcher-profile",
+        "primary-paper-author"
+      ],
+      "sourceNotesRequired": true
+    }
+  },
+  "sourceOverrides": {
+    "source-primary-record": {
+      "notes": {
+        "en": "Primary publication or official project record used for the central technical claims.",
+        "zh": "用于核心技术主张的主论文或官方项目记录。"
+      }
+    },
+    "source-benchcouncil-annual": {
+      "notes": {
+        "en": "Official source for annual membership, row order, contributor prefix, institution and country.",
+        "zh": "年度入选、行序、人物前缀、机构和国家字段的官方来源。"
+      }
+    }
+  },
+  "additionalSources": [
+    {
+      "id": "source-instructgpt-paper",
+      "type": "paper",
+      "label": {
+        "en": "Primary paper",
+        "zh": "原始论文"
+      },
+      "title": {
+        "en": "Training language models to follow instructions with human feedback",
+        "zh": "《Training language models to follow instructions with human feedback》"
+      },
+      "url": "https://arxiv.org/abs/2203.02155",
+      "language": "en",
+      "purpose": "core-evidence",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary paper for the demonstration, preference, reward-model and PPO training stages.",
+        "zh": "用于核对示范、偏好、奖励模型和 PPO 训练阶段的原始论文。"
+      }
+    },
+    {
+      "id": "source-openai-human-preferences",
+      "type": "official-page",
+      "label": {
+        "en": "Official page",
+        "zh": "官方页面"
+      },
+      "title": {
+        "en": "Learning from human preferences",
+        "zh": "OpenAI：从人类偏好中学习"
+      },
+      "url": "https://openai.com/index/learning-from-human-preferences/",
+      "language": "en",
+      "purpose": "precursor",
+      "reliability": "primary",
+      "notes": {
+        "en": "OpenAI background page on the human-preference learning approach that preceded InstructGPT.",
+        "zh": "OpenAI 对 InstructGPT 前序人类偏好学习方法的官方背景介绍。"
+      }
+    },
+    {
+      "id": "source-jeff-wu-personal-homepage",
+      "type": "personal-page",
+      "label": {
+        "en": "Personal homepage",
+        "zh": "个人主页"
+      },
+      "title": {
+        "en": "Jeff Wu personal website",
+        "zh": "杰夫·吴个人网站"
+      },
+      "url": "https://www.wuthejeff.com/",
+      "language": "en",
+      "purpose": "biography",
+      "reliability": "primary",
+      "notes": {
+        "en": "Primary identity page that names Jeff Wu and publishes the selected photograph. Its linked GitHub account uses the same name and website.",
+        "zh": "直接标明 Jeff Wu 姓名并发布当前肖像的第一方身份页面；其关联 GitHub 账户使用相同姓名与网址。"
+      }
+    },
+    {
+      "id": "source-jeff-wu-wikidata",
+      "type": "profile",
+      "label": {
+        "en": "Profile",
+        "zh": "人物资料"
+      },
+      "title": {
+        "en": "Jeffrey Wu AI researcher profile",
+        "zh": "杰夫·吴 AI 研究者人物记录"
+      },
+      "url": "https://www.wikidata.org/entity/Q115599109",
+      "language": "en",
+      "purpose": "biography",
+      "reliability": "secondary",
+      "notes": {
+        "en": "Secondary identity cross-check connecting the AI researcher record to the same personal website.",
+        "zh": "辅助身份核验记录，将 AI 研究者人物实体关联到同一个人网站。"
+      }
+    },
+    {
+      "id": "source-annual-048-instructgpt-portrait-john-schulman",
+      "type": "image-source",
+      "label": {
+        "en": "Image source",
+        "zh": "图片来源"
+      },
+      "title": {
+        "en": "John Schulman | Innovators Under 35",
+        "zh": "约翰·舒尔曼｜35 岁以下创新者"
+      },
+      "url": "https://www.technologyreview.com/innovator/john-schulman/",
+      "language": "en",
+      "purpose": "image-provenance",
+      "reliability": "primary",
+      "notes": {
+        "en": "MIT Technology Review publishes the selected 483 x 483 portrait and identifies John Schulman as an OpenAI research scientist working on reinforcement learning. No open redistribution license is stated; retain attribution and recheck before external redistribution.",
+        "zh": "《麻省理工科技评论》发布当前选用的 483 x 483 肖像，并将约翰·舒尔曼介绍为从事强化学习的 OpenAI 研究员。页面未声明开放再分发许可；必须保留署名，对外再分发前需再次核验。"
+      }
+    },
+    {
+      "id": "source-hugging-face-rlhf",
+      "type": "article",
+      "label": {
+        "en": "Article",
+        "zh": "文章"
+      },
+      "title": {
+        "en": "Illustrating Reinforcement Learning from Human Feedback (RLHF)",
+        "zh": "图解基于人类反馈的强化学习（RLHF）"
+      },
+      "url": "https://huggingface.co/blog/rlhf",
+      "language": "en",
+      "purpose": "background",
+      "reliability": "secondary",
+      "notes": {
+        "en": "Hugging Face explains pretraining, preference ranking, reward modeling and PPO with diagrams. Its documentation-images dataset is labeled CC BY-NC-SA 4.0; the event uses it only as an attributed reference for a separate original redraw.",
+        "zh": "Hugging Face 通过图示解释预训练、偏好排序、奖励建模与 PPO。其 documentation-images 数据集标注为 CC BY-NC-SA 4.0；本事件仅将其作为独立原创重绘的注明出处参考。"
+      }
+    },
+    {
+      "id": "source-chip-huyen-rlhf",
+      "type": "article",
+      "label": {
+        "en": "Article",
+        "zh": "文章"
+      },
+      "title": {
+        "en": "RLHF: Reinforcement Learning from Human Feedback",
+        "zh": "RLHF：基于人类反馈的强化学习"
+      },
+      "url": "https://huyenchip.com/2023/05/02/rlhf.html",
+      "language": "en",
+      "purpose": "background",
+      "reliability": "secondary",
+      "notes": {
+        "en": "Chip Huyen connects the InstructGPT pipeline with preference results, labeling interfaces and the RL objective. The page states no open image license, so the figures are reference material only.",
+        "zh": "Chip Huyen 将 InstructGPT 流程与偏好结果、标注界面和强化学习目标联系起来。页面未声明图片开放许可，因此相关图形仅作为参考资料。"
+      }
+    },
+    {
+      "id": "source-scale-ai-john-schulman-talk",
+      "type": "official-page",
+      "label": {
+        "en": "Official page",
+        "zh": "官方页面"
+      },
+      "title": {
+        "en": "Scale AI Leadership Summit 2024: Lightning Talk with John Schulman",
+        "zh": "Scale AI 2024 领导力峰会：约翰·舒尔曼闪电演讲"
+      },
+      "url": "https://www.youtube.com/watch?v=4VHMIiTdXMI",
+      "language": "en",
+      "purpose": "historical-context",
+      "reliability": "primary",
+      "notes": {
+        "en": "Scale AI's official video provides a later talk record for John Schulman and describes his OpenAI post-training work. It is contextual evidence rather than a 2022 event image, and no video-frame redistribution license is stated.",
+        "zh": "Scale AI 官方视频提供约翰·舒尔曼后期演讲记录，并介绍其在 OpenAI 的后训练工作。该视频属于补充背景资料，不是 2022 年事件图片，也未声明视频画面的再分发许可。"
+      }
+    }
+  ],
+  "additionalClaims": [
+    {
+      "id": "claim-core-method",
+      "importance": "core",
+      "text": {
+        "en": "InstructGPT uses supervised demonstrations, preference reward modeling and ppo.",
+        "zh": "InstructGPT 采用监督示范、偏好奖励建模与 PPO。"
+      },
+      "sourceIds": [
+        "source-instructgpt-paper",
+        "source-primary-record"
+      ],
+      "status": "verified"
+    },
+    {
+      "id": "claim-historical-significance",
+      "importance": "display",
+      "text": {
+        "en": "Experts generally treat InstructGPT as the operational template for modern RLHF post-training. Its importance lies less in raw parameter scale than in showing that smaller aligned models can be preferred over much larger untuned baselines.",
+        "zh": "专家通常把 InstructGPT 视为现代 RLHF 后训练的操作模板。它的重要性不只在参数规模，而在于证明更小的对齐模型也可能比大得多的未调优基线更受用户偏好。"
+      },
+      "sourceIds": [
+        "source-instructgpt-paper"
+      ],
+      "status": "verified"
+    }
+  ],
+  "commentarySections": [
+    {
+      "id": "historical-background",
+      "label": {
+        "en": "Historical Background",
+        "zh": "历史背景"
+      },
+      "html": {
+        "en": "Large pretrained models could complete text fluently but did not reliably infer a user's intent. InstructGPT emerged from earlier human-preference research as a direct attempt to align model behavior after pretraining.",
+        "zh": "大型预训练模型能够流畅续写文本，却不能稳定理解用户意图。InstructGPT 延续早期人类偏好研究，直接尝试在预训练之后对齐模型行为。"
+      },
+      "sourceIds": [
+        "source-instructgpt-paper",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "core-idea",
+      "label": {
+        "en": "Core Idea",
+        "zh": "核心思想"
+      },
+      "html": {
+        "en": "The pipeline first fine-tunes on human demonstrations, then learns a reward model from ranked responses, and finally optimizes the policy with PPO. Keeping these stages separate turns qualitative preference judgments into a trainable signal.",
+        "zh": "流程先使用人类示范进行监督微调，再从排序后的回答中学习奖励模型，最后用 PPO 优化策略。把这些阶段分开，使定性的偏好判断转化为可训练信号。"
+      },
+      "sourceIds": [
+        "source-instructgpt-paper",
+        "source-primary-record"
+      ]
+    },
+    {
+      "id": "long-term-legacy",
+      "label": {
+        "en": "Long-Term Legacy",
+        "zh": "长期影响"
+      },
+      "html": {
+        "en": "Experts generally treat InstructGPT as the operational template for modern RLHF post-training. Its importance lies less in raw parameter scale than in showing that smaller aligned models can be preferred over much larger untuned baselines.",
+        "zh": "专家通常把 InstructGPT 视为现代 RLHF 后训练的操作模板。它的重要性不只在参数规模，而在于证明更小的对齐模型也可能比大得多的未调优基线更受用户偏好。"
+      },
+      "sourceIds": [
+        "source-instructgpt-paper",
+        "source-primary-record"
+      ]
+    }
+  ],
+  "visualModule": {
+    "type": "archiveLink",
+    "site": {
+      "en": "OpenAI research",
+      "zh": "OpenAI 研究页面"
+    },
+    "title": {
+      "en": "Aligning language models to follow instructions",
+      "zh": "让语言模型遵循指令"
+    },
+    "description": {
+      "en": "OpenAI explains the InstructGPT training stages, human evaluation and safety limitations.",
+      "zh": "OpenAI 说明 InstructGPT 的训练阶段、人类评测与安全局限。"
+    },
+    "url": "https://openai.com/index/instruction-following/",
+    "action": {
+      "en": "Open InstructGPT page",
+      "zh": "打开 InstructGPT 页面"
+    },
+    "source": "https://openai.com/index/instruction-following/",
+    "license": {
+      "en": "Reference link only; the local explainer is an original redraw.",
+      "zh": "仅作为参考链接；本地解释图为原创重绘。"
+    },
+    "usage": {
+      "en": "Technical, historical and interaction reference",
+      "zh": "技术、历史与互动说明参考"
+    }
+  },
+  "supplementalAssets": [
+    {
+      "id": "asset-annual-048-instructgpt-portrait-john-schulman",
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png",
+      "sourceId": "source-annual-048-instructgpt-portrait-john-schulman",
+      "usage": "Extended verified portrait after the official BenchCouncil contributor prefix"
+    },
+    {
+      "id": "asset-annual-048-instructgpt-paper-preference-results",
+      "path": "resources/images/benchcouncil-ai100-annual/instructgpt-paper-preference-results.png",
+      "sourceId": "source-instructgpt-paper",
+      "usage": "Primary-paper Figure 1 showing human preference win rates across model sizes"
+    }
+  ],
+  "recordSvgSource": "research/benchcouncil-ai100/annual-events-2022/assets/ai100-annual-2022-2023-048-instructgpt.svg",
+  "recordAsset": {
+    "caption": {
+      "en": "InstructGPT process explainer",
+      "zh": "InstructGPT 流程解释图"
+    },
+    "subcaption": {
+      "en": "Supervised demonstrations, preference reward modeling and PPO",
+      "zh": "监督示范、偏好奖励建模与 PPO"
+    },
+    "sourceIds": [
+      "source-instructgpt-paper",
+      "source-primary-record",
+      "source-hugging-face-rlhf",
+      "source-chip-huyen-rlhf"
+    ],
+    "sourceName": {
+      "en": "Primary paper, technical explainers and original local synthesis",
+      "zh": "主论文、技术解读与本地原创整理"
+    },
+    "sourceUrl": "https://arxiv.org/abs/2203.02155",
+    "displayUsage": {
+      "en": "Interactive achievement explainer",
+      "zh": "互动式成就解释图"
+    }
+  },
+  "achievement": {
+    "area": {
+      "en": "LLM",
+      "zh": "大语言模型"
+    },
+    "method": {
+      "en": "Supervised demonstrations, preference reward modeling and PPO",
+      "zh": "监督示范、偏好奖励建模与 PPO"
+    },
+    "artifact": {
+      "en": "Instruction-following InstructGPT models",
+      "zh": "遵循指令的 InstructGPT 模型"
+    },
+    "material": {
+      "en": "Human demonstrations, ranked model outputs and the InstructGPT paper",
+      "zh": "人类示范、模型输出排序与 InstructGPT 论文"
+    },
+    "demo": {
+      "en": "Move through the three stages and see how demonstrations become preferences, then become a reward signal for policy updates.",
+      "zh": "依次查看三个阶段，理解示范如何转成偏好，再转成更新策略的奖励信号。"
+    },
+    "keyConcepts": [
+      {
+        "label": {
+          "en": "Demonstrations",
+          "zh": "示范数据"
+        },
+        "text": {
+          "en": "Supervised instruction-response examples",
+          "zh": "监督式指令-回答样例"
+        }
+      },
+      {
+        "label": {
+          "en": "Preferences",
+          "zh": "偏好数据"
+        },
+        "text": {
+          "en": "Humans rank competing model answers",
+          "zh": "人类排序多个候选回答"
+        }
+      },
+      {
+        "label": {
+          "en": "Policy optimization",
+          "zh": "策略优化"
+        },
+        "text": {
+          "en": "PPO maximizes learned reward with a KL constraint",
+          "zh": "PPO 在 KL 约束下最大化学习到的奖励"
+        }
+      }
+    ],
+    "relatedAchievements": [],
+    "relatedRegions": [
+      {
+        "en": "United States",
+        "zh": "美国"
+      }
+    ],
+    "demoSteps": [
+      {
+        "en": "Supervised fine-tuning",
+        "zh": "监督微调"
+      },
+      {
+        "en": "Train reward model",
+        "zh": "训练奖励模型"
+      },
+      {
+        "en": "Optimize policy with PPO",
+        "zh": "使用 PPO 优化策略"
+      }
+    ],
+    "demoImage": "resources/images/benchcouncil-ai100-annual/annual-048-instructgpt_record.svg",
+    "demoNotes": [
+      {
+        "label": {
+          "en": "Evidence cue",
+          "zh": "资料线索"
+        },
+        "text": {
+          "en": "The paper compares the three training stages and human preference evaluations against GPT-3 baselines.",
+          "zh": "论文对照三阶段训练流程，并使用人类偏好评测与 GPT-3 基线比较。"
+        }
+      },
+      {
+        "label": {
+          "en": "Interaction point",
+          "zh": "互动点"
+        },
+        "text": {
+          "en": "Move through the three stages and see how demonstrations become preferences, then become a reward signal for policy updates.",
+          "zh": "依次查看三个阶段，理解示范如何转成偏好，再转成更新策略的奖励信号。"
+        }
+      }
+    ],
+    "visualModules": [
+      {
+        "type": "archiveLink",
+        "site": {
+          "en": "OpenAI research",
+          "zh": "OpenAI 研究页面"
+        },
+        "title": {
+          "en": "Aligning language models to follow instructions",
+          "zh": "让语言模型遵循指令"
+        },
+        "description": {
+          "en": "OpenAI explains the InstructGPT training stages, human evaluation and safety limitations.",
+          "zh": "OpenAI 说明 InstructGPT 的训练阶段、人类评测与安全局限。"
+        },
+        "url": "https://openai.com/index/instruction-following/",
+        "action": {
+          "en": "Open InstructGPT page",
+          "zh": "打开 InstructGPT 页面"
+        },
+        "source": "https://openai.com/index/instruction-following/",
+        "license": {
+          "en": "Reference link only; the local explainer is an original redraw.",
+          "zh": "仅作为参考链接；本地解释图为原创重绘。"
+        },
+        "usage": {
+          "en": "Technical, historical and interaction reference",
+          "zh": "技术、历史与互动说明参考"
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "question": {
+      "en": "What supplies the reward signal in InstructGPT?",
+      "zh": "InstructGPT 的奖励信号来自什么？"
+    },
+    "options": [
+      {
+        "en": "A model learned from human preference rankings",
+        "zh": "从人类偏好排序中学习的奖励模型"
+      },
+      {
+        "en": "Only next-token likelihood",
+        "zh": "只有下一个 token 的似然"
+      },
+      {
+        "en": "A fixed grammar checker",
+        "zh": "固定语法检查器"
+      },
+      {
+        "en": "Random scores",
+        "zh": "随机分数"
+      }
+    ],
+    "explanation": {
+      "en": "Human rankings train a reward model, which then guides PPO policy optimization.",
+      "zh": "人类排序用于训练奖励模型，随后由它指导 PPO 策略优化。"
+    },
+    "sourceIds": [
+      "source-instructgpt-paper"
+    ],
+    "answer": 0
+  },
+  "reviewNotes": {
+    "en": "Completed 2022 event research with primary-source verification, localized narrative, portrait decision, original explainer and audience quiz.",
+    "zh": "已完成 2022 年事件研究，包括一手资料核验、双语正文、肖像选择结论、原创解释图和观众 quiz。"
+  },
+  "supplementaryAssets": [
+    {
+      "id": "asset-annual-048-instructgpt-portrait-john-schulman",
+      "type": "image",
+      "path": "resources/images/benchcouncil-ai100-annual/portraits/john-schulman-mittr.png",
+      "role": "portrait",
+      "caption": {
+        "zh": "约翰·舒尔曼肖像",
+        "en": "John Schulman portrait"
+      },
+      "subcaption": {
+        "en": "Co-author of the InstructGPT paper",
+        "zh": "InstructGPT 论文共同作者"
+      },
+      "sourceId": "source-annual-048-instructgpt-portrait-john-schulman",
+      "sourceName": {
+        "en": "MIT Technology Review Innovators Under 35",
+        "zh": "《麻省理工科技评论》35 岁以下创新者"
+      },
+      "sourceUrl": "https://www.technologyreview.com/innovator/john-schulman/",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "MIT Technology Review does not state an open redistribution license for this portrait; retain attribution and recheck before external redistribution.",
+          "zh": "《麻省理工科技评论》未为该肖像声明开放再分发许可；必须保留署名，对外再分发前需再次核验。"
+        },
+        "attribution": "MIT Technology Review"
+      },
+      "displayUsage": {
+        "en": "Supplementary verified portrait",
+        "zh": "已核验的扩展人物肖像"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    },
+    {
+      "id": "asset-annual-048-instructgpt-paper-preference-results",
+      "type": "image",
+      "path": "resources/images/benchcouncil-ai100-annual/instructgpt-paper-preference-results.png",
+      "role": "paper-figure",
+      "caption": {
+        "zh": "不同模型规模的人类偏好胜率",
+        "en": "Human preference win rates by model size"
+      },
+      "subcaption": {
+        "zh": "InstructGPT 论文图 1：PPO 模型优于 GPT-3 基线",
+        "en": "InstructGPT paper Figure 1: PPO models outperform GPT-3 baselines"
+      },
+      "sourceId": "source-instructgpt-paper",
+      "sourceName": {
+        "en": "InstructGPT primary paper",
+        "zh": "InstructGPT 原始论文"
+      },
+      "sourceUrl": "https://arxiv.org/abs/2203.02155",
+      "rights": {
+        "status": "external-reference",
+        "license": {
+          "en": "Paper figure reproduced with source attribution for educational context; the arXiv record uses a non-exclusive distribution license.",
+          "zh": "论文图在注明来源的前提下用于教育性背景展示；arXiv 记录采用非独占分发许可。"
+        },
+        "attribution": "Ouyang et al., Training language models to follow instructions with human feedback (2022)"
+      },
+      "displayUsage": {
+        "en": "Primary-paper result figure",
+        "zh": "原始论文结果图"
+      },
+      "usage": [
+        "variant:bench-council-ai100-2022-2023"
+      ],
+      "editable": false
+    }
+  ],
+  "assetIds": [
+    "asset-annual-048-instructgpt-portrait-jeff-wu",
+    "asset-annual-048-instructgpt-portrait-john-schulman",
+    "asset-annual-048-instructgpt-paper-preference-results",
+    "asset-annual-048-instructgpt-record"
+  ],
+  "overviewImageAssetId": "asset-annual-048-instructgpt-portrait-jeff-wu"
+}

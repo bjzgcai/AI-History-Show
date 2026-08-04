@@ -3,7 +3,7 @@
 
 const { milestones } = require('../milestones-data.js');
 
-const STORYLINE_ID = 'bench-council-ai100';
+const STORYLINE_IDS = new Set(['bench-council-ai100', 'bench-council-ai100-2022-2023']);
 const MIN_OVERLAP_RATIO = 0.35;
 const MIN_OVERLAP_TOKENS = 2;
 
@@ -74,7 +74,7 @@ function visibleMilestoneText(milestone) {
 
 const failures = [];
 
-for (const milestone of milestones.filter((item) => item.storyline && item.storyline.id === STORYLINE_ID)) {
+for (const milestone of milestones.filter((item) => item.storyline && STORYLINE_IDS.has(item.storyline.id))) {
     const quizzes = Array.isArray(milestone.quizzes) ? milestone.quizzes : [];
     const visibleText = visibleMilestoneText(milestone);
 
