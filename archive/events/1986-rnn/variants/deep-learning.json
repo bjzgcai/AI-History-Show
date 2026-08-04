@@ -11,8 +11,8 @@
     "en": "Neural Networks and Connectionism"
   },
   "displayDescription": {
-    "zh": "<p>循环神经网络通过把先前时间步的状态反馈到网络中，使当前输出同时依赖当前输入和历史信息。1986 年，迈克尔·乔丹提出一种把输出状态反馈到上下文单元的序列网络，用内部状态帮助模型学习动作或符号的先后关系。</p><p>1990 年，杰弗里·埃尔曼进一步展示了把隐藏层状态复制到上下文单元的简单循环网络，并用它从连续序列中发现词汇和时间结构。因此，今天常说的 Jordan 网络与 Elman 网络并非同年提出，而是共同确立了早期 RNN 的两种典型反馈方式。这类模型打开了序列学习道路，也暴露了梯度在长时间跨度上传播困难的问题，随后推动了 LSTM 等门控结构的发展。</p>",
-    "en": "<p>Recurrent neural networks feed information from earlier time steps back into the network, allowing the current output to depend on both the present input and an internal history. In 1986, Michael Jordan proposed a sequential network that returned output state to context units, using this internal state to learn the ordering of actions or symbols.</p><p>In 1990, Jeffrey Elman demonstrated a simple recurrent network that copied hidden-layer state into context units and used it to discover lexical and temporal structure in continuous sequences. The Jordan and Elman networks were therefore not introduced in the same year; together they established two influential feedback patterns for early RNNs. They opened a path to sequence learning while also exposing the difficulty of carrying gradients across long spans, motivating later gated designs such as LSTM.</p>"
+    "zh": "<p>循环神经网络通过把先前时间步的状态反馈到网络中，使当前输出同时依赖当前输入和历史信息。1986 年，迈克尔·I·乔丹提出一种把输出状态反馈到上下文单元的序列网络，用内部状态帮助模型学习动作或符号的先后关系。</p><p>1990 年，杰弗里·埃尔曼进一步展示了把隐藏层状态复制到上下文单元的简单循环网络，并用它从连续序列中发现词汇和时间结构。因此，今天常说的 Jordan 网络与 Elman 网络并非同年提出，而是共同确立了早期 RNN 的两种典型反馈方式。这类模型打开了序列学习道路，也暴露了梯度在长时间跨度上传播困难的问题，随后推动了 LSTM 等门控结构的发展。</p>",
+    "en": "<p>Recurrent neural networks feed information from earlier time steps back into the network, allowing the current output to depend on both the present input and an internal history. In 1986, Michael I. Jordan proposed a sequential network that returned output state to context units, using this internal state to learn the ordering of actions or symbols.</p><p>In 1990, Jeffrey Elman demonstrated a simple recurrent network that copied hidden-layer state into context units and used it to discover lexical and temporal structure in continuous sequences. The Jordan and Elman networks were therefore not introduced in the same year; together they established two influential feedback patterns for early RNNs. They opened a path to sequence learning while also exposing the difficulty of carrying gradients across long spans, motivating later gated designs such as LSTM.</p>"
   },
   "emphasis": [
     "batch-migration",
@@ -78,7 +78,7 @@
     {
       "name": {
         "en": "Michael I. Jordan",
-        "zh": "迈克尔·乔丹"
+        "zh": "迈克尔·I·乔丹"
       },
       "role": {
         "en": "The creator of Jordan Network",

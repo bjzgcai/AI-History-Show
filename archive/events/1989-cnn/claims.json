@@ -3,7 +3,7 @@
     "id": "claim-legacy-achievement-summary",
     "importance": "core",
     "text": {
-      "zh": "1989 年，扬·勒昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
+      "zh": "1989 年，杨立昆及合作者展示了用反向传播训练卷积网络识别手写邮政编码的方法。",
       "en": "In 1989, Yann LeCun and collaborators demonstrated convolutional networks trained by backpropagation for handwritten ZIP-code recognition."
     },
     "sourceIds": [
