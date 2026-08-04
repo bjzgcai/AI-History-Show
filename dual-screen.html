@@ -1652,11 +1652,55 @@
             z-index: 40;
         }
 
+        .image-load-frame {
+            position: relative;
+        }
+
+        .image-load-frame[data-image-load-state="loading"]::before,
+        .image-load-frame[data-image-load-state="error"]::before {
+            content: attr(data-loading-label);
+            position: absolute;
+            left: 50%;
+            bottom: 18px;
+            z-index: 5;
+            transform: translateX(-50%);
+            max-width: min(320px, calc(100% - 32px));
+            padding: 8px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.72);
+            color: #f4efe5;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 1.25;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .image-load-frame[data-image-load-state="error"]::before {
+            content: attr(data-error-label);
+            color: #ffd4c9;
+        }
+
+        .photo-viewer-frame {
+            max-width: 86vw;
+            max-height: 82vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .viewer-photo {
             max-width: 86vw;
             max-height: 82vh;
             object-fit: contain;
             box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .photo-viewer-frame .viewer-photo {
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .photo-prev,
@@ -1860,6 +1904,7 @@
         }
     </script>
     <script src="shared/i18n.js"></script>
+    <script src="shared/image-loading.js"></script>
     <script src="milestones-data.js?v=20260803-storyline-metadata" onerror="_loadDefaultMilestones()"></script>
     <script src="shared/milestone-view.js"></script>
     <script src="shared/swipe-navigation.js"></script>
@@ -2164,15 +2209,80 @@
             );
         }
 
-        function preloadImage(url) {
-            if (!url) return;
-            if (imagePreloadCache.has(url)) return;
+        function getImageLoader() {
+            return window.AIHistoryImageLoading || null;
+        }
 
-            const image = new Image();
-            image.decoding = 'async';
-            image.loading = 'eager';
-            image.src = url;
-            imagePreloadCache.set(url, image);
+        function getPreviewImageUrl(url) {
+            const loader = getImageLoader();
+            return loader && typeof loader.getPreviewUrl === 'function' ? loader.getPreviewUrl(url) : url;
+        }
+
+        function buildPreviewImageAttributes(url, alt, options = {}) {
+            const fullSrc = String(url || '').trim();
+            const previewSrc = getPreviewImageUrl(fullSrc);
+            const loading = options.loading || 'lazy';
+            const classAttr = options.className ? ` class="${escapeHtml(options.className)}"` : '';
+            const fullAttrs = fullSrc && previewSrc !== fullSrc
+                ? ` data-full-src="${escapeHtml(fullSrc)}" data-preview-src="${escapeHtml(previewSrc)}"`
+                : '';
+            return `${classAttr} src="${escapeHtml(previewSrc)}"${fullAttrs} alt="${escapeHtml(alt || '')}" decoding="async" loading="${escapeHtml(loading)}"`;
+        }
+
+        function hydratePreviewImages(root) {
+            const loader = getImageLoader();
+            if (!root || !loader || typeof loader.attachPreviewFallback !== 'function') return;
+            root.querySelectorAll('img[data-full-src]').forEach((image) => loader.attachPreviewFallback(image));
+        }
+
+        function setPreviewImage(imgEl, src, alt, options = {}) {
+            const loader = getImageLoader();
+            if (loader && typeof loader.setPreviewImage === 'function') {
+                loader.setPreviewImage(imgEl, src, alt, options);
+                return;
+            }
+            const nextSrc = src || '';
+            if (imgEl.getAttribute('src') !== nextSrc) {
+                imgEl.decoding = 'async';
+                imgEl.loading = options.loading || imgEl.loading || 'lazy';
+                imgEl.src = nextSrc;
+            }
+            imgEl.alt = alt || '';
+        }
+
+        function loadFullImageInto(imgEl, options = {}) {
+            const loader = getImageLoader();
+            if (loader && typeof loader.loadFullImageInto === 'function') {
+                return loader.loadFullImageInto(imgEl, options).catch(() => {});
+            }
+            return Promise.resolve('');
+        }
+
+        function setImageLoadFrameState(frame, state) {
+            const loader = getImageLoader();
+            if (loader && typeof loader.setFrameState === 'function') {
+                loader.setFrameState(frame, state);
+            } else if (frame) {
+                if (state) frame.dataset.imageLoadState = state;
+                else delete frame.dataset.imageLoadState;
+            }
+        }
+
+        function preloadImage(url) {
+            const previewUrl = getPreviewImageUrl(url);
+            if (!previewUrl || imagePreloadCache.has(previewUrl)) return;
+
+            const loader = getImageLoader();
+            const image = loader && typeof loader.preloadPreviewImage === 'function'
+                ? loader.preloadPreviewImage(url)
+                : (() => {
+                    const previewImage = new Image();
+                    previewImage.decoding = 'async';
+                    previewImage.loading = 'eager';
+                    previewImage.src = previewUrl;
+                    return previewImage;
+                })();
+            imagePreloadCache.set(previewUrl, image);
         }
 
         function preloadMilestoneAssets(index) {
@@ -2252,7 +2362,7 @@
         function buildFigureAvatar(figure, avatarSource) {
             if (avatarSource && avatarSource.src) {
                 const styleAttr = avatarSource.style ? ` style="${avatarSource.style}"` : '';
-                return `<img src="${avatarSource.src}" alt="${escapeHtml(figure.name || tx('keyFigure'))}"${styleAttr}>`;
+                return `<img ${buildPreviewImageAttributes(avatarSource.src, figure.name || tx('keyFigure'))}${styleAttr}>`;
             }
             return `<span>${escapeHtml(initials(figure.name))}</span>`;
         }
@@ -3302,9 +3412,10 @@
 
             refs.leftArchiveStrip.innerHTML = cards.map((card) => `
                 <button class="left-archive-card ${card.cls} media-photo" type="button" data-photo-index="${card.index}">
-                    <img src="${card.src}" alt="${escapeHtml(card.label)}">
+                    <img ${buildPreviewImageAttributes(card.src, card.label)}>
                 </button>
             `).join('');
+            hydratePreviewImages(refs.leftArchiveStrip);
         }
 
         function formatCategoryLabel(vm) {
@@ -3394,11 +3505,7 @@
         }
 
         function setImage(imgEl, src, alt) {
-            const nextSrc = src || '';
-            if (imgEl.getAttribute('src') !== nextSrc) {
-                imgEl.decoding = 'async';
-                imgEl.src = nextSrc;
-            }
+            setPreviewImage(imgEl, src, alt, { loading: 'eager' });
             imgEl.alt = alt || '';
             imgEl.style.visibility = src ? 'visible' : 'hidden';
         }
@@ -3441,11 +3548,13 @@
             refs.archiveYear.textContent = vm.year || '';
 
             refs.archiveThumbPrev.innerHTML = prevUrl
-                ? `<img src="${prevUrl}" alt="${tx('previousArchive')}">`
+                ? `<img ${buildPreviewImageAttributes(prevUrl, tx('previousArchive'))}>`
                 : '';
             refs.archiveThumbNext.innerHTML = nextUrl
-                ? `<img src="${nextUrl}" alt="${tx('nextArchive')}">`
+                ? `<img ${buildPreviewImageAttributes(nextUrl, tx('nextArchive'))}>`
                 : '';
+            hydratePreviewImages(refs.archiveThumbPrev);
+            hydratePreviewImages(refs.archiveThumbNext);
             refs.archiveThumbPrev.dataset.photoIndex = prevUrl ? String(prevIndex) : '';
             refs.archiveThumbNext.dataset.photoIndex = nextUrl ? String(nextIndex) : '';
 
@@ -3618,11 +3727,31 @@
             viewer.innerHTML = `
                 <button class="close-viewer" type="button">✕</button>
                 <button class="photo-prev" type="button">◀</button>
-                <img src="${photos[currentPhotoIndex]}" class="viewer-photo" alt="${tx('historicalArchive')}">
+                <div class="photo-viewer-frame image-load-frame" data-loading-label="${escapeHtml(tx('loadingFullImage'))}" data-error-label="${escapeHtml(tx('imageLoadFailed'))}">
+                    <img class="viewer-photo" alt="${escapeHtml(tx('historicalArchive'))}">
+                </div>
                 <button class="photo-next" type="button">▶</button>
                 <div class="photo-counter">${currentPhotoIndex + 1} / ${photos.length}</div>
             `;
             document.body.appendChild(viewer);
+            const viewerFrame = viewer.querySelector('.photo-viewer-frame');
+            const viewerPhoto = viewer.querySelector('.viewer-photo');
+            const viewerCounter = viewer.querySelector('.photo-counter');
+
+            const showViewerPhoto = () => {
+                setPreviewImage(viewerPhoto, photos[currentPhotoIndex], tx('historicalArchive'), {
+                    loading: 'eager',
+                    stateElement: viewerFrame
+                });
+                if (viewerPhoto.dataset.fullSrc) {
+                    setImageLoadFrameState(viewerFrame, 'loading');
+                    loadFullImageInto(viewerPhoto, { stateElement: viewerFrame });
+                } else {
+                    setImageLoadFrameState(viewerFrame, '');
+                }
+                viewerCounter.textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+            };
+            showViewerPhoto();
 
             const closeViewer = () => {
                 viewer.remove();
@@ -3631,13 +3760,11 @@
             viewer.querySelector('.close-viewer').onclick = closeViewer;
             viewer.querySelector('.photo-prev').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
             viewer.querySelector('.photo-next').onclick = () => {
                 currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-                viewer.querySelector('.viewer-photo').src = photos[currentPhotoIndex];
-                viewer.querySelector('.photo-counter').textContent = `${currentPhotoIndex + 1} / ${photos.length}`;
+                showViewerPhoto();
             };
 
             const handleKey = (event) => {
